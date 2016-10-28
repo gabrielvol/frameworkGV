@@ -1,0 +1,27 @@
+/* =============================================================================
+   Modal y Popup
+   ========================================================================== */
+.modalBG{
+    @include opacityCB($modalOpacity);
+    position: fixed;
+    z-index: 9000;    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $bgBlack;
+}
+:root{
+    .modal, .modalBG{
+        filter: none \0/IE9;
+    }
+}
+
+.popup{
+    z-index: 9100;
+    left: 50%;
+    
+    .close{
+        z-index: 9200;
+    }
+}

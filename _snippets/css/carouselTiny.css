@@ -1,0 +1,21 @@
+/* =============================================================================
+   Tiny Carousel
+   ========================================================================== */
+.tinyCarousel{
+    height:1%;
+    overflow:hidden;
+}
+.viewport{
+    height:100px;
+    overflow:hidden;
+}
+.disable{visibility:hidden}
+.overview{
+    width:200px;
+    left:0;
+    top:0;
+}
+.overview li{
+    width:200px;
+    height:100px;
+}

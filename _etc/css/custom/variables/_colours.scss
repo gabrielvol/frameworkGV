@@ -1,0 +1,260 @@
+/* =============================================================================
+   General Colours
+   ========================================================================== */
+
+///**Colours Map Light:** 
+    ///Aquí se agregan los colores CLAROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.white{color: #fff}`, con el mixin  **colourLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color de acuerdo al porcentaje asignado en la variable `$darkenValue` debajo del mapa.
+$coloursMapLight:(
+    redSys: #ff0000,
+    errorColour: #d43131,
+    redColour: #ee0000,
+    greyXL: #dedede,
+    greyL: #c6c6c6
+);
+$darkenValue: 20%;
+
+///**Colours Map Dark:** 
+    ///Aquí se agregan los colores OSCUROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourDarkClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$lightenValue` debajo del mapa.
+$coloursMapDark:(
+    grey: #999,
+    greyD: #666,
+    greyXD: #333,
+    black: #000
+);
+$lightenValue: 20%;
+
+///**Colours Map Custom Hover:** 
+    ///Aquí se agregan los colores cuyas pseudoclases `:focus` y `:hover` no están generadas automáticamente. Se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourCustomHoverClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` deberán ser indicadas en su correspondiente placeholder debajo, eg.: `%focusHover-black{&:focus, &:hover{color: #ffcc00;}}`.
+$coloursMapCustomHover:(    
+    //orange: #ff6600
+);
+
+$coloursMapMerged: map-merge(
+    map-merge($coloursMapLight, $coloursMapDark),
+    $coloursMapCustomHover
+);
+
+$white: #fff;
+$whiteHover: darken($white, 10%);
+$black: map-get($coloursMapMerged, black);
+$redSys: map-get($coloursMapMerged, redSys);
+$errorColour: map-get($coloursMapMerged, errorColour);
+$redColour: map-get($coloursMapMerged, redColour);
+$greyXL: map-get($coloursMapMerged, greyXL);
+$greyL: map-get($coloursMapMerged, greyL);
+$grey: map-get($coloursMapMerged, grey);
+$greyD: map-get($coloursMapMerged, greyD);
+$greyXD: map-get($coloursMapMerged, greyXD);
+
+%whiteHover{
+    color: $white;
+    text-shadow: 0 0 3px $grey;
+}
+%whiteHoverSubmit{
+    text-shadow: 0 0 2px $black;
+}
+
+// Placeholders para colores custom
+%focusHover-orange{    
+    &:focus, &:hover{
+        color: #ff0000;
+    }
+}
+
+///**Anchor Colours Light:** 
+    ///Aquí se agregan los colores para las anclas dentro de un párrafo con color CLARO, de este mapa se creará una clase por cada color con el mixin **anchorColoursLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.white a{color: #fff}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$darkenValueAnchor` debajo del mapa. 
+$anchorColoursLight:(
+    //white: $white,
+);
+$darkenValueAnchor: 20%;
+
+///**Anchor Colours Dark:** 
+    ///Aquí se agregan los colores para las anclas dentro de un párrafo con color OSCURO, de este mapa se creará una clase por cada color con el mixin **anchorColoursDarkClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.black a{color: #000}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color con el porcentaje asignado en la variable `$lightenValueAnchor` debajo del mapa.
+$anchorColoursDark:(
+    //black: $black,
+);
+$lightenValueAnchor: 20%;
+
+/* =============================================================================
+   Lighters Darkers
+   ========================================================================== */
+$lighterDarkerClasses: off;
+$lighterDarkerStrong: off;
+///**Lighter Darker Classes:** 
+    ///Aquí se agregan los colores que generarán sus versiones light y dark. De este mapa se crearán las clases `.lightColour`, `.lighterColour`, `.lightestColour` y `.darkColour`, `.darkerColour`, `.darkestColour`, dentro de la primera, con el mixin **lighterDarkerSubclassesGenerator** `[/etc/scss/coloursMixins.scss]`. El mixin se activa (on/off) con la variable `$lighterDarkerClasses`; hay una variable `$lighterDarkerStrong` que activa las etiquetas `strong` dentro de las primeras. Todo esto dentro de `/css/scss/variables/colours.scss`. Los valores de claridad y oscuridad se declaran en las variables `$lightValue`, `$lighterValue`, `$lightestValue`, `$darkValue`, `$darkerValue`, y `$darkestValue` debajo del mapa.
+$lighterDarkerClasses:(    
+    //orange: $orange
+);
+
+$lightValue: 7%;
+$lighterValue: 15%;
+$lightestValue: 22%;
+$darkValue: 7%;
+$darkerValue: 15%;
+$darkestValue: 22%;
+
+/* =============================================================================
+   Font Colours
+   ========================================================================== */
+///**Font Colours:** 
+    ///Aquí se declaran los colores principales de texto y de ánclas del sitio, con sus `:hover`.
+$mainFontColour: $black;
+$mainFontColourHover: darken($mainFontColour, 20%);
+
+$anchorFontColour: $mainFontColourHover;
+$anchorFontColourHover: darken($mainFontColourHover, 20%);
+
+$secondaryFontColour: #999;
+
+/* =============================================================================
+   Border Colours
+   ========================================================================== */
+///**Border Colours:** 
+    ///Aquí se declaran los colores de bordes del sitio.
+$borderColoursMap:(
+    mainBcColour: $grey,
+    secondaryBcColour: $greyD,
+    error: $errorColour,
+    greyXL: $greyXL,
+    greyL: $greyL,
+    grey: $grey,
+    greyD: $greyD,
+    greyXD: $greyXD,
+    white: $white,
+    black: $black
+);
+
+$mainBcColour: map-get($borderColoursMap, mainBcColour);
+$mainBcColourHover: lighten($mainBcColour, 15%);
+
+$secondaryBcColour: map-get($borderColoursMap, secondaryBcColour);
+$secondaryBcColourHover: darken($mainBcColour, 15%);
+
+$bcWhite: $white;
+$bcBlack: $black;
+$bcError: map-get($borderColoursMap, error);
+$bcGreyXL: map-get($borderColoursMap, greyXL);
+$bcGreyL: map-get($borderColoursMap, greyL);
+$bcGrey: map-get($borderColoursMap, grey);
+$bcGreyD: map-get($borderColoursMap, greyD);
+$bcGreyXD: map-get($borderColoursMap, greyXD);
+
+/* =============================================================================
+   Background Colours
+   ========================================================================== */
+///**Background Colours Map:** 
+    ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/colourMixins.scss]`.
+$backgroundColoursMap:(
+    White: $white,
+    Black: $black,
+    GreyXL: $greyXL,
+    GreyL: $greyL,
+    Grey: $grey,
+    GreyD: $greyD,
+    GreyXD: $greyXD
+);
+$bgWhite: map-get($backgroundColoursMap, White);
+$bgBlack: map-get($backgroundColoursMap, Black);
+$bgGreyXL: map-get($backgroundColoursMap, GreyXL);
+$bgGreyL: map-get($backgroundColoursMap, GreyL);
+$bgGrey: map-get($backgroundColoursMap, Grey);
+$bgGreyD: map-get($backgroundColoursMap, GreyD);
+$bgGreyXD: map-get($backgroundColoursMap, GreyXD);
+
+    //Declaramos las variables para colores de fondo
+$bodyBgColour: $bgWhite;    
+$mainBgColour: $bgGrey;
+$imgBgNeutralColour: $bgGreyL;
+$bgError: $errorColour;
+
+///**Background Colours Hover Map:** 
+    ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/colourMixins.scss]`.
+$backgroundColoursHoverMap:(    
+    mainBgColour: darken($mainBgColour, 20%),
+/*    bgGrey: lighten($bgGrey, 20%)*/
+);
+
+//$bgBlueHover: map-get($backgroundColoursHoverMap, bgBlue);
+
+    //Gradients
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+$bgGradWhiteEighty: linear-gradient(to bottom,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.8)100%);
+$bgGradWhiteEightyFilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
+.bgGradWhiteEighty{
+    background: $bgGradWhiteEighty;
+    filter: $bgGradWhiteEightyFilter;
+}
+
+/* =============================================================================
+   Nav
+   ========================================================================== */
+    //Fonts
+$navFontColour: $black;
+$navFontColourHover: $navFontColour;
+$navSelectedFontColour: $navFontColourHover;
+
+    //Backgrounds
+$bgNavItem: transparent;
+$bgNavItemAnchor: transparent;
+$bgNavItemAnchorHover: transparent;
+
+$bgNavSelectedItem: transparent;
+$bgNavSelectedAnchor: transparent;
+$bgNavSelectedAnchorHover: transparent;
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+///**Forms:** 
+    ///Aquí se declaran las variables de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
+    ///con sus `:hover`.
+$formLabelFontColour: $mainFontColour;
+$formLabelFontColourHover: $formLabelFontColour;
+
+$formInputFontColour: $mainFontColour;
+$formInputFontColourHover: $formInputFontColour;
+
+$formPlaceholderFontColour: $formInputFontColour;
+
+$formInputBcColour: $mainBcColour;
+$formInputBcColourHover: $mainBcColourHover;
+$formInputBgColour: $white;
+$formInputBgColourHover: $formInputBgColour;
+
+$formSubmitFontColour: $black;
+$formSubmitFontColourHover: $white;
+$formSubmitBcColour: $mainBcColour;
+$formSubmitBcColourHover: $formSubmitBcColour;
+$formSubmitBgColour: $mainBgColour;
+$formSubmitBgColourHover: $formSubmitBgColour;
+
+    //Validation
+$invalidMandatoryMessageBgColour: $bgError;
+$invalidMandatoryMessageFontColour: $white;
+
+    //Status Messages
+$statusOKpopUpBgColour: $bgWhite;
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+// Table Border Colours
+$mainBcColourTable: #939393;
+$secondaryBcColourTable: #dedede;
+
+// Table Background Colours
+$mainBgColourTable: #888;
+$secondaryBgColourTable: #bbb;
+$bgGreyTable: #eee;
+
+//Striped Table
+$bgColourTableStripedThead: #aaa;
+$bgColourTableStripedOdd: #eee;
+$bgColourTableStripedEven: $white;
+$bcColourTableStripedSeparator: darken($bgColourTableStripedOdd, 60%);
+
+/* =============================================================================
+   Modal
+   ========================================================================== */
+    //El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
+$modalOpacity: 85;

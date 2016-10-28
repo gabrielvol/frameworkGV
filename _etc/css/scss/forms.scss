@@ -1,0 +1,116 @@
+form, fieldset, legend, button, input, select, textarea{
+    margin: 0;
+    padding: 0;
+}
+form, label{
+    position: relative;
+}
+fieldset{
+    &, legend{
+        border: $none;
+    }    
+    legend{
+        white-space: normal;/* Corrects text not wrapping in Firefox 3. */
+        *margin-left: -7px;/* Corrects alignment displayed oddly in IE 6/7. */
+    }
+}
+label{
+    cursor: pointer;
+    color: $formLabelFontColour;
+    font-weight: 400!important;
+
+    &:focus, &:hover{
+        color: $formLabelFontColourHover;
+    }
+}
+
+label, input, select, textarea, input[type="search"]{
+    box-sizing: border-box!important;
+}
+button, input, select, textarea{ 
+    font-size: 100%;/* Corrects font size not being inherited in all browsers. */
+    vertical-align: baseline;/* Improves appearance and consistency in all browsers. */
+    *vertical-align: middle;/* Improves appearance and consistency in all browsers. */
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {/* chrome */
+    button, input, select, option, textarea{
+        &:focus, &:active{
+            outline: 1px dotted #999;            
+        }
+    }
+}
+
+input, select, textarea{
+    background-color: $formInputBgColour;
+    color: $formInputFontColour;
+
+    &:focus, &:hover{
+        background-color: $formInputBgColourHover;
+        color: $formInputFontColourHover;
+    }
+}
+input{
+    &[type="search"]{
+        -webkit-appearance: textfield;
+    }
+
+    &[type="checkbox"],
+    &[type="radio"]{
+        width: auto;
+    }
+
+    &[type="submit"]{
+        -webkit-appearance: none;
+    }
+}
+
+button,
+input[type="button"],
+html input[type="button"]{
+    cursor: pointer;
+    *overflow: visible;
+}
+
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+button{
+    cursor: pointer;
+    background-color: $formSubmitBgColour;
+    *overflow: visible;
+
+    &:focus, &:hover{
+        background-color: $formSubmitBgColourHover;
+    }
+    &.white{
+        @include transition(1s);
+        &, &:focus, &:hover{
+            color: $white;
+        }
+        &:focus, &:hover{
+            @extend %whiteHoverSubmit;
+        }
+    }    
+}
+
+button{
+    display: block!important;
+    box-sizing: content-box;
+    padding: $zero;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+button::focus-inner{
+    margin: 0;
+    border: $none;
+    padding: 0;
+}
+input::focus-inner{
+    margin: 0;
+    border: $none;
+    padding: 0;
+}
+
+textarea{
+    vertical-align: top;
+}

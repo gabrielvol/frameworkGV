@@ -1,0 +1,161 @@
+/* =============================================================================
+   Accessibility
+   ========================================================================== */
+#go-main-content{
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* =============================================================================
+   Spacing Helpers
+   ========================================================================== */
+@include spacingHelpersClassesGenerator;
+.mra,.mha,.center,.centerCol{margin-right: $auto}
+.mla,.mha,.center,.centerCol{margin-left: $auto}
+
+/* =============================================================================
+   Useful classes
+   ========================================================================== */
+.pRel{position: relative}
+.pAbs{position: absolute}
+.coverAll{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.autoWidth{width: auto}
+.autoHeight{height: auto}
+.fullWidth{width: 100%}
+.fullHeight{
+    top: 0;
+    bottom: 0;
+}
+.fullHeightPercent{height: 100%;}
+.unstyled, .horizontal{list-style: none}
+.floatLeft, .horizontal li{float: left!important}
+.floatRight, .horizontal li.floatRight,
+.horizontal.right li{float: right!important}
+.horizontalCenter{
+    @extend %mha;   
+    list-style: none;
+    text-align: center;
+    li{
+        display: inline;
+        > *{
+            display: inline-block;            
+        }
+    }
+}
+.floatNone, .centerCol{float: none}
+.clear{clear: both}
+article, details, figcaption, figure, hgroup, main, menu, nav, summary,
+.displayBlock, .center{display: block!important}
+.displayInline{display: inline!important}
+.displayNone{display: $none}
+.invisible{visibility: hidden}
+.centerVertically{
+    display: table-cell;
+    vertical-align: middle;
+}
+.mask{
+    position: relative;
+    overflow: hidden;
+}
+.cursorDefault{cursor: default}
+.cursorPointer{cursor: pointer}
+.cursorHelp{cursor: help}
+.cursorNone{cursor: none}
+article, details, figcaption, figure, hgroup, main, menu, nav, summary,
+.boxSizing, .displayBlock, .center{
+    &, &:before, &:after{
+        box-sizing: content-box;
+    }
+}
+:root .noFilter{filter: none \0/IE9;}
+
+/* =============================================================================
+   Elements Styling/Corrections
+   ========================================================================== */
+audio, canvas, progress, video{
+    *display: inline;
+    *zoom: 1;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+iframe{
+    border: $none;
+}
+
+// Lists
+ul, ol, li, dd{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: disc inside;
+}
+ol{
+    list-style: decimal inside;
+}
+dt{
+    float: left;
+    margin: 0 4px 0 0;
+}
+
+// Links
+a{
+    line-height: 1em;
+    cursor: pointer;
+    img{
+        border: none;
+    }
+}
+a{
+    &, &:hover{        
+        text-decoration: none;
+    }
+}
+
+// Images
+img{
+    background-color: $imgBgNeutralColour;
+    border: none;
+    font: normal 11px/1em $arial;
+    text-transform: uppercase;
+    color: #333;
+    // Improves image quality when scaled in IE 7
+    -ms-interpolation-mode: bicubic;
+}
+img[src$=".png"], img[src$=".gif"], img[src$=".svg"]{
+    background-color: transparent;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+// Clearfix
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{display: inline-block}
+* html .clearfix{height: 1%}
+.clearfix{display: block}
+
+// Hack para Windows Phone
+@media (max-width: 400px) {
+    @-ms-viewport {
+        width: 320px;
+    }
+}

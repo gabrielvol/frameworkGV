@@ -1,0 +1,42 @@
+/* =============================================================================
+   Colours
+   ========================================================================== */
+html, body, button, blockquote, table, h1, h2, h3, h4, h5, h6, p, b, strong, i,
+em, dfn, li, button, label, input, select, textarea{
+    color: $mainFontColour;
+}
+/*
+input::input-placeholder, textarea::input-placeholder{
+    color: $formPlaceholderFontColour}
+input:focus::input-placeholder, textarea:focus::input-placeholder{
+    color: $mainFontColour}
+*/
+a{
+    &, &:active, &:visited{
+        color: $anchorFontColour;
+    }
+    &:focus, &:hover{
+        color: $anchorFontColourHover;
+    }
+}
+
+// Colour classes
+@include colourLightClassesGenerator($darkenValue);
+.white{
+    &, & b, & strong, & i, & em{
+        color: $white;
+    }
+}
+a.white{
+    &, &:active, &:visited, &:focus, &:hover{
+        color: $white;
+    }
+    &:focus, &:hover{
+        @extend %whiteHover;
+    }
+}
+@include colourDarkClassesGenerator($lightenValue);
+@include lighterDarkerSubclassesGenerator;
+@include anchorColoursLightClassesGenerator($darkenValueAnchor);
+@include anchorColoursDarkClassesGenerator($lightenValueAnchor);
+@include colourCustomHoverClassesGenerator;

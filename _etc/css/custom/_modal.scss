@@ -1,0 +1,58 @@
+/* =============================================================================
+   Modal y popup / Custom
+   ========================================================================== */
+$closeWHvalue: 20px;
+
+.close{    
+    @include bgSvg(ic_closePopup);        
+    @include squareSize($closeWHvalue);
+    display: block;
+    position: absolute;
+    text-indent: -9999px;    
+}
+
+.popup{
+    @include centerPopup(100px,100px,50%);
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    
+    .modalWrap{
+        padding: 20px;
+        overflow: auto;
+    }
+    
+    &.statusDiv{
+        @include borderRadius();        
+        box-shadow: 0 0 15px 0 $black;
+        background-color: $statusOKpopUpBgColour;
+        
+        p{
+            color: $white;
+            font-family: $mainFontFamily;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        
+        @include mobileOnly{
+            @include centerPopup(280px,120px);
+            padding: 20px;
+            
+            .close{               
+                top: calc(-1 * #{$closeWHvalue});
+                right: -10px;
+            }
+        }
+        @include afterTablet{
+            @include centerPopup(500px,100px);
+            padding: 25px;
+        }
+        @include afterLaptop{}
+    }
+    
+    .close{
+        $closeWHvaluePosition: unquote("#{$closeWHvalue} + 5px");
+        top: unquote("-1 * #{$closeWHvaluePosition}");
+        right: unquote("-1 * #{$closeWHvaluePosition}");
+    }
+}

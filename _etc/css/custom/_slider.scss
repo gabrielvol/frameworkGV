@@ -1,0 +1,102 @@
+/* =============================================================================
+   Slick Slider Custom
+   ========================================================================== */
+$sliderArrowH: 50px;
+$sliderArrowWH: 30px $sliderArrowH;
+
+$sliderDotH: 50px;
+$sliderDotWH: 50px $sliderDotH;
+
+$pagSeparation: 10px;
+
+.slick{
+    &, div{
+        @include clearfix;
+    }
+}
+
+// Slick next/prev
+.slickPrev{
+/*
+    @include sprites(-100px 0);
+    @include focusHoverBgPosition(-150px 0);
+*/
+    @include bgSvg(ic_arrowSliderL, $sliderArrowWH);
+    left: 15px;
+    
+    @include beforeDesktop{
+        left: 0;
+    }
+}
+
+.slickNext{
+/*
+    @include sprites(-200px 0);
+    @include focusHoverBgPosition(-250px 0);
+*/
+    @include bgSvg(ic_arrowSliderR, $sliderArrowWH);
+    right: 15px;
+    
+    @include beforeDesktop{
+        right: 0;
+    }
+}
+
+.slickPrev, .slickNext{
+    @include squareSize($sliderArrowH);
+    @include transition(0.7s);
+    @include opacityCBHover();
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    padding: $zero;
+    border: $none;
+    margin-top: -25px;
+    text-indent: -9999px;
+}
+
+//Slick dots
+.slickDots{
+    @extend .unstyled;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+   
+    li{
+        display: inline;
+        
+        &, button{
+            @include squareSize($sliderDotH);            
+        }
+        
+        button{
+/*
+            @include squareSize(50px);
+            @include sprites(-100px -50px);
+*/
+            @include bgSvg(ic_sliderPag, $sliderDotWH);
+            display: inline-block!important;
+            text-indent: -9999px;
+        }
+        
+        & + li{
+            margin-left: $pagSeparation;
+        }
+        
+        &:focus, &:hover{
+            button{
+                /*background-position: -150px -50px;*/
+                @include bgSvg(ic_sliderPagHover, $sliderDotWH);
+            }
+        }
+        
+        &.slickActive{
+            button{
+                /*background-position: -200px -50px;*/
+                @include bgSvg(ic_sliderPagSel, $sliderDotWH);
+            }
+        }
+    }
+}

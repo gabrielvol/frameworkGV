@@ -1,0 +1,63 @@
+/* =============================================================================
+   Useful Classes / Custom
+   ========================================================================== */
+
+//Backgrounds
+body{background: $bodyBgColour}
+@include backgroundColourClassesGenerator;
+@include backgroundColourHoverClassesGenerator;
+.noBackground, .bgNone{
+    &, &:focus, &:hover{
+        background: $none;
+    }
+}
+.bgTransparent{background-color: $transparent}
+.bgNoImage{background-image: $none}
+.bgError{background-color: $bgError}
+.topShadow{background: transparent url('/nuevo/_snippets/img/bg_topShadow.png') repeat-x center top}
+
+//Lists
+.ulResp2 li, .ulResp3 li, .ulResp4 li{
+    a{
+        position: relative;
+    }
+    img{
+        margin-right: $auto;
+        margin-left: $auto;        
+    }
+    @include mobileOnly{
+        width: 100%;
+        float: $none;
+        
+        img{
+            width: 100%;
+        }
+    }
+    @include mobileLandscapeOnly{        
+        &:nth-child(odd):last-child{
+            clear: both;
+            width: 100%;
+            float: $none;
+            margin-right: $auto;
+            margin-left: $auto;
+        }
+    }
+    @include afterMobileLandscape{
+        width: 50%;
+        
+        img{
+            width: auto;
+        }
+    }
+}
+.ulResp2{ li{
+        @include afterTablet{
+            &:nth-child(n+3){margin-top: 40px;}
+        }
+    }}
+.ulResp3{ li{
+        @include afterTablet{width: calc(100% / 3);}
+    }}
+.ulResp4{ li{
+        @include afterTablet{width: 25%}
+    }}

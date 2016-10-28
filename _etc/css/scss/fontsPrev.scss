@@ -1,0 +1,62 @@
+@charset 'utf-8';
+/* =============================================================================
+   Fonts Prev / Etc
+   ========================================================================== */
+// Sans Serif Stack
+$fontFamiliesMapSans:(
+    arial: Arial,
+    sansSerif: sans-serif,
+    sanFrancisco: ('-apple-system', '.SFNSText-Regular', 'San Francisco'),
+    helveticaSafe: (Helvetica, 'Helvetica Neue'),
+    roboto: Roboto,
+    segoeUI: 'Segoe UI',
+    verdana: Verdana,
+    tahoma: Tahoma,
+    lucidaGrande: 'Lucida Grande',
+    trebuchetMS: 'Trebuchet MS'
+);
+$fontFamiliesListSans:
+    map-get($fontFamiliesMapSans, arial),
+    map-get($fontFamiliesMapSans, sansSerif),
+    map-get($fontFamiliesMapSans, sanFrancisco),
+    map-get($fontFamiliesMapSans, helveticaSafe), 
+    map-get($fontFamiliesMapSans, roboto),
+    map-get($fontFamiliesMapSans, segoeUI),   
+    map-get($fontFamiliesMapSans, verdana),
+    map-get($fontFamiliesMapSans, tahoma),
+    map-get($fontFamiliesMapSans, lucidaGrande),
+    map-get($fontFamiliesMapSans, trebuchetMS
+);
+$arial: map-get($fontFamiliesMapSans, arial);
+
+// Serif Stack
+$fontFamiliesMapSerif:(
+    timesNewRoman: 'Times New Roman',
+    georgia: Georgia,
+    serif: serif,
+    palatino: Palatino
+);
+$fontFamiliesListSerif: 
+    map-get($fontFamiliesMapSerif, timesNewRoman),
+    map-get($fontFamiliesMapSerif, georgia),
+    map-get($fontFamiliesMapSerif, serif),
+    map-get($fontFamiliesMapSerif, palatino);
+
+// Monospaced Stack
+$fontFamiliesMapMono:(
+    courierNew: 'Courier New',
+    lucidaConsole: 'Lucida Console',
+    andaleMono: 'Andale Mono'
+);
+$fontFamiliesListMono:
+    map-get($fontFamiliesMapMono, courierNew),
+    map-get($fontFamiliesMapMono, lucidaConsole),
+    map-get($fontFamiliesMapMono, andaleMono);
+
+//Font Sizes
+$h1List: 'h1, .hUno';
+$h2List: 'h2, .hDos';
+$h3List: 'h3, .hTre';
+$h4List: 'h4, .hCua';
+$h5List: 'h5, .hCin';
+$h6List: 'h6, .hSei';

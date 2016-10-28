@@ -1,0 +1,21 @@
+/* =============================================================================
+   Absolute Variables / Etc
+   ========================================================================== */
+$zero: 0!important;
+$auto: auto!important;
+$none: none!important;
+$transparent: transparent!important;
+%mha{
+    margin-right: $auto;
+    margin-left: $auto;    
+}
+@mixin clearfix() {
+    &::before,
+    &::after{
+        content: " "; // 1
+        display: table; // 2
+    }
+    &::after{
+        clear: both;
+    }
+}

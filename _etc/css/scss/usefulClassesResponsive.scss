@@ -1,0 +1,485 @@
+/* =============================================================================
+   Useful Classes Responsive / Etc
+   ========================================================================== */
+// Mobile Styles
+@include mobileOnly{
+    //Spacing Helpers Mobile Only
+    @include spacingHelpersClassesGeneratorMO;
+    .mraMO,.mhaMO,.centerMO{margin-right: $auto}
+    .mlaMO,.mhaMO,.centerMO{margin-left: $auto}
+    
+    //Useful Classes
+    .banMO{border: $none}
+    .pRelMO{position: relative}
+    .pAbsMO{position: absolute}
+    .displayInlineMO{display: inline!important}
+    .displayBlockMO, .showMO{display: block!important}
+    .displayNoneMO, .hideMO{display: $none}
+    .noBackgroundMO{background: $none}
+    .unstyledMO, .horizontalMO{list-style: $none}
+    .floatLeftMO, .horizontalMO li{float: left!important}
+    .floatRightMO, .horizontalMO li.floatRight,
+    .horizontalMO.right li{float: right!important}
+    .floatNoneMO, .unstyledMO li{float: $none}
+    .indentedTextMO{text-indent: -9999px}
+    .clearMO{clear: both}
+
+    .alignCenterMO{text-align: center}
+    .alignRightMO{text-align: right}
+    .alignLeftMO{text-align: left}
+    .alignJustifyMO{text-align: justify}
+
+    .fullWidthMO{width: 100%!important}
+    .autoWidthMO{width: $auto}
+    .autoHeightMO{height: $auto}
+    
+    .noBackgroundMO, .bgNoneMO{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentMO{background-color: $transparent}
+    .bgNoImageMO{background-image: $none}
+    
+    .wrapMO{
+        width: 300px!important;
+        margin-right: $auto;
+        margin-left: $auto;
+    }
+}
+
+/* =============================================================================
+   After Mobile Landscape Styles
+   ========================================================================== */
+@include afterMobileLandscape{
+    //Spacing Helpers Tablet Only
+    @include spacingHelpersClassesGeneratorAML;
+    .mraAML,.mhaAML,.centerAML{margin-right: $auto}
+    .mlaAML,.mhaAML,.centerAML{margin-left: $auto}
+    
+    //Useful Classes
+    .banAML{border: $none}
+    .pRelAML{position: relative}
+    .pAbsAML{position: absolute}
+    .displayInlineAML{display: inline!important}
+    .displayBlockAML, .showAML{display: block!important}
+    .displayNoneAML, .hideAML{display: $none}
+    .noBackgroundAML{background: $none}
+    .unstyledAML, .horizontalAML{list-style: $none}
+    .floatLeftAML, .horizontalAML li{float: left!important}
+    .floatRightAML, .horizontalAML li.floatRight,
+    .horizontalAML.right li{float: right!important}
+    .floatNoneAML, .unstyledAML li{float: $none}
+    .indentedTextAML{text-indent: -9999px}
+    .clearAML{clear: both}
+
+    .alignCenterAML{text-align: center}
+    .alignRightAML{text-align: right}
+    .alignLeftAML{text-align: left}
+    .alignJustifyAML{text-align: justify}
+
+    .fullWidthAML{width: 100%!important}
+    .autoWidthAML{width: $auto}
+    .autoHeightAML{height: $auto}
+    
+    .noBackgroundAML, .bgNoneAML{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentAML{background-color: $transparent}
+    .bgNoImageAML{background-image: $none}
+}
+
+/* =============================================================================
+   Mobile Landscape Only Styles
+   ========================================================================== */
+@include mobileLandscapeOnly{
+    //Spacing Helpers Tablet Only
+    @include spacingHelpersClassesGeneratorMLO;
+    .mraMLO,.mhaMLO,.centerMLO{margin-right: $auto}
+    .mlaMLO,.mhaMLO,.centerMLO{margin-left: $auto}
+    
+    //Useful Classes
+    .banMLO{border: $none}
+    .pRelMLO{position: relative}
+    .pAbsMLO{position: absolute}
+    .displayInlineMLO{display: inline!important}
+    .displayBlockMLO, .showMLO{display: block!important}
+    .displayNoneMLO, .hideMLO{display: $none}
+    .noBackgroundMLO{background: $none}
+    .unstyledMLO, .horizontalMLO{list-style: $none}
+    .floatLeftMLO, .horizontalMLO li{float: left!important}
+    .floatRightMLO, .horizontalMLO li.floatRight,
+    .horizontalMLO.right li{float: right!important}
+    .floatNoneMLO, .unstyledMLO li{float: $none}
+    .indentedTextMLO{text-indent: -9999px}
+    .clearMLO{clear: both}
+
+    .alignCenterMLO{text-align: center}
+    .alignRightMLO{text-align: right}
+    .alignLeftMLO{text-align: left}
+    .alignJustifyMLO{text-align: justify}
+
+    .fullWidthMLO{width: 100%!important}
+    .autoWidthMLO{width: $auto}
+    .autoHeightMLO{height: $auto}
+    
+    .noBackgroundMLO, .bgNoneMLO{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentMLO{background-color: $transparent}
+    .bgNoImageMLO{background-image: $none}
+}
+
+/* =============================================================================
+   Before Tablet Styles
+   ========================================================================== */
+@include beforeTablet{
+    //Spacing Helpers Before Tablet
+    @include spacingHelpersClassesGeneratorBT;
+    .mraBT,.mhaBT,.centerBT{margin-right: $auto}
+    .mlaBT,.mhaBT,.centerBT{margin-left: $auto}
+    
+    //Useful Classes
+    .banBT{border: $none}
+    .pRelBT{position: relative}
+    .pAbsBT{position: absolute}
+    .displayInlineBT{display: inline!important}
+    .displayBlockBT, .showBT{display: block!important}
+    .displayNoneBT, .hideBT{display: $none}
+    .noBackgroundBT{background: $none}
+    .unstyledBT, .horizontalBT{list-style: $none}
+    .floatLeftBT, .horizontalBT li{float: left!important}
+    .floatRightBT, .horizontalBT li.floatRight,
+    .horizontalBT.right li{float: right!important}
+    .floatNoneBT, .unstyledBT li{float: $none}
+    .indentedTextBT{text-indent: -9999px}
+    .clearBT{clear: both}
+
+    .alignCenterBT{text-align: center}
+    .alignRightBT{text-align: right}
+    .alignLeftBT{text-align: left}
+    .alignJustifyBT{text-align: justify}
+
+    .fullWidthBT{width: 100%!important}
+    .autoWidthBT{width: $auto}
+    .autoHeightBT{height: $auto}
+    
+    .noBackgroundBT, .bgNoneBT{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentBT{background-color: $transparent}
+    .bgNoImageBT{background-image: $none}
+}
+
+/* =============================================================================
+   Before Tablet Landscape Styles
+   ========================================================================== */
+@include beforeTabletLandscape{    
+    //Spacing Helpers Before Tablet Lanscape
+    @include spacingHelpersClassesGeneratorBTL;
+    .mraBT,.mhaBTL,.centerBTL{margin-right: $auto}
+    .mlaBTL,.mhaBTL,.centerBTL{margin-left: $auto}
+    
+    //Useful Classes
+    .banBTL{border: $none}
+    .pRelBTL{position: relative}
+    .pAbsBTL{position: absolute}
+    .displayInlineBTL{display: inline!important}
+    .displayBlockBTL, .showBTL{display: block!important}
+    .displayNoneBTL, .hideBTL{display: $none}
+    .noBackgroundBTL{background: $none}
+    .unstyledBTL, .horizontalBTL{list-style: $none}
+    .floatLeftBTL, .horizontalBTL li{float: left!important}
+    .floatRightBTL, .horizontalBTL li.floatRight,
+    .horizontalBTL.right li{float: right!important}
+    .floatNoneBTL, .unstyledBTL li{float: $none}
+    .indentedTextBTL{text-indent: -9999px}
+    .clearBTL{clear: both}
+
+    .alignCenterBTL{text-align: center}
+    .alignRightBTL{text-align: right}
+    .alignLeftBTL{text-align: left}
+    .alignJustifyBTL{text-align: justify}
+
+    .fullWidthBTL{width: 100%!important}
+    .autoWidthBTL{width: $auto}
+    .autoHeightBTL{height: $auto}
+    
+    .noBackgroundBTL, .bgNoneBTL{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentBTL{background-color: $transparent}
+    .bgNoImageBTL{background-image: $none}
+}
+
+/* =============================================================================
+   Tablet Only Styles
+   ========================================================================== */
+@include tabletOnly{
+    //Spacing Helpers Tablet Only
+    @include spacingHelpersClassesGeneratorTO;
+    .mraTO,.mhaTO,.centerTO{margin-right: $auto}
+    .mlaTO,.mhaTO,.centerTO{margin-left: $auto}
+    
+    //Useful Classes
+    .banTO{border: $none}
+    .pRelTO{position: relative}
+    .pAbsTO{position: absolute}
+    .displayInlineTO{display: inline!important}
+    .displayBlockTO, .showTO{display: block!important}
+    .displayNoneTO, .hideTO{display: $none}
+    .noBackgroundTO{background: $none}
+    .unstyledTO, .horizontalTO{list-style: $none}
+    .floatLeftTO, .horizontalTO li{float: left!important}
+    .floatRightTO, .horizontalTO li.floatRight,
+    .horizontalTO.right li{float: right!important}
+    .floatNoneTO, .unstyledTO li{float: $none}
+    .indentedTextTO{text-indent: -9999px}
+    .clearTO{clear: both}
+
+    .alignCenterTO{text-align: center}
+    .alignRightTO{text-align: right}
+    .alignLeftTO{text-align: left}
+    .alignJustifyTO{text-align: justify}
+
+    .fullWidthTO{width: 100%!important}
+    .autoWidthTO{width: $auto}
+    .autoHeightTO{height: $auto}
+    
+    .noBackgroundTO, .bgNoneTO{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentTO{background-color: $transparent}
+    .bgNoImageTO{background-image: $none}
+    
+    .wrapTO{
+        width: 750px!important;
+        margin-right: $auto;
+        margin-left: $auto;
+    }
+}
+
+/* =============================================================================
+   After Tablet Styles
+   ========================================================================== */
+@include afterTablet{
+    //Spacing Helpers After Tablet
+    @include spacingHelpersClassesGeneratorAT;
+    .mraAT,.mhaAT,.centerAT{margin-right: $auto}
+    .mlaAT,.mhaAT,.centerAT{margin-left: $auto}
+    
+    //Useful Classes
+    .banAT{border: $none}
+    .pRelAT{position: relative}
+    .pAbsAT{position: absolute}
+    .displayInlineAT{display: inline!important}
+    .displayBlockAT, .showAT{display: block!important}
+    .displayNoneAT, .hideAT{display: $none}
+    .noBackgroundAT{background: $none}
+    .unstyledAT, .horizontalAT{list-style: $none}
+    .floatLeftAT, .horizontalAT li{float: left!important}
+    .floatRightAT, .horizontalAT li.floatRight,
+    .horizontalAT.right li{float: right!important}
+    .floatNoneAT, .unstyledAT li{float: $none}
+    .indentedTextAT{text-indent: -9999px}
+    .clearAT{clear: both}
+
+    .alignCenterAT{text-align: center}
+    .alignRightAT{text-align: right}
+    .alignLeftAT{text-align: left}
+    .alignJustifyAT{text-align: justify}
+
+    .fullWidthAT{width: 100%!important}
+    .autoWidthAT{width: $auto}
+    .autoHeightAT{height: $auto}
+    
+    .noBackgroundAT, .bgNoneAT{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentAT{background-color: $transparent}
+    .bgNoImageAT{background-image: $none}
+}
+
+/* =============================================================================
+   After Tablet Landscape Styles
+   ========================================================================== */
+@include afterTabletLandscape{
+    //Spacing Helpers Tablet Only
+    @include spacingHelpersClassesGeneratorATL;
+    .mraATL,.mhaATL,.centerATL{margin-right: $auto}
+    .mlaATL,.mhaATL,.centerATL{margin-left: $auto}
+    
+    //Useful Classes
+    .banATL{border: $none}
+    .pRelATL{position: relative}
+    .pAbsATL{position: absolute}
+    .displayInlineATL{display: inline!important}
+    .displayBlockATL, .showATL{display: block!important}
+    .displayNoneATL, .hideATL{display: $none}
+    .noBackgroundATL{background: $none}
+    .unstyledATL, .horizontalATL{list-style: $none}
+    .floatLeftATL, .horizontalATL li{float: left!important}
+    .floatRightATL, .horizontalATL li.floatRight,
+    .horizontalATL.right li{float: right!important}
+    .floatNoneATL, .unstyledATL li{float: $none}
+    .indentedTextATL{text-indent: -9999px}
+    .clearATL{clear: both}
+
+    .alignCenterATL{text-align: center}
+    .alignRightATL{text-align: right}
+    .alignLeftATL{text-align: left}
+    .alignJustifyATL{text-align: justify}
+
+    .fullWidthATL{width: 100%!important}
+    .autoWidthATL{width: $auto}
+    .autoHeightATL{height: $auto}
+    
+    .noBackgroundATL, .bgNoneATL{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentATL{background-color: $transparent}
+    .bgNoImageATL{background-image: $none}
+}
+
+/* =============================================================================
+   Before Desktop Styles
+   ========================================================================== */
+@include beforeDesktop{
+    //Spacing Helpers Before Desktop
+    @include spacingHelpersClassesGeneratorBD;
+    .mraBD,.mhaBD,.centerBD{margin-right: $auto}
+    .mlaBD,.mhaBD,.centerBD{margin-left: $auto}
+    
+    //Useful Classes
+    .banBD{border: $none}
+    .pRelBD{position: relative}
+    .pAbsBD{position: absolute}
+    .displayInlineBD{display: inline!important}
+    .displayBlockBD, .showBD{display: block!important}
+    .displayNoneBD, .hideBD{display: $none}
+    .noBackgroundBD{background: $none}
+    .unstyledBD, .horizontalBD{list-style: $none}
+    .floatLeftBD, .horizontalBD li{float: left!important}
+    .floatRightBD, .horizontalBD li.floatRight,
+    .horizontalBD.right li{float: right!important}
+    .floatNoneBD, .unstyledBD li{float: $none}
+    .indentedTextBD{text-indent: -9999px}
+    .clearBD{clear: both}
+
+    .alignCenterBD{text-align: center}
+    .alignRightBD{text-align: right}
+    .alignLeftBD{text-align: left}
+    .alignJustifyBD{text-align: justify}
+
+    .fullWidthBD{width: 100%!important}
+    .autoWidthBD{width: $auto}
+    .autoHeightBD{height: $auto}
+    
+    .noBackgroundBD, .bgNoneBD{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentBD{background-color: $transparent}
+    .bgNoImageBD{background-image: $none}
+}
+
+/* =============================================================================
+   After Laptop Styles
+   ========================================================================== */
+@include afterLaptop{
+    //Spacing Helpers After Laptop
+    @include spacingHelpersClassesGeneratorAL;
+    .mraAL,.mhaAL,.centerAL{margin-right: $auto}
+    .mlaAL,.mhaAL,.centerAL{margin-left: $auto}
+    
+    //Useful Classes
+    .banAL{border: $none}
+    .pRelAL{position: relative}
+    .pAbsAL{position: absolute}
+    .displayInlineAL{display: inline!important}
+    .displayBlockAL, .showAL{display: block!important}
+    .displayNoneAL, .hideAL{display: $none}
+    .noBackgroundAL{background: $none}
+    .unstyledAL, .horizontalAL{list-style: $none}
+    .floatLeftAL, .horizontalAL li{float: left!important}
+    .floatRightAL, .horizontalAL li.floatRight,
+    .horizontalAL.right li{float: right!important}
+    .floatNoneAL, .unstyledAL li{float: $none}
+    .indentedTextAL{text-indent: -9999px}
+    .clearAL{clear: both}
+
+    .alignCenterAL{text-align: center}
+    .alignRightAL{text-align: right}
+    .alignLeftAL{text-align: left}
+    .alignJustifyAL{text-align: justify}
+
+    .fullWidthAL{width: 100%!important}
+    .autoWidthAL{width: $auto}
+    .autoHeightAL{height: $auto}
+    
+    .noBackgroundAL, .bgNoneAL{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentAL{background-color: $transparent}
+    .bgNoImageAL{background-image: $none}
+}
+
+/* =============================================================================
+   After Desktop Styles
+   ========================================================================== */
+@include afterDesktop{
+    //Spacing Helpers After Desktop
+    @include spacingHelpersClassesGeneratorAD;
+    .mraAD,.mhaAD,.centerAD{margin-right: $auto}
+    .mlaAD,.mhaAD,.centerAD{margin-left: $auto}
+    
+    //Useful Classes
+    .banAD{border: $none}
+    .pRelAD{position: relative}
+    .pAbsAD{position: absolute}
+    .displayInlineAD{display: inline!important}
+    .displayBlockAD, .showAD{display: block!important}
+    .displayNoneAD, .hideAD{display: $none}
+    .noBackgroundAD{background: $none}
+    .unstyledAD, .horizontalAD{list-style: $none}
+    .floatLeftAD, .horizontalAD li{float: left!important}
+    .floatRightAD, .horizontalAD li.floatRight,
+    .horizontalAD.right li{float: right!important}
+    .floatNoneAD, .unstyledAD li{float: $none}
+    .indentedTextAD{text-indent: -9999px}
+    .clearAD{clear: both}
+
+    .alignCenterAD{text-align: center}
+    .alignRightAD{text-align: right}
+    .alignLeftAD{text-align: left}
+    .alignJustifyAD{text-align: justify}
+
+    .fullWidthAD{width: 100%!important}
+    .autoWidthAD{width: $auto}
+    .autoHeightAD{height: $auto}
+    
+    .noBackgroundAD, .bgNoneAD{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentAD{background-color: $transparent}
+    .bgNoImageAD{background-image: $none}
+}

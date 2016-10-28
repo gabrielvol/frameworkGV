@@ -1,0 +1,64 @@
+/* =============================================================================
+   Header
+   ========================================================================== */
+#header{
+    @include beforeTablet{
+        height: 130px;
+    }
+    @include tabletOnly{
+        height: 400px;
+    }
+    @include afterTabletLandscape{
+        height: 630px;
+    } 
+    
+    &.topper{
+        @include mobileOnly{
+            height: 50px;
+            
+            .hamb{}
+        }
+        
+        @include afterTablet{
+            height: 50px;
+        }
+        
+        .logoHeader{
+            a, img{
+                @include mobileOnly{
+                    width: 10px;
+                }
+                @include afterTablet{
+                    width: 30px;
+                }
+                @include afterLaptop{
+                    width: 60px;
+                }
+            }            
+        }
+        
+        @include afterTablet{
+            li{
+                padding-top: 0;  
+            }
+            a{
+                @include equalHeightAndLineHeight(50px);
+            }
+        }
+    }
+    
+    .logoHeader{
+        &, a{}
+        
+        &, a, img{
+            width: 150px;          
+            
+            @include afterTablet{
+                width: 160px;
+            }
+            @include afterLaptop{
+                width: 170px;
+            }
+        }
+    }
+}

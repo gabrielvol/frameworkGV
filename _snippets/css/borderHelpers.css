@@ -1,0 +1,53 @@
+/* =============================================================================
+   Border Helpers
+   ==========================================================================
+    b = border
+    a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+    s,d,dd = solid,dotted,dashed
+    bw,bk,bg = white, black, grey */
+.bw{border-color:#fff}
+.bk{border-color:#000}
+.bg{border-color:#ccc}
+
+.bas,.bts,.brs,.bbs,.bls,.bhs,.bvs{border-style:solid}
+.bad,.btd,.brd,.bbd,.bld,.bhd,.bvd{border-style:dotted}
+.badd,.btdd,.brdd,.bbdd,.bldd,.bhdd,.bvdd{border-style:dashed}
+.bas,.bad,.badd{border-width:1px}
+.bts,.btd,.btdd{border-width:1px 0 0}
+.brs,.brd,.brdd{border-width:0 1px 0 0}
+.bbs,.bbd,.bbdd{border-width:0 0 1px}
+.bls,.bld,.bldd{border-width:0 0 0 1px}
+.bhs,.bhd,.bhdd{border-width:0 1px}
+.bvs,.bvd,.bvdd{border-width:1px 0}
+.ban{border:none!important}
+.btn{border-top:none!important}
+.brn{border-right:none!important}
+.bbn{border-bottom:none!important}
+.bln{border-left:none!important}
+.bhn{border-right:none!important;border-left:none!important}
+.bvn{border-top:none!important;border-bottom:none!important}
+
+/* =============================================================================
+   Border Radius Helpers
+   ==========================================================================
+    T,R,B,L = top,right,bottom,left
+    H,M = half,medium */
+.roundedH{-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%}
+.rounded{-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}
+.roundedT{-moz-border-radius:6px 6px 0 0;-webkit-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0}
+.roundedR{-moz-border-radius:0 6px 6px 0;-webkit-border-radius:0 6px 6px 0;border-radius:0 6px 6px 0}
+.roundedRT{-moz-border-radius:0 6px 0 0;-webkit-border-radius:0 6px 0 0;border-radius:0 6px 0 0}
+.roundedRB{-moz-border-radius:0 0 6px 0;-webkit-border-radius:0 0 6px 0;border-radius:0 0 6px 0}
+.roundedB{-moz-border-radius:0 0 6px 6px;-webkit-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px}
+.roundedL{-moz-border-radius:6px 0 0 6px;-webkit-border-radius:6px 0 0 6px;border-radius:6px 0 0 6px}
+.roundedLT{-moz-border-radius:6px 0 0 0;-webkit-border-radius:6px 0 0 0;border-radius:6px 0 0 0}
+.roundedLB{-moz-border-radius:0 0 0 6px;-webkit-border-radius:0 0 0 6px;border-radius:0 0 0 6px}
+
+.roundedM{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}
+.roundedMR{-moz-border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0}
+.roundedMRT{-moz-border-radius:0 3px 0 0;-webkit-border-radius:0 3px 0 0;border-radius:0 3px 0 0}
+.roundedMRB{-moz-border-radius:0 0 3px 0;-webkit-border-radius:0 0 3px 0;border-radius:0 0 3px 0}
+.roundedMB{-moz-border-radius:0 0 3px 3px;-webkit-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
+.roundedML{-moz-border-radius:3px 0 0 3px;-webkit-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px}
+.roundedMLT{-moz-border-radius:3px 0 0 0;-webkit-border-radius:3px 0 0 0;border-radius:3px 0 0 0}
+.roundedMLB{-moz-border-radius:0 0 0 3px;-webkit-border-radius:0 0 0 3px;border-radius:0 0 0 3px}

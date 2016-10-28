@@ -1,0 +1,55 @@
+//Variables
+@import "../scss/fontsPrev";
+@import "../scss/absoluteVariables";
+@import "../scss/sizesMixins";
+@import "../scss/backgroundMixins";
+@import "../scss/maskMixins";
+@import "../scss/transitionMixins";
+@import "../scss/opacityMixins";
+@import "variables/container";
+@import "mediaQueries";
+@import "variables/fonts";
+@import "variables/colours";
+@import "variables/helpers";
+@import "variables/forms";
+@import "variables/tables";
+@import "../scss/fontsMixins";
+@import "../scss/coloursMixins";
+@import "../scss/centerMixins";
+@import "../scss/spacingMixins";
+@import "../scss/bordersMixins";
+@import "../scss/grid";
+
+//etc
+@import "../scss/fonts";
+@import "../scss/colours";
+@import "../scss/usefulClasses";
+@import "../scss/usefulClassesResponsive";
+@import "../scss/nav";
+@import "../scss/forms";
+@import "../scss/formsNiceIt";
+@import "../scss/tables";
+@import "../scss/modal";
+@import "../scss/print";
+
+//Custom Styles
+@import "global";
+@import "usefulClasses";
+@import "usefulClassesResponsive";
+@import "forms";
+@import "formsNiceIt";
+@import "searchForm";
+@import "tables";
+@import "modal";
+@import "slider";
+
+//MainStyles
+@import "header";
+@import "nav";
+@import "footer";
+@import "mainStyles";
+
+//Post
+//@import "lightbox";
+
+//sass --watch .:../../../css/

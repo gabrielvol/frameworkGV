@@ -1,0 +1,120 @@
+/* =============================================================================
+   Nav
+   ========================================================================== */
+$navWidthBT: 150px;
+.mainNav{
+    @include beforeTablet{
+        position: absolute;
+        right: 10px;
+        width: $navWidthBT;
+
+        .hamb{
+            @include borderStyle($mainBcColour);
+            @include borderRadius();
+            @include equalHeightAndLineHeight(34px);
+            box-sizing: border-box;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            z-index: 200;
+            width: 85px;
+            background: $white url('/nuevo/_snippets/img/ic_hamburgerMenu.svg') no-repeat 10px center;
+            background-size: 15px;
+            padding: 0 10px 0 30px;
+            color: $mainFontColour;
+            font-family: $mainFontFamily;
+            font-size: 0.9em;
+
+            &.topper{
+                position: fixed;
+                top: 15px;
+                right: 15px;
+            }
+        }
+        
+        ul{
+            @include borderRadius();
+            z-index: 190;
+            position: relative;
+            top: 40px;
+            width: $navWidthBT; 
+            background-color: $bgWhite;
+            padding: 20px 0 5px;
+            
+            li{
+                float: $none;
+                
+                &, a{
+                    @include equalHeightAndLineHeight(40px);
+                }
+                
+                a{
+                    @include equalHeightAndLineHeight(40px);
+                    font-size: 0.8em;
+                    text-align: center;
+                }
+            }
+        }
+    }    
+    
+    @include afterTablet{
+        li{
+            &, a{
+                @include equalHeightAndLineHeight(60px);
+            }
+            
+            a{
+                @include transition(1s);
+            }
+            
+            & + li{
+                margin-top: 0px;
+            }
+            
+            &.selected{
+                a{
+                    cursor: default;                    
+                }
+            }
+        }        
+        
+        &.topper{
+            position: fixed;
+            top: 0;
+            width: 100%;  
+           
+            ul{
+                @include centerCustom(700px);
+            }       
+        }
+    }
+    
+    @include afterLaptop{
+        li{            
+            /**/
+            @include borderStyle($black);
+            float: left;
+            background-color: #eee;
+            padding: 0 5px;
+            margin-bottom: 5px;
+            /**/   
+            
+            &, a{
+                @include equalHeightAndLineHeight(60px);
+            }
+            
+            & + li{                  
+                /**/
+                margin-left: 5px;
+                /**/
+                
+            }
+            
+            a{
+                /**/
+                font-size: .7em;
+                /**/  
+            }            
+        }
+    }
+}

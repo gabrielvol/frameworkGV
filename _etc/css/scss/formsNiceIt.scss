@@ -1,0 +1,91 @@
+/* =============================================================================
+   NiceIt Reset
+   ========================================================================== */
+form.niceIt{
+    input[type="text"],
+    input[type="email"],
+    input[type="search"],
+    input[type="password"],
+    input[type="url"],
+    input[type="number"]{
+        //Quito el padding: 1px 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .fmSelect{
+        cursor: pointer;
+        *position: relative;
+    
+        &, li, strong, cite{
+            display: block!important;
+        }
+        &, strong, cite{
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        strong{
+            overflow: hidden;
+            
+            span{
+                cite{
+                    font-style: normal!important;
+                }
+            }
+        }
+        &, li{
+            position: relative;
+        }
+        ul{
+            display: none;
+            margin: -1px 0 0 -11px;
+            overflow: hidden;
+            *position: absolute;
+        
+            li{
+                list-style: none;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    
+    .fmCheckbox{
+        display: block!important;
+        cursor: pointer;
+    }
+    
+    .fnFileInput{
+        display: block!important;
+        
+        span{
+            position: relative;
+            display: block!important;
+            
+            cite, strong{
+                position: absolute;
+                display: block!important;
+            }            
+            cite{
+                z-index: 10;
+                font-style: normal;
+            }            
+            strong{
+                z-index: 20;
+                text-indent: -9999px;
+                
+                input{
+                    @include opacityCB(00);
+                    position: relative;
+                    cursor: pointer
+                }
+            }
+        }
+    }    
+    
+    .fmRadio{
+        font-size: 0;
+        line-height: 1%;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

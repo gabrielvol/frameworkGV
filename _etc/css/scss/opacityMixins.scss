@@ -1,0 +1,18 @@
+/* =============================================================================
+   Opacity Mixins Prev / Etc
+   ========================================================================== */
+@mixin opacityCB($opacityValue){
+    opacity: $opacityValue/100;
+    filter: alpha(opacity=$opacityValue);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityValue})";
+}
+@mixin opacityCBHover($opacityValue: 75, $opacityValueHover: 100){
+    opacity: $opacityValue/100;
+    filter: alpha(opacity=$opacityValue);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityValue})";
+    &:focus, &:hover{
+        opacity: $opacityValueHover/100;
+        filter: alpha(opacity=$opacityValueHover);
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityValueHover})";
+    }
+}

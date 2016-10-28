@@ -1,0 +1,50 @@
+/* =============================================================================
+   Search form Custom
+   ========================================================================== */
+.searchForm{
+    position: relative;
+    width: $searchFormWidth;
+    
+    input{
+        height: $searchFormSubmitValueBT;
+
+        &[type="search"]{
+            width: $searchFormWidth;
+            padding-right: calc(#{$searchFormSubmitValueBT} + 15px)!important;
+            line-height: $searchFormSubmitValueBT;
+        }
+        &[type="submit"]{
+            @include opacityCBHover;
+            @include sprites(-461px 0);
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $searchFormSubmitValueBT;
+            border: $none;
+        }
+        @include afterTablet{
+            height: $searchFormSubmitValueAT;
+            
+            &[type="search"]{
+                padding-right: calc(#{$searchFormSubmitValueAT} + 5px)!important;
+                line-height: $searchFormSubmitValueAT;
+            }
+            &[type="submit"]{
+                @include sprites(-400px 0);
+                width: $searchFormSubmitValueAT;
+            }            
+        }
+        @include afterLaptop{
+            height: $searchFormSubmitValueAD;
+            
+            &[type="search"]{
+                padding-right: calc(#{$searchFormSubmitValueAD} + 10px)!important;
+                line-height: $searchFormSubmitValueAD;
+            }
+            &[type="submit"]{
+                @include sprites(-491px 0);
+                width: $searchFormSubmitValueAD;
+            }            
+        }
+    }
+}

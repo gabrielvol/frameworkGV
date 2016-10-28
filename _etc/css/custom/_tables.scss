@@ -1,0 +1,167 @@
+/* =============================================================================
+   Tables / Custom
+   ========================================================================== */
+table{
+    @include beforeTablet{
+        width: $tableWidthMobile;
+        @include tableCustomSizesBeforeTablet;        
+    }
+    @include afterTablet{
+        width: $tableWidthTablet;
+        @include tableCustomSizesTablet;          
+    }
+    @include afterTabletLandscape{
+        width: $tableWidthTabletL;
+        @include tableCustomSizesTabletL;          
+    }
+
+    th, tfoot td{
+        color: $white;
+        font-weight: 700;
+        text-align: center;
+    }    
+    
+    td{
+        &, th{
+            @include equalHeightAndLineHeight(30px);
+            padding: 0 10px;
+            font-size: 0.9em;            
+        }
+        
+        font-weight: 400;
+    }
+}
+
+/* Rounded Tables */
+table.tableRounded{
+    @include borderStyle($mainBcColourTable);
+    
+    th,tfoot td{
+        background: $mainBgColourTable;
+    }
+   
+    tfoot td{
+        @include borderStyleT($secondaryBcColourTable);
+    }
+    
+    tr{
+        th,td{
+            @include borderStyleB($secondaryBcColourTable);
+        }
+    }
+}
+    
+$tableBeforeWidth: 40%;
+@include beforeTablet{
+    table{
+        tr{
+            & + tr, &:last-child{
+                @include borderStyleT($bcGreyD, 2px);
+            }
+           
+            td{
+                font-size: 0.8em;
+                text-align: center;
+                padding-left: $tableBeforeWidth + 5%;
+
+                & + td{
+                    @include borderStyleT($bcGrey);
+                }
+                
+                &::before{
+                    left: 10px;
+                    width: $tableBeforeWidth; 
+                    width: 40%; 
+                    font-weight: bold;
+                    text-transform: uppercase;                
+                }
+            } 
+        }
+    }
+    
+    .tableRounded{
+        tr{
+            @include borderStyleB($mainBcColourTable,$borderWidthValue: 2px);
+            
+            td{
+                @include borderStyleB($secondaryBcColourTable,$borderStyleValue: dotted);
+            }
+            
+            &:last-child{
+                td{
+                    @include borderStyleB($secondaryBcColourTable!important);
+                    
+                    &:last-child{
+                        @include borderStyleB($secondaryBcColourTable!important, $borderWidthValue: 0);
+                    }
+                }
+            }
+        }
+    }
+    
+    .tableStriped{
+        tbody{
+            tr{
+                td{
+                    background-color:$bgColourTableStripedEven;
+                    
+                    &:nth-child(odd){                        
+                        background-color: darken($bgColourTableStripedEven, 10%);
+                    }                    
+                }
+                
+                &:nth-child(n+2){
+                    @include borderStyleT($bcColourTableStripedSeparator, 2px);
+                }
+                
+                &:last-child{
+                    @include borderStyleB($bcColourTableStripedSeparator);
+                }
+            }
+        }
+    }
+    
+    .table-responsive{
+        padding: 15px 0;
+        margin: 0 auto 10px;
+        
+        table{
+            @include beforeTablet{
+                width: $tableWidthMobile;
+                @include tableCustomSizesBeforeTablet;        
+            }
+            @include afterTablet{
+                width: $tableWidthTablet;
+                @include tableCustomSizesTablet;          
+            }
+            @include afterTabletLandscape{
+                width: $tableWidthTabletL;
+                @include tableCustomSizesTabletL;          
+            }
+            
+            th{
+                text-align: center;
+            }
+            
+            td{
+                @include borderStyleT($bcGrey);
+                text-align: left;
+                padding-left: $zero;
+            }
+        }
+        
+        .tableRounded{
+            tr{
+                @include borderStyleB($mainBcColourTable, $borderWidthValue: 1px);
+                
+                td{
+                    @include borderStyleB($secondaryBcColourTable, $borderWidthValue: 0);
+                }
+                
+                &:last-child td{
+                    @include borderStyleB($secondaryBcColourTable!important, $borderWidthValue: 0);
+                }
+            }
+        }
+    }
+}

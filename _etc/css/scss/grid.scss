@@ -1,0 +1,101 @@
+/* =============================================================================
+   Container Sizes
+   ========================================================================== */
+// Tablet ~720px
+$containerTablet:          ($containerTabletValue + $grid-gutter-width);
+
+// Tablet Landscape ~1000px
+$containerTabletLandscape: ($containerTabletLandscapeValue + $grid-gutter-width);
+
+// Laptop ~1000px
+$containerLaptop:          ($containerLaptopValue + $grid-gutter-width);
+
+// Desktop ~1200px 
+$containerDesktop:         ($containerDesktopValue + $grid-gutter-width);
+
+// Desktop Large ~1600px
+$containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
+
+.container{
+/*
+    padding-left: floor(($grid-gutter-width / 2));
+    padding-right: ceil(($grid-gutter-width / 2));
+*/
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    @include clearfix;
+    
+    @include mobileOnly{
+        width: $containerMobileValue}
+    @include afterMobileLandscape{
+        width: $containerMobileLandscapeValue}
+    @include afterTablet{
+        width: $containerTablet}
+    @include afterTabletLandscape{
+        width: $containerTabletLandscape}
+    @include afterLaptop{
+        width: $containerLaptop}
+    @include afterDesktop{
+        width: $containerDesktop}
+    @include afterDesktopLarge{
+        width: $containerDesktopLarge}
+
+    &.centerAbs{
+        position: absolute;
+        left: 50%;
+        
+        @include mobileOnly{
+            margin-left: $cMHneg}
+        @include afterMobileLandscape{
+            margin-left: $cMLHneg}
+        @include afterTablet{
+            margin-left: $cTHneg}
+        @include afterTabletLandscape{
+            margin-left: $cTLHneg}
+        @include afterLaptop{
+            margin-left: $cTLHneg}
+        @include afterDesktop{
+            margin-left: $cDHneg}
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}    
+
+/*        
+        @include mobileOnly{
+            margin-left: $cMH}
+        @include afterMobileLandscape{
+            margin-left: $cMLH}
+        @include afterTablet{
+            margin-left: $cTH}
+        @include afterTabletLandscape{
+            margin-left: $cTLH}
+        @include afterLaptop{
+            margin-left: $cTLH}
+        @include afterDesktop{
+            margin-left: $cDH}
+        @include afterDesktopLarge{
+            margin-left: $cDLH}
+*/
+    }
+}
+
+/* =============================================================================
+   Grilla 100%
+   ========================================================================== */
+//== Container sizes
+// Small screen / tablet (768px+)
+/*$container-tablet:            98.5%!important;
+$container-sm:                $container-tablet;
+// Medium screen / desktop (992px+)
+$container-desktop:           98.5%!important;
+$container-md:                $container-desktop;
+// Large screen / wide desktop (1200px+)
+$container-large-desktop:     98.5%!important;
+$container-lg:                $container-large-desktop;
+
+.container {
+    @media (min-width: $screen-sm-min) {width: $container-sm;}
+    @media (min-width: $screen-md-min) {width: $container-md;}
+    @media (min-width: $screen-lg-min) {width: $container-lg;}
+    @media (max-width :320px){width:98%;}
+}*/

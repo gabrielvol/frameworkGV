@@ -1,0 +1,363 @@
+/* =============================================================================
+   Forms Custom
+   ========================================================================== */
+form, fieldset, label, input, select, textarea, button{
+    .mobileForm &{
+        @include beforeTablet{
+            clear: both!important;
+            float: none!important;
+            width: $formLabelWidthBT;
+            margin-right: $auto;
+            margin-left: $auto;
+        }
+        
+        @include mobileOnly{
+            width: $formLabelWidthMO;            
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            clear: both!important;
+            float: $none;
+            width: $formLabelWidthTO;
+            margin-right: $auto;
+            margin-left: $auto;
+        }
+    }
+}
+
+fieldset, input, select, textarea, button{
+    .mobileForm &{
+        @include beforeTablet{
+            width: $formInputWidthBT;
+        }
+        
+        @include mobileOnly{
+            width: $formInputWidthMO;            
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            width: $formInputWidthTO;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        width: $formInputWidthATL;
+    }
+    
+    @include afterDesktop{
+        width: $formInputWidthAD;
+    }
+}
+
+.mandatoryMessage{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+        
+    &.invalidMandatoryMessage{
+        background-color: $invalidMandatoryMessageBgColour;
+        
+        p{
+            color: $invalidMandatoryMessageFontColour;            
+        }
+    }
+}
+
+fieldset{    
+    & + fieldset{
+        margin-top: 30px;
+    }
+
+    > p, legend{
+        margin-bottom: $paddingMarginMediumValue;
+        padding: $zero;
+        color: $black;
+    }
+}
+
+legend{          
+    @include beforeTabletLandscape{ 
+        @include centerCustom(90%);
+        text-align: center;
+    }
+}
+
+label{
+    display: block\0/!important; /* IE8 + IE9 */
+    margin-bottom: $zero;
+    padding-left: 7px;
+    
+    @include afterTabletLandscape{
+        @include equalHeightAndLineHeight($formLabelHeightATL);
+    }
+}
+
+@media all and (-ms-high-contrast:none){
+    label { /* IE10 */
+        display: block!important;
+    }
+    
+    *::-ms-backdrop, label { /* IE11 */
+        display: block!important;
+    }
+}
+
+label, input, select, textarea, button{
+    display: block;
+}
+
+label{
+    @include beforeTablet{
+        .mobileForm &{
+            @include equalHeightAndLineHeight($formLabelHeightBT);
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            @include equalHeightAndLineHeight($formLabelHeightTO);          
+        }
+    }
+    
+    @include afterTabletLandscape{
+        @include equalHeightAndLineHeight($formLabelHeightATL);
+    }
+    
+    @include afterLaptop{
+        width: $formLabelWidthAD;        
+    }
+}
+
+input, select{
+    @include beforeTablet{
+        .mobileForm &{
+            @include equalHeightAndLineHeight($formInputHeightBT);
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            @include equalHeightAndLineHeight($formInputHeightTO);          
+        }
+    }
+    
+    @include afterTabletLandscape{
+        @include equalHeightAndLineHeight($formInputHeightATL);
+    }
+    
+    @include afterLaptop{
+        width: $formInputWidthAD;        
+    }
+}
+
+input, select, textarea{
+    @include borderStyle($formInputBcColour);
+    @include transition(1s);
+    font-family: $formInputFont;
+    
+    @include beforeTablet{
+        .mobileForm &{
+            margin-bottom: $paddingMarginLargeValue;
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            margin-bottom: $paddingMarginLargeValue;       
+        }
+    }
+
+    &:focus, &:hover{
+        border-color: $formInputBcColourHover;
+    }
+
+    &:focus{
+        box-shadow: inset 0 0 4px #666;
+    }
+    
+    &.bcError{
+        border-color: $bcError;        
+    }
+}
+
+button,
+input[type="button"],
+html input[type="button"]{
+    border: $none;
+}
+
+button{}
+button::focus-inner{}
+input::focus-inner{}
+
+label{
+    font-family: $formLabelFontFamily;
+}
+
+input{
+    padding: 0 $paddingMarginMediumValue;
+
+    &[type="text"]{}
+    &[type="search"]{}
+    &[type="email"]{
+        &:valid{}
+        &:invalid{}
+    }
+    &[type="password"]{}
+    &[type="url"]{}
+
+    &[type="number"]{
+        &:in-range{}
+        &:out-of-range{}
+    }
+    &[type="range"]{}
+
+    &[type="date"]{}
+    &[type="month"]{}
+    &[type="week"]{}
+    &[type="time"]{}
+    &[type="datetime"]{}
+    &[type="datetime-local"]{}
+
+    &[type="checkbox"]{
+        &:checked{}
+    }
+    &[type="radio"]{
+        &:checked{}
+    }
+
+    &[type="file"]{}
+    &[type="color"]{}
+
+    &[type="submit"],
+    &[type="reset"]{
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight(45px);
+            }
+        }
+        
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight(50px);          
+            }  
+        }
+        
+        @include afterTabletLandscape{
+            @include equalHeightAndLineHeight($formSubmitHeightValueATL);
+        }
+        
+        @include afterLaptop{
+            @include equalHeightAndLineHeight($formSubmitHeightValueAD);
+        }
+    }
+
+    &[type="submit"]{}
+    &[type="reset"]{}
+    &[type="button"]{}
+    
+    &:required{}
+    &:disabled{}
+    
+    &.nombre{}
+    &.cargo{}
+    &.empresa{}
+    &.email{}
+    &.telefono{}
+    &.datepicker{}
+    &.rubro{}
+    &.producto{}
+    &.cantidad{}
+    &.precio{}
+    &.radio{}
+    &.check{}
+    &.preciotilde{}
+    &.habitacion{}
+    
+    &.invalidField{
+        &, &:focus, &:hover{
+            border-color: $bcError!important;            
+        }
+    }
+}
+
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+button{
+    @include borderStyle($formSubmitBcColour);
+    @include transition(1s);
+    margin-bottom: $zero;
+    color: $formSubmitFontColour;
+    font-family: $formSubmitFontFamily;
+
+    &:focus, &:hover{
+        border-color: $formSubmitBcColourHover;
+        color: $formSubmitFontColourHover;
+    }
+    
+    @include afterTabletLandscape{
+        height: $formInputHeightATL;
+        line-height: 25px;        
+    }
+}
+
+@include beforeTablet{
+    .mobileForm{
+        input[type="reset"],
+        input[type="submit"],
+        input[type="button"],
+        button{
+            margin-bottom: $zero;
+            
+            & + input[type="reset"],
+            & + input[type="submit"],
+            & + input[type="button"],
+            & + button{        
+                    margin-top: $paddingMarginLargeValue;
+            }
+        }
+    }
+}
+@include tabletOnly{
+    .tabletForm{
+        input[type="reset"],
+        input[type="submit"],
+        input[type="button"],
+        button{
+            margin-bottom: $zero;
+            
+            & + input[type="reset"],
+            & + input[type="submit"],
+            & + input[type="button"],
+            & + button{
+                margin-top: $paddingMarginLargeValue;       
+            }
+        }
+    }
+}
+
+select{
+    option{
+        &:checked{}
+    }
+}
+
+textarea{
+    padding: $paddingMarginMediumValue;
+    
+    @include beforeTablet{
+        height: 100px;
+    }
+    
+    @include afterTablet{
+        height: 100px;
+    }
+    
+    @include afterLaptop{
+        height: 100px;
+    }
+}

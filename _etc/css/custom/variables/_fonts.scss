@@ -1,0 +1,104 @@
+/* =============================================================================
+   Font formatting
+   ========================================================================== */
+// Font-face Files
+
+///**Custom Font Families:**
+    ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
+$fontFamiliesSiteFontsMap:(    
+    arial: Arial
+);
+
+///**Activador de clases para fuente openSans:**
+    ///Con esta clase se activa la creación de clases para las fuentes OpenSans, que se encuentran en el mapa `$openSansMap` en `[/etc/scss/fontsVariablesGlobal.scss]`. Las clases son `.openSansL`, `.openSans`, `.openSansI`, `.openSansB` y `.openSansBI`, se crean con el el mixin **fontFamilyCustomClassesGenerator**, `[/etc/scss/fontMixins.scss]`.
+$openSansClasses: off;
+
+    //Creamos la variable de la fuente principal del sitio
+$mainFontFamily: map-get($fontFamiliesSiteFontsMap, arial);
+$mainFontFamilyBold: $mainFontFamily;
+
+//Main font Settings
+$mainFontStack:(
+    $mainFontFamily,
+    $fontFamiliesListSans
+);
+%bodyFontSettings{}
+%mainFontsSettings{
+    font-family: $mainFontStack;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+$mainParagraphFontSize: 1em;
+$headingMargin: 0 0 0.8em;
+$textMargin: 0;
+$textMarginSibling: 0.8em 0 0;
+
+//Font Sizes
+$fontSizesMapMobile:(
+    $h1List: 1.6em,
+    $h2List: 1.5em,
+    $h3List: 1.4em,
+    $h4List: 1.3em,
+    $h5List: 1.3em,
+    $h6List: 1.3em
+);
+$fontSizesMapTablet:(
+    $h1List: 1.6em,
+    $h2List: 1.5em,
+    $h3List: 1.4em,
+    $h4List: 1.3em,
+    $h5List: 1.3em,
+    $h6List: 1.3em
+);
+$fontSizesMapDesktop:(
+    $h1List: 2.4em,
+    $h2List: 2.2em,
+    $h3List: 2em,
+    $h4List: 1.8em,
+    $h5List: 1.6em,
+    $h6List: 1.4em
+);
+
+//Line Height Values
+$lineHeightsMapMobile:(
+    $h1List: 1em,
+    $h2List: 1em,
+    $h3List: 1em,
+    $h4List: 1em,
+    $h5List: 1em,
+    $h6List: 1em
+);
+$lineHeightsMapTablet:(
+    $h1List: 1em,
+    $h2List: 1em,
+    $h3List: 1em,
+    $h4List: 1em,
+    $h5List: 1em,
+    $h6List: 1em
+);
+$lineHeightsMapDesktop:(
+    $h1List: 1em,
+    $h2List: 1.1em,
+    $h3List: 1em,
+    $h4List: 1em,
+    $h5List: 1em,
+    $h6List: 1em
+);
+
+// Useful Text Format
+$fontSizeReset: 1em;
+$lineHeightReset: 1em;
+
+/* =============================================================================
+   Nav Fonts
+   ========================================================================== */
+$navFontFamily: $mainFontFamily;
+$navSelectedFontFamily: $navFontFamily;
+
+/* =============================================================================
+   Form Fonts
+   ========================================================================== */
+$formLabelFontFamily: $mainFontFamily;
+$formInputFont: $mainFontFamily;
+$formSubmitFontFamily: $mainFontFamily;

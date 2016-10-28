@@ -1,0 +1,50 @@
+/* =============================================================================
+   Tables Variables / Custom
+   ========================================================================== */
+$tableWidthMobile: 100%!important;
+$tableWidthTablet: 700px;
+$tableWidthTabletL: 970px;
+
+//Custom Sizes
+$tableSizesMapBeforeTablet:(
+    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
+    //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
+    //con el mixin 'tableCustomSizesBeforeTablet'
+    
+    tableWidthBig: 1000px,
+    tableWidthSmall: 500px
+    
+);
+$tableSizesMapTablet:(
+    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
+    //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
+    //con el mixin 'tableCustomSizesTablet'
+    
+);
+$tableSizesMapTabletL:(
+    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
+    //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
+    //con el mixin 'tableCustomSizesTabletL'
+    
+    tableWidthSmall: 760px
+);
+
+    //Generador de clases por cada tamaño de ancho de tabla
+@mixin tableCustomSizesBeforeTablet{
+    @each $tableClassName, $tableCustomWidth in $tableSizesMapBeforeTablet {
+        &.#{$tableClassName}{width: $tableCustomWidth;}
+    }
+}
+@mixin tableCustomSizesTablet{
+    @each $tableClassName, $tableCustomWidth in $tableSizesMapTablet {
+        &.#{$tableClassName}{width: $tableCustomWidth;}
+    }
+}
+@mixin tableCustomSizesTabletL{
+    @each $tableClassName, $tableCustomWidth in $tableSizesMapTabletL {
+        &.#{$tableClassName}{width: $tableCustomWidth;}
+    }
+}
+
+//Rounded Table
+$borderRadiusValueTable: $borderRadiusValue;

@@ -1,0 +1,72 @@
+/* =============================================================================
+   Helpers Values
+   ========================================================================== */
+// Spacing
+$paddingMarginSmallValue: 5px!important;
+$paddingMarginMediumValue: 10px!important;
+$paddingMarginLargeValue: 20px!important;
+ 
+$spacingHelpersMap:(
+    //Aquí se agregan los valores y clases para generar los spacing helpers,
+    //por cada nuevo valor (xl: 40px) se generará lo sig. para padding y margin:
+    //.mtxl, .mrxl, .mbxl, .mlxl, .mhxl, .mvxl, etc{margin-right: 40px}
+    
+    n: $zero,
+    s: $paddingMarginSmallValue,
+    m: $paddingMarginMediumValue,
+    l: $paddingMarginLargeValue
+);
+
+// Variables para activar los spacing helpers (sh) responsive
+$shMobileOnly: off;
+$shAfterMobileLandscape: off;
+$shMobileLandscapeOnly: off;
+$shBeforeTablet: off;
+$shBeforeTabletLandscape: off;
+$shTabletOnly: off;
+$shAfterTablet: on;
+$shAfterTabletLandscape: off;
+$shAfterLaptop: off;
+$shBeforeDesktop: off;
+$shAfterDesktop: off;
+
+/* =============================================================================
+   Border Helpers
+   ========================================================================== */
+$borderRadiusValue: 12px;
+
+//Border classes
+//b = border
+//a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+//s,d,dd = solid,dotted,dashed
+//bw,bk,bg = white, black, grey
+    
+.bw{border-color: $white}
+.bk{border-color: $black}
+.bg{border-color: $bcGrey}
+
+.bas,.bts,.brs,.bbs,.bls,.bhs,.bvs{border-style: solid}
+.bad,.btd,.brd,.bbd,.bld,.bhd,.bvd{border-style: dotted}
+.badd,.btdd,.brdd,.bbdd,.bldd,.bhdd,.bvdd{border-style: dashed}
+
+.bas,.bad,.badd{border-width: 1px}
+.bts,.btd,.btdd{border-width: 1px 0 0}
+.brs,.brd,.brdd{border-width: 0 1px 0 0}
+.bbs,.bbd,.bbdd{border-width: 0 0 1px}
+.bls,.bld,.bldd{border-width: 0 0 0 1px}
+.bhs,.bhd,.bhdd{border-width: 0 1px}
+.bvs,.bvd,.bvdd{border-width: 1px 0}
+
+.ban{border: $none}
+.btn{border-top: $zero}
+.brn{border-right: $zero}
+.bbn{border-bottom: $zero}
+.bln{border-left: $zero}
+.bhn{
+    @extend .brn;
+    @extend .bln;
+}
+.bvn{
+    @extend .btn;
+    @extend .bbn;
+}

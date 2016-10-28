@@ -1,0 +1,47 @@
+/* =============================================================================
+   Center Mixins / Etc
+   ========================================================================== */
+    //Mixin para clase .absoluteCenter
+@mixin centerAbsolute($widthValue, $heightValue,  $positionValue: absolute){
+    $widthValueH: #{$widthValue}/2;
+    $heightValueH: #{$heightValue}/2;
+    position: $positionValue;
+    top: 50%;
+    left: 50%;
+    width: $widthValue;
+    height: $heightValue;
+    margin-top: unquote("-1 * #{$heightValueH}");
+    margin-left: unquote("-1 * #{$widthValueH}");
+}
+    //Mixin para clase .centerVertical
+@mixin centerVertical($heightValue, $positionValue: absolute){
+    $heightValueH: #{$heightValue}/2;
+    position: $positionValue;
+    top: 50%;
+    height: $heightValue;
+    margin-top: unquote("-1 * #{$heightValueH}");
+}
+    //Mixin para clase .centerHorizontal
+@mixin centerHorizontal($widthValue, $positionValue: absolute){
+    $widthValueH: #{$widthValue}/2;
+    position: $positionValue;
+    left: 50%;
+    width: $widthValue;
+    margin-left: unquote("-1 * #{$widthValueH}");
+}
+    //Mixin centrado custom
+@mixin centerCustom($percentWidth: 90%){
+    width: $percentWidth;
+    margin-right: $auto;
+    margin-left: $auto;
+}
+    //Mixin para centrar popup
+@mixin centerPopup($widthValue, $heightValue, $topValue: 40%){
+    $widthValueH: #{$widthValue}/2;
+    $heightValueH: #{$heightValue}/2;    
+    top: $topValue;
+    width: $widthValue;
+    height: $heightValue;
+    margin-top: unquote("-1 * #{$heightValueH}");
+    margin-left: unquote("-1 * #{$widthValueH}");
+}

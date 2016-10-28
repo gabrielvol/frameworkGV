@@ -1,0 +1,10 @@
+{
+    "in": ["css/styles.css"],
+    "out": "css/styles.min.css",
+    "browsers": ["last 3 versions", "Android 2.3"],
+    "sass": true,
+    "autoprefixer": true,
+    "filters": true,
+    "opacity": true,
+    "pseudoElements": true
+}

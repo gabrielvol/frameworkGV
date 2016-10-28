@@ -1,0 +1,124 @@
+/* =============================================================================
+   NiceIt Custom Styles
+   ========================================================================== */
+form.niceIt{
+    
+    /* Select */
+    .fmSelect{
+        @include borderStyle($formInputBcColour);
+        //Aquí se establece la coordenada de la flecha del select
+        @include sprites(103px -80px);
+        //Este padding-right: 40px es el espacio para la flecha del select,
+        //tendría que ser un sprite de 40px de ancho
+        padding: 0 40px 0 10px;
+        width: 135px!important;
+        color: $formInputFontColour;
+        
+        &, & strong, & cite{
+            //Aquí se establece la altura de los select y option
+            height: 30px;
+            line-height: 28px;
+            font-size: 0.9em;            
+        }
+        
+        %optionTextFormat{
+            color: $formInputFontColour;
+            font-family: $mainFontFamily;
+            text-transform: none;             
+        }
+        
+        strong{            
+            span{
+                cite{
+                    @extend %optionTextFormat;  
+                }
+            }
+        }
+        
+        ul{
+            @include borderStyle($formInputBcColour);
+            width: 135px!important;
+            max-height: 250px;
+            background: #fff none;
+            
+            li{
+                @extend %optionTextFormat;  
+                padding: 10px 15px!important;
+                font-size: 0.7em;
+                line-height: 1.3em;
+                
+                &:hover, &:focus{
+                    color: $formInputFontColourHover;
+                    background-color: $formInputBgColourHover;
+                }
+            }
+        }
+    }
+    
+    /* Checkboxes */
+    .fmCheckbox{
+        //En caso de ser sólo un checkbox se oculta el siguiente que se
+        //agrega automaticamente
+        & + .fmCheckbox{
+            display: $none;
+        }
+        
+        @include borderStyle($formInputBcColour);
+        @include squareSize(19px);
+    }
+    
+    //Aquí se indican las coordenadas del "tilde",
+    //que debe ser un bloque de sprites
+    .fmCheckbox.checked{
+        @include sprites(0px 0px);
+    }
+    
+    /* File Upload */
+    .fnFileInput{
+        &, span, strong{
+            width:100%!important;
+            
+            @include mobileOnly{
+                width: 89%!important; 
+                margin-right: $auto;
+                margin-left: $auto;    
+            }
+        }
+        
+        span{
+            cite{}
+            
+            strong{                
+                input{                    
+                    position: absolute;
+                    left: 0;
+                    width: 97%!important;
+                    height: 238px;
+                }
+            }
+        }
+        
+        &, &:hover{
+            //Aquí va la imgen de fondo del input
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm{
+            .fnFileInput{ 
+                margin-right: $auto;
+                margin-left: $auto; 
+                
+                &, span, strong{
+                    width: 95%;
+                }
+            }
+        }
+    }
+    
+    /* Radio Buttons */
+    a.fmRadio{
+        &.checked{}
+    }
+    #fmRbtn-IDNAME{}
+}

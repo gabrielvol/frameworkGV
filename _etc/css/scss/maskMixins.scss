@@ -1,0 +1,37 @@
+/* =============================================================================
+   Mask Mixins / Etc
+   ========================================================================== */
+    //Mixin para máscara con centrado ciego
+@mixin centerMaskBlind($maskWidth, $maskHeight, $childWidth: auto, $childHeight: auto){
+    &{
+        width: $maskWidth;
+        height: $maskHeight;
+        .maskChild{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: $childWidth;
+            height: $childHeight;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+//Mixins para máscaras
+@mixin maskWidth($maskValue: 100%){
+    width: $maskValue;
+    overflow: hidden;
+}
+@mixin maskHeight($maskValue: 100%){
+    height: $maskValue;
+    overflow: hidden;
+}
+@mixin maskWidthHeight($maskWidthValue: 100%, $maskHeightValue: 100%){
+    width: $maskWidthValue;
+    height: $maskHeightValue;
+    overflow: hidden;
+}

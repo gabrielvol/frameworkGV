@@ -1,0 +1,150 @@
+/* =============================================================================
+   Tables / Etc
+   ========================================================================== */
+table{
+    @include beforeTablet{
+        width: $tableWidthMobile;
+        @include tableCustomSizesBeforeTablet;        
+    }
+    @include afterTablet{
+        width: $tableWidthTablet;
+        @include tableCustomSizesTablet;          
+    }
+    @include afterTabletLandscape{
+        width: $tableWidthTabletL;
+        @include tableCustomSizesTabletL;          
+    }
+    
+    th, td{
+        vertical-align: middle;
+    }
+}
+
+/* Rounded Tables */
+.tableRounded{
+    @include borderRadius($borderRadiusValue);
+    border-collapse: separate;
+   
+    tfoot td{
+        &:first-child{
+            @include borderRadiusBL($borderRadiusValueTable);
+        }
+        &:last-child{
+            @include borderRadiusBR($borderRadiusValueTable);
+        }
+    }
+    
+    tr{
+        th{
+            &:first-child{
+                @include borderRadiusTL($borderRadiusValueTable);
+            }
+            &:last-child{
+                @include borderRadiusTR($borderRadiusValueTable);
+            }
+        }
+        
+        &:last-child{
+            td{
+                border-bottom: $zero;
+            }
+        }
+    }
+}
+
+/* Striped Tables */
+.tableStriped{
+    thead, tfoot{
+        tr{
+            background-color: $bgColourTableStripedThead;            
+        }
+    }
+    tbody{
+        tr{
+            background-color:$bgColourTableStripedEven;
+            
+            &:nth-child(odd){
+                background-color: $bgColourTableStripedOdd;
+            }
+        }        
+    }
+}
+
+@include beforeTablet{
+    table{
+        width: $tableWidthMobile;
+        
+        thead, tfoot{
+            display: none;
+        }
+        
+        tr, td{
+            display: block;
+        }
+        
+        tr{
+            margin-top: 0;
+        }
+        td{
+            position: relative;
+            
+            &:before{
+                content: attr(data-label);
+                position: absolute;
+            }
+        }
+    }
+    
+    .tableRounded{
+        tr{
+            &:last-child{
+                border: $none;
+            }            
+        }
+        td{
+            &:last-child{
+                border: $none;
+            }            
+        }
+    }
+        
+    .table-responsive{
+        width: 98%;
+        overflow-x: scroll;
+        
+        table{
+            position: relative;
+            display: table;
+        
+            thead, tbody{
+                display: table-row-group;
+            }
+
+            tfoot{
+                display: none;
+            }
+            
+            tr{
+                display: table-row;
+            }
+            
+            td{
+                &, th{
+                    display: table-cell;
+                }
+                &:before{
+                    content: '';
+                    float: none;                    
+                }
+            }
+        }
+        .tableStriped{
+            tr{
+                border: $none;                
+            }
+            td{
+                background: $none;          
+            }           
+        }
+    }
+}

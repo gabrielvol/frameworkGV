@@ -1,0 +1,40 @@
+/* =============================================================================
+   Forms Variables / Custom
+   ========================================================================== */
+//Responsive Values
+    //Labels
+$formLabelWidthMO:  270px!important;
+$formLabelWidthBT:  90%!important;
+$formLabelWidthTO:  520px!important;
+$formLabelWidthATL: 520px; //No debe llevar !important
+$formLabelWidthAD:  520px; //No debe llevar !important
+
+$formLabelHeightMO:  30px;
+$formLabelHeightBT:  30px;
+$formLabelHeightTO:  30px;
+$formLabelHeightATL: 30px;
+$formLabelHeightAD:  30px;
+
+    //Inputs
+$formInputWidthMO:  $formLabelWidthMO;
+$formInputWidthBT:  $formLabelWidthBT;
+$formInputWidthTO:  $formLabelWidthTO;
+$formInputWidthATL: $formLabelWidthATL; //No debe llevar !important
+$formInputWidthAD:  $formLabelWidthAD; //No debe llevar !important
+
+$formInputHeightMO:  $formLabelHeightMO;
+$formInputHeightBT:  $formLabelHeightBT;
+$formInputHeightTO:  $formLabelHeightTO;
+$formInputHeightATL: $formLabelHeightATL; //No debe llevar !important
+$formInputHeightAD:  $formLabelHeightAD; //No debe llevar !important
+
+$formSubmitHeightValueBT: 50px;
+$formSubmitHeightValueTO: 65px;
+$formSubmitHeightValueATL: 50px;
+$formSubmitHeightValueAD: 75px;
+
+    //Search Form
+$searchFormWidth: 100px;
+$searchFormSubmitValueBT: 30px;
+$searchFormSubmitValueAT: 60px;
+$searchFormSubmitValueAD: 50px;

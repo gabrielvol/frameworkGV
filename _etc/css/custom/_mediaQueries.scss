@@ -1,0 +1,96 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+$mobileMax: 420px;
+$mobileLMin: 421px;
+$mobileLMax: 767px;
+$tabletMin: 768px;
+$tabletPMax: 1023px;
+$tabletLMin: 1024px;
+$laptopMin: 1025px;
+$tabletMax: 1199px;
+$desktopMin: 1200px;
+$desktopLargeMin: 1600px;
+
+/* < Mobile */
+@mixin mobileOnly{
+    @media (max-width: #{$mobileMax}){@content;}}
+    
+/* < Tablet */
+@mixin beforeTablet{
+    @media (max-width: #{$mobileLMax}){@content;}}
+    
+/* < Tablet Landscape */
+@mixin beforeTabletLandscape{
+    @media (max-width: #{$tabletPMax}){@content;}}
+
+/* < Desktop */
+@mixin beforeDesktop{
+    @media (max-width: #{$tabletMax}){@content;}}
+
+/* Mobile + */
+@mixin afterMobileLandscape{
+    @media (min-width: #{$mobileLMin}){@content;}}
+    
+/* Mobile Landscape Only */
+@mixin mobileLandscapeOnly{
+    @media (min-width: #{$mobileLMin}) and (max-width: #{$mobileLMax}){@content;}}
+
+/* Custom Mobile Breakpoints */
+@mixin mobile500{
+    @media (min-width: 500px){@content;}}
+    
+@mixin mobile500Only{
+    @media (min-width: 500px) and (max-width: #{$mobileLMax}){@content;}}
+
+/* iPad + */
+@mixin afterTablet{
+    @media (min-width: #{$tabletMin}){@content;}}
+    
+/* iPad Landscape + */
+@mixin afterTabletLandscape{
+    @media (min-width: #{$tabletLMin}){@content;}}
+    
+/* iPad only */
+@mixin tabletOnly{
+    @media (min-width: #{$tabletMin}) and (max-width: #{$tabletPMax}){@content;}}
+    
+/* iPad Landscape only */
+@mixin tabletLandscapeOnly{
+    @media (min-width: #{$tabletLMin}) and (max-width: #{$tabletMax}){@content;}}
+    
+/* iPad Portrait and Landscape only */
+@mixin tabletAndTabletLandscapeOnly{
+    @media (min-width: #{$tabletMin}) and (max-width: #{$tabletMax}){@content;}}
+
+/* Laptop + */
+@mixin afterLaptop{
+    @media (min-width: #{$desktopMin}){@content;}}
+    
+/* Desktop + */
+@mixin afterDesktop{
+    @media (min-width: #{$desktopMin}){@content;}}
+    
+/* Big Screens + */
+@mixin afterDesktopLarge{
+    @media (min-width: #{$desktopLargeMin}){@content;}}
+
+/*
+@media (min-width: 100px) and (max-width: 100px){}
+
+margin-right: $auto;
+margin-left: $auto;
+*/
+
+// Gettext Helpers
+/*
+# href
+href="/link.php<?php if($idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
+
+# src
+src="/img/<?php if($idioma == 'en_GB'){ echo '/en/'; } else { echo '/'; } ?>img_file.jpg"
+
+# class
+class="<?php if($idioma == 'en_GB'){ echo ' idiomaEng'; } ?>"
+
+*/

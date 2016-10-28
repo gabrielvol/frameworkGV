@@ -1,0 +1,38 @@
+/* =============================================================================
+   Container Sizes
+   ========================================================================== */
+$grid-gutter-width: 30px;
+
+//Container Sizes
+$containerMobileValue: 300px; /* Mobile / Container: 300px */
+$containerMobileLandscapeValue: 90%;
+$containerTabletValue: 690px; /* iPad / Container: 720px */
+$containerTabletLandscapeValue: 970px; /* iPad Landscape / Container: 1000px */
+$containerLaptopValue: $containerTabletLandscapeValue; /* Laptop / Container: 1000px */
+$containerDesktopValue: $containerLaptopValue; /* 1170px; /* Desktop / Container: 1200px */
+$containerDesktopLargeValue: $containerLaptopValue; /* 1520px; /* Big Screens / Container: 1550px */
+
+//Container Center Negative Values
+$cMHalf:  #{$containerMobileValue}/2; /* Mobile Half */
+$cMLHalf: #{$containerMobileLandscapeValue}/2; /* Mobile Landscape Half */
+$cTHalf:  #{$containerTabletValue}/2; /* Tablet Half*/
+$cTLHalf: #{$containerTabletLandscapeValue}/2; /* Tablet Landscape Half*/
+$cLHalf:  #{$containerLaptopValue}/2; /* Laptop Half */
+$cDHalf:  #{$containerDesktopValue}/2; /* Desktop Half */
+$cDLHalf: #{$containerDesktopLargeValue}/2; /* Desktop Large Half*/
+
+$cMHneg: unquote("-1 * #{$cMHalf}"); /* Mobile Half */
+$cMLHneg: unquote("-1 * #{$cMLHalf}"); /* Mobile Landscape Half */
+$cTHneg: unquote("-1 * #{$cTHalf}"); /* Tablet Half*/
+$cTLHneg: unquote("-1 * #{$cTLHalf}"); /* Tablet Landscape Half*/
+$cLHneg: unquote("-1 * #{$cLHalf}"); /* Laptop Half */
+$cDHneg: unquote("-1 * #{$cDHalf}"); /* Desktop Half */
+$cDLHneg: unquote("-1 * #{$cDLHalf}"); /* Desktop Large Half*/
+
+//$cMH: -150px; /* Mobile Half */
+//$cMLH: -45%; /* Mobile Landscape Half */
+//$cTH: -345px; /* Tablet Half*/
+//$cTLH: -485px; /* Tablet Landscape Half*/
+//$cLH: $cTLH; /* Laptop Half */
+//$cDH: -585px; /* Desktop Half */
+//$cDLH: -760px; /* Desktop Large Half*/

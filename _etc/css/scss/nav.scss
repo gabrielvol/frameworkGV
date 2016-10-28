@@ -1,0 +1,30 @@
+/* =============================================================================
+   Nav / Etc
+   ========================================================================== */
+.mainNav{
+    li{
+        background: $bgNavItem;
+        a{
+            color: $navFontColour;
+            font-family: $navFontFamily;
+            background: $bgNavItemAnchor;
+            &:focus, &:hover{
+                background: $bgNavItemAnchorHover;
+                color: $navFontColourHover;
+            }
+        }
+        &.selected{
+            background: $bgNavSelectedItem;
+            a{
+                background: $bgNavSelectedAnchor;
+                font-family: $navSelectedFontFamily;
+                &, &:focus, &:hover{
+                    color: $navSelectedFontColour;
+                }
+                &:focus, &:hover{
+                background: $bgNavSelectedAnchorHover;
+                }
+            }            
+        }
+    }
+}
