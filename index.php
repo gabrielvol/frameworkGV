@@ -17,7 +17,7 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
     <div id="main" class="index" role="main">
-
+        <a href="/nuevo/test/">Go to test</a>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
 </body>
