@@ -1,6 +1,7 @@
 /* =============================================================================
    Media Queries
    ========================================================================== */
+$iPhone6Min: 375;
 $mobileMax: 420px;
 $mobileLMin: 421px;
 $mobileLMax: 767px;
@@ -34,14 +35,16 @@ $desktopLargeMin: 1600px;
     
 /* Mobile Landscape Only */
 @mixin mobileLandscapeOnly{
-    @media (min-width: #{$mobileLMin}) and (max-width: #{$mobileLMax}){@content;}}
+    @media (min-width: #{$mobileLMin})
+        and (max-width: #{$mobileLMax}){@content;}}
 
 /* Custom Mobile Breakpoints */
 @mixin mobile500{
     @media (min-width: 500px){@content;}}
     
 @mixin mobile500Only{
-    @media (min-width: 500px) and (max-width: #{$mobileLMax}){@content;}}
+    @media (min-width: 500px)
+        and (max-width: #{$mobileLMax}){@content;}}
 
 /* iPad + */
 @mixin afterTablet{
@@ -51,17 +54,20 @@ $desktopLargeMin: 1600px;
 @mixin afterTabletLandscape{
     @media (min-width: #{$tabletLMin}){@content;}}
     
-/* iPad only */
+/* iPad Only */
 @mixin tabletOnly{
-    @media (min-width: #{$tabletMin}) and (max-width: #{$tabletPMax}){@content;}}
+    @media (min-width: #{$tabletMin})
+        and (max-width: #{$tabletPMax}){@content;}}
     
-/* iPad Landscape only */
+/* iPad Landscape Only */
 @mixin tabletLandscapeOnly{
-    @media (min-width: #{$tabletLMin}) and (max-width: #{$tabletMax}){@content;}}
+    @media (min-width: #{$tabletLMin})
+        and (max-width: #{$tabletMax}){@content;}}
     
-/* iPad Portrait and Landscape only */
+/* iPad Portrait and Landscape Only */
 @mixin tabletAndTabletLandscapeOnly{
-    @media (min-width: #{$tabletMin}) and (max-width: #{$tabletMax}){@content;}}
+    @media (min-width: #{$tabletMin})
+        and (max-width: #{$tabletMax}){@content;}}
 
 /* Laptop + */
 @mixin afterLaptop{
@@ -80,16 +86,141 @@ $desktopLargeMin: 1600px;
 */
 
 /* =============================================================================
-   Vendor Media Queries
+   iPhone & iPads
    ========================================================================== */
-/* iPhone 6 Portrait + */
-@mixin afteriPhone6Portrait{
-    @media only screen and (min-width:375px){@content;}}
+/* iPhone 4 & 4S Only */
+@mixin iPhone4Only{
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {@content;}}
+
+/* iPhone 4 & 4S Portrait Only */
+@mixin iPhone4PortraitOnly{
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {@content;}}
+
+/* iPhone 4 & 4S Landscape Only */
+@mixin iPhone4LandscapeOnly{
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {@content;}}
+
+        
+/* iPhone 5 & 5S Only */
+@mixin iPhone5Only{
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2) {@content;}}
+
+/* iPhone 5 & 5S Portrait Only */
+@mixin iPhone5PortraitOnly{
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {@content;}}
+
+/* iPhone 5 & 5S Landscape Only */
+@mixin iPhone5LandscapeOnly{
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {@content;}}
+
+        
+/* iPhone 6 Only */
+@mixin iPhone6Only{
+    @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2) {@content;}}
 
 /* iPhone 6 Portrait Only */
 @mixin iPhone6PortraitOnly{
-    @media only screen and (min-width:375px) and (max-width:767px){@content;}}
+    @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {@content;}}
 
 /* iPhone 6 Landscape Only */
 @mixin iPhone6LandscapeOnly{
-    @media only screen and (min-width:650px) and (max-width:767px){@content;}}
+    @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {@content;}}
+
+        
+/* iPhone 6 Plus Only */
+@mixin iPhone6PlusOnly{
+    @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3) {@content;}}
+
+/* iPhone 6 Plus Portrait Only */
+@mixin iPhone6PlusPortraitOnly{
+    @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: portrait) {@content;}}
+
+/* iPhone 6 Plus Landscape Only */
+@mixin iPhone6PlusLandscapeOnly{
+    @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: landscape) {@content;}}
+        
+    
+/* iPad 1 & 2 Portrait Only */
+@mixin iPadPortraitOnly{
+    @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1) {@content;}}
+
+/* iPad 1 & 2 Landscape Only */
+@mixin iPadLandscapeOnly{
+    @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (orientation: landscape) 
+        and (-webkit-min-device-pixel-ratio: 1) {@content;}}
+
+
+/* iPad 3 & 4 Portrait Only */
+@mixin iPad3PortraitOnly{
+    @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 2) {@content;}}
+
+/* iPad 3 & 4 Landscape Only */
+@mixin iPad3LandscapeOnly{
+    @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (orientation: landscape) 
+        and (-webkit-min-device-pixel-ratio: 2) {@content;}}
+        
+/* Retina Screens */
+@mixin retina{
+    @media screen 
+        and (min-device-width: 1200px) 
+        and (max-device-width: 1600px) 
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (min-resolution: 192dpi) {@content;}}

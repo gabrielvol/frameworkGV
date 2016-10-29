@@ -58,9 +58,9 @@
 /* Custom Mobile Breakpoints */
 /* iPad + */
 /* iPad Landscape + */
-/* iPad only */
-/* iPad Landscape only */
-/* iPad Portrait and Landscape only */
+/* iPad Only */
+/* iPad Landscape Only */
+/* iPad Portrait and Landscape Only */
 /* Laptop + */
 /* Desktop + */
 /* Big Screens + */
@@ -68,11 +68,25 @@
 @media (min-width: 100px) and (max-width: 100px){}
 */
 /* =============================================================================
-   Vendor Media Queries
+   iPhone & iPads
    ========================================================================== */
-/* iPhone 6 Portrait + */
+/* iPhone 4 & 4S Only */
+/* iPhone 4 & 4S Portrait Only */
+/* iPhone 4 & 4S Landscape Only */
+/* iPhone 5 & 5S Only */
+/* iPhone 5 & 5S Portrait Only */
+/* iPhone 5 & 5S Landscape Only */
+/* iPhone 6 Only */
 /* iPhone 6 Portrait Only */
 /* iPhone 6 Landscape Only */
+/* iPhone 6 Plus Only */
+/* iPhone 6 Plus Portrait Only */
+/* iPhone 6 Plus Landscape Only */
+/* iPad 1 & 2 Portrait Only */
+/* iPad 1 & 2 Landscape Only */
+/* iPad 3 & 4 Portrait Only */
+/* iPad 3 & 4 Landscape Only */
+/* Retina Screens */
 /* =============================================================================
    Font formatting
    ========================================================================== */
