@@ -1,9 +1,9 @@
 <?php
-    $snippets=1;
-    $int=1;
-    $navSelected=0;
-    $title="Ascii Characters | GV";
-    $mdesc="";
+    $snippets = 1;
+    $int = 1;
+    $navSelected= 0;
+    $title = "Ascii Characters | GV";
+    $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 </head>

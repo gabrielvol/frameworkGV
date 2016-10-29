@@ -1,8 +1,8 @@
 <?php
-	$int=1;
-	$navSelected=0;
-	$title="Descargas  | GV";
-    $mdesc="";
+	$int = 1;
+	$navSelected= 0;
+	$title = "Descargas  | GV";
+    $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 </head>

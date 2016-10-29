@@ -1,9 +1,9 @@
 <?php
-    $snippets=1;
-    $int=1;
-    $navSelected=0;
-    $title="Unslider | GV";
-    $mdesc="";
+    $snippets = 1;
+    $int = 1;
+    $navSelected= 0;
+    $title = "Unslider | GV";
+    $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <script type="text/javascript" src="/nuevo/_snippets/js/unslider.js"></script>

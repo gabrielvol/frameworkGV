@@ -1,9 +1,9 @@
 <?php
-    $snippets=1;
+    $snippets = 1;
     $index=1;
-    $navSelected=0;
-    $title="GV";
-    $mdesc="";
+    $navSelected= 0;
+    $title = "GV";
+    $mdesc = "";
     //Gettext variable, debe ir antes del head
     $idioma=$_GET['l'];
 /*
