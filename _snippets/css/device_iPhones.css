@@ -1,6 +1,6 @@
 /* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
+/* iPhone 4 and 4S Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -8,7 +8,7 @@
 
 }
 
-/* Portrait */
+/* iPhone 4 and 4S Portrait Only */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -16,7 +16,7 @@
   and (orientation: portrait) {
 }
 
-/* Landscape */
+/* iPhone 4 and 4S Landscape Only */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
