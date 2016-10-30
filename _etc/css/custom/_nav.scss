@@ -91,30 +91,13 @@ $navWidthBT: 150px;
     
     @include afterLaptop{
         li{            
-            /**/
-            @include borderStyle($black);
-            float: left;
-            background-color: #eee;
-            padding: 0 5px;
-            margin-bottom: 5px;
-            /**/   
-            
             &, a{
                 @include equalHeightAndLineHeight(60px);
             }
             
-            & + li{                  
-                /**/
-                margin-left: 5px;
-                /**/
-                
-            }
+            & + li{}
             
-            a{
-                /**/
-                font-size: .7em;
-                /**/  
-            }            
+            a{}            
         }
     }
 }
