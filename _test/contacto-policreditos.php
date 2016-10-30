@@ -1,5 +1,5 @@
 <?php
-    $snippets = 1;
+    $test = 1;
     $int = 1;
     $header="1";
     $contactanos="1";

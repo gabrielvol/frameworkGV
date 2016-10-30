@@ -1,5 +1,5 @@
 <?php
-    $snippets = 1;
+    $test = 1;
     $int = 1;
     $navSelected= 0;
     $title = "Tiny Carousel | GV";
