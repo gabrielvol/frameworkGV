@@ -1,25 +1,17 @@
 <?php
-    $index=1;
+    $snippets = 1;
     $navSelected= 0;
-    $title = "Title";
+    $title = "GV";
     $mdesc = "";
-    //Gettext variable, debe ir antes del head
-    $idioma=$_GET['l'];
-/*
-    <?php echo _(""); ?>
-    <?php echo _("
-    "); ?>
-*/
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');
 ?>
+<link href="/nuevo/_test/css/main.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
     <div id="main" class="index" role="main">
-        <a href="/nuevo/_test/">Go to test</a>
+
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-<script type="text/javascript" src="/nuevo/testing/javaScript01.js"></script>
 </body>
 </html>

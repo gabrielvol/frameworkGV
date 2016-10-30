@@ -2,10 +2,10 @@
    Background Mixins Prev / Etc
    ========================================================================== */
 @mixin sprites($backgroundPosition, $backgroundColour: transparent){
-    background: $backgroundColour url('/nuevo/_snippets/img/sprites.png') no-repeat $backgroundPosition;}
+    background: $backgroundColour url('/nuevo/_test/img/sprites.png') no-repeat $backgroundPosition;}
 @mixin bgSvg($svgPath, $svgSize: contain, $svgPos: center center, $svgColour: transparent, $svgRepeat: no-repeat){
     background-color: $svgColour;
-    background-image: url('/nuevo/_snippets/img/#{$svgPath}.svg');
+    background-image: url('/nuevo/_test/img/#{$svgPath}.svg');
     background-repeat: $svgRepeat;
     background-position: $svgPos;
     background-size: $svgSize;

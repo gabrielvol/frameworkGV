@@ -16,8 +16,8 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="index" role="main">
-        <a href="/nuevo/_test/">Go to test</a>
+    <div id="main" class="index" role="main">        
+        <div id="resultado"></div>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
 <script type="text/javascript" src="/nuevo/testing/javaScript01.js"></script>

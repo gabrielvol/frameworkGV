@@ -15,7 +15,7 @@
         if($index == 1){
             include('nav.inc.php');
         }else if($snippets == 1){
-            include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/_snippets/common/nav.inc.php');
+            include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/_test/common/nav.inc.php');
         }else{
             include('nav.inc.php');
         }

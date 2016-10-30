@@ -3,7 +3,9 @@
    ========================================================================== */
 #header{
     @include beforeTablet{
-        height: 50px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        height: 150px;
     }
     @include tabletOnly{
         height: 50px;

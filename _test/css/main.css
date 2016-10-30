@@ -1,0 +1,46 @@
+/* ============
+   Header
+   ============ */
+#header{
+    clear: both;
+    background: #ccc!important;
+}
+
+.logoHeader{
+    width: 200px!important;
+}
+.logoHeader a,
+.logoHeader img{
+    width: 100%!important;
+}
+
+.logoHeader,
+.logoHeader a,
+.logoHeader img{
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+/* ============
+   Nav
+   ============ */
+@media (max-width: 768px){}
+@media (min-width: 768px){
+    .mainNav li {
+        border: 1px solid #000;
+        float: left;
+        background-color: #eee;
+        padding: 0 5px;
+        margin-bottom: 5px;
+    }
+    .mainNav li, .mainNav li a {
+        height: 20px;
+        line-height: 20px;
+    }
+    .mainNav li + li {
+        margin-left: 5px;
+    }
+    .mainNav li a {
+        font-size: .7em;
+    }
+}
