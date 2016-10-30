@@ -3079,25 +3079,9 @@ table.tableRounded {
       margin-right: auto !important;
       margin-left: auto !important; } }
 @media (min-width: 1200px) {
-  .mainNav li {
-    /**/
-    border: 1px solid #000;
-    float: left;
-    background-color: #eee;
-    padding: 0 5px;
-    margin-bottom: 5px;
-    /**/ }
-    .mainNav li, .mainNav li a {
-      height: 60px;
-      line-height: 60px; }
-    .mainNav li + li {
-      /**/
-      margin-left: 5px;
-      /**/ }
-    .mainNav li a {
-      /**/
-      font-size: .7em;
-      /**/ } }
+  .mainNav li, .mainNav li a {
+    height: 60px;
+    line-height: 60px; } }
 
 /* =============================================================================
    Footer

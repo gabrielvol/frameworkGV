@@ -20,5 +20,6 @@
         <a href="/nuevo/test/">Go to test</a>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
+<script type="text/javascript" src="/nuevo/testing/javaScript01.js"></script>
 </body>
 </html>
