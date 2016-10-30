@@ -6,6 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
+<link href="/nuevo/_snippets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="/nuevo/_snippets/css/shadowbox.css"/>
 <script type="text/javascript" src="/nuevo/_snippets/js/shadowbox.js"></script>
 <script type="text/javascript">

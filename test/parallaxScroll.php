@@ -6,6 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
+<link href="/nuevo/_snippets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="/nuevo/_snippets/css/parallaxScroll.css"/>
 </head>
 <body>

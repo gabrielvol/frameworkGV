@@ -7,6 +7,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <script type="text/javascript" src="/nuevo/_snippets/js/jquery.lazy.min.js"></script>
+<link href="/nuevo/_snippets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="/nuevo/_snippets/css/lazy.css"/>
 </head>
 <body>

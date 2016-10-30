@@ -6,6 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
+<link href="/nuevo/_snippets/css/main.css" rel="stylesheet">
 <!--fondo supersized-->
 <link rel="stylesheet" href="/nuevo/_snippets/css/supersized.css" type="text/css" media="screen" />
 <script type="text/javascript" src="/nuevo/_snippets/js/supersized.3.2.7.js"></script>

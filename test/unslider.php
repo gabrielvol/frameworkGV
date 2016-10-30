@@ -6,6 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
+<link href="/nuevo/_snippets/css/main.css" rel="stylesheet">
 <script type="text/javascript" src="/nuevo/_snippets/js/unslider.js"></script>
 <link rel="stylesheet" href="/nuevo/_snippets/css/unslider.css"/>
 </head>
