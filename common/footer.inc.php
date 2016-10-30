@@ -27,4 +27,5 @@
 
 <div class="modalBG displayNone"></div>
 
+<script type="text/javascript" src="/nuevo/_snippets/js/navResponsive.js"></script>
 <!--<script type="text/javascript" src="/nuevo/js/plugins.js"></script>-->
