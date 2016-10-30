@@ -14,7 +14,7 @@ $navWidthBT: 150px;
             @include equalHeightAndLineHeight(45px);
             box-sizing: border-box;
             position: absolute;
-            top: 10px;
+            top: 60px;
             right: 0;
             z-index: 200;
             width: 100px;
@@ -45,7 +45,11 @@ $navWidthBT: 150px;
                 float: $none;
                 
                 &, a{
-                    @include equalHeightAndLineHeight(40px);
+                    @include equalHeightAndLineHeight(45px);
+                }
+                
+                &:nth-child(even){
+                    background-color: $bgGreyXL;
                 }
                 
                 a{

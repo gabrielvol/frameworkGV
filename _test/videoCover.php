@@ -7,7 +7,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="/nuevo/_test/css/videoCover.css"/>
+<link href="/nuevo/_test/css/videoCover.css" rel="stylesheet">
 <!--<script type="text/javascript" src="/nuevo/_test/js/videoCover.js"></script>-->
 </head>
 <body>

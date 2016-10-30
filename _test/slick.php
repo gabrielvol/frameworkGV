@@ -7,7 +7,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="/nuevo/_test/css/slick.css"/>
+<link href="/nuevo/_test/css/slick.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>

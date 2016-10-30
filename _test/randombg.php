@@ -7,7 +7,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="/nuevo/_test/css/randombg.css"/>
+<link href="/nuevo/_test/css/randombg.css" rel="stylesheet">
 <?php
     $ext = array("bg01.jpg", "bg02.jpg");
     shuffle($ext); //Give the array a shuffle

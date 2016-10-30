@@ -7,7 +7,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="/nuevo/_test/css/mediaelementplayer.css" />
+<link href="/nuevo/_test/css/mediaelementplayer.css" />
 <script type="text/javascript" src="/nuevo/_test/js/mediaelement-and-player.min.js"></script>
 </head>
 <body>

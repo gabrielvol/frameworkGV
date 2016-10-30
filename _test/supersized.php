@@ -8,7 +8,7 @@
 ?>
 <link href="/nuevo/_test/css/main.css" rel="stylesheet">
 <!--fondo supersized-->
-<link rel="stylesheet" href="/nuevo/_test/css/supersized.css" type="text/css" media="screen" />
+<link href="/nuevo/_test/css/supersized.css" rel="stylesheet">
 <script type="text/javascript" src="/nuevo/_test/js/supersized.3.2.7.js"></script>
 <script type="text/javascript" src="/nuevo/_test/js/supersized.shutter.js"></script>
 

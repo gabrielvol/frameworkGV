@@ -8,7 +8,7 @@
 ?>
 <script type="text/javascript" src="/nuevo/_test/js/jquery.lazy.min.js"></script>
 <link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="/nuevo/_test/css/lazy.css"/>
+<link href="/nuevo/_test/css/lazy.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
