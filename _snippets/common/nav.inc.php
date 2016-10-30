@@ -4,10 +4,7 @@
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/index.php" class="displayBlock"><?php echo _("Inicio"); ?></a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/load.php" class="displayBlock">Load</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/agenda.php" class="displayBlock">Agenda</a></li>
-        <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/slider.php" class="displayBlock">Slider</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/slick.php" class="displayBlock">Slick Slider</a></li>
-        <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/unslider.php" class="displayBlock">Unslider</a></li>
-        <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/sliderSDK.php" class="displayBlock">Slider SDK</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/lightbox--scandir.php" class="displayBlock">LightBox</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/shadowbox.php" class="displayBlock">ShadowBox</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/carouselTiny.php" class="displayBlock">Tiny Carousel</a></li>
