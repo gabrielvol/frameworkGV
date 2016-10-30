@@ -3,7 +3,6 @@
     <ul class="mainMenu displayNoneBT unstyled horizontalAT clearfix">
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/index.php" class="displayBlock"><?php echo _("Inicio"); ?></a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/load.php" class="displayBlock">Load</a></li>
-        <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/agenda.php" class="displayBlock">Agenda</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/slick.php" class="displayBlock">Slick Slider</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/lightbox--scandir.php" class="displayBlock">LightBox</a></li>
         <li class="<?php if($navSelected == 1) echo " selected" ?>"><a href="/nuevo/test/shadowbox.php" class="displayBlock">ShadowBox</a></li>
