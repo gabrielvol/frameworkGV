@@ -1,6 +1,21 @@
 /* =============================================================================
    Main Menu Styles
    ========================================================================== */
+.logoHeader{
+    width: 70%!important;
+}
+.logoHeader a,
+.logoHeader img{
+    width: 100%!important;
+}
+
+.logoHeader,
+.logoHeader a,
+.logoHeader img{
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
 .mainNav li {
     border: 1px solid #000;
     float: left;

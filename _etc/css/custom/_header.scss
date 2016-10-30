@@ -3,13 +3,13 @@
    ========================================================================== */
 #header{
     @include beforeTablet{
-        height: 130px;
+        height: 50px;
     }
     @include tabletOnly{
-        height: 400px;
+        height: 50px;
     }
     @include afterTabletLandscape{
-        height: 630px;
+        height: 100px;
     } 
     
     &.topper{
