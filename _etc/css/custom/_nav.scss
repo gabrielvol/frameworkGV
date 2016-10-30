@@ -7,18 +7,21 @@ $navWidthBT: 150px;
         position: absolute;
         right: 10px;
         width: $navWidthBT;
+            
+        .hamb, ul{
+            @include borderRadius(4px);                
+        }
 
         .hamb{
             @include borderStyle($mainBcColour);
-            @include borderRadius();
             @include equalHeightAndLineHeight(45px);
             box-sizing: border-box;
             position: absolute;
             top: 0;
             right: 0;
             z-index: 200;
-            width: 100px;
-            background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 15px center;
+            width: 90px;
+            background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
             background-size: 15px;
             padding: 0 10px 0 30px;
             color: $mainFontColour;
@@ -33,13 +36,13 @@ $navWidthBT: 150px;
         }
         
         ul{
-            @include borderRadius();
             z-index: 190;
             position: relative;
-            top: 60px;
+            top: 50px;
             width: $navWidthBT; 
             background-color: $bgWhite;
-            padding: 20px 0 5px;
+            padding: 5px 0 0;
+            box-shadow: 0 0 4px $black;
             
             li{
                 float: $none;
@@ -50,6 +53,12 @@ $navWidthBT: 150px;
                 
                 &:nth-child(even){
                     background-color: $bgGreyXL;
+                }
+                
+                &:last-child{
+                    &, a{
+                        @include borderRadiusB(4px);
+                    }
                 }
                 
                 a{

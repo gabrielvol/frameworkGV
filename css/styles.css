@@ -3023,9 +3023,10 @@ table.tableRounded {
     position: absolute;
     right: 10px;
     width: 150px; }
+    .mainNav .hamb, .mainNav ul {
+      border-radius: 4px; }
     .mainNav .hamb {
       border: 1px solid #999;
-      border-radius: 12px;
       height: 45px;
       line-height: 45px;
       box-sizing: border-box;
@@ -3033,8 +3034,8 @@ table.tableRounded {
       top: 0;
       right: 0;
       z-index: 200;
-      width: 100px;
-      background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 15px center;
+      width: 90px;
+      background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
       background-size: 15px;
       padding: 0 10px 0 30px;
       color: #000;
@@ -3045,13 +3046,13 @@ table.tableRounded {
         top: 15px;
         right: 15px; }
     .mainNav ul {
-      border-radius: 12px;
       z-index: 190;
       position: relative;
-      top: 60px;
+      top: 50px;
       width: 150px;
       background-color: #fff;
-      padding: 20px 0 5px; }
+      padding: 5px 0 0;
+      box-shadow: 0 0 4px #000; }
       .mainNav ul li {
         float: none !important; }
         .mainNav ul li, .mainNav ul li a {
@@ -3059,6 +3060,8 @@ table.tableRounded {
           line-height: 45px; }
         .mainNav ul li:nth-child(even) {
           background-color: #dedede; }
+        .mainNav ul li:last-child, .mainNav ul li:last-child a {
+          border-radius: 0 0 4px 4px; }
         .mainNav ul li a {
           font-size: 0.8em;
           text-align: center; } }
