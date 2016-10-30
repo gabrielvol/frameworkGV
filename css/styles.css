@@ -3030,7 +3030,7 @@ table.tableRounded {
       line-height: 45px;
       box-sizing: border-box;
       position: absolute;
-      top: 60px;
+      top: 0;
       right: 0;
       z-index: 200;
       width: 100px;
@@ -3048,7 +3048,7 @@ table.tableRounded {
       border-radius: 12px;
       z-index: 190;
       position: relative;
-      top: 40px;
+      top: 60px;
       width: 150px;
       background-color: #fff;
       padding: 20px 0 5px; }
@@ -3060,8 +3060,6 @@ table.tableRounded {
         .mainNav ul li:nth-child(even) {
           background-color: #dedede; }
         .mainNav ul li a {
-          height: 40px;
-          line-height: 40px;
           font-size: 0.8em;
           text-align: center; } }
 @media (min-width: 768px) {
