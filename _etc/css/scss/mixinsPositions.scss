@@ -1,0 +1,51 @@
+/* =============================================================================
+   Position Mixins Prev / Etc
+   ========================================================================== */
+    //Top
+@mixin posTR($a, $b){
+    top: $a;
+    right: $b;
+}
+@mixin posTB($a, $b){
+    top: $a;  
+    bottom: $b;  
+}
+@mixin posTL($a, $b){
+    top: $a;  
+    left: $b;  
+}
+@mixin posRB($a, $b){
+    right: $a;
+    bottom: $b;  
+}
+@mixin posRL($a, $b){
+    right: $a;
+    left: $b;  
+}
+
+@mixin posTRB($a, $b, $c){
+    top: $a;
+    right: $b;
+    bottom: $c;
+}
+@mixin posTRL($a, $b, $c){
+    top: $a;
+    right: $b;
+    left: $c;
+}
+@mixin posTBL($a, $b, $c){
+    top: $a;
+    bottom: $b;
+    left: $c;
+}
+@mixin posRBL($a, $b, $c){
+    right: $a;
+    bottom: $b;
+    left: $c;
+}
+@mixin posTRBL($a, $b, $c, $d){
+    top: $a;
+    right: $b;
+    bottom: $c;
+    left: $d;
+}
