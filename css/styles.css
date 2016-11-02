@@ -240,10 +240,10 @@ button.white:hover {
   padding: 0;
   margin-right: auto;
   margin-left: auto; }
-  .container::before, .container::after {
+  .container:before, .container:after {
     content: " ";
     display: table; }
-  .container::after {
+  .container:after {
     clear: both; }
   @media (max-width: 420px) {
     .container {
@@ -901,9 +901,9 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
   cursor: none; }
 
 article, article:before, article:after, details, details:before, details:after, figcaption, figcaption:before, figcaption:after, figure, figure:before, figure:after, hgroup, hgroup:before, hgroup:after, main, main:before, main:after, menu, menu:before, menu:after, nav, nav:before, nav:after, summary, summary:before, summary:after,
-.boxSizing,
-.boxSizing:before,
-.boxSizing:after, .displayBlock, .displayBlock:before, .displayBlock:after, .center, .center:before, .center:after {
+.contentBox,
+.contentBox:before,
+.contentBox:after, .displayBlock, .displayBlock:before, .displayBlock:after, .center, .center:before, .center:after {
   box-sizing: content-box; }
 
 :root .noFilter {
@@ -2758,7 +2758,7 @@ table.tableRounded {
     padding-left: 45%; }
     table tr td + td {
       border-top: 1px solid #999; }
-    table tr td::before {
+    table tr td:before {
       left: 10px;
       width: 40%;
       width: 40%;
@@ -2876,10 +2876,10 @@ table.tableRounded {
 /* =============================================================================
    Slick Slider Custom
    ========================================================================== */
-.slick::before, .slick::after, .slick div::before, .slick div::after {
+.slick:before, .slick:after, .slick div:before, .slick div:after {
   content: " ";
   display: table; }
-.slick::after, .slick div::after {
+.slick:after, .slick div:after {
   clear: both; }
 
 .slickPrev {

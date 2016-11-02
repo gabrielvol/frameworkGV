@@ -88,7 +88,7 @@ table{
         td{
             position: relative;
             
-            &:before{
+            &::before{
                 content: attr(data-label);
                 position: absolute;
             }
@@ -132,7 +132,7 @@ table{
                 &, th{
                     display: table-cell;
                 }
-                &:before{
+                &::before{
                     content: '';
                     float: none;                    
                 }
