@@ -57,7 +57,7 @@
                 <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" tabindex="" value="Si">
                 
                 <label for="browsersInput">Choose a browser from this list:</label>
-                <input list="browsersList" name="myBrowser" id="browsersInput">
+                <input type="text" list="browsersList" name="myBrowser" id="browsersInput">
                 <datalist id="browsersList">
                     <option value="Chrome">
                     <option value="Firefox">
