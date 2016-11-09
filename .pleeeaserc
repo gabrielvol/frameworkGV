@@ -1,5 +1,5 @@
 {
-    "in": ["css/styles.css"],
+    "in": ["_etc/css/css/styles.css"],
     "out": "css/styles.min.css",
     "browsers": ["last 3 versions", "Android 2.3"],
     "sass": true,
