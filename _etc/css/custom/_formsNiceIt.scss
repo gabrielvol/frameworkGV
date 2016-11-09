@@ -76,7 +76,7 @@ form.niceIt{
     /* File Upload */
     .fnFileInput{
         &, span, strong{
-            width:100%!important;
+            width:$hundred;
             
             @include mobileOnly{
                 width: 89%!important; 

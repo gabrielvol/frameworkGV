@@ -733,9 +733,9 @@ label.black, label.black:focus, label.black:hover {
    Accessibility
    ========================================================================== */
 #go-main-content {
-  position: absolute;
   top: auto;
   left: -10000px;
+  position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden; }
@@ -895,7 +895,7 @@ label.black, label.black:focus, label.black:hover {
       display: inline-block; }
 
 .floatNone, .centerCol {
-  float: none; }
+  float: none !important; }
 
 .clear {
   clear: both; }
@@ -1057,6 +1057,16 @@ figure {
   .horizontalMO.right li {
     float: right !important; }
 
+  .horizontalCenterMO {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterMO li {
+      display: inline; }
+      .horizontalCenterMO li > * {
+        display: inline-block; }
+
   .floatNoneMO, .unstyledMO li {
     float: none !important; }
 
@@ -1147,6 +1157,16 @@ figure {
   .horizontalAML.right li {
     float: right !important; }
 
+  .horizontalCenterAML {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterAML li {
+      display: inline; }
+      .horizontalCenterAML li > * {
+        display: inline-block; }
+
   .floatNoneAML, .unstyledAML li {
     float: none !important; }
 
@@ -1231,6 +1251,16 @@ figure {
   .floatRightMLO, .horizontalMLO li.floatRight,
   .horizontalMLO.right li {
     float: right !important; }
+
+  .horizontalCenterMLO {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterMLO li {
+      display: inline; }
+      .horizontalCenterMLO li > * {
+        display: inline-block; }
 
   .floatNoneMLO, .unstyledMLO li {
     float: none !important; }
@@ -1317,6 +1347,16 @@ figure {
   .horizontalBT.right li {
     float: right !important; }
 
+  .horizontalCenterBT {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterBT li {
+      display: inline; }
+      .horizontalCenterBT li > * {
+        display: inline-block; }
+
   .floatNoneBT, .unstyledBT li {
     float: none !important; }
 
@@ -1402,6 +1442,16 @@ figure {
   .horizontalBTL.right li {
     float: right !important; }
 
+  .horizontalCenterBTL {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterBTL li {
+      display: inline; }
+      .horizontalCenterBTL li > * {
+        display: inline-block; }
+
   .floatNoneBTL, .unstyledBTL li {
     float: none !important; }
 
@@ -1486,6 +1536,16 @@ figure {
   .floatRightTO, .horizontalTO li.floatRight,
   .horizontalTO.right li {
     float: right !important; }
+
+  .horizontalCenterTO {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterTO li {
+      display: inline; }
+      .horizontalCenterTO li > * {
+        display: inline-block; }
 
   .floatNoneTO, .unstyledTO li {
     float: none !important; }
@@ -1673,6 +1733,16 @@ figure {
   .horizontalAT.right li {
     float: right !important; }
 
+  .horizontalCenterAT {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterAT li {
+      display: inline; }
+      .horizontalCenterAT li > * {
+        display: inline-block; }
+
   .floatNoneAT, .unstyledAT li {
     float: none !important; }
 
@@ -1757,6 +1827,16 @@ figure {
   .floatRightATL, .horizontalATL li.floatRight,
   .horizontalATL.right li {
     float: right !important; }
+
+  .horizontalCenterATL {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterATL li {
+      display: inline; }
+      .horizontalCenterATL li > * {
+        display: inline-block; }
 
   .floatNoneATL, .unstyledATL li {
     float: none !important; }
@@ -1843,6 +1923,16 @@ figure {
   .horizontalBD.right li {
     float: right !important; }
 
+  .horizontalCenterBD {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterBD li {
+      display: inline; }
+      .horizontalCenterBD li > * {
+        display: inline-block; }
+
   .floatNoneBD, .unstyledBD li {
     float: none !important; }
 
@@ -1928,6 +2018,16 @@ figure {
   .horizontalAL.right li {
     float: right !important; }
 
+  .horizontalCenterAL {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterAL li {
+      display: inline; }
+      .horizontalCenterAL li > * {
+        display: inline-block; }
+
   .floatNoneAL, .unstyledAL li {
     float: none !important; }
 
@@ -2012,6 +2112,16 @@ figure {
   .floatRightAD, .horizontalAD li.floatRight,
   .horizontalAD.right li {
     float: right !important; }
+
+  .horizontalCenterAD {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterAD li {
+      display: inline; }
+      .horizontalCenterAD li > * {
+        display: inline-block; }
 
   .floatNoneAD, .unstyledAD li {
     float: none !important; }
@@ -3056,7 +3166,7 @@ table.tableRounded {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50px 50px;
-      display: inline-block !important;
+      display: inline- block !important;
       text-indent: -9999px; }
     .slickDots li + li {
       margin-left: 10px; }

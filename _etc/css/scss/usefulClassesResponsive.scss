@@ -20,6 +20,18 @@
     .floatLeftMO, .horizontalMO li{float: $left}
     .floatRightMO, .horizontalMO li.floatRight,
     .horizontalMO.right li{float: $right}
+    .horizontalCenterMO{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneMO, .unstyledMO li{float: $none}
     .indentedTextMO{text-indent: -9999px}
     .clearMO{clear: both}
@@ -31,7 +43,7 @@
     .alignLeftMO{text-align: left}
     .alignJustifyMO{text-align: justify}
 
-    .fullWidthMO{width: 100%!important}
+    .fullWidthMO{width: $hundred}
     .autoWidthMO{width: $auto}
     .autoHeightMO{height: $auto}
     
@@ -71,6 +83,18 @@
     .floatLeftAML, .horizontalAML li{float: $left}
     .floatRightAML, .horizontalAML li.floatRight,
     .horizontalAML.right li{float: $right}
+    .horizontalCenterAML{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneAML, .unstyledAML li{float: $none}
     .indentedTextAML{text-indent: -9999px}
     .clearAML{clear: both}
@@ -82,7 +106,7 @@
     .alignLeftAML{text-align: left}
     .alignJustifyAML{text-align: justify}
 
-    .fullWidthAML{width: 100%!important}
+    .fullWidthAML{width: $hundred}
     .autoWidthAML{width: $auto}
     .autoHeightAML{height: $auto}
     
@@ -116,6 +140,18 @@
     .floatLeftMLO, .horizontalMLO li{float: $left}
     .floatRightMLO, .horizontalMLO li.floatRight,
     .horizontalMLO.right li{float: $right}
+    .horizontalCenterMLO{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneMLO, .unstyledMLO li{float: $none}
     .indentedTextMLO{text-indent: -9999px}
     .clearMLO{clear: both}
@@ -127,7 +163,7 @@
     .alignLeftMLO{text-align: left}
     .alignJustifyMLO{text-align: justify}
 
-    .fullWidthMLO{width: 100%!important}
+    .fullWidthMLO{width: $hundred}
     .autoWidthMLO{width: $auto}
     .autoHeightMLO{height: $auto}
     
@@ -161,6 +197,18 @@
     .floatLeftBT, .horizontalBT li{float: $left}
     .floatRightBT, .horizontalBT li.floatRight,
     .horizontalBT.right li{float: $right}
+    .horizontalCenterBT{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneBT, .unstyledBT li{float: $none}
     .indentedTextBT{text-indent: -9999px}
     .clearBT{clear: both}
@@ -172,7 +220,7 @@
     .alignLeftBT{text-align: left}
     .alignJustifyBT{text-align: justify}
 
-    .fullWidthBT{width: 100%!important}
+    .fullWidthBT{width: $hundred}
     .autoWidthBT{width: $auto}
     .autoHeightBT{height: $auto}
     
@@ -206,6 +254,18 @@
     .floatLeftBTL, .horizontalBTL li{float: $left}
     .floatRightBTL, .horizontalBTL li.floatRight,
     .horizontalBTL.right li{float: $right}
+    .horizontalCenterBTL{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneBTL, .unstyledBTL li{float: $none}
     .indentedTextBTL{text-indent: -9999px}
     .clearBTL{clear: both}
@@ -217,7 +277,7 @@
     .alignLeftBTL{text-align: left}
     .alignJustifyBTL{text-align: justify}
 
-    .fullWidthBTL{width: 100%!important}
+    .fullWidthBTL{width: $hundred}
     .autoWidthBTL{width: $auto}
     .autoHeightBTL{height: $auto}
     
@@ -251,6 +311,18 @@
     .floatLeftTO, .horizontalTO li{float: $left}
     .floatRightTO, .horizontalTO li.floatRight,
     .horizontalTO.right li{float: $right}
+    .horizontalCenterTO{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneTO, .unstyledTO li{float: $none}
     .indentedTextTO{text-indent: -9999px}
     .clearTO{clear: both}
@@ -262,7 +334,7 @@
     .alignLeftTO{text-align: left}
     .alignJustifyTO{text-align: justify}
 
-    .fullWidthTO{width: 100%!important}
+    .fullWidthTO{width: $hundred}
     .autoWidthTO{width: $auto}
     .autoHeightTO{height: $auto}
     
@@ -302,6 +374,18 @@
     .floatLeftAT, .horizontalAT li{float: $left}
     .floatRightAT, .horizontalAT li.floatRight,
     .horizontalAT.right li{float: $right}
+    .horizontalCenterAT{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneAT, .unstyledAT li{float: $none}
     .indentedTextAT{text-indent: -9999px}
     .clearAT{clear: both}
@@ -313,7 +397,7 @@
     .alignLeftAT{text-align: left}
     .alignJustifyAT{text-align: justify}
 
-    .fullWidthAT{width: 100%!important}
+    .fullWidthAT{width: $hundred}
     .autoWidthAT{width: $auto}
     .autoHeightAT{height: $auto}
     
@@ -347,6 +431,18 @@
     .floatLeftATL, .horizontalATL li{float: $left}
     .floatRightATL, .horizontalATL li.floatRight,
     .horizontalATL.right li{float: $right}
+    .horizontalCenterATL{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneATL, .unstyledATL li{float: $none}
     .indentedTextATL{text-indent: -9999px}
     .clearATL{clear: both}
@@ -358,7 +454,7 @@
     .alignLeftATL{text-align: left}
     .alignJustifyATL{text-align: justify}
 
-    .fullWidthATL{width: 100%!important}
+    .fullWidthATL{width: $hundred}
     .autoWidthATL{width: $auto}
     .autoHeightATL{height: $auto}
     
@@ -392,6 +488,18 @@
     .floatLeftBD, .horizontalBD li{float: $left}
     .floatRightBD, .horizontalBD li.floatRight,
     .horizontalBD.right li{float: $right}
+    .horizontalCenterBD{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneBD, .unstyledBD li{float: $none}
     .indentedTextBD{text-indent: -9999px}
     .clearBD{clear: both}
@@ -403,7 +511,7 @@
     .alignLeftBD{text-align: left}
     .alignJustifyBD{text-align: justify}
 
-    .fullWidthBD{width: 100%!important}
+    .fullWidthBD{width: $hundred}
     .autoWidthBD{width: $auto}
     .autoHeightBD{height: $auto}
     
@@ -437,6 +545,18 @@
     .floatLeftAL, .horizontalAL li{float: $left}
     .floatRightAL, .horizontalAL li.floatRight,
     .horizontalAL.right li{float: $right}
+    .horizontalCenterAL{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneAL, .unstyledAL li{float: $none}
     .indentedTextAL{text-indent: -9999px}
     .clearAL{clear: both}
@@ -448,7 +568,7 @@
     .alignLeftAL{text-align: left}
     .alignJustifyAL{text-align: justify}
 
-    .fullWidthAL{width: 100%!important}
+    .fullWidthAL{width: $hundred}
     .autoWidthAL{width: $auto}
     .autoHeightAL{height: $auto}
     
@@ -482,6 +602,18 @@
     .floatLeftAD, .horizontalAD li{float: $left}
     .floatRightAD, .horizontalAD li.floatRight,
     .horizontalAD.right li{float: $right}
+    .horizontalCenterAD{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
     .floatNoneAD, .unstyledAD li{float: $none}
     .indentedTextAD{text-indent: -9999px}
     .clearAD{clear: both}
@@ -493,7 +625,7 @@
     .alignLeftAD{text-align: left}
     .alignJustifyAD{text-align: justify}
 
-    .fullWidthAD{width: 100%!important}
+    .fullWidthAD{width: $hundred}
     .autoWidthAD{width: $auto}
     .autoHeightAD{height: $auto}
     
