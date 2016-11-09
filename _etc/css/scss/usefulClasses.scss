@@ -2,9 +2,8 @@
    Accessibility
    ========================================================================== */
 #go-main-content{
+    @include posTL(auto, -10000px);
     position: absolute;
-    top: auto;
-    left: -10000px;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -23,23 +22,19 @@
 .pRel{position: relative}
 .pAbs{position: absolute}
 .coverAll{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include posTRBL(0, 0, 0, 0);
 }
 .autoWidth{width: auto}
 .autoHeight{height: auto}
 .fullWidth{width: 100%}
 .fullHeight{
-    top: 0;
-    bottom: 0;
+    @include posTB(0, 0);
 }
 .fullHeightPercent{height: 100%;}
 .unstyled, .horizontal{list-style: none}
-.floatLeft, .horizontal li{float: left!important}
+.floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
-.horizontal.right li{float: right!important}
+.horizontal.right li{float: $right}
 .horizontalCenter{
     @extend %mha;   
     list-style: none;
@@ -54,8 +49,8 @@
 .floatNone, .centerCol{float: none}
 .clear{clear: both}
 article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-.displayBlock, .center{display: block!important}
-.displayInline{display: inline!important}
+.displayBlock, .center{display: $block}
+.displayInline{display: $inline}
 .displayNone{display: $none}
 .invisible{visibility: hidden}
 .centerVertically{
@@ -130,7 +125,7 @@ img{
     border: none;
     font: normal 11px/1em $arial;
     text-transform: uppercase;
-    color: #333;
+    color: $greyXD;
     // Improves image quality when scaled in IE 7
     -ms-interpolation-mode: bicubic;
 }

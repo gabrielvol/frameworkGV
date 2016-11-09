@@ -17,7 +17,7 @@ form.niceIt{
         *position: relative;
     
         &, li, strong, cite{
-            display: block!important;
+            display: $block;
         }
         &, strong, cite{
             font-weight: 400;
@@ -50,20 +50,20 @@ form.niceIt{
     }
     
     .fmCheckbox{
-        display: block!important;
+        display: $block;
         cursor: pointer;
     }
     
     .fnFileInput{
-        display: block!important;
+        display: $block;
         
         span{
             position: relative;
-            display: block!important;
+            display: $block;
             
             cite, strong{
                 position: absolute;
-                display: block!important;
+                display: $block;
             }            
             cite{
                 z-index: 10;

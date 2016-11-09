@@ -97,11 +97,11 @@ label{
 
 @media all and (-ms-high-contrast:none){
     label { /* IE10 */
-        display: block!important;
+        display: $block;
     }
     
     *::-ms-backdrop, label { /* IE11 */
-        display: block!important;
+        display: $block;
     }
 }
 

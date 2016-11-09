@@ -94,7 +94,7 @@ button{
 }
 
 button{
-    display: block!important;
+    display: $block;
     box-sizing: content-box;
     padding: $zero;
     -webkit-font-smoothing: antialiased;
