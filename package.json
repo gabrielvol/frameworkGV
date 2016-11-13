@@ -1,13 +1,22 @@
 {
-  "name": "frameworkGV03",
+  "name": "frameworkgv",
   "version": "3.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Framework de Gabriel Volonte",
+  "main": "gulp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Gabriel volonte",
-  "email": "tampas@gmail.com",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://tampas@gmail.com@github.com/gabrielvol/frameGV03.git"
+  },
+  "author": "Gabriel Volonte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielvol/frameGV03/issues"
+  },
+  "homepage": "https://github.com/gabrielvol/frameGV03#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
