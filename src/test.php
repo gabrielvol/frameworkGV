@@ -17,7 +17,9 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
     <div id="main" class="index" role="main">
+        <a href="/nuevo/oldframework/">Go to test</a>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
+    <script type="text/javascript" src="/nuevo/test/ng/javaScript01.js"></script>
 </body>
 </html>
