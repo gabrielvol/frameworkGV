@@ -6,14 +6,14 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
-<link href="/nuevo/odlframework/css/randombg.css" rel="stylesheet">
+<link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/oldframework/css/randombg.css" rel="stylesheet">
 <?php
     $ext = array("bg01.jpg", "bg02.jpg");
     shuffle($ext); //Give the array a shuffle
 ?>
 <style type="text/css">
-    #main{background-image:url('/nuevo/odlframework/img/perfect/<?php echo $ext[0];?>')}
+    #main{background-image:url('/nuevo/oldframework/img/perfect/<?php echo $ext[0];?>')}
 </style>
 
 </head>

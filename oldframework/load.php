@@ -6,7 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>    
@@ -20,13 +20,13 @@
     <script type="text/javascript">
         $('.unoLoader').click(function() {
 //            $( "#loadHere" ).load( "/resources/load.html #projects li" );
-            $( ".loadHere" ).load( "/nuevo/odlframework/loadsource/uno.php p" );
+            $( ".loadHere" ).load( "/nuevo/oldframework/loadsource/uno.php p" );
         });
         $('.dosLoader').click(function() {
-            $( ".loadHere" ).load( "/nuevo/odlframework/loadsource/dos.php p" );
+            $( ".loadHere" ).load( "/nuevo/oldframework/loadsource/dos.php p" );
         });
         $('.tresLoader').click(function() {
-            $( ".loadHere" ).load( "/nuevo/odlframework/loadsource/tres.php p" );
+            $( ".loadHere" ).load( "/nuevo/oldframework/loadsource/tres.php p" );
         });
     </script>
 </body>

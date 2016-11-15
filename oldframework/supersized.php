@@ -6,11 +6,11 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
 <!--fondo supersized-->
-<link href="/nuevo/odlframework/css/supersized.css" rel="stylesheet">
-<script type="text/javascript" src="/nuevo/odlframework/js/supersized.3.2.7.js"></script>
-<script type="text/javascript" src="/nuevo/odlframework/js/supersized.shutter.js"></script>
+<link href="/nuevo/oldframework/css/supersized.css" rel="stylesheet">
+<script type="text/javascript" src="/nuevo/oldframework/js/supersized.3.2.7.js"></script>
+<script type="text/javascript" src="/nuevo/oldframework/js/supersized.shutter.js"></script>
 
 <!--    Supersized - Fullscreen Slideshow jQuery Plugin
         Version : 3.2.7
@@ -31,10 +31,10 @@
             // Components
             slide_links: false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
             slides: [ // Slideshow Images
-                        {image : '/nuevo/odlframework/img/perfect/bg01.jpg'},
-                        {image : '/nuevo/odlframework/img/perfect/bg02.jpg'},
-                        {image : '/nuevo/odlframework/img/perfect/bg03.jpg'},
-                        {image : '/nuevo/odlframework/img/perfect/bg04.jpg'}
+                        {image : '/nuevo/oldframework/img/perfect/bg01.jpg'},
+                        {image : '/nuevo/oldframework/img/perfect/bg02.jpg'},
+                        {image : '/nuevo/oldframework/img/perfect/bg03.jpg'},
+                        {image : '/nuevo/oldframework/img/perfect/bg04.jpg'}
                     ]
         });
 });

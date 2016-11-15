@@ -6,7 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>    
@@ -18,6 +18,6 @@
         </ul>        
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-    <script type="text/javascript" src="/nuevo/odlframework/js/agenda.js"></script>
+    <script type="text/javascript" src="/nuevo/oldframework/js/agenda.js"></script>
 </body>
 </html>
