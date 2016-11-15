@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 // Static Server + watching scss files
 gulp.task('serve', ['stylesheets'], function() {
     gulp.watch("./etc/css/custom/*.scss", ['stylesheets']);
+    gulp.watch("./etc/css/custom/variables/*.scss", ['stylesheets']);
     gulp.watch("./etc/css/scss/*.scss", ['stylesheets']);
 });
 
