@@ -81,7 +81,7 @@ $pagSeparation: 10px;
             @include sprites(-100px -50px);
 */
             @include bgSvg(ic_sliderPag, $sliderDotWH);
-            display: inline-$block;
+            display: inline-block;
             text-indent: -9999px;
         }
         
