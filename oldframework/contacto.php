@@ -7,9 +7,9 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
-<link href="/nuevo/_etc/css/datepicker.css" rel="stylesheet">
-<script type="text/javascript" src="/nuevo/_etc/js/scrollKeep.js"></script>
-<script type="text/javascript" src="/nuevo/_etc/js/jquery-ui-datepicker.js"></script>
+<link href="/nuevo/oldframework/css/datepicker.css" rel="stylesheet">
+<script type="text/javascript" src="/nuevo/oldframework/js/scrollKeep.js"></script>
+<script type="text/javascript" src="/nuevo/oldframework/js/jquery-ui-datepicker.js"></script>
 </head>
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>

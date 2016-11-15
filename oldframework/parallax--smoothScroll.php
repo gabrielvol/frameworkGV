@@ -8,7 +8,7 @@
 ?>
 <link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
 <link href="/nuevo/oldframework/css/parallax.css" rel="stylesheet">
-<script type="text/javascript" src="/nuevo/_etc/js/smoothScroll.js"></script>
+<script type="text/javascript" src="/nuevo/etc/js/smoothScroll.js"></script>
 </head>
 <body>
     <header id="header" class="container parallaxHeader">

@@ -13,9 +13,9 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">
         <ul class="slick mask horizontal clearfix">
-            <li><img data-lazy="/img/img_slide01.png" alt="Slick"></li>
-            <li><img data-lazy="/img/img_slide02.png" alt="Slick"></li>
-            <li><img data-lazy="/img/img_slide03.png" alt="Slick"></li>
+            <li><img data-lazy="/nuevo/oldframework/img/img_slide01.png" alt="Slick"></li>
+            <li><img data-lazy="/nuevo/oldframework/img/img_slide02.png" alt="Slick"></li>
+            <li><img data-lazy="/nuevo/oldframework/img/img_slide03.png" alt="Slick"></li>
         </ul>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>

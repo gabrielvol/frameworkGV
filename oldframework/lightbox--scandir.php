@@ -34,7 +34,7 @@
             ?>
         </ul>
     </div>
-    <script type="text/javascript" src="/nuevo/_etc/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="/nuevo/etc/js/lightbox.min.js"></script>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
     <script type="text/javascript">
         lightbox.option({

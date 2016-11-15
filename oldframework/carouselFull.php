@@ -28,27 +28,27 @@
         </div>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-<script type="text/javascript">
-    $(function() {
-        $('.carouselFull').carouFredSel({
-            width: '100%',
-            items: {
-                visible: 3,
-                start: -1
-            },
-            scroll: {
-                items: 1,
-                duration: 1000,
-                timeoutDuration: 3000
-            },
-            prev: '.scPrev',
-            next: '.scNext',
-            pagination: {
-                container: '.scPag',
-                deviation: 1
-            }
+    <script type="text/javascript">
+        $(function() {
+            $('.carouselFull').carouFredSel({
+                width: '100%',
+                items: {
+                    visible: 3,
+                    start: -1
+                },
+                scroll: {
+                    items: 1,
+                    duration: 1000,
+                    timeoutDuration: 3000
+                },
+                prev: '.scPrev',
+                next: '.scNext',
+                pagination: {
+                    container: '.scPag',
+                    deviation: 1
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
