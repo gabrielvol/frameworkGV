@@ -10,8 +10,8 @@
     left: 50%;
     width: $widthValue;
     height: $heightValue;
-    margin-top: unquote("-1 * #{$heightValueH}");
-    margin-left: unquote("-1 * #{$widthValueH}");
+    margin-top: calc(-1 * #{$heightValueH});
+    margin-left: calc(-1 * #{$widthValueH});
 }
     //Mixin para clase .centerVertical
 @mixin centerVertical($heightValue, $positionValue: absolute){
@@ -19,7 +19,7 @@
     position: $positionValue;
     top: 50%;
     height: $heightValue;
-    margin-top: unquote("-1 * #{$heightValueH}");
+    margin-top: calc(-1 * #{$heightValueH});
 }
     //Mixin para clase .centerHorizontal
 @mixin centerHorizontal($widthValue, $positionValue: absolute){
@@ -27,7 +27,7 @@
     position: $positionValue;
     left: 50%;
     width: $widthValue;
-    margin-left: unquote("-1 * #{$widthValueH}");
+    margin-left: calc(-1 * #{$widthValueH});
 }
     //Mixin centrado custom
 @mixin centerCustom($percentWidth: 90%){
@@ -42,6 +42,6 @@
     top: $topValue;
     width: $widthValue;
     height: $heightValue;
-    margin-top: unquote("-1 * #{$heightValueH}");
-    margin-left: unquote("-1 * #{$widthValueH}");
+    margin-top: calc(-1 * #{$heightValueH});
+    margin-left: calc(-1 * #{$widthValueH});
 }

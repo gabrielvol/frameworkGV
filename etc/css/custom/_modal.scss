@@ -51,8 +51,8 @@ $closeWHvalue: 20px;
     }
     
     .close{
-        $closeWHvaluePosition: unquote("#{$closeWHvalue} + 5px");
-        top: unquote("-1 * #{$closeWHvaluePosition}");
-        right: unquote("-1 * #{$closeWHvaluePosition}");
+        $closeWHvaluePosition: calc(#{$closeWHvalue} + 5px);
+        top: calc(-1 * #{$closeWHvaluePosition});
+        right: calc(-1 * #{$closeWHvaluePosition});
     }
 }

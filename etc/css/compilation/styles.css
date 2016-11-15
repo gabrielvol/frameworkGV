@@ -2761,8 +2761,8 @@ table.tableRounded {
   top: 50%;
   width: 100px;
   height: 100px;
-  margin-top: -1 * 100px/2;
-  margin-left: -1 * 100px/2;
+  margin-top: calc(-1 * 100px/2);
+  margin-left: calc(-1 * 100px/2);
   position: fixed;
   max-width: 100%;
   max-height: 100%; }
@@ -2783,8 +2783,8 @@ table.tableRounded {
         top: 40%;
         width: 280px;
         height: 120px;
-        margin-top: -1 * 120px/2;
-        margin-left: -1 * 280px/2;
+        margin-top: calc(-1 * 120px/2);
+        margin-left: calc(-1 * 280px/2);
         padding: 20px; }
         .popup.statusDiv .close {
           top: calc(-1 * 20px);
@@ -2794,12 +2794,12 @@ table.tableRounded {
         top: 40%;
         width: 500px;
         height: 100px;
-        margin-top: -1 * 120px/2;
-        margin-left: -1 * 280px/2;
+        margin-top: calc(-1 * 120px/2);
+        margin-left: calc(-1 * 280px/2);
         padding: 25px; } }
   .popup .close {
-    top: -1 * 20px + 5px;
-    right: -1 * 20px + 5px; }
+    top: calc(-1 * calc(20px + 5px));
+    right: calc(-1 * calc(20px + 5px)); }
 
 /* =============================================================================
    Slick Slider Custom
