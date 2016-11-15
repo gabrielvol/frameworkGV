@@ -13,21 +13,21 @@ $containerDesktopValue: $containerLaptopValue; /* 1170px; /* Desktop / Container
 $containerDesktopLargeValue: $containerLaptopValue; /* 1520px; /* Big Screens / Container: 1550px */
 
 //Container Center Negative Values
-$cMHalf:  #{$containerMobileValue}/2; /* Mobile Half */
-$cMLHalf: #{$containerMobileLandscapeValue}/2; /* Mobile Landscape Half */
-$cTHalf:  #{$containerTabletValue}/2; /* Tablet Half*/
-$cTLHalf: #{$containerTabletLandscapeValue}/2; /* Tablet Landscape Half*/
-$cLHalf:  #{$containerLaptopValue}/2; /* Laptop Half */
-$cDHalf:  #{$containerDesktopValue}/2; /* Desktop Half */
-$cDLHalf: #{$containerDesktopLargeValue}/2; /* Desktop Large Half*/
+$cMHalf:  calc(#{$containerMobileValue}/2); /* Mobile Half */
+$cMLHalf: calc(#{$containerMobileLandscapeValue}/2); /* Mobile Landscape Half */
+$cTHalf:  calc(#{$containerTabletValue}/2); /* Tablet Half*/
+$cTLHalf: calc(#{$containerTabletLandscapeValue}/2); /* Tablet Landscape Half*/
+$cLHalf:  calc(#{$containerLaptopValue}/2); /* Laptop Half */
+$cDHalf:  calc(#{$containerDesktopValue}/2); /* Desktop Half */
+$cDLHalf: calc(#{$containerDesktopLargeValue}/2); /* Desktop Large Half*/
 
-$cMHneg: unquote("-1 * #{$cMHalf}"); /* Mobile Half */
-$cMLHneg: unquote("-1 * #{$cMLHalf}"); /* Mobile Landscape Half */
-$cTHneg: unquote("-1 * #{$cTHalf}"); /* Tablet Half*/
-$cTLHneg: unquote("-1 * #{$cTLHalf}"); /* Tablet Landscape Half*/
-$cLHneg: unquote("-1 * #{$cLHalf}"); /* Laptop Half */
-$cDHneg: unquote("-1 * #{$cDHalf}"); /* Desktop Half */
-$cDLHneg: unquote("-1 * #{$cDLHalf}"); /* Desktop Large Half*/
+$cMHneg: calc(-1 * #{$cMHalf}); /* Mobile Half */
+$cMLHneg: calc(-1 * #{$cMLHalf}); /* Mobile Landscape Half */
+$cTHneg: calc(-1 * #{$cTHalf}); /* Tablet Half*/
+$cTLHneg: calc(-1 * #{$cTLHalf}); /* Tablet Landscape Half*/
+$cLHneg: calc(-1 * #{$cLHalf}); /* Laptop Half */
+$cDHneg: calc(-1 * #{$cDHalf}); /* Desktop Half */
+$cDLHneg: calc(-1 * #{$cDLHalf}); /* Desktop Large Half*/
 
 //$cMH: -150px; /* Mobile Half */
 //$cMLH: -45%; /* Mobile Landscape Half */

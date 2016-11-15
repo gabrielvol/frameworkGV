@@ -325,25 +325,25 @@ button.white:hover {
 */ }
     @media (max-width: 420px) {
       .container.centerAbs {
-        margin-left: -1 * 300px/2; } }
+        margin-left: calc(-1 * calc(300px/2)); } }
     @media (min-width: 421px) {
       .container.centerAbs {
-        margin-left: -1 * 90%/2; } }
+        margin-left: calc(-1 * calc(90%/2)); } }
     @media (min-width: 768px) {
       .container.centerAbs {
-        margin-left: -1 * 690px/2; } }
+        margin-left: calc(-1 * calc(690px/2)); } }
     @media (min-width: 1024px) {
       .container.centerAbs {
-        margin-left: -1 * 970px/2; } }
+        margin-left: calc(-1 * calc(970px/2)); } }
     @media (min-width: 1200px) {
       .container.centerAbs {
-        margin-left: -1 * 970px/2; } }
+        margin-left: calc(-1 * calc(970px/2)); } }
     @media (min-width: 1200px) {
       .container.centerAbs {
-        margin-left: -1 * 970px/2; } }
+        margin-left: calc(-1 * calc(970px/2)); } }
     @media (min-width: 1600px) {
       .container.centerAbs {
-        margin-left: -1 * 970px/2; } }
+        margin-left: calc(-1 * calc(970px/2)); } }
 
 /* =============================================================================
    Grilla 100%
@@ -2884,7 +2884,7 @@ table.tableRounded {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50px 50px;
-      display: inline- block !important;
+      display: inline-block;
       text-indent: -9999px; }
     .slickDots li + li {
       margin-left: 10px; }
