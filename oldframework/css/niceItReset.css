@@ -29,7 +29,7 @@ input[type="number"]{
 .fmSelect{
     padding:0 40px 0 10px;
     /* Este padding-right:40px es el lugar para la flecha del select que tendría que ser un sprite de 40px de ancho */
-    background:#fff url('/img/sprites.png') no-repeat 0px 0px;
+    background:#fff url('/nuevo/oldframework/img/sprites.png') no-repeat 0px 0px;
     /* Aquí se establece la coordenada de la flecha del select */
     color:#000;
     cursor:pointer;
@@ -70,4 +70,4 @@ input[type="number"]{
     border:1px solid #ccc;
     cursor:pointer;
 }
-.fmCheckbox.checked{background:transparent url('/img/sprites.png') no-repeat 0px 0px} /* Aquí se indican las coordenadas del "tilde" que debe ser un bloque de sprites */
+.fmCheckbox.checked{background:transparent url('/nuevo/oldframework/img/sprites.png') no-repeat 0px 0px} /* Aquí se indican las coordenadas del "tilde" que debe ser un bloque de sprites */
