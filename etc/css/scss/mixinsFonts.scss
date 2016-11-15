@@ -1,6 +1,7 @@
 /* =============================================================================
    Fonts Mixins / Etc
-   ========================================================================== */       //Generador de clases por cada fuente
+   ========================================================================== */
+//Generador de clases por cada fuente
 @mixin fontFamilyCustomClassesGenerator{
     @each $fontFamilyClassName, $fontFamilyName in $fontFamiliesSiteFontsMap {
         .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
