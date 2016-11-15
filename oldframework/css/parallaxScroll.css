@@ -54,10 +54,10 @@ html,body{
 .paDeep{transform:translateZ(-3px) scale(4)}
 
 .uno{z-index:10}
-.uno .paBase{background:url('/nuevo/_test/img/parallax/bgUnoBase.png') no-repeat center center}
-.uno .paBack{background:url('/nuevo/_test/img/parallax/bgUnoBack.png') no-repeat center center}
-.uno .paBehind{background:url('/nuevo/_test/img/parallax/bgUnoBehind.png') no-repeat center center}
-.uno .paDeep{background:#eee url('/nuevo/_test/img/parallax/bgUnoDeep.png') no-repeat center center}
+.uno .paBase{background:url('/nuevo/odlframework/img/parallax/bgUnoBase.png') no-repeat center center}
+.uno .paBack{background:url('/nuevo/odlframework/img/parallax/bgUnoBack.png') no-repeat center center}
+.uno .paBehind{background:url('/nuevo/odlframework/img/parallax/bgUnoBehind.png') no-repeat center center}
+.uno .paDeep{background:#eee url('/nuevo/odlframework/img/parallax/bgUnoDeep.png') no-repeat center center}
 
 .dos{z-index:5}
 /*.dos .paBase{background:#ff2856}
@@ -66,13 +66,13 @@ html,body{
 .dos .paDeep{background:#aaa}
 
 .tre{z-index:15}
-.tre .paBase{background:url('/nuevo/_test/img/parallax/bgparallax01.png') no-repeat center center}
-.tre .paBack{background:url('/nuevo/_test/img/parallax/bgparallax02.png') no-repeat center center}
-.tre .paBehind{background:url('/nuevo/_test/img/parallax/bgparallax03.png') no-repeat center center}
-.tre .paDeep{background:#999 url('/nuevo/_test/img/parallax/bgparallax04.png') no-repeat center center}
+.tre .paBase{background:url('/nuevo/odlframework/img/parallax/bgparallax01.png') no-repeat center center}
+.tre .paBack{background:url('/nuevo/odlframework/img/parallax/bgparallax02.png') no-repeat center center}
+.tre .paBehind{background:url('/nuevo/odlframework/img/parallax/bgparallax03.png') no-repeat center center}
+.tre .paDeep{background:#999 url('/nuevo/odlframework/img/parallax/bgparallax04.png') no-repeat center center}
 
 .cua{z-index:20}
-.cua .paBase{background:url('/nuevo/_test/img/parallax/bgDosBase.png') no-repeat center center}
-.cua .paBack{background:url('/nuevo/_test/img/parallax/bgDosBack.png') no-repeat center center}
-.cua .paBehind{background:url('/nuevo/_test/img/parallax/bgDosBehind.png') no-repeat center center}
-.cua .paDeep{background:#eee url('/nuevo/_test/img/parallax/bgDosDeep.png') no-repeat center center}
+.cua .paBase{background:url('/nuevo/odlframework/img/parallax/bgDosBase.png') no-repeat center center}
+.cua .paBack{background:url('/nuevo/odlframework/img/parallax/bgDosBack.png') no-repeat center center}
+.cua .paBehind{background:url('/nuevo/odlframework/img/parallax/bgDosBehind.png') no-repeat center center}
+.cua .paDeep{background:#eee url('/nuevo/odlframework/img/parallax/bgDosDeep.png') no-repeat center center}

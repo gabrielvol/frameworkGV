@@ -7,7 +7,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/_test/css/main.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
 <script type="text/javascript">
     function comprobar(){
         var mal=false; 

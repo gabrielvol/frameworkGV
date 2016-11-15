@@ -16,7 +16,7 @@
     height:60px;
     margin:-30px 0 0 -30px;
     text-indent:-999em;
-    background:url('/nuevo/_test/img/supersized/progress.gif') no-repeat center center;
+    background:url('/nuevo/odlframework/img/supersized/progress.gif') no-repeat center center;
 }
 
 #supersized{
@@ -65,7 +65,7 @@
 #supersized li.prevslide{ z-index:-20; }
 #supersized li.activeslide{ z-index:-10; }
 #supersized li.image-loading{
-    background:#111 url('/nuevo/_test/img/supersized/progress.gif') no-repeat center center;
+    background:#111 url('/nuevo/odlframework/img/supersized/progress.gif') no-repeat center center;
     width:100%;
     height:100%;
 }
@@ -96,7 +96,7 @@
     bottom:0;
     left:0;
     z-index:4;
-    background:url('/nuevo/_test/img/supersized/nav-bg.png') repeat-x;
+    background:url('/nuevo/odlframework/img/supersized/nav-bg.png') repeat-x;
     position:fixed;
 }
 #controls{
@@ -131,7 +131,7 @@
     float:left;
     margin-top:1px;
     border-right:1px solid #333;
-    background:url('/nuevo/_test/img/supersized/bg-hover.png') repeat-x 0 44px;
+    background:url('/nuevo/odlframework/img/supersized/bg-hover.png') repeat-x 0 44px;
 }
 #play-button:hover{
     background-position:0 1px;
@@ -150,11 +150,11 @@
 }
 #prevslide{
     left:10px;
-    background-image:url('/nuevo/_test/img/supersized/back.png');
+    background-image:url('/nuevo/odlframework/img/supersized/back.png');
 }
 #nextslide{
     right:10px;
-    background-image:url('/nuevo/_test/img/supersized/forward.png');
+    background-image:url('/nuevo/odlframework/img/supersized/forward.png');
 }
 #prevslide:active, #nextslide:active{margin-top:-19px}
 #prevslide:hover, #nextslide:hover{cursor:pointer}
@@ -177,7 +177,7 @@
     display:block;
     width:12px;
     height:12px;
-    background:url('/nuevo/_test/img/supersized/nav-dot.png') no-repeat 0 -24px;
+    background:url('/nuevo/odlframework/img/supersized/nav-dot.png') no-repeat 0 -24px;
 }
 #slide-list li a:hover{
     background-position:0 -12px;
@@ -187,7 +187,7 @@
     float:right;
     margin-top:1px;
     border-left:1px solid #333;
-    background:url('/nuevo/_test/img/supersized/bg-hover.png') repeat-x 0 44px;
+    background:url('/nuevo/odlframework/img/supersized/bg-hover.png') repeat-x 0 44px;
 }
 #tray-button:hover{
     background-position:0 1px;
@@ -204,13 +204,13 @@
     left:0;
     height:8px;
     width:100%;
-    background:url('/nuevo/_test/img/supersized/progress-back.png') repeat-x;
+    background:url('/nuevo/odlframework/img/supersized/progress-back.png') repeat-x;
 }
 #progress-bar{
     position:relative;
     height:8px;
     width:100%;
-    background:url('/nuevo/_test/img/supersized/progress-bar.png') repeat-x;
+    background:url('/nuevo/odlframework/img/supersized/progress-bar.png') repeat-x;
 }
 	
 /* =============================================================================
@@ -246,7 +246,7 @@
     z-index:3;
     bottom:0;
     left:0;
-    background-image:url('/nuevo/_test/img/supersized/bg-black.png');
+    background-image:url('/nuevo/odlframework/img/supersized/bg-black.png');
     height:150px;
     width:100%;
     overflow:hidden;
@@ -264,11 +264,11 @@
 }
 #thumb-back{
     left:0;
-    background:url('/nuevo/_test/img/supersized/thumb-back.png') no-repeat center center;
+    background:url('/nuevo/odlframework/img/supersized/thumb-back.png') no-repeat center center;
 }
 #thumb-forward{
     right:0;
-    background:url('/nuevo/_test/img/supersized/thumb-forward.png') no-repeat center center;
+    background:url('/nuevo/odlframework/img/supersized/thumb-forward.png') no-repeat center center;
 }
 #thumb-back:hover, #thumb-forward:hover{
     cursor:pointer;

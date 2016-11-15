@@ -6,9 +6,9 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link href="/nuevo/_test/css/videoCover.css" rel="stylesheet">
-<!--<script type="text/javascript" src="/nuevo/_test/js/videoCover.js"></script>-->
+<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/videoCover.css" rel="stylesheet">
+<!--<script type="text/javascript" src="/nuevo/odlframework/js/videoCover.js"></script>-->
 </head>
 <body>
     <?php //include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>

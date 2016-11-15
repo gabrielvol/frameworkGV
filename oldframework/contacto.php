@@ -6,7 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/_test/css/main.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
 <link href="/nuevo/_etc/css/datepicker.css" rel="stylesheet">
 <script type="text/javascript" src="/nuevo/_etc/js/scrollKeep.js"></script>
 <script type="text/javascript" src="/nuevo/_etc/js/jquery-ui-datepicker.js"></script>
@@ -14,7 +14,7 @@
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
 	<div id="main" class="container" role="main">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/_test/common/contactoSend.inc.php'); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/odlframework/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
                     <p><?php echo $mandatoryMessage ?></p>
@@ -94,7 +94,7 @@
             </form>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-        <script type="text/javascript" src="/nuevo/_test/js/form.js"></script>
+        <script type="text/javascript" src="/nuevo/odlframework/js/form.js"></script>
 </body>
 </html>
 

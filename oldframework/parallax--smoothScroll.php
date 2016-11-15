@@ -6,8 +6,8 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link href="/nuevo/_test/css/parallax.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/parallax.css" rel="stylesheet">
 <script type="text/javascript" src="/nuevo/_etc/js/smoothScroll.js"></script>
 </head>
 <body>

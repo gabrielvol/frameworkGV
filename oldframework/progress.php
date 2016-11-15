@@ -6,8 +6,8 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
-<link href="/nuevo/_test/css/main.css" rel="stylesheet">
-<link href="/nuevo/_test/css/progress.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/main.css" rel="stylesheet">
+<link href="/nuevo/odlframework/css/progress.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>    
