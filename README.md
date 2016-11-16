@@ -5,5 +5,7 @@
 * npm install gulp 
 * npm install gulp-sass 
 * npm install gulp-autoprefixer 
+* npm install gulp-cssnano
+
+### Not working
 * npm install gulp-postcss 
-* npm install gulp-cssnano 
