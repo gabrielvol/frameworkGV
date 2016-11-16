@@ -2,7 +2,6 @@
   "name": "frameworkgv",
   "version": "3.0.0",
   "description": "Framework de Gabriel Volonte",
-  "main": "gulp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +10,7 @@
     "url": "git+https://tampas@gmail.com@github.com/gabrielvol/frameworkGV.git"
   },
   "author": "Gabriel Volonte",
+  "mail": "tampas@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gabrielvol/frameGV03/issues"
