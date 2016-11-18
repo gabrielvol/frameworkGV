@@ -21,40 +21,40 @@
                 </div>
                 
                 <label for="nombre">Nombre <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" tabindex="" value="<?php echo $_POST['nombre']; ?>">
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>
 
                 <label for="empresa">Empresa <span class="redColour">*</span></label>
-                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" tabindex="" value="<?php echo $_POST['empresa']; ?>">
+                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
 
                 <label for="email">E-mail <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" tabindex="" value="<?php echo $_POST['email']; ?>">
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>"value="<?php echo $_POST['email']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
 
                 <label for="telefono">Teléfono <span class="redColour">*</span></label>
-                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" tabindex="" value="<?php echo $_POST['telefono']; ?>">
+                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>"value="<?php echo $_POST['telefono']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>
 
                 <label for="fecha">Fecha <span class="redColour">*</span></label>
-                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" tabindex="" value="<?php echo $_POST['fecha']; ?>">
+                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>"value="<?php echo $_POST['fecha']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
 
                 <fieldset>
                     <legend>¿Desea recibir el boletín de noticias? <span class="redColour">*</span></legend>
 
                     <label for="radioSi" class="radio">Newsletter Sí</label>
-                    <input type="radio" name="newsletter" id="radioSi" value="Si" class="radio" tabindex="">
+                    <input type="radio" name="newsletter" id="radioSi" value="Si" class="radio" >
 
                     <label for="radioNo" class="radio">Newsletter No</label>
-                    <input type="radio" name="newsletter" id="radioNo" value="No" class="radio" tabindex="">
+                    <input type="radio" name="newsletter" id="radioNo" value="No" class="radio" >
 
                     <label for="radioNoSe" class="radio">Newsletter No Sé</label>
-                    <input type="radio" name="newsletter" id="radioNoSe" value="No Sé" class="radio" tabindex="">
+                    <input type="radio" name="newsletter" id="radioNoSe" value="No Sé" class="radio" >
                 </fieldset>
 
                 <label for="preciotilde">Prefiero charlar el precio personalmente <span class="redColour">*</span></label>
-                <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" tabindex="" value="Si">
+                <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde"value="Si">
                 
                 <label for="browsersInput">Choose a browser from this list:</label>
                 <input type="text" list="browsersList" name="myBrowser" id="browsersInput">
@@ -68,7 +68,7 @@
                 </datalist>
 
                 <label for="habitacion">Habitación <span class="redColour">*</span></label>
-                <select id="habitacion" name="habitacion" class="habitacion" tabindex="">
+                <select id="habitacion" name="habitacion" class="habitacion" >
                     <option value="" selected>Seleccione una opción</option>
                     <option value="a">a</option>
                     <option value="b">b</option>
@@ -88,9 +88,9 @@
                 </select>-->
 
                 <label for="mensaje">Mensaje <span class="redColour">*</span></label>
-                <textarea name="mensaje" id="mensaje" class="mensaje" tabindex=""><?php echo $_POST['mensaje']; ?></textarea>
+                <textarea name="mensaje" id="mensaje" class="mensaje" ><?php echo $_POST['mensaje']; ?></textarea>
 
-                <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar" tabindex="">
+                <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar" >
             </form>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
