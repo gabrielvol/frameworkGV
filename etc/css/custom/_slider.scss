@@ -10,7 +10,7 @@ $sliderDotWH: 50px $sliderDotH;
 $pagSeparation: 10px;
 
 .slick{
-    &, div{
+    &, div, .slickDots{
         @include clearfix;
     }
     
@@ -61,18 +61,25 @@ $pagSeparation: 10px;
 
 //Slick dots
 .slickDots{
+    $slickDotMarginTopValue: calc(#{$sliderDotH} + 20px);
+    
     @extend .unstyled;
     list-style: none;
     position: relative;
-    z-index: 1;
+    z-index: 100;
+    top: calc(-1 * #{$slickDotMarginTopValue});
+    height: $sliderDotH;
     margin: 0 auto;
     text-align: center;
    
     li{
         display: inline;
+        float: $none;
+        height: $sliderDotH;
         
         &, button{
-            @include squareSize($sliderDotH);            
+            @include squareSize($sliderDotH);  
+            cursor: pointer;          
         }
         
         button{
@@ -82,6 +89,7 @@ $pagSeparation: 10px;
 */
             @include bgSvg(ic_sliderPag, $sliderDotWH);
             display: inline-block;
+            border: $none;
             text-indent: -9999px;
         }
         
