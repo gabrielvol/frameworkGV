@@ -25,7 +25,7 @@ $pagSeparation: 10px;
     @include sprites(-100px 0);
     @include focusHoverBgPosition(-150px 0);
 */
-    @include bgSvg(ic_arrowSliderL, $sliderArrowWH);
+    @include bgSvg(ic_sliderArrowL, $sliderArrowWH);
     left: 15px;
     
     @include beforeDesktop{
@@ -38,7 +38,7 @@ $pagSeparation: 10px;
     @include sprites(-200px 0);
     @include focusHoverBgPosition(-250px 0);
 */
-    @include bgSvg(ic_arrowSliderR, $sliderArrowWH);
+    @include bgSvg(ic_sliderArrowR, $sliderArrowWH);
     right: 15px;
     
     @include beforeDesktop{
