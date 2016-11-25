@@ -1,11 +1,13 @@
 /* =============================================================================
    Nav
    ========================================================================== */
-$navWidthBT: 150px;
+$navWidthBT: 200px;
 .mainNav{
+    z-index: 20;
+    
     @include beforeTablet{
+        @include posTR(10px, 10px);
         position: absolute;
-        right: 10px;
         width: $navWidthBT;
             
         .hamb, ul{
@@ -13,25 +15,22 @@ $navWidthBT: 150px;
         }
 
         .hamb{
+            @include posTR(0, 0);
             @include borderStyle($mainBcColour);
             @include equalHeightAndLineHeight(45px);
             box-sizing: border-box;
-            position: absolute;
-            top: 0;
-            right: 0;
             z-index: 200;
             width: 90px;
             background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
             background-size: 15px;
             padding: 0 10px 0 30px;
-            color: $mainFontColour;
-            font-family: $mainFontFamily;
-            font-size: 1.1em;
+            color: $hamburguerFontColour;
+            font-family: $hamburguerFontFamily;
+            font-size: 1em;
 
             &.topper{
+                @include posTR(15px, 15px);
                 position: fixed;
-                top: 15px;
-                right: 15px;
             }
         }
         
