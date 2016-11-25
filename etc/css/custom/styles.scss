@@ -1,6 +1,6 @@
 //Variables
-@import "../scss/fontsPrev";
-@import "../scss/absoluteVariables";
+@import "../scss/variablesFonts";
+@import "../scss/variablesAbsolute";
 @import "../scss/mixinsSizes";
 @import "../scss/mixinsBackgrounds";
 @import "../scss/mixinsMasks";
@@ -19,18 +19,18 @@
 @import "../scss/mixinsSpacing";
 @import "../scss/mixinsBorders";
 @import "../scss/mixinsPositions";
-@import "../scss/grid";
+@import "../scss/variablesGrid";
 
 //etc
-@import "../scss/fonts";
-@import "../scss/colours";
+@import "../scss/settingsFonts";
+@import "../scss/settingsColours";
 @import "../scss/usefulClasses";
 @import "../scss/usefulClassesResponsive";
-@import "../scss/nav";
-@import "../scss/forms";
-@import "../scss/formsNiceIt";
-@import "../scss/tables";
-@import "../scss/modal";
+@import "../scss/settingsNav";
+@import "../scss/settingsForms";
+@import "../scss/settingsFormsNiceIt";
+@import "../scss/settingsTables";
+@import "../scss/settingsModal";
 @import "../scss/print";
 
 //Custom Styles

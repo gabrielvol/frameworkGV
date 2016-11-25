@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6{
 p, dl, legend{
     margin: $textMargin;
 }
-p{
+p, li{
     font-size: $mainParagraphFontSize;
     
     b, strong{
@@ -64,6 +64,9 @@ p{
     }
     & + p{
         margin: $textMarginSibling;        
+    }
+    p, li{
+        font-size: 1em;
     }
 }
 

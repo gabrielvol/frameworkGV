@@ -10,12 +10,14 @@ $sliderDotWH: 50px $sliderDotH;
 $pagSeparation: 10px;
 
 .slick{
-    &, div, .slickDots{
+    &, div{
         @include clearfix;
     }
-    
-    li{
-        z-index: 10!important;        
+}
+
+.slickHeader{
+    &, div, li{
+        height: 269px;
     }
 }
 
