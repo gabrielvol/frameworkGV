@@ -1,6 +1,6 @@
 <?php
-    $index=1;
-    $navSelected= 0;
+    $index = 1;
+    $navSelected = 0;
     $title = "Title";
     $mdesc = "";
     //Gettext variable, debe ir antes del head
