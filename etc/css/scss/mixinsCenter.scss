@@ -2,7 +2,7 @@
    Center Mixins / Etc
    ========================================================================== */
     //Mixin para clase .absoluteCenter
-@mixin centerAbsolute($widthValue, $heightValue,  $positionValue: absolute){
+@mixin centerAbsolute($widthValue, $heightValue, $positionValue: absolute){
     $widthValueH: #{$widthValue}/2;
     $heightValueH: #{$heightValue}/2;
     position: $positionValue;
