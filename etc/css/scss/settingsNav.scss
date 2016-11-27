@@ -22,7 +22,7 @@
                     color: $navSelectedFontColour;
                 }
                 &:focus, &:hover{
-                background: $bgNavSelectedAnchorHover;
+                    background: $bgNavSelectedAnchorHover;
                 }
             }            
         }
