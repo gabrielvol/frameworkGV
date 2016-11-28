@@ -4,13 +4,13 @@
 <header id="header" class="">
     <?php    
         if($index == 1){
-            echo '<h1 class="logoHeader pRel man"><a href="/nuevo/" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
+            echo '<h1 class="logoHeader"><a href="/nuevo/" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
         }else if($test == 1){
-            echo '<h1 class="logoHeader pRel man"><a href="/nuevo/oldframework/" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
+            echo '<h1 class="logoHeadern"><a href="/nuevo/oldframework/" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
         }else if($seccion == 1){
-            echo '<a href="/nuevo/" class="logoHeader displayBlock pRel man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
+            echo '<a href="/nuevo/" class="logoHeader displayBlock"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
         }else{
-            echo '<a href="/nuevo/" class="logoHeader displayBlock pRel man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
+            echo '<a href="/nuevo/" class="logoHeader displayBlock"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
         }
     ?>
     
