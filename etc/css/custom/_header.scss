@@ -50,6 +50,9 @@
     }
     
     .logoHeader{
+        position: relative;
+        margin: $zero;
+        
         &, a{}
         
         &, a, img{
