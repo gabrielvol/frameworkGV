@@ -448,12 +448,14 @@ h1, h2, h3, h4, h5, h6 {
 p, dl, legend {
   margin: 0; }
 
-p {
+p, li {
   font-size: 1em; }
-  p b, p strong {
+  p b, p strong, li b, li strong {
     font-family: Arial; }
-  p + p {
+  p + p, li + p {
     margin: 0.8em 0 0; }
+  p p, p li, li p, li li {
+    font-size: 1em; }
 
 .arial {
   font-family: Arial; }
@@ -2811,8 +2813,8 @@ table.tableRounded {
 .slick::after, .slick div::after {
   clear: both; }
 
-.slick li {
-  z-index: 10 !important; }
+.slickHeader, .slickHeader div, .slickHeader li {
+  height: 269px; }
 
 .slickPrev {
   /*
@@ -2820,7 +2822,7 @@ table.tableRounded {
     @include focusHoverBgPosition(-150px 0);
 */
   background-color: transparent;
-  background-image: url("/nuevo/oldframework/img/ic_arrowSliderL.svg");
+  background-image: url("/nuevo/oldframework/img/ic_sliderArrowL.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30px 50px;
@@ -2835,7 +2837,7 @@ table.tableRounded {
     @include focusHoverBgPosition(-250px 0);
 */
   background-color: transparent;
-  background-image: url("/nuevo/oldframework/img/ic_arrowSliderR.svg");
+  background-image: url("/nuevo/oldframework/img/ic_sliderArrowR.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30px 50px;
@@ -2866,14 +2868,19 @@ table.tableRounded {
 .slickDots {
   list-style: none;
   position: relative;
-  z-index: 1;
+  z-index: 100;
+  top: calc(-1 * calc(50px + 20px));
+  height: 50px;
   margin: 0 auto;
   text-align: center; }
   .slickDots li {
-    display: inline; }
+    display: inline;
+    float: none !important;
+    height: 50px; }
     .slickDots li, .slickDots li button {
       width: 50px;
-      height: 50px; }
+      height: 50px;
+      cursor: pointer; }
     .slickDots li button {
       /*
             @include squareSize(50px);
@@ -2885,6 +2892,7 @@ table.tableRounded {
       background-position: center center;
       background-size: 50px 50px;
       display: inline-block;
+      border: none !important;
       text-indent: -9999px; }
     .slickDots li + li {
       margin-left: 10px; }
@@ -2947,89 +2955,92 @@ table.tableRounded {
     height: 50px;
     line-height: 50px; } }
 
-#header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-  width: 150px; }
-  @media (min-width: 768px) {
-    #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-      width: 160px; } }
-  @media (min-width: 1200px) {
-    #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-      width: 170px; } }
+#header .logoHeader {
+  position: relative;
+  margin: 0 !important; }
+  #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+    width: 150px; }
+    @media (min-width: 768px) {
+      #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+        width: 160px; } }
+    @media (min-width: 1200px) {
+      #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+        width: 170px; } }
 
 /* =============================================================================
    Nav
    ========================================================================== */
-@media (max-width: 767px) {
-  .mainNav {
-    position: absolute;
-    right: 10px;
-    width: 150px; }
-    .mainNav .hamb, .mainNav ul {
-      border-radius: 4px; }
-    .mainNav .hamb {
-      border: 1px solid #999;
-      height: 45px;
-      line-height: 45px;
-      box-sizing: border-box;
+.mainNav {
+  z-index: 200; }
+  @media (max-width: 767px) {
+    .mainNav {
+      top: 10px;
+      right: 10px;
       position: absolute;
+      width: 200px; }
+      .mainNav .hamb, .mainNav ul {
+        border-radius: 4px; }
+      .mainNav .hamb {
+        top: 0;
+        right: 0;
+        border: 1px solid #999;
+        height: 45px;
+        line-height: 45px;
+        box-sizing: border-box;
+        z-index: 200;
+        width: 90px;
+        background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
+        background-size: 15px;
+        padding: 0 10px 0 30px;
+        color: #333;
+        font-family: Arial;
+        font-size: 1em; }
+        .mainNav .hamb.topper {
+          top: 15px;
+          right: 15px;
+          position: fixed; }
+      .mainNav ul {
+        z-index: 190;
+        position: relative;
+        top: 50px;
+        width: 200px;
+        background-color: #fff;
+        padding: 5px 0 0;
+        box-shadow: 0 0 4px #000; }
+        .mainNav ul li {
+          float: none !important; }
+          .mainNav ul li, .mainNav ul li a {
+            height: 45px;
+            line-height: 45px; }
+          .mainNav ul li:nth-child(even) {
+            background-color: #dedede; }
+          .mainNav ul li:last-child, .mainNav ul li:last-child a {
+            border-radius: 0 0 4px 4px; }
+          .mainNav ul li a {
+            font-size: 0.8em;
+            text-align: center; } }
+  @media (min-width: 768px) {
+    .mainNav li, .mainNav li a {
+      height: 60px;
+      line-height: 60px; }
+    .mainNav li a {
+      transition: all 1s ease; }
+    .mainNav li + li {
+      margin-top: 0px; }
+    .mainNav li.selected a {
+      cursor: default; }
+    .mainNav.topper {
+      position: fixed;
       top: 0;
-      right: 0;
-      z-index: 200;
-      width: 90px;
-      background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
-      background-size: 15px;
-      padding: 0 10px 0 30px;
-      color: #000;
-      font-family: Arial;
-      font-size: 1.1em; }
-      .mainNav .hamb.topper {
-        position: fixed;
-        top: 15px;
-        right: 15px; }
-    .mainNav ul {
-      z-index: 190;
-      position: relative;
-      top: 50px;
-      width: 150px;
-      background-color: #fff;
-      padding: 5px 0 0;
-      box-shadow: 0 0 4px #000; }
-      .mainNav ul li {
-        float: none !important; }
-        .mainNav ul li, .mainNav ul li a {
-          height: 45px;
-          line-height: 45px; }
-        .mainNav ul li:nth-child(even) {
-          background-color: #dedede; }
-        .mainNav ul li:last-child, .mainNav ul li:last-child a {
-          border-radius: 0 0 4px 4px; }
-        .mainNav ul li a {
-          font-size: 0.8em;
-          text-align: center; } }
-
-@media (min-width: 768px) {
-  .mainNav li, .mainNav li a {
-    height: 60px;
-    line-height: 60px; }
-  .mainNav li a {
-    transition: all 1s ease; }
-  .mainNav li + li {
-    margin-top: 0px; }
-  .mainNav li.selected a {
-    cursor: default; }
-  .mainNav.topper {
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    .mainNav.topper ul {
-      width: 700px;
-      margin-right: auto !important;
-      margin-left: auto !important; } }
-
-@media (min-width: 1200px) {
-  .mainNav li, .mainNav li a {
-    height: 60px;
-    line-height: 60px; } }
+      width: 100%; }
+      .mainNav.topper ul {
+        width: 700px;
+        margin-right: auto !important;
+        margin-left: auto !important; } }
+  @media (min-width: 1200px) {
+    .mainNav li, .mainNav li a {
+      height: 60px;
+      line-height: 60px; } }
 
 /* =============================================================================
    Footer
