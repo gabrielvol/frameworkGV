@@ -611,6 +611,24 @@ button.redColour:focus, button.redColour:hover {
 label.redColour, label.redColour:focus, label.redColour:hover {
   color: #ee0000; }
 
+.greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
+  color: #f4f4f4; }
+
+a.greyXXL, a.greyXXL:active, a.greyXXL:visited, a.greyXXL.noHover:focus, a.greyXXL.noHover:hover {
+  color: #f4f4f4; }
+
+a.greyXXL:focus, a.greyXXL:hover {
+  color: #c1c1c1; }
+
+button.greyXXL, button.greyXXL.noHover:focus, button.greyXXL.noHover:hover {
+  color: #f4f4f4; }
+
+button.greyXXL:focus, button.greyXXL:hover {
+  color: #c1c1c1; }
+
+label.greyXXL, label.greyXXL:focus, label.greyXXL:hover {
+  color: #f4f4f4; }
+
 .greyXL, .greyXL b, .greyXL strong, .greyXL i, .greyXL em {
   color: #dedede; }
 
@@ -2173,6 +2191,9 @@ body {
 .bgBlack {
   background-color: #000; }
 
+.bgGreyXXL {
+  background-color: #f4f4f4; }
+
 .bgGreyXL {
   background-color: #dedede; }
 
@@ -3004,6 +3025,7 @@ table.tableRounded {
         position: relative;
         top: 50px;
         width: 200px;
+        height: auto !important;
         background-color: #fff;
         padding: 5px 0 0;
         box-shadow: 0 0 4px #000; }

@@ -8,6 +8,7 @@ $coloursMapLight:(
     redSys: #ff0000,
     errorColour: #d43131,
     redColour: #ee0000,
+    greyXXL: #f4f4f4,
     greyXL: #dedede,
     greyL: #c6c6c6
 );
@@ -40,6 +41,7 @@ $black: map-get($coloursMapMerged, black);
 $redSys: map-get($coloursMapMerged, redSys);
 $errorColour: map-get($coloursMapMerged, errorColour);
 $redColour: map-get($coloursMapMerged, redColour);
+$greyXXL: map-get($coloursMapMerged, greyXXL);
 $greyXL: map-get($coloursMapMerged, greyXL);
 $greyL: map-get($coloursMapMerged, greyL);
 $grey: map-get($coloursMapMerged, grey);
@@ -115,6 +117,7 @@ $borderColoursMap:(
     mainBcColour: $grey,
     secondaryBcColour: $greyD,
     error: $errorColour,
+    greyXXL: $greyXXL,
     greyXL: $greyXL,
     greyL: $greyL,
     grey: $grey,
@@ -133,6 +136,7 @@ $secondaryBcColourHover: darken($mainBcColour, 15%);
 $bcWhite: $white;
 $bcBlack: $black;
 $bcError: map-get($borderColoursMap, error);
+$bcGreyXXL: map-get($borderColoursMap, greyXXL);
 $bcGreyXL: map-get($borderColoursMap, greyXL);
 $bcGreyL: map-get($borderColoursMap, greyL);
 $bcGrey: map-get($borderColoursMap, grey);
@@ -147,6 +151,7 @@ $bcGreyXD: map-get($borderColoursMap, greyXD);
 $backgroundColoursMap:(
     White: $white,
     Black: $black,
+    GreyXXL: $greyXXL,
     GreyXL: $greyXL,
     GreyL: $greyL,
     Grey: $grey,
@@ -155,6 +160,7 @@ $backgroundColoursMap:(
 );
 $bgWhite: map-get($backgroundColoursMap, White);
 $bgBlack: map-get($backgroundColoursMap, Black);
+$bgGreyXXL: map-get($backgroundColoursMap, GreyXXL);
 $bgGreyXL: map-get($backgroundColoursMap, GreyXL);
 $bgGreyL: map-get($backgroundColoursMap, GreyL);
 $bgGrey: map-get($backgroundColoursMap, Grey);
