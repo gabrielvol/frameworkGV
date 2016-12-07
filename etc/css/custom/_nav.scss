@@ -3,11 +3,11 @@
    ========================================================================== */
 $navWidthBT: 200px;
 .mainNav{
-    z-index: 200;
+    z-index: 1000;
     
     @include beforeTablet{
         @include posTR(10px, 10px);
-        position: absolute;
+        position: fixed;
         width: $navWidthBT;
             
         .hamb, ul{
