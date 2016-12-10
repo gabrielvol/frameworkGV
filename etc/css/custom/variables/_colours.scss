@@ -195,10 +195,14 @@ $bgGradWhiteEightyFilter: progid:DXImageTransform.Microsoft.gradient( startColor
    Nav
    ========================================================================== */
     //Fonts
-$navFontColour: $black;
+$navFontColour: $white;
 $navFontColourHover: $navFontColour;
 $navSelectedFontColour: $navFontColourHover;
+
 $hamburguerFontColour: $greyXD;
+$navFontColourBT: $navFontColour;
+$navFontColourHoverBT: $navFontColourHover;
+$navSelectedFontColourBT: $navSelectedFontColour;
 
     //Backgrounds
 $bgNavItem: transparent;

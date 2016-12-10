@@ -2,7 +2,23 @@
    Nav / Etc
    ========================================================================== */
 .mainNav{
-    li{
+    li{        
+        @include beforeTablet{
+            a{
+                color: $navFontColourBT;
+                &:focus, &:hover{
+                    color: $navFontColourHoverBT;
+                }
+            }
+            &.selected{
+                a{
+                    &, &:focus, &:hover{
+                        color: $navSelectedFontColourBT;
+                    }
+                }            
+            }            
+        }
+
         background: $bgNavItem;
         a{
             color: $navFontColour;
