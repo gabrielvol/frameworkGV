@@ -17,7 +17,7 @@
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/oldframework/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
-                    <p><?php echo $mandatoryMessage ?></p>
+                    <?php echo $mandatoryMessage ?>
                 </div>
                 
                 <label for="nombre">Nombre <span class="redColour">*</span></label>

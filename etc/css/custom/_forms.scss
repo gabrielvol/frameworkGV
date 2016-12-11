@@ -181,6 +181,13 @@ input, select, textarea{
     &.bcError{
         border-color: $bcError;        
     }
+        
+    &.invalidField{
+        &, &:focus, &:hover{
+            border-color: $bcError!important;
+            border-width: 2px;
+        }
+    }
 }
 
 button,
@@ -234,25 +241,8 @@ input{
     &:disabled{}
     
     &.nombre{}
-    &.cargo{}
-    &.empresa{}
     &.email{}
     &.telefono{}
-    &.datepicker{}
-    &.rubro{}
-    &.producto{}
-    &.cantidad{}
-    &.precio{}
-    &.radio{}
-    &.check{}
-    &.preciotilde{}
-    &.habitacion{}
-    
-    &.invalidField{
-        &, &:focus, &:hover{
-            border-color: $bcError!important;            
-        }
-    }
     
     &.fecha{
         background-image: url('/nuevo/img/ic_calendar.svg');

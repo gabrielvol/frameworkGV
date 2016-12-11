@@ -43,8 +43,8 @@
         
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
-        $errorNombre    = _('Por favor, ingrese su nombre');
-        $errorEmail     = _('Por favor, ingrese una direcci&oacute;n de correo');
+        $errorNombre     = '<p>'._("Por favor, ingrese su nombre").'</p>';
+        $errorEmail      = '<p>'._("Por favor, ingrese un n&uacute;mero de tel&eacute;fono").'</p>';
 
         
         
