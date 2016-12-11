@@ -282,7 +282,9 @@ input{
     }
     
     &.fecha{
-        background: url('/nuevo/img/ic_calendar.svg') no-repeat right center;
+        background-image: url('/nuevo/img/ic_calendar.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
         background-size: 28px;
     }
 }
