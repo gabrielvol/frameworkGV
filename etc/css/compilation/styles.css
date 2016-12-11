@@ -1867,20 +1867,27 @@ figure {
    ========================================================================== */
 .mainNav li {
   background: transparent; }
+  @media (max-width: 767px) {
+    .mainNav li a {
+      color: #fff; }
+      .mainNav li a:focus, .mainNav li a:hover {
+        color: #fff; }
+    .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
+      color: #fff; } }
   .mainNav li a {
-    color: #000;
+    color: #fff;
     font-family: Arial;
     background: transparent; }
     .mainNav li a:focus, .mainNav li a:hover {
       background: transparent;
-      color: #000; }
+      color: #fff; }
   .mainNav li.selected {
     background: transparent; }
     .mainNav li.selected a {
       background: transparent;
       font-family: Arial; }
       .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
-        color: #000; }
+        color: #fff; }
       .mainNav li.selected a:focus, .mainNav li.selected a:hover {
         background: transparent; }
 
@@ -2992,12 +2999,12 @@ table.tableRounded {
    Nav
    ========================================================================== */
 .mainNav {
-  z-index: 200; }
+  z-index: 1000; }
   @media (max-width: 767px) {
     .mainNav {
       top: 10px;
       right: 10px;
-      position: absolute;
+      position: fixed;
       width: 200px; }
       .mainNav .hamb, .mainNav ul {
         border-radius: 4px; }
