@@ -229,33 +229,6 @@ input{
 
     &[type="file"]{}
     &[type="color"]{}
-
-    &[type="submit"],
-    &[type="reset"]{
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formSubmitHeightValueBT);
-            }
-        }
-        
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formSubmitHeightValueTO);          
-            }  
-        }
-        
-        @include afterTabletLandscape{
-            @include equalHeightAndLineHeight($formSubmitHeightValueATL);
-        }
-        
-        @include afterLaptop{
-            @include equalHeightAndLineHeight($formSubmitHeightValueAD);
-        }
-    }
-
-    &[type="submit"]{}
-    &[type="reset"]{}
-    &[type="button"]{}
     
     &:required{}
     &:disabled{}
@@ -302,11 +275,26 @@ button{
     &:focus, &:hover{
         border-color: $formSubmitBcColourHover;
         color: $formSubmitFontColourHover;
-    }
+    }    
     
+    @include beforeTablet{
+        .mobileForm &{
+            @include equalHeightAndLineHeight($formSubmitHeightValueBT);
+        }
+    }
+
+    @include tabletOnly{
+        .tabletForm &{
+            @include equalHeightAndLineHeight($formSubmitHeightValueTO);
+        }  
+    }
+
     @include afterTabletLandscape{
-        height: $formInputHeightATL;
-        line-height: 25px;        
+        @include equalHeightAndLineHeight($formSubmitHeightValueATL);
+    }
+
+    @include afterLaptop{
+        @include equalHeightAndLineHeight($formSubmitHeightValueAD);
     }
 }
 
