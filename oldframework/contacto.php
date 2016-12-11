@@ -29,15 +29,15 @@
                 <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
 
                 <label for="email">E-mail <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>"value="<?php echo $_POST['email']; ?>">
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
 
                 <label for="telefono">Teléfono <span class="redColour">*</span></label>
-                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>"value="<?php echo $_POST['telefono']; ?>">
+                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>
 
                 <label for="fecha">Fecha <span class="redColour">*</span></label>
-                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>"value="<?php echo $_POST['fecha']; ?>">
+                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>">
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
 
                 <fieldset>
@@ -54,7 +54,7 @@
                 </fieldset>
 
                 <label for="preciotilde">Prefiero charlar el precio personalmente <span class="redColour">*</span></label>
-                <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde"value="Si">
+                <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" value="Si">
                 
                 <label for="browsersInput">Choose a browser from this list:</label>
                 <input type="text" list="browsersList" name="myBrowser" id="browsersInput">
@@ -90,7 +90,7 @@
                 <label for="mensaje">Mensaje <span class="redColour">*</span></label>
                 <textarea name="mensaje" id="mensaje" class="mensaje" ><?php echo $_POST['mensaje']; ?></textarea>
 
-                <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar" >
+                <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar">
             </form>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
