@@ -234,13 +234,13 @@ input{
     &[type="reset"]{
         @include beforeTablet{
             .mobileForm &{
-                @include equalHeightAndLineHeight(45px);
+                @include equalHeightAndLineHeight($formSubmitHeightValueBT);
             }
         }
         
         @include tabletOnly{
             .tabletForm &{
-                @include equalHeightAndLineHeight(50px);          
+                @include equalHeightAndLineHeight($formSubmitHeightValueTO);          
             }  
         }
         
