@@ -280,6 +280,11 @@ input{
             border-color: $bcError!important;            
         }
     }
+    
+    &.fecha{
+        background: url('/nuevo/img/ic_calendar.svg') no-repeat right center;
+        background-size: 28px;
+    }
 }
 
 input[type="reset"],
