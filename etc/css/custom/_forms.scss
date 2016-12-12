@@ -66,6 +66,17 @@ fieldset, input, select, textarea, button{
     }
 }
 
+.status{        
+    @include beforeTablet{
+        text-align: center;            
+    }
+    
+    &.ok{
+        background-color: $bgGreen;
+        padding: 10px 20px;
+    }
+}
+
 fieldset{    
     & + fieldset{
         margin-top: 30px;
