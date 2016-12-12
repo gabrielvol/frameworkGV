@@ -67,7 +67,7 @@ fieldset, input, select, textarea, button{
 }
 
 .status{        
-    @include beforeTablet{
+    @include beforeTabletLandscape{
         text-align: center;            
     }
     
