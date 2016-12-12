@@ -8,6 +8,7 @@ $coloursMapLight:(
     redSys: #ff0000,
     errorColour: #d43131,
     redColour: #ee0000,
+    green: #339900,
     greyXXL: #f4f4f4,
     greyXL: #dedede,
     greyL: #c6c6c6
@@ -41,6 +42,7 @@ $black: map-get($coloursMapMerged, black);
 $redSys: map-get($coloursMapMerged, redSys);
 $errorColour: map-get($coloursMapMerged, errorColour);
 $redColour: map-get($coloursMapMerged, redColour);
+$green: map-get($coloursMapMerged, green);
 $greyXXL: map-get($coloursMapMerged, greyXXL);
 $greyXL: map-get($coloursMapMerged, greyXL);
 $greyL: map-get($coloursMapMerged, greyL);
@@ -117,6 +119,7 @@ $borderColoursMap:(
     mainBcColour: $grey,
     secondaryBcColour: $greyD,
     error: $errorColour,
+    green: $green,
     greyXXL: $greyXXL,
     greyXL: $greyXL,
     greyL: $greyL,
