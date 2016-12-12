@@ -69,7 +69,7 @@
 
                 <label for="habitacion">Habitación <span class="redColour">*</span></label>
                 <select id="habitacion" name="habitacion" class="habitacion" >
-                    <option value="" selected>Seleccione una opción</option>
+                    <option value="<?php echo $_POST['habitacion']; ?>" selected>Seleccione una opción</option>
                     <option value="a">a</option>
                     <option value="b">b</option>
                 </select>
