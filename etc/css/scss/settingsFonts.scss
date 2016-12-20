@@ -1,37 +1,4 @@
 /* =============================================================================
-   General Text Elements Styling / Useful Classes
-   ========================================================================== */
-abbr{
-    border: $none;
-    cursor: help;
-}
-.fontSize{font-size: $fontSizeReset!important}
-.lineHeight{line-height: $lineHeightReset!important}
-.light{font-weight: 300}
-b, strong,
-.roman{font-weight: 400}
-.semiBold{font-weight: 600}
-.bold{font-weight: 700}
-.extraBold{font-weight: 800}
-.heavy{font-weight: 900}
-.italic{font-style: italic} 
-.underline{
-    &, &:hover{
-        text-decoration: underline;
-    }
-}
-.lineThrough{text-decoration: line-through}
-.upperCase{text-transform: uppercase}
-.lowerCase{text-transform: lowercase}
-.smallCaps{font-variant: small-caps}
-.alignCenter{text-align: center}
-.alignRight{text-align: right}
-.alignLeft{text-align: left}
-.alignJustify{text-align: justify}
-.indentedText{text-indent: -9999px}
-.letterSpacing{letter-spacing: 0.05em}
-
-/* =============================================================================
    Font Styling
    ========================================================================== */
 html{
