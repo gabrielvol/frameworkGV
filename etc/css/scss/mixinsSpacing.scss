@@ -126,6 +126,20 @@
         }
     }
 }
+@mixin spacingHelpersClassesGeneratorTLO{
+    @if $shTabletLandscapeOnly == "on" {
+        @each $shClassName, $shValue in $spacingHelpersMap {
+            .pt#{$shClassName}TLO, .pv#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-top: $shValue;}
+            .pr#{$shClassName}TLO, .ph#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-right: $shValue;}
+            .pb#{$shClassName}TLO, .pv#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-bottom: $shValue;}
+            .pl#{$shClassName}TLO, .ph#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-left: $shValue;}
+            .mt#{$shClassName}TLO, .mv#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-top: $shValue;}
+            .mr#{$shClassName}TLO, .mh#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-right: $shValue;}
+            .mb#{$shClassName}TLO, .mv#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-bottom: $shValue;}
+            .ml#{$shClassName}TLO, .mh#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-left: $shValue;}
+        }
+    }
+}
 @mixin spacingHelpersClassesGeneratorBD{
     @if $shBeforeDesktop == "on" {
         @each $shClassName, $shValue in $spacingHelpersMap {

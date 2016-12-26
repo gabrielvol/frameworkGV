@@ -66,7 +66,7 @@
    After Mobile Landscape Styles
    ========================================================================== */
 @include afterMobileLandscape{
-    //Spacing Helpers Tablet Only
+    //Spacing Helpers After Mobile Landscape
     @include spacingHelpersClassesGeneratorAML;
     .mraAML,.mhaAML,.centerAML{margin-right: $auto}
     .mlaAML,.mhaAML,.centerAML{margin-left: $auto}
@@ -123,7 +123,7 @@
    Mobile Landscape Only Styles
    ========================================================================== */
 @include mobileLandscapeOnly{
-    //Spacing Helpers Tablet Only
+    //Spacing Helpers Mobile Landscape Only
     @include spacingHelpersClassesGeneratorMLO;
     .mraMLO,.mhaMLO,.centerMLO{margin-right: $auto}
     .mlaMLO,.mhaMLO,.centerMLO{margin-left: $auto}
@@ -414,7 +414,7 @@
    After Tablet Landscape Styles
    ========================================================================== */
 @include afterTabletLandscape{
-    //Spacing Helpers After Tablet Only
+    //Spacing Helpers After Tablet Landscape
     @include spacingHelpersClassesGeneratorATL;
     .mraATL,.mhaATL,.centerATL{margin-right: $auto}
     .mlaATL,.mhaATL,.centerATL{margin-left: $auto}
