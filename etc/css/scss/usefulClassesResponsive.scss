@@ -414,7 +414,7 @@
    After Tablet Landscape Styles
    ========================================================================== */
 @include afterTabletLandscape{
-    //Spacing Helpers Tablet Only
+    //Spacing Helpers After Tablet Only
     @include spacingHelpersClassesGeneratorATL;
     .mraATL,.mhaATL,.centerATL{margin-right: $auto}
     .mlaATL,.mhaATL,.centerATL{margin-left: $auto}
@@ -465,6 +465,69 @@
     }
     .bgTransparentATL{background-color: $transparent}
     .bgNoImageATL{background-image: $none}
+}
+
+/* =============================================================================
+   Tablet Landscape Only Styles
+   ========================================================================== */
+@include tabletLandscapeOnly{
+    //Spacing Helpers Tablet Landscape Only
+    @include spacingHelpersClassesGeneratorTLO;
+    .mraTLO,.mhaTLO,.centerTLO{margin-right: $auto}
+    .mlaTLO,.mhaTLO,.centerTLO{margin-left: $auto}
+    
+    //Useful Classes
+    .banTLO{border: $none}
+    .pRelTLO{position: relative}
+    .pAbsTLO{position: absolute}
+    .displayInlineTLO{display: $inline}
+    .displayBlockTLO, .showTLO{display: $block}
+    .displayNoneTLO, .hideTLO{display: $none}
+    .noBackgroundTLO{background: $none}
+    .unstyledTLO, .horizontalTLO{list-style: $none}
+    .floatLeftTLO, .horizontalTLO li{float: $left}
+    .floatRightTLO, .horizontalTLO li.floatRight,
+    .horizontalTLO.right li{float: $right}
+    .horizontalCenterTLO{
+        margin-right: $auto;
+        margin-left: $auto;    
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
+    .floatNoneTLO, .unstyledTLO li{float: $none}
+    .indentedTextTLO{text-indent: -9999px}
+    .clearTLO{clear: both}
+    .contentBoxTLO{box-sizing: content-box}
+    .borderBoxTLO{box-sizing: border-box}
+
+    .alignCenterTLO{text-align: center}
+    .alignRightTLO{text-align: right}
+    .alignLeftTLO{text-align: left}
+    .alignJustifyTLO{text-align: justify}
+
+    .fullWidthTLO{width: $hundred}
+    .autoWidthTLO{width: $auto}
+    .autoHeightTLO{height: $auto}
+    
+    .noBackgroundTLO, .bgNoneTLO{
+        &, &:focus, &:hover{
+            background: $none;
+        }
+    }
+    .bgTransparentTLO{background-color: $transparent}
+    .bgNoImageTLO{background-image: $none}
+    
+    .wrapTLO{
+        width: 750px!important;
+        margin-right: $auto;
+        margin-left: $auto;
+    }
 }
 
 /* =============================================================================
