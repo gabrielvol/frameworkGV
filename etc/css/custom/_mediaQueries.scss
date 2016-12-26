@@ -14,6 +14,9 @@ $desktopMin: 1200px;
 $desktopLargeMin: 1600px;
 
 /* < Mobile */
+@mixin beforeMobileLandscape{
+    @media (max-width: #{$mobileMax}){@content;}}
+    
 @mixin mobileOnly{
     @media (max-width: #{$mobileMax}){@content;}}
     
