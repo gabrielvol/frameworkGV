@@ -154,6 +154,7 @@ $bcGreyXD: map-get($borderColoursMap, greyXD);
 $backgroundColoursMap:(
     White: $white,
     Black: $black,
+    Green: $green,
     GreyXXL: $greyXXL,
     GreyXL: $greyXL,
     GreyL: $greyL,
@@ -163,6 +164,7 @@ $backgroundColoursMap:(
 );
 $bgWhite: map-get($backgroundColoursMap, White);
 $bgBlack: map-get($backgroundColoursMap, Black);
+$bgGreen: map-get($backgroundColoursMap, Green);
 $bgGreyXXL: map-get($backgroundColoursMap, GreyXXL);
 $bgGreyXL: map-get($backgroundColoursMap, GreyXL);
 $bgGreyL: map-get($backgroundColoursMap, GreyL);
