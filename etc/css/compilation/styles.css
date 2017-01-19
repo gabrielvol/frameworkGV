@@ -611,6 +611,24 @@ button.redColour:focus, button.redColour:hover {
 label.redColour, label.redColour:focus, label.redColour:hover {
   color: #ee0000; }
 
+.green, .green b, .green strong, .green i, .green em {
+  color: #339900; }
+
+a.green, a.green:active, a.green:visited, a.green.noHover:focus, a.green.noHover:hover {
+  color: #339900; }
+
+a.green:focus, a.green:hover {
+  color: #113300; }
+
+button.green, button.green.noHover:focus, button.green.noHover:hover {
+  color: #339900; }
+
+button.green:focus, button.green:hover {
+  color: #113300; }
+
+label.green, label.green:focus, label.green:hover {
+  color: #339900; }
+
 .greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
   color: #f4f4f4; }
 
@@ -1656,6 +1674,79 @@ figure {
     background-image: none !important; } }
 
 /* =============================================================================
+   Tablet Landscape Only Styles
+   ========================================================================== */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .mraTLO, .mhaTLO, .centerTLO {
+    margin-right: auto !important; }
+  .mlaTLO, .mhaTLO, .centerTLO {
+    margin-left: auto !important; }
+  .banTLO {
+    border: none !important; }
+  .pRelTLO {
+    position: relative; }
+  .pAbsTLO {
+    position: absolute; }
+  .displayInlineTLO {
+    display: inline !important; }
+  .displayBlockTLO, .showTLO {
+    display: block !important; }
+  .displayNoneTLO, .hideTLO {
+    display: none !important; }
+  .noBackgroundTLO {
+    background: none !important; }
+  .unstyledTLO, .horizontalTLO {
+    list-style: none !important; }
+  .floatLeftTLO, .horizontalTLO li {
+    float: left !important; }
+  .floatRightTLO, .horizontalTLO li.floatRight,
+  .horizontalTLO.right li {
+    float: right !important; }
+  .horizontalCenterTLO {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterTLO li {
+      display: inline; }
+      .horizontalCenterTLO li > * {
+        display: inline-block; }
+  .floatNoneTLO, .unstyledTLO li {
+    float: none !important; }
+  .indentedTextTLO {
+    text-indent: -9999px; }
+  .clearTLO {
+    clear: both; }
+  .contentBoxTLO {
+    box-sizing: content-box; }
+  .borderBoxTLO {
+    box-sizing: border-box; }
+  .alignCenterTLO {
+    text-align: center; }
+  .alignRightTLO {
+    text-align: right; }
+  .alignLeftTLO {
+    text-align: left; }
+  .alignJustifyTLO {
+    text-align: justify; }
+  .fullWidthTLO {
+    width: 100% !important; }
+  .autoWidthTLO {
+    width: auto !important; }
+  .autoHeightTLO {
+    height: auto !important; }
+  .noBackgroundTLO, .noBackgroundTLO:focus, .noBackgroundTLO:hover, .bgNoneTLO, .bgNoneTLO:focus, .bgNoneTLO:hover {
+    background: none !important; }
+  .bgTransparentTLO {
+    background-color: transparent !important; }
+  .bgNoImageTLO {
+    background-image: none !important; }
+  .wrapTLO {
+    width: 750px !important;
+    margin-right: auto !important;
+    margin-left: auto !important; } }
+
+/* =============================================================================
    Before Desktop Styles
    ========================================================================== */
 @media (max-width: 1199px) {
@@ -2198,6 +2289,9 @@ body {
 .bgBlack {
   background-color: #000; }
 
+.bgGreen {
+  background-color: #339900; }
+
 .bgGreyXXL {
   background-color: #f4f4f4; }
 
@@ -2352,6 +2446,14 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
     .mandatoryMessage.invalidMandatoryMessage p {
       color: #fff; }
 
+@media (max-width: 1023px) {
+  .status {
+    text-align: center; } }
+
+.status.ok {
+  background-color: #339900;
+  padding: 10px 20px; }
+
 fieldset + fieldset {
   margin-top: 30px; }
 
@@ -2442,6 +2544,9 @@ input, select, textarea {
     box-shadow: inset 0 0 4px #666; }
   input.bcError, select.bcError, textarea.bcError {
     border-color: #d43131; }
+  input.invalidField, input.invalidField:focus, input.invalidField:hover, select.invalidField, select.invalidField:focus, select.invalidField:hover, textarea.invalidField, textarea.invalidField:focus, textarea.invalidField:hover {
+    border-color: #d43131 !important;
+    border-width: 2px; }
 
 button,
 input[type="button"],
@@ -2453,24 +2558,11 @@ label {
 
 input {
   padding: 0 10px !important; }
-  @media (max-width: 767px) {
-    .mobileForm input[type="submit"], .mobileForm input[type="reset"] {
-      height: 45px;
-      line-height: 45px; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm input[type="submit"], .tabletForm input[type="reset"] {
-      height: 50px;
-      line-height: 50px; } }
-  @media (min-width: 1024px) {
-    input[type="submit"], input[type="reset"] {
-      height: 50px;
-      line-height: 50px; } }
-  @media (min-width: 1200px) {
-    input[type="submit"], input[type="reset"] {
-      height: 75px;
-      line-height: 75px; } }
-  input.invalidField, input.invalidField:focus, input.invalidField:hover {
-    border-color: #d43131 !important; }
+  input.fecha {
+    background-image: url("/nuevo/img/ic_calendar.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 28px; }
 
 input[type="reset"],
 input[type="submit"],
@@ -2490,13 +2582,34 @@ button {
   button:hover {
     border-color: #999;
     color: #fff; }
+  @media (max-width: 767px) {
+    .mobileForm input[type="reset"], .mobileForm
+    input[type="submit"], .mobileForm
+    input[type="button"], .mobileForm
+    button {
+      height: 50px;
+      line-height: 50px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tabletForm input[type="reset"], .tabletForm
+    input[type="submit"], .tabletForm
+    input[type="button"], .tabletForm
+    button {
+      height: 65px;
+      line-height: 65px; } }
   @media (min-width: 1024px) {
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
     button {
-      height: 30px;
-      line-height: 25px; } }
+      height: 50px;
+      line-height: 50px; } }
+  @media (min-width: 1200px) {
+    input[type="reset"],
+    input[type="submit"],
+    input[type="button"],
+    button {
+      height: 75px;
+      line-height: 75px; } }
 
 @media (max-width: 767px) {
   .mobileForm input[type="reset"],
