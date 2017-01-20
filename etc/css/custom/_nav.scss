@@ -3,7 +3,7 @@
    ========================================================================== */
 $navWidthBT: 200px;
 .mainNav{
-    z-index: 1000;
+    z-index: $zIndexNav;
     
     @include beforeTablet{
         @include posTR(10px, 10px);
@@ -19,7 +19,7 @@ $navWidthBT: 200px;
             @include borderStyle($mainBcColour);
             @include equalHeightAndLineHeight(45px);
             box-sizing: border-box;
-            z-index: 200;
+            z-index: $zIndexNavHamb;
             width: 90px;
             background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
             background-size: 15px;
@@ -35,7 +35,7 @@ $navWidthBT: 200px;
         }
         
         ul{
-            z-index: 190;
+            z-index: $zIndexNavUl;
             position: relative;
             top: 50px;
             width: $navWidthBT; 

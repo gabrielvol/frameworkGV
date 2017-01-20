@@ -16,6 +16,8 @@ $pagSeparation: 10px;
 }
 
 .slickHeader{
+    z-index: $zIndexSlickHeader;
+    
     &, div, li{
         height: 269px;
     }
@@ -54,7 +56,7 @@ $pagSeparation: 10px;
     @include opacityCBHover();
     position: absolute;
     top: 50%;
-    z-index: 100;
+    z-index: $zIndexSlickNextPrevDots;
     padding: $zero;
     border: $none;
     margin-top: -25px;
@@ -68,7 +70,7 @@ $pagSeparation: 10px;
     @extend .unstyled;
     list-style: none;
     position: relative;
-    z-index: 100;
+    z-index: $zIndexSlickNextPrevDots;
     top: calc(-1 * #{$slickDotMarginTopValue});
     height: $sliderDotH;
     margin: 0 auto;

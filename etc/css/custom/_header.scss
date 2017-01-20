@@ -23,6 +23,13 @@
         
         @include afterTablet{
             height: 50px;
+            
+            li{
+                padding-top: 0;  
+            }
+            a{
+                @include equalHeightAndLineHeight(50px);
+            }
         }
         
         .logoHeader{
@@ -38,15 +45,6 @@
                 }
             }            
         }
-        
-        @include afterTablet{
-            li{
-                padding-top: 0;  
-            }
-            a{
-                @include equalHeightAndLineHeight(50px);
-            }
-        }
     }
     
     .logoHeader{
@@ -61,7 +59,7 @@
             @include afterTablet{
                 width: 160px;
             }
-            @include afterLaptop{
+            @include afterTabletLandscape{
                 width: 170px;
             }
         }

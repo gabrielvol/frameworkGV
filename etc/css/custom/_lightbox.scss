@@ -11,7 +11,7 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: $lightBoxOverlay;
     background-color: $bgBlack;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8;
@@ -22,7 +22,7 @@ body::after {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: $lightbox;
     text-align: center;
     line-height: 0;
     font-weight: normal;
@@ -81,7 +81,7 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: $lbNav;
     
     & > .nav{
       left: 0;      
