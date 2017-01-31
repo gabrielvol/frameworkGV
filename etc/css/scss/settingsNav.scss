@@ -3,6 +3,14 @@
    ========================================================================== */
 .mainNav{
     li{        
+        a{
+            font-family: $navFontFamily;
+        }
+        &.selected{
+            a{
+                font-family: $navSelectedFontFamily;
+            }            
+        }     
         @include beforeTablet{
             a{
                 color: $navFontColourBT;
@@ -18,29 +26,28 @@
                 }            
             }            
         }
-
-        background: $bgNavItem;
-        a{
-            color: $navFontColour;
-            font-family: $navFontFamily;
-            background: $bgNavItemAnchor;
-            &:focus, &:hover{
-                background: $bgNavItemAnchorHover;
-                color: $navFontColourHover;
-            }
-        }
-        &.selected{
-            background: $bgNavSelectedItem;
+        @include afterTablet{
+            background: $bgNavItem;
             a{
-                background: $bgNavSelectedAnchor;
-                font-family: $navSelectedFontFamily;
-                &, &:focus, &:hover{
-                    color: $navSelectedFontColour;
-                }
+                background: $bgNavItemAnchor;
+                color: $navFontColour;
                 &:focus, &:hover{
-                    background: $bgNavSelectedAnchorHover;
+                    background: $bgNavItemAnchorHover;
+                    color: $navFontColourHover;
                 }
-            }            
+            }
+            &.selected{
+                background: $bgNavSelectedItem;
+                a{
+                    background: $bgNavSelectedAnchor;
+                    &, &:focus, &:hover{
+                        color: $navSelectedFontColour;
+                    }
+                    &:focus, &:hover{
+                        background: $bgNavSelectedAnchorHover;
+                    }
+                }            
+            }             
         }
     }
 }
