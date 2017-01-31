@@ -28,11 +28,10 @@ $navWidthBT: 200px;
             color: $hamburguerFontColour;
             font-family: $hamburguerFontFamily;
             font-size: 1em;
-
-/*            &.topper{
-                @include posTR(15px, 15px);
-                position: fixed;
-            }*/
+            
+            &.clicked{
+                color: $hamburguerFontColourClicked;
+            }
         }
         
         ul{
