@@ -1,15 +1,16 @@
 /* =============================================================================
    Slick Slider Custom
    ========================================================================== */
-$sliderArrowHBT: 30px;
-$sliderArrowWHBT: 18px $sliderArrowHBT;
+$sliderArrowHeightBT: 30px;
+$sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
+$sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT}/2);
 
-$sliderArrowH: 50px;
-$sliderArrowWH: 30px $sliderArrowH;
-$sliderArrowHHalf: calc(#{$sliderArrowH}/2);
+$sliderArrowHeight: 50px;
+$sliderArrowWidthHeight: 30px $sliderArrowHeight;
+$sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
 
-$sliderDotH: 50px;
-$sliderDotWH: 50px $sliderDotH;
+$sliderDotHeight: 15px;
+$sliderDotWidthHeight: $sliderDotHeight $sliderDotHeight;
 
 $pagSeparation: 10px;
 
@@ -33,7 +34,7 @@ $pagSeparation: 10px;
     @include sprites(-100px 0);
     @include focusHoverBgPosition(-150px 0);
 */
-    @include bgSvg(ic_sliderArrowL, $sliderArrowWH);
+    @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeight);
     left: 15px;
     
     @include beforeDesktop{
@@ -46,7 +47,7 @@ $pagSeparation: 10px;
     @include sprites(-200px 0);
     @include focusHoverBgPosition(-250px 0);
 */
-    @include bgSvg(ic_sliderArrowR, $sliderArrowWH);
+    @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeight);
     right: 15px;
     
     @include beforeDesktop{
@@ -55,38 +56,48 @@ $pagSeparation: 10px;
 }
 
 .slickPrev, .slickNext{
-    @include squareSize($sliderArrowH);
     @include transition(0.7s);
     @include opacityCBHover();
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    z-index: $zIndexSlickNextPrevDots;
+    z-index: 100;
     padding: $zero;
     border: $none;
-    margin-top: calc(-1 * #{$sliderArrowHHalf});
     text-indent: -9999px;
+    
+    @include beforeTablet{
+        @include squareSize($sliderArrowHeightBT);
+        margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});  
+        
+    }
+    
+    @include afterTablet{
+        @include squareSize($sliderArrowHeight);
+        margin-top: calc(-1 * #{$sliderArrowHeightHalf});        
+    }
 }
 
 //Slick dots
 .slickDots{
-    $slickDotMarginTopValue: calc(#{$sliderDotH} + 20px);
+    $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
     
     @extend .unstyled;
     list-style: none;
     position: relative;
     z-index: $zIndexSlickNextPrevDots;
     top: calc(-1 * #{$slickDotMarginTopValue});
-    height: $sliderDotH;
+    height: $sliderDotHeight;
     margin: 0 auto;
     text-align: center;
    
     li{
         display: inline;
         float: $none;
-        height: $sliderDotH;
+        height: $sliderDotHeight;
         
         &, button{
-            @include squareSize($sliderDotH);  
+            @include squareSize($sliderDotHeight);  
             cursor: pointer;          
         }
         
@@ -95,7 +106,7 @@ $pagSeparation: 10px;
             @include squareSize(50px);
             @include sprites(-100px -50px);
 */
-            @include bgSvg(ic_sliderPag, $sliderDotWH);
+            @include bgSvg(ic_sliderPag, $sliderDotWidthHeight);
             display: inline-block;
             border: $none;
             text-indent: -9999px;
@@ -108,14 +119,14 @@ $pagSeparation: 10px;
         &:focus, &:hover{
             button{
                 /*background-position: -150px -50px;*/
-                @include bgSvg(ic_sliderPagHover, $sliderDotWH);
+                @include bgSvg(ic_sliderPagHover, $sliderDotWidthHeight);
             }
         }
         
         &.slickActive{
             button{
                 /*background-position: -200px -50px;*/
-                @include bgSvg(ic_sliderPagSel, $sliderDotWH);
+                @include bgSvg(ic_sliderPagSel, $sliderDotWidthHeight);
             }
         }
     }
