@@ -6,6 +6,7 @@ $sliderArrowWHBT: 18px $sliderArrowHBT;
 
 $sliderArrowH: 50px;
 $sliderArrowWH: 30px $sliderArrowH;
+$sliderArrowHHalf: calc(#{$sliderArrowH}/2);
 
 $sliderDotH: 50px;
 $sliderDotWH: 50px $sliderDotH;
@@ -62,7 +63,7 @@ $pagSeparation: 10px;
     z-index: $zIndexSlickNextPrevDots;
     padding: $zero;
     border: $none;
-    margin-top: -25px;
+    margin-top: calc(-1 * #{$sliderArrowHHalf});
     text-indent: -9999px;
 }
 
