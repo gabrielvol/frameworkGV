@@ -30,28 +30,26 @@ $pagSeparation: 10px;
 
 // Slick next/prev
 .slickPrev{
-/*
-    @include sprites(-100px 0);
-    @include focusHoverBgPosition(-150px 0);
-*/
-    @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeight);
-    left: 15px;
+    left: 0;
     
-    @include beforeDesktop{
-        left: 0;
+    @include beforeTablet{
+        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeightBT);        
+    }
+    
+    @include afterTablet{
+        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeight);        
     }
 }
 
 .slickNext{
-/*
-    @include sprites(-200px 0);
-    @include focusHoverBgPosition(-250px 0);
-*/
-    @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeight);
-    right: 15px;
+    right: 0;
     
-    @include beforeDesktop{
-        right: 0;
+    @include beforeTablet{
+        @include bgSvg(ic_sliderArrowR $sliderArrowWidthHeightBT);        
+    }
+    
+    @include afterTablet{
+        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeight);        
     }
 }
 
