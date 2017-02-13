@@ -25,7 +25,7 @@ gulp.task('sass', function () {
 //            cssnano(),
 //            autoprefixer({browsers: ['last 3 versions']})
 //        ]))
-//        .pipe(gulp.dest("./src/css/compilation"));
+//        .pipe(gulp.dest("./src/css/"));
 //});
 
     // Post CSS / CSSnano / Autoprefixer
@@ -35,7 +35,7 @@ gulp.task("stylesheets", ['sass'], function() {
             cssnano(),
             postcss()
         ]))
-        .pipe(gulp.dest("./src/css/compilation"));
+        .pipe(gulp.dest("./src/css/"));
 });
 
     // CSSnano / Autoprefixer
