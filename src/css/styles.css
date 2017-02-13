@@ -2394,24 +2394,6 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
     width: 25%; } }
 
 /* =============================================================================
-   Mobile Styles
-   ========================================================================== */
-@media (max-width: 420px) {
-  .mWrap {
-    width: 300px !important;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-/* =============================================================================
-   Tablet Styles
-   ========================================================================== */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tWrap {
-    width: 750px !important;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-/* =============================================================================
    Forms Custom
    ========================================================================== */
 @media (max-width: 767px) {
