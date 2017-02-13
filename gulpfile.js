@@ -19,11 +19,21 @@ gulp.task('sass', function () {
 });
 
     // Post CSS / CSSnano / Autoprefixer
+//gulp.task("stylesheets", ['sass'], function() {
+//    gulp.src("./etc/css/compilation/styles.css")
+//        .pipe(postcss([
+//            cssnano(),
+//            autoprefixer({browsers: ['last 3 versions']})
+//        ]))
+//        .pipe(gulp.dest("./src/css/compilation"));
+//});
+
+    // Post CSS / CSSnano / Autoprefixer
 gulp.task("stylesheets", ['sass'], function() {
     gulp.src("./etc/css/compilation/styles.css")
-        .pipe(postcss([
+        .pipe(autoprefixer({browsers: ['last 3 versions']}[
             cssnano(),
-            autoprefixer({browsers: ['last 3 versions']})
+            postcss()
         ]))
         .pipe(gulp.dest("./src/css/compilation"));
 });
