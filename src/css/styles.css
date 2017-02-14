@@ -2340,10 +2340,10 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-color: transparent !important;
   background-image: none !important; }
 
-.bgTransparent {
+.bgTransparent, .bgTransparent:focus, .bgTransparent:hover {
   background-color: transparent !important; }
 
-.bgNoImage {
+.bgNoImage, .bgNoImage:focus, .bgNoImage:hover {
   background-image: none !important; }
 
 .bgError {
