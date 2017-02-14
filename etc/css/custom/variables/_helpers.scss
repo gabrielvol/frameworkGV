@@ -58,16 +58,16 @@ $borderRadiusValue: 12px;
 .bhs,.bhd,.bhdd{border-width: 0 1px}
 .bvs,.bvd,.bvdd{border-width: 1px 0}
 
-.ban{border: $none}
+.ban, %ban{border: $none}
 .btn, %btn{border-top: $zero}
 .brn, %brn{border-right: $zero}
 .bbn, %bbn{border-bottom: $zero}
 .bln, %bln{border-left: $zero}
-.bhn{
+.bhn, %bhn{
     @extend %brn;
     @extend %bln;
 }
-.bvn{
+.bvn, %bvn{
     @extend %btn;
     @extend %bbn;
 }
