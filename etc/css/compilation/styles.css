@@ -42,10 +42,6 @@
 /* =============================================================================
    Absolute Variables / Etc
    ========================================================================== */
-.horizontalCenter {
-  margin-right: auto !important;
-  margin-left: auto !important; }
-
 /* =============================================================================
    Sizes Mixins Prev / Etc
    ========================================================================== */
@@ -171,7 +167,7 @@ button.white:hover {
    ========================================================================== */
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
 .bgGradWhiteEighty {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
 
 /* =============================================================================
@@ -914,7 +910,7 @@ label.black, label.black:focus, label.black:hover {
 .fullHeightPercent {
   height: 100%; }
 
-.unstyled, .slickDots, .horizontal {
+.unstyled, .horizontal {
   list-style: none; }
 
 .floatLeft, .horizontal li {
@@ -926,6 +922,8 @@ label.black, label.black:focus, label.black:hover {
 
 .horizontalCenter {
   list-style: none;
+  margin-right: auto !important;
+  margin-left: auto !important;
   text-align: center; }
   .horizontalCenter li {
     display: inline; }
@@ -2293,7 +2291,7 @@ table th, table td {
    Useful Classes / Custom
    ========================================================================== */
 body {
-  background: #fff; }
+  background-color: #fff; }
 
 .bgWhite {
   background-color: #fff; }
@@ -2335,7 +2333,8 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-color: #666666; }
 
 .noBackground, .noBackground:focus, .noBackground:hover, .bgNone, .bgNone:focus, .bgNone:hover {
-  background: none !important; }
+  background-color: transparent !important;
+  background-image: none !important; }
 
 .bgTransparent {
   background-color: transparent !important; }
@@ -2347,7 +2346,7 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-color: #d43131; }
 
 .topShadow {
-  background: transparent url("/nuevo/oldframework/img/bg_topShadow.png") repeat-x center top; }
+  background: transparent url("/nuevo/img/bg_topShadow.png") repeat-x center top; }
 
 .ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
   position: relative; }
@@ -2675,7 +2674,7 @@ form.niceIt {
   /* Radio Buttons */ }
   form.niceIt .fmSelect {
     border: 1px solid #999;
-    background: transparent url("/nuevo/oldframework/img/sprites.png") no-repeat 103px -80px;
+    background: transparent url("/nuevo/img/sprites.png") no-repeat 103px -80px;
     padding: 0 40px 0 10px;
     width: 135px !important;
     color: #000; }
@@ -2691,7 +2690,8 @@ form.niceIt {
       border: 1px solid #999;
       width: 135px !important;
       max-height: 250px;
-      background: #fff none; }
+      background-color: #fff;
+      background-image: none; }
       form.niceIt .fmSelect ul li {
         padding: 10px 15px !important;
         font-size: 0.7em;
@@ -2706,7 +2706,7 @@ form.niceIt {
     form.niceIt .fmCheckbox + .fmCheckbox {
       display: none !important; }
   form.niceIt .fmCheckbox.checked {
-    background: transparent url("/nuevo/oldframework/img/sprites.png") no-repeat 0px 0px; }
+    background: transparent url("/nuevo/img/sprites.png") no-repeat 0px 0px; }
   form.niceIt .fnFileInput, form.niceIt .fnFileInput span, form.niceIt .fnFileInput strong {
     width: 100% !important; }
     @media (max-width: 420px) {
@@ -2742,7 +2742,7 @@ form.niceIt {
       opacity: 0.75;
       filter: alpha(opacity=75);
       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
-      background: transparent url("/nuevo/oldframework/img/sprites.png") no-repeat -461px 0;
+      background: transparent url("/nuevo/img/sprites.png") no-repeat -461px 0;
       position: absolute;
       top: 0;
       right: 0;
@@ -2759,7 +2759,7 @@ form.niceIt {
           padding-right: calc(60px + 5px) !important;
           line-height: 60px; }
         .searchForm input[type="submit"] {
-          background: transparent url("/nuevo/oldframework/img/sprites.png") no-repeat -400px 0;
+          background: transparent url("/nuevo/img/sprites.png") no-repeat -400px 0;
           width: 60px; } }
     @media (min-width: 1200px) {
       .searchForm input {
@@ -2768,7 +2768,7 @@ form.niceIt {
           padding-right: calc(50px + 10px) !important;
           line-height: 50px; }
         .searchForm input[type="submit"] {
-          background: transparent url("/nuevo/oldframework/img/sprites.png") no-repeat -491px 0;
+          background: transparent url("/nuevo/img/sprites.png") no-repeat -491px 0;
           width: 50px; } }
 
 /* =============================================================================
@@ -2809,7 +2809,7 @@ table td {
 table.tableRounded {
   border: 1px solid #939393; }
   table.tableRounded th, table.tableRounded tfoot td {
-    background: #888; }
+    background-color: #888; }
   table.tableRounded tfoot td {
     border-top: 1px solid #dedede; }
   table.tableRounded tr th, table.tableRounded tr td {
@@ -2884,7 +2884,7 @@ table.tableRounded {
    ========================================================================== */
 .close {
   background-color: transparent;
-  background-image: url("/nuevo/oldframework/img/ic_closePopup.svg");
+  background-image: url("/nuevo/img/ic_closePopup.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -2958,14 +2958,14 @@ table.tableRounded {
   @media (max-width: 767px) {
     .slickPrev {
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderArrowL.svg");
+      background-image: url("/nuevo/img/ic_sliderArrowL.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 18px 30px; } }
   @media (min-width: 768px) {
     .slickPrev {
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderArrowL.svg");
+      background-image: url("/nuevo/img/ic_sliderArrowL.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 50px; } }
@@ -2975,14 +2975,14 @@ table.tableRounded {
   @media (max-width: 767px) {
     .slickNext {
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderArrowR.svg");
+      background-image: url("/nuevo/img/ic_sliderArrowR.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 18px 30px; } }
   @media (min-width: 768px) {
     .slickNext {
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderArrowR.svg");
+      background-image: url("/nuevo/img/ic_sliderArrowR.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 50px; } }
@@ -3036,7 +3036,7 @@ table.tableRounded {
             @include sprites(-100px -50px);
 */
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderPag.svg");
+      background-image: url("/nuevo/img/ic_sliderPag.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 15px 15px;
@@ -3048,14 +3048,14 @@ table.tableRounded {
     .slickDots li:focus button, .slickDots li:hover button {
       /*background-position: -150px -50px;*/
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderPagHover.svg");
+      background-image: url("/nuevo/img/ic_sliderPagHover.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 15px 15px; }
     .slickDots li.slickActive button {
       /*background-position: -200px -50px;*/
       background-color: transparent;
-      background-image: url("/nuevo/oldframework/img/ic_sliderPagSel.svg");
+      background-image: url("/nuevo/img/ic_sliderPagSel.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 15px 15px; }
