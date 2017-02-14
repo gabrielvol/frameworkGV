@@ -59,15 +59,15 @@ $borderRadiusValue: 12px;
 .bvs,.bvd,.bvdd{border-width: 1px 0}
 
 .ban{border: $none}
-.btn{border-top: $zero}
-.brn{border-right: $zero}
-.bbn{border-bottom: $zero}
-.bln{border-left: $zero}
+.btn, %btn{border-top: $zero}
+.brn, %brn{border-right: $zero}
+.bbn, %bbn{border-bottom: $zero}
+.bln, %bln{border-left: $zero}
 .bhn{
-    @extend .brn;
-    @extend .bln;
+    @extend %brn;
+    @extend %bln;
 }
 .bvn{
-    @extend .btn;
-    @extend .bbn;
+    @extend %btn;
+    @extend %bbn;
 }
