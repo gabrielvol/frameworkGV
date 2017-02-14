@@ -37,7 +37,7 @@ table.tableRounded{
     @include borderStyle($mainBcColourTable);
     
     th,tfoot td{
-        background: $mainBgColourTable;
+        background-color: $mainBgColourTable;
     }
    
     tfoot td{

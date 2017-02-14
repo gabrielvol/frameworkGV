@@ -73,7 +73,8 @@ body::after {
     @include squareSize(32px);
     display: block;
     margin: 0 auto;
-    background: url(/nuevo/oldframework/img/lightbox/loading.gif) no-repeat;
+    background-image: url(/nuevo/oldframework/img/lightbox/loading.gif);
+    background-repeat: no-repeat;
 }
 
 .lb-nav {

@@ -39,7 +39,8 @@ form.niceIt{
             @include borderStyle($formInputBcColour);
             width: 135px!important;
             max-height: 250px;
-            background: #fff none;
+            background-color: $white;
+            background-image: none;
             
             li{
                 @extend %optionTextFormat;  

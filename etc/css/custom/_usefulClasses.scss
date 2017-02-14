@@ -3,12 +3,13 @@
    ========================================================================== */
 
 //Backgrounds
-body{background: $bodyBgColour}
+body{background-color: $bodyBgColour}
 @include backgroundColourClassesGenerator;
 @include backgroundColourHoverClassesGenerator;
 .noBackground, .bgNone{
     &, &:focus, &:hover{
-        background: $none;
+        background-color: $transparent;
+        background-image: $none;
     }
 }
 .bgTransparent{background-color: $transparent}
