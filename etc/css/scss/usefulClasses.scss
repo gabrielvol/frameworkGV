@@ -35,9 +35,10 @@
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
 .horizontal.right li{float: $right}
-.horizontalCenter{
-    @extend %mha;   
+.horizontalCenter{  
     list-style: none;
+    margin-right: $auto;
+    margin-left: $auto;
     text-align: center;
     li{
         display: inline;
