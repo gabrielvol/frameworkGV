@@ -12,8 +12,14 @@ body{background-color: $bodyBgColour}
         background-image: $none;
     }
 }
-.bgTransparent{background-color: $transparent}
-.bgNoImage{background-image: $none}
+.bgTransparent{
+    &, &:focus, &:hover{
+        background-color: $transparent;
+    }
+.bgNoImage{
+    &, &:focus, &:hover{
+        background-image: $none;
+    }
 .bgError{background-color: $bgError}
 .topShadow{background: transparent url('/nuevo/img/bg_topShadow.png') repeat-x center top}
 
