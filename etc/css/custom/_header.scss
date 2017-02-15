@@ -1,29 +1,41 @@
 /* =============================================================================
    Header
    ========================================================================== */
-#header{
-    @include beforeTablet{
-        box-sizing: border-box;
-        padding-top: 20px;
-        height: 150px;
+#header{    
+    .logoHeader{
+        position: relative;
+        margin: $zero;
+        z-index: $zIndexLogoHeader;
+        
+        &, a{}
+        
+        &, a, img{}
     }
-    @include tabletOnly{
-        height: 50px;
-    }
-    @include afterTabletLandscape{
-        height: 130px;
-    } 
     
-    &.topper{
-        @include mobileOnly{
+    @include mobileOnly{
+        &.topper{
             height: 50px;
             
             .hamb{}
         }
+    }
+    
+    @include beforeTablet{
+        box-sizing: border-box;
+        padding-top: 20px;
+        height: 150px;
         
-        @include afterTablet{
+        .logoHeader{
+            &, a, img{
+                width: 150px;
+            }
+        }
+    }
+    
+    @include afterTablet{    
+        &.topper{        
             height: 50px;
-            
+
             li{
                 padding-top: 0;  
             }
@@ -31,37 +43,25 @@
                 @include equalHeightAndLineHeight(50px);
             }
         }
+    }
+    
+    @include tabletOnly{
+        height: 50px;
         
         .logoHeader{
-            a, img{
-                @include mobileOnly{
-                    width: 10px;
-                }
-                @include afterTablet{
-                    width: 30px;
-                }
-                @include afterLaptop{
-                    width: 60px;
-                }
-            }            
+            &, a, img{
+                width: 150px;
+            }
         }
     }
     
-    .logoHeader{
-        position: relative;
-        margin: $zero;
+    @include afterTabletLandscape{
+        height: 130px;
         
-        &, a{}
-        
-        &, a, img{
-            width: 150px;          
-            
-            @include afterTablet{
-                width: 160px;
-            }
-            @include afterTabletLandscape{
-                width: 170px;
+        .logoHeader{
+            &, a, img{
+                width: 150px;
             }
         }
-    }
+    } 
 }
