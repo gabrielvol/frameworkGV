@@ -32,7 +32,12 @@
         }
     }
     
-    @include afterTablet{    
+    @include afterTablet{        
+        .logoHeader{
+            &, a, img{
+                width: 150px;
+            }
+        }
         &.topper{        
             height: 50px;
 
@@ -41,16 +46,6 @@
             }
             a{
                 @include equalHeightAndLineHeight(50px);
-            }
-        }
-    }
-    
-    @include tabletOnly{
-        height: 50px;
-        
-        .logoHeader{
-            &, a, img{
-                width: 150px;
             }
         }
     }
