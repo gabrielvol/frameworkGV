@@ -6,6 +6,9 @@
 $zIndexNav: 1000;
 $zIndexNavHamb: 200;
 $zIndexNavUl: 190;
+    
+    //Header
+$zIndexHeader: $zIndexNav;
 
     // LogoHeader
 $zIndexLogoHeader: 100;
@@ -18,3 +21,6 @@ $zIndexSlickHeader: 90;
 $lightbox: 10000;
 $lightBoxOverlay: 9999;
 $lbNav: 10;
+
+    //Main
+$zIndexMain: 1100;

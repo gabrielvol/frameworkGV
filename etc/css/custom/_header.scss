@@ -2,6 +2,8 @@
    Header
    ========================================================================== */
 #header{    
+    z-index: $zIndexHeader;
+    
     .logoHeader{
         position: relative;
         margin: $zero;
