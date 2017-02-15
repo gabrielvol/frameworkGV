@@ -3063,56 +3063,37 @@ table.tableRounded {
 /* =============================================================================
    Header
    ========================================================================== */
-@media (max-width: 767px) {
-  #header {
-    box-sizing: border-box;
-    padding-top: 20px;
-    height: 150px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #header {
-    height: 50px; } }
-
-@media (min-width: 1024px) {
-  #header {
-    height: 130px; } }
-
-@media (max-width: 420px) {
-  #header.topper {
-    height: 50px; } }
-
-@media (min-width: 768px) {
-  #header.topper {
-    height: 50px; }
-    #header.topper li {
-      padding-top: 0; }
-    #header.topper a {
-      height: 50px;
-      line-height: 50px; } }
-
-@media (max-width: 420px) {
-  #header.topper .logoHeader a, #header.topper .logoHeader img {
-    width: 10px; } }
-
-@media (min-width: 768px) {
-  #header.topper .logoHeader a, #header.topper .logoHeader img {
-    width: 30px; } }
-
-@media (min-width: 1200px) {
-  #header.topper .logoHeader a, #header.topper .logoHeader img {
-    width: 60px; } }
-
-#header .logoHeader {
-  position: relative;
-  margin: 0 !important; }
-  #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-    width: 150px; }
-    @media (min-width: 768px) {
+#header {
+  z-index: 1000; }
+  #header .logoHeader {
+    position: relative;
+    margin: 0 !important;
+    z-index: 100; }
+  @media (max-width: 420px) {
+    #header.topper {
+      height: 50px; } }
+  @media (max-width: 767px) {
+    #header {
+      box-sizing: border-box;
+      padding-top: 20px;
+      height: 150px; }
       #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-        width: 160px; } }
-    @media (min-width: 1024px) {
+        width: 150px; } }
+  @media (min-width: 768px) {
+    #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+      width: 150px; }
+    #header.topper {
+      height: 50px; }
+      #header.topper li {
+        padding-top: 0; }
+      #header.topper a {
+        height: 50px;
+        line-height: 50px; } }
+  @media (min-width: 1024px) {
+    #header {
+      height: 130px; }
       #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-        width: 170px; } }
+        width: 150px; } }
 
 /* =============================================================================
    Nav
