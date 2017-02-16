@@ -2345,8 +2345,8 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bgError {
   background-color: #d43131; }
 
-.topShadow {
-  background: transparent url("/nuevo/img/bg_topShadow.png") repeat-x center top; }
+.bgShadowT {
+  background: transparent url("/nuevo/img/bg_shadowT.png") repeat-x center top; }
 
 .ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
   position: relative; }

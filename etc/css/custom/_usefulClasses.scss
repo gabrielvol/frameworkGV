@@ -23,7 +23,8 @@ body{background-color: $bodyBgColour}
     }
 }
 .bgError{background-color: $bgError}
-.topShadow{background: transparent url('/nuevo/img/bg_topShadow.png') repeat-x center top}
+.bgShadowT{background: transparent url('/nuevo/img/bg_shadowT.png') repeat-x center top}
+.bgShadowB{background: transparent url('/nuevo/img/bg_shadowB.png') repeat-x center bottom}
 
 //Lists
 .ulResp2 li, .ulResp3 li, .ulResp4 li{
