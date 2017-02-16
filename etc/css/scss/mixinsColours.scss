@@ -141,7 +141,7 @@
     }
 }
     //Mixin para agregar background color property con :focus y :hover
-@mixin focusHoverBgColor($bgColorHoverValue){
+@mixin focusHoverBgColour($bgColorHoverValue){
     &:focus, &:hover{
         background-color: $bgColorHoverValue;
     }
