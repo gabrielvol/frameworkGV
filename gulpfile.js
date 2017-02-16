@@ -18,22 +18,12 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./etc/css/compilation'));
 });
 
-    // Post CSS / CSSnano / Autoprefixer
-//gulp.task("stylesheets", ['sass'], function() {
-//    gulp.src("./etc/css/compilation/styles.css")
-//        .pipe(postcss([
-//            cssnano(),
-//            autoprefixer({browsers: ['last 3 versions']})
-//        ]))
-//        .pipe(gulp.dest("./src/css/"));
-//});
-
-    // Post CSS / CSSnano / Autoprefixer
+    // CSSnano / PostCSS / Autoprefixer
 gulp.task("stylesheets", ['sass'], function() {
     gulp.src("./etc/css/compilation/styles.css")
-        .pipe(autoprefixer({browsers: ['last 3 versions']}[
-            cssnano(),
-            postcss()
+        .pipe(cssnano([,
+            postcss(),
+            autoprefixer({browsers: ['last 3 versions']})
         ]))
         .pipe(gulp.dest("./src/css/"));
 });
