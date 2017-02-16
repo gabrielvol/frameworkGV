@@ -150,7 +150,7 @@ $bcGreyXD: map-get($borderColoursMap, greyXD);
    Background Colours
    ========================================================================== */
 ///**Background Colours Map:** 
-    ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/colourMixins.scss]`.
+    ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
 $backgroundColoursMap:(
     White: $white,
     Black: $black,
@@ -179,7 +179,7 @@ $imgBgNeutralColour: $bgGreyL;
 $bgError: $errorColour;
 
 ///**Background Colours Hover Map:** 
-    ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/colourMixins.scss]`.
+    ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
 $backgroundColoursHoverMap:(    
     mainBgColour: darken($mainBgColour, 20%),
 /*    bgGrey: lighten($bgGrey, 20%)*/
