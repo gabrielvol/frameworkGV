@@ -462,6 +462,84 @@ p, li {
 .arial {
   font-family: Arial; }
 
+@media (max-width: 767px) {
+  h1, .hUno {
+    font-size: 1.6em; }
+  h2, .hDos {
+    font-size: 1.5em; }
+  h3, .hTre {
+    font-size: 1.4em; }
+  h4, .hCua {
+    font-size: 1.3em; }
+  h5, .hCin {
+    font-size: 1.3em; }
+  h6, .hSei {
+    font-size: 1.3em; }
+  h1, .hUno {
+    line-height: 1em; }
+  h2, .hDos {
+    line-height: 1em; }
+  h3, .hTre {
+    line-height: 1em; }
+  h4, .hCua {
+    line-height: 1em; }
+  h5, .hCin {
+    line-height: 1em; }
+  h6, .hSei {
+    line-height: 1em; } }
+
+@media (min-width: 768px) {
+  h1, .hUno {
+    font-size: 1.6em; }
+  h2, .hDos {
+    font-size: 1.5em; }
+  h3, .hTre {
+    font-size: 1.4em; }
+  h4, .hCua {
+    font-size: 1.3em; }
+  h5, .hCin {
+    font-size: 1.3em; }
+  h6, .hSei {
+    font-size: 1.3em; }
+  h1, .hUno {
+    line-height: 1em; }
+  h2, .hDos {
+    line-height: 1em; }
+  h3, .hTre {
+    line-height: 1em; }
+  h4, .hCua {
+    line-height: 1em; }
+  h5, .hCin {
+    line-height: 1em; }
+  h6, .hSei {
+    line-height: 1em; } }
+
+@media (min-width: 1200px) {
+  h1, .hUno {
+    font-size: 2.4em; }
+  h2, .hDos {
+    font-size: 2.2em; }
+  h3, .hTre {
+    font-size: 2em; }
+  h4, .hCua {
+    font-size: 1.8em; }
+  h5, .hCin {
+    font-size: 1.6em; }
+  h6, .hSei {
+    font-size: 1.4em; }
+  h1, .hUno {
+    line-height: 1em; }
+  h2, .hDos {
+    line-height: 1.1em; }
+  h3, .hTre {
+    line-height: 1em; }
+  h4, .hCua {
+    line-height: 1em; }
+  h5, .hCin {
+    line-height: 1em; }
+  h6, .hSei {
+    line-height: 1em; } }
+
 /* =============================================================================
    Colours
    ========================================================================== */
