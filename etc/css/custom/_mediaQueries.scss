@@ -42,7 +42,7 @@ $desktopLargeMin: 1600px;
         and (max-width: #{$mobileLMax}){@content;}}
 
 /* Custom Mobile Breakpoints */
-@mixin mobile500{
+@mixin afterMobile500{
     @media (min-width: 500px){@content;}}
     
 @mixin mobile500Only{
