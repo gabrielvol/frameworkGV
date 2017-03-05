@@ -150,11 +150,6 @@ button.white:hover {
 /* =============================================================================
    Background Colours
    ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-.bgGradWhiteEighty {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-
 /* =============================================================================
    Nav
    ========================================================================== */
@@ -2414,6 +2409,14 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 @media (min-width: 768px) {
   .ulResp4 li {
     width: 25%; } }
+
+/* =============================================================================
+   Gradients
+   ========================================================================== */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+.bgGradWhiteEighty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
 
 /* =============================================================================
    Forms Custom
