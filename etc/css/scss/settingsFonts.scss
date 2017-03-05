@@ -39,16 +39,3 @@ p, li{
 
 // Font Families and Headings Values
 @include fontFamilyCustomClassesGenerator;
-
-@include beforeTablet{
-    @include fontCustomHeadingsSizesGeneratorMobile;
-    @include fontCustomLineHeightsGeneratorMobile;    
-}
-@include afterTablet{
-    @include fontCustomHeadingsSizesGeneratorTablet;
-    @include fontCustomLineHeightsGeneratorTablet;     
-}
-@include afterLaptop{
-    @include fontCustomHeadingsSizesGeneratorDesktop;
-    @include fontCustomLineHeightsGeneratorDesktop;    
-}

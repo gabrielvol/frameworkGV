@@ -34,58 +34,6 @@ $headingMargin: 0 0 0.8em;
 $textMargin: 0;
 $textMarginSibling: 0.8em 0 0;
 
-//Font Sizes
-$fontSizesMapMobile:(
-    $h1List: 1.6em,
-    $h2List: 1.5em,
-    $h3List: 1.4em,
-    $h4List: 1.3em,
-    $h5List: 1.3em,
-    $h6List: 1.3em
-);
-$fontSizesMapTablet:(
-    $h1List: 1.6em,
-    $h2List: 1.5em,
-    $h3List: 1.4em,
-    $h4List: 1.3em,
-    $h5List: 1.3em,
-    $h6List: 1.3em
-);
-$fontSizesMapDesktop:(
-    $h1List: 2.4em,
-    $h2List: 2.2em,
-    $h3List: 2em,
-    $h4List: 1.8em,
-    $h5List: 1.6em,
-    $h6List: 1.4em
-);
-
-//Line Height Values
-$lineHeightsMapMobile:(
-    $h1List: 1em,
-    $h2List: 1em,
-    $h3List: 1em,
-    $h4List: 1em,
-    $h5List: 1em,
-    $h6List: 1em
-);
-$lineHeightsMapTablet:(
-    $h1List: 1em,
-    $h2List: 1em,
-    $h3List: 1em,
-    $h4List: 1em,
-    $h5List: 1em,
-    $h6List: 1em
-);
-$lineHeightsMapDesktop:(
-    $h1List: 1em,
-    $h2List: 1.1em,
-    $h3List: 1em,
-    $h4List: 1em,
-    $h5List: 1em,
-    $h6List: 1em
-);
-
 // Useful Text Format
 $fontSizeReset: 1em;
 $lineHeightReset: 1em;

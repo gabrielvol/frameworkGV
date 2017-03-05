@@ -13,35 +13,3 @@
         }
     }
 }
-//Generador de clases por cada tamaño de fuente
-@mixin fontCustomHeadingsSizesGeneratorMobile{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapMobile {
-        #{$headingsClassName}{font-size: $fontCustomSizeValues;}
-    }
-}
-@mixin fontCustomHeadingsSizesGeneratorTablet{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapTablet {
-        #{$headingsClassName}{font-size: $fontCustomSizeValues;}
-    }
-}
-@mixin fontCustomHeadingsSizesGeneratorDesktop{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapDesktop {
-        #{$headingsClassName}{font-size: $fontCustomSizeValues;}
-    }
-}
-    //Generador de clases por cada valor de altura de línea
-@mixin fontCustomLineHeightsGeneratorMobile{
-    @each $headingsClassName, $fontCustomLineHeightValues in $lineHeightsMapMobile {
-        #{$headingsClassName}{line-height: $fontCustomLineHeightValues;}
-    }
-}
-@mixin fontCustomLineHeightsGeneratorTablet{
-    @each $headingsClassName, $fontCustomLineHeightValues in $lineHeightsMapTablet {
-        #{$headingsClassName}{line-height: $fontCustomLineHeightValues;}
-    }
-}
-@mixin fontCustomLineHeightsGeneratorDesktop{
-    @each $headingsClassName, $fontCustomLineHeightValues in $lineHeightsMapDesktop {
-        #{$headingsClassName}{line-height: $fontCustomLineHeightValues;}
-    }
-}
