@@ -12,7 +12,6 @@
 @import "variables/helpers";
 @import "variables/forms";
 @import "variables/tables";
-@import "../scss/variablesGrid";
 
 //Mixins
 @import "../scss/mixinsSizes";
@@ -28,6 +27,7 @@
 @import "../scss/mixinsPositions";
 
 //etc
+@import "../scss/settingsGrid";
 @import "../scss/usefulClassesFonts";
 @import "../scss/settingsFonts";
 @import "../scss/settingsColours";

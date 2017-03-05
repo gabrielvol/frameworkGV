@@ -78,24 +78,3 @@ $containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
 */
     }
 }
-
-/* =============================================================================
-   Grilla 100%
-   ========================================================================== */
-//== Container sizes
-// Small screen / tablet (768px+)
-/*$container-tablet:            98.5%!important;
-$container-sm:                $container-tablet;
-// Medium screen / desktop (992px+)
-$container-desktop:           98.5%!important;
-$container-md:                $container-desktop;
-// Large screen / wide desktop (1200px+)
-$container-large-desktop:     98.5%!important;
-$container-lg:                $container-large-desktop;
-
-.container {
-    @media (min-width: $screen-sm-min) {width: $container-sm;}
-    @media (min-width: $screen-md-min) {width: $container-md;}
-    @media (min-width: $screen-lg-min) {width: $container-lg;}
-    @media (max-width :320px){width:98%;}
-}*/
