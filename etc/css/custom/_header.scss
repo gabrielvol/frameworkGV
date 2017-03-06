@@ -14,14 +14,6 @@
         &, a, img{}
     }
     
-    @include mobileOnly{
-        &.topper{
-            height: 50px;
-            
-            .hamb{}
-        }
-    }
-    
     @include beforeTablet{
         box-sizing: border-box;
         padding-top: 20px;
@@ -40,12 +32,14 @@
                 width: 150px;
             }
         }
+        
         &.topper{        
             height: 50px;
 
             li{
                 padding-top: 0;  
             }
+            
             a{
                 @include equalHeightAndLineHeight(50px);
             }
@@ -60,5 +54,7 @@
                 width: 150px;
             }
         }
+        
+        &.topper{}
     } 
 }
