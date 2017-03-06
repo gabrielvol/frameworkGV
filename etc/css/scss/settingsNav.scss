@@ -27,15 +27,24 @@
             a{
                 background: $bgNavItemAnchor;
                 color: $navFontColour;
+            }
+            &.selected{
+                background: $bgNavSelectedItem;
+                a{
+                    background: $bgNavSelectedAnchor;
+                    color: $navSelectedFontColour;
+                }            
+            }             
+        }
+        @include afterTabletLandscape{
+            a{
                 &:focus, &:hover{
                     background: $bgNavItemAnchorHover;
                     color: $navFontColourHover;
                 }
             }
             &.selected{
-                background: $bgNavSelectedItem;
                 a{
-                    background: $bgNavSelectedAnchor;
                     &, &:focus, &:hover{
                         color: $navSelectedFontColour;
                     }
