@@ -10,7 +10,13 @@
         //Con gettext
         if($index == 1){
             echo '<h1 class="logoHeader"><a href="/nuevo/';
-            if($idioma == 'pt_BR'){ echo '?l=pt_BR'; } else if($idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; }
+                if($idioma == 'pt_BR'){
+                    echo '?l=pt_BR';
+                } else if($idioma == 'en_GB'){
+                    echo '?l=en_GB';
+                } else {
+                    echo '?l=es_AR';
+                }
             echo '" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
             
         //Framework
@@ -29,7 +35,13 @@
         //Ancla con gettext
         }else{
             echo '<a href="/nuevo/';
-            if($idioma == 'pt_BR'){ echo '?l=pt_BR'; } else if($idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; }
+                if($idioma == 'pt_BR'){
+                    echo '?l=pt_BR';
+                } else if($idioma == 'en_GB'){
+                    echo '?l=en_GB';
+                } else {
+                    echo '?l=es_AR';
+                }
             echo '" class="logoHeader displayBlock"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
         }
     ?>
