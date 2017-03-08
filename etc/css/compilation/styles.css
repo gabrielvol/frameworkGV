@@ -353,12 +353,6 @@ b, strong,
 .indentedText {
   text-indent: -9999px; }
 
-.letterSpacing {
-  letter-spacing: 0.05em; }
-
-.textShadow {
-  text-shadow: 1px 1px 5px #333; }
-
 /* =============================================================================
    Font Styling
    ========================================================================== */
@@ -2289,6 +2283,12 @@ table th, table td {
 /* =============================================================================
    Useful Classes / Custom
    ========================================================================== */
+.textShadow {
+  text-shadow: 1px 1px 5px #333; }
+
+.letterSpacing {
+  letter-spacing: 0.05em; }
+
 body {
   background-color: #fff; }
 
@@ -3084,6 +3084,23 @@ table.tableRounded {
    ========================================================================== */
 #header {
   z-index: 1000; }
+  #header .lang li, #header .lang li a {
+    width: 32px;
+    height: 32px; }
+  #header .lang li a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 1s ease; }
+    #header .lang li a img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 32px;
+      margin-top: calc(-1 * 32px/2);
+      margin-left: calc(-1 * 48px/2); }
+    #header .lang li a:focus, #header .lang li a:hover {
+      box-shadow: 0 0 10px #fff; }
   #header .logoHeader {
     position: relative;
     margin: 0 !important;
