@@ -15,9 +15,14 @@
             a{
                 @include borderStyle($bcWhite);
                 @include borderRadius(50%);
+                @include transition(1s);
                 
                 img{
                     @include centerAbsolute(48px, $flagHeight);
+                }
+                
+                &:focus, &:hover{
+                    box-shadow: 0 0 3px $white;
                 }
             }
             
