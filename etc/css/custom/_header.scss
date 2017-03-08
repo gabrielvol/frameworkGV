@@ -4,6 +4,27 @@
 #header{    
     z-index: $zIndexHeader;
     
+    .lang{
+        li{
+            &, a, img{
+                @include squareSize(30px);
+            }
+            
+            a{
+                img{
+                    @include borderRadius(50%);
+                    @include transition(1s);
+                    box-shadow: 0 0 10px $black;
+                }
+            }
+
+            &:focus, &:hover{
+                img{
+                    box-shadow: 0 0 5px $black;                    
+                }
+            }
+        }
+    }
     .logoHeader{
         position: relative;
         margin: $zero;
