@@ -1,7 +1,7 @@
 <ul class="lang pRel horizontalBT unstyledAT clearfix">
-    <li><a href="#"><img src="/clientes/frare/img/fl_es.svg" alt="<?php echo _("Navegar el sitio en idioma espanol"); ?>"></a></li>
-    <li><a href="#"><img src="/clientes/frare/img/fl_uk.svg" alt="<?php echo _("Switch to English version"); ?>"></a></li>
-    <li><a href="#"><img src="/clientes/frare/img/fl_br.svg" alt="<?php echo _("Navegar no site em Portugues"); ?>"></a></li>
+    <li><a href="/nuevo/"><img src="/clientes/frare/img/fl_es.svg" alt="<?php echo _("Navegar el sitio en idioma espanol"); ?>"></a></li>
+    <li><a href="/nuevo/"><img src="/clientes/frare/img/fl_uk.svg" alt="<?php echo _("Switch to English version"); ?>"></a></li>
+    <li><a href="/nuevo/"><img src="/clientes/frare/img/fl_br.svg" alt="<?php echo _("Navegar no site em Portugues"); ?>"></a></li>
 </ul>
 
 <?php
