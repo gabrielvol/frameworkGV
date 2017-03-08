@@ -5,26 +5,26 @@
     z-index: $zIndexHeader;
     
     .lang{
-        li{
-            &, a, img{
-                @include squareSize(30px);
+        $flagHeight: 32px;
+        
+        li{            
+            &, a{
+                @include squareSize($flagHeight);               
             }
             
             a{
+                @include borderStyle($bcWhite);
+                @include borderRadius(50%);
+                
                 img{
-                    @include borderRadius(50%);
-                    @include transition(1s);
-                    box-shadow: 0 0 10px $black;
+                    @include centerAbsolute(48px, $flagHeight);
                 }
             }
-
-            &:focus, &:hover{
-                img{
-                    box-shadow: 0 0 5px $black;                    
-                }
-            }
+            
+            & + li{}
         }
     }
+    
     .logoHeader{
         position: relative;
         margin: $zero;
