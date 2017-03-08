@@ -1967,9 +1967,7 @@ figure {
 @media (max-width: 767px) {
   .mainNav li a {
     color: #fff; }
-    .mainNav li a:focus, .mainNav li a:hover {
-      color: #fff; }
-  .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
+  .mainNav li.selected a {
     color: #fff; } }
 
 @media (min-width: 768px) {
@@ -1978,17 +1976,20 @@ figure {
     .mainNav li a {
       background: transparent;
       color: #fff; }
-      .mainNav li a:focus, .mainNav li a:hover {
-        background: transparent;
-        color: #fff; }
     .mainNav li.selected {
       background: transparent; }
       .mainNav li.selected a {
-        background: transparent; }
-        .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
-          color: #fff; }
-        .mainNav li.selected a:focus, .mainNav li.selected a:hover {
-          background: transparent; } }
+        background: transparent;
+        color: #fff; } }
+
+@media (min-width: 1024px) {
+  .mainNav li a:focus, .mainNav li a:hover {
+    background: transparent;
+    color: #fff; }
+  .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
+    color: #fff; }
+  .mainNav li.selected a:focus, .mainNav li.selected a:hover {
+    background: transparent; } }
 
 form, fieldset, legend, button, input, select, textarea {
   margin: 0;
@@ -3087,9 +3088,6 @@ table.tableRounded {
     position: relative;
     margin: 0 !important;
     z-index: 100; }
-  @media (max-width: 420px) {
-    #header.topper {
-      height: 50px; } }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
@@ -3182,10 +3180,6 @@ table.tableRounded {
         width: 700px;
         margin-right: auto !important;
         margin-left: auto !important; } }
-  @media (min-width: 1024px) {
-    .mainNav li, .mainNav li a {
-      height: 60px;
-      line-height: 60px; } }
 
 /* =============================================================================
    Footer
