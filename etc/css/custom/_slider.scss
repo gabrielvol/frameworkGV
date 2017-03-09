@@ -1,19 +1,6 @@
 /* =============================================================================
    Slick Slider Custom
    ========================================================================== */
-$sliderArrowHeightBT: 30px;
-$sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
-$sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT}/2);
-
-$sliderArrowHeight: 50px;
-$sliderArrowWidthHeight: 30px $sliderArrowHeight;
-$sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
-
-$sliderDotHeight: 15px;
-$sliderDotWidthHeight: $sliderDotHeight $sliderDotHeight;
-
-$pagSeparation: 10px;
-
 .slick{
     &, div{
         @include clearfix;
@@ -29,6 +16,14 @@ $pagSeparation: 10px;
 }
 
 // Slick next/prev
+$sliderArrowHeightBT: 30px;
+$sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
+$sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT}/2);
+
+$sliderArrowHeight: 50px;
+$sliderArrowWidthHeight: 30px $sliderArrowHeight;
+$sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
+
 .slickPrev{
     left: 0;
     
@@ -78,6 +73,9 @@ $pagSeparation: 10px;
 
 //Slick dots
 .slickDots{
+    $sliderDotHeight: 15px;
+    $sliderDotWidthHeight: $sliderDotHeight $sliderDotHeight;
+    $pagSeparation: 10px;
     $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
     
     list-style: none;
