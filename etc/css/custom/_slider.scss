@@ -102,7 +102,7 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
             @include squareSize(50px);
             @include sprites(-100px -50px);
 */
-            @include bgSvg(ic_sliderPag, $sliderDotWidthHeight);
+            @include bgSvg(ic_sliderPag, $sliderDotWidth);
             display: inline-block;
             border: $none;
             text-indent: -9999px;
