@@ -31,11 +31,11 @@
     @include posTB(0, 0);
 }
 .fullHeightPercent{height: 100%;}
-.unstyled, .horizontal{list-style: none}
+.unstyled, .horizontal, %unstyled, %horizonal{list-style: none}
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
 .horizontal.right li{float: $right}
-.horizontalCenter{  
+.horizontalCenter, %horizontalCenter{  
     list-style: none;
     margin-right: $auto;
     margin-left: $auto;
