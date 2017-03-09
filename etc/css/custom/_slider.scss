@@ -73,8 +73,9 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
 
 //Slick dots
 .slickDots{
-    $sliderDotHeight: 15px;
-    $sliderDotWidthHeight: $sliderDotHeight $sliderDotHeight;
+    $sliderDotWidth: 15px;
+    $sliderDotHeight: $sliderDotWidth;
+    $sliderDotWidthHeight: $sliderDotWidth $sliderDotHeight;
     $pagSeparation: 10px;
     $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
     
@@ -92,7 +93,7 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
         height: $sliderDotHeight;
         
         &, button{
-            @include squareSize($sliderDotHeight);  
+            @include squareSize($sliderDotWidth);  
             cursor: pointer;          
         }
         
