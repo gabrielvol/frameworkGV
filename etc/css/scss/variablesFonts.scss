@@ -27,6 +27,13 @@ $fontFamiliesListSans:
     map-get($fontFamiliesMapSans, trebuchetMS
 );
 $arial: map-get($fontFamiliesMapSans, arial);
+$sanFrancisco: map-get($fontFamiliesMapSans, sanFrancisco);
+$roboto: map-get($fontFamiliesMapSans, roboto);
+$segoeUI: map-get($fontFamiliesMapSans, segoeUI);   
+$verdana: map-get($fontFamiliesMapSans, verdana);
+$tahoma: map-get($fontFamiliesMapSans, tahoma);
+$lucidaGrande: map-get($fontFamiliesMapSans, lucidaGrande);
+$trebuchetMS: map-get($fontFamiliesMapSans, trebuchetMS);
 
 // Serif Stack
 $fontFamiliesMapSerif:(
