@@ -2,50 +2,66 @@
    Gettext xx_XX -- World Countries
    ========================================================================== */
 
+<?php echo _("Argentina"); ?>
 msgid "Argentina"
 msgstr ""
 
+<?php echo _("Brasil"); ?>
 msgid "Brasil"
 msgstr ""
 
+<?php echo _("China"); ?>
 msgid "China"
 msgstr ""
 
+<?php echo _("Emiratos &Aacute;rabes Unidos"); ?>
 msgid "Emiratos &Aacute;rabes Unidos"
 msgstr ""
 
+<?php echo _("Espana"); ?>
 msgid "Espana"
 msgstr ""
 
+<?php echo _("Estados Unidos"); ?>
 msgid "Estados Unidos"
 msgstr ""
 
+<?php echo _("Francia"); ?>
 msgid "Francia"
 msgstr ""
 
+<?php echo _("Ir&aacute;n"); ?>
 msgid "Ir&aacute;n"
 msgstr ""
 
-msgid "Italia"
+<?php echo _("Italia"
+msgid "Italia"); ?>
 msgstr ""
 
+<?php echo _("M&eacute;xico"); ?>
 msgid "M&eacute;xico"
 msgstr ""
 
+<?php echo _("Rumania"); ?>
 msgid "Rumania"
 msgstr ""
 
+<?php echo _("Rusia"); ?>
 msgid "Rusia"
 msgstr ""
 
+<?php echo _("Turqu&iacute;a"); ?>
 msgid "Turqu&iacute;a"
 msgstr ""
 
+<?php echo _("Ucrania"); ?>
 msgid "Ucrania"
 msgstr ""
 
+<?php echo _("Uruguay"); ?>
 msgid "Uruguay"
 msgstr ""
 
+<?php echo _("Venezuela"); ?>
 msgid "Venezuela"
 msgstr ""

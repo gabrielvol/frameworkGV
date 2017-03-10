@@ -2,50 +2,66 @@
    Gettext it_IT -- World Countries
    ========================================================================== */
 
+<?php echo _("Argentina"); ?>
 msgid "Argentina"
 msgstr "Argentina"
 
+<?php echo _("Brasil"); ?>
 msgid "Brasil"
 msgstr "Brasile"
 
+<?php echo _("China"); ?>
 msgid "China"
 msgstr "Cina"
 
+<?php echo _("Emiratos &Aacute;rabes Unidos"); ?>
 msgid "Emiratos &Aacute;rabes Unidos"
 msgstr "Emirati Arabi Uniti"
 
+<?php echo _("Espana"); ?>
 msgid "Espana"
 msgstr "Spagna"
 
+<?php echo _("Estados Unidos"); ?>
 msgid "Estados Unidos"
 msgstr "Stati Uniti"
 
+<?php echo _("Francia"); ?>
 msgid "Francia"
 msgstr "Francia"
 
+<?php echo _("Ir&aacute;n"); ?>
 msgid "Ir&aacute;n"
 msgstr "Iran"
 
-msgid "Italia"
+<?php echo _("Italia"
+msgid "Italia"); ?>
 msgstr "Italia"
 
+<?php echo _("M&eacute;xico"); ?>
 msgid "M&eacute;xico"
 msgstr "Messico"
 
+<?php echo _("Rumania"); ?>
 msgid "Rumania"
 msgstr "Romania"
 
+<?php echo _("Rusia"); ?>
 msgid "Rusia"
 msgstr "Russia"
 
+<?php echo _("Turqu&iacute;a"); ?>
 msgid "Turqu&iacute;a"
 msgstr "Turchia"
 
+<?php echo _("Ucrania"); ?>
 msgid "Ucrania"
 msgstr "Ucrania"
 
+<?php echo _("Uruguay"); ?>
 msgid "Uruguay"
 msgstr "Uruguay"
 
+<?php echo _("Venezuela"); ?>
 msgid "Venezuela"
 msgstr "Venezuela"
