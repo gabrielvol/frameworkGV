@@ -1,47 +1,71 @@
+/* =============================================================================
+   Gettext it_IT -- Contacto
+   ========================================================================== */
+
+<?php echo _("* Datos obligatorios"); ?>
 msgid "* Datos obligatorios"
 msgstr ""
 
+<?php echo _("Los campos marcados con * son obligatorios"); ?>
 msgid "Los campos marcados con * son obligatorios"
 msgstr ""
 
+<?php echo _("Por favor, ingrese su nombre"); ?>
 msgid "Por favor, ingrese su nombre"
 msgstr ""
 
+<?php echo _("Por favor, ingrese el nombre de su empresa"); ?>
 msgid "Por favor, ingrese el nombre de su empresa"
 msgstr ""
 
+<?php echo _("Por favor, ingrese una direcci&oacute;n de correo"); ?>
 msgid "Por favor, ingrese una direcci&oacute;n de correo"
 msgstr ""
 
+<?php echo _("Por favor, ingrese un n&uacute;mero de tel&eacute;fono"); ?>
 msgid "Por favor, ingrese un n&uacute;mero de tel&eacute;fono"
 msgstr ""
 
+<?php echo _("Por favor, indique la fecha deseada"); ?>
 msgid "Por favor, indique la fecha deseada"
 msgstr ""
 
+<?php echo _("Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad"); ?>
 msgid "Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad"
 msgstr ""
 
+<?php echo _("Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"); ?>
 msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"
 msgstr ""
 
+<?php echo _("Hubo un error al enviar el mensaje"); ?>
 msgid "Hubo un error al enviar el mensaje"
 msgstr ""
 
+<?php echo _("Intente nuevamente m&aacute;s tarde"); ?>
 msgid "Intente nuevamente m&aacute;s tarde"
 msgstr ""
 
+<?php echo _("Enviar"); ?>
 msgid "Enviar"
 msgstr ""
 
+<?php echo _("Nombre"); ?>
 msgid "Nombre"
 msgstr ""
 
+<?php echo _("Tel&eacute;fono"); ?>
 msgid "Tel&eacute;fono"
 msgstr ""
 
+<?php echo _("Correo electr&oacute;nico"); ?>
+msgid "Correo electr&oacute;nico"
+msgstr ""
+
+<?php echo _("E-mail"); ?>
 msgid "E-mail"
 msgstr ""
 
+<?php echo _("Comentarios"); ?>
 msgid "Comentarios"
 msgstr ""
