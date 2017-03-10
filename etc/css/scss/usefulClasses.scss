@@ -22,6 +22,7 @@
 .pRel{position: relative}
 .pAbs{position: absolute}
 .coverAll{
+    position: absolute;
     @include posTRBL(0, 0, 0, 0);
 }
 .autoWidth{width: auto}
