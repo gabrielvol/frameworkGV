@@ -857,6 +857,7 @@ label.black, label.black:focus, label.black:hover {
   position: absolute; }
 
 .coverAll {
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -2343,6 +2344,12 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 
 .bgError {
   background-color: #d43131; }
+
+.boxShadow {
+  box-shadow: 0 0 10px 0 #666; }
+
+.boxShadowInner {
+  box-shadow: inset 0 0 10px 0 #666; }
 
 .bgShadowT {
   background: transparent url("/nuevo/img/bg_shadowT.png") repeat-x center top; }
