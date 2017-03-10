@@ -26,6 +26,9 @@ body{background-color: $bodyBgColour}
     }
 }
 .bgError{background-color: $bgError}
+
+//Shadows
+.boxShadow{box-shadow: 0 0 0 0 $black}
 .bgShadowT{background: transparent url('/nuevo/img/bg_shadowT.png') repeat-x center top}
 .bgShadowB{background: transparent url('/nuevo/img/bg_shadowB.png') repeat-x center bottom}
 
