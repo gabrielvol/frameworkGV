@@ -2,23 +2,30 @@
    Gettext it_IT -- Miscelaneous
    ========================================================================== */
 
+<?php echo _("Cerrar"); ?>
 msgid "Cerrar"
 msgstr "Chiudere"
 
+<?php echo _("Regresar"); ?>
 msgid "Regresar"
 msgstr ""
 
+<?php echo _("Gracias"); ?>
 msgid "Gracias"
 msgstr ""
 
+<?php echo _("Misi&oacute;n"); ?>
 msgid "Ver M&aacute;s"
 msgstr ""
 
+<?php echo _("Misi&oacute;n"); ?>
 msgid "Misi&oacute;n"
 msgstr "Missione"
 
+<?php echo _("Valores"); ?>
 msgid "Visi&oacute;n"
 msgstr "Visione"
 
+<?php echo _("Valores"); ?>
 msgid "Valores"
 msgstr "Valori"

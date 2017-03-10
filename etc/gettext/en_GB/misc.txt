@@ -2,23 +2,30 @@
    Gettext en_GB -- Miscelaneous
    ========================================================================== */
 
+<?php echo _("Cerrar"); ?>
 msgid "Cerrar"
 msgstr "Close"
 
+<?php echo _("Regresar"); ?>
 msgid "Regresar"
 msgstr "Back"
 
+<?php echo _("Gracias"); ?>
 msgid "Gracias"
 msgstr "Thank you"
 
+<?php echo _("Misi&oacute;n"); ?>
 msgid "Ver M&aacute;s"
 msgstr "Read More"
 
+<?php echo _("Misi&oacute;n"); ?>
 msgid "Misi&oacute;n"
 msgstr "Mission"
 
+<?php echo _("Visi&oacute;n"); ?>
 msgid "Visi&oacute;n"
 msgstr "Vision"
 
+<?php echo _("Valores"); ?>
 msgid "Valores"
 msgstr "Values"

@@ -2,23 +2,30 @@
    Gettext pt_BR -- Miscelaneous
    ========================================================================== */
 
+<?php echo _("Cerrar"); ?>
 msgid "Cerrar"
 msgstr "Cerrar"
 
+<?php echo _("Regresar"); ?>
 msgid "Regresar"
 msgstr "Regresar"
 
+<?php echo _("Gracias"); ?>
 msgid "Gracias"
 msgstr "Gracias"
 
+<?php echo _("Misi&oacute;n"); ?>
 msgid "Ver m&aacute;s"
 msgstr "Ver mais"
 
+<?php echo _("Misi&oacute;n"); ?>
 msgid "Misi&oacute;n"
 msgstr ""
 
+<?php echo _("Valores"); ?>
 msgid "Visi&oacute;n"
 msgstr ""
 
+<?php echo _("Valores"); ?>
 msgid "Valores"
 msgstr ""
