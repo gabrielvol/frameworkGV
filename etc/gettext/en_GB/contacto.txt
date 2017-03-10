@@ -46,10 +46,6 @@ msgstr "There was an error delivering your message"
 msgid "Intente nuevamente m&aacute;s tarde"
 msgstr "Please try again later"
 
-<?php echo _("Enviar"); ?>
-msgid "Enviar"
-msgstr "Send"
-
 <?php echo _("Nombre"); ?>
 msgid "Nombre"
 msgstr "Name"
@@ -69,3 +65,11 @@ msgstr "E-mail"
 <?php echo _("Comentarios"); ?>
 msgid "Comentarios"
 msgstr "Comments"
+
+<?php echo _("Enviar"); ?>
+msgid "Enviar"
+msgstr "Send"
+
+<?php echo _("Gracias"); ?>
+msgid "Gracias"
+msgstr "Thank you"
