@@ -5,6 +5,10 @@
 <?php echo _("
 "); ?>
 
+<p><?php echo _(""); ?></p>
+<p><?php echo _("
+"); ?></p>
+
 # href
 href="/link.php<?php if($idioma == 'pt_BR'){ echo '?l=pt_BR'; } else if($idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
 
