@@ -52,10 +52,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 .borderBox{box-sizing: border-box}
 
 //Flexbox
-.displayFlex,
-.flexJustifyEnd,
-.horizontalFlex,
-.horizontalCenterFlex{
+.displayFlex, .horizontalFlex, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,15 +60,25 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     align-content: flex-start;
     align-items: flex-start;
 }
+.flexColumn{flex-direction: column}
+.flexNoWrap{flex-wrap: nowrap}
 .flexJustifyEnd{justify-content: flex-end}
 .flexJustifyCenter{justify-content: center}
 .flexJustifyBetween{justify-content: space-between}
 .flexJustifyAround{justify-content: space-around}
-.flexNoWrap{flex-wrap: nowrap}
+.flexAlignContentEnd{align-content: flex-end}
+.flexAlignContentCenter{align-content: center}
+.flexAlignContentBetween{align-content: space-between}
+.flexAlignContentAround{align-content: space-around}
+.flexAlignContentStretch{align-content: stretch}
+.flexAlignItemsEnd{align-items: flex-end}
+.flexAlignItemsCenter{align-items: center}
+.flexAlignItemsBaseline{align-items: baseline}
+.flexAlignItemsStretch{align-items: stretch}
 
 //Lists and floats
 .unstyled, .horizontal, .horizontalFlex,
-%unstyled, %horizonal, %horizontalFlex{list-style: none}
+%unstyled, %horizonal{list-style: none}
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
 .horizontal.right li{float: $right}
@@ -87,7 +94,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
         }
     }
 }
-.horizontalCenterFlex, %horizontalCenterFlex{
+.horizontalCenterFlex{
     justify-content: center;
     flex-wrap: nowrap;
 }
