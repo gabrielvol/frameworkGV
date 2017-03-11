@@ -64,7 +64,10 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 .flexNoWrap{flex-wrap: nowrap}
 .flexJustifyEnd{justify-content: flex-end}
 .flexJustifyCenter{justify-content: center}
-.flexJustifyBetween{justify-content: space-between}
+.flexJustifyBetween{
+    justify-content: space-between;
+    > *{flex-grow: 1}
+}
 .flexJustifyAround{justify-content: space-around}
 .flexAlignContentEnd{align-content: flex-end}
 .flexAlignContentCenter{align-content: center}
