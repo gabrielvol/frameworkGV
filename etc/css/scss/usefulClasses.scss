@@ -27,30 +27,11 @@
 .fullHeight{
     @include posTB(0, 0);
 }
-.fullHeightPercent{height: 100%;}
+.fullHeightPercent{height: 100%}
 .coverAll{
     position: absolute;
     @include posTRBL(0, 0, 0, 0);
 }
-
-//Lists and floats
-.unstyled, .horizontal, %unstyled, %horizonal{list-style: none}
-.floatLeft, .horizontal li{float: $left}
-.floatRight, .horizontal li.floatRight,
-.horizontal.right li{float: $right}
-.horizontalCenter, %horizontalCenter{  
-    list-style: none;
-    margin-right: $auto;
-    margin-left: $auto;
-    text-align: center;
-    li{
-        display: inline;
-        > *{
-            display: inline-block;            
-        }
-    }
-}
-.floatNone, .centerCol{float: $none}
 
 //Display
 article, details, figcaption, figure, hgroup, main, menu, nav, summary,
@@ -72,7 +53,8 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 
 //Flexbox
 .displayFlex,
-.displayFlexR{
+.displayFlexEnd,
+.UlDisplayFlex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -80,9 +62,29 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     align-content: flex-start;
     align-items: flex-start;
 }
-.displayFlexR{
-    justify-content: flex-end;    
+.displayFlexEnd{
+    justify-content: flex-end;   
 }
+
+//Lists and floats
+.unstyled, .horizontal, .UlDisplayFlex,
+%unstyled, %horizonal{list-style: none}
+.floatLeft, .horizontal li{float: $left}
+.floatRight, .horizontal li.floatRight,
+.horizontal.right li{float: $right}
+.horizontalCenter, %horizontalCenter{  
+    list-style: none;
+    margin-right: $auto;
+    margin-left: $auto;
+    text-align: center;
+    li{
+        display: inline;
+        > *{
+            display: inline-block;            
+        }
+    }
+}
+.floatNone, .centerCol{float: $none}
 
 //Masks
 .mask{
