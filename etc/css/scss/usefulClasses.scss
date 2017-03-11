@@ -53,8 +53,9 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 
 //Flexbox
 .displayFlex,
-.displayFlexEnd,
-.UlDisplayFlex{
+.flexJustifyEnd,
+.horizontalFlex,
+.horizontalCenterFlex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,17 +63,19 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     align-content: flex-start;
     align-items: flex-start;
 }
-.displayFlexEnd{
-    justify-content: flex-end;   
-}
+.flexJustifyEnd{justify-content: flex-end}
+.flexJustifyCenter{justify-content: center}
+.flexJustifyBetween{justify-content: space-between}
+.flexJustifyAround{justify-content: space-around}
+.flexNoWrap{flex-wrap: nowrap}
 
 //Lists and floats
-.unstyled, .horizontal, .UlDisplayFlex,
-%unstyled, %horizonal{list-style: none}
+.unstyled, .horizontal, .horizontalFlex,
+%unstyled, %horizonal, %horizontalFlex{list-style: none}
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
 .horizontal.right li{float: $right}
-.horizontalCenter, %horizontalCenter{  
+.horizontalCenter, %horizontalCenter{
     list-style: none;
     margin-right: $auto;
     margin-left: $auto;
@@ -83,6 +86,10 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
             display: inline-block;            
         }
     }
+}
+.horizontalCenterFlex, %horizontalCenterFlex{
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 .floatNone, .centerCol{float: $none}
 
