@@ -71,13 +71,17 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 .borderBox{box-sizing: border-box}
 
 //Flexbox
-.displayFlex{
+.displayFlex,
+.displayFlexR{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+}
+.displayFlexR{
+    justify-content: flex-end;    
 }
 
 //Masks
