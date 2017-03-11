@@ -81,7 +81,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 
 //Lists and floats
 .unstyled, .horizontal, .horizontalFlex,
-%unstyled, %horizonal{list-style: none}
+%unstyled, %horizonal{list-style: $none}
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
 .horizontal.right li{float: $right}

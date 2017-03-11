@@ -3,20 +3,58 @@
    ========================================================================== */
 // Mobile Styles
 @include mobileOnly{
-    //Spacing Helpers Mobile Only
-    @include spacingHelpersClassesGeneratorMO;
+    //Spacing Helpers
+    @include spacingHelpersClassesGeneratorATL;
     .mraMO,.mhaMO,.centerMO{margin-right: $auto}
     .mlaMO,.mhaMO,.centerMO{margin-left: $auto}
     
-    //Useful Classes
-    .banMO{border: $none}
+    //Positioning
     .pRelMO{position: relative}
     .pAbsMO{position: absolute}
+    .clearMO{clear: both}
+    
+    //Sizing
+    .fullWidthMO{width: $hundred}
+    .autoWidthMO{width: $auto}
+    .autoHeightMO{height: $auto}
+    
+    //Display
     .displayInlineMO{display: $inline}
     .displayBlockMO, .showMO{display: $block}
     .displayNoneMO, .hideMO{display: $none}
-    .noBackgroundMO{background: $none}
-    .unstyledMO, .horizontalMO{list-style: $none}
+    .contentBoxMO{box-sizing: content-box}
+    .borderBoxMO{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexMO, .horizontalFlexMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnMO{flex-direction: column}
+    .flexNoWrapMO{flex-wrap: nowrap}
+    .flexJustifyEndMO{justify-content: flex-end}
+    .flexJustifyCenterMO{justify-content: center}
+    .flexJustifyBetweenMO{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundMO{justify-content: space-around}
+    .flexAlignContentEndMO{align-content: flex-end}
+    .flexAlignContentCenterMO{align-content: center}
+    .flexAlignContentBetweenMO{align-content: space-between}
+    .flexAlignContentAroundMO{align-content: space-around}
+    .flexAlignContentStretchMO{align-content: stretch}
+    .flexAlignItemsEndMO{align-items: flex-end}
+    .flexAlignItemsCenterMO{align-items: center}
+    .flexAlignItemsBaselineMO{align-items: baseline}
+    .flexAlignItemsStretchMO{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledMO, .horizontalMO, .horizontalFlexMO{list-style: $none}
     .floatLeftMO, .horizontalMO li{float: $left}
     .floatRightMO, .horizontalMO li.floatRight,
     .horizontalMO.right li{float: $right}
@@ -32,22 +70,19 @@
             }
         }
     }
-    .floatNoneMO, .unstyledMO li{float: $none}
+    .floatNoneMO, .unstyledMO li{float: $none}   
+    
+    //Text
     .indentedTextMO{text-indent: -9999px}
-    .clearMO{clear: both}
-    .contentBoxMO{box-sizing: content-box}
-    .borderBoxMO{box-sizing: border-box}
-
-    .alignCenterMO{text-align: center}
-    .alignRightMO{text-align: right}
     .alignLeftMO{text-align: left}
+    .alignRightMO{text-align: right}
+    .alignCenterMO{text-align: center}
     .alignJustifyMO{text-align: justify}
     .upperCaseMO{text-transform: uppercase}
-
-    .fullWidthMO{width: $hundred}
-    .autoWidthMO{width: $auto}
-    .autoHeightMO{height: $auto}
     
+    //Backgrounds, border and images    
+    .banMO{border: $none}    
+    .noBackgroundMO{background: $none}    
     .noBackgroundMO, .bgNoneMO{
         &, &:focus, &:hover{
             background: $none;
@@ -55,32 +90,64 @@
     }
     .bgTransparentMO{background-color: $transparent}
     .bgNoImageMO{background-image: $none}
-    
-    .wrapMO{
-        width: 300px!important;
-        margin-right: $auto;
-        margin-left: $auto;
-    }
 }
 
 /* =============================================================================
    After Mobile Landscape Styles
    ========================================================================== */
 @include afterMobileLandscape{
-    //Spacing Helpers After Mobile Landscape
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorAML;
     .mraAML,.mhaAML,.centerAML{margin-right: $auto}
     .mlaAML,.mhaAML,.centerAML{margin-left: $auto}
     
-    //Useful Classes
-    .banAML{border: $none}
+    //Positioning
     .pRelAML{position: relative}
     .pAbsAML{position: absolute}
+    .clearAML{clear: both}
+    
+    //Sizing
+    .fullWidthAML{width: $hundred}
+    .autoWidthAML{width: $auto}
+    .autoHeightAML{height: $auto}
+    
+    //Display
     .displayInlineAML{display: $inline}
     .displayBlockAML, .showAML{display: $block}
     .displayNoneAML, .hideAML{display: $none}
-    .noBackgroundAML{background: $none}
-    .unstyledAML, .horizontalAML{list-style: $none}
+    .contentBoxAML{box-sizing: content-box}
+    .borderBoxAML{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexAML, .horizontalFlexAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnAML{flex-direction: column}
+    .flexNoWrapAML{flex-wrap: nowrap}
+    .flexJustifyEndAML{justify-content: flex-end}
+    .flexJustifyCenterAML{justify-content: center}
+    .flexJustifyBetweenAML{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundAML{justify-content: space-around}
+    .flexAlignContentEndAML{align-content: flex-end}
+    .flexAlignContentCenterAML{align-content: center}
+    .flexAlignContentBetweenAML{align-content: space-between}
+    .flexAlignContentAroundAML{align-content: space-around}
+    .flexAlignContentStretchAML{align-content: stretch}
+    .flexAlignItemsEndAML{align-items: flex-end}
+    .flexAlignItemsCenterAML{align-items: center}
+    .flexAlignItemsBaselineAML{align-items: baseline}
+    .flexAlignItemsStretchAML{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledAML, .horizontalAML, .horizontalFlexAML{list-style: $none}
     .floatLeftAML, .horizontalAML li{float: $left}
     .floatRightAML, .horizontalAML li.floatRight,
     .horizontalAML.right li{float: $right}
@@ -96,22 +163,19 @@
             }
         }
     }
-    .floatNoneAML, .unstyledAML li{float: $none}
+    .floatNoneAML, .unstyledAML li{float: $none}   
+    
+    //Text
     .indentedTextAML{text-indent: -9999px}
-    .clearAML{clear: both}
-    .contentBoxAML{box-sizing: content-box}
-    .borderBoxAML{box-sizing: border-box}
-
-    .alignCenterAML{text-align: center}
-    .alignRightAML{text-align: right}
     .alignLeftAML{text-align: left}
+    .alignRightAML{text-align: right}
+    .alignCenterAML{text-align: center}
     .alignJustifyAML{text-align: justify}
     .upperCaseAML{text-transform: uppercase}
-
-    .fullWidthAML{width: $hundred}
-    .autoWidthAML{width: $auto}
-    .autoHeightAML{height: $auto}
     
+    //Backgrounds, border and images    
+    .banAML{border: $none}    
+    .noBackgroundAML{background: $none}    
     .noBackgroundAML, .bgNoneAML{
         &, &:focus, &:hover{
             background: $none;
@@ -125,20 +189,58 @@
    Mobile Landscape Only Styles
    ========================================================================== */
 @include mobileLandscapeOnly{
-    //Spacing Helpers Mobile Landscape Only
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorMLO;
     .mraMLO,.mhaMLO,.centerMLO{margin-right: $auto}
     .mlaMLO,.mhaMLO,.centerMLO{margin-left: $auto}
     
-    //Useful Classes
-    .banMLO{border: $none}
+    //Positioning
     .pRelMLO{position: relative}
     .pAbsMLO{position: absolute}
+    .clearMLO{clear: both}
+    
+    //Sizing
+    .fullWidthMLO{width: $hundred}
+    .autoWidthMLO{width: $auto}
+    .autoHeightMLO{height: $auto}
+    
+    //Display
     .displayInlineMLO{display: $inline}
     .displayBlockMLO, .showMLO{display: $block}
     .displayNoneMLO, .hideMLO{display: $none}
-    .noBackgroundMLO{background: $none}
-    .unstyledMLO, .horizontalMLO{list-style: $none}
+    .contentBoxMLO{box-sizing: content-box}
+    .borderBoxMLO{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexMLO, .horizontalFlexMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnMLO{flex-direction: column}
+    .flexNoWrapMLO{flex-wrap: nowrap}
+    .flexJustifyEndMLO{justify-content: flex-end}
+    .flexJustifyCenterMLO{justify-content: center}
+    .flexJustifyBetweenMLO{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundMLO{justify-content: space-around}
+    .flexAlignContentEndMLO{align-content: flex-end}
+    .flexAlignContentCenterMLO{align-content: center}
+    .flexAlignContentBetweenMLO{align-content: space-between}
+    .flexAlignContentAroundMLO{align-content: space-around}
+    .flexAlignContentStretchMLO{align-content: stretch}
+    .flexAlignItemsEndMLO{align-items: flex-end}
+    .flexAlignItemsCenterMLO{align-items: center}
+    .flexAlignItemsBaselineMLO{align-items: baseline}
+    .flexAlignItemsStretchMLO{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledMLO, .horizontalMLO, .horizontalFlexMLO{list-style: $none}
     .floatLeftMLO, .horizontalMLO li{float: $left}
     .floatRightMLO, .horizontalMLO li.floatRight,
     .horizontalMLO.right li{float: $right}
@@ -154,22 +256,19 @@
             }
         }
     }
-    .floatNoneMLO, .unstyledMLO li{float: $none}
+    .floatNoneMLO, .unstyledMLO li{float: $none}   
+    
+    //Text
     .indentedTextMLO{text-indent: -9999px}
-    .clearMLO{clear: both}
-    .contentBoxMLO{box-sizing: content-box}
-    .borderBoxMLO{box-sizing: border-box}
-
-    .alignCenterMLO{text-align: center}
-    .alignRightMLO{text-align: right}
     .alignLeftMLO{text-align: left}
+    .alignRightMLO{text-align: right}
+    .alignCenterMLO{text-align: center}
     .alignJustifyMLO{text-align: justify}
     .upperCaseMLO{text-transform: uppercase}
-
-    .fullWidthMLO{width: $hundred}
-    .autoWidthMLO{width: $auto}
-    .autoHeightMLO{height: $auto}
     
+    //Backgrounds, border and images    
+    .banMLO{border: $none}    
+    .noBackgroundMLO{background: $none}    
     .noBackgroundMLO, .bgNoneMLO{
         &, &:focus, &:hover{
             background: $none;
@@ -183,20 +282,58 @@
    Before Tablet Styles
    ========================================================================== */
 @include beforeTablet{
-    //Spacing Helpers Before Tablet
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorBT;
     .mraBT,.mhaBT,.centerBT{margin-right: $auto}
     .mlaBT,.mhaBT,.centerBT{margin-left: $auto}
     
-    //Useful Classes
-    .banBT{border: $none}
+    //Positioning
     .pRelBT{position: relative}
     .pAbsBT{position: absolute}
+    .clearBT{clear: both}
+    
+    //Sizing
+    .fullWidthBT{width: $hundred}
+    .autoWidthBT{width: $auto}
+    .autoHeightBT{height: $auto}
+    
+    //Display
     .displayInlineBT{display: $inline}
     .displayBlockBT, .showBT{display: $block}
     .displayNoneBT, .hideBT{display: $none}
-    .noBackgroundBT{background: $none}
-    .unstyledBT, .horizontalBT{list-style: $none}
+    .contentBoxBT{box-sizing: content-box}
+    .borderBoxBT{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexBT, .horizontalFlexBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnBT{flex-direction: column}
+    .flexNoWrapBT{flex-wrap: nowrap}
+    .flexJustifyEndBT{justify-content: flex-end}
+    .flexJustifyCenterBT{justify-content: center}
+    .flexJustifyBetweenBT{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundBT{justify-content: space-around}
+    .flexAlignContentEndBT{align-content: flex-end}
+    .flexAlignContentCenterBT{align-content: center}
+    .flexAlignContentBetweenBT{align-content: space-between}
+    .flexAlignContentAroundBT{align-content: space-around}
+    .flexAlignContentStretchBT{align-content: stretch}
+    .flexAlignItemsEndBT{align-items: flex-end}
+    .flexAlignItemsCenterBT{align-items: center}
+    .flexAlignItemsBaselineBT{align-items: baseline}
+    .flexAlignItemsStretchBT{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledBT, .horizontalBT, .horizontalFlexBT{list-style: $none}
     .floatLeftBT, .horizontalBT li{float: $left}
     .floatRightBT, .horizontalBT li.floatRight,
     .horizontalBT.right li{float: $right}
@@ -212,22 +349,19 @@
             }
         }
     }
-    .floatNoneBT, .unstyledBT li{float: $none}
+    .floatNoneBT, .unstyledBT li{float: $none}   
+    
+    //Text
     .indentedTextBT{text-indent: -9999px}
-    .clearBT{clear: both}
-    .contentBoxBT{box-sizing: content-box}
-    .borderBoxBT{box-sizing: border-box}
-
-    .alignCenterBT{text-align: center}
-    .alignRightBT{text-align: right}
     .alignLeftBT{text-align: left}
+    .alignRightBT{text-align: right}
+    .alignCenterBT{text-align: center}
     .alignJustifyBT{text-align: justify}
     .upperCaseBT{text-transform: uppercase}
-
-    .fullWidthBT{width: $hundred}
-    .autoWidthBT{width: $auto}
-    .autoHeightBT{height: $auto}
     
+    //Backgrounds, border and images    
+    .banBT{border: $none}    
+    .noBackgroundBT{background: $none}    
     .noBackgroundBT, .bgNoneBT{
         &, &:focus, &:hover{
             background: $none;
@@ -241,20 +375,58 @@
    Before Tablet Landscape Styles
    ========================================================================== */
 @include beforeTabletLandscape{    
-    //Spacing Helpers Before Tablet Lanscape
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorBTL;
-    .mraBT,.mhaBTL,.centerBTL{margin-right: $auto}
+    .mraBTL,.mhaBTL,.centerBTL{margin-right: $auto}
     .mlaBTL,.mhaBTL,.centerBTL{margin-left: $auto}
     
-    //Useful Classes
-    .banBTL{border: $none}
+    //Positioning
     .pRelBTL{position: relative}
     .pAbsBTL{position: absolute}
+    .clearBTL{clear: both}
+    
+    //Sizing
+    .fullWidthBTL{width: $hundred}
+    .autoWidthBTL{width: $auto}
+    .autoHeightBTL{height: $auto}
+    
+    //Display
     .displayInlineBTL{display: $inline}
     .displayBlockBTL, .showBTL{display: $block}
     .displayNoneBTL, .hideBTL{display: $none}
-    .noBackgroundBTL{background: $none}
-    .unstyledBTL, .horizontalBTL{list-style: $none}
+    .contentBoxBTL{box-sizing: content-box}
+    .borderBoxBTL{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexBTL, .horizontalFlexBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnBTL{flex-direction: column}
+    .flexNoWrapBTL{flex-wrap: nowrap}
+    .flexJustifyEndBTL{justify-content: flex-end}
+    .flexJustifyCenterBTL{justify-content: center}
+    .flexJustifyBetweenBTL{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundBTL{justify-content: space-around}
+    .flexAlignContentEndBTL{align-content: flex-end}
+    .flexAlignContentCenterBTL{align-content: center}
+    .flexAlignContentBetweenBTL{align-content: space-between}
+    .flexAlignContentAroundBTL{align-content: space-around}
+    .flexAlignContentStretchBTL{align-content: stretch}
+    .flexAlignItemsEndBTL{align-items: flex-end}
+    .flexAlignItemsCenterBTL{align-items: center}
+    .flexAlignItemsBaselineBTL{align-items: baseline}
+    .flexAlignItemsStretchBTL{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledBTL, .horizontalBTL, .horizontalFlexBTL{list-style: $none}
     .floatLeftBTL, .horizontalBTL li{float: $left}
     .floatRightBTL, .horizontalBTL li.floatRight,
     .horizontalBTL.right li{float: $right}
@@ -270,22 +442,19 @@
             }
         }
     }
-    .floatNoneBTL, .unstyledBTL li{float: $none}
+    .floatNoneBTL, .unstyledBTL li{float: $none}   
+    
+    //Text
     .indentedTextBTL{text-indent: -9999px}
-    .clearBTL{clear: both}
-    .contentBoxBTL{box-sizing: content-box}
-    .borderBoxBTL{box-sizing: border-box}
-
-    .alignCenterBTL{text-align: center}
-    .alignRightBTL{text-align: right}
     .alignLeftBTL{text-align: left}
+    .alignRightBTL{text-align: right}
+    .alignCenterBTL{text-align: center}
     .alignJustifyBTL{text-align: justify}
     .upperCaseBTL{text-transform: uppercase}
-
-    .fullWidthBTL{width: $hundred}
-    .autoWidthBTL{width: $auto}
-    .autoHeightBTL{height: $auto}
     
+    //Backgrounds, border and images    
+    .banBTL{border: $none}    
+    .noBackgroundBTL{background: $none}    
     .noBackgroundBTL, .bgNoneBTL{
         &, &:focus, &:hover{
             background: $none;
@@ -299,20 +468,58 @@
    Tablet Only Styles
    ========================================================================== */
 @include tabletOnly{
-    //Spacing Helpers Tablet Only
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorTO;
     .mraTO,.mhaTO,.centerTO{margin-right: $auto}
     .mlaTO,.mhaTO,.centerTO{margin-left: $auto}
     
-    //Useful Classes
-    .banTO{border: $none}
+    //Positioning
     .pRelTO{position: relative}
     .pAbsTO{position: absolute}
+    .clearTO{clear: both}
+    
+    //Sizing
+    .fullWidthTO{width: $hundred}
+    .autoWidthTO{width: $auto}
+    .autoHeightTO{height: $auto}
+    
+    //Display
     .displayInlineTO{display: $inline}
     .displayBlockTO, .showTO{display: $block}
     .displayNoneTO, .hideTO{display: $none}
-    .noBackgroundTO{background: $none}
-    .unstyledTO, .horizontalTO{list-style: $none}
+    .contentBoxTO{box-sizing: content-box}
+    .borderBoxTO{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexTO, .horizontalFlexTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnTO{flex-direction: column}
+    .flexNoWrapTO{flex-wrap: nowrap}
+    .flexJustifyEndTO{justify-content: flex-end}
+    .flexJustifyCenterTO{justify-content: center}
+    .flexJustifyBetweenTO{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundTO{justify-content: space-around}
+    .flexAlignContentEndTO{align-content: flex-end}
+    .flexAlignContentCenterTO{align-content: center}
+    .flexAlignContentBetweenTO{align-content: space-between}
+    .flexAlignContentAroundTO{align-content: space-around}
+    .flexAlignContentStretchTO{align-content: stretch}
+    .flexAlignItemsEndTO{align-items: flex-end}
+    .flexAlignItemsCenterTO{align-items: center}
+    .flexAlignItemsBaselineTO{align-items: baseline}
+    .flexAlignItemsStretchTO{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledTO, .horizontalTO, .horizontalFlexTO{list-style: $none}
     .floatLeftTO, .horizontalTO li{float: $left}
     .floatRightTO, .horizontalTO li.floatRight,
     .horizontalTO.right li{float: $right}
@@ -328,22 +535,19 @@
             }
         }
     }
-    .floatNoneTO, .unstyledTO li{float: $none}
+    .floatNoneTO, .unstyledTO li{float: $none}   
+    
+    //Text
     .indentedTextTO{text-indent: -9999px}
-    .clearTO{clear: both}
-    .contentBoxTO{box-sizing: content-box}
-    .borderBoxTO{box-sizing: border-box}
-
-    .alignCenterTO{text-align: center}
-    .alignRightTO{text-align: right}
     .alignLeftTO{text-align: left}
+    .alignRightTO{text-align: right}
+    .alignCenterTO{text-align: center}
     .alignJustifyTO{text-align: justify}
     .upperCaseTO{text-transform: uppercase}
-
-    .fullWidthTO{width: $hundred}
-    .autoWidthTO{width: $auto}
-    .autoHeightTO{height: $auto}
     
+    //Backgrounds, border and images    
+    .banTO{border: $none}    
+    .noBackgroundTO{background: $none}    
     .noBackgroundTO, .bgNoneTO{
         &, &:focus, &:hover{
             background: $none;
@@ -351,32 +555,64 @@
     }
     .bgTransparentTO{background-color: $transparent}
     .bgNoImageTO{background-image: $none}
-    
-    .wrapTO{
-        width: 750px!important;
-        margin-right: $auto;
-        margin-left: $auto;
-    }
 }
 
 /* =============================================================================
    After Tablet Styles
    ========================================================================== */
 @include afterTablet{
-    //Spacing Helpers After Tablet
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorAT;
     .mraAT,.mhaAT,.centerAT{margin-right: $auto}
     .mlaAT,.mhaAT,.centerAT{margin-left: $auto}
     
-    //Useful Classes
-    .banAT{border: $none}
+    //Positioning
     .pRelAT{position: relative}
     .pAbsAT{position: absolute}
+    .clearAT{clear: both}
+    
+    //Sizing
+    .fullWidthAT{width: $hundred}
+    .autoWidthAT{width: $auto}
+    .autoHeightAT{height: $auto}
+    
+    //Display
     .displayInlineAT{display: $inline}
     .displayBlockAT, .showAT{display: $block}
     .displayNoneAT, .hideAT{display: $none}
-    .noBackgroundAT{background: $none}
-    .unstyledAT, .horizontalAT{list-style: $none}
+    .contentBoxAT{box-sizing: content-box}
+    .borderBoxAT{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexAT, .horizontalFlexAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnAT{flex-direction: column}
+    .flexNoWrapAT{flex-wrap: nowrap}
+    .flexJustifyEndAT{justify-content: flex-end}
+    .flexJustifyCenterAT{justify-content: center}
+    .flexJustifyBetweenAT{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundAT{justify-content: space-around}
+    .flexAlignContentEndAT{align-content: flex-end}
+    .flexAlignContentCenterAT{align-content: center}
+    .flexAlignContentBetweenAT{align-content: space-between}
+    .flexAlignContentAroundAT{align-content: space-around}
+    .flexAlignContentStretchAT{align-content: stretch}
+    .flexAlignItemsEndAT{align-items: flex-end}
+    .flexAlignItemsCenterAT{align-items: center}
+    .flexAlignItemsBaselineAT{align-items: baseline}
+    .flexAlignItemsStretchAT{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledAT, .horizontalAT, .horizontalFlexAT{list-style: $none}
     .floatLeftAT, .horizontalAT li{float: $left}
     .floatRightAT, .horizontalAT li.floatRight,
     .horizontalAT.right li{float: $right}
@@ -392,22 +628,19 @@
             }
         }
     }
-    .floatNoneAT, .unstyledAT li{float: $none}
+    .floatNoneAT, .unstyledAT li{float: $none}   
+    
+    //Text
     .indentedTextAT{text-indent: -9999px}
-    .clearAT{clear: both}
-    .contentBoxAT{box-sizing: content-box}
-    .borderBoxAT{box-sizing: border-box}
-
-    .alignCenterAT{text-align: center}
-    .alignRightAT{text-align: right}
     .alignLeftAT{text-align: left}
+    .alignRightAT{text-align: right}
+    .alignCenterAT{text-align: center}
     .alignJustifyAT{text-align: justify}
     .upperCaseAT{text-transform: uppercase}
-
-    .fullWidthAT{width: $hundred}
-    .autoWidthAT{width: $auto}
-    .autoHeightAT{height: $auto}
     
+    //Backgrounds, border and images    
+    .banAT{border: $none}    
+    .noBackgroundAT{background: $none}    
     .noBackgroundAT, .bgNoneAT{
         &, &:focus, &:hover{
             background: $none;
@@ -421,20 +654,58 @@
    After Tablet Landscape Styles
    ========================================================================== */
 @include afterTabletLandscape{
-    //Spacing Helpers After Tablet Landscape
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorATL;
     .mraATL,.mhaATL,.centerATL{margin-right: $auto}
     .mlaATL,.mhaATL,.centerATL{margin-left: $auto}
     
-    //Useful Classes
-    .banATL{border: $none}
+    //Positioning
     .pRelATL{position: relative}
     .pAbsATL{position: absolute}
+    .clearATL{clear: both}
+    
+    //Sizing
+    .fullWidthATL{width: $hundred}
+    .autoWidthATL{width: $auto}
+    .autoHeightATL{height: $auto}
+    
+    //Display
     .displayInlineATL{display: $inline}
     .displayBlockATL, .showATL{display: $block}
     .displayNoneATL, .hideATL{display: $none}
-    .noBackgroundATL{background: $none}
-    .unstyledATL, .horizontalATL{list-style: $none}
+    .contentBoxATL{box-sizing: content-box}
+    .borderBoxATL{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexATL, .horizontalFlexATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnATL{flex-direction: column}
+    .flexNoWrapATL{flex-wrap: nowrap}
+    .flexJustifyEndATL{justify-content: flex-end}
+    .flexJustifyCenterATL{justify-content: center}
+    .flexJustifyBetweenATL{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundATL{justify-content: space-around}
+    .flexAlignContentEndATL{align-content: flex-end}
+    .flexAlignContentCenterATL{align-content: center}
+    .flexAlignContentBetweenATL{align-content: space-between}
+    .flexAlignContentAroundATL{align-content: space-around}
+    .flexAlignContentStretchATL{align-content: stretch}
+    .flexAlignItemsEndATL{align-items: flex-end}
+    .flexAlignItemsCenterATL{align-items: center}
+    .flexAlignItemsBaselineATL{align-items: baseline}
+    .flexAlignItemsStretchATL{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledATL, .horizontalATL, .horizontalFlexATL{list-style: $none}
     .floatLeftATL, .horizontalATL li{float: $left}
     .floatRightATL, .horizontalATL li.floatRight,
     .horizontalATL.right li{float: $right}
@@ -450,22 +721,19 @@
             }
         }
     }
-    .floatNoneATL, .unstyledATL li{float: $none}
+    .floatNoneATL, .unstyledATL li{float: $none}   
+    
+    //Text
     .indentedTextATL{text-indent: -9999px}
-    .clearATL{clear: both}
-    .contentBoxATL{box-sizing: content-box}
-    .borderBoxATL{box-sizing: border-box}
-
-    .alignCenterATL{text-align: center}
-    .alignRightATL{text-align: right}
     .alignLeftATL{text-align: left}
+    .alignRightATL{text-align: right}
+    .alignCenterATL{text-align: center}
     .alignJustifyATL{text-align: justify}
     .upperCaseATL{text-transform: uppercase}
-
-    .fullWidthATL{width: $hundred}
-    .autoWidthATL{width: $auto}
-    .autoHeightATL{height: $auto}
     
+    //Backgrounds, border and images    
+    .banATL{border: $none}    
+    .noBackgroundATL{background: $none}    
     .noBackgroundATL, .bgNoneATL{
         &, &:focus, &:hover{
             background: $none;
@@ -479,20 +747,58 @@
    Tablet Landscape Only Styles
    ========================================================================== */
 @include tabletLandscapeOnly{
-    //Spacing Helpers Tablet Landscape Only
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorTLO;
     .mraTLO,.mhaTLO,.centerTLO{margin-right: $auto}
     .mlaTLO,.mhaTLO,.centerTLO{margin-left: $auto}
     
-    //Useful Classes
-    .banTLO{border: $none}
+    //Positioning
     .pRelTLO{position: relative}
     .pAbsTLO{position: absolute}
+    .clearTLO{clear: both}
+    
+    //Sizing
+    .fullWidthTLO{width: $hundred}
+    .autoWidthTLO{width: $auto}
+    .autoHeightTLO{height: $auto}
+    
+    //Display
     .displayInlineTLO{display: $inline}
     .displayBlockTLO, .showTLO{display: $block}
     .displayNoneTLO, .hideTLO{display: $none}
-    .noBackgroundTLO{background: $none}
-    .unstyledTLO, .horizontalTLO{list-style: $none}
+    .contentBoxTLO{box-sizing: content-box}
+    .borderBoxTLO{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexTLO, .horizontalFlexTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnTLO{flex-direction: column}
+    .flexNoWrapTLO{flex-wrap: nowrap}
+    .flexJustifyEndTLO{justify-content: flex-end}
+    .flexJustifyCenterTLO{justify-content: center}
+    .flexJustifyBetweenTLO{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundTLO{justify-content: space-around}
+    .flexAlignContentEndTLO{align-content: flex-end}
+    .flexAlignContentCenterTLO{align-content: center}
+    .flexAlignContentBetweenTLO{align-content: space-between}
+    .flexAlignContentAroundTLO{align-content: space-around}
+    .flexAlignContentStretchTLO{align-content: stretch}
+    .flexAlignItemsEndTLO{align-items: flex-end}
+    .flexAlignItemsCenterTLO{align-items: center}
+    .flexAlignItemsBaselineTLO{align-items: baseline}
+    .flexAlignItemsStretchTLO{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledTLO, .horizontalTLO, .horizontalFlexTLO{list-style: $none}
     .floatLeftTLO, .horizontalTLO li{float: $left}
     .floatRightTLO, .horizontalTLO li.floatRight,
     .horizontalTLO.right li{float: $right}
@@ -508,22 +814,19 @@
             }
         }
     }
-    .floatNoneTLO, .unstyledTLO li{float: $none}
+    .floatNoneTLO, .unstyledTLO li{float: $none}   
+    
+    //Text
     .indentedTextTLO{text-indent: -9999px}
-    .clearTLO{clear: both}
-    .contentBoxTLO{box-sizing: content-box}
-    .borderBoxTLO{box-sizing: border-box}
-
-    .alignCenterTLO{text-align: center}
-    .alignRightTLO{text-align: right}
     .alignLeftTLO{text-align: left}
+    .alignRightTLO{text-align: right}
+    .alignCenterTLO{text-align: center}
     .alignJustifyTLO{text-align: justify}
     .upperCaseTLO{text-transform: uppercase}
-
-    .fullWidthTLO{width: $hundred}
-    .autoWidthTLO{width: $auto}
-    .autoHeightTLO{height: $auto}
     
+    //Backgrounds, border and images    
+    .banTLO{border: $none}    
+    .noBackgroundTLO{background: $none}    
     .noBackgroundTLO, .bgNoneTLO{
         &, &:focus, &:hover{
             background: $none;
@@ -531,32 +834,64 @@
     }
     .bgTransparentTLO{background-color: $transparent}
     .bgNoImageTLO{background-image: $none}
-    
-    .wrapTLO{
-        width: 750px!important;
-        margin-right: $auto;
-        margin-left: $auto;
-    }
 }
 
 /* =============================================================================
    Before Desktop Styles
    ========================================================================== */
 @include beforeDesktop{
-    //Spacing Helpers Before Desktop
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorBD;
     .mraBD,.mhaBD,.centerBD{margin-right: $auto}
     .mlaBD,.mhaBD,.centerBD{margin-left: $auto}
     
-    //Useful Classes
-    .banBD{border: $none}
+    //Positioning
     .pRelBD{position: relative}
     .pAbsBD{position: absolute}
+    .clearBD{clear: both}
+    
+    //Sizing
+    .fullWidthBD{width: $hundred}
+    .autoWidthBD{width: $auto}
+    .autoHeightBD{height: $auto}
+    
+    //Display
     .displayInlineBD{display: $inline}
     .displayBlockBD, .showBD{display: $block}
     .displayNoneBD, .hideBD{display: $none}
-    .noBackgroundBD{background: $none}
-    .unstyledBD, .horizontalBD{list-style: $none}
+    .contentBoxBD{box-sizing: content-box}
+    .borderBoxBD{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexBD, .horizontalFlexBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnBD{flex-direction: column}
+    .flexNoWrapBD{flex-wrap: nowrap}
+    .flexJustifyEndBD{justify-content: flex-end}
+    .flexJustifyCenterBD{justify-content: center}
+    .flexJustifyBetweenBD{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundBD{justify-content: space-around}
+    .flexAlignContentEndBD{align-content: flex-end}
+    .flexAlignContentCenterBD{align-content: center}
+    .flexAlignContentBetweenBD{align-content: space-between}
+    .flexAlignContentAroundBD{align-content: space-around}
+    .flexAlignContentStretchBD{align-content: stretch}
+    .flexAlignItemsEndBD{align-items: flex-end}
+    .flexAlignItemsCenterBD{align-items: center}
+    .flexAlignItemsBaselineBD{align-items: baseline}
+    .flexAlignItemsStretchBD{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledBD, .horizontalBD, .horizontalFlexBD{list-style: $none}
     .floatLeftBD, .horizontalBD li{float: $left}
     .floatRightBD, .horizontalBD li.floatRight,
     .horizontalBD.right li{float: $right}
@@ -572,22 +907,19 @@
             }
         }
     }
-    .floatNoneBD, .unstyledBD li{float: $none}
+    .floatNoneBD, .unstyledBD li{float: $none}   
+    
+    //Text
     .indentedTextBD{text-indent: -9999px}
-    .clearBD{clear: both}
-    .contentBoxBD{box-sizing: content-box}
-    .borderBoxBD{box-sizing: border-box}
-
-    .alignCenterBD{text-align: center}
-    .alignRightBD{text-align: right}
     .alignLeftBD{text-align: left}
+    .alignRightBD{text-align: right}
+    .alignCenterBD{text-align: center}
     .alignJustifyBD{text-align: justify}
     .upperCaseBD{text-transform: uppercase}
-
-    .fullWidthBD{width: $hundred}
-    .autoWidthBD{width: $auto}
-    .autoHeightBD{height: $auto}
     
+    //Backgrounds, border and images    
+    .banBD{border: $none}    
+    .noBackgroundBD{background: $none}    
     .noBackgroundBD, .bgNoneBD{
         &, &:focus, &:hover{
             background: $none;
@@ -601,20 +933,58 @@
    After Laptop Styles
    ========================================================================== */
 @include afterLaptop{
-    //Spacing Helpers After Laptop
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorAL;
     .mraAL,.mhaAL,.centerAL{margin-right: $auto}
     .mlaAL,.mhaAL,.centerAL{margin-left: $auto}
     
-    //Useful Classes
-    .banAL{border: $none}
+    //Positioning
     .pRelAL{position: relative}
     .pAbsAL{position: absolute}
+    .clearAL{clear: both}
+    
+    //Sizing
+    .fullWidthAL{width: $hundred}
+    .autoWidthAL{width: $auto}
+    .autoHeightAL{height: $auto}
+    
+    //Display
     .displayInlineAL{display: $inline}
     .displayBlockAL, .showAL{display: $block}
     .displayNoneAL, .hideAL{display: $none}
-    .noBackgroundAL{background: $none}
-    .unstyledAL, .horizontalAL{list-style: $none}
+    .contentBoxAL{box-sizing: content-box}
+    .borderBoxAL{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexAL, .horizontalFlexAL, .flexColumnAL, .flexNoWrapAL, .flexJustifyEndAL, .flexJustifyCenterAL, .flexJustifyBetweenAL, .flexJustifyAroundAL, .flexAlignContentEndAL, .flexAlignContentCenterAL, .flexAlignContentBetweenAL, .flexAlignContentAroundAL, .flexAlignContentStretchAL, .flexAlignItemsEndAL, .flexAlignItemsCenterAL, .flexAlignItemsBaselineAL, .flexAlignItemsStretchAL, .horizontalCenterFlexAL{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnAL{flex-direction: column}
+    .flexNoWrapAL{flex-wrap: nowrap}
+    .flexJustifyEndAL{justify-content: flex-end}
+    .flexJustifyCenterAL{justify-content: center}
+    .flexJustifyBetweenAL{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundAL{justify-content: space-around}
+    .flexAlignContentEndAL{align-content: flex-end}
+    .flexAlignContentCenterAL{align-content: center}
+    .flexAlignContentBetweenAL{align-content: space-between}
+    .flexAlignContentAroundAL{align-content: space-around}
+    .flexAlignContentStretchAL{align-content: stretch}
+    .flexAlignItemsEndAL{align-items: flex-end}
+    .flexAlignItemsCenterAL{align-items: center}
+    .flexAlignItemsBaselineAL{align-items: baseline}
+    .flexAlignItemsStretchAL{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledAL, .horizontalAL, .horizontalFlexAL{list-style: $none}
     .floatLeftAL, .horizontalAL li{float: $left}
     .floatRightAL, .horizontalAL li.floatRight,
     .horizontalAL.right li{float: $right}
@@ -630,22 +1000,19 @@
             }
         }
     }
-    .floatNoneAL, .unstyledAL li{float: $none}
+    .floatNoneAL, .unstyledAL li{float: $none}   
+    
+    //Text
     .indentedTextAL{text-indent: -9999px}
-    .clearAL{clear: both}
-    .contentBoxAL{box-sizing: content-box}
-    .borderBoxAL{box-sizing: border-box}
-
-    .alignCenterAL{text-align: center}
-    .alignRightAL{text-align: right}
     .alignLeftAL{text-align: left}
+    .alignRightAL{text-align: right}
+    .alignCenterAL{text-align: center}
     .alignJustifyAL{text-align: justify}
     .upperCaseAL{text-transform: uppercase}
-
-    .fullWidthAL{width: $hundred}
-    .autoWidthAL{width: $auto}
-    .autoHeightAL{height: $auto}
     
+    //Backgrounds, border and images    
+    .banAL{border: $none}    
+    .noBackgroundAL{background: $none}    
     .noBackgroundAL, .bgNoneAL{
         &, &:focus, &:hover{
             background: $none;
@@ -659,20 +1026,58 @@
    After Desktop Styles
    ========================================================================== */
 @include afterDesktop{
-    //Spacing Helpers After Desktop
+    //Spacing Helpers
     @include spacingHelpersClassesGeneratorAD;
     .mraAD,.mhaAD,.centerAD{margin-right: $auto}
     .mlaAD,.mhaAD,.centerAD{margin-left: $auto}
     
-    //Useful Classes
-    .banAD{border: $none}
+    //Positioning
     .pRelAD{position: relative}
     .pAbsAD{position: absolute}
+    .clearAD{clear: both}
+    
+    //Sizing
+    .fullWidthAD{width: $hundred}
+    .autoWidthAD{width: $auto}
+    .autoHeightAD{height: $auto}
+    
+    //Display
     .displayInlineAD{display: $inline}
     .displayBlockAD, .showAD{display: $block}
     .displayNoneAD, .hideAD{display: $none}
-    .noBackgroundAD{background: $none}
-    .unstyledAD, .horizontalAD{list-style: $none}
+    .contentBoxAD{box-sizing: content-box}
+    .borderBoxAD{box-sizing: border-box}
+    
+    //Flexbox
+    .displayFlexAD, .horizontalFlexAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumnAD{flex-direction: column}
+    .flexNoWrapAD{flex-wrap: nowrap}
+    .flexJustifyEndAD{justify-content: flex-end}
+    .flexJustifyCenterAD{justify-content: center}
+    .flexJustifyBetweenAD{
+        justify-content: space-between;
+        > *{flex-grow: 1}
+    }
+    .flexJustifyAroundAD{justify-content: space-around}
+    .flexAlignContentEndAD{align-content: flex-end}
+    .flexAlignContentCenterAD{align-content: center}
+    .flexAlignContentBetweenAD{align-content: space-between}
+    .flexAlignContentAroundAD{align-content: space-around}
+    .flexAlignContentStretchAD{align-content: stretch}
+    .flexAlignItemsEndAD{align-items: flex-end}
+    .flexAlignItemsCenterAD{align-items: center}
+    .flexAlignItemsBaselineAD{align-items: baseline}
+    .flexAlignItemsStretchAD{align-items: stretch}
+
+    //Lists and floats    
+    .unstyledAD, .horizontalAD, .horizontalFlexAD{list-style: $none}
     .floatLeftAD, .horizontalAD li{float: $left}
     .floatRightAD, .horizontalAD li.floatRight,
     .horizontalAD.right li{float: $right}
@@ -688,22 +1093,19 @@
             }
         }
     }
-    .floatNoneAD, .unstyledAD li{float: $none}
+    .floatNoneAD, .unstyledAD li{float: $none}   
+    
+    //Text
     .indentedTextAD{text-indent: -9999px}
-    .clearAD{clear: both}
-    .contentBoxAD{box-sizing: content-box}
-    .borderBoxAD{box-sizing: border-box}
-
-    .alignCenterAD{text-align: center}
-    .alignRightAD{text-align: right}
     .alignLeftAD{text-align: left}
+    .alignRightAD{text-align: right}
+    .alignCenterAD{text-align: center}
     .alignJustifyAD{text-align: justify}
     .upperCaseAD{text-transform: uppercase}
-
-    .fullWidthAD{width: $hundred}
-    .autoWidthAD{width: $auto}
-    .autoHeightAD{height: $auto}
     
+    //Backgrounds, border and images    
+    .banAD{border: $none}    
+    .noBackgroundAD{background: $none}    
     .noBackgroundAD, .bgNoneAD{
         &, &:focus, &:hover{
             background: $none;
