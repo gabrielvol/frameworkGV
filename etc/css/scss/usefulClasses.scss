@@ -78,7 +78,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 
 //Lists and floats
 .unstyled, .horizontal, .horizontalFlex,
-%unstyled, %horizonal{list-style: $none}
+%unstyled{list-style: $none}
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,
 .horizontal.right li{float: $right}
@@ -99,6 +99,16 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     flex-wrap: nowrap;
 }
 .floatNone, .centerCol{float: $none}
+%horizontal{
+    list-style: $none;        
+    li{
+        float: $left;        
+        &.floatRight{float: $right;}
+    }    
+    &.right{
+        li{float: $right;}
+    }
+}
 
 //Masks
 .mask{
