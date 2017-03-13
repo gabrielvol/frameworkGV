@@ -21,6 +21,14 @@ $cLHalf:  calc(#{$containerLaptopValue}/2); /* Laptop Half */
 $cDHalf:  calc(#{$containerDesktopValue}/2); /* Desktop Half */
 $cDLHalf: calc(#{$containerDesktopLargeValue}/2); /* Desktop Large Half*/
 
+$cMHalf:  calc(#{$cMFullSize}/2); /* Mobile Half */
+$cMLHalf: calc(#{$cMLFullSize}/2); /* Mobile Landscape Half */
+$cTHalf:  calc(#{$cTFullSize}/2); /* Tablet Half*/
+$cTLHalf: calc(#{$cTLFullSize}/2); /* Tablet Landscape Half*/
+$cLHalf:  calc(#{$cLFullSize}/2); /* Laptop Half */
+$cDHalf:  calc(#{$cDFullSize}/2); /* Desktop Half */
+$cDLHalf: calc(#{$cDLFullSize}/2); /* Desktop Large Half*/
+
 $cMHneg: calc(-1 * #{$cMHalf}); /* Mobile Half */
 $cMLHneg: calc(-1 * #{$cMLHalf}); /* Mobile Landscape Half */
 $cTHneg: calc(-1 * #{$cTHalf}); /* Tablet Half*/
