@@ -28,11 +28,11 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
     left: 0;
     
     @include beforeTablet{
-        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeightBT);        
+        @include bgSvg(ic_arrowSliderL, $sliderArrowWidthHeightBT);        
     }
     
     @include afterTablet{
-        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeight);        
+        @include bgSvg(ic_arrowSliderL, $sliderArrowWidthHeight);        
     }
 }
 
@@ -40,11 +40,11 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
     right: 0;
     
     @include beforeTablet{
-        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeightBT);        
+        @include bgSvg(ic_arrowSliderR, $sliderArrowWidthHeightBT);        
     }
     
     @include afterTablet{
-        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeight);        
+        @include bgSvg(ic_arrowSliderR, $sliderArrowWidthHeight);        
     }
 }
 
