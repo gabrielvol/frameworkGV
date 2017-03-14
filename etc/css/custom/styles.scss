@@ -1,6 +1,3 @@
-@import "charset";
-@import "../scss/openSans";
-
 //Variables
 @import "variables/zindex";
 @import "../scss/variablesFonts";
@@ -12,6 +9,10 @@
 @import "variables/helpers";
 @import "variables/forms";
 @import "variables/tables";
+
+//Font-face
+@import "../scss/openSans";
+@import "fontFace";
 
 //Mixins
 @import "../scss/mixinsSizes";
