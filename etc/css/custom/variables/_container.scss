@@ -1,5 +1,5 @@
 /* =============================================================================
-   Container Sizes | Custom | Variables
+   Container Sizes Variables | Custom
    ========================================================================== */
 $grid-gutter-width: 30px;
 
@@ -36,11 +36,3 @@ $cTLHneg: calc(-1 * #{$cTLHalf}); /* Tablet Landscape Half*/
 $cLHneg: calc(-1 * #{$cLHalf}); /* Laptop Half */
 $cDHneg: calc(-1 * #{$cDHalf}); /* Desktop Half */
 $cDLHneg: calc(-1 * #{$cDLHalf}); /* Desktop Large Half*/
-
-//$cMH: -150px; /* Mobile Half */
-//$cMLH: -45%; /* Mobile Landscape Half */
-//$cTH: -345px; /* Tablet Half*/
-//$cTLH: -485px; /* Tablet Landscape Half*/
-//$cLH: $cTLH; /* Laptop Half */
-//$cDH: -585px; /* Desktop Half */
-//$cDLH: -760px; /* Desktop Large Half*/
