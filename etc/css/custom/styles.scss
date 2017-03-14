@@ -3,7 +3,6 @@
 @import "../scss/variablesFonts";
 @import "../scss/variablesAbsolute";
 @import "variables/container";
-@import "mediaQueries";
 @import "variables/fonts";
 @import "variables/colours";
 @import "variables/helpers";
@@ -16,6 +15,7 @@
 @import "settingsColours";
 
 //Mixins
+@import "mixinsMediaQueries";
 @import "../scss/mixinsSizes";
 @import "../scss/mixinsBackgrounds";
 @import "../scss/mixinsMasks";
