@@ -1,52 +1,14 @@
 /* =============================================================================
-   OpenSans font-face
-   ========================================================================== */
-@font-face {
-  font-family: 'open_sanslight';
-  src: url("/nuevo/fonts/OpenSans-Light-webfont.eot");
-  src: url("/nuevo/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/nuevo/fonts/OpenSans-Light-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("/nuevo/fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansregular';
-  src: url("/nuevo/fonts/OpenSans-Regular-webfont.eot");
-  src: url("/nuevo/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/nuevo/fonts/OpenSans-Regular-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("/nuevo/fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansitalic';
-  src: url("/nuevo/fonts/OpenSans-Italic-webfont.eot");
-  src: url("/nuevo/fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/nuevo/fonts/OpenSans-Italic-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("/nuevo/fonts/OpenSans-Italic-webfont.svg#open_sansitalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansbold';
-  src: url("/nuevo/fonts/OpenSans-Bold-webfont.eot");
-  src: url("/nuevo/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/nuevo/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("/nuevo/fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansbold_italic';
-  src: url("/nuevo/fonts/OpenSans-BoldItalic-webfont.eot");
-  src: url("/nuevo/fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("/nuevo/fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("/nuevo/fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* =============================================================================
-   Z Index
+   Z Index Variables | Custom
    ========================================================================== */
 /* =============================================================================
-   Fonts Prev / Etc
+   Font Variables | Etc
    ========================================================================== */
 /* =============================================================================
-   Absolute Variables / Etc
+   Absolute Variables | Etc
    ========================================================================== */
 /* =============================================================================
-   Container Sizes
+   Container Variables | Custom
    ========================================================================== */
 /* Mobile / Container: 300px */
 /* iPad / Container: 720px */
@@ -54,6 +16,13 @@
 /* Laptop / Container: 1000px */
 /* 1170px; /* Desktop / Container: 1200px */
 /* 1520px; /* Big Screens / Container: 1550px */
+/* Mobile FullSize */
+/* Mobile Landscape FullSize */
+/* Tablet FullSize*/
+/* Tablet Landscape FullSize*/
+/* Laptop FullSize */
+/* Desktop FullSize */
+/* Desktop Large FullSize*/
 /* Mobile Half */
 /* Mobile Landscape Half */
 /* Tablet Half*/
@@ -69,7 +38,101 @@
 /* Desktop Half */
 /* Desktop Large Half*/
 /* =============================================================================
-   Media Queries
+   Font Variables | Custom
+   ========================================================================== */
+/* [Main Font settings] */
+/* =============================================================================
+   Nav Fonts | Custom
+   ========================================================================== */
+/* =============================================================================
+   Form Fonts | Custom
+   ========================================================================== */
+/* =============================================================================
+   Colours Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Lighters Darkers | Custom
+   ========================================================================== */
+/* =============================================================================
+   Font Colours | Custom
+   ========================================================================== */
+/* =============================================================================
+   Border Colours | Custom
+   ========================================================================== */
+/* =============================================================================
+   Background Colours | Custom
+   ========================================================================== */
+/* =============================================================================
+   Nav Colour Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Forms Colour Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Tables Colour Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Modal Colour Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Helpers Variables/Values | Custom
+   ========================================================================== */
+/* =============================================================================
+   Border Helpers Value | Custom
+   ========================================================================== */
+/* =============================================================================
+   Forms Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Tables Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   OpenSans font-face | Etc
+   ========================================================================== */
+/* =============================================================================
+   Font Settings | Custom
+   ========================================================================== */
+/*
+.exampleFont{font-family: 'exampleFont';}
+@font-face {
+  font-family: 'exampleFont';
+  src: url(/path/to/fonts/examplefont.woff) format('woff'),
+       url(/path/to/fonts/examplefont.eot) format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
+select, textarea, blockquote, table {
+  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em; }
+
+/* =============================================================================
+   Colour Settings | Custom
+   ========================================================================== */
+a.white:focus, a.white:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #999; }
+
+input[type="reset"].white:focus, input[type="reset"].white:hover,
+input[type="submit"].white:focus,
+input[type="submit"].white:hover,
+input[type="button"].white:focus,
+input[type="button"].white:hover,
+button.white:focus,
+button.white:hover {
+  text-shadow: 0 0 2px #000; }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+.bgGradWhiteEighty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+
+/* =============================================================================
+   Media Queries | Custom
    ========================================================================== */
 /* < Mobile */
 /* < Tablet */
@@ -110,119 +173,40 @@
 /* iPad 3 & 4 Landscape Only */
 /* Retina Screens */
 /* =============================================================================
-   Font formatting
-   ========================================================================== */
-/*
-.exampleFont{font-family: 'exampleFont';}
-@font-face {
-  font-family: 'exampleFont';
-  src: url(/path/to/fonts/examplefont.woff) format('woff'),
-       url(/path/to/fonts/examplefont.eot) format('eot');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-*/
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
-select, textarea, blockquote, table {
-  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.4em; }
-
-/* =============================================================================
-   Nav Fonts
+   Sizes Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Form Fonts
+   Background Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   General Colours
-   ========================================================================== */
-a.white:focus, a.white:hover {
-  color: #fff;
-  text-shadow: 0 0 3px #999; }
-
-input[type="reset"].white:focus, input[type="reset"].white:hover,
-input[type="submit"].white:focus,
-input[type="submit"].white:hover,
-input[type="button"].white:focus,
-input[type="button"].white:hover,
-button.white:focus,
-button.white:hover {
-  text-shadow: 0 0 2px #000; }
-
-/* =============================================================================
-   Lighters Darkers
+   Mask Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Font Colours
+   Transition Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Border Colours
+   Opacity Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Background Colours
+   Fonts Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Nav
+   Fonts Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Forms
+   Center Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Tables
+   Spacing Helpers Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Modal
+   Border Helpers Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Helpers Values
+   Position Mixins | Etc
    ========================================================================== */
 /* =============================================================================
-   Border Helpers
-   ========================================================================== */
-/* =============================================================================
-   Forms Variables / Custom
-   ========================================================================== */
-/* =============================================================================
-   Tables Variables / Custom
-   ========================================================================== */
-/* =============================================================================
-   Sizes Mixins Prev / Etc
-   ========================================================================== */
-/* =============================================================================
-   Background Mixins Prev / Etc
-   ========================================================================== */
-/* =============================================================================
-   Mask Mixins / Etc
-   ========================================================================== */
-/* =============================================================================
-   Transition Mixins Prev / Etc
-   ========================================================================== */
-/* =============================================================================
-   Opacity Mixins Prev / Etc
-   ========================================================================== */
-/* =============================================================================
-   Fonts Mixins / Etc
-   ========================================================================== */
-/* =============================================================================
-   Fonts Mixins / Etc
-   ========================================================================== */
-/* =============================================================================
-   Center Mixins / Etc
-   ========================================================================== */
-/* =============================================================================
-   Spacing Helpers Mixins / Etc
-   ========================================================================== */
-/* =============================================================================
-   Border Helpers Mixins / Etc
-   ========================================================================== */
-/* =============================================================================
-   Position Mixins Prev / Etc
-   ========================================================================== */
-/* =============================================================================
-   Container Sizes
+   Container Styles | Etc
    ========================================================================== */
 .container {
   /*
@@ -248,16 +232,16 @@ button.white:hover {
       width: 720px; } }
   @media (min-width: 1024px) {
     .container {
-      width: 1000px; } }
+      width: 970px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1000px; } }
+      width: 970px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1000px; } }
+      width: 970px; } }
   @media (min-width: 1600px) {
     .container {
-      width: 1000px; } }
+      width: 970px; } }
   .container.centerAbs {
     position: absolute;
     left: 50%;
@@ -279,28 +263,28 @@ button.white:hover {
 */ }
     @media (max-width: 420px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(300px/2)); } }
+        margin-left: calc(-1 * calc(calc(300px + 30px)/2)); } }
     @media (min-width: 421px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(90%/2)); } }
+        margin-left: calc(-1 * calc(calc(90% + 30px)/2)); } }
     @media (min-width: 768px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(690px/2)); } }
+        margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
     @media (min-width: 1024px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(970px/2)); } }
+        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
     @media (min-width: 1200px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(970px/2)); } }
+        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
     @media (min-width: 1200px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(970px/2)); } }
+        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
     @media (min-width: 1600px) {
       .container.centerAbs {
-        margin-left: calc(-1 * calc(970px/2)); } }
+        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
 
 /* =============================================================================
-   General Text Elements Styling / Useful Classes
+   Font Useful Classes | Etc
    ========================================================================== */
 abbr {
   border: none !important;
@@ -365,7 +349,7 @@ b, strong,
   text-indent: -9999px; }
 
 /* =============================================================================
-   Font Styling
+   Font Styles | Etc
    ========================================================================== */
 html {
   font-size: 100%;
@@ -472,7 +456,7 @@ p, li {
     line-height: 1em; } }
 
 /* =============================================================================
-   Colours
+   Colours Styles | Etc
    ========================================================================== */
 html, body, button, blockquote, table, h1, h2, h3, h4, h5, h6, p, b, strong, i,
 em, dfn, li, button, label, input, select, textarea {
@@ -695,7 +679,7 @@ label.black, label.black:focus, label.black:hover {
   color: #000; }
 
 /* =============================================================================
-   Border Helpers
+   Border Helpers Styles | Etc
    ========================================================================== */
 .bas, .bts, .brs, .bbs, .bls, .bhs, .bvs {
   border-style: solid; }
@@ -743,7 +727,7 @@ label.black, label.black:focus, label.black:hover {
   border-left: 0 !important; }
 
 /* =============================================================================
-   Useful Classes / Etc
+   Useful Classes | Etc
    ========================================================================== */
 #go-main-content {
   top: auto;
@@ -1013,7 +997,7 @@ article, article::before, article::after, details, details::before, details::aft
   filter: none \0/IE9; }
 
 /* =============================================================================
-   Elements Styling/Corrections
+   Elements Styling/Corrections | Etc
    ========================================================================== */
 audio, canvas, progress, video {
   *display: inline;
@@ -1085,7 +1069,7 @@ figure {
     width: 320px; } }
 
 /* =============================================================================
-   Useful Classes Responsive / Etc
+   Useful Classes Responsive | Etc
    ========================================================================== */
 @media (max-width: 420px) {
   .mraMO, .mhaMO, .centerMO {
@@ -2445,7 +2429,7 @@ figure {
     background-image: none !important; } }
 
 /* =============================================================================
-   Nav / Etc
+   Nav Styles | Etc
    ========================================================================== */
 .mainNav li a {
   font-family: Arial; }
@@ -2480,6 +2464,9 @@ figure {
   .mainNav li.selected a:focus, .mainNav li.selected a:hover {
     background: transparent; } }
 
+/* =============================================================================
+   Form Styles | Etc
+   ========================================================================== */
 form, fieldset, legend, button, input, select, textarea {
   margin: 0;
   padding: 0; }
@@ -2594,7 +2581,7 @@ textarea {
   vertical-align: top; }
 
 /* =============================================================================
-   NiceIt Reset
+   Forms NiceIt Reset Styles | Etc
    ========================================================================== */
 form.niceIt input[type="text"],
 form.niceIt input[type="email"],
@@ -2661,7 +2648,7 @@ form.niceIt .fmRadio {
   cursor: pointer; }
 
 /* =============================================================================
-   Tables / Etc
+   Tables Styles | Etc
    ========================================================================== */
 @media (max-width: 767px) {
   table {
@@ -2749,7 +2736,7 @@ table th, table td {
       background: none !important; } }
 
 /* =============================================================================
-   Modal y Popup
+   Modal y Popup Styles | Etc
    ========================================================================== */
 .modalBG {
   opacity: 0.85;
@@ -2773,10 +2760,13 @@ table th, table td {
     z-index: 9200; }
 
 /* =============================================================================
-   Global
+   Print Styles | Etc
    ========================================================================== */
 /* =============================================================================
-   Useful Classes / Custom
+   Global Variables | Custom
+   ========================================================================== */
+/* =============================================================================
+   Useful Classes | Custom
    ========================================================================== */
 .textShadow {
   text-shadow: 1px 1px 5px #333; }
@@ -2901,15 +2891,7 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
     width: 25%; } }
 
 /* =============================================================================
-   Gradients
-   ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-.bgGradWhiteEighty {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-
-/* =============================================================================
-   Forms Custom
+   Forms Styles | Custom
    ========================================================================== */
 @media (max-width: 767px) {
   .mobileForm form, .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button {
@@ -3185,7 +3167,7 @@ textarea {
       height: 100px; } }
 
 /* =============================================================================
-   NiceIt Custom Styles
+   Forms NiceIt Styles | Custom
    ========================================================================== */
 form.niceIt {
   /* Select */
@@ -3247,7 +3229,7 @@ form.niceIt {
         width: 95%; } }
 
 /* =============================================================================
-   Search form Custom
+   Search Form Styles | Custom
    ========================================================================== */
 .searchForm {
   position: relative;
@@ -3292,7 +3274,7 @@ form.niceIt {
           width: 50px; } }
 
 /* =============================================================================
-   Tables / Custom
+   Tables Styles | Custom
    ========================================================================== */
 @media (max-width: 767px) {
   table {
@@ -3400,7 +3382,7 @@ table.tableRounded {
         border-bottom: 0 solid #dedede !important; } }
 
 /* =============================================================================
-   Modal y popup / Custom
+   Modal y popup Styles | Custom
    ========================================================================== */
 .close {
   background-color: transparent;
@@ -3459,7 +3441,7 @@ table.tableRounded {
     right: calc(-1 * calc(20px + 5px)); }
 
 /* =============================================================================
-   Slick Slider Custom
+   Slick Slider Styles | Custom
    ========================================================================== */
 .slick::before, .slick::after, .slick div::before, .slick div::after {
   content: " ";
@@ -3581,7 +3563,7 @@ table.tableRounded {
       background-size: 15px 15px; }
 
 /* =============================================================================
-   Header
+   Header Styles | Custom
    ========================================================================== */
 #header {
   z-index: 1000; }
@@ -3630,7 +3612,7 @@ table.tableRounded {
         width: 150px; } }
 
 /* =============================================================================
-   Nav
+   Nav Styles | Custom
    ========================================================================== */
 .mainNav {
   z-index: 1000; }
@@ -3700,7 +3682,7 @@ table.tableRounded {
         margin-left: auto !important; } }
 
 /* =============================================================================
-   Footer
+   Footer Styles | Custom
    ========================================================================== */
 #footer .logoFooter {
   width: 100px; }
@@ -3718,8 +3700,8 @@ table.tableRounded {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=100)"; }
 
 /* =============================================================================
-   Index
+   Index Styles | Custom
    ========================================================================== */
 /* =============================================================================
-   Interna
+   Internas Styles | Custom
    ========================================================================== */
