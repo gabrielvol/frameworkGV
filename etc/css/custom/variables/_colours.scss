@@ -26,7 +26,7 @@ $coloursMapDark:(
 $lightenValue: 20%;
 
 ///**Colours Map Custom Hover:** 
-    ///Aquí se agregan los colores cuyas pseudoclases `:focus` y `:hover` no están generadas automáticamente. Se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourCustomHoverClassesGenerator** `[/etc/scss/mixinsColours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` deberán ser indicadas en su correspondiente placeholder debajo, eg.: `%focusHover-black{&:focus, &:hover{color: #ffcc00;}}`.
+    ///Aquí se agregan los colores cuyas pseudoclases `:focus` y `:hover` no están generadas automáticamente. Se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourCustomHoverClassesGenerator** `[/etc/scss/mixinsColours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` deberán ser indicadas en su correspondiente placeholder en `[/etc/scss/_settingsColours.scss]`.
 $coloursMapCustomHover:(    
     //orange: #ff6600
 );
@@ -49,21 +49,6 @@ $greyL: map-get($coloursMapMerged, greyL);
 $grey: map-get($coloursMapMerged, grey);
 $greyD: map-get($coloursMapMerged, greyD);
 $greyXD: map-get($coloursMapMerged, greyXD);
-
-%whiteHover{
-    color: $white;
-    text-shadow: 0 0 3px $grey;
-}
-%whiteHoverSubmit{
-    text-shadow: 0 0 2px $black;
-}
-
-// Placeholders para colores custom
-%focusHover-orange{    
-    &:focus, &:hover{
-        color: #ff0000;
-    }
-}
 
 ///**Anchor Colours Light:** 
     ///Aquí se agregan los colores para las anclas dentro de un párrafo con color CLARO, de este mapa se creará una clase por cada color con el mixin **anchorColoursLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.white a{color: #fff}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$darkenValueAnchor` debajo del mapa. 
