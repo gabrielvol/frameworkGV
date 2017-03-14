@@ -1,5 +1,5 @@
 /* =============================================================================
-   Font formatting
+   Font Variables | Custom | Variables
    ========================================================================== */
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
@@ -15,18 +15,14 @@ $openSansClasses: off;
 $mainFontFamily: map-get($fontFamiliesSiteFontsMap, arial);
 $mainFontFamilyBold: $mainFontFamily;
 
-//Main font Settings
+//Main font Stack
 $mainFontStack:(
     $mainFontFamily,
     $fontFamiliesListSans
 );
-%bodyFontSettings{}
-%mainFontsSettings{
-    font-family: $mainFontStack;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.4em;
-}
+
+/* [Main Font settings] */
+
 $mainParagraphFontSize: 1em;
 $headingMargin: 0 0 0.8em;
 $textMargin: 0;

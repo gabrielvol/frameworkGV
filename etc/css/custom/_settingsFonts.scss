@@ -1,6 +1,7 @@
 /* =============================================================================
-   Font-face
+   Font Settings  | Custom
    ========================================================================== */
+// Font-face
 /*
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
@@ -12,3 +13,12 @@
   font-display: swap;
 }
 */
+
+//Main font settings
+%bodyFontSettings{}
+%mainFontsSettings{
+    font-family: $mainFontStack;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4em;
+}
