@@ -1,5 +1,5 @@
 /* =============================================================================
-   Background Mixins Prev / Etc
+   Background Mixins | Etc
    ========================================================================== */
 @mixin sprites($backgroundPosition, $backgroundColour: transparent){
     background: $backgroundColour url('/nuevo/img/sprites.png') no-repeat $backgroundPosition;}
