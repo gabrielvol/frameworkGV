@@ -18,3 +18,12 @@
         color: #ff0000;
     }
 }
+
+// Gradients
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+$bgGradWhiteEighty: linear-gradient(to bottom,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.8)100%);
+$bgGradWhiteEightyFilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
+.bgGradWhiteEighty{
+    background-image: $bgGradWhiteEighty;
+    filter: $bgGradWhiteEightyFilter;
+}
