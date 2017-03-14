@@ -65,7 +65,7 @@ $anchorColoursDark:(
 $lightenValueAnchor: 20%;
 
 /* =============================================================================
-   Lighters Darkers
+   Lighters Darkers | Custom
    ========================================================================== */
 $lighterDarkerClasses: off;
 $lighterDarkerStrong: off;
@@ -83,7 +83,7 @@ $darkerValue: 15%;
 $darkestValue: 22%;
 
 /* =============================================================================
-   Font Colours
+   Font Colours | Custom
    ========================================================================== */
 ///**Font Colours:** 
     ///Aquí se declaran los colores principales de texto y de ánclas del sitio, con sus `:hover`.
@@ -96,7 +96,7 @@ $anchorFontColourHover: darken($mainFontColourHover, 20%);
 $secondaryFontColour: #999;
 
 /* =============================================================================
-   Border Colours
+   Border Colours | Custom
    ========================================================================== */
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio.
@@ -132,7 +132,7 @@ $bcGreyD: map-get($borderColoursMap, greyD);
 $bcGreyXD: map-get($borderColoursMap, greyXD);
 
 /* =============================================================================
-   Background Colours
+   Background Colours | Custom
    ========================================================================== */
 ///**Background Colours Map:** 
     ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
@@ -173,7 +173,7 @@ $backgroundColoursHoverMap:(
 //$bgBlueHover: map-get($backgroundColoursHoverMap, bgBlue);
 
 /* =============================================================================
-   Nav
+   Nav Colour Variables | Custom
    ========================================================================== */
     //Fonts
 $navFontColour: $white;
@@ -195,7 +195,7 @@ $bgNavSelectedAnchor: transparent;
 $bgNavSelectedAnchorHover: transparent;
 
 /* =============================================================================
-   Forms
+   Forms Colour Variables | Custom
    ========================================================================== */
 ///**Forms:** 
     ///Aquí se declaran las variables de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
@@ -228,7 +228,7 @@ $invalidMandatoryMessageFontColour: $white;
 $statusOKpopUpBgColour: $bgWhite;
 
 /* =============================================================================
-   Tables
+   Tables Colour Variables | Custom
    ========================================================================== */
 // Table Border Colours
 $mainBcColourTable: #939393;
@@ -246,7 +246,7 @@ $bgColourTableStripedEven: $white;
 $bcColourTableStripedSeparator: darken($bgColourTableStripedOdd, 60%);
 
 /* =============================================================================
-   Modal
+   Modal Colour Variables | Custom
    ========================================================================== */
     //El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
 $modalOpacity: 85;
