@@ -40,87 +40,166 @@ $containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
         width: $containerDesktop}
     @include afterDesktopLarge{
         width: $containerDesktopLarge}
-
-    &.centerAbs, &.centerAbsMO, &.centerAbsAML, &.centerAbsAT, &.centerAbsATL, &.centerAbsAL, &.centerAbsAD, &.centerAbsADL{
-        position: absolute;
-        left: 50%;
-    }
-    &.centerAbsMO{
+    
+    &.centerAbs{     
         @include mobileOnly{
-        margin-left: $cMHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cMHneg;
+        }
+        @include afterMobileLandscape{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cMLHneg;
+        }
+        @include afterTablet{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTHneg;
+        }
+        @include afterTabletLandscape{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
+        @include afterLaptop{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
+        @include afterDesktop{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDHneg;
+        }
+        @include afterDesktopLarge{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
+    }
+    &.centerAbsMO{    
+        @include mobileOnly{
+            position: absolute;
+            left: 50%;   
+            margin-left: $cMHneg;
+        }
     }
     &.centerAbsAML{
         @include afterMobileLandscape{
-            margin-left: $cMLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cMLHneg;
+        }
         @include afterTablet{
-            margin-left: $cTHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTHneg;
+        }
         @include afterTabletLandscape{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterLaptop{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterDesktop{
-            margin-left: $cDHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDHneg;
+        }
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
     }
     &.centerAbsAT{
         @include afterTablet{
-            margin-left: $cTHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTHneg;
+        }
         @include afterTabletLandscape{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterLaptop{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterDesktop{
-            margin-left: $cDHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDHneg;
+        }
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
     }
     &.centerAbsATL{
         @include afterTabletLandscape{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterLaptop{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterDesktop{
-            margin-left: $cDHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDHneg;
+        }
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
     }
-    &.centerAbsAL{e{
-            margin-left: $cTLHneg}
+    &.centerAbsAL{
         @include afterLaptop{
-            margin-left: $cTLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cTLHneg;
+        }
         @include afterDesktop{
-            margin-left: $cDHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDHneg;
+        }
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
     }
     &.centerAbsAD{
         @include afterDesktop{
-            margin-left: $cDHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDHneg;
+        }
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
     }
     &.centerAbsADL{
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}
-    }
-    &.centerAbs{
-        position: absolute;
-        left: 50%;
-        
-        @include mobileOnly{
-            margin-left: $cMHneg}
-        @include afterMobileLandscape{
-            margin-left: $cMLHneg}
-        @include afterTablet{
-            margin-left: $cTHneg}
-        @include afterTabletLandscape{
-            margin-left: $cTLHneg}
-        @include afterLaptop{
-            margin-left: $cTLHneg}
-        @include afterDesktop{
-            margin-left: $cDHneg}
-        @include afterDesktopLarge{
-            margin-left: $cDLHneg}
+            position: absolute;
+            left: 50%;   
+            margin-left: $cDLHneg;
+        }
     }
 }
