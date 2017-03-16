@@ -33,7 +33,6 @@
     border-color: $borderColourValue;
 }
 
-
     // Border Radius 
 
 //Border Radius Classes
@@ -87,4 +86,68 @@
     padding-left: $PBMSsepValue;
     @include borderStyleL($PBMSborderWidth, $PBMSborderStyle, $PBMSbcColour);
     margin-left: $PBMSsepValue;
+}
+
+//Fancy Horizontal Line
+@mixin fancyHorizontalLines($border: 1px solid white, $width: 100px, $separation: 15px){
+    &{
+        line-height: 0.5;
+        text-align: center;
+        > *{
+            display: inline-block;
+            position: relative;      
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                border-top: $border;
+                width: $width;
+            }
+            &::before {
+                right: 100%;
+                margin-right: $separation;
+            }
+            &::after {
+                left: 100%;
+                margin-left: $separation;
+            }  
+        }
+    }
+}
+@mixin fancyHorizontalLinesDouble(
+    $borderT: 1px solid white,
+    $width: 100px,
+    $separation: 15px,
+    $height: 5px,
+    $marginTop: 10px,
+    $borderB: $borderT
+){
+    &{
+        line-height: 0.5;
+        text-align: center;
+        > *{
+            display: inline-block;
+            position: relative;      
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: $width;
+                height: $height;
+                border-top: $borderT;
+                border-bottom: $borderB;
+                margin-top: $marginTop;
+            }
+            &::before {
+                right: 100%;
+                margin-right: $separation;
+            }
+            &::after {
+                left: 100%;
+                margin-left: $separation;
+            }  
+        }
+    }
 }
