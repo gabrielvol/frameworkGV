@@ -41,6 +41,69 @@ $containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
     @include afterDesktopLarge{
         width: $containerDesktopLarge}
 
+    &.centerAbs, &.centerAbsMO, &.centerAbsAML, &.centerAbsAT, &.centerAbsATL, &.centerAbsAL, &.centerAbsAD, &.centerAbsADL{
+        position: absolute;
+        left: 50%;
+    }
+    &.centerAbsMO{
+        @include mobileOnly{
+        margin-left: $cMHneg}
+    }
+    &.centerAbsAML{
+        @include afterMobileLandscape{
+            margin-left: $cMLHneg}
+        @include afterTablet{
+            margin-left: $cTHneg}
+        @include afterTabletLandscape{
+            margin-left: $cTLHneg}
+        @include afterLaptop{
+            margin-left: $cTLHneg}
+        @include afterDesktop{
+            margin-left: $cDHneg}
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}
+    }
+    &.centerAbsAT{
+        @include afterTablet{
+            margin-left: $cTHneg}
+        @include afterTabletLandscape{
+            margin-left: $cTLHneg}
+        @include afterLaptop{
+            margin-left: $cTLHneg}
+        @include afterDesktop{
+            margin-left: $cDHneg}
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}
+    }
+    &.centerAbsATL{
+        @include afterTabletLandscape{
+            margin-left: $cTLHneg}
+        @include afterLaptop{
+            margin-left: $cTLHneg}
+        @include afterDesktop{
+            margin-left: $cDHneg}
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}
+    }
+    &.centerAbsAL{e{
+            margin-left: $cTLHneg}
+        @include afterLaptop{
+            margin-left: $cTLHneg}
+        @include afterDesktop{
+            margin-left: $cDHneg}
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}
+    }
+    &.centerAbsAD{
+        @include afterDesktop{
+            margin-left: $cDHneg}
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}
+    }
+    &.centerAbsADL{
+        @include afterDesktopLarge{
+            margin-left: $cDLHneg}
+    }
     &.centerAbs{
         position: absolute;
         left: 50%;
@@ -58,23 +121,6 @@ $containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
         @include afterDesktop{
             margin-left: $cDHneg}
         @include afterDesktopLarge{
-            margin-left: $cDLHneg}    
-
-/*        
-        @include mobileOnly{
-            margin-left: $cMH}
-        @include afterMobileLandscape{
-            margin-left: $cMLH}
-        @include afterTablet{
-            margin-left: $cTH}
-        @include afterTabletLandscape{
-            margin-left: $cTLH}
-        @include afterLaptop{
-            margin-left: $cTLH}
-        @include afterDesktop{
-            margin-left: $cDH}
-        @include afterDesktopLarge{
-            margin-left: $cDLH}
-*/
+            margin-left: $cDLHneg}
     }
 }
