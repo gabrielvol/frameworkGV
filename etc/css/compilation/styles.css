@@ -242,46 +242,151 @@ button.white:hover {
   @media (min-width: 1600px) {
     .container {
       width: 970px; } }
-  .container.centerAbs {
-    position: absolute;
-    left: 50%;
-    /*        
-        @include mobileOnly{
-            margin-left: $cMH}
-        @include afterMobileLandscape{
-            margin-left: $cMLH}
-        @include afterTablet{
-            margin-left: $cTH}
-        @include afterTabletLandscape{
-            margin-left: $cTLH}
-        @include afterLaptop{
-            margin-left: $cTLH}
-        @include afterDesktop{
-            margin-left: $cDH}
-        @include afterDesktopLarge{
-            margin-left: $cDLH}
-*/ }
-    @media (max-width: 420px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(300px + 30px)/2)); } }
-    @media (min-width: 421px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(90% + 30px)/2)); } }
-    @media (min-width: 768px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
-    @media (min-width: 1024px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-    @media (min-width: 1200px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-    @media (min-width: 1200px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-    @media (min-width: 1600px) {
-      .container.centerAbs {
-        margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (max-width: 420px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(300px + 30px)/2)); } }
+  @media (min-width: 421px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(90% + 30px)/2)); } }
+  @media (min-width: 768px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
+  @media (min-width: 1024px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbs {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (max-width: 420px) {
+    .container.centerAbsMO {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(300px + 30px)/2)); } }
+  @media (min-width: 421px) {
+    .container.centerAbsAML {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(90% + 30px)/2)); } }
+  @media (min-width: 768px) {
+    .container.centerAbsAML {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
+  @media (min-width: 1024px) {
+    .container.centerAbsAML {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAML {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAML {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbsAML {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 768px) {
+    .container.centerAbsAT {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
+  @media (min-width: 1024px) {
+    .container.centerAbsAT {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAT {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAT {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbsAT {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1024px) {
+    .container.centerAbsATL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsATL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsATL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbsATL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbsAL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1200px) {
+    .container.centerAbsAD {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbsAD {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+  @media (min-width: 1600px) {
+    .container.centerAbsADL {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
 
 /* =============================================================================
    Font Useful Classes | Etc
