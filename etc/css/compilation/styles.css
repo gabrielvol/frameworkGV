@@ -110,6 +110,12 @@ select, textarea, blockquote, table {
   font-size: 1em;
   line-height: 1.4em; }
 
+.textShadow {
+  text-shadow: 1px 1px 5px #333; }
+
+.letterSpacing {
+  letter-spacing: 0.05em; }
+
 /* =============================================================================
    Colour Settings | Custom
    ========================================================================== */
@@ -233,7 +239,7 @@ button.white:hover {
   @media (min-width: 1024px) {
     .container {
       width: 970px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     .container {
       width: 970px; } }
   @media (min-width: 1200px) {
@@ -262,7 +268,7 @@ button.white:hover {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
@@ -297,7 +303,7 @@ button.white:hover {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
@@ -322,7 +328,7 @@ button.white:hover {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
@@ -342,7 +348,7 @@ button.white:hover {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
@@ -357,7 +363,7 @@ button.white:hover {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
@@ -534,7 +540,7 @@ p, li {
   h6, .hSei {
     line-height: 1em; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   h1, .hUno {
     font-size: 2.4em; }
   h2, .hDos {
@@ -963,6 +969,7 @@ label.black, label.black:focus, label.black:hover {
   width: 100%; }
 
 .fullHeight {
+  position: absolute;
   top: 0;
   bottom: 0; }
 
@@ -977,7 +984,7 @@ label.black, label.black:focus, label.black:hover {
   left: 0; }
 
 article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-.displayBlock, .center {
+.displayBlock {
   display: block !important; }
 
 .displayInline {
@@ -2320,7 +2327,7 @@ figure {
 /* =============================================================================
    After Laptop Styles
    ========================================================================== */
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   .mraAL, .mhaAL, .centerAL {
     margin-right: auto !important; }
   .mlaAL, .mhaAL, .centerAL {
@@ -2873,12 +2880,6 @@ table th, table td {
 /* =============================================================================
    Useful Classes | Custom
    ========================================================================== */
-.textShadow {
-  text-shadow: 1px 1px 5px #333; }
-
-.letterSpacing {
-  letter-spacing: 0.05em; }
-
 body {
   background-color: #fff; }
 
@@ -3105,7 +3106,7 @@ label, input, select, textarea, button {
     height: 30px;
     line-height: 30px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   label {
     width: 520px; } }
 
@@ -3124,7 +3125,7 @@ label, input, select, textarea, button {
     height: 30px;
     line-height: 30px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   input, select {
     width: 520px; } }
 
@@ -3203,7 +3204,7 @@ button {
     button {
       height: 50px;
       line-height: 50px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
@@ -3267,7 +3268,7 @@ textarea {
   @media (min-width: 768px) {
     textarea {
       height: 100px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1025px) {
     textarea {
       height: 100px; } }
 
@@ -3368,7 +3369,7 @@ form.niceIt {
         .searchForm input[type="submit"] {
           background: transparent url("/nuevo/img/sprites.png") no-repeat -400px 0;
           width: 60px; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1025px) {
       .searchForm input {
         height: 50px; }
         .searchForm input[type="search"] {
