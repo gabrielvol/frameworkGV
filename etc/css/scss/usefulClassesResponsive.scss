@@ -5,8 +5,8 @@
 @include mobileOnly{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorATL;
-    .mraMO,.mhaMO,.centerMO{margin-right: $auto}
-    .mlaMO,.mhaMO,.centerMO{margin-left: $auto}
+    .mraMO,.mhaMO{margin-right: $auto}
+    .mlaMO,.mhaMO{margin-left: $auto}
     
     //Positioning
     .pRelMO{position: relative}
@@ -95,8 +95,8 @@
 @include afterMobileLandscape{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorAML;
-    .mraAML,.mhaAML,.centerAML{margin-right: $auto}
-    .mlaAML,.mhaAML,.centerAML{margin-left: $auto}
+    .mraAML,.mhaAML{margin-right: $auto}
+    .mlaAML,.mhaAML{margin-left: $auto}
     
     //Positioning
     .pRelAML{position: relative}
@@ -185,8 +185,8 @@
 @include mobileLandscapeOnly{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorMLO;
-    .mraMLO,.mhaMLO,.centerMLO{margin-right: $auto}
-    .mlaMLO,.mhaMLO,.centerMLO{margin-left: $auto}
+    .mraMLO,.mhaMLO{margin-right: $auto}
+    .mlaMLO,.mhaMLO{margin-left: $auto}
     
     //Positioning
     .pRelMLO{position: relative}
@@ -275,8 +275,8 @@
 @include beforeTablet{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorBT;
-    .mraBT,.mhaBT,.centerBT{margin-right: $auto}
-    .mlaBT,.mhaBT,.centerBT{margin-left: $auto}
+    .mraBT,.mhaBT{margin-right: $auto}
+    .mlaBT,.mhaBT{margin-left: $auto}
     
     //Positioning
     .pRelBT{position: relative}
@@ -365,8 +365,8 @@
 @include beforeTabletLandscape{    
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorBTL;
-    .mraBTL,.mhaBTL,.centerBTL{margin-right: $auto}
-    .mlaBTL,.mhaBTL,.centerBTL{margin-left: $auto}
+    .mraBTL,.mhaBTL{margin-right: $auto}
+    .mlaBTL,.mhaBTL{margin-left: $auto}
     
     //Positioning
     .pRelBTL{position: relative}
@@ -455,8 +455,8 @@
 @include tabletOnly{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorTO;
-    .mraTO,.mhaTO,.centerTO{margin-right: $auto}
-    .mlaTO,.mhaTO,.centerTO{margin-left: $auto}
+    .mraTO,.mhaTO{margin-right: $auto}
+    .mlaTO,.mhaTO{margin-left: $auto}
     
     //Positioning
     .pRelTO{position: relative}
@@ -545,8 +545,8 @@
 @include afterTablet{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorAT;
-    .mraAT,.mhaAT,.centerAT{margin-right: $auto}
-    .mlaAT,.mhaAT,.centerAT{margin-left: $auto}
+    .mraAT,.mhaAT{margin-right: $auto}
+    .mlaAT,.mhaAT{margin-left: $auto}
     
     //Positioning
     .pRelAT{position: relative}
@@ -635,8 +635,8 @@
 @include afterTabletLandscape{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorATL;
-    .mraATL,.mhaATL,.centerATL{margin-right: $auto}
-    .mlaATL,.mhaATL,.centerATL{margin-left: $auto}
+    .mraATL,.mhaATL{margin-right: $auto}
+    .mlaATL,.mhaATL{margin-left: $auto}
     
     //Positioning
     .pRelATL{position: relative}
@@ -725,8 +725,8 @@
 @include tabletLandscapeOnly{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorTLO;
-    .mraTLO,.mhaTLO,.centerTLO{margin-right: $auto}
-    .mlaTLO,.mhaTLO,.centerTLO{margin-left: $auto}
+    .mraTLO,.mhaTLO{margin-right: $auto}
+    .mlaTLO,.mhaTLO{margin-left: $auto}
     
     //Positioning
     .pRelTLO{position: relative}
@@ -815,8 +815,8 @@
 @include beforeDesktop{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorBD;
-    .mraBD,.mhaBD,.centerBD{margin-right: $auto}
-    .mlaBD,.mhaBD,.centerBD{margin-left: $auto}
+    .mraBD,.mhaBD{margin-right: $auto}
+    .mlaBD,.mhaBD{margin-left: $auto}
     
     //Positioning
     .pRelBD{position: relative}
@@ -905,8 +905,8 @@
 @include afterLaptop{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorAL;
-    .mraAL,.mhaAL,.centerAL{margin-right: $auto}
-    .mlaAL,.mhaAL,.centerAL{margin-left: $auto}
+    .mraAL,.mhaAL{margin-right: $auto}
+    .mlaAL,.mhaAL{margin-left: $auto}
     
     //Positioning
     .pRelAL{position: relative}
@@ -995,8 +995,8 @@
 @include afterDesktop{
     //Spacing Helpers
     @include spacingHelpersClassesGeneratorAD;
-    .mraAD,.mhaAD,.centerAD{margin-right: $auto}
-    .mlaAD,.mhaAD,.centerAD{margin-left: $auto}
+    .mraAD,.mhaAD{margin-right: $auto}
+    .mlaAD,.mhaAD{margin-left: $auto}
     
     //Positioning
     .pRelAD{position: relative}

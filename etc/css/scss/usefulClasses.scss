@@ -12,8 +12,8 @@
 
 //Spacing Helpers
 @include spacingHelpersClassesGenerator;
-.mra,.mha,.center,.centerCol{margin-right: $auto}
-.mla,.mha,.center,.centerCol{margin-left: $auto}
+.mra,.mha{margin-right: $auto}
+.mla,.mha{margin-left: $auto}
 
 // Positioning
 .pRel{position: relative}
@@ -45,7 +45,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     vertical-align: middle;
 }
 article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-.contentBox, .displayBlock, .center{
+.contentBox, .displayBlock{
     &, &::before, &::after{
         box-sizing: content-box;
     }
@@ -99,7 +99,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     justify-content: center;
     flex-wrap: nowrap;
 }
-.floatNone, .centerCol{float: $none}
+.floatNone{float: $none}
 %horizontal{
     list-style: $none;        
     li{
