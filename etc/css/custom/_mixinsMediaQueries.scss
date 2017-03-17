@@ -27,7 +27,7 @@ $desktopLargeMin: 1600px;
 /* < Tablet Landscape */
 @mixin beforeTabletLandscape{
     @media (max-width: #{$tabletPMax}){@content;}}
-
+    
 /* < Desktop */
 @mixin beforeDesktop{
     @media (max-width: #{$tabletMax}){@content;}}
@@ -77,7 +77,7 @@ $desktopLargeMin: 1600px;
 
 /* Laptop + */
 @mixin afterLaptop{
-    @media (min-width: #{$desktopMin}){@content;}}
+    @media (min-width: #{$laptopMin}){@content;}}
     
 /* Desktop + */
 @mixin afterDesktop{
