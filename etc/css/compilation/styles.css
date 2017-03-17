@@ -90,54 +90,6 @@
    OpenSans font-face | Etc
    ========================================================================== */
 /* =============================================================================
-   Font Settings | Custom
-   ========================================================================== */
-/*
-.exampleFont{font-family: 'exampleFont';}
-@font-face {
-  font-family: 'exampleFont';
-  src: url(/path/to/fonts/examplefont.woff) format('woff'),
-       url(/path/to/fonts/examplefont.eot) format('eot');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-*/
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
-select, textarea, blockquote, table {
-  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.4em; }
-
-.textShadow {
-  text-shadow: 1px 1px 5px #333; }
-
-.letterSpacing {
-  letter-spacing: 0.05em; }
-
-/* =============================================================================
-   Colour Settings | Custom
-   ========================================================================== */
-a.white:focus, a.white:hover {
-  color: #fff;
-  text-shadow: 0 0 3px #999; }
-
-input[type="reset"].white:focus, input[type="reset"].white:hover,
-input[type="submit"].white:focus,
-input[type="submit"].white:hover,
-input[type="button"].white:focus,
-input[type="button"].white:hover,
-button.white:focus,
-button.white:hover {
-  text-shadow: 0 0 2px #000; }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-.bgGradWhiteEighty {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-
-/* =============================================================================
    Media Queries | Custom
    ========================================================================== */
 /* < Mobile */
@@ -944,10 +896,10 @@ label.black, label.black:focus, label.black:hover {
 .mll, .mhl, .mal {
   margin-left: 20px !important; }
 
-.mra, .mha, .center, .centerCol {
+.mra, .mha {
   margin-right: auto !important; }
 
-.mla, .mha, .center, .centerCol {
+.mla, .mha {
   margin-left: auto !important; }
 
 .pRel {
@@ -1003,7 +955,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after,
 .contentBox,
 .contentBox::before,
-.contentBox::after, .displayBlock, .displayBlock::before, .displayBlock::after, .center, .center::before, .center::after {
+.contentBox::after, .displayBlock, .displayBlock::before, .displayBlock::after {
   box-sizing: content-box; }
 
 .borderBox {
@@ -1086,7 +1038,7 @@ article, article::before, article::after, details, details::before, details::aft
   justify-content: center;
   flex-wrap: nowrap; }
 
-.floatNone, .centerCol {
+.floatNone {
   float: none !important; }
 
 .mask {
@@ -1184,9 +1136,9 @@ figure {
    Useful Classes Responsive | Etc
    ========================================================================== */
 @media (max-width: 420px) {
-  .mraMO, .mhaMO, .centerMO {
+  .mraMO, .mhaMO {
     margin-right: auto !important; }
-  .mlaMO, .mhaMO, .centerMO {
+  .mlaMO, .mhaMO {
     margin-left: auto !important; }
   .pRelMO {
     position: relative; }
@@ -1292,9 +1244,9 @@ figure {
    After Mobile Landscape Styles
    ========================================================================== */
 @media (min-width: 421px) {
-  .mraAML, .mhaAML, .centerAML {
+  .mraAML, .mhaAML {
     margin-right: auto !important; }
-  .mlaAML, .mhaAML, .centerAML {
+  .mlaAML, .mhaAML {
     margin-left: auto !important; }
   .pRelAML {
     position: relative; }
@@ -1400,9 +1352,9 @@ figure {
    Mobile Landscape Only Styles
    ========================================================================== */
 @media (min-width: 421px) and (max-width: 767px) {
-  .mraMLO, .mhaMLO, .centerMLO {
+  .mraMLO, .mhaMLO {
     margin-right: auto !important; }
-  .mlaMLO, .mhaMLO, .centerMLO {
+  .mlaMLO, .mhaMLO {
     margin-left: auto !important; }
   .pRelMLO {
     position: relative; }
@@ -1508,9 +1460,9 @@ figure {
    Before Tablet Styles
    ========================================================================== */
 @media (max-width: 767px) {
-  .mraBT, .mhaBT, .centerBT {
+  .mraBT, .mhaBT {
     margin-right: auto !important; }
-  .mlaBT, .mhaBT, .centerBT {
+  .mlaBT, .mhaBT {
     margin-left: auto !important; }
   .pRelBT {
     position: relative; }
@@ -1616,9 +1568,9 @@ figure {
    Before Tablet Landscape Styles
    ========================================================================== */
 @media (max-width: 1023px) {
-  .mraBTL, .mhaBTL, .centerBTL {
+  .mraBTL, .mhaBTL {
     margin-right: auto !important; }
-  .mlaBTL, .mhaBTL, .centerBTL {
+  .mlaBTL, .mhaBTL {
     margin-left: auto !important; }
   .pRelBTL {
     position: relative; }
@@ -1724,9 +1676,9 @@ figure {
    Tablet Only Styles
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .mraTO, .mhaTO, .centerTO {
+  .mraTO, .mhaTO {
     margin-right: auto !important; }
-  .mlaTO, .mhaTO, .centerTO {
+  .mlaTO, .mhaTO {
     margin-left: auto !important; }
   .pRelTO {
     position: relative; }
@@ -1896,9 +1848,9 @@ figure {
     margin-bottom: 20px !important; }
   .mllAT, .mhlAT, .malAT {
     margin-left: 20px !important; }
-  .mraAT, .mhaAT, .centerAT {
+  .mraAT, .mhaAT {
     margin-right: auto !important; }
-  .mlaAT, .mhaAT, .centerAT {
+  .mlaAT, .mhaAT {
     margin-left: auto !important; }
   .pRelAT {
     position: relative; }
@@ -2004,9 +1956,9 @@ figure {
    After Tablet Landscape Styles
    ========================================================================== */
 @media (min-width: 1024px) {
-  .mraATL, .mhaATL, .centerATL {
+  .mraATL, .mhaATL {
     margin-right: auto !important; }
-  .mlaATL, .mhaATL, .centerATL {
+  .mlaATL, .mhaATL {
     margin-left: auto !important; }
   .pRelATL {
     position: relative; }
@@ -2112,9 +2064,9 @@ figure {
    Tablet Landscape Only Styles
    ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1199px) {
-  .mraTLO, .mhaTLO, .centerTLO {
+  .mraTLO, .mhaTLO {
     margin-right: auto !important; }
-  .mlaTLO, .mhaTLO, .centerTLO {
+  .mlaTLO, .mhaTLO {
     margin-left: auto !important; }
   .pRelTLO {
     position: relative; }
@@ -2220,9 +2172,9 @@ figure {
    Before Desktop Styles
    ========================================================================== */
 @media (max-width: 1199px) {
-  .mraBD, .mhaBD, .centerBD {
+  .mraBD, .mhaBD {
     margin-right: auto !important; }
-  .mlaBD, .mhaBD, .centerBD {
+  .mlaBD, .mhaBD {
     margin-left: auto !important; }
   .pRelBD {
     position: relative; }
@@ -2328,9 +2280,9 @@ figure {
    After Laptop Styles
    ========================================================================== */
 @media (min-width: 1025px) {
-  .mraAL, .mhaAL, .centerAL {
+  .mraAL, .mhaAL {
     margin-right: auto !important; }
-  .mlaAL, .mhaAL, .centerAL {
+  .mlaAL, .mhaAL {
     margin-left: auto !important; }
   .pRelAL {
     position: relative; }
@@ -2436,9 +2388,9 @@ figure {
    After Desktop Styles
    ========================================================================== */
 @media (min-width: 1200px) {
-  .mraAD, .mhaAD, .centerAD {
+  .mraAD, .mhaAD {
     margin-right: auto !important; }
-  .mlaAD, .mhaAD, .centerAD {
+  .mlaAD, .mhaAD {
     margin-left: auto !important; }
   .pRelAD {
     position: relative; }
@@ -2878,7 +2830,55 @@ table th, table td {
    Global Variables | Custom
    ========================================================================== */
 /* =============================================================================
-   Useful Classes | Custom
+   Font Settings | Custom
+   ========================================================================== */
+/*
+.exampleFont{font-family: 'exampleFont';}
+@font-face {
+  font-family: 'exampleFont';
+  src: url(/path/to/fonts/examplefont.woff) format('woff'),
+       url(/path/to/fonts/examplefont.eot) format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
+select, textarea, blockquote, table {
+  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em; }
+
+.textShadow {
+  text-shadow: 1px 1px 5px #333; }
+
+.letterSpacing {
+  letter-spacing: 0.05em; }
+
+/* =============================================================================
+   Colour Settings | Custom
+   ========================================================================== */
+a.white:focus, a.white:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #999; }
+
+input[type="reset"].white:focus, input[type="reset"].white:hover,
+input[type="submit"].white:focus,
+input[type="submit"].white:hover,
+input[type="button"].white:focus,
+input[type="button"].white:hover,
+button.white:focus,
+button.white:hover {
+  text-shadow: 0 0 2px #000; }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+.bgGradWhiteEighty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+
+/* =============================================================================
+   Background Settings | Custom
    ========================================================================== */
 body {
   background-color: #fff; }
@@ -2935,6 +2935,9 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bgError {
   background-color: #d43131; }
 
+/* =============================================================================
+   Shadows Settings | Custom
+   ========================================================================== */
 .boxShadow {
   box-shadow: 0 0 10px 0 #666; }
 
@@ -2947,6 +2950,9 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bgShadowB {
   background: transparent url("/nuevo/img/bg_shadowB.png") repeat-x center bottom; }
 
+/* =============================================================================
+   Border Settings | Custom
+   ========================================================================== */
 .bw {
   border-color: #fff; }
 
@@ -2956,6 +2962,9 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bg {
   border-color: #999; }
 
+/* =============================================================================
+   Settings Lists | Custom
+   ========================================================================== */
 .ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
   position: relative; }
 
