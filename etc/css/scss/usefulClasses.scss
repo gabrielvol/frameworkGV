@@ -25,6 +25,7 @@
 .autoHeight{height: auto}
 .fullWidth{width: 100%}
 .fullHeight{
+    position: absolute;
     @include posTB(0, 0);
 }
 .fullHeightPercent{height: 100%}
