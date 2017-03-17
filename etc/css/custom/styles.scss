@@ -9,14 +9,8 @@
 @import "variables/forms";
 @import "variables/tables";
 
-//Settings
+//OpenSans
 @import "../scss/openSans";
-@import "settingsFonts";
-@import "settingsColours";
-@import "settingsBackgrounds";
-@import "settingsShadows";
-@import "settingsBorders";
-@import "settingsLists";
 
 //Mixins
 @import "mixinsMediaQueries";
@@ -50,6 +44,12 @@
 
 //Custom Styles
 @import "global";
+@import "settingsFonts";
+@import "settingsColours";
+@import "settingsBackgrounds";
+@import "settingsShadows";
+@import "settingsBorders";
+@import "settingsLists";
 @import "forms";
 @import "formsNiceIt";
 @import "searchForm";
