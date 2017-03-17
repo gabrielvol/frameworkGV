@@ -37,8 +37,8 @@ margin-left: $auto;
 .mrl,.mhl,.mal{margin-right:20px!important}
 .mbl,.mvl,.mal{margin-bottom:20px!important}
 .mll,.mhl,.mal{margin-left:20px!important}
-.mra,.mha,.center,.centerCol{margin-right:auto!important}
-.mla,.mha,.center,.centerCol{margin-left:auto!important}
+.mra,.mha,.centerCol{margin-right:auto!important}
+.mla,.mha,.centerCol{margin-left:auto!important}
 
 > *{
     flex-grow: 1;
