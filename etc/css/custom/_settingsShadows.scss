@@ -1,0 +1,7 @@
+/* =============================================================================
+   Shadows Settings | Custom
+   ========================================================================== */
+.boxShadow{box-shadow: 0 0 10px 0 $greyD}
+.boxShadowInner{box-shadow: inset 0 0 10px 0 $greyD}
+.bgShadowT{background: transparent url('/nuevo/img/bg_shadowT.png') repeat-x center top}
+.bgShadowB{background: transparent url('/nuevo/img/bg_shadowB.png') repeat-x center bottom}

@@ -13,6 +13,10 @@
 @import "../scss/openSans";
 @import "settingsFonts";
 @import "settingsColours";
+@import "settingsBackgrounds";
+@import "settingsShadows";
+@import "settingsBorders";
+@import "settingsLists";
 
 //Mixins
 @import "mixinsMediaQueries";
@@ -46,7 +50,6 @@
 
 //Custom Styles
 @import "global";
-@import "usefulClasses";
 @import "forms";
 @import "formsNiceIt";
 @import "searchForm";
