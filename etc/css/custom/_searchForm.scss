@@ -14,7 +14,7 @@
             line-height: $searchFormSubmitValueBT;
         }
         &[type="submit"]{
-            @include opacityCBHover;
+            @include opacityCustomHover;
             @include sprites(-461px 0);
             position: absolute;
             top: 0;

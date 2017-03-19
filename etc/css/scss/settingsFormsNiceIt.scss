@@ -74,7 +74,7 @@ form.niceIt{
                 text-indent: -9999px;
                 
                 input{
-                    @include opacityCB(00);
+                    @include opacityCustom(00);
                     position: relative;
                     cursor: pointer
                 }

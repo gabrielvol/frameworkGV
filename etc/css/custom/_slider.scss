@@ -50,7 +50,7 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
 
 .slickPrev, .slickNext{
     @include transition(0.7s);
-    @include opacityCBHover();
+    @include opacityCustomHover();
     cursor: pointer;
     position: absolute;
     top: 50%;

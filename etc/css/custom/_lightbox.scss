@@ -92,7 +92,7 @@ body::after {
         background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
         
         &.lb-prev, &.lb-next{
-            @include opacityCBHover(00, 100);
+            @include opacityCustomHover(00, 100);
             @include transition(0.6s);
         }
         &.lb-prev{
@@ -154,7 +154,7 @@ body::after {
     }
     .lb-close {
         @include squareSize(30px);
-        @include opacityCBHover(70, 100);
+        @include opacityCustomHover(70, 100);
         @include transition(0.2s);
         display: block;
         float: right;
