@@ -3,7 +3,7 @@
    ========================================================================== */
 $closeWHvalue: 20px;
 
-.close{    
+.closePopup{    
     @include bgSvg(ic_closePopup);        
     @include squareSize($closeWHvalue);
     display: block;
@@ -50,7 +50,7 @@ $closeWHvalue: 20px;
         @include afterLaptop{}
     }
     
-    .close{
+    .closePopup{
         $closeWHvaluePosition: calc(#{$closeWHvalue} + 5px);
         top: calc(-1 * #{$closeWHvaluePosition});
         right: calc(-1 * #{$closeWHvaluePosition});
