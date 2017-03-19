@@ -1,7 +1,7 @@
 /* =============================================================================
    Font Variables | Etc
    ========================================================================== */
-// Sans Serif Stack
+    //Sans Serif Stack
 $fontFamiliesMapSans:(
     arial: Arial,
     sansSerif: sans-serif,
@@ -35,7 +35,7 @@ $tahoma: map-get($fontFamiliesMapSans, tahoma);
 $lucidaGrande: map-get($fontFamiliesMapSans, lucidaGrande);
 $trebuchetMS: map-get($fontFamiliesMapSans, trebuchetMS);
 
-// Serif Stack
+    //Serif Stack
 $fontFamiliesMapSerif:(
     timesNewRoman: 'Times New Roman',
     georgia: Georgia,
@@ -48,7 +48,7 @@ $fontFamiliesListSerif:
     map-get($fontFamiliesMapSerif, serif),
     map-get($fontFamiliesMapSerif, palatino);
 
-// Monospaced Stack
+    //Monospaced Stack
 $fontFamiliesMapMono:(
     courierNew: 'Courier New',
     lucidaConsole: 'Lucida Console',
@@ -59,7 +59,7 @@ $fontFamiliesListMono:
     map-get($fontFamiliesMapMono, lucidaConsole),
     map-get($fontFamiliesMapMono, andaleMono);
 
-//Font Sizes
+    //Font Sizes
 $h1List: 'h1, .hUno';
 $h2List: 'h2, .hDos';
 $h3List: 'h3, .hTre';

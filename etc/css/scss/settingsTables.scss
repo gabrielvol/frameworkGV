@@ -20,7 +20,7 @@ table{
     }
 }
 
-/* Rounded Tables */
+    //Rounded Tables
 .tableRounded{
     @include borderRadius($borderRadiusValue);
     border-collapse: separate;
@@ -52,7 +52,7 @@ table{
     }
 }
 
-/* Striped Tables */
+    //Striped Tables
 .tableStriped{
     thead, tfoot{
         tr{
