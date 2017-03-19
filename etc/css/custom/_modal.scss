@@ -35,7 +35,7 @@ $closeWHvalue: 20px;
         }
         
         @include mobileOnly{
-            @include centerPopup(280px,120px);
+            @include responsiveWidthAndHeight(100px, 100px);
             padding: 20px;
             
             .close{               
@@ -44,7 +44,7 @@ $closeWHvalue: 20px;
             }
         }
         @include afterTablet{
-            @include centerPopup(500px,100px);
+            @include responsiveWidthAndHeight(100px, 100px);
             padding: 25px;
         }
         @include afterLaptop{}

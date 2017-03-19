@@ -164,6 +164,9 @@
    Position Mixins | Etc
    ========================================================================== */
 /* =============================================================================
+   Resposive Sizing Mixins | Etc
+   ========================================================================== */
+/* =============================================================================
    Container Styles | Etc
    ========================================================================== */
 .container {
@@ -2812,9 +2815,6 @@ table th, table td {
   z-index: 9000;
   background-color: #000; }
 
-:root .modal, :root .modalBG {
-  filter: none \0/IE9; }
-
 .popup {
   z-index: 9100;
   left: 50%; }
@@ -3497,7 +3497,7 @@ table.tableRounded {
 /* =============================================================================
    Modal y popup Styles | Custom
    ========================================================================== */
-.close {
+.closePopup {
   background-color: transparent;
   background-image: url("/nuevo/img/ic_closePopup.svg");
   background-repeat: no-repeat;
@@ -3510,15 +3510,19 @@ table.tableRounded {
   text-indent: -9999px; }
 
 .popup {
-  top: 50%;
-  width: 100px;
-  height: 100px;
-  margin-top: calc(-1 * 100px/2);
-  margin-left: calc(-1 * 100px/2);
-  position: fixed;
-  max-width: 100%;
-  max-height: 100%; }
+  min-width: 100px;
+  min-height: 100px;
+  width: calc(($breakpointWidth - 100%) * 1000);
+  height: calc(($breakpointHeight - 100%) * 1000);
+  max-width: 90%;
+  max-height: 90%;
+  position: fixed; }
   .popup .modalWrap {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
     padding: 20px;
     overflow: auto; }
   .popup.statusDiv {
@@ -3532,26 +3536,31 @@ table.tableRounded {
       text-align: center; }
     @media (max-width: 420px) {
       .popup.statusDiv {
-        top: 40%;
-        width: 280px;
-        height: 120px;
-        margin-top: calc(-1 * 120px/2);
-        margin-left: calc(-1 * 280px/2);
+        min-width: 100px;
+        min-height: 100px;
+        width: calc(($breakpointWidth - 100%) * 1000);
+        height: calc(($breakpointHeight - 100%) * 1000);
+        max-width: 90%;
+        max-height: 90%;
         padding: 20px; }
         .popup.statusDiv .close {
           top: calc(-1 * 20px);
           right: -10px; } }
     @media (min-width: 768px) {
       .popup.statusDiv {
-        top: 40%;
-        width: 500px;
-        height: 100px;
-        margin-top: calc(-1 * 120px/2);
-        margin-left: calc(-1 * 280px/2);
+        min-width: 100px;
+        min-height: 100px;
+        width: calc(($breakpointWidth - 100%) * 1000);
+        height: calc(($breakpointHeight - 100%) * 1000);
+        max-width: 90%;
+        max-height: 90%;
         padding: 25px; } }
-  .popup .close {
-    top: calc(-1 * calc(20px + 5px));
-    right: calc(-1 * calc(20px + 5px)); }
+  .popup .closePopup {
+    top: 20px;
+    right: 20px; }
+    .popup .closePopup.closePopupOut {
+      top: calc(-1 * calc(20px + 5px));
+      right: calc(-1 * calc(20px + 5px)); }
 
 /* =============================================================================
    Slick Slider Styles | Custom
