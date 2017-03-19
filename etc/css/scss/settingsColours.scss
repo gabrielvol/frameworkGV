@@ -36,7 +36,6 @@ a.white{
     }
 }
 @include colourDarkClassesGenerator($lightenValue);
-@include lighterDarkerSubclassesGenerator;
 @include anchorColoursLightClassesGenerator($darkenValueAnchor);
 @include anchorColoursDarkClassesGenerator($lightenValueAnchor);
 @include colourCustomHoverClassesGenerator;
