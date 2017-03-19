@@ -18,7 +18,7 @@
 }
 
 .popup{
-    z-index: 9100;
+    z-index: $zIndexPopup;
     left: 50%;
     
     .close{
