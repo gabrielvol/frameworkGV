@@ -1,11 +1,9 @@
 /* =============================================================================
    Border Helpers Mixins | Etc
    ========================================================================== */
-    //Border Style
-    
-//b = border
-//a,t,r,b,l = all,top,right,bottom,left
-//h,v,x = horizontal,vertical,user defined values
+    //Border Style    
+//A,T,R,B,L = all,top,right,bottom,left
+//H,V,X = horizontal,vertical,user defined values
 
 @mixin borderStyle($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
     border: $borderWidthValue $borderStyleValue $borderColourValue}
@@ -34,8 +32,6 @@
 }
 
     // Border Radius 
-
-//Border Radius Classes
 //T,R,B,L = top,right,bottom,left
 
 @mixin borderRadius($borderRadiusMixinValue: $borderRadiusValue){
