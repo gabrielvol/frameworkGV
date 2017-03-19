@@ -84,7 +84,7 @@
     margin-left: $PBMSsepValue;
 }
 
-//Fancy Horizontal Line
+    //Fancy Horizontal Line
 @mixin fancyHorizontalLines($border: 1px solid white, $width: 100px, $separation: 15px){
     &{
         line-height: 0.5;
@@ -111,14 +111,7 @@
         }
     }
 }
-@mixin fancyHorizontalLinesDouble(
-    $borderT: 1px solid white,
-    $width: 100px,
-    $separation: 15px,
-    $height: 5px,
-    $marginTop: 10px,
-    $borderB: $borderT
-){
+@mixin fancyHorizontalLinesDouble( $borderT: 1px solid white, $width: 100px, $separation: 15px, $height: 5px, $marginTop: 10px, $borderB: $borderT){
     &{
         line-height: 0.5;
         text-align: center;
