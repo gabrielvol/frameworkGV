@@ -1,7 +1,7 @@
 /* =============================================================================
    Fonts Mixins | Etc
    ========================================================================== */
-//Generador de clases por cada fuente
+    //Generador de clases por cada fuente
 @mixin fontFamilyCustomClassesGenerator{
     @each $fontFamilyClassName, $fontFamilyName in $fontFamiliesSiteFontsMap {
         .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
@@ -13,7 +13,7 @@
         }
     }
 }
-//Generador de clases por cada tamaño de fuente
+    //Generador de clases por cada tamaño de fuente
 @mixin fontCustomHeadingsSizesGeneratorMobile{
     @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapMobile {
         #{$headingsClassName}{font-size: $fontCustomSizeValues;}

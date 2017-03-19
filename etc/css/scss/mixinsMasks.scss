@@ -21,7 +21,7 @@
     }
 }
 
-//Mixins para máscaras
+    //Mixins para máscaras
 @mixin maskWidth($maskValue: 100%){
     width: $maskValue;
     overflow: hidden;
