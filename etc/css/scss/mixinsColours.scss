@@ -57,56 +57,7 @@
         }
     }
 }
-    //Generados de subclases lighter, darker, etc
-@mixin lighterDarkerSubclassesGenerator{
-    @if $lighterDarkerClasses == "on" {
-        @each $colourClassName, $colourVariable in $lighterDarkerClasses {
-            .#{$colourClassName}{
-                .lightColour{
-                    color: lighten($colourVariable, $lightValue);}
-                .lighterColour{
-                    color: lighten($colourVariable, $lighterValue);}
-                .lightestColour{
-                    color: lighten($colourVariable, $lightestValue);}
-                .darkColour{
-                    color: darken($colourVariable, $darkValue);}
-                .darkerColour{
-                    color: darken($colourVariable, $darkerValue);}
-                .darkestColour{
-                    color: darken($colourVariable, $darkestValue);}
-            }
-        }
-    }
-    @if $lighterDarkerStrong == "on" {
-        @each $colourClassName, $colourVariable in $lighterDarkerClasses {
-            .lightColour{
-                strong{
-                    color: darken($colourVariable, 5%);}
-            }
-            .lighterColour{
-                strong{
-                    color: darken($colourVariable, 10%);}
-            }
-            .lightestColour{
-                strong{
-                    color: darken($colourVariable, 15%);}
-            }
-            .darkColour{
-                strong{
-                    color: lighten($colourVariable, 5%);}
-            }
-            .darkerColour{
-                strong{
-                    color: lighten($colourVariable, 10%);}
-            }
-            .darkestColour{
-                strong{
-                    color: lighten($colourVariable, 15%);}
-            }
-        }
-    }
-}
-//Generador de clases por cada color de fondo
+    //Generador de clases por cada color de fondo
 @mixin backgroundColourClassesGenerator{
     @each $bgColourClassName, $bgColourHexValue in $backgroundColoursMap {
         .bg#{$bgColourClassName}{background-color: $bgColourHexValue;}
