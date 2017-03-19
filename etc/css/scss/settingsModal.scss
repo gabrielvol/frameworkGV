@@ -22,6 +22,6 @@
     left: 50%;
     
     .close{
-        z-index: 9200;
+        z-index: $zIndexPopupClose;
     }
 }
