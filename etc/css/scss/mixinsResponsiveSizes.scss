@@ -1,0 +1,8 @@
+/* =============================================================================
+   Resposive Sizing Mixins | Etc
+   ========================================================================== */
+@mixin responsivewidth($minWidth, $breakpoint: $minWidth, $maxWidth: 90%){
+    min-width: $minWidth;
+    width: calc(($breakpoint - 100%) * 1000);
+    max-width: $maxWidth;
+}
