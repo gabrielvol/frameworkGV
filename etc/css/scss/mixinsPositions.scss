@@ -2,48 +2,48 @@
    Position Mixins | Etc
    ========================================================================== */
     //Top
-@mixin posTR($a, $b){
+@mixin posTR($a: 0, $b: 0){
     top: $a;
     right: $b;
 }
-@mixin posTB($a, $b){
+@mixin posTB($a: 0, $b: 0){
     top: $a;  
     bottom: $b;  
 }
-@mixin posTL($a, $b){
+@mixin posTL($a: 0, $b: 0){
     top: $a;  
     left: $b;  
 }
-@mixin posRB($a, $b){
+@mixin posRB($a: 0, $b: 0){
     right: $a;
     bottom: $b;  
 }
-@mixin posRL($a, $b){
+@mixin posRL($a: 0, $b: 0){
     right: $a;
     left: $b;  
 }
 
-@mixin posTRB($a, $b, $c){
+@mixin posTRB($a: 0, $b: 0, $c: 0){
     top: $a;
     right: $b;
     bottom: $c;
 }
-@mixin posTRL($a, $b, $c){
+@mixin posTRL($a: 0, $b: 0, $c: 0){
     top: $a;
     right: $b;
     left: $c;
 }
-@mixin posTBL($a, $b, $c){
+@mixin posTBL($a: 0, $b: 0, $c: 0){
     top: $a;
     bottom: $b;
     left: $c;
 }
-@mixin posRBL($a, $b, $c){
+@mixin posRBL($a: 0, $b: 0, $c: 0){
     right: $a;
     bottom: $b;
     left: $c;
 }
-@mixin posTRBL($a, $b, $c, $d){
+@mixin posTRBL($a: 0, $b: 0, $c: 0, $d: 0){
     top: $a;
     right: $b;
     bottom: $c;
