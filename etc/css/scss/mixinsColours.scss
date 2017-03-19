@@ -79,24 +79,6 @@
         }
     }
 }
-    //Mixin para agregar color property con :focus y :hover
-@mixin focusHoverColour($colorHoverValue){
-    &:focus, &:hover{
-        color: $colorHoverValue!important;
-    }
-}
-    //Mixin para agregar background position property con :focus y :hover
-@mixin focusHoverBgPosition($bgPositionValues){
-    &:focus, &:hover{
-        background-position: $bgPositionValues;
-    }
-}
-    //Mixin para agregar background color property con :focus y :hover
-@mixin focusHoverBgColour($bgColorHoverValue){
-    &:focus, &:hover{
-        background-color: $bgColorHoverValue;
-    }
-}
     //Generador de clases para colores con focus y hover custom
 @mixin colourCustomHoverClassesGenerator{
     @each $colourClassName, $colourHexValue in $coloursMapCustomHover {
