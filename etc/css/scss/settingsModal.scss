@@ -8,12 +8,6 @@
     z-index: $zIndexModalBG;
     background-color: $bgBlack;
 }
-:root{
-    .modal, .modalBG{
-        filter: none \0/IE9;
-    }
-}
-
 .popup{
     z-index: $zIndexPopup;
     left: 50%;
