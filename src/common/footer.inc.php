@@ -12,19 +12,12 @@
 
 <!--Popup-->
 <div class="modal popup displayNone">
-    <a href="javascript:void(0)" class="close">Cerrar</a>
-    <div class="modalWrap pAbs coverAll">
+    <a href="javascript:void(0)" class="closePopup">Cerrar</a>
+    <a href="javascript:void(0)" class="closePopup"><?php echo _("Cerrar"); ?></a>
+    <div class="modalWrap">
         
     </div>
 </div>
-
-<div class="modal popup displayNone">
-    <a href="javascript:void(0)" class="close"><?php echo _("Cerrar"); ?></a>
-    <div class="modalWrap pAbs coverAll">
-        
-    </div>
-</div>
-
 <div class="modalBG displayNone"></div>
 
 <script type="text/javascript" src="/nuevo/js/plugins.js"></script>

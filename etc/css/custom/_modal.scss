@@ -10,12 +10,14 @@ $closeWHvalue: 20px;
     position: absolute;
     text-indent: -9999px;    
 }
-
+    
 .popup{
     @include responsiveWidthAndHeight(100px, 100px);
     position: fixed;
     
     .modalWrap{
+        @include posTRBL;
+        position: absolute;
         padding: 20px;
         overflow: auto;
     }
