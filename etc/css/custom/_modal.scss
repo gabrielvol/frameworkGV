@@ -12,10 +12,8 @@ $closeWHvalue: 20px;
 }
 
 .popup{
-    @include centerPopup(100px,100px,50%);
+    @include responsiveWidthAndHeight(100px, 100px);
     position: fixed;
-    max-width: 100%;
-    max-height: 100%;
     
     .modalWrap{
         padding: 20px;
@@ -51,8 +49,12 @@ $closeWHvalue: 20px;
     }
     
     .closePopup{
-        $closeWHvaluePosition: calc(#{$closeWHvalue} + 5px);
-        top: calc(-1 * #{$closeWHvaluePosition});
-        right: calc(-1 * #{$closeWHvaluePosition});
+        @include posTR(20px, 20px);        
+        
+        &.closePopupOut{
+            $closeWHvaluePosition: calc(#{$closeWHvalue} + 5px);
+            top: calc(-1 * #{$closeWHvaluePosition});
+            right: calc(-1 * #{$closeWHvaluePosition});
+        }
     }
 }
