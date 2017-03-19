@@ -2735,7 +2735,6 @@ form.niceIt .fmRadio {
 table th, table td {
   vertical-align: middle; }
 
-/* Rounded Tables */
 .tableRounded {
   border-radius: 12px;
   border-collapse: separate; }
@@ -2750,7 +2749,6 @@ table th, table td {
   .tableRounded tr:last-child td {
     border-bottom: 0 !important; }
 
-/* Striped Tables */
 .tableStriped thead tr, .tableStriped tfoot tr {
   background-color: #aaa; }
 
