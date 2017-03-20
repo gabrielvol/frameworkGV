@@ -1,22 +1,22 @@
 /* =============================================================================
    Resposive Sizing Mixins | Etc
    ========================================================================== */
-@mixin responsiveWidth($minWidth, $breakpointWidth: $minWidth, $maxWidth: 90%){
+@mixin responsiveWidth($minWidth, $breakpointWidth: $minWidth, $maxWidth: 80%){
     min-width: $breakpointWidth;
-    width: calc(($breakpoint - 100%) * 1000);
+    width: calc((#{$breakpointWidth} - 100%) * 1000);
     max-width: $maxWidth;
 }
-@mixin responsiveHeight($minHeight, $breakpointHeight: $minHeight, $maxHeight: 90%){
+@mixin responsiveHeight($minHeight, $breakpointHeight: $minHeight, $maxHeight: 80%){
     min-height: $minHeight;
-    height: calc(($breakpointHeight - 100%) * 1000);
+    height: calc((#{$breakpointHeight} - 100%) * 1000);
     max-height: $maxHeight;
 }
 @mixin responsiveWidthAndHeight(
-$minWidth, $minHeight, $breakpointWidth: $minWidth, $breakpointHeight: $minHeight, $maxWidth: 90%, $maxHeight: 90%){
+$minWidth, $minHeight, $breakpointWidth: $minWidth, $breakpointHeight: $minHeight, $maxWidth: 80%, $maxHeight: 70%){
     min-width: $minWidth;
     min-height: $minHeight;
-    width: calc(($breakpointWidth - 100%) * 1000);
-    height: calc(($breakpointHeight - 100%) * 1000);
+    width: calc((#{$breakpointWidth} - 100%) * 1000);
+    height: calc((#{$breakpointHeight} - 100%) * 1000);
     max-width: $maxWidth;
     max-height: $maxHeight;
 }
