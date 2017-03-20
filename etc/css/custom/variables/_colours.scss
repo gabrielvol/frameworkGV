@@ -130,6 +130,7 @@ $backgroundColoursMap:(
     GreyD: $greyD,
     GreyXD: $greyXD
 );
+
 $bgWhite: map-get($backgroundColoursMap, White);
 $bgBlack: map-get($backgroundColoursMap, Black);
 $bgError: map-get($backgroundColoursMap, Error);
