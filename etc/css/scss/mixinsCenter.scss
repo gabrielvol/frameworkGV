@@ -35,3 +35,13 @@
     margin-right: $auto;
     margin-left: $auto;
 }
+    //Mixin para centrar popup
+@mixin centerPopup($widthValue, $heightValue, $topValue: 40%){
+    $widthValueH: #{$widthValue}/2;
+    $heightValueH: #{$heightValue}/2;    
+    top: $topValue;
+    width: $widthValue;
+    height: $heightValue;
+    margin-top: calc(-1 * #{$heightValueH});
+    margin-left: calc(-1 * #{$widthValueH});
+}
