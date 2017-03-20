@@ -5,9 +5,8 @@
 ///**Colours Map Light:** 
     ///Aquí se agregan los colores CLAROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.white{color: #fff}`, con el mixin  **colourLightClassesGenerator** `[/etc/scss/mixinsColours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color de acuerdo al porcentaje asignado en la variable `$darkenValue` debajo del mapa.
 $coloursMapLight:(
-    redSys: #ff0000,
+    //redColour: #ee0000,
     errorColour: #d43131,
-    redColour: #ee0000,
     green: #339900,
     greyXXL: #f4f4f4,
     greyXL: #dedede,
@@ -39,9 +38,8 @@ $coloursMapMerged: map-merge(
 $white: #fff;
 $whiteHover: darken($white, 10%);
 $black: map-get($coloursMapMerged, black);
-$redSys: map-get($coloursMapMerged, redSys);
 $errorColour: map-get($coloursMapMerged, errorColour);
-$redColour: map-get($coloursMapMerged, redColour);
+//$redColour: map-get($coloursMapMerged, redColour);
 $green: map-get($coloursMapMerged, green);
 $greyXXL: map-get($coloursMapMerged, greyXXL);
 $greyXL: map-get($coloursMapMerged, greyXL);
@@ -65,24 +63,6 @@ $anchorColoursDark:(
 $lightenValueAnchor: 20%;
 
 /* =============================================================================
-   Lighters Darkers | Custom
-   ========================================================================== */
-$lighterDarkerClasses: off;
-$lighterDarkerStrong: off;
-///**Lighter Darker Classes:** 
-    ///Aquí se agregan los colores que generarán sus versiones light y dark. De este mapa se crearán las clases `.lightColour`, `.lighterColour`, `.lightestColour` y `.darkColour`, `.darkerColour`, `.darkestColour`, dentro de la primera, con el mixin **lighterDarkerSubclassesGenerator** `[/etc/scss/coloursMixins.scss]`. El mixin se activa (on/off) con la variable `$lighterDarkerClasses`; hay una variable `$lighterDarkerStrong` que activa las etiquetas `strong` dentro de las primeras. Todo esto dentro de `/css/scss/variables/colours.scss`. Los valores de claridad y oscuridad se declaran en las variables `$lightValue`, `$lighterValue`, `$lightestValue`, `$darkValue`, `$darkerValue`, y `$darkestValue` debajo del mapa.
-$lighterDarkerClasses:(    
-    //orange: $orange
-);
-
-$lightValue: 7%;
-$lighterValue: 15%;
-$lightestValue: 22%;
-$darkValue: 7%;
-$darkerValue: 15%;
-$darkestValue: 22%;
-
-/* =============================================================================
    Font Colours | Custom
    ========================================================================== */
 ///**Font Colours:** 
@@ -93,7 +73,7 @@ $mainFontColourHover: darken($mainFontColour, 20%);
 $anchorFontColour: $mainFontColourHover;
 $anchorFontColourHover: darken($mainFontColourHover, 20%);
 
-$secondaryFontColour: #999;
+//$secondaryFontColour: #999;
 
 /* =============================================================================
    Border Colours | Custom
@@ -101,35 +81,36 @@ $secondaryFontColour: #999;
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio.
 $borderColoursMap:(
-    mainBcColour: $grey,
-    secondaryBcColour: $greyD,
+    white: $white,
+    black: $black,
     error: $errorColour,
-    green: $green,
+    //red: $redColour,
+    //green: $green,
     greyXXL: $greyXXL,
     greyXL: $greyXL,
     greyL: $greyL,
     grey: $grey,
     greyD: $greyD,
-    greyXD: $greyXD,
-    white: $white,
-    black: $black
+    greyXD: $greyXD
 );
 
-$mainBcColour: map-get($borderColoursMap, mainBcColour);
-$mainBcColourHover: lighten($mainBcColour, 15%);
-
-$secondaryBcColour: map-get($borderColoursMap, secondaryBcColour);
-$secondaryBcColourHover: darken($mainBcColour, 15%);
-
-$bcWhite: $white;
-$bcBlack: $black;
+$bcWhite: map-get($borderColoursMap, white);
+$bcBlack: map-get($borderColoursMap, black);
 $bcError: map-get($borderColoursMap, error);
+//$bcRed: map-get($borderColoursMap, redColour);
+//$bgGreen: map-get($borderColoursMap, green);
 $bcGreyXXL: map-get($borderColoursMap, greyXXL);
 $bcGreyXL: map-get($borderColoursMap, greyXL);
 $bcGreyL: map-get($borderColoursMap, greyL);
 $bcGrey: map-get($borderColoursMap, grey);
 $bcGreyD: map-get($borderColoursMap, greyD);
 $bcGreyXD: map-get($borderColoursMap, greyXD);
+
+$mainBcColour: $bcGrey;
+$mainBcColourHover: lighten($mainBcColour, 15%);
+
+$secondaryBcColour: $bcGreyD;
+$secondaryBcColourHover: darken($mainBcColour, 15%);
 
 /* =============================================================================
    Background Colours | Custom
@@ -139,6 +120,8 @@ $bcGreyXD: map-get($borderColoursMap, greyXD);
 $backgroundColoursMap:(
     White: $white,
     Black: $black,
+    Error: $errorColour,
+    //Red: $redColour,
     Green: $green,
     GreyXXL: $greyXXL,
     GreyXL: $greyXL,
@@ -149,6 +132,8 @@ $backgroundColoursMap:(
 );
 $bgWhite: map-get($backgroundColoursMap, White);
 $bgBlack: map-get($backgroundColoursMap, Black);
+$bgError: map-get($backgroundColoursMap, Error);
+//$bgRed: map-get($backgroundColoursMap, Red);
 $bgGreen: map-get($backgroundColoursMap, Green);
 $bgGreyXXL: map-get($backgroundColoursMap, GreyXXL);
 $bgGreyXL: map-get($backgroundColoursMap, GreyXL);
@@ -161,7 +146,6 @@ $bgGreyXD: map-get($backgroundColoursMap, GreyXD);
 $bodyBgColour: $bgWhite;    
 $mainBgColour: $bgGrey;
 $imgBgNeutralColour: $bgGreyL;
-$bgError: $errorColour;
 
 ///**Background Colours Hover Map:** 
     ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
@@ -231,8 +215,8 @@ $statusOKpopUpBgColour: $bgWhite;
    Tables Colour Variables | Custom
    ========================================================================== */
 // Table Border Colours
-$mainBcColourTable: #939393;
-$secondaryBcColourTable: #dedede;
+$mainBcColourTable: $bcGrey;
+$secondaryBcColourTable: $bcGreyXL;
 
 // Table Background Colours
 $mainBgColourTable: #888;

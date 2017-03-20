@@ -51,9 +51,6 @@
    Colours Variables | Custom
    ========================================================================== */
 /* =============================================================================
-   Lighters Darkers | Custom
-   ========================================================================== */
-/* =============================================================================
    Font Colours | Custom
    ========================================================================== */
 /* =============================================================================
@@ -540,24 +537,6 @@ a, a:active, a:visited {
 a:focus, a:hover {
   color: black; }
 
-.redSys, .redSys b, .redSys strong, .redSys i, .redSys em {
-  color: #ff0000; }
-
-a.redSys, a.redSys:active, a.redSys:visited, a.redSys.noHover:focus, a.redSys.noHover:hover {
-  color: #ff0000; }
-
-a.redSys:focus, a.redSys:hover {
-  color: #990000; }
-
-button.redSys, button.redSys.noHover:focus, button.redSys.noHover:hover {
-  color: #ff0000; }
-
-button.redSys:focus, button.redSys:hover {
-  color: #990000; }
-
-label.redSys, label.redSys:focus, label.redSys:hover {
-  color: #ff0000; }
-
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
   color: #d43131; }
 
@@ -575,24 +554,6 @@ button.errorColour:focus, button.errorColour:hover {
 
 label.errorColour, label.errorColour:focus, label.errorColour:hover {
   color: #d43131; }
-
-.redColour, .redColour b, .redColour strong, .redColour i, .redColour em {
-  color: #ee0000; }
-
-a.redColour, a.redColour:active, a.redColour:visited, a.redColour.noHover:focus, a.redColour.noHover:hover {
-  color: #ee0000; }
-
-a.redColour:focus, a.redColour:hover {
-  color: #880000; }
-
-button.redColour, button.redColour.noHover:focus, button.redColour.noHover:hover {
-  color: #ee0000; }
-
-button.redColour:focus, button.redColour:hover {
-  color: #880000; }
-
-label.redColour, label.redColour:focus, label.redColour:hover {
-  color: #ee0000; }
 
 .green, .green b, .green strong, .green i, .green em {
   color: #339900; }
@@ -2887,6 +2848,9 @@ body {
 .bgBlack {
   background-color: #000; }
 
+.bgError {
+  background-color: #d43131; }
+
 .bgGreen {
   background-color: #339900; }
 
@@ -3422,7 +3386,7 @@ table td {
 
 /* Rounded Tables */
 table.tableRounded {
-  border: 1px solid #939393; }
+  border: 1px solid #999; }
   table.tableRounded th, table.tableRounded tfoot td {
     background-color: #888; }
   table.tableRounded tfoot td {
@@ -3446,7 +3410,7 @@ table.tableRounded {
       font-weight: bold;
       text-transform: uppercase; }
   .tableRounded tr {
-    border-bottom: 2px solid #939393; }
+    border-bottom: 2px solid #999; }
     .tableRounded tr td {
       border-bottom: 1px dotted #dedede; }
     .tableRounded tr:last-child td {
@@ -3488,7 +3452,7 @@ table.tableRounded {
       text-align: left;
       padding-left: 0 !important; }
     .table-responsive .tableRounded tr {
-      border-bottom: 1px solid #939393; }
+      border-bottom: 1px solid #999; }
       .table-responsive .tableRounded tr td {
         border-bottom: 0 solid #dedede; }
       .table-responsive .tableRounded tr:last-child td {
