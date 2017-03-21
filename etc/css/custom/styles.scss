@@ -44,25 +44,25 @@
 @import "../scss/print";
 
 //Custom Styles
-@import "global";
+@import "stylesGlobal";
 @import "settingsFonts";
 @import "settingsColours";
 @import "settingsBackgrounds";
 @import "settingsShadows";
 @import "settingsBorders";
 @import "settingsLists";
-@import "forms";
-@import "formsNiceIt";
-@import "searchForm";
-@import "tables";
-@import "modal";
-@import "slider";
+@import "stylesForms";
+@import "stylesFormsNiceIt";
+@import "stylesSearchForm";
+@import "stylesTables";
+@import "stylesModal";
+@import "stylesSlider";
 
 //MainStyles
-@import "header";
-@import "nav";
-@import "footer";
-@import "mainStyles";
+@import "stylesHeader";
+@import "stylesNav";
+@import "stylesFooter";
+@import "stylesMain";
 
 //Post
-//@import "lightbox";
+//@import "stylesLightbox";

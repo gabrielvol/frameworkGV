@@ -437,6 +437,9 @@ p, li {
   p p, p li, li p, li li {
     font-size: 1em; }
 
+a {
+  transition: color 0.7s ease; }
+
 .arial {
   font-family: Arial; }
 
@@ -523,7 +526,7 @@ p, li {
    ========================================================================== */
 html, body, button, blockquote, table, h1, h2, h3, h4, h5, h6, p, b, strong, i,
 em, dfn, li, button, label, input, select, textarea {
-  color: #000; }
+  color: #999; }
 
 /*
 input::input-placeholder, textarea::input-placeholder{
@@ -532,10 +535,10 @@ input:focus::input-placeholder, textarea:focus::input-placeholder{
     color: $mainFontColour}
 */
 a, a:active, a:visited {
-  color: black; }
+  color: #666666; }
 
 a:focus, a:hover {
-  color: black; }
+  color: #333333; }
 
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
   color: #d43131; }
@@ -2512,11 +2515,12 @@ fieldset legend {
   /* Corrects alignment displayed oddly in IE 6/7. */ }
 
 label {
+  transition: all 1s ease;
   cursor: pointer;
-  color: #000;
+  color: #999;
   font-weight: 400 !important; }
   label:focus, label:hover {
-    color: #000; }
+    color: #737373; }
 
 label, input, select, textarea, input[type="search"] {
   box-sizing: border-box !important; }
@@ -2536,10 +2540,10 @@ button, input, select, textarea {
 
 input, select, textarea {
   background-color: #fff;
-  color: #000; }
+  color: #737373; }
   input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover {
     background-color: #fff;
-    color: #000; }
+    color: #737373; }
 
 input[type="search"] {
   -webkit-appearance: textfield; }
@@ -3256,13 +3260,13 @@ form.niceIt {
     background: transparent url("/nuevo/img/sprites.png") no-repeat 103px -80px;
     padding: 0 40px 0 10px;
     width: 135px !important;
-    color: #000; }
+    color: #737373; }
     form.niceIt .fmSelect, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
       height: 30px;
       line-height: 28px;
       font-size: 0.9em; }
     form.niceIt .fmSelect strong span cite, form.niceIt .fmSelect ul li {
-      color: #000;
+      color: #737373;
       font-family: Arial;
       text-transform: none; }
     form.niceIt .fmSelect ul {
@@ -3276,7 +3280,7 @@ form.niceIt {
         font-size: 0.7em;
         line-height: 1.3em; }
         form.niceIt .fmSelect ul li:hover, form.niceIt .fmSelect ul li:focus {
-          color: #000;
+          color: #737373;
           background-color: #fff; }
   form.niceIt .fmCheckbox {
     border: 1px solid #999;
@@ -3476,11 +3480,16 @@ table.tableRounded {
 .popup {
   min-width: 100px;
   min-height: 100px;
-  width: calc(($breakpointWidth - 100%) * 1000);
-  height: calc(($breakpointHeight - 100%) * 1000);
-  max-width: 90%;
-  max-height: 90%;
-  position: fixed; }
+  width: calc((100px - 100%) * 1000);
+  height: calc((100px - 100%) * 1000);
+  max-width: 80%;
+  max-height: 70%;
+  position: fixed;
+  /* CSS para usar centerPopup
+        @include centerPopup(100px,100px,50%);
+        max-width: 100%;
+        max-height: 100%;
+    */ }
   .popup .modalWrap {
     top: 0;
     right: 0;
@@ -3502,11 +3511,14 @@ table.tableRounded {
       .popup.statusDiv {
         min-width: 100px;
         min-height: 100px;
-        width: calc(($breakpointWidth - 100%) * 1000);
-        height: calc(($breakpointHeight - 100%) * 1000);
-        max-width: 90%;
-        max-height: 90%;
-        padding: 20px; }
+        width: calc((100px - 100%) * 1000);
+        height: calc((100px - 100%) * 1000);
+        max-width: 80%;
+        max-height: 70%;
+        padding: 20px;
+        /* CSS para usar centerPopup
+                @include centerPopup(280px,120px);
+            */ }
         .popup.statusDiv .close {
           top: calc(-1 * 20px);
           right: -10px; } }
@@ -3514,11 +3526,14 @@ table.tableRounded {
       .popup.statusDiv {
         min-width: 100px;
         min-height: 100px;
-        width: calc(($breakpointWidth - 100%) * 1000);
-        height: calc(($breakpointHeight - 100%) * 1000);
-        max-width: 90%;
-        max-height: 90%;
-        padding: 25px; } }
+        width: calc((100px - 100%) * 1000);
+        height: calc((100px - 100%) * 1000);
+        max-width: 80%;
+        max-height: 70%;
+        padding: 25px;
+        /* CSS para usar centerPopup
+                @include centerPopup(500px,100px);
+            */ } }
   .popup .closePopup {
     top: 20px;
     right: 20px; }
