@@ -67,7 +67,7 @@ $lightenValueAnchor: 20%;
    ========================================================================== */
 ///**Font Colours:** 
     ///Aquí se declaran los colores principales de texto y de ánclas del sitio, con sus `:hover`.
-$mainFontColour: $black;
+$mainFontColour: $grey;
 $mainFontColourHover: darken($mainFontColour, 20%);
 
 $anchorFontColour: $mainFontColourHover;
@@ -186,12 +186,12 @@ $bgNavSelectedAnchorHover: transparent;
     ///Aquí se declaran las variables de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
     ///con sus `:hover`.
 $formLabelFontColour: $mainFontColour;
-$formLabelFontColourHover: $formLabelFontColour;
+$formLabelFontColourHover: darken($mainFontColour, 15%);
 
-$formInputFontColour: $mainFontColour;
+$formInputFontColour: $formLabelFontColourHover;
 $formInputFontColourHover: $formInputFontColour;
 
-$formPlaceholderFontColour: $formInputFontColour;
+$formPlaceholderFontColour: lighten($mainFontColour, 10%);
 
 $formInputBcColour: $mainBcColour;
 $formInputBcColourHover: $mainBcColourHover;
