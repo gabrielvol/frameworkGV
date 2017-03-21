@@ -18,6 +18,7 @@ fieldset{
     }
 }
 label{
+    @include transition(1s);
     cursor: pointer;
     color: $formLabelFontColour;
     font-weight: 400!important;
