@@ -36,6 +36,9 @@ p, li{
         font-size: 1em;
     }
 }
+a{
+    @include transition(0.7s, color);
+}
 
 // Font Families and Headings Values
 @include fontFamilyCustomClassesGenerator;
