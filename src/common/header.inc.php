@@ -12,7 +12,7 @@
             echo '<h1 class="logoHeader"><a href="/nuevo/';
                 if($idioma == 'pt_BR'){
                     echo '?l=pt_BR';
-                } else if($idioma == 'en_GB'){
+                } else if($idioma == 'en_GB') {
                     echo '?l=en_GB';
                 } else {
                     echo '?l=es_AR';
@@ -20,24 +20,24 @@
             echo '" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
             
         //Framework
-        }else if($test == 1){
+        }else if($test == 1) {
             echo '<h1 class="logoHeader"><a href="/nuevo/oldframework/" class="pRel displayBlock man"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a></h1>';
             
         //Sección
-        }else if($seccion == 1){
+        } else if($seccion == 1) {
             echo '<a href="/nuevo/" class="logoHeader displayBlock"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
             
         //Normal ancla
-        }else{
+        } else {
             echo '<a href="/nuevo/" class="logoHeader displayBlock"><img src="/nuevo/img/logo.svg" alt="'._("Logo de ").'" /></a>';
         }
             
         //Ancla con gettext
-        }else{
+        } else {
             echo '<a href="/nuevo/';
-                if($idioma == 'pt_BR'){
+                if($idioma == 'pt_BR') {
                     echo '?l=pt_BR';
-                } else if($idioma == 'en_GB'){
+                } else if($idioma == 'en_GB') {
                     echo '?l=en_GB';
                 } else {
                     echo '?l=es_AR';
