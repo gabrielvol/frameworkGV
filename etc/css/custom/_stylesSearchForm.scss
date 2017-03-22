@@ -15,7 +15,7 @@
         }
         &[type="submit"]{
             @include opacityCustomHover;
-            @include sprites(-461px 0);
+            @include bgSvg(ic_searchSubmitBT, 30px, center right);
             position: absolute;
             top: 0;
             right: 0;
@@ -30,7 +30,7 @@
                 line-height: $searchFormSubmitValueAT;
             }
             &[type="submit"]{
-                @include sprites(-400px 0);
+            @include bgSvg(ic_searchSubmitAT, 30px, center right);
                 width: $searchFormSubmitValueAT;
             }            
         }
@@ -42,7 +42,6 @@
                 line-height: $searchFormSubmitValueAD;
             }
             &[type="submit"]{
-                @include sprites(-491px 0);
                 width: $searchFormSubmitValueAD;
             }            
         }
