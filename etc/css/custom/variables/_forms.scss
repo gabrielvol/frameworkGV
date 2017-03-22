@@ -10,10 +10,10 @@ $formLabelWidthATL: 520px; //No debe llevar !important
 $formLabelWidthAD:  520px; //No debe llevar !important
 
 $formLabelHeightMO:  30px;
-$formLabelHeightBT:  30px;
-$formLabelHeightTO:  30px;
-$formLabelHeightATL: 30px;
-$formLabelHeightAD:  30px;
+$formLabelHeightBT:  $formLabelHeightMO;
+$formLabelHeightTO:  $formLabelHeightBT;
+$formLabelHeightATL: $formLabelHeightTO;
+$formLabelHeightAD:  $formLabelHeightATL;
 
     //Inputs
 $formInputWidthMO:  $formLabelWidthMO;
@@ -34,10 +34,9 @@ $formSubmitHeightValueATL: 50px;
 $formSubmitHeightValueAD: 75px;
 
     //Search Form
-
-$searchFormWidthBT: 520px;
-$searchFormWidthAT: 520px;
-$searchFormWidthAL: 520px;
+$searchFormWidthBT: 270px;
+$searchFormWidthAT: $searchFormWidthBT;
+$searchFormWidthAL: $searchFormWidthAT;
 $searchFormSubmitValueBT: 30px;
-$searchFormSubmitValueAT: 60px;
-$searchFormSubmitValueAL: 50px;
+$searchFormSubmitValueAT: $searchFormSubmitValueBT;
+$searchFormSubmitValueAL: $searchFormSubmitValueAT;
