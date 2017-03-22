@@ -37,8 +37,9 @@
                 padding-right: calc(#{$searchFormSubmitValueAT} + 5px)!important;
                 line-height: $searchFormSubmitValueAT;
             }
+            
             &[type="submit"]{
-            @include bgSvg(ic_searchSubmitAT, $searchFormSubmitValueAT, center right);
+                @include bgSvg(ic_searchSubmitAT, $searchFormSubmitValueAT, center right);
                 width: $searchFormSubmitValueAT;
             }            
         }
@@ -54,6 +55,7 @@
                 padding-right: calc(#{$searchFormSubmitValueAL} + 10px)!important;
                 line-height: $searchFormSubmitValueAL;
             }
+            
             &[type="submit"]{
                 width: $searchFormSubmitValueAL;
             }            
