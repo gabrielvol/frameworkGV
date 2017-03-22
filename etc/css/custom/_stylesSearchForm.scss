@@ -3,9 +3,12 @@
    ========================================================================== */
 //form.searchForm
 .searchForm{
-    box-sizing: border-box;
     position: relative;
     width: $searchFormWidthBT;
+    
+    &, input{
+        box-sizing: border-box;        
+    }
     
     input{
         height: $searchFormSubmitValueBT;
