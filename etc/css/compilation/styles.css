@@ -190,16 +190,16 @@
       width: 720px; } }
   @media (min-width: 1024px) {
     .container {
-      width: 970px; } }
+      width: 1000px; } }
   @media (min-width: 1025px) {
     .container {
-      width: 970px; } }
+      width: 1000px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 970px; } }
+      width: 1000px; } }
   @media (min-width: 1600px) {
     .container {
-      width: 970px; } }
+      width: 1000px; } }
   @media (max-width: 420px) {
     .container.centerAbs {
       position: absolute;
@@ -219,22 +219,22 @@
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (max-width: 420px) {
     .container.centerAbsMO {
       position: absolute;
@@ -254,22 +254,22 @@
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 768px) {
     .container.centerAbsAT {
       position: absolute;
@@ -279,72 +279,72 @@
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAD {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAD {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsADL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(940px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
 
 /* =============================================================================
    Font Useful Classes | Etc
@@ -410,6 +410,33 @@ b, strong,
 
 .indentedText {
   text-indent: -9999px; }
+
+/* =============================================================================
+   Font Settings | Custom
+   ========================================================================== */
+/*
+.exampleFont{font-family: 'exampleFont';}
+@font-face {
+  font-family: 'exampleFont';
+  src: url(/path/to/fonts/examplefont.woff) format('woff'),
+       url(/path/to/fonts/examplefont.eot) format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
+select, textarea, blockquote, table {
+  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em; }
+
+.textShadow {
+  text-shadow: 1px 1px 5px #333; }
+
+.letterSpacing {
+  letter-spacing: 0.05em; }
 
 /* =============================================================================
    Font Styles | Etc
@@ -2792,33 +2819,6 @@ table th, table td {
 /* =============================================================================
    Global Variables | Custom
    ========================================================================== */
-/* =============================================================================
-   Font Settings | Custom
-   ========================================================================== */
-/*
-.exampleFont{font-family: 'exampleFont';}
-@font-face {
-  font-family: 'exampleFont';
-  src: url(/path/to/fonts/examplefont.woff) format('woff'),
-       url(/path/to/fonts/examplefont.eot) format('eot');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-*/
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
-select, textarea, blockquote, table {
-  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.4em; }
-
-.textShadow {
-  text-shadow: 1px 1px 5px #333; }
-
-.letterSpacing {
-  letter-spacing: 0.05em; }
-
 /* =============================================================================
    Colour Settings | Custom
    ========================================================================== */
