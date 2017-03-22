@@ -12,13 +12,14 @@
 
         &[type="search"]{
             width: $searchFormWidthBT;
+            border: $none;
             padding-right: calc(#{$searchFormSubmitValueBT} + 15px)!important;
             line-height: $searchFormSubmitValueBT;
         }
         
         &[type="submit"]{
             @include opacityCustomHover;
-            @include bgSvg(ic_searchSubmitBT, $searchFormSubmitValueBT, center right);
+            @include bgSvg(ic_searchSubmitBT, $searchFormSubmitValueBT, center);
             position: absolute;
             top: 0;
             right: 0;
@@ -39,7 +40,7 @@
             }
             
             &[type="submit"]{
-                @include bgSvg(ic_searchSubmitAT, $searchFormSubmitValueAT, center right);
+                @include bgSvg(ic_searchSubmitAT, $searchFormSubmitValueAT, center);
                 width: $searchFormSubmitValueAT;
             }            
         }
