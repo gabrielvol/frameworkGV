@@ -11,7 +11,7 @@
         height: $searchFormSubmitValueBT;
 
         &[type="search"]{
-            width: $searchFormWidth;
+            width: $searchFormWidthBT;
             padding-right: calc(#{$searchFormSubmitValueBT} + 15px)!important;
             line-height: $searchFormSubmitValueBT;
         }
