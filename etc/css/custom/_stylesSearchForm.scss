@@ -1,9 +1,11 @@
 /* =============================================================================
    Search Form Styles | Custom
    ========================================================================== */
+//form.searchForm
 .searchForm{
+    box-sizing: border-box;
     position: relative;
-    width: $searchFormWidth;
+    width: $searchFormWidthBT;
     
     input{
         height: $searchFormSubmitValueBT;
@@ -13,37 +15,48 @@
             padding-right: calc(#{$searchFormSubmitValueBT} + 15px)!important;
             line-height: $searchFormSubmitValueBT;
         }
+        
         &[type="submit"]{
             @include opacityCustomHover;
-            @include bgSvg(ic_searchSubmitBT, 30px, center right);
+            @include bgSvg(ic_searchSubmitBT, $searchFormSubmitValueBT, center right);
             position: absolute;
             top: 0;
             right: 0;
             width: $searchFormSubmitValueBT;
             border: $none;
         }
-        @include afterTablet{
+    }
+    
+    @include afterTablet{
+        width: $searchFormWidthAT;
+    
+        input{
             height: $searchFormSubmitValueAT;
-            
+
             &[type="search"]{
                 padding-right: calc(#{$searchFormSubmitValueAT} + 5px)!important;
                 line-height: $searchFormSubmitValueAT;
             }
             &[type="submit"]{
-            @include bgSvg(ic_searchSubmitAT, 30px, center right);
+            @include bgSvg(ic_searchSubmitAT, $searchFormSubmitValueAT, center right);
                 width: $searchFormSubmitValueAT;
             }            
         }
-        @include afterLaptop{
-            height: $searchFormSubmitValueAD;
-            
+    }
+    
+    @include afterLaptop{
+        width: $searchFormWidthAL;
+        
+        input{
+            height: $searchFormSubmitValueAL;
+
             &[type="search"]{
-                padding-right: calc(#{$searchFormSubmitValueAD} + 10px)!important;
-                line-height: $searchFormSubmitValueAD;
+                padding-right: calc(#{$searchFormSubmitValueAL} + 10px)!important;
+                line-height: $searchFormSubmitValueAL;
             }
             &[type="submit"]{
-                width: $searchFormSubmitValueAD;
+                width: $searchFormSubmitValueAL;
             }            
-        }
+        }            
     }
 }
