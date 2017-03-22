@@ -6,10 +6,6 @@
     position: relative;
     width: $searchFormWidthBT;
     
-    &, input{
-        box-sizing: border-box;        
-    }
-    
     input{
         height: $searchFormSubmitValueBT;
 
