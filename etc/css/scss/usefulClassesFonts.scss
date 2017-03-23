@@ -5,8 +5,8 @@ abbr{
     border: $none;
     cursor: help;
 }
-.fontSize{font-size: $fontSizeReset!important}
-.lineHeight{line-height: $lineHeightReset!important}
+.fontSizeReset{font-size: $fontSizeReset!important}
+.lineHeightReset{line-height: $lineHeightReset!important}
 .light{font-weight: 300}
 b, strong,
 .roman{font-weight: 400}
