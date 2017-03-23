@@ -42,6 +42,7 @@ $desktopLargeMin: 1600px;
         and (max-width: #{$mobileLMax}){@content;}}
 
 /* Custom Mobile Breakpoints */
+/*
 @mixin beforeMobile500{
     @media (max-width: 500px){@content;}}
     
@@ -51,6 +52,7 @@ $desktopLargeMin: 1600px;
 @mixin mobile500Only{
     @media (min-width: 500px)
         and (max-width: #{$mobileLMax}){@content;}}
+*/
 
 /* iPad + */
 @mixin afterTablet{
