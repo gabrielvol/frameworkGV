@@ -34,8 +34,14 @@ p, li{
         font-size: 1em;
     }
 }
-p{
-    font-size: $mainFontSizeParagraph;
+p{    
+    @include beforeTablet{
+        font-size: $mainFontSizeParagraphBT;
+    }
+    
+    @include afterTablet{
+        font-size: $mainFontSizeParagraphAT;
+    }
 }
 a{
     @include transition(0.7s, color);
