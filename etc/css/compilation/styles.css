@@ -955,7 +955,7 @@ article, article::before, article::after, details, details::before, details::aft
 .borderBox {
   box-sizing: border-box; }
 
-.displayFlex, .horizontalFlex, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
+.displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1008,7 +1008,7 @@ article, article::before, article::after, details, details::before, details::aft
 .flexAlignItemsStretch {
   align-items: stretch; }
 
-.unstyled, .horizontal, .horizontalFlex {
+.unstyled, .horizontal, .flexHorizontal {
   list-style: none !important; }
 
 .floatLeft, .horizontal li {
@@ -1156,7 +1156,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxMO {
     box-sizing: border-box; }
-  .displayFlexMO, .horizontalFlexMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO {
+  .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1193,7 +1193,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchMO {
     align-items: stretch; }
-  .unstyledMO, .horizontalMO, .horizontalFlexMO {
+  .unstyledMO, .horizontalMO, .flexHorizontalMO {
     list-style: none !important; }
   .floatLeftMO, .horizontalMO li {
     float: left !important; }
@@ -1264,7 +1264,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxAML {
     box-sizing: border-box; }
-  .displayFlexAML, .horizontalFlexAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML {
+  .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1301,7 +1301,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchAML {
     align-items: stretch; }
-  .unstyledAML, .horizontalAML, .horizontalFlexAML {
+  .unstyledAML, .horizontalAML, .flexHorizontalAML {
     list-style: none !important; }
   .floatLeftAML, .horizontalAML li {
     float: left !important; }
@@ -1372,7 +1372,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxMLO {
     box-sizing: border-box; }
-  .displayFlexMLO, .horizontalFlexMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO {
+  .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1409,7 +1409,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchMLO {
     align-items: stretch; }
-  .unstyledMLO, .horizontalMLO, .horizontalFlexMLO {
+  .unstyledMLO, .horizontalMLO, .flexHorizontalMLO {
     list-style: none !important; }
   .floatLeftMLO, .horizontalMLO li {
     float: left !important; }
@@ -1480,7 +1480,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxBT {
     box-sizing: border-box; }
-  .displayFlexBT, .horizontalFlexBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT {
+  .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1517,7 +1517,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchBT {
     align-items: stretch; }
-  .unstyledBT, .horizontalBT, .horizontalFlexBT {
+  .unstyledBT, .horizontalBT, .flexHorizontalBT {
     list-style: none !important; }
   .floatLeftBT, .horizontalBT li {
     float: left !important; }
@@ -1588,7 +1588,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxBTL {
     box-sizing: border-box; }
-  .displayFlexBTL, .horizontalFlexBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL {
+  .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1625,7 +1625,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchBTL {
     align-items: stretch; }
-  .unstyledBTL, .horizontalBTL, .horizontalFlexBTL {
+  .unstyledBTL, .horizontalBTL, .flexHorizontalBTL {
     list-style: none !important; }
   .floatLeftBTL, .horizontalBTL li {
     float: left !important; }
@@ -1696,7 +1696,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxTO {
     box-sizing: border-box; }
-  .displayFlexTO, .horizontalFlexTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO {
+  .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1733,7 +1733,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchTO {
     align-items: stretch; }
-  .unstyledTO, .horizontalTO, .horizontalFlexTO {
+  .unstyledTO, .horizontalTO, .flexHorizontalTO {
     list-style: none !important; }
   .floatLeftTO, .horizontalTO li {
     float: left !important; }
@@ -1868,7 +1868,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxAT {
     box-sizing: border-box; }
-  .displayFlexAT, .horizontalFlexAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT {
+  .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1905,7 +1905,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchAT {
     align-items: stretch; }
-  .unstyledAT, .horizontalAT, .horizontalFlexAT {
+  .unstyledAT, .horizontalAT, .flexHorizontalAT {
     list-style: none !important; }
   .floatLeftAT, .horizontalAT li {
     float: left !important; }
@@ -1976,7 +1976,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxATL {
     box-sizing: border-box; }
-  .displayFlexATL, .horizontalFlexATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL {
+  .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2013,7 +2013,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchATL {
     align-items: stretch; }
-  .unstyledATL, .horizontalATL, .horizontalFlexATL {
+  .unstyledATL, .horizontalATL, .flexHorizontalATL {
     list-style: none !important; }
   .floatLeftATL, .horizontalATL li {
     float: left !important; }
@@ -2084,7 +2084,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxTLO {
     box-sizing: border-box; }
-  .displayFlexTLO, .horizontalFlexTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO {
+  .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2121,7 +2121,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchTLO {
     align-items: stretch; }
-  .unstyledTLO, .horizontalTLO, .horizontalFlexTLO {
+  .unstyledTLO, .horizontalTLO, .flexHorizontalTLO {
     list-style: none !important; }
   .floatLeftTLO, .horizontalTLO li {
     float: left !important; }
@@ -2192,7 +2192,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxBD {
     box-sizing: border-box; }
-  .displayFlexBD, .horizontalFlexBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD {
+  .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2229,7 +2229,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchBD {
     align-items: stretch; }
-  .unstyledBD, .horizontalBD, .horizontalFlexBD {
+  .unstyledBD, .horizontalBD, .flexHorizontalBD {
     list-style: none !important; }
   .floatLeftBD, .horizontalBD li {
     float: left !important; }
@@ -2300,7 +2300,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxAL {
     box-sizing: border-box; }
-  .displayFlexAL, .horizontalFlexAL, .flexColumnAL, .flexNoWrapAL, .flexJustifyEndAL, .flexJustifyCenterAL, .flexJustifyBetweenAL, .flexJustifyAroundAL, .flexAlignContentEndAL, .flexAlignContentCenterAL, .flexAlignContentBetweenAL, .flexAlignContentAroundAL, .flexAlignContentStretchAL, .flexAlignItemsEndAL, .flexAlignItemsCenterAL, .flexAlignItemsBaselineAL, .flexAlignItemsStretchAL, .horizontalCenterFlexAL {
+  .displayFlexAL, .flexHorizontalAL, .flexColumnAL, .flexNoWrapAL, .flexJustifyEndAL, .flexJustifyCenterAL, .flexJustifyBetweenAL, .flexJustifyAroundAL, .flexAlignContentEndAL, .flexAlignContentCenterAL, .flexAlignContentBetweenAL, .flexAlignContentAroundAL, .flexAlignContentStretchAL, .flexAlignItemsEndAL, .flexAlignItemsCenterAL, .flexAlignItemsBaselineAL, .flexAlignItemsStretchAL, .horizontalCenterFlexAL {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2337,7 +2337,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchAL {
     align-items: stretch; }
-  .unstyledAL, .horizontalAL, .horizontalFlexAL {
+  .unstyledAL, .horizontalAL, .flexHorizontalAL {
     list-style: none !important; }
   .floatLeftAL, .horizontalAL li {
     float: left !important; }
@@ -2408,7 +2408,7 @@ figure {
     box-sizing: content-box; }
   .borderBoxAD {
     box-sizing: border-box; }
-  .displayFlexAD, .horizontalFlexAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD {
+  .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2445,7 +2445,7 @@ figure {
     align-items: baseline; }
   .flexAlignItemsStretchAD {
     align-items: stretch; }
-  .unstyledAD, .horizontalAD, .horizontalFlexAD {
+  .unstyledAD, .horizontalAD, .flexHorizontalAD {
     list-style: none !important; }
   .floatLeftAD, .horizontalAD li {
     float: left !important; }

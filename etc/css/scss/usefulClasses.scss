@@ -53,7 +53,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 .borderBox{box-sizing: border-box}
 
     //Flexbox
-.displayFlex, .horizontalFlex, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
+.displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -78,7 +78,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
 .flexAlignItemsStretch{align-items: stretch}
 
     //Lists and floats
-.unstyled, .horizontal, .horizontalFlex,
+.unstyled, .horizontal, .flexHorizontal,
 %unstyled{list-style: $none}
 .floatLeft, .horizontal li{float: $left}
 .floatRight, .horizontal li.floatRight,

@@ -26,7 +26,7 @@
     .borderBoxMO{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexMO, .horizontalFlexMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
+    .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -51,7 +51,7 @@
     .flexAlignItemsStretchMO{align-items: stretch}
 
     //Lists and floats    
-    .unstyledMO, .horizontalMO, .horizontalFlexMO{list-style: $none}
+    .unstyledMO, .horizontalMO, .flexHorizontalMO{list-style: $none}
     .floatLeftMO, .horizontalMO li{float: $left}
     .floatRightMO, .horizontalMO li.floatRight,
     .horizontalMO.right li{float: $right}
@@ -116,7 +116,7 @@
     .borderBoxAML{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexAML, .horizontalFlexAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
+    .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -141,7 +141,7 @@
     .flexAlignItemsStretchAML{align-items: stretch}
 
     //Lists and floats    
-    .unstyledAML, .horizontalAML, .horizontalFlexAML{list-style: $none}
+    .unstyledAML, .horizontalAML, .flexHorizontalAML{list-style: $none}
     .floatLeftAML, .horizontalAML li{float: $left}
     .floatRightAML, .horizontalAML li.floatRight,
     .horizontalAML.right li{float: $right}
@@ -206,7 +206,7 @@
     .borderBoxMLO{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexMLO, .horizontalFlexMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
+    .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -231,7 +231,7 @@
     .flexAlignItemsStretchMLO{align-items: stretch}
 
     //Lists and floats    
-    .unstyledMLO, .horizontalMLO, .horizontalFlexMLO{list-style: $none}
+    .unstyledMLO, .horizontalMLO, .flexHorizontalMLO{list-style: $none}
     .floatLeftMLO, .horizontalMLO li{float: $left}
     .floatRightMLO, .horizontalMLO li.floatRight,
     .horizontalMLO.right li{float: $right}
@@ -296,7 +296,7 @@
     .borderBoxBT{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexBT, .horizontalFlexBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
+    .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -321,7 +321,7 @@
     .flexAlignItemsStretchBT{align-items: stretch}
 
     //Lists and floats    
-    .unstyledBT, .horizontalBT, .horizontalFlexBT{list-style: $none}
+    .unstyledBT, .horizontalBT, .flexHorizontalBT{list-style: $none}
     .floatLeftBT, .horizontalBT li{float: $left}
     .floatRightBT, .horizontalBT li.floatRight,
     .horizontalBT.right li{float: $right}
@@ -386,7 +386,7 @@
     .borderBoxBTL{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexBTL, .horizontalFlexBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
+    .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -411,7 +411,7 @@
     .flexAlignItemsStretchBTL{align-items: stretch}
 
     //Lists and floats    
-    .unstyledBTL, .horizontalBTL, .horizontalFlexBTL{list-style: $none}
+    .unstyledBTL, .horizontalBTL, .flexHorizontalBTL{list-style: $none}
     .floatLeftBTL, .horizontalBTL li{float: $left}
     .floatRightBTL, .horizontalBTL li.floatRight,
     .horizontalBTL.right li{float: $right}
@@ -476,7 +476,7 @@
     .borderBoxTO{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexTO, .horizontalFlexTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
+    .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -501,7 +501,7 @@
     .flexAlignItemsStretchTO{align-items: stretch}
 
     //Lists and floats    
-    .unstyledTO, .horizontalTO, .horizontalFlexTO{list-style: $none}
+    .unstyledTO, .horizontalTO, .flexHorizontalTO{list-style: $none}
     .floatLeftTO, .horizontalTO li{float: $left}
     .floatRightTO, .horizontalTO li.floatRight,
     .horizontalTO.right li{float: $right}
@@ -566,7 +566,7 @@
     .borderBoxAT{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexAT, .horizontalFlexAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
+    .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -591,7 +591,7 @@
     .flexAlignItemsStretchAT{align-items: stretch}
 
     //Lists and floats    
-    .unstyledAT, .horizontalAT, .horizontalFlexAT{list-style: $none}
+    .unstyledAT, .horizontalAT, .flexHorizontalAT{list-style: $none}
     .floatLeftAT, .horizontalAT li{float: $left}
     .floatRightAT, .horizontalAT li.floatRight,
     .horizontalAT.right li{float: $right}
@@ -656,7 +656,7 @@
     .borderBoxATL{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexATL, .horizontalFlexATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
+    .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -681,7 +681,7 @@
     .flexAlignItemsStretchATL{align-items: stretch}
 
     //Lists and floats    
-    .unstyledATL, .horizontalATL, .horizontalFlexATL{list-style: $none}
+    .unstyledATL, .horizontalATL, .flexHorizontalATL{list-style: $none}
     .floatLeftATL, .horizontalATL li{float: $left}
     .floatRightATL, .horizontalATL li.floatRight,
     .horizontalATL.right li{float: $right}
@@ -746,7 +746,7 @@
     .borderBoxTLO{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexTLO, .horizontalFlexTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
+    .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -771,7 +771,7 @@
     .flexAlignItemsStretchTLO{align-items: stretch}
 
     //Lists and floats    
-    .unstyledTLO, .horizontalTLO, .horizontalFlexTLO{list-style: $none}
+    .unstyledTLO, .horizontalTLO, .flexHorizontalTLO{list-style: $none}
     .floatLeftTLO, .horizontalTLO li{float: $left}
     .floatRightTLO, .horizontalTLO li.floatRight,
     .horizontalTLO.right li{float: $right}
@@ -836,7 +836,7 @@
     .borderBoxBD{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexBD, .horizontalFlexBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
+    .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -861,7 +861,7 @@
     .flexAlignItemsStretchBD{align-items: stretch}
 
     //Lists and floats    
-    .unstyledBD, .horizontalBD, .horizontalFlexBD{list-style: $none}
+    .unstyledBD, .horizontalBD, .flexHorizontalBD{list-style: $none}
     .floatLeftBD, .horizontalBD li{float: $left}
     .floatRightBD, .horizontalBD li.floatRight,
     .horizontalBD.right li{float: $right}
@@ -926,7 +926,7 @@
     .borderBoxAL{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexAL, .horizontalFlexAL, .flexColumnAL, .flexNoWrapAL, .flexJustifyEndAL, .flexJustifyCenterAL, .flexJustifyBetweenAL, .flexJustifyAroundAL, .flexAlignContentEndAL, .flexAlignContentCenterAL, .flexAlignContentBetweenAL, .flexAlignContentAroundAL, .flexAlignContentStretchAL, .flexAlignItemsEndAL, .flexAlignItemsCenterAL, .flexAlignItemsBaselineAL, .flexAlignItemsStretchAL, .horizontalCenterFlexAL{
+    .displayFlexAL, .flexHorizontalAL, .flexColumnAL, .flexNoWrapAL, .flexJustifyEndAL, .flexJustifyCenterAL, .flexJustifyBetweenAL, .flexJustifyAroundAL, .flexAlignContentEndAL, .flexAlignContentCenterAL, .flexAlignContentBetweenAL, .flexAlignContentAroundAL, .flexAlignContentStretchAL, .flexAlignItemsEndAL, .flexAlignItemsCenterAL, .flexAlignItemsBaselineAL, .flexAlignItemsStretchAL, .horizontalCenterFlexAL{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -951,7 +951,7 @@
     .flexAlignItemsStretchAL{align-items: stretch}
 
     //Lists and floats    
-    .unstyledAL, .horizontalAL, .horizontalFlexAL{list-style: $none}
+    .unstyledAL, .horizontalAL, .flexHorizontalAL{list-style: $none}
     .floatLeftAL, .horizontalAL li{float: $left}
     .floatRightAL, .horizontalAL li.floatRight,
     .horizontalAL.right li{float: $right}
@@ -1016,7 +1016,7 @@
     .borderBoxAD{box-sizing: border-box}
     
     //Flexbox
-    .displayFlexAD, .horizontalFlexAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
+    .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1041,7 +1041,7 @@
     .flexAlignItemsStretchAD{align-items: stretch}
 
     //Lists and floats    
-    .unstyledAD, .horizontalAD, .horizontalFlexAD{list-style: $none}
+    .unstyledAD, .horizontalAD, .flexHorizontalAD{list-style: $none}
     .floatLeftAD, .horizontalAD li{float: $left}
     .floatRightAD, .horizontalAD li.floatRight,
     .horizontalAD.right li{float: $right}
