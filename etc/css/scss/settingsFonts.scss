@@ -24,7 +24,7 @@ p, dl, legend{
     margin: $textMargin;
 }
 p, li{
-    font-size: $mainParagraphFontSize;
+    font-size: $mainFontSizeParagraph;
     
     b, strong{
         font-family: $mainFontFamilyBold;
@@ -38,6 +38,7 @@ p, li{
 }
 a{
     @include transition(0.7s, color);
+    font-size: $mainFontSizeAnchor;
 }
 
 // Font Families and Headings Values
