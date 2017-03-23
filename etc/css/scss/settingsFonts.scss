@@ -23,18 +23,19 @@ h1, h2, h3, h4, h5, h6{
 p, dl, legend{
     margin: $textMargin;
 }
-p, li{
-    font-size: $mainFontSizeParagraph;
-    
+p, li{    
     b, strong{
         font-family: $mainFontFamilyBold;
     }
     & + p{
         margin: $textMarginSibling;        
     }
-    p, li{
+    p, li, dl, legend{
         font-size: 1em;
     }
+}
+p{
+    font-size: $mainFontSizeParagraph;
 }
 a{
     @include transition(0.7s, color);
