@@ -42,6 +42,10 @@ p{
     @include afterTablet{
         font-size: $mainFontSizeParagraphAT;
     }
+    
+    @include afterTabletLandscape{
+        font-size: $mainFontSizeParagraphATL;
+    }
 }
 a{
     @include transition(0.7s, color);
