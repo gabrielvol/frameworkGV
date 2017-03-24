@@ -2,7 +2,6 @@
    Global Variables | Custom
    ========================================================================== */
 .callToAction{
-    @include equalHeightAndLineHeight(50px);
     @include borderStyle($bcGrey, 2px);
     display: block;
     box-sizing: border-box;
@@ -20,6 +19,21 @@
         background-color: $bgGreyL;
         border-color: $bcGreyXD;
         color: $greyD;
+    }
+    
+    @include mobileOnly{
+        width: $hundred;
+    }
+    
+    @include beforeTablet{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+        line-height: 1.3em;
+    }
+    
+    @include afterTablet{
+        @include equalHeightAndLineHeight(50px);        
     }
 }
 
