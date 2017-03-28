@@ -54,6 +54,10 @@ $desktopLargeMin: 1600px;
         and (max-width: #{$mobileLMax}){@content;}}
 */
 
+/*
+@media (min-width: 100px) and (max-width: 100px){}
+*/
+
 /* iPad + */
 @mixin afterTablet{
     @media (min-width: #{$tabletMin}){@content;}}
@@ -88,10 +92,6 @@ $desktopLargeMin: 1600px;
 /* Big Screens + */
 @mixin afterDesktopLarge{
     @media (min-width: #{$desktopLargeMin}){@content;}}
-
-/*
-@media (min-width: 100px) and (max-width: 100px){}
-*/
 
 /* =============================================================================
    iPhone & iPads
