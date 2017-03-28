@@ -106,6 +106,9 @@
     @media (min-width: 500px)
         and (max-width: 767px){@content;}}
 */
+/*
+@media (min-width: 100px) and (max-width: 100px){}
+*/
 /* iPad + */
 /* iPad Landscape + */
 /* iPad Only */
@@ -114,9 +117,6 @@
 /* Laptop + */
 /* Desktop + */
 /* Big Screens + */
-/*
-@media (min-width: 100px) and (max-width: 100px){}
-*/
 /* =============================================================================
    iPhone & iPads
    ========================================================================== */
@@ -427,17 +427,17 @@ b, strong,
 /*
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
-  font-family: 'exampleFont';
-  src: url(/path/to/fonts/examplefont.woff) format('woff'),
-       url(/path/to/fonts/examplefont.eot) format('eot');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'exampleFont';
+    src: url(/path/to/fonts/examplefont.woff) format('woff'),
+         url(/path/to/fonts/examplefont.eot) format('eot');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
 select, textarea, blockquote, table {
-  font-family: Arial, Arial, sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", Roboto, "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS";
+  font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.4em; }
@@ -492,6 +492,9 @@ a {
 
 .arial {
   font-family: Arial; }
+
+.roboto {
+  font-family: Roboto; }
 
 @media (max-width: 767px) {
   h1, .hUno {
@@ -1100,10 +1103,6 @@ ul {
 
 ol {
   list-style: decimal inside; }
-
-dt {
-  float: left;
-  margin: 0 4px 0 0; }
 
 a {
   line-height: 1em;
@@ -2894,7 +2893,7 @@ table th, table td {
   border: 2px solid #999;
   display: block;
   box-sizing: border-box;
-  transition: background-color 1.8s, color 1s;
+  transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
   background-color: #999;
   margin-right: auto;
   margin-left: auto;

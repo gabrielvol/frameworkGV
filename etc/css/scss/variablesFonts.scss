@@ -3,20 +3,17 @@
    ========================================================================== */
     //Sans Serif Stack
 $fontFamiliesMapSans:(
-    arial: Arial,
-    sansSerif: sans-serif,
     sanFrancisco: ('-apple-system', '.SFNSText-Regular', 'San Francisco'),
     helveticaSafe: (Helvetica, 'Helvetica Neue'),
-    roboto: Roboto,
     segoeUI: 'Segoe UI',
     verdana: Verdana,
     tahoma: Tahoma,
     lucidaGrande: 'Lucida Grande',
-    trebuchetMS: 'Trebuchet MS'
+    trebuchetMS: 'Trebuchet MS',
+    sansSerif: sans-serif
 );
+
 $fontFamiliesListSans:
-    map-get($fontFamiliesMapSans, arial),
-    map-get($fontFamiliesMapSans, sansSerif),
     map-get($fontFamiliesMapSans, sanFrancisco),
     map-get($fontFamiliesMapSans, helveticaSafe), 
     map-get($fontFamiliesMapSans, roboto),
@@ -24,11 +21,11 @@ $fontFamiliesListSans:
     map-get($fontFamiliesMapSans, verdana),
     map-get($fontFamiliesMapSans, tahoma),
     map-get($fontFamiliesMapSans, lucidaGrande),
-    map-get($fontFamiliesMapSans, trebuchetMS
-);
-$arial: map-get($fontFamiliesMapSans, arial);
+    map-get($fontFamiliesMapSans, trebuchetMS),
+    map-get($fontFamiliesMapSans, sansSerif)
+; 
+
 $sanFrancisco: map-get($fontFamiliesMapSans, sanFrancisco);
-$roboto: map-get($fontFamiliesMapSans, roboto);
 $segoeUI: map-get($fontFamiliesMapSans, segoeUI);   
 $verdana: map-get($fontFamiliesMapSans, verdana);
 $tahoma: map-get($fontFamiliesMapSans, tahoma);
@@ -37,27 +34,35 @@ $trebuchetMS: map-get($fontFamiliesMapSans, trebuchetMS);
 
     //Serif Stack
 $fontFamiliesMapSerif:(
-    timesNewRoman: 'Times New Roman',
     georgia: Georgia,
-    serif: serif,
-    palatino: Palatino
+    palatino: Palatino,
+    serif: serif
 );
+    
 $fontFamiliesListSerif: 
-    map-get($fontFamiliesMapSerif, timesNewRoman),
     map-get($fontFamiliesMapSerif, georgia),
-    map-get($fontFamiliesMapSerif, serif),
-    map-get($fontFamiliesMapSerif, palatino);
-
+    map-get($fontFamiliesMapSerif, palatino),
+    map-get($fontFamiliesMapSerif, serif)
+;
+    
     //Monospaced Stack
 $fontFamiliesMapMono:(
-    courierNew: 'Courier New',
+    consolas: 'Consolas',
+    andaleMono: 'Andale Mono',
     lucidaConsole: 'Lucida Console',
-    andaleMono: 'Andale Mono'
+    bitstreamVeraSansMono: 'Bitstream Vera Sans Mono',
+    courierNew: 'Courier New',
+    monospaced: monospaced
 );
+    
 $fontFamiliesListMono:
-    map-get($fontFamiliesMapMono, courierNew),
+    map-get($fontFamiliesMapMono, consolas),    
+    map-get($fontFamiliesMapMono, andaleMono),
     map-get($fontFamiliesMapMono, lucidaConsole),
-    map-get($fontFamiliesMapMono, andaleMono);
+    map-get($fontFamiliesMapMono, bitstreamVeraSansMono),
+    map-get($fontFamiliesMapMono, courierNew),
+    map-get($fontFamiliesMapMono, monospaced)
+;
 
     //Font Sizes
 $h1List: 'h1, .hUno';

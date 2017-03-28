@@ -4,21 +4,41 @@
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
 $fontFamiliesSiteFontsMap:(    
-    arial: Arial
+    arial: Arial,
+    roboto: Roboto,
+    //timesNewRoman: 'Times New Roman',
 );
 
 ///**Activador de clases para fuente openSans:**
     ///Con esta clase se activa la creación de clases para las fuentes OpenSans, que se encuentran en el mapa `$openSansMap` en `[/etc/scss/openSans.scss]`. Las clases son `.openSansL`, `.openSans`, `.openSansI`, `.openSansB` y `.openSansBI`, se crean con el el mixin **fontFamilyCustomClassesGenerator**, `[/etc/scss/mixinsFonts.scss]`.
 $openSansClasses: off;
+// NO DEBE SER DESCOMENTADO
+//$openSansMap:(
+//    openSansL: open_sanslight,
+//    openSans: open_sansregular,
+//    openSansI: open_sansitalic,
+//    openSansB: open_sansbold,
+//    openSansBI: open_sansbold_italic
+//);
+
+// Chequear Arial, Roboto o Times como Main Font Family
+$arial: map-get($fontFamiliesSiteFontsMap, arial);
+$roboto: map-get($fontFamiliesSiteFontsMap, roboto);
+//$timesNewRoman: map-get($fontFamiliesSiteFontsMap, timesNewRoman);
 
     //Creamos la variable de la fuente principal del sitio
-$mainFontFamily: map-get($fontFamiliesSiteFontsMap, arial);
+$mainFontFamily: $arial;
 $mainFontFamilyBold: $mainFontFamily;
 
-//Main font Stack
+//Main font Stack    
 $mainFontStack:(
     $mainFontFamily,
+    //$arial,
+    $roboto,
+    //$timesNewRoman,
     $fontFamiliesListSans
+    //$fontFamiliesListSerif
+    //$fontFamiliesListMono
 );
 
 $mainFontSize: 1em;
