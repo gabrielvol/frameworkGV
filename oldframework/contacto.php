@@ -21,23 +21,23 @@
                 </div>
                 
                 <label for="nombre">Nombre <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>">
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Nombre">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>
 
                 <label for="empresa">Empresa <span class="redColour">*</span></label>
-                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>">
+                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="Empresa">
                 <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
 
                 <label for="email">E-mail <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>">
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="E-mail">
                 <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
 
                 <label for="telefono">Teléfono <span class="redColour">*</span></label>
-                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>">
+                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="Teléfono">
                 <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>
 
                 <label for="fecha">Fecha <span class="redColour">*</span></label>
-                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>">
+                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="Fecha">
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
 
                 <fieldset>
@@ -88,7 +88,7 @@
                 </select>-->
 
                 <label for="mensaje">Mensaje <span class="redColour">*</span></label>
-                <textarea name="mensaje" id="mensaje" class="mensaje" ><?php echo $_POST['mensaje']; ?></textarea>
+                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="Mensaje"><?php echo $_POST['mensaje']; ?></textarea>
 
                 <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar">
             </form>
