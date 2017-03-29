@@ -14,7 +14,7 @@
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
 	<div id="main" class="container" role="main">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/oldframework/common/contactoSend.inc.php'); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
                     <?php echo $mandatoryMessage ?>
