@@ -26,6 +26,11 @@
         //Asignamos datos de campos a variables
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
+        $telefono = $_POST['telefono'];
+        $empresa = $_POST['empresa'];
+        $cargo = $_POST['cargo'];
+        $direccion = $_POST['direccion'];
+        $rubro = $_POST['rubro'];
         $mensaje = $_POST['mensaje'];
 
         //Cabeceras del correo
@@ -38,7 +43,12 @@
         //$headers .= "CC: tampas@gmail.com\r\n";
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
         $texto = "<strong>Nombre:</strong> ".$nombre."<br />";
-        $texto .= "<strong>Correo:</strong> ".$email."<br />";
+        $texto .= "<strong>E-mail:</strong> ".$email."<br />";
+        $texto .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
+        $texto .= "<strong>Empresa:</strong> ".$empresa."<br />";
+        $texto .= "<strong>Cargo:</strong> ".$cargo."<br />";
+        $texto .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
+        $texto .= "<strong>Rubro:</strong> ".$rubro."<br />";
         $texto .= "<strong>Mensaje:</strong> <br />".$mensaje."<br />_ _ _<br />Fin del mensaje";
         
         //Variables Globales de Error
