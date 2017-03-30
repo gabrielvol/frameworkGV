@@ -54,7 +54,12 @@
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
         $errorNombre     = '<p>'._("Por favor, ingrese su nombre").'</p>';
-        $errorEmail      = '<p>'._("Por favor, ingrese un n&uacute;mero de tel&eacute;fono").'</p>';
+        $errorEmail      = '<p>'._("Por favor, ingrese un correo electr&oacute;nico").'</p>';
+        $errorTelefono   = '<p>'._("Por favor, ingrese un n&uacute;mero de tel&eacute;fono").'</p>';
+        $errorEmpresa    = '<p>'._("Por favor, ingrese el nombre de su empresa").'</p>';
+        $errorCargo      = '<p>'._("Por favor, ingrese su cargo").'</p>';
+        $errorDireccion  = '<p>'._("Por favor, ingrese una direcci&oacute;n").'</p>';
+        $errorRubro      = '<p>'._("Por favor, ingrese un rubro").'</p>';
 
         
         
@@ -67,6 +72,36 @@
             
         } elseif (empty($_POST["email"])) {
             $mandatoryMessage = $errorEmail;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldMail = "invalidField";
+            
+        } elseif (empty($_POST["telefono"])) {
+            $mandatoryMessage = $errorTelefono;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldMail = "invalidField";
+            
+        } elseif (empty($_POST["empresa"])) {
+            $mandatoryMessage = $errorEmpresa;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldMail = "invalidField";
+            
+        } elseif (empty($_POST["cargo"])) {
+            $mandatoryMessage = $errorCargo;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldMail = "invalidField";
+            
+        } elseif (empty($_POST["direccion"])) {
+            $mandatoryMessage = $errorDireccion;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldMail = "invalidField";
+            
+        } elseif (empty($_POST["rubro"])) {
+            $mandatoryMessage = $errorRubro;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
             $invalidFieldMail = "invalidField";
