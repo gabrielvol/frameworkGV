@@ -77,6 +77,10 @@ fieldset, input, select, textarea, button{
     }
 }
 
+label, input, select, textarea, button{
+    display: block;
+}
+
 fieldset{    
     & + fieldset{
         margin-top: 30px;
@@ -104,6 +108,10 @@ label{
     @include afterTabletLandscape{
         @include equalHeightAndLineHeight($formLabelHeightATL);
     }
+
+    @if $labelsVisible == "off"{
+        display: $none;
+    }
 }
 
 @media all and (-ms-high-contrast:none){
@@ -114,10 +122,6 @@ label{
     *::-ms-backdrop, label { /* IE11 */
         display: $block;
     }
-}
-
-label, input, select, textarea, button{
-    display: block;
 }
 
 label{
