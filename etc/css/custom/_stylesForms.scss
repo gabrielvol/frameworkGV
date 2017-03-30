@@ -102,29 +102,10 @@ legend{
 
 label{
     display: block\0/!important; /* IE8 + IE9 */
-    margin-bottom: $zero;
     padding-left: 7px;
+    margin-bottom: $zero;
+    font-family: $formLabelFontFamily;
     
-    @include afterTabletLandscape{
-        @include equalHeightAndLineHeight($formLabelHeightATL);
-    }
-
-    @if $labelsVisible == "off"{
-        display: $none;
-    }
-}
-
-@media all and (-ms-high-contrast:none){
-    label { /* IE10 */
-        display: $block;
-    }
-    
-    *::-ms-backdrop, label { /* IE11 */
-        display: $block;
-    }
-}
-
-label{
     @include beforeTablet{
         .mobileForm &{
             @include equalHeightAndLineHeight($formLabelHeightBT);
@@ -143,6 +124,20 @@ label{
     
     @include afterLaptop{
         width: $formLabelWidthAD;        
+    }
+
+    @if $labelsVisible == "off"{
+        display: $none;
+    }
+}
+
+@media all and (-ms-high-contrast:none){
+    label { /* IE10 */
+        display: $block;
+    }
+    
+    *::-ms-backdrop, label { /* IE11 */
+        display: $block;
     }
 }
 
@@ -214,10 +209,6 @@ html input[type="button"]{
 button{}
 button::focus-inner{}
 input::focus-inner{}
-
-label{
-    font-family: $formLabelFontFamily;
-}
 
 input{
     padding: 0 $paddingMarginMediumValue;
