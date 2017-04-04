@@ -26,8 +26,6 @@
     }
     
     @include beforeTablet{
-        padding-top: 10px;
-        padding-bottom: 10px;
         height: auto;
         line-height: 1.3em;
     }
