@@ -42,7 +42,8 @@ $desktopLargeMin: 1600px;
         and (max-width: #{$mobileLMax}){@content;}}
 
 /* Custom Mobile Breakpoints */
-/*
+
+//500
 @mixin beforeMobile500{
     @media (max-width: 500px){@content;}}
     
@@ -52,7 +53,28 @@ $desktopLargeMin: 1600px;
 @mixin mobile500Only{
     @media (min-width: 500px)
         and (max-width: #{$mobileLMax}){@content;}}
-*/
+    
+//600
+@mixin beforeMobile600{
+    @media (max-width: 600px){@content;}}
+    
+@mixin afterMobile600{
+    @media (min-width: 600px){@content;}}
+    
+@mixin mobile600Only{
+    @media (min-width: 600px)
+        and (max-width: #{$mobileLMax}){@content;}}
+    
+//700
+@mixin beforeMobile700{
+    @media (max-width: 700px){@content;}}
+    
+@mixin afterMobile700{
+    @media (min-width: 700px){@content;}}
+    
+@mixin mobile700Only{
+    @media (min-width: 700px)
+        and (max-width: #{$mobileLMax}){@content;}}
 
 /*
 @media (min-width: 100px) and (max-width: 100px){}
