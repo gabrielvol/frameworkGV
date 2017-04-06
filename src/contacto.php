@@ -23,6 +23,10 @@
                 <label for="nombre">Nombre <span class="redColour">*</span></label>
                 <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Nombre">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>
+                
+                <label for="direccion">Dirección <span class="redColour">*</span></label>
+                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="Dirección">
+                <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
 
                 <label for="empresa">Empresa <span class="redColour">*</span></label>
                 <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="Empresa">
