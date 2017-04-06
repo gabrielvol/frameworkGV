@@ -44,7 +44,7 @@
         //$headers .= "CC: tampas@gmail.com\r\n";
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
         $texto = "<strong>Nombre:</strong> ".$nombre."<br />";
-        $texto = "<strong>Direcci&oaute;n:</strong> ".$direccion."<br />";
+        $texto .= "<strong>Direcci&oaute;n:</strong> ".$direccion."<br />";
         $texto .= "<strong>Fecha:</strong> ".$fecha."<br />";
         $texto .= "<strong>E-mail:</strong> ".$email."<br />";
         $texto .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
@@ -56,7 +56,6 @@
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
         $errorNombre     = '<p>'._("Por favor, ingrese su nombre").'</p>';
-        $errorDireccion  = '<p>'._("Por favor, ingrese una direcci&oacute;n").'</p>';
         $errorFecha      = '<p>'._("Por favor, ingrese una fecha").'</p>';
         $errorEmail      = '<p>'._("Por favor, ingrese un correo electr&oacute;nico").'</p>';
         $errorTelefono   = '<p>'._("Por favor, ingrese un n&uacute;mero de tel&eacute;fono").'</p>';
@@ -103,6 +102,12 @@
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
             $invalidFieldMail = "invalidField";
+            
+        } elseif (empty($_POST["fecha"])) {
+            $mandatoryMessage = $errorFecha;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldFecha = "invalidField";
             
         } elseif (empty($_POST["fecha"])) {
             $mandatoryMessage = $errorFecha;
