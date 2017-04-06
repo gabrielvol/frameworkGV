@@ -10,121 +10,126 @@
     overflow: hidden;
 }
 
+@if $stylesSpacingALL == "on"{
     //Spacing Helpers
-@include spacingHelpersClassesGenerator;
-.mra,.mha{margin-right: $auto}
-.mla,.mha{margin-left: $auto}
+    @include spacingHelpersClassesGenerator;
+    .mra,.mha{margin-right: $auto}
+    .mla,.mha{margin-left: $auto}
+}
 
+@if $stylesPosSizingDisplayMaskCursorsALL == "on"{
     //Positioning
-.pRel{position: relative}
-.pAbs{position: absolute}
-.clear{clear: both}
+    .pRel{position: relative}
+    .pAbs{position: absolute}
+    .clear{clear: both}
 
     //Sizing
-.autoWidth{width: auto}
-.autoHeight{height: auto}
-.fullWidth{width: 100%}
-.fullHeight{
-    position: absolute;
-    @include posTB(0, 0);
-}
-.fullHeightPercent{height: 100%}
-.coverAll{
-    position: absolute;
-    @include posTRBL(0, 0, 0, 0);
-}
+    .autoWidth{width: auto}
+    .autoHeight{height: auto}
+    .fullWidth{width: 100%}
+    .fullHeight{
+        position: absolute;
+        @include posTB(0, 0);
+    }
+    .fullHeightPercent{height: 100%}
+    .coverAll{
+        position: absolute;
+        @include posTRBL(0, 0, 0, 0);
+    }
 
     //Display
-article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-.displayBlock{display: $block}
-.displayInline{display: $inline}
-.displayNone{display: $none}
-.invisible{visibility: hidden}
-.centerVertically{
-    display: table-cell;
-    vertical-align: middle;
-}
-article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-.contentBox, .displayBlock{
-    &, &::before, &::after{
-        box-sizing: content-box;
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary,
+    .displayBlock{display: $block}
+    .displayInline{display: $inline}
+    .displayNone{display: $none}
+    .invisible{visibility: hidden}
+    .centerVertically{
+        display: table-cell;
+        vertical-align: middle;
     }
-}
-.borderBox{box-sizing: border-box}
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary,
+    .contentBox, .displayBlock{
+        &, &::before, &::after{
+            box-sizing: content-box;
+        }
+    }
+    .borderBox{box-sizing: border-box}
 
+    //Masks
+    .mask{
+        position: relative;
+        overflow: hidden;
+    }
+
+    //Cursors
+    .cursorDefault{cursor: default}
+    .cursorPointer{cursor: pointer}
+    .cursorHelp{cursor: help}
+    .cursorNone{cursor: none}
+}
+
+@if $stylesFlexboxALL == "on"{
     //Flexbox
-.displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
+    .displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumn{flex-direction: column}
+    .flexNoWrap{flex-wrap: nowrap}
+    .flexJustifyEnd{justify-content: flex-end}
+    .flexJustifyCenter{justify-content: center}
+    .flexJustifyBetween{justify-content: space-between}
+    .flexJustifyAround{justify-content: space-around}
+    .flexAlignContentEnd{align-content: flex-end}
+    .flexAlignContentCenter{align-content: center}
+    .flexAlignContentBetween{align-content: space-between}
+    .flexAlignContentAround{align-content: space-around}
+    .flexAlignContentStretch{align-content: stretch}
+    .flexAlignItemsEnd{align-items: flex-end}
+    .flexAlignItemsCenter{align-items: center}
+    .flexAlignItemsBaseline{align-items: baseline}
+    .flexAlignItemsStretch{align-items: stretch}
 }
-.flexColumn{flex-direction: column}
-.flexNoWrap{flex-wrap: nowrap}
-.flexJustifyEnd{justify-content: flex-end}
-.flexJustifyCenter{justify-content: center}
-.flexJustifyBetween{justify-content: space-between}
-.flexJustifyAround{justify-content: space-around}
-.flexAlignContentEnd{align-content: flex-end}
-.flexAlignContentCenter{align-content: center}
-.flexAlignContentBetween{align-content: space-between}
-.flexAlignContentAround{align-content: space-around}
-.flexAlignContentStretch{align-content: stretch}
-.flexAlignItemsEnd{align-items: flex-end}
-.flexAlignItemsCenter{align-items: center}
-.flexAlignItemsBaseline{align-items: baseline}
-.flexAlignItemsStretch{align-items: stretch}
 
+@if $stylesListsFloatsALL == "on"{
     //Lists and floats
-.unstyled, .horizontal, .flexHorizontal,
-%unstyled{list-style: $none}
-.floatLeft, .horizontal li{float: $left}
-.floatRight, .horizontal li.floatRight,
-.horizontal.right li{float: $right}
-.horizontalCenter, %horizontalCenter{
-    list-style: none;
-    margin-right: $auto;
-    margin-left: $auto;
-    text-align: center;
-    li{
-        display: inline;
-        > *{
-            display: inline-block;            
+    .unstyled, .horizontal, .flexHorizontal,
+    %unstyled{list-style: $none}
+    .floatLeft, .horizontal li{float: $left}
+    .floatRight, .horizontal li.floatRight,
+    .horizontal.right li{float: $right}
+    .horizontalCenter, %horizontalCenter{
+        list-style: none;
+        margin-right: $auto;
+        margin-left: $auto;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
+    .horizontalCenterFlex{
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .floatNone{float: $none}
+    %horizontal{
+        list-style: $none;        
+        li{
+            float: $left;        
+            &.floatRight{float: $right;}
+        }    
+        &.right{
+            li{float: $right;}
         }
     }
 }
-.horizontalCenterFlex{
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-.floatNone{float: $none}
-%horizontal{
-    list-style: $none;        
-    li{
-        float: $left;        
-        &.floatRight{float: $right;}
-    }    
-    &.right{
-        li{float: $right;}
-    }
-}
-
-    //Masks
-.mask{
-    position: relative;
-    overflow: hidden;
-}
-
-    //Cursors
-.cursorDefault{cursor: default}
-.cursorPointer{cursor: pointer}
-.cursorHelp{cursor: help}
-.cursorNone{cursor: none}
-
-    //Misc
-:root .noFilter{filter: none \0/IE9;}
 
 /* =============================================================================
    Elements Styling/Corrections | Etc

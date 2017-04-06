@@ -17,20 +17,6 @@ $spacingHelpersMap:(
     l: $paddingMarginLargeValue
 );
 
-// Variables para activar los spacing helpers (sh) responsive
-$shMobileOnly: off;
-$shAfterMobileLandscape: off;
-$shMobileLandscapeOnly: off;
-$shBeforeTablet: off;
-$shBeforeTabletLandscape: off;
-$shTabletOnly: off;
-$shAfterTablet: on;
-$shAfterTabletLandscape: off;
-$shTabletLandscapeOnly: off;
-$shAfterLaptop: off;
-$shBeforeDesktop: off;
-$shAfterDesktop: off;
-
 /* =============================================================================
    Border Helpers Value | Custom
    ========================================================================== */

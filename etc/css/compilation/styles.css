@@ -77,6 +77,9 @@
    Border Helpers Value | Custom
    ========================================================================== */
 /* =============================================================================
+   Activators | Custom
+   ========================================================================== */
+/* =============================================================================
    Forms Variables | Custom
    ========================================================================== */
 /* =============================================================================
@@ -95,17 +98,6 @@
 /* Mobile + */
 /* Mobile Landscape Only */
 /* Custom Mobile Breakpoints */
-/*
-@mixin beforeMobile500{
-    @media (max-width: 500px){@content;}}
-    
-@mixin afterMobile500{
-    @media (min-width: 500px){@content;}}
-    
-@mixin mobile500Only{
-    @media (min-width: 500px)
-        and (max-width: 767px){@content;}}
-*/
 /*
 @media (min-width: 100px) and (max-width: 100px){}
 */
@@ -810,6 +802,24 @@ label.black, label.black:focus, label.black:hover {
   border-left: 0 !important; }
 
 /* =============================================================================
+   Animation Settings | Etc
+   ========================================================================== */
+.hvrGrow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform; }
+
+.hvrGrow:hover,
+.hvrGrow:focus,
+.hvrGrow:active {
+  transform: scale(1.1); }
+
+/* =============================================================================
    Useful Classes | Etc
    ========================================================================== */
 #go-main-content {
@@ -819,108 +829,6 @@ label.black, label.black:focus, label.black:hover {
   width: 1px;
   height: 1px;
   overflow: hidden; }
-
-.ptn, .pvn, .pan {
-  padding-top: 0 !important; }
-
-.prn, .phn, .pan {
-  padding-right: 0 !important; }
-
-.pbn, .pvn, .pan {
-  padding-bottom: 0 !important; }
-
-.pln, .phn, .pan {
-  padding-left: 0 !important; }
-
-.mtn, .mvn, .man {
-  margin-top: 0 !important; }
-
-.mrn, .mhn, .man {
-  margin-right: 0 !important; }
-
-.mbn, .mvn, .man {
-  margin-bottom: 0 !important; }
-
-.mln, .mhn, .man {
-  margin-left: 0 !important; }
-
-.pts, .pvs, .pas {
-  padding-top: 5px !important; }
-
-.prs, .phs, .pas {
-  padding-right: 5px !important; }
-
-.pbs, .pvs, .pas {
-  padding-bottom: 5px !important; }
-
-.pls, .phs, .pas {
-  padding-left: 5px !important; }
-
-.mts, .mvs, .mas {
-  margin-top: 5px !important; }
-
-.mrs, .mhs, .mas {
-  margin-right: 5px !important; }
-
-.mbs, .mvs, .mas {
-  margin-bottom: 5px !important; }
-
-.mls, .mhs, .mas {
-  margin-left: 5px !important; }
-
-.ptm, .pvm, .pam {
-  padding-top: 10px !important; }
-
-.prm, .phm, .pam {
-  padding-right: 10px !important; }
-
-.pbm, .pvm, .pam {
-  padding-bottom: 10px !important; }
-
-.plm, .phm, .pam {
-  padding-left: 10px !important; }
-
-.mtm, .mvm, .mam {
-  margin-top: 10px !important; }
-
-.mrm, .mhm, .mam {
-  margin-right: 10px !important; }
-
-.mbm, .mvm, .mam {
-  margin-bottom: 10px !important; }
-
-.mlm, .mhm, .mam {
-  margin-left: 10px !important; }
-
-.ptl, .pvl, .pal {
-  padding-top: 20px !important; }
-
-.prl, .phl, .pal {
-  padding-right: 20px !important; }
-
-.pbl, .pvl, .pal {
-  padding-bottom: 20px !important; }
-
-.pll, .phl, .pal {
-  padding-left: 20px !important; }
-
-.mtl, .mvl, .mal {
-  margin-top: 20px !important; }
-
-.mrl, .mhl, .mal {
-  margin-right: 20px !important; }
-
-.mbl, .mvl, .mal {
-  margin-bottom: 20px !important; }
-
-.mll, .mhl, .mal {
-  margin-left: 20px !important; }
-
-.mra, .mha {
-  margin-right: auto !important; }
-
-.mla, .mha {
-  margin-left: auto !important; }
 
 .pRel {
   position: relative; }
@@ -981,58 +889,21 @@ article, article::before, article::after, details, details::before, details::aft
 .borderBox {
   box-sizing: border-box; }
 
-.displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start; }
+.mask {
+  position: relative;
+  overflow: hidden; }
 
-.flexColumn {
-  flex-direction: column; }
+.cursorDefault {
+  cursor: default; }
 
-.flexNoWrap {
-  flex-wrap: nowrap; }
+.cursorPointer {
+  cursor: pointer; }
 
-.flexJustifyEnd {
-  justify-content: flex-end; }
+.cursorHelp {
+  cursor: help; }
 
-.flexJustifyCenter {
-  justify-content: center; }
-
-.flexJustifyBetween {
-  justify-content: space-between; }
-
-.flexJustifyAround {
-  justify-content: space-around; }
-
-.flexAlignContentEnd {
-  align-content: flex-end; }
-
-.flexAlignContentCenter {
-  align-content: center; }
-
-.flexAlignContentBetween {
-  align-content: space-between; }
-
-.flexAlignContentAround {
-  align-content: space-around; }
-
-.flexAlignContentStretch {
-  align-content: stretch; }
-
-.flexAlignItemsEnd {
-  align-items: flex-end; }
-
-.flexAlignItemsCenter {
-  align-items: center; }
-
-.flexAlignItemsBaseline {
-  align-items: baseline; }
-
-.flexAlignItemsStretch {
-  align-items: stretch; }
+.cursorNone {
+  cursor: none; }
 
 .unstyled, .horizontal, .flexHorizontal {
   list-style: none !important; }
@@ -1060,25 +931,6 @@ article, article::before, article::after, details, details::before, details::aft
 
 .floatNone {
   float: none !important; }
-
-.mask {
-  position: relative;
-  overflow: hidden; }
-
-.cursorDefault {
-  cursor: default; }
-
-.cursorPointer {
-  cursor: pointer; }
-
-.cursorHelp {
-  cursor: help; }
-
-.cursorNone {
-  cursor: none; }
-
-:root .noFilter {
-  filter: none \0/IE9; }
 
 /* =============================================================================
    Elements Styling/Corrections | Etc
@@ -1151,1411 +1003,39 @@ figure {
 /* =============================================================================
    Useful Classes Responsive | Etc
    ========================================================================== */
-@media (max-width: 420px) {
-  .mraMO, .mhaMO {
-    margin-right: auto !important; }
-  .mlaMO, .mhaMO {
-    margin-left: auto !important; }
-  .pRelMO {
-    position: relative; }
-  .pAbsMO {
-    position: absolute; }
-  .clearMO {
-    clear: both; }
-  .fullWidthMO {
-    width: 100% !important; }
-  .autoWidthMO {
-    width: auto !important; }
-  .autoHeightMO {
-    height: auto !important; }
-  .displayInlineMO {
-    display: inline !important; }
-  .displayBlockMO, .showMO {
-    display: block !important; }
-  .displayNoneMO, .hideMO {
-    display: none !important; }
-  .contentBoxMO {
-    box-sizing: content-box; }
-  .borderBoxMO {
-    box-sizing: border-box; }
-  .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnMO {
-    flex-direction: column; }
-  .flexNoWrapMO {
-    flex-wrap: nowrap; }
-  .flexJustifyEndMO {
-    justify-content: flex-end; }
-  .flexJustifyCenterMO {
-    justify-content: center; }
-  .flexJustifyBetweenMO {
-    justify-content: space-between; }
-  .flexJustifyAroundMO {
-    justify-content: space-around; }
-  .flexAlignContentEndMO {
-    align-content: flex-end; }
-  .flexAlignContentCenterMO {
-    align-content: center; }
-  .flexAlignContentBetweenMO {
-    align-content: space-between; }
-  .flexAlignContentAroundMO {
-    align-content: space-around; }
-  .flexAlignContentStretchMO {
-    align-content: stretch; }
-  .flexAlignItemsEndMO {
-    align-items: flex-end; }
-  .flexAlignItemsCenterMO {
-    align-items: center; }
-  .flexAlignItemsBaselineMO {
-    align-items: baseline; }
-  .flexAlignItemsStretchMO {
-    align-items: stretch; }
-  .unstyledMO, .horizontalMO, .flexHorizontalMO {
-    list-style: none !important; }
-  .floatLeftMO, .horizontalMO li {
-    float: left !important; }
-  .floatRightMO, .horizontalMO li.floatRight,
-  .horizontalMO.right li {
-    float: right !important; }
-  .horizontalCenterMO {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterMO li {
-      display: inline; }
-      .horizontalCenterMO li > * {
-        display: inline-block; }
-  .floatNoneMO, .unstyledMO li {
-    float: none !important; }
-  .fontSizeResetMO {
-    font-size: 1em !important; }
-  .lineHeightResetMO {
-    line-height: 1em !important; }
-  .indentedTextMO {
-    text-indent: -9999px; }
-  .alignLeftMO {
-    text-align: left; }
-  .alignRightMO {
-    text-align: right; }
-  .alignCenterMO {
-    text-align: center; }
-  .alignJustifyMO {
-    text-align: justify; }
-  .upperCaseMO {
-    text-transform: uppercase; }
-  .banMO {
-    border: none !important; }
-  .noBackgroundMO {
-    background: none !important; }
-  .noBackgroundMO, .noBackgroundMO:focus, .noBackgroundMO:hover, .bgNoneMO, .bgNoneMO:focus, .bgNoneMO:hover {
-    background: none !important; }
-  .bgTransparentMO {
-    background-color: transparent !important; }
-  .bgNoImageMO {
-    background-image: none !important; } }
-
 /* =============================================================================
    After Mobile Landscape Styles
    ========================================================================== */
-@media (min-width: 421px) {
-  .mraAML, .mhaAML {
-    margin-right: auto !important; }
-  .mlaAML, .mhaAML {
-    margin-left: auto !important; }
-  .pRelAML {
-    position: relative; }
-  .pAbsAML {
-    position: absolute; }
-  .clearAML {
-    clear: both; }
-  .fullWidthAML {
-    width: 100% !important; }
-  .autoWidthAML {
-    width: auto !important; }
-  .autoHeightAML {
-    height: auto !important; }
-  .displayInlineAML {
-    display: inline !important; }
-  .displayBlockAML, .showAML {
-    display: block !important; }
-  .displayNoneAML, .hideAML {
-    display: none !important; }
-  .contentBoxAML {
-    box-sizing: content-box; }
-  .borderBoxAML {
-    box-sizing: border-box; }
-  .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnAML {
-    flex-direction: column; }
-  .flexNoWrapAML {
-    flex-wrap: nowrap; }
-  .flexJustifyEndAML {
-    justify-content: flex-end; }
-  .flexJustifyCenterAML {
-    justify-content: center; }
-  .flexJustifyBetweenAML {
-    justify-content: space-between; }
-  .flexJustifyAroundAML {
-    justify-content: space-around; }
-  .flexAlignContentEndAML {
-    align-content: flex-end; }
-  .flexAlignContentCenterAML {
-    align-content: center; }
-  .flexAlignContentBetweenAML {
-    align-content: space-between; }
-  .flexAlignContentAroundAML {
-    align-content: space-around; }
-  .flexAlignContentStretchAML {
-    align-content: stretch; }
-  .flexAlignItemsEndAML {
-    align-items: flex-end; }
-  .flexAlignItemsCenterAML {
-    align-items: center; }
-  .flexAlignItemsBaselineAML {
-    align-items: baseline; }
-  .flexAlignItemsStretchAML {
-    align-items: stretch; }
-  .unstyledAML, .horizontalAML, .flexHorizontalAML {
-    list-style: none !important; }
-  .floatLeftAML, .horizontalAML li {
-    float: left !important; }
-  .floatRightAML, .horizontalAML li.floatRight,
-  .horizontalAML.right li {
-    float: right !important; }
-  .horizontalCenterAML {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterAML li {
-      display: inline; }
-      .horizontalCenterAML li > * {
-        display: inline-block; }
-  .floatNoneAML, .unstyledAML li {
-    float: none !important; }
-  .fontSizeResetAML {
-    font-size: 1em !important; }
-  .lineHeightResetAML {
-    line-height: 1em !important; }
-  .indentedTextAML {
-    text-indent: -9999px; }
-  .alignLeftAML {
-    text-align: left; }
-  .alignRightAML {
-    text-align: right; }
-  .alignCenterAML {
-    text-align: center; }
-  .alignJustifyAML {
-    text-align: justify; }
-  .upperCaseAML {
-    text-transform: uppercase; }
-  .banAML {
-    border: none !important; }
-  .noBackgroundAML {
-    background: none !important; }
-  .noBackgroundAML, .noBackgroundAML:focus, .noBackgroundAML:hover, .bgNoneAML, .bgNoneAML:focus, .bgNoneAML:hover {
-    background: none !important; }
-  .bgTransparentAML {
-    background-color: transparent !important; }
-  .bgNoImageAML {
-    background-image: none !important; } }
-
 /* =============================================================================
    Mobile Landscape Only Styles
    ========================================================================== */
-@media (min-width: 421px) and (max-width: 767px) {
-  .mraMLO, .mhaMLO {
-    margin-right: auto !important; }
-  .mlaMLO, .mhaMLO {
-    margin-left: auto !important; }
-  .pRelMLO {
-    position: relative; }
-  .pAbsMLO {
-    position: absolute; }
-  .clearMLO {
-    clear: both; }
-  .fullWidthMLO {
-    width: 100% !important; }
-  .autoWidthMLO {
-    width: auto !important; }
-  .autoHeightMLO {
-    height: auto !important; }
-  .displayInlineMLO {
-    display: inline !important; }
-  .displayBlockMLO, .showMLO {
-    display: block !important; }
-  .displayNoneMLO, .hideMLO {
-    display: none !important; }
-  .contentBoxMLO {
-    box-sizing: content-box; }
-  .borderBoxMLO {
-    box-sizing: border-box; }
-  .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnMLO {
-    flex-direction: column; }
-  .flexNoWrapMLO {
-    flex-wrap: nowrap; }
-  .flexJustifyEndMLO {
-    justify-content: flex-end; }
-  .flexJustifyCenterMLO {
-    justify-content: center; }
-  .flexJustifyBetweenMLO {
-    justify-content: space-between; }
-  .flexJustifyAroundMLO {
-    justify-content: space-around; }
-  .flexAlignContentEndMLO {
-    align-content: flex-end; }
-  .flexAlignContentCenterMLO {
-    align-content: center; }
-  .flexAlignContentBetweenMLO {
-    align-content: space-between; }
-  .flexAlignContentAroundMLO {
-    align-content: space-around; }
-  .flexAlignContentStretchMLO {
-    align-content: stretch; }
-  .flexAlignItemsEndMLO {
-    align-items: flex-end; }
-  .flexAlignItemsCenterMLO {
-    align-items: center; }
-  .flexAlignItemsBaselineMLO {
-    align-items: baseline; }
-  .flexAlignItemsStretchMLO {
-    align-items: stretch; }
-  .unstyledMLO, .horizontalMLO, .flexHorizontalMLO {
-    list-style: none !important; }
-  .floatLeftMLO, .horizontalMLO li {
-    float: left !important; }
-  .floatRightMLO, .horizontalMLO li.floatRight,
-  .horizontalMLO.right li {
-    float: right !important; }
-  .horizontalCenterMLO {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterMLO li {
-      display: inline; }
-      .horizontalCenterMLO li > * {
-        display: inline-block; }
-  .floatNoneMLO, .unstyledMLO li {
-    float: none !important; }
-  .fontSizeResetMLO {
-    font-size: 1em !important; }
-  .lineHeightResetMLO {
-    line-height: 1em !important; }
-  .indentedTextMLO {
-    text-indent: -9999px; }
-  .alignLeftMLO {
-    text-align: left; }
-  .alignRightMLO {
-    text-align: right; }
-  .alignCenterMLO {
-    text-align: center; }
-  .alignJustifyMLO {
-    text-align: justify; }
-  .upperCaseMLO {
-    text-transform: uppercase; }
-  .banMLO {
-    border: none !important; }
-  .noBackgroundMLO {
-    background: none !important; }
-  .noBackgroundMLO, .noBackgroundMLO:focus, .noBackgroundMLO:hover, .bgNoneMLO, .bgNoneMLO:focus, .bgNoneMLO:hover {
-    background: none !important; }
-  .bgTransparentMLO {
-    background-color: transparent !important; }
-  .bgNoImageMLO {
-    background-image: none !important; } }
-
 /* =============================================================================
    Before Tablet Styles
    ========================================================================== */
-@media (max-width: 767px) {
-  .mraBT, .mhaBT {
-    margin-right: auto !important; }
-  .mlaBT, .mhaBT {
-    margin-left: auto !important; }
-  .pRelBT {
-    position: relative; }
-  .pAbsBT {
-    position: absolute; }
-  .clearBT {
-    clear: both; }
-  .fullWidthBT {
-    width: 100% !important; }
-  .autoWidthBT {
-    width: auto !important; }
-  .autoHeightBT {
-    height: auto !important; }
-  .displayInlineBT {
-    display: inline !important; }
-  .displayBlockBT, .showBT {
-    display: block !important; }
-  .displayNoneBT, .hideBT {
-    display: none !important; }
-  .contentBoxBT {
-    box-sizing: content-box; }
-  .borderBoxBT {
-    box-sizing: border-box; }
-  .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnBT {
-    flex-direction: column; }
-  .flexNoWrapBT {
-    flex-wrap: nowrap; }
-  .flexJustifyEndBT {
-    justify-content: flex-end; }
-  .flexJustifyCenterBT {
-    justify-content: center; }
-  .flexJustifyBetweenBT {
-    justify-content: space-between; }
-  .flexJustifyAroundBT {
-    justify-content: space-around; }
-  .flexAlignContentEndBT {
-    align-content: flex-end; }
-  .flexAlignContentCenterBT {
-    align-content: center; }
-  .flexAlignContentBetweenBT {
-    align-content: space-between; }
-  .flexAlignContentAroundBT {
-    align-content: space-around; }
-  .flexAlignContentStretchBT {
-    align-content: stretch; }
-  .flexAlignItemsEndBT {
-    align-items: flex-end; }
-  .flexAlignItemsCenterBT {
-    align-items: center; }
-  .flexAlignItemsBaselineBT {
-    align-items: baseline; }
-  .flexAlignItemsStretchBT {
-    align-items: stretch; }
-  .unstyledBT, .horizontalBT, .flexHorizontalBT {
-    list-style: none !important; }
-  .floatLeftBT, .horizontalBT li {
-    float: left !important; }
-  .floatRightBT, .horizontalBT li.floatRight,
-  .horizontalBT.right li {
-    float: right !important; }
-  .horizontalCenterBT {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterBT li {
-      display: inline; }
-      .horizontalCenterBT li > * {
-        display: inline-block; }
-  .floatNoneBT, .unstyledBT li {
-    float: none !important; }
-  .fontSizeResetBT {
-    font-size: 1em !important; }
-  .lineHeightResetBT {
-    line-height: 1em !important; }
-  .indentedTextBT {
-    text-indent: -9999px; }
-  .alignLeftBT {
-    text-align: left; }
-  .alignRightBT {
-    text-align: right; }
-  .alignCenterBT {
-    text-align: center; }
-  .alignJustifyBT {
-    text-align: justify; }
-  .upperCaseBT {
-    text-transform: uppercase; }
-  .banBT {
-    border: none !important; }
-  .noBackgroundBT {
-    background: none !important; }
-  .noBackgroundBT, .noBackgroundBT:focus, .noBackgroundBT:hover, .bgNoneBT, .bgNoneBT:focus, .bgNoneBT:hover {
-    background: none !important; }
-  .bgTransparentBT {
-    background-color: transparent !important; }
-  .bgNoImageBT {
-    background-image: none !important; } }
-
 /* =============================================================================
    Before Tablet Landscape Styles
    ========================================================================== */
-@media (max-width: 1023px) {
-  .mraBTL, .mhaBTL {
-    margin-right: auto !important; }
-  .mlaBTL, .mhaBTL {
-    margin-left: auto !important; }
-  .pRelBTL {
-    position: relative; }
-  .pAbsBTL {
-    position: absolute; }
-  .clearBTL {
-    clear: both; }
-  .fullWidthBTL {
-    width: 100% !important; }
-  .autoWidthBTL {
-    width: auto !important; }
-  .autoHeightBTL {
-    height: auto !important; }
-  .displayInlineBTL {
-    display: inline !important; }
-  .displayBlockBTL, .showBTL {
-    display: block !important; }
-  .displayNoneBTL, .hideBTL {
-    display: none !important; }
-  .contentBoxBTL {
-    box-sizing: content-box; }
-  .borderBoxBTL {
-    box-sizing: border-box; }
-  .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnBTL {
-    flex-direction: column; }
-  .flexNoWrapBTL {
-    flex-wrap: nowrap; }
-  .flexJustifyEndBTL {
-    justify-content: flex-end; }
-  .flexJustifyCenterBTL {
-    justify-content: center; }
-  .flexJustifyBetweenBTL {
-    justify-content: space-between; }
-  .flexJustifyAroundBTL {
-    justify-content: space-around; }
-  .flexAlignContentEndBTL {
-    align-content: flex-end; }
-  .flexAlignContentCenterBTL {
-    align-content: center; }
-  .flexAlignContentBetweenBTL {
-    align-content: space-between; }
-  .flexAlignContentAroundBTL {
-    align-content: space-around; }
-  .flexAlignContentStretchBTL {
-    align-content: stretch; }
-  .flexAlignItemsEndBTL {
-    align-items: flex-end; }
-  .flexAlignItemsCenterBTL {
-    align-items: center; }
-  .flexAlignItemsBaselineBTL {
-    align-items: baseline; }
-  .flexAlignItemsStretchBTL {
-    align-items: stretch; }
-  .unstyledBTL, .horizontalBTL, .flexHorizontalBTL {
-    list-style: none !important; }
-  .floatLeftBTL, .horizontalBTL li {
-    float: left !important; }
-  .floatRightBTL, .horizontalBTL li.floatRight,
-  .horizontalBTL.right li {
-    float: right !important; }
-  .horizontalCenterBTL {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterBTL li {
-      display: inline; }
-      .horizontalCenterBTL li > * {
-        display: inline-block; }
-  .floatNoneBTL, .unstyledBTL li {
-    float: none !important; }
-  .fontSizeResetBTL {
-    font-size: 1em !important; }
-  .lineHeightResetBTL {
-    line-height: 1em !important; }
-  .indentedTextBTL {
-    text-indent: -9999px; }
-  .alignLeftBTL {
-    text-align: left; }
-  .alignRightBTL {
-    text-align: right; }
-  .alignCenterBTL {
-    text-align: center; }
-  .alignJustifyBTL {
-    text-align: justify; }
-  .upperCaseBTL {
-    text-transform: uppercase; }
-  .banBTL {
-    border: none !important; }
-  .noBackgroundBTL {
-    background: none !important; }
-  .noBackgroundBTL, .noBackgroundBTL:focus, .noBackgroundBTL:hover, .bgNoneBTL, .bgNoneBTL:focus, .bgNoneBTL:hover {
-    background: none !important; }
-  .bgTransparentBTL {
-    background-color: transparent !important; }
-  .bgNoImageBTL {
-    background-image: none !important; } }
-
 /* =============================================================================
    Tablet Only Styles
    ========================================================================== */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .mraTO, .mhaTO {
-    margin-right: auto !important; }
-  .mlaTO, .mhaTO {
-    margin-left: auto !important; }
-  .pRelTO {
-    position: relative; }
-  .pAbsTO {
-    position: absolute; }
-  .clearTO {
-    clear: both; }
-  .fullWidthTO {
-    width: 100% !important; }
-  .autoWidthTO {
-    width: auto !important; }
-  .autoHeightTO {
-    height: auto !important; }
-  .displayInlineTO {
-    display: inline !important; }
-  .displayBlockTO, .showTO {
-    display: block !important; }
-  .displayNoneTO, .hideTO {
-    display: none !important; }
-  .contentBoxTO {
-    box-sizing: content-box; }
-  .borderBoxTO {
-    box-sizing: border-box; }
-  .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnTO {
-    flex-direction: column; }
-  .flexNoWrapTO {
-    flex-wrap: nowrap; }
-  .flexJustifyEndTO {
-    justify-content: flex-end; }
-  .flexJustifyCenterTO {
-    justify-content: center; }
-  .flexJustifyBetweenTO {
-    justify-content: space-between; }
-  .flexJustifyAroundTO {
-    justify-content: space-around; }
-  .flexAlignContentEndTO {
-    align-content: flex-end; }
-  .flexAlignContentCenterTO {
-    align-content: center; }
-  .flexAlignContentBetweenTO {
-    align-content: space-between; }
-  .flexAlignContentAroundTO {
-    align-content: space-around; }
-  .flexAlignContentStretchTO {
-    align-content: stretch; }
-  .flexAlignItemsEndTO {
-    align-items: flex-end; }
-  .flexAlignItemsCenterTO {
-    align-items: center; }
-  .flexAlignItemsBaselineTO {
-    align-items: baseline; }
-  .flexAlignItemsStretchTO {
-    align-items: stretch; }
-  .unstyledTO, .horizontalTO, .flexHorizontalTO {
-    list-style: none !important; }
-  .floatLeftTO, .horizontalTO li {
-    float: left !important; }
-  .floatRightTO, .horizontalTO li.floatRight,
-  .horizontalTO.right li {
-    float: right !important; }
-  .horizontalCenterTO {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterTO li {
-      display: inline; }
-      .horizontalCenterTO li > * {
-        display: inline-block; }
-  .floatNoneTO, .unstyledTO li {
-    float: none !important; }
-  .fontSizeResetTO {
-    font-size: 1em !important; }
-  .lineHeightResetTO {
-    line-height: 1em !important; }
-  .indentedTextTO {
-    text-indent: -9999px; }
-  .alignLeftTO {
-    text-align: left; }
-  .alignRightTO {
-    text-align: right; }
-  .alignCenterTO {
-    text-align: center; }
-  .alignJustifyTO {
-    text-align: justify; }
-  .upperCaseTO {
-    text-transform: uppercase; }
-  .banTO {
-    border: none !important; }
-  .noBackgroundTO {
-    background: none !important; }
-  .noBackgroundTO, .noBackgroundTO:focus, .noBackgroundTO:hover, .bgNoneTO, .bgNoneTO:focus, .bgNoneTO:hover {
-    background: none !important; }
-  .bgTransparentTO {
-    background-color: transparent !important; }
-  .bgNoImageTO {
-    background-image: none !important; } }
-
 /* =============================================================================
    After Tablet Styles
    ========================================================================== */
-@media (min-width: 768px) {
-  .ptnAT, .pvnAT, .panAT {
-    padding-top: 0 !important; }
-  .prnAT, .phnAT, .panAT {
-    padding-right: 0 !important; }
-  .pbnAT, .pvnAT, .panAT {
-    padding-bottom: 0 !important; }
-  .plnAT, .phnAT, .panAT {
-    padding-left: 0 !important; }
-  .mtnAT, .mvnAT, .manAT {
-    margin-top: 0 !important; }
-  .mrnAT, .mhnAT, .manAT {
-    margin-right: 0 !important; }
-  .mbnAT, .mvnAT, .manAT {
-    margin-bottom: 0 !important; }
-  .mlnAT, .mhnAT, .manAT {
-    margin-left: 0 !important; }
-  .ptsAT, .pvsAT, .pasAT {
-    padding-top: 5px !important; }
-  .prsAT, .phsAT, .pasAT {
-    padding-right: 5px !important; }
-  .pbsAT, .pvsAT, .pasAT {
-    padding-bottom: 5px !important; }
-  .plsAT, .phsAT, .pasAT {
-    padding-left: 5px !important; }
-  .mtsAT, .mvsAT, .masAT {
-    margin-top: 5px !important; }
-  .mrsAT, .mhsAT, .masAT {
-    margin-right: 5px !important; }
-  .mbsAT, .mvsAT, .masAT {
-    margin-bottom: 5px !important; }
-  .mlsAT, .mhsAT, .masAT {
-    margin-left: 5px !important; }
-  .ptmAT, .pvmAT, .pamAT {
-    padding-top: 10px !important; }
-  .prmAT, .phmAT, .pamAT {
-    padding-right: 10px !important; }
-  .pbmAT, .pvmAT, .pamAT {
-    padding-bottom: 10px !important; }
-  .plmAT, .phmAT, .pamAT {
-    padding-left: 10px !important; }
-  .mtmAT, .mvmAT, .mamAT {
-    margin-top: 10px !important; }
-  .mrmAT, .mhmAT, .mamAT {
-    margin-right: 10px !important; }
-  .mbmAT, .mvmAT, .mamAT {
-    margin-bottom: 10px !important; }
-  .mlmAT, .mhmAT, .mamAT {
-    margin-left: 10px !important; }
-  .ptlAT, .pvlAT, .palAT {
-    padding-top: 20px !important; }
-  .prlAT, .phlAT, .palAT {
-    padding-right: 20px !important; }
-  .pblAT, .pvlAT, .palAT {
-    padding-bottom: 20px !important; }
-  .pllAT, .phlAT, .palAT {
-    padding-left: 20px !important; }
-  .mtlAT, .mvlAT, .malAT {
-    margin-top: 20px !important; }
-  .mrlAT, .mhlAT, .malAT {
-    margin-right: 20px !important; }
-  .mblAT, .mvlAT, .malAT {
-    margin-bottom: 20px !important; }
-  .mllAT, .mhlAT, .malAT {
-    margin-left: 20px !important; }
-  .mraAT, .mhaAT {
-    margin-right: auto !important; }
-  .mlaAT, .mhaAT {
-    margin-left: auto !important; }
-  .pRelAT {
-    position: relative; }
-  .pAbsAT {
-    position: absolute; }
-  .clearAT {
-    clear: both; }
-  .fullWidthAT {
-    width: 100% !important; }
-  .autoWidthAT {
-    width: auto !important; }
-  .autoHeightAT {
-    height: auto !important; }
-  .displayInlineAT {
-    display: inline !important; }
-  .displayBlockAT, .showAT {
-    display: block !important; }
-  .displayNoneAT, .hideAT {
-    display: none !important; }
-  .contentBoxAT {
-    box-sizing: content-box; }
-  .borderBoxAT {
-    box-sizing: border-box; }
-  .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnAT {
-    flex-direction: column; }
-  .flexNoWrapAT {
-    flex-wrap: nowrap; }
-  .flexJustifyEndAT {
-    justify-content: flex-end; }
-  .flexJustifyCenterAT {
-    justify-content: center; }
-  .flexJustifyBetweenAT {
-    justify-content: space-between; }
-  .flexJustifyAroundAT {
-    justify-content: space-around; }
-  .flexAlignContentEndAT {
-    align-content: flex-end; }
-  .flexAlignContentCenterAT {
-    align-content: center; }
-  .flexAlignContentBetweenAT {
-    align-content: space-between; }
-  .flexAlignContentAroundAT {
-    align-content: space-around; }
-  .flexAlignContentStretchAT {
-    align-content: stretch; }
-  .flexAlignItemsEndAT {
-    align-items: flex-end; }
-  .flexAlignItemsCenterAT {
-    align-items: center; }
-  .flexAlignItemsBaselineAT {
-    align-items: baseline; }
-  .flexAlignItemsStretchAT {
-    align-items: stretch; }
-  .unstyledAT, .horizontalAT, .flexHorizontalAT {
-    list-style: none !important; }
-  .floatLeftAT, .horizontalAT li {
-    float: left !important; }
-  .floatRightAT, .horizontalAT li.floatRight,
-  .horizontalAT.right li {
-    float: right !important; }
-  .horizontalCenterAT {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterAT li {
-      display: inline; }
-      .horizontalCenterAT li > * {
-        display: inline-block; }
-  .floatNoneAT, .unstyledAT li {
-    float: none !important; }
-  .fontSizeResetAT {
-    font-size: 1em !important; }
-  .lineHeightResetAT {
-    line-height: 1em !important; }
-  .indentedTextAT {
-    text-indent: -9999px; }
-  .alignLeftAT {
-    text-align: left; }
-  .alignRightAT {
-    text-align: right; }
-  .alignCenterAT {
-    text-align: center; }
-  .alignJustifyAT {
-    text-align: justify; }
-  .upperCaseAT {
-    text-transform: uppercase; }
-  .banAT {
-    border: none !important; }
-  .noBackgroundAT {
-    background: none !important; }
-  .noBackgroundAT, .noBackgroundAT:focus, .noBackgroundAT:hover, .bgNoneAT, .bgNoneAT:focus, .bgNoneAT:hover {
-    background: none !important; }
-  .bgTransparentAT {
-    background-color: transparent !important; }
-  .bgNoImageAT {
-    background-image: none !important; } }
-
 /* =============================================================================
    After Tablet Landscape Styles
    ========================================================================== */
-@media (min-width: 1024px) {
-  .mraATL, .mhaATL {
-    margin-right: auto !important; }
-  .mlaATL, .mhaATL {
-    margin-left: auto !important; }
-  .pRelATL {
-    position: relative; }
-  .pAbsATL {
-    position: absolute; }
-  .clearATL {
-    clear: both; }
-  .fullWidthATL {
-    width: 100% !important; }
-  .autoWidthATL {
-    width: auto !important; }
-  .autoHeightATL {
-    height: auto !important; }
-  .displayInlineATL {
-    display: inline !important; }
-  .displayBlockATL, .showATL {
-    display: block !important; }
-  .displayNoneATL, .hideATL {
-    display: none !important; }
-  .contentBoxATL {
-    box-sizing: content-box; }
-  .borderBoxATL {
-    box-sizing: border-box; }
-  .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnATL {
-    flex-direction: column; }
-  .flexNoWrapATL {
-    flex-wrap: nowrap; }
-  .flexJustifyEndATL {
-    justify-content: flex-end; }
-  .flexJustifyCenterATL {
-    justify-content: center; }
-  .flexJustifyBetweenATL {
-    justify-content: space-between; }
-  .flexJustifyAroundATL {
-    justify-content: space-around; }
-  .flexAlignContentEndATL {
-    align-content: flex-end; }
-  .flexAlignContentCenterATL {
-    align-content: center; }
-  .flexAlignContentBetweenATL {
-    align-content: space-between; }
-  .flexAlignContentAroundATL {
-    align-content: space-around; }
-  .flexAlignContentStretchATL {
-    align-content: stretch; }
-  .flexAlignItemsEndATL {
-    align-items: flex-end; }
-  .flexAlignItemsCenterATL {
-    align-items: center; }
-  .flexAlignItemsBaselineATL {
-    align-items: baseline; }
-  .flexAlignItemsStretchATL {
-    align-items: stretch; }
-  .unstyledATL, .horizontalATL, .flexHorizontalATL {
-    list-style: none !important; }
-  .floatLeftATL, .horizontalATL li {
-    float: left !important; }
-  .floatRightATL, .horizontalATL li.floatRight,
-  .horizontalATL.right li {
-    float: right !important; }
-  .horizontalCenterATL {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterATL li {
-      display: inline; }
-      .horizontalCenterATL li > * {
-        display: inline-block; }
-  .floatNoneATL, .unstyledATL li {
-    float: none !important; }
-  .fontSizeResetATL {
-    font-size: 1em !important; }
-  .lineHeightResetATL {
-    line-height: 1em !important; }
-  .indentedTextATL {
-    text-indent: -9999px; }
-  .alignLeftATL {
-    text-align: left; }
-  .alignRightATL {
-    text-align: right; }
-  .alignCenterATL {
-    text-align: center; }
-  .alignJustifyATL {
-    text-align: justify; }
-  .upperCaseATL {
-    text-transform: uppercase; }
-  .banATL {
-    border: none !important; }
-  .noBackgroundATL {
-    background: none !important; }
-  .noBackgroundATL, .noBackgroundATL:focus, .noBackgroundATL:hover, .bgNoneATL, .bgNoneATL:focus, .bgNoneATL:hover {
-    background: none !important; }
-  .bgTransparentATL {
-    background-color: transparent !important; }
-  .bgNoImageATL {
-    background-image: none !important; } }
-
 /* =============================================================================
    Tablet Landscape Only Styles
    ========================================================================== */
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .mraTLO, .mhaTLO {
-    margin-right: auto !important; }
-  .mlaTLO, .mhaTLO {
-    margin-left: auto !important; }
-  .pRelTLO {
-    position: relative; }
-  .pAbsTLO {
-    position: absolute; }
-  .clearTLO {
-    clear: both; }
-  .fullWidthTLO {
-    width: 100% !important; }
-  .autoWidthTLO {
-    width: auto !important; }
-  .autoHeightTLO {
-    height: auto !important; }
-  .displayInlineTLO {
-    display: inline !important; }
-  .displayBlockTLO, .showTLO {
-    display: block !important; }
-  .displayNoneTLO, .hideTLO {
-    display: none !important; }
-  .contentBoxTLO {
-    box-sizing: content-box; }
-  .borderBoxTLO {
-    box-sizing: border-box; }
-  .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnTLO {
-    flex-direction: column; }
-  .flexNoWrapTLO {
-    flex-wrap: nowrap; }
-  .flexJustifyEndTLO {
-    justify-content: flex-end; }
-  .flexJustifyCenterTLO {
-    justify-content: center; }
-  .flexJustifyBetweenTLO {
-    justify-content: space-between; }
-  .flexJustifyAroundTLO {
-    justify-content: space-around; }
-  .flexAlignContentEndTLO {
-    align-content: flex-end; }
-  .flexAlignContentCenterTLO {
-    align-content: center; }
-  .flexAlignContentBetweenTLO {
-    align-content: space-between; }
-  .flexAlignContentAroundTLO {
-    align-content: space-around; }
-  .flexAlignContentStretchTLO {
-    align-content: stretch; }
-  .flexAlignItemsEndTLO {
-    align-items: flex-end; }
-  .flexAlignItemsCenterTLO {
-    align-items: center; }
-  .flexAlignItemsBaselineTLO {
-    align-items: baseline; }
-  .flexAlignItemsStretchTLO {
-    align-items: stretch; }
-  .unstyledTLO, .horizontalTLO, .flexHorizontalTLO {
-    list-style: none !important; }
-  .floatLeftTLO, .horizontalTLO li {
-    float: left !important; }
-  .floatRightTLO, .horizontalTLO li.floatRight,
-  .horizontalTLO.right li {
-    float: right !important; }
-  .horizontalCenterTLO {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterTLO li {
-      display: inline; }
-      .horizontalCenterTLO li > * {
-        display: inline-block; }
-  .floatNoneTLO, .unstyledTLO li {
-    float: none !important; }
-  .fontSizeResetTLO {
-    font-size: 1em !important; }
-  .lineHeightResetTLO {
-    line-height: 1em !important; }
-  .indentedTextTLO {
-    text-indent: -9999px; }
-  .alignLeftTLO {
-    text-align: left; }
-  .alignRightTLO {
-    text-align: right; }
-  .alignCenterTLO {
-    text-align: center; }
-  .alignJustifyTLO {
-    text-align: justify; }
-  .upperCaseTLO {
-    text-transform: uppercase; }
-  .banTLO {
-    border: none !important; }
-  .noBackgroundTLO {
-    background: none !important; }
-  .noBackgroundTLO, .noBackgroundTLO:focus, .noBackgroundTLO:hover, .bgNoneTLO, .bgNoneTLO:focus, .bgNoneTLO:hover {
-    background: none !important; }
-  .bgTransparentTLO {
-    background-color: transparent !important; }
-  .bgNoImageTLO {
-    background-image: none !important; } }
-
 /* =============================================================================
    Before Desktop Styles
    ========================================================================== */
-@media (max-width: 1199px) {
-  .mraBD, .mhaBD {
-    margin-right: auto !important; }
-  .mlaBD, .mhaBD {
-    margin-left: auto !important; }
-  .pRelBD {
-    position: relative; }
-  .pAbsBD {
-    position: absolute; }
-  .clearBD {
-    clear: both; }
-  .fullWidthBD {
-    width: 100% !important; }
-  .autoWidthBD {
-    width: auto !important; }
-  .autoHeightBD {
-    height: auto !important; }
-  .displayInlineBD {
-    display: inline !important; }
-  .displayBlockBD, .showBD {
-    display: block !important; }
-  .displayNoneBD, .hideBD {
-    display: none !important; }
-  .contentBoxBD {
-    box-sizing: content-box; }
-  .borderBoxBD {
-    box-sizing: border-box; }
-  .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnBD {
-    flex-direction: column; }
-  .flexNoWrapBD {
-    flex-wrap: nowrap; }
-  .flexJustifyEndBD {
-    justify-content: flex-end; }
-  .flexJustifyCenterBD {
-    justify-content: center; }
-  .flexJustifyBetweenBD {
-    justify-content: space-between; }
-  .flexJustifyAroundBD {
-    justify-content: space-around; }
-  .flexAlignContentEndBD {
-    align-content: flex-end; }
-  .flexAlignContentCenterBD {
-    align-content: center; }
-  .flexAlignContentBetweenBD {
-    align-content: space-between; }
-  .flexAlignContentAroundBD {
-    align-content: space-around; }
-  .flexAlignContentStretchBD {
-    align-content: stretch; }
-  .flexAlignItemsEndBD {
-    align-items: flex-end; }
-  .flexAlignItemsCenterBD {
-    align-items: center; }
-  .flexAlignItemsBaselineBD {
-    align-items: baseline; }
-  .flexAlignItemsStretchBD {
-    align-items: stretch; }
-  .unstyledBD, .horizontalBD, .flexHorizontalBD {
-    list-style: none !important; }
-  .floatLeftBD, .horizontalBD li {
-    float: left !important; }
-  .floatRightBD, .horizontalBD li.floatRight,
-  .horizontalBD.right li {
-    float: right !important; }
-  .horizontalCenterBD {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterBD li {
-      display: inline; }
-      .horizontalCenterBD li > * {
-        display: inline-block; }
-  .floatNoneBD, .unstyledBD li {
-    float: none !important; }
-  .fontSizeResetBD {
-    font-size: 1em !important; }
-  .lineHeightResetBD {
-    line-height: 1em !important; }
-  .indentedTextBD {
-    text-indent: -9999px; }
-  .alignLeftBD {
-    text-align: left; }
-  .alignRightBD {
-    text-align: right; }
-  .alignCenterBD {
-    text-align: center; }
-  .alignJustifyBD {
-    text-align: justify; }
-  .upperCaseBD {
-    text-transform: uppercase; }
-  .banBD {
-    border: none !important; }
-  .noBackgroundBD {
-    background: none !important; }
-  .noBackgroundBD, .noBackgroundBD:focus, .noBackgroundBD:hover, .bgNoneBD, .bgNoneBD:focus, .bgNoneBD:hover {
-    background: none !important; }
-  .bgTransparentBD {
-    background-color: transparent !important; }
-  .bgNoImageBD {
-    background-image: none !important; } }
-
 /* =============================================================================
    After Laptop Styles
    ========================================================================== */
-@media (min-width: 1025px) {
-  .mraAL, .mhaAL {
-    margin-right: auto !important; }
-  .mlaAL, .mhaAL {
-    margin-left: auto !important; }
-  .pRelAL {
-    position: relative; }
-  .pAbsAL {
-    position: absolute; }
-  .clearAL {
-    clear: both; }
-  .fullWidthAL {
-    width: 100% !important; }
-  .autoWidthAL {
-    width: auto !important; }
-  .autoHeightAL {
-    height: auto !important; }
-  .displayInlineAL {
-    display: inline !important; }
-  .displayBlockAL, .showAL {
-    display: block !important; }
-  .displayNoneAL, .hideAL {
-    display: none !important; }
-  .contentBoxAL {
-    box-sizing: content-box; }
-  .borderBoxAL {
-    box-sizing: border-box; }
-  .displayFlexAL, .flexHorizontalAL, .flexColumnAL, .flexNoWrapAL, .flexJustifyEndAL, .flexJustifyCenterAL, .flexJustifyBetweenAL, .flexJustifyAroundAL, .flexAlignContentEndAL, .flexAlignContentCenterAL, .flexAlignContentBetweenAL, .flexAlignContentAroundAL, .flexAlignContentStretchAL, .flexAlignItemsEndAL, .flexAlignItemsCenterAL, .flexAlignItemsBaselineAL, .flexAlignItemsStretchAL, .horizontalCenterFlexAL {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnAL {
-    flex-direction: column; }
-  .flexNoWrapAL {
-    flex-wrap: nowrap; }
-  .flexJustifyEndAL {
-    justify-content: flex-end; }
-  .flexJustifyCenterAL {
-    justify-content: center; }
-  .flexJustifyBetweenAL {
-    justify-content: space-between; }
-  .flexJustifyAroundAL {
-    justify-content: space-around; }
-  .flexAlignContentEndAL {
-    align-content: flex-end; }
-  .flexAlignContentCenterAL {
-    align-content: center; }
-  .flexAlignContentBetweenAL {
-    align-content: space-between; }
-  .flexAlignContentAroundAL {
-    align-content: space-around; }
-  .flexAlignContentStretchAL {
-    align-content: stretch; }
-  .flexAlignItemsEndAL {
-    align-items: flex-end; }
-  .flexAlignItemsCenterAL {
-    align-items: center; }
-  .flexAlignItemsBaselineAL {
-    align-items: baseline; }
-  .flexAlignItemsStretchAL {
-    align-items: stretch; }
-  .unstyledAL, .horizontalAL, .flexHorizontalAL {
-    list-style: none !important; }
-  .floatLeftAL, .horizontalAL li {
-    float: left !important; }
-  .floatRightAL, .horizontalAL li.floatRight,
-  .horizontalAL.right li {
-    float: right !important; }
-  .horizontalCenterAL {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterAL li {
-      display: inline; }
-      .horizontalCenterAL li > * {
-        display: inline-block; }
-  .floatNoneAL, .unstyledAL li {
-    float: none !important; }
-  .fontSizeResetAL {
-    font-size: 1em !important; }
-  .lineHeightResetAL {
-    line-height: 1em !important; }
-  .indentedTextAL {
-    text-indent: -9999px; }
-  .alignLeftAL {
-    text-align: left; }
-  .alignRightAL {
-    text-align: right; }
-  .alignCenterAL {
-    text-align: center; }
-  .alignJustifyAL {
-    text-align: justify; }
-  .upperCaseAL {
-    text-transform: uppercase; }
-  .banAL {
-    border: none !important; }
-  .noBackgroundAL {
-    background: none !important; }
-  .noBackgroundAL, .noBackgroundAL:focus, .noBackgroundAL:hover, .bgNoneAL, .bgNoneAL:focus, .bgNoneAL:hover {
-    background: none !important; }
-  .bgTransparentAL {
-    background-color: transparent !important; }
-  .bgNoImageAL {
-    background-image: none !important; } }
-
 /* =============================================================================
    After Desktop Styles
    ========================================================================== */
-@media (min-width: 1200px) {
-  .mraAD, .mhaAD {
-    margin-right: auto !important; }
-  .mlaAD, .mhaAD {
-    margin-left: auto !important; }
-  .pRelAD {
-    position: relative; }
-  .pAbsAD {
-    position: absolute; }
-  .clearAD {
-    clear: both; }
-  .fullWidthAD {
-    width: 100% !important; }
-  .autoWidthAD {
-    width: auto !important; }
-  .autoHeightAD {
-    height: auto !important; }
-  .displayInlineAD {
-    display: inline !important; }
-  .displayBlockAD, .showAD {
-    display: block !important; }
-  .displayNoneAD, .hideAD {
-    display: none !important; }
-  .contentBoxAD {
-    box-sizing: content-box; }
-  .borderBoxAD {
-    box-sizing: border-box; }
-  .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnAD {
-    flex-direction: column; }
-  .flexNoWrapAD {
-    flex-wrap: nowrap; }
-  .flexJustifyEndAD {
-    justify-content: flex-end; }
-  .flexJustifyCenterAD {
-    justify-content: center; }
-  .flexJustifyBetweenAD {
-    justify-content: space-between; }
-  .flexJustifyAroundAD {
-    justify-content: space-around; }
-  .flexAlignContentEndAD {
-    align-content: flex-end; }
-  .flexAlignContentCenterAD {
-    align-content: center; }
-  .flexAlignContentBetweenAD {
-    align-content: space-between; }
-  .flexAlignContentAroundAD {
-    align-content: space-around; }
-  .flexAlignContentStretchAD {
-    align-content: stretch; }
-  .flexAlignItemsEndAD {
-    align-items: flex-end; }
-  .flexAlignItemsCenterAD {
-    align-items: center; }
-  .flexAlignItemsBaselineAD {
-    align-items: baseline; }
-  .flexAlignItemsStretchAD {
-    align-items: stretch; }
-  .unstyledAD, .horizontalAD, .flexHorizontalAD {
-    list-style: none !important; }
-  .floatLeftAD, .horizontalAD li {
-    float: left !important; }
-  .floatRightAD, .horizontalAD li.floatRight,
-  .horizontalAD.right li {
-    float: right !important; }
-  .horizontalCenterAD {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterAD li {
-      display: inline; }
-      .horizontalCenterAD li > * {
-        display: inline-block; }
-  .floatNoneAD, .unstyledAD li {
-    float: none !important; }
-  .fontSizeResetAD {
-    font-size: 1em !important; }
-  .lineHeightResetAD {
-    line-height: 1em !important; }
-  .indentedTextAD {
-    text-indent: -9999px; }
-  .alignLeftAD {
-    text-align: left; }
-  .alignRightAD {
-    text-align: right; }
-  .alignCenterAD {
-    text-align: center; }
-  .alignJustifyAD {
-    text-align: justify; }
-  .upperCaseAD {
-    text-transform: uppercase; }
-  .banAD {
-    border: none !important; }
-  .noBackgroundAD {
-    background: none !important; }
-  .noBackgroundAD, .noBackgroundAD:focus, .noBackgroundAD:hover, .bgNoneAD, .bgNoneAD:focus, .bgNoneAD:hover {
-    background: none !important; }
-  .bgTransparentAD {
-    background-color: transparent !important; }
-  .bgNoImageAD {
-    background-image: none !important; } }
-
 /* =============================================================================
    Nav Styles | Etc
    ========================================================================== */
@@ -2911,8 +1391,6 @@ table th, table td {
       width: 100% !important; } }
   @media (max-width: 767px) {
     .callToAction {
-      padding-top: 10px;
-      padding-bottom: 10px;
       height: auto;
       line-height: 1.3em; } }
   @media (min-width: 768px) {
@@ -3005,6 +1483,9 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bgError {
   background-color: #d43131; }
 
+/* =============================================================================
+   Animation Settings | Custom
+   ========================================================================== */
 /* =============================================================================
    Shadows Settings | Custom
    ========================================================================== */
@@ -3119,6 +1600,7 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
     width: 520px; } }
 
 .mandatoryMessage {
+  box-sizing: border-box;
   padding: 10px 20px;
   margin-bottom: 20px; }
   .mandatoryMessage.invalidMandatoryMessage {
@@ -3133,6 +1615,9 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .status.ok {
   background-color: #339900;
   padding: 10px 20px; }
+
+label, input, select, textarea, button {
+  display: block; }
 
 fieldset + fieldset {
   margin-top: 30px; }
@@ -3152,12 +1637,24 @@ fieldset > p, fieldset legend {
 label {
   display: block\0/!important;
   /* IE8 + IE9 */
+  padding-left: 7px;
   margin-bottom: 0 !important;
-  padding-left: 7px; }
+  font-family: Arial; }
+  @media (max-width: 767px) {
+    .mobileForm label {
+      height: 30px;
+      line-height: 30px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tabletForm label {
+      height: 30px;
+      line-height: 30px; } }
   @media (min-width: 1024px) {
     label {
       height: 30px;
       line-height: 30px; } }
+  @media (min-width: 1025px) {
+    label {
+      width: 520px; } }
 
 @media all and (-ms-high-contrast: none) {
   label {
@@ -3166,28 +1663,6 @@ label {
   *::-ms-backdrop, label {
     /* IE11 */
     display: block !important; } }
-
-label, input, select, textarea, button {
-  display: block; }
-
-@media (max-width: 767px) {
-  .mobileForm label {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm label {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 1024px) {
-  label {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 1025px) {
-  label {
-    width: 520px; } }
 
 @media (max-width: 767px) {
   .mobileForm input, .mobileForm select {
@@ -3232,9 +1707,6 @@ button,
 input[type="button"],
 html input[type="button"] {
   border: none !important; }
-
-label {
-  font-family: Arial; }
 
 input {
   padding: 0 10px !important; }
