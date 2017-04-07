@@ -633,7 +633,7 @@
    After Tablet Styles
    ========================================================================== */
 @include afterTablet{
-    @if $stylesSpaciAT == "on"{
+    @if $stylesSpacingAT == "on"{
         //Spacing Helpers
         @include spacingHelpersClassesGeneratorAT;
         .mraAT,.mhaAT{margin-right: $auto}
