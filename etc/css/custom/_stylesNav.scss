@@ -25,12 +25,12 @@ $navWidthBT: 200px;
             background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
             background-size: 15px;
             padding: 0 10px 0 30px;
-            color: $HamburgerFontColour;
-            font-family: $HamburgerFontFamily;
+            color: $hamburgerFontColour;
+            font-family: $hamburgerFontFamily;
             font-size: 1em;
             
             &.clicked{
-                color: $HamburgerFontColourClicked;
+                color: $hamburgerFontColourClicked;
             }
         }
         
