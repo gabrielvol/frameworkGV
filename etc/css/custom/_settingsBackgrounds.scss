@@ -4,6 +4,8 @@
 body{background-color: $bodyBgColour}
 @include backgroundColourClassesGenerator;
 @include backgroundColourHoverClassesGenerator;
+
+//Estas clases siguientes, por cascada deben estar debajo de las clases generadas de fondos
 .noBackground, .bgNone{
     &, &:focus, &:hover{
         background-color: $transparent;
