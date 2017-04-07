@@ -1,6 +1,17 @@
 /* =============================================================================
    Settings Lists | Custom
    ========================================================================== */
+ul{
+    &.hyphenated{
+        li{        
+            position: relative;
+            
+            &::before{
+                content: "- ";
+            }
+        }
+    }
+}
 .ulResp2 li, .ulResp3 li, .ulResp4 li{
     a{
         position: relative;

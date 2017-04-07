@@ -93,11 +93,12 @@
     .flexAlignItemsCenter{align-items: center}
     .flexAlignItemsBaseline{align-items: baseline}
     .flexAlignItemsStretch{align-items: stretch}
+    .flexHorizontal{list-style: $none}
 }
 
 @if $stylesListsFloatsALL == "on"{
     //Lists and floats
-    .unstyled, .horizontal, .flexHorizontal,
+    .unstyled, .horizontal, .hyphenated,
     %unstyled{list-style: $none}
     .floatLeft, .horizontal li{float: $left}
     .floatRight, .horizontal li.floatRight,
