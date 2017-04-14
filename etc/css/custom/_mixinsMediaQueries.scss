@@ -85,7 +85,7 @@ $desktopLargeMin: 1600px;
     
 @mixin mobile800Only{
     @media (min-width: 800px)
-        and (max-width: #{$mobileLMax}){@content;}}
+        and (max-width: #{$tabletPMax}){@content;}}
     
 //900
 @mixin beforeMobile900{
@@ -96,7 +96,7 @@ $desktopLargeMin: 1600px;
     
 @mixin mobile900Only{
     @media (min-width: 900px)
-        and (max-width: #{$mobileLMax}){@content;}}
+        and (max-width: #{$tabletPMax}){@content;}}
 
 /*
 @media (min-width: 100px) and (max-width: 100px){}
