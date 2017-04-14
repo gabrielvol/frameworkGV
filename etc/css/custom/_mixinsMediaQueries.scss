@@ -75,6 +75,28 @@ $desktopLargeMin: 1600px;
 @mixin mobile700Only{
     @media (min-width: 700px)
         and (max-width: #{$mobileLMax}){@content;}}
+    
+//800
+@mixin beforeMobile800{
+    @media (max-width: 800px){@content;}}
+    
+@mixin afterMobile800{
+    @media (min-width: 800px){@content;}}
+    
+@mixin mobile800Only{
+    @media (min-width: 800px)
+        and (max-width: #{$mobileLMax}){@content;}}
+    
+//900
+@mixin beforeMobile900{
+    @media (max-width: 900px){@content;}}
+    
+@mixin afterMobile900{
+    @media (min-width: 900px){@content;}}
+    
+@mixin mobile900Only{
+    @media (min-width: 900px)
+        and (max-width: #{$mobileLMax}){@content;}}
 
 /*
 @media (min-width: 100px) and (max-width: 100px){}
