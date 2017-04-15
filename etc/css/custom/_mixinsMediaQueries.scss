@@ -13,37 +13,48 @@ $tabletMax: 1199px;
 $desktopMin: 1200px;
 $desktopLargeMin: 1600px;
 
-/* < Mobile */
-@mixin beforeMobileLandscape{
-    @media (max-width: #{$mobileMax}){@content;}}
-    
+/*
+@media (min-width: 100px) and (max-width: 100px){}
+*/
+
+/* Mobile */
 @mixin mobileOnly{
     @media (max-width: #{$mobileMax}){@content;}}
-    
-/* < Tablet */
-@mixin beforeTablet{
-    @media (max-width: #{$mobileLMax}){@content;}}
-    
-/* < Tablet Landscape */
-@mixin beforeTabletLandscape{
-    @media (max-width: #{$tabletPMax}){@content;}}
-    
-/* < Desktop */
-@mixin beforeDesktop{
-    @media (max-width: #{$tabletMax}){@content;}}
 
-/* Mobile + */
 @mixin afterMobileLandscape{
     @media (min-width: #{$mobileLMin}){@content;}}
     
-/* Mobile Landscape Only */
 @mixin mobileLandscapeOnly{
     @media (min-width: #{$mobileLMin})
         and (max-width: #{$mobileLMax}){@content;}}
+    
+/* Tablet */
+@mixin beforeTablet{
+    @media (max-width: #{$mobileLMax}){@content;}}
 
-/* Custom Mobile Breakpoints */
+@mixin afterTablet{
+    @media (min-width: #{$tabletMin}){@content;}}
+    
+@mixin tabletOnly{
+    @media (min-width: #{$tabletMin})
+        and (max-width: #{$tabletPMax}){@content;}}
+    
+/* Tablet Landscape*/
+@mixin beforeTabletLandscape{
+    @media (max-width: #{$tabletPMax}){@content;}}
+    
+@mixin afterTabletLandscape{
+    @media (min-width: #{$tabletLMin}){@content;}}
+    
+@mixin tabletLandscapeOnly{
+    @media (min-width: #{$tabletLMin})
+        and (max-width: #{$tabletMax}){@content;}}
 
-//500
+@mixin tabletAndTabletLandscapeOnly{
+    @media (min-width: #{$tabletMin})
+        and (max-width: #{$tabletMax}){@content;}}
+
+/* 500 */
 @mixin beforeMobile500{
     @media (max-width: 500px){@content;}}
     
@@ -54,7 +65,7 @@ $desktopLargeMin: 1600px;
     @media (min-width: 500px)
         and (max-width: #{$mobileLMax}){@content;}}
     
-//600
+/* 600 */
 @mixin beforeMobile600{
     @media (max-width: 600px){@content;}}
     
@@ -65,7 +76,7 @@ $desktopLargeMin: 1600px;
     @media (min-width: 600px)
         and (max-width: #{$mobileLMax}){@content;}}
     
-//700
+/* 700 */
 @mixin beforeMobile700{
     @media (max-width: 700px){@content;}}
     
@@ -76,7 +87,7 @@ $desktopLargeMin: 1600px;
     @media (min-width: 700px)
         and (max-width: #{$mobileLMax}){@content;}}
     
-//800
+/* 800 */
 @mixin beforeMobile800{
     @media (max-width: 800px){@content;}}
     
@@ -87,7 +98,7 @@ $desktopLargeMin: 1600px;
     @media (min-width: 800px)
         and (max-width: #{$tabletPMax}){@content;}}
     
-//900
+/* 900 */
 @mixin beforeMobile900{
     @media (max-width: 900px){@content;}}
     
@@ -98,40 +109,16 @@ $desktopLargeMin: 1600px;
     @media (min-width: 900px)
         and (max-width: #{$tabletPMax}){@content;}}
 
-/*
-@media (min-width: 100px) and (max-width: 100px){}
-*/
-
-/* iPad + */
-@mixin afterTablet{
-    @media (min-width: #{$tabletMin}){@content;}}
+/* Desktop */
+@mixin beforeDesktop{
+    @media (max-width: #{$tabletMax}){@content;}}
     
-/* iPad Landscape + */
-@mixin afterTabletLandscape{
-    @media (min-width: #{$tabletLMin}){@content;}}
-    
-/* iPad Only */
-@mixin tabletOnly{
-    @media (min-width: #{$tabletMin})
-        and (max-width: #{$tabletPMax}){@content;}}
-    
-/* iPad Landscape Only */
-@mixin tabletLandscapeOnly{
-    @media (min-width: #{$tabletLMin})
-        and (max-width: #{$tabletMax}){@content;}}
-    
-/* iPad Portrait and Landscape Only */
-@mixin tabletAndTabletLandscapeOnly{
-    @media (min-width: #{$tabletMin})
-        and (max-width: #{$tabletMax}){@content;}}
+@mixin afterDesktop{
+    @media (min-width: #{$desktopMin}){@content;}}
 
 /* Laptop + */
 @mixin afterLaptop{
     @media (min-width: #{$laptopMin}){@content;}}
-    
-/* Desktop + */
-@mixin afterDesktop{
-    @media (min-width: #{$desktopMin}){@content;}}
     
 /* Big Screens + */
 @mixin afterDesktopLarge{
