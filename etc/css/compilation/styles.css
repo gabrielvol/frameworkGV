@@ -91,23 +91,19 @@
 /* =============================================================================
    Media Queries | Custom
    ========================================================================== */
-/* < Mobile */
-/* < Tablet */
-/* < Tablet Landscape */
-/* < Desktop */
-/* Mobile + */
-/* Mobile Landscape Only */
-/* Custom Mobile Breakpoints */
 /*
 @media (min-width: 100px) and (max-width: 100px){}
 */
-/* iPad + */
-/* iPad Landscape + */
-/* iPad Only */
-/* iPad Landscape Only */
-/* iPad Portrait and Landscape Only */
+/* Mobile */
+/* Tablet */
+/* Tablet Landscape*/
+/* 500 */
+/* 600 */
+/* 700 */
+/* 800 */
+/* 900 */
+/* Desktop */
 /* Laptop + */
-/* Desktop + */
 /* Big Screens + */
 /* =============================================================================
    iPhone & iPads
@@ -804,7 +800,7 @@ label.black, label.black:focus, label.black:hover {
 /* =============================================================================
    Animation Settings | Etc
    ========================================================================== */
-.hvrGrow {
+.hoverGrow {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
@@ -814,9 +810,9 @@ label.black, label.black:focus, label.black:hover {
   transition-duration: 0.3s;
   transition-property: transform; }
 
-.hvrGrow:hover,
-.hvrGrow:focus,
-.hvrGrow:active {
+.hoverGrow:hover,
+.hoverGrow:focus,
+.hoverGrow:active {
   transform: scale(1.1); }
 
 /* =============================================================================
@@ -905,7 +901,7 @@ article, article::before, article::after, details, details::before, details::aft
 .cursorNone {
   cursor: none; }
 
-.unstyled, .horizontal, .flexHorizontal {
+.unstyled, .horizontal, .hyphenated {
   list-style: none !important; }
 
 .floatLeft, .horizontal li {
@@ -1516,6 +1512,11 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 /* =============================================================================
    Settings Lists | Custom
    ========================================================================== */
+ul.hyphenated li {
+  position: relative; }
+  ul.hyphenated li::before {
+    content: "- "; }
+
 .ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
   position: relative; }
 
@@ -2317,17 +2318,17 @@ table.tableRounded {
         top: 0;
         right: 0;
         border: 1px solid #999;
-        height: 45px;
-        line-height: 45px;
         box-sizing: border-box;
         z-index: 200;
         width: 90px;
+        height: 45px;
         background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
         background-size: 15px;
         padding: 0 10px 0 30px;
         color: #333;
         font-family: Arial;
-        font-size: 1em; }
+        font-size: 1em;
+        line-height: 43px; }
         .mainNav .hamb.clicked {
           color: #333; }
       .mainNav ul {

@@ -1,7 +1,7 @@
 /* =============================================================================
    Animation Settings | Etc
    ========================================================================== */
-.hvrGrow {
+.hoverGrow {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -12,8 +12,8 @@
     transition-property: transform;
 }
 
-.hvrGrow:hover,
-.hvrGrow:focus,
-.hvrGrow:active {
+.hoverGrow:hover,
+.hoverGrow:focus,
+.hoverGrow:active {
     transform: scale(1.1);
 }
