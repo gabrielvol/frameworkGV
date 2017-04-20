@@ -1,7 +1,6 @@
 /* =============================================================================
    Background Settings | Custom
    ========================================================================== */
-body{background-color: $bodyBgColour}
 @include backgroundColourClassesGenerator;
 @include backgroundColourHoverClassesGenerator;
 
