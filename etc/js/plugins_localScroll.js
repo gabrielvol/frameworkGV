@@ -1,14 +1,5 @@
 $(document).ready(function () {
-//Hamburger Menu
-    $(".hamb").click(function () {
-        $(this).toggleClass('clicked');
-        $(this).closest("#nav").find(".mainMenu").toggleClass('displayNoneBT');
-    });
-    $('.mainMenu a').click(function () {
-        $(this).closest(".mainMenu").addClass('displayNoneBT');
-    });
-    
-//Local Scroll
+    //Local Scroll
         // Select all links with hashes
     $('a[href*="#"]')
         // Remove links that don't actually link to anything

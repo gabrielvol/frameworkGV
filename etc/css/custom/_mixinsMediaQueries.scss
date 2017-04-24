@@ -59,10 +59,10 @@ $desktopLargeMin: 1600px;
     @media (max-width: 500px){@content;}}
     
 @mixin afterMobile500{
-    @media (min-width: 500px){@content;}}
+    @media (min-width: 501px){@content;}}
     
 @mixin mobile500Only{
-    @media (min-width: 500px)
+    @media (min-width: 501px)
         and (max-width: #{$mobileLMax}){@content;}}
     
 /* 600 */
@@ -70,10 +70,10 @@ $desktopLargeMin: 1600px;
     @media (max-width: 600px){@content;}}
     
 @mixin afterMobile600{
-    @media (min-width: 600px){@content;}}
+    @media (min-width: 601px){@content;}}
     
 @mixin mobile600Only{
-    @media (min-width: 600px)
+    @media (min-width: 601px)
         and (max-width: #{$mobileLMax}){@content;}}
     
 /* 700 */
@@ -81,10 +81,10 @@ $desktopLargeMin: 1600px;
     @media (max-width: 700px){@content;}}
     
 @mixin afterMobile700{
-    @media (min-width: 700px){@content;}}
+    @media (min-width: 701px){@content;}}
     
 @mixin mobile700Only{
-    @media (min-width: 700px)
+    @media (min-width: 701px)
         and (max-width: #{$mobileLMax}){@content;}}
     
 /* 800 */
@@ -92,10 +92,10 @@ $desktopLargeMin: 1600px;
     @media (max-width: 800px){@content;}}
     
 @mixin afterMobile800{
-    @media (min-width: 800px){@content;}}
+    @media (min-width: 801px){@content;}}
     
 @mixin mobile800Only{
-    @media (min-width: 800px)
+    @media (min-width: 801px)
         and (max-width: #{$tabletPMax}){@content;}}
     
 /* 900 */
@@ -103,10 +103,10 @@ $desktopLargeMin: 1600px;
     @media (max-width: 900px){@content;}}
     
 @mixin afterMobile900{
-    @media (min-width: 900px){@content;}}
+    @media (min-width: 901px){@content;}}
     
 @mixin mobile900Only{
-    @media (min-width: 900px)
+    @media (min-width: 901px)
         and (max-width: #{$tabletPMax}){@content;}}
 
 /* Desktop */
