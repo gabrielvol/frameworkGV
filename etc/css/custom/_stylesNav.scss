@@ -70,7 +70,9 @@ $navWidthBT: 200px;
         }
     }    
     
-    @include afterTablet{
+    @include afterTablet{        
+        .mainMenu{}
+        
         li{
             &, a{
                 @include equalHeightAndLineHeight(60px);
