@@ -1,4 +1,3 @@
-<a href="#main" id="go-main-content">Ir al contenido principal de esta página.</a>
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta pagina"); ?>.</a>
 <div class="pAbs" id="topGlobal"></div>
 <header id="header" class="">
