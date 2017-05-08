@@ -800,20 +800,20 @@ label.black, label.black:focus, label.black:hover {
 /* =============================================================================
    Animation Settings | Etc
    ========================================================================== */
-.hoverGrow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform; }
-
-.hoverGrow:hover,
-.hoverGrow:focus,
-.hoverGrow:active {
-  transform: scale(1.1); }
+@media (min-width: 768px) {
+  .hoverGrow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform; }
+  .hoverGrow:hover,
+  .hoverGrow:focus,
+  .hoverGrow:active {
+    transform: scale(1.1); } }
 
 /* =============================================================================
    Useful Classes | Etc
@@ -1008,6 +1008,30 @@ figure {
 /* =============================================================================
    Before Tablet Styles
    ========================================================================== */
+@media (max-width: 767px) {
+  .pRelBT {
+    position: relative; }
+  .pAbsBT {
+    position: absolute; }
+  .clearBT {
+    clear: both; }
+  .fullWidthBT {
+    width: 100% !important; }
+  .autoWidthBT {
+    width: auto !important; }
+  .autoHeightBT {
+    height: auto !important; }
+  .displayInlineBT {
+    display: inline !important; }
+  .displayBlockBT, .showBT {
+    display: block !important; }
+  .displayNoneBT, .hideBT {
+    display: none !important; }
+  .contentBoxBT {
+    box-sizing: content-box; }
+  .borderBoxBT {
+    box-sizing: border-box; } }
+
 /* =============================================================================
    Before Tablet Landscape Styles
    ========================================================================== */
@@ -1017,6 +1041,26 @@ figure {
 /* =============================================================================
    After Tablet Styles
    ========================================================================== */
+@media (min-width: 768px) {
+  .unstyledAT, .horizontalAT, .hyphenatedAT {
+    list-style: none !important; }
+  .floatLeftAT, .horizontalAT li {
+    float: left !important; }
+  .floatRightAT, .horizontalAT li.floatRight,
+  .horizontalAT.right li {
+    float: right !important; }
+  .horizontalCenterAT {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    list-style: none;
+    text-align: center; }
+    .horizontalCenterAT li {
+      display: inline; }
+      .horizontalCenterAT li > * {
+        display: inline-block; }
+  .floatNoneAT, .unstyledAT li {
+    float: none !important; } }
+
 /* =============================================================================
    After Tablet Landscape Styles
    ========================================================================== */
@@ -1033,6 +1077,12 @@ figure {
    After Desktop Styles
    ========================================================================== */
 /* =============================================================================
+   Body Settings | Custom
+   ========================================================================== */
+body {
+  background-color: #fff; }
+
+/* =============================================================================
    Nav Styles | Etc
    ========================================================================== */
 .mainNav li a {
@@ -1043,28 +1093,28 @@ figure {
 
 @media (max-width: 767px) {
   .mainNav li a {
-    color: #fff; }
+    color: #999; }
   .mainNav li.selected a {
-    color: #fff; } }
+    color: #999; } }
 
 @media (min-width: 768px) {
   .mainNav li {
     background: transparent; }
     .mainNav li a {
       background: transparent;
-      color: #fff; }
+      color: #999; }
     .mainNav li.selected {
       background: transparent; }
       .mainNav li.selected a {
         background: transparent;
-        color: #fff; } }
+        color: #666666; } }
 
 @media (min-width: 1024px) {
   .mainNav li a:focus, .mainNav li a:hover {
     background: transparent;
-    color: #fff; }
+    color: #666666; }
   .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
-    color: #fff; }
+    color: #666666; }
   .mainNav li.selected a:focus, .mainNav li.selected a:hover {
     background: transparent; } }
 
@@ -1421,9 +1471,6 @@ button.white:hover {
 /* =============================================================================
    Background Settings | Custom
    ========================================================================== */
-body {
-  background-color: #fff; }
-
 .bgWhite {
   background-color: #fff; }
 

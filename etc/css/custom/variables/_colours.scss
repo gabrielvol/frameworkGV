@@ -161,8 +161,8 @@ $backgroundColoursHoverMap:(
    Nav Colour Variables | Custom
    ========================================================================== */
     //Fonts
-$navFontColour: $white;
-$navFontColourHover: $navFontColour;
+$navFontColour: $mainFontColour;
+$navFontColourHover: $mainFontColourHover;
 $navSelectedFontColour: $navFontColourHover;
 
 $hamburgerFontColour: $greyXD;
