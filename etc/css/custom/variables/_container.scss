@@ -13,8 +13,8 @@ $containerDesktopValue: $containerLaptopValue; /* 1170px; /* Desktop / Container
 $containerDesktopLargeValue: $containerLaptopValue; /* 1520px; /* Big Screens / Container: 1550px */
 
 //Container Center Negative Values
-$cMFullSize:  calc(#{$containerMobileValue} + 30px); /* Mobile FullSize */
-$cMLFullSize: calc(#{$containerMobileLandscapeValue} + 30px); /* Mobile Landscape FullSize */
+$cMFullSize:  $containerMobileValue; /* Mobile FullSize */
+$cMLFullSize: $containerMobileLandscapeValue; /* Mobile Landscape FullSize */
 $cTFullSize:  calc(#{$containerTabletValue} + 30px); /* Tablet FullSize*/
 $cTLFullSize: calc(#{$containerTabletLandscapeValue} + 30px); /* Tablet Landscape FullSize*/
 $cLFullSize:  calc(#{$containerLaptopValue} + 30px); /* Laptop FullSize */
