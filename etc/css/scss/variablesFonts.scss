@@ -13,7 +13,7 @@ $fontFamiliesMapSans:(
     sansSerif: sans-serif
 );
 
-$fontFamiliesListSans:(
+$fontFamiliesListSans:
     map-get($fontFamiliesMapSans, sanFrancisco),
     map-get($fontFamiliesMapSans, helveticaSafe), 
     map-get($fontFamiliesMapSans, roboto),
@@ -23,7 +23,7 @@ $fontFamiliesListSans:(
     map-get($fontFamiliesMapSans, lucidaGrande),
     map-get($fontFamiliesMapSans, trebuchetMS),
     map-get($fontFamiliesMapSans, sansSerif)
-);
+; 
 
 $sanFrancisco: map-get($fontFamiliesMapSans, sanFrancisco);
 $segoeUI: map-get($fontFamiliesMapSans, segoeUI);   
@@ -39,11 +39,11 @@ $fontFamiliesMapSerif:(
     serif: serif
 );
     
-$fontFamiliesListSerif:(
+$fontFamiliesListSerif: 
     map-get($fontFamiliesMapSerif, georgia),
     map-get($fontFamiliesMapSerif, palatino),
     map-get($fontFamiliesMapSerif, serif)
-);
+;
     
     //Monospaced Stack
 $fontFamiliesMapMono:(
@@ -55,14 +55,14 @@ $fontFamiliesMapMono:(
     monospaced: monospaced
 );
     
-$fontFamiliesListMono:(
+$fontFamiliesListMono:
     map-get($fontFamiliesMapMono, consolas),    
     map-get($fontFamiliesMapMono, andaleMono),
     map-get($fontFamiliesMapMono, lucidaConsole),
     map-get($fontFamiliesMapMono, bitstreamVeraSansMono),
     map-get($fontFamiliesMapMono, courierNew),
     map-get($fontFamiliesMapMono, monospaced)
-);
+;
 
     //Font Sizes
 $h1List: 'h1, .hUno';
