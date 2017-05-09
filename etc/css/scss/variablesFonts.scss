@@ -13,7 +13,7 @@ $fontFamiliesMapSans:(
     sansSerif: sans-serif
 );
 
-$fontFamiliesListSans:
+$fontFamiliesListSans:(
     map-get($fontFamiliesMapSans, sanFrancisco),
     map-get($fontFamiliesMapSans, helveticaSafe), 
     map-get($fontFamiliesMapSans, roboto),
@@ -23,7 +23,7 @@ $fontFamiliesListSans:
     map-get($fontFamiliesMapSans, lucidaGrande),
     map-get($fontFamiliesMapSans, trebuchetMS),
     map-get($fontFamiliesMapSans, sansSerif)
-; 
+);
 
 $sanFrancisco: map-get($fontFamiliesMapSans, sanFrancisco);
 $segoeUI: map-get($fontFamiliesMapSans, segoeUI);   
