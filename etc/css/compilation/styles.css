@@ -202,12 +202,12 @@
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(300px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(300px/2)); } }
   @media (min-width: 421px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(90% + 30px)/2)); } }
+      margin-left: calc(-1 * calc(90%/2)); } }
   @media (min-width: 768px) {
     .container.centerAbs {
       position: absolute;
@@ -237,12 +237,12 @@
     .container.centerAbsMO {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(300px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(300px/2)); } }
   @media (min-width: 421px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(90% + 30px)/2)); } }
+      margin-left: calc(-1 * calc(90%/2)); } }
   @media (min-width: 768px) {
     .container.centerAbsAML {
       position: absolute;
@@ -2322,8 +2322,6 @@ table.tableRounded {
     #header .lang li a:focus, #header .lang li a:hover {
       box-shadow: 0 0 10px #fff; }
   #header .logoHeader {
-    position: relative;
-    margin: 0 !important;
     z-index: 100; }
   @media (max-width: 767px) {
     #header {
