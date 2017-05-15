@@ -124,14 +124,15 @@ table{
                 display: none;
             }
             
+            td, th{
+                display: table-cell;
+            }
+            
             tr{
                 display: table-row;
             }
             
             td{
-                &, th{
-                    display: table-cell;
-                }
                 &::before{
                     content: '';
                     float: none;                    
