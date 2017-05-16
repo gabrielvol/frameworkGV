@@ -26,6 +26,7 @@ Contraseña
 
 
 #### Panel de control
+`http://www.sitioweb.com.ar/cpanel`
 
 Usuario
 `user`
