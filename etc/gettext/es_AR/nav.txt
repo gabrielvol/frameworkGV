@@ -18,6 +18,10 @@ msgstr "Nosotros"
 msgid "Productos"
 msgstr "Productos"
 
+<?php echo _("Servicios"); ?>
+msgid "Servicios"
+msgstr "Servicios"
+
 <?php echo _("Contacto"); ?>
 msgid "Contacto"
 msgstr "Contacto"
