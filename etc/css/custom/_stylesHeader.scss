@@ -7,6 +7,8 @@
     .lang{
         $flagHeight: 32px;
         
+        @include posTR(10px, 20px);
+        
         li{            
             &, a{
                 @include squareSize($flagHeight);               
