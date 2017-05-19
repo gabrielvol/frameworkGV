@@ -7,6 +7,8 @@
     .lang{
         $flagHeight: 32px;
         
+        z-index: $zIndexLang;
+        
         li{            
             &, a{
                 @include squareSize($flagHeight);
