@@ -1,29 +1,20 @@
-<ul class="lang pRel horizontalBT unstyledAT clearfix">
+<?php
+    $text_es = "Navegar el sitio en idioma espa&ntilde;ol";
+    $text_en = "Switch to English version";
+    $text_pt = "Navegar no site em Portugu&ecirc;s";
+?>
+
+<ul class="lang pRel horizontal clearfix">
     <li>
         <a href="/nuevo/?l=es_AR">
-            <img src="/nuevo/img/fl_es.svg" alt="<?php echo _("Navegar el sitio en idioma espa&ntilde;ol"); ?>" title="<?php echo _("Navegar el sitio en idioma espa&ntilde;ol"); ?>">
+            <img src="/nuevo/img/fl_es.svg" alt="<?php echo $text_es; ?>" title="<?php echo $text_es; ?>">
         </a></li>
     <li>
         <a href="/nuevo/?l=en_GB">
-            <img src="/nuevo/img/fl_uk.svg" alt="<?php echo _("Switch to English version"); ?>" title="<?php echo _("Switch to English version"); ?>">
+            <img src="/nuevo/img/fl_uk.svg" alt="<?php echo $text_en; ?>" title="<?php echo $text_en; ?>">
         </a></li>
     <li>
         <a href="/nuevo/?l=pt_BR">
-            <img src="/nuevo/img/fl_br.svg" alt="<?php echo _("Navegar no site em Portugu&ecirc;s"); ?>" title="<?php echo _("Navegar no site em Portugu&ecirc;s"); ?>">
+            <img src="/nuevo/img/fl_br.svg" alt="<?php echo $text_pt; ?>" title="<?php echo $text_pt; ?>">
         </a></li>
 </ul>
-
-<?php
-# Gettext
-/*
-
-msgid "Navegar el sitio en idioma espa&ntilde;ol"
-msgstr "Navegar el sitio en idioma espa&ntilde;ol"
-
-msgid "Switch to English version"
-msgstr "Switch to English version"
-
-msgid "Navegar no site em Portugu&ecirc;s"
-msgstr "Navegar no site em Portugu&ecirc;s"
-
-*/
