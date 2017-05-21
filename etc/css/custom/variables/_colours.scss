@@ -84,7 +84,7 @@ $borderColoursMap:(
     white: $white,
     black: $black,
     error: $errorColour,
-    //red: $redColour,
+    //redColour: $redColour,
     //green: $green,
     greyXXL: $greyXXL,
     greyXL: $greyXL,
@@ -121,7 +121,7 @@ $backgroundColoursMap:(
     White: $white,
     Black: $black,
     Error: $errorColour,
-    //Red: $redColour,
+    //RedColour: $redColour,
     Green: $green,
     GreyXXL: $greyXXL,
     GreyXL: $greyXL,
@@ -134,7 +134,7 @@ $backgroundColoursMap:(
 $bgWhite: map-get($backgroundColoursMap, White);
 $bgBlack: map-get($backgroundColoursMap, Black);
 $bgError: map-get($backgroundColoursMap, Error);
-//$bgRed: map-get($backgroundColoursMap, Red);
+//$bgRedColour: map-get($backgroundColoursMap, RedColour);
 $bgGreen: map-get($backgroundColoursMap, Green);
 $bgGreyXXL: map-get($backgroundColoursMap, GreyXXL);
 $bgGreyXL: map-get($backgroundColoursMap, GreyXL);
