@@ -37,7 +37,7 @@ src="/img/<?php if($idioma == 'pt_BR'){ echo '/it/'; } else if($idioma == 'en_GB
 
 
 # class
-class="<?php if($idioma == 'pt_BR'){ echo ' ITlang'; } else if($idioma == 'en_GB'){ echo ' ENlang'; } ?>"
+class="<?php if($idioma == 'pt_BR'){ echo 'ITlang'; } else if($idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>"
 
 &.BRlang{}
 &.ENlang{}
