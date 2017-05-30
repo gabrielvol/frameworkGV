@@ -5,6 +5,9 @@
     
     //Variables Globlales de Status
     $statusIniGlobal    = _('Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad');
+    $statusIniGlobalA    = _('Por favor, ingrese sus datos.');
+    $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad');
+    
     $statusOKGlobal     = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias');
     $statusErrorGlobalA = _('Hubo un error al enviar el mensaje');
     $statusErrorGlobalB = _('Intente nuevamente m&aacute;s tarde');

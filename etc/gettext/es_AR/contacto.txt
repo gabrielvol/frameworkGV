@@ -14,6 +14,14 @@ msgstr "Los campos marcados con * son obligatorios"
 msgid "Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad"
 msgstr "Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad"
 
+<?php echo _("Por favor, ingrese sus datos."); ?>
+msgid "Por favor, ingrese sus datos."
+msgstr "Por favor, ingrese sus datos."
+
+<?php echo _("Nos comunicaremos con Ud. a la brevedad"); ?>
+msgid "Nos comunicaremos con Ud. a la brevedad"
+msgstr "Nos comunicaremos con Ud. a la brevedad"
+
 <?php echo _("Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"); ?>
 msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"
 msgstr "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"
