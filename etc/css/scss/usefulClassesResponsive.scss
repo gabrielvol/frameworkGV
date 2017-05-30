@@ -5,7 +5,7 @@
 @include mobileOnly{
     @if $stylesSpacingMO == "on"{
         //Spacing Helpers
-        @include spacingHelpersClassesGeneratorATL;    
+        @include spacingHelpersClassesGeneratorMO;    
         .mraMO,.mhaMO{margin-right: $auto}
         .mlaMO,.mhaMO{margin-left: $auto}
     }
