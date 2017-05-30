@@ -27,6 +27,14 @@
                 <label for="direccion">Dirección <span class="redColour">*</span></label>
                 <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="Dirección">
                 <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
+                
+                <label for="localidad"><?php echo _("Localidad"); ?></label>
+                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="Localidad">
+                <span class="errorForm errorColour"><?php echo $errorLocalidad ?></span>
+
+                <label for="provincia"><?php echo _("Provincia"); ?></label>
+                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="Provincia">
+                <span class="errorForm errorColour"><?php echo $errorProvincia ?></span>
 
                 <label for="empresa">Empresa <span class="redColour">*</span></label>
                 <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="Empresa">

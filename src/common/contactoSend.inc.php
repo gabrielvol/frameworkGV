@@ -26,6 +26,8 @@
         //Asignamos datos de campos a variables
         $nombre = $_POST['nombre'];
         $direccion = $_POST['direccion'];
+        $localidad = $_POST['localidad'];
+        $provincia = $_POST['provincia'];
         $fecha = $_POST['fecha'];
         $email = $_POST['email'];
         $telefono = $_POST['telefono'];
@@ -45,6 +47,7 @@
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
         $texto = "<strong>Nombre:</strong> ".$nombre."<br />";
         $texto .= "<strong>Direcci&oaute;n:</strong> ".$direccion."<br />";
+        $texto .= "<strong>Cargo:</strong> ".$cargo."<br />";
         $texto .= "<strong>Fecha:</strong> ".$fecha."<br />";
         $texto .= "<strong>E-mail:</strong> ".$email."<br />";
         $texto .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
@@ -83,31 +86,25 @@
             $mandatoryMessage = $errorTelefono;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
-            $invalidFieldMail = "invalidField";
+            $invalidFieldTelefono = "invalidField";
             
         } elseif (empty($_POST["empresa"])) {
             $mandatoryMessage = $errorEmpresa;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
-            $invalidFieldMail = "invalidField";
+            $invalidFieldEmpresa = "invalidField";
             
         } elseif (empty($_POST["cargo"])) {
             $mandatoryMessage = $errorCargo;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
-            $invalidFieldMail = "invalidField";
+            $invalidFieldCargo = "invalidField";
             
         } elseif (empty($_POST["direccion"])) {
             $mandatoryMessage = $errorDireccion;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
-            $invalidFieldMail = "invalidField";
-            
-        } elseif (empty($_POST["fecha"])) {
-            $mandatoryMessage = $errorFecha;
-            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
-            $invalidFieldFecha = "invalidField";
+            $invalidFieldDireccion = "invalidField";
             
         } elseif (empty($_POST["fecha"])) {
             $mandatoryMessage = $errorFecha;
@@ -119,7 +116,7 @@
             $mandatoryMessage = $errorRubro;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input
-            $invalidFieldMail = "invalidField";
+            $invalidFieldRubro = "invalidField";
 //FIN de validacion en div.mandatoryMessage
                         
 //INICIA VALIDACIÓN DEBAJO DE CADA INPUT
@@ -153,6 +150,12 @@
                 
                 // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
                 $_POST['nombre'] = '';
+                $_POST['cargo'] = '';
+                $_POST['empresa'] = '';
+                $_POST['direccion'] = '';
+                $_POST['localidad'] = '';
+                $_POST['provincia'] = '';
+                $_POST['telefono'] = '';
                 $_POST['email'] = '';
                 $_POST['mensaje'] = '';
 
