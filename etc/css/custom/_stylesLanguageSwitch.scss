@@ -34,8 +34,14 @@ $flagHeightAT: 32px;
             }
             
             img{
-                width: $flagWidthBT;
-                height: $flagHeightBT;
+                @include centerAbsolute($flagWidthBT, $flagHeightBT);
+            }
+
+            &.flagLA{ /* Left Aligned Flag*/
+                img{
+                    width: $flagWidthBT;
+                    height: $flagHeightBT;
+                }
             }
 
             & + li{
@@ -54,8 +60,14 @@ $flagHeightAT: 32px;
             }
             
             img{
-                width: $flagWidthAT;
-                height: $flagHeightAT;
+                @include centerAbsolute($flagWidthAT, $flagHeightAT);
+            }
+
+            &.flagLA{ /* Left Aligned Flag*/
+                img{
+                    width: $flagWidthAT;
+                    height: $flagHeightAT;
+                }
             }
 
             & + li{
