@@ -1,15 +1,15 @@
 <?php
     $int = 1;
     
-    $title = "Title";
-    //$titleEN = "Title";
+    $title = "PáginaSinTítulo";
+    //$titleEN = "UntitledPage";
     $mdesc = "";
     
     $navSelected = 1;
     $navSelectedInt = 1;
     
     //Gettext variable, debe ir antes del head
-    $idioma=$_GET['l'];
+    $idioma = $_GET['l'];
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');

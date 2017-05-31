@@ -1,19 +1,24 @@
 <?php
-    $test = 1;
     $int = 1;
-    $navSelected= 0;
-    $title = "Contacto | GV";
+    
+    $title = "Contacto | PáginaSinTítulo";
+    //$titleEN = "Contact | UntitledPage";
     $mdesc = "";
+    
+    $navSelected = 0;
+    
+    //Gettext variable, debe ir antes del head
+    $idioma = $_GET['l'];
+    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');
 ?>
-<link href="/nuevo/oldframework/css/main.css" rel="stylesheet">
-<link href="/nuevo/oldframework/css/datepicker.css" rel="stylesheet">
-<script type="text/javascript" src="/nuevo/oldframework/js/scrollKeep.js"></script>
-<script type="text/javascript" src="/nuevo/oldframework/js/jquery-ui-datepicker.js"></script>
+<link href="/nuevo/_test/css/datepicker.css" rel="stylesheet">
+<script type="text/javascript" src="/nuevo/_test/js/jquery-ui-datepicker.js"></script>
 </head>
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-	<div id="main" class="container" role="main">
+	<div id="main" class="int contacto" role="main">
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
@@ -106,6 +111,6 @@
             </form>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-        <script type="text/javascript" src="/nuevo/oldframework/js/form.js"></script>
+        <script type="text/javascript" src="/nuevo/_test/js/form.js"></script>
 </body>
 </html>
