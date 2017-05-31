@@ -4,34 +4,6 @@
 #header{    
     /*z-index: $zIndexHeader;*/
     
-    .lang{
-        $flagHeight: 32px;
-        
-        z-index: $zIndexLang;
-        
-        li{            
-            &, a{
-                @include squareSize($flagHeight);
-            }
-            
-            a{
-                @include borderStyle($bcWhite);
-                @include borderRadius(50%);
-                @include transition(1s);
-                
-                img{
-                    @include centerAbsolute(48px, $flagHeight);
-                }
-                
-                &:focus, &:hover{
-                    box-shadow: 0 0 10px $white;
-                }
-            }
-            
-            & + li{}
-        }
-    }
-    
     .logoHeader{
         z-index: $zIndexLogoHeader;
         

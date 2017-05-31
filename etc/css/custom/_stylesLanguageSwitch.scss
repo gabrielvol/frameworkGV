@@ -1,0 +1,66 @@
+/* =============================================================================
+   Language Switch Styles | Custom
+   ========================================================================== */
+$flagWidthBT: 38px;
+$flagHeightBT: 25px;
+
+$flagWidthAT: 48px;
+$flagHeightAT: 32px;
+
+.lang{
+    z-index: $zIndexLang;
+
+    li{            
+        a{
+            @include borderStyle($bcWhite);
+            @include borderRadius(50%);
+            @include transition(1s);
+
+            &:focus, &:hover{
+                box-shadow: 0 0 10px $white;
+            }
+        }
+
+        & + li{}
+    }
+
+    @include beforeTablet{
+        @include posTL(15px, 20px);
+        position: fixed;
+            
+        li{            
+            &, a{
+                @include squareSize($flagHeightBT);
+            }
+            
+            img{
+                width: $flagWidthBT;
+                height: $flagHeightBT;
+            }
+
+            & + li{
+                margin-left: 15px;
+            }
+        }
+    }
+
+    @include afterTablet{       
+        @include posTR(-46px, 20px);
+        position: absolute;
+
+        li{            
+            &, a{
+                @include squareSize($flagHeightAT);
+            }
+            
+            img{
+                width: $flagWidthAT;
+                height: $flagHeightAT;
+            }
+
+            & + li{
+                margin-left: 10px;
+            }
+        }
+    }
+}
