@@ -111,6 +111,6 @@
             </form>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-        <script type="text/javascript" src="/nuevo/_test/js/form.js"></script>
+        <script type="text/javascript" src="/nuevo/_test/js/plugins_form.js"></script>
 </body>
 </html>
