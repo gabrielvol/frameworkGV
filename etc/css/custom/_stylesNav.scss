@@ -42,7 +42,7 @@ $navWidthBT: 200px;
             width: $navWidthBT; 
             height: $auto;
             background-color: $bgWhite;
-            padding: 5px 0 0;
+            padding: 3px 0;
             box-shadow: 0 0 4px $black;
             
             li{
@@ -53,7 +53,7 @@ $navWidthBT: 200px;
                 }
                 
                 &:nth-child(even){
-                    background-color: $bgGreyXL;
+                    background-color: $bgGreyXXL;
                 }
                 
                 &:last-child{
