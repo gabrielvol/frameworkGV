@@ -27,6 +27,14 @@
                 
                 <label for="nombre">Nombre <span class="redColour">*</span></label>
                 <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Nombre">
+                <span class="errorForm errorColour"><?php echo $errorNombre ?></span>                
+                
+                <label for="apellido">Apellido <span class="redColour">*</span></label>
+                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="Apellido">
+                <span class="errorForm errorColour"><?php echo $errorNombre ?></span>              
+                
+                <label for="nombreYApellido">Nombre y Apellido <span class="redColour">*</span></label>
+                <input type="text" name="nombreYApellido" id="nombreYApellido" class="nombreYApellido <?php echo $invalidFieldNombreYApellido ?>" value="<?php echo $_POST['nombreYApellido']; ?>" placeholder="Nombre y Apellido">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>
                 
                 <label for="direccion">Dirección <span class="redColour">*</span></label>
