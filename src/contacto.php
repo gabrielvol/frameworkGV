@@ -26,43 +26,43 @@
                 </div>
                 
                 <label for="nombre">Nombre <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Nombre">
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Ingrese su nombre">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>                
                 
                 <label for="apellido">Apellido <span class="redColour">*</span></label>
-                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="Apellido">
+                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="Ingrese su apellido">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>              
                 
-                <label for="nombreYApellido">Nombre y Apellido <span class="redColour">*</span></label>
-                <input type="text" name="nombreYApellido" id="nombreYApellido" class="nombreYApellido <?php echo $invalidFieldNombreYApellido ?>" value="<?php echo $_POST['nombreYApellido']; ?>" placeholder="Nombre y Apellido">
-                <span class="errorForm errorColour"><?php echo $errorNombre ?></span>
+                <label for="nombre">Nombre y Apellido<span class="redColour">*</span></label>
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Ingrese su nombre y apellido">
+                <span class="errorForm errorColour"><?php echo $errorNombre ?></span> 
                 
                 <label for="direccion">Dirección <span class="redColour">*</span></label>
-                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="Dirección">
+                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="Ingrese su direcci&oacute;n">
                 <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
                 
                 <label for="localidad"><?php echo _("Localidad"); ?></label>
-                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="Localidad">
+                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="Ingrese su localidad">
                 <span class="errorForm errorColour"><?php echo $errorLocalidad ?></span>
 
                 <label for="provincia"><?php echo _("Provincia"); ?></label>
-                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="Provincia">
+                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="Ingrese su provincia">
                 <span class="errorForm errorColour"><?php echo $errorProvincia ?></span>
 
                 <label for="empresa">Empresa <span class="redColour">*</span></label>
-                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="Empresa">
+                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="Ingrese el nombre de su mpresa">
                 <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
 
                 <label for="email">E-mail <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="E-mail">
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="Ingrese su correo electr&oacute;nico">
                 <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
 
                 <label for="telefono">Teléfono <span class="redColour">*</span></label>
-                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="Teléfono">
+                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="Ingrese su n&uacute;mero de tel&eacute;fono">
                 <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>
 
                 <label for="fecha">Fecha <span class="redColour">*</span></label>
-                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="Fecha">
+                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="Ingrese una fecha">
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
 
                 <fieldset>
@@ -113,7 +113,7 @@
                 </select>-->
 
                 <label for="mensaje">Mensaje <span class="redColour">*</span></label>
-                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="Mensaje"><?php echo $_POST['mensaje']; ?></textarea>
+                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="Escriba aquí su mensaje"><?php echo $_POST['mensaje']; ?></textarea>
 
                 <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar">
             </form>

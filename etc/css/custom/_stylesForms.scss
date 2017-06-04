@@ -283,6 +283,9 @@ button{
     @include tabletOnly{
         .tabletForm &{
             @include equalHeightAndLineHeight($formSubmitHeightValueTO);
+            width: 50%!important;
+            margin-right: $auto;
+            margin-left: $auto;
         }  
     }
 
