@@ -180,6 +180,10 @@ input, select, textarea{
             margin-bottom: $paddingMarginLargeValue;       
         }
     }
+    
+    @include afterTabletLandscape{    
+        margin-bottom: $paddingMarginMediumValue;
+    }
 
     &:focus, &:hover{
         border-color: $formInputBcColourHover;
@@ -350,7 +354,8 @@ textarea{
         height: 100px;
     }
     
-    @include afterLaptop{
-        height: 100px;
+    @include afterTabletLandscape{
+        height: 100px;        
+        margin-bottom: $paddingMarginLargeValue;
     }
 }
