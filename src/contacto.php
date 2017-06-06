@@ -25,63 +25,75 @@
                     <?php echo $mandatoryMessage ?>
                 </div>
                 
-                <label for="nombre">Nombre <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Ingrese su nombre">
+                <label for="nombre"><?php echo _("Nombre"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>                
                 
-                <label for="apellido">Apellido <span class="redColour">*</span></label>
-                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="Ingrese su apellido">
-                <span class="errorForm errorColour"><?php echo $errorNombre ?></span>              
+                <label for="apellido"><?php echo _("Apellido"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="<?php echo _('Ingrese su apellido'); ?>">
+                <span class="errorForm errorColour"><?php echo $errorApellido?></span>              
                 
-                <label for="nombre">Nombre y Apellido<span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="Ingrese su nombre y apellido">
+                <label for="nombre"><?php echo _("Nombre y Apellido"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre y apellido'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span> 
                 
-                <label for="direccion">Dirección <span class="redColour">*</span></label>
-                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="Ingrese su direcci&oacute;n">
+                <label for="direccion"><?php echo _("Direcci&oacute;n"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _('Ingrese su direcci&oacute;n'); ?>">
+                <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
+                
+                <label for="direccion"><?php echo _("Domicilio"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _('Ingrese su domicilio'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
                 
                 <label for="localidad"><?php echo _("Localidad"); ?></label>
-                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="Ingrese su localidad">
+                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="<?php echo _('Ingrese su localidad'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorLocalidad ?></span>
 
                 <label for="provincia"><?php echo _("Provincia"); ?></label>
-                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="Ingrese su provincia">
+                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="<?php echo _('Ingrese su provincia'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorProvincia ?></span>
 
-                <label for="empresa">Empresa <span class="redColour">*</span></label>
-                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="Ingrese el nombre de su mpresa">
-                <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
-
-                <label for="email">E-mail <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="Ingrese su correo electr&oacute;nico">
-                <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
-
-                <label for="telefono">Teléfono <span class="redColour">*</span></label>
-                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="Ingrese su n&uacute;mero de tel&eacute;fono">
+                <label for="telefono"><?php echo _("Tel&eacute;fono"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="<?php echo _('Ingrese su n&uacute;mero de tel&eacute;fono'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>
 
-                <label for="fecha">Fecha <span class="redColour">*</span></label>
-                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="Ingrese una fecha">
+                <label for="email"><?php echo _("E-mail"); ?> <span class="redColour">*</span></label>
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="<?php echo _('Ingrese su e-mail'); ?>">
+                <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
+
+                <label for="email"><?php echo _("Correo electr&oacute;nico"); ?> <span class="redColour">*</span></label>
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="<?php echo _('Ingrese su correo electr&oacute;nico'); ?>">
+                <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
+
+                <label for="empresa"><?php echo _("Empresa"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="<?php echo _('Ingrese el nombre de su empresa'); ?>">
+                <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
+
+                <label for="cargo"><?php echo _("Cargo"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="cargo" id="cargo" class="cargo <?php echo $invalidFieldCargo ?>" value="<?php echo $_POST['cargo']; ?>" placeholder="<?php echo _('Ingrese su cargo'); ?>">
+                <span class="errorForm errorColour"><?php echo $errorCargo ?></span>
+
+                <label for="fecha"><?php echo _("Fecha"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="<?php echo _('Ingrese una fecha'); ?>">
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
 
                 <fieldset>
-                    <legend>¿Desea recibir el boletín de noticias? <span class="redColour">*</span></legend>
+                    <legend><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?> <span class="redColour">*</span></legend>
 
-                    <label for="radioSi" class="radio">Newsletter Sí</label>
-                    <input type="radio" name="newsletter" id="radioSi" value="Si" class="radio" >
+                    <label for="radioSi" class="radio"><?php echo _("Newsletter S&iacute;"); ?></label>
+                    <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio" >
 
-                    <label for="radioNo" class="radio">Newsletter No</label>
-                    <input type="radio" name="newsletter" id="radioNo" value="No" class="radio" >
+                    <label for="radioNo" class="radio"><?php echo _("Newsletter No"); ?></label>
+                    <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio" >
 
-                    <label for="radioNoSe" class="radio">Newsletter No Sé</label>
-                    <input type="radio" name="newsletter" id="radioNoSe" value="No Sé" class="radio" >
+                    <label for="radioNoSe" class="radio"><?php echo _("Newsletter No Sé"); ?></label>
+                    <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio" >
                 </fieldset>
 
-                <label for="preciotilde">Prefiero charlar el precio personalmente <span class="redColour">*</span></label>
+                <label for="preciotilde"><?php echo _("Prefiero charlar el precio personalmente"); ?> <span class="redColour">*</span></label>
                 <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" value="Si">
                 
-                <label for="browsersInput">Choose a browser from this list:</label>
+                <label for="browsersInput"><?php echo _("Choose a browser from this list:"); ?></label>
                 <input type="text" list="browsersList" name="myBrowser" id="browsersInput">
                 <datalist id="browsersList">
                     <option value="Chrome">
@@ -92,10 +104,10 @@
                     <option value="Microsoft Edge">
                 </datalist>
 
-                <label for="habitacion">Habitación <span class="redColour">*</span></label>
+                <label for="habitacion"><?php echo _("Habitaci&oacute;n"); ?> <span class="redColour">*</span></label>
                 <select id="habitacion" name="habitacion" class="habitacion" >
-                    <option value="<?php echo $_POST['habitacion']; ?>" selected>Seleccione una opción</option>
-                    <option value="a">a</option>
+                    <option value="<?php echo $_POST['habitacion']; ?>" selected><?php echo _("Seleccione una opci&oacute;n"); ?></option>
+                    <option value="a"><?php echo _("a"); ?></option>
                     <option value="b">b</option>
                 </select>
 
@@ -112,10 +124,10 @@
                 ?>
                 </select>-->
 
-                <label for="mensaje">Mensaje <span class="redColour">*</span></label>
-                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="Escriba aquí su mensaje"><?php echo $_POST['mensaje']; ?></textarea>
+                <label for="mensaje"><?php echo _("Mensaje"); ?> <span class="redColour">*</span></label>
+                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje'); ?>"><?php echo $_POST['mensaje']; ?></textarea>
 
-                <input type="submit" value="Enviar" id="enviar" name="enviarForm" class="enviar">
+                <input type="submit" value="<?php echo _('Enviar'); ?>" id="enviar" name="enviarForm" class="enviar">
             </form>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>

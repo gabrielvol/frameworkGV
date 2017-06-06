@@ -34,13 +34,117 @@ msgstr "There was an error delivering your message"
 msgid "Intente nuevamente m&aacute;s tarde"
 msgstr "Please try again later"
 
+
+
 <?php echo _("Nombre"); ?>
 msgid "Nombre"
 msgstr "Name"
 
+<?php echo _("Apellido"); ?>
+msgid "Apellido"
+msgstr "Surname"
+
+<?php echo _("Nombre y Apellido"); ?>
+msgid "Nombre y Apellido"
+msgstr "Full name"
+
+<?php echo _("Apellido"); ?>
+msgid "Apellido"
+msgstr "Surname"
+
+<?php echo _("Por favor, ingrese su nombre"); ?>
+msgid "Por favor, ingrese su nombre"
+msgstr "Please complete your name"
+
+<?php echo _("Por favor, ingrese su apellido"); ?>
+msgid "Por favor, ingrese su apellido"
+msgstr "Please complete your surname"
+
+<?php echo _("Por favor, ingrese su nombre y apellido"); ?>
+msgid "Por favor, ingrese su nombre y apellido"
+msgstr "Please complete your full name"
+
+<?php echo _("Ingrese su nombre"); ?>
+msgid "Ingrese su nombre"
+msgstr "Enter your name"
+
+<?php echo _("Ingrese su apellido"); ?>
+msgid "Ingrese su apellido"
+msgstr "Enter your surname"
+
+<?php echo _("Ingrese su nombre y apellido"); ?>
+msgid "Ingrese su nombre y apellido"
+msgstr "Enter your full name"
+
+
+
+<?php echo _("Direcci&oacute;n"); ?>
+msgid "Direcci&oacute;n"
+msgstr "Address"
+
+<?php echo _("Domicilio"); ?>
+msgid "Domicilio"
+msgstr "Address"
+
+<?php echo _("Por favor, ingrese su direcci&oacute;n"); ?>
+msgid "Por favor, ingrese su direcci&oacute;n"
+msgstr "Please complete your address"
+
+<?php echo _("Por favor, ingrese su domicilio"); ?>
+msgid "Por favor, ingrese su domicilio"
+msgstr "Please complete your address"
+
+<?php echo _("Ingrese su direcci&oacute;n"); ?>
+msgid "Ingrese su direcci&oacute;n"
+msgstr "Enter your address"
+
+<?php echo _("Ingrese su domicilio"); ?>
+msgid "Ingrese su domicilio"
+msgstr "Enter your address"
+
+
+
+<?php echo _("Localidad"); ?>
+msgid "Localidad"
+msgstr ""
+
+<?php echo _("Por favor, ingrese una localidad"); ?>
+msgid "Por favor, ingrese una localidad"
+msgstr ""
+
+<?php echo _("Ingrese una localidad"); ?>
+msgid "Ingrese una localidad"
+msgstr ""
+
+
+
+<?php echo _("Provincia"); ?>
+msgid "Provincia"
+msgstr ""
+
+<?php echo _("Por favor, ingrese una provincia"); ?>
+msgid "Por favor, ingrese una provincia"
+msgstr ""
+
+<?php echo _("Ingrese una provincia"); ?>
+msgid "Ingrese una provincia"
+msgstr ""
+
+
+
 <?php echo _("Tel&eacute;fono"); ?>
 msgid "Tel&eacute;fono"
 msgstr "Telephone"
+
+<?php echo _("Por favor, ingrese un n&uacute;mero de tel&eacute;fono"); ?>
+msgid "Por favor, ingrese un n&uacute;mero de tel&eacute;fono"
+msgstr "Please enter a telephone number"
+
+<?php echo _("Ingrese un n&uacute;mero de tel&eacute;fono"); ?>
+msgid "Ingrese un n&uacute;mero de tel&eacute;fono"
+msgstr "Enter a telephone number"
+
+
 
 <?php echo _("Correo electr&oacute;nico"); ?>
 msgid "Correo electr&oacute;nico"
@@ -50,9 +154,74 @@ msgstr "E-mail"
 msgid "E-mail"
 msgstr "E-mail"
 
-<?php echo _("Comentarios"); ?>
-msgid "Comentarios"
-msgstr "Comments"
+<?php echo _("Por favor, ingrese su direcci&oacute;n de correo"); ?>
+msgid "Por favor, ingrese su direcci&oacute;n de correo"
+msgstr "Please enter a valid e-mail address"
+
+<?php echo _("Por favor, ingrese su e-mail"); ?>
+msgid "Por favor, ingrese su e-mail"
+msgstr "Please enter a valid e-mail address"
+
+<?php echo _("Ingrese su direcci&oacute;n de correo"); ?>
+msgid "Ingrese su direcci&oacute;n de correo"
+msgstr "Enter your e-mail"
+
+<?php echo _("Ingrese su e-mail"); ?>
+msgid "Ingrese su e-mail"
+msgstr "Enter your e-mail"
+
+
+
+<?php echo _("Empresa"); ?>
+msgid "Empresa"
+msgstr ""
+
+<?php echo _("Por favor, ingrese el nombre de su empresa"); ?>
+msgid "Por favor, ingrese el nombre de su empresa"
+msgstr ""
+
+<?php echo _("Ingrese el nombre de su empresa"); ?>
+msgid "Ingrese el nombre de su empresa"
+msgstr ""
+
+
+
+<?php echo _("Cargo"); ?>
+msgid "Cargo"
+msgstr ""
+
+<?php echo _("Por favor, ingrese su cargo"); ?>
+msgid "Por favor, ingrese su cargo"
+msgstr ""
+
+<?php echo _("Ingrese su cargo"); ?>
+msgid "Ingrese su cargo"
+msgstr ""
+
+
+
+<?php echo _("Fecha"); ?>
+msgid "Fecha"
+msgstr "Date"
+
+<?php echo _("Por favor, indique la fecha deseada"); ?>
+msgid "Por favor, indique la fecha deseada"
+msgstr "Please choose a date"
+
+<?php echo _("Indique la fecha deseada"); ?>
+msgid "Indique la fecha deseada"
+msgstr "Choose a date"
+
+
+
+<?php echo _("Mensaje"); ?>
+msgstr "Mensaje"
+
+<?php echo _("Escriba aqu&iacute; su mensaje..."); ?>
+msgid "Escriba aqu&iacute; su mensaje..."
+msgstr "Write your message here..."
+
+
 
 <?php echo _("Enviar"); ?>
 msgid "Enviar"
@@ -61,39 +230,3 @@ msgstr "Send"
 <?php echo _("Gracias"); ?>
 msgid "Gracias"
 msgstr "Thank you"
-
-<?php echo _("Por favor, ingrese su nombre"); ?>
-msgid "Por favor, ingrese su nombre"
-msgstr "Please complete your name"
-
-<?php echo _("Por favor, ingrese el nombre de su empresa"); ?>
-msgid "Por favor, ingrese el nombre de su empresa"
-msgstr "Please complete your company name"
-
-<?php echo _("Por favor, ingrese una direcci&oacute;n de correo"); ?>
-msgid "Por favor, ingrese una direcci&oacute;n de correo"
-msgstr "Please enter a valid e-mail address"
-
-<?php echo _("Por favor, ingrese un n&uacute;mero de tel&eacute;fono"); ?>
-msgid "Por favor, ingrese un n&uacute;mero de tel&eacute;fono"
-msgstr "Please enter a phone number"
-
-<?php echo _("Por favor, indique la fecha deseada"); ?>
-msgid "Por favor, indique la fecha deseada"
-msgstr "Please state a date"
-
-<?php echo _("Por favor, ingrese su cargo"); ?>
-msgid "Por favor, ingrese su cargo"
-msgstr ""
-
-<?php echo _("Por favor, ingrese una direcci&oacute;n"); ?>
-msgid "Por favor, ingrese una direcci&oacute;n"
-msgstr ""
-
-<?php echo _("Por favor, ingrese una localidad"); ?>
-msgid "Por favor, ingrese una localidad"
-msgstr ""
-
-<?php echo _("Por favor, ingrese una provincia"); ?>
-msgid "Por favor, ingrese una provincia"
-msgstr ""
