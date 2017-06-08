@@ -4,10 +4,10 @@
 
 Each YouTube video has 4 generated images. They are predictably formatted as follows:
 
-https://img.youtube.com/vi/<insert-youtube-video-id-here>/0.jpg
-https://img.youtube.com/vi/<insert-youtube-video-id-here>/1.jpg
-https://img.youtube.com/vi/<insert-youtube-video-id-here>/2.jpg
-https://img.youtube.com/vi/<insert-youtube-video-id-here>/3.jpg
+https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/0.jpg
+https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/1.jpg
+https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/2.jpg
+https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/3.jpg
 
 The first one in the list is a full size image and others are thumbnail images.
 The default thumbnail image (ie. one of 1.jpg, 2.jpg, 3.jpg) is:
