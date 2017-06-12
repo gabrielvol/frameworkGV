@@ -1,14 +1,32 @@
 /* =============================================================================
    Forms Styles | Custom
    ========================================================================== */
-form, fieldset, label, input, select, textarea, button{
+form, fieldset, label, input, select, textarea, button,
+.labelName, .sug, .errorForm{
     .mobileForm &{
         @include beforeTablet{
             clear: both!important;
-            float: none!important;
-            width: $formLabelWidthBT;
+            float: $none;
             margin-right: $auto;
             margin-left: $auto;
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            clear: both!important;
+            float: $none;
+            margin-right: $auto;
+            margin-left: $auto;
+        }
+    }
+}
+
+fieldset, label, input, select, textarea, button,
+.labelName, .sug, .errorForm{
+    .mobileForm &{
+        @include beforeTablet{
+            width: $formLabelWidthBT;
         }
         
         @include mobileOnly{
@@ -18,67 +36,47 @@ form, fieldset, label, input, select, textarea, button{
     
     @include tabletOnly{
         .tabletForm &{
-            clear: both!important;
-            float: $none;
             width: $formLabelWidthTO;
-            margin-right: $auto;
-            margin-left: $auto;
         }
+    }
+    
+    @include afterTabletLandscape{
+        width: $formLabelWidthATL;
+    }
+    
+    @include afterDesktop{
+        width: $formLabelWidthAD;
     }
 }
 
-fieldset, input, select, textarea, button{
+form{
     .mobileForm &{
         @include beforeTablet{
-            width: $formInputWidthBT;
+            width: $formWidthBT;
         }
         
         @include mobileOnly{
-            width: $formInputWidthMO;            
+            width: $formWidthMO;            
         }
     }
     
     @include tabletOnly{
         .tabletForm &{
-            width: $formInputWidthTO;
+            width: $formWidthTO;
         }
     }
     
     @include afterTabletLandscape{
-        width: $formInputWidthATL;
+        width: $formWidthATL;
     }
     
     @include afterDesktop{
-        width: $formInputWidthAD;
+        width: $formWidthAD;
     }
 }
 
-.mandatoryMessage{
-    box-sizing: border-box;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-        
-    &.invalidMandatoryMessage{
-        background-color: $invalidMandatoryMessageBgColour;
-        
-        p{
-            color: $invalidMandatoryMessageFontColour;            
-        }
-    }
-}
-
-.status{        
-    @include beforeTabletLandscape{
-        text-align: center;            
-    }
-    
-    &.ok{
-        background-color: $bgGreen;
-        padding: 10px 20px;
-    }
-}
-
-label, input, select, textarea, button{
+label, input, select, textarea, button,
+.labelName, .sug, .errorForm{
     display: block;
 }
 
@@ -101,89 +99,10 @@ legend{
     }
 }
 
-label{
-    display: block\0/!important; /* IE8 + IE9 */
-    padding-left: 7px;
-    margin-bottom: $zero;
-    font-family: $formLabelFontFamily;
-    
-    @include beforeTablet{
-        .mobileForm &{
-            @include equalHeightAndLineHeight($formLabelHeightBT);
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            @include equalHeightAndLineHeight($formLabelHeightTO);          
-        }
-    }
-    
-    @include afterTabletLandscape{
-        @include equalHeightAndLineHeight($formLabelHeightATL);
-    }
-    
-    @include afterLaptop{
-        width: $formLabelWidthAD;        
-    }
-
-    @if $labelsVisible == "off"{
-        display: $none;
-    }
-}
-
-@media all and (-ms-high-contrast:none){
-    label { /* IE10 */
-        display: $block;
-    }
-    
-    *::-ms-backdrop, label { /* IE11 */
-        display: $block;
-    }
-}
-
-input, select{
-    @include beforeTablet{
-        .mobileForm &{
-            @include equalHeightAndLineHeight($formInputHeightBT);
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            @include equalHeightAndLineHeight($formInputHeightTO);          
-        }
-    }
-    
-    @include afterTabletLandscape{
-        @include equalHeightAndLineHeight($formInputHeightATL);
-    }
-    
-    @include afterLaptop{
-        width: $formInputWidthAD;        
-    }
-}
-
 input, select, textarea{
     @include borderStyle($formInputBcColour);
     @include transition(1s);
-    font-family: $formInputFont;
-    
-    @include beforeTablet{
-        .mobileForm &{
-            margin-bottom: $paddingMarginLargeValue;
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            margin-bottom: $paddingMarginLargeValue;       
-        }
-    }
-    
-    @include afterTabletLandscape{    
-        margin-bottom: $paddingMarginMediumValue;
-    }
+    font-family: $formInputFont; 
 
     &:focus, &:hover{
         border-color: $formInputBcColourHover;
@@ -201,6 +120,162 @@ input, select, textarea{
         &, &:focus, &:hover{
             border-color: $bcError!important;
             border-width: 2px;
+        }
+    }
+}
+
+@if $formInsideLabel == "off"{
+    label{
+        display: block\0/!important; /* IE8 + IE9 */
+        padding-left: 7px;
+        margin-bottom: $zero;
+        font-family: $formLabelFontFamily;
+
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight($formLabelHeightBT);
+            }
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight($formLabelHeightTO);          
+            }
+        }
+
+        @include afterTabletLandscape{
+            @include equalHeightAndLineHeight($formLabelHeightATL);
+        }
+
+        @include afterDesktop{
+            height: $formLabelHeightAD;        
+        }
+
+        @if $labelsVisible == "off"{
+            display: $none;
+        }
+    }
+
+    @media all and (-ms-high-contrast:none){
+        label { /* IE10 */
+            display: $block;
+        }
+
+        *::-ms-backdrop, label { /* IE11 */
+            display: $block;
+        }
+    }
+    
+    input, select{
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight($formInputHeightBT);
+            }
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight($formInputHeightTO);          
+            }
+        }
+
+        @include afterTabletLandscape{
+            @include equalHeightAndLineHeight($formInputHeightATL);
+        }
+
+        @include afterLaptop{
+            height: $formInputHeightAD;        
+        }
+    }
+    
+    input, select, textarea{    
+        @include beforeTablet{
+            .mobileForm &{
+                margin-bottom: $paddingMarginLargeValue;
+            }
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                margin-bottom: $paddingMarginLargeValue;       
+            }
+        }
+
+        @include afterTabletLandscape{    
+            margin-bottom: $paddingMarginMediumValue;
+        }
+    }
+}
+
+@if $formInsideLabel == "on"{
+    label{
+        @include clearfix;
+
+        @include beforeTablet{
+            .mobileForm &{
+                margin-bottom: $paddingMarginLargeValue;
+            }
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                margin-bottom: $paddingMarginLargeValue;       
+            }
+        }
+
+        @include afterTabletLandscape{    
+            margin-bottom: $paddingMarginMediumValue;
+        }
+    }
+
+    .labelName, .sug{
+        padding-left: 7px;
+    }
+    
+    input, select, .labelName, .errorForm{    
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight($formLabelContentsHeightBT);
+            }        
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight($formLabelContentsHeightTO);          
+            }
+        }
+
+        @include afterTabletLandscape{
+            @include equalHeightAndLineHeight($formLabelContentsHeightATL);
+        }
+
+        @include afterDesktop{
+            height: $formLabelContentsHeightAD;        
+        }
+    }
+    
+    .sug{
+        font-size: 0.8em;
+        padding-bottom: 3px;
+
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight($formLabelSugHeightBT);
+            }
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight($formLabelSugHeightTO);
+            }
+        }
+
+        @include afterTabletLandscape{
+            @include equalHeightAndLineHeight($formLabelSugHeightATL);
+        }
+
+        @include afterDesktop{
+            height: $formLabelSugHeightAD;        
         }
     }
 }
@@ -319,6 +394,7 @@ button{
         }
     }
 }
+
 @include tabletOnly{
     .tabletForm{
         input[type="reset"],
@@ -357,5 +433,30 @@ textarea{
     @include afterTabletLandscape{
         height: 100px;        
         margin-bottom: $paddingMarginLargeValue;
+    }
+}
+
+.mandatoryMessage{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+        
+    &.invalidMandatoryMessage{
+        background-color: $invalidMandatoryMessageBgColour;
+        
+        p{
+            color: $invalidMandatoryMessageFontColour;            
+        }
+    }
+}
+
+.status{        
+    @include beforeTabletLandscape{
+        text-align: center;            
+    }
+    
+    &.ok{
+        background-color: $bgGreen;
+        padding: 10px 20px;
     }
 }

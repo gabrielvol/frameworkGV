@@ -19,20 +19,26 @@
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
 	<div id="main" class="int contacto" role="main">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
             <div class="mobileForm tabletForm">
+            <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
                     <?php echo $mandatoryMessage ?>
                 </div>
                 
-                <label for="nombre"><?php echo _("Nombre"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre'); ?>" <?php echo $autofocusNombre ?>>
-                <span class="errorForm errorColour"><?php echo $errorNombre ?></span>                
+                <label for="nombre">
+                    <span class="labelName"><?php echo _("Nombre"); ?></span>
+                    <span class="sug"><?php echo _('Ingrese su nombre'); ?></span>
+                    <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre'); ?>" <?php echo $autofocusNombre ?>>
+                    <span class="errorForm errorColour"><?php echo $errorNombre ?></span>                
+                </label>
                 
-                <label for="apellido"><?php echo _("Apellido"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="<?php echo _('Ingrese su apellido'); ?>" <?php echo $autofocusApellido ?>>
-                <span class="errorForm errorColour"><?php echo $errorApellido?></span>              
+                <label for="apellido">
+                    <span class="labelName"><?php echo _("Apellido"); ?></span>
+                    <span class="sug"><?php echo _('Ingrese su apellido'); ?></span>
+                    <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="<?php echo _('Ingrese su apellido'); ?>" <?php echo $autofocusApellido ?>>
+                    <span class="errorForm errorColour"><?php echo $errorApellido?></span>              
+                </label>
                 
                 <label for="nombre"><?php echo _("Nombre y Apellido"); ?> <span class="redColour">*</span></label>
                 <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre y apellido'); ?>" <?php echo $autofocusNombre ?>>
@@ -137,7 +143,7 @@
                 <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje'); ?>"><?php echo $_POST['mensaje']; ?></textarea>
 
                 <input type="submit" value="<?php echo _('Enviar'); ?>" id="enviar" name="enviarForm" class="enviar">
-            </form>                
+            </form>
             </div>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>

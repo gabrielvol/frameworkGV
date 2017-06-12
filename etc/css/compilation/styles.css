@@ -83,9 +83,6 @@
    Forms Variables | Custom
    ========================================================================== */
 /* =============================================================================
-   Tables Variables | Custom
-   ========================================================================== */
-/* =============================================================================
    OpenSans font-face | Etc
    ========================================================================== */
 /* =============================================================================
@@ -1338,180 +1335,6 @@ textarea {
   vertical-align: top; }
 
 /* =============================================================================
-   Forms NiceIt Reset Styles | Etc
-   ========================================================================== */
-form.niceIt input[type="text"],
-form.niceIt input[type="email"],
-form.niceIt input[type="search"],
-form.niceIt input[type="password"],
-form.niceIt input[type="url"],
-form.niceIt input[type="number"] {
-  padding-top: 0;
-  padding-bottom: 0; }
-
-form.niceIt .fmSelect {
-  cursor: pointer;
-  *position: relative; }
-  form.niceIt .fmSelect, form.niceIt .fmSelect li, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
-    display: block !important; }
-  form.niceIt .fmSelect, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
-    font-weight: 400;
-    text-transform: uppercase; }
-  form.niceIt .fmSelect strong {
-    overflow: hidden; }
-    form.niceIt .fmSelect strong span cite {
-      font-style: normal !important; }
-  form.niceIt .fmSelect, form.niceIt .fmSelect li {
-    position: relative; }
-  form.niceIt .fmSelect ul {
-    display: none;
-    margin: -1px 0 0 -11px;
-    overflow: hidden;
-    *position: absolute; }
-    form.niceIt .fmSelect ul li {
-      list-style: none;
-      width: 100%;
-      height: auto; }
-
-form.niceIt .fmCheckbox {
-  display: block !important;
-  cursor: pointer; }
-
-form.niceIt .fnFileInput {
-  display: block !important; }
-  form.niceIt .fnFileInput span {
-    position: relative;
-    display: block !important; }
-    form.niceIt .fnFileInput span cite, form.niceIt .fnFileInput span strong {
-      position: absolute;
-      display: block !important; }
-    form.niceIt .fnFileInput span cite {
-      z-index: 10;
-      font-style: normal; }
-    form.niceIt .fnFileInput span strong {
-      z-index: 20;
-      text-indent: -9999px; }
-      form.niceIt .fnFileInput span strong input {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=0)";
-        position: relative;
-        cursor: pointer; }
-
-form.niceIt .fmRadio {
-  font-size: 0;
-  line-height: 1%;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* =============================================================================
-   Tables Styles | Etc
-   ========================================================================== */
-@media (max-width: 767px) {
-  table {
-    width: 100% !important; }
-    table.tableWidthBig {
-      width: 1000px; }
-    table.tableWidthSmall {
-      width: 500px; } }
-
-@media (min-width: 768px) {
-  table {
-    width: 700px; } }
-
-@media (min-width: 1024px) {
-  table {
-    width: 970px; }
-    table.tableWidthSmall {
-      width: 760px; } }
-
-table th, table td {
-  vertical-align: middle; }
-
-.tableRounded {
-  border-radius: 12px;
-  border-collapse: separate; }
-  .tableRounded tfoot td:first-child {
-    border-radius: 0 0 0 12px; }
-  .tableRounded tfoot td:last-child {
-    border-radius: 0 0 12px 0; }
-  .tableRounded tr th:first-child {
-    border-radius: 12px 0 0 0; }
-  .tableRounded tr th:last-child {
-    border-radius: 0 12px 0 0; }
-  .tableRounded tr:last-child td {
-    border-bottom: 0 !important; }
-
-.tableStriped thead tr, .tableStriped tfoot tr {
-  background-color: #aaa; }
-
-.tableStriped tbody tr {
-  background-color: #fff; }
-  .tableStriped tbody tr:nth-child(odd) {
-    background-color: #eee; }
-
-@media (max-width: 767px) {
-  table {
-    width: 100% !important; }
-    table thead, table tfoot {
-      display: none; }
-    table tr, table td {
-      display: block; }
-    table tr {
-      margin-top: 0; }
-    table td {
-      position: relative; }
-      table td::before {
-        content: attr(data-label);
-        position: absolute; }
-  .tableRounded tr:last-child {
-    border: none !important; }
-  .tableRounded td:last-child {
-    border: none !important; }
-  .table-responsive {
-    width: 98%;
-    overflow-x: scroll; }
-    .table-responsive table {
-      position: relative;
-      display: table; }
-      .table-responsive table thead, .table-responsive table tbody {
-        display: table-row-group; }
-      .table-responsive table tfoot {
-        display: none; }
-      .table-responsive table td, .table-responsive table th {
-        display: table-cell; }
-      .table-responsive table tr {
-        display: table-row; }
-      .table-responsive table td::before {
-        content: '';
-        float: none; }
-    .table-responsive .tableStriped tr {
-      border: none !important; }
-    .table-responsive .tableStriped td {
-      background: none !important; } }
-
-/* =============================================================================
-   Modal y Popup Styles | Etc
-   ========================================================================== */
-.modalBG {
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  z-index: 9000;
-  background-color: #000; }
-
-.popup {
-  z-index: 9100;
-  left: 50%; }
-  .popup .close {
-    z-index: 9200; }
-
-/* =============================================================================
    Print Styles | Etc
    ========================================================================== */
 /* =============================================================================
@@ -1710,63 +1533,68 @@ ul.hyphenated li {
    Forms Styles | Custom
    ========================================================================== */
 @media (max-width: 767px) {
-  .mobileForm form, .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button {
+  .mobileForm form, .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
+  .labelName, .mobileForm .sug, .mobileForm .errorForm {
     clear: both !important;
     float: none !important;
-    width: 90% !important;
     margin-right: auto !important;
     margin-left: auto !important; } }
 
-@media (max-width: 420px) {
-  .mobileForm form, .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button {
-    width: 270px !important; } }
-
 @media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm form, .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button {
+  .tabletForm form, .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button, .tabletForm
+  .labelName, .tabletForm .sug, .tabletForm .errorForm {
     clear: both !important;
     float: none !important;
-    width: 520px !important;
     margin-right: auto !important;
     margin-left: auto !important; } }
 
 @media (max-width: 767px) {
-  .mobileForm fieldset, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button {
+  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
+  .labelName, .mobileForm .sug, .mobileForm .errorForm {
     width: 90% !important; } }
 
 @media (max-width: 420px) {
-  .mobileForm fieldset, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button {
+  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
+  .labelName, .mobileForm .sug, .mobileForm .errorForm {
     width: 270px !important; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm fieldset, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button {
+  .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button, .tabletForm
+  .labelName, .tabletForm .sug, .tabletForm .errorForm {
     width: 520px !important; } }
 
 @media (min-width: 1024px) {
-  fieldset, input, select, textarea, button {
+  fieldset, label, input, select, textarea, button,
+  .labelName, .sug, .errorForm {
     width: 520px; } }
 
 @media (min-width: 1200px) {
-  fieldset, input, select, textarea, button {
+  fieldset, label, input, select, textarea, button,
+  .labelName, .sug, .errorForm {
     width: 520px; } }
 
-.mandatoryMessage {
-  box-sizing: border-box;
-  padding: 10px 20px;
-  margin-bottom: 20px; }
-  .mandatoryMessage.invalidMandatoryMessage {
-    background-color: #d43131; }
-    .mandatoryMessage.invalidMandatoryMessage p {
-      color: #fff; }
+@media (max-width: 767px) {
+  .mobileForm form {
+    width: 90% !important; } }
 
-@media (max-width: 1023px) {
-  .status {
-    text-align: center; } }
+@media (max-width: 420px) {
+  .mobileForm form {
+    width: 270px !important; } }
 
-.status.ok {
-  background-color: #339900;
-  padding: 10px 20px; }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tabletForm form {
+    width: 520px !important; } }
 
-label, input, select, textarea, button {
+@media (min-width: 1024px) {
+  form {
+    width: 520px; } }
+
+@media (min-width: 1200px) {
+  form {
+    width: 520px; } }
+
+label, input, select, textarea, button,
+.labelName, .sug, .errorForm {
   display: block; }
 
 fieldset + fieldset {
@@ -1784,65 +1612,10 @@ fieldset > p, fieldset legend {
     margin-left: auto !important;
     text-align: center; } }
 
-label {
-  display: block\0/!important;
-  /* IE8 + IE9 */
-  padding-left: 7px;
-  margin-bottom: 0 !important;
-  font-family: Arial; }
-  @media (max-width: 767px) {
-    .mobileForm label {
-      height: 30px;
-      line-height: 30px; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm label {
-      height: 30px;
-      line-height: 30px; } }
-  @media (min-width: 1024px) {
-    label {
-      height: 30px;
-      line-height: 30px; } }
-  @media (min-width: 1025px) {
-    label {
-      width: 520px; } }
-
-@media all and (-ms-high-contrast: none) {
-  label {
-    /* IE10 */
-    display: block !important; }
-  *::-ms-backdrop, label {
-    /* IE11 */
-    display: block !important; } }
-
-@media (max-width: 767px) {
-  .mobileForm input, .mobileForm select {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm input, .tabletForm select {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 1024px) {
-  input, select {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 1025px) {
-  input, select {
-    width: 520px; } }
-
 input, select, textarea {
   border: 1px solid #999;
   transition: all 1s ease;
   font-family: Arial; }
-  @media (max-width: 767px) {
-    .mobileForm input, .mobileForm select, .mobileForm textarea {
-      margin-bottom: 20px !important; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm input, .tabletForm select, .tabletForm textarea {
-      margin-bottom: 20px !important; } }
   input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover {
     border-color: #bfbfbf; }
   input:focus, select:focus, textarea:focus {
@@ -1852,6 +1625,66 @@ input, select, textarea {
   input.invalidField, input.invalidField:focus, input.invalidField:hover, select.invalidField, select.invalidField:focus, select.invalidField:hover, textarea.invalidField, textarea.invalidField:focus, textarea.invalidField:hover {
     border-color: #d43131 !important;
     border-width: 2px; }
+
+label::before, label::after {
+  content: " ";
+  display: table; }
+
+label::after {
+  clear: both; }
+
+@media (max-width: 767px) {
+  .mobileForm label {
+    margin-bottom: 20px !important; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tabletForm label {
+    margin-bottom: 20px !important; } }
+
+@media (min-width: 1024px) {
+  label {
+    margin-bottom: 10px !important; } }
+
+.labelName, .sug {
+  padding-left: 7px; }
+
+@media (max-width: 767px) {
+  .mobileForm input, .mobileForm select, .mobileForm .labelName, .mobileForm .errorForm {
+    height: 30px;
+    line-height: 30px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tabletForm input, .tabletForm select, .tabletForm .labelName, .tabletForm .errorForm {
+    height: 30px;
+    line-height: 30px; } }
+
+@media (min-width: 1024px) {
+  input, select, .labelName, .errorForm {
+    height: 30px;
+    line-height: 30px; } }
+
+@media (min-width: 1200px) {
+  input, select, .labelName, .errorForm {
+    height: 30px; } }
+
+.sug {
+  font-size: 0.8em;
+  padding-bottom: 3px; }
+  @media (max-width: 767px) {
+    .mobileForm .sug {
+      height: 20px;
+      line-height: 20px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tabletForm .sug {
+      height: 20px;
+      line-height: 20px; } }
+  @media (min-width: 1024px) {
+    .sug {
+      height: 20px;
+      line-height: 20px; } }
+  @media (min-width: 1200px) {
+    .sug {
+      height: 20px; } }
 
 button,
 input[type="button"],
@@ -1896,22 +1729,25 @@ button {
     input[type="submit"], .tabletForm
     input[type="button"], .tabletForm
     button {
-      height: 65px;
-      line-height: 65px; } }
+      height: 45px;
+      line-height: 45px;
+      width: 50% !important;
+      margin-right: auto !important;
+      margin-left: auto !important; } }
   @media (min-width: 1024px) {
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
     button {
-      height: 50px;
-      line-height: 50px; } }
+      height: 30px;
+      line-height: 30px; } }
   @media (min-width: 1025px) {
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
     button {
-      height: 75px;
-      line-height: 75px; } }
+      height: 30px;
+      line-height: 30px; } }
 
 @media (max-width: 767px) {
   .mobileForm input[type="reset"],
@@ -1969,71 +1805,27 @@ textarea {
   @media (min-width: 768px) {
     textarea {
       height: 100px; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1024px) {
     textarea {
-      height: 100px; } }
+      height: 100px;
+      margin-bottom: 20px !important; } }
 
-/* =============================================================================
-   Forms NiceIt Styles | Custom
-   ========================================================================== */
-form.niceIt {
-  /* Select */
-  /* Checkboxes */
-  /* File Upload */
-  /* Radio Buttons */ }
-  form.niceIt .fmSelect {
-    border: 1px solid #999;
-    background: transparent url("/nuevo/img/sprites.png") no-repeat 103px -80px;
-    padding: 0 40px 0 10px;
-    width: 135px !important;
-    color: #737373; }
-    form.niceIt .fmSelect, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
-      height: 30px;
-      line-height: 28px;
-      font-size: 0.9em; }
-    form.niceIt .fmSelect strong span cite, form.niceIt .fmSelect ul li {
-      color: #737373;
-      font-family: Arial;
-      text-transform: none; }
-    form.niceIt .fmSelect ul {
-      border: 1px solid #999;
-      width: 135px !important;
-      max-height: 250px;
-      background-color: #fff;
-      background-image: none; }
-      form.niceIt .fmSelect ul li {
-        padding: 10px 15px !important;
-        font-size: 0.7em;
-        line-height: 1.3em; }
-        form.niceIt .fmSelect ul li:hover, form.niceIt .fmSelect ul li:focus {
-          color: #737373;
-          background-color: #fff; }
-  form.niceIt .fmCheckbox {
-    border: 1px solid #999;
-    width: 19px;
-    height: 19px; }
-    form.niceIt .fmCheckbox + .fmCheckbox {
-      display: none !important; }
-  form.niceIt .fmCheckbox.checked {
-    background: transparent url("/nuevo/img/sprites.png") no-repeat 0px 0px; }
-  form.niceIt .fnFileInput, form.niceIt .fnFileInput span, form.niceIt .fnFileInput strong {
-    width: 100% !important; }
-    @media (max-width: 420px) {
-      form.niceIt .fnFileInput, form.niceIt .fnFileInput span, form.niceIt .fnFileInput strong {
-        width: 89% !important;
-        margin-right: auto !important;
-        margin-left: auto !important; } }
-  form.niceIt .fnFileInput span strong input {
-    position: absolute;
-    left: 0;
-    width: 97% !important;
-    height: 238px; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    form.niceIt .tabletForm .fnFileInput {
-      margin-right: auto !important;
-      margin-left: auto !important; }
-      form.niceIt .tabletForm .fnFileInput, form.niceIt .tabletForm .fnFileInput span, form.niceIt .tabletForm .fnFileInput strong {
-        width: 95%; } }
+.mandatoryMessage {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-bottom: 20px; }
+  .mandatoryMessage.invalidMandatoryMessage {
+    background-color: #d43131; }
+    .mandatoryMessage.invalidMandatoryMessage p {
+      color: #fff; }
+
+@media (max-width: 1023px) {
+  .status {
+    text-align: center; } }
+
+.status.ok {
+  background-color: #339900;
+  padding: 10px 20px; }
 
 /* =============================================================================
    Search Form Styles | Custom
@@ -2091,316 +1883,6 @@ form.niceIt {
           line-height: 30px; }
         .searchForm input[type="submit"] {
           width: 30px; } }
-
-/* =============================================================================
-   Tables Styles | Custom
-   ========================================================================== */
-@media (max-width: 767px) {
-  table {
-    width: 100% !important; }
-    table.tableWidthBig {
-      width: 1000px; }
-    table.tableWidthSmall {
-      width: 500px; } }
-
-@media (min-width: 768px) {
-  table {
-    width: 700px; } }
-
-@media (min-width: 1024px) {
-  table {
-    width: 970px; }
-    table.tableWidthSmall {
-      width: 760px; } }
-
-table th, table tfoot td {
-  color: #fff;
-  font-weight: 700;
-  text-align: center; }
-
-table th {
-  height: 30px;
-  line-height: 30px; }
-
-table td, table th {
-  padding: 0 10px;
-  font-size: 0.9em;
-  font-weight: 400; }
-
-/* Rounded Tables */
-table.tableRounded {
-  border: 1px solid #999; }
-  table.tableRounded th, table.tableRounded tfoot td {
-    background-color: #888; }
-  table.tableRounded tfoot td {
-    border-top: 1px solid #dedede; }
-  table.tableRounded tr th, table.tableRounded tr td {
-    border-bottom: 1px solid #dedede; }
-
-@media (max-width: 767px) {
-  table tr + tr, table tr:last-child {
-    border-top: 2px solid #666; }
-  table tr td {
-    font-size: 0.8em;
-    text-align: center;
-    padding-left: 45%; }
-    table tr td + td {
-      border-top: 1px solid #999; }
-    table tr td::before {
-      left: 10px;
-      width: 40%;
-      width: 40%;
-      font-weight: bold;
-      text-transform: uppercase; }
-  .tableRounded tr {
-    border-bottom: 2px solid #999; }
-    .tableRounded tr td {
-      border-bottom: 1px dotted #dedede; }
-    .tableRounded tr:last-child td {
-      border-bottom: 1px solid #dedede !important; }
-      .tableRounded tr:last-child td:last-child {
-        border-bottom: 0 solid #dedede !important; }
-  .tableStriped tbody tr td {
-    background-color: #fff; }
-    .tableStriped tbody tr td:nth-child(odd) {
-      background-color: #e6e6e6; }
-  .tableStriped tbody tr:nth-child(n+2) {
-    border-top: 2px solid #555555; }
-  .tableStriped tbody tr:last-child {
-    border-bottom: 1px solid #555555; }
-  .table-responsive {
-    padding: 15px 0;
-    margin: 0 auto 10px; } }
-  @media (max-width: 767px) and (max-width: 767px) {
-    .table-responsive table {
-      width: 100% !important; }
-      .table-responsive table.tableWidthBig {
-        width: 1000px; }
-      .table-responsive table.tableWidthSmall {
-        width: 500px; } }
-  @media (max-width: 767px) and (min-width: 768px) {
-    .table-responsive table {
-      width: 700px; } }
-  @media (max-width: 767px) and (min-width: 1024px) {
-    .table-responsive table {
-      width: 970px; }
-      .table-responsive table.tableWidthSmall {
-        width: 760px; } }
-
-@media (max-width: 767px) {
-    .table-responsive table th {
-      text-align: center; }
-    .table-responsive table td {
-      border-top: 1px solid #999;
-      text-align: left;
-      padding-left: 0 !important; }
-    .table-responsive .tableRounded tr {
-      border-bottom: 1px solid #999; }
-      .table-responsive .tableRounded tr td {
-        border-bottom: 0 solid #dedede; }
-      .table-responsive .tableRounded tr:last-child td {
-        border-bottom: 0 solid #dedede !important; } }
-
-/* =============================================================================
-   Modal y popup Styles | Custom
-   ========================================================================== */
-.closePopup {
-  background-color: transparent;
-  background-image: url("/nuevo/img/ic_closePopup.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  display: block;
-  position: absolute;
-  text-indent: -9999px; }
-
-.popup {
-  min-width: 100px;
-  min-height: 100px;
-  width: calc((100px - 100%) * 1000);
-  height: calc((100px - 100%) * 1000);
-  max-width: 80%;
-  max-height: 70%;
-  position: fixed;
-  /* CSS para usar centerPopup
-        @include centerPopup(100px,100px,50%);
-        max-width: 100%;
-        max-height: 100%;
-    */ }
-  .popup .modalWrap {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    padding: 20px;
-    overflow: auto; }
-  .popup.statusDiv {
-    border-radius: 12px;
-    box-shadow: 0 0 15px 0 #000;
-    background-color: #fff; }
-    .popup.statusDiv p {
-      color: #fff;
-      font-family: Arial;
-      font-size: 1.1em;
-      text-align: center; }
-    @media (max-width: 420px) {
-      .popup.statusDiv {
-        min-width: 100px;
-        min-height: 100px;
-        width: calc((100px - 100%) * 1000);
-        height: calc((100px - 100%) * 1000);
-        max-width: 80%;
-        max-height: 70%;
-        padding: 20px;
-        /* CSS para usar centerPopup
-                @include centerPopup(280px,120px);
-            */ }
-        .popup.statusDiv .close {
-          top: calc(-1 * 20px);
-          right: -10px; } }
-    @media (min-width: 768px) {
-      .popup.statusDiv {
-        min-width: 100px;
-        min-height: 100px;
-        width: calc((100px - 100%) * 1000);
-        height: calc((100px - 100%) * 1000);
-        max-width: 80%;
-        max-height: 70%;
-        padding: 25px;
-        /* CSS para usar centerPopup
-                @include centerPopup(500px,100px);
-            */ } }
-  .popup .closePopup {
-    top: 20px;
-    right: 20px; }
-    .popup .closePopup.closePopupOut {
-      top: calc(-1 * calc(20px + 5px));
-      right: calc(-1 * calc(20px + 5px)); }
-
-/* =============================================================================
-   Slick Slider Styles | Custom
-   ========================================================================== */
-.slick::before, .slick::after, .slick div::before, .slick div::after {
-  content: " ";
-  display: table; }
-
-.slick::after, .slick div::after {
-  clear: both; }
-
-.slickHeader {
-  z-index: 90; }
-  .slickHeader, .slickHeader div, .slickHeader li {
-    height: 269px; }
-
-.slickPrev {
-  left: 0; }
-  @media (max-width: 767px) {
-    .slickPrev {
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderL.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 18px 30px; } }
-  @media (min-width: 768px) {
-    .slickPrev {
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderL.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 30px 50px; } }
-
-.slickNext {
-  right: 0; }
-  @media (max-width: 767px) {
-    .slickNext {
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderR.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 18px 30px; } }
-  @media (min-width: 768px) {
-    .slickNext {
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderR.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 30px 50px; } }
-
-.slickPrev, .slickNext {
-  transition: all 0.7s ease;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  z-index: 100;
-  padding: 0 !important;
-  border: none !important;
-  text-indent: -9999px; }
-  .slickPrev:focus, .slickPrev:hover, .slickNext:focus, .slickNext:hover {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=100)"; }
-  @media (max-width: 767px) {
-    .slickPrev, .slickNext {
-      width: 30px;
-      height: 30px;
-      margin-top: calc(-1 * calc(30px/2)); } }
-  @media (min-width: 768px) {
-    .slickPrev, .slickNext {
-      width: 50px;
-      height: 50px;
-      margin-top: calc(-1 * calc(50px/2)); } }
-
-.slickDots {
-  list-style: none;
-  position: relative;
-  z-index: 100;
-  top: calc(-1 * calc(15px + 20px));
-  height: 15px;
-  margin: 0 auto;
-  text-align: center; }
-  .slickDots li {
-    display: inline;
-    float: none !important;
-    height: 15px; }
-    .slickDots li, .slickDots li button {
-      width: 15px;
-      height: 15px;
-      cursor: pointer; }
-    .slickDots li button {
-      /*
-            @include squareSize(50px);
-            @include sprites(-100px -50px);
-*/
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_sliderPag.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 15px;
-      display: inline-block;
-      border: none !important;
-      text-indent: -9999px; }
-    .slickDots li + li {
-      margin-left: 10px; }
-    .slickDots li:focus button, .slickDots li:hover button {
-      /*background-position: -150px -50px;*/
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_sliderPagHover.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 15px 15px; }
-    .slickDots li.slickActive button {
-      /*background-position: -200px -50px;*/
-      background-color: transparent;
-      background-image: url("/nuevo/img/ic_sliderPagSel.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 15px 15px; }
 
 /* =============================================================================
    Header Styles | Custom
@@ -2527,7 +2009,7 @@ table.tableRounded {
         width: 200px;
         height: auto !important;
         background-color: #fff;
-        padding: 5px 0 0;
+        padding: 3px 0;
         box-shadow: 0 0 4px #000; }
         .mainNav ul li {
           float: none !important; }
@@ -2535,7 +2017,7 @@ table.tableRounded {
             height: 45px;
             line-height: 45px; }
           .mainNav ul li:nth-child(even) {
-            background-color: #dedede; }
+            background-color: #f4f4f4; }
           .mainNav ul li:last-child, .mainNav ul li:last-child a {
             border-radius: 0 0 4px 4px; }
           .mainNav ul li a {

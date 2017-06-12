@@ -3,20 +3,38 @@
    ========================================================================== */
 //Labels activator
 $labelsVisible: on;
+$formInsideLabel: on;
 
 //Responsive Values
-    //Labels
+    //Widths
 $formLabelWidthMO:  270px!important;
 $formLabelWidthBT:  90%!important;
 $formLabelWidthTO:  520px!important;
 $formLabelWidthATL: 520px; //No debe llevar !important
 $formLabelWidthAD:  520px; //No debe llevar !important
 
+$formWidthMO:  $formLabelWidthMO;
+$formWidthBT:  $formLabelWidthBT;
+$formWidthTO:  $formLabelWidthTO;
+$formWidthATL: $formLabelWidthATL;
+$formWidthAD:  $formLabelWidthAD;
+
+    //Heights    
 $formLabelHeightMO:  30px;
 $formLabelHeightBT:  $formLabelHeightMO;
 $formLabelHeightTO:  $formLabelHeightBT;
 $formLabelHeightATL: $formLabelHeightTO;
 $formLabelHeightAD:  $formLabelHeightATL;
+
+$formLabelSugHeightBT:  20px;
+$formLabelSugHeightTO:  $formLabelSugHeightBT;
+$formLabelSugHeightATL: $formLabelSugHeightTO;
+$formLabelSugHeightAD:  $formLabelSugHeightATL;
+
+$formLabelContentsHeightBT:  30px;
+$formLabelContentsHeightTO:  $formLabelContentsHeightBT;
+$formLabelContentsHeightATL: $formLabelContentsHeightTO; //No debe llevar !important
+$formLabelContentsHeightAD:  $formLabelContentsHeightATL; //No debe llevar !important
 
     //Inputs
 $formInputWidthMO:  $formLabelWidthMO;
