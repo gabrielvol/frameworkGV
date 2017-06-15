@@ -4,14 +4,14 @@
     
     <!--Normal-->
     <?php if($index == 1){ echo '<h1 class="logoHeader man">'; } ?>
-    <a href="/clientes/anibal/" class="pRel displayBlock <?php if($int == 1){ echo 'logoHeader man'; } else { echo 'man'; } ?>">
-        <img src="/clientes/anibal/img/logo.svg" alt="<?php echo _('Logo de'); ?>" />
+    <a href="/nuevo/" class="pRel displayBlock <?php if($int == 1){ echo 'logoHeader man'; } else { echo 'man'; } ?>">
+        <img src="/nuevo/img/logo.svg" alt="<?php echo _('Logo de'); ?>" />
     </a>
     <?php if($index == 1){ echo '</h1>'; } ?>    
     
     <!--Con Gettext-->
     <?php if($index == 1){ echo '<h1 class="logoHeader">'; } ?>
-    <a href="/clientes/anibal/
+    <a href="/nuevo/
         <?php if($idioma == 'pt_BR'){
             echo '?l=pt_BR';
         } else if($idioma == 'en_GB') {
@@ -20,7 +20,7 @@
             echo '?l=es_AR';
         } ?>
     " class="pRel displayBlock man <?php if($int == 1){ echo 'logoHeader'; } ?>">
-        <img src="/clientes/anibal/img/logo.svg" alt="<?php echo _('Logo de'); ?>" />
+        <img src="/nuevo/img/logo.svg" alt="<?php echo _('Logo de'); ?>" />
     </a>
     <?php if($index == 1){ echo '</h1>'; } ?>
     
