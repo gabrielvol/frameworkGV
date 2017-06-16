@@ -8,7 +8,7 @@
 @import "variables/helpers";
 @import "variables/activators";
 @import "variables/forms";
-//@import "variables/tables";
+@import "variables/tables";
 
 //OpenSans
 @import "../scss/openSans";
@@ -41,11 +41,11 @@
 @import "../scss/usefulClassesResponsive";
 @import "stylesBody";
 @import "../scss/settingsNav";
-@import "../scss/settingsForms";
+//@import "../scss/settingsForms";
 //@import "../scss/settingsFormsNiceIt";
 //@import "../scss/settingsTables";
 //@import "../scss/settingsModal";
-@import "../scss/print";
+//@import "../scss/print";
 
 //Custom Styles
 @import "stylesGlobal";
@@ -55,16 +55,16 @@
 @import "settingsShadows";
 @import "settingsBorders";
 @import "settingsLists";
-@import "stylesForms";
+//@import "stylesForms";
 //@import "stylesFormsNiceIt";
-@import "stylesSearchForm";
+//@import "stylesSearchForm";
 //@import "stylesTables";
 //@import "stylesModal";
 //@import "stylesSlider";
 
 //MainStyles
 @import "stylesHeader";
-@import "stylesLanguageSwitch";
+//@import "stylesLanguageSwitch";
 @import "stylesNav";
 @import "stylesFooter";
 @import "stylesIndex";
