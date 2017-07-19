@@ -26,6 +26,12 @@ $arial: map-get($fontFamiliesSiteFontsMap, arial);
 $roboto: map-get($fontFamiliesSiteFontsMap, roboto);
 //$timesNewRoman: map-get($fontFamiliesSiteFontsMap, timesNewRoman);
 
+//$openSansL: map-get($openSansMap, openSansL);
+//$openSans: map-get($openSansMap, openSans);
+//$openSansI: map-get($openSansMap, openSansI);
+//$openSansB: map-get($openSansMap, openSansB);
+//$openSansBI: map-get($openSansMap, openSansBI);
+
     //Creamos la variable de la fuente principal del sitio
 $mainFontFamily: $arial;
 $mainFontFamilyBold: $mainFontFamily;
