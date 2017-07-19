@@ -12,7 +12,6 @@ $fontFamiliesSiteFontsMap:(
 ///**Activador de clases para fuente openSans:**
     ///Con esta clase se activa la creación de clases para las fuentes OpenSans, que se encuentran en el mapa `$openSansMap` en `[/etc/scss/openSans.scss]`. Las clases son `.openSansL`, `.openSans`, `.openSansI`, `.openSansB` y `.openSansBI`, se crean con el el mixin **fontFamilyCustomClassesGenerator**, `[/etc/scss/mixinsFonts.scss]`.
 $openSansClasses: off;
-// NO DEBE SER DESCOMENTADO
 //$openSansMap:(
 //    openSansL: open_sanslight,
 //    openSans: open_sansregular,
