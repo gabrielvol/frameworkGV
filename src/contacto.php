@@ -118,6 +118,32 @@
                     <option value="<?php echo $_POST['habitacion']; ?>" selected><?php echo _("Seleccione una opci&oacute;n"); ?></option>
                     <option value="a"><?php echo _("a"); ?></option>
                     <option value="b">b</option>
+                    
+                    
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="CABA">Ciudad Autonoma de Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Cordoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="EntreRios">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="LaPampa">La Pampa</option>
+                    <option value="LaRioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquen">Neuquén</option>
+                    <option value="RioNegro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="SanJuan">San Juan</option>
+                    <option value="SanLuis">San Luis</option>
+                    <option value="SantaCruz">Santa Cruz</option>
+                    <option value="SantaFe">Santa Fe</option>
+                    <option value="SantiagoDelEstero">Santiago del Estero</option>
+                    <option value="TierraDelFuego">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                    <option value="Tucuman">Tucumán</option>
                 </select>
 
     <!--            <select name="habitaciones[]" size="4" multiple="">
