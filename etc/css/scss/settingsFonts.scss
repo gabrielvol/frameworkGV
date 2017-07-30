@@ -18,7 +18,7 @@ select, textarea, blockquote, table{
 //Text Margins and Line-heights
 h1, h2, h3, h4, h5, h6{
     margin: $headingMargin;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 p, dl, legend{
     margin: $textMargin;
@@ -56,14 +56,11 @@ a{
 @include fontFamilyCustomClassesGenerator;
 
 @include beforeTablet{
-    @include fontCustomHeadingsSizesGeneratorMobile;
-    @include fontCustomLineHeightsGeneratorMobile;    
+    @include fontCustomHeadingsSizesGeneratorMobile; 
 }
 @include afterTablet{
-    @include fontCustomHeadingsSizesGeneratorTablet;
-    @include fontCustomLineHeightsGeneratorTablet;     
+    @include fontCustomHeadingsSizesGeneratorTablet;   
 }
 @include afterLaptop{
     @include fontCustomHeadingsSizesGeneratorDesktop;
-    @include fontCustomLineHeightsGeneratorDesktop;    
 }

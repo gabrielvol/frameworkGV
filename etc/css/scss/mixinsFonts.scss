@@ -29,19 +29,3 @@
         #{$headingsClassName}{font-size: $fontCustomSizeValues;}
     }
 }
-    //Generador de clases por cada valor de altura de línea
-@mixin fontCustomLineHeightsGeneratorMobile{
-    @each $headingsClassName, $fontCustomLineHeightValues in $lineHeightsMapMobile {
-        #{$headingsClassName}{line-height: $fontCustomLineHeightValues;}
-    }
-}
-@mixin fontCustomLineHeightsGeneratorTablet{
-    @each $headingsClassName, $fontCustomLineHeightValues in $lineHeightsMapTablet {
-        #{$headingsClassName}{line-height: $fontCustomLineHeightValues;}
-    }
-}
-@mixin fontCustomLineHeightsGeneratorDesktop{
-    @each $headingsClassName, $fontCustomLineHeightValues in $lineHeightsMapDesktop {
-        #{$headingsClassName}{line-height: $fontCustomLineHeightValues;}
-    }
-}

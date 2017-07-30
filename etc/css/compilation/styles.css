@@ -448,7 +448,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.8em;
-  line-height: 1em; }
+  line-height: 1.2em; }
 
 p, dl, legend {
   margin: 0; }
@@ -496,19 +496,7 @@ a {
   h5, .hCin {
     font-size: 1.3em; }
   h6, .hSei {
-    font-size: 1.3em; }
-  h1, .hUno {
-    line-height: 1em; }
-  h2, .hDos {
-    line-height: 1em; }
-  h3, .hTre {
-    line-height: 1em; }
-  h4, .hCua {
-    line-height: 1em; }
-  h5, .hCin {
-    line-height: 1em; }
-  h6, .hSei {
-    line-height: 1em; } }
+    font-size: 1.3em; } }
 
 @media (min-width: 768px) {
   h1, .hUno {
@@ -522,19 +510,7 @@ a {
   h5, .hCin {
     font-size: 1.3em; }
   h6, .hSei {
-    font-size: 1.3em; }
-  h1, .hUno {
-    line-height: 1em; }
-  h2, .hDos {
-    line-height: 1em; }
-  h3, .hTre {
-    line-height: 1em; }
-  h4, .hCua {
-    line-height: 1em; }
-  h5, .hCin {
-    line-height: 1em; }
-  h6, .hSei {
-    line-height: 1em; } }
+    font-size: 1.3em; } }
 
 @media (min-width: 1025px) {
   h1, .hUno {
@@ -548,19 +524,7 @@ a {
   h5, .hCin {
     font-size: 1.6em; }
   h6, .hSei {
-    font-size: 1.4em; }
-  h1, .hUno {
-    line-height: 1em; }
-  h2, .hDos {
-    line-height: 1.1em; }
-  h3, .hTre {
-    line-height: 1em; }
-  h4, .hCua {
-    line-height: 1em; }
-  h5, .hCin {
-    line-height: 1em; }
-  h6, .hSei {
-    line-height: 1em; } }
+    font-size: 1.4em; } }
 
 /* =============================================================================
    Colours Styles | Etc
@@ -1337,11 +1301,19 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .boxShadowInner {
   box-shadow: inset 0 0 10px 0 #666; }
 
+.bgShadowT,
+.bgShadowB {
+  background-repeat: repeat-x;
+  background-color: transparent;
+  background-size: 1px; }
+
 .bgShadowT {
-  background: transparent url("/nuevo/img/bg_shadowT.png") repeat-x center top; }
+  background-image: url("/nuevo/img/bg_shadowT.png");
+  background-position: center top; }
 
 .bgShadowB {
-  background: transparent url("/nuevo/img/bg_shadowB.png") repeat-x center bottom; }
+  background-image: url("/nuevo/img/bg_shadowB.png");
+  background-position: center bottom; }
 
 /* =============================================================================
    Border Settings | Custom
