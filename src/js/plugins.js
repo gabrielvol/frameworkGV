@@ -8,7 +8,7 @@ $(document).ready(function () {
         $(this).closest(".mainMenu").addClass('displayNoneBT');
     });
     
-//Scroll Keep
+//Local Scroll
     // Select all links with hashes
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
