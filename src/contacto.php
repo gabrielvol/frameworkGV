@@ -82,6 +82,10 @@
                 <input type="text" name="cargo" id="cargo" class="cargo <?php echo $invalidFieldCargo ?>" value="<?php echo $_POST['cargo']; ?>" placeholder="<?php echo _('Ingrese su cargo'); ?>" <?php echo $autofocusCargo ?>>
                 <span class="errorForm errorColour"><?php echo $errorCargo ?></span>
 
+                <label for="rubro"><?php echo _("Rubro"); ?> <span class="redColour">*</span></label>
+                <input type="text" name="rubro" id="rubro" class="rubro <?php echo $invalidFieldRubro ?>" value="<?php echo $_POST['rubro']; ?>" placeholder="<?php echo _('Ingrese un rubro'); ?>" <?php echo $autofocusRubro ?>>
+                <span class="errorForm errorColour"><?php echo $errorRubro ?></span>
+
                 <label for="fecha"><?php echo _("Fecha"); ?> <span class="redColour">*</span></label>
                 <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="<?php echo _('Ingrese una fecha'); ?>" <?php echo $autofocusFecha ?>>
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
