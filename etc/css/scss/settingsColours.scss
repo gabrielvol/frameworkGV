@@ -34,6 +34,11 @@ a.white{
     &:focus, &:hover{
         @extend %whiteHover;
     }
+    &.noGlow{
+        &:focus, &:hover{        
+            text-shadow: 0 0 0 $white;
+        }
+    }
 }
 @include colourDarkClassesGenerator($lightenValue);
 @include anchorColoursLightClassesGenerator($darkenValueAnchor);
