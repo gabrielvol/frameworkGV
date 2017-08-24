@@ -32,6 +32,6 @@
     <li class="sp displayBlock hoverGrow mhaBT indentedText" title="<?php echo _('Escuchanos en Spotify'); ?>">
             <?php echo _("Escuchanos en Spotify"); ?>
         <a href="https://play.spotify.com/artist/ARTISTKEY?play=true&utm_source=open.spotify.com&utm_medium=open" target="_blank" alt="Escuchanos en Spotify">
-            <img src="/img/soc_li.svg" class="svg displayBlock" alt="<?php echo _('&Iacute;cono de Spotify'); ?>">            
+            <img src="/img/soc_sp.svg" class="svg displayBlock" alt="<?php echo _('&Iacute;cono de Spotify'); ?>">            
         </a></li>
 </ul>
