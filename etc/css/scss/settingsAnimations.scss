@@ -16,6 +16,6 @@
     .hoverGrow:hover,
     .hoverGrow:focus,
     .hoverGrow:active {
-        transform: scale(1.1);
+        transform: scale($hoverGrowScale);
     }
 }
