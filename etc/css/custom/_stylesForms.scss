@@ -253,8 +253,11 @@ input, select, textarea{
             height: $formLabelContentsHeightAD;        
         }
     }
-    
+}
+
+@if $formSug == "on"{    
     .sug{
+        font-family: $sugFontFamily;
         font-size: 0.8em;
         padding-bottom: 3px;
 
