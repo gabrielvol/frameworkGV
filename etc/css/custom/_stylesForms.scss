@@ -102,7 +102,7 @@ legend{
 input, select, textarea{
     @include borderStyle($formInputBcColour);
     @include transition(1s);
-    font-family: $formInputFont; 
+    font-family: $formInputFontFamily; 
 
     &:focus, &:hover{
         border-color: $formInputBcColourHover;
@@ -229,6 +229,7 @@ input, select, textarea{
     }
 
     .labelName, .sug{
+        box-sizing: border-box;
         padding-left: 7px;
     }
     
@@ -253,11 +254,15 @@ input, select, textarea{
             height: $formLabelContentsHeightAD;        
         }
     }
+    
+    .labelName{
+        font-family: $formLabelFontFamily;
+    }
 }
 
 @if $formSug == "on"{    
     .sug{
-        font-family: $sugFontFamily;
+        font-family: $formSugFontFamily;
         font-size: 0.8em;
         padding-bottom: 3px;
 
