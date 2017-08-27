@@ -12,10 +12,4 @@
         transition-duration: 0.3s;
         transition-property: transform;
     }
-
-    .hoverGrow:hover,
-    .hoverGrow:focus,
-    .hoverGrow:active {
-        transform: scale($hoverGrowScale);
-    }
 }
