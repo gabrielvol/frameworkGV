@@ -16,7 +16,7 @@
 <link rel="icon" type="image/png" href="/nuevo/common/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/nuevo/common/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/nuevo/common/manifest.json">
-<link rel="mask-icon" href="/nuevo/common/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="/nuevo/common/safari-pinned-tab.svg" color="#000">
 <meta name="theme-color" content="#ffffff">
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
