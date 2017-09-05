@@ -34,6 +34,7 @@
             fade: true,
             pauseOnHover: false,
             pauseOnFocus: false,
+            swipeToSlide: true,
             
             slidesToShow: 3,
             slidesToScroll: 3,
