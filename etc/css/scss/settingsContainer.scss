@@ -1,26 +1,7 @@
 /* =============================================================================
    Container Styles | Etc
    ========================================================================== */
-// Tablet ~720px
-$containerTablet:          ($containerTabletValue + $grid-gutter-width);
-
-// Tablet Landscape ~1000px
-$containerTabletLandscape: ($containerTabletLandscapeValue + $grid-gutter-width);
-
-// Laptop ~1000px
-$containerLaptop:          ($containerLaptopValue + $grid-gutter-width);
-
-// Desktop ~1200px 
-$containerDesktop:         ($containerDesktopValue + $grid-gutter-width);
-
-// Desktop Large ~1600px
-$containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
-
 .container{
-/*
-    padding-left: floor(($grid-gutter-width / 2));
-    padding-right: ceil(($grid-gutter-width / 2));
-*/
     padding: 0;
     margin-right: auto;
     margin-left: auto;
@@ -31,15 +12,15 @@ $containerDesktopLarge:    ($containerDesktopLargeValue + $grid-gutter-width);
     @include afterMobileLandscape{
         width: $containerMobileLandscapeValue}
     @include afterTablet{
-        width: $containerTablet}
+        width: $containerTabletValue}
     @include afterTabletLandscape{
-        width: $containerTabletLandscape}
+        width: $containerTabletLandscapeValue}
     @include afterLaptop{
-        width: $containerLaptop}
+        width: $containerLaptopValue}
     @include afterDesktop{
-        width: $containerDesktop}
+        width: $containerDesktopValue}
     @include afterDesktopLarge{
-        width: $containerDesktopLarge}
+        width: $containerDesktopLargeValue}
     
     &.centerAbs{     
         @include mobileOnly{

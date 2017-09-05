@@ -1,33 +1,25 @@
 /* =============================================================================
-   Container Variables | Custom
+   Container Sizes
    ========================================================================== */
 $grid-gutter-width: 30px;
 
 //Container Sizes
 $containerMobileValue: 300px; /* Mobile / Container: 300px */
 $containerMobileLandscapeValue: 90%;
-$containerTabletValue: 690px; /* iPad / Container: 720px */
-$containerTabletLandscapeValue: 970px; /* iPad Landscape / Container: 1000px */
-$containerLaptopValue: $containerTabletLandscapeValue; /* Laptop / Container: 1000px */
-$containerDesktopValue: $containerLaptopValue; /* 1170px; /* Desktop / Container: 1200px */
-$containerDesktopLargeValue: $containerLaptopValue; /* 1520px; /* Big Screens / Container: 1550px */
+$containerTabletValue: 720px; /* iPad */
+$containerTabletLandscapeValue: 1000px; /* iPad Landscape */
+$containerLaptopValue: $containerTabletLandscapeValue; /* Laptop */
+$containerDesktopValue: $containerLaptopValue; /* Desktop */
+$containerDesktopLargeValue: $containerLaptopValue; /* Big Screens */
 
 //Container Center Negative Values
-$cMFullSize:  $containerMobileValue; /* Mobile FullSize */
-$cMLFullSize: $containerMobileLandscapeValue; /* Mobile Landscape FullSize */
-$cTFullSize:  calc(#{$containerTabletValue} + 30px); /* Tablet FullSize*/
-$cTLFullSize: calc(#{$containerTabletLandscapeValue} + 30px); /* Tablet Landscape FullSize*/
-$cLFullSize:  calc(#{$containerLaptopValue} + 30px); /* Laptop FullSize */
-$cDFullSize:  calc(#{$containerDesktopValue} + 30px); /* Desktop FullSize */
-$cDLFullSize: calc(#{$containerDesktopLargeValue} + 30px); /* Desktop Large FullSize*/
-
-$cMHalf:  calc(#{$cMFullSize}/2); /* Mobile Half */
-$cMLHalf: calc(#{$cMLFullSize}/2); /* Mobile Landscape Half */
-$cTHalf:  calc(#{$cTFullSize}/2); /* Tablet Half*/
-$cTLHalf: calc(#{$cTLFullSize}/2); /* Tablet Landscape Half*/
-$cLHalf:  calc(#{$cLFullSize}/2); /* Laptop Half */
-$cDHalf:  calc(#{$cDFullSize}/2); /* Desktop Half */
-$cDLHalf: calc(#{$cDLFullSize}/2); /* Desktop Large Half*/
+$cMHalf:  calc(#{$containerMobileValue}/2); /* Mobile Half */
+$cMLHalf: calc(#{$containerMobileLandscapeValue}/2); /* Mobile Landscape Half */
+$cTHalf:  calc(#{$containerTabletValue}/2); /* Tablet Half*/
+$cTLHalf: calc(#{$containerTabletLandscapeValue}/2); /* Tablet Landscape Half*/
+$cLHalf:  calc(#{$containerLaptopValue}/2); /* Laptop Half */
+$cDHalf:  calc(#{$containerDesktopValue}/2); /* Desktop Half */
+$cDLHalf: calc(#{$containerDesktopLargeValue}/2); /* Desktop Large Half*/
 
 $cMHneg: calc(-1 * #{$cMHalf}); /* Mobile Half */
 $cMLHneg: calc(-1 * #{$cMLHalf}); /* Mobile Landscape Half */

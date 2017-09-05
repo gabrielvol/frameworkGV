@@ -8,21 +8,14 @@
    Absolute Variables | Etc
    ========================================================================== */
 /* =============================================================================
-   Container Variables | Custom
+   Container Sizes
    ========================================================================== */
 /* Mobile / Container: 300px */
-/* iPad / Container: 720px */
-/* iPad Landscape / Container: 1000px */
-/* Laptop / Container: 1000px */
-/* 1170px; /* Desktop / Container: 1200px */
-/* 1520px; /* Big Screens / Container: 1550px */
-/* Mobile FullSize */
-/* Mobile Landscape FullSize */
-/* Tablet FullSize*/
-/* Tablet Landscape FullSize*/
-/* Laptop FullSize */
-/* Desktop FullSize */
-/* Desktop Large FullSize*/
+/* iPad */
+/* iPad Landscape */
+/* Laptop */
+/* Desktop */
+/* Big Screens */
 /* Mobile Half */
 /* Mobile Landscape Half */
 /* Tablet Half*/
@@ -165,10 +158,6 @@
    Container Styles | Etc
    ========================================================================== */
 .container {
-  /*
-    padding-left: floor(($grid-gutter-width / 2));
-    padding-right: ceil(($grid-gutter-width / 2));
-*/
   padding: 0;
   margin-right: auto;
   margin-left: auto; }
@@ -212,27 +201,27 @@
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(720px/2)); } }
   @media (min-width: 1024px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (max-width: 420px) {
     .container.centerAbsMO {
       position: absolute;
@@ -247,102 +236,102 @@
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(720px/2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 768px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(690px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(720px/2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1025px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAD {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAD {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsADL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(calc(970px + 30px)/2)); } }
+      margin-left: calc(-1 * calc(1000px/2)); } }
 
 /* =============================================================================
    Font Useful Classes | Etc
@@ -677,6 +666,9 @@ label.greyD, label.greyD:focus, label.greyD:hover {
 a.white, a.white:active, a.white:visited, a.white:focus, a.white:hover {
   color: #fff; }
 
+a.white.noGlow:focus, a.white.noGlow:hover {
+  text-shadow: 0 0 0 #fff; }
+
 .greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
   color: #333; }
 
@@ -762,6 +754,9 @@ label.black, label.black:focus, label.black:hover {
   border-left: 0 !important; }
 
 /* =============================================================================
+   Animation Settings | Custom
+   ========================================================================== */
+/* =============================================================================
    Animation Settings | Etc
    ========================================================================== */
 @media (min-width: 768px) {
@@ -773,11 +768,7 @@ label.black, label.black:focus, label.black:hover {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
-    transition-property: transform; }
-  .hoverGrow:hover,
-  .hoverGrow:focus,
-  .hoverGrow:active {
-    transform: scale(1.1); } }
+    transition-property: transform; } }
 
 /* =============================================================================
    Useful Classes | Etc
@@ -1290,9 +1281,6 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-color: #d43131; }
 
 /* =============================================================================
-   Animation Settings | Custom
-   ========================================================================== */
-/* =============================================================================
    Shadows Settings | Custom
    ========================================================================== */
 .boxShadow {
@@ -1381,7 +1369,8 @@ ul.hyphenated li {
 #header {
   /*z-index: $zIndexHeader;*/ }
   #header .logoHeader {
-    z-index: 100; }
+    z-index: 100;
+    margin: 0 !important; }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
