@@ -38,7 +38,7 @@ $mainFontFamilyBold: $mainFontFamily;
 //Main font Stack    
 $mainFontStack:(
     $mainFontFamily,
-    //$arial,
+    //$arial, // Chequear Arial, Roboto o Times como Main Font Family
     $roboto,
     //$timesNewRoman,
     $fontFamiliesListSans
