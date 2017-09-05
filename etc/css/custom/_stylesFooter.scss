@@ -6,45 +6,5 @@
     
     .logoFooter{
         width: 100px;
-    }
-    
-    .social{
-        li{
-            a{
-                @include squareSize(50px);
-                @include opacityCustomHover(75,100);
-                @include transition(1s);
-            }
-
-            &.fb{
-                a{}
-            }
-
-            &.tw{
-                a{}
-            }
-
-            &.ig{
-                a{}
-            }
-
-            &.pi{
-                a{}
-            }
-
-            &.yt{
-                a{}
-            }
-
-            &.li{
-                a{}
-            }
-
-            &.sp{
-                a{}
-            }
-
-            & + li{}
-            }
-    }
+    }   
 }
