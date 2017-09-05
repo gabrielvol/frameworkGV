@@ -3,8 +3,8 @@
 <header id="header" class="">
     
     <!--Normal-->
-    <?php if($index == 1){ echo '<h1 class="logoHeader man">'; } ?>
-    <a href="/nuevo/" class="pRel displayBlock <?php if($int == 1){ echo 'logoHeader man'; } else { echo 'man'; } ?>">
+    <?php if($index == 1){ echo '<h1 class="logoHeader">'; } ?>
+    <a href="/nuevo/" class="pRel displayBlock <?php if($int == 1){ echo 'logoHeader'; } else { echo ''; } ?>">
         <img src="/nuevo/img/logo.svg" alt="<?php echo _('Logo de'); ?>" />
     </a>
     <?php if($index == 1){ echo '</h1>'; } ?>    
