@@ -1,5 +1,5 @@
 <footer id="footer" class="">
-    <p class="copyright white upperCase">
+    <p class="copyright">
         &copy;
         <?php
             $fromYear = 2010;
@@ -9,6 +9,7 @@
     </p>
         
     <img src="/nuevo/img/logo.svg" class="logoFooter displayBlock" alt="<?php echo _("Logo de"); ?>">
+    
     <?php include('social.inc.php'); ?>
 </footer>
 
