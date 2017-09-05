@@ -17,6 +17,12 @@
             <li><img data-lazy="/nuevo/oldframework/img/img_slide02.png" alt="Slick"></li>
             <li><img data-lazy="/nuevo/oldframework/img/img_slide03.png" alt="Slick"></li>
         </ul>
+        
+        <ul class="slick mask horizontal clearfix">
+            <li><img src="/nuevo/oldframework/img/img_slide01.png" alt="Slick"></li>
+            <li><img src="/nuevo/oldframework/img/img_slide02.png" alt="Slick"></li>
+            <li><img src="/nuevo/oldframework/img/img_slide03.png" alt="Slick"></li>
+        </ul>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
     <script type="text/javascript" src="/nuevo/oldframework/js/slick.js"></script>
@@ -26,6 +32,8 @@
             dots: true,
             arrows: false,            
             fade: true,
+            pauseOnHover: false,
+            pauseOnFocus: false,
             
             slidesToShow: 3,
             slidesToScroll: 3,
