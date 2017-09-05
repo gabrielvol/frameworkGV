@@ -26,7 +26,7 @@
 
     $(document).ready(function() {
         // Feel free to set it for any element who trigger the reload
-        $('a, .enviar').scrollPosReaload();
+        $('.enviar').scrollPosReaload();
     });
   
 }(jQuery));  
