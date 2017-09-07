@@ -23,7 +23,7 @@ form, fieldset, label, input, select, textarea, button,
 }
 
 fieldset, label, input, select, textarea, button,
-.labelName, .sug, .errorForm{
+.mandatoryMessage, .labelName, .sug, .errorForm{
     .mobileForm &{
         @include beforeTablet{
             width: $formLabelWidthBT;
@@ -242,7 +242,7 @@ input, select, textarea{
 
         @include tabletOnly{
             .tabletForm &{
-                @include equalHeightAndLineHeight($formLabelContentsHeightTO);          
+                @include equalHeightAndLineHeight($formLabelContentsHeightTO);
             }
         }
 
@@ -455,6 +455,10 @@ textarea{
         p{
             color: $invalidMandatoryMessageFontColour;            
         }
+    }
+    
+    @include afterTabletLandscape{
+        @include centerCustom(80%);
     }
 }
 
