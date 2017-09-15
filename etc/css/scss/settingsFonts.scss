@@ -34,7 +34,7 @@ p, li{
         font-size: 1em;
     }
 }
-p{    
+p, li{    
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
@@ -45,6 +45,10 @@ p{
     
     @include afterTabletLandscape{
         font-size: $mainFontSizeParagraphATL;
+    }
+    
+    li{
+        font-size: 1em;
     }
 }
 a{
