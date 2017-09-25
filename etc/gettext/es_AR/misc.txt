@@ -2,13 +2,6 @@
    Gettext es_AR -- Miscelaneous
    ========================================================================== */
 
-<?php echo _("texto"); ?>
-<?php echo _(""); ?>
-<?php echo _("
-<?php echo _('
-"); ?>
-'); ?>
-
 <?php echo _("Cerrar"); ?>
 msgid "Cerrar"
 msgstr "Cerrar"
