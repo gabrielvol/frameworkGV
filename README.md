@@ -18,10 +18,10 @@
 `http://www.sitioweb.com.ar/`
 `000.000.000.00`
 
-Usuario  
+Usuario
 `user`
 
-Contraseña  
+Contraseña
 `pass`  
 ***
 
@@ -29,10 +29,10 @@ Contraseña
 #### Panel de control
 `http://www.sitioweb.com.ar/cpanel`
 
-Usuario  
+Usuario 
 `user`
 
-Contraseña  
+Contraseña
 `pass`  
 ***
 
@@ -40,10 +40,10 @@ Contraseña
 #### Datos FTP Alternativos
 `http://www.sitioweb.com.ar/`
 
-Usuario  
+Usuario
 `user`
 
-Contraseña  
+Contraseña
 `pass`  
 ***
 
@@ -51,28 +51,29 @@ Contraseña
 #### DNS y Contacto
 ToWebs
 
-DNS Primario  
+DNS Primario
 `ns1.allytech.com (000.000.000.000)`
 
-DNS Secundario  
-`ns2.allytech.com (000.000.000.000)`  
+DNS Secundario
+`ns2.allytech.com (000.000.000.000)`
 
-Contacto técnico  
+Contacto técnico
 `Nombre` 
 
-Teléfono  
-`12345678`  
+Teléfono
+`12345678`
 
-Correo  
-`info@correo.com` 
+Correo
+`info@correo.com`  
 ***
 
 
 #### Google Account
-`https://www.google.com/business/`  
+`https://www.google.com/business/`
 
-Usuario  
+Usuario
 `user`
 
-Contraseña  
+Contraseña
 `pass`  
+***
