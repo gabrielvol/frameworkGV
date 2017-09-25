@@ -14,15 +14,16 @@
 ###### Janus Comunicación  
 ***
 
-
 #### Datos FTP
 `http://www.sitioweb.com.ar/`
+`000.000.000.00`
 
 Usuario
 `user`
 
 Contraseña
 `pass`  
+***
 
 
 #### Panel de control
@@ -44,12 +45,23 @@ Usuario
 
 Contraseña
 `pass`  
+***
 
 
-#### Panel de control
+#### DNS y Contacto
+ToWebs
 
-Usuario
-`user`
+DNS Primario
+`ns1.allytech.com (000.000.000.000)`
 
-Contraseña
-`pass`
+DNS Secundario
+`ns2.allytech.com (000.000.000.000)`  
+
+Contacto técnico
+`Nombre` 
+
+Teléfono
+`12345678`  
+
+Correo
+`info@correo.com`  
