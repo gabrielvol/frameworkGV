@@ -70,7 +70,7 @@
         $errorLocalidad  = '<p>'._("Por favor, ingrese su localidad").'</p>';
         $errorProvincia  = '<p>'._("Por favor, ingrese su provincia").'</p>';
         $errorFecha      = '<p>'._("Por favor, ingrese una fecha").'</p>';
-        $errorEmail      = '<p>'._("Por favor, ingrese un correo electr&oacute;nico").'</p>';
+        $errorEmail      = '<p>'._("Por favor, ingrese su correo electr&oacute;nico").'</p>';
         $errorWebsite    = '<p>'._("Por favor, ingrese su sitio web").'</p>';
         $errorFacebook   = '<p>'._("Por favor, ingrese su perfil de Facebook").'</p>';        
         $errorTelefono   = '<p>'._("Por favor, ingrese un n&uacute;mero de tel&eacute;fono").'</p>';
