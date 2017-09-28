@@ -12,7 +12,7 @@ msgstr "* Marked fields are mandatory"
 
 <?php echo _("Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad"); ?>
 msgid "Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad"
-msgstr "Please complete the form, we'll get in touch with you as soon as possible"
+msgstr "Please complete the form, we'll get in touch with you shortly"
 
 <?php echo _("Por favor, ingrese sus datos."); ?>
 msgid "Por favor, ingrese sus datos."
@@ -24,7 +24,7 @@ msgstr "We'll get in touch with you as soon as possible"
 
 <?php echo _("Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"); ?>
 msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias"
-msgstr "Thank you. Your message has been successfully delivered, we'll be in touch shorly"
+msgstr "Thank you. Your message has been successfully delivered, we'll be in touch shortly"
 
 <?php echo _("Hubo un error al enviar el mensaje"); ?>
 msgid "Hubo un error al enviar el mensaje"
@@ -140,8 +140,8 @@ msgstr "Telephone"
 msgid "Por favor, ingrese un n&uacute;mero de tel&eacute;fono"
 msgstr "Please enter a telephone number"
 
-<?php echo _("Ingrese un n&uacute;mero de tel&eacute;fono"); ?>
-msgid "Ingrese un n&uacute;mero de tel&eacute;fono"
+<?php echo _("Ingrese su tel&eacute;fono"); ?>
+msgid "Ingrese su tel&eacute;fono"
 msgstr "Enter a telephone number"
 
 
@@ -229,7 +229,8 @@ msgstr "Choose a date"
 
 
 <?php echo _("Mensaje"); ?>
-msgstr "Mensaje"
+msgid "Mensaje"
+msgstr "Message"
 
 <?php echo _("Escriba aqu&iacute; su mensaje..."); ?>
 msgid "Escriba aqu&iacute; su mensaje..."
@@ -240,6 +241,8 @@ msgstr "Write your message here..."
 <?php echo _("Enviar"); ?>
 msgid "Enviar"
 msgstr "Send"
+
+
 
 <?php echo _("Gracias"); ?>
 msgid "Gracias"
