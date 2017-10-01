@@ -42,7 +42,6 @@ $navWidthBT: 200px;
             width: $navWidthBT; 
             height: $auto;
             background-color: $bgWhite;
-            padding: 3px 0;
             box-shadow: 0 0 4px $black;
             
             li{
@@ -52,6 +51,12 @@ $navWidthBT: 200px;
                     @include equalHeightAndLineHeight(45px);
                 }
                 
+                &:first-child{                    
+                    a{
+                        padding-top: 3px;
+                    }
+                }
+                
                 &:nth-child(even){
                     background-color: $bgGreyXXL;
                 }
@@ -59,6 +64,10 @@ $navWidthBT: 200px;
                 &:last-child{
                     &, a{
                         @include borderRadiusB(4px);
+                    }
+                    
+                    a{
+                        padding-bottom: 3px;
                     }
                 }
                 
