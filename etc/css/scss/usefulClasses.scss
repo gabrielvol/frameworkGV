@@ -41,6 +41,7 @@
     article, details, figcaption, figure, hgroup, main, menu, nav, summary,
     .displayBlock{display: $block}
     .displayInline{display: $inline}
+    .displayInlineBlock{display: $inlineBlock}
     .displayNone{display: $none}
     .invisible{visibility: hidden}
     .centerVertically{
