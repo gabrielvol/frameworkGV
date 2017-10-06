@@ -20,7 +20,7 @@
                 <a href="/nuevo/oldframework/img/img02.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran"><img src="/nuevo/oldframework/img/img02_.jpg" alt="Imagen" /></a>
             </li>
             <li>
-                <a href="/nuevo/oldframework/img/img03.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran extasiados el show de Marilyn Manson"><img src="/nuevo/oldframework/img/img03_.jpg" alt="Imagen" /></a>
+                <a href="/nuevo/oldframework/img/img03.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran contentos el show de Marilyn Manson"><img src="/nuevo/oldframework/img/img03_.jpg" alt="Imagen" /></a>
             </li>
             <?php
                 $files = scandir($_SERVER['DOCUMENT_ROOT'] . '/img/imageFolder/');
@@ -34,7 +34,7 @@
             ?>
         </ul>
     </div>
-    <script type="text/javascript" src="/nuevo/etc/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="/nuevo/_source/js/lightbox.min.js"></script>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
     <script type="text/javascript">
         lightbox.option({
