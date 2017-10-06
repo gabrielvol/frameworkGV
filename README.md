@@ -51,10 +51,10 @@ Contraseña
 #### DNS y Contacto
 ToWebs
 
-DNS Primario
+DNS 1
 `ns1.allytech.com (000.000.000.000)`
 
-DNS Secundario
+DNS 2
 `ns2.allytech.com (000.000.000.000)`
 
 Contacto técnico
