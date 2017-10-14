@@ -363,25 +363,29 @@ button{
     
     @include beforeTablet{
         .mobileForm &{
-            @include equalHeightAndLineHeight($formSubmitHeightValueBT);
+            height: $formSubmitHeightValueBT;
+            line-height: $formSubmitLineHeightValueBT;
         }
     }
 
     @include tabletOnly{
         .tabletForm &{
-            @include equalHeightAndLineHeight($formSubmitHeightValueTO);
             width: 50%!important;
+            height: $formSubmitHeightValueTO;
             margin-right: $auto;
             margin-left: $auto;
+            line-height: $formSubmitLineHeightValueTO;
         }  
     }
 
     @include afterTabletLandscape{
-        @include equalHeightAndLineHeight($formSubmitHeightValueATL);
+        height: $formSubmitHeightValueATL;
+        line-height: $formSubmitLineHeightValueATL;
     }
 
     @include afterLaptop{
-        @include equalHeightAndLineHeight($formSubmitHeightValueAD);
+        height: $formSubmitHeightValueAD;
+        line-height: $formSubmitLineHeightValueAD;
     }
 }
 
