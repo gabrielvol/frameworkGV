@@ -39,7 +39,7 @@
         @include afterTabletLandscape{
             a{
                 &:focus, &:hover{
-                    background: $bgNavItemAnchorHover;
+                    background-color: $bgNavItemAnchorHover;
                     color: $navFontColourHover;
                 }
             }
@@ -49,10 +49,10 @@
                         color: $navSelectedFontColour;
                     }
                     &:focus, &:hover{
-                        background: $bgNavSelectedAnchorHover;
+                        background-color: $bgNavSelectedAnchorHover;
                     }
                 }            
-            }             
+            }           
         }
     }
 }
