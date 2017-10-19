@@ -28,4 +28,8 @@ b, strong,
 .alignRight{text-align: right}
 .alignLeft{text-align: left}
 .alignJustify{text-align: justify}
+.alignJustifyCenter{
+    text-align: justify;
+    text-align-last: center;
+}
 .indentedText{text-indent: -9999px}
