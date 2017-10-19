@@ -7,7 +7,7 @@
 <ul class="lang pRel horizontal clearfix">
     <li>
         <a href="/nuevo/?l=es_AR" class="displayBlock mask">
-            <img src="/nuevo/img/fl_es.svg" alt="<?php echo $text_es; ?>" title="<?php echo $text_es; ?>">
+            <img src="/nuevo/img/fl_ar.svg" alt="<?php echo $text_es; ?>" title="<?php echo $text_es; ?>">
         </a></li>
     <li>
         <a href="/nuevo/?l=en_GB" class="displayBlock mask">
