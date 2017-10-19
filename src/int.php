@@ -1,8 +1,8 @@
 <?php
     $int = 1;
     
-    $title = "PáginaSinTítulo";
-    //$titleEN = "UntitledPage";
+    $title = "PáginaInterna | PáginaSinTítulo";
+    //$titleEN = "PáginaInterna | UntitledPage";
     $mdesc = "";
     
     $navSelected = 1;
