@@ -4,8 +4,10 @@
     //Mixin para máscara con centrado ciego
 @mixin centerMaskBlind($maskWidth, $maskHeight, $childWidth: auto, $childHeight: auto){
     &{
+        position: relative;
         width: $maskWidth;
         height: $maskHeight;
+        overflow: hidden;     
         .maskChild{
             position: absolute;
             top: 50%;
