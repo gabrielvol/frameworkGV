@@ -76,7 +76,7 @@ form{
 }
 
 label, input, select, textarea, button,
-.labelName, .sug, .errorForm{
+.labelName, .errorForm{
     display: block;
 }
 
@@ -262,28 +262,41 @@ input, select, textarea{
 
 @if $formSug == "on"{    
     .sug{
+        @include transition(1s);
+        display: none;
+        opacity: 0;
+        height: 0;
+        padding-bottom: 3px;
         font-family: $formSugFontFamily;
         font-size: 0.8em;
-        padding-bottom: 3px;
+    }
+    
+    label{
+        &:hover{
+            .sug{
+                display: block;
+                opacity: 1;
 
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formLabelSugHeightBT);
+                @include beforeTablet{
+                    .mobileForm &{
+                        @include equalHeightAndLineHeight($formLabelSugHeightBT);
+                    }
+                }
+
+                @include tabletOnly{
+                    .tabletForm &{
+                        @include equalHeightAndLineHeight($formLabelSugHeightTO);
+                    }
+                }
+
+                @include afterTabletLandscape{
+                    @include equalHeightAndLineHeight($formLabelSugHeightATL);
+                }
+
+                @include afterDesktop{
+                    height: $formLabelSugHeightAD;        
+                }
             }
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formLabelSugHeightTO);
-            }
-        }
-
-        @include afterTabletLandscape{
-            @include equalHeightAndLineHeight($formLabelSugHeightATL);
-        }
-
-        @include afterDesktop{
-            height: $formLabelSugHeightAD;        
         }
     }
 }
@@ -401,7 +414,7 @@ button{
             & + input[type="submit"],
             & + input[type="button"],
             & + button{        
-                    margin-top: $paddingMarginLargeValue;
+                margin-top: $paddingMarginLargeValue;
             }
         }
     }
