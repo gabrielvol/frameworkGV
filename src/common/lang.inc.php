@@ -6,15 +6,15 @@
 
 <ul class="lang pRel horizontal clearfix">
     <li>
-        <a href="/nuevo/?l=es_AR" class="displayBlock mask">
-            <img src="/nuevo/img/fl_ar.svg" alt="<?php echo $text_es; ?>" title="<?php echo $text_es; ?>">
+        <a href="/framework/?l=es_AR" class="displayBlock mask">
+            <img src="/framework/img/fl_ar.svg" alt="<?php echo $text_es; ?>" title="<?php echo $text_es; ?>">
         </a></li>
     <li>
-        <a href="/nuevo/?l=en_GB" class="displayBlock mask">
-            <img src="/nuevo/img/fl_uk.svg" alt="<?php echo $text_en; ?>" title="<?php echo $text_en; ?>">
+        <a href="/framework/?l=en_GB" class="displayBlock mask">
+            <img src="/framework/img/fl_uk.svg" alt="<?php echo $text_en; ?>" title="<?php echo $text_en; ?>">
         </a></li>
     <li>
-        <a href="/nuevo/?l=pt_BR" class="displayBlock mask">
-            <img src="/nuevo/img/fl_br.svg" alt="<?php echo $text_pt; ?>" title="<?php echo $text_pt; ?>">
+        <a href="/framework/?l=pt_BR" class="displayBlock mask">
+            <img src="/framework/img/fl_br.svg" alt="<?php echo $text_pt; ?>" title="<?php echo $text_pt; ?>">
         </a></li>
 </ul>

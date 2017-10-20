@@ -192,7 +192,7 @@
             if(mail($destino,$asunto,$texto,$headers)){
 
             //Redirect
-            echo '<META HTTP-EQUIV="Refresh" Content="0; URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';                
+            echo '<META HTTP-EQUIV="Refresh" Content="0; URL=http://www.gabrielvolonte.com.ar/framework/contacto-gracias.php">';                
                 
 //INICIA MENSAJE OK EN $status
                 $status = '<p class="status ok">'._("$statusOKGlobal").'</p>';

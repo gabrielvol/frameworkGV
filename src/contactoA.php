@@ -10,17 +10,17 @@
     //Gettext variable, debe ir antes del head
     $idioma = $_GET['l'];
     
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/gettext.inc.php');
 ?>
-<link href="/nuevo/_source/css/datepicker.css" rel="stylesheet">
-<script type="text/javascript" src="/nuevo/_source/js/jquery-ui-datepicker.js"></script>
+<link href="/framework/_source/css/datepicker.css" rel="stylesheet">
+<script type="text/javascript" src="/framework/_source/js/jquery-ui-datepicker.js"></script>
 </head>
 <body>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
 	<div id="main" class="int contacto" role="main">
             <div class="mobileForm tabletForm">
-            <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
+            <?php // include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
                     <?php echo $mandatoryMessage ?>
@@ -187,7 +187,7 @@
             </form>
             </div>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-        <script type="text/javascript" src="/nuevo/_source/js/plugins_form.js"></script>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
+        <script type="text/javascript" src="/framework/_source/js/plugins_form.js"></script>
 </body>
 </html>
