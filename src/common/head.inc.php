@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="/nuevo/common/safari-pinned-tab.svg" color="#000">
 <meta name="theme-color" content="#ffffff">
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/nuevo/js/jQuery3.2.1.min.js"></script>
 <script type="text/javascript" src="/nuevo/js/modernizr2.8.3.js"></script>
 <script type="text/javascript" src="/nuevo/js/html5shiv.min.js"></script>
 <!--<script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>-->
