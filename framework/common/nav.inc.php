@@ -1,4 +1,4 @@
-<nav id="navTest" class="container">
+<nav id="navTest" class="container clearfix">
     <ul class="mainMenu horizontal clearfix">
         <li><a href="/framework/index.php" class="displayBlock">Inicio</a></li>
         <li><a href="/framework/ascii.php" class="displayBlock">Ascii</a></li>

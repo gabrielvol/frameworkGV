@@ -8,7 +8,7 @@
 ?>
 <link href="/framework/css/main.css" rel="stylesheet">
 <link href="/framework/css/carouselTiny.css" rel="stylesheet">
-<script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/carouselTiny.js"></script>
+
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
@@ -28,9 +28,12 @@
             <a href="#" class="scNext displayBlock sprites indentedText">Siguiente</a>
        </div>
     </div>
-    <script type="text/javascript">
-        $('.tinyCarousel').tinycarousel();
-    </script>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
+    <script type="text/javascript">
+        $('#slider1').tinycarousel({
+            buttons: false
+        });
+    </script>
+    <script type="text/javascript" src="/framework/js/carouselTiny.js"></script>
 </body>
 </html>
