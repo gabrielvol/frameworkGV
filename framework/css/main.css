@@ -21,6 +21,20 @@
     margin-left: auto!important;
 }
 
+#navTest li{
+    border: 1px solid #000;
+    float: left;
+    background-color: #eee;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+#navTest li, #navTest li a{
+    height: 20px;
+    line-height: 20px;
+}
+#navTest li + li{margin-left: 5px}
+#navTest li a{font-size: 0.7em}
+
 /* ============
    Nav
    ============ */

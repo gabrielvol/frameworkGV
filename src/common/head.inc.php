@@ -10,18 +10,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<link href="/framework/css/styles.css" rel="stylesheet">
+<link href="/nuevo/css/styles.css" rel="stylesheet">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/framework/common/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/framework/common/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/framework/common/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/framework/common/manifest.json">
-<link rel="mask-icon" href="/framework/common/safari-pinned-tab.svg" color="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="/nuevo/common/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/nuevo/common/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/nuevo/common/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/nuevo/common/manifest.json">
+<link rel="mask-icon" href="/nuevo/common/safari-pinned-tab.svg" color="#000">
 <meta name="theme-color" content="#ffffff">
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="/framework/js/modernizr2.8.3.js"></script>
-<script type="text/javascript" src="/framework/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="/nuevo/js/modernizr2.8.3.js"></script>
+<script type="text/javascript" src="/nuevo/js/html5shiv.min.js"></script>
 <!--<script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>-->
 
 <!--

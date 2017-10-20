@@ -8,7 +8,7 @@
         ?> Company y Asociados
     </p>
         
-    <img src="/framework/img/logo.svg" class="logoFooter displayBlock" alt="<?php echo _("Logo de"); ?>">
+    <img src="/nuevo/img/logo.svg" class="logoFooter displayBlock" alt="<?php echo _("Logo de"); ?>">
     
     <?php include('social.inc.php'); ?>
 </footer>
@@ -23,5 +23,5 @@
 </div>
 <div class="modalBG displayNone"></div>
 
-<script type="text/javascript" src="/framework/js/main.js"></script>
-<script type="text/javascript" src="/framework/js/scrollKeep.js"></script>
+<script type="text/javascript" src="/nuevo/js/main.js"></script>
+<script type="text/javascript" src="/nuevo/js/scrollKeep.js"></script>

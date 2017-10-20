@@ -3,7 +3,7 @@
    ========================================================================== */
 /* Preload images */
 body::after {
-    content: url(/framework/img/lightbox/close.png) url(/framework/img/lightbox/loading.gif) url(/framework/img/lightbox/prev.png) url(/framework/img/lightbox/next.png);
+    content: url(/nuevo/img/lightbox/close.png) url(/nuevo/img/lightbox/loading.gif) url(/nuevo/img/lightbox/prev.png) url(/nuevo/img/lightbox/next.png);
     display: none;
 }
 
@@ -73,7 +73,7 @@ body::after {
     @include squareSize(32px);
     display: block;
     margin: 0 auto;
-    background-image: url(/framework/img/lightbox/loading.gif);
+    background-image: url(/nuevo/img/lightbox/loading.gif);
     background-repeat: no-repeat;
 }
 
@@ -99,13 +99,13 @@ body::after {
             width: 34%;
             left: 0;
             float: left;
-            background: url(/framework/img/lightbox/prev.png) left 48% no-repeat;
+            background: url(/nuevo/img/lightbox/prev.png) left 48% no-repeat;
         }
         &.lb-next{
             width: 64%;
             right: 0;
             float: right;
-            background: url(/framework/img/lightbox/next.png) right 48% no-repeat; 
+            background: url(/nuevo/img/lightbox/next.png) right 48% no-repeat; 
         }
     }
 }
@@ -158,7 +158,7 @@ body::after {
         @include transition(0.2s);
         display: block;
         float: right;
-        background: url(/framework/img/lightbox/close.png) top right no-repeat;
+        background: url(/nuevo/img/lightbox/close.png) top right no-repeat;
         text-align: right;
         outline: none;
         
