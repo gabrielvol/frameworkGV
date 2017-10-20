@@ -5,16 +5,16 @@
     $title = "Framework | GV";
     $mdesc = "";
     
-    include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
 ?>
 <link href="/framework/css/main.css" rel="stylesheet">
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/_test/common/nav.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/nav.inc.php'); ?>
     <div id="main" class="index" role="main">
 
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
 </body>
 </html>
