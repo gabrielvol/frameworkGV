@@ -1296,11 +1296,11 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-size: 1px; }
 
 .bgShadowT {
-  background-image: url("/nuevo/img/bg_shadowT.png");
+  background-image: url("/framework/img/bg_shadowT.png");
   background-position: center top; }
 
 .bgShadowB {
-  background-image: url("/nuevo/img/bg_shadowB.png");
+  background-image: url("/framework/img/bg_shadowB.png");
   background-position: center bottom; }
 
 /* =============================================================================
@@ -1415,7 +1415,7 @@ ul.hyphenated li {
         z-index: 200;
         width: 90px;
         height: 45px;
-        background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
+        background: #fff url("/framework/img/ic_hamburgerMenu.svg") no-repeat 10px center;
         background-size: 15px;
         padding: 0 10px 0 30px;
         color: #333;
