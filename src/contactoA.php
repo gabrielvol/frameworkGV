@@ -22,6 +22,8 @@
             <div class="mobileForm tabletForm">
             <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
             <form method="post" name="" action="">
+                <?php echo $status ?>
+                
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
                     <?php echo $mandatoryMessage ?>
                 </div>

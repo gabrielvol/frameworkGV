@@ -1,11 +1,11 @@
 <?php
     //Variables de Mandatory Message al inicio
     $mandatoryMessage        = '';
-    $mandatoryMessageClasses = '';
+    $mandatoryMessageClasses = 'displayNone';
     
     //Variables Globlales de Status
-    $statusIniGlobal    = _('Por favor, ingrese sus datos. Nos comunicaremos con Ud. a la brevedad');
-    $statusIniGlobalA    = _('Por favor, ingrese sus datos.');
+    $statusIniGlobal    = _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad');
+    $statusIniGlobalA    = _('Complete el formulario.');
     $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad');
     
     $statusOKGlobal     = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias');
@@ -198,10 +198,12 @@
                 
 //INICIA MENSAJE OK EN $status
                 $status = '<p class="status ok">'._("$statusOKGlobal").'</p>';
+                $mandatoryMessageClasses = 'displayNone';
 //FIN mensaje ok en $status
                 
 //INICIA MENSAJE OK EN POPUP
                 $status = '<div class="popup statusDiv"><a href="javascript:void(0)" class="close displayBlock pAbs sprites indentedText">'._("Cerrar").'</a><p class="status ok">'._("$statusOKGlobal").'</p></div><div class="modalBG"></div>';
+                $mandatoryMessageClasses = 'displayNone';
 //FIN mensaje ok en popup
                 
                 // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
@@ -222,10 +224,12 @@
             } else {
 //INICIA MENSAJE ERROR EN $status
                 $status = '<p class="status error">'._("$statusErrorGlobalA").' <span class="displayBlock">'._("$statusErrorGlobalB").'</span></p>';
+                $mandatoryMessageClasses = 'displayNone';
 //FIN mensaje error en $status
                 
 //INICIA MENSAJE ERROR EN POPUP
                 $status = '<div class="popup statusDiv"><a href="javascript:void(0)" class="close displayBlock pAbs sprites indentedText">'._("Cerrar").'</a><p class="status error">'._("$statusErrorGlobalA").' <span class="displayBlock">'._("$statusErrorGlobalB").'</span></p></div><div class="modalBG"></div>';
+                $mandatoryMessageClasses = 'displayNone';
 //FIN mensaje error en popup
             }
         }

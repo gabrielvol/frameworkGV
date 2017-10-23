@@ -461,22 +461,28 @@ textarea{
     }
 }
 
-.mandatoryMessage{
+.status, .mandatoryMessage{
+    margin-bottom: 20px;
+}
+
+.status, .mandatoryMessage p{
+    font-size: 1em!important;
+    text-align: center;      
+}
+
+.status.ok, .mandatoryMessage{
     @include borderRadius(6px);
     box-sizing: border-box;
     padding: 10px 20px;
-    margin-bottom: 20px;
-        
-    p{
-        font-size: 1em!important;
-        text-align: center;       
-    }
-        
+}
+
+.mandatoryMessage{    
     &.invalidMandatoryMessage{
+        display: $block;
         background-color: $invalidMandatoryMessageBgColour;
         
         p{
-            color: $invalidMandatoryMessageFontColour;            
+            color: $invalidMandatoryMessageFontColour;     
         }
     }
     
@@ -485,13 +491,6 @@ textarea{
     }
 }
 
-.status{        
-    @include beforeTabletLandscape{
-        text-align: center;            
-    }
-    
-    &.ok{
-        background-color: $bgGreen;
-        padding: 10px 20px;
-    }
+.status.ok{
+    background-color: $bgGreen;
 }
