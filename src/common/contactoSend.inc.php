@@ -52,6 +52,8 @@
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
         $texto = "<strong>Nombre:</strong> ".$nombre."<br />";
         $texto .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
+        $texto .= "<strong>Localidad:</strong> ".$localidad."<br />";
+        $texto .= "<strong>Provincia:</strong> ".$provincia."<br />";
         $texto .= "<strong>Cargo:</strong> ".$cargo."<br />";
         $texto .= "<strong>Fecha:</strong> ".$fecha."<br />";
         $texto .= "<strong>E-mail:</strong> ".$email."<br />";
