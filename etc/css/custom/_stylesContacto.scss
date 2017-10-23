@@ -1,0 +1,14 @@
+/* =============================================================================
+   Contacto Styles | Custom
+   ========================================================================== */
+.contacto{
+    .enviar{        
+        font-size: 1.2em;
+        text-transform: uppercase;
+        
+        @include afterTablet{
+            @include centerCustom(50%);
+            margin-top: 30px;
+        }
+    }
+}
