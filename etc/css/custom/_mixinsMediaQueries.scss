@@ -64,6 +64,17 @@ $desktopLargeMin: 1600px;
 @mixin mobile500Only{
     @media (min-width: 501px)
         and (max-width: #{$mobileLMax}){@content;}}
+
+/* 555 */
+@mixin beforeMobile550{
+    @media (max-width: 550px){@content;}}
+    
+@mixin afterMobile550{
+    @media (min-width: 551px){@content;}}
+    
+@mixin mobile550Only{
+    @media (min-width: 551px)
+        and (max-width: #{$mobileLMax}){@content;}}
     
 /* 600 */
 @mixin beforeMobile600{
@@ -74,6 +85,17 @@ $desktopLargeMin: 1600px;
     
 @mixin mobile600Only{
     @media (min-width: 601px)
+        and (max-width: #{$mobileLMax}){@content;}}
+    
+/* 650 */
+@mixin beforeMobile650{
+    @media (max-width: 650px){@content;}}
+    
+@mixin afterMobile650{
+    @media (min-width: 651px){@content;}}
+    
+@mixin mobile650Only{
+    @media (min-width: 651px)
         and (max-width: #{$mobileLMax}){@content;}}
     
 /* 700 */
