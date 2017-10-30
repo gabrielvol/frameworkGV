@@ -43,7 +43,7 @@
 
         //Cabeceras del correo
         $destino = "tampas@gmail.com";
-        $asunto = "Contacto GV.com.ar de $nombre - $empresa";
+        $asunto = "Contacto Web de $nombre - $empresa";
         $headers = "From: $nombre <$email>\r\n";
         $headers .= "Content-type: text/html\r\n";
         $headers .= "X-Mailer: PHP5\n";
@@ -54,9 +54,8 @@
         $texto .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
         $texto .= "<strong>Localidad:</strong> ".$localidad."<br />";
         $texto .= "<strong>Provincia:</strong> ".$provincia."<br />";
-        $texto .= "<strong>Cargo:</strong> ".$cargo."<br />";
         $texto .= "<strong>Fecha:</strong> ".$fecha."<br />";
-        $texto .= "<strong>E-mail:</strong> ".$email."<br />";
+        $texto .= "<strong>Correo electr&oacute;nico:</strong> ".$email."<br />";
         $texto .= "<strong>Sitio web:</strong> ".$website."<br />";
         $texto .= "<strong>Perfil de Facebook:</strong> ".$facebook."<br />";
         $texto .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
@@ -90,7 +89,7 @@
             $invalidFieldNombre = "invalidField";
             $autofocusNombre = "autofocus";
             
-        if (empty($_POST["apellido"])) {
+        } elseif (empty($_POST["apellido"])) {
             $mandatoryMessage = $errorApellido;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
             //Clase de error en el input

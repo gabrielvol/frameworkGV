@@ -50,7 +50,6 @@
                 </label>
                 
                 <label for="direccion">
-                    <span class="labelName"><?php echo _("Direcci&oacute;n"); ?></span>
                     <span class="sug"><?php echo _('Ingrese su direcci&oacute;n'); ?></span>
                     <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _('Ingrese su direcci&oacute;n'); ?>" <?php echo $autofocusDireccion ?>>
                     <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>              
