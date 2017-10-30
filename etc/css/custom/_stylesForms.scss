@@ -380,13 +380,16 @@ button{
             line-height: $formSubmitLineHeightValueBT;
         }
     }
+    
+    @include afterTablet{
+        width: 50%!important;
+        margin-right: $auto;
+        margin-left: $auto;
+    }
 
     @include tabletOnly{
         .tabletForm &{
-            width: 50%!important;
             height: $formSubmitHeightValueTO;
-            margin-right: $auto;
-            margin-left: $auto;
             line-height: $formSubmitLineHeightValueTO;
         }  
     }
@@ -457,7 +460,12 @@ textarea{
     
     @include afterTabletLandscape{
         height: 100px;        
-        margin-bottom: $paddingMarginLargeValue;
+    }
+    
+    @if $formInsideLabel == "off"{    
+        @include afterTabletLandscape{
+            margin-bottom: $paddingMarginLargeValue;
+        }        
     }
 }
 
@@ -493,4 +501,5 @@ textarea{
 
 .status.ok{
     background-color: $bgGreen;
+    color: $white;
 }
