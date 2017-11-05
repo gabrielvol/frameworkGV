@@ -46,4 +46,35 @@ $(document).ready(function () {
             }
         ]
     });
+    
+    // Slick slider que se detiene
+    var item_length = $('.slickFade > li').length - 1;
+    var slider = $('.slickFade').slick({
+        infinite: false,
+        dots: false,
+        arrows: false,            
+        fade: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        swipeToSlide: true,
+        slide: 'li',
+
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 500
+    });
+
+    // On before slide change
+    slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+        //check the length of total items in .slide container
+        //if that number is the same with the number of the last slider
+        //Then pause the slider
+        if( item_length === slider.slick('slickCurrentSlide') ){
+            //this should do the same thing -> slider.slickPause();
+            slider.slickSetOption("autoplay",false,false)
+        };
+    });
 });
