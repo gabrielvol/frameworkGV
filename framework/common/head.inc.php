@@ -1,12 +1,17 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-<meta charset="utf-8"/>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index,follow">
+<meta name="generator" content="NetBeans IDE">
+<meta name="rating" content="General">
+<meta name="geo.region" content="AR">
+
 <title><?php echo $title ?></title>
 <meta name="description" content="<?php echo $mdesc ?>"/>
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <link href="http://www.gabrielvolonte.com.ar/css/styles.css" rel="stylesheet">
 
