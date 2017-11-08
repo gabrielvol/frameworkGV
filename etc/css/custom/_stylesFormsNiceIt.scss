@@ -5,19 +5,28 @@ form.niceIt{
     
     /* Select */
     .fmSelect{
+        $fmSelectWidth: 240px!important;
+        
         @include borderStyle($formInputBcColour);
+        
         //Aquí se establece la coordenada de la flecha del select
-        @include sprites(103px -80px);
+        @include bgSvg(ic_arrowSelectD, auto, right 15px center);
+        
+        box-sizing: border-box;
+        width: $fmSelectWidth;
+        
         //Este padding-right: 40px es el espacio para la flecha del select,
         //tendría que ser un sprite de 40px de ancho
         padding: 0 40px 0 10px;
+        
         width: 135px!important;
         color: $formInputFontColour;
         
-        &, & strong, & cite{
+        &, strong, cite{
             //Aquí se establece la altura de los select y option
             height: 30px;
             line-height: 28px;
+            
             font-size: 0.9em;            
         }
         
@@ -37,7 +46,7 @@ form.niceIt{
         
         ul{
             @include borderStyle($formInputBcColour);
-            width: 135px!important;
+            width: $fmSelectWidth;
             max-height: 250px;
             background-color: $white;
             background-image: none;
@@ -77,7 +86,7 @@ form.niceIt{
     /* File Upload */
     .fnFileInput{
         &, span, strong{
-            width:$hundred;
+            width: $hundred;
             
             @include mobileOnly{
                 width: 89%!important; 
