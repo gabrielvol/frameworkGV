@@ -3,48 +3,47 @@
    ========================================================================== */
 .mainNav{
     li{        
-        a{
+        a, .topLevelItem{
             font-family: $navFontFamily;
         }
         &.selected{
-            a{
+            a, .topLevelItem{
                 font-family: $navSelectedFontFamily;
             }            
         }     
         @include beforeTablet{
-            a{
+            a, .topLevelItem{
                 color: $navFontColourBT;
-
             }
             &.selected{
-                a{
+                a, .topLevelItem{
                     color: $navSelectedFontColourBT;
                 }            
             }            
         }
         @include afterTablet{
             background: $bgNavItem;
-            a{
+            a, .topLevelItem{
                 background: $bgNavItemAnchor;
                 color: $navFontColour;
             }
             &.selected{
                 background: $bgNavSelectedItem;
-                a{
+                a, .topLevelItem{
                     background: $bgNavSelectedAnchor;
                     color: $navSelectedFontColour;
                 }            
             }             
         }
         @include afterTabletLandscape{
-            a{
+            a, .topLevelItem{
                 &:focus, &:hover{
                     background-color: $bgNavItemAnchorHover;
                     color: $navFontColourHover;
                 }
             }
             &.selected{
-                a{
+                a, .topLevelItem{
                     &, &:focus, &:hover{
                         color: $navSelectedFontColour;
                     }
