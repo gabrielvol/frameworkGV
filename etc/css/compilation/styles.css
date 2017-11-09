@@ -91,7 +91,9 @@
 /* Tablet */
 /* Tablet Landscape*/
 /* 500 */
+/* 555 */
 /* 600 */
+/* 650 */
 /* 700 */
 /* 800 */
 /* 900 */
@@ -395,6 +397,10 @@ b, strong,
 .alignJustify {
   text-align: justify; }
 
+.alignJustifyCenter {
+  text-align: justify;
+  text-align-last: center; }
+
 .indentedText {
   text-indent: -9999px; }
 
@@ -452,16 +458,19 @@ p p, p li, p dl, p legend, li p, li li, li dl, li legend {
   font-size: 1em; }
 
 @media (max-width: 767px) {
-  p {
+  p, li {
     font-size: 1em; } }
 
 @media (min-width: 768px) {
-  p {
+  p, li {
     font-size: 1em; } }
 
 @media (min-width: 1024px) {
-  p {
+  p, li {
     font-size: 1em; } }
+
+p p, p li, li p, li li {
+  font-size: 1em; }
 
 a {
   transition: color 0.7s ease;
@@ -518,7 +527,7 @@ a {
 /* =============================================================================
    Colours Styles | Etc
    ========================================================================== */
-html, body, button, blockquote, table, h1, h2, h3, h4, h5, h6, p, b, strong, i,
+html, body, blockquote, table, h1, h2, h3, h4, h5, h6, p, b, strong, i,
 em, dfn, li, button, label, input, select, textarea {
   color: #999; }
 
@@ -768,7 +777,9 @@ label.black, label.black:focus, label.black:hover {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
-    transition-property: transform; } }
+    transition-property: transform; }
+    .hoverGrow:hover, .hoverGrow:focus, .hoverGrow:active {
+      transform: scale(1.1); } }
 
 /* =============================================================================
    Useful Classes | Etc
@@ -906,9 +917,6 @@ label.black, label.black:focus, label.black:hover {
   top: 0;
   bottom: 0; }
 
-.fullHeightPercent {
-  height: 100%; }
-
 .coverAll {
   position: absolute;
   top: 0;
@@ -916,12 +924,15 @@ label.black, label.black:focus, label.black:hover {
   bottom: 0;
   left: 0; }
 
-article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-.displayBlock {
+article, details, figcaption, figure, hgroup, main, menu, nav, summary, button,
+.displayBlock, .callToAction {
   display: block !important; }
 
 .displayInline {
   display: inline !important; }
+
+.displayInlineBlock {
+  display: inline-block !important; }
 
 .displayNone {
   display: none !important; }
@@ -933,13 +944,7 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary,
   display: table-cell;
   vertical-align: middle; }
 
-article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after,
-.contentBox,
-.contentBox::before,
-.contentBox::after, .displayBlock, .displayBlock::before, .displayBlock::after {
-  box-sizing: content-box; }
-
-.borderBox {
+article .borderBox, article .borderBox::before, article .borderBox::after, article .displayBlock, article .displayBlock::before, article .displayBlock::after, article .callToAction, article .callToAction::before, article .callToAction::after, details .borderBox, details .borderBox::before, details .borderBox::after, details .displayBlock, details .displayBlock::before, details .displayBlock::after, details .callToAction, details .callToAction::before, details .callToAction::after, figcaption .borderBox, figcaption .borderBox::before, figcaption .borderBox::after, figcaption .displayBlock, figcaption .displayBlock::before, figcaption .displayBlock::after, figcaption .callToAction, figcaption .callToAction::before, figcaption .callToAction::after, figure .borderBox, figure .borderBox::before, figure .borderBox::after, figure .displayBlock, figure .displayBlock::before, figure .displayBlock::after, figure .callToAction, figure .callToAction::before, figure .callToAction::after, hgroup .borderBox, hgroup .borderBox::before, hgroup .borderBox::after, hgroup .displayBlock, hgroup .displayBlock::before, hgroup .displayBlock::after, hgroup .callToAction, hgroup .callToAction::before, hgroup .callToAction::after, main .borderBox, main .borderBox::before, main .borderBox::after, main .displayBlock, main .displayBlock::before, main .displayBlock::after, main .callToAction, main .callToAction::before, main .callToAction::after, menu .borderBox, menu .borderBox::before, menu .borderBox::after, menu .displayBlock, menu .displayBlock::before, menu .displayBlock::after, menu .callToAction, menu .callToAction::before, menu .callToAction::after, nav .borderBox, nav .borderBox::before, nav .borderBox::after, nav .displayBlock, nav .displayBlock::before, nav .displayBlock::after, nav .callToAction, nav .callToAction::before, nav .callToAction::after, summary .borderBox, summary .borderBox::before, summary .borderBox::after, summary .displayBlock, summary .displayBlock::before, summary .displayBlock::after, summary .callToAction, summary .callToAction::before, summary .callToAction::after, button .borderBox, button .borderBox::before, button .borderBox::after, button .displayBlock, button .displayBlock::before, button .displayBlock::after, button .callToAction, button .callToAction::before, button .callToAction::after, label .borderBox, label .borderBox::before, label .borderBox::after, label .displayBlock, label .displayBlock::before, label .displayBlock::after, label .callToAction, label .callToAction::before, label .callToAction::after, input .borderBox, input .borderBox::before, input .borderBox::after, input .displayBlock, input .displayBlock::before, input .displayBlock::after, input .callToAction, input .callToAction::before, input .callToAction::after, select .borderBox, select .borderBox::before, select .borderBox::after, select .displayBlock, select .displayBlock::before, select .displayBlock::after, select .callToAction, select .callToAction::before, select .callToAction::after, textarea .borderBox, textarea .borderBox::before, textarea .borderBox::after, textarea .displayBlock, textarea .displayBlock::before, textarea .displayBlock::after, textarea .callToAction, textarea .callToAction::before, textarea .callToAction::after {
   box-sizing: border-box; }
 
 .mask {
@@ -1080,6 +1085,8 @@ figure {
     height: auto !important; }
   .displayInlineBT {
     display: inline !important; }
+  .displayInlineBlockBT {
+    display: inline-block !important; }
   .displayBlockBT, .showBT {
     display: block !important; }
   .displayNoneBT, .hideBT {
@@ -1168,20 +1175,18 @@ body {
 
 @media (min-width: 1024px) {
   .mainNav li a:focus, .mainNav li a:hover {
-    background: transparent;
+    background-color: transparent;
     color: #666666; }
   .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
     color: #666666; }
   .mainNav li.selected a:focus, .mainNav li.selected a:hover {
-    background: transparent; } }
+    background-color: transparent; } }
 
 /* =============================================================================
    Global Variables | Custom
    ========================================================================== */
 .callToAction {
   border: 2px solid #999;
-  display: block;
-  box-sizing: border-box;
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
   background-color: #999;
   margin-right: auto;
@@ -1221,6 +1226,11 @@ a.white:focus, a.white:hover {
 .bgGradWhiteEighty {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
+.bgGradWhiteEighty {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
 
 /* =============================================================================
    Background Settings | Custom
@@ -1431,17 +1441,20 @@ ul.hyphenated li {
         width: 200px;
         height: auto !important;
         background-color: #fff;
-        padding: 3px 0;
         box-shadow: 0 0 4px #000; }
         .mainNav ul li {
           float: none !important; }
           .mainNav ul li, .mainNav ul li a {
             height: 45px;
             line-height: 45px; }
+          .mainNav ul li:first-child a {
+            padding-top: 3px; }
           .mainNav ul li:nth-child(even) {
             background-color: #f4f4f4; }
           .mainNav ul li:last-child, .mainNav ul li:last-child a {
             border-radius: 0 0 4px 4px; }
+          .mainNav ul li:last-child a {
+            padding-bottom: 3px; }
           .mainNav ul li a {
             font-size: 0.8em;
             text-align: center; } }
@@ -1469,18 +1482,6 @@ ul.hyphenated li {
    ========================================================================== */
 #footer .logoFooter {
   width: 100px; }
-
-#footer .social li a {
-  width: 50px;
-  height: 50px;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
-  transition: all 1s ease; }
-  #footer .social li a:focus, #footer .social li a:hover {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=100)"; }
 
 /* =============================================================================
    Index Styles | Custom

@@ -31,15 +31,14 @@
         position: absolute;
         @include posTB(0, 0);
     }
-    .fullHeightPercent{height: 100%}
     .coverAll{
         position: absolute;
         @include posTRBL(0, 0, 0, 0);
     }
 
     //Display
-    article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-    .displayBlock{display: $block}
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary, button,
+    .displayBlock, .callToAction{display: $block}
     .displayInline{display: $inline}
     .displayInlineBlock{display: $inlineBlock}
     .displayNone{display: $none}
@@ -48,13 +47,12 @@
         display: table-cell;
         vertical-align: middle;
     }
-    article, details, figcaption, figure, hgroup, main, menu, nav, summary,
-    .contentBox, .displayBlock{
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary, button, label, input, select, textarea{
+    .borderBox, .displayBlock, .callToAction{
         &, &::before, &::after{
-            box-sizing: content-box;
+            box-sizing: border-box}
         }
     }
-    .borderBox{box-sizing: border-box}
 
     //Masks
     .mask{

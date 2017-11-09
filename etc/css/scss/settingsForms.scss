@@ -19,17 +19,12 @@ fieldset{
 }
 label{
     @include transition(1s);
-    cursor: pointer;
     color: $formLabelFontColour;
     font-weight: 400!important;
 
     &:focus, &:hover{
         color: $formLabelFontColourHover;
     }
-}
-
-label, input, select, textarea, input[type="search"]{
-    box-sizing: border-box!important;
 }
 button, input, select, textarea{ 
     font-size: 100%;/* Corrects font size not being inherited in all browsers. */
@@ -43,7 +38,6 @@ button, input, select, textarea{
         }
     }
 }
-
 input, select, textarea{
     background-color: $formInputBgColour;
     color: $formInputFontColour;
@@ -67,21 +61,11 @@ input{
         -webkit-appearance: none;
     }
 }
-
-button,
-input[type="button"],
-html input[type="button"]{
-    cursor: pointer;
-    *overflow: visible;
-}
-
 input[type="reset"],
 input[type="submit"],
 input[type="button"],
-button{
-    cursor: pointer;
+form button{
     background-color: $formSubmitBgColour;
-    *overflow: visible;
 
     &:focus, &:hover{
         background-color: $formSubmitBgColourHover;
@@ -96,11 +80,8 @@ button{
         }
     }    
 }
-
 button{
-    display: $block;
-    box-sizing: content-box;
-    padding: $zero;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
 }
@@ -114,7 +95,6 @@ input::focus-inner{
     border: $none;
     padding: 0;
 }
-
 textarea{
     vertical-align: top;
 }
