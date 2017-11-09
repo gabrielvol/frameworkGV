@@ -29,10 +29,6 @@ $navWidthBT: 200px;
             font-family: $hamburgerFontFamily;
             font-size: 1em;
             line-height: 43px;
-            
-            &.clicked{
-                color: $hamburgerFontColourClicked;
-            }
         }
         
         ul{
@@ -75,6 +71,12 @@ $navWidthBT: 200px;
                     font-size: 0.8em;
                     text-align: center;
                 }
+            }
+        }
+        
+        &.clicked{
+            .hamb{
+                color: $hamburgerFontColourClicked;
             }
         }
     }    
