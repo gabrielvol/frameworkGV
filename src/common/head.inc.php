@@ -16,8 +16,8 @@
 <title><?php echo $title ?></title>
 <title><?php if($idioma == 'en_GB'){ echo $titleEN; } else if($idioma == 'pt_BR'){ echo $titleBR; } else { echo $title; } ?></title>
 
-<meta name="description" content="<?php echo $mdesc ?>"/>
-<meta name="description" content="<?php if($idioma == 'en_GB'){ echo $mdescEN; } else if($idioma == 'pt_BR'){ echo $mdescBR; } else { echo $mdesc; } ?>"/>
+<meta name="description" content="<?php echo $mdesc ?>">
+<meta name="description" content="<?php if($idioma == 'en_GB'){ echo $mdescEN; } else if($idioma == 'pt_BR'){ echo $mdescBR; } else { echo $mdesc; } ?>">
 
 <link href="/nuevo/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
