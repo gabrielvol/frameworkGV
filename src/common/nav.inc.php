@@ -11,5 +11,14 @@
                 <li><a href="/nuevo/nosotros/historia.php" class="displayBlock"><?php echo _("Historia"); ?></a></li>
             </ul>
         </li>
+        
+        <li class="nos <?php if($navSelected == 1) echo "selected" ?>">
+            <p href="/nuevo/nosotros/" id="nosoNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem upperCase alignCenter">
+                <?php echo _("Nosotros"); ?>
+            </p>
+            <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">
+                <li><a href="/nuevo/nosotros/historia.php" class="displayBlock"><?php echo _("Historia"); ?></a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
