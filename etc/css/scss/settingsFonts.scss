@@ -24,31 +24,23 @@ p, dl, legend{
     margin: $textMargin;
 }
 p, li{    
-    b, strong{
+    b{
         font-family: $mainFontFamilyBold;
     }
     & + p{
         margin: $textMarginSibling;        
-    }
-    p, li, dl, legend{
-        font-size: 1rem;
-    }
-}
-p, li{    
+    } 
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
-    
     @include afterTablet{
         font-size: $mainFontSizeParagraphAT;
     }
-    
     @include afterTabletLandscape{
         font-size: $mainFontSizeParagraphATL;
     }
-    
-    p, li{
-        font-size: 1rem;
+    p, li, strong, dl, legend{
+        font-size: 1em;
     }
 }
 a{

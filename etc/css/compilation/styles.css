@@ -343,10 +343,10 @@ abbr {
   cursor: help; }
 
 .fontSizeReset {
-  font-size: 1em !important; }
+  font-size: 1rem !important; }
 
 .lineHeightReset {
-  line-height: 1em !important; }
+  line-height: 1rem !important; }
 
 .light {
   font-weight: 300; }
@@ -422,14 +422,14 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
 select, textarea, blockquote, table {
   font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.4em; }
+  font-size: 1rem;
+  line-height: 1.4; }
 
 .textShadow {
   text-shadow: 1px 1px 5px #333; }
 
 .letterSpacing {
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05rem; }
 
 /* =============================================================================
    Font Styles | Etc
@@ -442,39 +442,36 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 0.8em;
-  line-height: 1.2em; }
+  margin: 0 0 0.8rem;
+  line-height: 1.2rem; }
 
 p, dl, legend {
   margin: 0; }
 
-p b, p strong, li b, li strong {
+p b, li b {
   font-family: Arial; }
 
 p + p, li + p {
-  margin: 0.8em 0 0; }
-
-p p, p li, p dl, p legend, li p, li li, li dl, li legend {
-  font-size: 1em; }
+  margin: 0.8rem 0 0; }
 
 @media (max-width: 767px) {
   p, li {
-    font-size: 1em; } }
+    font-size: 1rem; } }
 
 @media (min-width: 768px) {
   p, li {
-    font-size: 1em; } }
+    font-size: 1rem; } }
 
 @media (min-width: 1024px) {
   p, li {
-    font-size: 1em; } }
+    font-size: 1rem; } }
 
-p p, p li, li p, li li {
+p p, p li, p strong, p dl, p legend, li p, li li, li strong, li dl, li legend {
   font-size: 1em; }
 
 a {
   transition: color 0.7s ease;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 .arial {
   font-family: Arial; }
@@ -944,7 +941,10 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary, button,
   display: table-cell;
   vertical-align: middle; }
 
-article .borderBox, article .borderBox::before, article .borderBox::after, article .displayBlock, article .displayBlock::before, article .displayBlock::after, article .callToAction, article .callToAction::before, article .callToAction::after, details .borderBox, details .borderBox::before, details .borderBox::after, details .displayBlock, details .displayBlock::before, details .displayBlock::after, details .callToAction, details .callToAction::before, details .callToAction::after, figcaption .borderBox, figcaption .borderBox::before, figcaption .borderBox::after, figcaption .displayBlock, figcaption .displayBlock::before, figcaption .displayBlock::after, figcaption .callToAction, figcaption .callToAction::before, figcaption .callToAction::after, figure .borderBox, figure .borderBox::before, figure .borderBox::after, figure .displayBlock, figure .displayBlock::before, figure .displayBlock::after, figure .callToAction, figure .callToAction::before, figure .callToAction::after, hgroup .borderBox, hgroup .borderBox::before, hgroup .borderBox::after, hgroup .displayBlock, hgroup .displayBlock::before, hgroup .displayBlock::after, hgroup .callToAction, hgroup .callToAction::before, hgroup .callToAction::after, main .borderBox, main .borderBox::before, main .borderBox::after, main .displayBlock, main .displayBlock::before, main .displayBlock::after, main .callToAction, main .callToAction::before, main .callToAction::after, menu .borderBox, menu .borderBox::before, menu .borderBox::after, menu .displayBlock, menu .displayBlock::before, menu .displayBlock::after, menu .callToAction, menu .callToAction::before, menu .callToAction::after, nav .borderBox, nav .borderBox::before, nav .borderBox::after, nav .displayBlock, nav .displayBlock::before, nav .displayBlock::after, nav .callToAction, nav .callToAction::before, nav .callToAction::after, summary .borderBox, summary .borderBox::before, summary .borderBox::after, summary .displayBlock, summary .displayBlock::before, summary .displayBlock::after, summary .callToAction, summary .callToAction::before, summary .callToAction::after, button .borderBox, button .borderBox::before, button .borderBox::after, button .displayBlock, button .displayBlock::before, button .displayBlock::after, button .callToAction, button .callToAction::before, button .callToAction::after, label .borderBox, label .borderBox::before, label .borderBox::after, label .displayBlock, label .displayBlock::before, label .displayBlock::after, label .callToAction, label .callToAction::before, label .callToAction::after, input .borderBox, input .borderBox::before, input .borderBox::after, input .displayBlock, input .displayBlock::before, input .displayBlock::after, input .callToAction, input .callToAction::before, input .callToAction::after, select .borderBox, select .borderBox::before, select .borderBox::after, select .displayBlock, select .displayBlock::before, select .displayBlock::after, select .callToAction, select .callToAction::before, select .callToAction::after, textarea .borderBox, textarea .borderBox::before, textarea .borderBox::after, textarea .displayBlock, textarea .displayBlock::before, textarea .displayBlock::after, textarea .callToAction, textarea .callToAction::before, textarea .callToAction::after {
+article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after, button, button::before, button::after, label, label::before, label::after, input, input::before, input::after, select, select::before, select::after, textarea, textarea::before, textarea::after,
+.borderBox,
+.borderBox::before,
+.borderBox::after, .displayBlock, .displayBlock::before, .displayBlock::after, .callToAction, .callToAction::before, .callToAction::after {
   box-sizing: border-box; }
 
 .mask {
@@ -1015,7 +1015,7 @@ ol {
   list-style: decimal inside; }
 
 a {
-  line-height: 1em;
+  line-height: 1rem;
   cursor: pointer; }
   a img {
     border: none; }
@@ -1026,7 +1026,7 @@ a, a:hover {
 img {
   background-color: #c6c6c6;
   border: none;
-  font: normal 11px/1em Arial;
+  font: normal 11px/1rem Arial;
   text-transform: uppercase;
   color: #333;
   -ms-interpolation-mode: bicubic; }
@@ -1149,37 +1149,39 @@ body {
 /* =============================================================================
    Nav Styles | Etc
    ========================================================================== */
-.mainNav li a {
+.mainNav li a, .mainNav li .topLevelItem {
   font-family: Arial; }
 
-.mainNav li.selected a {
+.mainNav li.selected a, .mainNav li.selected .topLevelItem {
   font-family: Arial; }
 
 @media (max-width: 767px) {
-  .mainNav li a {
+  .mainNav li a, .mainNav li .topLevelItem {
     color: #999; }
-  .mainNav li.selected a {
+  .mainNav li.selected a, .mainNav li.selected .topLevelItem {
     color: #999; } }
 
 @media (min-width: 768px) {
   .mainNav li {
     background: transparent; }
-    .mainNav li a {
+    .mainNav li a, .mainNav li .topLevelItem {
       background: transparent;
       color: #999; }
+    .mainNav li .topLevelItem {
+      cursor: default; }
     .mainNav li.selected {
       background: transparent; }
-      .mainNav li.selected a {
+      .mainNav li.selected a, .mainNav li.selected .topLevelItem {
         background: transparent;
         color: #666666; } }
 
 @media (min-width: 1024px) {
-  .mainNav li a:focus, .mainNav li a:hover {
+  .mainNav li a:focus, .mainNav li a:hover, .mainNav li .topLevelItem:focus, .mainNav li .topLevelItem:hover {
     background-color: transparent;
     color: #666666; }
-  .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover {
+  .mainNav li.selected a, .mainNav li.selected a:focus, .mainNav li.selected a:hover, .mainNav li.selected .topLevelItem, .mainNav li.selected .topLevelItem:focus, .mainNav li.selected .topLevelItem:hover {
     color: #666666; }
-  .mainNav li.selected a:focus, .mainNav li.selected a:hover {
+  .mainNav li.selected a:focus, .mainNav li.selected a:hover, .mainNav li.selected .topLevelItem:focus, .mainNav li.selected .topLevelItem:hover {
     background-color: transparent; } }
 
 /* =============================================================================
@@ -1193,7 +1195,7 @@ body {
   margin-left: auto;
   color: #fff;
   font-family: Arial;
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center; }
   .callToAction:focus, .callToAction:hover {
@@ -1206,7 +1208,7 @@ body {
   @media (max-width: 767px) {
     .callToAction {
       height: auto;
-      line-height: 1.3em; } }
+      line-height: 1.3rem; } }
   @media (min-width: 768px) {
     .callToAction {
       height: 50px;
@@ -1430,10 +1432,8 @@ ul.hyphenated li {
         padding: 0 10px 0 30px;
         color: #333;
         font-family: Arial;
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 43px; }
-        .mainNav .hamb.clicked {
-          color: #333; }
       .mainNav ul {
         z-index: 190;
         position: relative;
@@ -1456,8 +1456,10 @@ ul.hyphenated li {
           .mainNav ul li:last-child a {
             padding-bottom: 3px; }
           .mainNav ul li a {
-            font-size: 0.8em;
-            text-align: center; } }
+            font-size: 0.8rem;
+            text-align: center; }
+      .mainNav.clicked .hamb {
+        color: #333; } }
   @media (min-width: 768px) {
     .mainNav li, .mainNav li a {
       height: 60px;
