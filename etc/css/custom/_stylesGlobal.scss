@@ -9,7 +9,7 @@
     margin-left: auto;
     color: $white;
     font-family: Arial;
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
     
@@ -25,7 +25,7 @@
     
     @include beforeTablet{
         height: auto;
-        line-height: 1.3em;
+        line-height: 1.3rem;
     }
     
     @include afterTablet{

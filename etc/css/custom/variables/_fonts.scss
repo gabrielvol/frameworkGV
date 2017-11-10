@@ -46,14 +46,14 @@ $mainFontStack:(
     //$fontFamiliesListMono
 );
 
-$mainFontSize: 1em;
-$mainFontSizeParagraphBT: 1em;
-$mainFontSizeParagraphAT: 1em;
-$mainFontSizeParagraphATL: 1em;
-$mainFontSizeAnchor: 1em;
-$headingMargin: 0 0 0.8em;
+$mainFontSize: 1rem;
+$mainFontSizeParagraphBT: 1rem;
+$mainFontSizeParagraphAT: 1rem;
+$mainFontSizeParagraphATL: 1rem;
+$mainFontSizeAnchor: 1rem;
+$headingMargin: 0 0 0.8rem;
 $textMargin: 0;
-$textMarginSibling: 0.8em 0 0;
+$textMarginSibling: 0.8rem 0 0;
 
 //Heading Sizes
 $fontSizesMapMobile:(
@@ -82,8 +82,8 @@ $fontSizesMapDesktop:(
 );
 
 // Useful Text Format
-$fontSizeReset: 1em;
-$lineHeightReset: 1em;
+$fontSizeReset: 1rem;
+$lineHeightReset: 1rem;
 
 /* =============================================================================
    Nav Fonts | Custom

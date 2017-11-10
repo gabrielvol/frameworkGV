@@ -160,7 +160,7 @@ ol{
 
     //Links
 a{
-    line-height: 1em;
+    line-height: 1rem;
     cursor: pointer;
     img{
         border: none;
@@ -176,7 +176,7 @@ a{
 img{
     background-color: $imgBgNeutralColour;
     border: none;
-    font: normal 11px/1em $arial;
+    font: normal 11px/1rem $arial;
     text-transform: uppercase;
     color: $greyXD;
     // Improves image quality when scaled in IE 7
