@@ -27,6 +27,9 @@
                 background: $bgNavItemAnchor;
                 color: $navFontColour;
             }
+            .topLevelItem{
+                cursor: default;
+            }
             &.selected{
                 background: $bgNavSelectedItem;
                 a, .topLevelItem{
