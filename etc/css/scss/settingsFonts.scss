@@ -44,8 +44,8 @@ p, li{
     }
 }
 a{
-    @include transition(0.7s, color);
     font-size: $mainFontSizeAnchor;
+    transition: background-color 0.7s, color 1s, text-shadow 1s;
 }
 
 // Font Families and Headings Values
