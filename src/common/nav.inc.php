@@ -3,7 +3,7 @@
     <ul class="mainMenu displayNoneBT unstyled horizontalAT clearfix">
         <li class="<?php if($navSelected == 1) echo "selected" ?>"><a href="/nuevo/" class="displayBlockBT"><?php echo _("Inicio"); ?></a></li>
         
-        <li class="nos <?php if($navSelected == 1) echo "selected" ?>">
+        <li class="nos hasSub <?php if($navSelected == 1) echo "selected" ?>">
             <a href="/nuevo/nosotros/" id="nosoNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="displayBlock upperCase alignCenter">
                 <?php echo _("Nosotros"); ?>
             </a>
@@ -12,7 +12,7 @@
             </ul>
         </li>
         
-        <li class="nos <?php if($navSelected == 1) echo "selected" ?>">
+        <li class="nos hasSub <?php if($navSelected == 1) echo "selected" ?>">
             <p href="/nuevo/nosotros/" id="nosoNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem upperCase alignCenter">
                 <?php echo _("Nosotros"); ?>
             </p>
