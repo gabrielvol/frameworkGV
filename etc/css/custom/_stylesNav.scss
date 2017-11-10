@@ -97,7 +97,7 @@ $navWidthBT: 200px;
                 margin-top: 0px;
             }
             
-            &.selected{
+            &.current{
                 a{
                     cursor: default;                    
                 }
@@ -124,7 +124,7 @@ $navWidthBT: 200px;
 
                 & + li{}
 
-                &.selected{
+                &.current{
                     a{}
                 }
             }
