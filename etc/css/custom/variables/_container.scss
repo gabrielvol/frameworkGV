@@ -5,19 +5,17 @@ $grid-gutter-width: 30px;
 
 //Container Sizes
 $containerMobileValue: 300px; /* Mobile / Container: 300px */
-$containerMobileLandscapeValue: 90%;
+$containerMobileLandscapeValue: 85%;
 $containerTabletValue: 720px; /* iPad */
 $containerTabletLandscapeValue: 1000px; /* iPad Landscape */
-$containerLaptopValue: $containerTabletLandscapeValue; /* Laptop */
-$containerDesktopValue: $containerLaptopValue; /* Desktop */
-$containerDesktopLargeValue: $containerLaptopValue; /* Big Screens */
+$containerDesktopValue: $containerTabletLandscapeValue; /* Desktop */
+$containerDesktopLargeValue: $containerTabletLandscapeValue; /* Big Screens */
 
 //Container Center Negative Values
 $cMHalf:  calc(#{$containerMobileValue}/2); /* Mobile Half */
 $cMLHalf: calc(#{$containerMobileLandscapeValue}/2); /* Mobile Landscape Half */
 $cTHalf:  calc(#{$containerTabletValue}/2); /* Tablet Half*/
 $cTLHalf: calc(#{$containerTabletLandscapeValue}/2); /* Tablet Landscape Half*/
-$cLHalf:  calc(#{$containerLaptopValue}/2); /* Laptop Half */
 $cDHalf:  calc(#{$containerDesktopValue}/2); /* Desktop Half */
 $cDLHalf: calc(#{$containerDesktopLargeValue}/2); /* Desktop Large Half*/
 
@@ -25,6 +23,5 @@ $cMHneg: calc(-1 * #{$cMHalf}); /* Mobile Half */
 $cMLHneg: calc(-1 * #{$cMLHalf}); /* Mobile Landscape Half */
 $cTHneg: calc(-1 * #{$cTHalf}); /* Tablet Half*/
 $cTLHneg: calc(-1 * #{$cTLHalf}); /* Tablet Landscape Half*/
-$cLHneg: calc(-1 * #{$cLHalf}); /* Laptop Half */
 $cDHneg: calc(-1 * #{$cDHalf}); /* Desktop Half */
 $cDLHneg: calc(-1 * #{$cDLHalf}); /* Desktop Large Half*/

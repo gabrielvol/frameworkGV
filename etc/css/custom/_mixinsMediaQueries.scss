@@ -8,7 +8,6 @@ $mobileLMax: 767px;
 $tabletMin: 768px;
 $tabletPMax: 1023px;
 $tabletLMin: 1024px;
-$laptopMin: 1025px;
 $tabletMax: 1199px;
 $desktopMin: 1200px;
 $desktopLargeMin: 1600px;
@@ -137,10 +136,6 @@ $desktopLargeMin: 1600px;
     
 @mixin afterDesktop{
     @media (min-width: #{$desktopMin}){@content;}}
-
-/* Laptop + */
-@mixin afterLaptop{
-    @media (min-width: #{$laptopMin}){@content;}}
     
 /* Big Screens + */
 @mixin afterDesktopLarge{

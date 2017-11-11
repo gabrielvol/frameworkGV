@@ -15,8 +15,6 @@
         width: $containerTabletValue}
     @include afterTabletLandscape{
         width: $containerTabletLandscapeValue}
-    @include afterLaptop{
-        width: $containerLaptopValue}
     @include afterDesktop{
         width: $containerDesktopValue}
     @include afterDesktopLarge{
@@ -39,11 +37,6 @@
             margin-left: $cTHneg;
         }
         @include afterTabletLandscape{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
-        @include afterLaptop{
             position: absolute;
             left: 50%;   
             margin-left: $cTLHneg;
@@ -82,11 +75,6 @@
             left: 50%;   
             margin-left: $cTLHneg;
         }
-        @include afterLaptop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
         @include afterDesktop{
             position: absolute;
             left: 50%;   
@@ -109,11 +97,6 @@
             left: 50%;   
             margin-left: $cTLHneg;
         }
-        @include afterLaptop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
         @include afterDesktop{
             position: absolute;
             left: 50%;   
@@ -127,28 +110,6 @@
     }
     &.centerAbsATL{
         @include afterTabletLandscape{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
-        @include afterLaptop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
-        @include afterDesktop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDHneg;
-        }
-        @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDLHneg;
-        }
-    }
-    &.centerAbsAL{
-        @include afterLaptop{
             position: absolute;
             left: 50%;   
             margin-left: $cTLHneg;

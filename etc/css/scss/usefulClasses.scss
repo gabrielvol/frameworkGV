@@ -37,8 +37,10 @@
     }
 
     //Display
-    article, details, figcaption, figure, hgroup, main, menu, nav, summary, button,
-    .displayBlock, .callToAction{display: $block}
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button,
+    .labelName, .errorForm, .callToAction,
+    .displayBlock{display: $block}
+    
     .displayInline{display: $inline}
     .displayInlineBlock{display: $inlineBlock}
     .displayNone{display: $none}
@@ -48,7 +50,8 @@
         vertical-align: middle;
     }
     article, details, figcaption, figure, hgroup, main, menu, nav, summary, button, label, input, select, textarea,
-    .borderBox, .displayBlock, .callToAction{
+    .callToAction, .labelName, .sug, .status.ok, .mandatoryMessage,
+    .borderBox,{
         &, &::before, &::after{
             box-sizing: border-box;
         }

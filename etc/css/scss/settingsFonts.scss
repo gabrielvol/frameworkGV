@@ -57,6 +57,6 @@ a{
 @include afterTablet{
     @include fontCustomHeadingsSizesGeneratorTablet;   
 }
-@include afterLaptop{
+@include afterDesktop{
     @include fontCustomHeadingsSizesGeneratorDesktop;
 }
