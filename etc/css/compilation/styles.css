@@ -1330,7 +1330,7 @@ article, article::before, article::after, details, details::before, details::aft
   @media (max-width: 767px) {
     .callToAction {
       height: auto;
-      line-height: 1.3rem; } }
+      line-height: 1.3; } }
   @media (min-width: 768px) {
     .callToAction {
       height: 50px;

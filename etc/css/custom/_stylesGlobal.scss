@@ -25,7 +25,7 @@
     
     @include beforeTablet{
         height: auto;
-        line-height: 1.3rem;
+        line-height: 1.3;
     }
     
     @include afterTablet{
