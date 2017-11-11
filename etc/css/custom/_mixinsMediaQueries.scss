@@ -1,5 +1,5 @@
 /* =============================================================================
-   Media Queries | Custom
+   Media Queries Variables | Custom [mixinsMediaQueries.scss]
    ========================================================================== */
 $iPhone6Min: 375px;
 $mobileMax: 420px;
@@ -16,6 +16,9 @@ $desktopLargeMin: 1600px;
 @media (min-width: 100px) and (max-width: 100px){}
 */
 
+/* =============================================================================
+   Media Queries Mixins | Custom [mixinsMediaQueries.scss]
+   ========================================================================== */
 /* Mobile */
 @mixin mobileOnly{
     @media (max-width: #{$mobileMax}){@content;}}
@@ -142,7 +145,7 @@ $desktopLargeMin: 1600px;
     @media (min-width: #{$desktopLargeMin}){@content;}}
 
 /* =============================================================================
-   iPhone & iPads
+   iPhone & iPads Mixins | Custom [mixinsMediaQueries.scss]
    ========================================================================== */
 /* iPhone 4 & 4S Only */
 @mixin iPhone4Only{

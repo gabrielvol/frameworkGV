@@ -1,5 +1,5 @@
 /* =============================================================================
-   Border Helpers Mixins | Etc
+   Border Helpers Mixins | Etc [mixinsBorders.scss]
    ========================================================================== */
     //Border Style    
 //A,T,R,B,L = all,top,right,bottom,left
@@ -31,7 +31,9 @@
     border-color: $borderColourValue;
 }
 
-    // Border Radius 
+/* =============================================================================
+   Border Radius Mixins | Etc [mixinsBorders.scss]
+   ========================================================================== */
 //T,R,B,L = top,right,bottom,left
 
 @mixin borderRadius($borderRadiusMixinValue: $borderRadiusValue){
@@ -62,6 +64,9 @@
     border-radius: 0 0 0 $borderRadiusMixinValue;
 }
 
+/* =============================================================================
+   Border Separation Mixins | Etc [mixinsBorders.scss]
+   ========================================================================== */
     //Border separation with equal padding and margin
 @mixin PBMsT($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $mainBcColour, $PBMSborderStyle: solid){
     padding-top: $PBMSsepValue;
@@ -84,7 +89,9 @@
     margin-left: $PBMSsepValue;
 }
 
-    //Fancy Horizontal Line
+/* =============================================================================
+   Border Fancy Horizontal Line Mixins | Etc [mixinsBorders.scss]
+   ========================================================================== */
 @mixin fancyHorizontalLines($border: 1px solid white, $width: 100px, $separation: 15px){
     &{
         line-height: 0.5;

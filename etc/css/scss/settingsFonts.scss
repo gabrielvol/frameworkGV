@@ -1,24 +1,14 @@
 /* =============================================================================
-   Font Styles | Etc
+   Font Settings | Etc [settingsFonts.scss]
    ========================================================================== */
-html{
-    font-size: 100%;
-    text-rendering: optimizeLegibility;
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, select, textarea, blockquote, table{
+    font-family: $mainFontStack;
+    font-weight: $mainFontWeight;
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
 }
-body{
-    @extend %bodyFontSettings!optional;
-    -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input,
-select, textarea, blockquote, table{
-    @extend %mainFontsSettings;
-}
-
-//Text Margins and Line-heights
 h1, h2, h3, h4, h5, h6{
     margin: $headingMargin;
-    line-height: 1.2rem;
 }
 p, dl, legend{
     margin: $textMargin;

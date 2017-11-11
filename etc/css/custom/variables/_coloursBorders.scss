@@ -1,0 +1,36 @@
+/* =============================================================================
+   Border Colours Variables | Custom [coloursBorders.scss]
+   ========================================================================== */
+///**Border Colours:** 
+    ///Aquí se declaran los colores de bordes del sitio.
+$borderColoursMap:(
+    white: $white,
+    black: $black,
+    error: $errorColour,
+    //redColour: $redColour,
+    //green: $green,
+    greyXXL: $greyXXL,
+    greyXL: $greyXL,
+    greyL: $greyL,
+    grey: $grey,
+    greyD: $greyD,
+    greyXD: $greyXD
+);
+
+$bcWhite: map-get($borderColoursMap, white);
+$bcBlack: map-get($borderColoursMap, black);
+$bcError: map-get($borderColoursMap, error);
+//$bcRedColour: map-get($borderColoursMap, redColour);
+//$bgGreen: map-get($borderColoursMap, green);
+$bcGreyXXL: map-get($borderColoursMap, greyXXL);
+$bcGreyXL: map-get($borderColoursMap, greyXL);
+$bcGreyL: map-get($borderColoursMap, greyL);
+$bcGrey: map-get($borderColoursMap, grey);
+$bcGreyD: map-get($borderColoursMap, greyD);
+$bcGreyXD: map-get($borderColoursMap, greyXD);
+
+$mainBcColour: $bcGrey;
+$mainBcColourHover: lighten($mainBcColour, 15%);
+
+$secondaryBcColour: $bcGreyD;
+$secondaryBcColourHover: darken($mainBcColour, 15%);

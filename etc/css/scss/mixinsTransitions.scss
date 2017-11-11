@@ -1,5 +1,5 @@
 /* =============================================================================
-   Transition Mixins | Etc
+   Transition Mixins | Etc [mixinsTransitions.scss]
    ========================================================================== */
 @mixin transition($transitionDuration: 1s, $transitionProperty: all, $transitionFunction: ease){
     transition: $transitionProperty $transitionDuration $transitionFunction;

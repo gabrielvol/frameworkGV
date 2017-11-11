@@ -1,0 +1,11 @@
+/* =============================================================================
+   Colour Placeholders | Custom [coloursPlaceholders.scss]
+   ========================================================================== */
+///**Colours Map Custom Hover:** 
+    ///Aquí se agregan las pseudoclases `:focus` y `:hover` correspondientes al mapa `$coloursMapCustomHover` que se encuentra en `[/custom/variables/_colours.scss]`.
+
+%focusHover-orange{    
+    &:focus, &:hover{
+        color: #ff0000;
+    }
+}

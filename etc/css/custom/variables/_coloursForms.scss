@@ -1,0 +1,32 @@
+/* =============================================================================
+   Forms Colours Variables | Custom [coloursForms.scss]
+   ========================================================================== */
+///**Forms:** 
+    ///Aquí se declaran las variables de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
+    ///con sus `:hover`.
+$formLabelFontColour: $mainFontColour;
+$formLabelFontColourHover: darken($mainFontColour, 15%);
+
+$formInputFontColour: $formLabelFontColourHover;
+$formInputFontColourHover: $formInputFontColour;
+
+$formPlaceholderFontColour: lighten($mainFontColour, 10%);
+
+$formInputBcColour: $mainBcColour;
+$formInputBcColourHover: $mainBcColourHover;
+$formInputBgColour: $white;
+$formInputBgColourHover: $formInputBgColour;
+
+$formSubmitFontColour: $black;
+$formSubmitFontColourHover: $white;
+$formSubmitBcColour: $mainBcColour;
+$formSubmitBcColourHover: $formSubmitBcColour;
+$formSubmitBgColour: $mainBgColour;
+$formSubmitBgColourHover: $formSubmitBgColour;
+
+    //Validation
+$invalidMandatoryMessageBgColour: $bgError;
+$invalidMandatoryMessageFontColour: $white;
+
+    //Status Messages
+$statusOKpopUpBgColour: $bgWhite;

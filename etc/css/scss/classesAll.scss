@@ -1,0 +1,151 @@
+/* =============================================================================
+   Classes ALL | Etc [classesAll.scss]
+   ========================================================================== */
+    //Accessibility
+#go-main-content{
+    @include posTL(auto, -10000px);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+    // Clearfix
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{display: inline-block}
+* html .clearfix{height: 1%}
+.clearfix{display: block}
+
+@if $stylesPosSizingDisplayMaskCursorsALL == "on"{
+    //Positioning
+    .pRel{position: relative}
+    .pAbs{position: absolute}
+    .clear{clear: both}
+
+    //Sizing
+    .autoWidth{width: auto}
+    .autoHeight{height: auto}
+    .fullWidth{width: 100%}
+    .fullHeight{
+        position: absolute;
+        @include posTB(0, 0);
+    }
+    .coverAll{
+        position: absolute;
+        @include posTRBL(0, 0, 0, 0);
+    }
+
+    //Display
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button,
+    .callToAction, .displayBlock{display: $block}
+    
+    .displayInline{display: $inline}
+    .displayInlineBlock{display: $inlineBlock}
+    .displayNone{display: $none}
+    .invisible{visibility: hidden}
+    .centerVertically{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary, button, label, input, select, textarea,
+    .callToAction, .borderBox,{
+        &, &::before, &::after{
+            box-sizing: border-box;
+        }
+    }
+
+    //Masks
+    .mask{
+        position: relative;
+        overflow: hidden;
+    }
+
+    //Cursors
+    .cursorDefault{cursor: default}
+    .cursorPointer{cursor: pointer}
+    .cursorHelp{cursor: help}
+    .cursorNone{cursor: none}
+}
+
+@if $stylesListsFloatsALL == "on"{
+    //Lists and floats
+    .unstyled, .horizontal, .hyphenated,
+    %unstyled{list-style: $none}
+    .floatLeft, .horizontal li{float: $left}
+    .floatRight, .horizontal li.floatRight,
+    .horizontal.right li{float: $right}
+    .horizontalCenter, %horizontalCenter{
+        list-style: none;
+        margin-right: $auto;
+        margin-left: $auto;
+        text-align: center;
+        li{
+            display: inline;
+            > *{
+                display: inline-block;            
+            }
+        }
+    }
+    .horizontalCenterFlex{
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .floatNone{float: $none}
+    %horizontal{
+        list-style: $none;        
+        li{
+            float: $left;        
+            &.floatRight{float: $right;}
+        }    
+        &.right{
+            li{float: $right;}
+        }
+    }
+}
+
+/* =============================================================================
+   Spacing Helpers ALL | Etc [classesAll.scss]
+   ========================================================================== */
+@if $stylesSpacingALL == "on"{
+    //Spacing Helpers
+    @include spacingHelpersClassesGenerator;
+    .mra,.mha{margin-right: $auto}
+    .mla,.mha{margin-left: $auto}
+}
+
+/* =============================================================================
+   Flexbox Classes ALL | Etc [classesAll.scss]
+   ========================================================================== */
+@if $stylesFlexboxALL == "on"{
+    //Flexbox
+    .displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .flexColumn{flex-direction: column}
+    .flexNoWrap{flex-wrap: nowrap}
+    .flexJustifyEnd{justify-content: flex-end}
+    .flexJustifyCenter{justify-content: center}
+    .flexJustifyBetween{justify-content: space-between}
+    .flexJustifyAround{justify-content: space-around}
+    .flexAlignContentEnd{align-content: flex-end}
+    .flexAlignContentCenter{align-content: center}
+    .flexAlignContentBetween{align-content: space-between}
+    .flexAlignContentAround{align-content: space-around}
+    .flexAlignContentStretch{align-content: stretch}
+    .flexAlignItemsEnd{align-items: flex-end}
+    .flexAlignItemsCenter{align-items: center}
+    .flexAlignItemsBaseline{align-items: baseline}
+    .flexAlignItemsStretch{align-items: stretch}
+    .flexHorizontal{list-style: $none}
+}

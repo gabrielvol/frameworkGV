@@ -1,0 +1,54 @@
+/* =============================================================================
+   Elements Reset/Settings | Etc [resetMain.scss]
+   ========================================================================== */
+iframe{
+    border: $none;
+}
+audio, canvas, progress, video{
+    *display: inline;
+    *zoom: 1;
+}
+
+    //Lists
+ul, ol, li, dd{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: disc inside;
+}
+ol{
+    list-style: decimal inside;
+}
+
+    //Links
+a{
+    line-height: 1rem;
+    cursor: pointer;
+    img{
+        border: none;
+    }
+}
+a{
+    &, &:hover{        
+        text-decoration: none;
+    }
+}
+
+    //Images
+img{
+    background-color: $imgBgNeutralColour;
+    border: none;
+    font: normal 11px/1rem $arial;
+    text-transform: uppercase;
+    color: $greyXD;
+    // Improves image quality when scaled in IE 7
+    -ms-interpolation-mode: bicubic;
+}
+img[src$=".png"], img[src$=".gif"], img[src$=".svg"]{
+    background-color: transparent;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}

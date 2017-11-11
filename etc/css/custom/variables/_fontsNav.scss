@@ -1,4 +1,6 @@
 /* =============================================================================
-   Index Styles | Custom [stylesIndex.scss]
+   Nav Fonts Variables | Custom [fontsNav.scss]
    ========================================================================== */
- 
+$navFontFamily: $mainFontFamily;
+$navSelectedFontFamily: $navFontFamily;
+$hamburgerFontFamily: $arial;

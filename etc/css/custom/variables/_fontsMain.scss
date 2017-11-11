@@ -1,5 +1,5 @@
 /* =============================================================================
-   Font Variables | Custom
+   Fonts Main Variables | Custom [fontsMain.scss]
    ========================================================================== */
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
@@ -46,56 +46,44 @@ $mainFontStack:(
     //$fontFamiliesListMono
 );
 
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
 $mainFontSize: 1rem;
 $mainFontSizeParagraphBT: 1rem;
 $mainFontSizeParagraphAT: 1rem;
 $mainFontSizeParagraphATL: 1rem;
 $mainFontSizeAnchor: 1rem;
-$headingMargin: 0 0 0.8rem;
+$headingMargin: 0 0 0.8em;
 $textMargin: 0;
-$textMarginSibling: 0.8rem 0 0;
+$textMarginSibling: 0.8em 0 0;
 
 //Heading Sizes
 $fontSizesMapMobile:(
-    $h1List: 1.6em,
-    $h2List: 1.5em,
-    $h3List: 1.4em,
-    $h4List: 1.3em,
-    $h5List: 1.3em,
-    $h6List: 1.3em
+    $h1List: 1.6rem,
+    $h2List: 1.5rem,
+    $h3List: 1.4rem,
+    $h4List: 1.3rem,
+    $h5List: 1.3rem,
+    $h6List: 1.3rem
 );
 $fontSizesMapTablet:(
-    $h1List: 1.6em,
-    $h2List: 1.5em,
-    $h3List: 1.4em,
-    $h4List: 1.3em,
-    $h5List: 1.3em,
-    $h6List: 1.3em
+    $h1List: 1.6rem,
+    $h2List: 1.5rem,
+    $h3List: 1.4rem,
+    $h4List: 1.3rem,
+    $h5List: 1.3rem,
+    $h6List: 1.3rem
 );
 $fontSizesMapDesktop:(
-    $h1List: 2.4em,
-    $h2List: 2.2em,
-    $h3List: 2em,
-    $h4List: 1.8em,
-    $h5List: 1.6em,
-    $h6List: 1.4em
+    $h1List: 2.4rem,
+    $h2List: 2.2rem,
+    $h3List: 2rem,
+    $h4List: 1.8rem,
+    $h5List: 1.6rem,
+    $h6List: 1.4rem
 );
 
 // Useful Text Format
 $fontSizeReset: 1rem;
 $lineHeightReset: 1rem;
-
-/* =============================================================================
-   Nav Fonts | Custom
-   ========================================================================== */
-$navFontFamily: $mainFontFamily;
-$navSelectedFontFamily: $navFontFamily;
-$hamburgerFontFamily: $arial;
-
-/* =============================================================================
-   Form Fonts | Custom
-   ========================================================================== */
-$formLabelFontFamily: $mainFontFamily;
-$formSugFontFamily: $arial;
-$formInputFontFamily: $mainFontFamily;
-$formSubmitFontFamily: $mainFontFamily;

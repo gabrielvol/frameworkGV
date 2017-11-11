@@ -1,5 +1,5 @@
 /* =============================================================================
-   Activators | Custom
+   Classes Activators | Custom [activators.scss]
    ========================================================================== */
 //All
 $stylesSpacingALL: on;
@@ -35,7 +35,7 @@ $stylesBackgroundsBanMLO: off;
 $stylesSpacingBT: off;
 $stylesPosSizingDisplayBT: on;
 $stylesFlexboxBT: off;
-$stylesListsFloatsBT: off;
+$stylesListsFloatsBT: on;
 $stylesTextBT: off;
 $stylesBackgroundsBanBT: off;
 
@@ -57,7 +57,7 @@ $stylesBackgroundsBanTO: off;
 
 //After Tablet AT
 $stylesSpacingAT: off;
-$stylesPosSizingDisplayAT: off;
+$stylesPosSizingDisplayAT: on;
 $stylesFlexboxAT: off;
 $stylesListsFloatsAT: on;
 $stylesTextAT: off;

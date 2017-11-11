@@ -1,0 +1,21 @@
+/* =============================================================================
+   Nav Colours Variables | Custom [coloursNav.scss]
+   ========================================================================== */
+    //Fonts
+$navFontColour: $mainFontColour;
+$navFontColourHover: $mainFontColourHover;
+$navSelectedFontColour: $navFontColourHover;
+
+$hamburgerFontColour: $greyXD;
+$hamburgerFontColourClicked: $hamburgerFontColour;
+$navFontColourBT: $navFontColour;
+$navSelectedFontColourBT: $navFontColour;
+
+    //Background Colours
+$bgNavItem: transparent;
+$bgNavItemAnchor: transparent;
+$bgNavItemAnchorHover: transparent;
+
+$bgNavSelectedItem: transparent;
+$bgNavSelectedAnchor: transparent;
+$bgNavSelectedAnchorHover: transparent;

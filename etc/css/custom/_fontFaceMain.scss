@@ -1,5 +1,5 @@
 /* =============================================================================
-   Font Settings | Custom
+   Main Font Faces | Custom [fontFaceMain.scss]
    ========================================================================== */
 // Font-face
 /*
@@ -13,16 +13,3 @@
     font-display: swap;
 }
 */
-
-//Main font settings
-%bodyFontSettings{}
-%mainFontsSettings{
-    font-family: $mainFontStack;
-    font-weight: 400;
-    font-size: $mainFontSize;
-    line-height: 1.4;
-}
-
-//Useful Text Classes
-.textShadow{text-shadow: 1px 1px 5px $greyXD}
-.letterSpacing{letter-spacing: 0.05rem}

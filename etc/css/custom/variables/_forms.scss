@@ -1,5 +1,5 @@
 /* =============================================================================
-   Forms Variables | Custom
+   Forms Variables | Custom [forms.scss]
    ========================================================================== */
 //Labels activator
 $labelsVisible: on;
@@ -7,26 +7,27 @@ $formInsideLabel: on;
 $formSug: on;
 
 //Responsive Values
-    //Widths
-$formLabelWidthMO:  270px!important;
-$formLabelWidthBT:  90%!important;
-$formLabelWidthTO:  520px!important;
-$formLabelWidthATL: 520px; //No debe llevar !important
-$formLabelWidthAD:  520px; //No debe llevar !important
+    // Form
+$formWidthMO:  270px!important;
+$formWidthBT:  90%!important;
+$formWidthTO:  520px!important;
+$formWidthATL: 520px; //No debe llevar !important
+$formWidthAD:  520px; //No debe llevar !important
+    
+    // Labels
+$formLabelWidthMO: $formWidthMO;
+$formLabelWidthBT: $formWidthBT;
+$formLabelWidthTO: $formWidthTO;
+$formLabelWidthATL: $formWidthATL;
+$formLabelWidthAD: $formWidthAD;
 
-$formWidthMO:  $formLabelWidthMO;
-$formWidthBT:  $formLabelWidthBT;
-$formWidthTO:  $formLabelWidthTO;
-$formWidthATL: $formLabelWidthATL;
-$formWidthAD:  $formLabelWidthAD;
-
-    //Heights    
 $formLabelHeightMO:  30px;
 $formLabelHeightBT:  $formLabelHeightMO;
 $formLabelHeightTO:  $formLabelHeightBT;
 $formLabelHeightATL: $formLabelHeightTO;
 $formLabelHeightAD:  $formLabelHeightATL;
 
+    // Sug
 $formLabelSugHeightBT:  20px;
 $formLabelSugHeightTO:  $formLabelSugHeightBT;
 $formLabelSugHeightATL: $formLabelSugHeightTO;
@@ -37,7 +38,7 @@ $formLabelContentsHeightTO:  $formLabelContentsHeightBT;
 $formLabelContentsHeightATL: $formLabelContentsHeightTO; //No debe llevar !important
 $formLabelContentsHeightAD:  $formLabelContentsHeightATL; //No debe llevar !important
 
-    //Inputs
+    // Inputs
 $formInputWidthMO:  $formLabelWidthMO;
 $formInputWidthBT:  $formLabelWidthBT;
 $formInputWidthTO:  $formLabelWidthTO;
@@ -49,6 +50,9 @@ $formInputHeightBT:  $formLabelHeightBT;
 $formInputHeightTO:  $formLabelHeightTO;
 $formInputHeightATL: $formLabelHeightATL; //No debe llevar !important
 $formInputHeightAD:  $formLabelHeightAD; //No debe llevar !important
+    
+    // Submit
+$formSubmitWidthBT: ;
 
 $formSubmitHeightValueBT: 50px;
 $formSubmitLineHeightValueBT: 50px;

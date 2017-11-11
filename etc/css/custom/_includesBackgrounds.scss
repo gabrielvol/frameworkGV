@@ -1,4 +1,5 @@
 /* =============================================================================
-   Index Styles | Custom [stylesIndex.scss]
+   Backgrounds Includes | Custom [includesBackgrounds.scss]
    ========================================================================== */
- 
+@include backgroundColourClassesGenerator;
+@include backgroundColourHoverClassesGenerator;

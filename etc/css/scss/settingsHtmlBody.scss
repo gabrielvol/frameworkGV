@@ -1,0 +1,16 @@
+/* =============================================================================
+   Html Body Settings | Etc [settingsHtmlBody.scss]
+   ========================================================================== */
+html, body{
+    margin: 0;
+    padding: 0;
+    color: $mainFontColour;
+}
+html{
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+}
+body{
+    background-color: $bodyBgColour;
+    -webkit-font-smoothing: antialiased;
+}

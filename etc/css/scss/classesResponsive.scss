@@ -1,15 +1,11 @@
 /* =============================================================================
-   Useful Classes Responsive | Etc
+   Classes Responsive | Etc [classesResponsive.scss]
    ========================================================================== */
-   //Mobile Only Styles
-@include mobileOnly{
-    @if $stylesSpacingMO == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorMO;    
-        .mraMO,.mhaMO{margin-right: $auto}
-        .mlaMO,.mhaMO{margin-left: $auto}
-    }
-    
+
+/* =============================================================================
+   Mobile Only Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+@include mobileOnly{    
     @if $stylesPosSizingDisplayMO == "on"{
         //Positioning
         .pRelMO{position: relative}
@@ -28,34 +24,6 @@
         .displayNoneMO, .hideMO{display: $none}
         .contentBoxMO{box-sizing: content-box}
         .borderBoxMO{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxMO == "on"{
-        //Flexbox
-        .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnMO{flex-direction: column}
-        .flexNoWrapMO{flex-wrap: nowrap}
-        .flexJustifyEndMO{justify-content: flex-end}
-        .flexJustifyCenterMO{justify-content: center}
-        .flexJustifyBetweenMO{justify-content: space-between}
-        .flexJustifyAroundMO{justify-content: space-around}
-        .flexAlignContentEndMO{align-content: flex-end}
-        .flexAlignContentCenterMO{align-content: center}
-        .flexAlignContentBetweenMO{align-content: space-between}
-        .flexAlignContentAroundMO{align-content: space-around}
-        .flexAlignContentStretchMO{align-content: stretch}
-        .flexAlignItemsEndMO{align-items: flex-end}
-        .flexAlignItemsCenterMO{align-items: center}
-        .flexAlignItemsBaselineMO{align-items: baseline}
-        .flexAlignItemsStretchMO{align-items: stretch}
-        .flexHorizontalMO{list-style: $none}
     }
     
     @if $stylesListsFloatsMO == "on"{
@@ -98,8 +66,7 @@
     @if $stylesBackgroundsBanMO == "on"{
         //Backgrounds, border and images    
         .banMO{border: $none}
-        .noBackgroundMO{background: $none}
-        .noBackgroundMO, .bgNoneMO{
+        .bgNoneMO{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -107,19 +74,51 @@
         .bgTransparentMO{background-color: $transparent}
         .bgNoImageMO{background-image: $none}
     }
+    
+    @if $stylesSpacingMO == "on"{
+/* =============================================================================
+   Mobile Only Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorMO;    
+        .mraMO,.mhaMO{margin-right: $auto}
+        .mlaMO,.mhaMO{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxMO == "on"{
+/* =============================================================================
+   Mobile Only Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+        .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnMO{flex-direction: column}
+        .flexNoWrapMO{flex-wrap: nowrap}
+        .flexJustifyEndMO{justify-content: flex-end}
+        .flexJustifyCenterMO{justify-content: center}
+        .flexJustifyBetweenMO{justify-content: space-between}
+        .flexJustifyAroundMO{justify-content: space-around}
+        .flexAlignContentEndMO{align-content: flex-end}
+        .flexAlignContentCenterMO{align-content: center}
+        .flexAlignContentBetweenMO{align-content: space-between}
+        .flexAlignContentAroundMO{align-content: space-around}
+        .flexAlignContentStretchMO{align-content: stretch}
+        .flexAlignItemsEndMO{align-items: flex-end}
+        .flexAlignItemsCenterMO{align-items: center}
+        .flexAlignItemsBaselineMO{align-items: baseline}
+        .flexAlignItemsStretchMO{align-items: stretch}
+        .flexHorizontalMO{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   After Mobile Landscape Styles
+   After Mobile Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include afterMobileLandscape{
-    @if $stylesSpacingAML == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorAML;
-        .mraAML,.mhaAML{margin-right: $auto}
-        .mlaAML,.mhaAML{margin-left: $auto}
-    }
-    
+@include afterMobileLandscape{    
     @if $stylesPosSizingDisplayAML == "on"{
         //Positioning
         .pRelAML{position: relative}
@@ -138,34 +137,6 @@
         .displayNoneAML, .hideAML{display: $none}
         .contentBoxAML{box-sizing: content-box}
         .borderBoxAML{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxAML == "on"{
-        //Flexbox
-        .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnAML{flex-direction: column}
-        .flexNoWrapAML{flex-wrap: nowrap}
-        .flexJustifyEndAML{justify-content: flex-end}
-        .flexJustifyCenterAML{justify-content: center}
-        .flexJustifyBetweenAML{justify-content: space-between}
-        .flexJustifyAroundAML{justify-content: space-around}
-        .flexAlignContentEndAML{align-content: flex-end}
-        .flexAlignContentCenterAML{align-content: center}
-        .flexAlignContentBetweenAML{align-content: space-between}
-        .flexAlignContentAroundAML{align-content: space-around}
-        .flexAlignContentStretchAML{align-content: stretch}
-        .flexAlignItemsEndAML{align-items: flex-end}
-        .flexAlignItemsCenterAML{align-items: center}
-        .flexAlignItemsBaselineAML{align-items: baseline}
-        .flexAlignItemsStretchAML{align-items: stretch}
-        .flexHorizontalAML{list-style: $none}
     }
     
     @if $stylesListsFloatsAML == "on"{
@@ -204,12 +175,11 @@
         }
         .upperCaseAML{text-transform: uppercase}
     }
-        
+    
     @if $stylesBackgroundsBanAML == "on"{
         //Backgrounds, border and images    
         .banAML{border: $none}
-        .noBackgroundAML{background: $none}
-        .noBackgroundAML, .bgNoneAML{
+        .bgNoneAML{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -217,19 +187,51 @@
         .bgTransparentAML{background-color: $transparent}
         .bgNoImageAML{background-image: $none}
     }
+    
+    @if $stylesSpacingAML == "on"{
+/* =============================================================================
+   After Mobile Landscape Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        @include spacingHelpersClassesGeneratorAML;
+        .mraAML,.mhaAML{margin-right: $auto}
+        .mlaAML,.mhaAML{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxAML == "on"{
+/* =============================================================================
+   After Mobile Landscape Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+        .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnAML{flex-direction: column}
+        .flexNoWrapAML{flex-wrap: nowrap}
+        .flexJustifyEndAML{justify-content: flex-end}
+        .flexJustifyCenterAML{justify-content: center}
+        .flexJustifyBetweenAML{justify-content: space-between}
+        .flexJustifyAroundAML{justify-content: space-around}
+        .flexAlignContentEndAML{align-content: flex-end}
+        .flexAlignContentCenterAML{align-content: center}
+        .flexAlignContentBetweenAML{align-content: space-between}
+        .flexAlignContentAroundAML{align-content: space-around}
+        .flexAlignContentStretchAML{align-content: stretch}
+        .flexAlignItemsEndAML{align-items: flex-end}
+        .flexAlignItemsCenterAML{align-items: center}
+        .flexAlignItemsBaselineAML{align-items: baseline}
+        .flexAlignItemsStretchAML{align-items: stretch}
+        .flexHorizontalAML{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   Mobile Landscape Only Styles
+   Mobile Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include mobileLandscapeOnly{
-    @if $stylesSpacingMLO == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorMLO;
-        .mraMLO,.mhaMLO{margin-right: $auto}
-        .mlaMLO,.mhaMLO{margin-left: $auto}
-    }
-    
+@include mobileLandscapeOnly{    
     @if $stylesPosSizingDisplayMLO == "on"{
         //Positioning
         .pRelMLO{position: relative}
@@ -248,34 +250,6 @@
         .displayNoneMLO, .hideMLO{display: $none}
         .contentBoxMLO{box-sizing: content-box}
         .borderBoxMLO{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxMLO == "on"{
-        //Flexbox
-        .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnMLO{flex-direction: column}
-        .flexNoWrapMLO{flex-wrap: nowrap}
-        .flexJustifyEndMLO{justify-content: flex-end}
-        .flexJustifyCenterMLO{justify-content: center}
-        .flexJustifyBetweenMLO{justify-content: space-between}
-        .flexJustifyAroundMLO{justify-content: space-around}
-        .flexAlignContentEndMLO{align-content: flex-end}
-        .flexAlignContentCenterMLO{align-content: center}
-        .flexAlignContentBetweenMLO{align-content: space-between}
-        .flexAlignContentAroundMLO{align-content: space-around}
-        .flexAlignContentStretchMLO{align-content: stretch}
-        .flexAlignItemsEndMLO{align-items: flex-end}
-        .flexAlignItemsCenterMLO{align-items: center}
-        .flexAlignItemsBaselineMLO{align-items: baseline}
-        .flexAlignItemsStretchMLO{align-items: stretch}
-        .flexHorizontalMLO{list-style: $none}
     }
     
     @if $stylesListsFloatsMLO == "on"{
@@ -318,8 +292,7 @@
     @if $stylesBackgroundsBanMLO == "on"{
         //Backgrounds, border and images    
         .banMLO{border: $none}
-        .noBackgroundMLO{background: $none}
-        .noBackgroundMLO, .bgNoneMLO{
+        .bgNoneMLO{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -327,19 +300,51 @@
         .bgTransparentMLO{background-color: $transparent}
         .bgNoImageMLO{background-image: $none}
     }
+    
+    @if $stylesSpacingMLO == "on"{
+/* =============================================================================
+   Mobile Landscape Only Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorMLO;
+        .mraMLO,.mhaMLO{margin-right: $auto}
+        .mlaMLO,.mhaMLO{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxMLO == "on"{
+/* =============================================================================
+   Mobile Landscape Only Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnMLO{flex-direction: column}
+        .flexNoWrapMLO{flex-wrap: nowrap}
+        .flexJustifyEndMLO{justify-content: flex-end}
+        .flexJustifyCenterMLO{justify-content: center}
+        .flexJustifyBetweenMLO{justify-content: space-between}
+        .flexJustifyAroundMLO{justify-content: space-around}
+        .flexAlignContentEndMLO{align-content: flex-end}
+        .flexAlignContentCenterMLO{align-content: center}
+        .flexAlignContentBetweenMLO{align-content: space-between}
+        .flexAlignContentAroundMLO{align-content: space-around}
+        .flexAlignContentStretchMLO{align-content: stretch}
+        .flexAlignItemsEndMLO{align-items: flex-end}
+        .flexAlignItemsCenterMLO{align-items: center}
+        .flexAlignItemsBaselineMLO{align-items: baseline}
+        .flexAlignItemsStretchMLO{align-items: stretch}
+        .flexHorizontalMLO{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   Before Tablet Styles
+   Before Tablet Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include beforeTablet{
-    @if $stylesSpacingBT == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorBT;
-        .mraBT,.mhaBT{margin-right: $auto}
-        .mlaBT,.mhaBT{margin-left: $auto}
-    }
-    
+@include beforeTablet{    
     @if $stylesPosSizingDisplayBT == "on"{
         //Positioning
         .pRelBT{position: relative}
@@ -358,34 +363,6 @@
         .displayNoneBT, .hideBT{display: $none}
         .contentBoxBT{box-sizing: content-box}
         .borderBoxBT{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxBT == "on"{
-        //Flexbox
-        .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnBT{flex-direction: column}
-        .flexNoWrapBT{flex-wrap: nowrap}
-        .flexJustifyEndBT{justify-content: flex-end}
-        .flexJustifyCenterBT{justify-content: center}
-        .flexJustifyBetweenBT{justify-content: space-between}
-        .flexJustifyAroundBT{justify-content: space-around}
-        .flexAlignContentEndBT{align-content: flex-end}
-        .flexAlignContentCenterBT{align-content: center}
-        .flexAlignContentBetweenBT{align-content: space-between}
-        .flexAlignContentAroundBT{align-content: space-around}
-        .flexAlignContentStretchBT{align-content: stretch}
-        .flexAlignItemsEndBT{align-items: flex-end}
-        .flexAlignItemsCenterBT{align-items: center}
-        .flexAlignItemsBaselineBT{align-items: baseline}
-        .flexAlignItemsStretchBT{align-items: stretch}
-        .flexHorizontalBT{list-style: $none}
     }
     
     @if $stylesListsFloatsBT == "on"{
@@ -428,8 +405,7 @@
     @if $stylesBackgroundsBanBT == "on"{
         //Backgrounds, border and images    
         .banBT{border: $none}
-        .noBackgroundBT{background: $none}
-        .noBackgroundBT, .bgNoneBT{
+        .bgNoneBT{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -437,19 +413,51 @@
         .bgTransparentBT{background-color: $transparent}
         .bgNoImageBT{background-image: $none}
     }
+    
+    @if $stylesSpacingBT == "on"{
+/* =============================================================================
+   Before Tablet Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorBT;
+        .mraBT,.mhaBT{margin-right: $auto}
+        .mlaBT,.mhaBT{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxBT == "on"{
+/* =============================================================================
+   Before Tablet Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnBT{flex-direction: column}
+        .flexNoWrapBT{flex-wrap: nowrap}
+        .flexJustifyEndBT{justify-content: flex-end}
+        .flexJustifyCenterBT{justify-content: center}
+        .flexJustifyBetweenBT{justify-content: space-between}
+        .flexJustifyAroundBT{justify-content: space-around}
+        .flexAlignContentEndBT{align-content: flex-end}
+        .flexAlignContentCenterBT{align-content: center}
+        .flexAlignContentBetweenBT{align-content: space-between}
+        .flexAlignContentAroundBT{align-content: space-around}
+        .flexAlignContentStretchBT{align-content: stretch}
+        .flexAlignItemsEndBT{align-items: flex-end}
+        .flexAlignItemsCenterBT{align-items: center}
+        .flexAlignItemsBaselineBT{align-items: baseline}
+        .flexAlignItemsStretchBT{align-items: stretch}
+        .flexHorizontalBT{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   Before Tablet Landscape Styles
+   Before Tablet Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include beforeTabletLandscape{
-    @if $stylesSpacingBTL == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorBTL;
-        .mraBTL,.mhaBTL{margin-right: $auto}
-        .mlaBTL,.mhaBTL{margin-left: $auto}
-    }
-    
+@include beforeTabletLandscape{    
     @if $stylesPosSizingDisplayBTL == "on"{
         //Positioning
         .pRelBTL{position: relative}
@@ -468,34 +476,6 @@
         .displayNoneBTL, .hideBTL{display: $none}
         .contentBoxBTL{box-sizing: content-box}
         .borderBoxBTL{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxBTL == "on"{
-        //Flexbox
-        .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnBTL{flex-direction: column}
-        .flexNoWrapBTL{flex-wrap: nowrap}
-        .flexJustifyEndBTL{justify-content: flex-end}
-        .flexJustifyCenterBTL{justify-content: center}
-        .flexJustifyBetweenBTL{justify-content: space-between}
-        .flexJustifyAroundBTL{justify-content: space-around}
-        .flexAlignContentEndBTL{align-content: flex-end}
-        .flexAlignContentCenterBTL{align-content: center}
-        .flexAlignContentBetweenBTL{align-content: space-between}
-        .flexAlignContentAroundBTL{align-content: space-around}
-        .flexAlignContentStretchBTL{align-content: stretch}
-        .flexAlignItemsEndBTL{align-items: flex-end}
-        .flexAlignItemsCenterBTL{align-items: center}
-        .flexAlignItemsBaselineBTL{align-items: baseline}
-        .flexAlignItemsStretchBTL{align-items: stretch}
-        .flexHorizontalBTL{list-style: $none}
     }
     
     @if $stylesListsFloatsBTL == "on"{
@@ -538,8 +518,7 @@
     @if $stylesBackgroundsBanBTL == "on"{
         //Backgrounds, border and images    
         .banBTL{border: $none}
-        .noBackgroundBTL{background: $none}
-        .noBackgroundBTL, .bgNoneBTL{
+        .bgNoneBTL{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -547,19 +526,51 @@
         .bgTransparentBTL{background-color: $transparent}
         .bgNoImageBTL{background-image: $none}
     }
+    
+    @if $stylesSpacingBTL == "on"{
+/* =============================================================================
+   Before Tablet Landscape Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorBTL;
+        .mraBTL,.mhaBTL{margin-right: $auto}
+        .mlaBTL,.mhaBTL{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxBTL == "on"{
+/* =============================================================================
+   Before Tablet Landscape Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnBTL{flex-direction: column}
+        .flexNoWrapBTL{flex-wrap: nowrap}
+        .flexJustifyEndBTL{justify-content: flex-end}
+        .flexJustifyCenterBTL{justify-content: center}
+        .flexJustifyBetweenBTL{justify-content: space-between}
+        .flexJustifyAroundBTL{justify-content: space-around}
+        .flexAlignContentEndBTL{align-content: flex-end}
+        .flexAlignContentCenterBTL{align-content: center}
+        .flexAlignContentBetweenBTL{align-content: space-between}
+        .flexAlignContentAroundBTL{align-content: space-around}
+        .flexAlignContentStretchBTL{align-content: stretch}
+        .flexAlignItemsEndBTL{align-items: flex-end}
+        .flexAlignItemsCenterBTL{align-items: center}
+        .flexAlignItemsBaselineBTL{align-items: baseline}
+        .flexAlignItemsStretchBTL{align-items: stretch}
+        .flexHorizontalBTL{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   Tablet Only Styles
+   Tablet Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include tabletOnly{
-    @if $stylesSpacingTO == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorTO;
-        .mraTO,.mhaTO{margin-right: $auto}
-        .mlaTO,.mhaTO{margin-left: $auto}
-    }
-    
+@include tabletOnly{    
     @if $stylesPosSizingDisplayTO == "on"{
         //Positioning
         .pRelTO{position: relative}
@@ -578,34 +589,6 @@
         .displayNoneTO, .hideTO{display: $none}
         .contentBoxTO{box-sizing: content-box}
         .borderBoxTO{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxTO == "on"{
-        //Flexbox
-        .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnTO{flex-direction: column}
-        .flexNoWrapTO{flex-wrap: nowrap}
-        .flexJustifyEndTO{justify-content: flex-end}
-        .flexJustifyCenterTO{justify-content: center}
-        .flexJustifyBetweenTO{justify-content: space-between}
-        .flexJustifyAroundTO{justify-content: space-around}
-        .flexAlignContentEndTO{align-content: flex-end}
-        .flexAlignContentCenterTO{align-content: center}
-        .flexAlignContentBetweenTO{align-content: space-between}
-        .flexAlignContentAroundTO{align-content: space-around}
-        .flexAlignContentStretchTO{align-content: stretch}
-        .flexAlignItemsEndTO{align-items: flex-end}
-        .flexAlignItemsCenterTO{align-items: center}
-        .flexAlignItemsBaselineTO{align-items: baseline}
-        .flexAlignItemsStretchTO{align-items: stretch}
-        .flexHorizontalTO{list-style: $none}
     }
     
     @if $stylesListsFloatsTO == "on"{
@@ -648,8 +631,7 @@
     @if $stylesBackgroundsBanTO == "on"{
         //Backgrounds, border and images    
         .banTO{border: $none}
-        .noBackgroundTO{background: $none}
-        .noBackgroundTO, .bgNoneTO{
+        .bgNoneTO{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -657,19 +639,52 @@
         .bgTransparentTO{background-color: $transparent}
         .bgNoImageTO{background-image: $none}
     }
+    
+    @if $stylesSpacingTO == "on"{
+/* =============================================================================
+   Tablet Only Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+
+        @include spacingHelpersClassesGeneratorTO;
+        .mraTO,.mhaTO{margin-right: $auto}
+        .mlaTO,.mhaTO{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxTO == "on"{
+/* =============================================================================
+   Tablet Only Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+        .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnTO{flex-direction: column}
+        .flexNoWrapTO{flex-wrap: nowrap}
+        .flexJustifyEndTO{justify-content: flex-end}
+        .flexJustifyCenterTO{justify-content: center}
+        .flexJustifyBetweenTO{justify-content: space-between}
+        .flexJustifyAroundTO{justify-content: space-around}
+        .flexAlignContentEndTO{align-content: flex-end}
+        .flexAlignContentCenterTO{align-content: center}
+        .flexAlignContentBetweenTO{align-content: space-between}
+        .flexAlignContentAroundTO{align-content: space-around}
+        .flexAlignContentStretchTO{align-content: stretch}
+        .flexAlignItemsEndTO{align-items: flex-end}
+        .flexAlignItemsCenterTO{align-items: center}
+        .flexAlignItemsBaselineTO{align-items: baseline}
+        .flexAlignItemsStretchTO{align-items: stretch}
+        .flexHorizontalTO{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   After Tablet Styles
+   After Tablet Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include afterTablet{
-    @if $stylesSpacingAT == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorAT;
-        .mraAT,.mhaAT{margin-right: $auto}
-        .mlaAT,.mhaAT{margin-left: $auto}
-    }
-    
+@include afterTablet{    
     @if $stylesPosSizingDisplayAT == "on"{
         //Positioning
         .pRelAT{position: relative}
@@ -688,34 +703,6 @@
         .displayNoneAT, .hideAT{display: $none}
         .contentBoxAT{box-sizing: content-box}
         .borderBoxAT{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxAT == "on"{
-        //Flexbox
-        .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnAT{flex-direction: column}
-        .flexNoWrapAT{flex-wrap: nowrap}
-        .flexJustifyEndAT{justify-content: flex-end}
-        .flexJustifyCenterAT{justify-content: center}
-        .flexJustifyBetweenAT{justify-content: space-between}
-        .flexJustifyAroundAT{justify-content: space-around}
-        .flexAlignContentEndAT{align-content: flex-end}
-        .flexAlignContentCenterAT{align-content: center}
-        .flexAlignContentBetweenAT{align-content: space-between}
-        .flexAlignContentAroundAT{align-content: space-around}
-        .flexAlignContentStretchAT{align-content: stretch}
-        .flexAlignItemsEndAT{align-items: flex-end}
-        .flexAlignItemsCenterAT{align-items: center}
-        .flexAlignItemsBaselineAT{align-items: baseline}
-        .flexAlignItemsStretchAT{align-items: stretch}
-        .flexHorizontalAT{list-style: $none}
     }
     
     @if $stylesListsFloatsAT == "on"{
@@ -758,8 +745,7 @@
     @if $stylesBackgroundsBanAT == "on"{
         //Backgrounds, border and images    
         .banAT{border: $none}
-        .noBackgroundAT{background: $none}
-        .noBackgroundAT, .bgNoneAT{
+        .bgNoneAT{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -767,19 +753,51 @@
         .bgTransparentAT{background-color: $transparent}
         .bgNoImageAT{background-image: $none}
     }
+    
+    @if $stylesSpacingAT == "on"{
+/* =============================================================================
+   After Tablet Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorAT;
+        .mraAT,.mhaAT{margin-right: $auto}
+        .mlaAT,.mhaAT{margin-left: $auto}
+    }
+     
+    @if $stylesFlexboxAT == "on"{
+/* =============================================================================
+   After Tablet Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+        .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnAT{flex-direction: column}
+        .flexNoWrapAT{flex-wrap: nowrap}
+        .flexJustifyEndAT{justify-content: flex-end}
+        .flexJustifyCenterAT{justify-content: center}
+        .flexJustifyBetweenAT{justify-content: space-between}
+        .flexJustifyAroundAT{justify-content: space-around}
+        .flexAlignContentEndAT{align-content: flex-end}
+        .flexAlignContentCenterAT{align-content: center}
+        .flexAlignContentBetweenAT{align-content: space-between}
+        .flexAlignContentAroundAT{align-content: space-around}
+        .flexAlignContentStretchAT{align-content: stretch}
+        .flexAlignItemsEndAT{align-items: flex-end}
+        .flexAlignItemsCenterAT{align-items: center}
+        .flexAlignItemsBaselineAT{align-items: baseline}
+        .flexAlignItemsStretchAT{align-items: stretch}
+        .flexHorizontalAT{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   After Tablet Landscape Styles
+   After Tablet Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include afterTabletLandscape{
-    @if $stylesSpacingATL == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorATL;
-        .mraATL,.mhaATL{margin-right: $auto}
-        .mlaATL,.mhaATL{margin-left: $auto}
-    }
-    
+@include afterTabletLandscape{    
     @if $stylesPosSizingDisplayATL == "on"{
         //Positioning
         .pRelATL{position: relative}
@@ -798,34 +816,6 @@
         .displayNoneATL, .hideATL{display: $none}
         .contentBoxATL{box-sizing: content-box}
         .borderBoxATL{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxATL == "on"{
-        //Flexbox
-        .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnATL{flex-direction: column}
-        .flexNoWrapATL{flex-wrap: nowrap}
-        .flexJustifyEndATL{justify-content: flex-end}
-        .flexJustifyCenterATL{justify-content: center}
-        .flexJustifyBetweenATL{justify-content: space-between}
-        .flexJustifyAroundATL{justify-content: space-around}
-        .flexAlignContentEndATL{align-content: flex-end}
-        .flexAlignContentCenterATL{align-content: center}
-        .flexAlignContentBetweenATL{align-content: space-between}
-        .flexAlignContentAroundATL{align-content: space-around}
-        .flexAlignContentStretchATL{align-content: stretch}
-        .flexAlignItemsEndATL{align-items: flex-end}
-        .flexAlignItemsCenterATL{align-items: center}
-        .flexAlignItemsBaselineATL{align-items: baseline}
-        .flexAlignItemsStretchATL{align-items: stretch}
-        .flexHorizontalATL{list-style: $none}
     }
     
     @if $stylesListsFloatsATL == "on"{
@@ -868,8 +858,7 @@
     @if $stylesBackgroundsBanATL == "on"{
         //Backgrounds, border and images   
         .banATL{border: $none}
-        .noBackgroundATL{background: $none}
-        .noBackgroundATL, .bgNoneATL{
+        .bgNoneATL{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -877,19 +866,51 @@
         .bgTransparentATL{background-color: $transparent}
         .bgNoImageATL{background-image: $none}
     }
+    
+    @if $stylesSpacingATL == "on"{
+/* =============================================================================
+   After Tablet Landscape Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        @include spacingHelpersClassesGeneratorATL;
+        .mraATL,.mhaATL{margin-right: $auto}
+        .mlaATL,.mhaATL{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxATL == "on"{
+/* =============================================================================
+   After Tablet Landscape Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+        .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnATL{flex-direction: column}
+        .flexNoWrapATL{flex-wrap: nowrap}
+        .flexJustifyEndATL{justify-content: flex-end}
+        .flexJustifyCenterATL{justify-content: center}
+        .flexJustifyBetweenATL{justify-content: space-between}
+        .flexJustifyAroundATL{justify-content: space-around}
+        .flexAlignContentEndATL{align-content: flex-end}
+        .flexAlignContentCenterATL{align-content: center}
+        .flexAlignContentBetweenATL{align-content: space-between}
+        .flexAlignContentAroundATL{align-content: space-around}
+        .flexAlignContentStretchATL{align-content: stretch}
+        .flexAlignItemsEndATL{align-items: flex-end}
+        .flexAlignItemsCenterATL{align-items: center}
+        .flexAlignItemsBaselineATL{align-items: baseline}
+        .flexAlignItemsStretchATL{align-items: stretch}
+        .flexHorizontalATL{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   Tablet Landscape Only Styles
+   Tablet Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include tabletLandscapeOnly{
-    @if $stylesSpacingTLO == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorTLO;
-        .mraTLO,.mhaTLO{margin-right: $auto}
-        .mlaTLO,.mhaTLO{margin-left: $auto}
-    }
-    
+@include tabletLandscapeOnly{    
     @if $stylesPosSizingDisplayTLO == "on"{
         //Positioning
         .pRelTLO{position: relative}
@@ -908,34 +929,6 @@
         .displayNoneTLO, .hideTLO{display: $none}
         .contentBoxTLO{box-sizing: content-box}
         .borderBoxTLO{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxTLO == "on"{
-        //Flexbox
-        .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnTLO{flex-direction: column}
-        .flexNoWrapTLO{flex-wrap: nowrap}
-        .flexJustifyEndTLO{justify-content: flex-end}
-        .flexJustifyCenterTLO{justify-content: center}
-        .flexJustifyBetweenTLO{justify-content: space-between}
-        .flexJustifyAroundTLO{justify-content: space-around}
-        .flexAlignContentEndTLO{align-content: flex-end}
-        .flexAlignContentCenterTLO{align-content: center}
-        .flexAlignContentBetweenTLO{align-content: space-between}
-        .flexAlignContentAroundTLO{align-content: space-around}
-        .flexAlignContentStretchTLO{align-content: stretch}
-        .flexAlignItemsEndTLO{align-items: flex-end}
-        .flexAlignItemsCenterTLO{align-items: center}
-        .flexAlignItemsBaselineTLO{align-items: baseline}
-        .flexAlignItemsStretchTLO{align-items: stretch}
-        .flexHorizontalTLO{list-style: $none}
     }
     
     @if $stylesListsFloatsTLO == "on"{
@@ -978,8 +971,7 @@
     @if $stylesBackgroundsBanTLO == "on"{
         //Backgrounds, border and images    
         .banTLO{border: $none}
-        .noBackgroundTLO{background: $none}
-        .noBackgroundTLO, .bgNoneTLO{
+        .bgNoneTLO{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -987,19 +979,51 @@
         .bgTransparentTLO{background-color: $transparent}
         .bgNoImageTLO{background-image: $none}
     }
+    
+    @if $stylesSpacingTLO == "on"{
+/* =============================================================================
+   Tablet Landscape Only Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorTLO;
+        .mraTLO,.mhaTLO{margin-right: $auto}
+        .mlaTLO,.mhaTLO{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxTLO == "on"{
+/* =============================================================================
+   Tablet Landscape Only Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnTLO{flex-direction: column}
+        .flexNoWrapTLO{flex-wrap: nowrap}
+        .flexJustifyEndTLO{justify-content: flex-end}
+        .flexJustifyCenterTLO{justify-content: center}
+        .flexJustifyBetweenTLO{justify-content: space-between}
+        .flexJustifyAroundTLO{justify-content: space-around}
+        .flexAlignContentEndTLO{align-content: flex-end}
+        .flexAlignContentCenterTLO{align-content: center}
+        .flexAlignContentBetweenTLO{align-content: space-between}
+        .flexAlignContentAroundTLO{align-content: space-around}
+        .flexAlignContentStretchTLO{align-content: stretch}
+        .flexAlignItemsEndTLO{align-items: flex-end}
+        .flexAlignItemsCenterTLO{align-items: center}
+        .flexAlignItemsBaselineTLO{align-items: baseline}
+        .flexAlignItemsStretchTLO{align-items: stretch}
+        .flexHorizontalTLO{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   Before Desktop Styles
+   Before Desktop Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include beforeDesktop{
-    @if $stylesSpacingBD == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorBD;
-        .mraBD,.mhaBD{margin-right: $auto}
-        .mlaBD,.mhaBD{margin-left: $auto}
-    }
-    
+@include beforeDesktop{    
     @if $stylesPosSizingDisplayBD == "on"{
         //Positioning
         .pRelBD{position: relative}
@@ -1018,34 +1042,6 @@
         .displayNoneBD, .hideBD{display: $none}
         .contentBoxBD{box-sizing: content-box}
         .borderBoxBD{box-sizing: border-box}
-        }
-    
-    @if $stylesFlexboxBD == "on"{
-        //Flexbox
-        .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnBD{flex-direction: column}
-        .flexNoWrapBD{flex-wrap: nowrap}
-        .flexJustifyEndBD{justify-content: flex-end}
-        .flexJustifyCenterBD{justify-content: center}
-        .flexJustifyBetweenBD{justify-content: space-between}
-        .flexJustifyAroundBD{justify-content: space-around}
-        .flexAlignContentEndBD{align-content: flex-end}
-        .flexAlignContentCenterBD{align-content: center}
-        .flexAlignContentBetweenBD{align-content: space-between}
-        .flexAlignContentAroundBD{align-content: space-around}
-        .flexAlignContentStretchBD{align-content: stretch}
-        .flexAlignItemsEndBD{align-items: flex-end}
-        .flexAlignItemsCenterBD{align-items: center}
-        .flexAlignItemsBaselineBD{align-items: baseline}
-        .flexAlignItemsStretchBD{align-items: stretch}
-        .flexHorizontalBD{list-style: $none}
     }
     
     @if $stylesListsFloatsBD == "on"{
@@ -1084,12 +1080,11 @@
         }
         .upperCaseBD{text-transform: uppercase}
     }
-        
+    
     @if $stylesBackgroundsBanBD == "on"{
         //Backgrounds, border and images  
         .banBD{border: $none}
-        .noBackgroundBD{background: $none}
-        .noBackgroundBD, .bgNoneBD{
+        .bgNoneBD{
             &, &:focus, &:hover{
                 background: $none;
             }
@@ -1097,19 +1092,51 @@
         .bgTransparentBD{background-color: $transparent}
         .bgNoImageBD{background-image: $none}
     }
+    
+    @if $stylesSpacingBD == "on"{
+/* =============================================================================
+   Before Desktop Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        @include spacingHelpersClassesGeneratorBD;
+        .mraBD,.mhaBD{margin-right: $auto}
+        .mlaBD,.mhaBD{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxBD == "on"{
+/* =============================================================================
+   Before Desktop Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnBD{flex-direction: column}
+        .flexNoWrapBD{flex-wrap: nowrap}
+        .flexJustifyEndBD{justify-content: flex-end}
+        .flexJustifyCenterBD{justify-content: center}
+        .flexJustifyBetweenBD{justify-content: space-between}
+        .flexJustifyAroundBD{justify-content: space-around}
+        .flexAlignContentEndBD{align-content: flex-end}
+        .flexAlignContentCenterBD{align-content: center}
+        .flexAlignContentBetweenBD{align-content: space-between}
+        .flexAlignContentAroundBD{align-content: space-around}
+        .flexAlignContentStretchBD{align-content: stretch}
+        .flexAlignItemsEndBD{align-items: flex-end}
+        .flexAlignItemsCenterBD{align-items: center}
+        .flexAlignItemsBaselineBD{align-items: baseline}
+        .flexAlignItemsStretchBD{align-items: stretch}
+        .flexHorizontalBD{list-style: $none}
+    }
 }
 
 /* =============================================================================
-   After Desktop Styles
+   After Desktop Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include afterDesktop{
-    @if $stylesSpacingAD == "on"{
-        //Spacing Helpers
-        @include spacingHelpersClassesGeneratorAD;
-        .mraAD,.mhaAD{margin-right: $auto}
-        .mlaAD,.mhaAD{margin-left: $auto}
-    }
-    
+@include afterDesktop{    
     @if $stylesPosSizingDisplayAD == "on"{
         //Positioning
         .pRelAD{position: relative}
@@ -1128,34 +1155,6 @@
         .displayNoneAD, .hideAD{display: $none}
         .contentBoxAD{box-sizing: content-box}
         .borderBoxAD{box-sizing: border-box}
-    }
-    
-    @if $stylesFlexboxAD == "on"{
-        //Flexbox
-        .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnAD{flex-direction: column}
-        .flexNoWrapAD{flex-wrap: nowrap}
-        .flexJustifyEndAD{justify-content: flex-end}
-        .flexJustifyCenterAD{justify-content: center}
-        .flexJustifyBetweenAD{justify-content: space-between}
-        .flexJustifyAroundAD{justify-content: space-around}
-        .flexAlignContentEndAD{align-content: flex-end}
-        .flexAlignContentCenterAD{align-content: center}
-        .flexAlignContentBetweenAD{align-content: space-between}
-        .flexAlignContentAroundAD{align-content: space-around}
-        .flexAlignContentStretchAD{align-content: stretch}
-        .flexAlignItemsEndAD{align-items: flex-end}
-        .flexAlignItemsCenterAD{align-items: center}
-        .flexAlignItemsBaselineAD{align-items: baseline}
-        .flexAlignItemsStretchAD{align-items: stretch}
-        .flexHorizontalAD{list-style: $none}
     }
     
     @if $stylesListsFloatsAD == "on"{
@@ -1198,13 +1197,51 @@
     @if $stylesBackgroundsBanAD == "on"{
         //Backgrounds, border and images   
         .banAD{border: $none}
-        .noBackgroundAD{background: $none}
-        .noBackgroundAD, .bgNoneAD{
+        .bgNoneAD{
             &, &:focus, &:hover{
                 background: $none;
             }
         }
         .bgTransparentAD{background-color: $transparent}
         .bgNoImageAD{background-image: $none}
+    }
+    
+    @if $stylesSpacingAD == "on"{    
+/* =============================================================================
+   After Desktop Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorAD;
+        .mraAD,.mhaAD{margin-right: $auto}
+        .mlaAD,.mhaAD{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxAD == "on"{
+/* =============================================================================
+   After Desktop Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+        .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnAD{flex-direction: column}
+        .flexNoWrapAD{flex-wrap: nowrap}
+        .flexJustifyEndAD{justify-content: flex-end}
+        .flexJustifyCenterAD{justify-content: center}
+        .flexJustifyBetweenAD{justify-content: space-between}
+        .flexJustifyAroundAD{justify-content: space-around}
+        .flexAlignContentEndAD{align-content: flex-end}
+        .flexAlignContentCenterAD{align-content: center}
+        .flexAlignContentBetweenAD{align-content: space-between}
+        .flexAlignContentAroundAD{align-content: space-around}
+        .flexAlignContentStretchAD{align-content: stretch}
+        .flexAlignItemsEndAD{align-items: flex-end}
+        .flexAlignItemsCenterAD{align-items: center}
+        .flexAlignItemsBaselineAD{align-items: baseline}
+        .flexAlignItemsStretchAD{align-items: stretch}
+        .flexHorizontalAD{list-style: $none}
     }
 }

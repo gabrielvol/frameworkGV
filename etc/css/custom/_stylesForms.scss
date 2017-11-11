@@ -1,5 +1,5 @@
 /* =============================================================================
-   Forms Styles | Custom
+   Forms Styles | Custom [stylesForms.scss]
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
 .labelName, .sug, .errorForm{
@@ -19,33 +19,6 @@ form, fieldset, label, input, select, textarea, button,
             margin-right: $auto;
             margin-left: $auto;
         }
-    }
-}
-
-fieldset, label, input, select, textarea, button,
-.mandatoryMessage, .labelName, .sug, .errorForm{
-    .mobileForm &{
-        @include beforeTablet{
-            width: $formLabelWidthBT;
-        }
-        
-        @include mobileOnly{
-            width: $formLabelWidthMO;            
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            width: $formLabelWidthTO;
-        }
-    }
-    
-    @include afterTabletLandscape{
-        width: $formLabelWidthATL;
-    }
-    
-    @include afterDesktop{
-        width: $formLabelWidthAD;
     }
 }
 
@@ -75,9 +48,35 @@ form{
     }
 }
 
-label, input, select, textarea, button,
-.labelName, .errorForm{
-    display: block;
+fieldset, label, input, select, textarea, button,
+.mandatoryMessage, .labelName, .sug, .errorForm{
+    .mobileForm &{
+        @include beforeTablet{
+            width: $formLabelWidthBT;
+        }
+        
+        @include mobileOnly{
+            width: $formLabelWidthMO;            
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            width: $formLabelWidthTO;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        form &{
+            width: $formLabelWidthATL;
+        }
+    }
+    
+    @include afterDesktop{
+        form &{
+            width: $formLabelWidthAD;
+        }
+    }
 }
 
 fieldset{    
@@ -100,8 +99,8 @@ legend{
 }
 
 input, select, textarea{
-    @include borderStyle($formInputBcColour);
     @include transition(1s);
+    @include borderStyle($formInputBcColour);
     font-family: $formInputFontFamily; 
 
     &:focus, &:hover{
@@ -109,7 +108,7 @@ input, select, textarea{
     }
 
     &:focus{
-        box-shadow: inset 0 0 4px #666;
+        box-shadow: inset 0 0 4px $greyD;
     }
     
     &.bcError{
@@ -144,12 +143,15 @@ input, select, textarea{
         }
 
         @include afterTabletLandscape{
-            @include equalHeightAndLineHeight($formLabelHeightATL);
+            form &{
+                @include equalHeightAndLineHeight($formLabelHeightATL);
+            }
         }
 
         @include afterDesktop{
-            height: $formLabelHeightAD;        
-        }
+            form &{
+                height: $formLabelHeightAD;        
+            }
 
         @if $labelsVisible == "off"{
             display: $none;
@@ -180,11 +182,15 @@ input, select, textarea{
         }
 
         @include afterTabletLandscape{
-            @include equalHeightAndLineHeight($formInputHeightATL);
+            form &{
+                @include equalHeightAndLineHeight($formInputHeightATL);
+            }
         }
 
         @include afterLaptop{
-            height: $formInputHeightAD;        
+            form &{
+                @include equalHeightAndLineHeight($formInputHeightAD);
+            }
         }
     }
     
@@ -201,8 +207,10 @@ input, select, textarea{
             }
         }
 
-        @include afterTabletLandscape{    
-            margin-bottom: $paddingMarginMediumValue;
+        @include afterTabletLandscape{  
+            form &{  
+                margin-bottom: $paddingMarginMediumValue;
+            }
         }
     }
 }
@@ -224,7 +232,9 @@ input, select, textarea{
         }
 
         @include afterTabletLandscape{    
-            margin-bottom: $paddingMarginMediumValue;
+            form &{
+                margin-bottom: $paddingMarginMediumValue;
+            }
         }
     }
 
@@ -246,13 +256,21 @@ input, select, textarea{
             }
         }
 
-        @include afterTabletLandscape{
-            @include equalHeightAndLineHeight($formLabelContentsHeightATL);
+        @include afterTabletLandscape{   
+            form &{
+                @include equalHeightAndLineHeight($formLabelContentsHeightATL);
+            }
         }
 
-        @include afterDesktop{
-            height: $formLabelContentsHeightAD;        
+        @include afterDesktop{   
+            form &{
+                height: $formLabelContentsHeightAD;        
+            }
         }
+    }
+    
+    .labelName, .errorForm{
+        display: block;
     }
     
     .labelName{
@@ -301,7 +319,7 @@ input, select, textarea{
     }
 }
 
-button,
+form button,
 input[type="button"],
 html input[type="button"]{
     border: $none;
@@ -311,7 +329,7 @@ button{}
 button::focus-inner{}
 input::focus-inner{}
 
-input{
+form input{
     padding: 0 $paddingMarginMediumValue;
 
     &[type="text"]{}
@@ -359,49 +377,51 @@ input{
     }
 }
 
-input[type="reset"],
-input[type="submit"],
-input[type="button"],
-button{
-    @include borderStyle($formSubmitBcColour);
-    @include transition(1s);
-    margin-bottom: $zero;
-    color: $formSubmitFontColour;
-    font-family: $formSubmitFontFamily;
+form{
+    input[type="reset"],
+    input[type="submit"],
+    input[type="button"],
+    button{
+        @include borderStyle($formSubmitBcColour);
+        @include transition(1s);
+        margin-bottom: $zero;
+        color: $formSubmitFontColour;
+        font-family: $formSubmitFontFamily;
 
-    &:focus, &:hover{
-        border-color: $formSubmitBcColourHover;
-        color: $formSubmitFontColourHover;
-    }    
-    
-    @include beforeTablet{
-        .mobileForm &{
-            height: $formSubmitHeightValueBT;
-            line-height: $formSubmitLineHeightValueBT;
+        &:focus, &:hover{
+            border-color: $formSubmitBcColourHover;
+            color: $formSubmitFontColourHover;
+        }    
+
+        @include beforeTablet{
+            .mobileForm &{
+                height: $formSubmitHeightValueBT;
+                line-height: $formSubmitLineHeightValueBT;
+            }
         }
-    }
-    
-    @include afterTablet{
-        width: 50%!important;
-        margin-right: $auto;
-        margin-left: $auto;
-    }
 
-    @include tabletOnly{
-        .tabletForm &{
-            height: $formSubmitHeightValueTO;
-            line-height: $formSubmitLineHeightValueTO;
-        }  
-    }
+        @include afterTablet{
+            width: 50%!important;
+            margin-right: $auto;
+            margin-left: $auto;
+        }
 
-    @include afterTabletLandscape{
-        height: $formSubmitHeightValueATL;
-        line-height: $formSubmitLineHeightValueATL;
-    }
+        @include tabletOnly{
+            .tabletForm &{
+                height: $formSubmitHeightValueTO;
+                line-height: $formSubmitLineHeightValueTO;
+            }  
+        }
 
-    @include afterLaptop{
-        height: $formSubmitHeightValueAD;
-        line-height: $formSubmitLineHeightValueAD;
+        @include afterTabletLandscape{
+            height: $formSubmitHeightValueATL;
+            line-height: $formSubmitLineHeightValueATL;
+        }
+
+        @include afterLaptop{
+            height: $formSubmitHeightValueAD;
+            line-height: $formSubmitLineHeightValueAD;
+        }
     }
 }
 
@@ -447,7 +467,7 @@ select{
     }
 }
 
-textarea{
+form textarea{
     padding: $paddingMarginMediumValue;
     
     @include beforeTablet{

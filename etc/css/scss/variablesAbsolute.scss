@@ -1,5 +1,5 @@
 /* =============================================================================
-   Absolute Variables | Etc
+   Absolute Variables | Etc [variablesAbsolute.scss]
    ========================================================================== */
 $zero: 0!important;
 $hundred: 100%!important;
@@ -24,8 +24,8 @@ $inlineBlock: inline-block!important;
 @mixin clearfix() {
     &::before,
     &::after{
-        content: " "; // 1
-        display: table; // 2
+        content: " ";
+        display: table;
     }
     &::after{
         clear: both;

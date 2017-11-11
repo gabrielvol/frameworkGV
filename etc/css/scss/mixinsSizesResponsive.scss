@@ -1,5 +1,5 @@
 /* =============================================================================
-   Resposive Sizing Mixins | Etc
+   Resposive Sizing Mixins | Etc [mixinsSizesResponsive.scss]
    ========================================================================== */
 @mixin responsiveWidth($minWidth, $breakpointWidth: $minWidth, $maxWidth: 80%){
     min-width: $breakpointWidth;

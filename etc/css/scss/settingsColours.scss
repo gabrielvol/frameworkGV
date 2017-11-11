@@ -1,8 +1,7 @@
 /* =============================================================================
-   Colours Styles | Etc
+   Colours Settings | Etc [settingsColours.scss]
    ========================================================================== */
-html, body, blockquote, table, h1, h2, h3, h4, h5, h6, p, b, strong, i,
-em, dfn, li, button, label, input, select, textarea{
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table{
     color: $mainFontColour;
 }
 /*
@@ -21,9 +20,8 @@ a{
 }
 
 // Colour classes
-@include colourLightClassesGenerator($darkenValue);
 .white{
-    &, & b, & strong, & i, & em{
+    &, b, strong, i, em{
         color: $white;
     }
 }
@@ -32,7 +30,7 @@ a.white{
         color: $white;
     }
     &:focus, &:hover{
-        @extend %whiteHover;
+        text-shadow: 0 0 3px $grey;
     }
     &.noGlow{
         &:focus, &:hover{        
@@ -40,6 +38,7 @@ a.white{
         }
     }
 }
+@include colourLightClassesGenerator($darkenValue);
 @include colourDarkClassesGenerator($lightenValue);
 @include anchorColoursLightClassesGenerator($darkenValueAnchor);
 @include anchorColoursDarkClassesGenerator($lightenValueAnchor);

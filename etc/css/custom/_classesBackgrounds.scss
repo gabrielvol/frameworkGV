@@ -1,11 +1,7 @@
 /* =============================================================================
-   Background Settings | Custom
+   Backgrounds Classes | Custom [classesBackgrounds.scss]
    ========================================================================== */
-@include backgroundColourClassesGenerator;
-@include backgroundColourHoverClassesGenerator;
-
-//Estas clases siguientes, por cascada deben estar debajo de las clases generadas de fondos
-.noBackground, .bgNone{
+.bgNone{
     &, &:focus, &:hover{
         background-color: $transparent;
         background-image: $none;

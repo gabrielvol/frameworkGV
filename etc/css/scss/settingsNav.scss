@@ -1,12 +1,12 @@
 /* =============================================================================
-   Nav Styles | Etc
+   Nav Settings | Etc [settingsNav.scss]
    ========================================================================== */
 .mainNav{
     li{        
         a, .topLevelItem{
             font-family: $navFontFamily;
         }
-        &.selected{
+        &.current{
             a, .topLevelItem{
                 font-family: $navSelectedFontFamily;
             }            
@@ -15,7 +15,7 @@
             a, .topLevelItem{
                 color: $navFontColourBT;
             }
-            &.selected{
+            &.current{
                 a, .topLevelItem{
                     color: $navSelectedFontColourBT;
                 }            
@@ -30,7 +30,7 @@
             .topLevelItem{
                 cursor: default;
             }
-            &.selected{
+            &.current{
                 background: $bgNavSelectedItem;
                 a, .topLevelItem{
                     background: $bgNavSelectedAnchor;
@@ -45,7 +45,7 @@
                     color: $navFontColourHover;
                 }
             }
-            &.selected{
+            &.current{
                 a, .topLevelItem{
                     &, &:focus, &:hover{
                         color: $navSelectedFontColour;

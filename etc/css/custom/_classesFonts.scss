@@ -1,9 +1,5 @@
 /* =============================================================================
-   Border Settings | Custom
+   Fonts Classes | Custom [classesFonts.scss]
    ========================================================================== */
-// b = border
-// bw,bk,bg = white, black, grey
-
-.bw{border-color: $white}
-.bk{border-color: $black}
-.bg{border-color: $bcGrey}
+.textShadow{text-shadow: 1px 1px 5px $greyXD}
+.letterSpacing{letter-spacing: 0.05rem}

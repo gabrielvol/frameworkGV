@@ -1,0 +1,12 @@
+/* =============================================================================
+   Font Colours Variables | Custom [coloursFonts.scss]
+   ========================================================================== */
+///**Font Colours:** 
+    ///Aquí se declaran los colores principales de texto y de ánclas del sitio, con sus `:hover`.
+$mainFontColour: $grey;
+$mainFontColourHover: darken($mainFontColour, 20%);
+
+$anchorFontColour: $mainFontColourHover;
+$anchorFontColourHover: darken($mainFontColourHover, 20%);
+
+//$secondaryFontColour: #999;
