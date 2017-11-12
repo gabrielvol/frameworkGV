@@ -1,5 +1,5 @@
 /* =============================================================================
-   Forms Variables | Custom [forms.scss]
+   Forms Variables | Custom [formsSizes.scss]
    ========================================================================== */
 //Labels activator
 $labelsVisible: on;
@@ -52,7 +52,12 @@ $formInputHeightATL: $formLabelHeightATL; //No debe llevar !important
 $formInputHeightAD:  $formLabelHeightAD; //No debe llevar !important
     
     // Submit
-$formSubmitWidthBT: ;
+$formSubmitWidthMO: $hundred;
+$formSubmitWidthMLO: 60%;
+$formSubmitWidthAT: 50%;
+$formSubmitWidthTO: $formSubmitWidthAT;
+$formSubmitWidthATL: $formSubmitWidthAT;
+$formSubmitWidthAD: $formSubmitWidthAT;
 
 $formSubmitHeightValueBT: 50px;
 $formSubmitLineHeightValueBT: 50px;
@@ -60,8 +65,11 @@ $formSubmitLineHeightValueBT: 50px;
 $formSubmitHeightValueTO: 45px;
 $formSubmitLineHeightValueTO: 45px;
 
-$formSubmitHeightValueATL: 30px;
-$formSubmitLineHeightValueATL: 30px;
+$formSubmitHeightValueAT: 30px;
+$formSubmitLineHeightValueAT: 30px;
+
+$formSubmitHeightValueATL: $formSubmitHeightValueAT;
+$formSubmitLineHeightValueATL: $formSubmitLineHeightValueAT;
 
 $formSubmitHeightValueAD: 30px;
 $formSubmitLineHeightValueAD: 30px;

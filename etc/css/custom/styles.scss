@@ -1,25 +1,28 @@
 //Variables
-@import "variables/zindex";
 @import "../scss/variablesFonts";
 @import "../scss/variablesAbsolute";
+@import "variables/zindex";
 @import "variables/container";
-
-@import "variables/fontsMain";
-@import "variables/fontsNav";
-@import "variables/fontsForms";
-
-@import "variables/coloursMain";
-@import "variables/coloursFonts";
-@import "variables/coloursBorders";
-@import "variables/coloursBackgrounds";
-@import "variables/coloursNav";
-@import "variables/coloursForms";
-
 @import "variables/helpers";
 @import "variables/activators";
-@import "variables/forms";
-@import "variables/tables";
 @import "variables/animations";
+
+@import "variables/coloursMain";
+@import "variables/coloursBorders";
+@import "variables/coloursBackgrounds";
+@import "variables/coloursTables";
+
+@import "variables/fontsMain";
+@import "variables/fontsColours";
+
+@import "variables/navColours";
+@import "variables/navFonts";
+
+@import "variables/formsColours";
+@import "variables/formsFonts";
+@import "variables/formsSizes";
+
+@import "variables/tables";
 
 //Font Face
 @import "../scss/fontFaceOpenSans";
@@ -46,44 +49,64 @@
 @import "../scss/settingsHtmlBody";
 @import "stylesBody";
 @import "../scss/resetMain";
+
 @import "fontFaceMain";
 @import "../scss/settingsFonts";
 @import "../scss/classesFonts";
 @import "classesFonts";
+
 @import "../scss/settingsColours";
 @import "includesBackgrounds";
 @import "classesBackgrounds";
 @import "classesShadows";
+
 @import "../scss/classesBorders";
 @import "classesBorders";
+
 @import "../scss/classesAnimations";
 @import "../scss/classesAll";
 @import "../scss/classesResponsive";
+
 @import "../scss/settingsContainer";
+
 @import "../scss/settingsNav";
-//@import "../scss/settingsForms";
+
+@import "../scss/settingsForms";
 //@import "../scss/resetFormsNiceIt";
+
 //@import "../scss/settingsTables";
+
 //@import "../scss/settingsModalPopups";
+
 //@import "stylesPrint";
 
 @import "stylesGlobal";
+
 @import "coloursPlaceholders";
 @import "coloursGradients";
+
 @import "settingsLists";
-//@import "stylesForms";
+
+@import "stylesForms";
 //@import "stylesFormsNiceIt";
 //@import "stylesSearchForm";
+
 //@import "stylesTables";
+
 //@import "stylesModalPopups";
+
 //@import "stylesSlider";
 
 @import "stylesHeader";
 //@import "stylesLanguageSwitch";
 //@import "stylesSocial";
+
 @import "stylesNav";
+
 @import "stylesFooter";
+
 @import "stylesIndex";
+//@import "styles Section";
 //@import "stylesContacto";
 
 //Post

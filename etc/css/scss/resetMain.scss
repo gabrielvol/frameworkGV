@@ -52,3 +52,14 @@ figure{
     margin: 0;
     padding: 0;
 }
+
+    // Buttons
+button,
+input[type="button"],
+html input[type="button"]{
+    border: $none;
+}
+
+button{}
+button::focus-inner{}
+input::focus-inner{}
