@@ -3,7 +3,7 @@
    ========================================================================== */
 $navWidthBT: 200px;
 
-.mainNav{
+.navMain{
     z-index: $zIndexNav;
     
     @include beforeTablet{
