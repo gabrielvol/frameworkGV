@@ -14,7 +14,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');
 ?>
 <link href="/nuevo/_source/css/datepicker.css" rel="stylesheet">
-<script type="text/javascript" src="/nuevo/_source/js/jquery-ui-datepicker.js"></script>
+<script src="/nuevo/_source/js/jquery-ui-datepicker.js" type="text/javascript"></script>
 </head>
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
@@ -171,6 +171,6 @@
             </div>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-        <script type="text/javascript" src="/nuevo/_source/js/plugins_form.js"></script>
+        <script src="/nuevo/_source/js/plugins_form.js" type="text/javascript"></script>
 </body>
 </html>

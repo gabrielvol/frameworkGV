@@ -23,5 +23,5 @@
 </div>
 <div class="modalBG displayNone"></div>
 
-<script type="text/javascript" src="/nuevo/js/main.js"></script>
-<script type="text/javascript" src="/nuevo/js/scrollKeep.js"></script>
+<script src="/nuevo/js/main.js" type="text/javascript"></script>
+<script src="/nuevo/js/scrollKeep.js" type="text/javascript"></script>
