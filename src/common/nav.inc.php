@@ -1,4 +1,4 @@
-<nav id="nav" class="mainNav container pRel" role="navigation" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>">
+<nav id="nav" class="navMain container pRel" role="navigation" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>">
     <button class="hamb pAbs displayNone displayBlockBT alignCenter upperCase"><?php echo _("Men&uacute;"); ?></button>
     <ul class="mainMenu displayNoneBT unstyled horizontalAT clearfix">
         <li class="<?php if($navCurrent == 1) { echo "current"; } ?>">
