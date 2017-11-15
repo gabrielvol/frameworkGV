@@ -1,12 +1,18 @@
 /* =============================================================================
-   Modal y Popups Styles | Etc [settingsModalPopups.scss]
+   Modal y Popups Settings | Etc [settingsModalPopups.scss]
    ========================================================================== */
-.modalBG{
-    @include opacityCustom($modalOpacity);
+.modalBG, .modalNav{
     @include posTRBL();
     position: fixed;
     z-index: $zIndexModalBG;
+}
+.modalBG{
+    @include opacityCustom($modalOpacity);
     background-color: $bgBlack;
+}
+.modalNav{
+    @include opacityCustom($modalNavOpacity);  
+    background-color: $bgModalNav;  
 }
 .popup{
     z-index: $zIndexPopup;
