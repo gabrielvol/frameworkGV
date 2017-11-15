@@ -11,8 +11,7 @@
     
     <!--Con Gettext-->
     <?php if($index == 1){ echo '<h1 class="logoHeader">'; } ?>
-    <a href="/nuevo/
-        <?php if($idioma == 'pt_BR'){
+    <a href="/nuevo/<?php if($idioma == 'pt_BR'){
             echo '?l=pt_BR';
         } else if($idioma == 'en_GB') {
             echo '?l=en_GB';
