@@ -22,6 +22,7 @@
     </div>
 </div>
 <div class="modalBG displayNone"></div>
+<div class="modalBG modalNav displayNone"></div>
 
 <script src="/nuevo/js/main.js" type="text/javascript"></script>
 <script src="/nuevo/js/scrollKeep.js" type="text/javascript"></script>
