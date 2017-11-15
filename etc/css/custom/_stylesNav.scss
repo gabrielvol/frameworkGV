@@ -17,13 +17,13 @@ $navWidthBT: 200px;
 
         .hamb{
             @include posTR(0, 0);
-            @include borderStyle($mainBcColour);
             box-sizing: border-box;
             z-index: $zIndexNavHamb;
             width: 90px;
             height: 45px;
             background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
             background-size: 15px;
+            border: 1px solid $mainBcColour!important;
             padding: 0 10px 0 30px;
             color: $hamburgerFontColour;
             font-family: $hamburgerFontFamily;
