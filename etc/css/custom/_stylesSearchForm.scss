@@ -45,7 +45,7 @@
         }
     }
     
-    @include afterLaptop{
+    @include afterDesktop{
         width: $searchFormWidthAL;
         
         input{
