@@ -13,16 +13,27 @@
         &, a, img{}
     }
     
-    @include beforeTablet{
-        box-sizing: border-box;
-        padding-top: 20px;
-        height: 150px;
-        
+    @include mobileOnly{
+        .logoHeader{
+            @include centerCustom(90%);
+            
+            a, img{
+                width: 100%;
+            }
+        }
+    }
+    
+    @include mobileLandscapeOnly{        
         .logoHeader{
             &, a, img{
                 width: 150px;
             }
         }
+    }
+    
+    @include beforeTablet{
+        box-sizing: border-box;
+        padding-top: 20px;
     }
     
     @include afterTablet{        
