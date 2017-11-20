@@ -1,0 +1,47 @@
+/* =============================================================================
+   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
+   ========================================================================== */
+ul{
+    @include transition(0.5s); 
+    z-index: $zIndexNavUlDrawer;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(-1 * #{$navDrawerWidth});
+    width: $navDrawerWidth; 
+    background-image: $bgGradWhiteEighty;
+    filter: $bgGradWhiteEightyFilter;
+    padding-top: 60px;
+    overflow: hidden;
+
+    li{
+        float: $none;    
+        
+        &, a, .topLevelItem{
+            @include equalHeightAndLineHeight(45px);
+        }
+
+        a, .topLevelItem{
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        & + li{
+            @include borderStyleT($bcWhite);
+        }
+    }
+    
+    .subMenu{
+        position: relative;
+        width: $navDrawerWidth;
+        top: 60px;
+        bottom: 0;
+        left: 70vw;
+    }
+    
+    &.open{
+        left: 0;
+        
+        .subMenu{}
+    }
+}

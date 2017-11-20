@@ -6,14 +6,22 @@
     position: fixed;
     z-index: $zIndexModalBG;
 }
+
 .modalBG{
     @include opacityCustom($modalOpacity);
     background-color: $bgBlack;
 }
+
 .modalNav{
     @include opacityCustom($modalNavOpacity);  
+    display: none; 
     background-color: $bgModalNav;  
+    
+    @include afterTablet{
+        display: $none;
+    }
 }
+
 .popup{
     z-index: $zIndexPopup;
     left: 50%;

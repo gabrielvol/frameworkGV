@@ -10,7 +10,7 @@ $flagHeightAT: 32px;
 .lang{
     z-index: $zIndexLang;
 
-    li{            
+    li{
         a{
             @include borderStyle($bcWhite);
             @include borderRadius(50%);
@@ -26,9 +26,9 @@ $flagHeightAT: 32px;
 
     @include beforeTablet{
         @include posTL(15px, 20px);
-        position: fixed;
+        position: absolute;
             
-        li{            
+        li{
             &, a{
                 @include squareSize($flagHeightBT);
             }
@@ -37,7 +37,7 @@ $flagHeightAT: 32px;
                 @include centerAbsolute($flagWidthBT, $flagHeightBT);
             }
 
-            &.flagLA{ /* Left Aligned Flag*/
+            &.flagLA{/* Left Aligned Flag*/
                 img{
                     width: $flagWidthBT;
                     height: $flagHeightBT;
@@ -48,13 +48,18 @@ $flagHeightAT: 32px;
                 margin-left: 15px;
             }
         }
+        
+        // Si hay menuDrawer
+        &.clicked{
+            position: fixed;
+        }
     }
 
-    @include afterTablet{       
+    @include afterTablet{
         @include posTR(-46px, 20px);
         position: absolute;
 
-        li{            
+        li{
             &, a{
                 @include squareSize($flagHeightAT);
             }
@@ -63,7 +68,7 @@ $flagHeightAT: 32px;
                 @include centerAbsolute($flagWidthAT, $flagHeightAT);
             }
 
-            &.flagLA{ /* Left Aligned Flag*/
+            &.flagLA{/* Left Aligned Flag*/
                 img{
                     width: $flagWidthAT;
                     height: $flagHeightAT;

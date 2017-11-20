@@ -1,6 +1,9 @@
 /* =============================================================================
    Elements Reset/Settings | Etc [resetMain.scss]
    ========================================================================== */
+article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button{
+    display: block;
+} 
 iframe{
     border: $none;
 }
@@ -30,7 +33,7 @@ a{
     }
 }
 a{
-    &, &:hover{        
+    &, &:hover{
         text-decoration: none;
     }
 }

@@ -1,0 +1,46 @@
+/* =============================================================================
+   Nav List Styles | Custom [stylesNavList.scss]
+   ========================================================================== */
+ul{
+    @include borderRadius($navBorderRadius);   
+    z-index: $zIndexNavUl;
+    position: relative;
+    top: 50px;
+    width: $navWidthBT; 
+    height: $auto;
+    background-color: $bgWhite;
+    box-shadow: 0 0 4px $black;
+
+    li{
+        float: $none;
+
+        &, a{
+            @include equalHeightAndLineHeight(45px);
+        }
+
+        &:first-child{
+            a{
+                padding-top: 3px;
+            }
+        }
+
+        &:nth-child(even){
+            background-color: $bgGreyXXL;
+        }
+
+        &:last-child{
+            &, a{
+                @include borderRadiusB(4px);
+            }
+
+            a{
+                padding-bottom: 3px;
+            }
+        }
+
+        a{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+}

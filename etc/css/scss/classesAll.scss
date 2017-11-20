@@ -41,9 +41,7 @@
     }
 
     //Display
-    article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button,
-    .callToAction, .displayBlock{display: $block}
-    
+    .displayBlock{display: $block}
     .displayInline{display: $inline}
     .displayInlineBlock{display: $inlineBlock}
     .displayNone{display: $none}

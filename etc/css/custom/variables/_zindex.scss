@@ -1,20 +1,23 @@
 /* =============================================================================
    Z Index Variables | Custom [zindex.scss]
    ========================================================================== */
+    // Modal
+$zIndexModalBG: 9000;
+$zIndexPopup: 9100;
+$zIndexPopupClose: 9200;
+
     // Nav
 $zIndexNav: 1000;
 $zIndexNavHamb: 200;
-$zIndexNavUl: 190;
+$zIndexNavUlList: 190;
+$zIndexNavCloseNav: $zIndexPopupClose;
+$zIndexNavUlDrawer: $zIndexPopup;
+
 $zIndexLang: $zIndexNav;
     
     // Header
 $zIndexHeader: $zIndexNav;
 $zIndexLogoHeader: 100;
-
-    // Modal
-$zIndexModalBG: 9000;
-$zIndexPopup: 9100;
-$zIndexPopupClose: 9200;
 
     // Slick Slider
 $zIndexSlickNextPrevDots: 100;

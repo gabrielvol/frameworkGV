@@ -2,34 +2,68 @@
    Nav Settings | Etc [settingsNav.scss]
    ========================================================================== */
 .navMain{
-    li{        
+    li{
         a, .topLevelItem{
             font-family: $navFontFamily;
         }
+        
         &.current{
             a, .topLevelItem{
                 font-family: $navSelectedFontFamily;
             }            
         }     
-        @include beforeTablet{
+    }
+   
+    @include beforeTablet{
+        .hamb{
+            @include transition(1s);    
+            box-sizing: border-box;        
+            
+            &.openNav{
+                z-index: $zIndexNavHamb;
+                opacity: 1;
+            
+                &.clicked{
+                    opacity: 0;
+                }      
+            }
+            
+            &.closeNav{
+                z-index: $zIndexNavCloseNav;   
+                display: none;             
+            }
+        }
+        
+        li{
             a, .topLevelItem{
                 color: $navFontColourBT;
             }
+            
             &.current{
                 a, .topLevelItem{
                     color: $navSelectedFontColourBT;
                 }            
             }            
         }
-        @include afterTablet{
+    }
+    
+    @include afterTablet{
+        .closeNav{
+            display: $none;
+        }
+        
+        li{
             background: $bgNavItem;
+            
             a, .topLevelItem{
                 background: $bgNavItemAnchor;
                 color: $navFontColour;
             }
+            
             .topLevelItem{
                 cursor: default;
             }
+            
             &.current{
                 background: $bgNavSelectedItem;
                 a, .topLevelItem{
@@ -38,23 +72,28 @@
                 }            
             }             
         }
-        @include afterTabletLandscape{
+    }   
+    
+    @include afterTabletLandscape{
+        li{
             a, .topLevelItem{
                 &:focus, &:hover{
                     background-color: $bgNavItemAnchorHover;
                     color: $navFontColourHover;
                 }
             }
+            
             &.current{
                 a, .topLevelItem{
                     &, &:focus, &:hover{
                         color: $navSelectedFontColour;
                     }
+                    
                     &:focus, &:hover{
                         background-color: $bgNavSelectedAnchorHover;
                     }
                 }            
             }           
-        }
+        }          
     }
 }

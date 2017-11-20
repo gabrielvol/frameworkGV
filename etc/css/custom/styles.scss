@@ -71,15 +71,6 @@
 
 @import "../scss/settingsContainer";
 
-@import "../scss/settingsNav";
-
-@import "../scss/settingsForms";
-@import "../scss/resetFormsNiceIt";
-
-@import "../scss/settingsTables";
-
-@import "../scss/settingsModalPopups";
-
 @import "stylesPrint";
 
 @import "stylesGlobal";
@@ -89,12 +80,16 @@
 
 @import "settingsLists";
 
+@import "../scss/settingsForms";
 @import "stylesForms";
+@import "../scss/resetFormsNiceIt";
 @import "stylesFormsNiceIt";
 @import "stylesSearchForm";
 
+@import "../scss/settingsTables";
 @import "stylesTables";
 
+@import "../scss/settingsModalPopups";
 @import "stylesPopups";
 
 @import "stylesSlider";
@@ -102,9 +97,10 @@
 @import "stylesHeader";
 @import "stylesLanguageSwitch";
 @import "stylesSocial";
-
-@import "stylesNav";
 @import "stylesFooter";
+
+@import "../scss/settingsNav";
+@import "stylesNav";
 
 @import "stylesIndex";
 //@import "styles Section";
