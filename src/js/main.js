@@ -31,6 +31,7 @@ $(document).ready(function () {
         $(this).closest("#header").find(".lang").toggleClass('clicked');
         $(this).closest("#nav").find(".modalNav").hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
+        $(this).closest("#nav").find(".subMenu").removeClass('open');
         $(this).hide("fast");
     });  
 
@@ -39,7 +40,12 @@ $(document).ready(function () {
         $(this).closest("#header").find(".lang").toggleClass('clicked');
         $(this).hide("fast");        
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
+        $(this).closest("#nav").find(".subMenu").removeClass('open');
         $(this).closest("#nav").find(".closeNav").hide("fast");
+    });   
+
+    $('.hasSub').click(function () {
+        $(this).find(".subMenu").toggleClass('open');
     });  
     
     // Acciones al hover en un item con submenú
