@@ -16,13 +16,13 @@ $navDrawerWidth: 70vw;
         .hamb{
             @include borderRadius($navBorderRadius); 
             @include posTR(0, 0);
-            border: 1px solid $bcBlueL!important;
 
             &.openNav{
                 width: 90px;
                 height: 40px;
                 background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
                 background-size: 15px;
+                border: 1px solid $bcBlueL!important;
                 padding: 0 10px 0 30px;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
@@ -37,6 +37,7 @@ $navDrawerWidth: 70vw;
                 @include squareSize(45px);
                 background: $bgWhite url('/nuevo/img/ic_navClose.svg') no-repeat center center;
                 background-size: 20px;
+                border: 2px solid $bcBlueL!important;
             }
         }
         

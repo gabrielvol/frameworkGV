@@ -46,6 +46,12 @@ ul{
             text-align: center;
         }
         
+        .topLevelItem{
+            &.open{
+                background: transparent url('/nuevo/img/ic_arrowNavL.svg') no-repeat 10px center;
+            }
+        }
+        
         & + li{
             @include borderStyleT($bcWhite);
         }
