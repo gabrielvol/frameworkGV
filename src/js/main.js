@@ -19,10 +19,10 @@ $(document).ready(function () {
     // Hamburger Drawer
     $(".openNav").click(function () {
         $(this).toggleClass('clicked');
-        $(this).closest("#header").find(".lang").toggleClass('clicked');
         $(this).closest("#nav").find(".modalNav").show( "slow", function() {
             $(this).closest("#nav").find(".mainMenu").toggleClass('open');
-            $(this).closest("#nav").find(".closeNav").show("slow");
+            $(this).closest("#nav").find(".closeNav").show("fast");
+            $(this).closest("#header").find(".lang").toggleClass('clicked');
         });
     });      
 
@@ -46,6 +46,7 @@ $(document).ready(function () {
 
     $('.hasSub').click(function () {
         $(this).find(".subMenu").toggleClass('open');
+        $(this).find(".topLevelItem").toggleClass('open');
     });  
     
     // Acciones al hover en un item con submenú
