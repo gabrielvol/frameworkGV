@@ -1,5 +1,5 @@
 <nav id="nav" class="navMain container pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>">
-    <button class="hamb openNav pAbs displayNone displayBlockBT alignCenter upperCase"><?php echo _("Men&uacute;"); ?></button>
+    <button class="hamb openNav pAbs displayNone displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
     <button class="hamb closeNav pAbs indentedText"><?php echo _("Cerrar"); ?></button>
     <ul class="mainMenu displayNoneBT unstyled horizontalAT clearfix">
         <li class="<?php if($navCurrent == 1) { echo "current"; } ?>">

@@ -24,7 +24,7 @@ $(document).ready(function () {
             $(this).closest("#nav").find(".closeNav").show("fast");
             $(this).closest("#header").find(".lang").toggleClass('clicked');
         });
-    });      
+    });
 
     $('.closeNav').click(function () {
         $(this).closest("#nav").find(".openNav").toggleClass('clicked');
@@ -33,21 +33,27 @@ $(document).ready(function () {
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
         $(this).hide("fast");
-    });  
+        $(this).closest("#nav").find(".openNav").attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+    });
 
     $('.modalNav').click(function () {
         $(this).closest("#nav").find(".openNav").toggleClass('clicked');
         $(this).closest("#header").find(".lang").toggleClass('clicked');
-        $(this).hide("fast");        
+        $(this).hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
         $(this).closest("#nav").find(".closeNav").hide("fast");
-    });   
+        $(this).closest("#nav").find(".openNav").attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+    });
 
-    $('.hasSub').click(function () {
-        $(this).find(".subMenu").toggleClass('open');
-        $(this).find(".topLevelItem").toggleClass('open');
-    });  
+    $('.topLevelItem').click(function () {
+        $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
+        $(this).toggleClass('open');
+    });
     
     // Acciones al hover en un item con submenú
     $('.hasSub').hover(function () {
