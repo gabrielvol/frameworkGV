@@ -19,7 +19,7 @@ $(document).ready(function () {
     // Hamburger Drawer
     $(".openNav").click(function () {
         $(this).toggleClass('clicked');
-        $(this).closest("#nav").find(".modalNav").show( "slow", function() {
+        $(this).closest("#nav").find(".modalNav").show( "100", function() {
             $(this).closest("#nav").find(".mainMenu").toggleClass('open');
             $(this).closest("#nav").find(".closeNav").show("fast");
             $(this).closest("#header").find(".lang").toggleClass('clicked');
