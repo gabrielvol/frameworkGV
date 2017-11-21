@@ -12,13 +12,13 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slick mask horizontal clearfix" role="slider">
             <li><img data-lazy="/framework/img/img_slide01.png" alt="Slick"></li>
             <li><img data-lazy="/framework/img/img_slide02.png" alt="Slick"></li>
             <li><img data-lazy="/framework/img/img_slide03.png" alt="Slick"></li>
         </ul>
         
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slick mask horizontal clearfix" role="slider">
             <li><img src="/framework/img/img_slide01.png" alt="Slick"></li>
             <li><img src="/framework/img/img_slide02.png" alt="Slick"></li>
             <li><img src="/framework/img/img_slide03.png" alt="Slick"></li>
