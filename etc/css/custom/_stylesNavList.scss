@@ -3,7 +3,7 @@
    ========================================================================== */
 ul{
     @include borderRadius($navBorderRadius);   
-    z-index: $zIndexNavUl;
+    z-index: $zIndexNavUlList;
     position: relative;
     top: 50px;
     width: $navWidthBT; 

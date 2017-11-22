@@ -2618,7 +2618,7 @@ table.tableRounded {
       position: fixed;
       width: 200px;
       /* =============================================================================
-   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
+   Nav List Styles | Custom [stylesNavList.scss]
    ========================================================================== */ }
       .navMain .hamb {
         border-radius: 4px;
@@ -2643,44 +2643,30 @@ table.tableRounded {
           background-size: 20px;
           border: 2px solid #999 !important; }
       .navMain ul {
-        z-index: 9100;
-        position: fixed;
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-        .navMain ul, .navMain ul .subMenu {
-          transition: all 0.5s ease;
-          top: 0;
-          bottom: 0; }
-        .navMain ul .subMenu {
-          z-index: 9200;
-          position: relative;
-          top: 0;
-          right: 70vw;
-          width: calc(70vw - 10px);
-          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-          .navMain ul .subMenu.open {
-            right: 5px; }
-      .navMain > ul {
-        box-sizing: border-box;
-        left: calc(-1 * 70vw);
-        width: calc(70vw - 5px);
-        padding: 60px 5px 0;
-        overflow: hidden; }
-        .navMain > ul li {
+        border-radius: 4px;
+        z-index: 190;
+        position: relative;
+        top: 50px;
+        width: 200px;
+        height: auto !important;
+        background-color: #fff;
+        box-shadow: 0 0 4px #000; }
+        .navMain ul li {
           float: none !important; }
-          .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
+          .navMain ul li, .navMain ul li a {
             height: 45px;
             line-height: 45px; }
-          .navMain > ul li a, .navMain > ul li .topLevelItem {
-            font-size: 1rem;
-            text-align: center; }
-          .navMain > ul li .topLevelItem.open {
-            background: transparent url("/nuevo/img/ic_arrowNavL.svg") no-repeat 10px center; }
-          .navMain > ul li + li {
-            border-top: 1px solid #fff; }
-        .navMain > ul.open {
-          left: 0; } }
+          .navMain ul li:first-child a {
+            padding-top: 3px; }
+          .navMain ul li:nth-child(even) {
+            background-color: #f4f4f4; }
+          .navMain ul li:last-child, .navMain ul li:last-child a {
+            border-radius: 0 0 4px 4px; }
+          .navMain ul li:last-child a {
+            padding-bottom: 3px; }
+          .navMain ul li a {
+            font-size: 0.8rem;
+            text-align: center; } }
   @media (min-width: 768px) {
     .navMain li, .navMain li a {
       height: 60px;

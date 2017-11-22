@@ -41,8 +41,8 @@ $navDrawerWidth: 70vw;
             }
         }
         
-        @import "stylesNavDrawer";
-        // @import "stylesNavList";
+        // @import "stylesNavDrawer";
+        @import "stylesNavList";
     }    
     
     @include afterTablet{
