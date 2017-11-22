@@ -19,7 +19,8 @@ ul{
         top: 0;
         right: $navDrawerWidth;
         width: calc(#{$navDrawerWidth} - 10px);
-        background-color: $bgBlue;
+        background-image: $bgGradWhiteEighty;
+        filter: $bgGradWhiteEightyFilter;
         
         &.open{
             right: 5px;

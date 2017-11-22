@@ -195,6 +195,9 @@ body {
 /* =============================================================================
    Elements Reset/Settings | Etc [resetMain.scss]
    ========================================================================== */
+article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button {
+  display: block; }
+
 iframe {
   border: none !important; }
 
@@ -830,8 +833,7 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   bottom: 0;
   left: 0; }
 
-article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button,
-.callToAction, .displayBlock {
+.displayBlock {
   display: block !important; }
 
 .displayInline {
@@ -1280,42 +1282,105 @@ article, article::before, article::after, details, details::before, details::aft
     width: 320px; } }
 
 /* =============================================================================
-   Nav Settings | Etc [settingsNav.scss]
+   Print Styles | Custom [stylesPrint.scss]
    ========================================================================== */
-.navMain li a, .navMain li .topLevelItem {
-  font-family: Arial; }
+/* =============================================================================
+   Global Styles | Custom [stylesGlobal.scss]
+   ========================================================================== */
+.callToAction {
+  border: 2px solid #999;
+  transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
+  display: block;
+  background-color: #999;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  font-family: Arial;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center; }
+  .callToAction:focus, .callToAction:hover {
+    background-color: #c6c6c6;
+    border-color: #333;
+    color: #666; }
+  @media (max-width: 420px) {
+    .callToAction {
+      width: 100% !important; } }
+  @media (max-width: 767px) {
+    .callToAction {
+      height: auto;
+      line-height: 1.3; } }
+  @media (min-width: 768px) {
+    .callToAction {
+      height: 50px;
+      line-height: 50px; } }
 
-.navMain li.current a, .navMain li.current .topLevelItem {
-  font-family: Arial; }
+/* =============================================================================
+   Internas Styles | Custom
+   ========================================================================== */
+/* =============================================================================
+   Colour Placeholders | Custom [coloursPlaceholders.scss]
+   ========================================================================== */
+/* =============================================================================
+   Gradient Colours | Custom [coloursGradients.scss]
+   ========================================================================== */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+.bgGradWhiteEighty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
 
-@media (max-width: 767px) {
-  .navMain li a, .navMain li .topLevelItem {
-    color: #999; }
-  .navMain li.current a, .navMain li.current .topLevelItem {
-    color: #999; } }
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
+.bgGradBlackFifty {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
+
+/* =============================================================================
+   Settings Lists | Custom [settingsLists.scss]
+   ========================================================================== */
+ul.hyphenated li {
+  position: relative; }
+  ul.hyphenated li::before {
+    content: "- "; }
+
+.ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
+  position: relative; }
+
+.ulResp2 li img, .ulResp3 li img, .ulResp4 li img {
+  margin-right: auto !important;
+  margin-left: auto !important; }
+
+@media (max-width: 420px) {
+  .ulResp2 li, .ulResp3 li, .ulResp4 li {
+    width: 100%;
+    float: none !important; }
+    .ulResp2 li img, .ulResp3 li img, .ulResp4 li img {
+      width: 100%; } }
+
+@media (min-width: 421px) and (max-width: 767px) {
+  .ulResp2 li:nth-child(odd):last-child, .ulResp3 li:nth-child(odd):last-child, .ulResp4 li:nth-child(odd):last-child {
+    clear: both;
+    width: 100%;
+    float: none !important;
+    margin-right: auto !important;
+    margin-left: auto !important; } }
+
+@media (min-width: 421px) {
+  .ulResp2 li, .ulResp3 li, .ulResp4 li {
+    width: 50%; }
+    .ulResp2 li img, .ulResp3 li img, .ulResp4 li img {
+      width: auto; } }
 
 @media (min-width: 768px) {
-  .navMain li {
-    background: transparent; }
-    .navMain li a, .navMain li .topLevelItem {
-      background: transparent;
-      color: #999; }
-    .navMain li .topLevelItem {
-      cursor: default; }
-    .navMain li.current {
-      background: transparent; }
-      .navMain li.current a, .navMain li.current .topLevelItem {
-        background: transparent;
-        color: #666666; } }
+  .ulResp2 li:nth-child(n+3) {
+    margin-top: 40px; } }
 
-@media (min-width: 1024px) {
-  .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
-    background-color: transparent;
-    color: #666666; }
-  .navMain li.current a, .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
-    color: #666666; }
-  .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
-    background-color: transparent; } }
+@media (min-width: 768px) {
+  .ulResp3 li {
+    width: calc(100% / 3); } }
+
+@media (min-width: 768px) {
+  .ulResp4 li {
+    width: 25%; } }
 
 /* =============================================================================
    Form Settings | Etc [settingsForms.scss]
@@ -1428,288 +1493,6 @@ form input::focus-inner {
 
 form textarea {
   vertical-align: top; }
-
-/* =============================================================================
-   Forms NiceIt Reset/Settings | Etc [resetFormsNiceIt.scss]
-   ========================================================================== */
-form.niceIt input[type="text"],
-form.niceIt input[type="email"],
-form.niceIt input[type="search"],
-form.niceIt input[type="password"],
-form.niceIt input[type="url"],
-form.niceIt input[type="number"] {
-  padding-top: 0;
-  padding-bottom: 0; }
-
-form.niceIt .fmSelect {
-  cursor: pointer;
-  *position: relative; }
-  form.niceIt .fmSelect, form.niceIt .fmSelect li, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
-    display: block !important; }
-  form.niceIt .fmSelect, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
-    font-weight: 400;
-    text-transform: uppercase; }
-  form.niceIt .fmSelect strong {
-    overflow: hidden; }
-    form.niceIt .fmSelect strong span cite {
-      font-style: normal !important; }
-  form.niceIt .fmSelect, form.niceIt .fmSelect li {
-    position: relative; }
-  form.niceIt .fmSelect ul {
-    display: none;
-    margin: -1px 0 0 -11px;
-    overflow: hidden;
-    *position: absolute; }
-    form.niceIt .fmSelect ul li {
-      list-style: none;
-      width: 100%;
-      height: auto; }
-
-form.niceIt .fmCheckbox {
-  display: block !important;
-  cursor: pointer; }
-
-form.niceIt .fnFileInput {
-  display: block !important; }
-  form.niceIt .fnFileInput span {
-    position: relative;
-    display: block !important; }
-    form.niceIt .fnFileInput span cite, form.niceIt .fnFileInput span strong {
-      position: absolute;
-      display: block !important; }
-    form.niceIt .fnFileInput span cite {
-      z-index: 10;
-      font-style: normal; }
-    form.niceIt .fnFileInput span strong {
-      z-index: 20;
-      text-indent: -9999px; }
-      form.niceIt .fnFileInput span strong input {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=0)";
-        position: relative;
-        cursor: pointer; }
-
-form.niceIt .fmRadio {
-  font-size: 0;
-  line-height: 1%;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* =============================================================================
-   Tables Settings | Etc [settingsTables.scss]
-   ========================================================================== */
-@media (max-width: 767px) {
-  table {
-    width: 100% !important; }
-    table.tableWidthBig {
-      width: 1000px; }
-    table.tableWidthSmall {
-      width: 500px; } }
-
-@media (min-width: 768px) {
-  table {
-    width: 700px; } }
-
-@media (min-width: 1024px) {
-  table {
-    width: 970px; }
-    table.tableWidthSmall {
-      width: 760px; } }
-
-table th, table td {
-  vertical-align: middle; }
-
-.tableRounded {
-  border-radius: 12px;
-  border-collapse: separate; }
-  .tableRounded tfoot td:first-child {
-    border-radius: 0 0 0 12px; }
-  .tableRounded tfoot td:last-child {
-    border-radius: 0 0 12px 0; }
-  .tableRounded tr th:first-child {
-    border-radius: 12px 0 0 0; }
-  .tableRounded tr th:last-child {
-    border-radius: 0 12px 0 0; }
-  .tableRounded tr:last-child td {
-    border-bottom: 0 !important; }
-
-.tableStriped thead tr, .tableStriped tfoot tr {
-  background-color: #aaa; }
-
-.tableStriped tbody tr {
-  background-color: #fff; }
-  .tableStriped tbody tr:nth-child(odd) {
-    background-color: #eee; }
-
-@media (max-width: 767px) {
-  table {
-    width: 100% !important; }
-    table thead, table tfoot {
-      display: none; }
-    table tr, table td {
-      display: block; }
-    table tr {
-      margin-top: 0; }
-    table td {
-      position: relative; }
-      table td::before {
-        content: attr(data-label);
-        position: absolute; }
-  .tableRounded tr:last-child {
-    border: none !important; }
-  .tableRounded td:last-child {
-    border: none !important; }
-  .table-responsive {
-    width: 98%;
-    overflow-x: scroll; }
-    .table-responsive table {
-      position: relative;
-      display: table; }
-      .table-responsive table thead, .table-responsive table tbody {
-        display: table-row-group; }
-      .table-responsive table tfoot {
-        display: none; }
-      .table-responsive table td, .table-responsive table th {
-        display: table-cell; }
-      .table-responsive table tr {
-        display: table-row; }
-      .table-responsive table td::before {
-        content: '';
-        float: none; }
-    .table-responsive .tableStriped tr {
-      border: none !important; }
-    .table-responsive .tableStriped td {
-      background: none !important; } }
-
-/* =============================================================================
-   Modal y Popups Settings | Etc [settingsModalPopups.scss]
-   ========================================================================== */
-.modalBG, .modalNav {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  z-index: 9000; }
-
-.modalBG {
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
-  background-color: #000; }
-
-.modalNav {
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
-  background-color: #000; }
-
-.popup {
-  z-index: 9100;
-  left: 50%; }
-  .popup .close {
-    z-index: 9200; }
-
-/* =============================================================================
-   Print Styles | Custom [stylesPrint.scss]
-   ========================================================================== */
-/* =============================================================================
-   Global Styles | Custom [stylesGlobal.scss]
-   ========================================================================== */
-.callToAction {
-  border: 2px solid #999;
-  transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
-  background-color: #999;
-  margin-right: auto;
-  margin-left: auto;
-  color: #fff;
-  font-family: Arial;
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center; }
-  .callToAction:focus, .callToAction:hover {
-    background-color: #c6c6c6;
-    border-color: #333;
-    color: #666; }
-  @media (max-width: 420px) {
-    .callToAction {
-      width: 100% !important; } }
-  @media (max-width: 767px) {
-    .callToAction {
-      height: auto;
-      line-height: 1.3; } }
-  @media (min-width: 768px) {
-    .callToAction {
-      height: 50px;
-      line-height: 50px; } }
-
-/* =============================================================================
-   Internas Styles | Custom
-   ========================================================================== */
-/* =============================================================================
-   Colour Placeholders | Custom [coloursPlaceholders.scss]
-   ========================================================================== */
-/* =============================================================================
-   Gradient Colours | Custom [coloursGradients.scss]
-   ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-.bgGradWhiteEighty {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-.bgGradBlackFifty {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
-
-/* =============================================================================
-   Settings Lists | Custom [settingsLists.scss]
-   ========================================================================== */
-ul.hyphenated li {
-  position: relative; }
-  ul.hyphenated li::before {
-    content: "- "; }
-
-.ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
-  position: relative; }
-
-.ulResp2 li img, .ulResp3 li img, .ulResp4 li img {
-  margin-right: auto !important;
-  margin-left: auto !important; }
-
-@media (max-width: 420px) {
-  .ulResp2 li, .ulResp3 li, .ulResp4 li {
-    width: 100%;
-    float: none !important; }
-    .ulResp2 li img, .ulResp3 li img, .ulResp4 li img {
-      width: 100%; } }
-
-@media (min-width: 421px) and (max-width: 767px) {
-  .ulResp2 li:nth-child(odd):last-child, .ulResp3 li:nth-child(odd):last-child, .ulResp4 li:nth-child(odd):last-child {
-    clear: both;
-    width: 100%;
-    float: none !important;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-@media (min-width: 421px) {
-  .ulResp2 li, .ulResp3 li, .ulResp4 li {
-    width: 50%; }
-    .ulResp2 li img, .ulResp3 li img, .ulResp4 li img {
-      width: auto; } }
-
-@media (min-width: 768px) {
-  .ulResp2 li:nth-child(n+3) {
-    margin-top: 40px; } }
-
-@media (min-width: 768px) {
-  .ulResp3 li {
-    width: calc(100% / 3); } }
-
-@media (min-width: 768px) {
-  .ulResp4 li {
-    width: 25%; } }
 
 /* =============================================================================
    Forms Styles | Custom [stylesForms.scss]
@@ -2033,6 +1816,73 @@ button {
   color: #fff; }
 
 /* =============================================================================
+   Forms NiceIt Reset/Settings | Etc [resetFormsNiceIt.scss]
+   ========================================================================== */
+form.niceIt input[type="text"],
+form.niceIt input[type="email"],
+form.niceIt input[type="search"],
+form.niceIt input[type="password"],
+form.niceIt input[type="url"],
+form.niceIt input[type="number"] {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+form.niceIt .fmSelect {
+  cursor: pointer;
+  *position: relative; }
+  form.niceIt .fmSelect, form.niceIt .fmSelect li, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
+    display: block !important; }
+  form.niceIt .fmSelect, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
+    font-weight: 400;
+    text-transform: uppercase; }
+  form.niceIt .fmSelect strong {
+    overflow: hidden; }
+    form.niceIt .fmSelect strong span cite {
+      font-style: normal !important; }
+  form.niceIt .fmSelect, form.niceIt .fmSelect li {
+    position: relative; }
+  form.niceIt .fmSelect ul {
+    display: none;
+    margin: -1px 0 0 -11px;
+    overflow: hidden;
+    *position: absolute; }
+    form.niceIt .fmSelect ul li {
+      list-style: none;
+      width: 100%;
+      height: auto; }
+
+form.niceIt .fmCheckbox {
+  display: block !important;
+  cursor: pointer; }
+
+form.niceIt .fnFileInput {
+  display: block !important; }
+  form.niceIt .fnFileInput span {
+    position: relative;
+    display: block !important; }
+    form.niceIt .fnFileInput span cite, form.niceIt .fnFileInput span strong {
+      position: absolute;
+      display: block !important; }
+    form.niceIt .fnFileInput span cite {
+      z-index: 10;
+      font-style: normal; }
+    form.niceIt .fnFileInput span strong {
+      z-index: 20;
+      text-indent: -9999px; }
+      form.niceIt .fnFileInput span strong input {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=0)";
+        position: relative;
+        cursor: pointer; }
+
+form.niceIt .fmRadio {
+  font-size: 0;
+  line-height: 1%;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* =============================================================================
    Forms NiceIt Styles | Custom [stylesFormsNiceIt.scss]
    ========================================================================== */
 form.niceIt {
@@ -2158,6 +2008,92 @@ form.niceIt {
           width: 30px; } }
 
 /* =============================================================================
+   Tables Settings | Etc [settingsTables.scss]
+   ========================================================================== */
+@media (max-width: 767px) {
+  table {
+    width: 100% !important; }
+    table.tableWidthBig {
+      width: 1000px; }
+    table.tableWidthSmall {
+      width: 500px; } }
+
+@media (min-width: 768px) {
+  table {
+    width: 700px; } }
+
+@media (min-width: 1024px) {
+  table {
+    width: 970px; }
+    table.tableWidthSmall {
+      width: 760px; } }
+
+table th, table td {
+  vertical-align: middle; }
+
+.tableRounded {
+  border-radius: 12px;
+  border-collapse: separate; }
+  .tableRounded tfoot td:first-child {
+    border-radius: 0 0 0 12px; }
+  .tableRounded tfoot td:last-child {
+    border-radius: 0 0 12px 0; }
+  .tableRounded tr th:first-child {
+    border-radius: 12px 0 0 0; }
+  .tableRounded tr th:last-child {
+    border-radius: 0 12px 0 0; }
+  .tableRounded tr:last-child td {
+    border-bottom: 0 !important; }
+
+.tableStriped thead tr, .tableStriped tfoot tr {
+  background-color: #aaa; }
+
+.tableStriped tbody tr {
+  background-color: #fff; }
+  .tableStriped tbody tr:nth-child(odd) {
+    background-color: #eee; }
+
+@media (max-width: 767px) {
+  table {
+    width: 100% !important; }
+    table thead, table tfoot {
+      display: none; }
+    table tr, table td {
+      display: block; }
+    table tr {
+      margin-top: 0; }
+    table td {
+      position: relative; }
+      table td::before {
+        content: attr(data-label);
+        position: absolute; }
+  .tableRounded tr:last-child {
+    border: none !important; }
+  .tableRounded td:last-child {
+    border: none !important; }
+  .table-responsive {
+    width: 98%;
+    overflow-x: scroll; }
+    .table-responsive table {
+      position: relative;
+      display: table; }
+      .table-responsive table thead, .table-responsive table tbody {
+        display: table-row-group; }
+      .table-responsive table tfoot {
+        display: none; }
+      .table-responsive table td, .table-responsive table th {
+        display: table-cell; }
+      .table-responsive table tr {
+        display: table-row; }
+      .table-responsive table td::before {
+        content: '';
+        float: none; }
+    .table-responsive .tableStriped tr {
+      border: none !important; }
+    .table-responsive .tableStriped td {
+      background: none !important; } }
+
+/* =============================================================================
    Tables Styles | Custom [stylesTables.scss]
    ========================================================================== */
 @media (max-width: 767px) {
@@ -2265,6 +2201,39 @@ table.tableRounded {
         border-bottom: 0 solid #dedede; }
       .table-responsive .tableRounded tr:last-child td {
         border-bottom: 0 solid #dedede !important; } }
+
+/* =============================================================================
+   Modal y Popups Settings | Etc [settingsModalPopups.scss]
+   ========================================================================== */
+.modalBG, .modalNav {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9000; }
+
+.modalBG {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
+  background-color: #000; }
+
+.modalNav {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=90)";
+  display: none;
+  background-color: #000; }
+  @media (min-width: 768px) {
+    .modalNav {
+      display: none !important; } }
+
+.popup {
+  z-index: 9100;
+  left: 50%; }
+  .popup .close {
+    z-index: 9200; }
 
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
@@ -2475,13 +2444,20 @@ table.tableRounded {
   #header .logoHeader {
     z-index: 100;
     margin: 0 !important; }
+  @media (max-width: 420px) {
+    #header .logoHeader {
+      width: 90%;
+      margin-right: auto !important;
+      margin-left: auto !important; }
+      #header .logoHeader a, #header .logoHeader img {
+        width: 100%; } }
+  @media (min-width: 421px) and (max-width: 767px) {
+    #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+      width: 150px; } }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
-      padding-top: 20px;
-      height: 150px; }
-      #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
-        width: 150px; } }
+      padding-top: 20px; } }
   @media (min-width: 768px) {
     #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
       width: 150px; }
@@ -2513,7 +2489,7 @@ table.tableRounded {
     .lang {
       top: 15px;
       left: 20px;
-      position: fixed; }
+      position: absolute; }
       .lang li, .lang li a {
         width: 25px;
         height: 25px; }
@@ -2531,7 +2507,9 @@ table.tableRounded {
           width: 38px;
           height: 25px; }
       .lang li + li {
-        margin-left: 15px; } }
+        margin-left: 15px; }
+      .lang.clicked {
+        position: fixed; } }
   @media (min-width: 768px) {
     .lang {
       top: -46px;
@@ -2572,6 +2550,63 @@ table.tableRounded {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=100)"; }
 
 /* =============================================================================
+   Footer Styles | Custom [stylesFooter.scss]
+   ========================================================================== */
+#footer .logoFooter {
+  width: 100px; }
+
+/* =============================================================================
+   Nav Settings | Etc [settingsNav.scss]
+   ========================================================================== */
+.navMain li a, .navMain li .topLevelItem {
+  font-family: Arial; }
+
+.navMain li.current a, .navMain li.current .topLevelItem {
+  font-family: Arial; }
+
+@media (max-width: 767px) {
+  .navMain .hamb {
+    transition: all 1s ease;
+    box-sizing: border-box; }
+    .navMain .hamb.openNav {
+      z-index: 200;
+      opacity: 1; }
+      .navMain .hamb.openNav.clicked {
+        opacity: 0; }
+    .navMain .hamb.closeNav {
+      z-index: 9200;
+      display: none; }
+  .navMain li a, .navMain li .topLevelItem {
+    color: #999; }
+  .navMain li.current a, .navMain li.current .topLevelItem {
+    color: #999; } }
+
+@media (min-width: 768px) {
+  .navMain .closeNav {
+    display: none !important; }
+  .navMain li {
+    background: transparent; }
+    .navMain li a, .navMain li .topLevelItem {
+      background: transparent;
+      color: #999; }
+    .navMain li .topLevelItem {
+      cursor: default; }
+    .navMain li.current {
+      background: transparent; }
+      .navMain li.current a, .navMain li.current .topLevelItem {
+        background: transparent;
+        color: #666666; } }
+
+@media (min-width: 1024px) {
+  .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
+    background-color: transparent;
+    color: #666666; }
+  .navMain li.current a, .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
+    color: #666666; }
+  .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
+    background-color: transparent; } }
+
+/* =============================================================================
    Nav Styles | Custom [stylesNav.scss]
    ========================================================================== */
 .navMain {
@@ -2581,50 +2616,71 @@ table.tableRounded {
       top: 10px;
       right: 10px;
       position: fixed;
-      width: 200px; }
-      .navMain .hamb, .navMain ul {
-        border-radius: 4px; }
+      width: 200px;
+      /* =============================================================================
+   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
+   ========================================================================== */ }
       .navMain .hamb {
+        border-radius: 4px;
         top: 0;
-        right: 0;
-        box-sizing: border-box;
-        z-index: 200;
-        width: 90px;
-        height: 45px;
-        background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
-        background-size: 15px;
-        border: 1px solid #999 !important;
-        padding: 0 10px 0 30px;
-        color: #333;
-        font-family: Arial;
-        font-size: 1rem;
-        line-height: 43px; }
+        right: 0; }
+        .navMain .hamb.openNav {
+          width: 90px;
+          height: 40px;
+          background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
+          background-size: 15px;
+          border: 1px solid #999 !important;
+          padding: 0 10px 0 30px;
+          color: #333;
+          font-family: Arial;
+          font-size: 1rem;
+          line-height: 45px; }
+        .navMain .hamb.closeNav {
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          background: #fff url("/nuevo/img/ic_navClose.svg") no-repeat center center;
+          background-size: 20px;
+          border: 2px solid #999 !important; }
       .navMain ul {
-        z-index: 190;
-        position: relative;
-        top: 50px;
-        width: 200px;
-        height: auto !important;
-        background-color: #fff;
-        box-shadow: 0 0 4px #000; }
-        .navMain ul li {
+        z-index: 9100;
+        position: fixed;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+        .navMain ul, .navMain ul .subMenu {
+          transition: all 0.5s ease;
+          top: 0;
+          bottom: 0; }
+        .navMain ul .subMenu {
+          z-index: 9200;
+          position: relative;
+          top: 0;
+          right: 70vw;
+          width: calc(70vw - 10px);
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+          .navMain ul .subMenu.open {
+            right: 5px; }
+      .navMain > ul {
+        box-sizing: border-box;
+        left: calc(-1 * 70vw);
+        width: calc(70vw - 5px);
+        padding: 60px 5px 0;
+        overflow: hidden; }
+        .navMain > ul li {
           float: none !important; }
-          .navMain ul li, .navMain ul li a {
+          .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
             height: 45px;
             line-height: 45px; }
-          .navMain ul li:first-child a {
-            padding-top: 3px; }
-          .navMain ul li:nth-child(even) {
-            background-color: #f4f4f4; }
-          .navMain ul li:last-child, .navMain ul li:last-child a {
-            border-radius: 0 0 4px 4px; }
-          .navMain ul li:last-child a {
-            padding-bottom: 3px; }
-          .navMain ul li a {
-            font-size: 0.8rem;
+          .navMain > ul li a, .navMain > ul li .topLevelItem {
+            font-size: 1rem;
             text-align: center; }
-      .navMain.clicked .hamb {
-        color: #333; } }
+          .navMain > ul li .topLevelItem.open {
+            background: transparent url("/nuevo/img/ic_arrowNavL.svg") no-repeat 10px center; }
+          .navMain > ul li + li {
+            border-top: 1px solid #fff; }
+        .navMain > ul.open {
+          left: 0; } }
   @media (min-width: 768px) {
     .navMain li, .navMain li a {
       height: 60px;
@@ -2643,12 +2699,6 @@ table.tableRounded {
         width: 700px;
         margin-right: auto !important;
         margin-left: auto !important; } }
-
-/* =============================================================================
-   Footer Styles | Custom [stylesFooter.scss]
-   ========================================================================== */
-#footer .logoFooter {
-  width: 100px; }
 
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
