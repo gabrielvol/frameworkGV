@@ -8,7 +8,7 @@
         ?> Company y Asociados
     </p>
         
-    <img src="/nuevo/img/logo.svg" class="logoFooter displayBlock" alt="<?php echo _("Logo de"); ?>">
+    <img src="/nuevo/img/logo.svg" class="logoFooter displayBlock" alt="<?php echo _("Logo de"); ?>.">
     
     <?php include('social.inc.php'); ?>
 </footer>
