@@ -4,13 +4,13 @@
     $mandatoryMessageClasses = 'displayNone';
     
     //Variables Globlales de Status
-    $statusIniGlobal    = _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad');
+    $statusIniGlobal    = _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.');
     $statusIniGlobalA    = _('Complete el formulario.');
-    $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad');
+    $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad.');
     
-    $statusOKGlobal     = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias');
-    $statusErrorGlobalA = _('Hubo un error al enviar el mensaje');
-    $statusErrorGlobalB = _('Intente nuevamente m&aacute;s tarde');
+    $statusOKGlobal     = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
+    $statusErrorGlobalA = _('Hubo un error al enviar el mensaje.');
+    $statusErrorGlobalB = _('Intente nuevamente m&aacute;s tarde.');
 
     //Status Ini
     //$status = '<p class="status">'.$statusIniGlobal.'</p>';
@@ -66,18 +66,18 @@
         
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
-        $errorNombre     = '<p>'._("Por favor, ingrese su nombre").'</p>';
-        $errorDireccion  = '<p>'._("Por favor, ingrese su direcci&oacute;n").'</p>';
-        $errorLocalidad  = '<p>'._("Por favor, ingrese su localidad").'</p>';
-        $errorProvincia  = '<p>'._("Por favor, ingrese su provincia").'</p>';
-        $errorFecha      = '<p>'._("Por favor, ingrese una fecha").'</p>';
-        $errorEmail      = '<p>'._("Por favor, ingrese su correo electr&oacute;nico").'</p>';
-        $errorWebsite    = '<p>'._("Por favor, ingrese su sitio web").'</p>';
-        $errorFacebook   = '<p>'._("Por favor, ingrese su perfil de Facebook").'</p>';        
-        $errorTelefono   = '<p>'._("Por favor, ingrese un n&uacute;mero de tel&eacute;fono").'</p>';
-        $errorEmpresa    = '<p>'._("Por favor, ingrese el nombre de su empresa").'</p>';
-        $errorCargo      = '<p>'._("Por favor, ingrese su cargo").'</p>';
-        $errorRubro      = '<p>'._("Por favor, ingrese un rubro").'</p>';
+        $errorNombre     = '<p>'._("Por favor, ingrese su nombre.").'</p>';
+        $errorDireccion  = '<p>'._("Por favor, ingrese su direcci&oacute;n.").'</p>';
+        $errorLocalidad  = '<p>'._("Por favor, ingrese su localidad.").'</p>';
+        $errorProvincia  = '<p>'._("Por favor, ingrese su provincia.").'</p>';
+        $errorFecha      = '<p>'._("Por favor, indique la fecha deseada.").'</p>';
+        $errorEmail      = '<p>'._("Por favor, ingrese su direcci&oacute;n de correo.").'</p>';
+        $errorWebsite    = '<p>'._("Por favor, ingrese su sitio web.").'</p>';
+        $errorFacebook   = '<p>'._("Por favor, ingrese su perfil de Facebook.").'</p>';        
+        $errorTelefono   = '<p>'._("Por favor, ingrese su n&uacute;mero de tel&eacute;fono.").'</p>';
+        $errorEmpresa    = '<p>'._("Por favor, ingrese el nombre de su empresa.").'</p>';
+        $errorCargo      = '<p>'._("Por favor, ingrese su cargo.").'</p>';
+        $errorRubro      = '<p>'._("Por favor, ingrese un rubro.").'</p>';
 
         
         

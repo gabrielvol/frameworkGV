@@ -27,43 +27,43 @@
                 </div>
                 
                 <label for="nombre"><?php echo _("Nombre"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre'); ?>" <?php echo $autofocusNombre ?>>
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _("Ingrese su nombre"); ?>" <?php echo $autofocusNombre ?>>
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span>                
                 
                 <label for="apellido"><?php echo _("Apellido"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="<?php echo _('Ingrese su apellido'); ?>" <?php echo $autofocusApellido ?>>
+                <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="<?php echo _("Ingrese su apellido"); ?>" <?php echo $autofocusApellido ?>>
                 <span class="errorForm errorColour"><?php echo $errorApellido?></span>              
                 
                 <label for="nombre"><?php echo _("Nombre y Apellido"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _('Ingrese su nombre y apellido'); ?>" <?php echo $autofocusNombre ?>>
+                <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _("Ingrese su nombre y apellido"); ?>" <?php echo $autofocusNombre ?>>
                 <span class="errorForm errorColour"><?php echo $errorNombre ?></span> 
                 
                 <label for="direccion"><?php echo _("Direcci&oacute;n"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _('Ingrese su direcci&oacute;n'); ?>" <?php echo $autofocusDireccion ?>>
+                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _("Ingrese su direcci&oacute;n"); ?>" <?php echo $autofocusDireccion ?>>
                 <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
                 
                 <label for="direccion"><?php echo _("Domicilio"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _('Ingrese su domicilio'); ?>" <?php echo $autofocusDireccion ?>>
+                <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _("Ingrese su domicilio"); ?>" <?php echo $autofocusDireccion ?>>
                 <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>
                 
                 <label for="localidad"><?php echo _("Localidad"); ?></label>
-                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="<?php echo _('Ingrese su localidad'); ?>" <?php echo $autofocusLocalidad ?>>
+                <input type="text" name="localidad" id="localidad" class="localidad <?php echo $invalidFieldLocalidad ?>" value="<?php echo $_POST['localidad']; ?>" placeholder="<?php echo _("Ingrese su localidad"); ?>" <?php echo $autofocusLocalidad ?>>
                 <span class="errorForm errorColour"><?php echo $errorLocalidad ?></span>
 
                 <label for="provincia"><?php echo _("Provincia"); ?></label>
-                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="<?php echo _('Ingrese su provincia'); ?>" <?php echo $autofocusProvincia ?>>
+                <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="<?php echo _("Ingrese su provincia"); ?>" <?php echo $autofocusProvincia ?>>
                 <span class="errorForm errorColour"><?php echo $errorProvincia ?></span>
 
                 <label for="telefono"><?php echo _("Tel&eacute;fono"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="<?php echo _('Ingrese su n&uacute;mero de tel&eacute;fono'); ?>" <?php echo $autofocusTelefono ?>>
+                <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="<?php echo _("Ingrese su n&uacute;mero de tel&eacute;fono"); ?>" <?php echo $autofocusTelefono ?>>
                 <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>
 
                 <label for="email"><?php echo _("E-mail"); ?> <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="<?php echo _('Ingrese su e-mail'); ?>" <?php echo $autofocusEmail ?>>
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="<?php echo _("Ingrese su e-mail"); ?>" <?php echo $autofocusEmail ?>>
                 <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
 
                 <label for="email"><?php echo _("Correo electr&oacute;nico"); ?> <span class="redColour">*</span></label>
-                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="<?php echo _('Ingrese su correo electr&oacute;nico'); ?>" <?php echo $autofocusEmail ?>>
+                <input type="email" name="email" id="email" class="email <?php echo $invalidFieldEmail ?>" value="<?php echo $_POST['email']; ?>" placeholder="<?php echo _("Ingrese su correo electr&oacute;nico"); ?>" <?php echo $autofocusEmail ?>>
                 <span class="errorForm errorColour"><?php echo $errorEmail ?></span>
 
                 <label for="website">Sitio web</label>
@@ -75,11 +75,11 @@
                 <input type="url" name="facebook" id="facebook" class="facebook <?php echo $invalidFieldFacebook ?>" value="<?php echo $_POST['facebook']; ?>" placeholder="http://www.facebook.com/" <?php echo $autofocusFacebook ?>>
 
                 <label for="empresa"><?php echo _("Empresa"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="<?php echo _('Ingrese el nombre de su empresa'); ?>" <?php echo $autofocusEmpresa ?>>
+                <input type="text" name="empresa" id="empresa" class="empresa <?php echo $invalidFieldEmpresa ?>" value="<?php echo $_POST['empresa']; ?>" placeholder="<?php echo _("Ingrese el nombre de su empresa"); ?>" <?php echo $autofocusEmpresa ?>>
                 <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>
 
                 <label for="cargo"><?php echo _("Cargo"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="cargo" id="cargo" class="cargo <?php echo $invalidFieldCargo ?>" value="<?php echo $_POST['cargo']; ?>" placeholder="<?php echo _('Ingrese su cargo'); ?>" <?php echo $autofocusCargo ?>>
+                <input type="text" name="cargo" id="cargo" class="cargo <?php echo $invalidFieldCargo ?>" value="<?php echo $_POST['cargo']; ?>" placeholder="<?php echo _("Ingrese su cargo"); ?>" <?php echo $autofocusCargo ?>>
                 <span class="errorForm errorColour"><?php echo $errorCargo ?></span>
 
                 <label for="rubro"><?php echo _("Rubro"); ?> <span class="redColour">*</span></label>
@@ -87,7 +87,7 @@
                 <span class="errorForm errorColour"><?php echo $errorRubro ?></span>
 
                 <label for="fecha"><?php echo _("Fecha"); ?> <span class="redColour">*</span></label>
-                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="<?php echo _('Ingrese una fecha'); ?>" <?php echo $autofocusFecha ?>>
+                <input type="text" name="fecha" id="fecha" class="fecha <?php echo $invalidFieldFecha ?>" value="<?php echo $_POST['fecha']; ?>" placeholder="<?php echo _("Indique la fecha deseada"); ?>" <?php echo $autofocusFecha ?>>
                 <span class="errorForm errorColour"><?php echo $errorFecha ?></span>
 
                 <fieldset>
@@ -164,7 +164,7 @@
                 </select>-->
 
                 <label for="mensaje"><?php echo _("Mensaje"); ?> <span class="redColour">*</span></label>
-                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje'); ?>"><?php echo $_POST['mensaje']; ?></textarea>
+                <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="<?php echo _("Escriba aqu&iacute; su mensaje"); ?>"><?php echo $_POST['mensaje']; ?></textarea>
 
                 <input type="submit" value="<?php echo _('Enviar'); ?>" id="enviar" name="enviarForm" class="enviar">
             </form>                
