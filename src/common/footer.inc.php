@@ -15,8 +15,8 @@
 
 <!--Popup-->
 <div class="modal popup displayNone">
-    <a href="javascript:void(0)" class="closePopup">Cerrar</a>
-    <a href="javascript:void(0)" class="closePopup"><?php echo _("Cerrar"); ?></a>
+    <button class="closePopup">Cerrar</button>
+    <button class="closePopup"><?php echo _("Cerrar"); ?></button>
     <div class="modalWrap">
         
     </div>
