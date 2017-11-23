@@ -30,7 +30,7 @@ $bcGreyD: map-get($borderColoursMap, greyD);
 $bcGreyXD: map-get($borderColoursMap, greyXD);
 
 $mainBcColour: $bcGrey;
-$mainBcColourHover: lighten($mainBcColour, 15%);
+$mainBcColourHover: darken($mainBcColour, 15%);
 
 $secondaryBcColour: $bcGreyD;
 $secondaryBcColourHover: darken($mainBcColour, 15%);
