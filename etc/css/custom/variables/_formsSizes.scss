@@ -10,14 +10,13 @@ $formWidthATL: 520px; //No debe llevar !important
 $formWidthAD:  520px; //No debe llevar !important
     
     // Labels
-$formLabelWidthMO: $formWidthMO;
-$formLabelWidthBT: $formWidthBT;
-$formLabelWidthTO: $formWidthTO;
+$formLabelWidthMO:  $formWidthMO;
+$formLabelWidthBT:  $hundred;
+$formLabelWidthTO:  $formWidthTO;
 $formLabelWidthATL: $formWidthATL;
-$formLabelWidthAD: $formWidthAD;
+$formLabelWidthAD:  $formWidthAD;
 
-$formLabelHeightMO:  30px;
-$formLabelHeightBT:  $formLabelHeightMO;
+$formLabelHeightBT:  30px;
 $formLabelHeightTO:  $formLabelHeightBT;
 $formLabelHeightATL: $formLabelHeightTO;
 $formLabelHeightAD:  $formLabelHeightATL;
@@ -28,11 +27,6 @@ $formLabelSugHeightTO:  $formLabelSugHeightBT;
 $formLabelSugHeightATL: $formLabelSugHeightTO;
 $formLabelSugHeightAD:  $formLabelSugHeightATL;
 
-$formLabelContentsHeightBT:  30px;
-$formLabelContentsHeightTO:  $formLabelContentsHeightBT;
-$formLabelContentsHeightATL: $formLabelContentsHeightTO; //No debe llevar !important
-$formLabelContentsHeightAD:  $formLabelContentsHeightATL; //No debe llevar !important
-
     // Inputs
 $formInputWidthMO:  $formLabelWidthMO;
 $formInputWidthBT:  $formLabelWidthBT;
@@ -40,19 +34,18 @@ $formInputWidthTO:  $formLabelWidthTO;
 $formInputWidthATL: $formLabelWidthATL; //No debe llevar !important
 $formInputWidthAD:  $formLabelWidthAD; //No debe llevar !important
 
-$formInputHeightMO:  $formLabelHeightMO;
-$formInputHeightBT:  $formLabelHeightBT;
+$formInputHeightBT:  45px;
 $formInputHeightTO:  $formLabelHeightTO;
 $formInputHeightATL: $formLabelHeightATL; //No debe llevar !important
 $formInputHeightAD:  $formLabelHeightAD; //No debe llevar !important
     
     // Submit
-$formSubmitWidthMO: $hundred;
-$formSubmitWidthMLO: 60%;
-$formSubmitWidthAT: 50%;
-$formSubmitWidthTO: $formSubmitWidthAT;
+$formSubmitWidthMO:  $hundred;
+$formSubmitWidthMLO: 60%!important;
+$formSubmitWidthAT:  50%;
+$formSubmitWidthTO:  $formSubmitWidthAT;
 $formSubmitWidthATL: $formSubmitWidthAT;
-$formSubmitWidthAD: $formSubmitWidthAT;
+$formSubmitWidthAD:  $formSubmitWidthAT;
 
 $formSubmitHeightValueBT: 50px;
 $formSubmitLineHeightValueBT: 50px;

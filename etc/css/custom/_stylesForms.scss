@@ -248,28 +248,54 @@ form{
         padding-left: 7px;
     }
     
-    input, select, .labelName, .errorForm{
+    .labelName, .errorForm{
         @include beforeTablet{
             .mobileForm &{
-                @include equalHeightAndLineHeight($formLabelContentsHeightBT);
+                @include equalHeightAndLineHeight($formLabelHeightBT);
             }        
         }
 
         @include tabletOnly{
             .tabletForm &{
-                @include equalHeightAndLineHeight($formLabelContentsHeightTO);
+                @include equalHeightAndLineHeight($formLabelHeightTO);
             }
         }
 
         @include afterTabletLandscape{
             form &{
-                @include equalHeightAndLineHeight($formLabelContentsHeightATL);
+                @include equalHeightAndLineHeight($formLabelHeightATL);
             }
         }
 
         @include afterDesktop{
             form &{
-                height: $formLabelContentsHeightAD;        
+                height: $formLabelHeightAD;        
+            }
+        }
+    }
+    
+    input, select{
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight($formInputHeightBT);
+            }        
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight($formInputHeightTO);
+            }
+        }
+
+        @include afterTabletLandscape{
+            form &{
+                @include equalHeightAndLineHeight($formInputHeightATL);
+            }
+        }
+
+        @include afterDesktop{
+            form &{
+                height: $formInputHeightAD;        
             }
         }
     }
@@ -422,7 +448,7 @@ form{
 input[type="reset"],
 input[type="submit"],
 input[type="button"],
-button{
+form button{
     .mobileForm &{
         @include mobileOnly{
             width: $formSubmitWidthMO;            
