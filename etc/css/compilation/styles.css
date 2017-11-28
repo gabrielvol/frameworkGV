@@ -455,22 +455,22 @@ a.white.noGlow:focus, a.white.noGlow:hover {
   text-shadow: 0 0 0 #fff; }
 
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
-  color: #d43131; }
+  color: #eb1c24; }
 
 a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHover:focus, a.errorColour.noHover:hover {
-  color: #d43131; }
+  color: #eb1c24; }
 
 a.errorColour:focus, a.errorColour:hover {
-  color: #841b1b; }
+  color: #940d12; }
 
 button.errorColour, button.errorColour.noHover:focus, button.errorColour.noHover:hover {
-  color: #d43131; }
+  color: #eb1c24; }
 
 button.errorColour:focus, button.errorColour:hover {
-  color: #841b1b; }
+  color: #940d12; }
 
 label.errorColour, label.errorColour:focus, label.errorColour:hover {
-  color: #d43131; }
+  color: #eb1c24; }
 
 .green, .green b, .green strong, .green i, .green em {
   color: #339900; }
@@ -626,7 +626,7 @@ label.black, label.black:focus, label.black:hover {
   background-color: #000; }
 
 .bgError {
-  background-color: #d43131; }
+  background-color: #eb1c24; }
 
 .bgGreen {
   background-color: #339900; }
@@ -675,7 +675,7 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-image: none !important; }
 
 .bgError {
-  background-color: #d43131; }
+  background-color: #eb1c24; }
 
 /* =============================================================================
    Shadows Classes | Custom [classesShadows.scss]
@@ -764,7 +764,8 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
    Animation Classes | Etc [classesAnimations.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .hoverGrow {
+  .hoverGrow,
+  .hoverGrowBig {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -773,8 +774,10 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform; }
-    .hoverGrow:hover, .hoverGrow:focus, .hoverGrow:active {
-      transform: scale(1.1); } }
+  .hoverGrow:hover, .hoverGrow:focus, .hoverGrow:active {
+    transform: scale(1.05); }
+  .hoverGrowBig:hover, .hoverGrowBig:focus, .hoverGrowBig:active {
+    transform: scale(1.15); } }
 
 /* =============================================================================
    Classes ALL | Etc [classesAll.scss]
@@ -1578,13 +1581,13 @@ form input, form select, form textarea {
   border: 1px solid #999;
   font-family: Arial; }
   form input:focus, form input:hover, form select:focus, form select:hover, form textarea:focus, form textarea:hover {
-    border-color: #bfbfbf; }
+    border-color: #737373; }
   form input:focus, form select:focus, form textarea:focus {
     box-shadow: inset 0 0 4px #666; }
   form input.bcError, form select.bcError, form textarea.bcError {
-    border-color: #d43131; }
+    border-color: #eb1c24; }
   form input.invalidField, form input.invalidField:focus, form input.invalidField:hover, form select.invalidField, form select.invalidField:focus, form select.invalidField:hover, form textarea.invalidField, form textarea.invalidField:focus, form textarea.invalidField:hover {
-    border-color: #d43131 !important;
+    border-color: #eb1c24 !important;
     border-width: 2px; }
 
 form label::before, form label::after {
@@ -1634,34 +1637,6 @@ form label::after {
 
 .labelName {
   font-family: Arial; }
-
-.sug {
-  transition: all 1s ease;
-  display: none;
-  opacity: 0;
-  height: 0;
-  padding-bottom: 3px;
-  font-family: Arial;
-  font-size: 0.8rem; }
-
-label:hover .sug {
-  display: block;
-  opacity: 1; }
-  @media (max-width: 767px) {
-    .mobileForm label:hover .sug {
-      height: 20px;
-      line-height: 20px; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm label:hover .sug {
-      height: 20px;
-      line-height: 20px; } }
-  @media (min-width: 1024px) {
-    label:hover .sug {
-      height: 20px;
-      line-height: 20px; } }
-  @media (min-width: 1200px) {
-    label:hover .sug {
-      height: 20px; } }
 
 form input {
   padding: 0 10px !important; }
@@ -1791,7 +1766,7 @@ button {
   margin-bottom: 20px; }
 
 .status, .mandatoryMessage p {
-  font-size: 1em !important;
+  font-size: 1rem !important;
   text-align: center; }
 
 .status.ok, .mandatoryMessage {
@@ -1801,7 +1776,7 @@ button {
 
 .mandatoryMessage.invalidMandatoryMessage {
   display: block !important;
-  background-color: #d43131; }
+  background-color: #eb1c24; }
   .mandatoryMessage.invalidMandatoryMessage p {
     color: #fff; }
 
@@ -2232,7 +2207,7 @@ table.tableRounded {
 .popup {
   z-index: 9100;
   left: 50%; }
-  .popup .close {
+  .popup .closePopup {
     z-index: 9200; }
 
 /* =============================================================================
