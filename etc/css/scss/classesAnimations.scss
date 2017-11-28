@@ -2,7 +2,8 @@
    Animation Classes | Etc [classesAnimations.scss]
    ========================================================================== */
 @include afterTablet{
-    .hoverGrow {
+    .hoverGrow,
+    .hoverGrowBig{
         display: $hoverGrowDisplay;
         vertical-align: middle;
         transform: translateZ(0);
@@ -11,11 +12,21 @@
         -moz-osx-font-smoothing: grayscale;
         transition-duration: 0.3s;
         transition-property: transform;
-
+    }
+    
+    .hoverGrow{
         &:hover,
         &:focus,
         &:active {
             transform: scale($hoverGrowScale);
+        }
+    }
+    
+    .hoverGrowBig{
+        &:hover,
+        &:focus,
+        &:active {
+            transform: scale($hoverGrowScaleBig);
         }
     }
 }
