@@ -1,7 +1,7 @@
 <?php
-    $text_es = "Navegar el sitio en idioma espa&ntilde;ol";
-    $text_en = "Switch to English version";
-    $text_pt = "Navegar no site em Portugu&ecirc;s";
+    $text_es = "Navegar el sitio en idioma espa&ntilde;ol.";
+    $text_en = "Switch to English version.";
+    $text_pt = "Navegar no site em Portugu&ecirc;s.";
 ?>
 
 <ul class="lang pRel horizontal clearfix">
