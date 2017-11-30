@@ -1,4 +1,3 @@
-// Top Scroll
 $(window).scroll(function () {
     if ($(this).scrollTop() > 96) {        
         $('nav.main').css({
@@ -22,7 +21,6 @@ $(window).scroll(function () {
     }
 });
 
-// Top Scroll
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         $('.mainNav, .hamb').addClass('topper');
