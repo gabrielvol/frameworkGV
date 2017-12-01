@@ -1,25 +1,12 @@
-/* ============
-   Header
-   ============ */
+/* =============================================================================
+   Nav
+   ========================================================================== */
 #header{
     clear: both;
     background: #ccc!important;
 }
 
-.logoHeader{
-    width: 200px!important;
-}
-.logoHeader a,
-.logoHeader img{
-    width: 100%!important;
-}
-
-.logoHeader,
-.logoHeader a,
-.logoHeader img{
-    margin-right: auto!important;
-    margin-left: auto!important;
-}
+.logo{}
 
 #navTest li{
     border: 1px solid #000;
@@ -35,11 +22,9 @@
 #navTest li + li{margin-left: 5px}
 #navTest li a{font-size: 0.7em}
 
-/* ============
+/* =============================================================================
    Nav
-   ============ */
-@media (max-width: 768px){}
-@media (min-width: 768px){
+   ========================================================================== */
     .mainNav li {
         border: 1px solid #000;
         float: left;
@@ -57,4 +42,3 @@
     .mainNav li a {
         font-size: .7em;
     }
-}
