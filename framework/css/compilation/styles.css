@@ -690,11 +690,11 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-size: 1px; }
 
 .bgShadowT {
-  background-image: url("/nuevo/img/bg_shadowT.png");
+  background-image: url("/framework/img/bg_shadowT.png");
   background-position: center top; }
 
 .bgShadowB {
-  background-image: url("/nuevo/img/bg_shadowB.png");
+  background-image: url("/framework/img/bg_shadowB.png");
   background-position: center bottom; }
 
 /* =============================================================================
@@ -1623,7 +1623,7 @@ form label::after {
 form input {
   padding: 0 10px !important; }
   form input.fecha {
-    background-image: url("/nuevo/img/ic_calendar.svg");
+    background-image: url("/framework/img/ic_calendar.svg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 28px; }
@@ -1850,7 +1850,7 @@ form.niceIt {
   form.niceIt .fmSelect {
     border: 1px solid #999;
     background-color: transparent;
-    background-image: url("/nuevo/img/ic_arrowSelectD.svg");
+    background-image: url("/framework/img/ic_arrowSelectD.svg");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: auto;
@@ -1887,7 +1887,7 @@ form.niceIt {
     form.niceIt .fmCheckbox + .fmCheckbox {
       display: none !important; }
   form.niceIt .fmCheckbox.checked {
-    background: transparent url("/nuevo/img/sprites.png") no-repeat 0px 0px; }
+    background: transparent url("/framework/img/sprites.png") no-repeat 0px 0px; }
   form.niceIt .fnFileInput, form.niceIt .fnFileInput span, form.niceIt .fnFileInput strong {
     width: 100% !important; }
     @media (max-width: 420px) {
@@ -1925,7 +1925,7 @@ form.niceIt {
       filter: alpha(opacity=75);
       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_searchSubmitBT.svg");
+      background-image: url("/framework/img/ic_searchSubmitBT.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30px;
@@ -1948,7 +1948,7 @@ form.niceIt {
           line-height: 30px; }
         .searchForm input[type="submit"] {
           background-color: transparent;
-          background-image: url("/nuevo/img/ic_searchSubmitAT.svg");
+          background-image: url("/framework/img/ic_searchSubmitAT.svg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 30px;
@@ -2197,7 +2197,7 @@ table.tableRounded {
    ========================================================================== */
 .closePopup {
   background-color: transparent;
-  background-image: url("/nuevo/img/ic_closePopup.svg");
+  background-image: url("/framework/img/ic_closePopup.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -2320,7 +2320,7 @@ table.tableRounded {
    ========================================================================== */
 /* Preload images */
 body::after {
-  content: url(/nuevo/img/lightbox/close.png) url(/nuevo/img/lightbox/loading.gif) url(/nuevo/img/lightbox/prev.png) url(/nuevo/img/lightbox/next.png);
+  content: url(/framework/img/lightbox/close.png) url(/framework/img/lightbox/loading.gif) url(/framework/img/lightbox/prev.png) url(/framework/img/lightbox/next.png);
   display: none; }
 
 .lightboxOverlay {
@@ -2379,7 +2379,7 @@ body::after {
   height: 32px;
   display: block;
   margin: 0 auto;
-  background-image: url(/nuevo/img/lightbox/loading.gif);
+  background-image: url(/framework/img/lightbox/loading.gif);
   background-repeat: no-repeat; }
 
 .lb-nav {
@@ -2407,12 +2407,12 @@ body::after {
       width: 34%;
       left: 0;
       float: left;
-      background: url(/nuevo/img/lightbox/prev.png) left 48% no-repeat; }
+      background: url(/framework/img/lightbox/prev.png) left 48% no-repeat; }
     .lb-nav a.lb-next {
       width: 64%;
       right: 0;
       float: right;
-      background: url(/nuevo/img/lightbox/next.png) right 48% no-repeat; }
+      background: url(/framework/img/lightbox/next.png) right 48% no-repeat; }
 
 .lb-prev, .lb-next {
   height: 100%;
@@ -2457,7 +2457,7 @@ body::after {
     transition: all 0.2s ease;
     display: block;
     float: right;
-    background: url(/nuevo/img/lightbox/close.png) top right no-repeat;
+    background: url(/framework/img/lightbox/close.png) top right no-repeat;
     text-align: right;
     outline: none; }
     .lb-data .lb-close:focus, .lb-data .lb-close:hover {

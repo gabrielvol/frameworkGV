@@ -5,21 +5,21 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
     // Static Server + watching scss files
-gulp.task('serve', ['stylesheets'], function() {
-    gulp.watch("./etc/css/custom/*.scss", ['stylesheets']);
-    gulp.watch("./etc/css/custom/variables/*.scss", ['stylesheets']);
-    gulp.watch("./etc/css/scss/*.scss", ['stylesheets']);
+gulp.task('serve', ['processCSS'], function() {
+    gulp.watch("./etc/css/custom/*.scss", ['processCSS']);
+    gulp.watch("./etc/css/custom/variables/*.scss", ['processCSS']);
+    gulp.watch("./etc/css/scss/*.scss", ['processCSS']);
 });
 
     // Compile sass into CSS
-gulp.task('sass', function () {
+gulp.task('compileSass', function () {
     return gulp.src('./etc/css/custom/styles.scss')
         .pipe(sass())
         .pipe(gulp.dest('./etc/css/compilation'));
 });
 
     // CSSnano / PostCSS / Autoprefixer
-gulp.task('stylesheets', ['sass'], function() {
+gulp.task('processCSS', ['compileSass'], function() {
     gulp.src("./etc/css/compilation/styles.css")
         .pipe(cssnano([,
             postcss(),

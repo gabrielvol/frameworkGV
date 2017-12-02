@@ -693,11 +693,11 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-size: 1px; }
 
 .bgShadowT {
-  background-image: url("/nuevo/img/bg_shadowT.png");
+  background-image: url("/framework/img/bg_shadowT.png");
   background-position: center top; }
 
 .bgShadowB {
-  background-image: url("/nuevo/img/bg_shadowB.png");
+  background-image: url("/framework/img/bg_shadowB.png");
   background-position: center bottom; }
 
 /* =============================================================================
@@ -1539,7 +1539,7 @@ form textarea {
 @media (max-width: 767px) {
   .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
   .mandatoryMessage, .mobileForm .labelName, .mobileForm .sug, .mobileForm .errorForm {
-    width: 90% !important; } }
+    width: 100% !important; } }
 
 @media (max-width: 420px) {
   .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
@@ -1614,22 +1614,41 @@ form label::after {
   padding-left: 7px; }
 
 @media (max-width: 767px) {
-  .mobileForm input, .mobileForm select, .mobileForm .labelName, .mobileForm .errorForm {
+  .mobileForm .labelName, .mobileForm .errorForm {
     height: 30px;
     line-height: 30px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm input, .tabletForm select, .tabletForm .labelName, .tabletForm .errorForm {
+  .tabletForm .labelName, .tabletForm .errorForm {
     height: 30px;
     line-height: 30px; } }
 
 @media (min-width: 1024px) {
-  form input, form select, form .labelName, form .errorForm {
+  form .labelName, form .errorForm {
     height: 30px;
     line-height: 30px; } }
 
 @media (min-width: 1200px) {
-  form input, form select, form .labelName, form .errorForm {
+  form .labelName, form .errorForm {
+    height: 30px; } }
+
+@media (max-width: 767px) {
+  .mobileForm input, .mobileForm select {
+    height: 45px;
+    line-height: 45px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tabletForm input, .tabletForm select {
+    height: 30px;
+    line-height: 30px; } }
+
+@media (min-width: 1024px) {
+  form input, form select {
+    height: 30px;
+    line-height: 30px; } }
+
+@media (min-width: 1200px) {
+  form input, form select {
     height: 30px; } }
 
 .labelName, .errorForm {
@@ -1641,7 +1660,7 @@ form label::after {
 form input {
   padding: 0 10px !important; }
   form input.fecha {
-    background-image: url("/nuevo/img/ic_calendar.svg");
+    background-image: url("/framework/img/ic_calendar.svg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 28px; }
@@ -1681,21 +1700,21 @@ form button {
   .mobileForm input[type="reset"], .mobileForm
   input[type="submit"], .mobileForm
   input[type="button"], .mobileForm
-  button {
+  form button {
     width: 100% !important; } }
 
 @media (min-width: 421px) and (max-width: 767px) {
   .mobileForm input[type="reset"], .mobileForm
   input[type="submit"], .mobileForm
   input[type="button"], .mobileForm
-  button {
-    width: 60%; } }
+  form button {
+    width: 60% !important; } }
 
 @media (max-width: 767px) {
   .mobileForm input[type="reset"], .mobileForm
   input[type="submit"], .mobileForm
   input[type="button"], .mobileForm
-  button {
+  form button {
     height: 50px;
     line-height: 50px; } }
 
@@ -1703,7 +1722,7 @@ form button {
   .tabletForm input[type="reset"], .tabletForm
   input[type="submit"], .tabletForm
   input[type="button"], .tabletForm
-  button {
+  form button {
     width: 50%;
     height: 30px;
     line-height: 30px; } }
@@ -1712,7 +1731,7 @@ form button {
   .tabletForm input[type="reset"], .tabletForm
   input[type="submit"], .tabletForm
   input[type="button"], .tabletForm
-  button {
+  form button {
     width: 50%;
     height: 45px;
     line-height: 45px; } }
@@ -1721,7 +1740,7 @@ form button {
   form input[type="reset"], form
   input[type="submit"], form
   input[type="button"], form
-  button {
+  form button {
     width: 50%;
     height: 30px;
     line-height: 30px; } }
@@ -1730,7 +1749,7 @@ form button {
   form input[type="reset"], form
   input[type="submit"], form
   input[type="button"], form
-  button {
+  form button {
     width: 50%;
     height: 30px;
     line-height: 30px; } }
@@ -1738,28 +1757,28 @@ form button {
 input[type="reset"] + input[type="reset"],
 input[type="submit"] + input[type="reset"],
 input[type="button"] + input[type="reset"],
-button + input[type="reset"], input[type="reset"] +
+form button + input[type="reset"], input[type="reset"] +
 input[type="submit"],
 input[type="submit"] +
 input[type="submit"],
 input[type="button"] +
 input[type="submit"],
-button +
+form button +
 input[type="submit"], input[type="reset"] +
 input[type="button"],
 input[type="submit"] +
 input[type="button"],
 input[type="button"] +
 input[type="button"],
-button +
+form button +
 input[type="button"], input[type="reset"] +
-button,
+form button,
 input[type="submit"] +
-button,
+form button,
 input[type="button"] +
-button,
-button +
-button {
+form button,
+form button +
+form button {
   margin-top: 20px !important; }
 
 .status, .mandatoryMessage {
@@ -1868,7 +1887,7 @@ form.niceIt {
   form.niceIt .fmSelect {
     border: 1px solid #999;
     background-color: transparent;
-    background-image: url("/nuevo/img/ic_arrowSelectD.svg");
+    background-image: url("/framework/img/ic_arrowSelectD.svg");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: auto;
@@ -1905,7 +1924,7 @@ form.niceIt {
     form.niceIt .fmCheckbox + .fmCheckbox {
       display: none !important; }
   form.niceIt .fmCheckbox.checked {
-    background: transparent url("/nuevo/img/sprites.png") no-repeat 0px 0px; }
+    background: transparent url("/framework/img/sprites.png") no-repeat 0px 0px; }
   form.niceIt .fnFileInput, form.niceIt .fnFileInput span, form.niceIt .fnFileInput strong {
     width: 100% !important; }
     @media (max-width: 420px) {
@@ -1943,7 +1962,7 @@ form.niceIt {
       filter: alpha(opacity=75);
       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_searchSubmitBT.svg");
+      background-image: url("/framework/img/ic_searchSubmitBT.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30px;
@@ -1966,7 +1985,7 @@ form.niceIt {
           line-height: 30px; }
         .searchForm input[type="submit"] {
           background-color: transparent;
-          background-image: url("/nuevo/img/ic_searchSubmitAT.svg");
+          background-image: url("/framework/img/ic_searchSubmitAT.svg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 30px;
@@ -2215,7 +2234,7 @@ table.tableRounded {
    ========================================================================== */
 .closePopup {
   background-color: transparent;
-  background-image: url("/nuevo/img/ic_closePopup.svg");
+  background-image: url("/framework/img/ic_closePopup.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -2309,14 +2328,14 @@ table.tableRounded {
   @media (max-width: 767px) {
     .slickPrev {
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderL.svg");
+      background-image: url("/framework/img/ic_arrowSliderL.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 18px 30px; } }
   @media (min-width: 768px) {
     .slickPrev {
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderL.svg");
+      background-image: url("/framework/img/ic_arrowSliderL.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 50px; } }
@@ -2326,14 +2345,14 @@ table.tableRounded {
   @media (max-width: 767px) {
     .slickNext {
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderR.svg");
+      background-image: url("/framework/img/ic_arrowSliderR.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 18px 30px; } }
   @media (min-width: 768px) {
     .slickNext {
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_arrowSliderR.svg");
+      background-image: url("/framework/img/ic_arrowSliderR.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 50px; } }
@@ -2387,7 +2406,7 @@ table.tableRounded {
             @include sprites(-100px -50px);
 */
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_sliderPag.svg");
+      background-image: url("/framework/img/ic_sliderPag.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 15px;
@@ -2399,14 +2418,14 @@ table.tableRounded {
     .slickDots li:focus button, .slickDots li:hover button {
       /*background-position: -150px -50px;*/
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_sliderPagHover.svg");
+      background-image: url("/framework/img/ic_sliderPagHover.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 15px 15px; }
     .slickDots li.slickActive button {
       /*background-position: -200px -50px;*/
       background-color: transparent;
-      background-image: url("/nuevo/img/ic_sliderPagSel.svg");
+      background-image: url("/framework/img/ic_sliderPagSel.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 15px 15px; }
@@ -2602,7 +2621,7 @@ table.tableRounded {
         .navMain .hamb.openNav {
           width: 90px;
           height: 40px;
-          background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
+          background: #fff url("/framework/img/ic_hamburgerMenu.svg") no-repeat 10px center;
           background-size: 15px;
           border: 1px solid #999 !important;
           padding: 0 10px 0 30px;
@@ -2614,7 +2633,7 @@ table.tableRounded {
           border-radius: 50%;
           width: 45px;
           height: 45px;
-          background: #fff url("/nuevo/img/ic_navClose.svg") no-repeat center center;
+          background: #fff url("/framework/img/ic_navClose.svg") no-repeat center center;
           background-size: 20px;
           border: 2px solid #999 !important; }
       .navMain ul {
@@ -2682,7 +2701,7 @@ table.tableRounded {
    ========================================================================== */
 /* Preload images */
 body::after {
-  content: url(/nuevo/img/lightbox/close.png) url(/nuevo/img/lightbox/loading.gif) url(/nuevo/img/lightbox/prev.png) url(/nuevo/img/lightbox/next.png);
+  content: url(/framework/img/lightbox/close.png) url(/framework/img/lightbox/loading.gif) url(/framework/img/lightbox/prev.png) url(/framework/img/lightbox/next.png);
   display: none; }
 
 .lightboxOverlay {
@@ -2741,7 +2760,7 @@ body::after {
   height: 32px;
   display: block;
   margin: 0 auto;
-  background-image: url(/nuevo/img/lightbox/loading.gif);
+  background-image: url(/framework/img/lightbox/loading.gif);
   background-repeat: no-repeat; }
 
 .lb-nav {
@@ -2769,12 +2788,12 @@ body::after {
       width: 34%;
       left: 0;
       float: left;
-      background: url(/nuevo/img/lightbox/prev.png) left 48% no-repeat; }
+      background: url(/framework/img/lightbox/prev.png) left 48% no-repeat; }
     .lb-nav a.lb-next {
       width: 64%;
       right: 0;
       float: right;
-      background: url(/nuevo/img/lightbox/next.png) right 48% no-repeat; }
+      background: url(/framework/img/lightbox/next.png) right 48% no-repeat; }
 
 .lb-prev, .lb-next {
   height: 100%;
@@ -2819,7 +2838,7 @@ body::after {
     transition: all 0.2s ease;
     display: block;
     float: right;
-    background: url(/nuevo/img/lightbox/close.png) top right no-repeat;
+    background: url(/framework/img/lightbox/close.png) top right no-repeat;
     text-align: right;
     outline: none; }
     .lb-data .lb-close:focus, .lb-data .lb-close:hover {
