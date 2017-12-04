@@ -2272,47 +2272,25 @@ table.tableRounded {
       right: calc(-1 * calc(20px + 5px)); }
 
 /* =============================================================================
-   Nav
+   Header Custom | Framework [/css/header.scss]
    ========================================================================== */
 #header {
   clear: both;
   background: #ccc !important; }
 
-#navTest li {
+.mainaNav li {
   border: 1px solid #000;
   float: left;
   background-color: #eee;
   padding: 0 5px;
   margin-bottom: 5px; }
+  .mainaNav li, .mainaNav li a {
+    height: 20px;
+    line-height: 20px; }
+  .mainaNav li + li {
+    margin-left: 5px; }
 
-#navTest li, #navTest li a {
-  height: 20px;
-  line-height: 20px; }
-
-#navTest li + li {
-  margin-left: 5px; }
-
-#navTest li a {
-  font-size: 0.7em; }
-
-/* =============================================================================
-   Nav
-   ========================================================================== */
-.mainNav li {
-  border: 1px solid #000;
-  float: left;
-  background-color: #eee;
-  padding: 0 5px;
-  margin-bottom: 5px; }
-
-.mainNav li, .mainNav li a {
-  height: 20px;
-  line-height: 20px; }
-
-.mainNav li + li {
-  margin-left: 5px; }
-
-.mainNav li a {
+.mainaNav a {
   font-size: .7em; }
 
 /* =============================================================================
