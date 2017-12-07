@@ -95,9 +95,9 @@
 <meta property="al:web:url" content="http://applinks.org/documentation">
 
 <!-- Jquery, Modernizr, HTML5shiv -->
-<script src="/nuevo/js/jQuery3.2.1.min.js" type="text/javascript"></script>
-<script src="/nuevo/js/modernizr2.8.3.js" type="text/javascript"></script>
-<script src="/nuevo/js/html5shiv.min.js" type="text/javascript"></script>
+<script src="/nuevo/js/jQuery3.2.1.min.js"></script>
+<script src="/nuevo/js/modernizr2.8.3.js"></script>
+<script src="/nuevo/js/html5shiv.min.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
