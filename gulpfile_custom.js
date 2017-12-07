@@ -3,7 +3,7 @@ var gulp         = require('gulp'),
     postcss      = require("gulp-postcss"),
     cssnano      = require('gulp-cssnano'),
     autoprefixer = require('gulp-autoprefixer');
-
+    
     // Static Server + watching scss files
 gulp.task('serve', ['processCSS'], function() {
     gulp.watch("./etc/css/custom/*.scss", ['processCSS']);
