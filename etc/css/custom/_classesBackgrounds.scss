@@ -7,14 +7,17 @@
         background-image: $none;
     }
 }
+
 .bgTransparent{
     &, &:focus, &:hover{
         background-color: $transparent;
     }
 }
+
 .bgNoImage{
     &, &:focus, &:hover{
         background-image: $none;
     }
 }
-.bgError{background-color: $bgError}
+
+.bgError{background-color: $bgError;}
