@@ -347,6 +347,9 @@ a {
     font-size: 1.4rem; } }
 
 /* =============================================================================
+   Settings Text | Custom [settingsText.scss]
+   ========================================================================== */
+/* =============================================================================
    Font Classes | Etc [classesFonts.scss]
    ========================================================================== */
 abbr {
@@ -2629,6 +2632,8 @@ table.tableRounded {
           font-family: Arial;
           font-size: 1rem;
           line-height: 45px; }
+          .navMain .hamb.openNav.clicked {
+            color: #333; }
         .navMain .hamb.closeNav {
           border-radius: 50%;
           width: 45px;
