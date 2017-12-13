@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="es-AR">
+<html dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta name="robots" content="index,follow">
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
