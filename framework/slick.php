@@ -25,6 +25,6 @@
         </ul>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/src/slick.js"></script>
+    <script type="text/javascript" src="/etc/js/src/slick.js"></script>
     <script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/plugins/slick.js"></script>
 </html>
