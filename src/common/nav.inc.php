@@ -28,5 +28,5 @@
             </ul>
         </li>
     </ul>
-    <div class="modalBG modalNav displayNoneBT">&nbsp;</div>
+    <div class="modalBG modalNav">&nbsp;</div>
 </nav>
