@@ -32,7 +32,7 @@
                 
                 <label for="apellido"><?php echo _("Apellido"); ?> <span class="redColour">*</span></label>
                 <input type="text" name="apellido" id="apellido" class="apellido <?php echo $invalidFieldApellido ?>" value="<?php echo $_POST['apellido']; ?>" placeholder="<?php echo _("Ingrese su apellido"); ?>" <?php echo $autofocusApellido ?>>
-                <span class="errorForm errorColour"><?php echo $errorApellido?></span>              
+                <span class="errorForm errorColour"><?php echo $errorApellido ?></span>              
                 
                 <label for="nombre"><?php echo _("Nombre y Apellido"); ?> <span class="redColour">*</span></label>
                 <input type="text" name="nombre" id="nombre" class="nombre <?php echo $invalidFieldNombre ?>" value="<?php echo $_POST['nombre']; ?>" placeholder="<?php echo _("Ingrese su nombre y apellido"); ?>" <?php echo $autofocusNombre ?>>
