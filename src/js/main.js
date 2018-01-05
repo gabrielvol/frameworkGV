@@ -23,12 +23,14 @@ $(document).ready(function () {
             $(this).closest("#nav").find(".mainMenu").toggleClass('open');
             $(this).closest("#nav").find(".closeNav").show("fast");
             $(this).closest("#header").find(".lang").toggleClass('clicked');
+            $(this).closest("#header").find(".logoHeader").toggleClass('clicked');
         });
     });
 
     $('.closeNav').click(function () {
         $(this).closest("#nav").find(".openNav").toggleClass('clicked');
         $(this).closest("#header").find(".lang").toggleClass('clicked');
+        $(this).closest("#header").find(".logoHeader").toggleClass('clicked');
         $(this).closest("#nav").find(".modalNav").hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
@@ -41,6 +43,7 @@ $(document).ready(function () {
     $('.modalNav').click(function () {
         $(this).closest("#nav").find(".openNav").toggleClass('clicked');
         $(this).closest("#header").find(".lang").toggleClass('clicked');
+        $(this).closest("#header").find(".logoHeader").toggleClass('clicked');
         $(this).hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
