@@ -33,7 +33,6 @@ $bgGreyXD: map-get($backgroundColoursMap, GreyXD);
 $bodyBgColour: $bgWhite;    
 $mainBgColour: $bgGrey;
 $imgBgNeutralColour: $bgGreyL;
-$bgModalNav: $bgBlack;
 
 ///**Background Colours Hover Map:** 
     ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
@@ -49,4 +48,7 @@ $backgroundColoursHoverMap:(
    ========================================================================== */
     //El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
 $modalOpacity: 85;
+
+    //Responsive nav
+$bgModalNav: $bgBlack;
 $modalNavOpacity: 90;
