@@ -3,9 +3,12 @@
    ========================================================================== */
 .social{
     li{
+        &, a, img{
+            @include squareSize(50px);            
+        }
+        
         a{
-            @include squareSize(50px);
-            @include opacityCustomHover(75,100);
+            @include opacityCustomHover(90);
             @include transition(1s);
         }
 
