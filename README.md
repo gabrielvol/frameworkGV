@@ -52,10 +52,10 @@ Contraseña
 ToWebs
 
 DNS 1
-`ns1.allytech.com (000.000.000.000)`
+`ns1.hosting.com (000.000.000.000)`
 
 DNS 2
-`ns2.allytech.com (000.000.000.000)`
+`ns2.hosting.com (000.000.000.000)`
 
 Contacto técnico
 `Nombre` 
