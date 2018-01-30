@@ -13,15 +13,15 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">
         <ul class="slick mask horizontal clearfix">
-            <li><img data-lazy="/framework/img/img_slide01.png" alt="Slick"></li>
-            <li><img data-lazy="/framework/img/img_slide02.png" alt="Slick"></li>
-            <li><img data-lazy="/framework/img/img_slide03.png" alt="Slick"></li>
+            <li><img data-lazy="/framework/img/img_slide01.png" alt=""></li>
+            <li><img data-lazy="/framework/img/img_slide02.png" alt=""></li>
+            <li><img data-lazy="/framework/img/img_slide03.png" alt=""></li>
         </ul>
         
         <ul class="slick mask horizontal clearfix">
-            <li><img src="/framework/img/img_slide01.png" alt="Slick"></li>
-            <li><img src="/framework/img/img_slide02.png" alt="Slick"></li>
-            <li><img src="/framework/img/img_slide03.png" alt="Slick"></li>
+            <li><img src="/framework/img/img_slide01.png" alt=""></li>
+            <li><img src="/framework/img/img_slide02.png" alt=""></li>
+            <li><img src="/framework/img/img_slide03.png" alt=""></li>
         </ul>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
