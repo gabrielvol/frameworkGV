@@ -12,12 +12,12 @@ $containerDesktopValue: $containerTabletLandscapeValue; /* Desktop */
 $containerDesktopLargeValue: $containerTabletLandscapeValue; /* Big Screens */
 
 //Container Center Negative Values
-$cMHalf:  calc(#{$containerMobileValue}/2); /* Mobile Half */
-$cMLHalf: calc(#{$containerMobileLandscapeValue}/2); /* Mobile Landscape Half */
-$cTHalf:  calc(#{$containerTabletValue}/2); /* Tablet Half*/
-$cTLHalf: calc(#{$containerTabletLandscapeValue}/2); /* Tablet Landscape Half*/
-$cDHalf:  calc(#{$containerDesktopValue}/2); /* Desktop Half */
-$cDLHalf: calc(#{$containerDesktopLargeValue}/2); /* Desktop Large Half*/
+$cMHalf:  calc(#{$containerMobileValue} / 2); /* Mobile Half */
+$cMLHalf: calc(#{$containerMobileLandscapeValue} / 2); /* Mobile Landscape Half */
+$cTHalf:  calc(#{$containerTabletValue} / 2); /* Tablet Half*/
+$cTLHalf: calc(#{$containerTabletLandscapeValue} / 2); /* Tablet Landscape Half*/
+$cDHalf:  calc(#{$containerDesktopValue} / 2); /* Desktop Half */
+$cDLHalf: calc(#{$containerDesktopLargeValue} / 2); /* Desktop Large Half*/
 
 $cMHneg: calc(-1 * #{$cMHalf}); /* Mobile Half */
 $cMLHneg: calc(-1 * #{$cMLHalf}); /* Mobile Landscape Half */

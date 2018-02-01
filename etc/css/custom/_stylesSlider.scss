@@ -18,11 +18,11 @@
 // Slick next/prev
 $sliderArrowHeightBT: 30px;
 $sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
-$sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT}/2);
+$sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT} / 2);
 
 $sliderArrowHeight: 50px;
 $sliderArrowWidthHeight: 30px $sliderArrowHeight;
-$sliderArrowHeightHalf: calc(#{$sliderArrowHeight}/2);
+$sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
 
 .slickPrev{
     left: 0;
