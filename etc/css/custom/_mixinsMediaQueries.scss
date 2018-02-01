@@ -67,7 +67,7 @@ $desktopLargeMin: 1600px;
     @media (min-width: 501px)
         and (max-width: #{$mobileLMax}){@content;}}
 
-/* 555 */
+/* 550 */
 @mixin beforeMobile550{
     @media (max-width: 550px){@content;}}
     
