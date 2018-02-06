@@ -1,0 +1,22 @@
+/* =============================================================================
+   Media Styles | Custom [stylesMedia.scss]
+   ========================================================================== */
+.googleMap{
+    @include borderRadius(6px);
+    @include borderStyle($bcGreyD);
+    width: 100%;
+    height: 300px;
+
+    iframe{
+        width: 101%;
+        height: 100%;
+    }
+
+    @include mobileOnly{
+        height: 450px;
+    }
+
+    @include mobile600Only{
+        @include centerCustom(400px);
+    }
+}
