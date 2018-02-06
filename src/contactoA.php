@@ -20,7 +20,7 @@
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
 	<div id="main" class="int contacto" role="main">
             <div class="mobileForm tabletForm">
-            <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
+            <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php'); ?>
             <form method="post">
                 <?php echo $status ?>
                 
@@ -50,6 +50,7 @@
                 </label>
                 
                 <label for="direccion">
+                    <span class="labelName"><?php echo _("Direcci&oacute;n"); ?></span>
                     <span class="sug"><?php echo _("Ingrese su direcci&oacute;n"); ?>.</span>
                     <input type="text" name="direccion" id="direccion" class="direccion <?php echo $invalidFieldDireccion ?>" value="<?php echo $_POST['direccion']; ?>" placeholder="<?php echo _('Ingrese su direcci&oacute;n'); ?>" <?php echo $autofocusDireccion ?>>
                     <span class="errorForm errorColour"><?php echo $errorDireccion ?></span>              
@@ -74,6 +75,13 @@
                     <span class="sug"><?php echo _("Ingrese su provincia"); ?>.</span>
                     <input type="text" name="provincia" id="provincia" class="provincia <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['provincia']; ?>" placeholder="<?php echo _('Ingrese su provincia'); ?>" <?php echo $autofocusProvincia ?>>
                     <span class="errorForm errorColour"><?php echo $errorProvincia ?></span>              
+                </label>
+                
+                <label for="pais">
+                    <span class="labelName"><?php echo _("Pa&iacute;s"); ?></span>
+                    <span class="sug"><?php echo _("Ingrese su pa&iacute;s"); ?>.</span>
+                    <input type="text" name="pais" id="pais" class="pais <?php echo $invalidFieldProvincia ?>" value="<?php echo $_POST['pais']; ?>" placeholder="<?php echo _('Ingrese su pa&iacute;s'); ?>" <?php echo $autofocusPais ?>>
+                    <span class="errorForm errorColour"><?php echo $errorPais ?></span>              
                 </label>
                 
                 <label for="telefono">
@@ -118,6 +126,13 @@
                     <span class="errorForm errorColour"><?php echo $errorEmpresa ?></span>              
                 </label>
                 
+                <label for="rubro">
+                    <span class="labelName"><?php echo _("Rubro"); ?></span>
+                    <span class="sug"><?php echo _("Ingrese su rubro"); ?>.</span>
+                    <input type="text" name="rubro" id="rubro" class="rubro <?php echo $invalidFieldRubro ?>" value="<?php echo $_POST['rubro']; ?>" placeholder="<?php echo _('Ingrese su rubro'); ?>" <?php echo $autofocusRubro ?>>
+                    <span class="errorForm errorColour"><?php echo $errorRubro ?></span>              
+                </label>
+                
                 <label for="cargo">
                     <span class="labelName"><?php echo _("Cargo"); ?></span>
                     <span class="sug"><?php echo _("Ingrese su cargo"); ?>.</span>
@@ -133,19 +148,19 @@
                 </label>
 
                 <fieldset>
-                    <legend><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?> <span class="redColour">*</span></legend>
+                    <legend><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?></legend>
 
                     <label for="radioSi" class="radio"><?php echo _("Newsletter S&iacute;"); ?></label>
-                    <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio" >
+                    <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio">
 
                     <label for="radioNo" class="radio"><?php echo _("Newsletter No"); ?></label>
-                    <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio" >
+                    <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio">
 
                     <label for="radioNoSe" class="radio"><?php echo _("Newsletter No Sé"); ?></label>
-                    <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio" >
+                    <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio">
                 </fieldset>
 
-                <label for="preciotilde"><?php echo _("Prefiero charlar el precio personalmente"); ?> <span class="redColour">*</span></label>
+                <label for="preciotilde"><?php echo _("Prefiero charlar el precio personalmente"); ?></label>
                 <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" value="Si">
                 
                 <label for="browsersInput"><?php echo _("Choose a browser from this list:"); ?></label>
@@ -159,7 +174,7 @@
                     <option value="Microsoft Edge">
                 </datalist>
 
-                <label for="habitacion"><?php echo _("Habitaci&oacute;n"); ?> <span class="redColour">*</span></label>
+                <label for="habitacion"><?php echo _("Habitaci&oacute;n"); ?></label>
                 <select id="habitacion" name="habitacion" class="habitacion" >
                     <option value="<?php echo $_POST['habitacion']; ?>" selected><?php echo _("Seleccione una opci&oacute;n"); ?></option>
                     <option value="a"><?php echo _("a"); ?></option>
