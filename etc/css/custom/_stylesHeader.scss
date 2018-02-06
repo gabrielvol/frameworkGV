@@ -37,11 +37,15 @@
         
         .logoHeader{        
             &.clicked{
-                position: absolute;
+                position: fixed;
                 z-index: $zIndexLogoHeaderClicked;
                 top: 20px;
                 left: 30px;
                 width: 50%;
+            
+                a, img{
+                    width: 100%;
+                }
             }
         }
     }
