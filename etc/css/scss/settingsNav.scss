@@ -58,6 +58,11 @@
             a, .topLevelItem{
                 background: $bgNavItemAnchor;
                 color: $navFontColour;
+                
+                &:focus, &:hover{
+                    background-color: $bgNavItemAnchorHover;
+                    color: $navFontColourHover;
+                }
             }
             
             .topLevelItem{
@@ -69,22 +74,7 @@
                 a, .topLevelItem{
                     background: $bgNavSelectedAnchor;
                     color: $navSelectedFontColour;
-                }            
-            }             
-        }
-    }   
-    
-    @include afterTabletLandscape{
-        li{
-            a, .topLevelItem{
-                &:focus, &:hover{
-                    background-color: $bgNavItemAnchorHover;
-                    color: $navFontColourHover;
-                }
-            }
-            
-            &.current{
-                a, .topLevelItem{
+                    
                     &, &:focus, &:hover{
                         color: $navSelectedFontColour;
                     }
@@ -93,7 +83,7 @@
                         background-color: $bgNavSelectedAnchorHover;
                     }
                 }            
-            }           
-        }          
+            }             
+        }
     }
 }
