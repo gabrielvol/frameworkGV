@@ -190,7 +190,7 @@ form{
             }
         }
 
-        @include afterLaptop{
+        @include afterDesktop{
             form &{
                 @include equalHeightAndLineHeight($formInputHeightAD);
             }
