@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =============================================================================
    Font Variables | Etc [variablesFonts.scss]
    ========================================================================== */
@@ -97,7 +98,7 @@
 /* Tablet */
 /* Tablet Landscape*/
 /* 500 */
-/* 555 */
+/* 550 */
 /* 600 */
 /* 650 */
 /* 700 */
@@ -177,9 +178,9 @@
    Html Body Settings | Etc [settingsHtmlBody.scss]
    ========================================================================== */
 html, body {
-  margin: 0;
   padding: 0;
-  color: #999; }
+  margin: 0;
+  color: #000; }
 
 html {
   font-size: 100%;
@@ -359,6 +360,9 @@ abbr {
 .fontSizeReset {
   font-size: 1rem !important; }
 
+.fontSizeResetEM {
+  font-size: 1em !important; }
+
 .lineHeightReset {
   line-height: 1em !important; }
 
@@ -431,7 +435,7 @@ b, strong,
    Colours Settings | Etc [settingsColours.scss]
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table {
-  color: #999; }
+  color: #000; }
 
 /*
 input::input-placeholder, textarea::input-placeholder{
@@ -440,10 +444,10 @@ input:focus::input-placeholder, textarea:focus::input-placeholder{
     color: $mainFontColour}
 */
 a, a:active, a:visited {
-  color: #666666; }
+  color: #333333; }
 
 a:focus, a:hover {
-  color: #333333; }
+  color: #1a1a1a; }
 
 .white, .white b, .white strong, .white i, .white em {
   color: #fff; }
@@ -1173,112 +1177,112 @@ article, article::before, article::after, details, details::before, details::aft
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(300px/2)); } }
+      margin-left: calc(-1 * calc(300px / 2)); } }
   @media (min-width: 421px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(85%/2)); } }
+      margin-left: calc(-1 * calc(85% / 2)); } }
   @media (min-width: 768px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(720px/2)); } }
+      margin-left: calc(-1 * calc(720px / 2)); } }
   @media (min-width: 1024px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1200px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1600px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (max-width: 420px) {
     .container.centerAbsMO {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(300px/2)); } }
+      margin-left: calc(-1 * calc(300px / 2)); } }
   @media (min-width: 421px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(85%/2)); } }
+      margin-left: calc(-1 * calc(85% / 2)); } }
   @media (min-width: 768px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(720px/2)); } }
+      margin-left: calc(-1 * calc(720px / 2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 768px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(720px/2)); } }
+      margin-left: calc(-1 * calc(720px / 2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAT {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1024px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsATL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1200px) {
     .container.centerAbsAD {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsAD {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
   @media (min-width: 1600px) {
     .container.centerAbsADL {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1000px/2)); } }
+      margin-left: calc(-1 * calc(1000px / 2)); } }
 
 /* =============================================================================
    Hack para Windows Phone | Etc [settingsContainer.scss]
@@ -1325,6 +1329,26 @@ article, article::before, article::after, details, details::before, details::aft
    Internas Styles | Custom
    ========================================================================== */
 /* =============================================================================
+   Media Styles | Custom [stylesMedia.scss]
+   ========================================================================== */
+.googleMap {
+  border-radius: 6px;
+  border: 1px solid #666;
+  width: 100%;
+  height: 300px; }
+  .googleMap iframe {
+    width: 101%;
+    height: 100%; }
+  @media (max-width: 420px) {
+    .googleMap {
+      height: 450px; } }
+  @media (min-width: 601px) and (max-width: 767px) {
+    .googleMap {
+      width: 400px;
+      margin-right: auto !important;
+      margin-left: auto !important; } }
+
+/* =============================================================================
    Colour Placeholders | Custom [coloursPlaceholders.scss]
    ========================================================================== */
 /* =============================================================================
@@ -1347,6 +1371,11 @@ ul.hyphenated li {
   position: relative; }
   ul.hyphenated li::before {
     content: "- "; }
+
+ul.dotted li {
+  position: relative; }
+  ul.dotted li::before {
+    content: "· "; }
 
 .ulResp2 li a, .ulResp3 li a, .ulResp4 li a {
   position: relative; }
@@ -1409,10 +1438,10 @@ form fieldset legend {
 
 form label {
   transition: all 1s ease;
-  color: #999;
+  color: #000;
   font-weight: 400 !important; }
   form label:focus, form label:hover {
-    color: #737373; }
+    color: black; }
 
 form button, form input, form select, form textarea {
   font-size: 100%;
@@ -1430,10 +1459,10 @@ form button, form input, form select, form textarea {
 
 form input, form select, form textarea {
   background-color: #fff;
-  color: #737373; }
+  color: black; }
   form input:focus, form input:hover, form select:focus, form select:hover, form textarea:focus, form textarea:hover {
     background-color: #fff;
-    color: #737373; }
+    color: black; }
 
 form input[type="search"] {
   -webkit-appearance: textfield; }
@@ -1898,13 +1927,13 @@ form.niceIt {
     width: 240px !important;
     padding: 0 40px 0 10px;
     width: 135px !important;
-    color: #737373; }
+    color: black; }
     form.niceIt .fmSelect, form.niceIt .fmSelect strong, form.niceIt .fmSelect cite {
       height: 30px;
       line-height: 28px;
       font-size: 0.9rem; }
     form.niceIt .fmSelect strong span cite, form.niceIt .fmSelect ul li {
-      color: #737373;
+      color: black;
       font-family: Arial;
       text-transform: none; }
     form.niceIt .fmSelect ul {
@@ -1918,7 +1947,7 @@ form.niceIt {
         font-size: 0.7rem;
         line-height: 1.3rem; }
         form.niceIt .fmSelect ul li:hover, form.niceIt .fmSelect ul li:focus {
-          color: #737373;
+          color: black;
           background-color: #fff; }
   form.niceIt .fmCheckbox {
     border: 1px solid #999;
@@ -2380,12 +2409,12 @@ table.tableRounded {
     .slickPrev, .slickNext {
       width: 30px;
       height: 30px;
-      margin-top: calc(-1 * calc(30px/2)); } }
+      margin-top: calc(-1 * calc(30px / 2)); } }
   @media (min-width: 768px) {
     .slickPrev, .slickNext {
       width: 50px;
       height: 50px;
-      margin-top: calc(-1 * calc(50px/2)); } }
+      margin-top: calc(-1 * calc(50px / 2)); } }
 
 .slickDots {
   list-style: none;
@@ -2454,7 +2483,15 @@ table.tableRounded {
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
-      padding-top: 20px; } }
+      padding-top: 20px; }
+      #header .logoHeader.clicked {
+        position: fixed;
+        z-index: 9200;
+        top: 20px;
+        left: 30px;
+        width: 50%; }
+        #header .logoHeader.clicked a, #header .logoHeader.clicked img {
+          width: 100%; } }
   @media (min-width: 768px) {
     #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
       width: 150px; }
@@ -2534,12 +2571,14 @@ table.tableRounded {
 /* =============================================================================
    Social Styles | Custom [stylesSocial.scss]
    ========================================================================== */
-.social li a {
+.social li, .social li a, .social li img {
   width: 50px;
-  height: 50px;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
+  height: 50px; }
+
+.social li a {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=90)";
   transition: all 1s ease; }
   .social li a:focus, .social li a:hover {
     opacity: 1;
@@ -2574,9 +2613,9 @@ table.tableRounded {
       z-index: 9200;
       display: none; }
   .navMain li a, .navMain li .topLevelItem {
-    color: #999; }
+    color: #000; }
   .navMain li.current a, .navMain li.current .topLevelItem {
-    color: #999; } }
+    color: #000; } }
 
 @media (min-width: 768px) {
   .navMain .closeNav {
@@ -2585,21 +2624,21 @@ table.tableRounded {
     background: transparent; }
     .navMain li a, .navMain li .topLevelItem {
       background: transparent;
-      color: #999; }
+      color: #000; }
     .navMain li .topLevelItem {
       cursor: default; }
     .navMain li.current {
       background: transparent; }
       .navMain li.current a, .navMain li.current .topLevelItem {
         background: transparent;
-        color: #666666; } }
+        color: #333333; } }
 
 @media (min-width: 1024px) {
   .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
     background-color: transparent;
-    color: #666666; }
+    color: #333333; }
   .navMain li.current a, .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
-    color: #666666; }
+    color: #333333; }
   .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
     background-color: transparent; } }
 
@@ -2702,9 +2741,8 @@ table.tableRounded {
       margin-top: 30px; } }
 
 /* =============================================================================
-   Lightbox Styles | Custom [stylesLightbox.scss]
+   Lightbox Settings | Etc [settingsLightbox.scss]
    ========================================================================== */
-/* Preload images */
 body::after {
   content: url(/framework/img/lightbox/close.png) url(/framework/img/lightbox/loading.gif) url(/framework/img/lightbox/prev.png) url(/framework/img/lightbox/next.png);
   display: none; }
@@ -2853,7 +2891,9 @@ body::after {
     .lb-data .lb-close:focus, .lb-data .lb-close:hover {
       cursor: pointer; }
 
-/* Editables */
+/* =============================================================================
+   Lightbox Styles | Custom [stylesLightbox.scss]
+   ========================================================================== */
 .lb-data .lb-caption,
 .lb-number {
   font-family: Arial;

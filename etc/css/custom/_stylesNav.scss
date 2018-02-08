@@ -7,12 +7,12 @@ $navDrawerWidth: 70vw;
 .navMain{
     $navBorderRadius: 4px;
     z-index: $zIndexNav;
-    
+
     @include beforeTablet{
         @include posTR(10px, 10px);
         position: fixed;
         width: $navWidthBT;
-
+ 
         .hamb{
             @include borderRadius($navBorderRadius); 
             @include posTR(0, 0);
