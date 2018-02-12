@@ -7,7 +7,7 @@
                 <?php echo _("Inicio"); ?></a></li>
         
         <li class="nos hasSub <?php if($navCurrent == 1) { echo "current"; } ?>">
-            <a href="/nuevo/nosotros/" id="nosoNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="displayBlock upperCase alignCenter" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
+            <a href="/nuevo/nosotros/" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem displayBlock" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
                 <?php echo _("Nosotros"); ?>
             </a>
             <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">
@@ -18,7 +18,7 @@
         </li>
         
         <li class="nos hasSub <?php if($navCurrent == 1) { echo "current"; } ?>">
-            <p href="/nuevo/nosotros/" id="nosoNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem upperCase alignCenter" role="button">
+            <p href="/nuevo/nosotros/" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem" role="button">
                 <?php echo _("Nosotros"); ?>
             </p>
             <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">

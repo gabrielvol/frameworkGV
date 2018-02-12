@@ -60,7 +60,6 @@ $(document).ready(function () {
     
     // Acciones al hover en un item con submenú
     $('.hasSub').hover(function () {
-        $(this).closest("#header").find(".bgMenu").toggleClass('displayNone');
         $(this).find(".topLevelItem").attr('aria-expanded', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
         });
