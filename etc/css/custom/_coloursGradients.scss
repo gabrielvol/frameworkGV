@@ -18,3 +18,12 @@ $bgGradBlackFiftyFilter: progid:DXImageTransform.Microsoft.gradient( startColors
     background-image: $bgGradBlackFifty;
     filter: $bgGradBlackFiftyFilter;
 }
+
+// Black 80%
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
+$bgGradBlackEighty: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
+$bgGradBlackEightyFilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
+.bgGradBlackFifty{
+    background-image: $bgGradBlackEighty;
+    filter: $bgGradBlackEightyFilter;
+}

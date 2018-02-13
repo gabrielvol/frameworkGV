@@ -1,8 +1,8 @@
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('#header').addClass('topper');
+        $('.navMain').addClass('topper');
     } else {
-        $('#header').removeClass('topper');
+        $('.navMain').removeClass('topper');
     }
 });
 
@@ -57,8 +57,11 @@ $(document).ready(function () {
         $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
         $(this).toggleClass('open');
     });
+
+    $('.topLevelItem').hover(function () {
+        $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
+    });
     
-    // Acciones al hover en un item con submenú
     $('.hasSub').hover(function () {
         $(this).find(".topLevelItem").attr('aria-expanded', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';

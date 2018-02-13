@@ -51,11 +51,11 @@ $navDrawerWidth: 70vw;
         .mainMenu{}
         
         li{
-            &, a{
+            &, a, .topLevelItem{
                 @include equalHeightAndLineHeight(60px);
             }
             
-            a{
+            a, .topLevelItem{
                 @include transition(1s);
             }
             
@@ -71,13 +71,61 @@ $navDrawerWidth: 70vw;
         }        
         
         &.topper{
+            @include borderStyleB($mainBcColour);
             position: fixed;
             top: 0;
+            right: 0;
             width: 100%;  
+            background-color: $bgNavTopper;
            
-            ul{
+            .hamb{
+                display: $none;
+            }
+           
+            .mainMenu{
                 @include centerCustom(700px);
-            }       
+                float: $none;
+                padding: 0;
+            }  
+            
+            .hasSub{ 
+                display: $block;
+                
+                &:focus, &:hover{
+                    ul{
+                        display: $block;
+                    }
+                }
+            }
+            
+            .subMenu{
+                &, &.open{
+                    position: absolute;
+                    display: none;
+                    background-image: $bgGradBlackEighty;
+                    filter: $bgGradBlackEightyFilter;
+                    padding-bottom: 5px;
+                }
+
+                &, li{
+                    width: 150px;
+                }
+
+                li{
+                    a{
+                        padding-left: 10px;
+                        text-align: left;
+                    }
+
+                    &, a{
+                        @include equalHeightAndLineHeight(35px);
+                    }
+
+                    & + li{
+                        @include borderStyleT($bcGreyL);
+                    }
+                }
+            }
         }
     }
     
