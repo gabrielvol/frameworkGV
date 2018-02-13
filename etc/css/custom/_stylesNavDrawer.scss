@@ -49,7 +49,9 @@ ul{
         
         .topLevelItem{
             &.open{
-                background: transparent url('/framework/img/ic_arrowNavL.svg') no-repeat 10px center;
+                background-image: url('/framework/img/ic_arrowNavL.svg');
+                background-repeat: no-repeat;
+                background-position: 10px center;
             }
         }
         
