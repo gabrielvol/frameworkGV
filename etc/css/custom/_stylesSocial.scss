@@ -44,4 +44,14 @@
 
         }
     }
+    
+    @include beforeTablet{        
+        // MenuDrawer
+        &.clicked{
+            position: fixed;
+            z-index: $zIndexLogoHeaderClicked;
+            top: 15px;
+            left: 0;
+        }
+    }
 }

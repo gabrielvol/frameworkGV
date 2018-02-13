@@ -49,9 +49,12 @@ $flagHeightAT: 32px;
             }
         }
         
-        // Si hay menuDrawer
+        // MenuDrawer
         &.clicked{
             position: fixed;
+            z-index: $zIndexLogoHeaderClicked;
+            top: 15px;
+            left: 0;
         }
     }
 
