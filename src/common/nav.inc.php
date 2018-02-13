@@ -18,7 +18,7 @@
         </li>
         
         <li class="nos hasSub <?php if($navCurrent == 1) { echo "current"; } ?>">
-            <p href="/nuevo/nosotros/" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem" role="button">
+            <p id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" aria-expanded="false" class="topLevelItem" role="button">
                 <?php echo _("Nosotros"); ?>
             </p>
             <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">
