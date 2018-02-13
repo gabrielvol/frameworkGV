@@ -3,13 +3,19 @@
    ========================================================================== */
     //Fonts
 $navFontColour: $mainFontColour;
+$navFontColourBT: $navFontColour;
+
 $navFontColourHover: $mainFontColourHover;
+
 $navSelectedFontColour: $navFontColourHover;
+$navSelectedFontColourBT: $navFontColourBT;
 
 $hamburgerFontColour: $greyXD;
 $hamburgerFontColourClicked: $hamburgerFontColour;
-$navFontColourBT: $navFontColour;
-$navSelectedFontColourBT: $navFontColourBT;
+
+    //Border Colours
+$bcNavDrawerItem: $bcWhite;
+$bcNavDrawerItemSub: $bcNavDrawerItem;
 
     //Background Colours
 $bgNavItem: transparent;

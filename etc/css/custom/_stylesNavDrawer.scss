@@ -12,28 +12,22 @@ ul{
         top: 0;
         bottom: 0;
     }
-    
-    .subMenu{
-        z-index: $zIndexNavSubMenu;
-        position: relative;
-        top: 0;
-        right: $navDrawerWidth;
-        width: calc(#{$navDrawerWidth} - 10px);
-        background-image: $bgGradWhiteEighty;
-        filter: $bgGradWhiteEightyFilter;
-        
-        &.open{
-            right: 5px;
-        }
-    }
 }
 
 > ul{
     box-sizing: border-box;
     left: calc(-1 * #{$navDrawerWidth});
     width: calc(#{$navDrawerWidth} - 5px);
-    padding: 60px 5px 0;
+    padding-top: 60px;
+    padding-right: 5px;
+    padding-left: 5px;
     overflow: hidden; 
+    
+    > li{
+        & + li{
+            @include borderStyleT($bcNavDrawerItem);
+        }
+    }
     
     li{
         float: $none;    
@@ -54,13 +48,29 @@ ul{
                 background-position: 10px center;
             }
         }
-        
-        & + li{
-            @include borderStyleT($bcWhite);
-        }
     }
     
     &.open{
         left: 0;
+    }
+}
+    
+.subMenu{
+    z-index: $zIndexNavSubMenu;
+    position: relative;
+    top: 0;
+    right: $navDrawerWidth;
+    width: calc(#{$navDrawerWidth} - 10px);
+    background-image: $bgGradWhiteEighty;
+    filter: $bgGradWhiteEightyFilter;
+
+    li{
+        & + li{
+            @include borderStyleT($bcNavDrawerItemSub);
+        }
+    } 
+
+    &.open{
+        right: 5px;
     }
 }
