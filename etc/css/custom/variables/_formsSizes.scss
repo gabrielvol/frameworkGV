@@ -18,7 +18,7 @@ $formLabelWidthAD:  $formWidthAD;
 
 $formLabelHeightBT:  30px;
 $formLabelHeightTO:  $formLabelHeightBT;
-$formLabelHeightATL: $formLabelHeightTO;
+$formLabelHeightATL: 25px;
 $formLabelHeightAD:  $formLabelHeightATL;
 
     // Sug
@@ -36,7 +36,7 @@ $formInputWidthAD:  $formLabelWidthAD; //No debe llevar !important
 
 $formInputHeightBT:  45px;
 $formInputHeightTO:  $formInputHeightBT;
-$formInputHeightATL: 30px; //No debe llevar !important
+$formInputHeightATL: 35px; //No debe llevar !important
 $formInputHeightAD:  $formInputHeightATL; //No debe llevar !important
     
     // Submit
