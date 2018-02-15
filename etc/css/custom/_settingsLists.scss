@@ -13,11 +13,16 @@ ul{
     }    
     &.dotted{
         li{        
+            box-sizing: border-box;
             position: relative;
-            
+            padding-left: 15px;
+        
             &::before{
-                content: "· ";
-            }
+            content: url("/framework/img/bullet_circle.svg");
+            position: absolute;
+            top: 5px;
+            left: 0;            
+            width: 10px;
         }
     }
 }
