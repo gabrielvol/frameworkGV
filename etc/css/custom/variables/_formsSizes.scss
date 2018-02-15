@@ -35,14 +35,14 @@ $formInputWidthATL: $formLabelWidthATL; //No debe llevar !important
 $formInputWidthAD:  $formLabelWidthAD; //No debe llevar !important
 
 $formInputHeightBT:  45px;
-$formInputHeightTO:  $formLabelHeightTO;
-$formInputHeightATL: $formLabelHeightATL; //No debe llevar !important
-$formInputHeightAD:  $formLabelHeightAD; //No debe llevar !important
+$formInputHeightTO:  $formInputHeightBT;
+$formInputHeightATL: $formInputHeightTO; //No debe llevar !important
+$formInputHeightAD:  $formInputHeightATL; //No debe llevar !important
     
     // Submit
-$formSubmitWidthMO:  $hundred;
+$formSubmitWidthMO:  90%;
 $formSubmitWidthMLO: 60%!important;
-$formSubmitWidthAT:  50%;
+$formSubmitWidthAT:  50%!important;
 $formSubmitWidthTO:  $formSubmitWidthAT;
 $formSubmitWidthATL: $formSubmitWidthAT;
 $formSubmitWidthAD:  $formSubmitWidthAT;

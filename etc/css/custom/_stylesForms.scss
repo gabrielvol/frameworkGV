@@ -432,11 +432,13 @@ form{
     input[type="submit"],
     input[type="button"],
     button{
+        @include borderRadius(6px);
         @include borderStyle($formSubmitBcColour);
         @include transition(1s);
         margin-bottom: $zero;
         color: $formSubmitFontColour;
         font-family: $formSubmitFontFamily;
+        font-size: 1.4rem;
 
         &:focus, &:hover{
             border-color: $formSubmitBcColourHover;
@@ -451,7 +453,7 @@ input[type="button"],
 form button{
     .mobileForm &{
         @include mobileOnly{
-            width: $formSubmitWidthMO;            
+            width: $formSubmitWidthMO!important;
         }
 
         @include mobileLandscapeOnly{
