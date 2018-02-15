@@ -53,22 +53,25 @@ fieldset, label, input, select, textarea, button,
     .mobileForm &{
         @include beforeTablet{
             width: $formLabelWidthBT;
+            font-size: $mainFontSizeParagraphBT;
         }
         
         @include mobileOnly{
-            width: $formLabelWidthMO;            
+            width: $formLabelWidthMO;           
         }
     }
     
     @include tabletOnly{
         .tabletForm &{
             width: $formLabelWidthTO;
+            font-size: $mainFontSizeParagraphAT;
         }
     }
     
     @include afterTabletLandscape{
         form &{
             width: $formLabelWidthATL;
+            font-size: $mainFontSizeParagraphATL;
         }
     }
     
@@ -506,7 +509,6 @@ form button{
 }
 
 .status, .mandatoryMessage p{
-    font-size: 1rem!important;
     text-align: center;      
 }
 
