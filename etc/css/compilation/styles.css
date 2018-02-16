@@ -2467,33 +2467,33 @@ table.tableRounded {
    ========================================================================== */
 #header {
   /*z-index: $zIndexHeader;*/ }
-  #header .logoHeader {
+  #header .logoH {
     z-index: 100;
     margin: 0 !important; }
   @media (max-width: 420px) {
-    #header .logoHeader {
+    #header .logoH {
       width: 90%;
       margin-right: auto !important;
       margin-left: auto !important; }
-      #header .logoHeader a, #header .logoHeader img {
+      #header .logoH a, #header .logoH img {
         width: 100%; } }
   @media (min-width: 421px) and (max-width: 767px) {
-    #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+    #header .logoH, #header .logoH a, #header .logoH img {
       width: 150px; } }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
       padding-top: 20px; }
-      #header .logoHeader.clicked {
+      #header .logoH.clicked {
         position: fixed;
         z-index: 9200;
         top: 20px;
         left: 30px;
         width: 50%; }
-        #header .logoHeader.clicked a, #header .logoHeader.clicked img {
+        #header .logoH.clicked a, #header .logoH.clicked img {
           width: 100%; } }
   @media (min-width: 768px) {
-    #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+    #header .logoH, #header .logoH a, #header .logoH img {
       width: 150px; }
     #header.topper {
       height: 50px; }
@@ -2505,7 +2505,7 @@ table.tableRounded {
   @media (min-width: 1024px) {
     #header {
       height: 130px; }
-      #header .logoHeader, #header .logoHeader a, #header .logoHeader img {
+      #header .logoH, #header .logoH a, #header .logoH img {
         width: 150px; } }
 
 /* =============================================================================

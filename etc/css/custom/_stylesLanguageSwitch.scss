@@ -52,7 +52,7 @@ $flagHeightAT: 32px;
         // MenuDrawer
         &.clicked{
             position: fixed;
-            z-index: $zIndexLogoHeaderClicked;
+            z-index: $zIndexlogoHClicked;
             top: 15px;
             left: 0;
         }

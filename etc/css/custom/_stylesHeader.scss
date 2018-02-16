@@ -4,8 +4,8 @@
 #header{    
     /*z-index: $zIndexHeader;*/
     
-    .logoHeader{
-        z-index: $zIndexLogoHeader;
+    .logoH{
+        z-index: $zIndexlogoH;
         margin: $zero;
         
         &, a{}
@@ -14,7 +14,7 @@
     }
     
     @include mobileOnly{
-        .logoHeader{
+        .logoH{
             @include centerCustom(90%);
             
             a, img{
@@ -24,7 +24,7 @@
     }
     
     @include mobileLandscapeOnly{        
-        .logoHeader{
+        .logoH{
             &, a, img{
                 width: 150px;
             }
@@ -35,11 +35,11 @@
         box-sizing: border-box;
         padding-top: 20px;
         
-        .logoHeader{    
+        .logoH{    
             // MenuDrawer    
             &.clicked{
                 position: fixed;
-                z-index: $zIndexLogoHeaderClicked;
+                z-index: $zIndexlogoHClicked;
                 top: 20px;
                 left: 30px;
                 width: 50%;
@@ -52,7 +52,7 @@
     }
     
     @include afterTablet{        
-        .logoHeader{
+        .logoH{
             &, a, img{
                 width: 150px;
             }
@@ -74,7 +74,7 @@
     @include afterTabletLandscape{
         height: 130px;
         
-        .logoHeader{
+        .logoH{
             &, a, img{
                 width: 150px;
             }
