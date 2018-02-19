@@ -148,7 +148,7 @@
                 </label>
 
                 <fieldset>
-                    <legend><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?></legend>
+                    <legend class="labelName"><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?></legend>
 
                     <label for="radioSi" class="radio"><?php echo _("Newsletter S&iacute;"); ?></label>
                     <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio">
