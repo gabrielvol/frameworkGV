@@ -470,12 +470,6 @@ form button{
     }
     
     .tabletForm &{
-        @include afterTablet{
-            width: $formSubmitWidthAT;
-            height: $formSubmitHeightValueAT;
-            line-height: $formSubmitLineHeightValueAT;
-        }
-
         @include tabletOnly{
             width: $formSubmitWidthTO;
             height: $formSubmitHeightValueTO;
