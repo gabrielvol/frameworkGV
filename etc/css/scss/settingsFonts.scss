@@ -29,7 +29,7 @@ p, li{
     @include afterTabletLandscape{
         font-size: $mainFontSizeParagraphATL;
     }
-    p, li, strong, dl, legend{
+    p, a, li, strong, dl, legend{
         font-size: 1em;
     }
 }
