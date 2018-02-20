@@ -94,13 +94,6 @@ fieldset{
     }
 }
 
-legend{
-    @include beforeTabletLandscape{
-        @include centerCustom(90%);
-        text-align: center;
-    }
-}
-
 form{
     input, select, textarea{
         @include transition(1s);
@@ -275,9 +268,52 @@ form{
                 height: $formLabelHeightAD;        
             }
         }
+    }  
+    
+    label.radio{
+        .radio{
+            clear: $none;
+            float: $left;
+            margin-right: 5px!important;
+        }
+        
+        @include beforeTablet{
+            .mobileForm &{
+                .radio{
+                    width: $formInputRadioHeightBT!important;
+                    height: $formInputRadioHeightBT;
+                }
+                
+                span{
+                    width: calc(100% - calc(#{$formInputRadioHeightBT} + 10px));
+                    display: block;
+                    float: left;
+                    height: auto;
+                    margin-top: 5px;
+                    line-height: 1.3em;  
+                }
+                
+                & + .radio{
+                    margin-top: 10px;
+                }
+            }
+        }
+        
+        @include tabletOnly{
+            .tabletForm &{
+                .radio{
+                    width: $formInputRadioHeightTO!important;
+                    height: $formInputRadioHeightTO;
+                }
+                
+                &, input, span{
+                    @include equalHeightAndLineHeight($formInputRadioHeightTO);
+                }
+            }
+        }
     }
     
-    input, select{
+    fieldset span, input, select{
         @include beforeTablet{
             .mobileForm &{
                 @include equalHeightAndLineHeight($formInputHeightBT);

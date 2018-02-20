@@ -55,7 +55,7 @@ form{
 
         &[type="checkbox"],
         &[type="radio"]{
-            width: auto;
+            width: $auto;
         }
 
         &[type="submit"]{
