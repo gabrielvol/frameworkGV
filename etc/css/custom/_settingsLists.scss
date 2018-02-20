@@ -28,7 +28,7 @@ ul{
         }
     }
 }
-.ulResp2 li, .ulResp3 li, .ulResp4 li{
+.ulResp2 > li, .ulResp3 > li, .ulResp4 > li{
     a{
         position: relative;
     }
@@ -61,14 +61,14 @@ ul{
         }
     }
 }
-.ulResp2{ li{
+.ulResp2{ > li{
         @include afterTablet{
             &:nth-child(n+3){margin-top: 40px;}
         }
     }}
-.ulResp3{ li{
+.ulResp3{ > li{
         @include afterTablet{width: calc(100% / 3);}
     }}
-.ulResp4{ li{
+.ulResp4{ > li{
         @include afterTablet{width: 25%}
     }}
