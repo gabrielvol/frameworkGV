@@ -509,7 +509,7 @@ form button{
 .status.ok, .mandatoryMessage{
     @include borderRadius(6px);
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 7px 20px;
 }
 
 .mandatoryMessage{
