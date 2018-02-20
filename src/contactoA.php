@@ -150,36 +150,49 @@
                 <fieldset>
                     <legend class="labelName"><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?></legend>
 
-                    <label for="radioSi" class="radio"><?php echo _("Newsletter S&iacute;"); ?></label>
-                    <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio">
+                    <label for="radioSi" class="radio">
+                        <?php echo _("Newsletter S&iacute;"); ?>
+                        <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio">
+                    </label>
 
-                    <label for="radioNo" class="radio"><?php echo _("Newsletter No"); ?></label>
-                    <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio">
+                    <label for="radioNo" class="radio">
+                        <?php echo _("Newsletter No"); ?>
+                        <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio">
+                    </label>
 
-                    <label for="radioNoSe" class="radio"><?php echo _("Newsletter No Sé"); ?></label>
-                    <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio">
+                    <label for="radioNoSe" class="radio">
+                        <?php echo _("Newsletter No Sé"); ?>
+                        <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio">
+                    </label>
                 </fieldset>
 
-                <label for="preciotilde"><?php echo _("Prefiero charlar el precio personalmente"); ?></label>
-                <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" value="Si">
+                <label for="preciotilde">
+                    <?php echo _("Prefiero charlar el precio personalmente"); ?>
+                    <input type="checkbox" name="preciotilde" id="preciotilde" class="check preciotilde" value="Si">
+                </label>
                 
-                <label for="browsersInput"><?php echo _("Choose a browser from this list:"); ?></label>
-                <input type="text" list="browsersList" name="myBrowser" id="browsersInput">
-                <datalist id="browsersList">
-                    <option value="Chrome">
-                    <option value="Firefox">
-                    <option value="Internet Explorer">
-                    <option value="Opera">
-                    <option value="Safari">
-                    <option value="Microsoft Edge">
-                </datalist>
+                <label for="browsersInput">
+                    <?php echo _("Choose a browser from this list:"); ?>
+                    <input type="text" list="browsersList" name="myBrowser" id="browsersInput">
+                    <datalist id="browsersList">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Internet Explorer">
+                        <option value="Opera">
+                        <option value="Safari">
+                        <option value="Microsoft Edge">
+                    </datalist>
+                </label>
 
-                <label for="habitacion"><?php echo _("Habitaci&oacute;n"); ?></label>
-                <select id="habitacion" name="habitacion" class="habitacion" >
-                    <option value="<?php echo $_POST['habitacion']; ?>" selected><?php echo _("Seleccione una opci&oacute;n"); ?></option>
-                    <option value="a"><?php echo _("a"); ?></option>
-                    <option value="b">b</option>
-                </select>
+
+                <label for="habitacion">
+                    <?php echo _("Habitaci&oacute;n"); ?>
+                    <select id="habitacion" name="habitacion" class="habitacion" >
+                        <option value="<?php echo $_POST['habitacion']; ?>" selected><?php echo _("Seleccione una opci&oacute;n"); ?></option>
+                        <option value="a"><?php echo _("a"); ?></option>
+                        <option value="b">b</option>
+                    </select>
+                </label>
 
     <!--            <select name="habitaciones[]" size="4" multiple="">
                 <?php
