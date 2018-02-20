@@ -150,19 +150,19 @@
                 <fieldset>
                     <legend class="labelName"><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?></legend>
 
-                    <label for="radioSi" class="radio">
-                        <?php echo _("Newsletter S&iacute;"); ?>
-                        <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio">
+                    <label for="radioSi" class="radio prn pll mbn">
+                        <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio floatLeft mrs">
+                        <span><?php echo _("Newsletter S&iacute;"); ?></span>
                     </label>
 
-                    <label for="radioNo" class="radio">
-                        <?php echo _("Newsletter No"); ?>
-                        <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio">
+                    <label for="radioNo" class="radio prn pll mbn">
+                        <input type="radio" name="newsletter" id="radioNo" value="<?php echo _('No'); ?>" class="radio floatLeft mrs">
+                        <span><?php echo _("Newsletter No"); ?></span>
                     </label>
 
-                    <label for="radioNoSe" class="radio">
-                        <?php echo _("Newsletter No Sé"); ?>
-                        <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio">
+                    <label for="radioNoSe" class="radio pan mbn">
+                        <input type="radio" name="newsletter" id="radioNoSe" value="<?php echo _('No Sé'); ?>" class="radio floatLeft mrs">
+                        <span><?php echo _("Newsletter No Sé"); ?></span>
                     </label>
                 </fieldset>
 
