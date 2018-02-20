@@ -13,7 +13,7 @@
     $statusErrorGlobalB = _('Intente nuevamente m&aacute;s tarde.');
 
     //Status Ini
-    //$status = '<p class="status">'.$statusIniGlobal.'</p>';
+    //$status = '<p class="status ini">'.$statusIniGlobal.'</p>';
 
     //Inicia proceso de form
     if (isset($_POST['enviarForm'])){

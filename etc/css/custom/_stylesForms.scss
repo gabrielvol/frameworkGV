@@ -502,14 +502,26 @@ form button{
     margin-bottom: 20px;
 }
 
-.status, .mandatoryMessage p{
-    text-align: center;      
-}
-
 .status.ok, .mandatoryMessage{
     @include borderRadius(6px);
     box-sizing: border-box;
     padding: 7px 20px;
+}
+
+.status, .mandatoryMessage p{
+    text-align: center;   
+}
+
+
+.status{    
+    &.ini{
+        font-size: 1.4em;
+    }
+
+    &.ok{
+        background-color: $bgGreen;
+        color: $white;
+    }
 }
 
 .mandatoryMessage{
@@ -525,9 +537,4 @@ form button{
     @include afterTabletLandscape{
         @include centerCustom(80%);
     }
-}
-
-.status.ok{
-    background-color: $bgGreen;
-    color: $white;
 }
