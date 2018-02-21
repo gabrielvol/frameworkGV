@@ -58,13 +58,13 @@ $(document).ready(function () {
         $(this).toggleClass('open');
     });
 
-    $('.topLevelItem').hover(function () {
-        $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
-    });
-    
-    $('.hasSub').hover(function () {
-        $(this).find(".topLevelItem").attr('aria-expanded', function (i, attr) {
-            return attr === 'true' ? 'false' : 'true';
-        });
-    });
+//    $('.topLevelItem').hover(function () {
+//        $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
+//    });
+//    
+//    $('.hasSub').hover(function () {
+//        $(this).find(".topLevelItem").attr('aria-expanded', function (i, attr) {
+//            return attr === 'true' ? 'false' : 'true';
+//        });
+//    });
 });
