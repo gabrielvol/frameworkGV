@@ -9,19 +9,18 @@ $flagHeightAT: 32px;
 
 .lang{
     z-index: $zIndexLang;
-
-    li{
-        a{
-            @include borderStyle($bcWhite);
+    
+    a{
+        @include borderStyle($bcWhite);
+        @include transition(1s);
+        
+        @if $circleFlags == "on"{
             @include borderRadius(50%);
-            @include transition(1s);
 
             &:focus, &:hover{
                 box-shadow: 0 0 10px $white;
             }
         }
-
-        & + li{}
     }
 
     @include beforeTablet{
@@ -29,23 +28,23 @@ $flagHeightAT: 32px;
         position: absolute;
             
         li{
-            &, a{
-                @include squareSize($flagHeightBT);
-            }
-            
             img{
-                @include centerAbsolute($flagWidthBT, $flagHeightBT);
-            }
-
-            &.flagLA{/* Left Aligned Flag*/
-                img{
-                    width: $flagWidthBT;
-                    height: $flagHeightBT;
-                }
+                width: $flagWidthBT;
+                height: $flagHeightBT;
             }
 
             & + li{
                 margin-left: 15px;
+            }
+        
+            @if $circleFlags == "on"{
+                &, a{
+                    @include squareSize($flagHeightBT);
+                }
+                
+                img{
+                    @include centerAbsolute($flagWidthBT, $flagHeightBT);
+                }
             }
         }
         
@@ -63,23 +62,23 @@ $flagHeightAT: 32px;
         position: absolute;
 
         li{
-            &, a{
-                @include squareSize($flagHeightAT);
-            }
-            
             img{
-                @include centerAbsolute($flagWidthAT, $flagHeightAT);
-            }
-
-            &.flagLA{/* Left Aligned Flag*/
-                img{
-                    width: $flagWidthAT;
-                    height: $flagHeightAT;
-                }
+                width: $flagWidthAT;
+                height: $flagHeightAT;
             }
 
             & + li{
                 margin-left: 10px;
+            }
+        
+            @if $circleFlags == "on"{
+                &, a{
+                    @include squareSize($flagHeightAT);
+                }
+                
+                img{
+                    @include centerAbsolute($flagWidthAT, $flagHeightAT);
+                }
             }
         }
     }
