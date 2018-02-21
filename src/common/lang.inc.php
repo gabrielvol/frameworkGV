@@ -4,7 +4,7 @@
     $text_pt = "Navegar no site em Portugu&ecirc;s";
 ?>
 
-<ul class="lang pRel horizontal clearfix">
+<ul class="lang horizontal clearfix">
     <li>
         <a href="/nuevo/?l=es_AR" class="displayBlock mask">
             <img src="/nuevo/img/fl_ar.svg" alt="<?php echo $text_es; ?>.">
