@@ -28,7 +28,7 @@ $flagHeightAT: 32px;
         position: absolute;
             
         li{
-            img{
+            a, img{
                 width: $flagWidthBT;
                 height: $flagHeightBT;
             }
@@ -58,11 +58,11 @@ $flagHeightAT: 32px;
     }
 
     @include afterTablet{
-        @include posTR(-46px, 20px);
+        @include posTR(10px, 20px);
         position: absolute;
 
         li{
-            img{
+            a, img{
                 width: $flagWidthAT;
                 height: $flagHeightAT;
             }
