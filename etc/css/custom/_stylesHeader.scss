@@ -58,15 +58,17 @@
             }
         }
         
-        &.topper{        
-            height: 50px;
+        @if $navTopper == "on"{
+            &.topper{        
+                height: 50px;
 
-            li{
-                padding-top: 0;  
-            }
-            
-            a{
-                @include equalHeightAndLineHeight(50px);
+                li{
+                    padding-top: 0;  
+                }
+
+                a{
+                    @include equalHeightAndLineHeight(50px);
+                }
             }
         }
     }

@@ -68,61 +68,63 @@ $navDrawerWidth: 70vw;
                     cursor: default;                    
                 }
             }
-        }        
+        }    
         
-        &.topper{
-            @include borderStyleB($mainBcColour);
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;  
-            background-color: $bgNavTopper;
-           
-            .hamb{
-                display: $none;
-            }
-           
-            .mainMenu{
-                @include centerCustom(700px);
-                float: $none;
-                padding: 0;
-            }  
-            
-            .hasSub{ 
-                display: $block;
-                
-                &:focus, &:hover{
-                    ul{
-                        display: $block;
-                    }
-                }
-            }
-            
-            .subMenu{
-                &, &.open{
-                    position: absolute;
-                    display: none;
-                    background-image: $bgGradBlackEighty;
-                    filter: $bgGradBlackEightyFilter;
-                    padding-bottom: 5px;
+        @if $navTopper == "on"{
+            &.topper{
+                @include borderStyleB($mainBcColour);
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;  
+                background-color: $bgNavTopper;
+
+                .hamb{
+                    display: $none;
                 }
 
-                &, li{
-                    width: 150px;
+                .mainMenu{
+                    @include centerCustom(700px);
+                    float: $none;
+                    padding: 0;
+                }  
+
+                .hasSub{ 
+                    display: $block;
+
+                    &:focus, &:hover{
+                        ul{
+                            display: $block;
+                        }
+                    }
                 }
 
-                li{
-                    a{
-                        padding-left: 10px;
-                        text-align: left;
+                .subMenu{
+                    &, &.open{
+                        position: absolute;
+                        display: none;
+                        background-image: $bgGradBlackEighty;
+                        filter: $bgGradBlackEightyFilter;
+                        padding-bottom: 5px;
                     }
 
-                    &, a{
-                        @include equalHeightAndLineHeight(35px);
+                    &, li{
+                        width: 150px;
                     }
 
-                    & + li{
-                        @include borderStyleT($bcGreyL);
+                    li{
+                        a{
+                            padding-left: 10px;
+                            text-align: left;
+                        }
+
+                        &, a{
+                            @include equalHeightAndLineHeight(35px);
+                        }
+
+                        & + li{
+                            @include borderStyleT($bcGreyL);
+                        }
                     }
                 }
             }
