@@ -41,11 +41,13 @@
                 position: fixed;
                 z-index: $zIndexlogoHClicked;
                 top: 20px;
-                left: 30px;
-                width: 50%;
+                left: 20px;
+                width: auto;
+                height: 50px;
             
                 a, img{
-                    width: 100%;
+                    width: auto;
+                    height: 100%;
                 }
             }
         }
