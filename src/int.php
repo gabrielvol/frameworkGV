@@ -6,7 +6,7 @@
     $mdesc = "";
     
     $navCurrent = 1;
-    $navCurrentInt = 1;
+    $navCurrentInt = 0;
     
     //Gettext variable, debe ir antes del head
     $idioma = $_GET['l'];
