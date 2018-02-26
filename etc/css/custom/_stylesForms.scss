@@ -393,12 +393,17 @@ form input{
     padding: 0 $paddingMarginMediumValue;
 
     &[type="text"]{}
-    &[type="search"]{}
+    
+    &[type="color"]{}
     &[type="email"]{
         &:valid{}
         &:invalid{}
     }
+    &[type="file"]{}
+    &[type="image"]{}
     &[type="password"]{}
+    &[type="search"]{}
+    &[type="tel"]{}
     &[type="url"]{}
 
     &[type="number"]{
@@ -407,10 +412,10 @@ form input{
     }
     &[type="range"]{}
 
+    &[type="time"]{}
     &[type="date"]{}
     &[type="month"]{}
     &[type="week"]{}
-    &[type="time"]{}
 
     &[type="checkbox"]{
         &:checked{}
@@ -418,9 +423,6 @@ form input{
     &[type="radio"]{
         &:checked{}
     }
-
-    &[type="file"]{}
-    &[type="color"]{}
     
     &:required{}
     &:disabled{}

@@ -87,7 +87,7 @@
                 <label for="telefono">
                     <span class="labelName"><?php echo _("Tel&eacute;fono"); ?></span>
                     <span class="sug"><?php echo _("Ingrese su n&ucaute;mero de tel&eacute;fono"); ?>.</span>
-                    <input type="text" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="<?php echo _('Ingrese su tel&eacute;fono'); ?>" <?php echo $autofocusTelefono ?>>
+                    <input type="tel" name="telefono" id="telefono" class="telefono <?php echo $invalidFieldTelefono ?>" value="<?php echo $_POST['telefono']; ?>" placeholder="<?php echo _('Ingrese su tel&eacute;fono'); ?>" <?php echo $autofocusTelefono ?>>
                     <span class="errorForm errorColour"><?php echo $errorTelefono ?></span>              
                 </label>
                 
