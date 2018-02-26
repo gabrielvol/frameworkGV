@@ -5,7 +5,7 @@
     <!--Normal-->
     <?php if($index == 1){ echo '<h1 class="logoH">'; } ?>
     <a href="/nuevo/" class="pRel displayBlock <?php if($int == 1){ echo 'logoH'; } else { echo ''; } ?>">
-        <img src="/nuevo/img/logo.svg" alt="<?php echo _('Logo de'); ?>.">
+        <img src="/nuevo/img/logo.svg" alt="<?php echo _('Logo de'); ?>."  class="displayBlock">
     </a>
     <?php if($index == 1){ echo '</h1>'; } ?>    
     

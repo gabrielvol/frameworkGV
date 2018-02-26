@@ -19,9 +19,9 @@ $(document).ready(function () {
     // Hamburger Drawer
     $(".openNav").click(function () {
         $(this).toggleClass('clicked');
-        $(this).closest("#nav").find(".modalNav").show( "100", function() {
-            $(this).closest("#nav").find(".mainMenu").toggleClass('open');
-            $(this).closest("#nav").find(".closeNav").show("fast");
+        $(this).closest("#nav").find(".mainMenu").toggleClass('open');
+        $(this).closest("#nav").find(".modalNav").show( "2000", function() {
+            $(this).closest("#nav").find(".closeNav").show('fast');
             $(this).closest("#header").find(".lang").toggleClass('clicked');
             $(this).closest("#header").find(".logoH").toggleClass('clicked');
         });

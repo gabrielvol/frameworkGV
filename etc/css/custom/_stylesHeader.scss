@@ -1,6 +1,9 @@
 /* =============================================================================
    Header Styles | Custom [stylesHeader.scss]
    ========================================================================== */
+$navDrawerWidth: 70vw;
+$navWidthBT: 200px;
+
 #header{    
     /*z-index: $zIndexHeader;*/
     
@@ -40,14 +43,22 @@
             &.clicked{
                 position: fixed;
                 z-index: $zIndexlogoHClicked;
-                top: 20px;
-                left: 20px;
-                width: auto;
+                top: 0;
+                left: 0;
+                width: calc(#{$navDrawerWidth} - 5px);
                 height: 50px;
+                background-color: $bgNavDrawer;
+                padding-top: 50px;
+                padding-bottom: 10px;
             
                 a, img{
                     width: auto;
                     height: 100%;
+                }
+                
+                img{
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
         }
