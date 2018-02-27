@@ -45,10 +45,11 @@ ul{
         }
         
         .topLevelItem{
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            
             &.open{
                 background-image: url('/framework/img/ic_arrowNavL.svg');
-                background-repeat: no-repeat;
-                background-position: 10px center;
             }
         }
     }
