@@ -42,11 +42,7 @@ ul{
         a, .topLevelItem{
             font-size: 1rem;
             text-align: center;
-        }
-        
-        &.volver{
-            @include borderStyleB($bcBlack, 2px);
-        }                 
+        }                
     }
     
     &.open{
