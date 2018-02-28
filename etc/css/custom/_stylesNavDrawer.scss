@@ -44,14 +44,27 @@ ul{
             text-align: center;
         }
         
+        &.current,
+        &.volver,
+        .topLevelItem.open{
+            background-image: url('/framework/img/ic_arrowNavL.svg');
+        }
+        
         .topLevelItem{
             background-repeat: no-repeat;
             background-position: 10px center;
-            
-            &.open{
-                background-image: url('/framework/img/ic_arrowNavL.svg');
-            }
         }
+        
+        &.current{
+            background-color: $bgNavItemCurrent;
+            background-position: right 10px center;
+            background-repeat: no-repeat;
+            background-size: 7px;
+        } 
+        
+        &.volver{
+            @include borderStyleB($bcBlack, 2px);
+        }                 
     }
     
     &.open{
