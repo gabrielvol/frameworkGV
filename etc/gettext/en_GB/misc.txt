@@ -10,8 +10,8 @@ msgstr "Back"
 msgid "Enviar"
 msgstr "Send"
 
-<?php echo _("Gracias."); ?>
-msgid "Gracias."
+<?php echo _("Gracias"); ?>
+msgid "Gracias"
 msgstr "Thank you"
 
 <?php echo _("Ver M&aacute;s"); ?>
@@ -29,3 +29,7 @@ msgstr "Vision"
 <?php echo _("Valores"); ?>
 msgid "Valores"
 msgstr "Values"
+
+<?php echo _("Ir a la ubicaci&oacute;n en Google Maps"); ?>
+msgid "Ir a la ubicaci&oacute;n en Google Maps"
+msgstr "View in Google Maps"

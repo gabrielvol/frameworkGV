@@ -10,9 +10,9 @@ msgstr "Regresar"
 msgid "Enviar"
 msgstr "Enviar"
 
-<?php echo _("Gracias."); ?>
-msgid "Gracias."
-msgstr "Gracias."
+<?php echo _("Gracias"); ?>
+msgid "Gracias"
+msgstr "Gracias"
 
 <?php echo _("Ver M&aacute;s"); ?>
 msgid "Ver M&aacute;s"
@@ -29,3 +29,7 @@ msgstr "Visi&oacute;n"
 <?php echo _("Valores"); ?>
 msgid "Valores"
 msgstr "Valores"
+
+<?php echo _("Ir a la ubicaci&oacute;n en Google Maps"); ?>
+msgid "Ir a la ubicaci&oacute;n en Google Maps"
+msgstr "Ir a la ubicaci&oacute;n en Google Maps"
