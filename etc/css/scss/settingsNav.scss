@@ -38,12 +38,27 @@
             a, .topLevelItem{
                 color: $navFontColourBT;
             }
+        
+            .topLevelItem{
+                background-repeat: no-repeat;
+                background-position: 10px center;
+            }
+        
+            &.current,
+            &.volver .topLevelItem,
+            &.topLevelItem.open{
+                background-image: url('/framework/img/ic_arrowNavL.svg');
+                background-repeat: no-repeat;
+            }
             
             &.current{
+                background-color: $bgNavCurrentItemBT;
+                background-position: right 10px center;
+            
                 a, .topLevelItem{
                     color: $navSelectedFontColourBT;
                 }            
-            }            
+            }           
         }
     }
     
@@ -70,9 +85,9 @@
             }
             
             &.current{
-                background: $bgNavSelectedItem;
+                background: $bgNavCurrentItemAT;
                 a, .topLevelItem{
-                    background: $bgNavSelectedAnchor;
+                    background: $bgNavCurrentAnchor;
                     color: $navSelectedFontColour;
                     
                     &, &:focus, &:hover{
@@ -80,7 +95,7 @@
                     }
                     
                     &:focus, &:hover{
-                        background-color: $bgNavSelectedAnchorHover;
+                        background-color: $bgNavCurrentAnchorHover;
                     }
                 }            
             }             

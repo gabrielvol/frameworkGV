@@ -22,10 +22,10 @@ $bgNavDrawer: $bgGrey;
 $bgNavItem: transparent;
 $bgNavItemAnchor: transparent;
 $bgNavItemAnchorHover: transparent;
-$bgNavItemCurrent: darken($bgNavDrawer, 5%);
 
-$bgNavSelectedItem: transparent;
-$bgNavSelectedAnchor: transparent;
-$bgNavSelectedAnchorHover: transparent;
+$bgNavCurrentItemAT: transparent;
+$bgNavCurrentItemBT: transparent;
+$bgNavCurrentAnchor: transparent;
+$bgNavCurrentAnchorHover: transparent;
 
 $bgNavTopper: $bgWhite;
