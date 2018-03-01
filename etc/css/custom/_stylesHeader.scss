@@ -8,7 +8,7 @@ $navWidthBT: 200px;
     /*z-index: $zIndexHeader;*/
     
     .logoH{
-        z-index: $zIndexlogoH;
+        z-index: $zIndexLogoH;
         margin: $zero;
         
         &, a{}
@@ -42,7 +42,7 @@ $navWidthBT: 200px;
             // MenuDrawer    
             &.clicked{
                 position: fixed;
-                z-index: $zIndexlogoHClicked;
+                z-index: $zIndexLogoHClicked;
                 top: 0;
                 left: 0;
                 width: calc(#{$navDrawerWidth} - 5px);
