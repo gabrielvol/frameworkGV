@@ -9,7 +9,7 @@
         
         &.current{
             a, .topLevelItem{
-                font-family: $navSelectedFontFamily;
+                font-family: $navCurrentFontFamily;
             }            
         }     
     }
@@ -57,7 +57,7 @@
                 background-position: right 10px center;
             
                 a, .topLevelItem{
-                    color: $navSelectedFontColourBT;
+                    color: $navCurrentFontColourBT;
                 }            
             }           
         }
@@ -89,10 +89,10 @@
                 background: $bgNavCurrentItemAT;
                 a, .topLevelItem{
                     background: $bgNavCurrentAnchor;
-                    color: $navSelectedFontColour;
+                    color: $navCurrentFontColour;
                     
                     &, &:focus, &:hover{
-                        color: $navSelectedFontColour;
+                        color: $navCurrentFontColour;
                     }
                     
                     &:focus, &:hover{
