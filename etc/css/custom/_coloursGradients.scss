@@ -10,6 +10,15 @@ $bgGradWhiteEightyFilter: progid:DXImageTransform.Microsoft.gradient( startColor
     filter: $bgGradWhiteEightyFilter;
 }
 
+// Black 10%
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
+$bgGradBlackTen: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
+$bgGradBlackTenFilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 );
+.bgGradBlackTen{
+    background-image: $bgGradBlackTen;
+    filter: $bgGradBlackTenFilter;
+}
+
 // Black 50%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
 $bgGradBlackFifty: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 89%,rgba(0,0,0,0.5) 100%);
