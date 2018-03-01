@@ -28,7 +28,7 @@ $bgNavItemAT: transparent;
 $bgNavItemAnchor: transparent;
 $bgNavItemAnchorHover: transparent;
 
-$bgNavCurrentItemBT: transparent;
+$bgNavCurrentItemBT: darken($bgNavBT, 5%);
 $bgNavCurrentItemAT: transparent;
 $bgNavCurrentAnchor: transparent;
 $bgNavCurrentAnchorHover: transparent;
