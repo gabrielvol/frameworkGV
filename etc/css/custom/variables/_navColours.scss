@@ -14,12 +14,17 @@ $hamburgerFontColour: $greyXD;
 $hamburgerFontColourClicked: $hamburgerFontColour;
 
     //Border Colours
-$bcNavDrawerItem: $bcWhite;
-$bcNavDrawerItemSub: $bcNavDrawerItem;
+$bcOpenNav: $mainBcColour;
+$bcCloseNav: $mainBcColour;
+
+$bcNavItemItemBT: $bcWhite;
+$bcNavSubItemItemBT: $bcNavItemItemBT;
 
     //Background Colours
+$bgNavBT: $bgGrey;
+$bgNavTopper: $bgWhite;
+
 $bgNavItemAT: transparent;
-$bgNavItemBT: $bgGrey;
 $bgNavItemAnchor: transparent;
 $bgNavItemAnchorHover: transparent;
 
@@ -27,5 +32,3 @@ $bgNavCurrentItemAT: transparent;
 $bgNavCurrentItemBT: transparent;
 $bgNavCurrentAnchor: transparent;
 $bgNavCurrentAnchorHover: transparent;
-
-$bgNavTopper: $bgWhite;

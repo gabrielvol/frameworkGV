@@ -19,7 +19,7 @@
                 height: 40px;
                 background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
                 background-size: 15px;
-                border: 1px solid $mainBcColour!important;
+                border: 1px solid $bcOpenNav!important;
                 padding: 0 10px 0 30px;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
@@ -37,7 +37,7 @@
                     @include squareSize(45px);
                     background: $bgWhite url('/nuevo/img/ic_navClose.svg') no-repeat center center;
                     background-size: 20px;
-                    border: 2px solid $mainBcColour!important;
+                    border: 2px solid $bcCloseNav!important;
                 }
             }
         }
