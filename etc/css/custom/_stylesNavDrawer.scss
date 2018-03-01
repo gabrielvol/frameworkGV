@@ -4,7 +4,7 @@
 ul{
     z-index: $zIndexNavUlDrawer;
     position: fixed;
-    background-color: $bgNavDrawer;
+    background-color: $bgNavItemBT;
     
     &, .subMenu{
         @include transition(0.5s); 
