@@ -39,15 +39,19 @@
 <!-- Notifies a URL when you link to it on your document -->
 <link rel="webmention" href="http://example.com/webmention">
 
-<!-- Facebook Open Graph -->
-<meta property="fb:app_id" content="123456789">
-<meta property="og:url" content="http://example.com/page.html">
+<!-- Open Graph -->
+<meta property="og:title" content="WebsiteTitle">
+<meta property="og:url" content="http://www.example.com/page.html">
+<meta property="og:description" content="DescriptionHere">
+/* Max 65 char
+12345678901234567890123456789012345678901234567890123456789012345 */
+<meta property="og:image" content="http://www.example.com/img.jpg">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Sitio web GabrielVolonte">
-<meta property="og:image" content="http://example.com/image.jpg">
-<meta property="og:description" content="Descriptio Here">
 <meta property="og:site_name" content="SiteName">
 <meta property="og:locale" content="es_AR">
+
+<!-- Facebook Open Graph -->
+<meta property="fb:app_id" content="123456789">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
