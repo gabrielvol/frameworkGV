@@ -17,15 +17,17 @@
     @include beforeTablet{
         .hamb{
             @include transition(1s);    
-            box-sizing: border-box;        
+            box-sizing: border-box;
             
             &.openNav{
                 z-index: $zIndexNavHamb;
                 opacity: 1;
-            
-                &.clicked{
-                    opacity: 0;
-                }      
+                
+                @if $navDrawer == "on"{
+                    &.clicked{
+                        opacity: 0;
+                    }      
+                }
             }
             
             &.closeNav{
