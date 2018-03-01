@@ -2,6 +2,7 @@
    Nav Styles | Custom [stylesNav.scss]
    ========================================================================== */
 .navMain{
+    $navBorderRadius: 4px;
     z-index: $zIndexNav;
 
     @include beforeTablet{
