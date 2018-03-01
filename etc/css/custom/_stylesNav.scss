@@ -41,11 +41,8 @@
             }
         }
         
-        @if $navDrawer == "on"{
-            @import "stylesNavDrawer";
-        } @else {
-            @import "stylesNavList";
-        }
+        @import "stylesNavDrawer";
+        @import "stylesNavList";
     }    
     
     @include afterTablet{

@@ -1,73 +1,75 @@
 /* =============================================================================
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
-ul{
-    z-index: $zIndexNavUlDrawer;
-    position: fixed;
-    background-color: $bgNavItemBT;
-    
-    &, .subMenu{
-        @include transition(0.5s); 
-        top: 0;
-        bottom: 0;
-    }
-}
+@if $navDrawer == "on"{
+    ul{
+        z-index: $zIndexNavUlDrawer;
+        position: fixed;
+        background-color: $bgNavItemBT;
 
-> ul{
-    box-sizing: border-box;
-    left: calc(-1 * #{$navDrawerWidth});
-    width: calc(#{$navDrawerWidth} - 5px);
-    padding-top: 100px;
-    padding-right: 5px;
-    padding-left: 5px;
-    overflow: scroll; 
-    
-    > li{
-        &:last-child{
-            padding-bottom: 30px;
-        }
-        
-        & + li{
-            @include borderStyleT($bcNavDrawerItem);
+        &, .subMenu{
+            @include transition(0.5s); 
+            top: 0;
+            bottom: 0;
         }
     }
-    
-    li{
-        float: $none;    
-        
-        &, a, .topLevelItem{
-            @include equalHeightAndLineHeight(45px);
+
+    > ul{
+        box-sizing: border-box;
+        left: calc(-1 * #{$navDrawerWidth});
+        width: calc(#{$navDrawerWidth} - 5px);
+        padding-top: 100px;
+        padding-right: 5px;
+        padding-left: 5px;
+        overflow: scroll; 
+
+        > li{
+            &:last-child{
+                padding-bottom: 30px;
+            }
+
+            & + li{
+                @include borderStyleT($bcNavDrawerItem);
+            }
         }
-
-        a, .topLevelItem{
-            font-size: 1rem;
-            text-align: center;
-        }                
-    }
-    
-    &.open{
-        left: 0;
-    }
-}
-
-@if $navHasSub == "on"{
-    .subMenu{
-        z-index: $zIndexNavSubMenu;
-        position: relative;
-        top: 0;
-        right: $navDrawerWidth;
-        width: calc(#{$navDrawerWidth} - 10px);
-        background-image: $bgGradWhiteEighty;
-        filter: $bgGradWhiteEightyFilter;
 
         li{
-            & + li{
-                @include borderStyleT($bcNavDrawerItemSub);
+            float: $none;    
+
+            &, a, .topLevelItem{
+                @include equalHeightAndLineHeight(45px);
             }
-        } 
+
+            a, .topLevelItem{
+                font-size: 1rem;
+                text-align: center;
+            }                
+        }
 
         &.open{
-            right: 5px;
+            left: 0;
+        }
+    }
+
+    @if $navHasSub == "on"{
+        .subMenu{
+            z-index: $zIndexNavSubMenu;
+            position: relative;
+            top: 0;
+            right: $navDrawerWidth;
+            width: calc(#{$navDrawerWidth} - 10px);
+            background-image: $bgGradWhiteEighty;
+            filter: $bgGradWhiteEightyFilter;
+
+            li{
+                & + li{
+                    @include borderStyleT($bcNavDrawerItemSub);
+                }
+            } 
+
+            &.open{
+                right: 5px;
+            }
         }
     }
 }
