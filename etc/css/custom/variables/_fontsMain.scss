@@ -53,7 +53,7 @@ $mainLineHeight: 1.4;
 $mainFontSize: 1rem;
 $mainFontSizeParagraphBT: 0.9rem;
 $mainFontSizeParagraphAT: 1rem;
-$mainFontSizeParagraphATL: 1rem;
+$mainFontSizeParagraphATL: $mainFontSizeParagraphAT;
 $mainFontSizeAnchor: 1rem;
 $headingMargin: 0 0 0.8em;
 $textMargin: 0;
