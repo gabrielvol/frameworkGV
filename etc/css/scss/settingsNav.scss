@@ -44,22 +44,33 @@
             .topLevelItem{
                 background-repeat: no-repeat;
                 background-position: 10px center;
-            }
-        
-            &.current,
-            &.topLevelItem.open{
-                background-image: url('/nuevo/img/ic_arrowNavL.svg');
-                background-repeat: no-repeat;
+                
+                &.open{
+                    background-image: url('/nuevo/img/ic_arrowNavD.svg');
+                    background-repeat: no-repeat;
+                }
             }
             
             &.current{
                 background-color: $bgNavCurrentItemBT;
+                background-image: url('/nuevo/img/ic_arrowNavL.svg');
+                background-repeat: no-repeat;
                 background-position: right 10px center;
             
                 a, .topLevelItem{
                     color: $navCurrentFontColourBT;
                 }            
             }           
+        }
+        
+        @if $navHasSub == "on"{ 
+            .subMenu{
+                li{
+                    a{
+                        font-family: $navFontFamilySub;
+                    }
+                }
+            }
         }
     }
     
@@ -87,7 +98,8 @@
             
             &.current{
                 background: $bgNavCurrentItemAT;
-                a, .topLevelItem{
+                
+                > a, .topLevelItem{
                     background: $bgNavCurrentAnchor;
                     color: $navCurrentFontColour;
                     
@@ -100,6 +112,18 @@
                     }
                 }            
             }             
+        }
+        
+        @if $navHasSub == "on"{ 
+            .subMenu{
+                li{
+                    a{
+                        &:focus, &:hover{
+                            background-color: $bgNavSubItemHoverAT;
+                        }
+                    }
+                }
+            }
         }
     }
 }

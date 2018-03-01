@@ -8,7 +8,6 @@
     @include beforeTablet{
         @include posTR(10px, 10px);
         position: fixed;
-        width: $navWidthBT;
  
         .hamb{
             @include borderRadius($navBorderRadius); 
@@ -86,46 +85,47 @@
                     @include centerCustom(700px);
                     float: $none;
                     padding: 0;
-                } 
-                
-                @if $navHasSub == "on"{
-                    .hasSub{ 
-                        display: $block;
+                }
+            }
+        }
+        
+        @if $navHasSub == "on"{
+            .hasSub{ 
+                display: $block;
 
-                        &:focus, &:hover{
-                            ul{
-                                display: $block;
-                            }
-                        }
+                &:focus, &:hover{
+                    ul{
+                        display: $block;
+                    }
+                }
+            }
+
+            .subMenu{
+                @include borderRadiusB(3px);
+                position: absolute;
+                left: 0;
+                display: none;
+                background-image: $bgGradBlackEighty;
+                filter: $bgGradBlackEightyFilter;
+                padding-bottom: 5px;
+
+                &, li{
+                    width: 150px;
+                }
+
+                li{
+                    a{
+                        padding-left: 10px;
+                        font-family: $navFontFamilySub;
+                        text-align: left;
                     }
 
-                    .subMenu{
-                        &, &.open{
-                            position: absolute;
-                            display: none;
-                            background-image: $bgGradBlackEighty;
-                            filter: $bgGradBlackEightyFilter;
-                            padding-bottom: 5px;
-                        }
+                    &, a{
+                        @include equalHeightAndLineHeight(35px);
+                    }
 
-                        &, li{
-                            width: 150px;
-                        }
-
-                        li{
-                            a{
-                                padding-left: 10px;
-                                text-align: left;
-                            }
-
-                            &, a{
-                                @include equalHeightAndLineHeight(35px);
-                            }
-
-                            & + li{
-                                @include borderStyleT($bcGreyL);
-                            }
-                        }
+                    & + li{
+                        @include borderStyleT($bcGreyL);
                     }
                 }
             }

@@ -18,8 +18,10 @@ $bgNavBT: $bgGrey;
 $bgNavTopper: $bgWhite;
 
 $bgNavItemAT: transparent;
+
 $bgNavItemAnchor: transparent;
 $bgNavItemAnchorHover: transparent;
+$bgNavSubItemAnchorHoverAT: transparent;
 
 $bgNavCurrentItemBT: darken($bgNavBT, 5%);
 $bgNavCurrentItemAT: transparent;
