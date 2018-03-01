@@ -30,17 +30,22 @@
                 }                
             }
             
-            &.closeNav{
-                @include borderRadius(50%);
-                @include squareSize(45px);
-                background: $bgWhite url('/nuevo/img/ic_navClose.svg') no-repeat center center;
-                background-size: 20px;
-                border: 2px solid $mainBcColour!important;
+            @if $navDrawer == "on"{
+                &.closeNav{
+                    @include borderRadius(50%);
+                    @include squareSize(45px);
+                    background: $bgWhite url('/nuevo/img/ic_navClose.svg') no-repeat center center;
+                    background-size: 20px;
+                    border: 2px solid $mainBcColour!important;
+                }
             }
         }
         
-        @import "stylesNavDrawer";
-        // @import "stylesNavList";
+        @if $navDrawer == "on"{
+            @import "stylesNavDrawer";
+        } @else {
+            @import "stylesNavList";
+        }
     }    
     
     @include afterTablet{
