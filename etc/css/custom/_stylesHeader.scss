@@ -39,26 +39,27 @@ $navWidthBT: 200px;
         padding-top: 20px;
         
         .logoH{    
-            // MenuDrawer    
-            &.clicked{
-                position: fixed;
-                z-index: $zIndexLogoHClicked;
-                top: 0;
-                left: 0;
-                width: calc(#{$navDrawerWidth} - 5px);
-                height: 50px;
-                background-color: $bgNavItemBT;
-                padding-top: 50px;
-                padding-bottom: 10px;
-            
-                a, img{
-                    width: auto;
-                    height: 100%;
-                }
-                
-                img{
-                    margin-right: auto;
-                    margin-left: auto;
+            @if $navDrawer == "on"{   
+                &.clicked{
+                    position: fixed;
+                    z-index: $zIndexLogoHClicked;
+                    top: 0;
+                    left: 0;
+                    width: calc(#{$navDrawerWidth} - 5px);
+                    height: 50px;
+                    background-color: $bgNavItemBT;
+                    padding-top: 50px;
+                    padding-bottom: 10px;
+
+                    a, img{
+                        width: auto;
+                        height: 100%;
+                    }
+
+                    img{
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
                 }
             }
         }
