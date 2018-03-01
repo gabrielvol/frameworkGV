@@ -34,6 +34,7 @@ $(document).ready(function () {
         $(this).closest("#nav").find(".modalNav").hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
+        $(this).closest("#nav").find(".topLevelItem").removeClass('open');
         $(this).hide("fast");
         $(this).closest("#nav").find(".openNav").attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
@@ -47,6 +48,7 @@ $(document).ready(function () {
         $(this).hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
+        $(this).closest("#nav").find(".topLevelItem").removeClass('open');
         $(this).closest("#nav").find(".closeNav").hide("fast");
         $(this).closest("#nav").find(".openNav").attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
