@@ -1,0 +1,10 @@
+/* =============================================================================
+   Nav Sizes Variables | Custom [navSizes.scss]
+   ========================================================================== */
+$navDrawerWidth: 70vw;
+$navWidthBT: 200px;
+
+$logoHClickedH: 50px;
+$logoHClickedPT: 50px;
+$logoHClickedPB: 10px;
+$logoHClickedFH: calc(#{$logoHClickedH} + #{$logoHClickedPT} + #{$logoHClickedPT});

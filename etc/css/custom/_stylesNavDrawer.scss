@@ -18,7 +18,7 @@
         box-sizing: border-box;
         left: calc(-1 * #{$navDrawerWidth});
         width: calc(#{$navDrawerWidth} - 5px);
-        padding-top: 100px;
+        padding-top: calc(#{$logoHClickedFH} + 5px);
         padding-right: 5px;
         padding-left: 5px;
         overflow: scroll; 

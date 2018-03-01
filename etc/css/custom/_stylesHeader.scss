@@ -1,10 +1,7 @@
 /* =============================================================================
    Header Styles | Custom [stylesHeader.scss]
    ========================================================================== */
-$navDrawerWidth: 70vw;
-$navWidthBT: 200px;
-
-#header{    
+#header{
     /*z-index: $zIndexHeader;*/
     
     .logoH{
@@ -33,7 +30,7 @@ $navWidthBT: 200px;
             }
         }
     }
-    
+
     @include beforeTablet{
         box-sizing: border-box;
         padding-top: 20px;
@@ -46,10 +43,10 @@ $navWidthBT: 200px;
                     top: 0;
                     left: 0;
                     width: calc(#{$navDrawerWidth} - 5px);
-                    height: 50px;
+                    height: $logoHClickedH;
                     background-color: $bgNavBT;
-                    padding-top: 50px;
-                    padding-bottom: 10px;
+                    padding-top: $logoHClickedPT;
+                    padding-bottom: $logoHClickedPB;
 
                     a, img{
                         width: auto;
