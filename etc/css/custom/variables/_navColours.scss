@@ -13,13 +13,6 @@ $navCurrentFontColourBT: $navFontColourBT;
 $hamburgerFontColour: $greyXD;
 $hamburgerFontColourClicked: $hamburgerFontColour;
 
-    //Border Colours
-$bcOpenNav: $mainBcColour;
-$bcCloseNav: $mainBcColour;
-
-$bcNavItemItemBT: $bcWhite;
-$bcNavSubItemItemBT: $bcNavItemItemBT;
-
     //Background Colours
 $bgNavBT: $bgGrey;
 $bgNavTopper: $bgWhite;
@@ -32,3 +25,10 @@ $bgNavCurrentItemBT: darken($bgNavBT, 5%);
 $bgNavCurrentItemAT: transparent;
 $bgNavCurrentAnchor: transparent;
 $bgNavCurrentAnchorHover: transparent;
+
+    //Border Colours
+$bcOpenNav: $mainBcColour;
+$bcCloseNav: $bgNavBT;
+
+$bcNavItemItemBT: $bcWhite;
+$bcNavSubItemItemBT: $bcNavItemItemBT;
