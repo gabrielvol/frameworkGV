@@ -1,13 +1,17 @@
 $(document).ready(function () {
     //Slick Slider
     $('.slick').slick({
+        accessibility: true,
         infinite: true,
+        
         dots: true,
         arrows: false,            
         fade: true,
+        
         pauseOnHover: false,
         pauseOnFocus: false,
         swipeToSlide: true,
+        focusOnSelect: true,
 
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -22,6 +26,8 @@ $(document).ready(function () {
 
         variableWidth: true,
         adaptiveHeight: true,
+        
+        asNavFor: '.sliderNav',
 
         responsive: [
             {breakpoint: 1024,
