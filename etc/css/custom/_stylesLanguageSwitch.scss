@@ -48,12 +48,13 @@ $flagHeightAT: 32px;
             }
         }
         
-        // MenuDrawer
-        &.clicked{
-            position: fixed;
-            z-index: $zIndexlogoHClicked;
-            top: 15px;
-            left: 0;
+        @if $navDrawer == "on"{   
+            &.clicked{
+                position: fixed;
+                z-index: $zIndexlogoHClicked;
+                top: 15px;
+                left: 0;
+            }
         }
     }
 
