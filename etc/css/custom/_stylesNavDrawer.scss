@@ -49,23 +49,25 @@ ul{
         left: 0;
     }
 }
-    
-.subMenu{
-    z-index: $zIndexNavSubMenu;
-    position: relative;
-    top: 0;
-    right: $navDrawerWidth;
-    width: calc(#{$navDrawerWidth} - 10px);
-    background-image: $bgGradWhiteEighty;
-    filter: $bgGradWhiteEightyFilter;
 
-    li{
-        & + li{
-            @include borderStyleT($bcNavDrawerItemSub);
+@if $navHasSub == "on"{
+    .subMenu{
+        z-index: $zIndexNavSubMenu;
+        position: relative;
+        top: 0;
+        right: $navDrawerWidth;
+        width: calc(#{$navDrawerWidth} - 10px);
+        background-image: $bgGradWhiteEighty;
+        filter: $bgGradWhiteEightyFilter;
+
+        li{
+            & + li{
+                @include borderStyleT($bcNavDrawerItemSub);
+            }
+        } 
+
+        &.open{
+            right: 5px;
         }
-    } 
-
-    &.open{
-        right: 5px;
     }
 }
