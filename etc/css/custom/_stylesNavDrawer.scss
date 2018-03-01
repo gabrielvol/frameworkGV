@@ -43,7 +43,11 @@
             a, .topLevelItem{
                 font-size: 1rem;
                 text-align: center;
-            }                
+            } 
+            
+            &.current{
+                background-color: $bgNavItemCurrentBT;
+            }               
         }
 
         &.open{
