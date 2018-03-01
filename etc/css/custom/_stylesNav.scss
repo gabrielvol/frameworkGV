@@ -2,7 +2,6 @@
    Nav Styles | Custom [stylesNav.scss]
    ========================================================================== */
 .navMain{
-    $navBorderRadius: 4px;
     z-index: $zIndexNav;
 
     @include beforeTablet{
@@ -65,7 +64,7 @@
                     cursor: default;                    
                 }
             }
-        }    
+        }
         
         @if $navTopper == "on"{
             &.topper{
@@ -84,43 +83,45 @@
                     @include centerCustom(700px);
                     float: $none;
                     padding: 0;
-                }  
+                } 
+                
+                @if $navHasSub == "on"{
+                    .hasSub{ 
+                        display: $block;
 
-                .hasSub{ 
-                    display: $block;
-
-                    &:focus, &:hover{
-                        ul{
-                            display: $block;
+                        &:focus, &:hover{
+                            ul{
+                                display: $block;
+                            }
                         }
                     }
-                }
 
-                .subMenu{
-                    &, &.open{
-                        position: absolute;
-                        display: none;
-                        background-image: $bgGradBlackEighty;
-                        filter: $bgGradBlackEightyFilter;
-                        padding-bottom: 5px;
-                    }
-
-                    &, li{
-                        width: 150px;
-                    }
-
-                    li{
-                        a{
-                            padding-left: 10px;
-                            text-align: left;
+                    .subMenu{
+                        &, &.open{
+                            position: absolute;
+                            display: none;
+                            background-image: $bgGradBlackEighty;
+                            filter: $bgGradBlackEightyFilter;
+                            padding-bottom: 5px;
                         }
 
-                        &, a{
-                            @include equalHeightAndLineHeight(35px);
+                        &, li{
+                            width: 150px;
                         }
 
-                        & + li{
-                            @include borderStyleT($bcGreyL);
+                        li{
+                            a{
+                                padding-left: 10px;
+                                text-align: left;
+                            }
+
+                            &, a{
+                                @include equalHeightAndLineHeight(35px);
+                            }
+
+                            & + li{
+                                @include borderStyleT($bcGreyL);
+                            }
                         }
                     }
                 }
