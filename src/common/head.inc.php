@@ -45,7 +45,7 @@
 <meta property="og:description" content="DescriptionHere">
 /* Max 65 char
 12345678901234567890123456789012345678901234567890123456789012345 */
-<meta property="og:image" content="http://www.example.com/img.jpg">
+<meta property="og:image" content="http://www.example.com/og_img.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SiteName">
 <meta property="og:locale" content="es_AR">
