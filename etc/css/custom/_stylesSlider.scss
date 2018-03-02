@@ -28,11 +28,11 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
     left: 0;
     
     @include beforeTablet{
-        @include bgSvg(ic_arrowSliderL, $sliderArrowWidthHeightBT);        
+        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeightBT);        
     }
     
     @include afterTablet{
-        @include bgSvg(ic_arrowSliderL, $sliderArrowWidthHeight);        
+        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeight);        
     }
 }
 
@@ -40,11 +40,11 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
     right: 0;
     
     @include beforeTablet{
-        @include bgSvg(ic_arrowSliderR, $sliderArrowWidthHeightBT);        
+        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeightBT);        
     }
     
     @include afterTablet{
-        @include bgSvg(ic_arrowSliderR, $sliderArrowWidthHeight);        
+        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeight);        
     }
 }
 
@@ -53,21 +53,20 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
     @include opacityCustomHover();
     cursor: pointer;
     position: absolute;
+    z-index: $zIndexSlickNextPrevDots;
     top: 50%;
-    z-index: 100;
     padding: $zero;
     border: $none;
     text-indent: -9999px;
     
     @include beforeTablet{
         @include squareSize($sliderArrowHeightBT);
-        margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});  
-        
+        margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});        
     }
     
     @include afterTablet{
         @include squareSize($sliderArrowHeight);
-        margin-top: calc(-1 * #{$sliderArrowHeightHalf});        
+        margin-top: calc(-1 * #{$sliderArrowHeightHalf});
     }
 }
 
