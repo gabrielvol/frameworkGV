@@ -17,21 +17,22 @@
     @include beforeTablet{
         .hamb{
             @include transition(1s);    
+            z-index: $zIndexNavHamb;  
             box-sizing: border-box;
+        }
             
-            &.openNav{
-                z-index: $zIndexNavHamb;
-                opacity: 1;
-                
-                @if $navDrawer == "on"{
-                    &.clicked{
-                        opacity: 0;
-                    }      
-                }
+        .openNav{
+            opacity: 1;
+
+            @if $navDrawer == "on"{
+                &.clicked{
+                    opacity: 0;
+                }      
             }
-            
-            &.closeNav{
-                z-index: $zIndexNavCloseNav;   
+        }
+        
+        @if $navDrawer == "on"{
+            .closeNav{ 
                 display: none;             
             }
         }

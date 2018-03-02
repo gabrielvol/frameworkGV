@@ -11,9 +11,8 @@ $zIndexButtonOver: 9200;
 
     // Nav
 $zIndexNav: 1000;
-$zIndexNavHamb: 200;
+$zIndexNavHamb: $zIndexButtonOver;
 $zIndexNavUlList: 190;
-$zIndexNavCloseNav: $zIndexButtonOver;
 $zIndexNavUlDrawer: $zIndexPopup;
 $zIndexNavSubMenu: 9200;
 $zIndexLang: $zIndexNav;

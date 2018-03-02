@@ -5,7 +5,6 @@
     /*z-index: $zIndexHeader;*/
     
     .logoH{
-        z-index: $zIndexLogoH;
         margin: $zero;
         
         &, a{}
@@ -64,6 +63,9 @@
     
     @include afterTablet{        
         .logoH{
+            position: relative;
+            z-index: $zIndexLogoH;
+        
             &, a, img{
                 width: 150px;
             }
