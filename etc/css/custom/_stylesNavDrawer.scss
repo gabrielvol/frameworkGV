@@ -24,10 +24,6 @@
         overflow: scroll; 
 
         > li{
-            &:last-child{
-                padding-bottom: 30px;
-            }
-
             & + li{
                 @include borderStyleT($bcNavItemItemBT);
             }
@@ -44,6 +40,12 @@
                 font-size: 1rem;
                 text-align: center;
             } 
+        
+            .topLevelItem{
+                &.open{
+                    background: transparent url('/img/ic_arrowNavL.svg') no-repeat 10px center;
+                }
+            }
             
             &.current{
                 background-color: $bgNavItemCurrentBT;
