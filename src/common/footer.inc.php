@@ -1,4 +1,8 @@
 <footer id="footer" class="">
+    <p class="googleAddress">
+        <a href="https://goo.gl/" title="<?php echo _('Ir a la ubicaci&oacute;n en Google Maps'); ?>" target="_blank"><?php echo _("Direccion"); ?></a>
+    </p>
+    
     <p class="copyright">
         &copy;
         <?php
