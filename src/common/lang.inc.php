@@ -12,7 +12,7 @@
     </li>
     <li>
         <a href="/nuevo/?l=en_GB" class="displayBlock mask">
-            <img src="/nuevo/img/fl_uk.svg" alt="<?php echo $text_en; ?>.">
+            <img src="/nuevo/img/fl_gb.svg" alt="<?php echo $text_en; ?>.">
         </a>
     </li>
     <li>
