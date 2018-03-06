@@ -1,5 +1,4 @@
-;(function($){
-  
+;(function($){  
     /**
      * Store scroll position for and set it after reload
      *
@@ -20,13 +19,5 @@
         }
 
         return false;
-    }
-    
-    /* ================================================== */
-
-    $(document).ready(function() {
-        // Feel free to set it for any element who trigger the reload
-        $('.enviar').scrollPosReaload();
-    });
-  
+    }  
 }(jQuery));  

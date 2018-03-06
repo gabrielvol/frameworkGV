@@ -1,4 +1,5 @@
 $(window).scroll(function () {
+// Window Top Scroll
     if ($(this).scrollTop() > 100) {
         $('.navMain').addClass('topper');
     } else {
@@ -7,16 +8,7 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
-    //Hamburger Menu
-    $(".hamb").click(function () {
-        $(this).toggleClass('clicked');
-        $(this).closest("#nav").find(".mainMenu").toggleClass('displayNoneBT');
-    });
-    $('.mainMenu a').click(function () {
-        $(this).closest(".mainMenu").addClass('displayNoneBT');
-    });
-    
-    // Hamburger Drawer
+// Hamburger Drawer
     $(".openNav").click(function () {
         $(this).toggleClass('clicked');
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
