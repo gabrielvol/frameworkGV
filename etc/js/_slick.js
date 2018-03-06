@@ -73,7 +73,7 @@ $(document).ready(function () {
         speed: 500
     });
 
-    // On before slide change
+        // On before slide change
     slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
         //check the length of total items in .slide container
         //if that number is the same with the number of the last slider
