@@ -55,9 +55,10 @@ ul{
     }
     @include afterMobileLandscape{
         width: 50%;
+        padding: 0 10px;
         
         img{
-            width: auto;
+            width: 100%;
         }
     }
 }
