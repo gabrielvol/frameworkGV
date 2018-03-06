@@ -2,6 +2,17 @@
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
 #footer{
+    .googleAddress{
+        a{
+            font-size: 1.1rem;
+            line-height: 1.2em;
+            
+            &:focus, &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    
     .copyright{}
     
     .logoF{
