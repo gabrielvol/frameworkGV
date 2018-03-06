@@ -12,7 +12,7 @@
                 <?php echo _("Nosotros"); ?>
             </a>
             <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">
-                <li <?php if($navCurrentInt == 1) { echo "current"; } ?>>
+                <li class="<?php if($navCurrentInt == 1) { echo "current"; } ?>">
                     <a href="/nuevo/nosotros/historia.php" class="displayBlock" <?php if($navCurrentInt == 1) { echo 'aria-current="page"'; } ?>>
                         <?php echo _("Historia"); ?></a>
                 </li>
@@ -24,7 +24,7 @@
                 <?php echo _("Nosotros"); ?>
             </p>
             <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">
-                <li <?php if($navCurrentInt == 1) { echo "current"; } ?>>
+                <li class="<?php if($navCurrentInt == 1) { echo "current"; } ?>">
                     <a href="/nuevo/nosotros/historia.php" class="displayBlock" <?php if($navCurrentInt == 1) { echo 'aria-current="page"'; } ?>>
                         <?php echo _("Historia"); ?></a>
                 </li>
