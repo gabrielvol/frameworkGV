@@ -2,6 +2,6 @@
     <h2>Revista Novias Magazine</h2>
     <p>Pautas editoriales 2010</p>
     <ul class="bull">
-        <li class="clearfix mbs">Aviso (1 página) <a href="/framework/archivos/logo.zip" class="dd displayBlock floatRight bgBlue pvs phm bold white upperCase alignCenter">Descargar</a></li>
+        <li class="clearfix mbs">Aviso (1 página) <a href="/framework/files/logo.zip" class="dd displayBlock floatRight bgBlue pvs phm bold white upperCase alignCenter">Descargar</a></li>
     </ul>
 </div>
