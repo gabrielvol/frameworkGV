@@ -118,6 +118,8 @@
             .subMenu{
                 li{
                     a{
+                        @include transition(1s);
+                        
                         &:focus, &:hover{
                             background-color: $bgNavSubItemAnchorHoverAT;
                         }
