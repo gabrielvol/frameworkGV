@@ -62,12 +62,6 @@
             & + li{
                 margin-top: 0px;
             }
-            
-            &.current{
-                a{
-                    cursor: default;                    
-                }
-            }
         }
         
         @if $navTopper == "on"{
