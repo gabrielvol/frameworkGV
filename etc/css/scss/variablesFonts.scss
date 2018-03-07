@@ -4,6 +4,12 @@
     //Sans Serif Stack
 $fontFamiliesMapSans:(
     sanFrancisco: ('-apple-system', '.SFNSText-Regular', 'San Francisco'),
+    blinkMacSystemFont: BlinkMacSystemFont,
+    oxygen: Oxygen,
+    ubuntu: Ubuntu,
+    cantarell: Cantarell,
+    firaSans: "Fira Sans",
+    droidSans: "Droid Sans",
     helveticaSafe: (Helvetica, 'Helvetica Neue'),
     segoeUI: 'Segoe UI',
     verdana: Verdana,
@@ -15,8 +21,13 @@ $fontFamiliesMapSans:(
 
 $fontFamiliesListSans:
     map-get($fontFamiliesMapSans, sanFrancisco),
+    map-get($fontFamiliesMapSans, blinkMacSystemFont),
+    map-get($fontFamiliesMapSans, oxygen), 
+    map-get($fontFamiliesMapSans, ubuntu), 
+    map-get($fontFamiliesMapSans, cantarell), 
+    map-get($fontFamiliesMapSans, firaSans), 
+    map-get($fontFamiliesMapSans, droidSans), 
     map-get($fontFamiliesMapSans, helveticaSafe), 
-    map-get($fontFamiliesMapSans, roboto),
     map-get($fontFamiliesMapSans, segoeUI),   
     map-get($fontFamiliesMapSans, verdana),
     map-get($fontFamiliesMapSans, tahoma),
@@ -26,6 +37,12 @@ $fontFamiliesListSans:
 ; 
 
 $sanFrancisco: map-get($fontFamiliesMapSans, sanFrancisco);
+$blinkMacSystemFont: map-get($fontFamiliesMapSans, blinkMacSystemFont);   
+$oxygen: map-get($fontFamiliesMapSans, oxygen);   
+$ubuntu: map-get($fontFamiliesMapSans, ubuntu);   
+$cantarell: map-get($fontFamiliesMapSans, cantarell);   
+$firaSans: map-get($fontFamiliesMapSans, firaSans);    
+$droidSans: map-get($fontFamiliesMapSans, droidSans);   
 $segoeUI: map-get($fontFamiliesMapSans, segoeUI);   
 $verdana: map-get($fontFamiliesMapSans, verdana);
 $tahoma: map-get($fontFamiliesMapSans, tahoma);
