@@ -26,7 +26,7 @@
             font-size: 1rem;
             line-height: 45px;
             
-            @if $navDrawer == "on"{
+            @if $navDrawer == "off"{
                 &.clicked{
                     color: $hamburgerFontColourClicked;
                 }        

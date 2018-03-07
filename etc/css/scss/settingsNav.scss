@@ -84,11 +84,11 @@
             
             a, .topLevelItem{
                 background: $bgNavItemAnchor;
-                color: $navFontColour;
+                color: $navFontColourAT;
                 
                 &:focus, &:hover{
                     background-color: $bgNavItemAnchorHover;
-                    color: $navFontColourHover;
+                    color: $navFontColourHoverAT;
                 }
             }
             
@@ -101,10 +101,10 @@
                 
                 > a, .topLevelItem{
                     background: $bgNavCurrentAnchor;
-                    color: $navCurrentFontColour;
+                    color: $navCurrentFontColourAT;
                     
                     &, &:focus, &:hover{
-                        color: $navCurrentFontColour;
+                        color: $navCurrentFontColourAT;
                     }
                     
                     &:focus, &:hover{

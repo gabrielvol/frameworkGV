@@ -21,6 +21,7 @@
         padding-top: calc(#{$logoHClickedFH} + 5px);
         padding-right: 5px;
         padding-left: 5px;
+        padding-bottom: 30px;
         overflow: scroll; 
 
         > li{
@@ -64,8 +65,7 @@
             top: 0;
             right: $navDrawerWidth;
             width: calc(#{$navDrawerWidth} - 10px);
-            background-image: $bgGradWhiteEighty;
-            filter: $bgGradWhiteEightyFilter;
+            background-color: $bgNavSubMenuBT;
 
             li{
                 & + li{
