@@ -11,7 +11,7 @@
     z-index: $zIndexSlickHeader;
     
     &, div, li{
-        height: 269px;
+        height: 300px;
     }
 }
 
@@ -51,7 +51,6 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
 .slickPrev, .slickNext{
     @include transition(0.7s);
     @include opacityCustomHover();
-    cursor: pointer;
     position: absolute;
     z-index: $zIndexSlickNextPrevDots;
     top: 50%;
@@ -92,15 +91,10 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
         height: $sliderDotHeight;
         
         &, button{
-            @include squareSize($sliderDotWidth);  
-            cursor: pointer;          
+            @include squareSize($sliderDotWidth);
         }
         
         button{
-/*
-            @include squareSize(50px);
-            @include sprites(-100px -50px);
-*/
             @include bgSvg(ic_sliderPag, $sliderDotWidth);
             display: inline-block;
             border: $none;
@@ -113,14 +107,12 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
         
         &:focus, &:hover{
             button{
-                /*background-position: -150px -50px;*/
                 @include bgSvg(ic_sliderPagHover, $sliderDotWidthHeight);
             }
         }
         
         &.slickActive{
             button{
-                /*background-position: -200px -50px;*/
                 @include bgSvg(ic_sliderPagSel, $sliderDotWidthHeight);
             }
         }
