@@ -3,35 +3,42 @@
         <a href="/nuevo/" class="fb displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Seguinos en Facebook"); ?>
             <img src="/img/soc_fb.svg" class="svg displayBlock" alt="<?php echo _('Facebook, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
     <li class="tw">
         <a href="/nuevo/" class="tw displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Seguinos en Twitter"); ?>
             <img src="/img/soc_tw.svg" class="svg displayBlock" alt="<?php echo _('Twitter, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
     <li class="ig">
         <a href="/nuevo/" class="ig displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Seguinos en Instagram"); ?>
             <img src="/img/soc_ig.svg" class="svg displayBlock" alt="<?php echo _('Instagram, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
     <li class="pi">
         <a href="/nuevo/" class="pi displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Seguinos en Pinterest"); ?>
             <img src="/img/soc_pi.svg" class="svg displayBlock" alt="<?php echo _('Pinterest, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
     <li class="yt">
         <a href="/nuevo/" class="yt displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Mir&aacute; Nuestro Canal en YouTube"); ?>
             <img src="/img/soc_yt.svg" class="svg displayBlock" alt="<?php echo _('YouTube, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
     <li class="li">
         <a href="/nuevo/" class="li displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Mir&aacute; nuestro perfil en LinkedIn"); ?>
             <img src="/img/soc_li.svg" class="svg displayBlock" alt="<?php echo _('LinkedIn, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
     <li class="sp">
         <a href="/nuevo/" class="sp displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Escuchanos en Spotify"); ?>
             <img src="/img/soc_sp.svg" class="svg displayBlock" alt="<?php echo _('Spotify, &Iacute;cono'); ?>.">
-        </a></li>
+        </a>
+    </li>
 </ul>

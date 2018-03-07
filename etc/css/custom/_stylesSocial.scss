@@ -6,11 +6,6 @@
         &, a, img{
             @include squareSize(50px);            
         }
-        
-        a{
-            @include opacityCustomHover(90);
-            @include transition(1s);
-        }
 
         &.fb{
             a{}
@@ -46,12 +41,20 @@
     }
     
     @include beforeTablet{        
-        // MenuDrawer
-        &.clicked{
-            position: fixed;
-            z-index: $zIndexlogoHClicked;
-            top: 15px;
-            left: 0;
+        @if $navDrawer == "on"{
+            &.clicked{
+                position: fixed;
+                z-index: $zIndexlogoHClicked;
+                top: 15px;
+                left: 0;
+            }
+        }
+    }
+    
+    @include afterTablet{        
+        a{
+            @include opacityCustomHover(90);
+            @include transition(1s);
         }
     }
 }
