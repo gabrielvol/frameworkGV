@@ -2,11 +2,9 @@
    Social Styles | Custom [stylesSocial.scss]
    ========================================================================== */
 .social{
+    z-index: $zIndexSocial;
+        
     li{
-        &, a, img{
-            @include squareSize(50px);            
-        }
-
         &.fb{
             a{}
         }
@@ -40,11 +38,17 @@
         }
     }
     
-    @include beforeTablet{        
+    @include beforeTablet{       
+        li{
+            &, a, img{
+                @include squareSize(35px);            
+            }
+        }
+        
         @if $navDrawer == "on"{
             &.clicked{
                 position: fixed;
-                z-index: $zIndexLogoHeaderClicked;
+                z-index: $zIndexLogoHClicked;
                 top: auto;
                 right: 10px;
                 bottom: 20px;
@@ -59,8 +63,12 @@
         }
     }
     
-    @include afterTablet{      
-        z-index: $zIndexSocial;
+    @include afterTablet{        
+        li{
+            &, a, img{
+                @include squareSize(50px);            
+            }
+        }
         
         a{
             @include opacityCustomHover(90);
