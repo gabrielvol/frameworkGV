@@ -44,14 +44,24 @@
         @if $navDrawer == "on"{
             &.clicked{
                 position: fixed;
-                z-index: $zIndexLogoHClicked;
-                top: 15px;
-                left: 0;
+                z-index: $zIndexLogoHeaderClicked;
+                top: auto;
+                right: 10px;
+                bottom: 20px;
+                left: auto;
+
+                li{
+                    &, a, img{
+                        @include squareSize(45px);            
+                    }
+                }
             }
         }
     }
     
-    @include afterTablet{        
+    @include afterTablet{      
+        z-index: $zIndexSocial;
+        
         a{
             @include opacityCustomHover(90);
             @include transition(1s);
