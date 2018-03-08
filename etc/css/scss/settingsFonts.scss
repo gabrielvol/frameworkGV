@@ -13,13 +13,16 @@ h1, h2, h3, h4, h5, h6{
 p, dl, legend{
     margin: $textMargin;
 }
+p, ul{
+    & + p,
+    & + ul{
+        margin: $textMarginSibling;    
+    }
+}
 p, li{    
     b{
         font-family: $mainFontFamilyBold;
     }
-    & + p{
-        margin: $textMarginSibling;        
-    } 
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
@@ -29,7 +32,7 @@ p, li{
     @include afterTabletLandscape{
         font-size: $mainFontSizeParagraphATL;
     }
-    p, a, li, strong, dl, legend{
+    p, li, strong, dl, legend{
         font-size: 1em;
     }
 }
