@@ -38,6 +38,7 @@
             @if $navDrawer == "on"{   
                 &.clicked{
                     @include borderStyleR($bcNavBT);
+                    box-sizing: border-box;
                     position: fixed;
                     z-index: $zIndexLogoHClicked;
                     top: 0;
