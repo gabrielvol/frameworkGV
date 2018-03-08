@@ -4,11 +4,19 @@
     //Fonts
 $navFontColourBT: $mainFontColour;
 $navFontColourAT: $mainFontColour;
+$navFontColourHover: $mainFontColourHover;
 
-$navFontColourHoverAT: $mainFontColourHover;
+$navSubFontColourBT: $navFontColourBT;
+$navSubFontColourAT: $navFontColourAT;
+$navSubFontColourHover: $navFontColourHover;
 
 $navCurrentFontColourBT: $navFontColourBT;
-$navCurrentFontColourAT: $navFontColourHover;
+$navCurrentFontColourAT: $navFontColourAT;
+$navCurrentFontColourHover: $navFontColourHover;
+
+$navSubCurrentFontColourBT: $navFontColourBT;
+$navSubCurrentFontColourAT: $navFontColourAT;
+$navSubCurrentFontColourHover: $navFontColourHover;
 
 $hamburgerFontColour: $greyXD;
 $hamburgerFontColourClicked: $hamburgerFontColour;

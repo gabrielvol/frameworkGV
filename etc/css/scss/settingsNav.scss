@@ -147,10 +147,15 @@ nav{
                     
                     a{
                         font-family: $navFontFamilySub;
+                        color: $navSubFontColourBT;
                     }
                     
                     &.current{
                         background-color: $bgNavSubCurrentItemBT;
+                        
+                        a{
+                            color: $navSubCurrentFontColourBT;
+                        }
                     }
                 }   
 
@@ -180,20 +185,26 @@ nav{
                 }    
 
                 &:focus, &:hover{
-                    background-color: $bgNavItemHover;                    
+                    background-color: $bgNavItemHover; 
+                    
+                    a{
+                        color: $navFontColourHover;
+                    }
                 }
 
                 &.current{
                     background-color: $bgNavCurrentItemAT;
 
-                    > a, .topLevelItem{                    
-                        &, &:focus, &:hover{
-                            color: $navCurrentFontColourAT;
-                        }
+                    > a, .topLevelItem{
+                        color: $navCurrentFontColourAT;
                     }  
 
                     &:focus, &:hover{
                         background-color: $bgNavCurrentItemHover;
+                        
+                        > a, .topLevelItem{
+                            color: $navCurrentFontColourHover;
+                        }  
                     }         
                 }             
             }
@@ -240,15 +251,31 @@ nav{
                     @include transition(1s);
                     background-color: $bgNavSubItemAT;
                     
+                    a{
+                        color: $navSubFontColourAT;
+                    }
+                    
                     &:focus, &:hover{
                         background-color: $bgNavSubItemHover;
+                        
+                        a{
+                            color: $navSubFontColourHover;  
+                        }
                     }
                     
                     &.current{         
                         background-color: $bgNavSubCurrentItemAT;
                             
+                        a{
+                            color: $navSubCurrentFontColourAT;
+                        }
+                        
                         &:focus, &:hover{
                             background-color: $bgNavSubCurrentItemHover;
+                            
+                            a{
+                                background-color: $navSubCurrentFontColourHover;
+                            }
                         }
                     }
 
