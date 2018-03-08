@@ -1,5 +1,4 @@
 $(window).scroll(function () {
-// Window Top Scroll
     if ($(this).scrollTop() > 100) {
         $('.navMain').addClass('topper');
     } else {
@@ -8,26 +7,26 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
-// Hamburger Drawer
+    // Hamburger Drawer
     $(".openNav").click(function () {
-        $(this).toggleClass('clicked');
-        $(this).closest("#nav").find(".mainMenu").toggleClass('open');
-        $(this).closest("#nav").find(".modalNav").show( "2000", function() {
-            $(this).closest("#nav").find(".closeNav").show('fast');
-            $(this).closest("#header").find(".lang").toggleClass('clicked');
-            $(this).closest("#header").find(".logoH").toggleClass('clicked');
+        $(this).addClass('clicked');
+        $(this).closest("#nav").find(".mainMenu").addClass('open');
+        $(this).closest("#header").find(".social").addClass('clicked');
+        $(this).closest("#nav").find(".modalNav").show( "2000", "swing", function() {
+            $(this).closest("#nav").find(".closeNav").addClass('clicked');
+            $(this).closest("#header").find(".logoHeader").addClass('clicked');
         });
     });
 
     $('.closeNav').click(function () {
-        $(this).closest("#nav").find(".openNav").toggleClass('clicked');
-        $(this).closest("#header").find(".lang").toggleClass('clicked');
-        $(this).closest("#header").find(".logoH").toggleClass('clicked');
-        $(this).closest("#nav").find(".modalNav").hide("fast");
-        $(this).closest("#nav").find(".mainMenu").toggleClass('open');
+        $(this).removeClass('clicked');
+        $(this).closest("#header").find(".social").removeClass('clicked');
+        $(this).closest("#header").find(".logoHeader").removeClass('clicked');
+        $(this).closest("#nav").find(".modalNav").hide("fast", "swing");
+        $(this).closest("#nav").find(".mainMenu").removeClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
         $(this).closest("#nav").find(".topLevelItem").removeClass('open');
-        $(this).hide("fast");
+        $(this).closest("#nav").find(".openNav").removeClass('clicked');
         $(this).closest("#nav").find(".openNav").attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
         });
@@ -35,8 +34,8 @@ $(document).ready(function () {
 
     $('.modalNav').click(function () {
         $(this).closest("#nav").find(".openNav").toggleClass('clicked');
-        $(this).closest("#header").find(".lang").toggleClass('clicked');
-        $(this).closest("#header").find(".logoH").toggleClass('clicked');
+        $(this).closest("#header").find(".social").toggleClass('clicked');
+        $(this).closest("#header").find(".logoHeader").toggleClass('clicked');
         $(this).hide("fast");
         $(this).closest("#nav").find(".mainMenu").toggleClass('open');
         $(this).closest("#nav").find(".subMenu").removeClass('open');
@@ -48,8 +47,8 @@ $(document).ready(function () {
     });
 
     $('.topLevelItem').click(function () {
-        $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
         $(this).toggleClass('open');
+        $(this).closest('.hasSub').find(".subMenu").toggleClass('open');
     });
 
 //    $('.topLevelItem').hover(function () {

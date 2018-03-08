@@ -37,34 +37,37 @@ nav{
         position: fixed; 
                 
         .hamb{
-            @include transition(1s);  
-            z-index: $zIndexNavHamb;    
+            @include transition(1s);   
             box-sizing: border-box;
         }        
             
         @if $navDrawer == "on"{
             .openNav{
+                z-index: $zIndexOpenNav;  
                 opacity: 1;
                 background-image: url('/clientes/tegnomuebles/img/ic_hamburgerMenu.svg');
                 background-repeat: no-repeat;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
-
-                @if $navDrawer == "on"{
-                    &.clicked{
-                        opacity: 0;
-                        color: $hamburgerFontColourClicked;
-                    }      
-                }    
+                
+                &.clicked{
+                    opacity: 0.5;
+                    color: $hamburgerFontColourClicked;
+                } 
             }
         
             .closeNav{ 
                 @include borderRadius(50%);
+                z-index: $zIndexCloseNav;  
                 display: none;            
                 background-color: $bgWhite;
                 background-image: url('/clientes/tegnomuebles/img/ic_navClose.svg');
                 background-repeat: no-repeat;
                 background-position: center center; 
+                
+                &.clicked{
+                    display: block;
+                } 
             }
             
             ul{
