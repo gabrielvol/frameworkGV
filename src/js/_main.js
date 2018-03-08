@@ -28,6 +28,9 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.subMenu').removeClass('open');
         $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
         $(this).closest('#nav').find('.topLevelItem').removeClass('open');
+        $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
         $(this).closest('#nav').find('.openNav').removeClass('clicked');
         $(this).closest('#nav').find('.openNav').attr('aria-pressed', 'false');
     });
@@ -41,6 +44,9 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.subMenu').removeClass('open');
         $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
         $(this).closest('#nav').find('.topLevelItem').removeClass('open');
+        $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
         $(this).closest('#nav').find('.openNav').removeClass('clicked');
         $(this).closest('#nav').find('.openNav').attr('aria-pressed', 'false');
     });
