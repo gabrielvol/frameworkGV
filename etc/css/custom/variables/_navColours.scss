@@ -22,8 +22,8 @@ $hamburgerFontColour: $greyXD;
 $hamburgerFontColourClicked: $hamburgerFontColour;
 
     //Background Colours
-$bgNavBT: $bgGrey;
-$bgNavAT: $bgGreyL;
+$bgNavBT: $bgWhite;
+$bgNavAT: $bgGrey;
 
 $bgNavSubBT: $bgGreyD;
 $bgNavSubAT: $bgGreyXD;
@@ -51,6 +51,8 @@ $bgNavSubCurrentItemHover: transparent;
     //Border Colours
 $bcOpenNav: $bcGreyD;
 $bcCloseNav: $bcGreyD;
+
+$bcNavBT: $bcBlack;
 
 $bcNavTopper: $bcGreyD;
 $bcNavTopperCurrentItem: $bcGrey;

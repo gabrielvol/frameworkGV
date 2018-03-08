@@ -37,6 +37,7 @@
         .logoH{    
             @if $navDrawer == "on"{   
                 &.clicked{
+                    @include borderStyleR($bcNavBT);
                     position: fixed;
                     z-index: $zIndexLogoHClicked;
                     top: 0;

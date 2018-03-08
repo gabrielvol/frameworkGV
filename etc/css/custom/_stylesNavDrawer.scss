@@ -3,7 +3,7 @@
    ========================================================================== */
 @if $navDrawer == "on"{
     > ul{
-        @include borderStyleR($bcGreyXD);
+        @include borderStyleR($bcNavBT);
         
         li{
             &, a, .topLevelItem{
