@@ -3,41 +3,30 @@
    ========================================================================== */
 .navMain{
     $navBorderRadius: 4px;
-    z-index: $zIndexNav;
 
     @include beforeTablet{
         @include posTR(10px, 10px);
-        position: fixed;
  
         .hamb{
-            @include borderRadius($navBorderRadius); 
             @include posTR(0, 0);
         }
 
         .openNav{
+            @include borderRadius($navBorderRadius); 
             width: 90px;
             height: 40px;
-            background: $white url('/nuevo/img/ic_hamburgerMenu.svg') no-repeat 10px center;
+            background-color: $bgNavHamburger;
+            background-position: 10px center;
             background-size: 15px;
             border: 1px solid $bcOpenNav!important;
             padding: 0 10px 0 30px;
-            color: $hamburgerFontColour;
-            font-family: $hamburgerFontFamily;
             font-size: 1rem;
             line-height: 45px;
-            
-            @if $navDrawer == "off"{
-                &.clicked{
-                    color: $hamburgerFontColourClicked;
-                }        
-            }
         }
             
         @if $navDrawer == "on"{
             .closeNav{
-                @include borderRadius(50%);
                 @include squareSize(45px);
-                background: $bgWhite url('/nuevo/img/ic_navClose.svg') no-repeat center center;
                 background-size: 20px;
                 border: 1px solid $bcCloseNav!important;
             }
@@ -55,28 +44,13 @@
                 @include equalHeightAndLineHeight(60px);
             }
             
-            a, .topLevelItem{
-                @include transition(1s);
-            }
+            a, .topLevelItem{}
             
-            & + li{
-                margin-top: 0px;
-            }
+            & + li{}
         }
         
         @if $navTopper == "on"{
             &.topper{
-                @include borderStyleB($mainBcColour);
-                position: fixed;
-                top: 0;
-                right: 0;
-                width: 100%;  
-                background-color: $bgNavTopper;
-
-                .hamb{
-                    display: $none;
-                }
-
                 .mainMenu{
                     @include centerCustom(700px);
                     float: $none;
@@ -86,21 +60,8 @@
         }
         
         @if $navHasSub == "on"{
-            .hasSub{ 
-                display: $block;
-
-                &:focus, &:hover{
-                    ul{
-                        display: $block;
-                    }
-                }
-            }
-
             .subMenu{
                 @include borderRadiusB(3px);
-                position: absolute;
-                left: 0;
-                display: none;
                 background-image: $bgGradBlackEighty;
                 filter: $bgGradBlackEightyFilter;
                 padding-bottom: 5px;
@@ -110,18 +71,15 @@
                 }
 
                 li{
+                    @include borderStyleT($bcNavSubItemItemAT);
+                
                     a{
                         padding-left: 10px;
-                        font-family: $navFontFamilySub;
                         text-align: left;
                     }
 
                     &, a{
                         @include equalHeightAndLineHeight(35px);
-                    }
-
-                    & + li{
-                        @include borderStyleT($bcGreyL);
                     }
                 }
             }

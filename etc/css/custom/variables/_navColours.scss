@@ -15,24 +15,38 @@ $hamburgerFontColourClicked: $hamburgerFontColour;
 
     //Background Colours
 $bgNavBT: $bgGrey;
-$bgNavSubMenuBT: $bgGreyL;
+$bgNavAT: $bgGreyL;
 
-$bgNavTopper: $bgGreyXL;
+$bgNavSubBT: $bgGreyD;
+$bgNavSubAT: $bgGreyXD;
 
+$bgNavHamburger: $bgWhite;
+
+$bgNavTopper: $bgBlack;
+
+$bgNavItemBT: transparent;
 $bgNavItemAT: transparent;
+$bgNavItemHover: transparent;
 
-$bgNavItemAnchor: transparent;
-$bgNavItemAnchorHover: transparent;
-$bgNavSubItemAnchorHoverAT: transparent;
+$bgNavSubItemBT: transparent;
+$bgNavSubItemAT: transparent;
+$bgNavSubItemHover: transparent;
 
 $bgNavCurrentItemBT: darken($bgNavBT, 5%);
 $bgNavCurrentItemAT: transparent;
-$bgNavCurrentAnchor: transparent;
-$bgNavCurrentAnchorHover: transparent;
+$bgNavCurrentItemHover: transparent;
+
+$bgNavSubCurrentItemBT: $bgRedColourXD;
+$bgNavSubCurrentItemAT: transparent;
+$bgNavSubCurrentItemHover: transparent;
 
     //Border Colours
 $bcOpenNav: $bcGreyD;
 $bcCloseNav: $bcGreyD;
 
-$bcNavItemItemBT: $bcWhite;
-$bcNavSubItemItemBT: $bcNavItemItemBT;
+$bcNavTopper: $bcGreyD;
+$bcNavTopperCurrentItem: $bcGrey;
+
+$bcNavItemBT: $bcWhite;
+$bcNavSubItemItemBT: $bcNavItemBT;
+$bcNavSubItemItemAT: $bcNavItemBT;

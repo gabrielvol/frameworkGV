@@ -9,7 +9,9 @@ nav{
 }
 
 .navMain{
-    li{
+    z-index: $zIndexNav;
+    
+    li{         
         a, .topLevelItem{
             font-family: $navFontFamily;
         }
@@ -20,115 +22,241 @@ nav{
             }            
         }     
     }
+    
+    @if $navHasSub == "on"{    
+        .subMenu{
+            z-index: $zIndexNavSubMenu;
+            
+            a{
+                font-family: $navFontFamilySub;
+            }
+        }
+    }
    
     @include beforeTablet{
+        position: fixed; 
+                
         .hamb{
-            @include transition(1s);    
-            z-index: $zIndexNavHamb;  
+            @include transition(1s);  
+            z-index: $zIndexNavHamb;    
             box-sizing: border-box;
-        }
+        }        
             
-        .openNav{
-            opacity: 1;
-
-            @if $navDrawer == "on"{
-                &.clicked{
-                    opacity: 0;
-                }      
-            }
-        }
-        
         @if $navDrawer == "on"{
-            .closeNav{ 
-                display: none;             
-            }
-        }
-        
-        li{
-            a, .topLevelItem{
-                color: $navFontColourBT;
-            }
-        
-            .topLevelItem{
+            .openNav{
+                opacity: 1;
+                background-image: url('/clientes/tegnomuebles/img/ic_hamburgerMenu.svg');
                 background-repeat: no-repeat;
-                background-position: 10px center;
+                color: $hamburgerFontColour;
+                font-family: $hamburgerFontFamily;
+
+                @if $navDrawer == "on"{
+                    &.clicked{
+                        opacity: 0;
+                        color: $hamburgerFontColourClicked;
+                    }      
+                }    
+            }
+        
+            .closeNav{ 
+                @include borderRadius(50%);
+                display: none;            
+                background-color: $bgWhite;
+                background-image: url('/clientes/tegnomuebles/img/ic_navClose.svg');
+                background-repeat: no-repeat;
+                background-position: center center; 
+            }
+            
+            ul{
+                z-index: $zIndexNavUlDrawer;
+                position: fixed; 
+                
+                &, .subMenu{
+                    @include transition(0.5s); 
+                    top: 0;
+                    bottom: 0;
+                }                
+            }
+
+            > ul{
+                box-sizing: border-box;
+                left: calc(-1 * #{$navDrawerWidth});
+                width: calc(#{$navDrawerWidth} - 5px);
+                background-color: $bgNavBT;
+                padding-top: calc(#{$logoHClickedFH} + 5px);
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-bottom: 30px;
+                overflow: scroll;
+
+                > li{
+                    background-color: $bgNavItemBT;
+
+                    &.current{
+                        background-color: $bgNavCurrentItemBT; 
+                    }            
+                }
+                
+                li{
+                    float: $none;
+
+                    a, .topLevelItem{
+                        color: $navFontColourBT;
+                    }
+                    
+                    .topLevelItem{
+                        background-repeat: no-repeat;
+                        background-position: 10px center;
+
+                        &.open{
+                            background-image: url('/clientes/tegnomuebles/img/ic_arrowNavD.svg');
+                        }
+                    }
+                    
+                    &.current{
+                        background-image: url('/clientes/tegnomuebles/img/ic_arrowNavL.svg');
+                        background-repeat: no-repeat;
+                        background-position: right 10px center;
+
+                        a, .topLevelItem{
+                            color: $navCurrentFontColourBT;
+                        }   
+                    }    
+                    
+                    & + li{
+                        @include borderStyleT($bcNavItemBT);
+                    }  
+                }
                 
                 &.open{
-                    background-image: url('/nuevo/img/ic_arrowNavD.svg');
+                    left: 0;
                 }
             }
-            
-            &.current{
-                background-color: $bgNavCurrentItemBT;
-                background-image: url('/nuevo/img/ic_arrowNavL.svg');
-                background-repeat: no-repeat;
-                background-position: right 10px center;
-            
-                a, .topLevelItem{
-                    color: $navCurrentFontColourBT;
-                }            
-            }           
         }
         
         @if $navHasSub == "on"{ 
             .subMenu{
+                position: relative;
+                top: 0;
+                right: $navDrawerWidth;
+                width: calc(#{$navDrawerWidth} - 10px);
+                background-color: $bgNavSubBT;
+                
                 li{
+                    background-color: $bgNavSubItemBT;
+                    
                     a{
                         font-family: $navFontFamilySub;
                     }
+                    
+                    &.current{
+                        background-color: $bgNavSubCurrentItemBT;
+                    }
+                }   
+
+                &.open{
+                    right: 5px;
                 }
             }
         }
     }
     
-    @include afterTablet{
-        .closeNav{
-            display: $none;
+    @include afterTablet{        
+        @if $navDrawer == "on"{
+            .closeNav{ 
+                display: $none;             
+            }
         }
         
-        li{
-            background: $bgNavItemAT;
+        > ul{
+            background-color: $bgNavAT; 
             
-            a, .topLevelItem{
-                background: $bgNavItemAnchor;
-                color: $navFontColourAT;
-                
+            > li{
+                background: $bgNavItemAT;
+
+                a, .topLevelItem{
+                    @include transition(1s);
+                    color: $navFontColourAT;
+                }    
+
                 &:focus, &:hover{
-                    background-color: $bgNavItemAnchorHover;
-                    color: $navFontColourHoverAT;
+                    background-color: $bgNavItemHover;                    
+                }
+
+                &.current{
+                    background-color: $bgNavCurrentItemAT;
+
+                    > a, .topLevelItem{                    
+                        &, &:focus, &:hover{
+                            color: $navCurrentFontColourAT;
+                        }
+                    }  
+
+                    &:focus, &:hover{
+                        background-color: $bgNavCurrentItemHover;
+                    }         
+                }             
+            }
+        }
+        
+        &.topper{
+            @include borderStyleB($bcNavTopper);
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;  
+            background-color: $bgNavTopper;
+           
+            .hamb{
+                display: $none;
+            }
+            
+            .mainMenu{            
+                > li{
+                    &.current{
+                        @include borderStyleB($bcNavTopperCurrentItem, 2px);
+                    }
+                }
+            }
+        }
+            
+        @if $navHasSub == "on"{              
+            .hasSub{
+                display: $block;
+
+                &:focus, &:hover{
+                    ul{
+                        display: $block;
+                    }
                 }
             }
             
-            &.current{
-                background: $bgNavCurrentItemAT;
+            .subMenu{
+                left: 0;
+                position: absolute;
+                display: none;
                 
-                > a, .topLevelItem{
-                    background: $bgNavCurrentAnchor;
-                    color: $navCurrentFontColourAT;
-                    
-                    &, &:focus, &:hover{
-                        color: $navCurrentFontColourAT;
-                    }
+                li{                        
+                    @include transition(1s);
+                    background-color: $bgNavSubItemAT;
                     
                     &:focus, &:hover{
-                        background-color: $bgNavCurrentAnchorHover;
+                        background-color: $bgNavSubItemHover;
                     }
-                }            
-            }             
-        }
-        
-        @if $navHasSub == "on"{ 
-            .subMenu{
-                li{
-                    a{
-                        @include transition(1s);
-                        
+                    
+                    &.current{         
+                        background-color: $bgNavSubCurrentItemAT;
+                            
                         &:focus, &:hover{
-                            background-color: $bgNavSubItemAnchorHoverAT;
+                            background-color: $bgNavSubCurrentItemHover;
                         }
+                    }
+
+                    & + li{
+                        @include borderStyleT($bcNavSubItemItemAT);
                     }
                 }
             }
         }
-    }
+    }   
 }

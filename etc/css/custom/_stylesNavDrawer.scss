@@ -2,37 +2,10 @@
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
 @if $navDrawer == "on"{
-    ul{
-        z-index: $zIndexNavUlDrawer;
-        position: fixed;
-        background-color: $bgNavBT;
-
-        &, .subMenu{
-            @include transition(0.5s); 
-            top: 0;
-            bottom: 0;
-        }
-    }
-
     > ul{
-        box-sizing: border-box;
-        left: calc(-1 * #{$navDrawerWidth});
-        width: calc(#{$navDrawerWidth} - 5px);
-        padding-top: calc(#{$logoHClickedFH} + 5px);
-        padding-right: 5px;
-        padding-left: 5px;
-        padding-bottom: 30px;
-        overflow: scroll; 
-
-        > li{
-            & + li{
-                @include borderStyleT($bcNavItemItemBT);
-            }
-        }
-
+        @include borderStyleR($bcGreyXD);
+        
         li{
-            float: $none;    
-
             &, a, .topLevelItem{
                 @include equalHeightAndLineHeight(45px);
             }
@@ -40,42 +13,17 @@
             a, .topLevelItem{
                 font-size: 1rem;
                 text-align: center;
-            } 
-        
-            .topLevelItem{
-                &.open{
-                    background: transparent url('/img/ic_arrowNavL.svg') no-repeat 10px center;
-                }
-            }
-            
-            &.current{
-                background-color: $bgNavItemCurrentBT;
-            }               
-        }
-
-        &.open{
-            left: 0;
+            }              
         }
     }
 
     @if $navHasSub == "on"{
         .subMenu{
-            z-index: $zIndexNavSubMenu;
-            position: relative;
-            top: 0;
-            right: $navDrawerWidth;
-            width: calc(#{$navDrawerWidth} - 10px);
-            background-color: $bgNavSubMenuBT;
-
             li{
                 & + li{
                     @include borderStyleT($bcNavSubItemItemBT);
                 }
             } 
-
-            &.open{
-                right: 5px;
-            }
         }
     }
 }
