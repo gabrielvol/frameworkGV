@@ -19,6 +19,16 @@ p, ul{
         margin: $textMarginSibling;    
     }
 }
+p, ul{
+    & + h1,
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6{
+        margin: $headingMarginSibling;    
+    }
+}
 p, li{    
     b{
         font-family: $mainFontFamilyBold;
