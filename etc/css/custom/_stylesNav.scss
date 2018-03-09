@@ -55,6 +55,14 @@
                     @include centerCustom(730px);
                     float: $none;
                     padding: 0;
+                    
+                    > li{
+                        &.current{
+                            a{
+                                @include borderStyleB($bcNavTopperCurrentItem, 2px);
+                            }
+                        }
+                    }
                 }
             }
         }

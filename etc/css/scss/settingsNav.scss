@@ -224,14 +224,6 @@ nav{
             .hamb{
                 display: $none;
             }
-            
-            .mainMenu{            
-                > li{
-                    &.current{
-                        @include borderStyleB($bcNavTopperCurrentItem, 2px);
-                    }
-                }
-            }
         }
             
         @if $navHasSub == "on"{              
