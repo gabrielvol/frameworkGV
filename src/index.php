@@ -5,7 +5,7 @@
     //$titleEN = "UntitledPage";
     $mdesc = "";
     
-    $navCurrent = 1;
+    $navCurrent = 0;
     
     //Gettext variable, debe ir antes del head
     $idioma = $_GET['l'];
