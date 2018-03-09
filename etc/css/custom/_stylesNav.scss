@@ -52,7 +52,7 @@
         @if $navTopper == "on"{
             &.topper{
                 .mainMenu{
-                    @include centerCustom(700px);
+                    @include centerCustom(730px);
                     float: $none;
                     padding: 0;
                 }
@@ -89,14 +89,22 @@
     @include afterTabletLandscape{
         .mainMenu{
             li{
-                &, a{}
+                &, a, .topLevelItem{}
 
-                a{}
+                a, .topLevelItem{}
 
                 & + li{}
 
                 &.current{
                     a{}
+                }
+            }
+        }
+
+        @if $navTopper == "on"{
+            &.topper{
+                .mainMenu{
+                    @include centerCustom(1000px);
                 }
             }
         }
