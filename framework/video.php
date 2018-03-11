@@ -29,7 +29,7 @@
                 <param name="movie" value="/framework/video/video.swf" />
                 <param name="flashvars" value="controls=true&file=video.mp4" />
                 <!-- Image as a last resort -->
-                <img src="/framework/video/poster.jpg" width="320" height="240" title="No video playback capabilities" />
+                <img src="/framework/video/poster.jpg" width="320" height="240" title="No video playback capabilities." />
             </object>
         </video>
     </div>

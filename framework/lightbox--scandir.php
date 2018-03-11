@@ -14,20 +14,20 @@
     <div id="main" class="container" role="main">
         <ul class="horizontal clearfix">
             <li>
-                <a href="/framework/img/img01.jpg" data-lightbox="galeria" data-title="Espectadores nuevos"><img src="/framework/img/img01.jpg" alt="Imagen" /></a>
+                <a href="/framework/img/img01.jpg" data-lightbox="galeria" data-title="Espectadores nuevos."><img src="/framework/img/img01.jpg" alt="Imagen" /></a>
             </li>
             <li>
-                <a href="/framework/img/img02.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran"><img src="/framework/img/img02_.jpg" alt="Imagen" /></a>
+                <a href="/framework/img/img02.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran."><img src="/framework/img/img02_.jpg" alt="Imagen" /></a>
             </li>
             <li>
-                <a href="/framework/img/img03.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran contentos el show de Marilyn Manson"><img src="/framework/img/img03_.jpg" alt="Imagen" /></a>
+                <a href="/framework/img/img03.jpg" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran contentos el show de Marilyn Manson."><img src="/framework/img/img03_.jpg" alt="Imagen" /></a>
             </li>
             <?php
                 $files = scandir($_SERVER['DOCUMENT_ROOT'] . '/img/imageFolder/');
                 foreach($files as $image) {
                     if($image !== '.' && $image !== '..' && $image !== '01.jpg'){
                         echo '<li>
-                            <a href="/framework/img/imageFolder/'.$image.'" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran extasiados el show de Marilyn Manson"><img src="/framework/img/imageFolder/'.$image.'" alt="Imagen" /></a>
+                            <a href="/framework/img/imageFolder/'.$image.'" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran extasiados el show de Marilyn Manson."><img src="/framework/img/imageFolder/'.$image.'" alt="Imagen" /></a>
                         </li>';
                     }
                 }
