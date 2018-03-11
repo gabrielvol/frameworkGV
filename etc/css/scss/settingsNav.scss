@@ -229,8 +229,6 @@ nav{
             
         @if $navHasSub == "on"{              
             .hasSub{
-                display: $block;
-
                 &:focus, &:hover{
                     ul{
                         display: $block;
@@ -270,7 +268,7 @@ nav{
                             background-color: $bgNavSubCurrentItemHover;
                             
                             a{
-                                background-color: $navSubCurrentFontColourHover;
+                                color: $navSubCurrentFontColourHover;
                             }
                         }
                     }
