@@ -18,10 +18,16 @@ ul{
             padding-left: 15px;
         
             &::before{
-                content: url("/nuevo/img/bullet_circle.svg");
+                content: "";
                 position: absolute;
-                top: -2px;
+                top: 5px;
                 left: 0;
+                width: 7px;
+                height: 7px;
+                background-image: url("/clientes/tegnomuebles/img/bullet_circle.svg");
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 7px;
             }
         }
     }
