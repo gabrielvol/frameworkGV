@@ -28,11 +28,11 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
     left: 0;
     
     @include beforeTablet{
-        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeightBT);        
+        @include bgSvg(slider_arrowL, $sliderArrowWidthHeightBT);        
     }
     
     @include afterTablet{
-        @include bgSvg(ic_sliderArrowL, $sliderArrowWidthHeight);        
+        @include bgSvg(slider_arrowL, $sliderArrowWidthHeight);        
     }
 }
 
@@ -40,11 +40,11 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
     right: 0;
     
     @include beforeTablet{
-        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeightBT);        
+        @include bgSvg(slider_arrowR, $sliderArrowWidthHeightBT);        
     }
     
     @include afterTablet{
-        @include bgSvg(ic_sliderArrowR, $sliderArrowWidthHeight);        
+        @include bgSvg(slider_arrowR, $sliderArrowWidthHeight);        
     }
 }
 
@@ -95,7 +95,7 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
         }
         
         button{
-            @include bgSvg(ic_sliderPag, $sliderDotWidth);
+            @include bgSvg(slider_pag, $sliderDotWidth);
             display: inline-block;
             border: $none;
             text-indent: -9999px;
@@ -107,13 +107,13 @@ $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
         
         &:focus, &:hover{
             button{
-                @include bgSvg(ic_sliderPagHover, $sliderDotWidthHeight);
+                @include bgSvg(slider_pagHover, $sliderDotWidthHeight);
             }
         }
         
         &.slickActive{
             button{
-                @include bgSvg(ic_sliderPagSel, $sliderDotWidthHeight);
+                @include bgSvg(slider_pagSel, $sliderDotWidthHeight);
             }
         }
     }

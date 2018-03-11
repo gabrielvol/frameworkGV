@@ -1610,7 +1610,7 @@ ul.dotted li {
     background-repeat: no-repeat;
     background-position: 10px center; }
   .navMain li.current, .navMain li.topLevelItem.open {
-    background-image: url("/nuevo/img/ic_arrowNavL.svg");
+    background-image: url("/nuevo/img/arrow_navL.svg");
     background-repeat: no-repeat; }
   .navMain li.current {
     background-color: transparent;
@@ -1662,7 +1662,7 @@ ul.dotted li {
         .navMain .hamb.openNav {
           width: 90px;
           height: 40px;
-          background: #fff url("/nuevo/img/ic_hamburgerMenu.svg") no-repeat 10px center;
+          background: #fff url("/nuevo/img/nav_hamb.svg") no-repeat 10px center;
           background-size: 15px;
           border: 1px solid #999 !important;
           padding: 0 10px 0 30px;
@@ -1676,7 +1676,7 @@ ul.dotted li {
           border-radius: 50%;
           width: 45px;
           height: 45px;
-          background: #fff url("/nuevo/img/ic_navClose.svg") no-repeat center center;
+          background: #fff url("/nuevo/img/nav_close.svg") no-repeat center center;
           background-size: 20px;
           border: 2px solid #999 !important; }
       .navMain ul {

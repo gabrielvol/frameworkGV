@@ -45,7 +45,7 @@ nav{
             .openNav{
                 z-index: $zIndexOpenNav;  
                 opacity: 1;
-                background-image: url('/nuevo/img/ic_hamburgerMenu.svg');
+                background-image: url('/nuevo/img/nav_hamb.svg');
                 background-repeat: no-repeat;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
@@ -61,7 +61,7 @@ nav{
                 z-index: $zIndexCloseNav;  
                 display: none;            
                 background-color: $bgWhite;
-                background-image: url('/nuevo/img/ic_navClose.svg');
+                background-image: url('/nuevo/img/nav_close.svg');
                 background-repeat: no-repeat;
                 background-position: center center; 
                 
@@ -113,12 +113,12 @@ nav{
                         background-position: 10px center;
 
                         &.open{
-                            background-image: url('/nuevo/img/ic_arrowNavD.svg');
+                            background-image: url('/nuevo/img/arrow_navD.svg');
                         }
                     }
                     
                     &.current{
-                        background-image: url('/nuevo/img/ic_arrowNavL.svg');
+                        background-image: url('/nuevo/img/arrow_navL.svg');
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
