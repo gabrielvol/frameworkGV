@@ -77,3 +77,14 @@ Usuario
 Contraseña
 `pass`  
 ***
+
+
+#### WordPress access
+`http://www.sitio.com.ar/wp-admin`
+
+Usuario
+`user`
+
+Contraseña
+`pass`  
+***
