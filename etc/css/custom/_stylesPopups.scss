@@ -4,7 +4,7 @@
 $closeWHvalue: 20px;
 
 .closePopup{    
-    @include bgSvg(ic_close);        
+    @include bgSvg(popup_close);        
     @include squareSize($closeWHvalue);
     display: block;
     position: absolute;

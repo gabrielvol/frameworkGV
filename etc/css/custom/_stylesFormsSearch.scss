@@ -18,7 +18,7 @@
         
         &[type="submit"]{
             @include opacityCustomHover;
-            @include bgSvg(ic_searchSubmitBT, $searchFormSubmitValueBT, center);
+            @include bgSvg(form_searchSubmitBT, $searchFormSubmitValueBT, center);
             position: absolute;
             top: 0;
             right: 0;
@@ -39,7 +39,7 @@
             }
             
             &[type="submit"]{
-                @include bgSvg(ic_searchSubmitAT, $searchFormSubmitValueAT, center);
+                @include bgSvg(form_searchSubmitAT, $searchFormSubmitValueAT, center);
                 width: $searchFormSubmitValueAT;
             }            
         }

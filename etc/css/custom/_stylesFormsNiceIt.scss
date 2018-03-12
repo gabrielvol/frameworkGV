@@ -9,7 +9,7 @@ form.niceIt{
         @include borderStyle($formInputBcColour);
         
         //Aquí se establece la coordenada de la flecha del select
-        @include bgSvg(ic_arrowSelectD, auto, right 15px center);
+        @include bgSvg(form_select, auto, right 15px center);
         
         box-sizing: border-box;
         width: $fmSelectWidth;
