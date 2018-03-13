@@ -114,6 +114,20 @@ msgstr ""
 
 
 
+<?php echo _("C&oacute;digo postal"); ?>
+msgid "C&oacute;digo postal"
+msgstr "ZIP Code"
+
+<?php echo _("Por favor, ingrese su c&oacute;digo postal."); ?>
+msgid "Por favor, ingrese su c&oacute;digo postal."
+msgstr "Please, enter your ZIP Code."
+
+<?php echo _("Ingrese su c&oacute;digo postal"); ?>
+msgid "Ingrese su c&oacute;digo postal"
+msgstr "Enter your ZIP Code"
+
+
+
 <?php echo _("Provincia"); ?>
 msgid "Provincia"
 msgstr "State/Province"
@@ -230,7 +244,7 @@ msgstr "Message"
 
 <?php echo _("Escriba aqu&iacute; su mensaje&hellip;"); ?>
 msgid "Escriba aqu&iacute; su mensaje&hellip;"
-msgstr "Write your message here..."
+msgstr "Write your message here&hellip;"
 
 
 
