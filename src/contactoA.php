@@ -25,7 +25,7 @@
                 <?php echo $status ?>
                 
                 <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
-                    <?php echo $mandatoryMessage ?>
+                    <p><?php echo $mandatoryMessage ?></p>
                 </div>
                 
                 <label for="nombre">

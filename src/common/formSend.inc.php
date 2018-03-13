@@ -13,7 +13,7 @@
     $statusErrorGlobalB  = _('Intente nuevamente m&aacute;s tarde.');
 
     //Status Ini
-    //$status = '<p class="status ini">'.$statusIniGlobal.'</p>';
+    //$status = '<p class="status ini">'.$statusIniGlobal;
 
     //Inicia proceso de form
     if (isset($_POST['enviarForm'])){
@@ -63,21 +63,21 @@
         
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
-        $errorNombre        = '<p>'._("Por favor, ingrese su nombre.").'</p>';
-        $errorDireccion     = '<p>'._("Por favor, ingrese su direcci&oacute;n.").'</p>';
-        $errorLocalidad     = '<p>'._("Por favor, ingrese su localidad.").'</p>';
-        $errorCodigoPostal  = '<p>'._("Por favor, ingrese su c&oacute;digo postal.").'</p>';
-        $errorProvincia     = '<p>'._("Por favor, ingrese su provincia.").'</p>';
-        $errorPais          = '<p>'._("Por favor, ingrese su pa&iacute;s.").'</p>';
-        $errorFecha         = '<p>'._("Por favor, indique la fecha deseada.").'</p>';
-        $errorEmail         = '<p>'._("Por favor, ingrese su direcci&oacute;n de correo.").'</p>';
-        $errorWebsite       = '<p>'._("Por favor, ingrese su sitio web.").'</p>';
-        $errorFacebook      = '<p>'._("Por favor, ingrese su perfil de Facebook.").'</p>';
-        $errorTelefono      = '<p>'._("Por favor, ingrese su n&uacute;mero de tel&eacute;fono.").'</p>';
-        $errorEmpresa       = '<p>'._("Por favor, ingrese el nombre de su empresa.").'</p>';
-        $errorCargo         = '<p>'._("Por favor, ingrese su cargo.").'</p>';
-        $errorRubro         = '<p>'._("Por favor, ingrese un rubro.").'</p>';
-        $errorNewsletter    = '<p>'._("Por favor, elija una opci&oacute;n.").'</p>';
+        $errorNombre        = _("Por favor, ingrese su nombre.");
+        $errorDireccion     = _("Por favor, ingrese su direcci&oacute;n.");
+        $errorLocalidad     = _("Por favor, ingrese su localidad.");
+        $errorCodigoPostal  = _("Por favor, ingrese su c&oacute;digo postal.");
+        $errorProvincia     = _("Por favor, ingrese su provincia.");
+        $errorPais          = _("Por favor, ingrese su pa&iacute;s.");
+        $errorFecha         = _("Por favor, indique la fecha deseada.");
+        $errorEmail         = _("Por favor, ingrese su direcci&oacute;n de correo.");
+        $errorWebsite       = _("Por favor, ingrese su sitio web.");
+        $errorFacebook      = _("Por favor, ingrese su perfil de Facebook.");
+        $errorTelefono      = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono.");
+        $errorEmpresa       = _("Por favor, ingrese el nombre de su empresa.");
+        $errorCargo         = _("Por favor, ingrese su cargo.");
+        $errorRubro         = _("Por favor, ingrese un rubro.");
+        $errorNewsletter    = _("Por favor, elija una opci&oacute;n.");
 
         
         
@@ -264,7 +264,7 @@
             echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';
                 
 //INICIA MENSAJE OK EN $status
-                $status = '<p class="status ok">'._("$statusOKGlobal").'</p>';
+                $status = '<p class="status ok">'._("$statusOKGlobal");
                 $mandatoryMessageClasses = 'displayNone';
 //FIN mensaje ok en $status
                 

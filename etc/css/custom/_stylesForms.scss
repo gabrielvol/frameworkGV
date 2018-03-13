@@ -249,7 +249,7 @@ form{
         padding-left: 7px;
     }
     
-    .labelName, .errorForm p{
+    .labelName, .errorForm{
         @include beforeTablet{
             .mobileForm &{
                 @include equalHeightAndLineHeight($formLabelHeightBT);
