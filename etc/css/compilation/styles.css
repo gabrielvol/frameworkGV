@@ -1610,7 +1610,7 @@ ul.dotted li {
     background-repeat: no-repeat;
     background-position: 10px center; }
   .navMain li.current, .navMain li.topLevelItem.open {
-    background-image: url("/nuevo/img/arrow_navL.svg");
+    background-image: url("/nuevo/img/nav_arrowL.svg");
     background-repeat: no-repeat; }
   .navMain li.current {
     background-color: transparent;
