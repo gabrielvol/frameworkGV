@@ -4,13 +4,13 @@
     $mandatoryMessageClasses = 'displayNone';
     
     //Variables Globlales de Status
-    $statusIniGlobal    = _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.');
+    $statusIniGlobal     = _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.');
     $statusIniGlobalA    = _('Complete el formulario.');
     $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad.');
     
-    $statusOKGlobal     = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
-    $statusErrorGlobalA = _('Hubo un error al enviar el mensaje.');
-    $statusErrorGlobalB = _('Intente nuevamente m&aacute;s tarde.');
+    $statusOKGlobal      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
+    $statusErrorGlobalA  = _('Hubo un error al enviar el mensaje.');
+    $statusErrorGlobalB  = _('Intente nuevamente m&aacute;s tarde.');
 
     //Status Ini
     //$status = '<p class="status ini">'.$statusIniGlobal.'</p>';
@@ -19,22 +19,6 @@
     if (isset($_POST['enviarForm'])){
         //ini_set('sendmail_from','tampas@gmail.com');
         //ini_set('SMTP','mail.gabrielvolonte.com.ar');
-
-//VALIDACION DEBAJO DE INPUT
-        //Seteamos variables de los mensajes de validación abajo del input
-        $errorNombre       = "";
-        $errorEmpresa      = "";
-        $errorRubro        = "";
-        $errorCargo        = "";
-        $errorDireccion    = "";
-        $errorCodigoPostal = "";
-        $errorLocalidad    = "";
-        $errorProvincia    = "";
-        $errorPais         = "";
-        $errorTelefono     = "";
-        $errorEmail        = "";
-        $errorWebsite      = "";
-//FIN validación debajo de input
 
         //Asignamos datos de campos a variables
         $nombre       = $_POST['nombre'];
@@ -54,28 +38,28 @@
         $mensaje      = $_POST['mensaje'];
 
         //Cabeceras del correo
-        $destino = "tampas@gmail.com";
-        $asunto = "Contacto Web de $nombre - $empresa";
-        $headers = "From: $nombre <$email>\r\n";
+        $destino  = "tampas@gmail.com";
+        $asunto   = "Contacto Web de $nombre - $empresa";
+        $headers  = "From: $nombre <$email>\r\n";
         $headers .= "Content-type: text/html\r\n";
         $headers .= "X-Mailer: PHP5\n";
         $headers .= 'MIME-Version: 1.0' . "\n";
         //$headers .= "CC: tampas@gmail.com\r\n";
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
-        $texto = "<strong>Nombre:</strong> ".$nombre."<br />";
-        $texto .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
-        $texto .= "<strong>Localidad:</strong> ".$localidad."<br />";
-        $texto .= "<strong>Provincia:</strong> ".$provincia."<br />";
-        $texto .= "<strong>Pa&iacute;s:</strong> ".$pais."<br />";
-        $texto .= "<strong>Fecha:</strong> ".$fecha."<br />";
-        $texto .= "<strong>Correo electr&oacute;nico:</strong> ".$email."<br />";
-        $texto .= "<strong>Sitio web:</strong> ".$website."<br />";
-        $texto .= "<strong>Perfil de Facebook:</strong> ".$facebook."<br />";
-        $texto .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
-        $texto .= "<strong>Empresa:</strong> ".$empresa."<br />";
-        $texto .= "<strong>Cargo:</strong> ".$cargo."<br />";
-        $texto .= "<strong>Rubro:</strong> ".$rubro."<br />";
-        $texto .= "<strong>Mensaje:</strong> <br />".$mensaje."<br />_ _ _<br />Fin del mensaje";
+        $texto    = "<strong>Nombre:</strong> ".$nombre."<br />";
+        $texto   .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
+        $texto   .= "<strong>Localidad:</strong> ".$localidad."<br />";
+        $texto   .= "<strong>Provincia:</strong> ".$provincia."<br />";
+        $texto   .= "<strong>Pa&iacute;s:</strong> ".$pais."<br />";
+        $texto   .= "<strong>Fecha:</strong> ".$fecha."<br />";
+        $texto   .= "<strong>Correo electr&oacute;nico:</strong> ".$email."<br />";
+        $texto   .= "<strong>Sitio web:</strong> ".$website."<br />";
+        $texto   .= "<strong>Perfil de Facebook:</strong> ".$facebook."<br />";
+        $texto   .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
+        $texto   .= "<strong>Empresa:</strong> ".$empresa."<br />";
+        $texto   .= "<strong>Cargo:</strong> ".$cargo."<br />";
+        $texto   .= "<strong>Rubro:</strong> ".$rubro."<br />";
+        $texto   .= "<strong>Mensaje:</strong> <br />".$mensaje."<br />_ _ _<br />Fin del mensaje";
         
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
@@ -88,7 +72,7 @@
         $errorFecha         = '<p>'._("Por favor, indique la fecha deseada.").'</p>';
         $errorEmail         = '<p>'._("Por favor, ingrese su direcci&oacute;n de correo.").'</p>';
         $errorWebsite       = '<p>'._("Por favor, ingrese su sitio web.").'</p>';
-        $errorFacebook      = '<p>'._("Por favor, ingrese su perfil de Facebook.").'</p>';        
+        $errorFacebook      = '<p>'._("Por favor, ingrese su perfil de Facebook.").'</p>';
         $errorTelefono      = '<p>'._("Por favor, ingrese su n&uacute;mero de tel&eacute;fono.").'</p>';
         $errorEmpresa       = '<p>'._("Por favor, ingrese el nombre de su empresa.").'</p>';
         $errorCargo         = '<p>'._("Por favor, ingrese su cargo.").'</p>';
@@ -101,105 +85,90 @@
         if (empty($_POST["nombre"])) {
             $mandatoryMessage = $errorNombre;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldNombre = "invalidField";
             $autofocusNombre = "autofocus";
             
         } elseif (empty($_POST["apellido"])) {
             $mandatoryMessage = $errorApellido;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldApellido = "invalidField";
             $autofocusApellido = "autofocus";
             
         } elseif (empty($_POST["direccion"])) {
             $mandatoryMessage = $errorDireccion;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldDireccion = "invalidField";
             $autofocusDireccion = "autofocus";
             
         } elseif (empty($_POST["localidad"])) {
             $mandatoryMessage = $errorLocalidad;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldLocalidad = "invalidField";
             $autofocusLocalidad = "autofocus";
             
         } elseif (empty($_POST["codigopostal"])) {
             $mandatoryMessage = $errorCodigoPostal;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldCodigoPostal = "invalidField";
             $autofocusCodigoPostal = "autofocus";
             
         } elseif (empty($_POST["provincia"])) {
             $mandatoryMessage = $errorProvincia;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldProvincia = "invalidField";
             $autofocusProvincia = "autofocus";
             
         } elseif (empty($_POST["pais"])) {
             $mandatoryMessage = $errorPais;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldPais = "invalidField";
             $autofocusPais = "autofocus";
             
         } elseif (empty($_POST["telefono"])) {
             $mandatoryMessage = $errorTelefono;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldTelefono = "invalidField";
             $autofocusTelefono = "autofocus";
             
         } elseif (empty($_POST["email"])) {
             $mandatoryMessage = $errorEmail;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldEmail = "invalidField";
             $autofocusEmail = "autofocus";
             
         } elseif (empty($_POST["website"])) {
             $mandatoryMessage = $errorWebsite;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldWebsite = "invalidField";
             $autofocusWebsite = "autofocus";
             
         } elseif (empty($_POST["facebook"])) {
             $mandatoryMessage = $errorFacebook;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldFacebook = "invalidField";
             $autofocusFacebook = "autofocus";
             
         } elseif (empty($_POST["empresa"])) {
             $mandatoryMessage = $errorEmpresa;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldEmpresa = "invalidField";
             $autofocusEmpresa = "autofocus";
             
         } elseif (empty($_POST["cargo"])) {
             $mandatoryMessage = $errorCargo;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldCargo = "invalidField";
             $autofocusCargo = "autofocus";
             
         } elseif (empty($_POST["fecha"])) {
             $mandatoryMessage = $errorFecha;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldFecha = "invalidField";
             $autofocusFecha = "autofocus";
             
         } elseif (empty($_POST["rubro"])) {
             $mandatoryMessage = $errorRubro;
             $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
-            //Clase de error en el input
             $invalidFieldRubro = "invalidField";
             $autofocusRubro = "autofocus";
             
@@ -210,14 +179,79 @@
                         
 //INICIA VALIDACIÓN DEBAJO DE CADA INPUT
         if (empty($_POST["nombre"])) {
-            $errorNombre = $errorNombreGlobal;            
-            //Clase de error en el input
+            $errorNombreBelowInput = $errorNombre;
             $invalidFieldNombre = "invalidField";
-
+            $autofocusNombre = "autofocus";
+                       
+        } elseif (empty($_POST["apellido"])) {
+            $errorApellidoBelowInput = $errorApellido;
+            $invalidFieldApellido = "invalidField";
+            $autofocusApellido = "autofocus";
+            
+        } elseif (empty($_POST["direccion"])) {
+            $errorDireccionBelowInput = $errorDireccion;
+            $invalidFieldDireccion = "invalidField";
+            $autofocusDireccion = "autofocus";
+            
+        } elseif (empty($_POST["localidad"])) {
+            $errorLocalidadBelowInput = $errorLocalidad;
+            $invalidFieldLocalidad = "invalidField";
+            $autofocusLocalidad = "autofocus";
+            
+        } elseif (empty($_POST["codigopostal"])) {
+            $errorCodigoPostalBelowInput = $errorCodigoPostal;
+            $invalidFieldCodigoPostal = "invalidField";
+            $autofocusCodigoPostal = "autofocus";
+            
+        } elseif (empty($_POST["provincia"])) {
+            $errorProvinciaBelowInput = $errorProvincia;
+            $invalidFieldProvincia = "invalidField";
+            $autofocusProvincia = "autofocus";
+            
+        } elseif (empty($_POST["pais"])) {
+            $errorPaisBelowInput = $errorPais;
+            $invalidFieldPais = "invalidField";
+            $autofocusPais = "autofocus";
+            
+        } elseif (empty($_POST["telefono"])) {
+            $errorTelefonoBelowInput = $errorTelefono;
+            $invalidFieldTelefono = "invalidField";
+            $autofocusTelefono = "autofocus";
+            
         } elseif (empty($_POST["email"])) {
-            $errorEmail = $errorEmailGlobal;            
-            //Clase de error en el input
+            $errorEmailBelowInput = $errorEmail;
             $invalidFieldEmail = "invalidField";
+            $autofocusEmail = "autofocus";
+            
+        } elseif (empty($_POST["website"])) {
+            $errorWebsiteBelowInput = $errorWebsite;
+            $invalidFieldWebsite = "invalidField";
+            $autofocusWebsite = "autofocus";
+            
+        } elseif (empty($_POST["facebook"])) {
+            $errorFacebookBelowInput = $errorFacebook;
+            $invalidFieldFacebook = "invalidField";
+            $autofocusFacebook = "autofocus";
+            
+        } elseif (empty($_POST["empresa"])) {
+            $errorEmpresaBelowInput = $errorEmpresa;
+            $invalidFieldEmpresa = "invalidField";
+            $autofocusEmpresa = "autofocus";
+            
+        } elseif (empty($_POST["cargo"])) {
+            $errorCargoBelowInput = $errorCargo;
+            $invalidFieldCargo = "invalidField";
+            $autofocusCargo = "autofocus";
+            
+        } elseif (empty($_POST["fecha"])) {
+            $errorFechaBelowInput = $errorFecha;
+            $invalidFieldFecha = "invalidField";
+            $autofocusFecha = "autofocus";
+            
+        } elseif (empty($_POST["rubro"])) {
+            $errorRubroBelowInput = $errorRubro;
+            $invalidFieldRubro = "invalidField";
+            $autofocusRubro = "autofocus";
 //FIN de validacion debajo de cada input
             
             
@@ -227,7 +261,7 @@
             if(mail($destino,$asunto,$texto,$headers)){
 
             //Redirect
-            echo '<META HTTP-EQUIV="Refresh" Content="0; URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';                
+            echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';
                 
 //INICIA MENSAJE OK EN $status
                 $status = '<p class="status ok">'._("$statusOKGlobal").'</p>';
@@ -240,20 +274,21 @@
 //FIN mensaje ok en popup
                 
                 // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
-                $_POST['nombre'] = '';
-                $_POST['direccion'] = '';
-                $_POST['localidad'] = '';
-                $_POST['provincia'] = '';
-                $_POST['pais'] = '';
-                $_POST['fecha'] = '';
-                $_POST['email'] = '';
-                $_POST['website'] = '';
-                $_POST['facebook'] = '';
-                $_POST['telefono'] = '';
-                $_POST['empresa'] = '';                
-                $_POST['cargo'] = '';
-                $_POST['rubro'] = '';
-                $_POST['mensaje'] = '';
+                $_POST['nombre']       = '';
+                $_POST['direccion']    = '';
+                $_POST['localidad']    = '';
+                $_POST['codigopostal'] = '';
+                $_POST['provincia']    = '';
+                $_POST['pais']         = '';
+                $_POST['fecha']        = '';
+                $_POST['email']        = '';
+                $_POST['website']      = '';
+                $_POST['facebook']     = '';
+                $_POST['telefono']     = '';
+                $_POST['empresa']      = '';
+                $_POST['cargo']        = '';
+                $_POST['rubro']        = '';
+                $_POST['mensaje']      = '';
 
             } else {
 //INICIA MENSAJE ERROR EN $status
