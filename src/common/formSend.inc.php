@@ -22,8 +22,18 @@
 
 //VALIDACION DEBAJO DE INPUT
         //Seteamos variables de los mensajes de validación abajo del input
-        $errorNombre = "";  
+        $errorNombre = "";
+        $errorEmpresa = "";
+        $errorRubro = "";
+        $errorCargo = "";
+        $errorDireccion = "";
+        $errorCodigoPostal = "";
+        $errorLocalidad = "";
+        $errorProvincia = "";
+        $errorPais = "";
+        $errorTelefono = "";
         $errorEmail = "";
+        $errorWebsite = "";
 //FIN validación debajo de input
 
         //Asignamos datos de campos a variables
@@ -68,20 +78,21 @@
         
         //Variables Globales de Error
         $mandatoryMessageClassesGlobal = " invalidMandatoryMessage";
-        $errorNombre     = '<p>'._("Por favor, ingrese su nombre.").'</p>';
-        $errorDireccion  = '<p>'._("Por favor, ingrese su direcci&oacute;n.").'</p>';
-        $errorLocalidad  = '<p>'._("Por favor, ingrese su localidad.").'</p>';
-        $errorProvincia  = '<p>'._("Por favor, ingrese su provincia.").'</p>';
-        $errorPais       = '<p>'._("Por favor, ingrese su pa&iacute;s.").'</p>';
-        $errorFecha      = '<p>'._("Por favor, indique la fecha deseada.").'</p>';
-        $errorEmail      = '<p>'._("Por favor, ingrese su direcci&oacute;n de correo.").'</p>';
-        $errorWebsite    = '<p>'._("Por favor, ingrese su sitio web.").'</p>';
-        $errorFacebook   = '<p>'._("Por favor, ingrese su perfil de Facebook.").'</p>';        
-        $errorTelefono   = '<p>'._("Por favor, ingrese su n&uacute;mero de tel&eacute;fono.").'</p>';
-        $errorEmpresa    = '<p>'._("Por favor, ingrese el nombre de su empresa.").'</p>';
-        $errorCargo      = '<p>'._("Por favor, ingrese su cargo.").'</p>';
-        $errorRubro      = '<p>'._("Por favor, ingrese un rubro.").'</p>';
-        $errorNewsletter = '<p>'._("Por favor, elija una opci&oacute;n.").'</p>';
+        $errorNombre        = '<p>'._("Por favor, ingrese su nombre.").'</p>';
+        $errorDireccion     = '<p>'._("Por favor, ingrese su direcci&oacute;n.").'</p>';
+        $errorLocalidad     = '<p>'._("Por favor, ingrese su localidad.").'</p>';
+        $errorCodigoPostal  = '<p>'._("Por favor, ingrese su c&oacute;digo postal.").'</p>';
+        $errorProvincia     = '<p>'._("Por favor, ingrese su provincia.").'</p>';
+        $errorPais          = '<p>'._("Por favor, ingrese su pa&iacute;s.").'</p>';
+        $errorFecha         = '<p>'._("Por favor, indique la fecha deseada.").'</p>';
+        $errorEmail         = '<p>'._("Por favor, ingrese su direcci&oacute;n de correo.").'</p>';
+        $errorWebsite       = '<p>'._("Por favor, ingrese su sitio web.").'</p>';
+        $errorFacebook      = '<p>'._("Por favor, ingrese su perfil de Facebook.").'</p>';        
+        $errorTelefono      = '<p>'._("Por favor, ingrese su n&uacute;mero de tel&eacute;fono.").'</p>';
+        $errorEmpresa       = '<p>'._("Por favor, ingrese el nombre de su empresa.").'</p>';
+        $errorCargo         = '<p>'._("Por favor, ingrese su cargo.").'</p>';
+        $errorRubro         = '<p>'._("Por favor, ingrese un rubro.").'</p>';
+        $errorNewsletter    = '<p>'._("Por favor, elija una opci&oacute;n.").'</p>';
 
         
         
@@ -113,6 +124,13 @@
             //Clase de error en el input
             $invalidFieldLocalidad = "invalidField";
             $autofocusLocalidad = "autofocus";
+            
+        } elseif (empty($_POST["codigopostal"])) {
+            $mandatoryMessage = $errorCodigoPostal;
+            $mandatoryMessageClasses = $mandatoryMessageClassesGlobal;
+            //Clase de error en el input
+            $invalidFieldCodigoPostal = "invalidField";
+            $autofocusCodigoPostal = "autofocus";
             
         } elseif (empty($_POST["provincia"])) {
             $mandatoryMessage = $errorProvincia;
