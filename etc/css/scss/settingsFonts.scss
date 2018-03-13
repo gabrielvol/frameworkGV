@@ -29,10 +29,7 @@ p, ul{
         margin: $headingMarginSibling;    
     }
 }
-p, li{    
-    b{
-        font-family: $mainFontFamilyBold;
-    }
+p, .pSize{
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
@@ -41,6 +38,11 @@ p, li{
     }
     @include afterTabletLandscape{
         font-size: $mainFontSizeParagraphATL;
+    }
+}
+p, li{    
+    b{
+        font-family: $mainFontFamilyBold;
     }
     p, li, strong, dl, legend{
         font-size: 1em;
