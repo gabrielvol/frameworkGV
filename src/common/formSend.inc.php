@@ -22,35 +22,36 @@
 
 //VALIDACION DEBAJO DE INPUT
         //Seteamos variables de los mensajes de validación abajo del input
-        $errorNombre = "";
-        $errorEmpresa = "";
-        $errorRubro = "";
-        $errorCargo = "";
-        $errorDireccion = "";
+        $errorNombre       = "";
+        $errorEmpresa      = "";
+        $errorRubro        = "";
+        $errorCargo        = "";
+        $errorDireccion    = "";
         $errorCodigoPostal = "";
-        $errorLocalidad = "";
-        $errorProvincia = "";
-        $errorPais = "";
-        $errorTelefono = "";
-        $errorEmail = "";
-        $errorWebsite = "";
+        $errorLocalidad    = "";
+        $errorProvincia    = "";
+        $errorPais         = "";
+        $errorTelefono     = "";
+        $errorEmail        = "";
+        $errorWebsite      = "";
 //FIN validación debajo de input
 
         //Asignamos datos de campos a variables
-        $nombre    = $_POST['nombre'];
-        $direccion = $_POST['direccion'];
-        $localidad = $_POST['localidad'];
-        $provincia = $_POST['provincia'];
-        $pais      = $_POST['pais'];
-        $fecha     = $_POST['fecha'];
-        $email     = $_POST['email'];
-        $website   = $_POST['website'];
-        $facebook  = $_POST['facebook'];
-        $telefono  = $_POST['telefono'];
-        $empresa   = $_POST['empresa'];
-        $cargo     = $_POST['cargo'];
-        $rubro     = $_POST['rubro'];
-        $mensaje   = $_POST['mensaje'];
+        $nombre       = $_POST['nombre'];
+        $direccion    = $_POST['direccion'];
+        $localidad    = $_POST['localidad'];
+        $codigopostal = $_POST['codigopostal'];
+        $provincia    = $_POST['provincia'];
+        $pais         = $_POST['pais'];
+        $fecha        = $_POST['fecha'];
+        $email        = $_POST['email'];
+        $website      = $_POST['website'];
+        $facebook     = $_POST['facebook'];
+        $telefono     = $_POST['telefono'];
+        $empresa      = $_POST['empresa'];
+        $cargo        = $_POST['cargo'];
+        $rubro        = $_POST['rubro'];
+        $mensaje      = $_POST['mensaje'];
 
         //Cabeceras del correo
         $destino = "tampas@gmail.com";
