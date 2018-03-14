@@ -65,6 +65,23 @@
 }
 
 /* =============================================================================
+   Border Notch Mixin | Etc [mixinsBorders.scss]
+   ========================================================================== */
+@mixin borderNotch($notchSize: 20px){  
+  clip-path: 
+    polygon(
+      0% var($notchSize), 
+      var($notchSize) 0%, 
+      calc(100% - var($notchSize)) 0%, 
+      100% var($notchSize), 
+      100% calc(100% - var($notchSize)), 
+      calc(100% - var($notchSize)) 100%, 
+      var($notchSize) 100%, 
+      0% calc(100% - var($notchSize))
+    );
+}
+
+/* =============================================================================
    Border Separation Mixins | Etc [mixinsBorders.scss]
    ========================================================================== */
     //Border separation with equal padding and margin
