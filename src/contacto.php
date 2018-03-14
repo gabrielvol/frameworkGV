@@ -22,8 +22,8 @@
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/contactoSend.inc.php'); ?>
             <div class="mobileForm tabletForm">
             <form method="post" name="" action="">
-                <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
-                    <?php echo $mandatoryMessage ?>
+                <div class="mandatoryMsg <?php echo $mandatoryMsgClasses ?>">
+                    <?php echo $mandatoryMsg ?>
                 </div>
                 
                 <label for="nombre"><?php echo _("Nombre"); ?> <span class="redColour">*</span></label>

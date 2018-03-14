@@ -49,7 +49,7 @@ form{
 }
 
 fieldset, label, input, select, textarea, button,
-.mandatoryMessage, .labelName, .sug, .errorForm{
+.mandatoryMsg, .labelName, .sug, .errorForm{
     .mobileForm &{
         @include beforeTablet{
             width: $formLabelWidthBT;
@@ -541,17 +541,17 @@ form button{
     }
 }
 
-.status, .mandatoryMessage{
+.status, .mandatoryMsg{
     margin-bottom: 20px;
 }
 
-.status.ok, .mandatoryMessage{
+.status.ok, .mandatoryMsg{
     @include borderRadius(6px);
     box-sizing: border-box;
     padding: 7px 20px;
 }
 
-.status, .mandatoryMessage p{
+.status, .mandatoryMsg p{
     text-align: center;   
 }
 
@@ -567,13 +567,13 @@ form button{
     }
 }
 
-.mandatoryMessage{
-    &.invalidMandatoryMessage{
+.mandatoryMsg{
+    &.invalidmandatoryMsg{
         display: $block;
-        background-color: $invalidMandatoryMessageBgColour;
+        background-color: $invalidmandatoryMsgBgColour;
         
         p{
-            color: $invalidMandatoryMessageFontColour;     
+            color: $invalidmandatoryMsgFontColour;     
         }
     }
     

@@ -1,6 +1,6 @@
 <?php
     $int = 1;
-    
+    $mandatoryMsg = 1;
     $title = "Contacto | PáginaSinTítulo";
     //$titleEN = "Contact | UntitledPage";
     $mdesc = "";
@@ -22,11 +22,13 @@
             <div class="mobileForm tabletForm">
             <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php'); ?>
             <form method="post">
-                <?php echo $status ?>
-                
-                <div class="mandatoryMessage <?php echo $mandatoryMessageClasses ?>">
-                    <p><?php echo $mandatoryMessage ?></p>
-                </div>
+                <?php
+                    echo $status;
+                    
+                    if($mandatoryMsg == 1) {
+                        echo '<div class="mandatoryMsg'. $mandatoryMsgClasses .'"><p>' . $mandatoryMsg .'</p></div>';
+                    }
+                ?>
                 
                 <label for="nombre">
                     <span class="labelName"><?php echo _("Nombre"); ?></span>

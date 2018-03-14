@@ -1,14 +1,11 @@
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-$closeWHvalue: 20px;
-
-.closePopup{    
-    @include bgSvg(popup_close);        
-    @include squareSize($closeWHvalue);
-    display: block;
-    position: absolute;
-    text-indent: -9999px;    
+.closePop{    
+    @include squareSize(45px);
+    @include bgSvg(popup_close);       
+    background-size: 20px;
+    border: 1px solid $bcGreyD!important; 
 }
     
 .popup{
@@ -28,9 +25,9 @@ $closeWHvalue: 20px;
     }
     
     &.statusDiv{
-        @include borderRadius();        
+        @include borderRadius(3px);        
         box-shadow: 0 0 15px 0 $black;
-        background-color: $statusOKpopUpBgColour;
+        background-color: $bgStatusOKpopUp;
         
         p{
             color: $white;
@@ -39,18 +36,17 @@ $closeWHvalue: 20px;
             text-align: center;
         }
         
+        .closePop{           
+            @include posTR(10px, 10px);
+        }
+        
         @include mobileOnly{
             @include responsiveWidthAndHeight(100px, 100px);
             padding: 20px;
             
             /* CSS para usar centerPopup
                 @include centerPopup(280px,120px);
-            */
-            
-            .close{               
-                top: calc(-1 * #{$closeWHvalue});
-                right: -10px;
-            }
+            */            
         }
         
         @include afterTablet{
@@ -60,16 +56,6 @@ $closeWHvalue: 20px;
             /* CSS para usar centerPopup
                 @include centerPopup(500px,100px);
             */            
-        }
-    }
-    
-    .closePopup{
-        @include posTR(20px, 20px);        
-        
-        &.closePopupOut{
-            $closeWHvaluePosition: calc(#{$closeWHvalue} + 5px);
-            top: calc(-1 * #{$closeWHvaluePosition});
-            right: calc(-1 * #{$closeWHvaluePosition});
         }
     }
 }
