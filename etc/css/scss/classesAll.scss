@@ -8,6 +8,12 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+    
+    &:focus{
+        position:static;
+        width:auto;
+        height:auto;
+    } 
 }
     // Clearfix
 .clearfix::after{
