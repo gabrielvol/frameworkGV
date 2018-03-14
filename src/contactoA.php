@@ -1,6 +1,6 @@
 <?php
     $int = 1;
-    $mandatoryMsg = 1;
+    $hasMandatoryMsg = 1;
     $title = "Contacto | PáginaSinTítulo";
     //$titleEN = "Contact | UntitledPage";
     $mdesc = "";
@@ -25,8 +25,8 @@
                 <?php
                     echo $status;
                     
-                    if($mandatoryMsg == 1) {
-                        echo '<div class="mandatoryMsg'. $mandatoryMsgClasses .'"><p>' . $mandatoryMsg .'</p></div>';
+                    if($hasMandatoryMsg == 1) {
+                        echo '<div class="mandatoryMsg '.$mandatoryMsgClasses.'">'.$mandatoryMsg.'</div>';
                     }
                 ?>
                 
@@ -156,11 +156,11 @@
                     <span class="errorForm borderBox plm errorColour bold <?php echo $errorFormClassFecha ?>"><?php echo $errorBelowInputFecha ?></span>             
                 </label>
 
-                <fieldset>
+                <fieldset class="<?php echo $invalidFieldNewsletter ?>">
                     <legend class="labelName"><?php echo _("&iquest;Desea recibir el bolet&iacute;n de noticias?"); ?></legend>
 
                     <label for="radioSi" class="radio prn pll mbn">
-                        <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio floatLeft mrs">
+                        <input type="radio" name="newsletter" id="radioSi" value="<?php echo _('Si'); ?>" class="radio floatLeft mrs" <?php echo $autofocusNewsletter ?>>
                         <span><?php echo _("Newsletter S&iacute;"); ?></span>
                     </label>
 

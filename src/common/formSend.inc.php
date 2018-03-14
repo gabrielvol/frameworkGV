@@ -8,7 +8,8 @@
     $statusIniGlobalA    = _('Complete el formulario.');
     $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad.');
     
-    $statusOKGlobal      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
+    $statusOKGlobalA      = _('Formulario enviado con éxito.');
+    $statusOKGlobalB      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
     $statusErrorGlobalA  = _('Hubo un error al enviar el mensaje.');
     $statusErrorGlobalB  = _('Intente nuevamente m&aacute;s tarde.');
 
@@ -194,8 +195,10 @@
             $autofocusRubro = "autofocus";
             
         } elseif (empty($_POST["newsletter"])) {
-            $mandatoryMsg = $errorMsgNewsletter;
+            $mandatoryMsg = $errorNewsletter;
             $mandatoryMsgClasses = $mandatoryMsgErrorClass;
+            $invalidFieldNewsletter = "invalidField";
+            $autofocusNewsletter = "autofocus";
 //FIN de validacion en div.mandatoryMsg
                         
 //INICIA VALIDACIÓN DEBAJO DE CADA INPUT
@@ -316,7 +319,15 @@
 //FIN mensaje ok en $status
                 
 //INICIA MENSAJE OK EN POPUP
-                $status = '<div class="popup statusDiv" role="alert"><button class="closePop displayBlock pAbs indentedText">'._("Cerrar").'</button><p class="status ok" role="alert">'._("$statusOKGlobal").'</p></div><div class="modalBG"></div>';
+                $status = '<div class="popup statusDiv" role="alertdialog" aria-labelledby="formOK">'
+                        . '<div role="document" tabindex="0">'
+                        . '<button class="closePop pAbs indentedText">'._("Cerrar").'</button>'
+                        . '<h2 id="formOK" class="mbm errorColour alignCenter">'._("$statusOKGlobalA").'</h2>'
+                        . '<p class="status ok">'._("$statusOKGlobalB").'</p>'
+                        . '<button class="popOkDialog mtl mha alignCenter">'._("OK").'</button>'
+                        . '</div>'
+                        . '</div>'
+                        . '<div class="modalBG"></div>';
                 $mandatoryMsgClasses = 'displayNone';
 //FIN mensaje ok en popup
                 
@@ -346,7 +357,15 @@
 //FIN mensaje error en $status
                 
 //INICIA MENSAJE ERROR EN POPUP
-                $status = '<div class="popup statusDiv" role="alert"><button class="closePop displayBlock pAbs indentedText">'._("Cerrar").'</button><p class="status error">'._("$statusErrorGlobalA").' <span class="displayBlock">'._("$statusErrorGlobalB").'</span></p></div><div class="modalBG"></div>';
+                $status = '<div class="popup statusDiv" role="alertdialog" aria-labelledby="formError">'
+                        . '<div role="document" tabindex="0">'
+                        . '<button class="closePop pAbs indentedText">'._("Cerrar").'</button>'
+                        . '<h2 id="formError" class="mbm errorColour alignCenter">'._("$statusErrorGlobalA").'</h2>'
+                        . '<p class="status error">'._("$statusErrorGlobalB").'</p>'
+                        . '<button class="popOkDialog mtl mha alignCenter">'._("OK").'</button>'
+                        . '</div>'
+                        . '</div>'
+                        . '<div class="modalBG"></div>';
                 $mandatoryMsgClasses = 'displayNone';
 //FIN mensaje error en popup
             }
