@@ -1,22 +1,19 @@
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-.closePop{    
-    @include squareSize(45px);
+.closePop{
+    @include borderRadius(50%);
+    @include squareSize(33px);
     @include bgSvg(popup_close);       
-    background-size: 20px;
+    background-size: 13px;
     border: 1px solid $bcGreyD!important; 
+    
+    &, &:focus, &:hover{
+        background-color: $bgWhite;
+    }
 }
     
-.popup{
-    @include responsiveWidthAndHeight(100px, 100px);
-    position: fixed;
-    /* CSS para usar centerPopup
-        @include centerPopup(100px,100px,50%);
-        max-width: 100%;
-        max-height: 100%;
-    */
-    
+.popup{    
     .modalWrap{
         @include posTRBL;
         position: absolute;
@@ -25,37 +22,55 @@
     }
     
     &.statusDiv{
-        @include borderRadius(3px);        
-        box-shadow: 0 0 15px 0 $black;
+        /* CSS para usar centerPopup
+            @include centerPopup(100px,100px,50%);
+            max-width: 100%;
+            max-height: 100%;
+        */
+        
+        $popupStatusDivW: 500px;
+
+        @include borderRadius(6px); 
+        @include responsiveWidthAndHeight($popupStatusDivW, 200px); 
+        position: fixed;
+        top: 20%;
+        left: 50%;
         background-color: $bgStatusOKpopUp;
+        margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);           
+        box-shadow: 0 0 15px 0 $black;
+        
+        h2{
+            font-size: 1.3rem;
+        }
         
         p{
-            color: $white;
+            width: 100%;
+            background-color: transparent;
+            padding: 0;
+            color: $greyD;
             font-family: $mainFontFamily;
-            font-size: 1.1rem;
             text-align: center;
+        }
+        
+        .popOKdialog{
+            @include transition(1s);
+            @include equalHeightAndLineHeight(30px);
+            width: 40%;
+            max-width: 150px;
+            background-color: $bgWhite;
+            font-size: 0.8rem;
+            
+            &, &:focus, &:hover{
+                border: 1px solid $bcGrey!important
+            }
+            
+            &:focus, &:hover{
+                background-color: $bgGreyXXL;
+            }            
         }
         
         .closePop{           
             @include posTR(10px, 10px);
-        }
-        
-        @include mobileOnly{
-            @include responsiveWidthAndHeight(100px, 100px);
-            padding: 20px;
-            
-            /* CSS para usar centerPopup
-                @include centerPopup(280px,120px);
-            */            
-        }
-        
-        @include afterTablet{
-            @include responsiveWidthAndHeight(100px, 100px);
-            padding: 25px;
-            
-            /* CSS para usar centerPopup
-                @include centerPopup(500px,100px);
-            */            
         }
     }
 }
