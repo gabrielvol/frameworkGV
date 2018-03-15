@@ -22,6 +22,10 @@ msgstr "Please complete the form."
 msgid "Nos comunicaremos con Ud. a la brevedad."
 msgstr "We'll get in touch with you as soon as possible."
 
+<?php echo _("Env&iacute;o exitoso."); ?>
+msgid "Env&iacute;o exitoso."
+msgstr "Data successfully sent."
+
 <?php echo _("Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias."); ?>
 msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias."
 msgstr "Thank you. Your message has been successfully delivered, we'll be in touch shortly."
