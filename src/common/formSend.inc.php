@@ -8,7 +8,7 @@
     $statusIniGlobalA    = _('Complete el formulario.');
     $statusIniGlobalB    = _('Nos comunicaremos con Ud. a la brevedad.');
     
-    $statusOKGlobalA      = _('Formulario enviado con éxito.');
+    $statusOKGlobalA      = _('Env&iacute;o exitoso.');
     $statusOKGlobalB      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
     $statusErrorGlobalA  = _('Hubo un error al enviar el mensaje.');
     $statusErrorGlobalB  = _('Intente nuevamente m&aacute;s tarde.');
@@ -319,12 +319,12 @@
 //FIN mensaje ok en $status
                 
 //INICIA MENSAJE OK EN POPUP
-                $status = '<div class="popup statusDiv" role="alertdialog" aria-labelledby="formOK">'
+                $status = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
-                        . '<button class="closePop pAbs indentedText">'._("Cerrar").'</button>'
-                        . '<h2 id="formOK" class="mbm errorColour alignCenter">'._("$statusOKGlobalA").'</h2>'
+                        . '<button class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
+                        . '<h2 id="formOK" class="mbm green alignCenter">'._("$statusOKGlobalA").'</h2>'
                         . '<p class="status ok">'._("$statusOKGlobalB").'</p>'
-                        . '<button class="popOkDialog mtl mha alignCenter">'._("OK").'</button>'
+                        . '<button class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modalBG"></div>';
@@ -357,12 +357,12 @@
 //FIN mensaje error en $status
                 
 //INICIA MENSAJE ERROR EN POPUP
-                $status = '<div class="popup statusDiv" role="alertdialog" aria-labelledby="formError">'
+                $status = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
-                        . '<button class="closePop pAbs indentedText">'._("Cerrar").'</button>'
+                        . '<button class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="mbm errorColour alignCenter">'._("$statusErrorGlobalA").'</h2>'
                         . '<p class="status error">'._("$statusErrorGlobalB").'</p>'
-                        . '<button class="popOkDialog mtl mha alignCenter">'._("OK").'</button>'
+                        . '<button class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modalBG"></div>';
