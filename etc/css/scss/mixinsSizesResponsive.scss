@@ -1,18 +1,19 @@
 /* =============================================================================
    Resposive Sizing Mixins | Etc [mixinsSizesResponsive.scss]
    ========================================================================== */
-@mixin responsiveWidth($minWidth, $breakpointWidth: $minWidth, $maxWidth: 80%){
-    min-width: $breakpointWidth;
+// The Fab Four
+@mixin responsiveWidth($minWidth: 50%, $breakpointWidth: 25em, $maxWidth: 80%){
+    min-width: $minWidth;
     width: calc((#{$breakpointWidth} - 100%) * 1000);
     max-width: $maxWidth;
 }
-@mixin responsiveHeight($minHeight, $breakpointHeight: $minHeight, $maxHeight: 80%){
+@mixin responsiveHeight($minHeight: 40%, $breakpointHeight: 25em, $maxHeight: 60%){
     min-height: $minHeight;
     height: calc((#{$breakpointHeight} - 100%) * 1000);
     max-height: $maxHeight;
 }
 @mixin responsiveWidthAndHeight(
-$minWidth, $minHeight, $breakpointWidth: $minWidth, $breakpointHeight: $minHeight, $maxWidth: 80%, $maxHeight: 70%){
+$minWidth: 50%, $minHeight: 40%, $breakpointWidth: 25em, $breakpointHeight: 25em, $maxWidth: 80%, $maxHeight: 60%){
     min-width: $minWidth;
     min-height: $minHeight;
     width: calc((#{$breakpointWidth} - 100%) * 1000);
