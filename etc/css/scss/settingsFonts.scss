@@ -29,7 +29,7 @@ p, ul{
         margin: $headingMarginSibling;    
     }
 }
-p, .pSize{
+p, li, .pSize{
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
