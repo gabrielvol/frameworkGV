@@ -95,7 +95,7 @@ fieldset{
             
     &.invalidField{
         legend, label span{
-            color: $errorColour
+            color: $errorColour;
         }
         
         legend{
@@ -363,7 +363,8 @@ form{
     }
     
     .labelName{
-        font-family: $formLabelFontFamily;
+        font-family: $arial;
+        font-size: 0.8rem!important;
     }
 }
 

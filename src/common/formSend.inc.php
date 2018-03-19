@@ -314,7 +314,7 @@
             //echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';
                 
 //INICIA MENSAJE OK EN $status
-                $status = '<p class="status ok" role="alert">'._("$statusOKGlobal").'</p>';
+                $status = '<p class="status ok" role="alert">'._("$statusOKGlobalA").' '._("$statusOKGlobalB").'</p>';
                 $mandatoryMsgClasses = 'displayNone';
 //FIN mensaje ok en $status
                 
@@ -333,7 +333,7 @@
                 
                 // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
                 $_POST['nombre']       = '';
-                $_POST['nombreApe']       = '';
+                $_POST['nombreApe']    = '';
                 $_POST['direccion']    = '';
                 $_POST['domicilio']    = '';
                 $_POST['localidad']    = '';
@@ -371,3 +371,4 @@
             }
         }
     }
+?>
