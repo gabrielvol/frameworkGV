@@ -208,9 +208,9 @@ msgstr "Website"
 msgid "Por favor, ingrese su sitio web."
 msgstr "Please, enter your website address."
 
-<?php echo _('Debe comenzar con &#171;http://www.&#187;'); ?>
-msgid "Debe comenzar con &#171;http://www.&#187;"
-msgstr "Must begin with &#171;http://www.&#187;"
+<?php echo _('Debe comenzar con http://www'); ?>
+msgid "Debe comenzar con http://www"
+msgstr "Must begin with http://www"
 
 
 
@@ -222,9 +222,9 @@ msgstr "Facebook Profile"
 msgid "Por favor, ingrese su perfil de Facebook."
 msgstr "Please, enter your Facebook profile"
 
-<?php echo _('Debe comenzar con &#171;http://www.facebook.com/&#187;'); ?>
-msgid "Debe comenzar con &#171;http://www.facebook.com/&#187;"
-msgstr "Must begin with &#171;http://www.facebook.com/&#187;"
+<?php echo _('Debe comenzar con http://www.facebook.com/'); ?>
+msgid "Debe comenzar con http://www.facebook.com/"
+msgstr "Must begin with http://www.facebook.com/"
 
 
 

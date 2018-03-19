@@ -117,14 +117,14 @@
                 <label for="website">
                     <span class="labelName"><?php echo _('Sitio web'); ?></span>
                     <span class="sug">Debe ingresar su sitio web comenzando con <span>http://www</span>.</span>
-                    <input type="url" name="website" id="website" class="website <?php echo $invalidFieldWebsite ?>" value="<?php echo $_POST['website']; ?>" placeholder="<?php echo _('Debe comenzar con &#171;http://www.&#187;'); ?>" <?php echo $autofocusWebsite ?>>
+                    <input type="url" name="website" id="website" class="website <?php echo $invalidFieldWebsite ?>" value="<?php echo $_POST['website']; ?>" placeholder="<?php echo _('Debe comenzar con http://www'); ?>" <?php echo $autofocusWebsite ?>>
                     <span class="errorForm borderBox plm errorColour bold <?php echo $errorFormClassWebsite ?>"><?php echo $errorBelowInputWebsite ?></span>             
                 </label>          
                 
                 <label for="facebook">
                     <span class="labelName"><?php echo _('Perfil de Facebook'); ?></span>
                     <span class="sug">Debe ingresar su sitio web comenzando con <span>http://www.facebook.com/</span>.</span>
-                    <input type="url" name="facebook" id="facebook" class="facebook <?php echo $invalidFieldFacebook ?>" value="<?php echo $_POST['facebook']; ?>" placeholder="<?php echo _('Debe comenzar con &#171;http://www.facebook.com/&#187;'); ?>" <?php echo $autofocusFacebook ?>>
+                    <input type="url" name="facebook" id="facebook" class="facebook <?php echo $invalidFieldFacebook ?>" value="<?php echo $_POST['facebook']; ?>" placeholder="<?php echo _('Debe comenzar con http://www.facebook.com/'); ?>" <?php echo $autofocusFacebook ?>>
                     <span class="errorForm borderBox plm errorColour bold <?php echo $errorFormClassFacebook ?>"><?php echo $errorBelowInputFacebook ?></span>             
                 </label>
                 
