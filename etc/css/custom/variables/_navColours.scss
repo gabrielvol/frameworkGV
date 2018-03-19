@@ -40,7 +40,7 @@ $bgNavSubItemBT: transparent;
 $bgNavSubItemAT: transparent;
 $bgNavSubItemHover: transparent;
 
-$bgNavCurrentItemBT: transparent;
+$bgNavCurrentItemBT: darken($bgNavBT, 5%);
 $bgNavCurrentItemAT: transparent;
 $bgNavCurrentItemHover: transparent;
 
