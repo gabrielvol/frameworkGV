@@ -1,6 +1,6 @@
 <nav id="nav" class="navMain container pRel" aria-label="<?php echo _("Ver el men&uacute; principal del sitio"); ?>.">
-    <button class="hamb openNav pAbs displayNone displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
-    <button class="hamb closeNav pAbs indentedText"><?php echo _("Cerrar"); ?></button>
+    <button class="hamb navOpen pAbs displayNone displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
+    <button class="hamb navClose pAbs indentedText"><?php echo _("Cerrar"); ?></button>
     <ul class="mainMenu unstyled horizontalCenterAT clearfix">
         <li>
             <a href="/nuevo/" class="displayBlockBT" <?php if($navCurrent == 0) { echo 'aria-current="page"'; } ?>>

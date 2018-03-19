@@ -8,18 +8,18 @@ $(window).scroll(function () {
 
 $(document).ready(function () {
     // Hamburger Drawer
-    $('.openNav').click(function () {
+    $('.navOpen').click(function () {
         $(this).addClass('clicked');
         $(this).closest('#nav').find('.mainMenu').addClass('open');
         $(this).closest('#header').find('.social').addClass('clicked');
         $(this).closest('#nav').find('.modalNav').show( '2000', 'swing', function() {
-            $(this).closest('#nav').find('.closeNav').addClass('clicked');
+            $(this).closest('#nav').find('.navClose').addClass('clicked');
             $(this).closest('#header').find('.logoH').addClass('clicked');
         });
         $(this).attr('aria-pressed', 'true');
     });
 
-    $('.closeNav').click(function () {
+    $('.navClose').click(function () {
         $(this).removeClass('clicked');
         $(this).closest('#header').find('.social').removeClass('clicked');
         $(this).closest('#header').find('.logoH').removeClass('clicked');
@@ -31,12 +31,12 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
         });
-        $(this).closest('#nav').find('.openNav').removeClass('clicked');
-        $(this).closest('#nav').find('.openNav').attr('aria-pressed', 'false');
+        $(this).closest('#nav').find('.navOpen').removeClass('clicked');
+        $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
     });
 
     $('.modalNav').click(function () {
-        $(this).closest('#nav').find('.closeNav').removeClass('clicked');
+        $(this).closest('#nav').find('.navClose').removeClass('clicked');
         $(this).closest('#header').find('.social').removeClass('clicked');
         $(this).closest('#header').find('.logoH').removeClass('clicked');
         $(this).hide('fast');
@@ -47,8 +47,8 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
         });
-        $(this).closest('#nav').find('.openNav').removeClass('clicked');
-        $(this).closest('#nav').find('.openNav').attr('aria-pressed', 'false');
+        $(this).closest('#nav').find('.navOpen').removeClass('clicked');
+        $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
     });
 
     $('.topLevelItem').click(function () {
