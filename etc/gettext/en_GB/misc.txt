@@ -2,6 +2,10 @@
    Gettext en_GB -- Miscelaneous
    ========================================================================== */
 
+<?php echo _("Ej.:"); ?>
+msgid "Ej.:"
+msgstr "e.g.,"
+
 <?php echo _("Regresar"); ?>
 msgid "Regresar"
 msgstr "Back"
