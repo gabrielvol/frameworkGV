@@ -1,4 +1,4 @@
-<nav id="nav" class="navMain container pRel" aria-label="<?php echo _("Ver el men&uacute; principal del sitio"); ?>.">
+<nav id="nav" class="navMain container pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
     <button class="hamb navOpen pAbs displayNone displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
     <button class="hamb navClose pAbs indentedText"><?php echo _("Cerrar"); ?></button>
     <ul class="mainMenu unstyled horizontalCenterAT clearfix">
@@ -11,13 +11,13 @@
                 <?php echo _("seccion"); ?></a>
         </li>
         
-        <li class="nos hasSub <?php if($navCurrent == 100) { echo "current"; } ?>">
+        <li class="nos hasSub <?php if($navCurrent == 2) { echo "current"; } ?>">
             <p class="topLevelItem" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
                 <?php echo _("Nosotros"); ?>
             </p>
-            <ul id="nosSubMenu" role="group" aria-expanded="false" aria-labelledby="nosNavItem" class="subMenu unstyled">
-                <li class="<?php if($navCurrentInt == 100) { echo "current"; } ?>">
-                    <a href="/nuevo/nosotros/historia.php" class="displayBlock" <?php if($navCurrentInt == 100) { echo 'aria-current="page"'; } ?>>
+            <ul id="nosSubMenu" class="subMenu unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
+                <li class="<?php if($navCurrentInt == 200) { echo "current"; } ?>">
+                    <a href="/nuevo/nosotros/historia.php" class="displayBlock" <?php if($navCurrentInt == 200) { echo 'aria-current="page"'; } ?>>
                         <?php echo _("Historia"); ?></a>
                 </li>
             </ul>
