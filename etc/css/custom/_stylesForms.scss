@@ -2,7 +2,7 @@
    Forms Styles | Custom [stylesForms.scss]
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
-.labelName, .sug, .errorForm{
+.labelName, .sug, .formInputErrorMsg{
     .mobileForm &{
         @include beforeTablet{
             clear: both!important;
@@ -49,7 +49,7 @@ form{
 }
 
 fieldset, label, input, select, textarea, button,
-.mandatoryMsg, .status, .labelName, .sug, .errorForm{
+.mandatoryMsg, .status, .labelName, .sug, .formInputErrorMsg{
     .mobileForm &{
         @include beforeTablet{
             width: $formLabelWidthBT;
@@ -257,37 +257,6 @@ form{
             }
         }
     }
-
-    .labelName, .sug{
-        box-sizing: border-box;
-        padding-left: 7px;
-    }
-    
-    .labelName, .errorForm.active{
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formLabelHeightBT);
-            }        
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formLabelHeightTO);
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                @include equalHeightAndLineHeight($formLabelHeightATL);
-            }
-        }
-
-        @include afterDesktop{
-            form &{
-                height: $formLabelHeightAD;        
-            }
-        }
-    }  
     
     label.radio{
         .radio{
@@ -358,13 +327,62 @@ form{
         }
     }
     
-    .labelName, .errorForm{
+    .labelName, .sug{
+        box-sizing: border-box;
+        padding-left: 7px;
+    }
+    
+    .labelName, .formInputErrorMsg{
         display: block;
     }
     
-    .labelName{
+    .formInputErrorMsg{
         font-family: $arial;
         font-size: 0.8rem!important;
+    }
+
+    .labelName{
+        font-family: $formLabelFontFamily;
+        
+        @include beforeTablet{
+            .mobileForm &{
+                @include equalHeightAndLineHeight($formLabelHeightBT);
+            }        
+        }
+
+        @include tabletOnly{
+            .tabletForm &{
+                @include equalHeightAndLineHeight($formLabelHeightTO);
+            }
+        }
+
+        @include afterTabletLandscape{
+            form &{
+                @include equalHeightAndLineHeight($formLabelHeightATL);
+            }
+        }
+
+        @include afterDesktop{
+            form &{
+                height: $formLabelHeightAD;        
+            }
+        }
+    }
+    
+    .formInputErrorMsg{
+        display: none;
+        
+        &.active{
+            box-sizing: border-box;
+            display: block;
+            padding-top: 3px;
+            padding-left: 10px;
+            color: $errorColour;
+            font-family: $arial;
+            font-weight: 700;
+            font-size: 0.8rem!important;
+            line-height: 1.3em;
+        }
     }
 }
 
