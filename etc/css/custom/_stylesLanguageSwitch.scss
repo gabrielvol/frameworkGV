@@ -15,7 +15,7 @@ $flagHeightAT: 32px;*/
     
     a{
         @include borderStyle($bcWhite);
-        @include transition(1s);
+        @include transition(0.3s);
         
         @if $circleFlags == "on"{
             @include borderRadius(50%);
