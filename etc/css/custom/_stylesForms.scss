@@ -1,87 +1,6 @@
 /* =============================================================================
    Forms Styles | Custom [stylesForms.scss]
    ========================================================================== */
-form, fieldset, label, input, select, textarea, button,
-.labelName, .sug, .formInputErrorMsg{
-    .mobileForm &{
-        @include beforeTablet{
-            clear: both!important;
-            float: $none;
-            margin-right: $auto;
-            margin-left: $auto;
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            clear: both!important;
-            float: $none;
-            margin-right: $auto;
-            margin-left: $auto;
-        }
-    }
-}
-
-form{
-    .mobileForm &{
-        @include beforeTablet{
-            width: $formWidthBT;
-        }
-        
-        @include mobileOnly{
-            width: $formWidthMO;            
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            width: $formWidthTO;
-        }
-    }
-    
-    @include afterTabletLandscape{
-        width: $formWidthATL;
-    }
-    
-    @include afterDesktop{
-        width: $formWidthAD;
-    }
-}
-
-fieldset, label, input, select, textarea, button,
-.mandatoryMsg, .status, .labelName, .sug, .formInputErrorMsg{
-    .mobileForm &{
-        @include beforeTablet{
-            width: $formLabelWidthBT;
-            font-size: $mainFontSizeParagraphBT;
-        }
-        
-        @include mobileOnly{
-            width: $formLabelWidthMO;           
-        }
-    }
-    
-    @include tabletOnly{
-        .tabletForm &{
-            width: $formLabelWidthTO;
-            font-size: $mainFontSizeParagraphAT;
-        }
-    }
-    
-    @include afterTabletLandscape{
-        form &{
-            width: $formLabelWidthATL;
-            font-size: $mainFontSizeParagraphATL;
-        }
-    }
-    
-    @include afterDesktop{
-        form &{
-            width: $formLabelWidthAD;
-        }
-    }
-}
-
 fieldset{
     & + fieldset{
         margin-top: 30px;
@@ -108,486 +27,25 @@ fieldset{
     }
 }
 
-form{
-    input, select, textarea{
-        @include transition(1s);
-        @include borderStyle($formInputBcColour);
-        font-family: $formInputFontFamily; 
-
-        &:focus, &:hover{
-            border-color: $formInputBcColourHover;
-        }
-
-        &:focus{
-            box-shadow: inset 0 0 4px $greyD;
-        }
-
-        &.bcError{
-            border-color: $bcError;        
-        }
-
-        &.invalidField{
-            border-width: 2px;
-            background-image: url('/nuevo/img/form_alert.svg');
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: auto 55%;
-            
-            &, &:focus, &:hover{
-                border-color: $bcError!important;
-            }
-        }
-    }
-}
-
-@if $formInsideLabel == "off"{
-    label, legend{
-        display: block\0/!important; /* IE8 + IE9 */
-        padding-left: 7px;
-        margin-bottom: $zero;
-        font-family: $formLabelFontFamily;
-
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formLabelHeightBT);
-            }
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formLabelHeightTO);          
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                @include equalHeightAndLineHeight($formLabelHeightATL);
-            }
-        }
-
-        @include afterDesktop{
-            form &{
-                height: $formLabelHeightAD;        
-            }
-        }
-
-        @if $labelsVisible == "off"{
-            display: $none;
-        }
-    }
-
-    @media all and (-ms-high-contrast:none){
-        label {/* IE10 */
-            display: $block;
-        }
-
-        *::-ms-backdrop, label {/* IE11 */
-            display: $block;
-        }
-    }
-    
-    input, select{
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formInputHeightBT);
-            }
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formInputHeightTO);          
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                @include equalHeightAndLineHeight($formInputHeightATL);
-            }
-        }
-
-        @include afterDesktop{
-            form &{
-                @include equalHeightAndLineHeight($formInputHeightAD);
-            }
-        }
-    }
-    
-    input, select, textarea{
-        @include beforeTablet{
-            .mobileForm &{
-                margin-bottom: $paddingMarginLargeValue;
-            }
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                margin-bottom: $paddingMarginLargeValue;       
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                margin-bottom: $paddingMarginMediumValue;
-            }
-        }
-    }
-}
-
-@if $formInsideLabel == "on"{
-    fieldset, label{
-        form &{
-            @include clearfix;
-        }
-
-        @include beforeTablet{
-            .mobileForm &{
-                margin-bottom: $paddingMarginLargeValue;
-            }
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                margin-bottom: $paddingMarginLargeValue;       
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                margin-bottom: $paddingMarginMediumValue;
-            }
-        }
-    }
-    
-    label.radio{
-        .radio{
-            clear: $none;
-            float: $left;
-            margin-right: 5px!important;
-        }
-        
-        @include beforeTablet{
-            .mobileForm &{
-                .radio{
-                    width: $formInputRadioHeightBT!important;
-                    height: $formInputRadioHeightBT;
-                }
-                
-                span{
-                    width: calc(100% - calc(#{$formInputRadioHeightBT} + 10px));
-                    display: block;
-                    float: left;
-                    height: auto;
-                    margin-top: 5px;
-                    line-height: 1.3em;  
-                }
-                
-                & + .radio{
-                    margin-top: 10px;
-                }
-            }
-        }
-        
-        @include tabletOnly{
-            .tabletForm &{
-                .radio{
-                    width: $formInputRadioHeightTO!important;
-                    height: $formInputRadioHeightTO;
-                }
-                
-                &, input, span{
-                    @include equalHeightAndLineHeight($formInputRadioHeightTO);
-                }
-            }
-        }
-    }
-    
-    fieldset span, input, select{
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formInputHeightBT);
-            }        
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formInputHeightTO);
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                @include equalHeightAndLineHeight($formInputHeightATL);
-            }
-        }
-
-        @include afterDesktop{
-            form &{
-                height: $formInputHeightAD;        
-            }
-        }
-    }
-    
-    .labelName, .sug{
-        box-sizing: border-box;
-        padding-left: 7px;
-    }
-    
-    .labelName, .formInputErrorMsg{
-        display: block;
-    }
-    
-    .formInputErrorMsg{
-        font-family: $arial;
-        font-size: 0.8rem!important;
-    }
-
-    .labelName{
-        font-family: $formLabelFontFamily;
-        
-        @include beforeTablet{
-            .mobileForm &{
-                @include equalHeightAndLineHeight($formLabelHeightBT);
-            }        
-        }
-
-        @include tabletOnly{
-            .tabletForm &{
-                @include equalHeightAndLineHeight($formLabelHeightTO);
-            }
-        }
-
-        @include afterTabletLandscape{
-            form &{
-                @include equalHeightAndLineHeight($formLabelHeightATL);
-            }
-        }
-
-        @include afterDesktop{
-            form &{
-                height: $formLabelHeightAD;        
-            }
-        }
-    }
-    
-    .formInputErrorMsg{
-        display: none;
-        
-        &.active{
-            box-sizing: border-box;
-            display: block;
-            padding-top: 3px;
-            padding-left: 10px;
-            color: $errorColour;
-            font-family: $arial;
-            font-weight: 700;
-            font-size: 0.8rem!important;
-            line-height: 1.3em;
-        }
-    }
-}
-
-@if $formSug == "on"{
-    .sug{
-        @include transition(1s);
-        display: none;
-        opacity: 0;
-        height: 0;
-        padding-bottom: 3px;
-        font-family: $formSugFontFamily;
-        font-size: 0.8rem;
-    }
-    
-    label, legend{
-        &:hover{
-            .sug{
-                display: block;
-                opacity: 1;
-
-                @include beforeTablet{
-                    .mobileForm &{
-                        @include equalHeightAndLineHeight($formLabelSugHeightBT);
-                    }
-                }
-
-                @include tabletOnly{
-                    .tabletForm &{
-                        @include equalHeightAndLineHeight($formLabelSugHeightTO);
-                    }
-                }
-
-                @include afterTabletLandscape{
-                    @include equalHeightAndLineHeight($formLabelSugHeightATL);
-                }
-
-                @include afterDesktop{
-                    height: $formLabelSugHeightAD;        
-                }
-            }
-        }
-    }
-}
-
-form input{
-    padding: 0 $paddingMarginMediumValue;
-
-    &[type="text"]{}
-    
-    &[type="color"]{}
-    &[type="email"]{
-        &:valid{}
-        &:invalid{}
-    }
-    &[type="file"]{}
-    &[type="image"]{}
-    &[type="password"]{}
-    &[type="search"]{}
-    &[type="tel"]{}
-    &[type="url"]{}
-
-    &[type="number"]{
-        &:in-range{}
-        &:out-of-range{}
-    }
-    &[type="range"]{}
-
-    &[type="time"]{}
-    &[type="date"]{}
-    &[type="month"]{}
-    &[type="week"]{}
-
-    &[type="checkbox"]{
-        &:checked{}
-    }
-    &[type="radio"]{
-        &:checked{}
-    }
-    
-    &:required{}
-    &:disabled{}
-    
-    &.nombre{}
-    &.email{}
-    &.telefono{}
-    
-    &.fecha{
-        background-image: url('/nuevo/img/form_calendar.svg');
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: 28px;
-    }
-}
-
-
 select{
     option{
         &:checked{}
     }
 }
 
-form textarea{
-    padding: $paddingMarginMediumValue;
-    
-    @include beforeTablet{
-        height: 100px;
-    }
-    
-    @include afterTablet{
-        height: 100px;
-    }
-    
-    @include afterTabletLandscape{
-        height: 100px;        
-    }
-    
-    @if $formInsideLabel == "off"{
-        @include afterTabletLandscape{
-            margin-bottom: $paddingMarginLargeValue;
-        }        
-    }
-}
-
-form{
-    input[type="reset"],
-    input[type="submit"],
-    input[type="button"],
-    button{
-        @include borderRadius(6px);
-        @include borderStyle($formSubmitBcColour);
-        @include transition(1s);
-        margin-bottom: $zero;
-        color: $formSubmitFontColour;
-        font-family: $formSubmitFontFamily;
-        font-size: 1.4rem;
-
-        &:focus, &:hover{
-            border-color: $formSubmitBcColourHover;
-            color: $formSubmitFontColourHover;
-        }
-    }
-}
-
-input[type="reset"],
-input[type="submit"],
-input[type="button"],
-form button{
-    .mobileForm &{
-        @include mobileOnly{
-            width: $formSubmitWidthMO!important;
-        }
-
-        @include mobileLandscapeOnly{
-            width: $formSubmitWidthMLO;   
-        }
-
-        @include beforeTablet{
-            height: $formSubmitHeightValueBT;
-            line-height: $formSubmitLineHeightValueBT;
-        }
-    }
-    
-    .tabletForm &{
-        @include tabletOnly{
-            width: $formSubmitWidthTO;
-            height: $formSubmitHeightValueTO;
-            line-height: $formSubmitLineHeightValueTO;
-        }  
-    }
-
-    @include afterTabletLandscape{
-        form &{
-            width: $formSubmitWidthATL;
-            height: $formSubmitHeightValueATL;
-            line-height: $formSubmitLineHeightValueATL;
-        }
-    }
-
-    @include afterDesktop{
-        form &{
-            width: $formSubmitWidthAD;
-            height: $formSubmitHeightValueAD;
-            line-height: $formSubmitLineHeightValueAD;
-        }
-    }
-    
-    & + &{
-        margin-top: $paddingMarginLargeValue;
-    }
-}
-
 .status, .mandatoryMsg{
+    box-sizing: border-box;
     margin-bottom: 20px;
 }
 
 .status.ok, .mandatoryMsg{
     @include borderRadius(6px);
-    box-sizing: border-box;
     padding: 7px 20px;
 }
 
 .status, .mandatoryMsg p{
     text-align: center;   
 }
-
 
 .status{    
     &.ini{
@@ -614,5 +72,206 @@ form button{
 .mandatoryMsg, .status{    
     @include afterTabletLandscape{
         @include centerCustom(80%);
+    }
+}
+
+form{
+    input, select, textarea{}
+    
+    input{
+        &[type="text"]{}
+
+        &[type="color"]{}
+        &[type="email"]{
+            &:valid{}
+            &:invalid{}
+        }
+        &[type="file"]{}
+        &[type="image"]{}
+        &[type="password"]{}
+        &[type="search"]{}
+        &[type="tel"]{}
+        &[type="url"]{}
+
+        &[type="number"]{
+            &:in-range{}
+            &:out-of-range{}
+        }
+        &[type="range"]{}
+
+        &[type="time"]{}
+        &[type="date"]{}
+        &[type="month"]{}
+        &[type="week"]{}
+
+        &[type="checkbox"]{
+            &:checked{}
+        }
+        &[type="radio"]{
+            &:checked{}
+        }
+
+        &:required{}
+        &:disabled{}
+
+        &.nombre{}
+        &.email{}
+        &.telefono{}
+
+        &.fecha{
+            background-image: url('/nuevo/img/form_calendar.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 28px;
+        }
+    }
+    
+    textarea{    
+        @include beforeTablet{
+            height: 100px;
+        }
+
+        @include afterTablet{
+            height: 100px;
+        }
+
+        @include afterTabletLandscape{
+            height: 100px;        
+        }
+
+        @if $formInsideLabel == "off"{
+            @include afterTabletLandscape{
+                margin-bottom: $paddingMarginLargeValue;
+            }        
+        }
+    }
+
+    input[type="reset"],
+    input[type="submit"],
+    input[type="button"],
+    button{
+        @include borderRadius(6px);
+        margin-bottom: $zero;
+        font-size: 1.4rem;
+    }
+    
+    @if $formInsideLabel == "on"{
+        label.radio{
+            .radio{
+                clear: $none;
+                float: $left;
+                margin-right: 5px!important;
+            }
+
+            @include beforeTablet{
+                .mobileForm &{
+                    .radio{
+                        width: $formInputRadioHeightBT!important;
+                        height: $formInputRadioHeightBT;
+                    }
+
+                    span{
+                        width: calc(100% - calc(#{$formInputRadioHeightBT} + 10px));
+                        display: block;
+                        float: left;
+                        height: auto;
+                        margin-top: 5px;
+                        line-height: 1.3em;  
+                    }
+
+                    & + .radio{
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            @include tabletOnly{
+                .tabletForm &{
+                    .radio{
+                        width: $formInputRadioHeightTO!important;
+                        height: $formInputRadioHeightTO;
+                    }
+
+                    &, input, span{
+                        @include equalHeightAndLineHeight($formInputRadioHeightTO);
+                    }
+                }
+            }
+        }
+
+        .labelName, .sug{
+            box-sizing: border-box;
+            padding-left: 7px;
+        }
+
+        .labelName, .formInputErrorMsg{
+            display: block;
+        }
+
+        .formInputErrorMsg{
+            font-family: $arial;
+            font-size: 0.8rem!important;
+        }
+
+        .labelName{
+            font-family: $formLabelFontFamily;
+        }
+
+        .formInputErrorMsg{
+            display: none;
+
+            &.active{
+                box-sizing: border-box;
+                display: block;
+                padding-top: 3px;
+                padding-left: 10px;
+                color: $errorColour;
+                font-family: $arial;
+                font-weight: 700;
+                font-size: 0.8rem!important;
+                line-height: 1.3em;
+            }
+        }
+    }
+
+    @if $formSug == "on"{
+        .sug{
+            @include transition(1s);
+            display: none;
+            opacity: 0;
+            height: 0;
+            padding-bottom: 3px;
+            font-family: $formSugFontFamily;
+            font-size: 0.8rem;
+        }
+
+        label, legend{
+            &:hover{
+                .sug{
+                    display: block;
+                    opacity: 1;
+
+                    @include beforeTablet{
+                        .mobileForm &{
+                            @include equalHeightAndLineHeight($formLabelSugHeightBT);
+                        }
+                    }
+
+                    @include tabletOnly{
+                        .tabletForm &{
+                            @include equalHeightAndLineHeight($formLabelSugHeightTO);
+                        }
+                    }
+
+                    @include afterTabletLandscape{
+                        @include equalHeightAndLineHeight($formLabelSugHeightATL);
+                    }
+
+                    @include afterDesktop{
+                        height: $formLabelSugHeightAD;        
+                    }
+                }
+            }
+        }
     }
 }

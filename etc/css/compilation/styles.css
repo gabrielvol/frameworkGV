@@ -58,13 +58,16 @@
    Fonts Main Variables | Custom [fontsMain.scss]
    ========================================================================== */
 /* =============================================================================
-   Font Colours Variables | Custom [fontColours.scss]
+   Font Colours Variables | Custom [fontsColours.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Colours Variables | Custom [navColours.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Fonts Variables | Custom [navFonts.scss]
+   ========================================================================== */
+/* =============================================================================
+   Nav Sizes Variables | Custom [navSizes.scss]
    ========================================================================== */
 /* =============================================================================
    Forms Colours Variables | Custom [formsColours.scss]
@@ -157,6 +160,9 @@
    ========================================================================== */
 /* =============================================================================
    Border Radius Mixins | Etc [mixinsBorders.scss]
+   ========================================================================== */
+/* =============================================================================
+   Border Notch Mixin | Etc [mixinsBorders.scss]
    ========================================================================== */
 /* =============================================================================
    Border Separation Mixins | Etc [mixinsBorders.scss]
@@ -258,7 +264,7 @@ html input[type="button"] {
    Font Settings | Etc [settingsFonts.scss]
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, select, textarea, blockquote, table {
-  font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4; }
@@ -269,25 +275,40 @@ h1, h2, h3, h4, h5, h6 {
 p, dl, legend {
   margin: 0; }
 
-p b, li b {
-  font-family: Arial; }
-
-p + p, li + p {
+p + p,
+p + ul, ul + p,
+ul + ul {
   margin: 0.8em 0 0; }
 
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6, ul + h1,
+ul + h2,
+ul + h3,
+ul + h4,
+ul + h5,
+ul + h6 {
+  margin: 1.2em 0 0; }
+
 @media (max-width: 767px) {
-  p, li {
+  p, li, .pSize {
     font-size: 0.9rem; } }
 
 @media (min-width: 768px) {
-  p, li {
+  p, li, .pSize {
     font-size: 1rem; } }
 
 @media (min-width: 1024px) {
-  p, li {
+  p, li, .pSize {
     font-size: 1rem; } }
 
-p p, p a, p li, p strong, p dl, p legend, li p, li a, li li, li strong, li dl, li legend {
+p b, li b {
+  font-family: Arial; }
+
+p p, p li, p strong, p dl, p legend, li p, li li, li strong, li dl, li legend {
   font-size: 1em; }
 
 a {
@@ -791,6 +812,10 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   width: 1px;
   height: 1px;
   overflow: hidden; }
+  #go-main-content:focus {
+    position: static;
+    width: auto;
+    height: auto; }
 
 .clearfix::after {
   content: ".";
@@ -1327,6 +1352,10 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Main Gobal Styles | Custom
    ========================================================================== */
+@media (min-width: 768px) {
+  #main {
+    min-height: 500px; } }
+
 /* =============================================================================
    Internas Global Styles | Custom
    ========================================================================== */
@@ -1340,6 +1369,11 @@ article, article::before, article::after, details, details::before, details::aft
 .bgGradWhiteEighty {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
+.bgGradBlackTen {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
 .bgGradBlackFifty {
@@ -1364,12 +1398,16 @@ ul.dotted li {
   position: relative;
   padding-left: 15px; }
   ul.dotted li::before {
-    content: url("/nuevo/img/bullet_circle.svg");
+    content: "";
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 7px;
-    height: 7px; }
+    height: 7px;
+    background-image: url("/clientes/tegnomuebles/img/bullet_circle.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 7px; }
 
 .ulResp2 > li a, .ulResp3 > li a, .ulResp4 > li a {
   position: relative; }
@@ -1395,9 +1433,10 @@ ul.dotted li {
 
 @media (min-width: 421px) {
   .ulResp2 > li, .ulResp3 > li, .ulResp4 > li {
-    width: 50%; }
+    width: 50%;
+    padding: 0 10px; }
     .ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
-      width: auto; } }
+      width: 100%; } }
 
 @media (min-width: 768px) {
   .ulResp2 > li:nth-child(n+3) {
@@ -1447,81 +1486,78 @@ ul.dotted li {
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-.closePopup {
+.mobileForm .closePop {
+  border-radius: 50%;
   background-color: transparent;
-  background-image: url("/nuevo/img/ic_close.svg");
+  background-image: url("/nuevo/img/popup_close.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  width: 20px;
-  height: 20px;
-  display: block;
-  position: absolute;
-  text-indent: -9999px; }
-
-.popup {
-  min-width: 100px;
-  min-height: 100px;
-  width: calc((100px - 100%) * 1000);
-  height: calc((100px - 100%) * 1000);
-  max-width: 80%;
-  max-height: 70%;
-  position: fixed;
-  /* CSS para usar centerPopup
-        @include centerPopup(100px,100px,50%);
-        max-width: 100%;
-        max-height: 100%;
-    */ }
-  .popup .modalWrap {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    padding: 20px;
-    overflow: auto; }
-  .popup.statusDiv {
-    border-radius: 12px;
-    box-shadow: 0 0 15px 0 #000;
+  width: 33px !important;
+  height: 33px !important;
+  background-size: 13px;
+  border: 1px solid #666 !important; }
+  .mobileForm .closePop, .mobileForm .closePop:focus, .mobileForm .closePop:hover {
     background-color: #fff; }
-    .popup.statusDiv p {
-      color: #fff;
-      font-family: Arial;
-      font-size: 1.1rem;
-      text-align: center; }
-    @media (max-width: 420px) {
-      .popup.statusDiv {
-        min-width: 100px;
-        min-height: 100px;
-        width: calc((100px - 100%) * 1000);
-        height: calc((100px - 100%) * 1000);
-        max-width: 80%;
-        max-height: 70%;
-        padding: 20px;
-        /* CSS para usar centerPopup
-                @include centerPopup(280px,120px);
-            */ }
-        .popup.statusDiv .close {
-          top: calc(-1 * 20px);
-          right: -10px; } }
-    @media (min-width: 768px) {
-      .popup.statusDiv {
-        min-width: 100px;
-        min-height: 100px;
-        width: calc((100px - 100%) * 1000);
-        height: calc((100px - 100%) * 1000);
-        max-width: 80%;
-        max-height: 70%;
-        padding: 25px;
-        /* CSS para usar centerPopup
-                @include centerPopup(500px,100px);
-            */ } }
-  .popup .closePopup {
-    top: 20px;
-    right: 20px; }
-    .popup .closePopup.closePopupOut {
-      top: calc(-1 * calc(20px + 5px));
-      right: calc(-1 * calc(20px + 5px)); }
+
+.popup .modalWrap {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 20px;
+  overflow: auto; }
+
+.popup.statusDiv {
+  /* CSS para usar centerPopup
+            @include centerPopup(100px,100px,50%);
+            max-width: 100%;
+            max-height: 100%;
+        */
+  border-radius: 6px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 #000; }
+  .popup.statusDiv h2 {
+    font-size: 1.2rem; }
+  .popup.statusDiv p {
+    width: 100% !important;
+    background-color: transparent;
+    padding: 0;
+    color: #666;
+    font-family: Arial;
+    text-align: center; }
+  .popup.statusDiv .popOKdialog {
+    transition: all 1s ease;
+    height: 30px;
+    line-height: 30px;
+    width: 40%;
+    max-width: 150px;
+    background-color: #fff;
+    font-size: 0.8rem; }
+    .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+      border: 1px solid #999 !important; }
+    .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+      background-color: #f4f4f4; }
+  .popup.statusDiv .closePop {
+    top: 10px;
+    right: 10px; }
+  @media (max-width: 420px) {
+    .popup.statusDiv {
+      width: 300px;
+      margin-left: calc(calc(300px * -1) / 2); } }
+  @media (min-width: 421px) {
+    .popup.statusDiv {
+      width: 60%;
+      margin-left: calc(calc(60% * -1) / 2); } }
+  @media (min-width: 601px) {
+    .popup.statusDiv {
+      width: 450px;
+      margin-left: calc(calc(450px * -1) / 2); } }
 
 /* =============================================================================
    Header Styles | Custom [stylesHeader.scss]
@@ -1529,7 +1565,6 @@ ul.dotted li {
 #header {
   /*z-index: $zIndexHeader;*/ }
   #header .logoH {
-    z-index: 100;
     margin: 0 !important; }
   @media (max-width: 420px) {
     #header .logoH {
@@ -1546,13 +1581,15 @@ ul.dotted li {
       box-sizing: border-box;
       padding-top: 20px; }
       #header .logoH.clicked {
+        border-right: 1px solid #000;
+        box-sizing: border-box;
         position: fixed;
         z-index: 9200;
         top: 0;
         left: 0;
         width: calc(70vw - 5px);
-        height: 50px;
-        background-color: #999;
+        height: calc(50px + 50px + 10px);
+        background-color: #fff;
         padding-top: 50px;
         padding-bottom: 10px; }
         #header .logoH.clicked a, #header .logoH.clicked img {
@@ -1562,8 +1599,11 @@ ul.dotted li {
           margin-right: auto;
           margin-left: auto; } }
   @media (min-width: 768px) {
-    #header .logoH, #header .logoH a, #header .logoH img {
-      width: 150px; }
+    #header .logoH {
+      position: relative;
+      z-index: 100; }
+      #header .logoH, #header .logoH a, #header .logoH img {
+        width: 150px; }
     #header.topper {
       height: 50px; }
       #header.topper li {
@@ -1580,109 +1620,57 @@ ul.dotted li {
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
+#footer .googleAddress a {
+  font-size: 1.1rem;
+  line-height: 1.2em; }
+  #footer .googleAddress a:focus, #footer .googleAddress a:hover {
+    text-decoration: underline; }
+
 #footer .logoF {
   width: 100px; }
 
 /* =============================================================================
    Nav Settings | Etc [settingsNav.scss]
    ========================================================================== */
-.navMain li a, .navMain li .topLevelItem {
-  font-family: Arial; }
+nav .topLevelItem,
+nav .current a {
+  cursor: default; }
 
-.navMain li.current a, .navMain li.current .topLevelItem {
-  font-family: Arial; }
-
-@media (max-width: 767px) {
-  .navMain .hamb {
-    transition: all 1s ease;
-    box-sizing: border-box; }
-    .navMain .hamb.navOpen {
-      z-index: 200;
-      opacity: 1; }
-      .navMain .hamb.navOpen.clicked {
-        opacity: 0; }
-    .navMain .hamb.navClose {
-      z-index: 9200;
-      display: none; }
-  .navMain li a, .navMain li .topLevelItem {
-    color: #000; }
-  .navMain li .topLevelItem {
-    background-repeat: no-repeat;
-    background-position: 10px center; }
-  .navMain li.current, .navMain li.topLevelItem.open {
-    background-image: url("/nuevo/img/nav_arrowL.svg");
-    background-repeat: no-repeat; }
-  .navMain li.current {
-    background-color: transparent;
-    background-position: right 10px center; }
-    .navMain li.current a, .navMain li.current .topLevelItem {
-      color: #000; } }
-
-@media (min-width: 768px) {
-  .navMain .navClose {
-    display: none !important; }
-  .navMain li {
-    background: transparent; }
-    .navMain li a, .navMain li .topLevelItem {
-      background: transparent;
-      color: #000; }
-      .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
-        background-color: transparent;
-        color: #333333; }
-    .navMain li .topLevelItem {
-      cursor: default; }
-    .navMain li.current {
-      background: transparent; }
-      .navMain li.current a, .navMain li.current .topLevelItem {
-        background: transparent;
-        color: #333333; }
-        .navMain li.current a, .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
-          color: #333333; }
-        .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
-          background-color: transparent; } }
-
-/* =============================================================================
-   Nav Styles | Custom [stylesNav.scss]
-   ========================================================================== */
 .navMain {
   z-index: 1000; }
+  .navMain li a, .navMain li .topLevelItem {
+    font-family: Arial; }
+  .navMain li.current a, .navMain li.current .topLevelItem {
+    font-family: Arial; }
   @media (max-width: 767px) {
     .navMain {
-      top: 10px;
-      right: 10px;
-      position: fixed;
-      width: 200px;
-      /* =============================================================================
-   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
-   ========================================================================== */ }
+      position: fixed; }
       .navMain .hamb {
-        border-radius: 4px;
-        top: 0;
-        right: 0; }
-        .navMain .hamb.navOpen {
-          width: 90px;
-          height: 40px;
-          background: #fff url("/nuevo/img/nav_hamb.svg") no-repeat 10px center;
-          background-size: 15px;
-          border: 1px solid #999 !important;
-          padding: 0 10px 0 30px;
-          color: #333;
-          font-family: Arial;
-          font-size: 1rem;
-          line-height: 45px; }
-          .navMain .hamb.navOpen.clicked {
-            color: #333; }
-        .navMain .hamb.navClose {
-          border-radius: 50%;
-          width: 45px;
-          height: 45px;
-          background: #fff url("/nuevo/img/nav_close.svg") no-repeat center center;
-          background-size: 20px;
-          border: 2px solid #999 !important; }
+        transition: all 1s ease;
+        box-sizing: border-box; }
+      .navMain .navOpen {
+        z-index: 8900;
+        opacity: 1;
+        background-image: url("/nuevo/img/nav_hamb.svg");
+        background-repeat: no-repeat;
+        color: #333;
+        font-family: Arial; }
+        .navMain .navOpen.clicked {
+          opacity: 0.5;
+          color: #333; }
+      .navMain .navClose {
+        border-radius: 50%;
+        z-index: 9200;
+        display: none;
+        background-color: #fff;
+        background-image: url("/nuevo/img/nav_close.svg");
+        background-repeat: no-repeat;
+        background-position: center center; }
+        .navMain .navClose.clicked {
+          display: block; }
       .navMain ul {
         z-index: 9100;
-        position: fixed;
-        background-color: #999; }
+        position: fixed; }
         .navMain ul, .navMain ul .subMenu {
           transition: all 0.5s ease;
           top: 0;
@@ -1691,81 +1679,125 @@ ul.dotted li {
         box-sizing: border-box;
         left: calc(-1 * 70vw);
         width: calc(70vw - 5px);
-        padding-top: 100px;
+        max-width: 70vw;
+        background-color: #fff;
+        padding-top: calc(calc(50px + 50px + 10px) + 5px);
         padding-right: 5px;
         padding-left: 5px;
+        padding-bottom: 30px;
         overflow: scroll; }
-        .navMain > ul > li:last-child {
-          padding-bottom: 30px; }
-        .navMain > ul > li + li {
-          border-top: 1px solid #fff; }
+        .navMain > ul > li {
+          background-color: transparent; }
+          .navMain > ul > li.current {
+            background-color: #f2f2f2; }
         .navMain > ul li {
           float: none !important; }
-          .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
-            height: 45px;
-            line-height: 45px; }
           .navMain > ul li a, .navMain > ul li .topLevelItem {
-            font-size: 1rem;
-            text-align: center; }
+            color: #000; }
+          .navMain > ul li .topLevelItem {
+            background-repeat: no-repeat;
+            background-position: 10px center; }
+            .navMain > ul li .topLevelItem.open {
+              background-image: url("/nuevo/img/nav_arrowD.svg"); }
+          .navMain > ul li.current {
+            background-image: url("/nuevo/img/nav_arrowL.svg");
+            background-repeat: no-repeat;
+            background-position: right 10px center; }
+            .navMain > ul li.current a, .navMain > ul li.current .topLevelItem {
+              color: #000; }
+          .navMain > ul li + li {
+            border-top: 1px solid #fff; }
         .navMain > ul.open {
-          left: 0; }
-      .navMain .subMenu {
-        z-index: 9200;
-        position: relative;
-        top: 0;
-        right: 70vw;
-        width: calc(70vw - 10px);
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-        .navMain .subMenu li + li {
-          border-top: 1px solid #fff; }
-        .navMain .subMenu.open {
-          right: 5px; } }
+          left: 0; } }
   @media (min-width: 768px) {
-    .navMain li, .navMain li a, .navMain li .topLevelItem {
-      height: 60px;
-      line-height: 60px; }
-    .navMain li a, .navMain li .topLevelItem {
-      transition: all 1s ease; }
-    .navMain li + li {
-      margin-top: 0px; }
-    .navMain li.current a {
-      cursor: default; }
+    .navMain .navClose {
+      display: none !important; }
+    .navMain > ul {
+      background-color: #999; }
+      .navMain > ul > li {
+        background: transparent; }
+        .navMain > ul > li a, .navMain > ul > li .topLevelItem {
+          transition: all 1s ease;
+          color: #000; }
+        .navMain > ul > li:focus, .navMain > ul > li:hover {
+          background-color: transparent; }
+          .navMain > ul > li:focus a, .navMain > ul > li:hover a {
+            color: #333333; }
+        .navMain > ul > li.current {
+          background-color: transparent; }
+          .navMain > ul > li.current > a, .navMain > ul > li.current .topLevelItem {
+            color: #000; }
+          .navMain > ul > li.current:focus, .navMain > ul > li.current:hover {
+            background-color: transparent; }
+            .navMain > ul > li.current:focus > a, .navMain > ul > li.current:focus .topLevelItem, .navMain > ul > li.current:hover > a, .navMain > ul > li.current:hover .topLevelItem {
+              color: #333333; }
     .navMain.topper {
-      border-bottom: 1px solid #999;
+      border-bottom: 1px solid #666;
       position: fixed;
       top: 0;
       right: 0;
       width: 100%;
-      background-color: #fff; }
-      .navMain.topper .hamb {
-        display: none !important; }
-      .navMain.topper .mainMenu {
-        width: 700px;
-        margin-right: auto !important;
-        margin-left: auto !important;
-        float: none !important;
-        padding: 0; }
-      .navMain.topper .hasSub {
-        display: block !important; }
-        .navMain.topper .hasSub:focus ul, .navMain.topper .hasSub:hover ul {
-          display: block !important; }
-      .navMain.topper .subMenu, .navMain.topper .subMenu.open {
-        position: absolute;
-        display: none;
-        background-image: inear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
-        padding-bottom: 5px; }
-      .navMain.topper .subMenu, .navMain.topper .subMenu li {
-        width: 150px; }
-      .navMain.topper .subMenu li a {
-        padding-left: 10px;
-        text-align: left; }
-      .navMain.topper .subMenu li, .navMain.topper .subMenu li a {
-        height: 35px;
-        line-height: 35px; }
-      .navMain.topper .subMenu li + li {
-        border-top: 1px solid #c6c6c6; } }
+      background-color: #000; } }
+
+/* =============================================================================
+   Nav Styles | Custom [stylesNav.scss]
+   ========================================================================== */
+@media (max-width: 767px) {
+  .navMain {
+    top: 10px;
+    right: 10px;
+    /* =============================================================================
+   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
+   ========================================================================== */
+    /* =============================================================================
+   Nav List Styles | Custom [stylesNavList.scss]
+   ========================================================================== */ }
+    .navMain .hamb {
+      top: 0;
+      right: 0; }
+    .navMain .navOpen {
+      border-radius: 4px;
+      width: 90px;
+      height: 40px;
+      background-color: #fff;
+      background-position: 10px center;
+      background-size: 15px;
+      border: 1px solid #666 !important;
+      padding: 0 10px 0 30px;
+      font-size: 1rem;
+      line-height: 45px; }
+    .navMain .navClose {
+      width: 45px;
+      height: 45px;
+      background-size: 20px;
+      border: 1px solid #666 !important; }
+    .navMain > ul {
+      border-right: 1px solid #000; }
+      .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
+        height: 45px;
+        line-height: 45px; }
+      .navMain > ul li a, .navMain > ul li .topLevelItem {
+        font-size: 1rem;
+        text-align: center; } }
+
+@media (min-width: 768px) {
+  .navMain li, .navMain li a, .navMain li .topLevelItem {
+    height: 60px;
+    line-height: 60px; }
+  .navMain.topper .mainMenu {
+    width: 730px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    float: none !important;
+    padding: 0; }
+    .navMain.topper .mainMenu > li.current a {
+      border-bottom: 2px solid #999; } }
+
+@media (min-width: 1024px) {
+  .navMain.topper .mainMenu {
+    width: 1000px;
+    margin-right: auto !important;
+    margin-left: auto !important; } }
 
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
