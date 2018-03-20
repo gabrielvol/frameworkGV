@@ -213,17 +213,8 @@ nav{
                 }             
             }
         }
-        
-        &.topper{
-            @include borderStyleB($bcNavTopper);
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;  
-            background-color: $bgNavTopper;
-        }
             
-        @if $navHasSub == "on"{              
+        @if $navHasSub == "on"{
             .hasSub{
                 &:focus, &:hover{
                     ul{
@@ -233,8 +224,6 @@ nav{
             }
             
             .subMenu{
-                left: 0;
-                position: absolute;
                 display: none;
                 
                 li{                        
@@ -268,9 +257,31 @@ nav{
                             }
                         }
                     }
-
-                    & + li{
-                        @include borderStyleT($bcNavSubItemItemAT);
+                }
+            }
+        }
+        
+        &.topper{
+            @include borderStyleB($bcNavTopper);
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;  
+            background-color: $bgNavTopper;
+           
+            .hamb{
+                display: $none;
+            }
+            
+            @if $navHasSub == "on"{
+                .subMenu{
+                    left: 0;
+                    position: absolute;
+                    
+                    li{
+                        & + li{
+                            @include borderStyleT($bcNavSubItemItemAT);
+                        }
                     }
                 }
             }

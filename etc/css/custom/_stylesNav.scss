@@ -49,6 +49,18 @@
             & + li{}
         }
         
+        @if $navHasSub == "on"{
+            .subMenu{
+                &, li{}
+
+                li{                
+                    a{}
+
+                    &, a{}
+                }
+            }
+        }
+        
         @if $navTopper == "on"{
             &.topper{
                 .mainMenu{
@@ -64,30 +76,30 @@
                         }
                     }
                 }
-            }
-        }
-        
-        @if $navHasSub == "on"{
-            .subMenu{
-                @include borderRadiusB(3px);
-                background-image: $bgGradBlackEighty;
-                filter: $bgGradBlackEightyFilter;
-                padding-bottom: 5px;
-
-                &, li{
-                    width: 150px;
-                }
-
-                li{
-                    @include borderStyleT($bcNavSubItemItemAT);
                 
-                    a{
-                        padding-left: 10px;
-                        text-align: left;
-                    }
+                @if $navHasSub == "on"{
+                    .subMenu{
+                        @include borderRadiusB(3px);
+                        background-image: $bgGradBlackEighty;
+                        filter: $bgGradBlackEightyFilter;
+                        padding-bottom: 5px;
 
-                    &, a{
-                        @include equalHeightAndLineHeight(35px);
+                        &, li{
+                            width: 150px;
+                        }
+
+                        li{
+                            @include borderStyleT($bcNavSubItemItemAT);
+
+                            a{
+                                padding-left: 10px;
+                                text-align: left;
+                            }
+
+                            &, a{
+                                @include equalHeightAndLineHeight(35px);
+                            }
+                        }
                     }
                 }
             }
