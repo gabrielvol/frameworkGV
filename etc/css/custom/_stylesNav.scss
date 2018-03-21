@@ -37,17 +37,43 @@
     }    
     
     @include afterTablet{
-        .mainMenu{}
+        .mainMenu{
+            > li{
+                &.current{
+                    a, .topLevelItem{
+                        @include borderStyleB($bcNavTopperCurrentItem, 3px);
+                    } 
+                }
+            }
+        }
         
         li{
             &, a, .topLevelItem{
                 @include equalHeightAndLineHeight(60px);
             }
             
-            a, .topLevelItem{}
+            a, .topLevelItem{
+                &:focus, &:hover{
+                    @if $navTextItemWhite{
+                        text-shadow: 0 0 3px $black;
+                    }
+                }
+            }
             
             & + li{}
+            
+            &.current{
+                a, .topLevelItem{
+                    &:focus, &:hover{
+                        @if $navTextItemWhite{
+                            text-shadow: 0 0 0 transparent;
+                        }
+                    }
+                }
+            }
         }
+        
+
         
         @if $navHasSub == "on"{
             .subMenu{
@@ -70,7 +96,7 @@
                     
                     > li{
                         &.current{
-                            a{
+                            a, .topLevelItem{
                                 @include borderStyleB($bcNavTopperCurrentItem, 2px);
                             }
                         }
