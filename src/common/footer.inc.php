@@ -1,4 +1,10 @@
 <footer id="footer" class="">
+    <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
+        <ul class="mainMenu unstyled clearfix">
+            <?php include('nav.list.inc.php'); ?>                
+        </ul>
+    </nav>
+    
     <p class="googleAddress">
         <a href="https://goo.gl/maps/" title="<?php echo _('Ir a la ubicaci&oacute;n en Google Maps'); ?>." target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
