@@ -29,7 +29,7 @@ p, ul{
         margin: $headingMarginSibling;    
     }
 }
-p, li, .pSize{
+p, a, li, .pSize{
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
@@ -49,7 +49,6 @@ p, li{
     }
 }
 a{
-    font-size: $mainFontSizeAnchor;
     transition: background-color 0.7s, color 1s, text-shadow 1s;
 }
 
