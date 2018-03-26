@@ -152,7 +152,7 @@
             $invalidFieldTelefono = "invalidField";
             $autofocusTelefono = "autofocus";
             
-        } elseif (empty($_POST["email"])) {
+        } elseif (empty($_POST["email"]) or !preg_match("/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/")) {
             $mandatoryMsg = $errorMsgEmail;
             $mandatoryMsgClasses = $mandatoryMsgErrorClass;
             $invalidFieldEmail = "invalidField";
@@ -261,7 +261,7 @@
             $invalidFieldTelefono = "invalidField";
             $autofocusTelefono = "autofocus";
             
-        } elseif (empty($_POST["email"])) {
+        } elseif (empty($_POST["email"]) or !preg_match("/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/")) {
             $errorBelowInputEmail = $errorMsgEmail;
             $errorFormClassEmail = "active";
             $invalidFieldEmail = "invalidField";
@@ -333,6 +333,7 @@
                 
                 // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
                 $_POST['nombre']       = '';
+                $_POST['apellido']     = '';
                 $_POST['nombreApe']    = '';
                 $_POST['direccion']    = '';
                 $_POST['domicilio']    = '';
