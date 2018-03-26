@@ -61,10 +61,10 @@ select{
 .mandatoryMsg{
     &.invalidmandatoryMsg{
         display: $block;
-        background-color: $invalidmandatoryMsgBgColour;
+        background-color: $invalidMandatoryMsgBgColour;
         
         p{
-            color: $invalidmandatoryMsgFontColour;     
+            color: $invalidMandatoryMsgFontColour;     
         }
     }
 }
