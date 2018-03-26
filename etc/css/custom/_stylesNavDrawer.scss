@@ -13,7 +13,30 @@
             a, .topLevelItem{
                 font-size: 1rem;
                 text-align: center;
-            }              
+            }     
+        
+            &.volver .topLevelItem{
+                background-image: url('/nuevo/img/nav_arrowL.svg');
+            }     
+        
+            &.volver{    
+                @include borderStyleB(2px, $bcVolverColour);
+                
+                & + .volver{
+                    border-color: $bcGreyD transparent $bcVolverColour;
+                    border-width: 1px 0 2px;
+                    border-style: solid;
+                }
+
+                .topLevelItem{
+                    color: $white!important;
+                    padding-left: 30px;
+
+                    &.open{
+                        background-image: url(/nuevo/img/nav_arrowD.svg); 
+                    }
+                }
+            }    
         }
     }
 

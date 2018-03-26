@@ -2,7 +2,18 @@
     <button class="hamb navOpen pAbs displayNone displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
     <button class="hamb navClose pAbs indentedText"><?php echo _("Cerrar"); ?></button>
     <ul class="mainMenu unstyled horizontalCenterAT clearfix">
-        <?php include('nav.list.inc.php'); ?>
+        <?php            
+            if ($seccionConSub == 1) {
+                echo '<li class="volver pRel hasSub hideAT">
+                    <p id="prodNavItem" class="topLevelItem" aria-haspopup="true" aria-owns="prodSubMenu" aria-controls="prodSubMenu" role="button" aria-pressed="false">'. _("Menú principal").'</p>
+                    <ul id="prodSubMenu" class="subMenu unstyled" aria-expanded="false" aria-labelledby="prodNavItem">';
+                include('nav.list.inc.php');
+                echo '</ul></li>';
+                include('navAmoblamiento.int.lists.inc.php');
+            } else {
+                include('nav.list.inc.php');
+            }            
+        ?>
     </ul>
     <div class="modalBG modalNav">&nbsp;</div>
 </nav>
