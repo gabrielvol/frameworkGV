@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav List Styles | Custom [stylesNavList.scss]
    ========================================================================== */
-@if $navDrawer == "off"{
+@if $navList == "on"{
     ul{
         @include borderRadius($navBorderRadius);   
         z-index: $zIndexNavUlList;

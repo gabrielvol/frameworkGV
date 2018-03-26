@@ -174,6 +174,12 @@
    Position Mixins | Etc [mixinsPositions.scss]
    ========================================================================== */
 /* =============================================================================
+   Angled Edges Functions | Etc [functionsAngledEdges.scss]
+   ========================================================================== */
+/* =============================================================================
+   Font Stroke Functions | Etc [functionsFontStroke.scss]
+   ========================================================================== */
+/* =============================================================================
    Html Body Settings | Etc [settingsHtmlBody.scss]
    ========================================================================== */
 html, body {
@@ -294,25 +300,24 @@ ul + h6 {
   margin: 1.2em 0 0; }
 
 @media (max-width: 767px) {
-  p, li, .pSize {
+  p, a, li, .pSize {
     font-size: 0.9rem; } }
 
 @media (min-width: 768px) {
-  p, li, .pSize {
+  p, a, li, .pSize {
     font-size: 1rem; } }
 
 @media (min-width: 1024px) {
-  p, li, .pSize {
+  p, a, li, .pSize {
     font-size: 1rem; } }
 
 p b, li b {
   font-family: Arial; }
 
-p p, p li, p strong, p dl, p legend, li p, li li, li strong, li dl, li legend {
+p p, p li, p a, p strong, p dl, p legend, li p, li li, li a, li strong, li dl, li legend {
   font-size: 1em; }
 
 a {
-  font-size: 1rem;
   transition: background-color 0.7s, color 1s, text-shadow 1s; }
 
 .arial {
@@ -712,8 +717,7 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bgShadowT,
 .bgShadowB {
   background-repeat: repeat-x;
-  background-color: transparent;
-  background-size: 1px; }
+  background-size: auto 20px; }
 
 .bgShadowT {
   background-image: url("/nuevo/img/bg_shadowT.png");
@@ -1382,7 +1386,7 @@ article, article::before, article::after, details, details::before, details::aft
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
 .bgGradBlackEighty {
-  background-image: inear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
 
 /* =============================================================================
@@ -1737,7 +1741,9 @@ nav .current a {
       top: 0;
       right: 0;
       width: 100%;
-      background-color: #000; } }
+      background-color: #000; }
+      .navMain.topper .hamb {
+        display: none !important; } }
 
 /* =============================================================================
    Nav Styles | Custom [stylesNav.scss]
@@ -1781,16 +1787,22 @@ nav .current a {
         text-align: center; } }
 
 @media (min-width: 768px) {
+  .navMain .mainMenu > li.current a, .navMain .mainMenu > li.current .topLevelItem {
+    border-bottom: 3px solid #999; }
   .navMain li, .navMain li a, .navMain li .topLevelItem {
     height: 60px;
     line-height: 60px; }
+  .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
+    text-shadow: 0 0 3px #000; }
+  .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
+    text-shadow: 0 0 0 transparent; }
   .navMain.topper .mainMenu {
     width: 730px;
     margin-right: auto !important;
     margin-left: auto !important;
     float: none !important;
     padding: 0; }
-    .navMain.topper .mainMenu > li.current a {
+    .navMain.topper .mainMenu > li.current a, .navMain.topper .mainMenu > li.current .topLevelItem {
       border-bottom: 2px solid #999; } }
 
 @media (min-width: 1024px) {
