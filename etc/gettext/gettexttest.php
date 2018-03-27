@@ -11,3 +11,5 @@ else
 {
     echo "gettext is supported\n";
 }
+
+?>
