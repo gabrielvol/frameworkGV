@@ -45,14 +45,15 @@
         $destino  = "tampas@gmail.com";
         $asunto   = "Contacto Web de $nombre - $empresa";
         $headers  = "From: $nombre <$email>\r\n";
+        //$headers .= "Reply-To: $email \r\n";
         $headers .= "Content-type: text/html\r\n";
         $headers .= "X-Mailer: PHP5\n";
         $headers .= 'MIME-Version: 1.0' . "\n";
         //$headers .= "CC: tampas@gmail.com\r\n";
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
         $texto    = "<strong>Nombre:</strong> ".$nombre."<br />";
-        $texto    = "<strong>Apellido:</strong> ".$apellido."<br />";
-        $texto    = "<strong>Nombre y Apellido:</strong> ".$nombreApe."<br />";
+        $texto   .= "<strong>Apellido:</strong> ".$apellido."<br />";
+        $texto   .= "<strong>Nombre y Apellido:</strong> ".$nombreApe."<br />";
         $texto   .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
         $texto   .= "<strong>Domicilio:</strong> ".$domicilio."<br />";
         $texto   .= "<strong>Localidad:</strong> ".$localidad."<br />";
@@ -152,7 +153,7 @@
             $invalidFieldTelefono = "invalidField";
             $autofocusTelefono = "autofocus";
             
-        } elseif (empty($_POST["email"]) or !preg_match("/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/")) {
+        } elseif (empty($_POST["email"])) {
             $mandatoryMsg = $errorMsgEmail;
             $mandatoryMsgClasses = $mandatoryMsgErrorClass;
             $invalidFieldEmail = "invalidField";
@@ -261,7 +262,7 @@
             $invalidFieldTelefono = "invalidField";
             $autofocusTelefono = "autofocus";
             
-        } elseif (empty($_POST["email"]) or !preg_match("/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/")) {
+        } elseif (empty($_POST["email"])) {
             $errorBelowInputEmail = $errorMsgEmail;
             $errorFormClassEmail = "active";
             $invalidFieldEmail = "invalidField";
@@ -308,7 +309,7 @@
                         
         // Si todos los campos validan se env&iacute;a el correo
         } else {
-            if(mail($destino,$asunto,$texto,$headers)){
+            if(mail($destino, $asunto, $texto, $headers)){
 
             //Redirect
             //echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';
