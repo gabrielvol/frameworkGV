@@ -172,7 +172,7 @@ form{
 
         &.invalidField{
             border-width: 2px;
-            background-image: url('/nuevo/img/form_alert.svg');
+            background-image: url('/img/form_alert.svg');
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: auto 55%;
@@ -294,15 +294,11 @@ form{
             }
 
             @include afterTabletLandscape{
-                form &{
-                    @include equalHeightAndLineHeight($formLabelHeightATL);
-                }
+                @include equalHeightAndLineHeight($formLabelHeightATL);
             }
 
             @include afterDesktop{
-                form &{
-                    height: $formLabelHeightAD;        
-                }
+                @include equalHeightAndLineHeight($formLabelHeightAD);
             }
 
             @if $labelsVisible == "off"{
@@ -334,15 +330,11 @@ form{
             }
 
             @include afterTabletLandscape{
-                form &{
-                    @include equalHeightAndLineHeight($formInputHeightATL);
-                }
+                @include equalHeightAndLineHeight($formInputHeightATL);
             }
 
             @include afterDesktop{
-                form &{
-                    @include equalHeightAndLineHeight($formInputHeightAD);
-                }
+                @include equalHeightAndLineHeight($formInputHeightAD);
             }
         }
 
@@ -360,18 +352,14 @@ form{
             }
 
             @include afterTabletLandscape{
-                form &{
-                    margin-bottom: $paddingMarginMediumValue;
-                }
+                margin-bottom: $paddingMarginMediumValue;
             }
         }
     }
     
     @if $formInsideLabel == "on"{
         fieldset, label{
-            form &{
-                @include clearfix;
-            }
+            @include clearfix;
 
             @include beforeTablet{
                 .mobileForm &{
@@ -386,9 +374,7 @@ form{
             }
 
             @include afterTabletLandscape{
-                form &{
-                    margin-bottom: $paddingMarginMediumValue;
-                }
+                margin-bottom: $paddingMarginMediumValue;
             }
         }
     
@@ -406,15 +392,11 @@ form{
             }
 
             @include afterTabletLandscape{
-                form &{
-                    @include equalHeightAndLineHeight($formInputHeightATL);
-                }
+                @include equalHeightAndLineHeight($formInputHeightATL);
             }
 
             @include afterDesktop{
-                form &{
-                    height: $formInputHeightAD;        
-                }
+                height: $formInputHeightAD;  
             }
         }
         
@@ -432,15 +414,11 @@ form{
             }
 
             @include afterTabletLandscape{
-                form &{
-                    @include equalHeightAndLineHeight($formLabelHeightATL);
-                }
+                @include equalHeightAndLineHeight($formLabelHeightATL);
             }
 
             @include afterDesktop{
-                form &{
-                    height: $formLabelHeightAD;        
-                }
+                height: $formLabelHeightAD; 
             }
         }
     }
