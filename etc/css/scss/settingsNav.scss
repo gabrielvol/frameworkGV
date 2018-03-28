@@ -26,6 +26,7 @@ nav{
     @if $navHasSub == "on"{    
         .subMenu{
             z-index: $zIndexNavSubMenu;
+            margin-top: $zero;
             
             a{
                 font-family: $navFontFamilySub;
