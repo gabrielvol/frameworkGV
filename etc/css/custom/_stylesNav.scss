@@ -18,7 +18,7 @@
             background-color: $bgNavHamburger;
             background-position: 10px center;
             background-size: 15px;
-            border: 1px solid $bcOpenNav!important;
+            border: 1px solid $bcNavOpen!important;
             padding: 0 10px 0 30px;
             font-size: 1rem;
             line-height: 45px;
@@ -28,7 +28,7 @@
             .navClose{
                 @include squareSize(45px);
                 background-size: 20px;
-                border: 1px solid $bcCloseNav!important;
+                border: 1px solid $bcNavClose!important;
             }
         }
         
