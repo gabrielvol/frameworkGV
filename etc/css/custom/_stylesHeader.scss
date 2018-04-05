@@ -44,6 +44,7 @@
                     top: 0;
                     left: 0;
                     width: calc(#{$navDrawerWidth} - 5px);
+                    max-width: $navDrawerMaxWidth;
                     height: $logoHClickedFH;
                     background-color: $bgNavBT;
                     padding-top: $logoHClickedPT;
