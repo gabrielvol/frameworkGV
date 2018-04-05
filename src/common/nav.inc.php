@@ -1,7 +1,13 @@
 <nav id="nav" class="navMain container pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
     <button class="hamb navOpen pAbs displayNone displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
     <button class="hamb navClose pAbs indentedText"><?php echo _("Cerrar"); ?></button>
-    <ul class="mainMenu unstyled horizontalCenterAT clearfix">
+    <ul class="mainMenu unstyled horizontalCenterAT clearfix displayNoneBT">
+        <?php            
+            include('nav.list.inc.php');
+        ?>
+    </ul>
+    
+    <ul class="mainMenu unstyled clearfix displayNoneAT">
         <?php            
             if ($seccionConSub == 1) {
                 echo '<li class="volver pRel hasSub hideAT">
@@ -9,7 +15,7 @@
                     <ul id="volverSubMenu" class="subMenu unstyled" aria-expanded="false" aria-labelledby="volverNavItem">';
                         include('nav.list.inc.php');
                     echo '</ul></li>';
-                include('navAmoblamiento.int.lists.inc.php');
+                include('navAmoblamiento.list.inc.php');
             } else {
                 include('nav.list.inc.php');
             }            
