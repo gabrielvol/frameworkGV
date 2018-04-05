@@ -251,15 +251,16 @@ nav{
                         }
                     }
                     
-                    &.current{         
-                        background-color: $bgNavSubCurrentItemAT;
-                            
+                    &.current{
                         a{
                             color: $navSubCurrentFontColourAT;
                         }
                         
+                        &, &:focus, &:hover{
+                            background-color: $bgNavSubCurrentItemAT;
+                        }
+                        
                         &:focus, &:hover{
-                            background-color: $bgNavSubCurrentItemHover;
                             
                             a{
                                 color: $navSubCurrentFontColourHover;
