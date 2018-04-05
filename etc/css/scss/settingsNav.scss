@@ -6,6 +6,14 @@ nav{
     .current a{
         cursor: default;   
     }
+    
+    li{
+        &:focus, &:hover{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .navMain{
