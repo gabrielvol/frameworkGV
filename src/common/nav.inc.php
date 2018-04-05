@@ -5,10 +5,10 @@
         <?php            
             if ($seccionConSub == 1) {
                 echo '<li class="volver pRel hasSub hideAT">
-                    <p id="prodNavItem" class="topLevelItem" aria-haspopup="true" aria-owns="prodSubMenu" aria-controls="prodSubMenu" role="button" aria-pressed="false">'. _("Menú principal").'</p>
-                    <ul id="prodSubMenu" class="subMenu unstyled" aria-expanded="false" aria-labelledby="prodNavItem">';
-                include('nav.list.inc.php');
-                echo '</ul></li>';
+                    <p id="volverNavItem" class="topLevelItem" aria-haspopup="true" aria-owns="volverSubMenu" aria-controls="volverSubMenu" role="button" aria-pressed="false">'. _("Menú principal").'</p>
+                    <ul id="volverSubMenu" class="subMenu unstyled" aria-expanded="false" aria-labelledby="volverNavItem">';
+                        include('nav.list.inc.php');
+                    echo '</ul></li>';
                 include('navAmoblamiento.int.lists.inc.php');
             } else {
                 include('nav.list.inc.php');
