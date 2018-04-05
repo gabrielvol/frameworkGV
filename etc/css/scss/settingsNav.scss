@@ -241,6 +241,7 @@ nav{
                     
                     a{
                         color: $navSubFontColourAT;
+                        cursor: pointer;
                     }
                     
                     &:focus, &:hover{
@@ -254,6 +255,7 @@ nav{
                     &.current{
                         a{
                             color: $navSubCurrentFontColourAT;
+                            cursor: default;
                         }
                         
                         &, &:focus, &:hover{
