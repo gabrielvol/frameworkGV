@@ -51,25 +51,11 @@
             &, a, .topLevelItem{
                 @include equalHeightAndLineHeight(60px);
             }
-            
-            a, .topLevelItem{
-                &:focus, &:hover{
-                    @if $navTextItemWhite{
-                        text-shadow: 0 0 3px $black;
-                    }
-                }
-            }
-            
+
             & + li{}
             
             &.current{
-                a, .topLevelItem{
-                    &:focus, &:hover{
-                        @if $navTextItemWhite{
-                            text-shadow: 0 0 0 transparent;
-                        }
-                    }
-                }
+                a, .topLevelItem{}
             }
         } 
         
@@ -131,16 +117,27 @@
     }
     
     @include afterTabletLandscape{
-        .mainMenu{
-            li{
-                &, a, .topLevelItem{}
+        .mainMenu{}
+        li{
+            &, a, .topLevelItem{}
 
-                a, .topLevelItem{}
+            a, .topLevelItem{                
+                &:focus, &:hover{
+                    @if $navTextItemWhite{
+                        text-shadow: 0 0 3px $black;
+                    }
+                }
+            }
 
-                & + li{}
+            & + li{}
 
-                &.current{
-                    a{}
+            &.current{
+                a, .topLevelItem{
+                    &:focus, &:hover{
+                        @if $navTextItemWhite{
+                            text-shadow: 0 0 0 transparent;
+                        }
+                    }
                 }
             }
         }
@@ -149,6 +146,26 @@
             &.topper{
                 .mainMenu{
                     @include centerCustom(1000px);
+                }
+                
+                @if $navHasSub == "on"{
+                    .subMenu{}
+                }                
+            }
+        }
+    }
+    
+    @include afterDestkop{        
+        @if $navTopper == "on"{
+            &.topper{      
+                @if $navHasSub == "on"{                         
+                    .hasSub{
+                        &:focus, &:hover{                        
+                            .subMenu{
+                                display: $block;
+                            }
+                        }
+                    }
                 }
             }
         }
