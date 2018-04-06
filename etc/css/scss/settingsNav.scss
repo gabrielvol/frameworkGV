@@ -152,7 +152,7 @@ nav{
                 position: relative;
                 top: 0;
                 right: $navDrawerWidth;
-                width: calc(#{$navDrawerWidth} - 10px);
+                width: calc(100% - 10px);
                 max-width: $navDrawerMaxWidth;
                 background-color: $bgNavSubBT;
                 
