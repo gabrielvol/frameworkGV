@@ -43,7 +43,7 @@
         .subMenu{
             li{
                 & + li{
-                    @include borderStyleT($bcNavSubItemItemBT);
+                    @include borderStyleT($bcNavSubItemBT);
                 }
             } 
         }

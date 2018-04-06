@@ -113,7 +113,7 @@
                         }
 
                         li{
-                            @include borderStyleT($bcNavSubItemItemAT);
+                            @include borderStyleT($bcNavSubItemAT);
 
                             a{
                                 padding-left: 10px;
