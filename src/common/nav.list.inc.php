@@ -7,7 +7,7 @@
         <?php echo _("seccion"); ?></a>
 </li>
 
-<li class="nos hasSub pRel <?php if($navCurrent == 2) { echo 'current'; } if($seccionConSub == 1) { echo ' displayNone'; } ?>">
+<li class="nos hasSub pRel <?php if($navCurrent == 2) { echo 'current'; }?>">
     <p class="topLevelItem borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
         <?php echo _("Nosotros"); ?>
     </p>
