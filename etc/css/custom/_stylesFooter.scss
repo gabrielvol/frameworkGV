@@ -6,10 +6,6 @@
         a{
             font-size: 1.1rem;
             line-height: 1.2em;
-            
-            &:focus, &:hover{
-                text-decoration: underline;
-            }
         }
     }
     
@@ -17,5 +13,23 @@
     
     .logoF{
         width: 100px;
-    }   
+    }
+    
+    @include beforeTabletLandscape{
+        .googleAddress{
+            a{
+                text-decoration: underline;
+            }
+        }  
+    }
+    
+    @include afterTabletLandscape{
+        .googleAddress{
+            a{
+                &:focus, &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }        
+    }
 }

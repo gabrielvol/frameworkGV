@@ -152,7 +152,7 @@ nav{
                 position: relative;
                 top: 0;
                 right: $navDrawerWidth;
-                width: calc(100% - 10px);
+                width: calc(100% + 5px);
                 max-width: $navDrawerMaxWidth;
                 background-color: $bgNavSubBT;
                 
@@ -300,4 +300,16 @@ nav{
             }
         }
     }   
+    
+    @include tabletOnly{
+        .mainMenu{
+            @if $navHasSub == "on"{
+                .subMenu{
+                    &.openSubTO{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
