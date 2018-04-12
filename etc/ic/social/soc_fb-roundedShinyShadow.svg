@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215" height="215">
+  <defs>
+    <filter id="a" filterUnits="userSpaceOnUse" x="1.022" y="176.613" width="212.956" height="30.801">
+      <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <mask maskUnits="userSpaceOnUse" x="1.022" y="176.613" width="212.956" height="30.801" id="g">
+    <g filter="url(#a)">
+      <defs>
+        <path id="b" d="M1.022 176.613h212.956v30.801H1.022z"/>
+      </defs>
+      <clipPath id="c">
+        <use xlink:href="#b" overflow="visible"/>
+      </clipPath>
+      <path clip-path="url(#c)" d="M.467 176.511h213.955v30.999H.467z"/>
+      <g enable-background="new">
+        <defs>
+          <path id="d" d="M1.027 192.208c.502-8.496 48.547-15.488 107.365-15.595 58.79-.103 106.03 6.713 105.583 15.22-.221 8.498-48.341 15.472-107.229 15.579-58.904.097-106.279-6.701-105.719-15.204"/>
+        </defs>
+        <clipPath id="e" clip-path="url(#c)">
+          <use xlink:href="#d" overflow="visible"/>
+        </clipPath>
+        <radialGradient id="f" cx="-295.05" cy="521.723" r="1" gradientTransform="matrix(-106.5007 .1869 -.7991 15.3958 -30898.705 -7785.164)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fff"/>
+          <stop offset=".121" stop-color="#d1d1d1"/>
+          <stop offset=".302" stop-color="#939392"/>
+          <stop offset=".476" stop-color="#5f5f5e"/>
+          <stop offset=".637" stop-color="#373735"/>
+          <stop offset=".783" stop-color="#1a1a18"/>
+          <stop offset=".909" stop-color="#080806"/>
+          <stop offset="1" stop-color="#020200"/>
+        </radialGradient>
+        <path clip-path="url(#e)" fill="url(#f)" d="M214.422 207.509l-215.584.379 1.629-31.377 215.583-.378z"/>
+      </g>
+    </g>
+  </mask>
+  <g mask="url(#g)">
+    <defs>
+      <path id="h" d="M1.022 176.613h212.956v30.801H1.022z"/>
+    </defs>
+    <clipPath id="i">
+      <use xlink:href="#h" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#i)" d="M1.027 192.208c.502-8.496 48.547-15.487 107.365-15.595 58.79-.102 106.03 6.713 105.583 15.22-.221 8.498-48.341 15.473-107.229 15.579-58.904.097-106.279-6.701-105.719-15.204"/>
+  </g>
+  <path fill="#E6E6E6" d="M203.401 103.488c0 52.965-42.938 95.901-95.901 95.901-52.965 0-95.902-42.936-95.902-95.901 0-52.965 42.937-95.902 95.902-95.902 52.964 0 95.901 42.937 95.901 95.902"/>
+  <defs>
+    <path id="j" d="M26.764 67.129c-5.006 11.087-7.789 23.397-7.789 36.359 0 48.889 39.636 88.525 88.525 88.525s88.524-39.636 88.524-88.525c0-12.962-2.783-25.272-7.789-36.359-13.867-30.752-44.81-52.166-80.735-52.166-35.926 0-66.868 21.414-80.736 52.166"/>
+  </defs>
+  <clipPath id="k">
+    <use xlink:href="#j" overflow="visible"/>
+  </clipPath>
+  <radialGradient id="l" cx="-292.243" cy="509.957" r="1" gradientTransform="scale(-137.3791 137.3791) rotate(55.944 333.1 529.18)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0071bc"/>
+    <stop offset=".686" stop-color="#054777"/>
+    <stop offset="1" stop-color="#054777"/>
+  </radialGradient>
+  <path clip-path="url(#k)" fill="url(#l)" d="M278.168 70.486L140.502 274.157l-203.67-137.666L74.498-67.18z"/>
+  <g opacity=".1">
+    <defs>
+      <path id="m" d="M26.764 14.963h161.472v104.333H26.764z"/>
+    </defs>
+    <clipPath id="n">
+      <use xlink:href="#m" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#n)" fill="#FFF" d="M188.236 67.13c-13.869 30.752-44.812 52.167-80.736 52.167-35.927 0-66.868-21.415-80.737-52.167 13.869-30.752 44.81-52.167 80.737-52.167 35.925 0 66.867 21.415 80.736 52.167"/>
+  </g>
+  <path fill="#FFF" d="M113.614 77.137c0-6.763 5.754-5.755 5.754-5.755h18.129V51.24h-27.192c-20.573 0-21.104 22.588-21.104 22.588v15.454l-11.698.084v18.416h11.698v56.542h24.414v-56.542h20.717l3.166-18.847-23.883.171V77.137z"/>
+</svg>
