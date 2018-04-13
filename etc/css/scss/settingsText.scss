@@ -16,6 +16,12 @@ input::input-placeholder, textarea::input-placeholder{
 input:focus::input-placeholder, textarea:focus::input-placeholder{
     color: $mainFontColour}
 */
+h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote{dfn, button, blockquote{
+    a{
+        font-family: inherit;
+        font-weight: inherit;
+    }
+}
 h1, h2, h3, h4, h5, h6{
     margin: $headingMargin;
 }
@@ -58,12 +64,6 @@ p, li{
         a{
             text-decoration: underline;
         }
-    }
-}
-p{
-    a{
-        font-family: $mainFontFamily;
-        font-weight: $mainFontWeight;
     }
 }
 a{
