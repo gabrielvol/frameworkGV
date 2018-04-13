@@ -1,0 +1,115 @@
+/* =============================================================================
+   Font Settings | Etc [settingsFonts.scss]
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, select, textarea, blockquote, table{
+    font-family: $mainFontStack;
+    font-weight: $mainFontWeight;
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+}
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table{
+    color: $mainFontColour;
+}
+/*
+input::input-placeholder, textarea::input-placeholder{
+    color: $formPlaceholderFontColour}
+input:focus::input-placeholder, textarea:focus::input-placeholder{
+    color: $mainFontColour}
+*/
+h1, h2, h3, h4, h5, h6{
+    margin: $headingMargin;
+}
+p, a, li, .pSize{
+    @include beforeTablet{
+        font-size: $mainFontSizeParagraphBT;
+    }
+    @include afterTablet{
+        font-size: $mainFontSizeParagraphAT;
+    }
+    @include afterTabletLandscape{
+        font-size: $mainFontSizeParagraphATL;
+    }
+}
+p, dl, legend{
+    margin: $textMargin;
+}
+p, ul{
+    & + h1,
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6{
+        margin: $headingMarginSibling;    
+    }    
+    & + p,
+    & + ul{
+        margin: $textMarginSibling;    
+    }
+}
+p, li{    
+    b{
+        font-family: $mainFontFamilyBold;
+    }
+    p, li, a, strong, dl, legend{
+        font-size: 1em;
+    }    
+    &:focus, &:hover{
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+p{
+    a{
+        font-family: $mainFontFamily;
+        font-weight: $mainFontWeight;
+    }
+}
+a{
+    transition: background-color 0.7s, color 1s, text-shadow 1s;    
+    &, &:active, &:visited{
+        color: $anchorFontColour;
+    }
+    &:focus, &:hover{
+        color: $anchorFontColourHover;
+    }
+}
+
+// Font Families and Headings Values
+@include fontFamilyCustomClassesGenerator;
+
+@include beforeTablet{
+    @include fontCustomHeadingsSizesGeneratorMobile; 
+}
+@include afterTablet{
+    @include fontCustomHeadingsSizesGeneratorTablet;   
+}
+@include afterDesktop{
+    @include fontCustomHeadingsSizesGeneratorDesktop;
+}
+
+// Colour classes
+.white{
+    &, b, strong, i, em{
+        color: $white;
+    }
+}
+a.white{
+    &, &:active, &:visited, &:focus, &:hover{
+        color: $white;
+    }
+    &:focus, &:hover{
+        text-shadow: 0 0 3px $grey;
+    }
+    &.noHover{
+        &:focus, &:hover{        
+            text-shadow: 0 0 0 transparent;
+        }
+    }
+}
+@include colourLightClassesGenerator($darkenValue);
+@include colourDarkClassesGenerator($lightenValue);
+@include anchorColoursLightClassesGenerator($darkenValueAnchor);
+@include anchorColoursDarkClassesGenerator($lightenValueAnchor);
+@include colourCustomHoverClassesGenerator;

@@ -5,7 +5,7 @@
 @mixin colourLightClassesGenerator($darkenValue){
     @each $colourClassName, $colourHexValue in $coloursMapLight {
         .#{$colourClassName}{
-            &, & b, & strong, & i, & em{color: $colourHexValue;}}
+            &, b, strong, i, em{color: $colourHexValue;}}
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
@@ -24,7 +24,7 @@
 @mixin colourDarkClassesGenerator($lightenValue){
     @each $colourClassName, $colourHexValue in $coloursMapDark {
         .#{$colourClassName}{
-            &, & b, & strong, & i, & em{color: $colourHexValue;}}
+            &, b, strong, i, em{color: $colourHexValue;}}
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
@@ -83,7 +83,7 @@
 @mixin colourCustomHoverClassesGenerator{
     @each $colourClassName, $colourHexValue in $coloursMapCustomHover {
         .#{$colourClassName}{
-            &, & b, & strong, & i, & em{color: $colourHexValue;}
+            &, b, strong, i, em{color: $colourHexValue;}
         }
         a.#{$colourClassName}{
             &, &:active, &:visited, 
