@@ -162,7 +162,7 @@
         }
     }
     
-    @include afterDestkop{        
+    @include afterDesktop{        
         @if $navTopper == "on"{
             &.topper{      
                 @if $navHasSub == "on"{                         
