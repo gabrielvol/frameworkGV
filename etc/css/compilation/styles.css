@@ -138,6 +138,9 @@
    Mask Mixins | Etc [mixinsMasks.scss]
    ========================================================================== */
 /* =============================================================================
+   Clip Paths Mixins | Etc [mixinsClipPath.scss]
+   ========================================================================== */
+/* =============================================================================
    Transition Mixins | Etc [mixinsTransitions.scss]
    ========================================================================== */
 /* =============================================================================
@@ -259,8 +262,8 @@ html input[type="button"] {
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url(/path/to/fonts/examplefont.woff) format('woff'),
-         url(/path/to/fonts/examplefont.eot) format('eot');
+    src: url('/path/to/fonts/examplefont.woff') format('woff'),
+         url('/path/to/fonts/examplefont.eot') format('eot');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -275,16 +278,36 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, s
   font-size: 1rem;
   line-height: 1.4; }
 
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table {
+  color: #000; }
+
+/*
+input::input-placeholder, textarea::input-placeholder{
+    color: $formPlaceholderFontColour}
+input:focus::input-placeholder, textarea:focus::input-placeholder{
+    color: $mainFontColour}
+*/
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, dfn a, button a, blockquote a, dfn a, button a, blockquote a {
+  font-family: inherit;
+  font-weight: inherit; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.8em; }
 
+@media (max-width: 767px) {
+  p, a, li, .pSize {
+    font-size: 0.9rem; } }
+
+@media (min-width: 768px) {
+  p, a, li, .pSize {
+    font-size: 1rem; } }
+
+@media (min-width: 1024px) {
+  p, a, li, .pSize {
+    font-size: 1rem; } }
+
 p, dl, legend {
   margin: 0; }
-
-p + p,
-p + ul, ul + p,
-ul + ul {
-  margin: 0.8em 0 0; }
 
 p + h1,
 p + h2,
@@ -299,17 +322,10 @@ ul + h5,
 ul + h6 {
   margin: 1.2em 0 0; }
 
-@media (max-width: 767px) {
-  p, a, li, .pSize {
-    font-size: 0.9rem; } }
-
-@media (min-width: 768px) {
-  p, a, li, .pSize {
-    font-size: 1rem; } }
-
-@media (min-width: 1024px) {
-  p, a, li, .pSize {
-    font-size: 1rem; } }
+p + p,
+p + ul, ul + p,
+ul + ul {
+  margin: 0.8em 0 0; }
 
 p b, li b {
   font-family: Arial; }
@@ -317,8 +333,15 @@ p b, li b {
 p p, p li, p a, p strong, p dl, p legend, li p, li li, li a, li strong, li dl, li legend {
   font-size: 1em; }
 
+p:focus a, p:hover a, li:focus a, li:hover a {
+  text-decoration: underline; }
+
 a {
   transition: background-color 0.7s, color 1s, text-shadow 1s; }
+  a, a:active, a:visited {
+    color: #333333; }
+  a:focus, a:hover {
+    color: #1a1a1a; }
 
 .arial {
   font-family: Arial; }
@@ -368,108 +391,6 @@ a {
   h6, .hSei {
     font-size: 1.4rem; } }
 
-/* =============================================================================
-   Settings Text | Custom [settingsText.scss]
-   ========================================================================== */
-/* =============================================================================
-   Font Classes | Etc [classesFonts.scss]
-   ========================================================================== */
-abbr {
-  border: none !important;
-  cursor: help; }
-
-.fontSizeReset {
-  font-size: 1rem !important; }
-
-.fontSizeResetEM {
-  font-size: 1em !important; }
-
-.lineHeightReset {
-  line-height: 1em !important; }
-
-.light {
-  font-weight: 300; }
-
-b, strong,
-.roman {
-  font-weight: 400; }
-
-.semiBold {
-  font-weight: 600; }
-
-.bold {
-  font-weight: 700; }
-
-.extraBold {
-  font-weight: 800; }
-
-.heavy {
-  font-weight: 900; }
-
-.italic {
-  font-style: italic; }
-
-.underline, .underline:hover {
-  text-decoration: underline; }
-
-.lineThrough {
-  text-decoration: line-through; }
-
-.upperCase {
-  text-transform: uppercase; }
-
-.lowerCase {
-  text-transform: lowercase; }
-
-.smallCaps {
-  font-variant: small-caps; }
-
-.alignCenter {
-  text-align: center; }
-
-.alignRight {
-  text-align: right; }
-
-.alignLeft {
-  text-align: left; }
-
-.alignJustify {
-  text-align: justify; }
-
-.alignJustifyCenter {
-  text-align: justify;
-  text-align-last: center; }
-
-.indentedText {
-  text-indent: -9999px; }
-
-/* =============================================================================
-   Fonts Classes | Custom [classesFonts.scss]
-   ========================================================================== */
-.textShadow {
-  text-shadow: 1px 1px 5px #333; }
-
-.letterSpacing {
-  letter-spacing: 0.05rem; }
-
-/* =============================================================================
-   Colours Settings | Etc [settingsColours.scss]
-   ========================================================================== */
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table {
-  color: #000; }
-
-/*
-input::input-placeholder, textarea::input-placeholder{
-    color: $formPlaceholderFontColour}
-input:focus::input-placeholder, textarea:focus::input-placeholder{
-    color: $mainFontColour}
-*/
-a, a:active, a:visited {
-  color: #333333; }
-
-a:focus, a:hover {
-  color: #1a1a1a; }
-
 .white, .white b, .white strong, .white i, .white em {
   color: #fff; }
 
@@ -479,8 +400,8 @@ a.white, a.white:active, a.white:visited, a.white:focus, a.white:hover {
 a.white:focus, a.white:hover {
   text-shadow: 0 0 3px #999; }
 
-a.white.noGlow:focus, a.white.noGlow:hover {
-  text-shadow: 0 0 0 #fff; }
+a.white.noHover:focus, a.white.noHover:hover {
+  text-shadow: 0 0 0 transparent; }
 
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
   color: #eb1c24; }
@@ -645,6 +566,90 @@ label.black, label.black:focus, label.black:hover {
   color: #000; }
 
 /* =============================================================================
+   Settings Text | Custom [settingsText.scss]
+   ========================================================================== */
+/* =============================================================================
+   Font Classes | Etc [classesFonts.scss]
+   ========================================================================== */
+abbr {
+  border: none !important;
+  cursor: help; }
+
+.fontSizeReset {
+  font-size: 1rem !important; }
+
+.fontSizeResetEM {
+  font-size: 1em !important; }
+
+.lineHeightReset {
+  line-height: 1em !important; }
+
+.light {
+  font-weight: 300; }
+
+b, strong,
+.roman {
+  font-weight: 400; }
+
+.semiBold {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+.extraBold {
+  font-weight: 800; }
+
+.heavy {
+  font-weight: 900; }
+
+.italic {
+  font-style: italic; }
+
+.underline, .underline:hover {
+  text-decoration: underline; }
+
+.lineThrough {
+  text-decoration: line-through; }
+
+.upperCase {
+  text-transform: uppercase; }
+
+.lowerCase {
+  text-transform: lowercase; }
+
+.smallCaps {
+  font-variant: small-caps; }
+
+.alignCenter {
+  text-align: center; }
+
+.alignRight {
+  text-align: right; }
+
+.alignLeft {
+  text-align: left; }
+
+.alignJustify {
+  text-align: justify; }
+
+.alignJustifyCenter {
+  text-align: justify;
+  text-align-last: center; }
+
+.indentedText {
+  text-indent: -9999px; }
+
+/* =============================================================================
+   Fonts Classes | Custom [classesFonts.scss]
+   ========================================================================== */
+.textShadow {
+  text-shadow: 1px 1px 5px #333; }
+
+.letterSpacing {
+  letter-spacing: 0.05rem; }
+
+/* =============================================================================
    Backgrounds Includes | Custom [includesBackgrounds.scss]
    ========================================================================== */
 .bgWhite {
@@ -726,66 +731,6 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .bgShadowB {
   background-image: url("/nuevo/img/bg_shadowB.png");
   background-position: center bottom; }
-
-/* =============================================================================
-   Border Classes | Etc [classesBorders.scss]
-   ========================================================================== */
-.bas, .bts, .brs, .bbs, .bls, .bhs, .bvs {
-  border-style: solid; }
-
-.bad, .btd, .brd, .bbd, .bld, .bhd, .bvd {
-  border-style: dotted; }
-
-.badd, .btdd, .brdd, .bbdd, .bldd, .bhdd, .bvdd {
-  border-style: dashed; }
-
-.bas, .bad, .badd {
-  border-width: 1px; }
-
-.bts, .btd, .btdd {
-  border-width: 1px 0 0; }
-
-.brs, .brd, .brdd {
-  border-width: 0 1px 0 0; }
-
-.bbs, .bbd, .bbdd {
-  border-width: 0 0 1px; }
-
-.bls, .bld, .bldd {
-  border-width: 0 0 0 1px; }
-
-.bhs, .bhd, .bhdd {
-  border-width: 0 1px; }
-
-.bvs, .bvd, .bvdd {
-  border-width: 1px 0; }
-
-.ban {
-  border: none !important; }
-
-.btn, .bvn {
-  border-top: 0 !important; }
-
-.brn, .bhn {
-  border-right: 0 !important; }
-
-.bbn, .bvn {
-  border-bottom: 0 !important; }
-
-.bln, .bhn {
-  border-left: 0 !important; }
-
-/* =============================================================================
-   Borders Classes | Custom [classesBorders.scss]
-   ========================================================================== */
-.bw {
-  border-color: #fff; }
-
-.bk {
-  border-color: #000; }
-
-.bg {
-  border-color: #999; }
 
 /* =============================================================================
    Animation Classes | Etc [classesAnimations.scss]
@@ -1408,10 +1353,37 @@ ul.dotted li {
     left: 0;
     width: 7px;
     height: 7px;
-    background-image: url("/tegnomuebles/img/bullet_circle.svg");
+    background-image: url("/nuevo/img/bullet_circle.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 7px; }
+
+ul.fileList li {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 30px;
+  padding-top: 5px;
+  padding-left: calc(30px + 2px); }
+  ul.fileList li a {
+    height: auto;
+    min-height: 30px;
+    line-height: 1.3em; }
+  ul.fileList li::before {
+    width: 30px;
+    height: 30px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 30px; }
+
+ul.fileList.filePDF li::before {
+  background-image: url("/nuevo/img/file_pdf.svg"); }
+
+ul.fileList.fileDOC li {
+  background-image: url("/nuevo/img/file_pdf.svg"); }
 
 .ulResp2 > li a, .ulResp3 > li a, .ulResp4 > li a {
   position: relative; }
@@ -1592,6 +1564,7 @@ ul.dotted li {
         top: 0;
         left: 0;
         width: calc(70vw - 5px);
+        max-width: 300px;
         height: calc(50px + 50px + 10px);
         background-color: #fff;
         padding-top: 50px;
@@ -1627,11 +1600,17 @@ ul.dotted li {
 #footer .googleAddress a {
   font-size: 1.1rem;
   line-height: 1.2em; }
-  #footer .googleAddress a:focus, #footer .googleAddress a:hover {
-    text-decoration: underline; }
 
 #footer .logoF {
   width: 100px; }
+
+@media (max-width: 1023px) {
+  #footer .googleAddress a {
+    text-decoration: underline; } }
+
+@media (min-width: 1024px) {
+  #footer .googleAddress a:focus, #footer .googleAddress a:hover {
+    text-decoration: underline; } }
 
 /* =============================================================================
    Nav Settings | Etc [settingsNav.scss]
@@ -1639,6 +1618,9 @@ ul.dotted li {
 nav .topLevelItem,
 nav .current a {
   cursor: default; }
+
+nav li:focus a, nav li:hover a {
+  text-decoration: none; }
 
 .navMain {
   z-index: 1000; }
@@ -1683,7 +1665,7 @@ nav .current a {
         box-sizing: border-box;
         left: calc(-1 * 70vw);
         width: calc(70vw - 5px);
-        max-width: 70vw;
+        max-width: 300px;
         background-color: #fff;
         padding-top: calc(calc(50px + 50px + 10px) + 5px);
         padding-right: 5px;
@@ -1734,7 +1716,7 @@ nav .current a {
           .navMain > ul > li.current:focus, .navMain > ul > li.current:hover {
             background-color: transparent; }
             .navMain > ul > li.current:focus > a, .navMain > ul > li.current:focus .topLevelItem, .navMain > ul > li.current:hover > a, .navMain > ul > li.current:hover .topLevelItem {
-              color: #333333; }
+              color: #000; }
     .navMain.topper {
       border-bottom: 1px solid #666;
       position: fixed;
@@ -1784,7 +1766,19 @@ nav .current a {
         line-height: 45px; }
       .navMain > ul li a, .navMain > ul li .topLevelItem {
         font-size: 1rem;
-        text-align: center; } }
+        text-align: center; }
+      .navMain > ul li.volver .topLevelItem {
+        background-image: url("/nuevo/img/nav_arrowL.svg"); }
+      .navMain > ul li.volver {
+        border-bottom: #fff solid 2px; }
+        .navMain > ul li.volver + .volver {
+          border-color: #666 transparent #fff;
+          border-width: 1px 0 2px;
+          border-style: solid; }
+        .navMain > ul li.volver .topLevelItem {
+          color: #fff !important; }
+          .navMain > ul li.volver .topLevelItem.open {
+            background-image: url(/nuevo/img/nav_arrowD.svg); } }
 
 @media (min-width: 768px) {
   .navMain .mainMenu > li.current a, .navMain .mainMenu > li.current .topLevelItem {
