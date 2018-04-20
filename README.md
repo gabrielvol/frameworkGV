@@ -1,90 +1,17 @@
-# GV Framework 03
-
-#### NPM Setup
-* npm install 
-* npm install gulp 
-* npm install gulp-sass 
-* npm install gulp-autoprefixer 
-* npm install gulp-cssnano
-* npm install gulp-postcss 
-***
-
-***
-# NombreDelProyecto
-###### Janus Comunicación  
-***
-
-#### Datos FTP
-`http://www.sitioweb.com.ar/`  
-`000.000.000.00`
-
-Usuario
-`user`
-
-Contraseña
-`pass`  
+# Framework GV
+###### Gabriel Volonte
 ***
 
 
-#### Panel de control
-`http://www.sitioweb.com.ar/cpanel`
+#### Licencia
+ISC  
 
-Usuario 
-`user`
+URL:
+`https://opensource.org/licenses/ISC`  
 
-Contraseña
-`pass`  
-***
+Descripción:
+`Se otorga permiso para usar, copiar, modificar y / o distribuir este software para cualquier propósito con o sin cargo, siempre que el aviso de copyright anterior y este aviso de permiso aparezcan en todas las copias.`  
 
-
-#### Datos FTP Alternativos
-`http://www.sitioweb.com.ar/`
-
-Usuario
-`user`
-
-Contraseña
-`pass`  
-***
-
-
-#### DNS y Contacto
-ToWebs
-
-DNS 1
-`ns1.hosting.com (000.000.000.000)`
-
-DNS 2
-`ns2.hosting.com (000.000.000.000)`
-
-Contacto técnico
-`Nombre` 
-
-Teléfono
-`12345678`
-
-Correo
-`info@correo.com`  
-***
-
-
-#### Google Account
-`https://www.google.com/business/`
-
-Usuario
-`user`
-
-Contraseña
-`pass`  
-***
-
-
-#### WordPress access
-`http://www.sitio.com.ar/wp-admin`
-
-Usuario
-`user`
-
-Contraseña
-`pass`  
+Description:
+`Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.`  
 ***
