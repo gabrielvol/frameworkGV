@@ -119,7 +119,7 @@
 /* =============================================================================
    After Mobile Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include afterMobileLandscape{    
+@include afterMobileLandscape{
     @if $stylesPosSizingDisplayAML == "on"{
         //Positioning
         .pRelAML{position: relative}
@@ -233,7 +233,7 @@
 /* =============================================================================
    Mobile Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include mobileLandscapeOnly{    
+@include mobileLandscapeOnly{
     @if $stylesPosSizingDisplayMLO == "on"{
         //Positioning
         .pRelMLO{position: relative}
@@ -804,7 +804,7 @@
 /* =============================================================================
    After Tablet Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include afterTabletLandscape{    
+@include afterTabletLandscape{
     @if $stylesPosSizingDisplayATL == "on"{
         //Positioning
         .pRelATL{position: relative}
@@ -918,7 +918,7 @@
 /* =============================================================================
    Tablet Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@include tabletLandscapeOnly{    
+@include tabletLandscapeOnly{
     @if $stylesPosSizingDisplayTLO == "on"{
         //Positioning
         .pRelTLO{position: relative}
@@ -1026,6 +1026,120 @@
         .flexAlignItemsBaselineTLO{align-items: baseline}
         .flexAlignItemsStretchTLO{align-items: stretch}
         .flexHorizontalTLO{list-style: $none}
+    }
+}
+
+/* =============================================================================
+   Tablet And Tablet Landscape Only Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+@include tabletAndTabletLandscapeOnly{    
+    @if $stylesPosSizingDisplayTTLO == "on"{
+        //Positioning
+        .pRelTTLO{position: relative}
+        .pAbsTTLO{position: absolute}
+        .clearTTLO{clear: both}
+
+        //Sizing
+        .fullWidthTTLO{width: $hundred}
+        .halfWidthTTLO{width: $half}
+        .autoWidthTTLO{width: $auto}
+        .autoHeightTTLO{height: $auto}
+
+        //Display
+        .displayInlineTTLO{display: $inline}
+        .displayInlineBlockTTLO{display: $inlineBlock}
+        .displayBlockTTLO, .showTTLO{display: $block}
+        .displayNoneTTLO, .hideTTLO{display: $none}
+        .contentBoxTTLO{box-sizing: content-box}
+        .borderBoxTTLO{box-sizing: border-box}
+    }
+    
+    @if $stylesListsFloatsTTLO == "on"{
+        //Lists and floats    
+        .unstyledTTLO, .horizontalTTLO, .hyphenatedTTLO{list-style: $none}
+        .floatLeftTTLO, .horizontalTTLO li{float: $left}
+        .floatRightTTLO, .horizontalTTLO li.floatRight,
+        .horizontalTTLO.right li{float: $right}
+        .horizontalCenterTTLO{
+            margin-right: $auto;
+            margin-left: $auto;    
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline;
+                > *{
+                    display: inline-block;            
+                }
+            }
+        }
+        .floatNoneTTLO, .unstyledTTLO li{float: $none}
+    }
+    
+    @if $stylesTextTTLO == "on"{
+        //Text
+        .fontSizeResetTTLO{font-size: $fontSizeReset!important}
+        .lineHeightResetTTLO{line-height: $lineHeightReset!important}
+        .indentedTextTTLO{text-indent: -9999px}
+        .alignLeftTTLO{text-align: left}
+        .alignRightTTLO{text-align: right}
+        .alignCenterTTLO{text-align: center}
+        .alignJustifyTTLO{text-align: justify}
+        .alignJustifyCenterTTLO{
+            text-align: justify;
+            text-align-last: center;
+        }
+        .upperCaseTTLO{text-transform: uppercase}
+    }
+        
+    @if $stylesBackgroundsBanTTLO == "on"{
+        //Backgrounds, border and images    
+        .banTTLO{border: $none}
+        .bgNoneTTLO{
+            &, &:focus, &:hover{
+                background: $none;
+            }
+        }
+        .bgTransparentTTLO{background-color: $transparent}
+        .bgNoImageTTLO{background-image: $none}
+    }
+    
+    @if $stylesSpacingTTLO == "on"{
+/* =============================================================================
+   Tablet Landscape Only Spacing Helpers | Etc [classesResponsive.scss]
+   ========================================================================== */
+        @include spacingHelpersClassesGeneratorTTLO;
+        .mraTTLO,.mhaTTLO{margin-right: $auto}
+        .mlaTTLO,.mhaTTLO{margin-left: $auto}
+    }
+    
+    @if $stylesFlexboxTTLO == "on"{
+/* =============================================================================
+   Tablet Landscape Only Flexbox Classes | Etc [classesResponsive.scss]
+   ========================================================================== */ 
+        .displayFlexTTLO, .flexHorizontalTTLO, .flexColumnTTLO, .flexNoWrapTTLO, .flexJustifyEndTTLO, .flexJustifyCenterTTLO, .flexJustifyBetweenTTLO, .flexJustifyAroundTTLO, .flexAlignContentEndTTLO, .flexAlignContentCenterTTLO, .flexAlignContentBetweenTTLO, .flexAlignContentAroundTTLO, .flexAlignContentStretchTTLO, .flexAlignItemsEndTTLO, .flexAlignItemsCenterTTLO, .flexAlignItemsBaselineTTLO, .flexAlignItemsStretchTTLO, .horizontalCenterFlexTTLO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnTTLO{flex-direction: column}
+        .flexNoWrapTTLO{flex-wrap: nowrap}
+        .flexJustifyEndTTLO{justify-content: flex-end}
+        .flexJustifyCenterTTLO{justify-content: center}
+        .flexJustifyBetweenTTLO{justify-content: space-between}
+        .flexJustifyAroundTTLO{justify-content: space-around}
+        .flexAlignContentEndTTLO{align-content: flex-end}
+        .flexAlignContentCenterTTLO{align-content: center}
+        .flexAlignContentBetweenTTLO{align-content: space-between}
+        .flexAlignContentAroundTTLO{align-content: space-around}
+        .flexAlignContentStretchTTLO{align-content: stretch}
+        .flexAlignItemsEndTTLO{align-items: flex-end}
+        .flexAlignItemsCenterTTLO{align-items: center}
+        .flexAlignItemsBaselineTTLO{align-items: baseline}
+        .flexAlignItemsStretchTTLO{align-items: stretch}
+        .flexHorizontalTTLO{list-style: $none}
     }
 }
 
