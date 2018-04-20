@@ -122,6 +122,18 @@
         .ml#{$shClassName}TLO, .mh#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-left: $shValue;}
     }
 }
+@mixin spacingHelpersClassesGeneratorTTLO{
+    @each $shClassName, $shValue in $spacingHelpersMap {
+        .pt#{$shClassName}TTLO, .pv#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-top: $shValue;}
+        .pr#{$shClassName}TTLO, .ph#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-right: $shValue;}
+        .pb#{$shClassName}TTLO, .pv#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-bottom: $shValue;}
+        .pl#{$shClassName}TTLO, .ph#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-left: $shValue;}
+        .mt#{$shClassName}TTLO, .mv#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-top: $shValue;}
+        .mr#{$shClassName}TTLO, .mh#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-right: $shValue;}
+        .mb#{$shClassName}TTLO, .mv#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-bottom: $shValue;}
+        .ml#{$shClassName}TTLO, .mh#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-left: $shValue;}
+    }
+}
 @mixin spacingHelpersClassesGeneratorBD{
     @each $shClassName, $shValue in $spacingHelpersMap {
         .pt#{$shClassName}BD, .pv#{$shClassName}BD, .pa#{$shClassName}BD{padding-top: $shValue;}
