@@ -10,20 +10,20 @@ $(document).ready(function () {
     // Hamburger Drawer
     $('.navOpen').click(function () {
         $(this).addClass('clicked');
-        $(this).closest('#nav').find('.mainMenu').addClass('open');
         $(this).closest('#header').find('.social').addClass('clicked');
+        $(this).closest('#nav').find('.mainMenu').addClass('open');
         $(this).closest('#nav').find('.modalNav').show( '2000', 'swing', function() {
-            $(this).closest('#nav').find('.navClose').addClass('clicked');
             $(this).closest('#header').find('.logoH').addClass('clicked');
             $(this).closest('#header').find('.lang').addClass('clicked');
+            $(this).closest('#nav').find('.navClose').addClass('clicked');
         });
         $(this).attr('aria-pressed', 'true');
     });
 
     $('.navClose').click(function () {
         $(this).removeClass('clicked');
-        $(this).closest('#header').find('.social').removeClass('clicked');
         $(this).closest('#header').find('.logoH').removeClass('clicked');
+        $(this).closest('#header').find('.social').removeClass('clicked');
         $(this).closest('#header').find('.lang').removeClass('clicked');
         $(this).closest('#nav').find('.modalNav').hide('fast', 'swing');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
@@ -38,11 +38,11 @@ $(document).ready(function () {
     });
 
     $('.modalNav').click(function () {
-        $(this).closest('#nav').find('.navClose').removeClass('clicked');
-        $(this).closest('#header').find('.social').removeClass('clicked');
         $(this).closest('#header').find('.logoH').removeClass('clicked');
+        $(this).closest('#header').find('.social').removeClass('clicked');
         $(this).closest('#header').find('.lang').removeClass('clicked');
         $(this).hide('fast');
+        $(this).closest('#nav').find('.navClose').removeClass('clicked');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
         $(this).closest('#nav').find('.subMenu').removeClass('open');
         $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
