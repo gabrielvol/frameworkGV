@@ -52,7 +52,9 @@
                 @include equalHeightAndLineHeight(60px);
             }
 
-            a, .topLevelItem{                
+            a, .topLevelItem{
+                @include transition(1s);
+                
                 &:focus, &:hover{
                     @if $navTextItemWhite{
                         text-shadow: 0 0 3px $black;

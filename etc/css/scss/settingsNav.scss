@@ -194,7 +194,6 @@ nav{
                 background: $bgNavItemAT;
 
                 a, .topLevelItem{
-                    @include transition(1s);
                     color: $navFontColourAT;
                 }    
 
