@@ -1,3 +1,5 @@
+<?php $navItemInicio = ($navCurrent == 0)? "displayNone" : ""; ?>
+
 <li class="displayNoneAT <?php if($navCurrent == 0) { echo 'displayNone'; } ?>">
     <a href="/nuevo/" class="displayBlockBT borderBox" <?php if($navCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
