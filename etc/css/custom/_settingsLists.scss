@@ -1,79 +1,80 @@
 /* =============================================================================
    Settings Lists | Custom [settingsLists.scss]
    ========================================================================== */
-ul{
-    &.hyphenated{
-        li{        
-            position: relative;
-            
-            &::before{
-                content: "- ";
-            }
-        }
-    }    
-    &.dotted{
-        li{        
-            box-sizing: border-box;
-            position: relative;
-            padding-left: 15px;
-        
-            &::before{
-                content: "";
-                position: absolute;
-                top: 5px;
-                left: 0;
-                width: 7px;
-                height: 7px;
-                background-image: url('/nuevo/img/bullet_circle.svg');
-                background-repeat: no-repeat;
-                background-position: left top;
-                background-size: 7px;
-            }
+.hyphenated{
+    li{        
+        position: relative;
+
+        &::before{
+            content: "- ";
         }
     }
-    &.fileList{
-        li{  
-            $icSize: 30px;
-            
-            box-sizing: border-box;
-            position: relative;
+}    
+
+.dotted{
+    li{        
+        box-sizing: border-box;
+        position: relative;
+        padding-left: 15px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 7px;
+            height: 7px;
+            background-image: url('/nuevo/img/bullet_circle.svg');
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: 7px;
+        }
+    }
+}
+
+.fileList{
+    li{  
+        $icSize: 30px;
+
+        box-sizing: border-box;
+        position: relative;
+        min-height: $icSize;
+        padding-top: 5px;  
+        padding-left: calc(#{$icSize} + 2px);
+
+        a{
+            height: auto;
             min-height: $icSize;
-            padding-top: 5px;  
-            padding-left: calc(#{$icSize} + 2px);
-        
-            a{
-                height: auto;
-                min-height: $icSize;
-                line-height: 1.3em;
-            }
-        
+            line-height: 1.3em;
+        }
+
+        &::before{
+            @include squareSize($icSize);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: auto $icSize;
+        }
+    }
+
+    &.filePDF{
+        li{
             &::before{
-                @include squareSize($icSize);
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-repeat: no-repeat;
-                background-position: left top;
-                background-size: auto $icSize;
-            }
-        }
-        
-        &.filePDF{
-            li{
-                &::before{
-                    background-image: url('/nuevo/img/file_pdf.svg');
-                }
-            }
-        }
-        
-        &.fileDOC{
-            li{
                 background-image: url('/nuevo/img/file_pdf.svg');
             }
         }
     }
+
+    &.fileDOC{
+        li{
+            background-image: url('/nuevo/img/file_pdf.svg');
+        }
+    }
 }
+    
 .ulResp2 > li, .ulResp3 > li, .ulResp4 > li{
     a{
         position: relative;
