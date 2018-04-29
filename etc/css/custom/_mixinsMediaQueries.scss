@@ -2,8 +2,8 @@
    Media Queries Variables | Custom [mixinsMediaQueries.scss]
    ========================================================================== */
 $iPhone6Min: 375px;
-$mobileMax: 420px;
-$mobileLMin: 421px;
+$mobileMax: 499px;
+$mobileLMin: 501px;
 $mobileLMax: 767px;
 $tabletMin: 768px;
 $tabletPMax: 1023px;
@@ -55,28 +55,6 @@ $desktopLargeMin: 1600px;
 @mixin tabletAndTabletLandscapeOnly{
     @media (min-width: #{$tabletMin})
         and (max-width: #{$tabletMax}){@content;}}
-
-/* 500 */
-@mixin beforeMobile500{
-    @media (max-width: 500px){@content;}}
-    
-@mixin afterMobile500{
-    @media (min-width: 501px){@content;}}
-    
-@mixin mobile500Only{
-    @media (min-width: 501px)
-        and (max-width: #{$mobileLMax}){@content;}}
-
-/* 550 */
-@mixin beforeMobile550{
-    @media (max-width: 550px){@content;}}
-    
-@mixin afterMobile550{
-    @media (min-width: 551px){@content;}}
-    
-@mixin mobile550Only{
-    @media (min-width: 551px)
-        and (max-width: #{$mobileLMax}){@content;}}
     
 /* 600 */
 @mixin beforeMobile600{
