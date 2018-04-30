@@ -82,6 +82,7 @@ nav{
             ul{
                 z-index: $zIndexNavUlDrawer;
                 position: fixed; 
+                margin: $zero;
                 
                 &, .subMenu{
                     @include transition(0.5s); 
