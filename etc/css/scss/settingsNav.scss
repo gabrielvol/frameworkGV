@@ -79,10 +79,8 @@ nav{
                 } 
             }
             
-            > ul{
+            ul{
                 z-index: $zIndexNavUlDrawer;
-                position: fixed; 
-                margin: $zero;
                 
                 &, .subMenu{
                     @include transition(0.5s); 
@@ -141,6 +139,11 @@ nav{
                         @include borderStyleT($bcNavItemBT);
                     }  
                 }
+                
+                &, .subMenu{
+                    top: 0;
+                    bottom: 0;
+                }    
                 
                 &.open{
                     left: 0;
