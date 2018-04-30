@@ -79,7 +79,7 @@ nav{
                 } 
             }
             
-            ul{
+            > ul{
                 z-index: $zIndexNavUlDrawer;
                 position: fixed; 
                 margin: $zero;
