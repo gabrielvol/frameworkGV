@@ -91,6 +91,7 @@ nav{
 
             > ul{
                 box-sizing: border-box;
+                position: fixed;
                 left: calc(-1 * #{$navDrawerWidth});
                 width: calc(#{$navDrawerWidth} - 5px);
                 max-width: $navDrawerMaxWidth;
