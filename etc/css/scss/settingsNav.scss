@@ -188,7 +188,7 @@ nav{
     @include afterTablet{
         @if $navDrawer == "on"{
             .navClose{ 
-                display: $none;             
+                display: $none;
             }
         }
         
@@ -230,7 +230,7 @@ nav{
             
         @if $navHasSub == "on"{            
             .subMenu{
-                display: block;
+                display: $none;
                 
                 li{                        
                     @include transition(1s);
@@ -302,7 +302,7 @@ nav{
             @if $navHasSub == "on"{
                 .subMenu{
                     &.openSubTO{
-                        display: block;
+                        display: $block;
                     }
                 }
             }
@@ -311,11 +311,7 @@ nav{
     
     @include afterDesktop{
         @if $navHasSub == "on"{
-            .hasSub{
-                .subMenu{
-                    display: none;
-                }
-                
+            .hasSub{                
                 &:focus, &:hover{
                     ul{
                         display: $block;

@@ -132,6 +132,8 @@
         }
     }
     
+    @include tabletOnly{}
+    
     @include afterTabletLandscape{
         .mainMenu{}
         
