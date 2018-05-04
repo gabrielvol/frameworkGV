@@ -38,7 +38,7 @@ Contraseña
 
 
 #### DNS y Contacto
-ToWebs
+AgenciaDeHosting
 
 DNS 1
 `ns1.hosting.com (000.000.000.000)`
