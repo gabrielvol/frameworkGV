@@ -1,0 +1,27 @@
+/* =============================================================================
+   Gettext en_GB -- Error
+   ========================================================================== */
+
+<?php echo _("P&aacute;gina no encontrada"); ?>
+msgid "P&aacute;gina no encontrada"
+msgstr "Page not found"
+
+<?php echo _("Error 404"); ?>
+msgid "Error 404"
+msgstr "404 Error"
+
+<?php echo _("Puede continuar navegando el sitio yendo a la"); ?>
+msgid "Puede continuar navegando el sitio yendo a la"
+msgstr "You can go to the"
+
+<?php echo _("p&aacute;gina inicial del sitio"); ?>
+msgid "p&aacute;gina inicial del sitio"
+msgstr "home page"
+
+<?php echo _(", o a nuestra"); ?>
+msgid ", o a nuestra"
+msgstr ", or visit the"
+
+<?php echo _("p&aacute;gina de contacto"); ?>
+msgid "p&aacute;gina de contacto"
+msgstr "contact page"
