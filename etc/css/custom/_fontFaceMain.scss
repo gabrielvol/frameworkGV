@@ -6,8 +6,9 @@
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url('/path/to/fonts/examplefont.woff') format('woff'),
-         url('/path/to/fonts/examplefont.eot') format('eot');
+    src: url('/pathtofonts/examplefont.woff2') format('woff2'),
+         url('/pathtofonts/examplefont.woff') format('woff'),
+         url('/pathtofonts/examplefont.eot') format('eot');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
