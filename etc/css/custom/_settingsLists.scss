@@ -13,6 +13,8 @@
 
 .dotted, .square{
     li{        
+        $bulletSize: 7px;
+        
         box-sizing: border-box;
         position: relative;
         padding-left: 15px;
@@ -23,10 +25,10 @@
             top: 5px;
             left: 0;
             width: 7px;
-            height: 7px;
+            height: $bulletSize
             background-repeat: no-repeat;
             background-position: left top;
-            background-size: 7px;
+            background-size: $bulletSize;
         }
     }
 }    
