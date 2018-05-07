@@ -51,16 +51,16 @@ $formSubmitWidthATL: 300px;
 $formSubmitWidthAD:  $formSubmitWidthATL;
 
 $formSubmitHeightValueBT: 50px;
-$formSubmitLineHeightValueBT: 50px;
+$formSubmitLineHeightValueBT: $formSubmitHeightValueBT;
 
 $formSubmitHeightValueTO: 45px;
-$formSubmitLineHeightValueTO: 45px;
+$formSubmitLineHeightValueTO: $formSubmitHeightValueTO;
 
 $formSubmitHeightValueATL: 35px;
-$formSubmitLineHeightValueATL: 35px;
+$formSubmitLineHeightValueATL: $formSubmitHeightValueATL;
 
 $formSubmitHeightValueAD: $formSubmitHeightValueATL;
-$formSubmitLineHeightValueAD: $formSubmitLineHeightValueATL;
+$formSubmitLineHeightValueAD: $formSubmitHeightValueAD;
 
     //Search Form
 $searchFormWidthBT: 270px;
