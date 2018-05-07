@@ -54,7 +54,7 @@ nav{
             .navOpen{
                 z-index: $zIndexNavOpen;  
                 opacity: 1;
-                background-image: url('/img/nav_hamb.svg');
+                background-image: url('/nuevo/img/nav_hamb.svg');
                 background-repeat: no-repeat;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
@@ -70,7 +70,7 @@ nav{
                 z-index: $zIndexNavClose;  
                 display: none;            
                 background-color: $bgWhite;
-                background-image: url('/img/nav_close.svg');
+                background-image: url('/nuevo/img/nav_close.svg');
                 background-repeat: no-repeat;
                 background-position: center center; 
                 
@@ -122,12 +122,12 @@ nav{
                         background-position: 10px center;
 
                         &.open{
-                            background-image: url('/img/nav_arrowD.svg');
+                            background-image: url('/nuevo/img/nav_arrowD.svg');
                         }
                     }
                     
                     &.current{
-                        background-image: url('/img/nav_arrowL.svg');
+                        background-image: url('/nuevo/img/nav_arrowL.svg');
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
