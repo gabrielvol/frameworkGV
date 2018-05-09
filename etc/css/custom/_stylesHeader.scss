@@ -22,10 +22,17 @@
         }
     }
     
-    @include mobileLandscapeOnly{        
+    @include afterMobileLandscape{        
         .logoH{
             &, a, img{
                 width: 150px;
+            }
+        }
+    } 
+    
+    @include mobileLandscapeOnly{        
+        .logoH{
+            &, a, img{
             }
         }
     }
