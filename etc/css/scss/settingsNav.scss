@@ -54,7 +54,7 @@ nav{
             .navOpen{
                 z-index: $zIndexNavOpen;  
                 opacity: 1;
-                background-image: url('/nuevo/img/nav_hamb.svg');
+                background-image: url('/clientes/hibot/img/nav_hamb.svg');
                 background-repeat: no-repeat;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
@@ -70,7 +70,7 @@ nav{
                 z-index: $zIndexNavClose;  
                 display: none;            
                 background-color: $bgWhite;
-                background-image: url('/nuevo/img/nav_close.svg');
+                background-image: url('/clientes/hibot/img/nav_close.svg');
                 background-repeat: no-repeat;
                 background-position: center center; 
                 
@@ -122,12 +122,12 @@ nav{
                         background-position: 10px center;
 
                         &.open{
-                            background-image: url('/nuevo/img/nav_arrowD.svg');
+                            background-image: url('/clientes/hibot/img/nav_arrowD.svg');
                         }
                     }
                     
                     &.current{
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
+                        background-image: url('/clientes/hibot/img/nav_arrowL.svg');
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
@@ -228,7 +228,7 @@ nav{
             }
         }
             
-        @if $navHasSub == "on"{            
+        @if $navHasSub == "on"{
             .subMenu{
                 display: $none;
                 
@@ -280,6 +280,20 @@ nav{
            
             .hamb{
                 display: $none;
+            }
+            
+            .mainMenu{
+                > li{
+                    a, .topLevelItem{
+                        color: $navFontColourTopper;
+                    }
+
+                    &:focus, &:hover{                        
+                        > a, .topLevelItem{
+                            color: $navFontColourTopperHover;
+                        }  
+                    }  
+                }
             }
             
             @if $navHasSub == "on"{
