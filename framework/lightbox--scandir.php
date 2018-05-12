@@ -34,8 +34,8 @@
             ?>
         </ul>
     </div>
-    <script type="text/javascript" src="/framework/js/lightbox.min.js"></script>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
+    <script type="text/javascript" src="/framework/js/lightbox.min.js"></script>
     <script type="text/javascript">
         lightbox.option({
             'resizeDuration': 1000,
