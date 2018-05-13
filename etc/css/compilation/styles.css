@@ -96,8 +96,6 @@
 /* Mobile */
 /* Tablet */
 /* Tablet Landscape*/
-/* 500 */
-/* 550 */
 /* 600 */
 /* 650 */
 /* 700 */
@@ -262,15 +260,16 @@ html input[type="button"] {
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url('/path/to/fonts/examplefont.woff') format('woff'),
-         url('/path/to/fonts/examplefont.eot') format('eot');
+    src: url('/pathtofonts/examplefont.woff2') format('woff2'),
+         url('/pathtofonts/examplefont.woff') format('woff'),
+         url('/pathtofonts/examplefont.eot') format('eot');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 */
 /* =============================================================================
-   Font Settings | Etc [settingsFonts.scss]
+   Font Settings | Etc [settingsText.scss]
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, select, textarea, blockquote, table {
   font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
@@ -1114,6 +1113,9 @@ article, article::before, article::after, details, details::before, details::aft
    Tablet Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 /* =============================================================================
+   Tablet And Tablet Landscape Only Classes | Etc [classesResponsive.scss]
+   ========================================================================== */
+/* =============================================================================
    Before Desktop Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 /* =============================================================================
@@ -1131,10 +1133,10 @@ article, article::before, article::after, details, details::before, details::aft
     display: table; }
   .container::after {
     clear: both; }
-  @media (max-width: 420px) {
+  @media (max-width: 499px) {
     .container {
       width: 300px; } }
-  @media (min-width: 421px) {
+  @media (min-width: 500px) {
     .container {
       width: 85%; } }
   @media (min-width: 768px) {
@@ -1149,12 +1151,12 @@ article, article::before, article::after, details, details::before, details::aft
   @media (min-width: 1600px) {
     .container {
       width: 1000px; } }
-  @media (max-width: 420px) {
+  @media (max-width: 499px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 421px) {
+  @media (min-width: 500px) {
     .container.centerAbs {
       position: absolute;
       left: 50%;
@@ -1179,12 +1181,12 @@ article, article::before, article::after, details, details::before, details::aft
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (max-width: 420px) {
+  @media (max-width: 499px) {
     .container.centerAbsMO {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 421px) {
+  @media (min-width: 500px) {
     .container.centerAbsAML {
       position: absolute;
       left: 50%;
@@ -1286,7 +1288,7 @@ article, article::before, article::after, details, details::before, details::aft
     background-color: #c6c6c6;
     border-color: #333;
     color: #666; }
-  @media (max-width: 420px) {
+  @media (max-width: 499px) {
     .callToAction {
       width: 100% !important; } }
   @media (max-width: 767px) {
@@ -1309,11 +1311,23 @@ article, article::before, article::after, details, details::before, details::aft
    Internas Global Styles | Custom
    ========================================================================== */
 /* =============================================================================
+   Error Pages Styles | Custom [stylesError.scss]
+   ========================================================================== */
+.errorPage .errorType {
+  font-size: 0.8rem;
+  text-transform: uppercase; }
+
+/* =============================================================================
    Colour Placeholders | Custom [coloursPlaceholders.scss]
    ========================================================================== */
 /* =============================================================================
    Gradient Colours | Custom [coloursGradients.scss]
    ========================================================================== */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
+.bgGradWhiteFifty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
 .bgGradWhiteEighty {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
@@ -1337,38 +1351,43 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Settings Lists | Custom [settingsLists.scss]
    ========================================================================== */
-ul.hyphenated li {
+.hyphenated li {
   position: relative; }
-  ul.hyphenated li::before {
+  .hyphenated li::before {
     content: "- "; }
 
-ul.dotted li {
+.dotted li, .square li {
   box-sizing: border-box;
   position: relative;
   padding-left: 15px; }
-  ul.dotted li::before {
+  .dotted li::before, .square li::before {
     content: "";
     position: absolute;
     top: 5px;
     left: 0;
     width: 7px;
     height: 7px;
-    background-image: url("/nuevo/img/bullet_circle.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 7px; }
 
-ul.fileList li {
+.dotted li::before {
+  background-image: url("/nuevo/img/bullet_circle.svg"); }
+
+.square li::before {
+  background-image: url("/nuevo/img/bullet_square.svg"); }
+
+.fileList li {
   box-sizing: border-box;
   position: relative;
   min-height: 30px;
   padding-top: 5px;
   padding-left: calc(30px + 2px); }
-  ul.fileList li a {
+  .fileList li a {
     height: auto;
     min-height: 30px;
     line-height: 1.3em; }
-  ul.fileList li::before {
+  .fileList li::before {
     width: 30px;
     height: 30px;
     content: "";
@@ -1379,10 +1398,10 @@ ul.fileList li {
     background-position: left top;
     background-size: auto 30px; }
 
-ul.fileList.filePDF li::before {
+.fileList.filePDF li::before {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
-ul.fileList.fileDOC li {
+.fileList.fileDOC li {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
 .ulResp2 > li a, .ulResp3 > li a, .ulResp4 > li a {
@@ -1392,14 +1411,14 @@ ul.fileList.fileDOC li {
   margin-right: auto !important;
   margin-left: auto !important; }
 
-@media (max-width: 420px) {
+@media (max-width: 499px) {
   .ulResp2 > li, .ulResp3 > li, .ulResp4 > li {
     width: 100%;
     float: none !important; }
     .ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
       width: 100%; } }
 
-@media (min-width: 421px) and (max-width: 767px) {
+@media (min-width: 500px) and (max-width: 767px) {
   .ulResp2 > li:nth-child(odd):last-child, .ulResp3 > li:nth-child(odd):last-child, .ulResp4 > li:nth-child(odd):last-child {
     clear: both;
     width: 100%;
@@ -1407,7 +1426,7 @@ ul.fileList.fileDOC li {
     margin-right: auto !important;
     margin-left: auto !important; } }
 
-@media (min-width: 421px) {
+@media (min-width: 500px) {
   .ulResp2 > li, .ulResp3 > li, .ulResp4 > li {
     width: 50%;
     padding: 0 10px; }
@@ -1522,11 +1541,11 @@ ul.fileList.fileDOC li {
   .popup.statusDiv .closePop {
     top: 10px;
     right: 10px; }
-  @media (max-width: 420px) {
+  @media (max-width: 499px) {
     .popup.statusDiv {
       width: 300px;
       margin-left: calc(calc(300px * -1) / 2); } }
-  @media (min-width: 421px) {
+  @media (min-width: 500px) {
     .popup.statusDiv {
       width: 60%;
       margin-left: calc(calc(60% * -1) / 2); } }
@@ -1542,14 +1561,14 @@ ul.fileList.fileDOC li {
   /*z-index: $zIndexHeader;*/ }
   #header .logoH {
     margin: 0 !important; }
-  @media (max-width: 420px) {
+  @media (max-width: 499px) {
     #header .logoH {
       width: 90%;
       margin-right: auto !important;
       margin-left: auto !important; }
       #header .logoH a, #header .logoH img {
         width: 100%; } }
-  @media (min-width: 421px) and (max-width: 767px) {
+  @media (min-width: 500px) {
     #header .logoH, #header .logoH a, #header .logoH img {
       width: 150px; } }
   @media (max-width: 767px) {
@@ -1655,14 +1674,14 @@ nav li:focus a, nav li:hover a {
         .navMain .navClose.clicked {
           display: block; }
       .navMain ul {
-        z-index: 9100;
-        position: fixed; }
+        z-index: 9100; }
         .navMain ul, .navMain ul .subMenu {
           transition: all 0.5s ease;
           top: 0;
           bottom: 0; }
       .navMain > ul {
         box-sizing: border-box;
+        position: fixed;
         left: calc(-1 * 70vw);
         width: calc(70vw - 5px);
         max-width: 300px;
@@ -1693,6 +1712,9 @@ nav li:focus a, nav li:hover a {
               color: #000; }
           .navMain > ul li + li {
             border-top: 1px solid #fff; }
+        .navMain > ul, .navMain > ul .subMenu {
+          top: 0;
+          bottom: 0; }
         .navMain > ul.open {
           left: 0; } }
   @media (min-width: 768px) {
@@ -1703,7 +1725,6 @@ nav li:focus a, nav li:hover a {
       .navMain > ul > li {
         background: transparent; }
         .navMain > ul > li a, .navMain > ul > li .topLevelItem {
-          transition: all 1s ease;
           color: #000; }
         .navMain > ul > li:focus, .navMain > ul > li:hover {
           background-color: transparent; }
@@ -1725,7 +1746,11 @@ nav li:focus a, nav li:hover a {
       width: 100%;
       background-color: #000; }
       .navMain.topper .hamb {
-        display: none !important; } }
+        display: none !important; }
+      .navMain.topper .mainMenu > li a, .navMain.topper .mainMenu > li .topLevelItem {
+        color: #000; }
+      .navMain.topper .mainMenu > li:focus > a, .navMain.topper .mainMenu > li:focus .topLevelItem, .navMain.topper .mainMenu > li:hover > a, .navMain.topper .mainMenu > li:hover .topLevelItem {
+        color: #000; } }
 
 /* =============================================================================
    Nav Styles | Custom [stylesNav.scss]
@@ -1786,12 +1811,14 @@ nav li:focus a, nav li:hover a {
   .navMain li, .navMain li a, .navMain li .topLevelItem {
     height: 60px;
     line-height: 60px; }
-  .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
-    text-shadow: 0 0 3px #000; }
+  .navMain li a, .navMain li .topLevelItem {
+    transition: all 1s ease; }
+    .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
+      text-shadow: 0 0 3px #000; }
   .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
     text-shadow: 0 0 0 transparent; }
   .navMain.topper .mainMenu {
-    width: 730px;
+    width: 750px;
     margin-right: auto !important;
     margin-left: auto !important;
     float: none !important;
