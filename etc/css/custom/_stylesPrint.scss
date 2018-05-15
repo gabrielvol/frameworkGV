@@ -13,7 +13,8 @@
     @page :right {
         margin-left: 3cm;
     }
-
+    
+    body > *:not(main),
     nav, footer{
         display: $none;
     }
@@ -29,13 +30,11 @@
             text-decoration: underline;
         }
         
-        &[href]{                   
-            &::after{
-                @include equalHeightAndLineHeight(30px);
-                content: "(" attr(href) ")";
-                font-family: monospace;
-            }
-        } 
+        &[href^="http"]:not([href*="example.com"]):after {
+            @include equalHeightAndLineHeight(30px);
+            content: "(" attr(href) ")";
+            font-family: monospace;
+        }
     }
     
     pre,
@@ -53,5 +52,13 @@
     h2,
     h3 {
         page-break-after: avoid;
+    }
+    
+    .googleMap {
+        width: 400px;
+        height: 300px;
+        background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true')
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
