@@ -2,5 +2,33 @@
    Print Styles | Custom [stylesPrint.scss]
    ========================================================================== */
 @media print {
+    @page{
+        margin: 2cm;
+    }
 
+    @page :left {
+        margin-right: 3cm;
+    }
+
+    @page :right {
+        margin-left: 3cm;
+    }
+
+    nav, footer{
+        display: $none;
+    }
+    
+    .logoH{
+        display: block;
+        height: 3cm;
+        margin: 10px auto 20px;
+    }
+    
+    a[href]{                   
+        &::after{
+            @include equalHeightAndLineHeight(30px);
+            content: "(" attr(href) ")";
+            font-family: monospace;
+        }
+    }
 }
