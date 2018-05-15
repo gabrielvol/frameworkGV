@@ -7,6 +7,9 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, i
 iframe{
     border: $none;
 }
+audio, canvas, iframe, img, svg, video{
+    vertical-align: middle;
+}
 audio, canvas, progress, video{
     *display: inline;
     *zoom: 1;
@@ -36,6 +39,16 @@ a{
     &, &:hover{
         text-decoration: none;
     }
+    
+}
+    //Horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $bcGrey;
+    margin: 1em 0;
+    padding: 0;
 }
 
     //Images
