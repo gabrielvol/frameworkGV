@@ -66,3 +66,14 @@ html input[type="button"]{
 button{}
 button::focus-inner{}
 input::focus-inner{}
+
+    // Selection
+::-moz-selection {
+    background-color: $bgSelection;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $bgSelection;
+    text-shadow: none;
+}
