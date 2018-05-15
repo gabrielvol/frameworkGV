@@ -248,6 +248,7 @@ form{
     textarea{
         padding: $paddingMarginMediumValue;
         vertical-align: top;
+        resize: vertical;
     }
     
     .mobileForm &{
