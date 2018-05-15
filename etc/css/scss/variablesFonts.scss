@@ -62,14 +62,14 @@ $fontFamiliesListSerif:
     map-get($fontFamiliesMapSerif, serif)
 ;
     
-    //Monospaced Stack
+    //monospace Stack
 $fontFamiliesMapMono:(
     consolas: 'Consolas',
     andaleMono: 'Andale Mono',
     lucidaConsole: 'Lucida Console',
     bitstreamVeraSansMono: 'Bitstream Vera Sans Mono',
     courierNew: 'Courier New',
-    monospaced: monospaced
+    monospace: monospace
 );
     
 $fontFamiliesListMono:
@@ -78,7 +78,7 @@ $fontFamiliesListMono:
     map-get($fontFamiliesMapMono, lucidaConsole),
     map-get($fontFamiliesMapMono, bitstreamVeraSansMono),
     map-get($fontFamiliesMapMono, courierNew),
-    map-get($fontFamiliesMapMono, monospaced)
+    map-get($fontFamiliesMapMono, monospace)
 ;
 
     //Font Sizes
