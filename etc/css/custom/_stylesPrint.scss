@@ -24,11 +24,34 @@
         margin: 10px auto 20px;
     }
     
-    a[href]{                   
-        &::after{
-            @include equalHeightAndLineHeight(30px);
-            content: "(" attr(href) ")";
-            font-family: monospace;
+    a{
+        &, &:visited {
+            text-decoration: underline;
         }
+        
+        &[href]{                   
+            &::after{
+                @include equalHeightAndLineHeight(30px);
+                content: "(" attr(href) ")";
+                font-family: monospace;
+            }
+        } 
+    }
+    
+    pre,
+    blockquote {
+        border: 1px solid $bcGrey;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
     }
 }
