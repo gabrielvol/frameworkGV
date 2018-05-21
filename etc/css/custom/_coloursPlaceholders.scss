@@ -2,12 +2,15 @@
    Colour Placeholders | Custom [coloursPlaceholders.scss]
    ========================================================================== */
 //White Hover
+$whiteTextHoverShadow: 0 0 3px $black;
+$whiteTextHoverShadowSubmit: 0 0 2px $black
+
 %whiteHover{
     color: $white;
-    text-shadow: 0 0 3px $grey;
+    text-shadow: $whiteTextHoverShadow;
 }
 %whiteHoverSubmit{
-    text-shadow: 0 0 2px $black;
+    text-shadow: $whiteTextHoverShadowSubmit;
 }
 
 ///**Colours Map Custom Hover:** 
