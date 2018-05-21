@@ -72,11 +72,11 @@
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/nuevo/common/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/nuevo/common/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/nuevo/common/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/nuevo/common/manifest.json">
-<link rel="mask-icon" href="/nuevo/common/safari-pinned-tab.svg" color="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="/nuevo/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/nuevo/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/nuevo/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/nuevo/manifest.json">
+<link rel="mask-icon" href="/nuevo/safari-pinned-tab.svg" color="#000">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google Android -->
