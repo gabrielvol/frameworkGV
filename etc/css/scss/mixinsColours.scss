@@ -5,18 +5,23 @@
 @mixin colourLightClassesGenerator($darkenValue){
     @each $colourClassName, $colourHexValue in $coloursMapLight {
         .#{$colourClassName}{
-            &, b, strong, i, em{color: $colourHexValue;}}
+            &, b, strong, i, em{color: $colourHexValue;}
+        }
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
             &:focus, &:hover{color: darken($colourHexValue, $darkenValue);}
         }
-        button.#{$colourClassName}{
-            &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-            &:focus, &:hover{color: darken($colourHexValue, $darkenValue);}
+        @if $coloursButtons == "on"{
+            button.#{$colourClassName}{
+                &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
+                &:focus, &:hover{color: darken($colourHexValue, $darkenValue);}
+            }
         }
-        label.#{$colourClassName}{
-            &, &:focus, &:hover{color: $colourHexValue;}
+        @if $coloursLabels == "on"{
+            label.#{$colourClassName}{
+                &, &:focus, &:hover{color: $colourHexValue;}
+            }
         }
     }
 }
@@ -24,18 +29,23 @@
 @mixin colourDarkClassesGenerator($lightenValue){
     @each $colourClassName, $colourHexValue in $coloursMapDark {
         .#{$colourClassName}{
-            &, b, strong, i, em{color: $colourHexValue;}}
+            &, b, strong, i, em{color: $colourHexValue;}
+        }
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
             &:focus, &:hover{color: lighten($colourHexValue, $lightenValue);}
         }
-        button.#{$colourClassName}{
-            &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-            &:focus, &:hover{color: lighten($colourHexValue, $lightenValue);}
+        @if $coloursButtons == "on"{
+            button.#{$colourClassName}{
+                &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
+                &:focus, &:hover{color: lighten($colourHexValue, $lightenValue);}
+            }
         }
-        label.#{$colourClassName}{
-            &, &:focus, &:hover{color: $colourHexValue;}
+        @if $coloursLabels == "on"{
+            label.#{$colourClassName}{
+                &, &:focus, &:hover{color: $colourHexValue;}
+            }
         }
     }
 }
@@ -43,8 +53,8 @@
 @mixin anchorColoursLightClassesGenerator($darkenValueAnchor){
     @each $colourClassName, $colourHexValue in $anchorColoursLight {
         .#{$colourClassName}{            
-            & a, & a:active, & a:visited{color: $colourHexValue;}
-            & a:focus, & a:hover{color: darken($colourHexValue, $darkenValueAnchor);}
+            a, a:active, a:visited{color: $colourHexValue;}
+            a:focus, a:hover{color: darken($colourHexValue, $darkenValueAnchor);}
         }
     }
 }
@@ -52,8 +62,8 @@
 @mixin anchorColoursDarkClassesGenerator($lightenValueAnchor){
     @each $colourClassName, $colourHexValue in $anchorColoursDark {
         .#{$colourClassName}{            
-            & a, & a:active, & a:visited{color: $colourHexValue;}
-            & a:focus, & a:hover{color: lighten($colourHexValue, $lightenValueAnchor);}
+            a, a:active, a:visited{color: $colourHexValue;}
+            a:focus, a:hover{color: lighten($colourHexValue, $lightenValueAnchor);}
         }
     }
 }
@@ -68,14 +78,18 @@
         a.#{$bgColourClassName}{
             &:hover, &:focus{background-color: $bgColourHoverValue;}
         }
-        button.#{$bgColourClassName}{
-            &:hover, &:focus{background-color: $bgColourHoverValue;}
+        @if $coloursButtons == "on"{
+            button.#{$bgColourClassName}{
+                &:hover, &:focus{background-color: $bgColourHoverValue;}
+            }
         }
-        input[type="submit"].#{$bgColourClassName}{
-            &:hover, &:focus{background-color: $bgColourHoverValue;}
-        }
-        input[type="file"].#{$bgColourClassName}{
-            &:hover, &:focus{background-color: $bgColourHoverValue;}
+        @if $coloursInputs == "on"{
+            input[type="submit"].#{$bgColourClassName}{
+                &:hover, &:focus{background-color: $bgColourHoverValue;}
+            }
+            input[type="file"].#{$bgColourClassName}{
+                &:hover, &:focus{background-color: $bgColourHoverValue;}
+            }
         }
     }
 }
@@ -90,12 +104,16 @@
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
             @extend %focusHover-#{$colourClassName}
         }
-        button.#{$colourClassName}{
-            &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-            @extend %focusHover-#{$colourClassName}
+        @if $coloursButtons == "on"{
+            button.#{$colourClassName}{
+                &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
+                @extend %focusHover-#{$colourClassName}
+            }
         }
-        label.#{$colourClassName}{
-            &, &:focus, &:hover{color: $colourHexValue;}
+        @if $coloursLabels == "on"{
+            label.#{$colourClassName}{
+                &, &:focus, &:hover{color: $colourHexValue;}
+            }
         }
     }
 }

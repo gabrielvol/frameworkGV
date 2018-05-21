@@ -37,6 +37,24 @@
    Classes Activators | Custom [activators.scss]
    ========================================================================== */
 /* =============================================================================
+   Nav
+   ========================================================================== */
+/* =============================================================================
+   Language Flags
+   ========================================================================== */
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+/* =============================================================================
+   Colours
+   ========================================================================== */
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/* =============================================================================
+   Spacing Helpers
+   ========================================================================== */
+/* =============================================================================
    Animation Variables | Custom [animations.scss]
    ========================================================================== */
 /* =============================================================================
@@ -210,6 +228,9 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, i
 iframe {
   border: none !important; }
 
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle; }
+
 audio, canvas, progress, video {
   *display: inline;
   *zoom: 1; }
@@ -233,6 +254,14 @@ a {
 a, a:hover {
   text-decoration: none; }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1em 0;
+  padding: 0; }
+
 img {
   background-color: #c6c6c6;
   border: none;
@@ -252,6 +281,14 @@ button,
 input[type="button"],
 html input[type="button"] {
   border: none !important; }
+
+::-moz-selection {
+  background-color: #c6c6c6;
+  text-shadow: none; }
+
+::selection {
+  background-color: #c6c6c6;
+  text-shadow: none; }
 
 /* =============================================================================
    Main Font Faces | Custom [fontFaceMain.scss]
@@ -411,15 +448,6 @@ a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHove
 a.errorColour:focus, a.errorColour:hover {
   color: #940d12; }
 
-button.errorColour, button.errorColour.noHover:focus, button.errorColour.noHover:hover {
-  color: #eb1c24; }
-
-button.errorColour:focus, button.errorColour:hover {
-  color: #940d12; }
-
-label.errorColour, label.errorColour:focus, label.errorColour:hover {
-  color: #eb1c24; }
-
 .green, .green b, .green strong, .green i, .green em {
   color: #339900; }
 
@@ -428,15 +456,6 @@ a.green, a.green:active, a.green:visited, a.green.noHover:focus, a.green.noHover
 
 a.green:focus, a.green:hover {
   color: #113300; }
-
-button.green, button.green.noHover:focus, button.green.noHover:hover {
-  color: #339900; }
-
-button.green:focus, button.green:hover {
-  color: #113300; }
-
-label.green, label.green:focus, label.green:hover {
-  color: #339900; }
 
 .greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
   color: #f4f4f4; }
@@ -447,15 +466,6 @@ a.greyXXL, a.greyXXL:active, a.greyXXL:visited, a.greyXXL.noHover:focus, a.greyX
 a.greyXXL:focus, a.greyXXL:hover {
   color: #c1c1c1; }
 
-button.greyXXL, button.greyXXL.noHover:focus, button.greyXXL.noHover:hover {
-  color: #f4f4f4; }
-
-button.greyXXL:focus, button.greyXXL:hover {
-  color: #c1c1c1; }
-
-label.greyXXL, label.greyXXL:focus, label.greyXXL:hover {
-  color: #f4f4f4; }
-
 .greyXL, .greyXL b, .greyXL strong, .greyXL i, .greyXL em {
   color: #dedede; }
 
@@ -464,15 +474,6 @@ a.greyXL, a.greyXL:active, a.greyXL:visited, a.greyXL.noHover:focus, a.greyXL.no
 
 a.greyXL:focus, a.greyXL:hover {
   color: #ababab; }
-
-button.greyXL, button.greyXL.noHover:focus, button.greyXL.noHover:hover {
-  color: #dedede; }
-
-button.greyXL:focus, button.greyXL:hover {
-  color: #ababab; }
-
-label.greyXL, label.greyXL:focus, label.greyXL:hover {
-  color: #dedede; }
 
 .greyL, .greyL b, .greyL strong, .greyL i, .greyL em {
   color: #c6c6c6; }
@@ -483,15 +484,6 @@ a.greyL, a.greyL:active, a.greyL:visited, a.greyL.noHover:focus, a.greyL.noHover
 a.greyL:focus, a.greyL:hover {
   color: #939393; }
 
-button.greyL, button.greyL.noHover:focus, button.greyL.noHover:hover {
-  color: #c6c6c6; }
-
-button.greyL:focus, button.greyL:hover {
-  color: #939393; }
-
-label.greyL, label.greyL:focus, label.greyL:hover {
-  color: #c6c6c6; }
-
 .grey, .grey b, .grey strong, .grey i, .grey em {
   color: #999; }
 
@@ -500,15 +492,6 @@ a.grey, a.grey:active, a.grey:visited, a.grey.noHover:focus, a.grey.noHover:hove
 
 a.grey:focus, a.grey:hover {
   color: #666666; }
-
-button.grey, button.grey.noHover:focus, button.grey.noHover:hover {
-  color: #999; }
-
-button.grey:focus, button.grey:hover {
-  color: #666666; }
-
-label.grey, label.grey:focus, label.grey:hover {
-  color: #999; }
 
 .greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
   color: #666; }
@@ -519,15 +502,6 @@ a.greyD, a.greyD:active, a.greyD:visited, a.greyD.noHover:focus, a.greyD.noHover
 a.greyD:focus, a.greyD:hover {
   color: #333333; }
 
-button.greyD, button.greyD.noHover:focus, button.greyD.noHover:hover {
-  color: #666; }
-
-button.greyD:focus, button.greyD:hover {
-  color: #333333; }
-
-label.greyD, label.greyD:focus, label.greyD:hover {
-  color: #666; }
-
 .greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
   color: #333; }
 
@@ -537,15 +511,6 @@ a.greyXD, a.greyXD:active, a.greyXD:visited, a.greyXD.noHover:focus, a.greyXD.no
 a.greyXD:focus, a.greyXD:hover {
   color: #666666; }
 
-button.greyXD, button.greyXD.noHover:focus, button.greyXD.noHover:hover {
-  color: #333; }
-
-button.greyXD:focus, button.greyXD:hover {
-  color: #666666; }
-
-label.greyXD, label.greyXD:focus, label.greyXD:hover {
-  color: #333; }
-
 .black, .black b, .black strong, .black i, .black em {
   color: #000; }
 
@@ -554,15 +519,6 @@ a.black, a.black:active, a.black:visited, a.black.noHover:focus, a.black.noHover
 
 a.black:focus, a.black:hover {
   color: #333333; }
-
-button.black, button.black.noHover:focus, button.black.noHover:hover {
-  color: #000; }
-
-button.black:focus, button.black:hover {
-  color: #333333; }
-
-label.black, label.black:focus, label.black:hover {
-  color: #000; }
 
 /* =============================================================================
    Settings Text | Custom [settingsText.scss]
@@ -682,15 +638,6 @@ b, strong,
   background-color: #333; }
 
 a.mainBgColour:hover, a.mainBgColour:focus {
-  background-color: #666666; }
-
-button.mainBgColour:hover, button.mainBgColour:focus {
-  background-color: #666666; }
-
-input[type="submit"].mainBgColour:hover, input[type="submit"].mainBgColour:focus {
-  background-color: #666666; }
-
-input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
   background-color: #666666; }
 
 /* =============================================================================
@@ -832,6 +779,39 @@ input[type="file"].mainBgColour:hover, input[type="file"].mainBgColour:focus {
 .centerVertically {
   display: table-cell;
   vertical-align: middle; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+  /*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */ }
+  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit; }
 
 article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after, button, button::before, button::after, fieldset, fieldset::before, fieldset::after, label, label::before, label::after, input, input::before, input::after, select, select::before, select::after, textarea, textarea::before, textarea::after,
 .callToAction,
@@ -1268,6 +1248,40 @@ article, article::before, article::after, details, details::before, details::aft
 @media (max-width: 400px) {
   @-ms-viewport {
     width: 320px; } }
+
+/* =============================================================================
+   Print Settings | Etc [settingsPrint.scss]
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a {
+    /*
+         * Don't show links that are fragment identifiers,
+         * or use the `javascript:` pseudo protocol
+         */ }
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+      content: ""; }
+  pre,
+  blockquote {
+    page-break-inside: avoid; }
+  pre {
+    white-space: pre-wrap !important; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; } }
 
 /* =============================================================================
    Global Styles | Custom [stylesGlobal.scss]
