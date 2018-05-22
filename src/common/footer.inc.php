@@ -6,7 +6,7 @@
     </nav>
     
     <p class="googleAddress">
-        <a href="https://goo.gl/maps/" title="<?php echo _('Ir a la ubicaci&oacute;n en Google Maps'); ?>." target="_blank"><?php echo _("Direccion"); ?></a>
+        <a href="https://goo.gl/maps/" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
     <p class="copyright">
