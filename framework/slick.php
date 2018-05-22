@@ -25,20 +25,21 @@
         </ul>
         
         <?php
-            $foto01 = '11';
-            $foto02 = '12';
-            include($_SERVER['DOCUMENT_ROOT'] . '/clientes/aqualiceweb/common/slick.fotos.inc.php');
+            $fotoSliderHeader01 = '01';
+            $fotoSliderHeader02 = '02';
+            $fotoSliderHeader03 = '03';
+            include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.header.inc.php');
         ?>
         <ul class="slick mask horizontal clearfix">
-            <?php if(isset($foto01)): ?>
-            <li><img src="/clientes/aqualiceweb/img/sliderAplicaciones/img_slide<?php echo $foto01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($foto02)): ?>
-            <li><img src="/clientes/aqualiceweb/img/sliderAplicaciones/img_slide<?php echo $foto02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($foto03)): ?>
-            <li><img src="/clientes/aqualiceweb/img/sliderAplicaciones/img_slide<?php echo $foto03; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php if(isset($fotoSliderHeader01)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderHeader02)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderHeader03)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader03; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; ?>
         </ul>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
-    <script src="/js/slick.js" type="text/javascript"></script>
+    <script src="/js/slick.js"></script>
 </html>
