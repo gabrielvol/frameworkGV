@@ -17,6 +17,12 @@
             <img src="/img/soc_tw.svg" class="svg displayBlock" alt="<?php echo _('Ir a nuestro perfil en Twitter'); ?>.">
         </a>
     </li>
+    <li class="vi">
+        <a href="/nuevo/" class="tw displayBlock hoverGrowBig mhaBT indentedText">
+            <?php echo _("Mir&aacute; Nuestro Canal en Vimeo"); ?>
+            <img src="/img/soc_vi.svg" class="svg displayBlock" alt="<?php echo _('Ir a nuestro canal de Vimeo'); ?>.">
+        </a>
+    </li>
     <li class="ig">
         <a href="/nuevo/" class="ig displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Seguinos en Instagram"); ?>
