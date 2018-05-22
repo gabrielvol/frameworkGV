@@ -54,6 +54,9 @@
 @import "stylesBody";
 @import "../scss/resetMain";
 
+@import "coloursPlaceholders";
+@import "coloursGradients";
+
 @import "fontFaceMain";
 @import "../scss/settingsText";
 @import "settingsText";
@@ -76,9 +79,6 @@
 @import "stylesGlobal";
 @import "stylesError";
 //@import "stylesMedia";
-
-@import "coloursPlaceholders";
-@import "coloursGradients";
 
 @import "settingsLists";
 
