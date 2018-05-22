@@ -10,31 +10,26 @@
         &, a{}
         
         &, a, img{}
+            
+        a, img{
+            width: 100%;
+        }
     }
     
     @include mobileOnly{
         .logoH{
             @include centerCustom(90%);
-            
-            a, img{
-                width: 100%;
-            }
         }
     }
     
     @include afterMobileLandscape{        
         .logoH{
-            &, a, img{
-                width: 150px;
-            }
+            width: 150px;
         }
     } 
     
     @include mobileLandscapeOnly{        
-        .logoH{
-            &, a, img{
-            }
-        }
+        .logoH{}
     }
 
     @include beforeTablet{
@@ -75,10 +70,7 @@
         .logoH{
             position: relative;
             z-index: $zIndexLogoH;
-        
-            &, a, img{
-                width: 150px;
-            }
+            width: 150px;
         }
         
         @if $navTopper == "on"{
@@ -99,10 +91,6 @@
     @include afterTabletLandscape{
         height: 130px;
         
-        .logoH{
-            &, a, img{
-                width: 150px;
-            }
-        }
+        .logoH{}
     } 
 }
