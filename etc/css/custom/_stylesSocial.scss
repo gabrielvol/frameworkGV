@@ -5,36 +5,42 @@
     z-index: $zIndexSocial;
         
     li{
-        &.fb{
-            a{}
+        & + li{}
+    }
+    
+    .tw{
+        a{
+            background-image: url('/nuevo/img/soc_tw.svg');
         }
+    }
 
-        &.tw{
-            a{}
+    .sk{
+        a{
+            background-image: url('/nuevo/img/soc_sk.svg');
         }
+    }
 
-        &.ig{
-            a{}
+    .vi{
+        a{
+            background-image: url('/nuevo/img/soc_vi.svg');
         }
+    }  
 
-        &.pi{
-            a{}
+    .li{
+        a{
+            background-image: url('/nuevo/img/soc_li.svg');
         }
+    }
 
-        &.yt{
-            a{}
+    .ig{
+        a{
+            background-image: url('/nuevo/img/soc_ig.svg');
         }
+    }
 
-        &.li{
-            a{}
-        }
-
-        &.sp{
-            a{}
-        }
-
-        & + li{
-
+    .fb{
+        a{
+            background-image: url('/nuevo/img/soc_fb.svg');
         }
     }
     
@@ -63,7 +69,7 @@
         }
     }
     
-    @include afterTablet{        
+    @include afterTablet{
         li{
             &, a, img{
                 @include squareSize(50px);            
