@@ -5,6 +5,12 @@
             <img src="/img/soc_fb.svg" class="svg displayBlock" alt="<?php echo _('Ir a nuestro perfil en Facebook'); ?>.">
         </a>
     </li>
+    <li class="sk">
+        <a href="/nuevo/" class="tw displayBlock hoverGrowBig mhaBT indentedText">
+            <?php echo _("Contactanos en Skype"); ?>
+            <img src="/img/soc_sk.svg" class="svg displayBlock" alt="<?php echo _('Comunicate con nosotros por Skype'); ?>.">
+        </a>
+    </li>
     <li class="tw">
         <a href="/nuevo/" class="tw displayBlock hoverGrowBig mhaBT indentedText">
             <?php echo _("Seguinos en Twitter"); ?>
