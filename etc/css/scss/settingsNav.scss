@@ -270,40 +270,50 @@ nav{
             }
         }
         
-        &.topper{
-            @include borderStyleB($bcNavTopper);
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;  
-            background-color: $bgNavTopper;
-           
-            .hamb{
-                display: $none;
-            }
-            
-            .mainMenu{
-                > li{
-                    a, .topLevelItem{
-                        color: $navFontColourTopper;
-                    }
+        @if $navTopper == "on"{        
+            &.topper{
+                @include borderStyleB($bcNavTopper);
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;  
+                background-color: $bgNavTopper;
 
-                    &:focus, &:hover{                        
-                        > a, .topLevelItem{
-                            color: $navFontColourTopperHover;
-                        }  
-                    }  
+                .hamb{
+                    display: $none;
                 }
-            }
-            
-            @if $navHasSub == "on"{
-                .subMenu{
-                    left: 0;
-                    position: absolute;
-                    
-                    li{
-                        & + li{
-                            @include borderStyleT($bcNavSubItemAT);
+
+                .mainMenu{
+                    > li{
+                        a, .topLevelItem{
+                            color: $navFontColourTopper;
+                        }
+
+                        &:focus, &:hover{                        
+                            > a, .topLevelItem{
+                                color: $navFontColourTopperHover;
+                            }  
+                        }
+                        
+                        &.current{                            
+                            &, &:focus, &:hover{                        
+                                > a, .topLevelItem{
+                                    color: $navCurrentFontColourTopper;
+                                }  
+                            }
+                        }
+                    }
+                }
+
+                @if $navHasSub == "on"{
+                    .subMenu{
+                        left: 0;
+                        position: absolute;
+
+                        li{
+                            & + li{
+                                @include borderStyleT($bcNavSubItemAT);
+                            }
                         }
                     }
                 }
