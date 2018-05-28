@@ -59,10 +59,12 @@ p, li{
     }
     p, li, a, strong, dl, legend{
         font-size: 1em;
-    }    
-    &:focus, &:hover{
-        a{
-            text-decoration: underline;
+    }     
+    @if $anchorUnderline == "on"{
+        &:focus, &:hover{
+            a{
+                text-decoration: underline;
+            }
         }
     }
 }

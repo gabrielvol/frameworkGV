@@ -36,7 +36,7 @@
         box-sizing: border-box;
         padding-top: 20px;
         
-        .logoH{    
+        .logoH{
             @if $navDrawer == "on"{   
                 &.clicked{
                     @include borderStyleR($bcNavBT);
