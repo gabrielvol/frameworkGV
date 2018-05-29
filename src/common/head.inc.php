@@ -23,7 +23,7 @@
 <link rel="author" href="humans.txt">
 
 <!-- Copyright -->
-<link rel="license" href="copyright.html">
+<link rel="license" href="copyright.php">
 
 <!-- Idiomas -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
