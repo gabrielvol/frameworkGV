@@ -17,7 +17,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="index" role="main">
+    <div id="main" class="copyright" role="main">
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
 </body>
