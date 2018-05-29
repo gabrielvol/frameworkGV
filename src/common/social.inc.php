@@ -53,4 +53,10 @@
             <img src="/img/soc_sp.svg" class="svg displayBlock" alt="<?php echo _('Ir a nuestro perfil en Spotify'); ?>.">
         </a>
     </li>
+    <li class="sc">
+        <a href="/nuevo/" class="sp displayBlock hoverGrowBig mhaBT indentedText">
+            <?php echo _("Nuestro perfil en Snapchat"); ?>
+            <img src="/img/soc_sc.svg" class="svg displayBlock" alt="<?php echo _('Ir a nuestro perfil en Snapchat'); ?>.">
+        </a>
+    </li>
 </ul>

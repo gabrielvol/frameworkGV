@@ -43,6 +43,12 @@
             background-image: url('/nuevo/img/soc_fb.svg');
         }
     }
+
+    .sc{
+        a{
+            background-image: url('/nuevo/img/soc_sc.svg');
+        }
+    }
     
     @include beforeTablet{       
         li{
