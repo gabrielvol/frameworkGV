@@ -23,7 +23,7 @@
     </li>
     <li>
         <a href="/nuevo/?l=ja_JP" class="displayBlock mask hoverGrowBig">
-            <img src="/nuevo/img/fl_ja.svg" alt="<?php echo $text_ja; ?>.">
+            <img src="/nuevo/img/fl_jp.svg" alt="<?php echo $text_ja; ?>.">
         </a>
     </li>
 </ul>
