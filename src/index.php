@@ -3,7 +3,9 @@
     
     $title = "PáginaSinTítulo";
     //$titleEN = "UntitledPage";
+    
     $mdesc = "";
+    //$mdescEN = "";
     
     $navCurrent = 0;
     
