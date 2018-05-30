@@ -149,6 +149,10 @@ nav{
                 &.open{
                     left: 0;
                 }
+        
+                & + .mainMenu{
+                    margin-top: 0;
+                }
             }
         }
         
