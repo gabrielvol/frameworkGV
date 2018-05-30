@@ -13,7 +13,6 @@
                     <ul id="volverSubMenu" class="subMenu unstyled" aria-expanded="false" aria-labelledby="volverNavItem">';
                         include('nav.list.inc.php');
                     echo '</ul></li>';
-                include('navAmoblamiento.list.inc.php');
             } else {
                 include('nav.list.inc.php');
             }            
