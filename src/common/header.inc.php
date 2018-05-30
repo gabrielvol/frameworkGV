@@ -16,8 +16,8 @@
             echo '?l=en_GB';
         } else {
             echo '?l=es_AR';
-        } ?>" class="pRel displayBlock man <?php if($int == 1){ echo 'logoH'; } ?>">
-        <img src="/nuevo/img/logo.svg" alt="<?php echo _('Company'); ?>.">
+        } ?>" class="pRel displayBlock <?php if($int == 1){ echo 'logoH'; } else { echo ''; } ?>">
+        <img src="/nuevo/img/logo.svg" alt="<?php echo _('Company'); ?>." class="displayBlock">
     </a>
     <?php if($index == 1){ echo '</h1>'; } ?>
     
