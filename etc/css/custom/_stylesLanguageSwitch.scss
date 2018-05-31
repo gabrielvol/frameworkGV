@@ -4,11 +4,13 @@
 $flagWidthBT: 38px;
 $flagHeightBT: 25px;
 
-$flagWidthAT: 38px;
-$flagHeightAT: 25px;
+$flagWidthAT: $flagWidthBT;
+$flagHeightAT: $flagHeightBT;
 
-/*$flagWidthAT: 48px;
-$flagHeightAT: 32px;*/
+/*
+$flagWidthAT: 48px;
+$flagHeightAT: 32px;
+*/
 
 .lang{
     z-index: $zIndexLang;
