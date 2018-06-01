@@ -56,7 +56,6 @@ $flagHeightAT: 32px;
         @if $navDrawer == "on"{   
             &.clicked{
                 position: fixed;
-                z-index: $zIndexLogoHClicked;
                 top: 15px;
                 left: 0;
             }
