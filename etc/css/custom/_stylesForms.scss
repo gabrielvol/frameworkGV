@@ -199,12 +199,6 @@ form{
             }
         }
 
-        .labelName, .sug{
-            box-sizing: border-box;
-            padding-left: 7px;
-            font-size: 1.1rem!important;
-        }
-
         .labelName, .formInputErrorMsg{
             display: block;
         }
@@ -216,6 +210,9 @@ form{
 
         .labelName{
             font-family: $formLabelFontFamily;
+            box-sizing: border-box;
+            padding-left: 7px;
+            font-size: 1.1rem!important;
         }
 
         .formInputErrorMsg{
@@ -231,47 +228,6 @@ form{
                 font-weight: 700;
                 font-size: 0.8rem!important;
                 line-height: 1.3em;
-            }
-        }
-    }
-
-    @if $formSug == "on"{
-        .sug{
-            @include transition(1s);
-            display: none;
-            opacity: 0;
-            height: 0;
-            padding-bottom: 3px;
-            font-family: $formSugFontFamily;
-            font-size: 0.8rem;
-        }
-
-        label, legend{
-            &:hover{
-                .sug{
-                    display: block;
-                    opacity: 1;
-
-                    @include beforeTablet{
-                        .mobileForm &{
-                            @include equalHeightAndLineHeight($formLabelSugHeightBT);
-                        }
-                    }
-
-                    @include tabletOnly{
-                        .tabletForm &{
-                            @include equalHeightAndLineHeight($formLabelSugHeightTO);
-                        }
-                    }
-
-                    @include afterTabletLandscape{
-                        @include equalHeightAndLineHeight($formLabelSugHeightATL);
-                    }
-
-                    @include afterDesktop{
-                        height: $formLabelSugHeightAD;        
-                    }
-                }
             }
         }
     }

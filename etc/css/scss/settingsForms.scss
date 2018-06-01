@@ -2,7 +2,7 @@
    Form Settings | Etc [settingsForms.scss]
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
-.labelName, .sug, .formInputErrorMsg{
+.labelName, .formInputErrorMsg{
     .mobileForm &{
         @include beforeTablet{
             clear: both!important;
@@ -23,7 +23,7 @@ form, fieldset, label, input, select, textarea, button,
 }
 
 fieldset, label, input, select, textarea, button,
-.mandatoryMsg, .status, .labelName, .sug, .formInputErrorMsg{
+.mandatoryMsg, .status, .labelName, .formInputErrorMsg{
     .mobileForm &{
         @include beforeTablet{
             width: $formLabelWidthBT;

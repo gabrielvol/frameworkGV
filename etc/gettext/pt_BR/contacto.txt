@@ -64,18 +64,6 @@ msgstr ""
 msgid "Por favor, ingrese su nombre y apellido."
 msgstr ""
 
-<?php echo _('Ingrese su nombre'); ?>
-msgid "Ingrese su nombre"
-msgstr "Insira o seu nome"
-
-<?php echo _('Ingrese su apellido'); ?>
-msgid "Ingrese su apellido"
-msgstr ""
-
-<?php echo _('Ingrese su nombre y apellido'); ?>
-msgid "Ingrese su nombre y apellido"
-msgstr ""
-
 
 
 <?php echo _('Direcci&oacute;n'); ?>
@@ -94,14 +82,6 @@ msgstr ""
 msgid "Por favor, ingrese su domicilio."
 msgstr ""
 
-<?php echo _('Ingrese su direcci&oacute;n'); ?>
-msgid "Ingrese su direcci&oacute;n"
-msgstr ""
-
-<?php echo _('Ingrese su domicilio'); ?>
-msgid "Ingrese su domicilio"
-msgstr ""
-
 
 
 <?php echo _('Localidad'); ?>
@@ -110,10 +90,6 @@ msgstr ""
 
 <?php echo _('Por favor, ingrese su localidad.'); ?>
 msgid "Por favor, ingrese su localidad."
-msgstr ""
-
-<?php echo _('Ingrese su localidad'); ?>
-msgid "Ingrese su localidad"
 msgstr ""
 
 
@@ -126,11 +102,6 @@ msgstr ""
 msgid "Por favor, ingrese su c&oacute;digo postal."
 msgstr ""
 
-<?php echo _('Ingrese su c&oacute;digo postal'); ?>
-msgid "Ingrese su c&oacute;digo postal"
-msgstr ""
-
-
 
 <?php echo _('Provincia'); ?>
 msgid "Provincia"
@@ -138,10 +109,6 @@ msgstr ""
 
 <?php echo _('Por favor, ingrese su provincia.'); ?>
 msgid "Por favor, ingrese su provincia."
-msgstr ""
-
-<?php echo _('Ingrese su provincia'); ?>
-msgid "Ingrese su provincia"
 msgstr ""
 
 
@@ -153,11 +120,6 @@ msgstr "Telefone"
 <?php echo _('Por favor, ingrese su n&uacute;mero de tel&eacute;fono.'); ?>
 msgid "Por favor, ingrese su n&uacute;mero de tel&eacute;fono."
 msgstr "Por favor insira um n&uacute;mero de telefone."
-
-<?php echo _('Ingrese su n&uacute;mero de tel&eacute;fono'); ?>
-msgid "Ingrese su n&uacute;mero de tel&eacute;fono"
-msgstr "Insira um n&uacute;mero de telefone"
-
 
 
 <?php echo _('Correo electr&oacute;nico'); ?>
@@ -176,14 +138,6 @@ msgstr "Por favor, indique um e-mail."
 msgid "Por favor, ingrese su e-mail."
 msgstr "Por favor, indique um e-mail."
 
-<?php echo _('Ingrese su direcci&oacute;n de correo'); ?>
-msgid "Ingrese su direcci&oacute;n de correo"
-msgstr "Indique um e-mail"
-
-<?php echo _('Ingrese su e-mail'); ?>
-msgid "Ingrese su e-mail"
-msgstr "Indique um e-mail"
-
 
 
 <?php echo _('Empresa'); ?>
@@ -194,10 +148,6 @@ msgstr ""
 msgid "Por favor, ingrese el nombre de su empresa."
 msgstr "Por favor, indique o nome da empresa."
 
-<?php echo _('Ingrese el nombre de su empresa'); ?>
-msgid "Ingrese el nombre de su empresa"
-msgstr "Indique o nome da empresa"
-
 
 
 <?php echo _('Sitio web'); ?>
@@ -206,10 +156,6 @@ msgstr ""
 
 <?php echo _('Por favor, ingrese su sitio web.'); ?>
 msgid "Por favor, ingrese su sitio web."
-msgstr ""
-
-<?php echo _('Debe comenzar con http://www'); ?>
-msgid "Debe comenzar con http://www"
 msgstr ""
 
 
@@ -222,10 +168,6 @@ msgstr ""
 msgid "Por favor, ingrese su perfil de Facebook."
 msgstr ""
 
-<?php echo _('Debe comenzar con http://www.facebook.com/'); ?>
-msgid "Debe comenzar con http://www.facebook.com/"
-msgstr ""
-
 
 
 <?php echo _('Cargo'); ?>
@@ -234,10 +176,6 @@ msgstr ""
 
 <?php echo _('Por favor, ingrese su cargo.'); ?>
 msgid "Por favor, ingrese su cargo."
-msgstr ""
-
-<?php echo _('Ingrese su cargo'); ?>
-msgid "Ingrese su cargo"
 msgstr ""
 
 
@@ -250,10 +188,6 @@ msgstr ""
 msgid "Por favor, ingrese un rubro."
 msgstr ""
 
-<?php echo _('Ingrese un rubro'); ?>
-msgid "Ingrese un rubro"
-msgstr ""
-
 
 
 <?php echo _('Fecha'); ?>
@@ -263,10 +197,6 @@ msgstr ""
 <?php echo _('Por favor, indique la fecha deseada.'); ?>
 msgid "Por favor, indique la fecha deseada."
 msgstr "Por favor, indicar a data desejada."
-
-<?php echo _('Seleccione una fecha en el calendario'); ?>
-msgid "Seleccione una fecha en el calendario"
-msgstr "Indicar a data desejada"
 
 
 
