@@ -47,6 +47,12 @@
                 <input type="text" name="nombreApe" id="nombreApe" class="nombreApe <?php echo $invalidFieldNombreApe ?>" value="<?php echo $_POST['nombreApe']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusNombreApe ?>>
                 <span class="formInputErrorMsg <?php echo $errorFormClassNombreApe ?>"><?php echo $errorBelowInputNombreApe ?></span>             
             </label>
+            
+            <label for="password">
+                <span class="labelName"><?php echo _('Contraseña'); ?></span>
+                <input type="password" name="contrasena" id="contrasena" class="contrasena <?php echo $invalidFieldContrasena ?>" value="<?php echo $_POST['contrasena']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusContrasena ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassContrasena ?>"><?php echo $errorBelowInputContrasena ?></span>               
+            </label>
 
             <label for="direccion">
                 <span class="labelName"><?php echo _('Direcci&oacute;n'); ?></span>
