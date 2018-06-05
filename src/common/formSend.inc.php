@@ -22,25 +22,25 @@
         //ini_set('SMTP','mail.gabrielvolonte.com.ar');
 
         //Asignamos datos de campos a variables
-        $nombre       = $_POST['nombre'];
-        $apellido     = $_POST['apellido'];
-        $nombreApe    = $_POST['nombreApe'];
-        $direccion    = $_POST['direccion'];
-        $domicilio    = $_POST['domicilio'];
-        $localidad    = $_POST['localidad'];
-        $codigopostal = $_POST['codigopostal'];
-        $provincia    = $_POST['provincia'];
-        $pais         = $_POST['pais'];
-        $fecha        = $_POST['fecha'];
-        $email        = $_POST['email'];
-        $website      = $_POST['website'];
-        $facebook     = $_POST['facebook'];
-        $telefono     = $_POST['telefono'];
-        $empresa      = $_POST['empresa'];
-        $cargo        = $_POST['cargo'];
-        $rubro        = $_POST['rubro'];
-        $asunto       = $_POST['asunto'];
-        $mensaje      = $_POST['mensaje'];
+        $nombre         = $_POST['nombre'];
+        $apellido       = $_POST['apellido'];
+        $nombreApe      = $_POST['nombreApe'];
+        $direccion      = $_POST['direccion'];
+        $domicilio      = $_POST['domicilio'];
+        $localidad      = $_POST['localidad'];
+        $codigopostal   = $_POST['codigopostal'];
+        $provincia      = $_POST['provincia'];
+        $pais           = $_POST['pais'];
+        $fecha          = $_POST['fecha'];
+        $email          = $_POST['email'];
+        $website        = $_POST['website'];
+        $facebook       = $_POST['facebook'];
+        $telefono       = $_POST['telefono'];
+        $empresa        = $_POST['empresa'];
+        $cargo          = $_POST['cargo'];
+        $rubro          = $_POST['rubro'];
+        $asuntoSubject  = $_POST['asunto'];
+        $mensaje        = $_POST['mensaje'];
 
         //Cabeceras del correo
         $destino  = "tampas@gmail.com";
@@ -67,7 +67,7 @@
         $texto   .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
         $texto   .= "<strong>Empresa:</strong> ".$empresa."<br />";
         $texto   .= "<strong>Cargo:</strong> ".$cargo."<br />";
-        $texto   .= "<strong>Asunto:</strong> ".$asunto."<br />";
+        $texto   .= "<strong>Asunto:</strong> ".$asuntoSubject."<br />";
         $texto   .= "<strong>Rubro:</strong> ".$rubro."<br />";
         $texto   .= "<strong>Mensaje:</strong> <br />".$mensaje."<br />_ _ _<br />Fin del mensaje";
         
