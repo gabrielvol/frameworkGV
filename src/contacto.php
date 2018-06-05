@@ -204,6 +204,12 @@
             ?>
             </select>-->
 
+            <label for="asunto">
+                <span class="labelName"><?php echo _('Asunto'); ?></span>
+                <input type="text" name="asunto" id="asunto" class="asunto <?php echo $invalidFieldAsunto ?>" value="<?php echo $_POST['asunto']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusAsunto ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassAsunto ?>"><?php echo $errorBelowInputAsunto ?></span>               
+            </label>
+
             <label for="mensaje">
                 <span class="labelName"><?php echo _('Mensaje'); ?></span>
                 <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>"><?php echo $_POST['mensaje']; ?></textarea>

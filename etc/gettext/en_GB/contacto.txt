@@ -192,6 +192,16 @@ msgstr ""
 
 
 
+<?php echo _('Asunto'); ?>
+msgid "Asunto"
+msgstr "Subject"
+
+<?php echo _('Por favor, ingrese un asunto.'); ?>
+msgid "Por favor, ingrese un asunto."
+msgstr "Please, enter a subject."
+
+
+
 <?php echo _('Fecha'); ?>
 msgid "Fecha"
 msgstr "Date"

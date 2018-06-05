@@ -39,6 +39,7 @@
         $empresa      = $_POST['empresa'];
         $cargo        = $_POST['cargo'];
         $rubro        = $_POST['rubro'];
+        $asunto       = $_POST['asunto'];
         $mensaje      = $_POST['mensaje'];
 
         //Cabeceras del correo
@@ -66,6 +67,7 @@
         $texto   .= "<strong>Tel&eacute;fono:</strong> ".$telefono."<br />";
         $texto   .= "<strong>Empresa:</strong> ".$empresa."<br />";
         $texto   .= "<strong>Cargo:</strong> ".$cargo."<br />";
+        $texto   .= "<strong>Asunto:</strong> ".$asunto."<br />";
         $texto   .= "<strong>Rubro:</strong> ".$rubro."<br />";
         $texto   .= "<strong>Mensaje:</strong> <br />".$mensaje."<br />_ _ _<br />Fin del mensaje";
         
@@ -88,6 +90,7 @@
         $errorMsgEmpresa        = _("Por favor, ingrese el nombre de su empresa.");
         $errorMsgCargo          = _("Por favor, ingrese su cargo.");
         $errorMsgRubro          = _("Por favor, ingrese un rubro.");
+        $errorMsgAsunto         = _("Por favor, ingrese un asunto.");
         $errorMsgNewsletter     = _("Por favor, elija una opci&oacute;n.");
 
         
@@ -179,6 +182,12 @@
             
         } elseif (empty($_POST["cargo"])) {
             $mandatoryMsg = $errorMsgCargo;
+            $mandatoryMsgClasses = $mandatoryMsgErrorClass;
+            $invalidFieldCargo = "invalidField";
+            $autofocusCargo = "autofocus";
+            
+        } elseif (empty($_POST["asunto"])) {
+            $mandatoryMsg = $errorMsgAsunto;
             $mandatoryMsgClasses = $mandatoryMsgErrorClass;
             $invalidFieldCargo = "invalidField";
             $autofocusCargo = "autofocus";
@@ -292,6 +301,12 @@
             $invalidFieldCargo = "invalidField";
             $autofocusCargo = "autofocus";
             
+        } elseif (empty($_POST["asunto"])) {
+            $errorBelowInputAsunto = $errorMsgAsunto;
+            $errorFormClassAsunto = "active";
+            $invalidFieldAsunto = "invalidField";
+            $autofocusCargo = "autofocus";
+            
         } elseif (empty($_POST["fecha"])) {
             $errorBelowInputFecha = $errorMsgFecha;
             $errorFormClassFecha = "active";
@@ -350,6 +365,7 @@
                 $_POST['empresa']      = '';
                 $_POST['cargo']        = '';
                 $_POST['rubro']        = '';
+                $_POST['asunto']       = '';
                 $_POST['mensaje']      = '';
 
             } else {
