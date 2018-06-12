@@ -183,7 +183,7 @@
 
 
             <label for="habitacion">
-                <?php echo _('Habitaci&oacute;n'); ?>
+                <span class="labelName"><?php echo _('Habitaci&oacute;n'); ?></span>
                 <select id="habitacion" name="habitacion" class="habitacion" >
                     <option value="<?php echo $_POST['habitacion']; ?>" selected><?php echo _('Seleccione una opci&oacute;n'); ?></option>
                     <option value="a"><?php echo _('a'); ?></option>
