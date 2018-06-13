@@ -14,6 +14,10 @@ audio, canvas, progress, video{
     *display: inline;
     *zoom: 1;
 }
+progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+}
 
     //Lists
 ul, ol, li, dd{
