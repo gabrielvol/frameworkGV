@@ -8,7 +8,7 @@
 ?>
 <link href="/framework/css/main.css" rel="stylesheet">
 <link href="/framework/css/shadowbox.css" rel="stylesheet">
-<script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/shadowbox.js"></script>
+<script src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/shadowbox.js"></script>
 <script type="text/javascript">
     Shadowbox.init({
         counterType: "skip",

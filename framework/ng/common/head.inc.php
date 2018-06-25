@@ -12,6 +12,6 @@
 <link href="/framework/css/styles.min.css" rel="stylesheet">
 <link href="/framework/ngtesting/css/styles.css" rel="stylesheet">
 
-<script type="text/javascript" src="/framework/js/modernizr2.8.3.js"></script>
-<script type="text/javascript" src="/framework/js/html5shiv.min.js"></script>
+<script src="/framework/js/modernizr2.8.3.js"></script>
+<script src="/framework/js/html5shiv.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>

@@ -8,7 +8,7 @@
 ?>
 <link href="/framework/css/main.css" rel="stylesheet">
 <link href="/framework/css/videoCover.css" rel="stylesheet">
-<!--<script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/videoCover.js"></script>-->
+<!--<script src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/videoCover.js"></script>-->
 </head>
 <body>
     <?php //include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>

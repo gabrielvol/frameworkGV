@@ -9,8 +9,8 @@
 <link href="/framework/css/main.css" rel="stylesheet">
 <!--fondo supersized-->
 <link href="/framework/css/supersized.css" rel="stylesheet">
-<script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/supersized.3.2.7.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/supersized.shutter.js"></script>
+<script src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/supersized.3.2.7.js"></script>
+<script src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/supersized.shutter.js"></script>
 
 <!--    Supersized - Fullscreen Slideshow jQuery Plugin
         Version : 3.2.7
