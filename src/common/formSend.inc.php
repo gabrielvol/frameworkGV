@@ -15,7 +15,26 @@
 
     //Status Ini
     //$status = '<p class="status ini">'.$statusIniGlobal.'</p>';
+    
+    
+    
+// reCAPTCHA validation
+    require_once('/lib/recaptchalib.php');
+    $privatekey = "your_private_key";
+    $resp = recaptcha_check_answer ($privatekey,
+        $_SERVER["REMOTE_ADDR"],
+        $_POST["recaptcha_challenge_field"],
+        $_POST["recaptcha_response_field"]);
 
+    if (!$resp->is_valid) {
+      // What happens when the CAPTCHA was entered incorrectly
+      die ("Valide la casilla &quot;No soy un robot&quot;, por favor." .
+           "(reCAPTCHA said: " . $resp->error . ")");
+    } else {
+// fin reCAPTCHA validation
+
+        
+        
     //Inicia proceso de form
     if (isset($_POST['enviarForm'])){
         //ini_set('sendmail_from','tampas@gmail.com');
@@ -97,7 +116,6 @@
         $errorMsgRubro          = _("Por favor, ingrese un rubro.");
         $errorMsgAsunto         = _("Por favor, ingrese un asunto.");
         $errorMsgNewsletter     = _("Por favor, elija una opci&oacute;n.");
-        $errorMsgCaptcha        = _('Valide la casilla &quot;No soy un robot&quot;", por favor.');
 
         
         
@@ -406,5 +424,6 @@
 //FIN mensaje error en popup
             }
         }
+    }
     }
 ?>
