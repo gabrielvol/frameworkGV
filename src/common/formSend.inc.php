@@ -25,6 +25,8 @@
         $nombre         = $_POST['nombre'];
         $apellido       = $_POST['apellido'];
         $nombreApe      = $_POST['nombreApe'];
+        $genero         = $_POST['genero'];
+        $dni            = $_POST['dni'];
         $direccion      = $_POST['direccion'];
         $domicilio      = $_POST['domicilio'];
         $localidad      = $_POST['localidad'];
@@ -57,6 +59,9 @@
         $texto   .= "<strong>Nombre y Apellido:</strong> ".$nombreApe."<br />";
         $texto   .= "<strong>Direcci&oacute;n:</strong> ".$direccion."<br />";
         $texto   .= "<strong>Domicilio:</strong> ".$domicilio."<br />";
+        $texto   .= "<strong>Sexo:</strong> ".$genero."<br />";
+        $texto   .= "<strong>DNI:</strong> ".·dni."<br />";
+        $texto   .= "<strong>C&oacute;digo postal:</strong> ".$codigopostal."<br />";
         $texto   .= "<strong>Localidad:</strong> ".$localidad."<br />";
         $texto   .= "<strong>Provincia:</strong> ".$provincia."<br />";
         $texto   .= "<strong>Pa&iacute;s:</strong> ".$pais."<br />";
@@ -92,6 +97,7 @@
         $errorMsgRubro          = _("Por favor, ingrese un rubro.");
         $errorMsgAsunto         = _("Por favor, ingrese un asunto.");
         $errorMsgNewsletter     = _("Por favor, elija una opci&oacute;n.");
+        $errorMsgCaptcha        = _('Valide la casilla &quot;No soy un robot&quot;", por favor.');
 
         
         
@@ -113,6 +119,12 @@
             $mandatoryMsgClasses = $mandatoryMsgErrorClass;
             $invalidFieldNombreApe = "invalidField";
             $autofocusNombreApe = "autofocus";
+            
+        } elseif (empty($_POST["dni"])) {
+            $mandatoryMsg = $errorMsgDNI;
+            $mandatoryMsgClasses = $mandatoryMsgErrorClass;
+            $invalidFieldDNI = "invalidField";
+            $autofocusDNI = "autofocus";
             
         } elseif (empty($_POST["direccion"])) {
             $mandatoryMsg = $errorMsgDireccion;
@@ -229,6 +241,12 @@
             $errorFormClassNombreApe = "active";
             $invalidFieldNombreApe = "invalidField";
             $autofocusNombreApe = "autofocus";
+                       
+        } elseif (empty($_POST["dni"])) {
+            $errorBelowInputDNI = $errorMsgDNI;
+            $errorFormClassDNI = "active";
+            $invalidFieldDNI = "invalidField";
+            $autofocusDNI = "autofocus";
             
         } elseif (empty($_POST["direccion"])) {
             $errorBelowInputDireccion = $errorMsgDireccion;

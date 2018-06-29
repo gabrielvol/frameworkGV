@@ -47,6 +47,27 @@
                 <input type="text" name="nombreApe" id="nombreApe" class="nombreApe <?php echo $invalidFieldNombreApe ?>" value="<?php echo $_POST['nombreApe']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusNombreApe ?>>
                 <span class="formInputErrorMsg <?php echo $errorFormClassNombreApe ?>"><?php echo $errorBelowInputNombreApe ?></span>             
             </label>
+
+            <label for="genero">
+                <span class="labelName"><?php echo _('Género'); ?></span>
+                <select id="genero" name="genero" class="genero" >
+                    <option value="<?php echo $_POST['genero']; ?>" selected><?php echo _('Seleccione una opci&oacute;n'); ?></option>
+                    <option value="Masculino"><?php echo _('Masculino'); ?></option>
+                    <option value="Femenino"><?php echo _('Femenino'); ?></option>
+                </select>
+            </label>
+
+            <label for="genero">
+                <span class="labelName"><?php echo _('Género'); ?></span>
+                <input type="text" name="genero" id="genero" class="genero <?php echo $invalidFieldGenero ?>" value="<?php echo $_POST['genero']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusGenero ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassGenero ?>"><?php echo $errorBelowInputGenero ?></span>               
+            </label>
+
+            <label for="dni">
+                <span class="labelName"><?php echo _('DNI'); ?></span>
+                <input type="tel" name="dni" id="dni" class="dni <?php echo $invalidFieldDNI ?>" value="<?php echo $_POST['dni']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusDNI ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassDNI ?>"><?php echo $errorBelowInputDNI ?></span>               
+            </label>
             
             <label for="password">
                 <span class="labelName"><?php echo _('Contraseña'); ?></span>
@@ -74,7 +95,7 @@
 
             <label for="codigopostal">
                 <span class="labelName"><?php echo _('C&oacute;digo postal'); ?></span>
-                <input type="text" name="codigopostal" id="codigopostal" class="codigopostal <?php echo $invalidFieldCodigoPostal ?>" value="<?php echo $_POST['codigopostal']; ?>" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $autofocusCodigoPostal ?>>
+                <input type="tel" name="codigopostal" id="codigopostal" class="codigopostal <?php echo $invalidFieldCodigoPostal ?>" value="<?php echo $_POST['codigopostal']; ?>" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $autofocusCodigoPostal ?>>
                 <span class="formInputErrorMsg <?php echo $errorFormClassCodigoPostal ?>"><?php echo $errorBelowInputCodigoPostal ?></span>             
             </label>
 
