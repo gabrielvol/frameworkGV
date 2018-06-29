@@ -15,25 +15,6 @@
 
     //Status Ini
     //$status = '<p class="status ini">'.$statusIniGlobal.'</p>';
-    
-    
-    
-// reCAPTCHA validation
-    require_once('/lib/recaptchalib.php');
-    $privatekey = "your_private_key";
-    $resp = recaptcha_check_answer ($privatekey,
-        $_SERVER["REMOTE_ADDR"],
-        $_POST["recaptcha_challenge_field"],
-        $_POST["recaptcha_response_field"]);
-
-    if (!$resp->is_valid) {
-      // What happens when the CAPTCHA was entered incorrectly
-      die ("Valide la casilla &quot;No soy un robot&quot;, por favor." .
-           "(reCAPTCHA said: " . $resp->error . ")");
-    } else {
-// fin reCAPTCHA validation
-
-        
         
     //Inicia proceso de form
     if (isset($_POST['enviarForm'])){
@@ -119,6 +100,18 @@
 
         
         
+// INICIA validación reCaptcha
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $privateKey = 'aaabbbcccdddeeefff111222333444';
+        
+        $response = file_get_contents($url."?secret=".$privateKey."&response=".$_POST['g-recaptcha-response']."&remoteip".$_SERVER['REMOTE_ADDR']);
+        $data = json_decode($response);
+        
+        if(isset($data->success) AND $data->success==true){
+// FIN validación reCaptcha
+        
+
+            
 //INICIA VALIDACIÓN EN div.mandatoryMsg
         if (empty($_POST["nombre"])) {
             $mandatoryMsg = $errorMsgNombre;
@@ -424,6 +417,16 @@
 //FIN mensaje error en popup
             }
         }
-    }
+        
+        
+        
+// Si no valida el reCaptcha
+        } else {
+            $status = '<p class="status error errorCaptcha" role="alert">Por favor verfique la casilla <span>&quot;No soy un robot&quot;</span></p>';
+        }
+// FIN si no valida reCaptcha
+        
+        
+        
     }
 ?>
