@@ -40,14 +40,12 @@
 <link rel="webmention" href="http://example.com/webmention">
 
 <!-- Open Graph -->
-<meta property="og:title" content="WebsiteTitle">
-<meta property="og:url" content="http://www.example.com/page.html">
-<meta property="og:description" content="DescriptionHere">
-/* Max 65 char
-12345678901234567890123456789012345678901234567890123456789012345 */
-<meta property="og:image" content="http://www.example.com/og_img.jpg">
+<meta property="og:title" content="<?php echo $ogTitle; ?>">
+<meta property="og:url" content="<?php echo $url; ?>">
+<meta property="og:description" content="<?php echo $ogDesc; ?>">
+<meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="SiteName">
+<meta property="og:site_name" content="<?php echo $ogSiteName; ?>">
 <meta property="og:locale" content="es_AR">
 
 <!-- Facebook Open Graph -->
@@ -72,11 +70,11 @@
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/nuevo/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/nuevo/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/nuevo/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/nuevo/manifest.json">
-<link rel="mask-icon" href="/nuevo/safari-pinned-tab.svg" color="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/nuevo/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php echo $url; ?>/nuevo/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php echo $url; ?>/nuevo/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php echo $url; ?>/nuevo/manifest.json">
+<link rel="mask-icon" href="<?php echo $url; ?>/nuevo/safari-pinned-tab.svg" color="#000">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google Android -->

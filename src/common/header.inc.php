@@ -1,3 +1,6 @@
+<?php
+    $url = "http://www.site.com.ar";
+?>
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
 <div class="pAbs" id="topGlobal"></div>
 <header id="header" class="">

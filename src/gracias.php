@@ -1,9 +1,18 @@
 <?php
     $int = 1;
-    $gracias=1;
+    $gracias = 1;
     
     $title = "Gracias";
+    //$titleEN = "Thank Yout";
+    
     $mdesc = "";
+    //$mdescEN = "";
+    
+    $ogTitle = "OGWebsiteTitle";
+    $ogSiteName = $ogTitle;
+    $ogDesc = "Fotos.";
+    // Max 65 char
+    // 12345678901234567890123456789012345678901234567890123456789012345
     
     $navCurrent = 0;
     

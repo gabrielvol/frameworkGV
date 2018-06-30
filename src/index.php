@@ -7,6 +7,12 @@
     $mdesc = "";
     //$mdescEN = "";
     
+    $ogTitle = "OGWebsiteTitle";
+    $ogSiteName = $ogTitle;
+    $ogDesc = "Fotos.";
+    // Max 65 char
+    // 12345678901234567890123456789012345678901234567890123456789012345
+    
     $navCurrent = 0;
     
     //Gettext variable, debe ir antes del head

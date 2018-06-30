@@ -3,7 +3,15 @@
     
     $title = "PáginaInterna | PáginaSinTítulo";
     //$titleEN = "PáginaInterna | UntitledPage";
+    
     $mdesc = "";
+    //$mdescEN = "";
+    
+    $ogTitle = "OGWebsiteTitle";
+    $ogSiteName = $ogTitle;
+    $ogDesc = "Fotos.";
+    // Max 65 char
+    // 12345678901234567890123456789012345678901234567890123456789012345
     
     $navCurrent = 1;
     $navCurrentInt = 0;
