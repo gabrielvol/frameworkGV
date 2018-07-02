@@ -99,18 +99,6 @@
         $errorMsgNewsletter     = _("Por favor, elija una opci&oacute;n.");
 
         
-        
-// INICIA validación reCaptcha
-        $url = 'https://www.google.com/recaptcha/api/siteverify';
-        $privateKey = 'aaabbbcccdddeeefff111222333444';
-        
-        $response = file_get_contents($url."?secret=".$privateKey."&response=".$_POST['g-recaptcha-response']."&remoteip".$_SERVER['REMOTE_ADDR']);
-        $data = json_decode($response);
-        
-        if(isset($data->success) AND $data->success==true){
-// FIN validación reCaptcha
-        
-
             
 //INICIA VALIDACIÓN EN div.mandatoryMsg
         if (empty($_POST["nombre"])) {
@@ -233,7 +221,9 @@
             $invalidFieldNewsletter = "invalidField";
             $autofocusNewsletter = "autofocus";
 //FIN de validacion en div.mandatoryMsg
-                        
+                      
+            
+            
 //INICIA VALIDACIÓN DEBAJO DE CADA INPUT
         if (empty($_POST["nombre"])) {
             $errorBelowInputNombre = $errorMsgNombre;
@@ -351,8 +341,8 @@
             
             
                         
-        // Si todos los campos validan se env&iacute;a el correo
         } else {
+        // Si todos los campos validan se env&iacute;a el correo
             if(mail($destino, $asunto, $texto, $headers)){
 
             //Redirect
@@ -417,16 +407,5 @@
 //FIN mensaje error en popup
             }
         }
-        
-        
-        
-// Si no valida el reCaptcha
-        } else {
-            $status = '<p class="status error errorCaptcha" role="alert">Por favor verfique la casilla <span>&quot;No soy un robot&quot;</span></p>';
-        }
-// FIN si no valida reCaptcha
-        
-        
-        
     }
 ?>
