@@ -369,7 +369,8 @@
                 // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
                 $_POST['nombre']       = '';
                 $_POST['apellido']     = '';
-                $_POST['nombreApe']    = '';
+                $_POST['nombreApe']    = '';               
+                $_POST['genero']       = '';
                 $_POST['direccion']    = '';
                 $_POST['domicilio']    = '';
                 $_POST['localidad']    = '';
