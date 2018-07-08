@@ -9,7 +9,7 @@
         <a href="https://goo.gl/maps/" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
-    <a href="https://api.whatsapp.com/send?phone=5491128356489">11 2835 6489</a> 
+    <a href="https://api.whatsapp.com/send?phone=5491198765432">11 9876 5432</a> 
     
     <p class="copyright">
         &copy;
