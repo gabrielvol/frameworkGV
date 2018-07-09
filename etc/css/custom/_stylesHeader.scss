@@ -22,7 +22,9 @@
         }
     }
     
-    @include afterMobileLandscape{        
+    @include afterMobileLandscape{    
+        height: 200px;
+        
         .logoH{
             width: 150px;
         }
@@ -71,7 +73,6 @@
         .logoH{
             position: relative;
             z-index: $zIndexLogoH;
-            width: 150px;
         }
         
         @if $navTopper == "on"{
@@ -89,9 +90,7 @@
         }
     }
     
-    @include afterTabletLandscape{
-        height: 130px;
-        
+    @include afterTabletLandscape{        
         .logoH{}
     } 
 }
