@@ -16,6 +16,7 @@
     } 
 }
     // Clearfix
+.clearfix::before,
 .clearfix::after{
     content: ".";
     display: block;
