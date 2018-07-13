@@ -16,6 +16,15 @@
 }
     
 .popup{    
+    @include borderRadius(12px); 
+    position: fixed;
+    top: 10vh;
+    left: 50%;  
+    height: 80vh;  
+    background-color: $bgStatusOKpopUp;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 $black;
+    
     .modalWrap{
         @include posTRBL;
         position: absolute;
@@ -49,6 +58,14 @@
             color: $greyD;
             font-family: $mainFontFamily;
             text-align: center;
+
+            & + p{
+                margin-top: 0.8em;
+            }
+
+            &:last-child{
+                padding-bottom: 50px;
+            }
         }
         
         .popOKdialog{
@@ -85,9 +102,18 @@
         }
         
         @include afterMobile600{
-            $popupStatusDivW: 450px;
+            $popupStatusDivW: 550px;
             width: $popupStatusDivW;
-            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);            
+            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);  
+
+            .modalWrap{
+                @include posTRBL(20px, 20px, 20px, 20px);
+                padding: 20px;
+            }
+
+            .closePop{           
+                @include posTR(10px, 10px);
+            }             
         }
     }
 }
