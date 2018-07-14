@@ -27,7 +27,6 @@ fieldset, label, input, select, textarea, button,
     .mobileForm &{
         @include beforeTablet{
             width: $formLabelWidthBT;
-            font-size: $mainFontSizeParagraphBT;
         }
         
         @include mobileOnly{
@@ -38,20 +37,59 @@ fieldset, label, input, select, textarea, button,
     @include tabletOnly{
         .tabletForm &{
             width: $formLabelWidthTO;
-            font-size: $mainFontSizeParagraphAT;
         }
     }
     
     @include afterTabletLandscape{
         form &{
             width: $formLabelWidthATL;
-            font-size: $mainFontSizeParagraphATL;
         }
     }
     
     @include afterDesktop{
         form &{
             width: $formLabelWidthAD;
+        }
+    }
+}
+
+fieldset, label, button,
+.mandatoryMsg, .status, .labelName, .formInputErrorMsg{
+    .mobileForm &{
+        @include beforeTablet{
+            font-size: $mainFontSizeParagraphBT;
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            font-size: $mainFontSizeParagraphAT;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        form &{
+            font-size: $mainFontSizeParagraphATL;
+        }
+    }
+}
+
+input, select, textarea{
+    .mobileForm &{
+        @include beforeTablet{
+            font-size: $formFieldFontSizeBT;
+        }
+    }
+    
+    @include tabletOnly{
+        .tabletForm &{
+            font-size: $formFieldFontSizeAT;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        form &{
+            font-size: $formFieldFontSizeATL;
         }
     }
 }
