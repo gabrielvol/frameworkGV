@@ -252,17 +252,25 @@ form{
     }
     
     .mobileForm &{
-        @include beforeTablet{
-            width: $formWidthBT;
-        }
-        
         @include mobileOnly{
             width: $formWidthMO;            
         }
+        
+        @include afterMobileLandscape{
+            width: $formWidthA500;
+        }
+        
+        @include mobile600Only{
+            width: $formWidth600Only;
+        }
     } 
     
-    @include tabletOnly{
-        .tabletForm &{
+    .tabletForm &{
+        @include afterTablet{
+            width: $formWidthAT;
+        }
+        
+        @include tabletOnly{
             width: $formWidthTO;
         }
     }
