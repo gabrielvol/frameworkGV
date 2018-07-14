@@ -3,11 +3,13 @@
    ========================================================================== */
 //Responsive Values
     // Form
-$formWidthMO:  270px!important;
-$formWidthBT:  90%!important;
-$formWidthTO:  520px!important;
-$formWidthATL: 520px; //No debe llevar !important
-$formWidthAD:  520px; //No debe llevar !important
+$formWidthMO:      270px!important;
+$formWidthA500:    400px!important;
+$formWidth600Only: 520px!important;
+$formWidthAT:      $formWidth600Only;
+$formWidthTO:      $formWidth600Only;
+$formWidthATL:     520px; //No debe llevar !important
+$formWidthAD:      $formWidthATL; //No debe llevar !important
     
     // Labels
 $formLabelWidthMO:  $formWidthMO;
