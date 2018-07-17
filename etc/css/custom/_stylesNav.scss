@@ -95,11 +95,18 @@
                     padding: 0;
                     
                     > li{
+                        padding-top: 0;
+                        height: $topperSize;
+                        
                         &.current{
                             a, .topLevelItem{
                                 @include borderStyleB($bcNavTopperCurrentItem, 2px);
                             }
                         }
+                    }
+
+                    a{
+                        @include equalHeightAndLineHeight($topperSize);
                     }
                 }
                 

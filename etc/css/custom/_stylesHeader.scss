@@ -76,15 +76,16 @@
         }
         
         @if $navTopper == "on"{
-            &.topper{        
-                height: 50px;
-
-                li{
-                    padding-top: 0;  
-                }
-
-                a{
-                    @include equalHeightAndLineHeight(50px);
+            &.topper{
+                position: fixed;
+                z-index: $zIndexHeaderTopper;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: $topperSize;
+                
+                .logoH{
+                    z-index: $zIndexLogoHTopper;
                 }
             }
         }

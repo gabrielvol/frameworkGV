@@ -1,8 +1,8 @@
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('.navMain').addClass('topper');
+        $('.navMain, #header').addClass('topper');
     } else {
-        $('.navMain').removeClass('topper');
+        $('.navMain ,#header').removeClass('topper');
     }
 });
 
