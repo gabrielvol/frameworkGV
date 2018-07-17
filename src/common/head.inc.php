@@ -75,6 +75,7 @@
 <link rel="icon" type="image/png" href="<?php echo $url; ?>/nuevo/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="<?php echo $url; ?>/nuevo/manifest.json">
 <link rel="mask-icon" href="<?php echo $url; ?>/nuevo/safari-pinned-tab.svg" color="#000">
+<meta name="msapplication-TileColor" content="#000">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google Android -->
