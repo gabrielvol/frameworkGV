@@ -235,6 +235,7 @@ nav{
         @if $navHasSub == "on"{
             .subMenu{
                 display: $none;
+                background-color: $bgNavSubAT;
                 
                 li{                        
                     @include transition(1s);
