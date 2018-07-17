@@ -66,8 +66,12 @@ $(document).ready(function () {
     });
        
     $('.hasSub p').click(function () {
-        $(this).closest('.hasSub').toggleClass('openSubTO');
-//        $(this).closest('.mainMenu').toggleClass('openSubTO');
-        $(this).closest('.hasSub').find('.subMenu').toggleClass('openSubTO');
+        $(this).closest('.hasSub').toggleClass('openSubTTLO');
+//        $(this).closest('.mainMenu').toggleClass('openSubTTLO');
+        $(this).closest('.hasSub').find('.subMenu').toggleClass('openSubTTLO');
+    });
+       
+    $('.mainNav > li').click(function () {
+        $(this).toggleClass('navItemClicked');
     });
 });

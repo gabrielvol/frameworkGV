@@ -54,25 +54,9 @@
 
             a, .topLevelItem{
                 @include transition(1s);
-                
-                &:focus, &:hover{
-                    @if $navTextItemWhite == "on"{
-                        text-shadow: $whiteTextHoverShadow;
-                    }
-                }
             }
 
             & + li{}
-            
-            &.current{
-                a, .topLevelItem{
-                    &:focus, &:hover{
-                        @if $navTextItemWhite == "on"{
-                            text-shadow: 0 0 0 transparent;
-                        }
-                    }
-                }
-            }
         } 
         
         @if $navHasSub == "on"{
@@ -97,11 +81,11 @@
                     > li{
                         padding-top: 0;
                         height: $topperHeight;
+                    }
                         
-                        &.current{
-                            a, .topLevelItem{
-                                @include borderStyleB($bcNavTopperCurrentItem, 2px);
-                            }
+                    .current{
+                        a, .topLevelItem{
+                            @include borderStyleB($bcNavTopperCurrentItem, 2px);
                         }
                     }
 
@@ -148,10 +132,10 @@
             &, a, .topLevelItem{}
 
             & + li{}
+        }
 
-            &.current{
-                a, .topLevelItem{}
-            }
+        .current{
+            a, .topLevelItem{}
         }
 
         @if $navTopper == "on"{
@@ -171,7 +155,28 @@
         }
     }
     
-    @include afterDesktop{        
+    @include afterDesktop{
+        li{
+            a, .topLevelItem{
+                
+                &:focus, &:hover{
+                    @if $navTextItemWhite == "on"{
+                        text-shadow: $whiteTextHoverShadow;
+                    }
+                }
+            }            
+        }
+            
+        .current{
+            a, .topLevelItem{
+                &:focus, &:hover{
+                    @if $navTextItemWhite == "on"{
+                        text-shadow: 0 0 0 transparent;
+                    }
+                }
+            }
+        }
+        
         @if $navTopper == "on"{
             &.topper{      
                 @if $navHasSub == "on"{                         
