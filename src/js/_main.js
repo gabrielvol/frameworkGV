@@ -72,6 +72,6 @@ $(document).ready(function () {
     });
        
     $('.mainNav > li').click(function () {
-        $(this).toggleClass('navItemClicked');
+        $(this).toggleClass('.navItemClicked');
     });
 });
