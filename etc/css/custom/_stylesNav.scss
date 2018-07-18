@@ -36,17 +36,7 @@
         @import "stylesNavList";
     }    
     
-    @include afterTablet{
-        .mainMenu{
-            > li{
-                &.current{
-                    a, .topLevelItem{
-                        @include borderStyleB($bcNavTopperCurrentItem, 3px);
-                    } 
-                }
-            }
-        }
-        
+    @include afterTablet{        
         li{
             &, a, .topLevelItem{
                 @include equalHeightAndLineHeight(60px);
@@ -83,9 +73,9 @@
                         height: $topperHeight;
                     }
                         
-                    .current{
+                    > .current{
                         a, .topLevelItem{
-                            @include borderStyleB($bcNavTopperCurrentItem, 2px);
+                            @include borderStyleB($bcNavTopperCurrentItem, 3px);
                         }
                     }
 
