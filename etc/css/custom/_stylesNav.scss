@@ -37,6 +37,18 @@
     }    
     
     @include afterTablet{        
+        .mainMenu{
+            > li{
+                &.current{
+                    a, .topLevelItem{
+                        @if $navCurrentItemBottomBc == "on"{
+                            @include borderStyleB($bcNavCurrentItem, 3px);
+                        }
+                    } 
+                }
+            }
+        }
+        
         li{
             &, a, .topLevelItem{
                 @include equalHeightAndLineHeight(60px);
@@ -51,12 +63,35 @@
         
         @if $navHasSub == "on"{
             .subMenu{
+                $borderRadiusB: 10px;
+                
+                @include borderRadiusB($borderRadiusB);
+                position: absolute;
+                left: 0;
+                top: 40px;
+                padding-bottom: 5px;
+                
                 &, li{}
+                
+                &, li, a{}
+                
+                a{
+                    /* Texto alineado a la izq
+                    padding-left: 15px;
+                    text-align: left;
+                    */
+                }
 
                 li{                
                     a{}
 
                     &, a{}
+                    
+                    &:last-child{                        
+                        &, a{
+                            @include borderRadiusB($borderRadiusB);
+                        }
+                    }
                 }
             }
         }
