@@ -6,7 +6,9 @@ $(window).scroll(function () {
     }
 });
 
-$(document).ready(function () {
+$(document).ready(function () {    
+    $('.enviar').scrollPosReaload();
+    
     // Hamburger Drawer
     $('.navOpen').click(function () {
         $(this).addClass('clicked');

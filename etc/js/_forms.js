@@ -4,7 +4,4 @@ $(document).ready(function () {
         numberOfMonths: 2,
         showButtonPanel: true
     });
-    
-    //Scroll Keep
-    $('.enviar').scrollPosReaload();
 });
