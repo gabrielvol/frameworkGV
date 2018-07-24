@@ -136,7 +136,7 @@ nav{
                     background-repeat: no-repeat;
                     background-position: right 10px center;
 
-                    a, .topLevelItem{
+                    > a, > .topLevelItem{
                         color: $navCurrentFontColourBT;
                     }   
                 } 
@@ -182,7 +182,7 @@ nav{
                     }
                 }  
                 
-                @if $subSub == "on"{
+                @if $navHasSubSub == "on"{
                     .current .current{
                         background-image: url('/nuevo/img/nav_arrowL.svg');
                         background-repeat: no-repeat;
