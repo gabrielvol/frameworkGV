@@ -46,7 +46,7 @@ $labelsVisible: off;
 $formInsideLabel: on;
 
 /* =============================================================================
-   Spacing Helpers
+   Responsive Helpers
    ========================================================================== */
 //All
 $stylesSpacingALL: on;
@@ -55,6 +55,7 @@ $stylesFlexboxALL: off;
 $stylesListsFloatsALL: on;
 
 //Mobile Only MO
+$containerMO: off;
 $stylesSpacingMO: off;
 $stylesPosSizingDisplayMO: off;
 $stylesFlexboxMO: off;
@@ -63,6 +64,7 @@ $stylesTextMO: off;
 $stylesBackgroundsBanMO: off;
 
 //After Mobile Landscape AML
+$containerAML: off;
 $stylesSpacingAML: off;
 $stylesPosSizingDisplayAML: off;
 $stylesFlexboxAML: off;
@@ -71,6 +73,7 @@ $stylesTextAML: off;
 $stylesBackgroundsBanAML: off;
 
 //Mobile Landscape Only MLO
+$containerMLO: off;
 $stylesSpacingMLO: off;
 $stylesPosSizingDisplayMLO: off;
 $stylesFlexboxMLO: off;
@@ -79,6 +82,7 @@ $stylesTextMLO: off;
 $stylesBackgroundsBanMLO: off;
 
 //Before Tablet BT
+$containerBT: off;
 $stylesSpacingBT: off;
 $stylesPosSizingDisplayBT: on;
 $stylesFlexboxBT: off;
@@ -87,6 +91,7 @@ $stylesTextBT: off;
 $stylesBackgroundsBanBT: off;
 
 //Before Tablet Landscape BTL
+$containerBTL: off;
 $stylesSpacingBTL: off;
 $stylesPosSizingDisplayBTL: off;
 $stylesFlexboxBTL: off;
@@ -95,6 +100,7 @@ $stylesTextBTL: off;
 $stylesBackgroundsBanBTL: off;
 
 //Tablet Only TO
+$containerTO: off;
 $stylesSpacingTO: off;
 $stylesPosSizingDisplayTO: off;
 $stylesFlexboxTO: off;
@@ -103,6 +109,7 @@ $stylesTextTO: off;
 $stylesBackgroundsBanTO: off;
 
 //Tablet Landscape Only TTLO
+$containerTTLO: off;
 $stylesSpacingTTLO: off;
 $stylesPosSizingDisplayTTLO: off;
 $stylesFlexboxTTLO: off;
@@ -111,6 +118,7 @@ $stylesTextTTLO: off;
 $stylesBackgroundsBanTTLO: off;
 
 //After Tablet AT
+$containerAT: off;
 $stylesSpacingAT: off;
 $stylesPosSizingDisplayAT: on;
 $stylesFlexboxAT: off;
@@ -119,6 +127,7 @@ $stylesTextAT: off;
 $stylesBackgroundsBanAT: off;
 
 //After Tablet Landscape ATL
+$containerATL: off;
 $stylesSpacingATL: off;
 $stylesPosSizingDisplayATL: off;
 $stylesFlexboxATL: off;
@@ -127,6 +136,7 @@ $stylesTextATL: off;
 $stylesBackgroundsBanATL: off;
 
 //Tablet Landscape Only TLO
+$containerTLO: off;
 $stylesSpacingTLO: off;
 $stylesPosSizingDisplayTLO: off;
 $stylesFlexboxTLO: off;
@@ -135,6 +145,7 @@ $stylesTextTLO: off;
 $stylesBackgroundsBanTLO: off;
 
 //Before Desktop BD
+$containerBD: off;
 $stylesSpacingBD: off;
 $stylesPosSizingDisplayBD: off;
 $stylesFlexboxBD: off;
@@ -143,6 +154,7 @@ $stylesTextBD: off;
 $stylesBackgroundsBanBD: off;
 
 //After Laptop AL
+$containerAL: off;
 $stylesSpacingAL: off;
 $stylesPosSizingDisplayAL: off;
 $stylesFlexboxAL: off;
@@ -151,9 +163,13 @@ $stylesTextAL: off;
 $stylesBackgroundsBanAL: off;
 
 //After Desktop AD
+$containerAD: off;
 $stylesSpacingAD: off;
 $stylesPosSizingDisplayAD: off;
 $stylesFlexboxAD: off;
 $stylesListsFloatsAD: off;
 $stylesTextAD: off;
 $stylesBackgroundsBanAD: off;
+
+//After Desktop ADL
+$containerADL: off;

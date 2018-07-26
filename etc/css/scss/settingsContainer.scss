@@ -8,19 +8,25 @@
     @include clearfix;
     
     @include mobileOnly{
-        width: $containerMobileValue}
+        width: $containerMobileValue;
+    }    
     @include afterMobileLandscape{
-        width: $containerMobileLandscapeValue}
+        width: $containerMobileLandscapeValue;
+    }    
     @include afterTablet{
-        width: $containerTabletValue}
+        width: $containerTabletValue;
+    }    
     @include afterTabletLandscape{
-        width: $containerTabletLandscapeValue}
+        width: $containerTabletLandscapeValue;
+    }    
     @include afterDesktop{
-        width: $containerDesktopValue}
+        width: $containerDesktopValue;
+    }    
     @include afterDesktopLarge{
-        width: $containerDesktopLargeValue}
+        width: $containerDesktopLargeValue;
+    }
     
-    &.centerAbs{     
+    &.centerAbs{
         @include mobileOnly{
             position: absolute;
             left: 50%;   
@@ -52,100 +58,244 @@
             margin-left: $cDLHneg;
         }
     }
-    &.centerAbsMO{    
-        @include mobileOnly{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cMHneg;
+    @if $containerMO == "on"{
+        &.centerAbsMO{    
+            @include mobileOnly{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cMHneg;
+            }
         }
     }
-    &.centerAbsAML{
-        @include afterMobileLandscape{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cMLHneg;
-        }
-        @include afterTablet{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTHneg;
-        }
-        @include afterTabletLandscape{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
-        @include afterDesktop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDHneg;
-        }
-        @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDLHneg;
-        }
-    }
-    &.centerAbsAT{
-        @include afterTablet{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTHneg;
-        }
-        @include afterTabletLandscape{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
-        @include afterDesktop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDHneg;
-        }
-        @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDLHneg;
+    @if $containerAML == "on"{
+        &.centerAbsAML{
+            @include afterMobileLandscape{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cMLHneg;
+            }
+            @include afterTablet{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTHneg;
+            }
+            @include afterTabletLandscape{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTLHneg;
+            }
+            @include afterDesktop{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDHneg;
+            }
+            @include afterDesktopLarge{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDLHneg;
+            }
         }
     }
-    &.centerAbsATL{
-        @include afterTabletLandscape{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cTLHneg;
-        }
-        @include afterDesktop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDHneg;
-        }
-        @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDLHneg;
-        }
-    }
-    &.centerAbsAD{
-        @include afterDesktop{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDHneg;
-        }
-        @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDLHneg;
+    @if $containerAT == "on"{
+        &.centerAbsAT{
+            @include afterTablet{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTHneg;
+            }
+            @include afterTabletLandscape{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTLHneg;
+            }
+            @include afterDesktop{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDHneg;
+            }
+            @include afterDesktopLarge{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDLHneg;
+            }
         }
     }
-    &.centerAbsADL{
-        @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
-            margin-left: $cDLHneg;
+    @if $containerATL == "on"{
+        &.centerAbsATL{
+            @include afterTabletLandscape{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTLHneg;
+            }
+            @include afterDesktop{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDHneg;
+            }
+            @include afterDesktopLarge{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDLHneg;
+            }
+        }
+    }
+    @if $containerAD == "on"{
+        &.centerAbsAD{
+            @include afterDesktop{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDHneg;
+            }
+            @include afterDesktopLarge{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDLHneg;
+            }
+        }
+    }
+    @if $containerADL == "on"{
+        &.centerAbsADL{
+            @include afterDesktopLarge{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDLHneg;
+            }
         }
     }
 }
 
+@if $containerMO == "on"{
+    .containerMO{
+        @include mobileOnly{
+            width: $containerMobileValue;
+        }  
+    }  
+}
+@if $containerAML == "on"{
+    .containerAML{
+        @include afterMobileLandscape{
+            width: $containerMobileLandscapeValue;
+        }    
+        @include mobileLandscapeOnly{
+            width: $containerMobileLandscapeValue;
+        }    
+        @include beforeTablet{
+            width: $containerMobileLandscapeValue;
+        }    
+        @include afterTablet{
+            width: $containerTabletValue;
+        }    
+        @include afterTabletLandscape{
+            width: $containerTabletLandscapeValue;
+        }    
+        @include afterDesktop{
+            width: $containerDesktopValue;
+        }    
+        @include afterDesktopLarge{
+            width: $containerDesktopLargeValue;
+        }
+    }
+}
+@if $containerMLO == "on"{
+    .containerMLO{
+        @include mobileLandscapeOnly{
+            width: $containerMobileLandscapeValue;
+        }
+    }  
+}
+@if $containerBT == "on"{
+    .containerBT{
+        @include mobileOnly{
+            width: $containerMobileValue;
+        }    
+        @include afterMobileLandscape{
+            width: $containerMobileLandscapeValue;
+        }    
+        @include mobileLandscapeOnly{
+            width: $containerMobileLandscapeValue;
+        }    
+    }  
+}
+@if $containerAT == "on"{
+    .containerAT{
+        @include afterTablet{
+            width: $containerTabletValue;
+        }    
+        @include afterTabletLandscape{
+            width: $containerTabletLandscapeValue;
+        }    
+        @include afterDesktop{
+            width: $containerDesktopValue;
+        }    
+        @include afterDesktopLarge{
+            width: $containerDesktopLargeValue;
+        }
+    }  
+}
+@if $containerTO == "on"{
+    .containerTO{
+        @include tabletOnly{
+            width: $containerTabletValue;
+        }
+    }  
+}
+@if $containerATL == "on"{
+    .containerATL{
+        @include afterTabletLandscape{
+            width: $containerTabletLandscapeValue;
+        }    
+        @include afterDesktop{
+            width: $containerDesktopValue;
+        }    
+        @include afterDesktopLarge{
+            width: $containerDesktopLargeValue;
+        }    
+    }  
+}
+@if $containerTLO == "on"{
+    .containerTLO{    
+        @include tabletLandscapeOnly{
+            width: $containerTabletLandscapeValue;
+        }
+    }  
+}
+@if $containerBD == "on"{
+    .containerBD{
+        @include mobileOnly{
+            width: $containerMobileValue;
+        }    
+        @include afterMobileLandscape{
+            width: $containerMobileLandscapeValue;
+        }    
+        @include mobileLandscapeOnly{
+            width: $containerMobileLandscapeValue;
+        } 
+        @include afterTablet{
+            width: $containerTabletValue;
+        }    
+        @include afterTabletLandscape{
+            width: $containerTabletLandscapeValue;
+        }   
+    }  
+}
+@if $containerAD == "on"{
+    .containerAD{
+        @include afterDesktop{
+            width: $containerDesktopValue;
+        }    
+        @include afterDesktopLarge{
+            width: $containerDesktopLargeValue;
+        }    
+    }  
+}
+@if $containerADL == "on"{
+    .containerADL{
+        @include afterDesktopLarge{
+            width: $containerDesktopLargeValue;
+        }    
+    }  
+}
+    
 /* =============================================================================
    Hack para Windows Phone | Etc [settingsContainer.scss]
    ========================================================================== */
