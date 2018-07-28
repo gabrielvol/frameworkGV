@@ -11,14 +11,14 @@ $coloursMapLight:(
     greyXXL: #f4f4f4,
     greyXL: #dedede,
     greyL: #c6c6c6,
-    grey: #999,
-    greyD: #666
+    grey: #999
 );
 $darkenValue: 20%;
 
 ///**Colours Map Dark:** 
     ///Aquí se agregan los colores OSCUROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourDarkClassesGenerator** `[/etc/scss/mixinsColours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$lightenValue` debajo del mapa.
 $coloursMapDark:(
+    greyD: #666,
     greyXD: #333,
     black: #000
 );
