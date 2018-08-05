@@ -49,10 +49,13 @@
    Colours
    ========================================================================== */
 /* =============================================================================
+   Text
+   ========================================================================== */
+/* =============================================================================
    Forms
    ========================================================================== */
 /* =============================================================================
-   Spacing Helpers
+   Responsive Helpers
    ========================================================================== */
 /* =============================================================================
    Animation Variables | Custom [animations.scss]
@@ -70,13 +73,13 @@
    Modal Opacity Variables | Custom [coloursBackgrounds.scss]
    ========================================================================== */
 /* =============================================================================
+   Font Colours Variables | Custom [fontsColours.scss]
+   ========================================================================== */
+/* =============================================================================
    Tables Colour Variables | Custom [coloursTables.scss]
    ========================================================================== */
 /* =============================================================================
    Fonts Main Variables | Custom [fontsMain.scss]
-   ========================================================================== */
-/* =============================================================================
-   Font Colours Variables | Custom [fontsColours.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Colours Variables | Custom [navColours.scss]
@@ -235,6 +238,12 @@ audio, canvas, progress, video {
   *display: inline;
   *zoom: 1; }
 
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none; }
+
 ul, ol, li, dd {
   margin: 0;
   padding: 0; }
@@ -289,6 +298,40 @@ html input[type="button"] {
 ::selection {
   background-color: #c6c6c6;
   text-shadow: none; }
+
+/* =============================================================================
+   Colour Placeholders | Custom [coloursPlaceholders.scss]
+   ========================================================================== */
+a.orange:focus, a.orange:hover {
+  color: #ff0000; }
+
+/* =============================================================================
+   Gradient Colours | Custom [coloursGradients.scss]
+   ========================================================================== */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
+.bgGradWhiteFifty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
+.bgGradWhiteEighty {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
+.bgGradBlackTen {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
+.bgGradBlackFifty {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
+.bgGradBlackEighty {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
 
 /* =============================================================================
    Main Font Faces | Custom [fontFaceMain.scss]
@@ -434,7 +477,7 @@ a.white, a.white:active, a.white:visited, a.white:focus, a.white:hover {
   color: #fff; }
 
 a.white:focus, a.white:hover {
-  text-shadow: 0 0 3px #999; }
+  text-shadow: 0 0 3px #000; }
 
 a.white.noHover:focus, a.white.noHover:hover {
   text-shadow: 0 0 0 transparent; }
@@ -500,7 +543,7 @@ a.greyD, a.greyD:active, a.greyD:visited, a.greyD.noHover:focus, a.greyD.noHover
   color: #666; }
 
 a.greyD:focus, a.greyD:hover {
-  color: #333333; }
+  color: #999999; }
 
 .greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
   color: #333; }
@@ -519,6 +562,12 @@ a.black, a.black:active, a.black:visited, a.black.noHover:focus, a.black.noHover
 
 a.black:focus, a.black:hover {
   color: #333333; }
+
+.orange, .orange b, .orange strong, .orange i, .orange em {
+  color: #ff6600; }
+
+a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.noHover:hover {
+  color: #ff6600; }
 
 /* =============================================================================
    Settings Text | Custom [settingsText.scss]
@@ -712,6 +761,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     width: auto;
     height: auto; }
 
+.clearfix::before,
 .clearfix::after {
   content: ".";
   display: block;
@@ -1161,86 +1211,6 @@ article, article::before, article::after, details, details::before, details::aft
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (max-width: 499px) {
-    .container.centerAbsMO {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 500px) {
-    .container.centerAbsAML {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(85% / 2)); } }
-  @media (min-width: 768px) {
-    .container.centerAbsAML {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(720px / 2)); } }
-  @media (min-width: 1024px) {
-    .container.centerAbsAML {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1200px) {
-    .container.centerAbsAML {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1600px) {
-    .container.centerAbsAML {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 768px) {
-    .container.centerAbsAT {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(720px / 2)); } }
-  @media (min-width: 1024px) {
-    .container.centerAbsAT {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1200px) {
-    .container.centerAbsAT {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1600px) {
-    .container.centerAbsAT {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1024px) {
-    .container.centerAbsATL {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1200px) {
-    .container.centerAbsATL {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1600px) {
-    .container.centerAbsATL {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1200px) {
-    .container.centerAbsAD {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1600px) {
-    .container.centerAbsAD {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1600px) {
-    .container.centerAbsADL {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
 
 /* =============================================================================
    Hack para Windows Phone | Etc [settingsContainer.scss]
@@ -1282,6 +1252,27 @@ article, article::before, article::after, details, details::before, details::aft
   tr,
   img {
     page-break-inside: avoid; } }
+
+/* =============================================================================
+   copyright Styles | Custom [stylesCopyright.scss]
+   ========================================================================== */
+.copyright {
+  padding-bottom: 100px; }
+  .copyright h1 {
+    font-size: 1.6rem; }
+  .copyright p, .copyright li {
+    font-size: 1rem; }
+  .copyright .hDos {
+    font-size: 1.3rem; }
+  .copyright .lic {
+    font-size: 1.1rem; }
+    .copyright .lic,
+    .copyright .lic + p {
+      margin-top: 20px; }
+  .copyright .nota {
+    font-size: 0.9rem; }
+    .copyright .nota + p {
+      margin-top: 20px; }
 
 /* =============================================================================
    Global Styles | Custom [stylesGlobal.scss]
@@ -1330,37 +1321,6 @@ article, article::before, article::after, details, details::before, details::aft
 .errorPage .errorType {
   font-size: 0.8rem;
   text-transform: uppercase; }
-
-/* =============================================================================
-   Colour Placeholders | Custom [coloursPlaceholders.scss]
-   ========================================================================== */
-/* =============================================================================
-   Gradient Colours | Custom [coloursGradients.scss]
-   ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
-.bgGradWhiteFifty {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-.bgGradWhiteEighty {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
-.bgGradBlackTen {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-.bgGradBlackFifty {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-.bgGradBlackEighty {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
 
 /* =============================================================================
    Settings Lists | Custom [settingsLists.scss]
@@ -1509,64 +1469,85 @@ article, article::before, article::after, details, details::before, details::aft
   .mobileForm .closePop, .mobileForm .closePop:focus, .mobileForm .closePop:hover {
     background-color: #fff; }
 
-.popup .modalWrap {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
+.popup {
+  border-radius: 12px;
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  height: 80vh;
+  background-color: #fff;
   padding: 20px;
-  overflow: auto; }
-
-.popup.statusDiv {
-  /* CSS para usar centerPopup
+  box-shadow: 0 0 15px 0 #000; }
+  .popup .modalWrap {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 20px;
+    overflow: auto; }
+  .popup.statusDiv {
+    /* CSS para usar centerPopup
             @include centerPopup(100px,100px,50%);
             max-width: 100%;
             max-height: 100%;
         */
-  border-radius: 6px;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  height: 200px;
-  background-color: #fff;
-  box-shadow: 0 0 15px 0 #000; }
-  .popup.statusDiv h2 {
-    font-size: 1.2rem; }
-  .popup.statusDiv p {
-    width: 100% !important;
-    background-color: transparent;
-    padding: 0;
-    color: #666;
-    font-family: Arial;
-    text-align: center; }
-  .popup.statusDiv .popOKdialog {
-    transition: all 1s ease;
-    height: 30px;
-    line-height: 30px;
-    width: 40%;
-    max-width: 150px;
+    border-radius: 6px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    height: 200px;
     background-color: #fff;
-    font-size: 0.8rem; }
-    .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
-      border: 1px solid #999 !important; }
-    .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
-      background-color: #f4f4f4; }
-  .popup.statusDiv .closePop {
-    top: 10px;
-    right: 10px; }
-  @media (max-width: 499px) {
-    .popup.statusDiv {
-      width: 300px;
-      margin-left: calc(calc(300px * -1) / 2); } }
-  @media (min-width: 500px) {
-    .popup.statusDiv {
-      width: 60%;
-      margin-left: calc(calc(60% * -1) / 2); } }
-  @media (min-width: 601px) {
-    .popup.statusDiv {
-      width: 450px;
-      margin-left: calc(calc(450px * -1) / 2); } }
+    box-shadow: 0 0 15px 0 #000; }
+    .popup.statusDiv h2 {
+      font-size: 1.2rem; }
+    .popup.statusDiv p {
+      width: 100% !important;
+      background-color: transparent;
+      padding: 0;
+      color: #666;
+      font-family: Arial;
+      text-align: center; }
+      .popup.statusDiv p + p {
+        margin-top: 0.8em; }
+      .popup.statusDiv p:last-child {
+        padding-bottom: 50px; }
+    .popup.statusDiv .popOKdialog {
+      transition: all 1s ease;
+      height: 30px;
+      line-height: 30px;
+      width: 40%;
+      max-width: 150px;
+      background-color: #fff;
+      font-size: 0.8rem; }
+      .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+        border: 1px solid #999 !important; }
+      .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+        background-color: #f4f4f4; }
+    .popup.statusDiv .closePop {
+      top: 10px;
+      right: 10px; }
+    @media (max-width: 499px) {
+      .popup.statusDiv {
+        width: 300px;
+        margin-left: calc(calc(300px * -1) / 2); } }
+    @media (min-width: 500px) {
+      .popup.statusDiv {
+        width: 60%;
+        margin-left: calc(calc(60% * -1) / 2); } }
+    @media (min-width: 601px) {
+      .popup.statusDiv {
+        width: 550px;
+        margin-left: calc(calc(550px * -1) / 2); }
+        .popup.statusDiv .modalWrap {
+          top: 20px;
+          right: 20px;
+          bottom: 20px;
+          left: 20px;
+          padding: 20px; }
+        .popup.statusDiv .closePop {
+          top: 10px;
+          right: 10px; } }
 
 /* =============================================================================
    Header Styles | Custom [stylesHeader.scss]
@@ -1575,16 +1556,18 @@ article, article::before, article::after, details, details::before, details::aft
   /*z-index: $zIndexHeader;*/ }
   #header .logoH {
     margin: 0 !important; }
+    #header .logoH a, #header .logoH img {
+      width: 100%; }
   @media (max-width: 499px) {
     #header .logoH {
       width: 90%;
       margin-right: auto !important;
-      margin-left: auto !important; }
-      #header .logoH a, #header .logoH img {
-        width: 100%; } }
+      margin-left: auto !important; } }
   @media (min-width: 500px) {
-    #header .logoH, #header .logoH a, #header .logoH img {
-      width: 150px; } }
+    #header {
+      height: 200px; }
+      #header .logoH {
+        width: 150px; } }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
@@ -1601,7 +1584,8 @@ article, article::before, article::after, details, details::before, details::aft
         height: calc(50px + 50px + 10px);
         background-color: #fff;
         padding-top: 50px;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        margin: 0; }
         #header .logoH.clicked a, #header .logoH.clicked img {
           width: auto;
           height: 100%; }
@@ -1612,20 +1596,15 @@ article, article::before, article::after, details, details::before, details::aft
     #header .logoH {
       position: relative;
       z-index: 100; }
-      #header .logoH, #header .logoH a, #header .logoH img {
-        width: 150px; }
     #header.topper {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      left: 0;
       height: 50px; }
-      #header.topper li {
-        padding-top: 0; }
-      #header.topper a {
-        height: 50px;
-        line-height: 50px; } }
-  @media (min-width: 1024px) {
-    #header {
-      height: 130px; }
-      #header .logoH, #header .logoH a, #header .logoH img {
-        width: 150px; } }
+      #header.topper .logoH {
+        z-index: 9200; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
@@ -1707,8 +1686,8 @@ nav li:focus a, nav li:hover a {
         overflow: scroll; }
         .navMain > ul > li {
           background-color: transparent; }
-          .navMain > ul > li.current {
-            background-color: #f2f2f2; }
+        .navMain > ul > .current {
+          background-color: #f2f2f2; }
         .navMain > ul li {
           float: none !important; }
           .navMain > ul li a, .navMain > ul li .topLevelItem {
@@ -1718,19 +1697,21 @@ nav li:focus a, nav li:hover a {
             background-position: 10px center; }
             .navMain > ul li .topLevelItem.open {
               background-image: url("/nuevo/img/nav_arrowD.svg"); }
-          .navMain > ul li.current {
-            background-image: url("/nuevo/img/nav_arrowL.svg");
-            background-repeat: no-repeat;
-            background-position: right 10px center; }
-            .navMain > ul li.current a, .navMain > ul li.current .topLevelItem {
-              color: #000; }
           .navMain > ul li + li {
             border-top: 1px solid #fff; }
+        .navMain > ul > .current {
+          background-image: url("/nuevo/img/nav_arrowL.svg");
+          background-repeat: no-repeat;
+          background-position: right 10px center; }
+          .navMain > ul > .current > a, .navMain > ul > .current > .topLevelItem {
+            color: #000; }
         .navMain > ul, .navMain > ul .subMenu {
           top: 0;
           bottom: 0; }
         .navMain > ul.open {
-          left: 0; } }
+          left: 0; }
+        .navMain > ul + .mainMenu {
+          margin-top: 0; } }
   @media (min-width: 768px) {
     .navMain .navClose {
       display: none !important; }
@@ -1744,14 +1725,14 @@ nav li:focus a, nav li:hover a {
           background-color: transparent; }
           .navMain > ul > li:focus a, .navMain > ul > li:hover a {
             color: #333333; }
-        .navMain > ul > li.current {
+      .navMain > ul > .current {
+        background-color: transparent; }
+        .navMain > ul > .current > a, .navMain > ul > .current .topLevelItem {
+          color: #000; }
+        .navMain > ul > .current:focus, .navMain > ul > .current:hover {
           background-color: transparent; }
-          .navMain > ul > li.current > a, .navMain > ul > li.current .topLevelItem {
+          .navMain > ul > .current:focus > a, .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a, .navMain > ul > .current:hover .topLevelItem {
             color: #000; }
-          .navMain > ul > li.current:focus, .navMain > ul > li.current:hover {
-            background-color: transparent; }
-            .navMain > ul > li.current:focus > a, .navMain > ul > li.current:focus .topLevelItem, .navMain > ul > li.current:hover > a, .navMain > ul > li.current:hover .topLevelItem {
-              color: #000; }
     .navMain.topper {
       border-bottom: 1px solid #666;
       position: fixed;
@@ -1764,6 +1745,8 @@ nav li:focus a, nav li:hover a {
       .navMain.topper .mainMenu > li a, .navMain.topper .mainMenu > li .topLevelItem {
         color: #000; }
       .navMain.topper .mainMenu > li:focus > a, .navMain.topper .mainMenu > li:focus .topLevelItem, .navMain.topper .mainMenu > li:hover > a, .navMain.topper .mainMenu > li:hover .topLevelItem {
+        color: #000; }
+      .navMain.topper .mainMenu > .current > a, .navMain.topper .mainMenu > .current .topLevelItem, .navMain.topper .mainMenu > .current:focus > a, .navMain.topper .mainMenu > .current:focus .topLevelItem, .navMain.topper .mainMenu > .current:hover > a, .navMain.topper .mainMenu > .current:hover .topLevelItem {
         color: #000; } }
 
 /* =============================================================================
@@ -1820,31 +1803,25 @@ nav li:focus a, nav li:hover a {
             background-image: url(/nuevo/img/nav_arrowD.svg); } }
 
 @media (min-width: 768px) {
-  .navMain .mainMenu > li.current a, .navMain .mainMenu > li.current .topLevelItem {
-    border-bottom: 3px solid #999; }
   .navMain li, .navMain li a, .navMain li .topLevelItem {
     height: 60px;
     line-height: 60px; }
   .navMain li a, .navMain li .topLevelItem {
     transition: all 1s ease; }
-    .navMain li a:focus, .navMain li a:hover, .navMain li .topLevelItem:focus, .navMain li .topLevelItem:hover {
-      text-shadow: 0 0 3px #000; }
-  .navMain li.current a:focus, .navMain li.current a:hover, .navMain li.current .topLevelItem:focus, .navMain li.current .topLevelItem:hover {
-    text-shadow: 0 0 0 transparent; }
   .navMain.topper .mainMenu {
-    width: 750px;
+    width: 770px;
     margin-right: auto !important;
     margin-left: auto !important;
     float: none !important;
     padding: 0; }
-    .navMain.topper .mainMenu > li.current a, .navMain.topper .mainMenu > li.current .topLevelItem {
-      border-bottom: 2px solid #999; } }
-
-@media (min-width: 1024px) {
-  .navMain.topper .mainMenu {
-    width: 1000px;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
+    .navMain.topper .mainMenu > li {
+      padding-top: 0;
+      height: 50px; }
+    .navMain.topper .mainMenu > .current a, .navMain.topper .mainMenu > .current .topLevelItem {
+      border-bottom: 3px solid #999; }
+    .navMain.topper .mainMenu a {
+      height: 50px;
+      line-height: 50px; } }
 
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
