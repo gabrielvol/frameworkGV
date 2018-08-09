@@ -65,6 +65,13 @@ p, li{
             a{
                 text-decoration: underline;
             }
+        }        
+        &.noUnderline{
+            &:focus, &:hover{
+                a{
+                    text-decoration: none;
+                }
+            }
         }
     }
 }

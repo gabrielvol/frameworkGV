@@ -3,6 +3,7 @@
    ========================================================================== */
 @include afterTablet{
     .hoverGrow,
+    .hoverGrowMedium,
     .hoverGrowBig{
         display: $hoverGrowDisplay;
         vertical-align: middle;
@@ -19,6 +20,14 @@
         &:focus,
         &:active {
             transform: scale($hoverGrowScale);
+        }
+    }
+    
+    .hoverGrowMedium{
+        &:hover,
+        &:focus,
+        &:active {
+            transform: scale($hoverGrowScaleMedium);
         }
     }
     
