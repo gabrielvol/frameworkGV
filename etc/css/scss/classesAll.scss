@@ -139,7 +139,8 @@
         justify-content: center;
         flex-wrap: nowrap;
     }
-    .floatNone{float: $none}
+    .floatNone,
+    .horizontal li.floatNone{float: $none}
     %horizontal{
         list-style: $none;        
         li{

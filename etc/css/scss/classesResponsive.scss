@@ -45,7 +45,7 @@
                 }
             }
         }
-        .floatNoneMO, .unstyledMO li{float: $none}
+        .floatNoneMO, .unstyledMO li, .horizontal li.floatNoneMO{float: $none}
     }
     
     @if $stylesTextMO == "on"{
@@ -159,7 +159,7 @@
                 }
             }
         }
-        .floatNoneAML, .unstyledAML li{float: $none}
+        .floatNoneAML, .unstyledAML li, .horizontal li.floatNoneAML{float: $none}
     }
     
     @if $stylesTextAML == "on"{
@@ -273,7 +273,7 @@
                 }
             }
         }
-        .floatNoneMLO, .unstyledMLO li{float: $none}
+        .floatNoneMLO, .unstyledMLO li, .horizontal li.floatNoneMLO{float: $none}
     }
     
     @if $stylesTextMLO == "on"{
@@ -387,7 +387,7 @@
                 }
             }
         }
-        .floatNoneBT, .unstyledBT li{float: $none}
+        .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT{float: $none}
     }
     
     @if $stylesTextBT == "on"{
@@ -501,7 +501,7 @@
                 }
             }
         }
-        .floatNoneBTL, .unstyledBTL li{float: $none}
+        .floatNoneBTL, .unstyledBTL li, .horizontal li.floatNoneBTL{float: $none}
     }
     
     @if $stylesTextBTL == "on"{
@@ -615,7 +615,7 @@
                 }
             }
         }
-        .floatNoneTO, .unstyledTO li{float: $none}
+        .floatNoneTO, .unstyledTO li, .horizontal li.floatNoneTO{float: $none}
     }
     
     @if $stylesTextTO == "on"{
@@ -730,7 +730,7 @@
                 }
             }
         }
-        .floatNoneAT, .unstyledAT li{float: $none}
+        .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT{float: $none}
     }
     
     @if $stylesTextAT == "on"{
@@ -844,7 +844,7 @@
                 }
             }
         }
-        .floatNoneATL, .unstyledATL li{float: $none}
+        .floatNoneATL, .unstyledATL li, .horizontal li.floatNoneATL{float: $none}
     }
     
     @if $stylesTextATL == "on"{
@@ -958,7 +958,7 @@
                 }
             }
         }
-        .floatNoneTLO, .unstyledTLO li{float: $none}
+        .floatNoneTLO, .unstyledTLO li, .horizontal li.floatNoneTLO{float: $none}
     }
     
     @if $stylesTextTLO == "on"{
@@ -1072,7 +1072,7 @@
                 }
             }
         }
-        .floatNoneTTLO, .unstyledTTLO li{float: $none}
+        .floatNoneTTLO, .unstyledTTLO li, .horizontal li.floatNoneTTLO{float: $none}
     }
     
     @if $stylesTextTTLO == "on"{
@@ -1186,7 +1186,7 @@
                 }
             }
         }
-        .floatNoneBD, .unstyledBD li{float: $none}
+        .floatNoneBD, .unstyledBD li, .horizontal li.floatNoneBD{float: $none}
     }
     
     @if $stylesTextBD == "on"{
@@ -1300,7 +1300,7 @@
                 }
             }
         }
-        .floatNoneAD, .unstyledAD li{float: $none}
+        .floatNoneAD, .unstyledAD li, .horizontal li.floatNoneAD{float: $none}
     }
     
     @if $stylesTextAD == "on"{
