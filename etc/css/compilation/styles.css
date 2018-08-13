@@ -415,6 +415,9 @@ p p, p li, p a, p strong, p dl, p legend, li p, li li, li a, li strong, li dl, l
 p:focus a, p:hover a, li:focus a, li:hover a {
   text-decoration: underline; }
 
+p.noUnderline:focus a, p.noUnderline:hover a, li.noUnderline:focus a, li.noUnderline:hover a {
+  text-decoration: none; }
+
 a {
   transition: background-color 0.7s, color 1s, text-shadow 1s; }
   a, a:active, a:visited {
@@ -732,6 +735,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
    ========================================================================== */
 @media (min-width: 768px) {
   .hoverGrow,
+  .hoverGrowMedium,
   .hoverGrowBig {
     display: inline-block;
     vertical-align: middle;
@@ -743,6 +747,8 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     transition-property: transform; }
   .hoverGrow:hover, .hoverGrow:focus, .hoverGrow:active {
     transform: scale(1.05); }
+  .hoverGrowMedium:hover, .hoverGrowMedium:focus, .hoverGrowMedium:active {
+    transform: scale(1.1); }
   .hoverGrowBig:hover, .hoverGrowBig:focus, .hoverGrowBig:active {
     transform: scale(1.15); } }
 
@@ -909,7 +915,8 @@ article, article::before, article::after, details, details::before, details::aft
   justify-content: center;
   flex-wrap: nowrap; }
 
-.floatNone {
+.floatNone,
+.horizontal li.floatNone {
   float: none !important; }
 
 /* =============================================================================
@@ -1078,7 +1085,7 @@ article, article::before, article::after, details, details::before, details::aft
       display: inline; }
       .horizontalCenterBT li > * {
         display: inline-block; }
-  .floatNoneBT, .unstyledBT li {
+  .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT {
     float: none !important; } }
 
 /* =============================================================================
@@ -1133,7 +1140,7 @@ article, article::before, article::after, details, details::before, details::aft
       display: inline; }
       .horizontalCenterAT li > * {
         display: inline-block; }
-  .floatNoneAT, .unstyledAT li {
+  .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT {
     float: none !important; } }
 
 /* =============================================================================
