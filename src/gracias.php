@@ -3,14 +3,14 @@
     $gracias = 1;
     
     $title = "Gracias";
-    //$titleEN = "Thank Yout";
+    //$titleEN = "Thank You";
     
     $mdesc = "";
     //$mdescEN = "";
     
     $ogTitle = "OGWebsiteTitle";
     $ogSiteName = $ogTitle;
-    $ogDesc = "Fotos.";
+    $ogDesc = "Descr.";
     // Max 65 char
     // 12345678901234567890123456789012345678901234567890123456789012345
     
