@@ -7,52 +7,88 @@
     li{
         & + li{}
     }
-    
-    .tw{
-        a{
-            background-image: url('/nuevo/img/soc_tw.svg');
-        }
-    }
 
-    .sk{
-        a{
-            background-image: url('/nuevo/img/soc_sk.svg');
-        }
-    }
-
-    .vi{
-        a{
-            background-image: url('/nuevo/img/soc_vi.svg');
-        }
-    }  
-
-    .li{
-        a{
-            background-image: url('/nuevo/img/soc_li.svg');
-        }
-    }
-
-    .ig{
-        a{
-            background-image: url('/nuevo/img/soc_ig.svg');
-        }
-    }
-
-    .fb{
+    .soc_fb{ /* Soc Facebook */
         a{
             background-image: url('/nuevo/img/soc_fb.svg');
         }
     }
 
-    .sc{
+    .soc_sk{ /* Soc Skype */
+        a{
+            background-image: url('/nuevo/img/soc_sk.svg');
+        }
+    }
+    
+    .soc_tw{ /* Soc Twitter */
+        a{
+            background-image: url('/nuevo/img/soc_tw.svg');
+        }
+    }
+
+    .soc_vi{ /* Soc Vimeo */
+        a{
+            background-image: url('/nuevo/img/soc_vi.svg');
+        }
+    }  
+
+    .soc_ig{ /* Soc Instagram */
+        a{
+            background-image: url('/nuevo/img/soc_ig.svg');
+        }
+    }
+
+    .soc_pi{ /* Soc Pinterest */
+        a{
+            background-image: url('/nuevo/img/soc_pi.svg');
+        }
+    }
+
+    .soc_yt{ /* Soc YouTube */
+        a{
+            background-image: url('/nuevo/img/soc_yt.svg');
+        }
+    }
+
+    .soc_li{ /* Soc LinkedIn */
+        a{
+            background-image: url('/nuevo/img/soc_li.svg');
+        }
+    }
+
+    .soc_sp{ /* Soc Spotify */
+        a{
+            background-image: url('/nuevo/img/soc_sp.svg');
+        }
+    }
+
+    .soc_sc{ /* Soc SnapChat */
         a{
             background-image: url('/nuevo/img/soc_sc.svg');
         }
     }
 
-    .wp{
+    .soc_wp{ /* Soc WhatsApp */
         a{
             background-image: url('/nuevo/img/soc_wp.svg');
+        }
+    }
+
+    .soc_em{ /* Soc Correo Electrónico */
+        a{
+            background-image: url('/nuevo/img/soc_em.svg');
+        }
+    }
+
+    .soc_ta{ /* Soc TripAdvisor */
+        a{
+            background-image: url('/nuevo/img/soc_ta.svg');
+        }
+    }
+
+    .soc_go{ /* Soc Guía Oleo */
+        a{
+            background-image: url('/nuevo/img/soc_go.svg');
         }
     }
     
