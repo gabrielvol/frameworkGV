@@ -49,6 +49,12 @@
             background-image: url('/nuevo/img/soc_sc.svg');
         }
     }
+
+    .wp{
+        a{
+            background-image: url('/nuevo/img/soc_wp.svg');
+        }
+    }
     
     @include beforeTablet{       
         li{

@@ -59,4 +59,10 @@
             <img src="/img/soc_sc.svg" class="svg displayBlock" alt="<?php echo _('Ir a nuestro perfil en Snapchat'); ?>.">
         </a>
     </li>
+    <li class="wp">
+        <a href="/nuevo/" class="wp displayBlock hoverGrowBig mhaBT indentedText">
+            <?php echo _("Nuestro contacto en WhatsApp"); ?>
+            <img src="/img/soc_wp.svg" class="svg displayBlock" alt="<?php echo _('Nuestro contacto en WhatsApp'); ?>.">
+        </a>
+    </li>
 </ul>
