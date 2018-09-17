@@ -8,6 +8,7 @@
     $mdesc = "";
     //$mdescEN = "";
     
+    $ogURL = $url;
     $ogTitle = "OGWebsiteTitle";
     $ogSiteName = $ogTitle;
     $ogDesc = "Descr.";
