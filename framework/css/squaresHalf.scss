@@ -1,0 +1,144 @@
+/* =============================================================================
+   Squares Half / Berly
+   ========================================================================== */
+.serviciosList{
+    .img{
+        img{
+            width: 100%;
+        }
+    }
+    
+    .txt{
+        p{
+            &.sug{
+                font-family: $openSans;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+            }
+        }
+        
+        ul{
+            li{
+                &::before{
+                    content: "·";
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    color: $greyD;
+                    font-size: 4.5rem;
+                    line-height: 15px;
+                }                
+            }
+        }
+    }
+    
+    @include beforeMobile450{
+        > li{
+            & + li{
+                @include borderStyleT($bcGreyD, 3px);
+                margin-top: 30px;
+            }   
+        }   
+        
+        .txt{
+            padding: 15px 30px 30px;
+            
+            h3, p, li{
+                font-size: 0.9rem;
+            }
+
+            h2{
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            h3{
+                font-size: 1.1rem;
+                margin: 15px 0 5px;
+            }
+        
+            ul{
+                padding: 5px 0 0;
+            }
+        } 
+    }
+    
+    @include afterMobile450{
+        > li{
+            & + li{
+                margin-top: 70px;
+            }        
+
+            &:nth-child(2n){
+                .img{
+                    float: right;                    
+                }
+                
+                .txt{
+                    float: $none;
+                    padding-right: 4%;
+                    padding-left: 8%;
+                }
+            }
+        }
+         
+        .img, .txt{
+            float: left;
+            min-height: 200px;
+        }
+         
+        .img{
+            width: 45%;
+        }
+        
+        .txt{
+            width: 55%;
+            padding-top: 0; 
+            padding-right: 8%;
+            padding-bottom: 0;
+            padding-left: 4%;     
+            
+            h3, p, li{
+                font-size: 0.9rem;
+            }
+
+            h2{
+                font-size: 2.1rem;
+            }
+
+            h3{
+                margin: 15px 0 0;
+            }
+
+            ul{
+                padding: 10px 0 0;
+            }
+        }
+    }
+    
+    @include afterTabletLandscape{
+        .img, .txt{
+            width: 50%;
+            min-height: 350px;
+        }
+        
+        .txt{
+            h3, p, li{
+                font-size: 1.1rem;
+            }
+
+            h2{
+                font-size: 2.3rem;
+            }
+
+            h3{
+                margin: 15px 0 0;
+            }
+
+            ul{
+                padding: 10px 0 0;
+            }
+        }        
+    }
+}
