@@ -98,7 +98,8 @@
         
         @if $navTopper == "on"{
             &.topper{
-                .mainMenu{               
+                .mainMenu{
+                    @include borderStyleB($bcNavTopper); 
                     @include centerCustom(770px);
                     float: $none;
                     padding: 0;
