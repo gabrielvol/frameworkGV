@@ -6,7 +6,7 @@
     $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/head.inc.php');
 ?>
-<script src="https://raw.githubusercontent.com/gabrielvol/frameworkGV/master/etc/js/jquery.lazy.min.js"></script>
+<script src="/etc/js/jquery.lazy.min.js"></script>
 <link href="/framework/css/main.css" rel="stylesheet">
 <link href="/framework/css/lazy.css" rel="stylesheet">
 </head>
