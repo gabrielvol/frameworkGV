@@ -45,4 +45,7 @@
 </div>
 <div class="modalBG displayNone"></div>
 
+<script src="/nuevo/js/slick.js"></script>
+<script src="/nuevo/js/lightbox.min.js"></script>
+<script src="/nuevo/js/scrollKeep.js"></script>
 <script src="/nuevo/js/_main.js"></script>
