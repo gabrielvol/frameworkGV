@@ -60,6 +60,7 @@
         </a>
     </li>
     <li class="soc_wa">
+        <a href="https://api.whatsapp.com/send?phone=5491198765432">11 9876 5432</a> 
         <a href="/nuevo/" class="wa displayBlock hoverGrowBig indentedText">
             <?php echo _("Nuestro contacto en WhatsApp"); ?>
             <img src="/nuevo/img/soc_wa.svg" class="displayBlock" alt="<?php echo _('Nuestro contacto en WhatsApp'); ?>.">
