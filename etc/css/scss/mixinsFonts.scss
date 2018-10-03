@@ -7,8 +7,32 @@
         .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
     }
     
-    @if $openSansClasses == "on" {
-        @each $fontFamilyClassName, $fontFamilyName in $openSansMap {
+    @if $openSansL == "on" {
+        @each $fontFamilyClassName, $fontFamilyName in $openSansLmap {
+            .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
+        }
+    }
+    
+    @if $openSansR == "on" {
+        @each $fontFamilyClassName, $fontFamilyName in $openSansRmap {
+            .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
+        }
+    }
+    
+    @if $openSansI == "on" {
+        @each $fontFamilyClassName, $fontFamilyName in $openSansImap {
+            .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
+        }
+    }
+    
+    @if $openSansB == "on" {
+        @each $fontFamilyClassName, $fontFamilyName in $openSansBmap {
+            .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
+        }
+    }
+    
+    @if $openSansBI == "on" {
+        @each $fontFamilyClassName, $fontFamilyName in $openSansBImap {
             .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
         }
     }

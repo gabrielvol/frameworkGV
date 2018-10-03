@@ -740,7 +740,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
-    box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
@@ -1741,7 +1741,6 @@ nav li:focus a, nav li:hover a {
           .navMain > ul > .current:focus > a, .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a, .navMain > ul > .current:hover .topLevelItem {
             color: #000; }
     .navMain.topper {
-      border-bottom: 1px solid #666;
       position: fixed;
       top: 0;
       right: 0;
@@ -1815,20 +1814,22 @@ nav li:focus a, nav li:hover a {
     line-height: 60px; }
   .navMain li a, .navMain li .topLevelItem {
     transition: all 1s ease; }
-  .navMain.topper .mainMenu {
-    width: 770px;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    float: none !important;
-    padding: 0; }
-    .navMain.topper .mainMenu > li {
-      padding-top: 0;
-      height: 50px; }
-    .navMain.topper .mainMenu > .current a, .navMain.topper .mainMenu > .current .topLevelItem {
-      border-bottom: 3px solid #999; }
-    .navMain.topper .mainMenu a {
-      height: 50px;
-      line-height: 50px; } }
+  .navMain.topper {
+    border-bottom: 1px solid #666; }
+    .navMain.topper .mainMenu {
+      width: 770px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+      float: none !important;
+      padding: 0; }
+      .navMain.topper .mainMenu > li {
+        padding-top: 0;
+        height: 50px; }
+      .navMain.topper .mainMenu > .current a, .navMain.topper .mainMenu > .current .topLevelItem {
+        border-bottom: 3px solid #999; }
+      .navMain.topper .mainMenu a {
+        height: 50px;
+        line-height: 50px; } }
 
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]

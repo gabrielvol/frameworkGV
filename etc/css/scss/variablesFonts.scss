@@ -90,10 +90,8 @@ $h5List: 'h5, .hCin';
 $h6List: 'h6, .hSei';
 
     //Open Sans Map
-$openSansMap:(
-    openSansL: open_sanslight,
-    openSans: open_sansregular,
-    openSansI: open_sansitalic,
-    openSansB: open_sansbold,
-    openSansBI: open_sansbold_italic
-);
+$openSansLmap:(openSansL: open_sanslight);
+$openSansRmap:(openSans: open_sansregular);
+$openSansImap:(openSansI: open_sansitalic);
+$openSansBmap:(openSansB: open_sansbold);
+$openSansBImap:(openSansBI: open_sansbold_italic);
