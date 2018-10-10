@@ -42,4 +42,5 @@
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
     <script src="/js/slick.js"></script>
+    <script src="/js/_slick.js"></script>
 </html>
