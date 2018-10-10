@@ -12,13 +12,13 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slickSection slick mask horizontal clearfix">
             <li><img data-lazy="/framework/img/img_slide01.png" alt="" aria-hidden="true"></li>
             <li><img data-lazy="/framework/img/img_slide02.png" alt="" aria-hidden="true"></li>
             <li><img data-lazy="/framework/img/img_slide03.png" alt="" aria-hidden="true"></li>
         </ul>
         
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slickSection slick mask horizontal clearfix">
             <li><img src="/framework/img/img_slide01.png" alt="" aria-hidden="true"></li>
             <li><img src="/framework/img/img_slide02.png" alt="" aria-hidden="true"></li>
             <li><img src="/framework/img/img_slide03.png" alt="" aria-hidden="true"></li>
@@ -30,7 +30,7 @@
             $fotoSliderHeader03 = '03';
             include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.header.inc.php');
         ?>
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slickSection slick mask horizontal clearfix">
             <?php if(isset($fotoSliderHeader01)): ?>
             <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($fotoSliderHeader02)): ?>

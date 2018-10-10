@@ -6,6 +6,7 @@ $(document).ready(function () {
         
         ,dots: true
         ,arrows: false
+        // Si se ven más de un slide a la vez no debe ser fade.
         ,fade: true
         
         ,pauseOnHover: false
