@@ -72,6 +72,12 @@
         a{
             background-image: url('/nuevo/img/soc_wa.svg');
         }
+            
+            &.conTel{
+                background-position: left center;
+                background-size: auto 20px;
+                padding-left: 25px;
+            }
     }
 
     .soc_em{ /* Soc Correo Electrónico */
