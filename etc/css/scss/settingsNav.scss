@@ -299,10 +299,7 @@ nav{
         
         @if $navTopper == "on"{        
             &.topper{
-                position: fixed;
                 top: 0;
-                right: 0;
-                width: 100%;  
                 background-color: $bgNavTopper;
 
                 .hamb{

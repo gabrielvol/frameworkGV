@@ -36,7 +36,7 @@
         @import "stylesNavList";
     }    
     
-    @include afterTablet{ 
+    @include afterTablet{
         /* Menu y logo flotados
         width: calc(100% - #{$logoW});
         float: left;
@@ -105,6 +105,9 @@
         @if $navTopper == "on"{
             &.topper{
                 @include borderStyleB($bcNavTopper); 
+                position: fixed;
+                right: 0;
+                width: 100%; 
                 
                 .mainMenu{
                     @include centerCustom(770px);
