@@ -36,7 +36,13 @@
         @import "stylesNavList";
     }    
     
-    @include afterTablet{        
+    @include afterTablet{ 
+        /* Menu y logo flotados
+        width: calc(100% - #{$logoW});
+        float: left;
+        margin-top: 30px;
+        */
+        
         .mainMenu{
             > li{
                 &.current{
