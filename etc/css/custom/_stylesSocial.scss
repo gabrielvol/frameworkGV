@@ -108,7 +108,7 @@
         @if $navDrawer == "on"{
             &.clicked{
                 position: fixed;
-                z-index: $zIndexLogoHClicked;
+                z-index: $zIndexSocialClicked;
                 top: auto;
                 right: 10px;
                 bottom: 20px;
