@@ -9,7 +9,7 @@
         <a href="https://goo.gl/maps/" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
-    <p class="copyright">
+    <p class="copyrightFooter">
         &copy;
         <?php
             $fromYear = 2010;
