@@ -311,10 +311,14 @@ form{
         @include tabletOnly{
             width: $formWidthTO;
         }
+    
+        @include afterTabletLandscape{
+            width: $formWidthATL!important;
+        }
     }
     
     @include afterTabletLandscape{
-        width: $formWidthATL;
+        width: $formWidthATL!important;
     }
     
     @include afterDesktop{
