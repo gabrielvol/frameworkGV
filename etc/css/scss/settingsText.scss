@@ -1,13 +1,13 @@
 /* =============================================================================
    Font Settings | Etc [settingsText.scss]
    ========================================================================== */
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, select, textarea, blockquote, table{
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
     font-family: $mainFontStack;
     font-weight: $mainFontWeight;
     font-size: $mainFontSize;
     line-height: $mainLineHeight;
 }
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table{
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
     color: $mainFontColour;
 }
 /*
