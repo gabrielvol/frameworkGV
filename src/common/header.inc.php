@@ -1,5 +1,8 @@
 <?php
     $url = "http://www.site.com.ar";
+    $urlFB = "https://www.facebook.com/usuario";
+    $urlIG = "https://www.instagram.com/usuario";
+    $urlWA = "https://api.whatsapp.com/send?phone=5491100001111";
 ?>
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
 <header id="header" class="">

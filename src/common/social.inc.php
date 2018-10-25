@@ -1,6 +1,6 @@
 <ul class="social horizontal clearfix">
     <li class="soc_fb">
-        <a href="/nuevo/" class="fb displayBlock hoverGrowBig indentedText">
+        <a href="<?php echo $urlFB ?>" class="fb displayBlock hoverGrowBig indentedText">
             <?php echo _("Seguinos en Facebook"); ?>
             <img src="/nuevo/img/soc_fb.svg" class="displayBlock" alt="<?php echo _('Ir a nuestro perfil en Facebook'); ?>.">
         </a>
@@ -24,7 +24,7 @@
         </a>
     </li>
     <li class="soc_ig">
-        <a href="/nuevo/" class="ig displayBlock hoverGrowBig indentedText">
+        <a href="<?php echo $urlIG ?>" class="ig displayBlock hoverGrowBig indentedText">
             <?php echo _("Seguinos en Instagram"); ?>
             <img src="/nuevo/img/soc_ig.svg" class="displayBlock" alt="<?php echo _('Ir a nuestro perfil en Instagram'); ?>.">
         </a>
@@ -60,7 +60,7 @@
         </a>
     </li>
     <li class="soc_wa">
-        <a href="https://api.whatsapp.com/send?phone=5491198765432" class="wa conTel displayBlock">11 9876 5432</a> 
+        <a href="<?php echo $urlWA ?>" class="wa conTel displayBlock">11 9876 5432</a> 
         
         <a href="https://api.whatsapp.com/send?phone=5491198765432" class="wa displayBlock hoverGrowBig indentedText"><?php echo _('Nuestro contacto en WhatsApp'); ?>.</a> 
         
