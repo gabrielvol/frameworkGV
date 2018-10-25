@@ -43,6 +43,7 @@
 <meta property="og:title" content="<?php echo $ogTitle; ?>">
 <meta property="og:url" content="<?php echo $url; ?>">
 <meta property="og:description" content="<?php echo $ogDesc; ?>">
+<meta property="og:image:secure_url" content="<?php echo $ogURL; ?>/og_img.jpg">
 <meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?php echo $ogSiteName; ?>">
