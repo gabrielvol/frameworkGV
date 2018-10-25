@@ -4,8 +4,8 @@
 ***
 
 #### Datos FTP
-`http://www.sitioweb.com.ar/`  
-`000.000.000.00`
+`http://sitioweb/`  
+`00000000000`
 
 Usuario
 `user`
@@ -16,7 +16,7 @@ Contraseña
 
 
 #### Panel de control
-`http://www.sitioweb.com.ar/cpanel`
+`http://sitioweb/cpanel`
 
 Usuario 
 `user`
@@ -27,7 +27,7 @@ Contraseña
 
 
 #### Datos FTP Alternativos
-`http://www.sitioweb.com.ar/`
+`http://sitioweb/`
 
 Usuario
 `user`
@@ -41,10 +41,16 @@ Contraseña
 AgenciaDeHosting
 
 DNS 1
-`ns1.hosting.com (000.000.000.000)`
+`ns1.hosting.com (000000000000)`
 
 DNS 2
-`ns2.hosting.com (000.000.000.000)`
+`ns2.hosting.com (000000000000)`
+
+DNS 3
+`ns3.hosting.com (000000000000)`
+
+DNS 4
+`ns4.hosting.com (000000000000)`
 
 Contacto técnico
 `Nombre` 
@@ -69,7 +75,7 @@ Contraseña
 
 
 #### WordPress access
-`http://www.sitio.com.ar/wp-admin`
+`http://sitioweb/wp-admin`
 
 Usuario
 `user`
