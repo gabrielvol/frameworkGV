@@ -356,10 +356,10 @@
 //INICIA MENSAJE OK EN POPUP
                 $status = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="button" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="mbm green alignCenter">'._("$statusOKGlobalA").'</h2>'
                         . '<p class="status ok">'._("$statusOKGlobalB").'</p>'
-                        . '<button type="button" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
+                        . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modalBG"></div>';
@@ -397,10 +397,10 @@
 //INICIA MENSAJE ERROR EN POPUP
                 $status = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="button" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="mbm errorColour alignCenter">'._("$statusErrorGlobalA").'</h2>'
                         . '<p class="status error">'._("$statusErrorGlobalB").'</p>'
-                        . '<button type="button" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
+                        . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modalBG"></div>';
