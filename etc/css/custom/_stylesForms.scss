@@ -14,7 +14,7 @@ fieldset{
             
     &.invalidField{
         legend, label span{
-            color: $errorColour;
+            color: $formInputErrorMsgColour;
         }
         
         legend{
@@ -223,7 +223,7 @@ form{
                 display: block;
                 padding-top: 3px;
                 padding-left: 10px;
-                color: $errorColour;
+                color: $formInputErrorMsgColour;
                 font-family: $arial;
                 font-weight: 700;
                 font-size: 0.8rem!important;
