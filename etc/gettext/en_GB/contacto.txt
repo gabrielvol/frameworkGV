@@ -86,11 +86,11 @@ msgstr "Please complete your address."
 
 <?php echo _('Localidad'); ?>
 msgid "Localidad"
-msgstr ""
+msgstr "TextoSinTraducir"
 
 <?php echo _('Por favor, ingrese su localidad.'); ?>
 msgid "Por favor, ingrese su localidad."
-msgstr ""
+msgstr "TextoSinTraducir"
 
 
 
@@ -111,6 +111,16 @@ msgstr "State/Province"
 <?php echo _('Por favor, ingrese su provincia.'); ?>
 msgid "Por favor, ingrese su provincia."
 msgstr "Please, tell us what state/province are you from.
+
+
+
+<?php echo _('Pa&iacute;s'); ?>
+msgid "Pa&iacute;s"
+msgstr "Pa&iacute;s"
+
+<?php echo _('Por favor, ingrese su pa&iacute;s.'); ?>
+msgid "Por favor, ingrese su pa&iacute;s."
+msgstr "Por favor, state your country."
 
 
 
@@ -154,11 +164,11 @@ msgstr "Please, state your company."
 
 <?php echo _('Raz&oacute;n Social'); ?>
 msgid "Raz&oacute;n Social"
-msgstr ""
+msgstr "TextoSinTraducir"
 
 <?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
 msgid "Por favor, ingrese su raz&oacute;n social."
-msgstr ""
+msgstr "TextoSinTraducir"
 
 
 
@@ -194,11 +204,11 @@ msgstr "Please, state your position."
 
 <?php echo _('Rubro'); ?>
 msgid "Rubro"
-msgstr ""
+msgstr "TextoSinTraducir"
 
 <?php echo _('Por favor, ingrese un rubro.'); ?>
 msgid "Por favor, ingrese un rubro."
-msgstr ""
+msgstr "TextoSinTraducir"
 
 
 
@@ -232,7 +242,7 @@ msgstr "Write your message here&hellip;"
 
 <?php echo _('Por favor, complete su mensaje.'); ?>
 msgid "Por favor, complete su mensaje."
-msgstr ""
+msgstr "TextoSinTraducir"
 
 
 
