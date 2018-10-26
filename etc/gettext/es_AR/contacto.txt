@@ -152,6 +152,16 @@ msgstr "Por favor, ingrese el nombre de su empresa."
 
 
 
+<?php echo _('Raz&oacute;n Social'); ?>
+msgid "Raz&oacute;n Social"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
+msgid "Por favor, ingrese su raz&oacute;n social."
+msgstr ""
+
+
+
 <?php echo _('Sitio web'); ?>
 msgid "Sitio web"
 msgstr "Sitio web"
@@ -219,6 +229,10 @@ msgstr "Mensaje"
 <?php echo _('Escriba aqu&iacute; su mensaje&hellip;'); ?>
 msgid "Escriba aqu&iacute; su mensaje&hellip;"
 msgstr "Escriba aqu&iacute; su mensaje&hellip;"
+
+<?php echo _('Por favor, complete su mensaje.'); ?>
+msgid "Por favor, complete su mensaje."
+msgstr ""
 
 
 

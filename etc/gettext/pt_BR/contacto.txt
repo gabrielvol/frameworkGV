@@ -103,6 +103,7 @@ msgid "Por favor, ingrese su c&oacute;digo postal."
 msgstr ""
 
 
+
 <?php echo _('Provincia'); ?>
 msgid "Provincia"
 msgstr ""
@@ -120,6 +121,7 @@ msgstr "Telefone"
 <?php echo _('Por favor, ingrese su n&uacute;mero de tel&eacute;fono.'); ?>
 msgid "Por favor, ingrese su n&uacute;mero de tel&eacute;fono."
 msgstr "Por favor insira um n&uacute;mero de telefone."
+
 
 
 <?php echo _('Correo electr&oacute;nico'); ?>
@@ -147,6 +149,16 @@ msgstr ""
 <?php echo _('Por favor, ingrese el nombre de su empresa.'); ?>
 msgid "Por favor, ingrese el nombre de su empresa."
 msgstr "Por favor, indique o nome da empresa."
+
+
+
+<?php echo _('Raz&oacute;n Social'); ?>
+msgid "Raz&oacute;n Social"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
+msgid "Por favor, ingrese su raz&oacute;n social."
+msgstr ""
 
 
 
@@ -217,6 +229,10 @@ msgstr "Mensagem"
 <?php echo _('Escriba aqu&iacute; su mensaje&hellip;'); ?>
 msgid "Escriba aqu&iacute; su mensaje&hellip;"
 msgstr "Escreva sua mensagem aqui"
+
+<?php echo _('Por favor, complete su mensaje.'); ?>
+msgid "Por favor, complete su mensaje."
+msgstr ""
 
 
 
