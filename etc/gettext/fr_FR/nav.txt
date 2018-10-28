@@ -1,0 +1,27 @@
+/* =============================================================================
+   Gettext fr_FR -- Nav
+   ========================================================================== */
+
+<?php echo _("Inicio"); ?>
+msgid "Inicio"
+msgstr ""
+
+<?php echo _("Home"); ?>
+msgid "Home"
+msgstr ""
+
+<?php echo _("Nosotros"); ?>
+msgid "Nosotros"
+msgstr ""
+
+<?php echo _("Productos"); ?>
+msgid "Productos"
+msgstr ""
+
+<?php echo _("Servicios"); ?>
+msgid "Servicios"
+msgstr ""
+
+<?php echo _("Contacto"); ?>
+msgid "Contacto"
+msgstr ""

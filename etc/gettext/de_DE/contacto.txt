@@ -1,136 +1,126 @@
 /* =============================================================================
-   Gettext en_GB -- Contacto
+   Gettext de_DE -- Contacto
    ========================================================================== */
 
 <?php echo _('* Datos obligatorios.'); ?>
 msgid "* Datos obligatorios."
-msgstr "* Mandatory fields."
+msgstr "* Pflicht Daten."
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>
 msgid "Los campos marcados con * son obligatorios."
-msgstr "* Marked fields are mandatory."
+msgstr "Die mit einem *(Stern) gekennzeichneten Felder sind Pflichtfelder."
 
 <?php echo _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.'); ?>
 msgid "Complete el formulario. Nos comunicaremos con Ud. a la brevedad."
-msgstr "Please complete the form, we'll get in touch with you shortly."
+msgstr "Formular aus. Wir werden uns in K&uulm;rze bei Ihnen melden."
 
 <?php echo _('Complete el formulario.'); ?>
 msgid "Complete el formulario."
-msgstr "Please complete the form."
+msgstr "F&uulm;llen Sie das Formular aus."
 
 <?php echo _('Nos comunicaremos con Ud. a la brevedad.'); ?>
 msgid "Nos comunicaremos con Ud. a la brevedad."
-msgstr "We'll get in touch with you as soon as possible."
+msgstr "Wir werden uns in K&uulm;rze bei Ihnen melden."
 
 <?php echo _('Env&iacute;o exitoso.'); ?>
 msgid "Env&iacute;o exitoso."
-msgstr "Data successfully sent."
+msgstr "Sendung erfolgreich."
 
 <?php echo _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.'); ?>
 msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias."
-msgstr "Thank you. Your message has been successfully delivered, we'll be in touch shortly."
+msgstr "Die Daten wurden korrekt gesendet, wir werden uns umgehend mit Ihnen in Verbindung setzen. Vielen Dank."
 
 <?php echo _('Hubo un error al enviar el mensaje.'); ?>
 msgid "Hubo un error al enviar el mensaje."
-msgstr "There was an error delivering your message."
+msgstr "Beim Senden der Nachricht ist ein Fehler aufgetreten."
 
 <?php echo _('Intente nuevamente m&aacute;s tarde.'); ?>
 msgid "Intente nuevamente m&aacute;s tarde."
-msgstr "Please try again later."
+msgstr "Versuchen Sie es sp&aulm;ter noch einmal."
 
 
 
 <?php echo _('Nombre'); ?>
 msgid "Nombre"
-msgstr "Name"
+msgstr "Vorname"
 
 <?php echo _('Apellido'); ?>
 msgid "Apellido"
-msgstr "Surname"
+msgstr "Nachname"
 
 <?php echo _('Nombre y apellido'); ?>
 msgid "Nombre y apellido"
-msgstr "Full name"
+msgstr "Vor- und Nachname"
 
 <?php echo _('Por favor, ingrese su nombre.'); ?>
 msgid "Por favor, ingrese su nombre."
-msgstr "Please complete your name."
+msgstr "Bitte geben Sie Ihren Vornamen ein."
 
 <?php echo _('Por favor, ingrese su apellido.'); ?>
 msgid "Por favor, ingrese su apellido."
-msgstr "Please complete your surname."
+msgstr "Bitte geben Sie Ihren Nachname ein."
 
 <?php echo _('Por favor, ingrese su nombre y apellido.'); ?>
 msgid "Por favor, ingrese su nombre y apellido."
-msgstr "Please complete your full name."
+msgstr "Bitte geben Sie Ihren Vor- und Nachnamen ein."
 
 
 
 <?php echo _('Direcci&oacute;n'); ?>
 msgid "Direcci&oacute;n"
-msgstr "Address"
+msgstr "Adresse"
 
 <?php echo _('Domicilio'); ?>
 msgid "Domicilio"
-msgstr "Home Address"
+msgstr "Adresse"
 
 <?php echo _('Por favor, ingrese su direcci&oacute;n.'); ?>
 msgid "Por favor, ingrese su direcci&oacute;n."
-msgstr "Please complete your address."
+msgstr "Bitte geben Sie Ihre Adresse ein."
 
 <?php echo _('Por favor, ingrese su domicilio.'); ?>
 msgid "Por favor, ingrese su domicilio."
-msgstr "Please complete your address."
+msgstr "Bitte geben Sie Ihre Adresse ein."
 
 
 
 <?php echo _('Localidad'); ?>
 msgid "Localidad"
-msgstr "TextoSinTraducir"
+msgstr "Ort, Standort"
 
 <?php echo _('Por favor, ingrese su localidad.'); ?>
 msgid "Por favor, ingrese su localidad."
-msgstr "TextoSinTraducir"
+msgstr "Bitte geben Sie Ihren Standort ein."
 
 
 
 <?php echo _('C&oacute;digo postal'); ?>
 msgid "C&oacute;digo postal"
-msgstr "ZIP Code"
+msgstr "Postleitzahl"
 
 <?php echo _('Por favor, ingrese su c&oacute;digo postal.'); ?>
 msgid "Por favor, ingrese su c&oacute;digo postal."
-msgstr "Please, enter your ZIP Code."
+msgstr "Bitte geben Sie Ihre Postleitzahl ein."
 
 
 
 <?php echo _('Provincia'); ?>
 msgid "Provincia"
-msgstr "State/Province"
+msgstr "Provinz"
 
 <?php echo _('Por favor, ingrese su provincia.'); ?>
 msgid "Por favor, ingrese su provincia."
-msgstr "Please, tell us what state/province are you from.
-
-
-
-<?php echo _('Pa&iacute;s'); ?>
-msgid "Pa&iacute;s"
-msgstr "Pa&iacute;s"
-
-<?php echo _('Por favor, ingrese su pa&iacute;s.'); ?>
-msgid "Por favor, ingrese su pa&iacute;s."
-msgstr "Por favor, state your country."
+msgstr "Bitte geben Sie Ihre Provinz ein."
 
 
 
 <?php echo _('Tel&eacute;fono'); ?>
 msgid "Tel&eacute;fono"
-msgstr "Telephone"
+msgstr "Telefonnummer"
 
 <?php echo _('Por favor, ingrese su n&uacute;mero de tel&eacute;fono.'); ?>
 msgid "Por favor, ingrese su n&uacute;mero de tel&eacute;fono."
-msgstr "Please enter a telephone number."
+msgstr ""
 
 
 
@@ -144,108 +134,108 @@ msgstr "E-mail"
 
 <?php echo _('Por favor, ingrese su direcci&oacute;n de correo.'); ?>
 msgid "Por favor, ingrese su direcci&oacute;n de correo."
-msgstr "Please enter a valid e-mail address."
+msgstr "Bitte geben Sie Ihre E-Mail-Adresse ein."
 
 <?php echo _('Por favor, ingrese su e-mail.'); ?>
 msgid "Por favor, ingrese su e-mail."
-msgstr "Please enter a valid e-mail address."
+msgstr "Bitte geben Sie Ihre E-Mail-Adresse ein."
 
 
 
 <?php echo _('Empresa'); ?>
 msgid "Empresa"
-msgstr "Company"
+msgstr "Namen Ihrer Firma"
 
 <?php echo _('Por favor, ingrese el nombre de su empresa.'); ?>
 msgid "Por favor, ingrese el nombre de su empresa."
-msgstr "Please, state your company."
+msgstr "Bitte geben Sie den Namen Ihrer Firma ein."
 
 
 
 <?php echo _('Raz&oacute;n Social'); ?>
 msgid "Raz&oacute;n Social"
-msgstr "TextoSinTraducir"
+msgstr ""
 
 <?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
 msgid "Por favor, ingrese su raz&oacute;n social."
-msgstr "TextoSinTraducir"
+msgstr ""
 
 
 
 <?php echo _('Sitio web'); ?>
 msgid "Sitio web"
-msgstr "Website"
+msgstr "Webseite"
 
 <?php echo _('Por favor, ingrese su sitio web.'); ?>
 msgid "Por favor, ingrese su sitio web."
-msgstr "Please, enter your website url."
+msgstr "Bitte geben Sie Ihre Websiete ein."
 
 
 
 <?php echo _('Perfil de Facebook'); ?>
 msgid "Perfil de Facebook"
-msgstr "Facebook Profile"
+msgstr "Facebook-Profil"
 
 <?php echo _('Por favor, ingrese su perfil de Facebook.'); ?>
 msgid "Por favor, ingrese su perfil de Facebook."
-msgstr "Please, enter your Facebook profile"
+msgstr "Bitte geben Sie Ihr Facebook-Profil ein."
 
 
 
 <?php echo _('Cargo'); ?>
 msgid "Cargo"
-msgstr "Position"
+msgstr "Berufsbezeichnung"
 
 <?php echo _('Por favor, ingrese su cargo.'); ?>
 msgid "Por favor, ingrese su cargo."
-msgstr "Please, state your position."
+msgstr "Bitte geben Sie Ihre Berufsbezeichnung ein."
 
 
 
 <?php echo _('Rubro'); ?>
 msgid "Rubro"
-msgstr "Business area"
+msgstr "Titel"
 
 <?php echo _('Por favor, ingrese un rubro.'); ?>
 msgid "Por favor, ingrese un rubro."
-msgstr "Please, enter your business area"
+msgstr "Bitte geben Sie einen Titel ein."
 
 
 
 <?php echo _('Asunto'); ?>
 msgid "Asunto"
-msgstr "Subject"
+msgstr "Betreff"
 
 <?php echo _('Por favor, ingrese un asunto.'); ?>
 msgid "Por favor, ingrese un asunto."
-msgstr "Please, enter a subject."
+msgstr "Bitte geben Sie einen Betreff ein."
 
 
 
 <?php echo _('Fecha'); ?>
 msgid "Fecha"
-msgstr "Date"
+msgstr "Datum"
 
 <?php echo _('Por favor, indique la fecha deseada.'); ?>
 msgid "Por favor, indique la fecha deseada."
-msgstr "Please choose a date."
+msgstr "Bitte geben Sie das gewünschte Datum an."
 
 
 
 <?php echo _('Mensaje'); ?>
 msgid "Mensaje"
-msgstr "Message"
+msgstr "Nachricht"
 
 <?php echo _('Escriba aqu&iacute; su mensaje'); ?>
 msgid "Escriba aqu&iacute; su mensaje"
-msgstr "Write your message here&hellip;"
+msgstr "Schreiben Sie Ihre Nachricht hier"
 
 <?php echo _('Por favor, complete su mensaje.'); ?>
 msgid "Por favor, complete su mensaje."
-msgstr "TextoSinTraducir"
+msgstr ""
 
 
 
 <?php echo _('Enviar'); ?>
 msgid "Enviar"
-msgstr "Send"
+msgstr "senden"

@@ -2,16 +2,16 @@
    Gettext it_IT -- Miscelaneous
    ========================================================================== */
 
+<?php echo _("Ejemplo"); ?>
+msgid "Ejemplo"
+msgstr ""
+
 <?php echo _("Ej.:"); ?>
 msgid "Ej.:"
 msgstr ""
 
 <?php echo _("Regresar"); ?>
 msgid "Regresar"
-msgstr ""
-
-<?php echo _("Enviar"); ?>
-msgid "Enviar"
 msgstr ""
 
 <?php echo _("Gracias"); ?>

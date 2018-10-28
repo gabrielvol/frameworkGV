@@ -2,6 +2,10 @@
    Gettext pt_BR -- Miscelaneous
    ========================================================================== */
 
+<?php echo _("Ejemplo"); ?>
+msgid "Ejemplo"
+msgstr ""
+
 <?php echo _("Ej.:"); ?>
 msgid "Ej.:"
 msgstr ""
@@ -9,10 +13,6 @@ msgstr ""
 <?php echo _("Regresar"); ?>
 msgid "Regresar"
 msgstr "Regresar"
-
-<?php echo _("Enviar"); ?>
-msgid "Enviar"
-msgstr "Enviar"
 
 <?php echo _("Gracias."); ?>
 msgid "Gracias."
