@@ -2,7 +2,7 @@
     $error = 1;
     
     $title = "Error | ";
-    //$titleEN = "UntitledPage";
+    //$titleGB = "UntitledPage";
     $mdesc = "";
     
     $navCurrent = 0;

@@ -2,17 +2,17 @@
     $int = 1;
     
     $title = "PáginaInterna | PáginaSinTítulo";
-    //$titleEN = "PáginaInterna | UntitledPage";
+    //$titleGB = "PáginaInterna | UntitledPage";
     
     $mdesc = "";
-    //$mdescEN = "";
+    //$mdescGB = "";
     
     $ogURL = $url;
     $ogTitle = "OGWebsiteTitle";
+    // Max 35 char 123456789-123456789-123456789-12345    
     $ogSiteName = $ogTitle;
     $ogDesc = "Descr.";
-    // Max 65 char
-    // 12345678901234567890123456789012345678901234567890123456789012345
+    // Max65 char 123456789-123456789-123456789-123456789-123456789-123456789-12345
     
     $navCurrent = 1;
     $navCurrentInt = 0;

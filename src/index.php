@@ -2,15 +2,17 @@
     $index = 1;
     
     $title = "PáginaSinTítulo";
-    //$titleEN = "UntitledPage";
+    //$titleGB = "UntitledPage";
     
     $mdesc = "";
-    //$mdescEN = "";
+    //$mdescGB = "";
     
     $ogURL = $url;
-    $ogTitle = "OGWebsiteTitle"; // Max 35 char 123456789-123456789-123456789-12345    
+    $ogTitle = "OGWebsiteTitle";
+    // Max 35 char 123456789-123456789-123456789-12345    
     $ogSiteName = $ogTitle;
-    $ogDesc = "Descr."; // Max65 char 123456789-123456789-123456789-123456789-123456789-123456789-12345
+    $ogDesc = "Descr.";
+    // Max65 char 123456789-123456789-123456789-123456789-123456789-123456789-12345
     
     $navCurrent = 0;
     

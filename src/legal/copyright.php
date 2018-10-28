@@ -3,9 +3,9 @@
     $copyright = 1;
     
     $title = "PáginaSinTítulo";
-    //$titleEN = "UntitledPage";
+    //$titleGB = "UntitledPage";
     $mdesc = "";
-    //$mdescEN = "";
+    //$mdescGB = "";
     
     $navCurrent = 0;
     

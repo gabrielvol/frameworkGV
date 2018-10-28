@@ -1,5 +1,5 @@
 <?php
-    $url = "http://www.site.com.ar";
+    $url = "http://wwwsitecomar";
     $urlFB = "https://www.facebook.com/usuario";
     $urlIG = "https://www.instagram.com/usuario";
     $urlWA = "https://api.whatsapp.com/send?phone=5491100001111";

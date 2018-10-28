@@ -14,10 +14,10 @@
 <meta name="google" content="notranslate">
 
 <title><?php echo $title ?></title>
-<title><?php if($idioma == 'en_GB'){ echo $titleEN; } else if($idioma == 'pt_BR'){ echo $titleBR; } else { echo $title; } ?></title>
+<title><?php if($idioma == 'en_GB'){ echo $titleGB; } else if($idioma == 'pt_BR'){ echo $titleBR; } else { echo $title; } ?></title>
 
 <meta name="description" content="<?php echo $mdesc ?>">
-<meta name="description" content="<?php if($idioma == 'en_GB'){ echo $mdescEN; } else if($idioma == 'pt_BR'){ echo $mdescBR; } else { echo $mdesc; } ?>">
+<meta name="description" content="<?php if($idioma == 'en_GB'){ echo $mdescGB; } else if($idioma == 'pt_BR'){ echo $mdescPT; } else { echo $mdesc; } ?>">
 
 <link href="/nuevo/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
@@ -26,7 +26,7 @@
 <link rel="license" href="/nuevo/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
+<link rel="alternate" href="<?php echo $url ?>l=es_AR" hreflang="es">
 
 <!-- Información personal -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">

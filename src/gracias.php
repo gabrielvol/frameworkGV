@@ -3,17 +3,17 @@
     $gracias = 1;
     
     $title = "Gracias";
-    //$titleEN = "Thank You";
+    //$titleGB = "Thank You";
     
     $mdesc = "";
-    //$mdescEN = "";
+    //$mdescGB = "";
     
     $ogURL = $url;
     $ogTitle = "OGWebsiteTitle";
+    // Max 35 char 123456789-123456789-123456789-12345    
     $ogSiteName = $ogTitle;
     $ogDesc = "Descr.";
-    // Max 65 char
-    // 12345678901234567890123456789012345678901234567890123456789012345
+    // Max65 char 123456789-123456789-123456789-123456789-123456789-123456789-12345
     
     $navCurrent = 0;
     
