@@ -3,8 +3,8 @@
     $text_GB = "Switch to English version";
     $text_PT = "Navegar no site em Portugu&ecirc;s";
     $text_JP = "sinTrauccion";
-    $text_DE = "sinTrauccion";
-    $text_FR = "sinTrauccion";
+    $text_DE = "Durchsuchen Sie die Website in deutscher Sprache";
+    $text_FR = "Parcourir le site en langue française";
 ?>
 
 <ul class="lang horizontal clearfix">
