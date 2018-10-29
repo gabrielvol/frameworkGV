@@ -7,12 +7,18 @@
     $mdesc = "";
     //$mdescGB = "";
     
-    $ogURL = $url;
     $ogTitle = "OGWebsiteTitle";
-    // Max 35 char 123456789-123456789-123456789-12345    
-    $ogSiteName = $ogTitle;
+    //$ogTitleGB = "OGWebsiteTitle";
+    // Max 35 char
+    // 123456789-123456789-123456789-12345 
+    
     $ogDesc = "Descr.";
-    // Max65 char 123456789-123456789-123456789-123456789-123456789-123456789-12345
+    //$ogDescGB = "Descr.";
+    // Max 65 char
+    // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    
+    $ogURL = $url;  
+    $ogSiteName = $ogTitle;
     
     $navCurrent = 0;
     

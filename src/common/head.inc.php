@@ -49,6 +49,15 @@
 <meta property="og:site_name" content="<?php echo $ogSiteName; ?>">
 <meta property="og:locale" content="es_AR">
 
+<meta property="og:title" content="<?php if($idioma == 'en_GB'){ echo $ogTitleGB; } else if($idioma == 'de_DE'){ echo $ogTitleDE; } else { echo $ogTitle; } ?>">
+<meta property="og:url" content="<?php echo $url; ?>">
+<meta property="og:description" content="<?php if($idioma == 'en_GB'){ echo $ogDescGB; } else if($idioma == 'de_DE'){ echo $ogDescDE; } else { echo $ogDesc; } ?>">
+<meta property="og:image:secure_url" content="<?php echo $ogURL; ?>/og_img.jpg">
+<meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<?php if($idioma == 'en_GB'){ echo $ogSiteNameGB; } else if($idioma == 'de_DE'){ echo $ogSiteNameDE; } else { echo $ogSiteName; } ?>">
+<meta property="og:locale" content="<?php if($idioma == 'en_GB'){ echo 'en_GB'; } else if($idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>">
+
 <!-- Facebook Open Graph -->
 <meta property="fb:app_id" content="123456789">
 
