@@ -52,6 +52,10 @@ msgstr "Apellido"
 msgid "Nombre y apellido"
 msgstr "Nombre y apellido"
 
+<?php echo _('Nombre completo'); ?>
+msgid "Nombre completo"
+msgstr "Nombre completo"
+
 <?php echo _('Por favor, ingrese su nombre.'); ?>
 msgid "Por favor, ingrese su nombre."
 msgstr "Por favor, ingrese su nombre."
@@ -63,6 +67,10 @@ msgstr "Por favor, ingrese su apellido."
 <?php echo _('Por favor, ingrese su nombre y apellido.'); ?>
 msgid "Por favor, ingrese su nombre y apellido."
 msgstr "Por favor, ingrese su nombre y apellido."
+
+<?php echo _('Por favor, ingrese su nombre completo.'); ?>
+msgid "Por favor, ingrese su nombre completo."
+msgstr "Por favor, ingrese su nombre completo."
 
 
 
@@ -242,7 +250,7 @@ msgstr "Escriba aqu&iacute; su mensaje"
 
 <?php echo _('Por favor, complete su mensaje.'); ?>
 msgid "Por favor, complete su mensaje."
-msgstr ""
+msgstr "Por favor, complete su mensaje."
 
 
 

@@ -52,6 +52,10 @@ msgstr "TextoSinTraducir"
 msgid "Nombre y apellido"
 msgstr "TextoSinTraducir"
 
+<?php echo _('Nombre completo'); ?>
+msgid "Nombre completo"
+msgstr "TextoSinTraducir"
+
 <?php echo _('Por favor, ingrese su nombre.'); ?>
 msgid "Por favor, ingrese su nombre."
 msgstr "Por favor, insira o seu nome."
@@ -62,6 +66,10 @@ msgstr "TextoSinTraducir"
 
 <?php echo _('Por favor, ingrese su nombre y apellido.'); ?>
 msgid "Por favor, ingrese su nombre y apellido."
+msgstr "TextoSinTraducir"
+
+<?php echo _('Por favor, ingrese su nombre completo.'); ?>
+msgid "Por favor, ingrese su nombre completo."
 msgstr "TextoSinTraducir"
 
 

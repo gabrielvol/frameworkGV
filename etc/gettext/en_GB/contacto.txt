@@ -52,6 +52,10 @@ msgstr "Surname"
 msgid "Nombre y apellido"
 msgstr "Full name"
 
+<?php echo _('Nombre completo'); ?>
+msgid "Nombre completo"
+msgstr "Full name"
+
 <?php echo _('Por favor, ingrese su nombre.'); ?>
 msgid "Por favor, ingrese su nombre."
 msgstr "Please complete your name."
@@ -62,6 +66,10 @@ msgstr "Please complete your surname."
 
 <?php echo _('Por favor, ingrese su nombre y apellido.'); ?>
 msgid "Por favor, ingrese su nombre y apellido."
+msgstr "Please complete your full name."
+
+<?php echo _('Por favor, ingrese su nombre completo.'); ?>
+msgid "Por favor, ingrese su nombre completo."
 msgstr "Please complete your full name."
 
 

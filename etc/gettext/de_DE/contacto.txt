@@ -52,6 +52,10 @@ msgstr "Nachname"
 msgid "Nombre y apellido"
 msgstr "Vor- und Nachname"
 
+<?php echo _('Nombre completo'); ?>
+msgid "Nombre completo"
+msgstr "TextoSinTraducir"
+
 <?php echo _('Por favor, ingrese su nombre.'); ?>
 msgid "Por favor, ingrese su nombre."
 msgstr "Bitte geben Sie Ihren Vornamen ein."
@@ -63,6 +67,10 @@ msgstr "Bitte geben Sie Ihren Nachname ein."
 <?php echo _('Por favor, ingrese su nombre y apellido.'); ?>
 msgid "Por favor, ingrese su nombre y apellido."
 msgstr "Bitte geben Sie Ihren Vor- und Nachnamen ein."
+
+<?php echo _('Por favor, ingrese su nombre completo.'); ?>
+msgid "Por favor, ingrese su nombre completo."
+msgstr "TextoSinTraducir"
 
 
 
@@ -120,7 +128,7 @@ msgstr "Telefonnummer"
 
 <?php echo _('Por favor, ingrese su n&uacute;mero de tel&eacute;fono.'); ?>
 msgid "Por favor, ingrese su n&uacute;mero de tel&eacute;fono."
-msgstr ""
+msgstr "Bitte geben Sie Ihre Telefonnummer ein"
 
 
 
@@ -154,11 +162,11 @@ msgstr "Bitte geben Sie den Namen Ihrer Firma ein."
 
 <?php echo _('Raz&oacute;n Social'); ?>
 msgid "Raz&oacute;n Social"
-msgstr ""
+msgstr "TextoSinTraducir"
 
 <?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
 msgid "Por favor, ingrese su raz&oacute;n social."
-msgstr ""
+msgstr "TextoSinTraducir"
 
 
 
@@ -232,7 +240,7 @@ msgstr "Schreiben Sie Ihre Nachricht hier"
 
 <?php echo _('Por favor, complete su mensaje.'); ?>
 msgid "Por favor, complete su mensaje."
-msgstr ""
+msgstr "TextoSinTraducir"
 
 
 
