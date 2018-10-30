@@ -39,8 +39,18 @@
    ========================================================================== */
 #main{
     @include afterTablet{
+        @if $headerFixed == "on"{
+            padding-top: 115px;
+        }
+        
         @if $navTopper == "on"{
             min-height: 500px;        
+        }
+    }
+    
+    @include afterMobileLandscape{
+        @if $headerFixed == "on"{
+            padding-top: 150px;
         }
     }
 }
