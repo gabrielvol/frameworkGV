@@ -30,12 +30,20 @@ msgstr ""
 msgid "Francia"
 msgstr ""
 
+<?php echo _("Holanda"); ?>
+msgid "Holanda"
+msgstr ""
+
 <?php echo _("Ir&aacute;n"); ?>
 msgid "Ir&aacute;n"
 msgstr ""
 
-<?php echo _("Italia"
-msgid "Italia"); ?>
+<?php echo _("Italia" ?>
+msgid "Italia");
+msgstr ""
+
+<?php echo _("Lituania"); ?>
+msgid "Lituania"
 msgstr ""
 
 <?php echo _("M&eacute;xico"); ?>
@@ -48,6 +56,10 @@ msgstr ""
 
 <?php echo _("Rusia"); ?>
 msgid "Rusia"
+msgstr ""
+
+<?php echo _("Suecia"); ?>
+msgid "Suecia"
 msgstr ""
 
 <?php echo _("Turqu&iacute;a"); ?>
