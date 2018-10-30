@@ -6,6 +6,14 @@ $(window).scroll(function () {
     }
 });
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('#header').addClass('topperShadow');
+    } else {
+        $('#header').removeClass('topperShadow');
+    }
+});
+
 $(document).ready(function () {    
     $('.enviar').scrollPosReaload();
     

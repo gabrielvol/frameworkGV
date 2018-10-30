@@ -22,7 +22,7 @@
         }
     }
     
-    @include afterMobileLandscape{    
+    @include afterMobileLandscape{
         height: 200px;
         
         .logoH{
@@ -30,7 +30,7 @@
         }
     } 
     
-    @include mobileLandscapeOnly{        
+    @include mobileLandscapeOnly{
         .logoH{}
     }
 
@@ -39,7 +39,7 @@
         padding-top: 20px;
         
         .logoH{
-            @if $navDrawer == "on"{   
+            @if $navDrawer == "on"{
                 &.clicked{
                     @include borderStyleR($bcNavBT);
                     box-sizing: border-box;
@@ -69,18 +69,30 @@
         }
     }
     
-    @include afterTablet{        
+    @include afterTablet{
+        @if $headerFixed == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: auto;
+        
+            &.topperShadow{
+                box-shadow: 0 0 7px $black;
+            }
+        }
+        
         .logoH{
             position: relative;
             z-index: $zIndexLogoH;
             
-            /* Menu y logo flotados
-            box-sizing: border-box;
-            float: left;
-            width: $logoW;
-            padding-right: 20px;
-            padding-left: 20px;
-            */
+            @if $floateLogoNav == "on"{
+                box-sizing: border-box;
+                float: left;
+                width: $logoW;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
         }
         
         @if $navTopper == "on"{
@@ -99,7 +111,7 @@
         }
     }
     
-    @include afterTabletLandscape{        
+    @include afterTabletLandscape{
         .logoH{}
     } 
 }
