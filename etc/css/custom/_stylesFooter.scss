@@ -2,6 +2,12 @@
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
 #footer{    
+    .navFooter{
+        ul{}
+        
+        li{}
+    }
+    
     .googleAddress{
         a{
             font-size: 1.1rem;
@@ -9,10 +15,25 @@
         }
     }
     
-    .copyrightFooter{}
+    .footerCopy{}
     
     .logoF{
         width: 100px;
+    }
+    
+    .footerLegal{
+        ul{}
+        
+        li,        
+        a{}
+        
+        li{}
+        
+        a{}
+        
+        .copy{}
+        
+        .tos{}
     }
     
     @include beforeTabletLandscape{
