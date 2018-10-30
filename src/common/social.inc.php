@@ -42,7 +42,7 @@
         </a>
     </li>
     <li class="soc_li">
-        <a href="/nuevo/" class="li displayBlock hoverGrowBig indentedText">
+        <a href="<?php echo $urlLI ?>" class="li displayBlock hoverGrowBig indentedText">
             <?php echo _("Mir&aacute; nuestro perfil en LinkedIn"); ?>
             <img src="/nuevo/img/soc_li.svg" class="displayBlock" alt="<?php echo _('Ir a nuestro perfil en LinkedIn'); ?>.">
         </a>
