@@ -37,11 +37,11 @@
     }    
     
     @include afterTablet{
-        /* Menu y logo flotados
-        width: calc(100% - #{$logoW});
-        float: left;
-        margin-top: 30px;
-        */
+        @if $floateLogoNav == "on"{
+            width: calc(100% - #{$logoW});
+            float: left;
+            margin-top: 30px;
+        }
         
         .mainMenu{
             > li{
@@ -88,12 +88,12 @@
                     */
                 }
 
-                li{                
+                li{  
                     a{}
 
                     &, a{}
                     
-                    &:last-child{                        
+                    &:last-child{          
                         &, a{
                             @include borderRadiusB($borderRadiusB);
                         }
@@ -180,7 +180,7 @@
                 
                 @if $navHasSub == "on"{
                     .subMenu{
-                        &:focus{                        
+                        &:focus{          
                             .subMenu{
                                 display: $block;
                             }
@@ -214,10 +214,10 @@
         }
         
         @if $navTopper == "on"{
-            &.topper{      
-                @if $navHasSub == "on"{                         
+            &.topper{
+                @if $navHasSub == "on"{           
                     .hasSub{
-                        &:hover{                        
+                        &:hover{          
                             .subMenu{
                                 display: $block;
                             }
