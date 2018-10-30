@@ -32,8 +32,8 @@
 
 <!--Popup-->
 <div class="modal popup displayNone">
-    <button type="button" class="closePopup">Cerrar</button>
-    <button type="button" class="closePopup"><?php echo _("Cerrar"); ?></button>
+    <button type="button" class="closePop">Cerrar</button>
+    <button type="button" class="closePop"><?php echo _("Cerrar"); ?></button>
     <div class="modalWrap">
         
     </div>
