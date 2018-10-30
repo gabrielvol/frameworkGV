@@ -1,4 +1,36 @@
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
    ========================================================================== */
- 
+
+/* -------------------------------------
+    Full height index                 */
+
+// Header
+$headerHMO: 98px;
+$headerHAML: 60px;
+$headerHAT: 140px;
+$headerHATL: 85px;
+
+// Footer
+$footerHBT: 80px;
+$footerHAT: 100px;
+
+.index{    
+    @include mobileOnly{
+        height: calc(100vh - #{$footerHBT} - #{$headerHMO});
+    }
+    
+    @include afterMobileLandscape{
+        height: calc(100vh - #{$footerHBT} - #{$headerHAML});
+    }
+    
+    @include afterTablet{
+        height: calc(100vh - #{$footerHAT} - #{$headerHAT});
+    }
+
+    @include afterTabletLandscape{
+        height: calc(100vh - #{$footerHAT} - #{$headerHATL});
+    }
+}
+/*  Full height index
+    --------------------------------- */
