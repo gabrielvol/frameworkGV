@@ -54,3 +54,18 @@
         }        
     }
 }
+
+
+/* -------------------------------------
+    Full height index                 */
+#footer{
+    @include beforeTablet{
+        height: $footerHBT;
+    }
+    
+    @include afterTablet{ 
+        height: $footerHAT;
+    }
+}
+/*  Full height index
+    --------------------------------- */
