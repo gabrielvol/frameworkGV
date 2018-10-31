@@ -62,6 +62,9 @@
 
             a, .topLevelItem{
                 @include transition(1s);
+                font-size: 0.8rem;
+                padding-right: 5px;
+                padding-left: 5px;
             }
 
             & + li{}
@@ -175,7 +178,11 @@
         }
 
         .current{
-            a, .topLevelItem{}
+            a, .topLevelItem{
+                font-size: 1rem;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
         }
 
         @if $navTopper == "on"{
