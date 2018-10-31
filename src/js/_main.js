@@ -30,6 +30,23 @@ $(document).ready(function () {
         $(this).attr('aria-pressed', 'true');
     });
 
+    $('.liNoLink').click(function () {
+        $(this).closest('#nav').find('.navClose').removeClass('clicked');
+        $(this).closest('#header').find('.logoH').removeClass('clicked');
+        $(this).closest('#header').find('.socHeader').removeClass('clicked');
+        $(this).closest('#header').find('.lang').removeClass('clicked');
+        $(this).closest('#nav').find('.modalNav').hide('fast', 'swing');
+        $(this).closest('#nav').find('.mainMenu').removeClass('open');
+        $(this).closest('#nav').find('.subMenu').removeClass('open');
+        $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
+        $(this).closest('#nav').find('.topLevelItem').removeClass('open');
+        $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+        $(this).closest('#nav').find('.navOpen').removeClass('clicked');
+        $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
+    });
+
     $('.navClose').click(function () {
         $(this).removeClass('clicked');
         $(this).closest('#header').find('.logoH').removeClass('clicked');
