@@ -162,6 +162,10 @@
     @include tabletOnly{}
     
     @include afterTabletLandscape{
+        @if $floateLogoNav == "on"{
+            width: calc(100% - #{$logoWATL});
+        }
+        
         .mainMenu{}
         
         li{
