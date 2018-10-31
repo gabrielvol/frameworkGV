@@ -47,12 +47,6 @@
             min-height: 500px;        
         }
     }
-    
-    @include afterMobileLandscape{
-        @if $headerFixed == "on"{
-            padding-top: 150px;
-        }
-    }
 }
 
 /* =============================================================================
