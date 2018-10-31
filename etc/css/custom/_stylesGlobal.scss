@@ -40,7 +40,7 @@
 #main{
     @include afterTablet{
         @if $headerFixed == "on"{
-            padding-top: 115px;
+            padding-top: $headerHAT;
         }
         
         @if $navTopper == "on"{

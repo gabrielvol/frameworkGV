@@ -5,11 +5,13 @@
 /* =============================================================================
    Header
    ========================================================================== */
-$headerFixed: off;
-$navTopper: on;
-
-//Menu y logo flotados
-    $floateLogoNav: off;
+$navTopper: off;
+    
+//Header Fixed
+    $headerFixed: on;
+    
+    // Header
+    $headerHAT: 90px;
 
     // Logo
     $logoWBT: 180px;
