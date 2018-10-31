@@ -5,7 +5,7 @@
     /*z-index: $zIndexHeader;*/
     
     .logoH{
-        margin: $zero;
+        margin-bottom: 0;
         
         &, a{}
         
@@ -18,16 +18,11 @@
     
     @include mobileOnly{
         .logoH{
-            @include centerCustom(90%);
         }
     }
     
-    @include afterMobileLandscape{
-        height: 200px;
-        
-        .logoH{
-            width: 150px;
-        }
+    @include afterMobileLandscape{        
+        .logoH{}
     } 
     
     @include mobileLandscapeOnly{
@@ -36,9 +31,13 @@
 
     @include beforeTablet{
         box-sizing: border-box;
-        padding-top: 20px;
+        padding-bottom: 15px;
         
         .logoH{
+            width: $logoWBT;
+            margin-right: auto;
+            margin-left: auto;
+            
             @if $navDrawer == "on"{
                 &.clicked{
                     @include borderStyleR($bcNavBT);
@@ -89,7 +88,7 @@
             @if $floateLogoNav == "on"{
                 box-sizing: border-box;
                 float: left;
-                width: $logoW;
+                width: $logoWAT;
                 padding-right: 20px;
                 padding-left: 20px;
             }
