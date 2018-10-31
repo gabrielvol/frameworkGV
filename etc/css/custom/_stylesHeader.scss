@@ -111,6 +111,8 @@
     }
     
     @include afterTabletLandscape{
-        .logoH{}
+        .logoH{
+            width: $logoWATL;
+        }
     } 
 }
