@@ -110,7 +110,11 @@
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterTabletLandscape{       
+        @if $headerFixed == "on"{
+            height: $headerHATL;
+        }
+        
         .logoH{
             width: $logoWATL;
         }
