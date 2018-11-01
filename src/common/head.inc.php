@@ -28,9 +28,9 @@
 <!-- Idiomas -->
 <link rel="alternate" href="<?php echo $url ?>?l=es_AR" hreflang="es">
 <link rel="alternate" href="<?php echo $url ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url ?>/?l=es_EN" hreflang="en">
-<link rel="alternate" href="<?php echo $url ?>/?l=es_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url ?>/?l=es_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url ?>/?l=fr_FR" hreflang="fr">
 <link rel="alternate" href="<?php echo $url ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Información personal -->
