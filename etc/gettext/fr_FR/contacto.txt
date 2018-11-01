@@ -4,11 +4,11 @@
 
 <?php echo _('* Datos obligatorios.'); ?>
 msgid "* Datos obligatorios."
-msgstr "* Donn&eacute;es obligatoires"
+msgstr "* Donn&eacute;es obligatoires."
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>
 msgid "Los campos marcados con * son obligatorios."
-msgstr "Les champs marqu&eacute;s de : * sont obligatoires"
+msgstr "Les champs marqu&eacute;s de : * sont obligatoires."
 
 <?php echo _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.'); ?>
 msgid "Complete el formulario. Nos comunicaremos con Ud. a la brevedad."
@@ -24,7 +24,7 @@ msgstr "Nous vous tiendrons inform&eacute;s au plus vite."
 
 <?php echo _('Env&iacute;o exitoso.'); ?>
 msgid "Env&iacute;o exitoso."
-msgstr "Envoi r&eacute;ussi"
+msgstr "Envoi r&eacute;ussi."
 
 <?php echo _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.'); ?>
 msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias."
@@ -54,7 +54,7 @@ msgstr "Nom et Pr&eacute;nom"
 
 <?php echo _('Nombre completo'); ?>
 msgid "Nombre completo"
-msgstr "TextoSinTraducir"
+msgstr "sinTraduccion"
 
 <?php echo _('Por favor, ingrese su nombre.'); ?>
 msgid "Por favor, ingrese su nombre."
@@ -70,7 +70,7 @@ msgstr "Veuillez indiquer votre nom et pr&eacute;nom."
 
 <?php echo _('Por favor, ingrese su nombre completo.'); ?>
 msgid "Por favor, ingrese su nombre completo."
-msgstr "TextoSinTraducir"
+msgstr "sinTraduccion"
 
 
 
@@ -88,7 +88,7 @@ msgstr "Veuillez indiquez votre adresse."
 
 <?php echo _('Por favor, ingrese su domicilio.'); ?>
 msgid "Por favor, ingrese su domicilio."
-msgstr "Veuillez indiquer votre domicile"
+msgstr "Veuillez indiquer votre domicile."
 
 
 
@@ -162,11 +162,11 @@ msgstr "Veuillez indiquez le nom de votre entreprise."
 
 <?php echo _('Raz&oacute;n Social'); ?>
 msgid "Raz&oacute;n Social"
-msgstr "TextoSinTraducir"
+msgstr "sinTraduccion"
 
 <?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
 msgid "Por favor, ingrese su raz&oacute;n social."
-msgstr "TextoSinTraducir"
+msgstr "sinTraduccion"
 
 
 
@@ -240,7 +240,7 @@ msgstr "Ecrivez ici votre message"
 
 <?php echo _('Por favor, complete su mensaje.'); ?>
 msgid "Por favor, complete su mensaje."
-msgstr "TextoSinTraducir"
+msgstr "sinTraduccion"
 
 
 

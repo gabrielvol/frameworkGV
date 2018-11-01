@@ -17,3 +17,4 @@
     // Define la ubicación de los ficheros de traducción
     bindtextdomain("messages", "locale");
     textdomain("messages");
+?>
