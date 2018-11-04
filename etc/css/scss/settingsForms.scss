@@ -411,22 +411,6 @@ form{
     @if $formInsideLabel == "on"{
         fieldset, label{
             @include clearfix;
-
-            @include beforeTablet{
-                .mobileForm &{
-                    margin-bottom: $paddingMarginLargeValue;
-                }
-            }
-
-            @include tabletOnly{
-                .tabletForm &{
-                    margin-bottom: $paddingMarginLargeValue;       
-                }
-            }
-
-            @include afterTabletLandscape{
-                margin-bottom: $paddingMarginMediumValue;
-            }
         }
     
         fieldset span, input, select{

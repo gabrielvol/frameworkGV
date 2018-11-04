@@ -60,8 +60,8 @@
 
             <label for="nombreComp_FormName">
                 <span class="labelName"><?php echo _('Nombre Completo'); ?></span>
-                <input type="text" name="nombreComp_FormName" id="nombreComp_FormName" class="nombreComp <?php echo $invalidFieldnombreComp_FormName ?>" value="<?php echo $_POST['nombreComp_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusnombreComp_FormName ?>>
-                <span class="formInputErrorMsg <?php echo $errorFormClassnombreComp_FormName ?>"><?php echo $errorBelowInputnombreComp_FormName ?></span>             
+                <input type="text" name="nombreComp_FormName" id="nombreComp_FormName" class="nombreComp <?php echo $invalidFieldNombreComp_FormName ?>" value="<?php echo $_POST['nombreComp_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusNombreComp_FormName ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassNombreComp_FormName ?>"><?php echo $errorBelowInputNombreComp_FormName ?></span>             
             </label>
 
             <label for="genero_FormName">

@@ -156,6 +156,24 @@ form{
     }
     
     @if $formInsideLabel == "on"{
+        fieldset, label{
+            @include beforeTablet{
+                .mobileForm &{
+                    margin-bottom: $paddingMarginLargeValue;
+                }
+            }
+
+            @include tabletOnly{
+                .tabletForm &{
+                    margin-bottom: $paddingMarginLargeValue;       
+                }
+            }
+
+            @include afterTabletLandscape{
+                margin-bottom: $paddingMarginMediumValue;
+            }
+        }
+        
         label.radio{
             .radio{
                 clear: $none;
