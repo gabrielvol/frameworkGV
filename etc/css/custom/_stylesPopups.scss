@@ -15,16 +15,7 @@
     }
 }
     
-.popup{    
-    @include borderRadius(12px); 
-    position: fixed;
-    top: 10vh;
-    left: 50%;  
-    height: 80vh;  
-    background-color: $bgStatusOKpopUp;
-    padding: 20px;
-    box-shadow: 0 0 15px 0 $black;
-    
+.popup{
     .modalWrap{
         @include posTRBL;
         position: absolute;
