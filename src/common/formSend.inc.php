@@ -13,6 +13,10 @@
     $statusErrorGlobalA_FormName  = _('Hubo un error al enviar el mensaje.');
     $statusErrorGlobalB_FormName  = _('Intente nuevamente m&aacute;s tarde.');
 
+    //Variables de fuente de título de pop
+    $PopOKFontFamily_FormName    = '';
+    $PopErrorFontFamily_FormName = '';
+    
     //Status Ini
     //$status_FormName = '<p class="status ini">'.$statusIniGlobal_FormName.'</p>';
         
@@ -401,7 +405,7 @@
                 $status_FormName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
-                        . '<h2 id="formOK" class="mbm green alignCenter">'._("$statusOKGlobalA_FormName").'</h2>'
+                        . '<h2 id="formOK" class="mbm '. $PopOKFontFamily_FormName .' green alignCenter">'._("$statusOKGlobalA_FormName").'</h2>'
                         . '<p class="status ok">'._("$statusOKGlobalB_FormName").'</p>'
                         . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
@@ -444,7 +448,7 @@
                 $status_FormName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
-                        . '<h2 id="formError" class="mbm errorColour alignCenter">'._("$statusErrorGlobalA_FormName").'</h2>'
+                        . '<h2 id="formError" class="mbm '. $PopErrorFontFamily_FormName .' errorColour alignCenter">'._("$statusErrorGlobalA_FormName").'</h2>'
                         . '<p class="status error">'._("$statusErrorGlobalB_FormName").'</p>'
                         . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
