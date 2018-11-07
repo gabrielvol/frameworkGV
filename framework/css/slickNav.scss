@@ -27,8 +27,13 @@ section{
                 &, &:focus, &:hover{                    
                     img{
                         @include opacityCustom(100);
-                        filter: grayscale(0);
                     }
+                }
+            }
+                
+            &:focus, &:hover{                    
+                img{
+                    filter: grayscale(0);
                 }
             }
         }
