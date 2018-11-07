@@ -1,21 +1,22 @@
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
-   ========================================================================== */
-.closePop{
-    $closePopSize: 33px;
-    @include borderRadius(50%);
-    @include bgSvg(popup_close); 
-    width: $closePopSize!important;
-    height: $closePopSize!important;
-    background-size: 13px;
-    border: 1px solid $bcGreyD!important; 
-    
-    &, &:focus, &:hover{
-        background-color: $bgWhite;
-    }
-}
-    
+   ========================================================================== */    
 .popup{
+    .closePop{
+        $closePopSize: 33px;
+
+        @include borderRadius(50%);
+        @include bgSvg(popup_close); 
+        width: $closePopSize!important;
+        height: $closePopSize!important;
+        background-size: 13px;
+        border: 1px solid $bcGreyD!important; 
+
+        &, &:focus, &:hover{
+            background-color: $bgWhite;
+        }
+    }
+    
     .modalWrap{
         @include posTRBL;
         position: absolute;
@@ -73,6 +74,7 @@
             
             &:focus, &:hover{
                 background-color: $bgGreyXXL;
+                color: $black;
             }            
         }
         
