@@ -1,91 +1,125 @@
-/* Slider */
-.slick-slider{
-    position:relative;
-    display:block;
-    -moz-box-sizing:border-box;
-         box-sizing:border-box;
-    -webkit-user-select:none;
-       -moz-user-select:none;
-        -ms-user-select:none;
-            user-select:none;
-    -webkit-touch-callout:none;
-    -khtml-user-select:none;
-    -ms-touch-action:pan-y;
-        touch-action:pan-y;
-    -webkit-tap-highlight-color:transparent;
-}
+/* =============================================================================
+   SliderNav Styles | Custom [stylesSliderNav.scss]
+   ========================================================================== */
+section{
+    .sliderMain{
+        z-index: 10;
+    }
 
-.slick-list{
-    position:relative;
-    display:block;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-}
-.slick-list:focus{outline:none}
-.slick-list.dragging{
-    cursor:pointer;
-    cursor:hand;
-}
+    .sliderNav{
+        .slick-track{
+            width: $hundred;
+        }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list{
-    -webkit-transform:translate3d(0, 0, 0);
-       -moz-transform:translate3d(0, 0, 0);
-        -ms-transform:translate3d(0, 0, 0);
-         -o-transform:translate3d(0, 0, 0);
-            transform:translate3d(0, 0, 0);
-}
+        .slick-list{
+            margin-right: $auto;
+            margin-left: $auto;
+        }
 
-.slick-track{
-    position:relative;
-    top:0;
-    left:0;
-    display:block;
-}
-.slick-track:before,
-.slick-track:after{
-    display:table;
-    content:'';
-}
-.slick-track:after{clear:both}
-.slick-loading .slick-track{visibility:hidden}
-.slick-slide{
-    display:none;
-    float:left;
-    height:100%;
-    min-height:1px;
-}
-[dir='rtl'] .slick-slide{float:right}
-.slick-slide img{display:block}
-.slick-slide.slick-loading img{display:none}
-.slick-slide.dragging img{pointer-events:none}
-.slick-initialized .slick-slide{display:block}
-.slick-loading .slick-slide{visibility:hidden}
-.slick-vertical .slick-slide{
-    display:block;
-    height:auto;
-    border:1px solid transparent;
-}
-/* Slick next/prev */
-.slick-prev,
-.slick-next{
-    position:absolute;
-    top:50%;
-    width:50px;
-    height:50px;
-    background-image:url('/framework/img/sprites.png');
-    background-color:transparent;
-    padding:0;
-    border: 0;
-    margin-top:-25px;
-    text-indent:-9999px;
-}
-.slick-prev{
-    background-position:-236px 0;
-    left:15px;
-}
-.slick-next{
-    background-position:-286px 0;
-    right:15px;
+        li{
+            @include borderStyle($bcGrey);
+            
+            &, img{
+                @include transition(1s);
+            }
+            
+            img{
+                @include opacityCustom(80);
+                filter: grayscale(1);
+            }
+                
+            &.slick-current{
+                &, &:focus, &:hover{
+                    border-color: $bcBlue; 
+                    
+                    img{
+                        @include opacityCustom(100);
+                        filter: grayscale(0);
+                    }
+                }
+            }
+                
+            &:focus, &:hover{
+                border-color: $bcBlack;
+            }
+        }
+    }
+
+    @include mobileOnly{
+        .sliderNav{
+            .slick-list{
+                max-width: 320px!important;
+            }
+            
+            li{            
+                width: $third;
+                padding: 0 5px;
+                
+                &:nth-child(n+4){
+                    margin-top: 7px;
+                }
+            }
+        } 
+    }
+    
+    @include mobileLandscapeOnly{
+        .sliderNav{
+            .slick-list{
+                max-width: 420px!important;
+            }
+            
+            li{            
+                width: 20%!important;
+                padding: 0 5px;
+                
+                &:nth-child(n+6){
+                    margin-top: 7px;
+                }
+            }
+        } 
+    }
+    
+    @include beforeTablet{        
+        .sliderNav{
+            @include borderStyleB($bgGreyL);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @include afterTablet{                
+        .sliderNav{
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            
+            .slick-list{
+                max-width: $hundred;
+            }
+            
+            li{
+                width: 60px!important;
+                padding: $zero;
+                margin-top: 0; 
+                
+                & + li{
+                    margin-left: 5px;
+                }
+            }
+        }      
+    }
+    
+    @include tabletOnly{
+        .sliderNav{            
+            li{
+                &:nth-child(n+9){
+                    margin-top: 7px;
+                }          
+                
+                &:nth-child(9){
+                    margin-left: 0;
+                }
+            }
+        } 
+    }
 }
