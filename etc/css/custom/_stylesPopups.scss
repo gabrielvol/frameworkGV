@@ -35,7 +35,6 @@
         position: fixed;
         top: 20%;
         left: 50%;
-        height: 200px;
         background-color: $bgStatusOKpopUp;          
         box-shadow: 0 0 15px 0 $black;
         
@@ -94,9 +93,14 @@
             margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);            
         }
         
+        @include beforeMobile600{
+            height: 220px;            
+        }
+        
         @include afterMobile600{
             $popupStatusDivW: 550px;
             width: $popupStatusDivW;
+            height: 200px;
             margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);  
 
             .modalWrap{
