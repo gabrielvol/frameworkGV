@@ -1,4 +1,6 @@
 <?php
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
+    
     $int = 1;
     $gracias = 1;
     
