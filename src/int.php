@@ -20,7 +20,12 @@
     $navCurrentInt = 0;
     
     //Gettext variable, debe ir antes del head
-    $idioma = $_GET['l'];
+    if(isset($l)) {
+        $idiomaElegido = $_GET['l'];        
+    } else {
+        $idiomaElegido = 'es_AR';
+    }        
+    $idioma = $idiomaElegido;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');
