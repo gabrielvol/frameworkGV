@@ -7,16 +7,9 @@
     
     $navCurrent = 0;
     
-    //Gettext variable, debe ir antes del head
-    if(isset($l)) {
-        $idiomaElegido = $_GET['l'];        
-    } else {
-        $idiomaElegido = 'es_AR';
-    }        
-    $idioma = $idiomaElegido;
-    
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.variableCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.php');
 ?>
 </head>
 <body>
