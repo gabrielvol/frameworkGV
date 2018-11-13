@@ -70,7 +70,7 @@
         </a>
     </li>
     <li class="soc_em">
-        <a href="/nuevo/" class="em displayBlock hoverGrowBig indentedText">
+        <a href="<?php echo $urlEM ?>" class="em displayBlock hoverGrowBig indentedText">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>
             <img src="/nuevo/img/soc_em.svg" class="displayBlock" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>

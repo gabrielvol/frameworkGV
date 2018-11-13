@@ -9,6 +9,7 @@
     $mdesc = "";
     //$mdescGB = "";
     
+//Open Graph Start
              // Max 35 char
              // 123456789-123456789-123456789-12345 
     $ogTitle = "OGWebsiteTitle";
@@ -21,6 +22,7 @@
     
     $ogURL = $url;  
     $ogSiteName = $ogTitle;
+//Open Graph End
     
     $navCurrent = 0;
     
