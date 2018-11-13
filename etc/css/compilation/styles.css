@@ -37,6 +37,13 @@
    Classes Activators | Custom [activators.scss]
    ========================================================================== */
 /* =============================================================================
+   Header
+   ========================================================================== */
+/* -------------------------------------
+    Full height index                 */
+/*  Full height index
+    --------------------------------- */
+/* =============================================================================
    Nav
    ========================================================================== */
 /* =============================================================================
@@ -73,13 +80,13 @@
    Modal Opacity Variables | Custom [coloursBackgrounds.scss]
    ========================================================================== */
 /* =============================================================================
-   Font Colours Variables | Custom [fontsColours.scss]
-   ========================================================================== */
-/* =============================================================================
    Tables Colour Variables | Custom [coloursTables.scss]
    ========================================================================== */
 /* =============================================================================
    Fonts Main Variables | Custom [fontsMain.scss]
+   ========================================================================== */
+/* =============================================================================
+   Font Colours Variables | Custom [fontsColours.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Colours Variables | Custom [navColours.scss]
@@ -358,6 +365,11 @@ a.orange:focus, a.orange:hover {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+.bgGradWhiteTextVanish {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); }
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
 .bgGradBlackTen {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
@@ -391,13 +403,13 @@ a.orange:focus, a.orange:hover {
 /* =============================================================================
    Font Settings | Etc [settingsText.scss]
    ========================================================================== */
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, a, li, button, label, input, select, textarea, blockquote, table {
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
   font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4; }
 
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, li, button, label, input, select, textarea, blockquote, table {
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table {
   color: #000; }
 
 /*
@@ -1124,7 +1136,7 @@ article, article::before, article::after, details, details::before, details::aft
     .horizontalCenterBT li {
       display: inline; }
       .horizontalCenterBT li > * {
-        display: inline-block; }
+        display: inline-block !important; }
   .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT {
     float: none !important; } }
 
@@ -1179,7 +1191,7 @@ article, article::before, article::after, details, details::before, details::aft
     .horizontalCenterAT li {
       display: inline; }
       .horizontalCenterAT li > * {
-        display: inline-block; }
+        display: inline-block !important; }
   .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT {
     float: none !important; } }
 
@@ -1201,63 +1213,119 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Container Settings | Etc [settingsContainer.scss]
    ========================================================================== */
-.container {
+.container,
+.containerMO,
+.containerAML,
+.containerMLO,
+.containerBT,
+.containerAT,
+.containerTO,
+.containerATL,
+.containerTLO,
+.containerBD,
+.containerAD,
+.containerADL {
   padding: 0;
   margin-right: auto;
   margin-left: auto; }
-  .container::before, .container::after {
+  .container::before, .container::after,
+  .containerMO::before,
+  .containerMO::after,
+  .containerAML::before,
+  .containerAML::after,
+  .containerMLO::before,
+  .containerMLO::after,
+  .containerBT::before,
+  .containerBT::after,
+  .containerAT::before,
+  .containerAT::after,
+  .containerTO::before,
+  .containerTO::after,
+  .containerATL::before,
+  .containerATL::after,
+  .containerTLO::before,
+  .containerTLO::after,
+  .containerBD::before,
+  .containerBD::after,
+  .containerAD::before,
+  .containerAD::after,
+  .containerADL::before,
+  .containerADL::after {
     content: " ";
     display: table; }
-  .container::after {
+  .container::after,
+  .containerMO::after,
+  .containerAML::after,
+  .containerMLO::after,
+  .containerBT::after,
+  .containerAT::after,
+  .containerTO::after,
+  .containerATL::after,
+  .containerTLO::after,
+  .containerBD::after,
+  .containerAD::after,
+  .containerADL::after {
     clear: both; }
-  @media (max-width: 499px) {
-    .container {
-      width: 300px; } }
-  @media (min-width: 500px) {
-    .container {
-      width: 85%; } }
-  @media (min-width: 768px) {
-    .container {
-      width: 720px; } }
-  @media (min-width: 1024px) {
-    .container {
-      width: 1000px; } }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1000px; } }
-  @media (min-width: 1600px) {
-    .container {
-      width: 1000px; } }
-  @media (max-width: 499px) {
-    .container.centerAbs {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 500px) {
-    .container.centerAbs {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(85% / 2)); } }
-  @media (min-width: 768px) {
-    .container.centerAbs {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(720px / 2)); } }
-  @media (min-width: 1024px) {
-    .container.centerAbs {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1200px) {
-    .container.centerAbs {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
-  @media (min-width: 1600px) {
-    .container.centerAbs {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1000px / 2)); } }
+
+@media (max-width: 499px) {
+  .container {
+    width: 300px; } }
+
+@media (min-width: 500px) {
+  .container {
+    width: 85%; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px; } }
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1000px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px; } }
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1000px; } }
+
+@media (max-width: 499px) {
+  .container.centerAbs {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(300px / 2)); } }
+
+@media (min-width: 500px) {
+  .container.centerAbs {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(85% / 2)); } }
+
+@media (min-width: 768px) {
+  .container.centerAbs {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(720px / 2)); } }
+
+@media (min-width: 1024px) {
+  .container.centerAbs {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(1000px / 2)); } }
+
+@media (min-width: 1200px) {
+  .container.centerAbs {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(1000px / 2)); } }
+
+@media (min-width: 1600px) {
+  .container.centerAbs {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(1000px / 2)); } }
 
 /* =============================================================================
    Hack para Windows Phone | Etc [settingsContainer.scss]
@@ -1357,7 +1425,11 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 @media (min-width: 768px) {
   #main {
-    min-height: 500px; } }
+    padding-top: 140px; } }
+
+@media (min-width: 1024px) {
+  #main {
+    padding-top: 85px; } }
 
 /* =============================================================================
    Internas Global Styles | Custom
@@ -1502,7 +1574,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-.mobileForm .closePop {
+.popup .closePop {
   border-radius: 50%;
   background-color: transparent;
   background-image: url("/nuevo/img/popup_close.svg");
@@ -1513,88 +1585,84 @@ article, article::before, article::after, details, details::before, details::aft
   height: 33px !important;
   background-size: 13px;
   border: 1px solid #666 !important; }
-  .mobileForm .closePop, .mobileForm .closePop:focus, .mobileForm .closePop:hover {
+  .popup .closePop, .popup .closePop:focus, .popup .closePop:hover {
     background-color: #fff; }
 
-.popup {
-  border-radius: 12px;
-  position: fixed;
-  top: 10vh;
-  left: 50%;
-  height: 80vh;
-  background-color: #fff;
+.popup .modalWrap {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
   padding: 20px;
-  box-shadow: 0 0 15px 0 #000; }
-  .popup .modalWrap {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    padding: 20px;
-    overflow: auto; }
-  .popup.statusDiv {
-    /* CSS para usar centerPopup
+  overflow: auto; }
+
+.popup.statusDiv {
+  /* CSS para usar centerPopup
             @include centerPopup(100px,100px,50%);
             max-width: 100%;
             max-height: 100%;
         */
-    border-radius: 6px;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    height: 200px;
+  border-radius: 6px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 #000; }
+  .popup.statusDiv h2 {
+    font-size: 1.2rem; }
+  .popup.statusDiv p {
+    width: 100% !important;
+    background-color: transparent;
+    padding: 0;
+    color: #666;
+    font-family: Arial;
+    text-align: center; }
+    .popup.statusDiv p + p {
+      margin-top: 0.8em; }
+    .popup.statusDiv p:last-child {
+      padding-bottom: 50px; }
+  .popup.statusDiv .popOKdialog {
+    transition: all 1s ease;
+    height: 30px;
+    line-height: 30px;
+    width: 40%;
+    max-width: 150px;
     background-color: #fff;
-    box-shadow: 0 0 15px 0 #000; }
-    .popup.statusDiv h2 {
-      font-size: 1.2rem; }
-    .popup.statusDiv p {
-      width: 100% !important;
-      background-color: transparent;
-      padding: 0;
-      color: #666;
-      font-family: Arial;
-      text-align: center; }
-      .popup.statusDiv p + p {
-        margin-top: 0.8em; }
-      .popup.statusDiv p:last-child {
-        padding-bottom: 50px; }
-    .popup.statusDiv .popOKdialog {
-      transition: all 1s ease;
-      height: 30px;
-      line-height: 30px;
-      width: 40%;
-      max-width: 150px;
-      background-color: #fff;
-      font-size: 0.8rem; }
-      .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
-        border: 1px solid #999 !important; }
-      .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
-        background-color: #f4f4f4; }
-    .popup.statusDiv .closePop {
-      top: 10px;
-      right: 10px; }
-    @media (max-width: 499px) {
-      .popup.statusDiv {
-        width: 300px;
-        margin-left: calc(calc(300px * -1) / 2); } }
-    @media (min-width: 500px) {
-      .popup.statusDiv {
-        width: 60%;
-        margin-left: calc(calc(60% * -1) / 2); } }
-    @media (min-width: 601px) {
-      .popup.statusDiv {
-        width: 550px;
-        margin-left: calc(calc(550px * -1) / 2); }
-        .popup.statusDiv .modalWrap {
-          top: 20px;
-          right: 20px;
-          bottom: 20px;
-          left: 20px;
-          padding: 20px; }
-        .popup.statusDiv .closePop {
-          top: 10px;
-          right: 10px; } }
+    font-size: 0.8rem; }
+    .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+      border: 1px solid #999 !important; }
+    .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+      background-color: #f4f4f4;
+      color: #000; }
+  .popup.statusDiv .closePop {
+    top: 10px;
+    right: 10px; }
+  @media (max-width: 499px) {
+    .popup.statusDiv {
+      width: 300px;
+      margin-left: calc(calc(300px * -1) / 2); } }
+  @media (min-width: 500px) {
+    .popup.statusDiv {
+      width: 60%;
+      margin-left: calc(calc(60% * -1) / 2); } }
+  @media (max-width: 600px) {
+    .popup.statusDiv {
+      height: 220px; } }
+  @media (min-width: 601px) {
+    .popup.statusDiv {
+      width: 550px;
+      height: 200px;
+      margin-left: calc(calc(550px * -1) / 2); }
+      .popup.statusDiv .modalWrap {
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+        padding: 20px; }
+      .popup.statusDiv .closePop {
+        top: 10px;
+        right: 10px; } }
 
 /* =============================================================================
    Header Styles | Custom [stylesHeader.scss]
@@ -1602,56 +1670,59 @@ article, article::before, article::after, details, details::before, details::aft
 #header {
   /*z-index: $zIndexHeader;*/ }
   #header .logoH {
-    margin: 0 !important; }
+    margin-bottom: 0; }
     #header .logoH a, #header .logoH img {
       width: 100%; }
-  @media (max-width: 499px) {
-    #header .logoH {
-      width: 90%;
-      margin-right: auto !important;
-      margin-left: auto !important; } }
-  @media (min-width: 500px) {
-    #header {
-      height: 200px; }
-      #header .logoH {
-        width: 150px; } }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
-      padding-top: 20px; }
-      #header .logoH.clicked {
-        border-right: 1px solid #000;
-        box-sizing: border-box;
-        position: fixed;
-        z-index: 9200;
-        top: 0;
-        left: 0;
-        width: calc(70vw - 5px);
-        max-width: 300px;
-        height: calc(50px + 50px + 10px);
-        background-color: #fff;
-        padding-top: 50px;
-        padding-bottom: 10px;
-        margin: 0; }
-        #header .logoH.clicked a, #header .logoH.clicked img {
-          width: auto;
-          height: 100%; }
-        #header .logoH.clicked img {
-          margin-right: auto;
-          margin-left: auto; } }
+      padding-bottom: 15px; }
+      #header .logoH {
+        width: 180px;
+        margin-right: auto;
+        margin-left: auto; }
+        #header .logoH.clicked {
+          border-right: 1px solid #000;
+          box-sizing: border-box;
+          position: fixed;
+          z-index: 9200;
+          top: 0;
+          left: 0;
+          width: calc(70vw - 5px);
+          max-width: 300px;
+          height: calc(50px + 50px + 10px);
+          background-color: #fff;
+          padding-top: 50px;
+          padding-bottom: 10px;
+          margin: 0; }
+          #header .logoH.clicked a, #header .logoH.clicked img {
+            width: auto;
+            height: 100%; }
+          #header .logoH.clicked img {
+            margin-right: auto;
+            margin-left: auto; } }
   @media (min-width: 768px) {
-    #header .logoH {
-      position: relative;
-      z-index: 100; }
-    #header.topper {
+    #header {
       position: fixed;
-      z-index: 1000;
       top: 0;
       right: 0;
       left: 0;
-      height: 50px; }
-      #header.topper .logoH {
-        z-index: 9200; } }
+      height: 140px; }
+      #header.topperShadow {
+        box-shadow: 0 0 7px #000; }
+      #header .logoH {
+        position: relative;
+        z-index: 100;
+        box-sizing: border-box;
+        float: left;
+        width: 210px;
+        padding-right: 20px;
+        padding-left: 20px; } }
+  @media (min-width: 1024px) {
+    #header {
+      height: 85px; }
+      #header .logoH {
+        width: 250px; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
@@ -1671,6 +1742,18 @@ article, article::before, article::after, details, details::before, details::aft
   #footer .googleAddress a:focus, #footer .googleAddress a:hover {
     text-decoration: underline; } }
 
+/* -------------------------------------
+    Full height index                 */
+@media (max-width: 767px) {
+  #footer {
+    height: 80px; } }
+
+@media (min-width: 768px) {
+  #footer {
+    height: 100px; } }
+
+/*  Full height index
+    --------------------------------- */
 /* =============================================================================
    Nav Settings | Etc [settingsNav.scss]
    ========================================================================== */
@@ -1779,21 +1862,7 @@ nav li:focus a, nav li:hover a {
         .navMain > ul > .current:focus, .navMain > ul > .current:hover {
           background-color: transparent; }
           .navMain > ul > .current:focus > a, .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a, .navMain > ul > .current:hover .topLevelItem {
-            color: #000; }
-    .navMain.topper {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 100%;
-      background-color: #000; }
-      .navMain.topper .hamb {
-        display: none !important; }
-      .navMain.topper .mainMenu > li a, .navMain.topper .mainMenu > li .topLevelItem {
-        color: #000; }
-      .navMain.topper .mainMenu > li:focus > a, .navMain.topper .mainMenu > li:focus .topLevelItem, .navMain.topper .mainMenu > li:hover > a, .navMain.topper .mainMenu > li:hover .topLevelItem {
-        color: #000; }
-      .navMain.topper .mainMenu > .current > a, .navMain.topper .mainMenu > .current .topLevelItem, .navMain.topper .mainMenu > .current:focus > a, .navMain.topper .mainMenu > .current:focus .topLevelItem, .navMain.topper .mainMenu > .current:hover > a, .navMain.topper .mainMenu > .current:hover .topLevelItem {
-        color: #000; } }
+            color: #000; } }
 
 /* =============================================================================
    Nav Styles | Custom [stylesNav.scss]
@@ -1849,28 +1918,47 @@ nav li:focus a, nav li:hover a {
             background-image: url(/nuevo/img/nav_arrowD.svg); } }
 
 @media (min-width: 768px) {
-  .navMain li, .navMain li a, .navMain li .topLevelItem {
-    height: 60px;
-    line-height: 60px; }
-  .navMain li a, .navMain li .topLevelItem {
-    transition: all 1s ease; }
-  .navMain.topper {
-    border-bottom: 1px solid #666; }
-    .navMain.topper .mainMenu {
-      width: 770px;
-      margin-right: auto !important;
-      margin-left: auto !important;
-      float: none !important;
-      padding: 0; }
-      .navMain.topper .mainMenu > li {
-        padding-top: 0;
-        height: 50px; }
-      .navMain.topper .mainMenu > .current a, .navMain.topper .mainMenu > .current .topLevelItem {
-        border-bottom: 3px solid #999; }
-      .navMain.topper .mainMenu a {
-        height: 50px;
-        line-height: 50px; } }
+  .navMain {
+    width: calc(100% - 210px);
+    float: left;
+    margin-top: 30px; }
+    .navMain li, .navMain li a, .navMain li .topLevelItem {
+      height: 60px;
+      line-height: 60px; }
+    .navMain li a, .navMain li .topLevelItem {
+      transition: all 1s ease;
+      font-size: 0.8rem;
+      padding-right: 5px;
+      padding-left: 5px; } }
+
+@media (min-width: 1024px) {
+  .navMain {
+    width: calc(100% - 250px); }
+    .navMain li a, .navMain li .topLevelItem {
+      font-size: 1rem;
+      padding-right: 10px;
+      padding-left: 10px; } }
 
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
    ========================================================================== */
+/* -------------------------------------
+    Full height index                 */
+@media (max-width: 499px) {
+  .index {
+    height: calc(100vh - 80px - 98px); } }
+
+@media (min-width: 500px) {
+  .index {
+    height: calc(100vh - 80px - 60px); } }
+
+@media (min-width: 768px) {
+  .index {
+    height: calc(100vh - 100px - 140px); } }
+
+@media (min-width: 1024px) {
+  .index {
+    height: calc(100vh - 100px - 85px); } }
+
+/*  Full height index
+    --------------------------------- */
