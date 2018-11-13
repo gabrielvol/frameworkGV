@@ -85,7 +85,7 @@
             position: relative;
             z-index: $zIndexLogoH;
             
-            @if $floateLogoNav == "on"{
+            @if $floatedLogoNav == "on"{
                 box-sizing: border-box;
                 float: left;
                 width: $logoWAT;

@@ -37,7 +37,7 @@
     }    
     
     @include afterTablet{
-        @if $floateLogoNav == "on"{
+        @if $floatedLogoNav == "on"{
             width: calc(100% - #{$logoWAT});
             float: left;
             margin-top: 30px;
@@ -165,7 +165,7 @@
     @include tabletOnly{}
     
     @include afterTabletLandscape{
-        @if $floateLogoNav == "on"{
+        @if $floatedLogoNav == "on"{
             width: calc(100% - #{$logoWATL});
         }
         
