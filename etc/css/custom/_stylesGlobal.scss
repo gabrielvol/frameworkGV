@@ -15,6 +15,7 @@
     text-align: center;
     
     &, &:focus, &:hover{
+        text-decoration: none;
     }
     
     &:focus, &:hover{
