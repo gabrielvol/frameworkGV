@@ -4,7 +4,12 @@
 .social{
     z-index: $zIndexSocial;
         
-    li{
+    li{        
+        a{
+            background-repeat: no-repeat;
+            background-size: 30px;
+        }
+        
         & + li{}
     }
 
