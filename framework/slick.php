@@ -28,69 +28,69 @@
         </ul>
         
         <?php
-            $fotoSliderHeader01 = '01';
-            $fotoSliderHeader02 = '02';
-            $fotoSliderHeader03 = '03';
-            $fotoSliderHeader04 = '04';
-            $fotoSliderHeader05 = '05';
-            $fotoSliderHeader06 = '06';
-            $fotoSliderHeader07 = '07';
-            $fotoSliderHeader08 = '08';
-            $fotoSliderHeader09 = '09';
-            $fotoSliderHeader10 = '10';
-            $fotoSliderHeader11 = '11';
-            $fotoSliderHeader12 = '12';
-            $fotoSliderHeader13 = '13';
-            $fotoSliderHeader14 = '14';
-            $fotoSliderHeader15 = '15';
-            $fotoSliderHeader16 = '16';
-            $fotoSliderHeader17 = '17';
-            $fotoSliderHeader18 = '18';
-            $fotoSliderHeader19 = '19';
-            $fotoSliderHeader20 = '10';
-            include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.header.inc.php');
+            $fotoSliderMain01 = '01';
+            $fotoSliderMain02 = '02';
+            $fotoSliderMain03 = '03';
+            $fotoSliderMain04 = '04';
+            $fotoSliderMain05 = '05';
+            $fotoSliderMain06 = '06';
+            $fotoSliderMain07 = '07';
+            $fotoSliderMain08 = '08';
+            $fotoSliderMain09 = '09';
+            $fotoSliderMain10 = '10';
+            $fotoSliderMain11 = '11';
+            $fotoSliderMain12 = '12';
+            $fotoSliderMain13 = '13';
+            $fotoSliderMain14 = '14';
+            $fotoSliderMain15 = '15';
+            $fotoSliderMain16 = '16';
+            $fotoSliderMain17 = '17';
+            $fotoSliderMain18 = '18';
+            $fotoSliderMain19 = '19';
+            $fotoSliderMain20 = '10';
+            include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.main.inc.php');
         ?>
         <ul class="slickSection slick mask horizontal clearfix">
-            <?php if(isset($fotoSliderHeader01)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader02)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader03)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader03; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader04)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader04; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader05)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader05; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader06)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader06; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader07)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader07; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader08)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader08; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader09)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader09; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader10)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader10; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader11)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader11; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader12)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader12; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader13)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader13; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader14)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader14; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader15)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader15; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader16)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader16; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader17)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader17; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader18)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader18; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader19)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader19; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <?php endif; if(isset($fotoSliderHeader20)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderHeader20; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php if(isset($fotoSliderMain01)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain02)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain03)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain03; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain04)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain04; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain05)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain05; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain06)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain06; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain07)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain07; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain08)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain08; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain09)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain09; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain10)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain10; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain11)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain11; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain12)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain12; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain13)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain13; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain14)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain14; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain15)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain15; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain16)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain16; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain17)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain17; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain18)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain18; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain19)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain19; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <?php endif; if(isset($fotoSliderMain20)): ?>
+            <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain20; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; ?>
         </ul>
     </div>
