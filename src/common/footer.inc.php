@@ -10,7 +10,7 @@
     <?php include('social.inc.php'); ?>
     
     <p class="googleAddress">
-        <a href="https://goo.gl/maps/" target="_blank"><?php echo _("Direccion"); ?></a>
+        <a href="<?php echo $urlGM ?>" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
     <p class="footerCopy">
