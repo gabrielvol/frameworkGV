@@ -2,6 +2,10 @@
    Slick Slider Styles | Custom [stylesSlider.scss]
    ========================================================================== */
 .slick{
+    &, .slick-slide{
+        z-index: $zIndexSlickMain!important; 
+    }
+    
     &, div{
         @include clearfix;
     }
