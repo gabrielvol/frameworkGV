@@ -221,9 +221,6 @@
         @include mobileOnly{
             width: $containerMobileValue;
         }    
-        @include afterMobileLandscape{
-            width: $containerMobileLandscapeValue;
-        }    
         @include mobileLandscapeOnly{
             width: $containerMobileLandscapeValue;
         }    
