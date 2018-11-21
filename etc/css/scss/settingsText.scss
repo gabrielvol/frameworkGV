@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
 h1, h2, h3, h4, h5, h6{
     margin: $headingMargin;
 }
-p, a, li, .pSize{
+p, a, li, dd, dt, .pSize{
     @include beforeTablet{
         font-size: $mainFontSizeParagraphBT;
     }
