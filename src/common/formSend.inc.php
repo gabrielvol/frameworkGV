@@ -67,7 +67,7 @@
         $texto   .= "<strong>Direcci&oacute;n:</strong> ".$direccion_FormName."<br />";
         $texto   .= "<strong>Domicilio:</strong> ".$domicilio_FormName."<br />";
         $texto   .= "<strong>Sexo:</strong> ".$genero_FormName."<br />";
-        $texto   .= "<strong>DNI:</strong> ".·dni_FormName."<br />";
+        $texto   .= "<strong>DNI:</strong> ".$dni_FormName."<br />";
         $texto   .= "<strong>C&oacute;digo postal:</strong> ".$codigopostal_FormName."<br />";
         $texto   .= "<strong>Localidad:</strong> ".$localidad_FormName."<br />";
         $texto   .= "<strong>Provincia:</strong> ".$provincia_FormName."<br />";
