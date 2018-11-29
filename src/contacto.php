@@ -7,15 +7,20 @@
     $title = "Contacto | PáginaSinTítulo";
     //$titleGB = "Contact | UntitledPage";
     
-    $mdesc = "";
-    //$mdescGB = "";
-    
-    $ogURL = $url;
+//Open Graph Start
+            // Max 35 char
+            // 123456789-123456789-123456789-12345 
     $ogTitle = "OGWebsiteTitle";
-    // Max 35 char 123456789-123456789-123456789-12345    
-    $ogSiteName = $ogTitle;
+    //$ogTitleGB = "OGWebsiteTitle";
+    
+            // Max 65 char
+            // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
     $ogDesc = "Descr.";
-    // Max65 char 123456789-123456789-123456789-123456789-123456789-123456789-12345
+    //$ogDescGB = "Descr.";
+    
+    $ogURL = $url;  
+    $ogSiteName = $ogTitle;
+//Open Graph End
     
     $navCurrent = 0;
     
