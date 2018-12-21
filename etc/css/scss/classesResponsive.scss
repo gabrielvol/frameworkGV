@@ -62,6 +62,7 @@
             text-align-last: center;
         }
         .upperCaseMO{text-transform: uppercase}
+        .lowerCaseMO{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanMO == "on"{
@@ -176,6 +177,7 @@
             text-align-last: center;
         }
         .upperCaseAML{text-transform: uppercase}
+        .lowerCaseAML{text-transform: lowercase}
     }
     
     @if $stylesBackgroundsBanAML == "on"{
@@ -290,6 +292,7 @@
             text-align-last: center;
         }
         .upperCaseMLO{text-transform: uppercase}
+        .lowerCaseMLO{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanMLO == "on"{
@@ -404,6 +407,7 @@
             text-align-last: center;
         }
         .upperCaseBT{text-transform: uppercase}
+        .lowerCaseBT{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanBT == "on"{
@@ -518,6 +522,7 @@
             text-align-last: center;
         }
         .upperCaseBTL{text-transform: uppercase}
+        .lowerCaseBTL{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanBTL == "on"{
@@ -632,6 +637,7 @@
             text-align-last: center;
         }
         .upperCaseTO{text-transform: uppercase}
+        .lowerCaseTO{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanTO == "on"{
@@ -747,6 +753,7 @@
             text-align-last: center;
         }
         .upperCaseAT{text-transform: uppercase}
+        .lowerCaseAT{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanAT == "on"{
@@ -861,6 +868,7 @@
             text-align-last: center;
         }
         .upperCaseATL{text-transform: uppercase}
+        .lowerCaseATL{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanATL == "on"{
@@ -975,6 +983,7 @@
             text-align-last: center;
         }
         .upperCaseTLO{text-transform: uppercase}
+        .lowerCaseTLO{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanTLO == "on"{
@@ -1089,6 +1098,7 @@
             text-align-last: center;
         }
         .upperCaseTTLO{text-transform: uppercase}
+        .lowerCaseTTLO{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanTTLO == "on"{
@@ -1203,6 +1213,7 @@
             text-align-last: center;
         }
         .upperCaseBD{text-transform: uppercase}
+        .lowerCaseBD{text-transform: lowercase}
     }
     
     @if $stylesBackgroundsBanBD == "on"{
@@ -1317,6 +1328,7 @@
             text-align-last: center;
         }
         .upperCaseAD{text-transform: uppercase}
+        .lowerCaseAD{text-transform: lowercase}
     }
         
     @if $stylesBackgroundsBanAD == "on"{
