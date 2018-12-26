@@ -426,15 +426,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.8em; }
 
 @media (max-width: 767px) {
-  p, a, li, .pSize {
+  p, a, li, dd, dt, .pSize {
     font-size: 0.9rem; } }
 
 @media (min-width: 768px) {
-  p, a, li, .pSize {
+  p, a, li, dd, dt, .pSize {
     font-size: 1rem; } }
 
 @media (min-width: 1024px) {
-  p, a, li, .pSize {
+  p, a, li, dd, dt, .pSize {
     font-size: 1rem; } }
 
 p, dl, legend {
@@ -700,11 +700,8 @@ b, strong,
   text-indent: -9999px; }
 
 /* =============================================================================
-   Fonts Classes | Custom [classesFonts.scss]
+   Text Classes | Custom [classesText.scss]
    ========================================================================== */
-.textShadow {
-  text-shadow: 1px 1px 5px #333; }
-
 .letterSpacing {
   letter-spacing: 0.05rem; }
 
@@ -763,6 +760,9 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 /* =============================================================================
    Shadows Classes | Custom [classesShadows.scss]
    ========================================================================== */
+.textShadow {
+  text-shadow: 0 0 3px #000; }
+
 .boxShadow {
   box-shadow: 0 0 10px 0 #666; }
 
@@ -1404,6 +1404,8 @@ article, article::before, article::after, details, details::before, details::aft
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center; }
+  .callToAction, .callToAction:focus, .callToAction:hover {
+    text-decoration: none !important; }
   .callToAction:focus, .callToAction:hover {
     background-color: #c6c6c6;
     border-color: #333;
@@ -1766,10 +1768,6 @@ nav li:focus a, nav li:hover a {
 
 .navMain {
   z-index: 1000; }
-  .navMain li a, .navMain li .topLevelItem {
-    font-family: Arial; }
-  .navMain li.current a, .navMain li.current .topLevelItem {
-    font-family: Arial; }
   @media (max-width: 767px) {
     .navMain {
       position: fixed; }
@@ -1821,7 +1819,8 @@ nav li:focus a, nav li:hover a {
         .navMain > ul li {
           float: none !important; }
           .navMain > ul li a, .navMain > ul li .topLevelItem {
-            color: #000; }
+            color: #000;
+            font-family: Arial; }
           .navMain > ul li .topLevelItem {
             background-repeat: no-repeat;
             background-position: 10px center; }
@@ -1834,6 +1833,7 @@ nav li:focus a, nav li:hover a {
           background-repeat: no-repeat;
           background-position: right 10px center; }
           .navMain > ul > .current > a, .navMain > ul > .current > .topLevelItem {
+            font-family: Arial;
             color: #000; }
         .navMain > ul, .navMain > ul .subMenu {
           top: 0;
@@ -1850,11 +1850,12 @@ nav li:focus a, nav li:hover a {
       .navMain > ul > li {
         background: transparent; }
         .navMain > ul > li a, .navMain > ul > li .topLevelItem {
-          color: #000; }
+          color: #000;
+          font-family: Arial; }
         .navMain > ul > li:focus, .navMain > ul > li:hover {
           background-color: transparent; }
           .navMain > ul > li:focus a, .navMain > ul > li:hover a {
-            color: #333333; }
+            color: #000; }
       .navMain > ul > .current {
         background-color: transparent; }
         .navMain > ul > .current > a, .navMain > ul > .current .topLevelItem {

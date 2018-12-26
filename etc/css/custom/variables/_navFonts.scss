@@ -1,7 +1,12 @@
 /* =============================================================================
    Nav Fonts Variables | Custom [navFonts.scss]
    ========================================================================== */
-$navFontFamily: $mainFontFamily;
-$navFontFamilySub: $navFontFamily;
-$navCurrentFontFamily: $navFontFamily;
-$hamburgerFontFamily: $arial;
+$navFontFamilyBT:        $mainFontFamily;
+$navFontFamilySubBT:     $navFontFamilyBT;
+$navCurrentFontFamilyBT: $navFontFamilyBT;
+
+$navFontFamilyAT:        $mainFontFamily;
+$navFontFamilySubAT:     $navFontFamilyAT;
+$navCurrentFontFamilyAT: $navFontFamilyAT;
+
+$hamburgerFontFamily:    $arial;

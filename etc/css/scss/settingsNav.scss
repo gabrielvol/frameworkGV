@@ -20,14 +20,10 @@ nav{
     z-index: $zIndexNav;
     
     li{         
-        a, .topLevelItem{
-            font-family: $navFontFamily;
-        }
+        a, .topLevelItem{}
         
         &.current{
-            a, .topLevelItem{
-                font-family: $navCurrentFontFamily;
-            }            
+            a, .topLevelItem{}            
         }     
     }
     
@@ -115,6 +111,7 @@ nav{
 
                     a, .topLevelItem{
                         color: $navFontColourBT;
+                        font-family: $navFontFamilyBT;
                     }
                     
                     .topLevelItem{
@@ -137,8 +134,9 @@ nav{
                     background-position: right 10px center;
 
                     > a, > .topLevelItem{
+                        font-family: $navCurrentFontFamilyBT;
                         color: $navCurrentFontColourBT;
-                    }   
+                    }
                 } 
                 
                 &, .subMenu{
@@ -226,6 +224,7 @@ nav{
 
                 a, .topLevelItem{
                     color: $navFontColourAT;
+                    font-family: $navFontFamilyAT;
                 }    
 
                 &:focus, &:hover{
