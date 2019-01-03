@@ -5,13 +5,3 @@
     width: $squareSizeValue;
     height: $squareSizeValue;
 }
-@mixin equalHeightAndLineHeight($equalHeightAndLineHeightValue){
-    height: $equalHeightAndLineHeightValue;
-    line-height: $equalHeightAndLineHeightValue;
-}
-@mixin squareSizeAndEqualHeightAndLineHeight($squareSizeAndEqualHeightAndLineHeightValue){
-    width: $squareSizeAndEqualHeightAndLineHeightValue;
-    height: $squareSizeAndEqualHeightAndLineHeightValue;
-    line-height: $squareSizeAndEqualHeightAndLineHeightValue;
-    text-align: center;
-}

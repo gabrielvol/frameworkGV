@@ -1,0 +1,17 @@
+/* =============================================================================
+   Text Mixins | Etc [mixinsText.scss]
+   ========================================================================== */
+@mixin textHeightAndLineHeight($lineHeightValue, $heightSize: 2){
+    height: calc(#{$lineHeightValue} * #{$heightSize});
+    line-height: $lineHeightValue;
+}
+@mixin equalHeightAndLineHeight($equalHeightAndLineHeightValue){
+    height: $equalHeightAndLineHeightValue;
+    line-height: $equalHeightAndLineHeightValue;
+}
+@mixin squareSizeAndEqualHeightAndLineHeight($squareSizeAndEqualHeightAndLineHeightValue){
+    width: $squareSizeAndEqualHeightAndLineHeightValue;
+    height: $squareSizeAndEqualHeightAndLineHeightValue;
+    line-height: $squareSizeAndEqualHeightAndLineHeightValue;
+    text-align: center;
+}
