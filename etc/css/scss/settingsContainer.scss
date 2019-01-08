@@ -191,10 +191,7 @@
         }    
         @include mobileLandscapeOnly{
             width: $containerMobileLandscapeValue;
-        }    
-        @include beforeTablet{
-            width: $containerMobileLandscapeValue;
-        }    
+        }     
         @include afterTablet{
             width: $containerTabletValue;
         }    
