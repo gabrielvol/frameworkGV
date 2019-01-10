@@ -1,0 +1,73 @@
+/* =============================================================================
+   Media Queries Placeholders | Custom [placeholdersMediaQueries.scss]
+   ========================================================================== */
+
+    @include mobileOnly{}
+    
+    @include afterMobileLandscape{}
+    
+    @include mobileLandscapeOnly{}
+    
+
+    
+    @include beforeMobile600{}
+    
+    @include afterMobile600{}
+    
+    @include mobile600Only{}
+    
+
+    
+    @include beforeMobile650{}
+    
+    @include afterMobile650{}
+    
+    @include mobile650Only{}
+
+    
+    
+    @include beforeMobile700{}
+    
+    @include afterMobile700{}
+    
+    @include mobile700Only{}
+    
+    
+
+    @include beforeMobile800{}
+    
+    @include afterMobile800{}
+    
+    @include mobile800Only{}
+    
+    
+
+    @include beforeMobile900{}
+    
+    @include afterMobile900{}
+    
+    @include mobile900Only{}
+    
+
+    
+    @include beforeTablet{}
+    
+    @include afterTablet{}
+    
+    @include tabletOnly{}
+    
+
+    
+    @include beforeTabletLandscape{}
+    
+    @include afterTabletLandscape{}
+    
+    @include tabletLandscapeOnly{}
+    
+
+    
+    @include beforeDesktop{}
+    
+    @include afterDesktop{}
+    
+    @include afterDesktopLarge{}
