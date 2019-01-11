@@ -17,7 +17,6 @@
         &copy;
         <?php
             $fromYear = 2010;
-            $thisYear = (int)date('Y');
             echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : ''); 
         ?> Company y Asociados
     </p>

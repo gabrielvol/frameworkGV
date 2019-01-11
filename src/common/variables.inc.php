@@ -8,4 +8,6 @@
     $urlWA = "https://api.whatsapp.com/send?phone=5491100001111";
     $urlEM = "mailto:correo@servidor.com";
     $urlGM = "https://goo.gl/maps/aaaaaaaaaaaa";
+    
+    $fechaYear = (int)date('Y');
 ?>
