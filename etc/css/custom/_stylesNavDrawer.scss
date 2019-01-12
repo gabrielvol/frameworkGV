@@ -15,15 +15,15 @@
                 text-align: center;
             }     
         
-            &.volver .topLevelItem{
-                background-image: url('/nuevo/img/nav_arrowL.svg');
+            &.backMenu .topLevelItem{
+                background-image: url('/clientes/agridulze/img/nav_arrowL.svg');
             }     
         
-            &.volver{    
-                @include borderStyleB(2px, $bcVolverColour);
+            &.backMenu{    
+                @include borderStyleB(2px, $bcBackMenuColour);
                 
-                & + .volver{
-                    border-color: $bcGreyD transparent $bcVolverColour;
+                & + .backMenu{
+                    border-color: $bcGreyD transparent $bcBackMenuColour;
                     border-width: 1px 0 2px;
                     border-style: solid;
                 }
@@ -32,7 +32,7 @@
                     color: $white!important;
 
                     &.open{
-                        background-image: url(/nuevo/img/nav_arrowD.svg); 
+                        background-image: url(/clientes/agridulze/img/nav_arrowD.svg); 
                     }
                 }
             }    
