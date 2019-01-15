@@ -15,9 +15,9 @@
     $ogTitle = "OGWebsiteTitle";
     //$ogTitleGB = "OGWebsiteTitle";
     
-            // Max 65 char
-            // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $ogDesc = "Descr.";
+             // Max 65 char                       ·
+             // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    $ogDesc =  "Descr.";
     //$ogDescGB = "Descr.";
     
     $ogURL = $url;  
