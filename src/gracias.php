@@ -8,8 +8,8 @@
     //$titleGB = "Thank You";
     
 //Open Graph Start
-            // Max 35 char
-            // 123456789-123456789-123456789-12345 
+             // Max 35 char
+             // 123456789-123456789-123456789-12345 
     $ogTitle = "OGWebsiteTitle";
     //$ogTitleGB = "OGWebsiteTitle";
     
