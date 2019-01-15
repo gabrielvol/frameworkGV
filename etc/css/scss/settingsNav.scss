@@ -19,7 +19,7 @@ nav{
 .navMain{
     z-index: $zIndexNav;
     
-    li{         
+    li{
         a, .topLevelItem{}
         
         &.current{
@@ -27,14 +27,10 @@ nav{
         }     
     }
     
-    @if $navHasSub == "on"{    
+    @if $navHasSub == "on"{
         .subMenu{
             z-index: $zIndexNavSubMenu;
             margin-top: $zero;
-            
-            a{
-                font-family: $navFontFamilySub;
-            }
         }
     }
    
@@ -50,7 +46,7 @@ nav{
             .navOpen{
                 z-index: $zIndexNavOpen;  
                 opacity: 1;
-                background-image: url('/nuevo/img/nav_hamb.svg');
+                background-image: url('/clientes/agridulze/img/nav_hamb.svg');
                 background-repeat: no-repeat;
                 color: $hamburgerFontColour;
                 font-family: $hamburgerFontFamily;
@@ -61,12 +57,12 @@ nav{
                 } 
             }
         
-            .navClose{ 
+            .navClose{
                 @include borderRadius(50%);
                 z-index: $zIndexNavClose;  
                 display: none;            
                 background-color: $bgWhite;
-                background-image: url('/nuevo/img/nav_close.svg');
+                background-image: url('/clientes/agridulze/img/nav_close.svg');
                 background-repeat: no-repeat;
                 background-position: center center; 
                 
@@ -119,7 +115,7 @@ nav{
                         background-position: 10px center;
 
                         &.open{
-                            background-image: url('/nuevo/img/nav_arrowD.svg');
+                            background-image: url('/clientes/agridulze/img/nav_arrowD.svg');
                         }
                     }   
                     
@@ -129,7 +125,7 @@ nav{
                 }
                     
                 > .current{
-                    background-image: url('/nuevo/img/nav_arrowL.svg');
+                    background-image: url('/clientes/agridulze/img/nav_arrowL.svg');
                     background-repeat: no-repeat;
                     background-position: right 10px center;
 
@@ -154,7 +150,7 @@ nav{
             }
         }
         
-        @if $navHasSub == "on"{ 
+        @if $navHasSub == "on"{
             .subMenu{
                 position: relative;
                 top: 0;
@@ -165,24 +161,24 @@ nav{
                 
                 li{
                     background-color: $bgNavSubItemBT;
-                    
-                    a{
-                        font-family: $navFontFamilySub;
-                        color: $navSubFontColourBT;
-                    }
-                    
-                    &.current{
-                        background-color: $bgNavSubCurrentItemBT;
-                        
-                        a{
-                            color: $navSubCurrentFontColourBT;
-                        }
-                    }
                 }  
+                    
+                a{
+                    font-family: $navFontFamilySubBT;
+                    color: $navSubFontColourBT;
+                }
+
+                .current{
+                    background-color: $bgNavSubCurrentItemBT;
+
+                    a{
+                        color: $navSubCurrentFontColourBT;
+                    }
+                }
                 
                 @if $navHasSubSub == "on"{
                     .current .current{
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
+                        background-image: url('/clientes/agridulze/img/nav_arrowL.svg');
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
@@ -192,7 +188,7 @@ nav{
                     }
                 } @else {
                     .current{
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
+                        background-image: url('/clientes/agridulze/img/nav_arrowL.svg');
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
@@ -211,7 +207,7 @@ nav{
     
     @include afterTablet{
         @if $navDrawer == "on"{
-            .navClose{ 
+            .navClose{
                 display: $none;
             }
         }
@@ -258,7 +254,7 @@ nav{
                 display: $none;
                 background-color: $bgNavSubAT;
                 
-                > li{                        
+                > li{
                     @include transition(0.7s);
                     background-color: $bgNavSubItemAT;
                     
@@ -293,10 +289,14 @@ nav{
                         }
                     }
                 }
+                
+                a{
+                    font-family: $navFontFamilySubAT;
+                }
             }
         }
         
-        @if $navTopper == "on"{        
+        @if $navTopper == "on"{
             &.topper{
                 top: 0;
                 background-color: $bgNavTopper;
@@ -311,15 +311,15 @@ nav{
                             color: $navFontColourTopper;
                         }
 
-                        &:focus, &:hover{                        
+                        &:focus, &:hover{
                             > a, .topLevelItem{
                                 color: $navFontColourTopperHover;
                             }  
                         }
                     }
                         
-                    > .current{                            
-                        &, &:focus, &:hover{                        
+                    > .current{
+                        &, &:focus, &:hover{
                             > a, .topLevelItem{
                                 color: $navCurrentFontColourTopper;
                             }  
@@ -357,7 +357,7 @@ nav{
     
     @include afterDesktop{
         @if $navHasSub == "on"{
-            .hasSub{                
+            .hasSub{
                 &:focus, &:hover{
                     ul{
                         &, &.open, &.openSubTTLO{

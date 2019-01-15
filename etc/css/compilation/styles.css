@@ -1908,18 +1908,18 @@ nav li:focus a, nav li:hover a {
       .navMain > ul li a, .navMain > ul li .topLevelItem {
         font-size: 1rem;
         text-align: center; }
-      .navMain > ul li.volver .topLevelItem {
-        background-image: url("/nuevo/img/nav_arrowL.svg"); }
-      .navMain > ul li.volver {
+      .navMain > ul li.backMenu .topLevelItem {
+        background-image: url("/clientes/agridulze/img/nav_arrowL.svg"); }
+      .navMain > ul li.backMenu {
         border-bottom: #fff solid 2px; }
-        .navMain > ul li.volver + .volver {
+        .navMain > ul li.backMenu + .backMenu {
           border-color: #666 transparent #fff;
           border-width: 1px 0 2px;
           border-style: solid; }
-        .navMain > ul li.volver .topLevelItem {
+        .navMain > ul li.backMenu .topLevelItem {
           color: #fff !important; }
-          .navMain > ul li.volver .topLevelItem.open {
-            background-image: url(/nuevo/img/nav_arrowD.svg); } }
+          .navMain > ul li.backMenu .topLevelItem.open {
+            background-image: url(/clientes/agridulze/img/nav_arrowD.svg); } }
 
 @media (min-width: 768px) {
   .navMain {
