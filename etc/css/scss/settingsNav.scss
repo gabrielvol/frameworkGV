@@ -226,7 +226,7 @@ nav{
                 &:focus, &:hover{
                     background-color: $bgNavItemHover; 
                     
-                    a{
+                    > a{
                         color: $navFontColourHover;
                     }
                 }            
