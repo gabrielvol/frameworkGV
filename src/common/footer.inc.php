@@ -13,6 +13,8 @@
         <a href="<?php echo $urlGM ?>" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
+    <p class="footerCopy">&copy; <?php echo $thisYear; ?> CompanyAsociados</p>
+    
     <p class="footerCopy">
         &copy;
         <?php
