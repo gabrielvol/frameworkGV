@@ -10,5 +10,5 @@
     $urlEM = "mailto:correo@servidor.com";
     $urlGM = "https://goo.gl/maps/aaaaaaaaaaaa";
     
-    $fechaYear = (int)date('Y');
+    $dateThisYear = (int)date('Y');
 ?>

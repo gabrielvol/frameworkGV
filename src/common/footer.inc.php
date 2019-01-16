@@ -13,13 +13,13 @@
         <a href="<?php echo $urlGM ?>" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
-    <p class="footerCopy">&copy; <?php echo $thisYear; ?> CompanyAsociados</p>
+    <p class="footerCopy">&copy; <?php echo $dateThisYear; ?> CompanyAsociados</p>
     
     <p class="footerCopy">
         &copy;
         <?php
             $fromYear = 2010;
-            echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : ''); 
+            echo $fromYear . (($fromYear != $dateThisYear) ? ' - ' . $dateThisYear : ''); 
         ?> Company y Asociados
     </p>
     
