@@ -237,6 +237,7 @@ nav{
 
                 > a, .topLevelItem{
                     color: $navCurrentFontColourAT;
+                    font-family: $navCurrentFontFamilyAT;
                 }  
 
                 &:focus, &:hover{
