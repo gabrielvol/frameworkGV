@@ -98,6 +98,10 @@
 
                     &, a{}
                     
+                    & + li{
+                        @include borderStyleT($bcNavSubItemAT);
+                    }
+                    
                     &:last-child{          
                         &, a{
                             @include borderRadiusB($borderRadiusB);
@@ -162,6 +166,10 @@
 
                             &, a{
                                 @include equalHeightAndLineHeight(35px);
+                            }
+                            
+                            &:first-child{
+                                @include borderStyleT($bcNavSubItemAT);
                             }
                     
                             &:last-child{          
