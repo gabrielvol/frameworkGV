@@ -216,7 +216,7 @@ nav{
             background-color: $bgNavAT; 
             
             > li{
-                background: $bgNavItemAT;
+                background-color: $bgNavItemAT;
 
                 a, .topLevelItem{
                     color: $navFontColourAT;
@@ -275,6 +275,7 @@ nav{
                 > .current{
                     a{
                         color: $navSubCurrentFontColourAT;
+                        font-family: $navCurrentFontFamilySubAT;
                         cursor: default;
                     }
 
