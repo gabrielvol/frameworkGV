@@ -121,7 +121,10 @@
                     
                     > li{
                         padding-top: 0;
-                        height: $topperHeight;
+                        
+                        &, a, .topLevelItem{
+                            height: $topperHeight;
+                        }
                     }
                         
                     > .current{
@@ -130,14 +133,15 @@
                         }
                     }
 
-                    a{
-                        @include equalHeightAndLineHeight($topperHeight);
+                    a, .topLevelItem{
+                        line-height: $topperHeight;
                     }
                 }
                 
                 @if $navHasSub == "on"{
                     .subMenu{
                         @include borderRadiusB(3px);
+                        top: $topperHeight;
                         background-image: $bgGradBlackEighty;
                         filter: $bgGradBlackEightyFilter;
                         padding-bottom: 5px;
