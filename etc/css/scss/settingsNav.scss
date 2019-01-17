@@ -235,7 +235,7 @@ nav{
             > .current{
                 background-color: $bgNavCurrentItemAT;
 
-                > a, .topLevelItem{
+                a, .topLevelItem{
                     color: $navCurrentFontColourAT;
                     font-family: $navCurrentFontFamilyAT;
                 }  
@@ -259,8 +259,9 @@ nav{
                     @include transition(0.7s);
                     background-color: $bgNavSubItemAT;
                     
-                    a{
+                    a, .topLevelItem{
                         color: $navSubFontColourAT;
+                        font-family: $navFontFamilySubAT;
                         cursor: pointer;
                     }
                     
@@ -274,7 +275,7 @@ nav{
                 }
                     
                 > .current{
-                    a{
+                    a, .topLevelItem{
                         color: $navSubCurrentFontColourAT;
                         font-family: $navCurrentFontFamilySubAT;
                         cursor: default;
@@ -285,15 +286,10 @@ nav{
                     }
 
                     &:focus, &:hover{
-
                         a{
                             color: $navSubCurrentFontColourHover;
                         }
                     }
-                }
-                
-                a{
-                    font-family: $navFontFamilySubAT;
                 }
             }
         }
@@ -343,7 +339,39 @@ nav{
                 }
             }
         }
-    }      
+    }     
+    
+    @include afterTabletLandscape{
+        > ul{
+            > li{
+                a, .topLevelItem{
+                    font-family: $navFontFamilyATL;
+                }                
+            }
+            
+            .current{
+                a, .topLevelItem{
+                    font-family: $navCurrentFontFamilyATL;
+                }
+            }
+        }
+            
+        @if $navHasSub == "on"{
+            .subMenu{                
+                > li{                
+                    a, .topLevelItem{
+                        font-family: $navFontFamilySubATL;
+                    }                    
+                }
+                
+                > .current{
+                    a, .topLevelItem{
+                        font-family: $navCurrentFontFamilySubATL;
+                    }                    
+                }
+            }
+        }
+    }    
     
     @include tabletAndTabletLandscapeOnly{
         .mainMenu{
