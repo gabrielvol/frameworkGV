@@ -308,7 +308,7 @@ nav{
 
                 .mainMenu{
                     > li{
-                        a, .topLevelItem{
+                        > a, > .topLevelItem{
                             color: $navFontColourTopper;
                         }
 

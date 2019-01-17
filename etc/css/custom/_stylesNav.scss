@@ -140,7 +140,9 @@
                 
                 @if $navHasSub == "on"{
                     .subMenu{
-                        @include borderRadiusB(3px);
+                        $subMenuBorderRadiusB: 6px;
+                        
+                        @include borderRadiusB($subMenuBorderRadiusB);
                         top: $topperHeight;
                         background-image: $bgGradBlackEighty;
                         filter: $bgGradBlackEightyFilter;
@@ -160,6 +162,12 @@
 
                             &, a{
                                 @include equalHeightAndLineHeight(35px);
+                            }
+                    
+                            &:last-child{          
+                                &, a{
+                                    @include borderRadiusB($subMenuBorderRadiusB);
+                                }
                             }
                         }
                     }
