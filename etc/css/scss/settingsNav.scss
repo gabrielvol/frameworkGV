@@ -311,6 +311,10 @@ nav{
                     > li{
                         > a, > .topLevelItem{
                             color: $navFontColourTopper;
+                
+                            &.open{
+                                color: $navFontColourTopperHover;
+                            }
                         }
 
                         &:focus, &:hover{
