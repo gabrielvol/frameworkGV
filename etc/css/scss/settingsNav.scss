@@ -335,7 +335,6 @@ nav{
 
                 @if $navHasSub == "on"{
                     .subMenu{
-                        left: 0;
                         position: absolute;
 
                         li{

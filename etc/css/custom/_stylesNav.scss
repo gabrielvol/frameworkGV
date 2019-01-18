@@ -148,6 +148,7 @@
                         
                         @include borderRadiusB($subMenuBorderRadiusB);
                         top: $topperHeight;
+                        left: 0;
                         background-image: $bgGradBlackEighty;
                         filter: $bgGradBlackEightyFilter;
                         padding-bottom: 5px;
