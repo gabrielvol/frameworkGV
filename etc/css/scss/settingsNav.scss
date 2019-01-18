@@ -221,10 +221,6 @@ nav{
                 a, .topLevelItem{
                     color: $navFontColourAT;
                     font-family: $navFontFamilyAT;
-                
-                    &.open{
-                        color: $navCurrentFontColourAT;
-                    }
                 }    
 
                 &:focus, &:hover{
@@ -311,10 +307,6 @@ nav{
                     > li{
                         > a, > .topLevelItem{
                             color: $navFontColourTopper;
-                
-                            &.open{
-                                color: $navFontColourTopperHover;
-                            }
                         }
 
                         &:focus, &:hover{
@@ -386,6 +378,20 @@ nav{
                 .subMenu{
                     &.openSubTTLO{
                         display: $block;
+                    }
+                }
+            }
+            
+            @if $navTopper == "on"{
+                &.topper{
+                    .mainMenu{
+                        > li{
+                            > a, > .topLevelItem{                
+                                &.open{
+                                    color: $navFontColourTopperHover;
+                                }
+                            }
+                        }
                     }
                 }
             }
