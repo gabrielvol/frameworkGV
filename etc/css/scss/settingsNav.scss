@@ -221,6 +221,10 @@ nav{
                 a, .topLevelItem{
                     color: $navFontColourAT;
                     font-family: $navFontFamilyAT;
+                
+                    &.open{
+                        color: $navCurrentFontColourAT;
+                    }
                 }    
 
                 &:focus, &:hover{
