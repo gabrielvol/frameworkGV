@@ -11,9 +11,7 @@
     }
 }
 
-.slickMain{
-    z-index: $zIndexSlickMain;
-    
+.slickMain{    
     &, div, li{
         height: 300px;
     }
