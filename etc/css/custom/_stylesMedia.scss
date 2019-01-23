@@ -1,22 +1,39 @@
 /* =============================================================================
    Media Styles | Custom [stylesMedia.scss]
    ========================================================================== */
+.youTubeVideo,
 .googleMap{
     @include borderRadius(6px);
-    @include borderStyle($bcGreyD);
-    width: 100%;
-    height: 300px;
+    @include borderStyle($bcGreyL);
+    overflow: hidden;
 
     iframe{
-        width: 101%;
+        width: 100.5%;
         height: 100%;
     }
 
     @include mobileOnly{
-        height: 450px;
+        width: 300px;
+        height: 168px;
     }
 
-    @include mobile600Only{
-        @include centerCustom(400px);
+    @include afterMobile600{
+        width: 500px;
+        height: 281px;
+    }
+    
+    @include afterTablet{
+        width: 600px;
+        height: 337px;
     }
 }
+
+/*
+300:168
+400:225
+450:253
+500:281
+600:337
+700:393
+800:450
+*/
