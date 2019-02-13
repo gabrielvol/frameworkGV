@@ -217,6 +217,7 @@ form{
             
             &, &:focus, &:hover{
                 border-color: $bcError!important;
+                box-shadow: inset 0 0 0 $formInputBgColourHover;
             }
         }
     }
