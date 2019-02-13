@@ -257,49 +257,49 @@
 //INICIA VALIDACIÓN DEBAJO DE CADA INPUT
         if (empty($_POST["nombre_FormName"])) {
             $errorBelowInputNombre = $errorMsgNombre_FormName;
-            $errorFormClassNombre = "active";
+            $errorFormClassNombre_FormName = "active";
             $invalidFieldNombre_FormName = "invalidField";
             $autofocusNombre_FormName = "autofocus";
                        
         } elseif (empty($_POST["apellido_FormName"])) {
             $errorBelowInputApellido = $errorMsgApellido_FormName;
-            $errorFormClassApellido = "active";
+            $errorFormClassApellido_FormName = "active";
             $invalidFieldApellido_FormName = "invalidField";
             $autofocusApellido_FormName = "autofocus";
                        
         } elseif (empty($_POST["nombreApe_FormName"])) {
             $errorBelowInputNombreApe = $errorMsgNombreApe_FormName;
-            $errorFormClassNombreApe = "active";
+            $errorFormClassNombreApe_FormName = "active";
             $invalidFieldNombreApe_FormName = "invalidField";
             $autofocusNombreApe_FormName = "autofocus";
                        
         } elseif (empty($_POST["nombreComp_FormName"])) {
             $errorBelowInputNombreComp = $errorMsgNombreComp_FormName;
-            $errorFormClassNombreComp = "active";
+            $errorFormClassNombreComp_FormName = "active";
             $invalidFieldNombreComp_FormName = "invalidField";
             $autofocusNombreComp_FormName = "autofocus";
                        
         } elseif (empty($_POST["dni_FormName"])) {
             $errorBelowInputDNI = $errorMsgDNI_FormName;
-            $errorFormClassDNI = "active";
+            $errorFormClassDNI_FormName = "active";
             $invalidFieldDNI_FormName = "invalidField";
             $autofocusDNI_FormName = "autofocus";
             
         } elseif (empty($_POST["direccion_FormName"])) {
             $errorBelowInputDireccion = $errorMsgDireccion_FormName;
-            $errorFormClassDireccion = "active";
+            $errorFormClassDireccion_FormName = "active";
             $invalidFieldDireccion_FormName = "invalidField";
             $autofocusDireccion_FormName = "autofocus";
             
         } elseif (empty($_POST["domicilio_FormName"])) {
             $errorBelowInputDomicilio = $errorMsgDomicilio_FormName;
-            $errorFormClassDomicilio = "active";
+            $errorFormClassDomicilio_FormName = "active";
             $invalidFieldDomicilio_FormName = "invalidField";
             $autofocusDomicilio_FormName = "autofocus";
             
         } elseif (empty($_POST["localidad_FormName"])) {
             $errorBelowInputLocalidad = $errorMsgLocalidad_FormName;
-            $errorFormClassLocalidad = "active";
+            $errorFormClassLocalidad_FormName = "active";
             $invalidFieldLocalidad_FormName = "invalidField";
             $autofocusLocalidad_FormName = "autofocus";
             
@@ -310,79 +310,79 @@
             
         } elseif (empty($_POST["provincia_FormName"])) {
             $errorBelowInputProvincia = $errorMsgProvincia_FormName;
-            $errorFormClassProvincia = "active";
+            $errorFormClassProvincia_FormName = "active";
             $invalidFieldProvincia_FormName = "invalidField";
             $autofocusProvincia_FormName = "autofocus";
             
         } elseif (empty($_POST["pais_FormName"])) {
             $errorBelowInputPais = $errorMsgPais_FormName;
-            $errorFormClassPais = "active";
+            $errorFormClassPais_FormName = "active";
             $invalidFieldPais_FormName = "invalidField";
             $autofocusPais_FormName = "autofocus";
             
         } elseif (empty($_POST["telefono_FormName"])) {
             $errorBelowInputTelefono = $errorMsgTelefono_FormName;
-            $errorFormClassTelefono = "active";
+            $errorFormClassTelefono_FormName = "active";
             $invalidFieldTelefono_FormName = "invalidField";
             $autofocusTelefono_FormName = "autofocus";
             
         } elseif (empty($_POST["email_FormName"])) {
             $errorBelowInputEmail = $errorMsgEmail_FormName;
-            $errorFormClassEmail = "active";
+            $errorFormClassEmail_FormName = "active";
             $invalidFieldEmail_FormName = "invalidField";
             $autofocusEmail_FormName = "autofocus";
             
         } elseif (empty($_POST["website_FormName"])) {
             $errorBelowInputWebsite = $errorMsgWebsite_FormName;
-            $errorFormClassWebsite = "active";
+            $errorFormClassWebsite_FormName = "active";
             $invalidFieldWebsite_FormName = "invalidField";
             $autofocusWebsite_FormName = "autofocus";
             
         } elseif (empty($_POST["facebook_FormName"])) {
             $errorBelowInputFacebook = $errorMsgFacebook_FormName;
-            $errorFormClassFacebook = "active";
+            $errorFormClassFacebook_FormName = "active";
             $invalidFieldFacebook_FormName = "invalidField";
             $autofocusFacebook_FormName = "autofocus";
             
         } elseif (empty($_POST["empresa_FormName"])) {
             $errorBelowInputEmpresa = $errorMsgEmpresa_FormName;
-            $errorFormClassEmpresa = "active";
+            $errorFormClassEmpresa_FormName = "active";
             $invalidFieldEmpresa_FormName = "invalidField";
             $autofocusEmpresa_FormName = "autofocus";
             
         } elseif (empty($_POST["razonSocial_FormName"])) {
             $errorBelowInputRazonSocial = $errorMsgRazonSocial_FormName;
-            $errorFormClassRazonSocial = "active";
+            $errorFormClassRazonSocial_FormName = "active";
             $invalidFieldRazonSocial_FormName = "invalidField";
             $autofocusRazonSocial_FormName = "autofocus";
             
         } elseif (empty($_POST["cargo_FormName"])) {
             $errorBelowInputCargo = $errorMsgCargo_FormName;
-            $errorFormClassCargo = "active";
+            $errorFormClassCargo_FormName = "active";
             $invalidFieldCargo_FormName = "invalidField";
             $autofocusCargo_FormName = "autofocus";
             
         } elseif (empty($_POST["asunto_FormName"])) {
             $errorBelowInputAsunto = $errorMsgAsunto_FormName;
-            $errorFormClassAsunto = "active";
+            $errorFormClassAsunto_FormName = "active";
             $invalidFieldAsunto_FormName = "invalidField";
             $autofocusCargo_FormName = "autofocus";
             
         } elseif (empty($_POST["fecha_FormName"])) {
             $errorBelowInputFecha = $errorMsgFecha_FormName;
-            $errorFormClassFecha = "active";
+            $errorFormClassFecha_FormName = "active";
             $invalidFieldFecha_FormName = "invalidField";
             $autofocusFecha_FormName = "autofocus";
             
         } elseif (empty($_POST["rubro_FormName"])) {
             $errorBelowInputRubro = $errorMsgRubro_FormName;
-            $errorFormClassRubro = "active";
+            $errorFormClassRubro_FormName = "active";
             $invalidFieldRubro_FormName = "invalidField";
             $autofocusRubro_FormName = "autofocus";
             
         } elseif (empty($_POST["mensaje_FormName"])) {
             $errorBelowInputMensaje = $errorMsgMensaje_FormName;
-            $errorFormClassMensaje = "active";
+            $errorFormClassMensaje_FormName = "active";
             $invalidFieldMensaje_FormName = "invalidField";
             $autofocusMensaje_FormName = "autofocus";
 //FIN de validacion debajo de cada input
