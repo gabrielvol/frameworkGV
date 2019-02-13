@@ -221,9 +221,7 @@ form{
         }
     }
     
-    input{
-        padding: 0 $paddingMarginMediumValue;
-    
+    input{    
         &[type="search"]{
             -webkit-appearance: textfield;
         }
