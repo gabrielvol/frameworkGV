@@ -251,6 +251,7 @@ form{
             background-color: $formSubmitBgColourHover;
             border-color: $formSubmitBcColourHover;
             color: $formSubmitFontColourHover;
+            box-shadow: inset 0 0 0 $formSubmitBgColourHover;
         }
         
         &.white{
