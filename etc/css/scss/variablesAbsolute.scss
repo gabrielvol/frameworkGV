@@ -2,12 +2,15 @@
    Absolute Variables | Etc [variablesAbsolute.scss]
    ========================================================================== */
 $zero: 0!important;
-$hundred: 100%!important;
-$half: 50%!important;
-$third: calc(100% / 3)!important;
+
+    // Widths
+$hundred:   100%!important;
+$sixth:     calc(100% / 6)!important;
+$fifth:     20%!important;
+$fourth:    25%!important;
+$third:     calc(100% / 3)!important;
+$half:      50%!important;
 $twoThirds: calc(calc(100% / 3) * 2)!important;
-$auto: auto!important;
-$none: none!important;
 
 $transparent: transparent!important;
 
