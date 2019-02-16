@@ -30,6 +30,7 @@
         $apellido_FormName       = $_POST['apellido_FormName'];
         $nombreApe_FormName      = $_POST['nombreApe_FormName'];
         $nombreComp_FormName     = $_POST['nombreComp_FormName'];
+        $username_FormName       = $_POST['username_FormName'];
         $genero_FormName         = $_POST['genero_FormName'];
         $dni_FormName            = $_POST['dni_FormName'];
         $direccion_FormName      = $_POST['direccion_FormName'];
@@ -64,6 +65,7 @@
         $texto   .= "<strong>Apellido:</strong> ".$apellido_FormName."<br />";
         $texto   .= "<strong>Nombre y Apellido:</strong> ".$nombreApe_FormName."<br />";
         $texto   .= "<strong>Nombre completo:</strong> ".$nombreComp_FormName."<br />";
+        $texto   .= "<strong>Nombre de usuario:</strong> ".$username_FormName."<br />";
         $texto   .= "<strong>Direcci&oacute;n:</strong> ".$direccion_FormName."<br />";
         $texto   .= "<strong>Domicilio:</strong> ".$domicilio_FormName."<br />";
         $texto   .= "<strong>Sexo:</strong> ".$genero_FormName."<br />";
@@ -90,6 +92,7 @@
         $errorMsgApellido_FormName       = _("Por favor, ingrese su apellido.");
         $errorMsgNombreApe_FormName      = _("Por favor, ingrese su nombre y apellido.");
         $errorMsgNombreComp_FormName     = _("Por favor, ingrese su nombre completo.");
+        $errorMsgUsername_FormName       = _("Por favor, ingrese un nombre de usuario.");
         $errorMsgDireccion_FormName      = _("Por favor, ingrese su direcci&oacute;n.");
         $errorMsgDomicilio_FormName      = _("Por favor, ingrese su domicilio.");
         $errorMsgLocalidad_FormName      = _("Por favor, ingrese su localidad.");
@@ -136,6 +139,12 @@
             $mandatoryMsgClasses_FormName = $mandatoryMsgErrorClass;
             $invalidFieldNombreComp_FormName = "invalidField";
             $autofocusNombreComp_FormName = "autofocus";
+            
+        } elseif (empty($_POST["username_FormName"])) {
+            $mandatoryMsg_FormName = $errorMsgUsername_FormName;
+            $mandatoryMsgClasses_FormName = $mandatoryMsgErrorClass;
+            $invalidFieldUsername_FormName = "invalidField";
+            $autofocusUsername_FormName = "autofocus";
             
         } elseif (empty($_POST["dni_FormName"])) {
             $mandatoryMsg_FormName = $errorMsgDNI_FormName;
@@ -278,6 +287,12 @@
             $errorFormClassNombreComp_FormName = "active";
             $invalidFieldNombreComp_FormName = "invalidField";
             $autofocusNombreComp_FormName = "autofocus";
+                       
+        } elseif (empty($_POST["username_FormName"])) {
+            $errorBelowInputUsername = $errorMsgUsername_FormName;
+            $errorFormClassUsername_FormName = "active";
+            $invalidFieldUsername_FormName = "invalidField";
+            $autofocusUsername_FormName = "autofocus";
                        
         } elseif (empty($_POST["dni_FormName"])) {
             $errorBelowInputDNI = $errorMsgDNI_FormName;

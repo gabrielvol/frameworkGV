@@ -69,6 +69,12 @@
                 <span class="formInputErrorMsg <?php echo $errorFormClassNombreComp_FormName ?>"><?php echo $errorBelowInputNombreComp_FormName ?></span>             
             </label>
 
+            <label for="username_FormName">
+                <span class="labelName"><?php echo _('Nombre de usuario'); ?></span>
+                <input type="text" name="username_FormName" id="username_FormName" class="username <?php echo $invalidFieldUsername_FormName ?>" value="<?php echo $_POST['username_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusUsername_FormName ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassUsername_FormName ?>"><?php echo $errorBelowInputUsername_FormName ?></span>             
+            </label>
+
             <label for="genero_FormName">
                 <span class="labelName"><?php echo _('Género'); ?></span>
                 <select name="genero_FormName" id="genero_FormName" class="genero" >
