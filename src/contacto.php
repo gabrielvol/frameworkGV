@@ -48,7 +48,7 @@
             <label for="nombre_FormName">
                 <span class="labelName"><?php echo _('Nombre'); ?></span>
                 <input type="text" name="nombre_FormName" id="nombre_FormName" class="nombre <?php echo $invalidFieldNombre_FormName ?>" value="<?php echo $_POST['nombre_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusNombre_FormName ?>>
-                <span class="formInputErrorMsg <?php echo $errorFormClassNombre_FormName ?>"><?php echo $errorBelowInputNombre_FormName ?></span>               
+                <span class="formInputErrorMsg <?php echo $errorFormClassNombre_FormName ?>"><?php echo $errorBelowInputNombre_FormName ?></span>
             </label>
 
             <label for="apellido_FormName">
