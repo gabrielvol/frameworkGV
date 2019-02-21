@@ -248,5 +248,19 @@ form{
                 line-height: 1.3em;
             }
         }
+        
+        @include beforeMobile600{
+            .labelName{
+                &.labelLong{
+                    height: auto;
+                    line-height: 1.4em;
+                    margin-bottom: 5px;
+                    
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
