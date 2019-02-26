@@ -97,10 +97,6 @@ nav{
                 > li{
                     background-color: $bgNavItemBT;           
                 }
-
-                > .current{
-                    background-color: $bgNavCurrentItemBT; 
-                } 
                 
                 li{
                     float: $none;
@@ -125,13 +121,14 @@ nav{
                 }
                     
                 > .current{
+                    background-color: $bgNavCurrentItemBT; 
                     background-image: url('/clientes/agridulze/img/nav_arrowL.svg');
                     background-repeat: no-repeat;
                     background-position: right 10px center;
 
                     > a, > .topLevelItem{
-                        font-family: $navCurrentFontFamilyBT;
                         color: $navCurrentFontColourBT;
+                        font-family: $navCurrentFontFamilyBT;
                     }
                 } 
                 
