@@ -1439,6 +1439,9 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Internas Global Styles | Custom
    ========================================================================== */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Secondary Separator
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* =============================================================================
    Error Pages Styles | Custom [stylesError.scss]
    ========================================================================== */
@@ -1732,6 +1735,9 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
+#footer .navFooter .subMenu {
+  display: none; }
+
 #footer .googleAddress a {
   font-size: 1.1rem;
   line-height: 1.2em; }
@@ -1817,8 +1823,6 @@ nav li:focus a, nav li:hover a {
         overflow: scroll; }
         .navMain > ul > li {
           background-color: transparent; }
-        .navMain > ul > .current {
-          background-color: #f2f2f2; }
         .navMain > ul li {
           float: none !important; }
           .navMain > ul li a, .navMain > ul li .topLevelItem {
@@ -1832,12 +1836,13 @@ nav li:focus a, nav li:hover a {
           .navMain > ul li + li {
             border-top: 1px solid #fff; }
         .navMain > ul > .current {
+          background-color: #f2f2f2;
           background-image: url("/nuevo/img/nav_arrowL.svg");
           background-repeat: no-repeat;
           background-position: right 10px center; }
           .navMain > ul > .current > a, .navMain > ul > .current > .topLevelItem {
-            font-family: Arial;
-            color: #000; }
+            color: #000;
+            font-family: Arial; }
         .navMain > ul, .navMain > ul .subMenu {
           top: 0;
           bottom: 0; }
@@ -1851,22 +1856,28 @@ nav li:focus a, nav li:hover a {
     .navMain > ul {
       background-color: #999; }
       .navMain > ul > li {
-        background: transparent; }
+        background-color: transparent; }
         .navMain > ul > li a, .navMain > ul > li .topLevelItem {
           color: #000;
           font-family: Arial; }
         .navMain > ul > li:focus, .navMain > ul > li:hover {
           background-color: transparent; }
-          .navMain > ul > li:focus a, .navMain > ul > li:hover a {
+          .navMain > ul > li:focus > a, .navMain > ul > li:hover > a {
             color: #000; }
       .navMain > ul > .current {
         background-color: transparent; }
-        .navMain > ul > .current > a, .navMain > ul > .current .topLevelItem {
-          color: #000; }
+        .navMain > ul > .current a, .navMain > ul > .current .topLevelItem {
+          color: #000;
+          font-family: Arial; }
         .navMain > ul > .current:focus, .navMain > ul > .current:hover {
           background-color: transparent; }
           .navMain > ul > .current:focus > a, .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a, .navMain > ul > .current:hover .topLevelItem {
             color: #000; } }
+  @media (min-width: 1024px) {
+    .navMain > ul > li a, .navMain > ul > li .topLevelItem {
+      font-family: Arial; }
+    .navMain > ul .current a, .navMain > ul .current .topLevelItem {
+      font-family: Arial; } }
 
 /* =============================================================================
    Nav Styles | Custom [stylesNav.scss]
@@ -1909,7 +1920,7 @@ nav li:focus a, nav li:hover a {
         font-size: 1rem;
         text-align: center; }
       .navMain > ul li.backMenu .topLevelItem {
-        background-image: url("/clientes/agridulze/img/nav_arrowL.svg"); }
+        background-image: url("/nuevo/img/nav_arrowL.svg"); }
       .navMain > ul li.backMenu {
         border-bottom: #fff solid 2px; }
         .navMain > ul li.backMenu + .backMenu {
@@ -1919,7 +1930,7 @@ nav li:focus a, nav li:hover a {
         .navMain > ul li.backMenu .topLevelItem {
           color: #fff !important; }
           .navMain > ul li.backMenu .topLevelItem.open {
-            background-image: url(/clientes/agridulze/img/nav_arrowD.svg); } }
+            background-image: url("/nuevo/img/nav_arrowD.svg"); } }
 
 @media (min-width: 768px) {
   .navMain {
