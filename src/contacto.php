@@ -130,6 +130,37 @@
                 <span class="labelName"><?php echo _('Provincia'); ?></span>
                 <input type="text" name="provincia_FormName" id="provincia_FormName" class="provincia <?php echo $invalidFieldProvincia_FormName ?>" value="<?php echo $_POST['provincia_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusProvincia_FormName ?>>
                 <span class="formInputErrorMsg <?php echo $errorFormClassProvincia_FormName ?>"><?php echo $errorBelowInputProvincia_FormName ?></span>             
+            </label>  
+
+            <label for="provincia_FormName">
+                <span class="labelName"><?php echo _('Provincia'); ?></span>
+                <select id="provincia" name="provincia_FormName" class="provincia" >
+                    <option value="<?php echo $_POST['provincia_FormName']; ?>" selected><?php echo _('Seleccione una opci&oacute;n'); ?></option>
+                    <option value="CABA"><?php echo _('Ciudad Autónoma de Buenos Aires'); ?></option>
+                    <option value="Pcia. de Buenos Aires"><?php echo _('Pcia. de Buenos Aires'); ?></option>
+                    <option value="Catamarca"><?php echo _('Catamarca'); ?></option>
+                    <option value="Chaco"><?php echo _('Chaco'); ?></option>
+                    <option value="Chubut"><?php echo _('Chubut'); ?></option>
+                    <option value="Córdoba"><?php echo _('Córdoba'); ?></option>
+                    <option value="Corrientes"><?php echo _('Corrientes'); ?></option>
+                    <option value="Entre Ríos"><?php echo _('Entre Ríos'); ?></option>
+                    <option value="Formosa"><?php echo _('Formosa'); ?></option>
+                    <option value="Jujuy"><?php echo _('Jujuy'); ?></option>
+                    <option value="La Pampa"><?php echo _('La Pampa'); ?></option>
+                    <option value="La Rioja"><?php echo _('La Rioja'); ?></option>
+                    <option value="Mendoza"><?php echo _('Mendoza'); ?></option>
+                    <option value="Misiones"><?php echo _('Misiones'); ?></option>
+                    <option value="Neuquén"><?php echo _('Neuquén'); ?></option>
+                    <option value="Río Negro"><?php echo _('Río Negro'); ?></option>
+                    <option value="Salta"><?php echo _('Salta'); ?></option>
+                    <option value="San Juan"><?php echo _('San Juan'); ?></option>
+                    <option value="San Luis"><?php echo _('San Luis'); ?></option>
+                    <option value="Santa Cruz"><?php echo _('Santa Cruz'); ?></option>
+                    <option value="Santa Fe"><?php echo _('Santa Fe'); ?></option>
+                    <option value="Santiago Del Estero"><?php echo _('Santiago Del Estero'); ?></option>
+                    <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur"><?php echo _('Tierra del Fuego, Antártida e Islas del Atlántico Sur'); ?></option>
+                    <option value="Tucumán"><?php echo _('Tucumán'); ?></option>
+                </select>
             </label>
 
             <label for="pais_FormName">
@@ -159,6 +190,12 @@
             <label for="website_FormName">
                 <span class="labelName"><?php echo _('Sitio web'); ?></span>
                 <input type="url" name="website_FormName" id="website_FormName" class="website <?php echo $invalidFieldWebsite_FormName ?>" value="<?php echo $_POST['website_FormName']; ?>" placeholder="<?php echo _('Debe comenzar con http://www'); ?>" <?php echo $autofocusWebsite_FormName ?>>
+                <span class="formInputErrorMsg <?php echo $errorFormClassWebsite_FormName ?>"><?php echo $errorBelowInputWebsite_FormName ?></span>             
+            </label>              
+
+            <label for="website_FormName">
+                <span class="labelName"><?php echo _('Sitio web'); ?></span>
+                <input type="text" name="website_FormName" id="website_FormName" class="website <?php echo $invalidFieldWebsite_FormName ?>" value="<?php echo $_POST['website_FormName']; ?>" placeholder="" <?php echo $autofocusWebsite_FormName ?>>
                 <span class="formInputErrorMsg <?php echo $errorFormClassWebsite_FormName ?>"><?php echo $errorBelowInputWebsite_FormName ?></span>             
             </label>          
 
@@ -270,7 +307,6 @@
             </label>
 
             // Mensaje con validación
-
             <label for="mensaje_FormName">
                 <span class="labelName"><?php echo _('Detalle del servicio que desea contratar'); ?></span>
                 <textarea name="mensaje_FormName" id="mensaje_FormName" class="mensaje <?php echo $invalidFieldMensaje_FormName ?>" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>" <?php echo $autofocusMensaje_FormName ?>><?php echo $_POST['mensaje_FormName']; ?></textarea>
