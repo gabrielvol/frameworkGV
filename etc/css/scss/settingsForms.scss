@@ -237,6 +237,12 @@ form{
         }
     }
     
+    select{
+        &.invalidField{
+            background-position: right 25px center;
+        }
+    }
+    
     input[type="reset"],
     input[type="submit"],
     input[type="button"],

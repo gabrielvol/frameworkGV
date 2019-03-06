@@ -134,8 +134,8 @@
 
             <label for="provincia_FormName">
                 <span class="labelName"><?php echo _('Provincia'); ?></span>
-                <select id="provincia" name="provincia_FormName" class="provincia" >
-                    <option value="<?php echo $_POST['provincia_FormName']; ?>" selected><?php echo _('Seleccione una opci&oacute;n'); ?></option>
+                <select id="provincia" name="provincia_FormName" class="provincia <?php echo $invalidFieldProvincia_FormName ?>">
+                        <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
                     <option value="CABA"><?php echo _('Ciudad Autónoma de Buenos Aires'); ?></option>
                     <option value="Pcia. de Buenos Aires"><?php echo _('Pcia. de Buenos Aires'); ?></option>
                     <option value="Catamarca"><?php echo _('Catamarca'); ?></option>
@@ -161,6 +161,7 @@
                     <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur"><?php echo _('Tierra del Fuego, Antártida e Islas del Atlántico Sur'); ?></option>
                     <option value="Tucumán"><?php echo _('Tucumán'); ?></option>
                 </select>
+                <span class="formInputErrorMsg <?php echo $errorFormClassProvincia_FormName ?>"><?php echo $errorBelowInputProvincia_FormName ?></span>  
             </label>
 
             <label for="pais_FormName">
