@@ -1,23 +1,4 @@
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        $('.navMain, #header').addClass('topper');
-    } else {
-        $('.navMain ,#header').removeClass('topper');
-    }
-});
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 150) {
-        $('#header').addClass('topperShadow');
-    } else {
-        $('#header').removeClass('topperShadow');
-    }
-});
-
-$(document).ready(function () {    
-    $('.enviar').scrollPosReaload();
-    
-    // Hamburger Drawer
+$(document).ready(function () {
     $('.navOpen').click(function () {
         $(this).addClass('clicked');
         $(this).closest('#header').find('.social').addClass('clicked');

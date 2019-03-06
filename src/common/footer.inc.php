@@ -33,8 +33,11 @@
     
 <?php include('popups.inc.php'); ?>
 
-<script src="/nuevo/js/slick.js"></script>
-<!--<script src="/nuevo/js/lightbox.min.js"></script>-->
 <script src="/nuevo/js/scrollKeep.js"></script>
-<script src="/nuevo/js/_main.js"></script>
+<!--<script src="/nuevo/js/slick.js"></script>-->
+<!--<script src="/nuevo/js/lightbox.min.js"></script>-->
+
+<script src="/nuevo/js/_nav.js"></script>
+<script src="/nuevo/js/_scrollKeep.js"></script>
+<!--<script src="/nuevo/js/_topper.js"></script>-->
 <!--<script src="/nuevo/js/_slick.js"></script>-->
