@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Bookmarks GV</title>
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow:400,700" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            background-color: #2d1f06;
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            font-family: 'Pragati Narrow', sans-serif;
+        }
+        
+        .clearfix::after {
+          content: ".";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden; }
+
+        .clearfix {
+          display: inline-block; }
+
+        * html .clearfix {
+          height: 1%; }
+
+        .clearfix {
+          display: block; }
+        .clear{clear: both}
+        
+        ul{
+            list-style: none;
+        }
+ 
+        ul ul{
+			background-color: #211302;
+            color: #222;
+            list-style: none;
+            padding: 0 0 25px;
+        }  
+        
+        ul ul >li{
+			padding: 0 3px;
+        }   
+        
+        .subUL >li::before{
+			display: none;
+        }   
+        
+        ul ul li{
+            position: relative;
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+            padding: 0 10px;
+        }
+        
+        ul ul li::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 7px;
+            width: 3px;
+            height: 14px;
+            background-color: #4a230b;
+        }
+        
+        ul ul li.redBar::before{
+            background-color: #ff0000;
+        }
+
+        ul ul .title{
+            background-color: #6b1503;
+			border-color: #a51d00;
+        }   
+        
+        ul ul li:hover .title{
+			background-color: #380a00;
+			border-color: #000;
+			color: #b66600;
+        } 
+        
+        ul ul li li{
+            box-sizing: border-box;
+            float: none;
+            width: 100%;
+            padding: 0;
+        }   
+		
+		ul ul >li li{
+			padding: 0 10px;
+		}
+        
+        a{
+            display: block;
+            width: 100%;
+            color: #8a610e;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+        
+        a:hover{
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        
+        .columnUL{
+            float: left;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 0 20px;
+            margin: 0;
+        }
+        
+        .title{
+            height: 20px;
+            background-color: #cea400;
+            padding: 10px 10px 5px;
+			border-top: 5px solid #834602;
+            margin: 0;
+            color: #000;
+			font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 20px;
+        }
+		
+		.columnUL >li:hover >.title{
+			background-color: #937606;
+			border-color: #5c3a00;
+			color: #ffea00;
+		}
+        
+        .sep{
+            clear: both;
+            border-top: 3px solid #2d1f06;
+            margin-top: 6px;
+        }
+		
+		.sep + li{
+            border-top: 3px solid #2d1f06;
+            margin-top: 6px;
+		}
+		
+        .sep.titling{
+            width: 100%;
+        }
+		
+        .sep.titling + li,
+		ul ul li:first-child{
+			border: none;
+			margin-top: 0;
+        }
+        
+        .sep.titling::before{
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="columnUL clearfix">
+    <li>
+        <p class="title">Login</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/&hl=es">Gmail Login</a></li>
+            <li><a target="_blank" href="https://www.toggl.com/app/timer">Toggl</a></li>
+            <li><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23+CSS">Gmail #CSS</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/">YouTube</a></li>
+            <li><a target="_blank" href="https://hangouts.google.com/">Google Hangouts</a></li>
+            <li><a target="_blank" href="https://www.dropbox.com/login">Dropbox Login</a></li>
+            <li><a target="_blank" href="https://github.com/login">Github</a></li>
+            <li><a target="_blank" href="https://web.whatsapp.com/">Whatsapp Web</a></li>
+            <li><a target="_blank" href="https://www.wetransfer.com/">WeTransfer</a></li>
+            <li><a target="_blank" href="https://securitycheckli.st/">Security Checklist</a></li>
+			
+			
+			
+            <li class="sep"><a target="_blank" href="https://www.calculatorsoup.com/calculators/math/ratios.php">Ratio Calculator</a></li>
+            <li><a target="_blank" href="https://es.wiktionary.org/wiki/Wikcionario:Portada">Wikcionario</a></li>
+            <li><a target="_blank" href="https://translate.google.com.ar/">Google Translate</a></li>
+			
+            <li class="sep"><a target="_blank" href="https://www2.personas.santanderrio.com.ar/obp-webapp/angular/#!/login">Online Banking Santander Rio</a></li>
+        </ul>
+    </li>
+    <li>
+        <p class="title">Learn/Tutorials</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://learnjavascript.online/app.html/">Learn Javascript</a></li>			
+			<li><a target="_blank" href="https://github.com/dexteryy/spellbook-of-modern-webdev">dexteryy/spellbook-of-modern-webdev · Github</a></li>
+			<li><a target="_blank" href="https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/">React Tutorial: A Comprehensive Guide to learning React.js in 2018</a></li>
+        </ul>
+    </li>
+     
+    <li><p class="title">Diarios</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.pagina12.com.ar/">Página/12</a></li>
+            <li><a target="_blank" href="https://www.clarin.com/">Clarín</a></li>
+            <li><a target="_blank" href="https://elpais.com/">El País</a></li>
+            <li><a target="_blank" href="http://www.revistaanfibia.com/">Revista Anfibia</a></li>
+
+            <li class="sep"><a target="_blank" href="https://www.wikitribune.com/">WikiTribune</a></li>
+            <li><a target="_blank" href="https://www.wikitribune.com/project/project-cryptocurrency/">Cryptocurrencies – Wikitribune</a></li>
+            <li><a target="_blank" href="https://www.coindesk.com/">CoinDesk - Leader in blockchain news.</a></li>
+
+            <li class="sep"><a target="_blank" href="http://enso.readymag.com/">ENSO Ready Mag</a></li>
+            <li><a target="_blank" href="http://www.thisiscolossal.com/">Colossal</a></li>
+            <li><a target="_blank" href="http://www.boredpanda.com/">Bored Panda</a></li>
+            <li><a target="_blank" href="https://eyeondesign.aiga.org/">Eye On Design</a></li>
+            <li><a target="_blank" href="https://www.coindesk.com/">CoinDesk - Leader in blockchain news.</a></li>
+
+            <li class="sep"><a target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
+            <li><a target="_blank" href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+			
+			
+        </ul>
+    </li>
+    <li>
+        <p class="title">#</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://css-tricks.com/">CSS-Tricks</a></li>
+            <li><a target="_blank" href="https://www.fontsquirrel.com/fonts/list/recent">Most Recent Fonts » Font Squirrel</a></li>
+            <li><a target="_blank" href="https://www.fsf.org/">Front Page — Free Software Foundation — working together for free software</a></li>
+            <li><a target="_blank" href="https://thehistoryoftheweb.com/">The History of the Web</a></li>
+            <li><a target="_blank" href="https://www.interaction-design.org/literature/article/fitts-s-law-the-importance-of-size-and-distance-in-ui-design">The Interaction Design Foundation</a></li>
+            <li><a target="_blank" href="http://www.pixlogix.com/40-critical-checks-applied-launching-website/">40 Critical Checks to be applied Before Launching Your Website - Pixlogix InfoTech Pvt. Ltd.</a></li>
+            <li><a target="_blank" href="https://lawsofux.com/">Home | Laws of UX</a></li>
+            <li><a target="_blank" href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/">Design Principles: Visual Perception And The Principles Of Gestalt — Smashing Magazine</a></li>
+            <li><a target="_blank" href="https://medium.com/ux-in-motion/ui-animation-principles-disney-is-dead-8bf6c66207f9">UI Animation Principles: Disney is Dead – UX in Motion – Medium</a></li>
+            <li><a target="_blank" href="https://medium.com/@jpamental/the-evolution-of-typography-with-variable-fonts-7cd0078b5ceb">The evolution of variable fonts</a></li>
+            <li><a target="_blank" href="https://medium.com/listen-to-my-story/the-making-of-a-unicorn-db2bd8f6dfac#.oxjoa5ia9">The Making of a Unicorn — Listen To My Story — Medium</a></li>
+            <li><a target="_blank" href="https://medium.com/@sjors/my-favourite-design-articles-2015-55c55dbccaa5#.et49bdvxm"></a></li>
+            <li><a target="_blank" href="https://medium.com/wdstack/how-to-declutter-your-design-88cbd9e45015#.cytrlje8x">How to Declutter your Design — WDstack — Medium</a></li>
+            <li><a target="_blank" href="http://fredsarmento.me/frontend-tools/">Best Frontend Tools 2016 - Fredsarmento.me</a></li>
+            <li><a target="_blank" href="https://resourcecards.com/">Resource Cards - Selected free resources for designers</a></li>
+            <li><a target="_blank" href="https://blog.discogs.com/en/future-of-vinyl/">The Future of Vinyl Records | Discogs Blog</a></li>
+        </ul>
+    </li>
+
+    <li class="clear">
+         <p class="title">Discografías</p>
+         <ul class="clearfix">
+             <li><a target="_blank" href="https://classicalpippo9.com/2016/09/15/glenn-gould-the-complete-original-jacket-collection-box-set-80cds/">Glenn Gould Original Jacket Collection</a></li>
+             <li><a target="_blank" href="https://www.discogs.com/Glenn-Gould-The-Complete-Original-Jacket-Collection/release/4425444">Glenn Gould Original Jacket Collection | Discogs</a></li>
+             <li><a target="_blank" href="https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_David_Bowie">David Bowie</a></li>
+             <li><a target="_blank" href="https://en.wikipedia.org/wiki/Judas_Priest_discography">Judas Priest</a></li>
+             <li><a target="_blank" href="https://en.wikipedia.org/wiki/Black_Sabbath_discography">Black Sabbath</a></li>
+             <li><a target="_blank" href="https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_Los_Fabulosos_Cadillacs">Los Fabulosos Cadillacs</a></li>
+         </ul>
+     </li>
+
+    <li>
+        <p class="title">Misc</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.mundodesconocido.es/">Mundo Desconocido</a></li>
+            <li><a target="_blank" href="https://www.pollstar.com/City/buenos-aires-63996">Pollstar</a></li>
+            <li><a target="_blank" href="http://brutalistwebsites.com/">Brutalist Websites</a></li>
+            <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/x">x</a></li>
+        </ul>
+    </li>
+
+     <li>
+         <p class="title">Podcasts</p>
+         <ul class="clearfix">
+             <li><a target="_blank" href="https://responsivewebdesign.com/podcast/">A Responsive Web Design Podcast — Responsive Web Design</a></li>
+             <li><a target="_blank" href="https://irlpodcast.org/">IRL Podcast: Online Life is Real Life</a></li>
+             <li><a target="_blank" href="https://syntax.fm/">Syntax FM</a></li>
+            <li><a target="_blank" href="http://webdesignstack.com/">Web Design Stack — Web Design &amp; Development Tools, News, and Inspiration</a></li>
+         </ul>
+     </li>
+
+    <li>
+        <p class="title">Mapas</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.google.com.ar/maps/@-34.7324815,-58.4521593,11z">Google Maps</a></li>
+            <li><a target="_blank" href="https://www.openstreetmap.org/#map=19/-34.79742/-58.38817">Open Street Map</a></li>
+            <li><a target="_blank" href="http://www.omnilineas.com.ar/buenos-aires/colectivos/">Omnilíneas Bondi</a></li>
+            <li><a target="_blank" href="https://moovitapp.com/">Moovit: Tu Guía de Transporte Público</a></li>
+            <li><a target="_blank" href="http://www.sitp.gov.co/buscador_de_rutas">Sitp Rutas</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <p class="title">Salidas en BsAs</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://www.vuenosairez.com/v3/v4-resultados-agenda.php?pag=1&tipoBusq=10&tipoQuery=hoy&atributo=&zona=Argentina">Vuenos Airez</a></li>
+            <li><a target="_blank" href="http://www.airesdebares.com/aires-de-bares/"></a></li>
+            <li><a target="_blank" href="http://www.baresyboliches.com/guia-de/bares-en-capital-federal.htm">Bares y Boliches</a></li>
+            <li><a target="_blank" href="http://lado-b.com.ar/">Lado B</a></li>
+            <li><a target="_blank" href="http://www.wipe.com.ar/">Wipe</a></li>
+            <li><a target="_blank" href="https://gratisenbuenosaires.com/">Gratis en Buenos Aires</a></li>
+            <li><a target="_blank" href="http://www.buenosaires123.com.ar/bares/">Guía bares de Buenos Aires</a></li>
+            <li><a target="_blank" href="http://www.thegayguide.com.ar/gaybars-esp.htm">Bares Gay- Guía Gay de Buenos Aires</a></li>
+            <li><a target="_blank" href="http://disfrutemosba.buenosaires.gob.ar/">DisfrutemosBA - Home</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <p class="title">Música</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://albumsthatneverwere.blogspot.ca/">Albums That Never Were</a></li>
+            <li><a target="_blank" href="https://roughtrade.com/albums-of-the-year">Albums of the year</a></li>
+            <li><a target="_blank" href="https://www.discogs.com/es/lists/1001-Albums-You-Must-Hear-Before-You-Die/18222?page=1">Discogs - 1001 albums</a></li>
+            <li><a target="_blank" href="http://www.esteifri.com/">Stay Free</a></li>
+            <li><a target="_blank" href="http://cabezademoog.blogspot.com.ar/">Cabeza de Moog !</a></li>
+            <li><a target="_blank" href="http://newnoisenet.blogspot.com.ar/">New Noise Net</a></li>
+            <li><a target="_blank" href="http://rockdearg.blogspot.com.ar/">Rock de arg - Blogspot</a></li>
+            <li><a target="_blank" href="https://music-republic-world-traditional.blogspot.com.co/">MusicRepublic - World Traditional Music from LPs and Cassettes</a></li>
+        </ul>
+    </li>
+
+    <li class="clear">
+         <p class="title">Cine</p>
+         <ul class="clearfix">
+            <li><a target="_blank" href="https://www.simpsonizados.org/">Simpsonizados</a></li>
+            <li><a target="_blank" href="http://www.cinemargentino.com/">Cinema Argentino</a></li>
+            <li><a target="_blank" href="https://www.netflix.com/browse">Netflix</a></li>
+            <li><a target="_blank" href="http://www.imdb.com/list/ls073453316?ref_=tt_rls_3">IMDB The 40 Most Inventive and Creative Films of All Time</a></li>
+            <li><a target="_blank" href="http://www.imdb.com/list/E_D7ntV61Bc/">IMDB Best Examples of Surrealism in Cinema!</a></li>
+         </ul>
+     </li>
+
+    <li>
+        <p class="title">Torrent</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://proxybay.info/">The Proxy Bay - A List of Pirate Bay Proxy sites and mirrors</a></li>
+            <li><a target="_blank" href="https://unblocked.vet/">Unblocked</a></li>
+
+            <li><a target="_blank" href="https://thepiratebay-proxylist.org/">ThePirateBay-proxylist.org - A list with fast piratebay proxies</a></li>
+            <li class="sep"><a target="_blank" href="https://www.yifysubtitles.com/">YIFY Subtitles - subtitles for YIFY movies</a></li>
+            <li><a target="_blank" href="http://subtitles.me/">Subtitles | YTS Subtitles | RARBG Subtitles | EVO Subtitles | FTG Subtitles | AXXO Subtitles</a></li>
+            <li><a target="_blank" href="http://subsmax.com/">SubsMax.com - Download Subtitles for Movies and TV Series</a></li>
+            <li><a target="_blank" href="https://ytssubtitles.com/">YTS Subtitles - Subtitles for YIFY YTS Movies</a></li>
+            <li><a target="_blank" href="http://www.subdivx.com/index.php">Sub DivX</a></li>
+            <li><a target="_blank" href="http://www.opensubtitles.org/">Open Subtitles</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <p class="title">Bitcoin</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://bitinfocharts.com/bitcoin/address/18F6Mfc1hFPVM4XybSeozvPfySWfJnH1GH">18F6Mfc1hFPVM4XybSeozvPfySWfJnH1GH - Bit Info Charts</a></li>
+        </ul>
+    </li>
+    <li><p class="title">URL Canary</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://urlcanary.com/">URL Canary - Home</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <p class="title">Tutoriales</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://www.codecademy.com/es#!/exercises/0">Code Academy - Excersises</a></li>
+            <li><a target="_blank" href="https://www.codeschool.com/paths/html-css">Code School</a></li>
+        </ul>
+    </li>
+    <li>
+        <p class="title">Metal Archives / Bandcamp</p>
+        <ul class="clearfix subUL">
+            <li class="sep titling"><a target="_blank" href="https://www.metal-archives.com/">Metal Archives</a></li>
+            <li class=""><a target="_blank" href="https://daily.bandcamp.com/2018/12/17/bandcamp-best-metal-albums-of-2018/">Best Metal Albums 2018</a></li>
+            <li class=""><a target="_blank" href="https://daily.bandcamp.com/2018/12/14/bandcamp-best-albums-of-2018-20-1/">Best Albums 2018</a></li>
+            
+            <li>
+                <p class="title">Alternative Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://tsunamiride.bandcamp.com/">Tsunami Ride</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Black Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://exesa.bandcamp.com/">Exesa</a></li>
+                    <li><a target="_blank" href="https://svpremacist.bandcamp.com/releases">Svpremacist</a></li>
+                    <li><a target="_blank" href="https://absolutum.bandcamp.com/">ABSOLUTUM</a></li>					
+                    <li><a target="_blank" href="https://provectusofficial.bandcamp.com/">Existential Delusion | Provectus</a></li>
+                    <li><a target="_blank" href="https://templepnw.bandcamp.com/">Temple</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Crossover / Crust / Sludge</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://devolvermusic.bandcamp.com/">Devolver</a></li>
+                    <li><a target="_blank" href="https://sixesdoom.bandcamp.com/releases">SIXES | Methistopheles</a></li>
+                </ul>
+            </li>
+			
+			
+            <li>
+                <p class="title">Dark Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://vidrigrus.bandcamp.com/">Vidrig</a></li>
+                    <li><a target="_blank" href="https://wowod.bandcamp.com/">WOWOD</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Death Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://alkhannes.bandcamp.com/">Al Khannes</a></li>
+					<li><a target="_blank" href="https://speedkvlt.bandcamp.com/releases">Speedkvlt</a></li>
+                    <li><a target="_blank" href="https://angeldisordernl.bandcamp.com/releases">Angel Disorder</a></li>
+                    <li><a target="_blank" href="https://archaictomb.bandcamp.com/releases">Archaic Tomb</a></li>
+                    <li><a target="_blank" href="https://bustedguts.bandcamp.com/releases">Busted Guts</a></li>
+                    <li><a target="_blank" href="https://maldito1.bandcamp.com/album/caceria-de-brujas">Caceria De Brujas | Maldito</a></li>
+                    <li><a target="_blank" href="https://corpsemucus.bandcamp.com/releases">Corpse Mucus</a></li>
+                    <li><a target="_blank" href="https://darkenbachammer.bandcamp.com/album/the-rise-of-the-ancient-necro-battle">Darkenbachammer</a></li>
+                    <li><a target="_blank" href="https://hollowedidols.bandcamp.com/">Hollowed Idols</a></li>
+                    <li><a target="_blank" href="https://horcrvxdeath.bandcamp.com/">HORCRVX</a></li>
+                    <li><a target="_blank" href="https://horrendous.bandcamp.com/">Horrendous</a></li>
+                    <li><a target="_blank" href="https://inoculatedlife.bandcamp.com/">Inoculated Life</a></li>
+                    <li><a target="_blank" href="https://mordrot.bandcamp.com/">MORDROT</a></li>
+                    <li><a target="_blank" href="https://opusmortis.bandcamp.com/album/opus-mortis">Opus Mortis | Opus Mortis</a></li>
+                    <li><a target="_blank" href="https://outlaw218.bandcamp.com/releases">Outlaw</a></li>
+                    <li><a target="_blank" href="https://psicosisnic.bandcamp.com/releases">Psicosis</a></li>
+                    <li><a target="_blank" href="https://shadowpuncher.bandcamp.com/">Shadow Puncher</a></li>
+                    <li><a target="_blank" href="https://valkyer.bandcamp.com/releases">Valkyer</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Doom</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://blvvme.bandcamp.com/">BLVVME</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Experimental</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://autodafepyro.bandcamp.com/">Auto da fè</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Groove Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://rankojat.bandcamp.com/releases">Rankojat</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Grindcore</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://chainsawdisgorgement.bandcamp.com/releases">chainsaw disgorgement</a></li>
+                    <li><a target="_blank" href="https://knifevision.bandcamp.com/album/s-t-7">Knife Vision</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Melodic Death Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://tyrannisva.bandcamp.com/releases">Tyrannis</a></li>
+                    <li><a target="_blank" href="https://vaelmyst.bandcamp.com/">Vaelmyst</a></li>
+                    <li><a target="_blank" href="https://invictacanada.bandcamp.com/releases">The Executioner EP | Invicta</a></li>
+                    <li><a target="_blank" href="https://carchosa.bandcamp.com/releases">Carchosa</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <p class="title">Post Black Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://delayingtheinevitable.bandcamp.com/releases">Delaying the Inevitable | Delaying the Inevitable</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Progressive Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://sabkemorde.bandcamp.com/">Sabke Morde</a></li>
+                    <li><a target="_blank" href="https://conundrum1.bandcamp.com/">Conundrum</a></li>
+                    <li><a target="_blank" href="http://music.olitunes.com/album/metallia/">Oh. Metallia</a></li>
+                    <li><a target="_blank" href="https://intotheforest1.bandcamp.com/releases">Into The Forest</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <p class="title">Punk</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://reflections-records.bandcamp.com/album/tales-of-the-ancient-age">Annihilation Time</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Stoner Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://thejesusandmaryjane.bandcamp.com/releases">THE JESUS AND MARY JANE</a></li>
+                    <li><a target="_blank" href="https://witching.bandcamp.com/">Witching</a></li>
+                    <li><a target="_blank" href="https://tombtoker.bandcamp.com/">Tombtoker</a></li>
+					
+                </ul>
+            </li>
+            <li>
+                <p class="title">Symphonic Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://falsegharial.bandcamp.com/releases">False Gharial</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Thrash Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://dirtyroom.bandcamp.com/releases">dirty room</a></li>
+                    <li><a target="_blank" href="https://cruentator.bandcamp.com/releases">Cruentator</a></li>
+                    <li><a target="_blank" href="https://aislacion.bandcamp.com/releases">Aislación</a></li>
+                    <li><a target="_blank" href="https://emulived.bandcamp.com/releases">EmuliveD</a></li>
+                    <li><a target="_blank" href="https://thanks4yourtip.bandcamp.com/releases">thanks 4 your tip</a></li>
+                    <li><a target="_blank" href="https://inyouri.bandcamp.com/">In your I</a></li>
+                    <li><a target="_blank" href="https://vengefulatonement.bandcamp.com/album/break-down-the-walls">vengeful atonement</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">Technical Death Metal</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://thedarknebula.bandcamp.com/releases">Usurper | The Dark Nebula</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="title">por explorar</p>
+                <ul class="clearfix">
+                    <li><a target="_blank" href="https://theblackcloudsyndicate.bandcamp.com/">The Blackcloud Syndicate</a></li>
+                    <li><a target="_blank" href="https://illusionofc.bandcamp.com/releases">Grim New World | Illusion of Control</a></li>
+                    <li><a target="_blank" href="https://seahunter.bandcamp.com/releases">Seahunter | Seahunter</a></li>
+                    <li><a target="_blank" href="https://amerband.bandcamp.com/">AMER</a></li>
+                    <li><a target="_blank" href="https://wraith219.bandcamp.com/releases">Wraith | Wraith</a></li>
+					<li><a target="_blank" href="https://deathkvltproductions.bandcamp.com/album/among-the-dead-stars">Death Kult Productions</a></li>
+					<li><a target="_blank" href="https://excreta.bandcamp.com/releases">Excreta</a></li>
+					<li><a target="_blank" href="https://perilousmi.bandcamp.com/releases">Perilousmi</a></li>
+                    <li><a target="_blank" href="https://malafede.bandcamp.com/">Music | Malafede</a></li>
+                    <li><a target="_blank" href="https://externatropsy.bandcamp.com/">Music | Externatropsy</a></li>
+                    <li><a target="_blank" href="https://maskedjackalofficial.bandcamp.com/releases">Masked Jackal Demo | Masked Jackal</a></li>
+                    <li><a target="_blank" href="https://closethehatch.bandcamp.com/">Close The Hatch</a></li>
+                    <li><a target="_blank" href="https://oldserpent.bandcamp.com/releases">Time-Intact | Old Serpent</a></li>
+                    <li><a target="_blank" href="https://bezdansrb.bandcamp.com/releases">Rehearsal DEMO - 2017 | Bezdan</a></li>
+                    <li><a target="_blank" href="https://oxbloodforge.bandcamp.com/">Oxblood Forge</a></li>
+                    <li><a target="_blank" href="https://piercingimmortality.bandcamp.com/">Music | Piercing Immortality</a></li>
+                    <li><a target="_blank" href="https://samuraicode.bandcamp.com/releases">Samurai Code</a></li>
+                    <li><a target="_blank" href="https://heavymetalvillain.bandcamp.com/releases">Heavy Metal Villain</a></li>
+                    <li><a target="_blank" href="https://wolfblood.bandcamp.com/releases">Wolfblood</a></li>
+                    <li><a target="_blank" href="https://deglaver.bandcamp.com/releases">Deglaver</a></li>					
+
+                    <li><a target="_blank" href="https://nigredochile.bandcamp.com/releases">nigre do chile</a></li>
+                    <li><a target="_blank" href="https://jubalofficial.bandcamp.com/releases">jubbal</a></li>
+                    <li><a target="_blank" href="https://aetherbm.bandcamp.com/">aetherbm</a></li>
+                    <li><a target="_blank" href="https://geneticerror.bandcamp.com/">genetic error</a></li>
+                    <li><a target="_blank" href="https://remoteviewing.bandcamp.com/">remote viewing</a></li>
+                    <li><a target="_blank" href="https://tenebras.bandcamp.com/releases">tenebras</a></li>
+                    <li><a target="_blank" href="https://sativabreather.bandcamp.com/releases">sativa breather</a></li>
+                    <li><a target="_blank" href="https://wearegreendragon.bandcamp.com/">weare green dragon</a></li>
+                    <li><a target="_blank" href="https://theastralvoid.bandcamp.com/track/mandragora">the las void</a></li>
+                    <li><a target="_blank" href="https://ultraraptor.bandcamp.com/album/ltra-rapt-r">ultra raptor</a></li>
+                    <li><a target="_blank" href="https://gaylord.bandcamp.com/releases">gaylord</a></li>
+                    <li><a target="_blank" href="https://solarbarque.bandcamp.com/releases">solar barque</a></li>
+                    <li><a target="_blank" href="https://haleus.bandcamp.com/">haleus</a></li>
+                    <li><a target="_blank" href="https://oppressorgod.bandcamp.com/releases">oppresor god</a></li>
+                    <li><a target="_blank" href="https://ritualofterror.bandcamp.com/releases">ritual of terror</a></li>
+                    <li><a target="_blank" href="https://erciyesfragmentnj.bandcamp.com/">erci yes fragment nj</a></li>
+                    <li><a target="_blank" href="https://profaneburial.bandcamp.com/">Profane Burial</a></li>
+                    <li><a target="_blank" href="https://ferhanbasaran.bandcamp.com/releases">Avantgarde | Ferhan Başaran</a></li>
+                    <li><a target="_blank" href="https://fastcrash1.bandcamp.com/releases">Manifiesto EP | Fast Crash</a></li>
+                    <li><a target="_blank" href="https://opusmortis.bandcamp.com/">Music | Opus Mortis</a></li>
+                    <li><a target="_blank" href="https://myspace.com/assilencebreaks/music/songs">As Silence Breaks&#39;s Songs | Stream Online Music Songs | Listen Free on Myspace</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/user/UmzacColombia/">Umzac - YouTube - YouTube</a></li>
+                    <li><a target="_blank" href="https://soundcloud.com/entererebos">Erebos | Enter Erebos | Escúchalo gratis en SoundCloud</a></li>
+
+                    <li><a target="_blank" href="https://victimario.bandcamp.com/">Victimario</a></li>
+                    <li><a target="_blank" href="https://incuntation.bandcamp.com/releases">Molested Waste | Incuntation</a></li>
+                    <li><a target="_blank" href="http://iahsari.bandcamp.com/">iahsari.bandcamp.com/</a></li>
+                    <li><a target="_blank" href="https://enfiladepgh.bandcamp.com/releases">Demo 2018 | Enfilade</a></li>
+                    <li><a target="_blank" href="https://castigometal.bandcamp.com/">Music | Castigo</a></li>
+                    <li><a target="_blank" href="https://omegasun.bandcamp.com/">OMEGA SUN</a></li>
+                    <li><a target="_blank" href="https://alastor1.bandcamp.com/releases">Demon mesty | ALASTOR</a></li>
+                    <li><a target="_blank" href="https://minorplanet2.bandcamp.com/releases">We Are The Night | Minor Planet</a></li>
+                    <li><a target="_blank" href="https://carbonseed.bandcamp.com/">CARBON SEED</a></li>
+                    <li><a target="_blank" href="https://phylactery.bandcamp.com/releases">Demo (2016) | Phylactery</a></li>
+                    <li><a target="_blank" href="https://emulived.bandcamp.com/releases">Causual Response | EmuliveD</a></li>
+                    <li><a target="_blank" href="https://dwellstormborned.bandcamp.com/releases">Manifestation of fractal reflection | DWELLSTORM BORNED</a></li>
+                    <li><a target="_blank" href="https://vaelmyst.bandcamp.com/">Vaelmyst</a></li>
+                    <li><a target="_blank" href="https://helterskelterproductions.bandcamp.com/album/universal-hate-speech">Universal Hate Speech | Helter Skelter Productions</a></li>
+                    <li><a target="_blank" href="https://exesa.bandcamp.com/">Exesa</a></li>
+                    <li><a target="_blank" href="https://northernincarnation.bandcamp.com/releases">Revenant | Northern Incarnation</a></li>
+                    <li><a target="_blank" href="https://shuulak.bandcamp.com/releases">Nigredo | Shuulak</a></li>
+                    <li><a target="_blank" href="https://ashesariseproject.bandcamp.com/releases">Resurgence from Oblivion | Ashes Arise</a></li>
+                    <li><a target="_blank" href="https://nedakhforthemasses.bandcamp.com/">Music | Nedakh</a></li>
+                    <li><a target="_blank" href="https://sallowmoth.bandcamp.com/">Music | Sallow Moth</a></li>
+                    <li><a target="_blank" href="https://infiltrationdeath.bandcamp.com/">Music | Infiltration</a></li>
+                    <li><a target="_blank" href="https://theplaguephysicians.bandcamp.com/releases">The Raven Mocker | The Plague Physicians</a></li>
+                    <li><a target="_blank" href="https://houseanxietyband.bandcamp.com/">House Anxiety</a></li>
+                    <li><a target="_blank" href="https://enchantelope.bandcamp.com/">Enchantelope</a></li>
+                    <li><a target="_blank" href="https://huskandfangs.bandcamp.com/releases">Fangs | Husk</a></li>
+                    <li><a target="_blank" href="https://authorandpunisher.bandcamp.com/album/beastland">Beastland | Author &amp; Punisher</a></li>
+                    
+                    <li><a target="_blank" href="https://thisisempress.bandcamp.com/">Empress</a></li>
+                    <li><a target="_blank" href="https://anguana.bandcamp.com/releases">Anguana | Anguana</a></li>
+                    <li><a target="_blank" href="https://windror.bandcamp.com/releases">Windror | Windror</a></li>
+                    <li><a target="_blank" href="https://giltedwoods.bandcamp.com/">Music | Gilted Woods</a></li>
+                    <li><a target="_blank" href="https://infernalrot.bandcamp.com/">Infernal Rot</a></li>
+                    <li><a target="_blank" href="https://bulletcatcher.bandcamp.com/releases">Worlds Divide | Bullet Catcher</a></li>
+                    <li><a target="_blank" href="https://heavyweightmusic.bandcamp.com/">Tyson</a></li>
+                    <li><a target="_blank" href="https://circuloenelsol.bandcamp.com/releases">Roquedal | Círculo en el Sol</a></li>
+                    <li><a target="_blank" href="https://ashandcoal.bandcamp.com/">Music | Ash And Coal</a></li>
+                    <li><a target="_blank" href="https://metalfetamina.bandcamp.com/">Music | MetalfetaminA</a></li>
+                    <li><a target="_blank" href="https://soultrap1.bandcamp.com/releases">Shrapnel | Soul Trap</a></li>
+                    <li><a target="_blank" href="https://worthlessness1.bandcamp.com/">Music | Worthlessness</a></li>
+                    <li><a target="_blank" href="https://dlann.bandcamp.com/">Dlann</a></li>
+                    <li><a target="_blank" href="https://timorpanicus.bandcamp.com/releases">Timor Panicus</a></li>
+                    <li><a target="_blank" href="https://abhorstorm.bandcamp.com/">Abhorstorm</a></li>
+                    <li><a target="_blank" href="https://corrodent.bandcamp.com/">Corrodent</a></li>
+                    <li><a target="_blank" href="https://somberire.bandcamp.com/releases">Somberire</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="columnUL clearfix">
+    <li>
+        <p class="title">GV Design</p>
+        <ul class="clearfix">
+            <li class="sep titling"><a target="_blank" href="https://gitlab.com/gabrielVolonte">GitLab | Gabriel Volonte</a></li>
+            <li><a target="_blank" href="http://tegnomuebles.com/">GV | Tegnomuebles</a></li>
+            <li><a target="_blank" href="http://symmetria.com.ar/">GV | Symmetria</a></li>
+            <li><a target="_blank" href="http://tracylord.com.ar/">GV | Los Tracy Lord</a></li>
+            <li><a target="_blank" href="http://rbconsultoria.com.ar/">GV | RB Management &amp; Consulting</a></li>
+            
+            <li class="sep titling"><a target="_blank" href="https://gitlab.com/Vaughan">GitLab | Vaughan Design</a></li>
+            <li><a target="_blank" href="http://www.elcarozodelasunto.com.ar/">VD | El Carozo del Asunto</a></li>
+            <li><a target="_blank" href="http://trasladosbaires.com.ar/">VD | Traslados Baires</a></li>
+            <li><a target="_blank" href="http://fwcollection.com/">VD | FW Collection</a></li>
+            
+            <li class="sep titling"><a target="_blank" href="https://gitlab.com/Espejismo">GitLab | Espejismo Design</a></li>
+            <li><a target="_blank" href="http://www.pierinapasteleria.com/">ED | Pierina Micali - Pastelería</a></li>
+            <li><a target="_blank" href="http://hibot.us/">ED | Hi Bot</a></li>
+            <li><a target="_blank" href="http://gabrielbouza.com.ar/">ED | Gabriel Bouza</a></li>
+            <li><a target="_blank" href="http://activandotusderechos.com.ar/">ED | Activando Tus Derechos</a></li>
+            <li><a target="_blank" href="http://www.lauracestau.com/">ED | Laura Cestau · www.lauracestau.com</a></li>
+            
+
+            <li class="sep titling"><a target="_blank" href="https://github.com/gabrielvol/frameworkGV">Github | gabrielvol/frameworkGV</a></li>
+            <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/framework/">GV Framework</a></li>
+            <li><a target="_blank" href="https://gitlab.com/hockeyApp">HockeyApp · GitLab</a></li>
+            <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/portfolio/">GV Portfolio</a></li>
+			
+
+            <li class="sep titling"><a target="_blank" href="https://gitlab.com/agridulzeEcomm/agridulze">Agridulze · GitLab</a></li>
+            <li><a target="_blank" href="https://gitlab.com/agridulzeEcomm/agridulze/issues">Tickets · GitLab</a></li>
+            <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/clientes/agridulze/">Agridulze · gv.com.ar</a></li>			
+            <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/clientes/agridulze/_bocetos">Boceto · /_bocetos/</a></li>
+			
+			
+			
+        </ul>
+    </li>
+        
+    <li>
+        <p class="title">Janus Comunicación</p>
+        <ul class="clearfix">
+            <li class="sep titling"><a target="_blank" href="https://gitlab.com/JanusComunicacion">JanusComunicacion · GitLab</a></li>
+            <li><a target="_blank" href="http://www.janus-comunicacion.com.ar/">Janus Comunicación</a></li>
+            <li><a target="_blank" href="https://www.agentex.com.ar/">Agentex</a></li>
+			
+			<li><a target="_blank" href="https://amutz.com.ar/">Amutz</a></li>
+            <li><a target="_blank" href="http://anibalbottini.musica.ar/">Aníbal Bottini</a></li>
+            <li><a target="_blank" href="http://www.ardicosa.com.ar/">Ardico</a></li>
+            <li><a target="_blank" href="http://www.ardicosa.com.ar/nuevo/">Ardico · /nuevo/</a></li>
+            <li><a target="_blank" href="http://ardicosa.com.ar/terminadas.html">Obras Terminadas · Ardico viejo</a></li>			
+            <li><a target="_blank" href="http://ardicosa.com.ar/actuales.html">Obras Actuales · Ardico viejo</a></li>	
+            <li><a target="_blank" href="http://www.aqual-ice.com/">Aqual Ice</a></li>
+            <li><a target="_blank" href="http://www.bacalaoislandia.com.ar/">Bacalao Islandia</a></li>
+            <li><a target="_blank" href="http://www.berly.com.ar/">Berly International S.A.</a></li>
+            <li><a target="_blank" href="http://dblancaluna.com.ar/">Blancaluna</a></li>
+            <li><a target="_blank" href="http://www.promocionesbnb.com.ar/">BNB - Promociones Integradas</a></li>
+            <li><a target="_blank" href="http://www.bpalpha.com/">BP Alpha</a></li>
+            <li><a target="_blank" href="http://www.estanciabuenaesperanza.com/">Buena Esperanza | Desde 1878</a></li>
+            <li><a target="_blank" href="http://www.rivadavia-sa.com.ar/">Carpintería Rivadavia</a></li>
+            <li><a target="_blank" href="http://www.ccmedicals.com.ar/">CC Medicals</a></li>
+            <li><a target="_blank" href="http://gevp.com.ar/">Club GEVP</a></li>
+            <li><a target="_blank" href="http://www.clublacrozeythomas.com.ar/">Club Lacroze &amp; Thomas</a></li>
+            <li><a target="_blank" href="http://www.danielcestauliz.com/">Daniel Cestau Liz</a></li>
+            <li><a target="_blank" href="http://librosdcl.com/">Daniel Libros</a></li>
+            <li><a target="_blank" href="http://www.dialogografico.com.ar/">Diálogo Gráfico</a></li>
+            <li><a target="_blank" href="http://www.dialogografico.com.ar//nuevo/">Diálogo Gráfico · /nuevo/</a></li>
+            <li><a target="_blank" href="http://www.elc-tradicionargentina.com.ar/">ELC Tradición Argentina</a></li>
+            <li><a target="_blank" href="http://www.jgfycia.com.ar/">JGF &amp; Co.</a></li>
+            <li><a target="_blank" href="http://www.laescondidapalermo.com.ar/">La Escondida Palermo</a></li>
+            <li><a target="_blank" href="http://www.limpistensrl.com.ar/">Limpisten</a></li>
+            <li><a target="_blank" href="http://lpenergysolutions.com.ar/">LP Energy Solutions</a></li>
+            <li><a target="_blank" href="http://lpenergysolutions.com.ar/PCA.php">LP Energy Solutions PCA</a></li>
+            <li><a target="_blank" href="http://www.matexsur.com/">Matexsur</a></li>
+            <li><a target="_blank" href="http://marplast.com.ar/">Mar·Plast</a></li>
+            <li><a target="_blank" href="http://marplast.com.ar/nuevo/">Mar·Plast · /nuevo/</a></li>
+            <li><a target="_blank" href="http://www.patagoniaebi.com/nuevo">Patagonia EBI /nuevo</a></li>
+            <li><a target="_blank" href="http://www.placardideal.com.ar/">Placard Ideal</a></li>
+            <li><a target="_blank" href="http://www.reflexoremaca.com.ar/">RÉMACA ::</a></li>
+            <li><a target="_blank" href="http://sanoybueno.com.ar/">Sano y Bueno</a></li>
+            <li><a target="_blank" href="http://trimak.com.ar/">Trimak</a></li>
+                        
+            <li class="sep"><a target="_blank" href="http://janus-comunicacion.com.ar/clientes/frare/">Frare · /janus/clientes/frare/</a></li>
+            <li><a target="_blank" href="http://janus-comunicacion.com.ar/clientes/vagoncafe/">Vagón Cafe · /janus/clientes/vagoncafe/</a></li>
+            
+            
+            
+            
+        </ul>
+    </li>
+        
+	<li>
+		<p class="title">Hockey League</p>
+		<ul class="clearfix">
+			<li><a target="_blank" href="http://localhost:8100/#/">hockey</a></li>
+			<li><a target="_blank" href="https://ionicframework.com/">Build Amazing Native Apps and Progressive Web Apps with Ionic Framework and Angular</a></li>
+			<li><a target="_blank" href="https://app.pluralsight.com/library/courses/building-mobile-apps-ionic-framework-angularjs/table-of-contents">Building Mobile Apps With the Ionic Framework and AngularJS | Pluralsight</a></li>
+			<li><a target="_blank" href="https://app.pluralsight.com/library/courses/angularjs-get-started/table-of-contents">AngularJS: Get Started | Pluralsight</a></li>
+			<li><a target="_blank" href="https://app.pluralsight.com/player?course=javascript-from-scratch&author=jesse-liberty&name=javascript-from-scratch-m1&clip=0&mode=live">JavaScript From Scratch</a></li>
+			<li><a target="_blank" href="https://ionicframework.com/docs/guide/publishing.html">Publishing your app - Ionic Framework</a></li>
+			<li><a target="_blank" href="https://github.com/driftyco/ionic-cli">GitHub - driftyco/ionic-cli: The Ionic command line utility</a></li>
+			<li><a target="_blank" href="https://forum.ionicframework.com/t/ionic-toturial-for-building-a-release-apk/15758">Ionic toturial for building a release.apk - tutorials - Ionic</a></li>
+			<li><a target="_blank" href="https://forum.ionicframework.com/t/i-cant-change-the-icon-of-my-app/8490/8">I can&#39;t change the icon of my app - Ionic</a></li>
+			<li><a target="_blank" href="http://solutionfrominternet.blogspot.com.co/2015/01/how-to-add-icons-to-your-ionic.html">Solution From Internet: How to Add Icons to Your Ionic Framework Apps</a></li>
+		</ul>
+	</li>
+        
+    <li>
+        <p class="title">W3C HERA Examinators</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://validator.w3.org/">The W3C Markup Validation Service</a></li>
+            <li><a target="_blank" href="https://sonarwhal.com/">sonarwhal, a linting tool for the web</a></li>
+            <li><a target="_blank" href="http://www.tawdis.net/index.html">TAW - Servicios de accesibilidad y movilidad web</a></li>
+            <li><a target="_blank" href="http://www.sidar.org/hera/">HERA | Revisando la Accesibilidad con Estilo.</a></li>
+            <li><a target="_blank" href="http://examinator.ws/">examinator</a></li>
+            <li><a target="_blank" href="https://jigsaw.w3.org/css-validator/">El Servicio de Validación de CSS del W3C</a></li>
+        </ul>
+    </li>
+    
+    <li><p class="title">Advertisement</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.adjelly.com/size-guide">adJelly - The ultimate social &amp; digital ad size guide</a></li>
+        </ul>
+    </li>
+        
+    <li>
+		<p class="title">Accessibility</p>
+        <ul class="clearfix">
+		
+            <li><a target="_blank" href="https://www.invisionapp.com/inside-design/cat-noone-accessibility-inclusion/">Cat Noone on accessibility · InVision App</a></li>
+            <li><a target="_blank" href="https://www.smashingmagazine.com/2018/12/voiceover-screen-reader-web-apps/">Screen Readers · Smashing Magazine</a></li>
+            <li><a target="_blank" href="https://www.benjystanton.co.uk/blog/a-plan-for-accessible-charts/">A Plan for accessibility</a></li>
+            <li><a target="_blank" href="https://www.udacity.com/course/web-accessibility--ud891">Web Accessibility | Udacity</a></li>
+            <li><a target="_blank" href="about:reader?url=https%3A%2F%2Falistapart.com%2Farticle%2Fmy-accessibility-journey-what-ive-learned-so-far%3Futm_source%3DCSS-Weekly%26utm_campaign%3DIssue-302%26utm_medium%3Demail">What I’ve Learned So Far · An A List Apart Article</a></li>
+            <li><a target="_blank" href="http://accessibility.voxmedia.com/">Vox Product Accessibility Guidelines</a></li>
+            <li><a target="_blank" href="https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually">Hiding DOM elements - ally.js</a></li>
+            <li><a target="_blank" href="https://css-tricks.com/advocating-for-accessible-ui-design/">Advocating for Accessible UI Design | CSS-Tricks</a></li>
+            <li><a target="_blank" href="http://webaim.org/">WebAIM: Web Accessibility In Mind</a></li>
+            <li><a target="_blank" href="http://wave.webaim.org/extension/">WAVE Chrome Extension</a></li>
+            <li><a target="_blank" href="https://github.com/edenspiekermann/a11y-dialog">Accesible Modal Dialog · Github edenspiekermann/a11y-dialog: A very lightweight and flexible accessible modal dialog.</a></li>
+            <li><a target="_blank" href="https://micromodal.now.sh/">Accesible Modal Dialog · Micromodal.js - Tiny javascript library for creating accessible modal dialogs</a></li>
+            <li><a target="_blank" href="https://github.com/Heydon/inclusive-design-checklist">Accesibility Checklist · GitHub - Heydon/inclusive-design-checklist: Aims to be the biggest checklist of inclusive design considerations ever</a></li>
+            <li><a target="_blank" href="https://medium.com/statuscode/getting-started-with-website-accessibility-5586c7febc92">Getting Started with Website Accessibility – Statuscode – Medium</a></li>
+            <li><a target="_blank" href="http://khan.github.io/tota11y/">tota11y – an accessibility visualization toolkit</a></li>
+            <li><a target="_blank" href="https://blog.marvelapp.com/7-things-every-designer-needs-know-accessibility/">7 Things Every Designer Needs to Know about Accessibility - Marvel Blog</a></li>
+            <li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-tooltips/">Building a fully-accessible help tooltip</a></li>
+            <li><a target="_blank" href="https://css-tricks.com/accessible-svgs/">Accessible SVGs | CSS-Tricks</a></li>
+            <li><a target="_blank" href="https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/">Accessible Icon with inline SVGs · 24a11y.com</a></li>
+			
+            <li><a target="_blank" href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt Decision Tree • Images • WAI Web Accessibility Tutorials</a></li>
+            <li><a target="_blank" href="http://webaim.org/techniques/alttext/#basics">WebAIM: Alternative Text</a></li>
+            <li><a target="_blank" href="https://www.w3.org/WAI/tutorials/images/">Images Concepts • Images • WAI Web Accessibility Tutorials</a></li>
+            <li><a target="_blank" href="https://css-tricks.com/focusing-on-focus-styles/">Focusing on Focus Styles | CSS-Tricks</a></li>
+            <li><a target="_blank" href="http://davidmacd.com/blog/is-placeholder-accessible-label.html">Placeholders</a></li>
+			
+			<li>
+				<p class="title">A11ycasts</p>
+				<ul class="clearfix">
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=HtTyRajRuyY">Introducing A11ycasts! -- A11ycasts #01</a></li>
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=CZGqnp06DnI&index=4&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g">Just use button -- A11ycasts #05 - YouTube</a></li>
+				</ul>
+			</li>
+			
+			<!--
+			<li>
+				<p class="title">CSggggggggggggggggggg</p>
+				<ul class="clearfix">
+					<li><a target="_blank" href="httpsssssssssssssssssss">Animsssssssssssssssssssssssssssssicks</a></li>
+					<li><a target="_blank" href="httpsssssssssssssssssscom">cssgggggggggggggggggggggggggggggase</a></li>
+				</ul>
+			</li>
+			-->
+            
+        </ul>
+    </li>
+
+    <li><p class="title">ARIA</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://alistapart.com/columnUL/wai-finding-with-aria-landmark-roles">WAI-finding with ARIA Landmark Roles · An A List Apart Column</a></li>
+            <li><a target="_blank" href="http://heydonworks.com/practical_aria_examples/">Practical ARIA Examples</a></li>
+            <li><a target="_blank" href="https://www.stefanjudis.com/blog/aria-selected-and-when-to-use-it/">aria-selected – when (not) to use it | Stefan Judis Web Development</a></li>
+            <li><a target="_blank" href="https://tink.uk/using-the-aria-current-attribute/">Using the aria-current attribute – Tink</a></li>
+            <li><a target="_blank" href="https://tink.uk/"></a></li>
+            <li><a target="_blank" href="https://www.w3.org/TR/wai-aria-1.1/#role_definitions">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+            <li><a target="_blank" href="http://www.webteacher.ws/2010/10/14/aria-roles-101/">ARIA Roles 101 | Web TeacherWeb Teacher</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">ASCII / HTML Entities / Language codes</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://ascii.li/emoticon-creator">Text Emoticon Creator - ASCII.li</a></li>
+            <li><a target="_blank" href="http://nealchester.com/special-characters/">Special Characters for HTML, CSS and JS</a></li>
+            <li><a target="_blank" href="https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder">Encode and decode a piece of text to its HTML equivalent - HTML Entities Encoder / Decoder | Web 2.0 Generators</a></li>
+            <li><a target="_blank" href="https://dev.w3.org/html5/html-author/charref">Character Entity Reference Chart</a></li>
+            <li><a target="_blank" href="http://migo.sixbit.org/more/html-entities.html">HTML Entities</a></li>
+            
+        </ul>
+        </li>
+        
+        <li><p class="title">Audio / Video</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://www.sitepoint.com/10-jquery-html5-audio-players/">10 jQuery HTML5 Audio Players — SitePoint</a></li>
+                            <li><a target="_blank" href="https://samiare.github.io/whitewater-mobile-video/">Whitewater Mobile Video</a></li>
+                <li><a target="_blank" href="http://www.encodedna.com/javascript/youtube-api-embed-video-with-mute-sound-setvolume-onstatechange-event.htm">YouTube API - Embed a YouTube Video with Mute Sound, Set Default Volume and Call onStateChange Event</a></li>
+                <li><a target="_blank" href="http://ramenhog.com/blog/2017/05/09/experiments-in-fixed-aspect-ratios">Stephanie Liu</a></li>
+                            <li><a target="_blank" href="http://atifaz.am/blog/vocalizer-help-others-pronounce-your-name-correctly.html">Vocalizer: Help Others Pronounce Your Name Correctly</a></li>
+                <li><a target="_blank" href="https://www.nameshouts.com/">NameShouts | Pronounce Names Right</a></li>
+            </ul>
+        </li>
+        
+        <li><p class="title">Avatar</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://joeschmoe.io/">Joe Schmoe</a></li>
+            </ul>
+        </li>
+        
+        
+        
+        <li><p class="title">Automating work</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://www.theatlantic.com/technology/archive/2018/10/agents-of-automation/568795/">Agents of automation</a></li>
+            </ul>
+        </li>
+        
+        <li><p class="title">Background Patterns</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.novapattern.com/">NovaPattern - Curated Collection of High-Quality Patterns</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">Branding</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://medium.muz.li/a-short-explanation-of-a-branding-tool-for-everything-and-everyone-57578305f94b#.lk9r6fdd7">A short explanation of a branding tool for everything and everyone.</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">Breadcrumbs</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://uxplanet.org/breadcrumbs-for-web-sites-what-when-and-how-9273dacf1960#.63b797nif">Breadcrumbs For Web Sites: What, When and How</a></li>
+        </ul>
+        </li>
+        
+        <li>
+			<p class="title">Brief</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://artisanthemes.io/write-website-design-brief/">Web Site Briefing</a></li>
+				<li><a target="_blank" href="https://www.methodandclass.com/articles/how-to-write-a-brief-for-a-website">Web Site Briefing</a></li>
+				<!--
+				<li><a target="_blank" href="httggggggggggggggggggggggggggggg">Web Site Briefing</a></li>
+				-->
+				
+			</ul>
+        </li>		
+		
+        
+        <li><p class="title">Browsers</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://abdulapopoola.com/2016/02/08/chrome-dev-tools-deep-dive-elements/">Chrome dev tools deep dive : Elements | CodeKraft</a></li>
+            <li><a target="_blank" href="https://scotch.io/tutorials/customize-the-browsers-scrollbar-with-css">Customize the Browser&#39;s Scrollbar with CSS ― Scotch</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">Buttons</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://uxplanet.org/buttons-in-ui-design-the-evolution-of-style-and-best-practices-56536dc5386e#.5pd4luqdd">Buttons in UI Design: The Evolution of Style and Best Practices — UX Planet</a></li>
+            <li><a target="_blank" href="https://www.smashingmagazine.com/2012/06/links-should-never-say-click-here/">Why Your Links Should Never Say &quot;Click Here&quot; – Smashing Magazine</a></li>
+            <li><a target="_blank" href="https://medium.com/reallygoodemails/everything-you-wanted-to-know-about-email-cta-buttons-98807ab98806">Everything You Wanted to Know About Email CTA Buttons – Really Good Emails</a></li>
+            <li><a target="_blank" href="http://tympanus.net/Development/MediaPopUpEffect/">Media Pop Up Effect | Codrops</a></li>
+            <li><a target="_blank" href="https://marcysutton.com/links-vs-buttons-in-modern-web-applications/">Links vs. Buttons in Modern Web Applications | MarcySutton.com</a></li>
+            <li><a target="_blank" href="http://adrianroselli.com/2016/06/on-link-underlines.html#research">On Link Underlines | Adrian Roselli</a></li>
+            <li><a target="_blank" href="http://blog.dynamicdrive.com/popular-css-button-hover-effects-explained/">Popular CSS Button Hover Effects Explained - Dynamic Drive Blog</a></li>
+            <li><a target="_blank" href="https://cloudfour.com/thinks/designing-button-states/">Designing Button States - Cloud Four</a></li>
+        </ul></li>
+        
+        <li><p class="title">ChatBots</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://chatbotsmagazine.com/perfect-bots-from-hell-586f39913577#.etxfx1qou">Perfect Bots from Hell – Chatbots Magazine</a></li>
+        </ul></li>
+        
+        <li><p class="title">Chrome Local Overrrides</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=yRrrL0Mg1pM">Improving page performance with Chrome DevTools - YouTube</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=UOn0b5kn3jk&feature=youtu.be">Using Chrome’s ‘Local Overrides’ to Test Performance Hypotheses - YouTube</a></li>
+        </ul></li>
+        
+        <li><p class="title">CodePens</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://plnkr.co/">Plunker</a></li>
+            <li><a target="_blank" href="http://jsbin.com/?html,js,output">JS Bin</a></li>
+        </ul></li>
+        
+        <li><p class="title">Code Review/Testing</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.sitepoint.com/the-7-cross-browser-testing-tools-you-need-in-2016/">The 7 Cross-Browser Testing Tools You Need in 2016</a></li>
+            <li><a target="_blank" href="https://sonarwhal.com/docs/user-guide/rules/">Rules categories | sonar documentation</a></li>
+            <li><a target="_blank" href="https://css-tricks.com/code-review-etiquette/">Code Review Etiquette | CSS-Tricks</a></li>
+            <li><a target="_blank" href="https://github.com/thedaviddias/Front-End-Checklist">GitHub - thedaviddias/Front-End-Checklist: 🗂 The perfect Front-End Checklist for modern websites and meticulous developers</a></li>
+            <li><a target="_blank" href="https://medium.com/@nickvanderlinde/how-we-do-user-testing-at-mirabeau-223996ad841f#.v4r973xyp">How we do user testing at Mirabeau – Medium</a></li>
+        </ul></li>
+        
+        <li>
+			<p class="title">Color</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="http://www.colorbox.io/">Colorbox .io</a></li>
+				<li><a target="_blank" href="http://www.colorzilla.com/gradient-editor/">CSS Gradient · Colorzilla</a></li>
+				<li><a target="_blank" href="https://shapy.app/">CSS Gradient · Shapy</a></li>				
+				<li><a target="_blank" href="https://webgradients.com/">Fresh Background Gradients | WebGradients.com</a></li>
+				<li><a target="_blank" href="http://una.im/CSSgram/">CSSGram</a></li>
+				<li><a target="_blank" href="https://yeun.github.io/open-color/">Open Color</a></li>
+				<li><a target="_blank" href="http://www.cssfilters.co/">cssFilters.co - Custom and Instagram like photo filters for CSS</a></li>
+				<li><a target="_blank" href="https://uxplanet.org/108-million-web-users-are-color-blind-tips-for-designing-keeping-them-in-mind-7be71d0019a9#.wl1a9xl6i">108 million web users are color blind. Tips for designing keeping them in mind</a></li>
+				<li><a target="_blank" href="https://refactoringui.com/previews/building-your-color-palette">Color Palette · Refactoring UI</a></li>
+				<li><a target="_blank" href="https://learnui.design/tools/data-color-picker.html">Color Palette · Learn UI</a></li>				
+				<li><a target="_blank" href="https://medium.com/@mailplane/theres-more-to-mailplane-s-dark-mode-than-you-think-87abad4c1e12">Dark Color Schemes</a></li>				
+			</ul>
+		</li>
+        
+        <li>
+            <p class="title">Color Theory</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://medium.com/building-creative-market/a-color-exercise-for-our-brands-illustration-db39af44f081">A Color Exercise for our Brand’s Illustration</a></li>
+            </ul>
+        </li>
+        
+        <li><p class="title">Components</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.styled-components.com/"></a></li>
+            <li><a target="_blank" href="https://github.com/Microsoft/typescript-styled-plugin">GitHub - Microsoft/typescript-styled-plugin: TypeScript server plugin that adds intellisense to styled component css strings</a></li>
+            <li><a target="_blank" href="https://ayushgp.github.io/html-web-components-using-vanilla-js/">HTML Web Component using Vanilla JavaScript – Ayush Gupta – Full Stack Web Developer</a></li>
+        </ul></li>
+        
+        <li>
+            <p class="title">CSS</p>
+            <ul class="clearfix subUL">			
+                <li><a target="_blank" href="https://caniuse.com/">Can I Use</a></li>
+                <li><a target="_blank" href="https://zellwk.com/blog/empty-and-blank//">:empty &amp; :blank pseudoclasses</a></li>
+                <li><a target="_blank" href="http://cssreference.io/">CSS Reference - A free visual guide to the most popular CSS properties.</a></li>
+                <li><a target="_blank" href="http://howtocenterincss.com/">How to Center in CSS</a></li>
+                <li><a target="_blank" href="https://jonassebastianohlsson.com/specificity-graph/">CSS Specificity Graph Generator - by Jonas Ohlsson</a></li>
+                <li><a target="_blank" href="https://github.com/tscanlin/css-razor">GitHub - tscanlin/css-razor: css-razor is a fast way to remove unused selectors from css</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain">contain - CSS | MDN</a></li>
+                <li><a target="_blank" href="https://bitsofco.de/5-lesser-used-css-selectors/">5 Lesser Used CSS Selectors</a></li>
+                <li><a target="_blank" href="https://www.smashingmagazine.com/2009/08/taming-advanced-css-selectors/">Taming Advanced CSS Selectors – Smashing Magazine</a></li>
+                <li><a target="_blank" href="https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/">An Ultimate Guide To CSS Pseudo-Classes And Pseudo-Elements – Smashing Magazine</a></li>
+                <li><a target="_blank" href="http://www.smashingmagazine.com/2015/12/getting-started-css-calc-techniques/?mc_cid=b2ece7659c&mc_eid=b57c1053bd">Getting Started With CSS calc() – Smashing Magazine</a></li>
+                <li><a target="_blank" href="https://medium.com/@elad/new-css-logical-properties-bc6945311ce7">CSS Logical Properties · Medium</a></li>
+                <li><a target="_blank" href="http://www.freewebtutorials.info/10-hidden-css3-properties-you-should-know/">10 Hidden CSS3 Properties You Should Know</a></li>
+                <li><a target="_blank" href="https://www.sitepoint.com/introduction-css-will-change-property/">An Introduction to the CSS will-change Property — SitePoint</a></li>
+                <li><a target="_blank" href="https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/">Using Feature Queries in CSS ★ Mozilla Hacks – the Web developer blog</a></li>
+                <li><a target="_blank" href="https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/">Understanding CSS Layout And The Block Formatting Context — Smashing Magazine</a></li>
+                <li><a target="_blank" href="https://dzone.com/articles/advanced-css-tricks-and-techniques">Advanced CSS Tricks and Techniques - DZone Web Dev</a></li>
+                <li><a target="_blank" href="http://www.heydonworks.com/article/on-writing-less-damn-code">Writing Less Damn Code | HeydonWorks</a></li>
+                <li><a target="_blank" href="https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6#.788nehh96">I totally forgot about print style sheets – Medium</a></li>
+                <li><a target="_blank" href="https://css-tricks.com/loops-css-preprocessors/">Loops in CSS Preprocessors | CSS-Tricks</a></li>
+                <li><a target="_blank" href="http://collectui.com/challenges/settings">Collect UI - Daily inspiration collected from daily ui archive and beyond. Based on Dribbble shots, hand picked, updating daily.</a></li>
+                
+                <li>
+					<p class="title">CSS Animations</p>
+					<ul class="clearfix">
+						<li><a target="_blank" href="https://medium.com/@ux_in_motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc">Creating Usability with Motion: The UX in Motion Manifesto</a></li>
+						<li><a target="_blank" href="https://uxdesign.cc/good-to-great-ui-animation-tips-7850805c12e5">Good to great UI animation tips – UX Collective</a></li>
+						<li><a target="_blank" href="https://www.stilllife.studio/txtwav">txt.wav demos</a></li>
+						<li><a target="_blank" href="https://stories.jotform.com/how-to-use-css-animations-like-a-pro-dfacc1e97338#.mxr7ngiaq">How to Use CSS Animations Like a Pro</a></li>
+						<li><a target="_blank" href="https://cssanimation.rocks/animating-hero-header/">Animating your hero header - CSS Animation</a></li>
+						<li><a target="_blank" href="http://codepen.io/ahmedbeheiry/pen/vgoeRv">Text Rotator</a></li>
+						<li><a target="_blank" href="http://easings.net/es">Funciones Easing Guía de Referencia</a></li>
+						<li><a target="_blank" href="https://tympanus.net/Development/StackMotionHoverEffects/">Stack Motion Hover Effects | Codrops</a></li>
+						<li><a target="_blank" href="http://animista.net/">Animista</a></li>
+						<li><a target="_blank" href="https://daneden.github.io/animate.css/">Animate.css</a></li>
+						<li><a target="_blank" href="http://bouncejs.com/">Bounce.js</a></li>
+						<li><a target="_blank" href="http://www.minimamente.com/example/magic_animations/">Magic Animations CSS3</a></li>
+						<li><a target="_blank" href="http://www.vittoriozaccaria.net/dyn-css/#what-is-it">DynCSS - Simple dynamic CSS rules to give life to your sites.</a></li>
+						<li><a target="_blank" href="http://elrumordelaluz.github.io/csshake/#1">CSShake</a></li>
+						<li><a target="_blank" href="http://ianlunn.github.io/Hover/">Hover.css - A collection of CSS3 powered hover effects</a></li>
+						<li><a target="_blank" href="http://velocityjs.org/">Velocity.js</a></li>
+						<li><a target="_blank" href="http://lab.ejci.net/favico.js/">favico.js - Make use of your favicon</a></li>
+						<li><a target="_blank" href="http://anijs.github.io/">AniJS, A Library to Raise your Web Design without Coding</a></li>
+						<li><a target="_blank" href="https://tympanus.net/codrops/2017/06/07/some-letter-effects-and-interaction-ideas/">Letter Effects and Interaction Ideas | Codrops</a></li>
+						<li><a target="_blank" href="http://www.css3maker.com/css3-transform.html">CSS Transform | CSS 3.0 Transform Maker | CSS 3.0 Transform</a></li>
+					</ul>
+                </li>
+                <li>
+                    <p class="title">CSS Borders</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-tricks.com/animating-border/">Animating Border | CSS-Tricks</a></li>
+                        <li><a target="_blank" href="http://www.cssarrowplease.com/">cssarrowplease</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS calc</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://medium.com/buildit/hardcore-css-calc-bdfb0162993c">Hardcore CSS Calc | Medium</a></li>
+                    </ul>
+                </li>				
+                <li>
+                    <p class="title">CSS Cursors</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="http://css-cursor.techstream.org/">CSS Cursor</a></li>
+                        <li><a target="_blank" href="https://appleple.github.io/scroll-hint/">ScrollHint javaScript library - Horizontal Scroll</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Debugger</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://github.com/lucagez/Debucsser">Debucsser · Github 	CSS Debugger</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Doodle</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-doodle.com/">CSS Doodle</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Effects</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="http://bennettfeely.com/image-effects/">Image Effects with CSS</a></li>
+                        <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode">&lt;blend-mode&gt; - CSS | MDN</a></li>
+                        <li><a target="_blank" href="https://css-tricks.com/css-techniques-and-effects-for-knockout-text/">CSS Techniques and Effects for Knockout Text | CSS-Tricks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Filters</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-tricks.com/the-backdrop-filter-css-property/">CSS Backdrop Filter</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Grid</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-tricks.com/css-grid-replace-flexbox/">Does CSS Grid Replace Flexbox? | CSS-Tricks</a></li>
+                        <li><a target="_blank" href="http://cssgridgarden.com/">Grid Garden - A game for learning CSS grid</a></li>
+                        <li><a target="_blank" href="https://alialaa.github.io/css-grid-cheat-sheet/">CSS Grid Cheat Sheet</a></li>
+                        <li><a target="_blank" href="https://css-tricks.com/collection-interesting-facts-css-grid-layout/">A Collection of Interesting Facts about CSS Grid Layout | CSS-Tricks</a></li>
+                        <li><a target="_blank" href="https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/">Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid – Smashing Magazine</a></li>
+                        <li><a target="_blank" href="https://mozilladevelopers.github.io/playground/">CSS Grid PlayGround | Terminology | Mozilla</a></li>
+                        <li><a target="_blank" href="https://www.smashingmagazine.com/2017/09/css-grid-gotchas-stumbling-blocks/">CSS Grid Gotchas And Stumbling Blocks – Smashing Magazine</a></li>
+                        <li><a target="_blank" href="https://alistapart.com/article/the-new-css-layout-excerpt">The New CSS Layout, An Excerpt · An A List Apart Article</a></li>
+                        <li><a target="_blank" href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators">The Story of CSS Grid, from Its Creators · An A List Apart Article</a></li>
+                        <li><a target="_blank" href="https://vmcreative.github.io/Hexi-Flexi-Grid/">Hexi-Flexi-Grid</a></li>
+                        <li><a target="_blank" href="https://www.chenhuijing.com/blog/how-i-design-with-css-grid/">How I design with CSS grid</a></li>
+                        <li><a target="_blank" href="https://codepen.io/hbuchel/pen/qOxGzW">CSS Grid Layout Module - Responsive Magazine Layout</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Loaders</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://connoratherton.com/loaders">connoratherton.com/loaders</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Nth-child</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="http://nthmaster.com/">Mastering the :nth-child | CSS3 pseudo classes and :nth-child ranges</a></li>
+                        <li><a target="_blank" href="https://css-tricks.com/extremely-handy-nth-child-recipes-sass-mixins/">Some Extremely Handy `:nth-child` Recipes as Sass Mixins | CSS-Tricks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Object Model CSSOM</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/">CSS Objetc Model</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Unicode Patterns / Backgrounds</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://yuanchuan.name/2018/05/06/unicode-patterns.html">CSS Unicode Patterns</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Text</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-tricks.com/almanac/properties/q/quotes/">Text Quotes | CSS-Tricks</a></li>
+                        <li><a target="_blank" href="https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/">Blockquote | CSS-Tricks</a></li>
+                        
+                    </ul>
+                </li>
+				<li>
+					<p class="title">Sass</p>
+					<ul class="clearfix">
+						<li><a target="_blank" href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">SASS Documentation</a></li>
+						<li><a target="_blank" href="https://css-tricks.com/sass-style-guide/">SASS Style Guide</a></li>
+						<li><a target="_blank" href="http://sass-guidelin.es/">Sass Guidelines</a></li>
+						<li><a target="_blank" href="http://webdesign.tutsplus.com/tutorials/all-you-ever-need-to-know-about-sass-interpolation--cms-21375">All You Ever Need to Know About Sass Interpolation - Tuts+ Web Design Tutorial</a></li>
+						<li><a target="_blank" href="http://www.scottohara.me/article/sass-selector-variables.html">Selectors as Sass Variables? | scottohara.me</a></li>
+						<li><a target="_blank" href="https://github.com/bigcommerce/sass-style-guide#specificity">GitHub - bigcommerce/sass-style-guide</a></li>
+						<li><a target="_blank" href="http://thesassway.com/news/sass-3-3-released#parent-selector-suffixes">Sass 3.3 (Maptastic Maple)</a></li>
+						<li><a target="_blank" href="https://github.com/airbnb/css">GitHub - airbnb/css: A mostly reasonable approach to CSS and Sass.</a></li>
+						<li><a target="_blank" href="https://github.com/bigcommerce/sass-style-guide/blob/master/.scss-lint.yml">sass-style-guide/.scss-lint.yml at master · bigcommerce/sass-style-guide · GitHub</a></li>
+						<li><a target="_blank" href="http://glenmaddern.com/articles/css-modules">Glen Maddern: Internet Pro</a></li>
+						<li><a target="_blank" href="http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/">Erskine Design – Friendlier colour names with Sass maps</a></li>
+						<li><a target="_blank" href="http://suitcss.github.io/">SUIT CSS: style tools for UI components</a></li>
+						<li><a target="_blank" href="http://cssnext.io/">CSS Next</a></li>
+						<li><a target="_blank" href="http://css4-selectors.com/">CSS4 Selectors</a></li>
+						<li><a target="_blank" href="https://github.com/postcss/autoprefixer/wiki/support-list">Post CSS Autoprefixer - Wiki: Support List</a></li>
+						<li><a target="_blank" href="http://www.impressivewebs.com/sass-on-windows/">Setting Up Sass on Windows | Impressive Webs</a></li>
+						<li><a target="_blank" href="https://medium.com/@mciastek/s-css-best-practices-that-you-have-not-yet-known-ba2f6329b5dd">(S)CSS Best Practices That You Have Not Yet Known – Mirosław Ciastek – Medium</a></li>
+					</ul>
+				</li>
+                <li>
+                    <p class="title">CSS Shadows</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://css-tricks.com/breaking-css-box-shadow-vs-drop-shadow/">Breaking down CSS Box Shadow vs. Drop Shadow | CSS-Tricks</a></li>
+                    </ul>
+                </li>
+                <li><p class="title">CSS Shapes</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://www.smashingmagazine.com/2018/09/css-shapes/">Take a new look at CSS Shapes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Snippets</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://atomiks.github.io/30-seconds-of-css/">CSS Useful Snippets</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title">CSS Variables</p>
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/">It&#39;s Time To Start Using CSS Custom Properties – Smashing Magazine</a></li>
+                        <li><a target="_blank" href="https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a">https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+			<p class="title">Design Graph Theory</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://mrpandey.github.io/d3graphTheory/unit.html?degree-of-vertex">D3 Graph Theory</a></li>
+			</ul>
+		</li>
+        
+        <li>
+			<p class="title">Domains</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://porkbun.com/products/domains">Domains - PorkBun</a></li>
+			</ul>
+		</li>
+        
+        <li>
+			<p class="title">Favicon</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://realfavicongenerator.net/blog/">Favicon&#39;s blog - Everything about favicon, Apple touch icon and RealFaviconGenerator</a></li>
+			</ul>
+		</li>
+        
+        <li>
+			<p class="title">Feature Policy</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://www.smashingmagazine.com/2018/12/feature-policy/">Feature Policy</a></li>
+			</ul>
+		</li>
+        
+        <li>
+			<p class="title">Flexbox</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://medium.freecodecamp.com/even-more-about-how-flexbox-works-explained-in-big-colorful-animated-gifs-a5a74812b053#.lh595c6m6">Even more about how Flexbox works — explained in big, colorful, animated gifs</a></li>
+				<li><a target="_blank" href="https://cvan.io/flexboxin5/">flexbox in 5 minutes</a></li>
+				<li><a target="_blank" href="https://medium.com/@Heydon/flexbox-grid-finesse-4d22b80bfee1#.4ievspgod">Flexbox Grid Finesse — Medium</a></li>
+				<li><a target="_blank" href="http://www.chriswrightdesign.com/experiments/using-flexbox-today/">Experiment: Using Flexbox Today - Chris Wright</a></li>
+			</ul>
+		</li>
+        
+        <li>
+            <p class="title">Forms</p>
+            <ul class="clearfix">
+				<li><a target="_blank" href="https://zellwk.com/blog/check-empty-input-css/">Validating forms with CSS · Zell Liew</a></li>
+                <li><a target="_blank" href="https://www.filamentgroup.com/lab/select-css.html">Styling select like 2019 · Filament Group</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">&lt;input&gt; - HTML (HyperText Markup Language) | MDN</a></li>
+                <li><a target="_blank" href="https://jonathan-harrell.com/advanced-css-form-styling/">Advanced CSS-Only Form Styling - Jonathan Harrell | CSS Blogger &amp; Teacher, UI/UX Designer, Front-End Developer</a></li>
+                <li><a target="_blank" href="http://www.ajaxblender.com/jniceit.html">jNiceIt – jQuery plugin to customize design of textboxes, radiobuttons, checkboxes, and more! — ajaxBlender.com</a></li>
+                <li><a target="_blank" href="https://uxdesign.cc/design-better-forms-96fadca0f49c#.l55rvsa1p">Design Better Forms — uxdesign.cc – User Experience Design</a></li>
+                <li><a target="_blank" href="http://wtfforms.com/?mc_cid=2d267568d7&mc_eid=b57c1053bd">WTF, forms?</a></li>
+                <li><a target="_blank" href="http://allthingssmitty.com/2016/09/25/accessible-floating-labels/">Accessible floating labels · Matt Smith</a></li>
+                <li><a target="_blank" href="http://freefrontend.com/css-checkboxes/">55 CSS Checkboxes</a></li>
+                <li><a target="_blank" href="https://codersblock.com/blog/checkbox-trickery-with-css/">Checkbox Trickery with CSS / Coder&#39;s Block</a></li>
+                <li><a target="_blank" href="https://medium.com/@eugeniolujambio/accessible-css-only-floating-labels-74bf9173bc5f">Accesible CSS only floating labels</a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Frameworks</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="http://materializecss.com/about.html">About - Materialize</a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Future Web</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="http://timewellspent.io/">Design for Time Well Spent</a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Gettext</p>
+            <ul class="clearfix">
+            <li><a target="_blank" href="https://www.gnu.org/software/gettext/manual/html_node/Country-Codes.html">Gettext Country Codes</a></li>
+            <li><a target="_blank" href="https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html">Gettext Usual Language Codes</a></li>
+            <li><a target="_blank" href="https://gist.github.com/sebacruz/1980198">Gettext language codes | GitHub</a></li>
+            </ul>
+        </li>
+        <li>
+            <p class="title">GIT</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://raygun.com/blog/git-workflow/">Git workflow best practices: 5 tips to get your code to production fast</a></li>
+                <li><a target="_blank" href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/undoing-things">Undoing Things</a></li>
+            </ul>
+        </li>
+        <li>
+            <p class="title">Google</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://datascience-school.com/blog/google-data-studio-in-10-minutes-step-by-step-guide/">Google Data Studio</a></li>
+            </ul>
+        </li>
+		
+		
+        
+        <li>
+            <p class="title">HTML</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="http://html5doctor.com/"></a></li>
+                <li><a target="_blank" href="http://html5bot.webflow.io/">HTML5 Robot choses the appropriate semantical tag for you</a></li>
+                <li><a target="_blank" href="http://htmldog.com/"></a></li>
+                <li><a target="_blank" href="https%3A%2F%2Fwww.sitepoint.com%2Fhow-why-use-html5-custom-data-attributes">How You Can Use HTML5 Custom Data Attributes and Why — SitePoint</a></li>
+                <li><a target="_blank" href="http://blog.mecheye.net/2017/08/introduction-to-html-components/">Introduction to HTML Components | Clean Rinse</a></li>
+                <li><a target="_blank" href="https://github.com/joshbuchea/HEAD">GitHub - joshbuchea/HEAD: A list of everything that *could* go in the head of your document</a></li>
+                <li><a target="_blank" href="https://mailtolink.me/">Mailto Link .me</a></li>
+				
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">HTTPS / SSL</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://letsencrypt.org/getting-started/">Let's Encrypt</a></li>
+                <li><a target="_blank" href="https://mozilla.github.io/server-side-tls/ssl-config-generator/">SSL Generator | Mozilla GitHub</a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Icon Source</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://iconsvg.xyz/">Font Awesome - Icons</a></li>
+                <li><a target="_blank" href="https://feather.netlify.com/">Feather – Simply beautiful open source icons</a></li>
+                <li><a target="_blank" href="http://fontawesome.io/icons/">Font Awesome - Icons</a></li>
+                <li><a target="_blank" href="https://www.iconfinder.com/">Iconfinder - 1,050,000+ free and premium icons</a></li>
+				
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Icon Design</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="http://blog.iconfinder.com/better-icon-design-in-6-easy-steps/">Better Icon Design in 6 Easy Steps</a></li>
+                <li><a target="_blank" href="https://icons8.com/articles/how-to-combine-icons-from-different-sets-in-your-ui/">How to Combine Icons from Different Sets in Your UI | Icons8</a></li>				
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Img Optimisation</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://www.jpeg.io/">JPEG .io</a></li>
+                <li><a target="_blank" href="http://pngcrush.com/">PNG Crush</a></li>
+                <li><a target="_blank" href="https://bjango.com/articles/pngoptimisation/">PNG optimisation</a></li>
+                <li><a target="_blank" href="https://cloudfour.com/thinks/responsive-images-201-client-hints/">Responsive Images 201: Client Hints - Cloud Four</a></li>
+                <li><a target="_blank" href="http://optimizilla.com/">Online Image Compressor</a></li>
+                <li><a target="_blank" href="https://github.com/google/guetzli/">GitHub - google/guetzli: Perceptual JPEG encoder</a></li>
+                <li><a target="_blank" href="http://responsiveimages.org/">ResponsiveImages.org</a></li>
+            </ul>
+        </li>
+        
+        <li><p class="title">iPhone</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://julian.is/article/iphone-x-notch/">Don&#39;t Fight The Notch — Designing for the iPhone X | Julian Gaviria — Web Designer</a></li>
+            <li><a target="_blank" href="https://webkit.org/blog/7929/designing-websites-for-iphone-x/">Designing Websites for iPhone X | WebKit</a></li>
+        </ul></li>
+        
+        <li><p class="title">Logo</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://logofaves.com/">Logo Faves | Logo Inspiration Gallery</a></li>
+            <li><a target="_blank" href="http://www.logofromdreams.com/">Logo From Dreams</a></li>
+            <li><a target="_blank" href="http://www.logogala.com/">Logo Gala</a></li>
+            <li><a target="_blank" href="https://www.logolounge.com/">Logo Lounge</a></li>
+            <li><a target="_blank" href="http://logooftheday.com/">Logo Of The Day</a></li>
+            <li><a target="_blank" href="https://logopond.com/">Logo Pond</a></li>
+            <li><a target="_blank" href="http://www.logosauce.com/">Logo Sauce</a></li>
+            <li><a target="_blank" href="http://www.logospire.com/">Logo Spire - a logo inspiration gallery</a></li>
+            <li><a target="_blank" href="http://www.misipile.com/">Misipile logo design portfolio</a></li>
+        </ul></li>
+        
+        <li><p class="title">Logo Search</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://www.brandsoftheworld.com/search/logo?search_api_views_fulltext=brazzoli">Search | Brands of the World™</a></li>
+            <li><a target="_blank" href="https://www.vectorlogo.zone/search.html?q=brazzoli">Search Logos - Vector Logo Zone</a></li>
+            <li><a target="_blank" href="https://worldvectorlogo.com/search/brazzoli">Results for brazzoli — Worldvectorlogo</a></li>
+            <li><a target="_blank" href="https://openclipart.org/search/?query=brazzoli">Search results for &quot;brazzoli&quot; clipart - Openclipart</a></li>
+            <li><a target="_blank" href="http://instantlogosearch.com/?q=brazzoli">Instant Logo Search</a></li>
+        </ul></li>
+        
+        <li><p class="title">Markdown</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet · GitHub</a></li>
+        </ul></li>
+        
+        <li><p class="title">Mockups</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://www.diverseui.com/">Diverse UI</a></li>
+            <li><a target="_blank" href="http://www.lists.design/">Real content for all your designs - Lists</a></li>
+            <li><a target="_blank" href="https://medium.com/@lewisplushumphreys/how-were-using-component-based-design-5f9e3176babb#.t7ik8d38b">How we’re using Component Based Design – Medium</a></li>
+        </ul></li>
+        
+        <li><p class="title">Nav</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://envato.com/blog/css-snippets-responsive-menus/">20 Useful CSS Snippets for Responsive Menus</a></li>
+        </ul></li>
+        
+        <li><p class="title">NPM</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://docs.npmjs.com/getting-started/using-a-package.json">05 - Using a `package.json` | npm Documentation</a></li>
+            <li><a target="_blank" href="https://evilmartians.com/chronicles/size-limit-make-the-web-lighter">Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog</a></li>
+        </ul></li>
+        
+        <li><p class="title">Open Graph</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing">Stack Overflow - Provide an image for WhatsApp link sharing</a></li>
+        </ul></li>
+        
+        <li><p class="title">Photo Stock</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://www.growthtext.com/free-stock-photos/">18 Free Stock Photos Websites Designers Won’t Tell You About</a></li>
+            <li><a target="_blank" href="https://bootstrapbay.com/blog/free-stock-photos/">21 Amazing Sites With Breathtaking Free Stock Photos - BootstrapBay</a></li>
+            <li><a target="_blank" href="https://negativespace.co/">Beautiful Free Stock Photos - NegativeSpace</a></li>
+            <li><a target="_blank" href="https://bossfight.co/">BOSSFIGHT. — Free High-Res Stock Photos, Daily.</a></li>
+            <li><a target="_blank" href="http://skuawk.com/">Curated public domain photos. Creative photography for personal and professional projects.</a></li>
+            <li><a target="_blank" href="https://everypixel.com/">Stock Image Search Engine - More Than 50 Best Sources | Everypixel</a></li>
+            <li><a target="_blank" href="http://finda.photo/">FindA.Photo: 10,000 completely free stock photos to use for any purpose</a></li>
+            <li><a target="_blank" href="https://www.foodiesfeed.com/">Foodiesfeed – Free Food Photos</a></li>
+            <li><a target="_blank" href="http://foodshot.co/">Foodshot</a></li>
+            <li><a target="_blank" href="http://getrefe.tumblr.com/">Free Refe Real Life Photos</a></li>
+            <li><a target="_blank" href="http://join.deathtothestockphoto.com/">Free photos for creative use - Death to the Stock Photo</a></li>
+            <li><a target="_blank" href="https://www.stockified.com/">Free Stock Images for Personal &amp; Commercial Use - Stockified</a></li>
+            <li><a target="_blank" href="http://librestock.com/">Free Stock Photos · Search 40+ sites with LibreStock</a></li>
+            <li><a target="_blank" href="https://www.pexels.com/">Free stock photos · Pexels</a></li>
+            <li><a target="_blank" href="https://burst.shopify.com/">Free Stock Photos: High-Res Images for Commercial Use</a></li>
+            <li><a target="_blank" href="http://imcreator.com/">Free Website Builder | Make a Free Website - IM Creator</a></li>
+            <li><a target="_blank" href="http://www.gratisography.com/">Gratisography: Free high-resolution photos</a></li>
+            <li><a target="_blank" href="http://deathtothestockphoto.com/">Home - Death to the Stock Photo</a></li>
+            <li><a target="_blank" href="http://imcreator.com/free">IM Free - Free Website Templates, Free Images &amp; More</a></li>
+            <li><a target="_blank" href="https://pixabay.com/">Imágenes gratis - Pixabay</a></li>
+            <li><a target="_blank" href="http://instantlogosearch.com/">Instant Logo Search</a></li>
+            <li><a target="_blank" href="http://jaymantri.com/">jay mantri</a></li>
+            <li><a target="_blank" href="http://www.lifeofpix.com/">Life Of Pix - Free Stock Photos &amp; Images - Photography</a></li>
+            <li><a target="_blank" href="https://morguefile.com/">Morguefile free photographs for commercial use</a></li>
+            <li><a target="_blank" href="http://nos.twnsnd.co/">New Old Stock</a></li>
+            <li><a target="_blank" href="https://www.eyeem.com/">EyeEm: Authentic Stock Photos and Royalty-Free Images</a></li>
+            <li><a target="_blank" href="https://www.sitebuilderreport.com/stock-up">Search 20,000+ Free Stock Photos | Stock Up</a></li>
+            <li><a target="_blank" href="https://www.splitshire.com/">SplitShire - Free Stock Photos for Commercial Use</a></li>
+            <li><a target="_blank" href="http://startupstockphotos.com/">Startup Stock Photos | Free Tech Stock Photos</a></li>
+            <li><a target="_blank" href="https://www.stockio.com/">Stockio.com - Download Free Vectors, Photos, Icons, Fonts and Videos</a></li>
+            <li><a target="_blank" href="http://thepatternlibrary.com/#maze">The Pattern Library</a></li>
+            <li><a target="_blank" href="https://stocksnap.io/">StockSnap.io - Beautiful Free Stock Photos (CC0)</a></li>
+            <li><a target="_blank" href="https://unsplash.com/">Unsplash | Free HD Photos</a></li>
+            <li><a target="_blank" href="http://negativespace.co/">Negative Space - Free stock photos, no copyright restrictions.</a></li>
+            <li><a target="_blank" href="http://morguefile.com/">http://morguefile.com/</a></li>
+        </ul></li>
+        
+        <li><p class="title">Portfolio/Freelance</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://news.ycombinator.com/item?id=16651077">Ask HN: How do you find freelance work? | Hacker News</a></li>
+            <li><a target="_blank" href="https://responsivedesign.is/examples/superfriendly/">SuperFriendly | Examples | Responsive Web Design</a></li>
+            <li><a target="_blank" href="https://guglieri.com/usatoday/">Claudio Guglieri : Product Design &amp; Creative Direction — UsaToday</a></li>
+            <li><a target="_blank" href="https://writing.enchant.co/crafting-your-ux-portfolio-a-weekend-guide-to-getting-it-done-632e13acd3d1">Crafting Your UX Portfolio – Let’s Enchant</a></li>
+                        <li><a target="_blank" href="https://medium.com/this-also/applying-for-a-design-job-ceef0fe4bc8a">Applying for a Design Job – This Also – Medium</a></li>
+            <li><a target="_blank" href="https://medium.com/bridge-collection/5-dos-and-don-ts-for-your-design-portfolio-80292583ace1">5 Dos and Don’ts for Your Design Portfolio – Design Insights from Designer Fund Bridge – Medium</a></li>
+            <li><a target="_blank" href="https://www.invisionapp.com/blog/writing-design-portfolio/">Why writing should be part of your design portfolio - InVision Blog</a></li>
+            <li><a target="_blank" href="https://medium.com/@vanschneider/how-to-launch-your-website-portfolio-within-10-days-4ed8e49f2573">How to launch your website/ portfolio within 10 days. – Medium</a></li>
+            <li><a target="_blank" href="https://sidebar.io/?cat=portfolios">Sidebar</a></li>
+            <li><a target="_blank" href="https://www.creativebloq.com/portfolios/examples-712368">32 brilliant design portfolios to inspire you | Creative Bloq</a></li>
+            <li><a target="_blank" href="https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae">15 Web Developer Portfolios to Inspire You – freeCodeCamp</a></li>
+                        <li><a target="_blank" href="http://tomgalle.online/Phone-Fetish">Phone Fetish</a></li>
+            <li><a target="_blank" href="https://rafaelderolez.be/">Rafael Derolez | Interactive front-end developer</a></li>
+            <li><a target="_blank" href="http://melaniedaveid.com/">Melanie Daveid - UX Design &amp; Art Direction</a></li>
+        </ul></li>
+        
+        <li><p class="title">Programs</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.photopea.com/">Photopea Photo Editor | Edit Photoshop files online</a></li>
+            <li><a target="_blank" href="https://gravit.io/workspace">Gravit</a></li>
+            <li><a target="_blank" href="https://www.figma.com/password/forgot">Figma</a></li>
+        </ul></li>
+        
+        <li><p class="title">Print</p>
+        <ul class="clearfix">
+            <li><a href="https://uxdesign.cc/i-totally-forgot-about-print-style-sheets-f1e6604cfd6">I totally forgot about print style sheets</a></li>
+            <li><a href="https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/#print-qr-codes-for-easy-url-references">QR Codes - Tips and tricks fot print styles</a></li>
+            <li><a href="https://github.com/BafS/Gutenberg">Gutenberg Print Style Sheet Framework</a></li>
+            <li><a href="https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/">Print style sheets in 2018 | Smashign Magazine</a></li>
+        </ul>
+        
+        <li><p class="title">PWA</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://medium.com/samsung-internet-dev/6-myths-of-progressive-web-apps-81e28ca9d2b1">6 myths of Progressive Web Apps – Samsung Internet Developers – Medium</a></li>
+            <li><a target="_blank" href="https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0">Your First Progressive Web App</a></li>
+            <li><a target="_blank" href="https://www.sitepoint.com/progressive-web-apps-a-crash-course/">Progressive Web Apps: A Crash Course — SitePoint</a></li>
+        </ul></li>
+        
+        <li><p class="title">Resolutions/Retina</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://sebastien-gabriel.com/designers-guide-to-dpi/">Designer&#39;s guide to DPI</a></li>
+        </ul></li>
+        
+        <li><p class="title">Responsive</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://sizzy.co/"></a></li>
+            <li><a target="_blank" href="http://mattkersley.com/responsive/">Responsive Design Testing</a></li>
+            <li><a target="_blank" href="http://getbootstrap.com/css/#grid-options"></a></li>
+            <li><a target="_blank" href="https://es.wikipedia.org/wiki/OS_X#Versiones">OS X - Wikipedia, la enciclopedia libre</a></li>
+            <li><a target="_blank" href="https://www.google.com/webmasters/tools/mobile-friendly">Google Mobile Friendly Tools</a></li>
+            <li><a target="_blank" href="about:reader?url=https%3A%2F%2Fwww.sitepoint.com%2Fresponsive-css-patterns-without-media-queries">Responsive CSS Patterns without Media Queries</a></li>
+            <li><a target="_blank" href="https://drafts.csswg.org/mediaqueries-5/">Media Queries Level 5</a></li>
+            <li><a target="_blank" href="https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/">Media Queries 2018</a></li>
+        </ul></li>
+        
+        <li><p class="title">Scroll</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://blog.grayghostvisuals.com/js/detecting-scroll-position/">Detecting Scroll Position | Gray Ghost Visuals Press</a></li>
+            <li><a target="_blank" href="https://codepen.io/MadeByMike/pen/ZOrEmr?editors=1100">CSS only scroll indicator</a></li>
+        </ul></li>
+        
+        <li>
+            <p class="title">Search Engine Optimization · SEO</p>
+            <ul class="clearfix subUL">
+                <li><a target="_blank" href="https://developers.whatwg.org/">developers.whatwg.org</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/es/">developer.mozilla.org</a></li>
+                <li><a target="_blank" href="http://www.oodlestechnologies.com/blogs/SEO-friendly-HTML-code-optimization">SEO friendly HTML code optimization</a></li>
+                
+                <li>
+					<p class="title">Google</p>
+					<ul class="clearfix">
+                <li><a target="_blank" href="https://www.google.com/webmasters/">Google Webmasters</a></li>
+                <li><a target="_blank" href="https://developers.google.com/webmasters/mobile-sites/">Mobile Sites · developers.google.com</a></li>
+                <li><a target="_blank" href="https://developers.google.com/web/fundamentals/principles/">Fundamental Principles · developers.google.com</a></li>
+					</ul>
+                </li>
+                
+                <li>
+					<p class="title">Landing Pages</p>
+					<ul class="clearfix">
+                        <li><a target="_blank" href="https://stripe.com/atlas/guides/landing-page-copy/">Landing Page Copy · Stripe.com</a></li>
+                        <li><a target="_blank" href="https://www.kapwing.com/blog/evolution-of-a-landing-page/">Evolution of a Landing Pate · kapwing.com</a></li>
+                        
+					</ul>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <p class="title">Slider</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="http://kenwheeler.github.io/slick/">Slick Slider</a></li>
+                <li><a target="_blank" href="https://idangero.us/swiper/">Swiper - Most Modern Mobile Touch Slider</a></li>
+                <li><a target="_blank" href="https://pawelgrzybek.github.io/siema/">Siema | Carousel</a></li>
+
+            </ul>
+        </li>
+        <li>
+            <p class="title">SVG</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://jakearchibald.github.io/svgomg/">SVG Optimiser · Jake Archibald</a></li>
+                <li><a target="_blank" href="https://davidwalsh.name/building-animated-svg-banners">Building Animated SVG Banners</a></li>
+                <li><a target="_blank" href="http://callmenick.com/post/svg-vector-effects">SVG Vector Effects - Call Me Nick</a></li>
+                <li><a target="_blank" href="http://sarasoueidan.com/blog/svg-tips-for-designers/">Tips for Creating and Exporting Better SVGs for the Web</a></li>
+                <li><a target="_blank" href="http://webdesign.tutsplus.com/articles/manipulating-svg-icons-with-simple-css--webdesign-15694">Manipulating SVG Icons With Simple CSS</a></li>
+                <li><a target="_blank" href="https://www.sitepoint.com/tips-accessible-svg/">Tips for Creating Accessible SVG</a></li>
+                <li><a target="_blank" href="https://sarasoueidan.com/blog/svg-coordinate-systems/">Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, &lt;code&gt;viewBox&lt;/code&gt;, and &lt;code&gt;preserveAspectRatio&lt;/code&gt;</a></li>
+                <li><a target="_blank" href="https://madebymike.com.au/writing/svg-has-more-potential/">SVG has more potential · MadebyMike</a></li>
+                <li><a target="_blank" href="http://www.usetracy.com/">Tracy — From Paper to Vector</a></li>
+                <li><a target="_blank" href="https://css-tricks.com/accessible-svgs/">Accessible SVGs | CSS-Tricks</a></li>
+                <li><a target="_blank" href="https://eduardoboucas.com/blog/2017/09/25/svg-clip-path-logo-colour.html">Eduardo Bouças / Using SVG clip-path to change a logo&#39;s colour on scroll</a></li>
+                <li><a target="_blank" href="https://www.joshwcomeau.com/posts/dynamic-bezier-curves">Dynamic SVG curves</a></li>
+                <li><a target="_blank" href="https://shkspr.mobi/blog/2018/02/this-svg-always-shows-todays-date/">SVG Dynamic Date Icon</a></li>
+            </ul>
+        </li>
+        <li>
+            <p class="title">Tables</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://css-tricks.com/complete-guide-table-element/">A Complete Guide to the Table Element | CSS-Tricks</a></li>
+            <li><a target="_blank" href="https://css-tricks.com/table-borders-inside/">A Table With Borders Only On The Inside | CSS-Tricks</a></li>
+            <li><a target="_blank" href="http://www.tablesgenerator.com/html_tables">HTML Table generator - TablesGenerator.com</a></li>
+        </ul></li>
+        
+        <li><p class="title">Tarifarios</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://lepasoaundisenador.com/tarifarios/">Tarifarios | Le pasó a un diseñador</a></li>
+            <li><a target="_blank" href="http://tarifario.org/">Tarifario.org</a></li>
+        </ul></li>
+        
+        
+        
+       
+        <li><p class="title">Theory</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.circulardesignguide.com/methods">Circular Thinking - Methods</a></li>
+            <li><a target="_blank" href="https://blog.prototypr.io/design-system-ac88c6740f53#.6kkbo5bto">Setup a design system – Prototyping: From UX to Front End</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">Tooltip</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://mightycrow.github.io/wenk/">Wenk - Lightweight pure CSS tooltip for the greater good</a></li>
+            <li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-tooltips/">Building a fully-accessible help tooltip</a></li>
+            <li><a target="_blank" href="https://webdesignerhut.com/pure-css-tooltips-with-html5-data-attribute/">Pure CSS Tooltips with HTML5 Data Attribute</a></li>
+        </ul>
+        </li>
+        
+        <li>
+            <p class="title">Type</p>
+			<ul class="clearfix">			
+				<li><a target="_blank" href="https://css-tricks.com/dont-just-copy-the-font-face-out-of-google-fonts-urls/">Don't just copy the Font Face out of Google Fonts URLS · CSS Tricks</a></li>
+				<li><a target="_blank" href="https://www.fontsquirrel.com/tools/webfont-generator">Create Your Own @font-face Kits | Font Squirrel</a></li>
+				<li><a target="_blank" href="http://www.cufonfonts.com/en/font/13298/avenir-lt-std">Cufon fonts | Avenir</a></li>
+				<li><a target="_blank" href="https://www.typetester.org/">Typetester – Compare and test Web fonts from Adobe Edge, Google and Typekit web hosting services</a></li>
+				<li><a target="_blank" href="https://sparanoid.com/lab/opentype-features/">The Complete CSS demo for OpenType</a></li>			
+				<li><a target="_blank" href="https://github.com/rikschennink/fitty">GitHub - rikschennink/fitty: Makes text fit perfectly.</a></li>
+				<li><a target="_blank" href="http://www.smashingmagazine.com/2015/10/space-yourself/">Space Yourself – Smashing Magazine</a></li>
+				<li><a target="_blank" href="https://www.cs.tut.fi/~jkorpela/dashes.html">Dashes and hyphens</a></li>
+				<li><a target="_blank" href="http://www.fontreach.com/?mc_cid=b2ece7659c&mc_eid=b57c1053bd">FontReach</a></li>
+				<li><a target="_blank" href="http://www.copypastecharacter.com/all-characters">૱ All characters — CopyPasteCharacter.com</a></li>
+				<li><a target="_blank" href="http://fontsinuse.com/"></a></li>
+				<li><a target="_blank" href="https://css-tricks.com/font-display-masses/">`font-display` for the Masses | CSS-Tricks</a></li>
+				<li><a target="_blank" href="http://www.colorfonts.wtf/">Color fonts! WTF?</a></li>
+				<li><a target="_blank" href="https://github.com/rikschennink/fitty">GitHub - rikschennink/fitty: Makes text fit perfectly.</a></li>
+				<li><a target="_blank" href="https://www.onlinewebfonts.com/">Online Webfonts</a></li>
+				<li><a target="_blank" href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032">8-Point Grid: Vertical Rhythm – Built to Adapt</a></li>
+				<li><a target="_blank" href="https://v-fonts.com/">Variable Fonts</a></li>
+				<li><a target="_blank" href="https://fontdrop.info/">Font Drop, Info</a></li>
+			</ul>
+        </li>
+        
+        <li><p class="title">Type Design</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/Lozenge">Lozenge - Wikipedia, the free encyclopedia</a></li>
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/Macron">Macron - Wikipedia, the free encyclopedia</a></li>
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/Overline">Overline - Wikipedia, the free encyclopedia</a></li>
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/List_of_Unicode_characters">List of Unicode characters - Wikipedia, the free encyclopedia</a></li>
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/Latin_characters_in_Unicode">Latin characters in Unicode - Wikipedia, the free encyclopedia</a></li>
+                <li><a target="_blank" href="http://en.wikipedia.org/wiki/Unicode_typeface">Unicode typeface - Wikipedia, the free encyclopedia</a></li>
+                <li><a target="_blank" href="http://scripts.sil.org/cms/scripts/page.php?&cat_id=FontDesignTools">Design Tools</a></li>
+                <li><a target="_blank" href="https://www.creativereview.co.uk/getting-started-type-design-personal-journey/">Getting Started With Type Design: A Personal Journey - Creative Review</a></li>
+            </ul>
+        </li>
+        
+        <li><p class="title">UX</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://www.chargebee.com/blog/user-onboarding-questions/">User onboarding questions. How to ask better questions</a></li>
+            </ul>
+        </li>
+        
+        <li><p class="title">Vector</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="http://theagsc.com/blog/tutorials/so-whats-the-big-deal-with-horizontal-vertical-bezier-handles-anyway/">So What’s the Big Deal with Horizontal &amp; Vertical Bezier Handles Anyway? – The Australian Graphic Supply Co</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">Viewports</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css">The Unexpected Power of Viewport Units in CSS | Lullabot</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">VPN</p>
+        <ul class="clearfix">
+            <li><a target="_blank" href="https://www.xataka.com/seguridad/que-es-una-conexion-vpn-para-que-sirve-y-que-ventajas-tiene"></a></li>
+            <li><a target="_blank" href="https://openvpn.net/index.php/open-source/downloads.html"></a></li>
+            <li><a target="_blank" href="https://www.uproxy.org/"></a></li>
+            <li><a target="_blank" href="https://blog.mozilla.org/internetcitizen/2017/08/29/do-you-need-a-vpn/">Do you need a VPN? | Mozilla Internet Citizen</a></li>
+        </ul>
+        </li>
+        
+        <li><p class="title">Whois</p>
+            <ul class="clearfix">
+                <li><a target="_blank" href="https://www.whois.com/">Whois</a></li>
+            </ul>
+        </li>
+</ul>
+</body>
