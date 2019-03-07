@@ -2,9 +2,9 @@
    Animation Classes | Etc [classesAnimations.scss]
    ========================================================================== */
 @include afterTablet{
-    .hoverGrow,
-    .hoverGrowMedium,
-    .hoverGrowBig{
+    .hoverGrowS,
+    .hoverGrowM,
+    .hoverGrowL{
         display: $hoverGrowDisplay;
         vertical-align: middle;
         transform: translateZ(0);
@@ -15,27 +15,27 @@
         transition-property: transform;
     }
     
-    .hoverGrow{
+    .hoverGrowS{
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrowScale);
+            transform: scale($hoverGrowScaleS);
         }
     }
     
-    .hoverGrowMedium{
+    .hoverGrowM{
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrowScaleMedium);
+            transform: scale($hoverGrowScaleM);
         }
     }
     
-    .hoverGrowBig{
+    .hoverGrowL{
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrowScaleBig);
+            transform: scale($hoverGrowScaleL);
         }
     }
 }
