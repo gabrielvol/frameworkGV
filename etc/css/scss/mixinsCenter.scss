@@ -3,8 +3,8 @@
    ========================================================================== */
     //Mixin para clase .absoluteCenter
 @mixin centerAbsolute($widthValue, $heightValue, $positionValue: absolute){
-    $widthValueH: #{$widthValue}/2;
-    $heightValueH: #{$heightValue}/2;
+    $widthValueH: #{$widthValue} / 2;
+    $heightValueH: #{$heightValue} / 2;
     position: $positionValue;
     top: 50%;
     left: 50%;
@@ -25,7 +25,7 @@
 }
     //Mixin para clase .centerVertical
 @mixin centerVertical($heightValue, $positionValue: absolute){
-    $heightValueH: #{$heightValue}/2;
+    $heightValueH: #{$heightValue} / 2;
     position: $positionValue;
     top: 50%;
     height: $heightValue;
@@ -33,7 +33,7 @@
 }
     //Mixin para clase .centerHorizontal
 @mixin centerHorizontal($widthValue, $positionValue: absolute){
-    $widthValueH: #{$widthValue}/2;
+    $widthValueH: #{$widthValue} / 2;
     position: $positionValue;
     left: 50%;
     width: $widthValue;
@@ -47,8 +47,8 @@
 }
     //Mixin para centrar popup
 @mixin centerPopup($widthValue, $heightValue, $topValue: 40%){
-    $widthValueH: #{$widthValue}/2;
-    $heightValueH: #{$heightValue}/2;    
+    $widthValueH: #{$widthValue} / 2;
+    $heightValueH: #{$heightValue} / 2;    
     top: $topValue;
     width: $widthValue;
     height: $heightValue;
