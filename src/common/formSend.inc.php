@@ -419,7 +419,7 @@
 //INICIA MENSAJE OK EN POPUP
                 $status_FormName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="closePop pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="mbm '. $PopOKFontFamily_FormName .' green alignCenter">'._("$statusOKGlobalA_FormName").'</h2>'
                         . '<p class="status ok">'._("$statusOKGlobalB_FormName").'</p>'
                         . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
@@ -462,7 +462,7 @@
 //INICIA MENSAJE ERROR EN POPUP
                 $status_FormName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="closePop pAbs hoverGrow indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="closePop pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="mbm '. $PopErrorFontFamily_FormName .' errorColour alignCenter">'._("$statusErrorGlobalA_FormName").'</h2>'
                         . '<p class="status error">'._("$statusErrorGlobalB_FormName").'</p>'
                         . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
