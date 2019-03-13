@@ -135,7 +135,7 @@
             <label for="provincia_FormName">
                 <span class="labelName"><?php echo _('Provincia'); ?></span>
                 <select id="provincia" name="provincia_FormName" class="provincia <?php echo $invalidFieldProvincia_FormName ?>">
-                        <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
+                    <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
                     <option value="CABA"><?php echo _('Ciudad Autónoma de Buenos Aires'); ?></option>
                     <option value="Pcia. de Buenos Aires"><?php echo _('Pcia. de Buenos Aires'); ?></option>
                     <option value="Catamarca"><?php echo _('Catamarca'); ?></option>
@@ -272,30 +272,7 @@
                     <option value="Microsoft Edge">
                 </datalist>
             </label>
-
-
-            <label for="habitacion_FormName">
-                <span class="labelName"><?php echo _('Habitaci&oacute;n'); ?></span>
-                <select id="habitacion" name="habitacion_FormName" class="habitacion" >
-                    <option value="<?php echo $_POST['habitacion_FormName']; ?>" selected><?php echo _('Seleccione una opci&oacute;n'); ?></option>
-                    <option value="a"><?php echo _('a'); ?></option>
-                    <option value="b">b</option>
-                </select>
-            </label>
-
-<!--            <select name="habitaciones[]" size="4" multiple="">
-            <?php
-//                $options = array("a", "b", "c", "d", "e", "f");
-//                foreach ($options as $option) {
-//                    echo '<option value="' . $option . '"';
-//                    if (in_array($option, $habitaciones)) {
-//                        echo " selected";
-//                    }
-//                    echo ">" . ucfirst($option) . "</option>";
-//                }
-            ?>
-            </select>-->
-
+            
             <label for="asunto_FormName">
                 <span class="labelName"><?php echo _('Asunto'); ?></span>
                 <input type="text" name="asunto_FormName" id="asunto_FormName" class="asunto <?php echo $invalidFieldAsunto_FormName ?>" value="<?php echo $_POST['asunto_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusAsunto_FormName ?>>
