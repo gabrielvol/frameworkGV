@@ -136,6 +136,8 @@
                 <span class="labelName"><?php echo _('Provincia'); ?></span>
                 <select id="provincia" name="provincia_FormName" class="provincia <?php echo $invalidFieldProvincia_FormName ?>">
                     <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
+                    
+                    <option value="<?php echo $_POST['provincia']; ?>" selected><?php if(isset($_POST['provincia'])) { echo $_POST['provincia']; } else { echo 'Selecciona tu provincia'; } ?></option>
                     <option value="CABA"><?php echo _('Ciudad Autónoma de Buenos Aires'); ?></option>
                     <option value="Pcia. de Buenos Aires"><?php echo _('Pcia. de Buenos Aires'); ?></option>
                     <option value="Catamarca"><?php echo _('Catamarca'); ?></option>
