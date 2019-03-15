@@ -17,11 +17,7 @@ $navTopper: off;
 //Menu y logo flotados
     $floatedLogoNav: on;
 
-    // Logo
-    $logoWBT: 180px;
-    $logoWAT: 210px;
-    $logoWATL: 250px;
-    
+    @import "logoSizes";    
 
 /* -------------------------------------
     Full height index                 */
