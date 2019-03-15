@@ -161,36 +161,25 @@ nav{
                 }  
                     
                 a{
-                    font-family: $navFontFamilySubBT;
+                    font-family: $navSubFontFamilyBT;
                     color: $navSubFontColourBT;
                 }
 
                 .current{
+                    background-image: url('/nuevo/img/nav_arrowLsub.svg');
                     background-color: $bgNavSubCurrentItemBT;
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
 
-                    a{
+                    a, .topLevelItem{
                         color: $navSubCurrentFontColourBT;
-                    }
+                        font-family: $navSubCurrentFontFamilyBT;
+                    } 
                 }
                 
                 @if $navHasSubSub == "on"{
                     .current .current{
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
-                        background-repeat: no-repeat;
-                        background-position: right 10px center;
-
                         a, .topLevelItem{
-                            color: $navCurrentFontColourBT;
-                        } 
-                    }
-                } @else {
-                    .current{
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
-                        background-repeat: no-repeat;
-                        background-position: right 10px center;
-
-                        a, .topLevelItem{
-                            color: $navCurrentFontColourBT;
                         } 
                     }
                 }
@@ -258,7 +247,7 @@ nav{
                     
                     a, .topLevelItem{
                         color: $navSubFontColourAT;
-                        font-family: $navFontFamilySubAT;
+                        font-family: $navSubFontFamilyAT;
                         cursor: pointer;
                     }
                     
@@ -274,7 +263,7 @@ nav{
                 > .current{
                     a, .topLevelItem{
                         color: $navSubCurrentFontColourAT;
-                        font-family: $navCurrentFontFamilySubAT;
+                        font-family: $navSubCurrentFontFamilyAT;
                         cursor: default;
                     }
 
@@ -356,13 +345,13 @@ nav{
             .subMenu{                
                 > li{                
                     a, .topLevelItem{
-                        font-family: $navFontFamilySubATL;
+                        font-family: $navSubFontFamilyATL;
                     }                    
                 }
                 
                 > .current{
                     a, .topLevelItem{
-                        font-family: $navCurrentFontFamilySubATL;
+                        font-family: $navSubCurrentFontFamilyATL;
                     }                    
                 }
             }

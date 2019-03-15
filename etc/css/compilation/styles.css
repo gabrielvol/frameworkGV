@@ -339,7 +339,7 @@ figure {
 button,
 input[type="button"],
 html input[type="button"] {
-  border: none !important; }
+  border: none; }
 
 ::-moz-selection {
   background-color: #c6c6c6;
@@ -789,9 +789,9 @@ a.mainBgColour:hover, a.mainBgColour:focus {
    Animation Classes | Etc [classesAnimations.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .hoverGrow,
-  .hoverGrowMedium,
-  .hoverGrowBig {
+  .hoverGrowS,
+  .hoverGrowM,
+  .hoverGrowL {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -800,11 +800,11 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform; }
-  .hoverGrow:hover, .hoverGrow:focus, .hoverGrow:active {
+  .hoverGrowS:hover, .hoverGrowS:focus, .hoverGrowS:active {
     transform: scale(1.05); }
-  .hoverGrowMedium:hover, .hoverGrowMedium:focus, .hoverGrowMedium:active {
+  .hoverGrowM:hover, .hoverGrowM:focus, .hoverGrowM:active {
     transform: scale(1.1); }
-  .hoverGrowBig:hover, .hoverGrowBig:focus, .hoverGrowBig:active {
+  .hoverGrowL:hover, .hoverGrowL:focus, .hoverGrowL:active {
     transform: scale(1.15); } }
 
 /* =============================================================================
