@@ -2,40 +2,40 @@
    Z Index Variables | Custom [zindex.scss]
    ========================================================================== */
     //Negative
-$zIndexNegative: -1;
-
-    // Modal
-$zIndexModalBG: 9000;
-$zIndexPopup: 9100;
-$zIndexButtonOver: 9200;
-
-    // Nav
-$zIndexNav: 1000;
-$zIndexNavOpen: 8900;
-$zIndexNavClose: $zIndexButtonOver;
-$zIndexNavUlList: 190;
-$zIndexNavUlDrawer: $zIndexPopup;
-$zIndexNavSubMenu: $zIndexButtonOver;
-    
-    // Header
-$zIndexHeader: $zIndexNav;
-$zIndexHeaderTopper: $zIndexNav;
-$zIndexLogoH: 100;
-$zIndexLogoHClicked: $zIndexButtonOver;  
-$zIndexLogoHTopper: $zIndexButtonOver;  
-
-    // Lang
-$zIndexLang: 9300;
-
-    // Social
-$zIndexSocial: 1100;
-$zIndexSocialClicked: $zIndexButtonOver;
-
-    // Slick Slider
-$zIndexSlickMain: 90;
-$zIndexSlickNextPrevDots: 100;
-
-    // Lightbox
-$zIndexLightbox: 10000;
-$zIndexLightboxOverlay: 9999;
-$zIndexLBnav: 10;
+$zIndexNegative:           -1;
+        
+    // Modal        
+$zIndexModalBG:            9000;
+$zIndexPopup:              9100;
+$zIndexButtonOver:         9200;
+        
+    // Nav        
+$zIndexNav:                1000;
+$zIndexNavOpen:            8900;
+$zIndexNavClose:           $zIndexButtonOver;
+$zIndexNavUlList:          190;
+$zIndexNavUlDrawer:        $zIndexPopup;
+$zIndexNavSubMenu:         $zIndexButtonOver;
+          
+    // Header      
+$zIndexHeader:             $zIndexNav;
+$zIndexHeaderTopper:       $zIndexNav;
+$zIndexLogoH:              100;
+$zIndexLogoHClicked:       $zIndexButtonOver;  
+$zIndexLogoHTopper:        $zIndexButtonOver;  
+       
+    // Lang       
+$zIndexLang:               9300;
+     
+    // Social     
+$zIndexSocial:             1100;
+$zIndexSocialClicked:      $zIndexButtonOver;
+     
+    // Slick Slider     
+$zIndexSlickMain:          90;
+$zIndexSlickNextPrevDots:  100;
+ 
+    // Lightbox 
+$zIndexLightbox:           10000;
+$zIndexLightboxOverlay:    9999;
+$zIndexLBnav:              10;
