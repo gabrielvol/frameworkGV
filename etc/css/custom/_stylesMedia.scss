@@ -5,6 +5,7 @@
 .googleMap{
     @include borderRadius(6px);
     @include borderStyle($bcGreyL);
+    box-sizing: border-box;
     overflow: hidden;
 
     iframe{
@@ -15,17 +16,17 @@
 
     @include mobileOnly{
         width: 300px;
-        height: 168px;
+        height: 160px;
     }
 
     @include afterMobile600{
         width: 500px;
-        height: 281px;
+        height: 280px;
     }
     
     @include afterTablet{
         width: 600px;
-        height: 337px;
+        height: 330px;
     }
 }
 
