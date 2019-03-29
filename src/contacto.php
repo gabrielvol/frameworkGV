@@ -5,7 +5,10 @@
     $hasMandatoryMsg = 1;
     
     $title = "Contacto | PáginaSinTítulo";
-    //$titleGB = "Contact | UntitledPage";
+    //$titleGB = "Contact | UntitledPage";   
+    
+    $mdesc = "";
+    //$mdescGB = "";
     
 //Open Graph Start
              // Max 35 char
