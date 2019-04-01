@@ -38,14 +38,14 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
     <div id="main" class="int contacto" role="main">
         <div class="mobileForm tabletForm">
-        <?php // include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php'); ?>
         <form method="post">
             <?php
+                include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
                 echo $status;
 
                 if($hasMandatoryMsg == 1) {
                     echo '<div class="mandatoryMsg '.$mandatoryMsgClasses.'">'.$mandatoryMsg.'</div>';
-                }
+                }                
             ?>
 
             <label for="nombre_FormName">
