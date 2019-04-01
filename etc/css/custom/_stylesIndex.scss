@@ -4,21 +4,23 @@
 
 /* -------------------------------------
     Full height index                 */
-.index{    
-    @include mobileOnly{
-        height: calc(100vh - #{$footerHBT} - #{$headerHMO});
-    }
-    
-    @include afterMobileLandscape{
-        height: calc(100vh - #{$footerHBT} - #{$headerHAML});
-    }
-    
-    @include afterTablet{
-        height: calc(100vh - #{$footerHAT} - #{$headerHAT});
-    }
+.index{  
+    @if $fullHeightIndex == "on"{  
+        @include mobileOnly{
+            height: calc(100vh - #{$footerHBT} - #{$headerHMO});
+        }
 
-    @include afterTabletLandscape{
-        height: calc(100vh - #{$footerHAT} - #{$headerHATL});
+        @include afterMobileLandscape{
+            height: calc(100vh - #{$footerHBT} - #{$headerHAML});
+        }
+
+        @include afterTablet{
+            height: calc(100vh - #{$footerHAT} - #{$headerHAT});
+        }
+
+        @include afterTabletLandscape{
+            height: calc(100vh - #{$footerHAT} - #{$headerHATL});
+        }
     }
 }
 /*  Full height index

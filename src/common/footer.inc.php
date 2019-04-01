@@ -25,7 +25,7 @@
     
     <div class="footerLegal">
         <ul class="horizontal clearfix containerAT">
-            <li class="copy">&copy; 2018 Company</li>
+            <li class="copy">&copy; <?php echo $dateThisYear; ?> Company</li>
             <li class="tos"><a href="/legal/" class="displayBlock"><?php echo _("Privacidad y Condiciones"); ?></a></li>
         </ul>
     </div> 
