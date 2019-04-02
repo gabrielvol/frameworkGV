@@ -10,10 +10,6 @@
         &, a{}
         
         &, a, img{}
-            
-        a, img{
-            width: 100%;
-        }
     }
     
     @include mobileOnly{
@@ -31,12 +27,33 @@
 
     @include beforeTablet{
         box-sizing: border-box;
-        padding-bottom: 15px;
+        height: $headerHBT;
+        padding-top: $headerPaddingTopBT;
+        padding-bottom: $headerPaddingBottomBT;
+        
+        @if $headerFixed == "on" and $navDrawer == "off"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        
+            &.topperShadow{
+                box-shadow: 0 0 7px $black;
+            }
+        }
         
         .logoH{
-            width: $logoWBT;
+            height: $logoHBT;
             margin-right: auto;
-            margin-left: auto;
+            margin-left: auto; 
+            
+            a{
+                width: 200px;
+            } 
+            
+            a, img{ 
+                height: 100%;
+            }
             
             @if $navDrawer == "on"{
                 &.clicked{
@@ -68,7 +85,11 @@
         }
     }
     
-    @include afterTablet{
+    @include afterTablet{         
+        a, img{
+            width: 100%;
+        }
+        
         @if $headerFixed == "on"{
             position: fixed;
             top: 0;

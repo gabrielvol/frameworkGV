@@ -5,12 +5,6 @@
     $navBorderRadius: 4px;
 
     @include beforeTablet{
-        @include posTR(10px, 10px);
- 
-        .hamb{
-            @include posTR(0, 0);
-        }
-
         .navOpen{
             @include borderRadius($navBorderRadius); 
             width: 90px;
@@ -23,16 +17,9 @@
             font-size: 1rem;
             line-height: 45px;
         }
-            
-        @if $navDrawer == "on"{
-            .navClose{
-                @include squareSize(45px);
-                background-size: 20px;
-                border: 1px solid $bcNavClose!important;
-            }
-        }
         
         @import "stylesNavDrawer";
+        @import "stylesNavAccordion";
         @import "stylesNavList";
     }    
     

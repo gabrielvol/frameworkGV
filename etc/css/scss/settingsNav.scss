@@ -41,153 +41,24 @@ nav{
             @include transition(1s);   
             box-sizing: border-box;
         }        
-            
-        @if $navDrawer == "on"{
-            .navOpen{
-                z-index: $zIndexNavOpen;  
-                opacity: 1;
-                background-image: url('/nuevo/img/nav_hamb.svg');
-                background-repeat: no-repeat;
-                color: $hamburgerFontColour;
-                font-family: $hamburgerFontFamily;
-                
-                &.clicked{
-                    opacity: 0.5;
-                    color: $hamburgerFontColourClicked;
-                } 
-            }
         
-            .navClose{
-                @include borderRadius(50%);
-                z-index: $zIndexNavClose;  
-                display: none;            
-                background-color: $bgWhite;
-                background-image: url('/nuevo/img/nav_close.svg');
-                background-repeat: no-repeat;
-                background-position: center center; 
-                
-                &.clicked{
-                    display: block;
-                } 
-            }
-            
-            ul{
-                z-index: $zIndexNavUlDrawer;
-                
-                &, .subMenu{
-                    @include transition(0.5s); 
-                    top: 0;
-                    bottom: 0;
-                }                
-            }
-
-            > ul{
-                box-sizing: border-box;
-                position: fixed;
-                left: calc(-1 * #{$navDrawerWidth});
-                width: calc(#{$navDrawerWidth} - 5px);
-                max-width: $navDrawerMaxWidth;
-                background-color: $bgNavBT;
-                padding-top: calc(#{$logoHClickedFH} + 5px);
-                padding-right: 5px;
-                padding-left: 5px;
-                padding-bottom: 30px;
-                overflow: scroll;
-
-                > li{
-                    background-color: $bgNavItemBT;           
-                }
-                
-                li{
-                    float: $none;
-
-                    a, .topLevelItem{
-                        color: $navFontColourBT;
-                        font-family: $navFontFamilyBT;
-                    }
-                    
-                    .topLevelItem{
-                        background-repeat: no-repeat;
-                        background-position: 10px center;
-
-                        &.open{
-                            background-image: url('/nuevo/img/nav_arrowD.svg');
-                        }
-                    }   
-                    
-                    & + li{
-                        @include borderStyleT($bcNavItemBT);
-                    }  
-                }
-                    
-                > .current{
-                    background-color: $bgNavCurrentItemBT; 
-                    background-image: url('/nuevo/img/nav_arrowL.svg');
-                    background-repeat: no-repeat;
-                    background-position: right 10px center;
-
-                    > a, > .topLevelItem{
-                        color: $navCurrentFontColourBT;
-                        font-family: $navCurrentFontFamilyBT;
-                    }
-                } 
-                
-                &, .subMenu{
-                    top: 0;
-                    bottom: 0;
-                }    
-                
-                &.open{
-                    left: 0;
-                }
-        
-                & + .mainMenu{
-                    margin-top: 0;
-                }
-            }
+        .navOpen{
+            z-index: $zIndexNavOpen;  
+            opacity: 1;
+            background-image: url('/nuevo/img/nav_hamb.svg');
+            background-repeat: no-repeat;
+            color: $hamburgerFontColour;
+            font-family: $hamburgerFontFamily;
         }
         
-        @if $navHasSub == "on"{
-            .subMenu{
-                position: relative;
-                top: 0;
-                right: $navDrawerWidth;
-                width: calc(100% + 5px);
-                max-width: $navDrawerMaxWidth;
-                background-color: $bgNavSubBT;
-                
-                li{
-                    background-color: $bgNavSubItemBT;
-                }  
-                    
-                a{
-                    font-family: $navSubFontFamilyBT;
-                    color: $navSubFontColourBT;
-                }
-
-                .current{
-                    background-image: url('/nuevo/img/nav_arrowLsub.svg');
-                    background-color: $bgNavSubCurrentItemBT;
-                    background-repeat: no-repeat;
-                    background-position: right 10px center;
-
-                    a, .topLevelItem{
-                        color: $navSubCurrentFontColourBT;
-                        font-family: $navSubCurrentFontFamilyBT;
-                    } 
-                }
-                
-                @if $navHasSubSub == "on"{
-                    .current .current{
-                        a, .topLevelItem{
-                        } 
-                    }
-                }
-                
-                &.open{
-                    right: 5px;
-                }
-            }
+        .navClose{
+            @include borderRadius(50%);
+            z-index: $zIndexNavClose;  
+            display: none;            
+            background-color: $bgWhite;
+            background-image: url('/nuevo/img/nav_close.svg');
+            background-repeat: no-repeat;
+            background-position: center center; 
         }
     }
     

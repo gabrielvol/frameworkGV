@@ -42,6 +42,12 @@
    Main Gobal Styles | Custom
    ========================================================================== */
 #main{
+    @include beforeTablet{
+        @if $headerFixed == "on" and $navDrawer == "off"{
+            padding-top: $headerHBT;
+        }
+    }
+    
     @include afterTablet{
         @if $headerFixed == "on"{
             padding-top: $headerHAT;

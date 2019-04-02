@@ -1,0 +1,9 @@
+/* =============================================================================
+   Nav Accordion Styles | Custom [stylesNavAccordion.scss]
+   ========================================================================== */
+@if $navAccordion == "on"{
+    .navMain{
+        @include beforeTablet{
+        }
+    }
+}

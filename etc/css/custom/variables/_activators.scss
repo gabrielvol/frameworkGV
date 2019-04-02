@@ -5,19 +5,13 @@
 /* =============================================================================
    Header
    ========================================================================== */
-$navTopper: off;
-    
-//Header Fixed
-    $headerFixed: on;
-    
-    // Header
-    $headerHAT: 90px;
-    $headerHATL: 120px;
-
-//Menu y logo flotados
+//Menu y logo 
     $floatedLogoNav: on;
-
-    @import "logoSizes";    
+    @import "logoSizes"; 
+    
+//Header 
+    $headerFixed: on;
+    @import "headerHeight";    
 
 /* -------------------------------------
     Full height index                 */
@@ -40,7 +34,10 @@ $navTopper: off;
 /* =============================================================================
    Nav
    ========================================================================== */
+$navTopper: off;
+
 $navDrawer: on;
+$navAccordion: off;
 $navList: off;
 
 $navHasSub: off;

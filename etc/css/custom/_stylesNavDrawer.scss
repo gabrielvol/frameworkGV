@@ -2,6 +2,18 @@
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
 @if $navDrawer == "on"{
+    @include posTR(10px, 10px);
+
+    .hamb{
+        @include posTR(0, 0);
+    }
+    
+    .navClose{
+        @include squareSize(45px);
+        background-size: 20px;
+        border: 1px solid $bcNavClose!important;
+    }
+    
     > ul{
         @include borderStyleR($bcNavBT);
         

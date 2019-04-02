@@ -1,0 +1,9 @@
+/* =============================================================================
+   Header Height Variables | Custom [headerHeight.scss]
+   ========================================================================== */
+$headerPaddingTopBT: 20px;
+$headerPaddingBottomBT: 15px;
+$headerHBT: calc(#{$headerPaddingTopBT} + #{$headerPaddingBottomBT} + #{$logoHBT});
+
+$headerHAT: 90px;
+$headerHATL: 120px;

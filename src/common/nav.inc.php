@@ -3,10 +3,12 @@
     <button type="button" class="hamb navClose pAbs indentedText"><?php echo _("Cerrar"); ?></button>
     <ul class="mainMenu displayNoneBT unstyled clearfix horizontalCenterAT">
         <?php include('nav.list.inc.php'); ?>
-    </ul>
+    </ul>   
     
-    <ul class="mainMenu displayNoneAT unstyled clearfix">
-        <?php            
+    <?php
+        if($navDrawer == 1){
+            echo '<ul class="mainMenu displayNoneAT unstyled clearfix">';
+
             if ($seccionConSub == 1) {
                 echo '<li class="backMenu pRel hasSub hideAT">
                     <p id="backMenuNavItem" class="topLevelItem" aria-haspopup="true" aria-owns="backMenuSubMenu" aria-controls="backMenuSubMenu" role="button" aria-pressed="false">'. _("Menú principal").'</p>
@@ -15,8 +17,10 @@
                     echo '</ul></li>';
             } else {
                 include('nav.list.inc.php');
-            }            
-        ?>
-    </ul>
-    <div class="modalBG modalNav">&nbsp;</div>
+            }    
+            
+            echo '</ul>
+            <div class="modalBG modalNav">&nbsp;</div>';
+        }
+    ?>
 </nav>
