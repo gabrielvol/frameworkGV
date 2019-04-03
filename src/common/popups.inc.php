@@ -5,6 +5,7 @@
 
     </div>
 </div>
+<div class="modalBG displayNone"></div>
 
 <div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="alertOK">
     <div role="document" tabindex="0">
