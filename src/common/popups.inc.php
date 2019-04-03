@@ -1,6 +1,6 @@
 <div class="modal popup displayNone">
-    <button type="button" class="closePop">Cerrar</button>
-    <button type="button" class="closePop"><?php echo _("Cerrar"); ?></button>
+    <button type="button" class="closePop pAbs indentedText">Cerrar</button>
+    <button type="button" class="closePop pAbs indentedText"><?php echo _("Cerrar"); ?></button>
     <div class="modalWrap">
 
     </div>

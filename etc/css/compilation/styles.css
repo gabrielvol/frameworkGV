@@ -1576,7 +1576,7 @@ article, article::before, article::after, details, details::before, details::aft
 .popup {
   z-index: 9100;
   left: 50%; }
-  .popup .closePopup {
+  .popup .closePop {
     z-index: 9200; }
 
 /* =============================================================================

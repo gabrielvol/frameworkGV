@@ -2,6 +2,9 @@
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
 .popup{
+    position: fixed;
+    top: 80px;
+    
     .closePop{
         $closePopSize: 33px;
 
@@ -32,7 +35,6 @@
         */      
 
         @include borderRadius(6px); 
-        position: fixed;
         top: 20%;
         left: 50%;
         background-color: $bgStatusOKpopUp;          
@@ -77,27 +79,45 @@
             }            
         }
         
-        .closePop{           
+        .closePop{
             @include posTR(10px, 10px);
         }
+    }
         
-        @include mobileOnly{
+    @include mobileOnly{
+        &.statusDiv{
             $popupStatusDivW: 300px;
             width: $popupStatusDivW;
             margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);            
         }
-        
-        @include afterMobileLandscape{
+    }
+
+    @include afterMobileLandscape{
+        &.statusDiv{
             $popupStatusDivW: 60%;
             width: $popupStatusDivW;
-            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);            
+            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);       
+        }
+    }
+
+    @include beforeMobile600{
+        .closePop{
+            top: -45px;
+            right: 0;
         }
         
-        @include beforeMobile600{
-            height: 220px;            
+        &.statusDiv{
+            height: 220px;      
         }
+    }
+
+    @include afterMobile600{
+        .closePop{
+            top: -35px;
+            right: -35px;
+        }    
         
-        @include afterMobile600{
+        &.statusDiv{
             $popupStatusDivW: 550px;
             width: $popupStatusDivW;
             height: 200px;
@@ -108,7 +128,7 @@
                 padding: 20px;
             }
 
-            .closePop{           
+            .closePop{
                 @include posTR(10px, 10px);
             }             
         }
