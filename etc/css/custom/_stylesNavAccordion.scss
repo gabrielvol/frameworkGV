@@ -1,9 +1,48 @@
 /* =============================================================================
    Nav Accordion Styles | Custom [stylesNavAccordion.scss]
    ========================================================================== */
-@if $navAccordion == "on"{
+@if $navAcc == "on"{
     .navMain{
-        @include beforeTablet{
+        @include beforeTablet{ 
+            .hamb{
+                margin-top: calc(-1 * calc(#{$navAccHambHeight} / 2));
+            }
+            
+            .navOpen{
+                @include borderRadius($navBorderRadius); 
+                width: 90px;
+                height: $navAccHambHeight;
+                background-color: $bgNavHamburger;
+                background-position: 10px center;
+                background-size: 15px;
+                border: 1px solid $bcNavOpen!important;
+                padding: 0 10px 0 30px;
+                font-size: 1rem;
+                line-height: calc(#{$navAccHambHeight} + 5px);
+            }
+    
+            .navClose{
+                @include squareSize($navAccHambHeight);
+                background-size: 15px;
+                border: 1px solid $bcNavClose!important;
+            }
+                
+            li{
+                padding-left: 15px;
+            }
+            
+            ul{
+                @include borderStyleT($bcGreyXL);
+            }
+                
+            li{
+                padding-left: 15px;
+                
+                a,
+                .topLevelItem{
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }

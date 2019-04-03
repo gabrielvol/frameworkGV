@@ -2,22 +2,7 @@
    Nav Styles | Custom [stylesNav.scss]
    ========================================================================== */
 .navMain{
-    $navBorderRadius: 4px;
-
-    @include beforeTablet{
-        .navOpen{
-            @include borderRadius($navBorderRadius); 
-            width: 90px;
-            height: 40px;
-            background-color: $bgNavHamburger;
-            background-position: 10px center;
-            background-size: 15px;
-            border: 1px solid $bcNavOpen!important;
-            padding: 0 10px 0 30px;
-            font-size: 1rem;
-            line-height: 45px;
-        }
-        
+    @include beforeTablet{        
         @import "stylesNavDrawer";
         @import "stylesNavAccordion";
         @import "stylesNavList";

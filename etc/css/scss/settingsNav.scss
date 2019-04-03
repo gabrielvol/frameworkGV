@@ -60,6 +60,46 @@ nav{
             background-repeat: no-repeat;
             background-position: center center; 
         }
+        
+        > ul{
+            > li{
+                background-color: $bgNavItemBT;           
+            }
+
+            li{
+                float: $none;
+
+                a, .topLevelItem{
+                    color: $navFontColourBT;
+                    font-family: $navFontFamilyBT;
+                }
+
+                .topLevelItem{
+                    background-repeat: no-repeat;
+                    background-position: 10px center;
+
+                    &.open{
+                        background-image: url('/nuevo/img/nav_arrowD.svg');
+                    }
+                }   
+
+                & + li{
+                    @include borderStyleT($bcNavItemBT);
+                }  
+
+                > .current{
+                    background-color: $bgNavCurrentItemBT; 
+                    background-image: url('/nuevo/img/nav_arrowL.svg');
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+
+                    > a, > .topLevelItem{
+                        color: $navCurrentFontColourBT;
+                        font-family: $navCurrentFontFamilyBT;
+                    }
+                }
+            }
+        }
     }
     
     @include afterTablet{

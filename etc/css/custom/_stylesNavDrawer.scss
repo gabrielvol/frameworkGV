@@ -8,6 +8,19 @@
         @include posTR(0, 0);
     }
     
+    .navOpen{
+        @include borderRadius($navBorderRadius); 
+        width: 90px;
+        height: $navDrawerHambHeight;
+        background-color: $bgNavHamburger;
+        background-position: 10px center;
+        background-size: 15px;
+        border: 1px solid $bcNavOpen!important;
+        padding: 0 10px 0 30px;
+        font-size: 1rem;
+        line-height: calc(#{$navDrawerHambHeight} + 5px);
+    }
+    
     .navClose{
         @include squareSize(45px);
         background-size: 20px;
