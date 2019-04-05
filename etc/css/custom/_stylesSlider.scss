@@ -2,15 +2,20 @@
    Slick Slider Styles | Custom [stylesSlider.scss]
    ========================================================================== */
 .slick{
-    &, .slick-slide{
+    &,
+    .slick-slide{
         z-index: $zIndexSlickMain!important; 
     }
     
-    &, div{
+    &,
+    div{
         @include clearfix;
     }
-
-    &, div, li{
+  
+    &,
+    .slick-list,
+    .slick-track,
+    li{
         height: 300px;
     }
 }
