@@ -201,12 +201,15 @@
     
     @include afterDesktop{
         li{
-            a, .topLevelItem{
-                
+            a, .topLevelItem{                
                 &:focus, &:hover{
                     @if $navTextItemWhite == "on"{
                         text-shadow: $whiteTextHoverShadow;
                     }
+                    
+                    @if $navTextItemBlack == "on"{
+                        color: $greyXD;
+                    } 
                 }
             }            
         }
