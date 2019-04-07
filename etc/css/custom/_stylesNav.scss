@@ -2,7 +2,7 @@
    Nav Styles | Custom [stylesNav.scss]
    ========================================================================== */
 .navMain{
-    @include beforeTablet{        
+    @include beforeTablet{
         @import "stylesNavDrawer";
         @import "stylesNavAccordion";
         @import "stylesNavList";
@@ -10,9 +10,8 @@
     
     @include afterTablet{
         @if $floatedLogoNav == "on"{
-            width: calc(100% - #{$logoWAT});
             float: left;
-            margin-top: 30px;
+            width: calc(100% - #{$logoWAT});
         }
         
         .mainMenu{
@@ -63,7 +62,7 @@
                     */
                 }
 
-                li{  
+                li{
                     display: block;
                     
                     a{}
@@ -74,7 +73,7 @@
                         @include borderStyleT($bcNavSubItemAT);
                     }
                     
-                    &:last-child{          
+                    &:last-child{
                         &, a{
                             @include borderRadiusB($borderRadiusB);
                         }
@@ -145,7 +144,7 @@
                                 @include borderStyleT($bcNavSubItemAT);
                             }
                     
-                            &:last-child{          
+                            &:last-child{
                                 &, a{
                                     @include borderRadiusB($subMenuBorderRadiusB);
                                 }
@@ -189,7 +188,7 @@
                 
                 @if $navHasSub == "on"{
                     .subMenu{
-                        &:focus{          
+                        &:focus{
                             .subMenu{
                                 display: $block;
                             }
@@ -224,9 +223,9 @@
         
         @if $navTopper == "on"{
             &.topper{
-                @if $navHasSub == "on"{           
+                @if $navHasSub == "on"{
                     .hasSub{
-                        &:hover{          
+                        &:hover{
                             .subMenu{
                                 display: $block;
                             }
