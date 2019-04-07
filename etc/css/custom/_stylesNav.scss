@@ -163,12 +163,33 @@
             width: calc(100% - #{$logoWATL});
         }
         
-        .mainMenu{}
+        .mainMenu{
+            > li{
+                &:focus, &:hover{
+                    @if $navTextItemWhite == "on"{
+                        > a,
+                        > .topLevelItem{
+                            text-shadow: $whiteTextHoverShadow;
+                        }
+                    }
+
+                    @if $navTextItemBlack == "on"{
+                        > a,
+                        > .topLevelItem{
+                            color: $greyXD;
+                        } 
+                    }
+                }        
+            }
+        }
         
         li{
-            &, a, .topLevelItem{}
+            &,
+            a,
+            .topLevelItem{}
             
-            a, .topLevelItem{
+            a,
+            .topLevelItem{
                 font-size: 1rem;
                 padding-right: 10px;
                 padding-left: 10px;
@@ -200,22 +221,9 @@
     }
     
     @include afterDesktop{
-        li{
-            a, .topLevelItem{                
-                &:focus, &:hover{
-                    @if $navTextItemWhite == "on"{
-                        text-shadow: $whiteTextHoverShadow;
-                    }
-                    
-                    @if $navTextItemBlack == "on"{
-                        color: $greyXD;
-                    } 
-                }
-            }            
-        }
-            
         .current{
-            a, .topLevelItem{
+            a,
+            .topLevelItem{
                 &:focus, &:hover{
                     @if $navTextItemWhite == "on"{
                         text-shadow: 0 0 0 transparent;
