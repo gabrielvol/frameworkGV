@@ -20,10 +20,12 @@ nav{
     z-index: $zIndexNav;
     
     li{
-        a, .topLevelItem{}
+        a,
+        .topLevelItem{}
         
         &.current{
-            a, .topLevelItem{}            
+            a,
+            .topLevelItem{}            
         }     
     }
     
@@ -69,7 +71,8 @@ nav{
             li{
                 float: $none;
 
-                a, .topLevelItem{
+                a,
+                .topLevelItem{
                     color: $navFontColourBT;
                     font-family: $navFontFamilyBT;
                 }
@@ -93,7 +96,8 @@ nav{
                     background-repeat: no-repeat;
                     background-position: right 10px center;
 
-                    > a, > .topLevelItem{
+                    > a,
+                    > .topLevelItem{
                         color: $navCurrentFontColourBT;
                         font-family: $navCurrentFontFamilyBT;
                     }
@@ -113,7 +117,8 @@ nav{
             > li{
                 background-color: $bgNavItemAT;
 
-                a, .topLevelItem{
+                a,
+                .topLevelItem{
                     color: $navFontColourAT;
                     font-family: $navFontFamilyAT;
                 }    
@@ -130,7 +135,8 @@ nav{
             > .current{
                 background-color: $bgNavCurrentItemAT;
 
-                a, .topLevelItem{
+                a,
+                .topLevelItem{
                     color: $navCurrentFontColourAT;
                     font-family: $navCurrentFontFamilyAT;
                 }  
@@ -138,7 +144,8 @@ nav{
                 &:focus, &:hover{
                     background-color: $bgNavCurrentItemHover;
 
-                    > a, .topLevelItem{
+                    > a,
+                    .topLevelItem{
                         color: $navCurrentFontColourHover;
                     }  
                 }         
@@ -154,7 +161,8 @@ nav{
                     @include transition(0.7s);
                     background-color: $bgNavSubItemAT;
                     
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         color: $navSubFontColourAT;
                         font-family: $navSubFontFamilyAT;
                         cursor: pointer;
@@ -170,7 +178,8 @@ nav{
                 }
                     
                 > .current{
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         color: $navSubCurrentFontColourAT;
                         font-family: $navSubCurrentFontFamilyAT;
                         cursor: default;
@@ -200,12 +209,14 @@ nav{
 
                 .mainMenu{
                     > li{
-                        > a, > .topLevelItem{
+                        > a,
+                        > .topLevelItem{
                             color: $navFontColourTopper;
                         }
 
                         &:focus, &:hover{
-                            > a, .topLevelItem{
+                            > a,
+                            .topLevelItem{
                                 color: $navFontColourTopperHover;
                             }  
                         }
@@ -213,7 +224,8 @@ nav{
                         
                     > .current{
                         &, &:focus, &:hover{
-                            > a, .topLevelItem{
+                            > a,
+                            .topLevelItem{
                                 color: $navCurrentFontColourTopper;
                             }  
                         }
@@ -238,13 +250,15 @@ nav{
     @include afterTabletLandscape{
         > ul{
             > li{
-                a, .topLevelItem{
+                a,
+                .topLevelItem{
                     font-family: $navFontFamilyATL;
                 }                
             }
             
             .current{
-                a, .topLevelItem{
+                a,
+                .topLevelItem{
                     font-family: $navCurrentFontFamilyATL;
                 }
             }
@@ -253,13 +267,15 @@ nav{
         @if $navHasSub == "on"{
             .subMenu{                
                 > li{                
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         font-family: $navSubFontFamilyATL;
                     }                    
                 }
                 
                 > .current{
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         font-family: $navSubCurrentFontFamilyATL;
                     }                    
                 }
@@ -281,7 +297,8 @@ nav{
                 &.topper{
                     .mainMenu{
                         > li{
-                            > a, > .topLevelItem{                
+                            > a,
+                            > .topLevelItem{                
                                 &.open{
                                     color: $navFontColourTopperHover;
                                 }
@@ -298,7 +315,9 @@ nav{
             .hasSub{
                 &:focus, &:hover{
                     ul{
-                        &, &.open, &.openSubTTLO{
+                        &,
+                        &.open,
+                        &.openSubTTLO{
                             display: $block;
                         }
                     }
