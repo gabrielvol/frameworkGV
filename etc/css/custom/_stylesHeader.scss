@@ -17,7 +17,7 @@
         }
     }
     
-    @include afterMobileLandscape{        
+    @include afterMobileLandscape{
         .logoH{}
     } 
     
@@ -51,7 +51,7 @@
                 width: 200px;
             } 
             
-            a, img{ 
+            a, img{
                 height: 100%;
             }
             
@@ -85,9 +85,11 @@
         }
     }
     
-    @include afterTablet{         
-        a, img{
-            width: 100%;
+    @include afterTablet{
+        .logoH{
+            a, img{
+                width: 100%;
+            }
         }
         
         @if $headerFixed == "on"{
@@ -131,7 +133,7 @@
         }
     }
     
-    @include afterTabletLandscape{       
+    @include afterTabletLandscape{
         @if $headerFixed == "on"{
             height: $headerHATL;
         }
