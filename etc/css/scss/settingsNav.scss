@@ -103,10 +103,8 @@ nav{
     }
     
     @include afterTablet{
-        @if $navDrawer == "on"{
-            .navClose{
-                display: $none;
-            }
+        .navClose{
+            display: $none;
         }
         
         > ul{
