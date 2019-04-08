@@ -26,20 +26,15 @@
                 background-size: 15px;
                 border: 1px solid $bcNavClose!important;
             }
-                
-            li{
-                padding-left: 15px;
-            }
             
             ul{
                 @include borderStyleT($bcGreyXL);
             }
                 
-            li{
-                padding-left: 15px;
-                
+            li{                
                 a,
                 .topLevelItem{
+                    padding-left: 15px;
                     text-transform: uppercase;
                 }
             }
