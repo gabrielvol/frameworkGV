@@ -22,7 +22,7 @@
 .container{    
     @include mobileOnly{
         width: $containerMobileValue;
-    }    
+    }     
     @include afterMobileLandscape{
         width: $containerMobileLandscapeValue;
     }    
@@ -37,8 +37,7 @@
     }    
     @include afterDesktopLarge{
         width: $containerDesktopLargeValue;
-    }
-    
+    }    
     &.centerAbs{
         @include mobileOnly{
             position: absolute;
@@ -51,23 +50,15 @@
             margin-left: $cMLHneg;
         }
         @include afterTablet{
-            position: absolute;
-            left: 50%;   
             margin-left: $cTHneg;
         }
         @include afterTabletLandscape{
-            position: absolute;
-            left: 50%;   
             margin-left: $cTLHneg;
         }
         @include afterDesktop{
-            position: absolute;
-            left: 50%;   
             margin-left: $cDHneg;
         }
         @include afterDesktopLarge{
-            position: absolute;
-            left: 50%;   
             margin-left: $cDLHneg;
         }
     }
@@ -88,23 +79,15 @@
                 margin-left: $cMLHneg;
             }
             @include afterTablet{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cTHneg;
             }
             @include afterTabletLandscape{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cTLHneg;
             }
-            @include afterDesktop{
-                position: absolute;
-                left: 50%;   
+            @include afterDesktop{  
                 margin-left: $cDHneg;
             }
             @include afterDesktopLarge{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cDLHneg;
             }
         }
@@ -117,18 +100,12 @@
                 margin-left: $cTHneg;
             }
             @include afterTabletLandscape{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cTLHneg;
             }
             @include afterDesktop{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cDHneg;
             }
             @include afterDesktopLarge{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cDLHneg;
             }
         }
@@ -140,14 +117,10 @@
                 left: 50%;   
                 margin-left: $cTLHneg;
             }
-            @include afterDesktop{
-                position: absolute;
-                left: 50%;   
+            @include afterDesktop{  
                 margin-left: $cDHneg;
             }
             @include afterDesktopLarge{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cDLHneg;
             }
         }
@@ -160,8 +133,6 @@
                 margin-left: $cDHneg;
             }
             @include afterDesktopLarge{
-                position: absolute;
-                left: 50%;   
                 margin-left: $cDLHneg;
             }
         }
@@ -180,7 +151,12 @@
 @if $containerMO == "on"{
     .containerMO{
         @include mobileOnly{
-            width: $containerMobileValue;
+            width: $containerMobileValue;            
+            &.centerAbsMO{    
+                position: absolute;
+                left: 50%;   
+                margin-left: $cMHneg;
+            }
         }  
     }  
 }
@@ -188,21 +164,38 @@
     .containerAML{
         @include afterMobileLandscape{
             width: $containerMobileLandscapeValue;
+            &.centerAbsAML{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cMLHneg;
+            }
         }    
         @include mobileLandscapeOnly{
             width: $containerMobileLandscapeValue;
         }     
         @include afterTablet{
             width: $containerTabletValue;
+            &.centerAbsAML{
+                margin-left: $cTHneg;
+            }
         }    
         @include afterTabletLandscape{
             width: $containerTabletLandscapeValue;
+            &.centerAbsAML{
+                margin-left: $cTLHneg;
+            }
         }    
         @include afterDesktop{
             width: $containerDesktopValue;
+            &.centerAbsAML{
+                margin-left: $cDHneg;
+            }
         }    
         @include afterDesktopLarge{
             width: $containerDesktopLargeValue;
+            &.centerAbsAML{
+                margin-left: $cDLHneg;
+            }
         }
     }
 }
@@ -227,15 +220,29 @@
     .containerAT{
         @include afterTablet{
             width: $containerTabletValue;
+            &.centerAbsAT{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTHneg;        
+            }
         }    
         @include afterTabletLandscape{
             width: $containerTabletLandscapeValue;
+            &.centerAbsAT{        
+                margin-left: $cTLHneg;
+            }
         }    
         @include afterDesktop{
             width: $containerDesktopValue;
+            &.centerAbsAT{    
+                margin-left: $cDHneg;    
+            }
         }    
         @include afterDesktopLarge{
             width: $containerDesktopLargeValue;
+            &.centerAbsAT{       
+                margin-left: $cDLHneg; 
+            }
         }
     }  
 }
@@ -250,12 +257,23 @@
     .containerATL{
         @include afterTabletLandscape{
             width: $containerTabletLandscapeValue;
+            &.centerAbsATL{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cTLHneg;
+            }
         }    
         @include afterDesktop{
             width: $containerDesktopValue;
+            &.centerAbsATL{
+                margin-left: $cDHneg;
+            }
         }    
         @include afterDesktopLarge{
             width: $containerDesktopLargeValue;
+            &.centerAbsATL{
+                margin-left: $cDLHneg;
+            }
         }    
     }  
 }
@@ -289,9 +307,17 @@
     .containerAD{
         @include afterDesktop{
             width: $containerDesktopValue;
+            &.centerAbsAD{
+                position: absolute;
+                left: 50%;   
+                margin-left: $cDHneg;
+            }
         }    
         @include afterDesktopLarge{
             width: $containerDesktopLargeValue;
+            &.centerAbsAD{
+                margin-left: $cDLHneg;
+            }
         }    
     }  
 }
@@ -299,6 +325,9 @@
     .containerADL{
         @include afterDesktopLarge{
             width: $containerDesktopLargeValue;
+            &.centerAbsADL{
+                margin-left: $cDLHneg;
+            }
         }    
     }  
 }
