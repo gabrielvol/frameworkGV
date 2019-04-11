@@ -13,7 +13,6 @@ form.niceIt{
         padding-bottom: 0;
     }
     .fmSelect{
-        cursor: pointer;
         *position: relative;
     
         &, li, strong, cite{
@@ -51,7 +50,6 @@ form.niceIt{
     
     .fmCheckbox{
         display: $block;
-        cursor: pointer;
     }
     
     .fnFileInput{
@@ -86,6 +84,5 @@ form.niceIt{
         font-size: 0;
         line-height: 1%;
         text-decoration: none;
-        cursor: pointer;
     }
 }
