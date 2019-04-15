@@ -1,0 +1,30 @@
+/* =============================================================================
+   Header Custom | Framework [/css/header.scss]
+   ========================================================================== */
+#header{
+    clear: both;
+    background: #ccc!important;
+}
+
+.mainaNav{
+    li{
+        border: 1px solid #000;
+        float: left;
+        background-color: #eee;
+        padding: 0 5px;
+        margin-bottom: 5px;  
+        
+        &, a{
+            height: 20px;
+            line-height: 20px;            
+        }
+        
+        & + li{
+            margin-left: 5px;
+        }   
+    }
+    
+    a{
+        font-size: .7em;
+    }    
+}
