@@ -20,105 +20,108 @@
     }
 }
 
-// Slick next/prev
-$sliderArrowHeightBT: 30px;
-$sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
-$sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT} / 2);
+@if $sliderArrows == "on"{
+    $sliderArrowHeightBT: 30px;
+    $sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
+    $sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT} / 2);
 
-$sliderArrowHeight: 50px;
-$sliderArrowWidthHeight: 30px $sliderArrowHeight;
-$sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
+    $sliderArrowHeight: 50px;
+    $sliderArrowWidthHeight: 30px $sliderArrowHeight;
+    $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
 
-.slickPrev{
-    left: 0;
-    
-    @include beforeTablet{
-        @include bgSvg(slider_arrowL, $sliderArrowWidthHeightBT);        
+    .slickPrev{
+        left: 0;
+
+        @include beforeTablet{
+            @include bgSvg(slider_arrowL, $sliderArrowWidthHeightBT);        
+        }
+
+        @include afterTablet{
+            @include bgSvg(slider_arrowL, $sliderArrowWidthHeight);        
+        }
     }
-    
-    @include afterTablet{
-        @include bgSvg(slider_arrowL, $sliderArrowWidthHeight);        
+
+    .slickNext{
+        right: 0;
+
+        @include beforeTablet{
+            @include bgSvg(slider_arrowR, $sliderArrowWidthHeightBT);        
+        }
+
+        @include afterTablet{
+            @include bgSvg(slider_arrowR, $sliderArrowWidthHeight);        
+        }
+    }
+
+    .slickPrev,
+    .slickNext{
+        @include transition(0.7s);
+        @include opacityCustomHover();
+        position: absolute;
+        z-index: $zIndexSlickNextPrevDots;
+        top: 50%;
+        padding: $zero;
+        border: $none;
+        text-indent: -9999px;
+
+        @include beforeTablet{
+            @include squareSize($sliderArrowHeightBT);
+            margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});        
+        }
+
+        @include afterTablet{
+            @include squareSize($sliderArrowHeight);
+            margin-top: calc(-1 * #{$sliderArrowHeightHalf});
+        }
     }
 }
 
-.slickNext{
-    right: 0;
-    
-    @include beforeTablet{
-        @include bgSvg(slider_arrowR, $sliderArrowWidthHeightBT);        
-    }
-    
-    @include afterTablet{
-        @include bgSvg(slider_arrowR, $sliderArrowWidthHeight);        
-    }
-}
+@if $sliderDots == "on"{
+    .slickDots{
+        $sliderDotWidth: 15px;
+        $sliderDotHeight: $sliderDotWidth;
+        $sliderDotWidthHeight: $sliderDotWidth $sliderDotHeight;
+        $pagSeparation: 10px;
+        $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
 
-.slickPrev, .slickNext{
-    @include transition(0.7s);
-    @include opacityCustomHover();
-    position: absolute;
-    z-index: $zIndexSlickNextPrevDots;
-    top: 50%;
-    padding: $zero;
-    border: $none;
-    text-indent: -9999px;
-    
-    @include beforeTablet{
-        @include squareSize($sliderArrowHeightBT);
-        margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});        
-    }
-    
-    @include afterTablet{
-        @include squareSize($sliderArrowHeight);
-        margin-top: calc(-1 * #{$sliderArrowHeightHalf});
-    }
-}
-
-//Slick dots
-.slickDots{
-    $sliderDotWidth: 15px;
-    $sliderDotHeight: $sliderDotWidth;
-    $sliderDotWidthHeight: $sliderDotWidth $sliderDotHeight;
-    $pagSeparation: 10px;
-    $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
-    
-    list-style: none;
-    position: relative;
-    z-index: $zIndexSlickNextPrevDots;
-    top: calc(-1 * #{$slickDotMarginTopValue});
-    height: $sliderDotHeight;
-    margin: 0 auto;
-    text-align: center;
-   
-    li{
-        display: inline;
-        float: $none;
+        list-style: none;
+        position: relative;
+        z-index: $zIndexSlickNextPrevDots;
+        top: calc(-1 * #{$slickDotMarginTopValue});
         height: $sliderDotHeight;
-        
-        &, button{
-            @include squareSize($sliderDotWidth);
-        }
-        
-        button{
-            @include bgSvg(slider_pag, $sliderDotWidth);
-            display: inline-block;
-            border: $none;
-            text-indent: -9999px;
-        }
-        
-        & + li{
-            margin-left: $pagSeparation;
-        }
-        
-        &:focus, &:hover{
-            button{
-                @include bgSvg(slider_pagHover, $sliderDotWidthHeight);
+        margin: 0 auto;
+        text-align: center;
+
+        li{
+            display: inline;
+            float: $none;
+            height: $sliderDotHeight;
+
+            &, button{
+                @include squareSize($sliderDotWidth);
             }
-        }
-        
-        &.slickActive{
+
             button{
-                @include bgSvg(slider_pagSel, $sliderDotWidthHeight);
+                @include bgSvg(slider_pag, $sliderDotWidth);
+                display: inline-block;
+                border: $none;
+                text-indent: -9999px;
+            }
+
+            & + li{
+                margin-left: $pagSeparation;
+            }
+
+            &:focus, &:hover{
+                button{
+                    @include bgSvg(slider_pagHover, $sliderDotWidthHeight);
+                }
+            }
+
+            &.slickActive{
+                button{
+                    @include bgSvg(slider_pagSel, $sliderDotWidthHeight);
+                }
             }
         }
     }
