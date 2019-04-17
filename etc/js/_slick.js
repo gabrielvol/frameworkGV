@@ -19,7 +19,11 @@ $(document).ready(function () {
         ,lazyLoad: 'ondemand'
 
         ,autoplay: true
+        
+        // Delay before transition
         ,autoplaySpeed: 5000
+        
+        // Transition Speed
         ,speed: 500
 
         ,centerMode: true
