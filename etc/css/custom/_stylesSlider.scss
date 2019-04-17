@@ -18,6 +18,15 @@
     li{
         height: 300px;
     }
+    
+    &.carousel{
+        position: relative;
+        
+        .slick-list{
+            position: relative;
+            overflow: hidden;
+        }
+    }
 }
 
 @if $sliderArrows == "on"{
@@ -60,8 +69,8 @@
         position: absolute;
         z-index: $zIndexSlickNextPrevDots;
         top: 50%;
-        padding: $zero;
         border: $none;
+        padding: $zero;
         text-indent: -9999px;
 
         @include beforeTablet{
