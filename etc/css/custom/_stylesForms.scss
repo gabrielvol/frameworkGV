@@ -13,7 +13,8 @@ fieldset{
     }
             
     &.invalidField{
-        legend, label span{
+        legend,
+        label span{
             color: $formInputErrorMsgColour;
         }
         
@@ -33,17 +34,20 @@ select{
     }
 }
 
-.status, .mandatoryMsg{
+.status,
+.mandatoryMsg{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 
-.status.ok, .mandatoryMsg{
+.status.ok,
+.mandatoryMsg{
     @include borderRadius(6px);
     padding: 7px 20px;
 }
 
-.status, .mandatoryMsg p{
+.status,
+.mandatoryMsg p{
     text-align: center;   
 }
 
@@ -69,14 +73,20 @@ select{
     }
 }
 
-.mandatoryMsg, .status{    
+.mandatoryMsg,
+.status{    
     @include afterTabletLandscape{
         @include centerCustom(80%);
     }
 }
 
 form{
-    input, select, textarea{}
+    input,
+    select,
+    textarea{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     
     input{
         &[type="text"]{}
@@ -156,7 +166,8 @@ form{
     }
     
     @if $formInsideLabel == "on"{
-        fieldset, label{
+        fieldset,
+        label{
             @include beforeTablet{
                 .mobileForm &{
                     margin-bottom: $paddingMarginLargeValue;
@@ -210,14 +221,17 @@ form{
                         height: $formInputRadioHeightTO;
                     }
 
-                    &, input, span{
+                    &,
+                    input,
+                    span{
                         @include equalHeightAndLineHeight($formInputRadioHeightTO);
                     }
                 }
             }
         }
 
-        .labelName, .formInputErrorMsg{
+        .labelName,
+        .formInputErrorMsg{
             display: block;
         }
 
