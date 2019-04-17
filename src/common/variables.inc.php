@@ -12,7 +12,8 @@
     $urlIG = "https://www.instagram.com/usuario";
     $urlLI = "https://www.linkedin.com/usuario";
     $urlWA = "https://api.whatsapp.com/send?phone=5491100001111";
-    $urlEM = "mailto:correo@servidor.com";
+    $urlEM = "correo@servidor.com";
+    $urlTO = "mailto:".$urlEM;
     $urlGM = "https://goo.gl/maps/aaaaaaaaaaaa";
     $urlYT = "https://www.youtube.com/user/ffffffffffffff";    
     
