@@ -1,9 +1,9 @@
 /* =============================================================================
    Tables Variables | Custom [tables.scss]
    ========================================================================== */
-$tableWidthMobile: $hundred;
-$tableWidthTablet: 700px;
-$tableWidthTabletL: 970px;
+$tableWBT: $hundred;
+$tableWAT: 700px;
+$tableWATL: 970px;
 
 //Custom Sizes
 $tableSizesMapBeforeTablet:(
@@ -28,23 +28,6 @@ $tableSizesMapTabletL:(
     
     tableWidthSmall: 760px
 );
-
-    //Generador de clases por cada tamaño de ancho de tabla
-@mixin tableCustomSizesBeforeTablet{
-    @each $tableClassName, $tableCustomWidth in $tableSizesMapBeforeTablet {
-        &.#{$tableClassName}{width: $tableCustomWidth;}
-    }
-}
-@mixin tableCustomSizesTablet{
-    @each $tableClassName, $tableCustomWidth in $tableSizesMapTablet {
-        &.#{$tableClassName}{width: $tableCustomWidth;}
-    }
-}
-@mixin tableCustomSizesTabletL{
-    @each $tableClassName, $tableCustomWidth in $tableSizesMapTabletL {
-        &.#{$tableClassName}{width: $tableCustomWidth;}
-    }
-}
 
 //Rounded Table
 $borderRadiusValueTable: $borderRadiusValue;

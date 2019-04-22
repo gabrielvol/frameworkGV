@@ -2,20 +2,23 @@
    Tables Settings | Etc [settingsTables.scss]
    ========================================================================== */
 table{
+    border-spacing: 0;
+    border-collapse: collapse;
     @include beforeTablet{
-        width: $tableWidthMobile;
+        width: $tableWBT;
         @include tableCustomSizesBeforeTablet;        
     }
     @include afterTablet{
-        width: $tableWidthTablet;
+        width: $tableWAT;
         @include tableCustomSizesTablet;          
     }
     @include afterTabletLandscape{
-        width: $tableWidthTabletL;
+        width: $tableWATL;
         @include tableCustomSizesTabletL;          
-    }
-    
-    th, td{
+    }     
+    th,
+    td{
+        font-weight: 400;
         vertical-align: middle;
     }
 }
@@ -32,8 +35,7 @@ table{
         &:last-child{
             @include borderRadiusBR($borderRadiusValueTable);
         }
-    }
-    
+    }    
     tr{
         th{
             &:first-child{
@@ -42,8 +44,7 @@ table{
             &:last-child{
                 @include borderRadiusTR($borderRadiusValueTable);
             }
-        }
-        
+        }        
         &:last-child{
             td{
                 border-bottom: $zero;
@@ -56,7 +57,7 @@ table{
 .tableStriped{
     thead, tfoot{
         tr{
-            background-color: $bgColourTableStripedThead;            
+            background-color: $bgColourTableStripedThead;
         }
     }
     tbody{
@@ -69,32 +70,29 @@ table{
         }        
     }
 }
-
 @include beforeTablet{
     table{
-        width: $tableWidthMobile;
+        width: $tableWBT;
         
-        thead, tfoot{
+        thead,
+        tfoot{
             display: none;
-        }
-        
-        tr, td{
+        }        
+        tr,
+        td{
             display: block;
-        }
-        
+        } 
         tr{
             margin-top: 0;
-        }
+        }        
         td{
-            position: relative;
-            
+            position: relative;            
             &::before{
                 content: attr(data-label);
                 position: absolute;
             }
         }
-    }
-    
+    }    
     .tableRounded{
         tr{
             &:last-child{
@@ -106,32 +104,28 @@ table{
                 border: $none;
             }            
         }
-    }
-        
-    .table-responsive{
+    }        
+    .tableResponsive{
         width: 98%;
-        overflow-x: scroll;
-        
+        overflow-x: scroll;        
         table{
             position: relative;
             display: table;
         
-            thead, tbody{
+            thead,
+            tbody{
                 display: table-row-group;
             }
-
             tfoot{
                 display: none;
-            }
-            
-            td, th{
+            }            
+            td,
+            th{
                 display: table-cell;
-            }
-            
+            }            
             tr{
                 display: table-row;
-            }
-            
+            }            
             td{
                 &::before{
                     content: '';

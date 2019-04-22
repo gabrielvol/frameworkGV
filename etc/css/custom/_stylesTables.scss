@@ -2,20 +2,8 @@
    Tables Styles | Custom [stylesTables.scss]
    ========================================================================== */
 table{
-    @include beforeTablet{
-        width: $tableWidthMobile;
-        @include tableCustomSizesBeforeTablet;        
-    }
-    @include afterTablet{
-        width: $tableWidthTablet;
-        @include tableCustomSizesTablet;          
-    }
-    @include afterTabletLandscape{
-        width: $tableWidthTabletL;
-        @include tableCustomSizesTabletL;          
-    }
-
-    th, tfoot td{
+    th,
+    tfoot td{
         color: $white;
         font-weight: 700;
         text-align: center;
@@ -25,7 +13,7 @@ table{
         @include equalHeightAndLineHeight(30px);
     }
     
-    td, th{
+    th, td{
         padding: 0 10px;
         font-size: 0.9rem;
         font-weight: 400;
@@ -36,7 +24,8 @@ table{
 table.tableRounded{
     @include borderStyle($mainBcColourTable);
     
-    th,tfoot td{
+    th,
+    tfoot td{
         background-color: $mainBgColourTable;
     }
    
@@ -45,7 +34,8 @@ table.tableRounded{
     }
     
     tr{
-        th,td{
+        th,
+        td{
             @include borderStyleB($secondaryBcColourTable);
         }
     }
@@ -121,21 +111,21 @@ $tableBeforeWidth: 40%;
         }
     }
     
-    .table-responsive{
+    .tableResponsive{
         padding: 15px 0;
         margin: 0 auto 10px;
         
         table{
             @include beforeTablet{
-                width: $tableWidthMobile;
+                width: $tableWBT;
                 @include tableCustomSizesBeforeTablet;        
             }
             @include afterTablet{
-                width: $tableWidthTablet;
+                width: $tableWAT;
                 @include tableCustomSizesTablet;          
             }
             @include afterTabletLandscape{
-                width: $tableWidthTabletL;
+                width: $tableWATL;
                 @include tableCustomSizesTabletL;          
             }
             
