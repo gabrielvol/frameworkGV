@@ -12,7 +12,7 @@
             if ($seccionConSub == 1) {
                 echo '<li class="backMenu pRel hasSub hideAT">
                     <p id="backMenuNavItem" class="topLevelItem" aria-haspopup="true" aria-owns="backMenuSubMenu" aria-controls="backMenuSubMenu" role="button" aria-pressed="false">'. _("Menú principal").'</p>
-                    <ul id="backMenuSubMenu" class="subMenu unstyled" aria-expanded="false" aria-labelledby="backMenuNavItem">';
+                    <ul id="backMenuSubMenu" class="subMenu backMenuSubMenu unstyled" aria-expanded="false" aria-labelledby="backMenuNavItem">';
                         include('nav.list.inc.php');
                     echo '</ul></li>';
             } else {
