@@ -4,9 +4,9 @@
     $mandatoryMsgClasses_FormName = 'displayNone';
     
     //Variables Globlales de Status
-    $statusIniGlobal_FormName     = _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.');
     $statusIniGlobalA_FormName    = _('Complete el formulario.');
     $statusIniGlobalB_FormName    = _('Nos comunicaremos con Ud. a la brevedad.');
+    $statusIniGlobal_FormName     = $statusIniGlobalA_FormName.$statusIniGlobalB_FormName;
     
     $statusOKGlobalA_FormName      = _('Env&iacute;o exitoso.');
     $statusOKGlobalB_FormName      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
