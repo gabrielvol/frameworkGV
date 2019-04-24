@@ -2,7 +2,10 @@
    Header Styles | Custom [stylesHeader.scss]
    ========================================================================== */
 #header{
-    /*z-index: $zIndexHeader;*/
+    /*
+    z-index: $zIndexHeader;
+    position: relative;
+    */
     
     .logoH{
         margin-bottom: 0;
