@@ -39,6 +39,12 @@
 /* =============================================================================
    Header
    ========================================================================== */
+/* =============================================================================
+   Logo Sizes Variables | Custom [logoSizes.scss]
+   ========================================================================== */
+/* =============================================================================
+   Header Height Variables | Custom [headerHeight.scss]
+   ========================================================================== */
 /* -------------------------------------
     Full height index                 */
 /*  Full height index
@@ -48,6 +54,9 @@
    ========================================================================== */
 /* =============================================================================
    Language Flags
+   ========================================================================== */
+/* =============================================================================
+   Slider
    ========================================================================== */
 /* =============================================================================
    Fonts
@@ -244,6 +253,9 @@
    ========================================================================== */
 /* =============================================================================
    Position Mixins | Etc [mixinsPositions.scss]
+   ========================================================================== */
+/* =============================================================================
+   Tables Sizes Mixins | Etc [mixinsTableSizes.scss]
    ========================================================================== */
 /* =============================================================================
    Angled Edges Functions | Etc [functionsAngledEdges.scss]
@@ -765,6 +777,9 @@ a.mainBgColour:hover, a.mainBgColour:focus {
    ========================================================================== */
 .textShadow {
   text-shadow: 0 0 3px #000; }
+
+.textShadowWhite {
+  text-shadow: 0 0 3px #fff; }
 
 .boxShadow {
   box-shadow: 0 0 10px 0 #666; }
@@ -1308,26 +1323,18 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 768px) {
   .container.centerAbs {
-    position: absolute;
-    left: 50%;
     margin-left: calc(-1 * calc(720px / 2)); } }
 
 @media (min-width: 1024px) {
   .container.centerAbs {
-    position: absolute;
-    left: 50%;
     margin-left: calc(-1 * calc(1000px / 2)); } }
 
 @media (min-width: 1200px) {
   .container.centerAbs {
-    position: absolute;
-    left: 50%;
     margin-left: calc(-1 * calc(1000px / 2)); } }
 
 @media (min-width: 1600px) {
   .container.centerAbs {
-    position: absolute;
-    left: 50%;
     margin-left: calc(-1 * calc(1000px / 2)); } }
 
 /* =============================================================================
@@ -1549,7 +1556,8 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Modal y Popups Settings | Etc [settingsModalPopups.scss]
    ========================================================================== */
-.modalBG, .modalNav {
+.modalBG,
+.modalNav {
   top: 0;
   right: 0;
   bottom: 0;
@@ -1582,70 +1590,70 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-.popup .closePop {
-  border-radius: 50%;
-  background-color: transparent;
-  background-image: url("/nuevo/img/popup_close.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  width: 33px !important;
-  height: 33px !important;
-  background-size: 13px;
-  border: 1px solid #666 !important; }
-  .popup .closePop, .popup .closePop:focus, .popup .closePop:hover {
-    background-color: #fff; }
-
-.popup .modalWrap {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  padding: 20px;
-  overflow: auto; }
-
-.popup.statusDiv {
-  /* CSS para usar centerPopup
+.popup {
+  position: fixed;
+  top: 80px; }
+  .popup .closePop {
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("/nuevo/img/popup_close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 33px !important;
+    height: 33px !important;
+    background-size: 13px;
+    border: 1px solid #666 !important; }
+    .popup .closePop, .popup .closePop:focus, .popup .closePop:hover {
+      background-color: #fff; }
+  .popup .modalWrap {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 20px;
+    overflow: auto; }
+  .popup.statusDiv {
+    /* CSS para usar centerPopup
             @include centerPopup(100px,100px,50%);
             max-width: 100%;
             max-height: 100%;
         */
-  border-radius: 6px;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 15px 0 #000; }
-  .popup.statusDiv h2 {
-    font-size: 1.2rem; }
-  .popup.statusDiv p {
-    width: 100% !important;
-    background-color: transparent;
-    padding: 0;
-    color: #666;
-    font-family: Arial;
-    text-align: center; }
-    .popup.statusDiv p + p {
-      margin-top: 0.8em; }
-    .popup.statusDiv p:last-child {
-      padding-bottom: 50px; }
-  .popup.statusDiv .popOKdialog {
-    transition: all 1s ease;
-    height: 30px;
-    line-height: 30px;
-    width: 40%;
-    max-width: 150px;
+    border-radius: 6px;
+    top: 20%;
+    left: 50%;
     background-color: #fff;
-    font-size: 0.8rem; }
-    .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
-      border: 1px solid #999 !important; }
-    .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
-      background-color: #f4f4f4;
-      color: #000; }
-  .popup.statusDiv .closePop {
-    top: 10px;
-    right: 10px; }
+    box-shadow: 0 0 15px 0 #000; }
+    .popup.statusDiv h2 {
+      font-size: 1.2rem; }
+    .popup.statusDiv p {
+      width: 100% !important;
+      background-color: transparent;
+      padding: 0;
+      color: #666;
+      font-family: Arial;
+      text-align: center; }
+      .popup.statusDiv p + p {
+        margin-top: 0.8em; }
+      .popup.statusDiv p:last-child {
+        padding-bottom: 50px; }
+    .popup.statusDiv .popOKdialog {
+      transition: all 1s ease;
+      height: 30px;
+      line-height: 30px;
+      width: 40%;
+      max-width: 150px;
+      background-color: #fff;
+      font-size: 0.8rem; }
+      .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+        border: 1px solid #999 !important; }
+      .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+        background-color: #f4f4f4;
+        color: #000; }
+    .popup.statusDiv .closePop {
+      top: 10px;
+      right: 10px; }
   @media (max-width: 499px) {
     .popup.statusDiv {
       width: 300px;
@@ -1655,9 +1663,15 @@ article, article::before, article::after, details, details::before, details::aft
       width: 60%;
       margin-left: calc(calc(60% * -1) / 2); } }
   @media (max-width: 600px) {
+    .popup .closePop {
+      top: -45px;
+      right: 0; }
     .popup.statusDiv {
       height: 220px; } }
   @media (min-width: 601px) {
+    .popup .closePop {
+      top: -35px;
+      right: -35px; }
     .popup.statusDiv {
       width: 550px;
       height: 200px;
@@ -1679,16 +1693,21 @@ article, article::before, article::after, details, details::before, details::aft
   /*z-index: $zIndexHeader;*/ }
   #header .logoH {
     margin-bottom: 0; }
-    #header .logoH a, #header .logoH img {
-      width: 100%; }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
+      height: calc(20px + 15px + 50px);
+      padding-top: 20px;
       padding-bottom: 15px; }
       #header .logoH {
-        width: 180px;
+        height: 50px;
         margin-right: auto;
         margin-left: auto; }
+        #header .logoH a {
+          width: 200px; }
+        #header .logoH a,
+        #header .logoH img {
+          height: 100%; }
         #header .logoH.clicked {
           border-right: 1px solid #000;
           box-sizing: border-box;
@@ -1696,14 +1715,15 @@ article, article::before, article::after, details, details::before, details::aft
           z-index: 9200;
           top: 0;
           left: 0;
-          width: calc(70vw - 5px);
+          width: calc(70vw- 5px);
           max-width: 300px;
           height: calc(50px + 50px + 10px);
           background-color: #fff;
           padding-top: 50px;
           padding-bottom: 10px;
           margin: 0; }
-          #header .logoH.clicked a, #header .logoH.clicked img {
+          #header .logoH.clicked a,
+          #header .logoH.clicked img {
             width: auto;
             height: 100%; }
           #header .logoH.clicked img {
@@ -1716,6 +1736,9 @@ article, article::before, article::after, details, details::before, details::aft
       right: 0;
       left: 0;
       height: 140px; }
+      #header .logoH a,
+      #header .logoH img {
+        width: 100%; }
       #header.topperShadow {
         box-shadow: 0 0 7px #000; }
       #header .logoH {
@@ -1755,14 +1778,6 @@ article, article::before, article::after, details, details::before, details::aft
 
 /* -------------------------------------
     Full height index                 */
-@media (max-width: 767px) {
-  #footer {
-    height: 80px; } }
-
-@media (min-width: 768px) {
-  #footer {
-    height: 100px; } }
-
 /*  Full height index
     --------------------------------- */
 /* =============================================================================
@@ -1776,7 +1791,7 @@ nav li:focus a, nav li:hover a {
   text-decoration: none; }
 
 .navMain {
-  z-index: 1000; }
+  z-index: 8800; }
   @media (max-width: 767px) {
     .navMain {
       position: fixed; }
@@ -1790,9 +1805,6 @@ nav li:focus a, nav li:hover a {
         background-repeat: no-repeat;
         color: #333;
         font-family: Arial; }
-        .navMain .navOpen.clicked {
-          opacity: 0.5;
-          color: #333; }
       .navMain .navClose {
         border-radius: 50%;
         z-index: 9200;
@@ -1801,55 +1813,30 @@ nav li:focus a, nav li:hover a {
         background-image: url("/nuevo/img/nav_close.svg");
         background-repeat: no-repeat;
         background-position: center center; }
-        .navMain .navClose.clicked {
-          display: block; }
-      .navMain ul {
-        z-index: 9100; }
-        .navMain ul, .navMain ul .subMenu {
-          transition: all 0.5s ease;
-          top: 0;
-          bottom: 0; }
-      .navMain > ul {
-        box-sizing: border-box;
-        position: fixed;
-        left: calc(-1 * 70vw);
-        width: calc(70vw - 5px);
-        max-width: 300px;
-        background-color: #fff;
-        padding-top: calc(calc(50px + 50px + 10px) + 5px);
-        padding-right: 5px;
-        padding-left: 5px;
-        padding-bottom: 30px;
-        overflow: scroll; }
-        .navMain > ul > li {
-          background-color: transparent; }
-        .navMain > ul li {
-          float: none !important; }
-          .navMain > ul li a, .navMain > ul li .topLevelItem {
-            color: #000;
-            font-family: Arial; }
-          .navMain > ul li .topLevelItem {
-            background-repeat: no-repeat;
-            background-position: 10px center; }
-            .navMain > ul li .topLevelItem.open {
-              background-image: url("/nuevo/img/nav_arrowD.svg"); }
-          .navMain > ul li + li {
-            border-top: 1px solid #fff; }
-        .navMain > ul > .current {
+      .navMain > ul > li {
+        background-color: transparent; }
+      .navMain > ul li {
+        float: none !important; }
+        .navMain > ul li a,
+        .navMain > ul li .topLevelItem {
+          color: #000;
+          font-family: Arial; }
+        .navMain > ul li .topLevelItem {
+          background-repeat: no-repeat;
+          background-position: 10px center; }
+          .navMain > ul li .topLevelItem.open {
+            background-image: url("/nuevo/img/nav_arrowD.svg"); }
+        .navMain > ul li + li {
+          border-top: 1px solid #fff; }
+        .navMain > ul li > .current {
           background-color: #f2f2f2;
           background-image: url("/nuevo/img/nav_arrowL.svg");
           background-repeat: no-repeat;
           background-position: right 10px center; }
-          .navMain > ul > .current > a, .navMain > ul > .current > .topLevelItem {
+          .navMain > ul li > .current > a,
+          .navMain > ul li > .current > .topLevelItem {
             color: #000;
-            font-family: Arial; }
-        .navMain > ul, .navMain > ul .subMenu {
-          top: 0;
-          bottom: 0; }
-        .navMain > ul.open {
-          left: 0; }
-        .navMain > ul + .mainMenu {
-          margin-top: 0; } }
+            font-family: Arial; } }
   @media (min-width: 768px) {
     .navMain .navClose {
       display: none !important; }
@@ -1857,7 +1844,8 @@ nav li:focus a, nav li:hover a {
       background-color: #999; }
       .navMain > ul > li {
         background-color: transparent; }
-        .navMain > ul > li a, .navMain > ul > li .topLevelItem {
+        .navMain > ul > li a,
+        .navMain > ul > li .topLevelItem {
           color: #000;
           font-family: Arial; }
         .navMain > ul > li:focus, .navMain > ul > li:hover {
@@ -1866,114 +1854,196 @@ nav li:focus a, nav li:hover a {
             color: #000; }
       .navMain > ul > .current {
         background-color: transparent; }
-        .navMain > ul > .current a, .navMain > ul > .current .topLevelItem {
+        .navMain > ul > .current a,
+        .navMain > ul > .current .topLevelItem {
           color: #000;
           font-family: Arial; }
         .navMain > ul > .current:focus, .navMain > ul > .current:hover {
           background-color: transparent; }
-          .navMain > ul > .current:focus > a, .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a, .navMain > ul > .current:hover .topLevelItem {
+          .navMain > ul > .current:focus > a,
+          .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a,
+          .navMain > ul > .current:hover .topLevelItem {
             color: #000; } }
   @media (min-width: 1024px) {
-    .navMain > ul > li a, .navMain > ul > li .topLevelItem {
+    .navMain > ul > li a,
+    .navMain > ul > li .topLevelItem {
       font-family: Arial; }
-    .navMain > ul .current a, .navMain > ul .current .topLevelItem {
+    .navMain > ul .current a,
+    .navMain > ul .current .topLevelItem {
       font-family: Arial; } }
 
 /* =============================================================================
-   Nav Styles | Custom [stylesNav.scss]
+   Nav Drawer Settings | Etc [settingsNavDrawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
-  .navMain {
-    top: 10px;
-    right: 10px;
-    /* =============================================================================
+  .navMain .navOpen.clicked {
+    opacity: 0.5;
+    color: #333; }
+  .navMain .navClose.clicked {
+    display: block; }
+  .navMain ul {
+    z-index: 9100; }
+    .navMain ul, .navMain ul .subMenu {
+      transition: all 0.5s ease;
+      top: 0;
+      bottom: 0; }
+  .navMain > ul {
+    box-sizing: border-box;
+    position: fixed;
+    left: calc(-1 * 70vw);
+    width: calc(70vw - 5px);
+    max-width: 300px;
+    background-color: #fff;
+    padding-top: calc(calc(50px + 50px + 10px) + 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    overflow: scroll; }
+    .navMain > ul, .navMain > ul .subMenu {
+      top: 0;
+      bottom: 0; }
+    .navMain > ul.open {
+      left: 0; }
+    .navMain > ul + .mainMenu {
+      margin-top: 0; } }
+
+/* =============================================================================
+   Nav Accordion Settings | Etc [settingsNavAccordion.scss]
+   ========================================================================== */
+/* =============================================================================
+   Nav Styles | Custom [stylesNav.scss]
+   ========================================================================== */
+.navMain {
+  /* =============================================================================
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
-    /* =============================================================================
+  /* =============================================================================
+   Nav Accordion Styles | Custom [stylesNavAccordion.scss]
+   ========================================================================== */
+  /* =============================================================================
    Nav List Styles | Custom [stylesNavList.scss]
    ========================================================================== */ }
-    .navMain .hamb {
-      top: 0;
-      right: 0; }
-    .navMain .navOpen {
-      border-radius: 4px;
-      width: 90px;
-      height: 40px;
-      background-color: #fff;
-      background-position: 10px center;
-      background-size: 15px;
-      border: 1px solid #666 !important;
-      padding: 0 10px 0 30px;
-      font-size: 1rem;
-      line-height: 45px; }
-    .navMain .navClose {
-      width: 45px;
-      height: 45px;
-      background-size: 20px;
-      border: 1px solid #666 !important; }
-    .navMain > ul {
-      border-right: 1px solid #000; }
-      .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
-        height: 45px;
-        line-height: 45px; }
-      .navMain > ul li a, .navMain > ul li .topLevelItem {
+  @media (max-width: 767px) {
+    .navMain {
+      top: 10px;
+      right: 10px; }
+      .navMain .hamb {
+        top: 0;
+        right: 0; }
+      .navMain .navOpen {
+        border-radius: 4px;
+        width: 90px;
+        height: 40px;
+        background-color: #fff;
+        background-position: 10px center;
+        background-size: 15px;
+        border: 1px solid #666 !important;
+        padding: 0 10px 0 30px;
         font-size: 1rem;
-        text-align: center; }
-      .navMain > ul li.backMenu .topLevelItem {
-        background-image: url("/nuevo/img/nav_arrowL.svg"); }
-      .navMain > ul li.backMenu {
-        border-bottom: #fff solid 2px; }
-        .navMain > ul li.backMenu + .backMenu {
-          border-color: #666 transparent #fff;
-          border-width: 1px 0 2px;
-          border-style: solid; }
+        line-height: calc(40px + 5px); }
+      .navMain .navClose {
+        width: 45px;
+        height: 45px;
+        background-size: 20px;
+        border: 1px solid #666 !important; }
+      .navMain > ul {
+        border-right: 1px solid #000; }
+        .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
+          height: 45px;
+          line-height: 45px; }
+        .navMain > ul li a,
+        .navMain > ul li .topLevelItem {
+          font-size: 1rem;
+          text-align: center; }
         .navMain > ul li.backMenu .topLevelItem {
-          color: #fff !important; }
-          .navMain > ul li.backMenu .topLevelItem.open {
-            background-image: url("/nuevo/img/nav_arrowD.svg"); } }
+          background-image: url("/nuevo/img/nav_arrowL.svg"); }
+        .navMain > ul li.backMenu {
+          border-bottom: #fff solid 2px; }
+          .navMain > ul li.backMenu + .backMenu {
+            border-color: #666 transparent #fff;
+            border-width: 1px 0 2px;
+            border-style: solid; }
+          .navMain > ul li.backMenu .topLevelItem {
+            color: #fff !important; }
+            .navMain > ul li.backMenu .topLevelItem.open {
+              background-image: url("/nuevo/img/nav_arrowD.svg"); } }
+  @media (min-width: 768px) {
+    .navMain {
+      float: left;
+      width: calc(100% - 210px); }
+      .navMain li,
+      .navMain li a,
+      .navMain li .topLevelItem {
+        height: 60px;
+        line-height: 60px; }
+      .navMain li a,
+      .navMain li .topLevelItem {
+        transition: all 1s ease;
+        font-size: 0.8rem;
+        padding-right: 5px;
+        padding-left: 5px; } }
+  @media (min-width: 1024px) {
+    .navMain {
+      width: calc(100% - 250px); }
+      .navMain li a,
+      .navMain li .topLevelItem {
+        font-size: 1rem;
+        padding-right: 10px;
+        padding-left: 10px; } }
 
-@media (min-width: 768px) {
-  .navMain {
-    width: calc(100% - 210px);
-    float: left;
-    margin-top: 30px; }
-    .navMain li, .navMain li a, .navMain li .topLevelItem {
-      height: 60px;
-      line-height: 60px; }
-    .navMain li a, .navMain li .topLevelItem {
-      transition: all 1s ease;
-      font-size: 0.8rem;
-      padding-right: 5px;
-      padding-left: 5px; } }
-
-@media (min-width: 1024px) {
-  .navMain {
-    width: calc(100% - 250px); }
-    .navMain li a, .navMain li .topLevelItem {
+/* =============================================================================
+   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
+   ========================================================================== */
+@media (max-width: 767px) {
+  top: 10px;
+  right: 10px;
+  .hamb {
+    top: 0;
+    right: 0; }
+  .navOpen {
+    border-radius: 4px;
+    width: 90px;
+    height: 40px;
+    background-color: #fff;
+    background-position: 10px center;
+    background-size: 15px;
+    border: 1px solid #666 !important;
+    padding: 0 10px 0 30px;
+    font-size: 1rem;
+    line-height: calc(40px + 5px); }
+  .navClose {
+    width: 45px;
+    height: 45px;
+    background-size: 20px;
+    border: 1px solid #666 !important; }
+  > ul {
+    border-right: 1px solid #000; }
+    > ul li, > ul li a, > ul li .topLevelItem {
+      height: 45px;
+      line-height: 45px; }
+    > ul li a, > ul li .topLevelItem {
       font-size: 1rem;
-      padding-right: 10px;
-      padding-left: 10px; } }
+      text-align: center; }
+    > ul li.backMenu .topLevelItem {
+      background-image: url("/nuevo/img/nav_arrowL.svg"); }
+    > ul li.backMenu {
+      border-bottom: #fff solid 2px; }
+      > ul li.backMenu + .backMenu {
+        border-color: #666 transparent #fff;
+        border-width: 1px 0 2px;
+        border-style: solid; }
+      > ul li.backMenu .topLevelItem {
+        color: #fff !important; }
+        > ul li.backMenu .topLevelItem.open {
+          background-image: url("/nuevo/img/nav_arrowD.svg"); } }
 
+/* =============================================================================
+   Nav Accordion Styles | Custom [stylesNavAccordion.scss]
+   ========================================================================== */
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
    ========================================================================== */
 /* -------------------------------------
     Full height index                 */
-@media (max-width: 499px) {
-  .index {
-    height: calc(100vh - 80px - 98px); } }
-
-@media (min-width: 500px) {
-  .index {
-    height: calc(100vh - 80px - 60px); } }
-
-@media (min-width: 768px) {
-  .index {
-    height: calc(100vh - 100px - 140px); } }
-
-@media (min-width: 1024px) {
-  .index {
-    height: calc(100vh - 100px - 85px); } }
-
 /*  Full height index
     --------------------------------- */

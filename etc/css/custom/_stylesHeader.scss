@@ -19,7 +19,7 @@
     
     @include afterMobileLandscape{
         .logoH{}
-    } 
+    }
     
     @include mobileLandscapeOnly{
         .logoH{}
@@ -49,9 +49,10 @@
             
             a{
                 width: 200px;
-            } 
+            }
             
-            a, img{
+            a,
+            img{
                 height: 100%;
             }
             
@@ -63,7 +64,7 @@
                     z-index: $zIndexLogoHClicked;
                     top: 0;
                     left: 0;
-                    width: calc(#{$navDrawerWidth} - 5px);
+                    width: calc(#{$navDrawerWidth}- 5px);
                     max-width: $navDrawerMaxWidth;
                     height: $logoHClickedFH;
                     background-color: $bgNavBT;
@@ -71,7 +72,8 @@
                     padding-bottom: $logoHClickedPB;
                     margin: 0;
 
-                    a, img{
+                    a,
+                    img{
                         width: auto;
                         height: 100%;
                     }
@@ -141,5 +143,5 @@
         .logoH{
             width: $logoWATL;
         }
-    } 
+    }
 }

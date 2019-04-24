@@ -1,7 +1,8 @@
 /* =============================================================================
    Modal y Popups Settings | Etc [settingsModalPopups.scss]
    ========================================================================== */
-.modalBG, .modalNav{
+.modalBG,
+.modalNav{
     @include posTRBL();
     position: fixed;
     z-index: $zIndexModalBG;

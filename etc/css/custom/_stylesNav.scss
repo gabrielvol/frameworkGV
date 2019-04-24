@@ -2,11 +2,9 @@
    Nav Styles | Custom [stylesNav.scss]
    ========================================================================== */
 .navMain{
-    @include beforeTablet{
-        @import "stylesNavDrawer";
-        @import "stylesNavAccordion";
-        @import "stylesNavList";
-    }    
+    @import "stylesNavDrawer";
+    @import "stylesNavAccordion";
+    @import "stylesNavList";
     
     @include afterTablet{
         @if $floatedLogoNav == "on"{
@@ -17,21 +15,25 @@
         .mainMenu{
             > li{
                 &.current{
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         @if $navCurrentItemBottomBc == "on"{
                             @include borderStyleB($bcNavCurrentItem, 3px);
                         }
-                    } 
+                    }
                 }
             }
         }
         
         li{
-            &, a, .topLevelItem{
+            &,
+            a,
+            .topLevelItem{
                 @include equalHeightAndLineHeight(60px);
             }
 
-            a, .topLevelItem{
+            a,
+            .topLevelItem{
                 @include transition(1s);
                 font-size: 0.8rem;
                 padding-right: 5px;
@@ -39,7 +41,7 @@
             }
 
             & + li{}
-        } 
+        }
         
         @if $navHasSub == "on"{
             .subMenu{
@@ -51,9 +53,12 @@
                 top: 40px;
                 padding-bottom: 5px;
                 
-                &, li{}
+                &,
+                li{}
                 
-                &, li, a{}
+                &,
+                li,
+                a{}
                 
                 a{
                     /* Texto alineado a la izq
@@ -97,18 +102,22 @@
                     > li{
                         padding-top: 0;
                         
-                        &, a, .topLevelItem{
+                        &,
+                        a,
+                        .topLevelItem{
                             height: $topperHeight;
                         }
                     }
                         
                     > .current{
-                        a, .topLevelItem{
+                        a,
+                        .topLevelItem{
                             @include borderStyleB($bcNavTopperCurrentItem, 3px);
                         }
                     }
 
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         line-height: $topperHeight;
                     }
                 }
@@ -177,9 +186,9 @@
                         > a,
                         > .topLevelItem{
                             color: $greyXD;
-                        } 
+                        }
                     }
-                }        
+                }
             }
         }
         
@@ -199,8 +208,8 @@
         }
 
         .current{
-            a, .topLevelItem{
-            }
+            a,
+            .topLevelItem{}
         }
 
         @if $navTopper == "on"{
@@ -215,7 +224,7 @@
                             }
                         }
                     }
-                }                
+                }
             }
         }
     }
