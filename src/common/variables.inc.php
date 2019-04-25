@@ -16,7 +16,4 @@
     $urlTO = "mailto:".$urlEM;
     $urlGM = "https://goo.gl/maps/aaaaaaaaaaaa";
     $urlYT = "https://www.youtube.com/user/ffffffffffffff";    
-    
-    // Nav
-    $navDrawer = 0;
 ?>
