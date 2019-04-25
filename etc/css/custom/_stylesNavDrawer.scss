@@ -3,75 +3,77 @@
    ========================================================================== */
 @if $navDrawer == "on"{
     @include beforeTablet{
-        @include posTR(10px, 10px);
- 
-        .hamb{
-            @include posTR(0, 0);
-        }
+        .navMain{
+            @include posTR(10px, 10px);
 
-        .navOpen{
-            @include borderRadius($navBorderRadius); 
-            width: 90px;
-            height: $navDrawerHambHeight;
-            background-color: $bgNavHamburger;
-            background-position: 10px center;
-            background-size: 15px;
-            border: 1px solid $bcNavOpen!important;
-            padding: 0 10px 0 30px;
-            font-size: 1rem;
-            line-height: calc(#{$navDrawerHambHeight} + 5px);
-        }
-
-        .navClose{
-            @include squareSize(45px);
-            background-size: 20px;
-            border: 1px solid $bcNavClose!important;
-        }
-
-        > ul{
-            @include borderStyleR($bcNavBT);
-
-            li{
-                &, a, .topLevelItem{
-                    @include equalHeightAndLineHeight(45px);
-                }
-
-                a, .topLevelItem{
-                    font-size: 1rem;
-                    text-align: center;
-                }     
-
-                &.backMenu .topLevelItem{
-                    background-image: url('/nuevo/img/nav_arrowL.svg');
-                }     
-
-                &.backMenu{    
-                    @include borderStyleB(2px, $bcBackMenuColour);
-
-                    & + .backMenu{
-                        border-color: $bcGreyD transparent $bcBackMenuColour;
-                        border-width: 1px 0 2px;
-                        border-style: solid;
-                    }
-
-                    .topLevelItem{
-                        color: $white!important;
-
-                        &.open{
-                            background-image: url('/nuevo/img/nav_arrowD.svg'); 
-                        }
-                    }
-                }    
+            .hamb{
+                @include posTR(0, 0);
             }
-        }
 
-        @if $navHasSub == "on"{
-            .subMenu{
+            .navOpen{
+                @include borderRadius($navBorderRadius); 
+                width: 90px;
+                height: $navDrawerHambHeight;
+                background-color: $bgNavHamburger;
+                background-position: 10px center;
+                background-size: 15px;
+                border: 1px solid $bcNavOpen!important;
+                padding: 0 10px 0 30px;
+                font-size: 1rem;
+                line-height: calc(#{$navDrawerHambHeight} + 5px);
+            }
+
+            .navClose{
+                @include squareSize(45px);
+                background-size: 20px;
+                border: 1px solid $bcNavClose!important;
+            }
+
+            > ul{
+                @include borderStyleR($bcNavBT);
+
                 li{
-                    & + li{
-                        @include borderStyleT($bcNavSubItemBT);
+                    &, a, .topLevelItem{
+                        @include equalHeightAndLineHeight(45px);
                     }
-                } 
+
+                    a, .topLevelItem{
+                        font-size: 1rem;
+                        text-align: center;
+                    }     
+
+                    &.backMenu .topLevelItem{
+                        background-image: url('/nuevo/img/nav_arrowL.svg');
+                    }     
+
+                    &.backMenu{    
+                        @include borderStyleB(2px, $bcBackMenuColour);
+
+                        & + .backMenu{
+                            border-color: $bcGreyD transparent $bcBackMenuColour;
+                            border-width: 1px 0 2px;
+                            border-style: solid;
+                        }
+
+                        .topLevelItem{
+                            color: $white!important;
+
+                            &.open{
+                                background-image: url('/nuevo/img/nav_arrowD.svg'); 
+                            }
+                        }
+                    }    
+                }
+            }
+
+            @if $navHasSub == "on"{
+                .subMenu{
+                    li{
+                        & + li{
+                            @include borderStyleT($bcNavSubItemBT);
+                        }
+                    } 
+                }
             }
         }
     }
