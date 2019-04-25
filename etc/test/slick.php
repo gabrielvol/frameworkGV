@@ -49,10 +49,10 @@
             $fotoSliderMain17 = '17';
             $fotoSliderMain18 = '18';
             $fotoSliderMain19 = '19';
-            $fotoSliderMain20 = '10';
+            $fotoSliderMain20 = '20';
             include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.main.inc.php');
         ?>                
-        <ul class=" slick mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
+        <ul class="slick mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
             <?php if(isset($fotoSliderMain01)): ?>
             <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($fotoSliderMain02)): ?>
