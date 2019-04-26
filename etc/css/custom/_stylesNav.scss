@@ -46,12 +46,15 @@
         @if $navHasSub == "on"{
             .subMenu{
                 $borderRadiusB: 10px;
+                $subMenuW: 200px;
                 
                 @include borderRadiusB($borderRadiusB);
                 position: absolute;
                 left: 0;
                 top: 40px;
+                width: $subMenuW;
                 padding-bottom: 5px;
+                margin-left: calc(-1 * (#{$subMenuW} / 2));
                 
                 &,
                 li{}
