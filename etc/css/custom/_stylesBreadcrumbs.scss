@@ -1,0 +1,49 @@
+/* =============================================================================
+   Breadcrumb Styles | Custom [stylesBreadcrumbs.scss]
+   ========================================================================== */
+.breadcrumbs{
+    @include beforeTablet{
+        display: none;
+    }
+    
+    @include afterTablet{
+        @include borderStyleT($bcGreyD, 2px);
+        background-color: $bgGreyL;
+        padding-left: 30px;
+        
+        &,
+        li,
+        a{
+            @include equalHeightAndLineHeight(35px);
+        }
+
+        li{
+            float: left;
+            padding-right: 10px;
+            font-size: 0.7rem;
+            
+            &,
+            a{
+                color: $greyD;
+            }
+            
+            a{
+                font-size: 1em;
+            }
+            
+            &:first-child{
+                color: $greyXD;
+            }
+
+            & + li{
+                &::before{
+                    content: "\0203A  ";
+                    display: block;
+                    float: left;
+                    font-size: 0.9rem;
+                    white-space: pre;
+                }
+            }
+        }
+    }
+}
