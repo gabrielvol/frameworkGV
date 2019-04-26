@@ -15,10 +15,10 @@ $navSubFontFamilyAT:         $navFontFamilyAT;
 $navSubCurrentFontFamilyAT:  $navSubFontFamilyAT;
 
     
-$navFontFamilyATL:           $mainFontFamily;
-$navSubFontFamilyATL:        $navFontFamilyATL;
-
+$navFontFamilyATL:           $navFontFamilyAT;
 $navCurrentFontFamilyATL:    $navFontFamilyATL;
-$navSubCurrentFontFamilyATL: $navCurrentFontFamilyATL;
+
+$navSubFontFamilyATL:        $navSubFontFamilyAT;
+$navSubCurrentFontFamilyATL: $navSubFontFamilyATL;
  
 $hamburgerFontFamily:        $arial;
