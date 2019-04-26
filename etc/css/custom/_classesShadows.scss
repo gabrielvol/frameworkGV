@@ -17,18 +17,28 @@
     box-shadow: inset 0 0 10px 0 $greyD;
 }
 
+// Background Shadows
+$bgShadowTurl: url('/nuevo/img/bg_shadowT.png');
+$bgShadowBurl: url('/nuevo/img/bg_shadowB.png');
+
 .bgShadowT,
-.bgShadowB{
+.bgShadowB,
+.bgShadowV{
     background-repeat: repeat-x;
     background-size: auto 20px;
 }
 
 .bgShadowT{
-    background-image: url('/nuevo/img/bg_shadowT.png');
+    background-image: $bgShadowTurl;
     background-position: center top;
 }
 
 .bgShadowB{
-    background-image: url('/nuevo/img/bg_shadowB.png');
+    background-image: $bgShadowBurl;
     background-position: center bottom;
+}
+
+.bgShadowV{
+    background-image: $bgShadowTurl, $bgShadowBurl;
+    background-position: center top, center bottom;
 }
