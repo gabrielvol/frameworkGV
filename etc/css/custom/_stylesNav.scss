@@ -12,6 +12,14 @@
             width: calc(100% - #{$logoWAT});
         }
         
+        @if $navFixed == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: 0 0 7px $black;
+        }
+        
         .mainMenu{
             > li{
                 &.current{
