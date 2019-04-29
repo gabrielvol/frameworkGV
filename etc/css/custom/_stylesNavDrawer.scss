@@ -20,7 +20,7 @@
                 border: 1px solid $bcNavOpen!important;
                 padding: 0 10px 0 30px;
                 font-size: 1rem;
-                line-height: calc(#{$navDrawerHambHeight} + 5px);
+                line-height: $navDrawerHambHeight;
             }
 
             .navClose{

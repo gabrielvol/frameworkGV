@@ -3,8 +3,8 @@
    ========================================================================== */
 #header{
     /*
-    z-index: $zIndexHeader;
     position: relative;
+    z-index: $zIndexHeader;
     */
     
     .logoH{
@@ -12,12 +12,13 @@
         
         &, a{}
         
-        &, a, img{}
+        &,
+        a,
+        img{}
     }
     
     @include mobileOnly{
-        .logoH{
-        }
+        .logoH{}
     }
     
     @include afterMobileLandscape{
@@ -46,17 +47,29 @@
         }
         
         .logoH{
-            height: $logoHBT;
-            margin-right: auto;
-            margin-left: auto; 
+            @if $navAcc == "on"{
+                height: $logoHBT;
+                margin-right: auto;
+                margin-left: auto;
             
-            a{
-                width: 200px;
-            }
+                a{
+                    width: 200px;
+                }             
             
-            a,
-            img{
-                height: 100%;
+                a,
+                img{
+                    height: 100%;
+                }
+                
+            } @else {
+                width: $logoWBT;
+                margin-right: auto;
+                margin-left: auto; 
+            
+                a,
+                img{
+                    width: 100%;
+                }         
             }
             
             @if $navDrawer == "on"{
@@ -67,7 +80,7 @@
                     z-index: $zIndexLogoHClicked;
                     top: 0;
                     left: 0;
-                    width: calc(#{$navDrawerWidth}- 5px);
+                    width: calc(#{$navDrawerWidth} - 5px);
                     max-width: $navDrawerMaxWidth;
                     height: $logoHClickedFH;
                     background-color: $bgNavBT;
@@ -75,8 +88,7 @@
                     padding-bottom: $logoHClickedPB;
                     margin: 0;
 
-                    a,
-                    img{
+                    a, img{
                         width: auto;
                         height: 100%;
                     }
