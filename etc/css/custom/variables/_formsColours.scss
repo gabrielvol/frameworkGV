@@ -4,35 +4,35 @@
 ///**Forms:** 
     ///Aquí se declaran las variables de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
     ///con sus `:hover`.
-$formLabelFontColour: $mainFontColour;
-$formLabelFontColourHover: darken($formLabelFontColour, 15%);
+$formLabelFontColour:       $mainFontColour;
+$formLabelFontColourHover:  darken($formLabelFontColour, 15%);
 
-$formInputFontColour: $mainFontColour;
-$formInputFontColourHover: $formInputFontColour;
+$formInputFontColour:       $mainFontColour;
+$formInputFontColourHover:  $formInputFontColour;
 
 $formPlaceholderFontColour: lighten($mainFontColour, 10%);
  
-$formInputBcColour: $mainBcColour;
-$formInputBcColourHover: $mainBcColourHover;
-$formInputBgColour: $white;
-$formInputBgColourHover: $formInputBgColour;
+$formInputBcColour:         $mainBcColour;
+$formInputBcColourHover:    $mainBcColourHover;
+$formInputBgColour:         $white;
+$formInputBgColourHover:    $formInputBgColour;
 
-$formInputErrorMsgColour: $errorColour; 
+$formInputErrorMsgColour:   $errorColour; 
 
     //Submit
-$formSubmitFontColour: $black;
+$formSubmitFontColour:      $black;
 $formSubmitFontColourHover: $formSubmitFontColour;
 
-$formSubmitBcColour: $mainBcColour;
-$formSubmitBcColourHover: $formSubmitBcColour;
+$formSubmitBcColour:        $mainBcColour;
+$formSubmitBcColourHover:   $formSubmitBcColour;
 
-$formSubmitBgColour: $mainBgColour;
-$formSubmitBgColourHover: $formSubmitBgColour;
+$formSubmitBgColour:        $mainBgColour;
+$formSubmitBgColourHover:   $formSubmitBgColour;
 
     //Validation
-$invalidMandatoryMsgBgColour: $bgError;
+$invalidMandatoryMsgBgColour:   $bgError;
 $invalidMandatoryMsgFontColour: $white;
-$formInputErrorMsgFontColour: $errorColour;
+$formInputErrorMsgFontColour:   $errorColour;
 
     //Status Messages
-$bgStatusOKpopUp: $bgWhite;
+$bgStatusOKpopUp:               $bgWhite;

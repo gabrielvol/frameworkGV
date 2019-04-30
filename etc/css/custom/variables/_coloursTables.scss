@@ -2,16 +2,16 @@
    Tables Colour Variables | Custom [coloursTables.scss]
    ========================================================================== */
 // Table Border Colours
-$mainBcColourTable: $bcGrey;
-$secondaryBcColourTable: $bcGreyXL;
+$mainBcColourTable:         $bcGrey;
+$secondaryBcColourTable:    $bcGreyXL;
 
 // Table Background Colours
-$mainBgColourTable: #888;
-$secondaryBgColourTable: #bbb;
-$bgGreyTable: #eee;
+$mainBgColourTable:         #888;
+$secondaryBgColourTable:    #bbb;
+$bgGreyTable:               #eee;
 
 //Striped Table
-$bgColourTableStripedThead: #aaa;
-$bgColourTableStripedOdd: #eee;
-$bgColourTableStripedEven: $white;
+$bgColourTableStripedThead:     #aaa;
+$bgColourTableStripedOdd:       #eee;
+$bgColourTableStripedEven:      $white;
 $bcColourTableStripedSeparator: darken($bgColourTableStripedOdd, 60%);

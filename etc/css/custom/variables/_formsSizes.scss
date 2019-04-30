@@ -3,25 +3,25 @@
    ========================================================================== */
 //Responsive Values
     // Form
-$formWidthMO:      270px!important;
-$formWidthA500:    400px!important;
-$formWidth600Only: 520px!important;
-$formWidthAT:      $formWidth600Only;
-$formWidthTO:      $formWidthAT;
-$formWidthATL:     520px; //No debe llevar !important
-$formWidthAD:      $formWidthATL; //No debe llevar !important
+$formWidthMO:       270px!important;
+$formWidthA500:     400px!important;
+$formWidth600Only:  520px!important;
+$formWidthAT:       $formWidth600Only;
+$formWidthTO:       $formWidthAT;
+$formWidthATL:      520px; //No debe llevar !important
+$formWidthAD:       $formWidthATL; //No debe llevar !important
     
     // Labels
-$formLabelWidthMO:  $formWidthMO;
-$formLabelWidthBT:  $hundred;
-$formLabelWidthTO:  $formWidthTO;
-$formLabelWidthATL: $formWidthATL;
-$formLabelWidthAD:  $formWidthAD;
+$formLabelWidthMO:      $formWidthMO;
+$formLabelWidthBT:      $hundred;
+$formLabelWidthTO:      $formWidthTO;
+$formLabelWidthATL:     $formWidthATL;
+$formLabelWidthAD:      $formWidthAD;
 
-$formLabelHeightBT:  30px;
-$formLabelHeightTO:  $formLabelHeightBT;
-$formLabelHeightATL: 25px;
-$formLabelHeightAD:  $formLabelHeightATL; 
+$formLabelHeightBT:     30px;
+$formLabelHeightTO:     $formLabelHeightBT;
+$formLabelHeightATL:    25px;
+$formLabelHeightAD:     $formLabelHeightATL; 
 
     // Sug
 $formLabelSugHeightBT:  20px;
@@ -30,44 +30,44 @@ $formLabelSugHeightATL: $formLabelSugHeightTO;
 $formLabelSugHeightAD:  $formLabelSugHeightATL;
 
     // Inputs
-$formInputWidthMO:  $formLabelWidthMO;
-$formInputWidthBT:  $formLabelWidthBT;
-$formInputWidthTO:  $formLabelWidthTO;
-$formInputWidthATL: $formLabelWidthATL; //No debe llevar !important
-$formInputWidthAD:  $formLabelWidthAD; //No debe llevar !important
+$formInputWidthMO:      $formLabelWidthMO;
+$formInputWidthBT:      $formLabelWidthBT;
+$formInputWidthTO:      $formLabelWidthTO;
+$formInputWidthATL:     $formLabelWidthATL; //No debe llevar !important
+$formInputWidthAD:      $formLabelWidthAD; //No debe llevar !important
 
-$formInputHeightBT:  45px;
-$formInputHeightTO:  $formInputHeightBT;
-$formInputHeightATL: 35px; //No debe llevar !important
-$formInputHeightAD:  $formInputHeightATL; //No debe llevar !important
+$formInputHeightBT:     45px;
+$formInputHeightTO:     $formInputHeightBT;
+$formInputHeightATL:    35px; //No debe llevar !important
+$formInputHeightAD:     $formInputHeightATL; //No debe llevar !important
 
     // Radio Inputs
 $formInputRadioHeightBT:  35px;
 $formInputRadioHeightTO:  35px;
     
     // Submit
-$formSubmitWidthMO:  90%;
-$formSubmitWidthMLO: 60%!important;
-$formSubmitWidthTO:  50%!important;
-$formSubmitWidthATL: 300px;
-$formSubmitWidthAD:  $formSubmitWidthATL;
+$formSubmitWidthMO:     90%;
+$formSubmitWidthMLO:    60%!important;
+$formSubmitWidthTO:     50%!important;
+$formSubmitWidthATL:    300px;
+$formSubmitWidthAD:     $formSubmitWidthATL;
 
-$formSubmitHeightValueBT: 50px;
-$formSubmitLineHeightValueBT: $formSubmitHeightValueBT;
+$formSubmitHeightValueBT:       50px;
+$formSubmitLineHeightValueBT:   $formSubmitHeightValueBT;
 
-$formSubmitHeightValueTO: 45px;
-$formSubmitLineHeightValueTO: $formSubmitHeightValueTO;
+$formSubmitHeightValueTO:       45px;
+$formSubmitLineHeightValueTO:   $formSubmitHeightValueTO;
 
-$formSubmitHeightValueATL: 45px;
-$formSubmitLineHeightValueATL: $formSubmitHeightValueATL;
+$formSubmitHeightValueATL:      45px;
+$formSubmitLineHeightValueATL:  $formSubmitHeightValueATL;
 
-$formSubmitHeightValueAD: $formSubmitHeightValueATL;
-$formSubmitLineHeightValueAD: $formSubmitLineHeightValueATL;
+$formSubmitHeightValueAD:       $formSubmitHeightValueATL;
+$formSubmitLineHeightValueAD:   $formSubmitLineHeightValueATL;
 
     //Search Form
-$searchFormWidthBT: 270px;
-$searchFormWidthAT: $searchFormWidthBT;
-$searchFormWidthAL: $searchFormWidthAT;
-$searchFormSubmitValueBT: 30px;
-$searchFormSubmitValueAT: $searchFormSubmitValueBT;
-$searchFormSubmitValueAL: $searchFormSubmitValueAT;
+$searchFormWidthBT:             270px;
+$searchFormWidthAT:             $searchFormWidthBT;
+$searchFormWidthAL:             $searchFormWidthAT;
+$searchFormSubmitValueBT:       30px;
+$searchFormSubmitValueAT:       $searchFormSubmitValueBT;
+$searchFormSubmitValueAL:       $searchFormSubmitValueAT;

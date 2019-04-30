@@ -2,20 +2,20 @@
    Nav Sizes Variables | Custom [navSizes.scss]
    ========================================================================== */
     //General
-$navBorderRadius: 4px;
+$navBorderRadius:       4px;
 
     //Nav List
-$navListWidthBT: 200px;
+$navListWidthBT:        200px;
 
     //Nav Drawer
-$navDrawerWidth: 70vw;
-$navDrawerMaxWidth: 300px;
-$navDrawerHambHeight: 40px;
-$logoHClickedH: 50px;
-$logoHClickedPT: 50px;
-$logoHClickedPB: 10px;
-$logoHClickedFH: calc(#{$logoHClickedH} + #{$logoHClickedPT} + #{$logoHClickedPB});
+$navDrawerWidth:        70vw;
+$navDrawerMaxWidth:     300px;
+$navDrawerHambHeight:   40px;
+$logoHClickedH:         50px;
+$logoHClickedPT:        50px;
+$logoHClickedPB:        10px;
+$logoHClickedFH:        calc(#{$logoHClickedH} + #{$logoHClickedPT} + #{$logoHClickedPB});
 
     //Nav Accordion
-$navAccHambHeight: 40px;
-$navAccLiH: 45px;
+$navAccHambHeight:      40px;
+$navAccLiH:             45px;

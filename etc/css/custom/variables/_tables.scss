@@ -1,8 +1,8 @@
 /* =============================================================================
    Tables Variables | Custom [tables.scss]
    ========================================================================== */
-$tableWBT: $hundred;
-$tableWAT: 700px;
+$tableWBT:  $hundred;
+$tableWAT:  700px;
 $tableWATL: 970px;
 
 //Custom Sizes
@@ -11,8 +11,8 @@ $tableSizesMapBeforeTablet:(
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesBeforeTablet'
     
-    tableWidthBig: 1000px,
-    tableWidthSmall: 500px
+    tableWidthBig:      1000px,
+    tableWidthSmall:    500px
     
 );
 $tableSizesMapTablet:(

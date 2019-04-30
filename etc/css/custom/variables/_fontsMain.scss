@@ -4,25 +4,25 @@
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
 $fontFamiliesSiteFontsMap:(    
-    arial: Arial,
+    arial:  Arial,
     roboto: Roboto,
     //timesNewRoman: 'Times New Roman',
 );
 
 // Chequear Arial, Roboto o Times como Main Font Family
-$arial: map-get($fontFamiliesSiteFontsMap, arial);
-$roboto: map-get($fontFamiliesSiteFontsMap, roboto);
+$arial:     map-get($fontFamiliesSiteFontsMap, arial);
+$roboto:    map-get($fontFamiliesSiteFontsMap, roboto);
 //$timesNewRoman: map-get($fontFamiliesSiteFontsMap, timesNewRoman);
 
-//$openSansL: map-get($openSansMap, openSansL);
-//$openSans: map-get($openSansMap, openSans);
-//$openSansI: map-get($openSansMap, openSansI);
-//$openSansB: map-get($openSansMap, openSansB);
-//$openSansBI: map-get($openSansMap, openSansBI);
+//$openSansL:   map-get($openSansMap, openSansL);
+//$openSans:    map-get($openSansMap, openSans);
+//$openSansI:   map-get($openSansMap, openSansI);
+//$openSansB:   map-get($openSansMap, openSansB);
+//$openSansBI:  map-get($openSansMap, openSansBI);
 
     //Creamos la variable de la fuente principal del sitio
-$mainFontFamily: $arial;
-$mainFontFamilyBold: $mainFontFamily;
+$mainFontFamily:        $arial;
+$mainFontFamilyBold:    $mainFontFamily;
 
 //Main font Stack    
 $mainFontStack:(
@@ -38,19 +38,19 @@ $mainFontStack:(
 $mainFontWeight: 400;
 $mainLineHeight: 1.4;
 
-$mainFontSize: 1rem;
-$mainFontSizeParagraphBT: 0.9rem;
-$mainFontSizeParagraphAT: 1rem;
-$mainFontSizeParagraphATL: $mainFontSizeParagraphAT;
+$mainFontSize:              1rem;
+$mainFontSizeParagraphBT:   0.9rem;
+$mainFontSizeParagraphAT:   1rem;
+$mainFontSizeParagraphATL:  $mainFontSizeParagraphAT;
 
-$formFieldFontSizeBT: 0.9rem;
-$formFieldFontSizeAT: 0.9rem;
-$formFieldFontSizeATL: $formFieldFontSizeAT;
+$formFieldFontSizeBT:       0.9rem;
+$formFieldFontSizeAT:       0.9rem;
+$formFieldFontSizeATL:      $formFieldFontSizeAT;
 
-$headingMargin: 0 0 0.8em;
-$textMargin: 0;
-$textMarginSibling: 0.8em 0 0;
-$headingMarginSibling: 1.2em 0 0;
+$headingMargin:             0 0 0.8em;
+$textMargin:                0;
+$textMarginSibling:         0.8em 0 0;
+$headingMarginSibling:      1.2em 0 0;
 
 //Heading Sizes
 $fontSizesMapMobile:(
@@ -79,6 +79,6 @@ $fontSizesMapDesktop:(
 );
 
 // Useful Text Format
-$fontSizeReset: 1rem;
-$fontSizeResetEM: 1em;
-$lineHeightReset: 1em;
+$fontSizeReset:     1rem;
+$fontSizeResetEM:   1em;
+$lineHeightReset:   1em;
