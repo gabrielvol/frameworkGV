@@ -102,13 +102,7 @@
         }
     }
     
-    @include afterTablet{
-        .logoH{
-            a, img{
-                width: 100%;
-            }
-        }
-        
+    @include afterTablet{        
         @if $headerFixed == "on"{
             position: fixed;
             top: 0;
@@ -138,7 +132,7 @@
         
         .logoH{
             position: relative;
-            z-index: $zIndexLogoH;
+            z-index: $zIndexLogoH;   
             
             @if $floatedLogoNav == "on"{
                 box-sizing: border-box;
@@ -147,6 +141,10 @@
                 padding-right: 20px;
                 padding-left: 20px;
             }
+            
+            a, img{
+                width: 100%;
+            }         
         }
     }
     
