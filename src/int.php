@@ -3,10 +3,10 @@
     
     $int = 1;
     
-    $title = "PáginaInterna | PáginaSinTítulo";
+    $title   = "PáginaInterna | PáginaSinTítulo";
     //$titleGB = "PáginaInterna | UntitledPage";
     
-    $mdesc = "";
+    $mdesc   = "";
     //$mdescGB = "";
     
 //Open Graph Start

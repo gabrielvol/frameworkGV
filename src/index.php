@@ -3,10 +3,10 @@
     
     $index = 1;
     
-    $title = "PáginaSinTítulo";
+    $title   = "PáginaSinTítulo";
     //$titleGB = "UntitledPage";
     
-    $mdesc = "";
+    $mdesc   = "";
     //$mdescGB = "";
     
 //Open Graph Start
