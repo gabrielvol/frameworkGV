@@ -29,7 +29,7 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.variableCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
 ?>
 <link href="/nuevo/_source/css/datepicker.css" rel="stylesheet">
 <script src="/nuevo/_source/js/jquery-ui-datepicker.js"></script>

@@ -9,7 +9,7 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.variableCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
 ?>
 </head>
 <body>
