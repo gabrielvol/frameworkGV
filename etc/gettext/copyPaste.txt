@@ -13,9 +13,17 @@
 <p><?php echo _("
 "); ?></p>
 
+<p><?php echo _(""); ?>.</p>
+<p><?php echo _("
+"); ?>.</p>
+
 <p><?php echo _(''); ?></p>
 <p><?php echo _('
 '); ?></p>
+
+<p><?php echo _(''); ?>.</p>
+<p><?php echo _('
+'); ?>.</p>
 
 echo '<h1 class="'._("text").'">';
 $phpVariable = _('text');
