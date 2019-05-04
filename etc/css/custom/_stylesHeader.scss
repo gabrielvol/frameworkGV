@@ -31,7 +31,6 @@
 
     @include beforeTablet{
         box-sizing: border-box;
-        height: $headerHBT;
         padding-top: $headerPaddingTopBT;
         padding-bottom: $headerPaddingBottomBT;
         
@@ -44,6 +43,12 @@
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
+        }
+        
+        @if $navAcc == "on"{
+            height: $headerHBTAcc;
+        } @else {
+            height: $headerHBT;
         }
         
         .logoH{

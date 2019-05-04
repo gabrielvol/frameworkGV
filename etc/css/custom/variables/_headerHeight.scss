@@ -5,7 +5,8 @@ $topperHeight:          50px;
 
 $headerPaddingTopBT:    20px;
 $headerPaddingBottomBT: 15px;
-$headerHBT:             calc(#{$headerPaddingTopBT} + #{$headerPaddingBottomBT} + #{$logoHBT});
+$headerHBTAcc:          calc(#{$headerPaddingTopBT} + #{$headerPaddingBottomBT} + #{$logoHBT});
+$headerHBT:             auto;
 
 $headerHAT:             90px;
 $headerHATL:            120px;
