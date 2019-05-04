@@ -185,7 +185,5 @@
             </div>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-        <script src="/nuevo/etc/js/_contacto.js"></script>
-        <script src="/nuevo/etc/js/_form.js"></script>
 </body>
 </html>

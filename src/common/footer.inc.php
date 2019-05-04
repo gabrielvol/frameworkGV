@@ -33,10 +33,4 @@
     
 <?php include('popups.inc.php'); ?>
 
-<!--<script src="/nuevo/js/slick.js"></script>-->
-<!--<script src="/nuevo/js/lightbox.min.js"></script>-->
-
-<script src="/nuevo/js/_global.js"></script>
-<script src="/nuevo/js/_navDrawer.js"></script>
-<!--<script src="/nuevo/js/_topper.js"></script>-->
-<!--<script src="/nuevo/js/_slick.js"></script>-->
+<?php include('footer.js.inc.php'); ?>

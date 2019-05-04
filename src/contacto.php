@@ -301,8 +301,5 @@
         </div>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
-    <script src="/nuevo/js/scrollKeep.js"></script>
-    <script src="/nuevo/js/_scrollKeep.js"></script>
-    <script src="/nuevo/etc/js/_form.js"></script>
 </body>
 </html>
