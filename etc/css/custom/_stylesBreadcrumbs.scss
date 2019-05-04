@@ -2,48 +2,78 @@
    Breadcrumb Styles | Custom [stylesBreadcrumbs.scss]
    ========================================================================== */
 .breadcrumbs{
+    ul{
+        @include borderStyleT($bcGreyD, 2px);
+        background-color: $bgGreyL;
+    }
+    
+    li{            
+        &,
+        a{
+            color: $greyD;
+        }
+
+        a{
+            font-size: 1em;
+        }
+        
+        & + li{            
+            &:first-child{
+                color: $greyXD;
+            }
+            
+            &::before{
+                content: "\0203A  ";
+                display: block;
+                float: left;
+                font-size: 0.9rem;
+                white-space: pre;
+            }
+        }
+    }
+    
     @include beforeTablet{
-        display: none;
+        /*display: $none;*/
+        li{
+            clear: both;
+            font-size: 1rem;
+            
+            &:first-child{
+                @include borderStyleB($bcCyan, 2px);
+                @include equalHeightAndLineHeight(35px);
+                margin-bottom: 10px;
+                color: $greyD;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+            }
+        }
+        
+        .cat{}
+        
+        .item{
+            font-size: 2rem;
+            
+            &::before{
+                display: none;
+            }
+        }
     }
     
     @include afterTablet{
-        @include borderStyleT($bcGreyD, 2px);
-        background-color: $bgGreyL;
-        padding-left: 30px;
-        
-        &,
+        ul,
         li,
         a{
             @include equalHeightAndLineHeight(35px);
+        }
+        
+        ul{
+            padding-left: 30px;
         }
 
         li{
             float: left;
             padding-right: 10px;
             font-size: 0.7rem;
-            
-            &,
-            a{
-                color: $greyD;
-            }
-            
-            a{
-                font-size: 1em;
-            }
-            
-            &:first-child{
-                color: $greyXD;
-            }
-
-            & + li{
-                &::before{
-                    content: "\0203A  ";
-                    display: block;
-                    float: left;
-                    font-size: 0.9rem;
-                    white-space: pre;
-                }
-            }
         }
     }
 }
