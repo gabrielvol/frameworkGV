@@ -34,6 +34,12 @@
         padding-top: $headerPaddingTopBT;
         padding-bottom: $headerPaddingBottomBT;
         
+        @if $navAcc == "on"{
+            height: $headerHBTAcc;
+        } @else {
+            height: $headerHBT;
+        }
+        
         @if $headerFixed == "on" and $navDrawer == "off"{
             position: fixed;
             top: 0;
@@ -45,17 +51,12 @@
             }
         }
         
-        @if $navAcc == "on"{
-            height: $headerHBTAcc;
-        } @else {
-            height: $headerHBT;
-        }
-        
         .logoH{
+            margin-right: auto;
+            margin-left: auto;
+                
             @if $navAcc == "on"{
                 height: $logoHBT;
-                margin-right: auto;
-                margin-left: auto;
             
                 a{
                     width: 200px;
@@ -68,8 +69,6 @@
                 
             } @else {
                 width: $logoWBT;
-                margin-right: auto;
-                margin-left: auto; 
             
                 a,
                 img{
