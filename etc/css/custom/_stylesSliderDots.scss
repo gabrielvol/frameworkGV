@@ -1,0 +1,53 @@
+/* =============================================================================
+   Slick Dots Styles | Custom [stylesSliderDots.scss]
+   ========================================================================== */
+@if $sliderDots == "on"{
+    .slickDots{
+        $sliderDotWidth: 15px;
+        $sliderDotHeight: $sliderDotWidth;
+        $sliderDotWidthHeight: $sliderDotWidth $sliderDotHeight;
+        $pagSeparation: 10px;
+        $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
+
+        list-style: none;
+        position: relative;
+        z-index: $zIndexSlickNextPrevDots;
+        top: calc(-1 * #{$slickDotMarginTopValue});
+        height: $sliderDotHeight;
+        margin: 0 auto;
+        text-align: center;
+
+        li{
+            display: inline;
+            float: $none;
+            height: $sliderDotHeight;
+
+            &, button{
+                @include squareSize($sliderDotWidth);
+            }
+
+            button{
+                @include bgSvg(slider_pag, $sliderDotWidth);
+                display: inline-block;
+                border: $none;
+                text-indent: -9999px;
+            }
+
+            & + li{
+                margin-left: $pagSeparation;
+            }
+
+            &:focus, &:hover{
+                button{
+                    @include bgSvg(slider_pagHover, $sliderDotWidthHeight);
+                }
+            }
+
+            &.slickActive{
+                button{
+                    @include bgSvg(slider_pagSel, $sliderDotWidthHeight);
+                }
+            }
+        }
+    }
+}
