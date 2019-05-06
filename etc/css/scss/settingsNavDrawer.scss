@@ -17,7 +17,7 @@
                 } 
             }
 
-            ul{
+            .mainMenu{
                 z-index: $zIndexNavUlDrawer;
 
                 &, .subMenu{
@@ -73,7 +73,7 @@
                     }
 
                     .current{
-                        background-image: url('/nuevo/img/nav_arrowLsub.svg');
+                        background-image: url('/clientes/frarenuevo/img/nav_arrowLsub.svg');
                         background-color: $bgNavSubCurrentItemBT;
                         background-repeat: no-repeat;
                         background-position: right 10px center;
