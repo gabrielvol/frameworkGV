@@ -39,7 +39,11 @@ nav{
     }
    
     @include beforeTablet{
-        position: fixed; 
+        @if $hamburgerOnly{
+            position: absolute;
+        } @else{
+            position: fixed; 
+        }
                 
         .hamb{
             @include transition(1s);   

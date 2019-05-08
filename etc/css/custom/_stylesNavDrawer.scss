@@ -11,16 +11,22 @@
             }
 
             .navOpen{
-                @include borderRadius($navBorderRadius); 
-                width: 90px;
-                height: $navDrawerHambHeight;
+                @if $hamburgerOnly == "on"{
+                    @include borderRadius($navBorderRadius); 
+                    width: 90px;
+                    height: $navDrawerHambHeight;
+                    border: 1px solid $bcNavOpen!important;
+                    padding: 0 10px 0 30px;
+                    font-size: 1rem;
+                    line-height: $navDrawerHambHeight;
+                } @else {
+                    @include squareSize(45px);
+                    padding: $zero;
+                    text-indent: -9999px;
+                }
                 background-color: $bgNavHamburger;
                 background-position: 10px center;
                 background-size: 15px;
-                border: 1px solid $bcNavOpen!important;
-                padding: 0 10px 0 30px;
-                font-size: 1rem;
-                line-height: $navDrawerHambHeight;
             }
 
             .navClose{
