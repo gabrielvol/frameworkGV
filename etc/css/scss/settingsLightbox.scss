@@ -1,12 +1,11 @@
 /* =============================================================================
    Lightbox Settings | Etc [settingsLightbox.scss]
    ========================================================================== */
-body::after {
-    content: url('/nuevo/img/lightbox/close.png') url('/nuevo/img/lightbox/loading.gif') url('/nuevo/img/lightbox/prev.png') url('/nuevo/img/lightbox/next.png');
+body::after{
+    content: url('/nuevo/img/lightbox_close.png') url('/nuevo/img/lightbox_loading.gif') url('/nuevo/img/lightbox_prev.png') url('/nuevo/img/lightbox_next.png');
     display: none;
 }
-
-.lightboxOverlay {
+.lightboxOverlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -16,8 +15,7 @@ body::after {
     opacity: 0.8;
     display: none;
 }
-
-.lightbox {
+.lightbox{
     position: absolute;
     left: 0;
     width: 100%;
@@ -26,7 +24,7 @@ body::after {
     line-height: 0;
     font-weight: normal;
 
-    .lb-image {
+    .lb-image{
         @include borderRadius(3px);
         display: block;
         height: auto;
@@ -38,8 +36,7 @@ body::after {
         }
     }
 }
-
-.lb-outerContainer {
+.lb-outerContainer{
     @include squareSize(250px);
     @include borderRadius(4px);
     position: relative;
@@ -53,12 +50,10 @@ body::after {
       clear: both;      
     }
 }
-
-.lb-container {
+.lb-container{
     padding: 4px;
 }
-
-.lb-loader {
+.lb-loader{
     position: absolute;
     top: 43%;
     left: 0;
@@ -67,16 +62,14 @@ body::after {
     text-align: center;
     line-height: 0;
 }
-
-.lb-cancel {
+.lb-cancel{
     @include squareSize(32px);
     display: block;
     margin: 0 auto;
-    background-image: url('/nuevo/img/lightbox/loading.gif');
+    background-image: url('/nuevo/img/lightbox_loading.gif');
     background-repeat: no-repeat;
 }
-
-.lb-nav {
+.lb-nav{
     @include squareSize(100%);
     position: absolute;
     top: 0;
@@ -85,12 +78,13 @@ body::after {
     
     & > .nav{
       left: 0;      
-    }
+    }    
     a{
         outline: none;
         background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
         
-        &.lb-prev, &.lb-next{
+        &.lb-prev,
+        &.lb-next{
             @include opacityCustomHover(00, 100);
             @include transition(0.6s);
         }
@@ -98,24 +92,22 @@ body::after {
             width: 34%;
             left: 0;
             float: left;
-            background: url('/nuevo/img/lightbox/prev.png') left 48% no-repeat;
+            background: url('/nuevo/img/lightbox_prev.png') left 48% no-repeat;
         }
         &.lb-next{
             width: 64%;
             right: 0;
             float: right;
-            background: url('/nuevo/img/lightbox/next.png') right 48% no-repeat; 
+            background: url('/nuevo/img/lightbox_next.png') right 48% no-repeat; 
         }
     }
 }
-
-.lb-prev, .lb-next {
+.lb-prev, .lb-next{
     height: 100%;
     cursor: pointer;
     display: block;
 }
-
-.lb-dataContainer {
+.lb-dataContainer{
     @include borderRadiusB(4px);
     margin: 0 auto;
     padding-top: 5px;
@@ -128,40 +120,39 @@ body::after {
       clear: both;
     }
 }
-
-.lb-data {
+.lb-data{
     padding: 0 4px;
     color: #ccc;
 
-    .lb-details {
+    .lb-details{
         width: 85%;
         float: left;
         text-align: left;
         line-height: 1.1;
     }
-    .lb-caption {
+    .lb-caption{
         font-size: 13px;
         font-weight: bold;
         line-height: 1;
     }
-    .lb-number {
+    .lb-number{
         display: block;
         clear: left;
         padding-bottom: 1rem;
         font-size: 12px;
         color: #999999;
     }
-    .lb-close {
+    .lb-close{
         @include squareSize(30px);
         @include opacityCustomHover(70, 100);
         @include transition(0.2s);
         display: block;
         float: right;
-        background: url('/nuevo/img/lightbox/close.png') top right no-repeat;
+        background: url('/nuevo/img/lightbox_close.png') top right no-repeat;
         text-align: right;
         outline: none;
         
-        &:focus, &:hover {
+        &:focus, &:hover{
             cursor: pointer;
         }
     }
