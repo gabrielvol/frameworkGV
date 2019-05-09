@@ -1,6 +1,10 @@
 /* =============================================================================
    Lightbox Styles | Custom [stylesLightbox.scss]
    ========================================================================== */
+.lighboxOverlay{
+    background-color: $bgBlack;
+}
+
 .lb-data .lb-caption,
 .lb-number{
     font-family: $mainFontFamily;
