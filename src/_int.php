@@ -3,24 +3,24 @@
     
     $int = 1;
     
-    $title     = "PáginaInterna | PáginaSinTítulo";
-  //$titleGB   = "PáginaInterna | UntitledPage";
+    $title      = "PáginaInterna | PáginaSinTítulo";
+  //$titleGB    = "PáginaInterna | UntitledPage";
        
-    $mdesc     = "";
-  //$mdescGB   = "";
+    $mdesc      = "";
+  //$mdescGB    = "";
     
 //Open Graph Start
-               // Max 35 char
-               // 123456789-123456789-123456789-12345 
-    $ogTitle   = "OGWebsiteTitle";
-  //$ogTitleGB = "OGWebsiteTitle";
+                // Max 35 char
+                // 123456789-123456789-123456789-12345 
+    $ogTitle    = "OGWebsiteTitle";
+  //$ogTitleGB  = "OGWebsiteTitle";
     
-               // Max 65 char                       ·
-               // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $ogDesc    = "Descr.";
-  //$ogDescGB  = "Descr.";
+                // Max 65 char                       ·
+                // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    $ogDesc     = "Descr.";
+  //$ogDescGB   = "Descr.";
     
-    $ogURL = $url;  
+    $ogURL      = $url;  
     $ogSiteName = $ogTitle;
 //Open Graph End
     
