@@ -134,6 +134,10 @@
             }
         }
         
+        @if $fullHeightIndex == "on"{
+            height: $headerHAT;
+        }
+        
         .logoH{
             position: relative;
             z-index: $zIndexLogoH;   
@@ -154,6 +158,10 @@
     
     @include afterTabletLandscape{
         @if $headerFixed == "on"{
+            height: $headerHATL;
+        }
+        
+        @if $fullHeightIndex == "on"{
             height: $headerHATL;
         }
         
