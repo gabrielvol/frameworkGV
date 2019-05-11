@@ -8,6 +8,10 @@
     <a href="/nuevo/" class="displayBlockBT borderBox" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
+<li class="liNoLink <?php if($navCurrent == 1) { echo 'current'; } ?>">
+    <a href="#seccion" class="displayBlockBT borderBox" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
+        <?php echo _("seccion"); ?></a>
+</li>
 
 <li class="nos hasSub pRel <?php if($navCurrent == 2) { echo 'current'; }?>">
     <p class="topLevelItem borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
