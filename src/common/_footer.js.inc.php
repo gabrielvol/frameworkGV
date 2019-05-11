@@ -7,6 +7,7 @@
 <script src="/nuevo/js/_global.js"></script>
 <script src="/nuevo/js/_navDrawer.js"></script>
 <!--<script src="/nuevo/js/_topper.js"></script>-->
+<!--<script src="/nuevo/js/smoothScroll.jQuery.js"></script>-->
 
 <?php if($navCurrent == 0): // Contacto ?> 
 <!--<script src="/nuevo/js/scrollKeep.js"></script>-->
