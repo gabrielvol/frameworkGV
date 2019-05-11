@@ -12,20 +12,21 @@
 
             .navOpen{
                 @if $hamburgerOnly == "on"{
-                    @include borderRadius($navBorderRadius); 
+                    @include squareSize(45px);
+                    background-position: center;
+                    padding: $zero;
+                    text-indent: -9999px;
+                } @else { 
                     width: 90px;
                     height: $navDrawerHambHeight;
+                    background-position: 10px center;
                     border: 1px solid $bcNavOpen!important;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
                     line-height: $navDrawerHambHeight;
-                } @else {
-                    @include squareSize(45px);
-                    padding: $zero;
-                    text-indent: -9999px;
                 }
+                @include borderRadius($navBorderRadius);
                 background-color: $bgNavHamburger;
-                background-position: 10px center;
                 background-size: 15px;
             }
 

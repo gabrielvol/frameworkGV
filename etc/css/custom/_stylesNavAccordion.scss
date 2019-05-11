@@ -9,16 +9,23 @@
             }
 
             .navOpen{
+                @if $hamburgerOnly == "on"{
+                    @include squareSize($navAccHambHeight);
+                    background-position: center;
+                    padding: $zero;
+                    text-indent: -9999px;
+                } @else {
+                    width: 90px;
+                    height: $navAccHambHeight;
+                    background-position: 10px center;
+                    padding: 0 10px 0 30px;
+                    font-size: 1rem;
+                    line-height: calc(#{$navAccHambHeight} + 5px);
+                }
                 @include borderRadius($navBorderRadius); 
-                width: 90px;
-                height: $navAccHambHeight;
-                background-color: $bgNavHamburger;
-                background-position: 10px center;
-                background-size: 15px;
                 border: 1px solid $bcNavOpen!important;
-                padding: 0 10px 0 30px;
-                font-size: 1rem;
-                line-height: calc(#{$navAccHambHeight} + 5px);
+                background-color: $bgNavHamburger;
+                background-size: 15px;
             }
 
             .navClose{
