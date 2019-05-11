@@ -8,8 +8,8 @@
     <a href="/nuevo/" class="displayBlockBT borderBox" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
-<li class="liNoLink <?php if($navCurrent == 1) { echo 'current'; } ?>">
-    <a href="#seccion" class="displayBlockBT borderBox" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
+<li class="liNoLink">
+    <a href="#seccion" class="displayBlockBT borderBox">
         <?php echo _("seccion"); ?></a>
 </li>
 
