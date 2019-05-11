@@ -75,6 +75,9 @@
             <img src="/nuevo/img/soc_em.svg" class="displayBlock" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>
     </li>
+    <li class="soc_em">
+        <a href="<?php echo $urlTO ?>" class="displayBlock"><?php echo $urlEM ?></a>
+    </li>
     <li class="soc_ta">
         <a href="/nuevo/" class="ta displayBlock hoverGrowL indentedText">
             <?php echo _("Nuestro perfil en TripAdvisor"); ?>
