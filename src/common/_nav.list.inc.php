@@ -9,7 +9,7 @@
         <?php echo _("seccion"); ?></a>
 </li>
 <li class="liNoLink">
-    <a href="#seccion" class="displayBlockBT borderBox">
+    <a href="<?php if($int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="displayBlockBT borderBox">
         <?php echo _("seccion"); ?></a>
 </li>
 
