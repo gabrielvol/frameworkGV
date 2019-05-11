@@ -22,9 +22,9 @@
         </ul>
         
         <ul class="slick mask horizontal clearfix">
-            <li><img src="/framework/img/img_slide01.png" alt="" aria-hidden="true"></li>
-            <li><img src="/framework/img/img_slide02.png" alt="" aria-hidden="true"></li>
-            <li><img src="/framework/img/img_slide03.png" alt="" aria-hidden="true"></li>
+            <li><img src="/framework/img/img_slide01.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/framework/img/img_slide02.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/framework/img/img_slide03.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
         </ul>
         
         <?php
