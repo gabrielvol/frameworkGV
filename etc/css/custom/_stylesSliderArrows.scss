@@ -2,13 +2,13 @@
    Slick Arrows Styles | Custom [stylesSliderArrows.scss]
    ========================================================================== */
 @if $sliderArrows == "on"{
-    $sliderArrowHeightBT: 30px;
-    $sliderArrowWidthHeightBT: 18px $sliderArrowHeightBT;
-    $sliderArrowHeightHalfBT: calc(#{$sliderArrowHeightBT} / 2);
+    $sliderArrowHeightBT:       30px;
+    $sliderArrowWidthHeightBT:  18px $sliderArrowHeightBT;
+    $sliderArrowHeightHalfBT:   calc(#{$sliderArrowHeightBT} / 2);
 
-    $sliderArrowHeight: 50px;
-    $sliderArrowWidthHeight: 30px $sliderArrowHeight;
-    $sliderArrowHeightHalf: calc(#{$sliderArrowHeight} / 2);
+    $sliderArrowHeightAT:       50px;
+    $sliderArrowWidthHeightAT:  30px $sliderArrowHeightAT;
+    $sliderArrowHeightHalfAT:   calc(#{$sliderArrowHeightAT} / 2);
 
     .slickPrev{
         left: 0;
@@ -18,7 +18,7 @@
         }
 
         @include afterTablet{
-            @include bgSvg(slider_arrowL, $sliderArrowWidthHeight);        
+            @include bgSvg(slider_arrowL, $sliderArrowWidthHeightAT);        
         }
     }
 
@@ -30,7 +30,7 @@
         }
 
         @include afterTablet{
-            @include bgSvg(slider_arrowR, $sliderArrowWidthHeight);        
+            @include bgSvg(slider_arrowR, $sliderArrowWidthHeightAT);        
         }
     }
 
@@ -47,12 +47,20 @@
 
         @include beforeTablet{
             @include squareSize($sliderArrowHeightBT);
+            /*
+            width: $sliderArrowWidthBT;
+            height: $sliderArrowHeightBT;
+            */
             margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});        
         }
 
         @include afterTablet{
-            @include squareSize($sliderArrowHeight);
-            margin-top: calc(-1 * #{$sliderArrowHeightHalf});
+            @include squareSize($sliderArrowHeightAT);
+            /*            
+            width: $sliderArrowWidthAT;
+            height: $sliderArrowHeightAT;
+            */
+            margin-top: calc(-1 * #{$sliderArrowHeightHalfAT});
         }
     }
 }
