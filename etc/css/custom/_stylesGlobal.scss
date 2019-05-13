@@ -43,7 +43,10 @@
    ========================================================================== */
 #main{
     @include beforeTablet{
-        @if $headerFixed == "on" and $navDrawer == "off"{
+        @if $navAcc == "on"{
+            padding-top: $headerHBTAcc;
+        }
+        @if $headerFixed == "on"{
             padding-top: $headerHBT;
         }
     }

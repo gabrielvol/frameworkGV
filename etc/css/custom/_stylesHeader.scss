@@ -36,11 +36,12 @@
         
         @if $navAcc == "on"{
             height: $headerHBTAcc;
+            box-shadow: 0 0 10px #ccc;
         } @else {
             height: $headerHBT;
         }
         
-        @if $headerFixed == "on" and $navDrawer == "off"{
+        @if $headerFixed == "on" or $navAcc == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -78,7 +79,7 @@
             
             @if $navDrawer == "on"{
                 &.clicked{
-                    @include borderStyleR($bcNavBT);
+                    @include borderStyleR($bcNavDrawerBT);
                     box-sizing: border-box;
                     position: fixed;
                     z-index: $zIndexLogoHClicked;

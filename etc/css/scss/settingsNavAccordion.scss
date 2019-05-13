@@ -4,7 +4,7 @@
 @if $navAcc == "on"{
     .navMain{
         @include beforeTablet{
-            top: calc(#{$headerHBT} / 2);
+            top: calc(#{$headerHBTAcc} / 2);
             right: 0;
             left: 0;
             
@@ -29,7 +29,7 @@
                 box-sizing: border-box;
                 position: fixed;
                 z-index: $zIndexNavUlAccordion;
-                top: $headerHBT;
+                top: $headerHBTAcc;
                 right: 0;
                 left: 0;
                 width: 100%;
@@ -48,7 +48,7 @@
                 &.open{
                     display: $block;
                     height: auto;
-                    max-height: calc(100vh - #{$headerHBT});
+                    max-height: calc(100vh - #{$headerHBTAcc});
                 }
             }
         }
