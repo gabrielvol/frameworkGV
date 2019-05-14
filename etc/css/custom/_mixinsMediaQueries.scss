@@ -19,6 +19,12 @@ $desktopLargeMin: 1600px;
 /* =============================================================================
    Media Queries Mixins | Custom [mixinsMediaQueries.scss]
    ========================================================================== */
+/* Nav */
+@mixin navBT{
+    @media (max-width: #{$navBTmediaQuerie}){@content;}}
+@mixin navAT{
+    @media (min-width: #{$navATmediaQuerie}){@content;}}
+    
 /* Mobile */
 @mixin mobileOnly{
     @media (max-width: #{$mobileMax}){@content;}}

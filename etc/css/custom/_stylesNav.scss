@@ -6,7 +6,7 @@
     @import "stylesNavAccordion";
     @import "stylesNavList";
     
-    @include afterTablet{
+    @include navAT{
         @if $floatedLogoNav == "on"{
             float: left;
             width: calc(100% - #{$logoWAT});
@@ -21,6 +21,21 @@
         }
         
         .mainMenu{
+            @if $navHorizontalAT == "on"{
+                list-style: none;
+                margin-right: $auto;
+                margin-left: $auto;
+                text-align: center;
+                
+                li{
+                    display: inline-block;
+                    
+                    > *{
+                        display: inline-block;            
+                    }
+                }
+            }
+            
             > li{
                 &.current{
                     a,

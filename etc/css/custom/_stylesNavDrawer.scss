@@ -2,7 +2,7 @@
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
 @if $navDrawer == "on"{
-    @include beforeTablet{
+    @include navBT{
         .navMain{
             @include posTR(10px, 10px);
 

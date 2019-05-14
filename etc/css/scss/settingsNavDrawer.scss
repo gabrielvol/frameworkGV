@@ -3,7 +3,7 @@
    ========================================================================== */
 @if $navDrawer == "on"{
     .navMain{
-        @include beforeTablet{
+        @include navBT{
             .navOpen{                
                 &.clicked{
                     opacity: 0.5;

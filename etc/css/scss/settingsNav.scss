@@ -38,7 +38,7 @@ nav{
         }
     }
    
-    @include beforeTablet{
+    @include navBT{
         @if $hamburgerOnly{
             position: absolute;
         } @else{
@@ -51,7 +51,8 @@ nav{
         }        
         
         .navOpen{
-            z-index: $zIndexNavOpen;  
+            z-index: $zIndexNavOpen;
+            display: $block;  
             opacity: 1;
             background-image: url('/nuevo/img/nav_hamb.svg');
             background-repeat: no-repeat;
@@ -67,6 +68,10 @@ nav{
             background-image: url('/nuevo/img/nav_close.svg');
             background-repeat: no-repeat;
             background-position: center center; 
+        }
+        
+        .navAT{
+            display: $none;
         }
         
         > ul{
@@ -112,9 +117,13 @@ nav{
         }
     }
     
-    @include afterTablet{
-        .navClose{
+    @include navAT{
+        .hamb{
             display: $none;
+        }
+        
+        .navDrawerMainUL{
+            display: displayNone;
         }
         
         > ul{

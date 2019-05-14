@@ -2,7 +2,7 @@
    Nav List Styles | Custom [stylesNavList.scss]
    ========================================================================== */
 @if $navList == "on"{
-    @include beforeTablet{
+    @include navBT{
         .navMain{
             ul{
                 @include borderRadius($navBorderRadius);   

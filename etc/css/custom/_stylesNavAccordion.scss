@@ -2,7 +2,7 @@
    Nav Accordion Styles | Custom [stylesNavAccordion.scss]
    ========================================================================== */
 @if $navAcc == "on"{
-    @include beforeTablet{
+    @include navBT{
         .navMain{
             .hamb{
                 margin-top: calc(-1 * calc(#{$navAccHambHeight} / 2));

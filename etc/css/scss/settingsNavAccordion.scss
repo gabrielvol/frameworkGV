@@ -3,7 +3,7 @@
    ========================================================================== */
 @if $navAcc == "on"{
     .navMain{
-        @include beforeTablet{
+        @include navBT{
             top: calc(#{$headerHBTAcc} / 2);
             right: 0;
             left: 0;
