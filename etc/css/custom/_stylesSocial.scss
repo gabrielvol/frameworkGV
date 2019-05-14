@@ -106,7 +106,9 @@
     
     @include beforeTablet{       
         li{
-            &, a, img{
+            &,
+            a,
+            img{
                 @include squareSize(35px);            
             }
         }
@@ -121,7 +123,9 @@
                 left: auto;
 
                 li{
-                    &, a, img{
+                    &,
+                    a,
+                    img{
                         @include squareSize(45px);            
                     }
                 }
@@ -131,7 +135,9 @@
     
     @include afterTablet{
         li{
-            &, a, img{
+            &,
+            a,
+            img{
                 @include squareSize(50px);            
             }
         }
