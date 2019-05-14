@@ -19,6 +19,7 @@
     $urlYT      = "https://www.youtube.com/user/ffffffffffffff";    
     
     // Nav
-    $navDrawer  = 1;
-    $navAcc     = 0;
+    $navDrawer              = 1;
+    $navAcc                 = 0;
+    $navHorizontalCenterAT  = 0;
 ?>

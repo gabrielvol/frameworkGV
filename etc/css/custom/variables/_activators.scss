@@ -21,13 +21,13 @@
 $navBTmediaQuerie:       $mobileMax; // $mobileLMax; // 767px;
 $navATmediaQuerie:       $tabletMin; // $tabletMin; // 768px;
 
-$navHorizontalAT:        off;
+$navHorizontalCenterAT:  off; // variables.inc.php
 
 $navTopper:              off;
 $navFixed:               on;
              
-$navDrawer:              on;
-$navAcc:                 off;
+$navDrawer:              on; // variables.inc.php
+$navAcc:                 off; // variables.inc.php
 $navList:                off;
              
 $navHasSub:              off;

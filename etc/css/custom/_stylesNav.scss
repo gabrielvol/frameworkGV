@@ -21,7 +21,7 @@
         }
         
         .mainMenu{
-            @if $navHorizontalAT == "on"{
+            @if $navHorizontalCenterAT == "on"{
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;
@@ -37,6 +37,10 @@
             }
             
             > li{
+                @if $floatedLogoNav == "on"{
+                    float: left;
+                }
+                
                 &.current{
                     a,
                     .topLevelItem{

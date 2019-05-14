@@ -1,15 +1,15 @@
 <?php $navItemInicio = ($navCurrent == 0)? "displayNone" : ""; ?>
 
 <li class="displayNoneAT <?php if($navCurrent == 0) { echo 'displayNone'; } ?>">
-    <a href="/nuevo/" class="displayBlockBT borderBox" <?php if($navCurrent == 0) { echo 'aria-current="page"'; } ?>>
+    <a href="/nuevo/" class="<?php if ($navHorizontalCenterAT == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($navCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
 </li>
 <li class="<?php if($navCurrent == 1) { echo 'current'; } ?>">
-    <a href="/nuevo/" class="displayBlockBT borderBox" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a href="/nuevo/" class="<?php if ($navHorizontalCenterAT == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($navCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
 <li class="liNoLink">
-    <a href="<?php if($int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="displayBlockBT borderBox">
+    <a href="<?php if($int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="<?php if ($navHorizontalCenterAT == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox">
         <?php echo _("seccion"); ?></a>
 </li>
 
