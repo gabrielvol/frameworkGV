@@ -1,11 +1,24 @@
 /* =============================================================================
    Lightbox Styles | Custom [stylesLightbox.scss]
    ========================================================================== */
-.lighboxOverlay{
-    background-color: $bgBlack;
+.lightboxOverlay{
+    background-color: $bgBlack; // #444
 }
 
-.lb-data .lb-caption,
+.lb-outerContainer{
+    @include borderRadius(5px);
+}
+
+.lightbox .lb-image{
+    @include borderRadius(5px);
+}
+
+.lb-caption{
+    font-family: $mainFontFamily;
+    font-weight: 400!important;
+    text-transform: uppercase;
+}
+
 .lb-number{
     font-family: $mainFontFamily;
     font-weight: 400;
