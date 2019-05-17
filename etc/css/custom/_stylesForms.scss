@@ -136,6 +136,13 @@ form{
         }
     }
     
+    select{
+        option{
+            font-family: $arial;
+            font-size: 0.8rem;
+        }
+    }
+    
     textarea{    
         @include beforeTablet{
             height: 100px;
