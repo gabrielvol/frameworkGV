@@ -4,27 +4,31 @@
 @import "../scss/variablesAbsolute";
 @import "variables/zindex";
 @import "variables/container";
+@import "variables/activatorsMain";
+@import "variables/headerActivators";
+@import "variables/helpersActivators";
 @import "variables/helpers";
-@import "variables/activators";
 @import "variables/animations";
 
 @import "variables/coloursMain";
 @import "variables/coloursBorders";
 @import "variables/coloursBackgrounds";
-@import "variables/coloursTables";
 
 @import "variables/fontsMain";
 @import "variables/fontsColours";
 
+@import "variables/navActivators";
 @import "variables/navColours";
 @import "variables/navFonts";
 @import "variables/navSizes";
 
+@import "variables/formsActivators";
 @import "variables/formsColours";
 @import "variables/formsFonts";
 @import "variables/formsSizes";
 
 @import "variables/tables";
+@import "variables/tablesColours";
 
 //Font Face
 @import "../scss/fontFaceOpenSans";

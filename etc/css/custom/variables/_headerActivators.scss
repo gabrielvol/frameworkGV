@@ -1,0 +1,18 @@
+/* =============================================================================
+   Header Activators | Custom [headerActivators.scss]
+   ========================================================================== */
+
+// Menu y logo 
+    $floatedLogoNav: on;
+    @import "logoSizes"; 
+    
+    
+// Header 
+    $headerFixed: on;
+    @import "headerHeight";    
+    
+    $fullHeightIndex: off;
+    
+    
+// Language Flags
+    $circleFlags: off;
