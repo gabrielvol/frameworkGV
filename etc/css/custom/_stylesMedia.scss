@@ -1,8 +1,8 @@
 /* =============================================================================
    Media Styles | Custom [stylesMedia.scss]
    ========================================================================== */
-.youTubeVideo,
-.googleMap{
+.gooYTVideo,
+.gooMap{
     @include borderRadius(6px);
     @include borderStyle($bcGreyL);
     box-sizing: border-box;
