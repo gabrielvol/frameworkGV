@@ -118,7 +118,7 @@
         }
         
         @if $navTopper == "on"{
-            &.topper{
+            &.topperNav{
                 @include borderStyleB($bcNavTopper); 
                 position: fixed;
                 right: 0;
@@ -243,7 +243,7 @@
         }
 
         @if $navTopper == "on"{
-            &.topper{
+            &.topperNav{
                 .mainMenu{}
                 
                 @if $navHasSub == "on"{
@@ -272,7 +272,7 @@
         }
         
         @if $navTopper == "on"{
-            &.topper{
+            &.topperNav{
                 @if $navHasSub == "on"{
                     .hasSub{
                         &:hover{

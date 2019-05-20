@@ -121,7 +121,7 @@
         }
         
         @if $navTopper == "on"{
-            &.topper{
+            &.topperNav{
                 position: fixed;
                 z-index: $zIndexHeaderTopper;
                 top: 0;

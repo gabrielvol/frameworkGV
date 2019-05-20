@@ -214,7 +214,7 @@ nav{
         }
         
         @if $navTopper == "on"{
-            &.topper{
+            &.topperNav{
                 top: 0;
                 background-color: $bgNavTopper;
 
@@ -309,7 +309,7 @@ nav{
             }
             
             @if $navTopper == "on"{
-                &.topper{
+                &.topperNav{
                     .mainMenu{
                         > li{
                             > a,
