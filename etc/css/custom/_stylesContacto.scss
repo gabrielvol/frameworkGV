@@ -6,16 +6,11 @@
         font-size: 1.2rem;
         text-transform: uppercase;
     }
-    
-    .gooMap{
-        margin-bottom: 50px;
-    }
         
-    @include beforeTablet{}
     @include afterTablet{
         .enviar{
             @include centerCustom(50%);
             margin-top: 30px;
         }
-    } 
+    }
 }
