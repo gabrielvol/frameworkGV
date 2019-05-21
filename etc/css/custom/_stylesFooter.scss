@@ -14,7 +14,7 @@
         }
     }
     
-    .googleAddress{
+    .gooAddress{
         a{
             font-size: 1.1rem;
             line-height: 1.2em;
@@ -43,7 +43,7 @@
     }
     
     @include beforeTabletLandscape{
-        .googleAddress{
+        .gooAddress{
             a{
                 text-decoration: underline;
             }
@@ -51,7 +51,7 @@
     }
     
     @include afterTabletLandscape{
-        .googleAddress{
+        .gooAddress{
             a{
                 &:focus, &:hover{
                     text-decoration: underline;

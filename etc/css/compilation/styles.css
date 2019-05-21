@@ -1764,7 +1764,7 @@ article, article::before, article::after, details, details::before, details::aft
 #footer .navFooter .subMenu {
   display: none; }
 
-#footer .googleAddress a {
+#footer .gooAddress a {
   font-size: 1.1rem;
   line-height: 1.2em; }
 
@@ -1772,11 +1772,11 @@ article, article::before, article::after, details, details::before, details::aft
   width: 100px; }
 
 @media (max-width: 1023px) {
-  #footer .googleAddress a {
+  #footer .gooAddress a {
     text-decoration: underline; } }
 
 @media (min-width: 1024px) {
-  #footer .googleAddress a:focus, #footer .googleAddress a:hover {
+  #footer .gooAddress a:focus, #footer .gooAddress a:hover {
     text-decoration: underline; } }
 
 /* -------------------------------------

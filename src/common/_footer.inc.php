@@ -9,7 +9,7 @@
     
     <?php include('social.inc.php'); ?>
     
-    <p class="googleAddress">
+    <p class="gooAddress">
         <a href="<?php echo $urlGM ?>" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
