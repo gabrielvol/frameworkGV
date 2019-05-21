@@ -131,7 +131,7 @@
         li{
             display: inline-block;
             > *{
-                display: inline-block;            
+                display: inline-block;
             }
         }
     }
@@ -142,9 +142,9 @@
     .floatNone,
     .horizontal li.floatNone{float: $none}
     %horizontal{
-        list-style: $none;        
+        list-style: $none;
         li{
-            float: $left;        
+            float: $left;
             &.floatRight{float: $right;}
         }    
         &.right{
