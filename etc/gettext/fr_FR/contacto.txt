@@ -120,6 +120,10 @@ msgstr "D&eacute;partement"
 msgid "Por favor, ingrese su provincia."
 msgstr "Veuillez indiquez votre d&eacute;partement."
 
+<?php echo _('Seleccione su provincia'); ?>
+msgid "Seleccione su provincia"
+msgstr "SinTraduccion"
+
 
 
 <?php echo _('Tel&eacute;fono'); ?>

@@ -120,6 +120,10 @@ msgstr "State/Province"
 msgid "Por favor, ingrese su provincia."
 msgstr "Please, tell us what state/province are you from.
 
+<?php echo _('Seleccione su provincia'); ?>
+msgid "Seleccione su provincia"
+msgstr "Select a state/province from the list"
+
 
 
 <?php echo _('Pa&iacute;s'); ?>

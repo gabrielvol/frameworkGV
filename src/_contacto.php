@@ -140,31 +140,31 @@
                     <select id="provincia" name="provincia_FormName" class="provincia <?php echo $invalidFieldProvincia_FormName ?>">
                         <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
 
-                        <option value="<?php echo $_POST['provincia']; ?>" selected><?php if(isset($_POST['provincia'])) { echo $_POST['provincia']; } else { echo 'Selecciona tu provincia'; } ?></option>
-                        <option value="CABA"><?php echo _('Ciudad Autónoma de Buenos Aires'); ?></option>
+                        <option value="<?php echo $_POST['provincia']; ?>" selected><?php if(isset($_POST['provincia'])) { echo $_POST['provincia']; } else { echo _('Seleccione su provincia'); } ?></option>
+                        <option value="CABA"><?php echo _('Ciudad Aut&oacute;noma de Buenos Aires'); ?></option>
                         <option value="Pcia. de Buenos Aires"><?php echo _('Pcia. de Buenos Aires'); ?></option>
                         <option value="Catamarca"><?php echo _('Catamarca'); ?></option>
                         <option value="Chaco"><?php echo _('Chaco'); ?></option>
                         <option value="Chubut"><?php echo _('Chubut'); ?></option>
-                        <option value="Córdoba"><?php echo _('Córdoba'); ?></option>
+                        <option value="C&oacute;rdoba"><?php echo _('C&oacute;rdoba'); ?></option>
                         <option value="Corrientes"><?php echo _('Corrientes'); ?></option>
-                        <option value="Entre Ríos"><?php echo _('Entre Ríos'); ?></option>
+                        <option value="Entre R&iacute;os"><?php echo _('Entre R&iacute;os'); ?></option>
                         <option value="Formosa"><?php echo _('Formosa'); ?></option>
                         <option value="Jujuy"><?php echo _('Jujuy'); ?></option>
                         <option value="La Pampa"><?php echo _('La Pampa'); ?></option>
                         <option value="La Rioja"><?php echo _('La Rioja'); ?></option>
                         <option value="Mendoza"><?php echo _('Mendoza'); ?></option>
                         <option value="Misiones"><?php echo _('Misiones'); ?></option>
-                        <option value="Neuquén"><?php echo _('Neuquén'); ?></option>
-                        <option value="Río Negro"><?php echo _('Río Negro'); ?></option>
+                        <option value="Neuqu&eacute;n"><?php echo _('Neuqu&eacute;n'); ?></option>
+                        <option value="R&iacute;o Negro"><?php echo _('R&iacute;o Negro'); ?></option>
                         <option value="Salta"><?php echo _('Salta'); ?></option>
                         <option value="San Juan"><?php echo _('San Juan'); ?></option>
                         <option value="San Luis"><?php echo _('San Luis'); ?></option>
                         <option value="Santa Cruz"><?php echo _('Santa Cruz'); ?></option>
                         <option value="Santa Fe"><?php echo _('Santa Fe'); ?></option>
                         <option value="Santiago Del Estero"><?php echo _('Santiago Del Estero'); ?></option>
-                        <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur"><?php echo _('Tierra del Fuego, Antártida e Islas del Atlántico Sur'); ?></option>
-                        <option value="Tucumán"><?php echo _('Tucumán'); ?></option>
+                        <option value="Tierra del Fuego, Ant&aacute;rtida e Islas del Atl&aacute;ntico Sur"><?php echo _('Tierra del Fuego, Ant&aacute;rtida e Islas del Atl&aacute;ntico Sur'); ?></option>
+                        <option value="Tucum&aacute;n"><?php echo _('Tucum&aacute;n'); ?></option>
                     </select>
                     <span class="formInputErrorMsg <?php echo $errorFormClassProvincia_FormName ?>"><?php echo $errorBelowInputProvincia_FormName ?></span>  
                 </label>
