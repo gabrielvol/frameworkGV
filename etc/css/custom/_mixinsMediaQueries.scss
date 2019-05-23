@@ -26,39 +26,39 @@ $desktopLargeMin: 1600px;
     @media (min-width: #{$navATmediaQuerie}){@content;}}
     
 /* Mobile */
-@mixin mobileOnly{
+@mixin mobileOnly{ // 499px
     @media (max-width: #{$mobileMax}){@content;}}
 
-@mixin afterMobileLandscape{
+@mixin afterMobileLandscape{ // 500px
     @media (min-width: #{$mobileLMin}){@content;}}
     
-@mixin mobileLandscapeOnly{
+@mixin mobileLandscapeOnly{ // 500px 767px
     @media (min-width: #{$mobileLMin})
         and (max-width: #{$mobileLMax}){@content;}}
     
 /* Tablet */
-@mixin beforeTablet{
+@mixin beforeTablet{ // 767px
     @media (max-width: #{$mobileLMax}){@content;}}
 
-@mixin afterTablet{
+@mixin afterTablet{ // 768px
     @media (min-width: #{$tabletMin}){@content;}}
     
-@mixin tabletOnly{
+@mixin tabletOnly{ // 768px 1023px
     @media (min-width: #{$tabletMin})
         and (max-width: #{$tabletPMax}){@content;}}
     
 /* Tablet Landscape*/
-@mixin beforeTabletLandscape{
+@mixin beforeTabletLandscape{ // 1023px
     @media (max-width: #{$tabletPMax}){@content;}}
     
-@mixin afterTabletLandscape{
+@mixin afterTabletLandscape{ // 1024px
     @media (min-width: #{$tabletLMin}){@content;}}
     
-@mixin tabletLandscapeOnly{
+@mixin tabletLandscapeOnly{ // 1024px 1199px
     @media (min-width: #{$tabletLMin})
         and (max-width: #{$tabletMax}){@content;}}
 
-@mixin tabletAndTabletLandscapeOnly{
+@mixin tabletAndTabletLandscapeOnly{ // 768px 1199px
     @media (min-width: #{$tabletMin})
         and (max-width: #{$tabletMax}){@content;}}
     
@@ -69,7 +69,7 @@ $desktopLargeMin: 1600px;
 @mixin afterMobile600{
     @media (min-width: 601px){@content;}}
     
-@mixin mobile600Only{
+@mixin mobile600Only{ // 767px
     @media (min-width: 601px)
         and (max-width: #{$mobileLMax}){@content;}}
     
@@ -80,7 +80,7 @@ $desktopLargeMin: 1600px;
 @mixin afterMobile650{
     @media (min-width: 651px){@content;}}
     
-@mixin mobile650Only{
+@mixin mobile650Only{ // 767px
     @media (min-width: 651px)
         and (max-width: #{$mobileLMax}){@content;}}
     
@@ -91,7 +91,7 @@ $desktopLargeMin: 1600px;
 @mixin afterMobile700{
     @media (min-width: 701px){@content;}}
     
-@mixin mobile700Only{
+@mixin mobile700Only{ // 767px
     @media (min-width: 701px)
         and (max-width: #{$mobileLMax}){@content;}}
     
@@ -102,7 +102,7 @@ $desktopLargeMin: 1600px;
 @mixin afterMobile800{
     @media (min-width: 801px){@content;}}
     
-@mixin mobile800Only{
+@mixin mobile800Only{ // 1023px
     @media (min-width: 801px)
         and (max-width: #{$tabletPMax}){@content;}}
     
@@ -113,19 +113,19 @@ $desktopLargeMin: 1600px;
 @mixin afterMobile900{
     @media (min-width: 901px){@content;}}
     
-@mixin mobile900Only{
+@mixin mobile900Only{ // 1023px
     @media (min-width: 901px)
         and (max-width: #{$tabletPMax}){@content;}}
 
 /* Desktop */
-@mixin beforeDesktop{
+@mixin beforeDesktop{ // 1199px
     @media (max-width: #{$tabletMax}){@content;}}
     
-@mixin afterDesktop{
+@mixin afterDesktop{ // 1200px
     @media (min-width: #{$desktopMin}){@content;}}
     
 /* Big Screens + */
-@mixin afterDesktopLarge{
+@mixin afterDesktopLarge{ // 1600px
     @media (min-width: #{$desktopLargeMin}){@content;}}
 
 /* =============================================================================
