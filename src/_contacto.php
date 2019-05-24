@@ -169,6 +169,19 @@
                     <span class="formInputErrorMsg <?php echo $errorFormClassProvincia_FormName ?>"><?php echo $errorBelowInputProvincia_FormName ?></span>  
                 </label>
 
+                <label for="genericSelect_FormName">
+                    <span class="labelName"><?php echo _('genericSelect'); ?></span>
+                    <select id="provincia" name="genericSelect_FormName" class="genericSelect <?php echo $invalidFieldGenericSelect_FormName ?>">
+                        <option value="<?php echo $_POST['genericSelect']; ?>" selected><?php echo $_POST['genericSelect']; ?></option>
+
+                        <option value="<?php echo $_POST['genericSelect']; ?>" selected><?php if(isset($_POST['genericSelect'])) { echo $_POST['genericSelect']; } else { echo _('Selecciona una opción por favor'); } ?></option>
+                        <option value="AAAAAAAAAAAAA"><?php echo _('AAAAAAAAAAAAA'); ?></option>
+                        <option value="BBBBBBBBBBBBB"><?php echo _('BBBBBBBBBBBBB'); ?></option>
+                        <option value="CCCCCCCCCCCCC"><?php echo _('CCCCCCCCCCCCC'); ?></option>
+                    </select>
+                    <span class="formInputErrorMsg <?php echo $errorFormClassGenericSelect_FormName ?>"><?php echo $errorBelowInputGenericSelect_FormName ?></span>  
+                </label>
+
                 <label for="pais_FormName">
                     <span class="labelName"><?php echo _('Pa&iacute;s'); ?></span>
                     <input type="text" name="pais_FormName" id="pais_FormName" class="pais <?php echo $invalidFieldPais_FormName ?>" value="<?php echo $_POST['pais_FormName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $autofocusPais_FormName ?>>
