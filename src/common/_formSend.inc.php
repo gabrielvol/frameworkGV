@@ -84,7 +84,7 @@
         $texto   .= "<strong>Cargo:</strong> ".$cargo_FormName."<br />";
         $texto   .= "<strong>Asunto:</strong> ".$asuntoSubject_FormName."<br />";
         $texto   .= "<strong>Rubro:</strong> ".$rubro_FormName."<br />";
-        $texto   .= "<strong>Mensaje:</strong> <br />".$_FormNamemensaje."<br />_ _ _<br />Fin del mensaje";
+        $texto   .= "<strong>Mensaje:</strong> <br />".$mensaje_FormName."<br />_ _ _<br />Fin del mensaje";
         
         //Variables Globales de Error
         $mandatoryMsgErrorClass = " invalidmandatoryMsg";
@@ -147,10 +147,10 @@
             $autofocusUsername_FormName         = "autofocus";
             
         } elseif (empty($_POST["dni_FormName"])) {
-            $mandatoryMsg_FormName_FormName = $errorMsgDNI_FormName;
-            $mandatoryMsgClasses_FormName = $mandatoryMsgErrorClass;
-            $invalidFieldDNI_FormName = "invalidField";
-            $autofocusDNI_FormName = "autofocus";
+            $mandatoryMsg_FormName_FormName     = $errorMsgDNI_FormName;
+            $mandatoryMsgClasses_FormName       = $mandatoryMsgErrorClass;
+            $invalidFieldDNI_FormName           = "invalidField";
+            $autofocusDNI_FormName              = "autofocus";
             
         } elseif (empty($_POST["direccion_FormName"])) {
             $mandatoryMsg_FormName_FormName = $errorMsgDireccion_FormName;
@@ -268,7 +268,7 @@
             $errorBelowInputNombre_FormName = $errorMsgNombre_FormName;
             $errorFormClassNombre_FormName  = "active";
             $invalidFieldNombre_FormName    = "invalidField";
-            $autofocusNombre_FormName   = "autofocus";
+            $autofocusNombre_FormName       = "autofocus";
                        
         } elseif (empty($_POST["apellido_FormName"])) {
             $errorBelowInputApellido_FormName   = $errorMsgApellido_FormName;
@@ -374,9 +374,9 @@
             
         } elseif (empty($_POST["cargo_FormName"])) {
             $errorBelowInputCargo_FormName       = $errorMsgCargo_FormName;
-            $errorFormClassCargo_FormName            = "active";
-            $invalidFieldCargo_FormName              = "invalidField";
-            $autofocusCargo_FormName                 = "autofocus";
+            $errorFormClassCargo_FormName        = "active";
+            $invalidFieldCargo_FormName          = "invalidField";
+            $autofocusCargo_FormName             = "autofocus";
             
         } elseif (empty($_POST["asunto_FormName"])) {
             $errorBelowInputAsunto_FormName      = $errorMsgAsunto_FormName;
