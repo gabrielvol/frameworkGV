@@ -10,7 +10,7 @@
 
 .modalBG{
     @include opacityCustom($modalOpacity);
-    background-color: $bgBlack;
+    background-color: $modalBgColour;
 }
 
 .modalNav{
