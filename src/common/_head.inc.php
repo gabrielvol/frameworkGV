@@ -26,7 +26,7 @@
 <link rel="license" href="/nuevo/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url ?>?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url ?>/?l=es_AR" hreflang="es">
 <link rel="alternate" href="<?php echo $url ?>/?l=es_ES" hreflang="es">
 <link rel="alternate" href="<?php echo $url ?>/?l=en_GB" hreflang="en">
 <link rel="alternate" href="<?php echo $url ?>/?l=de_DE" hreflang="de">
