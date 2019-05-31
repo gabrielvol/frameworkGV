@@ -20,7 +20,7 @@
 <!--<script src="/nuevo/js/_forms.js"></script>-->
 
 <?php endif; if($navCurrent == 0): ?>
-<!--<script src="/clientes/nuevo/js/aaaaaa.js"></script>-->
-<!--<script src="/clientes/nuevo/js/_aaaaaa.js"></script>-->
+<!--<script src="/nuevo/js/aaaaaa.js"></script>-->
+<!--<script src="/nuevo/js/_aaaaaa.js"></script>-->
 
 <?php endif; ?>
