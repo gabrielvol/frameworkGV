@@ -13,39 +13,48 @@
         position: relative;
         z-index: $zIndexSlickNextPrevDots;
         top: calc(-1 * #{$slickDotMarginTopValue});
-        height: $sliderDotHeight;
+        height: calc(#{$sliderDotHeight} + calc(#{$pagSeparation} * 2));
         margin: 0 auto;
         text-align: center;
 
         li{
-            display: inline;
+            @include transition(0.7s);
+            @include opacityCustom(60);
+            display: inline-block;
             float: $none;
             height: $sliderDotHeight;
+            padding: $pagSeparation;
 
             &, button{
                 @include squareSize($sliderDotWidth);
             }
 
             button{
-                @include bgSvg(slider_pag, $sliderDotWidth);
-                display: inline-block;
+                display: block;
+                background-color: transparent;
+                background-image: url('/nuevo/img/slider_pag.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 80%;
+                padding: $zero;
                 border: $none;
                 text-indent: -9999px;
             }
 
-            & + li{
-                margin-left: $pagSeparation;
-            }
-
             &:focus, &:hover{
+                @include opacityCustom(80);
+                    
                 button{
-                    @include bgSvg(slider_pagHover, $sliderDotWidthHeight);
+                    background-image: url('/nuevo/img/slider_pagHover.svg');
                 }
             }
 
             &.slickActive{
+                    @include opacityCustom(100);
+                    
                 button{
-                    @include bgSvg(slider_pagSel, $sliderDotWidthHeight);
+                    background-image: url('/nuevo/img/slider_pagSel.svg');
+                    background-size: 90%;
                 }
             }
         }
