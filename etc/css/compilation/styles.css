@@ -44,7 +44,7 @@
 /*  Full height index
     --------------------------------- */
 /* =============================================================================
-   Helpesr Responsive Classes Activators | Custom [helpersActivators.scss]
+   Helpers Responsive Classes Activators | Custom [helpersActivators.scss]
    ========================================================================== */
 /* =============================================================================
    Spacing Helpers Variables | Custom [helpers.scss]
@@ -342,6 +342,9 @@ html input[type="button"] {
   background-color: #c6c6c6;
   text-shadow: none; }
 
+/* =============================================================================
+   Custom Reset Styles | Custom [resetCustom.scss]
+   ========================================================================== */
 /* =============================================================================
    Colour Placeholders | Custom [coloursPlaceholders.scss]
    ========================================================================== */
@@ -1138,7 +1141,7 @@ article, article::before, article::after, details, details::before, details::aft
     list-style: none;
     text-align: center; }
     .horizontalCenterBT li {
-      display: inline-block; }
+      display: inline-block !important; }
       .horizontalCenterBT li > * {
         display: inline-block !important; }
   .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT {
@@ -1193,7 +1196,7 @@ article, article::before, article::after, details, details::before, details::aft
     list-style: none;
     text-align: center; }
     .horizontalCenterAT li {
-      display: inline-block; }
+      display: inline-block !important; }
       .horizontalCenterAT li > * {
         display: inline-block !important; }
   .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT {
@@ -1793,7 +1796,8 @@ nav .current a {
 nav li:focus a, nav li:hover a {
   text-decoration: none; }
 
-.navMain, .navMain .mainMenu {
+.navMain,
+.navMain .mainMenu {
   z-index: 8800; }
 
 @media (max-width: 767px) {
