@@ -9,12 +9,12 @@
 
 <ul class="lang horizontal clearfix">
     <li>
-        <a href="<?php echo $urlActual ?>?l=es_AR" class="displayBlock mask hoverGrowL">
+        <a href="/nuevo/?l=es_AR" class="displayBlock mask hoverGrowL">
             <img src="/nuevo/img/fl_ar.svg" alt="<?php echo $text_ES; ?>.">
         </a>
     </li>
     <li>
-        <a href="<?php echo $urlActual ?>?l=en_GB" class="displayBlock mask hoverGrowL">
+        <a href="/nuevo/?l=en_GB" class="displayBlock mask hoverGrowL">
             <img src="/nuevo/img/fl_gb.svg" alt="<?php echo $text_GB; ?>.">
         </a>
     </li>
