@@ -25,6 +25,28 @@
         .displayNoneMO, .hideMO{display: $none}
         .contentBoxMO{box-sizing: content-box}
         .borderBoxMO{box-sizing: border-box}
+        .visuallyhiddenMO{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsMO == "on"{
@@ -140,6 +162,28 @@
         .displayNoneAML, .hideAML{display: $none}
         .contentBoxAML{box-sizing: content-box}
         .borderBoxAML{box-sizing: border-box}
+        .visuallyhiddenAML{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsAML == "on"{
@@ -255,6 +299,28 @@
         .displayNoneMLO, .hideMLO{display: $none}
         .contentBoxMLO{box-sizing: content-box}
         .borderBoxMLO{box-sizing: border-box}
+        .visuallyhiddenMLO{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsMLO == "on"{
@@ -370,6 +436,28 @@
         .displayNoneBT, .hideBT{display: $none}
         .contentBoxBT{box-sizing: content-box}
         .borderBoxBT{box-sizing: border-box}
+        .visuallyhiddenBT{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsBT == "on"{
@@ -485,6 +573,28 @@
         .displayNoneBTL, .hideBTL{display: $none}
         .contentBoxBTL{box-sizing: content-box}
         .borderBoxBTL{box-sizing: border-box}
+        .visuallyhiddenBTL{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsBTL == "on"{
@@ -600,6 +710,28 @@
         .displayNoneTO, .hideTO{display: $none}
         .contentBoxTO{box-sizing: content-box}
         .borderBoxTO{box-sizing: border-box}
+        .visuallyhiddenTO{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsTO == "on"{
@@ -716,6 +848,28 @@
         .displayNoneAT, .hideAT{display: $none}
         .contentBoxAT{box-sizing: content-box}
         .borderBoxAT{box-sizing: border-box}
+        .visuallyhiddenAT{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsAT == "on"{
@@ -831,6 +985,28 @@
         .displayNoneATL, .hideATL{display: $none}
         .contentBoxATL{box-sizing: content-box}
         .borderBoxATL{box-sizing: border-box}
+        .visuallyhiddenATL{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsATL == "on"{
@@ -946,6 +1122,28 @@
         .displayNoneTLO, .hideTLO{display: $none}
         .contentBoxTLO{box-sizing: content-box}
         .borderBoxTLO{box-sizing: border-box}
+        .visuallyhiddenTLO{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsTLO == "on"{
@@ -1061,6 +1259,28 @@
         .displayNoneTTLO, .hideTTLO{display: $none}
         .contentBoxTTLO{box-sizing: content-box}
         .borderBoxTTLO{box-sizing: border-box}
+        .visuallyhiddenTTLO{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsTTLO == "on"{
@@ -1176,6 +1396,28 @@
         .displayNoneBD, .hideBD{display: $none}
         .contentBoxBD{box-sizing: content-box}
         .borderBoxBD{box-sizing: border-box}
+        .visuallyhiddenBD{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsBD == "on"{
@@ -1291,6 +1533,28 @@
         .displayNoneAD, .hideAD{display: $none}
         .contentBoxAD{box-sizing: content-box}
         .borderBoxAD{box-sizing: border-box}
+        .visuallyhiddenAD{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+
+            &.focusable:active,
+            &.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+                white-space: inherit;
+            }
+        }
     }
     
     @if $stylesListsFloatsAD == "on"{
