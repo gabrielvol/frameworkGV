@@ -25,6 +25,26 @@
 <p><?php echo _('
 '); ?>.</p>
 
+
+
+<span><?php echo _(""); ?></span>
+<span><?php echo _("
+"); ?></span>
+
+<span><?php echo _(""); ?>.</span>
+<span><?php echo _("
+"); ?>.</span>
+
+<span><?php echo _(''); ?></span>
+<span><?php echo _('
+'); ?></span>
+
+<span><?php echo _(''); ?>.</span>
+<span><?php echo _('
+'); ?>.</span>
+
+
+
 echo '<h1 class="'._("text").'">';
 $phpVariable = _('text');
 
