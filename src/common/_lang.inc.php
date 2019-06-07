@@ -1,5 +1,5 @@
 <?php
-    $text_ES = "Navegar el sitio en idioma espa&ntilde;ol";
+    $text_ES = "Navegar el sitio en idioma castellano";
     $text_GB = "Switch to English version";
     $text_PT = "Navegar no site em Portugu&ecirc;s";
     $text_JP = "sinTrauccion";
