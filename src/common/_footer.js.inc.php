@@ -14,13 +14,17 @@
 <!--<script src="/nuevo/js/lightbox.min.js"></script>-->
 <!--<script src="/nuevo/js/_lightbox.js"></script>-->
 
-<?php endif; if($navCurrent == 000): // Contacto ?> 
-<!--<script src="/nuevo/js/scrollKeep.js"></script>-->
-<!--<script src="/nuevo/js/_forms.js"></script>-->
+<?php endif; if($navCurrent == 0): // Home ?>
+<!--<script src="/clientes/wsc/js/aaaaaa.js"></script>-->
+<!--<script src="/clientes/wsc/js/_aaaaaa.js"></script>-->
 
 <?php endif; if($navCurrent == 000): // SECTIONNAME ?>
 <!--<script src="/nuevo/js/aaaaaa.js"></script>-->
 <!--<script src="/nuevo/js/_aaaaaa.js"></script>-->
+
+<?php endif; if($navCurrent == 000): // Contacto ?> 
+<!--<script src="/nuevo/js/scrollKeep.js"></script>-->
+<!--<script src="/nuevo/js/_forms.js"></script>-->
 
 <?php endif; if($navCurrent == 000 || $navCurrent == 000): // SECTIONNAME / SECTIONNAME ?>
 
