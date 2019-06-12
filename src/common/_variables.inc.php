@@ -6,6 +6,10 @@
     // Misc
     $dateThisYear = (int)date('Y');
     
+    // Company
+    $companyNameFull    = "CompanyNameFull";
+    $companyNameShort   = "CompanyNameShort";
+    
     // Social
     $urlTW      = "https://www.twitter.com/";
     $urlFB      = "https://www.facebook.com/usuario";

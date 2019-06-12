@@ -3,8 +3,8 @@
     
     $int = 1;
     
-    $title      = "PáginaInterna | PáginaSinTítulo";
-  //$titleGB    = "PáginaInterna | UntitledPage";
+    $title      = "PáginaInterna | ".$companyNameFull;
+  //$titleGB    = "PáginaInterna | ".$companyNameFull;
        
     $mdesc      = "";
   //$mdescGB    = "";
