@@ -1,25 +1,24 @@
 /* =============================================================================
    Nav Activators | Custom [navActivators.scss]
    ========================================================================== */
+$navBTmediaQuerie:       767px; // $mobileMax
+$navATmediaQuerie:       768px; // $tabletMin
 
- $navBTmediaQuerie:       767px; // $mobileMax
- $navATmediaQuerie:       768px; // $tabletMin
+$navHorizontalCenterAT:  off; // variables.inc.php
 
- $navHorizontalCenterAT:  off; // variables.inc.php
+$navTopper:              off;
+$navFixed:               on;
 
- $navTopper:              off;
- $navFixed:               on;
+$navDrawer:              on; // variables.inc.php
+$navAcc:                 off; // variables.inc.php
+$navList:                off;
 
- $navDrawer:              on; // variables.inc.php
- $navAcc:                 off; // variables.inc.php
- $navList:                off;
+$navHasSub:              off;
+$navHasSubSub:           off;
 
- $navHasSub:              off;
- $navHasSubSub:           off;
+$navCurrentItemBottomBc: off;
 
- $navCurrentItemBottomBc: off;
+$navTextItemWhite:       off;
+$navTextItemBlack:       off;
 
- $navTextItemWhite:       off;
- $navTextItemBlack:       off;
-
- $hamburgerOnly:          off;
+$hamburgerOnly:          off;
