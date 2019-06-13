@@ -13,14 +13,37 @@
         <?php echo _("seccion"); ?></a>
 </li>
 
-<li class="nos hasSub pRel <?php if($navCurrent == 2) { echo 'current'; }?>">
-    <p class="topLevelItem borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
+
+// Sub Level 1
+<li class="nos hasSub hasSubLevel1 pRel <?php if($navCurrent == 2) { echo 'current'; }?>">
+    <p class="topLevelItem TLILevel1 borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
         <?php echo _("Nosotros"); ?>
     </p>
-    <ul id="nosSubMenu" class="subMenu unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
+    <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
         <li class="<?php if($navCurrentInt == 200) { echo 'current'; } ?>">
-            <a href="/nuevo/nosotros/historia.php" class="displayBlock borderBox" <?php if($navCurrentInt == 200) { echo 'aria-current="page"'; } ?>>
+            <a href="/nuevo/" class="displayBlock borderBox" <?php if($navCurrentInt == 200) { echo 'aria-current="page"'; } ?>>
                 <?php echo _("Historia"); ?></a>
+        </li>
+    </ul>
+</li>
+
+
+// Sub Level 2
+<li class="nos hasSub hasSubLevel1 pRel <?php if($navCurrent == 2) { echo 'current'; }?>">
+    <p class="topLevelItem TLILevel1 borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
+        <?php echo _("Nosotros"); ?>
+    </p>
+    <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
+        <li class="hasSub hasSubLevel2 <?php if($navCurrentInt == 210) { echo 'current'; } ?>">
+            <p class="topLevelItem TLILevel2 borderBox" id="hisNavItem" aria-haspopup="true" aria-owns="hisSubMenu" aria-controls="hisSubMenu" role="button" aria-pressed="false">
+                <?php echo _("Historia"); ?>
+            </p>
+            <ul id="hisSubMenu" class="subMenu subMenuLevel2 unstyled" role="group" aria-expanded="false" aria-labelledby="hisNavItem">
+                <li class="<?php if($navCurrentInt == 211) { echo 'current'; } ?>">
+                    <a href="/nuevo/" class="displayBlock borderBox" <?php if($navCurrentInt == 211) { echo 'aria-current="page"'; } ?>>
+                        <?php echo _("Comienzos"); ?></a>
+                </li>
+            </ul>    
         </li>
     </ul>
 </li>

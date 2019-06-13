@@ -70,8 +70,8 @@
             & + li{}
         }
         
-        @if $navHasSub == "on"{
-            .subMenu{
+        @if $navHasSubLevel1 == "on"{
+            .subMenuLevel1{
                 $borderRadiusB: 10px;
                 $subMenuW: 200px;
                 
@@ -152,8 +152,8 @@
                     }
                 }
                 
-                @if $navHasSub == "on"{
-                    .subMenu{
+                @if $navHasSubLevel1 == "on"{
+                    .subMenuLevel1{
                         $subMenuBorderRadiusB: 6px;
                         
                         @include borderRadiusB($subMenuBorderRadiusB);
@@ -246,10 +246,10 @@
             &.topperNav{
                 .mainMenu{}
                 
-                @if $navHasSub == "on"{
-                    .subMenu{
+                @if $navHasSubLevel1 == "on"{
+                    .subMenuLevel1{
                         &:focus{
-                            .subMenu{
+                            .subMenuLevel1{
                                 display: $block;
                             }
                         }
@@ -273,10 +273,10 @@
         
         @if $navTopper == "on"{
             &.topperNav{
-                @if $navHasSub == "on"{
+                @if $navHasSubLevel1 == "on"{
                     .hasSub{
                         &:hover{
-                            .subMenu{
+                            .subMenuLevel1{
                                 display: $block;
                             }
                         }

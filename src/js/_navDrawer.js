@@ -18,8 +18,8 @@ $(document).ready(function () {
         $(this).closest('#header').find('.lang').removeClass('clicked');
         $(this).closest('#nav').find('.modalNav').hide('fast', 'swing');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
-        $(this).closest('#nav').find('.subMenu').removeClass('open');
-        $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
+        $(this).closest('#nav').find('.subMenuLevel1').removeClass('open');
+        $(this).closest('#nav').find('.subMenuLevel1').attr('aria-expanded', 'false');
         $(this).closest('#nav').find('.topLevelItem').removeClass('open');
         $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
@@ -35,8 +35,8 @@ $(document).ready(function () {
         $(this).closest('#header').find('.lang').removeClass('clicked');
         $(this).closest('#nav').find('.modalNav').hide('fast', 'swing');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
-        $(this).closest('#nav').find('.subMenu').removeClass('open');
-        $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
+        $(this).closest('#nav').find('.subMenuLevel1').removeClass('open');
+        $(this).closest('#nav').find('.subMenuLevel1').attr('aria-expanded', 'false');
         $(this).closest('#nav').find('.topLevelItem').removeClass('open');
         $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
@@ -52,8 +52,8 @@ $(document).ready(function () {
         $(this).hide('fast');
         $(this).closest('#nav').find('.navClose').removeClass('clicked');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
-        $(this).closest('#nav').find('.subMenu').removeClass('open');
-        $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
+        $(this).closest('#nav').find('.subMenuLevel1').removeClass('open');
+        $(this).closest('#nav').find('.subMenuLevel1').attr('aria-expanded', 'false');
         $(this).closest('#nav').find('.topLevelItem').removeClass('open');
         $(this).closest('#nav').find('.topLevelItem').attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
@@ -61,7 +61,9 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.navOpen').removeClass('clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
     });
-
+    
+    
+    // Nav Sub NO Level
     $('.topLevelItem').click(function () {
         $(this).toggleClass('open');
         $(this).closest('.hasSub').find('.subMenu').toggleClass('open');
@@ -75,9 +77,63 @@ $(document).ready(function () {
        
     $('.hasSub p').click(function () {
         $(this).closest('.hasSub').toggleClass('openSubTTLO');
-//        $(this).closest('.mainMenu').toggleClass('openSubTTLO');
         $(this).closest('.hasSub').find('.subMenu').toggleClass('openSubTTLO');
     });
+    
+    
+    // Nav Sub Level 1
+    $('.TLILevel1').click(function () {
+        $(this).toggleClass('open');
+        $(this).closest('.hasSubLevel1').find('.subMenuLevel1').toggleClass('open');
+        $(this).attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+        $(this).closest('.hasSubLevel1').find('.subMenuLevel1').attr('aria-expanded', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+    });
+       
+    $('.hasSubLevel1 p').click(function () {
+        $(this).closest('.hasSubLevel1').toggleClass('openSubTTLO');
+        $(this).closest('.hasSubLevel1').find('.subMenuLevel1').toggleClass('openSubTTLO');
+    });
+    
+    
+    // Nav Sub Level 2
+    $('.TLILevel2').click(function () {
+        $(this).toggleClass('open');
+        $(this).closest('.hasSubLevel2').find('.subMenuLevel2').toggleClass('open');
+        $(this).attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+        $(this).closest('.hasSubLevel2').find('.subMenuLevel2').attr('aria-expanded', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+    });
+       
+    $('.hasSubLevel2 p').click(function () {
+        $(this).closest('.hasSubLevel2').toggleClass('openSubTTLO');
+        $(this).closest('.hasSubLevel2').find('.subMenuLevel2').toggleClass('openSubTTLO');
+    });
+    
+    
+    // Nav Sub Level 3
+    $('.TLILevel3').click(function () {
+        $(this).toggleClass('open');
+        $(this).closest('.hasSubLevel3').find('.subMenuLevel3').toggleClass('open');
+        $(this).attr('aria-pressed', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+        $(this).closest('.hasSubLevel3').find('.subMenuLevel3').attr('aria-expanded', function (i, attr) {
+            return attr === 'true' ? 'false' : 'true';
+        });
+    });
+       
+    $('.hasSubLevel3 p').click(function () {
+        $(this).closest('.hasSubLevel3').toggleClass('openSubTTLO');
+        $(this).closest('.hasSubLevel3').find('.subMenuLevel3').toggleClass('openSubTTLO');
+    });
+    
        
     $('.mainNav > li').click(function () {
         $(this).toggleClass('.navItemClicked');

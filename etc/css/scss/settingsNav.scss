@@ -32,7 +32,7 @@ nav{
         }     
     }
     
-    @if $navHasSub == "on"{
+    @if $navHasSubLevel1 == "on"{
         .subMenu{
             z-index: $zIndexNavSubMenu;
             margin-top: $zero;
@@ -168,7 +168,7 @@ nav{
             } 
         }
             
-        @if $navHasSub == "on"{
+        @if $navHasSubLevel1 == "on"{
             .subMenu{
                 display: $none;
                 background-color: $bgNavSubAT;
@@ -248,7 +248,7 @@ nav{
                     }
                 }
 
-                @if $navHasSub == "on"{
+                @if $navHasSubLevel1 == "on"{
                     .subMenu{
                         position: absolute;
 
@@ -280,7 +280,7 @@ nav{
             }
         }
             
-        @if $navHasSub == "on"{
+        @if $navHasSubLevel1 == "on"{
             .subMenu{                
                 > li{                
                     a,
@@ -301,7 +301,7 @@ nav{
     
     @include tabletAndTabletLandscapeOnly{
         .mainMenu{
-            @if $navHasSub == "on"{
+            @if $navHasSubLevel1 == "on"{
                 .subMenu{
                     &.openSubTTLO{
                         display: $block;
@@ -327,7 +327,7 @@ nav{
     }
     
     @include afterDesktop{
-        @if $navHasSub == "on"{
+        @if $navHasSubLevel1 == "on"{
             .hasSub{
                 &:focus, &:hover{
                     ul{

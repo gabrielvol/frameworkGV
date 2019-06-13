@@ -54,7 +54,7 @@
                 }
             }
         
-            @if $navHasSub == "on"{
+            @if $navHasSubLevel1 == "on"{
                 .subMenu{
                     position: relative;
                     top: 0;
@@ -84,7 +84,7 @@
                         } 
                     }
 
-                    @if $navHasSubSub == "on"{
+                    @if $navHasSubLevel2 == "on"{
                         .current .current{
                             a, .topLevelItem{
                             } 
