@@ -56,7 +56,7 @@
             &,
             a,
             .topLevelItem{
-                @include equalHeightAndLineHeight(60px);
+                @include equalHeightAndLineHeight($navHAT);
             }
 
             a,
@@ -225,7 +225,9 @@
         li{
             &,
             a,
-            .topLevelItem{}
+            .topLevelItem{
+                @include equalHeightAndLineHeight($navHATL);
+            }
             
             a,
             .topLevelItem{
