@@ -1,6 +1,12 @@
 /* =============================================================================
-   Logo Sizes Variables | Custom [logoSizes.scss]
+   Logo Variables | Custom [logo.scss]
    ========================================================================== */
+// imported in _headerActivators.scss
+
+// Logo img background ::before
+$logoImgBgBefore:   on; // variables.inc.php
+
+// Size
 $logoWBT:   50px;
 $logoHBT:   50px;
 $logoWAT:   210px;

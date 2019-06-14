@@ -20,7 +20,10 @@
     $urlEM      = "correo@servidor.com";
     $urlTO      = "mailto:".$urlEM;
     $urlGM      = "https://goo.gl/maps/aaaaaaaaaaaa";
-    $urlYT      = "https://www.youtube.com/user/ffffffffffffff";    
+    $urlYT      = "https://www.youtube.com/user/ffffffffffffff"; 
+    
+    // Header
+    $logoImgBgBefore        = 0;
     
     // Nav
     $navDrawer              = 1;

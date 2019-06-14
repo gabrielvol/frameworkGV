@@ -17,6 +17,16 @@
         img{}
     }
     
+    @if $logoImgBgBefore == "on"{    
+        .logoBefore{
+            position: relative;        
+            background-image: url('/clientes/wsc/img/logo_bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+        }
+    }
+    
     @include mobileOnly{
         .logoH{}
     }
@@ -66,7 +76,11 @@
                 a,
                 img{
                     height: 100%;
-                }
+                }                
+            }
+            
+            @if $logoImgBgBefore == "on"{
+                @include squareSize($logoWBT);
                 
             } @else {
                 width: $logoWBT;
@@ -141,20 +155,32 @@
         
         .logoH{
             position: relative;
-            z-index: $zIndexLogoH; 
-            width: $logoWAT;  
+            z-index: $zIndexLogoH;   
             
             @if $floatedLogoNav == "on"{
                 box-sizing: border-box;
                 float: left;
                 padding-right: 20px;
-                padding-left: 20px;
+                padding-left: 20px;             
             }
             
-            a,
-            img{
-                width: 100%;
-            }         
+            @if $logoImgBgBefore == "on"{            
+                &, a{
+                    @include squareSize($logoWAT);
+                }  
+                
+                img{
+                    width: 100%;
+                }                
+                
+            } @else{
+                width: $logoWAT;
+            
+                a,
+                img{
+                    width: 100%;
+                }  
+            }
         }
     }
     
@@ -167,8 +193,15 @@
             height: $headerHATL;
         }
         
-        .logoH{
-            width: $logoWATL;
+        .logoH{            
+            @if $logoImgBgBefore == "on"{            
+                &, a{
+                    @include squareSize($logoWATL);
+                } 
+                
+            } @else{
+                width: $logoWATL;
+            }
         }
     }
 }
