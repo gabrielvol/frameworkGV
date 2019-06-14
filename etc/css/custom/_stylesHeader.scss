@@ -141,17 +141,18 @@
         
         .logoH{
             position: relative;
-            z-index: $zIndexLogoH;   
+            z-index: $zIndexLogoH; 
+            width: $logoWAT;  
             
             @if $floatedLogoNav == "on"{
                 box-sizing: border-box;
                 float: left;
-                width: $logoWAT;
                 padding-right: 20px;
                 padding-left: 20px;
             }
             
-            a, img{
+            a,
+            img{
                 width: 100%;
             }         
         }
