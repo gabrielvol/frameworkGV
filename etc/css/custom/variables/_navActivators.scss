@@ -13,11 +13,12 @@ $navDrawer:              on; // variables.inc.php
 $navAcc:                 off; // variables.inc.php
 $navList:                off;
 
+$navHasSubs:             off;
 $navHasSubLevel1:        off;
 $navHasSubLevel2:        off;
 $navHasSubLevel3:        off;
 
-$navCurrentItemBottomBc: off;
+$navItemCurrentBottomBc: off;
 
 $navTextItemWhite:       off;
 $navTextItemBlack:       off;

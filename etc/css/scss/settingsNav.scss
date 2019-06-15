@@ -22,19 +22,8 @@ nav{
         z-index: $zIndexNav;
     }
     
-    li{
-        a,
-        .topLevelItem{}
-        
-        &.current{
-            a,
-            .topLevelItem{}            
-        }     
-    }
-    
-    @if $navHasSubLevel1 == "on"{
+    @if $navHasSubs == "on"{
         .subMenu{
-            z-index: $zIndexNavSubMenu;
             margin-top: $zero;
         }
     }
@@ -75,43 +64,41 @@ nav{
             display: $none;
         }
         
-        > ul{
-            > li{
-                background-color: $bgNavItemBT;           
-            }
-
+        .mainMenu{
             li{
                 float: $none;
-
-                a,
-                .topLevelItem{
-                    color: $navFontColourBT;
-                    font-family: $navFontFamilyBT;
-                }
 
                 .topLevelItem{
                     background-repeat: no-repeat;
                     background-position: 10px center;
 
-                    &.open{
+                    &.openDR{
                         background-image: url('/nuevo/img/nav_arrowD.svg');
                     }
                 }   
 
                 & + li{
-                    @include borderStyleT($bcNavItemBT);
+                    @include borderStyleT($bcNavItemLevel1BT);
                 }  
 
-                > .current{
-                    background-color: $bgNavCurrentItemBT; 
+                > .current{ 
                     background-image: url('/nuevo/img/nav_arrowL.svg');
                     background-repeat: no-repeat;
                     background-position: right 10px center;
+                }
+        
+                @if $navHasSubLevel1 == "on"{
+                    .TLILevel1{
+                    }
+                }
 
-                    > a,
-                    > .topLevelItem{
-                        color: $navCurrentFontColourBT;
-                        font-family: $navCurrentFontFamilyBT;
+                @if $navHasSubLevel2 == "on"{
+                    .TLILevel2{
+                    }
+                }
+
+                @if $navHasSubLevel3 == "on"{                    
+                    .TLILevel3{
                     }
                 }
             }
@@ -149,7 +136,7 @@ nav{
             }
 
             > .current{
-                background-color: $bgNavCurrentItemAT;
+                background-color: $bgNavItemCurrentAT;
 
                 a,
                 .topLevelItem{
@@ -158,7 +145,7 @@ nav{
                 }  
 
                 &:focus, &:hover{
-                    background-color: $bgNavCurrentItemHover;
+                    background-color: $bgNavItemCurrentHover;
 
                     > a,
                     .topLevelItem{
@@ -168,7 +155,7 @@ nav{
             } 
         }
             
-        @if $navHasSubLevel1 == "on"{
+        @if $navHasSubs == "on"{
             .subMenu{
                 display: $none;
                 background-color: $bgNavSubAT;
@@ -202,7 +189,7 @@ nav{
                     }
 
                     &, &:focus, &:hover{
-                        background-color: $bgNavSubCurrentItemAT;
+                        background-color: $bgNavSubItemCurrentAT;
                     }
 
                     &:focus, &:hover{
@@ -248,7 +235,7 @@ nav{
                     }
                 }
 
-                @if $navHasSubLevel1 == "on"{
+                @if $navHasSubs == "on"{
                     .subMenu{
                         position: absolute;
 
@@ -280,7 +267,7 @@ nav{
             }
         }
             
-        @if $navHasSubLevel1 == "on"{
+        @if $navHasSubs == "on"{
             .subMenu{                
                 > li{                
                     a,
@@ -301,7 +288,7 @@ nav{
     
     @include tabletAndTabletLandscapeOnly{
         .mainMenu{
-            @if $navHasSubLevel1 == "on"{
+            @if $navHasSubs == "on"{
                 .subMenu{
                     &.openSubTTLO{
                         display: $block;
@@ -315,7 +302,7 @@ nav{
                         > li{
                             > a,
                             > .topLevelItem{                
-                                &.open{
+                                &.openDR{
                                     color: $navFontColourTopperHover;
                                 }
                             }
@@ -327,12 +314,12 @@ nav{
     }
     
     @include afterDesktop{
-        @if $navHasSubLevel1 == "on"{
+        @if $navHasSubs == "on"{
             .hasSub{
                 &:focus, &:hover{
                     ul{
                         &,
-                        &.open,
+                        &.openDR,
                         &.openSubTTLO{
                             display: $block;
                         }

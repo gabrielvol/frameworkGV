@@ -18,18 +18,9 @@
             }
 
             .mainMenu{
-                z-index: $zIndexNavUlDrawer;
-
-                &, .subMenu{
-                    @include transition(0.5s); 
-                    top: 0;
-                    bottom: 0;
-                }                
-            }
-
-            > ul{
                 box-sizing: border-box;
                 position: fixed;
+                z-index: $zIndexNavUlDrawer;
                 left: calc(-1 * #{$navDrawerWidth});
                 width: calc(#{$navDrawerWidth} - 5px);
                 max-width: $navDrawerMaxWidth;
@@ -41,6 +32,7 @@
                 overflow: scroll; 
 
                 &, .subMenu{
+                    @include transition(0.5s); 
                     top: 0;
                     bottom: 0;
                 }    
@@ -52,50 +44,138 @@
                 & + .mainMenu{
                     margin-top: 0;
                 }
+        
+                @if $navHasSubs == "off"{
+                    li{
+                        a,
+                        .topLevelItem{
+                            color: $navFontColourLevel1BT;
+                            font-family: $navFontFamilyBT;
+                        }
+                    }  
+
+                    > .current{
+                        background-color: $bgNavItemCurrentLevel1BT; 
+                        background-image: url('/nuevo/img/nav_arrowL.svg');
+                        background-repeat: no-repeat;
+                        background-position: right 10px center;
+
+                        > a,
+                        > .topLevelItem{
+                            color: $navCurrentFontColourLevel1BT;
+                            font-family: $navCurrentFontFamilyBT;
+                        }
+                    }
+                }
             }
         
-            @if $navHasSubLevel1 == "on"{
+            @if $navHasSubs == "on"{
                 .subMenu{
                     position: relative;
                     top: 0;
                     right: $navDrawerWidth;
                     width: calc(100% + 5px);
                     max-width: $navDrawerMaxWidth;
-                    background-color: $bgNavSubBT;
-
-                    li{
-                        background-color: $bgNavSubItemBT;
-                    }  
-
-                    a{
+                    
+                    a,
+                    .topLevelItem{
                         font-family: $navSubFontFamilyBT;
-                        color: $navSubFontColourBT;
                     }
 
                     .current{
                         background-image: url('/clientes/frarenuevo/img/nav_arrowLsub.svg');
-                        background-color: $bgNavSubCurrentItemBT;
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
-                        a, .topLevelItem{
-                            color: $navSubCurrentFontColourBT;
+                        a,
+                        .topLevelItem{
                             font-family: $navSubCurrentFontFamilyBT;
                         } 
                     }
 
-                    @if $navHasSubLevel2 == "on"{
-                        .current .current{
-                            a, .topLevelItem{
-                            } 
-                        }
-                    }
-                
                     &.backMenuSubMenu{
                         z-index: $zIndexNavSubMenuBack;
                     }
 
-                    &.open{
+                    &.openDR{
+                        right: 5px;
+                    }
+                }
+            }
+        
+            @if $navHasSubLevel1 == "on"{
+                .subMenuLevel1{
+                    background-color: $bgNavLevel1BT;
+
+                    li{
+                        background-color: $bgNavItemLevel1BT;
+                    }
+                    
+                    .TLILevel1{
+                        color: $navFontColourLevel1BT;
+                    }
+                    
+                    .current{
+                        background-color: $bgNavItemCurrentLevel1BT;
+                        
+                        .TLILevel1{
+                            color: $navCurrentFontColourLevel1BT;
+                        }
+                    }
+
+                    &.openDR{
+                        right: 5px;
+                    }
+                }
+            }
+        
+            @if $navHasSubLevel2 == "on"{
+                .subMenuLevel2{
+                    background-color: $bgNavLevel2BT;
+
+                    li{
+                        background-color: $bgNavItemLevel2BT;
+                    }
+                    
+                    .TLILevel1{
+                        color: $navFontColourLevel2BT;
+                    }
+                    
+                    .current{
+                        background-color: $bgNavItemCurrentLevel2BT;
+                        
+                        .TLILevel1{
+                            color: $navCurrentFontColourLevel2BT;
+                        }
+                    }
+
+                    &.openDR{
+                        right: 5px;
+                    }
+                }
+            }
+        
+            @if $navHasSubLevel3 == "on"{                    
+                .subMenuLevel3{
+                    background-color: $bgNavLevel3BT;
+
+                    li{
+                        background-color: $bgNavItemLevel3BT;
+                    }
+                    
+                    .TLILevel1{
+                        color: $navFontColourLevel3BT;
+                    }
+                    
+                    .current{
+                        background-color: $bgNavItemCurrentLevel3BT;
+                        
+                        .TLILevel1{
+                            color: $navCurrentFontColourLevel3BT;
+                        }
+                    }
+
+                    &.openDR{
                         right: 5px;
                     }
                 }

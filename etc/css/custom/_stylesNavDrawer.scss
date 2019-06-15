@@ -73,11 +73,11 @@
                 }
             }
 
-            @if $navHasSubLevel1 == "on"{
-                .subMenuLevel1{
+            @if $navHasSubs == "on"{
+                .subMenu{
                     li{
                         & + li{
-                            @include borderStyleT($bcNavSubItemBT);
+                            @include borderStyleT($bcNavItemLevel1BT);
                         }
                     } 
                 }

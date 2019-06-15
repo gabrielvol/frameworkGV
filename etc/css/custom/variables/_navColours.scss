@@ -2,26 +2,27 @@
    Nav Colours Variables | Custom [navColours.scss]
    ========================================================================== */
     //Fonts
-$navFontColourBT:               $mainFontColour;
+$navFontColourLevel1BT:         $mainFontColour;
+$navFontColourLevel2BT:         $navFontColourLevel1BT;
+$navFontColourLevel3BT:         $navFontColourLevel2BT;
+
 $navFontColourAT:               $mainFontColour;
 $navFontColourHover:            $navFontColourAT;
-
-$navFontColourTopper:           $navFontColourAT;
-$navFontColourTopperHover:      $navFontColourTopper;
-
-$navSubFontColourBT:            $navFontColourBT;
 $navSubFontColourAT:            $navFontColourAT;
 $navSubFontColourHover:         $navSubFontColourAT;
 
-$navCurrentFontColourBT:        $navFontColourBT;
+$navCurrentFontColourLevel1BT:  $navFontColourLevel1BT;
+$navCurrentFontColourLevel2BT:  $navFontColourLevel2BT;
+$navCurrentFontColourLevel3BT:  $navFontColourLevel3BT;
+
 $navCurrentFontColourAT:        $navFontColourAT;
 $navCurrentFontColourHover:     $navCurrentFontColourAT;
-
-$navCurrentFontColourTopper:    $navFontColourAT;
-
-$navSubCurrentFontColourBT:     $navFontColourBT;
 $navSubCurrentFontColourAT:     $navFontColourAT;
 $navSubCurrentFontColourHover:  $navSubCurrentFontColourAT;
+
+$navFontColourTopper:           $navFontColourAT;
+$navFontColourTopperHover:      $navFontColourTopper;
+$navCurrentFontColourTopper:    $navFontColourAT;
 
 $hamburgerFontColour:           $greyXD;
 $hamburgerFontColourClicked:    $hamburgerFontColour;
@@ -30,42 +31,48 @@ $hamburgerFontColourClicked:    $hamburgerFontColour;
 $bgNavBT:           $bgWhite;
 $bgNavAT:           $bgGrey;
 
-$bgNavSubBT:        transparent;
+$bgNavLevel1BT:     transparent;
+$bgNavLevel2BT:     transparent;
+$bgNavLevel3BT:     transparent;
 $bgNavSubAT:        transparent;
 
-$bgNavHamburger:    $bgWhite;
+$bgNavItemLevel1BT:     transparent;
+$bgNavItemLevel2BT:     transparent;
+$bgNavItemLevel3BT:     transparent;
+$bgNavItemAT:           transparent;
+$bgNavItemHover:        $bgNavItemAT;
+$bgNavSubItemAT:        $bgNavItemAT;
+$bgNavSubItemHover:     $bgNavSubItemAT;
 
-$bgNavTopper:       $bgBlack;
+$bgNavItemCurrentLevel1BT:  darken($bgNavLevel1BT, 5%);
+$bgNavItemCurrentLevel2BT:  darken($bgNavLevel1BT, 5%);
+$bgNavItemCurrentLevel3BT:  darken($bgNavLevel1BT, 5%);
+$bgNavItemCurrentAT:        transparent;
+$bgNavItemCurrentHover:     transparent;
+$bgNavSubItemCurrentAT:     transparent;
+$bgNavSubItemCurrentHover:  transparent;
 
-$bgNavItemBT:       transparent;
-$bgNavItemAT:       transparent;
-$bgNavItemHover:    transparent;
+$bgNavHamburger: transparent;
 
-$bgNavSubItemBT:    transparent;
-$bgNavSubItemAT:    transparent;
-$bgNavSubItemHover: transparent;
-
-$bgNavCurrentItemBT:    darken($bgNavBT, 5%);
-$bgNavCurrentItemAT:    transparent;
-$bgNavCurrentItemHover: transparent;
-
-$bgNavSubCurrentItemBT:     transparent;
-$bgNavSubCurrentItemAT:     transparent;
-$bgNavSubCurrentItemHover:  transparent;
+$bgNavTopper: $bgBlack;
 
     //Border Colours
 $bcNavOpen:                 $bcGreyD;
 $bcNavClose:                $bcGreyD;
 
-$bcNavDrawerBT:            $bcBlack;
-$bcNavAccBT:               $bcGreyXXL;
+$bcNavBT:                   $bcBlack;
+ 
+$bcNavDrawerBT:             $bcBlack;
+$bcNavAccBT:                $bcGreyXXL;
+
+$bcNavItemCurrent:          $bcGrey;
+
+$bcNavItemLevel1BT:         $bcWhite;
+$bcNavItemLevel2BT:         $bcNavItemLevel1BT;
+$bcNavItemLevel3BT:         $bcNavItemLevel2BT;
+
+$bcNavSubItemAT:            $bcNavItemLevel1BT;
+$bcBackMenuColour:          $bcNavItemLevel1BT;
 
 $bcNavTopper:               $bcGreyD;
-$bcNavTopperCurrentItem:    $bcGrey;
-
-$bcNavCurrentItem:          $bcGrey;
-
-$bcNavItemBT:               $bcWhite;
-$bcNavSubItemBT:            $bcNavItemBT;
-$bcNavSubItemAT:            $bcNavItemBT;
-$bcBackMenuColour:          $bcNavItemBT;
+$bcNavTopperItemCurrent:    $bcGrey;

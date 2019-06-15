@@ -44,8 +44,8 @@
                 &.current{
                     a,
                     .topLevelItem{
-                        @if $navCurrentItemBottomBc == "on"{
-                            @include borderStyleB($bcNavCurrentItem, 3px);
+                        @if $navItemCurrentBottomBc == "on"{
+                            @include borderStyleB($bcNavItemCurrent, 3px);
                         }
                     }
                 }
@@ -142,7 +142,7 @@
                     > .current{
                         a,
                         .topLevelItem{
-                            @include borderStyleB($bcNavTopperCurrentItem, 3px);
+                            @include borderStyleB($bcNavTopperItemCurrent, 3px);
                         }
                     }
 
