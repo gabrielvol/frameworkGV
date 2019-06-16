@@ -16,7 +16,8 @@
                     background-position: center;
                     padding: $zero;
                     text-indent: -9999px;
-                } @else { 
+                    
+                    } @else { 
                     width: 90px;
                     height: $navDrawerHambHeight;
                     background-position: 10px center;
@@ -25,6 +26,7 @@
                     font-size: 1rem;
                     line-height: $navDrawerHambHeight;
                 }
+                
                 @include borderRadius($navBorderRadius);
                 background-color: $bgNavHamburger;
                 background-size: 15px;

@@ -45,26 +45,24 @@
                     margin-top: 0;
                 }
         
-                @if $navHasSubs == "off"{
-                    li{
-                        a,
-                        .topLevelItem{
-                            color: $navFontColourLevel1BT;
-                            font-family: $navFontFamilyBT;
-                        }
-                    }  
+                > li{
+                    > a,
+                    > .topLevelItem{
+                        color: $navFontColourLevel1BT;
+                        font-family: $navFontFamilyBT;
+                    }
+                }  
 
-                    > .current{
-                        background-color: $bgNavItemCurrentLevel1BT; 
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
-                        background-repeat: no-repeat;
-                        background-position: right 10px center;
+                > .current{
+                    background-color: $bgNavItemCurrentLevel1BT; 
+                    background-image: url('/nuevo/img/nav_arrowL.svg');
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
 
-                        > a,
-                        > .topLevelItem{
-                            color: $navCurrentFontColourLevel1BT;
-                            font-family: $navCurrentFontFamilyBT;
-                        }
+                    > a,
+                    > .topLevelItem{
+                        color: $navCurrentFontColourLevel1BT;
+                        font-family: $navCurrentFontFamilyBT;
                     }
                 }
             }
@@ -104,21 +102,33 @@
             }
         
             @if $navHasSubLevel1 == "on"{
-                .subMenuLevel1{
-                    background-color: $bgNavLevel1BT;
-
-                    li{
-                        background-color: $bgNavItemLevel1BT;
-                    }
-                    
+                .hasSubLevel1{ 
                     .TLILevel1{
-                        color: $navFontColourLevel1BT;
+                        color: $navFontColourLevel1_TLI_BT;
                     }
                     
                     .current{
                         background-color: $bgNavItemCurrentLevel1BT;
                         
                         .TLILevel1{
+                            color: $navCurrentFontColourLevel1_TLI_BT;
+                        }
+                    }
+                }
+                
+                .subMenuLevel1{
+                    background-color: $bgNavULLevel1BT;
+
+                    li{
+                        background-color: $bgNavItemLevel1BT;
+                        
+                        a{
+                            color: $navFontColourLevel1BT;
+                        }
+                    }
+
+                    .current{                        
+                        a{
                             color: $navCurrentFontColourLevel1BT;
                         }
                     }
@@ -130,23 +140,27 @@
             }
         
             @if $navHasSubLevel2 == "on"{
-                .subMenuLevel2{
-                    background-color: $bgNavLevel2BT;
-
-                    li{
-                        background-color: $bgNavItemLevel2BT;
-                    }
-                    
-                    .TLILevel1{
+                .hasSubLevel2{  
+                    a,  
+                    .TLILevel2{
                         color: $navFontColourLevel2BT;
                     }
                     
                     .current{
                         background-color: $bgNavItemCurrentLevel2BT;
                         
-                        .TLILevel1{
+                        a,
+                        .TLILevel2{
                             color: $navCurrentFontColourLevel2BT;
                         }
+                    }
+                }
+                
+                .subMenuLevel2{
+                    background-color: $bgNavULLevel2BT;
+
+                    li{
+                        background-color: $bgNavItemLevel2BT;
                     }
 
                     &.openDR{
@@ -155,24 +169,28 @@
                 }
             }
         
-            @if $navHasSubLevel3 == "on"{                    
-                .subMenuLevel3{
-                    background-color: $bgNavLevel3BT;
-
-                    li{
-                        background-color: $bgNavItemLevel3BT;
-                    }
-                    
-                    .TLILevel1{
-                        color: $navFontColourLevel3BT;
+            @if $navHasSubLevel3 == "on"{  
+                .hasSubLevel3{  
+                    a,  
+                    .TLILevel3{
+                        color: $navFontColourLevel2BT;
                     }
                     
                     .current{
-                        background-color: $bgNavItemCurrentLevel3BT;
+                        background-color: $bgNavItemCurrentLevel2BT;
                         
-                        .TLILevel1{
-                            color: $navCurrentFontColourLevel3BT;
+                        a,
+                        .TLILevel3{
+                            color: $navCurrentFontColourLevel2BT;
                         }
+                    }
+                }
+                
+                .subMenuLevel3{
+                    background-color: $bgNavULLevel3BT;
+
+                    li{
+                        background-color: $bgNavItemLevel3BT;
                     }
 
                     &.openDR{

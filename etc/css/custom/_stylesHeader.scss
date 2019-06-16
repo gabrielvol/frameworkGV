@@ -44,13 +44,6 @@
         padding-top: $headerPaddingTopBT;
         padding-bottom: $headerPaddingBottomBT;
         
-        @if $navAcc == "on"{
-            height: $headerHBTAcc;
-            box-shadow: 0 0 10px #ccc;
-        } @else {
-            height: $headerHBT;
-        }
-        
         @if $headerFixed == "on" or $navAcc == "on"{
             position: fixed;
             top: 0;
@@ -60,14 +53,22 @@
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
+        }        
+            
+        @if $logoImgBgBefore == "on"{
+            .logoH{
+                @include squareSize($logoWBT);
+            }
         }
         
-        .logoH{
-            margin-right: auto;
-            margin-left: auto;
-                
-            @if $navAcc == "on"{
+        @if $navAcc == "on"{
+            height: $headerHBTAcc;
+            box-shadow: 0 0 10px #ccc;
+            
+            .logoH{
                 height: $logoHBT;
+                margin-right: auto;
+                margin-left: auto;
             
                 a{
                     width: 200px;
@@ -76,22 +77,24 @@
                 a,
                 img{
                     height: 100%;
-                }                
+                } 
             }
             
-            @if $logoImgBgBefore == "on"{
-                @include squareSize($logoWBT);
-                
             } @else {
+            height: $headerHBT;
+            
+            .logoH{
                 width: $logoWBT;
             
                 a,
                 img{
                     width: 100%;
-                }         
+                }  
             }
-            
-            @if $navDrawer == "on"{
+        }
+        
+        @if $navDrawer == "on"{
+            .logoH{
                 &.clicked{
                     @include borderStyleR($bcNavDrawerBT);
                     box-sizing: border-box;
