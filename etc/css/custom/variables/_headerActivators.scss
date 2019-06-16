@@ -4,12 +4,12 @@
 
 // Menu y logo 
     $floatedLogoNav: on;
-    @import "logo"; 
+    @import "-logo"; 
     
     
 // Header 
     $headerFixed: on;
-    @import "headerHeight";    
+    @import "-headerHeight";    
     
     $fullHeightIndex: off;
     

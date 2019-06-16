@@ -28,7 +28,7 @@
 /* Desktop Half */
 /* Desktop Large Half*/
 /* =============================================================================
-   Classes Activators | Custom [activators.scss]
+   Classes Activators | Custom [activatorsMain.scss]
    ========================================================================== */
 /* =============================================================================
    Helpers Responsive Classes Activators | Custom [helpersActivators.scss]
@@ -1727,12 +1727,6 @@ article, article::before, article::after, details, details::before, details::aft
     */ }
   #header .logoH {
     margin-bottom: 0; }
-  #header .logoBefore {
-    position: relative;
-    background-image: url("/clientes/wsc/img/logo_bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%; }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
@@ -1748,8 +1742,10 @@ article, article::before, article::after, details, details::before, details::aft
       #header .logoH {
         margin-right: auto;
         margin-left: auto;
-        width: 50px;
-        height: 50px; }
+        width: 50px; }
+        #header .logoH a,
+        #header .logoH img {
+          width: 100%; }
         #header .logoH.clicked {
           border-right: 1px solid #000;
           box-sizing: border-box;
@@ -1785,18 +1781,16 @@ article, article::before, article::after, details, details::before, details::aft
         box-sizing: border-box;
         float: left;
         padding-right: 20px;
-        padding-left: 20px; }
-        #header .logoH, #header .logoH a {
-          width: 210px;
-          height: 210px; }
+        padding-left: 20px;
+        width: 210px; }
+        #header .logoH a,
         #header .logoH img {
           width: 100%; } }
   @media (min-width: 1024px) {
     #header {
       height: 85px; }
-      #header .logoH, #header .logoH a {
-        width: 250px;
-        height: 250px; } }
+      #header .logoH {
+        width: 250px; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
