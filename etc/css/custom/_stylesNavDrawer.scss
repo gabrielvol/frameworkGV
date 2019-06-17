@@ -21,67 +21,82 @@
                     width: 90px;
                     height: $navDrawerHambHeight;
                     background-position: 10px center;
-                    border: 1px solid $bcNavOpen!important;
+                    border: 1px solid $navBcColour_open!important;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
                     line-height: $navDrawerHambHeight;
                 }
                 
                 @include borderRadius($navBorderRadius);
-                background-color: $bgNavHamburger;
                 background-size: 15px;
             }
 
             .navClose{
                 @include squareSize(45px);
                 background-size: 20px;
-                border: 1px solid $bcNavClose!important;
+                border: 1px solid $navBcColour_close!important;
             }
 
-            > ul{
-                @include borderStyleR($bcNavDrawerBT);
+            .mainMenu{
+                @include borderStyleR($navBcColour_navDrawer);
 
                 li{
-                    &, a, .topLevelItem{
+                    &,
+                    a,
+                    .topLevelItem{
                         @include equalHeightAndLineHeight(45px);
                     }
 
-                    a, .topLevelItem{
+                    a,
+                    .topLevelItem{
                         font-size: 1rem;
                         text-align: center;
-                    }     
-
-                    &.backMenu .topLevelItem{
-                        background-image: url('/nuevo/img/nav_arrowL.svg');
-                    }     
-
-                    &.backMenu{    
-                        @include borderStyleB(2px, $bcBackMenuColour);
-
-                        & + .backMenu{
-                            border-color: $bcGreyD transparent $bcBackMenuColour;
-                            border-width: 1px 0 2px;
-                            border-style: solid;
-                        }
-
-                        .topLevelItem{
-                            color: $white!important;
-
-                            &.open{
-                                background-image: url('/nuevo/img/nav_arrowD.svg'); 
-                            }
-                        }
                     }    
                 }
-            }
 
-            @if $navHasSubs == "on"{
-                .subMenu{
-                    li{
+                > .current{
+                    background-color: $navBgColour_itemCurrentLevel0_BT;
+                    background-image: url('/nuevor/img/#{$navArrow_itemCurrentLevel0}');
+                }   
+
+                .backMenu{    
+                    @include borderStyleB(2px, $navBcColour_backMenu);
+
+                    & + .backMenu{
+                        border-color: $bcGreyD transparent $navBcColour_backMenu;
+                        border-width: 1px 0 2px;
+                        border-style: solid;
+                    }
+                } 
+            }
+        
+            @if $navHasSubLevel1 == "on"{            
+                .subMenuLevel1{
+                    > li{
                         & + li{
-                            @include borderStyleT($bcNavItemLevel1BT);
+                            @include borderStyleT($navBcColour_itemLevel1_BT);
                         }
-                    } 
+                    }
+                }
+            }
+            
+            @if $navHasSubLevel2 == "on"{           
+                .subMenuLevel2{
+                    > li{
+                        & + li{
+                            @include borderStyleT($navBcColour_itemLevel2_BT);
+                        }
+                    }
+                }
+            }
+            
+            @if $navHasSubLevel3 == "on"{          
+                .subMenuLevel3{
+                    > li{
+                        & + li{
+                            @include borderStyleT($navBcColour_itemLevel3_BT);
+                        }
+                    }
                 }
             }
         }

@@ -1,17 +1,13 @@
 /* =============================================================================
-   Nav Styles | Custom [stylesNav.scss]
+   Nav After Tablet Styles | Custom [stylesNav_AT.scss]
    ========================================================================== */
 .navMain{
-    @import "stylesNavDrawer";
-    @import "stylesNavAccordion";
-    @import "stylesNavList";
-    
     @include navAT{
         @if $floatedLogoNav == "on"{
             float: left;
             width: calc(100% - #{$logoWAT});
         }
-        
+         
         @if $navFixed == "on"{
             position: fixed;
             top: 0;
@@ -45,7 +41,7 @@
                     a,
                     .topLevelItem{
                         @if $navItemCurrentBottomBc == "on"{
-                            @include borderStyleB($bcNavItemCurrent, 3px);
+                            @include borderStyleB($navBcColour_itemCurrent, 3px);
                         }
                     }
                 }
@@ -70,8 +66,8 @@
             & + li{}
         }
         
-        @if $navHasSubLevel1 == "on"{
-            .subMenuLevel1{
+        @if $navHasSubs == "on"{
+            .subMenu{
                 $borderRadiusB: 10px;
                 $subMenuW: 200px;
                 
@@ -103,7 +99,7 @@
                     &, a{}
                     
                     & + li{
-                        @include borderStyleT($bcNavSubItemAT);
+                        @include borderStyleT($navBcColour_itemSub_AT);
                     }
                     
                     &:last-child{
@@ -119,7 +115,7 @@
         
         @if $navTopper == "on"{
             &.topperNav{
-                @include borderStyleB($bcNavTopper); 
+                @include borderStyleB($navBcColour_topper); 
                 position: fixed;
                 right: 0;
                 width: 100%; 
@@ -142,7 +138,7 @@
                     > .current{
                         a,
                         .topLevelItem{
-                            @include borderStyleB($bcNavTopperItemCurrent, 3px);
+                            @include borderStyleB($navBcColour_topperItemCurrent, 3px);
                         }
                     }
 
@@ -168,7 +164,7 @@
                         }
 
                         li{
-                            @include borderStyleT($bcNavSubItemAT);
+                            @include borderStyleT($navBcColour_itemSub_AT);
 
                             a{
                                 padding-left: 10px;
@@ -180,7 +176,7 @@
                             }
                             
                             &:first-child{
-                                @include borderStyleT($bcNavSubItemAT);
+                                @include borderStyleT($navBcColour_itemSub_AT);
                             }
                     
                             &:last-child{

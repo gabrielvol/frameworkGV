@@ -46,7 +46,7 @@ nav{
             opacity: 1;
             background-image: url('/nuevo/img/nav_hamb.svg');
             background-repeat: no-repeat;
-            color: $hamburgerFontColour;
+            color: $navFontColour_hamburger;
             font-family: $hamburgerFontFamily;
         }
         
@@ -67,39 +67,11 @@ nav{
         .mainMenu{
             li{
                 float: $none;
-
-                .topLevelItem{
-                    background-repeat: no-repeat;
-                    background-position: 10px center;
-
-                    &.openDR{
-                        background-image: url('/nuevo/img/nav_arrowD.svg');
-                    }
-                }   
-
+            }
+            
+            > li{
                 & + li{
-                    @include borderStyleT($bcNavItemLevel1BT);
-                }  
-
-                > .current{ 
-                    background-image: url('/nuevo/img/nav_arrowL.svg');
-                    background-repeat: no-repeat;
-                    background-position: right 10px center;
-                }
-        
-                @if $navHasSubLevel1 == "on"{
-                    .TLILevel1{
-                    }
-                }
-
-                @if $navHasSubLevel2 == "on"{
-                    .TLILevel2{
-                    }
-                }
-
-                @if $navHasSubLevel3 == "on"{                    
-                    .TLILevel3{
-                    }
+                    @include borderStyleT($navBcColour_itemLevel0_BT);
                 }
             }
         }
@@ -115,41 +87,41 @@ nav{
         }
         
         > ul{
-            background-color: $bgNavAT; 
+            background-color: $navBgColour_AT; 
             
             > li{
-                background-color: $bgNavItemAT;
+                background-color: $navBgColour_item_AT;
 
                 a,
                 .topLevelItem{
-                    color: $navFontColourAT;
+                    color: $navFontColour_item_AT;
                     font-family: $navFontFamilyAT;
                 }    
 
                 &:focus, &:hover{
-                    background-color: $bgNavItemHover; 
+                    background-color: $navBgColour_item_hover; 
                     
                     > a{
-                        color: $navFontColourHover;
+                        color: $navFontColour_item_hover;
                     }
                 }            
             }
 
             > .current{
-                background-color: $bgNavItemCurrentAT;
+                background-color: $navBgColour_itemCurrent_AT;
 
                 a,
                 .topLevelItem{
-                    color: $navCurrentFontColourAT;
+                    color: $navFontColour_itemCurrent_AT;
                     font-family: $navCurrentFontFamilyAT;
                 }  
 
                 &:focus, &:hover{
-                    background-color: $bgNavItemCurrentHover;
+                    background-color: $navBgColour_itemCurrent_Hover;
 
                     > a,
                     .topLevelItem{
-                        color: $navCurrentFontColourHover;
+                        color: $navFontColour_itemCurrent_hover;
                     }  
                 }         
             } 
@@ -158,24 +130,24 @@ nav{
         @if $navHasSubs == "on"{
             .subMenu{
                 display: $none;
-                background-color: $bgNavSubAT;
+                background-color: $navBgColour_ULsub_AT;
                 
                 > li{
                     @include transition(0.7s);
-                    background-color: $bgNavSubItemAT;
+                    background-color: $navBgColour_itemSub_AT;
                     
                     a,
                     .topLevelItem{
-                        color: $navSubFontColourAT;
+                        color: $navFontColour_itemSub_AT;
                         font-family: $navSubFontFamilyAT;
                         cursor: pointer;
                     }
                     
                     &:focus, &:hover{
-                        background-color: $bgNavSubItemHover;
+                        background-color: $navBgColour_itemSub_Hover;
                         
                         a{
-                            color: $navSubFontColourHover;  
+                            color: $navFontColour_itemSub_hover;  
                         }
                     }
                 }
@@ -183,18 +155,18 @@ nav{
                 > .current{
                     a,
                     .topLevelItem{
-                        color: $navSubCurrentFontColourAT;
+                        color: $navFontColour_itemSubCurrent_AT;
                         font-family: $navSubCurrentFontFamilyAT;
                         cursor: default;
                     }
 
                     &, &:focus, &:hover{
-                        background-color: $bgNavSubItemCurrentAT;
+                        background-color: $navBgColour_itemSubCurrent_AT;
                     }
 
                     &:focus, &:hover{
                         a{
-                            color: $navSubCurrentFontColourHover;
+                            color: $navFontColour_itemSubCurrent_hover;
                         }
                     }
                 }
@@ -204,7 +176,7 @@ nav{
         @if $navTopper == "on"{
             &.topperNav{
                 top: 0;
-                background-color: $bgNavTopper;
+                background-color: $navBgColour_topper;
 
                 .hamb{
                     display: $none;
@@ -214,13 +186,13 @@ nav{
                     > li{
                         > a,
                         > .topLevelItem{
-                            color: $navFontColourTopper;
+                            color: $navFontColour_topper;
                         }
 
                         &:focus, &:hover{
                             > a,
                             .topLevelItem{
-                                color: $navFontColourTopperHover;
+                                color: $navFontColour_topper_hover;
                             }  
                         }
                     }
@@ -229,20 +201,8 @@ nav{
                         &, &:focus, &:hover{
                             > a,
                             .topLevelItem{
-                                color: $navCurrentFontColourTopper;
+                                color: $navFontColour_topper_itemCurrent;
                             }  
-                        }
-                    }
-                }
-
-                @if $navHasSubs == "on"{
-                    .subMenu{
-                        position: absolute;
-
-                        li{
-                            & + li{
-                                @include borderStyleT($bcNavSubItemAT);
-                            }
                         }
                     }
                 }
@@ -303,7 +263,7 @@ nav{
                             > a,
                             > .topLevelItem{                
                                 &.openDR{
-                                    color: $navFontColourTopperHover;
+                                    color: $navFontColour_topper_hover;
                                 }
                             }
                         }

@@ -66,6 +66,12 @@
 /* =============================================================================
    Nav Colours Variables | Custom [navColours.scss]
    ========================================================================== */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* =============================================================================
+   Nav Arrows | Custom [navArrows.scss]
+   ========================================================================== */
+/* -------------------------------------------------------------------------- */
 /* =============================================================================
    Nav Fonts Variables | Custom [navFonts.scss]
    ========================================================================== */
@@ -1732,40 +1738,38 @@ article, article::before, article::after, details, details::before, details::aft
       box-sizing: border-box;
       padding-top: 20px;
       padding-bottom: 15px;
-      height: auto;
       position: fixed;
       top: 0;
       right: 0;
-      left: 0; }
+      left: 0;
+      height: auto; }
       #header.topperShadow {
         box-shadow: 0 0 7px #000; }
       #header .logoH {
-        margin-right: auto;
-        margin-left: auto;
         width: 50px; }
         #header .logoH a,
         #header .logoH img {
           width: 100%; }
-        #header .logoH.clicked {
-          border-right: 1px solid #000;
-          box-sizing: border-box;
-          position: fixed;
-          z-index: 9200;
-          top: 0;
-          left: 0;
-          width: calc(70vw - 5px);
-          max-width: 300px;
-          height: calc(50px + 50px + 10px);
-          background-color: #fff;
-          padding-top: 50px;
-          padding-bottom: 10px;
-          margin: 0; }
-          #header .logoH.clicked a, #header .logoH.clicked img {
-            width: auto;
-            height: 100%; }
-          #header .logoH.clicked img {
-            margin-right: auto;
-            margin-left: auto; } }
+      #header .logoH.clicked {
+        border-right: 1px solid #000;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 9200;
+        top: 0;
+        left: 0;
+        width: calc(70vw - 5px);
+        max-width: 300px;
+        height: calc(50px + 50px + 10px);
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        margin: 0; }
+        #header .logoH.clicked a, #header .logoH.clicked img {
+          width: auto;
+          height: 100%; }
+        #header .logoH.clicked img {
+          margin-right: auto;
+          margin-left: auto; } }
   @media (min-width: 768px) {
     #header {
       position: fixed;
@@ -1864,17 +1868,8 @@ nav li:focus a, nav li:hover a {
       display: none !important; }
     .navMain .mainMenu li {
       float: none !important; }
-      .navMain .mainMenu li .topLevelItem {
-        background-repeat: no-repeat;
-        background-position: 10px center; }
-        .navMain .mainMenu li .topLevelItem.openDR {
-          background-image: url("/nuevo/img/nav_arrowD.svg"); }
-      .navMain .mainMenu li + li {
-        border-top: 1px solid #fff; }
-      .navMain .mainMenu li > .current {
-        background-image: url("/nuevo/img/nav_arrowL.svg");
-        background-repeat: no-repeat;
-        background-position: right 10px center; } }
+    .navMain .mainMenu > li + li {
+      border-top: 1px solid #fff; } }
 
 @media (min-width: 768px) {
   .navMain .hamb {
@@ -1918,9 +1913,11 @@ nav li:focus a, nav li:hover a {
    Nav Drawer Settings | Etc [settingsNavDrawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
-  .navMain .navOpen.clicked {
-    opacity: 0.5;
-    color: #333; }
+  .navMain .navOpen {
+    background-color: transparent; }
+    .navMain .navOpen.clicked {
+      opacity: 0.5;
+      color: #333; }
   .navMain .navClose.clicked {
     display: block; }
   .navMain .mainMenu {
@@ -1936,7 +1933,8 @@ nav li:focus a, nav li:hover a {
     padding-left: 5px;
     padding-bottom: 30px;
     overflow: scroll; }
-    .navMain .mainMenu, .navMain .mainMenu .subMenu {
+    .navMain .mainMenu,
+    .navMain .mainMenu .subMenu {
       transition: all 0.5s ease;
       top: 0;
       bottom: 0; }
@@ -1944,115 +1942,20 @@ nav li:focus a, nav li:hover a {
       left: 0; }
     .navMain .mainMenu + .mainMenu {
       margin-top: 0; }
-    .navMain .mainMenu li a,
-    .navMain .mainMenu li .topLevelItem {
+    .navMain .mainMenu > li > a,
+    .navMain .mainMenu > li > .topLevelItem {
       color: #000;
       font-family: Arial; }
     .navMain .mainMenu > .current {
-      background-color: rgba(0, 0, 0, 0);
-      background-image: url("/nuevo/img/nav_arrowL.svg");
       background-repeat: no-repeat;
       background-position: right 10px center; }
       .navMain .mainMenu > .current > a,
       .navMain .mainMenu > .current > .topLevelItem {
-        color: #000;
         font-family: Arial; } }
 
 /* =============================================================================
    Nav Accordion Settings | Etc [settingsNavAccordion.scss]
    ========================================================================== */
-/* =============================================================================
-   Nav Styles | Custom [stylesNav.scss]
-   ========================================================================== */
-.navMain {
-  /* =============================================================================
-   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
-   ========================================================================== */
-  /* =============================================================================
-   Nav Accordion Styles | Custom [stylesNavAccordion.scss]
-   ========================================================================== */
-  /* =============================================================================
-   Nav List Styles | Custom [stylesNavList.scss]
-   ========================================================================== */ }
-  @media (max-width: 767px) {
-    .navMain .navMain {
-      top: 10px;
-      right: 10px; }
-      .navMain .navMain .hamb {
-        top: 0;
-        right: 0; }
-      .navMain .navMain .navOpen {
-        width: 90px;
-        height: 40px;
-        background-position: 10px center;
-        border: 1px solid #666 !important;
-        padding: 0 10px 0 30px;
-        font-size: 1rem;
-        line-height: 40px;
-        border-radius: 4px;
-        background-color: transparent;
-        background-size: 15px; }
-      .navMain .navMain .navClose {
-        width: 45px;
-        height: 45px;
-        background-size: 20px;
-        border: 1px solid #666 !important; }
-      .navMain .navMain > ul {
-        border-right: 1px solid #000; }
-        .navMain .navMain > ul li, .navMain .navMain > ul li a, .navMain .navMain > ul li .topLevelItem {
-          height: 45px;
-          line-height: 45px; }
-        .navMain .navMain > ul li a, .navMain .navMain > ul li .topLevelItem {
-          font-size: 1rem;
-          text-align: center; }
-        .navMain .navMain > ul li.backMenu .topLevelItem {
-          background-image: url("/nuevo/img/nav_arrowL.svg"); }
-        .navMain .navMain > ul li.backMenu {
-          border-bottom: #fff solid 2px; }
-          .navMain .navMain > ul li.backMenu + .backMenu {
-            border-color: #666 transparent #fff;
-            border-width: 1px 0 2px;
-            border-style: solid; }
-          .navMain .navMain > ul li.backMenu .topLevelItem {
-            color: #fff !important; }
-            .navMain .navMain > ul li.backMenu .topLevelItem.open {
-              background-image: url("/nuevo/img/nav_arrowD.svg"); } }
-  @media (min-width: 768px) {
-    .navMain {
-      float: left;
-      width: calc(100% - 210px);
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      box-shadow: 0 0 7px #000; }
-      .navMain .mainMenu > li {
-        float: left; }
-      .navMain li,
-      .navMain li a,
-      .navMain li .topLevelItem {
-        height: 60px;
-        line-height: 60px; }
-      .navMain li a,
-      .navMain li .topLevelItem {
-        transition: all 1s ease;
-        font-size: 0.8rem;
-        padding-right: 5px;
-        padding-left: 5px; } }
-  @media (min-width: 1024px) {
-    .navMain {
-      width: calc(100% - 250px); }
-      .navMain li,
-      .navMain li a,
-      .navMain li .topLevelItem {
-        height: 60px;
-        line-height: 60px; }
-      .navMain li a,
-      .navMain li .topLevelItem {
-        font-size: 1rem;
-        padding-right: 10px;
-        padding-left: 10px; } }
-
 /* =============================================================================
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
@@ -2072,37 +1975,79 @@ nav li:focus a, nav li:hover a {
       font-size: 1rem;
       line-height: 40px;
       border-radius: 4px;
-      background-color: transparent;
       background-size: 15px; }
     .navMain .navClose {
       width: 45px;
       height: 45px;
       background-size: 20px;
       border: 1px solid #666 !important; }
-    .navMain > ul {
+    .navMain .mainMenu {
       border-right: 1px solid #000; }
-      .navMain > ul li, .navMain > ul li a, .navMain > ul li .topLevelItem {
+      .navMain .mainMenu li,
+      .navMain .mainMenu li a,
+      .navMain .mainMenu li .topLevelItem {
         height: 45px;
         line-height: 45px; }
-      .navMain > ul li a, .navMain > ul li .topLevelItem {
+      .navMain .mainMenu li a,
+      .navMain .mainMenu li .topLevelItem {
         font-size: 1rem;
         text-align: center; }
-      .navMain > ul li.backMenu .topLevelItem {
-        background-image: url("/nuevo/img/nav_arrowL.svg"); }
-      .navMain > ul li.backMenu {
+      .navMain .mainMenu > .current {
+        background-color: #f2f2f2;
+        background-image: url("/nuevor/img/nav_arrowL.svg"); }
+      .navMain .mainMenu .backMenu {
         border-bottom: #fff solid 2px; }
-        .navMain > ul li.backMenu + .backMenu {
+        .navMain .mainMenu .backMenu + .backMenu {
           border-color: #666 transparent #fff;
           border-width: 1px 0 2px;
-          border-style: solid; }
-        .navMain > ul li.backMenu .topLevelItem {
-          color: #fff !important; }
-          .navMain > ul li.backMenu .topLevelItem.open {
-            background-image: url("/nuevo/img/nav_arrowD.svg"); } }
+          border-style: solid; } }
 
 /* =============================================================================
    Nav Accordion Styles | Custom [stylesNavAccordion.scss]
    ========================================================================== */
+/* =============================================================================
+   Nav List Styles | Custom [stylesNavList.scss]
+   ========================================================================== */
+/* =============================================================================
+   Nav After Tablet Styles | Custom [stylesNav_AT.scss]
+   ========================================================================== */
+@media (min-width: 768px) {
+  .navMain {
+    float: left;
+    width: calc(100% - 210px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 7px #000; }
+    .navMain .mainMenu > li {
+      float: left; }
+    .navMain li,
+    .navMain li a,
+    .navMain li .topLevelItem {
+      height: 60px;
+      line-height: 60px; }
+    .navMain li a,
+    .navMain li .topLevelItem {
+      transition: all 1s ease;
+      font-size: 0.8rem;
+      padding-right: 5px;
+      padding-left: 5px; } }
+
+@media (min-width: 1024px) {
+  .navMain {
+    width: calc(100% - 250px); }
+    .navMain li,
+    .navMain li a,
+    .navMain li .topLevelItem {
+      height: 60px;
+      line-height: 60px; }
+    .navMain li a,
+    .navMain li .topLevelItem {
+      font-size: 1rem;
+      padding-right: 10px;
+      padding-left: 10px; } }
+
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
    ========================================================================== */

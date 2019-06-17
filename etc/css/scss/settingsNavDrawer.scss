@@ -2,12 +2,14 @@
    Nav Drawer Settings | Etc [settingsNavDrawer.scss]
    ========================================================================== */
 @if $navDrawer == "on"{
-    .navMain{
-        @include navBT{
-            .navOpen{                
+    @include navBT{
+        .navMain{
+            .navOpen{   
+                background-color: $navBgColour_hamburger;
+                
                 &.clicked{
                     opacity: 0.5;
-                    color: $hamburgerFontColourClicked;
+                    color: $navFontColour_hamburger_clicked;
                 } 
             }
 
@@ -24,14 +26,15 @@
                 left: calc(-1 * #{$navDrawerWidth});
                 width: calc(#{$navDrawerWidth} - 5px);
                 max-width: $navDrawerMaxWidth;
-                background-color: $bgNavBT;
+                background-color: $navBgColour_BT;
                 padding-top: calc(#{$logoHClickedFH} + 5px);
                 padding-right: 5px;
                 padding-left: 5px;
                 padding-bottom: 30px;
                 overflow: scroll; 
 
-                &, .subMenu{
+                &,
+                .subMenu{
                     @include transition(0.5s); 
                     top: 0;
                     bottom: 0;
@@ -48,31 +51,46 @@
                 > li{
                     > a,
                     > .topLevelItem{
-                        color: $navFontColourLevel1BT;
+                        color: $navFontColour_itemLevel0_BT;
                         font-family: $navFontFamilyBT;
                     }
                 }  
 
                 > .current{
-                    background-color: $bgNavItemCurrentLevel1BT; 
-                    background-image: url('/nuevo/img/nav_arrowL.svg');
                     background-repeat: no-repeat;
                     background-position: right 10px center;
 
                     > a,
                     > .topLevelItem{
-                        color: $navCurrentFontColourLevel1BT;
                         font-family: $navCurrentFontFamilyBT;
                     }
                 }
             }
         
             @if $navHasSubs == "on"{
+                .mainMenu{
+                    .topLevelItem{
+                        background-repeat: no-repeat;
+                        background-position: 10px center;
+                    }  
+                    
+                    &.backMenu{
+                        .topLevelItem{
+                            background-image: url('/nuevo/img/#{$navArrow_backMenuTLI}');
+                            color: $navFontColour_backMenu_TLI;
+
+                            &.open{
+                                background-image: url('/nuevo/img/#{$navArrow_backMenuTLI_openDR}'); 
+                            }
+                        } 
+                    }
+                }
+                
                 .subMenu{
                     position: relative;
                     top: 0;
                     right: $navDrawerWidth;
-                    width: calc(100% + 5px);
+                    width: calc(100%);
                     max-width: $navDrawerMaxWidth;
                     
                     a,
@@ -81,7 +99,6 @@
                     }
 
                     .current{
-                        background-image: url('/clientes/frarenuevo/img/nav_arrowLsub.svg');
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
@@ -96,75 +113,91 @@
                     }
 
                     &.openDR{
-                        right: 5px;
+                        right: 0;
                     }
-                }
+                }  
             }
         
             @if $navHasSubLevel1 == "on"{
                 .hasSubLevel1{ 
+                    a,
                     .TLILevel1{
-                        color: $navFontColourLevel1_TLI_BT;
+                        color: $navFontColour_TLILevel1_BT;
+
+                        &.openDR{
+                            background-image: url('/nuevo/img/#{$navArrow_TLILevel1_openDR}');
+                        }
                     }
                     
-                    .current{
-                        background-color: $bgNavItemCurrentLevel1BT;
-                        
+                    &.current{                        
+                        a,
                         .TLILevel1{
-                            color: $navCurrentFontColourLevel1_TLI_BT;
+                            color: $navFontColour_TLICurrentLevel1_BT;
                         }
                     }
                 }
                 
                 .subMenuLevel1{
-                    background-color: $bgNavULLevel1BT;
+                    z-index: $zIndexNavSubMenuLevel1;
+                    background-color: $navBgColour_ulLevel1_BT;
 
                     li{
-                        background-color: $bgNavItemLevel1BT;
+                        background-color: $navBgColour_itemLevel1_BT;
                         
                         a{
-                            color: $navFontColourLevel1BT;
+                            color: $navFontColour_itemLevel1_BT;
                         }
                     }
 
-                    .current{                        
+                    > .current{  
+                        background-color: $navBgColour_itemCurrentLevel1_BT; 
+                        background-image: url('/nuevo/img/#{$navArrow_itemCurrentLevel1}');
+                        
                         a{
-                            color: $navCurrentFontColourLevel1BT;
+                            color: $navFontColour_itemCurrentLevel1_BT;
                         }
-                    }
-
-                    &.openDR{
-                        right: 5px;
                     }
                 }
             }
         
             @if $navHasSubLevel2 == "on"{
-                .hasSubLevel2{  
-                    a,  
+                .hasSubLevel2{ 
+                    a,
                     .TLILevel2{
-                        color: $navFontColourLevel2BT;
+                        color: $navFontColour_itemLevel2_BT;
+
+                        &.openDR{
+                            background-image: url('/nuevo/img/#{$navArrow_TLILevel2_openDR}');
+                        }
                     }
                     
-                    .current{
-                        background-color: $bgNavItemCurrentLevel2BT;
-                        
+                    &.current{                        
                         a,
-                        .TLILevel2{
-                            color: $navCurrentFontColourLevel2BT;
+                        .TLILevel1{
+                            color: $navFontColour_TLICurrentLevel2_BT;
                         }
                     }
                 }
                 
                 .subMenuLevel2{
-                    background-color: $bgNavULLevel2BT;
+                    z-index: $zIndexNavSubMenuLevel2;
+                    background-color: $navBgColour_ulLevel2_BT;
 
                     li{
-                        background-color: $bgNavItemLevel2BT;
+                        background-color: $navBgColour_itemLevel2_BT;
+                        
+                        a{
+                            color: $navFontColour_itemLevel2_BT;
+                        }
                     }
 
-                    &.openDR{
-                        right: 5px;
+                    > .current{      
+                        background-color: $navBgColour_itemCurrentLevel2_BT; 
+                        background-image: url('/nuevo/img/#{$navArrow_itemCurrentLevel2}'); 
+                        
+                        a{
+                            color: $navFontColour_itemCurrentLevel2_BT;
+                        }
                     }
                 }
             }
@@ -173,28 +206,40 @@
                 .hasSubLevel3{  
                     a,  
                     .TLILevel3{
-                        color: $navFontColourLevel2BT;
+                        color: $navFontColour_itemLevel2_BT;
+
+                        &.openDR{
+                            background-image: url('/nuevo/img/#{$navArrow_TLILevel3_openDR}');
+                        }
                     }
                     
-                    .current{
-                        background-color: $bgNavItemCurrentLevel2BT;
-                        
+                    &.current{                        
                         a,
-                        .TLILevel3{
-                            color: $navCurrentFontColourLevel2BT;
+                        .TLILevel1{
+                            color: $navFontColour_TLICurrentLevel3_BT;
                         }
                     }
                 }
                 
                 .subMenuLevel3{
-                    background-color: $bgNavULLevel3BT;
+                    z-index: $zIndexNavSubMenuLevel3;
+                    background-color: $navBgColour_ulLevel3_BT;
 
                     li{
-                        background-color: $bgNavItemLevel3BT;
+                        background-color: $navBgColour_itemLevel3_BT;
+                        
+                        a{
+                            color: $navFontColour_itemLevel3_BT;
+                        }
                     }
 
-                    &.openDR{
-                        right: 5px;
+                    > .current{      
+                        background-color: $navBgColour_itemCurrentLevel3_BT;
+                        background-image: url('/nuevo/img/#{$navArrow_itemCurrentLevel3}'); 
+                        
+                        a{
+                            color: $navFontColour_itemCurrentLevel3_BT;
+                        }
                     }
                 }
             }

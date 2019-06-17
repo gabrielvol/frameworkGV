@@ -96,7 +96,7 @@
         @if $navDrawer == "on"{
             .logoH{
                 &.clicked{
-                    @include borderStyleR($bcNavDrawerBT);
+                    @include borderStyleR($navBcColour_navDrawer);
                     box-sizing: border-box;
                     position: fixed;
                     z-index: $zIndexLogoHClicked;
@@ -105,7 +105,7 @@
                     width: calc(#{$navDrawerWidth} - 5px);
                     max-width: $navDrawerMaxWidth;
                     height: $logoHClickedFH;
-                    background-color: $bgNavBT;
+                    background-color: $navBgColour_BT;
                     padding-top: $logoHClickedPT;
                     padding-bottom: $logoHClickedPB;
                     margin: 0;
