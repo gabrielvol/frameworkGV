@@ -1,24 +1,26 @@
 /* =============================================================================
    Slick Arrows Styles | Custom [stylesSliderArrows.scss]
    ========================================================================== */
-@if $slider_arrows == "on"{
-    $slider_ArrowHeightBT:       30px;
-    $slider_ArrowWidthHeightBT:  18px $slider_ArrowHeightBT;
-    $slider_ArrowHeightHalfBT:   calc(#{$slider_ArrowHeightBT} / 2);
+// imported in _stylesSlider.scss
 
-    $slider_ArrowHeightAT:       50px;
-    $slider_ArrowWidthHeightAT:  30px $slider_ArrowHeightAT;
-    $slider_ArrowHeightHalfAT:   calc(#{$slider_ArrowHeightAT} / 2);
+@if $sliderArrows_act == "on"{
+    $sliderArrow_height_BT:       30px;
+    $sliderArrow_widthHeight_BT:  18px $sliderArrow_height_BT;
+    $sliderArrow_height_half_BT:   calc(#{$sliderArrow_height_BT} / 2);
+
+    $sliderArrow_height_AT:       50px;
+    $sliderArrow_widthHeight_AT:  30px $sliderArrow_height_AT;
+    $sliderArrow_height_half_AT:   calc(#{$sliderArrow_height_AT} / 2);
 
     .slickPrev{
         left: 0;
 
         @include beforeTablet{
-            @include bgSvg(slider_arrowL, $slider_ArrowWidthHeightBT);        
+            @include bgSvg(slider_arrowL, $sliderArrow_widthHeight_BT);        
         }
 
         @include afterTablet{
-            @include bgSvg(slider_arrowL, $slider_ArrowWidthHeightAT);        
+            @include bgSvg(slider_arrowL, $sliderArrow_widthHeight_AT);        
         }
     }
 
@@ -26,11 +28,11 @@
         right: 0;
 
         @include beforeTablet{
-            @include bgSvg(slider_arrowR, $slider_ArrowWidthHeightBT);        
+            @include bgSvg(slider_arrowR, $sliderArrow_widthHeight_BT);        
         }
 
         @include afterTablet{
-            @include bgSvg(slider_arrowR, $slider_ArrowWidthHeightAT);        
+            @include bgSvg(slider_arrowR, $sliderArrow_widthHeight_AT);        
         }
     }
 
@@ -39,28 +41,28 @@
         @include transition(0.7s);
         @include opacityCustomHover();
         position: absolute;
-        z-index: $zIndexSlickNextPrevDots;
+        z-index: $zIndex_slider_arrows_dots;
         top: 50%;
         border: $none;
         padding: $zero;
         text-indent: -9999px;
 
         @include beforeTablet{
-            @include squareSize($slider_ArrowHeightBT);
+            @include squareSize($sliderArrow_height_BT);
             /*
             width: $slider_ArrowWidthBT;
-            height: $slider_ArrowHeightBT;
+            height: $sliderArrow_height_BT;
             */
-            margin-top: calc(-1 * #{$slider_ArrowHeightHalfBT});        
+            margin-top: calc(-1 * #{$sliderArrow_height_half_BT});        
         }
 
         @include afterTablet{
-            @include squareSize($slider_ArrowHeightAT);
+            @include squareSize($sliderArrow_height_AT);
             /*            
             width: $slider_ArrowWidthAT;
-            height: $slider_ArrowHeightAT;
+            height: $sliderArrow_height_AT;
             */
-            margin-top: calc(-1 * #{$slider_ArrowHeightHalfAT});
+            margin-top: calc(-1 * #{$sliderArrow_height_half_AT});
         }
     }
 }
