@@ -21,9 +21,9 @@ $desktopLargeMin: 1600px;
    ========================================================================== */
 /* Nav */
 @mixin navBT{
-    @media (max-width: #{$navBTmediaQuerie}){@content;}}
+    @media (max-width: #{$nav_mediaQuerie_BT}){@content;}}
 @mixin navAT{
-    @media (min-width: #{$navATmediaQuerie}){@content;}}
+    @media (min-width: #{$nav_mediaQuerie_AT}){@content;}}
     
 /* Mobile */
 @mixin mobileOnly{ // 499px

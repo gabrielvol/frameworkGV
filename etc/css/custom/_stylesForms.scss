@@ -7,7 +7,7 @@ fieldset{
     }
 
     > p{
-        margin-bottom: $paddingMarginMediumValue;
+        margin-bottom: $helpers_spacing_PM_medium;
         padding: $zero;
         color: $black;
     }
@@ -15,7 +15,7 @@ fieldset{
     &.invalidField{
         legend,
         label span{
-            color: $formInputErrorMsgColour;
+            color: $formInput_msgError_fontColour;
         }
         
         legend{
@@ -65,10 +65,10 @@ select{
 .mandatoryMsg{
     &.invalidmandatoryMsg{
         display: $block;
-        background-color: $invalidMandatoryMsgBgColour;
+        background-color: $formStatus_msgError_bgColour;
         
         p{
-            color: $invalidMandatoryMsgFontColour;     
+            color: $formStatus_msgError_fontColour;     
         }
     }
 }
@@ -156,9 +156,9 @@ form{
             height: 100px;        
         }
 
-        @if $formInsideLabel == "off"{
+        @if $formLabel_inside_act == "off"{
             @include afterTabletLandscape{
-                margin-bottom: $paddingMarginLargeValue;
+                margin-bottom: $helpers_spacing_PM_large;
             }        
         }
     }
@@ -172,23 +172,23 @@ form{
         font-size: 1.4rem;
     }
     
-    @if $formInsideLabel == "on"{
+    @if $formLabel_inside_act == "on"{
         fieldset,
         label{
             @include beforeTablet{
                 .mobileForm &{
-                    margin-bottom: $paddingMarginLargeValue;
+                    margin-bottom: $helpers_spacing_PM_large;
                 }
             }
 
             @include tabletOnly{
                 .tabletForm &{
-                    margin-bottom: $paddingMarginLargeValue;       
+                    margin-bottom: $helpers_spacing_PM_large;       
                 }
             }
 
             @include afterTabletLandscape{
-                margin-bottom: $paddingMarginMediumValue;
+                margin-bottom: $helpers_spacing_PM_medium;
             }
         }
         
@@ -202,12 +202,12 @@ form{
             @include beforeTablet{
                 .mobileForm &{
                     .radio{
-                        width: $formInputRadioHeightBT!important;
-                        height: $formInputRadioHeightBT;
+                        width: $formInput_radio_height_BT!important;
+                        height: $formInput_radio_height_BT;
                     }
 
                     span{
-                        width: calc(100% - calc(#{$formInputRadioHeightBT} + 10px));
+                        width: calc(100% - calc(#{$formInput_radio_height_BT} + 10px));
                         display: block;
                         float: left;
                         height: auto;
@@ -224,14 +224,14 @@ form{
             @include tabletOnly{
                 .tabletForm &{
                     .radio{
-                        width: $formInputRadioHeightTO!important;
-                        height: $formInputRadioHeightTO;
+                        width: $formInput_radio_height_TO!important;
+                        height: $formInput_radio_height_TO;
                     }
 
                     &,
                     input,
                     span{
-                        @include equalHeightAndLineHeight($formInputRadioHeightTO);
+                        @include equalHeightAndLineHeight($formInput_radio_height_TO);
                     }
                 }
             }
@@ -250,7 +250,7 @@ form{
         .labelName{
             box-sizing: border-box;
             padding-left: 7px;
-            font-family: $formLabelFontFamily;
+            font-family: $formLabel_fontFamily;
             font-size: 1.1rem!important;
         }
 
@@ -262,7 +262,7 @@ form{
                 display: block;
                 padding-top: 3px;
                 padding-left: 10px;
-                color: $formInputErrorMsgFontColour;
+                color: $formInput_msgError_fontColour;
                 font-family: $arial;
                 font-weight: 700;
                 font-size: 0.8rem!important;

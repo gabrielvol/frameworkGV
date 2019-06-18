@@ -2,19 +2,19 @@
    Font Settings | Etc [settingsText.scss]
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
-    font-family: $mainFontStack;
-    font-weight: $mainFontWeight;
-    font-size: $mainFontSize;
-    line-height: $mainLineHeight;
+    font-family: $fontStack_map;
+    font-weight: $fontWeight_global;
+    font-size: $fontSize_global;
+    line-height: $lineHeight_global;
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
-    color: $mainFontColour;
+    color: $fontColour_main_global;
 }
 /*
 input::input-placeholder, textarea::input-placeholder{
-    color: $formPlaceholderFontColour}
+    color: $formPlaceholder_fontColour}
 input:focus::input-placeholder, textarea:focus::input-placeholder{
-    color: $mainFontColour}
+    color: $fontColour_main_global}
 */
 h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
     a{
@@ -23,21 +23,21 @@ h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
     }
 }
 h1, h2, h3, h4, h5, h6{
-    margin: $headingMargin;
+    margin: $headings_marginTRBL_global;
 }
 p, a, li, dd, dt, .pSize{
     @include beforeTablet{
-        font-size: $mainFontSizeParagraphBT;
+        font-size: $fontSize_paragraph_BT;
     }
     @include afterTablet{
-        font-size: $mainFontSizeParagraphAT;
+        font-size: $fontSize_paragraph_AT;
     }
     @include afterTabletLandscape{
-        font-size: $mainFontSizeParagraphATL;
+        font-size: $fontSize_paragraph_ATL;
     }
 }
 p, dl, legend{
-    margin: $textMargin;
+    margin: $text_marginTRBL_global;
 }
 p, ul{
     & + h1,
@@ -46,16 +46,16 @@ p, ul{
     & + h4,
     & + h5,
     & + h6{
-        margin: $headingMarginSibling;    
+        margin: $headings_marginTRBL_sibling;    
     }    
     & + p,
     & + ul{
-        margin: $textMarginSibling;    
+        margin: $text_marginTRBL_sibling;    
     }
 }
 p, li{    
     b{
-        font-family: $mainFontFamilyBold;
+        font-family: $fontFamily_bold_global;
     }
     p, li, a, strong, dl, legend{
         font-size: 1em;
@@ -78,10 +78,10 @@ p, li{
 a{
     transition: background-color 0.7s, color 1s, text-shadow 1s;    
     &, &:active, &:visited{
-        color: $anchorFontColour;
+        color: $fontColour_anchor_global;
     }
     &:focus, &:hover{
-        color: $anchorFontColourHover;
+        color: $fontColour_anchor_global_hover;
     }
 }
 
@@ -117,8 +117,8 @@ a.white{
         }
     }
 }
-@include colourLightClassesGenerator($darkenValue);
-@include colourDarkClassesGenerator($lightenValue);
-@include anchorColoursLightClassesGenerator($darkenValueAnchor);
-@include anchorColoursDarkClassesGenerator($lightenValueAnchor);
+@include colourLightClassesGenerator($colours_map_light_darkenValue);
+@include colourDarkClassesGenerator($colours_map_dark_lightenValue);
+@include anchorColoursLightClassesGenerator($anchor_fontColours_map_light_darkenValue);
+@include anchorColoursDarkClassesGenerator($anchor_fontColours_map_dark_lightenValue);
 @include colourCustomHoverClassesGenerator;

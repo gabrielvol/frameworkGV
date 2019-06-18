@@ -59,7 +59,7 @@ hr {
 
     //Images
 img{
-    background-color: $imgBgNeutralColour;
+    background-color: $bgColour_imgNeutral_global;
     border: none;
     font: normal 11px/1rem $arial;
     text-transform: uppercase;
@@ -88,11 +88,11 @@ input::focus-inner{}
 
     // Selection
 ::-moz-selection {
-    background-color: $bgSelection;
+    background-color: $bgColour_textSelection_global;
     text-shadow: none;
 }
 
 ::selection {
-    background-color: $bgSelection;
+    background-color: $bgColour_textSelection_global;
     text-shadow: none;
 }

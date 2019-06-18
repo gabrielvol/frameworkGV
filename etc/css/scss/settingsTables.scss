@@ -25,24 +25,24 @@ table{
 
     //Rounded Tables
 .tableRounded{
-    @include borderRadius($borderRadiusValue);
+    @include borderRadius($helpers_borders_radius_global);
     border-collapse: separate;
    
     tfoot td{
         &:first-child{
-            @include borderRadiusBL($borderRadiusValueTable);
+            @include borderRadiusBL($helpers_borders_radius_globalTable);
         }
         &:last-child{
-            @include borderRadiusBR($borderRadiusValueTable);
+            @include borderRadiusBR($helpers_borders_radius_globalTable);
         }
     }    
     tr{
         th{
             &:first-child{
-                @include borderRadiusTL($borderRadiusValueTable);
+                @include borderRadiusTL($helpers_borders_radius_globalTable);
             }
             &:last-child{
-                @include borderRadiusTR($borderRadiusValueTable);
+                @include borderRadiusTR($helpers_borders_radius_globalTable);
             }
         }        
         &:last-child{

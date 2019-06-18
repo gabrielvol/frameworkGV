@@ -6,7 +6,7 @@
    Mobile Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include mobileOnly{    
-    @if $stylesPosSizingDisplayMO == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_MO == "on"{
         //Positioning
         .pRelMO{position: relative}
         .pAbsMO{position: absolute}
@@ -25,7 +25,7 @@
         .displayNoneMO, .hideMO{display: $none}
         .contentBoxMO{box-sizing: content-box}
         .borderBoxMO{box-sizing: border-box}
-        .visuallyhiddenMO{
+        .visuallyHiddenMO{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -49,7 +49,7 @@
         }
     }
     
-    @if $stylesListsFloatsMO == "on"{
+    @if $classes_lists_floats_act_MO == "on"{
         //Lists and floats    
         .unstyledMO, .horizontalMO, .hyphenatedMO{list-style: $none}
         .floatLeftMO, .horizontalMO li{float: $left}
@@ -70,10 +70,10 @@
         .floatNoneMO, .unstyledMO li, .horizontal li.floatNoneMO{float: $none}
     }
     
-    @if $stylesTextMO == "on"{
+    @if $classes_text_act_MO == "on"{
         //Text
-        .fontSizeResetMO{font-size: $fontSizeReset!important}
-        .lineHeightResetMO{line-height: $lineHeightReset!important}
+        .fontSizeResetMO{font-size: $fontSize_reset!important}
+        .lineHeightResetMO{line-height: $lineHeight_reset!important}
         .indentedTextMO{text-indent: -9999px}
         .alignLeftMO{text-align: left}
         .alignRightMO{text-align: right}
@@ -87,7 +87,7 @@
         .lowerCaseMO{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanMO == "on"{
+    @if $classes_bg_bc_NO_act_MO == "on"{
         //Backgrounds, border and images    
         .banMO{border: $none}
         .bgNoneMO{
@@ -99,7 +99,7 @@
         .bgNoImageMO{background-image: $none}
     }
     
-    @if $stylesSpacingMO == "on"{
+    @if $helpers_spacing_act_MO == "on"{
 /* =============================================================================
    Mobile Only Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -108,7 +108,7 @@
         .mlaMO,.mhaMO{margin-left: $auto}
     }
     
-    @if $stylesFlexboxMO == "on"{
+    @if $classes_flexbox_act_MO == "on"{
 /* =============================================================================
    Mobile Only Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -143,7 +143,7 @@
    After Mobile Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include afterMobileLandscape{
-    @if $stylesPosSizingDisplayAML == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_AML == "on"{
         //Positioning
         .pRelAML{position: relative}
         .pAbsAML{position: absolute}
@@ -162,7 +162,7 @@
         .displayNoneAML, .hideAML{display: $none}
         .contentBoxAML{box-sizing: content-box}
         .borderBoxAML{box-sizing: border-box}
-        .visuallyhiddenAML{
+        .visuallyHiddenAML{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -186,7 +186,7 @@
         }
     }
     
-    @if $stylesListsFloatsAML == "on"{
+    @if $classes_lists_floats_act_AML == "on"{
         //Lists and floats    
         .unstyledAML, .horizontalAML, .hyphenatedAML{list-style: $none}
         .floatLeftAML, .horizontalAML li{float: $left}
@@ -207,10 +207,10 @@
         .floatNoneAML, .unstyledAML li, .horizontal li.floatNoneAML{float: $none}
     }
     
-    @if $stylesTextAML == "on"{
+    @if $classes_text_act_AML == "on"{
         //Text
-        .fontSizeResetAML{font-size: $fontSizeReset!important}
-        .lineHeightResetAML{line-height: $lineHeightReset!important}
+        .fontSizeResetAML{font-size: $fontSize_reset!important}
+        .lineHeightResetAML{line-height: $lineHeight_reset!important}
         .indentedTextAML{text-indent: -9999px}
         .alignLeftAML{text-align: left}
         .alignRightAML{text-align: right}
@@ -224,7 +224,7 @@
         .lowerCaseAML{text-transform: lowercase}
     }
     
-    @if $stylesBackgroundsBanAML == "on"{
+    @if $classes_bg_bc_NO_act_AML == "on"{
         //Backgrounds, border and images    
         .banAML{border: $none}
         .bgNoneAML{
@@ -236,7 +236,7 @@
         .bgNoImageAML{background-image: $none}
     }
     
-    @if $stylesSpacingAML == "on"{
+    @if $helpers_spacing_act_AML == "on"{
 /* =============================================================================
    After Mobile Landscape Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -245,7 +245,7 @@
         .mlaAML,.mhaAML{margin-left: $auto}
     }
     
-    @if $stylesFlexboxAML == "on"{
+    @if $classes_flexbox_act_AML == "on"{
 /* =============================================================================
    After Mobile Landscape Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -280,7 +280,7 @@
    Mobile Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include mobileLandscapeOnly{
-    @if $stylesPosSizingDisplayMLO == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_MLO == "on"{
         //Positioning
         .pRelMLO{position: relative}
         .pAbsMLO{position: absolute}
@@ -299,7 +299,7 @@
         .displayNoneMLO, .hideMLO{display: $none}
         .contentBoxMLO{box-sizing: content-box}
         .borderBoxMLO{box-sizing: border-box}
-        .visuallyhiddenMLO{
+        .visuallyHiddenMLO{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -323,7 +323,7 @@
         }
     }
     
-    @if $stylesListsFloatsMLO == "on"{
+    @if $classes_lists_floats_act_MLO == "on"{
         //Lists and floats    
         .unstyledMLO, .horizontalMLO, .hyphenatedMLO{list-style: $none}
         .floatLeftMLO, .horizontalMLO li{float: $left}
@@ -344,10 +344,10 @@
         .floatNoneMLO, .unstyledMLO li, .horizontal li.floatNoneMLO{float: $none}
     }
     
-    @if $stylesTextMLO == "on"{
+    @if $classes_text_act_MLO == "on"{
         //Text
-        .fontSizeResetMLO{font-size: $fontSizeReset!important}
-        .lineHeightResetMLO{line-height: $lineHeightReset!important}
+        .fontSizeResetMLO{font-size: $fontSize_reset!important}
+        .lineHeightResetMLO{line-height: $lineHeight_reset!important}
         .indentedTextMLO{text-indent: -9999px}
         .alignLeftMLO{text-align: left}
         .alignRightMLO{text-align: right}
@@ -361,7 +361,7 @@
         .lowerCaseMLO{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanMLO == "on"{
+    @if $classes_bg_bc_NO_act_MLO == "on"{
         //Backgrounds, border and images    
         .banMLO{border: $none}
         .bgNoneMLO{
@@ -373,7 +373,7 @@
         .bgNoImageMLO{background-image: $none}
     }
     
-    @if $stylesSpacingMLO == "on"{
+    @if $helpers_spacing_act_MLO == "on"{
 /* =============================================================================
    Mobile Landscape Only Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -382,7 +382,7 @@
         .mlaMLO,.mhaMLO{margin-left: $auto}
     }
     
-    @if $stylesFlexboxMLO == "on"{
+    @if $classes_flexbox_act_MLO == "on"{
 /* =============================================================================
    Mobile Landscape Only Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -417,7 +417,7 @@
    Before Tablet Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include beforeTablet{    
-    @if $stylesPosSizingDisplayBT == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_BT == "on"{
         //Positioning
         .pRelBT{position: relative}
         .pAbsBT{position: absolute}
@@ -436,7 +436,7 @@
         .displayNoneBT, .hideBT{display: $none}
         .contentBoxBT{box-sizing: content-box}
         .borderBoxBT{box-sizing: border-box}
-        .visuallyhiddenBT{
+        .visuallyHiddenBT{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -460,7 +460,7 @@
         }
     }
     
-    @if $stylesListsFloatsBT == "on"{
+    @if $classes_lists_floats_act_BT == "on"{
         //Lists and floats    
         .unstyledBT, .horizontalBT, .hyphenatedBT{list-style: $none}
         .floatLeftBT, .horizontalBT li{float: $left}
@@ -481,10 +481,10 @@
         .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT{float: $none}
     }
     
-    @if $stylesTextBT == "on"{
+    @if $classes_text_act_BT == "on"{
         //Text
-        .fontSizeResetBT{font-size: $fontSizeReset!important}
-        .lineHeightResetBT{line-height: $lineHeightReset!important}
+        .fontSizeResetBT{font-size: $fontSize_reset!important}
+        .lineHeightResetBT{line-height: $lineHeight_reset!important}
         .indentedTextBT{text-indent: -9999px}
         .alignLeftBT{text-align: left}
         .alignRightBT{text-align: right}
@@ -498,7 +498,7 @@
         .lowerCaseBT{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanBT == "on"{
+    @if $classes_bg_bc_NO_act_BT == "on"{
         //Backgrounds, border and images    
         .banBT{border: $none}
         .bgNoneBT{
@@ -510,7 +510,7 @@
         .bgNoImageBT{background-image: $none}
     }
     
-    @if $stylesSpacingBT == "on"{
+    @if $helpers_spacing_act_BT == "on"{
 /* =============================================================================
    Before Tablet Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -519,7 +519,7 @@
         .mlaBT,.mhaBT{margin-left: $auto}
     }
     
-    @if $stylesFlexboxBT == "on"{
+    @if $classes_flexbox_act_BT == "on"{
 /* =============================================================================
    Before Tablet Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -554,7 +554,7 @@
    Before Tablet Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include beforeTabletLandscape{    
-    @if $stylesPosSizingDisplayBTL == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_BTL == "on"{
         //Positioning
         .pRelBTL{position: relative}
         .pAbsBTL{position: absolute}
@@ -573,7 +573,7 @@
         .displayNoneBTL, .hideBTL{display: $none}
         .contentBoxBTL{box-sizing: content-box}
         .borderBoxBTL{box-sizing: border-box}
-        .visuallyhiddenBTL{
+        .visuallyHiddenBTL{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -597,7 +597,7 @@
         }
     }
     
-    @if $stylesListsFloatsBTL == "on"{
+    @if $classes_lists_floats_act_BTL == "on"{
         //Lists and floats    
         .unstyledBTL, .horizontalBTL, .hyphenatedBTL{list-style: $none}
         .floatLeftBTL, .horizontalBTL li{float: $left}
@@ -618,10 +618,10 @@
         .floatNoneBTL, .unstyledBTL li, .horizontal li.floatNoneBTL{float: $none}
     }
     
-    @if $stylesTextBTL == "on"{
+    @if $classes_text_act_BTL == "on"{
         //Text
-        .fontSizeResetBTL{font-size: $fontSizeReset!important}
-        .lineHeightResetBTL{line-height: $lineHeightReset!important}
+        .fontSizeResetBTL{font-size: $fontSize_reset!important}
+        .lineHeightResetBTL{line-height: $lineHeight_reset!important}
         .indentedTextBTL{text-indent: -9999px}
         .alignLeftBTL{text-align: left}
         .alignRightBTL{text-align: right}
@@ -635,7 +635,7 @@
         .lowerCaseBTL{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanBTL == "on"{
+    @if $classes_bg_bc_NO_act_BTL == "on"{
         //Backgrounds, border and images    
         .banBTL{border: $none}
         .bgNoneBTL{
@@ -647,7 +647,7 @@
         .bgNoImageBTL{background-image: $none}
     }
     
-    @if $stylesSpacingBTL == "on"{
+    @if $helpers_spacing_act_BTL == "on"{
 /* =============================================================================
    Before Tablet Landscape Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -656,7 +656,7 @@
         .mlaBTL,.mhaBTL{margin-left: $auto}
     }
     
-    @if $stylesFlexboxBTL == "on"{
+    @if $classes_flexbox_act_BTL == "on"{
 /* =============================================================================
    Before Tablet Landscape Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -691,7 +691,7 @@
    Tablet Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include tabletOnly{    
-    @if $stylesPosSizingDisplayTO == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_TO == "on"{
         //Positioning
         .pRelTO{position: relative}
         .pAbsTO{position: absolute}
@@ -710,7 +710,7 @@
         .displayNoneTO, .hideTO{display: $none}
         .contentBoxTO{box-sizing: content-box}
         .borderBoxTO{box-sizing: border-box}
-        .visuallyhiddenTO{
+        .visuallyHiddenTO{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -734,7 +734,7 @@
         }
     }
     
-    @if $stylesListsFloatsTO == "on"{
+    @if $classes_lists_floats_act_TO == "on"{
         //Lists and floats    
         .unstyledTO, .horizontalTO, .hyphenatedTO{list-style: $none}
         .floatLeftTO, .horizontalTO li{float: $left}
@@ -755,10 +755,10 @@
         .floatNoneTO, .unstyledTO li, .horizontal li.floatNoneTO{float: $none}
     }
     
-    @if $stylesTextTO == "on"{
+    @if $classes_text_act_TO == "on"{
         //Text
-        .fontSizeResetTO{font-size: $fontSizeReset!important}
-        .lineHeightResetTO{line-height: $lineHeightReset!important}
+        .fontSizeResetTO{font-size: $fontSize_reset!important}
+        .lineHeightResetTO{line-height: $lineHeight_reset!important}
         .indentedTextTO{text-indent: -9999px}
         .alignLeftTO{text-align: left}
         .alignRightTO{text-align: right}
@@ -772,7 +772,7 @@
         .lowerCaseTO{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanTO == "on"{
+    @if $classes_bg_bc_NO_act_TO == "on"{
         //Backgrounds, border and images    
         .banTO{border: $none}
         .bgNoneTO{
@@ -784,7 +784,7 @@
         .bgNoImageTO{background-image: $none}
     }
     
-    @if $stylesSpacingTO == "on"{
+    @if $helpers_spacing_act_TO == "on"{
 /* =============================================================================
    Tablet Only Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -794,7 +794,7 @@
         .mlaTO,.mhaTO{margin-left: $auto}
     }
     
-    @if $stylesFlexboxTO == "on"{
+    @if $classes_flexbox_act_TO == "on"{
 /* =============================================================================
    Tablet Only Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -829,7 +829,7 @@
    After Tablet Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include afterTablet{    
-    @if $stylesPosSizingDisplayAT == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_AT == "on"{
         //Positioning
         .pRelAT{position: relative}
         .pAbsAT{position: absolute}
@@ -848,7 +848,7 @@
         .displayNoneAT, .hideAT{display: $none}
         .contentBoxAT{box-sizing: content-box}
         .borderBoxAT{box-sizing: border-box}
-        .visuallyhiddenAT{
+        .visuallyHiddenAT{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -872,7 +872,7 @@
         }
     }
     
-    @if $stylesListsFloatsAT == "on"{
+    @if $classes_lists_floats_act_AT == "on"{
         //Lists and floats    
         .unstyledAT, .horizontalAT, .hyphenatedAT{list-style: $none}
         .floatLeftAT, .horizontalAT li{float: $left}
@@ -893,10 +893,10 @@
         .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT{float: $none}
     }
     
-    @if $stylesTextAT == "on"{
+    @if $classes_text_act_AT == "on"{
         //Text 
-        .fontSizeResetAT{font-size: $fontSizeReset!important}
-        .lineHeightResetAT{line-height: $lineHeightReset!important}
+        .fontSizeResetAT{font-size: $fontSize_reset!important}
+        .lineHeightResetAT{line-height: $lineHeight_reset!important}
         .indentedTextAT{text-indent: -9999px}
         .alignLeftAT{text-align: left}
         .alignRightAT{text-align: right}
@@ -910,7 +910,7 @@
         .lowerCaseAT{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanAT == "on"{
+    @if $classes_bg_bc_NO_act_AT == "on"{
         //Backgrounds, border and images    
         .banAT{border: $none}
         .bgNoneAT{
@@ -922,7 +922,7 @@
         .bgNoImageAT{background-image: $none}
     }
     
-    @if $stylesSpacingAT == "on"{
+    @if $helpers_spacing_act_AT == "on"{
 /* =============================================================================
    After Tablet Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -931,7 +931,7 @@
         .mlaAT,.mhaAT{margin-left: $auto}
     }
      
-    @if $stylesFlexboxAT == "on"{
+    @if $classes_flexbox_act_AT == "on"{
 /* =============================================================================
    After Tablet Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -966,7 +966,7 @@
    After Tablet Landscape Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include afterTabletLandscape{
-    @if $stylesPosSizingDisplayATL == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_ATL == "on"{
         //Positioning
         .pRelATL{position: relative}
         .pAbsATL{position: absolute}
@@ -985,7 +985,7 @@
         .displayNoneATL, .hideATL{display: $none}
         .contentBoxATL{box-sizing: content-box}
         .borderBoxATL{box-sizing: border-box}
-        .visuallyhiddenATL{
+        .visuallyHiddenATL{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -1009,7 +1009,7 @@
         }
     }
     
-    @if $stylesListsFloatsATL == "on"{
+    @if $classes_lists_floats_act_ATL == "on"{
         //Lists and floats    
         .unstyledATL, .horizontalATL, .hyphenatedATL{list-style: $none}
         .floatLeftATL, .horizontalATL li{float: $left}
@@ -1030,10 +1030,10 @@
         .floatNoneATL, .unstyledATL li, .horizontal li.floatNoneATL{float: $none}
     }
     
-    @if $stylesTextATL == "on"{
+    @if $classes_text_act_ATL == "on"{
         //Text 
-        .fontSizeResetATL{font-size: $fontSizeReset!important}
-        .lineHeightResetATL{line-height: $lineHeightReset!important}
+        .fontSizeResetATL{font-size: $fontSize_reset!important}
+        .lineHeightResetATL{line-height: $lineHeight_reset!important}
         .indentedTextATL{text-indent: -9999px}
         .alignLeftATL{text-align: left}
         .alignRightATL{text-align: right}
@@ -1047,7 +1047,7 @@
         .lowerCaseATL{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanATL == "on"{
+    @if $classes_bg_bc_NO_act_ATL == "on"{
         //Backgrounds, border and images   
         .banATL{border: $none}
         .bgNoneATL{
@@ -1059,7 +1059,7 @@
         .bgNoImageATL{background-image: $none}
     }
     
-    @if $stylesSpacingATL == "on"{
+    @if $helpers_spacing_act_ATL == "on"{
 /* =============================================================================
    After Tablet Landscape Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -1068,7 +1068,7 @@
         .mlaATL,.mhaATL{margin-left: $auto}
     }
     
-    @if $stylesFlexboxATL == "on"{
+    @if $classes_flexbox_act_ATL == "on"{
 /* =============================================================================
    After Tablet Landscape Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -1103,7 +1103,7 @@
    Tablet Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include tabletLandscapeOnly{
-    @if $stylesPosSizingDisplayTLO == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_TLO == "on"{
         //Positioning
         .pRelTLO{position: relative}
         .pAbsTLO{position: absolute}
@@ -1122,7 +1122,7 @@
         .displayNoneTLO, .hideTLO{display: $none}
         .contentBoxTLO{box-sizing: content-box}
         .borderBoxTLO{box-sizing: border-box}
-        .visuallyhiddenTLO{
+        .visuallyHiddenTLO{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -1146,7 +1146,7 @@
         }
     }
     
-    @if $stylesListsFloatsTLO == "on"{
+    @if $classes_lists_floats_act_TLO == "on"{
         //Lists and floats    
         .unstyledTLO, .horizontalTLO, .hyphenatedTLO{list-style: $none}
         .floatLeftTLO, .horizontalTLO li{float: $left}
@@ -1167,10 +1167,10 @@
         .floatNoneTLO, .unstyledTLO li, .horizontal li.floatNoneTLO{float: $none}
     }
     
-    @if $stylesTextTLO == "on"{
+    @if $classes_text_act_TLO == "on"{
         //Text
-        .fontSizeResetTLO{font-size: $fontSizeReset!important}
-        .lineHeightResetTLO{line-height: $lineHeightReset!important}
+        .fontSizeResetTLO{font-size: $fontSize_reset!important}
+        .lineHeightResetTLO{line-height: $lineHeight_reset!important}
         .indentedTextTLO{text-indent: -9999px}
         .alignLeftTLO{text-align: left}
         .alignRightTLO{text-align: right}
@@ -1184,7 +1184,7 @@
         .lowerCaseTLO{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanTLO == "on"{
+    @if $classes_bg_bc_NO_act_TLO == "on"{
         //Backgrounds, border and images    
         .banTLO{border: $none}
         .bgNoneTLO{
@@ -1196,7 +1196,7 @@
         .bgNoImageTLO{background-image: $none}
     }
     
-    @if $stylesSpacingTLO == "on"{
+    @if $helpers_spacing_act_TLO == "on"{
 /* =============================================================================
    Tablet Landscape Only Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -1205,7 +1205,7 @@
         .mlaTLO,.mhaTLO{margin-left: $auto}
     }
     
-    @if $stylesFlexboxTLO == "on"{
+    @if $classes_flexbox_act_TLO == "on"{
 /* =============================================================================
    Tablet Landscape Only Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -1240,7 +1240,7 @@
    Tablet And Tablet Landscape Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include tabletAndTabletLandscapeOnly{    
-    @if $stylesPosSizingDisplayTTLO == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_TTLO == "on"{
         //Positioning
         .pRelTTLO{position: relative}
         .pAbsTTLO{position: absolute}
@@ -1259,7 +1259,7 @@
         .displayNoneTTLO, .hideTTLO{display: $none}
         .contentBoxTTLO{box-sizing: content-box}
         .borderBoxTTLO{box-sizing: border-box}
-        .visuallyhiddenTTLO{
+        .visuallyHiddenTTLO{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -1283,7 +1283,7 @@
         }
     }
     
-    @if $stylesListsFloatsTTLO == "on"{
+    @if $classes_lists_floats_act_TTLO == "on"{
         //Lists and floats    
         .unstyledTTLO, .horizontalTTLO, .hyphenatedTTLO{list-style: $none}
         .floatLeftTTLO, .horizontalTTLO li{float: $left}
@@ -1304,10 +1304,10 @@
         .floatNoneTTLO, .unstyledTTLO li, .horizontal li.floatNoneTTLO{float: $none}
     }
     
-    @if $stylesTextTTLO == "on"{
+    @if $classes_text_act_TTLO == "on"{
         //Text
-        .fontSizeResetTTLO{font-size: $fontSizeReset!important}
-        .lineHeightResetTTLO{line-height: $lineHeightReset!important}
+        .fontSizeResetTTLO{font-size: $fontSize_reset!important}
+        .lineHeightResetTTLO{line-height: $lineHeight_reset!important}
         .indentedTextTTLO{text-indent: -9999px}
         .alignLeftTTLO{text-align: left}
         .alignRightTTLO{text-align: right}
@@ -1321,7 +1321,7 @@
         .lowerCaseTTLO{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanTTLO == "on"{
+    @if $classes_bg_bc_NO_act_TTLO == "on"{
         //Backgrounds, border and images    
         .banTTLO{border: $none}
         .bgNoneTTLO{
@@ -1333,7 +1333,7 @@
         .bgNoImageTTLO{background-image: $none}
     }
     
-    @if $stylesSpacingTTLO == "on"{
+    @if $helpers_spacing_act_TTLO == "on"{
 /* =============================================================================
    Tablet Landscape Only Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -1342,7 +1342,7 @@
         .mlaTTLO,.mhaTTLO{margin-left: $auto}
     }
     
-    @if $stylesFlexboxTTLO == "on"{
+    @if $classes_flexbox_act_TTLO == "on"{
 /* =============================================================================
    Tablet Landscape Only Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -1377,7 +1377,7 @@
    Before Desktop Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include beforeDesktop{    
-    @if $stylesPosSizingDisplayBD == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_BD == "on"{
         //Positioning
         .pRelBD{position: relative}
         .pAbsBD{position: absolute}
@@ -1396,7 +1396,7 @@
         .displayNoneBD, .hideBD{display: $none}
         .contentBoxBD{box-sizing: content-box}
         .borderBoxBD{box-sizing: border-box}
-        .visuallyhiddenBD{
+        .visuallyHiddenBD{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -1420,7 +1420,7 @@
         }
     }
     
-    @if $stylesListsFloatsBD == "on"{
+    @if $classes_lists_floats_act_BD == "on"{
         //Lists and floats    
         .unstyledBD, .horizontalBD, .hyphenatedBD{list-style: $none}
         .floatLeftBD, .horizontalBD li{float: $left}
@@ -1441,10 +1441,10 @@
         .floatNoneBD, .unstyledBD li, .horizontal li.floatNoneBD{float: $none}
     }
     
-    @if $stylesTextBD == "on"{
+    @if $classes_text_act_BD == "on"{
         //Text
-        .fontSizeResetBD{font-size: $fontSizeReset!important}
-        .lineHeightResetBD{line-height: $lineHeightReset!important}
+        .fontSizeResetBD{font-size: $fontSize_reset!important}
+        .lineHeightResetBD{line-height: $lineHeight_reset!important}
         .indentedTextBD{text-indent: -9999px}
         .alignLeftBD{text-align: left}
         .alignRightBD{text-align: right}
@@ -1458,7 +1458,7 @@
         .lowerCaseBD{text-transform: lowercase}
     }
     
-    @if $stylesBackgroundsBanBD == "on"{
+    @if $classes_bg_bc_NO_act_BD == "on"{
         //Backgrounds, border and images  
         .banBD{border: $none}
         .bgNoneBD{
@@ -1470,7 +1470,7 @@
         .bgNoImageBD{background-image: $none}
     }
     
-    @if $stylesSpacingBD == "on"{
+    @if $helpers_spacing_act_BD == "on"{
 /* =============================================================================
    Before Desktop Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -1479,7 +1479,7 @@
         .mlaBD,.mhaBD{margin-left: $auto}
     }
     
-    @if $stylesFlexboxBD == "on"{
+    @if $classes_flexbox_act_BD == "on"{
 /* =============================================================================
    Before Desktop Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */ 
@@ -1514,7 +1514,7 @@
    After Desktop Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 @include afterDesktop{    
-    @if $stylesPosSizingDisplayAD == "on"{
+    @if $classes_pos_display_sizes_masks_cursors_act_AD == "on"{
         //Positioning
         .pRelAD{position: relative}
         .pAbsAD{position: absolute}
@@ -1533,7 +1533,7 @@
         .displayNoneAD, .hideAD{display: $none}
         .contentBoxAD{box-sizing: content-box}
         .borderBoxAD{box-sizing: border-box}
-        .visuallyhiddenAD{
+        .visuallyHiddenAD{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -1557,7 +1557,7 @@
         }
     }
     
-    @if $stylesListsFloatsAD == "on"{
+    @if $classes_lists_floats_act_AD == "on"{
         //Lists and floats    
         .unstyledAD, .horizontalAD, .hyphenatedAD{list-style: $none}
         .floatLeftAD, .horizontalAD li{float: $left}
@@ -1578,10 +1578,10 @@
         .floatNoneAD, .unstyledAD li, .horizontal li.floatNoneAD{float: $none}
     }
     
-    @if $stylesTextAD == "on"{
+    @if $classes_text_act_AD == "on"{
         //Text
-        .fontSizeResetAD{font-size: $fontSizeReset!important}
-        .lineHeightResetAD{line-height: $lineHeightReset!important}
+        .fontSizeResetAD{font-size: $fontSize_reset!important}
+        .lineHeightResetAD{line-height: $lineHeight_reset!important}
         .indentedTextAD{text-indent: -9999px}
         .alignLeftAD{text-align: left}
         .alignRightAD{text-align: right}
@@ -1595,7 +1595,7 @@
         .lowerCaseAD{text-transform: lowercase}
     }
         
-    @if $stylesBackgroundsBanAD == "on"{
+    @if $classes_bg_bc_NO_act_AD == "on"{
         //Backgrounds, border and images   
         .banAD{border: $none}
         .bgNoneAD{
@@ -1607,7 +1607,7 @@
         .bgNoImageAD{background-image: $none}
     }
     
-    @if $stylesSpacingAD == "on"{    
+    @if $helpers_spacing_act_AD == "on"{    
 /* =============================================================================
    After Desktop Spacing Helpers | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -1616,7 +1616,7 @@
         .mlaAD,.mhaAD{margin-left: $auto}
     }
     
-    @if $stylesFlexboxAD == "on"{
+    @if $classes_flexbox_act_AD == "on"{
 /* =============================================================================
    After Desktop Flexbox Classes | Etc [classesResponsive.scss]
    ========================================================================== */

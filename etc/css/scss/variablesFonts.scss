@@ -2,7 +2,7 @@
    Font Variables | Etc [variablesFonts.scss]
    ========================================================================== */
     //Sans Serif Stack
-$fontFamiliesMapSans:(
+$fontFamilies_map_sans:(
     sanFrancisco: ('-apple-system', '.SFNSText-Regular', 'San Francisco'),
     blinkMacSystemFont: BlinkMacSystemFont,
     oxygen: Oxygen,
@@ -19,35 +19,35 @@ $fontFamiliesMapSans:(
     sansSerif: sans-serif
 );
 
-$fontFamiliesListSans:
-    map-get($fontFamiliesMapSans, sanFrancisco),
-    map-get($fontFamiliesMapSans, blinkMacSystemFont),
-    map-get($fontFamiliesMapSans, oxygen), 
-    map-get($fontFamiliesMapSans, ubuntu), 
-    map-get($fontFamiliesMapSans, cantarell), 
-    map-get($fontFamiliesMapSans, firaSans), 
-    map-get($fontFamiliesMapSans, droidSans), 
-    map-get($fontFamiliesMapSans, helveticaSafe), 
-    map-get($fontFamiliesMapSans, segoeUI),   
-    map-get($fontFamiliesMapSans, verdana),
-    map-get($fontFamiliesMapSans, tahoma),
-    map-get($fontFamiliesMapSans, lucidaGrande),
-    map-get($fontFamiliesMapSans, trebuchetMS),
-    map-get($fontFamiliesMapSans, sansSerif)
+$fontFamilies_list_sans:
+    map-get($fontFamilies_map_sans, sanFrancisco),
+    map-get($fontFamilies_map_sans, blinkMacSystemFont),
+    map-get($fontFamilies_map_sans, oxygen), 
+    map-get($fontFamilies_map_sans, ubuntu), 
+    map-get($fontFamilies_map_sans, cantarell), 
+    map-get($fontFamilies_map_sans, firaSans), 
+    map-get($fontFamilies_map_sans, droidSans), 
+    map-get($fontFamilies_map_sans, helveticaSafe), 
+    map-get($fontFamilies_map_sans, segoeUI),   
+    map-get($fontFamilies_map_sans, verdana),
+    map-get($fontFamilies_map_sans, tahoma),
+    map-get($fontFamilies_map_sans, lucidaGrande),
+    map-get($fontFamilies_map_sans, trebuchetMS),
+    map-get($fontFamilies_map_sans, sansSerif)
 ; 
 
-$sanFrancisco: map-get($fontFamiliesMapSans, sanFrancisco);
-$blinkMacSystemFont: map-get($fontFamiliesMapSans, blinkMacSystemFont);   
-$oxygen: map-get($fontFamiliesMapSans, oxygen);   
-$ubuntu: map-get($fontFamiliesMapSans, ubuntu);   
-$cantarell: map-get($fontFamiliesMapSans, cantarell);   
-$firaSans: map-get($fontFamiliesMapSans, firaSans);    
-$droidSans: map-get($fontFamiliesMapSans, droidSans);   
-$segoeUI: map-get($fontFamiliesMapSans, segoeUI);   
-$verdana: map-get($fontFamiliesMapSans, verdana);
-$tahoma: map-get($fontFamiliesMapSans, tahoma);
-$lucidaGrande: map-get($fontFamiliesMapSans, lucidaGrande);
-$trebuchetMS: map-get($fontFamiliesMapSans, trebuchetMS);
+$sanFrancisco: map-get($fontFamilies_map_sans, sanFrancisco);
+$blinkMacSystemFont: map-get($fontFamilies_map_sans, blinkMacSystemFont);   
+$oxygen: map-get($fontFamilies_map_sans, oxygen);   
+$ubuntu: map-get($fontFamilies_map_sans, ubuntu);   
+$cantarell: map-get($fontFamilies_map_sans, cantarell);   
+$firaSans: map-get($fontFamilies_map_sans, firaSans);    
+$droidSans: map-get($fontFamilies_map_sans, droidSans);   
+$segoeUI: map-get($fontFamilies_map_sans, segoeUI);   
+$verdana: map-get($fontFamilies_map_sans, verdana);
+$tahoma: map-get($fontFamilies_map_sans, tahoma);
+$lucidaGrande: map-get($fontFamilies_map_sans, lucidaGrande);
+$trebuchetMS: map-get($fontFamilies_map_sans, trebuchetMS);
 
     //Serif Stack
 $fontFamiliesMapSerif:(
@@ -56,7 +56,7 @@ $fontFamiliesMapSerif:(
     serif: serif
 );
     
-$fontFamiliesListSerif: 
+$fontFamilies_list_serif: 
     map-get($fontFamiliesMapSerif, georgia),
     map-get($fontFamiliesMapSerif, palatino),
     map-get($fontFamiliesMapSerif, serif)
@@ -72,7 +72,7 @@ $fontFamiliesMapMono:(
     monospace: monospace
 );
     
-$fontFamiliesListMono:
+$fontFamilies_list_monospaced:
     map-get($fontFamiliesMapMono, consolas),    
     map-get($fontFamiliesMapMono, andaleMono),
     map-get($fontFamiliesMapMono, lucidaConsole),
@@ -82,12 +82,12 @@ $fontFamiliesListMono:
 ;
 
     //Font Sizes
-$h1List: 'h1, .hUno';
-$h2List: 'h2, .hDos';
-$h3List: 'h3, .hTre';
-$h4List: 'h4, .hCua';
-$h5List: 'h5, .hCin';
-$h6List: 'h6, .hSei';
+$h1_list: 'h1, .hUno';
+$h2_list: 'h2, .hDos';
+$h3_list: 'h3, .hTre';
+$h4_list: 'h4, .hCua';
+$h5_list: 'h5, .hCin';
+$h6_list: 'h6, .hSei';
 
     //Open Sans Map
 $openSansMap:(

@@ -5,7 +5,7 @@
     .hoverGrowS,
     .hoverGrowM,
     .hoverGrowL{
-        display: $hoverGrowDisplay;
+        display: $hoverGrow_display_ani;
         vertical-align: middle;
         transform: translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -19,7 +19,7 @@
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrowScaleS);
+            transform: scale($hoverGrow_scaleSmall_ani);
         }
     }
     
@@ -27,7 +27,7 @@
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrowScaleM);
+            transform: scale($hoverGrow_scaleMedium_ani);
         }
     }
     
@@ -35,7 +35,7 @@
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrowScaleL);
+            transform: scale($hoverGrow_scaleLarge_ani);
         }
     }
 }

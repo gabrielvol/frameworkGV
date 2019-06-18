@@ -5,21 +5,21 @@
 /* -------------------------------------
     Full height index                 */
 .index{  
-    @if $fullHeightIndex == "on"{  
+    @if $index_fullHeight_act == "on"{  
         @include mobileOnly{
-            height: calc(100vh - #{$footerHBT} - #{$headerHMO});
+            height: calc(100vh - #{$footer_height_BT} - #{$header_height_MO});
         }
 
         @include afterMobileLandscape{
-            height: calc(100vh - #{$footerHBT} - #{$headerHAML});
+            height: calc(100vh - #{$footer_height_BT} - #{$header_height_AML});
         }
 
         @include afterTablet{
-            height: calc(100vh - #{$footerHAT} - #{$headerHAT});
+            height: calc(100vh - #{$footer_height_AT} - #{$header_height_AT});
         }
 
         @include afterTabletLandscape{
-            height: calc(100vh - #{$footerHAT} - #{$headerHATL});
+            height: calc(100vh - #{$footer_height_AT} - #{$header_height_ATL});
         }
     }
 }

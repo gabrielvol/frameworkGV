@@ -6,38 +6,35 @@
     ///con sus `:hover`.
      
     // Labels
-$formLabelFontColour:       $mainFontColour;
-$formLabelFontColourHover:  darken($formLabelFontColour, 15%);
+$formLabel_fontColour:          $fontColour_main_global;
+$formLabel_fontColour_hover:    darken($formLabel_fontColour, 15%);
 
     // Inputs
-$formInputFontColour:       $mainFontColour;
-$formInputFontColourHover:  $formInputFontColour;
+$formInput_fontColour:          $fontColour_main_global;
+$formInput_fontColour_hover:    $formInput_fontColour;
 
-$formPlaceholderFontColour: lighten($mainFontColour, 10%);
+$formPlaceholder_fontColour:    lighten($fontColour_main_global, 10%);
  
-$formInputBcColour:         $mainBcColour;
-$formInputBcColourHover:    $mainBcColourHover;
-$formInputBgColour:         $white;
-$formInputBgColourHover:    $formInputBgColour;
-
-$formInputErrorMsgColour:   $errorColour; 
-
-$formInputInsetShadow:      inset 0 0 4px $greyD;
+$formInput_bcColour:            $bcColour_main_global;
+$formInput_bcColour_hover:      $bcColour_main_global_hover;
+$formInput_bgColour:            $white;
+$formInput_bgColour_hover:      $formInput_bgColour;
+   
+$formInput_shadowInset:         inset 0 0 4px $greyD;
 
     // Submit
-$formSubmitFontColour:      $black;
-$formSubmitFontColourHover: $formSubmitFontColour;
+$formSubmit_fontColour:        $black;
+$formSubmit_fontColour_hover:  $formSubmit_fontColour;
 
-$formSubmitBcColour:        $mainBcColour;
-$formSubmitBcColourHover:   $formSubmitBcColour;
+$formSubmit_bcColour:          $bcColour_main_global;
+$formSubmit_bcColour_hover:    $formSubmit_bcColour;
 
-$formSubmitBgColour:        $mainBgColour;
-$formSubmitBgColourHover:   $formSubmitBgColour;
+$formSubmit_bgColour:          $bgColour_main_global;
+$formSubmit_bgColour_hover:    $formSubmit_bgColour;
 
     // Validation
-$invalidMandatoryMsgBgColour:   $bgError;
-$invalidMandatoryMsgFontColour: $white;
-$formInputErrorMsgFontColour:   $errorColour;
-
-    // Status Messages
-$bgStatusOKpopUp:               $bgWhite;
+$formInput_msgError_fontColour:  $errorColour;
+ 
+$formStatus_msgError_bgColour:   $bgError;
+$formStatus_msgError_fontColour: $white;
+$formStatus_msgOK_bgColour:      $bgWhite;

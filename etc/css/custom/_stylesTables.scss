@@ -22,21 +22,21 @@ table{
 
 /* Rounded Tables */
 table.tableRounded{
-    @include borderStyle($mainBcColourTable);
+    @include borderStyle($bcColour_main_globalTable);
     
     th,
     tfoot td{
-        background-color: $mainBgColourTable;
+        background-color: $bgColour_main_globalTable;
     }
    
     tfoot td{
-        @include borderStyleT($secondaryBcColourTable);
+        @include borderStyleT($bcColour_secondary_globalTable);
     }
     
     tr{
         th,
         td{
-            @include borderStyleB($secondaryBcColourTable);
+            @include borderStyleB($bcColour_secondary_globalTable);
         }
     }
 }
@@ -71,18 +71,18 @@ $tableBeforeWidth: 40%;
     
     .tableRounded{
         tr{
-            @include borderStyleB($mainBcColourTable,$borderWidthValue: 2px);
+            @include borderStyleB($bcColour_main_globalTable,$borderWidthValue: 2px);
             
             td{
-                @include borderStyleB($secondaryBcColourTable,$borderStyleValue: dotted);
+                @include borderStyleB($bcColour_secondary_globalTable,$borderStyleValue: dotted);
             }
             
             &:last-child{
                 td{
-                    @include borderStyleB($secondaryBcColourTable!important);
+                    @include borderStyleB($bcColour_secondary_globalTable!important);
                     
                     &:last-child{
-                        @include borderStyleB($secondaryBcColourTable!important, $borderWidthValue: 0);
+                        @include borderStyleB($bcColour_secondary_globalTable!important, $borderWidthValue: 0);
                     }
                 }
             }
@@ -142,14 +142,14 @@ $tableBeforeWidth: 40%;
         
         .tableRounded{
             tr{
-                @include borderStyleB($mainBcColourTable, $borderWidthValue: 1px);
+                @include borderStyleB($bcColour_main_globalTable, $borderWidthValue: 1px);
                 
                 td{
-                    @include borderStyleB($secondaryBcColourTable, $borderWidthValue: 0);
+                    @include borderStyleB($bcColour_secondary_globalTable, $borderWidthValue: 0);
                 }
                 
                 &:last-child td{
-                    @include borderStyleB($secondaryBcColourTable!important, $borderWidthValue: 0);
+                    @include borderStyleB($bcColour_secondary_globalTable!important, $borderWidthValue: 0);
                 }
             }
         }

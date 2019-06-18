@@ -21,312 +21,312 @@
 
 .container{    
     @include mobileOnly{
-        width: $containerMobileValue;
+        width: $container_value_MO;
     }     
     @include afterMobileLandscape{
-        width: $containerMobileLandscapeValue;
+        width: $container_value_ML;
     }    
     @include afterTablet{
-        width: $containerTabletValue;
+        width: $container_value_T;
     }    
     @include afterTabletLandscape{
-        width: $containerTabletLandscapeValue;
+        width: $container_value_TL;
     }    
     @include afterDesktop{
-        width: $containerDesktopValue;
+        width: $container_value_D;
     }    
     @include afterDesktopLarge{
-        width: $containerDesktopLargeValue;
+        width: $container_value_DL;
     }    
     &.centerAbs{
         @include mobileOnly{
             position: absolute;
             left: 50%;   
-            margin-left: $cMHneg;
+            margin-left: $container_value_half_negative_MO;
         }
         @include afterMobileLandscape{
             position: absolute;
             left: 50%;   
-            margin-left: $cMLHneg;
+            margin-left: $container_value_half_negative_ML;
         }
         @include afterTablet{
-            margin-left: $cTHneg;
+            margin-left: $container_value_half_negative_T;
         }
         @include afterTabletLandscape{
-            margin-left: $cTLHneg;
+            margin-left: $container_value_half_negative_TL;
         }
         @include afterDesktop{
-            margin-left: $cDHneg;
+            margin-left: $container_value_half_negative_D;
         }
         @include afterDesktopLarge{
-            margin-left: $cDLHneg;
+            margin-left: $container_value_half_negative_DL;
         }
     }
-    @if $containerMO == "on"{
+    @if $classes_container_act_MO == "on"{
         &.centerAbsMO{    
             @include mobileOnly{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cMHneg;
+                margin-left: $container_value_half_negative_MO;
             }
         }
     }
-    @if $containerAML == "on"{
+    @if $classes_container_act_AML == "on"{
         &.centerAbsAML{
             @include afterMobileLandscape{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cMLHneg;
+                margin-left: $container_value_half_negative_ML;
             }
             @include afterTablet{
-                margin-left: $cTHneg;
+                margin-left: $container_value_half_negative_T;
             }
             @include afterTabletLandscape{
-                margin-left: $cTLHneg;
+                margin-left: $container_value_half_negative_TL;
             }
             @include afterDesktop{  
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
             @include afterDesktopLarge{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
-    @if $containerAT == "on"{
+    @if $classes_container_act_AT == "on"{
         &.centerAbsAT{
             @include afterTablet{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cTHneg;
+                margin-left: $container_value_half_negative_T;
             }
             @include afterTabletLandscape{
-                margin-left: $cTLHneg;
+                margin-left: $container_value_half_negative_TL;
             }
             @include afterDesktop{
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
             @include afterDesktopLarge{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
-    @if $containerATL == "on"{
+    @if $classes_container_act_ATL == "on"{
         &.centerAbsATL{
             @include afterTabletLandscape{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cTLHneg;
+                margin-left: $container_value_half_negative_TL;
             }
             @include afterDesktop{  
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
             @include afterDesktopLarge{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
-    @if $containerAD == "on"{
+    @if $classes_container_act_AD == "on"{
         &.centerAbsAD{
             @include afterDesktop{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
             @include afterDesktopLarge{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
-    @if $containerADL == "on"{
+    @if $classes_container_act_ADL == "on"{
         &.centerAbsADL{
             @include afterDesktopLarge{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
 }
 
-@if $containerMO == "on"{
+@if $classes_container_act_MO == "on"{
     .containerMO{
         @include mobileOnly{
-            width: $containerMobileValue;            
+            width: $container_value_MO;            
             &.centerAbsMO{    
                 position: absolute;
                 left: 50%;   
-                margin-left: $cMHneg;
+                margin-left: $container_value_half_negative_MO;
             }
         }  
     }  
 }
-@if $containerAML == "on"{
+@if $classes_container_act_AML == "on"{
     .containerAML{
         @include afterMobileLandscape{
-            width: $containerMobileLandscapeValue;
+            width: $container_value_ML;
             &.centerAbsAML{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cMLHneg;
+                margin-left: $container_value_half_negative_ML;
             }
         }    
         @include mobileLandscapeOnly{
-            width: $containerMobileLandscapeValue;
+            width: $container_value_ML;
         }     
         @include afterTablet{
-            width: $containerTabletValue;
+            width: $container_value_T;
             &.centerAbsAML{
-                margin-left: $cTHneg;
+                margin-left: $container_value_half_negative_T;
             }
         }    
         @include afterTabletLandscape{
-            width: $containerTabletLandscapeValue;
+            width: $container_value_TL;
             &.centerAbsAML{
-                margin-left: $cTLHneg;
+                margin-left: $container_value_half_negative_TL;
             }
         }    
         @include afterDesktop{
-            width: $containerDesktopValue;
+            width: $container_value_D;
             &.centerAbsAML{
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
         }    
         @include afterDesktopLarge{
-            width: $containerDesktopLargeValue;
+            width: $container_value_DL;
             &.centerAbsAML{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
 }
-@if $containerMLO == "on"{
+@if $classes_container_act_MLO == "on"{
     .containerMLO{
         @include mobileLandscapeOnly{
-            width: $containerMobileLandscapeValue;
+            width: $container_value_ML;
         }
     }  
 }
-@if $containerBT == "on"{
+@if $classes_container_act_BT == "on"{
     .containerBT{
         @include mobileOnly{
-            width: $containerMobileValue;
+            width: $container_value_MO;
         }    
         @include mobileLandscapeOnly{
-            width: $containerMobileLandscapeValue;
+            width: $container_value_ML;
         }    
     }  
 }
-@if $containerAT == "on"{
+@if $classes_container_act_AT == "on"{
     .containerAT{
         @include afterTablet{
-            width: $containerTabletValue;
+            width: $container_value_T;
             &.centerAbsAT{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cTHneg;        
+                margin-left: $container_value_half_negative_T;        
             }
         }    
         @include afterTabletLandscape{
-            width: $containerTabletLandscapeValue;
+            width: $container_value_TL;
             &.centerAbsAT{        
-                margin-left: $cTLHneg;
+                margin-left: $container_value_half_negative_TL;
             }
         }    
         @include afterDesktop{
-            width: $containerDesktopValue;
+            width: $container_value_D;
             &.centerAbsAT{    
-                margin-left: $cDHneg;    
+                margin-left: $container_value_half_negative_D;    
             }
         }    
         @include afterDesktopLarge{
-            width: $containerDesktopLargeValue;
+            width: $container_value_DL;
             &.centerAbsAT{       
-                margin-left: $cDLHneg; 
+                margin-left: $container_value_half_negative_DL; 
             }
         }
     }  
 }
-@if $containerTO == "on"{
+@if $classes_container_act_TO == "on"{
     .containerTO{
         @include tabletOnly{
-            width: $containerTabletValue;
+            width: $container_value_T;
         }
     }  
 }
-@if $containerATL == "on"{
+@if $classes_container_act_ATL == "on"{
     .containerATL{
         @include afterTabletLandscape{
-            width: $containerTabletLandscapeValue;
+            width: $container_value_TL;
             &.centerAbsATL{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cTLHneg;
+                margin-left: $container_value_half_negative_TL;
             }
         }    
         @include afterDesktop{
-            width: $containerDesktopValue;
+            width: $container_value_D;
             &.centerAbsATL{
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
         }    
         @include afterDesktopLarge{
-            width: $containerDesktopLargeValue;
+            width: $container_value_DL;
             &.centerAbsATL{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }    
     }  
 }
-@if $containerTLO == "on"{
+@if $classes_container_act_TLO == "on"{
     .containerTLO{    
         @include tabletLandscapeOnly{
-            width: $containerTabletLandscapeValue;
+            width: $container_value_TL;
         }
     }  
 }
-@if $containerBD == "on"{
+@if $classes_container_act_BD == "on"{
     .containerBD{
         @include mobileOnly{
-            width: $containerMobileValue;
+            width: $container_value_MO;
         }    
         @include afterMobileLandscape{
-            width: $containerMobileLandscapeValue;
+            width: $container_value_ML;
         }    
         @include mobileLandscapeOnly{
-            width: $containerMobileLandscapeValue;
+            width: $container_value_ML;
         } 
         @include afterTablet{
-            width: $containerTabletValue;
+            width: $container_value_T;
         }    
         @include afterTabletLandscape{
-            width: $containerTabletLandscapeValue;
+            width: $container_value_TL;
         }   
     }  
 }
-@if $containerAD == "on"{
+@if $classes_container_act_AD == "on"{
     .containerAD{
         @include afterDesktop{
-            width: $containerDesktopValue;
+            width: $container_value_D;
             &.centerAbsAD{
                 position: absolute;
                 left: 50%;   
-                margin-left: $cDHneg;
+                margin-left: $container_value_half_negative_D;
             }
         }    
         @include afterDesktopLarge{
-            width: $containerDesktopLargeValue;
+            width: $container_value_DL;
             &.centerAbsAD{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }    
     }  
 }
-@if $containerADL == "on"{
+@if $classes_container_act_ADL == "on"{
     .containerADL{
         @include afterDesktopLarge{
-            width: $containerDesktopLargeValue;
+            width: $container_value_DL;
             &.centerAbsADL{
-                margin-left: $cDLHneg;
+                margin-left: $container_value_half_negative_DL;
             }
         }    
     }  

@@ -5,27 +5,27 @@
 //A,T,R,B,L = all,top,right,bottom,left
 //H,V,X = horizontal,vertical,user defined values
 
-@mixin borderStyle($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyle($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleT($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleT($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-top: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleR($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleR($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-right: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleB($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleB($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-bottom: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleL($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleL($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-left: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleH($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleH($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-width: 0 $borderWidthValue;
     border-style: $borderStyleValue;
     border-color: $borderColourValue;
 }
-@mixin borderStyleV($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleV($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-width: $borderWidthValue 0;
     border-style: $borderStyleValue;
     border-color: $borderColourValue;
 }
-@mixin borderStyleX($borderColourValue: $mainBcColour, $borderWidthValue: 1px, $borderStyleValue: solid){
+@mixin borderStyleX($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
     border-width: $borderWidthValue;
     border-style: $borderStyleValue;
     border-color: $borderColourValue;
@@ -36,31 +36,31 @@
    ========================================================================== */
 //T,R,B,L = top,right,bottom,left
 
-@mixin borderRadius($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadius($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: $borderRadiusMixinValue;
 }
-@mixin borderRadiusT($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusT($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: $borderRadiusMixinValue $borderRadiusMixinValue 0 0;
 }
-@mixin borderRadiusR($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusR($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: 0 $borderRadiusMixinValue $borderRadiusMixinValue 0;
 }
-@mixin borderRadiusB($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusB($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: 0 0 $borderRadiusMixinValue $borderRadiusMixinValue;
 }
-@mixin borderRadiusL($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusL($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: $borderRadiusMixinValue 0 0 $borderRadiusMixinValue;
 }
-@mixin borderRadiusTR($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusTR($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: 0 $borderRadiusMixinValue 0 0;
 }
-@mixin borderRadiusTL($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusTL($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: $borderRadiusMixinValue 0 0 0;
 }
-@mixin borderRadiusBR($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusBR($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: 0 0 $borderRadiusMixinValue 0;
 }
-@mixin borderRadiusBL($borderRadiusMixinValue: $borderRadiusValue){
+@mixin borderRadiusBL($borderRadiusMixinValue: $helpers_borders_radius_global){
     border-radius: 0 0 0 $borderRadiusMixinValue;
 }
 
@@ -85,22 +85,22 @@
    Border Separation Mixins | Etc [mixinsBorders.scss]
    ========================================================================== */
     //Border separation with equal padding and margin
-@mixin PBMsT($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $mainBcColour, $PBMSborderStyle: solid){
+@mixin PBMsT($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $bcColour_main_global, $PBMSborderStyle: solid){
     padding-top: $PBMSsepValue;
     @include borderStyleT($PBMSborderWidth, $PBMSborderStyle, $PBMSbcColour);
     margin-top: $PBMSsepValue;
 }
-@mixin PBMsR($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $mainBcColour, $PBMSborderStyle: solid){
+@mixin PBMsR($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $bcColour_main_global, $PBMSborderStyle: solid){
     padding-right: $PBMSsepValue;
     @include borderStyleR($PBMSborderWidth, $PBMSborderStyle, $PBMSbcColour);
     margin-right: $PBMSsepValue;
 }
-@mixin PBMsB($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $mainBcColour, $PBMSborderStyle: solid){
+@mixin PBMsB($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $bcColour_main_global, $PBMSborderStyle: solid){
     padding-bottom: $PBMSsepValue;
     @include borderStyleB($PBMSborderWidth, $PBMSborderStyle, $PBMSbcColour);
     margin-bottom: $PBMSsepValue;
 }
-@mixin PBMsL($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $mainBcColour, $PBMSborderStyle: solid){
+@mixin PBMsL($PBMSsepValue: 10px, $PBMSborderWidth: 1px, $PBMSbcColour: $bcColour_main_global, $PBMSborderStyle: solid){
     padding-left: $PBMSsepValue;
     @include borderStyleL($PBMSborderWidth, $PBMSborderStyle, $PBMSbcColour);
     margin-left: $PBMSsepValue;

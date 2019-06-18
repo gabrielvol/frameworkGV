@@ -1,27 +1,27 @@
 /* =============================================================================
    Container Sizes Variables | Custom [container.scss]
    ========================================================================== */
-$grid-gutter-width:             30px;
-
-//Container Sizes
-$containerMobileValue:          300px; /* Mobile / Container: 300px */
-$containerMobileLandscapeValue: 85%;
-$containerTabletValue:          720px; /* iPad */
-$containerTabletLandscapeValue: 1000px; /* iPad Landscape */
-$containerDesktopValue:         $containerTabletLandscapeValue; /* Desktop */
-$containerDesktopLargeValue:    $containerTabletLandscapeValue; /* Big Screens */
+$grid-gutter-width:                  30px;
+             
+//Container Sizes             
+$container_value_MO:                 300px; /* Mobile / Container: 300px */
+$container_value_ML:                 85%;
+$container_value_T:                  720px; /* iPad */
+$container_value_TL:                 1000px; /* iPad Landscape */
+$container_value_D:                  $container_value_TL; /* Desktop */
+$container_value_DL:                 $container_value_TL; /* Big Screens */
 
 //Container Center Negative Values
-$cMHalf:  calc(#{$containerMobileValue} / 2); /* Mobile Half */
-$cMLHalf: calc(#{$containerMobileLandscapeValue} / 2); /* Mobile Landscape Half */
-$cTHalf:  calc(#{$containerTabletValue} / 2); /* Tablet Half*/
-$cTLHalf: calc(#{$containerTabletLandscapeValue} / 2); /* Tablet Landscape Half*/
-$cDHalf:  calc(#{$containerDesktopValue} / 2); /* Desktop Half */
-$cDLHalf: calc(#{$containerDesktopLargeValue} / 2); /* Desktop Large Half*/
+$container_value_half_MO:            calc(#{$container_value_MO} / 2); /* Mobile Half */
+$container_value_half_ML:            calc(#{$container_value_ML} / 2); /* Mobile Landscape Half */
+$container_value_half_T:             calc(#{$container_value_T} / 2); /* Tablet Half*/
+$container_value_half_TL:            calc(#{$container_value_TL} / 2); /* Tablet Landscape Half*/
+$container_value_half_D:             calc(#{$container_value_D} / 2); /* Desktop Half */
+$container_value_half_DL:            calc(#{$container_value_DL} / 2); /* Desktop Large Half*/
 
-$cMHneg:    calc(-1 * #{$cMHalf}); /* Mobile Half */
-$cMLHneg:   calc(-1 * #{$cMLHalf}); /* Mobile Landscape Half */
-$cTHneg:    calc(-1 * #{$cTHalf}); /* Tablet Half*/
-$cTLHneg:   calc(-1 * #{$cTLHalf}); /* Tablet Landscape Half*/
-$cDHneg:    calc(-1 * #{$cDHalf}); /* Desktop Half */
-$cDLHneg:   calc(-1 * #{$cDLHalf}); /* Desktop Large Half*/
+$container_value_half_negative_MO:   calc(-1 * #{$container_value_half_MO}); /* Mobile Half */
+$container_value_half_negative_ML:   calc(-1 * #{$container_value_half_ML}); /* Mobile Landscape Half */
+$container_value_half_negative_T:    calc(-1 * #{$container_value_half_T}); /* Tablet Half*/
+$container_value_half_negative_TL:   calc(-1 * #{$container_value_half_TL}); /* Tablet Landscape Half*/
+$container_value_half_negative_D:    calc(-1 * #{$container_value_half_D}); /* Desktop Half */
+$container_value_half_negative_DL:   calc(-1 * #{$container_value_half_DL}); /* Desktop Large Half*/

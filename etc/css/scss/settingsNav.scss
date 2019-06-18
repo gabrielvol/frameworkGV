@@ -22,14 +22,14 @@ nav{
         z-index: $zIndexNav;
     }
     
-    @if $navHasSubs == "on"{
+    @if $nav_hasSub_act == "on"{
         .subMenu{
             margin-top: $zero;
         }
     }
    
     @include navBT{
-        @if $hamburgerOnly{
+        @if $hamburger_only{
             position: absolute;
         } @else{
             position: fixed; 
@@ -47,7 +47,7 @@ nav{
             background-image: url('/nuevo/img/nav_hamb.svg');
             background-repeat: no-repeat;
             color: $navFontColour_hamburger;
-            font-family: $hamburgerFontFamily;
+            font-family: $navFontFamily_hamburger;
         }
         
         .navClose{
@@ -95,7 +95,7 @@ nav{
                 a,
                 .topLevelItem{
                     color: $navFontColour_item_AT;
-                    font-family: $navFontFamilyAT;
+                    font-family: $navFontFamily_AT;
                 }    
 
                 &:focus, &:hover{
@@ -113,7 +113,7 @@ nav{
                 a,
                 .topLevelItem{
                     color: $navFontColour_itemCurrent_AT;
-                    font-family: $navCurrentFontFamilyAT;
+                    font-family: $navFontFamily_itemCurrent_AT;
                 }  
 
                 &:focus, &:hover{
@@ -127,7 +127,7 @@ nav{
             } 
         }
             
-        @if $navHasSubs == "on"{
+        @if $nav_hasSub_act == "on"{
             .subMenu{
                 display: $none;
                 background-color: $navBgColour_ULsub_AT;
@@ -139,7 +139,7 @@ nav{
                     a,
                     .topLevelItem{
                         color: $navFontColour_itemSub_AT;
-                        font-family: $navSubFontFamilyAT;
+                        font-family: $navFontFamily_itemSub_AT;
                         cursor: pointer;
                     }
                     
@@ -156,7 +156,7 @@ nav{
                     a,
                     .topLevelItem{
                         color: $navFontColour_itemSubCurrent_AT;
-                        font-family: $navSubCurrentFontFamilyAT;
+                        font-family: $navFontFamily_itemSubCurrent_AT;
                         cursor: default;
                     }
 
@@ -173,7 +173,7 @@ nav{
             }
         }
         
-        @if $navTopper == "on"{
+        @if $nav_topper_act == "on"{
             &.topperNav{
                 top: 0;
                 background-color: $navBgColour_topper;
@@ -215,31 +215,31 @@ nav{
             > li{
                 a,
                 .topLevelItem{
-                    font-family: $navFontFamilyATL;
+                    font-family: $navFontFamily_ATL;
                 }                
             }
             
             .current{
                 a,
                 .topLevelItem{
-                    font-family: $navCurrentFontFamilyATL;
+                    font-family: $navFontFamily_itemCurrent_ATL;
                 }
             }
         }
             
-        @if $navHasSubs == "on"{
+        @if $nav_hasSub_act == "on"{
             .subMenu{                
                 > li{                
                     a,
                     .topLevelItem{
-                        font-family: $navSubFontFamilyATL;
+                        font-family: $navFontFamily_itemSub_ATL;
                     }                    
                 }
                 
                 > .current{
                     a,
                     .topLevelItem{
-                        font-family: $navSubCurrentFontFamilyATL;
+                        font-family: $navFontFamily_itemSubCurrent_ATL;
                     }                    
                 }
             }
@@ -248,7 +248,7 @@ nav{
     
     @include tabletAndTabletLandscapeOnly{
         .mainMenu{
-            @if $navHasSubs == "on"{
+            @if $nav_hasSub_act == "on"{
                 .subMenu{
                     &.openSubTTLO{
                         display: $block;
@@ -256,7 +256,7 @@ nav{
                 }
             }
             
-            @if $navTopper == "on"{
+            @if $nav_topper_act == "on"{
                 &.topperNav{
                     .mainMenu{
                         > li{
@@ -274,7 +274,7 @@ nav{
     }
     
     @include afterDesktop{
-        @if $navHasSubs == "on"{
+        @if $nav_hasSub_act == "on"{
             .hasSub{
                 &:focus, &:hover{
                     ul{

@@ -2,20 +2,20 @@
    Fonts Mixins | Etc [mixinsColours.scss]
    ========================================================================== */
     //Generador de clases por cada color claro
-@mixin colourLightClassesGenerator($darkenValue){
-    @each $colourClassName, $colourHexValue in $coloursMapLight {
+@mixin colourLightClassesGenerator($colours_map_light_darkenValue){
+    @each $colourClassName, $colourHexValue in $colours_map_light {
         .#{$colourClassName}{
             &, b, strong, i, em{color: $colourHexValue;}
         }
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-            &:focus, &:hover{color: darken($colourHexValue, $darkenValue);}
+            &:focus, &:hover{color: darken($colourHexValue, $colours_map_light_darkenValue);}
         }
         @if $coloursButtons == "on"{
             button.#{$colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-                &:focus, &:hover{color: darken($colourHexValue, $darkenValue);}
+                &:focus, &:hover{color: darken($colourHexValue, $colours_map_light_darkenValue);}
             }
         }
         @if $coloursLabels == "on"{
@@ -26,20 +26,20 @@
     }
 }
     //Generador de clases por cada color oscuro
-@mixin colourDarkClassesGenerator($lightenValue){
-    @each $colourClassName, $colourHexValue in $coloursMapDark {
+@mixin colourDarkClassesGenerator($colours_map_dark_lightenValue){
+    @each $colourClassName, $colourHexValue in $colours_map_dark {
         .#{$colourClassName}{
             &, b, strong, i, em{color: $colourHexValue;}
         }
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-            &:focus, &:hover{color: lighten($colourHexValue, $lightenValue);}
+            &:focus, &:hover{color: lighten($colourHexValue, $colours_map_dark_lightenValue);}
         }
         @if $coloursButtons == "on"{
             button.#{$colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-                &:focus, &:hover{color: lighten($colourHexValue, $lightenValue);}
+                &:focus, &:hover{color: lighten($colourHexValue, $colours_map_dark_lightenValue);}
             }
         }
         @if $coloursLabels == "on"{
@@ -50,31 +50,31 @@
     }
 }
     //Generador de clases para anclas dentro de párrafos por cada color claro
-@mixin anchorColoursLightClassesGenerator($darkenValueAnchor){
-    @each $colourClassName, $colourHexValue in $anchorColoursLight {
+@mixin anchorColoursLightClassesGenerator($anchor_fontColours_map_light_darkenValue){
+    @each $colourClassName, $colourHexValue in $anchor_fontColours_map_light {
         .#{$colourClassName}{            
             a, a:active, a:visited{color: $colourHexValue;}
-            a:focus, a:hover{color: darken($colourHexValue, $darkenValueAnchor);}
+            a:focus, a:hover{color: darken($colourHexValue, $anchor_fontColours_map_light_darkenValue);}
         }
     }
 }
     //Generador de clases para anclas dentro párrafos por cada color oscuro
-@mixin anchorColoursDarkClassesGenerator($lightenValueAnchor){
-    @each $colourClassName, $colourHexValue in $anchorColoursDark {
+@mixin anchorColoursDarkClassesGenerator($anchor_fontColours_map_dark_lightenValue){
+    @each $colourClassName, $colourHexValue in $anchor_fontColours_map_dark {
         .#{$colourClassName}{            
             a, a:active, a:visited{color: $colourHexValue;}
-            a:focus, a:hover{color: lighten($colourHexValue, $lightenValueAnchor);}
+            a:focus, a:hover{color: lighten($colourHexValue, $anchor_fontColours_map_dark_lightenValue);}
         }
     }
 }
     //Generador de clases por cada color de fondo
 @mixin backgroundColourClassesGenerator{
-    @each $bgColourClassName, $bgColourHexValue in $backgroundColoursMap {
+    @each $bgColourClassName, $bgColourHexValue in $backgroundColours_map {
         .bg#{$bgColourClassName}{background-color: $bgColourHexValue;}
     }
 }
 @mixin backgroundColourHoverClassesGenerator{
-    @each $bgColourClassName, $bgColourHoverValue in $backgroundColoursHoverMap {
+    @each $bgColourClassName, $bgColourHoverValue in $backgroundColours_hover_map {
         a.#{$bgColourClassName}{
             &:hover, &:focus{background-color: $bgColourHoverValue;}
         }
@@ -95,7 +95,7 @@
 }
     //Generador de clases para colores con focus y hover custom
 @mixin colourCustomHoverClassesGenerator{
-    @each $colourClassName, $colourHexValue in $coloursMapCustomHover {
+    @each $colourClassName, $colourHexValue in $colours_map_custom_hover {
         .#{$colourClassName}{
             &, b, strong, i, em{color: $colourHexValue;}
         }

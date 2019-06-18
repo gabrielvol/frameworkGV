@@ -113,7 +113,7 @@
             }
         }
         
-        @if $navDrawer == "on"{
+        @if $navDrawer_act == "on"{
             &.clicked{
                 position: fixed;
                 z-index: $zIndexSocialClicked;

@@ -19,7 +19,7 @@ $flagHeightAT: 32px;
         @include borderStyle($bcWhite);
         @include transition(0.3s);
         
-        @if $circleFlags == "on"{
+        @if $language_flags_circled_act == "on"{
             @include borderRadius(50%);
 
             &:focus, &:hover{
@@ -43,7 +43,7 @@ $flagHeightAT: 32px;
                 margin-left: 15px;
             }
         
-            @if $circleFlags == "on"{
+            @if $language_flags_circled_act == "on"{
                 &, a{
                     @include squareSize($flagHeightBT);
                 }
@@ -54,7 +54,7 @@ $flagHeightAT: 32px;
             }
         }
         
-        @if $navDrawer == "on"{   
+        @if $navDrawer_act == "on"{   
             &.clicked{
                 position: fixed;
                 top: 15px;
@@ -77,7 +77,7 @@ $flagHeightAT: 32px;
                 margin-left: 10px;
             }
         
-            @if $circleFlags == "on"{
+            @if $language_flags_circled_act == "on"{
                 &, a{
                     @include squareSize($flagHeightAT);
                 }

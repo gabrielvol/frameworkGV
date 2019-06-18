@@ -3,7 +3,7 @@
    ========================================================================== */
     //Mixins para generar nuevos spacing helpers
 @mixin spacingHelpersClassesGenerator{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}, .pv#{$shClassName}, .pa#{$shClassName}{padding-top: $shValue;}
         .pr#{$shClassName}, .ph#{$shClassName}, .pa#{$shClassName}{padding-right: $shValue;}
         .pb#{$shClassName}, .pv#{$shClassName}, .pa#{$shClassName}{padding-bottom: $shValue;}
@@ -15,7 +15,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorMO{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}MO, .pv#{$shClassName}MO, .pa#{$shClassName}MO{padding-top: $shValue;}
         .pr#{$shClassName}MO, .ph#{$shClassName}MO, .pa#{$shClassName}MO{padding-right: $shValue;}
         .pb#{$shClassName}MO, .pv#{$shClassName}MO, .pa#{$shClassName}MO{padding-bottom: $shValue;}
@@ -27,7 +27,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorAML{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}AML, .pv#{$shClassName}AML, .pa#{$shClassName}AML{padding-top: $shValue;}
         .pr#{$shClassName}AML, .ph#{$shClassName}AML, .pa#{$shClassName}AML{padding-right: $shValue;}
         .pb#{$shClassName}AML, .pv#{$shClassName}AML, .pa#{$shClassName}AML{padding-bottom: $shValue;}
@@ -39,7 +39,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorMLO{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}MLO, .pv#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-top: $shValue;}
         .pr#{$shClassName}MLO, .ph#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-right: $shValue;}
         .pb#{$shClassName}MLO, .pv#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-bottom: $shValue;}
@@ -51,7 +51,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorBT{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}BT, .pv#{$shClassName}BT, .pa#{$shClassName}BT{padding-top: $shValue;}
         .pr#{$shClassName}BT, .ph#{$shClassName}BT, .pa#{$shClassName}BT{padding-right: $shValue;}
         .pb#{$shClassName}BT, .pv#{$shClassName}BT, .pa#{$shClassName}BT{padding-bottom: $shValue;}
@@ -63,7 +63,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorBTL{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}BTL, .pv#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-top: $shValue;}
         .pr#{$shClassName}BTL, .ph#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-right: $shValue;}
         .pb#{$shClassName}BTL, .pv#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-bottom: $shValue;}
@@ -75,7 +75,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorTO{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}TO, .pv#{$shClassName}TO, .pa#{$shClassName}TO{padding-top: $shValue;}
         .pr#{$shClassName}TO, .ph#{$shClassName}TO, .pa#{$shClassName}TO{padding-right: $shValue;}
         .pb#{$shClassName}TO, .pv#{$shClassName}TO, .pa#{$shClassName}TO{padding-bottom: $shValue;}
@@ -87,7 +87,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorAT{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}AT, .pv#{$shClassName}AT, .pa#{$shClassName}AT{padding-top: $shValue;}
         .pr#{$shClassName}AT, .ph#{$shClassName}AT, .pa#{$shClassName}AT{padding-right: $shValue;}
         .pb#{$shClassName}AT, .pv#{$shClassName}AT, .pa#{$shClassName}AT{padding-bottom: $shValue;}
@@ -99,7 +99,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorATL{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}ATL, .pv#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-top: $shValue;}
         .pr#{$shClassName}ATL, .ph#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-right: $shValue;}
         .pb#{$shClassName}ATL, .pv#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-bottom: $shValue;}
@@ -111,7 +111,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorTLO{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}TLO, .pv#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-top: $shValue;}
         .pr#{$shClassName}TLO, .ph#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-right: $shValue;}
         .pb#{$shClassName}TLO, .pv#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-bottom: $shValue;}
@@ -123,7 +123,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorTTLO{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}TTLO, .pv#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-top: $shValue;}
         .pr#{$shClassName}TTLO, .ph#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-right: $shValue;}
         .pb#{$shClassName}TTLO, .pv#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-bottom: $shValue;}
@@ -135,7 +135,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorBD{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}BD, .pv#{$shClassName}BD, .pa#{$shClassName}BD{padding-top: $shValue;}
         .pr#{$shClassName}BD, .ph#{$shClassName}BD, .pa#{$shClassName}BD{padding-right: $shValue;}
         .pb#{$shClassName}BD, .pv#{$shClassName}BD, .pa#{$shClassName}BD{padding-bottom: $shValue;}
@@ -147,7 +147,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorAL{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}AL, .pv#{$shClassName}AL, .pa#{$shClassName}AL{padding-top: $shValue;}
         .pr#{$shClassName}AL, .ph#{$shClassName}AL, .pa#{$shClassName}AL{padding-right: $shValue;}
         .pb#{$shClassName}AL, .pv#{$shClassName}AL, .pa#{$shClassName}AL{padding-bottom: $shValue;}
@@ -159,7 +159,7 @@
     }
 }
 @mixin spacingHelpersClassesGeneratorAD{
-    @each $shClassName, $shValue in $spacingHelpersMap {
+    @each $shClassName, $shValue in $helpers_spacing_map {
         .pt#{$shClassName}AD, .pv#{$shClassName}AD, .pa#{$shClassName}AD{padding-top: $shValue;}
         .pr#{$shClassName}AD, .ph#{$shClassName}AD, .pa#{$shClassName}AD{padding-right: $shValue;}
         .pb#{$shClassName}AD, .pv#{$shClassName}AD, .pa#{$shClassName}AD{padding-bottom: $shValue;}

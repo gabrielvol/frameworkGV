@@ -6,30 +6,30 @@
 // Fonts
    
 // Nav BT
-$navFontColour_TLILevel0_BT:            $mainFontColour;
-$navFontColour_TLILevel1_BT:            $navFontColour_TLILevel0_BT;
-$navFontColour_TLILevel2_BT:            $navFontColour_TLILevel1_BT;
-$navFontColour_TLILevel3_BT:            $navFontColour_TLILevel2_BT;
+$navFontColour_TLI_level0_BT:            $fontColour_main_global;
+$navFontColour_TLI_level1_BT:            $navFontColour_TLI_level0_BT;
+$navFontColour_TLI_level2_BT:            $navFontColour_TLI_level1_BT;
+$navFontColour_TLI_level3_BT:            $navFontColour_TLI_level2_BT;
 
-$navFontColour_itemLevel0_BT:           $navFontColour_TLILevel0_BT;
-$navFontColour_itemLevel1_BT:           $navFontColour_TLILevel1_BT;
-$navFontColour_itemLevel2_BT:           $navFontColour_TLILevel2_BT; 
-$navFontColour_itemLevel3_BT:           $navFontColour_TLILevel3_BT; 
+$navFontColour_itemLevel0_BT:           $navFontColour_TLI_level0_BT;
+$navFontColour_itemLevel1_BT:           $navFontColour_TLI_level1_BT;
+$navFontColour_itemLevel2_BT:           $navFontColour_TLI_level2_BT; 
+$navFontColour_itemLevel3_BT:           $navFontColour_TLI_level3_BT; 
 
-$navFontColour_TLICurrentLevel0_BT:     $navFontColour_TLILevel0_BT;
-$navFontColour_TLICurrentLevel1_BT:     $navFontColour_TLILevel1_BT;
-$navFontColour_TLICurrentLevel2_BT:     $navFontColour_TLILevel2_BT;
-$navFontColour_TLICurrentLevel3_BT:     $navFontColour_TLILevel3_BT;
+$navFontColour_TLICurrent_level0_BT:     $navFontColour_TLI_level0_BT;
+$navFontColour_TLICurrent_level1_BT:     $navFontColour_TLI_level1_BT;
+$navFontColour_TLICurrent_level2_BT:     $navFontColour_TLI_level2_BT;
+$navFontColour_TLICurrent_level3_BT:     $navFontColour_TLI_level3_BT;
 
-$navFontColour_itemCurrentLevel0_BT:    $navFontColour_TLICurrentLevel0_BT;
-$navFontColour_itemCurrentLevel1_BT:    $navFontColour_TLICurrentLevel1_BT;
-$navFontColour_itemCurrentLevel2_BT:    $navFontColour_TLICurrentLevel2_BT;
-$navFontColour_itemCurrentLevel3_BT:    $navFontColour_TLICurrentLevel3_BT;
+$navFontColour_itemCurrent_level0_BT:    $navFontColour_TLICurrent_level0_BT;
+$navFontColour_itemCurrent_level1_BT:    $navFontColour_TLICurrent_level1_BT;
+$navFontColour_itemCurrent_level2_BT:    $navFontColour_TLICurrent_level2_BT;
+$navFontColour_itemCurrent_level3_BT:    $navFontColour_TLICurrent_level3_BT;
 
 $navFontColour_backMenu_TLI:            $white!important;
 
 // Nav AT
-$navFontColour_item_AT:               $mainFontColour;
+$navFontColour_item_AT:               $fontColour_main_global;
 $navFontColour_item_hover:            $navFontColour_item_AT;
 $navFontColour_itemSub_AT:            $navFontColour_item_AT;
 $navFontColour_itemSub_hover:         $navFontColour_itemSub_AT;
@@ -64,10 +64,10 @@ $navBgColour_itemLevel1_BT:     transparent;
 $navBgColour_itemLevel2_BT:     transparent;
 $navBgColour_itemLevel3_BT:     transparent;
 
-$navBgColour_itemCurrentLevel0_BT:  darken($navBgColour_BT, 5%);
-$navBgColour_itemCurrentLevel1_BT:  darken($navBgColour_ulLevel1_BT, 5%);
-$navBgColour_itemCurrentLevel2_BT:  darken($navBgColour_ulLevel1_BT, 5%);
-$navBgColour_itemCurrentLevel3_BT:  darken($navBgColour_ulLevel1_BT, 5%);
+$navBgColour_itemCurrent_level0_BT:  darken($navBgColour_BT, 5%);
+$navBgColour_itemCurrent_level1_BT:  darken($navBgColour_ulLevel1_BT, 5%);
+$navBgColour_itemCurrent_level2_BT:  darken($navBgColour_ulLevel1_BT, 5%);
+$navBgColour_itemCurrent_level3_BT:  darken($navBgColour_ulLevel1_BT, 5%);
 
 // Nav AT
 $navBgColour_AT:                $bgGrey;

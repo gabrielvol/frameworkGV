@@ -1,24 +1,24 @@
 /* =============================================================================
    Slick Arrows Styles | Custom [stylesSliderArrows.scss]
    ========================================================================== */
-@if $sliderArrows == "on"{
-    $sliderArrowHeightBT:       30px;
-    $sliderArrowWidthHeightBT:  18px $sliderArrowHeightBT;
-    $sliderArrowHeightHalfBT:   calc(#{$sliderArrowHeightBT} / 2);
+@if $slider_arrows == "on"{
+    $slider_ArrowHeightBT:       30px;
+    $slider_ArrowWidthHeightBT:  18px $slider_ArrowHeightBT;
+    $slider_ArrowHeightHalfBT:   calc(#{$slider_ArrowHeightBT} / 2);
 
-    $sliderArrowHeightAT:       50px;
-    $sliderArrowWidthHeightAT:  30px $sliderArrowHeightAT;
-    $sliderArrowHeightHalfAT:   calc(#{$sliderArrowHeightAT} / 2);
+    $slider_ArrowHeightAT:       50px;
+    $slider_ArrowWidthHeightAT:  30px $slider_ArrowHeightAT;
+    $slider_ArrowHeightHalfAT:   calc(#{$slider_ArrowHeightAT} / 2);
 
     .slickPrev{
         left: 0;
 
         @include beforeTablet{
-            @include bgSvg(slider_arrowL, $sliderArrowWidthHeightBT);        
+            @include bgSvg(slider_arrowL, $slider_ArrowWidthHeightBT);        
         }
 
         @include afterTablet{
-            @include bgSvg(slider_arrowL, $sliderArrowWidthHeightAT);        
+            @include bgSvg(slider_arrowL, $slider_ArrowWidthHeightAT);        
         }
     }
 
@@ -26,11 +26,11 @@
         right: 0;
 
         @include beforeTablet{
-            @include bgSvg(slider_arrowR, $sliderArrowWidthHeightBT);        
+            @include bgSvg(slider_arrowR, $slider_ArrowWidthHeightBT);        
         }
 
         @include afterTablet{
-            @include bgSvg(slider_arrowR, $sliderArrowWidthHeightAT);        
+            @include bgSvg(slider_arrowR, $slider_ArrowWidthHeightAT);        
         }
     }
 
@@ -46,21 +46,21 @@
         text-indent: -9999px;
 
         @include beforeTablet{
-            @include squareSize($sliderArrowHeightBT);
+            @include squareSize($slider_ArrowHeightBT);
             /*
-            width: $sliderArrowWidthBT;
-            height: $sliderArrowHeightBT;
+            width: $slider_ArrowWidthBT;
+            height: $slider_ArrowHeightBT;
             */
-            margin-top: calc(-1 * #{$sliderArrowHeightHalfBT});        
+            margin-top: calc(-1 * #{$slider_ArrowHeightHalfBT});        
         }
 
         @include afterTablet{
-            @include squareSize($sliderArrowHeightAT);
+            @include squareSize($slider_ArrowHeightAT);
             /*            
-            width: $sliderArrowWidthAT;
-            height: $sliderArrowHeightAT;
+            width: $slider_ArrowWidthAT;
+            height: $slider_ArrowHeightAT;
             */
-            margin-top: calc(-1 * #{$sliderArrowHeightHalfAT});
+            margin-top: calc(-1 * #{$slider_ArrowHeightHalfAT});
         }
     }
 }

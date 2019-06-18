@@ -17,7 +17,7 @@
         img{}
     }
     
-    @if $logoImgBgBefore == "on"{    
+    @if $logo_Bg_beforeImg == "on"{    
         .logoBefore{
             position: relative;        
             background-image: url('/clientes/wsc/img/logo_bg.png');
@@ -41,10 +41,10 @@
 
     @include beforeTablet{
         box-sizing: border-box;
-        padding-top: $headerPaddingTopBT;
-        padding-bottom: $headerPaddingBottomBT;
+        padding-top: $header_paddT_BT;
+        padding-bottom: $header_paddB_BT;
         
-        @if $headerFixed == "on" or $navAcc == "on"{
+        @if $header_fixed_act == "on" or $navAcc_act == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -55,18 +55,18 @@
             }
         }        
             
-        @if $logoImgBgBefore == "on"{
+        @if $logo_Bg_beforeImg == "on"{
             .logoH{
-                @include squareSize($logoWBT);
+                @include squareSize($logo_width_BT);
             }
         }
         
-        @if $navAcc == "on"{
-            height: $headerHBTAcc;
+        @if $navAcc_act == "on"{
+            height: $header_height_navAcc_BT;
             box-shadow: 0 0 10px #ccc;
             
             .logoH{
-                height: $logoHBT;
+                height: $logo_height_BT;
                 margin-right: auto;
                 margin-left: auto;
             
@@ -81,10 +81,10 @@
             }
             
             } @else {
-            height: $headerHBT;
+            height: $header_height_BT;
             
             .logoH{
-                width: $logoWBT;
+                width: $logo_width_BT;
             
                 a,
                 img{
@@ -93,7 +93,7 @@
             }
         }
         
-        @if $navDrawer == "on"{
+        @if $navDrawer_act == "on"{
             .logoH{
                 &.clicked{
                     @include borderStyleR($navBcColour_navDrawer);
@@ -104,10 +104,10 @@
                     left: 0;
                     width: calc(#{$navDrawerWidth} - 5px);
                     max-width: $navDrawerMaxWidth;
-                    height: $logoHClickedFH;
+                    height: $logo_height_ClickedFH;
                     background-color: $navBgColour_BT;
-                    padding-top: $logoHClickedPT;
-                    padding-bottom: $logoHClickedPB;
+                    padding-top: $logo_height_ClickedPT;
+                    padding-bottom: $logo_height_ClickedPB;
                     margin: 0;
 
                     a, img{
@@ -125,19 +125,19 @@
     }
     
     @include afterTablet{        
-        @if $headerFixed == "on"{
+        @if $header_fixed_act == "on"{
             position: fixed;
             top: 0;
             right: 0;
             left: 0;
-            height: $headerHAT;
+            height: $header_height_AT;
         
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
         }
         
-        @if $navTopper == "on"{
+        @if $nav_topper_act == "on"{
             &.topperNav{
                 position: fixed;
                 z-index: $zIndexHeaderTopper;
@@ -152,24 +152,24 @@
             }
         }
         
-        @if $fullHeightIndex == "on"{
-            height: $headerHAT;
+        @if $index_fullHeight_act == "on"{
+            height: $header_height_AT;
         }
         
         .logoH{
             position: relative;
             z-index: $zIndexLogoH;   
             
-            @if $floatedLogoNav == "on"{
+            @if $logoNav_floated_act == "on"{
                 box-sizing: border-box;
                 float: left;
                 padding-right: 20px;
                 padding-left: 20px;             
             }
             
-            @if $logoImgBgBefore == "on"{            
+            @if $logo_Bg_beforeImg == "on"{            
                 &, a{
-                    @include squareSize($logoWAT);
+                    @include squareSize($logo_width_AT);
                 }  
                 
                 img{
@@ -177,7 +177,7 @@
                 }                
                 
             } @else{
-                width: $logoWAT;
+                width: $logo_width_AT;
             
                 a,
                 img{
@@ -188,22 +188,22 @@
     }
     
     @include afterTabletLandscape{
-        @if $headerFixed == "on"{
-            height: $headerHATL;
+        @if $header_fixed_act == "on"{
+            height: $header_height_ATL;
         }
         
-        @if $fullHeightIndex == "on"{
-            height: $headerHATL;
+        @if $index_fullHeight_act == "on"{
+            height: $header_height_ATL;
         }
         
         .logoH{            
-            @if $logoImgBgBefore == "on"{            
+            @if $logo_Bg_beforeImg == "on"{            
                 &, a{
-                    @include squareSize($logoWATL);
+                    @include squareSize($logo_width_ATL);
                 } 
                 
             } @else{
-                width: $logoWATL;
+                width: $logo_width_ATL;
             }
         }
     }

@@ -43,27 +43,27 @@
    ========================================================================== */
 #main{
     @include beforeTablet{
-        @if $navAcc == "on"{
-            padding-top: $headerHBTAcc;
+        @if $navAcc_act == "on"{
+            padding-top: $header_height_navAcc_BT;
         }
-        @if $headerFixed == "on"{
-            padding-top: $headerHBT;
+        @if $header_fixed_act == "on"{
+            padding-top: $header_height_BT;
         }
     }
     
     @include afterTablet{
-        @if $headerFixed == "on"{
-            padding-top: $headerHAT;
+        @if $header_fixed_act == "on"{
+            padding-top: $header_height_AT;
         }
         
-        @if $navTopper == "on"{
+        @if $nav_topper_act == "on"{
             min-height: 700px;        
         }
     }
     
     @include afterTabletLandscape{
-        @if $headerFixed == "on"{
-            padding-top: $headerHATL;
+        @if $header_fixed_act == "on"{
+            padding-top: $header_height_ATL;
         }
     }
 }

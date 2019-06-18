@@ -4,61 +4,44 @@
 //form.searchForm
 .searchForm{
     position: relative;
-    width: $searchFormWidthBT;
+    width: $formInput_search_width_BT;
     
     input{
-        height: $searchFormSubmitValueBT;
+        height: $formInput_search_height_BT;
 
         &[type="search"]{
-            width: $searchFormWidthBT;
+            width: $formInput_search_width_BT;
             border: $none;
-            padding-right: calc(#{$searchFormSubmitValueBT} + 15px)!important;
-            line-height: $searchFormSubmitValueBT;
+            padding-right: calc(#{$formInput_search_bgSize_BT} + 15px)!important;
+            line-height: $formInput_search_lineHeight_BT;
         }
         
         &[type="submit"]{
             @include opacityCustomHover;
-            @include bgSvg(form_searchSubmitBT, $searchFormSubmitValueBT, center);
+            @include bgSvg(form_searchSubmitBT, $formInput_search_bgSize_BT, center);
             position: absolute;
             top: 0;
             right: 0;
-            width: $searchFormSubmitValueBT;
+            width: $formSubmit_search_width_BT;
             border: $none;
         }
     }
     
     @include afterTablet{
-        width: $searchFormWidthAT;
+        width: $formInput_search_width_AT;
     
         input{
-            height: $searchFormSubmitValueAT;
+            height: $formInput_search_height_AT;
 
             &[type="search"]{
-                padding-right: calc(#{$searchFormSubmitValueAT} + 5px)!important;
-                line-height: $searchFormSubmitValueAT;
+                padding-right: calc(#{$formInput_search_bgSize_AT} + 5px)!important;
+                line-height: $formInput_search_lineHeight_AT;
             }
             
             &[type="submit"]{
-                @include bgSvg(form_searchSubmitAT, $searchFormSubmitValueAT, center);
-                width: $searchFormSubmitValueAT;
+                @include bgSvg(form_searchSubmitAT, $formInput_search_bgSize_AT, center);
+                width: $formSubmit_search_width_AT;
             }            
         }
-    }
-    
-    @include afterDesktop{
-        width: $searchFormWidthAL;
-        
-        input{
-            height: $searchFormSubmitValueAL;
-
-            &[type="search"]{
-                padding-right: calc(#{$searchFormSubmitValueAL} + 10px)!important;
-                line-height: $searchFormSubmitValueAL;
-            }
-            
-            &[type="submit"]{
-                width: $searchFormSubmitValueAL;
-            }            
-        }            
     }
 }

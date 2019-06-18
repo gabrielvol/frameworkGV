@@ -3,12 +3,12 @@
    ========================================================================== */
 .navMain{
     @include navAT{
-        @if $floatedLogoNav == "on"{
+        @if $logoNav_floated_act == "on"{
             float: left;
-            width: calc(100% - #{$logoWAT});
+            width: calc(100% - #{$logo_width_AT});
         }
          
-        @if $navFixed == "on"{
+        @if $nav_fixed_act == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -17,7 +17,7 @@
         }
         
         .mainMenu{
-            @if $navHorizontalCenterAT == "on"{
+            @if $nav_horizontalCenter_AT_act == "on"{
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;
@@ -33,14 +33,14 @@
             }
             
             > li{
-                @if $floatedLogoNav == "on"{
+                @if $logoNav_floated_act == "on"{
                     float: left;
                 }
                 
                 &.current{
                     a,
                     .topLevelItem{
-                        @if $navItemCurrentBottomBc == "on"{
+                        @if $nav_itemCurrent_borderBottom_act == "on"{
                             @include borderStyleB($navBcColour_itemCurrent, 3px);
                         }
                     }
@@ -66,7 +66,7 @@
             & + li{}
         }
         
-        @if $navHasSubs == "on"{
+        @if $nav_hasSub_act == "on"{
             .subMenu{
                 $borderRadiusB: 10px;
                 $subMenuW: 200px;
@@ -113,7 +113,7 @@
             }
         }
         
-        @if $navTopper == "on"{
+        @if $nav_topper_act == "on"{
             &.topperNav{
                 @include borderStyleB($navBcColour_topper); 
                 position: fixed;
@@ -148,7 +148,7 @@
                     }
                 }
                 
-                @if $navHasSubLevel1 == "on"{
+                @if $nav_hasSub_level1_act == "on"{
                     .subMenuLevel1{
                         $subMenuBorderRadiusB: 6px;
                         
@@ -194,21 +194,21 @@
     @include tabletOnly{}
     
     @include afterTabletLandscape{
-        @if $floatedLogoNav == "on"{
-            width: calc(100% - #{$logoWATL});
+        @if $logoNav_floated_act == "on"{
+            width: calc(100% - #{$logo_width_ATL});
         }
         
         .mainMenu{
             > li{
                 &:focus, &:hover{
-                    @if $navTextItemWhite == "on"{
+                    @if $nav_text_white_act == "on"{
                         > a,
                         > .topLevelItem{
                             text-shadow: $whiteTextHoverShadow;
                         }
                     }
 
-                    @if $navTextItemBlack == "on"{
+                    @if $nav_text_black_act == "on"{
                         > a,
                         > .topLevelItem{
                             color: $greyXD;
@@ -240,11 +240,11 @@
             .topLevelItem{}
         }
 
-        @if $navTopper == "on"{
+        @if $nav_topper_act == "on"{
             &.topperNav{
                 .mainMenu{}
                 
-                @if $navHasSubLevel1 == "on"{
+                @if $nav_hasSub_level1_act == "on"{
                     .subMenuLevel1{
                         &:focus{
                             .subMenuLevel1{
@@ -262,16 +262,16 @@
             a,
             .topLevelItem{
                 &:focus, &:hover{
-                    @if $navTextItemWhite == "on"{
+                    @if $nav_text_white_act == "on"{
                         text-shadow: 0 0 0 transparent;
                     }
                 }
             }
         }
         
-        @if $navTopper == "on"{
+        @if $nav_topper_act == "on"{
             &.topperNav{
-                @if $navHasSubLevel1 == "on"{
+                @if $nav_hasSub_level1_act == "on"{
                     .hasSub{
                         &:hover{
                             .subMenuLevel1{

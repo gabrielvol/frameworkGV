@@ -65,13 +65,13 @@
 /* -------------------------------------
     Full height index                 */
 #footer{
-    @if $fullHeightIndex == "on"{
+    @if $index_fullHeight_act == "on"{
         @include beforeTablet{
-            height: $footerHBT;
+            height: $footer_height_BT;
         }
 
         @include afterTablet{ 
-            height: $footerHAT;
+            height: $footer_height_AT;
         }
     }
 }

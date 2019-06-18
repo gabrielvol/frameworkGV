@@ -3,7 +3,7 @@
    ========================================================================== */
 ///**Background Colours Map:** 
     ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
-$backgroundColoursMap:(
+$backgroundColours_map:(
     White:      $white,
     Black:      $black,
     Error:      $errorColour,
@@ -17,40 +17,40 @@ $backgroundColoursMap:(
     GreyXD:     $greyXD
 );
 
-$bgWhite:      map-get($backgroundColoursMap, White);
-$bgBlack:      map-get($backgroundColoursMap, Black);
-$bgError:      map-get($backgroundColoursMap, Error);
-//$bgRedColour:  map-get($backgroundColoursMap, RedColour);
-$bgGreen:      map-get($backgroundColoursMap, Green);
-$bgGreyXXL:    map-get($backgroundColoursMap, GreyXXL);
-$bgGreyXL:     map-get($backgroundColoursMap, GreyXL);
-$bgGreyL:      map-get($backgroundColoursMap, GreyL);
-$bgGrey:       map-get($backgroundColoursMap, Grey);
-$bgGreyD:      map-get($backgroundColoursMap, GreyD);
-$bgGreyXD:     map-get($backgroundColoursMap, GreyXD);
+$bgWhite:      map-get($backgroundColours_map, White);
+$bgBlack:      map-get($backgroundColours_map, Black);
+$bgError:      map-get($backgroundColours_map, Error);
+//$bgRedColour:  map-get($backgroundColours_map, RedColour);
+$bgGreen:      map-get($backgroundColours_map, Green);
+$bgGreyXXL:    map-get($backgroundColours_map, GreyXXL);
+$bgGreyXL:     map-get($backgroundColours_map, GreyXL);
+$bgGreyL:      map-get($backgroundColours_map, GreyL);
+$bgGrey:       map-get($backgroundColours_map, Grey);
+$bgGreyD:      map-get($backgroundColours_map, GreyD);
+$bgGreyXD:     map-get($backgroundColours_map, GreyXD);
 
     //Declaramos las variables para colores de fondo
-$bodyBgColour:       $bgWhite;    
-$mainBgColour:       $bgGrey;
-$imgBgNeutralColour: $bgGreyL;
-$bgSelection:        $bgGreyL;
+$bgColour_body:                     $bgWhite;    
+$bgColour_main_global:              $bgGrey;
+$bgColour_imgNeutral_global:        $bgGreyL;
+$bgColour_textSelection_global:     $bgGreyL;
 
 ///**Background Colours Hover Map:** 
     ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
-$backgroundColoursHoverMap:(    
-    mainBgColour: darken($mainBgColour, 20%),
+$backgroundColours_hover_map:(    
+    mainBgColour: darken($bgColour_main_global, 20%),
 /*    bgGrey: lighten($bgGrey, 20%)*/
 );
 
-//$bgBlueHover: map-get($backgroundColoursHoverMap, bgBlue);
+//$bgBlue_hover: map-get($backgroundColours_hover_map, bgBlue);
 
 /* =============================================================================
    Modal Opacity Variables | Custom [coloursBackgrounds.scss]
    ========================================================================== */
     //El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
-$modalOpacity: 85;
-$modalBgColour: $bgBlack;
+$modal_opacity_global:      85;
+$modal_bgColour_global:     $bgBlack;
 
     //Responsive nav
-$bgModalNav: $bgBlack;
-$modalNavOpacity: 80;
+$modal_bgColour_nav: $bgBlack;
+$modal_opacity_nav:  80;

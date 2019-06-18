@@ -1,19 +1,19 @@
 /* =============================================================================
    Slick Dots Styles | Custom [stylesSliderDots.scss]
    ========================================================================== */
-@if $sliderDots == "on"{
+@if $slider_dots == "on"{
     .slickDots{
-        $sliderDotWidth: 15px;
-        $sliderDotHeight: $sliderDotWidth;
-        $sliderDotWidthHeight: $sliderDotWidth $sliderDotHeight;
+        $slider_DotWidth: 15px;
+        $slider_DotHeight: $slider_DotWidth;
+        $slider_DotWidthHeight: $slider_DotWidth $slider_DotHeight;
         $pagSeparation: 10px;
-        $slickDotMarginTopValue: calc(#{$sliderDotHeight} + 20px);
+        $slickDotMarginTopValue: calc(#{$slider_DotHeight} + 20px);
 
         list-style: none;
         position: relative;
         z-index: $zIndexSlickNextPrevDots;
         top: calc(-1 * #{$slickDotMarginTopValue});
-        height: calc(#{$sliderDotHeight} + calc(#{$pagSeparation} * 2));
+        height: calc(#{$slider_DotHeight} + calc(#{$pagSeparation} * 2));
         margin: 0 auto;
         text-align: center;
 
@@ -22,11 +22,11 @@
             @include opacityCustom(60);
             display: inline-block;
             float: $none;
-            height: $sliderDotHeight;
+            height: $slider_DotHeight;
             padding: $pagSeparation;
 
             &, button{
-                @include squareSize($sliderDotWidth);
+                @include squareSize($slider_DotWidth);
             }
 
             button{

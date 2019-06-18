@@ -3,7 +3,7 @@
    ========================================================================== */
     //Generador de clases por cada fuente
 @mixin fontFamilyCustomClassesGenerator{
-    @each $fontFamilyClassName, $fontFamilyName in $fontFamiliesSiteFontsMap {
+    @each $fontFamilyClassName, $fontFamilyName in $fontFamilies_map {
         .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
     }
     
@@ -15,17 +15,17 @@
 }
     //Generador de clases por cada tamaño de fuente
 @mixin fontCustomHeadingsSizesGeneratorMobile{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapMobile {
+    @each $headingsClassName, $fontCustomSizeValues in $fontSize_map_mobile {
         #{$headingsClassName}{font-size: $fontCustomSizeValues;}
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorTablet{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapTablet {
+    @each $headingsClassName, $fontCustomSizeValues in $fontSize_map_tablet {
         #{$headingsClassName}{font-size: $fontCustomSizeValues;}
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorDesktop{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSizesMapDesktop {
+    @each $headingsClassName, $fontCustomSizeValues in $fontSize_map_desktop {
         #{$headingsClassName}{font-size: $fontCustomSizeValues;}
     }
 }

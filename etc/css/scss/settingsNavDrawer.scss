@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav Drawer Settings | Etc [settingsNavDrawer.scss]
    ========================================================================== */
-@if $navDrawer == "on"{
+@if $navDrawer_act == "on"{
     @include navBT{
         .navMain{
             .navOpen{   
@@ -27,7 +27,7 @@
                 width: calc(#{$navDrawerWidth} - 5px);
                 max-width: $navDrawerMaxWidth;
                 background-color: $navBgColour_BT;
-                padding-top: calc(#{$logoHClickedFH} + 5px);
+                padding-top: calc(#{$logo_height_ClickedFH} + 5px);
                 padding-right: 5px;
                 padding-left: 5px;
                 padding-bottom: 30px;
@@ -52,7 +52,7 @@
                     > a,
                     > .topLevelItem{
                         color: $navFontColour_itemLevel0_BT;
-                        font-family: $navFontFamilyBT;
+                        font-family: $navFontFamily_BT;
                     }
                 }  
 
@@ -62,12 +62,12 @@
 
                     > a,
                     > .topLevelItem{
-                        font-family: $navCurrentFontFamilyBT;
+                        font-family: $navFontFamily_itemCurrent_BT;
                     }
                 }
             }
         
-            @if $navHasSubs == "on"{
+            @if $nav_hasSub_act == "on"{
                 .mainMenu{
                     .topLevelItem{
                         background-repeat: no-repeat;
@@ -76,11 +76,11 @@
                     
                     &.backMenu{
                         .topLevelItem{
-                            background-image: url('/nuevo/img/#{$navArrow_backMenuTLI}');
+                            background-image: url('/nuevo/img/#{$navArrow_backMenu_TLI}');
                             color: $navFontColour_backMenu_TLI;
 
                             &.open{
-                                background-image: url('/nuevo/img/#{$navArrow_backMenuTLI_openDR}'); 
+                                background-image: url('/nuevo/img/#{$navArrow_backMenu_TLI_openDR}'); 
                             }
                         } 
                     }
@@ -95,7 +95,7 @@
                     
                     a,
                     .topLevelItem{
-                        font-family: $navSubFontFamilyBT;
+                        font-family: $navFontFamily_itemSub_BT;
                     }
 
                     .current{
@@ -104,7 +104,7 @@
 
                         a,
                         .topLevelItem{
-                            font-family: $navSubCurrentFontFamilyBT;
+                            font-family: $navFontFamily_itemSubCurrent_BT;
                         } 
                     }
 
@@ -118,21 +118,21 @@
                 }  
             }
         
-            @if $navHasSubLevel1 == "on"{
+            @if $nav_hasSub_level1_act == "on"{
                 .hasSubLevel1{ 
                     a,
-                    .TLILevel1{
-                        color: $navFontColour_TLILevel1_BT;
+                    .TLI_level1{
+                        color: $navFontColour_TLI_level1_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrow_TLILevel1_openDR}');
+                            background-image: url('/nuevo/img/#{$navArrow_TLI_level1_openDR}');
                         }
                     }
                     
                     &.current{                        
                         a,
-                        .TLILevel1{
-                            color: $navFontColour_TLICurrentLevel1_BT;
+                        .TLI_level1{
+                            color: $navFontColour_TLICurrent_level1_BT;
                         }
                     }
                 }
@@ -150,31 +150,31 @@
                     }
 
                     > .current{  
-                        background-color: $navBgColour_itemCurrentLevel1_BT; 
-                        background-image: url('/nuevo/img/#{$navArrow_itemCurrentLevel1}');
+                        background-color: $navBgColour_itemCurrent_level1_BT; 
+                        background-image: url('/nuevo/img/#{$navArrow_itemCurrent_level1}');
                         
                         a{
-                            color: $navFontColour_itemCurrentLevel1_BT;
+                            color: $navFontColour_itemCurrent_level1_BT;
                         }
                     }
                 }
             }
         
-            @if $navHasSubLevel2 == "on"{
+            @if $nav_hasSub_level2_act == "on"{
                 .hasSubLevel2{ 
                     a,
-                    .TLILevel2{
+                    .TLI_level2{
                         color: $navFontColour_itemLevel2_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrow_TLILevel2_openDR}');
+                            background-image: url('/nuevo/img/#{$navArrow_TLI_level2_openDR}');
                         }
                     }
                     
                     &.current{                        
                         a,
-                        .TLILevel1{
-                            color: $navFontColour_TLICurrentLevel2_BT;
+                        .TLI_level1{
+                            color: $navFontColour_TLICurrent_level2_BT;
                         }
                     }
                 }
@@ -192,31 +192,31 @@
                     }
 
                     > .current{      
-                        background-color: $navBgColour_itemCurrentLevel2_BT; 
-                        background-image: url('/nuevo/img/#{$navArrow_itemCurrentLevel2}'); 
+                        background-color: $navBgColour_itemCurrent_level2_BT; 
+                        background-image: url('/nuevo/img/#{$navArrow_itemCurrent_level2}'); 
                         
                         a{
-                            color: $navFontColour_itemCurrentLevel2_BT;
+                            color: $navFontColour_itemCurrent_level2_BT;
                         }
                     }
                 }
             }
         
-            @if $navHasSubLevel3 == "on"{  
+            @if $nav_hasSub_level3_act == "on"{  
                 .hasSubLevel3{  
                     a,  
-                    .TLILevel3{
+                    .TLI_level3{
                         color: $navFontColour_itemLevel2_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrow_TLILevel3_openDR}');
+                            background-image: url('/nuevo/img/#{$navArrow_TLI_level3_openDR}');
                         }
                     }
                     
                     &.current{                        
                         a,
-                        .TLILevel1{
-                            color: $navFontColour_TLICurrentLevel3_BT;
+                        .TLI_level1{
+                            color: $navFontColour_TLICurrent_level3_BT;
                         }
                     }
                 }
@@ -234,11 +234,11 @@
                     }
 
                     > .current{      
-                        background-color: $navBgColour_itemCurrentLevel3_BT;
-                        background-image: url('/nuevo/img/#{$navArrow_itemCurrentLevel3}'); 
+                        background-color: $navBgColour_itemCurrent_level3_BT;
+                        background-image: url('/nuevo/img/#{$navArrow_itemCurrent_level3}'); 
                         
                         a{
-                            color: $navFontColour_itemCurrentLevel3_BT;
+                            color: $navFontColour_itemCurrent_level3_BT;
                         }
                     }
                 }

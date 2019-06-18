@@ -2,127 +2,127 @@
    Helpers Responsive Classes Activators | Custom [helpersActivators.scss]
    ========================================================================== */
 //All
-$stylesSpacingALL:                      on;
-$stylesPosSizingDisplayMaskCursorsALL:  on;
-$stylesFlexboxALL:                      off;
-$stylesListsFloatsALL:                  on;
+$helpers_spacing_act_ALL:                           on;
+$classes_pos_display_sizes_masks_cursors_act_ALL:   on;
+$classes_flexbox_act_ALL:                           off;
+$classes_lists_floats_act_ALL:                      on;
 
 //Mobile Only MO
-$containerMO:               off;
-$stylesSpacingMO:           off;
-$stylesPosSizingDisplayMO:  off;
-$stylesFlexboxMO:           off;
-$stylesListsFloatsMO:       off;
-$stylesTextMO:              off;
-$stylesBackgroundsBanMO:    off;
+$classes_container_act_MO:                          off;
+$helpers_spacing_act_MO:                            off;
+$classes_pos_display_sizes_masks_cursors_act_MO:    off;
+$classes_flexbox_act_MO:                            off;
+$classes_lists_floats_act_MO:                       off;
+$classes_text_act_MO:                               off;
+$classes_bg_bc_NO_act_MO:                           off;
 
 //After Mobile Landscape AML
-$containerAML:              off;
-$stylesSpacingAML:          off;
-$stylesPosSizingDisplayAML: off;
-$stylesFlexboxAML:          off;
-$stylesListsFloatsAML:      off;
-$stylesTextAML:             off;
-$stylesBackgroundsBanAML:   off;
+$classes_container_act_AML:                         off;
+$helpers_spacing_act_AML:                           off;
+$classes_pos_display_sizes_masks_cursors_act_AML:   off;
+$classes_flexbox_act_AML:                           off;
+$classes_lists_floats_act_AML:                      off;
+$classes_text_act_AML:                              off;
+$classes_bg_bc_NO_act_AML:                          off;
 
 //Mobile Landscape Only MLO
-$containerMLO:              off;
-$stylesSpacingMLO:          off;
-$stylesPosSizingDisplayMLO: off;
-$stylesFlexboxMLO:          off;
-$stylesListsFloatsMLO:      off;
-$stylesTextMLO:             off;
-$stylesBackgroundsBanMLO:   off;
+$classes_container_act_MLO:                         off;
+$helpers_spacing_act_MLO:                           off;
+$classes_pos_display_sizes_masks_cursors_act_MLO:   off;
+$classes_flexbox_act_MLO:                           off;
+$classes_lists_floats_act_MLO:                      off;
+$classes_text_act_MLO:                              off;
+$classes_bg_bc_NO_act_MLO:                          off;
 
 //Before Tablet BT
-$containerBT:               off;
-$stylesSpacingBT:           off;
-$stylesPosSizingDisplayBT:  on;
-$stylesFlexboxBT:           off;
-$stylesListsFloatsBT:       on;
-$stylesTextBT:              off;
-$stylesBackgroundsBanBT:    off;
+$classes_container_act_BT:                          off;
+$helpers_spacing_act_BT:                            off;
+$classes_pos_display_sizes_masks_cursors_act_BT:    on;
+$classes_flexbox_act_BT:                            off;
+$classes_lists_floats_act_BT:                       on;
+$classes_text_act_BT:                               off;
+$classes_bg_bc_NO_act_BT:                           off;
 
 //Before Tablet Landscape BTL
-$containerBTL:              off;
-$stylesSpacingBTL:          off;
-$stylesPosSizingDisplayBTL: off;
-$stylesFlexboxBTL:          off;
-$stylesListsFloatsBTL:      off;
-$stylesTextBTL:             off;
-$stylesBackgroundsBanBTL:   off;
+$classes_container_act_BTL:                         off;
+$helpers_spacing_act_BTL:                           off;
+$classes_pos_display_sizes_masks_cursors_act_BTL:   off;
+$classes_flexbox_act_BTL:                           off;
+$classes_lists_floats_act_BTL:                      off;
+$classes_text_act_BTL:                              off;
+$classes_bg_bc_NO_act_BTL:                          off;
 
 //Tablet Only TO
-$containerTO:               off;
-$stylesSpacingTO:           off;
-$stylesPosSizingDisplayTO:  off;
-$stylesFlexboxTO:           off;
-$stylesListsFloatsTO:       off;
-$stylesTextTO:              off;
-$stylesBackgroundsBanTO:    off;
+$classes_container_act_TO:                          off;
+$helpers_spacing_act_TO:                            off;
+$classes_pos_display_sizes_masks_cursors_act_TO:    off;
+$classes_flexbox_act_TO:                            off;
+$classes_lists_floats_act_TO:                       off;
+$classes_text_act_TO:                               off;
+$classes_bg_bc_NO_act_TO:                           off;
 
 //After Tablet AT
-$containerAT:               off;
-$stylesSpacingAT:           off;
-$stylesPosSizingDisplayAT:  on;
-$stylesFlexboxAT:           off;
-$stylesListsFloatsAT:       on;
-$stylesTextAT:              off;
-$stylesBackgroundsBanAT:    off;
+$classes_container_act_AT:                          off;
+$helpers_spacing_act_AT:                            off;
+$classes_pos_display_sizes_masks_cursors_act_AT:    on;
+$classes_flexbox_act_AT:                            off;
+$classes_lists_floats_act_AT:                       on;
+$classes_text_act_AT:                               off;
+$classes_bg_bc_NO_act_AT:                           off;
 
 //After Tablet Landscape ATL
-$containerATL:              off;
-$stylesSpacingATL:          off;
-$stylesPosSizingDisplayATL: off;
-$stylesFlexboxATL:          off;
-$stylesListsFloatsATL:      off;
-$stylesTextATL:             off;
-$stylesBackgroundsBanATL:   off;
+$classes_container_act_ATL:                         off;
+$helpers_spacing_act_ATL:                           off;
+$classes_pos_display_sizes_masks_cursors_act_ATL:   off;
+$classes_flexbox_act_ATL:                           off;
+$classes_lists_floats_act_ATL:                      off;
+$classes_text_act_ATL:                              off;
+$classes_bg_bc_NO_act_ATL:                          off;
 
 //Tablet Landscape Only TLO
-$containerTLO:              off;
-$stylesSpacingTLO:          off;
-$stylesPosSizingDisplayTLO: off;
-$stylesFlexboxTLO:          off;
-$stylesListsFloatsTLO:      off;
-$stylesTextTLO:             off;
-$stylesBackgroundsBanTLO:   off;
+$classes_container_act_TLO:                         off;
+$helpers_spacing_act_TLO:                           off;
+$classes_pos_display_sizes_masks_cursors_act_TLO:   off;
+$classes_flexbox_act_TLO:                           off;
+$classes_lists_floats_act_TLO:                      off;
+$classes_text_act_TLO:                              off;
+$classes_bg_bc_NO_act_TLO:                          off;
 
 //Tablet Landscape Only TTLO
-$containerTTLO:                 off;
-$stylesSpacingTTLO:             off;
-$stylesPosSizingDisplayTTLO:    off;
-$stylesFlexboxTTLO:             off;
-$stylesListsFloatsTTLO:         off;
-$stylesTextTTLO:                off;
-$stylesBackgroundsBanTTLO:      off;
+$classes_container_act_TTLO:                        off;
+$helpers_spacing_act_TTLO:                          off;
+$classes_pos_display_sizes_masks_cursors_act_TTLO:  off;
+$classes_flexbox_act_TTLO:                          off;
+$classes_lists_floats_act_TTLO:                     off;
+$classes_text_act_TTLO:                             off;
+$classes_bg_bc_NO_act_TTLO:                         off;
 
 //Before Desktop BD
-$containerBD:                   off;
-$stylesSpacingBD:               off;
-$stylesPosSizingDisplayBD:      off;
-$stylesFlexboxBD:               off;
-$stylesListsFloatsBD:           off;
-$stylesTextBD:                  off;
-$stylesBackgroundsBanBD:        off;
+$classes_container_act_BD:                          off;
+$helpers_spacing_act_BD:                            off;
+$classes_pos_display_sizes_masks_cursors_act_BD:    off;
+$classes_flexbox_act_BD:                            off;
+$classes_lists_floats_act_BD:                       off;
+$classes_text_act_BD:                               off;
+$classes_bg_bc_NO_act_BD:                           off;
 
 //After Laptop AL
-$containerAL:                   off;
-$stylesSpacingAL:               off;
-$stylesPosSizingDisplayAL:      off;
-$stylesFlexboxAL:               off;
-$stylesListsFloatsAL:           off;
-$stylesTextAL:                  off;
-$stylesBackgroundsBanAL:        off;
+$classes_container_act_AL:                          off;
+$helpers_spacing_act_AL:                            off;
+$classes_pos_display_sizes_masks_cursors_act_AL:    off;
+$classes_flexbox_act_AL:                            off;
+$classes_lists_floats_act_AL:                       off;
+$classes_text_act_AL:                               off;
+$classes_bg_bc_NO_act_AL:                           off;
 
 //After Desktop AD
-$containerAD:               off;
-$stylesSpacingAD:           off;
-$stylesPosSizingDisplayAD:  off;
-$stylesFlexboxAD:           off;
-$stylesListsFloatsAD:       off;
-$stylesTextAD:              off;
-$stylesBackgroundsBanAD:    off;
+$classes_container_act_AD:                          off;
+$helpers_spacing_act_AD:                            off;
+$classes_pos_display_sizes_masks_cursors_act_AD:    off;
+$classes_flexbox_act_AD:                            off;
+$classes_lists_floats_act_AD:                       off;
+$classes_text_act_AD:                               off;
+$classes_bg_bc_NO_act_AD:                           off;
 
 //After Desktop Large ADL
-$containerADL: off;
+$classes_container_act_ADL:                         off;

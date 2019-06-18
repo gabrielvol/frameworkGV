@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav Drawer Styles | Custom [stylesNavDrawer.scss]
    ========================================================================== */
-@if $navDrawer == "on"{
+@if $navDrawer_act == "on"{
     @include navBT{
         .navMain{
             @include posTR(10px, 10px);
@@ -11,7 +11,7 @@
             }
 
             .navOpen{
-                @if $hamburgerOnly == "on"{
+                @if $hamburger_only == "on"{
                     @include squareSize(45px);
                     background-position: center;
                     padding: $zero;
@@ -55,8 +55,8 @@
                 }
 
                 > .current{
-                    background-color: $navBgColour_itemCurrentLevel0_BT;
-                    background-image: url('/nuevor/img/#{$navArrow_itemCurrentLevel0}');
+                    background-color: $navBgColour_itemCurrent_level0_BT;
+                    background-image: url('/nuevor/img/#{$navArrow_itemCurrent_level0}');
                 }   
 
                 .backMenu{    
@@ -70,7 +70,7 @@
                 } 
             }
         
-            @if $navHasSubLevel1 == "on"{            
+            @if $nav_hasSub_level1_act == "on"{            
                 .subMenuLevel1{
                     > li{
                         & + li{
@@ -80,7 +80,7 @@
                 }
             }
             
-            @if $navHasSubLevel2 == "on"{           
+            @if $nav_hasSub_level2_act == "on"{           
                 .subMenuLevel2{
                     > li{
                         & + li{
@@ -90,7 +90,7 @@
                 }
             }
             
-            @if $navHasSubLevel3 == "on"{          
+            @if $nav_hasSub_level3_act == "on"{          
                 .subMenuLevel3{
                     > li{
                         & + li{

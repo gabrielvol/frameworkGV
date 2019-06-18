@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav List Styles | Custom [stylesNavList.scss]
    ========================================================================== */
-@if $navList == "on"{
+@if $navList_act == "on"{
     @include navBT{
         .navMain{
             ul{
@@ -9,7 +9,7 @@
                 z-index: $zIndexNavUlList;
                 position: relative;
                 top: 50px;
-                width: $navListWidthBT; 
+                width: $navList_ul_width_BT; 
                 height: $auto;
                 background-color: $bgWhite;
                 box-shadow: 0 0 4px $black;

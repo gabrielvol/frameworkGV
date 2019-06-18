@@ -3,16 +3,16 @@
    ========================================================================== */
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
-$fontFamiliesSiteFontsMap:(    
+$fontFamilies_map:(    
     arial:  Arial,
     roboto: Roboto,
     //timesNewRoman: 'Times New Roman',
 );
 
 // Chequear Arial, Roboto o Times como Main Font Family
-$arial:     map-get($fontFamiliesSiteFontsMap, arial);
-$roboto:    map-get($fontFamiliesSiteFontsMap, roboto);
-//$timesNewRoman: map-get($fontFamiliesSiteFontsMap, timesNewRoman);
+$arial:     map-get($fontFamilies_map, arial);
+$roboto:    map-get($fontFamilies_map, roboto);
+//$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
 
 //$openSansL:   map-get($openSansMap, openSansL);
 //$openSans:    map-get($openSansMap, openSans);
@@ -21,64 +21,64 @@ $roboto:    map-get($fontFamiliesSiteFontsMap, roboto);
 //$openSansBI:  map-get($openSansMap, openSansBI);
 
     //Creamos la variable de la fuente principal del sitio
-$mainFontFamily:        $arial;
-$mainFontFamilyBold:    $mainFontFamily;
+$fontFamily_main_global:        $arial;
+$fontFamily_bold_global:    $fontFamily_main_global;
 
 //Main font Stack    
-$mainFontStack:(
-    $mainFontFamily,
+$fontStack_map:(
+    $fontFamily_main_global,
     //$arial, // Chequear Arial, Roboto o Times como Main Font Family
     $roboto,
     //$timesNewRoman,
-    $fontFamiliesListSans
-    //$fontFamiliesListSerif
-    //$fontFamiliesListMono
+    $fontFamilies_list_sans
+    //$fontFamilies_list_serif
+    //$fontFamilies_list_monospaced
 );
 
-$mainFontWeight: 400;
-$mainLineHeight: 1.4;
+$fontWeight_global: 400;
+$lineHeight_global: 1.4;
 
-$mainFontSize:              1rem;
-$mainFontSizeParagraphBT:   0.9rem;
-$mainFontSizeParagraphAT:   1rem;
-$mainFontSizeParagraphATL:  $mainFontSizeParagraphAT;
+$fontSize_global:              1rem;
+$fontSize_paragraph_BT:   0.9rem;
+$fontSize_paragraph_AT:   1rem;
+$fontSize_paragraph_ATL:  $fontSize_paragraph_AT;
 
-$formFieldFontSizeBT:       0.9rem;
-$formFieldFontSizeAT:       0.9rem;
-$formFieldFontSizeATL:      $formFieldFontSizeAT;
+$formInput_fontSize_BT:       0.9rem;
+$formInput_fontSize_AT:       0.9rem;
+$formInput_fontSize_ATL:      $formInput_fontSize_AT;
 
-$headingMargin:             0 0 0.8em;
-$textMargin:                0;
-$textMarginSibling:         0.8em 0 0;
-$headingMarginSibling:      1.2em 0 0;
+$headings_marginTRBL_global:        0 0 0.8em;
+$headings_marginTRBL_sibling:       1.2em 0 0;
+$text_marginTRBL_global:            0;
+$text_marginTRBL_sibling:           0.8em 0 0;
 
 //Heading Sizes
-$fontSizesMapMobile:(
-    $h1List: 1.6rem,
-    $h2List: 1.5rem,
-    $h3List: 1.4rem,
-    $h4List: 1.3rem,
-    $h5List: 1.3rem,
-    $h6List: 1.3rem
+$fontSize_map_mobile:(
+    $h1_list: 1.6rem,
+    $h2_list: 1.5rem,
+    $h3_list: 1.4rem,
+    $h4_list: 1.3rem,
+    $h5_list: 1.3rem,
+    $h6_list: 1.3rem
 );
-$fontSizesMapTablet:(
-    $h1List: 1.6rem,
-    $h2List: 1.5rem,
-    $h3List: 1.4rem,
-    $h4List: 1.3rem,
-    $h5List: 1.3rem,
-    $h6List: 1.3rem
+$fontSize_map_tablet:(
+    $h1_list: 1.6rem,
+    $h2_list: 1.5rem,
+    $h3_list: 1.4rem,
+    $h4_list: 1.3rem,
+    $h5_list: 1.3rem,
+    $h6_list: 1.3rem
 );
-$fontSizesMapDesktop:(
-    $h1List: 2.4rem,
-    $h2List: 2.2rem,
-    $h3List: 2rem,
-    $h4List: 1.8rem,
-    $h5List: 1.6rem,
-    $h6List: 1.4rem
+$fontSize_map_desktop:(
+    $h1_list: 2.4rem,
+    $h2_list: 2.2rem,
+    $h3_list: 2rem,
+    $h4_list: 1.8rem,
+    $h5_list: 1.6rem,
+    $h6_list: 1.4rem
 );
 
 // Useful Text Format
-$fontSizeReset:     1rem;
-$fontSizeResetEM:   1em;
-$lineHeightReset:   1em;
+$fontSize_reset:     1rem;
+$fontSize_reset_em:   1em;
+$lineHeight_reset:   1em;

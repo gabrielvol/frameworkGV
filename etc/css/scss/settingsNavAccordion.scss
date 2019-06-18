@@ -1,10 +1,10 @@
 /* =============================================================================
    Nav Accordion Settings | Etc [settingsNavAccordion.scss]
    ========================================================================== */
-@if $navAcc == "on"{
+@if $navAcc_act == "on"{
     .navMain{
         @include navBT{
-            top: calc(#{$headerHBTAcc} / 2);
+            top: calc(#{$header_height_navAcc_BT} / 2);
             right: 0;
             left: 0;
             
@@ -29,7 +29,7 @@
                 box-sizing: border-box;
                 position: fixed;
                 z-index: $zIndexNavUlAccordion;
-                top: $headerHBTAcc;
+                top: $header_height_navAcc_BT;
                 right: 0;
                 left: 0;
                 width: 100%;
@@ -48,7 +48,7 @@
                 &.open{
                     display: $block;
                     height: auto;
-                    max-height: calc(100vh - #{$headerHBTAcc});
+                    max-height: calc(100vh - #{$header_height_navAcc_BT});
                 }
             }
         }

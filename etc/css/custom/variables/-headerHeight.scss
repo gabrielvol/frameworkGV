@@ -3,21 +3,21 @@
    ========================================================================== */
 // imported in _headerActivators.scss
 
-$headerPaddingTopBT:    20px;
-$headerPaddingBottomBT: 15px;
-$headerHBTAcc:          calc(#{$headerPaddingTopBT} + #{$headerPaddingBottomBT} + #{$logoHBT});
-$headerHBT:             auto;
+$header_paddT_BT:           20px;
+$header_paddB_BT:           15px;
+$header_height_navAcc_BT:   calc(#{$header_paddT_BT} + #{$header_paddB_BT} + #{$logo_height_BT});
+$header_height_BT:          auto;
 
-$headerHAT:             90px;
-$headerHATL:            120px;
+$header_height_AT:          90px;
+$header_height_ATL:         120px;
 
 /* -------------------------------------
     Full height index                 */
 
-    $headerHMO:     98px;
-    $headerHAML:    60px;
-    $headerHAT:     140px;
-    $headerHATL:    85px;    
+    $header_height_MO:     98px;
+    $header_height_AML:    60px;
+    $header_height_AT:     140px;
+    $header_height_ATL:    85px;    
     
 /*  Full height index
     --------------------------------- */

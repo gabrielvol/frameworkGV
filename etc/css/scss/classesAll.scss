@@ -28,7 +28,7 @@
 * html .clearfix{height: 1%}
 .clearfix{display: block}
 
-@if $stylesPosSizingDisplayMaskCursorsALL == "on"{
+@if $classes_pos_display_sizes_masks_cursors_act_ALL == "on"{
     //Positioning
     .pRel{position: relative}
     .pAbs{position: absolute}
@@ -67,7 +67,7 @@
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-    .visuallyhidden {
+    .visuallyHidden {
         border: 0;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -79,7 +79,7 @@
         white-space: nowrap; /* 1 */
 
 /*
- * Extends the .visuallyhidden class to allow the element
+ * Extends the .visuallyHidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
@@ -116,7 +116,7 @@
     .cursorNone{cursor: none}
 }
 
-@if $stylesListsFloatsALL == "on"{
+@if $classes_lists_floats_act_ALL == "on"{
     //Lists and floats
     .unstyled, .horizontal, .hyphenated,
     %unstyled{list-style: $none}
@@ -156,7 +156,7 @@
 /* =============================================================================
    Spacing Helpers ALL | Etc [classesAll.scss]
    ========================================================================== */
-@if $stylesSpacingALL == "on"{
+@if $helpers_spacing_act_ALL == "on"{
     //Spacing Helpers
     @include spacingHelpersClassesGenerator;
     .mra,.mha{margin-right: $auto}
@@ -166,7 +166,7 @@
 /* =============================================================================
    Flexbox Classes ALL | Etc [classesAll.scss]
    ========================================================================== */
-@if $stylesFlexboxALL == "on"{
+@if $classes_flexbox_act_ALL == "on"{
     //Flexbox
     .displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
         display: flex;

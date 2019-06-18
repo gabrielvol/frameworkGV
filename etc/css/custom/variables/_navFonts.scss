@@ -1,24 +1,24 @@
 /* =============================================================================
    Nav Fonts Variables | Custom [navFonts.scss]
    ========================================================================== */
-$navFontFamilyBT:            $mainFontFamily;
-$navCurrentFontFamilyBT:     $navFontFamilyBT;
+$navFontFamily_BT:            $fontFamily_main_global;
+$navFontFamily_itemCurrent_BT:     $navFontFamily_BT;
 
-$navSubFontFamilyBT:         $navFontFamilyBT;
-$navSubCurrentFontFamilyBT:  $navSubFontFamilyBT;
-
-    
-$navFontFamilyAT:            $mainFontFamily;
-$navCurrentFontFamilyAT:     $navFontFamilyAT;
-
-$navSubFontFamilyAT:         $navFontFamilyAT;
-$navSubCurrentFontFamilyAT:  $navSubFontFamilyAT;
+$navFontFamily_itemSub_BT:         $navFontFamily_BT;
+$navFontFamily_itemSubCurrent_BT:  $navFontFamily_itemSub_BT;
 
     
-$navFontFamilyATL:           $navFontFamilyAT;
-$navCurrentFontFamilyATL:    $navFontFamilyATL;
+$navFontFamily_AT:            $fontFamily_main_global;
+$navFontFamily_itemCurrent_AT:     $navFontFamily_AT;
 
-$navSubFontFamilyATL:        $navSubFontFamilyAT;
-$navSubCurrentFontFamilyATL: $navSubFontFamilyATL;
+$navFontFamily_itemSub_AT:         $navFontFamily_AT;
+$navFontFamily_itemSubCurrent_AT:  $navFontFamily_itemSub_AT;
+
+    
+$navFontFamily_ATL:           $navFontFamily_AT;
+$navFontFamily_itemCurrent_ATL:    $navFontFamily_ATL;
+
+$navFontFamily_itemSub_ATL:        $navFontFamily_itemSub_AT;
+$navFontFamily_itemSubCurrent_ATL: $navFontFamily_itemSub_ATL;
  
-$hamburgerFontFamily:        $arial;
+$navFontFamily_hamburger:        $arial;

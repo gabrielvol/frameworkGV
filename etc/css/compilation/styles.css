@@ -419,9 +419,9 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, inp
 
 /*
 input::input-placeholder, textarea::input-placeholder{
-    color: $formPlaceholderFontColour}
+    color: $formPlaceholder_fontColour}
 input:focus::input-placeholder, textarea:focus::input-placeholder{
-    color: $mainFontColour}
+    color: $fontColour_main_global}
 */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, dfn a, button a, blockquote a, dfn a, button a, blockquote a {
   font-family: inherit;
@@ -909,7 +909,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-.visuallyhidden {
+.visuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -921,11 +921,11 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   white-space: nowrap;
   /* 1 */
   /*
- * Extends the .visuallyhidden class to allow the element
+ * Extends the .visuallyHidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */ }
-  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  .visuallyHidden.focusable:active, .visuallyHidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -1134,7 +1134,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxBT {
     box-sizing: border-box; }
-  .visuallyhiddenBT {
+  .visuallyHiddenBT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1145,7 +1145,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visuallyhiddenBT.focusable:active, .visuallyhiddenBT.focusable:focus {
+    .visuallyHiddenBT.focusable:active, .visuallyHiddenBT.focusable:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1208,7 +1208,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxAT {
     box-sizing: border-box; }
-  .visuallyhiddenAT {
+  .visuallyHiddenAT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1219,7 +1219,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visuallyhiddenAT.focusable:active, .visuallyhiddenAT.focusable:focus {
+    .visuallyHiddenAT.focusable:active, .visuallyHiddenAT.focusable:focus {
       clip: auto;
       height: auto;
       margin: 0;

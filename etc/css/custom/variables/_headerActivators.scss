@@ -3,16 +3,16 @@
    ========================================================================== */
 
 // Menu y logo 
-    $floatedLogoNav: on;
+    $logoNav_floated_act: on;
     @import "-logo"; 
     
     
 // Header 
-    $headerFixed: on;
+    $header_fixed_act: on;
     @import "-headerHeight";    
     
-    $fullHeightIndex: off;
+    $index_fullHeight_act: off;
     
     
 // Language Flags
-    $circleFlags: off;
+    $language_flags_circled_act: off;

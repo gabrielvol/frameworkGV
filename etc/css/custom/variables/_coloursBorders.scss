@@ -3,7 +3,7 @@
    ========================================================================== */
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio.
-$borderColoursMap:(
+$borderColours_map:(
     white:     $white,
     black:     $black,
     error:     $errorColour,
@@ -17,20 +17,20 @@ $borderColoursMap:(
     greyXD:    $greyXD
 );
 
-$bcWhite:     map-get($borderColoursMap, white);
-$bcBlack:     map-get($borderColoursMap, black);
-$bcError:     map-get($borderColoursMap, error);
-//$bcRedColour: map-get($borderColoursMap, redColour);
-//$bcGreen:     map-get($borderColoursMap, green);
-$bcGreyXXL:   map-get($borderColoursMap, greyXXL);
-$bcGreyXL:    map-get($borderColoursMap, greyXL);
-$bcGreyL:     map-get($borderColoursMap, greyL);
-$bcGrey:      map-get($borderColoursMap, grey);
-$bcGreyD:     map-get($borderColoursMap, greyD);
-$bcGreyXD:    map-get($borderColoursMap, greyXD);
+$bcWhite:     map-get($borderColours_map, white);
+$bcBlack:     map-get($borderColours_map, black);
+$bcError:     map-get($borderColours_map, error);
+//$bcRedColour: map-get($borderColours_map, redColour);
+//$bcGreen:     map-get($borderColours_map, green);
+$bcGreyXXL:   map-get($borderColours_map, greyXXL);
+$bcGreyXL:    map-get($borderColours_map, greyXL);
+$bcGreyL:     map-get($borderColours_map, greyL);
+$bcGrey:      map-get($borderColours_map, grey);
+$bcGreyD:     map-get($borderColours_map, greyD);
+$bcGreyXD:    map-get($borderColours_map, greyXD);
 
-$mainBcColour: $bcGrey;
-$mainBcColourHover: darken($mainBcColour, 15%);
+$bcColour_main_global: $bcGrey;
+$bcColour_main_global_hover: darken($bcColour_main_global, 15%);
 
-$secondaryBcColour: $bcGreyD;
-$secondaryBcColourHover: darken($mainBcColour, 15%);
+$bcColour_secondary_global: $bcGreyD;
+$bcColour_secondary_global_hover: darken($bcColour_main_global, 15%);

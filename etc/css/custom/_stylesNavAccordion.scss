@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav Accordion Styles | Custom [stylesNavAccordion.scss]
    ========================================================================== */
-@if $navAcc == "on"{
+@if $navAcc_act == "on"{
     @include navBT{
         .navMain{
             .hamb{
@@ -9,7 +9,7 @@
             }
 
             .navOpen{
-                @if $hamburgerOnly == "on"{
+                @if $hamburger_only == "on"{
                     @include squareSize($navAccHambHeight);
                     background-position: center;
                     padding: $zero;
