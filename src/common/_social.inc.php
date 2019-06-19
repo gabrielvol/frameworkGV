@@ -1,6 +1,6 @@
 <ul class="social horizontal clearfix">
     <li class="soc_fb">
-        <a href="<?php echo $urlFB ?>" class="fb displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $social_facebook_url ?>" class="fb displayBlock hoverGrowL indentedText">
             <?php echo _("Seguinos en Facebook"); ?>
             <img src="/nuevo/img/soc_fb.svg" class="displayBlock" alt="<?php echo _('Ir a nuestro perfil en Facebook'); ?>.">
         </a>
@@ -24,7 +24,7 @@
         </a>
     </li>
     <li class="soc_ig">
-        <a href="<?php echo $urlIG ?>" class="ig displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $social_instagram_url ?>" class="ig displayBlock hoverGrowL indentedText">
             <?php echo _("Seguinos en Instagram"); ?>
             <img src="/nuevo/img/soc_ig.svg" class="displayBlock" alt="<?php echo _('Ir a nuestro perfil en Instagram'); ?>.">
         </a>
@@ -42,7 +42,7 @@
         </a>
     </li>
     <li class="soc_li">
-        <a href="<?php echo $urlLI ?>" class="li displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $social_linkedin_url ?>" class="li displayBlock hoverGrowL indentedText">
             <?php echo _("Mir&aacute; nuestro perfil en LinkedIn"); ?>
             <img src="/nuevo/img/soc_li.svg" class="displayBlock" alt="<?php echo _('Ir a nuestro perfil en LinkedIn'); ?>.">
         </a>
@@ -60,23 +60,23 @@
         </a>
     </li>
     <li class="soc_wa">
-        <a href="<?php echo $urlWA ?>" class="wa conTel displayBlock">11 0000 2222</a> 
+        <a href="<?php echo $social_whatsapp_chatOpen ?>" class="wa conTel displayBlock">11 0000 2222</a> 
         
-        <a href="<?php echo $urlWA ?>" class="wa displayBlock hoverGrowL indentedText"><?php echo _('Nuestro contacto en WhatsApp'); ?>.</a> 
+        <a href="<?php echo $social_whatsapp_chatOpen ?>" class="wa displayBlock hoverGrowL indentedText"><?php echo _('Nuestro contacto en WhatsApp'); ?>.</a> 
         
-        <a href="<?php echo $urlWA ?>" class="wa displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $social_whatsapp_chatOpen ?>" class="wa displayBlock hoverGrowL indentedText">
             <?php echo _("Nuestro contacto en WhatsApp"); ?>
             <img src="/nuevo/img/soc_wa.svg" class="displayBlock" alt="<?php echo _('Nuestro contacto en WhatsApp'); ?>.">
         </a>
     </li>
     <li class="soc_em">
-        <a href="<?php echo $urlTO ?>" class="em displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $social_mailto_addressMain ?>" class="em displayBlock hoverGrowL indentedText">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>
             <img src="/nuevo/img/soc_em.svg" class="displayBlock" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>
     </li>
     <li class="soc_em">
-        <a href="<?php echo $urlTO ?>" class="displayBlock"><?php echo $urlEM ?></a>
+        <a href="<?php echo $social_mailto_addressMain ?>" class="displayBlock"><?php echo $social_email_addressMain ?></a>
     </li>
     <li class="soc_ta">
         <a href="/nuevo/" class="ta displayBlock hoverGrowL indentedText">

@@ -10,7 +10,7 @@
     <?php include('social.inc.php'); ?>
     
     <p class="gooAddress">
-        <a href="<?php echo $urlGM ?>" target="_blank"><?php echo _("Direccion"); ?></a>
+        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
     <p class="footerCopy">&copy; <?php echo $dateThisYear." - ".$company_name_full ?></p>
