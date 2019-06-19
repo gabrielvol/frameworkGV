@@ -26,12 +26,12 @@
 <link rel="license" href="/nuevo/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url ?>/?l=es_AR" hreflang="es">
-<link rel="alternate" href="<?php echo $url ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url ?>/?l=en_GB" hreflang="en">
-<link rel="alternate" href="<?php echo $url ?>/?l=de_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url ?>/?l=fr_FR" hreflang="fr">
-<link rel="alternate" href="<?php echo $url ?>/?l=pt_BR" hreflang="pt">
+<link rel="alternate" href="<?php echo $url_global; ?>/?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global; ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url_global; ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url_global; ?>/?l=fr_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url_global; ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Información personal -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
@@ -46,7 +46,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="<?php echo $ogTitle; ?>">
-<meta property="og:url" content="<?php echo $url; ?>">
+<meta property="og:url" content="<?php echo $url_global; ?>">
 <meta property="og:description" content="<?php echo $ogDesc; ?>">
 <!--<meta property="og:image:secure_url" content="<?php echo $ogURL; ?>/og_img.jpg">-->
 <meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
@@ -55,7 +55,7 @@
 <meta property="og:locale" content="es_AR">
 
 <meta property="og:title" content="<?php if($idioma == 'en_GB'){ echo $ogTitleGB; } else if($idioma == 'de_DE'){ echo $ogTitleDE; } else { echo $ogTitle; } ?>">
-<meta property="og:url" content="<?php echo $url; ?>">
+<meta property="og:url" content="<?php echo $url_global; ?>">
 <meta property="og:description" content="<?php if($idioma == 'en_GB'){ echo $ogDescGB; } else if($idioma == 'de_DE'){ echo $ogDescDE; } else { echo $ogDesc; } ?>">
 <meta property="og:image:secure_url" content="<?php echo $ogURL; ?>/og_img.jpg">
 <meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
@@ -85,11 +85,11 @@
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/nuevo/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="<?php echo $url; ?>/nuevo/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="<?php echo $url; ?>/nuevo/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="<?php echo $url; ?>/nuevo/manifest.json">
-<link rel="mask-icon" href="<?php echo $url; ?>/nuevo/safari-pinned-tab.svg" color="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_global; ?>/nuevo/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php echo $url_global; ?>/nuevo/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php echo $url_global; ?>/nuevo/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php echo $url_global; ?>/nuevo/manifest.json">
+<link rel="mask-icon" href="<?php echo $url_global; ?>/nuevo/safari-pinned-tab.svg" color="#000">
 <meta name="msapplication-TileColor" content="#000">
 <meta name="theme-color" content="#ffffff">
 

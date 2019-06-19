@@ -1,6 +1,6 @@
 <?php
     // URLS
-    $url = "http://wwwsitecomar";
+    $url_global = "http://wwwsitecomar";
     $urlActual = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     
     // Misc

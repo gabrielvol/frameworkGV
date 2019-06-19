@@ -20,7 +20,7 @@
     $ogDesc     = "Descr.";
   //$ogDescGB   = "Descr.";
     
-    $ogURL      = $url;  
+    $ogURL      = $url_global;  
     $ogSiteName = $ogTitle;
 //Open Graph End
     
