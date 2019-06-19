@@ -11,10 +11,12 @@
     }
 }    
 
-.dotted, .square{
+.bulleted_dot,
+.bulleted_square{
     li{        
-        $bulletSize: 7px;
+        $bulletSize: 7px;        
         
+        list-style-type: none;
         box-sizing: border-box;
         position: relative;
         padding-left: 15px;
@@ -33,7 +35,7 @@
     }
 }    
 
-.dotted{
+.bulleted_dot{
     li{
         &::before{
             background-image: url('/nuevo/img/bullet_circle.svg');
@@ -41,7 +43,7 @@
     }
 }
 
-.square{
+.bulleted_square{
     li{
         &::before{
             background-image: url('/nuevo/img/bullet_square.svg');

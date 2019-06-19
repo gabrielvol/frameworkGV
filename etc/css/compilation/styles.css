@@ -1501,11 +1501,11 @@ article, article::before, article::after, details, details::before, details::aft
   .hyphenated li::before {
     content: "- "; }
 
-.dotted li, .square li {
+.bulleted_dot li, .bulleted_square li {
   box-sizing: border-box;
   position: relative;
   padding-left: 15px; }
-  .dotted li::before, .square li::before {
+  .bulleted_dot li::before, .bulleted_square li::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -1516,10 +1516,10 @@ article, article::before, article::after, details, details::before, details::aft
     background-position: left top;
     background-size: 7px; }
 
-.dotted li::before {
+.bulleted_dot li::before {
   background-image: url("/nuevo/img/bullet_circle.svg"); }
 
-.square li::before {
+.bulleted_square li::before {
   background-image: url("/nuevo/img/bullet_square.svg"); }
 
 .fileList li {
