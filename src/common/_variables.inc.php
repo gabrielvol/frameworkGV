@@ -9,6 +9,11 @@
     // Company
     $companyNameFull    = "CompanyNameFull";
     $companyNameShort   = "CompanyNameShort";
+        // Tels
+    $company_tel_main              = "1234-5678";
+    $company_tel_main_countryCode  = "+54 911 " . $telN_main;
+    $company_tel_sec               = "1234- 5678";
+    $company_tel_sec_countryCode   = "+54 911 " . $telN_sec;
     
     // Social
     $urlTW      = "https://www.twitter.com/";
