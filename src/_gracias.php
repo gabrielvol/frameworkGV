@@ -4,8 +4,8 @@
     $int = 1;
     $gracias = 1;
     
-    $title      = "Gracias | ".$companyNameFull;
-  //$mdescGB    = "Thank You | ".$companyNameFull;;
+    $title      = "Gracias | ".$company_name_full;
+  //$mdescGB    = "Thank You | ".$company_name_full;;
     
 //Open Graph Start
                 // Max 35 char

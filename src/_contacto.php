@@ -4,8 +4,8 @@
     $int = 1;
     $hasMandatoryMsg = 1;
     
-    $title      = "Contacto | ".$companyNameFull;
-  //$titleGB    = "Contact | ".$companyNameFull;
+    $title      = "Contacto | ".$company_name_full;
+  //$titleGB    = "Contact | ".$company_name_full;
     
     $mdesc      = "";
   //$mdescGB    = "";

@@ -7,12 +7,12 @@
     $dateThisYear = (int)date('Y');
     
     // Company
-    $companyNameFull    = "CompanyNameFull";
-    $companyNameShort   = "CompanyNameShort";
+    $company_name_full    = "CompanyNameFull";
+    $company_name_short   = "CompanyNameShort";
         // Tels
-    $company_tel_main              = "1234-5678";
+    $company_tel_main              = "12345678";
     $company_tel_main_countryCode  = "+54 911 " . $telN_main;
-    $company_tel_sec               = "1234- 5678";
+    $company_tel_sec               = "12345678";
     $company_tel_sec_countryCode   = "+54 911 " . $telN_sec;
     
     // Social

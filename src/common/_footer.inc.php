@@ -1,5 +1,5 @@
 <footer id="footer" class="">        
-    <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $companyNameFull ?>.">
+    <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
     
     <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
         <ul class="mainMenu unstyled clearfix">
@@ -13,19 +13,19 @@
         <a href="<?php echo $urlGM ?>" target="_blank"><?php echo _("Direccion"); ?></a>
     </p>
     
-    <p class="footerCopy">&copy; <?php echo $dateThisYear." - ".$companyNameFull ?></p>
+    <p class="footerCopy">&copy; <?php echo $dateThisYear." - ".$company_name_full ?></p>
     
     <p class="footerCopy">
         &copy;
         <?php
             $fromYear = 2010;
-            echo $fromYear . (($fromYear != $dateThisYear) ? " - " . $dateThisYear : "") . $companyNameFull; 
+            echo $fromYear . (($fromYear != $dateThisYear) ? " - " . $dateThisYear : "") . $company_name_full; 
         ?>
     </p>
     
     <div class="footerLegal">
         <ul class="horizontal clearfix containerAT">
-            <li class="copy">&copy; <?php echo $dateThisYear." - ".$companyNameFull ?></li>
+            <li class="copy">&copy; <?php echo $dateThisYear." - ".$company_name_full ?></li>
             <li class="tos"><a href="/legal/" class="displayBlock"><?php echo _("Privacidad y Condiciones"); ?></a></li>
         </ul>
     </div> 

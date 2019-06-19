@@ -4,7 +4,7 @@
     <!--Normal-->
     <?php if($index == 1){ echo '<h1 class="logoH">'; } else if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }?>
     <a href="/nuevo/" class="pRel displayBlock <?php if($int == 1){ echo 'logoH'; } else { echo ''; } ?>">
-        <img src="/nuevo/img/logo.svg" alt="<?php echo $companyNameFull ?>."  class="displayBlock">
+        <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>."  class="displayBlock">
     </a>
     <?php if($index == 1){ echo '</h1>'; } else if($logoImgBgBefore == 1) { echo '</div>'; } ?>    
     
@@ -16,7 +16,7 @@
         } else {
             echo '?l=es_AR';
         } ?>" class="pRel displayBlock <?php if($int == 1){ echo 'logoH'; } else { echo ''; } ?>">
-        <img src="/nuevo/img/logo.svg" alt="<?php echo $companyNameFull ?>." class="displayBlock">
+        <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>." class="displayBlock">
     </a>
     <?php if($index == 1){ echo '</h1>'; } else if($logoImgBgBefore == 1) { echo '</div>'; } ?>  
     
