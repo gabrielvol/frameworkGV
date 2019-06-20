@@ -6,7 +6,7 @@
     </ul>   
     
     <?php
-        if($navDrawer == 1){
+        if($navDrawer_act == 1){
             echo '<ul class="mainMenu navDrawerMainUL unstyled clearfix">';
 
             if ($seccionConSub == 1) {

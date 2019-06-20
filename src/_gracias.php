@@ -1,26 +1,29 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $int = 1;
-    $gracias = 1;
+    $page_int        = 1;
+    $page_gracias    = 1;
     
-    $title      = "Gracias | ".$company_name_full;
-  //$mdescGB    = "Thank You | ".$company_name_full;;
+    $site_title      = "Gracias | ".$company_name_full;
+  //$site_desc_GB    = "Thank You | ".$company_name_full;
     
-//Open Graph Start
-                // Max 35 char
-                // 123456789-123456789-123456789-12345 
-    $ogTitle    = "OGWebsiteTitle";
-  //$ogTitleGB  = "OGWebsiteTitle";
+    $site_desc       = $site_desc_global;
+  //$site_desc_GB    = "";
     
-                // Max 65 char                       ·
-                // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $ogDesc     = "Descr.";
-  //$ogDescGB   = "Descr.";
+//---Open Graph Start
+                        // Max 35 char
+                        // 123456789-123456789-123456789-12345 
+    $openGraph_title    = "OGWebsiteTitle";
+  //$openGraph_title_GB = "OGWebsiteTitle";
     
-    $ogURL      = $url_global;  
-    $ogSiteName = $ogTitle;
-//Open Graph End
+                        // Max 65 char                       ·
+                        // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    $openGraph_desc     = "Descr.";
+  //$openGraph_desc_GB  = "Descr.";
+    
+    $openGraph_url      = $url_global;  
+    $openGraph_siteName = $openGraph_title;
+//---Open Graph End
     
     $navCurrent = 0;
     

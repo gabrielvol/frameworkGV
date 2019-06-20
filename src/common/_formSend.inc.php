@@ -412,10 +412,10 @@
             //Redirect
             //echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';
                 
-//INICIA MENSAJE OK EN $status
+//INICIA MENSAJE OK EN $formStatusMsg
                 $status_FormName = '<p class="status ok" role="alert">'._("$statusOKGlobalA_FormName").' '._("$statusOKGlobalB_FormName").'</p>';
                 $mandatoryMsgClasses_FormName = 'displayNone';
-//FIN mensaje ok en $status
+//FIN mensaje ok en $formStatusMsg
                 
 //INICIA MENSAJE OK EN POPUP
                 $status_FormName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formOK">'
@@ -455,10 +455,10 @@
                 $_POST['mensaje_FormName']      = '';
 
             } else {
-//INICIA MENSAJE ERROR EN $status
+//INICIA MENSAJE ERROR EN $formStatusMsg
                 $status_FormName = '<p class="status error" role="alert">'._("$statusErrorGlobalA_FormName").' <span class="displayBlock">'._("$statusErrorGlobalB_FormName").'</span></p>';
                 $mandatoryMsgClasses_FormName = 'displayNone';
-//FIN mensaje error en $status
+//FIN mensaje error en $formStatusMsg
                 
 //INICIA MENSAJE ERROR EN POPUP
                 $status_FormName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formError">'

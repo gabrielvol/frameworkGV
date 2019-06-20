@@ -1,9 +1,11 @@
 <?php
-    $error = 1;
+    $page_error      = 1;
     
-    $title = "Error | ";
-    //$titleGB = "UntitledPage";
-    $mdesc = "";
+    $site_title      = "Error | ".$company_name_full;
+    //$site_title_GB = "UntitledPage";
+    
+    $site_desc       = $site_desc_global;
+    //$site_desc_GB  = "";
     
     $navCurrent = 0;
     

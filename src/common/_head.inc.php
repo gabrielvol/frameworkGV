@@ -13,11 +13,11 @@
 <!-- Google No Translate -->
 <meta name="google" content="notranslate">
 
-<title><?php echo $title ?></title>
-<title><?php if($idioma == 'en_GB'){ echo $titleGB; } else if($idioma == 'pt_BR'){ echo $titleBR; } else { echo $title; } ?></title>
+<title><?php echo $site_title ?></title>
+<title><?php if($idioma == 'en_GB'){ echo $site_title_GB; } else if($idioma == 'pt_BR'){ echo $site_titleBR; } else { echo $site_title; } ?></title>
 
-<meta name="description" content="<?php echo $mdesc ?>">
-<meta name="description" content="<?php if($idioma == 'en_GB'){ echo $mdescGB; } else if($idioma == 'pt_BR'){ echo $mdescPT; } else { echo $mdesc; } ?>">
+<meta name="description" content="<?php echo $site_desc ?>">
+<meta name="description" content="<?php if($idioma == 'en_GB'){ echo $site_desc_GB; } else if($idioma == 'pt_BR'){ echo $site_descPT; } else { echo $site_desc; } ?>">
 
 <link href="/nuevo/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
@@ -45,22 +45,22 @@
 <link rel="webmention" href="http://example.com/webmention">
 
 <!-- Open Graph -->
-<meta property="og:title" content="<?php echo $ogTitle; ?>">
+<meta property="og:title" content="<?php echo $openGraph_title; ?>">
 <meta property="og:url" content="<?php echo $url_global; ?>">
-<meta property="og:description" content="<?php echo $ogDesc; ?>">
-<!--<meta property="og:image:secure_url" content="<?php echo $ogURL; ?>/og_img.jpg">-->
-<meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
+<meta property="og:description" content="<?php echo $openGraph_desc; ?>">
+<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url; ?>/og_img.jpg">-->
+<meta property="og:image" content="<?php echo $openGraph_url; ?>/og_img.jpg">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="<?php echo $ogSiteName; ?>">
+<meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>">
 <meta property="og:locale" content="es_AR">
 
-<meta property="og:title" content="<?php if($idioma == 'en_GB'){ echo $ogTitleGB; } else if($idioma == 'de_DE'){ echo $ogTitleDE; } else { echo $ogTitle; } ?>">
+<meta property="og:title" content="<?php if($idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($idioma == 'de_DE'){ echo $openGraph_titleDE; } else { echo $openGraph_title; } ?>">
 <meta property="og:url" content="<?php echo $url_global; ?>">
-<meta property="og:description" content="<?php if($idioma == 'en_GB'){ echo $ogDescGB; } else if($idioma == 'de_DE'){ echo $ogDescDE; } else { echo $ogDesc; } ?>">
-<meta property="og:image:secure_url" content="<?php echo $ogURL; ?>/og_img.jpg">
-<meta property="og:image" content="<?php echo $ogURL; ?>/og_img.jpg">
+<meta property="og:description" content="<?php if($idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($idioma == 'de_DE'){ echo $openGraph_descDE; } else { echo $openGraph_desc; } ?>">
+<meta property="og:image:secure_url" content="<?php echo $openGraph_url; ?>/og_img.jpg">
+<meta property="og:image" content="<?php echo $openGraph_url; ?>/og_img.jpg">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="<?php if($idioma == 'en_GB'){ echo $ogSiteNameGB; } else if($idioma == 'de_DE'){ echo $ogSiteNameDE; } else { echo $ogSiteName; } ?>">
+<meta property="og:site_name" content="<?php if($idioma == 'en_GB'){ echo $openGraph_siteNameGB; } else if($idioma == 'de_DE'){ echo $openGraph_siteNameDE; } else { echo $openGraph_siteName; } ?>">
 <meta property="og:locale" content="<?php if($idioma == 'en_GB'){ echo 'en_GB'; } else if($idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>">
 
 <!-- Facebook Open Graph -->

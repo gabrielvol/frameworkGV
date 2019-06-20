@@ -1,13 +1,14 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $int = 1;
-    $copyright = 1;
+    $page_int        = 1;
+    $page_copyright  = 1;
     
-    $title = "PáginaSinTítulo";
-    //$titleGB = "UntitledPage";
-    $mdesc = "";
-    //$mdescGB = "";
+    $site_title      = "Licencia | ".$company_name_full;
+    //$site_title_GB = "UntitledPage";
+    
+    $site_desc       = $site_desc_global;
+    //$site_desc_GB  = "";
     
     $navCurrent = 0;
     

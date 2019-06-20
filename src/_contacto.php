@@ -1,29 +1,29 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $int = 1;
-    $hasMandatoryMsg = 1;
+    $page_int       = 1;
+    $page_contact_hasMandatoryMsg_act = 1;
     
-    $title      = "Contacto | ".$company_name_full;
-  //$titleGB    = "Contact | ".$company_name_full;
+    $site_title     = "Contacto | ".$company_name_full;
+  //$site_title_GB  = "Contact | ".$company_name_full;
     
-    $mdesc      = "";
-  //$mdescGB    = "";
+    $site_desc      = $site_desc_global;
+  //$site_desc_GB   = "";
     
-//Open Graph Start
-                // Max 35 char
-                // 123456789-123456789-123456789-12345 
-    $ogTitle    = "OGWebsiteTitle";
-  //$ogTitleGB  = "OGWebsiteTitle";
+//---Open Graph Start
+                        // Max 35 char
+                        // 123456789-123456789-123456789-12345 
+    $openGraph_title    = "OGWebsiteTitle";
+  //$openGraph_title_GB = "OGWebsiteTitle";
     
-                // Max 65 char                       ·
-                // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $ogDesc     = "Descr.";
-  //$ogDescGB   = "Descr.";
+                        // Max 65 char                       ·
+                        // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    $openGraph_desc     = "Descr.";
+  //$openGraph_desc_GB  = "Descr.";
     
-    $ogURL      = $url_global;  
-    $ogSiteName = $ogTitle;
-//Open Graph End
+    $openGraph_url      = $url_global;  
+    $openGraph_siteName = $openGraph_title;
+//---Open Graph End
     
     $navCurrent = 0;
     
@@ -41,9 +41,9 @@
             <form method="post" class="mha">
                 <?php
                     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
-                    echo $status;
+                    echo $formStatusMsg;
 
-                    if($hasMandatoryMsg == 1) {
+                    if($page_contact_hasMandatoryMsg_act == 1) {
                         echo '<div class="mandatoryMsg '.$mandatoryMsgClasses.'">'.$mandatoryMsg.'</div>';
                     }                
                 ?>
