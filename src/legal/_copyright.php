@@ -1,8 +1,8 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $page_int        = 1;
-    $page_copyright  = 1;
+    $page_int           = 1;
+    $section_copyright  = 1;
     
     $site_title      = "Licencia | ".$company_name_full;
     //$site_title_GB = "UntitledPage";
@@ -19,7 +19,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="copyright bgWhite" role="main">
+    <div id="main" class="page_int section_copyright bgWhite" role="main">
         <section class="container">
             <h1 class="black alignCenter">Licencia</h1>
             <p class="nota black">El contenido de este sitio web se encuentra bajo la siguiente licencia:</p>

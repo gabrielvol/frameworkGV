@@ -2,7 +2,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
     $page_int        = 1;
-    $page_gracias    = 1;
+    $section_gracias = 1;
     
     $site_title      = "Gracias | ".$company_name_full;
   //$site_desc_GB    = "Thank You | ".$company_name_full;
@@ -13,12 +13,12 @@
 //---Open Graph Start
                         // Max 35 char
                         // 123456789-123456789-123456789-12345 
-    $openGraph_title    = "OGWebsiteTitle";
+    $openGraph_title    = $site_title;
   //$openGraph_title_GB = "OGWebsiteTitle";
     
                         // Max 65 char                       ·
                         // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $openGraph_desc     = "Descr.";
+    $openGraph_desc     = $site_desc_global;
   //$openGraph_desc_GB  = "Descr.";
     
     $openGraph_url      = $url_global;  
@@ -34,7 +34,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/common/header.inc.php'); ?>
-    <div id="main" class="int gracias" role="main">
+    <div id="main" class="page_int section_gracias" role="main">
         <h1 class="alignCenter">Gracias</h1>
         <p class="alignCenter">Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias</p>
     </div>

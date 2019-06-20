@@ -4,7 +4,7 @@
 
 /* -------------------------------------
     Full height index                 */
-.index{  
+.page_index{  
     @if $index_fullHeight_act == "on"{  
         @include mobileOnly{
             height: calc(100vh - #{$footer_height_BT} - #{$header_height_MO});

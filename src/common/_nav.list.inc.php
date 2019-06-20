@@ -20,8 +20,8 @@
         <?php echo _("Nosotros"); ?>
     </p>
     <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
-        <li class="<?php if($navCurrentInt == 200) { echo 'current'; } ?>">
-            <a href="/nuevo/" class="displayBlock borderBox" <?php if($navCurrentInt == 200) { echo 'aria-current="page"'; } ?>>
+        <li class="<?php if($navCurrent_int == 200) { echo 'current'; } ?>">
+            <a href="/nuevo/" class="displayBlock borderBox" <?php if($navCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
                 <?php echo _("Historia"); ?></a>
         </li>
     </ul>
@@ -34,13 +34,13 @@
         <?php echo _("Nosotros"); ?>
     </p>
     <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
-        <li class="hasSub hasSubLevel2 <?php if($navCurrentInt == 210) { echo 'current'; } ?>">
+        <li class="hasSub hasSubLevel2 <?php if($navCurrent_int == 210) { echo 'current'; } ?>">
             <p class="topLevelItem TLILevel2 borderBox" id="hisNavItem" aria-haspopup="true" aria-owns="hisSubMenu" aria-controls="hisSubMenu" role="button" aria-pressed="false">
                 <?php echo _("Historia"); ?>
             </p>
             <ul id="hisSubMenu" class="subMenu subMenuLevel2 unstyled" role="group" aria-expanded="false" aria-labelledby="hisNavItem">
-                <li class="<?php if($navCurrentInt == 211) { echo 'current'; } ?>">
-                    <a href="/nuevo/" class="displayBlock borderBox" <?php if($navCurrentInt == 211) { echo 'aria-current="page"'; } ?>>
+                <li class="<?php if($navCurrent_int == 211) { echo 'current'; } ?>">
+                    <a href="/nuevo/" class="displayBlock borderBox" <?php if($navCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
                         <?php echo _("Comienzos"); ?></a>
                 </li>
             </ul>    

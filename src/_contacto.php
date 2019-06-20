@@ -1,8 +1,9 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $page_int       = 1;
-    $page_contact_hasMandatoryMsg_act = 1;
+    $page_int                               = 1;
+    $section_contacto                       = 1;
+    $section_contacto_hasMandatoryMsg_act   = 0;
     
     $site_title     = "Contacto | ".$company_name_full;
   //$site_title_GB  = "Contact | ".$company_name_full;
@@ -13,12 +14,12 @@
 //---Open Graph Start
                         // Max 35 char
                         // 123456789-123456789-123456789-12345 
-    $openGraph_title    = "OGWebsiteTitle";
+    $openGraph_title    = $site_title;
   //$openGraph_title_GB = "OGWebsiteTitle";
     
                         // Max 65 char                       ·
                         // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $openGraph_desc     = "Descr.";
+    $openGraph_desc     = $site_desc_global;
   //$openGraph_desc_GB  = "Descr.";
     
     $openGraph_url      = $url_global;  
@@ -36,14 +37,14 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="int contacto" role="main">
+    <div id="main" class="page_int section_contacto" role="main">
         <div class="mobileForm tabletForm">
             <form method="post" class="mha">
                 <?php
                     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
                     echo $formStatusMsg;
 
-                    if($page_contact_hasMandatoryMsg_act == 1) {
+                    if($section_contacto_hasMandatoryMsg_act == 1) {
                         echo '<div class="mandatoryMsg '.$mandatoryMsgClasses.'">'.$mandatoryMsg.'</div>';
                     }                
                 ?>

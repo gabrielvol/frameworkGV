@@ -5,11 +5,11 @@
     $urlActual = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     
     // -------------------------------------------------------------------------
-    // Misc
+    // MISCELANEOUS
     $dateThisYear = (int)date('Y');    
     
     // -------------------------------------------------------------------------
-    // Company
+    // COMPANY DATA
     $company_name_full    = "CompanyNameFull";
     $company_name_short   = "CompanyNameShort";
     
@@ -24,7 +24,7 @@
     $site_desc_global = ""; 
     
     // -------------------------------------------------------------------------
-    // Social
+    // SOCIAL NETWORKS
     $social_facebook_url        = "https://www.facebook.com/usuario";
     $social_instagram_url       = "https://www.instagram.com/usuario";
     $social_whatsapp_chatOpen   = "https://api.whatsapp.com/send?phone=".$company_tel_main_whatsapp;
@@ -40,11 +40,11 @@
     $social_linkedin_url        = "https://www.linkedin.com/usuario";    
     
     // -------------------------------------------------------------------------
-    // Header
+    // HEADER
     $logoImgBgBefore            = 0;    
     
     // -------------------------------------------------------------------------
-    // Nav
+    // NAVIGATION
     $navDrawer_act              = 1;
     $navAcc_act                 = 0;
     $navHorizontalCenter_AT_act = 0;
