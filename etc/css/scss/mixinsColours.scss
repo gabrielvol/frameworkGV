@@ -102,12 +102,12 @@
         a.#{$colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-            @extend %focusHover-#{$colourClassName}
+            @extend %anchor_button_focusHoverCustom__#{$colourClassName}
         }
         @if $coloursButtons == "on"{
             button.#{$colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourHexValue;}
-                @extend %focusHover-#{$colourClassName}
+                @extend %anchor_button_focusHoverCustom__#{$colourClassName}
             }
         }
         @if $coloursLabels == "on"{

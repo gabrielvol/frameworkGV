@@ -2,7 +2,7 @@
    Custom Reset Styles | Custom [resetCustom.scss]
    ========================================================================== */
 button{
-    @if $pointerButtons == "on"{
+    @if $button_pointer_act == "on"{
         cursor: pointer;
     }
 }

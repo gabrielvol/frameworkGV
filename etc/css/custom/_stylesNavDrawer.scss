@@ -11,7 +11,7 @@
             }
 
             .navOpen{
-                @if $hamburger_only == "on"{
+                @if $hamburger_only_act == "on"{
                     @include squareSize(45px);
                     background-position: center;
                     padding: $zero;
@@ -19,15 +19,15 @@
                     
                     } @else { 
                     width: 90px;
-                    height: $navDrawerHambHeight;
+                    height: $navDrawer_hamburger_height;
                     background-position: 10px center;
                     border: 1px solid $navBcColour_open!important;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
-                    line-height: $navDrawerHambHeight;
+                    line-height: $navDrawer_hamburger_height;
                 }
                 
-                @include borderRadius($navBorderRadius);
+                @include borderRadius($nav_borderRadius);
                 background-size: 15px;
             }
 
@@ -38,7 +38,7 @@
             }
 
             .mainMenu{
-                @include borderStyleR($navBcColour_navDrawer);
+                @include borderStyleR($navBcColourR_navDrawer);
 
                 li{
                     &,
@@ -56,7 +56,7 @@
 
                 > .current{
                     background-color: $navBgColour_itemCurrent_level0_BT;
-                    background-image: url('/nuevor/img/#{$navArrow_itemCurrent_level0}');
+                    background-image: url('/nuevor/img/#{$navArrows_itemCurrent_level0}');
                 }   
 
                 .backMenu{    

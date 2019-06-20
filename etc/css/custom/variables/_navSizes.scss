@@ -2,27 +2,27 @@
    Nav Sizes Variables | Custom [navSizes.scss]
    ========================================================================== */
     // General
-$navBorderRadius:       4px;
+$nav_borderRadius:                  4px;
 
     // Nav List
-$navList_ul_width_BT:        200px;
+$navList_ul_width_BT:               200px;
 
     // Nav Drawer
-$navDrawerWidth:        70vw;
-$navDrawerMaxWidth:     300px;
-$navDrawerHambHeight:   40px;
-$logo_height_ClickedH:         50px;
-$logo_height_ClickedPT:        50px;
-$logo_height_ClickedPB:        10px;
-$logo_height_ClickedFH:        calc(#{$logo_height_ClickedH} + #{$logo_height_ClickedPT} + #{$logo_height_ClickedPB});
+$navDrawer_width:                   70vw;
+$navDrawer_widthMax:                300px;
+$navDrawer_hamburger_height:        40px;
+$logo_clicked_height:               50px;
+$logo_clicked_height_paddingT:      50px;
+$logo_clicked_height_paddingB:      10px;
+$logo_clicked_height_heightFull:    calc(#{$logo_clicked_height} + #{$logo_clicked_height_paddingT} + #{$logo_clicked_height_paddingB});
 
     // Nav Accordion
-$navAccHambHeight:      40px;
-$navAccLiH:             45px;
+$navAcc_hamburger_height:           40px;
+$navAcc_item_height:                45px;
 
     // Nav Topper
-$topperHeight:          60px;
+$topper_height_global:              60px;
 
     // Nav Heights
-$navHAT: 60px;
-$navHATL: $navHAT;
+$nav_height_AT:                     60px;
+$nav_height_ATL:                    $nav_height_AT;

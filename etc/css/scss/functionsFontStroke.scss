@@ -3,26 +3,29 @@
    ========================================================================== */
 
 /// Stroke font-character
-/// @param  {Integer} $strokeWidth - Stroke width
-/// @param  {Color}   $color       - Stroke color
-/// @return {List}                 - text-shadow list
-@function stroke($strokeWidth, $color) {
-  $shadow: ();
-  $from: $strokeWidth*-1;
-  @for $i from $from through $strokeWidth {
-   @for $j from $from through $strokeWidth {
-      $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+/// @param  {Integer} $fontStroke_width_fn - Stroke width
+/// @param  {Color}   $fontStroke_color_fn - Stroke color
+/// @return {List}                         - text-shadow list
+
+@function stroke($fontStroke_width_fn, $fontStroke_color_fn) {
+    $shadow: ();
+
+    $from: $fontStroke_width_fn*-1;
+
+    @for $i from $from through $fontStroke_width_fn {
+        @for $j from $from through $fontStroke_width_fn {
+            $shadow: append($shadow, $i*1px $j*1px 0 $fontStroke_color_fn, comma);
+        }
     }
-  }
-  @return $shadow;
+    @return $shadow;
 }
 
 /// Stroke font-character
-/// @param  {Integer} $strokeWidth - Stroke width
-/// @param  {Color}   $color       - Stroke color
-/// @return {Style}                - text-shadow
-@mixin fontStroke($strokeWidth, $color) {
-  text-shadow: stroke($strokeWidth, $color);
+/// @param  {Integer} $fontStroke_width_fn - Stroke width
+/// @param  {Color}   $fontStroke_color_fn - Stroke color
+/// @return {Style}                        - text-shadow
+@mixin fontStroke($fontStroke_width_fn, $fontStroke_color_fn) {
+  text-shadow: stroke($fontStroke_width_fn, $fontStroke_color_fn);
 }
 
 /// Usage

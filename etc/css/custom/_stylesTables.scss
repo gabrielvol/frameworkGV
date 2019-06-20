@@ -22,37 +22,38 @@ table{
 
 /* Rounded Tables */
 table.tableRounded{
-    @include borderStyle($bcColour_main_globalTable);
+    @include borderStyle($bcColour_main_table);
     
     th,
     tfoot td{
-        background-color: $bgColour_main_globalTable;
+        background-color: $bgColour_main_table;
     }
    
     tfoot td{
-        @include borderStyleT($bcColour_secondary_globalTable);
+        @include borderStyleT($bcColour_secondary_table);
     }
     
     tr{
         th,
         td{
-            @include borderStyleB($bcColour_secondary_globalTable);
+            @include borderStyleB($bcColour_secondary_table);
         }
     }
 }
     
-$tableBeforeWidth: 40%;
+$table_width_BT: 40%;
 @include beforeTablet{
     table{
         tr{
-            & + tr, &:last-child{
+            & + tr,
+            &:last-child{
                 @include borderStyleT($bcGreyD, 2px);
             }
            
             td{
                 font-size: 0.8rem;
                 text-align: center;
-                padding-left: $tableBeforeWidth + 5%;
+                padding-left: $table_width_BT + 5%;
 
                 & + td{
                     @include borderStyleT($bcGrey);
@@ -60,7 +61,7 @@ $tableBeforeWidth: 40%;
                 
                 &::before{
                     left: 10px;
-                    width: $tableBeforeWidth; 
+                    width: $table_width_BT; 
                     width: 40%; 
                     font-weight: bold;
                     text-transform: uppercase;                
@@ -71,18 +72,18 @@ $tableBeforeWidth: 40%;
     
     .tableRounded{
         tr{
-            @include borderStyleB($bcColour_main_globalTable,$borderWidthValue: 2px);
+            @include borderStyleB($bcColour_main_table, $borderWidthValue: 2px);
             
             td{
-                @include borderStyleB($bcColour_secondary_globalTable,$borderStyleValue: dotted);
+                @include borderStyleB($bcColour_secondary_table, $borderStyleValue: dotted);
             }
             
             &:last-child{
                 td{
-                    @include borderStyleB($bcColour_secondary_globalTable!important);
+                    @include borderStyleB($bcColour_secondary_table!important);
                     
                     &:last-child{
-                        @include borderStyleB($bcColour_secondary_globalTable!important, $borderWidthValue: 0);
+                        @include borderStyleB($bcColour_secondary_table!important, $borderWidthValue: 0);
                     }
                 }
             }
@@ -93,19 +94,19 @@ $tableBeforeWidth: 40%;
         tbody{
             tr{
                 td{
-                    background-color:$bgColourTableStripedEven;
+                    background-color:$bgColour_table_striped_even;
                     
                     &:nth-child(odd){                        
-                        background-color: darken($bgColourTableStripedEven, 10%);
+                        background-color: darken($bgColour_table_striped_even, 10%);
                     }                    
                 }
                 
                 &:nth-child(n+2){
-                    @include borderStyleT($bcColourTableStripedSeparator, 2px);
+                    @include borderStyleT($bgColour_table_striped_separator, 2px);
                 }
                 
                 &:last-child{
-                    @include borderStyleB($bcColourTableStripedSeparator);
+                    @include borderStyleB($bgColour_table_striped_separator);
                 }
             }
         }
@@ -117,15 +118,15 @@ $tableBeforeWidth: 40%;
         
         table{
             @include beforeTablet{
-                width: $tableWBT;
+                width: $table_width_BT;
                 @include tableCustomSizesBeforeTablet;        
             }
             @include afterTablet{
-                width: $tableWAT;
+                width: $table_width_AT;
                 @include tableCustomSizesTablet;          
             }
             @include afterTabletLandscape{
-                width: $tableWATL;
+                width: $table_width_ATL;
                 @include tableCustomSizesTabletL;          
             }
             
@@ -142,14 +143,14 @@ $tableBeforeWidth: 40%;
         
         .tableRounded{
             tr{
-                @include borderStyleB($bcColour_main_globalTable, $borderWidthValue: 1px);
+                @include borderStyleB($bcColour_main_table, $borderWidthValue: 1px);
                 
                 td{
-                    @include borderStyleB($bcColour_secondary_globalTable, $borderWidthValue: 0);
+                    @include borderStyleB($bcColour_secondary_table, $borderWidthValue: 0);
                 }
                 
                 &:last-child td{
-                    @include borderStyleB($bcColour_secondary_globalTable!important, $borderWidthValue: 0);
+                    @include borderStyleB($bcColour_secondary_table!important, $borderWidthValue: 0);
                 }
             }
         }

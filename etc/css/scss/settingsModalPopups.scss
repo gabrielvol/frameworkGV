@@ -5,7 +5,7 @@
 .modalNav{
     @include posTRBL();
     position: fixed;
-    z-index: $zIndexModalBG;
+    z-index: $zIndex_modal_bg;
 }
 
 .modalBG{
@@ -24,10 +24,10 @@
 }
 
 .popup{
-    z-index: $zIndexPopup;
+    z-index: $zIndex_modal_popup;
     left: 50%;
     
     .closePop{
-        z-index: $zIndexButtonOver;
+        z-index: $zIndex_button_topLevel;
     }
 }

@@ -5,15 +5,15 @@ table{
     border-spacing: 0;
     border-collapse: collapse;
     @include beforeTablet{
-        width: $tableWBT;
+        width: $table_width_BT;
         @include tableCustomSizesBeforeTablet;        
     }
     @include afterTablet{
-        width: $tableWAT;
+        width: $table_width_AT;
         @include tableCustomSizesTablet;          
     }
     @include afterTabletLandscape{
-        width: $tableWATL;
+        width: $table_width_ATL;
         @include tableCustomSizesTabletL;          
     }     
     th,
@@ -25,24 +25,24 @@ table{
 
     //Rounded Tables
 .tableRounded{
-    @include borderRadius($helpers_borders_radius_global);
+    @include borderRadius($helpers_border_radius_global);
     border-collapse: separate;
    
     tfoot td{
         &:first-child{
-            @include borderRadiusBL($helpers_borders_radius_globalTable);
+            @include borderRadiusBL($helpers_border_radius_table);
         }
         &:last-child{
-            @include borderRadiusBR($helpers_borders_radius_globalTable);
+            @include borderRadiusBR($helpers_border_radius_table);
         }
     }    
     tr{
         th{
             &:first-child{
-                @include borderRadiusTL($helpers_borders_radius_globalTable);
+                @include borderRadiusTL($helpers_border_radius_table);
             }
             &:last-child{
-                @include borderRadiusTR($helpers_borders_radius_globalTable);
+                @include borderRadiusTR($helpers_border_radius_table);
             }
         }        
         &:last-child{
@@ -57,22 +57,22 @@ table{
 .tableStriped{
     thead, tfoot{
         tr{
-            background-color: $bgColourTableStripedThead;
+            background-color: $bgColour_table_striped_thead;
         }
     }
     tbody{
         tr{
-            background-color:$bgColourTableStripedEven;
+            background-color:$bgColour_table_striped_even;
             
             &:nth-child(odd){
-                background-color: $bgColourTableStripedOdd;
+                background-color: $bgColour_table_striped_odd;
             }
         }        
     }
 }
 @include beforeTablet{
     table{
-        width: $tableWBT;
+        width: $table_width_BT;
         
         thead,
         tfoot{

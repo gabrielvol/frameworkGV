@@ -5,30 +5,30 @@
 //A,T,R,B,L = all,top,right,bottom,left
 //H,V,X = horizontal,vertical,user defined values
 
-@mixin borderStyle($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleT($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-top: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleR($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-right: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleB($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-bottom: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleL($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-left: $borderWidthValue $borderStyleValue $borderColourValue}
-@mixin borderStyleH($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-width: 0 $borderWidthValue;
-    border-style: $borderStyleValue;
-    border-color: $borderColourValue;
+@mixin borderStyle($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border: $borderWidthValue_mx $borderStyleValue_mx $borderColourValue_mx}
+@mixin borderStyleT($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-top: $borderWidthValue_mx $borderStyleValue_mx $borderColourValue_mx}
+@mixin borderStyleR($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-right: $borderWidthValue_mx $borderStyleValue_mx $borderColourValue_mx}
+@mixin borderStyleB($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-bottom: $borderWidthValue_mx $borderStyleValue_mx $borderColourValue_mx}
+@mixin borderStyleL($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-left: $borderWidthValue_mx $borderStyleValue_mx $borderColourValue_mx}
+@mixin borderStyleH($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-width: 0 $borderWidthValue_mx;
+    border-style: $borderStyleValue_mx;
+    border-color: $borderColourValue_mx;
 }
-@mixin borderStyleV($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-width: $borderWidthValue 0;
-    border-style: $borderStyleValue;
-    border-color: $borderColourValue;
+@mixin borderStyleV($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-width: $borderWidthValue_mx 0;
+    border-style: $borderStyleValue_mx;
+    border-color: $borderColourValue_mx;
 }
-@mixin borderStyleX($borderColourValue: $bcColour_main_global, $borderWidthValue: 1px, $borderStyleValue: solid){
-    border-width: $borderWidthValue;
-    border-style: $borderStyleValue;
-    border-color: $borderColourValue;
+@mixin borderStyleX($borderColourValue_mx: $bcColour_main_global, $borderWidthValue_mx: 1px, $borderStyleValue_mx: solid){
+    border-width: $borderWidthValue_mx;
+    border-style: $borderStyleValue_mx;
+    border-color: $borderColourValue_mx;
 }
 
 /* =============================================================================
@@ -36,48 +36,48 @@
    ========================================================================== */
 //T,R,B,L = top,right,bottom,left
 
-@mixin borderRadius($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: $borderRadiusMixinValue;
+@mixin borderRadius($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: $borderRadiusMixinValue_mx;
 }
-@mixin borderRadiusT($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: $borderRadiusMixinValue $borderRadiusMixinValue 0 0;
+@mixin borderRadiusT($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: $borderRadiusMixinValue_mx $borderRadiusMixinValue_mx 0 0;
 }
-@mixin borderRadiusR($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: 0 $borderRadiusMixinValue $borderRadiusMixinValue 0;
+@mixin borderRadiusR($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: 0 $borderRadiusMixinValue_mx $borderRadiusMixinValue_mx 0;
 }
-@mixin borderRadiusB($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: 0 0 $borderRadiusMixinValue $borderRadiusMixinValue;
+@mixin borderRadiusB($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: 0 0 $borderRadiusMixinValue_mx $borderRadiusMixinValue_mx;
 }
-@mixin borderRadiusL($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: $borderRadiusMixinValue 0 0 $borderRadiusMixinValue;
+@mixin borderRadiusL($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: $borderRadiusMixinValue_mx 0 0 $borderRadiusMixinValue_mx;
 }
-@mixin borderRadiusTR($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: 0 $borderRadiusMixinValue 0 0;
+@mixin borderRadiusTR($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: 0 $borderRadiusMixinValue_mx 0 0;
 }
-@mixin borderRadiusTL($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: $borderRadiusMixinValue 0 0 0;
+@mixin borderRadiusTL($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: $borderRadiusMixinValue_mx 0 0 0;
 }
-@mixin borderRadiusBR($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: 0 0 $borderRadiusMixinValue 0;
+@mixin borderRadiusBR($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: 0 0 $borderRadiusMixinValue_mx 0;
 }
-@mixin borderRadiusBL($borderRadiusMixinValue: $helpers_borders_radius_global){
-    border-radius: 0 0 0 $borderRadiusMixinValue;
+@mixin borderRadiusBL($borderRadiusMixinValue_mx: $helpers_border_radius_global){
+    border-radius: 0 0 0 $borderRadiusMixinValue_mx;
 }
 
 /* =============================================================================
    Border Notch Mixin | Etc [mixinsBorders.scss]
    ========================================================================== */
-@mixin borderNotch($notchSize: 20px){  
+@mixin borderNotch($notchSize_mx: 20px){  
   clip-path: 
     polygon(
-      0% var($notchSize), 
-      var($notchSize) 0%, 
-      calc(100% - var($notchSize)) 0%, 
-      100% var($notchSize), 
-      100% calc(100% - var($notchSize)), 
-      calc(100% - var($notchSize)) 100%, 
-      var($notchSize) 100%, 
-      0% calc(100% - var($notchSize))
+      0% var($notchSize_mx), 
+      var($notchSize_mx) 0%, 
+      calc(100% - var($notchSize_mx)) 0%, 
+      100% var($notchSize_mx), 
+      100% calc(100% - var($notchSize_mx)), 
+      calc(100% - var($notchSize_mx)) 100%, 
+      var($notchSize_mx) 100%, 
+      0% calc(100% - var($notchSize_mx))
     );
 }
 

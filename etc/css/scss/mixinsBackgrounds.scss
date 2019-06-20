@@ -1,13 +1,13 @@
 /* =============================================================================
    Background Mixins | Etc [mixinsBackgrounds.scss]
    ========================================================================== */
-@mixin sprites($backgroundPosition, $backgroundColour: transparent){
-    background: $backgroundColour url('/nuevo/img/sprites.png') no-repeat $backgroundPosition;}
+@mixin sprites($backgroundPosition_mx, $backgroundColour_mx: transparent){
+    background: $backgroundColour_mx url('/nuevo/img/sprites.png') no-repeat $backgroundPosition_mx;}
 
-@mixin bgSvg($svgPath, $svgSize: contain, $svgPos: center center, $svgColour: transparent, $svgRepeat: no-repeat){
-    background-color: $svgColour;
-    background-image: url('/nuevo/img/#{$svgPath}.svg');
-    background-repeat: $svgRepeat;
-    background-position: $svgPos;
-    background-size: $svgSize;
+@mixin bgSvg($svgPath_mx, $svgSize_mx: contain, $svgPos_mx: center center, $svgColour_mx: transparent, $svgRepeat_mx: no-repeat){
+    background-color: $svgColour_mx;
+    background-image: url('/nuevo/img/#{$svgPath_mx}.svg');
+    background-repeat: $svgRepeat_mx;
+    background-position: $svgPos_mx;
+    background-size: $svgSize_mx;
 }

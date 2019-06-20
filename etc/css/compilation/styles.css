@@ -361,32 +361,32 @@ a.orange:focus, a.orange:hover {
    Gradient Colours | Custom [coloursGradients.scss]
    ========================================================================== */
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
-.bgGradWhiteFifty {
+.bgGradientWhiteFifty {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-.bgGradWhiteEighty {
+.bgGradientWhiteEighty {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-.bgGradWhiteTextVanish {
+.bgGradientWhiteTextVanish {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
-.bgGradBlackTen {
+.bgGradientBlackTen {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-.bgGradBlackFifty {
+.bgGradientBlackFifty {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-.bgGradBlackEighty {
+.bgGradientBlackEighty {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
 
@@ -1501,11 +1501,14 @@ article, article::before, article::after, details, details::before, details::aft
   .hyphenated li::before {
     content: "- "; }
 
-.bulleted_dot li, .bulleted_square li {
+.bulleted_dot li,
+.bulleted_square li {
+  list-style-type: none;
   box-sizing: border-box;
   position: relative;
   padding-left: 15px; }
-  .bulleted_dot li::before, .bulleted_square li::before {
+  .bulleted_dot li::before,
+  .bulleted_square li::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -1522,17 +1525,17 @@ article, article::before, article::after, details, details::before, details::aft
 .bulleted_square li::before {
   background-image: url("/nuevo/img/bullet_square.svg"); }
 
-.fileList li {
+.listFile li {
   box-sizing: border-box;
   position: relative;
   min-height: 30px;
   padding-top: 5px;
   padding-left: calc(30px + 2px); }
-  .fileList li a {
+  .listFile li a {
     height: auto;
     min-height: 30px;
     line-height: 1.3em; }
-  .fileList li::before {
+  .listFile li::before {
     width: 30px;
     height: 30px;
     content: "";
@@ -1543,10 +1546,10 @@ article, article::before, article::after, details, details::before, details::aft
     background-position: left top;
     background-size: auto 30px; }
 
-.fileList.filePDF li::before {
+.listFile.filePDF li::before {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
-.fileList.fileDOC li {
+.listFile.fileDOC li {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
 .ulResp2 > li a, .ulResp3 > li a, .ulResp4 > li a {
@@ -1729,7 +1732,7 @@ article, article::before, article::after, details, details::before, details::aft
 #header {
   /*
     position: relative;
-    z-index: $zIndexHeader;
+    z-index: $zIndex_header;
     */ }
   #header .logoH {
     margin-bottom: 0; }

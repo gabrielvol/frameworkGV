@@ -17,17 +17,17 @@ $backgroundColours_map:(
     GreyXD:     $greyXD
 );
 
-$bgWhite:      map-get($backgroundColours_map, White);
-$bgBlack:      map-get($backgroundColours_map, Black);
-$bgError:      map-get($backgroundColours_map, Error);
-//$bgRedColour:  map-get($backgroundColours_map, RedColour);
-$bgGreen:      map-get($backgroundColours_map, Green);
-$bgGreyXXL:    map-get($backgroundColours_map, GreyXXL);
-$bgGreyXL:     map-get($backgroundColours_map, GreyXL);
-$bgGreyL:      map-get($backgroundColours_map, GreyL);
-$bgGrey:       map-get($backgroundColours_map, Grey);
-$bgGreyD:      map-get($backgroundColours_map, GreyD);
-$bgGreyXD:     map-get($backgroundColours_map, GreyXD);
+$bgWhite:       map-get($backgroundColours_map, White);
+$bgBlack:       map-get($backgroundColours_map, Black);
+$bgErrorColour: map-get($backgroundColours_map, Error);
+//$bgRedColour:   map-get($backgroundColours_map, RedColour);
+$bgGreen:       map-get($backgroundColours_map, Green);
+$bgGreyXXL:     map-get($backgroundColours_map, GreyXXL);
+$bgGreyXL:      map-get($backgroundColours_map, GreyXL);
+$bgGreyL:       map-get($backgroundColours_map, GreyL);
+$bgGrey:        map-get($backgroundColours_map, Grey);
+$bgGreyD:       map-get($backgroundColours_map, GreyD);
+$bgGreyXD:      map-get($backgroundColours_map, GreyXD);
 
     //Declaramos las variables para colores de fondo
 $bgColour_body:                     $bgWhite;    

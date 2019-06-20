@@ -3,7 +3,7 @@
    ========================================================================== */
 // imported in _stylesSlider.scss
 
-@if $sliderArrows_act == "on"{
+@if $sliderArrow_act == "on"{
     $sliderArrow_height_BT:       30px;
     $sliderArrow_widthHeight_BT:  18px $sliderArrow_height_BT;
     $sliderArrow_height_half_BT:   calc(#{$sliderArrow_height_BT} / 2);

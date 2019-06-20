@@ -7,7 +7,7 @@ body::after{
 }
 .lightboxOverlay{
     position: absolute;
-    z-index: $zIndexLightboxOverlay;
+    z-index: $zIndex_lightbox_overlay;
     top: 0;
     left: 0;
     display: none;
@@ -16,7 +16,7 @@ body::after{
 }
 .lightbox{
     position: absolute;
-    z-index: $zIndexLightbox;
+    z-index: $zIndex_lightbox;
     left: 0;
     width: 100%;
     text-align: center;
@@ -73,7 +73,7 @@ body::after{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: $zIndexLBnav;
+    z-index: $zIndex_lightbox_nav;
     
     & > .nav{
       left: 0;      

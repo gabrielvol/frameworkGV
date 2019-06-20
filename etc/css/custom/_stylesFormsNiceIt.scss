@@ -4,7 +4,7 @@
 form.niceIt{    
     /* Select */
     .fmSelect{
-        $fmSelectWidth: 240px!important;
+        $fm_select_width: 240px!important;
         
         @include borderStyle($formInput_bcColour);
         
@@ -12,7 +12,7 @@ form.niceIt{
         @include bgSvg(form_select, auto, right 15px center);
         
         box-sizing: border-box;
-        width: $fmSelectWidth;
+        width: $fm_select_width;
         
         //Este padding-right: 40px es el espacio para la flecha del select,
         //tendría que ser un sprite de 40px de ancho
@@ -21,7 +21,9 @@ form.niceIt{
         width: 135px!important;
         color: $formInput_fontColour;
         
-        &, strong, cite{
+        &,
+        strong,
+        cite{
             //Aquí se establece la altura de los select y option
             height: 30px;
             line-height: 28px;
@@ -29,7 +31,7 @@ form.niceIt{
             font-size: 0.9rem;            
         }
         
-        %optionTextFormat{
+        %fm_option_textStyles{
             color: $formInput_fontColour;
             font-family: $fontFamily_main_global;
             text-transform: none;             
@@ -38,20 +40,20 @@ form.niceIt{
         strong{            
             span{
                 cite{
-                    @extend %optionTextFormat;  
+                    @extend %fm_option_textStyles;  
                 }
             }
         }
         
         ul{
             @include borderStyle($formInput_bcColour);
-            width: $fmSelectWidth;
+            width: $fm_select_width;
             max-height: 250px;
             background-color: $white;
             background-image: none;
             
             li{
-                @extend %optionTextFormat;  
+                @extend %fm_option_textStyles;  
                 padding: 10px 15px!important;
                 font-size: 0.7rem;
                 line-height: 1.3rem;
@@ -84,7 +86,9 @@ form.niceIt{
     
     /* File Upload */
     .fnFileInput{
-        &, span, strong{
+        &,
+        span,
+        strong{
             width: $hundred;
             
             @include mobileOnly{
@@ -118,7 +122,9 @@ form.niceIt{
                 margin-right: $auto;
                 margin-left: $auto; 
                 
-                &, span, strong{
+                &,
+                span,
+                strong{
                     width: 95%;
                 }
             }

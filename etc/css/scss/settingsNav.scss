@@ -19,7 +19,7 @@ nav{
 .navMain{    
     &,
     .mainMenu{
-        z-index: $zIndexNav;
+        z-index: $zIndex_nav;
     }
     
     @if $nav_hasSub_act == "on"{
@@ -29,7 +29,7 @@ nav{
     }
    
     @include navBT{
-        @if $hamburger_only{
+        @if $hamburger_only_act{
             position: absolute;
         } @else{
             position: fixed; 
@@ -41,7 +41,7 @@ nav{
         }        
         
         .navOpen{
-            z-index: $zIndexNavOpen;
+            z-index: $zIndex_nav_open;
             display: $block;  
             opacity: 1;
             background-image: url('/nuevo/img/nav_hamb.svg');
@@ -52,7 +52,7 @@ nav{
         
         .navClose{
             @include borderRadius(50%);
-            z-index: $zIndexNavClose;  
+            z-index: $zIndex_nav_close;  
             display: none;            
             background-color: $bgWhite;
             background-image: url('/nuevo/img/nav_close.svg');

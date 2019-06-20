@@ -5,8 +5,8 @@
     @include navBT{
         .navMain{
             ul{
-                @include borderRadius($navBorderRadius);   
-                z-index: $zIndexNavUlList;
+                @include borderRadius($nav_borderRadius);   
+                z-index: $zIndex_navUlList;
                 position: relative;
                 top: 50px;
                 width: $navList_ul_width_BT; 

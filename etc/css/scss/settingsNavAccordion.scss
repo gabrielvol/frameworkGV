@@ -28,7 +28,7 @@
                 @include transition(0.5s);
                 box-sizing: border-box;
                 position: fixed;
-                z-index: $zIndexNavUlAccordion;
+                z-index: $zIndex_navAcc_ul;
                 top: $header_height_navAcc_BT;
                 right: 0;
                 left: 0;
@@ -41,7 +41,7 @@
                     &,
                     a,
                     .topLevelItem{
-                        @include equalHeightAndLineHeight($navAccLiH);
+                        @include equalHeightAndLineHeight($navAcc_item_height);
                     }
                 }
                 

@@ -6,12 +6,12 @@
     top: 80px;
     
     .closePop{
-        $closePopSize: 33px;
+        $pop_close_size: 33px;
 
         @include borderRadius(50%);
         @include bgSvg(popup_close); 
-        width: $closePopSize!important;
-        height: $closePopSize!important;
+        width: $pop_close_size!important;
+        height: $pop_close_size!important;
         background-size: 13px;
         border: 1px solid $bcGreyD!important; 
 
@@ -86,17 +86,18 @@
         
     @include mobileOnly{
         &.statusDiv{
-            $popupStatusDivW: 300px;
-            width: $popupStatusDivW;
-            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);            
+            $pop_statusDiv_width: 300px;
+            
+            width: $pop_statusDiv_width;
+            margin-left: calc(calc(#{$pop_statusDiv_width} * -1) / 2);            
         }
     }
 
     @include afterMobileLandscape{
         &.statusDiv{
-            $popupStatusDivW: 60%;
-            width: $popupStatusDivW;
-            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);       
+            $pop_statusDiv_width: 60%;
+            width: $pop_statusDiv_width;
+            margin-left: calc(calc(#{$pop_statusDiv_width} * -1) / 2);       
         }
     }
 
@@ -118,10 +119,10 @@
         }    
         
         &.statusDiv{
-            $popupStatusDivW: 550px;
-            width: $popupStatusDivW;
+            $pop_statusDiv_width: 550px;
+            width: $pop_statusDiv_width;
             height: 200px;
-            margin-left: calc(calc(#{$popupStatusDivW} * -1) / 2);  
+            margin-left: calc(calc(#{$pop_statusDiv_width} * -1) / 2);  
 
             .modalWrap{
                 @include posTRBL(20px, 20px, 20px, 20px);

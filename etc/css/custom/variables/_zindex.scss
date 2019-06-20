@@ -2,44 +2,43 @@
    Z Index Variables | Custom [zindex.scss]
    ========================================================================== */
     // Negative
-$zIndexNegative:           -1;
+$zIndex_negative:           -1;
         
     // Modal        
-$zIndexModalBG:            9000;
-$zIndexPopup:              9100;
-$zIndexButtonOver:         9200;
+$zIndex_modal_bg:            9000;
+$zIndex_modal_popup:         9100;
+$zIndex_button_topLevel:     9200;
         
     // Nav        
-$zIndexNav:                8800;
-$zIndexNavOpen:            8900;
-$zIndexNavClose:           $zIndexButtonOver;
-$zIndexNavUl_list:          190;
-$zIndexNavUlDrawer:        $zIndexPopup;
-$zIndexNavUlAccordion:     8900;
-$zIndexNavSubMenuLevel1:   $zIndexButtonOver;
-$zIndexNavSubMenuLevel2:   9300;
-$zIndexNavSubMenuLevel3:   9400;
-$zIndexNavSubMenuBack:     9500;
+$zIndex_nav:                 8800;
+$zIndex_nav_open:            8900;
+$zIndex_nav_close:           $zIndex_button_topLevel;
+$zIndex_navDrawer_ul:        $zIndex_modal_popup;
+$zIndex_navAcc_ul:           8900;
+$zIndex_navSubMenu_level1:   $zIndex_button_topLevel;
+$zIndex_navSubMenu_level2:   9300;
+$zIndex_navSubMenu_level3:   9400;
+$zIndex_navSubMenu_back:     9500;
           
     // Header      
-$zIndexHeader:             $zIndexNav;
-$zIndexHeaderTopper:       $zIndexNav;
-$zIndexLogoH:              100;
-$zIndexLogoHClicked:       $zIndexButtonOver;  
-$zIndexLogoHTopper:        $zIndexButtonOver;  
-       
+$zIndex_header:              $zIndex_nav;
+$zIndex_header_topper:       $zIndex_nav;
+$zIndex_logo_height:         100;
+$zIndex_logo_height_clicked: $zIndex_button_topLevel;  
+$zIndex_logo_height_topper:  $zIndex_button_topLevel;  
+
     // Lang       
-$zIndexLang:               9300;
+$zIndex_language:               9300;
      
     // Social     
-$zIndexSocial:             1100;
-$zIndexSocialClicked:      $zIndexButtonOver;
+$zIndex_social:             1100;
+$zIndex_social_clicked:      $zIndex_button_topLevel;
      
     // Slick Slider     
-$zIndexSlickMain:          90;
+$zIndex_slider:          90;
 $zIndex_slider_arrows_dots:  100;
  
     // Lightbox 
-$zIndexLightbox:           10000;
-$zIndexLightboxOverlay:    9999;
-$zIndexLBnav:              10;
+$zIndex_lightbox:           10000;
+$zIndex_lightbox_overlay:    9999;
+$zIndex_lightbox_nav:              10;

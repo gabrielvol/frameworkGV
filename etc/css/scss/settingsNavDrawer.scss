@@ -22,12 +22,12 @@
             .mainMenu{
                 box-sizing: border-box;
                 position: fixed;
-                z-index: $zIndexNavUlDrawer;
-                left: calc(-1 * #{$navDrawerWidth});
-                width: calc(#{$navDrawerWidth} - 5px);
-                max-width: $navDrawerMaxWidth;
+                z-index: $zIndex_navDrawer_ul;
+                left: calc(-1 * #{$navDrawer_width});
+                width: calc(#{$navDrawer_width} - 5px);
+                max-width: $navDrawer_widthMax;
                 background-color: $navBgColour_BT;
-                padding-top: calc(#{$logo_height_ClickedFH} + 5px);
+                padding-top: calc(#{$logo_clicked_height_heightFull} + 5px);
                 padding-right: 5px;
                 padding-left: 5px;
                 padding-bottom: 30px;
@@ -76,11 +76,11 @@
                     
                     &.backMenu{
                         .topLevelItem{
-                            background-image: url('/nuevo/img/#{$navArrow_backMenu_TLI}');
+                            background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI}');
                             color: $navFontColour_backMenu_TLI;
 
                             &.open{
-                                background-image: url('/nuevo/img/#{$navArrow_backMenu_TLI_openDR}'); 
+                                background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI_openDR}'); 
                             }
                         } 
                     }
@@ -89,9 +89,9 @@
                 .subMenu{
                     position: relative;
                     top: 0;
-                    right: $navDrawerWidth;
+                    right: $navDrawer_width;
                     width: calc(100%);
-                    max-width: $navDrawerMaxWidth;
+                    max-width: $navDrawer_widthMax;
                     
                     a,
                     .topLevelItem{
@@ -109,7 +109,7 @@
                     }
 
                     &.backMenuSubMenu{
-                        z-index: $zIndexNavSubMenuBack;
+                        z-index: $zIndex_navSubMenu_back;
                     }
 
                     &.openDR{
@@ -125,7 +125,7 @@
                         color: $navFontColour_TLI_level1_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrow_TLI_level1_openDR}');
+                            background-image: url('/nuevo/img/#{$navArrows_TLI_level1_openDR}');
                         }
                     }
                     
@@ -138,7 +138,7 @@
                 }
                 
                 .subMenuLevel1{
-                    z-index: $zIndexNavSubMenuLevel1;
+                    z-index: $zIndex_navSubMenu_level1;
                     background-color: $navBgColour_ulLevel1_BT;
 
                     li{
@@ -151,7 +151,7 @@
 
                     > .current{  
                         background-color: $navBgColour_itemCurrent_level1_BT; 
-                        background-image: url('/nuevo/img/#{$navArrow_itemCurrent_level1}');
+                        background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level1}');
                         
                         a{
                             color: $navFontColour_itemCurrent_level1_BT;
@@ -167,7 +167,7 @@
                         color: $navFontColour_itemLevel2_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrow_TLI_level2_openDR}');
+                            background-image: url('/nuevo/img/#{$navArrows_TLI_level2_openDR}');
                         }
                     }
                     
@@ -180,7 +180,7 @@
                 }
                 
                 .subMenuLevel2{
-                    z-index: $zIndexNavSubMenuLevel2;
+                    z-index: $zIndex_navSubMenu_level2;
                     background-color: $navBgColour_ulLevel2_BT;
 
                     li{
@@ -193,7 +193,7 @@
 
                     > .current{      
                         background-color: $navBgColour_itemCurrent_level2_BT; 
-                        background-image: url('/nuevo/img/#{$navArrow_itemCurrent_level2}'); 
+                        background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level2}'); 
                         
                         a{
                             color: $navFontColour_itemCurrent_level2_BT;
@@ -209,7 +209,7 @@
                         color: $navFontColour_itemLevel2_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrow_TLI_level3_openDR}');
+                            background-image: url('/nuevo/img/#{$navArrows_TLI_level3_openDR}');
                         }
                     }
                     
@@ -222,7 +222,7 @@
                 }
                 
                 .subMenuLevel3{
-                    z-index: $zIndexNavSubMenuLevel3;
+                    z-index: $zIndex_navSubMenu_level3;
                     background-color: $navBgColour_ulLevel3_BT;
 
                     li{
@@ -235,7 +235,7 @@
 
                     > .current{      
                         background-color: $navBgColour_itemCurrent_level3_BT;
-                        background-image: url('/nuevo/img/#{$navArrow_itemCurrent_level3}'); 
+                        background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level3}'); 
                         
                         a{
                             color: $navFontColour_itemCurrent_level3_BT;

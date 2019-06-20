@@ -52,7 +52,7 @@
             &,
             a,
             .topLevelItem{
-                @include equalHeightAndLineHeight($navHAT);
+                @include equalHeightAndLineHeight($nav_height_AT);
             }
 
             a,
@@ -131,32 +131,32 @@
                         &,
                         a,
                         .topLevelItem{
-                            height: $topperHeight;
+                            height: $topper_height_global;
                         }
                     }
                         
                     > .current{
                         a,
                         .topLevelItem{
-                            @include borderStyleB($navBcColour_topperItemCurrent, 3px);
+                            @include borderStyleB($navBcColour_topper_itemCurrent, 3px);
                         }
                     }
 
                     a,
                     .topLevelItem{
-                        line-height: $topperHeight;
+                        line-height: $topper_height_global;
                     }
                 }
                 
                 @if $nav_hasSub_level1_act == "on"{
                     .subMenuLevel1{
-                        $subMenuBorderRadiusB: 6px;
+                        $navSubMenu_borderRadiusB: 6px;
                         
-                        @include borderRadiusB($subMenuBorderRadiusB);
-                        top: $topperHeight;
+                        @include borderRadiusB($navSubMenu_borderRadiusB);
+                        top: $topper_height_global;
                         left: 0;
-                        background-image: $bgGradBlackEighty;
-                        filter: $bgGradBlackEightyFilter;
+                        background-image: $bgGradient_blackEighty;
+                        filter: $bgGradient_blackEighty_filter;
                         padding-bottom: 5px;
 
                         &, li{
@@ -181,7 +181,7 @@
                     
                             &:last-child{
                                 &, a{
-                                    @include borderRadiusB($subMenuBorderRadiusB);
+                                    @include borderRadiusB($navSubMenu_borderRadiusB);
                                 }
                             }
                         }
@@ -204,7 +204,7 @@
                     @if $nav_text_white_act == "on"{
                         > a,
                         > .topLevelItem{
-                            text-shadow: $whiteTextHoverShadow;
+                            text-shadow: $text_white_hoverShadow;
                         }
                     }
 
@@ -222,7 +222,7 @@
             &,
             a,
             .topLevelItem{
-                @include equalHeightAndLineHeight($navHATL);
+                @include equalHeightAndLineHeight($nav_height_ATL);
             }
             
             a,

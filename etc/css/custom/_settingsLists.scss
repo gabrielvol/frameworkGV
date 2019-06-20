@@ -14,7 +14,7 @@
 .bulleted_dot,
 .bulleted_square{
     li{        
-        $bulletSize: 7px;        
+        $bullet_size: 7px;        
         
         list-style-type: none;
         box-sizing: border-box;
@@ -27,10 +27,10 @@
             top: 5px;
             left: 0;
             width: 7px;
-            height: $bulletSize;
+            height: $bullet_size;
             background-repeat: no-repeat;
             background-position: left top;
-            background-size: $bulletSize;
+            background-size: $bullet_size;
         }
     }
 }    
@@ -51,31 +51,31 @@
     }
 }
 
-.fileList{
+.listFile{
     li{  
-        $icSize: 30px;
+        $listFile_icon_size: 30px;
 
         box-sizing: border-box;
         position: relative;
-        min-height: $icSize;
+        min-height: $listFile_icon_size;
         padding-top: 5px;  
-        padding-left: calc(#{$icSize} + 2px);
+        padding-left: calc(#{$listFile_icon_size} + 2px);
 
         a{
             height: auto;
-            min-height: $icSize;
+            min-height: $listFile_icon_size;
             line-height: 1.3em;
         }
 
         &::before{
-            @include squareSize($icSize);
+            @include squareSize($listFile_icon_size);
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             background-repeat: no-repeat;
             background-position: left top;
-            background-size: auto $icSize;
+            background-size: auto $listFile_icon_size;
         }
     }
 

@@ -11,10 +11,10 @@ $navFontColour_TLI_level1_BT:            $navFontColour_TLI_level0_BT;
 $navFontColour_TLI_level2_BT:            $navFontColour_TLI_level1_BT;
 $navFontColour_TLI_level3_BT:            $navFontColour_TLI_level2_BT;
 
-$navFontColour_itemLevel0_BT:           $navFontColour_TLI_level0_BT;
-$navFontColour_itemLevel1_BT:           $navFontColour_TLI_level1_BT;
-$navFontColour_itemLevel2_BT:           $navFontColour_TLI_level2_BT; 
-$navFontColour_itemLevel3_BT:           $navFontColour_TLI_level3_BT; 
+$navFontColour_itemLevel0_BT:            $navFontColour_TLI_level0_BT;
+$navFontColour_itemLevel1_BT:            $navFontColour_TLI_level1_BT;
+$navFontColour_itemLevel2_BT:            $navFontColour_TLI_level2_BT; 
+$navFontColour_itemLevel3_BT:            $navFontColour_TLI_level3_BT; 
 
 $navFontColour_TLICurrent_level0_BT:     $navFontColour_TLI_level0_BT;
 $navFontColour_TLICurrent_level1_BT:     $navFontColour_TLI_level1_BT;
@@ -26,27 +26,27 @@ $navFontColour_itemCurrent_level1_BT:    $navFontColour_TLICurrent_level1_BT;
 $navFontColour_itemCurrent_level2_BT:    $navFontColour_TLICurrent_level2_BT;
 $navFontColour_itemCurrent_level3_BT:    $navFontColour_TLICurrent_level3_BT;
 
-$navFontColour_backMenu_TLI:            $white!important;
+$navFontColour_backMenu_TLI:             $white!important;
 
 // Nav AT
-$navFontColour_item_AT:               $fontColour_main_global;
-$navFontColour_item_hover:            $navFontColour_item_AT;
-$navFontColour_itemSub_AT:            $navFontColour_item_AT;
-$navFontColour_itemSub_hover:         $navFontColour_itemSub_AT;
-
-$navFontColour_itemCurrent_AT:        $navFontColour_item_AT;
-$navFontColour_itemCurrent_hover:     $navFontColour_itemCurrent_AT;
-$navFontColour_itemSubCurrent_AT:     $navFontColour_item_AT;
-$navFontColour_itemSubCurrent_hover:  $navFontColour_itemSubCurrent_AT;
+$navFontColour_item_AT:                  $fontColour_main_global;
+$navFontColour_item_hover:               $navFontColour_item_AT;
+$navFontColour_itemSub_AT:               $navFontColour_item_AT;
+$navFontColour_itemSub_hover:            $navFontColour_itemSub_AT;
+   
+$navFontColour_itemCurrent_AT:           $navFontColour_item_AT;
+$navFontColour_itemCurrent_hover:        $navFontColour_itemCurrent_AT;
+$navFontColour_itemSubCurrent_AT:        $navFontColour_item_AT;
+$navFontColour_itemSubCurrent_hover:     $navFontColour_itemSubCurrent_AT;
 
 // Topper
-$navFontColour_topper:              $navFontColour_item_AT;
-$navFontColour_topper_hover:        $navFontColour_topper;
-$navFontColour_topper_itemCurrent:  $navFontColour_item_AT;
-
-// Hamburger
-$navFontColour_hamburger:           $greyXD;
-$navFontColour_hamburger_clicked:   $navFontColour_hamburger;
+$navFontColour_topper:                   $navFontColour_item_AT;
+$navFontColour_topper_hover:             $navFontColour_topper;
+$navFontColour_topper_itemCurrent:       $navFontColour_item_AT;
+     
+// Hamburger     
+$navFontColour_hamburger:                $greyXD;
+$navFontColour_hamburger_clicked:        $navFontColour_hamburger;
 
 
 
@@ -54,15 +54,15 @@ $navFontColour_hamburger_clicked:   $navFontColour_hamburger;
 // Background Colours
 
 // Nav BT
-$navBgColour_BT:           $bgWhite;
-
-$navBgColour_ulLevel1_BT:     transparent;
-$navBgColour_ulLevel2_BT:     transparent;
-$navBgColour_ulLevel3_BT:     transparent;
-
-$navBgColour_itemLevel1_BT:     transparent;
-$navBgColour_itemLevel2_BT:     transparent;
-$navBgColour_itemLevel3_BT:     transparent;
+$navBgColour_BT:                     $bgWhite;
+       
+$navBgColour_ulLevel1_BT:            transparent;
+$navBgColour_ulLevel2_BT:            transparent;
+$navBgColour_ulLevel3_BT:            transparent;
+     
+$navBgColour_itemLevel1_BT:          transparent;
+$navBgColour_itemLevel2_BT:          transparent;
+$navBgColour_itemLevel3_BT:          transparent;
 
 $navBgColour_itemCurrent_level0_BT:  darken($navBgColour_BT, 5%);
 $navBgColour_itemCurrent_level1_BT:  darken($navBgColour_ulLevel1_BT, 5%);
@@ -104,7 +104,7 @@ $navBcColour_BT:                $bcBlack;
 $navBcColour_open:              $bcGreyD;
 $navBcColour_close:             $bcGreyD;
  
-$navBcColour_navDrawer:         $bcBlack;
+$navBcColourR_navDrawer:         $bcBlack;
 $navBcColour_navAcc:            $bcGreyXXL;
 
 $navBcColour_itemCurrent:       $bcGrey;
@@ -121,4 +121,4 @@ $navBcColour_itemSub_AT:        $navBcColour_itemLevel1_BT;
 
 // Nav Topper
 $navBcColour_topper:            $bcGreyD;
-$navBcColour_topperItemCurrent: $bcGrey;
+$navBcColour_topper_itemCurrent: $bcGrey;

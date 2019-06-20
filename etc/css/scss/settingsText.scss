@@ -109,7 +109,7 @@ a.white{
         color: $white;
     }
     &:focus, &:hover{
-        text-shadow: $whiteTextHoverShadow;
+        text-shadow: $text_white_hoverShadow;
     }
     &.noHover{
         &:focus, &:hover{        

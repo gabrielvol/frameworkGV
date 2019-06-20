@@ -18,8 +18,8 @@
 }
 
 // Background Shadows
-$bgShadowTurl: url('/nuevo/img/bg_shadowT.png');
-$bgShadowBurl: url('/nuevo/img/bg_shadowB.png');
+$bgShadowT_img_url: url('/nuevo/img/bg_shadowT.png');
+$bgShadowB_img_url: url('/nuevo/img/bg_shadowB.png');
 
 .bgShadowT,
 .bgShadowB,
@@ -29,16 +29,16 @@ $bgShadowBurl: url('/nuevo/img/bg_shadowB.png');
 }
 
 .bgShadowT{
-    background-image: $bgShadowTurl;
+    background-image: $bgShadowT_img_url;
     background-position: center top;
 }
 
 .bgShadowB{
-    background-image: $bgShadowBurl;
+    background-image: $bgShadowB_img_url;
     background-position: center bottom;
 }
 
 .bgShadowV{
-    background-image: $bgShadowTurl, $bgShadowBurl;
+    background-image: $bgShadowT_img_url, $bgShadowB_img_url;
     background-position: center top, center bottom;
 }

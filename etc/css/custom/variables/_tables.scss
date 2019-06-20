@@ -1,12 +1,12 @@
 /* =============================================================================
    Tables Variables | Custom [tables.scss]
    ========================================================================== */
-$tableWBT:  $hundred;
-$tableWAT:  700px;
-$tableWATL: 970px;
+$table_width_BT:  $hundred;
+$table_width_AT:  700px;
+$table_width_ATL: 970px;
 
 //Custom Sizes
-$tableSizesMapBeforeTablet:(
+$table_sizes_map_BT:(
     //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesBeforeTablet'
@@ -15,13 +15,13 @@ $tableSizesMapBeforeTablet:(
     tableWidthSmall:    500px
     
 );
-$tableSizesMapTablet:(
+$table_sizes_map_AT:(
     //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesTablet'
     
 );
-$tableSizesMapTabletL:(
+$table_sizes_map_ATL:(
     //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesTabletL'
@@ -30,4 +30,4 @@ $tableSizesMapTabletL:(
 );
 
 //Rounded Table
-$helpers_borders_radius_globalTable: $helpers_borders_radius_global;
+$helpers_border_radius_table: $helpers_border_radius_global;

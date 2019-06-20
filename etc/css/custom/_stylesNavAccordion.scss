@@ -5,31 +5,31 @@
     @include navBT{
         .navMain{
             .hamb{
-                margin-top: calc(-1 * calc(#{$navAccHambHeight} / 2));
+                margin-top: calc(-1 * calc(#{$navAcc_hamburger_height} / 2));
             }
 
             .navOpen{
-                @if $hamburger_only == "on"{
-                    @include squareSize($navAccHambHeight);
+                @if $hamburger_only_act == "on"{
+                    @include squareSize($navAcc_hamburger_height);
                     background-position: center;
                     padding: $zero;
                     text-indent: -9999px;
                 } @else {
                     width: 90px;
-                    height: $navAccHambHeight;
+                    height: $navAcc_hamburger_height;
                     background-position: 10px center;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
-                    line-height: calc(#{$navAccHambHeight} + 5px);
+                    line-height: calc(#{$navAcc_hamburger_height} + 5px);
                 }
-                @include borderRadius($navBorderRadius); 
+                @include borderRadius($nav_borderRadius); 
                 border: 1px solid $navBcColour_open!important;
                 background-color: $navBgColour_hamburger;
                 background-size: 15px;
             }
 
             .navClose{
-                @include squareSize($navAccHambHeight);
+                @include squareSize($navAcc_hamburger_height);
                 background-size: 15px;
                 border: 1px solid $navBcColour_close!important;
             }

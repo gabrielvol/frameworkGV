@@ -1,25 +1,25 @@
 /* =============================================================================
    Language Switch Styles | Custom [stylesLanguageSwtich.scss]
    ========================================================================== */
-$flagWidthBT: 38px;
-$flagHeightBT: 25px;
+$anguage_flag_width_BT: 38px;
+$language_flag_height_BT: 25px;
 
-$flagWidthAT: $flagWidthBT;
-$flagHeightAT: $flagHeightBT;
+$language_flag_width_AT: $anguage_flag_width_BT;
+$language_flag_height_AT: $language_flag_height_BT;
 
 /*
-$flagWidthAT: 48px;
-$flagHeightAT: 32px;
+$language_flag_width_AT: 48px;
+$language_flag_height_AT: 32px;
 */
 
 .lang{
-    z-index: $zIndexLang;
+    z-index: $zIndex_language;
     
     a{
         @include borderStyle($bcWhite);
         @include transition(0.3s);
         
-        @if $language_flags_circled_act == "on"{
+        @if $language_flag_circled_act == "on"{
             @include borderRadius(50%);
 
             &:focus, &:hover{
@@ -35,21 +35,21 @@ $flagHeightAT: 32px;
         li{
             a,
             img{
-                width: $flagWidthBT;
-                height: $flagHeightBT;
+                width: $anguage_flag_width_BT;
+                height: $language_flag_height_BT;
             }
 
             & + li{
                 margin-left: 15px;
             }
         
-            @if $language_flags_circled_act == "on"{
+            @if $language_flag_circled_act == "on"{
                 &, a{
-                    @include squareSize($flagHeightBT);
+                    @include squareSize($language_flag_height_BT);
                 }
                 
                 img{
-                    @include centerAbsolute($flagWidthBT, $flagHeightBT);
+                    @include centerAbsolute($anguage_flag_width_BT, $language_flag_height_BT);
                 }
             }
         }
@@ -69,21 +69,21 @@ $flagHeightAT: 32px;
 
         li{
             a, img{
-                width: $flagWidthAT;
-                height: $flagHeightAT;
+                width: $language_flag_width_AT;
+                height: $language_flag_height_AT;
             }
 
             & + li{
                 margin-left: 10px;
             }
         
-            @if $language_flags_circled_act == "on"{
+            @if $language_flag_circled_act == "on"{
                 &, a{
-                    @include squareSize($flagHeightAT);
+                    @include squareSize($language_flag_height_AT);
                 }
                 
                 img{
-                    @include centerAbsolute($flagWidthAT, $flagHeightAT);
+                    @include centerAbsolute($language_flag_width_AT, $language_flag_height_AT);
                 }
             }
         }
