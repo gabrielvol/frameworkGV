@@ -27,7 +27,8 @@
     $company_tel_sec_countryCode   = "+54 911 " . $telN_sec;   
 
         //-- Titling
-    $site_desc_global = ""; 
+    $site_desc_global    = ""; 
+    $site_desc_global_en = ""; 
     
     // -------------------------------------------------------------------------
     // SOCIAL NETWORKS

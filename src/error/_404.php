@@ -8,7 +8,7 @@
     //$site_title_GB = "UntitledPage";
     
     $site_desc       = $site_desc_global;
-    //$site_desc_GB  = "";
+  //$site_desc_GB    = $site_desc_global_en;
     
     $nav_pageCurrent = 0;
     

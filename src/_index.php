@@ -3,11 +3,11 @@
     
     $page_index      = 1;
     
-    $site_title      = "PáginaSinTítulo";
-  //$site_title_GB   = "UntitledPage";
+    $site_title      = $company_name_full;
+  //$site_title_GB   = $company_name_full;
     
     $site_desc       = $site_desc_global;
-  //$site_desc_GB    = "";
+  //$site_desc_GB    = $site_desc_global_en;
     
 //---Open Graph Start
                         // Max 35 char

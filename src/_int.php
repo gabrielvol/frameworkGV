@@ -7,7 +7,7 @@
   //$site_title_GB  = "PáginaInterna | ".$company_name_full;
     
     $site_desc       = $site_desc_global;
-  //$site_desc_GB   = "";
+  //$site_desc_GB    = $site_desc_global_en;
     
 //---Open Graph Start
                         // Max 35 char
