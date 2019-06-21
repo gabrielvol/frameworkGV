@@ -61,6 +61,10 @@
                 width: $footer_logoFloated_width;
                 padding-right: 20px;
                 padding-left: 20px;
+                
+                .logoF{
+                    width: 100%;
+                }
             }
             
             .txt_footerFloatedCont{
@@ -68,7 +72,9 @@
             }
 
             } @else {
-            /* */     
+            .logoF{
+                width: $logo_width_footer_AT;
+            }  
         }
     }
     
