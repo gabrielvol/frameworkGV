@@ -15,8 +15,8 @@
 <!--<script src="/nuevo/js/_lightbox.js"></script>-->
 
 <?php endif; if($nav_pageCurrent == 0): // Home ?>
-<!--<script src="/clientes/wsc/js/aaaaaa.js"></script>-->
-<!--<script src="/clientes/wsc/js/_aaaaaa.js"></script>-->
+<!--<script src="/nuevo/js/aaaaaa.js"></script>-->
+<!--<script src="/nuevo/js/_aaaaaa.js"></script>-->
 
 <?php endif; if($nav_pageCurrent == 000): // SECTIONNAME ?>
 <!--<script src="/nuevo/js/aaaaaa.js"></script>-->
