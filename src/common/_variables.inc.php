@@ -13,10 +13,16 @@
     $company_name_full    = "CompanyNameFull";
     $company_name_short   = "CompanyNameShort";
     
+        //-- Address
+    $company_address_main          = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
+    $company_address_main_en       = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
+    
         //-- Tels
     $company_tel_main              = "12345678";
+    $company_tel_main_formatted    = "(011) 1234-5678";
     $company_tel_main_countryCode  = "+54 911 " . $telN_main;
     $company_tel_main_whatsapp     = "54911".$telN_main;
+    
     $company_tel_sec               = "12345678";
     $company_tel_sec_countryCode   = "+54 911 " . $telN_sec;   
 
@@ -37,11 +43,11 @@
     $social_googleYouTube_url   = "https://www.youtube.com/user/ffffffffffffff"; 
     
     $social_twitter_url         = "https://www.twitter.com/usuario";
-    $social_linkedin_url        = "https://www.linkedin.com/usuario";    
+    $social_linkedin_url        = "https://www.linkedin.com/usuario";
     
     // -------------------------------------------------------------------------
     // HEADER
-    $logoImgBgBefore            = 0;    
+    $logoImgBgBefore            = 0;
     
     // -------------------------------------------------------------------------
     // NAVIGATION

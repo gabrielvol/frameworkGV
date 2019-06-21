@@ -3,15 +3,15 @@
    ========================================================================== */
 
 // Menu y logo 
-    $logoNav_floated_act: on;
+    $logoNav_floated_act:       off;
     @import "-logo"; 
     
     
 // Header 
-    $header_fixed_act: on;
+    $header_fixed_act:          off;
     @import "-headerHeight";    
     
-    $index_fullHeight_act: off;
+    $index_fullHeight_act:      off;
     
     
 // Language Flags

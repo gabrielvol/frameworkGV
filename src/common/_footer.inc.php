@@ -1,6 +1,17 @@
 <footer id="footer" class="">        
     <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
     
+    <div class="logo_footerFloatedCont borderBox">
+        <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
+    </div>
+    <div class="txt_footerFloatedCont borderBox">
+        <p class="gooAddress">
+            <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($idioma == 'pt_BR'){ echo $company_address_main_pt; } else if($idioma == 'en_GB') { echo $company_address_main_en; } else { echo $company_address_main; } ?></a>
+        </p>
+        <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
+        <p><?php echo _("Correo eletr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_addressMain ?>"><?php echo $social_email_addressMain ?></a></p>
+    </div>  
+    
     <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
         <ul class="mainMenu unstyled clearfix">
             <?php include('nav.list.inc.php'); ?>                
@@ -10,8 +21,12 @@
     <?php include('social.inc.php'); ?>
     
     <p class="gooAddress">
-        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php echo _("Direccion"); ?></a>
+        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($idioma == 'pt_BR'){ echo $company_address_main_pt; } else if($idioma == 'en_GB') { echo $company_address_main_en; } else { echo $company_address_main; } ?></a>
     </p>
+    
+    <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
+    
+    <p><?php echo _("Correo eletr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_addressMain ?>"><?php echo $social_email_addressMain ?></a></p>
     
     <p class="footerCopy">&copy; <?php echo $dateThisYear." - ".$company_name_full ?></p>
     

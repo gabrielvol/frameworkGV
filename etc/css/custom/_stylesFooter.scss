@@ -1,16 +1,18 @@
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
-@import "variables/_footerHeight.scss";
-
 #footer{    
     .navFooter{
         ul{}
         
         li{}
         
-        .subMenuLevel1{
-            display: none;
+        @if $nav_hasSub_act == "on"{
+            .subMenuLevel1
+            .subMenuLevel2
+            .subMenuLevel3{
+                display: none;
+            }
         }
     }
     
@@ -22,10 +24,6 @@
     }
     
     .footerCopy{}
-    
-    .logoF{
-        width: 100px;
-    }
     
     .footerLegal{
         ul{}
@@ -40,6 +38,38 @@
         .copy{}
         
         .tos{}
+    }
+    
+    @include beforeTablet{    
+        @if $footer_floatedContent_act == "on"{
+            /* */        
+            } @else {    
+            .logoF{
+                width: 100px;
+            }        
+        }
+    }
+    
+    @include afterTablet{    
+        @if $footer_floatedContent_act == "on"{
+            .logo_footerFloatedCont,
+            .txt_footerFloatedCont{
+                float: left;
+            }
+            
+            .logo_footerFloatedCont{
+                width: $footer_logoFloated_width;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            
+            .txt_footerFloatedCont{
+                width: calc(100% - #{$footer_logoFloated_width});                
+            }
+
+            } @else {
+            /* */     
+        }
     }
     
     @include beforeTabletLandscape{
