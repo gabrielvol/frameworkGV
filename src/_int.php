@@ -24,8 +24,8 @@
     $openGraph_siteName = $openGraph_title;
 //---Open Graph End
     
-    $navCurrent     = 1;
-    $navCurrent_int  = 0;
+    $nav_pageCurrent     = 1;
+    $nav_pageCurrent_int  = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.variableCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');

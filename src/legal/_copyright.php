@@ -10,7 +10,7 @@
     $site_desc       = $site_desc_global;
     //$site_desc_GB  = "";
     
-    $navCurrent = 0;
+    $nav_pageCurrent = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.variableCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
