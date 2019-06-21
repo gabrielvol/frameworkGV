@@ -4,12 +4,12 @@
 
 // Menu y logo 
     $logoNav_floated_act:       off;
-    @import "-logo"; 
+    @import "_logoSizes"; 
     
     
 // Header 
     $header_fixed_act:          off;
-    @import "-headerHeight";    
+    @import "_headerHeight";    
     
     $index_fullHeight_act:      off;
     
