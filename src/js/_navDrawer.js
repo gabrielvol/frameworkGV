@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(this).closest('#header').find('.social').addClass('clicked');
         $(this).closest('#nav').find('.mainMenu').addClass('open');
         
-        $(this).closest('#nav').find('.modalNav').show( '2000', 'swing', function() {
+        $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
             $(this).closest('#header').find('.logoH, .lang').addClass('clicked');
             $(this).closest('#nav').find('.navClose').addClass('clicked');
         });
@@ -18,7 +18,7 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.navClose, .navOpen').removeClass('clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
         
-        $(this).closest('#nav').find('.modalNav').hide('fast', 'swing');
+        $(this).closest('#nav').find('.modal_nav').hide('fast', 'swing');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
         
         $(this).closest('#nav').find('.subMenu').removeClass('openDR');
@@ -38,7 +38,7 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.navOpen').removeClass('clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
         
-        $(this).closest('#nav').find('.modalNav').hide('fast', 'swing');
+        $(this).closest('#nav').find('.modal_nav').hide('fast', 'swing');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
         
         $(this).closest('#nav').find('.subMenu').removeClass('openDR');
@@ -50,7 +50,7 @@ $(document).ready(function () {
         });
     });
 
-    $('.modalNav').click(function () {
+    $('.modal_nav').click(function () {
         $(this).hide('fast');
         
         $(this).closest('#header').find('.logoH, .social, .lang').removeClass('clicked');

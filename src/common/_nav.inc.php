@@ -20,7 +20,7 @@
             }    
             
             echo '</ul>
-            <div class="modalBG modalNav">&nbsp;</div>';
+            <div class="modalBG modal_nav">&nbsp;</div>';
         }
     ?>
 </nav>

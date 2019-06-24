@@ -82,10 +82,20 @@
    Header Activators | Custom [headerActivators.scss]
    ========================================================================== */
 /* =============================================================================
-   Logo Variables | Custom [logo.scss]
+   Logo Sizes | Custom [logoSizes.scss]
    ========================================================================== */
 /* =============================================================================
    Header Height Variables | Custom [headerHeight.scss]
+   ========================================================================== */
+/* -------------------------------------
+    Full height index                 */
+/*  Full height index
+    --------------------------------- */
+/* =============================================================================
+   Footer Activators | Custom [footerActivators.scss]
+   ========================================================================== */
+/* =============================================================================
+   Footer Sizes Variables | Custom [footerSizes.scss]
    ========================================================================== */
 /* -------------------------------------
     Full height index                 */
@@ -1414,22 +1424,22 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    copyright Styles | Custom [stylesCopyright.scss]
    ========================================================================== */
-.copyright {
+.section_copyright {
   padding-bottom: 100px; }
-  .copyright h1 {
+  .section_copyright h1 {
     font-size: 1.6rem; }
-  .copyright p, .copyright li {
+  .section_copyright p, .section_copyright li {
     font-size: 1rem; }
-  .copyright .hDos {
+  .section_copyright .hDos {
     font-size: 1.3rem; }
-  .copyright .lic {
+  .section_copyright .lic {
     font-size: 1.1rem; }
-    .copyright .lic,
-    .copyright .lic + p {
+    .section_copyright .lic,
+    .section_copyright .lic + p {
       margin-top: 20px; }
-  .copyright .nota {
+  .section_copyright .nota {
     font-size: 0.9rem; }
-    .copyright .nota + p {
+    .section_copyright .nota + p {
       margin-top: 20px; }
 
 /* =============================================================================
@@ -1468,18 +1478,6 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Main Gobal Styles | Custom
    ========================================================================== */
-@media (max-width: 767px) {
-  #main {
-    padding-top: auto; } }
-
-@media (min-width: 768px) {
-  #main {
-    padding-top: 140px; } }
-
-@media (min-width: 1024px) {
-  #main {
-    padding-top: 85px; } }
-
 /* =============================================================================
    Internas Global Styles | Custom
    ========================================================================== */
@@ -1489,7 +1487,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Error Pages Styles | Custom [stylesError.scss]
    ========================================================================== */
-.errorPage .errorType {
+.section_error .errorType {
   font-size: 0.8rem;
   text-transform: uppercase; }
 
@@ -1597,7 +1595,7 @@ article, article::before, article::after, details, details::before, details::aft
    Modal y Popups Settings | Etc [settingsModalPopups.scss]
    ========================================================================== */
 .modalBG,
-.modalNav {
+.modal_nav {
   top: 0;
   right: 0;
   bottom: 0;
@@ -1611,32 +1609,32 @@ article, article::before, article::after, details, details::before, details::aft
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
   background-color: #000; }
 
-.modalNav {
+.modal_nav {
   opacity: 0.8;
   filter: alpha(opacity=80);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=80)";
   display: none;
   background-color: #000; }
   @media (min-width: 768px) {
-    .modalNav {
+    .modal_nav {
       display: none !important; } }
 
-.popup {
+.pop_main {
   z-index: 9100;
   left: 50%; }
-  .popup .closePop {
+  .pop_main .pop_close {
     z-index: 9200; }
 
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-.popup {
+.pop_main {
   position: fixed;
   top: 80px; }
-  .popup .closePop {
+  .pop_main .pop_close {
     border-radius: 50%;
     background-color: transparent;
-    background-image: url("/nuevo/img/popup_close.svg");
+    background-image: url("/nuevo/img/pop_close.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -1644,9 +1642,9 @@ article, article::before, article::after, details, details::before, details::aft
     height: 33px !important;
     background-size: 13px;
     border: 1px solid #666 !important; }
-    .popup .closePop, .popup .closePop:focus, .popup .closePop:hover {
+    .pop_main .pop_close, .pop_main .pop_close:focus, .pop_main .pop_close:hover {
       background-color: #fff; }
-  .popup .modalWrap {
+  .pop_main .pop_innerContainer {
     top: 0;
     right: 0;
     bottom: 0;
@@ -1654,7 +1652,7 @@ article, article::before, article::after, details, details::before, details::aft
     position: absolute;
     padding: 20px;
     overflow: auto; }
-  .popup.statusDiv {
+  .pop_main.pop_warning {
     /* CSS para usar centerPopup
             @include centerPopup(100px,100px,50%);
             max-width: 100%;
@@ -1665,20 +1663,21 @@ article, article::before, article::after, details, details::before, details::aft
     left: 50%;
     background-color: #fff;
     box-shadow: 0 0 15px 0 #000; }
-    .popup.statusDiv h2 {
+    .pop_main.pop_warning h2,
+    .pop_main.pop_warning h3 {
       font-size: 1.2rem; }
-    .popup.statusDiv p {
+    .pop_main.pop_warning p {
       width: 100% !important;
       background-color: transparent;
       padding: 0;
       color: #666;
       font-family: Arial;
       text-align: center; }
-      .popup.statusDiv p + p {
+      .pop_main.pop_warning p + p {
         margin-top: 0.8em; }
-      .popup.statusDiv p:last-child {
+      .pop_main.pop_warning p:last-child {
         padding-bottom: 50px; }
-    .popup.statusDiv .popOKdialog {
+    .pop_main.pop_warning .pop_submit {
       transition: all 1s ease;
       height: 30px;
       line-height: 30px;
@@ -1686,43 +1685,43 @@ article, article::before, article::after, details, details::before, details::aft
       max-width: 150px;
       background-color: #fff;
       font-size: 0.8rem; }
-      .popup.statusDiv .popOKdialog, .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+      .pop_main.pop_warning .pop_submit, .pop_main.pop_warning .pop_submit:focus, .pop_main.pop_warning .pop_submit:hover {
         border: 1px solid #999 !important; }
-      .popup.statusDiv .popOKdialog:focus, .popup.statusDiv .popOKdialog:hover {
+      .pop_main.pop_warning .pop_submit:focus, .pop_main.pop_warning .pop_submit:hover {
         background-color: #f4f4f4;
         color: #000; }
-    .popup.statusDiv .closePop {
+    .pop_main.pop_warning .pop_close {
       top: 10px;
       right: 10px; }
   @media (max-width: 499px) {
-    .popup.statusDiv {
+    .pop_main.pop_warning {
       width: 300px;
       margin-left: calc(calc(300px * -1) / 2); } }
   @media (min-width: 500px) {
-    .popup.statusDiv {
+    .pop_main.pop_warning {
       width: 60%;
       margin-left: calc(calc(60% * -1) / 2); } }
   @media (max-width: 600px) {
-    .popup .closePop {
+    .pop_main .pop_close {
       top: -45px;
       right: 0; }
-    .popup.statusDiv {
+    .pop_main.pop_warning {
       height: 220px; } }
   @media (min-width: 601px) {
-    .popup .closePop {
+    .pop_main .pop_close {
       top: -35px;
       right: -35px; }
-    .popup.statusDiv {
+    .pop_main.pop_warning {
       width: 550px;
       height: 200px;
       margin-left: calc(calc(550px * -1) / 2); }
-      .popup.statusDiv .modalWrap {
+      .pop_main.pop_warning .pop_innerContainer {
         top: 20px;
         right: 20px;
         bottom: 20px;
         left: 20px;
         padding: 20px; }
-      .popup.statusDiv .closePop {
+      .pop_main.pop_warning .pop_close {
         top: 10px;
         right: 10px; } }
 
@@ -1741,13 +1740,7 @@ article, article::before, article::after, details, details::before, details::aft
       box-sizing: border-box;
       padding-top: 20px;
       padding-bottom: 15px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
       height: auto; }
-      #header.topperShadow {
-        box-shadow: 0 0 7px #000; }
       #header .logoH {
         width: 50px; }
         #header .logoH a,
@@ -1774,50 +1767,31 @@ article, article::before, article::after, details, details::before, details::aft
           margin-right: auto;
           margin-left: auto; } }
   @media (min-width: 768px) {
-    #header {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      height: 140px; }
-      #header.topperShadow {
-        box-shadow: 0 0 7px #000; }
-      #header .logoH {
-        position: relative;
-        z-index: 100;
-        box-sizing: border-box;
-        float: left;
-        padding-right: 20px;
-        padding-left: 20px;
-        width: 210px; }
-        #header .logoH a,
-        #header .logoH img {
-          width: 100%; } }
+    #header .logoH {
+      position: relative;
+      z-index: 100;
+      width: 210px; }
+      #header .logoH a,
+      #header .logoH img {
+        width: 100%; } }
   @media (min-width: 1024px) {
-    #header {
-      height: 85px; }
-      #header .logoH {
-        width: 250px; } }
+    #header .logoH {
+      width: 250px; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
-/* =============================================================================
-   Footer Height Variables | Custom [footerHeight.scss]
-   ========================================================================== */
-/* -------------------------------------
-    Full height index                 */
-/*  Full height index
-    --------------------------------- */
-#footer .navFooter .subMenuLevel1 {
-  display: none; }
-
 #footer .gooAddress a {
   font-size: 1.1rem;
   line-height: 1.2em; }
 
-#footer .logoF {
-  width: 100px; }
+@media (max-width: 767px) {
+  #footer .logoF {
+    width: 100px; } }
+
+@media (min-width: 768px) {
+  #footer .logoF {
+    width: 100px; } }
 
 @media (max-width: 1023px) {
   #footer .gooAddress a {
@@ -2015,41 +1989,29 @@ nav li:focus a, nav li:hover a {
    Nav After Tablet Styles | Custom [stylesNav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .navMain {
-    float: left;
-    width: calc(100% - 210px);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    box-shadow: 0 0 7px #000; }
-    .navMain .mainMenu > li {
-      float: left; }
-    .navMain li,
-    .navMain li a,
-    .navMain li .topLevelItem {
-      height: 60px;
-      line-height: 60px; }
-    .navMain li a,
-    .navMain li .topLevelItem {
-      transition: all 1s ease;
-      font-size: 0.8rem;
-      padding-right: 5px;
-      padding-left: 5px; } }
+  .navMain li,
+  .navMain li a,
+  .navMain li .topLevelItem {
+    height: 60px;
+    line-height: 60px; }
+  .navMain li a,
+  .navMain li .topLevelItem {
+    transition: all 1s ease;
+    font-size: 0.8rem;
+    padding-right: 5px;
+    padding-left: 5px; } }
 
 @media (min-width: 1024px) {
-  .navMain {
-    width: calc(100% - 250px); }
-    .navMain li,
-    .navMain li a,
-    .navMain li .topLevelItem {
-      height: 60px;
-      line-height: 60px; }
-    .navMain li a,
-    .navMain li .topLevelItem {
-      font-size: 1rem;
-      padding-right: 10px;
-      padding-left: 10px; } }
+  .navMain li,
+  .navMain li a,
+  .navMain li .topLevelItem {
+    height: 60px;
+    line-height: 60px; }
+  .navMain li a,
+  .navMain li .topLevelItem {
+    font-size: 1rem;
+    padding-right: 10px;
+    padding-left: 10px; } }
 
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]

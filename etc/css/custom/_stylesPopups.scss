@@ -1,15 +1,15 @@
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
-.popup{
+.pop_main{
     position: fixed;
     top: 80px;
     
-    .closePop{
+    .pop_close{
         $pop_close_size: 33px;
 
         @include borderRadius(50%);
-        @include bgSvg(popup_close); 
+        @include bgSvg(pop_close); 
         width: $pop_close_size!important;
         height: $pop_close_size!important;
         background-size: 13px;
@@ -20,14 +20,14 @@
         }
     }
     
-    .modalWrap{
+    .pop_innerContainer{
         @include posTRBL;
         position: absolute;
         padding: 20px;
         overflow: auto;
     }
     
-    &.statusDiv{
+    &.pop_warning{
         /* CSS para usar centerPopup
             @include centerPopup(100px,100px,50%);
             max-width: 100%;
@@ -40,7 +40,8 @@
         background-color: $formStatus_msgOK_bgColour;          
         box-shadow: 0 0 15px 0 $black;
         
-        h2{
+        h2,
+        h3{
             font-size: 1.2rem;
         }
         
@@ -61,7 +62,7 @@
             }
         }
         
-        .popOKdialog{
+        .pop_submit{
             @include transition(1s);
             @include equalHeightAndLineHeight(30px);
             width: 40%;
@@ -79,57 +80,57 @@
             }            
         }
         
-        .closePop{
+        .pop_close{
             @include posTR(10px, 10px);
         }
     }
         
     @include mobileOnly{
-        &.statusDiv{
-            $pop_statusDiv_width: 300px;
+        &.pop_warning{
+            $pop_warning_width: 300px;
             
-            width: $pop_statusDiv_width;
-            margin-left: calc(calc(#{$pop_statusDiv_width} * -1) / 2);            
+            width: $pop_warning_width;
+            margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);            
         }
     }
 
     @include afterMobileLandscape{
-        &.statusDiv{
-            $pop_statusDiv_width: 60%;
-            width: $pop_statusDiv_width;
-            margin-left: calc(calc(#{$pop_statusDiv_width} * -1) / 2);       
+        &.pop_warning{
+            $pop_warning_width: 60%;
+            width: $pop_warning_width;
+            margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);       
         }
     }
 
     @include beforeMobile600{
-        .closePop{
+        .pop_close{
             top: -45px;
             right: 0;
         }
         
-        &.statusDiv{
+        &.pop_warning{
             height: 220px;      
         }
     }
 
     @include afterMobile600{
-        .closePop{
+        .pop_close{
             top: -35px;
             right: -35px;
         }    
         
-        &.statusDiv{
-            $pop_statusDiv_width: 550px;
-            width: $pop_statusDiv_width;
+        &.pop_warning{
+            $pop_warning_width: 550px;
+            width: $pop_warning_width;
             height: 200px;
-            margin-left: calc(calc(#{$pop_statusDiv_width} * -1) / 2);  
+            margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);  
 
-            .modalWrap{
+            .pop_innerContainer{
                 @include posTRBL(20px, 20px, 20px, 20px);
                 padding: 20px;
             }
 
-            .closePop{
+            .pop_close{
                 @include posTR(10px, 10px);
             }
         }

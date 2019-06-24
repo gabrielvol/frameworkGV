@@ -6,14 +6,14 @@ $zIndex_negative:           -1;
         
     // Modal        
 $zIndex_modal_bg:            9000;
-$zIndex_modal_popup:         9100;
+$zIndex_modal_pop_main:         9100;
 $zIndex_button_topLevel:     9200;
         
     // Nav        
 $zIndex_nav:                 8800;
 $zIndex_nav_open:            8900;
 $zIndex_nav_close:           $zIndex_button_topLevel;
-$zIndex_navDrawer_ul:        $zIndex_modal_popup;
+$zIndex_navDrawer_ul:        $zIndex_modal_pop_main;
 $zIndex_navAcc_ul:           8900;
 $zIndex_navSubMenu_level1:   $zIndex_button_topLevel;
 $zIndex_navSubMenu_level2:   9300;

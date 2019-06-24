@@ -418,12 +418,12 @@
 //FIN mensaje ok en $formStatusMSG_
                 
 //INICIA MENSAJE OK EN POPUP
-                $formStatusMSG__formName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formOK">'
+                $formStatusMSG__formName = '<div class="pop_main pop_warning borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="closePop pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="mbm '. $formPop_fontFamily_OK__formName .' green alignCenter">'._("$formStatusMSG_OK_globalA__formName").'</h2>'
                         . '<p class="status ok">'._("$formStatusMSG_OK_globalB__formName").'</p>'
-                        . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
+                        . '<button type="submit" class="pop_submit bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modalBG"></div>';
@@ -461,12 +461,12 @@
 //FIN mensaje error en $formStatusMSG_
                 
 //INICIA MENSAJE ERROR EN POPUP
-                $formStatusMSG__formName = '<div class="popup statusDiv borderBox pal" role="alertdialog" aria-labelledby="formError">'
+                $formStatusMSG__formName = '<div class="pop_main pop_warning borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="closePop pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="mbm '. $formPop_fontFamily_error__formName .' errorColour alignCenter">'._("$formStatusMSG_error_globalA__formName").'</h2>'
                         . '<p class="status error">'._("$formStatusMSG_error_globalB__formName").'</p>'
-                        . '<button type="submit" class="popOKdialog bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
+                        . '<button type="submit" class="pop_submit bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modalBG"></div>';

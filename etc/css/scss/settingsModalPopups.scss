@@ -2,7 +2,7 @@
    Modal y Popups Settings | Etc [settingsModalPopups.scss]
    ========================================================================== */
 .modalBG,
-.modalNav{
+.modal_nav{
     @include posTRBL();
     position: fixed;
     z-index: $zIndex_modal_bg;
@@ -13,7 +13,7 @@
     background-color: $modal_bgColour_global;
 }
 
-.modalNav{
+.modal_nav{
     @include opacityCustom($modal_opacity_nav);  
     display: none; 
     background-color: $modal_bgColour_nav;  
@@ -23,11 +23,11 @@
     }
 }
 
-.popup{
-    z-index: $zIndex_modal_popup;
+.pop_main{
+    z-index: $zIndex_modal_pop_main;
     left: 50%;
     
-    .closePop{
+    .pop_close{
         z-index: $zIndex_button_topLevel;
     }
 }

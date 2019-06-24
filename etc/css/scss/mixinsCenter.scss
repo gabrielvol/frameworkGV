@@ -45,7 +45,7 @@
     margin-right: $auto;
     margin-left: $auto;
 }
-    //Mixin para centrar popup
+    //Mixin para centrar pop_main
 @mixin centerPopup($widthValue, $heightValue, $topValue: 40%){
     $widthValueH: #{$widthValue} / 2;
     $heightValueH: #{$heightValue} / 2;    
