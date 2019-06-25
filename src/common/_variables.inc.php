@@ -12,10 +12,14 @@
     // COMPANY DATA
     $company_name_full    = "CompanyNameFull";
     $company_name_short   = "CompanyNameShort";
+
+        //-- Titling
+    $site_desc_global     = ""; 
+    $site_desc_global_en  = ""; 
     
         //-- Address
-    $company_address_main          = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
-    $company_address_main_en       = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
+    $company_address_main       = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
+    $company_address_main_en    = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
     
         //-- Tels
     $company_tel_main              = "12345678";
@@ -25,10 +29,6 @@
     
     $company_tel_sec               = "12345678";
     $company_tel_sec_countryCode   = "+54 911 " . $telN_sec;   
-
-        //-- Titling
-    $site_desc_global    = ""; 
-    $site_desc_global_en = ""; 
     
     // -------------------------------------------------------------------------
     // SOCIAL NETWORKS

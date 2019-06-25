@@ -6,8 +6,8 @@
     $site_title     = "PáginaInterna | ".$company_name_full;
   //$site_title_GB  = "PáginaInterna | ".$company_name_full;
     
-    $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_en;
+    $site_desc      = $site_desc_global;
+  //$site_desc_GB   = $site_desc_global_en;
     
 //---Open Graph Start
                         // Max 35 char
@@ -24,7 +24,7 @@
     $openGraph_siteName = $openGraph_title;
 //---Open Graph End
     
-    $nav_pageCurrent     = 1;
+    $nav_pageCurrent      = 1;
     $nav_pageCurrent_int  = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.variableCheck.inc.php');    
