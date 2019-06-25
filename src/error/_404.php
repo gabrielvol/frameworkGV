@@ -1,14 +1,14 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $page_int           = 1;
-    $section_error      = 1;
+    $page_int        = 1;
+    $section_error   = 1;
     
-    $site_title      = "Error | ".$company_name_full;
-    //$site_title_GB = "UntitledPage";
+    $site_title      = "Error | ".$company_name_title;
+  //$site_title_GB   = "Error | ".$company_name_title;
     
     $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_en;
+  //$site_desc_GB    = $site_desc_global_GB;
     
     $nav_pageCurrent = 0;
     

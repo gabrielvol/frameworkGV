@@ -3,11 +3,11 @@
     
     $page_int       = 1;
     
-    $site_title     = "PáginaInterna | ".$company_name_full;
-  //$site_title_GB  = "PáginaInterna | ".$company_name_full;
+    $site_title     = "PaginaInterna | ".$company_name_title;
+  //$site_title_GB  = "PaginaInterna | ".$company_name_title;
     
     $site_desc      = $site_desc_global;
-  //$site_desc_GB   = $site_desc_global_en;
+  //$site_desc_GB   = $site_desc_global_GB;
     
 //---Open Graph Start
                         // Max 35 char

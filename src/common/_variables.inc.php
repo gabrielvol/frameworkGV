@@ -12,14 +12,15 @@
     // COMPANY DATA
     $company_name_full    = "CompanyNameFull";
     $company_name_short   = "CompanyNameShort";
+    $company_name_title   = "CompanyNameTitle";
 
-        //-- Titling
+        //-- Descriptions
     $site_desc_global     = ""; 
-    $site_desc_global_en  = ""; 
+    $site_desc_global_GB  = ""; 
     
         //-- Address
     $company_address_main       = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
-    $company_address_main_en    = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
+    $company_address_main_GB    = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
     
         //-- Tels
     $company_tel_main              = "12345678";

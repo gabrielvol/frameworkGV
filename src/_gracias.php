@@ -4,11 +4,11 @@
     $page_int        = 1;
     $section_gracias = 1;
     
-    $site_title      = "Gracias | ".$company_name_full;
-  //$site_desc_GB    = "Thank You | ".$company_name_full;
+    $site_title      = "Gracias | ".$company_name_title;
+  //$site_desc_GB    = "Thank You | ".$company_name_title;
     
     $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_en;
+  //$site_desc_GB    = $site_desc_global_GB;
     
 //---Open Graph Start
                         // Max 35 char

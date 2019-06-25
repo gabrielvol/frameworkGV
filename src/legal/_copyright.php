@@ -4,11 +4,11 @@
     $page_int           = 1;
     $section_copyright  = 1;
     
-    $site_title      = "Licencia | ".$company_name_full;
-    //$site_title_GB = "UntitledPage";
+    $site_title      = "Licencia | ".$company_name_title;
+  //$site_title_GB   = "Licence | ".$company_name_title;
     
     $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_en;
+  //$site_desc_GB    = $site_desc_global_GB;
     
     $nav_pageCurrent = 0;
     

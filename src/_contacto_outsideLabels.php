@@ -5,11 +5,11 @@
     $section_contacto                       = 1;
     $section_contacto_hasMandatoryMsg_act   = 0;
     
-    $site_title     = "Contacto | ".$company_name_full;
-  //$site_title_GB  = "Contact | ".$company_name_full;
+    $site_title     = "Contacto | ".$company_name_title;
+  //$site_title_GB  = "Contact | ".$company_name_title;
     
     $site_desc      = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_en;
+  //$site_desc_GB   = $site_desc_global_GB;
     
 //---Open Graph Start
                         // Max 35 char
