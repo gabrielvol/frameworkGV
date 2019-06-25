@@ -39,6 +39,7 @@
         .logoH{}
     }
 
+    //@include navBT{
     @include beforeTablet{
         box-sizing: border-box;
         padding-top: $header_paddingT_BT;
@@ -124,6 +125,7 @@
         }
     }
     
+    //@include navAT{
     @include afterTablet{        
         @if $header_fixed_act == "on"{
             position: fixed;
