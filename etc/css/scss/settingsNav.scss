@@ -31,7 +31,7 @@ nav{
     @include navBT{
         @if $hamburger_only_act{
             position: absolute;
-        } @else{
+    } @else{
             position: fixed; 
         }
                 

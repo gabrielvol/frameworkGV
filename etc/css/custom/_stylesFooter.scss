@@ -43,7 +43,7 @@
     @include beforeTablet{    
         @if $footer_floatedContent_act == "on"{
             /* */        
-            } @else {    
+    } @else {    
             .logoF{
                 width: 100px;
             }        
@@ -71,7 +71,7 @@
                 width: calc(100% - #{$footer_logoFloated_width});                
             }
 
-            } @else {
+    } @else {
             .logoF{
                 width: $logo_width_footer_AT;
             }  
