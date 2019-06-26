@@ -31,6 +31,7 @@ $language_flag_height_AT: 32px;
     @include beforeTablet{
         @include posTL(15px, 20px);
         position: absolute;
+        height: calc(#{$language_flag_height_BT} + 2px);
             
         li{
             a,
@@ -66,6 +67,7 @@ $language_flag_height_AT: 32px;
     @include afterTablet{
         @include posTR(10px, 20px);
         position: absolute;
+        height: calc(#{$language_flag_height_AT} + 2px);
 
         li{
             a, img{
