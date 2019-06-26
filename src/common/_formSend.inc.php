@@ -1,9 +1,18 @@
 <?php
-    //Variables de Mandatory Message al inicio
-    $formMandatoryMSG__formName         = '';
-    $formMandatoryMSG_classes__formName  = 'displayNone';
+    //--------------------------------------------------------------------------
+    // Fuentes de título de pop
+    $formPop_fontFamily_OK      = '';
+    $formPop_fontFamily_error   = '';
     
-    //Variables Globlales de Status
+    
+    //--------------------------------------------------------------------------
+    // Mandatory message
+    $formMandatoryMSG         = '';
+    $formMandatoryMSG_classes  = 'displayNone';
+    
+    
+    //--------------------------------------------------------------------------
+    // Status global
     $formStatusMSG_ini_globalA__formName     = _('Complete el formulario.');
     $formStatusMSG_ini_globalB__formName     = _('Nos comunicaremos con Ud. a la brevedad.');
     $formStatusMSG_ini_global__formName      = $formStatusMSG_ini_globalA__formName." ".$formStatusMSG_ini_globalB__formName;
@@ -12,20 +21,20 @@
     $formStatusMSG_OK_globalB__formName      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
     $formStatusMSG_error_globalA__formName   = _('Hubo un error al enviar el mensaje.');
     $formStatusMSG_error_globalB__formName   = _('Intente nuevamente m&aacute;s tarde.');
-
-    //Variables de fuente de título de pop
-    $formPop_fontFamily_OK__formName      = '';
-    $formPop_fontFamily_error__formName   = '';
     
-    //Status Ini
+    
+    //--------------------------------------------------------------------------
+    // Status ini
     //$formStatusMSG__formName = '<p class="status ini">'.$formStatusMSG_ini_global__formName.'</p>';
         
-    //Inicia proceso de form
+        
+    //--------------------------------------------------------------------------
+    // Inicia proceso de form
     if (isset($_POST['enviarForm__formName'])){
         //ini_set('sendmail_from','tampas@gmail.com');
         //ini_set('SMTP','mail.gabrielvolonte.com.ar');
 
-        //Asignamos datos de campos a variables
+        // Asignamos datos de campos a variables
         $nombre__formName         = $_POST['nombre__formName'];
         $apellido__formName       = $_POST['apellido__formName'];
         $nombreApe__formName      = $_POST['nombreApe__formName'];
@@ -51,7 +60,7 @@
         $asuntoSubject__formName  = $_POST['asunto__formName'];
         $mensaje__formName        = $_POST['mensaje__formName'];
 
-        //Cabeceras del correo
+        // Cabeceras del correo
         $destino  = "tampas@gmail.com";
         $asunto   = "Contacto Web de $nombre__formName - $empresa__formName";
         $headers  = "From: $nombre__formName <$email__formName>\r\n";
@@ -61,7 +70,9 @@
         $headers .= 'MIME-Version: 1.0' . "\n";
         //$headers .= "CC: tampas@gmail.com\r\n";
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
-        $texto    = "<strong>Nombre:</strong> ".$nombre__formName."<br />";
+        $texto    = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '.$url_section_contacto.'</small><br /><br />';
+        $texto   .= "<strong>Nombre:</strong> ".$nombre."<br />";
+        $texto   .= "<strong>Nombre:</strong> ".$nombre__formName."<br />";
         $texto   .= "<strong>Apellido:</strong> ".$apellido__formName."<br />";
         $texto   .= "<strong>Nombre y Apellido:</strong> ".$nombreApe__formName."<br />";
         $texto   .= "<strong>Nombre completo:</strong> ".$nombreComp__formName."<br />";
@@ -84,9 +95,12 @@
         $texto   .= "<strong>Cargo:</strong> ".$cargo__formName."<br />";
         $texto   .= "<strong>Asunto:</strong> ".$asuntoSubject__formName."<br />";
         $texto   .= "<strong>Rubro:</strong> ".$rubro__formName."<br />";
-        $texto   .= "<strong>Mensaje:</strong> <br />".$mensaje__formName."<br />_ _ _<br />Fin del mensaje";
+        $texto   .= "<br /><strong>Mensaje:</strong><br />".$mensaje;
+        $texto   .= '<br /><br />______<br /><small style="color:#666">Fin del mensaje</small>';
         
-        //Variables Globales de Error
+        
+    //--------------------------------------------------------------------------
+    // Variables Globales de Error
         $formMandatoryMSGErrorClass = " invalidmandatoryMsg";
         $errorMsgNombre__formName         = _("Por favor, ingrese su nombre.");
         $errorMsgApellido__formName       = _("Por favor, ingrese su apellido.");
@@ -406,7 +420,8 @@
             
                         
         } else {
-        // Si todos los campos validan se env&iacute;a el correo
+    //--------------------------------------------------------------------------
+    // Si todos los campos validan se env&iacute;a el correo
             if(mail($destino, $asunto, $texto, $headers)){
 
             //Redirect
@@ -430,7 +445,8 @@
                 $formMandatoryMSG_classes__formName = 'displayNone';
 //FIN mensaje ok en popup
                 
-                // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
+    //--------------------------------------------------------------------------
+    // Si el envio fue exitoso reseteamos lo que el usuario escribi&oacute;:
                 $_POST['nombre__formName']       = '';
                 $_POST['apellido__formName']     = '';
                 $_POST['nombreApe__formName']    = '';     
