@@ -1,8 +1,6 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
     
-    $url_section_contacto = $url_global."/contacto.php";
-    
     $page_int                               = 1;
     $section_contacto                       = 1;
     $section_contacto_hasMandatoryMsg_act   = 0;

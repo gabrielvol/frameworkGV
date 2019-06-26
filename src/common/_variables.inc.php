@@ -4,6 +4,8 @@
     $url_global = "http://wwwsitecomar";
     $urlActual = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     
+    $url_section_contacto = $url_global."/contacto.php";
+    
     // -------------------------------------------------------------------------
     // MISCELANEOUS
     $dateThisYear = (int)date('Y');    
