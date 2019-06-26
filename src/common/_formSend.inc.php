@@ -1,14 +1,14 @@
 <?php
     //--------------------------------------------------------------------------
     // Fuentes de título de pop
-    $formPop_fontFamily_OK      = '';
-    $formPop_fontFamily_error   = '';
+    $formPop_fontFamily_OK__formName      = '';
+    $formPop_fontFamily_error__formName   = '';
     
     
     //--------------------------------------------------------------------------
     // Mandatory message
-    $formMandatoryMSG         = '';
-    $formMandatoryMSG_classes  = 'displayNone';
+    $formMandatoryMSG__formName         = '';
+    $formMandatoryMSG_classes__formName  = 'displayNone';
     
     
     //--------------------------------------------------------------------------
@@ -71,7 +71,6 @@
         //$headers .= "CC: tampas@gmail.com\r\n";
         //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
         $texto    = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '.$url_section_contacto.'</small><br /><br />';
-        $texto   .= "<strong>Nombre:</strong> ".$nombre."<br />";
         $texto   .= "<strong>Nombre:</strong> ".$nombre__formName."<br />";
         $texto   .= "<strong>Apellido:</strong> ".$apellido__formName."<br />";
         $texto   .= "<strong>Nombre y Apellido:</strong> ".$nombreApe__formName."<br />";
@@ -101,7 +100,7 @@
         
     //--------------------------------------------------------------------------
     // Variables Globales de Error
-        $formMandatoryMSGErrorClass = " invalidmandatoryMsg";
+        $formMandatoryMSGErrorClass__formName = " invalidmandatoryMsg";
         $errorMsgNombre__formName         = _("Por favor, ingrese su nombre.");
         $errorMsgApellido__formName       = _("Por favor, ingrese su apellido.");
         $errorMsgNombreApe__formName      = _("Por favor, ingrese su nombre y apellido.");
@@ -132,145 +131,145 @@
 //INICIA VALIDACIÓN EN div.mandatoryMsg
         if (empty($_POST["nombre__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgNombre__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_nombre__formName    = "invalidField";
             $formInput_autofocus_nombre__formName       = "autofocus";
             
         } elseif (empty($_POST["apellido__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgApellido__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_apellido__formName  = "invalidField";
             $formInput_autofocus_apellido__formName     = "autofocus";
             
         } elseif (empty($_POST["nombreApe__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgNombreApe__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_nombreApe__formName = "invalidField";
             $formInput_autofocus_nombreApe__formName    = "autofocus";
             
         } elseif (empty($_POST["nombreComp__formName"])) {
             $formMandatoryMSG__formName              = $errorMsgNombreComp__formName;
-            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_nombreComp__formName    = "invalidField";
             $formInput_autofocus_nombreComp__formName       = "autofocus";
             
         } elseif (empty($_POST["username__formName"])) {
             $formMandatoryMSG__formName              = $errorMsgUsername__formName;
-            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_username__formName      = "invalidField";
             $formInput_autofocus_username__formName         = "autofocus";
             
         } elseif (empty($_POST["dni__formName"])) {
             $formMandatoryMSG__formName              = $errorMsgDNI__formName;
-            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_DNI__formName           = "invalidField";
             $formInput_autofocus_DNI__formName              = "autofocus";
             
         } elseif (empty($_POST["direccion__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgDireccion__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_direccion__formName = "invalidField";
             $formInput_autofocus_direccion__formName    = "autofocus";
             
         } elseif (empty($_POST["domicilio__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgDomicilio__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Domicilio__formName = "invalidField";
             $formInput_autofocus_Domicilio__formName    = "autofocus";
             
         } elseif (empty($_POST["localidad__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgLocalidad__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Localidad__formName = "invalidField";
             $formInput_autofocus_Localidad__formName    = "autofocus";
             
         } elseif (empty($_POST["codigopostal__formName"])) {
             $formMandatoryMSG__formName              = $errorMsgCodigoPostal__formName;
-            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_CodigoPostal__formName  = "invalidField";
             $formInput_autofocus_CodigoPostal__formName     = "autofocus";
             
         } elseif (empty($_POST["provincia__formName"])) {
             $formMandatoryMSG__formName = $errorMsgProvincia__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Provincia__formName = "invalidField";
             $formInput_autofocus_Provincia__formName    = "autofocus";
             
         } elseif (empty($_POST["pais__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgPais__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Pais__formName      = "invalidField";
             $formInput_autofocus_Pais__formName         = "autofocus";
             
         } elseif (empty($_POST["telefono__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgTelefono__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Telefono__formName  = "invalidField";
             $formInput_autofocus_Telefono__formName     = "autofocus";
             
         } elseif (empty($_POST["email__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgEmail__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Email__formName     = "invalidField";
             $formInput_autofocus_Email__formName        = "autofocus";
             
         } elseif (empty($_POST["website__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgWebsite__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Website__formName   = "invalidField";
             $formInput_autofocus_Website__formName      = "autofocus";
             
         } elseif (empty($_POST["facebook__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgFacebook__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Facebook__formName  = "invalidField";
             $formInput_autofocus_Facebook__formName     = "autofocus";
             
         } elseif (empty($_POST["empresa__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgEmpresa__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Empresa__formName   = "invalidField";
             $formInput_autofocus_Empresa__formName      = "autofocus";
             
         } elseif (empty($_POST["razonSocial__formName"])) {
             $formMandatoryMSG__formName              = $errorMsgRazonSocial__formName;
-            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_RazonSocial__formName   = "invalidField";
             $formInput_autofocus_RazonSocial__formName      = "autofocus";
             
         } elseif (empty($_POST["cargo__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgCargo__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Cargo__formName     = "invalidField";
             $formInput_autofocus_Cargo__formName        = "autofocus";
             
         } elseif (empty($_POST["asunto__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgAsunto__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Cargo__formName     = "invalidField";
             $formInput_autofocus_Cargo__formName        = "autofocus";
             
         } elseif (empty($_POST["fecha__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgFecha__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Fecha__formName     = "invalidField";
             $formInput_autofocus_Fecha__formName        = "autofocus";
             
         } elseif (empty($_POST["rubro__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgRubro__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Rubro__formName     = "invalidField";
             $formInput_autofocus_Rubro__formName        = "autofocus";
             
         } elseif (empty($_POST["newsletter__formName"])) {
             $formMandatoryMSG__formName              = $erroNewsletter__formName;
-            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName       = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Newsletter__formName    = "invalidField";
             $formInput_autofocus_Newsletter__formName       = "autofocus";
             
         } elseif (empty($_POST["mensaje__formName"])) {
             $formMandatoryMSG__formName          = $errorMensaje__formName;
-            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass;
+            $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
             $formInput_error_class_Mensaje__formName   = "invalidField";
             $formInput_autofocus_Mensaje__formName      = "autofocus";
 //FIN de validacion en div.mandatoryMsg
