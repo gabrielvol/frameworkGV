@@ -24,7 +24,7 @@ body::after{
     font-weight: normal;
 
     .lb-image{
-        @include borderRadius(3px);
+        @include borderRadius();
         display: block;
         height: auto;
         max-width: inherit;
@@ -37,7 +37,7 @@ body::after{
 }
 .lb-outerContainer{
     @include squareSize(250px);
-    @include borderRadius(4px);
+    @include borderRadius();
     position: relative;
     background-color: $bgWhite;
     *zoom: 1;

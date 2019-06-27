@@ -34,7 +34,7 @@
             max-height: 100%;
         */      
 
-        @include borderRadius(6px); 
+        @include borderRadius(); 
         top: 20%;
         left: 50%;
         background-color: $formStatus_msgOK_bgColour;          
@@ -63,8 +63,9 @@
         }
         
         .pop_submit{
+            @include borderRadius();
             @include transition(1s);
-            @include equalHeightAndLineHeight(30px);
+            @include equalHeightAndLineHeight(35px);
             width: 40%;
             max-width: 150px;
             background-color: $bgWhite;

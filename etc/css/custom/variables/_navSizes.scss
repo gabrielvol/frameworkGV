@@ -2,7 +2,7 @@
    Nav Sizes Variables | Custom [navSizes.scss]
    ========================================================================== */
     // General
-$nav_borderRadius:                  4px;
+$nav_borderRadius:                  $helpers_border_radius_global;
 
     // Nav List
 $navList_ul_width_BT:               200px;

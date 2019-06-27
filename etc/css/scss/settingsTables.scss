@@ -25,7 +25,7 @@ table{
 
     //Rounded Tables
 .tableRounded{
-    @include borderRadius($helpers_border_radius_global);
+    @include borderRadius();
     border-collapse: separate;
    
     tfoot td{

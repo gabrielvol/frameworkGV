@@ -6,11 +6,11 @@
 }
 
 .lb-outerContainer{
-    @include borderRadius(5px);
+    @include borderRadius();
 }
 
 .lightbox .lb-image{
-    @include borderRadius(5px);
+    @include borderRadius();
 }
 
 .lb-caption{
