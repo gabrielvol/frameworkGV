@@ -39,7 +39,7 @@
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
 	<div id="main" class="page_int section_contacto" role="main">            
             <div class="mobileForm tabletForm">
-                <form method="post" class="mha">
+                <form method="post" class="mha" id="formID">
                     <?php
                         include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
                         echo $formStatusMsg__formName;
