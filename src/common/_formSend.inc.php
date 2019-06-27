@@ -432,7 +432,7 @@
 //FIN mensaje ok en $formStatusMSG_
                 
 //INICIA MENSAJE OK EN POPUP
-                $formStatusMSG__formName = '<div class="pop_main pop_warning borderBox pal" role="alertdialog" aria-labelledby="formOK">'
+                $formStatusMSG_pop__formName = '<div class="pop_main pop_warning borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="mbm '. $formPop_fontFamily_OK__formName .' green alignCenter">'._("$formStatusMSG_OK_globalA__formName").'</h2>'
@@ -442,6 +442,7 @@
                         . '</div>'
                         . '<div class="modalBG"></div>';
                 $formMandatoryMSG_classes__formName = 'displayNone';
+                $formStatusMSG__formName = '';
 //FIN mensaje ok en popup
                 
     //--------------------------------------------------------------------------
@@ -476,7 +477,7 @@
 //FIN mensaje error en $formStatusMSG_
                 
 //INICIA MENSAJE ERROR EN POPUP
-                $formStatusMSG__formName = '<div class="pop_main pop_warning borderBox pal" role="alertdialog" aria-labelledby="formError">'
+                $formStatusMSG_pop__formName = '<div class="pop_main pop_warning borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="mbm '. $formPop_fontFamily_error__formName .' errorColour alignCenter">'._("$formStatusMSG_error_globalA__formName").'</h2>'
@@ -486,6 +487,7 @@
                         . '</div>'
                         . '<div class="modalBG"></div>';
                 $formMandatoryMSG_classes__formName = 'displayNone';
+                $formStatusMSG__formName = '';
 //FIN mensaje error en popup
             }
         }

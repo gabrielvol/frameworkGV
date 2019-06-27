@@ -43,6 +43,7 @@
                 <?php
                     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
                     echo $formStatusMSG__formName;
+                    echo $formStatusMSG_pop__formName;
 
                     if($section_contacto_hasMandatoryMsg_act == 1) {
                         echo '<div class="mandatoryMsg '.$formMandatoryMSG_classes__formName.'">'.$formMandatoryMSG__formName.'</div>';
