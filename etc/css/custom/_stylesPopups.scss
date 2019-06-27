@@ -98,6 +98,7 @@
     @include afterMobileLandscape{
         &.pop_warning{
             $pop_warning_width: 60%;
+            
             width: $pop_warning_width;
             margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);       
         }
@@ -110,7 +111,7 @@
         }
         
         &.pop_warning{
-            height: 220px;      
+            /*height: 220px;*/      
         }
     }
 
@@ -122,8 +123,9 @@
         
         &.pop_warning{
             $pop_warning_width: 550px;
+            
             width: $pop_warning_width;
-            height: 200px;
+            /*height: 200px;*/
             margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);  
 
             .pop_innerContainer{
