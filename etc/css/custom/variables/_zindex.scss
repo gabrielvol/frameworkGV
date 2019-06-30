@@ -2,43 +2,63 @@
    Z Index Variables | Custom [zindex.scss]
    ========================================================================== */
     // Negative
-$zIndex_negative:           -1;
-        
-    // Modal        
+$zIndex_negative:            -1;
+
+/* -----------------------------------------------------------------------------
+   10 000
+   -------------------------------------------------------------------------- */ 
+    // Lightbox 
+$zIndex_lightbox_nav:        11100;
+$zIndex_lightbox:            11000;
+$zIndex_lightbox_overlay:    10000;
+
+/* -----------------------------------------------------------------------------
+   9000
+   -------------------------------------------------------------------------- */
+    // Modal / Pop / NavDrawer
 $zIndex_modal_bg:            9000;
-$zIndex_modal_pop_main:         9100;
-$zIndex_button_topLevel:     9200;
-        
+$zIndex_modal_pop_main:      9800;
+
+$zIndex_navSubMenu_level1:   9810;
+$zIndex_navSubMenu_level2:   9830;
+$zIndex_navSubMenu_level3:   9840;
+$zIndex_navSubMenu_back:     9850;
+
+$zIndex_button_topLevel:     9900;
+
+
+/* -----------------------------------------------------------------------------
+   8000
+   -------------------------------------------------------------------------- */        
     // Nav        
-$zIndex_nav:                 8800;
-$zIndex_nav_open:            8900;
+$zIndex_nav:                 8000;
+$zIndex_nav_open:            8100;
 $zIndex_nav_close:           $zIndex_button_topLevel;
 $zIndex_navDrawer_ul:        $zIndex_modal_pop_main;
-$zIndex_navAcc_ul:           8900;
-$zIndex_navSubMenu_level1:   $zIndex_button_topLevel;
-$zIndex_navSubMenu_level2:   9300;
-$zIndex_navSubMenu_level3:   9400;
-$zIndex_navSubMenu_back:     9500;
-          
-    // Header      
-$zIndex_header:              $zIndex_nav;
-$zIndex_header_topper:       $zIndex_nav;
-$zIndex_logo:         100;
-$zIndex_logo_clicked: $zIndex_button_topLevel;  
-$zIndex_logo_topper:  $zIndex_button_topLevel;  
+$zIndex_navAcc_ul:           8100;
 
     // Lang       
-$zIndex_language:               9300;
+$zIndex_language:            8500;
      
     // Social     
-$zIndex_social:             1100;
+$zIndex_social:              8500;
 $zIndex_social_clicked:      $zIndex_button_topLevel;
-     
+
+
+/* -----------------------------------------------------------------------------
+   7000
+   -------------------------------------------------------------------------- */          
+    // Header      
+$zIndex_header:             7000;
+$zIndex_header_topper:      7000;
+$zIndex_logo:               7100;
+$zIndex_logo_clicked:       $zIndex_button_topLevel;  
+$zIndex_logo_topper:        $zIndex_logo;  
+
+
+/* -----------------------------------------------------------------------------
+   1000
+   -------------------------------------------------------------------------- */ 
     // Slick Slider     
-$zIndex_slider:          90;
-$zIndex_slider_arrows_dots:  100;
- 
-    // Lightbox 
-$zIndex_lightbox:           10000;
-$zIndex_lightbox_overlay:    9999;
-$zIndex_lightbox_nav:              10;
+$zIndex_slider:             1100;
+$zIndex_slider_arrows_dots: 1200;
