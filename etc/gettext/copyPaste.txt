@@ -44,13 +44,18 @@
 '); ?>.</span>
 
 
-
+/* -----------------------------------------------------------------------------
+   php echo 
+   -------------------------------------------------------------------------- */ 
 echo '<h1 class="'._("text").'">';
 $phpVariable = _('text');
 
-# href
-href="/link.php<?php if($idioma == 'pt_BR'){ echo '?l=pt_BR'; } else if($idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
-href="/link.php<?php if($idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
+
+/* -----------------------------------------------------------------------------
+   # href
+   -------------------------------------------------------------------------- */ 
+href="/link.php<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt_BR'; } else if($gettext_idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
+href="/link.php<?php if($gettext_idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
 
 href="?l=pt_BR"
 
@@ -60,13 +65,20 @@ href="?l=es_AR"
 
 href="?l=it_IT"
 
+<!-- Gettext_Alt -->
+<?php if($gettext_idioma == 'en_US'){ echo '?l=en'; } ?>
 
-# src
-src="/img/<?php if($idioma == 'pt_BR'){ echo '/it/'; } else if($idioma == 'en_GB'){ echo '/en/'; } else { echo '/'; } ?>img_file.jpg"
+
+/* -----------------------------------------------------------------------------
+   # src
+   -------------------------------------------------------------------------- */
+src="/img/<?php if($gettext_idioma == 'pt_BR'){ echo '/it/'; } else if($gettext_idioma == 'en_GB'){ echo '/en/'; } else { echo '/'; } ?>img_file.jpg"
 
 
-# class
-class="<?php if($idioma == 'pt_BR'){ echo 'ITlang'; } else if($idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>"
+/* -----------------------------------------------------------------------------
+   # css
+   -------------------------------------------------------------------------- */
+class="<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>"
 
 &.BRlang{}
 &.ENlang{}

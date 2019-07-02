@@ -10,8 +10,9 @@
     
     <!--Con Gettext-->
     <?php if($page_index == 1){ echo '<h1 class="logoH">'; } else if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }?>
-    <a href="/nuevo/<?php if($idioma == 'pt_BR'){ echo '?l=pt_BR';
-        } else if($idioma == 'en_GB') {
+    <!-- Gettext_Alt --><a href="/nuevo/<?php if($idioma == 'en_US'){ echo '?l=en'; } ?>" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } ?>">
+    <a href="/nuevo/<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt_BR';
+        } else if($gettext_idioma == 'en_GB') {
             echo '?l=en_GB';
         } else {
             echo '?l=es_AR';

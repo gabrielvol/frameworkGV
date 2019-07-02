@@ -1,22 +1,22 @@
 <?php
     switch ($_GET["idioma"]) {
         case 1:
-            $idioma = 'es_AR';
+            $gettext_idioma = 'es_AR';
             break;
         case 2:
-            $idioma = 'it_IT';
+            $gettext_idioma = 'it_IT';
             break;
         case 3:
-            $idioma = 'en_GB';
+            $gettext_idioma = 'en_GB';
             break;
     }
     // Define el idioma
-    putenv("LANGUAGE=$idioma");
-    putenv("LANG=$idioma");
-    putenv("LC_ALL=$idioma");
-    putenv("LC_LANG=$idioma");
-    putenv("LC_LANGUAGE=$idioma");
-    setlocale(LC_ALL, $idioma);
+    putenv("LANGUAGE=$gettext_idioma");
+    putenv("LANG=$gettext_idioma");
+    putenv("LC_ALL=$gettext_idioma");
+    putenv("LC_LANG=$gettext_idioma");
+    putenv("LC_LANGUAGE=$gettext_idioma");
+    setlocale(LC_ALL, $gettext_idioma);
 
     // Define la ubicación de los ficheros de traducción
     $locale_filename = "messages";
