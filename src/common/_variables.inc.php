@@ -8,7 +8,7 @@
     
     // -------------------------------------------------------------------------
     // MISCELANEOUS
-    $dateThisYear = (int)date('Y');    
+    $dateThisYear = (int)date('Y');
     
     // -------------------------------------------------------------------------
     // COMPANY DATA
@@ -40,7 +40,7 @@
     $social_whatsapp_chatOpen   = "https://api.whatsapp.com/send?phone=".$company_tel_main_whatsapp;
     $social_whatsapp_WAme_url   = "https://wa.me/".$company_tel_main_whatsapp."?text=I'm%20interested%20in%20your%20car%20for%20sale";
     
-    $social_email_addressMain   = "correo@servido.com";
+    $social_email_addressMain   = "correo@servidor.com";
     $social_mailto_addressMain  = "mailto:".$social_email_addressMain;
     
     $social_googleMap_url       = "https://goo.gl/maps/aaaaaaaaaaaa";
