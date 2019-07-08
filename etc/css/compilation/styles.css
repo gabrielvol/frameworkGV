@@ -7,6 +7,21 @@
 /* =============================================================================
    Z Index Variables | Custom [zindex.scss]
    ========================================================================== */
+/* -----------------------------------------------------------------------------
+   10 000
+   -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   9000
+   -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   8000
+   -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   7000
+   -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   1000
+   -------------------------------------------------------------------------- */
 /* =============================================================================
    Container Sizes Variables | Custom [container.scss]
    ========================================================================== */
@@ -1620,10 +1635,10 @@ article, article::before, article::after, details, details::before, details::aft
       display: none !important; } }
 
 .pop_main {
-  z-index: 9100;
+  z-index: 9800;
   left: 50%; }
   .pop_main .pop_close {
-    z-index: 9200; }
+    z-index: 9900; }
 
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
@@ -1678,9 +1693,10 @@ article, article::before, article::after, details, details::before, details::aft
       .pop_main.pop_warning p:last-child {
         padding-bottom: 50px; }
     .pop_main.pop_warning .pop_submit {
+      border-radius: 6px;
       transition: all 1s ease;
-      height: 30px;
-      line-height: 30px;
+      height: 35px;
+      line-height: 35px;
       width: 40%;
       max-width: 150px;
       background-color: #fff;
@@ -1706,14 +1722,14 @@ article, article::before, article::after, details, details::before, details::aft
       top: -45px;
       right: 0; }
     .pop_main.pop_warning {
-      height: 220px; } }
+      /*height: 220px;*/ } }
   @media (min-width: 601px) {
     .pop_main .pop_close {
       top: -35px;
       right: -35px; }
     .pop_main.pop_warning {
       width: 550px;
-      height: 200px;
+      /*height: 200px;*/
       margin-left: calc(calc(550px * -1) / 2); }
       .pop_main.pop_warning .pop_innerContainer {
         top: 20px;
@@ -1750,7 +1766,7 @@ article, article::before, article::after, details, details::before, details::aft
         border-right: 1px solid #000;
         box-sizing: border-box;
         position: fixed;
-        z-index: 9200;
+        z-index: 9900;
         top: 0;
         left: 0;
         width: calc(70vw - 5px);
@@ -1769,7 +1785,7 @@ article, article::before, article::after, details, details::before, details::aft
   @media (min-width: 768px) {
     #header .logoH {
       position: relative;
-      z-index: 100;
+      z-index: 7100;
       width: 210px; }
       #header .logoH a,
       #header .logoH img {
@@ -1817,7 +1833,7 @@ nav li:focus a, nav li:hover a {
 
 .navMain,
 .navMain .mainMenu {
-  z-index: 8800; }
+  z-index: 8000; }
 
 @media (max-width: 767px) {
   .navMain {
@@ -1826,7 +1842,7 @@ nav li:focus a, nav li:hover a {
       transition: all 1s ease;
       box-sizing: border-box; }
     .navMain .navOpen {
-      z-index: 8900;
+      z-index: 8100;
       display: block !important;
       opacity: 1;
       background-image: url("/nuevo/img/nav_hamb.svg");
@@ -1835,7 +1851,7 @@ nav li:focus a, nav li:hover a {
       font-family: Arial; }
     .navMain .navClose {
       border-radius: 50%;
-      z-index: 9200;
+      z-index: 9900;
       display: none;
       background-color: #fff;
       background-image: url("/nuevo/img/nav_close.svg");
@@ -1891,7 +1907,7 @@ nav li:focus a, nav li:hover a {
    ========================================================================== */
 @media (max-width: 767px) {
   .navMain .navOpen {
-    background-color: transparent; }
+    background-color: #fff; }
     .navMain .navOpen.clicked {
       opacity: 0.5;
       color: #333; }
@@ -1900,7 +1916,7 @@ nav li:focus a, nav li:hover a {
   .navMain .mainMenu {
     box-sizing: border-box;
     position: fixed;
-    z-index: 9100;
+    z-index: 9800;
     left: calc(-1 * 70vw);
     width: calc(70vw - 5px);
     max-width: 300px;
@@ -1951,7 +1967,7 @@ nav li:focus a, nav li:hover a {
       padding: 0 10px 0 30px;
       font-size: 1rem;
       line-height: 40px;
-      border-radius: 4px;
+      border-radius: 6px;
       background-size: 15px; }
     .navMain .navClose {
       width: 45px;

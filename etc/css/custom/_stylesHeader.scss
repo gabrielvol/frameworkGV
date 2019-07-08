@@ -17,7 +17,7 @@
         img{}
     }
     
-    @if $logo_bg_beforeImg == "on"{    
+    @if $logo_bg_beforeImg == "on"{
         .logoBefore{
             position: relative;        
             background-image: url('/nuevo/img/logo_bg.png');
@@ -28,15 +28,27 @@
     }
     
     @include mobileOnly{
-        .logoH{}
+        .logoH{
+            /*
+            width: $logo_width_MO;
+            */
+        }
     }
     
     @include afterMobileLandscape{
-        .logoH{}
+        .logoH{
+            /*
+            width: $logo_width_AML;
+            */
+        }
     }
     
     @include mobileLandscapeOnly{
-        .logoH{}
+        .logoH{
+            /*
+            width: $logo_width_MLO;
+            */
+        }
     }
 
     //@include navBT{
