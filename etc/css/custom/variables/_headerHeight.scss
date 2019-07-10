@@ -6,10 +6,14 @@
 $header_paddingT_BT:        20px;
 $header_paddingB_BT:        15px;
 $header_height_navAcc_BT:   calc(#{$header_paddingT_BT} + #{$header_paddingB_BT} + #{$logo_height_BT});
-$header_height_BT:          auto;
+$header_height_BT:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_PT_BT
+$header_heightPT_BT:        0;
 
-$header_height_AT:          90px;
-$header_height_ATL:         120px;
+$header_height_AT:          90px; //Si es auto hay que declarar 0 en la siguiente variable $header_heightPT_AT
+$header_heightPT_AT:        $header_height_AT;
+
+$header_height_ATL:         120px; //Si es auto hay que declarar 0 en la siguiente variable $header_heightPT_ATL
+$header_heightPT_ATL:       $header_height_ATL;
 
 /* -------------------------------------
     Full height index                 */
