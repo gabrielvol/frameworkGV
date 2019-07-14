@@ -13,6 +13,9 @@
 <!-- Google No Translate -->
 <meta name="google" content="notranslate">
 
+<!-- Safari tel-->
+<meta name="format-detection" content="telephone=no">
+
 <title><?php echo $site_title ?></title>
 <title><?php if($gettext_idioma == 'en_GB'){ echo $site_title_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_titleBR; } else { echo $site_title; } ?></title>
 
