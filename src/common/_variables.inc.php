@@ -27,11 +27,11 @@
         //-- Tels
     $company_tel_main              = "12345678";
     $company_tel_main_formatted    = "(011) 1234-5678";
-    $company_tel_main_countryCode  = "+54 911 " . $telN_main;
-    $company_tel_main_whatsapp     = "54911".$telN_main;
+    $company_tel_main_countryCode  = "+54 911 " . $company_tel_main;
+    $company_tel_main_whatsapp     = "54911".$company_tel_main;
     
     $company_tel_sec               = "12345678";
-    $company_tel_sec_countryCode   = "+54 911 " . $telN_sec;   
+    $company_tel_sec_countryCode   = "+54 911 " . $company_tel_sec;   
     
     // -------------------------------------------------------------------------
     // SOCIAL NETWORKS
