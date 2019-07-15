@@ -2,3 +2,10 @@
    Settings Text | Custom [settingsText.scss]
    ========================================================================== */
 p{}
+    
+/* Safari tel detection */
+a[href^=tel]{
+    &, &:focus, &:hover, &:active, &:visited{
+        color: $fontColour_anchor_global!important;
+    }
+}
