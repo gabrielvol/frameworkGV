@@ -81,10 +81,10 @@ $navBgColour_itemSub_AT:        $navBgColour_item_AT;
 $navBgColour_itemSub_Hover:     $navBgColour_itemSub_AT;
 
 $navBgColour_itemCurrent_AT:        transparent;
-$navBgColour_itemCurrent_Hover:     transparent;
+$navBgColour_itemCurrent_Hover:     $navBgColour_itemCurrent_AT;
 
 $navBgColour_itemSubCurrent_AT:     transparent;
-$navBgColour_itemSubCurrent_Hover:  transparent;
+$navBgColour_itemSubCurrent_Hover:  $navBgColour_itemSubCurrent_AT;
 
 // Topper
 $navBgColour_topper:       $bgBlack;
