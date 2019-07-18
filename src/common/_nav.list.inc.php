@@ -1,15 +1,15 @@
 <?php $navItemInicio = ($nav_pageCurrent == 0)? "displayNone" : ""; ?>
 
 <li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone'; } ?>">
-    <a href="/nuevo/" class="<?php if ($navHorizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
+    <a href="/nuevo/" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
 </li>
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
-    <a href="/nuevo/" class="<?php if ($navHorizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a href="/nuevo/" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
 <li class="liNoLink">
-    <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="<?php if ($navHorizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox">
+    <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox">
         <?php echo _("seccion"); ?></a>
 </li>
 
