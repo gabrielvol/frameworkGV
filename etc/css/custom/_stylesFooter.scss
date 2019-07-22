@@ -52,13 +52,13 @@
     
     @include afterTablet{    
         @if $footer_floatedContent_act_AT == "on"{
-            .logo_footerFloatedCont,
-            .txt_footerFloatedCont{
+            .logoFooter,
+            .txtFooter{
                 float: left;
             }
             
-            .logo_footerFloatedCont{
-                width: $footer_logoFloated_width;
+            .logoFooter{
+                width: $footer_logoFloated_width; /* footerSizes.scss */
                 padding-right: 20px;
                 padding-left: 20px;
                 
@@ -67,8 +67,8 @@
                 }
             }
             
-            .txt_footerFloatedCont{
-                width: calc(100% - #{$footer_logoFloated_width});                
+            .txtFooter{
+                width: calc(100% - #{$footer_logoFloated_width});  /* footerSizes.scss */               
             }
 
     } @else {

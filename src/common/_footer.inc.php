@@ -1,10 +1,10 @@
 <footer id="footer" class="">        
     <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
     
-    <div class="logo_footerFloatedCont borderBox">
+    <div class="logoFooter borderBox">
         <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
     </div>
-    <div class="txt_footerFloatedCont borderBox">
+    <div class="txtFooter borderBox">
         <p class="gooAddress">
             <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_pt; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_en; } else { echo $company_address_main; } ?></a>
         </p>
