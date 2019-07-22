@@ -5,6 +5,7 @@
     @include navBT{
         .navMain{
             @include posTR(10px, 10px);
+            position: fixed;
 
             .hamb{
                 @include posTR(0, 0);
