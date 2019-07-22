@@ -57,7 +57,7 @@
         padding-top: $header_paddingT_BT;
         padding-bottom: $header_paddingB_BT;
         
-        @if $header_fixed_act == "on" or $navAcc_act == "on"{
+        @if $header_fixed_act_BT == "on" or $navAcc_act == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -139,7 +139,7 @@
     
     //@include navAT{
     @include afterTablet{        
-        @if $header_fixed_act == "on"{
+        @if $header_fixed_act_AT == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -202,7 +202,7 @@
     }
     
     @include afterTabletLandscape{
-        @if $header_fixed_act == "on"{
+        @if $header_fixed_act_ATL == "on"{
             height: $header_height_ATL;
         }
         
