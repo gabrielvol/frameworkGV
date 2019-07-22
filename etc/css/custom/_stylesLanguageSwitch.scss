@@ -57,9 +57,9 @@ $language_flag_height_AT: 32px;
         
         @if $navDrawer_act == "on"{   
             &.clicked{
+                @include posTRBL(auto, auto, 20px, 30px);
                 position: fixed;
-                top: 15px;
-                left: 0;
+                z-index: $zIndex_language_clicked;
             }
         }
     }
