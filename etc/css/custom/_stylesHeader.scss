@@ -203,6 +203,10 @@
     
     @include afterTabletLandscape{
         @if $header_fixed_act_ATL == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
             height: $header_height_ATL;
         }
         
