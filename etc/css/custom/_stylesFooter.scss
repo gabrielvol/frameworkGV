@@ -41,7 +41,7 @@
     }
     
     @include beforeTablet{    
-        @if $footer_floatedContent_act == "on"{
+        @if $footer_floatedContent_act_BT == "on"{
             /* */        
     } @else {    
             .logoF{
@@ -51,7 +51,7 @@
     }
     
     @include afterTablet{    
-        @if $footer_floatedContent_act == "on"{
+        @if $footer_floatedContent_act_AT == "on"{
             .logo_footerFloatedCont,
             .txt_footerFloatedCont{
                 float: left;
