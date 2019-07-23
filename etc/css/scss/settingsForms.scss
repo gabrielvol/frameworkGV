@@ -293,6 +293,11 @@ form{
         padding: $helpers_spacing_PM_medium;
         vertical-align: top;
         resize: vertical;
+
+        &.invalidField{
+            background-position: right 10px top 10px;
+            background-size: 23px;
+        }
     }
     
     .mobileForm &{
