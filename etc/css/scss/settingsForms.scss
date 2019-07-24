@@ -188,11 +188,11 @@ form{
     }
     
     input, select, textarea{
-        @include transition(1s);
         @include borderStyle($formInput_bcColour);
         background-color: $formInput_bgColour;
         color: $formInput_fontColour;
         font-family: $formInput_fontFamily; 
+        transition: all 1s ease, background-position 0s ease;
         
         &:focus{
             box-shadow: $formInput_shadowInset;
