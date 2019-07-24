@@ -1,6 +1,6 @@
 /* =============================================================================
    Transition Mixins | Etc [mixinsTransitions.scss]
    ========================================================================== */
-@mixin transition($transitionDuration: 1s, $transitionProperty: all, $transitionFunction: ease){
-    transition: $transitionProperty $transitionDuration $transitionFunction;
+@mixin transition($transitionDuration_mx: 1s, $transitionProperty_mx: all, $transitionFunction_mx: ease){
+    transition: $transitionProperty_mx $transitionDuration_mx $transitionFunction_mx;
 }
