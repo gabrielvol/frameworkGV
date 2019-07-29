@@ -1,3 +1,4 @@
+<!-- gettext file -->
 <?php
     $gettext_switchMsg_ES = "Navegar el sitio en idioma castellano";
     $gettext_switchMsg_GB = "Switch to English version";
@@ -19,7 +20,7 @@
             <img src="/clientes/img/fl_US.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
         </a>
     </li>
-    <li> <!-- <!-- Gettext_Alt --> -->
+    <li> <!-- gettext_alt -->
         <a href="/nuevo/?l=en" class="displayBlock mask hoverGrowL">
             <img src="/nuevo/img/fl_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
         </a>

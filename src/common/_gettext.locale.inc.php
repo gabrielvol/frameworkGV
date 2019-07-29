@@ -1,3 +1,4 @@
+<!-- gettext file -->
 <?php
     switch ($_GET["idioma"]) {
         case 1:

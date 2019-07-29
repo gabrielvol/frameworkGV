@@ -1,3 +1,4 @@
+<!-- gettext file -->
 <?php
     $l = $_GET['l'];
     
