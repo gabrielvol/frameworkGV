@@ -1,3 +1,4 @@
+<!-- gettext file -->
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
 <header id="header" class="borderBox">
     
