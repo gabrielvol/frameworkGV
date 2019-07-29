@@ -54,10 +54,10 @@ $phpVariable = _('text');
 /* -----------------------------------------------------------------------------
    # href
    -------------------------------------------------------------------------- */ 
-href="/link.php<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt_BR'; } else if($gettext_idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
-href="/link.php<?php if($gettext_idioma == 'en_GB'){ echo '?l=en_GB'; } else { echo '?l=es_AR'; } ?>#anchorID"
+href="/link.php<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt'; } else if($gettext_idioma == 'en_GB'){ echo '?l=en'; } else { echo '?l=es'; } ?>#anchorID"
+href="/link.php<?php if($gettext_idioma == 'en_GB'){ echo '?l=en'; } else { echo '?l=es'; } ?>#anchorID"
 
-href="?l=pt_BR"
+href="?l=pt"
 
 href="?l=en_GB"
 
