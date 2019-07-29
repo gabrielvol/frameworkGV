@@ -1,7 +1,7 @@
 <?php
     // -------------------------------------------------------------------------
     // URLS
-    $url_global = "http://wwwsitecomar";
+    $url_global = "http_wwwsitecomar";
     $urlActual = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     
     $url_section_contacto = $url_global."/contacto.php";
@@ -22,10 +22,10 @@
     
         //-- Address
     $company_address_main_a       = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
-    $company_address_main_a_GB    = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
+    $company_address_main_a_GB    = "bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires";
     
     $company_address_main_b       = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
-    $company_address_main_b_GB    = "bbbbbbbbbbbbbbbbbbbbbbbbbb  Autonomous City of Buenos Aires";
+    $company_address_main_b_GB    = "bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires";
     
     $company_address_main_full    = $company_address_main_a.' '.$company_address_main_b;
     $company_address_main_full_GB = $company_address_main_a_GB.' '.$company_address_main_b_GB;
@@ -36,24 +36,26 @@
     $company_tel_main_countryCode  = "+54 911 " . $company_tel_main;
     $company_tel_main_whatsapp     = "54911".$company_tel_main;
     
-    $company_tel_sec               = "12345678";
-    $company_tel_sec_countryCode   = "+54 911 " . $company_tel_sec;   
+    $company_tel_sec               = "12345678"; 
+    $company_tel_sec_formatted    = "(011) 1234-5678"; 
+    $company_tel_sec_countryCode   = "+54 911 " . $company_tel_sec;  
+    $company_tel_sec_whatsapp     = "54911".$company_tel_sec; 
     
     // -------------------------------------------------------------------------
     // SOCIAL NETWORKS
-    $social_facebook_url        = "https://www.facebook.com/usuario";
-    $social_instagram_url       = "https://www.instagram.com/usuario";
+    $social_facebook_url        = "https_www_facebook_com_usuario";
+    $social_instagram_url       = "https_www_instagram_com_usuario";
     $social_whatsapp_chatOpen   = "https://api.whatsapp.com/send?phone=".$company_tel_main_whatsapp;
     $social_whatsapp_WAme_url   = "https://wa.me/".$company_tel_main_whatsapp."?text=I'm%20interested%20in%20your%20car%20for%20sale";
     
-    $social_email_addressMain   = "correo@servidor.com";
+    $social_email_addressMain   = "correo_at_servidor_com";
     $social_mailto_addressMain  = "mailto:".$social_email_addressMain;
     
-    $social_googleMap_url       = "https://goo.gl/maps/aaaaaaaaaaaa";
-    $social_googleYouTube_url   = "https://www.youtube.com/user/ffffffffffffff"; 
+    $social_googleMap_url       = "https_goo_gl_maps_aaaaaaaaaaaa";
+    $social_googleYouTube_url   = "https_www_youtube_com_user_ffffffffffffff"; 
     
-    $social_twitter_url         = "https://www.twitter.com/usuario";
-    $social_linkedin_url        = "https://www.linkedin.com/usuario";
+    $social_twitter_url         = "https_www_twitter_com_usuario";
+    $social_linkedin_url        = "https_www_linkedin_com_usuario";
     
     // -------------------------------------------------------------------------
     // HEADER
