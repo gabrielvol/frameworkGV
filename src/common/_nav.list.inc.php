@@ -12,6 +12,11 @@
     <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox">
         <?php echo _("seccion"); ?></a>
 </li>
+<!--Con gettext--> 
+<li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
+    <a href="/nuevo/<?php if($gettext_idioma == 'en_GB') { echo '?l=en'; } ?>" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+        <?php echo _("seccion"); ?></a>
+</li>
 
 
 // Sub Level 1

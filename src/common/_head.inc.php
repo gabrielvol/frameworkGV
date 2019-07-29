@@ -20,7 +20,7 @@
 <title><?php if($gettext_idioma == 'en_GB'){ echo $site_title_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_titleBR; } else { echo $site_title; } ?></title>
 
 <meta name="description" content="<?php echo $site_desc ?>">
-<meta name="description" content="<?php if($gettext_idioma == 'en_GB'){ echo $site_desc_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_descPT; } else { echo $site_desc; } ?>">
+<meta name="description" content="<?php if($gettext_idioma == 'en_GB'){ echo $site_desc_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_desc_PT; } else { echo $site_desc; } ?>">
 
 <link href="/nuevo/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
@@ -57,13 +57,13 @@
 <meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>">
 <meta property="og:locale" content="es_AR">
 
-<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_titleDE; } else { echo $openGraph_title; } ?>">
+<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_title_DE; } else { echo $openGraph_title; } ?>">
 <meta property="og:url" content="<?php echo $url_global; ?>">
-<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_descDE; } else { echo $openGraph_desc; } ?>">
+<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_desc_DE; } else { echo $openGraph_desc; } ?>">
 <meta property="og:image:secure_url" content="<?php echo $openGraph_url; ?>/og_img.jpg">
 <meta property="og:image" content="<?php echo $openGraph_url; ?>/og_img.jpg">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteNameGB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteNameDE; } else { echo $openGraph_siteName; } ?>">
+<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>">
 <meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>">
 
 <!-- Facebook Open Graph -->

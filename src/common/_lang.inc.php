@@ -15,8 +15,8 @@
         </a>
     </li>
     <li>
-        <a href="/clientes/wsc/?l=en_US" class="displayBlock mask hoverGrowL">
-            <img src="/clientes/wsc/img/fl_US.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
+        <a href="/clientes/?l=en_US" class="displayBlock mask hoverGrowL">
+            <img src="/clientes/img/fl_US.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
         </a>
     </li>
     <li> <!-- <!-- Gettext_Alt --> -->
