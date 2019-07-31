@@ -1,4 +1,6 @@
 <footer id="footer" class="">        
+    <a href="#site_top" class="button_siteTop pAbs indentedText" role="button" aria-pressed="false"><?php echo _("Subir al inicio"); ?></a>  
+        
     <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
     
     <div class="logoFooter borderBox">
