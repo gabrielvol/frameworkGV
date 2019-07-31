@@ -2,7 +2,7 @@
 <script src="/nuevo/js/_global.js"></script>
 <!--<script src="/nuevo/js/_topper.js"></script>-->
 
-<?php if($navAcc_act == 1): // Nav ?> 
+<?php        if($navAcc_act == 1): // Nav ?> 
 <script src="/nuevo/js/_navAccordion.js"></script>
 
 <?php endif; if($navDrawer_act == 1): // Nav ?> 
