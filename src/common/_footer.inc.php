@@ -42,6 +42,7 @@
         <ul class="horizontal clearfix containerAT">
             <li class="copy">&copy; <?php echo $dateThisYear." - ".$company_name_full ?></li>
             <li class="tos"><a href="/legal/" class="displayBlock"><?php echo _("Privacidad y Condiciones"); ?></a></li>
+            <li class="stu"><?php echo _("Web Design By"); ?><a href="https://www.instagram.com/xxxxxx/" class="displayBlock alignCenterBT">Estudio De Diseño</a></li>
         </ul>
     </div> 
 </footer>

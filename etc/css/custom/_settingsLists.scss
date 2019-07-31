@@ -11,6 +11,25 @@
     }
 }    
 
+.numbered{
+    $liN_size: 25px;
+    
+    counter-reset: liN;
+    
+    li{
+        position: relative;
+            
+        &::before{   
+            @include squareSizeAndEqualHeightAndLineHeight($liN_size);  
+            counter-increment: liN; 
+            content: counter(liN);
+            display: block;
+            float: left;
+            margin-left: -1 * calc(#{$liN_size} + 10px);
+        }        
+    }
+}
+
 .bulleted_dot,
 .bulleted_square{
     li{        
