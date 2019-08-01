@@ -1,6 +1,6 @@
 <?php $navItemInicio = ($nav_pageCurrent == 0)? "displayNone" : ""; ?>
 
-<li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone'; } ?>">
+<li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone current'; } ?>">
     <a href="/nuevo/" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
 </li>
