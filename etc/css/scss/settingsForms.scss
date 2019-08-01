@@ -165,11 +165,11 @@ form{
     
     label{
         @include transition(1s);
-        color: $formLabelFontColour;
+        color: $formLabel_fontColour;
         font-weight: 400!important;
 
         &:focus, &:hover{
-            color: $formLabelFontColourHover;
+            color: $formLabel_fontColour_hover;
         }
     }
     
@@ -199,8 +199,8 @@ form{
         }
 
         &:focus, &:hover{
-            background-color: $formInput_bgColourHover;
-            border-color: $formInput_bcColourHover;
+            background-color: $formInput_bcColour_hover;
+            border-color: $formInput_fontColour_hover;
             color: $formInput_fontColourHover;
         }        
 
@@ -217,7 +217,7 @@ form{
             
             &, &:focus, &:hover{
                 border-color: $bcError!important;
-                box-shadow: inset 0 0 0 $formInput_bgColourHover;
+                box-shadow: inset 0 0 0 $formInput_bcColour_hover;
             }
         }
     }
@@ -254,10 +254,10 @@ form{
         font-family: $formSubmit_fontFamily;
 
         &:focus, &:hover{
-            background-color: $formSubmit_bgColourHover;
+            background-color: $formSubmit_bgColour_hover;
             border-color: $formSubmit_bcColourHover;
             color: $formSubmit_fontColourHover;
-            box-shadow: inset 0 0 0 $formSubmit_bgColourHover;
+            box-shadow: inset 0 0 0 $formSubmit_bgColour_hover;
         }
         
         &.white{

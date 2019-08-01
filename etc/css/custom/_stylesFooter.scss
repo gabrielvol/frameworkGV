@@ -3,7 +3,7 @@
    ========================================================================== */
 #footer{        
     .button_siteTop{
-        @include squareSize();
+        @include squareSize(50px);
         top: 10px;
         right: 10px;
         background-image: url('/nuevo/img/button_siteTop.svg');

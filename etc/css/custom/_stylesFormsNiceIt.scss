@@ -60,7 +60,7 @@ form.niceIt{
                 
                 &:hover, &:focus{
                     color: $formInput_fontColourHover;
-                    background-color: $formInput_bgColourHover;
+                    background-color: $formInput_bcColour_hover;
                 }
             }
         }

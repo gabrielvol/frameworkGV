@@ -28,7 +28,7 @@
         </ul>
         
         <?php
-            $sliderClass = 'sliderSeccion';
+            $sliderClass      = 'sliderSeccion';
             
             $fotoSliderMain01 = '01';
             $fotoSliderMain02 = '02';
@@ -53,7 +53,7 @@
             include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.main.inc.php');
         ?>                
         <ul class=" slick mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
-            <?php if(isset($fotoSliderMain01)): ?>
+            <?php        if(isset($fotoSliderMain01)): ?>
             <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($fotoSliderMain02)): ?>
             <li><img src="/nuevo/img/img_slide<?php echo $fotoSliderMain02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>

@@ -657,6 +657,10 @@ a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.no
 /* =============================================================================
    Settings Text | Custom [settingsText.scss]
    ========================================================================== */
+/* Safari tel detection */
+a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
+  color: #333333 !important; }
+
 /* =============================================================================
    Font Classes | Etc [classesFonts.scss]
    ========================================================================== */
@@ -1493,6 +1497,10 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Main Gobal Styles | Custom
    ========================================================================== */
+@media (min-width: 1024px) {
+  #main {
+    padding-top: 120px; } }
+
 /* =============================================================================
    Internas Global Styles | Custom
    ========================================================================== */
@@ -1513,6 +1521,19 @@ article, article::before, article::after, details, details::before, details::aft
   position: relative; }
   .hyphenated li::before {
     content: "- "; }
+
+.numbered {
+  counter-reset: liN; }
+  .numbered > li {
+    position: relative; }
+    .numbered > li::before {
+      width: 35px;
+      height: 35px;
+      counter-increment: liN;
+      content: counter(liN);
+      display: block;
+      float: left;
+      margin-left: calc(-1 * calc(35px + 10px)); }
 
 .bulleted_dot li,
 .bulleted_square li {
@@ -1751,6 +1772,21 @@ article, article::before, article::after, details, details::before, details::aft
     */ }
   #header .logoH {
     margin-bottom: 0; }
+  @media (max-width: 499px) {
+    #header .logoH {
+      /*
+            width: $logo_width_MO;
+            */ } }
+  @media (min-width: 500px) {
+    #header .logoH {
+      /*
+            width: $logo_width_AML;
+            */ } }
+  @media (min-width: 500px) and (max-width: 767px) {
+    #header .logoH {
+      /*
+            width: $logo_width_MLO;
+            */ } }
   @media (max-width: 767px) {
     #header {
       box-sizing: border-box;
@@ -1758,7 +1794,7 @@ article, article::before, article::after, details, details::before, details::aft
       padding-bottom: 15px;
       height: auto; }
       #header .logoH {
-        width: 50px; }
+        width: 220px; }
         #header .logoH a,
         #header .logoH img {
           width: 100%; }
@@ -1791,14 +1827,29 @@ article, article::before, article::after, details, details::before, details::aft
       #header .logoH img {
         width: 100%; } }
   @media (min-width: 1024px) {
-    #header .logoH {
-      width: 250px; } }
+    #header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 85px; }
+      #header .logoH {
+        width: 250px; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
+#footer .button_siteTop {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  background-image: url("/nuevo/img/button_siteTop.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
 #footer .gooAddress a {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   line-height: 1.2em; }
 
 @media (max-width: 767px) {
@@ -1955,7 +2006,8 @@ nav li:focus a, nav li:hover a {
 @media (max-width: 767px) {
   .navMain {
     top: 10px;
-    right: 10px; }
+    right: 10px;
+    position: fixed; }
     .navMain .hamb {
       top: 0;
       right: 0; }

@@ -80,6 +80,8 @@ src="/img/<?php if($gettext_idioma == 'pt_BR'){ echo '/it/'; } else if($gettext_
    -------------------------------------------------------------------------- */
 class="<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>"
 
+<?php if($l == 'it'){ echo 'ITlang'; } else if($l == 'en'){ echo 'ENlang'; } else { echo ''; } ?>
+<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>
 &.BRlang{}
 &.ENlang{}
 &.ITlang{}
