@@ -25,7 +25,7 @@
             content: counter(liN);
             display: block;
             float: left;
-            margin-left: -1 * calc(#{$liN_size} + 10px);
+            margin-left: calc(-1 * calc(#{$liN_size} + 10px));
         }        
     }
 }
