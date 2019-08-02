@@ -5,10 +5,10 @@
     @include borderStyle($bcGrey, 2px);
     transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
     display: block;
+    box-sizing: border-box;
     background-color: $bgGrey;
-    margin-right: auto;
-    margin-left: auto;
-    color: $white;
+    padding-right: 10px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 1rem;
     text-transform: uppercase;
@@ -16,6 +16,10 @@
     
     &, &:focus, &:hover{
         text-decoration: $none;
+    }
+    
+    &, &:visited, &:active{
+        color: $white;
     }
     
     &:focus, &:hover{
