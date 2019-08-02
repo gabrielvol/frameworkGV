@@ -28,7 +28,7 @@
     
     $nav_pageCurrent = 0;
     
-        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
 ?>
@@ -115,8 +115,8 @@
 
                 <label for="domicilio__formName">
                     <span class="labelName"><?php echo _('Domicilio'); ?></span>
-                    <input type="text" name="domicilio__formName" id="domicilio__formName" class="domicilio <?php echo $formInput_error_class_Domicilio__formName ?>" value="<?php echo $_POST['domicilio__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Domicilio__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Domicilio__formName ?>"><?php echo $formSpan_error_MSG_Domicilio__formName ?></span>
+                    <input type="text" name="domicilio__formName" id="domicilio__formName" class="domicilio <?php echo $formInput_error_class_domicilio__formName ?>" value="<?php echo $_POST['domicilio__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_domicilio__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_domicilio__formName ?>"><?php echo $formSpan_error_MSG_domicilio__formName ?></span>
                 </label>
 
                 <label for="localidad__formName">
@@ -198,14 +198,14 @@
 
                 <label for="email__formName">
                     <span class="labelName"><?php echo _('Correo electr&oacute;nico'); ?></span>
-                    <input type="email" name="email__formName" id="email__formName" class="email <?php echo $formInput_error_class_Email__formName ?>" value="<?php echo $_POST['email__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Email__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Email__formName ?>"><?php echo $formSpan_error_MSG_Email__formName ?></span>
+                    <input type="email" name="email__formName" id="email__formName" class="email <?php echo $formInput_error_class_email__formName ?>" value="<?php echo $_POST['email__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_email__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_email__formName ?>"><?php echo $formSpan_error_MSG_email__formName ?></span>
                 </label> 
 
                 <label for="email__formName">
                     <span class="labelName"><?php echo _('E-mail'); ?></span>
-                    <input type="email" name="email__formName" id="email__formName" class="email <?php echo $formInput_error_class_Email__formName ?>" value="<?php echo $_POST['email__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Email__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Email__formName ?>"><?php echo $formSpan_error_MSG_Email__formName ?></span>
+                    <input type="email" name="email__formName" id="email__formName" class="email <?php echo $formInput_error_class_email__formName ?>" value="<?php echo $_POST['email__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_email__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_email__formName ?>"><?php echo $formSpan_error_MSG_email__formName ?></span>
                 </label>               
 
                 <label for="website__formName">

@@ -31,8 +31,8 @@
     //--------------------------------------------------------------------------
     // Inicia proceso de form
     if (isset($_POST['enviarForm__formName'])){
-        //ini_set('sendmail_from','tampas@gmail.com');
-        //ini_set('SMTP','mail.gabrielvolonte.com.ar');
+        ini_set('sendmail_from','tampas@gmail.com');
+        ini_set('SMTP','mail.'.$domain_global.'.com.ar');
 
         // Asignamos datos de campos a variables
         $nombre__formName         = $_POST['nombre__formName'];
@@ -61,6 +61,7 @@
         $mensaje__formName        = $_POST['mensaje__formName'];
 
         // Cabeceras del correo
+        //$destino  = $form_email_address;
         $destino  = "tampas@gmail.com";
         $asunto   = "Contacto Web de $nombre__formName - $empresa__formName";
         $headers  = "From: $nombre__formName <$email__formName>\r\n";
@@ -68,8 +69,8 @@
         $headers .= "Content-type: text/html\r\n";
         $headers .= "X-Mailer: PHP5\n";
         $headers .= 'MIME-Version: 1.0' . "\n";
-        //$headers .= "CC: tampas@gmail.com\r\n";
-        //$headers .= "BCC: ggvv@hotmail.com.ar\r\n";
+        //$headers .= "CC: ".$form_email_addressCC."\r\n";
+        //$headers .= "BCC: ".$form_email_addressBCC."\r\n";
         $texto    = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '.$url_section_contacto.'</small><br /><br />';
         $texto   .= "<strong>Nombre:</strong> ".$nombre__formName."<br />";
         $texto   .= "<strong>Apellido:</strong> ".$apellido__formName."<br />";
@@ -174,8 +175,8 @@
         } elseif (empty($_POST["domicilio__formName"])) {
             $formMandatoryMSG__formName                = $errorMsgDomicilio__formName;
             $formMandatoryMSG_classes__formName        = $formMandatoryMSGErrorClass__formName;
-            $formInput_error_class_Domicilio__formName = "invalidField";
-            $formInput_autofocus_Domicilio__formName   = "autofocus";
+            $formInput_error_class_domicilio__formName = "invalidField";
+            $formInput_autofocus_domicilio__formName   = "autofocus";
             
         } elseif (empty($_POST["localidad__formName"])) {
             $formMandatoryMSG__formName                = $errorMsgLocalidad__formName;
@@ -210,8 +211,8 @@
         } elseif (empty($_POST["email__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgEmail__formName;
             $formMandatoryMSG_classes__formName   = $formMandatoryMSGErrorClass__formName;
-            $formInput_error_class_Email__formName     = "invalidField";
-            $formInput_autofocus_Email__formName        = "autofocus";
+            $formInput_error_class_email__formName     = "invalidField";
+            $formInput_autofocus_email__formName        = "autofocus";
             
         } elseif (empty($_POST["website__formName"])) {
             $formMandatoryMSG__formName          = $errorMsgWebsite__formName;
@@ -320,10 +321,10 @@
             $formInput_autofocus_direccion__formName        = "autofocus";
             
         } elseif (empty($_POST["domicilio__formName"])) {
-            $formSpan_error_MSG_Domicilio__formName  = $errorMsgDomicilio__formName;
-            $formSpan_error_class_Domicilio__formName   = "active";
-            $formInput_error_class_Domicilio__formName     = "invalidField";
-            $formInput_autofocus_Domicilio__formName        = "autofocus";
+            $formSpan_error_MSG_domicilio__formName  = $errorMsgDomicilio__formName;
+            $formSpan_error_class_domicilio__formName   = "active";
+            $formInput_error_class_domicilio__formName     = "invalidField";
+            $formInput_autofocus_domicilio__formName        = "autofocus";
             
         } elseif (empty($_POST["localidad__formName"])) {
             $formSpan_error_MSG_Localidad__formName  = $errorMsgLocalidad__formName;
@@ -356,10 +357,10 @@
             $formInput_autofocus_Telefono__formName         = "autofocus";
             
         } elseif (empty($_POST["email__formName"])) {
-            $formSpan_error_MSG_Email__formName  = $errorMsgEmail__formName;
-            $formSpan_error_class_Email__formName   = "active";
-            $formInput_error_class_Email__formName     = "invalidField";
-            $formInput_autofocus_Email__formName        = "autofocus";
+            $formSpan_error_MSG_email__formName  = $errorMsgEmail__formName;
+            $formSpan_error_class_email__formName   = "active";
+            $formInput_error_class_email__formName     = "invalidField";
+            $formInput_autofocus_email__formName        = "autofocus";
             
         } elseif (empty($_POST["website__formName"])) {
             $formSpan_error_MSG_Website__formName    = $errorMsgWebsite__formName;
