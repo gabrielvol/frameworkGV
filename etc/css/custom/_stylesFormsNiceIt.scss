@@ -59,7 +59,7 @@ form.niceIt{
                 line-height: 1.3rem;
                 
                 &:hover, &:focus{
-                    color: $formInput_fontColourHover;
+                    color: $formInput_fontColour_hover;
                     background-color: $formInput_bcColour_hover;
                 }
             }
