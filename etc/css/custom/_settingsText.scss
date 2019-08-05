@@ -9,3 +9,18 @@ a[href^=tel]{
         color: $fontColour_anchor_global!important;
     }
 }
+
+.gradientText{
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    
+    &.blueGT{
+        /*
+        background-image: $bgGradient_blueCTA;
+        filter: $bgGradient_blueCTA_filter;
+        */
+    }
+}
