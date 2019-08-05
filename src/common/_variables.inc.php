@@ -45,7 +45,7 @@
     
     
         //-- Mails              
-    $social_email_addressMain      = "correo_at_servidor_com";
+    $social_email_addressMain      = "casilla@".$domain_global;
     $social_mailto_addressMain     = "mailto:".$social_email_addressMain;
     
     $form_email_address            = "correo_at_servidor_com";
