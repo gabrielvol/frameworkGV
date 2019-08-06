@@ -74,7 +74,7 @@
         }
     }
      
-    &.carousel{
+    .carousel{
         .slickPrev{
             @include beforeTablet{
                 @include bgSvg(carousel_arrowL, $carouselArrow_widthHeight_BT);
