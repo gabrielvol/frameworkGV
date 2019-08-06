@@ -1,0 +1,10 @@
+/* =============================================================================
+   Settings Animations | Custom [settingsAnimations.scss]
+   ========================================================================== */
+@include afterTablet{
+    .hoverGrowS,
+    .hoverGrowM,
+    .hoverGrowL{
+        transition: transform 0.5s, background-color 1s;
+    }
+}
