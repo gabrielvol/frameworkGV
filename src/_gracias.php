@@ -27,17 +27,20 @@
     
     $nav_pageCurrent = 0;
     
-        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
 ?>
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/common/header.inc.php'); ?>
+    <?php
+        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php');
+        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
+    ?>
     <div id="main" class="page_int section_gracias" role="main">
         <h1 class="alignCenter">Gracias</h1>
-        <p class="alignCenter">Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias</p>
+        <p class="alignCenter"><?php echo $formStatusMSG_OK_globalB ?></p>
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
 </body>
 </html>
