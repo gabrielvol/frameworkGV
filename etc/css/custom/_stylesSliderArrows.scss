@@ -5,43 +5,29 @@
 
 @if $sliderArrow_act == "on"{
     $sliderArrow_height_BT:         30px;
-    $sliderArrow_widthHeight_BT:    18px $sliderArrow_height_BT;
+    $sliderArrow_width_BT:           18px $sliderArrow_height_BT;
     $sliderArrow_height_half_BT:    calc(#{$sliderArrow_height_BT} / 2);
   
     $sliderArrow_height_AT:         50px;
-    $sliderArrow_widthHeight_AT:    30px $sliderArrow_height_AT;
+    $sliderArrow_width_AT:           30px $sliderArrow_height_AT;
     $sliderArrow_height_half_AT:    calc(#{$sliderArrow_height_AT} / 2);
     
     $carouselArrow_height_BT:       $sliderArrow_height_BT;
-    $carouselArrow_widthHeight_BT:  18px $carouselArrow_height_BT;
+    $carouselArrow_width_BT:         18px $carouselArrow_height_BT;
     $carouselArrow_height_half_BT:  calc(#{$carouselArrow_height_BT} / 2);
 
     $carouselArrow_height_AT:       $sliderArrow_height_AT;
-    $carouselArrow_widthHeight_AT:  30px $carouselArrow_height_AT;
+    $carouselArrow_width_AT:         30px $carouselArrow_height_AT;
     $carouselArrow_height_half_AT:  calc(#{$carouselArrow_height_AT} / 2);
 
     .slickPrev{
         left: 0;
-
-        @include beforeTablet{
-            @include bgSvg(slider_arrowL, $sliderArrow_widthHeight_BT);        
-        }
-
-        @include afterTablet{
-            @include bgSvg(slider_arrowL, $sliderArrow_widthHeight_AT);        
-        }
+        background-image: url('/clientes/cuatro/img/slider_arrowL.svg');
     }
 
     .slickNext{
         right: 0;
-
-        @include beforeTablet{
-            @include bgSvg(slider_arrowR, $sliderArrow_widthHeight_BT);        
-        }
-
-        @include afterTablet{
-            @include bgSvg(slider_arrowR, $sliderArrow_widthHeight_AT);        
-        }
+        background-image: url('/clientes/cuatro/img/slider_arrowR.svg');
     }
 
     .slickPrev,
@@ -51,47 +37,48 @@
         position: absolute;
         z-index: $zIndex_slider_arrows_dots;
         top: 50%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
         border: $none;
         padding: $zero;
         text-indent: -9999px;
 
         @include beforeTablet{
-            @include squareSize($sliderArrow_height_BT);
-            /*
-            width: $slider_ArrowWidthBT;
+            width: $sliderArrow_width_BT;
             height: $sliderArrow_height_BT;
-            */
             margin-top: calc(-1 * #{$sliderArrow_height_half_BT});        
         }
 
         @include afterTablet{
-            @include squareSize($sliderArrow_height_AT);
-            /*            
-            width: $slider_ArrowWidthAT;
+            width: $sliderArrow_width_AT;
             height: $sliderArrow_height_AT;
-            */
             margin-top: calc(-1 * #{$sliderArrow_height_half_AT});
         }
     }
      
     .carousel{
         .slickPrev{
-            @include beforeTablet{
-                @include bgSvg(carousel_arrowL, $carouselArrow_widthHeight_BT);
-            }
-
-            @include afterTablet{
-                @include bgSvg(carousel_arrowL, $carouselArrow_widthHeight_AT);
-            }
+            background-image: url('/clientes/cuatro/img/carousel_arrowL.svg');
         }
 
         .slickNext{
+            background-image: url('/clientes/cuatro/img/carousel_arrowR.svg');
+        }
+
+        .slickPrev,
+        .slickNext{
             @include beforeTablet{
-                @include bgSvg(carousel_arrowR, $carouselArrow_widthHeight_BT);
+                width: $carouselArrow_width_BT;
+                height: $carouselArrow_height_BT;
+                margin-top: calc(-1 * #{$carouselArrow_height_half_BT});        
             }
 
-            @include afterTablet{
-                @include bgSvg(carousel_arrowR, $carouselArrow_widthHeight_AT);
+            @include afterTablet{          
+                width: $carouselArrow_width_AT;
+                height: $carouselArrow_height_AT;
+                margin-top: calc(-1 * #{$carouselArrow_height_half_AT});
             }
         }
     }
