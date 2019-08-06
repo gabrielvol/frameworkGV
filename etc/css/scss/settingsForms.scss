@@ -199,7 +199,7 @@ form{
         }
 
         &:focus, &:hover{
-            background-color: $formInput_bcColour_hover;
+            background-color: $formInput_bgColour_hover;
             border-color: $formInput_fontColour_hover;
             color: $formInput_fontColour_hover;
         }        
