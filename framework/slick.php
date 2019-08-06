@@ -123,45 +123,45 @@
         ?>                
         <ul class="slick mask horizontal clearfix <?php if(isset($slider_carousel_iniClass)) { echo $slider_carousel_iniClass; } ?>">
             <?php        if(isset($slider_carousel_foto_01)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_02)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_02; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_03)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_03; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_03; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_04)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_04; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_04; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_05)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_05; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_05; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_06)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_06; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_06; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_07)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_07; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_07; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_08)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_08; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_08; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_09)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_09; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_09; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_10)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_10; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_10; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_11)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_11; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_11; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_12)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_12; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_12; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_13)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_13; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_13; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_14)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_14; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_14; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_15)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_15; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_15; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_16)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_16; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_16; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_17)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_17; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_17; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_18)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_18; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_18; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_19)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_19; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_19; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($slider_carousel_foto_20)): ?>
-            <li><img src="/nuevo/img/img_slide<?php echo $slider_carousel_foto_20; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/img_carousel<?php echo $slider_carousel_foto_20; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; ?>
         </ul>
     </div>
