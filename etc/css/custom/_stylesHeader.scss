@@ -66,7 +66,11 @@
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
-        }        
+        }    
+        
+        @if $header_fixed_act_BT == "on"{
+            box-shadow: 0 0 10px 0 #ccc;
+        }   
             
         @if $logo_bg_beforeImg == "on"{
             .logoH{
@@ -145,6 +149,7 @@
             right: 0;
             left: 0;
             height: $header_height_AT;
+            box-shadow: 0 0 10px 0 #ccc;
         
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
@@ -208,6 +213,7 @@
             right: 0;
             left: 0;
             height: $header_height_ATL;
+            box-shadow: 0 0 10px 0 #ccc;
         }
         
         @if $index_fullHeight_act == "on"{
