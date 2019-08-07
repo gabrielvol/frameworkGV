@@ -28,6 +28,15 @@
     }
     
     @include mobileOnly{
+        @if $header_fixed_act_MO == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: $header_height_MO;
+            box-shadow: 0 0 10px 0 #ccc;
+        }
+
         .logoH{
             /*
             width: $logo_width_MO;
@@ -36,6 +45,15 @@
     }
     
     @include afterMobileLandscape{
+        @if $header_fixed_act_AML == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: $header_height_AML;
+            box-shadow: 0 0 10px 0 #ccc;
+        }
+        
         .logoH{
             /*
             width: $logo_width_AML;
@@ -44,6 +62,15 @@
     }
     
     @include mobileLandscapeOnly{
+        @if $header_fixed_act_MLO == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: $header_height_MLO;
+            box-shadow: 0 0 10px 0 #ccc;
+        }
+        
         .logoH{
             /*
             width: $logo_width_MLO;
@@ -69,6 +96,7 @@
         }    
         
         @if $header_fixed_act_BT == "on"{
+            height: $header_height_BT;
             box-shadow: 0 0 10px 0 #ccc;
         }   
             
@@ -97,9 +125,7 @@
                 } 
             }
             
-    } @else {
-            height: $header_height_BT;
-            
+    } @else {            
             .logoH{
                 width: $logo_width_BT;
             

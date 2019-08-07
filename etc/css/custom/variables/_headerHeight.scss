@@ -3,17 +3,23 @@
    ========================================================================== */
 // imported in _headerActivators.scss
 
+$header_height_MO:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_MO
+$header_height_PT_MO:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_MO, y asignar esa misma variable a esta
+
+$header_height_MLO:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_MLO
+$header_height_PT_MLO:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_MLO, y asignar esa misma variable a esta
+
 $header_paddingT_BT:        20px;
 $header_paddingB_BT:        15px;
 $header_height_navAcc_BT:   calc(#{$header_paddingT_BT} + #{$header_paddingB_BT} + #{$logo_height_BT});
 $header_height_BT:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_PT_BT
-$header_heightPT_BT:        0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_BT, y asignar esa misma variable a esta
+$header_height_PT_BT:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_BT, y asignar esa misma variable a esta
 
-$header_height_AT:          90px; //Si es auto hay que declarar 0 en la siguiente variable $header_heightPT_AT
-$header_heightPT_AT:        $header_height_AT; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_AT, y asignar esa misma variable a esta
+$header_height_AT:          90px; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_AT
+$header_height_PT_AT:        $header_height_AT; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_AT, y asignar esa misma variable a esta
 
-$header_height_ATL:         120px; //Si es auto hay que declarar 0 en la siguiente variable $header_heightPT_ATL
-$header_heightPT_ATL:       $header_height_ATL; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_ATL, y asignar esa misma variable a esta
+$header_height_ATL:         120px; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_ATL
+$header_height_PT_ATL:       $header_height_ATL; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_ATL, y asignar esa misma variable a esta
 
 /* -------------------------------------
     Full height index                 */

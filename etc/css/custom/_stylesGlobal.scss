@@ -47,18 +47,36 @@
    Main Gobal Styles | Custom
    ========================================================================== */
 #main{
+    @include mobileOnly{
+        @if $header_fixed_act_MO == "on"{
+            padding-top: $header_height_PT_MO;
+        }    
+    }
+    
+    @include afterMobileLandscape{
+        @if $header_fixed_act_AML == "on"{
+            padding-top: $header_height_PT_AML;
+        }        
+    }
+    
+    @include mobileLandscapeOnly{
+        @if $header_fixed_act_MLO == "on"{
+            padding-top: $header_height_PT_MLO;
+        }        
+    }
+    
     @include beforeTablet{
         @if $navAcc_act == "on"{
             padding-top: $header_height_navAcc_BT;
         }
         @if $header_fixed_act_BT == "on"{
-            padding-top: $header_heightPT_BT;
+            padding-top: $header_height_PT_BT;
         }
     }
     
     @include afterTablet{
         @if $header_fixed_act_AT == "on"{
-            padding-top: $header_heightPT_AT;
+            padding-top: $header_height_PT_AT;
         }
         
         @if $nav_topper_act == "on"{
@@ -68,7 +86,7 @@
     
     @include afterTabletLandscape{
         @if $header_fixed_act_ATL == "on"{
-            padding-top: $header_heightPT_ATL;
+            padding-top: $header_height_PT_ATL;
         }
     }
 }
