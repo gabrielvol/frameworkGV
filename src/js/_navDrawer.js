@@ -90,7 +90,7 @@ $(document).ready(function () {
     
     
     // Nav Sub Level 1
-    $('.TLILevel1').click(function () {
+    $('.TLI_level1').click(function () {
         $(this).toggleClass('openDR');
         $(this).attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
@@ -101,18 +101,18 @@ $(document).ready(function () {
             return attr === 'true' ? 'false' : 'true';
         });
         
-        $(this).closest('.mainMenu').find('.TLILevel2, .subMenuLevel2').removeClass('openDR');
-        $(this).closest('.mainMenu').find('.TLILevel2').attr('aria-pressed', 'false');
+        $(this).closest('.mainMenu').find('.TLI_level2, .subMenuLevel2').removeClass('openDR');
+        $(this).closest('.mainMenu').find('.TLI_level2').attr('aria-pressed', 'false');
         $(this).closest('.mainMenu').find('.subMenuLevel2').attr('aria-expanded', 'false');
         
-        $(this).closest('.mainMenu').find('.TLILevel3, .subMenuLevel3').removeClass('openDR');
-        $(this).closest('.mainMenu').find('.TLILevel3').attr('aria-pressed', 'false');
+        $(this).closest('.mainMenu').find('.TLI_level3, .subMenuLevel3').removeClass('openDR');
+        $(this).closest('.mainMenu').find('.TLI_level3').attr('aria-pressed', 'false');
         $(this).closest('.mainMenu').find('.subMenuLevel3').attr('aria-expanded', 'false');
     });
     
     
     // Nav Sub Level 2
-    $('.TLILevel2').click(function () {
+    $('.TLI_level2').click(function () {
         $(this).toggleClass('openDR');
         $(this).attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';
@@ -123,14 +123,14 @@ $(document).ready(function () {
             return attr === 'true' ? 'false' : 'true';
         });
         
-        $(this).closest('.mainMenu').find('.TLILevel3, .subMenuLevel3').removeClass('openDR');
-        $(this).closest('.mainMenu').find('.TLILevel3').attr('aria-pressed', 'false');
+        $(this).closest('.mainMenu').find('.TLI_level3, .subMenuLevel3').removeClass('openDR');
+        $(this).closest('.mainMenu').find('.TLI_level3').attr('aria-pressed', 'false');
         $(this).closest('.mainMenu').find('.subMenuLevel3').attr('aria-expanded', 'false');
     });
     
     
     // Nav Sub Level 3
-    $('.TLILevel3').click(function () {
+    $('.TLI_level3').click(function () {
         $(this).toggleClass('openDR');
         $(this).attr('aria-pressed', function (i, attr) {
             return attr === 'true' ? 'false' : 'true';

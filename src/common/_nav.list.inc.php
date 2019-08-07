@@ -21,7 +21,7 @@
 
 // Sub Level 1
 <li class="nos hasSub hasSubLevel1 pRel <?php if($nav_pageCurrent == 2) { echo 'current'; }?>">
-    <p class="topLevelItem TLILevel1 borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
+    <p class="topLevelItem TLI_level1 borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
         <?php echo _("Nosotros"); ?>
     </p>
     <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
@@ -35,12 +35,12 @@
 
 // Sub Level 2
 <li class="nos hasSub hasSubLevel1 pRel <?php if($nav_pageCurrent == 2) { echo 'current'; }?>">
-    <p class="topLevelItem TLILevel1 borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
+    <p class="topLevelItem TLI_level1 borderBox" id="nosNavItem" aria-haspopup="true" aria-owns="nosSubMenu" aria-controls="nosSubMenu" role="button" aria-pressed="false">
         <?php echo _("Nosotros"); ?>
     </p>
     <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
         <li class="hasSub hasSubLevel2 <?php if($nav_pageCurrent_int == 210) { echo 'current'; } ?>">
-            <p class="topLevelItem TLILevel2 borderBox" id="hisNavItem" aria-haspopup="true" aria-owns="hisSubMenu" aria-controls="hisSubMenu" role="button" aria-pressed="false">
+            <p class="topLevelItem TLI_level2 borderBox" id="hisNavItem" aria-haspopup="true" aria-owns="hisSubMenu" aria-controls="hisSubMenu" role="button" aria-pressed="false">
                 <?php echo _("Historia"); ?>
             </p>
             <ul id="hisSubMenu" class="subMenu subMenuLevel2 unstyled" role="group" aria-expanded="false" aria-labelledby="hisNavItem">
