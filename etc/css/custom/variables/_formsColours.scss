@@ -13,7 +13,7 @@ $formLabel_fontColour_hover:     darken($formLabel_fontColour, 15%);
 $formInput_fontColour:           $fontColour_main_global;
 $formInput_fontColour_hover:     $formInput_fontColour;
  
-$formPlaceholder_fontColour:     lighten($fontColour_main_global, 10%);
+$formPlaceholder_fontColour:     lighten($fontColour_main_global, 10%); // Descomentar líneas 13 a 18 en '[/etc/css/scss/settingsText.scss]'
   
 $formInput_bcColour:             $bcColour_main_global;
 $formInput_bcColour_hover:       $bcColour_main_global_hover;

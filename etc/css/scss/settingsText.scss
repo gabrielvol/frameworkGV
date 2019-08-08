@@ -13,7 +13,27 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, inp
 /*
 input::input-placeholder, textarea::input-placeholder{
     color: $formPlaceholder_fontColour}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: $formPlaceholder_fontColour}
+input::-moz-placeholder, textarea::-moz-placeholder{
+    color: $formPlaceholder_fontColour}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+    color: $formPlaceholder_fontColour}
+input:-moz-placeholder, textarea:-moz-placeholder{
+    color: $formPlaceholder_fontColour}
+
+input::-moz-placeholder, textarea::-moz-placeholder{
+  opacity: 1}
+
 input:focus::input-placeholder, textarea:focus::input-placeholder{
+    color: $fontColour_main_global}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    color: $fontColour_main_global}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
+    color: $fontColour_main_global}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
+    color: $fontColour_main_global}
+input:-moz-placeholder, textarea:-moz-placeholder{
     color: $fontColour_main_global}
 */
 h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
