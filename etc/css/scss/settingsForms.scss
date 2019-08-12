@@ -188,7 +188,6 @@ form{
     }
     
     input, select, textarea{
-        @include borderStyle($formInput_bcColour);
         background-color: $formInput_bgColour;
         color: $formInput_fontColour;
         font-family: $formInput_fontFamily; 
@@ -247,7 +246,6 @@ form{
     input[type="submit"],
     input[type="button"],
     button{
-        @include borderStyle($formSubmit_bcColour);
         @include transition(1s);
         background-color: $formSubmit_bgColour;
         color: $formSubmit_fontColour;

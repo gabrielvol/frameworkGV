@@ -84,6 +84,7 @@ form{
     input,
     select,
     textarea{
+        @include borderStyle($formInput_bcColour);
         padding-right: 10px;
         padding-left: 10px;
     }
@@ -167,6 +168,7 @@ form{
     input[type="submit"],
     input[type="button"],
     button{
+        @include borderStyle($formSubmit_bcColour);
         @include borderRadius();
         margin-bottom: $zero;
         font-size: 1.4rem;
