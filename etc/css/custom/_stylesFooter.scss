@@ -66,13 +66,14 @@
     
     @include afterTablet{    
         @if $footer_floatedContent_act_AT == "on"{
+            /*
             .logoFooter,
             .txtFooter{
                 float: left;
             }
             
             .logoFooter{
-                width: $footer_logoFloated_width; /* footerSizes.scss */
+                width: $footer_logoFloated_width; // footerSizes.scss
                 padding-right: 20px;
                 padding-left: 20px;
                 
@@ -82,8 +83,9 @@
             }
             
             .txtFooter{
-                width: calc(100% - #{$footer_logoFloated_width});  /* footerSizes.scss */               
+                width: calc(100% - #{$footer_logoFloated_width});  // footerSizes.scss
             }
+            */
 
     } @else {
             .logoF{
