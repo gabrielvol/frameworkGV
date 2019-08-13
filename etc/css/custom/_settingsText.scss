@@ -3,7 +3,7 @@
    ========================================================================== */
 p{}
     
-/* Safari tel detection */
+// Safari tel detection
 a[href^=tel]{
     &, &:focus, &:hover, &:active, &:visited{
         color: $fontColour_anchor_global!important;
