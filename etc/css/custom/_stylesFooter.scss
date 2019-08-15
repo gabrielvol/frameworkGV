@@ -20,8 +20,8 @@
         li{}
         
         @if $nav_hasSub_act == "on"{
-            .subMenuLevel1
-            .subMenuLevel2
+            .subMenuLevel1,
+            .subMenuLevel2,
             .subMenuLevel3{
                 display: none;
             }
