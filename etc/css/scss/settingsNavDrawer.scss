@@ -129,9 +129,11 @@
                         }
                     }
                     
-                    &.current{                        
-                        a,
+                    &.current{                      
+                        > a,
                         .TLI_level1{
+                            background-image: url('/cuatro/img/#{$navArrows_itemCurrent_level0}');
+                            background-position: right 10px center;
                             color: $navFontColour_TLICurrent_level1_BT;
                         }
                     }
