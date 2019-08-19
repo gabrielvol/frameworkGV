@@ -109,7 +109,7 @@ $navBcColour_navAcc:              $bcGreyXXL;
   
 $navBcColour_itemCurrent:         $bcGrey;
   
-$navBcColour_itemLevel0_BT:       $bcWhite;
+$navBcColour_itemLevel0_BT:       $bcGrey;
 $navBcColour_itemLevel1_BT:       $navBcColour_itemLevel0_BT;
 $navBcColour_itemLevel2_BT:       $navBcColour_itemLevel1_BT;
 $navBcColour_itemLevel3_BT:       $navBcColour_itemLevel2_BT;
@@ -117,7 +117,7 @@ $navBcColour_itemLevel3_BT:       $navBcColour_itemLevel2_BT;
 $navBcColour_backMenu:            $navBcColour_itemLevel1_BT;
   
 // Nav AT  
-$navBcColour_itemSub_AT:          $navBcColour_itemLevel1_BT;
+$navBcColour_itemSub_AT:          $navBcColour_itemLevel0_BT;
   
 // Nav Topper  
 $navBcColour_topper:              $bcGreyD;
