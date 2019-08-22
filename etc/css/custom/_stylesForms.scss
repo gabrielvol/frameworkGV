@@ -12,19 +12,23 @@ fieldset{
         color: $black;
     }
             
-    &.invalidField{
+    &.invalidField{        
+        &,
+        legend{
+            background-image: url('/nuevo/img/form_alert.svg');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: auto 55%;
+        }
+        
         legend,
         label span{
             color: $formInput_msgError_fontColour;
         }
         
         legend{
-            background-image: url('/nuevo/img/form_alert.svg');
-            background-repeat: no-repeat;
-            background-position: left center;
-            background-size: auto 55%;
             padding-left: 25px;
-        }        
+        }         
     }
 }
 
