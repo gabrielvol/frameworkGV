@@ -1,7 +1,7 @@
 /* =============================================================================
    Sizes Mixins | Etc [mixinsSizes.scss]
    ========================================================================== */
-@mixin squareSize($squareSizeValue){
-    width: $squareSizeValue;
-    height: $squareSizeValue;
+@mixin squareSize($squareSizeMX_value){
+    width: $squareSizeMX_value;
+    height: $squareSizeMX_value;
 }
