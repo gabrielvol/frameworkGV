@@ -1,13 +1,13 @@
 /* =============================================================================
    Background Mixins | Etc [mixinsBackgrounds.scss]
    ========================================================================== */
-@mixin sprites($backgroundPosition_mx, $backgroundColour_mx: transparent){
-    background: $backgroundColour_mx url('/nuevo/img/sprites.png') no-repeat $backgroundPosition_mx;}
+@mixin sprites($spritesMX_bgPosition, $spritesMX_bgColour: transparent){
+    background: $spritesMX_bgColour url('/nuevo/img/sprites.png') no-repeat $spritesMX_bgPosition;}
 
-@mixin bgSvg($svgPath_mx, $svgSize_mx: contain, $svgPos_mx: center center, $svgColour_mx: transparent, $svgRepeat_mx: no-repeat){
-    background-color: $svgColour_mx;
-    background-image: url('/nuevo/img/#{$svgPath_mx}.svg');
-    background-repeat: $svgRepeat_mx;
-    background-position: $svgPos_mx;
-    background-size: $svgSize_mx;
+@mixin bgSvg($bgSvgMX_fileName, $bgSvgMX_bgSize: contain, $bgSvgMX_bgPosition: center center, $bgSvgMX_bgColour: transparent, $bgSvgMX_bgRepeat: no-repeat){
+    background-color:       $bgSvgMX_bgColour;
+    background-image:       url('/nuevo/img/#{$bgSvgMX_fileName}.svg');
+    background-repeat:      $bgSvgMX_bgRepeat;
+    background-position:    $bgSvgMX_bgPosition;
+    background-size:        $bgSvgMX_bgSize;
 }
