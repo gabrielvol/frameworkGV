@@ -1,18 +1,18 @@
 /* =============================================================================
    Opacity Mixins | Etc [mixinsOpacity.scss]
    ========================================================================== */
-@mixin opacityCustom($opacityValue){
-    opacity: $opacityValue / 100;
-    filter: alpha(opacity=$opacityValue);
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityValue})";
+@mixin opacityCustom($opacityCustomMX_value){
+    opacity: calc($opacityCustomMX_value / 100);
+    filter: alpha(opacity=$opacityCustomMX_value);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomMX_value})";
 }
-@mixin opacityCustomHover($opacityValue: 75, $opacityValueHover: 100){
-    opacity: $opacityValue / 100;
-    filter: alpha(opacity=$opacityValue);
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityValue})";
+@mixin opacityCustomHover($opacityCustomHoverMX_value: 75, $opacityCustomHoverMX_valueHover: 100){
+    opacity: $opacityCustomHoverMX_value / 100;
+    filter: alpha(opacity=$opacityCustomHoverMX_value);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomHoverMX_value})";
     &:focus, &:hover{
-        opacity: $opacityValueHover/100;
-        filter: alpha(opacity=$opacityValueHover);
-        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityValueHover})";
+        opacity: calc($opacityCustomHoverMX_valueHover / 100);
+        filter: alpha(opacity=$opacityCustomHoverMX_valueHover);
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomHoverMX_valueHover})";
     }
 }

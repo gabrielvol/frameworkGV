@@ -1,6 +1,6 @@
 /* =============================================================================
    Clip Paths Mixins | Etc [mixinsClipPath.scss]
    ========================================================================== */
-@mixin clipPathCircle($pathValue: 100px, $pathPosition: center){
-    clip-path: circle($pathValue at $pathPosition);
+@mixin clipPathCircle($clipPathCircleMX_pathValue: 100px, $clipPathCircleMX_pathPosition: center){
+    clip-path: circle($clipPathCircleMX_pathValue at $clipPathCircleMX_pathPosition);
 }

@@ -2,16 +2,17 @@
    Center Mixins | Etc [mixinsCenter.scss]
    ========================================================================== */
     //Mixin para clase .absoluteCenter
-@mixin centerAbsolute($widthValue, $heightValue, $positionValue: absolute){
-    $widthValueH: #{$widthValue} / 2;
-    $heightValueH: #{$heightValue} / 2;
-    position: $positionValue;
+@mixin centerAbsolute($centerAbsoluteMX_width, $centerAbsoluteMX_height, $centerAbsoluteMX_position: absolute){
+    $centerAbsoluteMX_width_half: calc(#{$centerAbsoluteMX_width} / 2);
+    $centerAbsoluteMX_height_half: calc(#{$centerAbsoluteMX_height} / 2);
+    
+    position: $centerAbsoluteMX_position;
     top: 50%;
     left: 50%;
-    width: $widthValue;
-    height: $heightValue;
-    margin-top: calc(-1 * #{$heightValueH});
-    margin-left: calc(-1 * #{$widthValueH});
+    width: $centerAbsoluteMX_width;
+    height: $centerAbsoluteMX_height;
+    margin-top: calc(-1 * #{$centerAbsoluteMX_height_half});
+    margin-left: calc(-1 * #{$centerAbsoluteMX_width_half});
 }
 @mixin centerAbsoluteChild(){
     position: absolute;
@@ -24,34 +25,37 @@
     transform: translate(-50%, -50%);
 }
     //Mixin para clase .centerVertical
-@mixin centerVertical($heightValue, $positionValue: absolute){
-    $heightValueH: #{$heightValue} / 2;
-    position: $positionValue;
+@mixin centerVertical($centerVerticalMX_height, $centerVerticalMX_position: absolute){
+    $centerVerticalMX_height_half: #{$centerVerticalMX_height} / 2;
+    
+    position: $centerVerticalMX_position;
     top: 50%;
-    height: $heightValue;
-    margin-top: calc(-1 * #{$heightValueH});
+    height: $centerVerticalMX_height;
+    margin-top: calc(-1 * #{$centerVerticalMX_height_half});
 }
     //Mixin para clase .centerHorizontal
-@mixin centerHorizontal($widthValue, $positionValue: absolute){
-    $widthValueH: #{$widthValue} / 2;
-    position: $positionValue;
+@mixin centerHorizontal($centerHorizontalMX_width, $centerHorizontalMX_position: absolute){
+    $centerHorizontalMX_width_half: #{$centerHorizontalMX_width} / 2;
+    
+    position: $centerHorizontalMX_position;
     left: 50%;
-    width: $widthValue;
-    margin-left: calc(-1 * #{$widthValueH});
+    width: $centerHorizontalMX_width;
+    margin-left: calc(-1 * #{$centerHorizontalMX_width_half});
 }
     //Mixin centrado custom
-@mixin centerCustom($percentWidth: 90%){
-    width: $percentWidth;
+@mixin centerCustom($centerCustomMX_width: 90%){
+    width: $centerCustomMX_width;
     margin-right: $auto;
     margin-left: $auto;
 }
     //Mixin para centrar pop_main
-@mixin centerPopup($widthValue, $heightValue, $topValue: 40%){
-    $widthValueH: #{$widthValue} / 2;
-    $heightValueH: #{$heightValue} / 2;    
-    top: $topValue;
-    width: $widthValue;
-    height: $heightValue;
-    margin-top: calc(-1 * #{$heightValueH});
-    margin-left: calc(-1 * #{$widthValueH});
+@mixin centerPopup($centerPopupMX_width, $centerPopupMX_height, $centerPopupMX_top: 40%){
+    $centerPopupMX_width_half: #{$centerPopupMX_width} / 2;
+    $centerPopupMX_height_half: #{$centerPopupMX_height} / 2;   
+    
+    top: $centerPopupMX_top;
+    width: $centerPopupMX_width;
+    height: $centerPopupMX_height;
+    margin-top: calc(-1 * #{$centerPopupMX_height_half});
+    margin-left: calc(-1 * #{$centerPopupMX_width_half});
 }

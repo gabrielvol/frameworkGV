@@ -1,54 +1,54 @@
 /* =============================================================================
    Position Mixins | Etc [mixinsPositions.scss]
    ========================================================================== */
-@mixin posTR($a: 0, $b: 0){
-    top: $a;
-    right: $b;
+@mixin posTR($posMX_top: 0, $posMX_right: 0){
+    top: $posMX_top;
+    right: $posMX_right;
 }
-@mixin posTB($a: 0, $b: 0){
-    top: $a;  
-    bottom: $b;  
+@mixin posTB($posMX_top: 0, $posMX_bottom: 0){
+    top: $posMX_top;  
+    bottom: $posMX_bottom;  
 }
-@mixin posTL($a: 0, $b: 0){
-    top: $a;  
-    left: $b;  
+@mixin posTL($posMX_top: 0, $posMX_left: 0){
+    top: $posMX_top;  
+    left: $posMX_left;  
 }
-@mixin posRB($a: 0, $b: 0){
-    right: $a;
-    bottom: $b;  
+@mixin posRB($posMX_right: 0, $posMX_bottom: 0){
+    right: $posMX_right;
+    bottom: $posMX_bottom;  
 }
-@mixin posRL($a: 0, $b: 0){
-    right: $a;
-    left: $b;  
+@mixin posRL($posMX_right: 0, $posMX_left: 0){
+    right: $posMX_right;
+    left: $posMX_left;  
 }
-@mixin posBL($a: 0, $b: 0){
-    bottom: $a;
-    left: $b;  
+@mixin posBL($posMX_bottom: 0, $posMX_left: 0){
+    bottom: $posMX_bottom;
+    left: $posMX_left;  
 }
 
-@mixin posTRB($a: 0, $b: 0, $c: 0){
-    top: $a;
-    right: $b;
-    bottom: $c;
+@mixin posTRB($posMX_top: 0, $posMX_right: 0, $posMX_bottom: 0){
+    top: $posMX_top;
+    right: $posMX_right;
+    bottom: $posMX_bottom;
 }
-@mixin posTRL($a: 0, $b: 0, $c: 0){
-    top: $a;
-    right: $b;
-    left: $c;
+@mixin posTRL($posMX_top: 0, $posMX_right: 0, $posMX_left: 0){
+    top: $posMX_top;
+    right: $posMX_right;
+    left: $posMX_left;
 }
-@mixin posTBL($a: 0, $b: 0, $c: 0){
-    top: $a;
-    bottom: $b;
-    left: $c;
+@mixin posTBL($posMX_top: 0, $posMX_bottom: 0, $posMX_left: 0){
+    top: $posMX_top;
+    bottom: $posMX_bottom;
+    left: $posMX_left;
 }
-@mixin posRBL($a: 0, $b: 0, $c: 0){
-    right: $a;
-    bottom: $b;
-    left: $c;
+@mixin posRBL($posMX_right: 0, $posMX_bottom: 0, $posMX_left: 0){
+    right: $posMX_right;
+    bottom: $posMX_bottom;
+    left: $posMX_left;
 }
-@mixin posTRBL($a: 0, $b: 0, $c: 0, $d: 0){
-    top: $a;
-    right: $b;
-    bottom: $c;
-    left: $d;
+@mixin posTRBL($posMX_top: 0, $posMX_right: 0, $posMX_bottom: 0, $posMX_left: 0){
+    top: $posMX_top;
+    right: $posMX_right;
+    bottom: $posMX_bottom;
+    left: $posMX_left;
 }

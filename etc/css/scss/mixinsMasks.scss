@@ -2,18 +2,18 @@
    Mask Mixins | Etc [mixinsMasks.scss]
    ========================================================================== */
     //Mixin para máscara con centrado ciego
-@mixin centerMaskBlind($maskWidth, $maskHeight, $childWidth: auto, $childHeight: auto){
+@mixin centerMaskBlind($centerMaskBlindMX_width, $centerMaskBlindMX_height, $centerMaskBlindMX_childWidth: auto, $centerMaskBlindMX_childHeight: auto){
     &{
         position: relative;
-        width: $maskWidth;
-        height: $maskHeight;
+        width: $centerMaskBlindMX_width;
+        height: $centerMaskBlindMX_height;
         overflow: hidden;     
         .maskChild{
             position: absolute;
             top: 50%;
             left: 50%;
-            width: $childWidth;
-            height: $childHeight;
+            width: $centerMaskBlindMX_childWidth;
+            height: $centerMaskBlindMX_childHeight;
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
@@ -24,16 +24,16 @@
 }
 
     //Mixins para máscaras
-@mixin maskWidth($maskValue: 100%){
-    width: $maskValue;
+@mixin maskWidth($maskWidthMX_width: 100%){
+    width: $maskWidthMX_width;
     overflow: hidden;
 }
-@mixin maskHeight($maskValue: 100%){
-    height: $maskValue;
+@mixin maskHeight($maskHeightMX_height: 100%){
+    height: $maskHeightMX_height;
     overflow: hidden;
 }
-@mixin maskWidthHeight($maskWidthValue: 100%, $maskHeightValue: 100%){
-    width: $maskWidthValue;
-    height: $maskHeightValue;
+@mixin maskWidthHeight($maskWidthHeightMX_width: 100%, $maskWidthHeightMX_height: 100%){
+    width: $maskWidthHeightMX_width;
+    height: $maskWidthHeightMX_height;
     overflow: hidden;
 }

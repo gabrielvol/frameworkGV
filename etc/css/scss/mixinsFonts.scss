@@ -3,29 +3,29 @@
    ========================================================================== */
     //Generador de clases por cada fuente
 @mixin fontFamilyCustomClassesGenerator{
-    @each $fontFamilyClassName, $fontFamilyName in $fontFamilies_map {
-        .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
+    @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $fontFamilies_map {
+        .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
     }
     
-    @if $openSansClasses == "on" {
-        @each $fontFamilyClassName, $fontFamilyName in $openSansMap {
-            .#{$fontFamilyClassName}{font-family: $fontFamilyName;}
+    @if $openSans_classes_act == "on" {
+        @each $fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $openSansMap {
+            .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
         }
     }
 }
     //Generador de clases por cada tamaño de fuente
 @mixin fontCustomHeadingsSizesGeneratorMobile{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSize_map_mobile {
-        #{$headingsClassName}{font-size: $fontCustomSizeValues;}
+    @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues in $fontSize_map_mobile {
+        #{$fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues;}
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorTablet{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSize_map_tablet {
-        #{$headingsClassName}{font-size: $fontCustomSizeValues;}
+    @each $fontCustomHeadingsSizesGeneratorTabletMX_headingsClassName, $fontCustomHeadingsSizesGeneratorTabletMX_fontCustomSizeValues in $fontSize_map_tablet {
+        #{$fontCustomHeadingsSizesGeneratorTabletMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorTabletMX_fontCustomSizeValues;}
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorDesktop{
-    @each $headingsClassName, $fontCustomSizeValues in $fontSize_map_desktop {
-        #{$headingsClassName}{font-size: $fontCustomSizeValues;}
+    @each $fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName, $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues in $fontSize_map_desktop {
+        #{$fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues;}
     }
 }
