@@ -1,17 +1,17 @@
 /* =============================================================================
    Text Mixins | Etc [mixinsText.scss]
    ========================================================================== */
-@mixin textBoxHeightAndLineHeight($lineHeightValue:1.2em, $heightSize: 2){
-    height: calc(#{$lineHeightValue} * #{$heightSize});
-    line-height: $lineHeightValue;
+@mixin textBoxHeightAndLineHeight($textBoxHeightAndLineHeightMX_lineHeight:1.2em, $textBoxHeightAndLineHeightMX_size: 2){
+    height: calc(#{$textBoxHeightAndLineHeightMX_lineHeight} * #{$textBoxHeightAndLineHeightMX_size});
+    line-height: $textBoxHeightAndLineHeightMX_lineHeight;
 }
-@mixin equalHeightAndLineHeight($equalHeightAndLineHeightValue){
-    height: $equalHeightAndLineHeightValue;
-    line-height: $equalHeightAndLineHeightValue;
+@mixin equalHeightAndLineHeight($equalHeightAndLineHeightMX_value){
+    height: $equalHeightAndLineHeightMX_value;
+    line-height: $equalHeightAndLineHeightMX_value;
 }
-@mixin squareSizeAndEqualHeightAndLineHeight($squareSizeAndEqualHeightAndLineHeightValue){
-    width: $squareSizeAndEqualHeightAndLineHeightValue;
-    height: $squareSizeAndEqualHeightAndLineHeightValue;
-    line-height: $squareSizeAndEqualHeightAndLineHeightValue;
+@mixin squareSizeAndEqualHeightAndLineHeight($squareSizeAndEqualHeightAndLineHeightMX_value){
+    width: $squareSizeAndEqualHeightAndLineHeightMX_value;
+    height: $squareSizeAndEqualHeightAndLineHeightMX_value;
+    line-height: $squareSizeAndEqualHeightAndLineHeightMX_value;
     text-align: center;
 }

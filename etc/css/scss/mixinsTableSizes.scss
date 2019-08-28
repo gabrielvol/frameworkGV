@@ -2,18 +2,18 @@
    Tables Sizes Mixins | Etc [mixinsTableSizes.scss]
    ========================================================================== */
     //Generador de clases por cada tamaño de ancho de tabla
-@mixin tableCustomSizesBeforeTablet{
-    @each $tableClassName, $tableCustomWidth in $table_sizes_map_BT {
-        &.#{$tableClassName}{width: $tableCustomWidth;}
+@mixin tableCustomSizesBT{
+    @each $tableCustomSizesBTMX_tableClassName, $tableCustomSizesBTMX_tableCustomWidth in $table_sizes_map_BT {
+        &.#{$tableCustomSizesBTMX_tableClassName}{width: $tableCustomSizesBTMX_tableCustomWidth;}
     }
 }
-@mixin tableCustomSizesTablet{
-    @each $tableClassName, $tableCustomWidth in $table_sizes_map_AT {
-        &.#{$tableClassName}{width: $tableCustomWidth;}
+@mixin tableCustomSizesAT{
+    @each $tableCustomSizesATMX_tableClassName, $tableCustomSizesATMX_tableCustomWidth in $table_sizes_map_AT {
+        &.#{$tableCustomSizesATMX_tableClassName}{width: $tableCustomSizesATMX_tableCustomWidth;}
     }
 }
-@mixin tableCustomSizesTabletL{
-    @each $tableClassName, $tableCustomWidth in $table_sizes_map_ATL {
-        &.#{$tableClassName}{width: $tableCustomWidth;}
+@mixin tableCustomSizesATL{
+    @each $tableCustomSizesATLMX_tableClassName, $tableCustomSizesATLMX_tableCustomWidth in $table_sizes_map_ATL {
+        &.#{$tableCustomSizesATLMX_tableClassName}{width: $tableCustomSizesATLMX_tableCustomWidth;}
     }
 }

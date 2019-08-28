@@ -3,170 +3,170 @@
    ========================================================================== */
     //Mixins para generar nuevos spacing helpers
 @mixin spacingHelpersClassesGenerator{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}, .pv#{$shClassName}, .pa#{$shClassName}{padding-top: $shValue;}
-        .pr#{$shClassName}, .ph#{$shClassName}, .pa#{$shClassName}{padding-right: $shValue;}
-        .pb#{$shClassName}, .pv#{$shClassName}, .pa#{$shClassName}{padding-bottom: $shValue;}
-        .pl#{$shClassName}, .ph#{$shClassName}, .pa#{$shClassName}{padding-left: $shValue;}
-        .mt#{$shClassName}, .mv#{$shClassName}, .ma#{$shClassName}{margin-top: $shValue;}
-        .mr#{$shClassName}, .mh#{$shClassName}, .ma#{$shClassName}{margin-right: $shValue;}
-        .mb#{$shClassName}, .mv#{$shClassName}, .ma#{$shClassName}{margin-bottom: $shValue;}
-        .ml#{$shClassName}, .mh#{$shClassName}, .ma#{$shClassName}{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}, .pv#{$SH_className}, .pa#{$SH_className}{padding-top: $SH_value;}
+        .pr#{$SH_className}, .ph#{$SH_className}, .pa#{$SH_className}{padding-right: $SH_value;}
+        .pb#{$SH_className}, .pv#{$SH_className}, .pa#{$SH_className}{padding-bottom: $SH_value;}
+        .pl#{$SH_className}, .ph#{$SH_className}, .pa#{$SH_className}{padding-left: $SH_value;}
+        .mt#{$SH_className}, .mv#{$SH_className}, .ma#{$SH_className}{margin-top: $SH_value;}
+        .mr#{$SH_className}, .mh#{$SH_className}, .ma#{$SH_className}{margin-right: $SH_value;}
+        .mb#{$SH_className}, .mv#{$SH_className}, .ma#{$SH_className}{margin-bottom: $SH_value;}
+        .ml#{$SH_className}, .mh#{$SH_className}, .ma#{$SH_className}{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorMO{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}MO, .pv#{$shClassName}MO, .pa#{$shClassName}MO{padding-top: $shValue;}
-        .pr#{$shClassName}MO, .ph#{$shClassName}MO, .pa#{$shClassName}MO{padding-right: $shValue;}
-        .pb#{$shClassName}MO, .pv#{$shClassName}MO, .pa#{$shClassName}MO{padding-bottom: $shValue;}
-        .pl#{$shClassName}MO, .ph#{$shClassName}MO, .pa#{$shClassName}MO{padding-left: $shValue;}
-        .mt#{$shClassName}MO, .mv#{$shClassName}MO, .ma#{$shClassName}MO{margin-top: $shValue;}
-        .mr#{$shClassName}MO, .mh#{$shClassName}MO, .ma#{$shClassName}MO{margin-right: $shValue;}
-        .mb#{$shClassName}MO, .mv#{$shClassName}MO, .ma#{$shClassName}MO{margin-bottom: $shValue;}
-        .ml#{$shClassName}MO, .mh#{$shClassName}MO, .ma#{$shClassName}MO{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}MO, .pv#{$SH_className}MO, .pa#{$SH_className}MO{padding-top: $SH_value;}
+        .pr#{$SH_className}MO, .ph#{$SH_className}MO, .pa#{$SH_className}MO{padding-right: $SH_value;}
+        .pb#{$SH_className}MO, .pv#{$SH_className}MO, .pa#{$SH_className}MO{padding-bottom: $SH_value;}
+        .pl#{$SH_className}MO, .ph#{$SH_className}MO, .pa#{$SH_className}MO{padding-left: $SH_value;}
+        .mt#{$SH_className}MO, .mv#{$SH_className}MO, .ma#{$SH_className}MO{margin-top: $SH_value;}
+        .mr#{$SH_className}MO, .mh#{$SH_className}MO, .ma#{$SH_className}MO{margin-right: $SH_value;}
+        .mb#{$SH_className}MO, .mv#{$SH_className}MO, .ma#{$SH_className}MO{margin-bottom: $SH_value;}
+        .ml#{$SH_className}MO, .mh#{$SH_className}MO, .ma#{$SH_className}MO{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorAML{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}AML, .pv#{$shClassName}AML, .pa#{$shClassName}AML{padding-top: $shValue;}
-        .pr#{$shClassName}AML, .ph#{$shClassName}AML, .pa#{$shClassName}AML{padding-right: $shValue;}
-        .pb#{$shClassName}AML, .pv#{$shClassName}AML, .pa#{$shClassName}AML{padding-bottom: $shValue;}
-        .pl#{$shClassName}AML, .ph#{$shClassName}AML, .pa#{$shClassName}AML{padding-left: $shValue;}
-        .mt#{$shClassName}AML, .mv#{$shClassName}AML, .ma#{$shClassName}AML{margin-top: $shValue;}
-        .mr#{$shClassName}AML, .mh#{$shClassName}AML, .ma#{$shClassName}AML{margin-right: $shValue;}
-        .mb#{$shClassName}AML, .mv#{$shClassName}AML, .ma#{$shClassName}AML{margin-bottom: $shValue;}
-        .ml#{$shClassName}AML, .mh#{$shClassName}AML, .ma#{$shClassName}AML{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}AML, .pv#{$SH_className}AML, .pa#{$SH_className}AML{padding-top: $SH_value;}
+        .pr#{$SH_className}AML, .ph#{$SH_className}AML, .pa#{$SH_className}AML{padding-right: $SH_value;}
+        .pb#{$SH_className}AML, .pv#{$SH_className}AML, .pa#{$SH_className}AML{padding-bottom: $SH_value;}
+        .pl#{$SH_className}AML, .ph#{$SH_className}AML, .pa#{$SH_className}AML{padding-left: $SH_value;}
+        .mt#{$SH_className}AML, .mv#{$SH_className}AML, .ma#{$SH_className}AML{margin-top: $SH_value;}
+        .mr#{$SH_className}AML, .mh#{$SH_className}AML, .ma#{$SH_className}AML{margin-right: $SH_value;}
+        .mb#{$SH_className}AML, .mv#{$SH_className}AML, .ma#{$SH_className}AML{margin-bottom: $SH_value;}
+        .ml#{$SH_className}AML, .mh#{$SH_className}AML, .ma#{$SH_className}AML{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorMLO{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}MLO, .pv#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-top: $shValue;}
-        .pr#{$shClassName}MLO, .ph#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-right: $shValue;}
-        .pb#{$shClassName}MLO, .pv#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-bottom: $shValue;}
-        .pl#{$shClassName}MLO, .ph#{$shClassName}MLO, .pa#{$shClassName}MLO{padding-left: $shValue;}
-        .mt#{$shClassName}MLO, .mv#{$shClassName}MLO, .ma#{$shClassName}MLO{margin-top: $shValue;}
-        .mr#{$shClassName}MLO, .mh#{$shClassName}MLO, .ma#{$shClassName}MLO{margin-right: $shValue;}
-        .mb#{$shClassName}MLO, .mv#{$shClassName}MLO, .ma#{$shClassName}MLO{margin-bottom: $shValue;}
-        .ml#{$shClassName}MLO, .mh#{$shClassName}MLO, .ma#{$shClassName}MLO{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}MLO, .pv#{$SH_className}MLO, .pa#{$SH_className}MLO{padding-top: $SH_value;}
+        .pr#{$SH_className}MLO, .ph#{$SH_className}MLO, .pa#{$SH_className}MLO{padding-right: $SH_value;}
+        .pb#{$SH_className}MLO, .pv#{$SH_className}MLO, .pa#{$SH_className}MLO{padding-bottom: $SH_value;}
+        .pl#{$SH_className}MLO, .ph#{$SH_className}MLO, .pa#{$SH_className}MLO{padding-left: $SH_value;}
+        .mt#{$SH_className}MLO, .mv#{$SH_className}MLO, .ma#{$SH_className}MLO{margin-top: $SH_value;}
+        .mr#{$SH_className}MLO, .mh#{$SH_className}MLO, .ma#{$SH_className}MLO{margin-right: $SH_value;}
+        .mb#{$SH_className}MLO, .mv#{$SH_className}MLO, .ma#{$SH_className}MLO{margin-bottom: $SH_value;}
+        .ml#{$SH_className}MLO, .mh#{$SH_className}MLO, .ma#{$SH_className}MLO{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorBT{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}BT, .pv#{$shClassName}BT, .pa#{$shClassName}BT{padding-top: $shValue;}
-        .pr#{$shClassName}BT, .ph#{$shClassName}BT, .pa#{$shClassName}BT{padding-right: $shValue;}
-        .pb#{$shClassName}BT, .pv#{$shClassName}BT, .pa#{$shClassName}BT{padding-bottom: $shValue;}
-        .pl#{$shClassName}BT, .ph#{$shClassName}BT, .pa#{$shClassName}BT{padding-left: $shValue;}
-        .mt#{$shClassName}BT, .mv#{$shClassName}BT, .ma#{$shClassName}BT{margin-top: $shValue;}
-        .mr#{$shClassName}BT, .mh#{$shClassName}BT, .ma#{$shClassName}BT{margin-right: $shValue;}
-        .mb#{$shClassName}BT, .mv#{$shClassName}BT, .ma#{$shClassName}BT{margin-bottom: $shValue;}
-        .ml#{$shClassName}BT, .mh#{$shClassName}BT, .ma#{$shClassName}BT{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}BT, .pv#{$SH_className}BT, .pa#{$SH_className}BT{padding-top: $SH_value;}
+        .pr#{$SH_className}BT, .ph#{$SH_className}BT, .pa#{$SH_className}BT{padding-right: $SH_value;}
+        .pb#{$SH_className}BT, .pv#{$SH_className}BT, .pa#{$SH_className}BT{padding-bottom: $SH_value;}
+        .pl#{$SH_className}BT, .ph#{$SH_className}BT, .pa#{$SH_className}BT{padding-left: $SH_value;}
+        .mt#{$SH_className}BT, .mv#{$SH_className}BT, .ma#{$SH_className}BT{margin-top: $SH_value;}
+        .mr#{$SH_className}BT, .mh#{$SH_className}BT, .ma#{$SH_className}BT{margin-right: $SH_value;}
+        .mb#{$SH_className}BT, .mv#{$SH_className}BT, .ma#{$SH_className}BT{margin-bottom: $SH_value;}
+        .ml#{$SH_className}BT, .mh#{$SH_className}BT, .ma#{$SH_className}BT{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorBTL{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}BTL, .pv#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-top: $shValue;}
-        .pr#{$shClassName}BTL, .ph#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-right: $shValue;}
-        .pb#{$shClassName}BTL, .pv#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-bottom: $shValue;}
-        .pl#{$shClassName}BTL, .ph#{$shClassName}BTL, .pa#{$shClassName}BTL{padding-left: $shValue;}
-        .mt#{$shClassName}BTL, .mv#{$shClassName}BTL, .ma#{$shClassName}BTL{margin-top: $shValue;}
-        .mr#{$shClassName}BTL, .mh#{$shClassName}BTL, .ma#{$shClassName}BTL{margin-right: $shValue;}
-        .mb#{$shClassName}BTL, .mv#{$shClassName}BTL, .ma#{$shClassName}BTL{margin-bottom: $shValue;}
-        .ml#{$shClassName}BTL, .mh#{$shClassName}BTL, .ma#{$shClassName}BTL{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}BTL, .pv#{$SH_className}BTL, .pa#{$SH_className}BTL{padding-top: $SH_value;}
+        .pr#{$SH_className}BTL, .ph#{$SH_className}BTL, .pa#{$SH_className}BTL{padding-right: $SH_value;}
+        .pb#{$SH_className}BTL, .pv#{$SH_className}BTL, .pa#{$SH_className}BTL{padding-bottom: $SH_value;}
+        .pl#{$SH_className}BTL, .ph#{$SH_className}BTL, .pa#{$SH_className}BTL{padding-left: $SH_value;}
+        .mt#{$SH_className}BTL, .mv#{$SH_className}BTL, .ma#{$SH_className}BTL{margin-top: $SH_value;}
+        .mr#{$SH_className}BTL, .mh#{$SH_className}BTL, .ma#{$SH_className}BTL{margin-right: $SH_value;}
+        .mb#{$SH_className}BTL, .mv#{$SH_className}BTL, .ma#{$SH_className}BTL{margin-bottom: $SH_value;}
+        .ml#{$SH_className}BTL, .mh#{$SH_className}BTL, .ma#{$SH_className}BTL{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorTO{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}TO, .pv#{$shClassName}TO, .pa#{$shClassName}TO{padding-top: $shValue;}
-        .pr#{$shClassName}TO, .ph#{$shClassName}TO, .pa#{$shClassName}TO{padding-right: $shValue;}
-        .pb#{$shClassName}TO, .pv#{$shClassName}TO, .pa#{$shClassName}TO{padding-bottom: $shValue;}
-        .pl#{$shClassName}TO, .ph#{$shClassName}TO, .pa#{$shClassName}TO{padding-left: $shValue;}
-        .mt#{$shClassName}TO, .mv#{$shClassName}TO, .ma#{$shClassName}TO{margin-top: $shValue;}
-        .mr#{$shClassName}TO, .mh#{$shClassName}TO, .ma#{$shClassName}TO{margin-right: $shValue;}
-        .mb#{$shClassName}TO, .mv#{$shClassName}TO, .ma#{$shClassName}TO{margin-bottom: $shValue;}
-        .ml#{$shClassName}TO, .mh#{$shClassName}TO, .ma#{$shClassName}TO{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}TO, .pv#{$SH_className}TO, .pa#{$SH_className}TO{padding-top: $SH_value;}
+        .pr#{$SH_className}TO, .ph#{$SH_className}TO, .pa#{$SH_className}TO{padding-right: $SH_value;}
+        .pb#{$SH_className}TO, .pv#{$SH_className}TO, .pa#{$SH_className}TO{padding-bottom: $SH_value;}
+        .pl#{$SH_className}TO, .ph#{$SH_className}TO, .pa#{$SH_className}TO{padding-left: $SH_value;}
+        .mt#{$SH_className}TO, .mv#{$SH_className}TO, .ma#{$SH_className}TO{margin-top: $SH_value;}
+        .mr#{$SH_className}TO, .mh#{$SH_className}TO, .ma#{$SH_className}TO{margin-right: $SH_value;}
+        .mb#{$SH_className}TO, .mv#{$SH_className}TO, .ma#{$SH_className}TO{margin-bottom: $SH_value;}
+        .ml#{$SH_className}TO, .mh#{$SH_className}TO, .ma#{$SH_className}TO{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorAT{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}AT, .pv#{$shClassName}AT, .pa#{$shClassName}AT{padding-top: $shValue;}
-        .pr#{$shClassName}AT, .ph#{$shClassName}AT, .pa#{$shClassName}AT{padding-right: $shValue;}
-        .pb#{$shClassName}AT, .pv#{$shClassName}AT, .pa#{$shClassName}AT{padding-bottom: $shValue;}
-        .pl#{$shClassName}AT, .ph#{$shClassName}AT, .pa#{$shClassName}AT{padding-left: $shValue;}
-        .mt#{$shClassName}AT, .mv#{$shClassName}AT, .ma#{$shClassName}AT{margin-top: $shValue;}
-        .mr#{$shClassName}AT, .mh#{$shClassName}AT, .ma#{$shClassName}AT{margin-right: $shValue;}
-        .mb#{$shClassName}AT, .mv#{$shClassName}AT, .ma#{$shClassName}AT{margin-bottom: $shValue;}
-        .ml#{$shClassName}AT, .mh#{$shClassName}AT, .ma#{$shClassName}AT{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}AT, .pv#{$SH_className}AT, .pa#{$SH_className}AT{padding-top: $SH_value;}
+        .pr#{$SH_className}AT, .ph#{$SH_className}AT, .pa#{$SH_className}AT{padding-right: $SH_value;}
+        .pb#{$SH_className}AT, .pv#{$SH_className}AT, .pa#{$SH_className}AT{padding-bottom: $SH_value;}
+        .pl#{$SH_className}AT, .ph#{$SH_className}AT, .pa#{$SH_className}AT{padding-left: $SH_value;}
+        .mt#{$SH_className}AT, .mv#{$SH_className}AT, .ma#{$SH_className}AT{margin-top: $SH_value;}
+        .mr#{$SH_className}AT, .mh#{$SH_className}AT, .ma#{$SH_className}AT{margin-right: $SH_value;}
+        .mb#{$SH_className}AT, .mv#{$SH_className}AT, .ma#{$SH_className}AT{margin-bottom: $SH_value;}
+        .ml#{$SH_className}AT, .mh#{$SH_className}AT, .ma#{$SH_className}AT{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorATL{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}ATL, .pv#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-top: $shValue;}
-        .pr#{$shClassName}ATL, .ph#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-right: $shValue;}
-        .pb#{$shClassName}ATL, .pv#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-bottom: $shValue;}
-        .pl#{$shClassName}ATL, .ph#{$shClassName}ATL, .pa#{$shClassName}ATL{padding-left: $shValue;}
-        .mt#{$shClassName}ATL, .mv#{$shClassName}ATL, .ma#{$shClassName}ATL{margin-top: $shValue;}
-        .mr#{$shClassName}ATL, .mh#{$shClassName}ATL, .ma#{$shClassName}ATL{margin-right: $shValue;}
-        .mb#{$shClassName}ATL, .mv#{$shClassName}ATL, .ma#{$shClassName}ATL{margin-bottom: $shValue;}
-        .ml#{$shClassName}ATL, .mh#{$shClassName}ATL, .ma#{$shClassName}ATL{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}ATL, .pv#{$SH_className}ATL, .pa#{$SH_className}ATL{padding-top: $SH_value;}
+        .pr#{$SH_className}ATL, .ph#{$SH_className}ATL, .pa#{$SH_className}ATL{padding-right: $SH_value;}
+        .pb#{$SH_className}ATL, .pv#{$SH_className}ATL, .pa#{$SH_className}ATL{padding-bottom: $SH_value;}
+        .pl#{$SH_className}ATL, .ph#{$SH_className}ATL, .pa#{$SH_className}ATL{padding-left: $SH_value;}
+        .mt#{$SH_className}ATL, .mv#{$SH_className}ATL, .ma#{$SH_className}ATL{margin-top: $SH_value;}
+        .mr#{$SH_className}ATL, .mh#{$SH_className}ATL, .ma#{$SH_className}ATL{margin-right: $SH_value;}
+        .mb#{$SH_className}ATL, .mv#{$SH_className}ATL, .ma#{$SH_className}ATL{margin-bottom: $SH_value;}
+        .ml#{$SH_className}ATL, .mh#{$SH_className}ATL, .ma#{$SH_className}ATL{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorTLO{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}TLO, .pv#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-top: $shValue;}
-        .pr#{$shClassName}TLO, .ph#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-right: $shValue;}
-        .pb#{$shClassName}TLO, .pv#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-bottom: $shValue;}
-        .pl#{$shClassName}TLO, .ph#{$shClassName}TLO, .pa#{$shClassName}TLO{padding-left: $shValue;}
-        .mt#{$shClassName}TLO, .mv#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-top: $shValue;}
-        .mr#{$shClassName}TLO, .mh#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-right: $shValue;}
-        .mb#{$shClassName}TLO, .mv#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-bottom: $shValue;}
-        .ml#{$shClassName}TLO, .mh#{$shClassName}TLO, .ma#{$shClassName}TLO{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}TLO, .pv#{$SH_className}TLO, .pa#{$SH_className}TLO{padding-top: $SH_value;}
+        .pr#{$SH_className}TLO, .ph#{$SH_className}TLO, .pa#{$SH_className}TLO{padding-right: $SH_value;}
+        .pb#{$SH_className}TLO, .pv#{$SH_className}TLO, .pa#{$SH_className}TLO{padding-bottom: $SH_value;}
+        .pl#{$SH_className}TLO, .ph#{$SH_className}TLO, .pa#{$SH_className}TLO{padding-left: $SH_value;}
+        .mt#{$SH_className}TLO, .mv#{$SH_className}TLO, .ma#{$SH_className}TLO{margin-top: $SH_value;}
+        .mr#{$SH_className}TLO, .mh#{$SH_className}TLO, .ma#{$SH_className}TLO{margin-right: $SH_value;}
+        .mb#{$SH_className}TLO, .mv#{$SH_className}TLO, .ma#{$SH_className}TLO{margin-bottom: $SH_value;}
+        .ml#{$SH_className}TLO, .mh#{$SH_className}TLO, .ma#{$SH_className}TLO{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorTTLO{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}TTLO, .pv#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-top: $shValue;}
-        .pr#{$shClassName}TTLO, .ph#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-right: $shValue;}
-        .pb#{$shClassName}TTLO, .pv#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-bottom: $shValue;}
-        .pl#{$shClassName}TTLO, .ph#{$shClassName}TTLO, .pa#{$shClassName}TTLO{padding-left: $shValue;}
-        .mt#{$shClassName}TTLO, .mv#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-top: $shValue;}
-        .mr#{$shClassName}TTLO, .mh#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-right: $shValue;}
-        .mb#{$shClassName}TTLO, .mv#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-bottom: $shValue;}
-        .ml#{$shClassName}TTLO, .mh#{$shClassName}TTLO, .ma#{$shClassName}TTLO{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}TTLO, .pv#{$SH_className}TTLO, .pa#{$SH_className}TTLO{padding-top: $SH_value;}
+        .pr#{$SH_className}TTLO, .ph#{$SH_className}TTLO, .pa#{$SH_className}TTLO{padding-right: $SH_value;}
+        .pb#{$SH_className}TTLO, .pv#{$SH_className}TTLO, .pa#{$SH_className}TTLO{padding-bottom: $SH_value;}
+        .pl#{$SH_className}TTLO, .ph#{$SH_className}TTLO, .pa#{$SH_className}TTLO{padding-left: $SH_value;}
+        .mt#{$SH_className}TTLO, .mv#{$SH_className}TTLO, .ma#{$SH_className}TTLO{margin-top: $SH_value;}
+        .mr#{$SH_className}TTLO, .mh#{$SH_className}TTLO, .ma#{$SH_className}TTLO{margin-right: $SH_value;}
+        .mb#{$SH_className}TTLO, .mv#{$SH_className}TTLO, .ma#{$SH_className}TTLO{margin-bottom: $SH_value;}
+        .ml#{$SH_className}TTLO, .mh#{$SH_className}TTLO, .ma#{$SH_className}TTLO{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorBD{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}BD, .pv#{$shClassName}BD, .pa#{$shClassName}BD{padding-top: $shValue;}
-        .pr#{$shClassName}BD, .ph#{$shClassName}BD, .pa#{$shClassName}BD{padding-right: $shValue;}
-        .pb#{$shClassName}BD, .pv#{$shClassName}BD, .pa#{$shClassName}BD{padding-bottom: $shValue;}
-        .pl#{$shClassName}BD, .ph#{$shClassName}BD, .pa#{$shClassName}BD{padding-left: $shValue;}
-        .mt#{$shClassName}BD, .mv#{$shClassName}BD, .ma#{$shClassName}BD{margin-top: $shValue;}
-        .mr#{$shClassName}BD, .mh#{$shClassName}BD, .ma#{$shClassName}BD{margin-right: $shValue;}
-        .mb#{$shClassName}BD, .mv#{$shClassName}BD, .ma#{$shClassName}BD{margin-bottom: $shValue;}
-        .ml#{$shClassName}BD, .mh#{$shClassName}BD, .ma#{$shClassName}BD{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}BD, .pv#{$SH_className}BD, .pa#{$SH_className}BD{padding-top: $SH_value;}
+        .pr#{$SH_className}BD, .ph#{$SH_className}BD, .pa#{$SH_className}BD{padding-right: $SH_value;}
+        .pb#{$SH_className}BD, .pv#{$SH_className}BD, .pa#{$SH_className}BD{padding-bottom: $SH_value;}
+        .pl#{$SH_className}BD, .ph#{$SH_className}BD, .pa#{$SH_className}BD{padding-left: $SH_value;}
+        .mt#{$SH_className}BD, .mv#{$SH_className}BD, .ma#{$SH_className}BD{margin-top: $SH_value;}
+        .mr#{$SH_className}BD, .mh#{$SH_className}BD, .ma#{$SH_className}BD{margin-right: $SH_value;}
+        .mb#{$SH_className}BD, .mv#{$SH_className}BD, .ma#{$SH_className}BD{margin-bottom: $SH_value;}
+        .ml#{$SH_className}BD, .mh#{$SH_className}BD, .ma#{$SH_className}BD{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorAL{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}AL, .pv#{$shClassName}AL, .pa#{$shClassName}AL{padding-top: $shValue;}
-        .pr#{$shClassName}AL, .ph#{$shClassName}AL, .pa#{$shClassName}AL{padding-right: $shValue;}
-        .pb#{$shClassName}AL, .pv#{$shClassName}AL, .pa#{$shClassName}AL{padding-bottom: $shValue;}
-        .pl#{$shClassName}AL, .ph#{$shClassName}AL, .pa#{$shClassName}AL{padding-left: $shValue;}
-        .mt#{$shClassName}AL, .mv#{$shClassName}AL, .ma#{$shClassName}AL{margin-top: $shValue;}
-        .mr#{$shClassName}AL, .mh#{$shClassName}AL, .ma#{$shClassName}AL{margin-right: $shValue;}
-        .mb#{$shClassName}AL, .mv#{$shClassName}AL, .ma#{$shClassName}AL{margin-bottom: $shValue;}
-        .ml#{$shClassName}AL, .mh#{$shClassName}AL, .ma#{$shClassName}AL{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}AL, .pv#{$SH_className}AL, .pa#{$SH_className}AL{padding-top: $SH_value;}
+        .pr#{$SH_className}AL, .ph#{$SH_className}AL, .pa#{$SH_className}AL{padding-right: $SH_value;}
+        .pb#{$SH_className}AL, .pv#{$SH_className}AL, .pa#{$SH_className}AL{padding-bottom: $SH_value;}
+        .pl#{$SH_className}AL, .ph#{$SH_className}AL, .pa#{$SH_className}AL{padding-left: $SH_value;}
+        .mt#{$SH_className}AL, .mv#{$SH_className}AL, .ma#{$SH_className}AL{margin-top: $SH_value;}
+        .mr#{$SH_className}AL, .mh#{$SH_className}AL, .ma#{$SH_className}AL{margin-right: $SH_value;}
+        .mb#{$SH_className}AL, .mv#{$SH_className}AL, .ma#{$SH_className}AL{margin-bottom: $SH_value;}
+        .ml#{$SH_className}AL, .mh#{$SH_className}AL, .ma#{$SH_className}AL{margin-left: $SH_value;}
     }
 }
 @mixin spacingHelpersClassesGeneratorAD{
-    @each $shClassName, $shValue in $helpers_spacing_map {
-        .pt#{$shClassName}AD, .pv#{$shClassName}AD, .pa#{$shClassName}AD{padding-top: $shValue;}
-        .pr#{$shClassName}AD, .ph#{$shClassName}AD, .pa#{$shClassName}AD{padding-right: $shValue;}
-        .pb#{$shClassName}AD, .pv#{$shClassName}AD, .pa#{$shClassName}AD{padding-bottom: $shValue;}
-        .pl#{$shClassName}AD, .ph#{$shClassName}AD, .pa#{$shClassName}AD{padding-left: $shValue;}
-        .mt#{$shClassName}AD, .mv#{$shClassName}AD, .ma#{$shClassName}AD{margin-top: $shValue;}
-        .mr#{$shClassName}AD, .mh#{$shClassName}AD, .ma#{$shClassName}AD{margin-right: $shValue;}
-        .mb#{$shClassName}AD, .mv#{$shClassName}AD, .ma#{$shClassName}AD{margin-bottom: $shValue;}
-        .ml#{$shClassName}AD, .mh#{$shClassName}AD, .ma#{$shClassName}AD{margin-left: $shValue;}
+    @each $SH_className, $SH_value in $helpers_spacing_map {
+        .pt#{$SH_className}AD, .pv#{$SH_className}AD, .pa#{$SH_className}AD{padding-top: $SH_value;}
+        .pr#{$SH_className}AD, .ph#{$SH_className}AD, .pa#{$SH_className}AD{padding-right: $SH_value;}
+        .pb#{$SH_className}AD, .pv#{$SH_className}AD, .pa#{$SH_className}AD{padding-bottom: $SH_value;}
+        .pl#{$SH_className}AD, .ph#{$SH_className}AD, .pa#{$SH_className}AD{padding-left: $SH_value;}
+        .mt#{$SH_className}AD, .mv#{$SH_className}AD, .ma#{$SH_className}AD{margin-top: $SH_value;}
+        .mr#{$SH_className}AD, .mh#{$SH_className}AD, .ma#{$SH_className}AD{margin-right: $SH_value;}
+        .mb#{$SH_className}AD, .mv#{$SH_className}AD, .ma#{$SH_className}AD{margin-bottom: $SH_value;}
+        .ml#{$SH_className}AD, .mh#{$SH_className}AD, .ma#{$SH_className}AD{margin-left: $SH_value;}
     }
 }

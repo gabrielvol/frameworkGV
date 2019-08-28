@@ -119,15 +119,15 @@ $table_width_BT: 40%;
         table{
             @include beforeTablet{
                 width: $table_width_BT;
-                @include tableCustomSizesBeforeTablet;        
+                @include tableCustomSizesBT;        
             }
             @include afterTablet{
                 width: $table_width_AT;
-                @include tableCustomSizesTablet;          
+                @include tableCustomSizesAT;          
             }
             @include afterTabletLandscape{
                 width: $table_width_ATL;
-                @include tableCustomSizesTabletL;          
+                @include tableCustomSizesATL;          
             }
             
             th{

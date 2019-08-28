@@ -76,6 +76,9 @@
    Font Colours Variables | Custom [fontsColours.scss]
    ========================================================================== */
 /* =============================================================================
+   Text Variables | Custom [text.scss]
+   ========================================================================== */
+/* =============================================================================
    Nav Activators | Custom [navActivators.scss]
    ========================================================================== */
 /* =============================================================================
@@ -105,7 +108,7 @@
 /* -------------------------------------
     Full height index                 */
 /*  Full height index
-    --------------------------------- */
+   ---------------------------------- */
 /* =============================================================================
    Footer Activators | Custom [footerActivators.scss]
    ========================================================================== */
@@ -216,9 +219,6 @@
    Sizes Mixins | Etc [mixinsSizes.scss]
    ========================================================================== */
 /* =============================================================================
-   Resposive Sizing Mixins | Etc [mixinsSizesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
    Background Mixins | Etc [mixinsBackgrounds.scss]
    ========================================================================== */
 /* =============================================================================
@@ -253,9 +253,6 @@
    ========================================================================== */
 /* =============================================================================
    Border Radius Mixins | Etc [mixinsBorders.scss]
-   ========================================================================== */
-/* =============================================================================
-   Border Notch Mixin | Etc [mixinsBorders.scss]
    ========================================================================== */
 /* =============================================================================
    Border Separation Mixins | Etc [mixinsBorders.scss]
@@ -366,11 +363,13 @@ html input[type="button"] {
   border: none; }
 
 ::-moz-selection {
-  background-color: #c6c6c6;
+  color: #000;
+  background-color: #999;
   text-shadow: none; }
 
 ::selection {
-  background-color: #c6c6c6;
+  color: #000;
+  background-color: #999;
   text-shadow: none; }
 
 /* =============================================================================
@@ -445,7 +444,27 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, inp
 /*
 input::input-placeholder, textarea::input-placeholder{
     color: $formPlaceholder_fontColour}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: $formPlaceholder_fontColour}
+input::-moz-placeholder, textarea::-moz-placeholder{
+    color: $formPlaceholder_fontColour}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+    color: $formPlaceholder_fontColour}
+input:-moz-placeholder, textarea:-moz-placeholder{
+    color: $formPlaceholder_fontColour}
+
+input::-moz-placeholder, textarea::-moz-placeholder{
+  opacity: 1}
+
 input:focus::input-placeholder, textarea:focus::input-placeholder{
+    color: $fontColour_main_global}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    color: $fontColour_main_global}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
+    color: $fontColour_main_global}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
+    color: $fontColour_main_global}
+input:-moz-placeholder, textarea:-moz-placeholder{
     color: $fontColour_main_global}
 */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, dfn a, button a, blockquote a, dfn a, button a, blockquote a {
@@ -657,9 +676,20 @@ a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.no
 /* =============================================================================
    Settings Text | Custom [settingsText.scss]
    ========================================================================== */
-/* Safari tel detection */
 a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
   color: #333333 !important; }
+
+.gradientText {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; }
+  .gradientText.blueGT {
+    /*
+        background-image: $bgGradient_blueCTA;
+        filter: $bgGradient_blueCTA_filter;
+        */ }
 
 /* =============================================================================
    Font Classes | Etc [classesFonts.scss]
@@ -836,15 +866,22 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform; }
+    -moz-osx-font-smoothing: grayscale; }
   .hoverGrowS:hover, .hoverGrowS:focus, .hoverGrowS:active {
     transform: scale(1.05); }
   .hoverGrowM:hover, .hoverGrowM:focus, .hoverGrowM:active {
     transform: scale(1.1); }
   .hoverGrowL:hover, .hoverGrowL:focus, .hoverGrowL:active {
     transform: scale(1.15); } }
+
+/* =============================================================================
+   Settings Animations | Custom [settingsAnimations.scss]
+   ========================================================================== */
+@media (min-width: 768px) {
+  .hoverGrowS,
+  .hoverGrowM,
+  .hoverGrowL {
+    transition: transform 0.5s, background-color 1s; } }
 
 /* =============================================================================
    Classes ALL | Etc [classesAll.scss]
@@ -919,6 +956,9 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 
 .displayInlineBlock {
   display: inline-block !important; }
+
+.displayTable {
+  display: table; }
 
 .displayNone {
   display: none !important; }
@@ -1155,6 +1195,8 @@ article, article::before, article::after, details, details::before, details::aft
     display: inline !important; }
   .displayInlineBlockBT {
     display: inline-block !important; }
+  .displayTableBT {
+    display: table; }
   .displayBlockBT, .showBT {
     display: block !important; }
   .displayNoneBT, .hideBT {
@@ -1229,6 +1271,8 @@ article, article::before, article::after, details, details::before, details::aft
     display: inline !important; }
   .displayInlineBlockAT {
     display: inline-block !important; }
+  .displayTableAT {
+    display: table; }
   .displayBlockAT, .showAT {
     display: block !important; }
   .displayNoneAT, .hideAT {
@@ -1468,16 +1512,18 @@ article, article::before, article::after, details, details::before, details::aft
   border: 2px solid #999;
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
   display: block;
+  box-sizing: border-box;
   background-color: #999;
-  margin-right: auto;
-  margin-left: auto;
-  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
   font-family: Arial;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center; }
   .callToAction, .callToAction:focus, .callToAction:hover {
     text-decoration: none !important; }
+  .callToAction, .callToAction:visited, .callToAction:active {
+    color: #fff; }
   .callToAction:focus, .callToAction:hover {
     background-color: #c6c6c6;
     border-color: #333;
@@ -1497,10 +1543,6 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Main Gobal Styles | Custom
    ========================================================================== */
-@media (min-width: 1024px) {
-  #main {
-    padding-top: 120px; } }
-
 /* =============================================================================
    Internas Global Styles | Custom
    ========================================================================== */
@@ -1640,13 +1682,13 @@ article, article::before, article::after, details, details::before, details::aft
   z-index: 9000; }
 
 .modalBG {
-  opacity: 0.85;
+  opacity: calc($opacityCustomMX_value / 100);
   filter: alpha(opacity=85);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
   background-color: #000; }
 
 .modal_nav {
-  opacity: 0.8;
+  opacity: calc($opacityCustomMX_value / 100);
   filter: alpha(opacity=80);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=80)";
   display: none;
@@ -1791,8 +1833,7 @@ article, article::before, article::after, details, details::before, details::aft
     #header {
       box-sizing: border-box;
       padding-top: 20px;
-      padding-bottom: 15px;
-      height: auto; }
+      padding-bottom: 15px; }
       #header .logoH {
         width: 220px; }
         #header .logoH a,
@@ -1827,46 +1868,39 @@ article, article::before, article::after, details, details::before, details::aft
       #header .logoH img {
         width: 100%; } }
   @media (min-width: 1024px) {
-    #header {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      height: 85px; }
-      #header .logoH {
-        width: 250px; } }
+    #header .logoH {
+      width: 250px; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
-#footer .button_siteTop {
-  width: 50px;
-  height: 50px;
-  top: 10px;
-  right: 10px;
-  background-image: url("/nuevo/img/button_siteTop.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
-
-#footer .gooAddress a {
-  font-size: 1.1em;
-  line-height: 1.2em; }
-
-@media (max-width: 767px) {
-  #footer .logoF {
-    width: 100px; } }
-
-@media (min-width: 768px) {
-  #footer .logoF {
-    width: 100px; } }
-
-@media (max-width: 1023px) {
+#footer {
+  /*
+    .button_siteTop{
+        @include squareSize(50px);
+        z-index: $zIndex_buttonSiteTop;
+        top: 10px;
+        right: 10px;
+        background-image: url('/img/button_siteTop.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    */ }
   #footer .gooAddress a {
-    text-decoration: underline; } }
-
-@media (min-width: 1024px) {
-  #footer .gooAddress a:focus, #footer .gooAddress a:hover {
-    text-decoration: underline; } }
+    font-size: 1.1em;
+    line-height: 1.2em; }
+  @media (max-width: 767px) {
+    #footer .logoF {
+      width: 100px; } }
+  @media (min-width: 768px) {
+    #footer .logoF {
+      width: 100px; } }
+  @media (max-width: 1023px) {
+    #footer .gooAddress a {
+      text-decoration: underline; } }
+  @media (min-width: 1024px) {
+    #footer .gooAddress a:focus, #footer .gooAddress a:hover {
+      text-decoration: underline; } }
 
 /* -------------------------------------
     Full height index                 */
@@ -1913,7 +1947,7 @@ nav li:focus a, nav li:hover a {
     .navMain .mainMenu li {
       float: none !important; }
     .navMain .mainMenu > li + li {
-      border-top: 1px solid #fff; } }
+      border-top: 1px solid #999; } }
 
 @media (min-width: 768px) {
   .navMain .hamb {
@@ -2039,11 +2073,11 @@ nav li:focus a, nav li:hover a {
         text-align: center; }
       .navMain .mainMenu > .current {
         background-color: #f2f2f2;
-        background-image: url("/nuevor/img/nav_arrowL.svg"); }
+        background-image: url("/nuevo/img/nav_arrowL.svg"); }
       .navMain .mainMenu .backMenu {
-        border-bottom: #fff solid 2px; }
+        border-bottom: #999 solid 2px; }
         .navMain .mainMenu .backMenu + .backMenu {
-          border-color: #666 transparent #fff;
+          border-color: #666 transparent #999;
           border-width: 1px 0 2px;
           border-style: solid; } }
 
