@@ -87,8 +87,24 @@ select{
 form{
     input,
     select,
-    textarea{
+    textarea
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus{
         @include borderStyle($formInput_bcColour);
+        -webkit-text-fill-color: $formInput_bgColour_autofill;
+        -webkit-box-shadow: 0 0 0 0 #fff inset;
+    }
+
+    input,
+    select,
+    textarea{
         padding-right: 10px;
         padding-left: 10px;
     }
