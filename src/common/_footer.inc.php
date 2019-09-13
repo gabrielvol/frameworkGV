@@ -23,7 +23,7 @@
     <?php include('social.inc.php'); ?>
     
     <p class="gooAddress">
-        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_pt; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_en; } else { echo $company_address_main; } ?></a>
+        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_a_pt; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_a_en; } else { echo $company_address_main_a; } ?></a>
     </p>
     
     <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
