@@ -13,12 +13,12 @@
                         // Max 35 char
                         // 123456789-123456789-123456789-12345 
     $openGraph_title    = $site_title;
-  //$openGraph_title_GB = "OGWebsiteTitle";
+  //$openGraph_title_GB = $site_title_GB;
     
                         // Max 65 char                       ·
                         // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
     $openGraph_desc     = $site_desc_global;
-  //$openGraph_desc_GB  = "Descr.";
+  //$openGraph_desc_GB  = $site_desc_GB;
     
     $openGraph_url      = $url_global;  
     $openGraph_siteName = $openGraph_title;
