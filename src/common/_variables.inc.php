@@ -3,6 +3,8 @@
     // URLS
     $domain_global  = "sitiocomar";
     $url_global     = "http://www.".$domain_global;
+    $url_openGraph  = "http://".$domain_global;
+    
     $urlActual      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     
     $url_section_contacto = $url_global."/contacto.php";

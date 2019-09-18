@@ -20,7 +20,7 @@
     $openGraph_desc     = $site_desc_global;
   //$openGraph_desc_GB  = "Descr.";
     
-    $openGraph_url      = $url_global;  
+    $openGraph_img_url      = $url_global;  
     $openGraph_siteName = $openGraph_title;
 //---Open Graph End
     
