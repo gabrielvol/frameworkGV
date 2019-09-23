@@ -2,16 +2,16 @@
    Opacity Mixins | Etc [mixinsOpacity.scss]
    ========================================================================== */
 @mixin opacityCustom($opacityCustomMX_value){
-    opacity: calc($opacityCustomMX_value / 100);
+    opacity: calc(#{$opacityCustomMX_value} / 100);
     filter: alpha(opacity=$opacityCustomMX_value);
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomMX_value})";
 }
 @mixin opacityCustomHover($opacityCustomHoverMX_value: 75, $opacityCustomHoverMX_valueHover: 100){
-    opacity: $opacityCustomHoverMX_value / 100;
+    opacity: calc(#{$opacityCustomHoverMX_value} / 100);
     filter: alpha(opacity=$opacityCustomHoverMX_value);
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomHoverMX_value})";
     &:focus, &:hover{
-        opacity: calc($opacityCustomHoverMX_valueHover / 100);
+        opacity: calc(#{$opacityCustomHoverMX_valueHover} / 100);
         filter: alpha(opacity=$opacityCustomHoverMX_valueHover);
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomHoverMX_valueHover})";
     }
