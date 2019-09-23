@@ -20,14 +20,14 @@
     $openGraph_desc     = $site_desc_global;
   //$openGraph_desc_GB  = "Descr.";
     
-    $openGraph_img_url      = $url_global;  
+    $openGraph_img_url  = $url_global;  
     $openGraph_siteName = $openGraph_title;
 //---Open Graph End
     
     $nav_pageCurrent      = 1;
     $nav_pageCurrent_int  = 0;
     
-        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
 ?>
