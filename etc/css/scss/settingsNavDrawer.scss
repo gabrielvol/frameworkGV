@@ -27,7 +27,7 @@
                 width: calc(#{$navDrawer_width} - 5px);
                 max-width: $navDrawer_widthMax;
                 background-color: $navBgColour_BT;
-                padding-top: calc(#{$logo_clicked_height_heightFull} + 5px);
+                padding-top: calc(#{$logo_clicked_height_FH} + 5px);
                 padding-right: 5px;
                 padding-left: 5px;
                 padding-bottom: 30px;
