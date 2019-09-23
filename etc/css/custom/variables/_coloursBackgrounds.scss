@@ -50,8 +50,8 @@ $backgroundColours_hover_map:(
    ========================================================================== */
     //El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
 $modal_opacity_global:      85;
-$modal_bgColour_global:     $bgBlack;
+$modal_bgColour_global:     #000;
 
     //Responsive nav
-$modal_bgColour_nav: $bgBlack;
+$modal_bgColour_nav: $modal_bgColour_global;
 $modal_opacity_nav:  80;
