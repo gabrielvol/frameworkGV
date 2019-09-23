@@ -4,9 +4,10 @@
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio.
 $borderColours_map:(
+    error:     $errorColour,
+    
     white:     $white,
     black:     $black,
-    error:     $errorColour,
   //redColour: $redColour,
   //green:     $green,
     greyXXL:   $greyXXL,
@@ -17,9 +18,10 @@ $borderColours_map:(
     greyXD:    $greyXD
 );
 
+$bdError:     map-get($borderColours_map, error);
+
 $bdWhite:     map-get($borderColours_map, white);
 $bdBlack:     map-get($borderColours_map, black);
-$bdError:     map-get($borderColours_map, error);
 //$bdRedColour: map-get($borderColours_map, redColour);
 //$bdGreen:     map-get($borderColours_map, green);
 $bdGreyXXL:   map-get($borderColours_map, greyXXL);

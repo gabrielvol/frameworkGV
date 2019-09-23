@@ -4,9 +4,10 @@
 ///**Background Colours Map:** 
     ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
 $backgroundColours_map:(
+    Error:      $errorColour,
+    
     White:      $white,
     Black:      $black,
-    Error:      $errorColour,
   //RedColour:  $redColour,
     Green:      $green,
     GreyXXL:    $greyXXL,
@@ -17,9 +18,10 @@ $backgroundColours_map:(
     GreyXD:     $greyXD
 );
 
+$bgErrorColour: map-get($backgroundColours_map, Error);
+
 $bgWhite:       map-get($backgroundColours_map, White);
 $bgBlack:       map-get($backgroundColours_map, Black);
-$bgErrorColour: map-get($backgroundColours_map, Error);
 //$bgRedColour:   map-get($backgroundColours_map, RedColour);
 $bgGreen:       map-get($backgroundColours_map, Green);
 $bgGreyXXL:     map-get($backgroundColours_map, GreyXXL);
