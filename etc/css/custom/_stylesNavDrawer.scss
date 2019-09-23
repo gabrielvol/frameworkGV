@@ -22,7 +22,7 @@
                     width: 90px;
                     height: $navDrawer_hamburger_height;
                     background-position: 10px center;
-                    border: 1px solid $navBcColour_open!important;
+                    border: 1px solid $navBdColour_open!important;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
                     line-height: $navDrawer_hamburger_height;
@@ -35,11 +35,11 @@
             .navClose{
                 @include squareSize(45px);
                 background-size: 20px;
-                border: 1px solid $navBcColour_close!important;
+                border: 1px solid $navBdColour_close!important;
             }
 
             .mainMenu{
-                @include borderStyleR($navBcColourR_navDrawer);
+                @include borderStyleR($navBdColourR_navDrawer);
 
                 li{
                     &,
@@ -61,10 +61,10 @@
                 }   
 
                 .backMenu{    
-                    @include borderStyleB(2px, $navBcColour_backMenu);
+                    @include borderStyleB(2px, $navBdColour_backMenu);
 
                     & + .backMenu{
-                        border-color: $bcGreyD transparent $navBcColour_backMenu;
+                        border-color: $bdGreyD transparent $navBdColour_backMenu;
                         border-width: 1px 0 2px;
                         border-style: solid;
                     }
@@ -75,7 +75,7 @@
                 .subMenuLevel1{
                     > li{
                         & + li{
-                            @include borderStyleT($navBcColour_itemLevel1_BT);
+                            @include borderStyleT($navBdColour_itemLevel1_BT);
                         }
                     }
                 }
@@ -85,7 +85,7 @@
                 .subMenuLevel2{
                     > li{
                         & + li{
-                            @include borderStyleT($navBcColour_itemLevel2_BT);
+                            @include borderStyleT($navBdColour_itemLevel2_BT);
                         }
                     }
                 }
@@ -95,7 +95,7 @@
                 .subMenuLevel3{
                     > li{
                         & + li{
-                            @include borderStyleT($navBcColour_itemLevel3_BT);
+                            @include borderStyleT($navBdColour_itemLevel3_BT);
                         }
                     }
                 }

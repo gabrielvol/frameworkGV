@@ -22,7 +22,7 @@ table{
 
 /* Rounded Tables */
 table.tableRounded{
-    @include borderStyle($bcColour_main_table);
+    @include borderStyle($bdColour_main_table);
     
     th,
     tfoot td{
@@ -30,13 +30,13 @@ table.tableRounded{
     }
    
     tfoot td{
-        @include borderStyleT($bcColour_secondary_table);
+        @include borderStyleT($bdColour_secondary_table);
     }
     
     tr{
         th,
         td{
-            @include borderStyleB($bcColour_secondary_table);
+            @include borderStyleB($bdColour_secondary_table);
         }
     }
 }
@@ -47,7 +47,7 @@ $table_width_BT: 40%;
         tr{
             & + tr,
             &:last-child{
-                @include borderStyleT($bcGreyD, 2px);
+                @include borderStyleT($bdGreyD, 2px);
             }
            
             td{
@@ -56,7 +56,7 @@ $table_width_BT: 40%;
                 padding-left: $table_width_BT + 5%;
 
                 & + td{
-                    @include borderStyleT($bcGrey);
+                    @include borderStyleT($bdGrey);
                 }
                 
                 &::before{
@@ -72,18 +72,18 @@ $table_width_BT: 40%;
     
     .tableRounded{
         tr{
-            @include borderStyleB($bcColour_main_table, $borderWidthValue: 2px);
+            @include borderStyleB($bdColour_main_table, $borderWidthValue: 2px);
             
             td{
-                @include borderStyleB($bcColour_secondary_table, $borderStyleValue: dotted);
+                @include borderStyleB($bdColour_secondary_table, $borderStyleValue: dotted);
             }
             
             &:last-child{
                 td{
-                    @include borderStyleB($bcColour_secondary_table!important);
+                    @include borderStyleB($bdColour_secondary_table!important);
                     
                     &:last-child{
-                        @include borderStyleB($bcColour_secondary_table!important, $borderWidthValue: 0);
+                        @include borderStyleB($bdColour_secondary_table!important, $borderWidthValue: 0);
                     }
                 }
             }
@@ -135,7 +135,7 @@ $table_width_BT: 40%;
             }
             
             td{
-                @include borderStyleT($bcGrey);
+                @include borderStyleT($bdGrey);
                 text-align: left;
                 padding-left: $zero;
             }
@@ -143,14 +143,14 @@ $table_width_BT: 40%;
         
         .tableRounded{
             tr{
-                @include borderStyleB($bcColour_main_table, $borderWidthValue: 1px);
+                @include borderStyleB($bdColour_main_table, $borderWidthValue: 1px);
                 
                 td{
-                    @include borderStyleB($bcColour_secondary_table, $borderWidthValue: 0);
+                    @include borderStyleB($bdColour_secondary_table, $borderWidthValue: 0);
                 }
                 
                 &:last-child td{
-                    @include borderStyleB($bcColour_secondary_table!important, $borderWidthValue: 0);
+                    @include borderStyleB($bdColour_secondary_table!important, $borderWidthValue: 0);
                 }
             }
         }

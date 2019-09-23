@@ -71,7 +71,7 @@ nav{
             
             > li{
                 & + li{
-                    @include borderStyleT($navBcColour_itemLevel0_BT);
+                    @include borderStyleT($navBdColour_itemLevel0_BT);
                 }
             }
         }

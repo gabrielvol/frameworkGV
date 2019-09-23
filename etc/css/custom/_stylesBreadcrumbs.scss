@@ -3,7 +3,7 @@
    ========================================================================== */
 .breadcrumbs{
     ul{
-        @include borderStyleT($bcGreyD, 2px);
+        @include borderStyleT($bdGreyD, 2px);
         background-color: $bgGreyL;
     }
     
@@ -39,7 +39,7 @@
             font-size: 1rem;
             
             &:first-child{
-                @include borderStyleB($bcCyan, 2px);
+                @include borderStyleB($bdCyan, 2px);
                 @include equalHeightAndLineHeight(35px);
                 margin-bottom: 10px;
                 color: $greyD;

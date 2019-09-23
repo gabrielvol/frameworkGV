@@ -15,8 +15,8 @@ $formInput_fontColour_hover:     $formInput_fontColour;
  
 $formPlaceholder_fontColour:     lighten($fontColour_main_global, 10%); // Descomentar líneas 13 a 18 en '[/etc/css/scss/settingsText.scss]'
   
-$formInput_bcColour:             $bcColour_main_global;
-$formInput_bcColour_hover:       $bcColour_main_global_hover;
+$formInput_bcColour:             $bdColour_main_global;
+$formInput_bcColour_hover:       $bdColour_main_global_hover;
 $formInput_bgColour:             $white;
 $formInput_bgColour_hover:       $formInput_bgColour;
 $formInput_bgColour_autofill:    $formInput_bgColour;
@@ -27,7 +27,7 @@ $formInput_shadowInset:          inset 0 0 4px $greyD;
 $formSubmit_fontColour:          $black;
 $formSubmit_fontColour_hover:    $formSubmit_fontColour;
   
-$formSubmit_bcColour:            $bcColour_main_global;
+$formSubmit_bcColour:            $bdColour_main_global;
 $formSubmit_bcColour_hover:      $formSubmit_bcColour;
   
 $formSubmit_bgColour:            $bgColour_main_global;

@@ -16,7 +16,7 @@ $language_flag_height_AT: 32px;
     z-index: $zIndex_language;
     
     a{
-        @include borderStyle($bcWhite);
+        @include borderStyle($bdWhite);
         @include transition(0.3s);
         
         @if $language_flag_circled_act == "on"{

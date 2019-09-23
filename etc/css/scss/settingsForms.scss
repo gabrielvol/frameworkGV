@@ -204,14 +204,14 @@ form{
         }        
 
         &.bcError{
-            border-color: $bcError;        
+            border-color: $bdError;        
         }
 
         &.invalidField{
             border-width: 2px;
             
             &, &:focus, &:hover{
-                border-color: $bcError!important;
+                border-color: $bdError!important;
                 box-shadow: inset 0 0 0 $formInput_bcColour_hover;
             }
         }

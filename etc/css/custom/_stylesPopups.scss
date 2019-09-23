@@ -13,7 +13,7 @@
         width: $pop_close_size!important;
         height: $pop_close_size!important;
         background-size: 13px;
-        border: 1px solid $bcGreyD!important; 
+        border: 1px solid $bdGreyD!important; 
 
         &, &:focus, &:hover{
             background-color: $bgWhite;
@@ -72,7 +72,7 @@
             font-size: 0.8rem;
             
             &, &:focus, &:hover{
-                border: 1px solid $bcGrey!important
+                border: 1px solid $bdGrey!important
             }
             
             &:focus, &:hover{

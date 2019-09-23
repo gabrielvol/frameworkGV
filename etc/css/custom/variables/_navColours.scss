@@ -100,25 +100,25 @@ $navBgColour_hamburger:    $bgWhite;
 // Border Colours
 
 // Nav BT
-$navBcColour_BT:                  $bcBlack;
-$navBcColour_open:                $bcGreyD;
-$navBcColour_close:               $bcGreyD;
+$navBdColour_BT:                  $bdBlack;
+$navBdColour_open:                $bdGreyD;
+$navBdColour_close:               $bdGreyD;
    
-$navBcColourR_navDrawer:          $bcBlack;
-$navBcColour_navAcc:              $bcGreyXXL;
+$navBdColourR_navDrawer:          $bdBlack;
+$navBdColour_navAcc:              $bdGreyXXL;
   
-$navBcColour_itemCurrent:         $bcGrey;
+$navBdColour_itemCurrent:         $bdGrey;
   
-$navBcColour_itemLevel0_BT:       $bcGrey;
-$navBcColour_itemLevel1_BT:       $navBcColour_itemLevel0_BT;
-$navBcColour_itemLevel2_BT:       $navBcColour_itemLevel1_BT;
-$navBcColour_itemLevel3_BT:       $navBcColour_itemLevel2_BT;
+$navBdColour_itemLevel0_BT:       $bdGrey;
+$navBdColour_itemLevel1_BT:       $navBdColour_itemLevel0_BT;
+$navBdColour_itemLevel2_BT:       $navBdColour_itemLevel1_BT;
+$navBdColour_itemLevel3_BT:       $navBdColour_itemLevel2_BT;
   
-$navBcColour_backMenu:            $navBcColour_itemLevel1_BT;
+$navBdColour_backMenu:            $navBdColour_itemLevel1_BT;
   
 // Nav AT  
-$navBcColour_itemSub_AT:          $navBcColour_itemLevel0_BT;
+$navBdColour_itemSub_AT:          $navBdColour_itemLevel0_BT;
   
 // Nav Topper  
-$navBcColour_topper:              $bcGreyD;
-$navBcColour_topper_itemCurrent:  $bcGrey;
+$navBdColour_topper:              $bdGreyD;
+$navBdColour_topper_itemCurrent:  $bdGrey;

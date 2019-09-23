@@ -23,7 +23,7 @@
                     line-height: calc(#{$navAcc_hamburger_height} + 5px);
                 }
                 @include borderRadius($nav_borderRadius); 
-                border: 1px solid $navBcColour_open!important;
+                border: 1px solid $navBdColour_open!important;
                 background-color: $navBgColour_hamburger;
                 background-size: 15px;
             }
@@ -31,11 +31,11 @@
             .navClose{
                 @include squareSize($navAcc_hamburger_height);
                 background-size: 15px;
-                border: 1px solid $navBcColour_close!important;
+                border: 1px solid $navBdColour_close!important;
             }
 
             ul{
-                @include borderStyleV($navBcColour_navAcc);
+                @include borderStyleV($navBdColour_navAcc);
             }
 
             li{                

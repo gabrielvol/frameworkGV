@@ -41,7 +41,7 @@
                     a,
                     .topLevelItem{
                         @if $nav_itemCurrent_borderBottom_act == "on"{
-                            @include borderStyleB($navBcColour_itemCurrent, 3px);
+                            @include borderStyleB($navBdColour_itemCurrent, 3px);
                         }
                     }
                 }
@@ -99,7 +99,7 @@
                     &, a{}
                     
                     & + li{
-                        @include borderStyleT($navBcColour_itemSub_AT);
+                        @include borderStyleT($navBdColour_itemSub_AT);
                     }
                     
                     &:last-child{
@@ -115,7 +115,7 @@
         
         @if $nav_topper_act == "on"{
             &.topperNav{
-                @include borderStyleB($navBcColour_topper); 
+                @include borderStyleB($navBdColour_topper); 
                 position: fixed;
                 right: 0;
                 width: 100%; 
@@ -138,7 +138,7 @@
                     > .current{
                         a,
                         .topLevelItem{
-                            @include borderStyleB($navBcColour_topper_itemCurrent, 3px);
+                            @include borderStyleB($navBdColour_topper_itemCurrent, 3px);
                         }
                     }
 
@@ -164,7 +164,7 @@
                         }
 
                         li{
-                            @include borderStyleT($navBcColour_itemSub_AT);
+                            @include borderStyleT($navBdColour_itemSub_AT);
 
                             a{
                                 padding-left: 10px;
@@ -176,7 +176,7 @@
                             }
                             
                             &:first-child{
-                                @include borderStyleT($navBcColour_itemSub_AT);
+                                @include borderStyleT($navBdColour_itemSub_AT);
                             }
                     
                             &:last-child{

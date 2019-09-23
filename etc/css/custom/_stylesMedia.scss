@@ -4,7 +4,7 @@
 .gooYTVideo,
 .gooMap{
     @include borderRadius();
-    @include borderStyle($bcGreyL);
+    @include borderStyle($bdGreyL);
     box-sizing: border-box;
     overflow: hidden;
 

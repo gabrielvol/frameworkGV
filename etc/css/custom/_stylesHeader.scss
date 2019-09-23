@@ -139,7 +139,7 @@
         @if $navDrawer_act == "on"{
             .logoH{
                 &.clicked{
-                    @include borderStyleR($navBcColourR_navDrawer);
+                    @include borderStyleR($navBdColourR_navDrawer);
                     box-sizing: border-box;
                     position: fixed;
                     z-index: $zIndex_logo_clicked;
