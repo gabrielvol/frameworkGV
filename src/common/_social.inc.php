@@ -70,13 +70,13 @@
         </a>
     </li>
     <li class="soc_em">
-        <a href="<?php echo $social_mailto_addressMain ?>" class="em displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $social_mailto_address_A ?>" class="em displayBlock hoverGrowL indentedText">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>
             <img src="/nuevo/img/soc_em.svg" class="displayBlock" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>
     </li>
     <li class="soc_em">
-        <a href="<?php echo $social_mailto_addressMain ?>" class="displayBlock"><?php echo $social_email_addressMain ?></a>
+        <a href="<?php echo $social_mailto_address_A ?>" class="displayBlock"><?php echo $social_email_address_A ?></a>
     </li>
     <li class="soc_ta">
         <a href="/nuevo/" class="ta displayBlock hoverGrowL indentedText">

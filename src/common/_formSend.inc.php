@@ -31,8 +31,8 @@
     //--------------------------------------------------------------------------
     // Inicia proceso de form
     if (isset($_POST['enviarForm__formName'])){
-        ini_set('sendmail_from','tampas@gmail.com');
-        ini_set('SMTP','mail.'.$domain_global.'.com.ar');
+        ini_set('sendmail_from', $form_email_addressForm);
+        ini_set('SMTP','mail.'.$domain_global);
 
         // Asignamos datos de campos a variables
         $nombre__formName         = $_POST['nombre__formName'];
@@ -61,16 +61,15 @@
         $mensaje__formName        = $_POST['mensaje__formName'];
 
         // Cabeceras del correo
-        //$destino  = $form_email_address;
-        $destino  = "tampas@gmail.com";
+        $destino  = $form_email_addressForm;
         $asunto   = "Contacto Web de $nombre__formName - $empresa__formName";
         $headers  = "From: $nombre__formName <$email__formName>\r\n";
         //$headers .= "Reply-To: $email__formName \r\n";
         $headers .= "Content-type: text/html\r\n";
         $headers .= "X-Mailer: PHP5\n";
         $headers .= 'MIME-Version: 1.0' . "\n";
-        //$headers .= "CC: ".$form_email_addressCC."\r\n";
-        //$headers .= "BCC: ".$form_email_addressBCC."\r\n";
+        //$headers .= "CC: ".$form_email_addressForm_CC."\r\n";
+        //$headers .= "BCC: ".$form_email_addressForm_BCC."\r\n";
         $texto    = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '.$url_section_contacto.'</small><br /><br />';
         $texto   .= "<strong>Nombre:</strong> ".$nombre__formName."<br />";
         $texto   .= "<strong>Apellido:</strong> ".$apellido__formName."<br />";

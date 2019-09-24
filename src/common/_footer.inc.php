@@ -11,7 +11,7 @@
             <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_pt; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_en; } else { echo $company_address_main; } ?></a>
         </p>
         <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
-        <p><?php echo _("Correo eletr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_addressMain ?>"><?php echo $social_email_addressMain ?></a></p>
+        <p><?php echo _("Correo eletr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_address_A ?>"><?php echo $social_email_address_A ?></a></p>
     </div>  
     
     <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
@@ -28,7 +28,7 @@
     
     <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
     
-    <p><?php echo _("Correo eletr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_addressMain ?>"><?php echo $social_email_addressMain ?></a></p>
+    <p><?php echo _("Correo eletr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_address_A ?>"><?php echo $social_email_address_A ?></a></p>
     
     <p class="footerCopy">&copy; <?php echo $dateThisYear." - ".$company_name_full ?></p>
     
