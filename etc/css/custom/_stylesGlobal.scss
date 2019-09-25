@@ -1,10 +1,12 @@
 /* =============================================================================
    Global Styles | Custom [stylesGlobal.scss]
    ========================================================================== */
-.callToAction{
+.callToAction{    
     // Si lleva .hoverGrow hay que comentar transition
+    //@include transition(1s);
+    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;    
+    
     @include borderStyle($bdGrey, 2px);
-    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s;
     display: block;
     box-sizing: border-box;
     background-color: $bgGrey;
@@ -29,12 +31,30 @@
         color: $greyD;
     }
     
+    /*
+    &.CTAwhite{
+        @include borderStyle($bdWhite);
+    
+        &, &:visited, &:active{
+            color: $white;
+        }
+
+        &:focus, &:hover{
+            color: $greyXL;
+            box-shadow: 0 0 3px $greyL;
+            text-shadow: 0 0 3px $greyL;
+        }
+    }
+    */
+    
     @include mobileOnly{
         width: $hundred;
     }
     
     @include beforeTablet{
         height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
         line-height: 1.3;
     }
     
