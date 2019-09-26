@@ -213,7 +213,8 @@
             }
             
             @if $logo_bg_beforeImg == "on"{            
-                &, a{
+                &,
+                a{
                     @include squareSize($logo_width_AT);
                 }  
                 
@@ -248,12 +249,27 @@
         
         .logoH{            
             @if $logo_bg_beforeImg == "on"{            
-                &, a{
+                &,
+                a{
                     @include squareSize($logo_width_ATL);
                 } 
                 
                 } @else {
                 width: $logo_width_ATL;
+            }
+        }
+    }
+    
+    @include afterDesktop{        
+        .logoH{            
+            @if $logo_bg_beforeImg == "on"{            
+                &,
+                a{
+                    @include squareSize($logo_width_AD);
+                } 
+                
+                } @else {
+                width: $logo_width_AD;
             }
         }
     }
