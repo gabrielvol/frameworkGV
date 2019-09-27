@@ -97,7 +97,7 @@ form{
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus{
-        @include borderStyle($formInput_bcColour);
+        @include borderStyle($formInput_bdColour);
         -webkit-text-fill-color: $formInput_bgColour_autofill;
         -webkit-box-shadow: 0 0 0 0 #fff inset;
     }
@@ -188,7 +188,7 @@ form{
     input[type="submit"],
     input[type="button"],
     button{
-        @include borderStyle($formSubmit_bcColour);
+        @include borderStyle($formSubmit_bdColour);
         @include borderRadius();
         margin-bottom: $zero;
         font-size: 1.4rem;
