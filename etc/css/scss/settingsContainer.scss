@@ -8,6 +8,7 @@
 .containerBT,
 .containerAT,
 .containerTO,
+.containerBTL,
 .containerATL,
 .containerTLO,
 .containerBD,
@@ -251,6 +252,22 @@
         @include tabletOnly{
             width: $container_value_T;
         }
+    }  
+}
+@if $classes_container_act_BTL == "on"{
+    .containerBTL{
+        @include mobileOnly{
+            width: $container_value_MO;
+        }    
+        @include afterMobileLandscape{
+            width: $container_value_ML;
+        }    
+        @include mobileLandscapeOnly{
+            width: $container_value_ML;
+        } 
+        @include afterTablet{
+            width: $container_value_T;
+        }   
     }  
 }
 @if $classes_container_act_ATL == "on"{
