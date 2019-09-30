@@ -31,23 +31,34 @@
 }
 
 .bulleted_dot,
-.bulleted_square{
-    li{        
-        $bullet_size: 7px;        
-        
+.bulleted_square,
+.bulleted_tick{
+    li{
         list-style-type: none;
         box-sizing: border-box;
         position: relative;
-        padding-left: 15px;
 
         &::before{
             content: "";
             position: absolute;
-            top: 5px;
             left: 0;
+            display: block;
+            background-repeat: no-repeat;
+        }
+    }
+}   
+
+.bulleted_dot,
+.bulleted_square{
+    $bullet_size: 7px;  
+        
+    li{
+        padding-left: 15px;
+
+        &::before{
+            top: 5px;
             width: 7px;
             height: $bullet_size;
-            background-repeat: no-repeat;
             background-position: left top;
             background-size: $bullet_size;
         }
@@ -61,11 +72,27 @@
         }
     }
 }
-
+ 
 .bulleted_square{
     li{
         &::before{
             background-image: url('/nuevo/img/bullet_square.svg');
+        }
+    }
+}
+
+.bulleted_tick{
+    $bulleted_tick_li_PL: 20px;
+        
+    li{
+        padding-left: $bulleted_tick_li_PL;
+        
+        &::before{
+            @include squareSize($bulleted_tick_li_PL);
+            top: 0;
+            background-image: url('/nuevo/img/bullet_tick.svg');
+            background-position: left 3px;
+            background-size: auto calc(#{$bulleted_tick_li_PL} - 5px);
         }
     }
 }
