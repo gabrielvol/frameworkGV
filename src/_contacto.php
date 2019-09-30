@@ -121,25 +121,25 @@
 
                 <label for="localidad__formName">
                     <span class="labelName"><?php echo _('Localidad'); ?></span>
-                    <input type="text" name="localidad__formName" id="localidad__formName" class="localidad <?php echo $formInput_error_class_Localidad__formName ?>" value="<?php echo $_POST['localidad__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Localidad__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Localidad__formName ?>"><?php echo $formSpan_error_MSG_Localidad__formName ?></span>
+                    <input type="text" name="localidad__formName" id="localidad__formName" class="localidad <?php echo $formInput_error_class_localidad__formName ?>" value="<?php echo $_POST['localidad__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_localidad__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_localidad__formName ?>"><?php echo $formSpan_error_MSG_localidad__formName ?></span>
                 </label>
 
                 <label for="codigopostal__formName">
                     <span class="labelName"><?php echo _('C&oacute;digo postal'); ?></span>
-                    <input type="tel" name="codigopostal__formName" id="codigopostal__formName" class="codigopostal <?php echo $formInput_error_class_CodigoPostal__formName ?>" value="<?php echo $_POST['codigopostal__formName']; ?>" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $formInput_autofocus_CodigoPostal__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_CodigoPostal__formName ?>"><?php echo $formSpan_error_MSG_CodigoPostal__formName ?></span>
+                    <input type="tel" name="codigopostal__formName" id="codigopostal__formName" class="codigopostal <?php echo $formInput_error_class_codigoPostal__formName ?>" value="<?php echo $_POST['codigopostal__formName']; ?>" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $formInput_autofocus_codigoPostal__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_codigoPostal__formName ?>"><?php echo $formSpan_error_MSG_codigoPostal__formName ?></span>
                 </label>
 
                 <label for="provincia__formName">
                     <span class="labelName"><?php echo _('Provincia'); ?></span>
-                    <input type="text" name="provincia__formName" id="provincia__formName" class="provincia <?php echo $formInput_error_class_Provincia__formName ?>" value="<?php echo $_POST['provincia__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Provincia__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Provincia__formName ?>"><?php echo $formSpan_error_MSG_Provincia__formName ?></span>
+                    <input type="text" name="provincia__formName" id="provincia__formName" class="provincia <?php echo $formInput_error_class_provincia__formName ?>" value="<?php echo $_POST['provincia__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_provincia__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_provincia__formName ?>"><?php echo $formSpan_error_MSG_provincia__formName ?></span>
                 </label>  
 
                 <label for="provincia__formName">
                     <span class="labelName"><?php echo _('Provincia'); ?></span>
-                    <select id="provincia" name="provincia__formName" class="provincia <?php echo $formInput_error_class_Provincia__formName ?>">
+                    <select id="provincia" name="provincia__formName" class="provincia <?php echo $formInput_error_class_provincia__formName ?>">
                         <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
 
                         <option value="<?php echo $_POST['provincia']; ?>" selected><?php if(isset($_POST['provincia'])) { echo $_POST['provincia']; } else { echo _('Seleccione su provincia'); } ?></option>
@@ -168,7 +168,7 @@
                         <option value="Tierra del Fuego, Ant&aacute;rtida e Islas del Atl&aacute;ntico Sur"><?php echo _('Tierra del Fuego, Ant&aacute;rtida e Islas del Atl&aacute;ntico Sur'); ?></option>
                         <option value="Tucum&aacute;n"><?php echo _('Tucum&aacute;n'); ?></option>
                     </select>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Provincia__formName ?>"><?php echo $formSpan_error_MSG_Provincia__formName ?></span>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_provincia__formName ?>"><?php echo $formSpan_error_MSG_provincia__formName ?></span>
                 </label>
 
                 <label for="genericSelect__formName">
