@@ -12,15 +12,7 @@ fieldset{
         color: $black;
     }
             
-    &.invalidField{        
-        &,
-        legend{
-            background-image: url('/nuevo/img/form_alert.svg');
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: auto 55%;
-        }
-        
+    &.invalidField{
         legend,
         label span{
             color: $formInput_msgError_fontColour;
@@ -181,6 +173,47 @@ form{
             @include afterTabletLandscape{
                 margin-bottom: $helpers_spacing_PM_large;
             }        
+        }
+    }
+    
+    // Invalid fields
+    input, select, textarea{
+        &.invalidField{
+            background-image: url('/nuevo/img/form_alert.svg');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: auto 55%;
+            border-width: 2px;
+            
+            &, &:focus, &:hover{
+                border-color: $bdError!important;
+                box-shadow: inset 0 0 0 $formInput_bdColour_hover;
+            }
+        }
+    }
+    
+    fieldset{
+        &.invalidField{        
+            &,
+            legend{
+                background-image: url('/nuevo/img/form_alert.svg');
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+                background-size: auto 55%;            
+            }
+        }
+    }
+    
+    select{
+        &.invalidField{
+            background-position: right 25px center;
+        }
+    }
+    
+    textarea{
+        &.invalidField{
+            background-position: right 10px top 10px;
+            background-size: 23px;
         }
     }
 

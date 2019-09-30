@@ -172,7 +172,7 @@ form{
             color: $formLabel_fontColour_hover;
         }
     }
-    
+        
     button, input, select, textarea{
         font-size: 100%;/* Corrects font size not being inherited in all browsers. */
         vertical-align: baseline;/* Improves appearance and consistency in all browsers. */
@@ -201,20 +201,7 @@ form{
             background-color: $formInput_bgColour_hover;
             border-color: $formInput_bdColour_hover;
             color: $formInput_fontColour_hover;
-        }        
-
-        &.bcError{
-            border-color: $bdError;        
-        }
-
-        &.invalidField{
-            border-width: 2px;
-            
-            &, &:focus, &:hover{
-                border-color: $bdError!important;
-                box-shadow: inset 0 0 0 $formInput_bdColour_hover;
-            }
-        }
+        }  
     }
     
     input{    
@@ -229,12 +216,6 @@ form{
 
         &[type="submit"]{
             -webkit-appearance: none;
-        }
-    }
-    
-    select{
-        &.invalidField{
-            background-position: right 25px center;
         }
     }
     
@@ -287,11 +268,6 @@ form{
         padding: $helpers_spacing_PM_medium;
         vertical-align: top;
         resize: vertical;
-
-        &.invalidField{
-            background-position: right 10px top 10px;
-            background-size: 23px;
-        }
     }
     
     .mobileForm &{
