@@ -89,7 +89,7 @@ form{
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus{
-        -webkit-text-fill-color: $formInput_bgColour_autofill;
+        -webkit-text-fill-color: $formInput_fontColour_autofill;
         -webkit-box-shadow: 0 0 0 0 #fff inset;
     }
 
