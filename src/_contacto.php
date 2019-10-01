@@ -297,6 +297,16 @@
                     <span class="labelName"><?php echo _('Asunto'); ?></span>
                     <input type="text" name="asunto__formName" id="asunto__formName" class="asunto <?php echo $formInput_error_class_Asunto__formName ?>" value="<?php echo $_POST['asunto__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Asunto__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_Asunto__formName ?>"><?php echo $formSpan_error_MSG_Asunto__formName ?></span>
+                </label> 
+                
+                <label for="area__formName">
+                    <span class="labelName"><?php echo _('&Aacute;rea a contactar'); ?></span>
+                    <select id="area__formName" name="area__formName" class="area <?php echo $formInput_error_class_area__formName ?>">
+                        <option value="<?php echo $_POST['area__formName']; ?>" selected><?php if(isset($_POST['area__formName'])) { echo $_POST['area__formName']; } else { echo _('Seleccione el &aacute;rea con la que quiere contactarse'); } ?></option>
+                        <option value="<?php echo $social_email_a ?>"><?php echo _('aaaa'); ?> - <?php echo $social_email_a ?></option>
+                        <option value="<?php echo $social_email_b ?>"><?php echo _('bbbb'); ?> - <?php echo $social_email_b ?></option>
+                    </select>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_area__formName ?>"><?php echo $formSpan_error_MSG_area__formName ?></span>  
                 </label>
 
                 <label for="mensaje__formName">
