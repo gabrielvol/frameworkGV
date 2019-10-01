@@ -265,7 +265,7 @@
         @include mobileLandscapeOnly{
             width: $container_value_ML;
         } 
-        @include afterTablet{
+        @include tabletOnly{
             width: $container_value_T;
         }   
     }  
