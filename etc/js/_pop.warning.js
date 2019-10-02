@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    $('.modalBG, .pop_close').click(function () {
-        $('.modalBG, .pop_warning').addClass('displayNone');
+    $('.nov a').click(function () {        
+        $(this).closest('body').find('.pop_construccion').removeClass('displayNone');
+        $(this).closest('body').find('.modal_warning').removeClass('displayNone');
+    });
+    
+    $('.modal_warning, .pop_close, .pop_submit').click(function () {
+        $(this).closest('body').find('.pop_construccion').addClass('displayNone');
+        $('.modal_warning, .pop_warning').addClass('displayNone');
     });
 });
