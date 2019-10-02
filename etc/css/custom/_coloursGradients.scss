@@ -59,7 +59,7 @@ $bgGradient_white_textVanish_filter: progid:DXImageTransform.Microsoft.gradient(
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
 $bgGradient_blackTen: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
 $bgGradient_blackTen_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 );
-.bgGrad_BlackTen{
+.bgGrad_blackTen{
     background-image: $bgGradient_blackTen;
     filter: $bgGradient_blackTen_filter;
 }
@@ -85,7 +85,7 @@ $bgGrad_blackForty_filter: progid:DXImageTransform.Microsoft.gradient( startColo
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
 $bgGradient_blackFifty: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 89%,rgba(0,0,0,0.5) 100%);
 $bgGradient_blackFifty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
-.bgGrad_BlackFifty{
+.bgGrad_blackFifty{
     background-image: $bgGradient_blackFifty;
     filter: $bgGradient_blackFifty_filter;
 }
@@ -94,7 +94,7 @@ $bgGradient_blackFifty_filter: progid:DXImageTransform.Microsoft.gradient( start
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
 $bgGradient_blackEighty: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
 $bgGradient_blackEighty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
-.bgGrad_BlackEighty{
+.bgGrad_blackEighty{
     background-image: $bgGradient_blackEighty;
     filter: $bgGradient_blackEighty_filter;
 }

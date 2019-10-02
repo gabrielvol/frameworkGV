@@ -415,7 +415,7 @@ a.orange:focus, a.orange:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
-.bgGrad_BlackTen {
+.bgGrad_blackTen {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); }
 
@@ -430,12 +430,12 @@ a.orange:focus, a.orange:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-.bgGrad_BlackFifty {
+.bgGrad_blackFifty {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-.bgGrad_BlackEighty {
+.bgGrad_blackEighty {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
 
@@ -1369,6 +1369,7 @@ article, article::before, article::after, details, details::before, details::aft
 .containerBT,
 .containerAT,
 .containerTO,
+.containerBTL,
 .containerATL,
 .containerTLO,
 .containerBD,
@@ -1390,6 +1391,8 @@ article, article::before, article::after, details, details::before, details::aft
   .containerAT::after,
   .containerTO::before,
   .containerTO::after,
+  .containerBTL::before,
+  .containerBTL::after,
   .containerATL::before,
   .containerATL::after,
   .containerTLO::before,
@@ -1409,6 +1412,7 @@ article, article::before, article::after, details, details::before, details::aft
   .containerBT::after,
   .containerAT::after,
   .containerTO::after,
+  .containerBTL::after,
   .containerATL::after,
   .containerTLO::after,
   .containerBD::after,
@@ -1620,20 +1624,28 @@ article, article::before, article::after, details, details::before, details::aft
       margin-left: calc(-1 * calc(35px + 10px)); }
 
 .bulleted_dot li,
-.bulleted_square li {
+.bulleted_square li,
+.bulleted_tick li {
   list-style-type: none;
   box-sizing: border-box;
-  position: relative;
+  position: relative; }
+  .bulleted_dot li::before,
+  .bulleted_square li::before,
+  .bulleted_tick li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    background-repeat: no-repeat; }
+
+.bulleted_dot li,
+.bulleted_square li {
   padding-left: 15px; }
   .bulleted_dot li::before,
   .bulleted_square li::before {
-    content: "";
-    position: absolute;
     top: 5px;
-    left: 0;
     width: 7px;
     height: 7px;
-    background-repeat: no-repeat;
     background-position: left top;
     background-size: 7px; }
 
@@ -1642,6 +1654,16 @@ article, article::before, article::after, details, details::before, details::aft
 
 .bulleted_square li::before {
   background-image: url("/nuevo/img/bullet_square.svg"); }
+
+.bulleted_tick li {
+  padding-left: 20px; }
+  .bulleted_tick li::before {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    background-image: url("/nuevo/img/bullet_tick.svg");
+    background-position: left 3px;
+    background-size: auto calc(20px - 5px); }
 
 .listFile li {
   box-sizing: border-box;
