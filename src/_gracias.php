@@ -1,5 +1,5 @@
 <?php
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/variables.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/__main.var.inc.php');
     
     $page_int        = 1;
     $section_gracias = 1;
@@ -10,20 +10,12 @@
     $site_desc       = $site_desc_global;
   //$site_desc_GB    = $site_desc_global_GB;
     
-//---Open Graph Start
-                        // Max 35 char
-                        // 123456789-123456789-123456789-12345 
     $openGraph_title    = $site_title;
-  //$openGraph_title_GB = "OGWebsiteTitle";
-    
-                        // Max 65 char                       ·
-                        // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $openGraph_desc     = $site_desc_global;
-  //$openGraph_desc_GB  = "Descr.";
-    
-    $openGraph_img_url      = $url_global;  
+  //$openGraph_title_GB = $site_title_GB;
+    $openGraph_desc     = $openGraph_desc_global;
+  //$openGraph_desc_GB  = $openGraph_desc_global_GB;    
+    $openGraph_img_url  = $url_global;  
     $openGraph_siteName = $openGraph_title;
-//---Open Graph End
     
     $nav_pageCurrent = 0;
     
