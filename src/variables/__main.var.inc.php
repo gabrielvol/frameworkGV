@@ -6,8 +6,8 @@
     include('company.tels.var.inc.php');
     include('company.mails.var.inc.php');
     
-    include('header.var.inc.php');
-    include('nav.var.inc.php');
+    include('header.act.inc.php');
+    include('nav.act.inc.php');
     //include('social.var.inc.php');
     
     include('section.contacto.var.inc.php');
