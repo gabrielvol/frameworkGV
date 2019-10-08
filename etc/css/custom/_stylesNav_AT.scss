@@ -69,14 +69,14 @@
         @if $nav_hasSub_act == "on"{
             .subMenu{
                 $borderRadiusB: 10px;
-                $subMenuW: 200px;
+                $nav_subMenu_width: 200px;
                 
                 @include borderRadiusB($borderRadiusB);
                 position: absolute;
                 left: 0;
                 top: 40px;
-                width: $subMenuW;
-                margin-left: calc(-1 * (#{$subMenuW} / 2));
+                width: $nav_subMenu_width;
+                margin-left: calc(-1 * (#{$nav_subMenu_width} / 2));
                 
                 &, li{}
                 
