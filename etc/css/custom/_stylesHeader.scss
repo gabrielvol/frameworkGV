@@ -81,8 +81,8 @@
     //@include navBT
     @include beforeTablet{
         box-sizing: border-box;
-        padding-top: $header_paddingT_BT;
-        padding-bottom: $header_paddingB_BT;
+        padding-top: $header_PT_BT;
+        padding-bottom: $header_PB_BT;
         
         @if $header_fixed_act_BT == "on" or $navAcc_act == "on"{
             position: fixed;
@@ -167,7 +167,7 @@
         }
     }
     
-    //@include navAT{
+    //@include navAT
     @include afterTablet{        
         @if $header_fixed_act_AT == "on"{
             position: fixed;
