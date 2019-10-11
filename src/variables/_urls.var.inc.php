@@ -5,9 +5,12 @@
     $url_global     = "http://www.".$domain_global;
     $url_openGraph  = "http://www.".$domain_global;
     
-    $url_seccion = "/nuevo/seccion.php";
+    $url-seccion        = "/clientes/charly/seccion.php";
+    $url_contacto       = "/clientes/charly/contacto.php";
+    $url_contacto_full  = $url_global . $url_contacto;
     
-    $href_seccion = 'href="'.$url_seccion.'"';
+    $href-seccion  = 'href="'.$url-seccion.'"';
+    $href_contacto = 'href="'.$url_contacto.'"';
     
-    $urlActual      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $url_actual     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>

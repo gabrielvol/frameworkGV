@@ -1,11 +1,11 @@
 <?php $navItemInicio = ($nav_pageCurrent == 0)? "displayNone" : ""; ?>
 
 <li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone current'; } ?>">
-    <a <?php echo $href_seccion ?> class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href-seccion ?> class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
 </li>
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
-    <a <?php echo $href_seccion ?> class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href-seccion ?> class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
 <li class="liNoLink">
@@ -26,7 +26,7 @@
     </p>
     <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
         <li class="<?php if($nav_pageCurrent_int == 200) { echo 'current'; } ?>">
-            <a <?php echo $href_seccion ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
+            <a <?php echo $href-seccion ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
                 <?php echo _("Historia"); ?></a>
         </li>
     </ul>
@@ -45,7 +45,7 @@
             </p>
             <ul id="hisSubMenu" class="subMenu subMenuLevel2 unstyled" role="group" aria-expanded="false" aria-labelledby="hisNavItem">
                 <li class="<?php if($nav_pageCurrent_int == 211) { echo 'current'; } ?>">
-                    <a <?php echo $href_seccion ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
+                    <a <?php echo $href-seccion ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
                         <?php echo _("Comienzos"); ?></a>
                 </li>
             </ul>    
