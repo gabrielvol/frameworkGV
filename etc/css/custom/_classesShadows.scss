@@ -2,7 +2,7 @@
    Shadows Classes | Custom [classesShadows.scss]
    ========================================================================== */
 .textShadow{
-    text-shadow: 0 0 3px $black;
+    text-shadow: $text_shadow_main;
 }
 
 .textShadowWhite{

@@ -241,7 +241,7 @@ form{
                 color: $white;
             }
             &:focus, &:hover{
-                text-shadow: $text_white_hoverShadow;
+                text-shadow: $text_shadow_whiteText_hover;
             }
         }    
     }

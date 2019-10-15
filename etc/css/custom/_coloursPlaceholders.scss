@@ -2,21 +2,13 @@
    Colour Placeholders | Custom [coloursPlaceholders.scss]
    ========================================================================== */
 //White Hover
-$text_white_hoverShadow: 0 0 3px $black;
-$submit_white_hoverShadow: 0 0 2px $black;
-
-%text_white_hover{
-    color: $white;
-    text-shadow: $text_white_hoverShadow;
-}
-%submit_white_hover{
-    text-shadow: $submit_white_hoverShadow;
-}
+$text_shadow_main: 0 0 3px $black;
+$text_shadow_whiteText_hover: 0 0 3px $black;
 
 ///**Colours Map Custom Hover:** 
     ///Aquí se agregan las pseudoclases `:focus` y `:hover` correspondientes al mapa `$colours_map_custom_hover` que se encuentra en `[/custom/variables/_coloursMain.scss]`.
 
-%anchor_button_focusHoverCustom__orange{    
+%anchor_button_focusHoverCustom__orange{
     &:focus, &:hover{
         color: #ff0000;
     }

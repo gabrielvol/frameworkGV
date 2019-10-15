@@ -17,6 +17,9 @@
     text-transform: uppercase;
     text-align: center;
     
+    &, &:focus, &:hover, &:visited, &:active{
+    }
+    
     &, &:focus, &:hover{
         text-decoration: $none;
     }
