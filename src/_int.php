@@ -26,7 +26,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="page_int section_aaaaa" role="main">
+    <div id="main" class="page_int section-aaaaa" role="main">
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
 </body>
