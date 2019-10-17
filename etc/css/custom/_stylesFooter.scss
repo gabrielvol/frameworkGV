@@ -28,16 +28,16 @@
         }
     }
     
-    .gooAddress{
+    .address_footer_goo{
         a{
             font-size: 1em;
             line-height: 1.2em;
         }
     }
     
-    .footerCopy{}
+    .copy_footer{}
     
-    .footerLegal{
+    .legal_footer{
         ul{}
         
         li,        
@@ -47,11 +47,11 @@
         
         a{}
         
-        .copy{}
+        .legal_copy{}
         
-        .tos{}
+        .legal_tos{}
         
-        .stu{}
+        .legal_studio{}
     }
     
     @include beforeTablet{    
@@ -66,12 +66,12 @@
     
     @include afterTablet{    
         @if $footer_floatedContent_act_AT == "on"{
-            .logoFooter,
-            .txtFooter{
+            .logo_footer,
+            .txt_footer{
                 float: left;
             }
             
-            .logoFooter{
+            .logo_footer{
                 width: $footer_logoFloated_width; // footerSizes.scss
                 padding-right: 20px;
                 padding-left: 20px;
@@ -81,7 +81,7 @@
                 }
             }
             
-            .txtFooter{
+            .txt_footer{
                 width: calc(100% - #{$footer_logoFloated_width});  // footerSizes.scss
             }
 
@@ -93,7 +93,7 @@
     }
     
     @include beforeTabletLandscape{
-        .gooAddress{
+        .address_footer_goo{
             a{
                 text-decoration: underline;
             }
@@ -101,7 +101,7 @@
     }
     
     @include afterTabletLandscape{
-        .gooAddress{
+        .address_footer_goo{
             a{
                 &:focus, &:hover{
                     text-decoration: underline;

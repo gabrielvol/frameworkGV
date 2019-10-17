@@ -1953,7 +1953,7 @@ article, article::before, article::after, details, details::before, details::aft
         background-position: center;
     }
     */ }
-  #footer .gooAddress a {
+  #footer .address_footer_goo a {
     font-size: 1em;
     line-height: 1.2em; }
   @media (max-width: 767px) {
@@ -1963,10 +1963,10 @@ article, article::before, article::after, details, details::before, details::aft
     #footer .logoF {
       width: 100px; } }
   @media (max-width: 1023px) {
-    #footer .gooAddress a {
+    #footer .address_footer_goo a {
       text-decoration: underline; } }
   @media (min-width: 1024px) {
-    #footer .gooAddress a:focus, #footer .gooAddress a:hover {
+    #footer .address_footer_goo a:focus, #footer .address_footer_goo a:hover {
       text-decoration: underline; } }
 
 /* -------------------------------------
