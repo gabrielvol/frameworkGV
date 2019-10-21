@@ -1,11 +1,11 @@
 <?php        
     // -------------------------------------------------------------------------
         //-- Tels
-    $company_tel_main_a            = "1234";
-    $company_tel_main_b            = "5678";
+    $company_tel_main_a            = "0000";
+    $company_tel_main_b            = "0000";
     
-    $company_tel_sec_a             = "1234";
-    $company_tel_sec_b             = "5678";
+    $company_tel_sec_a             = "9999";
+    $company_tel_sec_b             = "9999";
     
     $company_tel_main              = $company_tel_main_a . $company_tel_main_b;
     $company_tel_main_formatted    = "(011) " . $company_tel_main_a . "-" . $company_tel_main_b;
