@@ -70,6 +70,9 @@
    Modal Opacity Variables | Custom [coloursBackgrounds.scss]
    ========================================================================== */
 /* =============================================================================
+   Shadows Variables | Custom [shadows.scss]
+   ========================================================================== */
+/* =============================================================================
    Fonts Main Variables | Custom [fontsMain.scss]
    ========================================================================== */
 /* =============================================================================
@@ -849,16 +852,16 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 /* =============================================================================
    Shadows Classes | Custom [classesShadows.scss]
    ========================================================================== */
-.textShadow {
+.shadow_text {
   text-shadow: 0 0 3px #000; }
 
-.textShadowWhite {
+.shadow_text_white {
   text-shadow: 0 0 3px #fff; }
 
-.boxShadow {
+.shadow_box {
   box-shadow: 0 0 10px 0 #666; }
 
-.boxShadowInner {
+.shadow_box_inset {
   box-shadow: inset 0 0 10px 0 #666; }
 
 .bgShadowT,
@@ -1958,7 +1961,7 @@ article, article::before, article::after, details, details::before, details::aft
     line-height: 1.2em; }
   @media (max-width: 767px) {
     #footer .logoF {
-      width: 100px; } }
+      width: 50px; } }
   @media (min-width: 768px) {
     #footer .logoF {
       width: 100px; } }

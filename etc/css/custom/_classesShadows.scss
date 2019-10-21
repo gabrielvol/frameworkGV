@@ -1,20 +1,20 @@
 /* =============================================================================
    Shadows Classes | Custom [classesShadows.scss]
    ========================================================================== */
-.textShadow{
+.shadow_text{
     text-shadow: $text_shadow_main;
 }
 
-.textShadowWhite{
+.shadow_text_white{
     text-shadow: 0 0 3px $white;
 }
 
-.boxShadow{
+.shadow_box{
     box-shadow: $box_shadow_main;
 } 
 
-.boxShadowInner{
-    box-shadow: $box_shadow_main_inner;
+.shadow_box_inset{
+    box-shadow: $box_shadow_main_inset;
 }
 
 // Background Shadows
