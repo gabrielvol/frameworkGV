@@ -34,6 +34,6 @@
             buttons: false
         });
     </script>
-    <script src="/framework/js/carouselTiny.js"></script>
+    <script src="/etc/js/carouselTiny.js"></script>
 </body>
 </html>

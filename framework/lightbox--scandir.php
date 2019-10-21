@@ -35,7 +35,7 @@
         </ul>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
-    <script src="/framework/js/lightbox.min.js"></script>
-    <script src="/framework/js/_lightbox.js"></script>
+    <script src="/etc/js/lightbox.min.js"></script>
+    <script src="/etc/js/_lightbox.js"></script>
 </body>
 </html>
