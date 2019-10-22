@@ -715,8 +715,8 @@ a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[hre
   box-decoration-break: clone; }
   .gradientText.blueGT {
     /*
-        background-image: $bgGradient_blueCTA;
-        filter: $bgGradient_blueCTA_filter;
+        background-image: $bgGrad_blueCTA;
+        filter: $bgGrad_blueCTA_filter;
         */ }
 
 /* =============================================================================

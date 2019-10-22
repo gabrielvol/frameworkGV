@@ -12,29 +12,29 @@ $bgGrad_whiteThirty_filter: progid:DXImageTransform.Microsoft.gradient( startCol
 
 // White 50%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
-$bgGradient_whiteFifty: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%);
-$bgGradient_whiteFifty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 );
+$bgGrad_whiteFifty: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%);
+$bgGrad_whiteFifty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 );
 .bgGrad_whiteFifty{
-    background-image: $bgGradient_whiteFifty;
-    filter: $bgGradient_whiteFifty_filter;
+    background-image: $bgGrad_whiteFifty;
+    filter: $bgGrad_whiteFifty_filter;
 }
 
 // White 60%
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.6+0,0.6+100 */
-$bgGradient_whiteSixty: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%);
-$bgGradient_whiteSixty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#99ffffff',GradientType=0 );
+$bgGrad_whiteSixty: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%);
+$bgGrad_whiteSixty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#99ffffff',GradientType=0 );
 .bgGrad_whiteSixty{
-    background-image: $bgGradient_whiteSixty;
-    filter: $bgGradient_whiteSixty_filter;
+    background-image: $bgGrad_whiteSixty;
+    filter: $bgGrad_whiteSixty_filter;
 }
 
 // White 80%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100 */
-$bgGradient_whiteEighty: linear-gradient(to bottom,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.8)100%);
-$bgGradient_whiteEighty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
+$bgGrad_whiteEighty: linear-gradient(to bottom,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.8)100%);
+$bgGrad_whiteEighty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
 .bgGrad_whiteEighty{
-    background-image: $bgGradient_whiteEighty;
-    filter: $bgGradient_whiteEighty_filter;
+    background-image: $bgGrad_whiteEighty;
+    filter: $bgGrad_whiteEighty_filter;
 }
 
 // White 90%
@@ -48,20 +48,20 @@ $bgGrad_whiteNinety_filter: progid:DXImageTransform.Microsoft.gradient( startCol
 
 // White Text Vanish
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-$bgGradient_white_textVanish: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
-$bgGradient_white_textVanish_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+$bgGrad_white_textVanish: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+$bgGrad_white_textVanish_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
 .bgGrad_white_textVanish{
-    background-image: $bgGradient_white_textVanish;
-    filter: $bgGradient_white_textVanish_filter;
+    background-image: $bgGrad_white_textVanish;
+    filter: $bgGrad_white_textVanish_filter;
 }
 
 // Black 10%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
-$bgGradient_blackTen: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
-$bgGradient_blackTen_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 );
+$bgGrad_blackTen: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
+$bgGrad_blackTen_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 );
 .bgGrad_blackTen{
-    background-image: $bgGradient_blackTen;
-    filter: $bgGradient_blackTen_filter;
+    background-image: $bgGrad_blackTen;
+    filter: $bgGrad_blackTen_filter;
 }
 // Black 25%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.25+0,0.25+100 */
@@ -83,18 +83,18 @@ $bgGrad_blackForty_filter: progid:DXImageTransform.Microsoft.gradient( startColo
 
 // Black 50%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-$bgGradient_blackFifty: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 89%,rgba(0,0,0,0.5) 100%);
-$bgGradient_blackFifty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
+$bgGrad_blackFifty: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 89%,rgba(0,0,0,0.5) 100%);
+$bgGrad_blackFifty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
 .bgGrad_blackFifty{
-    background-image: $bgGradient_blackFifty;
-    filter: $bgGradient_blackFifty_filter;
+    background-image: $bgGrad_blackFifty;
+    filter: $bgGrad_blackFifty_filter;
 }
 
 // Black 80%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-$bgGradient_blackEighty: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
-$bgGradient_blackEighty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
+$bgGrad_blackEighty: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
+$bgGrad_blackEighty_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
 .bgGrad_blackEighty{
-    background-image: $bgGradient_blackEighty;
-    filter: $bgGradient_blackEighty_filter;
+    background-image: $bgGrad_blackEighty;
+    filter: $bgGrad_blackEighty_filter;
 }

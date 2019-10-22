@@ -155,8 +155,8 @@
                         @include borderRadiusB($navSubMenu_borderRadiusB);
                         top: $topper_height_global;
                         left: 0;
-                        background-image: $bgGradient_blackEighty;
-                        filter: $bgGradient_blackEighty_filter;
+                        background-image: $bgGrad_blackEighty;
+                        filter: $bgGrad_blackEighty_filter;
                         padding-bottom: 5px;
 
                         &, li{
