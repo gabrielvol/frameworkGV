@@ -1,0 +1,18 @@
+/* =============================================================================
+   Quotes Styles | Custom [stylesQuotes.scss]
+   ========================================================================== */
+blockquote{
+    margin: 0;
+}
+
+q{
+    quotes: "“" "”" "«" "»";
+    
+    &::before {
+        content: open-quote;
+    }
+    
+    &::after {
+        content: close-quote;
+    }
+}
