@@ -116,7 +116,18 @@ $desktopLargeMin: 1600px;
 @mixin mobile900Only{ // 1023px
     @media (min-width: 901px)
         and (max-width: #{$tabletPMax}){@content;}}
-
+    
+/* 950 */
+@mixin beforeMobile950{
+    @media (max-width: 950px){@content;}}
+    
+@mixin afterMobile950{
+    @media (min-width: 951px){@content;}}
+    
+@mixin mobile950Only{ // 1023px
+    @media (min-width: 951px)
+        and (max-width: #{$tabletPMax}){@content;}}
+    
 /* Desktop */
 @mixin beforeDesktop{ // 1199px
     @media (max-width: #{$tabletMax}){@content;}}
