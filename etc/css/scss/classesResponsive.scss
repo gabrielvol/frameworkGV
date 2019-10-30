@@ -22,8 +22,8 @@
         .displayInlineMO{display: $inline}
         .displayInlineBlockMO{display: $inlineBlock}
         .displayTableMO{display: table}
-        .displayBlockMO, .showMO{display: $block}
-        .displayNoneMO, .hideMO{display: $none}
+        .displayBlockMO{display: $block}
+        .displayNoneMO{display: $none}
         .contentBoxMO{box-sizing: content-box}
         .borderBoxMO{box-sizing: border-box}
         .visuallyHiddenMO{
@@ -160,8 +160,8 @@
         .displayInlineAML{display: $inline}
         .displayInlineBlockAML{display: $inlineBlock}
         .displayTableAML{display: table}
-        .displayBlockAML, .showAML{display: $block}
-        .displayNoneAML, .hideAML{display: $none}
+        .displayBlockAML{display: $block}
+        .displayNoneAML{display: $none}
         .contentBoxAML{box-sizing: content-box}
         .borderBoxAML{box-sizing: border-box}
         .visuallyHiddenAML{
@@ -298,8 +298,8 @@
         .displayInlineMLO{display: $inline}
         .displayInlineBlockMLO{display: $inlineBlock}
         .displayTableMLO{display: table}
-        .displayBlockMLO, .showMLO{display: $block}
-        .displayNoneMLO, .hideMLO{display: $none}
+        .displayBlockMLO{display: $block}
+        .displayNoneMLO{display: $none}
         .contentBoxMLO{box-sizing: content-box}
         .borderBoxMLO{box-sizing: border-box}
         .visuallyHiddenMLO{
@@ -436,8 +436,8 @@
         .displayInlineBT{display: $inline}
         .displayInlineBlockBT{display: $inlineBlock}
         .displayTableBT{display: table}
-        .displayBlockBT, .showBT{display: $block}
-        .displayNoneBT, .hideBT{display: $none}
+        .displayBlockBT{display: $block}
+        .displayNoneBT{display: $none}
         .contentBoxBT{box-sizing: content-box}
         .borderBoxBT{box-sizing: border-box}
         .visuallyHiddenBT{
@@ -574,8 +574,8 @@
         .displayInlineBTL{display: $inline}
         .displayInlineBlockBTL{display: $inlineBlock}
         .displayTableBTL{display: table}
-        .displayBlockBTL, .showBTL{display: $block}
-        .displayNoneBTL, .hideBTL{display: $none}
+        .displayBlockBTL{display: $block}
+        .displayNoneBTL{display: $none}
         .contentBoxBTL{box-sizing: content-box}
         .borderBoxBTL{box-sizing: border-box}
         .visuallyHiddenBTL{
@@ -712,8 +712,8 @@
         .displayInlineTO{display: $inline}
         .displayInlineBlockTO{display: $inlineBlock}
         .displayTableTO{display: table}
-        .displayBlockTO, .showTO{display: $block}
-        .displayNoneTO, .hideTO{display: $none}
+        .displayBlockTO{display: $block}
+        .displayNoneTO{display: $none}
         .contentBoxTO{box-sizing: content-box}
         .borderBoxTO{box-sizing: border-box}
         .visuallyHiddenTO{
@@ -851,8 +851,8 @@
         .displayInlineAT{display: $inline}
         .displayInlineBlockAT{display: $inlineBlock}
         .displayTableAT{display: table}
-        .displayBlockAT, .showAT{display: $block}
-        .displayNoneAT, .hideAT{display: $none}
+        .displayBlockAT{display: $block}
+        .displayNoneAT{display: $none}
         .contentBoxAT{box-sizing: content-box}
         .borderBoxAT{box-sizing: border-box}
         .visuallyHiddenAT{
@@ -989,8 +989,8 @@
         .displayInlineATL{display: $inline}
         .displayInlineBlockATL{display: $inlineBlock}
         .displayTableATL{display: table}
-        .displayBlockATL, .showATL{display: $block}
-        .displayNoneATL, .hideATL{display: $none}
+        .displayBlockATL{display: $block}
+        .displayNoneATL{display: $none}
         .contentBoxATL{box-sizing: content-box}
         .borderBoxATL{box-sizing: border-box}
         .visuallyHiddenATL{
@@ -1127,8 +1127,8 @@
         .displayInlineTLO{display: $inline}
         .displayInlineBlockTLO{display: $inlineBlock}
         .displayTableTLO{display: table}
-        .displayBlockTLO, .showTLO{display: $block}
-        .displayNoneTLO, .hideTLO{display: $none}
+        .displayBlockTLO{display: $block}
+        .displayNoneTLO{display: $none}
         .contentBoxTLO{box-sizing: content-box}
         .borderBoxTLO{box-sizing: border-box}
         .visuallyHiddenTLO{
@@ -1265,8 +1265,8 @@
         .displayInlineTTLO{display: $inline}
         .displayInlineBlockTTLO{display: $inlineBlock}
         .displayTableTTLO{display: table}
-        .displayBlockTTLO, .showTTLO{display: $block}
-        .displayNoneTTLO, .hideTTLO{display: $none}
+        .displayBlockTTLO{display: $block}
+        .displayNoneTTLO{display: $none}
         .contentBoxTTLO{box-sizing: content-box}
         .borderBoxTTLO{box-sizing: border-box}
         .visuallyHiddenTTLO{
@@ -1403,8 +1403,8 @@
         .displayInlineBD{display: $inline}
         .displayInlineBlockBD{display: $inlineBlock}
         .displayTableBD{display: table}
-        .displayBlockBD, .showBD{display: $block}
-        .displayNoneBD, .hideBD{display: $none}
+        .displayBlockBD{display: $block}
+        .displayNoneBD{display: $none}
         .contentBoxBD{box-sizing: content-box}
         .borderBoxBD{box-sizing: border-box}
         .visuallyHiddenBD{
@@ -1541,8 +1541,8 @@
         .displayInlineAD{display: $inline}
         .displayInlineBlockAD{display: $inlineBlock}
         .displayTableAD{display: table}
-        .displayBlockAD, .showAD{display: $block}
-        .displayNoneAD, .hideAD{display: $none}
+        .displayBlockAD{display: $block}
+        .displayNoneAD{display: $none}
         .contentBoxAD{box-sizing: content-box}
         .borderBoxAD{box-sizing: border-box}
         .visuallyHiddenAD{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =============================================================================
    Font Variables | Etc [variablesFonts.scss]
    ========================================================================== */
@@ -196,6 +197,7 @@
 /* 700 */
 /* 800 */
 /* 900 */
+/* 950 */
 /* Desktop */
 /* Big Screens + */
 /* =============================================================================
@@ -798,6 +800,19 @@ b, strong,
   letter-spacing: 0.05rem; }
 
 /* =============================================================================
+   Quotes Styles | Custom [stylesQuotes.scss]
+   ========================================================================== */
+blockquote {
+  margin: 0; }
+
+q {
+  quotes: "“" "”" "«" "»"; }
+  q::before {
+    content: open-quote; }
+  q::after {
+    content: close-quote; }
+
+/* =============================================================================
    Backgrounds Includes | Custom [includesBackgrounds.scss]
    ========================================================================== */
 .bgError {
@@ -990,9 +1005,6 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 
 .displayNone {
   display: none !important; }
-
-.invisible {
-  visibility: hidden; }
 
 .centerVertically {
   display: table-cell;
@@ -1225,9 +1237,9 @@ article, article::before, article::after, details, details::before, details::aft
     display: inline-block !important; }
   .displayTableBT {
     display: table; }
-  .displayBlockBT, .showBT {
+  .displayBlockBT {
     display: block !important; }
-  .displayNoneBT, .hideBT {
+  .displayNoneBT {
     display: none !important; }
   .contentBoxBT {
     box-sizing: content-box; }
@@ -1301,9 +1313,9 @@ article, article::before, article::after, details, details::before, details::aft
     display: inline-block !important; }
   .displayTableAT {
     display: table; }
-  .displayBlockAT, .showAT {
+  .displayBlockAT {
     display: block !important; }
-  .displayNoneAT, .hideAT {
+  .displayNoneAT {
     display: none !important; }
   .contentBoxAT {
     box-sizing: content-box; }
@@ -1616,15 +1628,19 @@ article, article::before, article::after, details, details::before, details::aft
 .numbered {
   counter-reset: liN; }
   .numbered > li {
-    position: relative; }
+    position: relative;
+    box-sizing: border-box;
+    padding-left: calc(25px + 5px);
+    list-style-type: none; }
     .numbered > li::before {
-      width: 35px;
-      height: 35px;
+      width: 25px;
+      height: 25px;
       counter-increment: liN;
       content: counter(liN);
       display: block;
       float: left;
-      margin-left: calc(-1 * calc(35px + 10px)); }
+      margin-right: 0 !important;
+      margin-left: calc(-1 * calc(25px - 0)); }
 
 .bulleted_dot li,
 .bulleted_square li,
