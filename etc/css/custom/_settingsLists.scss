@@ -36,7 +36,8 @@
 
 .bulleted_dot,
 .bulleted_square,
-.bulleted_tick{
+.bulleted_tick,
+.bulleted_chevron{
     li{
         list-style-type: none;
         box-sizing: border-box;
@@ -53,7 +54,8 @@
 }   
 
 .bulleted_dot,
-.bulleted_square{
+.bulleted_square,
+.bulleted_chevron{
     $bullet_size: 7px;  
         
     li{
@@ -97,6 +99,14 @@
             background-image: url('/nuevo/img/bullet_tick.svg');
             background-position: left 3px;
             background-size: auto calc(#{$bulleted_tick_li_PL} - 5px);
+        }
+    }
+}
+
+.bulleted_chevron{
+    li{
+        &::before{
+            background-image: url('/nuevo/img/bullet_chevron.svg');
         }
     }
 }
