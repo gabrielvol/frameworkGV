@@ -48,7 +48,7 @@
         </ul>
     </div> 
 </footer>
-    
-<?php include('pop.inc.php'); ?>
-
-<?php include('footer.js.inc.php'); ?>
+<?php
+    include('footer.pop.inc.php');
+    include('footer.js.inc.php');
+?>
