@@ -40,23 +40,30 @@
         $nombreApe__formName      = $_POST['nombreApe__formName'];
         $nombreComp__formName     = $_POST['nombreComp__formName'];
         $username__formName       = $_POST['username__formName'];
+        
         $genero__formName         = $_POST['genero__formName'];
         $dni__formName            = $_POST['dni__formName'];
+        $fecha__formName          = $_POST['fecha__formName'];
+        
         $direccion__formName      = $_POST['direccion__formName'];
         $domicilio__formName      = $_POST['domicilio__formName'];
         $localidad__formName      = $_POST['localidad__formName'];
         $codigopostal__formName   = $_POST['codigopostal__formName'];
         $provincia__formName      = $_POST['provincia__formName'];
         $pais__formName           = $_POST['pais__formName'];
-        $fecha__formName          = $_POST['fecha__formName'];
+        
         $email__formName          = $_POST['email__formName'];
+        $telefono__formName       = $_POST['telefono__formName'];
+        
         $website__formName        = $_POST['website__formName'];
         $facebook__formName       = $_POST['facebook__formName'];
-        $telefono__formName       = $_POST['telefono__formName'];
+        $instagram__formName      = $_POST['instagram__formName'];        
+        
         $empresa__formName        = $_POST['empresa__formName'];
         $razonSocial__formName    = $_POST['razonSocial__formName'];
         $cargo__formName          = $_POST['cargo__formName'];
         $rubro__formName          = $_POST['rubro__formName'];
+        
         $asuntoSubject__formName  = $_POST['asunto__formName'];
         $area__formName           = $_POST['$area__formName'];
         $mensaje__formName        = $_POST['mensaje__formName'];
@@ -90,6 +97,7 @@
         $texto   .= "<strong>Correo electr&oacute;nico:</strong> ".$email__formName."<br />";
         $texto   .= "<strong>Sitio web:</strong> ".$website__formName."<br />";
         $texto   .= "<strong>Perfil de Facebook:</strong> ".$facebook__formName."<br />";
+        $texto   .= "<strong>Perfil de Instagram:</strong> ".$instagram__formName."<br />";
         $texto   .= "<strong>Tel&eacute;fono:</strong> ".$telefono__formName."<br />";
         $texto   .= "<strong>Empresa:</strong> ".$empresa__formName."<br />";
         $texto   .= "<strong>Raz&oacute;n Social:</strong> ".$razonSocial__formName."<br />";
@@ -108,23 +116,30 @@
         $errorMsgNombreApe__formName      = _("Por favor, ingrese su nombre y apellido.");
         $errorMsgNombreComp__formName     = _("Por favor, ingrese su nombre completo.");
         $errorMsgUsername__formName       = _("Por favor, ingrese un nombre de usuario.");
+        
         $errorMsgDireccion__formName      = _("Por favor, ingrese su direcci&oacute;n.");
         $errorMsgDomicilio__formName      = _("Por favor, ingrese su domicilio.");
         $errorMsgLocalidad__formName      = _("Por favor, ingrese su localidad.");
         $errorMsgCodigoPostal__formName   = _("Por favor, ingrese su c&oacute;digo postal."); 
         $errorMsgProvincia__formName      = _("Por favor, ingrese su provincia.");
         $errorMsgPais__formName           = _("Por favor, ingrese su pa&iacute;s.");
+        
         $errorMsgFecha__formName          = _("Por favor, indique la fecha deseada.");
         $errorMsgDNI__formName            = _("Por favor, ingrese su n&uacute;mero de DNI.");
+        
         $errorMsgEmail__formName          = _("Por favor, ingrese su direcci&oacute;n de correo."); 
+        $errorMsgTelefono__formName       = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono."); 
+        
         $errorMsgWebsite__formName        = _("Por favor, ingrese su sitio web.");
         $errorMsgFacebook__formName       = _("Por favor, ingrese su perfil de Facebook.");
-        $errorMsgTelefono__formName       = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono."); 
+        $errorMsgInstagram__formName      = _("Por favor, ingrese su perfil de Instagram.");
+        
         $errorMsgEmpresa__formName        = _("Por favor, ingrese el nombre de su empresa.");
         $errorMsgRazonSocial__formName    = _("Por favor, ingrese su raz&oacute;n social.");
         $errorMsgCargo__formName          = _("Por favor, ingrese su cargo.");
         $errorMsgRubro__formName          = _("Por favor, ingrese un rubro.");
         $errorMsgAsunto__formName         = _("Por favor, ingrese un asunto.");
+        
         $errorMsgArea__formName           = _("Por favor, elija un área de contacto.");        
         $errorMsgNewsletter__formName     = _("Por favor, elija una opci&oacute;n.");
         $errorMsgMensaje__formName        = _("Por favor, complete su mensaje.");

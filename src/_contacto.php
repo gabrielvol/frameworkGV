@@ -87,6 +87,45 @@
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_genero__formName ?>"><?php echo $formSpan_error_MSG_genero__formName ?></span>
                 </label>
 
+            <label for="genero__formName">
+                <span class="labelName"><?php echo _('Género'); ?></span>                    
+                <input type="text" list="genero_listaTotal" name="genero__formName">
+                <datalist id="genero_listaTotal">
+                    <option value="Lesbiana">
+                    <option value="Gay">
+                    <option value="Bixesual">
+                    <option value="Transgénero">
+                    <option value="Transfemenino">
+                    <option value="Transmasculino">
+                    <option value="Travesti">
+                    <option value="Intersexual">
+                    <option value="Pansexual">
+                    <option value="Asexual">
+                    <option value="Prefiero no decirlo">
+                    <option value="Otre">
+                    <option value="Demisexual">
+                    <option value="Heterosexual">
+                    <option value="Andrógine">
+                    <option value="Polisexual">
+                    <option value="Poliamoroso">
+                    <option value="Poligénero">
+                    <option value="Queer">
+                    <option value="Lithsexual">
+                    <option value="Hombre trans">
+                    <option value="Mujer trans">
+                    <option value="Persona trans">
+                    <option value="Transexual">
+                    <option value="Sapiosexual">
+                    <option value="Hombre">
+                    <option value="Mujer">
+                    <option value="No binario">   
+                    <option value="Género neutral">  
+                    <option value="Género fluido">   
+                    <option value="Bigénero">                            
+                </datalist>
+                <span class="formSugg">La lista incluye sugerencias, pero podés completar libremente el campo.</span>
+            </label>  
+
                 <label for="dni__formName">
                     <span class="labelName"><?php echo _('DNI'); ?></span>
                     <input type="tel" name="dni__formName" id="dni__formName" class="dni <?php echo $formInput_error_class_DNI__formName ?>" value="<?php echo $_POST['dni__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_DNI__formName ?>>
@@ -96,7 +135,8 @@
                 <label for="password__formName">
                     <span class="labelName"><?php echo _('Contraseña'); ?></span>
                     <input type="password" name="contrasena__formName" id="contrasena__formName" class="contrasena <?php echo $formInput_error_class_password__formName ?>" value="<?php echo $_POST['contrasena__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_password__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_password__formName ?>"><?php echo $formSpan_error_MSG_password__formName ?></span>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_password__formName ?>"><?php echo $formSpan_error_MSG_password__formName ?></span>        
+                    <span class="formSugg">Te enviaremos un correo a esta casilla para confirmar tu registro.</span>
                 </label>
 
                 <label for="direccion__formName">
@@ -191,7 +231,8 @@
                 <label for="email__formName">
                     <span class="labelName"><?php echo _('Correo electr&oacute;nico'); ?></span>
                     <input type="email" name="email__formName" id="email__formName" class="email <?php echo $formInput_error_class_email__formName ?>" value="<?php echo $_POST['email__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_email__formName ?>>
-                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_email__formName ?>"><?php echo $formSpan_error_MSG_email__formName ?></span>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_email__formName ?>"><?php echo $formSpan_error_MSG_email__formName ?></span>        
+                    <span class="formSugg">Te enviaremos un correo a esta casilla para confirmar tu registro.</span>
                 </label> 
 
                 <label for="email__formName">
@@ -216,6 +257,13 @@
                     <span class="labelName"><?php echo _('Perfil de Facebook'); ?></span>
                     <input type="url" name="facebook__formName" id="facebook__formName" class="facebook <?php echo $formInput_error_class_Facebook__formName ?>" value="<?php echo $_POST['facebook__formName']; ?>" placeholder="<?php echo _('Debe comenzar con http://www.facebook.com/'); ?>" <?php echo $formInput_autofocus_Facebook__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_Facebook__formName ?>"><?php echo $formSpan_error_MSG_Facebook__formName ?></span>
+                </label>       
+
+                <label for="instagram__formName">
+                    <span class="labelName"><?php echo _('Instagram'); ?></span>
+                    <input type="text" name="instagram__formName" id="instagram__formName" class="instagram <?php echo $formInput_error_class_Instagram__formName ?>" value="<?php echo $_POST['instagram__formName']; ?>" placeholder="<?php echo _('Sólo escribí tu usuario'); ?>" <?php echo $formInput_autofocus_Instagram__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Instagram__formName ?>"><?php echo $formSpan_error_MSG_Instagram__formName ?></span>        
+                    <span class="formSugg">Te enviaremos un correo a esta casilla para confirmar tu registro.</span>
                 </label>
 
                 <label for="empresa__formName">

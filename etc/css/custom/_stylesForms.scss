@@ -309,6 +309,12 @@ form{
             }
         }
         
+        .formSugg{
+            display: block;
+            padding-left: 10px;
+            font-size: 0.75rem;
+        }
+        
         @include beforeMobile600{
             .labelName{
                 &.labelLong{
