@@ -8,7 +8,8 @@
     
     include('header.act.inc.php');
     include('nav.act.inc.php');
-    include('social.var.inc.php');
+    include('social.var.inc.php');    
+    include('media.var.inc.php');
     
     include('section.contacto.var.inc.php');
     
