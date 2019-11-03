@@ -8,7 +8,7 @@
     </div>
     <div class="txt_footer borderBox">
         <p class="address_footer_goo">
-            <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_full_PT; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_full_GB; } else { echo $company_address_main_full; } ?></a>
+            <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_PT; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_GB; } else { echo $company_address_main; } ?></a>
         </p>
         <p class="tel_footer"><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
         <p class="mail_footer"><?php echo _("Correo electr&oacute;nico"); ?>: <a href="<?php echo $social_mailto_address_A ?>"><?php echo $social_email_address_A ?></a></p>
@@ -23,7 +23,7 @@
     <?php include('social.inc.php'); ?>
     
     <p class="address_footer_goo">
-        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_full_PT; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_full_GB; } else { echo $company_address_main_full; } ?></a>
+        <a href="<?php echo $social_googleMap_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_PT; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_GB; } else { echo $company_address_main; } ?></a>
     </p>
     
     <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
