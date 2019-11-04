@@ -1,7 +1,7 @@
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
-#footer{   
+#footer{
     /*
     .button_siteTop{
         @include squareSize(50px);
@@ -54,17 +54,57 @@
         .legal_studio{}
     }
     
-    @include beforeTablet{    
-        @if $footer_floatedContent_act_BT == "on"{
-            /* */        
-    } @else {    
+    @include mobileOnly{
+        @if $footer_floatedContent_act_MO == "on"{
+            .logo_footer,
+            .txt_footer{
+                float: left;
+            }
+            
+            .logo_footer{
+                width: $footer_logoFloated_width_MO; // footerSizes.scss
+                
+                .logoF{
+                    width: 100%;
+                }
+            }
+            
+            .txt_footer{
+                width: calc(100% - #{$footer_logoFloated_width_MO});  // footerSizes.scss
+            }    
+    } @else {
             .logoF{
-                width: $logo_width_footer_BT;
+                width: $logo_width_footer_MO;
             }        
         }
     }
     
-    @include afterTablet{    
+    @include mobileLandscapeOnly{
+        @if $footer_floatedContent_act_MLO == "on"{
+            .logo_footer,
+            .txt_footer{
+                float: left;
+            }
+            
+            .logo_footer{
+                width: $footer_logoFloated_width_MLO; // footerSizes.scss
+                
+                .logoF{
+                    width: 100%;
+                }
+            }
+            
+            .txt_footer{
+                width: calc(100% - #{$footer_logoFloated_width_MLO});  // footerSizes.scss
+            }    
+    } @else {
+            .logoF{
+                width: $logo_width_footer_MLO;
+            }        
+        }
+    }
+    
+    @include afterTablet{
         @if $footer_floatedContent_act_AT == "on"{
             .logo_footer,
             .txt_footer{
@@ -72,7 +112,7 @@
             }
             
             .logo_footer{
-                width: $footer_logoFloated_width; // footerSizes.scss
+                width: $footer_logoFloated_width_AT; // footerSizes.scss
                 padding-right: 20px;
                 padding-left: 20px;
                 
@@ -82,7 +122,7 @@
             }
             
             .txt_footer{
-                width: calc(100% - #{$footer_logoFloated_width});  // footerSizes.scss
+                width: calc(100% - #{$footer_logoFloated_width_AT});  // footerSizes.scss
             }
 
     } @else {
@@ -120,7 +160,7 @@
             height: $footer_height_BT;
         }
 
-        @include afterTablet{ 
+        @include afterTablet{
             height: $footer_height_AT;
         }
     }
