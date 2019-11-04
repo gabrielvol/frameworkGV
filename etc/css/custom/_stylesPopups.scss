@@ -1,6 +1,22 @@
 /* =============================================================================
    Popup Styles | Custom [stylesPopups.scss]
    ========================================================================== */
+.modalBG{}
+
+.modal_warning{
+    /*
+    @include opacityCustom(75);
+    background-color: $bgBlack!important;
+    */
+}
+
+.modal_video{
+    /*
+    @include opacityCustom(75);
+    background-color: $bgBlack!important;
+    */
+}
+
 .pop_main{
     position: fixed;
     top: 80px;
@@ -93,6 +109,14 @@
             width: $pop_warning_width;
             margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);            
         }
+        
+        &.pop_video{
+            $pop_video_width: 300px;
+            
+            width: $pop_video_width;
+            height: 300px;
+            margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
+        }
     }
 
     @include afterMobileLandscape{
@@ -101,6 +125,14 @@
             
             width: $pop_warning_width;
             margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);       
+        }
+        
+        &.pop_video{
+            $pop_video_width: 500px;
+            
+            width: $pop_video_width;
+            height: 250px;
+            margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
         }
     }
 
@@ -138,4 +170,11 @@
             }
         }
     }
+    
+    @include afterTablet{        
+        &.pop_video{
+            width: 600px;
+            height: 330px;
+        }
+    } 
 }
