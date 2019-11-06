@@ -14,11 +14,11 @@ $arial:     map-get($fontFamilies_map, arial);
 $roboto:    map-get($fontFamilies_map, roboto);
 //$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
 
-//$openSansL:   map-get($openSansMap, openSansL);
-//$openSans:    map-get($openSansMap, openSans);
-//$openSansI:   map-get($openSansMap, openSansI);
-//$openSansB:   map-get($openSansMap, openSansB);
-//$openSansBI:  map-get($openSansMap, openSansBI);
+//$openSansL:   map-get($fontFamilies_map_OpenSans, openSansL);
+//$openSans:    map-get($fontFamilies_map_OpenSans, openSans);
+//$openSansI:   map-get($fontFamilies_map_OpenSans, openSansI);
+//$openSansB:   map-get($fontFamilies_map_OpenSans, openSansB);
+//$openSansBI:  map-get($fontFamilies_map_OpenSans, openSansBI);
 
     //Creamos la variable de la fuente principal del sitio
 $fontFamily_main_global:    $arial;

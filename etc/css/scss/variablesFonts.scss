@@ -50,20 +50,20 @@ $lucidaGrande: map-get($fontFamilies_map_sans, lucidaGrande);
 $trebuchetMS: map-get($fontFamilies_map_sans, trebuchetMS);
 
     //Serif Stack
-$fontFamiliesMapSerif:(
+$fontFamilies_map_serif:(
     georgia: Georgia,
     palatino: Palatino,
     serif: serif
 );
     
 $fontFamilies_list_serif: 
-    map-get($fontFamiliesMapSerif, georgia),
-    map-get($fontFamiliesMapSerif, palatino),
-    map-get($fontFamiliesMapSerif, serif)
+    map-get($fontFamilies_map_serif, georgia),
+    map-get($fontFamilies_map_serif, palatino),
+    map-get($fontFamilies_map_serif, serif)
 ;
     
     //monospace Stack
-$fontFamiliesMapMono:(
+$fontFamilies_map_monospaced:(
     consolas: 'Consolas',
     andaleMono: 'Andale Mono',
     lucidaConsole: 'Lucida Console',
@@ -73,12 +73,12 @@ $fontFamiliesMapMono:(
 );
     
 $fontFamilies_list_monospaced:
-    map-get($fontFamiliesMapMono, consolas),    
-    map-get($fontFamiliesMapMono, andaleMono),
-    map-get($fontFamiliesMapMono, lucidaConsole),
-    map-get($fontFamiliesMapMono, bitstreamVeraSansMono),
-    map-get($fontFamiliesMapMono, courierNew),
-    map-get($fontFamiliesMapMono, monospace)
+    map-get($fontFamilies_map_monospaced, consolas),    
+    map-get($fontFamilies_map_monospaced, andaleMono),
+    map-get($fontFamilies_map_monospaced, lucidaConsole),
+    map-get($fontFamilies_map_monospaced, bitstreamVeraSansMono),
+    map-get($fontFamilies_map_monospaced, courierNew),
+    map-get($fontFamilies_map_monospaced, monospace)
 ;
 
     //Font Sizes
@@ -90,7 +90,7 @@ $h5_list: 'h5, .hCin';
 $h6_list: 'h6, .hSei';
 
     //Open Sans Map
-$openSansMap:(
+$fontFamilies_map_OpenSans:(
     openSansL: open_sanslight,
     openSans: open_sansregular,
     openSansI: open_sansitalic,

@@ -8,7 +8,7 @@
     }
     
     @if $openSans_classes_act == "on" {
-        @each $fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $openSansMap {
+        @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $fontFamilies_map_OpenSans {
             .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
         }
     }
