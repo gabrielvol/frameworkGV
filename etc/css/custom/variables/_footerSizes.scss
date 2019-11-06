@@ -2,15 +2,21 @@
    Footer Sizes Variables | Custom [footerSizes.scss]
    ========================================================================== */
 
+// Footer logo floated
    $footer_logoFloated_width_MO:  $logo_width_footer_MO;
    $footer_logoFloated_width_MLO: $logo_width_footer_MLO;
    $footer_logoFloated_width_AT:  $logo_width_footer_AT;
     
-/* -------------------------------------
-    Full height index                 */
-
-$footer_height_BT:     80px;
-$footer_height_AT:     100px;    
-    
-/*  Full height index
-    --------------------------------- */
+// Full heights
+    $footer_height_ALL:    auto;
+    $footer_height_MO:     auto;
+    $footer_height_AML:    auto;
+    $footer_height_MLO:    auto;
+    $footer_height_BT:     auto;
+    $footer_height_AT:     auto;
+    $footer_height_TO:     auto;
+    $footer_height_BTL:    auto;
+    $footer_height_ATL:    auto;
+    $footer_height_TLO:    auto;
+    $footer_height_BD:     auto;
+    $footer_height_AD:     auto;

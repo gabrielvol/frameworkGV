@@ -1,28 +1,74 @@
 /* =============================================================================
    Index Styles | Custom [stylesIndex.scss]
    ========================================================================== */
-.page_index{}
-
-/* -------------------------------------
-    Full height index                 */
-.page_index{  
-    @if $index_fullHeight_act == "on"{  
-        @include mobileOnly{
-            height: calc(100vh - #{$footer_height_BT} - #{$header_height_MO});
+.page_index{
+    @if $fullHeight_index_act_ALL == "on"{  
+        height: calc(100vh - #{$footer_height_ALL} - #{$header_height_ALL});
+    }
+    
+    @include mobileOnly{
+        @if $fullHeight_index_act_MO == "on"{  
+            height: calc(100vh - #{$footer_height_MO} - #{$header_height_MO});
         }
+    }
 
-        @include afterMobileLandscape{
-            height: calc(100vh - #{$footer_height_BT} - #{$header_height_AML});
+    @include afterMobileLandscape{
+        @if $fullHeight_index_act_AML == "on"{  
+            height: calc(100vh - #{$footer_height_AML} - #{$header_height_AML});
         }
+    }
 
-        @include afterTablet{
+    @include mobileLandscapeOnly{
+        @if $fullHeight_index_act_MLO == "on"{  
+            height: calc(100vh - #{$footer_height_MLO} - #{$header_height_MLO});
+        }
+    }
+
+    @include beforeTablet{
+        @if $fullHeight_index_act_BT == "on"{  
+            height: calc(100vh - #{$footer_height_BT} - #{$header_height_BT});
+        }
+    }
+
+    @include afterTablet{
+        @if $fullHeight_index_act_AT == "on"{  
             height: calc(100vh - #{$footer_height_AT} - #{$header_height_AT});
         }
+    }
 
-        @include afterTabletLandscape{
-            height: calc(100vh - #{$footer_height_AT} - #{$header_height_ATL});
+    @include tabletOnly{
+        @if $fullHeight_index_act_TO == "on"{  
+            height: calc(100vh - #{$footer_height_TO} - #{$header_height_TO});
+        }
+    }
+
+    @include beforeTabletLandscape{
+        @if $fullHeight_index_act_BTL == "on"{  
+            height: calc(100vh - #{$footer_height_BTL} - #{$header_height_BTL});
+        }
+    }
+
+    @include afterTabletLandscape{
+        @if $fullHeight_index_act_ATL == "on"{  
+            height: calc(100vh - #{$footer_height_ATL} - #{$header_height_ATL});
+        }
+    }
+
+    @include tabletLandscapeOnly{
+        @if $fullHeight_index_act_TLO == "on"{  
+            height: calc(100vh - #{$footer_height_TLO} - #{$header_height_TLO});
+        }
+    }
+
+    @include beforeDesktop{
+        @if $fullHeight_index_act_BD == "on"{  
+            height: calc(100vh - #{$footer_height_BD} - #{$header_height_BD});
+        }
+    }
+
+    @include afterDesktop{
+        @if $fullHeight_index_act_AD == "on"{  
+            height: calc(100vh - #{$footer_height_AD} - #{$header_height_AD});
         }
     }
 }
-/*  Full height index
-    --------------------------------- */

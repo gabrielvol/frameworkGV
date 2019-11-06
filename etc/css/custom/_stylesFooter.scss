@@ -2,7 +2,12 @@
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
 #footer{
-    /*
+    @if $fullHeight_index_act_ALL or $fullHeight_sections_act_ALL == "on"{
+        height: $footer_height_ALL;
+    }
+    
+/* -------------------------------------
+    Button Site Top                    
     .button_siteTop{
         @include squareSize(50px);
         z-index: $zIndex_buttonSiteTop;
@@ -55,6 +60,10 @@
     }
     
     @include mobileOnly{
+        @if $fullHeight_index_act_MO or $fullHeight_sections_act_MO == "on"{
+            height: $footer_height_MO;
+        }
+        
         @if $footer_floatedContent_act_MO == "on"{
             .logo_footer,
             .txt_footer{
@@ -79,7 +88,17 @@
         }
     }
     
+    @include afterMobileLandscape{
+        @if $fullHeight_index_act_MLO or $fullHeight_sections_act_MLO == "on"{
+            height: $footer_height_MLO;
+        }
+    }
+    
     @include mobileLandscapeOnly{
+        @if $fullHeight_index_act_AML or $fullHeight_sections_act_AML == "on"{
+            height: $footer_height_AML;
+        }
+        
         @if $footer_floatedContent_act_MLO == "on"{
             .logo_footer,
             .txt_footer{
@@ -104,7 +123,17 @@
         }
     }
     
+    @include beforeTablet{
+        @if $fullHeight_index_act_BT or $fullHeight_sections_act_BT == "on"{
+            height: $footer_height_BT;
+        }
+    }
+    
     @include afterTablet{
+        @if $fullHeight_index_act_AT or $fullHeight_sections_act_AT == "on"{
+            height: $footer_height_AT;
+        }
+        
         @if $footer_floatedContent_act_AT == "on"{
             .logo_footer,
             .txt_footer{
@@ -132,7 +161,17 @@
         }
     }
     
+    @include tabletOnly{
+        @if $fullHeight_index_act_TO or $fullHeight_sections_act_TO == "on"{
+            height: $footer_height_TO;
+        }
+    }
+    
     @include beforeTabletLandscape{
+        @if $fullHeight_index_act_BTL or $fullHeight_sections_act_ATL == "on"{
+            height: $footer_height_ATL;
+        }
+        
         .address_footer_goo{
             a{
                 text-decoration: underline;
@@ -141,6 +180,10 @@
     }
     
     @include afterTabletLandscape{
+        @if $fullHeight_index_act_ATL or $fullHeight_sections_act_ATL == "on"{
+            height: $footer_height_ATL;
+        }
+        
         .address_footer_goo{
             a{
                 &:focus, &:hover{
@@ -149,21 +192,10 @@
             }
         }        
     }
-}
-
-
-/* -------------------------------------
-    Full height index                 */
-#footer{
-    @if $index_fullHeight_act == "on"{
-        @include beforeTablet{
-            height: $footer_height_BT;
-        }
-
-        @include afterTablet{
-            height: $footer_height_AT;
-        }
+    
+    @include afterDesktop{
+        @if $fullHeight_index_act_AD or $fullHeight_sections_act_AD == "on"{
+            height: $footer_height_AD;
+        }       
     }
 }
-/*  Full height index
-    --------------------------------- */

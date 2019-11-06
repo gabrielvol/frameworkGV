@@ -7,6 +7,10 @@
     z-index: $zIndex_header;
     */
     
+    @if $fullHeight_index_act_ALL or $fullHeight_sections_act_ALL == "on"{
+        height: $header_height_ALL;
+    }
+    
     .logoH{
         margin-bottom: 0;
         
@@ -28,6 +32,10 @@
     }
     
     @include mobileOnly{
+        @if $fullHeight_index_act_MO or $fullHeight_sections_act_MO == "on"{
+            height: $header_height_MO;
+        }
+        
         @if $header_fixed_act_MO == "on"{
             position: fixed;
             top: 0;
@@ -45,6 +53,10 @@
     }
     
     @include afterMobileLandscape{
+        @if $fullHeight_index_act_MLO or $fullHeight_sections_act_MLO == "on"{
+            height: $header_height_MLO;
+        }
+        
         @if $header_fixed_act_AML == "on"{
             position: fixed;
             top: 0;
@@ -62,6 +74,10 @@
     }
     
     @include mobileLandscapeOnly{
+        @if $fullHeight_index_act_AML or $fullHeight_sections_act_AML == "on"{
+            height: $header_height_AML;
+        }
+        
         @if $header_fixed_act_MLO == "on"{
             position: fixed;
             top: 0;
@@ -83,6 +99,10 @@
         box-sizing: border-box;
         padding-top: $header_PT_BT;
         padding-bottom: $header_PB_BT;
+        
+        @if $fullHeight_index_act_BT or $fullHeight_sections_act_BT == "on"{
+            height: $header_height_BT;
+        }
         
         @if $header_fixed_act_BT == "on" or $navAcc_act == "on"{
             position: fixed;
@@ -169,6 +189,10 @@
     
     //@include navAT
     @include afterTablet{        
+        @if $fullHeight_index_act_AT or $fullHeight_sections_act_AT == "on"{
+            height: $header_height_AT;
+        }
+        
         @if $header_fixed_act_AT == "on"{
             position: fixed;
             top: 0;
@@ -195,10 +219,6 @@
                     z-index: $zIndex_logo_topper;
                 }
             }
-        }
-        
-        @if $index_fullHeight_act == "on"{
-            height: $header_height_AT;
         }
         
         .logoH{
@@ -233,16 +253,28 @@
         }
     }
     
+    @include tabletOnly{
+        @if $fullHeight_index_act_TO or $fullHeight_sections_act_TO == "on"{
+            height: $header_height_TO;
+        }
+    }
+    
+    @include beforeTabletLandscape{
+        @if $fullHeight_index_act_BTL or $fullHeight_sections_act_ATL == "on"{
+            height: $header_height_ATL;
+        }
+    }
+    
     @include afterTabletLandscape{
+        @if $fullHeight_index_act_ATL or $fullHeight_sections_act_ATL == "on"{
+            height: $header_height_ATL;
+        }
+        
         @if $header_fixed_act_ATL == "on"{
             position: fixed;
             top: 0;
             right: 0;
             left: 0;
-            height: $header_height_ATL;
-        }
-        
-        @if $index_fullHeight_act == "on"{
             height: $header_height_ATL;
         }
         
@@ -259,7 +291,11 @@
         }
     }
     
-    @include afterDesktop{        
+    @include afterDesktop{ 
+        @if $fullHeight_index_act_AD or $fullHeight_sections_act_AD == "on"{
+            height: $header_height_AD;
+        }   
+        
         .logoH{            
             @if $logo_bg_beforeImg == "on"{            
                 &,
