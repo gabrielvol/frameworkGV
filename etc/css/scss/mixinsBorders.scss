@@ -5,29 +5,29 @@
 //A,T,R,B,L = all,top,right,bottom,left
 //H,V,X = horizontal,vertical,user defined values
 
-@mixin borderStyle($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border: $borderStyleMX_bcWidth $borderStyleMX_bcStyle $borderStyleMX_bdColour}
-@mixin borderStyleT($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-top: $borderStyleMX_bcWidth $borderStyleMX_bcStyle $borderStyleMX_bdColour}
-@mixin borderStyleR($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-right: $borderStyleMX_bcWidth $borderStyleMX_bcStyle $borderStyleMX_bdColour}
-@mixin borderStyleB($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-bottom: $borderStyleMX_bcWidth $borderStyleMX_bcStyle $borderStyleMX_bdColour}
-@mixin borderStyleL($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-left: $borderStyleMX_bcWidth $borderStyleMX_bcStyle $borderStyleMX_bdColour}
-@mixin borderStyleH($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-width: 0 $borderStyleMX_bcWidth;
-    border-style: $borderStyleMX_bcStyle;
+@mixin borderStyle($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border: $borderStyleMX_bdWidth $borderStyleMX_bdStyle $borderStyleMX_bdColour}
+@mixin borderStyleT($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-top: $borderStyleMX_bdWidth $borderStyleMX_bdStyle $borderStyleMX_bdColour}
+@mixin borderStyleR($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-right: $borderStyleMX_bdWidth $borderStyleMX_bdStyle $borderStyleMX_bdColour}
+@mixin borderStyleB($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-bottom: $borderStyleMX_bdWidth $borderStyleMX_bdStyle $borderStyleMX_bdColour}
+@mixin borderStyleL($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-left: $borderStyleMX_bdWidth $borderStyleMX_bdStyle $borderStyleMX_bdColour}
+@mixin borderStyleH($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-width: 0 $borderStyleMX_bdWidth;
+    border-style: $borderStyleMX_bdStyle;
     border-color: $borderStyleMX_bdColour;
 }
-@mixin borderStyleV($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-width: $borderStyleMX_bcWidth 0;
-    border-style: $borderStyleMX_bcStyle;
+@mixin borderStyleV($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-width: $borderStyleMX_bdWidth 0;
+    border-style: $borderStyleMX_bdStyle;
     border-color: $borderStyleMX_bdColour;
 }
-@mixin borderStyleX($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bcWidth: 1px, $borderStyleMX_bcStyle: solid){
-    border-width: $borderStyleMX_bcWidth;
-    border-style: $borderStyleMX_bcStyle;
+@mixin borderStyleX($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
+    border-width: $borderStyleMX_bdWidth;
+    border-style: $borderStyleMX_bdStyle;
     border-color: $borderStyleMX_bdColour;
 }
 
@@ -68,24 +68,24 @@
    Border Separation Mixins | Etc [mixinsBorders.scss]
    ========================================================================== */
     //Border separation with equal padding and margin
-@mixin PBMsT($PBMsMX_separation: 10px, $PBMsMX_bcWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bcStyle: solid){
+@mixin PBMsT($PBMsMX_separation: 10px, $PBMsMX_bdWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bdStyle: solid){
     padding-top: $PBMsMX_separation;
-    @include bcStyleT($PBMsMX_bcWidth, $PBMsMX_bcStyle, $PBMsMX_bdColour);
+    @include bdStyleT($PBMsMX_bdWidth, $PBMsMX_bdStyle, $PBMsMX_bdColour);
     margin-top: $PBMsMX_separation;
 }
-@mixin PBMsR($PBMsMX_separation: 10px, $PBMsMX_bcWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bcStyle: solid){
+@mixin PBMsR($PBMsMX_separation: 10px, $PBMsMX_bdWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bdStyle: solid){
     padding-right: $PBMsMX_separation;
-    @include bcStyleR($PBMsMX_bcWidth, $PBMsMX_bcStyle, $PBMsMX_bdColour);
+    @include bdStyleR($PBMsMX_bdWidth, $PBMsMX_bdStyle, $PBMsMX_bdColour);
     margin-right: $PBMsMX_separation;
 }
-@mixin PBMsB($PBMsMX_separation: 10px, $PBMsMX_bcWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bcStyle: solid){
+@mixin PBMsB($PBMsMX_separation: 10px, $PBMsMX_bdWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bdStyle: solid){
     padding-bottom: $PBMsMX_separation;
-    @include bcStyleB($PBMsMX_bcWidth, $PBMsMX_bcStyle, $PBMsMX_bdColour);
+    @include bdStyleB($PBMsMX_bdWidth, $PBMsMX_bdStyle, $PBMsMX_bdColour);
     margin-bottom: $PBMsMX_separation;
 }
-@mixin PBMsL($PBMsMX_separation: 10px, $PBMsMX_bcWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bcStyle: solid){
+@mixin PBMsL($PBMsMX_separation: 10px, $PBMsMX_bdWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bdStyle: solid){
     padding-left: $PBMsMX_separation;
-    @include bcStyleL($PBMsMX_bcWidth, $PBMsMX_bcStyle, $PBMsMX_bdColour);
+    @include bdStyleL($PBMsMX_bdWidth, $PBMsMX_bdStyle, $PBMsMX_bdColour);
     margin-left: $PBMsMX_separation;
 }
 

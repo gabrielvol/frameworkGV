@@ -77,7 +77,7 @@
 @import "settingsText";
 @import "../scss/classesText";
 @import "classesText";
-@import "stylesQuotes";
+//@import "stylesQuotes";
 
 @import "includesBackgrounds";
 @import "classesBackgrounds";
@@ -90,13 +90,13 @@
 
 @import "../scss/settingsContainer";
 
-@import "../scss/settingsPrint";
+//@import "../scss/settingsPrint";
 //@import "stylesPrint";
 
-@import "stylesCopyright";
+//@import "stylesCopyright";
 @import "stylesGlobal";
 //@import "stylesBreadcrumbs";
-@import "stylesError";
+//@import "stylesError";
 //@import "stylesMedia";
 
 @import "settingsLists";
@@ -104,6 +104,7 @@
 //@import "../scss/settingsForms";
 //@import "stylesForms";
 //@import "stylesGracias";
+
 //@import "../scss/resetFormsNiceIt";
 //@import "stylesFormsNiceIt";
 //@import "stylesFormsSearch";
@@ -132,7 +133,7 @@
 //@import "stylesConstruccion";
 @import "stylesIndex";
 //@import "styles Section";
-//@import "stylesContacto";
+@import "stylesContacto";
 
 //Post
 //@import "../scss/settingsLightbox";

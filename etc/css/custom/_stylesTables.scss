@@ -72,10 +72,10 @@ $table_width_BT: 40%;
     
     .tableRounded{
         tr{
-            @include borderStyleB($bdColour_main_table, $borderWidthValue: 2px);
+            @include borderStyleB($bdColour_main_table, 2px);
             
             td{
-                @include borderStyleB($bdColour_secondary_table, $borderStyleValue: dotted);
+                @include borderStyleB($bdColour_secondary_table, 1px, dotted);
             }
             
             &:last-child{
@@ -83,7 +83,7 @@ $table_width_BT: 40%;
                     @include borderStyleB($bdColour_secondary_table!important);
                     
                     &:last-child{
-                        @include borderStyleB($bdColour_secondary_table!important, $borderWidthValue: 0);
+                        @include borderStyleB($bdColour_secondary_table!important, 0);
                     }
                 }
             }
@@ -143,14 +143,14 @@ $table_width_BT: 40%;
         
         .tableRounded{
             tr{
-                @include borderStyleB($bdColour_main_table, $borderWidthValue: 1px);
+                @include borderStyleB($bdColour_main_table, 1px);
                 
                 td{
-                    @include borderStyleB($bdColour_secondary_table, $borderWidthValue: 0);
+                    @include borderStyleB($bdColour_secondary_table, 0);
                 }
                 
                 &:last-child td{
-                    @include borderStyleB($bdColour_secondary_table!important, $borderWidthValue: 0);
+                    @include borderStyleB($bdColour_secondary_table!important, 0);
                 }
             }
         }

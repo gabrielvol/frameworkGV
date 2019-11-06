@@ -39,7 +39,7 @@
             font-size: 1rem;
             
             &:first-child{
-                @include borderStyleB($bdCyan, 2px);
+                @include borderStyleB($bdColour_main_global, 2px);
                 @include equalHeightAndLineHeight(35px);
                 margin-bottom: 10px;
                 color: $greyD;
