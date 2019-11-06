@@ -32,25 +32,3 @@ gulp.task('processCSS', ['compileSass'], function() {
 });
 
 gulp.task('default', ['serve']);
-
-/* =============================================================================
-   Framework Sass
-   ========================================================================== */
-    // Compile sass into CSS
-gulp.task('compileSass_FW', function () {
-    return gulp.src('./framework/css/scss/styles.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./framework/css/compilation'));
-});
-
-    // CSSnano / PostCSS / Autoprefixer
-gulp.task('processCSS_FW', ['compileSass_FW'], function() {
-    gulp.src("./framework/css/compilation/styles.css")
-        .pipe(cssnano([,
-            postcss(),
-            autoprefixer({browsers: ['last 3 versions']})
-        ]))
-        .pipe(gulp.dest("./framework/css"));
-});
-
-gulp.task('_framework', ['processCSS_FW']);
