@@ -1,7 +1,7 @@
 /* =============================================================================
    Global Styles | Custom [stylesGlobal.scss]
    ========================================================================== */
-.callToAction{    
+.callToAction{
     // Si lleva .hoverGrow hay que comentar transition
     //@include transition(1s);
     transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;    
@@ -70,22 +70,46 @@
    Main Gobal Styles | Custom
    ========================================================================== */
 #main{
+    section{
+        @if $fullHeight_sections_act_ALL == "on"{
+            height: 100vh;
+        }
+    }
+    
     @include mobileOnly{
         @if $header_fixed_act_MO == "on"{
             padding-top: $header_height_PT_MO;
-        }    
+        }  
+        
+        section{
+            @if $fullHeight_sections_act_MO == "on"{
+                height: 100vh;
+            }
+        } 
     }
     
     @include afterMobileLandscape{
         @if $header_fixed_act_AML == "on"{
             padding-top: $header_height_PT_AML;
-        }        
+        }    
+        
+        section{
+            @if $fullHeight_sections_act_AML == "on"{
+                height: 100vh;
+            }
+        }     
     }
     
     @include mobileLandscapeOnly{
         @if $header_fixed_act_MLO == "on"{
             padding-top: $header_height_PT_MLO;
-        }        
+        }    
+        
+        section{
+            @if $fullHeight_sections_act_MLO == "on"{
+                height: 100vh;
+            }
+        }     
     }
     
     @include beforeTablet{
@@ -95,6 +119,12 @@
         @if $header_fixed_act_BT == "on"{
             padding-top: $header_height_PT_BT;
         }
+        
+        section{
+            @if $fullHeight_sections_act_BT == "on"{
+                height: 100vh;
+            }
+        } 
     }
     
     @include afterTablet{
@@ -105,11 +135,63 @@
         @if $nav_topper_act == "on"{
             min-height: 700px;        
         }
+        
+        section{
+            @if $fullHeight_sections_act_AT == "on"{
+                height: 100vh;
+            }
+        } 
+    }
+    
+    @include tabletOnly{
+        section{
+            @if $fullHeight_sections_act_TO == "on"{
+                height: 100vh;
+            }
+        } 
+    }
+    
+    @include beforeTabletLandscape{
+        section{
+            @if $fullHeight_sections_act_BTL == "on"{
+                height: 100vh;
+            }
+        } 
     }
     
     @include afterTabletLandscape{
         @if $header_fixed_act_ATL == "on"{
             padding-top: $header_height_PT_ATL;
+        }
+        
+        section{
+            @if $fullHeight_sections_act_ATL == "on"{
+                height: 100vh;
+            }
+        } 
+    }
+
+    @include tabletLandscapeOnly{
+        section{
+            @if $fullHeight_sections_act_TLO == "on"{
+                height: 100vh;
+            }
+        }
+    }
+
+    @include beforeDesktop{
+        section{
+            @if $fullHeight_sections_act_BD == "on"{
+                height: 100vh;
+            }
+        }
+    }
+
+    @include afterDesktop{
+        section{
+            @if $fullHeight_sections_act_AD == "on"{
+                height: 100vh;
+            }
         }
     }
 }
