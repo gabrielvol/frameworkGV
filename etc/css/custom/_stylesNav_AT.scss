@@ -17,7 +17,7 @@
         }
         
         .mainMenu{
-            @if $nav_horizontalCenter_act  or $nav_horizontal_act == "on"{
+            @if $nav_horizontalCenter_act == "on" or $nav_horizontal_act == "on"{
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;

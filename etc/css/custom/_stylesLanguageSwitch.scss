@@ -1,10 +1,10 @@
 /* =============================================================================
    Language Switch Styles | Custom [stylesLanguageSwtich.scss]
    ========================================================================== */
-$anguage_flag_width_BT: 38px;
+$language_flag_width_BT: 38px;
 $language_flag_height_BT: 25px;
 
-$language_flag_width_AT: $anguage_flag_width_BT;
+$language_flag_width_AT: $language_flag_width_BT;
 $language_flag_height_AT: $language_flag_height_BT;
 
 /*
@@ -36,7 +36,7 @@ $language_flag_height_AT: 32px;
         li{
             a,
             img{
-                width: $anguage_flag_width_BT;
+                width: $language_flag_width_BT;
                 height: $language_flag_height_BT;
             }
 
@@ -50,7 +50,7 @@ $language_flag_height_AT: 32px;
                 }
                 
                 img{
-                    @include centerAbsolute($anguage_flag_width_BT, $language_flag_height_BT);
+                    @include centerAbsolute($language_flag_width_BT, $language_flag_height_BT);
                 }
             }
         }
