@@ -18,7 +18,7 @@
                     padding: $zero;
                     text-indent: -9999px;
                     
-            } @else { 
+            } @else {
                     width: 90px;
                     height: $navDrawer_hamburger_height;
                     background-position: 10px center;
@@ -60,7 +60,7 @@
                     background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level0}');
                 }   
 
-                .backMenu{    
+                .backMenu{
                     @include borderStyleB(2px, $navBdColour_backMenu);
 
                     & + .backMenu{
@@ -71,7 +71,7 @@
                 } 
             }
         
-            @if $nav_hasSub_level1_act == "on"{            
+            @if $nav_hasSub_level1_act == "on"{   
                 .subMenuLevel1{
                     > li{
                         & + li{
@@ -81,7 +81,7 @@
                 }
             }
             
-            @if $nav_hasSub_level2_act == "on"{           
+            @if $nav_hasSub_level2_act == "on"{  
                 .subMenuLevel2{
                     > li{
                         & + li{
@@ -91,7 +91,7 @@
                 }
             }
             
-            @if $nav_hasSub_level3_act == "on"{          
+            @if $nav_hasSub_level3_act == "on"{ 
                 .subMenuLevel3{
                     > li{
                         & + li{

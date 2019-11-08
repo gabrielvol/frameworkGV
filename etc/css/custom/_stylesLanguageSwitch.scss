@@ -1,18 +1,7 @@
 /* =============================================================================
    Language Switch Styles | Custom [stylesLanguageSwtich.scss]
    ========================================================================== */
-$language_flag_width_BT: 38px;
-$language_flag_height_BT: 25px;
-
-$language_flag_width_AT: $language_flag_width_BT;
-$language_flag_height_AT: $language_flag_height_BT;
-
-/*
-$language_flag_width_AT: 48px;
-$language_flag_height_AT: 32px;
-*/
-
-.lang{
+.language_ul{
     z-index: $zIndex_language;
     
     a{
@@ -31,7 +20,7 @@ $language_flag_height_AT: 32px;
     @include beforeTablet{
         @include posTL(15px, 20px);
         position: absolute;
-        height: calc(#{$language_flag_height_BT} + 2px);
+        height: $language_ul_height_BT;
             
         li{
             a,
@@ -57,9 +46,42 @@ $language_flag_height_AT: 32px;
         
         @if $navDrawer_act == "on"{   
             &.clicked{
-                @include posTRBL(auto, auto, 20px, 30px);
+                top: auto;
+                right: auto;
                 position: fixed;
                 z-index: $zIndex_language_clicked;
+                
+                @if $language_flag_clicked_bottom_act == "on"{
+                    left: 0;
+                    bottom: 0;
+                    box-sizing: border-box;
+                    width: calc(#{$navDrawer_width_final} - 5px);
+                    max-width: $navDrawer_width_max;
+                    height: calc(#{$language_ul_height_clicked} + #{$language_ul_height_clicked_PT} + #{$language_ul_height_clicked_PB});
+                    padding-top: $language_ul_height_clicked_PT;
+                    padding-bottom: $language_ul_height_clicked_PB;
+                    padding-left: 10px;
+                    background-color: $language_ul_bgColour;
+                    
+                } @else{
+                    left: 30px;         
+                    bottom: $language_ul_bottomValue; 
+                    height: $language_ul_height_clicked;          
+                }
+                
+                li{
+                    width: 50%;
+                    
+                    a{
+                        @include squareSize($language_flag_height_clicked);
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    
+                    & + li{
+                        margin-left: 25px;
+                    }
+                }
             }
         }
     }
@@ -67,7 +89,7 @@ $language_flag_height_AT: 32px;
     @include afterTablet{
         @include posTR(10px, 20px);
         position: absolute;
-        height: calc(#{$language_flag_height_AT} + 2px);
+        height: $language_ul_height_AT;
 
         li{
             a, img{

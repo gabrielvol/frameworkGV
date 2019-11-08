@@ -7,13 +7,13 @@ $(document).ready(function () {
         $(this).closest('#nav').find('.mainMenu').addClass('open');
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
-            $(this).closest('#header').find('.logoH, .lang').addClass('clicked');
+            $(this).closest('#header').find('.logoH, .language_ul').addClass('clicked');
             $(this).closest('#nav').find('.navClose').addClass('clicked');
         });
     });
 
     $('.liNoLink').click(function () {
-        $(this).closest('#header').find('.logoH, .socHeader, .lang').removeClass('clicked');  
+        $(this).closest('#header').find('.logoH, .socHeader, .language_ul').removeClass('clicked');  
         
         $(this).closest('#nav').find('.navClose, .navOpen').removeClass('clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
@@ -33,7 +33,7 @@ $(document).ready(function () {
     $('.navClose').click(function () {
         $(this).removeClass('clicked');
         
-        $(this).closest('#header').find('.logoH, .social, .lang').removeClass('clicked');
+        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('clicked');
         
         $(this).closest('#nav').find('.navOpen').removeClass('clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
@@ -53,7 +53,7 @@ $(document).ready(function () {
     $('.modal_nav').click(function () {
         $(this).hide('fast');
         
-        $(this).closest('#header').find('.logoH, .social, .lang').removeClass('clicked');
+        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('clicked');
         $(this).closest('#nav').find('.navClose').removeClass('clicked');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
         

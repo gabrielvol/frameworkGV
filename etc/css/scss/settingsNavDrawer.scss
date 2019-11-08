@@ -4,7 +4,7 @@
 @if $navDrawer_act == "on"{
     @include navBT{
         .navMain{
-            .navOpen{   
+            .navOpen{
                 background-color: $navBgColour_hamburger;
                 
                 &.clicked{
@@ -13,7 +13,7 @@
                 } 
             }
 
-            .navClose{                
+            .navClose{
                 &.clicked{
                     display: block;
                 } 
@@ -24,14 +24,19 @@
                 position: fixed;
                 z-index: $zIndex_navDrawer_ul;
                 left: calc(-1 * #{$navDrawer_width});
-                width: calc(#{$navDrawer_width} - 5px);
-                max-width: $navDrawer_widthMax;
+                width: $navDrawer_width_final;
+                max-width: $navDrawer_width_max;
                 background-color: $navBgColour_BT;
                 padding-top: calc(#{$logo_clicked_height_FH} + 5px);
                 padding-right: 5px;
                 padding-left: 5px;
-                padding-bottom: 30px;
                 overflow: scroll; 
+                
+                @if $language_flag_clicked_bottom_act == "on"{
+                    padding-bottom: calc(#{$language_ul_height_clicked} + #{$language_ul_bottomValue} + 10px);
+                } @else {
+                    padding-bottom: 30px;     
+                }
 
                 &,
                 .subMenu{
@@ -91,7 +96,7 @@
                     top: 0;
                     right: $navDrawer_width;
                     width: calc(100%);
-                    max-width: $navDrawer_widthMax;
+                    max-width: $navDrawer_width_max;
                     
                     a,
                     .topLevelItem{
@@ -119,7 +124,7 @@
             }
         
             @if $nav_hasSub_level1_act == "on"{
-                .hasSubLevel1{ 
+                .hasSubLevel1{
                     a,
                     .TLI_level1{
                         color: $navFontColour_TLI_level1_BT;
@@ -129,7 +134,7 @@
                         }
                     }
                     
-                    &.current{                      
+                    &.current{  
                         > a,
                         .TLI_level1{
                             background-image: url('/cuatro/img/#{$navArrows_itemCurrent_level0}');
@@ -151,7 +156,7 @@
                         }
                     }
 
-                    > .current{  
+                    > .current{
                         background-color: $navBgColour_itemCurrent_level1_BT; 
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level1}');
                         
@@ -163,7 +168,7 @@
             }
         
             @if $nav_hasSub_level2_act == "on"{
-                .hasSubLevel2{ 
+                .hasSubLevel2{
                     a,
                     .TLI_level2{
                         color: $navFontColour_itemLevel2_BT;
@@ -173,7 +178,7 @@
                         }
                     }
                     
-                    &.current{                        
+                    &.current{    
                         a,
                         .TLI_level1{
                             color: $navFontColour_TLICurrent_level2_BT;
@@ -193,7 +198,7 @@
                         }
                     }
 
-                    > .current{      
+                    > .current{
                         background-color: $navBgColour_itemCurrent_level2_BT; 
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level2}'); 
                         
@@ -204,8 +209,8 @@
                 }
             }
         
-            @if $nav_hasSub_level3_act == "on"{  
-                .hasSubLevel3{  
+            @if $nav_hasSub_level3_act == "on"{
+                .hasSubLevel3{
                     a,  
                     .TLI_level3{
                         color: $navFontColour_itemLevel2_BT;
@@ -215,7 +220,7 @@
                         }
                     }
                     
-                    &.current{                        
+                    &.current{    
                         a,
                         .TLI_level1{
                             color: $navFontColour_TLICurrent_level3_BT;
@@ -235,7 +240,7 @@
                         }
                     }
 
-                    > .current{      
+                    > .current{
                         background-color: $navBgColour_itemCurrent_level3_BT;
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level3}'); 
                         

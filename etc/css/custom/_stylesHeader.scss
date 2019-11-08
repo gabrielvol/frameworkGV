@@ -166,7 +166,7 @@
                     top: 0;
                     left: 0;
                     width: calc(#{$navDrawer_width} - 5px);
-                    max-width: $navDrawer_widthMax;
+                    max-width: $navDrawer_width_max;
                     height: $logo_clicked_height_FH;
                     background-color: $navBgColour_BT;
                     padding-top: $logo_clicked_height_PT;

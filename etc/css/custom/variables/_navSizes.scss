@@ -9,7 +9,8 @@ $navList_ul_width_BT:               200px;
 
     // Nav Drawer
 $navDrawer_width:                   70vw;
-$navDrawer_widthMax:                300px;
+$navDrawer_width_max:               300px;
+$navDrawer_width_final:             calc(#{$navDrawer_width} - 5px);
 $navDrawer_hamburger_height:        40px;
 
     // Nav Accordion
