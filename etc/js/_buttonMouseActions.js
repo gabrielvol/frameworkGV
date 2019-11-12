@@ -18,19 +18,11 @@ $(document).ready(function () {
         $(this).closest("li").find(".class").slideToggle("slow", "linear");
     });
         
-    // toggl attribute
+    // toggle attribute
     var $nosAnchor = $('.nosAnchor');
     if ($nosAnchor.attr('aria-current')) {
         $nosAnchor.removeAttr('aria-current');
     } else {
         $nosAnchor.attr('aria-current', 'page');
     }
-    
-    /* mouse actions */
-    $("#lavida .a").mouseover(function () {
-        $("#lavida .perrito").animate({bottom: '0'}, 1000, 'swing');
-    });
-    $("#lavida .a").mouseleave(function () {
-        $("#lavida .perrito").animate({bottom: '-54px'}, 1000, 'swing');
-    });
 });

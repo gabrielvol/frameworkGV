@@ -1,13 +1,6 @@
 <?php
-    $test = 1;
-    $int = 1;
-    $navSelected= 0;
-    $title = "LightBox | GV";
-    $mdesc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/head.inc.php');
 ?>
-<link href="/framework/css/main.css" rel="stylesheet">
-<link href="/framework/css/lightbox.css" rel="stylesheet">
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
@@ -24,6 +17,7 @@
             </li>
             <?php
                 $files = scandir($_SERVER['DOCUMENT_ROOT'] . '/img/imageFolder/');
+                
                 foreach($files as $image) {
                     if($image !== '.' && $image !== '..' && $image !== '01.jpg'){
                         echo '<li>
