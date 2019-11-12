@@ -1,74 +1,8 @@
 /* =============================================================================
    Global Styles | Custom [stylesGlobal.scss]
    ========================================================================== */
-.callToAction{
-    // Si lleva .hoverGrow hay que comentar transition
-    //@include transition(1s);
-    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;    
-    
-    @include borderStyle($bdGrey, 2px);
-    display: block;
-    box-sizing: border-box;
-    background-color: $bgGrey;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-family: Arial;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: center;
-    
-    &, &:focus, &:hover, &:visited, &:active{
-    }
-    
-    &, &:focus, &:hover{
-        text-decoration: $none;
-    }
-    
-    &, &:visited, &:active{
-        color: $white;
-    }
-    
-    &:focus, &:hover{
-        background-color: $bgGreyL;
-        border-color: $bdGreyXD;
-        color: $greyD;
-    }
-    
-    /*
-    &.CTAwhite{
-        @include borderStyle($bdWhite);
-    
-        &, &:visited, &:active{
-            color: $white;
-        }
 
-        &:focus, &:hover{
-            color: $greyXL;
-            box-shadow: 0 0 3px $greyL;
-            text-shadow: 0 0 3px $greyL;
-        }
-    }
-    */
-    
-    @include mobileOnly{
-        width: $hundred;
-    }
-    
-    @include beforeTablet{
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        line-height: 1.3;
-    }
-    
-    @include afterTablet{
-        @include equalHeightAndLineHeight(50px);        
-    }
-}
-
-/* =============================================================================
-   Main Gobal Styles | Custom
-   ========================================================================== */
+/* // Main Gobal Styles ----------------------------------------------------- */
 #main{
     section{
         @if $fullHeight_sections_act_ALL == "on"{
@@ -197,10 +131,8 @@
 }
  
 /* =============================================================================
-   Internas Global Styles | Custom
+   Internas Global Styles | Custom [stylesGlobal.scss]
    ========================================================================== */
 .page_int{}
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-   Secondary Separator
-   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* // Secondary Separator --------------------------------------------------- */
