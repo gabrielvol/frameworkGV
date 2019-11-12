@@ -45,13 +45,12 @@ $backgroundColours_hover_map:(
 
 //$bgBlue_hover: map-get($backgroundColours_hover_map, bgBlue);
 
-/* =============================================================================
-   Modal Opacity Variables | Custom [coloursBackgrounds.scss]
-   ========================================================================== */
-    //El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
+
+/* // Modal Opacity Variables  ---------------------------------------------- */
+   // El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
 $modal_opacity_global:      85;
 $modal_bgColour_global:     #000;
 
-    //Responsive nav
+   // Responsive nav
 $modal_bgColour_nav: $modal_bgColour_global;
 $modal_opacity_nav:  80;

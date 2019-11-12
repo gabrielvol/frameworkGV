@@ -3,7 +3,7 @@
    ========================================================================== */
 $grid-gutter-width:                  30px;
              
-//Container Sizes             
+// Container Sizes             
 $container_value_MO:                 300px; /* Mobile / Container: 300px */
 $container_value_ML:                 85%;
 $container_value_T:                  720px; /* iPad */
@@ -11,7 +11,7 @@ $container_value_TL:                 900px; /* iPad Landscape */
 $container_value_D:                  $container_value_TL; /* Desktop */
 $container_value_DL:                 $container_value_TL; /* Big Screens */
 
-//Container Center Negative Values
+// Container Center Negative Values
 $container_value_half_MO:            calc(#{$container_value_MO} / 2); /* Mobile Half */
 $container_value_half_ML:            calc(#{$container_value_ML} / 2); /* Mobile Landscape Half */
 $container_value_half_T:             calc(#{$container_value_T} / 2); /* Tablet Half*/

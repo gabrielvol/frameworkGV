@@ -1,8 +1,8 @@
 /* =============================================================================
    Forms Variables | Custom [formsSizes.scss]
    ========================================================================== */
-//Responsive Values
-    // Form
+
+/* // Form ------------------------------------------------------------------ */
 $form_width_MO:       270px!important;
 $form_width_A500:     400px!important;
 $form_width_600Only:  520px!important;
@@ -10,8 +10,9 @@ $form_width_AT:       $form_width_600Only;
 $form_width_TO:       $form_width_AT;
 $form_width_ATL:      520px; //No debe llevar !important
 $form_width_AD:       $form_width_ATL; //No debe llevar !important
-    
-    // Labels
+
+
+/* // Labels ---------------------------------------------------------------- */
 $formLabel_width_MO:      $form_width_MO;
 $formLabel_width_BT:      $hundred;
 $formLabel_width_TO:      $form_width_TO;
@@ -23,13 +24,14 @@ $formLabel_height_TO:     $formLabel_height_BT;
 $formLabel_height_ATL:    25px;
 $formLabel_height_AD:     $formLabel_height_ATL; 
 
-    // Sug
+   // Sug
 $formLabel_sug_height_BT:  20px;
 $formLabel_sug_height_TO:  $formLabel_sug_height_BT;
 $formLabel_sug_height_ATL: $formLabel_sug_height_TO;
 $formLabel_sug_height_AD:  $formLabel_sug_height_ATL;
 
-    // Inputs
+
+/* // Inputs ---------------------------------------------------------------- */
 $formInput_width_MO:      $formLabel_width_MO;
 $formInput_width_BT:      $formLabel_width_BT;
 $formInput_width_TO:      $formLabel_width_TO;
@@ -41,11 +43,12 @@ $formInput_height_TO:     $formInput_height_BT;
 $formInput_height_ATL:    35px; //No debe llevar !important
 $formInput_height_AD:     $formInput_height_ATL; //No debe llevar !important
 
-    // Radio Inputs
+   // Radio Inputs
 $formInput_radio_height_BT:  35px;
 $formInput_radio_height_TO:  35px;
-    
-    // Submit
+
+
+/* // Submit ---------------------------------------------------------------- */
 $formSubmit_width_MO:     90%;
 $formSubmit_width_MLO:    60%!important;
 $formSubmit_width_TO:     50%!important;
@@ -64,7 +67,8 @@ $formSubmit_lineHeight_ATL:  $formSubmit_height_ATL;
 $formSubmit_height_AD:       $formSubmit_height_ATL;
 $formSubmit_lineHeight_AD:   $formSubmit_lineHeight_ATL;
 
-    //Search Form
+
+/* // Search ---------------------------------------------------------------- */
 $formInput_search_width_BT:         270px;
 $formInput_search_width_AT:         $formInput_search_width_BT;
 

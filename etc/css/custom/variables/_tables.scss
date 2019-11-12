@@ -5,7 +5,8 @@ $table_width_BT:  $hundred;
 $table_width_AT:  700px;
 $table_width_ATL: 970px;
 
-//Custom Sizes
+    
+/* // Custom Sizes ---------------------------------------------------------- */
 $table_sizes_map_BT:(
     //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
@@ -29,5 +30,6 @@ $table_sizes_map_ATL:(
     tableWidthSmall: 760px
 );
 
-//Rounded Table
+    
+/* // Rounded Table --------------------------------------------------------- */
 $helpers_border_radius_table: $helpers_border_radius_global;

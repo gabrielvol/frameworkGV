@@ -4,12 +4,14 @@
 ///**Forms:** 
     ///Aquí se declaran las variables de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
     ///con sus `:hover`.
+    
      
-    // Labels
+/* // Labels ---------------------------------------------------------------- */
 $formLabel_fontColour:           $fontColour_main_global;
 $formLabel_fontColour_hover:     darken($formLabel_fontColour, 15%);
- 
-    // Inputs 
+    
+     
+/* // Inputs ---------------------------------------------------------------- */
 $formInput_fontColour:           $fontColour_main_global;
 $formInput_fontColour_hover:     $formInput_fontColour;
  
@@ -23,7 +25,8 @@ $formInput_bgColour_hover:       $formInput_bgColour;
     
 $formInput_shadowInset:          inset 0 0 4px $greyD;
  
-    // Submit 
+     
+/* // Submit ---------------------------------------------------------------- */
 $formSubmit_fontColour:          $black;
 $formSubmit_fontColour_hover:    $formSubmit_fontColour;
   
@@ -32,8 +35,9 @@ $formSubmit_bdColour_hover:      $formSubmit_bdColour;
   
 $formSubmit_bgColour:            $bgColour_main_global;
 $formSubmit_bgColour_hover:      $formSubmit_bgColour;
-
-    // Validation
+    
+     
+/* // Validation ------------------------------------------------------------ */
 $formInput_msgError_fontColour:  $errorColour;
  
 $formStatus_msgError_bgColour:   $bgErrorColour;

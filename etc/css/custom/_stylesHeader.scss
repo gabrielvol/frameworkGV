@@ -21,7 +21,7 @@
         img{}
     }
     
-    @if $logo_bg_beforeImg == "on"{
+    @if $logo_bg_beforeImg_act == "on"{
         .logoBefore{
             position: relative;        
             background-image: url('/nuevo/img/logo_bg.png');
@@ -120,7 +120,7 @@
             box-shadow: 0 0 10px 0 #ccc;
         }   
             
-        @if $logo_bg_beforeImg == "on"{
+        @if $logo_bg_beforeImg_act == "on"{
             .logoH{
                 @include squareSize($logo_width_BT);
             }
@@ -232,7 +232,7 @@
                 padding-left: 20px;             
             }
             
-            @if $logo_bg_beforeImg == "on"{            
+            @if $logo_bg_beforeImg_act == "on"{            
                 &,
                 a{
                     @include squareSize($logo_width_AT);
@@ -279,7 +279,7 @@
         }
         
         .logoH{            
-            @if $logo_bg_beforeImg == "on"{            
+            @if $logo_bg_beforeImg_act == "on"{            
                 &,
                 a{
                     @include squareSize($logo_width_ATL);
@@ -297,7 +297,7 @@
         }   
         
         .logoH{            
-            @if $logo_bg_beforeImg == "on"{            
+            @if $logo_bg_beforeImg_act == "on"{            
                 &,
                 a{
                     @include squareSize($logo_width_AD);

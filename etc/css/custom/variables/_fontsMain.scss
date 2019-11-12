@@ -9,7 +9,8 @@ $fontFamilies_map:(
     //timesNewRoman: 'Times New Roman',
 );
 
-// Chequear Arial, Roboto o Times como Main Font Family
+
+/* // Chequear Arial, Roboto o Times como Main Font Family ------------------ */
 $arial:     map-get($fontFamilies_map, arial);
 $roboto:    map-get($fontFamilies_map, roboto);
 //$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
@@ -20,11 +21,12 @@ $roboto:    map-get($fontFamilies_map, roboto);
 //$openSansB:   map-get($fontFamilies_map_OpenSans, openSansB);
 //$openSansBI:  map-get($fontFamilies_map_OpenSans, openSansBI);
 
-    //Creamos la variable de la fuente principal del sitio
+   // Creamos la variable de la fuente principal del sitio
 $fontFamily_main_global:    $arial;
 $fontFamily_bold_global:    $fontFamily_main_global;
 
-//Main font Stack    
+
+/* // Main font Stack ------------------------------------------------------- */
 $fontStack_map:(
     $fontFamily_main_global,
     //$arial, // Chequear Arial, Roboto o Times como Main Font Family
@@ -52,7 +54,8 @@ $headings_marginTRBL_sibling:  1.2em 0 0;
 $text_marginTRBL_global:       0;
 $text_marginTRBL_sibling:      0.8em 0 0;
 
-//Heading Sizes
+
+/* // Heading Sizes --------------------------------------------------------- */
 $fontSize_map_mobile:(
     $h1_list: 1.6rem,
     $h2_list: 1.5rem,
@@ -78,7 +81,8 @@ $fontSize_map_desktop:(
     $h6_list: 1.4rem
 );
 
-// Useful Text Format
+
+/* // Useful Text Format ---------------------------------------------------- */
 $fontSize_reset:     1rem;
 $fontSize_reset_em:   1em;
 $lineHeight_reset:   1em;
