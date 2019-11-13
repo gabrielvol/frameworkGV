@@ -5,27 +5,37 @@
     <!--Normal-->
     <?php
         if($page_index == 1){ echo '<h1 class="logoH">'; }
-        if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }
+        if($page_index == 1 && $logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }
     ?>
-    <a href="/nuevo/" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } else { echo ''; } ?>">
-        <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>."  class="displayBlock">
+    <a href="/nuevo/" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } ?>">   
+        <?php if($page_int == 1 && $logoImgBgBefore == 1) { echo '<div class="logoBefore">'; } ?>
+            <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>."  class="displayBlock">   
+        <?php if($page_int == 1 && $logoImgBgBefore == 1) { echo '</div>'; } ?>
     </a>
     <?php
         if($page_index == 1){ echo '</h1>'; }
-        if($logoImgBgBefore == 1) { echo '</div>'; }
+        if($page_index == 1 && $logoImgBgBefore == 1) { echo '</div>'; }
     ?>    
     
     <!--Con Gettext-->
-    <?php if($page_index == 1){ echo '<h1 class="logoH">'; } else if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }?>
+    <?php
+        if($page_index == 1){ echo '<h1 class="logoH">'; } 
+        if($page_index == 1 &&  $logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }
+    ?>
     <a href="/nuevo/<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt';
         } else if($gettext_idioma == 'en_GB') {
             echo '?l=en';
         } else {
             echo '?l=es';
-        } ?>" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } else { echo ''; } ?>">
-        <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>." class="displayBlock">
+        } ?>" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } ?>">
+        <?php if($page_int == 1 && $logoImgBgBefore == 1) { echo '<div class="logoBefore">'; } ?>
+            <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>." class="displayBlock">
+        <?php if($page_int == 1 && $logoImgBgBefore == 1) { echo '</div>'; } ?>
     </a>
-    <?php if($page_index == 1){ echo '</h1>'; } else if($logoImgBgBefore == 1) { echo '</div>'; } ?>  
+    <?php
+        if($page_index == 1){ echo '</h1>'; }
+        if($page_index == 1 && $logoImgBgBefore == 1) { echo '</div>'; }
+    ?>  
     
     <?php include('nav.inc.php'); ?>
 </header>
