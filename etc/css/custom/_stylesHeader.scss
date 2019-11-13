@@ -2,10 +2,8 @@
    Header Styles | Custom [stylesHeader.scss]
    ========================================================================== */
 #header{
-    /*
-    position: relative;
-    z-index: $zIndex_header;
-    */
+    // position: relative;
+    // z-index: $zIndex_header;
     
     @if $fullHeight_index_act_ALL == "on" or $fullHeight_sections_act_ALL == "on"{
         height: $header_height_ALL;
@@ -46,9 +44,7 @@
         }
 
         .logoH{
-            /*
-            width: $logo_width_MO;
-            */
+            // width: $logo_width_MO;
         }
     }
     
@@ -67,9 +63,7 @@
         }
         
         .logoH{
-            /*
-            width: $logo_width_AML;
-            */
+            // width: $logo_width_AML;
         }
     }
     
@@ -88,9 +82,7 @@
         }
         
         .logoH{
-            /*
-            width: $logo_width_MLO;
-            */
+            // width: $logo_width_MLO;
         }
     }
 
