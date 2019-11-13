@@ -14,15 +14,18 @@
         margin-left: 3cm;
     }
     
-    body > *:not(main),
+    *,
+    *::before,
+    *::after{
+        background: $transparent;
+        color: $black!important; /* Black prints faster */
+        box-shadow: $none;
+        text-shadow: $none;
+    } 
+    
+    // TODO body > *:not(main),
     nav, footer{
         display: $none;
-    }
-    
-    .logoH{
-        display: block;
-        height: 3cm;
-        margin: 10px auto 20px;
     }
     
     a{
@@ -35,11 +38,23 @@
             content: "(" attr(href) ")";
             font-family: monospace;
         }
+        
+    // Don't show links that are fragment identifiers,
+    // or use the `javascript:` pseudo protocol
+        &[href^="#"]:after,
+        &[href^="javascript:"]:after {
+            content: "";
+        }
+    }
+
+    pre {
+        white-space: pre-wrap !important;
     }
     
     pre,
     blockquote {
         border: 1px solid $bdGrey;
+        page-break-inside: avoid;
     }
 
     p,
@@ -54,11 +69,34 @@
         page-break-after: avoid;
     }
     
+    
+/* // Main Styles ----------------------------------------------------------- */
+    .logoH{
+        display: block;
+        height: 3cm;
+        margin: 10px auto 20px;
+    }
+    
     .gooMap {
         width: 400px;
         height: 300px;
         background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true');
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+    }
+    
+    
+/* // Tables Styles --------------------------------------------------------- */
+    
+   // Printing Tables:
+   // http://css-discuss.incutio.com/wiki/Printing_Tables
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
     }
 }
