@@ -174,7 +174,9 @@
                     padding-bottom: $logo_clicked_height_PB;
                     margin: 0;
 
-                    a, img{
+                    .logoBefore,
+                    a,
+                    img{
                         width: auto;
                         height: 100%;
                     }
@@ -182,6 +184,10 @@
                     img{
                         margin-right: auto;
                         margin-left: auto;
+                    } 
+                    
+                    .logoBefore{
+                        background: none;
                     }
                 }
             }
