@@ -122,7 +122,8 @@
             
         @if $logo_bg_beforeImg_act == "on"{
             .logoH{
-                @include squareSize($logo_width_BT);
+                width: $logo_width_BT;
+                height: $logo_height_BT_before;
             }
         }
         
@@ -131,7 +132,7 @@
             box-shadow: 0 0 10px #ccc;
             
             .logoH{
-                height: $logo_height_BT;
+                height: $logo_height_BT_navAcc;
                 margin-right: auto;
                 margin-left: auto;
             
@@ -235,7 +236,8 @@
             @if $logo_bg_beforeImg_act == "on"{            
                 &,
                 a{
-                    @include squareSize($logo_width_AT);
+                    width: $logo_width_AT;
+                    height: $logo_height_AT_before;
                 }  
                 
                 img{
@@ -282,10 +284,11 @@
             @if $logo_bg_beforeImg_act == "on"{            
                 &,
                 a{
-                    @include squareSize($logo_width_ATL);
+                    width: $logo_width_ATL;
+                    height: $logo_height_ATL_before;
                 } 
                 
-                } @else {
+            } @else {
                 width: $logo_width_ATL;
             }
         }
@@ -296,16 +299,17 @@
             height: $header_height_AD;
         }   
         
-        .logoH{            
-            @if $logo_bg_beforeImg_act == "on"{            
+        .logoH{
+            @if $logo_bg_beforeImg_act == "on"{
                 &,
                 a{
-                    @include squareSize($logo_width_AD);
+                    width: $logo_width_AD;
+                    height: $logo_height_AD_before;
                 } 
                 
-                } @else {
+            } @else {
                 width: $logo_width_AD;
             }
-        }
+        }  
     }
 }

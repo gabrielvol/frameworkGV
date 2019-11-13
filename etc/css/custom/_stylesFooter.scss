@@ -5,9 +5,8 @@
     @if $fullHeight_index_act_ALL == "on" or $fullHeight_sections_act_ALL == "on"{
         height: $footer_height_ALL;
     }
-    
-/* -------------------------------------
-    Button Site Top                    
+
+/* // Button Site Top ------------------------------------------------------- */
     .button_siteTop{
         @include squareSize(50px);
         z-index: $zIndex_buttonSiteTop;
@@ -17,7 +16,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    */
+/* -------------------------------------------------------------------------- */
     
     .navFooter{
         ul{}
@@ -81,7 +80,8 @@
             .txt_footer{
                 width: calc(100% - #{$footer_logoFloated_width_MO});  // footerSizes.scss
             }    
-    } @else {
+            
+        } @else {
             .logoF{
                 width: $logo_width_footer_MO;
             }        
@@ -92,6 +92,10 @@
         @if $fullHeight_index_act_MLO == "on" or $fullHeight_sections_act_MLO == "on"{
             height: $footer_height_MLO;
         }
+        
+        .logoF{
+            /* width: $logo_width_footer_MO; */
+        }   
     }
     
     @include mobileLandscapeOnly{

@@ -11,7 +11,7 @@ $header_height_PT_MLO:       0; //Si no es 0 hay que declarar el alto en la vari
 
 $header_PT_BT:              20px;
 $header_PB_BT:              15px;
-$header_height_navAcc_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$logo_height_BT});
+$header_height_navAcc_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$logo_height_BT_navAcc});
 $header_height_BT:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_PT_BT
 $header_height_PT_BT:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_BT, y asignar esa misma variable a esta
 

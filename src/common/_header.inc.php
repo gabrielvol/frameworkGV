@@ -3,11 +3,17 @@
 <header id="header" class="borderBox">
     
     <!--Normal-->
-    <?php if($page_index == 1){ echo '<h1 class="logoH">'; } else if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }?>
+    <?php
+        if($page_index == 1){ echo '<h1 class="logoH">'; }
+        if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }
+    ?>
     <a href="/nuevo/" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } else { echo ''; } ?>">
         <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>."  class="displayBlock">
     </a>
-    <?php if($page_index == 1){ echo '</h1>'; } else if($logoImgBgBefore == 1) { echo '</div>'; } ?>    
+    <?php
+        if($page_index == 1){ echo '</h1>'; }
+        if($logoImgBgBefore == 1) { echo '</div>'; }
+    ?>    
     
     <!--Con Gettext-->
     <?php if($page_index == 1){ echo '<h1 class="logoH">'; } else if($logoImgBgBefore == 1) { echo '<div class="logoBefore">'; }?>
