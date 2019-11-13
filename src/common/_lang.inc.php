@@ -12,42 +12,42 @@
 <ul class="language_ul horizontal clearfix">
     <li>
         <a href="/nuevo/?l=es_AR" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_ar.svg" alt="<?php echo $gettext_switchMsg_ES; ?>.">
+            <img src="/nuevo/img/flag_ar.svg" alt="<?php echo $gettext_switchMsg_ES; ?>.">
         </a>
     </li>
     <li>
         <a href="/clientes/?l=en_US" class="displayBlock mask hoverGrowL">
-            <img src="/clientes/img/fl_US.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
+            <img src="/clientes/img/flag_US.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
         </a>
     </li>
     <li> <!-- gettext_alt -->
         <a href="/nuevo/?l=en" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
+            <img src="/nuevo/img/flag_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
         </a>
     </li>
     <li>
         <a href="/nuevo/?l=en_GB" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_gb.svg" alt="<?php echo $gettext_switchMsg_GB; ?>.">
+            <img src="/nuevo/img/flag_gb.svg" alt="<?php echo $gettext_switchMsg_GB; ?>.">
         </a>
     </li>
     <li>
         <a href="/nuevo/?l=pt_BR" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_br.svg" alt="<?php echo $gettext_switchMsg_PT; ?>.">
+            <img src="/nuevo/img/flag_br.svg" alt="<?php echo $gettext_switchMsg_PT; ?>.">
         </a>
     </li>
     <li>
         <a href="/nuevo/?l=ja_JP" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_jp.svg" alt="<?php echo $gettext_switchMsg_JP; ?>.">
+            <img src="/nuevo/img/flag_jp.svg" alt="<?php echo $gettext_switchMsg_JP; ?>.">
         </a>
     </li>
     <li>
         <a href="/nuevo/?l=de_DE" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_de.svg" alt="<?php echo $gettext_switchMsg_DE; ?>.">
+            <img src="/nuevo/img/flag_de.svg" alt="<?php echo $gettext_switchMsg_DE; ?>.">
         </a>
     </li>
     <li>
         <a href="/nuevo/?l=fr_FR" class="displayBlock mask hoverGrowL">
-            <img src="/nuevo/img/fl_fr.svg" alt="<?php echo $gettext_switchMsg_FR; ?>.">
+            <img src="/nuevo/img/flag_fr.svg" alt="<?php echo $gettext_switchMsg_FR; ?>.">
         </a>
     </li>
 </ul>
