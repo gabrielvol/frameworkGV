@@ -55,6 +55,15 @@ $bgGrad_white_textVanish_filter: progid:DXImageTransform.Microsoft.gradient( sta
     filter: $bgGrad_white_textVanish_filter;
 }
 
+// Black Text Vanish
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+29,0.82+100 */
+$bgGrad_black_textVanish: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.82) 100%);
+$bgGrad_black_textVanish_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d1000000',GradientType=0 );
+.bgGrad_black_textVanish{
+    background-image: $bgGrad_black_textVanish;
+    filter: $bgGrad_black_textVanish_filter;
+}
+
 // Black 10%
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
 $bgGrad_blackTen: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
