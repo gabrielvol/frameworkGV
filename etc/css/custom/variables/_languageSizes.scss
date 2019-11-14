@@ -30,4 +30,6 @@ $language_ul_height_clicked_PT:     15px;
 $language_ul_height_clicked_PB:     20px;
 $language_ul_height_AT:             calc(#{$language_flag_height_AT} + 2px);
 
-$language_ul_bgColour:              $bgGrey;
+$language_ul_bgColour_clicked:      $bgGrey;
+
+$language_a_bgColour:               $bgColour_main_global;
