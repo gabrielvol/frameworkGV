@@ -278,16 +278,11 @@ form{
 
         .labelName,
         .formInputErrorMsg{
-            display: block;
-        }
-
-        .formInputErrorMsg{
-            font-family: $arial;
-            font-size: 0.8rem!important;
+            box-sizing: border-box;
         }
 
         .labelName{
-            box-sizing: border-box;
+            display: block;
             padding-left: 7px;
             font-family: $formLabel_fontFamily;
             font-size: 1.1rem!important;
@@ -295,17 +290,16 @@ form{
 
         .formInputErrorMsg{
             display: none;
+            padding-top: 3px;
+            padding-left: 10px;
+            color: $formInput_msgError_fontColour;
+            font-family: $arial;
+            font-size: 0.8rem!important;
+            font-weight: 700;
+            line-height: 1.3em;
 
             &.active{
-                box-sizing: border-box;
                 display: block;
-                padding-top: 3px;
-                padding-left: 10px;
-                color: $formInput_msgError_fontColour;
-                font-family: $arial;
-                font-weight: 700;
-                font-size: 0.8rem!important;
-                line-height: 1.3em;
             }
         }
         
