@@ -138,7 +138,7 @@
             height: $footer_height_AT;
         }
         
-        @if $footer_floatedContent_act_AT == "on"{
+        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_AT == "on"{
             .logo_footer,
             .txt_footer{
                 float: left;
