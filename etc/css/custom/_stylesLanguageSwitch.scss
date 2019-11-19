@@ -1,11 +1,11 @@
 /* =============================================================================
    Language Switch Styles | Custom [stylesLanguageSwtich.scss]
    ========================================================================== */
-.language_ul{
+.language_ul{    
     z-index: $zIndex_language;
     
     a{
-        @include borderStyle($bdWhite);
+        @include borderStyle($bdWhite, $language_bd_size);
         @include transition(0.3s);
         background-color: $language_a_bgColour;
         
@@ -18,11 +18,19 @@
         }
     }
 
+    img{
+        vertical-align: initial;
+    }
+
     @include beforeTablet{
         @include posTL(15px, 20px);
         position: absolute;
-        height: $language_ul_height_BT;
-            
+           
+        &,
+        li{
+            height: $language_ul_height_BT;
+        }
+        
         li{
             a,
             img{
@@ -35,7 +43,9 @@
             }
         
             @if $language_flag_circled_act == "on"{
-                &, a{
+                width: $language_flag_height_BT;
+                
+                a{
                     @include squareSize($language_flag_height_BT);
                 }
                 
@@ -90,10 +100,15 @@
     @include afterTablet{
         @include posTR(10px, 20px);
         position: absolute;
-        height: $language_ul_height_AT;
+           
+        &,
+        li{
+            height: $language_ul_height_AT;
+        }
 
         li{
-            a, img{
+            a,
+            img{
                 width: $language_flag_width_AT;
                 height: $language_flag_height_AT;
             }
@@ -103,7 +118,9 @@
             }
         
             @if $language_flag_circled_act == "on"{
-                &, a{
+                width: $language_flag_height_AT;
+                
+                a{
                     @include squareSize($language_flag_height_AT);
                 }
                 

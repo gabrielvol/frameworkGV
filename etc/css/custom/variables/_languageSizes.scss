@@ -2,10 +2,7 @@
    Language Sizes Variables | Custom [languageSizes.scss]
    ========================================================================== */
 
-/* // Flags ----------------------------------------------------------------- */
-$language_flag_circled_act:         off;
-$language_flag_clicked_bottom_act:  off;
-    
+/* // Flags ----------------------------------------------------------------- */    
 $language_flag_width_BT:            38px;
 $language_flag_height_BT:           25px;
 
@@ -20,16 +17,15 @@ $language_flag_width_AT:            48px;
 $language_flag_height_AT:           32px;
 */
 
+$language_bd_size:                  1px;
+$language_bd_size_full:             calc($language_bd_size * 2);
+
 
 /* // Language UL ----------------------------------------------------------- */
 $language_ul_bottomValue:           20px;
 
-$language_ul_height_BT:             calc(#{$language_flag_height_BT} + 2px);
-$language_ul_height_clicked:        calc(#{$language_flag_height_clicked} + 2px);
+$language_ul_height_BT:             calc(#{$language_flag_height_BT} + #{$language_bd_size_full});
+$language_ul_height_clicked:        calc(#{$language_flag_height_clicked} + #{$language_bd_size_full});
 $language_ul_height_clicked_PT:     15px;
 $language_ul_height_clicked_PB:     20px;
-$language_ul_height_AT:             calc(#{$language_flag_height_AT} + 2px);
-
-$language_ul_bgColour_clicked:      $bgGrey;
-
-$language_a_bgColour:               $bgColour_main_global;
+$language_ul_height_AT:             calc(#{$language_flag_height_AT} + #{$language_bd_size_full});
