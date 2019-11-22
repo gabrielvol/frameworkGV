@@ -16,7 +16,7 @@ $formInput_fontColour:           $fontColour_main_global;
 $formInput_fontColour_hover:     $formInput_fontColour;
  
 $formPlaceholder_fontColour:     lighten($fontColour_main_global, 10%); // Descomentar líneas 13 a 18 en '[/etc/css/scss/settingsText.scss]'
-$formInput_fontColour_autofill:   $formInput_fontColour;
+$formInput_fontColour_autofill:  $formInput_fontColour;
   
 $formInput_bdColour:             $bdColour_main_global;
 $formInput_bdColour_hover:       $bdColour_main_global_hover;
