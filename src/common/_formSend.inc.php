@@ -15,7 +15,7 @@
     // Status global
     $formStatusMSG_ini_globalA__formName     = _('Complete el formulario.');
     $formStatusMSG_ini_globalB__formName     = _('Nos comunicaremos con Ud. a la brevedad.');
-    $formStatusMSG_ini_global__formName      = $formStatusMSG_ini_globalA__formName." ".$formStatusMSG_ini_globalB__formName;
+    $formStatusMSG_ini_global__formName      = $formStatusMSG_ini_globalA__formName ." ". $formStatusMSG_ini_globalB__formName;
     
     $formStatusMSG_OK_globalA__formName      = _('Env&iacute;o exitoso.');
     $formStatusMSG_OK_globalB__formName      = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
@@ -31,8 +31,8 @@
     //--------------------------------------------------------------------------
     // Inicia proceso de form
     if (isset($_POST['enviarForm__formName'])){
-        ini_set('sendmail_from', $form_email_recipient);
-        ini_set('SMTP','mail.'.$domain_global);
+        ini_set('sendmail_from', $form_contacto_recipient);
+        ini_set('SMTP','mail.'. $domain_global);
 
         // Asignamos datos de campos a variables
         $nombre__formName         = $_POST['nombre__formName'];
@@ -40,6 +40,7 @@
         $nombreApe__formName      = $_POST['nombreApe__formName'];
         $nombreComp__formName     = $_POST['nombreComp__formName'];
         $username__formName       = $_POST['username__formName'];
+        $cantidad__formName       = $_POST['cantidad__formName'];
         
         $genero__formName         = $_POST['genero__formName'];
         $dni__formName            = $_POST['dni__formName'];
@@ -69,42 +70,43 @@
         $mensaje__formName        = $_POST['mensaje__formName'];
 
         // Cabeceras del correo
-        $destino  = $form_email_recipient;
+        $destino  = $form_contacto_recipient;
         // $destino  = $area__formName;
-        $asunto   = "Contacto Web de $nombre__formName - $empresa__formName";
+        $asunto   = "Contacto Web de ". $nombre__formName ." - ". $empresa__formName;
         $headers  = "From: $nombre__formName <$email__formName>\r\n";
         //$headers .= "Reply-To: $email__formName \r\n";
         $headers .= "Content-type: text/html\r\n";
         $headers .= "X-Mailer: PHP5\n";
         $headers .= 'MIME-Version: 1.0' . "\n";
-        //$headers .= "CC: ".$form_email_recipient_CC."\r\n";
-        //$headers .= "BCC: ".$form_email_recipient_BCC."\r\n";
-        $texto    = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '.$url_contacto_full.'</small><br /><br />';
-        $texto   .= "<strong>Nombre:</strong> ".$nombre__formName."<br />";
-        $texto   .= "<strong>Apellido:</strong> ".$apellido__formName."<br />";
-        $texto   .= "<strong>Nombre y Apellido:</strong> ".$nombreApe__formName."<br />";
-        $texto   .= "<strong>Nombre completo:</strong> ".$nombreComp__formName."<br />";
-        $texto   .= "<strong>Nombre de usuario:</strong> ".$username__formName."<br />";
-        $texto   .= "<strong>Direcci&oacute;n:</strong> ".$direccion__formName."<br />";
-        $texto   .= "<strong>Domicilio:</strong> ".$domicilio__formName."<br />";
-        $texto   .= "<strong>Sexo:</strong> ".$genero__formName."<br />";
-        $texto   .= "<strong>DNI:</strong> ".$dni__formName."<br />";
-        $texto   .= "<strong>C&oacute;digo postal:</strong> ".$codigopostal__formName."<br />";
-        $texto   .= "<strong>Localidad:</strong> ".$localidad__formName."<br />";
-        $texto   .= "<strong>Provincia:</strong> ".$provincia__formName."<br />";
-        $texto   .= "<strong>Pa&iacute;s:</strong> ".$pais__formName."<br />";
-        $texto   .= "<strong>Fecha:</strong> ".$fecha__formName."<br />";
-        $texto   .= "<strong>Correo electr&oacute;nico:</strong> ".$email__formName."<br />";
-        $texto   .= "<strong>Sitio web:</strong> ".$website__formName."<br />";
-        $texto   .= "<strong>Perfil de Facebook:</strong> ".$facebook__formName."<br />";
-        $texto   .= "<strong>Perfil de Instagram:</strong> ".$instagram__formName."<br />";
-        $texto   .= "<strong>Tel&eacute;fono:</strong> ".$telefono__formName."<br />";
-        $texto   .= "<strong>Empresa:</strong> ".$empresa__formName."<br />";
-        $texto   .= "<strong>Raz&oacute;n Social:</strong> ".$razonSocial__formName."<br />";
-        $texto   .= "<strong>Cargo:</strong> ".$cargo__formName."<br />";
-        $texto   .= "<strong>Asunto:</strong> ".$asuntoSubject__formName."<br />";
-        $texto   .= "<strong>Rubro:</strong> ".$rubro__formName."<br />";
-        $texto   .= "<br /><strong>Mensaje:</strong><br />".$mensaje;
+        //$headers .= "CC: ".$form_contacto_recipient_CC."\r\n";
+        //$headers .= "BCC: ".$form_contacto_recipient_BCC."\r\n";
+        $texto    = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en ' .$url_contacto_full. '</small><br /><br />';
+        $texto   .= "<strong>Nombre:</strong>" .$nombre__formName. "<br />";
+        $texto   .= "<strong>Apellido:</strong>" .$apellido__formName. "<br />";
+        $texto   .= "<strong>Nombre y Apellido:</strong>" .$nombreApe__formName. "<br />";
+        $texto   .= "<strong>Nombre completo:</strong>" .$nombreComp__formName. "<br />";
+        $texto   .= "<strong>Nombre de usuario:</strong>" .$username__formName. "<br />";
+        $texto   .= "<strong>Direcci&oacute;n:</strong>" .$direccion__formName. "<br />";
+        $texto   .= "<strong>Domicilio:</strong>" .$domicilio__formName. "<br />";
+        $texto   .= "<strong>Sexo:</strong>" .$genero__formName. "<br />";
+        $texto   .= "<strong>Cantidad:</strong>" .$cantidad__formName. "<br />";
+        $texto   .= "<strong>DNI:</strong>" .$dni__formName. "<br />";
+        $texto   .= "<strong>C&oacute;digo postal:</strong>" .$codigopostal__formName. "<br />";
+        $texto   .= "<strong>Localidad:</strong>" .$localidad__formName. "<br />";
+        $texto   .= "<strong>Provincia:</strong>" .$provincia__formName. "<br />";
+        $texto   .= "<strong>Pa&iacute;s:</strong>" .$pais__formName. "<br />";
+        $texto   .= "<strong>Fecha:</strong>" .$fecha__formName. "<br />";
+        $texto   .= "<strong>Correo electr&oacute;nico:</strong>" .$email__formName. "<br />";
+        $texto   .= "<strong>Sitio web:</strong>" .$website__formName. "<br />";
+        $texto   .= "<strong>Perfil de Facebook:</strong>" .$facebook__formName. "<br />";
+        $texto   .= "<strong>Perfil de Instagram:</strong>" .$instagram__formName. "<br />";
+        $texto   .= "<strong>Tel&eacute;fono:</strong>" .$telefono__formName. "<br />";
+        $texto   .= "<strong>Empresa:</strong>" .$empresa__formName. "<br />";
+        $texto   .= "<strong>Raz&oacute;n Social:</strong>" .$razonSocial__formName. "<br />";
+        $texto   .= "<strong>Cargo:</strong>" .$cargo__formName. "<br />";
+        $texto   .= "<strong>Asunto:</strong>" .$asuntoSubject__formName. "<br />";
+        $texto   .= "<strong>Rubro:</strong>" .$rubro__formName. "<br />";
+        $texto   .= "<br /><strong>Mensaje:</strong><br />" .$mensaje;
         $texto   .= '<br /><br />______<br /><small style="color:#666">Fin del mensaje</small>';
         
         
@@ -116,6 +118,7 @@
         $errorMsgNombreApe__formName      = _("Por favor, ingrese su nombre y apellido.");
         $errorMsgNombreComp__formName     = _("Por favor, ingrese su nombre completo.");
         $errorMsgUsername__formName       = _("Por favor, ingrese un nombre de usuario.");
+        $errorMsgCantidad__formName       = _("Por favor, ingrese una cantidad.");
         
         $errorMsgDireccion__formName      = _("Por favor, ingrese su direcci&oacute;n.");
         $errorMsgDomicilio__formName      = _("Por favor, ingrese su domicilio.");

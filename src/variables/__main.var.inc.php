@@ -14,5 +14,5 @@
     //include('files.var.inc.php');
     //include('media.var.inc.php');
     
-    include('section.contacto.var.inc.php');
+    include('form.recipients.var.inc.php');
 ?>

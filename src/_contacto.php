@@ -290,6 +290,12 @@
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_Cargo__formName ?>"><?php echo $formSpan_error_MSG_Cargo__formName ?></span>
                 </label>
 
+                <label for="cantidad__formName">
+                    <span class="labelName"><?php echo _('Cantidad'); ?></span>
+                    <input type="number" name="cantidad__formName" id="cantidad__formName" class="cantidad <?php echo $formInput_error_class_Cantidad__formName ?>" value="<?php echo $_POST['cantidad__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_Cantidad__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_Cantidad__formName ?>"><?php echo $formSpan_error_MSG_Cantidad__formName ?></span>
+                </label>
+
                 <label for="fecha__formName">
                     <span class="labelName"><?php echo _('Fecha'); ?></span>
                     <input type="date" name="fecha__formName" id="fecha__formName" class="fecha <?php echo $formInput_error_class_Fecha__formName ?>" value="<?php echo $_POST['fecha__formName']; ?>" placeholder="<?php echo _('Seleccione una fecha en el calendario'); ?>" <?php echo $formInput_autofocus_Fecha__formName ?>>
