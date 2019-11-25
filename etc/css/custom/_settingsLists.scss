@@ -62,7 +62,7 @@
         padding-left: 15px;
 
         &::before{
-            top: 5px;
+            top: 9px;
             width: 7px;
             height: $bullet_size;
             background-position: left top;
@@ -74,7 +74,7 @@
 .bulleted_dot{
     li{
         &::before{
-            background-image: url('/nuevo/img/bullet_circle.svg');
+            background-image: url('/nuevo/img/bullet_dot.svg');
         }
     }
 }
