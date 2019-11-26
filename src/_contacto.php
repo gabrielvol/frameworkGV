@@ -261,7 +261,7 @@
 
                 <label for="instagram__formName">
                     <span class="labelName"><?php echo _('Instagram'); ?></span>
-                    <input type="text" name="instagram__formName" id="instagram__formName" class="instagram <?php echo $formInput_error_class_Instagram__formName ?>" value="<?php echo $_POST['instagram__formName']; ?>" placeholder="<?php echo _('Sólo escribí tu usuario'); ?>" <?php echo $formInput_autofocus_Instagram__formName ?>>
+                    <input type="text" name="instagram__formName" id="instagram__formName" class="instagram lowerCase <?php echo $formInput_error_class_Instagram__formName ?>" value="<?php echo $_POST['instagram__formName']; ?>" placeholder="<?php echo _('Sólo escribí tu usuario'); ?>" <?php echo $formInput_autofocus_Instagram__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_Instagram__formName ?>"><?php echo $formSpan_error_MSG_Instagram__formName ?></span>        
                     <span class="formSugg">Te enviaremos un correo a esta casilla para confirmar tu registro.</span>
                 </label>
@@ -326,10 +326,10 @@
                     <input type="checkbox" name="preciotilde__formName" id="preciotilde__formName" class="check preciotilde" value="Si">
                 </label>
 
-                <label for="browsersInput__formName">
+                <label for="browser__formName">
                     <?php echo _('Choose a browser from this list:'); ?>
-                    <input type="text" list="browsersList" name="myBrowser__formName" id="browsersInput">
-                    <datalist id="browsersList">
+                    <input type="text" list="browser_dataList" name="browser__formName" id="browser__formName">
+                    <datalist id="browser_dataList">
                         <option value="Chrome">
                         <option value="Firefox">
                         <option value="Internet Explorer">

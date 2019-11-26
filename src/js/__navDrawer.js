@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     $('.liNoLink').click(function () {
-        $(this).closest('#header').find('.logoH, .socHeader, .language_ul').removeClass('clicked');  
+        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('clicked');  
         
         $(this).closest('#nav').find('.navClose, .navOpen').removeClass('clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');

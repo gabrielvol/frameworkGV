@@ -3,7 +3,7 @@ $(document).ready(function () {
         $(this).closest('#header').find('.logoH img').attr("src", "/nuevo/img/logo.png");
     });
 
-    $('.navClose, .modalNav').click(function () {
+    $('.navClose, .modal_nav, .mainMenu a').click(function () {
         $(this).closest('#header').find('.logoH img').attr("src", "/nuevo/img/logo_int.png");
     });
 });
