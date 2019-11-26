@@ -14,8 +14,8 @@
     $url_contacto_full  = $url_global . $url_contacto;
     
     $href_index    = 'href="'. $url_index .'"';
+    $href-seccion  = 'href="'. $url .'"';
     $href_contacto = 'href="'. $url_contacto .'"';
-    $href-seccion  = 'href="'. $url-seccion .'"';
     
     $url_actual     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
