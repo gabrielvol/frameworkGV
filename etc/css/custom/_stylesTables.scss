@@ -39,6 +39,15 @@ table.tableRounded{
             @include borderStyleB($bdColour_secondary_table);
         }
     }
+    
+    &.tableStriped{
+        tr{
+            th,
+            td{
+                border-bottom: $none;
+            }
+        }
+    }
 }
     
 $table_width_BT: 40%;
@@ -112,11 +121,11 @@ $table_width_BT: 40%;
         }
     }
     
-    .tableResponsive{
+    .tableResponsiveCont{
         padding: 15px 0;
         margin: 0 auto 10px;
         
-        table{
+        .tableResponsive{
             @include beforeTablet{
                 width: $table_width_BT;
                 @include tableCustomSizesBT;        

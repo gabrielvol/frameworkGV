@@ -28,26 +28,57 @@ table{
     @include borderRadius();
     border-collapse: separate;
    
-    tfoot td{
-        &:first-child{
-            @include borderRadiusBL($helpers_border_radius_table);
-        }
-        &:last-child{
-            @include borderRadiusBR($helpers_border_radius_table);
-        }
-    }    
-    tr{
-        th{
+    tbody{
+        @include borderRadiusT($borderRadiusValue);
+        tr{
             &:first-child{
-                @include borderRadiusTL($helpers_border_radius_table);
+                @include borderRadiusT($borderRadiusValue);
+            }            
+            &:last-child{
+                @include borderRadiusB($borderRadiusValue);
+            }
+        }
+    }   
+    tfoot{
+        td{
+            &:first-child{
+                @include borderRadiusBL($borderRadiusValueTable);
             }
             &:last-child{
-                @include borderRadiusTR($helpers_border_radius_table);
+                @include borderRadiusBR($borderRadiusValueTable);
             }
-        }        
+        }  
+    }  
+    tr{      
         &:last-child{
             td{
                 border-bottom: $zero;
+            }
+        }
+    }
+    
+    @include beforeTablet{
+        tr{
+            th, td{
+                &:first-child{
+                    @include borderRadiusT($helpers_border_radius_table);
+                }
+                &:last-child{
+                    @include borderRadiusB($helpers_border_radius_table);
+                }
+            } 
+        }
+    }
+    
+    @include afterTablet{
+        tr{
+            th{
+                &:first-child{
+                    @include borderRadiusTL($helpers_border_radius_table);
+                }
+                &:last-child{
+                    @include borderRadiusTR($helpers_border_radius_table);
+                }
             }
         }
     }
@@ -96,19 +127,21 @@ table{
     .tableRounded{
         tr{
             &:last-child{
-                border: $none;
+                border-bottom: $none;
             }            
         }
         td{
             &:last-child{
-                border: $none;
+                border-bottom: $none;
+                padding-bottom: 5px;
             }            
         }
     }        
-    .tableResponsive{
+    .tableResponsiveCont{
         width: 98%;
-        overflow-x: scroll;        
-        table{
+        overflow-x: scroll;   
+        
+        .tableResponsive{
             position: relative;
             display: table;
         
