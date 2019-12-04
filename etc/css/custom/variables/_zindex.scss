@@ -53,10 +53,10 @@ $zIndex_logo_clicked:       $zIndex_button_topLevel; // 9900
 $zIndex_logo:               7100;
 $zIndex_logo_topper:        $zIndex_logo; // 7100 
 $zIndex_header:             7000;
-$zIndex_header_topper:      7000;
+$zIndex_header_topper:      7000; 
 
-   // Footer
-$zIndex_buttonSiteTop:      $zIndex_button_topLevel; // 9900
+    // Footer
+$zIndex_footer:             $zIndex_header; // 7000
 
 
 /* // 1000 ------------------------------------------------------------------ */
