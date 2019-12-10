@@ -14,17 +14,22 @@
 <!--<script src="/nuevo/js/lightbox.min.js"></script>-->
 <!--<script src="/nuevo/js/_lightbox.js"></script>-->
 
-<?php endif; if($nav_pageCurrent == 0): // Home ?>
-<!--<script src="/nuevo/js/aaaaaa.js"></script>-->
-<!--<script src="/nuevo/js/_aaaaaa.js"></script>-->
+<?php endif; if($nav_pageCurrent == 0):
+// Home
+// <script src="/nuevo/js/aaaaaa.js"></script>
+// <script src="/nuevo/js/_aaaaaa.js"></script>
+?>
 
-<?php endif; if($nav_pageCurrent == 000): // SECTIONNAME ?>
-<!--<script src="/nuevo/js/aaaaaa.js"></script>-->
-<!--<script src="/nuevo/js/_aaaaaa.js"></script>-->
+<?php endif; if($nav_pageCurrent == 000): // SECTIONNAME
+// <script src="/nuevo/js/aaaaaa.js"></script>
+// <script src="/nuevo/js/_aaaaaa.js"></script>
+?>
 
-<?php endif; if($nav_pageCurrent == 000): // Contacto ?> 
-<!--<script src="/nuevo/js/scrollKeep.js"></script>-->
-<!--<script src="/nuevo/js/_contacto.js"></script>-->
+<?php endif; if($nav_pageCurrent == 000):
+// Contacto 
+// <script src="/nuevo/js/scrollKeep.js"></script>
+// <script src="/nuevo/js/_contacto.js"></script>
+?>
 
 <?php endif; if($nav_pageCurrent == 000 || $nav_pageCurrent == 000): // SECTIONNAME / SECTIONNAME ?>
 
