@@ -120,7 +120,7 @@
             .txt_footer{
                 width: calc(100% - #{$footer_logoFloated_width_MLO});  // footerSizes.scss
             }    
-    } @else {
+        } @else {
             .logoF{
                 width: $logo_width_footer_MLO;
             }        
@@ -158,7 +158,7 @@
                 width: calc(100% - #{$footer_logoFloated_width_AT});  // footerSizes.scss
             }
 
-    } @else {
+        } @else {
             .logoF{
                 width: $logo_width_footer_AT;
             }  

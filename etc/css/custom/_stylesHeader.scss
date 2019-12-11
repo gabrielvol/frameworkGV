@@ -138,7 +138,7 @@
                 } 
             }
             
-    } @else {            
+        } @else {
             .logoH{
                 width: $logo_width_BT;
             
@@ -187,7 +187,7 @@
     }
     
     //@include navAT
-    @include afterTablet{        
+    @include afterTablet{
         @if $fullHeight_index_act_AT == "on" or $fullHeight_sections_act_AT == "on"{
             height: $header_height_AT;
         }
@@ -231,7 +231,7 @@
                 padding-left: 20px;             
             }
             
-            @if $logo_bg_beforeImg_act == "on"{            
+            @if $logo_bg_beforeImg_act == "on"{
                 &,
                 a{
                     width: $logo_width_AT;
@@ -242,7 +242,7 @@
                     width: 100%;
                 }                
                 
-        } @else {
+            } @else {
                 width: $logo_width_AT;
             
                 a,
@@ -278,8 +278,8 @@
             height: $header_height_ATL;
         }
         
-        .logoH{            
-            @if $logo_bg_beforeImg_act == "on"{            
+        .logoH{
+            @if $logo_bg_beforeImg_act == "on"{
                 &,
                 a{
                     width: $logo_width_ATL;
@@ -292,7 +292,7 @@
         }
     }
     
-    @include afterDesktop{ 
+    @include afterDesktop{
         @if $fullHeight_index_act_AD == "on" or $fullHeight_sections_act_AD == "on"{
             height: $header_height_AD;
         }   
