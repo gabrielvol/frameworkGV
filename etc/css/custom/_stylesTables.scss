@@ -62,7 +62,7 @@ $table_width_BT: 40%;
             td{
                 font-size: 0.8rem;
                 text-align: center;
-                padding-left: $table_width_BT + 5%;
+                padding-left: calc(#{$table_width_BT} + 5%);
 
                 & + td{
                     @include borderStyleT($bdGrey);
