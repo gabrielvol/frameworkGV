@@ -129,7 +129,7 @@
         }
         
         &.pop_video{
-            $pop_video_width: 500px;
+            $pop_video_width: 450px;
             
             width: $pop_video_width;
             height: 250px;
@@ -172,10 +172,13 @@
         }
     }
     
-    @include afterTablet{        
+    @include afterTablet{
         &.pop_video{
-            width: 600px;
+            $pop_video_width: 600px;
+            
+            width: $pop_video_width;
             height: 330px;
+            margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
         }
     } 
 }

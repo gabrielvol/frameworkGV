@@ -31,9 +31,15 @@ $(document).ready(function () {
     
     
     
-    $('.modal_video, .pop_close').click(function () {        
-        $('.modal_video, .pop_video').addClass('displayNone');
-        $('.modal_video, .pop_video').removeClass('displayBlock');
-        $('.pop_video iframe').attr('src', '');
+    $('.modal_video').click(function () {
+        $(this).addClass('displayNone');
+        $(this).closest('body').find('.pop_main').addClass('displayNone');
+        $(this).closest('body').find('.pop_main iframe').attr('src', '');
+    });
+    
+    $('.pop_close').click(function () {
+        $(this).closest('.pop_main').addClass('displayNone');
+        $(this).closest('.pop_main').find('iframe').attr('src', '');
+        $(this).closest('body').find('.modal_video').addClass('displayNone');
     });
 });
