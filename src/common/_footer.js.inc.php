@@ -1,6 +1,12 @@
-<!--<script src="/nuevo/js/smoothScroll.jQuery.js"></script>-->
+<?php
+// <script src="/nuevo/js/smoothScroll.jQuery.js"></script>
+?>
+
 <script src="/nuevo/js/_global.js"></script>
-<!--<script src="/nuevo/js/_topper.js"></script>-->
+
+<?php
+// <script src="/nuevo/js/_topper.js"></script>
+?>
 
 <?php        if($navAcc_act == 1): // Nav ?> 
 <script src="/nuevo/js/_navAccordion.js"></script>
@@ -8,29 +14,37 @@
 <?php endif; if($navDrawer_act == 1): // Nav ?> 
 <script src="/nuevo/js/_navDrawer.js"></script>
 
-<!--<script src="/nuevo/js/slick.js"></script>-->
-<!--<script src="/nuevo/js/_slick.js"></script>-->
+<?php
+// <script src="/nuevo/js/slick.js"></script>
+// <script src="/nuevo/js/_slick.js"></script>
 
-<!--<script src="/nuevo/js/lightbox.min.js"></script>-->
-<!--<script src="/nuevo/js/_lightbox.js"></script>-->
-
-<?php endif; if($nav_pageCurrent == 0):
-// Home
-// <script src="/nuevo/js/aaaaaa.js"></script>
-// <script src="/nuevo/js/_aaaaaa.js"></script>
+// <script src="/nuevo/js/lightbox.min.js"></script>
+// <script src="/nuevo/js/_lightbox.js"></script>
 ?>
 
-<?php endif; if($nav_pageCurrent == 000): // SECTIONNAME
+
+<?php endif; if($nav_pageCurrent == 0):
+    // Home
 // <script src="/nuevo/js/aaaaaa.js"></script>
 // <script src="/nuevo/js/_aaaaaa.js"></script>
 ?>
 
 <?php endif; if($nav_pageCurrent == 000):
-// Contacto 
+    // SECTIONNAME
+// <script src="/nuevo/js/aaaaaa.js"></script>
+// <script src="/nuevo/js/_aaaaaa.js"></script>
+?>
+
+<?php endif; if($nav_pageCurrent == 000):
+    // Contacto 
 // <script src="/nuevo/js/scrollKeep.js"></script>
 // <script src="/nuevo/js/_contacto.js"></script>
 ?>
 
-<?php endif; if($nav_pageCurrent == 000 || $nav_pageCurrent == 000): // SECTIONNAME / SECTIONNAME ?>
+<?php endif; if($nav_pageCurrent == 000 || $nav_pageCurrent == 000):
+    // SECTIONNAME / SECTIONNAME
+// <script src="/nuevo/js/scrollKeep.js"></script>
+// <script src="/nuevo/js/_contacto.js"></script>
+?>
 
 <?php endif; ?>

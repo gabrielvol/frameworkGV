@@ -13,8 +13,8 @@
     $url_contacto       = '/nuevo/contacto.php';
     $url_contacto_full  = $url_global . $url_contacto;
     
-    $href_index    = 'href="'. $url_index .'"';
     $href-seccion  = 'href="'. $url .'"';
+    $href_index    = 'href="'. $url_index .'"';
     $href_contacto = 'href="'. $url_contacto .'"';
     
     $url_actual     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
