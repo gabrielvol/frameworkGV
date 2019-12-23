@@ -34,11 +34,11 @@
             <form method="post" class="mha" id="formID">
                 <?php
                     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
-                    echo $formStatusMSG__formName;
-                    echo $formStatusMSG_pop__formName;
+                    echo $formStatus_MSG__formName;
+                    echo $formStatus_MSG_pop__formName;
 
                     if($section_contacto_hasMandatoryMsg_act == 1) {
-                        echo '<div class="mandatoryMsg '.$formMandatoryMSG_classes__formName.'">'.$formMandatoryMSG__formName.'</div>';
+                        echo '<div class="mandatoryMsg '.$formMandatory_MSG_classes__formName.'">'.$formMandatory_MSG__formName.'</div>';
                     }                
                 ?>
 
@@ -202,6 +202,19 @@
                     </select>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_provincia__formName ?>"><?php echo $formSpan_error_MSG_provincia__formName ?></span>
                 </label>
+
+            <label for="comoQueres__formName">
+                <span class="labelName"><?php echo _('¿Cómo querés que te contactemos?'); ?></span>
+                <select id="comoQueres" name="comoQueres__formName" class="comoQueres <?php echo $formInput_error_class_ComoQueres__formName ?>">
+                    <option value="<?php echo $_POST['comoQueres']; ?>" selected><?php echo $_POST['comoQueres']; ?></option>
+
+                    <option value="<?php echo $_POST['comoQueres']; ?>" selected><?php if(isset($_POST['comoQueres'])) { echo $_POST['comoQueres']; } else { echo _('Correo electrónico, WhatsAspp o Instagram'); } ?></option>
+                    <option value="Correo"><?php echo _('Correo electrónico'); ?></option>
+                    <option value="WhatsApp"><?php echo _('WhatsApp'); ?></option>
+                    <option value="Instagram"><?php echo _('Instagram'); ?></option>
+                </select>
+                <span class="formInputErrorMsg <?php echo $formSpan_error_class_ComoQueres__formName ?>"><?php echo $formSpan_error_MSG_comoQueres__formName ?></span>
+            </label>
 
                 <label for="genericSelect__formName">
                     <span class="labelName"><?php echo _('genericSelect'); ?></span>
