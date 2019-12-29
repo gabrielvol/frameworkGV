@@ -1,6 +1,5 @@
-<!-- gettext file -->
 <?php
-    $l = $_GET['l'];
+    //gettext file
     
     if(isset($l)) {
         $gettext_idiomaElegido = $_GET['l'];        
@@ -13,9 +12,9 @@
 <?php
     $l = $_GET['l'];
     
-    if($l == "en"){
-        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.set.en.inc.php');
+    if($l == "en_GB"){
+        $gettext_idioma = 'en_GB';
     } else {
-        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.set.es.inc.php');
+        $gettext_idioma = 'es_AR';
     };
 ?>

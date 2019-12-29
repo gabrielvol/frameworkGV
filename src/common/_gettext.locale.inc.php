@@ -1,6 +1,7 @@
-<!-- gettext file -->
 <?php
-    switch ($_GET["idioma"]) {
+    //gettext file
+
+    switch ($_GET["gettext_idioma"]) {
         case 1:
             $gettext_idioma = 'es_AR';
             break;

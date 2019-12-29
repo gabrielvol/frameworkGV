@@ -204,6 +204,16 @@ msgstr "Please, enter your Facebook profile"
 
 
 
+<?php echo _('Instagram'); ?>
+msgid "Instagram"
+msgstr "Instagram username"
+
+<?php echo _('Por favor, ingrese su perfil de Instagram.'); ?>
+msgid "Por favor, ingrese su perfil de Instagram."
+msgstr "Please, enter your Instagram username"
+
+
+
 <?php echo _('Cargo'); ?>
 msgid "Cargo"
 msgstr "Position"
