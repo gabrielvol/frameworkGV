@@ -4,7 +4,8 @@
 p{}
     
 // Safari tel detection
-a[href^=tel]{
+a[href^=tel],
+.safariTel{
     &, &:focus, &:hover, &:active, &:visited{
         color: $fontColour_anchor_global!important;
     }
