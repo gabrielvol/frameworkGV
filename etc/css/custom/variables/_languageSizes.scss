@@ -5,12 +5,17 @@
 /* // Flags ----------------------------------------------------------------- */    
 $language_flag_width_BT:            38px;
 $language_flag_height_BT:           25px;
+$language_flag_sep_BT:              15px;
 
 $language_flag_width_clicked:       55px;
 $language_flag_height_clicked:      36px;
 
 $language_flag_width_AT:            $language_flag_width_BT;
 $language_flag_height_AT:           $language_flag_height_BT;
+$language_flag_sep_AT:              10px;
+$language_flag_right_AT:            20px;
+
+$language_ul_width_AT:              calc(#{$language_flag_width_AT} + #{$language_flag_width_AT} + #{$language_flag_sep_AT} + #{$language_flag_right_AT} + 15px);
 
 /*
 $language_flag_width_AT:            48px;
@@ -18,7 +23,7 @@ $language_flag_height_AT:           32px;
 */
 
 $language_bd_size:                  1px;
-$language_bd_size_full:             calc($language_bd_size * 2);
+$language_bd_size_full:             calc(#{$language_bd_size} * 2);
 
 
 /* // Language UL ----------------------------------------------------------- */
