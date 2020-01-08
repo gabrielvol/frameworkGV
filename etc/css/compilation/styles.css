@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =============================================================================
    Font Variables | Etc [variablesFonts.scss]
    ========================================================================== */
@@ -7,21 +8,12 @@
 /* =============================================================================
    Z Index Variables | Custom [zindex.scss]
    ========================================================================== */
-/* -----------------------------------------------------------------------------
-   10 000
-   -------------------------------------------------------------------------- */
-/* -----------------------------------------------------------------------------
-   9000
-   -------------------------------------------------------------------------- */
-/* -----------------------------------------------------------------------------
-   8000
-   -------------------------------------------------------------------------- */
-/* -----------------------------------------------------------------------------
-   7000
-   -------------------------------------------------------------------------- */
-/* -----------------------------------------------------------------------------
-   1000
-   -------------------------------------------------------------------------- */
+/* // Negative -------------------------------------------------------------- */
+/* // 10 000 ---------------------------------------------------------------- */
+/* // 9000 ------------------------------------------------------------------ */
+/* // 8000 ------------------------------------------------------------------ */
+/* // 7000 ------------------------------------------------------------------ */
+/* // 1000 ------------------------------------------------------------------ */
 /* =============================================================================
    Container Sizes Variables | Custom [container.scss]
    ========================================================================== */
@@ -45,15 +37,35 @@
 /* =============================================================================
    Classes Activators | Custom [activatorsMain.scss]
    ========================================================================== */
+/* // Colours --------------------------------------------------------------- */
+/* // Fonts ----------------------------------------------------------------- */
+/* // Text ------------------------------------------------------------------ */
+/* // Pointers -------------------------------------------------------------- */
+/* // Slider ---------------------------------------------------------------- */
+/* // Full heights sections ------------------------------------------------- */
 /* =============================================================================
    Helpers Responsive Classes Activators | Custom [helpersActivators.scss]
    ========================================================================== */
+/* // All ------------------------------------------------------------------- */
+/* // Mobile Only MO -------------------------------------------------------- */
+/* // After Mobile Landscape AML -------------------------------------------- */
+/* // Mobile Landscape Only MLO --------------------------------------------- */
+/* // Before Tablet BT ------------------------------------------------------ */
+/* // Before Tablet Landscape BTL ------------------------------------------- */
+/* // Tablet Only TO -------------------------------------------------------- */
+/* // After Tablet AT ------------------------------------------------------- */
+/* // After Tablet Landscape ATL -------------------------------------------- */
+/* // Tablet Landscape Only TLO --------------------------------------------- */
+/* // Tablet Landscape Only TTLO -------------------------------------------- */
+/* // Before Desktop BD ----------------------------------------------------- */
+/* // After Laptop AL ------------------------------------------------------- */
+/* // After Desktop AD ------------------------------------------------------ */
+/* // After Desktop Large ADL ----------------------------------------------- */
 /* =============================================================================
    Spacing Helpers Variables | Custom [helpers.scss]
    ========================================================================== */
-/* =============================================================================
-   Border Helpers Variables | Custom [helpers.scss]
-   ========================================================================== */
+/* // Spacing --------------------------------------------------------------- */
+/* // Border Helpers Variables  --------------------------------------------- */
 /* =============================================================================
    Animation Variables | Custom [animations.scss]
    ========================================================================== */
@@ -66,15 +78,17 @@
 /* =============================================================================
    Background Colours Variables | Custom [coloursBackgrounds.scss]
    ========================================================================== */
-/* =============================================================================
-   Modal Opacity Variables | Custom [coloursBackgrounds.scss]
-   ========================================================================== */
+/* // Modal Opacity Variables  ---------------------------------------------- */
 /* =============================================================================
    Shadows Variables | Custom [shadows.scss]
    ========================================================================== */
 /* =============================================================================
    Fonts Main Variables | Custom [fontsMain.scss]
    ========================================================================== */
+/* // Chequear Arial, Roboto o Times como Main Font Family ------------------ */
+/* // Main font Stack ------------------------------------------------------- */
+/* // Heading Sizes --------------------------------------------------------- */
+/* // Useful Text Format ---------------------------------------------------- */
 /* =============================================================================
    Font Colours Variables | Custom [fontsColours.scss]
    ========================================================================== */
@@ -84,66 +98,107 @@
 /* =============================================================================
    Language Sizes Variables | Custom [languageSizes.scss]
    ========================================================================== */
-/* -------------------------------------------------------------------------- */
+/* // Flags ----------------------------------------------------------------- */
+/* =============================================================================
+   Language Sizes Variables | Custom [languageSizes.scss]
+   ========================================================================== */
+/* =============================================================================
+   Language Sizes Variables | Custom [languageSizes.scss]
+   ========================================================================== */
+/* // Flags ----------------------------------------------------------------- */
 /*
 $language_flag_width_AT:            48px;
 $language_flag_height_AT:           32px;
 */
-/* -------------------------------------------------------------------------- */
+/* // Language UL ----------------------------------------------------------- */
 /* =============================================================================
    Nav Activators | Custom [navActivators.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Colours Variables | Custom [navColours.scss]
    ========================================================================== */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
+/* // Fonts ----------------------------------------------------------------- */
+/* // Background Colours ---------------------------------------------------- */
 /* =============================================================================
    Nav Arrows | Custom [navArrows.scss]
    ========================================================================== */
-/* -------------------------------------------------------------------------- */
+/* // Border Colours -------------------------------------------------------- */
 /* =============================================================================
    Nav Fonts Variables | Custom [navFonts.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Sizes Variables | Custom [navSizes.scss]
    ========================================================================== */
+/* // General --------------------------------------------------------------- */
+/* // Nav List -------------------------------------------------------------- */
+/* // Nav Drawer ------------------------------------------------------------ */
+/* // Nav Accordion --------------------------------------------------------- */
+/* // Nav Topper ------------------------------------------------------------ */
+/* // Nav Heights ----------------------------------------------------------- */
+/* =============================================================================
+   Logo Activators | Custom [logoActivators.scss]
+   ========================================================================== */
+/* // Logo img background ::before activator -------------------------------- */
 /* =============================================================================
    Header Activators | Custom [headerActivators.scss]
    ========================================================================== */
+/* // Menu y logo ----------------------------------------------------------- */
+/* // Header ---------------------------------------------------------------- */
 /* =============================================================================
    Logo Sizes Variables | Custom [logoSizes.scss]
    ========================================================================== */
+/* // Logo Sizes BT --------------------------------------------------------- */
+/* // Nav Drawer logo.clicked ----------------------------------------------- */
+/* // Logo Sizes AT --------------------------------------------------------- */
+/* // Logo Sizes Footer ----------------------------------------------------- */
 /* =============================================================================
    Header Height Variables | Custom [headerHeight.scss]
    ========================================================================== */
+/* // Full heights Header --------------------------------------------------- */
 /* =============================================================================
    Slick Sizes Variables | Custom [slickSizes.scss]
    ========================================================================== */
 /* =============================================================================
    Footer Activators | Custom [footerActivators.scss]
    ========================================================================== */
+/* // Logo y dirección flotados --------------------------------------------- */
 /* =============================================================================
    Footer Sizes Variables | Custom [footerSizes.scss]
    ========================================================================== */
+/* // Footer logo flotado --------------------------------------------------- */
+/* // Full heights Footer --------------------------------------------------- */
 /* =============================================================================
    Forms Activators | Custom [formsActivators.scss]
    ========================================================================== */
 /* =============================================================================
    Forms Colours Variables | Custom [formsColours.scss]
    ========================================================================== */
+/* // Labels ---------------------------------------------------------------- */
+/* // Inputs ---------------------------------------------------------------- */
+/* // Submit ---------------------------------------------------------------- */
+/* // Validation ------------------------------------------------------------ */
 /* =============================================================================
    Form Fonts Variables | Custom [formsFonts.scss]
    ========================================================================== */
 /* =============================================================================
    Forms Variables | Custom [formsSizes.scss]
    ========================================================================== */
+/* // Form ------------------------------------------------------------------ */
+/* // Labels ---------------------------------------------------------------- */
+/* // Inputs ---------------------------------------------------------------- */
+/* // Submit ---------------------------------------------------------------- */
+/* // Search ---------------------------------------------------------------- */
 /* =============================================================================
    Tables Variables | Custom [tables.scss]
    ========================================================================== */
+/* // Custom Sizes ---------------------------------------------------------- */
+/* // Rounded Table --------------------------------------------------------- */
 /* =============================================================================
    Tables Colour Variables | Custom [tablesColours.scss]
    ========================================================================== */
+/* // Table Border Colours -------------------------------------------------- */
+/* // Table Background Colours ---------------------------------------------- */
+/* // Striped Table --------------------------------------------------------- */
 /* =============================================================================
    Global Variables | Custom [global.scss]
    ========================================================================== */
@@ -395,6 +450,11 @@ a.orange:focus, a.orange:hover {
 /* =============================================================================
    Gradient Colours | Custom [coloursGradients.scss]
    ========================================================================== */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.1+0,0.1+100 */
+.bgGrad_whiteTen {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', endColorstr='#1affffff',GradientType=0 ); }
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.3+0,0.3+100 */
 .bgGrad_whiteThirty {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
@@ -425,6 +485,11 @@ a.orange:focus, a.orange:hover {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); }
 
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+29,0.82+100 */
+.bgGrad_black_textVanish {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.82) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d1000000',GradientType=0 ); }
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.1+0,0.1+100 */
 .bgGrad_blackTen {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
@@ -444,6 +509,11 @@ a.orange:focus, a.orange:hover {
 .bgGrad_blackFifty {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.65+100 */
+.bgGrad_sixtyFive {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 ); }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
 .bgGrad_blackEighty {
@@ -712,7 +782,12 @@ a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.no
 /* =============================================================================
    Settings Text | Custom [settingsText.scss]
    ========================================================================== */
-a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
+a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited,
+.safariTel,
+.safariTel:focus,
+.safariTel:hover,
+.safariTel:active,
+.safariTel:visited {
   color: #333333 !important; }
 
 .gradientText {
@@ -1194,6 +1269,62 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Flexbox Classes ALL | Etc [classesAll.scss]
    ========================================================================== */
+.displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start; }
+
+.flexColumn {
+  flex-direction: column; }
+
+.flexNoWrap {
+  flex-wrap: nowrap; }
+
+.flexJustifyEnd {
+  justify-content: flex-end; }
+
+.flexJustifyCenter {
+  justify-content: center; }
+
+.flexJustifyBetween {
+  justify-content: space-between; }
+
+.flexJustifyAround {
+  justify-content: space-around; }
+
+.flexAlignContentEnd {
+  align-content: flex-end; }
+
+.flexAlignContentCenter {
+  align-content: center; }
+
+.flexAlignContentBetween {
+  align-content: space-between; }
+
+.flexAlignContentAround {
+  align-content: space-around; }
+
+.flexAlignContentStretch {
+  align-content: stretch; }
+
+.flexAlignItemsEnd {
+  align-items: flex-end; }
+
+.flexAlignItemsCenter {
+  align-items: center; }
+
+.flexAlignItemsBaseline {
+  align-items: baseline; }
+
+.flexAlignItemsStretch {
+  align-items: stretch; }
+
+.flexHorizontal {
+  list-style: none !important; }
+
 /* =============================================================================
    Classes Responsive | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -1488,7 +1619,76 @@ article, article::before, article::after, details, details::before, details::aft
     width: 320px; } }
 
 /* =============================================================================
+   Print Styles | Custom [stylesPrint.scss]
+   ========================================================================== */
+@media print {
+  @page {
+    margin: 2cm; }
+  @page :left {
+    margin-right: 3cm; }
+  @page :right {
+    margin-left: 3cm; }
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  nav, footer {
+    display: none !important; }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href^="http"]:not([href*="example.com"]):after {
+    height: 30px;
+    line-height: 30px;
+    content: "(" attr(href) ")";
+    font-family: monospace; }
+  a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: ""; }
+  pre {
+    white-space: pre-wrap !important; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; }
+  /* // Main Styles ----------------------------------------------------------- */
+  .logoH {
+    display: block;
+    height: 3cm;
+    margin: 10px auto 20px; }
+  .gooMap {
+    width: 400px;
+    height: 300px;
+    background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true");
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; }
+  /* // Tables Styles --------------------------------------------------------- */
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; } }
+
+/* =============================================================================
    Global Styles | Custom [stylesGlobal.scss]
+   ========================================================================== */
+/* // Main Gobal Styles ----------------------------------------------------- */
+/* =============================================================================
+   Internas Global Styles | Custom [stylesGlobal.scss]
+   ========================================================================== */
+/* // Secondary Separator --------------------------------------------------- */
+/* =============================================================================
+   Call to Action Styles | Custom [stylesCTA.scss]
    ========================================================================== */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
@@ -1540,15 +1740,6 @@ article, article::before, article::after, details, details::before, details::aft
       line-height: 50px; } }
 
 /* =============================================================================
-   Main Gobal Styles | Custom
-   ========================================================================== */
-/* =============================================================================
-   Internas Global Styles | Custom
-   ========================================================================== */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-   Secondary Separator
-   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* =============================================================================
    Settings Lists | Custom [settingsLists.scss]
    ========================================================================== */
 .hyphenated li {
@@ -1597,14 +1788,14 @@ article, article::before, article::after, details, details::before, details::aft
   .bulleted_dot li::before,
   .bulleted_square li::before,
   .bulleted_chevron li::before {
-    top: 5px;
+    top: 9px;
     width: 7px;
     height: 7px;
     background-position: left top;
     background-size: 7px; }
 
 .bulleted_dot li::before {
-  background-image: url("/nuevo/img/bullet_circle.svg"); }
+  background-image: url("/nuevo/img/bullet_dot.svg"); }
 
 .bulleted_square li::before {
   background-image: url("/nuevo/img/bullet_square.svg"); }
@@ -1719,8 +1910,7 @@ article, article::before, article::after, details, details::before, details::aft
       display: none !important; } }
 
 .pop_main {
-  z-index: 9800;
-  left: 50%; }
+  z-index: 9800; }
   .pop_main .pop_close {
     z-index: 9900; }
 
@@ -1741,7 +1931,8 @@ article, article::before, article::after, details, details::before, details::aft
 
 .pop_main {
   position: fixed;
-  top: 80px; }
+  top: 80px;
+  left: 50%; }
   .pop_main .pop_close {
     border-radius: 50%;
     background-color: transparent;
@@ -1818,9 +2009,9 @@ article, article::before, article::after, details, details::before, details::aft
       width: 60%;
       margin-left: calc(calc(60% * -1) / 2); }
     .pop_main.pop_video {
-      width: 500px;
+      width: 450px;
       height: 250px;
-      margin-left: calc(-1 * calc(500px / 2)); } }
+      margin-left: calc(-1 * calc(450px / 2)); } }
   @media (max-width: 600px) {
     .pop_main .pop_close {
       top: -45px;
@@ -1847,112 +2038,103 @@ article, article::before, article::after, details, details::before, details::aft
   @media (min-width: 768px) {
     .pop_main.pop_video {
       width: 600px;
-      height: 330px; } }
+      height: 330px;
+      margin-left: calc(-1 * calc(600px / 2)); } }
 
 /* =============================================================================
    Header Styles | Custom [stylesHeader.scss]
    ========================================================================== */
-#header {
-  /*
-    position: relative;
-    z-index: $zIndex_header;
-    */ }
-  #header .logoH {
-    margin-bottom: 0; }
-  @media (max-width: 499px) {
+#header .logoH {
+  margin-bottom: 0; }
+
+@media (max-width: 767px) {
+  #header {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; }
+    #header.topperShadow {
+      box-shadow: 0 0 7px #000; }
     #header .logoH {
-      /*
-            width: $logo_width_MO;
-            */ } }
-  @media (min-width: 500px) {
-    #header .logoH {
-      /*
-            width: $logo_width_AML;
-            */ } }
-  @media (min-width: 500px) and (max-width: 767px) {
-    #header .logoH {
-      /*
-            width: $logo_width_MLO;
-            */ } }
-  @media (max-width: 767px) {
-    #header {
-      box-sizing: border-box;
-      padding-top: 20px;
-      padding-bottom: 15px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0; }
-      #header.topperShadow {
-        box-shadow: 0 0 7px #000; }
-      #header .logoH {
-        width: 220px; }
-        #header .logoH a,
-        #header .logoH img {
-          width: 100%; }
-      #header .logoH.clicked {
-        border-right: 1px solid #000;
-        box-sizing: border-box;
-        position: fixed;
-        z-index: 9900;
-        top: 0;
-        left: 0;
-        width: calc(70vw - 5px);
-        max-width: 300px;
-        height: calc(50px + 50px + 10px);
-        background-color: #fff;
-        padding-top: 50px;
-        padding-bottom: 10px;
-        margin: 0; }
-        #header .logoH.clicked a, #header .logoH.clicked img {
-          width: auto;
-          height: 100%; }
-        #header .logoH.clicked img {
-          margin-right: auto;
-          margin-left: auto; } }
-  @media (min-width: 768px) {
-    #header .logoH {
-      position: relative;
-      z-index: 7100;
-      width: 210px; }
+      width: 220px; }
       #header .logoH a,
       #header .logoH img {
-        width: 100%; } }
-  @media (min-width: 1024px) {
-    #header .logoH {
-      width: 250px; } }
-  @media (min-width: 1200px) {
-    #header .logoH {
-      width: 300px; } }
+        width: 100%; }
+    #header .logoH.clicked {
+      border-right: 1px solid #000;
+      box-sizing: border-box;
+      position: fixed;
+      z-index: 9900;
+      top: 0;
+      left: 0;
+      width: calc(70vw - 5px);
+      max-width: 300px;
+      height: calc(50px + 50px + 10px);
+      background-color: #fff;
+      padding-top: 50px;
+      padding-bottom: 10px;
+      margin: 0; }
+      #header .logoH.clicked .logoBefore,
+      #header .logoH.clicked a,
+      #header .logoH.clicked img {
+        width: auto;
+        height: 100%; }
+      #header .logoH.clicked img {
+        margin-right: auto;
+        margin-left: auto; }
+      #header .logoH.clicked .logoBefore {
+        background: none; } }
+
+@media (min-width: 768px) {
+  #header .logoH {
+    position: relative;
+    z-index: 7100;
+    width: 220px; }
+    #header .logoH a,
+    #header .logoH img {
+      width: 100%; } }
+
+@media (min-width: 1024px) {
+  #header .logoH {
+    width: 220px; } }
+
+@media (min-width: 1200px) {
+  #header .logoH {
+    width: 220px; } }
 
 /* =============================================================================
    Footer Styles | Custom [stylesFooter.scss]
    ========================================================================== */
 #footer {
-  /* -------------------------------------
-    Button Site Top                    
-    .button_siteTop{
-        @include squareSize(50px);
-        z-index: $zIndex_buttonSiteTop;
-        top: 10px;
-        right: 10px;
-        background-image: url('/img/button_siteTop.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    */ }
+  /* // Button Site Top ------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */ }
+  #footer .button_siteTop {
+    width: 50px;
+    height: 50px;
+    z-index: 9900;
+    top: 10px;
+    right: 10px;
+    background-image: url("/img/button_siteTop.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
   #footer .address_footer_goo a {
     font-size: 1em;
     line-height: 1.2em; }
   @media (max-width: 499px) {
     #footer .logoF {
       width: 50px; } }
+  @media (min-width: 500px) {
+    #footer .logoF {
+      /* width: $logo_width_footer_MO; */ } }
   @media (min-width: 500px) and (max-width: 767px) {
     #footer .logoF {
       width: 50px; } }
   @media (min-width: 768px) {
     #footer .logoF {
-      width: 100px; } }
+      width: 125px; } }
   @media (max-width: 1023px) {
     #footer .address_footer_goo a {
       text-decoration: underline; } }

@@ -1,5 +1,6 @@
-<!-- gettext file -->
 <?php
+    //gettext file
+
     $gettext_switchMsg_ES = "Navegar el sitio en idioma castellano";
     $gettext_switchMsg_GB = "Switch to English version";
     $gettext_switchMsg_US = "Switch to English version";
