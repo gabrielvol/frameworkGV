@@ -18,7 +18,7 @@
     *::before,
     *::after{
         background: $transparent;
-        color: $black!important; /* Black prints faster */
+        color: $black!important;
         box-shadow: $none;
         text-shadow: $none;
     } 
@@ -83,6 +83,10 @@
         background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true');
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+    }
+    
+    img.dark {
+        filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(150%);
     }
     
     
