@@ -40,7 +40,6 @@
     .pop_innerContainer{
         @include posTRBL;
         position: absolute;
-        padding: 20px;
         overflow: auto;
     }
     
@@ -79,6 +78,10 @@
             }
         }
         
+        .pop_innerContainer{
+            padding: 20px;
+        }
+        
         .pop_submit{
             @include borderRadius();
             @include transition(1s);
@@ -102,6 +105,15 @@
             @include posTR(10px, 10px);
         }
     }
+    
+    &.pop_video{
+        box-shadow: $box_shadow_video;
+        
+        .gooYTVideo{
+            @include borderRadius(0);
+            border: $none;
+        }
+    }
         
     @include mobileOnly{
         &.pop_warning{
@@ -115,7 +127,7 @@
             $pop_video_width: 300px;
             
             width: $pop_video_width;
-            height: 300px;
+            height: 168px;
             margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
         }
     }
