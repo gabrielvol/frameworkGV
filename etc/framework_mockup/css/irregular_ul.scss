@@ -1,0 +1,74 @@
+/* =============================================================================
+   Parallax Scroll
+   ========================================================================== */
+.irregular_ul{
+    li{
+        a{
+            $position: 7px;
+            
+            @include borderRadius();
+            @include posTRBL($position, $position, $position, $position);
+            overflow: hidden;
+        } 
+        
+        img{
+            @include centerUnknownSizeItem(101%, auto);
+        } 
+    }
+    
+    @include mobileOnly{
+        width: 300px;
+        
+        li{
+            width: 50%;
+            height: 90px;
+        }
+    }
+    
+    @include afterMobileLandscape{
+        width: 450px;
+            
+        li{
+            width: $third;
+            height: 90px;
+        }
+    } 
+    
+    @include afterMobile650{
+        width: 600px;
+             
+        li{
+            height: 120px;
+        }
+    }
+    
+    @include beforeTablet{
+        li{
+            &:nth-child(1),
+            &:nth-child(2){
+                img{
+                    width: auto;
+                    height: 101%;
+                }
+            }
+        }
+    }
+     
+    @include afterTablet{
+        width: 700px;
+        
+        li{
+            width: 25%!important;
+            height: 100px;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        width: 900px;
+        
+        li{
+            width: 20%!important;
+            height: 110px;
+        }
+    }
+}

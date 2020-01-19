@@ -23,7 +23,7 @@
                         echo '<li>
                             <a href="/framework/img/imageFolder/'.$image.'" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran extasiados el show de Marilyn Manson."><img src="/framework/img/imageFolder/'.$image.'" alt="Imagen" /></a>
                         </li>';
-                    }
+                    } 
                 }
             ?>
         </ul>

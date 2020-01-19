@@ -1,11 +1,11 @@
 <?php
-    $test = 1;
-    $int = 1;
+    $page_test = 1;
+    $page_int = 1;
     
-    $title = "Slick | GV";
-    $mdesc = "";
+    $site_title = "Irregular Gallery | GV";
+    $site_desc = "";
     
-    $navSelected= 0;
+    $nav_pageCurrent = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/head.inc.php');
 ?>

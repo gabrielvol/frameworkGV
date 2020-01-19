@@ -1,9 +1,9 @@
 <?php
-    $test = 1;
-    $int = 1;
-    $navSelected= 0;
-    $title = "Slick | GV";
-    $mdesc = "";
+    $page_test = 1;
+    $page_int = 1;
+    $nav_pageCurrent= 0;
+    $site_title = "Slick | GV";
+    $site_desc = "";
     include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/head.inc.php');
 ?>
 <link href="/framework/css/main.css" rel="stylesheet">

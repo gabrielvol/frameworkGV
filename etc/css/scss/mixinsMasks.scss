@@ -22,6 +22,18 @@
         }
     }
 }
+@mixin centerUnknownSizeItem($centerUnknownSizeItemMX_childWidth: auto, $centerUnknownSizeItemMX_childHeight: auto){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $centerUnknownSizeItemMX_childWidth;
+    height: $centerUnknownSizeItemMX_childHeight;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
     //Mixins para máscaras
 @mixin maskWidth($maskWidthMX_width: 100%){
