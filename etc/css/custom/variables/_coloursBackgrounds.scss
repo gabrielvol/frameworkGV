@@ -4,32 +4,32 @@
 ///**Background Colours Map:** 
     ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
 $backgroundColours_map:(
-    Error:      $errorColour,
-    
-    White:      $white,
-    Black:      $black,
-  //RedColour:  $redColour,
-    Green:      $green,
-    GreyXXL:    $greyXXL,
-    GreyXL:     $greyXL,
-    GreyL:      $greyL,
-    Grey:       $grey,
-    GreyD:      $greyD,
-    GreyXD:     $greyXD
+    Error:        $errorColour,
+      
+    White:        $white,
+    Black:        $black,
+  //RedColour:    $redColour,
+    Green_system: $green_system,
+    GreyXXL:      $greyXXL,
+    GreyXL:       $greyXL,
+    GreyL:        $greyL,
+    Grey:         $grey,
+    GreyD:        $greyD,
+    GreyXD:       $greyXD
 );
 
-$bgErrorColour: map-get($backgroundColours_map, Error);
+$bgErrorColour:   map-get($backgroundColours_map, Error);
 
-$bgWhite:       map-get($backgroundColours_map, White);
-$bgBlack:       map-get($backgroundColours_map, Black);
-//$bgRedColour:   map-get($backgroundColours_map, RedColour);
-$bgGreen:       map-get($backgroundColours_map, Green);
-$bgGreyXXL:     map-get($backgroundColours_map, GreyXXL);
-$bgGreyXL:      map-get($backgroundColours_map, GreyXL);
-$bgGreyL:       map-get($backgroundColours_map, GreyL);
-$bgGrey:        map-get($backgroundColours_map, Grey);
-$bgGreyD:       map-get($backgroundColours_map, GreyD);
-$bgGreyXD:      map-get($backgroundColours_map, GreyXD);
+$bgWhite:         map-get($backgroundColours_map, White);
+$bgBlack:         map-get($backgroundColours_map, Black);
+//$bgRedColour:     map-get($backgroundColours_map, RedColour);
+$bgGreen_system:  map-get($backgroundColours_map, Green_system);
+$bgGreyXXL:       map-get($backgroundColours_map, GreyXXL);
+$bgGreyXL:        map-get($backgroundColours_map, GreyXL);
+$bgGreyL:         map-get($backgroundColours_map, GreyL);
+$bgGrey:          map-get($backgroundColours_map, Grey);
+$bgGreyD:         map-get($backgroundColours_map, GreyD);
+$bgGreyXD:        map-get($backgroundColours_map, GreyXD);
 
     //Declaramos las variables para colores de fondo
 $bgColour_body:                     $bgWhite;    

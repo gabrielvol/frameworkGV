@@ -257,6 +257,7 @@ $language_flag_height_AT:           32px;
 /* 650 */
 /* 700 */
 /* 800 */
+/* 850 */
 /* 900 */
 /* 950 */
 /* Desktop */
@@ -692,22 +693,13 @@ a.white:focus, a.white:hover {
 a.white.noHover:focus, a.white.noHover:hover {
   text-shadow: 0 0 0 transparent; }
 
-.errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
-  color: #eb1c24; }
-
-a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHover:focus, a.errorColour.noHover:hover {
-  color: #eb1c24; }
-
-a.errorColour:focus, a.errorColour:hover {
-  color: #940d12; }
-
-.green, .green b, .green strong, .green i, .green em {
+.green_system, .green_system b, .green_system strong, .green_system i, .green_system em {
   color: #339900; }
 
-a.green, a.green:active, a.green:visited, a.green.noHover:focus, a.green.noHover:hover {
+a.green_system, a.green_system:active, a.green_system:visited, a.green_system.noHover:focus, a.green_system.noHover:hover {
   color: #339900; }
 
-a.green:focus, a.green:hover {
+a.green_system:focus, a.green_system:hover {
   color: #113300; }
 
 .greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
@@ -745,6 +737,15 @@ a.grey, a.grey:active, a.grey:visited, a.grey.noHover:focus, a.grey.noHover:hove
 
 a.grey:focus, a.grey:hover {
   color: #666666; }
+
+.errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
+  color: #eb1c24; }
+
+a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHover:focus, a.errorColour.noHover:hover {
+  color: #eb1c24; }
+
+a.errorColour:focus, a.errorColour:hover {
+  color: #940d12; }
 
 .greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
   color: #666; }
@@ -892,7 +893,7 @@ b, strong,
 .bgBlack {
   background-color: #000; }
 
-.bgGreen {
+.bgGreen_system {
   background-color: #339900; }
 
 .bgGreyXXL {
@@ -1633,7 +1634,6 @@ article, article::before, article::after, details, details::before, details::aft
   *::after {
     background: transparent !important;
     color: #000 !important;
-    /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important; }
   nav, footer {
@@ -1672,6 +1672,8 @@ article, article::before, article::after, details, details::before, details::aft
     background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true");
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact; }
+  img.dark {
+    filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(150%); }
   /* // Tables Styles --------------------------------------------------------- */
   thead {
     display: table-header-group; }
@@ -1952,7 +1954,6 @@ article, article::before, article::after, details, details::before, details::aft
     bottom: 0;
     left: 0;
     position: absolute;
-    padding: 20px;
     overflow: auto; }
   .pop_main.pop_warning {
     /* CSS para usar centerPopup
@@ -1979,6 +1980,8 @@ article, article::before, article::after, details, details::before, details::aft
         margin-top: 0.8em; }
       .pop_main.pop_warning p:last-child {
         padding-bottom: 50px; }
+    .pop_main.pop_warning .pop_innerContainer {
+      padding: 20px; }
     .pop_main.pop_warning .pop_submit {
       border-radius: 6px;
       transition: all 1s ease;
@@ -1996,13 +1999,18 @@ article, article::before, article::after, details, details::before, details::aft
     .pop_main.pop_warning .pop_close {
       top: 10px;
       right: 10px; }
+  .pop_main.pop_video {
+    box-shadow: 0 0 10px 0 #666; }
+    .pop_main.pop_video .gooYTVideo {
+      border-radius: 0;
+      border: none !important; }
   @media (max-width: 499px) {
     .pop_main.pop_warning {
       width: 300px;
       margin-left: calc(calc(300px * -1) / 2); }
     .pop_main.pop_video {
       width: 300px;
-      height: 300px;
+      height: 168px;
       margin-left: calc(-1 * calc(300px / 2)); } }
   @media (min-width: 500px) {
     .pop_main.pop_warning {

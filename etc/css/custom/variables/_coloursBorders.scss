@@ -4,32 +4,32 @@
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio.
 $borderColours_map:(
-    error:     $errorColour,
-    
-    white:     $white,
-    black:     $black,
-  //redColour: $redColour,
-  //green:     $green,
-    greyXXL:   $greyXXL,
-    greyXL:    $greyXL,
-    greyL:     $greyL,
-    grey:      $grey,
-    greyD:     $greyD,
-    greyXD:    $greyXD
+    error:          $errorColour,
+        
+    white:          $white,
+    black:          $black,
+  //redColour:      $redColour,
+  //green_system:   $green_system,
+    greyXXL:        $greyXXL,
+    greyXL:         $greyXL,
+    greyL:          $greyL,
+    grey:           $grey,
+    greyD:          $greyD,
+    greyXD:         $greyXD
 );
 
-$bdError:     map-get($borderColours_map, error);
+$bdError:           map-get($borderColours_map, error);
 
-$bdWhite:     map-get($borderColours_map, white);
-$bdBlack:     map-get($borderColours_map, black);
-//$bdRedColour: map-get($borderColours_map, redColour);
-//$bdGreen:     map-get($borderColours_map, green);
-$bdGreyXXL:   map-get($borderColours_map, greyXXL);
-$bdGreyXL:    map-get($borderColours_map, greyXL);
-$bdGreyL:     map-get($borderColours_map, greyL);
-$bdGrey:      map-get($borderColours_map, grey);
-$bdGreyD:     map-get($borderColours_map, greyD);
-$bdGreyXD:    map-get($borderColours_map, greyXD);
+$bdWhite:           map-get($borderColours_map, white);
+$bdBlack:           map-get($borderColours_map, black);
+//$bdRedColour:       map-get($borderColours_map, redColour);
+//$bdGreen_system:    map-get($borderColours_map, green_system);
+$bdGreyXXL:         map-get($borderColours_map, greyXXL);
+$bdGreyXL:          map-get($borderColours_map, greyXL);
+$bdGreyL:           map-get($borderColours_map, greyL);
+$bdGrey:            map-get($borderColours_map, grey);
+$bdGreyD:           map-get($borderColours_map, greyD);
+$bdGreyXD:          map-get($borderColours_map, greyXD);
 
 $bdColour_main_global: $bdGrey;
 $bdColour_main_global_hover: darken($bdColour_main_global, 15%);
