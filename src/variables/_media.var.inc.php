@@ -1,6 +1,5 @@
-<?php        
-    // -------------------------------------------------------------------------
-        //-- YouTube
+<?php
+    /* // YouTube iframe & Thumbnail URLS ----------------------------------- */
     $youTubeV__videoA_id             = 'aaaaaaaaaaaa';
     $youTubeV__videoA_src_iframe     = 'https://www.youtube.com/embed/'. $youTubeV__videoA_id;
     $youTubeV__videoA_src_full       = 'https://img.youtube.com/vi/'. $youTubeV__videoA_id .'/0.jpg';
@@ -29,8 +28,8 @@
     $youTubeV__videoB_src_th_max     = 'https://img.youtube.com/vi/'. $youTubeV__videoB_id .'/maxresdefault.jpg';
     
     
-/* =============================================================================
-   YouTube thumbnails
+
+    /* // Explanation ----------------------------------------------------------
 
 Each YouTube video has 4 generated images. They are predictably formatted as follows:
 
@@ -70,5 +69,5 @@ https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/mqdefault.jpg
 https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/sddefault.jpg
 https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/maxresdefault.jpg
 
-============================================================================= */
+----------------------------------------------------------------------------- */
 ?>
