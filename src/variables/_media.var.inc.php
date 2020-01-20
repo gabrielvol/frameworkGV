@@ -16,7 +16,7 @@
     
     
     $youTubeV__videoB_id             = 'aaaaaaaaaaaa';
-    $youTubeV__videoA_src_iframe     = 'https://www.youtube.com/embed/'. $youTubeV__videoB_id;
+    $youTubeV__videoB_src_iframe     = 'https://www.youtube.com/embed/'. $youTubeV__videoB_id;
     $youTubeV__videoB_src_full       = 'https://img.youtube.com/vi/'. $youTubeV__videoB_id .'/0.jpg';
     $youTubeV__videoB_src_th01       = 'https://img.youtube.com/vi/'. $youTubeV__videoB_id .'/1.jpg';
     $youTubeV__videoB_src_th02       = 'https://img.youtube.com/vi/'. $youTubeV__videoB_id .'/2.jpg';

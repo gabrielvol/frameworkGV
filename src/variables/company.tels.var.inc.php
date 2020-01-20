@@ -18,8 +18,8 @@
     $company_fax_a                 = '2222';
     $company_fax_b                 = '3333';
     
-    // $company_tel_NOMBRE_a             = '3278';
-    // $company_tel_NOMBRE_b             = '9435';
+    // $company_tel_NOMBRE_a          = '3278';
+    // $company_tel_NOMBRE_b          = '9435';
     
     
         //-- Main
@@ -29,7 +29,7 @@
     
     $company_tel_main_whatsapp     = $tel_prefix_watsapp . $company_tel_main;
     $social_whatsapp_main_chatOpen = 'https://api.whatsapp.com/send?phone='. $company_tel_main_whatsapp;
-    $social_whatsapp_main_WAme_url      = 'https://wa.me/'. $company_tel_main_whatsapp .'?text=I’m%20interested%20in%20your%20car%20for%20sale';
+    $social_whatsapp_main_WAme_url = 'https://wa.me/'. $company_tel_main_whatsapp .'?text=I’m%20interested%20in%20your%20car%20for%20sale';
     
     
         //-- Sec

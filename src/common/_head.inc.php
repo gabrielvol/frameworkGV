@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="<?php echo $site_lang_HTML_attr; ?>">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,7 +8,7 @@
 <meta name="robots" content="index,follow">
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
-<meta name="geo.region" content="AR">
+<meta name="geo.region" content="<?php echo $site_lang_code_country; ?>">
 
 <!-- Google No Translate -->
 <meta name="google" content="notranslate">
@@ -16,10 +16,10 @@
 <!-- Safari tel-->
 <meta name="format-detection" content="telephone=no">
 
-<title><?php echo $site_title ?></title>
+<title><?php echo $site_title; ?></title>
 <title><?php if($gettext_idioma == 'en_GB'){ echo $site_title_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_titleBR; } else { echo $site_title; } ?></title>
 
-<meta name="description" content="<?php echo $site_desc ?>">
+<meta name="description" content="<?php echo $site_desc; ?>">
 <meta name="description" content="<?php if($gettext_idioma == 'en_GB'){ echo $site_desc_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_desc_PT; } else { echo $site_desc; } ?>">
 
 <link href="/nuevo/css/styles.css" rel="stylesheet">
@@ -55,7 +55,7 @@
 <meta property="og:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>">
-<meta property="og:locale" content="es_AR">
+<meta property="og:locale" content="<?php echo $site_lang_locale; ?>">
 
 <meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_title_DE; } else { echo $openGraph_title; } ?>">
 <meta property="og:url" content="<?php echo $url_openGraph; ?>">
