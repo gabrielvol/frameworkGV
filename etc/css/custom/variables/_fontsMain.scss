@@ -3,10 +3,10 @@
    ========================================================================== */
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
-$fontFamilies_map:(    
-    arial:  Arial,
-    roboto: Roboto,
-    //timesNewRoman: 'Times New Roman',
+$fontFamilies_map:(
+    arial:          Arial,
+    roboto:         Roboto,
+  //timesNewRoman:  'Times New Roman'
 );
 
 
