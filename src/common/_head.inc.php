@@ -25,6 +25,8 @@
 <link href="/nuevo/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
 
+<link rel="canonical" href="<?php echo $url_global; ?>">
+
 <!-- Copyright -->
 <link rel="license" href="/nuevo/legal/copyright.php">
 
