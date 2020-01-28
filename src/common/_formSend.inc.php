@@ -1,7 +1,7 @@
 <?php
     //--------------------------------------------------------------------------
     // Fuentes de título de pop
-    $formPop_h2_ok_classes__formName      = 'mbm green alignCenter';
+    $formPop_h2_ok_classes__formName      = 'mbm greenSystem alignCenter';
     $formPop_h2_error_classes__formName   = 'mbm errorColour alignCenter';
     
     
@@ -55,6 +55,7 @@
         
         $data_email__formName           = $_POST['data_email__formName'];
         $data_telefono__formName        = $_POST['data_telefono__formName'];
+        $data_celular__formName         = $_POST['data_celular__formName'];
         
         $data_webSite__formName         = $_POST['data_webSite__formName'];
         $data_facebook__formName        = $_POST['data_facebook__formName'];
@@ -84,7 +85,7 @@
         $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $url_contacto_full .'</small><br /><br />';
         $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formName ."<br />";
         $formMail_texto .= "<strong>Apellido:</strong> ". $data_apellido__formName ."<br />";
-        $formMail_texto .= "<strong>Nombre y Apellido:</strong> ". $data_nombreAp__formName ."<br />";
+        $formMail_texto .= "<strong>Nombre y apellido:</strong> ". $data_nombreAp__formName ."<br />";
         $formMail_texto .= "<strong>Nombre completo:</strong> ". $data_nombreCo__formName ."<br />";
         $formMail_texto .= "<strong>Nombre de usuario:</strong> ". $data_username__formName ."<br />";
         $formMail_texto .= "<strong>Direcci&oacute;n:</strong> ". $data_direccion__formName ."<br />";
@@ -103,6 +104,7 @@
         $formMail_texto .= "<strong>Perfil de Facebook:</strong> ". $data_facebook__formName ."<br />";
         $formMail_texto .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/'. $data_instagram__formName .'">'. $data_instagram__formName ."</a><br />";
         $formMail_texto .= "<strong>Tel&eacute;fono:</strong> ". $data_telefono__formName ."<br />";
+        $formMail_texto .= "<strong>Celular:</strong> ". $data_celular ."<br />";
         $formMail_texto .= "<strong>Empresa:</strong> ". $data_empresa__formName ."<br />";
         $formMail_texto .= "<strong>Raz&oacute;n Social:</strong> ". $data_razonSocial__formName ."<br />";
         $formMail_texto .= "<strong>Cargo:</strong> ". $data_cargo__formName ."<br />";

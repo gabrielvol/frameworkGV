@@ -204,18 +204,18 @@
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_provincia__formName ?>"><?php echo $formSpan_error_MSG_data_provincia__formName ?></span>
                 </label>
 
-            <label for="data_comoQueres__formName">
-                <span class="labelName"><?php echo _('¿Cómo querés que te contactemos?'); ?></span>
-                <select id="data_comoQueres" name="data_comoQueres__formName" class="data_comoQueres <?php echo $formInput_error_class_data_comoQueres__formName ?>">
-                    <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php echo $_POST['data_comoQueres']; ?></option>
+                <label for="data_comoQueres__formName">
+                    <span class="labelName"><?php echo _('¿Cómo querés que te contactemos?'); ?></span>
+                    <select id="data_comoQueres" name="data_comoQueres__formName" class="data_comoQueres <?php echo $formInput_error_class_data_comoQueres__formName ?>">
+                        <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php echo $_POST['data_comoQueres']; ?></option>
 
-                    <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php if(isset($_POST['data_comoQueres'])) { echo $_POST['data_comoQueres']; } else { echo _('Correo electrónico, WhatsAspp o Instagram'); } ?></option>
-                    <option value="Correo"><?php echo _('Correo electrónico'); ?></option>
-                    <option value="WhatsApp"><?php echo _('WhatsApp'); ?></option>
-                    <option value="Instagram"><?php echo _('Instagram'); ?></option>
-                </select>
-                <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_comoQueres__formName ?>"><?php echo $formSpan_error_MSG_data_comoQueres__formName ?></span>
-            </label>
+                        <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php if(isset($_POST['data_comoQueres'])) { echo $_POST['data_comoQueres']; } else { echo _('Correo electrónico, WhatsAspp o Instagram'); } ?></option>
+                        <option value="Correo"><?php echo _('Correo electrónico'); ?></option>
+                        <option value="WhatsApp"><?php echo _('WhatsApp'); ?></option>
+                        <option value="Instagram"><?php echo _('Instagram'); ?></option>
+                    </select>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_comoQueres__formName ?>"><?php echo $formSpan_error_MSG_data_comoQueres__formName ?></span>
+                </label>
 
                 <label for="data_GENERICSELECT__formName">
                     <span class="labelName"><?php echo _('GENERICSELECT'); ?></span>
@@ -234,6 +234,12 @@
                     <span class="labelName"><?php echo _('Pa&iacute;s'); ?></span>
                     <input type="text" name="data_pais__formName" id="data_pais__formName" class="pais <?php echo $formInput_error_class_data_pais__formName ?>" value="<?php echo $_POST['data_pais__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_data_pais__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_pais__formName ?>"><?php echo $formSpan_error_MSG_data_pais__formName ?></span>
+                </label>
+
+                <label for="data_celular__formName">
+                    <span class="labelName"><?php echo _('Celular'); ?></span>
+                    <input type="tel" name="data_celular__formName" id="data_celular__formName" class="telefono <?php echo $formInput_error_class_data_celular__formName ?>" value="<?php echo $_POST['data_celular__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_data_celular__formName ?>>
+                    <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_celular__formName ?>"><?php echo $formSpan_error_MSG_data_celular__formName ?></span>
                 </label>
 
                 <label for="data_telefono__formName">
