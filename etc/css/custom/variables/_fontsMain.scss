@@ -9,6 +9,13 @@ $fontFamilies_map:(
   //timesNewRoman:  'Times New Roman'
 );
 
+    ///Aquí se agregan los valores para los pesos de las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-weight: 400;}`, con el mixin **fontFamilyWeightsGenerator**.
+$fontWeights_map:(
+  //ralewayM:       500,
+  //ralewaySB:      600,
+  //ralewayXB:      800
+);
+
 
 /* // Chequear Arial, Roboto o Times como Main Font Family ------------------ */
 $arial:     map-get($fontFamilies_map, arial);

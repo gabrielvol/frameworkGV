@@ -13,6 +13,12 @@
         }
     }
 }
+    //Generador de pesos por cada fuente
+@mixin fontFamilyWeightsGenerator{
+    @each $fontFamilyWeightsGeneratorMX_fontFamilyClassName, $fontFamilyWeightsGeneratorMX_fontWeighValue in $fontWeights_map {
+        .#{$fontFamilyWeightsGeneratorMX_fontFamilyClassName}{font-weight: $fontFamilyWeightsGeneratorMX_fontWeighValue;}
+    }
+}
     //Generador de clases por cada tamaño de fuente
 @mixin fontCustomHeadingsSizesGeneratorMobile{
     @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues in $fontSize_map_mobile {

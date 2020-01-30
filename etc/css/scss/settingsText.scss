@@ -107,6 +107,7 @@ a{
 
 // Font Families and Headings Values
 @include fontFamilyCustomClassesGenerator;
+@include fontFamilyWeightsGenerator;
 
 @include beforeTablet{
     @include fontCustomHeadingsSizesGeneratorMobile; 
