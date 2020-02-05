@@ -1,18 +1,18 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/__main.var.inc.php');
     
-    $page_int        = 1;
-    $section_error   = 1;
+    $page_int           = 1;
+    $section_error      = 1;
+       
+    $site_title         = "Error | ". $company_name_title;
+  //$site_title_GB      = "Error | ". $company_name_title;
+       
+    $site_desc          = $site_desc_global;
+  //$site_desc_GB       = $site_desc_global_GB;
+       
+    $nav_pageCurrent    = 0;
     
-    $site_title      = "Error | ".$company_name_title;
-  //$site_title_GB   = "Error | ".$company_name_title;
-    
-    $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_GB;
-    
-    $nav_pageCurrent = 0;
-    
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.language.check.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/gettext.var.inc.php');

@@ -23,6 +23,8 @@
  // $url_contacto       = "#contacto";
     
     $url_contacto_full  = $url_global . $url_contacto;
+
+ // LOAD urls.gettext.var.inc
     
     $href_index         = 'href="'. $url_index .'"';
  // $href-seccion       = 'href="'. $url .'"';
