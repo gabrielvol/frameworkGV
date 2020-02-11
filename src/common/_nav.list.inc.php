@@ -1,20 +1,20 @@
 <?php $navItemInicio = ($nav_pageCurrent == 0)? "displayNone" : ""; ?>
 
 <li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone current'; } ?>">
-    <a <?php echo $href-seccion ?> class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href-seccion ?> class="borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
 </li>
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
-    <a <?php echo $href-seccion ?> class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href-seccion ?> class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
 <li class="liNoLink">
-    <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox">
+    <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="borderBox">
         <?php echo _("seccion"); ?></a>
 </li>
 <!--Con gettext--> 
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
-    <a href="/nuevo/<?php if($gettext_idioma == 'en_GB') { echo '?l=en'; } ?>" class="<?php if ($nav_horizontalCenter_AT_act == 1) { echo 'displayBlockBT'; } else { echo 'displayBlock'; } ?> borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a href="/nuevo/<?php if($gettext_idioma == 'en_GB') { echo '?l=en'; } ?>" class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?></a>
 </li>
 

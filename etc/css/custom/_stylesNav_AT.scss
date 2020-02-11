@@ -17,7 +17,7 @@
         }
         
         .mainMenu{
-            @if $nav_horizontalCenter_act == "on" or $nav_horizontal_act == "on"{
+            @if $nav_horizontalCenter_AT_act == "on"{
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;
@@ -28,6 +28,18 @@
                     
                     > *{
                         display: inline-block;            
+                    }
+                }
+            } @else{
+                > li{
+                    float: left;
+                }
+                 
+                li{
+                    &,
+                    a,
+                    .topLevelItem{
+                        display: block;
                     }
                 }
             }
@@ -52,7 +64,12 @@
             &,
             a,
             .topLevelItem{
-                @include equalHeightAndLineHeight($nav_height_AT);
+                @if $nav_horizontalCenter_AT_act == "on"{
+                    height: auto;
+                    line-height: $nav_height_AT;                    
+                } @else{
+                    @include equalHeightAndLineHeight($nav_height_AT);
+                }
             }
 
             a,
@@ -191,7 +208,38 @@
         }
     }
     
-    @include tabletOnly{}
+    @include tabletOnly{
+        .mainMenu{
+            @if $nav_horizontalCenter_TO_act == "on"{
+                list-style: none;
+                margin-right: $auto;
+                margin-left: $auto;
+                text-align: center;
+                
+                li{
+                    float: none;
+                    display: inline-block;
+                    
+                    > *{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        
+        li{
+            &,
+            a,
+            .topLevelItem{
+                @if $nav_horizontalCenter_TO_act == "on"{
+                    height: auto;
+                    line-height: $nav_height_TO;                    
+                } @else{
+                    @include equalHeightAndLineHeight($nav_height_TO);
+                }
+            }
+        }
+    }
     
     @include afterTabletLandscape{
         @if $logoNav_floated_act == "on"{
@@ -199,6 +247,22 @@
         }
         
         .mainMenu{
+            @if $nav_horizontalCenter_ATL_act == "on"{
+                list-style: none;
+                margin-right: $auto;
+                margin-left: $auto;
+                text-align: center;
+                
+                li{
+                    float: none;
+                    display: inline-block;
+                    
+                    > *{
+                        display: inline-block!important;
+                    }
+                }
+            }
+            
             > li{
                 &:focus, &:hover{
                     @if $nav_text_white_act == "on"{
@@ -222,7 +286,12 @@
             &,
             a,
             .topLevelItem{
-                @include equalHeightAndLineHeight($nav_height_ATL);
+                @if $nav_horizontalCenter_AT_act == "on" or $nav_horizontalCenter_ATL_act == "on"{
+                    height: auto;
+                    line-height: $nav_height_ATL;
+                } @else{
+                    @include equalHeightAndLineHeight($nav_height_ATL);
+                }
             }
             
             a,

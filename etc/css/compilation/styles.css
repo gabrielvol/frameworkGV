@@ -2314,7 +2314,8 @@ nav li:focus a, nav li:hover a {
       .navMain .mainMenu li a,
       .navMain .mainMenu li .topLevelItem {
         font-size: 1rem;
-        text-align: center; }
+        text-align: center;
+        display: block; }
       .navMain .mainMenu > .current {
         background-color: #f2f2f2;
         background-image: url("/nuevo/img/nav_arrowL.svg"); }
@@ -2335,6 +2336,12 @@ nav li:focus a, nav li:hover a {
    Nav After Tablet Styles | Custom [stylesNav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
+  .navMain .mainMenu > li {
+    float: left; }
+  .navMain .mainMenu li,
+  .navMain .mainMenu li a,
+  .navMain .mainMenu li .topLevelItem {
+    display: block; }
   .navMain li,
   .navMain li a,
   .navMain li .topLevelItem {
@@ -2346,6 +2353,13 @@ nav li:focus a, nav li:hover a {
     font-size: 0.8rem;
     padding-right: 5px;
     padding-left: 5px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navMain li,
+  .navMain li a,
+  .navMain li .topLevelItem {
+    height: 60px;
+    line-height: 60px; } }
 
 @media (min-width: 1024px) {
   .navMain li,
