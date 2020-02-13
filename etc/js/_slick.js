@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //Slick Slider
-    $('.slick').slick({
+    $('.slickMain').slick({
          accessibility: true
         ,infinite: true
         
@@ -32,7 +32,7 @@ $(document).ready(function () {
         ,variableWidth: true
         ,adaptiveHeight: true
         
-        ,asNavFor: '.sliderNav'
+        ,asNavFor: '.slickNav'
 
         ,responsive: [
             {breakpoint: 1024,

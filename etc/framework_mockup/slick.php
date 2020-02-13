@@ -15,13 +15,13 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slick slickMain mask horizontal clearfix">
             <li><img data-lazy="/framework/img/img_slide01.png" alt="" aria-hidden="true"></li>
             <li><img data-lazy="/framework/img/img_slide02.png" alt="" aria-hidden="true"></li>
             <li><img data-lazy="/framework/img/img_slide03.png" alt="" aria-hidden="true"></li>
         </ul>
         
-        <ul class="slick mask horizontal clearfix">
+        <ul class="slick slickMain mask horizontal clearfix">
             <li><img src="/framework/img/img_slide01.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <li><img src="/framework/img/img_slide02.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <li><img src="/framework/img/img_slide03.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
@@ -52,7 +52,7 @@
             $sliderFoto_main_20 = '20';
             include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.main.inc.php');
         ?>                
-        <ul class="slick mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
+        <ul class="slick slickMain mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
             <?php        if(isset($sliderFoto_main_01)): // Section ?>
             <li><img src="/nuevo/img/img_slide<?php echo $sliderFoto_main_01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
             <?php endif; if(isset($sliderFoto_main_02)): // Section ?>

@@ -12,7 +12,7 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">                
-        <ol id="sliderMain" class="sliderMain corvetteC3 mask horizontal clearfix fullWidth">
+        <ol id="slickWithNav" class="slickWithNav mask horizontal clearfix fullWidth">
             <li><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt="" class="displayBlock fullWidth"></li>
             <li><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt="" class="displayBlock fullWidth"></li>
             <li><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt="" class="displayBlock fullWidth"></li>
@@ -30,7 +30,7 @@
             <li><img src="/nuevo/img/coleccion/corvetteC3/15.jpg" alt="" class="displayBlock fullWidth"></li>
             <li><img src="/nuevo/img/coleccion/corvetteC3/16.jpg" alt="" class="displayBlock fullWidth"></li>
         </ol>
-        <ol id="sliderNav" class="sliderNav corvetteC3Nav mask horizontal clearfix fullWidth borderBox bgGreyXXL ptm" role="group" aria-owns="sliderMain" aria-controls="sliderMain">
+        <ol id="slickNav" class="slickNav mask horizontal clearfix fullWidth borderBox bgGreyXXL ptm" role="group" aria-owns="slickWithNav" aria-controls="slickWithNav">
             <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt="Ver fotografía número uno." class="displayBlock fullWidth"></li>
             <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt="Ver fotografía número dos." class="displayBlock fullWidth"></li>
             <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt="Ver fotografía número tres." class="displayBlock fullWidth"></li>

@@ -1,15 +1,26 @@
 /* =============================================================================
    Slick Slider Styles | Custom [stylesSlider.scss]
    ========================================================================== */
-.slick{
-    &,
-    .slick-slide{
-        z-index: $zIndex_slider!important; 
-    }
-    
+.slick{    
     &,
     div{
         @include clearfix;
+    }
+    
+    &.slickCarousel{
+        position: relative;
+        
+        .slick-list{
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+
+.slickMain{
+    &,
+    .slick-slide{
+        z-index: $zIndex_slider!important; 
     }
   
     &,
@@ -18,15 +29,10 @@
     .slick-track li{
         /*height: 300px;*/
     }
-    
-    &.carousel{
-        position: relative;
-        
-        .slick-list{
-            position: relative;
-            overflow: hidden;
-        }
-    }
+}
+
+.slickWithNav{
+    // No debe llevar z-index
 }
 
 @import "stylesSliderArrows";

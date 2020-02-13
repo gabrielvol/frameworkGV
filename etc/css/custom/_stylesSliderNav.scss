@@ -1,8 +1,8 @@
 /* =============================================================================
    Slick Slider Nav Styles | Custom [stylesSliderNav.scss]
    ========================================================================== */
-.sliderMain,
-.sliderNav{
+.slickWithNav,
+.slickNav{
     @include mobileOnly{
         width: 300px;
     }
@@ -27,11 +27,7 @@
     }
 }
 
-.sliderMain{
-    z-index: 10;
-}
-
-.sliderNav{
+.slickWithNav{
     height: 80px;
 
     .slick-track{
