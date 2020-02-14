@@ -172,7 +172,7 @@
 
                 <label for="data_provincia__formName">
                     <span class="labelName"><?php echo _('Provincia'); ?></span>
-                    <select id="provincia" name="data_provincia__formName" class="provincia <?php echo $formInput_error_class_data_provincia__formName ?>">
+                    <select id="data_provincia__formName" name="data_provincia__formName" class="provincia <?php echo $formInput_error_class_data_provincia__formName ?>">
                         <option value="<?php echo $_POST['provincia']; ?>" selected><?php echo $_POST['provincia']; ?></option>
 
                         <option value="<?php echo $_POST['provincia']; ?>" selected><?php if(isset($_POST['provincia'])) { echo $_POST['provincia']; } else { echo _('Seleccione su provincia'); } ?></option>
@@ -206,7 +206,7 @@
 
                 <label for="data_comoQueres__formName">
                     <span class="labelName"><?php echo _('¿Cómo querés que te contactemos?'); ?></span>
-                    <select id="data_comoQueres" name="data_comoQueres__formName" class="data_comoQueres <?php echo $formInput_error_class_data_comoQueres__formName ?>">
+                    <select id="data_comoQueres__formName" name="data_comoQueres__formName" class="comoQueres <?php echo $formInput_error_class_data_comoQueres__formName ?>">
                         <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php echo $_POST['data_comoQueres']; ?></option>
 
                         <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php if(isset($_POST['data_comoQueres'])) { echo $_POST['data_comoQueres']; } else { echo _('Correo electrónico, WhatsAspp o Instagram'); } ?></option>
@@ -219,7 +219,7 @@
 
                 <label for="data_GENERICSELECT__formName">
                     <span class="labelName"><?php echo _('GENERICSELECT'); ?></span>
-                    <select id="provincia" name="data_GENERICSELECT__formName" class="data_GENERICSELECT <?php echo $formInput_error_class_data_GENERICSELECT__formName ?>">
+                    <select id="data_GENERICSELECT__formName" name="data_GENERICSELECT__formName" class="GENERICSELECT <?php echo $formInput_error_class_data_GENERICSELECT__formName ?>">
                         <option value="<?php echo $_POST['data_GENERICSELECT']; ?>" selected><?php echo $_POST['data_GENERICSELECT']; ?></option>
 
                         <option value="<?php echo $_POST['data_GENERICSELECT']; ?>" selected><?php if(isset($_POST['data_GENERICSELECT'])) { echo $_POST['data_GENERICSELECT']; } else { echo _('Selecciona una opción por favor'); } ?></option>

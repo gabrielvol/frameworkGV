@@ -430,6 +430,12 @@
             $formInput_error_class_data_fecha__formName        = "invalidField";
             $formInput_autofocus_data_fecha__formName          = "autofocus";
             
+        } elseif (empty($_POST["data_cantidad__formName"])) {
+            $formSpan_error_MSG_data_cantidad__formName        = $formSend_error_MSG_data_cantidad__formName;
+            $formSpan_error_class_data_cantidad__formName      = "active";
+            $formInput_error_class_data_cantidad__formName     = "invalidField";
+            $formInput_autofocus_data_cantidad__formName       = "autofocus";
+            
         } elseif (empty($_POST["data_rubro__formName"])) {
             $formSpan_error_MSG_data_rubro__formName           = $formSend_error_MSG_data_rubro__formName;
             $formSpan_error_class_data_rubro__formName         = "active";
