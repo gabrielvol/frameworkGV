@@ -5,11 +5,11 @@
     $section_contacto                       = 1;
     $section_contacto_hasMandatoryMsg_act   = 0;
     
-    $site_title     = "Contacto | ".$company_name_title;
-  //$site_title_GB  = "Contact | ".$company_name_title;
+    $site_title         = "Contacto | ".$company_name_title;
+  //$site_title_GB      = "Contact | ".$company_name_title;
     
-    $site_desc      = $site_desc_global;
-  //$site_desc_GB   = $site_desc_global_GB;
+    $site_desc          = $site_desc_global;
+  //$site_desc_GB       = $site_desc_global_GB;
     
     $openGraph_title    = $site_title;
   //$openGraph_title_GB = $site_title_GB;
@@ -18,7 +18,7 @@
     $openGraph_img_url  = $url_global;  
     $openGraph_siteName = $openGraph_title;
     
-    $nav_pageCurrent = 0;
+    $nav_pageCurrent    = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');

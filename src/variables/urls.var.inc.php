@@ -27,11 +27,11 @@
  // LOAD urls.gettext.var.inc
     
     $href_index         = 'href="'. $url_index .'"';
- // $href-seccion       = 'href="'. $url .'"';
- // $href-seccion       = 'href="'. $url .'"';
- // $href-seccion       = 'href="'. $url .'"';
- // $href-seccion       = 'href="'. $url .'"';
- // $href-seccion       = 'href="'. $url .'"';
+ // $href-seccion       = 'href="'. $url_xxx .'"';
+ // $href-seccion       = 'href="'. $url_xxx .'"';
+ // $href-seccion       = 'href="'. $url_xxx .'"';
+ // $href-seccion       = 'href="'. $url_xxx .'"';
+ // $href-seccion       = 'href="'. $url_xxx .'"';
     $href_contacto      = 'href="'. $url_contacto .'"';
     
     $url_actual     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";

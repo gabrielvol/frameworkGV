@@ -4,8 +4,6 @@
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio.
 $borderColours_map:(
-    error:          $errorColour,
-        
     white:          $white,
     black:          $black,
   //redColour:      $redColour,
@@ -15,7 +13,9 @@ $borderColours_map:(
     greyL:          $greyL,
     grey:           $grey,
     greyD:          $greyD,
-    greyXD:         $greyXD
+    greyXD:         $greyXD,
+    
+    error:          $errorColour
 );
 
 $bdError:           map-get($borderColours_map, error);

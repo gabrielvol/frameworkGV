@@ -1,7 +1,7 @@
 <?php $navItemInicio = ($nav_pageCurrent == 0)? "displayNone" : ""; ?>
 
 <li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone current'; } ?>">
-    <a <?php echo $href-seccion ?> class="borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href_index ?> class="borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?></a>
 </li>
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
