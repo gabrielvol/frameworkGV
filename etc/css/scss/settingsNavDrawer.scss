@@ -7,14 +7,14 @@
             .navOpen{
                 background-color: $navBgColour_hamburger;
                 
-                &.clicked{
+                &.js_clicked{
                     opacity: 0.5;
                     color: $navFontColour_hamburger_clicked;
                 } 
             }
 
             .navClose{
-                &.clicked{
+                &.js_clicked{
                     display: block;
                 } 
             }

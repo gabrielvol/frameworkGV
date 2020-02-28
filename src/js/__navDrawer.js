@@ -1,21 +1,21 @@
 $(document).ready(function () {
     $('.navOpen').click(function () {
-        $(this).addClass('clicked');
+        $(this).addClass('js_clicked');
         $(this).attr('aria-pressed', 'true');
         
-        $(this).closest('#header').find('.social').addClass('clicked');
+        $(this).closest('#header').find('.social').addClass('js_clicked');
         $(this).closest('#nav').find('.mainMenu').addClass('open');
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
-            $(this).closest('#header').find('.logoH, .language_ul').addClass('clicked');
-            $(this).closest('#nav').find('.navClose').addClass('clicked');
+            $(this).closest('#header').find('.logoH, .language_ul').addClass('js_clicked');
+            $(this).closest('#nav').find('.navClose').addClass('js_clicked');
         });
     });
 
     $('.liNoLink').click(function () {
-        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('clicked');  
+        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('js_clicked');  
         
-        $(this).closest('#nav').find('.navClose, .navOpen').removeClass('clicked');
+        $(this).closest('#nav').find('.navClose, .navOpen').removeClass('js_clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
         
         $(this).closest('#nav').find('.modal_nav').hide('fast', 'swing');
@@ -31,11 +31,11 @@ $(document).ready(function () {
     });
 
     $('.navClose').click(function () {
-        $(this).removeClass('clicked');
+        $(this).removeClass('js_clicked');
         
-        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('clicked');
+        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('js_clicked');
         
-        $(this).closest('#nav').find('.navOpen').removeClass('clicked');
+        $(this).closest('#nav').find('.navOpen').removeClass('js_clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
         
         $(this).closest('#nav').find('.modal_nav').hide('fast', 'swing');
@@ -53,14 +53,14 @@ $(document).ready(function () {
     $('.modal_nav').click(function () {
         $(this).hide('fast');
         
-        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('clicked');
-        $(this).closest('#nav').find('.navClose').removeClass('clicked');
+        $(this).closest('#header').find('.logoH, .social, .language_ul').removeClass('js_clicked');
+        $(this).closest('#nav').find('.navClose').removeClass('js_clicked');
         $(this).closest('#nav').find('.mainMenu').removeClass('open');
         
         $(this).closest('#nav').find('.subMenu').removeClass('openDR');
         $(this).closest('#nav').find('.subMenu').attr('aria-expanded', 'false');
         
-        $(this).closest('#nav').find('.navOpen').removeClass('clicked');
+        $(this).closest('#nav').find('.navOpen').removeClass('js_clicked');
         $(this).closest('#nav').find('.navOpen').attr('aria-pressed', 'false');
         
         $(this).closest('#nav').find('.topLevelItem').removeClass('openDR');
