@@ -151,7 +151,7 @@
         
         @if $navDrawer_act == "on"{
             .logoH{
-                &.js_clicked{
+                &.clicked{
                     @include borderStyleR($navBdColourR_navDrawer);
                     box-sizing: border-box;
                     position: fixed;

@@ -884,9 +884,6 @@ b, strong,
 /* =============================================================================
    Backgrounds Includes | Custom [includesBackgrounds.scss]
    ========================================================================== */
-.bgError {
-  background-color: #eb1c24; }
-
 .bgWhite {
   background-color: #fff; }
 
@@ -913,6 +910,9 @@ b, strong,
 
 .bgGreyXD {
   background-color: #333; }
+
+.bgError {
+  background-color: #eb1c24; }
 
 a.mainBgColour:hover, a.mainBgColour:focus {
   background-color: #666666; }

@@ -57,7 +57,7 @@
         }
         
         @if $navDrawer_act == "on"{   
-            &.js_clicked{
+            &.clicked{
                 top: auto;
                 right: auto;
                 position: fixed;

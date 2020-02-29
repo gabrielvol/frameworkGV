@@ -13,13 +13,13 @@
             }
             
             .navOpen{                
-                &.js_clicked{
+                &.clicked{
                     display: $none;
                 } 
             }
 
             .navClose{                
-                &.js_clicked{
+                &.clicked{
                     display: block;
                 } 
             }

@@ -114,7 +114,7 @@
         }
         
         @if $navDrawer_act == "on"{
-            &.js_clicked{
+            &.clicked{
                 position: fixed;
                 z-index: $zIndex_social_clicked;
                 top: auto;
