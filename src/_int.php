@@ -2,6 +2,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/__main.var.inc.php');
     
     $page_int       = 1;
+    $load_lightbox  = 0;
     
     $site_title     = "PaginaInterna | ".$company_name_title;
   //$site_title_GB  = "PaginaInterna | ".$company_name_title;
