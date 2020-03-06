@@ -14,10 +14,13 @@
     $site_desc_global           = '';
     $site_desc_global_GB        = '';
     
-    // Max 35 char
-    // 123456789-123456789-123456789-12345 
-    $openGraph_desc_global      = '';
-    // Max 65 char                       ·
+    // Max 65 char                                                     ·
     // 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $openGraph_desc_global_GB   = '';
+    $openGraph_title_global     = "";
+    $openGraph_title_global_GB  = "";
+    
+    // Max 35 char                       ·
+    // 123456789-123456789-123456789-12345 
+    $openGraph_desc_global     = "";
+    $openGraph_desc_global_GB  = "";
 ?>
