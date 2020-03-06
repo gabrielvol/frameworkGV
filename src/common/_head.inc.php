@@ -55,6 +55,7 @@
 <meta property="og:description" content="<?php echo $openGraph_desc; ?>">
 <!--<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">-->
 <meta property="og:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">
+<meta property="og:image:type" content="image/jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>">
 <meta property="og:locale" content="<?php echo $site_lang_locale; ?>">
@@ -64,6 +65,7 @@
 <meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_desc_DE; } else { echo $openGraph_desc; } ?>">
 <meta property="og:image:secure_url" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">
 <meta property="og:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">
+<meta property="og:image:type" content="image/jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>">
 <meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>">
