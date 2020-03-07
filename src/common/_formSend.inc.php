@@ -31,8 +31,8 @@
     //--------------------------------------------------------------------------
     // Inicia proceso de form
     if (isset($_POST['enviarForm__formName'])){
-        ini_set('sendmail_from', $form_contacto_recipient);
-        ini_set('SMTP','mail.'. $domain_global);
+        //ini_set('sendmail_from', $form_contacto_recipient);
+        //ini_set('SMTP','mail.'. $domain_global);
 
         // Asignamos datos de campos a variables
         $data_nombre__formName          = $_POST['data_nombre__formName'];
@@ -111,7 +111,7 @@
         $formMail_texto .= "<strong>Asunto:</strong> ". $data_asunto__formName ."<br />";
         $formMail_texto .= "<strong>&iquest;C&oacute;mo quer&eacute;s que te contactemos?:</strong> ". $data_comoQueres__formName ."<br />";
         $formMail_texto .= "<strong>Rubro:</strong> ". $data_rubro__formName ."<br />";
-        $formMail_texto .= "<br /><strong>Mensaje:</strong><br />". $mensaje;
+        $formMail_texto .= "<br /><strong>Mensaje:</strong><br />". $data_mensaje;
         $formMail_texto .= '<br /><br />______<br /><small style="color:#666">Fin del mensaje</small>';
         
         

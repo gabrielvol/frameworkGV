@@ -35,7 +35,7 @@
                 <form method="post" class="mha" id="formID">
                     <?php
                         include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
-                        echo $formStatusMsg__formName;
+                        echo $formStatus_MSG__formName;
 
                         if($section_contacto_hasMandatoryMsg_act == 1) {
                             echo '<div class="mandatoryMsg '.$mandatoryMsgClasses__formName.'">'.$mandatoryMsg__formName.'</div>';
