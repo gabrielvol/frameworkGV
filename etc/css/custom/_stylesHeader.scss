@@ -96,7 +96,7 @@
             height: $header_height_BT;
         }
         
-        @if $header_fixed_act_BT == "on" $navAcc_act == "on"{
+        @if $header_fixed_act_BT == "on" or $navAcc_act == "on"{
             position: fixed;
             top: 0;
             right: 0;
