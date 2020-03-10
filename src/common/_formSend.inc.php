@@ -23,7 +23,7 @@
     
     $formStatus_MSG_error_globalA__formName   = _('Hubo un error al enviar el mensaje.');
     $formStatus_MSG_error_globalB__formName   = _('Intente nuevamente m&aacute;s tarde.');
-    $formStatus_MSG_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . '<a href="'. $form_contacto_recipient_pop_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_contacto_recipient_pop .'</a>.';
+    $formStatus_MSG_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_contacto_recipient_pop_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_contacto_recipient_pop .'</a>.';
     
     //--------------------------------------------------------------------------
     // Status ini
