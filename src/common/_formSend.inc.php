@@ -1,9 +1,9 @@
 <?php
     //--------------------------------------------------------------------------
     // Fuentes de título de pop
-    $formPop_h2_ok_classes__formName        = 'mbm greenSystem alignCenter';
-    $formPop_h2_error_classes__formName     = 'mbm errorColour alignCenter';
-    $formPop_mailto_MSG_classes__formName   = 'displayBlock mbm alignCenter';
+    $formPop_h2_ok_classes__formName    = 'mbm greenSystem alignCenter';
+    $formPop_h2_error_classes__formName = 'mbm errorColour alignCenter';
+    $formPop_anchor_classes__formName   = 'mbm alignCenter';
     
     
     //--------------------------------------------------------------------------
@@ -23,7 +23,7 @@
     
     $formStatus_MSG_error_globalA__formName   = _('Hubo un error al enviar el mensaje.');
     $formStatus_MSG_error_globalB__formName   = _('Intente nuevamente m&aacute;s tarde.');
-    $formStatus_MSG_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . '<a href="'. $form_contacto_recipient_pop_mailto .'" class="'. $formPop_mailto_MSG_classes__formName .'">'. $form_contacto_recipient_pop .'</a>.';
+    $formStatus_MSG_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . '<a href="'. $form_contacto_recipient_pop_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_contacto_recipient_pop .'</a>.';
     
     //--------------------------------------------------------------------------
     // Status ini
@@ -536,7 +536,7 @@
                         . '<button type="submit" class="pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="'. $formPop_h2_error_classes__formName .'">'._("$formStatus_MSG_error_globalA__formName").'</h2>'
                         . '<p class="status error">'._("$formStatus_MSG_error_globalB__formName").'</p>'
-                        . '<p class="status error mailto_MSG">'._("$formStatus_MSG_error_globalC__formName").'</p>'
+                        . '<p class="status error">'._("$formStatus_MSG_error_globalC__formName").'</p>'
                         . '<button type="submit" class="pop_submit bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
