@@ -4,14 +4,16 @@
 .social{
     z-index: $zIndex_social;
         
-    li{        
+    li{
         & + li{}
     }   
     
     a{
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 30px;
+        background-size: 100%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .social_fb{ // Soc Facebook
@@ -79,11 +81,11 @@
             background-image: url('/nuevo/img/social_wa.svg');
         }
             
-            &.conTel{
-                background-position: left center;
-                background-size: auto 20px;
-                padding-left: 25px;
-            }
+        &.conTel{
+            background-position: left center;
+            background-size: auto 20px;
+            padding-left: 25px;
+        }
     }
 
     .social_em{ // Soc Correo Electrónico
@@ -106,7 +108,6 @@
     
     @include beforeTablet{       
         li{
-            &,
             a,
             img{
                 @include squareSize(35px);            
@@ -123,7 +124,6 @@
                 left: auto;
 
                 li{
-                    &,
                     a,
                     img{
                         @include squareSize(45px);            
@@ -135,7 +135,6 @@
     
     @include afterTablet{
         li{
-            &,
             a,
             img{
                 @include squareSize(50px);            

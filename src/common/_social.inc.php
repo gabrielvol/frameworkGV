@@ -1,4 +1,4 @@
-<ul class="social horizontal clearfix">
+<ul class="social unstyled displayFlex">
     <li class="social_fb">
         <a href="<?php echo $social_facebook_url ?>" class="fb displayBlock hoverGrowL indentedText">
             <?php echo _("Seguinos en Facebook"); ?>
