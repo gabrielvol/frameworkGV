@@ -13,8 +13,8 @@
     
     
     
-    /* // E-mail addresses -------------------------------------------------- */        
+    /* // E-mail addresses -------------------------------------------------- */
+    $social_email_address_global            = $social_email_address_A;
     $social_email_mailto_global             = 'mailto:'. $social_email_address_A;
-    $social_email_mailto_global_x           = 'mailto:'. $social_email_address_adriana .','. $social_email_address_B;
-    $social_email_mailto_global_address     = $social_email_address_A;
+    $social_email_mailto_global_CC          = 'mailto:'. $social_email_address_adriana .','. $social_email_address_B;
 ?>

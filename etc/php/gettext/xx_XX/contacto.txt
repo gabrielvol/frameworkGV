@@ -10,12 +10,12 @@ msgstr ""
 msgid "Los campos marcados con * son obligatorios."
 msgstr ""
 
-<?php echo _('Complete el formulario. Nos comunicaremos con Ud. a la brevedad.'); ?>
-msgid "Complete el formulario. Nos comunicaremos con Ud. a la brevedad."
+<?php echo _('Complete el formulario por favor. Nos comunicaremos con Ud. a la brevedad.'); ?>
+msgid "Complete el formulario por favor. Nos comunicaremos con Ud. a la brevedad."
 msgstr ""
 
-<?php echo _('Complete el formulario.'); ?>
-msgid "Complete el formulario."
+<?php echo _('Complete el formulario por favor.'); ?>
+msgid "Complete el formulario por favor."
 msgstr ""
 
 <?php echo _('Nos comunicaremos con Ud. a la brevedad.'); ?>
@@ -36,6 +36,10 @@ msgstr ""
 
 <?php echo _('Intente nuevamente m&aacute;s tarde.'); ?>
 msgid "Intente nuevamente m&aacute;s tarde."
+msgstr ""
+
+<?php echo _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a'); ?>
+msgid "Puede comunicarse enviando un mensaje por correo electr&oacute;nico a"
 msgstr ""
 
 

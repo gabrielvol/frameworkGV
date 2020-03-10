@@ -76,7 +76,7 @@
         </a>
     </li>
     <li class="social_em">
-        <a href="<?php echo $social_email_mailto_global ?>" class="displayBlock"><?php echo $social_email_mailto_global_address ?></a>
+        <a href="<?php echo $social_email_mailto_global ?>" class="displayBlock"><?php echo $social_email_address_global ?></a>
     </li>
     <li class="social_ta">
         <a href="/nuevo/" class="ta displayBlock hoverGrowL indentedText">
