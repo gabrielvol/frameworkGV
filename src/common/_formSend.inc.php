@@ -137,7 +137,7 @@
         $formSend_error_MSG_data_fecha__formName          = _("Por favor, indique la fecha deseada.");
         $formSend_error_MSG_data_dni__formName            = _("Por favor, ingrese su n&uacute;mero de DNI.");
         
-        $formSend_error_MSG_data_email__formName          = _("Por favor, ingrese su direcci&oacute;n de correo."); 
+        $formSend_error_MSG_data_email__formName          = _("Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida."); 
         $formSend_error_MSG_data_telefono__formName       = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono."); 
         
         $formSend_error_MSG_data_webSite__formName        = _("Por favor, ingrese su sitio web.");
