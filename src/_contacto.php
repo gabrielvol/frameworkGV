@@ -160,7 +160,7 @@
 
                 <label for="data_codigoPostal__formName">
                     <span class="labelName"><?php echo _('C&oacute;digo postal'); ?></span>
-                    <input type="tel" name="data_codigoPostal__formName" id="data_codigoPostal__formName" class="codigopostal <?php echo $formInput_error_class_data_codigoPostal__formName ?>" value="<?php echo $_POST['data_codigoPostal__formName']; ?>" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $formInput_autofocus_data_codigoPostal__formName ?>>
+                    <input type="text" name="data_codigoPostal__formName" id="data_codigoPostal__formName" class="codigopostal <?php echo $formInput_error_class_data_codigoPostal__formName ?>" value="<?php echo $_POST['data_codigoPostal__formName']; ?>" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $formInput_autofocus_data_codigoPostal__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_codigoPostal__formName ?>"><?php echo $formSpan_error_MSG_data_codigoPostal__formName ?></span>
                 </label>
 
