@@ -7,7 +7,7 @@ $backgroundColours_map:(
     White:        $white,
     Black:        $black,
   //RedColour:    $redColour,
-    Green_system: $green_system,
+    GreenSystem:  $greenSystem,
     GreyXXL:      $greyXXL,
     GreyXL:       $greyXL,
     GreyL:        $greyL,
@@ -23,7 +23,7 @@ $bgErrorColour:   map-get($backgroundColours_map, Error);
 $bgWhite:         map-get($backgroundColours_map, White);
 $bgBlack:         map-get($backgroundColours_map, Black);
 //$bgRedColour:     map-get($backgroundColours_map, RedColour);
-$bgGreen_system:  map-get($backgroundColours_map, Green_system);
+$bgGreenSystem:   map-get($backgroundColours_map, GreenSystem);
 $bgGreyXXL:       map-get($backgroundColours_map, GreyXXL);
 $bgGreyXL:        map-get($backgroundColours_map, GreyXL);
 $bgGreyL:         map-get($backgroundColours_map, GreyL);

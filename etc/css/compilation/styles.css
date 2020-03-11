@@ -693,13 +693,13 @@ a.white:focus, a.white:hover {
 a.white.noHover:focus, a.white.noHover:hover {
   text-shadow: 0 0 0 transparent; }
 
-.green_system, .green_system b, .green_system strong, .green_system i, .green_system em {
+.greenSystem, .greenSystem b, .greenSystem strong, .greenSystem i, .greenSystem em {
   color: #339900; }
 
-a.green_system, a.green_system:active, a.green_system:visited, a.green_system.noHover:focus, a.green_system.noHover:hover {
+a.greenSystem, a.greenSystem:active, a.greenSystem:visited, a.greenSystem.noHover:focus, a.greenSystem.noHover:hover {
   color: #339900; }
 
-a.green_system:focus, a.green_system:hover {
+a.greenSystem:focus, a.greenSystem:hover {
   color: #113300; }
 
 .greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
@@ -890,7 +890,7 @@ b, strong,
 .bgBlack {
   background-color: #000; }
 
-.bgGreen_system {
+.bgGreenSystem {
   background-color: #339900; }
 
 .bgGreyXXL {
@@ -2059,13 +2059,7 @@ article, article::before, article::after, details, details::before, details::aft
   #header {
     box-sizing: border-box;
     padding-top: 20px;
-    padding-bottom: 15px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0; }
-    #header.topperShadow {
-      box-shadow: 0 0 7px #000; }
+    padding-bottom: 15px; }
     #header .logoH {
       width: 220px; }
       #header .logoH a,
