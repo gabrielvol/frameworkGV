@@ -7,9 +7,9 @@
  // $url-seccion        = '#'. _('seccion');
     $url_contacto       = '#'. _('contacto');  
     
-    $href_inicio        = 'href="'.$url_inicio.'"';
+    $href_inicio        = 'href="'. $url_inicio .'"';
  // $href-seccion       = 'href="'. $url .'"';
  // $href-seccion       = 'href="'. $url .'"';
  // $href-seccion       = 'href="'. $url .'"';
-    $href_contacto      = 'href="'.$url_contacto.'"';
+    $href_contacto      = 'href="'. $url_contacto .'"';
 ?>

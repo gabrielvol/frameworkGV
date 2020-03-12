@@ -52,7 +52,7 @@
                 &.current{
                     a,
                     .topLevelItem{
-                        @if $nav_itemCurrent_borderBottom_act == "on"{
+                        @if $nav_itemCurrent_bdB_act == "on"{
                             @include borderStyleB($navBdColour_itemCurrent, 3px);
                         }
                     }
