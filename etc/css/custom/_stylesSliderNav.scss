@@ -38,33 +38,6 @@
         margin-right: $auto;
         margin-left: $auto;
     }
-
-    li{           
-        width: 100px!important;
-
-        &, img{
-            @include transition(1s);
-        }
-
-        img{
-            @include opacityCustom(80);
-            filter: grayscale(1);
-        }
-
-        &.slick-current{
-            &, &:focus, &:hover{                    
-                img{
-                    @include opacityCustom(100);
-                }
-            }
-        }
-
-        &:focus, &:hover{                    
-            img{
-                filter: grayscale(0);
-            }
-        }
-    }
     
     @include mobileOnly{          
         .slick-list{
@@ -141,6 +114,35 @@
 
             &:nth-child(9){
                 /*margin-left: 0;*/
+            }
+        }
+    }
+}
+
+.slickNav{
+    li{           
+        /*width: 100px!important;*/
+
+        &, img{
+            @include transition(1s);
+        }
+
+        img{
+            @include opacityCustom(80);
+            filter: grayscale(1);
+        }
+
+        &.slick-current{
+            &, &:focus, &:hover{                    
+                img{
+                    @include opacityCustom(100);
+                }
+            }
+        }
+
+        &:focus, &:hover{                    
+            img{
+                filter: grayscale(0);
             }
         }
     }
