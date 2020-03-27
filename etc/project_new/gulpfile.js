@@ -1,31 +1,35 @@
-var gulp         = require('gulp')
-    ,sass         = require('gulp-sass')
-    ,postcss      = require("gulp-postcss")
-    ,cssnano      = require('gulp-cssnano')
-    ,autoprefixer = require('gulp-autoprefixer');
-    
-    // Static Server + watching scss files
-gulp.task('serve', ['processCSS'], function() {
-    gulp.watch("./etc/css/custom/*.scss", ['processCSS']);
-    gulp.watch("./etc/css/custom/variables/*.scss", ['processCSS']);
-    gulp.watch("./etc/css/scss/*.scss", ['processCSS']);
-});
+const { src, dest, watch, parallel } = require('gulp');
+const sass          = require('gulp-sass');
+const postcss       = require('gulp-postcss');
+const cssnano       = require('gulp-cssnano');
+const autoprefixer  = require('gulp-autoprefixer');
 
+/* =============================================================================
+   Regular Sass
+   ========================================================================== */
     // Compile sass into CSS
-gulp.task('compileSass', function () {
-    return gulp.src('./etc/css/custom/styles.scss')
+function compileSass() {
+    return src('./etc/css/custom/styles.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./etc/css/compilation'));
-});
+        .pipe(dest('./etc/css/compilation/'));
+}
 
     // CSSnano / PostCSS / Autoprefixer
-gulp.task('processCSS', ['compileSass'], function() {
-    gulp.src("./etc/css/compilation/styles.css")
+function processCSS() {
+    return src("./etc/css/compilation/styles.css")
         .pipe(cssnano([,
             postcss(),
             autoprefixer({browsers: ['last 3 versions']})
         ]))
-        .pipe(gulp.dest("./src/css/"));
-});
+        .pipe(dest("./src/css/"));
+}
 
-gulp.task('default', ['serve']);
+function watchSCSS(){
+    watch('./etc/css/custom/**/*.scss', {ignoreInitial: false}, compileSass);
+}
+
+function watchCompilation(){
+    watch('./etc/css/compilation/styles.css', {delay: 1000}, processCSS);
+}
+
+exports.default = parallel(watchSCSS, watchCompilation);
