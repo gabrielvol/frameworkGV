@@ -72,6 +72,16 @@ Contraseña
 ***
 
 
+#### WordPress access
+`http://sitioweb/wp-admin`
+
+Usuario
+`user`
+
+Contraseña
+`pass`  
+***
+
 
 #### Licencia
 CC BY-NC-ND 4.0  
