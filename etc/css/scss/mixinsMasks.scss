@@ -1,7 +1,8 @@
 /* =============================================================================
    Mask Mixins | Etc [mixinsMasks.scss]
    ========================================================================== */
-    //Mixin para máscara con centrado ciego
+
+/* // Mixin para máscara con centrado ciego --------------------------------- */
 @mixin centerMaskBlind($centerMaskBlindMX_width, $centerMaskBlindMX_height, $centerMaskBlindMX_childWidth: auto, $centerMaskBlindMX_childHeight: auto){
     &{
         position: relative;
@@ -35,7 +36,8 @@
     transform: translate(-50%, -50%);
 }
 
-    //Mixins para máscaras
+
+/* // Mixin para mascaras --------------------------------------------------- */
 @mixin maskWidth($maskWidthMX_width: 100%){
     width: $maskWidthMX_width;
     overflow: hidden;

@@ -19,13 +19,15 @@ $desktopLargeMin:   1600px;
 /* =============================================================================
    Media Queries Mixins | Custom [mixinsMediaQueries.scss]
    ========================================================================== */
-/* Nav */
+
+/* // Nav ------------------------------------------------------------------- */
 @mixin navBT{
     @media (max-width: #{$nav_mediaQuerie_BT}){@content;}}
 @mixin navAT{
     @media (min-width: #{$nav_mediaQuerie_AT}){@content;}}
     
-/* Mobile */
+    
+/* // Mobile ---------------------------------------------------------------- */
 @mixin mobileOnly{ // 499px
     @media (max-width: #{$mobileMax}){@content;}}
 
@@ -36,7 +38,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: #{$mobileLMin})
         and (max-width: #{$mobileLMax}){@content;}}
     
-/* Tablet */
+    
+/* // Tablet ---------------------------------------------------------------- */
 @mixin beforeTablet{ // 767px
     @media (max-width: #{$mobileLMax}){@content;}}
 
@@ -47,7 +50,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: #{$tabletMin})
         and (max-width: #{$tabletPMax}){@content;}}
     
-/* Tablet Landscape*/
+    
+/* // Tablet Landscape ------------------------------------------------------ */
 @mixin beforeTabletLandscape{ // 1023px
     @media (max-width: #{$tabletPMax}){@content;}}
     
@@ -62,7 +66,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: #{$tabletMin})
         and (max-width: #{$tabletMax}){@content;}}
     
-/* 600 */
+    
+/* // 600px ----------------------------------------------------------------- */
 @mixin beforeMobile600{
     @media (max-width: 600px){@content;}}
     
@@ -73,7 +78,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: 601px)
         and (max-width: #{$mobileLMax}){@content;}}
     
-/* 650 */
+    
+/* // 650px ----------------------------------------------------------------- */
 @mixin beforeMobile650{
     @media (max-width: 650px){@content;}}
     
@@ -84,7 +90,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: 651px)
         and (max-width: #{$mobileLMax}){@content;}}
     
-/* 700 */
+    
+/* // 700px ----------------------------------------------------------------- */
 @mixin beforeMobile700{
     @media (max-width: 700px){@content;}}
     
@@ -95,7 +102,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: 701px)
         and (max-width: #{$mobileLMax}){@content;}}
     
-/* 800 */
+    
+/* // 800px ----------------------------------------------------------------- */
 @mixin beforeMobile800{
     @media (max-width: 800px){@content;}}
     
@@ -106,7 +114,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: 801px)
         and (max-width: #{$tabletPMax}){@content;}}
     
-/* 850 */
+    
+/* // 850px ----------------------------------------------------------------- */
 @mixin beforeMobile850{
     @media (max-width: 850px){@content;}}
     
@@ -117,7 +126,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: 851px)
         and (max-width: #{$tabletPMax}){@content;}}
     
-/* 900 */
+    
+/* // 900px ----------------------------------------------------------------- */
 @mixin beforeMobile900{
     @media (max-width: 900px){@content;}}
     
@@ -128,7 +138,8 @@ $desktopLargeMin:   1600px;
     @media (min-width: 901px)
         and (max-width: #{$tabletPMax}){@content;}}
     
-/* 950 */
+    
+/* // 950px ----------------------------------------------------------------- */
 @mixin beforeMobile950{
     @media (max-width: 950px){@content;}}
     
@@ -139,28 +150,34 @@ $desktopLargeMin:   1600px;
     @media (min-width: 951px)
         and (max-width: #{$tabletPMax}){@content;}}
     
-/* Desktop */
+    
+/* // Desktop --------------------------------------------------------------- */
 @mixin beforeDesktop{ // 1199px
     @media (max-width: #{$tabletMax}){@content;}}
     
 @mixin afterDesktop{ // 1200px
     @media (min-width: #{$desktopMin}){@content;}}
+
     
-/* Big Screens + */
+/* // Big Screens + --------------------------------------------------------- */
 @mixin afterDesktopLarge{ // 1600px
     @media (min-width: #{$desktopLargeMin}){@content;}}
 
+    
+    
 /* =============================================================================
    iPhone & iPads Mixins | Custom [mixinsMediaQueries.scss]
    ========================================================================== */
-/* iPhone 4 & 4S Only */
+
+/* // iPhone 4 & 4S Only ---------------------------------------------------- */
 @mixin iPhone4Only{
     @media only screen 
         and (min-device-width: 320px) 
         and (max-device-width: 480px)
         and (-webkit-min-device-pixel-ratio: 2) {@content;}}
 
-/* iPhone 4 & 4S Portrait Only */
+    
+/* // iPhone 4 & 4S Portrait Only ------------------------------------------- */
 @mixin iPhone4PortraitOnly{
     @media only screen 
         and (min-device-width: 320px) 
@@ -168,7 +185,8 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {@content;}}
 
-/* iPhone 4 & 4S Landscape Only */
+    
+/* // iPhone 4 & 4S Landscape Only ------------------------------------------ */
 @mixin iPhone4LandscapeOnly{
     @media only screen 
         and (min-device-width: 320px) 
@@ -176,15 +194,16 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {@content;}}
 
-        
-/* iPhone 5 & 5S Only */
+    
+/* // iPhone 5 & 5S Only ---------------------------------------------------- */
 @mixin iPhone5Only{
     @media only screen 
         and (min-device-width: 320px) 
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2) {@content;}}
 
-/* iPhone 5 & 5S Portrait Only */
+    
+/* // iPhone 5 & 5S Portrait Only ------------------------------------------- */
 @mixin iPhone5PortraitOnly{
     @media only screen 
         and (min-device-width: 320px) 
@@ -192,7 +211,8 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {@content;}}
 
-/* iPhone 5 & 5S Landscape Only */
+    
+/* // iPhone 5 & 5S Landscape Only ------------------------------------------ */
 @mixin iPhone5LandscapeOnly{
     @media only screen 
         and (min-device-width: 320px) 
@@ -200,15 +220,16 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {@content;}}
 
-        
-/* iPhone 6 Only */
+    
+/* // iPhone 6 Only --------------------------------------------------------- */
 @mixin iPhone6Only{
     @media only screen 
         and (min-device-width: 375px) 
         and (max-device-width: 667px)
         and (-webkit-min-device-pixel-ratio: 2) {@content;}}
 
-/* iPhone 6 Portrait Only */
+    
+/* // iPhone 6 Portrait Only ------------------------------------------------ */
 @mixin iPhone6PortraitOnly{
     @media only screen 
         and (min-device-width: 375px) 
@@ -216,7 +237,8 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {@content;}}
 
-/* iPhone 6 Landscape Only */
+    
+/* // iPhone 6 Landscape Only ----------------------------------------------- */
 @mixin iPhone6LandscapeOnly{
     @media only screen 
         and (min-device-width: 375px) 
@@ -224,15 +246,16 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {@content;}}
 
-        
-/* iPhone 6 Plus Only */
+    
+/* // iPhone 6 Plus Only ---------------------------------------------------- */
 @mixin iPhone6PlusOnly{
     @media only screen 
         and (min-device-width: 414px) 
         and (max-device-width: 736px)
         and (-webkit-min-device-pixel-ratio: 3) {@content;}}
 
-/* iPhone 6 Plus Portrait Only */
+    
+/* // iPhone 6 Plus Portrait Only ------------------------------------------- */
 @mixin iPhone6PlusPortraitOnly{
     @media only screen 
         and (min-device-width: 414px) 
@@ -240,16 +263,17 @@ $desktopLargeMin:   1600px;
         and (-webkit-min-device-pixel-ratio: 3)
         and (orientation: portrait) {@content;}}
 
-/* iPhone 6 Plus Landscape Only */
+    
+/* // iPhone 6 Plus Landscape Only ------------------------------------------ */
 @mixin iPhone6PlusLandscapeOnly{
     @media only screen 
         and (min-device-width: 414px) 
         and (max-device-width: 736px)
         and (-webkit-min-device-pixel-ratio: 3)
         and (orientation: landscape) {@content;}}
-        
+
     
-/* iPad 1 & 2 Portrait Only */
+/* // iPad 1 & 2 Portrait Only ---------------------------------------------- */
 @mixin iPadPortraitOnly{
     @media only screen 
         and (min-device-width: 768px) 
@@ -257,7 +281,8 @@ $desktopLargeMin:   1600px;
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1) {@content;}}
 
-/* iPad 1 & 2 Landscape Only */
+    
+/* // iPad 1 & 2 Landscape Only --------------------------------------------- */
 @mixin iPadLandscapeOnly{
     @media only screen 
         and (min-device-width: 768px) 
@@ -265,8 +290,8 @@ $desktopLargeMin:   1600px;
         and (orientation: landscape) 
         and (-webkit-min-device-pixel-ratio: 1) {@content;}}
 
-
-/* iPad 3 & 4 Portrait Only */
+    
+/* // iPad 3 & 4 Portrait Only ---------------------------------------------- */
 @mixin iPad3PortraitOnly{
     @media only screen 
         and (min-device-width: 768px) 
@@ -274,15 +299,17 @@ $desktopLargeMin:   1600px;
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 2) {@content;}}
 
-/* iPad 3 & 4 Landscape Only */
+    
+/* // iPad 3 & 4 Landscape Only --------------------------------------------- */
 @mixin iPad3LandscapeOnly{
     @media only screen 
         and (min-device-width: 768px) 
         and (max-device-width: 1024px) 
         and (orientation: landscape) 
         and (-webkit-min-device-pixel-ratio: 2) {@content;}}
-        
-/* Retina Screens */
+
+    
+/* // Retina Screens -------------------------------------------------------- */
 @mixin retina{
     @media screen 
         and (min-device-width: 1200px) 

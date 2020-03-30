@@ -1,7 +1,8 @@
 /* =============================================================================
    Center Mixins | Etc [mixinsCenter.scss]
    ========================================================================== */
-    //Mixin para clase .absoluteCenter
+
+/* // Mixin para clase .absoluteCenter -------------------------------------- */
 @mixin centerAbsolute($centerAbsoluteMX_width, $centerAbsoluteMX_height, $centerAbsoluteMX_position: absolute){
     $centerAbsoluteMX_width_half: calc(#{$centerAbsoluteMX_width} / 2);
     $centerAbsoluteMX_height_half: calc(#{$centerAbsoluteMX_height} / 2);
@@ -24,7 +25,8 @@
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-    //Mixin para clase .centerVertical
+
+/* // Mixin para clase .centerVertical -------------------------------------- */
 @mixin centerVertical($centerVerticalMX_height, $centerVerticalMX_position: absolute){
     $centerVerticalMX_height_half: #{$centerVerticalMX_height} / 2;
     
@@ -33,7 +35,8 @@
     height: $centerVerticalMX_height;
     margin-top: calc(-1 * #{$centerVerticalMX_height_half});
 }
-    //Mixin para clase .centerHorizontal
+
+/* // Mixin para clase .centerHorizontal ------------------------------------- */
 @mixin centerHorizontal($centerHorizontalMX_width, $centerHorizontalMX_position: absolute){
     $centerHorizontalMX_width_half: #{$centerHorizontalMX_width} / 2;
     
@@ -42,13 +45,15 @@
     width: $centerHorizontalMX_width;
     margin-left: calc(-1 * #{$centerHorizontalMX_width_half});
 }
-    //Mixin centrado custom
+
+/* // Mixin centrado custom ------------------------------------------------- */
 @mixin centerCustom($centerCustomMX_width: 90%){
     width: $centerCustomMX_width;
     margin-right: $auto;
     margin-left: $auto;
 }
-    //Mixin para centrar pop_main
+
+/* // Mixin para centrar pop_main ------------------------------------------- */
 @mixin centerPopup($centerPopupMX_width, $centerPopupMX_height, $centerPopupMX_top: 40%){
     $centerPopupMX_width_half: #{$centerPopupMX_width} / 2;
     $centerPopupMX_height_half: #{$centerPopupMX_height} / 2;   

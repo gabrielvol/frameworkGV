@@ -1,10 +1,10 @@
 /* =============================================================================
    Border Helpers Mixins | Etc [mixinsBorders.scss]
    ========================================================================== */
-    //Border Style    
 //A,T,R,B,L = all,top,right,bottom,left
 //H,V,X = horizontal,vertical,user defined values
 
+/* // General Border Radius Mixins ------------------------------------------ */
 @mixin borderStyle($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
     border: $borderStyleMX_bdWidth $borderStyleMX_bdStyle $borderStyleMX_bdColour}
 @mixin borderStyleT($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
@@ -31,11 +31,7 @@
     border-color: $borderStyleMX_bdColour;
 }
 
-/* =============================================================================
-   Border Radius Mixins | Etc [mixinsBorders.scss]
-   ========================================================================== */
-//T,R,B,L = top,right,bottom,left
-
+/* // Border Radius Mixins -------------------------------------------------- */
 @mixin borderRadius($borderRaduisMX_value: $helpers_border_radius_global){
     border-radius: $borderRaduisMX_value;
 }
@@ -64,10 +60,7 @@
     border-radius: 0 0 0 $borderRaduisMX_value;
 }
 
-/* =============================================================================
-   Border Separation Mixins | Etc [mixinsBorders.scss]
-   ========================================================================== */
-    //Border separation with equal padding and margin
+/* // Border separation with equal padding and margin ----------------------- */
 @mixin PBMsT($PBMsMX_separation: 10px, $PBMsMX_bdWidth: 1px, $PBMsMX_bdColour: $bdColour_main_global, $PBMsMX_bdStyle: solid){
     padding-top: $PBMsMX_separation;
     @include bdStyleT($PBMsMX_bdWidth, $PBMsMX_bdStyle, $PBMsMX_bdColour);
@@ -89,9 +82,7 @@
     margin-left: $PBMsMX_separation;
 }
 
-/* =============================================================================
-   Border Fancy Horizontal Line Mixins | Etc [mixinsBorders.scss]
-   ========================================================================== */
+/* // Border Fancy Horizontal Line Mixins ----------------------------------- */
 @mixin fancyHorizontalLines($fancyHorizontalLinesMX_border: 1px solid white, $fancyHorizontalLinesMX_width: 100px, $fancyHorizontalLinesMX_separation: 15px){
     &{
         line-height: 0.5;

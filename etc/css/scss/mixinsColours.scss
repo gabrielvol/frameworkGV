@@ -1,7 +1,8 @@
 /* =============================================================================
    Fonts Mixins | Etc [mixinsColours.scss]
    ========================================================================== */
-    //Generador de clases por cada color claro
+
+/* // Generador de clases por cada color claro ------------------------------ */
 @mixin colourLightClassesGenerator($colours_map_light_darkenValue){
     @each $colourLightClassesGeneratorMX_colourClassName, $colourLightClassesGeneratorMX_colourHexValue in $colours_map_light {
         .#{$colourLightClassesGeneratorMX_colourClassName}{
@@ -25,7 +26,9 @@
         }
     }
 }
-    //Generador de clases por cada color oscuro
+
+
+/* // GGenerador de clases por cada color oscuro ---------------------------- */
 @mixin colourDarkClassesGenerator($colours_map_dark_lightenValue){
     @each $colourDarkClassesGeneratorMX_colourClassName, $colourDarkClassesGeneratorMX_colourHexValue in $colours_map_dark {
         .#{$colourDarkClassesGeneratorMX_colourClassName}{
@@ -49,7 +52,8 @@
         }
     }
 }
-    //Generador de clases para anclas dentro de párrafos por cada color claro
+
+/* // Generador de clases para anclas dentro de párrafos por cada color claro */
 @mixin anchorColoursLightClassesGenerator($anchor_fontColours_map_light_darkenValue){
     @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $anchor_fontColours_map_light {
         .#{$anchorColoursLightClassesGeneratorMX_colourClassName}{            
@@ -58,7 +62,9 @@
         }
     }
 }
-    //Generador de clases para anclas dentro párrafos por cada color oscuro
+
+
+/* // Generador de clases para anclas dentro párrafos por cada color oscuro - */
 @mixin anchorColoursDarkClassesGenerator($anchor_fontColours_map_dark_lightenValue){
     @each $anchorColoursDarkClassesGeneratorMX_colourClassName, $anchorColoursDarkClassesGeneratorMX_colourHexValue in $anchor_fontColours_map_dark {
         .#{$anchorColoursDarkClassesGeneratorMX_colourClassName}{            
@@ -67,7 +73,9 @@
         }
     }
 }
-    //Generador de clases por cada color de fondo
+
+
+/* // Generador de clases por cada color de fondo --------------------------- */
 @mixin backgroundColourClassesGenerator{
     @each $backgroundColourClassesGeneratorMX_bgColourClassName, $backgroundColourClassesGeneratorMX_bgColourHexValue in $backgroundColours_map {
         .bg#{$backgroundColourClassesGeneratorMX_bgColourClassName}{background-color: $backgroundColourClassesGeneratorMX_bgColourHexValue;}
@@ -93,7 +101,9 @@
         }
     }
 }
-    //Generador de clases para colores con focus y hover custom
+
+
+/* // Generador de clases para colores con focus y hover custom ------------- */
 @mixin colourCustomHoverClassesGenerator{
     @each $colourCustomHoverClassesGeneratorMX_colourClassName, $colourCustomHoverClassesGeneratorMX_colourHexValue in $colours_map_custom_hover {
         .#{$colourCustomHoverClassesGeneratorMX_colourClassName}{

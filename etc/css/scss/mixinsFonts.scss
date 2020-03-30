@@ -1,7 +1,8 @@
 /* =============================================================================
    Fonts Mixins | Etc [mixinsFonts.scss]
    ========================================================================== */
-    //Generador de clases por cada fuente
+
+/* // Generador de clases por cada fuente ----------------------------------- */
 @mixin fontFamilyCustomClassesGenerator{
     @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $fontFamilies_map {
         .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
@@ -13,13 +14,17 @@
         }
     }
 }
-    //Generador de pesos por cada fuente
+
+
+/* // Generador de pesos por cada fuente ------------------------------------ */
 @mixin fontFamilyWeightsGenerator{
     @each $fontFamilyWeightsGeneratorMX_fontFamilyClassName, $fontFamilyWeightsGeneratorMX_fontWeighValue in $fontWeights_map {
         .#{$fontFamilyWeightsGeneratorMX_fontFamilyClassName}{font-weight: $fontFamilyWeightsGeneratorMX_fontWeighValue;}
     }
 }
-    //Generador de clases por cada tamaño de fuente
+
+
+/* // Generador de clases por cada tamaño de fuente ------------------------- */
 @mixin fontCustomHeadingsSizesGeneratorMobile{
     @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues in $fontSize_map_mobile {
         #{$fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues;}
