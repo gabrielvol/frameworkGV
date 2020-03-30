@@ -29,23 +29,23 @@ table{
     border-collapse: separate;
    
     tbody{
-        @include borderRadiusT($borderRadiusValue);
+        @include borderRadiusT($helpers_border_radius_table);
         tr{
             &:first-child{
-                @include borderRadiusT($borderRadiusValue);
+                @include borderRadiusT($helpers_border_radius_table);
             }            
             &:last-child{
-                @include borderRadiusB($borderRadiusValue);
+                @include borderRadiusB($helpers_border_radius_table);
             }
         }
     }   
     tfoot{
         td{
             &:first-child{
-                @include borderRadiusBL($borderRadiusValueTable);
+                @include borderRadiusBL($helpers_border_radius_table);
             }
             &:last-child{
-                @include borderRadiusBR($borderRadiusValueTable);
+                @include borderRadiusBR($helpers_border_radius_table);
             }
         }  
     }  
