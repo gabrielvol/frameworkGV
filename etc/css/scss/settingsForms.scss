@@ -55,8 +55,8 @@ fieldset, label, input, select, textarea, button,
 
 fieldset, label, button,
 .mandatoryMsg, .status, .labelName, .formInputErrorMsg{
-    .mobileForm &{
-        @include beforeTablet{
+    @include beforeTablet{
+        .mobileForm &{
             font-size: $fontSize_paragraph_BT;
         }
     }
