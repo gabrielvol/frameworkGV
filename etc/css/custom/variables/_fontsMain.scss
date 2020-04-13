@@ -1,6 +1,11 @@
 /* =============================================================================
    Fonts Main Variables | Custom [fontsMain.scss]
    ========================================================================== */
+/* // References ------------------------------------------------------------ */
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
 ///**Custom Font Families:**
     ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
 $fontFamilies_map:(

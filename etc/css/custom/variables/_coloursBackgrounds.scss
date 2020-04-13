@@ -1,6 +1,11 @@
 /* =============================================================================
    Background Colours Variables | Custom [coloursBackgrounds.scss]
    ========================================================================== */
+/* // References ------------------------------------------------------------ */
+// X, L, D  = extra, light, dark
+// De, B    = desaturated, bright
+
+
 ///**Background Colours Map:** 
     ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixinsColours.scss]`.
 $backgroundColours_map:(

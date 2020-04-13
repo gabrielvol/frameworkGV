@@ -1,6 +1,11 @@
 /* =============================================================================
    Shadows Classes | Custom [classesShadows.scss]
    ========================================================================== */
+/* // References ------------------------------------------------------------ */
+// T, R, B, L       = top, right, bottom, left
+// H, V             = horizontal, vertical
+
+
 .shadow_text{
     text-shadow: $text_shadow_main;
 }
