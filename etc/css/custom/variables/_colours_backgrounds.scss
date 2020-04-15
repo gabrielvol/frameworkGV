@@ -1,5 +1,5 @@
 /* =============================================================================
-   Background Colours Variables | Custom [coloursBackgrounds.scss]
+   Background Colours Variables | Custom [variables/colours_backgrounds.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 // X, L, D  = extra, light, dark
@@ -36,7 +36,7 @@ $bgGrey:          map-get($backgroundColours_map, Grey);
 $bgGreyD:         map-get($backgroundColours_map, GreyD);
 $bgGreyXD:        map-get($backgroundColours_map, GreyXD);
 
-    //Declaramos las variables para colores de fondo
+/*___ Declaramos las variables para colores de fondo _*/
 $bgColour_body:                     $bgWhite;    
 $bgColour_main_global:              $bgGrey;
 $bgColour_imgNeutral_global:        $bgGreyL;
@@ -56,6 +56,6 @@ $backgroundColours_hover_map:(
 $modal_opacity_global:      85;
 $modal_bgColour_global:     $bgBlack;
 
-   // Responsive nav
+/*___ Responsive nav ____________________*/
 $modal_bgColour_nav:        $modal_bgColour_global;
 $modal_opacity_nav:         80;

@@ -1,10 +1,9 @@
 /* =============================================================================
-   Nav Colours Variables | Custom [navColours.scss]
+   Nav Colours Variables | Custom [variables/section_nav_colours.scss]
    ========================================================================== */
 
-/* // Fonts ----------------------------------------------------------------- */
-
-   // Nav BT
+/* // Font Colours ---------------------------------------------------------- */
+/*___ Nav BT ____________________________*/
 $navFontColour_TLI_level0_BT:            $fontColour_main_global;
 $navFontColour_TLI_level1_BT:            $navFontColour_TLI_level0_BT;
 $navFontColour_TLI_level2_BT:            $navFontColour_TLI_level1_BT;
@@ -27,7 +26,8 @@ $navFontColour_itemCurrent_level3_BT:    $navFontColour_TLICurrent_level3_BT;
 
 $navFontColour_backMenu_TLI:             $white!important;
 
-   // Nav AT
+
+/*___ Nav AT ____________________________*/
 $navFontColour_item_AT:                  $fontColour_main_global;
 $navFontColour_item_hover:               $navFontColour_item_AT;
 $navFontColour_itemSub_AT:               $navFontColour_item_AT;
@@ -38,19 +38,20 @@ $navFontColour_itemCurrent_hover:        $navFontColour_itemCurrent_AT;
 $navFontColour_itemSubCurrent_AT:        $navFontColour_item_AT;
 $navFontColour_itemSubCurrent_hover:     $navFontColour_itemSubCurrent_AT;
 
-   // Topper
+
+/*___ Topper ____________________________*/
 $navFontColour_topper:                   $navFontColour_item_AT;
 $navFontColour_topper_hover:             $navFontColour_topper;
 $navFontColour_topper_itemCurrent:       $navFontColour_item_AT;
-     
-   // Hamburger     
+
+
+/*___ Hamburger _________________________*/  
 $navFontColour_hamburger:                $greyXD;
 $navFontColour_hamburger_clicked:        $navFontColour_hamburger;
 
 
 /* // Background Colours ---------------------------------------------------- */
-
-   // Nav BT
+/*___ Nav BT ____________________________*/
 $navBgColour_BT:                     $bgWhite;
        
 $navBgColour_ulLevel1_BT:            transparent;
@@ -66,7 +67,8 @@ $navBgColour_itemCurrent_level1_BT:  darken($navBgColour_ulLevel1_BT, 5%);
 $navBgColour_itemCurrent_level2_BT:  darken($navBgColour_ulLevel1_BT, 5%);
 $navBgColour_itemCurrent_level3_BT:  darken($navBgColour_ulLevel1_BT, 5%);
 
-   // Nav AT
+
+/*___ Nav AT ____________________________*/
 $navBgColour_AT:                $bgGrey;
 
 $navBgColour_ULsub_AT:          transparent;
@@ -83,18 +85,19 @@ $navBgColour_itemCurrent_Hover:     $navBgColour_itemCurrent_AT;
 $navBgColour_itemSubCurrent_AT:     transparent;
 $navBgColour_itemSubCurrent_Hover:  $navBgColour_itemSubCurrent_AT;
 
-   // Topper
+
+/*___ Topper ____________________________*/
 $navBgColour_topper:       $bgBlack;
 
-   // Hamburger
+
+/*___ Hamburger _________________________*/  
 $navBgColour_hamburger:    $bgWhite;
 
-@import 'navArrows';
+@import 'section_nav_arrows';
 
 
 /* // Border Colours -------------------------------------------------------- */
-
-   // Nav BT
+/*___ Nav BT ____________________________*/
 $navBdColour_BT:                  $bdBlack;
 $navBdColour_open:                $bdGreyD;
 $navBdColour_close:               $bdGreyD;
@@ -110,10 +113,12 @@ $navBdColour_itemLevel2_BT:       $navBdColour_itemLevel1_BT;
 $navBdColour_itemLevel3_BT:       $navBdColour_itemLevel2_BT;
   
 $navBdColour_backMenu:            $navBdColour_itemLevel1_BT;
-  
-   // Nav AT  
+
+
+/*___ Nav AT ____________________________*/
 $navBdColour_itemSub_AT:          $navBdColour_itemLevel0_BT;
-  
-   // Nav Topper  
+
+
+/*___ Topper ____________________________*/
 $navBdColour_topper:              $bdGreyD;
 $navBdColour_topper_itemCurrent:  $bdGrey;

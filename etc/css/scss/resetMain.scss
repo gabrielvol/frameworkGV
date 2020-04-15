@@ -88,13 +88,13 @@ input::focus-inner{}
 
     // Selection
 ::-moz-selection {
-    color: $fontColour_textSelection_global;
-    background-color: $bgColour_textSelection_global;
+    color: $txSelection_fontColour_global;
+    background-color: $txSelection_bgColour_global;
     text-shadow: none;
 }
 
 ::selection {
-    color: $fontColour_textSelection_global;
-    background-color: $bgColour_textSelection_global;
+    color: $txSelection_fontColour_global;
+    background-color: $txSelection_bgColour_global;
     text-shadow: none;
 }

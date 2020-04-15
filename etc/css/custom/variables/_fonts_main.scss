@@ -1,5 +1,5 @@
 /* =============================================================================
-   Fonts Main Variables | Custom [fontsMain.scss]
+   Fonts Main Variables | Custom [variables/fonts_main.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
@@ -33,7 +33,7 @@ $roboto:    map-get($fontFamilies_map, roboto);
 //$openSansB:   map-get($fontFamilies_map_OpenSans, openSansB);
 //$openSansBI:  map-get($fontFamilies_map_OpenSans, openSansBI);
 
-   // Creamos la variable de la fuente principal del sitio
+/*___ Creamos la variable de la fuente principal del sitio _*/
 $fontFamily_main_global:    $arial;
 $fontFamily_bold_global:    $fontFamily_main_global;
 

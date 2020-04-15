@@ -1,5 +1,5 @@
 /* =============================================================================
-   Border Colours Variables | Custom [coloursBorders.scss]
+   Border Colours Variables | Custom [variables/colours_borders.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 // X, L, D  = extra, light, dark
@@ -7,7 +7,7 @@
 
 
 ///**Border Colours:** 
-    ///Aquí se declaran los colores de bordes del sitio.
+    ///Aquí se declaran los colores de bordes del sitio. No se genera ningún CSS de este mapa. Solamente se utilizan las variables declaradas abajo en los archivos .scss
 $borderColours_map:(
     white:          $white,
     black:          $black,

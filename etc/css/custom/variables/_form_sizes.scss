@@ -1,5 +1,5 @@
 /* =============================================================================
-   Forms Variables | Custom [formsSizes.scss]
+   Form Sizes Variables | Custom [variables/form_sizes.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 // M, L, T, D, DL   = mobile, landscape, tablet, desktop, desktop large
@@ -26,9 +26,9 @@ $formLabel_width_AD:      $form_width_AD;
 $formLabel_height_BT:     30px;
 $formLabel_height_TO:     $formLabel_height_BT;
 $formLabel_height_ATL:    25px;
-$formLabel_height_AD:     $formLabel_height_ATL; 
+$formLabel_height_AD:     $formLabel_height_ATL;
 
-   // Sug
+/*___ Sug _______________________________*/
 $formLabel_sug_height_BT:  20px;
 $formLabel_sug_height_TO:  $formLabel_sug_height_BT;
 $formLabel_sug_height_ATL: $formLabel_sug_height_TO;
@@ -47,6 +47,9 @@ $formInput_height_TO:     $formInput_height_BT;
 $formInput_height_ATL:    35px; //No debe llevar !important
 $formInput_height_AD:     $formInput_height_ATL; //No debe llevar !important
 
+
+/*___ Sug _______________________________*/
+/*___ Sug _______________________________*/
    // Radio Inputs
 $formInput_radio_height_BT:  35px;
 $formInput_radio_height_TO:  35px;

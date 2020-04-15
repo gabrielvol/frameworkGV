@@ -4,45 +4,45 @@
 @import "../scss/variablesAbsolute";
 @import "variables/zindex";
 @import "variables/container";
-@import "variables/activatorsMain";
-@import "variables/activatorsResponsive";
+@import "activators/main";
+@import "activators/responsive";
 @import "variables/helpers";
 @import "variables/animations";
 
-@import "variables/coloursMain";
-@import "variables/coloursBorders";
-@import "variables/coloursBackgrounds";
+@import "variables/colours_main";
+@import "variables/colours_borders";
+@import "variables/colours_backgrounds";
 @import "variables/shadows";
 
-@import "variables/fontsMain";
-@import "variables/fontsColours";
+@import "variables/fonts_main";
+@import "variables/fonts_colours";
 @import "variables/text";
 
-@import "variables/languageActivators";
-@import "variables/languageColours";
-@import "variables/languageSizes";
+@import "activators/language";
+@import "variables/language_colours";
+@import "variables/language_sizes";
 
-@import "variables/navActivators";
-@import "variables/navColours";
-@import "variables/navFonts";
-@import "variables/navSizes";
+@import "activators/section_nav";
+@import "variables/section_nav_colours";
+@import "variables/section_nav_fonts";
+@import "variables/section_nav_sizes";
 
-@import "variables/logoActivators";
-@import "variables/headerActivators";
-@import "variables/logoSizes";
-@import "variables/headerHeight";
-@import "variables/slickSizes";
+@import "activators/logo";
+@import "activators/section_header";
+@import "variables/logo_sizes";
+@import "variables/section_header_heights";
+@import "variables/slick_Sizes";
 
-@import "variables/footerActivators.scss";
-@import "variables/footerSizes.scss";
+@import "activators/section_footer";
+@import "variables/section_footer_sizes";
 
-@import "variables/formsActivators";
-@import "variables/formsColours";
-@import "variables/formsFonts";
-@import "variables/formsSizes";
+@import "activators/forms";
+@import "variables/form_colours";
+@import "variables/form_fonts";
+@import "variables/form_sizes";
 
 @import "variables/tables";
-@import "variables/tablesColours";
+@import "variables/tables_colours";
 
 @import "variables/global";
 
