@@ -2,7 +2,7 @@
     /* // URLS -------------------------------------------------------------- */
     $domain_global      = 'sitiocomar';
     $url_global         = 'http://www.'. $domain_global;
-    $url_openGraph      = 'http://www.'. $domain_global;
+    $openGraph_url      = 'http://www.'. $domain_global;
     
     $domain_sec         = 'sitiocomar';
     $url_sec            = 'http://www.'. $domain_sec;

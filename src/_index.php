@@ -14,8 +14,8 @@
   //$openGraph_title_GB = $openGraph_title_global_GB;
     $openGraph_desc     = $openGraph_desc_global;
   //$openGraph_desc_GB  = $openGraph_desc_global_GB;
-  //$openGraph_img_url  = $url_global .'/nuevo'; 
-    $openGraph_img_url  = $url_global;
+  //$openGraph_url_img  = $url_global .'/nuevo'; 
+    $openGraph_url_img  = $url_global;
     $openGraph_siteName = $openGraph_title;
     
     $nav_pageCurrent = 0;
