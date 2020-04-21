@@ -1,0 +1,96 @@
+/* =============================================================================
+   Slider Arrows Styles | Custom [slider_arrows.scss]
+   ========================================================================== */
+// imported in _slider.scss
+
+@if $sliderArrows_act == "on"{
+    .slickPrev{
+        left: 2%;
+        background-image: url('/nuevo/img/slider_arrowL.svg');
+    }
+
+    .slickNext{
+        right: 2%;
+        background-image: url('/nuevo/img/slider_arrowR.svg');
+    }
+
+    .slickPrev,
+    .slickNext{
+        @include transition(0.7s);
+        @include opacityCustomHover();
+        position: absolute;
+        z-index: $zIndex_slider_arrows_dots;
+        top: 50%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border: $none;
+        padding: $zero;
+        text-indent: -9999px;
+    }
+    
+    @include beforeTablet{
+        .slickPrev,
+        .slickNext{
+            width: $sliderArrows_width_BT;
+            height: $sliderArrows_height_BT;
+            margin-top: calc(-1 * #{$sliderArrows_height_half_BT});   
+        }
+    }
+
+    @include afterTablet{
+        .slickPrev,
+        .slickNext{
+            width: $sliderArrows_width_AT;
+            height: $sliderArrows_height_AT;
+            margin-top: calc(-1 * #{$sliderArrows_height_half_AT});
+        }
+    }
+}
+     
+@if $sliderArrows_carousel_act == "on"{
+    .slickCarousel{
+        .slickPrev{
+            background-image: url('/nuevo/img/carousel_arrowL.svg');
+        }
+
+        .slickNext{
+            background-image: url('/nuevo/img/carousel_arrowR.svg');
+        }
+        
+        @include beforeTablet{
+            .slick-prev{
+                left: calc(#{$sliderArrows_width_BT} / 4);
+            }
+
+            .slick-next{
+                right: calc(#{$sliderArrows_width_BT} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carouselArrows_width_BT;
+                height: $carouselArrows_height_BT;
+                margin-top: calc(-1 * #{$carouselArrows_height_half_BT});  
+            }
+        }
+        
+        @include afterTablet{
+            .slick-prev{
+                left: calc(#{$sliderArrows_width_AT} / 4);
+            }
+
+            .slick-next{
+                right: calc(#{$sliderArrows_width_AT} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carouselArrows_width_AT;
+                height: $carouselArrows_height_AT;
+                margin-top: calc(-1 * #{$carouselArrows_height_half_AT});
+            }
+        }
+    }
+}

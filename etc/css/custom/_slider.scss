@@ -1,0 +1,54 @@
+/* =============================================================================
+   Slider Styles | Custom [slider.scss]
+   ========================================================================== */
+.slick{
+    background-color: $slider_bgColour;
+    
+    &,
+    div{
+        @include clearfix;
+    }
+    
+    @if $sliderArrows_carousel_act == "on"{
+        &.slickCarousel{
+            position: relative;
+            background-color: $slider_carousel_bgColour;
+
+            .slick-list{
+                position: relative;
+                overflow: hidden;
+            }
+        
+            @include beforeTablet{
+                padding-right: $carousel_PH_BT;
+                padding-left: $carousel_PH_BT;
+            }
+        
+            @include afterTablet{
+                padding-right: $carousel_PH_AT;
+                padding-left: $carousel_PH_AT;
+            }
+        }
+    }
+}
+
+.slider_home{
+    &,
+    .slick-slide{
+        z-index: $zIndex_slider!important; 
+    }
+  
+    &,
+    .slick-list,
+    .slick-track,
+    .slick-track li{
+        /*height: 300px;*/
+    }
+}
+
+.slickWithNav{
+    // No debe llevar z-index
+}
+
+@import "slider_arrows";
+@import "slider_dots";

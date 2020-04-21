@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    //Slick Slider
-    $('.slickMain').slick({
+/* // Slick Slider ---------------------------------------------------------- */
+    $('.slick_home').slick({
          accessibility: true
         ,infinite: true
         
         ,dots: true
         ,arrows: false
-        // Si se ven más de un slide a la vez no debe ser fade.
+        // Si se ve más de un slide a la vez fade debe ser false.
         ,fade: true
         
         ,pauseOnHover: false
@@ -23,7 +23,7 @@ $(document).ready(function () {
         // Delay before transition
         ,autoplaySpeed: 5000
         
-        // Transition Speed
+        // Transition speed
         ,speed: 500
 
         ,centerMode: true
