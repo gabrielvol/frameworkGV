@@ -1,55 +1,57 @@
-//Variables
+/* // Variables ------------------------------------------------------------- */
 @import "../scss/charset";
 @import "../scss/variablesFonts";
 @import "../scss/variablesAbsolute";
 @import "variables/zindex";
-@import "variables/container";
-@import "activators/main";
-@import "activators/responsive";
-@import "variables/helpers";
-@import "variables/animations";
+@import "variables/container_var";
+@import "activators/main_act";
+@import "activators/responsive_act";
+@import "variables/helpers_var";
+@import "variables/animations_var";
 
-@import "variables/colours_main";
-@import "variables/colours_borders";
-@import "variables/colours_backgrounds";
-@import "variables/shadows";
+@import "variables/colours_main_var";
+@import "variables/colours_borders_var";
+@import "variables/colours_backgrounds_var";
+@import "variables/shadows_var";
 
-@import "variables/fonts_main";
-@import "variables/fonts_colours";
-@import "variables/text";
+@import "variables/fonts_main_var";
+@import "variables/fonts_colours_var";
+@import "variables/text_var";
 
-@import "activators/language";
-@import "variables/language_colours";
-@import "variables/language_sizes";
+@import "activators/language_act";
+@import "variables/language_colours_var";
+@import "variables/language_sizes_var";
 
-@import "activators/section_nav";
-@import "variables/section_nav_colours";
-@import "variables/section_nav_fonts";
-@import "variables/section_nav_sizes";
+@import "activators/section_nav_act";
+@import "variables/section_nav_colours_var";
+@import "variables/section_nav_fonts_var";
+@import "variables/section_nav_sizes_var";
 
-@import "activators/logo";
-@import "activators/section_header";
-@import "variables/logo_sizes";
-@import "variables/section_header_heights";
-@import "variables/slick_Sizes";
+@import "activators/logo_act";
+@import "activators/section_header_act";
+@import "variables/logo_sizes_var";
+@import "variables/section_header_heights_var";
 
-@import "activators/section_footer";
-@import "variables/section_footer_sizes";
+@import "activators/slider_act";
+@import "variables/slider_var";
 
-@import "activators/forms";
-@import "variables/form_colours";
-@import "variables/form_fonts";
-@import "variables/form_sizes";
+@import "activators/section_footer_act";
+@import "variables/section_footer_sizes_var";
 
-@import "variables/tables";
-@import "variables/tables_colours";
+@import "activators/forms_act";
+@import "variables/form_colours_var";
+@import "variables/form_fonts_var";
+@import "variables/form_sizes_var";
 
-@import "variables/global";
+@import "variables/tables_var";
+@import "variables/tables_colours_var";
 
-//Font Face
+@import "variables/global_var";
+
+/* // Font Face ------------------------------------------------------------- */
 @import "../scss/fontFaceOpenSans";
 
-//Mixins
+/* // Mixins ---------------------------------------------------------------- */
 @import "mixinsMediaQueries";
 @import "../scss/mixinsSizes";
 @import "../scss/mixinsBackgrounds";
@@ -66,11 +68,11 @@
 @import "../scss/mixinsPositions";
 @import "../scss/mixinsTableSizes";
 
-//Functions
+/* // Functions ------------------------------------------------------------- */
 @import "../scss/functionsAngledEdges";
 @import "../scss/functionsFontStroke";
 
-//Main CSS
+/* // Main CSS -------------------------------------------------------------- */
 @import "../scss/settingsHtmlBody";
 @import "stylesBody";
 @import "../scss/resetMain";
@@ -135,8 +137,8 @@
 @import "stylesNavList";
 @import "stylesNav_AT";
 
-//@import "stylesSlider";
-//@import "stylesSliderNav";
+//@import "slider";
+//@import "slider_nav";
 
 //@import "stylesConstruccion";
 @import "stylesIndex";
@@ -148,6 +150,6 @@
 //@import "styles Section";
 @import "stylesContacto";
 
-//Post
+/* // Post ------------------------------------------------------------------ */
 //@import "../scss/settingsLightbox";
 //@import "stylesLightbox";
