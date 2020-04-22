@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.enviar').scrollPosReaload(); // Scroll Keep
+    $('.enviar').scrollPosReload(); // Scroll Keep
 
     $('.pop_main button').click(function () {
         $('#formID').submit();

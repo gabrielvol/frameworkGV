@@ -4,7 +4,7 @@
      *
      * @return {boolean} [loacalStorage is available]
      */
-    $.fn.scrollPosReaload = function(){
+    $.fn.scrollPosReload = function(){
         if (localStorage) {
             var posReader = localStorage["posStorage"];
             if (posReader) {
