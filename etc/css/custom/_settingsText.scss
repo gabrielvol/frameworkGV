@@ -7,7 +7,7 @@ p{}
 a[href^=tel],
 .safariTel{
     &, &:focus, &:hover, &:active, &:visited{
-        color: $fontColour_anchor_global!important;
+        color: $ftColour_anchor_global!important;
     }
 }
 

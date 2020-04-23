@@ -54,22 +54,22 @@
 }
 
 /* // Generador de clases para anclas dentro de párrafos por cada color claro */
-@mixin anchorColoursLightClassesGenerator($anchor_fontColours_map_light_darkenValue){
-    @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $anchor_fontColours_map_light {
+@mixin anchorColoursLightClassesGenerator($anchor_ftColours_map_light_darkenValue){
+    @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $anchor_ftColours_map_light {
         .#{$anchorColoursLightClassesGeneratorMX_colourClassName}{            
             a, a:active, a:visited{color: $anchorColoursLightClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: darken($anchorColoursLightClassesGeneratorMX_colourHexValue, $anchor_fontColours_map_light_darkenValue);}
+            a:focus, a:hover{color: darken($anchorColoursLightClassesGeneratorMX_colourHexValue, $anchor_ftColours_map_light_darkenValue);}
         }
     }
 }
 
 
 /* // Generador de clases para anclas dentro párrafos por cada color oscuro - */
-@mixin anchorColoursDarkClassesGenerator($anchor_fontColours_map_dark_lightenValue){
-    @each $anchorColoursDarkClassesGeneratorMX_colourClassName, $anchorColoursDarkClassesGeneratorMX_colourHexValue in $anchor_fontColours_map_dark {
+@mixin anchorColoursDarkClassesGenerator($anchor_ftColours_map_dark_lightenValue){
+    @each $anchorColoursDarkClassesGeneratorMX_colourClassName, $anchorColoursDarkClassesGeneratorMX_colourHexValue in $anchor_ftColours_map_dark {
         .#{$anchorColoursDarkClassesGeneratorMX_colourClassName}{            
             a, a:active, a:visited{color: $anchorColoursDarkClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: lighten($anchorColoursDarkClassesGeneratorMX_colourHexValue, $anchor_fontColours_map_dark_lightenValue);}
+            a:focus, a:hover{color: lighten($anchorColoursDarkClassesGeneratorMX_colourHexValue, $anchor_ftColours_map_dark_lightenValue);}
         }
     }
 }

@@ -7,6 +7,9 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, i
 iframe{
     border: $none;
 }
+menu{
+    padding: 0;
+}
 audio, canvas, iframe, img, svg, video{
     vertical-align: middle;
 }
@@ -88,13 +91,13 @@ input::focus-inner{}
 
     // Selection
 ::-moz-selection {
-    color: $txSelection_fontColour_global;
+    color: $txSelection_ftColour_global;
     background-color: $txSelection_bgColour_global;
     text-shadow: none;
 }
 
 ::selection {
-    color: $txSelection_fontColour_global;
+    color: $txSelection_ftColour_global;
     background-color: $txSelection_bgColour_global;
     text-shadow: none;
 }

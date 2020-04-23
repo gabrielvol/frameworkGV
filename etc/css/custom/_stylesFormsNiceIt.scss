@@ -19,7 +19,7 @@ form.niceIt{
         padding: 0 40px 0 10px;
         
         width: 135px!important;
-        color: $formInput_fontColour;
+        color: $formInput_ftColour;
         
         &,
         strong,
@@ -32,7 +32,7 @@ form.niceIt{
         }
         
         %fm_option_textStyles{
-            color: $formInput_fontColour;
+            color: $formInput_ftColour;
             font-family: $fontFamily_main_global;
             text-transform: none;             
         }
@@ -59,7 +59,7 @@ form.niceIt{
                 line-height: 1.3rem;
                 
                 &:hover, &:focus{
-                    color: $formInput_fontColour_hover;
+                    color: $formInput_ftColour_hover;
                     background-color: $formInput_bdColour_hover;
                 }
             }

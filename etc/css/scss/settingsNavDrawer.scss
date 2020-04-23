@@ -9,7 +9,7 @@
                 
                 &.clicked{
                     opacity: 0.5;
-                    color: $navFontColour_hamburger_clicked;
+                    color: $navFtColour_hamburger_clicked;
                 } 
             }
 
@@ -56,7 +56,7 @@
                 > li{
                     > a,
                     > .topLevelItem{
-                        color: $navFontColour_itemLevel0_BT;
+                        color: $navFtColour_itemLevel0_BT;
                         font-family: $navFontFamily_BT;
                     }
                 }  
@@ -82,7 +82,7 @@
                     &.backMenu{
                         .topLevelItem{
                             background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI}');
-                            color: $navFontColour_backMenu_TLI;
+                            color: $navFtColour_backMenu_TLI;
 
                             &.open{
                                 background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI_openDR}'); 
@@ -127,7 +127,7 @@
                 .hasSubLevel1{
                     a,
                     .TLI_level1{
-                        color: $navFontColour_TLI_level1_BT;
+                        color: $navFtColour_TLI_level1_BT;
 
                         &.openDR{
                             background-image: url('/nuevo/img/#{$navArrows_TLI_level1_openDR}');
@@ -139,7 +139,7 @@
                         .TLI_level1{
                             background-image: url('/cuatro/img/#{$navArrows_itemCurrent_level0}');
                             background-position: right 10px center;
-                            color: $navFontColour_TLICurrent_level1_BT;
+                            color: $navFtColour_TLICurrent_level1_BT;
                         }
                     }
                 }
@@ -152,7 +152,7 @@
                         background-color: $navBgColour_itemLevel1_BT;
                         
                         a{
-                            color: $navFontColour_itemLevel1_BT;
+                            color: $navFtColour_itemLevel1_BT;
                         }
                     }
 
@@ -161,7 +161,7 @@
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level1}');
                         
                         a{
-                            color: $navFontColour_itemCurrent_level1_BT;
+                            color: $navFtColour_itemCurrent_level1_BT;
                         }
                     }
                 }
@@ -171,7 +171,7 @@
                 .hasSubLevel2{
                     a,
                     .TLI_level2{
-                        color: $navFontColour_itemLevel2_BT;
+                        color: $navFtColour_itemLevel2_BT;
 
                         &.openDR{
                             background-image: url('/nuevo/img/#{$navArrows_TLI_level2_openDR}');
@@ -181,7 +181,7 @@
                     &.current{    
                         a,
                         .TLI_level1{
-                            color: $navFontColour_TLICurrent_level2_BT;
+                            color: $navFtColour_TLICurrent_level2_BT;
                         }
                     }
                 }
@@ -194,7 +194,7 @@
                         background-color: $navBgColour_itemLevel2_BT;
                         
                         a{
-                            color: $navFontColour_itemLevel2_BT;
+                            color: $navFtColour_itemLevel2_BT;
                         }
                     }
 
@@ -203,7 +203,7 @@
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level2}'); 
                         
                         a{
-                            color: $navFontColour_itemCurrent_level2_BT;
+                            color: $navFtColour_itemCurrent_level2_BT;
                         }
                     }
                 }
@@ -213,7 +213,7 @@
                 .hasSubLevel3{
                     a,  
                     .TLI_level3{
-                        color: $navFontColour_itemLevel2_BT;
+                        color: $navFtColour_itemLevel2_BT;
 
                         &.openDR{
                             background-image: url('/nuevo/img/#{$navArrows_TLI_level3_openDR}');
@@ -223,7 +223,7 @@
                     &.current{    
                         a,
                         .TLI_level1{
-                            color: $navFontColour_TLICurrent_level3_BT;
+                            color: $navFtColour_TLICurrent_level3_BT;
                         }
                     }
                 }
@@ -236,7 +236,7 @@
                         background-color: $navBgColour_itemLevel3_BT;
                         
                         a{
-                            color: $navFontColour_itemLevel3_BT;
+                            color: $navFtColour_itemLevel3_BT;
                         }
                     }
 
@@ -245,7 +245,7 @@
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level3}'); 
                         
                         a{
-                            color: $navFontColour_itemCurrent_level3_BT;
+                            color: $navFtColour_itemCurrent_level3_BT;
                         }
                     }
                 }

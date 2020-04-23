@@ -3,10 +3,10 @@
    ========================================================================== */
 ///**Fonts Colours:** 
     ///Aquí se declaran los colores principales de texto y de ánclas del sitio, con sus `:hover`.
-$fontColour_main_global:         $black;
-$fontColour_main_global_hover:   lighten($fontColour_main_global, 20%);
+$ftColour_main_global:         $black;
+$ftColour_main_global_hover:   lighten($ftColour_main_global, 20%);
 
-$fontColour_anchor_global:       $fontColour_main_global_hover;
-$fontColour_anchor_global_hover: darken($fontColour_main_global_hover, 10%);
+$ftColour_anchor_global:       $ftColour_main_global_hover;
+$ftColour_anchor_global_hover: darken($ftColour_main_global_hover, 10%);
 
-//$fontColour_secondary_global: #999;
+//$ftColour_secondary_global: #999;

@@ -46,7 +46,7 @@ nav{
             opacity: 1;
             background-image: url('/nuevo/img/nav_hamb.svg');
             background-repeat: no-repeat;
-            color: $navFontColour_hamburger;
+            color: $navFtColour_hamburger;
             font-family: $navFontFamily_hamburger;
         }
         
@@ -94,7 +94,7 @@ nav{
 
                 a,
                 .topLevelItem{
-                    color: $navFontColour_item_AT;
+                    color: $navFtColour_item_AT;
                     font-family: $navFontFamily_AT;
                 }    
 
@@ -102,7 +102,7 @@ nav{
                     background-color: $navBgColour_item_hover; 
                     
                     > a{
-                        color: $navFontColour_item_hover;
+                        color: $navFtColour_item_hover;
                     }
                 }            
             }
@@ -112,7 +112,7 @@ nav{
 
                 a,
                 .topLevelItem{
-                    color: $navFontColour_itemCurrent_AT;
+                    color: $navFtColour_itemCurrent_AT;
                     font-family: $navFontFamily_itemCurrent_AT;
                 }  
 
@@ -121,7 +121,7 @@ nav{
 
                     > a,
                     .topLevelItem{
-                        color: $navFontColour_itemCurrent_hover;
+                        color: $navFtColour_itemCurrent_hover;
                     }  
                 }         
             } 
@@ -138,7 +138,7 @@ nav{
                     
                     a,
                     .topLevelItem{
-                        color: $navFontColour_itemSub_AT;
+                        color: $navFtColour_itemSub_AT;
                         font-family: $navFontFamily_itemSub_AT;
                         cursor: pointer;
                     }
@@ -147,7 +147,7 @@ nav{
                         background-color: $navBgColour_itemSub_Hover;
                         
                         a{
-                            color: $navFontColour_itemSub_hover;  
+                            color: $navFtColour_itemSub_hover;  
                         }
                     }
                 }
@@ -155,7 +155,7 @@ nav{
                 > .current{
                     a,
                     .topLevelItem{
-                        color: $navFontColour_itemSubCurrent_AT;
+                        color: $navFtColour_itemSubCurrent_AT;
                         font-family: $navFontFamily_itemSubCurrent_AT;
                         cursor: default;
                     }
@@ -166,7 +166,7 @@ nav{
 
                     &:focus, &:hover{
                         a{
-                            color: $navFontColour_itemSubCurrent_hover;
+                            color: $navFtColour_itemSubCurrent_hover;
                         }
                     }
                 }
@@ -190,13 +190,13 @@ nav{
                     > li{
                         > a,
                         > .topLevelItem{
-                            color: $navFontColour_topper;
+                            color: $navFtColour_topper;
                         }
 
                         &:focus, &:hover{
                             > a,
                             .topLevelItem{
-                                color: $navFontColour_topper_hover;
+                                color: $navFtColour_topper_hover;
                             }  
                         }
                     }
@@ -205,7 +205,7 @@ nav{
                         &, &:focus, &:hover{
                             > a,
                             .topLevelItem{
-                                color: $navFontColour_topper_itemCurrent;
+                                color: $navFtColour_topper_itemCurrent;
                             }  
                         }
                     }
@@ -267,7 +267,7 @@ nav{
                             > a,
                             > .topLevelItem{                
                                 &.openDR{
-                                    color: $navFontColour_topper_hover;
+                                    color: $navFtColour_topper_hover;
                                 }
                             }
                         }

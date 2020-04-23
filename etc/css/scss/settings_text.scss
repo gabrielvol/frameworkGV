@@ -1,5 +1,5 @@
 /* =============================================================================
-   Font Settings | Etc [settingsText.scss]
+   Text Settings | Etc [settingsText.scss]
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
     font-family: $fontStack_map;
@@ -8,33 +8,33 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, 
     line-height: $lineHeight_global;
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
-    color: $fontColour_main_global;
+    color: $ftColour_main_global;
 }
 /*
 input::input-placeholder, textarea::input-placeholder{
-    color: $formPlaceholder_fontColour}
+    color: $formPlaceholder_ftColour}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
-    color: $formPlaceholder_fontColour}
+    color: $formPlaceholder_ftColour}
 input::-moz-placeholder, textarea::-moz-placeholder{
-    color: $formPlaceholder_fontColour}
+    color: $formPlaceholder_ftColour}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder{
-    color: $formPlaceholder_fontColour}
+    color: $formPlaceholder_ftColour}
 input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $formPlaceholder_fontColour}
+    color: $formPlaceholder_ftColour}
 
 input::-moz-placeholder, textarea::-moz-placeholder{
   opacity: 1}
 
 input:focus::input-placeholder, textarea:focus::input-placeholder{
-    color: $fontColour_main_global}
+    color: $ftColour_main_global}
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
-    color: $fontColour_main_global}
+    color: $ftColour_main_global}
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
-    color: $fontColour_main_global}
+    color: $ftColour_main_global}
 input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
-    color: $fontColour_main_global}
+    color: $ftColour_main_global}
 input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $fontColour_main_global}
+    color: $ftColour_main_global}
 */
 h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
     a{
@@ -98,10 +98,10 @@ p, li{
 a{
     transition: background-color 0.7s, color 1s, text-shadow 1s;    
     &, &:active, &:visited{
-        color: $fontColour_anchor_global;
+        color: $ftColour_anchor_global;
     }
     &:focus, &:hover{
-        color: $fontColour_anchor_global_hover;
+        color: $ftColour_anchor_global_hover;
     }
 }
 
@@ -140,6 +140,6 @@ a.white{
 }
 @include colourLightClassesGenerator($colours_map_light_darkenValue);
 @include colourDarkClassesGenerator($colours_map_dark_lightenValue);
-@include anchorColoursLightClassesGenerator($anchor_fontColours_map_light_darkenValue);
-@include anchorColoursDarkClassesGenerator($anchor_fontColours_map_dark_lightenValue);
+@include anchorColoursLightClassesGenerator($anchor_ftColours_map_light_darkenValue);
+@include anchorColoursDarkClassesGenerator($anchor_ftColours_map_dark_lightenValue);
 @include colourCustomHoverClassesGenerator;
