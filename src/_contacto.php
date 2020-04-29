@@ -5,6 +5,8 @@
     $section_contacto                       = 1;
     $section_contacto_hasMandatoryMsg_act   = 0;
     
+    $nav_pageCurrent    = 0;
+    
     $site_title         = "Contacto | ".$company_name_title;
   //$site_title_GB      = "Contact | ".$company_name_title;
     
@@ -19,8 +21,6 @@
     $openGraph_url_img  = $url_global;
     $openGraph_siteName = $openGraph_title;
     
-    $nav_pageCurrent    = 0;
-    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
@@ -31,11 +31,11 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="page_int section_contacto" role="main">
+    <div id="main" class="page_int page_contacto" role="main">
         <div class="mobileForm tabletForm">
             <form method="post" class="mha" id="formID">
                 <?php
-                    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
+                    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/form_send.inc.php');
                     echo $formStatus_MSG__formName;
                     echo $formStatus_MSG_pop__formName;
 
@@ -89,44 +89,44 @@
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_genero__formName ?>"><?php echo $formSpan_error_MSG_data_genero__formName ?></span>
                 </label>
 
-            <label for="data_genero__formName">
-                <span class="labelName"><?php echo _('Género'); ?></span>                    
-                <input type="text" list="genero_listaTotal" name="data_genero__formName">
-                <datalist id="genero_listaTotal">
-                    <option value="Lesbiana">
-                    <option value="Gay">
-                    <option value="Bixesual">
-                    <option value="Transgénero">
-                    <option value="Transfemenino">
-                    <option value="Transmasculino">
-                    <option value="Travesti">
-                    <option value="Intersexual">
-                    <option value="Pansexual">
-                    <option value="Asexual">
-                    <option value="Prefiero no decirlo">
-                    <option value="Otre">
-                    <option value="Demisexual">
-                    <option value="Heterosexual">
-                    <option value="Andrógine">
-                    <option value="Polisexual">
-                    <option value="Poliamoroso">
-                    <option value="Poligénero">
-                    <option value="Queer">
-                    <option value="Lithsexual">
-                    <option value="Hombre trans">
-                    <option value="Mujer trans">
-                    <option value="Persona trans">
-                    <option value="Transexual">
-                    <option value="Sapiosexual">
-                    <option value="Hombre">
-                    <option value="Mujer">
-                    <option value="No binario">   
-                    <option value="Género neutral">  
-                    <option value="Género fluido">   
-                    <option value="Bigénero">                            
-                </datalist>
-                <span class="formSugg">La lista incluye sugerencias, pero podés completar libremente el campo.</span>
-            </label>  
+                <label for="data_genero__formName">
+                    <span class="labelName"><?php echo _('Género'); ?></span>                    
+                    <input type="text" list="genero_listaTotal" name="data_genero__formName">
+                    <datalist id="genero_listaTotal">
+                        <option value="Lesbiana">
+                        <option value="Gay">
+                        <option value="Bixesual">
+                        <option value="Transgénero">
+                        <option value="Transfemenino">
+                        <option value="Transmasculino">
+                        <option value="Travesti">
+                        <option value="Intersexual">
+                        <option value="Pansexual">
+                        <option value="Asexual">
+                        <option value="Prefiero no decirlo">
+                        <option value="Otre">
+                        <option value="Demisexual">
+                        <option value="Heterosexual">
+                        <option value="Andrógine">
+                        <option value="Polisexual">
+                        <option value="Poliamoroso">
+                        <option value="Poligénero">
+                        <option value="Queer">
+                        <option value="Lithsexual">
+                        <option value="Hombre trans">
+                        <option value="Mujer trans">
+                        <option value="Persona trans">
+                        <option value="Transexual">
+                        <option value="Sapiosexual">
+                        <option value="Hombre">
+                        <option value="Mujer">
+                        <option value="No binario">   
+                        <option value="Género neutral">  
+                        <option value="Género fluido">   
+                        <option value="Bigénero">                            
+                    </datalist>
+                    <span class="formSugg">La lista incluye sugerencias, pero podés completar libremente el campo.</span>
+                </label>  
 
                 <label for="data_dni__formName">
                     <span class="labelName"><?php echo _('DNI'); ?></span>
@@ -210,8 +210,8 @@
                     <select id="data_comoQueres__formName" name="data_comoQueres__formName" class="comoQueres <?php echo $formInput_error_class_data_comoQueres__formName ?>">
                         <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php echo $_POST['data_comoQueres']; ?></option>
 
-                        <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php if(isset($_POST['data_comoQueres'])) { echo $_POST['data_comoQueres']; } else { echo _('Correo electrónico, WhatsAspp o Instagram'); } ?></option>
-                        <option value="Correo"><?php echo _('Correo electrónico'); ?></option>
+                        <option value="<?php echo $_POST['data_comoQueres']; ?>" selected><?php if(isset($_POST['data_comoQueres'])) { echo $_POST['data_comoQueres']; } else { echo _('Correo electr&oacute;nico, WhatsAspp o Instagram'); } ?></option>
+                        <option value="Correo"><?php echo _('Correo electr&oacute;nico'); ?></option>
                         <option value="WhatsApp"><?php echo _('WhatsApp'); ?></option>
                         <option value="Instagram"><?php echo _('Instagram'); ?></option>
                     </select>
@@ -223,7 +223,7 @@
                     <select id="data_GENERICSELECT__formName" name="data_GENERICSELECT__formName" class="GENERICSELECT <?php echo $formInput_error_class_data_GENERICSELECT__formName ?>">
                         <option value="<?php echo $_POST['data_GENERICSELECT']; ?>" selected><?php echo $_POST['data_GENERICSELECT']; ?></option>
 
-                        <option value="<?php echo $_POST['data_GENERICSELECT']; ?>" selected><?php if(isset($_POST['data_GENERICSELECT'])) { echo $_POST['data_GENERICSELECT']; } else { echo _('Selecciona una opción por favor'); } ?></option>
+                        <option value="<?php echo $_POST['data_GENERICSELECT']; ?>" selected><?php if(isset($_POST['data_GENERICSELECT'])) { echo $_POST['data_GENERICSELECT']; } else { echo _('Selecciona una opci&oacute;n por favor'); } ?></option>
                         <option value="AAAAAAAAAAAAA"><?php echo _('AAAAAAAAAAAAA'); ?></option>
                         <option value="BBBBBBBBBBBBB"><?php echo _('BBBBBBBBBBBBB'); ?></option>
                         <option value="CCCCCCCCCCCCC"><?php echo _('CCCCCCCCCCCCC'); ?></option>
@@ -377,16 +377,16 @@
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_area__formName ?>"><?php echo $formSpan_error_MSG_data_area__formName ?></span>  
                 </label>
 
-                <label for="data_mensaje__formName">
-                    <span class="labelName"><?php echo _('Mensaje'); ?></span>
-                    <textarea name="data_mensaje__formName" id="data_mensaje__formName" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>"><?php echo $_POST['data_mensaje__formName']; ?></textarea>
-                </label>
-
-                // Mensaje con validación
+                // Mensaje con validaci&oacute;n
                 <label for="data_mensaje__formName">
                     <span class="labelName"><?php echo _('Detalle del servicio que desea contratar'); ?></span>
                     <textarea name="data_mensaje__formName" id="data_mensaje__formName" class="mensaje <?php echo $formInput_error_class_data_mensaje__formName ?>" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>" <?php echo $formInput_autofocus_data_mensaje__formName ?>><?php echo $_POST['data_mensaje__formName']; ?></textarea>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_mensaje__formName ?>"><?php echo $formSpan_error_MSG_data_mensaje__formName ?></span>
+                </label>
+
+                <label for="data_mensaje__formName">
+                    <span class="labelName"><?php echo _('Mensaje'); ?></span>
+                    <textarea name="data_mensaje__formName" id="data_mensaje__formName" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>"><?php echo $_POST['data_mensaje__formName']; ?></textarea>
                 </label>
 
                 <input type="submit" value="<?php echo _('Enviar'); ?>" name="enviarForm__formName" id="enviar__formName" class="enviar mha upperCaseBT">

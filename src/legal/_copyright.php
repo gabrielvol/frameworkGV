@@ -1,16 +1,16 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/__main.var.inc.php');
     
-    $page_int           = 1;
-    $section_copyright  = 1;
+    $page_int        = 1;
+    $page_copyright  = 1;
+    
+    $nav_pageCurrent = 0;
     
     $site_title      = "Licencia | ".$company_name_title;
   //$site_title_GB   = "Licence | ".$company_name_title;
     
     $site_desc       = $site_desc_global;
   //$site_desc_GB    = $site_desc_global_GB;
-    
-    $nav_pageCurrent = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
@@ -20,7 +20,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-    <div id="main" class="page_int section_copyright bgWhite" role="main">
+    <div id="main" class="page_int page_copyright bgWhite" role="main">
         <section class="container">
             <h1 class="black alignCenter">Licencia</h1>
             <p class="nota black">El contenido de este sitio web se encuentra bajo la siguiente licencia:</p>

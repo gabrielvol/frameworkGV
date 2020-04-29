@@ -1,14 +1,16 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/__main.var.inc.php');
     
-    $page_index      = 1;
-    $load_lightbox   = 0;
+    $page_index         = 1;
+    $load_lightbox      = 0;
     
-    $site_title      = $company_name_full;
-  //$site_title_GB   = $company_name_full;
+    $nav_pageCurrent    = 0;
     
-    $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_GB;
+    $site_title         = $company_name_full;
+  //$site_title_GB      = $company_name_full;
+    
+    $site_desc          = $site_desc_global;
+  //$site_desc_GB       = $site_desc_global_GB;
     
     $openGraph_title    = $openGraph_title_global;
   //$openGraph_title_GB = $openGraph_title_global_GB;
@@ -17,8 +19,6 @@
   //$openGraph_url_img  = $url_global .'/nuevo'; 
     $openGraph_url_img  = $url_global;
     $openGraph_siteName = $openGraph_title;
-    
-    $nav_pageCurrent = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');

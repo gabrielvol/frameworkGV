@@ -5,6 +5,8 @@
     $section_contacto                       = 1;
     $section_contacto_hasMandatoryMsg_act   = 0;
     
+    $nav_pageCurrent = 0;
+    
     $site_title     = "Contacto | ".$company_name_title;
   //$site_title_GB  = "Contact | ".$company_name_title;
     
@@ -19,8 +21,6 @@
     $openGraph_url_img  = $url_global; 
     $openGraph_siteName = $openGraph_title;
     
-    $nav_pageCurrent = 0;
-    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
@@ -31,11 +31,11 @@
 </head>
 <body>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
-	<div id="main" class="page_int section_contacto" role="main">            
+	<div id="main" class="page_int page_contacto" role="main">            
             <div class="mobileForm tabletForm">
                 <form method="post" class="mha" id="formID">
                     <?php
-                        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/formSend.inc.php');
+                        include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/form_send.inc.php');
                         echo $formStatus_MSG__formName;
 
                         if($section_contacto_hasMandatoryMsg_act == 1) {

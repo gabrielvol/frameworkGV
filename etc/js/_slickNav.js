@@ -1,5 +1,12 @@
 $(document).ready(function () {
-    var highest_index = 10000;
+    var highest_index = 10000; 
+    
+    $(".navMain, .navMain .mainMenu").css("z-index", highest_index + 1);
+    
+    $(".slickNav .slickPrev").css("z-index", highest_index + 1);
+    $(".slickNav .slickNext").css("z-index", highest_index + 1);
+    
+    
     
     $('.slickWithNav').slick({
         accessibility: true,
@@ -67,7 +74,4 @@ $(document).ready(function () {
             }
         ]
     });
-    
-    $(".slickNav .slickPrev").css("z-index", highest_index + 1);
-    $(".slickNav .slickNext").css("z-index", highest_index + 1);
 });

@@ -431,6 +431,9 @@ article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, i
 iframe {
   border: none !important; }
 
+menu {
+  padding: 0; }
+
 audio, canvas, iframe, img, svg, video {
   vertical-align: middle; }
 
@@ -1759,7 +1762,7 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* // Secondary Separator --------------------------------------------------- */
 /* =============================================================================
-   Call to Action Styles | Custom [stylesCTA.scss]
+   Call to Action Styles | Custom [button_callToAction.scss]
    ========================================================================== */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
@@ -2437,17 +2440,17 @@ nav li:focus a, nav li:hover a {
     padding-left: 10px; } }
 
 /* =============================================================================
-   Index Styles | Custom [stylesIndex.scss]
+   Index Styles | Custom [page_index.scss]
    ========================================================================== */
 /* =============================================================================
    Contacto Styles | Custom [stylesContacto.scss]
    ========================================================================== */
-.section_contacto .enviar {
+.page_contacto .enviar {
   font-size: 1.2rem;
   text-transform: uppercase; }
 
 @media (min-width: 768px) {
-  .section_contacto .enviar {
+  .page_contacto .enviar {
     width: 50%;
     margin-right: auto !important;
     margin-left: auto !important;
