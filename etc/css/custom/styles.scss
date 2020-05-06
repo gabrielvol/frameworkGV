@@ -52,7 +52,7 @@
 @import "../scss/fontFaceOpenSans";
 
 /* // Mixins ---------------------------------------------------------------- */
-@import "mixinsMediaQueries";
+@import "mediaQueries_mixins";
 @import "../scss/mixinsSizes";
 @import "../scss/mixinsBackgrounds";
 @import "../scss/mixinsMasks";
@@ -79,7 +79,7 @@
 @import "resetCustom";
 
 @import "coloursPlaceholders";
-@import "coloursGradients";
+@import "colours_gradients";
 
 @import "fontFaceMain";
 @import "../scss/settings_text";

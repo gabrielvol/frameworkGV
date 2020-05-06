@@ -172,8 +172,7 @@
                         @include borderRadiusB($navSubMenu_borderRadiusB);
                         top: $topper_height_global;
                         left: 0;
-                        background-image: $bgGrad_blackEighty;
-                        filter: $bgGrad_blackEighty_filter;
+                        background-color: $black_grad_80;
                         padding-bottom: 5px;
 
                         &, li{
