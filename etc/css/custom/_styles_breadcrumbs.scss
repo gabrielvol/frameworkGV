@@ -6,7 +6,7 @@
     ul::before,
     li,
     a{
-        color: $greyD;
+        color: $greyXD;
     }
     
     ul{
@@ -26,7 +26,7 @@
         
         &:focus, &:hover{
             a{
-                color: $greyXD;
+                color: $greyXXD;
             }
         }
         
@@ -41,7 +41,7 @@
         &:first-child{
             &,            
             a{
-                color: $greyXD;
+                color: $greyXXD;
             }
         }
     }
@@ -81,7 +81,7 @@
     }
     
     @include afterMobileLandscape{
-        @include borderStyleT($bgGreyD, 2px);
+        @include borderStyleT($bgGreyXD, 2px);
         background-color: $bgGreyL;
         padding-bottom: 5px;
     

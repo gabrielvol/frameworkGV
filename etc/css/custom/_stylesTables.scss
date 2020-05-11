@@ -56,7 +56,7 @@ $table_width_BT: 40%;
         tr{
             & + tr,
             &:last-child{
-                @include borderStyleT($bdGreyD, 2px);
+                @include borderStyleT($bdGreyXD, 2px);
             }
            
             td{

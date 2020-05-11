@@ -65,7 +65,7 @@
                     @include borderStyleB(2px, $navBdColour_backMenu);
 
                     & + .backMenu{
-                        border-color: $bdGreyD transparent $navBdColour_backMenu;
+                        border-color: $bdGreyXD transparent $navBdColour_backMenu;
                         border-width: 1px 0 2px;
                         border-style: solid;
                     }

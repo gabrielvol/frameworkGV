@@ -289,7 +289,7 @@ $language_flag_height_AT:           32px;
 
 /* // Mixins ---------------------------------------------------------------- */
 /* =============================================================================
-   Media Queries Variables | Custom [mixinsMediaQueries.scss]
+   Media Queries Variables | Custom [mediaQueries_mixins.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /*
@@ -470,7 +470,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #999;
+  border-top: 1px solid #818181;
   margin: 1em 0;
   padding: 0; }
 
@@ -496,12 +496,12 @@ html input[type="button"] {
 
 ::-moz-selection {
   color: #000;
-  background-color: #999;
+  background-color: #818181;
   text-shadow: none; }
 
 ::selection {
   color: #000;
-  background-color: #999;
+  background-color: #818181;
   text-shadow: none; }
 
 /* =============================================================================
@@ -522,7 +522,7 @@ a.orange:focus, a.orange:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
 
 /* =============================================================================
-   Main Font Faces | Custom [fontFaceMain.scss]
+   Font-face | Custom [fontFace.scss]
    ========================================================================== */
 /*
 .exampleFont{font-family: 'exampleFont';}
@@ -704,14 +704,32 @@ a.greenSystem, a.greenSystem:active, a.greenSystem:visited, a.greenSystem.noHove
 a.greenSystem:focus, a.greenSystem:hover {
   color: #113300; }
 
+.grey4XL, .grey4XL b, .grey4XL strong, .grey4XL i, .grey4XL em {
+  color: #f9f9f9; }
+
+a.grey4XL, a.grey4XL:active, a.grey4XL:visited, a.grey4XL.noHover:focus, a.grey4XL.noHover:hover {
+  color: #f9f9f9; }
+
+a.grey4XL:focus, a.grey4XL:hover {
+  color: #c6c6c6; }
+
+.grey3XL, .grey3XL b, .grey3XL strong, .grey3XL i, .grey3XL em {
+  color: #f2f2f2; }
+
+a.grey3XL, a.grey3XL:active, a.grey3XL:visited, a.grey3XL.noHover:focus, a.grey3XL.noHover:hover {
+  color: #f2f2f2; }
+
+a.grey3XL:focus, a.grey3XL:hover {
+  color: #bfbfbf; }
+
 .greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
-  color: #f4f4f4; }
+  color: #e6e6e6; }
 
 a.greyXXL, a.greyXXL:active, a.greyXXL:visited, a.greyXXL.noHover:focus, a.greyXXL.noHover:hover {
-  color: #f4f4f4; }
+  color: #e6e6e6; }
 
 a.greyXXL:focus, a.greyXXL:hover {
-  color: #c1c1c1; }
+  color: #b3b3b3; }
 
 .greyXL, .greyXL b, .greyXL strong, .greyXL i, .greyXL em {
   color: #dedede; }
@@ -732,13 +750,13 @@ a.greyL:focus, a.greyL:hover {
   color: #939393; }
 
 .grey, .grey b, .grey strong, .grey i, .grey em {
-  color: #999; }
+  color: #818181; }
 
 a.grey, a.grey:active, a.grey:visited, a.grey.noHover:focus, a.grey.noHover:hover {
-  color: #999; }
+  color: #818181; }
 
 a.grey:focus, a.grey:hover {
-  color: #666666; }
+  color: #4e4e4e; }
 
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
   color: #eb1c24; }
@@ -749,23 +767,32 @@ a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHove
 a.errorColour:focus, a.errorColour:hover {
   color: #940d12; }
 
-.greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
-  color: #666; }
-
-a.greyD, a.greyD:active, a.greyD:visited, a.greyD.noHover:focus, a.greyD.noHover:hover {
-  color: #666; }
-
-a.greyD:focus, a.greyD:hover {
-  color: #999999; }
-
 .greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
-  color: #333; }
+  color: #666; }
 
 a.greyXD, a.greyXD:active, a.greyXD:visited, a.greyXD.noHover:focus, a.greyXD.noHover:hover {
-  color: #333; }
+  color: #666; }
 
 a.greyXD:focus, a.greyXD:hover {
+  color: #999999; }
+
+.greyXXD, .greyXXD b, .greyXXD strong, .greyXXD i, .greyXXD em {
+  color: #333; }
+
+a.greyXXD, a.greyXXD:active, a.greyXXD:visited, a.greyXXD.noHover:focus, a.greyXXD.noHover:hover {
+  color: #333; }
+
+a.greyXXD:focus, a.greyXXD:hover {
   color: #666666; }
+
+.grey3XD, .grey3XD b, .grey3XD strong, .grey3XD i, .grey3XD em {
+  color: #111; }
+
+a.grey3XD, a.grey3XD:active, a.grey3XD:visited, a.grey3XD.noHover:focus, a.grey3XD.noHover:hover {
+  color: #111; }
+
+a.grey3XD:focus, a.grey3XD:hover {
+  color: #444444; }
 
 .black, .black b, .black strong, .black i, .black em {
   color: #000; }
@@ -895,8 +922,14 @@ b, strong,
 .bgGreenSystem {
   background-color: #339900; }
 
+.bgGrey4XL {
+  background-color: #f9f9f9; }
+
+.bgGrey3XL {
+  background-color: #f2f2f2; }
+
 .bgGreyXXL {
-  background-color: #f4f4f4; }
+  background-color: #e6e6e6; }
 
 .bgGreyXL {
   background-color: #dedede; }
@@ -905,19 +938,22 @@ b, strong,
   background-color: #c6c6c6; }
 
 .bgGrey {
-  background-color: #999; }
-
-.bgGreyD {
-  background-color: #666; }
+  background-color: #818181; }
 
 .bgGreyXD {
+  background-color: #666; }
+
+.bgGreyXXD {
   background-color: #333; }
+
+.bgGrey3XD {
+  background-color: #111; }
 
 .bgError {
   background-color: #eb1c24; }
 
 a.mainBgColour:hover, a.mainBgColour:focus {
-  background-color: #666666; }
+  background-color: #4e4e4e; }
 
 /* =============================================================================
    Backgrounds Classes | Custom [classesBackgrounds.scss]
@@ -1506,7 +1542,6 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* =============================================================================
    Container Settings | Etc [settingsContainer.scss]
-   ========================================================================== */
 /* // References ------------------------------------------------------------ */
 .container,
 .containerMO,
@@ -1657,7 +1692,7 @@ article, article::before, article::after, details, details::before, details::aft
     white-space: pre-wrap !important; }
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #818181;
     page-break-inside: avoid; }
   p,
   h2,
@@ -1701,10 +1736,10 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
-  border: 2px solid #999;
+  border: 2px solid #818181;
   display: block;
   box-sizing: border-box;
-  background-color: #999;
+  background-color: #818181;
   padding-right: 10px;
   padding-left: 10px;
   font-family: Arial;
@@ -1999,9 +2034,9 @@ article, article::before, article::after, details, details::before, details::aft
       background-color: #fff;
       font-size: 0.8rem; }
       .pop_main.pop_warning .pop_submit, .pop_main.pop_warning .pop_submit:focus, .pop_main.pop_warning .pop_submit:hover {
-        border: 1px solid #999 !important; }
+        border: 1px solid #818181 !important; }
       .pop_main.pop_warning .pop_submit:focus, .pop_main.pop_warning .pop_submit:hover {
-        background-color: #f4f4f4;
+        background-color: #e6e6e6;
         color: #000; }
     .pop_main.pop_warning .pop_close {
       top: 10px;
@@ -2192,7 +2227,7 @@ nav li:focus a, nav li:hover a {
     .navMain .mainMenu li {
       float: none !important; }
     .navMain .mainMenu > li + li {
-      border-top: 1px solid #999; } }
+      border-top: 1px solid #818181; } }
 
 @media (min-width: 768px) {
   .navMain .hamb {
@@ -2200,7 +2235,7 @@ nav li:focus a, nav li:hover a {
   .navMain .navDrawerMainUL {
     display: none; }
   .navMain > ul {
-    background-color: #999; }
+    background-color: #818181; }
     .navMain > ul > li {
       background-color: transparent; }
       .navMain > ul > li a,
@@ -2321,9 +2356,9 @@ nav li:focus a, nav li:hover a {
         background-color: #f2f2f2;
         background-image: url("/nuevo/img/nav_arrowL.svg"); }
       .navMain .mainMenu .backMenu {
-        border-bottom: #999 solid 2px; }
+        border-bottom: #818181 solid 2px; }
         .navMain .mainMenu .backMenu + .backMenu {
-          border-color: #666 transparent #999;
+          border-color: #666 transparent #818181;
           border-width: 1px 0 2px;
           border-style: solid; } }
 
