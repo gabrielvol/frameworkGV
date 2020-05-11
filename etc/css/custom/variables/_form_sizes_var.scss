@@ -2,8 +2,22 @@
    Form Sizes Variables | Custom [variables/form_sizes.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
-// M, L, T, D, DL   = mobile, landscape, tablet, desktop, desktop large
-// B, A, O          = before, after, only
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
 /* // Form ------------------------------------------------------------------ */

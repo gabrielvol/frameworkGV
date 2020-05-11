@@ -2,8 +2,22 @@
    Border Colours Variables | Custom [variables/colours_borders.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
-// X, L, D  = extra, light, dark
-// De, S, B = desaturated, semi, bright
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
 ///**Border Colours:** 
@@ -13,6 +27,8 @@ $borderColours_map:(
     black:          $black,
   //redColour:      $redColour,
   //greenSystem:    $greenSystem,
+    grey4XL:        $grey4XL,
+    grey3XL:        $grey3XL,
     greyXXL:        $greyXXL,
     greyXL:         $greyXL,
     greyL:          $greyL,
@@ -29,6 +45,8 @@ $bdWhite:           map-get($borderColours_map, white);
 $bdBlack:           map-get($borderColours_map, black);
 //$bdRedColour:       map-get($borderColours_map, redColour);
 //$bdGreenSystem:     map-get($borderColours_map, greenSystem);
+$bdGrey4XL:         map-get($borderColours_map, grey4XL);
+$bdGrey3XL:         map-get($borderColours_map, grey3XL);
 $bdGreyXXL:         map-get($borderColours_map, greyXXL);
 $bdGreyXL:          map-get($borderColours_map, greyXL);
 $bdGreyL:           map-get($borderColours_map, greyL);

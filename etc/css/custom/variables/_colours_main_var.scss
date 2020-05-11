@@ -2,8 +2,22 @@
    Colours Main Variables | Custom [variables/colours_main.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
-// X, L, D  = extra, light, dark
-// De, S, B = desaturated, semi, bright
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
 ///**Colours Map Light:** 
@@ -11,7 +25,9 @@
 $colours_map_light:(    
   //redColour:      #ee0000,
     greenSystem:    #339900,
-    greyXXL:        #f4f4f4,
+    grey4XL:        #fafafa,
+    grey3XL:        #f2f2f2,
+    greyXXL:        #e6e6e6,
     greyXL:         #dedede,
     greyL:          #c6c6c6,
     grey:           #999,
@@ -68,6 +84,8 @@ $black_grad_90: rgba(0, 0, 0, 0.9);
 
 //$redColour:     map-get($colours_map_merged, redColour);
 $greenSystem:   map-get($colours_map_merged, greenSystem);
+$grey4XL:       map-get($colours_map_merged, greyXXL);
+$grey3XL:       map-get($colours_map_merged, greyXXL);
 $greyXXL:       map-get($colours_map_merged, greyXXL);
 $greyXL:        map-get($colours_map_merged, greyXL);
 $greyL:         map-get($colours_map_merged, greyL);
