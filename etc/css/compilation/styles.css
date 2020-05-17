@@ -1707,7 +1707,7 @@ article, article::before, article::after, details, details::before, details::aft
     display: block;
     height: 3cm;
     margin: 10px auto 20px; }
-  .gooMap {
+  .map_mask {
     width: 400px;
     height: 300px;
     background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true");
@@ -2043,7 +2043,7 @@ article, article::before, article::after, details, details::before, details::aft
       right: 10px; }
   .pop_main.pop_video {
     box-shadow: 0 0 10px 0 #666; }
-    .pop_main.pop_video .gooYTVideo {
+    .pop_main.pop_video .video_mask {
       border-radius: 0;
       border: none !important; }
   @media (max-width: 499px) {

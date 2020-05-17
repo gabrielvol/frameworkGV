@@ -109,7 +109,7 @@
     &.pop_video{
         box-shadow: $box_shadow_video;
         
-        .gooYTVideo{
+        .video_mask{
             @include borderRadius(0);
             border: $none;
         }

@@ -99,14 +99,14 @@
 
 @import "../scss/settingsContainer";
 
-@import "stylesPrint";
+@import "styles_print";
 
 //@import "stylesCopyright";
-@import "stylesGlobal";
+@import "styles_global";
 @import "button_callToAction";
 //@import "styles_breadcrumbs";
 //@import "stylesError";
-//@import "stylesMedia";
+//@import "styles_media";
 
 @import "settingsLists";
 
@@ -121,8 +121,8 @@
 //@import "../scss/settingsTables";
 //@import "stylesTables";
 
-@import "../scss/settingsModalPopups";
-@import "stylesPopups";
+@import "../scss/settings_modalPopups";
+@import "styles_popups";
 
 @import "stylesHeader";
 //@import "stylesLanguageSwitch";

@@ -145,8 +145,30 @@
             }
         }
     }
+} 
+
+.button_whatsapp{
+    @include equalHeightAndLineHeight(50px);
+    @include borderRadius(30px);
+    position: fixed;
+    z-index: $zIndexButtonOver;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+    background-color: #3ce35a;
+    background-image: url('/clientes/huarpe/img/social_wa_chatOpen.svg');
+    background-size: 40px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-right: 30px;
+    text-shadow: 0 0 5px #1c6829;
+    
+    &:focus, &:hover{
+        box-shadow: 0 0 5px #1c6829;
+    }
 }
- 
+
 /* =============================================================================
    Internas Global Styles | Custom [stylesGlobal.scss]
    ========================================================================== */

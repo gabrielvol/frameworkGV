@@ -1,8 +1,8 @@
 /* =============================================================================
    Media Styles | Custom [stylesMedia.scss]
    ========================================================================== */
-.gooYTVideo,
-.gooMap{
+.video_mask,
+.map_mask{
     @include borderRadius();
     @include borderStyle($bdGreyL);
     box-sizing: border-box;
@@ -13,7 +13,9 @@
         width: 100.5%;
         height: 100%;
     }
+}
 
+.video_mask{
     @include mobileOnly{
         width: 300px;
         height: 168px;
@@ -21,6 +23,23 @@
 
     @include afterMobileLandscape{
         width: 450px;
+        height: 250px;
+    }
+    
+    @include afterTablet{
+        width: 600px;
+        height: 330px;
+    }
+}
+
+.map_mask{
+    @include mobileOnly{
+        width: 300px;
+        height: 300px;
+    }
+
+    @include afterMobileLandscape{
+        width: 500px;
         height: 250px;
     }
     
