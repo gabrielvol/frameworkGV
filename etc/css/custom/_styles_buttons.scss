@@ -1,0 +1,42 @@
+/* =============================================================================
+   Button Styles | Custom [styles_buttons.scss]
+   ========================================================================== */
+/* // References ------------------------------------------------------------ */
+///-- Spacing
+// P, M             = padding, margin
+// T, R, B, L       = top, right, bottom, left
+// H, V, A          = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+.button_whatsapp{
+    @include equalHeightAndLineHeight(50px);
+    @include borderRadius(30px);
+    position: fixed;
+    z-index: $zIndexButtonOver;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+    background-color: #3ce35a;
+    background-image: url('/nuevo/img/social_wa_button.svg');
+    background-size: 40px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-right: 30px;
+    text-shadow: 0 0 5px #1c6829;
+    
+    &:focus, &:hover{
+        box-shadow: 0 0 5px #1c6829;
+    }
+}
