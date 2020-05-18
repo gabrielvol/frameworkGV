@@ -1,7 +1,7 @@
 <?php
     /* // YouTube iframe & Thumbnail URLS ----------------------------------- */
     $media_video_youTube__videoA_id             = 'aaaaaaaaaaaa';
-    $media_video_youTube__videoA_src_iframe     = 'https://www.youtube.com/embed/'. $media_video_youTube__videoA_id;
+    $media_video_youTube__videoA_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media_video_youTube__videoA_id . '?rel=0&showinfo=0';
     $media_video_youTube__videoA_src_full       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/0.jpg';
     $media_video_youTube__videoA_src_th01       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/1.jpg';
     $media_video_youTube__videoA_src_th02       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/2.jpg';
@@ -15,7 +15,7 @@
     
     
     $media_video_youTube__videoB_id             = 'aaaaaaaaaaaa';
-    $media_video_youTube__videoB_src_iframe     = 'https://www.youtube.com/embed/'. $media_video_youTube__videoB_id;
+    $media_video_youTube__videoB_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media_video_youTube__videoB_id . '?rel=0&showinfo=0';
     $media_video_youTube__videoB_src_full       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/0.jpg';
     $media_video_youTube__videoB_src_th01       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/1.jpg';
     $media_video_youTube__videoB_src_th02       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/2.jpg';
