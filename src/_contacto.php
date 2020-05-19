@@ -130,7 +130,7 @@
 
                 <label for="data_dni__formName">
                     <span class="labelName"><?php echo _('DNI'); ?></span>
-                    <input type="tel" name="data_dni__formName" id="data_dni__formName" class="dni <?php echo $formInput_error_class_data_dni__formName ?>" value="<?php echo $_POST['data_dni__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_data_dni__formName ?>>
+                    <input type="text" inputmode="numeric" name="data_dni__formName" id="data_dni__formName" class="dni <?php echo $formInput_error_class_data_dni__formName ?>" value="<?php echo $_POST['data_dni__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_data_dni__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_dni__formName ?>"><?php echo $formSpan_error_MSG_data_dni__formName ?></span>
                 </label>
 
@@ -314,7 +314,7 @@
 
                 <label for="data_cantidad__formName">
                     <span class="labelName"><?php echo _('Cantidad'); ?></span>
-                    <input type="number" name="data_cantidad__formName" id="data_cantidad__formName" class="cantidad <?php echo $formInput_error_class_data_cantidad__formName ?>" value="<?php echo $_POST['data_cantidad__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_data_cantidad__formName ?>>
+                    <input type="text" inputmode="numeric" name="data_cantidad__formName" id="data_cantidad__formName" class="cantidad <?php echo $formInput_error_class_data_cantidad__formName ?>" value="<?php echo $_POST['data_cantidad__formName']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $formInput_autofocus_data_cantidad__formName ?>>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_cantidad__formName ?>"><?php echo $formSpan_error_MSG_data_cantidad__formName ?></span>
                 </label>
 
