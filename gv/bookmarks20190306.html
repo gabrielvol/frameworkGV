@@ -6,9 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
     <title>Bookmarks GV</title>
-    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow:400,700" rel="stylesheet">
 
     <style>
+		@font-face {
+			font-family: 'pragati_narrowregular';
+			src: url('../etc/fonts/excluded/pragatinarrow-regular-webfont.woff2') format('woff2'),
+				 url('../etc/fonts/excluded/pragatinarrow-regular-webfont.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: 'pragati_narrowbold';
+			src: url('../etc/fonts/excluded/pragatinarrow-bold-webfont.woff2') format('woff2'),
+				 url('../etc/fonts/excluded/pragatinarrow-bold-webfont.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-display: swap;
+		}
+        
         html,
         body {
             background-color: #2d1f06;
@@ -16,7 +32,7 @@
             padding: 0 !important;
             height: 100% !important;
             width: 100% !important;
-            font-family: 'Pragati Narrow', sans-serif;
+			font-family: 'pragati_narrowregular';
         }
         
         .clearfix::after {
@@ -47,6 +63,10 @@
 		
 		.displayNone{
 			display: none;
+		}
+		
+		.lowerCase{
+			text-transform: lowercase;
 		}
 		
 		.navTop{
@@ -82,9 +102,11 @@
 		}
 		
 		.navTop a{
-			font-size: 1rem:
-			font-weight: 400;
+			padding: 0 10px;
+			font-family: 'pragati_narrowbold';
+			font-size: 0.9rem;
 			text-align: center;
+			text-transform: uppercase;
 		}
  
         .column_ul{
@@ -111,33 +133,33 @@
             align-items: flex-start;
         }  
         
-        .column_ul .sub_ul > li{
-			border-top: 1px solid #a51d00;
-        }   
-        
-        . >li::before{
-			display: none;
-        }   
-        
         .column_ul ul li{
             position: relative;
             box-sizing: border-box;
             width: 50%;
             padding: 0 10px;
-        }
+        } 
         
         .column_ul ul li::before{
             content: "";
             display: block;
             position: absolute;
-            top: 7px;
+            top: 9px;
             width: 3px;
-            height: 14px;
+            height: 3px;
             background-color: #6b1503;
         }
         
+        .column_ul ul li.new_li::before{
+            top: 14px;
+			left: 0px;
+			width: 7px;
+			height: 2px;
+            background-color: #ffcc00;			
+        }
+        
         .column_ul ul li:hover::before{
-            background-color: #380a00;
+            background-color: #ffcc00;
         }
         
         .column_ul ul li.redBar::before{
@@ -162,16 +184,27 @@
             padding: 0;
         }   
 		
-		.column_ul ul >li li{
+		.column_ul ul > li li{
 			padding: 0 10px;
 		}
         
+		.column_ul .sub_ul{
+			width: 100%;
+			margin-top: 20px;
+		}
+		
+		.column_ul .sub_ul li{
+			width: 50%;
+		}
+		
         a{
             display: block;
             width: 100%;
-            color: #8a610e;
-            text-decoration: none;
             padding-left: 10px;
+            color: #8a610e;
+            font-size: 1rem;
+            line-height: 1.3em;
+            text-decoration: none;
         }
         
         a:hover{
@@ -186,8 +219,8 @@
 			border-top: 5px solid #834602;
             margin: 0;
             color: #000;
+			font-family: 'pragati_narrowbold';
 			font-size: 1.2rem;
-            font-weight: 700;
             line-height: 20px;
         }
 		
@@ -196,36 +229,43 @@
 			border-color: #5c3a00;
 			color: #ffea00;
 		}
-		
-		p[id^=_id-]{
-		}
         
         .separador{
             width: 100%!important;
             clear: both;
-            border-top: 3px solid #2d1f06;
-            margin-top: 6px;
+            border-top: 1px dashed #6c3d04;;
+            margin-top: 20px!important;
+        }
+        
+        .separador:first-child{
+            margin-top: 0!important;
         }
 				
         .separador.titulo.new_li{
-			border-width: 16px;
+            border-top: 2px dotted #ffcc00;
+            padding-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0;
         }
 		
         .titulo a{
 			color: #ffcc00;
-			font-size: 1.05rem;
         }
 		
         .separador.titulo + .titulo a{
 			color: #ffcc00;
-			font-weight: 400;
-			text-transform: unset;
         }
 		
         .separador.titulo + li,
-		.column_ul ul li:first-child{
+		.column_ul ul li:first-child,
+		.column_ul ul li:first-child + li{
 			border: none;
 			margin-top: 0;
+        }
+        
+        .column_ul ul li + li,
+        .column_ul ul li.separador + li{
+            margin-top: 6px;
         }
         
         .separador.titulo::before{
@@ -271,39 +311,6 @@
 			
         </ul>
     </li>
-    <li>
-        <p class="title">Tech News</p>
-        <ul>
-            <li class="separador"><a target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
-            <li><a target="_blank" href="https://kottke.org/">Kottke · Home of fine hypertext products</a></li>	
-            <li><a target="_blank" href="https://twitter.com/Foone">Foone</a></li>	
-			<li><a target="_blank" href="http://jsomers.net/hn/">Hackers Classic</a></li>
-            <li><a target="_blank" href="https://www.i-programmer.info/">I-programmer .info</a></li>
-            <li><a target="_blank" href="https://www.fsf.org/">Free Software Foundation — working together for free software</a></li>
-			<li><a target="_blank" href="https://webmasters.googleblog.com/">Webmasters Blog | Google</a></li>
-            <li><a target="_blank" href="https://explodingtopics.com/">Exploding Topics</a></li>
-			<li><a target="_blank" href="https://www.coindesk.com/">CoinDesk - Leader in blockchain news</a></li>
-            <!--<li><a target="_blank" href="httpssssssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
-						
-			<li>
-				<p class="title">Front-end</p>
-				<ul>
-					<li><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23CSS">Gmail #CSS</a></li>
-					<li><a target="_blank" href="https://css-tricks.com/">CSS-Tricks</a></li>
-					<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li> -->
-				</ul>
-			</li>	
-						
-			<li>
-				<p class="title">Front-end checklists</p>
-				<ul>
-					<li><a target="_blank" href="https://securitycheckli.st/">Security Checklist</a></li>
-					<li><a target="_blank" href="http://www.pixlogix.com/40-critical-checks-applied-launching-website/">40 Critical Checks to be applied Before Launching Your Website - Pixlogix InfoTech Pvt. Ltd.</a></li>
-					<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li> -->
-				</ul>
-			</li>			
-        </ul>
-    </li>
 	
      
     <li>
@@ -320,6 +327,52 @@
         </ul>
     </li>
     <li>
+        <p class="title">Tech News</p>
+        <ul>
+            <li class="separador"><a target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
+            <li><a target="_blank" href="https://kottke.org/">Kottke · Home of fine hypertext products</a></li>	
+            <li><a target="_blank" href="https://www.indiehackers.com/">Indie Hackers</a></li>
+            <li><a target="_blank" href="https://lobste.rs/">Lobte.rs</a></li>
+            <li><a target="_blank" href="http://luap.info:4000/links">Luap .info</a></li>
+            <li><a target="_blank" href="https://twitter.com/Foone">Foone</a></li>	
+			<li><a target="_blank" href="https://www.talkyard.io/">TalkYard.io</a></li>
+			<li><a target="_blank" href="http://jsomers.net/hn/">Hackers Classic</a></li>
+            <li><a target="_blank" href="https://www.i-programmer.info/">I-programmer .info</a></li>
+            <li><a target="_blank" href="https://www.fsf.org/">Free Software Foundation — working together for free software</a></li>
+			<li><a target="_blank" href="https://webmasters.googleblog.com/">Webmasters Blog | Google</a></li>
+            <li><a target="_blank" href="https://explodingtopics.com/">Exploding Topics</a></li>
+			<li><a target="_blank" href="https://www.coindesk.com/">CoinDesk - Leader in blockchain news</a></li>
+            <li><a target="_blank" href="https://www.dannyguo.com/blog">Danny Guo</a></li>
+            <li><a target="_blank" href="https://zwischenzugs.com/">Zwischenzugs</a></li>			
+            <!--<li><a target="_blank" href="httpssssssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+
+			<li class="sub_ul">
+				<p class="title">Front-end</p>
+				<ul>
+					<li><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23CSS">Gmail #CSS</a></li>
+					<li><a target="_blank" href="https://css-tricks.com/">CSS-Tricks</a></li>
+					
+					<li><a target="_blank" href="https://dev.to/kayis">Kayis · Dev.to</a></li>
+					<li><a target="_blank" href="https://danshumway.com/">Dan Shumway</a></li>
+					<li><a target="_blank" href="https://www.robinwieruch.de/blog">Robin Wieruch</a></li>
+					<li><a target="_blank" href="https://0a.io/">0a .io</a></li>
+					<li><a target="_blank" href="https://gabrielgambetta.com/">Gabriel Gambetta</a></li>
+					<li><a target="_blank" href="https://szymonkrajewski.pl/">Szymon Krajewski .pl</a></li>
+					<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
+				</ul>
+			</li>	
+
+			<li class="sub_ul">
+				<p class="title">Front-end checklists</p>
+				<ul>
+					<li><a target="_blank" href="https://securitycheckli.st/">Security Checklist</a></li>
+					<li><a target="_blank" href="http://www.pixlogix.com/40-critical-checks-applied-launching-website/">40 Critical Checks to be applied Before Launching Your Website - Pixlogix InfoTech Pvt. Ltd.</a></li>
+					<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li> -->
+				</ul>
+			</li>			
+        </ul>
+    </li>
+    <li>
         <p class="title">Design News</p>
         <ul>
             <li class="separador"><a target="_blank" href="http://enso.readymag.com/">ENSO Ready Mag</a></li>
@@ -333,6 +386,7 @@
     <li>
         <p class="title">Coffee News</p>
         <ul>
+			<li><a target="_blank" href="https://jamesclear.com/motivation">Motivation</a></li>
 			<li class="separador"><a target="_blank" href="https://css-tricks.com/the-great-divide/">The Great Divide - CSS Tricks</a></li>
 			<li><a target="_blank" href="https://www.nist.gov/pml/time-and-frequency-division/nist-time-frequently-asked-questions-faq#cut">Time and frecuency division · Nist.gov</a></li>
 			<li><a target="_blank" href="https://vigilantcitizen.com/moviesandtv/the-hidden-and-not-so-hidden-messages-in-stanley-kubriks-eyes-wide-shut-pt-i/">Eyes Wide Shut · Vigilan Citizen</a></li> 
@@ -340,14 +394,62 @@
             <li><a target="_blank" href="https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/">things i learnt the hard way in 30 years of coding</a></li>
             <li><a target="_blank" href="https://thehistoryoftheweb.com/">The History of the Web</a></li>
 			<li><a target="_blank" href="https://jlongster.com/How-I-Became-Better-Programmer">How I became a better programmer</a></li>
-			
+            <li><a target="_blank" href="https://blog.cryptographyengineering.com/2020/04/03/does-zoom-use-end-to-end-encryption/">Does Zoom use end to end encryption</a></li>		
             <!--<li><a target="_blank" href="httpssssssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->		
+
+			<li class="sub_ul">
+				<p class="title">Blogs</p>
+				<ul>
+					<li><a target="_blank" href="https://www.swyx.io/writing/">SWYX .io</a></li>
+					<li><a target="_blank" href="https://tkainrad.dev/posts/">Thomas Kainrad</a></li>
+					<li><a target="_blank" href="https://matthewhoelter.com/blog/">Matt Hewhoelter</a></li>
+					<li><a target="_blank" href="https://paulstamatiou.com/">Paul Stamatiou</a></li>
+					<li><a target="_blank" href="http://sprout.rupy.se/">Sprout</a></li>
+					<li><a target="_blank" href="https://jpc.dev/blog">JPC.dev/blog</a></li>
+					<li><a target="_blank" href="https://philippmuens.com/">Philip Muens</a></li>
+					<li><a target="_blank" href="http://therecklesschoice.com/">The Reckless Choice</a></li>
+					<li><a target="_blank" href="http://extremelearning.com.au/">Extreme Learning .com.au</a></li>
+					<li><a target="_blank" href="https://able.bio/">Able .bio</a></li>
+					<li><a target="_blank" href="https://davefernig.com/">Dave Fernig</a></li>
+					<li><a target="_blank" href="https://mitchum.blog/blog/">Mitchum .blog</a></li>
+					<li><a target="_blank" href="https://www.anishathalye.com/">Anisha Thalye</a></li>
+					<li><a target="_blank" href="https://blog.paulhankin.net/">Paul Hankin</a></li>
+					<li><a target="_blank" href="https://thiebaut.dev/">Thiebaut .dev</a></li>
+					<li><a target="_blank" href="https://0a.io/">0a .io</a></li>
+					<li><a target="_blank" href="https://geewaan.netlify.com/">Geewaan Netlify</a></li>
+					<li><a target="_blank" href="https://johnfraney.ca/">John Franey .ca</a></li>
+					<li><a target="_blank" href="https://davidyat.es/">David Yat .es</a></li>
+					<li><a target="_blank" href="https://tedium.co/">Tedium .co</a></li>
+					<li><a target="_blank" href="http://jeffrey.io/writings.html">Jeffrey .io</a></li>
+					<li><a target="_blank" href="https://refruity.xyz/">Refruity .xyz</a></li>
+					<li><a target="_blank" href="https://pomb.us/">Pomb .us</a></li>
+					<li><a target="_blank" href="https://beepb00p.xyz/">Beepb00p .xyz</a></li>
+					<li><a target="_blank" href="https://bayesianneuron.com/">Bayesi Anneuron</a></li>
+					<li><a target="_blank" href="https://blog.phuaxueyong.com/">Phuaxueyong .com</a></li>
+					<li><a target="_blank" href="https://lengrand.fr/">Legrand .fr</a></li>
+					<li><a target="_blank" href="https://www.niklassundbaum.com/">Niklass und baum</a></li>
+					<li><a target="_blank" href="https://wa9ace.net/">wa9ace .net</a></li>
+					<li><a target="_blank" href="https://siliconflorist.com/">Silicon Florist</a></li>
+					<li><a target="_blank" href="https://morepablo.com/">More Pablo</a></li>
+					<li><a target="_blank" href="https://j11g.com/">J11g .com</a></li>
+					<li><a target="_blank" href="https://www.malgregator.com/">Malgregator .com</a></li>
+					<li><a target="_blank" href="https://bartekci.substack.com/">Bartekci substack</a></li>
+					<li><a target="_blank" href="https://asemic-horizon.com/">Asemic Horizon</a></li>
+					<li><a target="_blank" href="https://techinch.com/">Techinch</a></li>
+					<li><a target="_blank" href="https://www.michalpaszkiewicz.co.uk/blog/">Michal Paszkiewicz</a></li>
+					<li><a target="_blank" href="https://thejoeflow.com/blog">The Joe flow</a></li>
+					<li><a target="_blank" href="https://readbroca.com/">Read Broca</a></li>
+					<li><a target="_blank" href="https://www.yoranbrondsema.com/">Yoran Brondsema</a></li>
+					<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li> -->
+				</ul>
+			</li>
+			
+            <!--<li><a target="_blank" href="httpssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->		
         </ul>
     </li>
     <li>
         <p class="title">Security Services</p>
         <ul>
-			<li><a target="_blank" href="https://anonaddy.com/">Anonaddy · anonymous email forwarder</a></li>
             <li><a target="_blank" href="https://blog.google/technology/safety-security/your-android-phone-is-a-security-key/">Android Phone</a></li>
 			<li><a target="_blank" href="https://saymine.com/">Mine · The Future of Data Control</a></li>			
 			<li><a target="_blank" href="https://blog.runpanther.io/open-source-cloud-security-tools/">Open Source Security Tools</a></li>
@@ -368,6 +470,7 @@
             <li><a target="_blank" href="https://uppy.io/docs/">Uppy .io</a></li>
             <li><a target="_blank" href="https://onionshare.org/">Onion Share .org</a></li>
             <li><a target="_blank" href="https://sourcehut.org/">Sourcehut .org</a></li>
+            <li><a target="_blank" href="https://codeberg.org/">Codeberg.org</a></li>
             <!--<li><a target="_blank" href="httpssssssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
         </ul>
     </li>
@@ -375,6 +478,7 @@
         <p class="title">Gafam</p>
         <ul>
             <li><a target="_blank" href="https://tapmydata.com/how-to-quit-google/">How to quit Google</a></li>
+			<li><a target="_blank" href="https://plausible.io/blog/remove-google-analytics">Remove Google Analytics</a></li>
             <li><a target="_blank" href="https://ungoogled-software.github.io/ungoogled-chromium-binaries/">Ungoogled chromium binaries</a></li>
             <li><a target="_blank" href="https://github.com/nickspaargaren/pihole-google">Gafam</a></li>
             <li><a target="_blank" href="https://github.com/W4RH4WK/Debloat-Windows-10">Debloat Windows 10</a></li>
@@ -383,7 +487,6 @@
             <li><a target="_blank" href="https://notochrome.org/">No to Chrome</a></li>
             <li><a target="_blank" href="https://github.com/tycrek/degoogle/blob/master/README.md">DeGoogle</a></li>
             <!--<li><a target="_blank" href="httpssssssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
-			
         </ul>
     </li>
 
@@ -394,7 +497,7 @@
             <li><a target="_blank" href="http://www.cinemargentino.com/">Cinema Argentino</a></li>
             <li><a target="_blank" href="https://www.netflix.com/browse">Netflix</a></li>
 						
-			<li>
+			<li class="sub_ul">
 				<p class="title">Lists</p>
 				<ul>
 					<li><a target="_blank" href="http://www.imdb.com/list/ls073453316/">IMDB The 40 Most Inventive and Creative Films of All Time</a></li>
@@ -408,7 +511,7 @@
 				</ul>
 			</li>
 						
-			<li>
+			<li class="sub_ul">
 				<p class="title">Youtube</p>
 				<ul>
 					<li><a target="_blank" href="https://invidio.us/">Invidio.us</a></li>
@@ -510,13 +613,16 @@
             <li><a target="_blank" href="https://unblocked.vet/">Unblocked</a></li>
 
             <li><a target="_blank" href="https://thepiratebay-proxylist.org/">ThePirateBay-proxylist.org - A list with fast piratebay proxies</a></li>
-            <li class="separador"><a target="_blank" href="https://www.yifysubtitles.com/">YIFY Subtitles - subtitles for YIFY movies</a></li>
+            
+			<li class="separador"><a target="_blank" href="https://www.yifysubtitles.com/">YIFY Subtitles - subtitles for YIFY movies</a></li>
             <li><a target="_blank" href="http://subtitles.me/">Subtitles | YTS Subtitles | RARBG Subtitles | EVO Subtitles | FTG Subtitles | AXXO Subtitles</a></li>
             <li><a target="_blank" href="http://subsmax.com/">SubsMax.com - Download Subtitles for Movies and TV Series</a></li>
             <li><a target="_blank" href="https://ytssubtitles.com/">YTS Subtitles - Subtitles for YIFY YTS Movies</a></li>
             <li><a target="_blank" href="http://www.subdivx.com/index.php">Sub DivX</a></li>
             <li><a target="_blank" href="http://www.opensubtitles.org/">Open Subtitles</a></li>
             <li><a target="_blank" href="http://www.tvsubtitles.net/tvshow-582-1.html">Misftis</a></li>
+			
+            <li class="separador"><a target="_blank" href="https://rodarmor.com/blog/intermodal">Intermodal rodarmor.com - Torrent libraries</a></li>
             <!--<li><a target="_blank" href="htssssssssssssssssssssss">Opesssssssssssssssssssssssbtitles</a></li>-->
 			
         </ul>
@@ -531,6 +637,7 @@
     <li><p class="title">URL Canary</p>
         <ul>
             <li><a target="_blank" href="https://urlcanary.com/">URL Canary - Home</a></li>
+            <!--<li><a target="_blank" href="htssssssssssssssssssssss">Opesssssssssssssssssssssssbtitles</a></li>-->
         </ul>
     </li>
 
@@ -547,6 +654,7 @@
             <li class="separador"><a target="_blank" href="https://roughtrade.com/albums-of-the-year">Albums of the year</a></li>
             <li class=""><a target="_blank" href="https://daily.bandcamp.com/2018/12/17/bandcamp-best-metal-albums-of-2018/">Best Metal Albums 2018</a></li>
             <li class=""><a target="_blank" href="https://daily.bandcamp.com/2018/12/14/bandcamp-best-albums-of-2018-20-1/">Best Albums 2018</a></li>
+            <!--<li><a target="_blank" href="htssssssssssssssssssssss">Opesssssssssssssssssssssssbtitles</a></li>-->
         </ul>
     </li>
 	
@@ -554,14 +662,17 @@
         <p class="title" id="_id-bandcamp">Metal Archives / Bandcamp</p>
         <ul class="">
             <li class="separador titulo"><a target="_blank" href="https://www.metal-archives.com/">Metal Archives</a></li>
+            <li><a target="_blank" href="http://www.worshipmetal.com/features/30-incredible-metal-albums-that-turn-30-years-old-in-2016/4/">30 incredible metal albums that turn 30 in 2016</a></li>
+            <li><a target="_blank" href="http://www.worshipmetal.com/features/6-under-appreciated-classics-of-uk-thrash-pt-1/2/">6 underappreciated classics of UK Thrash</a></li>
+            <!--<li><a target="_blank" href="htssssssssssssssssssssss">Opesssssssssssssssssssssssbtitles</a></li>-->
             
-            <li>
+            <li class="sub_ul">
                 <p class="title">Alternative Metal</p>
                 <ul class="">
                     <li><a target="_blank" href="https://tsunamiride.bandcamp.com/">Tsunami Ride</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Black Metal</p>
                 <ul class="">
                     <li><a target="_blank" href="https://exesa.bandcamp.com/">Exesa</a></li>
@@ -571,7 +682,7 @@
                     <li><a target="_blank" href="https://templepnw.bandcamp.com/">Temple</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Crossover / Crust / Sludge</p>
                 <ul>
                     <li><a target="_blank" href="https://devolvermusic.bandcamp.com/">Devolver</a></li>
@@ -580,14 +691,14 @@
             </li>
 			
 			
-            <li>
+            <li class="sub_ul">
                 <p class="title">Dark Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://vidrigrus.bandcamp.com/">Vidrig</a></li>
                     <li><a target="_blank" href="https://wowod.bandcamp.com/">WOWOD</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Death Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://alkhannes.bandcamp.com/">Al Khannes</a></li>
@@ -610,32 +721,32 @@
                     <li><a target="_blank" href="https://valkyer.bandcamp.com/releases">Valkyer</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Doom</p>
                 <ul>
                     <li><a target="_blank" href="https://blvvme.bandcamp.com/">BLVVME</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Experimental</p>
                 <ul>
                     <li><a target="_blank" href="https://autodafepyro.bandcamp.com/">Auto da fè</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Groove Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://rankojat.bandcamp.com/releases">Rankojat</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Grindcore</p>
                 <ul>
                     <li><a target="_blank" href="https://chainsawdisgorgement.bandcamp.com/releases">chainsaw disgorgement</a></li>
                     <li><a target="_blank" href="https://knifevision.bandcamp.com/album/s-t-7">Knife Vision</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Melodic Death Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://tyrannisva.bandcamp.com/releases">Tyrannis</a></li>
@@ -645,7 +756,7 @@
 
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">NWORHM</p>
                 <ul>
                     <li><a target="_blank" href="https://irondriver.bandcamp.com/">Iron Driver</a></li>
@@ -654,13 +765,13 @@
                 </ul>
             </li>
 			
-            <li>
+            <li class="sub_ul">
                 <p class="title">Post Black Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://delayingtheinevitable.bandcamp.com/releases">Delaying the Inevitable | Delaying the Inevitable</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Progressive Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://sabkemorde.bandcamp.com/">Sabke Morde</a></li>
@@ -670,13 +781,13 @@
 
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Punk</p>
                 <ul>
                     <li><a target="_blank" href="https://reflections-records.bandcamp.com/album/tales-of-the-ancient-age">Annihilation Time</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Stoner Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://thejesusandmaryjane.bandcamp.com/releases">THE JESUS AND MARY JANE</a></li>
@@ -685,13 +796,13 @@
 					
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Symphonic Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://falsegharial.bandcamp.com/releases">False Gharial</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Thrash Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://dirtyroom.bandcamp.com/releases">dirty room</a></li>
@@ -703,13 +814,13 @@
                     <li><a target="_blank" href="https://vengefulatonement.bandcamp.com/album/break-down-the-walls">vengeful atonement</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">Technical Death Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://thedarknebula.bandcamp.com/releases">Usurper | The Dark Nebula</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="sub_ul">
                 <p class="title">por explorar</p>
                 <ul>
                     <li><a target="_blank" href="https://theblackcloudsyndicate.bandcamp.com/">The Blackcloud Syndicate</a></li>
@@ -835,34 +946,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <ul class="column_ul clearfix">
     <li>
         <p class="title">GV Design</p>
@@ -879,6 +962,9 @@
 			<li><a target="_blank" href="http://agridulze.programando.com.ar/">agridulze.programando.com.ar</a></li>
             <li><a target="_blank" href="http://maqueta.agridulze.com/">maqueta.agridulze.com</a></li>
             <li><a target="_blank" href="http://maqueta.agridulze.com/checkout/billing.php">Checkout · maqueta.agridulze.com</a></li>
+			
+            <li class="separador titulo new_li" id=""><a target="_blank" href="https://www.wix.com/dashboard/547d04e2-0e23-494b-ac5e-ad58229db076/home">Dics · Wix Dashboard</a></li>
+			
             
             <li class="separador titulo new_li"><a target="_blank" href="https://gitlab.com/arcoirisdesign">arcoiris | GitLab</a></li>
             <li class=""><a target="_blank" href="https://drive.google.com/drive/folders/1thvj_DyOYTJpysByiCpbS-a2aWwhoLgK">Google Drive · arcorisado</a></li>
@@ -886,89 +972,90 @@
             <li><a target="_blank" href="https://hpanel.hostinger.com/hosting/arcoiris.design/">Hostinger · color@arcoiris</a></li>
             <li><a target="_blank" href="https://webmail1.hostinger.com.ar/">Mail · color@arcoiris</a></li>
             <li class="separador titulo"><a target="_blank" href="http://arcoiris.design/">arcoiris.design</a></li>
-            <li><a target="_blank" href="http://www.elcarozodelasunto.com.ar/">arcoiris | El Carozo del Asunto</a></li>
-            <li><a target="_blank" href="http://trasladosbaires.com.ar/">arcoiris | Traslados Baires</a></li>
-            <li><a target="_blank" href="http://fwcollection.com/">arcoiris | FW Collection</a></li>
+            <li><a target="_blank" href="http://www.elcarozodelasunto.com.ar/">AI | El Carozo del Asunto</a></li>
+            <li><a target="_blank" href="http://trasladosbaires.com.ar/">AI | Traslados Baires</a></li>
+            <li><a target="_blank" href="http://fwcollection.com/">AI | FW Collection</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">AI | positssssssssssssi</a></li>-->
             
             <li class="separador titulo new_li"><a target="_blank" href="https://gitlab.com/Wanita">Wanita | GitLab</a></li>
 			
-            <li class=""><a target="_blank" href="https://drive.google.com/drive/folders/1kSOyoOXOwY-kO8AddSxTlY0ndLZb0Pzr">Wanita | Google Drive</a></li>
+            <li class=""><a target="_blank" href="https://drive.google.com/drive/folders/1JZ8_ppPjYxQwLsgzT6C3lCw_7KjuIdjt">Estudio Wanita | Google Drive</a></li>
+            <li class=""><a target="_blank" href="https://drive.google.com/drive/folders/1kSOyoOXOwY-kO8AddSxTlY0ndLZb0Pzr">GV Wanita | Google Drive</a></li>
+			
             <li class="separador"><a target="_blank" href="http://www.pierinapasteleria.com/">WA | Pierina Micali - Pastelería</a></li>
             <li><a target="_blank" href="http://hibot.us/">WA | Hi Bot</a></li>
             <li><a target="_blank" href="http://gabrielbouza.com.ar/">WA | Gabriel Bouza</a></li>
             <li><a target="_blank" href="http://activandotusderechos.com.ar/">WA | Activando Tus Derechos</a></li>
             <li><a target="_blank" href="http://www.lauracestau.com/">WA | Laura Cestau</a></li>
             <li><a target="_blank" href="http://www.estudiofreggiaroalmiron.com.ar/">WA | Freggiaro Alrmirón</a></li>  
+            <li><a target="_blank" href="http://www.estudiofreggiaroalmiron.com.ar/nuevo">WA | Fundar Eco</a></li>  
             <li><a target="_blank" href="http://www.sanlesfranco.com.ar/">WA | Sanles Franco</a></li>  
-            <li><a target="_blank" href="https://www.4puntocero.com.ar/">4puntocero.com.ar</a></li>
-            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
+            <li><a target="_blank" href="https://www.4puntocero.com.ar/">WA | 4puntocero.com.ar</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">WA | positssssssssssssi</a></li>-->
 			
-            <li class="separador titulo new_li"><a target="_blank" href="https://github.com/gabrielvol/frameworkGV">gabrielvol/frameworkGV | Github</a></li>
+            <li class="separador titulo new_li"><a target="_blank" href="https://github.com/gabrielvol/frameworkGV"><span class="lowerCase">gabrielvol/frameworkGV</span> | Github</a></li>
             <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/framework/">GV Framework</a></li>
             <li><a target="_blank" href="https://gitlab.com/hockeyApp">HockeyApp · GitLab</a></li>
             <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/portfolio/">GV Portfolio</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
         </ul>
-    </li>
-	
-	
+    </li>	
         
     <li>
         <p class="title" id="_id-janus">Janus Comunicación</p>
         <ul class="">
-            <li class="titulo"><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23JC">#Janus · Gmail</a></li>
-            <li class="titulo"><a target="_blank" href="https://gitlab.com/JanusComunicacion">JanusComunicacion · GitLab</a></li>
-            <li class="titulo"><a target="_blank" href="https://www.dropbox.com/home/gabriel%20janus">JanusComunicacion · Dropbox</a></li>
+            <li class="titulo"><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23JC">#JC · Gmail</a></li>
+            <li class="titulo"><a target="_blank" href="https://gitlab.com/JanusComunicacion">Janus Comunicación · GitLab</a></li>
+            <li class="titulo"><a target="_blank" href="https://www.dropbox.com/home/gabriel%20janus">Janus Comunicación · Dropbox</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
-            <li class="separador"><a target="_blank" href="http://www.janus-comunicacion.com.ar/">Janus Comunicación</a></li>
-            <li><a target="_blank" href="http://www.adrianacazares.com/">Adriana Cázares</a></li>
-            <li><a target="_blank" href="https://www.agentex.com.ar/">Agentex</a></li>
-			<li><a target="_blank" href="https://amutz.com.ar/">Amutz</a></li>
-            <li><a target="_blank" href="http://anibalbottini.musica.ar/">Aníbal Bottini</a></li>
-            <li><a target="_blank" href="http://www.ardicosa.com.ar/">Ardico</a></li>
-            <li><a target="_blank" href="http://www.aqual-ice.com/">Aqual Ice</a></li>
-            <li><a target="_blank" href="http://www.bacalaoislandia.com.ar/">Bacalao Islandia</a></li>
-            <li><a target="_blank" href="http://www.berly.com.ar/">Berly International S.A.</a></li>
-            <li><a target="_blank" href="http://dblancaluna.com.ar/">Blancaluna</a></li>
-            <li><a target="_blank" href="http://www.promocionesbnb.com.ar/">BNB - Promociones Integradas</a></li>
-            <li><a target="_blank" href="http://www.bpalpha.com/">BP Alpha</a></li>
-            <li><a target="_blank" href="http://www.estanciabuenaesperanza.com/">Estancia Buena Esperanza</a></li>
-            <li><a target="_blank" href="http://www.rivadavia-sa.com.ar/">Carpintería Rivadavia</a></li>
-            <li><a target="_blank" href="http://www.ccmedicals.com.ar/">CC Medicals</a></li>
-            <li><a target="_blank" href="http://gevp.com.ar/">Club GEVP</a></li>
-            <li><a target="_blank" href="http://www.clublacrozeythomas.com.ar/">Club Lacroze &amp; Thomas</a></li>
-            <li><a target="_blank" href="http://www.danielcestauliz.com/">Daniel Cestau Liz</a></li>
-            <li><a target="_blank" href="http://librosdcl.com/">Daniel Libros</a></li>
-            <li><a target="_blank" href="http://www.dialogografico.com.ar/">Diálogo Gráfico</a></li>
-            <li><a target="_blank" href="http://www.dialogografico.com.ar/nuevo/">Diálogo Gráfico · /nuevo/</a></li>
-            <li><a target="_blank" href="http://www.elc-tradicionargentina.com.ar/">ELC Tradición Argentina</a></li>
-            <li><a target="_blank" href="http://www.frare.com.ar/">Frare S.A.</a></li>
-            <li><a target="_blank" href="http://www.jgfycia.com.ar/">JGF &amp; Co.</a></li>
-            <li><a target="_blank" href="http://incorporesano.com.ar/">In Corpore Sano</a></li>
-            <li><a target="_blank" href="http://www.laescondidapalermo.com.ar/">La Escondida Palermo</a></li>
-            <li><a target="_blank" href="http://www.limpistensrl.com.ar/">Limpisten</a></li>
-            <li><a target="_blank" href="http://lpenergysolutions.com.ar/">LP Energy Solutions</a></li>
-            <li><a target="_blank" href="http://lpenergysolutions.com.ar/PCA.php">LP Energy Solutions PCA</a></li>
-            <li><a target="_blank" href="http://www.matexsur.com/">Matexsur</a></li>
-            <li><a target="_blank" href="http://marplast.com.ar/">Mar·Plast</a></li>
-            <li><a target="_blank" href="http://marplast.com.ar/nuevo/">Mar·Plast · /nuevo/</a></li>
-            <li><a target="_blank" href="http://nycfren.com.ar">Nyc Fren</a></li>
-            <li><a target="_blank" href="http://www.patagoniaebi.com/nuevo">Patagonia EBI /nuevo</a></li>
-            <li><a target="_blank" href="http://www.placardideal.com.ar/">Placard Ideal</a></li>
-            <li><a target="_blank" href="http://www.reflexoremaca.com.ar/">RÉMACA ::</a></li>
-            <li><a target="_blank" href="http://sanoybueno.com.ar/">Sano y Bueno</a></li>
-            <li><a target="_blank" href="http://www.salessolutions.com.ar/">Sales Solutions</a></li>
-            <li><a target="_blank" href="http://www.sutecba.org.ar/nuevo">Sutecba [/nuevo/]</a></li>			
-            <li><a target="_blank" href="http://trimak.com.ar/">Trimak</a></li>
-            <li><a target="_blank" href="http://www.wsc.com.uy/">WSC · wsc.com.uy</a></li>
-            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li> -->
+            <li class="separador"><a target="_blank" href="http://www.janus-comunicacion.com.ar/">JC | Janus Comunicación</a></li>
+            <li><a target="_blank" href="http://www.adrianacazares.com/">JC | Adriana Cázares</a></li>
+            <li><a target="_blank" href="https://www.agentex.com.ar/">JC | Agentex</a></li>
+			<li><a target="_blank" href="https://amutz.com.ar/">JC | Amutz</a></li>
+            <li><a target="_blank" href="http://anibalbottini.musica.ar/">JC | Aníbal Bottini</a></li>
+            <li><a target="_blank" href="http://www.ardicosa.com.ar/">JC | Ardico</a></li>
+            <li><a target="_blank" href="http://www.aqual-ice.com/">JC | Aqual Ice</a></li>
+            <li><a target="_blank" href="http://www.bacalaoislandia.com.ar/">JC | Bacalao Islandia</a></li>
+            <li><a target="_blank" href="http://www.berly.com.ar/">JC | Berly International S.A.</a></li>
+            <li><a target="_blank" href="http://dblancaluna.com.ar/">JC | Blancaluna</a></li>
+            <li><a target="_blank" href="http://www.promocionesbnb.com.ar/">JC | BNB - Promociones Integradas</a></li>
+            <li><a target="_blank" href="http://www.bpalpha.com/">JC | BP Alpha</a></li>
+            <li><a target="_blank" href="http://www.estanciabuenaesperanza.com/">JC | Estancia Buena Esperanza</a></li>
+            <li><a target="_blank" href="http://www.rivadavia-sa.com.ar/">JC | Carpintería Rivadavia</a></li>
+            <li><a target="_blank" href="http://www.ccmedicals.com.ar/">JC | CC Medicals</a></li>
+            <li><a target="_blank" href="http://gevp.com.ar/">JC | Club GEVP</a></li>
+            <li><a target="_blank" href="http://www.clublacrozeythomas.com.ar/">JC | Club Lacroze &amp; Thomas</a></li>
+            <li><a target="_blank" href="http://www.danielcestauliz.com/">JC | Daniel Cestau Liz</a></li>
+            <li><a target="_blank" href="http://librosdcl.com/">JC | Daniel Libros</a></li>
+            <li><a target="_blank" href="http://www.dialogografico.com.ar/">JC | Diálogo Gráfico</a></li>
+            <li><a target="_blank" href="http://www.dialogografico.com.ar/nuevo/">JC | Diálogo Gráfico · [/nuevo/]</a></li>
+            <li><a target="_blank" href="http://www.elc-tradicionargentina.com.ar/">JC | ELC Tradición Argentina</a></li>
+            <li><a target="_blank" href="http://www.frare.com.ar/">JC | Frare S.A.</a></li>
+            <li><a target="_blank" href="http://www.jgfycia.com.ar/">JC | JGF &amp; Co.</a></li>
+            <li><a target="_blank" href="http://incorporesano.com.ar/">JC | In Corpore Sano</a></li>
+            <li><a target="_blank" href="http://www.laescondidapalermo.com.ar/">JC | La Escondida Palermo</a></li>
+            <li><a target="_blank" href="http://www.limpistensrl.com.ar/">JC | Limpisten</a></li>
+            <li><a target="_blank" href="http://lpenergysolutions.com.ar/">JC | LP Energy Solutions</a></li>
+            <li><a target="_blank" href="http://lpenergysolutions.com.ar/PCA.php">JC | LP Energy Solutions PCA</a></li>			
+            <li><a target="_blank" href="http://www.mascg.com">JC | MAS</a></li>
+            <li><a target="_blank" href="http://www.matexsur.com/">JC | Matexsur</a></li>
+            <li><a target="_blank" href="http://marplast.com.ar/">JC | Mar·Plast</a></li>
+            <li><a target="_blank" href="http://nycfren.com.ar">JC | Nyc Fren</a></li>
+            <li><a target="_blank" href="http://www.patagoniaebi.com/">JC | Patagonia EBI</a></li>
+            <li><a target="_blank" href="http://www.placardideal.com.ar/">JC | Placard Ideal</a></li>
+            <li><a target="_blank" href="http://www.reflexoremaca.com.ar/">JC | RÉMACA ::</a></li>
+            <li><a target="_blank" href="http://sanoybueno.com.ar/">JC | Sano y Bueno</a></li>
+            <li><a target="_blank" href="http://www.salessolutions.com.ar/">JC | Sales Solutions</a></li>
+            <li><a target="_blank" href="http://www.sutecba.org.ar/nuevo/">JC | Sutecba [/nuevo/]</a></li>			
+            <li><a target="_blank" href="http://trimak.com.ar/">JC | Trimak</a></li>
+            <li><a target="_blank" href="http://www.wsc.com.uy/">JC | WSC · wsc.com.uy</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">JC | positssssssssssssi</a></li> -->
                         
-            <li class="separador"><a target="_blank" href="http://janus-comunicacion.com.ar/clientes/vagoncafe/">Vagón Cafe · /janus/clientes/vagoncafe/</a></li>
-            <li><a target="_blank" href="http://www.janus-comunicacion.com.ar/clientes/huarpe/">Huarpe · /janus/clientes/huarpe/</a></li>
-            <li><a target="_blank" href="http://www.janus-comunicacion.com.ar/clientes/charly/">Grupo Charly Imágenes · /janus/clientes/charly/</a></li>			
-            <li><a target="_blank" href="http://www.dialogografico.com.ar/MAS/">MAS · /dialogo/MAS/</a></li>
-            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->        
+            <li class="separador"><a target="_blank" href="http://janus-comunicacion.com.ar/clientes/vagoncafe/">JC | Vagón Cafe · /janus/clientes/vagoncafe/</a></li>
+            <li><a target="_blank" href="http://www.janus-comunicacion.com.ar/clientes/huarpe/">JC | Huarpe · /janus/clientes/huarpe/</a></li>
+            <li><a target="_blank" href="http://www.janus-comunicacion.com.ar/clientes/charly/">JC | Grupo Charly Imágenes · /janus/clientes/charly/</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">JC | positssssssssssssi</a></li>-->        
         </ul>
     </li>
         
@@ -987,14 +1074,34 @@
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
             <li class="separador titulo"><a target="_blank" href="https://nextjs.org/">Nextjs.org</a></li>
-            <li><a target="_blank" href="https://www.gardenlife.com.ar">Garden Life</a></li>
-			<li><a target="_blank" href="https://bxslider.com/">BX Slider</a></li>
+			<li><a target="_blank" href="https://github.com/zeit/next-plugins/tree/master/packages/next-sass">Sass in Next.js</a></li>
+            <li><a target="_blank" href="https://reactjs.org/docs/dom-elements.html">React DOM Elements</a></li>
+			<li><a target="_blank" href="https://medium.com/innovation-and-technology/deciphering-typescripts-react-errors-8704cc9ef402">Dechipherin TypeScript React errors</a></li>
             <li><a target="_blank" href="https://www.google.com/recaptcha/intro/v3.html">Google Recaptcha</a></li>
+			<li><a target="_blank" href="https://www.jsdelivr.com/">js Deliver</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
-            <li class="separador"><a target="_blank" href="http://simbel.calzetta01/">Calzetta [localhost]</a></li>
-            <li><a target="_blank" href="http://simbel.calzetta01/como-comprar">Calzetta - Cómo Comprar [localhost]</a></li>			
+			
+			<li class="separador titulo new_li"><a target="_blank" href="localhost:8081">Simbel 2.0 · localhost:8080</a></li>
+			<li><a target="_blank" href="http://localhost:8081/vistaCategoria">Simbel 2.0 - Vista de Categoría</a></li>
+			
+            <li><a target="_blank" href="http://svn2.dattar.com.ar/svn/Simbel/">Simbel 2.0 [repo]</a></li>			
+			<li><a target="_blank" href="http://localhost:8081/carrito">Simbel 2.0 - Carrito</a></li>
+			
+            <li><a target="_blank" href="http://jira.simbel.com.ar/wiki/p/SE/view/devs-nomenclatura-commits">Commit Messages</a></li>
+            <li><a target="_blank" href="http://localhost:8081/carritoEnvio">Simbel 2.0 - Carrito Envío</a></li>
+			
+            <li><a target="_blank" href="https://www.gardenlife.com.ar">Garden Life</a></li>
+			<li><a target="_blank" href="https://bxslider.com/">BX Slider</a></li>
+			
+            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
+			
+			
+			
+            <li class="separador"><a target="_blank" href="http://simbel.calzetta01/">Calzetta [localhost]</a></li>		
 			<li><a target="_blank" href="http://test.calzetta.simbel.com.ar/">Calzetta [test]</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/ruca/calzetta-front/commits/">Calzetta commits</a></li>	
+            <li><a target="_blank" href="http://simbel.calzetta01/como-comprar">Calzetta - Cómo Comprar [localhost]</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
 			
@@ -1020,12 +1127,37 @@
 			<li><a target="_blank" href="http://test.lucianahogar.simbel.com.ar/">Luciana Hogar [test]</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
-            <li class="separador"><a target="_blank" href="http://simbel.murillo01/">Murillo [localhost]</a></li>
+            <li class="separador"><a target="_blank" href="http://simbel.monumental01/">Monumental Hogar [localhost]</a></li>
+			<li><a target="_blank" href="http://test.monumental.simbel.com.ar/">Monumental Hogar [test]</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/ruca/monumental-front/commits/">Monumental commits</a></li>
+            <li><a target="_blank" href="https://www.monumentalhogar.com/categorias/heladeras">MonumentalHogar Web</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
+			
+            <li class="separador"><a target="_blank" href="http://simbel.murillo02/">Murillo [localhost]</a></li>
 			<li><a target="_blank" href="http://test.murillo.simbel.com.ar/">Murillo [test]</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/ruca/murillo-front/commits/">Murillo commits</a></li>
+            <li><a target="_blank" href="https://www.murillo666.com.ar/">Murillo Web</a></li>			
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
             <li class="separador"><a target="_blank" href="http://simbel.musicalisimo01">Musicalisimo [localhost]</a></li>
 			<li><a target="_blank" href="http://test.musica.simbel.com.ar/nosotros">Musicalisimo [test]</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
+			
+            <li class="separador"><a target="_blank" href="http://simbel.nuevashogar02">NuevasHogar [localhost]</a></li>
+			<li><a target="_blank" href="http://test.nuevashogar.simbel.com.ar">NuevasHogar [test]</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/ruca/nuevas-hogar-front/commits/">NuevasHogar commits</a></li>
+			<li><a target="_blank" href="http://nuevashogar.com.ar/">NuevasHogar Web</a></li>
+            <li><a target="_blank" href="http://admin.nuevashogar.simbel.com.ar/admin">NuevasHogar Admin [test]</a></li>
+            <li><a target="_blank" href="http://simbel.nuevashogar02/como-comprar">Nuevas Hogar - Cómo Comprar</a></li>
+            <li><a target="_blank" href="https://www.calzettaneumaticos.com.ar/como-comprar">Calzetta Cómo Comprar</a></li>
+            <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
+			
+            <li class="separador"><a target="_blank" href="http://simbel.otero01/">Otero [localhost]</a></li>
+			<li><a target="_blank" href="http://test.otero.simbel.com.ar/">Otero [test]</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/ruca/otero-front/commits/">Otero commits</a></li>
+			<li><a target="_blank" href="https://www.otero.com.ar/">Otero Web</a></li>
+            <li><a target="_blank" href="http://test.admin.otero.simbel.com.ar/">Otero Admin [test]</a></li>
+            <li><a target="_blank" href="http://jira.simbel.com.ar/wiki/p/OT/view/info-general">Otero Wiki</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 			
             <li class="separador"><a target="_blank" href="http://simbel.rodar01">Rodar [localhost]</a></li>
@@ -1064,9 +1196,10 @@
         </ul>
     </li>
     
-    <li><p class="title">Advertisement</p>
+    <li><p class="title">Ad / Advertisement</p>
         <ul>
             <li><a target="_blank" href="https://www.adjelly.com/size-guide">adJelly - The ultimate social &amp; digital ad size guide</a></li>
+            <li><a target="_blank" href="https://resilienceblocker.info/">Resilience Blocker .info</a></li>
             <!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
         </ul>
     </li>
@@ -1087,8 +1220,8 @@
             <li><a target="_blank" href="https://css-tricks.com/advocating-for-accessible-ui-design/">Advocating for Accessible UI Design | CSS-Tricks</a></li>
             <li><a target="_blank" href="http://webaim.org/">WebAIM: Web Accessibility In Mind</a></li>
             <li><a target="_blank" href="http://wave.webaim.org/extension/">WAVE Chrome Extension</a></li>
-            <li><a target="_blank" href="https://micromodal.now.sh/">Accesible Modal Dialog · Micromodal.js - Tiny javascript library for creating accessible modal dialogs</a></li>
-            <li><a target="_blank" href="https://github.com/Heydon/inclusive-design-checklist">Accesibility Checklist · GitHub - Heydon/inclusive-design-checklist: Aims to be the biggest checklist of inclusive design considerations ever</a></li>
+            <li><a target="_blank" href="https://micromodal.now.sh/">Accessible Modal Dialog · Micromodal.js - Tiny javascript library for creating accessible modal dialogs</a></li>
+            <li><a target="_blank" href="https://github.com/Heydon/inclusive-design-checklist">Accessibility Checklist · GitHub - Heydon/inclusive-design-checklist: Aims to be the biggest checklist of inclusive design considerations ever</a></li>
             <li><a target="_blank" href="https://medium.com/statuscode/getting-started-with-website-accessibility-5586c7febc92">Getting Started with Website Accessibility – Statuscode – Medium</a></li>
             <li><a target="_blank" href="http://khan.github.io/tota11y/">tota11y – an accessibility visualization toolkit</a></li>
             <li><a target="_blank" href="https://blog.marvelapp.com/7-things-every-designer-needs-know-accessibility/">7 Things Every Designer Needs to Know about Accessibility - Marvel Blog</a></li>
@@ -1119,7 +1252,7 @@
 				<p class="title">Accessible HTML elements</p>
 				<ul>
 					<li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-tooltips/">Building a fully-accessible help tooltip</a></li>
-					<li><a target="_blank" href="https://github.com/edenspiekermann/a11y-dialog">Accesible Modal Dialog · Github edenspiekermann/a11y-dialog: A very lightweight and flexible accessible modal dialog.</a></li>ç
+					<li><a target="_blank" href="https://github.com/edenspiekermann/a11y-dialog">Accessible Modal Dialog · Github edenspiekermann/a11y-dialog: A very lightweight and flexible accessible modal dialog.</a></li>ç
 					<li><a target="_blank" href="https://www.24a11y.com/2019/select-your-poison/">Aria Select</a></li>
 					<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 					
@@ -1146,7 +1279,7 @@
 					<li><a target="_blank" href="https://tink.uk/"></a></li>
 					<li><a target="_blank" href="https://www.w3.org/TR/wai-aria-1.1/#role_definitions">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
 					<li><a target="_blank" href="http://www.webteacher.ws/2010/10/14/aria-roles-101/">ARIA Roles 101 | Web TeacherWeb Teacher</a></li>
-					<li><a target="_blank" href="https://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">ARIA Accesible name and description calculation · w3.org</a></li>
+					<li><a target="_blank" href="https://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">ARIA Accessible name and description calculation · w3.org</a></li>
 					<li><a target="_blank" href="https://medium.com/accessibility-a11y/best-practices-on-aria-label-aria-labelledby-and-aria-describedby-913fc9e396ae">ARIA labelled-by described-by</a></li>
 					<!--<li><a target="_blank" href="htthhhhhhhhhhhhhhhhhhhhh">ARIggggggggggggggggggggggeacher</a></li>-->
 				</ul>
@@ -1199,6 +1332,13 @@
                 <li><a target="_blank" href="https://www.nameshouts.com/">NameShouts | Pronounce Names Right</a></li>
 				<li><a target="_blank" href="https://www.unscreen.com/">Unscreen - remove video background</a></li>
                 <!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->
+				
+				<li class="sub_ul">
+					<p class="title">Open Source Audio</p>
+					<ul>
+						<li><a target="_blank" href="http://dig.ccmixter.org/">Dig CC mixter .org</a></li>
+					</ul>
+				</li>
             </ul>
         </li>
         
@@ -1273,7 +1413,7 @@
 				<li><a target="_blank" href="https://github.com/luruke/browser-2020">Browser features 2020</a></li>
 				<!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->
 				
-				<li>
+				<li class="sub_ul">
 					<p class="title">Chrome</p>
 					<ul>
 						<li><a target="_blank" href="https://www.youtube.com/watch?v=yRrrL0Mg1pM">Improving page performance with Chrome DevTools - YouTube</a></li>
@@ -1285,7 +1425,7 @@
 		</li>
         </li>
         
-        <li class="sub_ul">
+        <li>
 			<p class="title">Buttons</p>
 			<ul>
 				<li><a target="_blank" href="https://uxplanet.org/buttons-in-ui-design-the-evolution-of-style-and-best-practices-56536dc5386e#.5pd4luqdd">Buttons in UI Design: The Evolution of Style and Best Practices — UX Planet</a></li>
@@ -1300,42 +1440,69 @@
 			</ul>
 		</li>
         
-        <li class="sub_ul">
+        <li>
 			<p class="title">Captcha</p>
 			<ul>
 				<li><a target="_blank" href="https://kevv.net/you-probably-dont-need-recaptcha/">You probably don't need recaptcha</a></li>
                 <li><a target="_blank" href="https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c">Slider Captcha bypass</a></li>
                 <li><a target="_blank" href="http://textcaptcha.com/">Text captcha</a></li>
-                <!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->
-				
+                <li><a target="_blank" href="https://blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha/">Recaptcha to Hcaptcha</a></li>
+				<li><a target="_blank" href="https://www.pinnacleinternet.com/installing-invisible-recaptcha/">Installing invisible Recaptcha</a></li>
+                <!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->				
 			</ul>
 		</li>
         
-        <li class="sub_ul">
-			<p class="title">ChatBots</p>
+        <li>
+			<p class="title">Chat</p>
 			<ul>
-				<li><a target="_blank" href="https://chatbotsmagazine.com/perfect-bots-from-hell-586f39913577#.etxfx1qou">Perfect Bots from Hell – Chatbots Magazine</a></li>
+				<li><a target="_blank" href="https://www.mumble.info/">Mumble Chat .info</a></li>
+        
+				<li class="sub_ul">
+					<p class="title">ChatBots</p>
+					<ul>
+						<li><a target="_blank" href="https://chatbotsmagazine.com/perfect-bots-from-hell-586f39913577#.etxfx1qou">Perfect Bots from Hell – Chatbots Magazine</a></li>
+						<!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->		
+					</ul>
+				</li>
 			</ul>
 		</li>
-
+		
+		
         
-        <li class="sub_ul">
+        <li>
+			<p class="title">Compiler</p>
+			<ul>
+				<li><a target="_blank" href="https://github.com/jamiebuilds/the-super-tiny-compiler">Super tiny Compiler</a></li>
+                <!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->		
+			</ul>
+		</li>
+        
+        <li>
 			<p class="title">CodePens</p>
 			<ul>
 				<li><a target="_blank" href="https://plnkr.co/">Plunker</a></li>
 				<li><a target="_blank" href="http://jsbin.com/?html,js,output">JS Bin</a></li>
+                <!--<li><a target="_blank" href="httpfffffffffffffffffffffffff">Agenfffffffffffffffffffn</a></li>-->		
 			</ul>
 		</li>
         
 		<!-- -------------- C o d e / P r o g r a m m i n g __ Code / Programming -------------------------------------------- -->
-        <li class="sub_ul">
+        <li>
 			<p class="title">Code / Programming</p>
 			<ul>
 				<li><a target="_blank" href="
 			https://www.namingthings.co/naming-things-software-engineering-book">Naming things in software engineering</a></li>
 				<li><a target="_blank" href="https://masscode.io/">Masscode .io · A free and open source code snippets manager for developers</a></li>
+				<li><a target="_blank" href="http://utf8everywhere.org/">UTF-8 Everywhere</a></li>
 				
-				<li>
+				<li class="sub_ul">
+					<p class="title">Code Editors</p>
+					<ul>
+						<li><a target="_blank" href="https://github.com/rxi/lite">Lite</a></li>
+					</ul>
+				</li>
+				
+				<li class="sub_ul">
 					<p class="title">Review/Testing</p>
 					<ul>
 						<li><a target="_blank" href="https://www.sitepoint.com/the-7-cross-browser-testing-tools-you-need-in-2016/">The 7 Cross-Browser Testing Tools You Need in 2016</a></li>
@@ -1347,13 +1514,15 @@
 						<!--<li><a target="_blank" href="httfffffffffftion">positssssssssssssi</a></li>-->
 					</ul>
 				</li>
-				<li>
+				
+				<li class="sub_ul">
 					<p class="title">Helpers</p>
 					<ul>
 						<li><a target="_blank" href="https://www.programming-idioms.org">Programming Idioms</a></li>
 					</ul>
-				</li>			
-				<li>
+				</li>
+				
+				<li class="sub_ul">
 					<p class="title">Tutorials</p>
 					<ul>
 						<li><a target="_blank" href="https://github.com/dexteryy/spellbook-of-modern-webdev">dexteryy/spellbook-of-modern-webdev · Github</a></li>
@@ -1362,6 +1531,7 @@
 						<li><a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp .org</a></li>
 						<li><a target="_blank" href="http://rosettacode.org/wiki/Rosetta_Code">Rosetta Code · Code Chrestomathy</a></li>
 						<li><a target="_blank" href="https://eloquentjavascript.net/">Javascript Free Tutorial</a></li>
+						<li><a target="_blank" href="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript">Introducción a JavaScript · Domestika</a></li>
 						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
@@ -1372,6 +1542,7 @@
         <li>
 			<p class="title">Color</p>
 			<ul>
+				<li><a target="_blank" href="https://colornames.org/">Color Names .org</a></li>
 				<li><a target="_blank" href="http://www.colorbox.io/">Colorbox .io</a></li>
 				<li><a target="_blank" href="http://www.colorzilla.com/gradient-editor/">CSS Gradient · Colorzilla</a></li>
 				<li><a target="_blank" href="https://shapy.app/">CSS Gradient · Shapy</a></li>
@@ -1744,14 +1915,35 @@
 		</li>
         
         <li>
+			<p class="title">E-mail Email</p>
+			<ul>
+			<li><a target="_blank" href="https://anonaddy.com/">Anonaddy · anonymous email forwarder</a></li>
+			<li><a target="_blank" href="https://kerestey.net/writing/2020-04-05-announcing-unverified-dot-email.html">Unverified .email</a></li>
+				<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
+			</ul>
+		</li>		
+        
+        <li>
 			<p class="title">Emoji</p>
 			<ul>
 				<li><a target="_blank" href="https://github.com/joeattardi/emoji-button">JavaScript Emoji Picker</a></li>
 				<li><a target="_blank" href="https://unicode.org/emoji/charts/full-emoji-list.html">Unicode Emoji Picker</a></li>
 				<li><a target="_blank" href="https://www.webfx.com/tools/emoji-cheat-sheet/">Enoji Cheatsheet</a></li>
-				<li><a target="_blank" href="https://gist.github.com/parmentf/035de27d6ed1dce0b36a">Git commit messages emoji</a></li>
 				<li><a target="_blank" href="https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb">Emoji list api</a></li>
 				<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
+				
+                <li>
+                    <p class="title">Emoji for git commit messages</p>
+                    <ul>
+                        <li><a target="_blank" href="https://gitmoji.carloscuesta.me/">Gitmoji · Carlos Cuesta</a></li>
+						<li><a target="_blank" href="https://danielschmitz.com.br/gitmoji/">Gitmoji</a></li>
+						<li><a target="_blank" href="https://github.com/carloscuesta/gitmoji-cli">Gitmoji Cli · Carlos Cuesta</a></li>
+						<li><a target="_blank" href="https://gist.github.com/parmentf/035de27d6ed1dce0b36a">Git commit messages emoji</a></li>
+						<li><a target="_blank" href="https://github.com/mrowa44/emojify">Emojify</a></li>
+						<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
+						
+                    </ul>
+                </li>
 			</ul>
 		</li>
         
@@ -1759,10 +1951,19 @@
 			<p class="title">Favicon</p>
 			<ul>
 				<li><a target="_blank" href="https://realfavicongenerator.net/blog/">Favicon&#39;s blog - Everything about favicon, Apple touch icon and RealFaviconGenerator</a></li>
+				<li><a target="_blank" href="https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df">SVG Favicon</a></li>
 				<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
 			</ul>
 		</li>
         
+        <li>
+			<p class="title">Falsification</p>
+			<ul>
+				<li><a target="_blank" href="https://gitlab.com/edouardklein/falsisign">Falsi Sign</a></li>
+				<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
+			</ul>
+		</li>
+		
         <li>
 			<p class="title">Feature Policy</p>
 			<ul>
@@ -1777,7 +1978,6 @@
 			<ul class="clearfix ">
             <li><a target="_blank" href="https://medium.com/@jpamental/the-evolution-of-typography-with-variable-fonts-7cd0078b5ceb">The evolution of variable fonts</a></li>				
 				<li><a target="_blank" href="https://www.fontsquirrel.com/tools/webfont-generator">Create Your Own @font-face Kits | Font Squirrel</a></li>
-						
 				<li><a target="_blank" href="https://github.com/rikschennink/fitty">GitHub - rikschennink/fitty: Makes text fit perfectly.</a></li>
 				<li><a target="_blank" href="http://www.smashingmagazine.com/2015/10/space-yourself/">Space Yourself – Smashing Magazine</a></li>
 				<li><a target="_blank" href="https://www.cs.tut.fi/~jkorpela/dashes.html">Dashes and hyphens</a></li>
@@ -1815,7 +2015,6 @@
 						<li><a target="_blank" href="https://sparanoid.com/lab/opentype-features/">The Complete CSS demo for OpenType</a></li>
 						<li><a target="_blank" href="https://www.zachleat.com/web/css-tricks-web-fonts/">Web font performance</a></li>
 						<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
-						
 					</ul>
 				</li>
 				
@@ -1831,9 +2030,6 @@
 						<li><a target="_blank" href="https://en.wikibooks.org/wiki/Unicode/Character_reference/1F000-1FFFF">Unicode Character Reference 1f000 1ffff</a></li>
 						<li><a target="_blank" href="https://www.iso.org/obp/ui/#home">Online Browsing Platform | ISO.org</a></li>
 						<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
-						
-						
-						
 					</ul>
 				</li>
 				
@@ -1860,7 +2056,7 @@
 						<li><a target="_blank" href="https://www.creativereview.co.uk/getting-started-type-design-personal-journey/">Getting Started With Type Design: A Personal Journey - Creative Review</a></li>
 						<li><a target="_blank" href="https://www.type-together.com/greek-type-anatomy">Greek Type Anatomy</a></li>
 						<li><a target="_blank" href="https://typedecon.com/blogs/type-glossary/">Type Glossary</a></li>
-				<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
+						<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
 					</ul>
 				</li>
 				
@@ -1868,18 +2064,23 @@
 					<p class="title">Type Design Analysis</p>
 					<ul>
 						<li><a target="_blank" href="https://typesetinthefuture.com">Type Design Analysis</a></li>
-				<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
+						<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
 					</ul>
 				</li>
 				
 			</ul>
 		</li>  
-
         
         <li>
-            <p class="title">Frameworks</p>
+            <p class="title">Frameworks / Blog</p>
             <ul>
                 <li><a target="_blank" href="http://materializecss.com/about.html">About - Materialize</a></li>
+				<li><a target="_blank" href="https://jekyllrb.com/">Jekyll</a></li>
+				<li><a target="_blank" href="https://gohugo.io/">Hugo</a></li>
+				<li><a target="_blank" href="https://blog.getpelican.com/">Get Pelican</a></li>			
+				<li><a target="_blank" href="https://www.getzola.org/">Zola</a></li>
+				<li><a target="_blank" href="https://ghost.org/">Ghost</a></li>
+				<li><a target="_blank" href="https://github.com/xz/new.css">New.css</a></li>
 				<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
             </ul>
         </li>
@@ -1888,6 +2089,8 @@
             <p class="title">Future Web</p>
             <ul>
                 <li><a target="_blank" href="http://timewellspent.io/">Design for Time Well Spent</a></li>
+				<li><a target="_blank" href="https://medium.com/the-ethereum-name-service/all-the-ways-you-can-surf-the-decentralized-web-today-bf8e7a42fa27">Decentralized Web</a></li>
+				<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
             </ul>
         </li>
 		
@@ -1902,15 +2105,7 @@
 				<li><a target="_blank" href="https://medium.com/@Heydon/flexbox-grid-finesse-4d22b80bfee1#.4ievspgod">Flexbox Grid Finesse — Medium</a></li>
 				<li><a target="_blank" href="http://www.chriswrightdesign.com/experiments/using-flexbox-today/">Experiment: Using Flexbox Today - Chris Wright</a></li>
 				<li><a target="_blank" href="https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer">Sticky Footer</a></li>
-				<!--
-				<li>
-					<p class="title">Flex sub</p>
-					<ul>
-						<li><a target="_blank" href="https://wwwwwwwwww.com/">aaaaaaaaaaaaaaaaaaaaaa</a></li>
-						
-					</ul>
-				</li>
-				-->
+				<!--<li><a target="_blank" href="hthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
 			</ul>
 		</li>
 		
@@ -1926,8 +2121,8 @@
                 <li><a target="_blank" href="https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request">How To Write a Perfect Pull Request · github.blog</a></li>
 				<li><a target="_blank" href="https://lab.github.com/">GitHub Lab · Tutorials</a></li>
 				<li><a target="_blank" href="https://www.micah.soy/posts/setting-up-git-identities/">Setting up GIT Identities</a></li>
+				<li><a target="_blank" href="https://git-rebase.io/">Git Rebase .io</a></li>
 				<!--<li><a target="_blank" href="htssssssssssssssssssssss">aaaaaaaaaaaaaaaaaaaaaa</a></li>-->
-		
 				
 				<li>
 					<p class="title">GIT Markdown</p>
@@ -1936,7 +2131,7 @@
 						<li><a target="_blank" href="https://markdown.es/sintaxis-markdown/">Markdown en español</a></li>
 						<li><a target="_blank" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet · GitHub</a></li>
 						<li><a target="_blank" href="https://karl-voit.at/2017/09/23/orgmode-as-markup-only/">ORG mode markup</a></li>
-				<!--<li><a target="_blank" href="htssssssssssssssssssssss">aaaaaaaaaaaaaaaaaaaaaa</a></li>-->
+						<!--<li><a target="_blank" href="htssssssssssssssssssssss">aaaaaaaaaaaaaaaaaaaaaa</a></li>-->
 					</ul>
 				</li>
 			</ul>
@@ -1957,13 +2152,10 @@
                 <li><a target="_blank" href="https://datascience-school.com/blog/google-data-studio-in-10-minutes-step-by-step-guide/">Google Data Studio</a></li>
 				<li><a target="_blank" href="https://material.io/design/color/dark-theme.html">Material Design Dark Theme</a></li>
 				<li><a target="_blank" href="https://developers.google.com/adwords/api/docs/appendix/geotargeting">AdWords Geotargeting</a></li>
-				<!-- <li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li> -->
-				
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
             </ul>
         </li>    
-		
-		
-		
+				
 		<!-- --------------------------------------------- HTML ----------------------------------------------------------------- -->       
         <li>
             <p class="title">HTML</p>
@@ -1980,7 +2172,6 @@
 					<ul>
 						<li><a target="_blank" href="https://beautifuldingbats.com/graph-makers/pie-chart-maker/">Pie chart maker</a></li>
 						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
-						
 					</ul>
 				</li>
 				
@@ -1997,7 +2188,7 @@
 						<li><a target="_blank" href="http://allthingssmitty.com/2016/09/25/accessible-floating-labels/">Accessible floating labels · Matt Smith</a></li>
 						<li><a target="_blank" href="http://freefrontend.com/css-checkboxes/">55 CSS Checkboxes</a></li>
 						<li><a target="_blank" href="https://codersblock.com/blog/checkbox-trickery-with-css/">Checkbox Trickery with CSS / Coder&#39;s Block</a></li>
-						<li><a target="_blank" href="https://medium.com/@eugeniolujambio/accessible-css-only-floating-labels-74bf9173bc5f">Accesible CSS only floating labels</a></li>
+						<li><a target="_blank" href="https://medium.com/@eugeniolujambio/accessible-css-only-floating-labels-74bf9173bc5f">Accessible CSS only floating labels</a></li>
 						<li><a target="_blank" href="https://adamsilver.io/articles/where-to-put-buttons-in-forms/">Buttons in forms</a></li>
 						<li><a target="_blank" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">input number input tel · Gov.uk</a></li>
 						<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode">Inputmode · mozilla.org</a></li>
@@ -2073,7 +2264,6 @@
                 <li><a target="_blank" href="https://github.com/avoidwork/filesize.js">human readable String describing the file size</a></li>
                 <li><a target="_blank" href="https://github.com/siddii/angular-timer/tree/master/bower_components/humanize-duration">human time in miliseconds</a></li>
 				<li><a target="_blank" href="http://rudy.ca/doomsday.html">Doomsday Algorithms</a></li>
-				
 				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 			</ul>
         </li>
@@ -2118,15 +2308,13 @@
 				<li>
 					<p class="title">Accessibility Icon</p>
 					<ul>
-						<li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/">Accesible Icon Buttons</a></li>
+						<li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/">Accessible Icon Buttons</a></li>
 						<li><a target="_blank" href="https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/">Accessible Icon with inline SVGs · 24a11y.com</a></li>
 						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
 			</ul>
 		</li>
-
-		
 		
 		<!-- --------------------------------------------- I M A G E S --------------------------------------------------------------- -->
 		<li>
@@ -2137,7 +2325,6 @@
 				<li><a target="_blank" href="http://ajxs.github.io/jpk/">JPG Krusher</a></li>
 				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 				
-				
 				<li>
 					<p class="title">IMG Optimisation</p>
 					<ul>
@@ -2146,7 +2333,7 @@
 						<li><a target="_blank" href="https://imagecompressor.com/">Optimizilla · imagecompressor.com/</a></li>
 						<li><a target="_blank" href="https://github.com/google/guetzli/">GitHub - google/guetzli: Perceptual JPEG encoder</a></li>
 						<li><a target="_blank" href="http://responsiveimages.org/">ResponsiveImages.org</a></li>
-						
+						<li><a target="_blank" href="https://github.com/caoscott/SReC">Lossless Image Compression through Super-Resolution</a></li>
 						<li class="separador"><a target="_blank" href="https://bjango.com/articles/pngoptimisation/">bjango articles · PNG optimisation</a></li>
 						<li><a target="_blank" href="https://cloudfour.com/thinks/responsive-images-201-client-hints/">Responsive Images 201: Client Hints - Cloud Four</a></li>
 						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
@@ -2168,14 +2355,10 @@
 			<p class="title">IPv6</p>
 			<ul>
 				<li><a target="_blank" href="https://has-a.name">IPv6 has a name for</a></li>
-				
 				<li><a target="_blank" href="https://ungleich.ch/u/blog/has-a-name-for-every-ipv6-address/">has-a.name for every ipv6 address</a></li>
 				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 			</ul>
 		</li>
-       
-	   
-	   
 	   
         <li>
 			<p class="title">JavaScript</p>
@@ -2192,9 +2375,6 @@
 				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 			</ul>
 		</li>
-		
-        
-		
 		
         <li>
 			<p class="title">Logo</p>
@@ -2218,12 +2398,11 @@
 						<li><a target="_blank" href="https://worldvectorlogo.com/search/brazzoli">Results for brazzoli — Worldvectorlogo</a></li>
 						<li><a target="_blank" href="https://openclipart.org/search/?query=brazzoli">Search results for &quot;brazzoli&quot; clipart - Openclipart</a></li>
 						<li><a target="_blank" href="http://instantlogosearch.com/?q=brazzoli">Instant Logo Search</a></li>
-				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
+						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
 			</ul>
 		</li>
-				
 		
 		<!-- ---------------------- Mail / Email / Mailing __ M a i l  /  E m a i l  /  M a i l i n g  ------------------------------- -->
         <li>
@@ -2292,6 +2471,7 @@
 			<ul>
 				<li><a target="_blank" href="https://github.com/ossu/computer-science">Open Source Society University · OSSU github</a></li>
 				<li><a target="_blank" href="https://cs.opensource.google/">Google Open Source</a></li>
+				<li><a target="_blank" href="https://coiled.io/blog/stages-of-openness.html">Seven stages of Open Source · coiled.io</a></li>
 				<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
 			</ul>
 		</li>
@@ -2319,8 +2499,7 @@
 				<li><a target="_blank" href="https://lesspass.com/#/">LessPass · Open source password manager</a></li>
 				<!--<li><a target="_blank" href="htsssssssssssssssss">Fossssssssssssssssssssssss</a></li>-->
 			</ul>
-		</li>	
-				
+		</li>
 		
         <li>
 			<p class="title">Photo Stock</p>
@@ -2363,8 +2542,7 @@
 				<li><a target="_blank" href="http://morguefile.com/">http://morguefile.com/</a></li>
 				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 			</ul>
-		</li>
-        
+		</li>        
 		
 		<!-- --------------------------------------------- PHP ------------------------------------------------------------------- -->        
         <li>
@@ -2385,7 +2563,6 @@
 				</li>
 			</ul>
 		</li>
-        
 		
 		<!-- --------------------------------------------- Pixel Art ---------------------------------------------------------------- -->        
         <li>
@@ -2396,7 +2573,6 @@
 
 			</ul>
 		</li>
-		
         
         <li>
 			<p class="title">Portfolio / Freelance / Jobs / Trabajo</p>
@@ -2435,11 +2611,14 @@
 		</li>
         
         <li>
-			<p class="title">Online Programs</p>
+			<p class="title">Online Programs / Programas </p>
 			<ul>
+				<li><a target="_blank" href="https://inkscape.org/">Inkscape</a></li>
 				<li><a target="_blank" href="https://www.photopea.com/">Photopea Photo Editor | Edit Photoshop files online</a></li>
 				<li><a target="_blank" href="https://gravit.io/workspace">Gravit</a></li>
+				
 				<li><a target="_blank" href="https://www.figma.com/password/forgot">Figma</a></li>
+				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 			</ul>
 		</li>
 		
@@ -2479,16 +2658,18 @@
 				<li><a target="_blank" href="https://www.codecks.io/blog/2019/creating-a-hit-steam-game-in-html5/">Creating a hit Steam game in HTML 5</a></li>
 				<li><a target="_blank" href="https://usefyi.com/templates/freelancer-templates/">Use FYI Freelancer Templates</a></li>
 				<li><a target="_blank" href="https://www.webdesignerdepot.com/2019/11/exciting-new-tools-for-designers-november-2019/">Tools for designers 2019 · WebDesignerDepot</a></li>				
+				<li><a target="_blank" href="https://paperswelove.org/buenos-aires/">Papers We Love - Buenos Aires</a></li>
 				<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 				
-				<li>
+				<li class="sub_ul">
 					<p class="title">Academic</p>
 					<ul>
 						<li><a target="_blank" href="http://academictorrents.com/">Academic Torrents</a></li>
+						<li><a target="_blank" href="https://www.publicbooks.org/public-books-database/">Public Bookds Database</a></li>
 						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 					</ul>
 				</li>	
-				<li>
+				<li class="sub_ul">
 					<p class="title">Tools</p>
 					<ul>
 						<li><a target="_blank" href="http://fredsarmento.me/frontend-tools/">Best Frontend Tools 2016 - Fredsarmento.me</a></li>
@@ -2496,7 +2677,7 @@
 						<!--<li><a target="_blank" href="httdddddddddddenus">dddddddddddenus</a></li>-->
 					</ul>
 				</li>				
-				<li>
+				<li class="sub_ul">
 					<p class="title">Illustration</p>
 					<ul>
 						<li><a target="_blank" href="https://illlustrations.co/">Illlustrations - open source illustration kit</a></li>
@@ -2642,14 +2823,12 @@
 			</ul>
         </li> 
 		
-		
         <li>
 			<p class="title">URL Shortener</p>
             <ul>
                 <li><a target="_blank" href="https://kutt.it/">Kutt.it</a></li>
             </ul>
         </li>
-		
 		
         <li>
 			<p class="title">UX User Experience</p>
@@ -2681,6 +2860,7 @@
 				</li>
 			</ul>
 		</li>
+		
         <li>
 			<p class="title">UI User Interface</p>
 			<ul>
