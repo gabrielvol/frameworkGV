@@ -19,8 +19,8 @@
     $company_fax_a                  = '2222';
     $company_fax_b                  = '3333';
     
- // $company_tel_NOMBRE_a           = '3278';
- // $company_tel_NOMBRE_b           = '9435';
+ // $company_tel_NOMBRE_a           = '1111';
+ // $company_tel_NOMBRE_b           = '2222';
     
     
     /* // Telephone number Main --------------------------------------------- */

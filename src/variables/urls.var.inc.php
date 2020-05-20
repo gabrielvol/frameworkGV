@@ -7,13 +7,11 @@
     $domain_sec         = 'sitiocomar';
     $url_sec            = 'http://www.'. $domain_sec;
     
-    $url_index          = '/nuevo/';
- // $url-seccion        = '/nuevo/seccion.php';
- // $url-seccion        = '/nuevo/seccion.php';
- // $url-seccion        = '/nuevo/seccion.php';
- // $url-seccion        = '/nuevo/seccion.php';
- // $url-seccion        = '/nuevo/seccion.php';
-    $url_contacto       = '/nuevo/contacto.php';
+    $url_index          = '/nuevo/';                // $nav_pageCurrent 0
+ // $url-seccion        = '/nuevo/seccion.php';     // $nav_pageCurrent 0
+ // $url-seccion        = '/nuevo/seccion.php';     // $nav_pageCurrent 0
+ // $url-seccion        = '/nuevo/seccion.php';     // $nav_pageCurrent 0
+    $url_contacto       = '/nuevo/contacto.php';    // $nav_pageCurrent 0
     
  // $url_inicio         = "#inicio";
  // $url-seccion        = "#seccion"; 
