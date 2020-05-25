@@ -1,20 +1,18 @@
 <?php
     /* // E-mail addresses -------------------------------------------------- */
-    $social_email_A                         = 'casilla';
-    $social_email_B                         = 'casilla';
+    $company_email_A                = 'casilla';      
+    $company_email_address_A        = $company_email_A .'@'. $domain_global;
+    $company_email_mailto_A         = 'mailto:'. $company_email_address_A;
+    $company_email_anchor_A         = '<a href="'. $company_email_mailto_A .'">'. $company_email_address_A .'</a>';
       
-    $social_email_address_A                 = $social_email_A .'@'. $domain_global;
-    $social_mailto_address_A                = 'mailto:'. $social_email_address_A;
-    $social_email_anchor_A                  = '<a href="'. $social_mailto_address_A .'">'. $social_email_address_A .'</a>';
-      
-    $social_email_address_B                 = $social_email_B .'@'. $domain_global;
-    $social_mailto_address_B                = 'mailto:'. $social_email_address_B;
-    $social_email_anchor_B                  = '<a href="'. $social_mailto_address_B .'">'. $social_email_address_B .'</a>';
-    
+    $company_email_B                = 'casilla';
+    $company_email_address_B        = $company_email_B .'@'. $domain_global;
+    $company_email_mailto_B         = 'mailto:'. $company_email_address_B;
+    $company_email_anchor_B         = '<a href="'. $company_email_mailto_B .'">'. $company_email_address_B .'</a>';    
     
     
     /* // E-mail addresses -------------------------------------------------- */
-    $social_email_address_global            = $social_email_address_A;
-    $social_email_mailto_global             = 'mailto:'. $social_email_address_A;
-    $social_email_mailto_global_CC          = 'mailto:'. $social_email_address_adriana .','. $social_email_address_B;
+    $company_email_address_global   = $company_email_address_A;
+    $company_email_mailto_global    = 'mailto:'. $company_email_address_A;
+    //$company_email_mailto_global_CC = 'mailto:'. $company_email_address_A .','. $company_email_address_B;
 ?>

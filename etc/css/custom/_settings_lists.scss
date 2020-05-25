@@ -32,6 +32,14 @@
             margin-left: calc(-1 * calc(#{$liN_size} - 0));
         } 
     }
+    
+    &.numbered_lowerLatin{
+        > li{
+            &::before{
+                content: counter(liN, lower-latin);
+            }
+        }
+    }
 }
 
 .bulleted_dot,

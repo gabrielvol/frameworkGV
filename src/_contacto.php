@@ -371,8 +371,8 @@
                     <span class="labelName"><?php echo _('&Aacute;rea a contactar'); ?></span>
                     <select id="data_area__formName" name="data_area__formName" class="area <?php echo $formInput_error_class_data_area__formName ?>">
                         <option value="<?php echo $_POST['data_area__formName']; ?>" selected><?php if(isset($_POST['data_area__formName'])) { echo $_POST['data_area__formName']; } else { echo _('Seleccione el &aacute;rea con la que quiere contactarse'); } ?></option>
-                        <option value="<?php echo $social_email_a ?>"><?php echo _('aaaa'); ?> - <?php echo $social_email_a ?></option>
-                        <option value="<?php echo $social_email_b ?>"><?php echo _('bbbb'); ?> - <?php echo $social_email_b ?></option>
+                        <option value="<?php echo $company_email_a ?>"><?php echo _('aaaa'); ?> - <?php echo $company_email_a ?></option>
+                        <option value="<?php echo $company_email_b ?>"><?php echo _('bbbb'); ?> - <?php echo $company_email_b ?></option>
                     </select>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_area__formName ?>"><?php echo $formSpan_error_MSG_data_area__formName ?></span>  
                 </label>

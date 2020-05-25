@@ -60,23 +60,23 @@
         </a>
     </li>
     <li class="social_wa">
-        <a href="<?php echo $social_whatsapp_chatOpen ?>" class="wa conTel displayBlock">11 0000 2222</a> 
+        <a href="<?php echo $company_whatsapp_chatOpen ?>" class="wa conTel displayBlock">11 0000 2222</a> 
         
-        <a href="<?php echo $social_whatsapp_chatOpen ?>" class="wa displayBlock hoverGrowL indentedText"><?php echo _('Nuestro contacto en WhatsApp'); ?>.</a> 
+        <a href="<?php echo $company_whatsapp_chatOpen ?>" class="wa displayBlock hoverGrowL indentedText"><?php echo _('Nuestro contacto en WhatsApp'); ?>.</a> 
         
-        <a href="<?php echo $social_whatsapp_chatOpen ?>" class="wa displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $company_whatsapp_chatOpen ?>" class="wa displayBlock hoverGrowL indentedText">
             <?php echo _("Nuestro contacto en WhatsApp"); ?>
             <img src="/nuevo/img/social_wa.svg" class="displayBlock" alt="<?php echo _('Nuestro contacto en WhatsApp'); ?>.">
         </a>
     </li>
     <li class="social_em">
-        <a href="<?php echo $social_email_mailto ?>" class="em displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $company_email_mailto ?>" class="em displayBlock hoverGrowL indentedText">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>
             <img src="/nuevo/img/social_em.svg" class="displayBlock" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>
     </li>
     <li class="social_em">
-        <a href="<?php echo $social_email_mailto_global ?>" class="displayBlock"><?php echo $social_email_address_global ?></a>
+        <a href="<?php echo $company_email_mailto_global ?>" class="displayBlock"><?php echo $company_email_address_global ?></a>
     </li>
     <li class="social_ta">
         <a href="/nuevo/" class="ta displayBlock hoverGrowL indentedText">
