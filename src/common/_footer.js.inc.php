@@ -8,10 +8,10 @@
 // <script src="/nuevo/js/_topper.js"></script>
 ?>
 
-<?php        if($navAcc_act == 1): // Nav ?> 
+<?php        if($navAccordion_act == 1): // Nav / /variables/nav.act.inc.php ?> 
 <script src="/nuevo/js/_navAccordion.js"></script>
 
-<?php endif; if($navDrawer_act == 1): // Nav ?> 
+<?php endif; if($navDrawer_act == 1): // Nav / /variables/nav.act.inc.php ?> 
 <script src="/nuevo/js/_navDrawer.js"></script>
 
 <?php

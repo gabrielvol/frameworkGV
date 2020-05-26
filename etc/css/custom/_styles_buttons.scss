@@ -23,7 +23,7 @@
     @include equalHeightAndLineHeight(50px);
     @include borderRadius(30px);
     position: fixed;
-    z-index: $zIndexButtonOver;
+    z-index: $zIndex_button_topLevel;
     right: 20px;
     bottom: 20px;
     display: block;

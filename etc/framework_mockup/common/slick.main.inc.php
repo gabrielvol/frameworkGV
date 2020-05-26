@@ -25,7 +25,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slick.main.inc.php');
 ?>                
 
-<ul class="slick slickMain mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
+<ul class="slick slick_main mask horizontal clearfix <?php if(isset($sliderClass)) { echo $sliderClass; } ?>">
     <?php        if(isset($sliderFoto_main_01)): // Section ?>
     <li><img src="/nuevo/img/img_slide<?php echo $sliderFoto_main_01; ?>.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
     <?php endif; if(isset($sliderFoto_main_02)): // Section ?>

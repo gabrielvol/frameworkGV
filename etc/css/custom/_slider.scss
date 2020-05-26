@@ -5,6 +5,11 @@
     background-color: $slider_bgColour;
     
     &,
+    .slick-slide{
+        z-index: $zIndex_slider!important; 
+    }
+    
+    &,
     div{
         @include clearfix;
     }
@@ -32,12 +37,7 @@
     }
 }
 
-.slider_home{
-    &,
-    .slick-slide{
-        z-index: $zIndex_slider!important; 
-    }
-  
+.slider_header{
     &,
     .slick-list,
     .slick-track,

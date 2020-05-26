@@ -1,6 +1,6 @@
 $(document).ready(function () {
 /* // Slick Slider ---------------------------------------------------------- */
-    $('.slick_home').slick({
+    $('.slick_main').slick({
          accessibility: true
         ,infinite: true
         

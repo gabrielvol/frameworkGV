@@ -2,8 +2,8 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/variables/__main.var.inc.php');
     
     $page_int                               = 1;
-    $section_contacto                       = 1;
-    $section_contacto_hasMandatoryMsg_act   = 0;
+    $section_hasForm                       = 1;
+    $section_hasForm_hasMandatoryMsg_act   = 0;
     
     $nav_pageCurrent = 0;
     
@@ -38,7 +38,7 @@
                         include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/form_send.inc.php');
                         echo $formStatus_MSG__formName;
 
-                        if($section_contacto_hasMandatoryMsg_act == 1) {
+                        if($section_hasForm_hasMandatoryMsg_act == 1) {
                             echo '<div class="mandatoryMsg '.$mandatoryMsgClasses__formName.'">'.$mandatoryMsg__formName.'</div>';
                         }                
                     ?>

@@ -27,15 +27,15 @@ $borderColours_map:(
     black:          $black,
   //redColour:      $redColour,
   //greenSystem:    $greenSystem,
-    grey4XL:        $grey4XL,
-    grey3XL:        $grey3XL,
+  //grey4XL:        $grey4XL,
+  //grey3XL:        $grey3XL,
     greyXXL:        $greyXXL,
     greyXL:         $greyXL,
     greyL:          $greyL,
     grey:           $grey,
     greyXD:         $greyXD,
     greyXXD:        $greyXXD,
-    grey3XD:        $grey3XD,
+  //grey3XD:        $grey3XD,
     
     error:          $errorColour
 );
@@ -46,8 +46,8 @@ $bdWhite:           map-get($borderColours_map, white);
 $bdBlack:           map-get($borderColours_map, black);
 //$bdRedColour:       map-get($borderColours_map, redColour);
 //$bdGreenSystem:     map-get($borderColours_map, greenSystem);
-$bdGrey4XL:         map-get($borderColours_map, grey4XL);
-$bdGrey3XL:         map-get($borderColours_map, grey3XL);
+//$bdGrey4XL:         map-get($borderColours_map, grey4XL);
+//$bdGrey3XL:         map-get($borderColours_map, grey3XL);
 $bdGreyXXL:         map-get($borderColours_map, greyXXL);
 $bdGreyXL:          map-get($borderColours_map, greyXL);
 $bdGreyL:           map-get($borderColours_map, greyL);
@@ -55,7 +55,7 @@ $bdGrey:            map-get($borderColours_map, grey);
 $bdGreyD:           map-get($borderColours_map, greyD);
 $bdGreyXD:          map-get($borderColours_map, greyXD);
 $bdGreyXXD:         map-get($borderColours_map, greyXXD);
-$bdGrey3XD:         map-get($borderColours_map, grey3XD);
+//$bdGrey3XD:         map-get($borderColours_map, grey3XD);
 
 $bdColour_main_global:              $bdGrey;
 $bdColour_main_global_hover:        darken($bdColour_main_global, 15%);

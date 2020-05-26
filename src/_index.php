@@ -18,7 +18,7 @@
   //$openGraph_desc_GB  = $openGraph_desc_global_GB;
   //$openGraph_url_img  = $url_global .'/nuevo'; 
     $openGraph_url_img  = $url_global;
-    $ogSiteName = $openGraph_title;
+    $openGraph_siteName = $openGraph_title;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
