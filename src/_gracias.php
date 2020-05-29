@@ -6,8 +6,8 @@
     
     $nav_pageCurrent    = 0;
     
-    $site_title         = "Gracias | ".$company_name_title;
-  //$site_desc_GB       = "Thank You | ".$company_name_title;
+    $site_title         = "Gracias | ". $company_name_title;
+  //$site_desc_GB       = "Thank You | ". $company_name_title;
     
     $site_desc          = $site_desc_global;
   //$site_desc_GB       = $site_desc_global_GB;

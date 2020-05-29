@@ -18,12 +18,12 @@ $formInput_ftColour_hover:     $formInput_ftColour;
 $formPlaceholder_ftColour:     lighten($ftColour_main_global, 10%); // Descomentar líneas 13 a 18 en '[/etc/css/scss/settingsText.scss]'
 $formInput_ftColour_autofill:  $formInput_ftColour;
   
-$formInput_bdColour:             $bdColour_main_global;
-$formInput_bdColour_hover:       $bdColour_main_global_hover;
-$formInput_bgColour:             $white;
-$formInput_bgColour_hover:       $formInput_bgColour;
+$formInput_bdColour:           $bdColour_main_global;
+$formInput_bdColour_hover:     $bdColour_main_global_hover;
+$formInput_bgColour:           $white;
+$formInput_bgColour_hover:     $formInput_bgColour;
     
-$formInput_shadowInset:          inset 0 0 4px $greyXD;
+$formInput_shadowInset:        inset 0 0 6px $greyL;
  
      
 /* // Submit ---------------------------------------------------------------- */

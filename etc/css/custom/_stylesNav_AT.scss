@@ -267,7 +267,7 @@
                     @if $nav_text_white_act == "on"{
                         > a,
                         > .topLevelItem{
-                            text-shadow: $text_shadow_whiteText_hover;
+                            text-shadow: $text_shadow_white_hover;
                         }
                     }
 

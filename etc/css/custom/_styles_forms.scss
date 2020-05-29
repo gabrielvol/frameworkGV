@@ -80,6 +80,7 @@ form{
     input,
     select,
     textarea{
+        @include transition(1s);
         @include borderStyle($formInput_bdColour);
         padding-right: 10px;
         padding-left: 10px;

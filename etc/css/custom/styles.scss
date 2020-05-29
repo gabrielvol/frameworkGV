@@ -39,9 +39,9 @@
 @import "variables/section_footer_sizes_var";
 
 @import "activators/forms_act";
-@import "variables/form_colours_var";
-@import "variables/form_fonts_var";
-@import "variables/form_sizes_var";
+@import "variables/forms_colours_var";
+@import "variables/forms_fonts_var";
+@import "variables/forms_sizes_var";
 
 @import "variables/tables_var";
 @import "variables/tables_colours_var";
@@ -111,13 +111,13 @@
 
 @import "settings_lists";
 
-//@import "../scss/settingsForms";
+//@import "../scss/settings_forms";
 //@import "styles_forms";
 //@import "stylesGracias";
 
-//@import "../scss/resetFormsNiceIt";
-//@import "stylesFormsNiceIt";
-//@import "stylesFormsSearch";
+//@import "../scss/reset_forms_niceIt";
+//@import "styles_forms_niceIt";
+//@import "styles_forms_search";
 
 //@import "../scss/settingsTables";
 //@import "stylesTables";
@@ -152,5 +152,5 @@
 //@import "page_contacto";
 
 /* // Post ------------------------------------------------------------------ */
-//@import "../scss/settingsLightbox";
-//@import "stylesLightbox";
+//@import "../scss/settings_lightbox";
+//@import "lightbox";

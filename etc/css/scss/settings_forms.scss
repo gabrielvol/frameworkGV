@@ -1,5 +1,5 @@
 /* =============================================================================
-   Form Settings | Etc [settingsForms.scss]
+   Form Settings | Etc [settings_forms.scss]
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
 .labelName, .formInputErrorMsg{
@@ -289,7 +289,7 @@ form{
                 color: $white;
             }
             &:focus, &:hover{
-                text-shadow: $text_shadow_whiteText_hover;
+                text-shadow: $text_shadow_white_hover;
             }
         }    
     }
