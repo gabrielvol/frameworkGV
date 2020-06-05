@@ -82,8 +82,8 @@
         $formMail_headers .= "Content-type: text/html\r\n";
         $formMail_headers .= "X-Mailer: PHP5\n";
         $formMail_headers .= 'MIME-Version: 1.0' . "\n";
-        //$formMail_headers .= "CC: ".$form_contacto_recipient_CC."\r\n";
-        //$formMail_headers .= "BCC: ".$form_contacto_recipient_BCC."\r\n";
+        //$formMail_headers .= "CC: ". $form_contacto_recipient_CC ."\r\n";
+        //$formMail_headers .= "BCC: ". $form_contacto_recipient_BCC ."\r\n";
         $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $url_contacto_full .'</small><br /><br />';
         $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formName ."<br />";
         $formMail_texto .= "<strong>Apellido:</strong> ". $data_apellido__formName ."<br />";

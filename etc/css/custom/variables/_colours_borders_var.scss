@@ -26,7 +26,13 @@ $borderColours_map:(
     white:          $white,
     black:          $black,
   //redColour:      $redColour,
+  
+  //greenSystem3XL: $greenSystem3XL,
+  //greenSystemXXL: $greenSystemXXL,
+  //greenSystemXL:  $greenSystemXL,
+  //greenSystemL:   $greenSystemL,
   //greenSystem:    $greenSystem,
+  
   //grey4XL:        $grey4XL,
   //grey3XL:        $grey3XL,
     greyXXL:        $greyXXL,
@@ -39,13 +45,13 @@ $borderColours_map:(
     
     error:          $errorColour
 );
-
+ 
 $bdError:           map-get($borderColours_map, error);
 
 $bdWhite:           map-get($borderColours_map, white);
 $bdBlack:           map-get($borderColours_map, black);
 //$bdRedColour:       map-get($borderColours_map, redColour);
-//$bdGreenSystem:     map-get($borderColours_map, greenSystem);
+
 //$bdGrey4XL:         map-get($borderColours_map, grey4XL);
 //$bdGrey3XL:         map-get($borderColours_map, grey3XL);
 $bdGreyXXL:         map-get($borderColours_map, greyXXL);

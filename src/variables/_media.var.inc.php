@@ -1,31 +1,31 @@
 <?php
     /* // YouTube iframe &amp; Thumbnail URLS ----------------------------------- */
-    $media_video_youTube__videoA_id             = 'aaaaaaaaaaa';
-    $media_video_youTube__videoA_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media_video_youTube__videoA_id .'?&amp;autoplay=1&amp;rel=0&amp;showinfo=0&amp;controls=0&amp;mute=1';
-    $media_video_youTube__videoA_src_full       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/0.jpg';
-    $media_video_youTube__videoA_src_th01       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/1.jpg';
-    $media_video_youTube__videoA_src_th02       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/2.jpg';
-    $media_video_youTube__videoA_src_th03       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/3.jpg';
+    $media__videoA_id             = 'aaaaaaaaaaa';
+    $media__videoA_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media__videoA_id .'?&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;mute=1&amp;playlist='. $media__videoA_id; 
+    $media__videoA_src_full       = 'https://img.youtube.com/vi/'. $media__videoA_id .'/0.jpg';
+    $media__videoA_src_th01       = 'https://img.youtube.com/vi/'. $media__videoA_id .'/1.jpg';
+    $media__videoA_src_th02       = 'https://img.youtube.com/vi/'. $media__videoA_id .'/2.jpg';
+    $media__videoA_src_th03       = 'https://img.youtube.com/vi/'. $media__videoA_id .'/3.jpg';
     
-    $media_video_youTube__videoA_src_th_default = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/default.jpg';
-    $media_video_youTube__videoA_src_th_hq      = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/hqdefault.jpg';
-    $media_video_youTube__videoA_src_th_mq      = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/mqdefault.jpg';
-    $media_video_youTube__videoA_src_th_sd      = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/sddefault.jpg';
-    $media_video_youTube__videoA_src_th_max     = 'https://img.youtube.com/vi/'. $media_video_youTube__videoA_id .'/maxresdefault.jpg';
+    $media__videoA_src_th_default = 'https://img.youtube.com/vi/'. $media__videoA_id .'/default.jpg';
+    $media__videoA_src_th_hq      = 'https://img.youtube.com/vi/'. $media__videoA_id .'/hqdefault.jpg';
+    $media__videoA_src_th_mq      = 'https://img.youtube.com/vi/'. $media__videoA_id .'/mqdefault.jpg';
+    $media__videoA_src_th_sd      = 'https://img.youtube.com/vi/'. $media__videoA_id .'/sddefault.jpg';
+    $media__videoA_src_th_max     = 'https://img.youtube.com/vi/'. $media__videoA_id .'/maxresdefault.jpg';
     
     
-    $media_video_youTube__videoB_id             = 'aaaaaaaaaaaa';
-    $media_video_youTube__videoB_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media_video_youTube__videoB_id . '?rel=0&amp;showinfo=0';
-    $media_video_youTube__videoB_src_full       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/0.jpg';
-    $media_video_youTube__videoB_src_th01       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/1.jpg';
-    $media_video_youTube__videoB_src_th02       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/2.jpg';
-    $media_video_youTube__videoB_src_th03       = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/3.jpg';
+    $media__videoB_id             = 'aaaaaaaaaaaa';
+    $media__videoB_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media__videoB_id . '?rel=0&amp;showinfo=0';
+    $media__videoB_src_full       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/0.jpg';
+    $media__videoB_src_th01       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/1.jpg';
+    $media__videoB_src_th02       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/2.jpg';
+    $media__videoB_src_th03       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/3.jpg';
     
-    $media_video_youTube__videoB_src_th_default = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/default.jpg';
-    $media_video_youTube__videoB_src_th_hq      = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/hqdefault.jpg';
-    $media_video_youTube__videoB_src_th_mq      = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/mqdefault.jpg';
-    $media_video_youTube__videoB_src_th_sd      = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/sddefault.jpg';
-    $media_video_youTube__videoB_src_th_max     = 'https://img.youtube.com/vi/'. $media_video_youTube__videoB_id .'/maxresdefault.jpg';
+    $media__videoB_src_th_default = 'https://img.youtube.com/vi/'. $media__videoB_id .'/default.jpg';
+    $media__videoB_src_th_hq      = 'https://img.youtube.com/vi/'. $media__videoB_id .'/hqdefault.jpg';
+    $media__videoB_src_th_mq      = 'https://img.youtube.com/vi/'. $media__videoB_id .'/mqdefault.jpg';
+    $media__videoB_src_th_sd      = 'https://img.youtube.com/vi/'. $media__videoB_id .'/sddefault.jpg';
+    $media__videoB_src_th_max     = 'https://img.youtube.com/vi/'. $media__videoB_id .'/maxresdefault.jpg';
     
     
 
