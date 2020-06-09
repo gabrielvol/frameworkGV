@@ -37,6 +37,9 @@ table{
             &:last-child{
                 @include borderRadiusB($helpers_border_radius_table);
             }
+            &:only-child{
+                @include borderRadius($helpers_border_radius_table);
+            }
         }
     }   
     tfoot{
@@ -89,15 +92,15 @@ table{
 .tableStriped{
     thead, tfoot{
         tr{
-            background-color: $bgColour_table_striped_thead;
+            background-color: $table_bgColour_striped_thead;
         }
     }
     tbody{
         tr{
-            background-color:$bgColour_table_striped_even;
+            background-color:$table_bgColour_striped_even;
             
             &:nth-child(odd){
-                background-color: $bgColour_table_striped_odd;
+                background-color: $table_bgColour_striped_odd;
             }
         }        
     }

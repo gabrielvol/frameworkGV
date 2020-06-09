@@ -3,18 +3,18 @@
    ========================================================================== */
 
 /* // Table Border Colours -------------------------------------------------- */
-$bdColour_main_table:         $bdGrey;
-$bdColour_secondary_table:    $bdGreyXL;
+$table_bdColour_main:         $bdGrey;
+$table_bdColour_sec:    $bdGreyXL;
 
 
 /* // Table Background Colours ---------------------------------------------- */
-$bgColour_main_table:         #888;
-$bgColour_secondary_table:    #bbb;
-$bgColour_tertiary_table:     $bgGreyXL;
+$table_bgColour_main:         #888;
+$table_bgColour_sec:    #bbb;
+$table_bgColour_ter:     $bgGreyXL;
 
 
 /* // Striped Table --------------------------------------------------------- */
-$bgColour_table_striped_thead:     #aaa;
-$bgColour_table_striped_odd:       #eee;
-$bgColour_table_striped_even:      $white;
-$bgColour_table_striped_separator: darken($bgColour_table_striped_odd, 60%);
+$table_bgColour_striped_thead:     #aaa;
+$table_bgColour_striped_odd:       #eee;
+$table_bgColour_striped_even:      $white;
+$table_bgColour_striped_separator: darken($table_bgColour_striped_odd, 60%);

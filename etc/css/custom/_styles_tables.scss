@@ -22,21 +22,21 @@ table{
 
 /* // Rounded Tables -------------------------------------------------------- */
 table.tableRounded{
-    @include borderStyle($bdColour_main_table);
+    @include borderStyle($table_bdColour_main);
     
     th,
     tfoot td{
-        background-color: $bgColour_main_table;
+        background-color: $table_bgColour_main;
     }
    
     tfoot td{
-        @include borderStyleT($bdColour_secondary_table);
+        @include borderStyleT($table_bdColour_sec);
     }
     
     tr{
         th,
         td{
-            @include borderStyleB($bdColour_secondary_table);
+            @include borderStyleB($table_bdColour_sec);
         }
     }
     
@@ -50,28 +50,36 @@ table.tableRounded{
     }
 }
     
-$table_width_BT: 40%;
+$table_before_width_BT: 40%;
 @include beforeTablet{
     table{
+        tbody{
+            display: block;
+            width: 100%;
+        }
+        
         tr{
             & + tr,
             &:last-child{
                 @include borderStyleT($bdGreyXD, 2px);
             }
+            
+            &:only-child{
+                border: $none;
+            }
            
             td{
+                padding-left: calc(#{$table_before_width_BT} + 5%);
                 font-size: 0.8rem;
                 text-align: center;
-                padding-left: calc(#{$table_width_BT} + 5%);
 
                 & + td{
-                    @include borderStyleT($bdGrey);
+                    @include borderStyleT($table_bdColour_main);
                 }
                 
                 &::before{
                     left: 10px;
-                    width: $table_width_BT; 
-                    width: 40%; 
+                    width: $table_before_width_BT; 
                     font-weight: bold;
                     text-transform: uppercase;                
                 }
@@ -81,18 +89,18 @@ $table_width_BT: 40%;
     
     .tableRounded{
         tr{
-            @include borderStyleB($bdColour_main_table, 2px);
+            @include borderStyleB($table_bdColour_main, 2px);
             
             td{
-                @include borderStyleB($bdColour_secondary_table, 1px, dotted);
+                @include borderStyleB($table_bdColour_sec, 1px, dotted);
             }
             
             &:last-child{
                 td{
-                    @include borderStyleB($bdColour_secondary_table!important);
+                    @include borderStyleB($table_bdColour_sec!important);
                     
                     &:last-child{
-                        @include borderStyleB($bdColour_secondary_table!important, 0);
+                        @include borderStyleB($table_bdColour_sec!important, 0);
                     }
                 }
             }
@@ -103,19 +111,19 @@ $table_width_BT: 40%;
         tbody{
             tr{
                 td{
-                    background-color:$bgColour_table_striped_even;
+                    background-color:$table_bgColour_striped_even;
                     
                     &:nth-child(odd){                        
-                        background-color: darken($bgColour_table_striped_even, 10%);
+                        background-color: $table_bgColour_striped_odd;
                     }                    
                 }
                 
                 &:nth-child(n+2){
-                    @include borderStyleT($bgColour_table_striped_separator, 2px);
+                    @include borderStyleT($table_bgColour_striped_separator, 2px);
                 }
                 
                 &:last-child{
-                    @include borderStyleB($bgColour_table_striped_separator);
+                    @include borderStyleB($table_bgColour_striped_separator);
                 }
             }
         }
@@ -152,14 +160,14 @@ $table_width_BT: 40%;
         
         .tableRounded{
             tr{
-                @include borderStyleB($bdColour_main_table, 1px);
+                @include borderStyleB($table_bdColour_main, 1px);
                 
                 td{
-                    @include borderStyleB($bdColour_secondary_table, 0);
+                    @include borderStyleB($table_bdColour_sec, 0);
                 }
                 
                 &:last-child td{
-                    @include borderStyleB($bdColour_secondary_table!important, 0);
+                    @include borderStyleB($table_bdColour_sec!important, 0);
                 }
             }
         }
