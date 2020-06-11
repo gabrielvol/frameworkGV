@@ -7,10 +7,10 @@
     $nav_pageCurrent = 0;
     
     $site_title      = "Licencia | ". $company_name_title;
-  //$site_title_GB   = "Licence | ". $company_name_title;
+//  $site_title_GB   = "Licence | ". $company_name_title;
     
     $site_desc       = $site_desc_global;
-  //$site_desc_GB    = $site_desc_global_GB;
+//  $site_desc_GB    = $site_desc_global_GB;
     
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');

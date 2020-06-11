@@ -16,5 +16,5 @@
         $gettext_idioma = 'en_GB';
     } else {
         $gettext_idioma = 'es_AR';
-    };
+    }
 ?>

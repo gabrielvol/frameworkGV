@@ -22,11 +22,11 @@
         if($page_index == 1){ echo '<h1 class="logoH">'; } 
         if($page_index == 1 &&  $logo_bgImg_before == 1) { echo '<div class="logoBefore">'; }
     ?>
-    <a href="/nuevo/<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt';
+    <a href="/nuevo/<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt_BR';
         } else if($gettext_idioma == 'en_GB') {
-            echo '?l=en';
+            echo '?l=en_GB';
         } else {
-            echo '?l=es';
+            echo '?l=es_AR';
         } ?>" class="pRel displayBlock <?php if($page_int == 1){ echo 'logoH'; } ?>">
         <?php if($page_int == 1 && $logo_bgImg_before == 1) { echo '<div class="logoBefore">'; } ?>
             <img src="/nuevo/img/logo.svg" alt="<?php echo $company_name_full ?>." class="displayBlock">

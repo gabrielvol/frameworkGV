@@ -8,16 +8,16 @@
     $nav_pageCurrent_int    = 0;
     
     $site_title             = "PaginaInterna | ". $company_name_title;
-  //$site_title_GB          = "PaginaInterna | ". $company_name_title;
+//  $site_title_GB          = "PaginaInterna | ". $company_name_title;
     
     $site_desc              = $site_desc_global;
-  //$site_desc_GB           = $site_desc_global_GB;
+//  $site_desc_GB           = $site_desc_global_GB;
     
     $openGraph_title        = $openGraph_title_global;
-  //$openGraph_title_GB     = $openGraph_title_global_GB;
+//  $openGraph_title_GB     = $openGraph_title_global_GB;
     $openGraph_desc         = $openGraph_desc_global;
-  //$openGraph_desc_GB      = $openGraph_desc_global_GB;
-  //$openGraph_url_img      = $url_global .'/nuevo'; 
+//  $openGraph_desc_GB      = $openGraph_desc_global_GB;
+//  $openGraph_url_img      = $url_global .'/nuevo'; 
     $openGraph_url_img      = $url_global;
     $openGraph_siteName     = $openGraph_title;
     

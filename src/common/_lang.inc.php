@@ -18,7 +18,7 @@
     </li>
     <li>
         <a href="/clientes/?l=en_US" class="displayBlock borderBox mask hoverGrowM">
-            <img src="/clientes/img/flag_US.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
+            <img src="/clientes/img/flag_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>.">
         </a>
     </li>
     <li> <!-- gettext_alt -->

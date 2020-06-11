@@ -2164,7 +2164,7 @@ article, article::before, article::after, details, details::before, details::aft
     background-image: url("/img/button_siteTop.svg");
     background-repeat: no-repeat;
     background-position: center; }
-  #footer .address_footer_goo a {
+  #footer .footer_address a {
     font-size: 1em;
     line-height: 1.2em; }
   @media (max-width: 499px) {
@@ -2180,10 +2180,10 @@ article, article::before, article::after, details, details::before, details::aft
     #footer .logoF {
       width: 125px; } }
   @media (max-width: 1023px) {
-    #footer .address_footer_goo a {
+    #footer .footer_address a {
       text-decoration: underline; } }
   @media (min-width: 1024px) {
-    #footer .address_footer_goo a:focus, #footer .address_footer_goo a:hover {
+    #footer .footer_address a:focus, #footer .footer_address a:hover {
       text-decoration: underline; } }
 
 /* =============================================================================

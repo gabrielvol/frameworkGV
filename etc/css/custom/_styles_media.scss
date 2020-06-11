@@ -16,6 +16,8 @@
 }
 
 .video_mask{
+    background-color: $bgGreyXXD;
+
     @include mobileOnly{
         width: 300px;
         height: 168px;

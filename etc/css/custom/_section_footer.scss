@@ -32,7 +32,7 @@
         }
     }
     
-    .address_footer_goo{
+    .footer_address{
         a{
             font-size: 1em;
             line-height: 1.2em;
@@ -65,7 +65,7 @@
         
         @if $footer_floatedContent_act_MO == "on"{
             .logo_footer,
-            .txt_footer{
+            .footer_txt{
                 float: left;
             }
             
@@ -77,7 +77,7 @@
                 }
             }
             
-            .txt_footer{
+            .footer_txt{
                 width: calc(100% - #{$footer_logoFloated_width_MO});  // footerSizes.scss
             }    
             
@@ -105,7 +105,7 @@
         
         @if $footer_floatedContent_act_MLO == "on"{
             .logo_footer,
-            .txt_footer{
+            .footer_txt{
                 float: left;
             }
             
@@ -117,7 +117,7 @@
                 }
             }
             
-            .txt_footer{
+            .footer_txt{
                 width: calc(100% - #{$footer_logoFloated_width_MLO});  // footerSizes.scss
             }    
         } @else {
@@ -140,7 +140,7 @@
         
         @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_AT == "on"{
             .logo_footer,
-            .txt_footer{
+            .footer_txt{
                 float: left;
             }
             
@@ -154,7 +154,7 @@
                 }
             }
             
-            .txt_footer{
+            .footer_txt{
                 width: calc(100% - #{$footer_logoFloated_width_AT});  // footerSizes.scss
             }
 
@@ -176,7 +176,7 @@
             height: $footer_height_ATL;
         }
         
-        .address_footer_goo{
+        .footer_address{
             a{
                 text-decoration: underline;
             }
@@ -188,7 +188,7 @@
             height: $footer_height_ATL;
         }
         
-        .address_footer_goo{
+        .footer_address{
             a{
                 &:focus, &:hover{
                     text-decoration: underline;

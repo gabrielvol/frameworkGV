@@ -6,12 +6,12 @@
     <div class="logo_footer borderBox">
         <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $company_name_full ?>.">
     </div>
-    <div class="txt_footer borderBox">
-        <p class="address_footer_goo">
+    <div class="footer_txt borderBox">
+        <p class="footer_address">
             <a href="<?php echo $company_address_main_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_PT; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_GB; } else { echo $company_address_main; } ?></a>
         </p>
-        <p class="tel_footer"><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
-        <p class="mail_footer"><?php echo _("Correo electr&oacute;nico"); ?>: <a href="<?php echo $company_email_mailto_A ?>"><?php echo $company_email_address_A ?></a></p>
+        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
+        <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $company_email_href_EMAILA ?>><?php echo $company_email_address_EMAILA ?></a></p>
     </div>  
     
     <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
@@ -22,13 +22,13 @@
     
     <?php include('social.inc.php'); ?>
     
-    <p class="address_footer_goo">
+    <p class="footer_address">
         <a href="<?php echo $company_address_main_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $company_address_main_PT; } else if($gettext_idioma == 'en_GB') { echo $company_address_main_GB; } else { echo $company_address_main; } ?></a>
     </p>
     
     <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $company_tel_main_formatted ?></p>
     
-    <p><?php echo _("Correo electr&oacute;nico"); ?>: <a href="<?php echo $company_email_mailto_A ?>"><?php echo $company_email_address_A ?></a></p>
+    <p><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $company_email_href_EMAILA ?>><?php echo $company_email_address_EMAILA ?></a></p>
     
     <p class="copy_footer">&copy; <?php echo $dateThisYear ." - ". $company_name_full ?></p>
     

@@ -1,18 +1,21 @@
 <?php
-    /* // E-mail addresses -------------------------------------------------- */
-    $company_email_A                = 'casilla';      
-    $company_email_address_A        = $company_email_A .'@'. $domain_global;
-    $company_email_mailto_A         = 'mailto:'. $company_email_address_A;
-    $company_email_anchor_A         = '<a href="'. $company_email_mailto_A .'">'. $company_email_address_A .'</a>';
-      
-    $company_email_B                = 'casilla';
-    $company_email_address_B        = $company_email_B .'@'. $domain_global;
-    $company_email_mailto_B         = 'mailto:'. $company_email_address_B;
-    $company_email_anchor_B         = '<a href="'. $company_email_mailto_B .'">'. $company_email_address_B .'</a>';    
+    /* // E-mail addresses -------------------------------------------------- */    
+    $company_email_EMAILA           = 'EMAILA';
+    $company_email_address_EMAILA   = $company_email_EMAILA .'@'. $domain_global;
+    $company_email_mailto_EMAILA    = 'mailto:'. $company_email_address_EMAILA;
+    $company_email_href_EMAILA      = 'href="'. $company_email_mailto_EMAILA .'"';
+    $company_email_anchor_EMAILA    = '<a '. $company_email_href_EMAILA .'>'. $company_email_address_EMAILA .'</a>';   
+    
+    $company_email_EMAILB           = 'EMAILB';
+    $company_email_address_EMAILB   = $company_email_EMAILB .'@'. $domain_global;
+    $company_email_mailto_EMAILB    = 'mailto:'. $company_email_address_EMAILB;
+    $company_email_href_EMAILB      = 'href="'. $company_email_mailto_EMAILB .'"';
+    $company_email_anchor_EMAILB    = '<a '. $company_email_href_EMAILB .'>'. $company_email_address_EMAILB .'</a>';     
     
     
     /* // E-mail addresses -------------------------------------------------- */
-    $company_email_address_global   = $company_email_address_A;
-    $company_email_mailto_global    = 'mailto:'. $company_email_address_A;
-    //$company_email_mailto_global_CC = 'mailto:'. $company_email_address_A .','. $company_email_address_B;
+    $company_email_address_global   = $company_email_address_EMAILA;
+    $company_email_mailto_global    = 'mailto:'. $company_email_address_global;
+  //$company_email_mailto_global_CC = 'mailto:'. $company_email_address_global .','. $company_email_address_EMAILB;
+    $company_email_href_global      = 'href="'. $company_email_mailto_global .'"';
 ?>

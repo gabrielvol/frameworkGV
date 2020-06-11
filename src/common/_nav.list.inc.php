@@ -2,20 +2,24 @@
 
 <li class="displayNoneAT <?php if($nav_pageCurrent == 0) { echo 'displayNone current'; } ?>">
     <a <?php echo $href_index ?> class="borderBox" <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
-        <?php echo _("Inicio"); ?></a>
+        <?php echo _("Inicio"); ?>
+    </a>
 </li>
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
-    <a <?php echo $href-seccion ?> class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
-        <?php echo _("seccion"); ?></a>
+    <a <?php echo $href_xxx ?> class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+        <?php echo _("seccion"); ?>
+    </a>
 </li>
 <li class="liNoLink">
     <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion" class="borderBox">
-        <?php echo _("seccion"); ?></a>
+        <?php echo _("seccion"); ?>
+    </a>
 </li>
 <!--Con gettext--> 
 <li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
-    <a href="/nuevo/<?php if($gettext_idioma == 'en_GB') { echo '?l=en'; } ?>" class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
-        <?php echo _("seccion"); ?></a>
+    <a href="/nuevo/<?php echo $href_xxx; if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?>" class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+        <?php echo _("seccion"); ?>
+    </a>
 </li>
 
 
@@ -26,8 +30,9 @@
     </p>
     <ul id="nosSubMenu" class="subMenu subMenuLevel1 unstyled" role="group" aria-expanded="false" aria-labelledby="nosNavItem">
         <li class="<?php if($nav_pageCurrent_int == 200) { echo 'current'; } ?>">
-            <a <?php echo $href-seccion ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
-                <?php echo _("Historia"); ?></a>
+            <a <?php echo $href_xxx ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
+                <?php echo _("Historia"); ?>
+            </a>
         </li>
     </ul>
 </li>
@@ -45,8 +50,9 @@
             </p>
             <ul id="hisSubMenu" class="subMenu subMenuLevel2 unstyled" role="group" aria-expanded="false" aria-labelledby="hisNavItem">
                 <li class="<?php if($nav_pageCurrent_int == 211) { echo 'current'; } ?>">
-                    <a <?php echo $href-seccion ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
-                        <?php echo _("Comienzos"); ?></a>
+                    <a <?php echo $href_xxx ?> class="displayBlock borderBox" <?php if($nav_pageCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
+                        <?php echo _("Comienzos"); ?>
+                    </a>
                 </li>
             </ul>    
         </li>
