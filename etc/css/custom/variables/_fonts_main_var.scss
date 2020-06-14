@@ -25,14 +25,14 @@
 $fontFamilies_map:(
     arial:          Arial,
     roboto:         Roboto,
-  //timesNewRoman:  'Times New Roman'
+//  timesNewRoman:  'Times New Roman'
 );
 
     ///Aquí se agregan los valores para los pesos de las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-weight: 400;}`, con el mixin **fontFamilyWeightsGenerator**.
 $fontWeights_map:(
-  //ralewayM:       500,
-  //ralewaySB:      600,
-  //ralewayXB:      800
+//  ralewayM:       500,
+//  ralewaySB:      600,
+//  ralewayXB:      800
 );
 
 
@@ -55,12 +55,12 @@ $fontFamily_bold_global:    $fontFamily_main_global;
 /* // Main font Stack ------------------------------------------------------- */
 $fontStack_map:(
     $fontFamily_main_global,
-    //$arial, // Chequear Arial, Roboto o Times como Main Font Family
+//    $arial, // Chequear Arial, Roboto o Times como Main Font Family
     $roboto,
-    //$timesNewRoman,
+    $timesNewRoman,
     $fontFamilies_list_sans
-    //$fontFamilies_list_serif
-    //$fontFamilies_list_monospaced
+//    $fontFamilies_list_serif
+//    $fontFamilies_list_monospaced
 );
 
 $fontWeight_global: 400;

@@ -2,8 +2,8 @@
    Header Styles | Custom [section_header.scss]
    ========================================================================== */
 #header{
-    // position: relative;
-    // z-index: $zIndex_header;
+//  position: relative;
+//  z-index: $zIndex_header;
     
     @if $fullHeight_index_act_ALL == "on" or $fullHeight_sections_act_ALL == "on"{
         height: $header_height_ALL;
@@ -44,7 +44,7 @@
         }
 
         .logoH{
-            // width: $logo_width_MO;
+//          width: $logo_width_MO;
         }
     }
     
@@ -63,7 +63,7 @@
         }
         
         .logoH{
-            // width: $logo_width_AML;
+//          width: $logo_width_AML;
         }
     }
     
@@ -82,7 +82,7 @@
         }
         
         .logoH{
-            // width: $logo_width_MLO;
+//          width: $logo_width_MLO;
         }
     }
 
@@ -152,7 +152,7 @@
         @if $navDrawer_act == "on"{
             .logoH{
                 &.clicked{
-                    @include borderStyleR($navBdColourR_navDrawer);
+                    @include borderStyleR($nav_bdColourR_navDrawer);
                     box-sizing: border-box;
                     position: fixed;
                     z-index: $zIndex_logo_clicked;
@@ -161,7 +161,7 @@
                     width: calc(#{$navDrawer_width} - 5px);
                     max-width: $navDrawer_width_max;
                     height: $logo_clicked_height_FH;
-                    background-color: $navBgColour_BT;
+                    background-color: $nav_bgColour_BT;
                     padding-top: $logo_clicked_height_PT;
                     padding-bottom: $logo_clicked_height_PB;
                     margin: 0;

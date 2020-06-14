@@ -1,5 +1,5 @@
 /* =============================================================================
-   Nav Accordion Styles | Custom [stylesNavAccordion.scss]
+   Nav Accordion Styles | Custom [section_nav_accordion.scss]
    ========================================================================== */
 @if $navAcc_act == "on"{
     @include navBT{
@@ -23,19 +23,19 @@
                     line-height: calc(#{$navAcc_hamburger_height} + 5px);
                 }
                 @include borderRadius($nav_borderRadius); 
-                border: 1px solid $navBdColour_open!important;
-                background-color: $navBgColour_hamburger;
+                border: 1px solid $nav_bdColour_open!important;
+                background-color: $nav_bgColour_hamburger;
                 background-size: 15px;
             }
 
             .navClose{
                 @include squareSize($navAcc_hamburger_height);
                 background-size: 15px;
-                border: 1px solid $navBdColour_close!important;
+                border: 1px solid $nav_bdColour_close!important;
             }
 
             ul{
-                @include borderStyleV($navBdColour_navAcc);
+                @include borderStyleV($nav_bdColour_navAcc);
             }
 
             li{                

@@ -1,5 +1,5 @@
 /* =============================================================================
-   Nav After Tablet Styles | Custom [stylesNav_AT.scss]
+   Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
 .navMain{
     @include navAT{
@@ -53,7 +53,7 @@
                     a,
                     .topLevelItem{
                         @if $nav_itemCurrent_bdB_act == "on"{
-                            @include borderStyleB($navBdColour_itemCurrent, 3px);
+                            @include borderStyleB($nav_bdColour_itemCurrent, 3px);
                         }
                     }
                 }
@@ -116,7 +116,7 @@
                     &, a{}
                     
                     & + li{
-                        @include borderStyleT($navBdColour_itemSub_AT);
+                        @include borderStyleT($nav_bdColour_itemSub_AT);
                     }
                     
                     &:last-child{
@@ -132,7 +132,7 @@
         
         @if $nav_topper_act == "on"{
             &.topperNav{
-                @include borderStyleB($navBdColour_topper); 
+                @include borderStyleB($nav_bdColour_topper); 
                 position: fixed;
                 right: 0;
                 width: 100%; 
@@ -155,7 +155,7 @@
                     > .current{
                         a,
                         .topLevelItem{
-                            @include borderStyleB($navBdColour_topper_itemCurrent, 3px);
+                            @include borderStyleB($nav_bdColour_topper_itemCurrent, 3px);
                         }
                     }
 
@@ -180,7 +180,7 @@
                         }
 
                         li{
-                            @include borderStyleT($navBdColour_itemSub_AT);
+                            @include borderStyleT($nav_bdColour_itemSub_AT);
 
                             a{
                                 padding-left: 10px;
@@ -192,7 +192,7 @@
                             }
                             
                             &:first-child{
-                                @include borderStyleT($navBdColour_itemSub_AT);
+                                @include borderStyleT($nav_bdColour_itemSub_AT);
                             }
                     
                             &:last-child{

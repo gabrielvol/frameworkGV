@@ -1,5 +1,5 @@
 /* =============================================================================
-   Social Styles | Custom [stylesSocial.scss]
+   Social Styles | Custom [section_social.scss]
    ========================================================================== */
 .social{
     z-index: $zIndex_social;
@@ -110,7 +110,7 @@
         li{
             a,
             img{
-                @include squareSize(35px);            
+                @include squareSize($social_icon_size_BT);            
             }
         }
         
@@ -126,7 +126,7 @@
                 li{
                     a,
                     img{
-                        @include squareSize(45px);            
+                        @include squareSize($social_icon_size_BT);            
                     }
                 }
             }
@@ -137,7 +137,7 @@
         li{
             a,
             img{
-                @include squareSize(50px);            
+                @include squareSize($social_icon_size_AT);            
             }
         }
         

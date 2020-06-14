@@ -23,17 +23,17 @@
 ///**Colours Map Light:** 
     ///Aquí se agregan los colores CLAROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.white{color: #fff}`, con el mixin  **colourLightClassesGenerator** `[/etc/scss/mixinsColours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color de acuerdo al porcentaje asignado en la variable `$colours_map_light_darkenValue` debajo del mapa.  
 $colours_map_light:(        
-  //redColour:      #ee0000,
+//  redColour:      #ee0000,
   
-  //greenSystem3XL: #e6ff99,
-  //greenSystemXXL: #b6f268,
-  //greenSystemXL:  #8ee12f,
-  //greenSystemL:   #54c81a,
+//  greenSystem3XL: #e6ff99,
+//  greenSystemXXL: #b6f268,
+//  greenSystemXL:  #8ee12f,
+//  greenSystemL:   #54c81a,
     greenSystem:    #339900,
-  //greenSystemD:   #2a7d00,
+//  greenSystemD:   #2a7d00,
     
-  //grey4XL:        #f9f9f9,
-  //grey3XL:        #f2f2f2,
+//  grey4XL:        #f9f9f9,
+//  grey3XL:        #f2f2f2,
     greyXXL:        #e6e6e6,
     greyXL:         #dedede,
     greyL:          #c6c6c6,
@@ -49,7 +49,7 @@ $colours_map_dark:(
     greyD:         #4d4d4d,
     greyXD:        #666,
     greyXXD:       #333,
-  //grey3XD:       #111,
+//  grey3XD:       #111,
     black:         #000
 );
 $colours_map_dark_lightenValue: 20%;
@@ -113,13 +113,13 @@ $greyXXD:           map-get($colours_map_merged, greyXXD);
 ///**Anchor Colours Light:** 
     ///Aquí se agregan los colores para las anclas dentro de un párrafo con color CLARO, de este mapa se creará una clase por cada color con el mixin **anchorColoursLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.white a{color: #fff}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$anchor_ftColours_map_light_darkenValue` debajo del mapa. 
 $anchor_ftColours_map_light:(
-    //white: $white,
+//  white: $white,
 );
 $anchor_ftColours_map_light_darkenValue: 20%;
 
 ///**Anchor Colours Dark:** 
     ///Aquí se agregan los colores para las anclas dentro de un párrafo con color OSCURO, de este mapa se creará una clase por cada color con el mixin **anchorColoursDarkClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.black a{color: #000}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color con el porcentaje asignado en la variable `$anchor_ftColours_map_dark_lightenValue` debajo del mapa.
 $anchor_ftColours_map_dark:(
-    //black: $black,
+//  black: $black,
 );
 $anchor_ftColours_map_dark_lightenValue: 20%;

@@ -38,6 +38,8 @@
 @import "activators/section_footer_act";
 @import "variables/section_footer_sizes_var";
 
+@import "variables/section_social_var";
+
 @import "activators/forms_act";
 @import "variables/forms_colours_var";
 @import "variables/forms_fonts_var";
@@ -133,10 +135,10 @@
 @import "../scss/settingsNav";
 @import "../scss/settingsNavDrawer";
 @import "../scss/settingsNavAccordion";
-@import "stylesNavDrawer";
-@import "stylesNavAccordion";
-@import "stylesNavList";
-@import "stylesNav_AT";
+@import "section_nav_drawer";
+@import "section_nav_accordion";
+@import "section_nav_list";
+@import "section_nav_AT";
 
 //@import "slider";
 //@import "slider_nav";
