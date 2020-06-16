@@ -50,6 +50,8 @@
 
 @import "variables/global_var";
 
+@import "variables/page_index_var";
+
 /* // Font Face ------------------------------------------------------------- */
 @import "../scss/fontFaceOpenSans";
 
@@ -62,7 +64,7 @@
 @import "../scss/mixinsTransitions";
 @import "../scss/mixinsOpacity";
 @import "../scss/mixinsFonts";
-@import "../scss/mixinsText";
+@import "../scss/mixins_text";
 @import "../scss/mixinsColours";
 @import "../scss/mixinsCenter";
 @import "../scss/mixinsSpacing";
@@ -96,8 +98,8 @@
 
 @import "../scss/classesAnimations";
 @import "settingsAnimations";
-@import "../scss/classesAll";
-@import "../scss/classesResponsive";
+@import "../scss/classes_all";
+@import "../scss/classes_responsive";
 
 @import "../scss/settingsContainer";
 

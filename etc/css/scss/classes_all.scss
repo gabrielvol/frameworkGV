@@ -40,12 +40,17 @@
     .fullWidth{width: 100%}
     .halfWidth{width: 50%}
     .fullHeight{
-        position: absolute;
         @include posTB(0, 0);
+        position: absolute;
     }
     .coverAll{
-        position: absolute;
         @include posTRBL(0, 0, 0, 0);
+        position: absolute;
+    }
+    .coverAllMask{
+        @include posTRBL(0, 0, 0, 0);
+        position: absolute;
+        overflow: hidden;
     }
 
     //Display

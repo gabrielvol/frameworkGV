@@ -16,17 +16,16 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">
         <ul class="slick slick_main mask horizontal clearfix">
-            <li><img data-lazy="/framework/img/img_slide01.png" alt="" aria-hidden="true"></li>
-            <li><img data-lazy="/framework/img/img_slide02.png" alt="" aria-hidden="true"></li>
-            <li><img data-lazy="/framework/img/img_slide03.png" alt="" aria-hidden="true"></li>
+            <li><img data-lazy="/nuevo/img/slide_01.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img data-lazy="/nuevo/img/slide_02.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img data-lazy="/nuevo/img/slide_03.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
         </ul>
         
         <ul class="slick slick_main mask horizontal clearfix">
-            <li><img src="/framework/img/img_slide01.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <li><img src="/framework/img/img_slide02.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
-            <li><img src="/framework/img/img_slide03.png" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/slide_01.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/slide_02.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/slide_03.jpg" alt="" aria-hidden="true" class="displayBlock fullWidth"></li>
         </ul>
-        
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
     <script src="/js/slick.js"></script>
