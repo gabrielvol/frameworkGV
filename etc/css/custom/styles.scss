@@ -36,9 +36,9 @@
 @import "variables/slider_var";
 
 @import "activators/section_footer_act";
-@import "variables/section_footer_sizes_var";
+@import "variables/section_footer_var";
 
-@import "variables/section_social_var";
+@import "variables/social_var";
 
 @import "activators/forms_act";
 @import "variables/forms_colours_var";
@@ -131,7 +131,7 @@
 
 @import "section_header";
 //@import "stylesLanguageSwitch";
-//@import "stylesSocial";
+//@import "social";
 @import "section_footer";
 
 @import "../scss/settingsNav";

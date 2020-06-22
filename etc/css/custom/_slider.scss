@@ -4,6 +4,10 @@
 .slick{
     background-color: $slider_bgColour;
     
+    img{
+        background-color: $slider_img_bgColour;
+    }
+    
     &,
     .slick-slide{
         z-index: $zIndex_slider!important; 

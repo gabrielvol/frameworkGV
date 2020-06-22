@@ -61,6 +61,8 @@
         }
         
         li{
+//            @include transition(1s);
+            
             &,
             a,
             .topLevelItem{
