@@ -35,10 +35,12 @@
 @import "activators/slider_act";
 @import "variables/slider_var";
 
+@import "variables/social_var";
+
+@import "variables/popup_var";
+
 @import "activators/section_footer_act";
 @import "variables/section_footer_var";
-
-@import "variables/social_var";
 
 @import "activators/forms_act";
 @import "variables/forms_colours_var";
@@ -127,7 +129,7 @@
 //@import "styles_tables";
 
 @import "../scss/settings_popup";
-@import "styles_popups";
+@import "popup";
 
 @import "section_header";
 //@import "stylesLanguageSwitch";
