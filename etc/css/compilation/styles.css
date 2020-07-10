@@ -46,7 +46,7 @@
 /* Desktop Half */
 /* Desktop Large Half*/
 /* =============================================================================
-   Classes Activators | Custom [activators/main.scss]
+   Classes Activators | Custom [activators/main_act.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // Colours --------------------------------------------------------------- */
@@ -55,7 +55,7 @@
 /* // Pointers -------------------------------------------------------------- */
 /* // Full heights sections ------------------------------------------------- */
 /* =============================================================================
-   Helpers Responsive Classes Activators | Custom [activators/responsive.scss]
+   Helpers Responsive Classes Activators | Custom [activators/responsive_act.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // All ------------------------------------------------------------------- */
@@ -115,7 +115,7 @@
    Text Variables | Custom [variables/text.scss]
    ========================================================================== */
 /* =============================================================================
-   Language Activators | Custom [activator/language.scss]
+   Language Activators | Custom [activator/language_act.scss]
    ========================================================================== */
 /* // Flags ----------------------------------------------------------------- */
 /* =============================================================================
@@ -131,7 +131,7 @@ $language_flag_height_AT:           32px;
 */
 /* // Language UL ----------------------------------------------------------- */
 /* =============================================================================
-   Nav Activators | Custom [activators/section_nav.scss]
+   Nav Activators | Custom [activators/section_nav_act.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Colours Variables | Custom [variables/section_nav_colours.scss]
@@ -169,11 +169,11 @@ $language_flag_height_AT:           32px;
 /* // Nav Topper ------------------------------------------------------------ */
 /* // Nav Heights ----------------------------------------------------------- */
 /* =============================================================================
-   Logo Activators | Custom [activators/logo.scss]
+   Logo Activators | Custom [activators/logo_act.scss]
    ========================================================================== */
 /* // Logo img background ::before activator -------------------------------- */
 /* =============================================================================
-   Header Activators | Custom [activators/section_header.scss]
+   Header Activators | Custom [activators/section_header_act.scss]
    ========================================================================== */
 /* // Menu y logo ----------------------------------------------------------- */
 /* // Header ---------------------------------------------------------------- */
@@ -189,8 +189,10 @@ $language_flag_height_AT:           32px;
    ========================================================================== */
 /* // Full heights Header --------------------------------------------------- */
 /* =============================================================================
-   Slider Activators | Custom [activators/slider.scss]
+   Slider Activators | Custom [activators/slider_act.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias Globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Slider Variables | Custom [variables/slider.scss]
    ========================================================================== */
@@ -200,16 +202,28 @@ $language_flag_height_AT:           32px;
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
 /* =============================================================================
-   Footer Activators | Custom [activators/section_footer.scss]
+   Social Variables | Custom [variables/section_social_var.scss]
+   ========================================================================== */
+/* // Social Sizes ---------------------------------------------------------- */
+/* // Social Colours -------------------------------------------------------- */
+/* =============================================================================
+   Social Variables | Custom [variables/popup_var.scss]
+   ========================================================================== */
+/* // Popup Sizes ---------------------------------------------------------- */
+/* // Popup Colours -------------------------------------------------------- */
+/* =============================================================================
+   Footer Activators | Custom [activators/section_footer_act.scss]
    ========================================================================== */
 /* // Logo y dirección flotados --------------------------------------------- */
 /* =============================================================================
-   Footer Sizes Variables | Custom [variables/section_footer_sizes.scss]
+   Footer Variables | Custom [variables/section_footer_var.scss]
    ========================================================================== */
 /* // Footer logo flotado --------------------------------------------------- */
 /* // Full heights Footer --------------------------------------------------- */
+/* // Footer sizes ---------------------------------------------------------- */
+/* // Footer colours  ------------------------------------------------------- */
 /* =============================================================================
-   Forms Activators | Custom [activators/forms.scss]
+   Forms Activators | Custom [activators/forms_act.scss]
    ========================================================================== */
 /* =============================================================================
    Form Colours Variables | Custom [variables/form_colours.scss]
@@ -248,6 +262,11 @@ $language_flag_height_AT:           32px;
 /* =============================================================================
    Global Variables | Custom [variables/global.scss]
    ========================================================================== */
+/* =============================================================================
+   Page Index Variables | Custom [variables/page_index_var.scss]
+   ========================================================================== */
+/* // Page Index Sizes ------------------------------------------------------ */
+/* // Page Index Colours ---------------------------------------------------- */
 /* // Font Face ------------------------------------------------------------- */
 /* =============================================================================
    OpenSans Font Face | Etc [fontFaceOpenSans.scss]
@@ -361,14 +380,10 @@ $language_flag_height_AT:           32px;
    Text Mixins | Etc [mixinsText.scss]
    ========================================================================== */
 /* =============================================================================
-   Fonts Mixins | Etc [mixinsColours.scss]
+   Colour Mixins | Etc [mixins_colours.scss]
    ========================================================================== */
-/* // Generador de clases por cada color claro ------------------------------ */
-/* // GGenerador de clases por cada color oscuro ---------------------------- */
-/* // Generador de clases para anclas dentro de párrafos por cada color claro */
-/* // Generador de clases para anclas dentro párrafos por cada color oscuro - */
-/* // Generador de clases por cada color de fondo --------------------------- */
-/* // Generador de clases para colores con focus y hover custom ------------- */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias Globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Center Mixins | Etc [mixinsCenter.scss]
    ========================================================================== */
@@ -508,19 +523,23 @@ html input[type="button"] {
    Custom Reset Styles | Custom [resetCustom.scss]
    ========================================================================== */
 /* =============================================================================
-   Colour Placeholders | Custom [coloursPlaceholders.scss]
+   Colour Placeholders | Custom [colours_placeholders.scss]
    ========================================================================== */
 a.orange:focus, a.orange:hover {
   color: #ff0000; }
 
 /* =============================================================================
-   Gradient Colours | Custom [coloursGradients.scss]
+   Gradient Colours | Custom [colours_gradients.scss]
    ========================================================================== */
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-.bgGrad_colourPercent {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 ); }
-
+/*
+$bgGrad_colourPercent: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
+$bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
+.bgGrad_colourPercent{
+    background-image: $bgGrad_colourPercent;
+    filter: $bgGrad_colourPercent_filter;
+}
+*/
 /* =============================================================================
    Font-face | Custom [fontFace.scss]
    ========================================================================== */
@@ -704,24 +723,6 @@ a.greenSystem, a.greenSystem:active, a.greenSystem:visited, a.greenSystem.noHove
 a.greenSystem:focus, a.greenSystem:hover {
   color: #113300; }
 
-.grey4XL, .grey4XL b, .grey4XL strong, .grey4XL i, .grey4XL em {
-  color: #f9f9f9; }
-
-a.grey4XL, a.grey4XL:active, a.grey4XL:visited, a.grey4XL.noHover:focus, a.grey4XL.noHover:hover {
-  color: #f9f9f9; }
-
-a.grey4XL:focus, a.grey4XL:hover {
-  color: #c6c6c6; }
-
-.grey3XL, .grey3XL b, .grey3XL strong, .grey3XL i, .grey3XL em {
-  color: #f2f2f2; }
-
-a.grey3XL, a.grey3XL:active, a.grey3XL:visited, a.grey3XL.noHover:focus, a.grey3XL.noHover:hover {
-  color: #f2f2f2; }
-
-a.grey3XL:focus, a.grey3XL:hover {
-  color: #bfbfbf; }
-
 .greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
   color: #e6e6e6; }
 
@@ -767,6 +768,15 @@ a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHove
 a.errorColour:focus, a.errorColour:hover {
   color: #940d12; }
 
+.greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
+  color: #4d4d4d; }
+
+a.greyD, a.greyD:active, a.greyD:visited, a.greyD.noHover:focus, a.greyD.noHover:hover {
+  color: #4d4d4d; }
+
+a.greyD:focus, a.greyD:hover {
+  color: gray; }
+
 .greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
   color: #666; }
 
@@ -784,15 +794,6 @@ a.greyXXD, a.greyXXD:active, a.greyXXD:visited, a.greyXXD.noHover:focus, a.greyX
 
 a.greyXXD:focus, a.greyXXD:hover {
   color: #666666; }
-
-.grey3XD, .grey3XD b, .grey3XD strong, .grey3XD i, .grey3XD em {
-  color: #111; }
-
-a.grey3XD, a.grey3XD:active, a.grey3XD:visited, a.grey3XD.noHover:focus, a.grey3XD.noHover:hover {
-  color: #111; }
-
-a.grey3XD:focus, a.grey3XD:hover {
-  color: #444444; }
 
 .black, .black b, .black strong, .black i, .black em {
   color: #000; }
@@ -911,7 +912,7 @@ b, strong,
   letter-spacing: 0.05rem; }
 
 /* =============================================================================
-   Backgrounds Includes | Custom [includesBackgrounds.scss]
+   Backgrounds Includes | Custom [includes_backgrounds.scss]
    ========================================================================== */
 .bgWhite {
   background-color: #fff; }
@@ -921,12 +922,6 @@ b, strong,
 
 .bgGreenSystem {
   background-color: #339900; }
-
-.bgGrey4XL {
-  background-color: #f9f9f9; }
-
-.bgGrey3XL {
-  background-color: #f2f2f2; }
 
 .bgGreyXXL {
   background-color: #e6e6e6; }
@@ -940,14 +935,14 @@ b, strong,
 .bgGrey {
   background-color: #818181; }
 
+.bgGreyD {
+  background-color: #4d4d4d; }
+
 .bgGreyXD {
   background-color: #666; }
 
 .bgGreyXXD {
   background-color: #333; }
-
-.bgGrey3XD {
-  background-color: #111; }
 
 .bgError {
   background-color: #eb1c24; }
@@ -1089,16 +1084,24 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   width: 50%; }
 
 .fullHeight {
-  position: absolute;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  position: absolute; }
 
 .coverAll {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  position: absolute; }
+
+.coverAllMask {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden; }
 
 .displayBlock {
   display: block !important; }
@@ -1723,7 +1726,7 @@ article, article::before, article::after, details, details::before, details::aft
     page-break-inside: avoid; } }
 
 /* =============================================================================
-   Global Styles | Custom [stylesGlobal.scss]
+   Global Styles | Custom [styles_global.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // Main Gobal Styles ----------------------------------------------------- */
@@ -1732,7 +1735,31 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* // Secondary Separator --------------------------------------------------- */
 /* =============================================================================
-   Call to Action Styles | Custom [button_callToAction.scss]
+   Button Styles | Custom [styles_buttons.scss]
+   ========================================================================== */
+/* // References ------------------------------------------------------------ */
+.button_whatsapp {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  position: fixed;
+  z-index: 9900;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  background-color: #3ce35a;
+  background-image: url("/nuevo/img/social_wa_button.svg");
+  background-size: 40px;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-right: 30px;
+  text-shadow: 0 0 5px #1c6829; }
+  .button_whatsapp:focus, .button_whatsapp:hover {
+    box-shadow: 0 0 5px #1c6829; }
+
+/* =============================================================================
+   Call to Action Styles | Custom [styles_button_CTA.scss]
    ========================================================================== */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
@@ -1807,6 +1834,8 @@ article, article::before, article::after, details, details::before, details::aft
       float: left;
       margin-right: 0 !important;
       margin-left: calc(-1 * calc(25px - 0)); }
+  .numbered.numbered_lowerLatin > li::before {
+    content: counter(liN, lower-latin); }
 
 .bulleted_dot li,
 .bulleted_square li,
@@ -1926,7 +1955,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 25%; } }
 
 /* =============================================================================
-   Modal y Popups Settings | Etc [settingsModalPopups.scss]
+   Modal y Popups Settings | Etc [settings_popup.scss]
    ========================================================================== */
 .modalBG,
 .modal_nav {
@@ -1959,7 +1988,7 @@ article, article::before, article::after, details, details::before, details::aft
     z-index: 9900; }
 
 /* =============================================================================
-   Popup Styles | Custom [stylesPopups.scss]
+   Popup Styles | Custom [popups.scss]
    ========================================================================== */
 .modal_warning {
   /*
@@ -1997,102 +2026,108 @@ article, article::before, article::after, details, details::before, details::aft
     left: 0;
     position: absolute;
     overflow: auto; }
-  .pop_main.pop_warning {
-    /* CSS para usar centerPopup
-            @include centerPopup(100px,100px,50%);
-            max-width: 100%;
-            max-height: 100%;
-        */
-    border-radius: 6px;
-    top: 20%;
-    left: 50%;
-    background-color: #fff;
-    box-shadow: 0 0 15px 0 #000; }
-    .pop_main.pop_warning h2,
-    .pop_main.pop_warning h3 {
-      font-size: 1.2rem; }
-    .pop_main.pop_warning p {
-      width: 100% !important;
-      background-color: transparent;
-      padding: 0;
-      color: #666;
-      font-family: Arial;
-      text-align: center; }
-      .pop_main.pop_warning p + p {
-        margin-top: 0.8em; }
-      .pop_main.pop_warning p:last-child {
-        padding-bottom: 50px; }
-    .pop_main.pop_warning .pop_innerContainer {
-      padding: 20px; }
-    .pop_main.pop_warning .pop_submit {
-      border-radius: 6px;
-      transition: all 1s ease;
-      height: 35px;
-      line-height: 35px;
-      width: 40%;
-      max-width: 150px;
-      background-color: #fff;
-      font-size: 0.8rem; }
-      .pop_main.pop_warning .pop_submit, .pop_main.pop_warning .pop_submit:focus, .pop_main.pop_warning .pop_submit:hover {
-        border: 1px solid #818181 !important; }
-      .pop_main.pop_warning .pop_submit:focus, .pop_main.pop_warning .pop_submit:hover {
-        background-color: #e6e6e6;
-        color: #000; }
-    .pop_main.pop_warning .pop_close {
-      top: 10px;
-      right: 10px; }
-  .pop_main.pop_video {
-    box-shadow: 0 0 10px 0 #666; }
-    .pop_main.pop_video .video_mask {
-      border-radius: 0;
-      border: none !important; }
-  @media (max-width: 499px) {
-    .pop_main.pop_warning {
-      width: 300px;
-      margin-left: calc(calc(300px * -1) / 2); }
-    .pop_main.pop_video {
-      width: 300px;
-      height: 168px;
-      margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 500px) {
-    .pop_main.pop_warning {
-      width: 60%;
-      margin-left: calc(calc(60% * -1) / 2); }
-    .pop_main.pop_video {
-      width: 450px;
-      height: 250px;
-      margin-left: calc(-1 * calc(450px / 2)); } }
   @media (max-width: 600px) {
     .pop_main .pop_close {
       top: -45px;
-      right: 0; }
-    .pop_main.pop_warning {
-      /*height: 220px;*/ } }
+      right: 0; } }
   @media (min-width: 601px) {
     .pop_main .pop_close {
       top: -35px;
-      right: -35px; }
-    .pop_main.pop_warning {
+      right: -35px; } }
+
+.pop_warning {
+  /* CSS para usar centerPopup
+        @include centerPopup(100px,100px,50%);
+        max-width: 100%;
+        max-height: 100%;
+    */
+  border-radius: 6px;
+  top: 20%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 #000; }
+  .pop_warning h2,
+  .pop_warning h3 {
+    font-size: 1.2rem; }
+  .pop_warning p {
+    width: 100% !important;
+    background-color: transparent;
+    padding: 0;
+    color: #666;
+    font-family: Arial;
+    text-align: center; }
+    .pop_warning p + p {
+      margin-top: 0.8em; }
+    .pop_warning p:last-child {
+      padding-bottom: 50px; }
+  .pop_warning .pop_innerContainer {
+    padding: 20px; }
+  .pop_warning .pop_close {
+    top: 10px;
+    right: 10px; }
+  .pop_warning .pop_submit {
+    border-radius: 6px;
+    transition: all 1s ease;
+    height: 35px;
+    line-height: 35px;
+    width: 40%;
+    max-width: 150px;
+    background-color: #fff;
+    font-size: 0.8rem; }
+    .pop_warning .pop_submit, .pop_warning .pop_submit:focus, .pop_warning .pop_submit:hover {
+      border: 1px solid #818181 !important; }
+    .pop_warning .pop_submit:focus, .pop_warning .pop_submit:hover {
+      background-color: #e6e6e6;
+      color: #000; }
+  @media (max-width: 499px) {
+    .pop_warning {
+      width: 300px;
+      margin-left: calc(calc(300px * -1) / 2); } }
+  @media (min-width: 500px) {
+    .pop_warning {
+      width: 60%;
+      margin-left: calc(calc(60% * -1) / 2); } }
+  @media (max-width: 600px) {
+    .pop_warning {
+      /*height: 220px;*/ } }
+  @media (min-width: 601px) {
+    .pop_warning {
       width: 550px;
       /*height: 200px;*/
       margin-left: calc(calc(550px * -1) / 2); }
-      .pop_main.pop_warning .pop_innerContainer {
+      .pop_warning .pop_innerContainer {
         top: 20px;
         right: 20px;
         bottom: 20px;
         left: 20px;
         padding: 20px; }
-      .pop_main.pop_warning .pop_close {
+      .pop_warning .pop_close {
         top: 10px;
         right: 10px; } }
+
+.pop_video {
+  box-shadow: 0 0 10px 0 #666; }
+  .pop_video .video_mask {
+    border-radius: 0;
+    border: none !important; }
+  @media (max-width: 499px) {
+    .pop_video {
+      width: 300px;
+      height: 168px;
+      margin-left: calc(-1 * calc(300px / 2)); } }
+  @media (min-width: 500px) {
+    .pop_video {
+      width: 450px;
+      height: 250px;
+      margin-left: calc(-1 * calc(450px / 2)); } }
   @media (min-width: 768px) {
-    .pop_main.pop_video {
+    .pop_video {
       width: 600px;
       height: 330px;
       margin-left: calc(-1 * calc(600px / 2)); } }
 
 /* =============================================================================
-   Header Styles | Custom [stylesHeader.scss]
+   Header Styles | Custom [section_header.scss]
    ========================================================================== */
 #header .logoH {
   margin-bottom: 0; }
@@ -2150,7 +2185,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 220px; } }
 
 /* =============================================================================
-   Footer Styles | Custom [stylesFooter.scss]
+   Footer Styles | Custom [section_footer.scss]
    ========================================================================== */
 #footer {
   /* // Button Site Top ------------------------------------------------------- */
@@ -2315,7 +2350,7 @@ nav li:focus a, nav li:hover a {
    Nav Accordion Settings | Etc [settingsNavAccordion.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav Drawer Styles | Custom [stylesNavDrawer.scss]
+   Nav Drawer Styles | Custom [section_nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
   .navMain {
@@ -2363,13 +2398,13 @@ nav li:focus a, nav li:hover a {
           border-style: solid; } }
 
 /* =============================================================================
-   Nav Accordion Styles | Custom [stylesNavAccordion.scss]
+   Nav Accordion Styles | Custom [section_nav_accordion.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav List Styles | Custom [stylesNavList.scss]
+   Nav List Styles | Custom [section_nav_list.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav After Tablet Styles | Custom [stylesNav_AT.scss]
+   Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
   .navMain .mainMenu > li {
@@ -2412,18 +2447,4 @@ nav li:focus a, nav li:hover a {
 /* =============================================================================
    Index Styles | Custom [page_index.scss]
    ========================================================================== */
-/* =============================================================================
-   Contacto Styles | Custom [stylesContacto.scss]
-   ========================================================================== */
-.page_contacto .enviar {
-  font-size: 1.2rem;
-  text-transform: uppercase; }
-
-@media (min-width: 768px) {
-  .page_contacto .enviar {
-    width: 50%;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    margin-top: 30px; } }
-
 /* // Post ------------------------------------------------------------------ */
