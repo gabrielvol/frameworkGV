@@ -7,6 +7,7 @@
 // Los mapas que se encuentran en `[/custom/variables/colours_main_var.scss]`.
 //
 // Listado de mixins:
+//
 // 01 _ colourLightClassesGenerator
 // 02 _ colourDarkClassesGenerator
 // 03 _ colourCustomHoverClassesGenerator
@@ -24,6 +25,7 @@
 // 03 _ colourCustomHoverClassesGenerator
 // Por cada color genera una clase
 // y los selectores para los elementos `b`, `strong`, `i` y `em`.
+//
 // Ej. con color verdeAgua:
 // .verdeAgua,
 // .verdeAgua b,
@@ -34,6 +36,7 @@
 // Además genera selectores para un ancla con la clase,
 // sus pseudoclases `:active`, `:visited`, `focus` y `:hover`
 // y el selector `.noHover`.
+//
 // Ej.
 // a.verdeAgua,
 // a.verdeAgua:active,
@@ -47,6 +50,7 @@
 // sus pseudoclases `focus` y `:hover`
 // y el selector `.noHover` para el elemento `button`.
 // Se activa con `$colouredButtons_act` y `$colouredLabels_act`
+//
 // Ej.
 // button.verdeAgua,
 // button.verdeAgua.noHover:focus,
@@ -61,6 +65,7 @@
 // 04 _ anchorColoursLightClassesGenerator
 // 05 _ anchorColoursDarkClassesGenerator
 // Por cada color genera selectores para anclas dentro de la clase.
+//
 // Ej.
 // .verdeAgua a,
 // .verdeAgua a:active,
@@ -70,39 +75,49 @@
 //
 //
 // 06 _ backgroundColourClassesGenerator
-// Por cada color genera una clase.
+// Por cada color genera una clase para usar como color de fondo.
+//
 // Ej.
 // .bgVerdeAgua { background-color: #hex; }
 //
 //
 // 07 _ backgroundColourHoverClassesGenerator
 // Por cada color genera selectores para las pseudoclases `focus` y `:hover`
-// de un ancla.
+// de un ancla con clase del tipo `.bgColour`.
+//
 // Ej.
-// a.verdeAgua:hover,
-// a.verdeAgua:focus { background-color: #hex; }
+// a.bgVerdeAgua:hover,
+// a.bgVerdeAgua:focus { background-color: #hex; }
 //
 // También puede generar selectores para las pseudoclases `focus` y `:hover`
 // de los elementos `button`, `ìnput[type="submit"]` e `input[type="file"]` 
+// con clase del tipo `.bgColour.
 // Se activa con `$colouredButtons_act` y `$colouredInputs_act`
+//
 // Ej.
-// button.verdeAgua:hover,
-// button.verdeAgua:focus { background-color: #hex; }
-// input[type="submit"].verdeAgua:hover,
-// input[type="submit"].verdeAgua:focus { background-color: #hex; }
-// input[type="file"].verdeAgua:hover,
-// input[type="file"].verdeAgua:focus { background-color: #hex; }
+// button.bgVerdeAgua:hover,
+// button.bgVerdeAgua:focus { background-color: #hex; }
+// input[type="submit"].bgVerdeAgua:hover,
+// input[type="submit"].bgVerdeAgua:focus { background-color: #hex; }
+// input[type="file"].bgVerdeAgua:hover,
+// input[type="file"].bgVerdeAgua:focus { background-color: #hex; }
 
 
 
 /* // Referencias Globales de nombres de variables y mixins ----------------- */
-///-- Miscelanea
-// _act                 = variables de activacion
-// _hover               = se usa con :focus y :hover
+///-- Inicio del nombre
 // bd                   = borde
 // bg                   = background / fondo
 // bx                   = box
 // ft                   = fuente, texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
 
 ///-- Espaciado
 // P, M                 = padding, margin

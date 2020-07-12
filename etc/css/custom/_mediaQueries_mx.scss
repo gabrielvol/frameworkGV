@@ -1,5 +1,5 @@
 /* =============================================================================
-   Media Queries Variables | Custom [mediaQueries_mixins.scss]
+   Media Queries Mixins | Custom [mediaQueries_mixins.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 ///-- Spacing
@@ -20,24 +20,6 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
-$iPhone6Min:        375px;
-$mobileMax:         499px;
-$mobileLMin:        500px;
-$mobileLMax:        767px;
-$tabletMin:         768px;
-$tabletPMax:        1023px;
-$tabletLMin:        1024px;
-$tabletMax:         1199px;
-$desktopMin:        1200px;
-$desktopLargeMin:   1600px;
-
-/*
-@media (min-width: 100px) and (max-width: 100px){}
-*/
-
-/* =============================================================================
-   Media Queries Mixins | Custom [mixinsMediaQueries.scss]
-   ========================================================================== */
 
 /* // Nav ------------------------------------------------------------------- */
 @mixin navBT{
@@ -48,42 +30,42 @@ $desktopLargeMin:   1600px;
     
 /* // Mobile ---------------------------------------------------------------- */
 @mixin mobileOnly{ // 499px
-    @media (max-width: #{$mobileMax}){@content;}}
+    @media (max-width: #{$mq_mobile_width_max}){@content;}}
 
 @mixin afterMobileLandscape{ // 500px
-    @media (min-width: #{$mobileLMin}){@content;}}
+    @media (min-width: #{$mq_mobileLandscape_width_min}){@content;}}
     
 @mixin mobileLandscapeOnly{ // 500px 767px
-    @media (min-width: #{$mobileLMin})
-        and (max-width: #{$mobileLMax}){@content;}}
+    @media (min-width: #{$mq_mobileLandscape_width_min})
+        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
     
     
 /* // Tablet ---------------------------------------------------------------- */
 @mixin beforeTablet{ // 767px
-    @media (max-width: #{$mobileLMax}){@content;}}
+    @media (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
 
 @mixin afterTablet{ // 768px
-    @media (min-width: #{$tabletMin}){@content;}}
+    @media (min-width: #{$mq_tablet_width_min}){@content;}}
     
 @mixin tabletOnly{ // 768px 1023px
-    @media (min-width: #{$tabletMin})
-        and (max-width: #{$tabletPMax}){@content;}}
+    @media (min-width: #{$mq_tablet_width_min})
+        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
     
     
 /* // Tablet Landscape ------------------------------------------------------ */
 @mixin beforeTabletLandscape{ // 1023px
-    @media (max-width: #{$tabletPMax}){@content;}}
+    @media (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
     
 @mixin afterTabletLandscape{ // 1024px
-    @media (min-width: #{$tabletLMin}){@content;}}
+    @media (min-width: #{$mq_tabletLandscape_width_min}){@content;}}
     
 @mixin tabletLandscapeOnly{ // 1024px 1199px
-    @media (min-width: #{$tabletLMin})
-        and (max-width: #{$tabletMax}){@content;}}
+    @media (min-width: #{$mq_tabletLandscape_width_min})
+        and (max-width: #{$mq_tablet_width_max}){@content;}}
 
 @mixin tabletAndTabletLandscapeOnly{ // 768px 1199px
-    @media (min-width: #{$tabletMin})
-        and (max-width: #{$tabletMax}){@content;}}
+    @media (min-width: #{$mq_tablet_width_min})
+        and (max-width: #{$mq_tablet_width_max}){@content;}}
     
     
 /* // 600px ----------------------------------------------------------------- */
@@ -95,7 +77,7 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile600Only{ // 767px
     @media (min-width: 601px)
-        and (max-width: #{$mobileLMax}){@content;}}
+        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
     
     
 /* // 650px ----------------------------------------------------------------- */
@@ -107,7 +89,7 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile650Only{ // 767px
     @media (min-width: 651px)
-        and (max-width: #{$mobileLMax}){@content;}}
+        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
     
     
 /* // 700px ----------------------------------------------------------------- */
@@ -119,7 +101,7 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile700Only{ // 767px
     @media (min-width: 701px)
-        and (max-width: #{$mobileLMax}){@content;}}
+        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
     
     
 /* // 800px ----------------------------------------------------------------- */
@@ -131,7 +113,7 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile800Only{ // 1023px
     @media (min-width: 801px)
-        and (max-width: #{$tabletPMax}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
     
     
 /* // 850px ----------------------------------------------------------------- */
@@ -143,7 +125,7 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile850Only{ // 1023px
     @media (min-width: 851px)
-        and (max-width: #{$tabletPMax}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
     
     
 /* // 900px ----------------------------------------------------------------- */
@@ -155,7 +137,7 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile900Only{ // 1023px
     @media (min-width: 901px)
-        and (max-width: #{$tabletPMax}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
     
     
 /* // 950px ----------------------------------------------------------------- */
@@ -167,20 +149,20 @@ $desktopLargeMin:   1600px;
     
 @mixin mobile950Only{ // 1023px
     @media (min-width: 951px)
-        and (max-width: #{$tabletPMax}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
     
     
 /* // Desktop --------------------------------------------------------------- */
 @mixin beforeDesktop{ // 1199px
-    @media (max-width: #{$tabletMax}){@content;}}
+    @media (max-width: #{$mq_tablet_width_max}){@content;}}
     
 @mixin afterDesktop{ // 1200px
-    @media (min-width: #{$desktopMin}){@content;}}
+    @media (min-width: #{$mq_desktop_width_min}){@content;}}
 
     
-/* // Big Screens + --------------------------------------------------------- */
+/* // Desktop Large + ------------------------------------------------------- */
 @mixin afterDesktopLarge{ // 1600px
-    @media (min-width: #{$desktopLargeMin}){@content;}}
+    @media (min-width: #{$mq_desktopLarge_width_min}){@content;}}
 
     
     

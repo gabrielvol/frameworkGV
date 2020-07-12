@@ -51,6 +51,7 @@
 @import "variables/tables_colours_var";
 
 @import "variables/global_var";
+@import "variables/mediaQueries_var";
 
 @import "variables/page_index_var";
 
@@ -58,7 +59,7 @@
 @import "../scss/fontFaceOpenSans";
 
 /* // Mixins ---------------------------------------------------------------- */
-@import "mediaQueries_mixins";
+@import "mediaQueries_mx";
 @import "../scss/mixinsSizes";
 @import "../scss/mixinsBackgrounds";
 @import "../scss/mixinsMasks";

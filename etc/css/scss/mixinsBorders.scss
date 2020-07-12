@@ -32,32 +32,32 @@
 }
 
 /* // Border Radius Mixins -------------------------------------------------- */
-@mixin borderRadius($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: $borderRaduisMX_value;
+@mixin borderRadius($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: $bdRadiusMX_value;
 }
-@mixin borderRadiusT($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: $borderRaduisMX_value $borderRaduisMX_value 0 0;
+@mixin borderRadiusT($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: $bdRadiusMX_value $bdRadiusMX_value 0 0;
 }
-@mixin borderRadiusR($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: 0 $borderRaduisMX_value $borderRaduisMX_value 0;
+@mixin borderRadiusR($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: 0 $bdRadiusMX_value $bdRadiusMX_value 0;
 }
-@mixin borderRadiusB($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: 0 0 $borderRaduisMX_value $borderRaduisMX_value;
+@mixin borderRadiusB($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: 0 0 $bdRadiusMX_value $bdRadiusMX_value;
 }
-@mixin borderRadiusL($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: $borderRaduisMX_value 0 0 $borderRaduisMX_value;
+@mixin borderRadiusL($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: $bdRadiusMX_value 0 0 $bdRadiusMX_value;
 }
-@mixin borderRadiusTR($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: 0 $borderRaduisMX_value 0 0;
+@mixin borderRadiusTR($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: 0 $bdRadiusMX_value 0 0;
 }
-@mixin borderRadiusTL($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: $borderRaduisMX_value 0 0 0;
+@mixin borderRadiusTL($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: $bdRadiusMX_value 0 0 0;
 }
-@mixin borderRadiusBR($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: 0 0 $borderRaduisMX_value 0;
+@mixin borderRadiusBR($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: 0 0 $bdRadiusMX_value 0;
 }
-@mixin borderRadiusBL($borderRaduisMX_value: $helpers_border_radius_global){
-    border-radius: 0 0 0 $borderRaduisMX_value;
+@mixin borderRadiusBL($bdRadiusMX_value: $helpers_border_radius_global){
+    border-radius: 0 0 0 $bdRadiusMX_value;
 }
 
 /* // Border separation with equal padding and margin ----------------------- */

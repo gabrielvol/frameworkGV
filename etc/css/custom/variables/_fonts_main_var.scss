@@ -36,7 +36,7 @@ $fontWeights_map:(
 );
 
 
-/* // Chequear Arial, Roboto o Times como Main Font Family ------------------ */
+/* // Variables de fuentes -------------------------------------------------- */
 $arial:     map-get($fontFamilies_map, arial);
 $roboto:    map-get($fontFamilies_map, roboto);
 //$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
@@ -54,13 +54,22 @@ $fontFamily_bold_global:    $fontFamily_main_global;
 
 /* // Main font Stack ------------------------------------------------------- */
 $fontStack_map:(
+///-- Este mapa genera la declaracion `font-family` en el archivo `[/scss/settings_text.scss]`
+//
+///-- Primero la fuente principal
     $fontFamily_main_global,
-//    $arial, // Chequear Arial, Roboto o Times como Main Font Family
+///-- En segundo lugar siguen las fuentes Arial, Roboto y Times New Roman, si
+///-- alguna está asignada a la variabla `$ftFamilia_global` debe estar
+///-- comentada a continuacion.
+    $arial, 
     $roboto,
-//  $timesNewRoman,
-    $fontFamilies_list_sans
-//    $fontFamilies_list_serif
-//    $fontFamilies_list_monospaced
+//    $timesNewRoman,
+//
+///-- Luego de establecer las fuentes principales se elige uno de los sets para
+///-- el fallback
+    $fontFamilies_list_sans // Si se activa este set hay que comentar $timesNewRoman
+//    $fontFamilies_list_serif // Si se activa este set hay que comentar $arial y $roboto
+//    $fontFamilies_list_monospaced // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
 );
 
 $fontWeight_global: 400;
