@@ -1,0 +1,25 @@
+/* =============================================================================
+   Backgrounds Classes | Custom [classes_backgrounds.scss]
+   ========================================================================== */
+.bgNone{
+    &, &:focus, &:hover{
+        background-color: $transparent;
+        background-image: $none;
+    }
+}
+
+.bgTransparent{
+    &, &:focus, &:hover{
+        background-color: $transparent;
+    }
+}
+
+.bgNoImage{
+    &, &:focus, &:hover{
+        background-image: $none;
+    }
+}
+
+.bgError{
+    background-color: $bgErrorColour;
+}

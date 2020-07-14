@@ -1,79 +1,79 @@
 /* // Variables ------------------------------------------------------------- */
 @import "../scss/charset";
-@import "../scss/variablesFonts";
-@import "../scss/variablesAbsolute";
-@import "variables/zindex";
-@import "variables/container_var";
-@import "activators/main_act";
-@import "activators/responsive_act";
-@import "variables/helpers_var";
-@import "variables/animations_var";
+@import "../scss/var_fonts";
+@import "../scss/var_absolute";
+@import "var/zindex_var";
+@import "var/container_var";
+@import "act/main_act";
+@import "act/responsive_act";
+@import "var/helpers_var";
+@import "var/animations_var";
 
-@import "variables/colours_main_var";
-@import "variables/colours_borders_var";
-@import "variables/colours_backgrounds_var";
-@import "variables/shadows_var";
+@import "var/colours_main_var";
+@import "var/colours_borders_var";
+@import "var/colours_backgrounds_var";
+@import "var/shadows_var";
 
-@import "variables/fonts_main_var";
-@import "variables/fonts_colours_var";
-@import "variables/text_var";
+@import "var/fonts_main_var";
+@import "var/fonts_colours_var";
+@import "var/text_var";
 
-@import "activators/language_act";
-@import "variables/language_colours_var";
-@import "variables/language_sizes_var";
+@import "act/language_act";
+@import "var/language_colours_var";
+@import "var/language_sizes_var";
 
-@import "activators/section_nav_act";
-@import "variables/section_nav_colours_var";
-@import "variables/section_nav_fonts_var";
-@import "variables/section_nav_sizes_var";
+@import "act/section_nav_act";
+@import "var/section_nav_colours_var";
+@import "var/section_nav_fonts_var";
+@import "var/section_nav_sizes_var";
 
-@import "activators/logo_act";
-@import "activators/section_header_act";
-@import "variables/logo_sizes_var";
-@import "variables/section_header_heights_var";
+@import "act/logo_act";
+@import "act/section_header_act";
+@import "var/logo_sizes_var";
+@import "var/section_header_heights_var";
 
-@import "activators/slider_act";
-@import "variables/slider_var";
+@import "act/slider_act";
+@import "var/slider_var";
 
-@import "variables/social_var";
+@import "var/social_var";
 
-@import "variables/popup_var";
+@import "var/popup_var";
 
-@import "activators/section_footer_act";
-@import "variables/section_footer_var";
+@import "act/section_footer_act";
+@import "var/section_footer_var";
 
-@import "activators/forms_act";
-@import "variables/forms_colours_var";
-@import "variables/forms_fonts_var";
-@import "variables/forms_sizes_var";
+@import "act/forms_act";
+@import "var/forms_colours_var";
+@import "var/forms_fonts_var";
+@import "var/forms_sizes_var";
 
-@import "variables/tables_var";
-@import "variables/tables_colours_var";
+@import "var/tables_var";
+@import "var/tables_colours_var";
 
-@import "variables/global_var";
-@import "variables/mediaQueries_var";
+@import "var/global_var";
+@import "var/mediaQueries_var";
 
-@import "variables/page_index_var";
+@import "var/page_index_var";
 
 /* // Font Face ------------------------------------------------------------- */
 @import "../scss/fontFaceOpenSans";
 
 /* // Mixins ---------------------------------------------------------------- */
 @import "mediaQueries_mx";
-@import "../scss/mixinsSizes";
-@import "../scss/mixinsBackgrounds";
-@import "../scss/mixinsMasks";
-@import "../scss/mixinsClipPath";
-@import "../scss/mixinsTransitions";
-@import "../scss/mixinsOpacity";
-@import "../scss/mixinsFonts";
+@import "../scss/mixins_Sizes";
+@import "../scss/mixins_backgrounds";
+@import "../scss/mixins_masks";
+@import "../scss/mixins_clipPath";
+@import "../scss/mixins_transitions";
+@import "../scss/mixins_opacity";
+@import "../scss/mixins_fonts";
 @import "../scss/mixins_text";
 @import "../scss/mixins_colours";
-@import "../scss/mixinsCenter";
-@import "../scss/mixinsSpacing";
-@import "../scss/mixinsBorders";
-@import "../scss/mixinsPositions";
-@import "../scss/mixinsTableSizes";
+@import "../scss/mixins_center";
+@import "../scss/mixins_spacing";
+@import "../scss/mixins_borders";
+@import "../scss/mixins_positions";
+@import "../scss/mixins_tables_sizes";
 
 /* // Functions ------------------------------------------------------------- */
 @import "../scss/functionsAngledEdges";
@@ -81,26 +81,25 @@
 
 /* // Main CSS -------------------------------------------------------------- */
 @import "../scss/settingsHtmlBody";
-@import "stylesBody";
+@import "styles_body";
 @import "../scss/resetMain";
-@import "resetCustom";
+@import "reset_custom";
 
 @import "colours_placeholders";
 @import "colours_gradients";
 
 @import "fontFace";
 @import "../scss/settings_text";
-@import "settingsText";
-@import "../scss/classesText";
-@import "classesText";
-//@import "stylesQuotes";
+@import "settings_text";
+@import "../scss/classes_text";
+@import "classes_text";
 
 @import "includes_backgrounds";
-@import "classesBackgrounds";
-@import "classesShadows";
+@import "classes_backgrounds";
+@import "classes_shadows";
 
 @import "../scss/classesAnimations";
-@import "settingsAnimations";
+@import "settings_animations";
 @import "../scss/classes_all";
 @import "../scss/classes_responsive";
 
@@ -108,19 +107,19 @@
 
 @import "styles_print";
 
-//@import "stylesCopyright";
+//@import "page_copyright";
 @import "styles_global";
 @import "styles_buttons";
 @import "styles_button_CTA";
-//@import "styles_breadcrumbs";
-//@import "stylesError";
+//@import "breadcrumbs";
+//@import "error";
 //@import "styles_media";
 
 @import "settings_lists";
 
 //@import "../scss/settings_forms";
 //@import "styles_forms";
-//@import "stylesGracias";
+//@import "page_gracias";
 
 //@import "../scss/reset_forms_niceIt";
 //@import "styles_forms_niceIt";
@@ -133,7 +132,7 @@
 @import "popup";
 
 @import "section_header";
-//@import "stylesLanguageSwitch";
+//@import "gettext_language_switch";
 //@import "social";
 @import "section_footer";
 
@@ -148,7 +147,7 @@
 //@import "slider";
 //@import "slider_nav";
 
-//@import "stylesConstruccion";
+//@import "page_construccion";
 @import "page_index";
 //@import "page Name";
 //@import "page Name";

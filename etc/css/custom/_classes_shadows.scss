@@ -1,0 +1,65 @@
+/* =============================================================================
+   Shadows Classes | Custom [classes_shadows.scss]
+   ========================================================================== */
+
+/* // References ------------------------------------------------------------ */
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+.shadow_text{
+    text-shadow: $text_shadow_main;
+}
+
+.shadow_text_white{
+    text-shadow: $text_shadow_white;
+}
+
+.shadow_box{
+    box-shadow: $box_shadow_main;
+} 
+
+.shadow_box_inset{
+    box-shadow: $box_shadow_main_inset;
+}
+
+/* // Background Shadows ---------------------------------------------------- */
+$bgShadowT_img_url: url('/nuevo/img/bg_shadowT.png');
+$bgShadowB_img_url: url('/nuevo/img/bg_shadowB.png');
+
+.bgShadowT,
+.bgShadowB,
+.bgShadowV{
+    background-repeat: repeat-x;
+    background-size: auto 20px;
+}
+
+.bgShadowT{
+    background-image: $bgShadowT_img_url;
+    background-position: center top;
+}
+
+.bgShadowB{
+    background-image: $bgShadowB_img_url;
+    background-position: center bottom;
+}
+
+.bgShadowV{
+    background-image: $bgShadowT_img_url, $bgShadowB_img_url;
+    background-position: center top, center bottom;
+}

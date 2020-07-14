@@ -1,0 +1,52 @@
+/* =============================================================================
+   Media Queries values Variables | Custom [var/mediaQueries_var.scss]
+   ========================================================================== */ 
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de asignacion de var de media queries. 
+// Estas var se usan en `[/custom/mediaQueries_mx.scss]`.
+
+
+/* // Referencias Globales de nombres de var y mixins ----------------- */
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Regular --------------------------------------------------------------- */
+$mq_mobile_ancho_max:           499px;
+$mq_mobileLandscape_ancho_min:  500px;
+
+$mq_mobileLandscape_ancho_max:  766px;
+$mq_tablet_ancho_min:           767px;
+
+$mq_tabletPortrait_ancho_max:   1023px;
+$mq_tabletLandscape_ancho_min:  1024px;
+
+$mq_tablet_ancho_max:           1199px;
+$mq_desktop_ancho_min:          1200px;
+
+$mq_desktopLarge_ancho_min:     1600px;
+
+     
+/* // Nav ------------------------------------------------------------------- */      
+$mq_nav_BT:                     767px; // $mq_mobile_width_max
+$mq_nav_AT:                     768px; // $mq_tablet_width_min  
+
+
+/* // Apple ----------------------------------------------------------------- */
+$mq_iPhone6_width_min:          375px;

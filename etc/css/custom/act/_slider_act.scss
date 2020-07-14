@@ -1,0 +1,46 @@
+/* =============================================================================
+   Slider Activators | Custom [act/slider_act.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Este archivo contiene los var de activacion para generar los estilos
+// de flechas, flechas para carruseles y indicadores de pagina o "slide activo".
+
+
+
+/* // Referencias Globales de nombres de var y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = background / fondo
+// bx                   = box
+// ft                   = fuente, texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Tamanos de Pantalla
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+$sliderArrows_act:              off;
+$sliderArrows_carousel_act:     off;
+$sliderDots_act:                off;

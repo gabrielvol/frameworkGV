@@ -1,0 +1,57 @@
+/* =============================================================================
+   Slider Variables | Custom [var/slider.scss]
+   ========================================================================== */
+/* // References ------------------------------------------------------------ */
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+/* // Slider Colours -------------------------------------------------------- */
+$slider_bgColour:                   $transparent;
+$slider_img_bgColour:               $img_bgColour_global;
+$slider_carousel_bgColour:          $bgWhite;
+
+
+/* // Slider Arrows --------------------------------------------------------- */
+$sliderArrows_width_BT:             30px;
+$sliderArrows_height_BT:            $sliderArrows_width_BT;
+$sliderArrows_height_half_BT:       calc(#{$sliderArrows_height_BT} / 2);
+
+$sliderArrows_width_AT:             50px;
+$sliderArrows_height_AT:            $sliderArrows_width_AT;
+$sliderArrows_height_half_AT:       calc(#{$sliderArrows_height_AT} / 2);
+
+
+/* // Carousel Arrows ------------------------------------------------------- */
+$carouselArrows_width_BT:           $sliderArrows_width_BT;
+$carouselArrows_height_BT:          $sliderArrows_height_BT;
+$carouselArrows_height_half_BT:     calc(#{$carouselArrows_height_BT} / 2);
+
+$carouselArrows_width_AT:           $sliderArrows_width_AT;
+$carouselArrows_height_AT:          $sliderArrows_height_AT;
+$carouselArrows_height_half_AT:     calc(#{$carouselArrows_height_AT} / 2);
+
+$carousel_PH_BT:                    calc(#{$carouselArrows_width_BT} * 1.5);
+$carousel_PH_AT:                    calc(#{$carouselArrows_width_AT} * 1.5);
+
+
+/* // Dots ------------------------------------------------------------------ */
+$sliderDots_width:                  15px;
+$sliderDots_height:                 $sliderDots_width;
+$sliderDots_widthHeight:            $sliderDots_width $sliderDots_height;
+$sliderDots_separation:             10px;
+$sliderDots_MT:                     calc(#{$sliderDots_height} + 20px);

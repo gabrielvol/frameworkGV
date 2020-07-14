@@ -1,0 +1,125 @@
+/* =============================================================================
+   Colours Main Variables | Custom [var/colours_main.scss]
+   ========================================================================== */
+/* // References ------------------------------------------------------------ */
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+///**Colours Map Light:** 
+    ///Aquí se agregan los colores CLAROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.white{color: #fff}`, con el mixin  **colourLightClassesGenerator** `[/etc/scss/mixins_colours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color de acuerdo al porcentaje asignado en la variable `$colours_map_light_darkenValue` debajo del mapa.  
+$colours_map_light:(        
+//  redColour:      #ee0000,
+  
+//  greenSystem3XL: #e6ff99,
+//  greenSystemXXL: #b6f268,
+//  greenSystemXL:  #8ee12f,
+//  greenSystemL:   #54c81a,
+    greenSystem:    #339900,
+//  greenSystemD:   #2a7d00,
+    
+//  grey4XL:        #f9f9f9,
+//  grey3XL:        #f2f2f2,
+    greyXXL:        #e6e6e6,
+    greyXL:         #dedede,
+    greyL:          #c6c6c6,
+    grey:           #818181,
+    
+    errorColour:    #eb1c24
+);
+$colours_map_light_darkenValue: 20%;
+
+///**Colours Map Dark:** 
+    ///Aquí se agregan los colores OSCUROS usados en el sitio, de este mapa se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourDarkClassesGenerator** `[/etc/scss/mixins_colours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$colours_map_dark_lightenValue` debajo del mapa.
+$colours_map_dark:(
+    greyD:         #4d4d4d,
+    greyXD:        #666,
+    greyXXD:       #333,
+//  grey3XD:       #111,
+    black:         #000
+);
+$colours_map_dark_lightenValue: 20%;
+
+///**Colours Map Custom Hover:** 
+    ///Aquí se agregan los colores cuyas pseudoclases `:focus` y `:hover` no están generadas automáticamente. Se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourCustomHoverClassesGenerator** `[/etc/scss/mixins_colours.scss]`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` deberán ser indicadas en su correspondiente placeholder en `[/custom/scss/_coloursPlaceholders.scss]`.
+$colours_map_custom_hover:(    
+    orange: #ff6600
+);
+
+$colours_map_merged: map-merge(
+    map-merge($colours_map_light, $colours_map_dark),
+    $colours_map_custom_hover
+);
+
+$white:             #fff;
+$white_hover:       darken($white, 10%);
+$white_grad_10:     rgba(255, 255, 255, 0.1);
+$white_grad_20:     rgba(255, 255, 255, 0.2);
+$white_grad_30:     rgba(255, 255, 255, 0.3);
+$white_grad_40:     rgba(255, 255, 255, 0.4);
+$white_grad_50:     rgba(255, 255, 255, 0.5);
+$white_grad_60:     rgba(255, 255, 255, 0.6);
+$white_grad_70:     rgba(255, 255, 255, 0.7);
+$white_grad_80:     rgba(255, 255, 255, 0.8);
+$white_grad_90:     rgba(255, 255, 255, 0.9);
+
+$black:             map-get($colours_map_merged, black);
+$black_grad_10:     rgba(0, 0, 0, 0.1);
+$black_grad_20:     rgba(0, 0, 0, 0.2);
+$black_grad_30:     rgba(0, 0, 0, 0.3);
+$black_grad_40:     rgba(0, 0, 0, 0.4);
+$black_grad_50:     rgba(0, 0, 0, 0.5);
+$black_grad_60:     rgba(0, 0, 0, 0.6);
+$black_grad_70:     rgba(0, 0, 0, 0.7);
+$black_grad_80:     rgba(0, 0, 0, 0.8);
+$black_grad_90:     rgba(0, 0, 0, 0.9);
+
+
+$errorColour:       map-get($colours_map_merged, errorColour);
+//$redColour:         map-get($colours_map_merged, redColour);
+
+//$greenSystem3XL:    map-get($colours_map_merged, greenSystem3XL);
+//$greenSystemXXL:    map-get($colours_map_merged, greenSystemXXL);
+//$greenSystemXL:     map-get($colours_map_merged, greenSystemXL);
+//$greenSystemL:      map-get($colours_map_merged, greenSystemL);
+$greenSystem:       map-get($colours_map_merged, greenSystem);
+//$greenSystemD:      map-get($colours_map_merged, greenSystemD);
+
+//$grey4XL:           map-get($colours_map_merged, grey4XL);
+//$grey3XL:           map-get($colours_map_merged, grey3XL);
+$greyXXL:           map-get($colours_map_merged, greyXXL);
+$greyXL:            map-get($colours_map_merged, greyXL);
+$greyL:             map-get($colours_map_merged, greyL);
+$grey:              map-get($colours_map_merged, grey);
+$greyD:             map-get($colours_map_merged, greyD);
+$greyXD:            map-get($colours_map_merged, greyXD);
+$greyXXD:           map-get($colours_map_merged, greyXXD);
+//$grey3XD:           map-get($colours_map_merged, grey3XD);
+
+///**Anchor Colours Light:** 
+    ///Aquí se agregan los colores para las anclas dentro de un párrafo con color CLARO, de este mapa se creará una clase por cada color con el mixin **anchorColoursLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.white a{color: #fff}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$anchor_ftColours_map_light_darkenValue` debajo del mapa. 
+$anchor_ftColours_map_light:(
+//  white: $white,
+);
+$anchor_ftColours_map_light_darkenValue: 20%;
+
+///**Anchor Colours Dark:** 
+    ///Aquí se agregan los colores para las anclas dentro de un párrafo con color OSCURO, de este mapa se creará una clase por cada color con el mixin **anchorColoursDarkClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.black a{color: #000}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` oscurecerán el color con el porcentaje asignado en la variable `$anchor_ftColours_map_dark_lightenValue` debajo del mapa.
+$anchor_ftColours_map_dark:(
+//  black: $black,
+);
+$anchor_ftColours_map_dark_lightenValue: 20%;

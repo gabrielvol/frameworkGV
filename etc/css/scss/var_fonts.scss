@@ -1,0 +1,99 @@
+/* =============================================================================
+   Font Variables | Etc [var_fonts.scss]
+   ========================================================================== */
+    //Sans Serif Stack
+$fontFamilies_map_sans:(
+    sanFrancisco: ('-apple-system', '.SFNSText-Regular', 'San Francisco'),
+    blinkMacSystemFont: BlinkMacSystemFont,
+    oxygen: Oxygen,
+    ubuntu: Ubuntu,
+    cantarell: Cantarell,
+    firaSans: "Fira Sans",
+    droidSans: "Droid Sans",
+    helveticaSafe: (Helvetica, 'Helvetica Neue'),
+    segoeUI: 'Segoe UI',
+    verdana: Verdana,
+    tahoma: Tahoma,
+    lucidaGrande: 'Lucida Grande',
+    trebuchetMS: 'Trebuchet MS',
+    sansSerif: sans-serif
+);
+
+$fontFamilies_list_sans:
+    map-get($fontFamilies_map_sans, sanFrancisco),
+    map-get($fontFamilies_map_sans, blinkMacSystemFont),
+    map-get($fontFamilies_map_sans, oxygen), 
+    map-get($fontFamilies_map_sans, ubuntu), 
+    map-get($fontFamilies_map_sans, cantarell), 
+    map-get($fontFamilies_map_sans, firaSans), 
+    map-get($fontFamilies_map_sans, droidSans), 
+    map-get($fontFamilies_map_sans, helveticaSafe), 
+    map-get($fontFamilies_map_sans, segoeUI),   
+    map-get($fontFamilies_map_sans, verdana),
+    map-get($fontFamilies_map_sans, tahoma),
+    map-get($fontFamilies_map_sans, lucidaGrande),
+    map-get($fontFamilies_map_sans, trebuchetMS),
+    map-get($fontFamilies_map_sans, sansSerif)
+; 
+
+$sanFrancisco: map-get($fontFamilies_map_sans, sanFrancisco);
+$blinkMacSystemFont: map-get($fontFamilies_map_sans, blinkMacSystemFont);   
+$oxygen: map-get($fontFamilies_map_sans, oxygen);   
+$ubuntu: map-get($fontFamilies_map_sans, ubuntu);   
+$cantarell: map-get($fontFamilies_map_sans, cantarell);   
+$firaSans: map-get($fontFamilies_map_sans, firaSans);    
+$droidSans: map-get($fontFamilies_map_sans, droidSans);   
+$segoeUI: map-get($fontFamilies_map_sans, segoeUI);   
+$verdana: map-get($fontFamilies_map_sans, verdana);
+$tahoma: map-get($fontFamilies_map_sans, tahoma);
+$lucidaGrande: map-get($fontFamilies_map_sans, lucidaGrande);
+$trebuchetMS: map-get($fontFamilies_map_sans, trebuchetMS);
+
+    //Serif Stack
+$fontFamilies_map_serif:(
+    georgia: Georgia,
+    palatino: Palatino,
+    serif: serif
+);
+    
+$fontFamilies_list_serif: 
+    map-get($fontFamilies_map_serif, georgia),
+    map-get($fontFamilies_map_serif, palatino),
+    map-get($fontFamilies_map_serif, serif)
+;
+    
+    //monospace Stack
+$fontFamilies_map_monospaced:(
+    consolas: 'Consolas',
+    andaleMono: 'Andale Mono',
+    lucidaConsole: 'Lucida Console',
+    bitstreamVeraSansMono: 'Bitstream Vera Sans Mono',
+    courierNew: 'Courier New',
+    monospace: monospace
+);
+    
+$fontFamilies_list_monospaced:
+    map-get($fontFamilies_map_monospaced, consolas),    
+    map-get($fontFamilies_map_monospaced, andaleMono),
+    map-get($fontFamilies_map_monospaced, lucidaConsole),
+    map-get($fontFamilies_map_monospaced, bitstreamVeraSansMono),
+    map-get($fontFamilies_map_monospaced, courierNew),
+    map-get($fontFamilies_map_monospaced, monospace)
+;
+
+    //Font Sizes
+$h1_list: 'h1, .hUno';
+$h2_list: 'h2, .hDos';
+$h3_list: 'h3, .hTre';
+$h4_list: 'h4, .hCua';
+$h5_list: 'h5, .hCin';
+$h6_list: 'h6, .hSei';
+
+    //Open Sans Map
+$fontFamilies_map_OpenSans:(
+    openSansL: open_sanslight,
+    openSans: open_sansregular,
+    openSansI: open_sansitalic,
+    openSansB: open_sansbold,
+    openSansBI: open_sansbold_italic
+);

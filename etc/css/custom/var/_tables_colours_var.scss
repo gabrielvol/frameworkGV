@@ -1,0 +1,20 @@
+/* =============================================================================
+   Tables Colours Variables | Custom [var/tables_colours.scss]
+   ========================================================================== */
+
+/* // Table Border Colours -------------------------------------------------- */
+$table_bdColour_main:         $bdGrey;
+$table_bdColour_sec:    $bdGreyXL;
+
+
+/* // Table Background Colours ---------------------------------------------- */
+$table_bgColour_main:         #888;
+$table_bgColour_sec:    #bbb;
+$table_bgColour_ter:     $bgGreyXL;
+
+
+/* // Striped Table --------------------------------------------------------- */
+$table_bgColour_striped_thead:     #aaa;
+$table_bgColour_striped_odd:       #eee;
+$table_bgColour_striped_even:      $white;
+$table_bgColour_striped_separator: darken($table_bgColour_striped_odd, 60%);

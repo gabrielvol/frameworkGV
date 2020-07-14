@@ -1,0 +1,124 @@
+/* =============================================================================
+   Nav Colours Variables | Custom [var/section_nav_colours.scss]
+   ========================================================================== */
+
+/* // Font Colours ---------------------------------------------------------- */
+/*___ Nav BT ____________________________*/
+$nav_ftColour_TLI_level0_BT:            $ftColour_main_global;
+$nav_ftColour_TLI_level1_BT:            $nav_ftColour_TLI_level0_BT;
+$nav_ftColour_TLI_level2_BT:            $nav_ftColour_TLI_level1_BT;
+$nav_ftColour_TLI_level3_BT:            $nav_ftColour_TLI_level2_BT;
+
+$nav_ftColour_itemLevel0_BT:            $nav_ftColour_TLI_level0_BT;
+$nav_ftColour_itemLevel1_BT:            $nav_ftColour_TLI_level1_BT;
+$nav_ftColour_itemLevel2_BT:            $nav_ftColour_TLI_level2_BT; 
+$nav_ftColour_itemLevel3_BT:            $nav_ftColour_TLI_level3_BT; 
+
+$nav_ftColour_TLICurrent_level0_BT:     $nav_ftColour_TLI_level0_BT;
+$nav_ftColour_TLICurrent_level1_BT:     $nav_ftColour_TLI_level1_BT;
+$nav_ftColour_TLICurrent_level2_BT:     $nav_ftColour_TLI_level2_BT;
+$nav_ftColour_TLICurrent_level3_BT:     $nav_ftColour_TLI_level3_BT;
+
+$nav_ftColour_itemCurrent_level0_BT:    $nav_ftColour_TLICurrent_level0_BT;
+$nav_ftColour_itemCurrent_level1_BT:    $nav_ftColour_TLICurrent_level1_BT;
+$nav_ftColour_itemCurrent_level2_BT:    $nav_ftColour_TLICurrent_level2_BT;
+$nav_ftColour_itemCurrent_level3_BT:    $nav_ftColour_TLICurrent_level3_BT;
+
+$nav_ftColour_backMenu_TLI:             $white!important;
+
+
+/*___ Nav AT ____________________________*/
+$nav_ftColour_item_AT:                  $ftColour_main_global;
+$nav_ftColour_item_hover:               $nav_ftColour_item_AT;
+$nav_ftColour_itemSub_AT:               $nav_ftColour_item_AT;
+$nav_ftColour_itemSub_hover:            $nav_ftColour_itemSub_AT;
+   
+$nav_ftColour_itemCurrent_AT:           $nav_ftColour_item_AT;
+$nav_ftColour_itemCurrent_hover:        $nav_ftColour_itemCurrent_AT;
+$nav_ftColour_itemSubCurrent_AT:        $nav_ftColour_item_AT;
+$nav_ftColour_itemSubCurrent_hover:     $nav_ftColour_itemSubCurrent_AT;
+
+
+/*___ Topper ____________________________*/
+$nav_ftColour_topper:                   $nav_ftColour_item_AT;
+$nav_ftColour_topper_hover:             $nav_ftColour_topper;
+$nav_ftColour_topper_itemCurrent:       $nav_ftColour_item_AT;
+
+
+/*___ Hamburger _________________________*/  
+$nav_ftColour_hamburger:                $greyXXD;
+$nav_ftColour_hamburger_clicked:        $nav_ftColour_hamburger;
+
+
+/* // Background Colours ---------------------------------------------------- */
+/*___ Nav BT ____________________________*/
+$nav_bgColour_BT:                     $bgWhite;
+       
+$nav_bgColour_ulLevel1_BT:            transparent;
+$nav_bgColour_ulLevel2_BT:            transparent;
+$nav_bgColour_ulLevel3_BT:            transparent;
+     
+$nav_bgColour_itemLevel1_BT:          transparent;
+$nav_bgColour_itemLevel2_BT:          transparent;
+$nav_bgColour_itemLevel3_BT:          transparent;
+
+$nav_bgColour_itemCurrent_level0_BT:  darken($nav_bgColour_BT, 5%);
+$nav_bgColour_itemCurrent_level1_BT:  darken($nav_bgColour_ulLevel1_BT, 5%);
+$nav_bgColour_itemCurrent_level2_BT:  darken($nav_bgColour_ulLevel1_BT, 5%);
+$nav_bgColour_itemCurrent_level3_BT:  darken($nav_bgColour_ulLevel1_BT, 5%);
+
+
+/*___ Nav AT ____________________________*/
+$nav_bgColour_AT:                $bgGrey;
+
+$nav_bgColour_ULsub_AT:          transparent;
+
+$nav_bgColour_item_AT:           transparent;
+$nav_bgColour_item_hover:        $nav_bgColour_item_AT;
+
+$nav_bgColour_itemSub_AT:        $nav_bgColour_item_AT;
+$nav_bgColour_itemSub_Hover:     $nav_bgColour_itemSub_AT;
+
+$nav_bgColour_itemCurrent_AT:        transparent;
+$nav_bgColour_itemCurrent_Hover:     $nav_bgColour_itemCurrent_AT;
+
+$nav_bgColour_itemSubCurrent_AT:     transparent;
+$nav_bgColour_itemSubCurrent_Hover:  $nav_bgColour_itemSubCurrent_AT;
+
+
+/*___ Topper ____________________________*/
+$nav_bgColour_topper:       $bgBlack;
+
+
+/*___ Hamburger _________________________*/  
+$nav_bgColour_hamburger:    $bgWhite;
+
+@import 'section_nav_arrows_var';
+
+
+/* // Border Colours -------------------------------------------------------- */
+/*___ Nav BT ____________________________*/
+$nav_bdColour_BT:                  $bdBlack;
+$nav_bdColour_open:                $bdGreyXD;
+$nav_bdColour_close:               $bdGreyXD;
+   
+$nav_bdColourR_navDrawer:          $bdBlack;
+$nav_bdColour_navAcc:              $bdGreyXXL;
+  
+$nav_bdColour_itemCurrent:         $bdGrey;
+  
+$nav_bdColour_itemLevel0_BT:       $bdGrey;
+$nav_bdColour_itemLevel1_BT:       $nav_bdColour_itemLevel0_BT;
+$nav_bdColour_itemLevel2_BT:       $nav_bdColour_itemLevel1_BT;
+$nav_bdColour_itemLevel3_BT:       $nav_bdColour_itemLevel2_BT;
+  
+$nav_bdColour_backMenu:            $nav_bdColour_itemLevel1_BT;
+
+
+/*___ Nav AT ____________________________*/
+$nav_bdColour_itemSub_AT:          $nav_bdColour_itemLevel0_BT;
+
+
+/*___ Topper ____________________________*/
+$nav_bdColour_topper:              $bdGreyXD;
+$nav_bdColour_topper_itemCurrent:  $bdGrey;

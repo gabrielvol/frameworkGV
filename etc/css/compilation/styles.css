@@ -1,13 +1,19 @@
 @charset "UTF-8";
 /* // Variables ------------------------------------------------------------- */
 /* =============================================================================
-   Font Variables | Etc [variablesFonts.scss]
+   Font Variables | Etc [var_fonts.scss]
    ========================================================================== */
 /* =============================================================================
-   Absolute Variables | Etc [variablesAbsolute.scss]
+   Absolute Variables | Etc [var_absolute.scss]
    ========================================================================== */
+/* // Widths ---------------------------------------------------------------- */
+/* // Colours --------------------------------------------------------------- */
+/* // Positions ------------------------------------------------------------- */
+/* // Display --------------------------------------------------------------- */
+/* // .mha placeholder ------------------------------------------------------ */
+/* // Clearfix mixin -------------------------------------------------------- */
 /* =============================================================================
-   Z Index Variables | Custom [variables/zindex.scss]
+   Z Index Variables | Custom [var/zindex.scss]
    ========================================================================== */
 /* // Negative -------------------------------------------------------------- */
 /* // 10 000 ---------------------------------------------------------------- */
@@ -24,7 +30,7 @@
 /* // 1000 ------------------------------------------------------------------ */
 /*___ Slick Slider ______________________*/
 /* =============================================================================
-   Container Sizes Variables | Custom [variables/container.scss]
+   Container Sizes Variables | Custom [var/container.scss]
    ========================================================================== */
 /* // Container Sizes ------------------------------------------------------- */
 /* Mobile / Container: 300px */
@@ -46,7 +52,7 @@
 /* Desktop Half */
 /* Desktop Large Half*/
 /* =============================================================================
-   Classes Activators | Custom [activators/main_act.scss]
+   Classes Activators | Custom [act/main_act.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // Colours --------------------------------------------------------------- */
@@ -55,7 +61,7 @@
 /* // Pointers -------------------------------------------------------------- */
 /* // Full heights sections ------------------------------------------------- */
 /* =============================================================================
-   Helpers Responsive Classes Activators | Custom [activators/responsive_act.scss]
+   Helpers Responsive Classes Activators | Custom [act/responsive_act.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // All ------------------------------------------------------------------- */
@@ -74,55 +80,55 @@
 /* // After Desktop AD ------------------------------------------------------ */
 /* // After Desktop Large ADL ----------------------------------------------- */
 /* =============================================================================
-   Spacing Helpers Variables | Custom [variables/helpers.scss]
+   Spacing Helpers Variables | Custom [var/helpers.scss]
    ========================================================================== */
 /* // Spacing --------------------------------------------------------------- */
 /* // Border Helpers Variables  --------------------------------------------- */
 /* =============================================================================
-   Animation Variables | Custom [variables/animations.scss]
+   Animation Variables | Custom [var/animations.scss]
    ========================================================================== */
 /* =============================================================================
-   Colours Main Variables | Custom [variables/colours_main.scss]
+   Colours Main Variables | Custom [var/colours_main.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* =============================================================================
-   Border Colours Variables | Custom [variables/colours_borders.scss]
+   Border Colours Variables | Custom [var/colours_borders.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* =============================================================================
-   Background Colours Variables | Custom [variables/colours_backgrounds.scss]
+   Background Colours Variables | Custom [var/colours_backgrounds.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
-/*___ Declaramos las variables para colores de fondo _*/
+/*___ Declaramos las var para colores de fondo _*/
 /* // Modal Opacity Variables  ---------------------------------------------- */
 /*___ Responsive nav ____________________*/
 /* =============================================================================
-   Shadows Variables | Custom [variables/shadows.scss]
+   Shadows Variables | Custom [var/shadows.scss]
    ========================================================================== */
 /* =============================================================================
-   Fonts Main Variables | Custom [variables/fonts_main.scss]
+   Fonts Main Variables | Custom [var/fonts_main.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
-/* // Chequear Arial, Roboto o Times como Main Font Family ------------------ */
+/* // Variables de fuentes -------------------------------------------------- */
 /*___ Creamos la variable de la fuente principal del sitio _*/
 /* // Main font Stack ------------------------------------------------------- */
 /* // Heading Sizes --------------------------------------------------------- */
 /* // Useful Text Format ---------------------------------------------------- */
 /* =============================================================================
-   Fonts Colours Variables | Custom [variables/fonts_colours.scss]
+   Fonts Colours Variables | Custom [var/fonts_colours.scss]
    ========================================================================== */
 /* =============================================================================
-   Text Variables | Custom [variables/text.scss]
+   Text Variables | Custom [var/text.scss]
    ========================================================================== */
 /* =============================================================================
    Language Activators | Custom [activator/language_act.scss]
    ========================================================================== */
 /* // Flags ----------------------------------------------------------------- */
 /* =============================================================================
-   Language Colours Variables | Custom [variables/language_colours.scss]
+   Language Colours Variables | Custom [var/language_colours.scss]
    ========================================================================== */
 /* =============================================================================
-   Language Sizes Variables | Custom [variables/language_sizes.scss]
+   Language Sizes Variables | Custom [var/language_sizes.scss]
    ========================================================================== */
 /* // Flags ----------------------------------------------------------------- */
 /*
@@ -131,10 +137,10 @@ $language_flag_height_AT:           32px;
 */
 /* // Language UL ----------------------------------------------------------- */
 /* =============================================================================
-   Nav Activators | Custom [activators/section_nav_act.scss]
+   Nav Activators | Custom [act/section_nav_act.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav Colours Variables | Custom [variables/section_nav_colours.scss]
+   Nav Colours Variables | Custom [var/section_nav_colours.scss]
    ========================================================================== */
 /* // Font Colours ---------------------------------------------------------- */
 /*___ Nav BT ____________________________*/
@@ -147,20 +153,20 @@ $language_flag_height_AT:           32px;
 /*___ Topper ____________________________*/
 /*___ Hamburger _________________________*/
 /* =============================================================================
-   Nav Arrows | Custom [variables/section_nav_arrows.scss]
+   Nav Arrows | Custom [var/section_nav_arrows.scss]
    ========================================================================== */
 /* // Border Colours -------------------------------------------------------- */
 /*___ Nav BT ____________________________*/
 /*___ Nav AT ____________________________*/
 /*___ Topper ____________________________*/
 /* =============================================================================
-   Nav Fonts Variables | Custom [variables/section_nav_fonts.scss]
+   Nav Fonts Variables | Custom [var/section_nav_fonts.scss]
    ========================================================================== */
 /*___ BT ________________________________*/
 /*___ AT ________________________________*/
 /*___ ATL _______________________________*/
 /* =============================================================================
-   Nav Sizes Variables | Custom [variables/section_nav_sizes.scss]
+   Nav Sizes Variables | Custom [var/section_nav_sizes.scss]
    ========================================================================== */
 /* // General --------------------------------------------------------------- */
 /* // Nav List -------------------------------------------------------------- */
@@ -169,32 +175,32 @@ $language_flag_height_AT:           32px;
 /* // Nav Topper ------------------------------------------------------------ */
 /* // Nav Heights ----------------------------------------------------------- */
 /* =============================================================================
-   Logo Activators | Custom [activators/logo_act.scss]
+   Logo Activators | Custom [act/logo_act.scss]
    ========================================================================== */
 /* // Logo img background ::before activator -------------------------------- */
 /* =============================================================================
-   Header Activators | Custom [activators/section_header_act.scss]
+   Header Activators | Custom [act/section_header_act.scss]
    ========================================================================== */
 /* // Menu y logo ----------------------------------------------------------- */
 /* // Header ---------------------------------------------------------------- */
 /* =============================================================================
-   Logo Sizes Variables | Custom [variables/logo_sizes.scss]
+   Logo Sizes Variables | Custom [var/logo_sizes.scss]
    ========================================================================== */
 /* // Logo Sizes BT --------------------------------------------------------- */
 /* // Nav Drawer logo.clicked ----------------------------------------------- */
 /* // Logo Sizes AT --------------------------------------------------------- */
 /* // Logo Sizes Footer ----------------------------------------------------- */
 /* =============================================================================
-   Header Height Variables | Custom [variables/section_header_heights.scss]
+   Header Height Variables | Custom [var/section_header_heights.scss]
    ========================================================================== */
 /* // Full heights Header --------------------------------------------------- */
 /* =============================================================================
-   Slider Activators | Custom [activators/slider_act.scss]
+   Slider Activators | Custom [act/slider_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias Globales de nombres de variables y mixins ----------------- */
+/* // Referencias Globales de nombres de var y mixins ----------------- */
 /* =============================================================================
-   Slider Variables | Custom [variables/slider.scss]
+   Slider Variables | Custom [var/slider.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // Slider Colours -------------------------------------------------------- */
@@ -202,68 +208,77 @@ $language_flag_height_AT:           32px;
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
 /* =============================================================================
-   Social Variables | Custom [variables/section_social_var.scss]
+   Social Variables | Custom [var/section_social_var.scss]
    ========================================================================== */
 /* // Social Sizes ---------------------------------------------------------- */
 /* // Social Colours -------------------------------------------------------- */
 /* =============================================================================
-   Social Variables | Custom [variables/popup_var.scss]
+   Social Variables | Custom [var/popup_var.scss]
    ========================================================================== */
 /* // Popup Sizes ---------------------------------------------------------- */
 /* // Popup Colours -------------------------------------------------------- */
 /* =============================================================================
-   Footer Activators | Custom [activators/section_footer_act.scss]
+   Footer Activators | Custom [act/section_footer_act.scss]
    ========================================================================== */
 /* // Logo y dirección flotados --------------------------------------------- */
 /* =============================================================================
-   Footer Variables | Custom [variables/section_footer_var.scss]
+   Footer Variables | Custom [var/section_footer_var.scss]
    ========================================================================== */
 /* // Footer logo flotado --------------------------------------------------- */
 /* // Full heights Footer --------------------------------------------------- */
 /* // Footer sizes ---------------------------------------------------------- */
 /* // Footer colours  ------------------------------------------------------- */
 /* =============================================================================
-   Forms Activators | Custom [activators/forms_act.scss]
+   Forms activators | Custom [act/forms_act.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de var y mixins ----------------------- */
 /* =============================================================================
-   Form Colours Variables | Custom [variables/form_colours.scss]
+   Form Colours Variables | Custom [var/form_colours.scss]
    ========================================================================== */
 /* // Labels ---------------------------------------------------------------- */
 /* // Inputs ---------------------------------------------------------------- */
 /* // Submit ---------------------------------------------------------------- */
 /* // Validation ------------------------------------------------------------ */
 /* =============================================================================
-   Form Fonts Variables | Custom [variables/form_fonts.scss]
+   Form Fonts Variables | Custom [var/form_fonts.scss]
    ========================================================================== */
 /* =============================================================================
-   Form Sizes Variables | Custom [variables/form_sizes.scss]
+   Form Sizes Variables | Custom [var/form_sizes.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // Form ------------------------------------------------------------------ */
 /* // Labels ---------------------------------------------------------------- */
-/*___ Sug _______________________________*/
 /* // Inputs ---------------------------------------------------------------- */
 /*___ Sug _______________________________*/
 /*___ Sug _______________________________*/
 /* // Submit ---------------------------------------------------------------- */
 /* // Search ---------------------------------------------------------------- */
 /* =============================================================================
-   Tables Variables | Custom [variables/tables.scss]
+   Tables Variables | Custom [var/tables.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 /* // Custom Sizes ---------------------------------------------------------- */
 /* // Rounded Table --------------------------------------------------------- */
 /* =============================================================================
-   Tables Colours Variables | Custom [variables/tables_colours.scss]
+   Tables Colours Variables | Custom [var/tables_colours.scss]
    ========================================================================== */
 /* // Table Border Colours -------------------------------------------------- */
 /* // Table Background Colours ---------------------------------------------- */
 /* // Striped Table --------------------------------------------------------- */
 /* =============================================================================
-   Global Variables | Custom [variables/global.scss]
+   Global Variables | Custom [var/global.scss]
    ========================================================================== */
 /* =============================================================================
-   Page Index Variables | Custom [variables/page_index_var.scss]
+   Media Queries values Variables | Custom [var/mediaQueries_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias Globales de nombres de var y mixins ----------------- */
+/* // Regular --------------------------------------------------------------- */
+/* // Nav ------------------------------------------------------------------- */
+/* // Apple ----------------------------------------------------------------- */
+/* =============================================================================
+   Page Index Variables | Custom [var/page_index_var.scss]
    ========================================================================== */
 /* // Page Index Sizes ------------------------------------------------------ */
 /* // Page Index Colours ---------------------------------------------------- */
@@ -308,15 +323,10 @@ $language_flag_height_AT:           32px;
 
 /* // Mixins ---------------------------------------------------------------- */
 /* =============================================================================
-   Media Queries Variables | Custom [mediaQueries_mixins.scss]
+   Media Queries Mixins | Custom [mediaQueries_mixins.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
-/*
-@media (min-width: 100px) and (max-width: 100px){}
-*/
-/* =============================================================================
-   Media Queries Mixins | Custom [mixinsMediaQueries.scss]
-   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias Globales de nombres de var y mixins ----------------- */
 /* // Nav ------------------------------------------------------------------- */
 /* // Mobile ---------------------------------------------------------------- */
 /* // Tablet ---------------------------------------------------------------- */
@@ -329,10 +339,7 @@ $language_flag_height_AT:           32px;
 /* // 900px ----------------------------------------------------------------- */
 /* // 950px ----------------------------------------------------------------- */
 /* // Desktop --------------------------------------------------------------- */
-/* // Desktop Large + --------------------------------------------------------- */
-/* =============================================================================
-   iPhone & iPads Mixins | Custom [mixinsMediaQueries.scss]
-   ========================================================================== */
+/* // Desktop Large + ------------------------------------------------------- */
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */
 /* // iPhone 4 & 4S Portrait Only ------------------------------------------- */
 /* // iPhone 4 & 4S Landscape Only ------------------------------------------ */
@@ -383,7 +390,7 @@ $language_flag_height_AT:           32px;
    Colour Mixins | Etc [mixins_colours.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias Globales de nombres de variables y mixins ----------------- */
+/* // Referencias Globales de nombres de var y mixins ----------------- */
 /* =============================================================================
    Center Mixins | Etc [mixinsCenter.scss]
    ========================================================================== */
@@ -432,7 +439,7 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 /* =============================================================================
-   Body Styles | Custom [stylesBody.scss]
+   Body Styles | Custom [styles_body.scss]
    ========================================================================== */
 body {
   background-color: #fff; }
@@ -520,7 +527,7 @@ html input[type="button"] {
   text-shadow: none; }
 
 /* =============================================================================
-   Custom Reset Styles | Custom [resetCustom.scss]
+   Custom Reset Styles | Custom [reset_custom.scss]
    ========================================================================== */
 /* =============================================================================
    Colour Placeholders | Custom [colours_placeholders.scss]
@@ -548,18 +555,17 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 @font-face {
     font-family: 'exampleFont';
     src: url('/pathtofonts/examplefont.woff2') format('woff2'),
-         url('/pathtofonts/examplefont.woff') format('woff'),
-         url('/pathtofonts/examplefont.eot') format('eot');
+         url('/pathtofonts/examplefont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 */
 /* =============================================================================
-   Text Settings | Etc [settingsText.scss]
+   Text Settings | Etc [settings_text.scss]
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
-  font-family: Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4; }
@@ -600,11 +606,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, dfn a, button a, blockquote a, df
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.8em; }
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   p, a, li, dd, dt, .pSize {
     font-size: 0.9rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   p, a, li, dd, dt, .pSize {
     font-size: 1rem; } }
 
@@ -659,7 +665,7 @@ a {
 .roboto {
   font-family: Roboto; }
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   h1, .hUno {
     font-size: 1.6rem; }
   h2, .hDos {
@@ -673,7 +679,7 @@ a {
   h6, .hSei {
     font-size: 1.3rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   h1, .hUno {
     font-size: 1.6rem; }
   h2, .hDos {
@@ -811,30 +817,25 @@ a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.no
   color: #ff6600; }
 
 /* =============================================================================
-   Settings Text | Custom [settingsText.scss]
+   Settings Text | Custom [settings_text.scss]
    ========================================================================== */
-a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited,
-.safariTel,
-.safariTel:focus,
-.safariTel:hover,
-.safariTel:active,
-.safariTel:visited {
+/* // Safari tel detection -------------------------------------------------- */
+a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
   color: #333333 !important; }
 
-.gradientText {
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone; }
-  .gradientText.blueGT {
-    /*
-        background-image: $bgGrad_blueCTA;
-        filter: $bgGrad_blueCTA_filter;
-        */ }
+/* // Blockquote ------------------------------------------------------------ */
+blockquote {
+  margin: 0; }
+
+q {
+  quotes: "“" "”" "«" "»"; }
+  q::before {
+    content: open-quote; }
+  q::after {
+    content: close-quote; }
 
 /* =============================================================================
-   Font Classes | Etc [classesFonts.scss]
+   Text Classes | Etc [classes_text.scss]
    ========================================================================== */
 abbr {
   border: none !important;
@@ -906,7 +907,7 @@ b, strong,
   text-indent: -9999px; }
 
 /* =============================================================================
-   Text Classes | Custom [classesText.scss]
+   Text Classes | Custom [classes_text.scss]
    ========================================================================== */
 .letterSpacing {
   letter-spacing: 0.05rem; }
@@ -951,7 +952,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   background-color: #4e4e4e; }
 
 /* =============================================================================
-   Backgrounds Classes | Custom [classesBackgrounds.scss]
+   Backgrounds Classes | Custom [classes_backgrounds.scss]
    ========================================================================== */
 .bgNone, .bgNone:focus, .bgNone:hover {
   background-color: transparent !important;
@@ -967,7 +968,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   background-color: #eb1c24; }
 
 /* =============================================================================
-   Shadows Classes | Custom [classesShadows.scss]
+   Shadows Classes | Custom [classes_shadows.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 .shadow_text {
@@ -1004,7 +1005,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 /* =============================================================================
    Animation Classes | Etc [classesAnimations.scss]
    ========================================================================== */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .hoverGrowS,
   .hoverGrowM,
   .hoverGrowL {
@@ -1022,9 +1023,9 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     transform: scale(1.15); } }
 
 /* =============================================================================
-   Settings Animations | Custom [settingsAnimations.scss]
+   Settings Animations | Custom [settings_animations.scss]
    ========================================================================== */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .hoverGrowS,
   .hoverGrowM,
   .hoverGrowL {
@@ -1385,7 +1386,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Before Tablet Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   .pRelBT {
     position: relative; }
   .pAbsBT {
@@ -1461,7 +1462,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    After Tablet Classes | Etc [classesResponsive.scss]
    ========================================================================== */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .pRelAT {
     position: relative; }
   .pAbsAT {
@@ -1612,7 +1613,7 @@ article, article::before, article::after, details, details::before, details::aft
   .container {
     width: 85%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .container {
     width: 720px; } }
 
@@ -1640,7 +1641,7 @@ article, article::before, article::after, details, details::before, details::aft
     left: 50%;
     margin-left: calc(-1 * calc(85% / 2)); } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .container.centerAbs {
     margin-left: calc(-1 * calc(720px / 2)); } }
 
@@ -1799,19 +1800,19 @@ article, article::before, article::after, details, details::before, details::aft
   @media (max-width: 499px) {
     .callToAction {
       width: 100% !important; } }
-  @media (max-width: 767px) {
+  @media (max-width: 766px) {
     .callToAction {
       height: auto;
       padding-top: 10px;
       padding-bottom: 10px;
       line-height: 1.3; } }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .callToAction {
       height: 50px;
       line-height: 50px; } }
 
 /* =============================================================================
-   Settings Lists | Custom [settingsLists.scss]
+   Settings Lists | Custom [settings_lists.scss]
    ========================================================================== */
 .hyphenated li {
   position: relative; }
@@ -1927,7 +1928,7 @@ article, article::before, article::after, details, details::before, details::aft
     .ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
       width: 100%; } }
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 500px) and (max-width: 766px) {
   .ulResp2 > li:nth-child(odd):last-child, .ulResp3 > li:nth-child(odd):last-child, .ulResp4 > li:nth-child(odd):last-child {
     clear: both;
     width: 100%;
@@ -1942,15 +1943,15 @@ article, article::before, article::after, details, details::before, details::aft
     .ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
       width: 100%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .ulResp2 > li:nth-child(n+3) {
     margin-top: 40px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .ulResp3 > li {
     width: calc(100% / 3); } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .ulResp4 > li {
     width: 25%; } }
 
@@ -1978,7 +1979,7 @@ article, article::before, article::after, details, details::before, details::aft
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=80)";
   display: none;
   background-color: #000; }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .modal_nav {
       display: none !important; } }
 
@@ -2120,7 +2121,7 @@ article, article::before, article::after, details, details::before, details::aft
       width: 450px;
       height: 250px;
       margin-left: calc(-1 * calc(450px / 2)); } }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .pop_video {
       width: 600px;
       height: 330px;
@@ -2132,7 +2133,7 @@ article, article::before, article::after, details, details::before, details::aft
 #header .logoH {
   margin-bottom: 0; }
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   #header {
     box-sizing: border-box;
     padding-top: 20px;
@@ -2167,7 +2168,7 @@ article, article::before, article::after, details, details::before, details::aft
       #header .logoH.clicked .logoBefore {
         background: none; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #header .logoH {
     position: relative;
     z-index: 7100;
@@ -2208,10 +2209,10 @@ article, article::before, article::after, details, details::before, details::aft
   @media (min-width: 500px) {
     #footer .logoF {
       /* width: $logo_width_footer_MO; */ } }
-  @media (min-width: 500px) and (max-width: 767px) {
+  @media (min-width: 500px) and (max-width: 766px) {
     #footer .logoF {
       width: 50px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     #footer .logoF {
       width: 125px; } }
   @media (max-width: 1023px) {
@@ -2425,7 +2426,7 @@ nav li:focus a, nav li:hover a {
     padding-right: 5px;
     padding-left: 5px; } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   .navMain li,
   .navMain li a,
   .navMain li .topLevelItem {

@@ -1,0 +1,25 @@
+/* =============================================================================
+   Nav Activators | Custom [act/section_nav_act.scss]
+   ========================================================================== */     
+$nav_horizontalCenter_AT_act:       off;
+$nav_horizontalCenter_TO_act:       off;
+$nav_horizontalCenter_ATL_act:      off;
+     
+$nav_topper_act:                    off;
+$nav_fixed_act:                     off;
+     
+$navDrawer_act:                     on; // SEE var/nav.act.inc.php
+$navAcc_act:                        off; // SEE var/nav.act.inc.php
+$navList_act:                       off;
+     
+$nav_hasSub_act:                    off;
+$nav_hasSub_level1_act:             off;
+$nav_hasSub_level2_act:             off;
+$nav_hasSub_level3_act:             off;
+
+$nav_itemCurrent_bdB_act:           off;
+
+$nav_text_white_act:                off;
+$nav_text_black_act:                off;
+
+$hamburger_only_act:                off;

@@ -1,0 +1,45 @@
+/* =============================================================================
+   Absolute Variables | Etc [var_absolute.scss]
+   ========================================================================== */
+$zero: 0!important;
+$auto: auto!important;
+$none: none!important;
+
+/* // Widths ---------------------------------------------------------------- */
+$hundred:   100%!important;
+$sixth:     calc(100% / 6)!important;
+$fifth:     20%!important;
+$fourth:    25%!important;
+$third:     calc(100% / 3)!important;
+$half:      50%!important;
+$twoThirds: calc(calc(100% / 3) * 2)!important;
+
+/* // Colours --------------------------------------------------------------- */
+$transparent: transparent!important;
+
+/* // Positions ------------------------------------------------------------- */
+$left: left!important;
+$right: right!important;
+
+/* // Display --------------------------------------------------------------- */
+$block: block!important;
+$inline: inline!important;
+$inlineBlock: inline-block!important;
+
+/* // .mha placeholder ------------------------------------------------------ */
+%mha{
+    margin-right: $auto;
+    margin-left: $auto;    
+}
+
+/* // Clearfix mixin -------------------------------------------------------- */
+@mixin clearfix() {
+    &::before,
+    &::after{
+        content: " ";
+        display: table;
+    }
+    &::after{
+        clear: both;
+    }
+}

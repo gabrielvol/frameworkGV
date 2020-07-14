@@ -1,0 +1,100 @@
+/* =============================================================================
+   Form Sizes Variables | Custom [var/form_sizes.scss]
+   ========================================================================== */
+/* // References ------------------------------------------------------------ */
+///-- Spacing
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Screen Sizes
+// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
+// B, A, O              = before, after, only
+
+///-- Colours
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fonts
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+/* // Form ------------------------------------------------------------------ */
+$form_width_MO:       270px!important;
+$form_width_A500:     400px!important;
+$form_width_600Only:  520px!important;
+$form_width_AT:       $form_width_600Only;
+$form_width_TO:       $form_width_AT;
+$form_width_ATL:      520px; //No debe llevar !important
+$form_width_AD:       $form_width_ATL; //No debe llevar !important
+
+
+/* // Labels ---------------------------------------------------------------- */
+$formLabel_width_MO:      $form_width_MO;
+$formLabel_width_BT:      $hundred;
+$formLabel_width_TO:      $form_width_TO;
+$formLabel_width_ATL:     $form_width_ATL;
+$formLabel_width_AD:      $form_width_AD;
+
+$formLabel_height_BT:     30px;
+$formLabel_height_TO:     $formLabel_height_BT;
+$formLabel_height_ATL:    25px;
+$formLabel_height_AD:     $formLabel_height_ATL;
+
+
+/* // Inputs ---------------------------------------------------------------- */
+$formInput_width_MO:      $formLabel_width_MO;
+$formInput_width_BT:      $formLabel_width_BT;
+$formInput_width_TO:      $formLabel_width_TO;
+$formInput_width_ATL:     $formLabel_width_ATL; //No debe llevar !important
+$formInput_width_AD:      $formLabel_width_AD; //No debe llevar !important
+
+$formInput_height_BT:     45px;
+$formInput_height_TO:     $formInput_height_BT;
+$formInput_height_ATL:    35px; //No debe llevar !important
+$formInput_height_AD:     $formInput_height_ATL; //No debe llevar !important
+
+
+/*___ Sug _______________________________*/
+/*___ Sug _______________________________*/
+   // Radio Inputs
+$formInput_radio_height_BT:  35px;
+$formInput_radio_height_TO:  35px;
+
+
+/* // Submit ---------------------------------------------------------------- */
+$formSubmit_width_MO:     90%;
+$formSubmit_width_MLO:    60%!important;
+$formSubmit_width_TO:     50%!important;
+$formSubmit_width_ATL:    300px;
+$formSubmit_width_AD:     $formSubmit_width_ATL;
+
+$formSubmit_height_BT:       50px;
+$formSubmit_lineHeight_BT:   $formSubmit_height_BT;
+
+$formSubmit_height_TO:       45px;
+$formSubmit_lineHeight_TO:   $formSubmit_height_TO;
+
+$formSubmit_height_ATL:      45px;
+$formSubmit_lineHeight_ATL:  $formSubmit_height_ATL;
+
+$formSubmit_height_AD:       $formSubmit_height_ATL;
+$formSubmit_lineHeight_AD:   $formSubmit_lineHeight_ATL;
+
+
+/* // Search ---------------------------------------------------------------- */
+$formInput_search_width_BT:         270px;
+$formInput_search_width_AT:         $formInput_search_width_BT;
+
+$formInput_search_height_BT:        30px;
+$formInput_search_height_AT:        $formInput_search_height_BT;
+
+$formInput_search_lineHeight_BT:    $formInput_search_height_BT;
+$formInput_search_lineHeight_AT:    $formInput_search_lineHeight_BT;
+
+$formInput_search_bgSize_BT:        $formInput_search_height_BT;
+$formInput_search_bgSize_AT:        $formInput_search_bgSize_BT;
+
+$formSubmit_search_width_BT:        $formInput_search_width_BT;
+$formSubmit_search_width_AT:        $formSubmit_search_width_BT;

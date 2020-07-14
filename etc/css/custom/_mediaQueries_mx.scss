@@ -1,71 +1,116 @@
 /* =============================================================================
    Media Queries Mixins | Custom [mediaQueries_mixins.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
-///-- Spacing
+
+/* // Descripcion ----------------------------------------------------------- */
+// Este archivo contiene los mixins para generar reglas-at `@media` que
+// incluyen dentro bloques de contenido con la regla-at `@content`.
+//
+// Las var que establecen los tamanos, o breakpoints, a los que el CSS
+// debe responder se encuentran en `[/settings/var/mediaQueries_var.scss]`.
+//
+// Los tamanos estan organizados como:
+// Mobile [hasta 499px]
+// Mobile Landscape [a partir de 500px]
+// Tablet [a partir de 767px]
+// Tablet Landscape [a partir de 1024px]
+// Desktop [a partir de 1200px]
+// Desktop Large [a partir de 1600px]
+//
+// Ademas hay mixins para media queries de
+// 600px, 650px, 700px, 800px, 850px, 900px y 950px
+//
+// Se pueden combinar con `before`, `after` y `only`, por ej.:
+// `beforeTablet` [hasta 766px]
+// `afterMobileLandscape` [desde 500px]
+// `tabletOnly` [entre 767px y 1023px]
+//
+// Los mixins `only` tienen como limite el mas cercano de los sig. valores
+// 766px, 1023px o 1199px
+
+
+
+/* // Referencias Globales de nombres de var y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
 // P, M                 = padding, margin
 // T, R, B, L           = top, right, bottom, left
 // H, V, A              = horizontal, vertical, all
 
-///-- Screen Sizes
-// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
-// B, A, O              = before, after, only
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
 
-///-- Colours
+///-- Colores
 // X, L, D              = extra, light, dark
 // De, S, B             = desaturated, semi, bright
 
-///-- Fonts
+///-- Fuentes
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
-
+    
 /* // Nav ------------------------------------------------------------------- */
 @mixin navBT{
-    @media (max-width: #{$nav_mediaQuerie_BT}){@content;}}
+    @media (max-width: #{$mq_nav_BT}){@content;}}
 @mixin navAT{
-    @media (min-width: #{$nav_mediaQuerie_AT}){@content;}}
+    @media (min-width: #{$mq_nav_AT}){@content;}}
     
     
 /* // Mobile ---------------------------------------------------------------- */
 @mixin mobileOnly{ // 499px
-    @media (max-width: #{$mq_mobile_width_max}){@content;}}
+    @media (max-width: #{$mq_mobile_ancho_max}){@content;}}
 
 @mixin afterMobileLandscape{ // 500px
-    @media (min-width: #{$mq_mobileLandscape_width_min}){@content;}}
+    @media (min-width: #{$mq_mobileLandscape_ancho_min}){@content;}}
     
-@mixin mobileLandscapeOnly{ // 500px 767px
-    @media (min-width: #{$mq_mobileLandscape_width_min})
-        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
+@mixin mobileLandscapeOnly{ // 500px 766px
+    @media (min-width: #{$mq_mobileLandscape_ancho_min})
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     
     
 /* // Tablet ---------------------------------------------------------------- */
-@mixin beforeTablet{ // 767px
-    @media (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
+@mixin beforeTablet{ // 766px
+    @media (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
 
-@mixin afterTablet{ // 768px
-    @media (min-width: #{$mq_tablet_width_min}){@content;}}
+@mixin afterTablet{ // 767px
+    @media (min-width: #{$mq_tablet_ancho_min}){@content;}}
     
-@mixin tabletOnly{ // 768px 1023px
-    @media (min-width: #{$mq_tablet_width_min})
-        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
+@mixin tabletOnly{ // 767px 1023px
+    @media (min-width: #{$mq_tablet_ancho_min})
+        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // Tablet Landscape ------------------------------------------------------ */
 @mixin beforeTabletLandscape{ // 1023px
-    @media (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
+    @media (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
 @mixin afterTabletLandscape{ // 1024px
-    @media (min-width: #{$mq_tabletLandscape_width_min}){@content;}}
+    @media (min-width: #{$mq_tabletLandscape_ancho_min}){@content;}}
     
 @mixin tabletLandscapeOnly{ // 1024px 1199px
-    @media (min-width: #{$mq_tabletLandscape_width_min})
-        and (max-width: #{$mq_tablet_width_max}){@content;}}
+    @media (min-width: #{$mq_tabletLandscape_ancho_min})
+        and (max-width: #{$mq_tablet_ancho_max}){@content;}}
 
-@mixin tabletAndTabletLandscapeOnly{ // 768px 1199px
-    @media (min-width: #{$mq_tablet_width_min})
-        and (max-width: #{$mq_tablet_width_max}){@content;}}
+@mixin tabletAndTabletLandscapeOnly{ // 767px 1199px
+    @media (min-width: #{$mq_tablet_ancho_min})
+        and (max-width: #{$mq_tablet_ancho_max}){@content;}}
     
     
 /* // 600px ----------------------------------------------------------------- */
@@ -75,9 +120,9 @@
 @mixin afterMobile600{
     @media (min-width: 601px){@content;}}
     
-@mixin mobile600Only{ // 767px
+@mixin mobile600Only{ // 766px
     @media (min-width: 601px)
-        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     
     
 /* // 650px ----------------------------------------------------------------- */
@@ -87,9 +132,9 @@
 @mixin afterMobile650{
     @media (min-width: 651px){@content;}}
     
-@mixin mobile650Only{ // 767px
+@mixin mobile650Only{ // 766px
     @media (min-width: 651px)
-        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     
     
 /* // 700px ----------------------------------------------------------------- */
@@ -99,9 +144,9 @@
 @mixin afterMobile700{
     @media (min-width: 701px){@content;}}
     
-@mixin mobile700Only{ // 767px
+@mixin mobile700Only{ // 766px
     @media (min-width: 701px)
-        and (max-width: #{$mq_mobileLandscape_width_max}){@content;}}
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     
     
 /* // 800px ----------------------------------------------------------------- */
@@ -113,7 +158,7 @@
     
 @mixin mobile800Only{ // 1023px
     @media (min-width: 801px)
-        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 850px ----------------------------------------------------------------- */
@@ -125,7 +170,7 @@
     
 @mixin mobile850Only{ // 1023px
     @media (min-width: 851px)
-        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 900px ----------------------------------------------------------------- */
@@ -137,7 +182,7 @@
     
 @mixin mobile900Only{ // 1023px
     @media (min-width: 901px)
-        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 950px ----------------------------------------------------------------- */
@@ -149,26 +194,21 @@
     
 @mixin mobile950Only{ // 1023px
     @media (min-width: 951px)
-        and (max-width: #{$mq_tabletPortrait_width_max}){@content;}}
+        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // Desktop --------------------------------------------------------------- */
 @mixin beforeDesktop{ // 1199px
-    @media (max-width: #{$mq_tablet_width_max}){@content;}}
+    @media (max-width: #{$mq_tablet_ancho_max}){@content;}}
     
 @mixin afterDesktop{ // 1200px
-    @media (min-width: #{$mq_desktop_width_min}){@content;}}
+    @media (min-width: #{$mq_desktop_ancho_min}){@content;}}
 
     
 /* // Desktop Large + ------------------------------------------------------- */
 @mixin afterDesktopLarge{ // 1600px
-    @media (min-width: #{$mq_desktopLarge_width_min}){@content;}}
-
+    @media (min-width: #{$mq_desktopLarge_ancho_min}){@content;}}
     
-    
-/* =============================================================================
-   iPhone & iPads Mixins | Custom [mixinsMediaQueries.scss]
-   ========================================================================== */
 
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */
 @mixin iPhone4Only{

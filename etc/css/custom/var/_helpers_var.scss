@@ -1,0 +1,23 @@
+/* =============================================================================
+   Spacing Helpers Variables | Custom [var/helpers.scss]
+   ========================================================================== */
+
+/* // Spacing --------------------------------------------------------------- */
+$helpers_spacing_PM_small:   5px!important;
+$helpers_spacing_PM_medium:  10px!important;
+$helpers_spacing_PM_large:   20px!important;
+ 
+$helpers_spacing_map:(
+    //Aquí se agregan los valores y clases para generar los spacing helpers,
+    //por cada nuevo valor (xl: 40px) se generará lo sig. para padding y margin:
+    //.mtxl, .mrxl, .mbxl, .mlxl, .mhxl, .mvxl, etc{margin-right: 40px}
+    
+    n: $zero,
+    s: $helpers_spacing_PM_small,
+    m: $helpers_spacing_PM_medium,
+    l: $helpers_spacing_PM_large
+);
+    
+    
+/* // Border Helpers Variables  --------------------------------------------- */
+$helpers_border_radius_global: 6px;

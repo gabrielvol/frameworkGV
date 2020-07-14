@@ -1,0 +1,37 @@
+/* =============================================================================
+   Header Height Variables | Custom [var/section_header_heights.scss]
+   ========================================================================== */
+// imported in _headerActivators.scss
+
+$header_height_MO:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_MO
+$header_height_PT_MO:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_MO, y asignar esa misma variable a esta
+
+$header_height_MLO:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_MLO
+$header_height_PT_MLO:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_MLO, y asignar esa misma variable a esta
+
+$header_PT_BT:              20px;
+$header_PB_BT:              15px;
+$header_height_navAcc_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$logo_height_BT_navAcc});
+$header_height_BT:          auto; //Si es auto hay que declarar 0 en la siguiente variable $header_PT_BT
+$header_height_PT_BT:       0; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_BT, y asignar esa misma variable a esta
+
+$header_height_AT:          90px; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_AT
+$header_height_PT_AT:       $header_height_AT; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_AT, y asignar esa misma variable a esta
+
+$header_height_ATL:         120px; //Si es auto hay que declarar 0 en la siguiente variable $header_height_PT_ATL
+$header_height_PT_ATL:      $header_height_ATL; //Si no es 0 hay que declarar el alto en la variable anterior $header_height_ATL, y asignar esa misma variable a esta    
+    
+    
+/* // Full heights Header --------------------------------------------------- */
+$header_height_ALL:    100px;
+$header_height_MO:     101px;
+$header_height_AML:    102px;
+$header_height_MLO:    103px;
+$header_height_BT:     104px;
+$header_height_AT:     105px;
+$header_height_TO:     106px;
+$header_height_BTL:    107px;
+$header_height_ATL:    108px;
+$header_height_TLO:    109px;
+$header_height_BD:     110px;
+$header_height_AD:     111px;
