@@ -16,6 +16,6 @@
     /* // E-mail addresses -------------------------------------------------- */
     $company_email_address_global   = $company_email_address_EMAILA;
     $company_email_mailto_global    = 'mailto:'. $company_email_address_global;
-  //$company_email_mailto_global_CC = 'mailto:'. $company_email_address_global .','. $company_email_address_EMAILB;
+//    $company_email_mailto_global_CC = 'mailto:'. $company_email_address_global .','. $company_email_address_EMAILB;
     $company_email_href_global      = 'href="'. $company_email_mailto_global .'"';
 ?>

@@ -19,8 +19,8 @@
     $company_fax_a                  = '2222';
     $company_fax_b                  = '3333';
     
-//  $company_tel_NOMBRE_a           = '1111';
-//  $company_tel_NOMBRE_b           = '2222';
+//    $company_tel_NOMBRE_a           = '1111';
+//    $company_tel_NOMBRE_b           = '2222';
     
     
     /* // Telephone number Main --------------------------------------------- */
@@ -33,7 +33,7 @@
         
     $company_tel_call_main          = 'tel:+'. $tel_prefix_call . $company_tel_main;
     $company_tel_call_href_main     = 'href="tel:+'. $tel_prefix_call . $company_tel_main .'"';
-    $company_tel_call_anchor_main        = '<a '. $company_tel_call_href_main .'>'. $company_tel_main .'</a>'; 
+    $company_tel_call_anchor_main   = '<a '. $company_tel_call_href_main .'>'. $company_tel_main .'</a>'; 
     
         
     /* // Telephone number Secondary ---------------------------------------- */
@@ -46,7 +46,7 @@
         
     $company_tel_call_sec           = 'tel:+'. $tel_prefix_call . $company_tel_sec;
     $company_tel_call_href_sec      = 'href="tel:+'. $tel_prefix_call . $company_tel_sec .'"';
-    $company_tel_call_anchor_sec         = '<a '. $company_tel_call_href_sec .'>'. $company_tel_sec .'</a>'; 
+    $company_tel_call_anchor_sec    = '<a '. $company_tel_call_href_sec .'>'. $company_tel_sec .'</a>'; 
     
     
     /* // Fax number  ------------------------------------------------------- */
@@ -55,20 +55,20 @@
         
     $company_tel_call_fax           = 'tel:+'. $tel_prefix_call . $company_tel_fax;
     $company_tel_call_href_fax      = 'href="tel:+'. $tel_prefix_call . $company_tel_fax .'"';
-    $company_tel_call_anchor_fax         = '<a '. $company_tel_call_href_fax .'>'. $company_tel_fax .'</a>'; 
+    $company_tel_call_anchor_fax    = '<a '. $company_tel_call_href_fax .'>'. $company_tel_fax .'</a>'; 
     
     
     /* // Telephone number NOMBRE ------------------------------------------- */
-//  $company_tel_NOMBRE               = $company_tel_NOMBRE_a . $company_tel_NOMBRE_b;
-//  $company_tel_NOMBRE_formatted     = $tel_prefix_formatted .' '. $company_tel_NOMBRE_a .'-'. $company_tel_NOMBRE_b;
+//    $company_tel_NOMBRE               = $company_tel_NOMBRE_a . $company_tel_NOMBRE_b;
+//    $company_tel_NOMBRE_formatted     = $tel_prefix_formatted .' '. $company_tel_NOMBRE_a .'-'. $company_tel_NOMBRE_b;
     
-//  $company_tel_NOMBRE_whatsapp      = $tel_prefix_whatsapp . $company_tel_NOMBRE;
-//  $company_whatsapp_NOMBRE_chatOpen = 'https://api.whatsapp.com/send?phone='. $company_tel_NOMBRE_whatsapp;
-//  $company_whatsapp_NOMBRE_WAme     = 'https://wa.me/'. $company_tel_NOMBRE_whatsapp .'?text=I’m%20interested%20in%20your%20car%20for%20sale';
+//    $company_tel_NOMBRE_whatsapp      = $tel_prefix_whatsapp . $company_tel_NOMBRE;
+//    $company_whatsapp_NOMBRE_chatOpen = 'https://api.whatsapp.com/send?phone='. $company_tel_NOMBRE_whatsapp;
+//    $company_whatsapp_NOMBRE_WAme     = 'https://wa.me/'. $company_tel_NOMBRE_whatsapp .'?text=I’m%20interested%20in%20your%20car%20for%20sale';
         
-//  $company_tel_call_NOMBRE          = 'tel:+'. $tel_prefix_call . $company_tel_NOMBRE;
-//  $company_tel_call_href_NOMBRE     = 'href="tel:+'. $tel_prefix_call . $company_tel_NOMBRE .'"';
-//  $company_tel_call_anchor_NOMBRE        = '<a '. $company_tel_call_href_NOMBRE .'>'. $company_tel_NOMBRE .'</a>'; 
+//    $company_tel_call_NOMBRE          = 'tel:+'. $tel_prefix_call . $company_tel_NOMBRE;
+//    $company_tel_call_href_NOMBRE     = 'href="tel:+'. $tel_prefix_call . $company_tel_NOMBRE .'"';
+//    $company_tel_call_anchor_NOMBRE   = '<a '. $company_tel_call_href_NOMBRE .'>'. $company_tel_NOMBRE .'</a>'; 
     
     
     /* // Miscelaneous ------------------------------------------------------ */ 
