@@ -23,24 +23,22 @@
 
 
 .shadow_text{
-    text-shadow: $text_shadow_main;
+    text-shadow: $txShadow_main;
 }
 
 .shadow_text_white{
-    text-shadow: $text_shadow_white;
+    text-shadow: $txShadow_ftColour_white;
 }
 
 .shadow_box{
-    box-shadow: $box_shadow_main;
+    box-shadow: $txShadow_main;
 } 
 
 .shadow_box_inset{
-    box-shadow: $box_shadow_main_inset;
+    box-shadow: $bxShadow_main_inset;
 }
 
 /* // Background Shadows ---------------------------------------------------- */
-$bgShadowT_img_url: url('/nuevo/img/bg_shadowT.png');
-$bgShadowB_img_url: url('/nuevo/img/bg_shadowB.png');
 
 .bgShadowT,
 .bgShadowB,

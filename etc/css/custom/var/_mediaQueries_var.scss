@@ -7,7 +7,24 @@
 // Estas var se usan en `[/custom/mediaQueries_mx.scss]`.
 
 
-/* // Referencias Globales de nombres de var y mixins ----------------- */
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
 ///-- Espaciado
 // P, M                 = padding, margin
 // T, R, B, L           = top, right, bottom, left

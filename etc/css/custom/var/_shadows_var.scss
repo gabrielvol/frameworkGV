@@ -1,10 +1,15 @@
 /* =============================================================================
    Shadows Variables | Custom [var/shadows.scss]
    ========================================================================== */
-$text_shadow_main:              0 0 3px $black;
-$text_shadow_white:             0 0 3px $white;
-$text_shadow_white_hover:   0 0 3px $black;
+$bgShadowT_img_url: url('/nuevo/img/bg_shadowT.png');
+$bgShadowB_img_url: url('/nuevo/img/bg_shadowB.png');
 
-$box_shadow_main:               0 0 10px 0 $greyXD;
-$box_shadow_main_inset:         inset $box_shadow_main;
-$box_shadow_video:              $box_shadow_main;
+$txShadow_main:                     0 0 3px $black;
+$txShadow_ftColour_white:           0 0 3px $white;
+$txShadow_ftColour_white_hover:     0 0 3px $black;
+
+$txShadow_main:                     0 0 10px 0 $greyXD;
+$bxShadow_main_inset:               inset $txShadow_main;
+
+$video_bxShadow:                    $txShadow_main;
+$header_fixed_bxShadow:             0 0 10px 0 $greyL;

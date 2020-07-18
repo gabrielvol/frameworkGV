@@ -104,12 +104,14 @@
 
 
 
-/* // Referencias Globales de nombres de var y mixins ----------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 ///-- Inicio del nombre
 // bd                   = borde
-// bg                   = background / fondo
+// bg                   = fondo / background
 // bx                   = box
-// ft                   = fuente, texto
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
 
 ///-- Fin del nombre
 // _mx                  = mixin
@@ -125,8 +127,8 @@
 // H, V, A              = horizontal, vertical, all
 
 ///-- Tamanos de Pantalla
-// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
-// B, A, O              = before, after, only
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark

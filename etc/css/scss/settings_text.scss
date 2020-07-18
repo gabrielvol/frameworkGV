@@ -130,7 +130,7 @@ a.white{
         color: $white;
     }
     &:focus, &:hover{
-        text-shadow: $text_shadow_white_hover;
+        text-shadow: $txShadow_ftColour_white_hover;
     }
     &.noHover{
         &:focus, &:hover{        

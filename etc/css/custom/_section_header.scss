@@ -4,6 +4,16 @@
 #header{
 //  position: relative;
 //  z-index: $zIndex_header;
+    height: $header_height_ALL;
+        
+    @if $header_fixed_act_ALL == "on"{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: $header_height_MO;
+        box-shadow: $header_fixed_bxShadow;
+    }
     
     @if $fullHeight_index_act_ALL == "on" or $fullHeight_sections_act_ALL == "on"{
         height: $header_height_ALL;
@@ -40,7 +50,7 @@
             right: 0;
             left: 0;
             height: $header_height_MO;
-            box-shadow: 0 0 10px 0 #ccc;
+            box-shadow: $header_fixed_bxShadow;
         }
 
         .logoH{
@@ -59,7 +69,7 @@
             right: 0;
             left: 0;
             height: $header_height_AML;
-            box-shadow: 0 0 10px 0 #ccc;
+            box-shadow: $header_fixed_bxShadow;
         }
         
         .logoH{
@@ -78,7 +88,7 @@
             right: 0;
             left: 0;
             height: $header_height_MLO;
-            box-shadow: 0 0 10px 0 #ccc;
+            box-shadow: $header_fixed_bxShadow;
         }
         
         .logoH{
@@ -109,7 +119,7 @@
         
         @if $header_fixed_act_BT == "on"{
             height: $header_height_BT;
-            box-shadow: 0 0 10px 0 #ccc;
+            box-shadow: $header_fixed_bxShadow;
         }   
             
         @if $logo_bg_beforeImg_act == "on"{
@@ -121,7 +131,7 @@
         
         @if $navAcc_act == "on"{
             height: $header_height_navAcc_BT;
-            box-shadow: 0 0 10px #ccc;
+            box-shadow: 0 0 10px $greyL;
             
             .logoH{
                 height: $logo_height_BT_navAcc;
@@ -198,7 +208,7 @@
             right: 0;
             left: 0;
             height: $header_height_AT;
-            box-shadow: 0 0 10px 0 #ccc;
+            box-shadow: $header_fixed_bxShadow;
         
             &.topperShadow{
                 box-shadow: 0 0 7px $black;

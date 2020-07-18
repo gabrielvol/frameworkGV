@@ -29,7 +29,7 @@
     
     @include mobileOnly{
         @if $header_fixed_act_MO == "on"{
-            padding-top: $header_height_PT_MO;
+            padding-top: $page_PT_MO;
         }  
         
         section{
@@ -41,7 +41,7 @@
     
     @include afterMobileLandscape{
         @if $header_fixed_act_AML == "on"{
-            padding-top: $header_height_PT_AML;
+            padding-top: $page_PT_AML;
         }    
         
         section{
@@ -53,7 +53,7 @@
     
     @include mobileLandscapeOnly{
         @if $header_fixed_act_MLO == "on"{
-            padding-top: $header_height_PT_MLO;
+            padding-top: $page_PT_MLO;
         }    
         
         section{
@@ -68,7 +68,7 @@
             padding-top: $header_height_navAcc_BT;
         }
         @if $header_fixed_act_BT == "on"{
-            padding-top: $header_height_PT_BT;
+            padding-top: $page_PT_BT;
         }
         
         section{
@@ -80,7 +80,7 @@
     
     @include afterTablet{
         @if $header_fixed_act_AT == "on"{
-            padding-top: $header_height_PT_AT;
+            padding-top: $page_PT_AT;
         }
         
         @if $nav_topper_act == "on"{
@@ -112,7 +112,7 @@
     
     @include afterTabletLandscape{
         @if $header_fixed_act_ATL == "on"{
-            padding-top: $header_height_PT_ATL;
+            padding-top: $page_PT_ATL;
         }
         
         section{

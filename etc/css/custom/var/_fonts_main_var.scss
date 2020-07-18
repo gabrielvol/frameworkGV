@@ -1,38 +1,75 @@
 /* =============================================================================
-   Fonts Main Variables | Custom [var/fonts_main.scss]
+   Fonts Main Variables | Custom [var/fonts_main_var.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
-///-- Spacing
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de asignacion de variables de fuentes.
+// Contiene mapas de fuentes y espaciado general de texto.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
 // P, M                 = padding, margin
 // T, R, B, L           = top, right, bottom, left
 // H, V, A              = horizontal, vertical, all
 
-///-- Screen Sizes
-// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
-// B, A, O              = before, after, only
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
 
-///-- Colours
+///-- Colores
 // X, L, D              = extra, light, dark
 // De, S, B             = desaturated, semi, bright
 
-///-- Fonts
+///-- Fuentes
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
-///**Custom Font Families:**
-    ///Aquí se agregan las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-family: MainFont-file;}`, con el mixin **fontFamilyCustomClassesGenerator**.
+
+// Este mapa se usa con el mixin `fontFamilyCustomClassesGenerator` que se
+// encuentra en `[/scss/mixins_fonts.scss]`, genera una clase por cada fuente.
+// Ej. 
+// .timesNewRoman { font-family: "Times New Roman"; }
+//
+// También se usa para asignar valor a la variable de cada fuente.
+// Ej.
+// font-family: $timesNewRoman;
+//
 $fontFamilies_map:(
     arial:          Arial,
     roboto:         Roboto,
-//  timesNewRoman:  'Times New Roman'
+//    timesNewRoman:  'Times New Roman'
 );
 
-    ///Aquí se agregan los valores para los pesos de las fuentes usadas en el sitio, de este mapa se creará una clase por cada fuente, eg. `.mainFontName{font-weight: 400;}`, con el mixin **fontFamilyWeightsGenerator**.
+
+// Este mapa se usa con el mixin `fontFamilyWeightsGenerator` que se
+// encuentra en `[/scss/mixins_fonts.scss]`, genera una clase por cada fuente.
+// Ej. 
+// .timesNewRomanM { font-weight: 500; }
+// .timesNewRomanB { font-weight: 700; }
+//
 $fontWeights_map:(
-//  ralewayM:       500,
-//  ralewaySB:      600,
-//  ralewayXB:      800
+//    ralewayM:       500,
+//    ralewaySB:      600,
+//    ralewayXB:      800
 );
 
 
@@ -41,11 +78,11 @@ $arial:     map-get($fontFamilies_map, arial);
 $roboto:    map-get($fontFamilies_map, roboto);
 //$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
 
-//$openSansL:   map-get($fontFamilies_map_OpenSans, openSansL);
-//$openSans:    map-get($fontFamilies_map_OpenSans, openSans);
-//$openSansI:   map-get($fontFamilies_map_OpenSans, openSansI);
-//$openSansB:   map-get($fontFamilies_map_OpenSans, openSansB);
-//$openSansBI:  map-get($fontFamilies_map_OpenSans, openSansBI);
+//$openSansL:   map-get($fontFamily_openSans_map, openSansL);
+//$openSans:    map-get($fontFamily_openSans_map, openSans);
+//$openSansI:   map-get($fontFamily_openSans_map, openSansI);
+//$openSansB:   map-get($fontFamily_openSans_map, openSansB);
+//$openSansBI:  map-get($fontFamily_openSans_map, openSansBI);
 
 /*___ Creamos la variable de la fuente principal del sitio _*/
 $fontFamily_main_global:    $arial;
@@ -58,20 +95,23 @@ $fontStack_map:(
 //
 ///-- Primero la fuente principal
     $fontFamily_main_global,
-///-- En segundo lugar siguen las fuentes Arial, Roboto y Times New Roman, si
-///-- alguna está asignada a la variabla `$ftFamilia_global` debe estar
-///-- comentada a continuacion.
+///-- En segundo lugar siguen las fuentes Arial, Roboto y Times New Roman,
+///-- si alguna esta asignada a la variable `$ftFamilia_global`, la misma debe
+///-- estar comentada a continuacion. 
     $arial, 
     $roboto,
 //    $timesNewRoman,
 //
 ///-- Luego de establecer las fuentes principales se elige uno de los sets para
-///-- el fallback
-    $fontFamilies_list_sans // Si se activa este set hay que comentar $timesNewRoman
-//    $fontFamilies_list_serif // Si se activa este set hay que comentar $arial y $roboto
-//    $fontFamilies_list_monospaced // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
+///-- el fallback.
+///-- Estas listas se encuentran detalladas en `[/scss/var_fonts.scss]`.
+    $fontFamilies_sans_list // Si se activa este set hay que comentar $timesNewRoman
+//    $fontFamilies_serif_list // Si se activa este set hay que comentar $arial y $roboto
+//    $fontFamilies_monospaced_list // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
 );
 
+
+/* // Espaciado general de texto -------------------------------------------- */
 $fontWeight_global: 400;
 $lineHeight_global: 1.4;
 
