@@ -22,9 +22,57 @@
         }
     }
 
+    .social_em{ // Soc Correo Electrónico
+        a{
+            background-image: url('/nuevo/img/social_em.svg');
+        }
+    }
+
+    .social_go{ // Soc Guía Oleo
+        a{
+            background-image: url('/nuevo/img/social_go.svg');
+        }
+    }
+
+    .social_ig{ // Soc Instagram
+        a{
+            background-image: url('/nuevo/img/social_ig.svg');
+        }
+    }
+
+    .social_li{ // Soc LinkedIn
+        a{
+            background-image: url('/nuevo/img/social_li.svg');
+        }
+    }
+
+    .social_pi{ // Soc Pinterest
+        a{
+            background-image: url('/nuevo/img/social_pi.svg');
+        }
+    }
+
+    .social_sc{ // Soc SnapChat
+        a{
+            background-image: url('/nuevo/img/social_sc.svg');
+        }
+    }
+
     .social_sk{ // Soc Skype
         a{
             background-image: url('/nuevo/img/social_sk.svg');
+        }
+    }
+    
+    .social_sp{ // Soc Spotify
+        a{
+            background-image: url('/nuevo/img/social_sp.svg');
+        }
+    }
+
+    .social_ta{ // Soc TripAdvisor
+        a{
+            background-image: url('/nuevo/img/social_ta.svg');
         }
     }
     
@@ -40,42 +88,6 @@
         }
     }  
 
-    .social_ig{ // Soc Instagram
-        a{
-            background-image: url('/nuevo/img/social_ig.svg');
-        }
-    }
-
-    .social_pi{ // Soc Pinterest
-        a{
-            background-image: url('/nuevo/img/social_pi.svg');
-        }
-    }
-
-    .social_yt{ // Soc YouTube
-        a{
-            background-image: url('/nuevo/img/social_yt.svg');
-        }
-    }
-
-    .social_li{ // Soc LinkedIn
-        a{
-            background-image: url('/nuevo/img/social_li.svg');
-        }
-    }
-    
-    .social_sp{ // Soc Spotify
-        a{
-            background-image: url('/nuevo/img/social_sp.svg');
-        }
-    }
-
-    .social_sc{ // Soc SnapChat
-        a{
-            background-image: url('/nuevo/img/social_sc.svg');
-        }
-    }
-
     .social_wa{ // Soc WhatsApp
         a{
             background-image: url('/nuevo/img/social_wa.svg');
@@ -88,21 +100,9 @@
         }
     }
 
-    .social_em{ // Soc Correo Electrónico
+    .social_yt{ // Soc YouTube
         a{
-            background-image: url('/nuevo/img/social_em.svg');
-        }
-    }
-
-    .social_ta{ // Soc TripAdvisor
-        a{
-            background-image: url('/nuevo/img/social_ta.svg');
-        }
-    }
-
-    .social_go{ // Soc Guía Oleo
-        a{
-            background-image: url('/nuevo/img/social_go.svg');
+            background-image: url('/nuevo/img/social_yt.svg');
         }
     }
     

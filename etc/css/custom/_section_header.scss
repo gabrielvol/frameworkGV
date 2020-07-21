@@ -29,8 +29,8 @@
         img{}
     }
     
-    @if $logo_bg_beforeImg_act == "on"{
-        .logoBefore{
+    @if $logo_bgImage_before_act == "on"{
+        .logo_before{
             position: relative;        
             background-image: url('/nuevo/img/logo_bg.png');
             background-repeat: no-repeat;
@@ -122,7 +122,7 @@
             box-shadow: $header_fixed_bxShadow;
         }   
             
-        @if $logo_bg_beforeImg_act == "on"{
+        @if $logo_bgImage_before_act == "on"{
             .logoH{
                 width: $logo_width_BT;
                 height: $logo_height_BT_before;
@@ -176,7 +176,7 @@
                     padding-bottom: $logo_clicked_height_PB;
                     margin: 0;
 
-                    .logoBefore,
+                    .logo_before,
                     a,
                     img{
                         width: auto;
@@ -188,7 +188,7 @@
                         margin-left: auto;
                     } 
                     
-                    .logoBefore{
+                    .logo_before{
                         background: none;
                     }
                 }
@@ -241,7 +241,7 @@
                 padding-left: 20px;             
             }
             
-            @if $logo_bg_beforeImg_act == "on"{
+            @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
                     width: $logo_width_AT;
@@ -289,7 +289,7 @@
         }
         
         .logoH{
-            @if $logo_bg_beforeImg_act == "on"{
+            @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
                     width: $logo_width_ATL;
@@ -308,7 +308,7 @@
         }   
         
         .logoH{
-            @if $logo_bg_beforeImg_act == "on"{
+            @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
                     width: $logo_width_AD;

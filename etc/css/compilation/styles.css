@@ -121,7 +121,7 @@
    Text Variables | Custom [var/text.scss]
    ========================================================================== */
 /* =============================================================================
-   Language Activators | Custom [activator/language_act.scss]
+   Language Activators | Custom [act/language_act.scss]
    ========================================================================== */
 /* // Flags ----------------------------------------------------------------- */
 /* =============================================================================
@@ -729,13 +729,13 @@ a.greenSystem, a.greenSystem:active, a.greenSystem:visited, a.greenSystem.noHove
 a.greenSystem:focus, a.greenSystem:hover {
   color: #113300; }
 
-.greyXXL, .greyXXL b, .greyXXL strong, .greyXXL i, .greyXXL em {
+.grey2XL, .grey2XL b, .grey2XL strong, .grey2XL i, .grey2XL em {
   color: #e6e6e6; }
 
-a.greyXXL, a.greyXXL:active, a.greyXXL:visited, a.greyXXL.noHover:focus, a.greyXXL.noHover:hover {
+a.grey2XL, a.grey2XL:active, a.grey2XL:visited, a.grey2XL.noHover:focus, a.grey2XL.noHover:hover {
   color: #e6e6e6; }
 
-a.greyXXL:focus, a.greyXXL:hover {
+a.grey2XL:focus, a.grey2XL:hover {
   color: #b3b3b3; }
 
 .greyXL, .greyXL b, .greyXL strong, .greyXL i, .greyXL em {
@@ -924,7 +924,7 @@ b, strong,
 .bgGreenSystem {
   background-color: #339900; }
 
-.bgGreyXXL {
+.bgGrey2XL {
   background-color: #e6e6e6; }
 
 .bgGreyXL {
@@ -2157,7 +2157,7 @@ article, article::before, article::after, details, details::before, details::aft
       padding-top: 50px;
       padding-bottom: 10px;
       margin: 0; }
-      #header .logoH.clicked .logoBefore,
+      #header .logoH.clicked .logo_before,
       #header .logoH.clicked a,
       #header .logoH.clicked img {
         width: auto;
@@ -2165,7 +2165,7 @@ article, article::before, article::after, details, details::before, details::aft
       #header .logoH.clicked img {
         margin-right: auto;
         margin-left: auto; }
-      #header .logoH.clicked .logoBefore {
+      #header .logoH.clicked .logo_before {
         background: none; } }
 
 @media (min-width: 767px) {

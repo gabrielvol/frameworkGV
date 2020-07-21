@@ -29,7 +29,7 @@ $backgroundColours_map:(
     Black:          $black,
   
 //  GreenSystem3XL: $greenSystem3XL,
-//  GreenSystemXXL: $greenSystemXXL,
+//  GreenSystem2XL: $greenSystem2XL,
 //  GreenSystemXL:  $greenSystemXL,
 //  GreenSystemL:   $greenSystemL,
 //  GreenSystem:    $greenSystem,
@@ -37,7 +37,7 @@ $backgroundColours_map:(
     
 //  Grey4XL:        $grey4XL,
 //  Grey3XL:        $grey3XL,
-    GreyXXL:        $greyXXL,
+    Grey2XL:        $grey2XL,
     GreyXL:         $greyXL,
     GreyL:          $greyL,
     Grey:           $grey,
@@ -56,14 +56,14 @@ $bgBlack:           map-get($backgroundColours_map, Black);
 //$bgRedColour:       map-get($backgroundColours_map, RedColour);
 
 //$bgGreenSystem3XL:  map-get($backgroundColours_map, GreenSystem3XL);
-//$bgGreenSystemXXL:  map-get($backgroundColours_map, GreenSystemXXL);
+//$bgGreenSystem2XL:  map-get($backgroundColours_map, GreenSystem2XL);
 //$bgGreenSystemXL:   map-get($backgroundColours_map, GreenSystemXL);
 //$bgGreenSystemL:    map-get($backgroundColours_map, GreenSystemL);
 $bgGreenSystem:     map-get($backgroundColours_map, GreenSystem);
 
 //$bgGrey4XL:         map-get($backgroundColours_map, Grey4XL);
 //$bgGrey3XL:         map-get($backgroundColours_map, Grey3XL);
-$bgGreyXXL:         map-get($backgroundColours_map, GreyXXL);
+$bgGrey2XL:         map-get($backgroundColours_map, Grey2XL);
 $bgGreyXL:          map-get($backgroundColours_map, GreyXL);
 $bgGreyL:           map-get($backgroundColours_map, GreyL);
 $bgGrey:            map-get($backgroundColours_map, Grey);

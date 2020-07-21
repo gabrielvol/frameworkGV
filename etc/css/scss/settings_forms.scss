@@ -380,10 +380,6 @@ form{
             @include afterDesktop{
                 @include equalHeightAndLineHeight($formLabel_height_AD);
             }
-
-            @if $formLabel_visible_act == "off"{
-                display: $none;
-            }
         }
 
         @media all and (-ms-high-contrast:none){
