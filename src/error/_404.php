@@ -6,8 +6,8 @@
        
     $nav_pageCurrent    = 0;
        
-    $site_title         = "Error | ". $company_name_title;
-//  $site_title_GB      = "Error | ". $company_name_title;
+    $site_title         = "Error | ". $site_name_title;
+//  $site_title_GB      = "Error | ". $site_name_title;
        
     $site_desc          = $site_desc_global;
 //  $site_desc_GB       = $site_desc_global_GB;

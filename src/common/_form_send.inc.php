@@ -23,7 +23,7 @@
     
     $formStatus_MSG_error_globalA__formName   = _('Hubo un error al enviar el mensaje.');
     $formStatus_MSG_error_globalB__formName   = _('Intente nuevamente m&aacute;s tarde.');
-    $formStatus_MSG_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_contacto_recipient_pop_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_contacto_recipient_pop .'</a>.';
+    $formStatus_MSG_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_recipient_pop_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_recipient_pop .'</a>.';
     
     //--------------------------------------------------------------------------
     // Status ini
@@ -33,7 +33,7 @@
     //--------------------------------------------------------------------------
     // Inicia proceso de form
     if (isset($_POST['enviarForm__formName'])){
-        //ini_set('sendmail_from', $form_contacto_recipient);
+        //ini_set('sendmail_from', $form_recipient);
         //ini_set('SMTP','mail.'. $domain_global);
 
         // Asignamos datos de campos a variables
@@ -74,7 +74,7 @@
         $data_mensaje__formName         = $_POST['data_mensaje__formName'];
 
         // Cabeceras del correo
-        $formMail_recipient  = $form_contacto_recipient;
+        $formMail_recipient  = $form_recipient;
         // $formMail_recipient  = $data_area__formName;
         $formMail_asunto   = "Contacto Web de ". $data_nombre__formName ." - ". $data_empresa__formName;
         $formMail_headers  = "From: $data_nombre__formName <$data_email__formName>\r\n";
@@ -82,8 +82,8 @@
         $formMail_headers .= "Content-type: text/html\r\n";
         $formMail_headers .= "X-Mailer: PHP5\n";
         $formMail_headers .= 'MIME-Version: 1.0' . "\n";
-        //$formMail_headers .= "CC: ". $form_contacto_recipient_CC ."\r\n";
-        //$formMail_headers .= "BCC: ". $form_contacto_recipient_BCC ."\r\n";
+        //$formMail_headers .= "CC: ". $form_recipient_CC ."\r\n";
+        //$formMail_headers .= "BCC: ". $form_recipient_BCC ."\r\n";
         $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $url_contacto_full .'</small><br /><br />';
         $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formName ."<br />";
         $formMail_texto .= "<strong>Apellido:</strong> ". $data_apellido__formName ."<br />";

@@ -5,6 +5,8 @@
     background-color: $slider_bgColour;
     
     img{
+        display: block;
+        width: 100%;
         background-color: $slider_img_bgColour;
     }
     

@@ -6,8 +6,8 @@
     
     $nav_pageCurrent    = 0;
     
-    $site_title         = $company_name_full;
-//  $site_title_GB      = $company_name_full;
+    $site_title         = $site_name_full;
+//  $site_title_GB      = $site_name_full;
     
     $site_desc          = $site_desc_global;
 //  $site_desc_GB       = $site_desc_global_GB;

@@ -73,9 +73,9 @@ $bgGreyXXD:         map-get($backgroundColours_map, GreyXXD);
 //$bgGrey3XD:         map-get($backgroundColours_map, Grey3XD);
 
 /*___ Declaramos las var para colores de fondo _*/
-$bgColour_body:                     $bgWhite;    
-$bgColour_main_global:              $bgGrey;
-$img_bgColour_global:        $bgGreyL;
+$bgColour_body:        $bgWhite;    
+$bgColour_main_global: $bgGrey;
+$img_bgColour_global:  $bgGreyL;
 
 ///**Background Colours Hover Map:** 
     ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/mixins_colours.scss]`.
@@ -87,7 +87,7 @@ $backgroundColours_hover_map:(
 //$bgBlue_hover: map-get($backgroundColours_hover_map, bgBlue);
 
 
-/* // Modal Opacity Variables  ---------------------------------------------- */
+/* // Modal Opacity Variables ----------------------------------------------- */
    // El valor de la opacidad debe ser de dos cifras ej. "20", "75" ó "100"
 $modal_opacity_global:      85;
 $modal_bgColour_global:     $bgBlack;

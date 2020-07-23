@@ -13,40 +13,40 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">                
         <ol id="slickWithNav" class="slickWithNav mask horizontal clearfix fullWidth">
-            <li><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/04.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/05.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/06.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/07.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/08.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/09.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/10.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/11.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/12.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/13.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/14.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/15.jpg" alt="" class="displayBlock fullWidth"></li>
-            <li><img src="/nuevo/img/coleccion/corvetteC3/16.jpg" alt="" class="displayBlock fullWidth"></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/04.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/05.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/06.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/07.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/08.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/09.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/10.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/11.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/12.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/13.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/14.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/15.jpg" alt=""></li>
+            <li><img src="/nuevo/img/coleccion/corvetteC3/16.jpg" alt=""></li>
         </ol>
-        <ol id="slickNav" class="slickNav mask horizontal clearfix fullWidth borderBox bgGreyXXL ptm" role="group" aria-owns="slickWithNav" aria-controls="slickWithNav">
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt="Ver fotografía número uno." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt="Ver fotografía número dos." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt="Ver fotografía número tres." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/04.jpg" alt="Ver fotografía número cuatro." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/05.jpg" alt="Ver fotografía número cinco." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/06.jpg" alt="Ver fotografía número seis." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/07.jpg" alt="Ver fotografía número siete." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/08.jpg" alt="Ver fotografía número ocho." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/09.jpg" alt="Ver fotografía número nueve." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/10.jpg" alt="Ver fotografía número diez." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/11.jpg" alt="Ver fotografía número once." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/12.jpg" alt="Ver fotografía número doce." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/13.jpg" alt="Ver fotografía número trece." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/14.jpg" alt="Ver fotografía número catorce." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/15.jpg" alt="Ver fotografía número quince." class="displayBlock fullWidth"></li>
-            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/16.jpg" alt="Ver fotografía número diecicéis." class="displayBlock fullWidth"></li>
+        <ol id="slickNav" class="slickNav mask horizontal clearfix borderBox " role="group" aria-owns="slickWithNav" aria-controls="slickWithNav">
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt="."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt="dos."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt="tres."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/04.jpg" alt="cuatro."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/05.jpg" alt="cinco."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/06.jpg" alt="seis."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/07.jpg" alt="siete."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/08.jpg" alt="ocho."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/09.jpg" alt="nueve."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/10.jpg" alt="diez."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/11.jpg" alt="once."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/12.jpg" alt="doce."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/13.jpg" alt="trece."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/14.jpg" alt="catorce."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/15.jpg" alt="quince."></li>
+            <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/16.jpg" alt="diecicéis."></li>
         </ol>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>

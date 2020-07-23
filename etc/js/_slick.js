@@ -6,8 +6,7 @@ $(document).ready(function () {
         
         ,dots: true
         ,arrows: false
-        // Si se ve más de un slide a la vez fade debe ser false.
-        ,fade: true
+        ,fade: true // Si se ve mas de un slide a la vez fade debe ser false.
         
         ,pauseOnHover: false
         ,pauseOnFocus: false
@@ -19,12 +18,8 @@ $(document).ready(function () {
         ,lazyLoad: 'ondemand'
 
         ,autoplay: true
-        
-        // Delay before transition
-        ,autoplaySpeed: 5000
-        
-        // Transition speed
-        ,speed: 500
+        ,autoplaySpeed: 5000 // Delay before transition
+        ,speed: 500 // Transition speed
 
         ,centerMode: true
         ,centerPadding: '60px'
@@ -58,7 +53,8 @@ $(document).ready(function () {
         ]
     });
     
-    // Slick slider que se detiene
+    
+/* // Slick Slider que se detiene ------------------------------------------- */
     var item_length = $('.slickFade > li').length - 1;
     var slider = $('.slickFade').slick({
         infinite: false,
@@ -77,8 +73,9 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         speed: 500
     });
-
-        // On before slide change
+    
+    
+/* // On before slide change ------------------------------------------------ */
     slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
         //check the length of total items in .slide container
         //if that number is the same with the number of the last slider

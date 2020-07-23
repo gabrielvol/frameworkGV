@@ -1,12 +1,12 @@
 <ul class="social unstyled displayFlex">
     <li class="social_em">
-        <a <?php echo $company_email_href_EMAILA ?> class="displayBlock hoverGrowL indentedText">
+        <a <?php echo $site_email_href_EMAILA ?> class="displayBlock hoverGrowL indentedText">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>.
             <img src="/nuevo/img/social_em.svg" class="displayBlock" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>
     </li>
     <li class="social_em">
-        <a <?php echo $company_email_href_global ?> class="displayBlock"><?php echo $company_email_address_global ?></a>
+        <a <?php echo $site_email_href_global ?> class="displayBlock"><?php echo $site_email_address_global ?></a>
     </li>
     <li class="social_fb">
         <a href="<?php echo $social_facebook_url ?>" class="displayBlock hoverGrowL indentedText">
@@ -75,9 +75,9 @@
         </a>
     </li>
     <li class="social_wa">
-        <a href="<?php echo $company_whatsapp_chatOpen ?>" class="conTel displayBlock">11 0000 2222</a> 
+        <a href="<?php echo $site_whatsapp_chatOpen_global ?>" class="conTel displayBlock">11 0000 2222</a> 
         
-        <a href="<?php echo $company_whatsapp_chatOpen ?>" class="displayBlock hoverGrowL indentedText">
+        <a href="<?php echo $site_whatsapp_chatOpen_global ?>" class="displayBlock hoverGrowL indentedText">
             <?php echo _("Nuestro contacto en WhatsApp"); ?>.
             <img src="/nuevo/img/social_wa.svg" class="displayBlock" alt="<?php echo _('Nuestro contacto en WhatsApp'); ?>.">
         </a>

@@ -3,7 +3,7 @@
         <?php echo _("Inicio"); ?>
     </a>
 </li>
-<li class="<?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
+<li class="item_contacto <?php if($nav_pageCurrent == 1) { echo 'current'; } ?>">
     <a <?php echo $href_xxx ?> class="borderBox" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?>
     </a>

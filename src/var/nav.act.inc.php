@@ -1,5 +1,5 @@
 <?php
     /* // Navigation activators --------------------------------------------- */
-    $navDrawer_act      = 1;
-    $navAccordion_act   = 0;
+    $nav_drawer_act      = 1;
+    $nav_accordion_act   = 0;
 ?>

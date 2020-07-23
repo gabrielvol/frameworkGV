@@ -7,8 +7,8 @@
     
     $nav_pageCurrent    = 0;
     
-    $site_title         = "Contacto | ". $company_name_title;
-//  $site_title_GB      = "Contact | ". $company_name_title;
+    $site_title         = "Contacto | ". $site_name_title;
+//  $site_title_GB      = "Contact | ". $site_name_title;
     
     $site_desc          = $site_desc_global;
 //  $site_desc_GB       = $site_desc_global_GB;
@@ -371,8 +371,8 @@
                     <span class="labelName"><?php echo _('&Aacute;rea a contactar'); ?></span>
                     <select id="data_area__formName" name="data_area__formName" class="area <?php echo $formInput_error_class_data_area__formName ?>">
                         <option value="<?php echo $_POST['data_area__formName']; ?>" selected><?php if(isset($_POST['data_area__formName'])) { echo $_POST['data_area__formName']; } else { echo _('Seleccione el &aacute;rea con la que quiere contactarse'); } ?></option>
-                        <option value="<?php echo $company_email_address_EMAILA ?>"><?php echo _('aaaa'); ?> - <?php echo $company_email_address_EMAILA ?></option>
-                        <option value="<?php echo $company_email_address_EMAILB ?>"><?php echo _('bbbb'); ?> - <?php echo $company_email_address_EMAILB ?></option>
+                        <option value="<?php echo $site_email_address_EMAILA ?>"><?php echo _('aaaa'); ?> - <?php echo $site_email_address_EMAILA ?></option>
+                        <option value="<?php echo $site_email_address_EMAILB ?>"><?php echo _('bbbb'); ?> - <?php echo $site_email_address_EMAILB ?></option>
                     </select>
                     <span class="formInputErrorMsg <?php echo $formSpan_error_class_data_area__formName ?>"><?php echo $formSpan_error_MSG_data_area__formName ?></span>  
                 </label>

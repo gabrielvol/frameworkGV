@@ -5,10 +5,18 @@
     $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
     $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country;
     
+    
     /* // Site titles ------------------------------------------------------- */
-    $company_name_full          = 'CompanyNameFull';
-    $company_name_short         = 'CompanyNameShort';
-    $company_name_title         = 'CompanyNameTitle';
+    $site_name_full             = 'SiteNameFull';
+    $site_name_short            = 'SiteNameShort';
+    $site_name_title            = 'SiteNameTitle';
+    $site_name_tag              = 'SiteNameTag';
+    
+    $site_name_full_GB          = 'SiteNameFull';
+    $site_name_short_GB         = 'SiteNameShort';
+    $site_name_title_GB         = 'SiteNameTitle';
+    $site_name_tag_GB           = 'SiteNameTag';
+    
 
     /* // Site descriptions ------------------------------------------------- */
     $site_desc_global           = '';
