@@ -15,7 +15,7 @@
     </div>  
     
     <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
-        <ul class="mainMenu unstyled clearfix">
+        <ul class="nav_main_ul unstyled clearfix">
             <?php include('nav.list.inc.php'); ?>                
         </ul>
     </nav>

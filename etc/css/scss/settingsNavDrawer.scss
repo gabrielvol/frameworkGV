@@ -3,8 +3,8 @@
    ========================================================================== */
 @if $navDrawer_act == "on"{
     @include navBT{
-        .navMain{
-            .navOpen{
+        .nav_nav{
+            .button_hamb_open{
                 background-color: $nav_bgColour_hamburger;
                 
                 &.clicked{
@@ -13,13 +13,13 @@
                 } 
             }
 
-            .navClose{
+            .button_hamb_close{
                 &.clicked{
                     display: block;
                 } 
             }
 
-            .mainMenu{
+            .nav_main_ul{
                 box-sizing: border-box;
                 position: fixed;
                 z-index: $zIndex_navDrawer_ul;
@@ -39,7 +39,7 @@
                 }
 
                 &,
-                .subMenu{
+                .nav_subNav{
                     @include transition(0.5s); 
                     top: 0;
                     bottom: 0;
@@ -49,40 +49,40 @@
                     left: 0;
                 }
 
-                & + .mainMenu{
+                & + .nav_main_ul{
                     margin-top: 0;
                 }
         
                 > li{
                     > a,
-                    > .topLevelItem{
+                    > .nav_TLI{
                         color: $nav_ftColour_itemLevel0_BT;
                         font-family: $nav_ftFamily_BT;
                     }
                 }  
 
-                > .current{
+                > .nav_item_current{
                     background-repeat: no-repeat;
                     background-position: right 10px center;
 
                     > a,
-                    > .topLevelItem{
+                    > .nav_TLI{
                         font-family: $nav_ftFamily_itemCurrent_BT;
                     }
                 }
             }
         
             @if $nav_hasSub_act == "on"{
-                .mainMenu{
-                    .topLevelItem{
+                .nav_main_ul{
+                    .nav_TLI{
                         background-repeat: no-repeat;
                         background-position: 10px center;
                     }  
                     
-                    &.backMenu{
-                        .topLevelItem{
+                    .nav_item_back{
+                        .nav_TLI{
                             background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI}');
-                            color: $nav_ftColour_backMenu_TLI;
+                            color: $nav_item_back_TLI_ftColour;
 
                             &.open{
                                 background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI_openDR}'); 
@@ -91,7 +91,7 @@
                     }
                 }
                 
-                .subMenu{
+                .nav_subNav{
                     position: relative;
                     top: 0;
                     right: $navDrawer_width;
@@ -99,21 +99,21 @@
                     max-width: $navDrawer_width_max;
                     
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         font-family: $nav_ftFamily_itemSub_BT;
                     }
 
-                    .current{
+                    .nav_item_current{
                         background-repeat: no-repeat;
                         background-position: right 10px center;
 
                         a,
-                        .topLevelItem{
+                        .nav_TLI{
                             font-family: $nav_ftFamily_itemSubCurrent_BT;
                         } 
                     }
 
-                    &.backMenuSubMenu{
+                    &.nav_item_back_subNav{
                         z-index: $zIndex_navSubMenu_back;
                     }
 
@@ -124,9 +124,9 @@
             }
         
             @if $nav_hasSub_level1_act == "on"{
-                .hasSubLevel1{
+                .nav_item_hasSubNav_level1{
                     a,
-                    .TLI_level1{
+                    .nav_TLI_level1{
                         color: $nav_ftColour_TLI_level1_BT;
 
                         &.openDR{
@@ -134,9 +134,9 @@
                         }
                     }
                     
-                    &.current{  
+                    &.nav_item_current{  
                         > a,
-                        .TLI_level1{
+                        .nav_TLI_level1{
                             background-image: url('/cuatro/img/#{$navArrows_itemCurrent_level0}');
                             background-position: right 10px center;
                             color: $nav_ftColour_TLICurrent_level1_BT;
@@ -144,7 +144,7 @@
                     }
                 }
                 
-                .subMenuLevel1{
+                .nav_subNav_level1{
                     z-index: $zIndex_navSubMenu_level1;
                     background-color: $nav_bgColour_ulLevel1_BT;
 
@@ -156,7 +156,7 @@
                         }
                     }
 
-                    > .current{
+                    > .nav_item_current{
                         background-color: $nav_bgColour_itemCurrent_level1_BT; 
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level1}');
                         
@@ -168,9 +168,9 @@
             }
         
             @if $nav_hasSub_level2_act == "on"{
-                .hasSubLevel2{
+                .nav_item_hasSubNav_level2{
                     a,
-                    .TLI_level2{
+                    .nav_TLI_level2{
                         color: $nav_ftColour_itemLevel2_BT;
 
                         &.openDR{
@@ -178,15 +178,15 @@
                         }
                     }
                     
-                    &.current{    
+                    &.nav_item_current{    
                         a,
-                        .TLI_level1{
+                        .nav_TLI_level1{
                             color: $nav_ftColour_TLICurrent_level2_BT;
                         }
                     }
                 }
                 
-                .subMenuLevel2{
+                .nav_subNav_level2{
                     z-index: $zIndex_navSubMenu_level2;
                     background-color: $nav_bgColour_ulLevel2_BT;
 
@@ -198,7 +198,7 @@
                         }
                     }
 
-                    > .current{
+                    > .nav_item_current{
                         background-color: $nav_bgColour_itemCurrent_level2_BT; 
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level2}'); 
                         
@@ -210,9 +210,9 @@
             }
         
             @if $nav_hasSub_level3_act == "on"{
-                .hasSubLevel3{
+                .nav_item_hasSubNav_level3{
                     a,  
-                    .TLI_level3{
+                    .nav_TLI_level3{
                         color: $nav_ftColour_itemLevel2_BT;
 
                         &.openDR{
@@ -220,15 +220,15 @@
                         }
                     }
                     
-                    &.current{    
+                    &.nav_item_current{    
                         a,
-                        .TLI_level1{
+                        .nav_TLI_level1{
                             color: $nav_ftColour_TLICurrent_level3_BT;
                         }
                     }
                 }
                 
-                .subMenuLevel3{
+                .nav_subNav_level3{
                     z-index: $zIndex_navSubMenu_level3;
                     background-color: $nav_bgColour_ulLevel3_BT;
 
@@ -240,7 +240,7 @@
                         }
                     }
 
-                    > .current{
+                    > .nav_item_current{
                         background-color: $nav_bgColour_itemCurrent_level3_BT;
                         background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level3}'); 
                         

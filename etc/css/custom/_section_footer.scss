@@ -24,9 +24,9 @@
         li{}
         
         @if $nav_hasSub_act == "on"{
-            .subMenuLevel1,
-            .subMenuLevel2,
-            .subMenuLevel3{
+            .nav_subNav_level1,
+            .nav_subNav_level2,
+            .nav_subNav_level3{
                 display: none;
             }
         }

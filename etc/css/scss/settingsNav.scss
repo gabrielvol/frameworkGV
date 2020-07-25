@@ -2,12 +2,16 @@
    Nav Settings | Etc [settingsNav.scss]
    ========================================================================== */
 nav{
-    .topLevelItem,
-    .current a{
+    .nav_TLI,
+    .nav_item_current a{
         cursor: default;   
     }
     
     li{
+        a{
+            box-sizing: border-box;
+        }
+        
         &:focus, &:hover{
             a{
                 text-decoration: none;
@@ -16,14 +20,14 @@ nav{
     }
 }
 
-.navMain{    
+.nav_nav{    
     &,
-    .mainMenu{
+    .nav_main_ul{
         z-index: $zIndex_nav;
     }
     
     @if $nav_hasSub_act == "on"{
-        .subMenu{
+        .nav_subNav{
             margin-top: $zero;
         }
     }
@@ -35,12 +39,12 @@ nav{
             position: fixed; 
         }
                 
-        .hamb{
+        .button_hamb{
             @include transition(1s);   
             box-sizing: border-box;
         }        
         
-        .navOpen{
+        .button_hamb_open{
             z-index: $zIndex_nav_open;
             display: $block;  
             opacity: 1;
@@ -50,7 +54,7 @@ nav{
             font-family: $nav_ftFamily_hamburger;
         }
         
-        .navClose{
+        .button_hamb_close{
             @include borderRadius(50%);
             z-index: $zIndex_nav_close;  
             display: none;            
@@ -64,7 +68,7 @@ nav{
             display: $none;
         }
         
-        .mainMenu{
+        .nav_main_ul{
             li{
                 float: $none;
             }
@@ -78,11 +82,11 @@ nav{
     }
     
     @include navAT{
-        .hamb{
+        .button_hamb{
             display: $none;
         }
         
-        .navDrawerMainUL{
+        .nav_main_ul_drawer{
             display: none;
         }
         
@@ -93,7 +97,7 @@ nav{
                 background-color: $nav_bgColour_item_AT;
 
                 a,
-                .topLevelItem{
+                .nav_TLI{
                     color: $nav_ftColour_item_AT;
                     font-family: $nav_ftFamily_AT;
                 }    
@@ -107,11 +111,11 @@ nav{
                 }            
             }
 
-            > .current{
+            > .nav_item_current{
                 background-color: $nav_bgColour_itemCurrent_AT;
 
                 a,
-                .topLevelItem{
+                .nav_TLI{
                     color: $nav_ftColour_itemCurrent_AT;
                     font-family: $nav_ftFamily_itemCurrent_AT;
                 }  
@@ -120,7 +124,7 @@ nav{
                     background-color: $nav_bgColour_itemCurrent_Hover;
 
                     > a,
-                    .topLevelItem{
+                    .nav_TLI{
                         color: $nav_ftColour_itemCurrent_hover;
                     }  
                 }         
@@ -128,7 +132,7 @@ nav{
         }
             
         @if $nav_hasSub_act == "on"{
-            .subMenu{
+            .nav_subNav{
                 display: $none;
                 background-color: $nav_bgColour_ULsub_AT;
                 
@@ -137,7 +141,7 @@ nav{
                     background-color: $nav_bgColour_itemSub_AT;
                     
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         color: $nav_ftColour_itemSub_AT;
                         font-family: $nav_ftFamily_itemSub_AT;
                         cursor: pointer;
@@ -152,9 +156,9 @@ nav{
                     }
                 }
                     
-                > .current{
+                > .nav_item_current{
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         color: $nav_ftColour_itemSubCurrent_AT;
                         font-family: $nav_ftFamily_itemSubCurrent_AT;
                         cursor: default;
@@ -182,29 +186,29 @@ nav{
                 top: 0;
                 background-color: $nav_bgColour_topper;
 
-                .hamb{
+                .button_hamb{
                     display: $none;
                 }
 
-                .mainMenu{
+                .nav_main_ul{
                     > li{
                         > a,
-                        > .topLevelItem{
+                        > .nav_TLI{
                             color: $nav_ftColour_topper;
                         }
 
                         &:focus, &:hover{
                             > a,
-                            .topLevelItem{
+                            .nav_TLI{
                                 color: $nav_ftColour_topper_hover;
                             }  
                         }
                     }
                         
-                    > .current{
+                    > .nav_item_current{
                         &, &:focus, &:hover{
                             > a,
-                            .topLevelItem{
+                            .nav_TLI{
                                 color: $nav_ftColour_topper_itemCurrent;
                             }  
                         }
@@ -218,31 +222,31 @@ nav{
         > ul{
             > li{
                 a,
-                .topLevelItem{
+                .nav_TLI{
                     font-family: $nav_ftFamily_ATL;
                 }                
             }
             
-            .current{
+            .nav_item_current{
                 a,
-                .topLevelItem{
+                .nav_TLI{
                     font-family: $nav_ftFamily_itemCurrent_ATL;
                 }
             }
         }
             
         @if $nav_hasSub_act == "on"{
-            .subMenu{                
+            .nav_subNav{                
                 > li{                
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         font-family: $nav_ftFamily_itemSub_ATL;
                     }                    
                 }
                 
-                > .current{
+                > .nav_item_current{
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         font-family: $nav_ftFamily_itemSubCurrent_ATL;
                     }                    
                 }
@@ -251,9 +255,9 @@ nav{
     }    
     
     @include tabletAndTabletLandscapeOnly{
-        .mainMenu{
+        .nav_main_ul{
             @if $nav_hasSub_act == "on"{
-                .subMenu{
+                .nav_subNav{
                     &.openSubTTLO{
                         display: $block;
                     }
@@ -262,10 +266,10 @@ nav{
             
             @if $nav_topper_act == "on"{
                 &.topperNav{
-                    .mainMenu{
+                    .nav_main_ul{
                         > li{
                             > a,
-                            > .topLevelItem{                
+                            > .nav_TLI{                
                                 &.openDR{
                                     color: $nav_ftColour_topper_hover;
                                 }
@@ -279,7 +283,7 @@ nav{
     
     @include afterDesktop{
         @if $nav_hasSub_act == "on"{
-            .hasSub{
+            .nav_item_hasSubNav{
                 &:focus, &:hover{
                     ul{
                         &,

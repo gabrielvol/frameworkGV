@@ -1,18 +1,18 @@
-<nav id="nav" class="navMain pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
-    <button type="button" class="hamb navOpen pAbs displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
-    <button type="button" class="hamb navClose pAbs indentedText"><?php echo _("Cerrar"); ?></button>
-    <ul class="mainMenu navAT unstyled clearfix">
+<nav id="nav" class="nav_nav pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
+    <button type="button" class="button_hamb button_hamb_open pAbs displayBlockBT alignCenter upperCase" aria-pressed="false"><?php echo _("Men&uacute;"); ?></button>
+    <button type="button" class="button_hamb button_hamb_close pAbs indentedText"><?php echo _("Cerrar"); ?></button>
+    <ul class="nav_main_ul navAT unstyled clearfix">
         <?php include('nav.list.inc.php'); ?>
     </ul>   
     
     <?php
         if($nav_drawer_act == 1){
-            echo '<ul class="mainMenu navDrawerMainUL unstyled clearfix">';
+            echo '<ul class="nav_main_ul nav_main_ul_drawer unstyled clearfix">';
 
             if ($nav_sectionHasSub_act == 1) {
-                echo '<li class="backMenu pRel hasSub hasSubLevel1 displayNoneAT">
-                    <p id="backMenuNavItem" class="topLevelItem" aria-haspopup="true" aria-owns="backMenuSubMenu" aria-controls="backMenuSubMenu" role="button" aria-pressed="false">'. _("Men&uacute; principal").'</p>
-                    <ul id="backMenuSubMenu" class="subMenu subMenuLevel1 backMenuSubMenu unstyled" aria-expanded="false" aria-labelledby="backMenuNavItem">';
+                echo '<li class="nav_item_back nav_item_hasSubNav nav_item_hasSubNav_level1 displayNoneAT">
+                    <p class="nav_TLI" id="nav_TLI_back" aria-haspopup="true" aria-owns="nav_item_back_subNav" aria-controls="nav_item_back_subNav" role="button" aria-pressed="false">'. _("Men&uacute; principal").'</p>
+                    <ul id="nav_item_back_subNav" class="nav_subNav nav_subNav_level1 nav_item_back_subNav unstyled" aria-expanded="false" aria-labelledby="nav_TLI_back">';
                         include('nav.list.inc.php');
                     echo '</ul></li>';
             } else {
@@ -20,7 +20,7 @@
             }    
             
             echo '</ul>
-            <div class="modalBG modal_nav">&nbsp;</div>';
+            <div class="modal_bg_global modal_nav">&nbsp;</div>';
         }
     ?>
 </nav>

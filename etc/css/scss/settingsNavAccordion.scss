@@ -2,23 +2,23 @@
    Nav Accordion Settings | Etc [settingsNavAccordion.scss]
    ========================================================================== */
 @if $navAcc_act == "on"{
-    .navMain{
+    .nav_nav{
         @include navBT{
             top: calc(#{$header_height_navAcc_BT} / 2);
             right: 0;
             left: 0;
             
-            .hamb{
+            .button_hamb{
                 right: 10px;
             }
             
-            .navOpen{                
+            .button_hamb_open{                
                 &.clicked{
                     display: $none;
                 } 
             }
 
-            .navClose{                
+            .button_hamb_close{                
                 &.clicked{
                     display: block;
                 } 
@@ -40,7 +40,7 @@
                 li{
                     &,
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         @include equalHeightAndLineHeight($navAcc_item_height);
                     }
                 }

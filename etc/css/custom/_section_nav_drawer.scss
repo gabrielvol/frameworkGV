@@ -3,15 +3,15 @@
    ========================================================================== */
 @if $navDrawer_act == "on"{
     @include navBT{
-        .navMain{
+        .nav_nav{
             @include posTR(10px, 10px);
             position: fixed;
 
-            .hamb{
+            .button_hamb{
                 @include posTR(0, 0);
             }
 
-            .navOpen{
+            .button_hamb_open{
                 @if $hamburger_only_act == "on"{
                     @include squareSize(45px);
                     background-position: center;
@@ -32,39 +32,40 @@
                 background-size: 15px;
             }
 
-            .navClose{
+            .button_hamb_close{
                 @include squareSize(45px);
                 background-size: 20px;
                 border: 1px solid $nav_bdColour_close!important;
             }
 
-            .mainMenu{
+            .nav_main_ul{
                 @include borderStyleR($nav_bdColourR_navDrawer);
 
                 li{
                     &,
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         @include equalHeightAndLineHeight(45px);
                     }
 
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         font-size: 1rem;
                         text-align: center;
                         display: block;
                     }    
                 }
 
-                > .current{
+                > .nav_item_current{
                     background-color: $nav_bgColour_itemCurrent_level0_BT;
                     background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level0}');
                 }   
 
-                .backMenu{
+                .nav_item_back{
                     @include borderStyleB(2px, $nav_bdColour_backMenu);
+                    position: relative;
 
-                    & + .backMenu{
+                    & + .nav_item_back{
                         border-color: $bdGreyXD transparent $nav_bdColour_backMenu;
                         border-width: 1px 0 2px;
                         border-style: solid;
@@ -73,7 +74,7 @@
             }
         
             @if $nav_hasSub_level1_act == "on"{   
-                .subMenuLevel1{
+                .nav_subNav_level1{
                     > li{
                         & + li{
                             @include borderStyleT($nav_bdColour_itemLevel1_BT);
@@ -83,7 +84,7 @@
             }
             
             @if $nav_hasSub_level2_act == "on"{  
-                .subMenuLevel2{
+                .nav_subNav_level2{
                     > li{
                         & + li{
                             @include borderStyleT($nav_bdColour_itemLevel2_BT);
@@ -93,7 +94,7 @@
             }
             
             @if $nav_hasSub_level3_act == "on"{ 
-                .subMenuLevel3{
+                .nav_subNav_level3{
                     > li{
                         & + li{
                             @include borderStyleT($nav_bdColour_itemLevel3_BT);

@@ -1958,7 +1958,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Modal y Popups Settings | Etc [settings_popup.scss]
    ========================================================================== */
-.modalBG,
+.modal_bg_global,
 .modal_nav {
   top: 0;
   right: 0;
@@ -1967,7 +1967,7 @@ article, article::before, article::after, details, details::before, details::aft
   position: fixed;
   z-index: 9000; }
 
-.modalBG {
+.modal_bg_global {
   opacity: calc(85 / 100);
   filter: alpha(opacity=85);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=85)";
@@ -2225,24 +2225,24 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Nav Settings | Etc [settingsNav.scss]
    ========================================================================== */
-nav .topLevelItem,
-nav .current a {
+nav .nav_TLI,
+nav .nav_item_current a {
   cursor: default; }
 
 nav li:focus a, nav li:hover a {
   text-decoration: none; }
 
-.navMain,
-.navMain .mainMenu {
+.nav_nav,
+.nav_nav .nav_main_ul {
   z-index: 8000; }
 
 @media (max-width: 767px) {
-  .navMain {
+  .nav_nav {
     position: absolute; }
-    .navMain .hamb {
+    .nav_nav .button_hamb {
       transition: all 1s ease;
       box-sizing: border-box; }
-    .navMain .navOpen {
+    .nav_nav .button_hamb_open {
       z-index: 8100;
       display: block !important;
       opacity: 1;
@@ -2250,7 +2250,7 @@ nav li:focus a, nav li:hover a {
       background-repeat: no-repeat;
       color: #333;
       font-family: Arial; }
-    .navMain .navClose {
+    .nav_nav .button_hamb_close {
       border-radius: 50%;
       z-index: 9900;
       display: none;
@@ -2258,63 +2258,63 @@ nav li:focus a, nav li:hover a {
       background-image: url("/nuevo/img/nav_close.svg");
       background-repeat: no-repeat;
       background-position: center center; }
-    .navMain .navAT {
+    .nav_nav .navAT {
       display: none !important; }
-    .navMain .mainMenu li {
+    .nav_nav .nav_main_ul li {
       float: none !important; }
-    .navMain .mainMenu > li + li {
+    .nav_nav .nav_main_ul > li + li {
       border-top: 1px solid #818181; } }
 
 @media (min-width: 768px) {
-  .navMain .hamb {
+  .nav_nav .button_hamb {
     display: none !important; }
-  .navMain .navDrawerMainUL {
+  .nav_nav .nav_main_ul_drawer {
     display: none; }
-  .navMain > ul {
+  .nav_nav > ul {
     background-color: #818181; }
-    .navMain > ul > li {
+    .nav_nav > ul > li {
       background-color: transparent; }
-      .navMain > ul > li a,
-      .navMain > ul > li .topLevelItem {
+      .nav_nav > ul > li a,
+      .nav_nav > ul > li .nav_TLI {
         color: #000;
         font-family: Arial; }
-      .navMain > ul > li:focus, .navMain > ul > li:hover {
+      .nav_nav > ul > li:focus, .nav_nav > ul > li:hover {
         background-color: transparent; }
-        .navMain > ul > li:focus > a, .navMain > ul > li:hover > a {
+        .nav_nav > ul > li:focus > a, .nav_nav > ul > li:hover > a {
           color: #000; }
-    .navMain > ul > .current {
+    .nav_nav > ul > .nav_item_current {
       background-color: transparent; }
-      .navMain > ul > .current a,
-      .navMain > ul > .current .topLevelItem {
+      .nav_nav > ul > .nav_item_current a,
+      .nav_nav > ul > .nav_item_current .nav_TLI {
         color: #000;
         font-family: Arial; }
-      .navMain > ul > .current:focus, .navMain > ul > .current:hover {
+      .nav_nav > ul > .nav_item_current:focus, .nav_nav > ul > .nav_item_current:hover {
         background-color: transparent; }
-        .navMain > ul > .current:focus > a,
-        .navMain > ul > .current:focus .topLevelItem, .navMain > ul > .current:hover > a,
-        .navMain > ul > .current:hover .topLevelItem {
+        .nav_nav > ul > .nav_item_current:focus > a,
+        .nav_nav > ul > .nav_item_current:focus .nav_TLI, .nav_nav > ul > .nav_item_current:hover > a,
+        .nav_nav > ul > .nav_item_current:hover .nav_TLI {
           color: #000; } }
 
 @media (min-width: 1024px) {
-  .navMain > ul > li a,
-  .navMain > ul > li .topLevelItem {
+  .nav_nav > ul > li a,
+  .nav_nav > ul > li .nav_TLI {
     font-family: Arial; }
-  .navMain > ul .current a,
-  .navMain > ul .current .topLevelItem {
+  .nav_nav > ul .nav_item_current a,
+  .nav_nav > ul .nav_item_current .nav_TLI {
     font-family: Arial; } }
 
 /* =============================================================================
    Nav Drawer Settings | Etc [settingsNavDrawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
-  .navMain .navOpen {
+  .nav_nav .button_hamb_open {
     background-color: #fff; }
-    .navMain .navOpen.clicked {
+    .nav_nav .button_hamb_open.clicked {
       opacity: 0.5;
       color: #333; }
-  .navMain .navClose.clicked {
+  .nav_nav .button_hamb_close.clicked {
     display: block; }
-  .navMain .mainMenu {
+  .nav_nav .nav_main_ul {
     box-sizing: border-box;
     position: fixed;
     z-index: 9800;
@@ -2327,24 +2327,24 @@ nav li:focus a, nav li:hover a {
     padding-left: 5px;
     overflow: scroll;
     padding-bottom: 30px; }
-    .navMain .mainMenu,
-    .navMain .mainMenu .subMenu {
+    .nav_nav .nav_main_ul,
+    .nav_nav .nav_main_ul .nav_subNav {
       transition: all 0.5s ease;
       top: 0;
       bottom: 0; }
-    .navMain .mainMenu.open {
+    .nav_nav .nav_main_ul.open {
       left: 0; }
-    .navMain .mainMenu + .mainMenu {
+    .nav_nav .nav_main_ul + .nav_main_ul {
       margin-top: 0; }
-    .navMain .mainMenu > li > a,
-    .navMain .mainMenu > li > .topLevelItem {
+    .nav_nav .nav_main_ul > li > a,
+    .nav_nav .nav_main_ul > li > .nav_TLI {
       color: #000;
       font-family: Arial; }
-    .navMain .mainMenu > .current {
+    .nav_nav .nav_main_ul > .nav_item_current {
       background-repeat: no-repeat;
       background-position: right 10px center; }
-      .navMain .mainMenu > .current > a,
-      .navMain .mainMenu > .current > .topLevelItem {
+      .nav_nav .nav_main_ul > .nav_item_current > a,
+      .nav_nav .nav_main_ul > .nav_item_current > .nav_TLI {
         font-family: Arial; } }
 
 /* =============================================================================
@@ -2354,14 +2354,14 @@ nav li:focus a, nav li:hover a {
    Nav Drawer Styles | Custom [section_nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
-  .navMain {
+  .nav_nav {
     top: 10px;
     right: 10px;
     position: fixed; }
-    .navMain .hamb {
+    .nav_nav .button_hamb {
       top: 0;
       right: 0; }
-    .navMain .navOpen {
+    .nav_nav .button_hamb_open {
       width: 90px;
       height: 40px;
       background-position: 10px center;
@@ -2371,29 +2371,29 @@ nav li:focus a, nav li:hover a {
       line-height: 40px;
       border-radius: 6px;
       background-size: 15px; }
-    .navMain .navClose {
+    .nav_nav .button_hamb_close {
       width: 45px;
       height: 45px;
       background-size: 20px;
       border: 1px solid #666 !important; }
-    .navMain .mainMenu {
+    .nav_nav .nav_main_ul {
       border-right: 1px solid #000; }
-      .navMain .mainMenu li,
-      .navMain .mainMenu li a,
-      .navMain .mainMenu li .topLevelItem {
+      .nav_nav .nav_main_ul li,
+      .nav_nav .nav_main_ul li a,
+      .nav_nav .nav_main_ul li .nav_TLI {
         height: 45px;
         line-height: 45px; }
-      .navMain .mainMenu li a,
-      .navMain .mainMenu li .topLevelItem {
+      .nav_nav .nav_main_ul li a,
+      .nav_nav .nav_main_ul li .nav_TLI {
         font-size: 1rem;
         text-align: center;
         display: block; }
-      .navMain .mainMenu > .current {
+      .nav_nav .nav_main_ul > .nav_item_current {
         background-color: #f2f2f2;
         background-image: url("/nuevo/img/nav_arrowL.svg"); }
-      .navMain .mainMenu .backMenu {
+      .nav_nav .nav_main_ul .nav_item_back {
         border-bottom: #818181 solid 2px; }
-        .navMain .mainMenu .backMenu + .backMenu {
+        .nav_nav .nav_main_ul .nav_item_back + .nav_item_back {
           border-color: #666 transparent #818181;
           border-width: 1px 0 2px;
           border-style: solid; } }
@@ -2408,39 +2408,39 @@ nav li:focus a, nav li:hover a {
    Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .navMain .mainMenu > li {
+  .nav_nav .nav_main_ul > li {
     float: left; }
-  .navMain .mainMenu li,
-  .navMain .mainMenu li a,
-  .navMain .mainMenu li .topLevelItem {
+  .nav_nav .nav_main_ul li,
+  .nav_nav .nav_main_ul li a,
+  .nav_nav .nav_main_ul li .nav_TLI {
     display: block; }
-  .navMain li,
-  .navMain li a,
-  .navMain li .topLevelItem {
+  .nav_nav li,
+  .nav_nav li a,
+  .nav_nav li .nav_TLI {
     height: 60px;
     line-height: 60px; }
-  .navMain li a,
-  .navMain li .topLevelItem {
+  .nav_nav li a,
+  .nav_nav li .nav_TLI {
     transition: all 1s ease;
     font-size: 0.8rem;
     padding-right: 5px;
     padding-left: 5px; } }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  .navMain li,
-  .navMain li a,
-  .navMain li .topLevelItem {
+  .nav_nav li,
+  .nav_nav li a,
+  .nav_nav li .nav_TLI {
     height: 60px;
     line-height: 60px; } }
 
 @media (min-width: 1024px) {
-  .navMain li,
-  .navMain li a,
-  .navMain li .topLevelItem {
+  .nav_nav li,
+  .nav_nav li a,
+  .nav_nav li .nav_TLI {
     height: 60px;
     line-height: 60px; }
-  .navMain li a,
-  .navMain li .topLevelItem {
+  .nav_nav li a,
+  .nav_nav li .nav_TLI {
     font-size: 1rem;
     padding-right: 10px;
     padding-left: 10px; } }

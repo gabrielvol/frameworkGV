@@ -3,12 +3,12 @@
    ========================================================================== */
 @if $navAcc_act == "on"{
     @include navBT{
-        .navMain{
-            .hamb{
+        .nav_nav{
+            .button_hamb{
                 margin-top: calc(-1 * calc(#{$navAcc_hamburger_height} / 2));
             }
 
-            .navOpen{
+            .button_hamb_open{
                 @if $hamburger_only_act == "on"{
                     @include squareSize($navAcc_hamburger_height);
                     background-position: center;
@@ -28,7 +28,7 @@
                 background-size: 15px;
             }
 
-            .navClose{
+            .button_hamb_close{
                 @include squareSize($navAcc_hamburger_height);
                 background-size: 15px;
                 border: 1px solid $nav_bdColour_close!important;
@@ -40,7 +40,7 @@
 
             li{                
                 a,
-                .topLevelItem{
+                .nav_TLI{
                     padding-left: 15px;
                     text-transform: uppercase;
                 }

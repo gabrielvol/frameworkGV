@@ -9,10 +9,10 @@
 ?>
 
 <?php        if($nav_accordion_act == 1): // nav `[/var/nav.act.inc.php]` ?>
-<script src="/nuevo/js/_navAccordion.js"></script>
+<script src="/nuevo/js/_nav_accordion.js"></script>
 
 <?php endif; if($nav_drawer_act == 1): // nav `[/var/nav.act.inc.php]` ?>
-<script src="/nuevo/js/_navDrawer.js"></script>
+<script src="/nuevo/js/_nav_drawer.js"></script>
 
 <?php
 //<script src="/nuevo/js/slick.js"></script>

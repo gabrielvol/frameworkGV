@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
-.navMain{
+.nav_nav{
     @include navAT{
         @if $logoNav_floated_act == "on"{
             float: left;
@@ -16,7 +16,7 @@
             box-shadow: 0 0 7px $black;
         }
         
-        .mainMenu{
+        .nav_main_ul{
             @if $nav_horizontalCenter_AT_act == "on"{
                 list-style: none;
                 margin-right: $auto;
@@ -38,7 +38,7 @@
                 li{
                     &,
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         display: block;
                     }
                 }
@@ -49,9 +49,9 @@
                     float: left;
                 }
                 
-                &.current{
+                &.nav_item_current{
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         @if $nav_itemCurrent_bdB_act == "on"{
                             @include borderStyleB($nav_bdColour_itemCurrent, 3px);
                         }
@@ -65,7 +65,7 @@
             
             &,
             a,
-            .topLevelItem{
+            .nav_TLI{
                 @if $nav_horizontalCenter_AT_act == "on"{
                     height: auto;
                     line-height: $nav_height_AT;                    
@@ -75,7 +75,7 @@
             }
 
             a,
-            .topLevelItem{
+            .nav_TLI{
                 @include transition(1s);
                 font-size: 0.8rem;
                 padding-right: 5px;
@@ -86,7 +86,7 @@
         }
         
         @if $nav_hasSub_act == "on"{
-            .subMenu{
+            .nav_subNav{
                 $borderRadiusB: 10px;
                 $nav_subMenu_width: 200px;
                 
@@ -139,7 +139,7 @@
                 right: 0;
                 width: 100%; 
                 
-                .mainMenu{
+                .nav_main_ul{
                     @include centerCustom(770px);
                     float: $none;
                     padding: 0;
@@ -149,26 +149,26 @@
                         
                         &,
                         a,
-                        .topLevelItem{
+                        .nav_TLI{
                             height: $topper_height_global;
                         }
                     }
                         
-                    > .current{
+                    > .nav_item_current{
                         a,
-                        .topLevelItem{
+                        .nav_TLI{
                             @include borderStyleB($nav_bdColour_topper_itemCurrent, 3px);
                         }
                     }
 
                     a,
-                    .topLevelItem{
+                    .nav_TLI{
                         line-height: $topper_height_global;
                     }
                 }
                 
                 @if $nav_hasSub_level1_act == "on"{
-                    .subMenuLevel1{
+                    .nav_subNav_level1{
                         $navSubMenu_borderRadiusB: 6px;
                         
                         @include borderRadiusB($navSubMenu_borderRadiusB);
@@ -210,7 +210,7 @@
     }
     
     @include tabletOnly{
-        .mainMenu{
+        .nav_main_ul{
             @if $nav_horizontalCenter_TO_act == "on"{
                 list-style: none;
                 margin-right: $auto;
@@ -231,7 +231,7 @@
         li{
             &,
             a,
-            .topLevelItem{
+            .nav_TLI{
                 @if $nav_horizontalCenter_TO_act == "on"{
                     height: auto;
                     line-height: $nav_height_TO;                    
@@ -247,7 +247,7 @@
             width: calc(100% - #{$logo_width_ATL});
         }
         
-        .mainMenu{
+        .nav_main_ul{
             @if $nav_horizontalCenter_ATL_act == "on"{
                 list-style: none;
                 margin-right: $auto;
@@ -268,14 +268,14 @@
                 &:focus, &:hover{
                     @if $nav_text_white_act == "on"{
                         > a,
-                        > .topLevelItem{
+                        > .nav_TLI{
                             text-shadow: $txShadow_ftColour_white_hover;
                         }
                     }
 
                     @if $nav_text_black_act == "on"{
                         > a,
-                        > .topLevelItem{
+                        > .nav_TLI{
                             color: $greyXXD;
                         }
                     }
@@ -286,7 +286,7 @@
         li{
             &,
             a,
-            .topLevelItem{
+            .nav_TLI{
                 @if $nav_horizontalCenter_AT_act == "on" or $nav_horizontalCenter_ATL_act == "on"{
                     height: auto;
                     line-height: $nav_height_ATL;
@@ -296,7 +296,7 @@
             }
             
             a,
-            .topLevelItem{
+            .nav_TLI{
                 font-size: 1rem;
                 padding-right: 10px;
                 padding-left: 10px;
@@ -305,19 +305,19 @@
             & + li{}
         }
 
-        .current{
+        .nav_item_current{
             a,
-            .topLevelItem{}
+            .nav_TLI{}
         }
 
         @if $nav_topper_act == "on"{
             &.topperNav{
-                .mainMenu{}
+                .nav_main_ul{}
                 
                 @if $nav_hasSub_level1_act == "on"{
-                    .subMenuLevel1{
+                    .nav_subNav_level1{
                         &:focus{
-                            .subMenuLevel1{
+                            .nav_subNav_level1{
                                 display: $block;
                             }
                         }
@@ -328,9 +328,9 @@
     }
     
     @include afterDesktop{
-        .current{
+        .nav_item_current{
             a,
-            .topLevelItem{
+            .nav_TLI{
                 &:focus, &:hover{
                     @if $nav_text_white_act == "on"{
                         text-shadow: 0 0 0 transparent;
@@ -342,9 +342,9 @@
         @if $nav_topper_act == "on"{
             &.topperNav{
                 @if $nav_hasSub_level1_act == "on"{
-                    .hasSub{
+                    .nav_item_hasSubNav{
                         &:hover{
-                            .subMenuLevel1{
+                            .nav_subNav_level1{
                                 display: $block;
                             }
                         }

@@ -7,4 +7,4 @@
         <button type="button" class="pop_submit bgWhite mtl mha arial bold black alignCenter upperCase"><?php echo _("OK"); ?></button>
     </div>
 </div>
-<div class="modal_warning modalBG displayNone"></div>
+<div class="modal_warning modal_bg_global displayNone"></div>
