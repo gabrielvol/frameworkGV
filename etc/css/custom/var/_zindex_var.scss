@@ -17,7 +17,7 @@ $zIndex_lightbox_overlay:    10000;
 /*___ Modal / Pop / NavDrawer ___________*/
 $zIndex_button_topLevel:     9900;
 
-$zIndex_navSubMenu_back:     9850;
+$zIndex_nav_item_back_subNav:     9850;
 $zIndex_navSubMenu_level3:   9840;
 $zIndex_navSubMenu_level2:   9830;
 $zIndex_navSubMenu_level1:   9810;
@@ -39,7 +39,7 @@ $zIndex_social:              8500;
 $zIndex_nav_close:           $zIndex_button_topLevel; // 9900 
 $zIndex_navDrawer_ul:        $zIndex_pop_main; // 9800
 $zIndex_nav_open:            8100;
-$zIndex_navAcc_ul:           8100;
+$zIndex_navAccordion_ul:           8100;
 $zIndex_nav:                 8000;
 
 

@@ -1,23 +1,45 @@
 /* =============================================================================
-   Classes Responsive | Etc [classesResponsive.scss]
+   Classes Responsive | Etc [classes_responsive.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
-///-- Spacing
+
+/* // Descripcion ----------------------------------------------------------- */
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
 // P, M                 = padding, margin
 // T, R, B, L           = top, right, bottom, left
 // H, V, A              = horizontal, vertical, all
 
-///-- Screen Sizes
-// M, L, T, D, DL       = mobile, landscape, tablet, desktop, desktop large
-// B, A, O              = before, after, only
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
 
-///-- Colours
+///-- Colores
 // X, L, D              = extra, light, dark
 // De, S, B             = desaturated, semi, bright
 
-///-- Fonts
+///-- Fuentes
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
 
 
 /* =============================================================================
@@ -91,8 +113,6 @@
     
     @if $classes_text_act_MO == "on"{
         //Text
-        .fontSizeResetMO{font-size: $fontSize_reset!important}
-        .lineHeightResetMO{line-height: $lineHeight_reset!important}
         .indentedTextMO{text-indent: -9999px}
         .alignLeftMO{text-align: left}
         .alignRightMO{text-align: right}
@@ -229,8 +249,6 @@
     
     @if $classes_text_act_AML == "on"{
         //Text
-        .fontSizeResetAML{font-size: $fontSize_reset!important}
-        .lineHeightResetAML{line-height: $lineHeight_reset!important}
         .indentedTextAML{text-indent: -9999px}
         .alignLeftAML{text-align: left}
         .alignRightAML{text-align: right}
@@ -367,8 +385,6 @@
     
     @if $classes_text_act_MLO == "on"{
         //Text
-        .fontSizeResetMLO{font-size: $fontSize_reset!important}
-        .lineHeightResetMLO{line-height: $lineHeight_reset!important}
         .indentedTextMLO{text-indent: -9999px}
         .alignLeftMLO{text-align: left}
         .alignRightMLO{text-align: right}
@@ -505,8 +521,6 @@
     
     @if $classes_text_act_BT == "on"{
         //Text
-        .fontSizeResetBT{font-size: $fontSize_reset!important}
-        .lineHeightResetBT{line-height: $lineHeight_reset!important}
         .indentedTextBT{text-indent: -9999px}
         .alignLeftBT{text-align: left}
         .alignRightBT{text-align: right}
@@ -643,8 +657,6 @@
     
     @if $classes_text_act_BTL == "on"{
         //Text
-        .fontSizeResetBTL{font-size: $fontSize_reset!important}
-        .lineHeightResetBTL{line-height: $lineHeight_reset!important}
         .indentedTextBTL{text-indent: -9999px}
         .alignLeftBTL{text-align: left}
         .alignRightBTL{text-align: right}
@@ -781,8 +793,6 @@
     
     @if $classes_text_act_TO == "on"{
         //Text
-        .fontSizeResetTO{font-size: $fontSize_reset!important}
-        .lineHeightResetTO{line-height: $lineHeight_reset!important}
         .indentedTextTO{text-indent: -9999px}
         .alignLeftTO{text-align: left}
         .alignRightTO{text-align: right}
@@ -920,8 +930,6 @@
     
     @if $classes_text_act_AT == "on"{
         //Text 
-        .fontSizeResetAT{font-size: $fontSize_reset!important}
-        .lineHeightResetAT{line-height: $lineHeight_reset!important}
         .indentedTextAT{text-indent: -9999px}
         .alignLeftAT{text-align: left}
         .alignRightAT{text-align: right}
@@ -1058,8 +1066,6 @@
     
     @if $classes_text_act_ATL == "on"{
         //Text 
-        .fontSizeResetATL{font-size: $fontSize_reset!important}
-        .lineHeightResetATL{line-height: $lineHeight_reset!important}
         .indentedTextATL{text-indent: -9999px}
         .alignLeftATL{text-align: left}
         .alignRightATL{text-align: right}
@@ -1196,8 +1202,6 @@
     
     @if $classes_text_act_TLO == "on"{
         //Text
-        .fontSizeResetTLO{font-size: $fontSize_reset!important}
-        .lineHeightResetTLO{line-height: $lineHeight_reset!important}
         .indentedTextTLO{text-indent: -9999px}
         .alignLeftTLO{text-align: left}
         .alignRightTLO{text-align: right}
@@ -1334,8 +1338,6 @@
     
     @if $classes_text_act_TTLO == "on"{
         //Text
-        .fontSizeResetTTLO{font-size: $fontSize_reset!important}
-        .lineHeightResetTTLO{line-height: $lineHeight_reset!important}
         .indentedTextTTLO{text-indent: -9999px}
         .alignLeftTTLO{text-align: left}
         .alignRightTTLO{text-align: right}
@@ -1472,8 +1474,6 @@
     
     @if $classes_text_act_BD == "on"{
         //Text
-        .fontSizeResetBD{font-size: $fontSize_reset!important}
-        .lineHeightResetBD{line-height: $lineHeight_reset!important}
         .indentedTextBD{text-indent: -9999px}
         .alignLeftBD{text-align: left}
         .alignRightBD{text-align: right}
@@ -1610,8 +1610,6 @@
     
     @if $classes_text_act_AD == "on"{
         //Text
-        .fontSizeResetAD{font-size: $fontSize_reset!important}
-        .lineHeightResetAD{line-height: $lineHeight_reset!important}
         .indentedTextAD{text-indent: -9999px}
         .alignLeftAD{text-align: left}
         .alignRightAD{text-align: right}

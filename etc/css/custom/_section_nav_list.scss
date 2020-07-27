@@ -1,15 +1,15 @@
 /* =============================================================================
    Nav List Styles | Custom [section_nav_list.scss]
    ========================================================================== */
-@if $navList_act == "on"{
+@if $nav_list_act == "on"{
     @include navBT{
         .nav_nav{
             ul{
-                @include borderRadius($nav_borderRadius);   
+                @include borderRadius($nav_bdRadius);   
                 z-index: $zIndex_navUlList;
                 position: relative;
                 top: 50px;
-                width: $navList_ul_width_BT; 
+                width: $nav_list_ul_width_BT; 
                 height: $auto;
                 background-color: $bgWhite;
                 box-shadow: 0 0 4px $black;

@@ -6,7 +6,7 @@
 @if $sliderArrows_act == "on"{
     .slickPrev{
         left: 2%;
-        background-image: url('/nuevo/img/slider_arrowL.svg');
+        background-image: url('/nuevo/img/slider_arrow_left.svg');
     }
 
     .slickNext{
@@ -52,7 +52,7 @@
 @if $sliderArrows_carousel_act == "on"{
     .slickCarousel{
         .slickPrev{
-            background-image: url('/nuevo/img/carousel_arrowL.svg');
+            background-image: url('/nuevo/img/carousel_arrow_left.svg');
         }
 
         .slickNext{

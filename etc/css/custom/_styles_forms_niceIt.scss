@@ -56,7 +56,7 @@ form.niceIt{
                 @extend %fm_option_textStyles;  
                 padding: 10px 15px!important;
                 font-size: 0.7rem;
-                line-height: 1.3rem;
+                line-height: 1.3;
                 
                 &:hover, &:focus{
                     color: $formInput_ftColour_hover;

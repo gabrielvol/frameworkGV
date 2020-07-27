@@ -1,15 +1,15 @@
 /* =============================================================================
-   Nav Drawer Settings | Etc [settingsNavDrawer.scss]
+   Nav Drawer Settings | Etc [settings_nav_drawer.scss]
    ========================================================================== */
-@if $navDrawer_act == "on"{
+@if $nav_drawer_act == "on"{
     @include navBT{
         .nav_nav{
             .button_hamb_open{
-                background-color: $nav_bgColour_hamburger;
+                background-color: $button_hamb_bgColour;
                 
                 &.clicked{
                     opacity: 0.5;
-                    color: $nav_ftColour_hamburger_clicked;
+                    color: $button_hamb_ftColour_clicked;
                 } 
             }
 
@@ -23,16 +23,16 @@
                 box-sizing: border-box;
                 position: fixed;
                 z-index: $zIndex_navDrawer_ul;
-                left: calc(-1 * #{$navDrawer_width});
-                width: $navDrawer_width_final;
-                max-width: $navDrawer_width_max;
+                left: calc(-1 * #{$nav_drawer_width});
+                width: $nav_drawer_width_final;
+                max-width: $nav_drawer_width_max;
                 background-color: $nav_bgColour_BT;
-                padding-top: calc(#{$logo_clicked_height_FH} + 5px);
+                padding-top: calc(#{$logo_height_clicked_final} + 5px);
                 padding-right: 5px;
                 padding-left: 5px;
                 overflow: scroll; 
                 
-                @if $language_flag_clicked_bottom_act == "on"{
+                @if $language_menu_navDrawer_clicked_act == "on"{
                     padding-bottom: calc(#{$language_ul_height_clicked} + #{$language_ul_bottomValue} + 10px);
                 } @else {
                     padding-bottom: 30px;     
@@ -56,7 +56,7 @@
                 > li{
                     > a,
                     > .nav_TLI{
-                        color: $nav_ftColour_itemLevel0_BT;
+                        color: $nav_item_level0_ftColour_BT;
                         font-family: $nav_ftFamily_BT;
                     }
                 }  
@@ -67,7 +67,7 @@
 
                     > a,
                     > .nav_TLI{
-                        font-family: $nav_ftFamily_itemCurrent_BT;
+                        font-family: $nav_item_current_ftFamily_BT;
                     }
                 }
             }
@@ -81,11 +81,11 @@
                     
                     .nav_item_back{
                         .nav_TLI{
-                            background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI}');
+                            background-image: url('/nuevo/img/#{$nav_arrows_item_back_TLI}');
                             color: $nav_item_back_TLI_ftColour;
 
                             &.open{
-                                background-image: url('/nuevo/img/#{$navArrows_backMenu_TLI_openDR}'); 
+                                background-image: url('/nuevo/img/#{$nav_arrows_item_back_TLI_openDR}'); 
                             }
                         } 
                     }
@@ -94,13 +94,13 @@
                 .nav_subNav{
                     position: relative;
                     top: 0;
-                    right: $navDrawer_width;
+                    right: $nav_drawer_width;
                     width: calc(100%);
-                    max-width: $navDrawer_width_max;
+                    max-width: $nav_drawer_width_max;
                     
                     a,
                     .nav_TLI{
-                        font-family: $nav_ftFamily_itemSub_BT;
+                        font-family: $nav_item_subNav_ftFamily_BT;
                     }
 
                     .nav_item_current{
@@ -109,12 +109,12 @@
 
                         a,
                         .nav_TLI{
-                            font-family: $nav_ftFamily_itemSubCurrent_BT;
+                            font-family: $nav_item_subNav_current_ftFamily_BT;
                         } 
                     }
 
                     &.nav_item_back_subNav{
-                        z-index: $zIndex_navSubMenu_back;
+                        z-index: $zIndex_nav_item_back_subNav;
                     }
 
                     &.openDR{
@@ -127,41 +127,41 @@
                 .nav_item_hasSubNav_level1{
                     a,
                     .nav_TLI_level1{
-                        color: $nav_ftColour_TLI_level1_BT;
+                        color: $nav_TLI_level1_ftColour_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrows_TLI_level1_openDR}');
+                            background-image: url('/nuevo/img/#{$nav_arrows_TLI_level1_openDR}');
                         }
                     }
                     
                     &.nav_item_current{  
                         > a,
                         .nav_TLI_level1{
-                            background-image: url('/cuatro/img/#{$navArrows_itemCurrent_level0}');
+                            background-image: url('/cuatro/img/#{$nav_arrows_item_current_level0}');
                             background-position: right 10px center;
-                            color: $nav_ftColour_TLICurrent_level1_BT;
+                            color: $nav_TLI_current_level1_ftColour_BT;
                         }
                     }
                 }
                 
                 .nav_subNav_level1{
                     z-index: $zIndex_navSubMenu_level1;
-                    background-color: $nav_bgColour_ulLevel1_BT;
+                    background-color: $nav_ul_level1_bgColour_BT;
 
                     li{
-                        background-color: $nav_bgColour_itemLevel1_BT;
+                        background-color: $nav_item_level1_bgColour_BT;
                         
                         a{
-                            color: $nav_ftColour_itemLevel1_BT;
+                            color: $nav_item_level1_ftColour_BT;
                         }
                     }
 
                     > .nav_item_current{
-                        background-color: $nav_bgColour_itemCurrent_level1_BT; 
-                        background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level1}');
+                        background-color: $nav_item_current_level1_bgColour_BT; 
+                        background-image: url('/nuevo/img/#{$nav_arrows_item_current_level1}');
                         
                         a{
-                            color: $nav_ftColour_itemCurrent_level1_BT;
+                            color: $nav_item_current_ftColour_level1_BT;
                         }
                     }
                 }
@@ -171,39 +171,39 @@
                 .nav_item_hasSubNav_level2{
                     a,
                     .nav_TLI_level2{
-                        color: $nav_ftColour_itemLevel2_BT;
+                        color: $nav_item_level2_ftColour_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrows_TLI_level2_openDR}');
+                            background-image: url('/nuevo/img/#{$nav_arrows_TLI_level2_openDR}');
                         }
                     }
                     
                     &.nav_item_current{    
                         a,
                         .nav_TLI_level1{
-                            color: $nav_ftColour_TLICurrent_level2_BT;
+                            color: $nav_TLI_current_level2_ftColour_BT;
                         }
                     }
                 }
                 
                 .nav_subNav_level2{
                     z-index: $zIndex_navSubMenu_level2;
-                    background-color: $nav_bgColour_ulLevel2_BT;
+                    background-color: $nav_ul_level2_bgColour_BT;
 
                     li{
-                        background-color: $nav_bgColour_itemLevel2_BT;
+                        background-color: $nav_item_level2_bgColour_BT;
                         
                         a{
-                            color: $nav_ftColour_itemLevel2_BT;
+                            color: $nav_item_level2_ftColour_BT;
                         }
                     }
 
                     > .nav_item_current{
-                        background-color: $nav_bgColour_itemCurrent_level2_BT; 
-                        background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level2}'); 
+                        background-color: $nav_item_current_level2_bgColour_BT; 
+                        background-image: url('/nuevo/img/#{$nav_arrows_item_current_level2}'); 
                         
                         a{
-                            color: $nav_ftColour_itemCurrent_level2_BT;
+                            color: $nav_item_current_ftColour_level2_BT;
                         }
                     }
                 }
@@ -213,39 +213,39 @@
                 .nav_item_hasSubNav_level3{
                     a,  
                     .nav_TLI_level3{
-                        color: $nav_ftColour_itemLevel2_BT;
+                        color: $nav_item_level2_ftColour_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$navArrows_TLI_level3_openDR}');
+                            background-image: url('/nuevo/img/#{$nav_arrows_TLI_level3_openDR}');
                         }
                     }
                     
                     &.nav_item_current{    
                         a,
                         .nav_TLI_level1{
-                            color: $nav_ftColour_TLICurrent_level3_BT;
+                            color: $nav_TLI_current_level3_ftColour_BT;
                         }
                     }
                 }
                 
                 .nav_subNav_level3{
                     z-index: $zIndex_navSubMenu_level3;
-                    background-color: $nav_bgColour_ulLevel3_BT;
+                    background-color: $nav_ul_level3_bgColour_BT;
 
                     li{
-                        background-color: $nav_bgColour_itemLevel3_BT;
+                        background-color: $nav_item_level3_bgColour_BT;
                         
                         a{
-                            color: $nav_ftColour_itemLevel3_BT;
+                            color: $nav_item_level3_ftColour_BT;
                         }
                     }
 
                     > .nav_item_current{
-                        background-color: $nav_bgColour_itemCurrent_level3_BT;
-                        background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level3}'); 
+                        background-color: $nav_item_current_level3_bgColour_BT;
+                        background-image: url('/nuevo/img/#{$nav_arrows_item_current_level3}'); 
                         
                         a{
-                            color: $nav_ftColour_itemCurrent_level3_BT;
+                            color: $nav_item_current_ftColour_level3_BT;
                         }
                     }
                 }

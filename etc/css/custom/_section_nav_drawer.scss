@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav Drawer Styles | Custom [section_nav_drawer.scss]
    ========================================================================== */
-@if $navDrawer_act == "on"{
+@if $nav_drawer_act == "on"{
     @include navBT{
         .nav_nav{
             @include posTR(10px, 10px);
@@ -20,26 +20,26 @@
                     
                 } @else {
                     width: 90px;
-                    height: $navDrawer_hamburger_height;
+                    height: $button_hamb_height;
                     background-position: 10px center;
-                    border: 1px solid $nav_bdColour_open!important;
+                    border: 1px solid $button_hamb_open_bdColour!important;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
-                    line-height: $navDrawer_hamburger_height;
+                    line-height: $button_hamb_height;
                 }
                 
-                @include borderRadius($nav_borderRadius);
+                @include borderRadius($nav_bdRadius);
                 background-size: 15px;
             }
 
             .button_hamb_close{
                 @include squareSize(45px);
                 background-size: 20px;
-                border: 1px solid $nav_bdColour_close!important;
+                border: 1px solid $button_hamb_close_bdColour!important;
             }
 
             .nav_main_ul{
-                @include borderStyleR($nav_bdColourR_navDrawer);
+                @include borderStyleR($nav_drawer_bdColourR);
 
                 li{
                     &,
@@ -57,8 +57,8 @@
                 }
 
                 > .nav_item_current{
-                    background-color: $nav_bgColour_itemCurrent_level0_BT;
-                    background-image: url('/nuevo/img/#{$navArrows_itemCurrent_level0}');
+                    background-color: $nav_item_current_level0_bgColour_BT;
+                    background-image: url('/nuevo/img/#{$nav_arrows_item_current_level0}');
                 }   
 
                 .nav_item_back{
@@ -77,7 +77,7 @@
                 .nav_subNav_level1{
                     > li{
                         & + li{
-                            @include borderStyleT($nav_bdColour_itemLevel1_BT);
+                            @include borderStyleT($nav_item_level1_bdColour_BT);
                         }
                     }
                 }
@@ -87,7 +87,7 @@
                 .nav_subNav_level2{
                     > li{
                         & + li{
-                            @include borderStyleT($nav_bdColour_itemLevel2_BT);
+                            @include borderStyleT($nav_item_level2_bdColour_BT);
                         }
                     }
                 }
@@ -97,7 +97,7 @@
                 .nav_subNav_level3{
                     > li{
                         & + li{
-                            @include borderStyleT($nav_bdColour_itemLevel3_BT);
+                            @include borderStyleT($nav_item_level3_bdColour_BT);
                         }
                     }
                 }

@@ -19,7 +19,7 @@
         height: $header_height_ALL;
     }
     
-    .logoH{
+    .logo_header{
         margin-bottom: 0;
         
         &, a{}
@@ -53,7 +53,7 @@
             box-shadow: $header_fixed_bxShadow;
         }
 
-        .logoH{
+        .logo_header{
 //          width: $logo_width_MO;
         }
     }
@@ -72,7 +72,7 @@
             box-shadow: $header_fixed_bxShadow;
         }
         
-        .logoH{
+        .logo_header{
 //          width: $logo_width_AML;
         }
     }
@@ -91,7 +91,7 @@
             box-shadow: $header_fixed_bxShadow;
         }
         
-        .logoH{
+        .logo_header{
 //          width: $logo_width_MLO;
         }
     }
@@ -106,7 +106,7 @@
             height: $header_height_BT;
         }
         
-        @if $header_fixed_act_BT == "on" or $navAcc_act == "on"{
+        @if $header_fixed_act_BT == "on" or $nav_accordion_act == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -123,17 +123,17 @@
         }   
             
         @if $logo_bgImage_before_act == "on"{
-            .logoH{
+            .logo_header{
                 width: $logo_width_BT;
                 height: $logo_height_BT_before;
             }
         }
         
-        @if $navAcc_act == "on"{
-            height: $header_height_navAcc_BT;
+        @if $nav_accordion_act == "on"{
+            height: $header_navAccordion_height_BT;
             box-shadow: 0 0 10px $greyL;
             
-            .logoH{
+            .logo_header{
                 height: $logo_height_BT_navAcc;
                 margin-right: auto;
                 margin-left: auto;
@@ -149,7 +149,7 @@
             }
             
         } @else {
-            .logoH{
+            .logo_header{
                 width: $logo_width_BT;
             
                 a,
@@ -159,18 +159,18 @@
             }
         }
         
-        @if $navDrawer_act == "on"{
-            .logoH{
+        @if $nav_drawer_act == "on"{
+            .logo_header{
                 &.clicked{
-                    @include borderStyleR($nav_bdColourR_navDrawer);
+                    @include borderStyleR($nav_drawer_bdColourR);
                     box-sizing: border-box;
                     position: fixed;
                     z-index: $zIndex_logo_clicked;
                     top: 0;
                     left: 0;
-                    width: calc(#{$navDrawer_width} - 5px);
-                    max-width: $navDrawer_width_max;
-                    height: $logo_clicked_height_FH;
+                    width: calc(#{$nav_drawer_width} - 5px);
+                    max-width: $nav_drawer_width_max;
+                    height: $logo_height_clicked_final;
                     background-color: $nav_bgColour_BT;
                     padding-top: $logo_clicked_height_PT;
                     padding-bottom: $logo_clicked_height_PB;
@@ -216,7 +216,7 @@
         }
         
         @if $nav_topper_act == "on"{
-            &.topperNav{
+            &.nav_topper{
                 position: fixed;
                 z-index: $zIndex_header_topper;
                 top: 0;
@@ -224,13 +224,13 @@
                 left: 0;
                 height: $topper_height_global;
                 
-                .logoH{
+                .logo_header{
                     z-index: $zIndex_logo_topper;
                 }
             }
         }
         
-        .logoH{
+        .logo_header{
             position: relative;
             z-index: $zIndex_logo;   
             
@@ -288,7 +288,7 @@
             height: $header_height_ATL;
         }
         
-        .logoH{
+        .logo_header{
             @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
@@ -307,7 +307,7 @@
             height: $header_height_AD;
         }   
         
-        .logoH{
+        .logo_header{
             @if $logo_bgImage_before_act == "on"{
                 &,
                 a{

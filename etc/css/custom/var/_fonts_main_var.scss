@@ -113,7 +113,7 @@ $fontStack_map:(
 
 /* // Espaciado general de texto -------------------------------------------- */
 $fontWeight_global: 400;
-$lineHeight_global: 1.4;
+$lineHeight_global: calc(1ex / 0.32);
 
 $fontSize_global:         1rem;
 $fontSize_paragraph_BT:   0.9rem;
@@ -155,9 +155,3 @@ $fontSize_map_desktop:(
     $h5_list: 1.6rem,
     $h6_list: 1.4rem
 );
-
-
-/* // Useful Text Format ---------------------------------------------------- */
-$fontSize_reset:     1rem;
-$fontSize_reset_em:   1em;
-$lineHeight_reset:   1em;

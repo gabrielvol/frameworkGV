@@ -16,7 +16,7 @@ $logo_height_BT_navAcc:     auto;
 $logo_clicked_height:       50px;
 $logo_clicked_height_PT:    50px;
 $logo_clicked_height_PB:    10px;
-$logo_clicked_height_FH:    calc(#{$logo_clicked_height} + #{$logo_clicked_height_PT} + #{$logo_clicked_height_PB});
+$logo_height_clicked_final:    calc(#{$logo_clicked_height} + #{$logo_clicked_height_PT} + #{$logo_clicked_height_PB});
 
 
 /* // Logo Sizes AT --------------------------------------------------------- */

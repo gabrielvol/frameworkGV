@@ -1,16 +1,15 @@
 /* =============================================================================
-   Nav Arrows | Custom [var/section_nav_arrows.scss]
+   Nav Arrows Backgrounds | Custom [var/section_nav_arrows_var.scss]
    ========================================================================== */
-// imported in _nav_colours.scss
 
-$navArrows_TLI_level1_openDR:        "nav_arrowD.svg";
-$navArrows_TLI_level2_openDR:        "nav_arrowD.svg";
-$navArrows_TLI_level3_openDR:        "nav_arrowD.svg";
+$nav_arrows_TLI_level1_openDR:          "nav_arrow_down.svg";
+$nav_arrows_TLI_level2_openDR:          "nav_arrow_down.svg";
+$nav_arrows_TLI_level3_openDR:          "nav_arrow_down.svg";
 
-$navArrows_itemCurrent_level0:       "nav_arrowL.svg";
-$navArrows_itemCurrent_level1:       "nav_arrowL.svg";
-$navArrows_itemCurrent_level2:       "nav_arrowL.svg";
-$navArrows_itemCurrent_level3:       "nav_arrowL.svg";
+$nav_arrows_item_current_level0:        "nav_arrow_left.svg";
+$nav_arrows_item_current_level1:        "nav_arrow_left.svg";
+$nav_arrows_item_current_level2:        "nav_arrow_left.svg";
+$nav_arrows_item_current_level3:        "nav_arrow_left.svg";
 
-$navArrows_backMenu_TLI:             "nav_arrowL.svg";
-$navArrows_backMenu_TLI_openDR:      "nav_arrowD.svg";
+$nav_arrows_item_back_TLI:              "nav_arrow_left.svg";
+$nav_arrows_item_back_TLI_openDR:       "nav_arrow_down.svg";

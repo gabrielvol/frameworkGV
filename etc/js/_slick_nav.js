@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var highest_index = 10000; 
     
-    $(".navMain, .navMain .mainMenu").css("z-index", highest_index + 1);
+    $(".nav_nav, .nav_nav .nav_main_ul").css("z-index", highest_index + 1);
     
     $(".slickNav .slickPrev").css("z-index", highest_index + 1);
     $(".slickNav .slickNext").css("z-index", highest_index + 1);

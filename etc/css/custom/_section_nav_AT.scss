@@ -52,8 +52,8 @@
                 &.nav_item_current{
                     a,
                     .nav_TLI{
-                        @if $nav_itemCurrent_bdB_act == "on"{
-                            @include borderStyleB($nav_bdColour_itemCurrent, 3px);
+                        @if $nav_item_current_bdB_act == "on"{
+                            @include borderStyleB($nav_item_current_bdColour, 3px);
                         }
                     }
                 }
@@ -118,7 +118,7 @@
                     &, a{}
                     
                     & + li{
-                        @include borderStyleT($nav_bdColour_itemSub_AT);
+                        @include borderStyleT($nav_item_subNav_bdColour_AT);
                     }
                     
                     &:last-child{
@@ -133,8 +133,8 @@
         }
         
         @if $nav_topper_act == "on"{
-            &.topperNav{
-                @include borderStyleB($nav_bdColour_topper); 
+            &.nav_topper{
+                @include borderStyleB($nav_topper_bdColour); 
                 position: fixed;
                 right: 0;
                 width: 100%; 
@@ -157,7 +157,7 @@
                     > .nav_item_current{
                         a,
                         .nav_TLI{
-                            @include borderStyleB($nav_bdColour_topper_itemCurrent, 3px);
+                            @include borderStyleB($nav_topper_item_current_bdColour, 3px);
                         }
                     }
 
@@ -182,7 +182,7 @@
                         }
 
                         li{
-                            @include borderStyleT($nav_bdColour_itemSub_AT);
+                            @include borderStyleT($nav_item_subNav_bdColour_AT);
 
                             a{
                                 padding-left: 10px;
@@ -194,7 +194,7 @@
                             }
                             
                             &:first-child{
-                                @include borderStyleT($nav_bdColour_itemSub_AT);
+                                @include borderStyleT($nav_item_subNav_bdColour_AT);
                             }
                     
                             &:last-child{
@@ -311,7 +311,7 @@
         }
 
         @if $nav_topper_act == "on"{
-            &.topperNav{
+            &.nav_topper{
                 .nav_main_ul{}
                 
                 @if $nav_hasSub_level1_act == "on"{
@@ -340,7 +340,7 @@
         }
         
         @if $nav_topper_act == "on"{
-            &.topperNav{
+            &.nav_topper{
                 @if $nav_hasSub_level1_act == "on"{
                     .nav_item_hasSubNav{
                         &:hover{

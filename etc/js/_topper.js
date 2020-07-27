@@ -1,26 +1,22 @@
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('#header').addClass('topperHeader');
-        $('#header').addClass('topperShadow');
-        $('.navMain').addClass('topperNav');
+        $('#header').addClass('header_topper');
+        $('.nav_nav').addClass('nav_topper');
     } else {
-        $('#header').removeClass('topperHeader');
-        $('#header').removeClass('topperShadow');
-        $('.navMain').removeClass('topperNav');
+        $('#header').removeClass('header_topper');
+        $('.nav_nav').removeClass('nav_topper');
     }
 });
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-        $('#header').addClass('topperShadow');
-        $('.navMain').addClass('topperNav'); 
+        $('.nav_nav').addClass('nav_topper'); 
         $('#main').addClass('topperMain');        
-        $('.logoH img').attr("src", "/clientes/agridulze/img/logo_ad.png");
+        $('.logo_header img').attr("src", "/clientes/agridulze/img/logo_ad.png");
     } else {
-        $('#header').removeClass('topperHeader');
-        $('#header').removeClass('topperShadow');
+        $('#header').removeClass('header_topper');
         $('#main').removeClass('topperMain');
-        $('.logoH img').attr("src", "/clientes/agridulze/img/logo.png");
+        $('.logo_header img').attr("src", "/clientes/agridulze/img/logo.png");
     }
 });
 
@@ -49,8 +45,8 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('.mainNav, .hamb').addClass('topper');
+        $('.mainNav, button_hamb').addClass('topper');
     } else {
-        $('.mainNav, .hamb').removeClass('topper');
+        $('.mainNav, button_hamb').removeClass('topper');
     }
 });

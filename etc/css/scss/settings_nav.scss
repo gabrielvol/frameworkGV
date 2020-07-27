@@ -1,5 +1,5 @@
 /* =============================================================================
-   Nav Settings | Etc [settingsNav.scss]
+   Nav Settings | Etc [settings_nav.scss]
    ========================================================================== */
 nav{
     .nav_TLI,
@@ -50,8 +50,8 @@ nav{
             opacity: 1;
             background-image: url('/nuevo/img/nav_hamb.svg');
             background-repeat: no-repeat;
-            color: $nav_ftColour_hamburger;
-            font-family: $nav_ftFamily_hamburger;
+            color: $button_hamb_ftColour;
+            font-family: $button_hamb_ftFamily;
         }
         
         .button_hamb_close{
@@ -75,7 +75,7 @@ nav{
             
             > li{
                 & + li{
-                    @include borderStyleT($nav_bdColour_itemLevel0_BT);
+                    @include borderStyleT($nav_item_level0_bdColour_BT);
                 }
             }
         }
@@ -94,38 +94,38 @@ nav{
             background-color: $nav_bgColour_AT; 
             
             > li{
-                background-color: $nav_bgColour_item_AT;
+                background-color: $nav_item_bgColour_AT;
 
                 a,
                 .nav_TLI{
-                    color: $nav_ftColour_item_AT;
+                    color: $nav_item_ftColour_AT;
                     font-family: $nav_ftFamily_AT;
                 }    
 
                 &:focus, &:hover{
-                    background-color: $nav_bgColour_item_hover; 
+                    background-color: $nav_item_bgColour_hover; 
                     
                     > a{
-                        color: $nav_ftColour_item_hover;
+                        color: $nav_item_ftColour_hover;
                     }
                 }            
             }
 
             > .nav_item_current{
-                background-color: $nav_bgColour_itemCurrent_AT;
+                background-color: $nav_item_current_bgColour_AT;
 
                 a,
                 .nav_TLI{
-                    color: $nav_ftColour_itemCurrent_AT;
-                    font-family: $nav_ftFamily_itemCurrent_AT;
+                    color: $nav_item_current_ftColour_AT;
+                    font-family: $nav_item_current_ftFamily_AT;
                 }  
 
                 &:focus, &:hover{
-                    background-color: $nav_bgColour_itemCurrent_Hover;
+                    background-color: $nav_item_current_bgColour_hover;
 
                     > a,
                     .nav_TLI{
-                        color: $nav_ftColour_itemCurrent_hover;
+                        color: $nav_item_current_ftColour_hover;
                     }  
                 }         
             } 
@@ -134,24 +134,24 @@ nav{
         @if $nav_hasSub_act == "on"{
             .nav_subNav{
                 display: $none;
-                background-color: $nav_bgColour_ULsub_AT;
+                background-color: $nav_subNav_bgColour_AT;
                 
                 > li{
                     @include transition(0.7s);
-                    background-color: $nav_bgColour_itemSub_AT;
+                    background-color: $nav_item_subNav_bgColour_AT;
                     
                     a,
                     .nav_TLI{
-                        color: $nav_ftColour_itemSub_AT;
-                        font-family: $nav_ftFamily_itemSub_AT;
+                        color: $nav_item_subNav_ftColour_AT;
+                        font-family: $nav_item_subNav_ftFamily_AT;
                         cursor: pointer;
                     }
                     
                     &:focus, &:hover{
-                        background-color: $nav_bgColour_itemSub_Hover;
+                        background-color: $nav_item_subNav_bgColour_hover;
                         
                         a{
-                            color: $nav_ftColour_itemSub_hover;  
+                            color: $nav_item_subNav_ftColour_hover;  
                         }
                     }
                 }
@@ -159,18 +159,18 @@ nav{
                 > .nav_item_current{
                     a,
                     .nav_TLI{
-                        color: $nav_ftColour_itemSubCurrent_AT;
-                        font-family: $nav_ftFamily_itemSubCurrent_AT;
+                        color: $nav_item_subNav_current_ftColour_AT;
+                        font-family: $nav_item_subNav_current_ftFamily_AT;
                         cursor: default;
                     }
 
                     &, &:focus, &:hover{
-                        background-color: $nav_bgColour_itemSubCurrent_AT;
+                        background-color: $nav_item_subNav_current_bgColour_AT;
                     }
 
                     &:focus, &:hover{
                         a{
-                            color: $nav_ftColour_itemSubCurrent_hover;
+                            color: $nav_item_subNav_current_ftColour_hover;
                         }
                     }
                 }
@@ -182,9 +182,9 @@ nav{
         }
         
         @if $nav_topper_act == "on"{
-            &.topperNav{
+            &.nav_topper{
                 top: 0;
-                background-color: $nav_bgColour_topper;
+                background-color: $nav_topper_bgColour;
 
                 .button_hamb{
                     display: $none;
@@ -194,13 +194,13 @@ nav{
                     > li{
                         > a,
                         > .nav_TLI{
-                            color: $nav_ftColour_topper;
+                            color: $nav_topper_ftColour;
                         }
 
                         &:focus, &:hover{
                             > a,
                             .nav_TLI{
-                                color: $nav_ftColour_topper_hover;
+                                color: $nav_topper_ftColour_hover;
                             }  
                         }
                     }
@@ -209,7 +209,7 @@ nav{
                         &, &:focus, &:hover{
                             > a,
                             .nav_TLI{
-                                color: $nav_ftColour_topper_itemCurrent;
+                                color: $nav_topper_item_current_ftColour;
                             }  
                         }
                     }
@@ -230,7 +230,7 @@ nav{
             .nav_item_current{
                 a,
                 .nav_TLI{
-                    font-family: $nav_ftFamily_itemCurrent_ATL;
+                    font-family: $nav_item_current_ftFamily_ATL;
                 }
             }
         }
@@ -240,14 +240,14 @@ nav{
                 > li{                
                     a,
                     .nav_TLI{
-                        font-family: $nav_ftFamily_itemSub_ATL;
+                        font-family: $nav_item_subNav_ftFamily_ATL;
                     }                    
                 }
                 
                 > .nav_item_current{
                     a,
                     .nav_TLI{
-                        font-family: $nav_ftFamily_itemSubCurrent_ATL;
+                        font-family: $nav_item_subNav_current_ftFamily_ATL;
                     }                    
                 }
             }
@@ -265,13 +265,13 @@ nav{
             }
             
             @if $nav_topper_act == "on"{
-                &.topperNav{
+                &.nav_topper{
                     .nav_main_ul{
                         > li{
                             > a,
                             > .nav_TLI{                
                                 &.openDR{
-                                    color: $nav_ftColour_topper_hover;
+                                    color: $nav_topper_ftColour_hover;
                                 }
                             }
                         }

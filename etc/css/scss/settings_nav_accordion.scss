@@ -1,10 +1,10 @@
 /* =============================================================================
-   Nav Accordion Settings | Etc [settingsNavAccordion.scss]
+   Nav Accordion Settings | Etc [settings_nav_accordion.scss]
    ========================================================================== */
-@if $navAcc_act == "on"{
+@if $nav_accordion_act == "on"{
     .nav_nav{
         @include navBT{
-            top: calc(#{$header_height_navAcc_BT} / 2);
+            top: calc(#{$header_navAccordion_height_BT} / 2);
             right: 0;
             left: 0;
             
@@ -28,8 +28,8 @@
                 @include transition(0.5s);
                 box-sizing: border-box;
                 position: fixed;
-                z-index: $zIndex_navAcc_ul;
-                top: $header_height_navAcc_BT;
+                z-index: $zIndex_navAccordion_ul;
+                top: $header_navAccordion_height_BT;
                 right: 0;
                 left: 0;
                 width: 100%;
@@ -41,14 +41,14 @@
                     &,
                     a,
                     .nav_TLI{
-                        @include equalHeightAndLineHeight($navAcc_item_height);
+                        @include equalHeightAndLineHeight($nav_accordion_item_height);
                     }
                 }
                 
                 &.open{
                     display: $block;
                     height: auto;
-                    max-height: calc(100vh - #{$header_height_navAcc_BT});
+                    max-height: calc(100vh - #{$header_navAccordion_height_BT});
                 }
             }
         }

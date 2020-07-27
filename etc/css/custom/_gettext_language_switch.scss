@@ -56,19 +56,19 @@
             }
         }
         
-        @if $navDrawer_act == "on"{
+        @if $nav_drawer_act == "on"{
             &.clicked{
                 top: auto;
                 right: auto;
                 position: fixed;
                 z-index: $zIndex_language_clicked;
                 
-                @if $language_flag_clicked_bottom_act == "on"{
+                @if $language_menu_navDrawer_clicked_act == "on"{
                     left: 0;
                     bottom: 0;
                     box-sizing: border-box;
-                    width: calc(#{$navDrawer_width_final} - 5px);
-                    max-width: $navDrawer_width_max;
+                    width: calc(#{$nav_drawer_width_final} - 5px);
+                    max-width: $nav_drawer_width_max;
                     height: calc(#{$language_ul_height_clicked} + #{$language_ul_height_clicked_PT} + #{$language_ul_height_clicked_PB});
                     padding-top: $language_ul_height_clicked_PT;
                     padding-bottom: $language_ul_height_clicked_PB;

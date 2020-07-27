@@ -3,18 +3,17 @@
    ========================================================================== */
     
 /* // General --------------------------------------------------------------- */
-$nav_borderRadius:                  $helpers_border_radius_global;
+$nav_bdRadius:                  $helpers_border_radius_global;
 
     
 /* // Nav List -------------------------------------------------------------- */
-$navList_ul_width_BT:               200px;
+$nav_list_ul_width_BT:               200px;
 
     
 /* // Nav Drawer ------------------------------------------------------------ */
-$navDrawer_width:                   70vw;
-$navDrawer_width_max:               300px;
-$navDrawer_width_final:             calc(#{$navDrawer_width} - 5px);
-$navDrawer_hamburger_height:        40px;
+$nav_drawer_width:                   70vw;
+$nav_drawer_width_max:               300px;
+$nav_drawer_width_final:             calc(#{$nav_drawer_width} - 5px);
 
     
 /* // Nav Accordion --------------------------------------------------------- */

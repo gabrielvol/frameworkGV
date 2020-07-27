@@ -64,8 +64,8 @@
     }
     
     @include beforeTablet{
-        @if $navAcc_act == "on"{
-            padding-top: $header_height_navAcc_BT;
+        @if $nav_accordion_act == "on"{
+            padding-top: $header_navAccordion_height_BT;
         }
         @if $header_fixed_act_BT == "on"{
             padding-top: $page_PT_BT;

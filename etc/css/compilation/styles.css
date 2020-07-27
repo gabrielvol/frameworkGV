@@ -1707,7 +1707,7 @@ article, article::before, article::after, details, details::before, details::aft
   h3 {
     page-break-after: avoid; }
   /* // Main Styles ----------------------------------------------------------- */
-  .logoH {
+  .logo_header {
     display: block;
     height: 3cm;
     margin: 10px auto 20px; }
@@ -2130,7 +2130,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Header Styles | Custom [section_header.scss]
    ========================================================================== */
-#header .logoH {
+#header .logo_header {
   margin-bottom: 0; }
 
 @media (max-width: 766px) {
@@ -2138,12 +2138,12 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 15px; }
-    #header .logoH {
+    #header .logo_header {
       width: 220px; }
-      #header .logoH a,
-      #header .logoH img {
+      #header .logo_header a,
+      #header .logo_header img {
         width: 100%; }
-    #header .logoH.clicked {
+    #header .logo_header.clicked {
       border-right: 1px solid #000;
       box-sizing: border-box;
       position: fixed;
@@ -2157,32 +2157,32 @@ article, article::before, article::after, details, details::before, details::aft
       padding-top: 50px;
       padding-bottom: 10px;
       margin: 0; }
-      #header .logoH.clicked .logo_before,
-      #header .logoH.clicked a,
-      #header .logoH.clicked img {
+      #header .logo_header.clicked .logo_before,
+      #header .logo_header.clicked a,
+      #header .logo_header.clicked img {
         width: auto;
         height: 100%; }
-      #header .logoH.clicked img {
+      #header .logo_header.clicked img {
         margin-right: auto;
         margin-left: auto; }
-      #header .logoH.clicked .logo_before {
+      #header .logo_header.clicked .logo_before {
         background: none; } }
 
 @media (min-width: 767px) {
-  #header .logoH {
+  #header .logo_header {
     position: relative;
     z-index: 7100;
     width: 220px; }
-    #header .logoH a,
-    #header .logoH img {
+    #header .logo_header a,
+    #header .logo_header img {
       width: 100%; } }
 
 @media (min-width: 1024px) {
-  #header .logoH {
+  #header .logo_header {
     width: 220px; } }
 
 @media (min-width: 1200px) {
-  #header .logoH {
+  #header .logo_header {
     width: 220px; } }
 
 /* =============================================================================
@@ -2390,7 +2390,7 @@ nav li:focus a, nav li:hover a {
         display: block; }
       .nav_nav .nav_main_ul > .nav_item_current {
         background-color: #f2f2f2;
-        background-image: url("/nuevo/img/nav_arrowL.svg"); }
+        background-image: url("/nuevo/img/nav_arrow_left.svg"); }
       .nav_nav .nav_main_ul .nav_item_back {
         border-bottom: #818181 solid 2px; }
         .nav_nav .nav_main_ul .nav_item_back + .nav_item_back {

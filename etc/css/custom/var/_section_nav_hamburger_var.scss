@@ -1,5 +1,5 @@
 /* =============================================================================
-   Language Activators | Custom [act/language_act.scss]
+   Nav Hamburger Variables | Custom [var/section_nav_hamburger.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -42,6 +42,26 @@
 
 
 
-/* // Flags ----------------------------------------------------------------- */
-$language_flag_circled_act:         off;
-$language_menu_navDrawer_clicked_act:  off;
+/* // Sizes ----------------------------------------------------------------- */
+$button_hamb_height:        40px;
+
+
+
+/* // Colours --------------------------------------------------------------- */
+/*___ Font ______________________________*/
+$button_hamb_ftColour:              $greyXXD;
+$button_hamb_ftColour_clicked:      $button_hamb_ftColour;
+
+
+/*___ Backgrounds _______________________*/
+$button_hamb_bgColour:              $bgWhite;
+
+
+/*___ Borders ___________________________*/
+$button_hamb_open_bdColour:         $bdGreyXD;
+$button_hamb_close_bdColour:        $bdGreyXD;
+
+
+
+/* // Fonts ----------------------------------------------------------------- */
+$button_hamb_ftFamily:           $arial;

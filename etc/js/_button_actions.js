@@ -1,10 +1,10 @@
 $(document).ready(function () {
     /* button actions */
     $(".login").click(function () {
-        $(".modalBG, .login").fadeToggle("slow", "linear").removeClass('displayNone');
+        $(".modal_bg_global, .login").fadeToggle("slow", "linear").removeClass('displayNone');
     });
-    $('.modalBG, .close').click(function () {
-        $('.modalBG, .popup').hide().addClass('displayNone');
+    $('.modal_bg_global, .close').click(function () {
+        $('.modal_bg_global, .popup').hide().addClass('displayNone');
     });
     $('.contacto').click(function () {
         $(".logo").css({"display": 'block'});
