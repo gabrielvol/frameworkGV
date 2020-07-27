@@ -21,7 +21,7 @@
     }
     
     @if $sliderArrows_carousel_act == "on"{
-        &.slickCarousel{
+        &.slick_carousel{
             position: relative;
             background-color: $slider_carousel_bgColour;
 
@@ -43,7 +43,7 @@
     }
 }
 
-.slider_header{
+.slider_main{
     &,
     .slick-list,
     .slick-track,
