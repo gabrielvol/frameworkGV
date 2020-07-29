@@ -3,7 +3,7 @@
    ========================================================================== */
 // imported in _slider.scss
 
-@if $sliderArrows_act == "on"{
+@if $slider_arrows_act == "on"{
     .slickPrev{
         left: 2%;
         background-image: url('/nuevo/img/slider_arrow_left.svg');
@@ -11,7 +11,7 @@
 
     .slickNext{
         right: 2%;
-        background-image: url('/nuevo/img/slider_arrowR.svg');
+        background-image: url('/nuevo/img/slider_arrow_right.svg');
     }
 
     .slickPrev,
@@ -33,39 +33,39 @@
     @include beforeTablet{
         .slickPrev,
         .slickNext{
-            width: $sliderArrows_width_BT;
-            height: $sliderArrows_height_BT;
-            margin-top: calc(-1 * #{$sliderArrows_height_half_BT});   
+            width: $slider_arrows_width_BT;
+            height: $slider_arrows_height_BT;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_BT});   
         }
     }
 
     @include afterTablet{
         .slickPrev,
         .slickNext{
-            width: $sliderArrows_width_AT;
-            height: $sliderArrows_height_AT;
-            margin-top: calc(-1 * #{$sliderArrows_height_half_AT});
+            width: $slider_arrows_width_AT;
+            height: $slider_arrows_height_AT;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_AT});
         }
     }
 }
      
-@if $sliderArrows_carousel_act == "on"{
+@if $slider_arrows_carousel_act == "on"{
     .slick_carousel{
         .slickPrev{
             background-image: url('/nuevo/img/carousel_arrow_left.svg');
         }
 
         .slickNext{
-            background-image: url('/nuevo/img/carousel_arrowR.svg');
+            background-image: url('/nuevo/img/carousel_arrow_right.svg');
         }
         
         @include beforeTablet{
             .slick-prev{
-                left: calc(#{$sliderArrows_width_BT} / 4);
+                left: calc(#{$slider_arrows_width_BT} / 4);
             }
 
             .slick-next{
-                right: calc(#{$sliderArrows_width_BT} / 4);
+                right: calc(#{$slider_arrows_width_BT} / 4);
             }
             
             .slickPrev,
@@ -78,11 +78,11 @@
         
         @include afterTablet{
             .slick-prev{
-                left: calc(#{$sliderArrows_width_AT} / 4);
+                left: calc(#{$slider_arrows_width_AT} / 4);
             }
 
             .slick-next{
-                right: calc(#{$sliderArrows_width_AT} / 4);
+                right: calc(#{$slider_arrows_width_AT} / 4);
             }
             
             .slickPrev,

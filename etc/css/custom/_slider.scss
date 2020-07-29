@@ -20,7 +20,7 @@
         @include clearfix;
     }
     
-    @if $sliderArrows_carousel_act == "on"{
+    @if $slider_arrows_carousel_act == "on"{
         &.slick_carousel{
             position: relative;
             background-color: $slider_carousel_bgColour;

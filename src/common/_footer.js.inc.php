@@ -24,6 +24,7 @@
     // Home
 //<script src="/nuevo/js/aaaaaa.js"></script>
 //<script src="/nuevo/js/_aaaaaa.js"></script>
+//<script src="/nuevo/js/_index.js"></script>
 ?>
 
 <?php endif; if($nav_pageCurrent == 000):

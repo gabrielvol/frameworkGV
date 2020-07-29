@@ -14,18 +14,18 @@
     $media__videoA_src_th_max     = 'https://img.youtube.com/vi/'. $media__videoA_id .'/maxresdefault.jpg';
     
     
-    $media__videoB_id             = 'aaaaaaaaaaaa';
-    $media__videoB_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media__videoB_id . '?rel=0&amp;showinfo=0';
-    $media__videoB_src_full       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/0.jpg';
-    $media__videoB_src_th01       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/1.jpg';
-    $media__videoB_src_th02       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/2.jpg';
-    $media__videoB_src_th03       = 'https://img.youtube.com/vi/'. $media__videoB_id .'/3.jpg';
+//    $media__NOMBRE_id             = 'aaaaaaaaaaaa';
+//    $media__NOMBRE_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media__NOMBRE_id . '?&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;mute=1&amp;playlist='. $media__NOMBRE_id;
+//    $media__NOMBRE_src_full       = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/0.jpg';
+//    $media__NOMBRE_src_th01       = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/1.jpg';
+//    $media__NOMBRE_src_th02       = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/2.jpg';
+//    $media__NOMBRE_src_th03       = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/3.jpg';
     
-    $media__videoB_src_th_default = 'https://img.youtube.com/vi/'. $media__videoB_id .'/default.jpg';
-    $media__videoB_src_th_hq      = 'https://img.youtube.com/vi/'. $media__videoB_id .'/hqdefault.jpg';
-    $media__videoB_src_th_mq      = 'https://img.youtube.com/vi/'. $media__videoB_id .'/mqdefault.jpg';
-    $media__videoB_src_th_sd      = 'https://img.youtube.com/vi/'. $media__videoB_id .'/sddefault.jpg';
-    $media__videoB_src_th_max     = 'https://img.youtube.com/vi/'. $media__videoB_id .'/maxresdefault.jpg';
+//    $media__NOMBRE_src_th_default = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/default.jpg';
+//    $media__NOMBRE_src_th_hq      = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/hqdefault.jpg';
+//    $media__NOMBRE_src_th_mq      = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/mqdefault.jpg';
+//    $media__NOMBRE_src_th_sd      = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/sddefault.jpg';
+//    $media__NOMBRE_src_th_max     = 'https://img.youtube.com/vi/'. $media__NOMBRE_id .'/maxresdefault.jpg';
     
     
 

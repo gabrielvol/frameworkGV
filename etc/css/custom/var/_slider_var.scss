@@ -27,22 +27,22 @@ $slider_carousel_bgColour:          $bgWhite;
 
 
 /* // Slider Arrows --------------------------------------------------------- */
-$sliderArrows_width_BT:             30px;
-$sliderArrows_height_BT:            $sliderArrows_width_BT;
-$sliderArrows_height_half_BT:       calc(#{$sliderArrows_height_BT} / 2);
+$slider_arrows_width_BT:             30px;
+$slider_arrows_height_BT:            $slider_arrows_width_BT;
+$slider_arrows_height_half_BT:       calc(#{$slider_arrows_height_BT} / 2);
 
-$sliderArrows_width_AT:             50px;
-$sliderArrows_height_AT:            $sliderArrows_width_AT;
-$sliderArrows_height_half_AT:       calc(#{$sliderArrows_height_AT} / 2);
+$slider_arrows_width_AT:             50px;
+$slider_arrows_height_AT:            $slider_arrows_width_AT;
+$slider_arrows_height_half_AT:       calc(#{$slider_arrows_height_AT} / 2);
 
 
 /* // Carousel Arrows ------------------------------------------------------- */
-$carouselArrows_width_BT:           $sliderArrows_width_BT;
-$carouselArrows_height_BT:          $sliderArrows_height_BT;
+$carouselArrows_width_BT:           $slider_arrows_width_BT;
+$carouselArrows_height_BT:          $slider_arrows_height_BT;
 $carouselArrows_height_half_BT:     calc(#{$carouselArrows_height_BT} / 2);
 
-$carouselArrows_width_AT:           $sliderArrows_width_AT;
-$carouselArrows_height_AT:          $sliderArrows_height_AT;
+$carouselArrows_width_AT:           $slider_arrows_width_AT;
+$carouselArrows_height_AT:          $slider_arrows_height_AT;
 $carouselArrows_height_half_AT:     calc(#{$carouselArrows_height_AT} / 2);
 
 $carousel_PH_BT:                    calc(#{$carouselArrows_width_BT} * 1.5);
@@ -50,8 +50,8 @@ $carousel_PH_AT:                    calc(#{$carouselArrows_width_AT} * 1.5);
 
 
 /* // Dots ------------------------------------------------------------------ */
-$sliderDots_width:                  15px;
-$sliderDots_height:                 $sliderDots_width;
-$sliderDots_widthHeight:            $sliderDots_width $sliderDots_height;
-$sliderDots_separation:             10px;
-$sliderDots_MT:                     calc(#{$sliderDots_height} + 20px);
+$slider_dots_width:                  15px;
+$slider_dots_height:                 $slider_dots_width;
+$slider_dots_widthHeight:            $slider_dots_width $slider_dots_height;
+$slider_dots_separation:             10px;
+$slider_dots_MT:                     calc(#{$slider_dots_height} + 20px);

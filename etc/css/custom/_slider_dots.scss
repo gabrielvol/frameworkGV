@@ -3,13 +3,13 @@
    ========================================================================== */
 // imported in _slider.scss
 
-@if $sliderDots_act == "on"{
+@if $slider_dots_act == "on"{
     .slickDots{
         list-style: none;
         position: relative;
         z-index: $zIndex_slider_arrows_dots;
-        top: calc(-1 * #{$sliderDots_MT});
-        height: calc(#{$sliderDots_height} + calc(#{$sliderDots_separation} * 2));
+        top: calc(-1 * #{$slider_dots_MT});
+        height: calc(#{$slider_dots_height} + calc(#{$slider_dots_separation} * 2));
         margin: 0 auto;
         text-align: center;
 
@@ -18,11 +18,11 @@
             @include opacityCustom(60);
             display: inline-block;
             float: $none;
-            height: $sliderDots_height;
-            padding: $sliderDots_separation;
+            height: $slider_dots_height;
+            padding: $slider_dots_separation;
 
             &, button{
-                @include squareSize($sliderDots_width);
+                @include squareSize($slider_dots_width);
             }
 
             button{
