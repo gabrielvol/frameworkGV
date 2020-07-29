@@ -5,7 +5,7 @@
     @include navBT{
         .nav_nav{
             .button_hamb_open{
-                background-color: $button_hamb_bgColour;
+                background-color: $button_hamb_open_bgColour;
                 
                 &.clicked{
                     opacity: 0.5;
@@ -14,6 +14,8 @@
             }
 
             .button_hamb_close{
+                background-color: $button_hamb_close_bgColour;
+                
                 &.clicked{
                     display: block;
                 } 
@@ -92,6 +94,7 @@
                 }
                 
                 .nav_subNav{
+                    @include borderStyleB($nav_subNav_borderB_BT, 3px);
                     position: relative;
                     top: 0;
                     right: $nav_drawer_width;

@@ -8,7 +8,7 @@
             width: calc(100% - #{$logo_width_AT});
         }
          
-        @if $nav_fixed_act == "on"{
+        @if $nav_fixed_AT_act == "on"{
             position: fixed;
             top: 0;
             right: 0;

@@ -198,6 +198,10 @@
     
     //@include navAT
     @include afterTablet{
+        @if $nav_fixed_AT_act == "on"{
+            padding-top: $nav_height_AT;
+        }
+        
         @if $fullHeight_index_act_AT == "on" or $fullHeight_sections_act_AT == "on"{
             height: $header_height_AT;
         }

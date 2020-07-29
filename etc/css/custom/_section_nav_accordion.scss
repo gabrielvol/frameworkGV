@@ -24,7 +24,7 @@
                 }
                 @include borderRadius($nav_bdRadius); 
                 border: 1px solid $button_hamb_open_bdColour!important;
-                background-color: $button_hamb_bgColour;
+                background-color: $button_hamb_open_bgColour;
                 background-size: 15px;
             }
 
