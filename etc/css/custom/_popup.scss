@@ -38,7 +38,7 @@
     }
     
     .pop_innerContainer{
-        @include posTRBL;
+        @include positionTRBL;
         position: absolute;
         overflow: auto;
     }
@@ -98,7 +98,7 @@
     }
 
     .pop_close{
-        @include posTR(10px, 10px);
+        @include positionTR(10px, 10px);
     }
 
     .pop_submit{
@@ -146,12 +146,12 @@
         margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);  
 
         .pop_innerContainer{
-            @include posTRBL(20px, 20px, 20px, 20px);
+            @include positionTRBL(20px, 20px, 20px, 20px);
             padding: 20px;
         }
 
         .pop_close{
-            @include posTR(10px, 10px);
+            @include positionTR(10px, 10px);
         }
     }
 }

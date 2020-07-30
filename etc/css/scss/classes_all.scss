@@ -3,7 +3,7 @@
    ========================================================================== */
     //Accessibility
 #go-main-content{
-    @include posTL(auto, -10000px);
+    @include positionTL(auto, -10000px);
     position: absolute;
     width: 1px;
     height: 1px;
@@ -40,15 +40,15 @@
     .fullWidth{width: 100%}
     .halfWidth{width: 50%}
     .fullHeight{
-        @include posTB(0, 0);
+        @include positionTB(0, 0);
         position: absolute;
     }
     .coverAll{
-        @include posTRBL(0, 0, 0, 0);
+        @include positionTRBL(0, 0, 0, 0);
         position: absolute;
     }
     .coverAllMask{
-        @include posTRBL(0, 0, 0, 0);
+        @include positionTRBL(0, 0, 0, 0);
         position: absolute;
         overflow: hidden;
     }

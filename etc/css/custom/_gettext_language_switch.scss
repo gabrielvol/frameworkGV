@@ -24,7 +24,7 @@
 
     @include beforeTablet{
     //@include navBT{
-        @include posTL(15px, 20px);
+        @include positionTL(15px, 20px);
         position: absolute;
            
         &,
@@ -100,7 +100,7 @@
 
     @include afterTablet{
     //@include navAT{
-        @include posTR(10px, $language_flag_right_AT);
+        @include positionTR(10px, $language_flag_right_AT);
         position: absolute;
            
         &,

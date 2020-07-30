@@ -7,7 +7,7 @@
             $position: 7px;
             
             @include borderRadius();
-            @include posTRBL($position, $position, $position, $position);
+            @include positionTRBL($position, $position, $position, $position);
             overflow: hidden;
         } 
         

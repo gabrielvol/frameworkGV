@@ -4,11 +4,11 @@
 @if $nav_drawer_act == "on"{
     @include navBT{
         .nav_nav{
-            @include posTR(10px, 10px);
+            @include positionTR(10px, 10px);
             position: fixed;
 
             .button_hamb{
-                @include posTR(0, 0);
+                @include positionTR(0, 0);
             }
 
             .button_hamb_open{

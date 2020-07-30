@@ -3,7 +3,7 @@
    ========================================================================== */
 .modal_bg_global,
 .modal_nav{
-    @include posTRBL();
+    @include positionTRBL();
     position: fixed;
     z-index: $zIndex_modal_bg;
 }
