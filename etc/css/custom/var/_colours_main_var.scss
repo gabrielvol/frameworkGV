@@ -48,7 +48,7 @@ $colours_map_light_darkenValue: 20%;
 $colours_map_dark:(
     greyD:          #4d4d4d,
     greyXD:         #666,
-    greyXXD:        #333,
+    grey2XD:        #333,
 //  grey3XD:        #111,
     black:          #000
 );
@@ -107,7 +107,7 @@ $greyL:             map-get($colours_map_merged, greyL);
 $grey:              map-get($colours_map_merged, grey);
 $greyD:             map-get($colours_map_merged, greyD);
 $greyXD:            map-get($colours_map_merged, greyXD);
-$greyXXD:           map-get($colours_map_merged, greyXXD);
+$grey2XD:           map-get($colours_map_merged, grey2XD);
 //$grey3XD:           map-get($colours_map_merged, grey3XD);
 
 ///**Anchor Colours Light:** 

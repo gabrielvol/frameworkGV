@@ -1,0 +1,177 @@
+/* =============================================================================
+   Angled Edges Functions | Common [functions_angledEdges.scss]scss]
+   ========================================================================== */
+
+//-------------------------------------------------------------------------------------
+// Angled Edges v2.0.0 (https://github.com/josephfusco/angled-edges)
+// Copyright 2017 Joseph Fusco
+// Licensed under MIT (https://github.com/josephfusco/angled-edges/blob/master/LICENSE)
+//-------------------------------------------------------------------------------------
+
+/// Replace `$search_angledEdges_fn` with `$replace_angledEdges_fn` in `$string_angledEdges_fn`.
+///
+/// @author Hugo Giraudel
+/// @link   http://www.sassmeister.com/gist/1b4f2da5527830088e4d
+///
+/// @param  {String}  $string_angledEdges_fn - Initial string
+/// @param  {String}  $search_angledEdges_fn - Substring to replace
+/// @param  {String}  $replace_angledEdges_fn ('') - New value
+/// @return {String}  Updated string
+///
+@function ae-str-replace($string_angledEdges_fn, $search_angledEdges_fn, $replace_angledEdges_fn: '') {
+	$index: str-index($string_angledEdges_fn, $search_angledEdges_fn);
+
+	@if $index {
+		@return str-slice($string_angledEdges_fn, 1, $index - 1) + $replace_angledEdges_fn + ae-str-replace(str-slice($string_angledEdges_fn, $index + str-length($search_angledEdges_fn)), $search_angledEdges_fn, $replace_angledEdges_fn);
+	}
+
+	@return $string_angledEdges_fn;
+}
+
+/// Encode SVG to use as background.
+///
+/// @param  {String}  $string_angledEdges_fn
+/// @return {String}  Encoded svg data
+///
+@function ae-svg-encode($string_angledEdges_fn){
+	$result_angledEdges_fn: ae-str-replace($string_angledEdges_fn, '<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+	$result_angledEdges_fn: ae-str-replace($result_angledEdges_fn, '%', '%25');
+	$result_angledEdges_fn: ae-str-replace($result_angledEdges_fn, '"', '\'');
+	$result_angledEdges_fn: ae-str-replace($result_angledEdges_fn, '<', '%3C');
+	$result_angledEdges_fn: ae-str-replace($result_angledEdges_fn, '>', '%3E');
+
+	@return 'data:image/svg+xml,' + $result_angledEdges_fn;
+}
+
+/// Outputs pseudo content for main mixin.
+///
+/// @author Joseph Fusco
+///
+/// @param  {String}  $location_angledEdges_fn
+/// @param  {Number}  $height_angledEdges_fn
+/// @output psuedo content
+///
+@mixin ae-pseudo($wedge_angledEdges_fn, $height_angledEdges_fn, $width_angledEdges_fn) {
+	background-image: url($wedge_angledEdges_fn);
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	// full width wedge - needed as Firefox ignores preserveAspectRatio="none" in this case
+	@if ($width_angledEdges_fn == null) {
+		background-size: 100% 100%;
+	}
+
+	content: '';
+	height: $height_angledEdges_fn * 1px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+/// Attatches an svg wedge shape to an element.
+///
+/// @author Joseph Fusco
+///
+/// @param  {String}  $location_angledEdges_fn   - 'inside top', 'outside top', 'inside bottom', 'outside bottom'
+/// @param  {String}  $hypotenuse_angledEdges_fn - 'upper left', 'upper right', 'lower left', 'lower right'
+/// @param  {Color}   $fill_angledEdges_fn
+/// @param  {Number}  $height_angledEdges_fn
+/// @param  {Number}  $width_angledEdges_fn
+/// @output '::before' and/or '::after' with svg background image
+///
+@mixin angled-edge($location_angledEdges_fn, $hypotenuse_angledEdges_fn, $fill_angledEdges_fn, $height_angledEdges_fn: 100, $width_angledEdges_fn: null) {
+
+	position: relative;
+
+	$points_angledEdges_fn: (
+		'upper left': '0,#{$height_angledEdges_fn} #{$width_angledEdges_fn},#{$height_angledEdges_fn} #{$width_angledEdges_fn},0',
+		'upper right': '0,#{$height_angledEdges_fn} #{$width_angledEdges_fn},#{$height_angledEdges_fn} 0,0',
+		'lower left': '0,0 #{$width_angledEdges_fn},#{$height_angledEdges_fn} #{$width_angledEdges_fn},0',
+		'lower right': '0,0 #{$width_angledEdges_fn},0 0,#{$height_angledEdges_fn}'
+	);
+
+	// full width wedge
+	@if ($width_angledEdges_fn == null) {
+		$points_angledEdges_fn: (
+			'upper left': '0,#{$height_angledEdges_fn} 100,#{$height_angledEdges_fn} 100,0',
+			'upper right': '0,#{$height_angledEdges_fn} 100,#{$height_angledEdges_fn} 0,0',
+			'lower left': '0,0 100,#{$height_angledEdges_fn} 100,0',
+			'lower right': '0,0 100,0 0,#{$height_angledEdges_fn}'
+		);
+	}
+
+	// ensure $fill_angledEdges_fn color is using rgb()
+	$fill_angledEdges_fn-rgb: 'rgb(' + round(red($fill_angledEdges_fn)) + ',' + round(green($fill_angledEdges_fn)) + ',' + round(blue($fill_angledEdges_fn)) + ')';
+
+	// capture alpha component of $fill_angledEdges_fn to use with fill-opacity
+	$fill_angledEdges_fn-alpha: alpha($fill_angledEdges_fn);
+
+	$wedge_angledEdges_fn: '<svg width="#{$width_angledEdges_fn}" height="#{$height_angledEdges_fn}" fill="#{$fill_angledEdges_fn-rgb}" fill-opacity="#{$fill_angledEdges_fn-alpha}"><polygon points="#{map-get($points_angledEdges_fn, $hypotenuse_angledEdges_fn)}"></polygon></svg>';
+
+	// full width wedge
+	@if ($width_angledEdges_fn == null) {
+		$wedge_angledEdges_fn: '<svg preserveAspectRatio="none" viewBox="0 0 100 #{$height_angledEdges_fn}" fill="#{$fill_angledEdges_fn-rgb}" fill-opacity="#{$fill_angledEdges_fn-alpha}"><polygon points="#{map-get($points_angledEdges_fn, $hypotenuse_angledEdges_fn)}"></polygon></svg>';
+	}
+
+	$encoded-wedge: ae-svg-encode($wedge_angledEdges_fn);
+
+	@if ($location_angledEdges_fn == 'inside top') {
+		&::before {
+			@include ae-pseudo($encoded-wedge, $height_angledEdges_fn, $width_angledEdges_fn);
+			top: 0;
+		}
+	} @else if ($location_angledEdges_fn == 'outside top') {
+		&::before {
+			@include ae-pseudo($encoded-wedge, $height_angledEdges_fn, $width_angledEdges_fn);
+			top: -$height_angledEdges_fn * 1px;
+		}
+	} @else if ($location_angledEdges_fn == 'inside bottom') {
+		&::after {
+			@include ae-pseudo($encoded-wedge, $height_angledEdges_fn, $width_angledEdges_fn);
+			bottom: 0;
+		}
+	} @else if ($location_angledEdges_fn == 'outside bottom') {
+		&::after {
+			@include ae-pseudo($encoded-wedge, $height_angledEdges_fn, $width_angledEdges_fn);
+			bottom: -$height_angledEdges_fn * 1px;
+		}
+	} @else {
+		@error 'Invalid argument for $location_angledEdges_fn - must use: `inside top`, `outside top`, `inside bottom`, `outside bottom`';
+	}
+
+	@if (map-has-key($points_angledEdges_fn, $hypotenuse_angledEdges_fn) == false) {
+		@error 'Invalid argument for $hypotenuse_angledEdges_fn - must use: `upper left`, `upper right`, `lower left`, `lower right`';
+	}
+}
+
+/*
+Parameter: $location_angledEdges_fn
+Description: Location of shape relative to parent element
+- inside top
+- outside top
+- inside bottom
+- outside bottom
+
+
+Parameter: $hypotenuse_angledEdges_fn
+Description: Side of the right triangle that the hypotenuse is on
+- upper left
+- upper right
+- lower left
+- lower right
+
+
+Parameter: $fill_angledEdges_fn
+Description: Fill color of triangle
+
+
+Parameter: $height_angledEdges_fn
+Description: Optional - Height of triangle - Accepts a unitless integer that is equivalent to height in px
+
+
+Parameter: $width_angledEdges_fn
+Description: Optional - Width of triangle - Accepts a unitless integer that is equivalent to width in px (If nothing is passed triangle will span to a 100% fluid width) 
+*/
+

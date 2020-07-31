@@ -400,7 +400,7 @@ $language_flag_height_AT:           32px;
 /* // Mixin centrado custom ------------------------------------------------- */
 /* // Mixin para centrar pop_main ------------------------------------------- */
 /* =============================================================================
-   Spacing Helpers Mixins | Etc [mixinsSpacing.scss]
+   Spacing Helpers Mixins | Common [mixin_spacing.scss]
    ========================================================================== */
 /* =============================================================================
    Border Helpers Mixins | Etc [mixinsBorders.scss]
@@ -417,7 +417,7 @@ $language_flag_height_AT:           32px;
    ========================================================================== */
 /* // Functions ------------------------------------------------------------- */
 /* =============================================================================
-   Angled Edges Functions | Etc [functionsAngledEdges.scss]
+   Angled Edges Functions | Common [functions_angledEdges.scss]scss]
    ========================================================================== */
 /* =============================================================================
    Font Stroke Functions | Etc [functionsFontStroke.scss]
@@ -792,13 +792,13 @@ a.greyXD, a.greyXD:active, a.greyXD:visited, a.greyXD.noHover:focus, a.greyXD.no
 a.greyXD:focus, a.greyXD:hover {
   color: #999999; }
 
-.greyXXD, .greyXXD b, .greyXXD strong, .greyXXD i, .greyXXD em {
+.grey2XD, .grey2XD b, .grey2XD strong, .grey2XD i, .grey2XD em {
   color: #333; }
 
-a.greyXXD, a.greyXXD:active, a.greyXXD:visited, a.greyXXD.noHover:focus, a.greyXXD.noHover:hover {
+a.grey2XD, a.grey2XD:active, a.grey2XD:visited, a.grey2XD.noHover:focus, a.grey2XD.noHover:hover {
   color: #333; }
 
-a.greyXXD:focus, a.greyXXD:hover {
+a.grey2XD:focus, a.grey2XD:hover {
   color: #666666; }
 
 .black, .black b, .black strong, .black i, .black em {
@@ -942,7 +942,7 @@ b, strong,
 .bgGreyXD {
   background-color: #666; }
 
-.bgGreyXXD {
+.bgGrey2XD {
   background-color: #333; }
 
 .bgError {
@@ -1032,7 +1032,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     transition: transform 0.5s, background-color 1s; } }
 
 /* =============================================================================
-   Classes ALL | Etc [classesAll.scss]
+   Classes ALL | Common [classes_all.scss]
    ========================================================================== */
 #go-main-content {
   top: auto;
@@ -1207,7 +1207,7 @@ article, article::before, article::after, details, details::before, details::aft
   float: none !important; }
 
 /* =============================================================================
-   Spacing Helpers ALL | Etc [classesAll.scss]
+   Spacing Helpers ALL | Common [classes_all.scss]
    ========================================================================== */
 .ptn, .pvn, .pan {
   padding-top: 0 !important; }
@@ -1312,7 +1312,7 @@ article, article::before, article::after, details, details::before, details::aft
   margin-left: auto !important; }
 
 /* =============================================================================
-   Flexbox Classes ALL | Etc [classesAll.scss]
+   Flexbox Classes ALL | Common [classes_all.scss]
    ========================================================================== */
 .displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
   display: flex;

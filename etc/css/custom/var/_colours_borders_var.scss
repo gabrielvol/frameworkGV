@@ -40,7 +40,7 @@ $borderColours_map:(
     greyL:          $greyL,
     grey:           $grey,
     greyXD:         $greyXD,
-    greyXXD:        $greyXXD,
+    grey2XD:        $grey2XD,
 //  grey3XD:        $grey3XD,
     
     error:          $errorColour
@@ -60,7 +60,7 @@ $bdGreyL:           map-get($borderColours_map, greyL);
 $bdGrey:            map-get($borderColours_map, grey);
 $bdGreyD:           map-get($borderColours_map, greyD);
 $bdGreyXD:          map-get($borderColours_map, greyXD);
-$bdGreyXXD:         map-get($borderColours_map, greyXXD);
+$bdGrey2XD:         map-get($borderColours_map, grey2XD);
 //$bdGrey3XD:         map-get($borderColours_map, grey3XD);
 
 $bdColour_main_global:              $bdGrey;

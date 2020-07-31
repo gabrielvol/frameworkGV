@@ -43,7 +43,7 @@ $backgroundColours_map:(
     Grey:           $grey,
     GreyD:          $greyD,
     GreyXD:         $greyXD,
-    GreyXXD:        $greyXXD,
+    Grey2XD:        $grey2XD,
 //  Grey3XD:        $grey3XD,
     
     Error:          $errorColour
@@ -69,7 +69,7 @@ $bgGreyL:           map-get($backgroundColours_map, GreyL);
 $bgGrey:            map-get($backgroundColours_map, Grey);
 $bgGreyD:           map-get($backgroundColours_map, GreyD);
 $bgGreyXD:          map-get($backgroundColours_map, GreyXD);
-$bgGreyXXD:         map-get($backgroundColours_map, GreyXXD);
+$bgGrey2XD:         map-get($backgroundColours_map, Grey2XD);
 //$bgGrey3XD:         map-get($backgroundColours_map, Grey3XD);
 
 /*___ Declaramos las var para colores de fondo _*/

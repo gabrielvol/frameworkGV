@@ -1,5 +1,5 @@
 /* =============================================================================
-   Classes ALL | Etc [classesAll.scss]
+   Classes ALL | Common [classes_all.scss]
    ========================================================================== */
     //Accessibility
 #go-main-content{
@@ -159,7 +159,7 @@
 }
 
 /* =============================================================================
-   Spacing Helpers ALL | Etc [classesAll.scss]
+   Spacing Helpers ALL | Common [classes_all.scss]
    ========================================================================== */
 @if $helpers_spacing_act_ALL == "on"{
     //Spacing Helpers
@@ -169,7 +169,7 @@
 }
 
 /* =============================================================================
-   Flexbox Classes ALL | Etc [classesAll.scss]
+   Flexbox Classes ALL | Common [classes_all.scss]
    ========================================================================== */
 @if $classes_flexbox_act_ALL == "on"{
     //Flexbox
