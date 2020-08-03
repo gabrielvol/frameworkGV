@@ -30,24 +30,36 @@ $(document).ready(function () {
         ,asNavFor: '.slickNav'
 
         ,responsive: [
-            {breakpoint: 1024,
+// El valor del breakpoint no se incluye a sí mismo. Por ej.: la configuracion
+// que se ve dentro de `[breakpoint: 500]` se aplica de 0 a 499.
+// 
+// La configuracion de un breakpoint se aplica a los breakpoint menores.
+// 1025 para que corresponda con el media query beforeTabletLandscape
+// 768 para que corresponda con el media query beforeTablet
+// 601 para que corresponda con el media query beforeMobile600
+// 500 para que corresponda con el media query mobileOnly
+            {breakpoint: 1025,
                 settings: {
                      slidesToShow: 3
                     ,slidesToScroll: 3
                     ,infinite: true
-                    ,dots: true
                 }                
             }
-            ,{breakpoint: 500,
+            ,{breakpoint: 768,
                 settings: {
-                     slidesToShow: 2
-                    ,slidesToScroll: 2
+                     slidesToShow: 3
+                    ,slidesToScroll: 1
                 }
             }
-            ,{breakpoint: 499,
+            ,{breakpoint: 601, // 
+                settings: {
+                     slidesToShow: 2
+                    ,dots: true
+                }
+            }
+            ,{breakpoint: 500, 
                 settings: {
                      slidesToShow: 1
-                    ,slidesToScroll: 1
                 }
             }
         ]

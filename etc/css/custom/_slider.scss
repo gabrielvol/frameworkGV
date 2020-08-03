@@ -3,6 +3,7 @@
    ========================================================================== */
 .slick{
     background-color: $slider_bgColour;
+    box-sizing: border-box;
     
     img{
         display: block;
