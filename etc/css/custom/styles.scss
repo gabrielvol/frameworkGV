@@ -37,6 +37,7 @@
 @import "act/slider_act";
 @import "var/slider_var";
 
+@import "var/buttons_var";
 @import "var/social_var";
 
 @import "var/popup_var";
@@ -110,8 +111,7 @@
 @import "styles_print";
 
 @import "global";
-@import "styles_buttons";
-@import "styles_button_CTA";
+@import "buttons";
 //@import "breadcrumbs";
 //@import "error";
 //@import "styles_media";

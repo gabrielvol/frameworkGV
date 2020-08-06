@@ -5,7 +5,7 @@
 
 #### Datos FTP
 `http://wwwsitioweb/`  
-`000.000.000.00`
+`00000000000`
 
 Usuario
 `user`
@@ -16,7 +16,7 @@ Contraseña
 
 
 #### Panel de control
-`http://www.sitioweb.com.ar/cpanel`
+`httpwwwsitiowebcpanel`
 
 Usuario 
 `user`
@@ -27,7 +27,7 @@ Contraseña
 
 
 #### Datos FTP Alternativos
-`http://www.sitioweb.com.ar/`
+`http://wwwsitioweb/`  
 
 Usuario
 `user`
@@ -41,16 +41,16 @@ Contraseña
 AgenciaDeHosting
 
 DNS 1
-`ns1.hosting.com (000000000000)`
+`dnshosting (000000000000)`
 
 DNS 2
-`ns2.hosting.com (000000000000)`
+`dnshosting (000000000000)`
 
 DNS 3
-`ns3.hosting.com (000000000000)`
+`dnshosting (000000000000)`
 
 DNS 4
-`ns4.hosting.com (000000000000)`
+`dnshosting (000000000000)`
 
 Contacto técnico
 `Nombre` 
@@ -59,13 +59,13 @@ Teléfono
 `12345678`
 
 Correo
-`info@correo.com`  
+`infocorreocom`  
 ***
 
 
 #### Google Account
 Usuario
-`user@gmail.com`
+`usergmailcom`
 
 Contraseña
 `pass`  

@@ -1,6 +1,7 @@
 <!-- gettext file -->
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
 <header id="header" class="borderBox">
+    <a href="<?php echo $site_whatsapp_chatOpen_global ?>" class="button_whatsapp">Abrir un chat.</a>
     
     <!--Normal-->
     <?php

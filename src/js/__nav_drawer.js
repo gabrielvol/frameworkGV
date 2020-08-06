@@ -3,7 +3,7 @@ $(document).ready(function () {
         $(this).addClass('clicked');
         $(this).attr('aria-pressed', 'true');
         
-        $(this).closest('#header').find('.social').addClass('clicked');
+        $(this).closest('#header').find('.social, .button_whatsapp').addClass('clicked');
         $(this).closest('#nav').find('.nav_main_ul').addClass('open');
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
@@ -33,7 +33,7 @@ $(document).ready(function () {
     $('.button_hamb_close').click(function () {
         $(this).removeClass('clicked');
         
-        $(this).closest('#header').find('.logo_header, .social, .language_ul').removeClass('clicked');
+        $(this).closest('#header').find('.logo_header, .social, .language_ul, .button_whatsapp').removeClass('clicked');
         
         $(this).closest('#nav').find('.button_hamb_open').removeClass('clicked');
         $(this).closest('#nav').find('.button_hamb_open').attr('aria-pressed', 'false');

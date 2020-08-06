@@ -1736,7 +1736,7 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* // Secondary Separator --------------------------------------------------- */
 /* =============================================================================
-   Button Styles | Custom [styles_buttons.scss]
+   Button Styles | Custom [buttons.scss]
    ========================================================================== */
 /* // References ------------------------------------------------------------ */
 .button_whatsapp {
@@ -1760,7 +1760,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-shadow: 0 0 5px #1c6829; }
 
 /* =============================================================================
-   Call to Action Styles | Custom [styles_button_CTA.scss]
+   Call to Action Styles | Custom [buttons_callToAction.scss]
    ========================================================================== */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;

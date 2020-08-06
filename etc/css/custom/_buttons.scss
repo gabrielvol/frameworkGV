@@ -1,0 +1,179 @@
+/* =============================================================================
+   Button Styles | Custom [buttons.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Call to Action -------------------------------------------------------- */
+.callToAction{
+    // Si lleva .hoverGrow hay que comentar transition
+    //@include transition(1s);
+    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;    
+    
+    @include borderStyle($bdGrey, 2px);
+    display: block;
+    box-sizing: border-box;
+    background-color: $bgGrey;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+    &, &:focus, &:hover, &:visited, &:active{
+    }
+    
+    &, &:focus, &:hover{
+        text-decoration: $none;
+    }
+    
+    &, &:visited, &:active{
+        color: $white;
+    }
+    
+    &:focus, &:hover{
+        background-color: $bgGreyL;
+        border-color: $bdGrey2XD;
+        color: $greyXD;
+    }
+    
+    /*
+    &.CTAwhite{
+        @include borderStyle($bdWhite);
+    
+        &, &:visited, &:active{
+            color: $white;
+        }
+
+        &:focus, &:hover{
+            color: $greyXL;
+            box-shadow: 0 0 3px $greyL;
+            text-shadow: 0 0 3px $greyL;
+        }
+    }
+    */
+    
+    @include mobileOnly{
+        width: $hundred;
+    }
+    
+    @include beforeTablet{
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 1.3;
+    }
+    
+    @include afterTablet{
+        @include equalHeightAndLineHeight(50px);        
+    }
+}
+
+
+/* // WhatsApp -------------------------------------------------------------- */
+
+.button_whatsapp{    
+    @include transition(1s);
+    @include squareSize($button_whatsapp_size);
+    @include borderRadius(50%);
+    position: fixed;
+    z-index: $zIndex_button_topLevel;
+    bottom: 40px;
+    right: 10px;
+    display: block;
+    background-color: rgba(60, 209, 52, 0.85);
+    background-image: url('/img/button_whatsapp.svg');
+    background-repeat: no-repeat;
+    background-size: calc(#{$button_whatsapp_size} - 10px);
+    background-position: center center;
+    text-indent: -9999px;
+    
+    &:focus, &:hover{
+        box-shadow: 0 0 5px #3c9637;
+        background-color: rgba(60, 209, 52, 1);
+        
+        &::before{            
+            @include borderRadius(15px);
+            @include equalHeightAndLineHeight($button_whatsapp_before_height);
+            content: "Abre un chat con Agridulze.";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            right: calc(#{$button_whatsapp_size} + 10px);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 0 15px;
+            margin-top: calc(-1 * calc(#{$button_whatsapp_before_height} / 2));
+            color: $white;
+            font-size: 0.8rem;
+            text-indent: 0;
+            text-align: center;
+        }
+    }
+    
+    @include mobileOnly{
+        &:focus, &:hover{
+            &::before{
+                width: $button_whatsapp_before_width_MO;
+            }
+        }
+    }
+    
+    @include beforeTablet{
+        &.clicked{            
+            &, &:focus, &:hover{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    @include afterMobileLandscape{
+        &:focus, &:hover{
+            &::before{
+                width: $button_whatsapp_before_width_AML;
+            }
+        }
+    }
+}
