@@ -277,19 +277,19 @@ form{
             }
         }
 
-        .labelName,
-        .formInputErrorMsg{
+        .form_label_name,
+        .form_input_msg_error{
             box-sizing: border-box;
         }
 
-        .labelName{
+        .form_label_name{
             display: block;
             padding-left: 7px;
             font-family: $formLabel_fontFamily;
             font-size: 1.1rem!important;
         }
 
-        .formInputErrorMsg{
+        .form_input_msg_error{
             display: none;
             padding-top: 3px;
             padding-left: 10px;
@@ -304,15 +304,15 @@ form{
             }
         }
         
-        .formSugg{
+        .form_msg_sugg{
             display: block;
             padding-left: 10px;
             font-size: 0.75rem;
         }
         
         @include beforeMobile600{
-            .labelName{
-                &.labelLong{
+            .form_label_name{
+                &.form_label_long{
                     height: auto;
                     line-height: 1.4;
                     margin-bottom: 5px;

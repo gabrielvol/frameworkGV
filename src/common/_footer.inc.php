@@ -30,19 +30,15 @@
     
     <p><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_href_EMAILA ?>><?php echo $site_email_address_EMAILA ?></a></p>
     
-    <p class="copy_footer">&copy; <?php echo $dateThisYear ." - ". $site_name_full ?></p>
+    <p class="copy_footer">&copy; Copyright <?php echo $date_year_actual ." - ". $site_name_full ?></p>
     
     <p class="copy_footer">
-        &copy;
-        <?php
-            $fromYear = 2010;
-            echo $fromYear . (($fromYear != $dateThisYear) ? " - " . $dateThisYear : "") . $site_name_full; 
-        ?>
+        &copy; Copyright <?php echo $date_year_from . (($date_year_from != $date_year_actual) ? " - " . $date_year_actual : "") . $site_name_full; ?>
     </p>
     
     <div class="legal_footer">
         <ul class="horizontal clearfix containerAT">
-            <li class="legal_copy">&copy; <?php echo $dateThisYear ." - ". $site_name_full ?></li>
+            <li class="legal_copy">&copy; Copyright <?php echo $date_year_actual ." - ". $site_name_full ?></li>
             <li class="legal_tos"><a href="/legal/" class="displayBlock"><?php echo _("Privacidad y Condiciones"); ?></a></li>
             <li class="legal_studio"><?php echo _("Web Design By"); ?><a href="https://www.instagram.com/xxxxxx/" class="displayBlock alignCenterBT">Estudio De Diseño</a></li>
         </ul>

@@ -9,9 +9,16 @@
 
             .button_hamb{
                 @include positionTR(0, 0);
+                position: absolute;
             }
 
-            .button_hamb_open{
+            .button_hamb_open{                
+                @include borderRadius($nav_bdRadius);
+                display: block;
+                background-size: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                
                 @if $hamburger_only_act == "on"{
                     @include squareSize(45px);
                     background-position: center;
@@ -27,15 +34,13 @@
                     font-size: 1rem;
                     line-height: $button_hamb_height;
                 }
-                
-                @include borderRadius($nav_bdRadius);
-                background-size: 15px;
             }
 
             .button_hamb_close{
                 @include squareSize(45px);
                 background-size: 20px;
                 border: 1px solid $button_hamb_close_bdColour!important;
+                text-indent: -9999px;
             }
 
             .nav_main_ul{

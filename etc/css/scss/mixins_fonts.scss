@@ -26,17 +26,17 @@
 
 /* // Generador de clases por cada tamaño de fuente ------------------------- */
 @mixin fontCustomHeadingsSizesGeneratorMobile{
-    @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues in $fontSize_map_mobile {
+    @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues in $headings_sizes_map_BT {
         #{$fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues;}
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorTablet{
-    @each $fontCustomHeadingsSizesGeneratorTabletMX_headingsClassName, $fontCustomHeadingsSizesGeneratorTabletMX_fontCustomSizeValues in $fontSize_map_tablet {
+    @each $fontCustomHeadingsSizesGeneratorTabletMX_headingsClassName, $fontCustomHeadingsSizesGeneratorTabletMX_fontCustomSizeValues in $headings_sizes_map_AT {
         #{$fontCustomHeadingsSizesGeneratorTabletMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorTabletMX_fontCustomSizeValues;}
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorDesktop{
-    @each $fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName, $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues in $fontSize_map_desktop {
+    @each $fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName, $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues in $headings_sizes_map_AD {
         #{$fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues;}
     }
 }

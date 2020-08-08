@@ -78,11 +78,11 @@ src="/img/<?php if($gettext_idioma == 'pt_BR'){ echo '/it/'; } else if($gettext_
 /* -----------------------------------------------------------------------------
    # css
    -------------------------------------------------------------------------- */
-class="<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>"
+class="<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'lang_EN'; } else { echo ''; } ?>"
 
-<?php if($l == 'it'){ echo 'ITlang'; } else if($l == 'en'){ echo 'ENlang'; } else { echo ''; } ?>
-<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'ENlang'; } else { echo ''; } ?>
+<?php if($l == 'it'){ echo 'ITlang'; } else if($l == 'en'){ echo 'lang_EN'; } else { echo ''; } ?>
+<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_idioma == 'en_GB'){ echo 'lang_EN'; } else { echo ''; } ?>
 &.BRlang{}
-&.ENlang{}
+&.lang_EN{}
 &.ITlang{}
 &.ARlang{}

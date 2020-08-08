@@ -4,7 +4,7 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de fuentes.
-// Contiene mapas de fuentes y espaciado general de texto.
+// Contiene mapas de fuentes.
 
 
 
@@ -108,50 +108,4 @@ $fontStack_map:(
     $fontFamilies_sans_list // Si se activa este set hay que comentar $timesNewRoman
 //    $fontFamilies_serif_list // Si se activa este set hay que comentar $arial y $roboto
 //    $fontFamilies_monospaced_list // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
-);
-
-
-/* // Espaciado general de texto -------------------------------------------- */
-$fontWeight_global: 400;
-$lineHeight_global: calc(1ex / 0.32);
-
-$fontSize_global:         1rem;
-$fontSize_paragraph_BT:   0.9rem;
-$fontSize_paragraph_AT:   1rem;
-$fontSize_paragraph_ATL:  $fontSize_paragraph_AT;
-
-$formInput_fontSize_BT:   0.9rem;
-$formInput_fontSize_AT:   0.9rem;
-$formInput_fontSize_ATL:  $formInput_fontSize_AT;
-
-$headings_marginTRBL_global:   0 0 0.8em;
-$headings_marginTRBL_sibling:  1.2em 0 0;
-$text_marginTRBL_global:       0;
-$text_marginTRBL_sibling:      0.8em 0 0;
-
-
-/* // Heading Sizes --------------------------------------------------------- */
-$fontSize_map_mobile:(
-    $h1_list: 1.6rem,
-    $h2_list: 1.5rem,
-    $h3_list: 1.4rem,
-    $h4_list: 1.3rem,
-    $h5_list: 1.3rem,
-    $h6_list: 1.3rem
-);
-$fontSize_map_tablet:(
-    $h1_list: 1.6rem,
-    $h2_list: 1.5rem,
-    $h3_list: 1.4rem,
-    $h4_list: 1.3rem,
-    $h5_list: 1.3rem,
-    $h6_list: 1.3rem
-);
-$fontSize_map_desktop:(
-    $h1_list: 2.4rem,
-    $h2_list: 2.2rem,
-    $h3_list: 2rem,
-    $h4_list: 1.8rem,
-    $h5_list: 1.6rem,
-    $h6_list: 1.4rem
 );

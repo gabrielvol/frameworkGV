@@ -5,7 +5,7 @@
     z-index: $zIndex_language;
     
     a{
-        @include borderStyle($bdWhite, $language_bd_size);
+        @include borderStyle($bdWhite, $language_flag_border_size);
         @include transition(0.3s);
         background-color: $language_a_bgColour;
         
@@ -77,7 +77,7 @@
                     
                 } @else {
                     left: 30px;         
-                    bottom: $language_ul_bottomValue; 
+                    bottom: $language_ul_bottom; 
                     height: $language_ul_height_clicked;          
                 }
                 
@@ -100,7 +100,7 @@
 
     @include afterTablet{
     //@include navAT{
-        @include positionTR(10px, $language_flag_right_AT);
+        @include positionTR(10px, $language_ul_right_AT);
         position: absolute;
            
         &,

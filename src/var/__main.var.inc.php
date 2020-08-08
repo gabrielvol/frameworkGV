@@ -12,7 +12,7 @@
 //    include('social.var.inc.php');
     
 //    include('files.var.inc.php');
-    include('media.var.inc.php');
+//    include('media.var.inc.php');
     
     include('forms.var.inc.php');
 ?>

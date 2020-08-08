@@ -35,7 +35,7 @@
                 overflow: scroll; 
                 
                 @if $language_menu_navDrawer_clicked_act == "on"{
-                    padding-bottom: calc(#{$language_ul_height_clicked} + #{$language_ul_bottomValue} + 10px);
+                    padding-bottom: calc(#{$language_ul_height_clicked} + #{$language_ul_bottom} + 10px);
                 } @else {
                     padding-bottom: 30px;     
                 }

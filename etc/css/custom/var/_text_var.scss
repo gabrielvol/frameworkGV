@@ -1,5 +1,103 @@
 /* =============================================================================
    Text Variables | Custom [var/text.scss]
    ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de asignacion de variables de texto.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Text Colours ---------------------------------------------------------- */
+$ftColour_main_global:          $black;
+$ftColour_main_global_hover:    lighten($ftColour_main_global, 20%);
+
+$ftColour_anchor_global:        $ftColour_main_global_hover;
+$ftColour_anchor_global_hover:  darken($ftColour_main_global_hover, 10%);
+
 $txSelection_ftColour_global:   $ftColour_main_global;
-$txSelection_bgColour_global:     $bgColour_main_global;
+$txSelection_bgColour_global:   $bgColour_main_global;
+
+
+/* // Espaciado general de texto -------------------------------------------- */
+$fontWeight_global:             400;
+$lineHeight_global:             calc(1ex / 0.32);
+
+$fontSize_global:               1rem;
+$fontSize_paragraph_BT:         0.9rem;
+$fontSize_paragraph_AT:         1rem;
+$fontSize_paragraph_ATL:        $fontSize_paragraph_AT;
+
+$formInput_fontSize_BT:         0.9rem;
+$formInput_fontSize_AT:         0.9rem;
+$formInput_fontSize_ATL:        $formInput_fontSize_AT;
+
+$text_marginTRBL_global:        0;
+$text_marginTRBL_sibling:       0.8em 0 0;
+
+
+/* // Headings -------------------------------------------------------------- */
+$headings_marginTRBL_global:    0 0 0.8em;
+$headings_marginTRBL_sibling:   1.2em 0 0;
+
+$headings_sizes_map_BT:(
+    $h1_list: 1.6rem,
+    $h2_list: 1.5rem,
+    $h3_list: 1.4rem,
+    $h4_list: 1.3rem,
+    $h5_list: 1.3rem,
+    $h6_list: 1.3rem
+);
+
+$headings_sizes_map_AT:(
+    $h1_list: 1.6rem,
+    $h2_list: 1.5rem,
+    $h3_list: 1.4rem,
+    $h4_list: 1.3rem,
+    $h5_list: 1.3rem,
+    $h6_list: 1.3rem
+);
+
+$headings_sizes_map_AD:(
+    $h1_list: 2.4rem,
+    $h2_list: 2.2rem,
+    $h3_list: 2rem,
+    $h4_list: 1.8rem,
+    $h5_list: 1.6rem,
+    $h6_list: 1.4rem
+);
