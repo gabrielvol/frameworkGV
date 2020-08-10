@@ -12,34 +12,34 @@ $formLabel_ftColour_hover:     darken($formLabel_ftColour, 15%);
     
      
 /* // Inputs ---------------------------------------------------------------- */
-$formInput_ftColour:           $ftColour_main_global;
-$formInput_ftColour_hover:     $formInput_ftColour;
+$form_input_ftColour:           $ftColour_main_global;
+$form_input_ftColour_hover:     $form_input_ftColour;
  
-$formPlaceholder_ftColour:     lighten($ftColour_main_global, 10%); // Descomentar líneas 13 a 18 en '[/etc/css/scss/settings_text.scss]'
-$formInput_ftColour_autofill:  $formInput_ftColour;
+$form_placeholder_ftColour:     lighten($ftColour_main_global, 10%); // Descomentar líneas 13 a 18 en '[/etc/css/scss/settings_text.scss]'
+$form_input_ftColour_autofill:  $form_input_ftColour;
   
-$formInput_bdColour:           $bdColour_main_global;
-$formInput_bdColour_hover:     $bdColour_main_global_hover;
-$formInput_bgColour:           $white;
-$formInput_bgColour_hover:     $formInput_bgColour;
+$form_input_bdColour:           $bdColour_main_global;
+$form_input_bdColour_hover:     $bdColour_main_global_hover;
+$form_input_bgColour:           $white;
+$form_input_bgColour_hover:     $form_input_bgColour;
     
-$formInput_shadowInset:        inset 0 0 6px $greyL;
+$form_input_shadowInset:        inset 0 0 6px $greyL;
  
      
 /* // Submit ---------------------------------------------------------------- */
-$formSubmit_ftColour:          $black;
-$formSubmit_ftColour_hover:    $formSubmit_ftColour;
+$form_submit_ftColour:          $black;
+$form_submit_ftColour_hover:    $form_submit_ftColour;
   
-$formSubmit_bdColour:            $bdColour_main_global;
-$formSubmit_bdColour_hover:      $formSubmit_bdColour;
+$form_submit_bdColour:            $bdColour_main_global;
+$form_submit_bdColour_hover:      $form_submit_bdColour;
   
-$formSubmit_bgColour:            $bgColour_main_global;
-$formSubmit_bgColour_hover:      $formSubmit_bgColour;
+$form_submit_bgColour:            $bgColour_main_global;
+$form_submit_bgColour_hover:      $form_submit_bgColour;
     
      
 /* // Validation ------------------------------------------------------------ */
-$formInput_msgError_ftColour:  $errorColour;
+$form_input_msg_error_ftColour:  $errorColour;
  
-$formStatus_msgError_bgColour:   $bgErrorColour;
-$formStatus_msgError_ftColour: $white;
-$formStatus_msgOK_bgColour:      $bgWhite;
+$form_status_msg_error_bgColour:   $bgErrorColour;
+$form_status_msg_error_ftColour: $white;
+$form_status_msg_ok_bgColour:      $bgWhite;

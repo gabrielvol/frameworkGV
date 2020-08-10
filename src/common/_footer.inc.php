@@ -8,7 +8,7 @@
     </div>
     <div class="footer_txt borderBox">
         <p class="footer_address">
-            <a href="<?php echo $site_address_main_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_main_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_main_GB; } else { echo $site_address_main; } ?></a>
+            <a href="<?php echo $site_address_PRINCIPAL_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
         </p>
         <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <?php echo $site_tel_PRINCIPAL_formatted ?></p>
         <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_href_EMAILA ?>><?php echo $site_email_address_EMAILA ?></a></p>
@@ -23,7 +23,7 @@
     <?php include('social.inc.php'); ?>
     
     <p class="footer_address">
-        <a href="<?php echo $site_address_main_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_main_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_main_GB; } else { echo $site_address_main; } ?></a>
+        <a href="<?php echo $site_address_PRINCIPAL_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
     </p>
     
     <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $site_tel_PRINCIPAL_formatted ?></p>

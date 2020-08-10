@@ -12,15 +12,15 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, inp
 }
 /*
 input::input-placeholder, textarea::input-placeholder{
-    color: $formPlaceholder_ftColour}
+    color: $form_placeholder_ftColour}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
-    color: $formPlaceholder_ftColour}
+    color: $form_placeholder_ftColour}
 input::-moz-placeholder, textarea::-moz-placeholder{
-    color: $formPlaceholder_ftColour}
+    color: $form_placeholder_ftColour}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder{
-    color: $formPlaceholder_ftColour}
+    color: $form_placeholder_ftColour}
 input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $formPlaceholder_ftColour}
+    color: $form_placeholder_ftColour}
 
 input::-moz-placeholder, textarea::-moz-placeholder{
   opacity: 1}

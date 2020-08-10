@@ -6,7 +6,7 @@ form.niceIt{
     .fmSelect{
         $fm_select_width: 240px!important;
         
-        @include borderStyle($formInput_bdColour);
+        @include borderStyle($form_input_bdColour);
         
         //Aquí se establece la coordenada de la flecha del select
         @include bgSvg(form_select, auto, right 15px center);
@@ -19,7 +19,7 @@ form.niceIt{
         padding: 0 40px 0 10px;
         
         width: 135px!important;
-        color: $formInput_ftColour;
+        color: $form_input_ftColour;
         
         &,
         strong,
@@ -32,7 +32,7 @@ form.niceIt{
         }
         
         %fm_option_textStyles{
-            color: $formInput_ftColour;
+            color: $form_input_ftColour;
             font-family: $fontFamily_main_global;
             text-transform: none;             
         }
@@ -46,7 +46,7 @@ form.niceIt{
         }
         
         ul{
-            @include borderStyle($formInput_bdColour);
+            @include borderStyle($form_input_bdColour);
             width: $fm_select_width;
             max-height: 250px;
             background-color: $white;
@@ -59,8 +59,8 @@ form.niceIt{
                 line-height: 1.3;
                 
                 &:hover, &:focus{
-                    color: $formInput_ftColour_hover;
-                    background-color: $formInput_bdColour_hover;
+                    color: $form_input_ftColour_hover;
+                    background-color: $form_input_bdColour_hover;
                 }
             }
         }
@@ -74,7 +74,7 @@ form.niceIt{
             display: $none;
         }
         
-        @include borderStyle($formInput_bdColour);
+        @include borderStyle($form_input_bdColour);
         @include squareSize(19px);
     }
     

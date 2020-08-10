@@ -4,43 +4,43 @@
 //form.searchForm
 .searchForm{
     position: relative;
-    width: $formInput_search_width_BT;
+    width: $form_input_search_width_BT;
     
     input{
-        height: $formInput_search_height_BT;
+        height: $form_input_search_height_BT;
 
         &[type="search"]{
-            width: $formInput_search_width_BT;
+            width: $form_input_search_width_BT;
             border: $none;
-            padding-right: calc(#{$formInput_search_bgSize_BT} + 15px)!important;
-            line-height: $formInput_search_lineHeight_BT;
+            padding-right: calc(#{$form_input_search_bgSize_BT} + 15px)!important;
+            line-height: $form_input_search_lineHeight_BT;
         }
         
         &[type="submit"]{
             @include opacityCustomHover;
-            @include bgSvg(form_searchSubmitBT, $formInput_search_bgSize_BT, center);
+            @include bgSvg(form_searchSubmitBT, $form_input_search_bgSize_BT, center);
             position: absolute;
             top: 0;
             right: 0;
-            width: $formSubmit_search_width_BT;
+            width: $form_submit_search_width_BT;
             border: $none;
         }
     }
     
     @include afterTablet{
-        width: $formInput_search_width_AT;
+        width: $form_input_search_width_AT;
     
         input{
-            height: $formInput_search_height_AT;
+            height: $form_input_search_height_AT;
 
             &[type="search"]{
-                padding-right: calc(#{$formInput_search_bgSize_AT} + 5px)!important;
-                line-height: $formInput_search_lineHeight_AT;
+                padding-right: calc(#{$form_input_search_bgSize_AT} + 5px)!important;
+                line-height: $form_input_search_lineHeight_AT;
             }
             
             &[type="submit"]{
-                @include bgSvg(form_searchSubmitAT, $formInput_search_bgSize_AT, center);
-                width: $formSubmit_search_width_AT;
+                @include bgSvg(form_searchSubmitAT, $form_input_search_bgSize_AT, center);
+                width: $form_submit_search_width_AT;
             }            
         }
     }

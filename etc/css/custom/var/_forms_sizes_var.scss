@@ -66,57 +66,57 @@ $formLabel_height_AD:     $formLabel_height_ATL;
 
 
 /* // Inputs ---------------------------------------------------------------- */
-$formInput_width_MO:      $formLabel_width_MO;
-$formInput_width_BT:      $formLabel_width_BT;
-$formInput_width_TO:      $formLabel_width_TO;
-$formInput_width_ATL:     $formLabel_width_ATL; //No debe llevar !important
-$formInput_width_AD:      $formLabel_width_AD; //No debe llevar !important
+$form_input_width_MO:      $formLabel_width_MO;
+$form_input_width_BT:      $formLabel_width_BT;
+$form_input_width_TO:      $formLabel_width_TO;
+$form_input_width_ATL:     $formLabel_width_ATL; //No debe llevar !important
+$form_input_width_AD:      $formLabel_width_AD; //No debe llevar !important
 
-$formInput_height_BT:     45px;
-$formInput_height_TO:     $formInput_height_BT;
-$formInput_height_ATL:    35px; //No debe llevar !important
-$formInput_height_AD:     $formInput_height_ATL; //No debe llevar !important
+$form_input_height_BT:     45px;
+$form_input_height_TO:     $form_input_height_BT;
+$form_input_height_ATL:    35px; //No debe llevar !important
+$form_input_height_AD:     $form_input_height_ATL; //No debe llevar !important
 
 
 /*___ Sug _______________________________*/
 /*___ Sug _______________________________*/
    // Radio Inputs
-$formInput_radio_height_BT:  35px;
-$formInput_radio_height_TO:  35px;
+$form_input_radio_height_BT:  35px;
+$form_input_radio_height_TO:  35px;
 
 
 /* // Submit ---------------------------------------------------------------- */
-$formSubmit_width_MO:     90%;
-$formSubmit_width_MLO:    60%!important;
-$formSubmit_width_TO:     50%!important;
-$formSubmit_width_ATL:    300px;
-$formSubmit_width_AD:     $formSubmit_width_ATL;
+$form_submit_width_MO:     90%;
+$form_submit_width_MLO:    60%!important;
+$form_submit_width_TO:     50%!important;
+$form_submit_width_ATL:    300px;
+$form_submit_width_AD:     $form_submit_width_ATL;
 
-$formSubmit_height_BT:       50px;
-$formSubmit_lineHeight_BT:   $formSubmit_height_BT;
+$form_submit_height_BT:       50px;
+$form_submit_lineHeight_BT:   $form_submit_height_BT;
 
-$formSubmit_height_TO:       45px;
-$formSubmit_lineHeight_TO:   $formSubmit_height_TO;
+$form_submit_height_TO:       45px;
+$form_submit_lineHeight_TO:   $form_submit_height_TO;
 
-$formSubmit_height_ATL:      45px;
-$formSubmit_lineHeight_ATL:  $formSubmit_height_ATL;
+$form_submit_height_ATL:      45px;
+$form_submit_lineHeight_ATL:  $form_submit_height_ATL;
 
-$formSubmit_height_AD:       $formSubmit_height_ATL;
-$formSubmit_lineHeight_AD:   $formSubmit_lineHeight_ATL;
+$form_submit_height_AD:       $form_submit_height_ATL;
+$form_submit_lineHeight_AD:   $form_submit_lineHeight_ATL;
 
 
 /* // Search ---------------------------------------------------------------- */
-$formInput_search_width_BT:         270px;
-$formInput_search_width_AT:         $formInput_search_width_BT;
+$form_input_search_width_BT:         270px;
+$form_input_search_width_AT:         $form_input_search_width_BT;
 
-$formInput_search_height_BT:        30px;
-$formInput_search_height_AT:        $formInput_search_height_BT;
+$form_input_search_height_BT:        30px;
+$form_input_search_height_AT:        $form_input_search_height_BT;
 
-$formInput_search_lineHeight_BT:    $formInput_search_height_BT;
-$formInput_search_lineHeight_AT:    $formInput_search_lineHeight_BT;
+$form_input_search_lineHeight_BT:    $form_input_search_height_BT;
+$form_input_search_lineHeight_AT:    $form_input_search_lineHeight_BT;
 
-$formInput_search_bgSize_BT:        $formInput_search_height_BT;
-$formInput_search_bgSize_AT:        $formInput_search_bgSize_BT;
+$form_input_search_bgSize_BT:        $form_input_search_height_BT;
+$form_input_search_bgSize_AT:        $form_input_search_bgSize_BT;
 
-$formSubmit_search_width_BT:        $formInput_search_width_BT;
-$formSubmit_search_width_AT:        $formSubmit_search_width_BT;
+$form_submit_search_width_BT:        $form_input_search_width_BT;
+$form_submit_search_width_AT:        $form_submit_search_width_BT;
