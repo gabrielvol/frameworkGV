@@ -1,8 +1,9 @@
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {
         $(this).addClass('clicked');
-        $(this).attr('aria-pressed', 'true');
+        $(this).attr('aria-pressed', 'true');        
         
+        $(this).closest('#header').addClass('header_clicked');
         $(this).closest('#header').find('.social, .button_whatsapp').addClass('clicked');
         $(this).closest('#nav').find('.nav_main_ul').addClass('open');
         
@@ -13,6 +14,7 @@ $(document).ready(function () {
     });
 
     $('.nav_item_noLink_js').click(function () {
+        $(this).closest('#header').removeClass('header_clicked'); 
         $(this).closest('#header').find('.logo_header, .social, .language_ul').removeClass('clicked');  
         
         $(this).closest('#nav').find('.button_hamb_close, .button_hamb_open').removeClass('clicked');
@@ -33,6 +35,7 @@ $(document).ready(function () {
     $('.button_hamb_close').click(function () {
         $(this).removeClass('clicked');
         
+        $(this).closest('#header').removeClass('header_clicked');
         $(this).closest('#header').find('.logo_header, .social, .language_ul, .button_whatsapp').removeClass('clicked');
         
         $(this).closest('#nav').find('.button_hamb_open').removeClass('clicked');
@@ -53,6 +56,7 @@ $(document).ready(function () {
     $('.modal_nav').click(function () {
         $(this).hide('fast');
         
+        $(this).closest('#header').removeClass('header_clicked');
         $(this).closest('#header').find('.logo_header, .social, .language_ul').removeClass('clicked');
         $(this).closest('#nav').find('.button_hamb_close').removeClass('clicked');
         $(this).closest('#nav').find('.nav_main_ul').removeClass('open');

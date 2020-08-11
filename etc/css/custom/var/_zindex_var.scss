@@ -35,10 +35,6 @@ $zIndex_language:            8500;
 $zIndex_social_clicked:      $zIndex_button_topLevel; // 9900
 $zIndex_social:              8500;
 
-/*___ Slick Slider ______________________*/
-$zIndex_slider_arrows_dots:  8200;
-$zIndex_slider:              8100;
-
 /*___ Nav _______________________________*/
 $zIndex_nav_close:           $zIndex_button_topLevel; // 9900 
 $zIndex_navDrawer_ul:        $zIndex_pop_main; // 9800
@@ -58,6 +54,11 @@ $zIndex_header_topper:      $zIndex_header; // 7200
 /*___ Footer ____________________________*/
 $zIndex_footer:             $zIndex_header; // 7200
 $zIndex_button_goToTop:     $zIndex_button_topLevel; // 9900
+
+/*___ Slick Slider ______________________*/
+$zIndex_slider_arrows_dots:  7150;
+$zIndex_slider:              7100;
+
 
 
 /* // 1000 ------------------------------------------------------------------ */

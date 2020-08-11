@@ -35,7 +35,7 @@
         <div class="mobileForm tabletForm">
             <form method="post" class="mha" id="formID">
                 <?php
-                    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/form_send.inc.php');
+                    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/form.send.inc.php');
                     echo $form_status_msg__formName;
                     echo $form_status_msg_pop__formName;
 

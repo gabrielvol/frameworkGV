@@ -52,7 +52,7 @@
     }
     
     @include mobileOnly{
-        @if $header_fixed_act_MO == "on"{
+        @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_MO;
         }  
         
@@ -64,7 +64,7 @@
     }
     
     @include afterMobileLandscape{
-        @if $header_fixed_act_AML == "on"{
+        @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_AML;
         }    
         
@@ -76,7 +76,7 @@
     }
     
     @include mobileLandscapeOnly{
-        @if $header_fixed_act_MLO == "on"{
+        @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_MLO;
         }    
         
@@ -91,7 +91,8 @@
         @if $nav_accordion_act == "on"{
             padding-top: $header_navAccordion_height_BT;
         }
-        @if $header_fixed_act_BT == "on"{
+        
+        @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_BT;
         }
         
@@ -103,7 +104,7 @@
     }
     
     @include afterTablet{
-        @if $header_fixed_act_AT == "on"{
+        @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_AT;
         }
         
@@ -135,7 +136,7 @@
     }
     
     @include afterTabletLandscape{
-        @if $header_fixed_act_ATL == "on"{
+        @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_ATL;
         }
         
