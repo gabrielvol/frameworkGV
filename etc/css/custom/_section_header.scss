@@ -58,8 +58,11 @@
             top: 0;
             right: 0;
             left: 0;
-            height: $header_height_MO;
             box-shadow: $header_fixed_bxShadow;
+        }
+        
+        @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_MO;
         }
 
         .logo_header{
@@ -77,8 +80,11 @@
             top: 0;
             right: 0;
             left: 0;
-            height: $header_height_AML;
             box-shadow: $header_fixed_bxShadow;
+        }
+        
+        @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_AML;
         }
         
         .logo_header{
@@ -96,8 +102,11 @@
             top: 0;
             right: 0;
             left: 0;
-            height: $header_height_MLO;
             box-shadow: $header_fixed_bxShadow;
+        }
+        
+        @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_MLO;
         }
         
         .logo_header{
@@ -225,12 +234,15 @@
             top: 0;
             right: 0;
             left: 0;
-            height: $header_height_AT;
             box-shadow: $header_fixed_bxShadow;
         
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
+        }
+        
+        @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_AT;
         }
         
         @if $nav_topper_act == "on"{
@@ -303,6 +315,9 @@
             top: 0;
             right: 0;
             left: 0;
+        }
+        
+        @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_ATL;
         }
         

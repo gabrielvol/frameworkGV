@@ -6,6 +6,7 @@
 
 <?php
 //<script src="/nuevo/js/_topper.js"></script>
+//<script src="/nuevo/js/_scrollSpy.js"></script>
 ?>
 
 <?php        if($nav_accordion_act == 1): // nav `[/var/nav.act.inc.php]` ?>
