@@ -1,10 +1,10 @@
 <li class="<?php if($nav_pageCurrent == 0) { echo 'visuallyHidden nav_item_current'; } ?>">
-    <a <?php echo $href_index; if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href_index; ?> <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?>
     </a>
 </li>
 <li class="nav_item_contacto <?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
-    <a <?php echo $href_xxx; if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href_xxx; ?> <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?>
     </a>
 </li>
@@ -15,7 +15,7 @@
 </li>
 <!--Con gettext--> 
 <li class="<?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
-    <a href="/nuevo/<?php echo $href_xxx; if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?>" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a href="/nuevo/<?php echo $href_xxx; ?> <?php if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?>" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?>
     </a>
 </li>
@@ -28,7 +28,7 @@
     </p>
     <ul id="nav_item_nosotros_subNav" class="nav_subNav nav_subNav_level1 unstyled" role="group" aria-expanded="false" aria-labelledby="nav_TLI_nosotros">
         <li class="<?php if($nav_pageCurrent_int == 200) { echo 'nav_item_current'; } ?>">
-            <a <?php echo $href_xxx; if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
+            <a <?php echo $href_xxx; ?> <?php if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
                 <?php echo _("Historia"); ?>
             </a>
         </li>
@@ -48,7 +48,7 @@
             </p>
             <ul id="nav_item_historia_subNav" class="nav_subNav nav_subNav_level2 unstyled" role="group" aria-expanded="false" aria-labelledby="nav_TLI_historia">
                 <li class="<?php if($nav_pageCurrent_int == 211) { echo 'nav_item_current'; } ?>">
-                    <a <?php echo $href_xxx; if($nav_pageCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
+                    <a <?php echo $href_xxx; ?> <?php if($nav_pageCurrent_int == 211) { echo 'aria-current="page"'; } ?>>
                         <?php echo _("Comienzos"); ?>
                     </a>
                 </li>

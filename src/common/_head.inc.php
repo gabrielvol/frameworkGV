@@ -126,7 +126,6 @@
 <script src="/nuevo/js/html5shiv.min.js"></script>
 
 <!-- Custom js -->
-<script src="/nuevo/js/scrollSpy.min.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
