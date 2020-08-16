@@ -45,6 +45,14 @@
                     text-transform: uppercase;
                 }
             }
+            
+            .nav_main_ul{
+                > li{
+                    & + li{
+                        @include borderStyleT($nav_item_level0_bdColour_BT);
+                    }
+                }
+            }
         }
     }
 }

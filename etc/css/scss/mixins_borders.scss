@@ -1,8 +1,47 @@
 /* =============================================================================
-   Border Helpers Mixins | Etc [mixinsBorders.scss]
+   Border Helpers Mixins | Etc [mixins_borders.scss]
    ========================================================================== */
-//A,T,R,B,L = all,top,right,bottom,left
-//H,V,X = horizontal,vertical,user defined values
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de mixins.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
 
 /* // General Border Radius Mixins ------------------------------------------ */
 @mixin borderStyle($borderStyleMX_bdColour: $bdColour_main_global, $borderStyleMX_bdWidth: 1px, $borderStyleMX_bdStyle: solid){
@@ -58,6 +97,112 @@
 }
 @mixin borderRadiusBL($bdRadiusMX_value: $helpers_border_radius_global){
     border-radius: 0 0 0 $bdRadiusMX_value;
+}
+
+/* // Border Style Before & After Mixins ------------------------------------ */
+@mixin borderPseudoT($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: auto, $borderPseudoMX_left: 0px){
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: $borderPseudoMX_top;
+        right: $borderPseudoMX_right;
+        bottom: $borderPseudoMX_bottom;
+        left: $borderPseudoMX_left;
+        height: $borderPseudoMX_bdWidth;
+        background-color: $borderPseudoMX_bdColour;
+    }
+}
+@mixin borderPseudoR($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: auto){
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: $borderPseudoMX_top;
+        right: $borderPseudoMX_right;
+        bottom: $borderPseudoMX_bottom;
+        left: $borderPseudoMX_left;
+        width: $borderPseudoMX_bdWidth;
+        background-color: $borderPseudoMX_bdColour;
+    }
+}
+@mixin borderPseudoB($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: auto, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: $borderPseudoMX_top;
+        right: $borderPseudoMX_right;
+        bottom: $borderPseudoMX_bottom;
+        left: $borderPseudoMX_left;
+        height: $borderPseudoMX_bdWidth;
+        background-color: $borderPseudoMX_bdColour;
+    }
+}
+@mixin borderPseudoL($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: auto, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: $borderPseudoMX_top;
+        right: $borderPseudoMX_right;
+        bottom: $borderPseudoMX_bottom;
+        left: $borderPseudoMX_left;
+        width: $borderPseudoMX_bdWidth;
+        background-color: $borderPseudoMX_bdColour;
+    }
+}
+@mixin borderPseudoV($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){
+    position: relative;
+    
+    &::before,
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: $borderPseudoMX_left;
+        right: $borderPseudoMX_right;
+        background-color: $borderPseudoMX_bdColour;
+        height: $borderPseudoMX_bdWidth;
+    }
+    
+    &::before{
+        top: $borderPseudoMX_top;
+    }
+    
+    &::after{
+        bottom: $borderPseudoMX_bottom;
+    }
+}
+@mixin borderPseudoH($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){
+    position: relative;
+    
+    &::before,
+    &::after{
+        content: "";
+        display: block;
+        position: absolute; 
+        top: $borderPseudoMX_top;
+        bottom: $borderPseudoMX_bottom;
+        background-color: $borderPseudoMX_bdColour;
+        height: $borderPseudoMX_bdWidth;
+    }
+    
+    &::before{
+        right: $borderPseudoMX_right;
+    }
+    
+    &::after{
+        left: $borderPseudoMX_left;
+    }
 }
 
 /* // Border separation with equal padding and margin ----------------------- */

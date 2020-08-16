@@ -60,6 +60,12 @@
                         text-align: center;
                     }    
                 }
+            
+                > li{
+                    & + li{
+                        @include borderStyleT($nav_item_level0_bdColour_BT);
+                    }
+                }
 
                 > .nav_item_current{
                     background-color: $nav_item_current_level0_bgColour_BT;
