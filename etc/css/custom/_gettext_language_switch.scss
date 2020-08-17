@@ -57,7 +57,7 @@
         }
         
         @if $nav_drawer_act == "on"{
-            &.clicked{
+            &.navDrawer_open{
                 top: auto;
                 right: auto;
                 position: fixed;

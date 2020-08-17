@@ -27,7 +27,7 @@
 ///-- Espaciado
 // P, M                 = padding, margin
 // T, R, B, L           = top, right, bottom, left
-// H, V, A              = horizontal, vertical, all
+// H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
 // M, T, D, DL          = mobile, tablet, desktop, desktop large
@@ -44,7 +44,12 @@
 
 
 /* // Sizes ----------------------------------------------------------------- */
-$button_hamb_height:        40px;
+$button_hamb_open_height:        40px;
+$button_hamb_close_size:         50px;
+    
+/*___ Nav Accordion _____________________*/
+$nav_accordion_hamburger_height:    40px;
+$nav_accordion_item_height:         45px;
 
 
 

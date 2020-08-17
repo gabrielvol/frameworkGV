@@ -136,7 +136,7 @@
         }    
         
         @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL{
-            &.header_clicked{
+            &.navDrawer_open{
             }
         }   
         
@@ -184,7 +184,7 @@
         
         @if $nav_drawer_act == "on"{
             .logo_header{
-                &.clicked{
+                &.navDrawer_open{
                     @include borderStyleR($nav_drawer_bdColourR);
                     box-sizing: border-box;
                     position: fixed;

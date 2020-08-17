@@ -1,5 +1,5 @@
 /* =============================================================================
-   Logo Sizes Variables | Custom [var/logo_sizes.scss]
+   Logo Sizes Variables | Custom [var/logo_sizes_var.scss]
    ========================================================================== */
 
 /* // Logo Sizes BT --------------------------------------------------------- */
@@ -12,7 +12,7 @@ $logo_height_BT_before:     $logo_width_BT;
 $logo_height_BT_navAcc:     auto;
 
 
-/* // Nav Drawer logo.clicked ----------------------------------------------- */
+/* // Nav Drawer logo.navDrawer_open ---------------------------------------- */
 $logo_clicked_height:       50px;
 $logo_clicked_height_PT:    50px;
 $logo_clicked_height_PB:    10px;

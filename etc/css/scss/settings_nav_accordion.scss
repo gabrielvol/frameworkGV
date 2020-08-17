@@ -13,13 +13,13 @@
             }
             
             .button_hamb_open{                
-                &.clicked{
+                &.button_hamb_open_pressed{
                     display: $none;
                 } 
             }
 
             .button_hamb_close{                
-                &.clicked{
+                &.button_hamb_close_visible{
                     display: block;
                 } 
             }

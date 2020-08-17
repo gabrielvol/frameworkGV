@@ -1,23 +1,42 @@
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {
-        $(this).addClass('clicked');
+        $(this).addClass('button_hamb_open_pressed');
         $(this).attr('aria-pressed', 'true');        
         
-        $(this).closest('#header').addClass('header_clicked');
-        $(this).closest('#header').find('.social, .button_whatsapp').addClass('clicked');
-        $(this).closest('#nav').find('.nav_main_ul').addClass('open');
+        $(this).closest('#header').addClass('navDrawer_open');
+        $(this).closest('#header').find('.social').addClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsapp').addClass('navDrawer_open');
+        
+        $(this).closest('body').find('#footer').addClass('navDrawer_open');
+        
+        $(this).closest('#nav').find('.nav_main_ul').addClass('open');   
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
-            $(this).closest('#header').find('.logo_header, .language_ul').addClass('clicked');
-            $(this).closest('#nav').find('.button_hamb_close').addClass('clicked');
+            $(this).closest('#header').find('.logo_header').addClass('navDrawer_open');
+//            $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_x.svg");
+            $(this).closest('#header').find('.logo_header').addClass('navDrawer_ready');   
+            
+            $(this).closest('#header').find('.language_ul').addClass('navDrawer_open');
+            
+            $(this).closest('#nav').find('.button_hamb_close').addClass('button_hamb_close_visible');
         });
     });
 
     $('.nav_item_noLink_js').click(function () {
-        $(this).closest('#header').removeClass('header_clicked'); 
-        $(this).closest('#header').find('.logo_header, .social, .language_ul').removeClass('clicked');  
+        $(this).closest('#header').addClass('navItemClicked');
+        $(this).closest('#header').removeClass('navDrawer_open'); 
+        $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
+//        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
         
-        $(this).closest('#nav').find('.button_hamb_close, .button_hamb_open').removeClass('clicked');
+        $(this).closest('#header').find('.social').removeClass('navDrawer_open');  
+        $(this).closest('#header').find('.language_ul').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
+        
+        $(this).closest('body').find('#footer').removeClass('navDrawer_open');
+        
+        $(this).closest('#nav').find('.button_hamb_close').removeClass('button_hamb_close_visible');
+        $(this).closest('#nav').find('.button_hamb_open').removeClass('button_hamb_open_pressed');
         $(this).closest('#nav').find('.button_hamb_open').attr('aria-pressed', 'false');
         
         $(this).closest('#nav').find('.modal_nav').hide('fast', 'swing');
@@ -33,12 +52,20 @@ $(document).ready(function () {
     });
 
     $('.button_hamb_close').click(function () {
-        $(this).removeClass('clicked');
+        $(this).removeClass('button_hamb_close_visible');
         
-        $(this).closest('#header').removeClass('header_clicked');
-        $(this).closest('#header').find('.logo_header, .social, .language_ul, .button_whatsapp').removeClass('clicked');
+        $(this).closest('#header').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
+//        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
+
+        $(this).closest('#header').find('.social').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.language_ul').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
+
+        $(this).closest('body').find('#footer').removeClass('navDrawer_open');
         
-        $(this).closest('#nav').find('.button_hamb_open').removeClass('clicked');
+        $(this).closest('#nav').find('.button_hamb_open').removeClass('button_hamb_open_pressed');
         $(this).closest('#nav').find('.button_hamb_open').attr('aria-pressed', 'false');
         
         $(this).closest('#nav').find('.modal_nav').hide('fast', 'swing');
@@ -56,15 +83,24 @@ $(document).ready(function () {
     $('.modal_nav').click(function () {
         $(this).hide('fast');
         
-        $(this).closest('#header').removeClass('header_clicked');
-        $(this).closest('#header').find('.logo_header, .social, .language_ul').removeClass('clicked');
-        $(this).closest('#nav').find('.button_hamb_close').removeClass('clicked');
+        $(this).closest('#header').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
+//        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
+
+        $(this).closest('#header').find('.social').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.language_ul').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
+
+        $(this).closest('body').find('#footer').removeClass('navDrawer_open');
+        
+        $(this).closest('#nav').find('.button_hamb_close').removeClass('button_hamb_close_visible');
         $(this).closest('#nav').find('.nav_main_ul').removeClass('open');
         
         $(this).closest('#nav').find('.nav_subNav').removeClass('openDR');
         $(this).closest('#nav').find('.nav_subNav').attr('aria-expanded', 'false');
         
-        $(this).closest('#nav').find('.button_hamb_open').removeClass('clicked');
+        $(this).closest('#nav').find('.button_hamb_open').removeClass('button_hamb_open_pressed');
         $(this).closest('#nav').find('.button_hamb_open').attr('aria-pressed', 'false');
         
         $(this).closest('#nav').find('.nav_TLI').removeClass('openDR');

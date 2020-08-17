@@ -6,15 +6,16 @@
         .nav_nav{
             @include positionTR(10px, 10px);
             position: fixed;
-
+            
             .button_hamb{
                 @include positionTR(0, 0);
                 position: absolute;
             }
-
+            
             .button_hamb_open{                
                 @include borderRadius($nav_bdRadius);
                 display: block;
+                background-color: $button_hamb_open_bgColour;
                 background-size: 15px;
                 text-align: center;
                 text-transform: uppercase;
@@ -27,18 +28,24 @@
                     
                 } @else {
                     width: 90px;
-                    height: $button_hamb_height;
+                    height: $button_hamb_open_height;
                     background-position: 10px center;
                     border: 1px solid $button_hamb_open_bdColour!important;
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
-                    line-height: $button_hamb_height;
-                }
+                    line-height: $button_hamb_open_height;
+                }   
+                
+                &.button_hamb_open_pressed{
+                    opacity: 0.5;
+                    color: $button_hamb_ftColour_clicked;
+                } 
             }
 
             .button_hamb_close{
-                @include squareSize(45px);
-                background-size: 20px;
+                @include squareSize($button_hamb_close_size);
+                background-color: $button_hamb_close_bgColour;
+                background-size: 100%;
                 border: 1px solid $button_hamb_close_bdColour!important;
                 text-indent: -9999px;
             }

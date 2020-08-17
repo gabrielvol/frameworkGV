@@ -4,19 +4,8 @@
 @if $nav_drawer_act == "on"{
     @include navBT{
         .nav_nav{
-            .button_hamb_open{
-                background-color: $button_hamb_open_bgColour;
-                
-                &.clicked{
-                    opacity: 0.5;
-                    color: $button_hamb_ftColour_clicked;
-                } 
-            }
-
-            .button_hamb_close{
-                background-color: $button_hamb_close_bgColour;
-                
-                &.clicked{
+            .button_hamb_close{                
+                &.button_hamb_close_visible{
                     display: block;
                 } 
             }

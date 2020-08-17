@@ -3,7 +3,66 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de mixins.
+// Este archivo contiene mixins para generar declaraciones de bordes.
+//
+// Listado de mixins:
+// 01 _ borderStyle
+// 02 _ borderRadius
+//
+//
+// 01 _ borderStyle
+// y sus variables borderStyleT, borderStyleR, borderStyleB, etc.,
+// siguiendo el modelo Top, Right, Bottom, Left, Horizontal, Vertical.
+//
+// Los parametros estan preestablecidos como: 
+// border-width: 1px;
+// border-style: solid;
+// border-color: $bdColor_main_global;
+//
+// El orden de los parametros es borderStyle(color, ancho, estilo);
+//
+// Ej. borderStyle(#hex) imprime:
+// .selector{
+//   border-width: 1px;
+//   border-style: solid;
+//   border-color: #hex;
+// }
+//
+// Ej. borderStyleL(#hex) imprime:
+// .selector{
+//   border-left: 1px solid #hex;
+// }
+//
+// Ej. borderStyle(#hex, 2px, dotted) imprime:
+// .selector{
+//   border-width: 1px;
+//   border-style: dotted;
+//   border-color: #hex;
+// }
+// 
+// borderStyleX permite especificar los cuatro valores de la declaracion 
+// `border-width` por separado.
+//
+// Ej. borderStyleX(#hex, 2px 3px 1px 5px) imprime:
+// .selector{
+//   border-width: 2px 3px 1px 5px;
+//   border-style: solid;
+//   border-color: #hex;
+// }
+//
+//
+// 02 _ borderRadius
+// y sus variables borderRadiusT, borderRadiusR, etc.,
+// siguiendo el modelo Top, Right, Bottom, Left, Horizontal, Vertical,
+// Top Right, Top Left, Bottom Right y Bottom Left.
+//
+// El unico parametro es el valor de radio, preestablecido
+// en la variable $bdRadius_global en `[/etc/var/global_var.scss]`.
+//
+// Ej. borderRadiusR(3px) imprime:
+// .selector{
+//   border-radius: 0 3px 3px 0;
+// }
 
 
 
@@ -27,7 +86,7 @@
 ///-- Espaciado
 // P, M                 = padding, margin
 // T, R, B, L           = top, right, bottom, left
-// H, V, A              = horizontal, vertical, all
+// H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
 // M, T, D, DL          = mobile, tablet, desktop, desktop large
