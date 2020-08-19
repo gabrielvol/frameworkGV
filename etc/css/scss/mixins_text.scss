@@ -1,10 +1,99 @@
 /* =============================================================================
-   Text Mixins | Etc [mixinsText.scss]
+   Mixins para texto y alturas de X | Etc [mixins_text.scss]
    ========================================================================== */
-@mixin textBoxHeightAndLineHeight($textBoxHeightAndLineHeightMX_lineHeight:1.2em, $textBoxHeightAndLineHeightMX_size: 2){
-    height: calc(#{$textBoxHeightAndLineHeightMX_lineHeight} * #{$textBoxHeightAndLineHeightMX_size});
-    line-height: $textBoxHeightAndLineHeightMX_lineHeight;
-}
+
+/* // Descripcion ----------------------------------------------------------- */
+// Este archivo contiene mixins para generar declaraciones de tamano en
+// relacion a un valor de altura de X.
+//
+// Listado de mixins:
+// 01 _ equalHeightAndLineHeight
+// 02 _ squareSizeAndEqualHeightAndLineHeight
+// 03 _ textBoxHeightAndLineHeight
+//
+//
+// 01 _ equalHeightAndLineHeight
+// Este mixin genera las declaraciones `height` y `line-height` con el mismo
+// valor. Visualmente genera un texto centrado verticalmente
+// en su linea de texto.
+//
+// Ej. 30px imprime:
+// .selector{
+//   height: 30px;
+//   line-height: 30px;
+// }
+//
+//
+// 02 _ squareSizeAndEqualHeightAndLineHeight
+// Este mixin genera las declaraciones `width` y `height` y `line-height`
+// con el mismo valor, y ademas centra horizontalmente el texto.
+// Un elemento cuadrado.
+//
+// Ej. 50px imprime:
+// .selector{
+//   width: 50px;
+//   height: 50px;
+//   line-height: 50px;
+//   text-align: center;
+// }
+//
+//
+// 03 _ textBoxHeightAndLineHeight
+// Este mixin genera las declaraciones `height` y `line-height`.
+//
+// Funciona con dos parametros, el primero para la altura de X [line-height]
+// y el segundo es un multiplicador.
+//
+// El valor de `height` se genera multiplicando la altura de X por el valor
+// establecido en el segundo parametro.
+// Sirve para que el alto de la caja de texto sea un multiplo de esa altura
+// y pueda contener todas las lineas de texto sin cortar texto.
+// 
+// Ej. textBoxHeightAndLineHeight(1.2em, 3); imprime:
+// .selector{
+//   height: 3.6em;
+//   line-height: 1.2em;
+// }
+// En este ejemplo la caja de texto tiene una altura de tres lineas de texto.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A              = horizontal, vertical, all
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturado, semi, brillante
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
 @mixin equalHeightAndLineHeight($equalHeightAndLineHeightMX_value){
     height: $equalHeightAndLineHeightMX_value;
     line-height: $equalHeightAndLineHeightMX_value;
@@ -14,4 +103,8 @@
     height: $squareSizeAndEqualHeightAndLineHeightMX_value;
     line-height: $squareSizeAndEqualHeightAndLineHeightMX_value;
     text-align: center;
+}
+@mixin textBoxHeightAndLineHeight($textBoxHeightAndLineHeightMX_lineHeight:1.2em, $textBoxHeightAndLineHeightMX_size: 2){
+    height: calc(#{$textBoxHeightAndLineHeightMX_lineHeight} * #{$textBoxHeightAndLineHeightMX_size});
+    line-height: $textBoxHeightAndLineHeightMX_lineHeight;
 }

@@ -1,6 +1,8 @@
 /* =============================================================================
-   Forms Styles | Custom [styles_forms.scss]
+   Forms Styles | Custom [forms.scss]
    ========================================================================== */
+
+/* // Fieldsets ------------------------------------------------------------- */
 fieldset{
     & + fieldset{
         margin-top: 30px;
@@ -23,13 +25,9 @@ fieldset{
         }         
     }
 }
+ 
 
-select{
-    option{
-        &:checked{}
-    }
-}
-
+/* // Status Messages ------------------------------------------------------- */
 .status,
 .msg_mandatory{
     box-sizing: border-box;
@@ -59,7 +57,7 @@ select{
 }
 
 .msg_mandatory{
-    &.invalidmsg_mandatory{
+    &.msg_mandatory_invalid{
         display: $block;
         background-color: $form_status_msg_error_bgColour;
         
@@ -76,6 +74,8 @@ select{
     }
 }
 
+
+/* // General --------------------------------------------------------------- */
 form{
     input,
     select,
@@ -161,7 +161,8 @@ form{
         }
     }
     
-    // Invalid fields
+
+/* // Invalid fields -------------------------------------------------------- */
     input, select, textarea{
         &.invalidField{
             background-image: url('/nuevo/img/form_alert.svg');
@@ -201,7 +202,9 @@ form{
             background-size: 23px;
         }
     }
+    
 
+/* // Input submit ---------------------------------------------------------- */
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
@@ -212,6 +215,8 @@ form{
         font-size: 1.4rem;
     }
     
+
+/* // Labels ---------------------------------------------------------------- */
     @if $formLabel_inside_act == "on"{
         fieldset,
         label{
