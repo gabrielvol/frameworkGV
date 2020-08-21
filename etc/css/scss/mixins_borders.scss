@@ -219,7 +219,7 @@
         background-color: $borderPseudoMX_bdColour;
     }
 }
-@mixin borderPseudoV($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){
+@mixin borderPseudoV($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth_top: 1px, $borderPseudoMX_bdWidth_bottom: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){
     position: relative;
     
     &::before,
@@ -230,15 +230,16 @@
         left: $borderPseudoMX_left;
         right: $borderPseudoMX_right;
         background-color: $borderPseudoMX_bdColour;
-        height: $borderPseudoMX_bdWidth;
     }
     
     &::before{
         top: $borderPseudoMX_top;
+        height: $borderPseudoMX_bdWidth_top;
     }
     
     &::after{
         bottom: $borderPseudoMX_bottom;
+        height: $borderPseudoMX_bdWidth_bottom;
     }
 }
 @mixin borderPseudoH($borderPseudoMX_bdColour: $bdColour_main_global, $borderPseudoMX_bdWidth: 1px, $borderPseudoMX_top: 0px, $borderPseudoMX_right: 0px, $borderPseudoMX_bottom: 0px, $borderPseudoMX_left: 0px){

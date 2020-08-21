@@ -1,5 +1,5 @@
 /* =============================================================================
-   Settings Lists | Custom [settings_lists.scss]
+   Lists | Custom [lists.scss]
    ========================================================================== */
 .hyphenated{
     li{        
@@ -33,10 +33,42 @@
         } 
     }
     
+    &.numbered_decimal{
+        > li{
+            &::before{
+                content: counter(liN, decimal) ".";
+            }
+        }
+    }
+    
     &.numbered_lowerLatin{
         > li{
             &::before{
-                content: counter(liN, lower-latin);
+                content: counter(liN, lower-latin) ".";
+            }
+        }
+    }
+    
+    &.numbered_upperLatin{
+        > li{
+            &::before{
+                content: counter(liN, upper-latin) ".";
+            }
+        }
+    }
+    
+    &.numbered_upperRoman{
+        > li{
+            &::before{
+                content: counter(liN, upper-roman) ".";
+            }
+        }
+    }
+    
+    &.numbered_lowerRoman{
+        > li{
+            &::before{
+                content: counter(liN, lower-roman) ".";
             }
         }
     }

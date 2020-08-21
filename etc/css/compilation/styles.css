@@ -1812,7 +1812,7 @@ article, article::before, article::after, details, details::before, details::aft
       line-height: 50px; } }
 
 /* =============================================================================
-   Settings Lists | Custom [settings_lists.scss]
+   Lists | Custom [lists.scss]
    ========================================================================== */
 .hyphenated li {
   position: relative; }
