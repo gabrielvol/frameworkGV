@@ -24,7 +24,7 @@ body::after{
     font-weight: normal;
 
     .lb-image{
-        @include borderRadius();
+        border-radius: $bdRadius_global;
         display: block;
         height: auto;
         max-width: inherit;
@@ -37,7 +37,7 @@ body::after{
 }
 .lb-outerContainer{
     @include squareSize(250px);
-    @include borderRadius();
+    border-radius: $bdRadius_global;
     position: relative;
     background-color: $bgWhite;
     *zoom: 1;

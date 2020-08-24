@@ -114,7 +114,7 @@
 .button_whatsapp{    
     @include transition(1s);
     @include squareSize($button_whatsapp_size);
-    @include borderRadius(50%);
+    border-radius: 50%;
     position: fixed;
     z-index: $zIndex_button_topLevel;
     bottom: 40px;

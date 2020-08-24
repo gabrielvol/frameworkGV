@@ -10,7 +10,7 @@
         background-color: $language_a_bgColour;
         
         @if $language_flag_circled_act == "on"{
-            @include borderRadius(50%);
+            border-radius: 50%;
 
             &:focus, &:hover{
                 box-shadow: 0 0 10px $white;

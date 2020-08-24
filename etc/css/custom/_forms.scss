@@ -36,7 +36,7 @@ fieldset{
 
 .status.ok,
 .msg_mandatory{
-    @include borderRadius();
+    border-radius: $bdRadius_global;
     padding: 7px 20px;
 }
 
@@ -84,6 +84,7 @@ form{
         @include borderStyle($form_input_bdColour);
         padding-right: 10px;
         padding-left: 10px;
+        font-family: $form_input_fontFamily; 
     }
     
     input{
@@ -210,9 +211,10 @@ form{
     input[type="button"],
     button{
         @include borderStyle($form_submit_bdColour);
-        @include borderRadius();
+        border-radius: $bdRadius_global;
         margin-bottom: $zero;
         font-size: 1.4rem;
+        font-family: $form_submit_fontFamily;
     }
     
 
@@ -290,7 +292,7 @@ form{
         .form_label_name{
             display: block;
             padding-left: 7px;
-            font-family: $formLabel_fontFamily;
+            font-family: $form_label_fontFamily;
             font-size: 1.1rem!important;
         }
 

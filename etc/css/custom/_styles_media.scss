@@ -3,7 +3,7 @@
    ========================================================================== */
 .video_mask,
 .map_mask{
-    @include borderRadius();
+    border-radius: $bdRadius_global;
     @include borderStyle($bdGreyL);
     box-sizing: border-box;
     overflow: hidden;

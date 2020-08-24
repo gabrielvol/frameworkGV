@@ -25,7 +25,7 @@
     .pop_close{
         $pop_close_size: 33px;
 
-        @include borderRadius(50%);
+        border-radius: 50%;
         @include bgSvg(pop_close); 
         width: $pop_close_size!important;
         height: $pop_close_size!important;
@@ -65,7 +65,7 @@
         max-height: 100%;
     */      
 
-    @include borderRadius(); 
+    border-radius: $bdRadius_global; 
     top: 20%;
     left: 50%;
     background-color: $form_status_msg_ok_bgColour;          
@@ -102,7 +102,7 @@
     }
 
     .pop_submit{
-        @include borderRadius();
+        border-radius: $bdRadius_global;
         @include transition(1s);
         @include equalHeightAndLineHeight(35px);
         width: 40%;
@@ -161,7 +161,7 @@
 
     .video_mask{
       //@include borderStyle($bdGreyD);
-        @include borderRadius(0);
+        border-radius: 0;
         border: $none;
     }
               

@@ -1,4 +1,4 @@
-<li class="<?php if($nav_pageCurrent == 0) { echo 'visuallyHidden nav_item_current'; } ?>">
+<li class="<?php if($nav_pageCurrent == 0) { echo 'visually_hidden nav_item_current'; } ?>">
     <a <?php echo $href_index; ?> <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?>
     </a>

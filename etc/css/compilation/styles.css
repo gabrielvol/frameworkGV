@@ -1131,7 +1131,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-.visuallyHidden {
+.visually_hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -1143,11 +1143,11 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   white-space: nowrap;
   /* 1 */
   /*
- * Extends the .visuallyHidden class to allow the element
+ * Extends the .visually_hidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */ }
-  .visuallyHidden.focusable:active, .visuallyHidden.focusable:focus {
+  .visually_hidden.focusable:active, .visually_hidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -1415,7 +1415,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxBT {
     box-sizing: border-box; }
-  .visuallyHiddenBT {
+  .visually_hiddenBT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1426,7 +1426,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visuallyHiddenBT.focusable:active, .visuallyHiddenBT.focusable:focus {
+    .visually_hiddenBT.focusable:active, .visually_hiddenBT.focusable:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1491,7 +1491,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxAT {
     box-sizing: border-box; }
-  .visuallyHiddenAT {
+  .visually_hiddenAT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1502,7 +1502,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visuallyHiddenAT.focusable:active, .visuallyHiddenAT.focusable:focus {
+    .visually_hiddenAT.focusable:active, .visually_hiddenAT.focusable:focus {
       clip: auto;
       height: auto;
       margin: 0;

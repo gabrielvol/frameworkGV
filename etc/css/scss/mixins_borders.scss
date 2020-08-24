@@ -130,31 +130,31 @@
 }
 
 /* // Border Radius Mixins -------------------------------------------------- */
-@mixin borderRadius($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadius($bdRadiusMX_value: $bdRadius_global){
     border-radius: $bdRadiusMX_value;
 }
-@mixin borderRadiusT($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusT($bdRadiusMX_value: $bdRadius_global){
     border-radius: $bdRadiusMX_value $bdRadiusMX_value 0 0;
 }
-@mixin borderRadiusR($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusR($bdRadiusMX_value: $bdRadius_global){
     border-radius: 0 $bdRadiusMX_value $bdRadiusMX_value 0;
 }
-@mixin borderRadiusB($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusB($bdRadiusMX_value: $bdRadius_global){
     border-radius: 0 0 $bdRadiusMX_value $bdRadiusMX_value;
 }
-@mixin borderRadiusL($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusL($bdRadiusMX_value: $bdRadius_global){
     border-radius: $bdRadiusMX_value 0 0 $bdRadiusMX_value;
 }
-@mixin borderRadiusTR($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusTR($bdRadiusMX_value: $bdRadius_global){
     border-radius: 0 $bdRadiusMX_value 0 0;
 }
-@mixin borderRadiusTL($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusTL($bdRadiusMX_value: $bdRadius_global){
     border-radius: $bdRadiusMX_value 0 0 0;
 }
-@mixin borderRadiusBR($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusBR($bdRadiusMX_value: $bdRadius_global){
     border-radius: 0 0 $bdRadiusMX_value 0;
 }
-@mixin borderRadiusBL($bdRadiusMX_value: $helpers_border_radius_global){
+@mixin borderRadiusBL($bdRadiusMX_value: $bdRadius_global){
     border-radius: 0 0 0 $bdRadiusMX_value;
 }
 

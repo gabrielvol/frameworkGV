@@ -238,7 +238,6 @@ form{
     input, select, textarea{
         background-color: $form_input_bgColour;
         color: $form_input_ftColour;
-        font-family: $form_input_fontFamily; 
         transition: all 1s ease, background-position 0s ease;
         
         &:focus{
@@ -274,7 +273,6 @@ form{
         @include transition(1s);
         background-color: $form_submit_bgColour;
         color: $form_submit_ftColour;
-        font-family: $form_submit_fontFamily;
 
         &:focus, &:hover{
             background-color: $form_submit_bgColour_hover;

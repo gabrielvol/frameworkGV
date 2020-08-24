@@ -55,7 +55,7 @@ nav{
         }
         
         .button_hamb_close{
-            @include borderRadius(50%);
+            border-radius: 50%;
             z-index: $zIndex_nav_close;  
             display: none;            
             background-color: $bgWhite;
