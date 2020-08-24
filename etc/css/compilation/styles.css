@@ -1415,7 +1415,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxBT {
     box-sizing: border-box; }
-  .visually_hiddenBT {
+  .visually_hidden_BT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1426,7 +1426,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visually_hiddenBT.focusable:active, .visually_hiddenBT.focusable:focus {
+    .visually_hidden_BT.focusable:active, .visually_hidden_BT.focusable:focus {
       clip: auto;
       height: auto;
       margin: 0;

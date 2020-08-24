@@ -31,7 +31,7 @@
                 background-image: url('/nuevo/img/slider_pag.svg');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 80%;
+                background-size: 100%;
                 padding: $zero;
                 border: $none;
                 text-indent: -9999px;
@@ -50,7 +50,6 @@
                     
                 button{
                     background-image: url('/nuevo/img/slider_pag_current.svg');
-                    background-size: 90%;
                 }
             }
         }

@@ -3,8 +3,10 @@
    ========================================================================== */
 #header{
     box-sizing: border-box;
-//  position: relative;
-//  z-index: $zIndex_header;
+/*
+    position: relative;
+    z-index: $zIndex_header;
+*/
     height: $header_height_ALL;
         
     @if $header_fixed_act_ALL == "on"{
@@ -66,7 +68,9 @@
         }
 
         .logo_header{
-//          width: $logo_width_MO;
+/*
+            width: $logo_width_MO;
+*/         
         }
     }
     
@@ -88,7 +92,9 @@
         }
         
         .logo_header{
-//          width: $logo_width_AML;
+/*
+            width: $logo_width_AML;
+*/         
         }
     }
     

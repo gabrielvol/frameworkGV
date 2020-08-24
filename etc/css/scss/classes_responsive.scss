@@ -475,7 +475,7 @@
         .displayNoneBT{display: $none}
         .contentBoxBT{box-sizing: content-box}
         .borderBoxBT{box-sizing: border-box}
-        .visually_hiddenBT{
+        .visually_hidden_BT{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
@@ -611,7 +611,7 @@
         .displayNoneBTL{display: $none}
         .contentBoxBTL{box-sizing: content-box}
         .borderBoxBTL{box-sizing: border-box}
-        .visually_hiddenBTL{
+        .visually_hidden_BTL{
             border: 0;
             clip: rect(0 0 0 0);
             height: 1px;
