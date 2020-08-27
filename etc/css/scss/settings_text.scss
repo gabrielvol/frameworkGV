@@ -4,7 +4,7 @@
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
     font-family: $fontStack_map;
     font-weight: $fontWeight_global;
-    font-size: $fontSize_global;
+    font-size: $ftSize_global;
     line-height: $lineHeight_global;
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
@@ -47,13 +47,13 @@ h1, h2, h3, h4, h5, h6{
 }
 p, a, li, dd, dt, .pSize{
     @include beforeTablet{
-        font-size: $fontSize_paragraph_BT;
+        font-size: $ftSize_paragraph_BT;
     }
     @include afterTablet{
-        font-size: $fontSize_paragraph_AT;
+        font-size: $ftSize_paragraph_AT;
     }
     @include afterTabletLandscape{
-        font-size: $fontSize_paragraph_ATL;
+        font-size: $ftSize_paragraph_ATL;
     }
 }
 p, dl, legend{
