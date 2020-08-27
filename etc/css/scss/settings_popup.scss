@@ -23,10 +23,12 @@
     }
 }
 
-.pop_main{
-    z-index: $zIndex_pop_main;
+.pop_general{
+    z-index: $zIndex_pop_general;
     
-    .pop_close{
+    .pop_button_close{
+        position: absolute;
         z-index: $zIndex_button_topLevel;
+        text-indent: -9999px;
     }
 }

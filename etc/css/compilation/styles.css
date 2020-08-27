@@ -398,7 +398,7 @@ $language_flag_height_AT:           32px;
 /* // Mixin para clase .centerVertical -------------------------------------- */
 /* // Mixin para clase .centerHorizontal ------------------------------------- */
 /* // Mixin centrado custom ------------------------------------------------- */
-/* // Mixin para centrar pop_main ------------------------------------------- */
+/* // Mixin para centrar pop_general ------------------------------------------- */
 /* =============================================================================
    Spacing Helpers Mixins | Common [mixin_spacing.scss]
    ========================================================================== */
@@ -1983,9 +1983,9 @@ article, article::before, article::after, details, details::before, details::aft
     .modal_nav {
       display: none !important; } }
 
-.pop_main {
+.pop_general {
   z-index: 9800; }
-  .pop_main .pop_close {
+  .pop_general .pop_button_close {
     z-index: 9900; }
 
 /* =============================================================================
@@ -2003,14 +2003,14 @@ article, article::before, article::after, details, details::before, details::aft
     background-color: $bgBlack!important;
     */ }
 
-.pop_main {
+.pop_general {
   position: fixed;
   top: 80px;
   left: 50%; }
-  .pop_main .pop_close {
+  .pop_general .pop_button_close {
     border-radius: 50%;
     background-color: transparent;
-    background-image: url("/nuevo/img/pop_close.svg");
+    background-image: url("/nuevo/img/pop_button_close.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -2018,9 +2018,9 @@ article, article::before, article::after, details, details::before, details::aft
     height: 33px !important;
     background-size: 13px;
     border: 1px solid #666 !important; }
-    .pop_main .pop_close, .pop_main .pop_close:focus, .pop_main .pop_close:hover {
+    .pop_general .pop_button_close, .pop_general .pop_button_close:focus, .pop_general .pop_button_close:hover {
       background-color: #fff; }
-  .pop_main .pop_innerContainer {
+  .pop_general .pop_innerContainer {
     top: 0;
     right: 0;
     bottom: 0;
@@ -2028,11 +2028,11 @@ article, article::before, article::after, details, details::before, details::aft
     position: absolute;
     overflow: auto; }
   @media (max-width: 600px) {
-    .pop_main .pop_close {
+    .pop_general .pop_button_close {
       top: -45px;
       right: 0; } }
   @media (min-width: 601px) {
-    .pop_main .pop_close {
+    .pop_general .pop_button_close {
       top: -35px;
       right: -35px; } }
 
@@ -2063,7 +2063,7 @@ article, article::before, article::after, details, details::before, details::aft
       padding-bottom: 50px; }
   .pop_warning .pop_innerContainer {
     padding: 20px; }
-  .pop_warning .pop_close {
+  .pop_warning .pop_button_close {
     top: 10px;
     right: 10px; }
   .pop_warning .pop_submit {
@@ -2102,7 +2102,7 @@ article, article::before, article::after, details, details::before, details::aft
         bottom: 20px;
         left: 20px;
         padding: 20px; }
-      .pop_warning .pop_close {
+      .pop_warning .pop_button_close {
         top: 10px;
         right: 10px; } }
 

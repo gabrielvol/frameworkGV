@@ -17,18 +17,18 @@
     */
 }
 
-.pop_main{
+.pop_general{
     position: fixed;
     top: 80px;
     left: 50%;
     
-    .pop_close{
-        $pop_close_size: 33px;
+    .pop_button_close{
+        $pop_button_close_size: 33px;
 
         border-radius: 50%;
-        @include bgSvg(pop_close); 
-        width: $pop_close_size!important;
-        height: $pop_close_size!important;
+        @include bgSvg(pop_button_close); 
+        width: $pop_button_close_size!important;
+        height: $pop_button_close_size!important;
         background-size: 13px;
         border: 1px solid $bdGreyXD!important; 
 
@@ -44,14 +44,14 @@
     }
 
     @include beforeMobile600{
-        .pop_close{
+        .pop_button_close{
             top: -45px;
             right: 0;
         }
     }
 
     @include afterMobile600{
-        .pop_close{
+        .pop_button_close{
             top: -35px;
             right: -35px;
         } 
@@ -97,7 +97,7 @@
         padding: 20px;
     }
 
-    .pop_close{
+    .pop_button_close{
         @include positionTR(10px, 10px);
     }
 
@@ -150,7 +150,7 @@
             padding: 20px;
         }
 
-        .pop_close{
+        .pop_button_close{
             @include positionTR(10px, 10px);
         }
     }

@@ -12,7 +12,7 @@ $(document).ready(function () {
     
     
     
-    $('.modal_video, .pop_close').click(function () {        
+    $('.modal_video, .pop_button_close').click(function () {        
         $('.modal_video, .pop_video').addClass('displayNone');
         $('.modal_video, .pop_video').removeClass('displayBlock');
     });

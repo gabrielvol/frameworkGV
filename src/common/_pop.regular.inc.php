@@ -1,5 +1,5 @@
 <div class="pop_main displayNone">
-    <button type="button" class="pop_close pAbs indentedText"><?php echo _("Cerrar"); ?></button>
+    <button type="button" class="pop_button_close"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
 
     </div>
