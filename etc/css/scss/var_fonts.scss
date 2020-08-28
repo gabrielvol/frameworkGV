@@ -93,15 +93,6 @@ $tahoma:                map-get($fontFamilies_sans_map, tahoma);
 $lucidaGrande:          map-get($fontFamilies_sans_map, lucidaGrande);
 $trebuchetMS:           map-get($fontFamilies_sans_map, trebuchetMS);
 
-/*___ Open Sans Map __________________*/
-$fontFamily_openSans_map:(
-    openSansL: open_sanslight,
-    openSans: open_sansregular,
-    openSansI: open_sansitalic,
-    openSansB: open_sansbold,
-    openSansBI: open_sansbold_italic
-);
-
 
 /* // Serif ----------------------------------------------------------------- */
 $fontFamilies_serif_map:(

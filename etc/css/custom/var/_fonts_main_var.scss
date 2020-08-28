@@ -78,12 +78,6 @@ $arial:     map-get($fontFamilies_map, arial);
 $roboto:    map-get($fontFamilies_map, roboto);
 //$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
 
-//$openSansL:   map-get($fontFamily_openSans_map, openSansL);
-//$openSans:    map-get($fontFamily_openSans_map, openSans);
-//$openSansI:   map-get($fontFamily_openSans_map, openSansI);
-//$openSansB:   map-get($fontFamily_openSans_map, openSansB);
-//$openSansBI:  map-get($fontFamily_openSans_map, openSansBI);
-
 /*___ Creamos la variable de la fuente principal del sitio _*/
 $fontFamily_main_global:    $arial;
 $fontFamily_bold_global:    $fontFamily_main_global;

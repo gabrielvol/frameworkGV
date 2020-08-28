@@ -7,12 +7,6 @@
     @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $fontFamilies_map {
         .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
     }
-    
-    @if $openSans_classes_act == "on" {
-        @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $fontFamily_openSans_map {
-            .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
-        }
-    }
 }
 
 
