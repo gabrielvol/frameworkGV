@@ -1,15 +1,16 @@
 <nav id="nav" class="nav_nav pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
     <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visually_hidden"><?php echo _("Abrir"); ?></span> <?php echo _("Men&uacute;"); ?></button>
     <button type="button" class="button_hamb button_hamb_close"><?php echo _("Cerrar"); ?> <span class="visually_hidden"><?php echo _("Men&uacute;"); ?></span></button>
-    <ul class="nav_main_ul navAT unstyled clearfix">
+    <ul class="nav_main_ul navAT unstyled clearfix" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
         <?php include('nav.list.inc.php'); ?>
     </ul>   
     
     <?php
+        // /var/nav.act.inc.php
         if($nav_drawer_act == 1){
-            echo '<ul class="nav_main_ul nav_main_ul_drawer unstyled clearfix">';
-
-            if ($nav_sectionHasSub_act == 1) {
+            echo '<ul class="nav_main_ul nav_main_ul_drawer unstyled clearfix" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">';
+            // /var/nav.act.inc.php
+            if ($nav_SECTION_hasSub_act == 1) {
                 echo '<li class="nav_item_back nav_item_hasSubNav nav_item_hasSubNav_level1 displayNoneAT">
                     <p id="nav_TLI_back" class="nav_TLI" aria-haspopup="true" aria-owns="nav_item_back_subNav" aria-controls="nav_item_back_subNav" role="button" aria-pressed="false">'. _("Men&uacute; principal").'</p>
                     <ul id="nav_item_back_subNav" class="nav_subNav nav_subNav_level1 nav_item_back_subNav unstyled" aria-expanded="false" aria-labelledby="nav_TLI_back">';

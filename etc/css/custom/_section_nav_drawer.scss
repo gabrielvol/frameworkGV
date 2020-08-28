@@ -74,6 +74,7 @@
                     }
                 }
 
+                > .uk-active,
                 > .nav_item_current{
                     background-color: $nav_item_current_level0_bgColour_BT;
                     background-image: url('/nuevo/img/#{$nav_arrows_item_current_level0}');
