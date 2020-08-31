@@ -18,16 +18,13 @@
 @import "var/fonts_main_var";
 @import "var/text_var";
 
-@import "act/language_act";
-@import "var/language_colours_var";
-@import "var/language_sizes_var";
-
 @import "act/section_nav_act";
 @import "var/section_nav_colours_var";
 @import "var/section_nav_arrows_var";
 @import "var/section_nav_fonts_var";
 @import "var/section_nav_sizes_var";
 @import "var/section_nav_hamburger_var";
+@import "var/section_nav_language_var";
 
 @import "act/logo_act";
 @import "act/section_header_act";
@@ -130,7 +127,6 @@
 @import "popup";
 
 @import "section_header";
-//@import "gettext_language_switch";
 //@import "social";
 @import "section_footer";
 
@@ -141,6 +137,7 @@
 @import "section_nav_accordion";
 @import "section_nav_list";
 @import "section_nav_AT";
+//@import "section_nav_language";
 
 //@import "slider";
 //@import "slider_nav";

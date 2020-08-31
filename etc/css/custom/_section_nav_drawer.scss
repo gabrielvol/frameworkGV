@@ -3,7 +3,7 @@
    ========================================================================== */
 @if $nav_drawer_act == "on"{
     @include navBT{
-        .nav_nav{
+        .nav_main{
             @include positionTR(10px, 10px);
             position: fixed;
             

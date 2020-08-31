@@ -3,6 +3,11 @@
 /* =============================================================================
    Font Variables | Etc [var_fonts.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Sans Serif ------------------------------------------------------------ */
+/* // Serif ----------------------------------------------------------------- */
+/* // Monoespaciadas -------------------------------------------------------- */
 /* =============================================================================
    Absolute Variables | Etc [var_absolute.scss]
    ========================================================================== */
@@ -27,8 +32,8 @@
 /* // 7000 ------------------------------------------------------------------ */
 /*___ Header ____________________________*/
 /*___ Footer ____________________________*/
-/* // 1000 ------------------------------------------------------------------ */
 /*___ Slick Slider ______________________*/
+/* // 1000 ------------------------------------------------------------------ */
 /* =============================================================================
    Container Sizes Variables | Custom [var/container.scss]
    ========================================================================== */
@@ -54,16 +59,16 @@
 /* =============================================================================
    Classes Activators | Custom [act/main_act.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Colours --------------------------------------------------------------- */
-/* // Fonts ----------------------------------------------------------------- */
-/* // Text ------------------------------------------------------------------ */
 /* // Pointers -------------------------------------------------------------- */
 /* // Full heights sections ------------------------------------------------- */
 /* =============================================================================
    Helpers Responsive Classes Activators | Custom [act/responsive_act.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // All ------------------------------------------------------------------- */
 /* // Mobile Only MO -------------------------------------------------------- */
 /* // After Mobile Landscape AML -------------------------------------------- */
@@ -80,6 +85,11 @@
 /* // After Desktop AD ------------------------------------------------------ */
 /* // After Desktop Large ADL ----------------------------------------------- */
 /* =============================================================================
+   Text Activators | Custom [act/text_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
    Spacing Helpers Variables | Custom [var/helpers.scss]
    ========================================================================== */
 /* // Spacing --------------------------------------------------------------- */
@@ -90,75 +100,64 @@
 /* =============================================================================
    Colours Main Variables | Custom [var/colours_main.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Border Colours Variables | Custom [var/colours_borders.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Background Colours Variables | Custom [var/colours_backgrounds.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /*___ Declaramos las var para colores de fondo _*/
-/* // Modal Opacity Variables  ---------------------------------------------- */
+/* // Modal Opacity Variables ----------------------------------------------- */
 /*___ Responsive nav ____________________*/
 /* =============================================================================
-   Shadows Variables | Custom [var/shadows.scss]
+   Shadows Variables | Custom [var/shadows_var.scss]
    ========================================================================== */
 /* =============================================================================
-   Fonts Main Variables | Custom [var/fonts_main.scss]
+   Fonts Main Variables | Custom [var/fonts_main_var.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Variables de fuentes -------------------------------------------------- */
 /*___ Creamos la variable de la fuente principal del sitio _*/
 /* // Main font Stack ------------------------------------------------------- */
-/* // Heading Sizes --------------------------------------------------------- */
-/* // Useful Text Format ---------------------------------------------------- */
-/* =============================================================================
-   Fonts Colours Variables | Custom [var/fonts_colours.scss]
-   ========================================================================== */
 /* =============================================================================
    Text Variables | Custom [var/text.scss]
    ========================================================================== */
-/* =============================================================================
-   Language Activators | Custom [act/language_act.scss]
-   ========================================================================== */
-/* // Flags ----------------------------------------------------------------- */
-/* =============================================================================
-   Language Colours Variables | Custom [var/language_colours.scss]
-   ========================================================================== */
-/* =============================================================================
-   Language Sizes Variables | Custom [var/language_sizes.scss]
-   ========================================================================== */
-/* // Flags ----------------------------------------------------------------- */
-/*
-$language_flag_width_AT:            48px;
-$language_flag_height_AT:           32px;
-*/
-/* // Language UL ----------------------------------------------------------- */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Text Colours ---------------------------------------------------------- */
+/* // Espaciado general de texto -------------------------------------------- */
+/* // Headings -------------------------------------------------------------- */
 /* =============================================================================
    Nav Activators | Custom [act/section_nav_act.scss]
    ========================================================================== */
+/* // Language -------------------------------------------------------------- */
 /* =============================================================================
    Nav Colours Variables | Custom [var/section_nav_colours.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Font Colours ---------------------------------------------------------- */
-/*___ Nav BT ____________________________*/
-/*___ Nav AT ____________________________*/
+/*___ BT ________________________________*/
+/*___ AT ________________________________*/
 /*___ Topper ____________________________*/
-/*___ Hamburger _________________________*/
 /* // Background Colours ---------------------------------------------------- */
-/*___ Nav BT ____________________________*/
-/*___ Nav AT ____________________________*/
+/*___ BT ________________________________*/
+/*___ AT ________________________________*/
 /*___ Topper ____________________________*/
-/*___ Hamburger _________________________*/
-/* =============================================================================
-   Nav Arrows | Custom [var/section_nav_arrows.scss]
-   ========================================================================== */
 /* // Border Colours -------------------------------------------------------- */
-/*___ Nav BT ____________________________*/
-/*___ Nav AT ____________________________*/
+/*___ BT ________________________________*/
+/*___ AT ________________________________*/
 /*___ Topper ____________________________*/
+/* =============================================================================
+   Nav Arrows Backgrounds | Custom [var/section_nav_arrows_var.scss]
+   ========================================================================== */
 /* =============================================================================
    Nav Fonts Variables | Custom [var/section_nav_fonts.scss]
    ========================================================================== */
@@ -171,42 +170,64 @@ $language_flag_height_AT:           32px;
 /* // General --------------------------------------------------------------- */
 /* // Nav List -------------------------------------------------------------- */
 /* // Nav Drawer ------------------------------------------------------------ */
-/* // Nav Accordion --------------------------------------------------------- */
 /* // Nav Topper ------------------------------------------------------------ */
 /* // Nav Sizes ------------------------------------------------------------- */
 /* =============================================================================
+   Nav Hamburger Variables | Custom [var/section_nav_hamburger.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Sizes ----------------------------------------------------------------- */
+/*___ Nav Accordion _____________________*/
+/* // Colours --------------------------------------------------------------- */
+/*___ Font ______________________________*/
+/*___ Backgrounds _______________________*/
+/*___ Borders ___________________________*/
+/* // Fonts ----------------------------------------------------------------- */
+/* =============================================================================
+   Language Sizes Variables | Custom [var/section_nav_language_va.scss]
+   ========================================================================== */
+/* // Language Sizes -------------------------------------------------------- */
+/*___ Flags _____________________________*/
+/*___ Language UL _______________________*/
+/* // Language Colours ------------------------------------------------------ */
+/* =============================================================================
    Logo Activators | Custom [act/logo_act.scss]
    ========================================================================== */
-/* // Logo img background ::before activator -------------------------------- */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Header Activators | Custom [act/section_header_act.scss]
    ========================================================================== */
 /* // Menu y logo ----------------------------------------------------------- */
 /* // Header ---------------------------------------------------------------- */
 /* =============================================================================
-   Logo Sizes Variables | Custom [var/logo_sizes.scss]
+   Logo Sizes Variables | Custom [var/logo_sizes_var.scss]
    ========================================================================== */
 /* // Logo Sizes BT --------------------------------------------------------- */
-/* // Nav Drawer logo.clicked ----------------------------------------------- */
+/* // Nav Drawer logo.navDrawer_open ---------------------------------------- */
 /* // Logo Sizes AT --------------------------------------------------------- */
 /* // Logo Sizes Footer ----------------------------------------------------- */
 /* =============================================================================
    Header Height Variables | Custom [var/section_header_heights.scss]
    ========================================================================== */
-/* // Full heights Header --------------------------------------------------- */
 /* =============================================================================
    Slider Activators | Custom [act/slider_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias Globales de nombres de var y mixins ----------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Slider Variables | Custom [var/slider.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Slider Colours -------------------------------------------------------- */
 /* // Slider Arrows --------------------------------------------------------- */
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
+/* =============================================================================
+   Buttons Variables | Custom [var/buttons_var.scss]
+   ========================================================================== */
 /* =============================================================================
    Social Variables | Custom [var/section_social_var.scss]
    ========================================================================== */
@@ -232,7 +253,7 @@ $language_flag_height_AT:           32px;
    Forms activators | Custom [act/forms_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de var y mixins ----------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Form Colours Variables | Custom [var/form_colours.scss]
    ========================================================================== */
@@ -246,7 +267,8 @@ $language_flag_height_AT:           32px;
 /* =============================================================================
    Form Sizes Variables | Custom [var/form_sizes.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form ------------------------------------------------------------------ */
 /* // Labels ---------------------------------------------------------------- */
 /* // Inputs ---------------------------------------------------------------- */
@@ -257,7 +279,8 @@ $language_flag_height_AT:           32px;
 /* =============================================================================
    Tables Variables | Custom [var/tables.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Custom Sizes ---------------------------------------------------------- */
 /* // Rounded Table --------------------------------------------------------- */
 /* =============================================================================
@@ -273,7 +296,7 @@ $language_flag_height_AT:           32px;
    Media Queries values Variables | Custom [var/mediaQueries_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias Globales de nombres de var y mixins ----------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Regular --------------------------------------------------------------- */
 /* // Nav ------------------------------------------------------------------- */
 /* // Apple ----------------------------------------------------------------- */
@@ -282,51 +305,12 @@ $language_flag_height_AT:           32px;
    ========================================================================== */
 /* // Page Index Sizes ------------------------------------------------------ */
 /* // Page Index Colours ---------------------------------------------------- */
-/* // Font Face ------------------------------------------------------------- */
-/* =============================================================================
-   OpenSans Font Face | Etc [fontFaceOpenSans.scss]
-   ========================================================================== */
-@font-face {
-  font-family: 'open_sanslight';
-  src: url("/nuevo/fonts/OpenSans-Light-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Light-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'open_sansregular';
-  src: url("/nuevo/fonts/OpenSans-Regular-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'open_sansitalic';
-  src: url("/nuevo/fonts/OpenSans-Italic-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Italic-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'open_sansbold';
-  src: url("/nuevo/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-Bold-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'open_sansbold_italic';
-  src: url("/nuevo/fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("/nuevo/fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
 /* // Mixins ---------------------------------------------------------------- */
 /* =============================================================================
    Media Queries Mixins | Custom [mediaQueries_mixins.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias Globales de nombres de var y mixins ----------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav ------------------------------------------------------------------- */
 /* // Mobile ---------------------------------------------------------------- */
 /* // Tablet ---------------------------------------------------------------- */
@@ -384,13 +368,15 @@ $language_flag_height_AT:           32px;
 /* // Generador de pesos por cada fuente ------------------------------------ */
 /* // Generador de clases por cada tamaño de fuente ------------------------- */
 /* =============================================================================
-   Text Mixins | Etc [mixinsText.scss]
+   Mixins para texto y alturas de X | Etc [mixins_text.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Colour Mixins | Etc [mixins_colours.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias Globales de nombres de var y mixins ----------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Center Mixins | Etc [mixinsCenter.scss]
    ========================================================================== */
@@ -403,10 +389,13 @@ $language_flag_height_AT:           32px;
    Spacing Helpers Mixins | Common [mixin_spacing.scss]
    ========================================================================== */
 /* =============================================================================
-   Border Helpers Mixins | Etc [mixinsBorders.scss]
+   Border Helpers Mixins | Etc [mixins_borders.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // General Border Radius Mixins ------------------------------------------ */
 /* // Border Radius Mixins -------------------------------------------------- */
+/* // Border Style Before & After Mixins ------------------------------------ */
 /* // Border separation with equal padding and margin ----------------------- */
 /* // Border Fancy Horizontal Line Mixins ----------------------------------- */
 /* =============================================================================
@@ -419,6 +408,34 @@ $language_flag_height_AT:           32px;
 /* =============================================================================
    Angled Edges Functions | Common [functions_angledEdges.scss]scss]
    ========================================================================== */
+/*
+Parameter: $location_angledEdges_fn
+Description: Location of shape relative to parent element
+- inside top
+- outside top
+- inside bottom
+- outside bottom
+
+
+Parameter: $hypotenuse_angledEdges_fn
+Description: Side of the right triangle that the hypotenuse is on
+- upper left
+- upper right
+- lower left
+- lower right
+
+
+Parameter: $fill_angledEdges_fn
+Description: Fill color of triangle
+
+
+Parameter: $height_angledEdges_fn
+Description: Optional - Height of triangle - Accepts a unitless integer that is equivalent to height in px
+
+
+Parameter: $width_angledEdges_fn
+Description: Optional - Width of triangle - Accepts a unitless integer that is equivalent to width in px (If nothing is passed triangle will span to a 100% fluid width) 
+*/
 /* =============================================================================
    Font Stroke Functions | Etc [functionsFontStroke.scss]
    ========================================================================== */
@@ -445,7 +462,7 @@ body {
   background-color: #fff; }
 
 /* =============================================================================
-   Elements Reset/Settings | Etc [resetMain.scss]
+   Elements Reset/Settings | Etc [reset_main.scss]
    ========================================================================== */
 article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button {
   display: block; }
@@ -480,7 +497,7 @@ ol {
   list-style: decimal inside; }
 
 a {
-  line-height: 1rem;
+  line-height: 1;
   cursor: pointer; }
   a img {
     border: none; }
@@ -568,7 +585,7 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, 
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.4; }
+  line-height: calc(1ex / 0.32); }
 
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table {
   color: #000; }
@@ -841,15 +858,6 @@ abbr {
   border: none !important;
   cursor: help; }
 
-.fontSizeReset {
-  font-size: 1rem !important; }
-
-.fontSizeResetEM {
-  font-size: 1em !important; }
-
-.lineHeightReset {
-  line-height: 1em !important; }
-
 .light {
   font-weight: 300; }
 
@@ -970,9 +978,10 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 /* =============================================================================
    Shadows Classes | Custom [classes_shadows.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 .shadow_text {
-  text-shadow: 0 0 3px #000; }
+  text-shadow: 0 0 10px 0 #666; }
 
 .shadow_text_white {
   text-shadow: 0 0 3px #fff; }
@@ -1123,15 +1132,15 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   display: table-cell;
   vertical-align: middle; }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 .visually_hidden {
+  /*
+Hide only visually, but have it available for screen readers:
+https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+1. For long content, line feeds are not interpreted as spaces and small width
+   causes content to wrap 1 word per line:
+   https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -1143,11 +1152,11 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   white-space: nowrap;
   /* 1 */
   /*
- * Extends the .visually_hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */ }
-  .visually_hidden.focusable:active, .visually_hidden.focusable:focus {
+Extends the .visually_hidden class to allow the element
+to be focusable when navigated to via the keyboard:
+https://www.drupal.org/node/897638
+*/ }
+  .visually_hidden:active, .visually_hidden:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -1371,9 +1380,10 @@ article, article::before, article::after, details, details::before, details::aft
   list-style: none !important; }
 
 /* =============================================================================
-   Classes Responsive | Etc [classesResponsive.scss]
+   Classes Responsive | Common [classes_responsive.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Mobile Only Classes | Etc [classesResponsive.scss]
    ========================================================================== */
@@ -1426,7 +1436,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visually_hidden_BT.focusable:active, .visually_hidden_BT.focusable:focus {
+    .visually_hidden_BT:active, .visually_hidden_BT:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1502,7 +1512,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visually_hiddenAT.focusable:active, .visually_hiddenAT.focusable:focus {
+    .visually_hiddenAT:active, .visually_hiddenAT:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1546,7 +1556,9 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* =============================================================================
    Container Settings | Etc [settingsContainer.scss]
-/* // References ------------------------------------------------------------ */
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 .container,
 .containerMO,
 .containerAML,
@@ -1729,7 +1741,8 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Global Styles | Custom [styles_global.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Main Gobal Styles ----------------------------------------------------- */
 /* =============================================================================
    Internas Global Styles | Custom [stylesGlobal.scss]
@@ -1738,30 +1751,9 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Button Styles | Custom [buttons.scss]
    ========================================================================== */
-/* // References ------------------------------------------------------------ */
-.button_whatsapp {
-  height: 50px;
-  line-height: 50px;
-  border-radius: 30px;
-  position: fixed;
-  z-index: 9900;
-  right: 20px;
-  bottom: 20px;
-  display: block;
-  background-color: #3ce35a;
-  background-image: url("/nuevo/img/social_wa_button.svg");
-  background-size: 40px;
-  background-position: 5px center;
-  background-repeat: no-repeat;
-  padding-left: 50px;
-  padding-right: 30px;
-  text-shadow: 0 0 5px #1c6829; }
-  .button_whatsapp:focus, .button_whatsapp:hover {
-    box-shadow: 0 0 5px #1c6829; }
-
-/* =============================================================================
-   Call to Action Styles | Custom [buttons_callToAction.scss]
-   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Call to Action -------------------------------------------------------- */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
   border: 2px solid #818181;
@@ -1811,6 +1803,53 @@ article, article::before, article::after, details, details::before, details::aft
       height: 50px;
       line-height: 50px; } }
 
+/* // WhatsApp -------------------------------------------------------------- */
+.button_whatsapp {
+  transition: all 1s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9900;
+  bottom: 40px;
+  right: 10px;
+  display: block;
+  background-color: rgba(60, 209, 52, 0.85);
+  background-image: url("/img/button_whatsapp.svg");
+  background-repeat: no-repeat;
+  background-size: calc(60px - 10px);
+  background-position: center center;
+  text-indent: -9999px; }
+  .button_whatsapp:focus, .button_whatsapp:hover {
+    box-shadow: 0 0 5px #3c9637;
+    background-color: #3cd134; }
+    .button_whatsapp:focus::before, .button_whatsapp:hover::before {
+      border-radius: 15px;
+      height: 40px;
+      line-height: 40px;
+      content: "Abre un chat con Agridulze.";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      right: calc(60px + 10px);
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 0 15px;
+      margin-top: calc(-1 * calc(40px / 2));
+      color: #fff;
+      font-size: 0.8rem;
+      text-indent: 0;
+      text-align: center; }
+  @media (max-width: 499px) {
+    .button_whatsapp:focus::before, .button_whatsapp:hover::before {
+      width: 220px; } }
+  @media (max-width: 766px) {
+    .button_whatsapp.navDrawer_open::before, .button_whatsapp.navDrawer_open:focus::before, .button_whatsapp.navDrawer_open:hover::before {
+      display: none; } }
+  @media (min-width: 500px) {
+    .button_whatsapp:focus::before, .button_whatsapp:hover::before {
+      width: 220px; } }
+
 /* =============================================================================
    Lists | Custom [lists.scss]
    ========================================================================== */
@@ -1835,8 +1874,16 @@ article, article::before, article::after, details, details::before, details::aft
       float: left;
       margin-right: 0 !important;
       margin-left: calc(-1 * calc(25px - 0)); }
+  .numbered.numbered_decimal > li::before {
+    content: counter(liN, decimal) "."; }
   .numbered.numbered_lowerLatin > li::before {
-    content: counter(liN, lower-latin); }
+    content: counter(liN, lower-latin) "."; }
+  .numbered.numbered_upperLatin > li::before {
+    content: counter(liN, upper-latin) "."; }
+  .numbered.numbered_upperRoman > li::before {
+    content: counter(liN, upper-roman) "."; }
+  .numbered.numbered_lowerRoman > li::before {
+    content: counter(liN, lower-roman) "."; }
 
 .bulleted_dot li,
 .bulleted_square li,
@@ -1896,7 +1943,7 @@ article, article::before, article::after, details, details::before, details::aft
   .listFile li a {
     height: auto;
     min-height: 30px;
-    line-height: 1.3em; }
+    line-height: 1.3; }
   .listFile li::before {
     width: 30px;
     height: 30px;
@@ -1986,7 +2033,9 @@ article, article::before, article::after, details, details::before, details::aft
 .pop_general {
   z-index: 9800; }
   .pop_general .pop_button_close {
-    z-index: 9900; }
+    position: absolute;
+    z-index: 9900;
+    text-indent: -9999px; }
 
 /* =============================================================================
    Popup Styles | Custom [popups.scss]
@@ -2127,63 +2176,90 @@ article, article::before, article::after, details, details::before, details::aft
       height: 330px;
       margin-left: calc(-1 * calc(600px / 2)); } }
 
+.pop_formStatus h2 {
+  height: auto !important;
+  font-weight: 600;
+  line-height: 1.2rem !important; }
+
+@media (max-width: 650px) {
+  .pop_formStatus h2 {
+    padding-top: 30px; } }
+
 /* =============================================================================
    Header Styles | Custom [section_header.scss]
    ========================================================================== */
-#header .logo_header {
-  margin-bottom: 0; }
-
-@media (max-width: 766px) {
-  #header {
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 15px; }
+#header {
+  box-sizing: border-box;
+  /*
+    position: relative;
+    z-index: $zIndex_header;
+*/
+  height: 112px; }
+  #header .logo_header {
+    margin-bottom: 0; }
+    #header .logo_header a,
+    #header .logo_header img {
+      display: block; }
+    #header .logo_header a {
+      position: relative; }
+  @media (max-width: 499px) {
     #header .logo_header {
+      /*
+            width: $logo_width_MO;
+*/ } }
+  @media (min-width: 500px) {
+    #header .logo_header {
+      /*
+            width: $logo_width_AML;
+*/ } }
+  @media (max-width: 766px) {
+    #header {
+      box-sizing: border-box;
+      padding-top: 0;
+      padding-bottom: 0; }
+      #header .logo_header {
+        width: 220px; }
+        #header .logo_header a,
+        #header .logo_header img {
+          width: 100%; }
+      #header .logo_header.navDrawer_open {
+        border-right: 1px solid #000;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 9900;
+        top: 0;
+        left: 0;
+        width: calc(70vw - 5px);
+        max-width: 300px;
+        height: calc(50px + 50px + 10px);
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        margin: 0; }
+        #header .logo_header.navDrawer_open .logo_before,
+        #header .logo_header.navDrawer_open a,
+        #header .logo_header.navDrawer_open img {
+          width: auto;
+          height: 100%; }
+        #header .logo_header.navDrawer_open img {
+          margin-right: auto;
+          margin-left: auto; }
+        #header .logo_header.navDrawer_open .logo_before {
+          background: none; } }
+  @media (min-width: 767px) {
+    #header .logo_header {
+      position: relative;
+      z-index: 7300;
       width: 220px; }
       #header .logo_header a,
       #header .logo_header img {
-        width: 100%; }
-    #header .logo_header.clicked {
-      border-right: 1px solid #000;
-      box-sizing: border-box;
-      position: fixed;
-      z-index: 9900;
-      top: 0;
-      left: 0;
-      width: calc(70vw - 5px);
-      max-width: 300px;
-      height: calc(50px + 50px + 10px);
-      background-color: #fff;
-      padding-top: 50px;
-      padding-bottom: 10px;
-      margin: 0; }
-      #header .logo_header.clicked .logo_before,
-      #header .logo_header.clicked a,
-      #header .logo_header.clicked img {
-        width: auto;
-        height: 100%; }
-      #header .logo_header.clicked img {
-        margin-right: auto;
-        margin-left: auto; }
-      #header .logo_header.clicked .logo_before {
-        background: none; } }
-
-@media (min-width: 767px) {
-  #header .logo_header {
-    position: relative;
-    z-index: 7100;
-    width: 220px; }
-    #header .logo_header a,
-    #header .logo_header img {
-      width: 100%; } }
-
-@media (min-width: 1024px) {
-  #header .logo_header {
-    width: 220px; } }
-
-@media (min-width: 1200px) {
-  #header .logo_header {
-    width: 220px; } }
+        width: 100%; } }
+  @media (min-width: 1024px) {
+    #header .logo_header {
+      width: 220px; } }
+  @media (min-width: 1200px) {
+    #header .logo_header {
+      width: 220px; } }
 
 /* =============================================================================
    Footer Styles | Custom [section_footer.scss]
@@ -2202,7 +2278,7 @@ article, article::before, article::after, details, details::before, details::aft
     background-position: center; }
   #footer .footer_address a {
     font-size: 1em;
-    line-height: 1.2em; }
+    line-height: 1.2; }
   @media (max-width: 499px) {
     #footer .logoF {
       width: 50px; } }
@@ -2223,98 +2299,105 @@ article, article::before, article::after, details, details::before, details::aft
       text-decoration: underline; } }
 
 /* =============================================================================
-   Nav Settings | Etc [settingsNav.scss]
+   Nav Settings | Etc [settings_nav.scss]
    ========================================================================== */
 nav .nav_TLI,
 nav .nav_item_current a {
   cursor: default; }
 
+nav li a {
+  box-sizing: border-box; }
+
 nav li:focus a, nav li:hover a {
   text-decoration: none; }
 
-.nav_nav,
-.nav_nav .nav_main_ul {
+.nav_main,
+.nav_main .nav_main_ul {
   z-index: 8000; }
 
 @media (max-width: 767px) {
-  .nav_nav {
-    position: absolute; }
-    .nav_nav .button_hamb {
+  .nav_main {
+    position: fixed; }
+    .nav_main .button_hamb {
       transition: all 1s ease;
       box-sizing: border-box; }
-    .nav_nav .button_hamb_open {
+    .nav_main .button_hamb_open {
       z-index: 8100;
       display: block !important;
       opacity: 1;
-      background-image: url("/nuevo/img/nav_button_hamb_open.svg");
+      background-image: url("/web2020/img/nav_button_hamb_open.svg");
       background-repeat: no-repeat;
       color: #333;
       font-family: Arial; }
-    .nav_nav .button_hamb_close {
+    .nav_main .button_hamb_close {
       border-radius: 50%;
       z-index: 9900;
       display: none;
       background-color: #fff;
-      background-image: url("/nuevo/img/nav_button_hamb_close.svg");
+      background-image: url("/web2020/img/nav_button_hamb_close.svg");
       background-repeat: no-repeat;
       background-position: center center; }
-    .nav_nav .navAT {
+    .nav_main .navAT {
       display: none !important; }
-    .nav_nav .nav_main_ul li {
-      float: none !important; }
-    .nav_nav .nav_main_ul > li + li {
-      border-top: 1px solid #818181; } }
+    .nav_main .nav_main_ul li {
+      float: none !important; } }
 
 @media (min-width: 768px) {
-  .nav_nav .button_hamb {
+  .nav_main .button_hamb {
     display: none !important; }
-  .nav_nav .nav_main_ul_drawer {
+  .nav_main .nav_main_ul_drawer {
     display: none; }
-  .nav_nav > ul {
+  .nav_main > ul {
     background-color: #818181; }
-    .nav_nav > ul > li {
+    .nav_main > ul > li {
       background-color: transparent; }
-      .nav_nav > ul > li a,
-      .nav_nav > ul > li .nav_TLI {
+      .nav_main > ul > li a,
+      .nav_main > ul > li .nav_TLI {
         color: #000;
         font-family: Arial; }
-      .nav_nav > ul > li:focus, .nav_nav > ul > li:hover {
+      .nav_main > ul > li:focus, .nav_main > ul > li:hover {
         background-color: transparent; }
-        .nav_nav > ul > li:focus > a, .nav_nav > ul > li:hover > a {
+        .nav_main > ul > li:focus > a, .nav_main > ul > li:hover > a {
           color: #000; }
-    .nav_nav > ul > .nav_item_current {
+    .nav_main > ul > .uk-active,
+    .nav_main > ul > .nav_item_current {
       background-color: transparent; }
-      .nav_nav > ul > .nav_item_current a,
-      .nav_nav > ul > .nav_item_current .nav_TLI {
+      .nav_main > ul > .uk-active a,
+      .nav_main > ul > .uk-active .nav_TLI,
+      .nav_main > ul > .nav_item_current a,
+      .nav_main > ul > .nav_item_current .nav_TLI {
         color: #000;
         font-family: Arial; }
-      .nav_nav > ul > .nav_item_current:focus, .nav_nav > ul > .nav_item_current:hover {
+      .nav_main > ul > .uk-active:focus, .nav_main > ul > .uk-active:hover,
+      .nav_main > ul > .nav_item_current:focus,
+      .nav_main > ul > .nav_item_current:hover {
         background-color: transparent; }
-        .nav_nav > ul > .nav_item_current:focus > a,
-        .nav_nav > ul > .nav_item_current:focus .nav_TLI, .nav_nav > ul > .nav_item_current:hover > a,
-        .nav_nav > ul > .nav_item_current:hover .nav_TLI {
+        .nav_main > ul > .uk-active:focus > a,
+        .nav_main > ul > .uk-active:focus .nav_TLI, .nav_main > ul > .uk-active:hover > a,
+        .nav_main > ul > .uk-active:hover .nav_TLI,
+        .nav_main > ul > .nav_item_current:focus > a,
+        .nav_main > ul > .nav_item_current:focus .nav_TLI,
+        .nav_main > ul > .nav_item_current:hover > a,
+        .nav_main > ul > .nav_item_current:hover .nav_TLI {
           color: #000; } }
 
 @media (min-width: 1024px) {
-  .nav_nav > ul > li a,
-  .nav_nav > ul > li .nav_TLI {
+  .nav_main > ul > li a,
+  .nav_main > ul > li .nav_TLI {
     font-family: Arial; }
-  .nav_nav > ul .nav_item_current a,
-  .nav_nav > ul .nav_item_current .nav_TLI {
+  .nav_main > ul .uk-active a,
+  .nav_main > ul .uk-active .nav_TLI,
+  .nav_main > ul .nav_item_current a,
+  .nav_main > ul .nav_item_current .nav_TLI {
     font-family: Arial; } }
 
 /* =============================================================================
-   Nav Drawer Settings | Etc [settingsNavDrawer.scss]
+   Nav Drawer Settings | Etc [settings_nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
-  .nav_nav .button_hamb_open {
-    background-color: #fff; }
-    .nav_nav .button_hamb_open.clicked {
-      opacity: 0.5;
-      color: #333; }
-  .nav_nav .button_hamb_close.clicked {
+  .nav_main .button_hamb_close.button_hamb_close_visible {
     display: block; }
-  .nav_nav .nav_main_ul {
+  .nav_main .nav_main_ul {
     box-sizing: border-box;
     position: fixed;
     z-index: 9800;
@@ -2327,73 +2410,92 @@ nav li:focus a, nav li:hover a {
     padding-left: 5px;
     overflow: scroll;
     padding-bottom: 30px; }
-    .nav_nav .nav_main_ul,
-    .nav_nav .nav_main_ul .nav_subNav {
+    .nav_main .nav_main_ul,
+    .nav_main .nav_main_ul .nav_subNav {
       transition: all 0.5s ease;
       top: 0;
       bottom: 0; }
-    .nav_nav .nav_main_ul.open {
+    .nav_main .nav_main_ul.open {
       left: 0; }
-    .nav_nav .nav_main_ul + .nav_main_ul {
+    .nav_main .nav_main_ul + .nav_main_ul {
       margin-top: 0; }
-    .nav_nav .nav_main_ul > li > a,
-    .nav_nav .nav_main_ul > li > .nav_TLI {
+    .nav_main .nav_main_ul > li > a,
+    .nav_main .nav_main_ul > li > .nav_TLI {
       color: #000;
       font-family: Arial; }
-    .nav_nav .nav_main_ul > .nav_item_current {
+    .nav_main .nav_main_ul > .uk-active,
+    .nav_main .nav_main_ul > .nav_item_current {
+      background-color: #f2f2f2;
       background-repeat: no-repeat;
       background-position: right 10px center; }
-      .nav_nav .nav_main_ul > .nav_item_current > a,
-      .nav_nav .nav_main_ul > .nav_item_current > .nav_TLI {
+      .nav_main .nav_main_ul > .uk-active > a,
+      .nav_main .nav_main_ul > .uk-active > .nav_TLI,
+      .nav_main .nav_main_ul > .nav_item_current > a,
+      .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
+        color: #000;
         font-family: Arial; } }
 
 /* =============================================================================
-   Nav Accordion Settings | Etc [settingsNavAccordion.scss]
+   Nav Accordion Settings | Etc [settings_nav_accordion.scss]
    ========================================================================== */
 /* =============================================================================
    Nav Drawer Styles | Custom [section_nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
-  .nav_nav {
+  .nav_main {
     top: 10px;
     right: 10px;
     position: fixed; }
-    .nav_nav .button_hamb {
+    .nav_main .button_hamb {
       top: 0;
-      right: 0; }
-    .nav_nav .button_hamb_open {
+      right: 0;
+      position: absolute; }
+    .nav_main .button_hamb_open {
+      border-radius: 6px;
+      display: block;
+      background-color: #fff;
+      background-size: 15px;
+      text-align: center;
+      text-transform: uppercase;
       width: 90px;
       height: 40px;
       background-position: 10px center;
       border: 1px solid #666 !important;
       padding: 0 10px 0 30px;
       font-size: 1rem;
-      line-height: 40px;
-      border-radius: 6px;
-      background-size: 15px; }
-    .nav_nav .button_hamb_close {
-      width: 45px;
-      height: 45px;
-      background-size: 20px;
-      border: 1px solid #666 !important; }
-    .nav_nav .nav_main_ul {
+      line-height: 40px; }
+      .nav_main .button_hamb_open.button_hamb_open_pressed {
+        opacity: 0.5;
+        color: #333; }
+    .nav_main .button_hamb_close {
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      background-size: 100%;
+      border: 1px solid #666 !important;
+      text-indent: -9999px; }
+    .nav_main .nav_main_ul {
       border-right: 1px solid #000; }
-      .nav_nav .nav_main_ul li,
-      .nav_nav .nav_main_ul li a,
-      .nav_nav .nav_main_ul li .nav_TLI {
+      .nav_main .nav_main_ul li,
+      .nav_main .nav_main_ul li a,
+      .nav_main .nav_main_ul li .nav_TLI {
         height: 45px;
         line-height: 45px; }
-      .nav_nav .nav_main_ul li a,
-      .nav_nav .nav_main_ul li .nav_TLI {
+      .nav_main .nav_main_ul li a,
+      .nav_main .nav_main_ul li .nav_TLI {
+        display: block;
         font-size: 1rem;
-        text-align: center;
-        display: block; }
-      .nav_nav .nav_main_ul > .nav_item_current {
+        text-align: center; }
+      .nav_main .nav_main_ul > li + li {
+        border-top: 1px solid #818181; }
+      .nav_main .nav_main_ul > .uk-active,
+      .nav_main .nav_main_ul > .nav_item_current {
         background-color: #f2f2f2;
         background-image: url("/nuevo/img/nav_arrow_left.svg"); }
-      .nav_nav .nav_main_ul .nav_item_back {
-        border-bottom: #818181 solid 2px; }
-        .nav_nav .nav_main_ul .nav_item_back + .nav_item_back {
+      .nav_main .nav_main_ul .nav_item_back {
+        border-bottom: #818181 solid 2px;
+        position: relative; }
+        .nav_main .nav_main_ul .nav_item_back + .nav_item_back {
           border-color: #666 transparent #818181;
           border-width: 1px 0 2px;
           border-style: solid; } }
@@ -2408,42 +2510,62 @@ nav li:focus a, nav li:hover a {
    Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .nav_nav .nav_main_ul > li {
+  .nav_main .nav_main_ul > li {
     float: left; }
-  .nav_nav .nav_main_ul li,
-  .nav_nav .nav_main_ul li a,
-  .nav_nav .nav_main_ul li .nav_TLI {
+  .nav_main .nav_main_ul li,
+  .nav_main .nav_main_ul li a,
+  .nav_main .nav_main_ul li .nav_TLI {
     display: block; }
-  .nav_nav li,
-  .nav_nav li a,
-  .nav_nav li .nav_TLI {
+  .nav_main li,
+  .nav_main li a,
+  .nav_main li .nav_TLI {
     height: 60px;
     line-height: 60px; }
-  .nav_nav li a,
-  .nav_nav li .nav_TLI {
+  .nav_main li a,
+  .nav_main li .nav_TLI {
     transition: all 1s ease;
     font-size: 0.8rem;
     padding-right: 5px;
     padding-left: 5px; } }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  .nav_nav li,
-  .nav_nav li a,
-  .nav_nav li .nav_TLI {
+  .nav_main li,
+  .nav_main li a,
+  .nav_main li .nav_TLI {
     height: 60px;
     line-height: 60px; } }
 
 @media (min-width: 1024px) {
-  .nav_nav li,
-  .nav_nav li a,
-  .nav_nav li .nav_TLI {
+  .nav_main li,
+  .nav_main li a,
+  .nav_main li .nav_TLI {
     height: 60px;
     line-height: 60px; }
-  .nav_nav li a,
-  .nav_nav li .nav_TLI {
+  .nav_main li a,
+  .nav_main li .nav_TLI {
     font-size: 1rem;
     padding-right: 10px;
     padding-left: 10px; } }
+
+/* =============================================================================
+   Error Pages Styles | Custom [page_error.scss]
+   ========================================================================== */
+.page_error {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .page_error h1 {
+    color: #4d4d4d;
+    text-align: center; }
+  .page_error p {
+    color: #000;
+    text-align: center; }
+    .page_error p a {
+      text-decoration: underline; }
+  .page_error .errorType {
+    padding-bottom: 20px;
+    color: #818181;
+    font-size: 0.8rem;
+    text-transform: uppercase; }
 
 /* =============================================================================
    Index Styles | Custom [page_index.scss]

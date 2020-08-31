@@ -38,5 +38,5 @@
         if($page_index == 1 && $logo_bgImage_before == 1) { echo '</div>'; }
     ?>  
     
-    <?php include('nav.inc.php'); ?>
+    <?php include('nav.main.inc.php'); ?>
 </header>

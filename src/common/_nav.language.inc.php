@@ -10,7 +10,7 @@
     $gettext_switchMsg_FR = "Parcourir le site en langue française";
 ?>
 
-<ul class="language_ul horizontal clearfix">
+<ul class="nav_language_ul horizontal clearfix">
     <li>
         <a href="/nuevo/?l=es_AR" class="displayBlock borderBox mask hoverGrowM">
             <img src="/nuevo/img/flag_ar.svg" alt="<?php echo $gettext_switchMsg_ES; ?>.">

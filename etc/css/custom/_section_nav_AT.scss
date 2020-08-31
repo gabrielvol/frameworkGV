@@ -1,7 +1,7 @@
 /* =============================================================================
    Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
-.nav_nav{
+.nav_main{
     @include navAT{
         @if $header_logoNav_floated_act == "on"{
             float: left;

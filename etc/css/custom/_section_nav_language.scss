@@ -1,15 +1,15 @@
 /* =============================================================================
-   Language Switch Styles | Custom [gettext_language_switch.scss]
+   Language Switch Styles | Custom [section_nav_language.scss]
    ========================================================================== */
-.language_ul{
+.nav_language_ul{
     z-index: $zIndex_language;
     
     a{
         @include borderStyle($bdWhite, $language_flag_border_size);
         @include transition(0.3s);
-        background-color: $language_a_bgColour;
+        background-color: $nav_item_anchor_language_bgColour;
         
-        @if $language_flag_circled_act == "on"{
+        @if $nav_language_flag_rounded_act == "on"{
             border-radius: 50%;
 
             &:focus, &:hover{
@@ -29,7 +29,7 @@
            
         &,
         li{
-            height: $language_ul_height_BT;
+            height: $nav_language_ul_height_BT;
         }
         
         li{
@@ -43,7 +43,7 @@
                 margin-left: $language_flag_sep_BT;
             }
         
-            @if $language_flag_circled_act == "on"{
+            @if $nav_language_flag_rounded_act == "on"{
                 width: $language_flag_height_BT;
                 
                 a{
@@ -69,16 +69,16 @@
                     box-sizing: border-box;
                     width: calc(#{$nav_drawer_width_final} - 5px);
                     max-width: $nav_drawer_width_max;
-                    height: calc(#{$language_ul_height_clicked} + #{$language_ul_height_clicked_PT} + #{$language_ul_height_clicked_PB});
-                    padding-top: $language_ul_height_clicked_PT;
-                    padding-bottom: $language_ul_height_clicked_PB;
+                    height: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_height_clicked_PT} + #{$nav_language_ul_height_clicked_PB});
+                    padding-top: $nav_language_ul_height_clicked_PT;
+                    padding-bottom: $nav_language_ul_height_clicked_PB;
                     padding-left: 10px;
-                    background-color: $language_ul_bgColour_clicked;
+                    background-color: $nav_language_ul_bgColour_clicked;
                     
                 } @else {
                     left: 30px;         
-                    bottom: $language_ul_bottom; 
-                    height: $language_ul_height_clicked;          
+                    bottom: $nav_language_ul_bottom; 
+                    height: $nav_language_ul_height_clicked;          
                 }
                 
                 li{
@@ -100,12 +100,12 @@
 
     @include afterTablet{
     //@include navAT{
-        @include positionTR(10px, $language_ul_right_AT);
+        @include positionTR(10px, $nav_language_ul_right_AT);
         position: absolute;
            
         &,
         li{
-            height: $language_ul_height_AT;
+            height: $nav_language_ul_height_AT;
         }
 
         li{
@@ -119,7 +119,7 @@
                 margin-left: $language_flag_sep_AT;
             }
         
-            @if $language_flag_circled_act == "on"{
+            @if $nav_language_flag_rounded_act == "on"{
                 width: $language_flag_height_AT;
                 
                 a{

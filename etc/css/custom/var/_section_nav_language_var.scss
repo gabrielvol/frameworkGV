@@ -1,0 +1,36 @@
+/* =============================================================================
+   Language Sizes Variables | Custom [var/section_nav_language_va.scss]
+   ========================================================================== */
+
+/* // Language Sizes -------------------------------------------------------- */
+/*___ Flags _____________________________*/
+$language_flag_width_BT:            38px;
+$language_flag_height_BT:           25px;
+$language_flag_sep_BT:              15px;
+
+$language_flag_width_clicked:       55px;
+$language_flag_height_clicked:      36px;
+
+$language_flag_width_AT:            $language_flag_width_BT;
+$language_flag_height_AT:           $language_flag_height_BT;
+$language_flag_sep_AT:              10px;
+$nav_language_ul_right_AT:          20px;
+
+$nav_language_ul_width_AT:          calc(#{$language_flag_width_AT} + #{$language_flag_width_AT} + #{$language_flag_sep_AT} + #{$nav_language_ul_right_AT} + 15px);
+
+$language_flag_border_size:         1px;
+$language_flag_border_size_full:    calc(#{$language_flag_border_size} * 2);
+
+/*___ Language UL _______________________*/
+$nav_language_ul_bottom:           20px;
+
+$nav_language_ul_height_BT:             calc(#{$language_flag_height_BT} + #{$language_flag_border_size_full});
+$nav_language_ul_height_clicked:        calc(#{$language_flag_height_clicked} + #{$language_flag_border_size_full});
+$nav_language_ul_height_clicked_PT:     15px;
+$nav_language_ul_height_clicked_PB:     20px;
+$nav_language_ul_height_AT:             calc(#{$language_flag_height_AT} + #{$language_flag_border_size_full});
+
+
+/* // Language Colours ------------------------------------------------------ */
+$nav_language_ul_bgColour_clicked:      $bgGrey;
+$nav_item_anchor_language_bgColour:     $bgColour_main_global;

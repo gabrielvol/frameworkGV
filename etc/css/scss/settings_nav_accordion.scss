@@ -2,7 +2,7 @@
    Nav Accordion Settings | Etc [settings_nav_accordion.scss]
    ========================================================================== */
 @if $nav_accordion_act == "on"{
-    .nav_nav{
+    .nav_main{
         @include navBT{
             top: calc(#{$header_navAccordion_height_BT} / 2);
             right: 0;

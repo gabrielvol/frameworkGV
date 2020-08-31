@@ -3,7 +3,7 @@
    ========================================================================== */
 @if $nav_list_act == "on"{
     @include navBT{
-        .nav_nav{
+        .nav_main{
             ul{
                 @include borderRadius($nav_bdRadius);   
                 z-index: $zIndex_navUlList;

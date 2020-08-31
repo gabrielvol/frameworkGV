@@ -3,7 +3,7 @@
    ========================================================================== */
 @if $nav_drawer_act == "on"{
     @include navBT{
-        .nav_nav{
+        .nav_main{
             .button_hamb_close{                
                 &.button_hamb_close_visible{
                     display: block;
@@ -24,7 +24,7 @@
                 overflow: scroll; 
                 
                 @if $language_menu_navDrawer_clicked_act == "on"{
-                    padding-bottom: calc(#{$language_ul_height_clicked} + #{$language_ul_bottom} + 10px);
+                    padding-bottom: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_bottom} + 10px);
                 } @else {
                     padding-bottom: 30px;     
                 }
@@ -60,7 +60,7 @@
 
                     > a,
                     > .nav_TLI{
-                        color: $nav_item_current_ftColour_level0_BT;
+                        color: $nav_TLI_current_level0_ftColour_BT;
                         font-family: $nav_item_current_ftFamily_BT;
                     }
                 }
@@ -156,7 +156,7 @@
                         background-image: url('/web2020/img/#{$nav_arrows_item_current_level1}');
                         
                         a{
-                            color: $nav_item_current_ftColour_level1_BT;
+                            color: $nav_TLI_current_level1_ftColour_BT;
                         }
                     }
                 }
@@ -198,7 +198,7 @@
                         background-image: url('/web2020/img/#{$nav_arrows_item_current_level2}'); 
                         
                         a{
-                            color: $nav_item_current_ftColour_level2_BT;
+                            color: $nav_TLI_current_level2_ftColour_BT;
                         }
                     }
                 }
@@ -240,7 +240,7 @@
                         background-image: url('/web2020/img/#{$nav_arrows_item_current_level3}'); 
                         
                         a{
-                            color: $nav_item_current_ftColour_level3_BT;
+                            color: $nav_TLI_current_level3_ftColour_BT;
                         }
                     }
                 }
