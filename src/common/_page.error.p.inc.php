@@ -1,0 +1,1 @@
+<p><?php echo _("Puede continuar navegando el sitio yendo a la"); ?> <a href="/nuevo/" class="black"><?php echo _("p&aacute;gina inicial del sitio"); ?></a><?php echo _(", o a nuestra"); ?> <a href="/nuevo/contacto.php" class="black"><?php echo _("p&aacute;gina de contacto"); ?></a>.</p>

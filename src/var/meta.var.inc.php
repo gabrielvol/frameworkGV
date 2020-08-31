@@ -22,6 +22,8 @@
     $site_desc_global           = '';
     $site_desc_global_GB        = '';
     
+
+    /* // Open Graph meta --------------------------------------------------- */        
     // Max 35 char                       ·
     // 123456789-123456789-123456789-12345 
     $openGraph_title_global     = '';

@@ -2,13 +2,26 @@
    Error Pages Styles | Custom [page_error.scss]
    ========================================================================== */
 .page_error{
-    h1{}
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    h1{
+        color: $greyD;
+        text-align: center;
+    }
     
     p{
-        a{}
+        color: $black;
+        text-align: center;
+        
+        a{
+            text-decoration: underline;
+        }
     }
     
     .errorType{
+        padding-bottom: 20px;
+        color: $grey;
         font-size: 0.8rem;
         text-transform: uppercase;
     }
