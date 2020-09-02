@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Favoritos</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>        
+        html,
+        body {
+            background-color: #2d1f06;
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+			font-family: 'Pragati Narrow';
+        }
+        
+        .clearfix::after {
+          content: ".";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden; }
+
+        .clearfix {
+          display: inline-block; }
+
+        * html .clearfix {
+          height: 1%; }
+
+        .clearfix {
+          display: block; }
+        .clear{clear: both}
+        
+        ul{
+            list-style-type: none;
+        }
+		
+		:root{
+			--topNavH: 40px; 
+			--topNavB: 2px;
+		}
+		
+		.displayNone{
+			display: none;
+		}
+		
+		.lowerCase{
+			text-transform: lowercase;
+		}
+		
+		.navTop{
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 10;
+			background-color: #000;
+			border-style: solid; 
+			border-width: 0 0 var(--topNavB);
+			border-color: #cea400;
+		}
+		
+		.navTop,
+		.navTop ul,
+		.navTop li,
+		.navTop a{
+			height: var(--topNavH);
+			line-height: var(--topNavH);
+		}
+		
+		.navTop ul{
+			margin: 0;
+		}
+		
+		.navTop li{
+            display: inline-block;
+		}
+		
+		.navTop li > *{
+            display: inline-block;
+		}
+		
+		.navTop a{
+			padding: 0 10px;
+			font-family: 'Pragati Narrow';
+			font-weight: 700;
+			font-size: 0.9rem;
+			text-align: center;
+			text-transform: uppercase;
+		}
+ 
+        .column_ul{
+            float: left;
+            box-sizing: border-box;
+            width: 50%;
+			padding-top: calc(var(--topNavH) + var(--topNavB));
+            padding-right: 20px;
+			padding-left: 20px;
+            margin: 0;
+        }
+ 
+        .column_ul ul{
+			background-color: #211302;
+            color: #222;
+            list-style: none;
+            padding: 10px 0 25px;
+			
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }  
+        
+        .column_ul ul li{
+            position: relative;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 0 10px;
+        } 
+        
+        .column_ul ul li::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 9px;
+            width: 3px;
+            height: 3px;
+            background-color: #6b1503;
+        }
+        
+        .column_ul ul li.titulo_nuevo::before{
+            top: 14px;
+			left: 0px;
+			width: 7px;
+			height: 2px;
+            background-color: #ffcc00;			
+        }
+        
+        .column_ul ul li:hover::before{
+            background-color: #ffcc00;
+        }
+        
+        .column_ul ul li.redBar::before{
+            background-color: #ff0000;
+        }
+
+        .column_ul ul .title{
+            background-color: #6b1503;
+			border-color: #a51d00;
+        }   
+        
+        .column_ul ul li:hover .title{
+			background-color: #380a00;
+			border-color: #000;
+			color: #b66600;
+        } 
+        
+        .column_ul ul li li{
+            box-sizing: border-box;
+            float: none;
+            width: 100%;
+            padding: 0;
+        }   
+		
+		.column_ul ul > li li{
+			padding: 0 10px;
+		}
+        
+		.column_ul .sub_ul{
+			width: 100%;
+			margin-top: 20px;
+		}
+		
+		.column_ul .sub_ul li{
+			width: 50%;
+		}
+		
+        a{
+            display: block;
+            width: 100%;
+            padding-left: 10px;
+            color: #8a610e;
+            font-size: 1rem;
+            line-height: 1.3em;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        
+        .title{
+            height: 20px;
+            background-color: #cea400;
+            padding: 10px 10px 5px;
+			border-top: 5px solid #834602;
+            margin: 0;
+            color: #000;
+			font-family: 'Pragati Narrow';
+			font-weight: 700;
+			font-size: 1.2rem;
+            line-height: 20px;
+        }
+		
+		.column_ul > li:hover > .title{
+			background-color: #937606;
+			border-color: #5c3a00;
+			color: #ffea00;
+		}
+        
+        .separador{
+            width: 100%!important;
+            clear: both;
+            border-top: 1px dashed #6c3d04;;
+            margin-top: 20px!important;
+        }
+        
+        .separador:first-child{
+            margin-top: 0!important;
+        }
+				
+        .separador.titulo.titulo_nuevo{
+            border-top: 2px dotted #ffcc00;
+            padding-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+		
+        .titulo a{
+			color: #ffcc00;
+        }
+		
+        .separador.titulo + .titulo a{
+			color: #ffcc00;
+        }
+		
+        .separador.titulo + li,
+		.column_ul ul li:first-child,
+		.column_ul ul li:first-child + li{
+			border: none;
+			margin-top: 0;
+        }
+        
+        .column_ul ul li + li,
+        .column_ul ul li.separador + li{
+            margin-top: 6px;
+        }
+        
+        .separador.titulo::before{
+            background-color: #ff0000;
+        }		
+    </style>
+</head>
+<body>
+<nav class="navTop">
+	<ul class="horizontal clearfix">
+		<li><a href="#_id-login">Arriba</a></li>
+		<li><a href="#_id-xxx">Item para usar</a></li>
+		<li><a href="#_id-xxx">Item para usar</a></li>
+		<li><a href="#_id-xxx">Item para usar</a></li>
+		<li><a href="#_id-xxx">Item para usar</a></li>
+		<li><a href="#_id-xxx">Item para usar</a></li>
+	</ul>
+</nav>
+
+<ul class="column_ul clearfix">
+    <li>
+        <p class="title" id="_id-login">Login</p>
+        <ul>
+            <li><a target="_blank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a></li>
+            <li><a target="_blank" href="https://web.whatsapp.com/">Whatsapp</a></li>
+			<li><a target="_blank" href="https://trello.com/">Trello</a></li>	
+			
+			
+            <li class="separador"><a target="_blank" href="httpsoooooooooooooooooooo">Este item crea un separador con línea punteada [clase 'separador' desp de otro item]</a></li>
+            <li><a target="_blank" href="https://hangouts.google.com/">Google Hangouts</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+        </ul>
+    </li>
+    <li>
+        <p class="title">Título de la sección</p>
+        <ul>
+            <li class="separador"><a target="_blank" href="httpsoooooooooooooooooooo">Este item ocupa dos columnas [clase 'separador' al principio]</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Este item ocupa una columa</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Este item ocupa una columa</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+
+			<li class="sub_ul">
+				<p class="title">Título de la subsección</p>
+				<ul>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item de la subsección</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item de la subsección</a></li>
+					<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+				</ul>
+			</li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<ul class="column_ul clearfix">
+    <li>
+        <p class="title">Título de la sección</p>
+        <ul class="">
+            <li class="separador titulo"><a target="_blank" href="https://gitlab.com/arcoirisdesign">arcoiris | GitLab</a></li>
+            <li><a target="_blank" href="https://drive.google.com/drive/folders/1thvj_DyOYTJpysByiCpbS-a2aWwhoLgK">Google Drive · arcorisado</a></li>
+            <li><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">Gmail · arcorisado</a></li>
+            <li><a target="_blank" href="https://hpanel.hostinger.com/hosting/arcoiris.design/">Hostinger · color@arcoiris</a></li>
+            <li><a target="_blank" href="https://webmail1.hostinger.com.ar/">Mail · color@arcoiris</a></li>
+            <li><a target="_blank" href="https://trello.com/b/qYO3CPg2/arcoiris">Trello</a></li>
+			
+            <li class="separador titulo"><a target="_blank" href="http://arcoiris.design/">arcoiris.design</a></li>
+            <li><a target="_blank" href="http://www.elcarozodelasunto.com.ar/">AI | El Carozo del Asunto</a></li>
+            <li><a target="_blank" href="http://trasladosbaires.com.ar/">AI | Traslados Baires</a></li>
+            <li><a target="_blank" href="http://fwcollection.com/">AI | FW Collection</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+			
+            <li class="separador titulo titulo_nuevo"><a target="_blank" href="httpsoooooooooooooooooooo">Item título con separador [clase 'separador titulo titulo_nuevo']</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+			
+            <li class="separador titulo titulo_nuevo"><a target="_blank" href="httpsoooooooooooooooooooo">Item título con separador [clase 'separador titulo titulo_nuevo']</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li class="separador titulo"><a target="_blank" href="httpsoooooooooooooooooooo">Item [clase 'separador titulo']</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+        </ul>
+    </li>
+
+	<li class="sub_ul">
+        <p class="title">Título de la sección</p>
+		<ul>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+		</ul>
+	</li>
+        
+	<li class="sub_ul">
+        <p class="title">Título de la sección</p>
+		<ul>
+			<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+			<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+			<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+			<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+			<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+			
+            <li class="separador titulo titulo_nuevo"><a target="_blank" href="httpsoooooooooooooooooooo">Item título con separador [clase 'separador titulo titulo_nuevo']</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+			
+            <li class="separador titulo titulo_nuevo"><a target="_blank" href="httpsoooooooooooooooooooo">Item título con separador [clase 'separador titulo titulo_nuevo']</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li class="separador titulo"><a target="_blank" href="httpsoooooooooooooooooooo">Item [clase 'separador titulo']</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+            <!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+			
+			<li class="sub_ul">
+				<p class="title">Título de subsección</p>
+				<ul>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+				</ul>
+			</li>
+			
+			<li class="sub_ul">
+				<p class="title">Título de subsección</p>
+				<ul>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+				</ul>
+			</li>
+			
+			<li class="sub_ul">
+				<p class="title">Título de subsección</p>
+				<ul>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+				</ul>
+			</li>
+		</ul>
+	</li>	
+	
+	<li>
+        <p class="title">Título de la sección</p>
+		<ul>
+			<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+			<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+			<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->
+	
+			<li class="sub_ul">
+				<p class="title">Título de subsección</p>
+				<ul>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->		
+				</ul>
+			</li>
+	
+			<li class="sub_ul">
+				<p class="title">Título de subsección</p>
+				<ul>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<li><a target="_blank" href="httpsoooooooooooooooooooo">Item</a></li>
+					<!--<li><a target="_blank" href="httpsoooooooooooooooooooo">itemvaciooooooooooooooo</a></li>-->		
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+</body>
