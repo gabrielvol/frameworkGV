@@ -12,7 +12,7 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/header.inc.php'); ?>
     <div id="main" class="container" role="main">                
-        <ol id="slickWithNav" class="slickWithNav mask horizontal clearfix fullWidth">
+        <ol id="slick_with_nav" class="slick_with_nav mask horizontal clearfix">
             <li><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt=""></li>
             <li><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt=""></li>
             <li><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt=""></li>
@@ -30,7 +30,7 @@
             <li><img src="/nuevo/img/coleccion/corvetteC3/15.jpg" alt=""></li>
             <li><img src="/nuevo/img/coleccion/corvetteC3/16.jpg" alt=""></li>
         </ol>
-        <ol id="slickNav" class="slickNav mask horizontal clearfix borderBox " role="group" aria-owns="slickWithNav" aria-controls="slickWithNav">
+        <ol id="slick_nav" class="slick_nav mask horizontal clearfix borderBox " role="group" aria-owns="slick_with_nav" aria-controls="slick_with_nav">
             <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/01.jpg" alt="."></li>
             <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/02.jpg" alt="dos."></li>
             <li class="borderBox"><img src="/nuevo/img/coleccion/corvetteC3/03.jpg" alt="tres."></li>
@@ -51,5 +51,5 @@
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/framework/common/footer.inc.php'); ?>
     <script src="/js/slick.js"></script>
-    <script src="/js/_slickNav.js"></script>
+    <script src="/js/_slick_nav.js"></script>
 </html>

@@ -3,12 +3,12 @@ $(document).ready(function () {
     
     $(".nav_nav, .nav_nav .nav_main_ul").css("z-index", highest_index + 1);
     
-    $(".slickNav .slickPrev").css("z-index", highest_index + 1);
-    $(".slickNav .slickNext").css("z-index", highest_index + 1);
+    $(".slick_nav .slickPrev").css("z-index", highest_index + 1);
+    $(".slick_nav .slickNext").css("z-index", highest_index + 1);
     
     
     
-    $('.slickWithNav').slick({
+    $('.slick_with_nav').slick({
         accessibility: true,
         infinite: false,
         
@@ -25,10 +25,10 @@ $(document).ready(function () {
 
         autoplay: false,
         speed: 500,
-        asNavFor: '.slickNav'
+        asNavFor: '.slick_nav'
     });
    
-    $('.slickNav').slick({
+    $('.slick_nav').slick({
         accessibility: true,
         infinite: false,
         
@@ -39,7 +39,7 @@ $(document).ready(function () {
         
         slidesToShow: 16,
         slidesToScroll: 0,
-        asNavFor: '.slickWithNav'
+        asNavFor: '.slick_with_nav'
 
         ,responsive: [
             {breakpoint: 1200,

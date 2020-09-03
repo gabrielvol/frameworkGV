@@ -27,7 +27,7 @@ $(document).ready(function () {
         ,variableWidth: true
         ,adaptiveHeight: true
         
-        ,asNavFor: '.slickNav'
+        ,asNavFor: '.slick_nav'
 
         ,responsive: [
 // El valor del breakpoint no se incluye a sí mismo. Por ej.: la configuracion

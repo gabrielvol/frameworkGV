@@ -74,19 +74,11 @@
 <meta property="fb:app_id" content="123456789">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@siteAccount">
-<meta name="twitter:creator" content="@individualAccount">
-<meta name="twitter:url" content="http://example.com/page.html">
-<meta name="twitter:title" content="ContentTitle">
-<meta name="twitter:description" content="ContentDescriptionLessThan200characters">
-<meta name="twitter:image" content="http://example.com/image.jpg">
-
-<!-- Google+ / Schema.org -->
-<link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="http://example.com/image.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="<?php echo $url_global; ?>">
+<meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>">
+<meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>">
+<meta property="twitter:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">
 
 <!-- Pinterest -->
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">

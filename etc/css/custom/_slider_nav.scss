@@ -1,14 +1,15 @@
 /* =============================================================================
    Slider Nav Styles | Custom [slider_nav.scss]
    ========================================================================== */
-.slickNav{
+.slick_nav{
     .slick-list{
         margin-right: $auto;
         margin-left: $auto;
     }
     
     li{
-        &, img{
+        &,
+        img{
             @include transition(1s);
         }
 
