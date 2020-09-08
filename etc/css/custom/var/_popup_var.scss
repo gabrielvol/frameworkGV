@@ -3,5 +3,15 @@
    ========================================================================== */
     
 /* // Popup Sizes ---------------------------------------------------------- */
-    
+$pop_button_close_size:     33px;
+
+$pop_warning_width_MO:      300px;
+$pop_warning_width_AML:     60%;
+$pop_warning_width_A600:    550px;
+
+$pop_video_width_MO:        300px;
+$pop_video_width_AML:       450px;
+$pop_video_width_AT:        600px;
+        
 /* // Popup Colours -------------------------------------------------------- */
+$pop_formStatus_bgColour:   $section_contacto_colour_bg;

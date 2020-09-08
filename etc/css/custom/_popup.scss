@@ -23,10 +23,8 @@
     left: 50%;
     
     .pop_button_close{
-        $pop_button_close_size: 33px;
-
-        border-radius: 50%;
         @include bgSvg(pop_button_close); 
+        border-radius: 50%;
         width: $pop_button_close_size!important;
         height: $pop_button_close_size!important;
         background-size: 13px;
@@ -65,9 +63,9 @@
         max-height: 100%;
     */      
 
-    border-radius: $bdRadius_global; 
     top: 20%;
     left: 50%;
+    border-radius: $bdRadius_global; 
     background-color: $form_status_msg_ok_bgColour;          
     box-shadow: 0 0 15px 0 $black;
 
@@ -102,11 +100,11 @@
     }
 
     .pop_submit{
-        border-radius: $bdRadius_global;
         @include transition(1s);
         @include equalHeightAndLineHeight(35px);
         width: 40%;
         max-width: 150px;
+        border-radius: $bdRadius_global;
         background-color: $bgWhite;
         font-size: 0.8rem;
 
@@ -121,29 +119,18 @@
     }
         
     @include mobileOnly{
-        $pop_warning_width: 300px;
-
-        width: $pop_warning_width;
-        margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);            
+        width: $pop_warning_width_MO;
+        margin-left: calc(calc(#{$pop_warning_width_MO} * -1) / 2);            
     }
 
     @include afterMobileLandscape{
-        $pop_warning_width: 60%;
-
-        width: $pop_warning_width;
-        margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);    
-    }
-
-    @include beforeMobile600{
-        /*height: 220px;*/      
+        width: $pop_warning_width_AML;
+        margin-left: calc(calc(#{$pop_warning_width_AML} * -1) / 2);    
     }
 
     @include afterMobile600{
-        $pop_warning_width: 550px;
-
-        width: $pop_warning_width;
-        /*height: 200px;*/
-        margin-left: calc(calc(#{$pop_warning_width} * -1) / 2);  
+        width: $pop_warning_width_A600;
+        margin-left: calc(calc(#{$p$pop_warning_width_A600op_warning_width} * -1) / 2);  
 
         .pop_innerContainer{
             @include positionTRBL(20px, 20px, 20px, 20px);
@@ -160,33 +147,29 @@
     box-shadow: $video_bxShadow;
 
     .video_mask{
-      //@include borderStyle($bdGreyD);
+/*        
+        @include borderStyle($bdGreyD);
+*/
         border-radius: 0;
         border: $none;
     }
               
-    @include mobileOnly{  
-        $pop_video_width: 300px;
-
-        width: $pop_video_width;
+    @include mobileOnly{
+        width: $pop_video_width_MO;
         height: 168px;
-        margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
+        margin-left: calc(-1 * calc(#{$pop_video_width_MO} / 2));
     }
 
     @include afterMobileLandscape{
-        $pop_video_width: 450px;
-
-        width: $pop_video_width;
+        width: $pop_video_width_AML;
         height: 250px;
-        margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
+        margin-left: calc(-1 * calc(#{$pop_video_width_AML} / 2));
     }
     
     @include afterTablet{
-        $pop_video_width: 600px;
-
-        width: $pop_video_width;
+        width: $pop_video_width_AT;
         height: 330px;
-        margin-left: calc(-1 * calc(#{$pop_video_width} / 2));
+        margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
     } 
 }
 
