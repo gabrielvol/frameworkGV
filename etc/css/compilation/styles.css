@@ -1132,7 +1132,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   display: table-cell;
   vertical-align: middle; }
 
-.visually_hidden {
+.visuallyHidden {
   /*
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -1152,11 +1152,11 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   white-space: nowrap;
   /* 1 */
   /*
-Extends the .visually_hidden class to allow the element
+Extends the .visuallyHidden class to allow the element
 to be focusable when navigated to via the keyboard:
 https://www.drupal.org/node/897638
 */ }
-  .visually_hidden:active, .visually_hidden:focus {
+  .visuallyHidden:active, .visuallyHidden:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -1425,7 +1425,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxBT {
     box-sizing: border-box; }
-  .visually_hidden_BT {
+  .visuallyHidden_BT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1436,7 +1436,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visually_hidden_BT:active, .visually_hidden_BT:focus {
+    .visuallyHidden_BT:active, .visuallyHidden_BT:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1501,7 +1501,7 @@ article, article::before, article::after, details, details::before, details::aft
     box-sizing: content-box; }
   .borderBoxAT {
     box-sizing: border-box; }
-  .visually_hiddenAT {
+  .visuallyHiddenAT {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1512,7 +1512,7 @@ article, article::before, article::after, details, details::before, details::aft
     width: 1px;
     white-space: nowrap;
     /* 1 */ }
-    .visually_hiddenAT:active, .visually_hiddenAT:focus {
+    .visuallyHiddenAT:active, .visuallyHiddenAT:focus {
       clip: auto;
       height: auto;
       margin: 0;

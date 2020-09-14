@@ -64,7 +64,7 @@
         vertical-align: middle;
     }
     
-    .visually_hidden {
+    .visuallyHidden {
 /*
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -84,7 +84,7 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
         white-space: nowrap; /* 1 */
 
 /*
-Extends the .visually_hidden class to allow the element
+Extends the .visuallyHidden class to allow the element
 to be focusable when navigated to via the keyboard:
 https://www.drupal.org/node/897638
 */

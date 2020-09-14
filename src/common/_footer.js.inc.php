@@ -46,8 +46,8 @@
 //<script src="/nuevo/js/_contacto.js"></script>
 ?>
 
-<?php endif; if($load_lightbox == 1):
-//<script src="/js/lightbox.min.js"></script>
-//<script src="/js/_lightbox.js"></script>
+<?php endif; if($load_lightbox == 1): ?>
+    <script src="/nuevo/js/lightbox.min.js"></script>
+    <script src="/nuevo/js/_lightbox.js"></script>
  ?>
 <?php endif; ?>

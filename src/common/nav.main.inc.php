@@ -1,6 +1,6 @@
 <nav id="nav" class="nav_main pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
-    <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visually_hidden"><?php echo _("Abrir"); ?></span> <?php echo _("Men&uacute;"); ?></button>
-    <button type="button" class="button_hamb button_hamb_close"><?php echo _("Cerrar"); ?> <span class="visually_hidden"><?php echo _("Men&uacute;"); ?></span></button>
+    <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visuallyHidden"><?php echo _("Abrir"); ?></span> <?php echo _("Men&uacute;"); ?></button>
+    <button type="button" class="button_hamb button_hamb_close"><?php echo _("Cerrar"); ?> <span class="visuallyHidden"><?php echo _("Men&uacute;"); ?></span></button>
     <ul class="nav_main_ul navAT unstyled clearfix" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
         <?php include('nav.main.list.inc.php'); ?>
     </ul>   
