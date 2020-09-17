@@ -139,7 +139,7 @@
    ========================================================================== */
 /* // Language -------------------------------------------------------------- */
 /* =============================================================================
-   Nav Colours Variables | Custom [var/section_nav_colours.scss]
+   Nav Colours Variables | Custom [var/section_nav_colours_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -2057,12 +2057,12 @@ article, article::before, article::after, details, details::before, details::aft
   top: 80px;
   left: 50%; }
   .pop_general .pop_button_close {
-    border-radius: 50%;
     background-color: transparent;
     background-image: url("/nuevo/img/pop_button_close.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    border-radius: 50%;
     width: 33px !important;
     height: 33px !important;
     background-size: 13px;
@@ -2091,9 +2091,9 @@ article, article::before, article::after, details, details::before, details::aft
         max-width: 100%;
         max-height: 100%;
     */
-  border-radius: 6px;
   top: 20%;
   left: 50%;
+  border-radius: 6px;
   background-color: #fff;
   box-shadow: 0 0 15px 0 #000; }
   .pop_warning h2,
@@ -2116,12 +2116,12 @@ article, article::before, article::after, details, details::before, details::aft
     top: 10px;
     right: 10px; }
   .pop_warning .pop_submit {
-    border-radius: 6px;
     transition: all 1s ease;
     height: 35px;
     line-height: 35px;
     width: 40%;
     max-width: 150px;
+    border-radius: 6px;
     background-color: #fff;
     font-size: 0.8rem; }
     .pop_warning .pop_submit, .pop_warning .pop_submit:focus, .pop_warning .pop_submit:hover {
@@ -2137,13 +2137,9 @@ article, article::before, article::after, details, details::before, details::aft
     .pop_warning {
       width: 60%;
       margin-left: calc(calc(60% * -1) / 2); } }
-  @media (max-width: 600px) {
-    .pop_warning {
-      /*height: 220px;*/ } }
   @media (min-width: 601px) {
     .pop_warning {
       width: 550px;
-      /*height: 200px;*/
       margin-left: calc(calc(550px * -1) / 2); }
       .pop_warning .pop_innerContainer {
         top: 20px;
@@ -2158,6 +2154,9 @@ article, article::before, article::after, details, details::before, details::aft
 .pop_video {
   box-shadow: 0 0 10px 0 #666; }
   .pop_video .video_mask {
+    /*        
+        @include borderStyle($bdGreyD);
+*/
     border-radius: 0;
     border: none !important; }
   @media (max-width: 499px) {

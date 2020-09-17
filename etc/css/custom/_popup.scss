@@ -130,7 +130,7 @@
 
     @include afterMobile600{
         width: $pop_warning_width_A600;
-        margin-left: calc(calc(#{$p$pop_warning_width_A600op_warning_width} * -1) / 2);  
+        margin-left: calc(calc(#{$pop_warning_width_A600} * -1) / 2);  
 
         .pop_innerContainer{
             @include positionTRBL(20px, 20px, 20px, 20px);

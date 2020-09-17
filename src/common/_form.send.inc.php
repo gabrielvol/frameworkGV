@@ -488,7 +488,7 @@
 //FIN mensaje ok en $form_status_msg_
                 
 //INICIA MENSAJE OK EN POPUP
-                $form_status_msg_pop__formName = '<div class="pop_main pop_warning pop_formStatus borderBox pal" role="alertdialog" aria-labelledby="formOK">'
+                $form_status_msg_pop__formName = '<div class="pop_general pop_warning pop_formStatus borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="pop_button_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="'. $formPop_h2_ok_classes__formName .'">'._("$form_status_msg_OK_globalA__formName").'</h2>'
@@ -534,7 +534,7 @@
 //FIN mensaje error en $form_status_msg_
                 
 //INICIA MENSAJE ERROR EN POPUP
-                $form_status_msg_pop__formName = '<div class="pop_main pop_warning pop_formStatus borderBox pal" role="alertdialog" aria-labelledby="formError">'
+                $form_status_msg_pop__formName = '<div class="pop_general pop_warning pop_formStatus borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="pop_button_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="'. $formPop_h2_error_classes__formName .'">'._("$form_status_msg_error_globalA__formName").'</h2>'

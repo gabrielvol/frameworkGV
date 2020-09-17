@@ -1,4 +1,4 @@
-<div class="pop_main displayNone">
+<div class="pop_general displayNone">
     <button type="button" class="pop_button_close"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
 

@@ -1,5 +1,5 @@
 /* =============================================================================
-   Nav Colours Variables | Custom [var/section_nav_colours.scss]
+   Nav Colours Variables | Custom [var/section_nav_colours_var.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -82,7 +82,7 @@ $nav_item_subNav_current_ftColour_hover:    $nav_item_subNav_current_ftColour_AT
 /*___ Topper ____________________________*/
 $nav_topper_ftColour:               $nav_item_ftColour_AT;
 $nav_topper_ftColour_hover:         $nav_topper_ftColour;
-$nav_topper_item_current_ftColour:  $nav_item_ftColour_AT;
+$nav_topper_item_current_ftColour:  $nav_item_ftColour_AT; 
 
 
 
