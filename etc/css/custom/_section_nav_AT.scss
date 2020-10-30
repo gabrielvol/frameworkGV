@@ -87,15 +87,13 @@
         }
         
         @if $nav_hasSub_act == "on"{
-            .nav_subNav{
-                $nav_subMenu_width: 200px;
-                
+            .nav_subNav{                
                 position: absolute;
                 left: 50%;
                 top: $nav_height_AT;
                 border-radius: 0 0 10px 10px;
-                width: $nav_subMenu_width;
-                margin-left: calc(-1 * (#{$nav_subMenu_width} / 2));
+                width: $nav_subMenu_width_AT;
+                margin-left: calc(-1 * (#{$nav_subMenu_width_AT} / 2));
                 
                 &, li{}
                 
