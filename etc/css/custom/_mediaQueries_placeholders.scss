@@ -33,6 +33,14 @@
     
     @include mobile700Only{}
     
+
+    
+    @include beforeTablet{}
+    
+    @include afterTablet{}
+    
+    @include tabletOnly{}
+    
     
 
     @include beforeMobile800{}
@@ -48,14 +56,6 @@
     @include afterMobile900{}
     
     @include mobile900Only{}
-    
-
-    
-    @include beforeTablet{}
-    
-    @include afterTablet{}
-    
-    @include tabletOnly{}
     
 
     
