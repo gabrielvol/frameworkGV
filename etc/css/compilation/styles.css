@@ -1015,29 +1015,29 @@ a.mainBgColour:hover, a.mainBgColour:focus {
    Animation Classes | Etc [classes_animations.scss]
    ========================================================================== */
 @media (min-width: 767px) {
-  .hoverGrowS,
-  .hoverGrowM,
-  .hoverGrowL {
+  .hover_grow_S_ani,
+  .hover_grow_M_ani,
+  .hover_grow_L_ani {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale; }
-  .hoverGrowS:hover, .hoverGrowS:focus, .hoverGrowS:active {
+  .hover_grow_S_ani:hover, .hover_grow_S_ani:focus, .hover_grow_S_ani:active {
     transform: scale(1.05); }
-  .hoverGrowM:hover, .hoverGrowM:focus, .hoverGrowM:active {
+  .hover_grow_M_ani:hover, .hover_grow_M_ani:focus, .hover_grow_M_ani:active {
     transform: scale(1.1); }
-  .hoverGrowL:hover, .hoverGrowL:focus, .hoverGrowL:active {
+  .hover_grow_L_ani:hover, .hover_grow_L_ani:focus, .hover_grow_L_ani:active {
     transform: scale(1.15); } }
 
 /* =============================================================================
    Settings Animations | Custom [settings_animations.scss]
    ========================================================================== */
 @media (min-width: 767px) {
-  .hoverGrowS,
-  .hoverGrowM,
-  .hoverGrowL {
+  .hover_grow_S_ani,
+  .hover_grow_M_ani,
+  .hover_grow_L_ani {
     transition: transform 0.5s, background-color 1s; } }
 
 /* =============================================================================

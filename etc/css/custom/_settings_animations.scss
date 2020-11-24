@@ -2,9 +2,9 @@
    Settings Animations | Custom [settings_animations.scss]
    ========================================================================== */
 @include afterTablet{
-    .hoverGrowS,
-    .hoverGrowM,
-    .hoverGrowL{
+    .hover_grow_S_ani,
+    .hover_grow_M_ani,
+    .hover_grow_L_ani{
         transition: transform 0.5s, background-color 1s;
     }
 }

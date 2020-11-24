@@ -2,38 +2,38 @@
    Animation Classes | Etc [classes_animations.scss]
    ========================================================================== */
 @include afterTablet{
-    .hoverGrowS,
-    .hoverGrowM,
-    .hoverGrowL{
-        display: $hoverGrow_display_ani;
+    .hover_grow_S_ani,
+    .hover_grow_M_ani,
+    .hover_grow_L_ani{
+        @include transition(0.7s);
+        display: $hover_grow_display_ani;
         vertical-align: middle;
         transform: translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
         backface-visibility: hidden;
         -moz-osx-font-smoothing: grayscale;
     }
     
-    .hoverGrowS{
+    .hover_grow_S_ani{
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrow_scaleSmall_ani);
+            transform: scale($hover_grow_scaleSmall_ani);
         }
     }
     
-    .hoverGrowM{
+    .hover_grow_M_ani{
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrow_scaleMedium_ani);
+            transform: scale($hover_grow_scaleMedium_ani);
         }
     }
     
-    .hoverGrowL{
+    .hover_grow_L_ani{
         &:hover,
         &:focus,
         &:active {
-            transform: scale($hoverGrow_scaleLarge_ani);
+            transform: scale($hover_grow_scaleLarge_ani);
         }
     }
 }
