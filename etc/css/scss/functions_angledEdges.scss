@@ -147,6 +147,9 @@
 }
 
 /*
+Usage
+@include angled-edge('outside top', 'upper left', $bgRedColourD, 50);
+
 Parameter: $location_angledEdges_fn
 Description: Location of shape relative to parent element
 - inside top
@@ -174,4 +177,3 @@ Description: Optional - Height of triangle - Accepts a unitless integer that is 
 Parameter: $width_angledEdges_fn
 Description: Optional - Width of triangle - Accepts a unitless integer that is equivalent to width in px (If nothing is passed triangle will span to a 100% fluid width) 
 */
-
