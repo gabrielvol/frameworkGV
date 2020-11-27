@@ -48,6 +48,14 @@
     @include afterMobile800{}
     
     @include mobile800Only{}
+
+
+
+    @include beforeMobile850{}
+
+    @include afterMobile850{}
+
+    @include mobile850Only{}
     
     
 
