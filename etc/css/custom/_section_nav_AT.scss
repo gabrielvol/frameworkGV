@@ -23,11 +23,18 @@
                 margin-left: $auto;
                 text-align: center;
                 
-                li{
+                > li{
                     display: inline-block;
                     
                     > *{
                         display: inline-block;            
+                    }
+                 
+                    li{
+                        a,
+                        .nav_TLI{
+                            display: $block;
+                        }
                     }
                 }
             } @else{
@@ -67,12 +74,7 @@
             &,
             a,
             .nav_TLI{
-                @if $nav_horizontalCenter_AT_act == "on"{
-                    height: auto;
-                    line-height: $nav_height_AT;                    
-                } @else{
-                    @include equalHeightAndLineHeight($nav_height_AT);
-                }
+                @include equalHeightAndLineHeight($nav_height_AT);
             }
 
             a,
@@ -173,20 +175,22 @@
                         background-color: $black_grad_80;
                         padding-bottom: 5px;
 
-                        &, li{
+                        &,
+                        li{
                             width: 150px;
                         }
 
                         li{
                             @include borderStyleT($nav_item_subNav_bdColour_AT);
 
+                            &,
+                            a{
+                                @include equalHeightAndLineHeight(35px);
+                            }
+                            
                             a{
                                 padding-left: 10px;
                                 text-align: left;
-                            }
-
-                            &, a{
-                                @include equalHeightAndLineHeight(35px);
                             }
                             
                             &:first-child{
@@ -207,7 +211,7 @@
     
     @include tabletOnly{
         .nav_main_ul{
-            @if $nav_horizontalCenter_TO_act == "on"{
+            @if $nav_horizontalCenter_TO_act == "on" and $nav_horizontalCenter_AT_act == "off"{
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;
@@ -220,6 +224,13 @@
                     > *{
                         display: inline-block;
                     }
+                 
+                    li{
+                        a,
+                        .nav_TLI{
+                            display: $block;
+                        }
+                    }
                 }
             }
         }
@@ -228,12 +239,7 @@
             &,
             a,
             .nav_TLI{
-                @if $nav_horizontalCenter_TO_act == "on"{
-                    height: auto;
-                    line-height: $nav_height_TO;                    
-                } @else{
-                    @include equalHeightAndLineHeight($nav_height_TO);
-                }
+                @include equalHeightAndLineHeight($nav_height_TO);
             }
         }
     }
@@ -250,12 +256,19 @@
                 margin-left: $auto;
                 text-align: center;
                 
-                li{
+                > li{
                     float: none;
                     display: inline-block;
                     
                     > *{
                         display: inline-block!important;
+                    }
+                 
+                    li{
+                        a,
+                        .nav_TLI{
+                            display: $block;
+                        }
                     }
                 }
             }
@@ -283,12 +296,7 @@
             &,
             a,
             .nav_TLI{
-                @if $nav_horizontalCenter_AT_act == "on" or $nav_horizontalCenter_ATL_act == "on"{
-                    height: auto;
-                    line-height: $nav_height_ATL;
-                } @else{
-                    @include equalHeightAndLineHeight($nav_height_ATL);
-                }
+                @include equalHeightAndLineHeight($nav_height_ATL);
             }
             
             a,

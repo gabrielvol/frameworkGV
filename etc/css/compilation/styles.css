@@ -204,6 +204,8 @@
 /* =============================================================================
    Logo Sizes Variables | Custom [var/logo_sizes_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Logo Sizes BT --------------------------------------------------------- */
 /* // Nav Drawer logo.navDrawer_open ---------------------------------------- */
 /* // Logo Sizes AT --------------------------------------------------------- */
@@ -409,6 +411,9 @@
    Angled Edges Functions | Common [functions_angledEdges.scss]scss]
    ========================================================================== */
 /*
+Usage
+@include angled-edge('outside top', 'upper left', $bgRedColourD, 50);
+
 Parameter: $location_angledEdges_fn
 Description: Location of shape relative to parent element
 - inside top
@@ -1018,10 +1023,10 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   .hover_grow_S_ani,
   .hover_grow_M_ani,
   .hover_grow_L_ani {
+    transition: all 0.7s ease;
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale; }
   .hover_grow_S_ani:hover, .hover_grow_S_ani:focus, .hover_grow_S_ani:active {
@@ -2300,7 +2305,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Nav Settings | Etc [settings_nav.scss]
    ========================================================================== */
-nav .nav_TLI,
+nav p.nav_TLI,
 nav .nav_item_current a {
   cursor: default; }
 
