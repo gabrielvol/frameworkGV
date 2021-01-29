@@ -132,7 +132,7 @@
                     &.nav_item_current{  
                         > a,
                         .nav_TLI_level1{
-                            background-image: url('/cuatro/img/#{$nav_arrows_item_current_level0}');
+                            background-image: url('/img/#{$nav_arrows_item_current_level0}');
                             background-position: right 10px center;
                             color: $nav_TLI_current_level1_ftColour_BT;
                         }
