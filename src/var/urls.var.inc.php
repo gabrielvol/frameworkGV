@@ -1,11 +1,13 @@
 <?php
     /* // URLS -------------------------------------------------------------- */
     $domain_global      = 'sitiocomar';
-    $url_global         = 'http://www.'. $domain_global;
-    $openGraph_url      = 'http://www.'. $domain_global;
-    
     $domain_sec         = 'sitiocomar';
+    
+    $url_global         = 'http://www.'. $domain_global;
     $url_sec            = 'http://www.'. $domain_sec;
+    
+    $url_openGraph_global   = 'http://www.'. $domain_global;
+    
     
     $url_index          = '/nuevo/';                //$nav_pageCurrent 0
 //    $url-seccion        = '/nuevo/seccion.php';     //$nav_pageCurrent 0

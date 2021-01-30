@@ -25,7 +25,7 @@
 <link href="/nuevo/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
 
-<link rel="canonical" href="<?php echo $url_global; ?>">
+<link rel="canonical" href="<?php echo $url_global; ?>" />
 
 <!-- Copyright -->
 <link rel="license" href="/nuevo/legal/copyright.php">
@@ -50,38 +50,38 @@
 <link rel="webmention" href="http://example.com/webmention">
 
 <!-- Open Graph -->
-<meta property="og:title" content="<?php echo $openGraph_title; ?>">
-<meta property="og:url" content="<?php echo $openGraph_url; ?>">
-<meta property="og:description" content="<?php echo $openGraph_desc; ?>">
-<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>/og_img.jpg">-->
-<meta property="og:image" content="<?php echo $openGraph_url_img; ?>/og_img.jpg">
-<meta property="og:image:type" content="image/jpg">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>">
-<meta property="og:locale" content="<?php echo $site_lang_locale; ?>">
+<meta property="og:title" content="<?php echo $openGraph_title; ?>" />
+<meta property="og:url" content="<?php echo $openGraph_url; ?>" />
+<meta property="og:description" content="<?php echo $openGraph_desc; ?>" />
+<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>/og_img.jpg" />-->
+<meta property="og:image" content="<?php echo $openGraph_url_img; ?>/og_img.jpg" />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:type" content="<?php echo $openGraph_type; ?>" />
+<meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>" />
+<meta property="og:locale" content="<?php echo $site_lang_locale; ?>" />
 
-<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_title_DE; } else { echo $openGraph_title; } ?>">
-<meta property="og:url" content="<?php echo $openGraph_url; ?>">
-<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_desc_DE; } else { echo $openGraph_desc; } ?>">
-<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>/og_img.jpg">
-<meta property="og:image" content="<?php echo $openGraph_url_img; ?>/og_img.jpg">
-<meta property="og:image:type" content="image/jpg">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>">
-<meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>">
+<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_title_DE; } else { echo $openGraph_title; } ?>" />
+<meta property="og:url" content="<?php echo $openGraph_url; ?>" />
+<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_desc_DE; } else { echo $openGraph_desc; } ?>" />
+<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>" />
+<meta property="og:image" content="<?php echo $openGraph_url_img; ?>" />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:type" content="<?php echo $openGraph_type; ?>" />
+<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>" />
+<meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>" />
 
 <!-- Facebook Open Graph -->
-<meta property="fb:app_id" content="123456789">
+<meta property="fb:app_id" content="123456789" />
 
 <!-- Twitter Card -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="<?php echo $url_global; ?>">
-<meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>">
-<meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>">
-<meta property="twitter:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg">
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="<?php echo $url_global; ?>" />
+<meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>" />
+<meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>" />
+<meta property="twitter:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg" />
 
 <!-- Pinterest -->
-<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_global; ?>/nuevo/apple-touch-icon.png">
