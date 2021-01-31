@@ -53,12 +53,21 @@
 <meta property="og:title" content="<?php echo $openGraph_title; ?>" />
 <meta property="og:url" content="<?php echo $openGraph_url; ?>" />
 <meta property="og:description" content="<?php echo $openGraph_desc; ?>" />
-<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>/og_img.jpg" />-->
-<meta property="og:image" content="<?php echo $openGraph_url_img; ?>/og_img.jpg" />
+<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img_secure; ?>" />-->
+<meta property="og:image" content="<?php echo $openGraph_url_img; ?>" />
 <meta property="og:image:type" content="image/jpg" />
+<meta property="og:image:width" content="<?php $openGraph_url_img_width; ?>" />
+<meta property="og:image:height" content="<?php $openGraph_url_img_height; ?>" />
 <meta property="og:type" content="<?php echo $openGraph_type; ?>" />
 <meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>" />
 <meta property="og:locale" content="<?php echo $site_lang_locale; ?>" />
+
+<meta property="og:type" content="video.other">
+<meta property="og:video:url" content="https://shoesbycolin.com/blue.mp4">
+<meta property="og:video:secure_url" content="https://shoesbycolin.com/blue.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
 
 <meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_title_DE; } else { echo $openGraph_title; } ?>" />
 <meta property="og:url" content="<?php echo $openGraph_url; ?>" />
