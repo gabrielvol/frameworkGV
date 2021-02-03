@@ -4,24 +4,24 @@
     
 /* // General --------------------------------------------------------------- */
 $nav_bdRadius:                  $bdRadius_global;
-
-    
-/* // Nav List -------------------------------------------------------------- */
-$nav_list_ul_width_BT:              200px;
-$nav_subMenu_width_AT:              200px;
-
-    
-/* // Nav Drawer ------------------------------------------------------------ */
-$nav_drawer_width:                   70vw;
-$nav_drawer_width_max:               300px;
-$nav_drawer_width_final:             calc(#{$nav_drawer_width} - 5px);
+$nav_subMenu_width_AT:          200px;
 
     
 /* // Nav Topper ------------------------------------------------------------ */
-$topper_height_global:              60px;
+$topper_height_global:          60px;
 
     
 /* // Nav Sizes ------------------------------------------------------------- */
-$nav_height_AT:                     60px;
-$nav_height_TO:                     $nav_height_AT;
-$nav_height_ATL:                    $nav_height_AT;
+$nav_height_AT:                 60px;
+$nav_height_TO:                 $nav_height_AT;
+$nav_height_ATL:                $nav_height_AT;
+
+    
+/* // Nav List -------------------------------------------------------------- */
+$nav_list_ul_width_BT:          200px;
+
+    
+/* // Nav Drawer ------------------------------------------------------------ */
+$nav_drawer_width:              70vw;
+$nav_drawer_width_max:          300px;
+$nav_drawer_width_final:        calc(#{$nav_drawer_width} - 5px);

@@ -2,7 +2,11 @@
    Nav After Tablet Styles | Custom [section_nav_AT.scss]
    ========================================================================== */
 .nav_main{
-    @include navAT{
+    @include navAT{   
+        @if $header_logoNav_floated_flexbox_act == "on"{
+            width: calc(100% - #{$logo_width_AT});
+        } 
+        
         @if $header_logoNav_floated_act == "on"{
             float: left;
             width: calc(100% - #{$logo_width_AT});
@@ -16,7 +20,18 @@
             box-shadow: 0 0 7px $black;
         }
         
-        .nav_main_ul{
+        .nav_main_ul{                
+            @if $header_logoNav_floated_flexbox_act == "on"{
+                &.navAT{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    align-content: flex-start;
+                    align-items: flex-start;
+                }
+            }
+            
             @if $nav_horizontalCenter_AT_act == "on"{
                 list-style: none;
                 margin-right: $auto;
@@ -245,7 +260,7 @@
     }
     
     @include afterTabletLandscape{
-        @if $header_logoNav_floated_act == "on"{
+        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act == "on"{
             width: calc(100% - #{$logo_width_ATL});
         }
         

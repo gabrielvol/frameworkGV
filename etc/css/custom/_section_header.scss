@@ -226,7 +226,18 @@
     }
     
     //@include navAT
-    @include afterTablet{
+    @include afterTablet{            
+        @if $header_logoNav_floated_flexbox_act == "on"{
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: flex-start;
+                align-items: flex-start;     
+            }
+        }
+        
         @if $nav_fixed_AT_act == "on"{
             padding-top: $nav_height_AT;
         }
