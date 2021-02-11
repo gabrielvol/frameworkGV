@@ -496,7 +496,7 @@
                         . '<button type="submit" class="pop_submit bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
-                        . '<div class="modal_bg_global"></div>';
+                        . '<div class="modal_bg_global modal_formStatus"></div>';
                 $form_msg_mandatory_classes__formName = 'displayNone';
                 $form_status_msg__formName = '';
 //FIN mensaje ok en popup
@@ -543,7 +543,7 @@
                         . '<button type="submit" class="pop_submit bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
                         . '</div>'
                         . '</div>'
-                        . '<div class="modal_bg_global"></div>';
+                        . '<div class="modal_bg_global modal_formStatus"></div>';
                 $form_msg_mandatory_classes__formName = 'displayNone';
                 $form_status_msg__formName = '';
 //FIN mensaje error en popup
