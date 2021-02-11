@@ -17,8 +17,14 @@
         box-shadow: $header_fixed_bxShadow;
     }
     
-    @if $page_index_fullHeight_act_ALL == "on" or $fullHeight_sections_act_ALL == "on"{
+    @if $page_index_fullHeight_act_ALL == "on" or $page_int_fullHeight_act_ALL == "on"{
         height: $header_height_ALL;
+    }
+    
+    @if $page_index_only_fullHeight_act_ALL{
+        &.header_index{
+            height: $header_height_ALL;
+        }
     }
     
     .logo_header{
@@ -51,7 +57,7 @@
     }
     
     @include mobileOnly{
-        @if $page_index_fullHeight_act_MO == "on" or $fullHeight_sections_act_MO == "on"{
+        @if $page_index_fullHeight_act_MO == "on" or $page_int_fullHeight_act_MO == "on"{
             height: $header_height_MO;
         }
         
@@ -75,7 +81,7 @@
     }
     
     @include afterMobileLandscape{
-        @if $page_index_fullHeight_act_AML == "on" or $fullHeight_sections_act_AML == "on"{
+        @if $page_index_fullHeight_act_AML == "on" or $page_int_fullHeight_act_AML == "on"{
             height: $header_height_AML;
         }
         
@@ -99,7 +105,7 @@
     }
     
     @include mobileLandscapeOnly{
-        @if $page_index_fullHeight_act_AML == "on" or $fullHeight_sections_act_AML == "on"{
+        @if $page_index_fullHeight_act_AML == "on" or $page_int_fullHeight_act_AML == "on"{
             height: $header_height_AML;
         }
         
@@ -126,7 +132,7 @@
         padding-top: $header_PT_BT;
         padding-bottom: $header_PB_BT;
         
-        @if $page_index_fullHeight_act_BT == "on" or $fullHeight_sections_act_BT == "on"{
+        @if $page_index_fullHeight_act_BT == "on" or $page_int_fullHeight_act_BT == "on"{
             height: $header_height_BT;
         }
         
@@ -242,7 +248,7 @@
             padding-top: $nav_height_AT;
         }
         
-        @if $page_index_fullHeight_act_AT == "on" or $fullHeight_sections_act_AT == "on"{
+        @if $page_index_fullHeight_act_AT == "on" or $page_int_fullHeight_act_AT == "on"{
             height: $header_height_AT;
         }
         
@@ -311,19 +317,19 @@
     }
     
     @include tabletOnly{
-        @if $page_index_fullHeight_act_TO == "on" or $fullHeight_sections_act_TO == "on"{
+        @if $page_index_fullHeight_act_TO == "on" or $page_int_fullHeight_act_TO == "on"{
             height: $header_height_TO;
         }
     }
     
     @include beforeTabletLandscape{
-        @if $page_index_fullHeight_act_BTL == "on" or $fullHeight_sections_act_BTL == "on"{
+        @if $page_index_fullHeight_act_BTL == "on" or $page_int_fullHeight_act_BTL == "on"{
             height: $header_height_BTL;
         }
     }
     
     @include afterTabletLandscape{
-        @if $page_index_fullHeight_act_ATL == "on" or $fullHeight_sections_act_ATL == "on"{
+        @if $page_index_fullHeight_act_ATL == "on" or $page_int_fullHeight_act_ATL == "on"{
             height: $header_height_ATL;
         }
         
@@ -353,7 +359,7 @@
     }
     
     @include afterDesktop{
-        @if $page_index_fullHeight_act_AD == "on" or $fullHeight_sections_act_AD == "on"{
+        @if $page_index_fullHeight_act_AD == "on" or $page_int_fullHeight_act_AD == "on"{
             height: $header_height_AD;
         }   
         
