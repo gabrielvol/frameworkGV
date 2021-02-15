@@ -45,8 +45,8 @@
 
 <?php endif; if($nav_pageCurrent == 000 || $nav_pageCurrent == 000):
 /* // SECTIONNAME / SECTIONNAME
-<script src="/nuevo/js/scrollKeep.js"></script>
-<script src="/nuevo/js/_contacto.js"></script>
+<script src="/nuevo/js/aaaaaa.js"></script>
+<script src="/nuevo/js/_aaaaaa.js"></script>
 */
 ?>
 
