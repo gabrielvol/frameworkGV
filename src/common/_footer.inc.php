@@ -1,4 +1,4 @@
-<footer id="footer" class="">        
+<footer id="footer" class="<?php if($page_index == 0){ echo ' footer_index'; } ?>">        
     <a href="#site_top" class="button_siteTop pAbs indentedText" role="button" aria-pressed="false"><?php echo _("Subir al inicio"); ?></a>  
         
     <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">

@@ -1,12 +1,25 @@
-/* // Variables ------------------------------------------------------------- */
 @import "../scss/charset";
+
+/* // Activators ------------------------------------------------------------ */
+@import "act/main_act";
+@import "act/responsive_act";
+@import "act/logo_act";
+@import "act/forms_act";
+@import "act/slider_act";
+@import "act/text_act";
+
+@import "act/section_header_act";
+@import "act/section_nav_act";
+@import "act/section_footer_act";
+
+@import "act/page_index_act";
+@import "act/page_int_act";
+
+/* // Variables ------------------------------------------------------------- */
 @import "../scss/var_fonts";
 @import "../scss/var_absolute";
 @import "var/zindex_var";
 @import "var/container_var";
-@import "act/main_act";
-@import "act/responsive_act";
-@import "act/text_act";
 @import "var/helpers_var";
 @import "var/animations_var";
  
@@ -18,12 +31,9 @@
 @import "var/fonts_main_var";
 @import "var/text_var";
 
-@import "act/logo_act";
-@import "act/section_header_act";
 @import "var/logo_sizes_var";
 @import "var/section_header_var";
 
-@import "act/section_nav_act";
 @import "var/section_nav_colours_var";
 @import "var/section_nav_arrows_var";
 @import "var/section_nav_fonts_var";
@@ -31,7 +41,6 @@
 @import "var/section_nav_hamburger_var";
 @import "var/section_nav_language_var";
 
-@import "act/slider_act";
 @import "var/slider_var";
 
 @import "var/buttons_var";
@@ -39,10 +48,8 @@
 
 @import "var/popup_var";
 
-@import "act/section_footer_act";
 @import "var/section_footer_var";
 
-@import "act/forms_act";
 @import "var/forms_colours_var";
 @import "var/forms_fonts_var";
 @import "var/forms_sizes_var";

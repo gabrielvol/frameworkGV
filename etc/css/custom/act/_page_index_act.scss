@@ -1,0 +1,103 @@
+/* =============================================================================
+   Page Index Activators | Custom [act/page_index_act.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Activadores para Page Index.
+//
+// Listado:
+// 01 _ Full Height
+// 02 _ Index Only Full Height
+//
+//
+// 01 _ Full Height
+// Activa los if que se encuentran en `[/custom/imp/_page_index_fullHeight_imp.scss]`
+// y se importan en `[/custom/_page_index.scss]`.
+//
+// Ej. $page_index_fullHeight_act_AML = "on" imprime:
+// @media (min-width: 500px) {
+//     .page_index {
+//         height: calc(100vh - #value - #value);
+//     }
+// }
+//
+//
+// 01 _ Index Only Full Height
+// Activa los if que se encuentran en `[/custom/imp/_page_index_fullHeight_imp.scss]`,
+// `[/custom/_section_header.scss]` y `[/custom/_section_footer.scss]`.
+// El archivo `[/custom/imp/_page_index_fullHeight_imp.scss]` se importa en 
+// `[/custom/_page_index.scss]`.
+// Además de imprimir lo mismo que `01 Full Height` imprime:
+//
+// #footer.footer_index{
+//     height: #value;
+// }
+//
+// #header.header_index{
+//     height: #value;
+// }
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+    
+/* // 01 Full height -------------------------------------------------------- */
+$page_index_fullHeight_act_ALL:     off;
+$page_index_fullHeight_act_MO:      off;
+$page_index_fullHeight_act_AML:     off;
+$page_index_fullHeight_act_MLO:     off;
+$page_index_fullHeight_act_BT:      off;
+$page_index_fullHeight_act_AT:      off;
+$page_index_fullHeight_act_TO:      off;
+$page_index_fullHeight_act_BTL:     off;
+$page_index_fullHeight_act_ATL:     off;
+$page_index_fullHeight_act_TLO:     off; 
+$page_index_fullHeight_act_BD:      off; 
+$page_index_fullHeight_act_AD:      off; 
+
+/* // 02 Index Only Full Height --------------------------------------------- */
+$page_index_only_fullHeight_act_ALL:     off;
+$page_index_only_fullHeight_act_MO:      off;
+$page_index_only_fullHeight_act_AML:     off;
+$page_index_only_fullHeight_act_MLO:     off;
+$page_index_only_fullHeight_act_BT:      off;
+$page_index_only_fullHeight_act_AT:      off;
+$page_index_only_fullHeight_act_TO:      off;
+$page_index_only_fullHeight_act_BTL:     off;
+$page_index_only_fullHeight_act_ATL:     off;
+$page_index_only_fullHeight_act_TLO:     off; 
+$page_index_only_fullHeight_act_BD:      off; 
+$page_index_only_fullHeight_act_AD:      off; 

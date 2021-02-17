@@ -5,6 +5,12 @@
     @if $page_index_fullHeight_act_ALL == "on" or $page_int_fullHeight_act_ALL == "on"{
         height: $footer_height_ALL;
     }
+    
+    @if $page_index_only_fullHeight_act_ALL{
+        &.footer_index{
+            height: $footer_height_ALL;
+        }
+    }
 
 /* // Button Site Top ------------------------------------------------------- */
     .button_siteTop{
