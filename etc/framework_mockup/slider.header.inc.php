@@ -25,7 +25,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/slider.header.inc.php');
 ?>                
 
-<ul class="slick mask horizontal clearfix <?php echo $slider_header_class; ?>">
+<ul class="slick <?php echo $slider_header_class; ?>">
     <?php        if(isset($slider_header_item_01)): // Section ?>
     <li><img src="/nuevo/img/slider_header_<?php echo $slider_header_item_01; ?>.jpg" alt="" aria-hidden="true" /></li>
     

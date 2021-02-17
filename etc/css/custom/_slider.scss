@@ -1,7 +1,8 @@
 /* =============================================================================
    Slider Styles | Custom [slider.scss]
    ========================================================================== */
-.slick{
+.slick,
+.slick_with_nav{
     background-color: $slider_bgColour;
     box-sizing: border-box;
     
@@ -12,13 +13,12 @@
     }
     
     &,
-    .slick-slide{
-        z-index: $zIndex_slider!important; 
-    }
-    
-    &,
     div{
         @include clearfix;
+    }
+    
+    .slick-slide{
+        float: left;
     }
     
     @if $slider_arrows_carousel_act == "on"{
@@ -41,6 +41,13 @@
                 padding-left: $carousel_PH_AT;
             }
         }
+    }
+}
+
+.slick{    
+    &,
+    .slick-slide{
+        z-index: $zIndex_slider!important; 
     }
 }
 

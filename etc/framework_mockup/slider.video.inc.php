@@ -25,7 +25,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/web2020/common/slider.video.inc.php');
 ?>    
 
-<ul class="slick mask horizontal clearfix <?php echo $slider_video_class; ?>">
+<ul class="slick <?php echo $slider_video_class; ?>">
     <?php        if(isset($slider_video_item_01)): // Section ?>
     <li><img src="/nuevo/img/slider_video_<?php echo $slider_video_item_01; ?>.jpg" alt="" aria-hidden="true" /></li>
     
