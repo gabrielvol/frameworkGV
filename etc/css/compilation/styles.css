@@ -1560,7 +1560,7 @@ article, article::before, article::after, details, details::before, details::aft
    After Desktop Classes | Etc [classesResponsive.scss]
    ========================================================================== */
 /* =============================================================================
-   Container Settings | Etc [settingsContainer.scss]
+   Container Settings | Etc [settings_container.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -1647,35 +1647,35 @@ article, article::before, article::after, details, details::before, details::aft
     width: 900px; } }
 
 @media (max-width: 499px) {
-  .container.centerAbs {
+  .container.container_centered_absolute {
     position: absolute;
     left: 50%;
     margin-left: calc(-1 * calc(300px / 2)); } }
 
 @media (min-width: 500px) {
-  .container.centerAbs {
+  .container.container_centered_absolute {
     position: absolute;
     left: 50%;
     margin-left: calc(-1 * calc(85% / 2)); } }
 
 @media (min-width: 767px) {
-  .container.centerAbs {
+  .container.container_centered_absolute {
     margin-left: calc(-1 * calc(720px / 2)); } }
 
 @media (min-width: 1024px) {
-  .container.centerAbs {
+  .container.container_centered_absolute {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1200px) {
-  .container.centerAbs {
+  .container.container_centered_absolute {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1600px) {
-  .container.centerAbs {
+  .container.container_centered_absolute {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 /* =============================================================================
-   Hack para Windows Phone | Etc [settingsContainer.scss]
+   Hack para Windows Phone | Etc [settings_container.scss]
    ========================================================================== */
 @media (max-width: 400px) {
   @-ms-viewport {

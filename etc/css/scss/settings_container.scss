@@ -1,5 +1,5 @@
 /* =============================================================================
-   Container Settings | Etc [settingsContainer.scss]
+   Container Settings | Etc [settings_container.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -80,7 +80,7 @@
     @include afterDesktopLarge{
         width: $container_value_DL;
     }    
-    &.centerAbs{
+    &.container_centered_absolute{
         @include mobileOnly{
             position: absolute;
             left: 50%;   
@@ -105,7 +105,7 @@
         }
     }
     @if $classes_container_act_MO == "on"{
-        &.centerAbsMO{    
+        &.container_centered_absoluteMO{    
             @include mobileOnly{
                 position: absolute;
                 left: 50%;   
@@ -114,7 +114,7 @@
         }
     }
     @if $classes_container_act_AML == "on"{
-        &.centerAbsAML{
+        &.container_centered_absoluteAML{
             @include afterMobileLandscape{
                 position: absolute;
                 left: 50%;   
@@ -135,7 +135,7 @@
         }
     }
     @if $classes_container_act_AT == "on"{
-        &.centerAbsAT{
+        &.container_centered_absoluteAT{
             @include afterTablet{
                 position: absolute;
                 left: 50%;   
@@ -153,7 +153,7 @@
         }
     }
     @if $classes_container_act_ATL == "on"{
-        &.centerAbsATL{
+        &.container_centered_absoluteATL{
             @include afterTabletLandscape{
                 position: absolute;
                 left: 50%;   
@@ -168,7 +168,7 @@
         }
     }
     @if $classes_container_act_AD == "on"{
-        &.centerAbsAD{
+        &.container_centered_absoluteAD{
             @include afterDesktop{
                 position: absolute;
                 left: 50%;   
@@ -180,7 +180,7 @@
         }
     }
     @if $classes_container_act_ADL == "on"{
-        &.centerAbsADL{
+        &.container_centered_absoluteADL{
             @include afterDesktopLarge{
                 position: absolute;
                 left: 50%;   
@@ -194,7 +194,7 @@
     .containerMO{
         @include mobileOnly{
             width: $container_value_MO;            
-            &.centerAbsMO{    
+            &.container_centered_absoluteMO{    
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_MO;
@@ -206,7 +206,7 @@
     .containerAML{
         @include afterMobileLandscape{
             width: $container_value_ML;
-            &.centerAbsAML{
+            &.container_centered_absoluteAML{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_ML;
@@ -217,25 +217,25 @@
         }     
         @include afterTablet{
             width: $container_value_T;
-            &.centerAbsAML{
+            &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_T;
             }
         }    
         @include afterTabletLandscape{
             width: $container_value_TL;
-            &.centerAbsAML{
+            &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_TL;
             }
         }    
         @include afterDesktop{
             width: $container_value_D;
-            &.centerAbsAML{
+            &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_D;
             }
         }    
         @include afterDesktopLarge{
             width: $container_value_DL;
-            &.centerAbsAML{
+            &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_DL;
             }
         }
@@ -262,7 +262,7 @@
     .containerAT{
         @include afterTablet{
             width: $container_value_T;
-            &.centerAbsAT{
+            &.container_centered_absoluteAT{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_T;        
@@ -270,19 +270,19 @@
         }    
         @include afterTabletLandscape{
             width: $container_value_TL;
-            &.centerAbsAT{        
+            &.container_centered_absoluteAT{        
                 margin-left: $container_value_half_negative_TL;
             }
         }    
         @include afterDesktop{
             width: $container_value_D;
-            &.centerAbsAT{    
+            &.container_centered_absoluteAT{    
                 margin-left: $container_value_half_negative_D;    
             }
         }    
         @include afterDesktopLarge{
             width: $container_value_DL;
-            &.centerAbsAT{       
+            &.container_centered_absoluteAT{       
                 margin-left: $container_value_half_negative_DL; 
             }
         }
@@ -315,7 +315,7 @@
     .containerATL{
         @include afterTabletLandscape{
             width: $container_value_TL;
-            &.centerAbsATL{
+            &.container_centered_absoluteATL{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_TL;
@@ -323,13 +323,13 @@
         }    
         @include afterDesktop{
             width: $container_value_D;
-            &.centerAbsATL{
+            &.container_centered_absoluteATL{
                 margin-left: $container_value_half_negative_D;
             }
         }    
         @include afterDesktopLarge{
             width: $container_value_DL;
-            &.centerAbsATL{
+            &.container_centered_absoluteATL{
                 margin-left: $container_value_half_negative_DL;
             }
         }    
@@ -365,7 +365,7 @@
     .containerAD{
         @include afterDesktop{
             width: $container_value_D;
-            &.centerAbsAD{
+            &.container_centered_absoluteAD{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_D;
@@ -373,7 +373,7 @@
         }    
         @include afterDesktopLarge{
             width: $container_value_DL;
-            &.centerAbsAD{
+            &.container_centered_absoluteAD{
                 margin-left: $container_value_half_negative_DL;
             }
         }    
@@ -383,7 +383,7 @@
     .containerADL{
         @include afterDesktopLarge{
             width: $container_value_DL;
-            &.centerAbsADL{
+            &.container_centered_absoluteADL{
                 margin-left: $container_value_half_negative_DL;
             }
         }    
@@ -391,7 +391,7 @@
 }
     
 /* =============================================================================
-   Hack para Windows Phone | Etc [settingsContainer.scss]
+   Hack para Windows Phone | Etc [settings_container.scss]
    ========================================================================== */
 @media (max-width: 400px) {
     @-ms-viewport {
