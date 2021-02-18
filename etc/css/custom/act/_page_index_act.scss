@@ -17,24 +17,24 @@
 // Ej. $page_index_fullHeight_act_AML = "on" imprime:
 // @media (min-width: 500px) {
 //     .page_index {
-//         height: calc(100vh - #value - #value);
+//         height: calc(100vh - $footer_height_AML - $header_height_AML);
 //     }
 // }
 //
 //
-// 01 _ Index Only Full Height
+// 02 _ Index Only Full Height
 // Activa los if que se encuentran en `[/custom/imp/_page_index_fullHeight_imp.scss]`,
 // `[/custom/_section_header.scss]` y `[/custom/_section_footer.scss]`.
 // El archivo `[/custom/imp/_page_index_fullHeight_imp.scss]` se importa en 
 // `[/custom/_page_index.scss]`.
 // Además de imprimir lo mismo que `01 Full Height` imprime:
 //
-// #footer.footer_index{
-//     height: #value;
+// #header.header_index{
+//     height: $header_height;
 // }
 //
-// #header.header_index{
-//     height: #value;
+// #footer.footer_index{
+//     height: $header_height;
 // }
 
 

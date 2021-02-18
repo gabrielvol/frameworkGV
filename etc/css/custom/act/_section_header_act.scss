@@ -1,7 +1,125 @@
 /* =============================================================================
    Header Activators | Custom [act/section_header_act.scss]
    ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Activadores para Section Header.
+//
+// Listado:
+// 01 _ Logo Nav Floated
+// 02 _ Logo Nav Floated Flexbox
+// 02 _ Header Fixed
+//
+//
+// 01 _ Logo Nav Floated
+// Activa los if que se encuentran en `[/custom/_section_header.scss]` y `[/custom/_section_nav_AT.scss]`.
+//
+// Imprime:
+//       
+// #header .logo_header{
+//     box-sizing: border-box;
+//     float: left;
+//     padding-right: 20px;
+//     padding-left: 20px; 
+// }
+// 
+// .nav_main{
+//     float: left;
+//     width: calc(100% - $logo_width);
+// }
+// 
+// .nav_main .nav_main_ul > li{
+//     float: left;
+// }
+//
+//
+// 02 _ Logo Nav Floated Flexbox
+// Activa los if que se encuentran en `[/custom/_section_header.scss]` y `[/custom/_section_nav_AT.scss]`.
+//
+// Imprime:
+//       
+// #header .container{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-content: flex-start;
+//     align-items: flex-start;     
+// }
+//       
+// #header .logo_header{
+//     box-sizing: border-box;     
+// }
+// 
+// .nav_main{
+//     width: calc(100% - $logo_width);
+// }
+//
+// .nav_main .nav_main_ul.navAT{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: flex-end;
+//     align-content: flex-start;
+//     align-items: flex-start; 
+// }
+//
+//
+// 03 _ Header Fixed
+// Activa los if que se encuentran en `[/custom/_global.scss]` y `[/custom/_section_header.scss]`.
+//
+// Imprime:
+//
+// #header{
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     box-shadow: $header_fixed_bxShadow;
+//     height: $header_height;
+// }
+//
+// #main section{
+//     padding-top: $page_PT;
+// }
+
+            
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
     
+
 /* // Menu y logo ----------------------------------------------------------- */
 $header_logoNav_floated_act:            off;      
 $header_logoNav_floated_flexbox_act:    off;

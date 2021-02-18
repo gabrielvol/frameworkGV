@@ -21,7 +21,7 @@
         height: $header_height_ALL;
     }
     
-    @if $page_index_only_fullHeight_act_ALL{
+    @if $page_index_only_fullHeight_act_ALL == "on"{
         &.header_index{
             height: $header_height_ALL;
         }
@@ -292,6 +292,10 @@
                 float: left;
                 padding-right: 20px;
                 padding-left: 20px;             
+            }
+            
+            @if $header_logoNav_floated_flexbox_act == "on"{
+                box-sizing: border-box;           
             }
             
             @if $logo_bgImage_before_act == "on"{
