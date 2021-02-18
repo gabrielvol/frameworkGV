@@ -40,7 +40,8 @@
     $openGraph_url              = $url_openGraph_global;
     $openGraph_type             = 'website';
     
-    $openGraph_url_img_sq           = $url_openGraph_global .'/og_img_sq.jpg';       $openGraph_url_img_sq_secure    = $openGraph_url_img_sq;
+    $openGraph_url_img_sq           = $url_openGraph_global .'/og_img_sq.jpg';
+    $openGraph_url_img_sq_secure    = $openGraph_url_img_sq;
     $openGraph_img_sq_width         = '1000';
     $openGraph_img_sq_height        = '1000';
     
