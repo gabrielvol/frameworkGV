@@ -9,11 +9,13 @@
     }   
     
     a{
+        display: block;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
         margin-right: auto;
         margin-left: auto;
+        text-indent: -9999px;
     }
 
     .social_fb{ // Soc Facebook

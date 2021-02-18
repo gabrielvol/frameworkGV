@@ -77,7 +77,7 @@
         color: $greyXD;
     }
     
-    /*
+/*
     &.CTAwhite{
         @include borderStyle($bdWhite);
     
@@ -91,7 +91,7 @@
             text-shadow: 0 0 3px $greyL;
         }
     }
-    */
+*/
     
     @include mobileOnly{
         width: $hundred;
@@ -134,7 +134,7 @@
         &::before{            
             @include borderRadius(15px);
             @include equalHeightAndLineHeight($button_whatsapp_before_height);
-            content: "Abre un chat con Agridulze.";
+            content: "Abre un chat.";
             display: block;
             box-sizing: border-box;
             position: absolute;
