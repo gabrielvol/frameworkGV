@@ -50,6 +50,8 @@
 /* =============================================================================
    Header Activators | Custom [act/section_header_act.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Menu y logo ----------------------------------------------------------- */
 /* // Header ---------------------------------------------------------------- */
 /* =============================================================================
@@ -316,11 +318,15 @@
 /* =============================================================================
    Page Index Variables | Custom [var/page_index_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Page Index Sizes ------------------------------------------------------ */
 /* // Page Index Colours ---------------------------------------------------- */
 /* =============================================================================
    Page Contacto Variables | Custom [var/page_contacto_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Page Contacto Sizes --------------------------------------------------- */
 /* // Page Contacto Colours ------------------------------------------------- */
 /* // Mixins ---------------------------------------------------------------- */
@@ -682,12 +688,6 @@ p b, li b {
 
 p p, p li, p a, p strong, p dl, p legend, li p, li li, li a, li strong, li dl, li legend {
   font-size: 1em; }
-
-p:focus a, p:hover a, li:focus a, li:hover a {
-  text-decoration: underline; }
-
-p.noUnderline:focus a, p.noUnderline:hover a, li.noUnderline:focus a, li.noUnderline:hover a {
-  text-decoration: none; }
 
 a {
   transition: background-color 0.7s, color 1s, text-shadow 1s; }
@@ -1801,7 +1801,7 @@ article, article::before, article::after, details, details::before, details::aft
             text-shadow: 0 0 3px $greyL;
         }
     }
-    */ }
+*/ }
   .callToAction, .callToAction:focus, .callToAction:hover {
     text-decoration: none !important; }
   .callToAction, .callToAction:visited, .callToAction:active {
@@ -2215,8 +2215,6 @@ article, article::before, article::after, details, details::before, details::aft
     z-index: $zIndex_header;
 */
   height: 112px; }
-  #header.header_index {
-    height: 112px; }
   #header .logo_header {
     margin-bottom: 0; }
     #header .logo_header a,
@@ -2574,4 +2572,9 @@ nav li:focus a, nav li:hover a {
 /* =============================================================================
    Page Index Styles | Custom [page_index.scss]
    ========================================================================== */
+/* =============================================================================
+   Page Index Full Height Styles | Custom [page_index_fullHeight_imp.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Post ------------------------------------------------------------------ */

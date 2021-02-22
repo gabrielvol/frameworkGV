@@ -1,3 +1,48 @@
+/* =============================================================================
+   Page Index Full Height Styles | Custom [page_index_fullHeight_imp.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+// Imported in `[/custom/_page_index.scss]`
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
 .page_index{
     @if $page_index_fullHeight_act_ALL == "on" or $page_index_only_fullHeight_act_ALL == "on"{
         height: calc(100vh - #{$footer_height_ALL} - #{$header_height_ALL});
