@@ -1,7 +1,7 @@
 /* =============================================================================
    Lists | Custom [lists.scss]
    ========================================================================== */
-.hyphenated{
+.list_hyphenated{
     li{        
         position: relative;
 
@@ -11,73 +11,72 @@
     }
 }    
 
-.numbered{
-    $liN_size: 25px;
-    
-    counter-reset: liN;
+.list_numbered{    
+    counter-reset: list_numbered_counter;
     
     > li{
         position: relative;
         box-sizing: border-box;
-        padding-left: calc(#{$liN_size} + 5px);
+        padding-left: calc(#{$list_list_numbered_n_size} + 5px);
         list-style-type: none;
         
         &::before{   
-            @include squareSize($liN_size);  
-            counter-increment: liN; 
-            content: counter(liN);
+            @include squareSize($list_list_numbered_n_size);  
+            counter-increment: list_numbered_counter; 
+            content: counter(list_numbered_counter);
             display: block;
             float: left;
             margin-right: $zero;
-            margin-left: calc(-1 * calc(#{$liN_size} - 0));
+            margin-left: calc(-1 * calc(#{$list_list_numbered_n_size} - 0));
+            white-space: pre;
         } 
     }
     
-    &.numbered_decimal{
+    &.list_numbered_decimal{
         > li{
             &::before{
-                content: counter(liN, decimal) ".";
+                content: counter(list_numbered_counter, decimal) ".";
             }
         }
     }
     
-    &.numbered_lowerLatin{
+    &.list_numbered_lowerLatin{
         > li{
             &::before{
-                content: counter(liN, lower-latin) ".";
+                content: counter(list_numbered_counter, lower-latin) ".";
             }
         }
     }
     
-    &.numbered_upperLatin{
+    &.list_numbered_upperLatin{
         > li{
             &::before{
-                content: counter(liN, upper-latin) ".";
+                content: counter(list_numbered_counter, upper-latin) ".";
             }
         }
     }
     
-    &.numbered_upperRoman{
+    &.list_numbered_upperRoman{
         > li{
             &::before{
-                content: counter(liN, upper-roman) ".";
+                content: counter(list_numbered_counter, upper-roman) ".";
             }
         }
     }
     
-    &.numbered_lowerRoman{
+    &.list_numbered_lowerRoman{
         > li{
             &::before{
-                content: counter(liN, lower-roman) ".";
+                content: counter(list_numbered_counter, lower-roman) ".";
             }
         }
     }
 }
 
-.bulleted_dot,
-.bulleted_square,
-.bulleted_tick,
-.bulleted_chevron{
+.list_bulleted_dot,
+.list_bulleted_square,
+.list_bulleted_tick,
+.list_bulleted_chevron{
     li{
         list-style-type: none;
         box-sizing: border-box;
@@ -93,25 +92,23 @@
     }
 }   
 
-.bulleted_dot,
-.bulleted_square,
-.bulleted_chevron{
-    $bullet_size: 7px;  
-        
+.list_bulleted_dot,
+.list_bulleted_square,
+.list_bulleted_chevron{        
     li{
         padding-left: 15px;
 
         &::before{
             top: 9px;
             width: 7px;
-            height: $bullet_size;
+            height: $list_bulleted_bullet_size;
             background-position: left top;
-            background-size: $bullet_size;
+            background-size: $list_bulleted_bullet_size;
         }
     }
 }    
 
-.bulleted_dot{
+.list_bulleted_dot{
     li{
         &::before{
             background-image: url('/nuevo/img/bullet_dot.svg');
@@ -119,7 +116,7 @@
     }
 }
  
-.bulleted_square{
+.list_bulleted_square{
     li{
         &::before{
             background-image: url('/nuevo/img/bullet_square.svg');
@@ -127,23 +124,21 @@
     }
 }
 
-.bulleted_tick{
-    $bulleted_tick_li_PL: 20px;
-        
+.list_bulleted_tick{        
     li{
-        padding-left: $bulleted_tick_li_PL;
+        padding-left: $list_bulleted_tick_li_PL;
         
         &::before{
-            @include squareSize($bulleted_tick_li_PL);
+            @include squareSize($list_bulleted_tick_li_PL);
             top: 0;
             background-image: url('/nuevo/img/bullet_tick.svg');
             background-position: left 3px;
-            background-size: auto calc(#{$bulleted_tick_li_PL} - 5px);
+            background-size: auto calc(#{$list_bulleted_tick_li_PL} - 5px);
         }
     }
 }
 
-.bulleted_chevron{
+.list_bulleted_chevron{
     li{
         &::before{
             background-image: url('/nuevo/img/bullet_chevron.svg');
@@ -151,31 +146,29 @@
     }
 }
 
-.listFile{
+.list_file{
     li{  
-        $listFile_icon_size: 30px;
-
         box-sizing: border-box;
         position: relative;
-        min-height: $listFile_icon_size;
+        min-height: $list_file_icon_size;
         padding-top: 5px;  
-        padding-left: calc(#{$listFile_icon_size} + 2px);
+        padding-left: calc(#{$list_file_icon_size} + 2px);
 
         a{
             height: auto;
-            min-height: $listFile_icon_size;
+            min-height: $list_file_icon_size;
             line-height: 1.3;
         }
 
         &::before{
-            @include squareSize($listFile_icon_size);
+            @include squareSize($list_file_icon_size);
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             background-repeat: no-repeat;
             background-position: left top;
-            background-size: auto $listFile_icon_size;
+            background-size: auto $list_file_icon_size;
         }
     }
 
@@ -193,49 +186,3 @@
         }
     }
 }
-    
-.ulResp2 > li, .ulResp3 > li, .ulResp4 > li{
-    a{
-        position: relative;
-    }
-    img{
-        margin-right: $auto;
-        margin-left: $auto;        
-    }
-    @include mobileOnly{
-        width: 100%;
-        float: $none;
-        
-        img{
-            width: 100%;
-        }
-    }
-    @include mobileLandscapeOnly{        
-        &:nth-child(odd):last-child{
-            clear: both;
-            width: 100%;
-            float: $none;
-            margin-right: $auto;
-            margin-left: $auto;
-        }
-    }
-    @include afterMobileLandscape{
-        width: 50%;
-        padding: 0 10px;
-        
-        img{
-            width: 100%;
-        }
-    }
-}
-.ulResp2{ > li{
-        @include afterTablet{
-            &:nth-child(n+3){margin-top: 40px;}
-        }
-    }}
-.ulResp3{ > li{
-        @include afterTablet{width: calc(100% / 3);}
-    }}
-.ulResp4{ > li{
-        @include afterTablet{width: 25%}
-    }}

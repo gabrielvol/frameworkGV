@@ -1208,7 +1208,7 @@ article, article::before, article::after, details, details::before, details::aft
 .cursorNone {
   cursor: none; }
 
-.unstyled, .horizontal, .hyphenated {
+.unstyled, .horizontal, .list_hyphenated {
   list-style: none !important; }
 
 .floatLeft, .horizontal li {
@@ -1465,7 +1465,7 @@ article, article::before, article::after, details, details::before, details::aft
       position: static;
       width: auto;
       white-space: inherit; }
-  .unstyledBT, .horizontalBT, .hyphenatedBT {
+  .unstyledBT, .horizontalBT, .list_hyphenatedBT {
     list-style: none !important; }
   .floatLeftBT, .horizontalBT li {
     float: left !important; }
@@ -1541,7 +1541,7 @@ article, article::before, article::after, details, details::before, details::aft
       position: static;
       width: auto;
       white-space: inherit; }
-  .unstyledAT, .horizontalAT, .hyphenatedAT {
+  .unstyledAT, .horizontalAT, .list_hyphenatedAT {
     list-style: none !important; }
   .floatLeftAT, .horizontalAT li {
     float: left !important; }
@@ -1874,19 +1874,19 @@ article, article::before, article::after, details, details::before, details::aft
 /* =============================================================================
    Lists | Custom [lists.scss]
    ========================================================================== */
-.hyphenated li {
+.list_hyphenated li {
   position: relative; }
-  .hyphenated li::before {
+  .list_hyphenated li::before {
     content: "- "; }
 
-.numbered {
+.list_numbered {
   counter-reset: liN; }
-  .numbered > li {
+  .list_numbered > li {
     position: relative;
     box-sizing: border-box;
     padding-left: calc(25px + 5px);
     list-style-type: none; }
-    .numbered > li::before {
+    .list_numbered > li::before {
       width: 25px;
       height: 25px;
       counter-increment: liN;
@@ -1895,56 +1895,56 @@ article, article::before, article::after, details, details::before, details::aft
       float: left;
       margin-right: 0 !important;
       margin-left: calc(-1 * calc(25px - 0)); }
-  .numbered.numbered_decimal > li::before {
+  .list_numbered.list_numbered_decimal > li::before {
     content: counter(liN, decimal) "."; }
-  .numbered.numbered_lowerLatin > li::before {
+  .list_numbered.list_numbered_lowerLatin > li::before {
     content: counter(liN, lower-latin) "."; }
-  .numbered.numbered_upperLatin > li::before {
+  .list_numbered.list_numbered_upperLatin > li::before {
     content: counter(liN, upper-latin) "."; }
-  .numbered.numbered_upperRoman > li::before {
+  .list_numbered.list_numbered_upperRoman > li::before {
     content: counter(liN, upper-roman) "."; }
-  .numbered.numbered_lowerRoman > li::before {
+  .list_numbered.list_numbered_lowerRoman > li::before {
     content: counter(liN, lower-roman) "."; }
 
-.bulleted_dot li,
-.bulleted_square li,
-.bulleted_tick li,
-.bulleted_chevron li {
+.list_bulleted_dot li,
+.list_bulleted_square li,
+.list_bulleted_tick li,
+.list_bulleted_chevron li {
   list-style-type: none;
   box-sizing: border-box;
   position: relative; }
-  .bulleted_dot li::before,
-  .bulleted_square li::before,
-  .bulleted_tick li::before,
-  .bulleted_chevron li::before {
+  .list_bulleted_dot li::before,
+  .list_bulleted_square li::before,
+  .list_bulleted_tick li::before,
+  .list_bulleted_chevron li::before {
     content: "";
     position: absolute;
     left: 0;
     display: block;
     background-repeat: no-repeat; }
 
-.bulleted_dot li,
-.bulleted_square li,
-.bulleted_chevron li {
+.list_bulleted_dot li,
+.list_bulleted_square li,
+.list_bulleted_chevron li {
   padding-left: 15px; }
-  .bulleted_dot li::before,
-  .bulleted_square li::before,
-  .bulleted_chevron li::before {
+  .list_bulleted_dot li::before,
+  .list_bulleted_square li::before,
+  .list_bulleted_chevron li::before {
     top: 9px;
     width: 7px;
     height: 7px;
     background-position: left top;
     background-size: 7px; }
 
-.bulleted_dot li::before {
+.list_bulleted_dot li::before {
   background-image: url("/nuevo/img/bullet_dot.svg"); }
 
-.bulleted_square li::before {
+.list_bulleted_square li::before {
   background-image: url("/nuevo/img/bullet_square.svg"); }
 
-.bulleted_tick li {
+.list_bulleted_tick li {
   padding-left: 20px; }
-  .bulleted_tick li::before {
+  .list_bulleted_tick li::before {
     width: 20px;
     height: 20px;
     top: 0;
@@ -1952,20 +1952,20 @@ article, article::before, article::after, details, details::before, details::aft
     background-position: left 3px;
     background-size: auto calc(20px - 5px); }
 
-.bulleted_chevron li::before {
+.list_bulleted_chevron li::before {
   background-image: url("/nuevo/img/bullet_chevron.svg"); }
 
-.listFile li {
+.list_file li {
   box-sizing: border-box;
   position: relative;
   min-height: 30px;
   padding-top: 5px;
   padding-left: calc(30px + 2px); }
-  .listFile li a {
+  .list_file li a {
     height: auto;
     min-height: 30px;
     line-height: 1.3; }
-  .listFile li::before {
+  .list_file li::before {
     width: 30px;
     height: 30px;
     content: "";
@@ -1976,10 +1976,10 @@ article, article::before, article::after, details, details::before, details::aft
     background-position: left top;
     background-size: auto 30px; }
 
-.listFile.filePDF li::before {
+.list_file.filePDF li::before {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
-.listFile.fileDOC li {
+.list_file.fileDOC li {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
 .ulResp2 > li a, .ulResp3 > li a, .ulResp4 > li a {

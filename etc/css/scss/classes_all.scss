@@ -122,7 +122,7 @@ https://www.drupal.org/node/897638
 
 @if $classes_lists_floats_act_ALL == "on"{
     //Lists and floats
-    .unstyled, .horizontal, .hyphenated,
+    .unstyled, .horizontal, .list_hyphenated,
     %unstyled{list-style: $none}
     .floatLeft, .horizontal li{float: $left}
     .floatRight, .horizontal li.floatRight,

@@ -93,7 +93,7 @@
     
     @if $classes_lists_floats_act_MO == "on"{
         //Lists and floats    
-        .unstyledMO, .horizontalMO, .hyphenatedMO{list-style: $none}
+        .unstyledMO, .horizontalMO, .list_hyphenatedMO{list-style: $none}
         .floatLeftMO, .horizontalMO li{float: $left}
         .floatRightMO, .horizontalMO li.floatRight,
         .horizontalMO.right li{float: $right}
@@ -229,7 +229,7 @@
     
     @if $classes_lists_floats_act_AML == "on"{
         //Lists and floats    
-        .unstyledAML, .horizontalAML, .hyphenatedAML{list-style: $none}
+        .unstyledAML, .horizontalAML, .list_hyphenatedAML{list-style: $none}
         .floatLeftAML, .horizontalAML li{float: $left}
         .floatRightAML, .horizontalAML li.floatRight,
         .horizontalAML.right li{float: $right}
@@ -365,7 +365,7 @@
     
     @if $classes_lists_floats_act_MLO == "on"{
         //Lists and floats    
-        .unstyledMLO, .horizontalMLO, .hyphenatedMLO{list-style: $none}
+        .unstyledMLO, .horizontalMLO, .list_hyphenatedMLO{list-style: $none}
         .floatLeftMLO, .horizontalMLO li{float: $left}
         .floatRightMLO, .horizontalMLO li.floatRight,
         .horizontalMLO.right li{float: $right}
@@ -501,7 +501,7 @@
     
     @if $classes_lists_floats_act_BT == "on"{
         //Lists and floats    
-        .unstyledBT, .horizontalBT, .hyphenatedBT{list-style: $none}
+        .unstyledBT, .horizontalBT, .list_hyphenatedBT{list-style: $none}
         .floatLeftBT, .horizontalBT li{float: $left}
         .floatRightBT, .horizontalBT li.floatRight,
         .horizontalBT.right li{float: $right}
@@ -637,7 +637,7 @@
     
     @if $classes_lists_floats_act_BTL == "on"{
         //Lists and floats    
-        .unstyledBTL, .horizontalBTL, .hyphenatedBTL{list-style: $none}
+        .unstyledBTL, .horizontalBTL, .list_hyphenatedBTL{list-style: $none}
         .floatLeftBTL, .horizontalBTL li{float: $left}
         .floatRightBTL, .horizontalBTL li.floatRight,
         .horizontalBTL.right li{float: $right}
@@ -773,7 +773,7 @@
     
     @if $classes_lists_floats_act_TO == "on"{
         //Lists and floats    
-        .unstyledTO, .horizontalTO, .hyphenatedTO{list-style: $none}
+        .unstyledTO, .horizontalTO, .list_hyphenatedTO{list-style: $none}
         .floatLeftTO, .horizontalTO li{float: $left}
         .floatRightTO, .horizontalTO li.floatRight,
         .horizontalTO.right li{float: $right}
@@ -910,7 +910,7 @@
     
     @if $classes_lists_floats_act_AT == "on"{
         //Lists and floats    
-        .unstyledAT, .horizontalAT, .hyphenatedAT{list-style: $none}
+        .unstyledAT, .horizontalAT, .list_hyphenatedAT{list-style: $none}
         .floatLeftAT, .horizontalAT li{float: $left}
         .floatRightAT, .horizontalAT li.floatRight,
         .horizontalAT.right li{float: $right}
@@ -1046,7 +1046,7 @@
     
     @if $classes_lists_floats_act_ATL == "on"{
         //Lists and floats    
-        .unstyledATL, .horizontalATL, .hyphenatedATL{list-style: $none}
+        .unstyledATL, .horizontalATL, .list_hyphenatedATL{list-style: $none}
         .floatLeftATL, .horizontalATL li{float: $left}
         .floatRightATL, .horizontalATL li.floatRight,
         .horizontalATL.right li{float: $right}
@@ -1182,7 +1182,7 @@
     
     @if $classes_lists_floats_act_TLO == "on"{
         //Lists and floats    
-        .unstyledTLO, .horizontalTLO, .hyphenatedTLO{list-style: $none}
+        .unstyledTLO, .horizontalTLO, .list_hyphenatedTLO{list-style: $none}
         .floatLeftTLO, .horizontalTLO li{float: $left}
         .floatRightTLO, .horizontalTLO li.floatRight,
         .horizontalTLO.right li{float: $right}
@@ -1318,7 +1318,7 @@
     
     @if $classes_lists_floats_act_TTLO == "on"{
         //Lists and floats    
-        .unstyledTTLO, .horizontalTTLO, .hyphenatedTTLO{list-style: $none}
+        .unstyledTTLO, .horizontalTTLO, .list_hyphenatedTTLO{list-style: $none}
         .floatLeftTTLO, .horizontalTTLO li{float: $left}
         .floatRightTTLO, .horizontalTTLO li.floatRight,
         .horizontalTTLO.right li{float: $right}
@@ -1454,7 +1454,7 @@
     
     @if $classes_lists_floats_act_BD == "on"{
         //Lists and floats    
-        .unstyledBD, .horizontalBD, .hyphenatedBD{list-style: $none}
+        .unstyledBD, .horizontalBD, .list_hyphenatedBD{list-style: $none}
         .floatLeftBD, .horizontalBD li{float: $left}
         .floatRightBD, .horizontalBD li.floatRight,
         .horizontalBD.right li{float: $right}
@@ -1590,7 +1590,7 @@
     
     @if $classes_lists_floats_act_AD == "on"{
         //Lists and floats    
-        .unstyledAD, .horizontalAD, .hyphenatedAD{list-style: $none}
+        .unstyledAD, .horizontalAD, .list_hyphenatedAD{list-style: $none}
         .floatLeftAD, .horizontalAD li{float: $left}
         .floatRightAD, .horizontalAD li.floatRight,
         .horizontalAD.right li{float: $right}
