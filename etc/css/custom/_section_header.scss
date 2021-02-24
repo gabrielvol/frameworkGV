@@ -14,7 +14,7 @@
         top: 0;
         right: 0;
         left: 0;
-        box-shadow: $header_fixed_bxShadow;
+        box-shadow: $bxShadow_header_fixed;
     }
     
     @if $page_index_fullHeight_act_ALL == "on" or $page_int_fullHeight_act_ALL == "on"{
@@ -66,7 +66,7 @@
             top: 0;
             right: 0;
             left: 0;
-            box-shadow: $header_fixed_bxShadow;
+            box-shadow: $bxShadow_header_fixed;
         }
         
         @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
@@ -90,7 +90,7 @@
             top: 0;
             right: 0;
             left: 0;
-            box-shadow: $header_fixed_bxShadow;
+            box-shadow: $bxShadow_header_fixed;
         }
         
         @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
@@ -114,7 +114,7 @@
             top: 0;
             right: 0;
             left: 0;
-            box-shadow: $header_fixed_bxShadow;
+            box-shadow: $bxShadow_header_fixed;
         }
         
         @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
@@ -154,7 +154,7 @@
         
         @if $header_fixed_act_BT == "on"{
             height: $header_height_BT;
-            box-shadow: $header_fixed_bxShadow;
+            box-shadow: $bxShadow_header_fixed;
         }   
             
         @if $logo_bgImage_before_act == "on"{
@@ -257,7 +257,7 @@
             top: 0;
             right: 0;
             left: 0;
-            box-shadow: $header_fixed_bxShadow;
+            box-shadow: $bxShadow_header_fixed;
         
             &.topperShadow{
                 box-shadow: 0 0 7px $black;

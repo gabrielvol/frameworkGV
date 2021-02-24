@@ -8,8 +8,8 @@ $txShadow_main:                     0 0 3px $black;
 $txShadow_ftColour_white:           0 0 3px $white;
 $txShadow_ftColour_white_hover:     0 0 3px $black;
 
-$txShadow_main:                     0 0 10px 0 $greyXD;
-$bxShadow_main_inset:               inset $txShadow_main;
+$bxShadow_main:                     0 0 10px 0 $greyXD;
+$bxShadow_main_inset:               inset $bxShadow_main;
 
-$video_bxShadow:                    $txShadow_main;
-$header_fixed_bxShadow:             0 0 10px 0 $greyL;
+$bxShadow_video:                    $bxShadow_main;
+$bxShadow_header_fixed:             0 0 10px 0 $greyL;
