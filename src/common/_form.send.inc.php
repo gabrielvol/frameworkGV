@@ -142,6 +142,7 @@
         
         $formSend_msg_error_data_email__formName          = _("Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida."); 
         $formSend_msg_error_data_telefono__formName       = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono."); 
+        $formSend_msg_error_data_celular__formName        = _("Por favor, ingrese su n&uacute;mero de celular."); 
         
         $formSend_msg_error_data_webSite__formName        = _("Por favor, ingrese su sitio web.");
         $formSend_msg_error_data_facebook__formName       = _("Por favor, ingrese su perfil de Facebook.");
@@ -238,6 +239,12 @@
             $form_msg_mandatory_classes__formName           = $form_msg_mandatory_errorClass__formName;
             $form_input_errorClass_data_telefono__formName     = "invalidField";
             $form_input_autofocus_data_telefono__formName       = "autofocus";
+            
+        } elseif (empty($_POST["data_celular__formName"])) {
+            $form_msg_mandatory__formName                   = $formSend_msg_error_data_celular__formName;
+            $form_msg_mandatory_classes__formName           = $form_msg_mandatory_errorClass__formName;
+            $form_input_errorClass_data_celular__formName     = "invalidField";
+            $form_input_autofocus_data_celular__formName       = "autofocus";
             
         } elseif (empty($_POST["data_email__formName"])) {
             $form_msg_mandatory__formName                   = $formSend_msg_error_data_email__formName;
@@ -519,6 +526,7 @@
                 $_POST['data_webSite__formName']      = '';
                 $_POST['data_facebook__formName']     = '';
                 $_POST['data_telefono__formName']     = '';
+                $_POST['data_celular__formName']      = '';
                 $_POST['data_empresa__formName']      = '';
                 $_POST['data_razonSocial__formName']  = '';
                 $_POST['data_cargo__formName']        = '';
