@@ -6,12 +6,12 @@
     ///con sus `:hover`.
     
      
-/* // Labels ---------------------------------------------------------------- */
+/* // Form Label ------------------------------------------------------------ */
 $formLabel_ftColour:           $ftColour_main_global;
 $formLabel_ftColour_hover:     darken($formLabel_ftColour, 15%);
     
      
-/* // Inputs ---------------------------------------------------------------- */
+/* // Forms Input ----------------------------------------------------------- */
 $form_input_ftColour:           $ftColour_main_global;
 $form_input_ftColour_hover:     $form_input_ftColour;
  
@@ -26,18 +26,18 @@ $form_input_bgColour_hover:     $form_input_bgColour;
 $form_input_shadowInset:        inset 0 0 6px $greyL;
  
      
-/* // Submit ---------------------------------------------------------------- */
-$form_submit_ftColour:          $black;
-$form_submit_ftColour_hover:    $form_submit_ftColour;
+/* // Form Submit  ---------------------------------------------------------- */
+$button_form_submit_ftColour:          $black;
+$button_form_submit_ftColour_hover:    $button_form_submit_ftColour;
   
-$form_submit_bdColour:            $bdColour_main_global;
-$form_submit_bdColour_hover:      $form_submit_bdColour;
+$button_form_submit_bdColour:            $bdColour_main_global;
+$button_form_submit_bdColour_hover:      $button_form_submit_bdColour;
   
-$form_submit_bgColour:            $bgColour_main_global;
-$form_submit_bgColour_hover:      $form_submit_bgColour;
+$button_form_submit_bgColour:            $bgColour_main_global;
+$button_form_submit_bgColour_hover:      $button_form_submit_bgColour;
     
      
-/* // Validation ------------------------------------------------------------ */
+/* // Form Validation ------------------------------------------------------- */
 $form_input_msg_error_ftColour:  $errorColour;
  
 $form_status_msg_error_bgColour:   $bgErrorColour;

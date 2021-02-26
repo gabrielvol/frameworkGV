@@ -176,3 +176,18 @@
         }
     }
 }
+
+
+/* // Form Submit  ---------------------------------------------------------- */
+.button_form_submit{        
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    @include afterTablet{
+        @include centerCustom(50%);
+        margin-top: 30px;
+    }
+}
+
+
+/* // Custom buttons -------------------------------------------------------- */ 

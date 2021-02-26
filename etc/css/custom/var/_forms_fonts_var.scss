@@ -1,6 +1,14 @@
 /* =============================================================================
    Form Fonts Variables | Custom [var/form_fonts.scss]
    ========================================================================== */
-$form_label_fontFamily:   $fontFamily_main_global;
-$form_input_fontFamily:   $fontFamily_main_global;
-$form_submit_fontFamily:  $fontFamily_main_global;
+/* // Form Label ------------------------------------------------------------ */
+$form_label_fontFamily:     $fontFamily_main_global;
+
+/* // Form Input ------------------------------------------------------------ */
+$form_input_fontFamily:     $fontFamily_main_global;
+
+/* // Form Submit  ---------------------------------------------------------- */
+$button_form_submit_fontFamily:    $fontFamily_main_global;
+
+/* // Form status message --------------------------------------------------- */
+$form_pop_title_fontFamily: $fontFamily_main_global;

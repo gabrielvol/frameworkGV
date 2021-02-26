@@ -250,6 +250,13 @@
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
 /* =============================================================================
+   Lists Variables | Custom [var/lists.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // List Colours ---------------------------------------------------------- */
+/* // List Sizes ------------------------------------------------------------ */
+/* =============================================================================
    Buttons Variables | Custom [var/buttons_var.scss]
    ========================================================================== */
 /* =============================================================================
@@ -272,25 +279,29 @@
 /* =============================================================================
    Form Colours Variables | Custom [var/form_colours.scss]
    ========================================================================== */
-/* // Labels ---------------------------------------------------------------- */
-/* // Inputs ---------------------------------------------------------------- */
-/* // Submit ---------------------------------------------------------------- */
-/* // Validation ------------------------------------------------------------ */
+/* // Form Label ------------------------------------------------------------ */
+/* // Forms Input ----------------------------------------------------------- */
+/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Validation ------------------------------------------------------- */
 /* =============================================================================
    Form Fonts Variables | Custom [var/form_fonts.scss]
    ========================================================================== */
+/* // Form Label ------------------------------------------------------------ */
+/* // Form Input ------------------------------------------------------------ */
+/* // Form Submit  ---------------------------------------------------------- */
+/* // Form status message --------------------------------------------------- */
 /* =============================================================================
    Form Sizes Variables | Custom [var/form_sizes.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form ------------------------------------------------------------------ */
-/* // Labels ---------------------------------------------------------------- */
-/* // Inputs ---------------------------------------------------------------- */
+/* // Form Label ------------------------------------------------------------ */
+/* // Form Input ------------------------------------------------------------ */
 /*___ Sug _______________________________*/
 /*___ Sug _______________________________*/
-/* // Submit ---------------------------------------------------------------- */
-/* // Search ---------------------------------------------------------------- */
+/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Search ----------------------------------------------------------- */
 /* =============================================================================
    Tables Variables | Custom [var/tables.scss]
    ========================================================================== */
@@ -1002,13 +1013,13 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 .shadow_text {
-  text-shadow: 0 0 10px 0 #666; }
+  text-shadow: 0 0 3px #000; }
 
 .shadow_text_white {
   text-shadow: 0 0 3px #fff; }
 
 .shadow_box {
-  box-shadow: 0 0 10px 0 #666; }
+  box-shadow: 0 0 3px #000; }
 
 .shadow_box_inset {
   box-shadow: inset 0 0 10px 0 #666; }
@@ -1871,6 +1882,18 @@ article, article::before, article::after, details, details::before, details::aft
     .button_whatsapp:focus::before, .button_whatsapp:hover::before {
       width: 220px; } }
 
+/* // Form Submit  ---------------------------------------------------------- */
+.button_form_submit {
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+  @media (min-width: 767px) {
+    .button_form_submit {
+      width: 50%;
+      margin-right: auto !important;
+      margin-left: auto !important;
+      margin-top: 30px; } }
+
+/* // Custom buttons -------------------------------------------------------- */
 /* =============================================================================
    Lists | Custom [lists.scss]
    ========================================================================== */
@@ -1880,7 +1903,7 @@ article, article::before, article::after, details, details::before, details::aft
     content: "- "; }
 
 .list_numbered {
-  counter-reset: liN; }
+  counter-reset: list_numbered_counter; }
   .list_numbered > li {
     position: relative;
     box-sizing: border-box;
@@ -1889,22 +1912,23 @@ article, article::before, article::after, details, details::before, details::aft
     .list_numbered > li::before {
       width: 25px;
       height: 25px;
-      counter-increment: liN;
-      content: counter(liN);
+      counter-increment: list_numbered_counter;
+      content: counter(list_numbered_counter);
       display: block;
       float: left;
       margin-right: 0 !important;
-      margin-left: calc(-1 * calc(25px - 0)); }
+      margin-left: calc(-1 * calc(25px - 0));
+      white-space: pre; }
   .list_numbered.list_numbered_decimal > li::before {
-    content: counter(liN, decimal) "."; }
+    content: counter(list_numbered_counter, decimal) "."; }
   .list_numbered.list_numbered_lowerLatin > li::before {
-    content: counter(liN, lower-latin) "."; }
+    content: counter(list_numbered_counter, lower-latin) "."; }
   .list_numbered.list_numbered_upperLatin > li::before {
-    content: counter(liN, upper-latin) "."; }
+    content: counter(list_numbered_counter, upper-latin) "."; }
   .list_numbered.list_numbered_upperRoman > li::before {
-    content: counter(liN, upper-roman) "."; }
+    content: counter(list_numbered_counter, upper-roman) "."; }
   .list_numbered.list_numbered_lowerRoman > li::before {
-    content: counter(liN, lower-roman) "."; }
+    content: counter(list_numbered_counter, lower-roman) "."; }
 
 .list_bulleted_dot li,
 .list_bulleted_square li,
@@ -1982,47 +2006,6 @@ article, article::before, article::after, details, details::before, details::aft
 .list_file.fileDOC li {
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
-.ulResp2 > li a, .ulResp3 > li a, .ulResp4 > li a {
-  position: relative; }
-
-.ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
-  margin-right: auto !important;
-  margin-left: auto !important; }
-
-@media (max-width: 499px) {
-  .ulResp2 > li, .ulResp3 > li, .ulResp4 > li {
-    width: 100%;
-    float: none !important; }
-    .ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
-      width: 100%; } }
-
-@media (min-width: 500px) and (max-width: 766px) {
-  .ulResp2 > li:nth-child(odd):last-child, .ulResp3 > li:nth-child(odd):last-child, .ulResp4 > li:nth-child(odd):last-child {
-    clear: both;
-    width: 100%;
-    float: none !important;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-@media (min-width: 500px) {
-  .ulResp2 > li, .ulResp3 > li, .ulResp4 > li {
-    width: 50%;
-    padding: 0 10px; }
-    .ulResp2 > li img, .ulResp3 > li img, .ulResp4 > li img {
-      width: 100%; } }
-
-@media (min-width: 767px) {
-  .ulResp2 > li:nth-child(n+3) {
-    margin-top: 40px; } }
-
-@media (min-width: 767px) {
-  .ulResp3 > li {
-    width: calc(100% / 3); } }
-
-@media (min-width: 767px) {
-  .ulResp4 > li {
-    width: 25%; } }
-
 /* =============================================================================
    Modal y Popups Settings | Etc [settings_popup.scss]
    ========================================================================== */
@@ -2050,7 +2033,7 @@ article, article::before, article::after, details, details::before, details::aft
 
 .pop_general {
   z-index: 9800; }
-  .pop_general .pop_button_close {
+  .pop_general .button_pop_close {
     position: absolute;
     z-index: 9900;
     text-indent: -9999px; }
@@ -2077,9 +2060,9 @@ article, article::before, article::after, details, details::before, details::aft
   position: fixed;
   top: 80px;
   left: 50%; }
-  .pop_general .pop_button_close {
+  .pop_general .button_pop_close {
     background-color: transparent;
-    background-image: url("/nuevo/img/pop_button_close.svg");
+    background-image: url("/nuevo/img/button_pop_close.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -2088,7 +2071,7 @@ article, article::before, article::after, details, details::before, details::aft
     height: 33px !important;
     background-size: 13px;
     border: 1px solid #666 !important; }
-    .pop_general .pop_button_close, .pop_general .pop_button_close:focus, .pop_general .pop_button_close:hover {
+    .pop_general .button_pop_close, .pop_general .button_pop_close:focus, .pop_general .button_pop_close:hover {
       background-color: #fff; }
   .pop_general .pop_innerContainer {
     top: 0;
@@ -2098,11 +2081,11 @@ article, article::before, article::after, details, details::before, details::aft
     position: absolute;
     overflow: auto; }
   @media (max-width: 600px) {
-    .pop_general .pop_button_close {
+    .pop_general .button_pop_close {
       top: -45px;
       right: 0; } }
   @media (min-width: 601px) {
-    .pop_general .pop_button_close {
+    .pop_general .button_pop_close {
       top: -35px;
       right: -35px; } }
 
@@ -2133,10 +2116,10 @@ article, article::before, article::after, details, details::before, details::aft
       padding-bottom: 50px; }
   .pop_warning .pop_innerContainer {
     padding: 20px; }
-  .pop_warning .pop_button_close {
+  .pop_warning .button_pop_close {
     top: 10px;
     right: 10px; }
-  .pop_warning .pop_submit {
+  .pop_warning .button_pop_submit {
     transition: all 1s ease;
     height: 35px;
     line-height: 35px;
@@ -2145,9 +2128,9 @@ article, article::before, article::after, details, details::before, details::aft
     border-radius: 6px;
     background-color: #fff;
     font-size: 0.8rem; }
-    .pop_warning .pop_submit, .pop_warning .pop_submit:focus, .pop_warning .pop_submit:hover {
+    .pop_warning .button_pop_submit, .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
       border: 1px solid #818181 !important; }
-    .pop_warning .pop_submit:focus, .pop_warning .pop_submit:hover {
+    .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
       background-color: #e6e6e6;
       color: #000; }
   @media (max-width: 499px) {
@@ -2168,7 +2151,7 @@ article, article::before, article::after, details, details::before, details::aft
         bottom: 20px;
         left: 20px;
         padding: 20px; }
-      .pop_warning .pop_button_close {
+      .pop_warning .button_pop_close {
         top: 10px;
         right: 10px; } }
 
@@ -2196,9 +2179,10 @@ article, article::before, article::after, details, details::before, details::aft
       height: 330px;
       margin-left: calc(-1 * calc(600px / 2)); } }
 
+/* // Form status message --------------------------------------------------- */
 .pop_formStatus h2 {
   height: auto !important;
-  font-weight: 600;
+  font-family: Arial;
   line-height: 1.2rem !important; }
 
 @media (max-width: 650px) {

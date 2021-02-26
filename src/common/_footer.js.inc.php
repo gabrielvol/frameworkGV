@@ -45,7 +45,6 @@
 */
 ?>
 
-
 <?php endif; if($nav_pageCurrent == 000 || $nav_pageCurrent == 000):
 /* // SECTIONNAME / SECTIONNAME
 <script src="/nuevo/js/aaaaaa.js"></script>
@@ -53,6 +52,9 @@
 */
 ?>
 
+<?php endif; if($section_hasForm == 1): ?>
+    <script src="/nuevo/js/scrollKeep.js"></script>
+    <script src="/nuevo/js/_form.js"></script>
 
 <?php endif; if($load_lightbox == 1): ?>
     <script src="/nuevo/js/lightbox.min.js"></script>

@@ -2,7 +2,7 @@
    Forms Styles | Custom [forms.scss]
    ========================================================================== */
 
-/* // Fieldsets ------------------------------------------------------------- */
+/* // Form Fieldset --------------------------------------------------------- */
 fieldset{
     & + fieldset{
         margin-top: 30px;
@@ -27,25 +27,25 @@ fieldset{
 }
  
 
-/* // Status Messages ------------------------------------------------------- */
-.status,
-.msg_mandatory{
+/* // Form status message --------------------------------------------------- */
+.form_status,
+.form_msg_mandatory{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 
-.status.ok,
-.msg_mandatory{
+.form_status.ok,
+.form_msg_mandatory{
     border-radius: $bdRadius_global;
     padding: 7px 20px;
 }
 
-.status,
-.msg_mandatory p{
+.form_status,
+.form_msg_mandatory p{
     text-align: center;   
 }
 
-.status{    
+.form_status{    
     &.ini{
         font-size: 1rem;
     }
@@ -56,8 +56,8 @@ fieldset{
     }
 }
 
-.msg_mandatory{
-    &.msg_mandatory_invalid{
+.form_msg_mandatory{
+    &.form_msg_mandatory_invalid{
         display: $block;
         background-color: $form_status_msg_error_bgColour;
         
@@ -67,15 +67,15 @@ fieldset{
     }
 }
 
-.msg_mandatory,
-.status{    
+.form_msg_mandatory,
+.form_status{    
     @include afterTabletLandscape{
         @include centerCustom(80%);
     }
 }
 
 
-/* // General --------------------------------------------------------------- */
+/* // Form general ---------------------------------------------------------- */
 form{
     input,
     select,
@@ -163,7 +163,7 @@ form{
     }
     
 
-/* // Invalid fields -------------------------------------------------------- */
+/* // Form invalid field ---------------------------------------------------- */
     input, select, textarea{
         &.invalidField{
             background-image: url('/nuevo/img/form_alert.svg');
@@ -205,20 +205,20 @@ form{
     }
     
 
-/* // Input submit ---------------------------------------------------------- */
+/* // Form Submit  ---------------------------------------------------------- */
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
     button{
-        @include borderStyle($form_submit_bdColour);
+        @include borderStyle($button_form_submit_bdColour);
         border-radius: $bdRadius_global;
         margin-bottom: $zero;
         font-size: 1.4rem;
-        font-family: $form_submit_fontFamily;
+        font-family: $button_form_submit_fontFamily;
     }
     
 
-/* // Labels ---------------------------------------------------------------- */
+/* // Form Label ------------------------------------------------------------ */
     @if $formLabel_inside_act == "on"{
         fieldset,
         label{

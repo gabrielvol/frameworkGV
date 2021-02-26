@@ -1,5 +1,5 @@
 <div class="pop_general displayNone">
-    <button type="button" class="pop_button_close"><?php echo _("Cerrar Ventana"); ?></button>
+    <button type="button" class="button_pop_close"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
 
     </div>

@@ -1,16 +1,4 @@
 /* =============================================================================
    Page Contacto Styles | Custom [page_contacto.scss]
    ========================================================================== */
-.page_contacto{    
-    .form_submit{        
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
-        
-    @include afterTablet{
-        .form_submit{
-            @include centerCustom(50%);
-            margin-top: 30px;
-        }
-    }
-}
+.page_contacto{}

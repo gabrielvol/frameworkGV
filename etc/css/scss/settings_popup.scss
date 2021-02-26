@@ -25,7 +25,7 @@
 .pop_general{
     z-index: $zIndex_pop_general;
     
-    .pop_button_close{
+    .button_pop_close{
         position: absolute;
         z-index: $zIndex_button_topLevel;
         text-indent: -9999px;

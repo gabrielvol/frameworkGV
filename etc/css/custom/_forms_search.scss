@@ -16,13 +16,14 @@
             line-height: $form_input_search_lineHeight_BT;
         }
         
+/* // Form Submit  ---------------------------------------------------------- */
         &[type="submit"]{
             @include opacityCustomHover;
             @include bgSvg(form_searchSubmitBT, $form_input_search_bgSize_BT, center);
             position: absolute;
             top: 0;
             right: 0;
-            width: $form_submit_search_width_BT;
+            width: $button_form_submit_search_width_BT;
             border: $none;
         }
     }
@@ -40,7 +41,7 @@
             
             &[type="submit"]{
                 @include bgSvg(form_searchSubmitAT, $form_input_search_bgSize_AT, center);
-                width: $form_submit_search_width_AT;
+                width: $button_form_submit_search_width_AT;
             }            
         }
     }

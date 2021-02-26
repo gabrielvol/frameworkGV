@@ -23,7 +23,7 @@ form, fieldset, label, input, select, textarea, button,
 }
 
 fieldset, label, input, select, textarea, button,
-.msg_mandatory, .status, .form_label_name, .form_label_msg_error{
+.form_msg_mandatory, .form_status, .form_label_name, .form_label_msg_error{
     .mobileForm &{
         @include beforeTablet{
             width: $formLabel_width_BT;
@@ -54,7 +54,7 @@ fieldset, label, input, select, textarea, button,
 }
 
 fieldset, label, button,
-.msg_mandatory, .status, .form_label_name, .form_label_msg_error{
+.form_msg_mandatory, .form_status, .form_label_name, .form_label_msg_error{
     @include beforeTablet{
         .mobileForm &{
             font-size: $ftSize_paragraph_BT;
@@ -94,46 +94,47 @@ input, select, textarea{
     }
 }
 
+/* // Form Submit  ---------------------------------------------------------- */
 input[type="reset"],
 input[type="submit"],
 input[type="button"],
 form button{
     .mobileForm &{
         @include mobileOnly{
-            width: $form_submit_width_MO!important;
+            width: $button_form_submit_width_MO!important;
         }
 
         @include mobileLandscapeOnly{
-            width: $form_submit_width_MLO;   
+            width: $button_form_submit_width_MLO;   
         }
 
         @include beforeTablet{
-            height: $form_submit_height_BT;
-            line-height: $form_submit_lineHeight_BT;
+            height: $button_form_submit_height_BT;
+            line-height: $button_form_submit_lineHeight_BT;
         }
     }
     
     .tabletForm &{
         @include tabletOnly{
-            width: $form_submit_width_TO;
-            height: $form_submit_height_TO;
-            line-height: $form_submit_lineHeight_TO;
+            width: $button_form_submit_width_TO;
+            height: $button_form_submit_height_TO;
+            line-height: $button_form_submit_lineHeight_TO;
         }  
     }
 
     @include afterTabletLandscape{
         form &{
-            width: $form_submit_width_ATL;
-            height: $form_submit_height_ATL;
-            line-height: $form_submit_lineHeight_ATL;
+            width: $button_form_submit_width_ATL;
+            height: $button_form_submit_height_ATL;
+            line-height: $button_form_submit_lineHeight_ATL;
         }
     }
 
     @include afterDesktop{
         form &{
-            width: $form_submit_width_AD;
-            height: $form_submit_height_AD;
-            line-height: $form_submit_lineHeight_AD;
+            width: $button_form_submit_width_AD;
+            height: $button_form_submit_height_AD;
+            line-height: $button_form_submit_lineHeight_AD;
         }
     }
     
@@ -142,6 +143,7 @@ form button{
     }
 }
 
+/* // Form Input ------------------------------------------------------------ */
 form{
     input[type="text"],
     input[type="email"],
@@ -266,19 +268,20 @@ form{
         }
     }
     
+/* // Form Submit  ---------------------------------------------------------- */
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
     button{
-        @include transition(1s);
-        background-color: $form_submit_bgColour;
-        color: $form_submit_ftColour;
+        @include transition(0.7s);
+        background-color: $button_form_submit_bgColour;
+        color: $button_form_submit_ftColour;
 
         &:focus, &:hover{
-            background-color: $form_submit_bgColour_hover;
-            border-color: $form_submit_bdColour_hover;
-            color: $form_submit_ftColour_hover;
-            box-shadow: inset 0 0 0 $form_submit_bgColour_hover;
+            background-color: $button_form_submit_bgColour_hover;
+            border-color: $button_form_submit_bdColour_hover;
+            color: $button_form_submit_ftColour_hover;
+            box-shadow: inset 0 0 0 $button_form_submit_bgColour_hover;
         }
         
         &.white{

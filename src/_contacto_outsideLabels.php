@@ -1,9 +1,10 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/var/__main.var.inc.php');
     
-    $page_int                       = 1;
-//  $section_hasForm                = 1;
-    $section_has_mandatoryMsg_act    = 0;
+    $page_int           = 1;
+    $load_lightbox      = 0;
+    $section_hasForm                = 1;
+    $section_has_mandatoryMsg_act   = 0;
     
     $nav_pageCurrent = 0;
     
@@ -188,7 +189,7 @@
                     <label for="mensaje"><?php echo _("Mensaje"); ?> <span class="redColour">*</span></label>
                     <textarea name="mensaje" id="mensaje" class="mensaje" placeholder="<?php echo _("Escriba aqu&iacute; su mensaje"); ?>"><?php echo $_POST['mensaje']; ?></textarea>
 
-                    <input type="submit" value="<?php echo _('Enviar'); ?>" id="enviar" name="form_submit">
+                    <input type="submit" value="<?php echo _('Enviar'); ?>" id="enviar" name="button_form_submit">
                 </form>                
             </div>
 	</div>

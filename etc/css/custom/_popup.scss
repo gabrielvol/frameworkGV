@@ -26,11 +26,11 @@
     top: 80px;
     left: 50%;
     
-    .pop_button_close{
-        @include bgSvg(pop_button_close); 
+    .button_pop_close{
+        @include bgSvg(button_pop_close); 
         border-radius: 50%;
-        width: $pop_button_close_size!important;
-        height: $pop_button_close_size!important;
+        width: $button_pop_close_size!important;
+        height: $button_pop_close_size!important;
         background-size: 13px;
         border: 1px solid $bdGreyXD!important; 
 
@@ -46,14 +46,14 @@
     }
 
     @include beforeMobile600{
-        .pop_button_close{
+        .button_pop_close{
             top: -45px;
             right: 0;
         }
     }
 
     @include afterMobile600{
-        .pop_button_close{
+        .button_pop_close{
             top: -35px;
             right: -35px;
         } 
@@ -99,11 +99,11 @@
         padding: 20px;
     }
 
-    .pop_button_close{
+    .button_pop_close{
         @include positionTR(10px, 10px);
     }
 
-    .pop_submit{
+    .button_pop_submit{
         @include transition(1s);
         @include equalHeightAndLineHeight(35px);
         width: 40%;
@@ -141,7 +141,7 @@
             padding: 20px;
         }
 
-        .pop_button_close{
+        .button_pop_close{
             @include positionTR(10px, 10px);
         }
     }
@@ -177,10 +177,11 @@
     } 
 }
 
+/* // Form status message --------------------------------------------------- */
 .pop_formStatus{    
     h2{
         height: $auto;
-        font-weight: 600;
+        font-family: $form_pop_title_fontFamily;
         line-height: 1.2rem!important;
     }
     
