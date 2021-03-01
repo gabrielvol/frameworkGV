@@ -2331,7 +2331,7 @@ nav li:focus a, nav li:hover a {
       z-index: 8100;
       display: block !important;
       opacity: 1;
-      background-image: url("/nuevo/img/nav_button_hamb_open.svg");
+      background-image: url("/nuevo/img/button_hamb_open.svg");
       background-repeat: no-repeat;
       color: #333;
       font-family: Arial; }
@@ -2340,7 +2340,7 @@ nav li:focus a, nav li:hover a {
       z-index: 9900;
       display: none;
       background-color: #fff;
-      background-image: url("/nuevo/img/nav_button_hamb_close.svg");
+      background-image: url("/nuevo/img/button_hamb_close.svg");
       background-repeat: no-repeat;
       background-position: center center; }
     .nav_main .navAT {
