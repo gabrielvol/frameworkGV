@@ -392,7 +392,7 @@
                     <textarea name="data_mensaje__formName" id="data_mensaje__formName" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>"><?php echo $_POST['data_mensaje__formName']; ?></textarea>
                 </label>
 
-                <input type="submit" value="<?php echo _('Enviar'); ?>" name="button_form_submit__formName" class="button_form_submit__formName">
+                <input type="submit" value="<?php echo _('Enviar'); ?>" name="button_form_submit__formName" class="button_form_submit button_form_submit__formName">
             </form>
         </div>
     </div>

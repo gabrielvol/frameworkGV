@@ -23,7 +23,7 @@
     
     $form_status_msg_error_globalA__formName   = _('Hubo un error al enviar el mensaje.');
     $form_status_msg_error_globalB__formName   = _('Intente nuevamente m&aacute;s tarde.');
-    $form_status_msg_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_recipient_pop_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_recipient_pop .'</a>.';
+    $form_status_msg_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_msg_error_recipient_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_status_msg_error_recipient .'</a>.';
     
     //--------------------------------------------------------------------------
     // Status ini
@@ -393,6 +393,12 @@
             $form_span_errorClass_data_pais__formName          = "active";
             $form_input_errorClass_data_pais__formName         = "invalidField";
             $form_input_autofocus_data_pais__formName           = "autofocus";
+            
+        } elseif (empty($_POST["data_celular__formName"])) {
+            $form_label_msg_error_data_celular__formName        = $formSend_msg_error_data_celular__formName;
+            $form_span_errorClass_data_celular__formName      = "active";
+            $form_input_errorClass_data_celular__formName     = "invalidField";
+            $form_input_autofocus_data_celular__formName       = "autofocus";
             
         } elseif (empty($_POST["data_telefono__formName"])) {
             $form_label_msg_error_data_telefono__formName        = $formSend_msg_error_data_telefono__formName;
