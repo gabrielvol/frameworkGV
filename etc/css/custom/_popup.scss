@@ -60,6 +60,45 @@
     }
 }
 
+.pop_form{
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: $bgWhite;
+    border-radius: 12px;
+    height: 70vh;
+    
+    &,
+    .button_pop_close{
+        box-shadow: $bxShadow_main;
+    }
+    
+    .mobileForm{ 
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+        
+    @include mobileOnly{
+        width: $pop_form_width_MO;
+        margin-left: calc(-1 * calc(#{$pop_form_width_MO} / 2));
+    }
+
+    @include afterMobileLandscape{
+        width: $pop_form_width_AML;
+        margin-left: calc(-1 * calc(#{$pop_form_width_AML} / 2));
+    }
+
+    @include afterMobile600{
+        width: $pop_form_width_600;
+        margin-left: calc(-1 * calc(#{$pop_form_width_600} / 2));
+    }
+    
+    @include afterTablet{
+        width: $pop_form_width_AT;
+        margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
+    }
+}
+
 .pop_warning{
     /* CSS para usar centerPopup
         @include centerPopup(100px,100px,50%);
@@ -178,7 +217,7 @@
 }
 
 /* // Form status message --------------------------------------------------- */
-.pop_formStatus{    
+.pop_formStatus{
     h2{
         height: $auto;
         font-family: $form_pop_title_fontFamily;

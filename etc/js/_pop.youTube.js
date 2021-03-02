@@ -37,7 +37,7 @@ $(document).ready(function () {
         $(this).closest('body').find('.pop_general iframe').attr('src', '');
     });
     
-    $('.pop_button_close').click(function () {
+    $('.button_pop_close').click(function () {
         $(this).closest('.pop_general').addClass('displayNone');
         $(this).closest('.pop_general').find('iframe').attr('src', '');
         $(this).closest('body').find('.modal_video').addClass('displayNone');
