@@ -1,10 +1,10 @@
 <footer id="footer" class="<?php if($page_index == 0){ echo ' footer_index'; } ?>">        
     <a href="#site_top" class="button_siteTop pAbs indentedText" role="button" aria-pressed="false"><?php echo _("Subir al inicio"); ?></a>  
         
-    <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">
+    <img src="<?php echo $url_dir; ?>/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">
     
     <div class="logo_footer borderBox">
-        <img src="/nuevo/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">
+        <img src="<?php echo $url_dir; ?>/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">
     </div>
     <div class="footer_txt borderBox">
         <p class="footer_address">

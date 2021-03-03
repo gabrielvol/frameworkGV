@@ -1,5 +1,6 @@
 <?php
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/var/__main.var.inc.php');
+    $url_dir = '/nuevo';
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
     $page_int           = 1;
     $load_lightbox      = 0;
@@ -18,27 +19,27 @@
 //  $openGraph_title_GB         = $site_title_GB;
     $openGraph_desc             = $openGraph_desc_global;
 //  $openGraph_desc_GB          = $openGraph_desc_global_GB;
-//  $openGraph_url_img          = $openGraph_url_img_sq .'/nuevo'; 
+//  $openGraph_url_img          = $openGraph_url_img_sq . $url_dir; 
     $openGraph_url_img          = $openGraph_url_img_sq;
     $openGraph_url_img_width    = $openGraph_img_sq_width;
     $openGraph_url_img_height   = $openGraph_img_sq_height;
     $openGraph_siteName         = $openGraph_siteName_global;
     
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.languageCheck.inc.php');   
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/gettext.locale.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/var/gettext.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');
 ?>
-<link href="/nuevo/_source/css/datepicker.css" rel="stylesheet">
-<script src="/nuevo/_source/js/jquery-ui-datepicker.js"></script>
+<link href="<?php echo $url_dir; ?>/_source/css/datepicker.css" rel="stylesheet">
+<script src="<?php echo $url_dir; ?>/_source/js/jquery-ui-datepicker.js"></script>
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/header.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/header.inc.php'); ?>
     <div id="main" class="page_int page_contacto" role="main">
         <div class="mobileForm tabletForm">
             <form method="post" class="mha" id="formID">
                 <?php
-                    include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/form.send.inc.php');
+                    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/form.send.inc.php');
                     echo $form_status_msg__formName;
                     echo $form_status_msg_pop__formName;
 
@@ -396,6 +397,6 @@
             </form>
         </div>
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/nuevo/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/footer.inc.php'); ?>
 </body>
 </html>

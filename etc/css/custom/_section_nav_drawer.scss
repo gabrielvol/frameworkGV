@@ -77,7 +77,7 @@
                 > .uk-active,
                 > .nav_item_current{
                     background-color: $nav_item_current_level0_bgColour_BT;
-                    background-image: url('/nuevo/img/#{$nav_arrows_item_current_level0}');
+                    background-image: url('#{$url_dir}/img/#{$nav_arrows_item_current_level0}');
                 }   
 
                 .nav_item_back{

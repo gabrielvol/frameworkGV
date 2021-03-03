@@ -493,7 +493,7 @@
             if(mail($formMail_recipient, $formMail_asunto, $formMail_texto, $formMail_headers)){
 
             //Redirect
-            //echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.gabrielvolonte.com.ar/nuevo/contacto-gracias.php">';
+            //echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.sitioweb.com/gracias.php">';
                 
 //INICIA MENSAJE OK EN $form_status_msg_
                 $form_status_msg__formName = '<p class="status ok" role="alert">'._("$form_status_msg_OK_globalA__formName").' '._("$form_status_msg_OK_globalB__formName").'</p>';

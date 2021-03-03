@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* =============================================================================
+   Dir Variables | Custom [var/_dir_var.scss]
+   ========================================================================== */
 /* // Activators ------------------------------------------------------------ */
 /* =============================================================================
    Classes Activators | Custom [act/main_act.scss]
@@ -222,17 +225,17 @@
 /* // Nav List -------------------------------------------------------------- */
 /* // Nav Drawer ------------------------------------------------------------ */
 /* =============================================================================
-   Nav Hamburger Variables | Custom [var/section_nav_hamburger.scss]
+   Button Nav Hamburger Variables | Custom [var/button_nav_hamburger_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Sizes ----------------------------------------------------------------- */
-/*___ Nav Accordion _____________________*/
-/* // Colours --------------------------------------------------------------- */
+/* // Button Hambuger Sizes ------------------------------------------------- */
+/*___ Button Hambuger Sizes Accordion ___*/
+/* // Button Hambuger Colours ----------------------------------------------- */
 /*___ Font ______________________________*/
 /*___ Backgrounds _______________________*/
 /*___ Borders ___________________________*/
-/* // Fonts ----------------------------------------------------------------- */
+/* // Button Hambuger Font -------------------------------------------------- */
 /* =============================================================================
    Language Sizes Variables | Custom [var/section_nav_language_va.scss]
    ========================================================================== */
@@ -609,8 +612,8 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url('/pathtofonts/examplefont.woff2') format('woff2'),
-         url('/pathtofonts/examplefont.woff') format('woff');
+    src: url('/nuevo/fonts/examplefont.woff2') format('woff2'),
+         url('/nuevo/fonts/examplefont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -2089,6 +2092,36 @@ article, article::before, article::after, details, details::before, details::aft
       top: -35px;
       right: -35px; } }
 
+.pop_form {
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  height: 70vh; }
+  .pop_form,
+  .pop_form .button_pop_close {
+    box-shadow: 0 0 10px 0 #666; }
+  .pop_form .mobileForm {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+  @media (max-width: 499px) {
+    .pop_form {
+      width: 320px;
+      margin-left: calc(-1 * calc(320px / 2)); } }
+  @media (min-width: 500px) {
+    .pop_form {
+      width: 490px;
+      margin-left: calc(-1 * calc(490px / 2)); } }
+  @media (min-width: 601px) {
+    .pop_form {
+      width: 590px;
+      margin-left: calc(-1 * calc(590px / 2)); } }
+  @media (min-width: 767px) {
+    .pop_form {
+      width: 650px;
+      margin-left: calc(-1 * calc(650px / 2)); } }
+
 .pop_warning {
   /* CSS para usar centerPopup
         @include centerPopup(100px,100px,50%);
@@ -2476,9 +2509,9 @@ nav li:focus a, nav li:hover a {
     .nav_main .button_hamb_close {
       width: 50px;
       height: 50px;
-      background-color: #fff;
+      background-color: transparent;
       background-size: 100%;
-      border: 1px solid #666 !important;
+      border: 1px solid transparent !important;
       text-indent: -9999px; }
     .nav_main .nav_main_ul {
       border-right: 1px solid #000; }

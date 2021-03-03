@@ -9,11 +9,11 @@
     $url_openGraph_global   = $url_global;
     
     
-    $url_index          = '/nuevo/';                //$nav_pageCurrent 0
-//    $url-seccion        = '/nuevo/seccion.php';     //$nav_pageCurrent 0
-//    $url-seccion        = '/nuevo/seccion.php';     //$nav_pageCurrent 0
-//    $url-seccion        = '/nuevo/seccion.php';     //$nav_pageCurrent 0
-    $url_contacto       = '/nuevo/contacto.php';    //$nav_pageCurrent 0
+    $url_index          = $url_dir .'/';                //$nav_pageCurrent 0
+//    $url-seccion        = $url_dir .'/seccion.php';     //$nav_pageCurrent 0
+//    $url-seccion        = $url_dir .'/seccion.php';     //$nav_pageCurrent 0
+//    $url-seccion        = $url_dir .'/seccion.php';     //$nav_pageCurrent 0
+    $url_contacto       = $url_dir .'/contacto.php';    //$nav_pageCurrent 0
     
 //    $url_inicio         = "#inicio";
 //    $url-seccion        = "#seccion"; 

@@ -48,7 +48,7 @@ nav{
             z-index: $zIndex_nav_open;
             display: $block;  
             opacity: 1;
-            background-image: url('/nuevo/img/button_hamb_open.svg');
+            background-image: url('#{$url_dir}/img/button_hamb_open.svg');
             background-repeat: no-repeat;
             color: $button_hamb_ftColour;
             font-family: $button_hamb_ftFamily;
@@ -59,7 +59,7 @@ nav{
             z-index: $zIndex_nav_close;  
             display: none;            
             background-color: $bgWhite;
-            background-image: url('/nuevo/img/button_hamb_close.svg');
+            background-image: url('#{$url_dir}/img/button_hamb_close.svg');
             background-repeat: no-repeat;
             background-position: center center; 
         }

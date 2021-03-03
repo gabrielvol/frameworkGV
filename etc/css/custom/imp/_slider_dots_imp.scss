@@ -68,7 +68,7 @@
             button{
                 display: block;
                 background-color: transparent;
-                background-image: url('/nuevo/img/button_slider_pag.svg');
+                background-image: url('#{$url_dir}/img/button_slider_pag.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100%;
@@ -81,7 +81,7 @@
                 @include opacityCustom(80);
                     
                 button{
-                    background-image: url('/nuevo/img/button_slider_pag_hover.svg');
+                    background-image: url('#{$url_dir}/img/button_slider_pag_hover.svg');
                 }
             }
 
@@ -89,7 +89,7 @@
                 @include opacityCustom(100);
                     
                 button{
-                    background-image: url('/nuevo/img/button_slider_pag_current.svg');
+                    background-image: url('#{$url_dir}/img/button_slider_pag_current.svg');
                 }
             }
         }

@@ -9,13 +9,13 @@
     </a>
 </li>
 <li class="nav_item_noLink_js">
-    <a href="<?php if($page_int == 1) { echo '/nuevo/index.php'; } ?>#seccion">
+    <a href="<?php if($page_int == 1) { echo $url_dir .'/index.php'; } ?>#seccion">
         <?php echo _("seccion"); ?>
     </a>
 </li>
 <!--Con gettext--> 
 <li class="<?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
-    <a href="/nuevo/<?php echo $href_xxx; ?> <?php if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?>" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a href="<?php echo $url_dir; ?>/<?php echo $href_xxx; ?> <?php if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?>" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?>
     </a>
 </li>

@@ -46,12 +46,12 @@
 @if $slider_arrows_act == "on"{
     .slickPrev{
         left: 2%;
-        background-image: url('/nuevo/img/button_slider_left.svg');
+        background-image: url('#{$url_dir}/img/button_slider_left.svg');
     }
 
     .slickNext{
         right: 2%;
-        background-image: url('/nuevo/img/button_slider_right.svg');
+        background-image: url('#{$url_dir}/img/button_slider_right.svg');
     }
 
     .slickPrev,
@@ -92,11 +92,11 @@
 @if $slider_arrows_carousel_act == "on"{
     .slick_carousel{
         .slickPrev{
-            background-image: url('/nuevo/img/button_carousel_left.svg');
+            background-image: url('#{$url_dir}/img/button_carousel_left.svg');
         }
 
         .slickNext{
-            background-image: url('/nuevo/img/button_carousel_right.svg');
+            background-image: url('#{$url_dir}/img/button_carousel_right.svg');
         }
         
         @include beforeTablet{

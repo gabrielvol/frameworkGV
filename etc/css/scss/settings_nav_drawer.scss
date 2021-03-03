@@ -75,11 +75,11 @@
                     
                     .nav_item_back{
                         .nav_TLI{
-                            background-image: url('/nuevo/img/#{$nav_arrows_item_back_TLI}');
+                            background-image: url('#{$url_dir}/img/#{$nav_arrows_item_back_TLI}');
                             color: $nav_item_back_TLI_ftColour;
 
                             &.open{
-                                background-image: url('/nuevo/img/#{$nav_arrows_item_back_TLI_openDR}'); 
+                                background-image: url('#{$url_dir}/img/#{$nav_arrows_item_back_TLI_openDR}'); 
                             }
                         } 
                     }
@@ -125,7 +125,7 @@
                         color: $nav_TLI_level1_ftColour_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$nav_arrows_TLI_level1_openDR}');
+                            background-image: url('#{$url_dir}/img/#{$nav_arrows_TLI_level1_openDR}');
                         }
                     }
                     
@@ -153,7 +153,7 @@
 
                     > .nav_item_current{
                         background-color: $nav_item_current_level1_bgColour_BT; 
-                        background-image: url('/nuevo/img/#{$nav_arrows_item_current_level1}');
+                        background-image: url('#{$url_dir}/img/#{$nav_arrows_item_current_level1}');
                         
                         a{
                             color: $nav_TLI_current_level1_ftColour_BT;
@@ -169,7 +169,7 @@
                         color: $nav_item_level2_ftColour_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$nav_arrows_TLI_level2_openDR}');
+                            background-image: url('#{$url_dir}/img/#{$nav_arrows_TLI_level2_openDR}');
                         }
                     }
                     
@@ -195,7 +195,7 @@
 
                     > .nav_item_current{
                         background-color: $nav_item_current_level2_bgColour_BT; 
-                        background-image: url('/nuevo/img/#{$nav_arrows_item_current_level2}'); 
+                        background-image: url('#{$url_dir}/img/#{$nav_arrows_item_current_level2}'); 
                         
                         a{
                             color: $nav_TLI_current_level2_ftColour_BT;
@@ -211,7 +211,7 @@
                         color: $nav_item_level2_ftColour_BT;
 
                         &.openDR{
-                            background-image: url('/nuevo/img/#{$nav_arrows_TLI_level3_openDR}');
+                            background-image: url('#{$url_dir}/img/#{$nav_arrows_TLI_level3_openDR}');
                         }
                     }
                     
@@ -237,7 +237,7 @@
 
                     > .nav_item_current{
                         background-color: $nav_item_current_level3_bgColour_BT;
-                        background-image: url('/nuevo/img/#{$nav_arrows_item_current_level3}'); 
+                        background-image: url('#{$url_dir}/img/#{$nav_arrows_item_current_level3}'); 
                         
                         a{
                             color: $nav_TLI_current_level3_ftColour_BT;
