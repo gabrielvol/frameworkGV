@@ -1,9 +1,10 @@
 /* =============================================================================
-   Global Styles | Custom [global.scss]
+   Page Int Section Full Height Styles | Custom [page_int_headerFixed_imp.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
+// Imported in `[/custom/_global.scss]`
 
 
 
@@ -42,28 +43,40 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
-
-/* // Main Gobal Styles ----------------------------------------------------- */
-@import 'imp/page_int_section_fullHeight_imp';
-@import 'imp/page_int_headerFixed_imp';
-
-#main{
-    @include beforeTablet{
-        @if $nav_accordion_act == "on"{
-            padding-top: $header_navAccordion_height_BT;
+#main{    
+    @include mobileOnly{
+        @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_MO;
+        }  
+    }
+    
+    @include afterMobileLandscape{
+        @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_AML;
+        }     
+    }
+    
+    @include mobileLandscapeOnly{
+        @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_MLO;
+        }      
+    }
+    
+    @include beforeTablet{        
+        @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_BT;
         }
     }
     
-    @include afterTablet{        
-        @if $nav_topper_act == "on"{
-            min-height: 700px;        
+    @include afterTablet{
+        @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_AT;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_ATL;
         }
     }
 }
-
-/* =============================================================================
-   Internas Global Styles | Custom [stylesGlobal.scss]
-   ========================================================================== */
-.page_int{}
-
-/* // Secondary Separator --------------------------------------------------- */
