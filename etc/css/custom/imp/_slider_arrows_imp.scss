@@ -87,6 +87,15 @@
             margin-top: calc(-1 * #{$slider_arrows_height_half_AT});
         }
     }
+
+    @include afterTabletLandscape{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_ATL;
+            height: $slider_arrows_height_ATL;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_ATL});
+        }
+    }
 }
      
 @if $slider_arrows_carousel_act == "on"{
@@ -110,9 +119,9 @@
             
             .slickPrev,
             .slickNext{
-                width: $carouselArrows_width_BT;
-                height: $carouselArrows_height_BT;
-                margin-top: calc(-1 * #{$carouselArrows_height_half_BT});  
+                width: $carousel_arrows_width_BT;
+                height: $carousel_arrows_height_BT;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_BT});  
             }
         }
         
@@ -127,9 +136,26 @@
             
             .slickPrev,
             .slickNext{
-                width: $carouselArrows_width_AT;
-                height: $carouselArrows_height_AT;
-                margin-top: calc(-1 * #{$carouselArrows_height_half_AT});
+                width: $carousel_arrows_width_AT;
+                height: $carousel_arrows_height_AT;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_AT});
+            }
+        }
+        
+        @include afterTabletLandscape{
+            .slickPrev{
+                left: calc(#{$slider_arrows_width_ATL} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$slider_arrows_width_ATL} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_ATL;
+                height: $carousel_arrows_height_ATL;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_ATL});
             }
         }
     }

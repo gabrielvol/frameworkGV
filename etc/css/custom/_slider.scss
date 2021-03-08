@@ -40,6 +40,11 @@
                 padding-right: $carousel_PH_AT;
                 padding-left: $carousel_PH_AT;
             }
+        
+            @include afterTabletLandscape{
+                padding-right: $carousel_PH_ATL;
+                padding-left: $carousel_PH_ATL;
+            }
         }
     }
 }
