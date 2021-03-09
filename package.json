@@ -1,6 +1,6 @@
 {
   "name": "frameworkgv",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "Framework de Gabriel Volonte",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,8 +20,20 @@
   "devDependencies": {
     "gulp": "4.0.2",
     "gulp-sass": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-cssnano": "latest",
-    "gulp-postcss": "latest"
-  }
+    "gulp-postcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest",
+    "cssnano": "latest"
+  },
+  "gulp-postcss": {
+    "parser": "sugarss",
+    "map": false,
+    "plugins": {
+      "autoprefixer": {},
+      "cssnano": {}
+    }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

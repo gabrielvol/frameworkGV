@@ -1774,11 +1774,21 @@ article, article::before, article::after, details, details::before, details::aft
     page-break-inside: avoid; } }
 
 /* =============================================================================
-   Global Styles | Custom [styles_global.scss]
+   Global Styles | Custom [global.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Main Gobal Styles ----------------------------------------------------- */
+/* =============================================================================
+   Page Int Section Full Height Styles | Custom [page_int_section_fullHeight_imp.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
+   Page Int Section Full Height Styles | Custom [page_int_headerFixed_imp.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Internas Global Styles | Custom [stylesGlobal.scss]
    ========================================================================== */

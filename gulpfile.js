@@ -4,8 +4,8 @@
 const { src, dest, watch, parallel } = require('gulp');
 const sass          = require('gulp-sass');
 const postcss       = require('gulp-postcss');
-const cssnano       = require('gulp-cssnano');
-const autoprefixer  = require('gulp-autoprefixer');
+const autoprefixer  = require('autoprefixer');
+const cssnano       = require('cssnano');
 
 
 /* // Compile sass into CSS ------------------------------------------------- */
@@ -19,10 +19,7 @@ function compileSass() {
 /* // CSSnano / PostCSS / Autoprefixer -------------------------------------- */
 function processCSS() {
     return src("./etc/css/compilation/styles.css")
-        .pipe(cssnano([,
-            postcss(),
-            autoprefixer({browsers: ['last 3 versions']})
-        ]))
+        .pipe(postcss())
         .pipe(dest("./src/css/"));
 }
 
