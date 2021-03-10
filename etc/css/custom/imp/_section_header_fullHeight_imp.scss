@@ -1,0 +1,112 @@
+/* =============================================================================
+   Header Full Height Styles | Custom [section_header_fullHeight_imp.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+// Imported in `[/custom/_section_header.scss]`
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+#header{
+    @if $page_index_fullHeight_act_ALL == "on" or $page_int_fullHeight_act_ALL == "on"{
+        height: $header_height_ALL;
+    }
+    
+    @if $page_index_only_fullHeight_act_ALL == "on"{
+        &.header_index{
+            height: $header_height_ALL;
+        }
+    }
+    
+    @include mobileOnly{
+        @if $page_index_fullHeight_act_MO == "on" or $page_int_fullHeight_act_MO == "on"{
+            height: $header_height_MO;
+        }
+    }
+    
+    @include afterMobileLandscape{
+        @if $page_index_fullHeight_act_AML == "on" or $page_int_fullHeight_act_AML == "on"{
+            height: $header_height_AML;
+        }
+    }
+    
+    @include mobileLandscapeOnly{
+        @if $page_index_fullHeight_act_AML == "on" or $page_int_fullHeight_act_AML == "on"{
+            height: $header_height_AML;
+        }
+    }
+
+    //@include navBT
+    @include beforeTablet{        
+        @if $page_index_fullHeight_act_BT == "on" or $page_int_fullHeight_act_BT == "on"{
+            height: $header_height_BT;
+        }
+    }
+    
+    //@include navAT
+    @include afterTablet{        
+        @if $page_index_fullHeight_act_AT == "on" or $page_int_fullHeight_act_AT == "on"{
+            height: $header_height_AT;
+        }
+    }
+    
+    @include tabletOnly{
+        @if $page_index_fullHeight_act_TO == "on" or $page_int_fullHeight_act_TO == "on"{
+            height: $header_height_TO;
+        }
+    }
+    
+    @include beforeTabletLandscape{
+        @if $page_index_fullHeight_act_BTL == "on" or $page_int_fullHeight_act_BTL == "on"{
+            height: $header_height_BTL;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        @if $page_index_fullHeight_act_ATL == "on" or $page_int_fullHeight_act_ATL == "on"{
+            height: $header_height_ATL;
+        }
+    }
+    
+    @include afterDesktop{
+        @if $page_index_fullHeight_act_AD == "on" or $page_int_fullHeight_act_AD == "on"{
+            height: $header_height_AD;
+        } 
+    }
+}

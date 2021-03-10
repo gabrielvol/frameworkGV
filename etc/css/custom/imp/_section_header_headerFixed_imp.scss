@@ -1,0 +1,148 @@
+/* =============================================================================
+   Header Fixed Styles | Custom [section_header_headerFixed_imp.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+// Imported in `[/custom/_section_header.scss]`
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+#header{        
+    @if $header_fixed_act_ALL == "on"{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: $bxShadow_header_fixed;
+    }
+    
+    @include mobileOnly{
+        @if $header_fixed_act_MO == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        }
+        
+        @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_MO;
+        }
+    }
+    
+    @include afterMobileLandscape{
+        @if $header_fixed_act_AML == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        }
+        
+        @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_AML;
+        }
+    }
+    
+    @include mobileLandscapeOnly{
+        @if $header_fixed_act_MLO == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        }
+        
+        @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_MLO;
+        }
+    }
+
+    //@include navBT
+    @include beforeTablet{        
+        @if $header_fixed_act_BT == "on"{
+            height: $header_height_BT;
+            box-shadow: $bxShadow_header_fixed;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        
+            &.topperShadow{
+                box-shadow: 0 0 7px $black;
+            }
+        } 
+        
+        @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL{
+            &.navDrawer_open{}
+        }   
+    }
+    
+    //@include navAT
+    @include afterTablet{        
+        @if $header_fixed_act_AT == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        
+            &.topperShadow{
+                box-shadow: 0 0 7px $black;
+            }
+        }
+        
+        @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_AT;
+        }
+    }
+    
+    @include afterTabletLandscape{
+        @if $header_fixed_act_ATL == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        
+        @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_ATL;
+        }
+    }
+}
