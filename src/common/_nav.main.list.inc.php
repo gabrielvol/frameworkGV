@@ -1,10 +1,10 @@
-<li class="<?php if($nav_pageCurrent == 0) { echo 'visuallyHidden nav_item_current'; } ?>">
-    <a <?php echo $href_index; ?> <?php if($nav_pageCurrent == 0) { echo 'aria-current="page"'; } ?>>
+<li class="<?php if($nav_pageCurrent == 1) { echo 'visuallyHidden nav_item_current'; } ?>">
+    <a <?php echo $href_index; ?> <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?>
     </a>
 </li>
-<li class="nav_item_contacto <?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
-    <a <?php echo $href_xxx; ?> <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+<li class="nav_item_contacto <?php if($nav_pageCurrent == 2) { echo 'nav_item_current'; } ?>">
+    <a <?php echo $href_xxx; ?> <?php if($nav_pageCurrent == 2) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?>
     </a>
 </li>
@@ -15,7 +15,7 @@
 </li>
 <!--Con gettext--> 
 <li class="<?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
-    <a href="<?php echo $url_dir; ?>/<?php echo $href_xxx; ?> <?php if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?>" <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
+    <a <?php echo $href_xxx; ?> <?php if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?> <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("seccion"); ?>
     </a>
 </li>

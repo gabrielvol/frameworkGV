@@ -5,7 +5,7 @@
     $page_index         = 1;
     $load_lightbox      = 0;
     
-    $nav_pageCurrent    = 0;
+    $nav_pageCurrent    = 1;
     
     $site_title         = $site_name_full;
 //  $site_title_GB      = $site_name_full;
@@ -26,7 +26,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');?>." />
 ?>
 </head>
 <body>

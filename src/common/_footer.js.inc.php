@@ -21,7 +21,7 @@
 */ ?>
 
 
-<?php endif; if($nav_pageCurrent == 0):
+<?php endif; if($nav_pageCurrent == 1):
 /* // Home
 <script src="<?php echo $url_dir; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_dir; ?>/js/_aaaaaa.js"></script>

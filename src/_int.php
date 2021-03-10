@@ -5,8 +5,8 @@
     $page_int               = 1;
     $load_lightbox          = 0;
     
-    $nav_pageCurrent        = 1;
-    $nav_pageCurrent_int    = 0;
+    $nav_pageCurrent        = 2;
+    $nav_pageCurrent_int    = 200;
     
     $site_title             = "PaginaInterna | ". $site_name_title;
 //  $site_title_GB          = "PaginaInterna | ". $site_name_title;
@@ -27,7 +27,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');?>." />
 ?>
 </head>
 <body>

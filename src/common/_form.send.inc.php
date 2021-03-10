@@ -503,7 +503,7 @@
 //INICIA MENSAJE OK EN POPUP
                 $form_status_msg_pop__formName = '<div class="pop_general pop_warning pop_formStatus borderBox pal" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="button_pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="button_pop_close pAbs hover_grow_S_ani indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="'. $formPop_h2_ok_classes__formName .'">'._("$form_status_msg_OK_globalA__formName").'</h2>'
                         . '<p>'._("$form_status_msg_OK_globalB__formName").'</p>'
                         . '<button type="submit" class="button_pop_submit bgWhite mtl mha arial bold black alignCenter upperCase">'._("OK").'</button>'
@@ -550,7 +550,7 @@
 //INICIA MENSAJE ERROR EN POPUP
                 $form_status_msg_pop__formName = '<div class="pop_general pop_warning pop_formStatus borderBox pal" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="button_pop_close pAbs hoverGrowS indentedText">'._("Cerrar").'</button>'
+                        . '<button type="submit" class="button_pop_close pAbs hover_grow_S_ani indentedText">'._("Cerrar").'</button>'
                         . '<h2 id="formError" class="'. $formPop_h2_error_classes__formName .'">'._("$form_status_msg_error_globalA__formName").'</h2>'
                         . '<p>'._("$form_status_msg_error_globalB__formName").'</p>'
                         . '<p>'._("$form_status_msg_error_globalC__formName").'</p>'

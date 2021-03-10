@@ -77,7 +77,7 @@
 <meta property="og:image:type" content="image/jpg" />
 <meta property="og:type" content="<?php echo $openGraph_type; ?>" />
 <meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>" />
-<meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo 'es_AR'; } ?>" />
+<meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo $site_lang_locale; } ?>" />
 
 <!-- Facebook Open Graph -->
 <meta property="fb:app_id" content="123456789" />

@@ -1,17 +1,9 @@
 /* =============================================================================
    Footer Styles | Custom [section_footer.scss]
    ========================================================================== */
-#footer{
-    @if $page_index_fullHeight_act_ALL == "on" or $page_int_fullHeight_act_ALL == "on"{
-        height: $footer_height_ALL;
-    }
-    
-    @if $page_index_only_fullHeight_act_ALL{
-        &.footer_index{
-            height: $footer_height_ALL;
-        }
-    }
+@import 'imp/section_footer_fullHeight_imp';
 
+#footer{
 /* // Button Site Top ------------------------------------------------------- */
     .button_siteTop{
         @include squareSize(50px);
@@ -64,21 +56,28 @@
         .legal_studio{}
     }
     
-    @include mobileOnly{
-        @if $page_index_fullHeight_act_MO == "on" or $page_int_fullHeight_act_MO == "on"{
-            height: $footer_height_MO;
+    .logo_footer_container,
+    .logo_txt{
+        box-sizing: border-box;
+    }
+    
+    .logo_footer{
+        img{
+            display: block;
         }
-        
+    }
+    
+    @include mobileOnly{
         @if $footer_floatedContent_act_MO == "on"{
-            .logo_footer,
+            .logo_footer_container,
             .footer_txt{
                 float: left;
             }
             
-            .logo_footer{
+            .logo_footer_container{
                 width: $footer_logoFloated_width_MO; // footerSizes.scss
                 
-                .logoF{
+                .logo_footer{
                     width: 100%;
                 }
             }
@@ -88,37 +87,29 @@
             }    
             
         } @else {
-            .logoF{
+            .logo_footer{
                 width: $logo_width_footer_MO;
             }        
         }
     }
     
     @include afterMobileLandscape{
-        @if $page_index_fullHeight_act_MLO == "on" or $page_int_fullHeight_act_MLO == "on"{
-            height: $footer_height_MLO;
-        }
-        
-        .logoF{
+        .logo_footer{
             /* width: $logo_width_footer_MO; */
         }   
     }
     
     @include mobileLandscapeOnly{
-        @if $page_index_fullHeight_act_AML == "on" or $page_int_fullHeight_act_AML == "on"{
-            height: $footer_height_AML;
-        }
-        
         @if $footer_floatedContent_act_MLO == "on"{
-            .logo_footer,
+            .logo_footer_container,
             .footer_txt{
                 float: left;
             }
             
-            .logo_footer{
+            .logo_footer_container{
                 width: $footer_logoFloated_width_MLO; // footerSizes.scss
                 
-                .logoF{
+                .logo_footer{
                     width: 100%;
                 }
             }
@@ -127,35 +118,25 @@
                 width: calc(100% - #{$footer_logoFloated_width_MLO});  // footerSizes.scss
             }    
         } @else {
-            .logoF{
+            .logo_footer{
                 width: $logo_width_footer_MLO;
             }        
         }
     }
     
-    @include beforeTablet{
-        @if $page_index_fullHeight_act_BT == "on" or $page_int_fullHeight_act_BT == "on"{
-            height: $footer_height_BT;
-        }
-    }
-    
     @include afterTablet{
-        @if $page_index_fullHeight_act_AT == "on" or $page_int_fullHeight_act_AT == "on"{
-            height: $footer_height_AT;
-        }
-        
         @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_AT == "on"{
-            .logo_footer,
+            .logo_footer_container,
             .footer_txt{
                 float: left;
             }
             
-            .logo_footer{
+            .logo_footer_container{
                 width: $footer_logoFloated_width_AT; // footerSizes.scss
                 padding-right: 20px;
                 padding-left: 20px;
                 
-                .logoF{
+                .logo_footer{
                     width: 100%;
                 }
             }
@@ -165,23 +146,13 @@
             }
 
         } @else {
-            .logoF{
+            .logo_footer{
                 width: $logo_width_footer_AT;
             }  
         }
     }
     
-    @include tabletOnly{
-        @if $page_index_fullHeight_act_TO == "on" or $page_int_fullHeight_act_TO == "on"{
-            height: $footer_height_TO;
-        }
-    }
-    
     @include beforeTabletLandscape{
-        @if $page_index_fullHeight_act_BTL == "on" or $page_int_fullHeight_act_ATL == "on"{
-            height: $footer_height_ATL;
-        }
-        
         .footer_address{
             a{
                 text-decoration: underline;
@@ -190,10 +161,6 @@
     }
     
     @include afterTabletLandscape{
-        @if $page_index_fullHeight_act_ATL == "on" or $page_int_fullHeight_act_ATL == "on"{
-            height: $footer_height_ATL;
-        }
-        
         .footer_address{
             a{
                 &:focus, &:hover{
@@ -201,11 +168,5 @@
                 }
             }
         }        
-    }
-    
-    @include afterDesktop{
-        @if $page_index_fullHeight_act_AD == "on" or $page_int_fullHeight_act_AD == "on"{
-            height: $footer_height_AD;
-        }       
     }
 }

@@ -90,8 +90,8 @@ $fontStack_map:(
 ///-- Primero la fuente principal
     $fontFamily_main_global,
 ///-- En segundo lugar siguen las fuentes Arial, Roboto y Times New Roman,
-///-- si alguna esta asignada a la variable `$ftFamilia_global`, la misma debe
-///-- estar comentada a continuacion. 
+///-- si alguna esta asignada a la variable `$fontFamily_main_global`, la misma
+///-- debe estar comentada a continuacion. 
     $arial, 
     $roboto,
 //    $timesNewRoman,

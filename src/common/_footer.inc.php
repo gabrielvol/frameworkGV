@@ -1,17 +1,17 @@
 <footer id="footer" class="<?php if($page_index == 0){ echo ' footer_index'; } ?>">        
     <a href="#site_top" class="button_siteTop pAbs indentedText" role="button" aria-pressed="false"><?php echo _("Subir al inicio"); ?></a>  
         
-    <img src="<?php echo $url_dir; ?>/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">
+    <img src="<?php echo $url_dir; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full ?>." />
     
-    <div class="logo_footer borderBox">
-        <img src="<?php echo $url_dir; ?>/img/logo.svg" class="logoF displayBlock" alt="<?php echo $site_name_full ?>.">
+    <div class="logo_footer_container">
+        <img src="<?php echo $url_dir; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full ?>." />
     </div>
-    <div class="footer_txt borderBox">
+    <div class="footer_txt">
         <p class="footer_address">
             <a href="<?php echo $site_address_PRINCIPAL_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
         </p>
-        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <?php echo $site_tel_PRINCIPAL_formatted ?></p>
-        <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_href_EMAILA ?>><?php echo $site_email_address_EMAILA ?></a></p>
+        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PRINCIPAL_call_href; ?>> <?php echo $site_tel_PRINCIPAL_formatted ?></a></p>
+        <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_href_EMAILA ?>> <?php echo $site_email_address_EMAILA ?></a></p>
     </div>  
     
     <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
@@ -26,7 +26,7 @@
         <a href="<?php echo $site_address_PRINCIPAL_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
     </p>
     
-    <p><?php echo _("Tel&eacute;fono"); ?>: <?php echo $site_tel_PRINCIPAL_formatted ?></p>
+    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PRINCIPAL_call_href; ?>> <?php echo $site_tel_PRINCIPAL_formatted ?></a></p>
     
     <p><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_href_EMAILA ?>><?php echo $site_email_address_EMAILA ?></a></p>
     

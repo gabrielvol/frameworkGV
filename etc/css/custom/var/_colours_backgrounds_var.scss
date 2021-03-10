@@ -75,7 +75,6 @@ $bgErrorColour:     map-get($backgroundColours_map, Error);
 
 $bgWhite:           map-get($backgroundColours_map, White);
 $bgBlack:           map-get($backgroundColours_map, Black);
-//$bgRedColour:       map-get($backgroundColours_map, RedColour);
 
 //$bgGreenSystem3XL:  map-get($backgroundColours_map, GreenSystem3XL);
 //$bgGreenSystem2XL:  map-get($backgroundColours_map, GreenSystem2XL);
@@ -93,6 +92,8 @@ $bgGreyD:           map-get($backgroundColours_map, GreyD);
 $bgGreyXD:          map-get($backgroundColours_map, GreyXD);
 $bgGrey2XD:         map-get($backgroundColours_map, Grey2XD);
 //$bgGrey3XD:         map-get($backgroundColours_map, Grey3XD);
+
+//$bgRedColour:       map-get($backgroundColours_map, RedColour);
 
 /*___ Declaramos las var para colores de fondo _*/
 $bgColour_body:        $bgWhite;    

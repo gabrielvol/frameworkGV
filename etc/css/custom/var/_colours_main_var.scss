@@ -112,7 +112,6 @@ $black_grad_80:     rgba(0, 0, 0, 0.8);
 $black_grad_90:     rgba(0, 0, 0, 0.9);
 
 $errorColour:       map-get($colours_map_merged, errorColour);
-//$redColour:         map-get($colours_map_merged, redColour);
 
 //$greenSystem3XL:    map-get($colours_map_merged, greenSystem3XL);
 //$greenSystem2XL:    map-get($colours_map_merged, greenSystem2XL);
@@ -131,6 +130,8 @@ $greyD:             map-get($colours_map_merged, greyD);
 $greyXD:            map-get($colours_map_merged, greyXD);
 $grey2XD:           map-get($colours_map_merged, grey2XD);
 //$grey3XD:           map-get($colours_map_merged, grey3XD);
+
+//$redColour:         map-get($colours_map_merged, redColour);
 
 ///**Anchor Colours Light:** 
     ///Aquí se agregan los colores para las anclas dentro de un párrafo con color CLARO, de este mapa se creará una clase por cada color con el mixin **anchorColoursLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.white a{color: #fff}`. Generará las pseudoclases `:active` y `:visited` con el mismo valor. Las pseudoclases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$anchor_ftColours_map_light_darkenValue` debajo del mapa. 

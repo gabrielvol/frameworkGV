@@ -73,7 +73,6 @@ $bdError:           map-get($borderColours_map, error);
 
 $bdWhite:           map-get($borderColours_map, white);
 $bdBlack:           map-get($borderColours_map, black);
-//$bdRedColour:       map-get($borderColours_map, redColour);
 
 //$bdGrey4XL:         map-get($borderColours_map, grey4XL);
 //$bdGrey3XL:         map-get($borderColours_map, grey3XL);
@@ -85,6 +84,8 @@ $bdGreyD:           map-get($borderColours_map, greyD);
 $bdGreyXD:          map-get($borderColours_map, greyXD);
 $bdGrey2XD:         map-get($borderColours_map, grey2XD);
 //$bdGrey3XD:         map-get($borderColours_map, grey3XD);
+
+//$bdRedColour:       map-get($borderColours_map, redColour);
 
 $bdColour_main_global:              $bdGrey;
 $bdColour_main_global_hover:        darken($bdColour_main_global, 15%);

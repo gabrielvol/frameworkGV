@@ -28,7 +28,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');?>." />
 ?>
 <link href="<?php echo $url_dir; ?>/_source/css/datepicker.css" rel="stylesheet">
 <script src="<?php echo $url_dir; ?>/_source/js/jquery-ui-datepicker.js"></script>

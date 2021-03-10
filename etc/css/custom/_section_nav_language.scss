@@ -8,6 +8,8 @@
         @include borderStyle($bdWhite, $language_flag_border_size);
         @include transition(0.3s);
         background-color: $nav_item_anchor_language_bgColour;
+        display: block;
+        box-sizing: border-box;
         
         @if $nav_language_flag_rounded_act == "on"{
             border-radius: 50%;

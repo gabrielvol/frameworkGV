@@ -1,5 +1,5 @@
 <?php
-    if($nav_pageCurrent == 0){ // Home
+    if($nav_pageCurrent == 1){ // Home
         include('pop.inc.php');
     }
     
