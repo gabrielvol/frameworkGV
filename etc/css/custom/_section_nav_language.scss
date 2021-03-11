@@ -4,12 +4,17 @@
 .nav_language_ul{
     z-index: $zIndex_language;
     
+    li{
+    }
+    
     a{
         @include borderStyle($bdWhite, $language_flag_border_size);
         @include transition(0.3s);
-        background-color: $nav_item_anchor_language_bgColour;
         display: block;
+        position: relative;
         box-sizing: border-box;
+        background-color: $nav_item_anchor_language_bgColour;
+        overflow: hidden;
         
         @if $nav_language_flag_rounded_act == "on"{
             border-radius: 50%;
@@ -42,7 +47,7 @@
             }
 
             & + li{
-                margin-left: $language_flag_sep_BT;
+                margin-left: 15px;
             }
         
             @if $nav_language_flag_rounded_act == "on"{
@@ -53,7 +58,25 @@
                 }
                 
                 img{
-                    @include centerAbsolute($language_flag_width_BT, $language_flag_height_BT);
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: $language_flag_width_BT;
+                    height: $language_flag_height_BT;
+                    margin-top: calc(-1 * calc(#{$language_flag_height_BT} / 2));
+                    margin-left: calc(-1 * calc(#{$language_flag_width_BT} / 2));
+                }
+                
+                &.flag_alignedLeft{
+                    img{
+                        top: 0;
+                        left: 0;
+                        width: auto;
+                        height: 100%;
+                        margin-top: auto;
+                        margin-left: auto;
+                    }
                 }
             }
         }
@@ -74,7 +97,7 @@
                     height: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_height_clicked_PT} + #{$nav_language_ul_height_clicked_PB});
                     padding-top: $nav_language_ul_height_clicked_PT;
                     padding-bottom: $nav_language_ul_height_clicked_PB;
-                    padding-left: 10px;
+                    padding-left: 0;
                     background-color: $nav_language_ul_bgColour_clicked;
                     
                 } @else {
@@ -94,7 +117,7 @@
                     }
                     
                     & + li{
-                        margin-left: 25px;
+                        margin-left: 0;
                     }
                 }
             }

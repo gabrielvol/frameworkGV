@@ -11,12 +11,12 @@
 ?>
 
 <ul class="nav_language_ul unstyled displayFlex">
-    <li>
+    <li class="flag_alignedLeft">
         <a href="<?php echo $url_dir; ?>/?l=en_US" class="hover_grow_M_ani">
             <img src="<?php echo $url_dir; ?>/img/flag_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>." />
         </a>
     </li>
-    <li> <!-- gettext_alt -->
+    <li class="flag_alignedLeft"> <!-- gettext_alt -->
         <a href="<?php echo $url_dir; ?>/?l=en" class="hover_grow_M_ani">
             <img src="<?php echo $url_dir; ?>/img/flag_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>." />
         </a>
@@ -26,7 +26,7 @@
             <img src="<?php echo $url_dir; ?>/img/flag_ar.svg" alt="<?php echo $gettext_switchMsg_ES; ?>." />
         </a>
     </li>
-    <li>
+    <li class="flag_alignedLeft">
         <a href="<?php echo $url_dir; ?>/?l=es_UY" class="hover_grow_M_ani">
             <img src="<?php echo $url_dir; ?>/img/flag_uy.svg" alt="<?php echo $gettext_switchMsg_ES; ?>." />
         </a>
