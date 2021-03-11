@@ -6,7 +6,7 @@
     $url_global         = 'http://www.'. $domain_global;
     $url_sec            = 'http://www.'. $domain_sec;
     
-    $url_openGraph_global   = $url_global;
+    $url_openGraph_global   = $url_global . $url_dir;
     
     
     $url_index          = $url_dir .'/';                //$nav_pageCurrent 0

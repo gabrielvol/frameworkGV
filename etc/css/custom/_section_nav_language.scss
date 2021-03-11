@@ -85,6 +85,7 @@
                 
                 li{
                     width: 50%;
+                    height: auto;
                     
                     a{
                         @include squareSize($language_flag_height_clicked);
