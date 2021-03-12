@@ -4,9 +4,6 @@
 .nav_language_ul{
     z-index: $zIndex_language;
     
-    li{
-    }
-    
     a{
         @include borderStyle($bdWhite, $language_flag_border_size);
         @include transition(0.3s);
@@ -22,6 +19,17 @@
             &:focus, &:hover{
                 box-shadow: 0 0 10px $white;
             }
+        }
+    }
+                
+    .flag_alignedLeft{
+        img{
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+            margin-top: auto;
+            margin-left: auto;
         }
     }
 
@@ -66,17 +74,6 @@
                     height: $language_flag_height_BT;
                     margin-top: calc(-1 * calc(#{$language_flag_height_BT} / 2));
                     margin-left: calc(-1 * calc(#{$language_flag_width_BT} / 2));
-                }
-                
-                &.flag_alignedLeft{
-                    img{
-                        top: 0;
-                        left: 0;
-                        width: auto;
-                        height: 100%;
-                        margin-top: auto;
-                        margin-left: auto;
-                    }
                 }
             }
         }
