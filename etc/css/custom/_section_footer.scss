@@ -75,7 +75,7 @@
             }
             
             .logo_footer_container{
-                width: $footer_logoFloated_width_MO; // footerSizes.scss
+                width: $footer_logoFloated_width_MO;
                 
                 .logo_footer{
                     width: 100%;
@@ -83,7 +83,7 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_MO});  // footerSizes.scss
+                width: calc(100% - #{$footer_logoFloated_width_MO}); 
             }    
             
         } @else {
@@ -94,8 +94,16 @@
     }
     
     @include afterMobileLandscape{
+/*
+        .logo_footer_container{
+            width: $logo_width_footer_AML;
+        } 
+*/
+        
         .logo_footer{
-            /* width: $logo_width_footer_MO; */
+/*
+            width: $logo_width_footer_AML;
+*/
         }   
     }
     
@@ -107,7 +115,7 @@
             }
             
             .logo_footer_container{
-                width: $footer_logoFloated_width_MLO; // footerSizes.scss
+                width: $footer_logoFloated_width_MLO;
                 
                 .logo_footer{
                     width: 100%;
@@ -115,11 +123,13 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_MLO});  // footerSizes.scss
+                width: calc(100% - #{$footer_logoFloated_width_MLO}); 
             }    
         } @else {
             .logo_footer{
+/*
                 width: $logo_width_footer_MLO;
+*/
             }        
         }
     }
@@ -132,7 +142,7 @@
             }
             
             .logo_footer_container{
-                width: $footer_logoFloated_width_AT; // footerSizes.scss
+                width: $footer_logoFloated_width_AT;
                 padding-right: 20px;
                 padding-left: 20px;
                 
@@ -142,7 +152,7 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_AT});  // footerSizes.scss
+                width: calc(100% - #{$footer_logoFloated_width_AT}); 
             }
 
         } @else {
@@ -153,6 +163,12 @@
     }
     
     @include beforeTabletLandscape{
+        .logo_footer_container{
+/*            
+            width: $footer_logoFloated_width_BTL;
+*/
+        }
+        
         .footer_address{
             a{
                 text-decoration: underline;
@@ -161,12 +177,33 @@
     }
     
     @include afterTabletLandscape{
+        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_ATL == "on"{
+            .logo_footer_container,
+            .footer_txt{
+                float: left;
+            }
+            
+            .logo_footer_container{
+                width: $footer_logoFloated_width_ATL;
+                padding-right: 20px;
+                padding-left: 20px;
+                
+                .logo_footer{
+                    width: 100%;
+                }
+            }
+            
+            .footer_txt{
+                width: calc(100% - #{$footer_logoFloated_width_ATL}); 
+            }
+        }
+        
         .footer_address{
             a{
                 &:focus, &:hover{
                     text-decoration: underline;
                 }
             }
-        }        
+        }         
     }
 }

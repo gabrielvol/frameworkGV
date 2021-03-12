@@ -82,7 +82,22 @@ $logo_width_footer_AML:     160px;
 $logo_width_footer_MLO:     50px;
 $logo_height_footer_MLO:    auto;
 
+$logo_width_footer_BT:      125px;
+
 $logo_width_footer_AT:      125px;
 $logo_height_footer_AT:     auto;
 
+$logo_width_footer_BTL:      230px;
+
+$logo_width_footer_ATL:     125px;
+
 // ? $logo_top_AT:               calc(#{$nav_height_AT} + 30px);
+
+/* // Logo Sizes Footer logoFloated ----------------------------------------- */
+$footer_logoFloated_width_MO:   $logo_width_footer_MO;
+$footer_logoFloated_width_AML:  $logo_width_footer_AML;
+$footer_logoFloated_width_MLO:  $logo_width_footer_MLO;
+$footer_logoFloated_width_BT:   $logo_width_footer_BT;
+$footer_logoFloated_width_AT:   $logo_width_footer_AT;
+$footer_logoFloated_width_BTL:  $logo_width_footer_BTL;
+$footer_logoFloated_width_ATL:  $logo_width_footer_ATL;
