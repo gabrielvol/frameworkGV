@@ -76,6 +76,8 @@ nav{
     }
     
     @include navAT{
+        background-color: $nav_nav_bgColour_AT; 
+        
         .button_hamb{
             display: $none;
         }
@@ -85,7 +87,7 @@ nav{
         }
         
         > ul{
-            background-color: $nav_bgColour_AT; 
+            background-color: $nav_ul_bgColour_AT; 
             
             > li{
                 background-color: $nav_item_bgColour_AT;

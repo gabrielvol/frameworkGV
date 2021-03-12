@@ -106,7 +106,8 @@ $nav_item_current_level3_bgColour_BT:   darken($nav_ul_level1_bgColour_BT, 5%);
 
 
 /*___ AT ________________________________*/
-$nav_bgColour_AT:                   $bgGrey;
+$nav_nav_bgColour_AT:               transparent;
+$nav_ul_bgColour_AT:                $bgGrey;
 
 $nav_item_bgColour_AT:              transparent;
 $nav_item_bgColour_hover:           $nav_item_bgColour_AT;
