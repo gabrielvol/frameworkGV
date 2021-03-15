@@ -74,9 +74,9 @@ $fontWeights_map:(
 
 
 /* // Variables de fuentes -------------------------------------------------- */
-$arial:     map-get($fontFamilies_map, arial);
-$roboto:    map-get($fontFamilies_map, roboto);
-//$timesNewRoman: map-get($fontFamilies_map, timesNewRoman);
+$arial:         map-get($fontFamilies_map, arial), $fontFamilies_sans_list_fallback;
+$roboto:        map-get($fontFamilies_map, roboto), $fontFamilies_sans_list_fallback;
+//$timesNewRoman: map-get($fontFamilies_map, timesNewRoman), $fontFamilies_serif_list_fallback;
 
 /*___ Creamos la variable de la fuente principal del sitio _*/
 $fontFamily_main_global:    $arial;

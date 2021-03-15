@@ -80,6 +80,25 @@ $fontFamilies_sans_list:
     map-get($fontFamilies_sans_map, sansSerif)
 ; 
 
+$fontFamilies_sans_list_fallback:
+    Arial,
+    Roboto,
+    map-get($fontFamilies_sans_map, sanFrancisco),
+    map-get($fontFamilies_sans_map, blinkMacSystemFont),
+    map-get($fontFamilies_sans_map, oxygen), 
+    map-get($fontFamilies_sans_map, ubuntu), 
+    map-get($fontFamilies_sans_map, cantarell), 
+    map-get($fontFamilies_sans_map, firaSans), 
+    map-get($fontFamilies_sans_map, droidSans), 
+    map-get($fontFamilies_sans_map, helveticaSafe), 
+    map-get($fontFamilies_sans_map, segoeUI),   
+    map-get($fontFamilies_sans_map, verdana),
+    map-get($fontFamilies_sans_map, tahoma),
+    map-get($fontFamilies_sans_map, lucidaGrande),
+    map-get($fontFamilies_sans_map, trebuchetMS),
+    map-get($fontFamilies_sans_map, sansSerif)
+; 
+
 $sanFrancisco:          map-get($fontFamilies_sans_map, sanFrancisco);
 $blinkMacSystemFont:    map-get($fontFamilies_sans_map, blinkMacSystemFont);   
 $oxygen:                map-get($fontFamilies_sans_map, oxygen);   
@@ -102,6 +121,13 @@ $fontFamilies_serif_map:(
 );
     
 $fontFamilies_serif_list: 
+    map-get($fontFamilies_serif_map, georgia),
+    map-get($fontFamilies_serif_map, palatino),
+    map-get($fontFamilies_serif_map, serif)
+;
+    
+$fontFamilies_serif_list_fallback:
+    'Times New Roman',
     map-get($fontFamilies_serif_map, georgia),
     map-get($fontFamilies_serif_map, palatino),
     map-get($fontFamilies_serif_map, serif)
