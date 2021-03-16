@@ -9,7 +9,7 @@
     
     $nav_pageCurrent = 0;
     
-    $site_title_GB     = "Contacto | ". $site_name_title;
+    $site_title     = "Contacto | ". $site_name_title;
 //  $site_title_GB  = "Contact | ". $site_name_title;
     
     $site_desc      = $site_desc_global;

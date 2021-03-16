@@ -131,9 +131,10 @@ $nav_topper_bgColour:       $bgBlack;
 
 /* // Border Colours -------------------------------------------------------- */
 /*___ BT ________________________________*/
-$nav_bdColour_BT:                  $bdBlack;   
-$nav_drawer_bdColourR:          $bdBlack;
-$nav_accordion_bdColour:              $bdGrey2XL;
+$nav_bdColour_BT:                   $bdBlack;   
+
+$nav_drawer_bdColourR:              $bdBlack;
+$nav_accordion_bdColour:            $bdGrey2XL;
   
 $nav_item_current_bdColour:         $bdGrey;
   
@@ -144,13 +145,13 @@ $nav_item_level3_bdColour_BT:       $nav_item_level2_bdColour_BT;
 
 $nav_subNav_borderB_BT:             $nav_ul_level1_bgColour_BT;
   
-$nav_bdColour_backMenu:            $nav_item_level1_bdColour_BT;
+$nav_bdColour_backMenu:             $nav_item_level1_bdColour_BT;
 
 
 /*___ AT ________________________________*/
-$nav_item_subNav_bdColour_AT:          $nav_item_level0_bdColour_BT;
+$nav_item_subNav_bdColour_AT:       $nav_item_level0_bdColour_BT;
 
 
 /*___ Topper ____________________________*/
-$nav_topper_bdColour:              $bdGreyXD;
+$nav_topper_bdColour:               $bdGreyXD;
 $nav_topper_item_current_bdColour:  $bdGrey;

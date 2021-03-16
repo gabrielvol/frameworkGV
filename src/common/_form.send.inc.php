@@ -25,6 +25,7 @@
     $form_status_msg_error_globalB__formName   = _('Intente nuevamente m&aacute;s tarde.');
     $form_status_msg_error_globalC__formName   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_msg_error_recipient_mailto .'" class="'. $formPop_anchor_classes__formName .'">'. $form_status_msg_error_recipient .'</a>.';
     
+    
     //--------------------------------------------------------------------------
     // Status ini
     //$form_status_msg__formName = '<p class="status ini">'.$form_status_msg_ini_global__formName.'</p>';

@@ -8,8 +8,12 @@
         & + li{}
     }   
     
-    a{
+    a,
+    img{
         display: block;
+    }
+    
+    a{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;

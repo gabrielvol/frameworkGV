@@ -49,7 +49,10 @@
     }
 }
 
-.slick{    
+.slick{
+    position: relative;
+    overflow: hidden;
+    
     &,
     .slick-slide{
         z-index: $zIndex_slider!important; 
@@ -57,10 +60,6 @@
 }
 
 .slider_main{
-/* (?)
-    overflow: hidden;
-*/
-
     &,
     .slick-list,
     .slick-track,

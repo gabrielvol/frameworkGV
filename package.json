@@ -25,6 +25,9 @@
     "autoprefixer": "latest",
     "cssnano": "latest"
   },
+  "dependencies": {
+    "yargs-parser": ">=5.0.0-security.0"
+  },
   "gulp-postcss": {
     "parser": "sugarss",
     "map": false,

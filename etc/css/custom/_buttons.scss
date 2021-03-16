@@ -114,12 +114,12 @@
 .button_whatsapp{    
     @include transition(1s);
     @include squareSize($button_whatsapp_size);
-    border-radius: 50%;
     position: fixed;
     z-index: $zIndex_button_topLevel;
-    bottom: 40px;
     right: 10px;
+    bottom: 40px;
     display: block;
+    border-radius: 50%;
     background-color: rgba(60, 209, 52, 0.85);
     background-image: url('/img/button_whatsapp.svg');
     background-repeat: no-repeat;
