@@ -16,7 +16,9 @@
         
         <ul class="irregular_ul unstyled displayFlex mha">
             <li class="pRel borderBox hoverGrowS">
-                <a href="/nuevo/img/img_01.jpg" data-lightbox="gallery" data-title="irregular" class="pAbs displayBlock"><img src="<?php echo $url_dir; ?>/img/img_01.jpg" alt="" class="displayBlock"></a>
+                <a href="<?php echo $url_dir; ?>/img/img_01.jpg" data-lightbox="gallery" data-title="irregular" class="pAbs displayBlock">
+                    <img src="<?php echo $url_dir; ?>/img/img_01.jpg" alt="" class="displayBlock">
+                </a>
             </li>
         </ul>
         

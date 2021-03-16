@@ -31,12 +31,12 @@
 <link rel="license" href="<?php echo $url_dir; ?>/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url_global; ?>/?l=es_AR" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global; ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global; ?>/?l=en_GB" hreflang="en">
-<link rel="alternate" href="<?php echo $url_global; ?>/?l=de_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url_global; ?>/?l=fr_FR" hreflang="fr">
-<link rel="alternate" href="<?php echo $url_global; ?>/?l=pt_BR" hreflang="pt">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=fr_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Información personal -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">

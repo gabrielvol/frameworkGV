@@ -10,7 +10,7 @@
         z-index: $zIndex_button_goToTop;
         top: 10px;
         right: 10px;
-        background-image: url('/img/button_siteTop.svg');
+        background-image: url('#{$url_dir}/img/button_siteTop.svg');
         background-repeat: no-repeat;
         background-position: center;
     }

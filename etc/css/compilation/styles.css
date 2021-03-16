@@ -612,8 +612,8 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url('/nuevo/fonts/examplefont.woff2') format('woff2'),
-         url('/nuevo/fonts/examplefont.woff') format('woff');
+    src: url('#{$url_dir}/fonts/examplefont.woff2') format('woff2'),
+         url('#{$url_dir}/fonts/examplefont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
