@@ -10,14 +10,14 @@
         display: block;
         position: relative;
         box-sizing: border-box;
-        background-color: $nav_item_anchor_language_bgColour;
+        background-color: $nav_language_item_anchor_bgColour;
         overflow: hidden;
         
         @if $nav_language_flag_rounded_act == "on"{
             border-radius: 50%;
 
             &:focus, &:hover{
-                box-shadow: 0 0 10px $white;
+                box-shadow: $nav_language_flagRounded_anchor_hover_bxShadow;
             }
         }
     }
