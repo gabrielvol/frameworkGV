@@ -31,3 +31,8 @@ b, strong,
     text-align-last: center;
 }
 .indentedText{text-indent: -9999px}
+.truncatedText{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
