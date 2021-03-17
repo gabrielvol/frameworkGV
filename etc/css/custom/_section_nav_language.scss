@@ -2,7 +2,7 @@
    Language Switch Styles | Custom [section_nav_language.scss]
    ========================================================================== */
 .nav_language_ul{
-    z-index: $zIndex_language;
+    z-index: $zIndex_nav_language_ul;
     
     a{
         @include borderStyle($bdWhite, $language_flag_border_size);
@@ -10,14 +10,14 @@
         display: block;
         position: relative;
         box-sizing: border-box;
-        background-color: $nav_language_item_anchor_bgColour;
+        background-color: $language_flag_anchor_bgColour;
         overflow: hidden;
         
         @if $nav_language_flag_rounded_act == "on"{
             border-radius: 50%;
 
             &:focus, &:hover{
-                box-shadow: $nav_language_flagRounded_anchor_hover_bxShadow;
+                box-shadow: $language_flag_rounded_anchor_hover_bxShadow;
             }
         }
     }
@@ -83,7 +83,7 @@
                 top: auto;
                 right: auto;
                 position: fixed;
-                z-index: $zIndex_language_clicked;
+                z-index: $zIndex_nav_language_ul_clicked;
                 
                 @if $language_menu_navDrawer_clicked_act == "on"{
                     left: 0;
