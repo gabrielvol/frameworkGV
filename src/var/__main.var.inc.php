@@ -7,8 +7,8 @@
     include('tels.var.inc.php');
     include('mails.var.inc.php');
     
-    include('header.act.inc.php');
-    include('nav.act.inc.php');
+    include('act/header.act.inc.php');
+    include('act/nav.act.inc.php');
 //    include('social.var.inc.php');
     
 //    include('files.var.inc.php');
