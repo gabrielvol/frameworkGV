@@ -64,7 +64,8 @@
         vertical-align: middle;
     }
     
-    .visuallyHidden {
+    .visuallyHidden,
+    .sr-only{
 /*
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -73,14 +74,14 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
    causes content to wrap 1 word per line:
    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-        border: 0;
+        position: absolute;
         clip: rect(0 0 0 0);
+        width: 1px;
         height: 1px;
+        border: $zero;
+        padding: $zero;
         margin: -1px;
         overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
         white-space: nowrap; /* 1 */
 
 /*
