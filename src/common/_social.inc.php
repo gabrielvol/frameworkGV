@@ -1,12 +1,12 @@
 <ul class="social unstyled displayFlex">
     <li class="social_em">
-        <a <?php echo $site_email_href_EMAILA; ?> class="hover_grow_L_ani">
+        <a <?php echo $site_email_EMAILA_href; ?> class="hover_grow_L_ani">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>.
             <img src="<?php echo $url_dir; ?>/img/social_em.svg" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
         </a>
     </li>
     <li class="social_em">
-        <a <?php echo $site_email_href_EMAILA; ?>><?php echo $site_email_address_EMAILA; ?></a>
+        <a <?php echo $site_email_EMAILA_href; ?>><?php echo $site_email_EMAILA_address; ?></a>
     </li>
     <li class="social_fb">
         <a href="<?php echo $social_facebook_url; ?>" class="hover_grow_L_ani">
