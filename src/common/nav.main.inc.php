@@ -6,10 +6,10 @@
     </ul>   
     
     <?php
-        // /var/act/nav.act.inc.php
+        // Ver `[/src/var/act/nav.act.inc.php]`
         if($nav_drawer_act == 1){
             echo '<ul class="nav_main_ul nav_main_ul_drawer unstyled clearfix" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">';
-            // /var/act/nav.act.inc.php
+            // Ver `[/src/var/act/nav.act.inc.php]`
             if ($nav_SECTION_hasSub_act == 1) {
                 echo '<li class="nav_item_back nav_item_hasSubNav nav_item_hasSubNav_level1 displayNoneAT">
                     <p id="nav_TLI_back" class="nav_TLI" aria-haspopup="true" aria-owns="nav_item_back_subNav" aria-controls="nav_item_back_subNav" role="button" aria-pressed="false">'. _("Men&uacute; principal").'</p>

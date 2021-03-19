@@ -122,7 +122,10 @@
 
 /* // Menu y logo ----------------------------------------------------------- */
 $header_logoNav_floated_act:            off;      
-$header_logoNav_floated_flexbox_act:    off;
+
+///-- Si se activa $header_logoNav_floated_flexbox_act el header debe tener un
+///-- container, el que va a tener los estilos de la clase .displayFlex
+$header_logoNav_floated_flexbox_act:    on;
     
     
 /* // Header ---------------------------------------------------------------- */

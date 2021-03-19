@@ -33,7 +33,7 @@
     <p class="copy_footer">&copy; Copyright <?php echo $date_year_actual ." - ". $site_name_full ?></p>
     
     <p class="copy_footer">
-        &copy; Copyright <?php echo $date_year_from . (($date_year_from != $date_year_actual) ? " - " . $date_year_actual : "") . $site_name_full; ?>
+        &copy; Copyright <?php echo $date_year_from . (($date_year_from != $date_year_actual) ? " - " . $date_year_actual : "") . ' '. $site_name_full; ?>
     </p>
     
     <div class="legal_footer">
