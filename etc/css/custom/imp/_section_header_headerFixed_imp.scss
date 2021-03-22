@@ -50,6 +50,8 @@
         right: 0;
         left: 0;
         box-shadow: $bxShadow_header_fixed;
+        
+        &.headerScrolled{}
     }
     
     @include mobileOnly{
@@ -59,6 +61,8 @@
             right: 0;
             left: 0;
             box-shadow: $bxShadow_header_fixed;
+        
+            &.headerScrolled{}
         }
         
         @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
@@ -73,6 +77,8 @@
             right: 0;
             left: 0;
             box-shadow: $bxShadow_header_fixed;
+        
+            &.headerScrolled{}
         }
         
         @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
@@ -87,6 +93,8 @@
             right: 0;
             left: 0;
             box-shadow: $bxShadow_header_fixed;
+        
+            &.headerScrolled{}
         }
         
         @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
@@ -107,6 +115,8 @@
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
+        
+            &.headerScrolled{}
         } 
         
         @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL{
@@ -126,6 +136,8 @@
             &.topperShadow{
                 box-shadow: 0 0 7px $black;
             }
+        
+            &.headerScrolled{}
         }
         
         @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
@@ -139,6 +151,8 @@
             top: 0;
             right: 0;
             left: 0;
+        
+            &.headerScrolled{}
         }
         
         @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{

@@ -1,4 +1,12 @@
 $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+        $('#header').addClass('headerScrolled');
+    } else {
+        $('#header').removeClass('headerScrolled');
+    }
+});
+
+$(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         $('#header').addClass('header_topper');
         $('.nav_nav').addClass('nav_topper');
