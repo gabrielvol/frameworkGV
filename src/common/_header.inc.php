@@ -10,7 +10,7 @@
     ?>
     <a href="<?php echo $url_dir; ?>/" class="<?php if($page_int == 1){ echo 'logo_header'; } ?>">   
         <?php if($page_int == 1 && $logo_bgImage_before == 1) { echo '<div class="logo_before">'; } ?>
-            <img src="<?php echo $url_dir; ?>/img/logo_header.svg" alt="<?php echo $site_name_full ?>.">   
+            <img src="<?php echo $url_dir; ?>/img/logo_header.svg" alt="<?php echo $site_name_full ?>." />   
         <?php if($page_int == 1 && $logo_bgImage_before == 1) { echo '</div>'; } ?>
     </a>
     <?php
@@ -30,7 +30,7 @@
             echo '?l=es_AR';
         } ?>" class="<?php if($page_int == 1){ echo 'logo_header'; } ?>">
         <?php if($page_int == 1 && $logo_bgImage_before == 1) { echo '<div class="logo_before">'; } ?>
-            <img src="<?php echo $url_dir; ?>/img/logo_header.svg" alt="<?php echo $site_name_full ?>.">
+            <img src="<?php echo $url_dir; ?>/img/logo_header.svg" alt="<?php echo $site_name_full ?>." />
         <?php if($page_int == 1 && $logo_bgImage_before == 1) { echo '</div>'; } ?>
     </a>
     <?php
