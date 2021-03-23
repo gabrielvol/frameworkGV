@@ -26,7 +26,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/gettext.var.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__gettext.var.inc.php');
 ?>
 </head>
 <body>
