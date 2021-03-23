@@ -1,5 +1,5 @@
 <?php    
-    include('misc.var.inc.php');
+//    include('date.var.inc.php');
     include('urls.var.inc.php');
     
     include('meta.var.inc.php');
