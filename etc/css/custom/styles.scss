@@ -2,9 +2,9 @@
 @import "var/dir_var";
 
 /* // Activators ------------------------------------------------------------ */
-@import "act/main_act";
 @import "act/responsive_act";
 @import "act/logo_act";
+@import "act/buttons_act";
 @import "act/forms_act";
 @import "act/slider_act";
 @import "act/text_act";
@@ -20,7 +20,7 @@
 @import "../scss/var_fonts";
 @import "../scss/var_absolute";
 @import "var/zindex_var";
-@import "var/container_var";
+@import "var/container_sizes_var";
 @import "var/helpers_var";
 @import "var/animations_var";
  

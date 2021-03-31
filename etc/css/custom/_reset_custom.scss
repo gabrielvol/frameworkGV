@@ -1,8 +1,3 @@
 /* =============================================================================
-   Custom Reset Styles | Custom [reset_custom.scss]
+   Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
    ========================================================================== */
-button{
-    @if $button_pointer_act == "on"{
-        cursor: pointer;
-    }
-}

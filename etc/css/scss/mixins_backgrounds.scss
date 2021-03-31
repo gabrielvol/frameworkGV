@@ -1,5 +1,5 @@
 /* =============================================================================
-   Background Mixins | Etc [mixinsBackgrounds.scss]
+   Background Mixins | Etc [/etc/css/scss/mixinsBackgrounds.scss]
    ========================================================================== */
 @mixin sprites($spritesMX_bgPosition, $spritesMX_bgColour: transparent){
     background: $spritesMX_bgColour url('#{$url_dir}/img/sprites.png') no-repeat $spritesMX_bgPosition;}

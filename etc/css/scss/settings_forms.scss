@@ -1,5 +1,5 @@
 /* =============================================================================
-   Form Settings | Etc [settings_forms.scss]
+   Form Settings | Etc [/etc/css/scss/settings_forms.scss]
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
 .form_label_name, .form_label_msg_error{
@@ -26,29 +26,29 @@ fieldset, label, input, select, textarea, button,
 .form_msg_mandatory, .form_status, .form_label_name, .form_label_msg_error{
     .mobileForm &{
         @include beforeTablet{
-            width: $formLabel_width_BT;
+            width: $form_label_width_BT;
         }
         
         @include mobileOnly{
-            width: $formLabel_width_MO;           
+            width: $form_label_width_MO;           
         }
     }
     
     @include tabletOnly{
         .tabletForm &{
-            width: $formLabel_width_TO;
+            width: $form_label_width_TO;
         }
     }
     
     @include afterTabletLandscape{
         form &{
-            width: $formLabel_width_ATL;
+            width: $form_label_width_ATL;
         }
     }
     
     @include afterDesktop{
         form &{
-            width: $formLabel_width_AD;
+            width: $form_label_width_AD;
         }
     }
 }
@@ -215,11 +215,11 @@ form{
     
     label{
         @include transition(1s);
-        color: $formLabel_ftColour;
+        color: $form_label_ftColour;
         font-weight: 400!important;
 
         &:focus, &:hover{
-            color: $formLabel_ftColour_hover;
+            color: $form_label_ftColour_hover;
         }
     }
         
@@ -355,7 +355,7 @@ form{
         width: $form_width_AD;
     }
     
-    @if $formLabel_inside_act == "off"{
+    @if $form_label_inside_act == "off"{
         label, legend{
             display: block\0/!important; /* IE8 + IE9 */
             padding-left: 7px;
@@ -364,22 +364,22 @@ form{
 
             @include beforeTablet{
                 .mobileForm &{
-                    @include equalHeightAndLineHeight($formLabel_height_BT);
+                    @include equalHeightAndLineHeight($form_label_height_BT);
                 }
             }
 
             @include tabletOnly{
                 .tabletForm &{
-                    @include equalHeightAndLineHeight($formLabel_height_TO);          
+                    @include equalHeightAndLineHeight($form_label_height_TO);          
                 }
             }
 
             @include afterTabletLandscape{
-                @include equalHeightAndLineHeight($formLabel_height_ATL);
+                @include equalHeightAndLineHeight($form_label_height_ATL);
             }
 
             @include afterDesktop{
-                @include equalHeightAndLineHeight($formLabel_height_AD);
+                @include equalHeightAndLineHeight($form_label_height_AD);
             }
         }
 
@@ -434,7 +434,7 @@ form{
         }
     }
     
-    @if $formLabel_inside_act == "on"{
+    @if $form_label_inside_act == "on"{
         fieldset, label{
             @include clearfix;
         }
@@ -464,22 +464,22 @@ form{
         .form_label_name{
             @include beforeTablet{
                 .mobileForm &{
-                    @include equalHeightAndLineHeight($formLabel_height_BT);
+                    @include equalHeightAndLineHeight($form_label_height_BT);
                 }        
             }
 
             @include tabletOnly{
                 .tabletForm &{
-                    @include equalHeightAndLineHeight($formLabel_height_TO);
+                    @include equalHeightAndLineHeight($form_label_height_TO);
                 }
             }
 
             @include afterTabletLandscape{
-                @include equalHeightAndLineHeight($formLabel_height_ATL);
+                @include equalHeightAndLineHeight($form_label_height_ATL);
             }
 
             @include afterDesktop{
-                height: $formLabel_height_AD; 
+                height: $form_label_height_AD; 
             }
         }
     }

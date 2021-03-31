@@ -1,5 +1,5 @@
 /* =============================================================================
-   Forms Styles | Custom [forms.scss]
+   Forms Styles | Custom [/etc/css/custom/forms.scss]
    ========================================================================== */
 
 /* // Form Fieldset --------------------------------------------------------- */
@@ -155,7 +155,7 @@ form{
             height: 100px;        
         }
 
-        @if $formLabel_inside_act == "off"{
+        @if $form_label_inside_act == "off"{
             @include afterTabletLandscape{
                 margin-bottom: $helpers_spacing_PM_large;
             }        
@@ -219,7 +219,7 @@ form{
     
 
 /* // Form Label ------------------------------------------------------------ */
-    @if $formLabel_inside_act == "on"{
+    @if $form_label_inside_act == "on"{
         fieldset,
         label{
             @include beforeTablet{

@@ -1,5 +1,5 @@
 /* =============================================================================
-   Opacity Mixins | Etc [mixinsOpacity.scss]
+   Opacity Mixins | Etc [/etc/css/scss/mixinsOpacity.scss]
    ========================================================================== */
 @mixin opacityCustom($opacityCustomMX_value){
     opacity: calc(#{$opacityCustomMX_value} / 100);

@@ -1,5 +1,5 @@
 /* =============================================================================
-   Form Sizes Variables | Custom [var/form_sizes.scss]
+   Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -53,24 +53,24 @@ $form_width_AD:       $form_width_ATL; //No debe llevar !important
 
 
 /* // Form Label ------------------------------------------------------------ */
-$formLabel_width_MO:      $form_width_MO;
-$formLabel_width_BT:      $hundred;
-$formLabel_width_TO:      $form_width_TO;
-$formLabel_width_ATL:     $form_width_ATL;
-$formLabel_width_AD:      $form_width_AD;
+$form_label_width_MO:      $form_width_MO;
+$form_label_width_BT:      $hundred;
+$form_label_width_TO:      $form_width_TO;
+$form_label_width_ATL:     $form_width_ATL;
+$form_label_width_AD:      $form_width_AD;
 
-$formLabel_height_BT:     30px;
-$formLabel_height_TO:     $formLabel_height_BT;
-$formLabel_height_ATL:    25px;
-$formLabel_height_AD:     $formLabel_height_ATL;
+$form_label_height_BT:     30px;
+$form_label_height_TO:     $form_label_height_BT;
+$form_label_height_ATL:    25px;
+$form_label_height_AD:     $form_label_height_ATL;
 
 
 /* // Form Input ------------------------------------------------------------ */
-$form_input_width_MO:      $formLabel_width_MO;
-$form_input_width_BT:      $formLabel_width_BT;
-$form_input_width_TO:      $formLabel_width_TO;
-$form_input_width_ATL:     $formLabel_width_ATL; //No debe llevar !important
-$form_input_width_AD:      $formLabel_width_AD; //No debe llevar !important
+$form_input_width_MO:      $form_label_width_MO;
+$form_input_width_BT:      $form_label_width_BT;
+$form_input_width_TO:      $form_label_width_TO;
+$form_input_width_ATL:     $form_label_width_ATL; //No debe llevar !important
+$form_input_width_AD:      $form_label_width_AD; //No debe llevar !important
 
 $form_input_height_BT:     45px;
 $form_input_height_TO:     $form_input_height_BT;

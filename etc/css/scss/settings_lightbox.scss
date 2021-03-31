@@ -1,5 +1,5 @@
 /* =============================================================================
-   Lightbox Settings | Etc [settings_lightbox.scss]
+   Lightbox Settings | Etc [/etc/css/scss/settings_lightbox.scss]
    ========================================================================== */
 body::after{
     content: url('#{$url_dir}/img/lightbox_close.png') url('#{$url_dir}/img/lightbox_loading.gif') url('#{$url_dir}/img/lightbox_prev.png') url('#{$url_dir}/img/lightbox_next.png');

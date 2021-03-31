@@ -1,10 +1,44 @@
 /* =============================================================================
-   Classes Activators | Custom [act/main_act.scss]
+   Classes Activators | Custom [/etc/css/custom/act/main_act.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de variables scss.
-
+// Activadores para botones.
+//
+// Listado:
+// 01 _ $buttons_coloured_act
+// 02 _ $button_pointer_act
+//
+//
+// 01 _ $buttons_coloured_act
+// Activa los if que se encuentran en `[/etc/css/scss/mixins_colours.scss]`
+//
+// Genera selectores de color para el elemento `button`, sus pseudoclases `focus`
+// y `:hover`, y la clase `.noHover`
+//
+// Ej. con color verdeAgua:
+// button.verdeAgua,
+// button.verdeAgua.noHover:focus,
+// button.verdeAgua.noHover:hover { color: #hex; }
+// button.verdeAgua:focus,
+// button.verdeAgua:hover { color: #hex; }
+//
+// También genera selectores para las pseudoclases `focus` y `:hover` del
+// elemento `button` con clase del tipo `.bgColour`.
+//
+// Ej. con color verdeAgua:
+// button.bgVerdeAgua:hover,
+// button.bgVerdeAgua:focus { background-color: #hex; }
+//
+//
+// 02 _ $button_pointer_act
+// Activa el if que se encuentra en `[/etc/css/custom/buttons.scss]`
+//
+// Genera la declaración `cursor: pointer;` para el elemento `button`.
+//
+// button{
+//    cursor: pointer;
+// }
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -44,9 +78,7 @@
 
 
 /* // Colours --------------------------------------------------------------- */
-    $colouredButtons_act:   off;
-    $colouredLabels_act:    off;
-    $colouredInputs_act:    off;
+$buttons_coloured_act:   off;
     
 /* // Pointers -------------------------------------------------------------- */
-    $button_pointer_act:    off;
+$button_pointer_act:    off;

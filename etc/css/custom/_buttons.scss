@@ -1,5 +1,5 @@
 /* =============================================================================
-   Button Styles | Custom [buttons.scss]
+   Button Styles | Custom [/etc/css/custom/buttons.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -41,6 +41,14 @@
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
+
+
+/* // General --------------------------------------------------------------- */
+button{
+    @if $button_pointer_act == "on"{
+        cursor: pointer;
+    }
+}
 
 
 /* // Call to Action -------------------------------------------------------- */

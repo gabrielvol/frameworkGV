@@ -1,9 +1,54 @@
 /* =============================================================================
-   Forms activators | Custom [act/forms_act.scss]
+   Forms activators | Custom [/etc/css/custom/act/forms_act.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de estilos scss.
+// Activadores para label e input.
+//
+// Listado:
+// 01 _ $form_label_inside_act
+// 02 _ $form_label_coloured_act
+// 03 _ $form_input_coloured_act
+//
+//
+// 01 _ $form_label_inside_act
+// Activa los if que se encuentran en `[/etc/css/custom/forms.scss]` y
+// `[/etc/css/scss/settings_forms.scss]`
+//
+// Genera estilos para campos dentro o fuera de la label, segun este activada.
+//
+//
+// 02 _ $form_label_coloured_act
+// Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
+//
+// Genera selectores de color para `label` y sus pseudoclases `focus` y `:hover`.
+//
+// Ej. con color verdeAgua:
+// label.verdeAgua,
+// label.verdeAgua:focus,
+// label.verdeAgua:hover { color: #hex; }
+//
+//
+// 03 _ $form_input_coloured_act
+// Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
+//
+// Genera selectores de color para los elementos `ìnput[type="submit"]` e
+// `input[type="file"]` con clase del tipo `.bgColour`.
+//
+// Ej. con color verdeAgua:
+// label.verdeAgua,
+// label.verdeAgua:focus,
+// label.verdeAgua:hover { color: #hex; }
+//
+// También genera selectores para las pseudoclases `focus` y `:hover` de los
+// elementos `ìnput[type="submit"]` e `input[type="file"]` con clase del tipo
+// `.bgColour`.
+//
+// Ej. con color verdeAgua:
+// input[type="submit"].bgVerdeAgua:hover,
+// input[type="submit"].bgVerdeAgua:focus { background-color: #hex; }
+// input[type="file"].bgVerdeAgua:hover,
+// input[type="file"].bgVerdeAgua:focus { background-color: #hex; }
 
 
 
@@ -43,4 +88,9 @@
 
 
 
-$formLabel_inside_act:   on;
+/* // Form Label ------------------------------------------------------------ */
+$form_label_inside_act:     on;
+$form_label_coloured_act:   off;
+
+/* // Forms Input ----------------------------------------------------------- */
+$form_input_coloured_act:   off;
