@@ -3,9 +3,12 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Activadores para label e input.
+// Activadores para elementos de form.
 //
-// Listado:
+// #activador #form #label #input #class #mixin #colour
+
+
+/* // Listado --------------------------------------------------------------- */
 // 01 _ $form_label_inside_act
 // 02 _ $form_label_coloured_act
 // 03 _ $form_input_coloured_act
@@ -21,7 +24,7 @@
 // 02 _ $form_label_coloured_act
 // Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
 //
-// Genera selectores de color para `label` y sus pseudoclases `focus` y `:hover`.
+// Genera selectores de color para `label` y sus pseudoclases `:focus` y `:hover`.
 //
 // Ej. con color verdeAgua:
 // label.verdeAgua,
@@ -32,15 +35,7 @@
 // 03 _ $form_input_coloured_act
 // Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
 //
-// Genera selectores de color para los elementos `ìnput[type="submit"]` e
-// `input[type="file"]` con clase del tipo `.bgColour`.
-//
-// Ej. con color verdeAgua:
-// label.verdeAgua,
-// label.verdeAgua:focus,
-// label.verdeAgua:hover { color: #hex; }
-//
-// También genera selectores para las pseudoclases `focus` y `:hover` de los
+// Genera selectores para las pseudoclases `:focus` y `:hover` de los
 // elementos `ìnput[type="submit"]` e `input[type="file"]` con clase del tipo
 // `.bgColour`.
 //

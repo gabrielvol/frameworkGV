@@ -4,7 +4,7 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene los mixins para generar clases y selectores de colores.
-// Los mapas que se encuentran en `[/custom/var/colours_main_var.scss]`.
+// Los mapas que se encuentran en `[/etc/css/custom/var/colours_main_var.scss]`.
 //
 // Listado de mixins:
 //
@@ -17,7 +17,7 @@
 // 07 _ backgroundColourHoverClassesGenerator
 //
 // Los mixins 1 a 5 se utilizan en `[/scss/settings_text.scss]`
-// Los mixins 6 y 7 se utilizan en `[/custom/includes_backgrounds.scss]`
+// Los mixins 6 y 7 se utilizan en `[/etc/css/custom/includes_backgrounds.scss]`
 //
 //
 // 01 _ colourLightClassesGenerator
@@ -34,7 +34,7 @@
 // .verdeAgua em { color: #hex; }
 //
 // Además genera selectores para un ancla con la clase,
-// sus pseudoclases `:active`, `:visited`, `focus` y `:hover`
+// sus pseudoclases `:active`, `:visited`, `:focus` y `:hover`
 // y el selector `.noHover`.
 //
 // Ej.
@@ -46,10 +46,10 @@
 // a.verdeAgua:focus,
 // a.verdeAgua:hover { color: #hex; }
 //
-// Tambien puede Genera selectores para `button` y `label`,
-// sus pseudoclases `focus` y `:hover`
+// Tambien puede generar selectores para `button` y `label`,
+// sus pseudoclases `:focus` y `:hover`
 // y el selector `.noHover` para el elemento `button`.
-// Se activa con `$buttons_coloured_act` y `$form_label_coloured_act`
+// Se activa con `$button_coloured_act` y `$form_label_coloured_act`
 //
 // Ej.
 // button.verdeAgua,
@@ -82,17 +82,17 @@
 //
 //
 // 07 _ backgroundColourHoverClassesGenerator
-// Por cada color genera selectores para las pseudoclases `focus` y `:hover`
+// Por cada color genera selectores para las pseudoclases `:focus` y `:hover`
 // de un ancla con clase del tipo `.bgColour`.
 //
 // Ej.
 // a.bgVerdeAgua:hover,
 // a.bgVerdeAgua:focus { background-color: #hex; }
 //
-// También puede Genera selectores para las pseudoclases `focus` y `:hover`
+// También puede generar selectores para las pseudoclases `:focus` y `:hover`
 // de los elementos `button`, `ìnput[type="submit"]` e `input[type="file"]` 
 // con clase del tipo `.bgColour`.
-// Se activa con `$buttons_coloured_act` y `$form_input_coloured_act`
+// Se activa con `$button_coloured_act` y `$form_input_coloured_act`
 //
 // Ej.
 // button.bgVerdeAgua:hover,
@@ -150,7 +150,7 @@
             &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
             &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_map_light_darkenValue);}
         }
-        @if $buttons_coloured_act == "on"{
+        @if $button_coloured_act == "on"{
             button.#{$colourLightClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
                 &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_map_light_darkenValue);}
@@ -173,7 +173,7 @@
             &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
             &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_map_dark_lightenValue);}
         }
-        @if $buttons_coloured_act == "on"{
+        @if $button_coloured_act == "on"{
             button.#{$colourDarkClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
                 &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_map_dark_lightenValue);}
@@ -196,7 +196,7 @@
             &.noHover:focus, &.noHover:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
             @extend %anchor_button_focusHoverCustom__#{$colourCustomHoverClassesGeneratorMX_colourClassName}
         }
-        @if $buttons_coloured_act == "on"{
+        @if $button_coloured_act == "on"{
             button.#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
                 @extend %anchor_button_focusHoverCustom__#{$colourCustomHoverClassesGeneratorMX_colourClassName}
@@ -235,7 +235,7 @@
         a.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
             &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
         }
-        @if $buttons_coloured_act == "on"{
+        @if $button_coloured_act == "on"{
             button.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
                 &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
             }

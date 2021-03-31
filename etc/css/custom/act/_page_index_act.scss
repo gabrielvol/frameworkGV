@@ -5,14 +5,17 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para Page Index.
 //
-// Listado:
+// #activador #header #footer #index #fullHeight
+
+
+/* // Listado --------------------------------------------------------------- */
 // 01 _ Full Height
 // 02 _ Index Only Full Height
 //
 //
 // 01 _ Full Height
-// Activa los if que se encuentran en `[/custom/imp/_page_index_fullHeight_imp.scss]`
-// y se importan en `[/custom/_page_index.scss]`.
+// Activa los if que se encuentran en `[/etc/css/custom/imp/_page_index_fullHeight_imp.scss]`
+// y se importan en `[/etc/css/custom/_page_index.scss]`.
 //
 // Ej. $page_index_fullHeight_act_AML = "on" imprime:
 // @media (min-width: 500px) {
@@ -23,10 +26,10 @@
 //
 //
 // 02 _ Index Only Full Height
-// Activa los if que se encuentran en `[/custom/imp/_page_index_fullHeight_imp.scss]`,
-// `[/custom/_section_header.scss]` y `[/custom/_section_footer.scss]`.
-// El archivo `[/custom/imp/_page_index_fullHeight_imp.scss]` se importa en 
-// `[/custom/_page_index.scss]`.
+// Activa los if que se encuentran en `[/etc/css/custom/imp/_page_index_fullHeight_imp.scss]`,
+// `[/etc/css/custom/_section_header.scss]` y `[/etc/css/custom/_section_footer.scss]`.
+// El archivo `[/etc/css/custom/imp/_page_index_fullHeight_imp.scss]` se importa
+// en `[/etc/css/custom/_page_index.scss]`.
 // Además de imprimir lo mismo que `01 Full Height` imprime:
 //
 // #header.header_index{
