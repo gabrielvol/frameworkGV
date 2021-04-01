@@ -49,7 +49,7 @@ $table_width_ATL: 970px;
     
 /* // Custom Sizes ---------------------------------------------------------- */
 $table_sizes_map_BT:(
-    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
+    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creara
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesBeforeTablet'
     
@@ -58,13 +58,13 @@ $table_sizes_map_BT:(
     
 );
 $table_sizes_map_AT:(
-    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
+    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creara
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesTablet'
     
 );
 $table_sizes_map_ATL:(
-    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creará
+    //Aquí se agregan los tamaños fijos de tablas, de este mapa se creara
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesTabletL'
     

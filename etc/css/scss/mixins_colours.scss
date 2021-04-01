@@ -140,20 +140,20 @@
 
 
 
-@mixin colourLightClassesGenerator($colours_map_light_darkenValue){
-    @each $colourLightClassesGeneratorMX_colourClassName, $colourLightClassesGeneratorMX_colourHexValue in $colours_map_light {
+@mixin colourLightClassesGenerator($colours_light_lightenValue){
+    @each $colourLightClassesGeneratorMX_colourClassName, $colourLightClassesGeneratorMX_colourHexValue in $colours_light_map {
         .#{$colourLightClassesGeneratorMX_colourClassName}{
             &, b, strong, i, em{color: $colourLightClassesGeneratorMX_colourHexValue;}
         }
         a.#{$colourLightClassesGeneratorMX_colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
-            &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_map_light_darkenValue);}
+            &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
         }
         @if $button_coloured_act == "on"{
             button.#{$colourLightClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
-                &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_map_light_darkenValue);}
+                &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
             }
         }
         @if $form_label_coloured_act == "on"{
@@ -163,20 +163,20 @@
         }
     }
 }
-@mixin colourDarkClassesGenerator($colours_map_dark_lightenValue){
-    @each $colourDarkClassesGeneratorMX_colourClassName, $colourDarkClassesGeneratorMX_colourHexValue in $colours_map_dark {
+@mixin colourDarkClassesGenerator($colours_dark_lightenValue){
+    @each $colourDarkClassesGeneratorMX_colourClassName, $colourDarkClassesGeneratorMX_colourHexValue in $colours_dark_map {
         .#{$colourDarkClassesGeneratorMX_colourClassName}{
             &, b, strong, i, em{color: $colourDarkClassesGeneratorMX_colourHexValue;}
         }
         a.#{$colourDarkClassesGeneratorMX_colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-            &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_map_dark_lightenValue);}
+            &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
         }
         @if $button_coloured_act == "on"{
             button.#{$colourDarkClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-                &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_map_dark_lightenValue);}
+                &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
             }
         }
         @if $form_label_coloured_act == "on"{
@@ -187,7 +187,7 @@
     }
 }
 @mixin colourCustomHoverClassesGenerator{
-    @each $colourCustomHoverClassesGeneratorMX_colourClassName, $colourCustomHoverClassesGeneratorMX_colourHexValue in $colours_map_custom_hover {
+    @each $colourCustomHoverClassesGeneratorMX_colourClassName, $colourCustomHoverClassesGeneratorMX_colourHexValue in $colours_custom_hover_map {
         .#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
             &, b, strong, i, em{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
         }
@@ -209,29 +209,29 @@
         }
     }
 }
-@mixin anchorColoursLightClassesGenerator($anchor_ftColours_map_light_darkenValue){
-    @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $anchor_ftColours_map_light {
+@mixin anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_lightenValue){
+    @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $colours_anchor_ftColours_light_map {
         .#{$anchorColoursLightClassesGeneratorMX_colourClassName}{            
             a, a:active, a:visited{color: $anchorColoursLightClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: darken($anchorColoursLightClassesGeneratorMX_colourHexValue, $anchor_ftColours_map_light_darkenValue);}
+            a:focus, a:hover{color: darken($anchorColoursLightClassesGeneratorMX_colourHexValue, $colours_anchor_ftColours_light_lightenValue);}
         }
     }
 }
-@mixin anchorColoursDarkClassesGenerator($anchor_ftColours_map_dark_lightenValue){
-    @each $anchorColoursDarkClassesGeneratorMX_colourClassName, $anchorColoursDarkClassesGeneratorMX_colourHexValue in $anchor_ftColours_map_dark {
+@mixin anchorColoursDarkClassesGenerator($colours_anchor_ftColours_dark_lightenValue){
+    @each $anchorColoursDarkClassesGeneratorMX_colourClassName, $anchorColoursDarkClassesGeneratorMX_colourHexValue in $colours_anchor_ftColours_dark_map {
         .#{$anchorColoursDarkClassesGeneratorMX_colourClassName}{            
             a, a:active, a:visited{color: $anchorColoursDarkClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: lighten($anchorColoursDarkClassesGeneratorMX_colourHexValue, $anchor_ftColours_map_dark_lightenValue);}
+            a:focus, a:hover{color: lighten($anchorColoursDarkClassesGeneratorMX_colourHexValue, $colours_anchor_ftColours_dark_lightenValue);}
         }
     }
 }
 @mixin backgroundColourClassesGenerator{
-    @each $backgroundColourClassesGeneratorMX_bgColourClassName, $backgroundColourClassesGeneratorMX_bgColourHexValue in $backgroundColours_map {
+    @each $backgroundColourClassesGeneratorMX_bgColourClassName, $backgroundColourClassesGeneratorMX_bgColourHexValue in $colours_backgrounds_map {
         .bg#{$backgroundColourClassesGeneratorMX_bgColourClassName}{background-color: $backgroundColourClassesGeneratorMX_bgColourHexValue;}
     }
 }
 @mixin backgroundColourHoverClassesGenerator{
-    @each $backgroundColourHoverClassesGeneratorMX_bgColourClassName, $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue in $backgroundColours_hover_map {
+    @each $backgroundColourHoverClassesGeneratorMX_bgColourClassName, $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue in $colours_backgrounds_hover_map {
         a.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
             &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
         }

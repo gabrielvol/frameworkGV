@@ -42,6 +42,7 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
 .container,
 .containerMO,
 .containerAML,
@@ -390,9 +391,7 @@
     }  
 }
     
-/* =============================================================================
-   Hack para Windows Phone | Etc [/etc/css/scss/settings_container.scss]
-   ========================================================================== */
+/* // Hack para Windows Phone ----------------------------------------------- */
 @media (max-width: 400px) {
     @-ms-viewport {
         width: 320px;

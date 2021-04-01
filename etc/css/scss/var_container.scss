@@ -1,5 +1,5 @@
 /* =============================================================================
-   Nav Fonts Variables | Custom [/etc/css/custom/var/section_nav_fonts.scss]
+   Container Variables | Etc [/etc/css/scss/var_container.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -42,26 +42,18 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+             
+/* // Container Center Negative Values -------------------------------------- */
+$container_value_half_MO:            calc(#{$container_value_MO} / 2);
+$container_value_half_ML:            calc(#{$container_value_ML} / 2);
+$container_value_half_T:             calc(#{$container_value_T} / 2);
+$container_value_half_TL:            calc(#{$container_value_TL} / 2);
+$container_value_half_D:             calc(#{$container_value_D} / 2);
+$container_value_half_DL:            calc(#{$container_value_DL} / 2);
 
-/*___ BT ________________________________*/
-$nav_ftFamily_BT:                       $ftFamily_main_global;
-$nav_item_current_ftFamily_BT:          $nav_ftFamily_BT;
-
-$nav_item_subNav_ftFamily_BT:           $nav_ftFamily_BT;
-$nav_item_subNav_current_ftFamily_BT:   $nav_item_subNav_ftFamily_BT;
-
-
-/*___ AT ________________________________*/
-$nav_ftFamily_AT:                       $ftFamily_main_global;
-$nav_item_current_ftFamily_AT:          $nav_ftFamily_AT;
-
-$nav_item_subNav_ftFamily_AT:           $nav_ftFamily_AT;
-$nav_item_subNav_current_ftFamily_AT:   $nav_item_subNav_ftFamily_AT;
-
-
-/*___ ATL _______________________________*/    
-$nav_ftFamily_ATL:                      $nav_ftFamily_AT;
-$nav_item_current_ftFamily_ATL:         $nav_item_current_ftFamily_AT;
-
-$nav_item_subNav_ftFamily_ATL:          $nav_item_subNav_ftFamily_AT;
-$nav_item_subNav_current_ftFamily_ATL:  $nav_item_current_ftFamily_ATL;
+$container_value_half_negative_MO:   calc(-1 * #{$container_value_half_MO});
+$container_value_half_negative_ML:   calc(-1 * #{$container_value_half_ML});
+$container_value_half_negative_T:    calc(-1 * #{$container_value_half_T});
+$container_value_half_negative_TL:   calc(-1 * #{$container_value_half_TL});
+$container_value_half_negative_D:    calc(-1 * #{$container_value_half_D});
+$container_value_half_negative_DL:   calc(-1 * #{$container_value_half_DL});

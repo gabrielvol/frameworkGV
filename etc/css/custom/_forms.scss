@@ -4,6 +4,10 @@
 
 /* // Form Fieldset --------------------------------------------------------- */
 fieldset{
+    &, &::before, &::after{
+        box-sizing: border-box;
+    }
+        
     & + fieldset{
         margin-top: 30px;
     }
@@ -75,7 +79,7 @@ fieldset{
 }
 
 
-/* // Form general ---------------------------------------------------------- */
+/* // Form input ------------------------------------------------------------ */
 form{
     input,
     select,
@@ -84,7 +88,11 @@ form{
         @include borderStyle($form_input_bdColour);
         padding-right: 10px;
         padding-left: 10px;
-        font-family: $form_input_fontFamily; 
+        font-family: $form_input_ftFamily; 
+        
+        &, &::before, &::after{
+            box-sizing: border-box;
+        }
     }
     
     input{
@@ -133,8 +141,8 @@ form{
             background-position: right center;
             background-size: 28px;
         }
-    }
-    
+    }   
+
     select{
         option{
             font-family: $arial;
@@ -162,9 +170,57 @@ form{
         }
     }
     
+/* // Form input placeholders ----------------------------------------------- */
+/*
+    input::input-placeholder,
+    textarea::input-placeholder{
+        color: $form_placeholder_ftColour;
+    }
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder{
+        color: $form_placeholder_ftColour;
+    }
+    input::-moz-placeholder,
+    textarea::-moz-placeholder{
+        color: $form_placeholder_ftColour;
+    }
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder{
+        color: $form_placeholder_ftColour;
+    }
+    input:-moz-placeholder,
+    textarea:-moz-placeholder{
+        color: $form_placeholder_ftColour;
+    }
+    input::-moz-placeholder,
+    textarea::-moz-placeholder{
+      opacity: 1;
+    }
+
+    input:focus::input-placeholder,
+    textarea:focus::input-placeholder{
+        color: $ftColour_main_global;
+    }
+    input:focus::-webkit-input-placeholder,
+    textarea:focus::-webkit-input-placeholder{
+        color: $ftColour_main_global;
+    }
+    input:focus::-moz-placeholder,
+    textarea:focus::-moz-placeholder{
+        color: $ftColour_main_global;
+    }
+    input:focus:-ms-input-placeholder,
+    textarea:focus:-ms-input-placeholder{
+        color: $ftColour_main_global;
+    }
+    input:-moz-placeholder,
+    textarea:-moz-placeholder{
+        color: $ftColour_main_global;
+    }
+*/    
 
 /* // Form invalid field ---------------------------------------------------- */
-    input, select, textarea{
+    input, select, textarea{        
         &.invalidField{
             background-image: url('#{$url_dir}/img/form_alert.svg');
             background-repeat: no-repeat;
@@ -214,11 +270,17 @@ form{
         border-radius: $bdRadius_global;
         margin-bottom: $zero;
         font-size: 1.4rem;
-        font-family: $button_form_submit_fontFamily;
+        font-family: $button_form_submit_ftFamily;
     }
     
 
 /* // Form Label ------------------------------------------------------------ */
+    label{
+        &, &::before, &::after{
+            box-sizing: border-box;
+        }
+    }
+        
     @if $form_label_inside_act == "on"{
         fieldset,
         label{
@@ -292,7 +354,7 @@ form{
         .form_label_name{
             display: block;
             padding-left: 7px;
-            font-family: $form_label_fontFamily;
+            font-family: $form_label_ftFamily;
             font-size: 1.1rem!important;
         }
 

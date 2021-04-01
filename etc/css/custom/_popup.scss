@@ -122,7 +122,7 @@
         background-color: transparent;
         padding: 0;
         color: $greyXD;
-        font-family: $fontFamily_main_global;
+        font-family: $ftFamily_main_global;
         text-align: center;
 
         & + p{
@@ -220,7 +220,7 @@
 .pop_formStatus{
     h2{
         height: $auto;
-        font-family: $form_pop_title_fontFamily;
+        font-family: $form_pop_title_ftFamily;
         line-height: 1.2rem!important;
     }
     

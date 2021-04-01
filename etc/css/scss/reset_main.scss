@@ -24,33 +24,7 @@ progress[value]{
     border: none;
 }
 
-    //Lists
-ul, ol, li, dd{
-    margin: 0;
-    padding: 0;
-}
-ul{
-    list-style: disc inside;
-}
-ol{
-    list-style: decimal inside;
-}
-
-    //Links
-a{
-    line-height: 1;
-    cursor: pointer;
-    img{
-        border: none;
-    }
-}
-a{
-    &, &:hover{
-        text-decoration: none;
-    }
-    
-}
-    //Horizontal rule
+/* // Horizontal rule ------------------------------------------------------- */
 hr {
     display: block;
     height: 1px;
@@ -60,7 +34,7 @@ hr {
     padding: 0;
 }
 
-    //Images
+/* // Images ---------------------------------------------------------------- */
 img{
     background-color: $img_bgColour_global;
     border: none;
@@ -76,28 +50,4 @@ img[src$=".png"], img[src$=".gif"], img[src$=".svg"]{
 figure{
     margin: 0;
     padding: 0;
-}
-
-    // Buttons
-button,
-input[type="button"],
-html input[type="button"]{
-    border: none;
-}
-
-button{}
-button::focus-inner{}
-input::focus-inner{}
-
-    // Selection
-::-moz-selection {
-    color: $txSelection_ftColour_global;
-    background-color: $txSelection_bgColour_global;
-    text-shadow: none;
-}
-
-::selection {
-    color: $txSelection_ftColour_global;
-    background-color: $txSelection_bgColour_global;
-    text-shadow: none;
 }

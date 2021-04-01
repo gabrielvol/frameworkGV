@@ -24,4 +24,4 @@ $page_PT_ATL:           0; //Con Header Fixed activado, si no es 0 hay que decla
 
 $header_PT_BT:              0;
 $header_PB_BT:              0;
-$header_navAccordion_height_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$logo_height_BT_navAcc});
+$header_navAccordion_height_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$logo_height_BT_navAccordion});

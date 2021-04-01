@@ -1,5 +1,5 @@
 /* =============================================================================
-   Classes Responsive | Common [classes_responsive.scss]
+   Useful Classes Responsive | Etc [/etc/css/scss/classes_useful_responsive.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -43,43 +43,40 @@
 
 
 
-/* =============================================================================
-   Mobile Only Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Mobile Only Classes --------------------------------------------------- */
 @include mobileOnly{    
-    @if $classes_pos_display_sizes_masks_cursors_act_MO == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_MO == "on"{
+/*___ Positioning _______________________*/
         .pRelMO{position: relative}
         .pAbsMO{position: absolute}
         .clearMO{clear: both}
 
-        //Sizing
-        .fullWidthMO{width: $hundred}
-        .halfWidthMO{width: $half}
-        .autoWidthMO{width: $auto}
-        .autoHeightMO{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockMO{display: $block}
         .displayInlineMO{display: $inline}
         .displayInlineBlockMO{display: $inlineBlock}
         .displayTableMO{display: table}
-        .displayBlockMO{display: $block}
         .displayNoneMO{display: $none}
         .contentBoxMO{box-sizing: content-box}
         .borderBoxMO{box-sizing: border-box}
-        .visuallyHiddenMO{
-            border: 0;
+        .centerVerticallyMO{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenMO,
+        .sr-onlyMO{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -92,11 +89,10 @@
     }
     
     @if $classes_lists_floats_act_MO == "on"{
-        //Lists and floats    
-        .unstyledMO, .horizontalMO, .list_hyphenatedMO{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledMO, .horizontalMO{list-style: $none}
         .floatLeftMO, .horizontalMO li{float: $left}
-        .floatRightMO, .horizontalMO li.floatRight,
-        .horizontalMO.right li{float: $right}
+        .floatRightMO{float: $right}
         .horizontalCenterMO{
             margin-right: $auto;
             margin-left: $auto;    
@@ -109,11 +105,11 @@
                 }
             }
         }
-        .floatNoneMO, .unstyledMO li, .horizontal li.floatNoneMO{float: $none}
+        .floatNoneMO, .unstyledMO li{float: $none}
     }
     
     @if $classes_text_act_MO == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextMO{text-indent: -9999px}
         .alignLeftMO{text-align: left}
         .alignRightMO{text-align: right}
@@ -127,8 +123,8 @@
         .lowerCaseMO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_MO == "on"{
-        //Backgrounds, border and images    
+    @if $classes_bg_bd_NO_act_MO == "on"{ 
+/*___ Backgrounds, border and images ____*/
         .banMO{border: $none}
         .bgNoneMO{
             &, &:focus, &:hover{
@@ -140,18 +136,14 @@
     }
     
     @if $helpers_spacing_act_MO == "on"{
-/* =============================================================================
-   Mobile Only Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorMO;    
         .mraMO,.mhaMO{margin-right: $auto}
         .mlaMO,.mhaMO{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_MO == "on"{
-/* =============================================================================
-   Mobile Only Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
         .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
             display: flex;
             flex-direction: row;
@@ -179,43 +171,40 @@
     }
 }
 
-/* =============================================================================
-   After Mobile Landscape Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // After Mobile Landscape Classes ---------------------------------------- */
 @include afterMobileLandscape{
-    @if $classes_pos_display_sizes_masks_cursors_act_AML == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_AML == "on"{
+/*___ Positioning _______________________*/
         .pRelAML{position: relative}
         .pAbsAML{position: absolute}
         .clearAML{clear: both}
-    
-        //Sizing
-        .fullWidthAML{width: $hundred}
-        .halfWidthAML{width: $half}
-        .autoWidthAML{width: $auto}
-        .autoHeightAML{height: $auto}
 
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockAML{display: $block}
         .displayInlineAML{display: $inline}
         .displayInlineBlockAML{display: $inlineBlock}
         .displayTableAML{display: table}
-        .displayBlockAML{display: $block}
         .displayNoneAML{display: $none}
         .contentBoxAML{box-sizing: content-box}
         .borderBoxAML{box-sizing: border-box}
-        .visuallyHiddenAML{
-            border: 0;
+        .centerVerticallyAML{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenAML,
+        .sr-onlyAML{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -228,11 +217,10 @@
     }
     
     @if $classes_lists_floats_act_AML == "on"{
-        //Lists and floats    
-        .unstyledAML, .horizontalAML, .list_hyphenatedAML{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledAML, .horizontalAML{list-style: $none}
         .floatLeftAML, .horizontalAML li{float: $left}
-        .floatRightAML, .horizontalAML li.floatRight,
-        .horizontalAML.right li{float: $right}
+        .floatRightAML{float: $right}
         .horizontalCenterAML{
             margin-right: $auto;
             margin-left: $auto;    
@@ -245,11 +233,11 @@
                 }
             }
         }
-        .floatNoneAML, .unstyledAML li, .horizontal li.floatNoneAML{float: $none}
+        .floatNoneAML, .unstyledAML li{float: $none}
     }
     
     @if $classes_text_act_AML == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextAML{text-indent: -9999px}
         .alignLeftAML{text-align: left}
         .alignRightAML{text-align: right}
@@ -264,7 +252,7 @@
     }
     
     @if $classes_bg_bd_NO_act_AML == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banAML{border: $none}
         .bgNoneAML{
             &, &:focus, &:hover{
@@ -276,18 +264,14 @@
     }
     
     @if $helpers_spacing_act_AML == "on"{
-/* =============================================================================
-   After Mobile Landscape Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAML;
         .mraAML,.mhaAML{margin-right: $auto}
         .mlaAML,.mhaAML{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_AML == "on"{
-/* =============================================================================
-   After Mobile Landscape Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
         .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
             display: flex;
             flex-direction: row;
@@ -315,43 +299,40 @@
     }
 }
 
-/* =============================================================================
-   Mobile Landscape Only Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Mobile Landscape Only Classes ----------------------------------------- */
 @include mobileLandscapeOnly{
-    @if $classes_pos_display_sizes_masks_cursors_act_MLO == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_MLO == "on"{
+/*___ Positioning _______________________*/
         .pRelMLO{position: relative}
         .pAbsMLO{position: absolute}
         .clearMLO{clear: both}
 
-        //Sizing
-        .fullWidthMLO{width: $hundred}
-        .halfWidthMLO{width: $half}
-        .autoWidthMLO{width: $auto}
-        .autoHeightMLO{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockMLO{display: $block}
         .displayInlineMLO{display: $inline}
         .displayInlineBlockMLO{display: $inlineBlock}
         .displayTableMLO{display: table}
-        .displayBlockMLO{display: $block}
         .displayNoneMLO{display: $none}
         .contentBoxMLO{box-sizing: content-box}
         .borderBoxMLO{box-sizing: border-box}
-        .visuallyHiddenMLO{
-            border: 0;
+        .centerVerticallyMLO{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenMLO,
+        .sr-onlyMLO{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -364,11 +345,10 @@
     }
     
     @if $classes_lists_floats_act_MLO == "on"{
-        //Lists and floats    
-        .unstyledMLO, .horizontalMLO, .list_hyphenatedMLO{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledMLO, .horizontalMLO{list-style: $none}
         .floatLeftMLO, .horizontalMLO li{float: $left}
-        .floatRightMLO, .horizontalMLO li.floatRight,
-        .horizontalMLO.right li{float: $right}
+        .floatRightMLO{float: $right}
         .horizontalCenterMLO{
             margin-right: $auto;
             margin-left: $auto;    
@@ -381,11 +361,11 @@
                 }
             }
         }
-        .floatNoneMLO, .unstyledMLO li, .horizontal li.floatNoneMLO{float: $none}
+        .floatNoneMLO, .unstyledMLO li{float: $none}
     }
     
     @if $classes_text_act_MLO == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextMLO{text-indent: -9999px}
         .alignLeftMLO{text-align: left}
         .alignRightMLO{text-align: right}
@@ -400,7 +380,7 @@
     }
         
     @if $classes_bg_bd_NO_act_MLO == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banMLO{border: $none}
         .bgNoneMLO{
             &, &:focus, &:hover{
@@ -412,18 +392,14 @@
     }
     
     @if $helpers_spacing_act_MLO == "on"{
-/* =============================================================================
-   Mobile Landscape Only Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorMLO;
         .mraMLO,.mhaMLO{margin-right: $auto}
         .mlaMLO,.mhaMLO{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_MLO == "on"{
-/* =============================================================================
-   Mobile Landscape Only Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Flexbox Classes ___________________*/ 
         .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
             display: flex;
             flex-direction: row;
@@ -451,43 +427,40 @@
     }
 }
 
-/* =============================================================================
-   Before Tablet Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Before Tablet Classes ------------------------------------------------- */
 @include beforeTablet{    
-    @if $classes_pos_display_sizes_masks_cursors_act_BT == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_BT == "on"{
+/*___ Positioning _______________________*/
         .pRelBT{position: relative}
         .pAbsBT{position: absolute}
         .clearBT{clear: both}
 
-        //Sizing
-        .fullWidthBT{width: $hundred}
-        .halfWidthBT{width: $half}
-        .autoWidthBT{width: $auto}
-        .autoHeightBT{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockBT{display: $block}
         .displayInlineBT{display: $inline}
         .displayInlineBlockBT{display: $inlineBlock}
         .displayTableBT{display: table}
-        .displayBlockBT{display: $block}
         .displayNoneBT{display: $none}
         .contentBoxBT{box-sizing: content-box}
         .borderBoxBT{box-sizing: border-box}
-        .visuallyHidden_BT{
-            border: 0;
+        .centerVerticallyBT{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenBT,
+        .sr-onlyBT{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -500,11 +473,10 @@
     }
     
     @if $classes_lists_floats_act_BT == "on"{
-        //Lists and floats    
-        .unstyledBT, .horizontalBT, .list_hyphenatedBT{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledBT, .horizontalBT{list-style: $none}
         .floatLeftBT, .horizontalBT li{float: $left}
-        .floatRightBT, .horizontalBT li.floatRight,
-        .horizontalBT.right li{float: $right}
+        .floatRightBT{float: $right}
         .horizontalCenterBT{
             margin-right: $auto;
             margin-left: $auto;    
@@ -517,11 +489,11 @@
                 }
             }
         }
-        .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT{float: $none}
+        .floatNoneBT, .unstyledBT li{float: $none}
     }
     
     @if $classes_text_act_BT == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextBT{text-indent: -9999px}
         .alignLeftBT{text-align: left}
         .alignRightBT{text-align: right}
@@ -536,7 +508,7 @@
     }
         
     @if $classes_bg_bd_NO_act_BT == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banBT{border: $none}
         .bgNoneBT{
             &, &:focus, &:hover{
@@ -548,18 +520,14 @@
     }
     
     @if $helpers_spacing_act_BT == "on"{
-/* =============================================================================
-   Before Tablet Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorBT;
         .mraBT,.mhaBT{margin-right: $auto}
         .mlaBT,.mhaBT{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_BT == "on"{
-/* =============================================================================
-   Before Tablet Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Flexbox Classes ___________________*/ 
         .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
             display: flex;
             flex-direction: row;
@@ -587,43 +555,40 @@
     }
 }
 
-/* =============================================================================
-   Before Tablet Landscape Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Before Tablet Landscape Classes --------------------------------------- */
 @include beforeTabletLandscape{    
-    @if $classes_pos_display_sizes_masks_cursors_act_BTL == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_BTL == "on"{
+/*___ Positioning _______________________*/
         .pRelBTL{position: relative}
         .pAbsBTL{position: absolute}
         .clearBTL{clear: both}
 
-        //Sizing
-        .fullWidthBTL{width: $hundred}
-        .halfWidthBTL{width: $half}
-        .autoWidthBTL{width: $auto}
-        .autoHeightBTL{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockBTL{display: $block}
         .displayInlineBTL{display: $inline}
         .displayInlineBlockBTL{display: $inlineBlock}
         .displayTableBTL{display: table}
-        .displayBlockBTL{display: $block}
         .displayNoneBTL{display: $none}
         .contentBoxBTL{box-sizing: content-box}
         .borderBoxBTL{box-sizing: border-box}
-        .visuallyHidden_BTL{
-            border: 0;
+        .centerVerticallyBTL{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenBTL,
+        .sr-onlyBTL{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -636,11 +601,10 @@
     }
     
     @if $classes_lists_floats_act_BTL == "on"{
-        //Lists and floats    
-        .unstyledBTL, .horizontalBTL, .list_hyphenatedBTL{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledBTL, .horizontalBTL{list-style: $none}
         .floatLeftBTL, .horizontalBTL li{float: $left}
-        .floatRightBTL, .horizontalBTL li.floatRight,
-        .horizontalBTL.right li{float: $right}
+        .floatRightBTL{float: $right}
         .horizontalCenterBTL{
             margin-right: $auto;
             margin-left: $auto;    
@@ -653,11 +617,11 @@
                 }
             }
         }
-        .floatNoneBTL, .unstyledBTL li, .horizontal li.floatNoneBTL{float: $none}
+        .floatNoneBTL, .unstyledBTL li{float: $none}
     }
     
     @if $classes_text_act_BTL == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextBTL{text-indent: -9999px}
         .alignLeftBTL{text-align: left}
         .alignRightBTL{text-align: right}
@@ -672,7 +636,7 @@
     }
         
     @if $classes_bg_bd_NO_act_BTL == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banBTL{border: $none}
         .bgNoneBTL{
             &, &:focus, &:hover{
@@ -684,18 +648,14 @@
     }
     
     @if $helpers_spacing_act_BTL == "on"{
-/* =============================================================================
-   Before Tablet Landscape Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorBTL;
         .mraBTL,.mhaBTL{margin-right: $auto}
         .mlaBTL,.mhaBTL{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_BTL == "on"{
-/* =============================================================================
-   Before Tablet Landscape Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Flexbox Classes ___________________*/
         .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
             display: flex;
             flex-direction: row;
@@ -723,43 +683,40 @@
     }
 }
 
-/* =============================================================================
-   Tablet Only Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Tablet Only Classes --------------------------------------------------- */
 @include tabletOnly{    
-    @if $classes_pos_display_sizes_masks_cursors_act_TO == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_TO == "on"{
+/*___ Positioning _______________________*/
         .pRelTO{position: relative}
         .pAbsTO{position: absolute}
         .clearTO{clear: both}
 
-        //Sizing
-        .fullWidthTO{width: $hundred}
-        .halfWidthTO{width: $half}
-        .autoWidthTO{width: $auto}
-        .autoHeightTO{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockTO{display: $block}
         .displayInlineTO{display: $inline}
         .displayInlineBlockTO{display: $inlineBlock}
         .displayTableTO{display: table}
-        .displayBlockTO{display: $block}
         .displayNoneTO{display: $none}
         .contentBoxTO{box-sizing: content-box}
         .borderBoxTO{box-sizing: border-box}
-        .visuallyHiddenTO{
-            border: 0;
+        .centerVerticallyTO{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenTO,
+        .sr-onlyTO{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -772,11 +729,10 @@
     }
     
     @if $classes_lists_floats_act_TO == "on"{
-        //Lists and floats    
-        .unstyledTO, .horizontalTO, .list_hyphenatedTO{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledTO, .horizontalTO{list-style: $none}
         .floatLeftTO, .horizontalTO li{float: $left}
-        .floatRightTO, .horizontalTO li.floatRight,
-        .horizontalTO.right li{float: $right}
+        .floatRightTO{float: $right}
         .horizontalCenterTO{
             margin-right: $auto;
             margin-left: $auto;    
@@ -789,11 +745,11 @@
                 }
             }
         }
-        .floatNoneTO, .unstyledTO li, .horizontal li.floatNoneTO{float: $none}
+        .floatNoneTO, .unstyledTO li{float: $none}
     }
     
     @if $classes_text_act_TO == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextTO{text-indent: -9999px}
         .alignLeftTO{text-align: left}
         .alignRightTO{text-align: right}
@@ -808,7 +764,7 @@
     }
         
     @if $classes_bg_bd_NO_act_TO == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banTO{border: $none}
         .bgNoneTO{
             &, &:focus, &:hover{
@@ -820,19 +776,14 @@
     }
     
     @if $helpers_spacing_act_TO == "on"{
-/* =============================================================================
-   Tablet Only Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
-
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorTO;
         .mraTO,.mhaTO{margin-right: $auto}
         .mlaTO,.mhaTO{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_TO == "on"{
-/* =============================================================================
-   Tablet Only Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
         .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
             display: flex;
             flex-direction: row;
@@ -860,43 +811,40 @@
     }
 }
 
-/* =============================================================================
-   After Tablet Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // After Tablet Classes -------------------------------------------------- */
 @include afterTablet{    
-    @if $classes_pos_display_sizes_masks_cursors_act_AT == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_AT == "on"{
+/*___ Positioning _______________________*/
         .pRelAT{position: relative}
         .pAbsAT{position: absolute}
         .clearAT{clear: both}
 
-        //Sizing
-        .fullWidthAT{width: $hundred}
-        .halfWidthAT{width: $half}
-        .autoWidthAT{width: $auto}
-        .autoHeightAT{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockAT{display: $block}
         .displayInlineAT{display: $inline}
         .displayInlineBlockAT{display: $inlineBlock}
         .displayTableAT{display: table}
-        .displayBlockAT{display: $block}
         .displayNoneAT{display: $none}
         .contentBoxAT{box-sizing: content-box}
         .borderBoxAT{box-sizing: border-box}
-        .visuallyHiddenAT{
-            border: 0;
+        .centerVerticallyAT{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenAT,
+        .sr-onlyAT{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -909,11 +857,10 @@
     }
     
     @if $classes_lists_floats_act_AT == "on"{
-        //Lists and floats    
-        .unstyledAT, .horizontalAT, .list_hyphenatedAT{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledAT, .horizontalAT{list-style: $none}
         .floatLeftAT, .horizontalAT li{float: $left}
-        .floatRightAT, .horizontalAT li.floatRight,
-        .horizontalAT.right li{float: $right}
+        .floatRightAT{float: $right}
         .horizontalCenterAT{
             margin-right: $auto;
             margin-left: $auto;    
@@ -926,11 +873,11 @@
                 }
             }
         }
-        .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT{float: $none}
+        .floatNoneAT, .unstyledAT li{float: $none}
     }
     
     @if $classes_text_act_AT == "on"{
-        //Text 
+/*___ Text ______________________________*/ 
         .indentedTextAT{text-indent: -9999px}
         .alignLeftAT{text-align: left}
         .alignRightAT{text-align: right}
@@ -945,7 +892,7 @@
     }
         
     @if $classes_bg_bd_NO_act_AT == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banAT{border: $none}
         .bgNoneAT{
             &, &:focus, &:hover{
@@ -957,18 +904,14 @@
     }
     
     @if $helpers_spacing_act_AT == "on"{
-/* =============================================================================
-   After Tablet Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAT;
         .mraAT,.mhaAT{margin-right: $auto}
         .mlaAT,.mhaAT{margin-left: $auto}
     }
      
     @if $classes_flexbox_act_AT == "on"{
-/* =============================================================================
-   After Tablet Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
         .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
             display: flex;
             flex-direction: row;
@@ -996,43 +939,40 @@
     }
 }
 
-/* =============================================================================
-   After Tablet Landscape Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // After Tablet Landscape Classes ---------------------------------------- */
 @include afterTabletLandscape{
-    @if $classes_pos_display_sizes_masks_cursors_act_ATL == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_ATL == "on"{
+/*___ Positioning _______________________*/
         .pRelATL{position: relative}
         .pAbsATL{position: absolute}
         .clearATL{clear: both}
 
-        //Sizing
-        .fullWidthATL{width: $hundred}
-        .halfWidthATL{width: $half}
-        .autoWidthATL{width: $auto}
-        .autoHeightATL{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockATL{display: $block}
         .displayInlineATL{display: $inline}
         .displayInlineBlockATL{display: $inlineBlock}
         .displayTableATL{display: table}
-        .displayBlockATL{display: $block}
         .displayNoneATL{display: $none}
         .contentBoxATL{box-sizing: content-box}
         .borderBoxATL{box-sizing: border-box}
-        .visuallyHiddenATL{
-            border: 0;
+        .centerVerticallyATL{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenATL,
+        .sr-onlyATL{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -1045,11 +985,10 @@
     }
     
     @if $classes_lists_floats_act_ATL == "on"{
-        //Lists and floats    
-        .unstyledATL, .horizontalATL, .list_hyphenatedATL{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledATL, .horizontalATL{list-style: $none}
         .floatLeftATL, .horizontalATL li{float: $left}
-        .floatRightATL, .horizontalATL li.floatRight,
-        .horizontalATL.right li{float: $right}
+        .floatRightATL{float: $right}
         .horizontalCenterATL{
             margin-right: $auto;
             margin-left: $auto;    
@@ -1062,11 +1001,11 @@
                 }
             }
         }
-        .floatNoneATL, .unstyledATL li, .horizontal li.floatNoneATL{float: $none}
+        .floatNoneATL, .unstyledATL li{float: $none}
     }
     
     @if $classes_text_act_ATL == "on"{
-        //Text 
+/*___ Text ______________________________*/ 
         .indentedTextATL{text-indent: -9999px}
         .alignLeftATL{text-align: left}
         .alignRightATL{text-align: right}
@@ -1081,7 +1020,7 @@
     }
         
     @if $classes_bg_bd_NO_act_ATL == "on"{
-        //Backgrounds, border and images   
+/*___ Backgrounds, border and images ____*/
         .banATL{border: $none}
         .bgNoneATL{
             &, &:focus, &:hover{
@@ -1093,18 +1032,14 @@
     }
     
     @if $helpers_spacing_act_ATL == "on"{
-/* =============================================================================
-   After Tablet Landscape Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorATL;
         .mraATL,.mhaATL{margin-right: $auto}
         .mlaATL,.mhaATL{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_ATL == "on"{
-/* =============================================================================
-   After Tablet Landscape Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
         .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
             display: flex;
             flex-direction: row;
@@ -1132,43 +1067,40 @@
     }
 }
 
-/* =============================================================================
-   Tablet Landscape Only Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Tablet Landscape Only Classes ----------------------------------------- */
 @include tabletLandscapeOnly{
-    @if $classes_pos_display_sizes_masks_cursors_act_TLO == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_TLO == "on"{
+/*___ Positioning _______________________*/
         .pRelTLO{position: relative}
         .pAbsTLO{position: absolute}
         .clearTLO{clear: both}
 
-        //Sizing
-        .fullWidthTLO{width: $hundred}
-        .halfWidthTLO{width: $half}
-        .autoWidthTLO{width: $auto}
-        .autoHeightTLO{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockTLO{display: $block}
         .displayInlineTLO{display: $inline}
         .displayInlineBlockTLO{display: $inlineBlock}
         .displayTableTLO{display: table}
-        .displayBlockTLO{display: $block}
         .displayNoneTLO{display: $none}
         .contentBoxTLO{box-sizing: content-box}
         .borderBoxTLO{box-sizing: border-box}
-        .visuallyHiddenTLO{
-            border: 0;
+        .centerVerticallyTLO{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenTLO,
+        .sr-onlyTLO{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -1181,11 +1113,10 @@
     }
     
     @if $classes_lists_floats_act_TLO == "on"{
-        //Lists and floats    
-        .unstyledTLO, .horizontalTLO, .list_hyphenatedTLO{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledTLO, .horizontalTLO{list-style: $none}
         .floatLeftTLO, .horizontalTLO li{float: $left}
-        .floatRightTLO, .horizontalTLO li.floatRight,
-        .horizontalTLO.right li{float: $right}
+        .floatRightTLO{float: $right}
         .horizontalCenterTLO{
             margin-right: $auto;
             margin-left: $auto;    
@@ -1198,11 +1129,11 @@
                 }
             }
         }
-        .floatNoneTLO, .unstyledTLO li, .horizontal li.floatNoneTLO{float: $none}
+        .floatNoneTLO, .unstyledTLO li{float: $none}
     }
     
     @if $classes_text_act_TLO == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextTLO{text-indent: -9999px}
         .alignLeftTLO{text-align: left}
         .alignRightTLO{text-align: right}
@@ -1217,7 +1148,7 @@
     }
         
     @if $classes_bg_bd_NO_act_TLO == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banTLO{border: $none}
         .bgNoneTLO{
             &, &:focus, &:hover{
@@ -1229,18 +1160,14 @@
     }
     
     @if $helpers_spacing_act_TLO == "on"{
-/* =============================================================================
-   Tablet Landscape Only Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorTLO;
         .mraTLO,.mhaTLO{margin-right: $auto}
         .mlaTLO,.mhaTLO{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_TLO == "on"{
-/* =============================================================================
-   Tablet Landscape Only Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Flexbox Classes ___________________*/
         .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
             display: flex;
             flex-direction: row;
@@ -1268,43 +1195,40 @@
     }
 }
 
-/* =============================================================================
-   Tablet And Tablet Landscape Only Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Tablet And Tablet Landscape Only Classes ------------------------------ */
 @include tabletAndTabletLandscapeOnly{    
-    @if $classes_pos_display_sizes_masks_cursors_act_TTLO == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_TTLO == "on"{
+/*___ Positioning _______________________*/
         .pRelTTLO{position: relative}
         .pAbsTTLO{position: absolute}
         .clearTTLO{clear: both}
 
-        //Sizing
-        .fullWidthTTLO{width: $hundred}
-        .halfWidthTTLO{width: $half}
-        .autoWidthTTLO{width: $auto}
-        .autoHeightTTLO{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockTTLO{display: $block}
         .displayInlineTTLO{display: $inline}
         .displayInlineBlockTTLO{display: $inlineBlock}
         .displayTableTTLO{display: table}
-        .displayBlockTTLO{display: $block}
         .displayNoneTTLO{display: $none}
         .contentBoxTTLO{box-sizing: content-box}
         .borderBoxTTLO{box-sizing: border-box}
-        .visuallyHiddenTTLO{
-            border: 0;
+        .centerVerticallyTTLO{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenTTLO,
+        .sr-onlyTTLO{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -1317,11 +1241,10 @@
     }
     
     @if $classes_lists_floats_act_TTLO == "on"{
-        //Lists and floats    
-        .unstyledTTLO, .horizontalTTLO, .list_hyphenatedTTLO{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledTTLO, .horizontalTTLO{list-style: $none}
         .floatLeftTTLO, .horizontalTTLO li{float: $left}
-        .floatRightTTLO, .horizontalTTLO li.floatRight,
-        .horizontalTTLO.right li{float: $right}
+        .floatRightTTLO{float: $right}
         .horizontalCenterTTLO{
             margin-right: $auto;
             margin-left: $auto;    
@@ -1334,11 +1257,11 @@
                 }
             }
         }
-        .floatNoneTTLO, .unstyledTTLO li, .horizontal li.floatNoneTTLO{float: $none}
+        .floatNoneTTLO, .unstyledTTLO li{float: $none}
     }
     
     @if $classes_text_act_TTLO == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextTTLO{text-indent: -9999px}
         .alignLeftTTLO{text-align: left}
         .alignRightTTLO{text-align: right}
@@ -1353,7 +1276,7 @@
     }
         
     @if $classes_bg_bd_NO_act_TTLO == "on"{
-        //Backgrounds, border and images    
+/*___ Backgrounds, border and images ____*/
         .banTTLO{border: $none}
         .bgNoneTTLO{
             &, &:focus, &:hover{
@@ -1365,18 +1288,14 @@
     }
     
     @if $helpers_spacing_act_TTLO == "on"{
-/* =============================================================================
-   Tablet Landscape Only Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorTTLO;
         .mraTTLO,.mhaTTLO{margin-right: $auto}
         .mlaTTLO,.mhaTTLO{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_TTLO == "on"{
-/* =============================================================================
-   Tablet Landscape Only Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Flexbox Classes ___________________*/
         .displayFlexTTLO, .flexHorizontalTTLO, .flexColumnTTLO, .flexNoWrapTTLO, .flexJustifyEndTTLO, .flexJustifyCenterTTLO, .flexJustifyBetweenTTLO, .flexJustifyAroundTTLO, .flexAlignContentEndTTLO, .flexAlignContentCenterTTLO, .flexAlignContentBetweenTTLO, .flexAlignContentAroundTTLO, .flexAlignContentStretchTTLO, .flexAlignItemsEndTTLO, .flexAlignItemsCenterTTLO, .flexAlignItemsBaselineTTLO, .flexAlignItemsStretchTTLO, .horizontalCenterFlexTTLO{
             display: flex;
             flex-direction: row;
@@ -1404,43 +1323,40 @@
     }
 }
 
-/* =============================================================================
-   Before Desktop Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // Before Desktop Classes ------------------------------------------------ */
 @include beforeDesktop{    
-    @if $classes_pos_display_sizes_masks_cursors_act_BD == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_BD == "on"{
+/*___ Positioning _______________________*/
         .pRelBD{position: relative}
         .pAbsBD{position: absolute}
         .clearBD{clear: both}
 
-        //Sizing
-        .fullWidthBD{width: $hundred}
-        .halfWidthBD{width: $half}
-        .autoWidthBD{width: $auto}
-        .autoHeightBD{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockBD{display: $block}
         .displayInlineBD{display: $inline}
         .displayInlineBlockBD{display: $inlineBlock}
         .displayTableBD{display: table}
-        .displayBlockBD{display: $block}
         .displayNoneBD{display: $none}
         .contentBoxBD{box-sizing: content-box}
         .borderBoxBD{box-sizing: border-box}
-        .visuallyHiddenBD{
-            border: 0;
+        .centerVerticallyBD{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenBD,
+        .sr-onlyBD{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -1453,11 +1369,10 @@
     }
     
     @if $classes_lists_floats_act_BD == "on"{
-        //Lists and floats    
-        .unstyledBD, .horizontalBD, .list_hyphenatedBD{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledBD, .horizontalBD{list-style: $none}
         .floatLeftBD, .horizontalBD li{float: $left}
-        .floatRightBD, .horizontalBD li.floatRight,
-        .horizontalBD.right li{float: $right}
+        .floatRightBD{float: $right}
         .horizontalCenterBD{
             margin-right: $auto;
             margin-left: $auto;    
@@ -1470,11 +1385,11 @@
                 }
             }
         }
-        .floatNoneBD, .unstyledBD li, .horizontal li.floatNoneBD{float: $none}
+        .floatNoneBD, .unstyledBD li{float: $none}
     }
     
     @if $classes_text_act_BD == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextBD{text-indent: -9999px}
         .alignLeftBD{text-align: left}
         .alignRightBD{text-align: right}
@@ -1489,7 +1404,7 @@
     }
     
     @if $classes_bg_bd_NO_act_BD == "on"{
-        //Backgrounds, border and images  
+/*___ Backgrounds, border and images ____*/
         .banBD{border: $none}
         .bgNoneBD{
             &, &:focus, &:hover{
@@ -1501,18 +1416,14 @@
     }
     
     @if $helpers_spacing_act_BD == "on"{
-/* =============================================================================
-   Before Desktop Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorBD;
         .mraBD,.mhaBD{margin-right: $auto}
         .mlaBD,.mhaBD{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_BD == "on"{
-/* =============================================================================
-   Before Desktop Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */ 
+/*___ Flexbox Classes ___________________*/
         .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
             display: flex;
             flex-direction: row;
@@ -1540,43 +1451,40 @@
     }
 }
 
-/* =============================================================================
-   After Desktop Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/* // After Desktop Classes ------------------------------------------------- */
 @include afterDesktop{    
-    @if $classes_pos_display_sizes_masks_cursors_act_AD == "on"{
-        //Positioning
+    @if $classes_position_display_mask_cursor_act_AD == "on"{
+/*___ Positioning _______________________*/
         .pRelAD{position: relative}
         .pAbsAD{position: absolute}
         .clearAD{clear: both}
 
-        //Sizing
-        .fullWidthAD{width: $hundred}
-        .halfWidthAD{width: $half}
-        .autoWidthAD{width: $auto}
-        .autoHeightAD{height: $auto}
-
-        //Display
+/*___ Display ___________________________*/
+        .displayBlockAD{display: $block}
         .displayInlineAD{display: $inline}
         .displayInlineBlockAD{display: $inlineBlock}
         .displayTableAD{display: table}
-        .displayBlockAD{display: $block}
         .displayNoneAD{display: $none}
         .contentBoxAD{box-sizing: content-box}
         .borderBoxAD{box-sizing: border-box}
-        .visuallyHiddenAD{
-            border: 0;
+        .centerVerticallyAD{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenAD,
+        .sr-onlyAD{
+            position: absolute;
             clip: rect(0 0 0 0);
+            width: 1px;
             height: 1px;
+            border: $zero;
+            padding: $zero;
             margin: -1px;
             overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            white-space: nowrap; /* 1 */
+            white-space: nowrap;
 
             &:active,
-            &:focus{
+            &:focus {
                 clip: auto;
                 height: auto;
                 margin: 0;
@@ -1589,11 +1497,10 @@
     }
     
     @if $classes_lists_floats_act_AD == "on"{
-        //Lists and floats    
-        .unstyledAD, .horizontalAD, .list_hyphenatedAD{list-style: $none}
+/*___ Lists and floats __________________*/
+        .unstyledAD, .horizontalAD{list-style: $none}
         .floatLeftAD, .horizontalAD li{float: $left}
-        .floatRightAD, .horizontalAD li.floatRight,
-        .horizontalAD.right li{float: $right}
+        .floatRightAD{float: $right}
         .horizontalCenterAD{
             margin-right: $auto;
             margin-left: $auto;    
@@ -1606,11 +1513,11 @@
                 }
             }
         }
-        .floatNoneAD, .unstyledAD li, .horizontal li.floatNoneAD{float: $none}
+        .floatNoneAD, .unstyledAD li{float: $none}
     }
     
     @if $classes_text_act_AD == "on"{
-        //Text
+/*___ Text ______________________________*/
         .indentedTextAD{text-indent: -9999px}
         .alignLeftAD{text-align: left}
         .alignRightAD{text-align: right}
@@ -1625,7 +1532,7 @@
     }
         
     @if $classes_bg_bd_NO_act_AD == "on"{
-        //Backgrounds, border and images   
+/*___ Backgrounds, border and images ____*/
         .banAD{border: $none}
         .bgNoneAD{
             &, &:focus, &:hover{
@@ -1636,19 +1543,15 @@
         .bgNoImageAD{background-image: $none}
     }
     
-    @if $helpers_spacing_act_AD == "on"{    
-/* =============================================================================
-   After Desktop Spacing Helpers | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+    @if $helpers_spacing_act_AD == "on"{   
+/*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAD;
         .mraAD,.mhaAD{margin-right: $auto}
         .mlaAD,.mhaAD{margin-left: $auto}
     }
     
     @if $classes_flexbox_act_AD == "on"{
-/* =============================================================================
-   After Desktop Flexbox Classes | Etc [/etc/css/scss/classesResponsive.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
         .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
             display: flex;
             flex-direction: row;

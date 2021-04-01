@@ -5,7 +5,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables.
 // Contiene mapa de fuentes para generar Font-Stacks.
-// Estos mapas se usan en `[/etc/var/fonts_main_var.scss]`.
+// Estos mapas se usan en `[/etc/css/custom/var/fonts_main_var.scss]`.
 
 
 
@@ -63,7 +63,7 @@ $fontFamilies_sans_map:(
     sansSerif: sans-serif
 );
 
-$fontFamilies_sans_list:
+$font_families_sans_list:
     map-get($fontFamilies_sans_map, sanFrancisco),
     map-get($fontFamilies_sans_map, blinkMacSystemFont),
     map-get($fontFamilies_sans_map, oxygen), 
@@ -80,7 +80,7 @@ $fontFamilies_sans_list:
     map-get($fontFamilies_sans_map, sansSerif)
 ; 
 
-$fontFamilies_sans_list_fallback:
+$font_families_sans_list_fallback:
     Arial,
     Roboto,
     map-get($fontFamilies_sans_map, sanFrancisco),
@@ -120,13 +120,13 @@ $fontFamilies_serif_map:(
     serif: serif
 );
     
-$fontFamilies_serif_list: 
+$font_families_serif_list: 
     map-get($fontFamilies_serif_map, georgia),
     map-get($fontFamilies_serif_map, palatino),
     map-get($fontFamilies_serif_map, serif)
 ;
     
-$fontFamilies_serif_list_fallback:
+$font_families_serif_list_fallback:
     'Times New Roman',
     map-get($fontFamilies_serif_map, georgia),
     map-get($fontFamilies_serif_map, palatino),
@@ -148,7 +148,7 @@ $fontFamilies_monospaced_map:(
     monospace: monospace
 );
     
-$fontFamilies_monospaced_list:
+$font_families_monospaced_list:
     map-get($fontFamilies_monospaced_map, consolas),    
     map-get($fontFamilies_monospaced_map, andaleMono),
     map-get($fontFamilies_monospaced_map, lucidaConsole),
@@ -164,8 +164,7 @@ $bitstreamVeraSansMono:     map-get($fontFamilies_monospaced_map, bitstreamVeraS
 $courierNew:                map-get($fontFamilies_monospaced_map, courierNew);
 $monospace:                 map-get($fontFamilies_monospaced_map, monospace);
 
-
-    //Font Sizes
+/* // Font Sizes ------------------------------------------------------------ */
 $h1_list: 'h1, .hUno';
 $h2_list: 'h2, .hDos';
 $h3_list: 'h3, .hTre';

@@ -1,17 +1,10 @@
 @charset "UTF-8";
 /* =============================================================================
-   Dir Variables | Custom [var/_dir_var.scss]
+   Dir Variables | Custom [/etc/css/custom/var/_dir_var.scss]
    ========================================================================== */
 /* // Activators ------------------------------------------------------------ */
 /* =============================================================================
-   Classes Activators | Custom [act/main_act.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Colours --------------------------------------------------------------- */
-/* // Pointers -------------------------------------------------------------- */
-/* =============================================================================
-   Helpers Responsive Classes Activators | Custom [act/responsive_act.scss]
+   Useful Classes Activators | Custom [/etc/css/custom/act/classes_useful_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -31,54 +24,75 @@
 /* // After Desktop AD ------------------------------------------------------ */
 /* // After Desktop Large ADL ----------------------------------------------- */
 /* =============================================================================
-   Logo Activators | Custom [act/logo_act.scss]
+   Logo Activators | Custom [/etc/css/custom/act/logo_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
+   Buttons Activators | Custom [/etc/css/custom/act/buttons_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Colours --------------------------------------------------------------- */
+/* // Pointers -------------------------------------------------------------- */
+/* =============================================================================
+   Forms activators | Custom [/etc/css/custom/act/forms_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Form Label ------------------------------------------------------------ */
+/* // Forms Input ----------------------------------------------------------- */
+/* =============================================================================
+   Slider Activators | Custom [/etc/css/custom/act/slider_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
+   Text Activators | Custom [/etc/css/custom/act/text_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Forms activators | Custom [act/forms_act.scss]
+   Header Activators | Custom [/etc/css/custom/act/section_header_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* =============================================================================
-   Slider Activators | Custom [act/slider_act.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* =============================================================================
-   Text Activators | Custom [act/text_act.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* =============================================================================
-   Header Activators | Custom [act/section_header_act.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Menu y logo ----------------------------------------------------------- */
 /* // Header ---------------------------------------------------------------- */
 /* =============================================================================
-   Nav Activators | Custom [act/section_nav_act.scss]
-   ========================================================================== */
-/* // Language -------------------------------------------------------------- */
-/* =============================================================================
-   Footer Activators | Custom [act/section_footer_act.scss]
-   ========================================================================== */
-/* // Logo y dirección flotados --------------------------------------------- */
-/* =============================================================================
-   Page Index Activators | Custom [act/page_index_act.scss]
+   Nav Activators | Custom [/etc/css/custom/act/section_nav_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Language -------------------------------------------------------------- */
+/* =============================================================================
+   Footer Activators | Custom [/etc/css/custom/act/section_footer_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Logo y dirección flotados --------------------------------------------- */
+/* =============================================================================
+   Page Index Activators | Custom [/etc/css/custom/act/page_index_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // 01 Full height -------------------------------------------------------- */
 /* // 02 Index Only Full Height --------------------------------------------- */
 /* =============================================================================
-   Page Internal Activators | Custom [act/page_int_act.scss]
+   Page Internal Activators | Custom [/etc/css/custom/act/page_int_act.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Full height ----------------------------------------------------------- */
 /* // Variables ------------------------------------------------------------- */
 /* =============================================================================
-   Font Variables | Etc [var_fonts.scss]
+   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -86,8 +100,10 @@
 /* // Serif ----------------------------------------------------------------- */
 /* // Monoespaciadas -------------------------------------------------------- */
 /* =============================================================================
-   Absolute Variables | Etc [var_absolute.scss]
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Widths ---------------------------------------------------------------- */
 /* // Colours --------------------------------------------------------------- */
 /* // Positions ------------------------------------------------------------- */
@@ -95,7 +111,7 @@
 /* // .mha placeholder ------------------------------------------------------ */
 /* // Clearfix mixin -------------------------------------------------------- */
 /* =============================================================================
-   Z Index Variables | Custom [var/zindex.scss]
+   Z Index Variables | Custom [/etc/css/custom/var/zindex.scss]
    ========================================================================== */
 /* // Negative -------------------------------------------------------------- */
 /* // 10 000 ---------------------------------------------------------------- */
@@ -112,47 +128,42 @@
 /*___ Slick Slider ______________________*/
 /* // 1000 ------------------------------------------------------------------ */
 /* =============================================================================
-   Container Sizes Variables | Custom [var/container.scss]
+   Container Sizes Variables | Custom [/etc/css/custom/var/container_sizes_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Container Sizes ------------------------------------------------------- */
 /* Mobile / Container: 300px */
 /* iPad */
 /* iPad Landscape */
-/* Desktop */
-/* Desktop Large */
-/* // Container Center Negative Values -------------------------------------- */
-/* Mobile Half */
-/* Mobile Landscape Half */
-/* Tablet Half*/
-/* Tablet Landscape Half*/
-/* Desktop Half */
-/* Desktop Large Half*/
-/* Mobile Half */
-/* Mobile Landscape Half */
-/* Tablet Half*/
-/* Tablet Landscape Half*/
-/* Desktop Half */
-/* Desktop Large Half*/
+/* Desktop 1200+ */
+/* Desktop Large 1600+ */
 /* =============================================================================
-   Spacing Helpers Variables | Custom [var/helpers.scss]
+   Container Variables | Etc [/etc/css/scss/var_container.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Container Center Negative Values -------------------------------------- */
+/* =============================================================================
+   Spacing Helpers Variables | Custom [/etc/css/custom/var/helpers.scss]
    ========================================================================== */
 /* // Spacing --------------------------------------------------------------- */
 /* // Border Helpers Variables  --------------------------------------------- */
 /* =============================================================================
-   Animation Variables | Custom [var/animations.scss]
+   Animation Variables | Custom [/etc/css/custom/var/animations.scss]
    ========================================================================== */
 /* =============================================================================
-   Colours Main Variables | Custom [var/colours_main.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* =============================================================================
-   Border Colours Variables | Custom [var/colours_borders.scss]
+   Colours Main Variables | Custom [/etc/css/custom/var/colours_main.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Background Colours Variables | Custom [var/colours_backgrounds.scss]
+   Border Colours Variables | Custom [/etc/css/custom/var/colours_borders.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
+   Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -160,10 +171,10 @@
 /* // Modal Opacity Variables ----------------------------------------------- */
 /*___ Responsive nav ____________________*/
 /* =============================================================================
-   Shadows Variables | Custom [var/shadows_var.scss]
+   Shadows Variables | Custom [/etc/css/custom/var/shadows_var.scss]
    ========================================================================== */
 /* =============================================================================
-   Fonts Main Variables | Custom [var/fonts_main_var.scss]
+   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -171,7 +182,7 @@
 /*___ Creamos la variable de la fuente principal del sitio _*/
 /* // Main font Stack ------------------------------------------------------- */
 /* =============================================================================
-   Text Variables | Custom [var/text.scss]
+   Text Variables | Custom [/etc/css/custom/var/text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -179,7 +190,7 @@
 /* // Espaciado general de texto -------------------------------------------- */
 /* // Headings -------------------------------------------------------------- */
 /* =============================================================================
-   Logo Sizes Variables | Custom [var/logo_sizes_var.scss]
+   Logo Sizes Variables | Custom [/etc/css/custom/var/logo_sizes_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -187,11 +198,12 @@
 /* // Nav Drawer logo.navDrawer_open ---------------------------------------- */
 /* // Logo Sizes AT --------------------------------------------------------- */
 /* // Logo Sizes Footer ----------------------------------------------------- */
+/* // Logo Sizes Footer logoFloated ----------------------------------------- */
 /* =============================================================================
-   Header Height Variables | Custom [var/section_header_heights.scss]
+   Header Height Variables | Custom [/etc/css/custom/var/section_header_heights.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav Colours Variables | Custom [var/section_nav_colours_var.scss]
+   Nav Colours Variables | Custom [/etc/css/custom/var/section_nav_colours_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -208,24 +220,28 @@
 /*___ AT ________________________________*/
 /*___ Topper ____________________________*/
 /* =============================================================================
-   Nav Arrows Backgrounds | Custom [var/section_nav_arrows_var.scss]
+   Nav Arrows Backgrounds | Custom [/etc/css/custom/var/section_nav_arrows_var.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav Fonts Variables | Custom [var/section_nav_fonts.scss]
+   Nav Fonts Variables | Custom [/etc/css/custom/var/section_nav_fonts.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /*___ BT ________________________________*/
 /*___ AT ________________________________*/
 /*___ ATL _______________________________*/
 /* =============================================================================
-   Nav Sizes Variables | Custom [var/section_nav_sizes.scss]
+   Nav Sizes Variables | Custom [/etc/css/custom/var/section_nav_sizes.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // General --------------------------------------------------------------- */
 /* // Nav Topper ------------------------------------------------------------ */
 /* // Nav Sizes ------------------------------------------------------------- */
 /* // Nav List -------------------------------------------------------------- */
 /* // Nav Drawer ------------------------------------------------------------ */
 /* =============================================================================
-   Button Nav Hamburger Variables | Custom [var/button_nav_hamburger_var.scss]
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -237,14 +253,14 @@
 /*___ Borders ___________________________*/
 /* // Button Hambuger Font -------------------------------------------------- */
 /* =============================================================================
-   Language Sizes Variables | Custom [var/section_nav_language_va.scss]
+   Language Sizes Variables | Custom [/etc/css/custom/var/section_nav_language_var.scss]
    ========================================================================== */
 /* // Language Sizes -------------------------------------------------------- */
 /*___ Flags _____________________________*/
 /*___ Language UL _______________________*/
 /* // Language Colours ------------------------------------------------------ */
 /* =============================================================================
-   Slider Variables | Custom [var/slider.scss]
+   Slider Variables | Custom [/etc/css/custom/var/slider.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -253,76 +269,74 @@
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
 /* =============================================================================
-   Lists Variables | Custom [var/lists.scss]
+   Lists Variables | Custom [/etc/css/custom/var/lists.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // List Colours ---------------------------------------------------------- */
 /* // List Sizes ------------------------------------------------------------ */
 /* =============================================================================
-   Buttons Variables | Custom [var/buttons_var.scss]
+   Buttons Variables | Custom [/etc/css/custom/var/buttons_var.scss]
    ========================================================================== */
 /* =============================================================================
-   Social Variables | Custom [var/section_social_var.scss]
+   Social Variables | Custom [/etc/css/custom/var/section_social_var.scss]
    ========================================================================== */
 /* // Social Sizes ---------------------------------------------------------- */
 /* // Social Colours -------------------------------------------------------- */
 /* =============================================================================
-   Social Variables | Custom [var/popup_var.scss]
+   Social Variables | Custom [/etc/css/custom/var/popup_var.scss]
    ========================================================================== */
 /* // Popup Sizes ---------------------------------------------------------- */
 /* // Popup Colours -------------------------------------------------------- */
 /* =============================================================================
-   Footer Variables | Custom [var/section_footer_var.scss]
+   Footer Variables | Custom [/etc/css/custom/var/section_footer_var.scss]
    ========================================================================== */
-/* // Footer logo flotado --------------------------------------------------- */
 /* // Full heights Footer --------------------------------------------------- */
 /* // Footer sizes ---------------------------------------------------------- */
 /* // Footer colours  ------------------------------------------------------- */
 /* =============================================================================
-   Form Colours Variables | Custom [var/form_colours.scss]
+   Form Colours Variables | Custom [/etc/css/custom/var/form_colours.scss]
    ========================================================================== */
 /* // Form Label ------------------------------------------------------------ */
 /* // Forms Input ----------------------------------------------------------- */
 /* // Form Submit  ---------------------------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
 /* =============================================================================
-   Form Fonts Variables | Custom [var/form_fonts.scss]
+   Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts.scss]
    ========================================================================== */
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
 /* // Form Submit  ---------------------------------------------------------- */
 /* // Form status message --------------------------------------------------- */
 /* =============================================================================
-   Form Sizes Variables | Custom [var/form_sizes.scss]
+   Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form ------------------------------------------------------------------ */
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
-/*___ Sug _______________________________*/
-/*___ Sug _______________________________*/
+/*___ Radio Input _______________________*/
 /* // Form Submit  ---------------------------------------------------------- */
 /* // Form Search ----------------------------------------------------------- */
 /* =============================================================================
-   Tables Variables | Custom [var/tables.scss]
+   Tables Variables | Custom [/etc/css/custom/var/tables.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Custom Sizes ---------------------------------------------------------- */
 /* // Rounded Table --------------------------------------------------------- */
 /* =============================================================================
-   Tables Colours Variables | Custom [var/tables_colours.scss]
+   Tables Colours Variables | Custom [/etc/css/custom/var/tables_colours.scss]
    ========================================================================== */
 /* // Table Border Colours -------------------------------------------------- */
 /* // Table Background Colours ---------------------------------------------- */
 /* // Striped Table --------------------------------------------------------- */
 /* =============================================================================
-   Global Variables | Custom [var/global.scss]
+   Global Variables | Custom [/etc/css/custom/var/global.scss]
    ========================================================================== */
 /* =============================================================================
-   Media Queries values Variables | Custom [var/mediaQueries_var.scss]
+   Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -330,14 +344,14 @@
 /* // Nav ------------------------------------------------------------------- */
 /* // Apple ----------------------------------------------------------------- */
 /* =============================================================================
-   Page Index Variables | Custom [var/page_index_var.scss]
+   Page Index Variables | Custom [/etc/css/custom/var/page_index_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Page Index Sizes ------------------------------------------------------ */
 /* // Page Index Colours ---------------------------------------------------- */
 /* =============================================================================
-   Page Contacto Variables | Custom [var/page_contacto_var.scss]
+   Page Contacto Variables | Custom [/etc/css/custom/var/page_contacto_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -345,7 +359,7 @@
 /* // Page Contacto Colours ------------------------------------------------- */
 /* // Mixins ---------------------------------------------------------------- */
 /* =============================================================================
-   Media Queries Mixins | Custom [mediaQueries_mixins.scss]
+   Media Queries Mixins | Custom [/etc/css/custom/mediaQueries_mixins.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -380,43 +394,43 @@
 /* // iPad 3 & 4 Landscape Only --------------------------------------------- */
 /* // Retina Screens -------------------------------------------------------- */
 /* =============================================================================
-   Sizes Mixins | Etc [mixinsSizes.scss]
+   Sizes Mixins | Etc [/etc/css/scss/mixinsSizes.scss]
    ========================================================================== */
 /* =============================================================================
-   Background Mixins | Etc [mixinsBackgrounds.scss]
+   Background Mixins | Etc [/etc/css/scss/mixinsBackgrounds.scss]
    ========================================================================== */
 /* =============================================================================
-   Mask Mixins | Etc [mixinsMasks.scss]
+   Mask Mixins | Etc [/etc/css/scss/mixinsMasks.scss]
    ========================================================================== */
 /* // Mixin para máscara con centrado ciego --------------------------------- */
 /* // Mixin para mascaras --------------------------------------------------- */
 /* =============================================================================
-   Clip Paths Mixins | Etc [mixinsClipPath.scss]
+   Clip Paths Mixins | Etc [/etc/css/scss/mixinsClipPath.scss]
    ========================================================================== */
 /* =============================================================================
-   Transition Mixins | Etc [mixinsTransitions.scss]
+   Transition Mixins | Etc [/etc/css/scss/mixinsTransitions.scss]
    ========================================================================== */
 /* =============================================================================
-   Opacity Mixins | Etc [mixinsOpacity.scss]
+   Opacity Mixins | Etc [/etc/css/scss/mixinsOpacity.scss]
    ========================================================================== */
 /* =============================================================================
-   Fonts Mixins | Etc [mixinsFonts.scss]
+   Fonts Mixins | Etc [/etc/css/scss/mixinsFonts.scss]
    ========================================================================== */
 /* // Generador de clases por cada fuente ----------------------------------- */
 /* // Generador de pesos por cada fuente ------------------------------------ */
 /* // Generador de clases por cada tamaño de fuente ------------------------- */
 /* =============================================================================
-   Mixins para texto y alturas de X | Etc [mixins_text.scss]
+   Mixins para texto y alturas de X | Etc [/etc/css/scss/mixins_text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Colour Mixins | Etc [mixins_colours.scss]
+   Colour Mixins | Etc [/etc/css/scss/mixins_colours.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Center Mixins | Etc [mixinsCenter.scss]
+   Center Mixins | Etc [/etc/css/scss/mixinsCenter.scss]
    ========================================================================== */
 /* // Mixin para clase .absoluteCenter -------------------------------------- */
 /* // Mixin para clase .centerVertical -------------------------------------- */
@@ -427,7 +441,7 @@
    Spacing Helpers Mixins | Common [mixin_spacing.scss]
    ========================================================================== */
 /* =============================================================================
-   Border Helpers Mixins | Etc [mixins_borders.scss]
+   Border Helpers Mixins | Etc [/etc/css/scss/mixins_borders.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -437,10 +451,10 @@
 /* // Border separation with equal padding and margin ----------------------- */
 /* // Border Fancy Horizontal Line Mixins ----------------------------------- */
 /* =============================================================================
-   Position Mixins | Etc [mixinsPositions.scss]
+   Position Mixins | Etc [/etc/css/scss/mixinsPositions.scss]
    ========================================================================== */
 /* =============================================================================
-   Tables Sizes Mixins | Etc [mixinsTableSizes.scss]
+   Tables Sizes Mixins | Etc [/etc/css/scss/mixinsTableSizes.scss]
    ========================================================================== */
 /* // Functions ------------------------------------------------------------- */
 /* =============================================================================
@@ -478,11 +492,11 @@ Parameter: $width_angledEdges_fn
 Description: Optional - Width of triangle - Accepts a unitless integer that is equivalent to width in px (If nothing is passed triangle will span to a 100% fluid width) 
 */
 /* =============================================================================
-   Font Stroke Functions | Etc [functionsFontStroke.scss]
+   Font Stroke Functions | Etc [/etc/css/scss/functionsFontStroke.scss]
    ========================================================================== */
 /* // Main CSS -------------------------------------------------------------- */
 /* =============================================================================
-   Html Body Settings | Etc [settingsHtmlBody.scss]
+   Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
    ========================================================================== */
 html, body {
   padding: 0;
@@ -497,13 +511,13 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 /* =============================================================================
-   Body Styles | Custom [styles_body.scss]
+   Body Styles | Custom [/etc/css/custom/body.scss]
    ========================================================================== */
 body {
   background-color: #fff; }
 
 /* =============================================================================
-   Elements Reset/Settings | Etc [reset_main.scss]
+   Elements Reset/Settings | Etc [/etc/css/scss/reset_main.scss]
    ========================================================================== */
 article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button {
   display: block; }
@@ -527,25 +541,7 @@ progress[value] {
   appearance: none;
   border: none; }
 
-ul, ol, li, dd {
-  margin: 0;
-  padding: 0; }
-
-ul {
-  list-style: disc inside; }
-
-ol {
-  list-style: decimal inside; }
-
-a {
-  line-height: 1;
-  cursor: pointer; }
-  a img {
-    border: none; }
-
-a, a:hover {
-  text-decoration: none; }
-
+/* // Horizontal rule ------------------------------------------------------- */
 hr {
   display: block;
   height: 1px;
@@ -554,10 +550,11 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
+/* // Images ---------------------------------------------------------------- */
 img {
   background-color: #c6c6c6;
   border: none;
-  font: normal 11px/1rem Arial;
+  font: normal 11px/1rem Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   text-transform: uppercase;
   color: #333;
   -ms-interpolation-mode: bicubic; }
@@ -569,32 +566,17 @@ figure {
   margin: 0;
   padding: 0; }
 
-button,
-input[type="button"],
-html input[type="button"] {
-  border: none; }
-
-::-moz-selection {
-  color: #000;
-  background-color: #818181;
-  text-shadow: none; }
-
-::selection {
-  color: #000;
-  background-color: #818181;
-  text-shadow: none; }
-
 /* =============================================================================
-   Custom Reset Styles | Custom [reset_custom.scss]
+   Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
    ========================================================================== */
 /* =============================================================================
-   Colour Placeholders | Custom [colours_placeholders.scss]
+   Colour Placeholders | Custom [/etc/css/custom/colours_placeholders.scss]
    ========================================================================== */
 a.orange:focus, a.orange:hover {
   color: #ff0000; }
 
 /* =============================================================================
-   Gradient Colours | Custom [colours_gradients.scss]
+   Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
    ========================================================================== */
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
 /*
@@ -606,24 +588,27 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 }
 */
 /* =============================================================================
-   Font-face | Custom [fontFace.scss]
+   Font-face | Custom [/etc/css/custom/fontFace.scss]
    ========================================================================== */
 /*
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url('#{$url_dir}/fonts/examplefont.woff2') format('woff2'),
-         url('#{$url_dir}/fonts/examplefont.woff') format('woff');
+    src: url('/nuevo/fonts/examplefont.woff2') format('woff2'),
+         url('/nuevo/fonts/examplefont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 */
 /* =============================================================================
-   Text Settings | Etc [settings_text.scss]
+   Text Settings | Etc [/etc/css/scss/settings_text.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // General --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif, Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif, Roboto, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: calc(1ex / 0.32); }
@@ -631,32 +616,6 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, 
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table {
   color: #000; }
 
-/*
-input::input-placeholder, textarea::input-placeholder{
-    color: $form_placeholder_ftColour}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
-    color: $form_placeholder_ftColour}
-input::-moz-placeholder, textarea::-moz-placeholder{
-    color: $form_placeholder_ftColour}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder{
-    color: $form_placeholder_ftColour}
-input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $form_placeholder_ftColour}
-
-input::-moz-placeholder, textarea::-moz-placeholder{
-  opacity: 1}
-
-input:focus::input-placeholder, textarea:focus::input-placeholder{
-    color: $ftColour_main_global}
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
-    color: $ftColour_main_global}
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
-    color: $ftColour_main_global}
-input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
-    color: $ftColour_main_global}
-input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $ftColour_main_global}
-*/
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, dfn a, button a, blockquote a, dfn a, button a, blockquote a {
   font-family: inherit;
   font-weight: inherit; }
@@ -698,7 +657,7 @@ ul + ul {
   margin: 0.8em 0 0; }
 
 p b, li b {
-  font-family: Arial; }
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
 
 p p, p li, p a, p strong, p dl, p legend, li p, li li, li a, li strong, li dl, li legend {
   font-size: 1em; }
@@ -869,8 +828,32 @@ a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.no
   color: #ff6600; }
 
 /* =============================================================================
-   Settings Text | Custom [settings_text.scss]
+   Settings Text | Custom [/etc/css/custom/settings_text.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Reset ----------------------------------------------------------------- */
+a {
+  line-height: 1;
+  cursor: pointer; }
+  a img {
+    border: none; }
+
+a, a:hover {
+  text-decoration: none; }
+
+/* // Text Selection -------------------------------------------------------- */
+::-moz-selection {
+  color: #000;
+  background-color: #818181;
+  text-shadow: none; }
+
+::selection {
+  color: #000;
+  background-color: #818181;
+  text-shadow: none; }
+
+/* // General --------------------------------------------------------------- */
 /* // Safari tel detection -------------------------------------------------- */
 a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
   color: #333333 !important; }
@@ -887,7 +870,7 @@ q {
     content: close-quote; }
 
 /* =============================================================================
-   Text Classes | Etc [classes_text.scss]
+   Text Classes | Etc [/etc/css/scss/classes_text.scss]
    ========================================================================== */
 abbr {
   border: none !important;
@@ -949,14 +932,19 @@ b, strong,
 .indentedText {
   text-indent: -9999px; }
 
+.truncatedText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
 /* =============================================================================
-   Text Classes | Custom [classes_text.scss]
+   Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
 .letterSpacing {
   letter-spacing: 0.05rem; }
 
 /* =============================================================================
-   Backgrounds Includes | Custom [includes_backgrounds.scss]
+   Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
    ========================================================================== */
 .bgWhite {
   background-color: #fff; }
@@ -995,8 +983,10 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   background-color: #4e4e4e; }
 
 /* =============================================================================
-   Backgrounds Classes | Custom [classes_backgrounds.scss]
+   Backgrounds Classes | Custom [/etc/css/custom/classes_backgrounds.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 .bgNone, .bgNone:focus, .bgNone:hover {
   background-color: transparent !important;
   background-image: none !important; }
@@ -1011,7 +1001,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   background-color: #eb1c24; }
 
 /* =============================================================================
-   Shadows Classes | Custom [classes_shadows.scss]
+   Shadows Classes | Custom [/etc/css/custom/classes_shadows.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -1047,7 +1037,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   background-position: center top, center bottom; }
 
 /* =============================================================================
-   Animation Classes | Etc [classes_animations.scss]
+   Animation Classes | Etc [/etc/css/scss/classes_animations.scss]
    ========================================================================== */
 @media (min-width: 767px) {
   .hover_grow_S_ani,
@@ -1067,7 +1057,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     transform: scale(1.15); } }
 
 /* =============================================================================
-   Settings Animations | Custom [settings_animations.scss]
+   Settings Animations | Custom [/etc/css/custom/settings_animations.scss]
    ========================================================================== */
 @media (min-width: 767px) {
   .hover_grow_S_ani,
@@ -1076,8 +1066,11 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     transition: transform 0.5s, background-color 1s; } }
 
 /* =============================================================================
-   Classes ALL | Common [classes_all.scss]
+   Useful Classes ALL | Etc [/etc/css/scss/classes_useful_all.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/*___ Accessibility _____________________*/
 #go-main-content {
   top: auto;
   left: -10000px;
@@ -1090,6 +1083,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
     width: auto;
     height: auto; }
 
+/*___ Clearfix __________________________*/
 .clearfix::before,
 .clearfix::after {
   content: ".";
@@ -1107,6 +1101,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 .clearfix {
   display: block; }
 
+/*___ Positioning _______________________*/
 .pRel {
   position: relative; }
 
@@ -1116,38 +1111,7 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 .clear {
   clear: both; }
 
-.autoWidth {
-  width: auto; }
-
-.autoHeight {
-  height: auto; }
-
-.fullWidth {
-  width: 100%; }
-
-.halfWidth {
-  width: 50%; }
-
-.fullHeight {
-  top: 0;
-  bottom: 0;
-  position: absolute; }
-
-.coverAll {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute; }
-
-.coverAllMask {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  overflow: hidden; }
-
+/*___ Display ___________________________*/
 .displayBlock {
   display: block !important; }
 
@@ -1163,11 +1127,15 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 .displayNone {
   display: none !important; }
 
+.contentBox {
+  box-sizing: content-box; }
+
 .centerVertically {
   display: table-cell;
   vertical-align: middle; }
 
-.visuallyHidden {
+.visuallyHidden,
+.sr-only {
   /*
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -1176,14 +1144,14 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
    causes content to wrap 1 word per line:
    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-  border: 0;
+  position: absolute;
   clip: rect(0 0 0 0);
+  width: 1px;
   height: 1px;
+  border: 0 !important;
+  padding: 0 !important;
   margin: -1px;
   overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
   white-space: nowrap;
   /* 1 */
   /*
@@ -1191,7 +1159,9 @@ Extends the .visuallyHidden class to allow the element
 to be focusable when navigated to via the keyboard:
 https://www.drupal.org/node/897638
 */ }
-  .visuallyHidden:active, .visuallyHidden:focus {
+  .visuallyHidden:active, .visuallyHidden:focus,
+  .sr-only:active,
+  .sr-only:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -1200,16 +1170,33 @@ https://www.drupal.org/node/897638
     width: auto;
     white-space: inherit; }
 
-article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after, button, button::before, button::after, fieldset, fieldset::before, fieldset::after, label, label::before, label::after, input, input::before, input::after, select, select::before, select::after, textarea, textarea::before, textarea::after,
-.callToAction,
-.callToAction::before,
-.callToAction::after, .borderBox, .borderBox::before, .borderBox::after {
+article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after,
+.borderBox,
+.borderBox::before,
+.borderBox::after {
   box-sizing: border-box; }
 
+/*___ Masks / Cover _____________________*/
 .mask {
   position: relative;
   overflow: hidden; }
 
+.coverAll {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute; }
+
+.coverAll_mask {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden; }
+
+/*___ Cursors ___________________________*/
 .cursorDefault {
   cursor: default; }
 
@@ -1222,14 +1209,14 @@ article, article::before, article::after, details, details::before, details::aft
 .cursorNone {
   cursor: none; }
 
-.unstyled, .horizontal, .list_hyphenated {
+/*___ Lists and floats __________________*/
+.unstyled, .horizontal {
   list-style: none !important; }
 
 .floatLeft, .horizontal li {
   float: left !important; }
 
-.floatRight, .horizontal li.floatRight,
-.horizontal.right li {
+.floatRight {
   float: right !important; }
 
 .horizontalCenter {
@@ -1250,9 +1237,7 @@ article, article::before, article::after, details, details::before, details::aft
 .horizontal li.floatNone {
   float: none !important; }
 
-/* =============================================================================
-   Spacing Helpers ALL | Common [classes_all.scss]
-   ========================================================================== */
+/*___ Spacing Helpers ___________________*/
 .ptn, .pvn, .pan {
   padding-top: 0 !important; }
 
@@ -1355,9 +1340,7 @@ article, article::before, article::after, details, details::before, details::aft
 .mla, .mha {
   margin-left: auto !important; }
 
-/* =============================================================================
-   Flexbox Classes ALL | Common [classes_all.scss]
-   ========================================================================== */
+/*___ Flexbox Classes ___________________*/
 .displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
   display: flex;
   flex-direction: row;
@@ -1415,63 +1398,54 @@ article, article::before, article::after, details, details::before, details::aft
   list-style: none !important; }
 
 /* =============================================================================
-   Classes Responsive | Common [classes_responsive.scss]
+   Useful Classes Responsive | Etc [/etc/css/scss/classes_useful_responsive.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* =============================================================================
-   Mobile Only Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   After Mobile Landscape Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Mobile Landscape Only Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Before Tablet Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
+/* // Mobile Only Classes --------------------------------------------------- */
+/* // After Mobile Landscape Classes ---------------------------------------- */
+/* // Mobile Landscape Only Classes ----------------------------------------- */
+/* // Before Tablet Classes ------------------------------------------------- */
 @media (max-width: 766px) {
+  /*___ Positioning _______________________*/
   .pRelBT {
     position: relative; }
   .pAbsBT {
     position: absolute; }
   .clearBT {
     clear: both; }
-  .fullWidthBT {
-    width: 100% !important; }
-  .halfWidthBT {
-    width: 50% !important; }
-  .autoWidthBT {
-    width: auto !important; }
-  .autoHeightBT {
-    height: auto !important; }
+  /*___ Display ___________________________*/
+  .displayBlockBT {
+    display: block !important; }
   .displayInlineBT {
     display: inline !important; }
   .displayInlineBlockBT {
     display: inline-block !important; }
   .displayTableBT {
     display: table; }
-  .displayBlockBT {
-    display: block !important; }
   .displayNoneBT {
     display: none !important; }
   .contentBoxBT {
     box-sizing: content-box; }
   .borderBoxBT {
     box-sizing: border-box; }
-  .visuallyHidden_BT {
-    border: 0;
+  .centerVerticallyBT {
+    display: table-cell;
+    vertical-align: middle; }
+  .visuallyHiddenBT,
+  .sr-onlyBT {
+    position: absolute;
     clip: rect(0 0 0 0);
+    width: 1px;
     height: 1px;
+    border: 0 !important;
+    padding: 0 !important;
     margin: -1px;
     overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-    /* 1 */ }
-    .visuallyHidden_BT:active, .visuallyHidden_BT:focus {
+    white-space: nowrap; }
+    .visuallyHiddenBT:active, .visuallyHiddenBT:focus,
+    .sr-onlyBT:active,
+    .sr-onlyBT:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1479,12 +1453,12 @@ article, article::before, article::after, details, details::before, details::aft
       position: static;
       width: auto;
       white-space: inherit; }
-  .unstyledBT, .horizontalBT, .list_hyphenatedBT {
+  /*___ Lists and floats __________________*/
+  .unstyledBT, .horizontalBT {
     list-style: none !important; }
   .floatLeftBT, .horizontalBT li {
     float: left !important; }
-  .floatRightBT, .horizontalBT li.floatRight,
-  .horizontalBT.right li {
+  .floatRightBT {
     float: right !important; }
   .horizontalCenterBT {
     margin-right: auto !important;
@@ -1495,59 +1469,52 @@ article, article::before, article::after, details, details::before, details::aft
       display: inline-block !important; }
       .horizontalCenterBT li > * {
         display: inline-block !important; }
-  .floatNoneBT, .unstyledBT li, .horizontal li.floatNoneBT {
+  .floatNoneBT, .unstyledBT li {
     float: none !important; } }
 
-/* =============================================================================
-   Before Tablet Landscape Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Tablet Only Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   After Tablet Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
+/* // Before Tablet Landscape Classes --------------------------------------- */
+/* // Tablet Only Classes --------------------------------------------------- */
+/* // After Tablet Classes -------------------------------------------------- */
 @media (min-width: 767px) {
+  /*___ Positioning _______________________*/
   .pRelAT {
     position: relative; }
   .pAbsAT {
     position: absolute; }
   .clearAT {
     clear: both; }
-  .fullWidthAT {
-    width: 100% !important; }
-  .halfWidthAT {
-    width: 50% !important; }
-  .autoWidthAT {
-    width: auto !important; }
-  .autoHeightAT {
-    height: auto !important; }
+  /*___ Display ___________________________*/
+  .displayBlockAT {
+    display: block !important; }
   .displayInlineAT {
     display: inline !important; }
   .displayInlineBlockAT {
     display: inline-block !important; }
   .displayTableAT {
     display: table; }
-  .displayBlockAT {
-    display: block !important; }
   .displayNoneAT {
     display: none !important; }
   .contentBoxAT {
     box-sizing: content-box; }
   .borderBoxAT {
     box-sizing: border-box; }
-  .visuallyHiddenAT {
-    border: 0;
+  .centerVerticallyAT {
+    display: table-cell;
+    vertical-align: middle; }
+  .visuallyHiddenAT,
+  .sr-onlyAT {
+    position: absolute;
     clip: rect(0 0 0 0);
+    width: 1px;
     height: 1px;
+    border: 0 !important;
+    padding: 0 !important;
     margin: -1px;
     overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-    /* 1 */ }
-    .visuallyHiddenAT:active, .visuallyHiddenAT:focus {
+    white-space: nowrap; }
+    .visuallyHiddenAT:active, .visuallyHiddenAT:focus,
+    .sr-onlyAT:active,
+    .sr-onlyAT:focus {
       clip: auto;
       height: auto;
       margin: 0;
@@ -1555,12 +1522,12 @@ article, article::before, article::after, details, details::before, details::aft
       position: static;
       width: auto;
       white-space: inherit; }
-  .unstyledAT, .horizontalAT, .list_hyphenatedAT {
+  /*___ Lists and floats __________________*/
+  .unstyledAT, .horizontalAT {
     list-style: none !important; }
   .floatLeftAT, .horizontalAT li {
     float: left !important; }
-  .floatRightAT, .horizontalAT li.floatRight,
-  .horizontalAT.right li {
+  .floatRightAT {
     float: right !important; }
   .horizontalCenterAT {
     margin-right: auto !important;
@@ -1571,26 +1538,16 @@ article, article::before, article::after, details, details::before, details::aft
       display: inline-block !important; }
       .horizontalCenterAT li > * {
         display: inline-block !important; }
-  .floatNoneAT, .unstyledAT li, .horizontal li.floatNoneAT {
+  .floatNoneAT, .unstyledAT li {
     float: none !important; } }
 
+/* // After Tablet Landscape Classes ---------------------------------------- */
+/* // Tablet Landscape Only Classes ----------------------------------------- */
+/* // Tablet And Tablet Landscape Only Classes ------------------------------ */
+/* // Before Desktop Classes ------------------------------------------------ */
+/* // After Desktop Classes ------------------------------------------------- */
 /* =============================================================================
-   After Tablet Landscape Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Tablet Landscape Only Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Tablet And Tablet Landscape Only Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Before Desktop Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   After Desktop Classes | Etc [classesResponsive.scss]
-   ========================================================================== */
-/* =============================================================================
-   Container Settings | Etc [settings_container.scss]
+   Container Settings | Etc [/etc/css/scss/settings_container.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -1704,15 +1661,13 @@ article, article::before, article::after, details, details::before, details::aft
   .container.container_centered_absolute {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
-/* =============================================================================
-   Hack para Windows Phone | Etc [settings_container.scss]
-   ========================================================================== */
+/* // Hack para Windows Phone ----------------------------------------------- */
 @media (max-width: 400px) {
   @-ms-viewport {
     width: 320px; } }
 
 /* =============================================================================
-   Print Styles | Custom [stylesPrint.scss]
+   Print Styles | Custom [/etc/css/custom/print.scss]
    ========================================================================== */
 @media print {
   @page {
@@ -1774,30 +1729,43 @@ article, article::before, article::after, details, details::before, details::aft
     page-break-inside: avoid; } }
 
 /* =============================================================================
-   Global Styles | Custom [global.scss]
+   Global Styles | Custom [/etc/css/custom/global.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Main Gobal Styles ----------------------------------------------------- */
 /* =============================================================================
-   Page Int Section Full Height Styles | Custom [page_int_section_fullHeight_imp.scss]
+   Page Int Section Full Height Styles | Custom [/etc/css/custom/page_int_section_fullHeight_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Page Int Section Full Height Styles | Custom [page_int_headerFixed_imp.scss]
+   Page Int Section Full Height Styles | Custom [/etc/css/custom/page_int_headerFixed_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Internas Global Styles | Custom [stylesGlobal.scss]
+   Internas Global Styles | Custom [/etc/css/custom/stylesGlobal.scss]
    ========================================================================== */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Secondary Separator
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* // Secondary Separator --------------------------------------------------- */
 /* =============================================================================
-   Button Styles | Custom [buttons.scss]
+   Button Styles | Custom [/etc/css/custom/buttons.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Reset ----------------------------------------------------------------- */
+button,
+input[type="button"],
+html input[type="button"] {
+  border: none; }
+
+button, button::before, button::after {
+  box-sizing: border-box; }
+
+/* // General --------------------------------------------------------------- */
 /* // Call to Action -------------------------------------------------------- */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
@@ -1834,6 +1802,8 @@ article, article::before, article::after, details, details::before, details::aft
     background-color: #c6c6c6;
     border-color: #333;
     color: #666; }
+  .callToAction, .callToAction::before, .callToAction::after {
+    box-sizing: border-box; }
   @media (max-width: 499px) {
     .callToAction {
       width: 100% !important; } }
@@ -1853,14 +1823,14 @@ article, article::before, article::after, details, details::before, details::aft
   transition: all 1s ease;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
   position: fixed;
   z-index: 9900;
-  bottom: 40px;
   right: 10px;
+  bottom: 40px;
   display: block;
+  border-radius: 50%;
   background-color: rgba(60, 209, 52, 0.85);
-  background-image: url("/img/button_whatsapp.svg");
+  background-image: url("/nuevo/img/button_whatsapp.svg");
   background-repeat: no-repeat;
   background-size: calc(60px - 10px);
   background-position: center center;
@@ -1908,12 +1878,28 @@ article, article::before, article::after, details, details::before, details::aft
 
 /* // Custom buttons -------------------------------------------------------- */
 /* =============================================================================
-   Lists | Custom [lists.scss]
+   Lists | Custom [/etc/css/custom/lists.scss]
    ========================================================================== */
-.list_hyphenated li {
-  position: relative; }
-  .list_hyphenated li::before {
-    content: "- "; }
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Reset ----------------------------------------------------------------- */
+ul, ol, li, dd {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: disc inside; }
+
+ol {
+  list-style: decimal inside; }
+
+/* // Styles ---------------------------------------------------------------- */
+.list_hyphenated {
+  list-style: none !important; }
+  .list_hyphenated li {
+    position: relative; }
+    .list_hyphenated li::before {
+      content: "- "; }
 
 .list_numbered {
   counter-reset: list_numbered_counter; }
@@ -2020,7 +2006,7 @@ article, article::before, article::after, details, details::before, details::aft
   background-image: url("/nuevo/img/file_pdf.svg"); }
 
 /* =============================================================================
-   Modal y Popups Settings | Etc [settings_popup.scss]
+   Modal y Popups Settings | Etc [/etc/css/scss/settings_popup.scss]
    ========================================================================== */
 .modal_bg_global,
 .modal_nav {
@@ -2052,7 +2038,7 @@ article, article::before, article::after, details, details::before, details::aft
     text-indent: -9999px; }
 
 /* =============================================================================
-   Popup Styles | Custom [popups.scss]
+   Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
 .modal_warning {
   /*
@@ -2151,7 +2137,7 @@ article, article::before, article::after, details, details::before, details::aft
     background-color: transparent;
     padding: 0;
     color: #666;
-    font-family: Arial;
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     text-align: center; }
     .pop_warning p + p {
       margin-top: 0.8em; }
@@ -2225,7 +2211,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* // Form status message --------------------------------------------------- */
 .pop_formStatus h2 {
   height: auto !important;
-  font-family: Arial;
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   line-height: 1.2rem !important; }
 
 @media (max-width: 650px) {
@@ -2233,8 +2219,18 @@ article, article::before, article::after, details, details::before, details::aft
     padding-top: 30px; } }
 
 /* =============================================================================
-   Header Styles | Custom [section_header.scss]
+   Header Styles | Custom [/etc/css/custom/section_header.scss]
    ========================================================================== */
+/* =============================================================================
+   Header Full Height Styles | Custom [/etc/css/custom/section_header_fullHeight_imp.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
+   Header Fixed Styles | Custom [/etc/css/custom/section_header_headerFixed_imp.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 #header {
   box-sizing: border-box;
   /*
@@ -2294,9 +2290,17 @@ article, article::before, article::after, details, details::before, details::aft
         #header .logo_header.navDrawer_open .logo_before {
           background: none; } }
   @media (min-width: 767px) {
+    #header .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: flex-start; }
     #header .logo_header {
       position: relative;
       z-index: 7300;
+      box-sizing: border-box;
       width: 220px; }
       #header .logo_header a,
       #header .logo_header img {
@@ -2309,38 +2313,63 @@ article, article::before, article::after, details, details::before, details::aft
       width: 220px; } }
 
 /* =============================================================================
-   Footer Styles | Custom [section_footer.scss]
+   Footer Styles | Custom [/etc/css/custom/section_footer.scss]
    ========================================================================== */
+/* =============================================================================
+   Footer Full Height Styles | Custom [/etc/css/custom/section_footer_fullHeight_imp.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+#footer.footer_index {
+  height: 100px; }
+
 #footer {
   /* // Button Site Top ------------------------------------------------------- */
   /* -------------------------------------------------------------------------- */ }
-  #footer.footer_index {
-    height: 100px; }
   #footer .button_siteTop {
     width: 50px;
     height: 50px;
     z-index: 9900;
     top: 10px;
     right: 10px;
-    background-image: url("/img/button_siteTop.svg");
+    background-image: url("/nuevo/img/button_siteTop.svg");
     background-repeat: no-repeat;
     background-position: center; }
   #footer .footer_address a {
     font-size: 1em;
     line-height: 1.2; }
+  #footer .logo_footer_container,
+  #footer .logo_txt {
+    box-sizing: border-box; }
+  #footer .logo_footer img {
+    display: block; }
   @media (max-width: 499px) {
-    #footer .logoF {
+    #footer .logo_footer {
       width: 50px; } }
   @media (min-width: 500px) {
-    #footer .logoF {
-      /* width: $logo_width_footer_MO; */ } }
+    #footer {
+      /*
+        .logo_footer_container{
+            width: $logo_width_footer_AML;
+        } 
+*/ }
+      #footer .logo_footer {
+        /*
+            width: $logo_width_footer_AML;
+*/ } }
   @media (min-width: 500px) and (max-width: 766px) {
-    #footer .logoF {
-      width: 50px; } }
+    #footer .logo_footer {
+      /*
+                width: $logo_width_footer_MLO;
+*/ } }
   @media (min-width: 767px) {
-    #footer .logoF {
+    #footer .logo_footer {
       width: 125px; } }
   @media (max-width: 1023px) {
+    #footer .logo_footer_container {
+      /*            
+            width: $footer_logoFloated_width_BTL;
+*/ }
     #footer .footer_address a {
       text-decoration: underline; } }
   @media (min-width: 1024px) {
@@ -2348,7 +2377,7 @@ article, article::before, article::after, details, details::before, details::aft
       text-decoration: underline; } }
 
 /* =============================================================================
-   Nav Settings | Etc [settings_nav.scss]
+   Nav Settings | Etc [/etc/css/scss/settings_nav.scss]
    ========================================================================== */
 nav p.nav_TLI,
 nav .nav_item_current a {
@@ -2377,7 +2406,7 @@ nav li:focus a, nav li:hover a {
       background-image: url("/nuevo/img/button_hamb_open.svg");
       background-repeat: no-repeat;
       color: #333;
-      font-family: Arial; }
+      font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
     .nav_main .button_hamb_close {
       border-radius: 50%;
       z-index: 9900;
@@ -2392,56 +2421,58 @@ nav li:focus a, nav li:hover a {
       float: none !important; } }
 
 @media (min-width: 768px) {
-  .nav_main .button_hamb {
-    display: none !important; }
-  .nav_main .nav_main_ul_drawer {
-    display: none; }
-  .nav_main > ul {
-    background-color: #818181; }
-    .nav_main > ul > li {
-      background-color: transparent; }
-      .nav_main > ul > li a,
-      .nav_main > ul > li .nav_TLI {
-        color: #000;
-        font-family: Arial; }
-      .nav_main > ul > li:focus, .nav_main > ul > li:hover {
+  .nav_main {
+    background-color: transparent; }
+    .nav_main .button_hamb {
+      display: none !important; }
+    .nav_main .nav_main_ul_drawer {
+      display: none; }
+    .nav_main > ul {
+      background-color: #818181; }
+      .nav_main > ul > li {
         background-color: transparent; }
-        .nav_main > ul > li:focus > a, .nav_main > ul > li:hover > a {
-          color: #000; }
-    .nav_main > ul > .uk-active,
-    .nav_main > ul > .nav_item_current {
-      background-color: transparent; }
-      .nav_main > ul > .uk-active a,
-      .nav_main > ul > .uk-active .nav_TLI,
-      .nav_main > ul > .nav_item_current a,
-      .nav_main > ul > .nav_item_current .nav_TLI {
-        color: #000;
-        font-family: Arial; }
-      .nav_main > ul > .uk-active:focus, .nav_main > ul > .uk-active:hover,
-      .nav_main > ul > .nav_item_current:focus,
-      .nav_main > ul > .nav_item_current:hover {
+        .nav_main > ul > li a,
+        .nav_main > ul > li .nav_TLI {
+          color: #000;
+          font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+        .nav_main > ul > li:focus, .nav_main > ul > li:hover {
+          background-color: transparent; }
+          .nav_main > ul > li:focus > a, .nav_main > ul > li:hover > a {
+            color: #000; }
+      .nav_main > ul > .uk-active,
+      .nav_main > ul > .nav_item_current {
         background-color: transparent; }
-        .nav_main > ul > .uk-active:focus > a,
-        .nav_main > ul > .uk-active:focus .nav_TLI, .nav_main > ul > .uk-active:hover > a,
-        .nav_main > ul > .uk-active:hover .nav_TLI,
-        .nav_main > ul > .nav_item_current:focus > a,
-        .nav_main > ul > .nav_item_current:focus .nav_TLI,
-        .nav_main > ul > .nav_item_current:hover > a,
-        .nav_main > ul > .nav_item_current:hover .nav_TLI {
-          color: #000; } }
+        .nav_main > ul > .uk-active a,
+        .nav_main > ul > .uk-active .nav_TLI,
+        .nav_main > ul > .nav_item_current a,
+        .nav_main > ul > .nav_item_current .nav_TLI {
+          color: #000;
+          font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+        .nav_main > ul > .uk-active:focus, .nav_main > ul > .uk-active:hover,
+        .nav_main > ul > .nav_item_current:focus,
+        .nav_main > ul > .nav_item_current:hover {
+          background-color: transparent; }
+          .nav_main > ul > .uk-active:focus > a,
+          .nav_main > ul > .uk-active:focus .nav_TLI, .nav_main > ul > .uk-active:hover > a,
+          .nav_main > ul > .uk-active:hover .nav_TLI,
+          .nav_main > ul > .nav_item_current:focus > a,
+          .nav_main > ul > .nav_item_current:focus .nav_TLI,
+          .nav_main > ul > .nav_item_current:hover > a,
+          .nav_main > ul > .nav_item_current:hover .nav_TLI {
+            color: #000; } }
 
 @media (min-width: 1024px) {
   .nav_main > ul > li a,
   .nav_main > ul > li .nav_TLI {
-    font-family: Arial; }
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
   .nav_main > ul .uk-active a,
   .nav_main > ul .uk-active .nav_TLI,
   .nav_main > ul .nav_item_current a,
   .nav_main > ul .nav_item_current .nav_TLI {
-    font-family: Arial; } }
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; } }
 
 /* =============================================================================
-   Nav Drawer Settings | Etc [settings_nav_drawer.scss]
+   Nav Drawer Settings | Etc [/etc/css/scss/settings_nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
   .nav_main .button_hamb_close.button_hamb_close_visible {
@@ -2471,7 +2502,7 @@ nav li:focus a, nav li:hover a {
     .nav_main .nav_main_ul > li > a,
     .nav_main .nav_main_ul > li > .nav_TLI {
       color: #000;
-      font-family: Arial; }
+      font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
     .nav_main .nav_main_ul > .uk-active,
     .nav_main .nav_main_ul > .nav_item_current {
       background-color: #f2f2f2;
@@ -2482,13 +2513,13 @@ nav li:focus a, nav li:hover a {
       .nav_main .nav_main_ul > .nav_item_current > a,
       .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
         color: #000;
-        font-family: Arial; } }
+        font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; } }
 
 /* =============================================================================
-   Nav Accordion Settings | Etc [settings_nav_accordion.scss]
+   Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav Drawer Styles | Custom [section_nav_drawer.scss]
+   Nav Drawer Styles | Custom [/etc/css/custom/section_nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
   .nav_main {
@@ -2533,8 +2564,8 @@ nav li:focus a, nav li:hover a {
       .nav_main .nav_main_ul li a,
       .nav_main .nav_main_ul li .nav_TLI {
         display: block;
-        font-size: 1rem;
-        text-align: center; }
+        padding-left: 20px;
+        font-size: 1rem; }
       .nav_main .nav_main_ul > li + li {
         border-top: 1px solid #818181; }
       .nav_main .nav_main_ul > .uk-active,
@@ -2550,32 +2581,41 @@ nav li:focus a, nav li:hover a {
           border-style: solid; } }
 
 /* =============================================================================
-   Nav Accordion Styles | Custom [section_nav_accordion.scss]
+   Nav Accordion Styles | Custom [/etc/css/custom/section_nav_accordion.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav List Styles | Custom [section_nav_list.scss]
+   Nav List Styles | Custom [/etc/css/custom/section_nav_list.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav After Tablet Styles | Custom [section_nav_AT.scss]
+   Nav After Tablet Styles | Custom [/etc/css/custom/section_nav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .nav_main .nav_main_ul > li {
-    float: left; }
-  .nav_main .nav_main_ul li,
-  .nav_main .nav_main_ul li a,
-  .nav_main .nav_main_ul li .nav_TLI {
-    display: block; }
-  .nav_main li,
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    height: 60px;
-    line-height: 60px; }
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    transition: all 1s ease;
-    font-size: 0.8rem;
-    padding-right: 5px;
-    padding-left: 5px; } }
+  .nav_main {
+    width: calc(100% - 220px); }
+    .nav_main .nav_main_ul.navAT {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-content: flex-start;
+      align-items: flex-start; }
+    .nav_main .nav_main_ul > li {
+      float: left; }
+    .nav_main .nav_main_ul li,
+    .nav_main .nav_main_ul li a,
+    .nav_main .nav_main_ul li .nav_TLI {
+      display: block; }
+    .nav_main li,
+    .nav_main li a,
+    .nav_main li .nav_TLI {
+      height: 60px;
+      line-height: 60px; }
+    .nav_main li a,
+    .nav_main li .nav_TLI {
+      transition: all 1s ease;
+      font-size: 0.8rem;
+      padding-right: 5px;
+      padding-left: 5px; } }
 
 @media (min-width: 767px) and (max-width: 1023px) {
   .nav_main li,
@@ -2585,22 +2625,24 @@ nav li:focus a, nav li:hover a {
     line-height: 60px; } }
 
 @media (min-width: 1024px) {
-  .nav_main li,
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    height: 60px;
-    line-height: 60px; }
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    font-size: 1rem;
-    padding-right: 10px;
-    padding-left: 10px; } }
+  .nav_main {
+    width: calc(100% - 220px); }
+    .nav_main li,
+    .nav_main li a,
+    .nav_main li .nav_TLI {
+      height: 60px;
+      line-height: 60px; }
+    .nav_main li a,
+    .nav_main li .nav_TLI {
+      font-size: 1rem;
+      padding-right: 10px;
+      padding-left: 10px; } }
 
 /* =============================================================================
-   Page Index Styles | Custom [page_index.scss]
+   Page Index Styles | Custom [/etc/css/custom/page_index.scss]
    ========================================================================== */
 /* =============================================================================
-   Page Index Full Height Styles | Custom [page_index_fullHeight_imp.scss]
+   Page Index Full Height Styles | Custom [/etc/css/custom/page_index_fullHeight_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */

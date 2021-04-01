@@ -4,6 +4,10 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
+// Contiene mapas de colores.
+//
+// #colour #background #fondo #map #mixin #variables_main #focus #hover #anchor
+// #button #input
 
 
 
@@ -42,9 +46,20 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
-///**Background Colours Map:** 
-    ///Aquí se agregan los colores de fondo, de este mapa se creará una clase por cada color, eg.: `.bgBlack{background-color: #000}` con el mixin **backgroundColourClassesGenerator** `[/etc/scss/mixins_colours.scss]`.
-$backgroundColours_map:(
+
+$colours_backgrounds_map:(
+// Este mapa se usa con el mixin `backgroundColourClassesGenerator` que se
+// encuentra en `[/etc/css/scss/mixins_colours.scss]`, genera una clase por cada
+// color.
+// Ej. 
+// .bgBlack { background-color: #000; }
+//
+// También se usa para asignar valor a la variable de cada color de fondo.
+// Ej.
+// $bgBlack: map-get($colours_backgrounds_map, Black);
+// background-color: $bgBlack;
+
+
 //  RedColour:      $redColour,
 
     White:          $white,
@@ -71,43 +86,48 @@ $backgroundColours_map:(
     Error:          $errorColour
 );
 
-$bgErrorColour:     map-get($backgroundColours_map, Error);
+$bgErrorColour:     map-get($colours_backgrounds_map, Error);
 
-$bgWhite:           map-get($backgroundColours_map, White);
-$bgBlack:           map-get($backgroundColours_map, Black);
+$bgWhite:           map-get($colours_backgrounds_map, White);
+$bgBlack:           map-get($colours_backgrounds_map, Black);
 
-//$bgGreenSystem3XL:  map-get($backgroundColours_map, GreenSystem3XL);
-//$bgGreenSystem2XL:  map-get($backgroundColours_map, GreenSystem2XL);
-//$bgGreenSystemXL:   map-get($backgroundColours_map, GreenSystemXL);
-//$bgGreenSystemL:    map-get($backgroundColours_map, GreenSystemL);
-$bgGreenSystem:     map-get($backgroundColours_map, GreenSystem);
+//$bgGreenSystem3XL:  map-get($colours_backgrounds_map, GreenSystem3XL);
+//$bgGreenSystem2XL:  map-get($colours_backgrounds_map, GreenSystem2XL);
+//$bgGreenSystemXL:   map-get($colours_backgrounds_map, GreenSystemXL);
+//$bgGreenSystemL:    map-get($colours_backgrounds_map, GreenSystemL);
+$bgGreenSystem:     map-get($colours_backgrounds_map, GreenSystem);
 
-//$bgGrey4XL:         map-get($backgroundColours_map, Grey4XL);
-//$bgGrey3XL:         map-get($backgroundColours_map, Grey3XL);
-$bgGrey2XL:         map-get($backgroundColours_map, Grey2XL);
-$bgGreyXL:          map-get($backgroundColours_map, GreyXL);
-$bgGreyL:           map-get($backgroundColours_map, GreyL);
-$bgGrey:            map-get($backgroundColours_map, Grey);
-$bgGreyD:           map-get($backgroundColours_map, GreyD);
-$bgGreyXD:          map-get($backgroundColours_map, GreyXD);
-$bgGrey2XD:         map-get($backgroundColours_map, Grey2XD);
-//$bgGrey3XD:         map-get($backgroundColours_map, Grey3XD);
+//$bgGrey4XL:         map-get($colours_backgrounds_map, Grey4XL);
+//$bgGrey3XL:         map-get($colours_backgrounds_map, Grey3XL);
+$bgGrey2XL:         map-get($colours_backgrounds_map, Grey2XL);
+$bgGreyXL:          map-get($colours_backgrounds_map, GreyXL);
+$bgGreyL:           map-get($colours_backgrounds_map, GreyL);
+$bgGrey:            map-get($colours_backgrounds_map, Grey);
+$bgGreyD:           map-get($colours_backgrounds_map, GreyD);
+$bgGreyXD:          map-get($colours_backgrounds_map, GreyXD);
+$bgGrey2XD:         map-get($colours_backgrounds_map, Grey2XD);
+//$bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
 
-//$bgRedColour:       map-get($backgroundColours_map, RedColour);
+//$bgRedColour:       map-get($colours_backgrounds_map, RedColour);
 
 /*___ Declaramos las var para colores de fondo _*/
 $bgColour_body:        $bgWhite;    
 $bgColour_main_global: $bgGrey;
 $img_bgColour_global:  $bgGreyL;
 
-///**Background Colours Hover Map:** 
-    ///Aquí se agregan los colores de las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creará una clase por cada color, eg.: `*.bgBlack:focus, *.bgBlack:hover{background-color: #333}` con el mixin **backgroundColourHoverClassesGenerator** `[/etc/scss/mixins_colours.scss]`.
-$backgroundColours_hover_map:(    
+
+$colours_backgrounds_hover_map:(    
+// Este mapa se usa con el mixin `backgroundColourHoverClassesGenerator` que se
+// encuentra en `[/etc/css/scss/mixins_colours.scss]`, genera las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creara una clase por cada color.
+// Ej. 
+// *.bgBlack:focus, *.bgBlack:hover{background-color: #hex}
+
+
     mainBgColour: darken($bgColour_main_global, 20%),
 /*    bgGrey: lighten($bgGrey, 20%)*/
 );
 
-//$bgBlue_hover: map-get($backgroundColours_hover_map, bgBlue);
+//$bgBlue_hover: map-get($colours_backgrounds_hover_map, bgBlue);
 
 
 /* // Modal Opacity Variables ----------------------------------------------- */

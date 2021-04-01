@@ -44,7 +44,7 @@
 
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio. No se genera ningún CSS de este mapa. Solamente se utilizan las var declaradas abajo en los archivos .scss
-$borderColours_map:(
+$colours_borders_map:(
     white:          $white,
     black:          $black,
 //  redColour:      $redColour,
@@ -66,27 +66,35 @@ $borderColours_map:(
     grey2XD:        $grey2XD,
 //  grey3XD:        $grey3XD,
     
-    error:          $errorColour
+    error:          $errorColour,
+    focus:          $focusColour
 );
  
-$bdError:           map-get($borderColours_map, error);
+$bdError:           map-get($colours_borders_map, error);
+$bdFocus:           map-get($colours_borders_map, focus);
 
-$bdWhite:           map-get($borderColours_map, white);
-$bdBlack:           map-get($borderColours_map, black);
+$bdWhite:           map-get($colours_borders_map, white);
+$bdBlack:           map-get($colours_borders_map, black);
 
-//$bdGrey4XL:         map-get($borderColours_map, grey4XL);
-//$bdGrey3XL:         map-get($borderColours_map, grey3XL);
-$bdGrey2XL:         map-get($borderColours_map, grey2XL);
-$bdGreyXL:          map-get($borderColours_map, greyXL);
-$bdGreyL:           map-get($borderColours_map, greyL);
-$bdGrey:            map-get($borderColours_map, grey);
-$bdGreyD:           map-get($borderColours_map, greyD);
-$bdGreyXD:          map-get($borderColours_map, greyXD);
-$bdGrey2XD:         map-get($borderColours_map, grey2XD);
-//$bdGrey3XD:         map-get($borderColours_map, grey3XD);
+//$bdGreenSystem3XL:  map-get($colours_borders_map, greenSystem3XL);
+//$bdGreenSystem2XL:  map-get($colours_borders_map, greenSystem2XL);
+//$bdGreenSystemXL:   map-get($colours_borders_map, greenSystemXL);
+//$bdGreenSystemL:    map-get($colours_borders_map, greenSystemL);
+//$bdGreenSystem:     map-get($colours_borders_map, greenSystem);
 
-//$bdRedColour:       map-get($borderColours_map, redColour);
+//$bdGrey4XL:         map-get($colours_borders_map, grey4XL);
+//$bdGrey3XL:         map-get($colours_borders_map, grey3XL);
+$bdGrey2XL:         map-get($colours_borders_map, grey2XL);
+$bdGreyXL:          map-get($colours_borders_map, greyXL);
+$bdGreyL:           map-get($colours_borders_map, greyL);
+$bdGrey:            map-get($colours_borders_map, grey);
+$bdGreyD:           map-get($colours_borders_map, greyD);
+$bdGreyXD:          map-get($colours_borders_map, greyXD);
+$bdGrey2XD:         map-get($colours_borders_map, grey2XD);
+//$bdGrey3XD:         map-get($colours_borders_map, grey3XD);
 
+//$bdRedColour:       map-get($colours_borders_map, redColour);
+ 
 $bdColour_main_global:              $bdGrey;
 $bdColour_main_global_hover:        darken($bdColour_main_global, 15%);
 

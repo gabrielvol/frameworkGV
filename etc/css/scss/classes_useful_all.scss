@@ -1,7 +1,49 @@
 /* =============================================================================
-   Classes ALL | Common [classes_all.scss]
+   Useful Classes ALL | Etc [/etc/css/scss/classes_useful_all.scss]
    ========================================================================== */
-    //Accessibility
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/*___ Accessibility _____________________*/
 #go-main-content{
     @include positionTL(auto, -10000px);
     position: absolute;
@@ -15,7 +57,8 @@
         height: auto;
     } 
 }
-    // Clearfix
+
+/*___ Clearfix __________________________*/
 .clearfix::before,
 .clearfix::after{
     content: ".";
@@ -28,37 +71,20 @@
 * html .clearfix{height: 1%}
 .clearfix{display: block}
 
-@if $classes_pos_display_sizes_masks_cursors_act_ALL == "on"{
-    //Positioning
+
+@if $classes_position_display_mask_cursor_act_ALL == "on"{
+/*___ Positioning _______________________*/
     .pRel{position: relative}
     .pAbs{position: absolute}
     .clear{clear: both}
 
-    //Sizing
-    .autoWidth{width: auto}
-    .autoHeight{height: auto}
-    .fullWidth{width: 100%}
-    .halfWidth{width: 50%}
-    .fullHeight{
-        @include positionTB(0, 0);
-        position: absolute;
-    }
-    .coverAll{
-        @include positionTRBL(0, 0, 0, 0);
-        position: absolute;
-    }
-    .coverAllMask{
-        @include positionTRBL(0, 0, 0, 0);
-        position: absolute;
-        overflow: hidden;
-    }
-
-    //Display
+/*___ Display ___________________________*/
     .displayBlock{display: $block}
     .displayInline{display: $inline}
     .displayInlineBlock{display: $inlineBlock}
     .displayTable{display: table}
     .displayNone{display: $none}
+    .contentBox{box-sizing: content-box}
     .centerVertically{
         display: table-cell;
         vertical-align: middle;
@@ -101,34 +127,42 @@ https://www.drupal.org/node/897638
         }
     }
     
-    article, details, figcaption, figure, hgroup, main, menu, nav, summary, button, fieldset, label, input, select, textarea,
-    .callToAction, .borderBox,{
+    article, details, figcaption, figure, hgroup, main, menu, nav, summary,
+    .borderBox,{
         &, &::before, &::after{
             box-sizing: border-box;
         }
     }
-
-    //Masks
+    
+/*___ Masks / Cover _____________________*/
     .mask{
         position: relative;
         overflow: hidden;
     }
-
-    //Cursors
+    .coverAll{
+        @include positionTRBL(0, 0, 0, 0);
+        position: absolute;
+    }
+    .coverAll_mask{
+        @include positionTRBL(0, 0, 0, 0);
+        position: absolute;
+        overflow: hidden;
+    }
+    
+/*___ Cursors ___________________________*/
     .cursorDefault{cursor: default}
     .cursorPointer{cursor: pointer}
     .cursorHelp{cursor: help}
     .cursorNone{cursor: none}
 }
 
+
 @if $classes_lists_floats_act_ALL == "on"{
-    //Lists and floats
-    .unstyled, .horizontal, .list_hyphenated,
-    %unstyled{list-style: $none}
+/*___ Lists and floats __________________*/
+    .unstyled, .horizontal{list-style: $none}
     .floatLeft, .horizontal li{float: $left}
-    .floatRight, .horizontal li.floatRight,
-    .horizontal.right li{float: $right}
-    .horizontalCenter, %horizontalCenter{
+    .floatRight{float: $right}
+    .horizontalCenter{
         list-style: none;
         margin-right: $auto;
         margin-left: $auto;
@@ -146,33 +180,19 @@ https://www.drupal.org/node/897638
     }
     .floatNone,
     .horizontal li.floatNone{float: $none}
-    %horizontal{
-        list-style: $none;
-        li{
-            float: $left;
-            &.floatRight{float: $right;}
-        }    
-        &.right{
-            li{float: $right;}
-        }
-    }
 }
 
-/* =============================================================================
-   Spacing Helpers ALL | Common [classes_all.scss]
-   ========================================================================== */
+
 @if $helpers_spacing_act_ALL == "on"{
-    //Spacing Helpers
+/*___ Spacing Helpers ___________________*/
     @include spacingHelpersClassesGenerator;
     .mra,.mha{margin-right: $auto}
     .mla,.mha{margin-left: $auto}
 }
 
-/* =============================================================================
-   Flexbox Classes ALL | Common [classes_all.scss]
-   ========================================================================== */
+
 @if $classes_flexbox_act_ALL == "on"{
-    //Flexbox
+/*___ Flexbox Classes ___________________*/
     .displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex{
         display: flex;
         flex-direction: row;

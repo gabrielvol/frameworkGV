@@ -44,29 +44,32 @@
 
 
 
+$font_families_map:(
 // Este mapa se usa con el mixin `fontFamilyCustomClassesGenerator` que se
-// encuentra en `[/scss/mixins_fonts.scss]`, genera una clase por cada fuente.
+// encuentra en `[/etc/css/scss/mixins_fonts.scss]`, genera una clase por cada
+// fuente.
 // Ej. 
 // .timesNewRoman { font-family: "Times New Roman"; }
 //
 // También se usa para asignar valor a la variable de cada fuente.
 // Ej.
+// $timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 // font-family: $timesNewRoman;
-//
-$fontFamilies_map:(
+
+
     arial:          Arial,
     roboto:         Roboto,
 //    timesNewRoman:  'Times New Roman'
 );
 
-
+$font_weights_map:(
 // Este mapa se usa con el mixin `fontFamilyWeightsGenerator` que se
-// encuentra en `[/scss/mixins_fonts.scss]`, genera una clase por cada fuente.
+// encuentra en `[/etc/css/scss/mixins_fonts.scss]`, genera una clase por cada fuente.
 // Ej. 
 // .timesNewRomanM { font-weight: 500; }
 // .timesNewRomanB { font-weight: 700; }
-//
-$fontWeights_map:(
+
+
 //    ralewayM:       500,
 //    ralewaySB:      600,
 //    ralewayXB:      800
@@ -74,23 +77,23 @@ $fontWeights_map:(
 
 
 /* // Variables de fuentes -------------------------------------------------- */
-$arial:         map-get($fontFamilies_map, arial), $fontFamilies_sans_list_fallback;
-$roboto:        map-get($fontFamilies_map, roboto), $fontFamilies_sans_list_fallback;
-//$timesNewRoman: map-get($fontFamilies_map, timesNewRoman), $fontFamilies_serif_list_fallback;
+$arial:         map-get($font_families_map, arial), $font_families_sans_list_fallback;
+$roboto:        map-get($font_families_map, roboto), $font_families_sans_list_fallback;
+//$timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 
 /*___ Creamos la variable de la fuente principal del sitio _*/
-$fontFamily_main_global:    $arial;
-$fontFamily_bold_global:    $fontFamily_main_global;
+$ftFamily_main_global:    $arial;
+$ftFamily_bold_global:    $ftFamily_main_global;
 
 
 /* // Main font Stack ------------------------------------------------------- */
-$fontStack_map:(
+$font_stack_map:(
 ///-- Este mapa genera la declaracion `font-family` en el archivo `[/scss/settings_text.scss]`
 //
 ///-- Primero la fuente principal
-    $fontFamily_main_global,
+    $ftFamily_main_global,
 ///-- En segundo lugar siguen las fuentes Arial, Roboto y Times New Roman,
-///-- si alguna esta asignada a la variable `$fontFamily_main_global`, la misma
+///-- si alguna esta asignada a la variable `$ftFamily_main_global`, la misma
 ///-- debe estar comentada a continuacion. 
     $arial, 
     $roboto,
@@ -99,7 +102,7 @@ $fontStack_map:(
 ///-- Luego de establecer las fuentes principales se elige uno de los sets para
 ///-- el fallback.
 ///-- Estas listas se encuentran detalladas en `[/scss/var_fonts.scss]`.
-    $fontFamilies_sans_list // Si se activa este set hay que comentar $timesNewRoman
-//    $fontFamilies_serif_list // Si se activa este set hay que comentar $arial y $roboto
-//    $fontFamilies_monospaced_list // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
+    $font_families_sans_list // Si se activa este set hay que comentar $timesNewRoman
+//    $font_families_serif_list // Si se activa este set hay que comentar $arial y $roboto
+//    $font_families_monospaced_list // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
 );

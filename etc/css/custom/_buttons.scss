@@ -43,6 +43,22 @@
 
 
 
+/* // Reset ----------------------------------------------------------------- */
+button,
+input[type="button"],
+html input[type="button"]{
+    border: none;
+}
+
+button{
+    &, &::before, &::after{
+        box-sizing: border-box;
+    }
+}
+button::focus-inner{}
+input::focus-inner{}
+
+
 /* // General --------------------------------------------------------------- */
 button{
     @if $button_pointer_act == "on"{
@@ -83,6 +99,10 @@ button{
         background-color: $bgGreyL;
         border-color: $bdGrey2XD;
         color: $greyXD;
+    }
+    
+    &, &::before, &::after{
+        box-sizing: border-box;
     }
     
 /*

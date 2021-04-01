@@ -4,7 +4,7 @@
 
 /* // Generador de clases por cada fuente ----------------------------------- */
 @mixin fontFamilyCustomClassesGenerator{
-    @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $fontFamilies_map {
+    @each $fontFamilyCustomClassesGeneratorMX_fontFamilyClassName, $fontFamilyCustomClassesGeneratorMX_fontFamilyName in $font_families_map {
         .#{$fontFamilyCustomClassesGeneratorMX_fontFamilyClassName}{font-family: $fontFamilyCustomClassesGeneratorMX_fontFamilyName;}
     }
 }
@@ -12,7 +12,7 @@
 
 /* // Generador de pesos por cada fuente ------------------------------------ */
 @mixin fontFamilyWeightsGenerator{
-    @each $fontFamilyWeightsGeneratorMX_fontFamilyClassName, $fontFamilyWeightsGeneratorMX_fontWeighValue in $fontWeights_map {
+    @each $fontFamilyWeightsGeneratorMX_fontFamilyClassName, $fontFamilyWeightsGeneratorMX_fontWeighValue in $font_weights_map {
         .#{$fontFamilyWeightsGeneratorMX_fontFamilyClassName}{font-weight: $fontFamilyWeightsGeneratorMX_fontWeighValue;}
     }
 }

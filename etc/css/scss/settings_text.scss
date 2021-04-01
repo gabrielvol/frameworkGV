@@ -1,41 +1,58 @@
 /* =============================================================================
    Text Settings | Etc [/etc/css/scss/settings_text.scss]
    ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // General --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
-    font-family: $fontStack_map;
-    font-weight: $fontWeight_global;
+    font-family: $font_stack_map;
+    font-weight: $ftWeight_global;
     font-size: $ftSize_global;
     line-height: $lineHeight_global;
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
     color: $ftColour_main_global;
 }
-/*
-input::input-placeholder, textarea::input-placeholder{
-    color: $form_placeholder_ftColour}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
-    color: $form_placeholder_ftColour}
-input::-moz-placeholder, textarea::-moz-placeholder{
-    color: $form_placeholder_ftColour}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder{
-    color: $form_placeholder_ftColour}
-input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $form_placeholder_ftColour}
-
-input::-moz-placeholder, textarea::-moz-placeholder{
-  opacity: 1}
-
-input:focus::input-placeholder, textarea:focus::input-placeholder{
-    color: $ftColour_main_global}
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
-    color: $ftColour_main_global}
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
-    color: $ftColour_main_global}
-input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
-    color: $ftColour_main_global}
-input:-moz-placeholder, textarea:-moz-placeholder{
-    color: $ftColour_main_global}
-*/
 h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
     a{
         font-family: inherit;
@@ -75,7 +92,7 @@ p, ul{
 }
 p, li{    
     b{
-        font-family: $fontFamily_bold_global;
+        font-family: $ftFamily_bold_global;
     }
     p, li, a, strong, dl, legend{
         font-size: 1em;
@@ -138,8 +155,8 @@ a.white{
         }
     }
 }
-@include colourLightClassesGenerator($colours_map_light_darkenValue);
-@include colourDarkClassesGenerator($colours_map_dark_lightenValue);
-@include anchorColoursLightClassesGenerator($anchor_ftColours_map_light_darkenValue);
-@include anchorColoursDarkClassesGenerator($anchor_ftColours_map_dark_lightenValue);
+@include colourLightClassesGenerator($colours_light_lightenValue);
+@include colourDarkClassesGenerator($colours_dark_lightenValue);
+@include anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_lightenValue);
+@include anchorColoursDarkClassesGenerator($colours_anchor_ftColours_dark_lightenValue);
 @include colourCustomHoverClassesGenerator;

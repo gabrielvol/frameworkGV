@@ -2,7 +2,7 @@
 @import "var/dir_var";
 
 /* // Activators ------------------------------------------------------------ */
-@import "act/responsive_act";
+@import "act/classes_useful_act";
 @import "act/logo_act";
 @import "act/buttons_act";
 @import "act/forms_act";
@@ -21,6 +21,7 @@
 @import "../scss/var_absolute";
 @import "var/zindex_var";
 @import "var/container_sizes_var";
+@import "../scss/var_container";
 @import "var/helpers_var";
 @import "var/animations_var";
  
@@ -94,8 +95,8 @@
 @import "../scss/functions_fontStroke";
 
 /* // Main CSS -------------------------------------------------------------- */
-@import "../scss/settingsHtmlBody";
-@import "styles_body";
+@import "../scss/settings_html_body";
+@import "body";
 @import "../scss/reset_main";
 @import "reset_custom";
 
@@ -114,31 +115,29 @@
 
 @import "../scss/classes_animations";
 @import "settings_animations";
-@import "../scss/classes_all";
-@import "../scss/classes_responsive";
+@import "../scss/classes_useful_all";
+@import "../scss/classes_useful_responsive";
 
 @import "../scss/settings_container";
 
-@import "styles_print";
+@import "print";
 
 @import "global";
+@import "focus";
 @import "buttons";
 //@import "breadcrumbs";
-//@import "error";
 //@import "media";
-
 @import "lists";
 
 //@import "../scss/settings_forms";
 //@import "forms";
-//@import "page_gracias";
 
 //@import "../scss/reset_forms_niceIt";
 //@import "forms_niceIt";
 //@import "forms_search";
 
 //@import "../scss/settings_tables";
-//@import "styles_tables";
+//@import "tables";
 
 @import "../scss/settings_popup";
 @import "popup";
@@ -164,6 +163,8 @@
 //@import "page_error";
 @import "page_index";
 //@import "page_contacto";
+//@import "page_gracias";
+
 //@import "Section";
 //@import "Section";
 //@import "Section";
