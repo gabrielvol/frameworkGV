@@ -84,15 +84,8 @@ form{
     input,
     select,
     textarea{
-        @include transition(1s);
-        @include borderStyle($form_input_bdColour);
         padding-right: 10px;
         padding-left: 10px;
-        font-family: $form_input_ftFamily; 
-        
-        &, &::before, &::after{
-            box-sizing: border-box;
-        }
     }
     
     input{
@@ -356,6 +349,10 @@ form{
             padding-left: 7px;
             font-family: $form_label_ftFamily;
             font-size: 1.1rem!important;
+
+            @if $googleFont_act == "on"{
+                font-weight: $form_label_ftWeight;
+            }
         }
 
         .form_label_msg_error{

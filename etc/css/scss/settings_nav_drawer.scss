@@ -49,6 +49,10 @@
                     > .nav_TLI{
                         color: $nav_item_level0_ftColour_BT;
                         font-family: $nav_ftFamily_BT;
+
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_ftWeight_BT;
+                        }
                     }
                 }  
                 
@@ -62,6 +66,10 @@
                     > .nav_TLI{
                         color: $nav_TLI_current_level0_ftColour_BT;
                         font-family: $nav_item_current_ftFamily_BT;
+
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_item_current_ftWeight_BT;
+                        }
                     }
                 }
             }
@@ -96,6 +104,10 @@
                     a,
                     .nav_TLI{
                         font-family: $nav_item_subNav_ftFamily_BT;
+
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_item_subNav_ftWeight_BT;
+                        }
                     }
 
                     .nav_item_current{
@@ -105,6 +117,10 @@
                         a,
                         .nav_TLI{
                             font-family: $nav_item_subNav_current_ftFamily_BT;
+
+                            @if $googleFont_act == "on"{
+                                font-weight: $nav_item_subNav_current_ftWeight_BT;
+                            }
                         } 
                     }
 

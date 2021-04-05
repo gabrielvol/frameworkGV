@@ -1,0 +1,61 @@
+/* =============================================================================
+   Fonts Activators | Custom [/etc/css/custom/act/fonts_act.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Activadores para fuentes.
+//
+// #activador #font #google
+
+
+/* // Listado --------------------------------------------------------------- */
+// 01 _ $googleFont_act
+//
+//
+// 01 _ $googleFont_act
+// Activa los if que se encuentran en `[/etc/css/custom/_forms.scss]`,
+// `[/etc/css/scss/settings_forms.scss]`, `[/etc/css/scss/settings_nav.scss]` y
+// `[/etc/css/scss/settings_nav_drawer.scss]`.
+//
+// Genera declaraciones `font-weight` para los elementos que tienen su fuente
+// declarada con una variable `$ftFamily`.
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // General --------------------------------------------------------------- */
+$googleFont_act:    off;

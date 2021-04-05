@@ -223,7 +223,7 @@
    Nav Arrows Backgrounds | Custom [/etc/css/custom/var/section_nav_arrows_var.scss]
    ========================================================================== */
 /* =============================================================================
-   Nav Fonts Variables | Custom [/etc/css/custom/var/section_nav_fonts.scss]
+   Nav Fonts Variables | Custom [/etc/css/custom/var/section_nav_fonts_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -302,7 +302,7 @@
 /* // Form Submit  ---------------------------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
 /* =============================================================================
-   Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts.scss]
+   Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts_var.scss]
    ========================================================================== */
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
@@ -414,7 +414,7 @@
    Opacity Mixins | Etc [/etc/css/scss/mixinsOpacity.scss]
    ========================================================================== */
 /* =============================================================================
-   Fonts Mixins | Etc [/etc/css/scss/mixinsFonts.scss]
+   Fonts Mixins | Etc [/etc/css/scss/mixins_fonts.scss]
    ========================================================================== */
 /* // Generador de clases por cada fuente ----------------------------------- */
 /* // Generador de pesos por cada fuente ------------------------------------ */

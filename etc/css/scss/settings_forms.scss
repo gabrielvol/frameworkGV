@@ -77,19 +77,19 @@ fieldset, label, button,
 input, select, textarea{
     .mobileForm &{
         @include beforeTablet{
-            font-size: $form_input_fontSize_BT;
+            font-size: $form_input_ftSize_BT;
         }
     }
     
     @include tabletOnly{
         .tabletForm &{
-            font-size: $form_input_fontSize_AT;
+            font-size: $form_input_ftSize_AT;
         }
     }
     
     @include afterTabletLandscape{
         form &{
-            font-size: $form_input_fontSize_ATL;
+            font-size: $form_input_ftSize_ATL;
         }
     }
 }
@@ -238,9 +238,15 @@ form{
     }
     
     input, select, textarea{
+        @include borderStyle($form_input_bdColour);
+        transition: all 1s ease, background-position 0s ease;
         background-color: $form_input_bgColour;
         color: $form_input_ftColour;
-        transition: all 1s ease, background-position 0s ease;
+        font-family: $form_input_ftFamily; 
+
+        @if $googleFont_act == "on"{
+            font-weight: $form_input_ftWeight;
+        }
         
         &:focus{
             box-shadow: $form_input_shadowInset;
@@ -251,6 +257,10 @@ form{
             border-color: $form_input_bdColour_hover;
             color: $form_input_ftColour_hover;
         }  
+        
+        &, &::before, &::after{
+            box-sizing: border-box;
+        }
     }
     
     input{    
@@ -276,6 +286,10 @@ form{
         @include transition(0.7s);
         background-color: $button_form_submit_bgColour;
         color: $button_form_submit_ftColour;
+
+        @if $googleFont_act == "on"{
+            font-weight: $button_form_submit_ftWeight;
+        }
 
         &:focus, &:hover{
             background-color: $button_form_submit_bgColour_hover;
@@ -360,7 +374,11 @@ form{
             display: block\0/!important; /* IE8 + IE9 */
             padding-left: 7px;
             margin-bottom: $zero;
-            font-family: $formLabelFontFamily;
+            font-family: $form_label_ftFamily;
+
+            @if $googleFont_act == "on"{
+                font-weight: $form_label_ftWeight;
+            }
 
             @include beforeTablet{
                 .mobileForm &{
