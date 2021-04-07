@@ -2,7 +2,7 @@
    Nav After Tablet Styles | Custom [/etc/css/custom/section_nav_AT.scss]
    ========================================================================== */
 .nav_main{
-    @include navAT{   
+    @include navAT{ // min-width 768px; // $mq_tablet_width_min 
         @if $header_logoNav_floated_flexbox_act == "on"{
             width: calc(100% - #{$logo_width_AT});
         } 

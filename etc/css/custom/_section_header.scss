@@ -17,14 +17,15 @@
         
         &,
         a,
-        img{}
+        img{
+            display: block;
+        }
         
         &,
         a{}
         
         a,
         img{
-            display: block;
         }
         
         a{

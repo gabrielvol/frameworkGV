@@ -2,13 +2,13 @@
    Nav Drawer Styles | Custom [/etc/css/custom/section_nav_drawer.scss]
    ========================================================================== */
 @if $nav_drawer_act == "on"{
-    @include navBT{
+    @include navBT{ // max width 767px; // $mq_mobile_width_max
         .nav_main{
-            @include positionTR(10px, 10px);
+            @include positionTR(0, 0);
             position: fixed;
             
             .button_hamb{
-                @include positionTR(0, 0);
+                @include positionTR(10px, 10px);
                 position: absolute;
             }
             
@@ -27,7 +27,7 @@
                     text-indent: -9999px;
                     
                 } @else {
-                    width: 90px;
+                    width: $button_hamb_open_width;
                     height: $button_hamb_open_height;
                     background-position: 10px center;
                     border: 1px solid $button_hamb_open_bdColour!important;
