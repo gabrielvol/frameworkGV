@@ -48,7 +48,7 @@
         height: $footer_height_ALL;
     }
     
-    @if $page_index_only_fullHeight_act_ALL{
+    @if $page_index_only_fullHeight_act_ALL == "on"{
         &.footer_index{
             height: $footer_height_ALL;
         }
