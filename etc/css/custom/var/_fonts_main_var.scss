@@ -80,6 +80,7 @@ $font_weights_map:(
 $arial:         map-get($font_families_map, arial), $font_families_sans_list_fallback;
 $roboto:        map-get($font_families_map, roboto), $font_families_sans_list_fallback;
 //$timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
+//$monospacedFont: map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
 
 /*___ Creamos la variable de la fuente principal del sitio _*/
 $ftFamily_main_global:    $arial;
