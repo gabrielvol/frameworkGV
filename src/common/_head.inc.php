@@ -22,6 +22,7 @@
 <meta name="description" content="<?php echo $site_desc; ?>">
 <meta name="description" content="<?php if($gettext_idioma == 'en_GB'){ echo $site_desc_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_desc_PT; } else { echo $site_desc; } ?>">
 
+<link href="<?php echo $url_dir; ?>/css/uikit.min.css" rel="stylesheet">
 <link href="<?php echo $url_dir; ?>/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
 
