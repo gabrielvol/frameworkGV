@@ -1,14 +1,14 @@
 /* =============================================================================
    Modal y Popups Settings | Etc [/etc/css/scss/settings_popup.scss]
    ========================================================================== */
-.modal_bg_global,
+.modal_global,
 .modal_nav{
     @include positionTRBL();
     position: fixed;
     z-index: $zIndex_modal_bg;
 }
 
-.modal_bg_global{
+.modal_global{
     background-color: $black_rgba_80;
 }
 

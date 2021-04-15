@@ -22,7 +22,7 @@
             }    
             
             echo '</ul>
-            <div class="modal_bg_global modal_nav">&nbsp;</div>';
+            <div class="modal_global modal_nav">&nbsp;</div>';
         }
     ?>
 </nav>

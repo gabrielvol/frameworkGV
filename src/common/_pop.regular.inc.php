@@ -4,4 +4,4 @@
 
     </div>
 </div>
-<div class="modal_warning modal_bg_global displayNone"></div>
+<div class="modal_global displayNone"></div>

@@ -2008,7 +2008,7 @@ ol {
 /* =============================================================================
    Modal y Popups Settings | Etc [/etc/css/scss/settings_popup.scss]
    ========================================================================== */
-.modal_bg_global,
+.modal_global,
 .modal_nav {
   top: 0;
   right: 0;
@@ -2017,7 +2017,7 @@ ol {
   position: fixed;
   z-index: 9000; }
 
-.modal_bg_global {
+.modal_global {
   background-color: rgba(0, 0, 0, 0.8); }
 
 .modal_nav {

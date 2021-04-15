@@ -1,4 +1,4 @@
-<div class="pop_general pop_warning borderBox pal" role="alertdialog" aria-labelledby="idlabelledby">
+<div class="pop_general pop_warning" role="alertdialog" aria-labelledby="idlabelledby">
     <div role="document" tabindex="0">
         <button type="button" class="button_pop_close"><?php echo _("Cerrar Ventana"); ?></button>
         <h2 id="idlabelledby" class="mbm alignCenter"><?php echo _("titulooooooo"); ?></h2>
@@ -7,4 +7,4 @@
         <button type="button" class="button_pop_submit bgWhite mtl mha arial bold black alignCenter upperCase"><?php echo _("OK"); ?></button>
     </div>
 </div>
-<div class="modal_warning modal_bg_global displayNone"></div>
+<div class="modal_global modal_warning displayNone"></div>

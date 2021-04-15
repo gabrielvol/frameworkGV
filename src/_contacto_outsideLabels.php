@@ -39,10 +39,10 @@
                 <form method="post" class="mha" id="formID">
                     <?php
                         include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/form.send.inc.php');
-                        echo $form_status_msg__formName;
+                        echo $form_status_msg__formMain;
 
                         if($section_has_mandatoryMsg_act == 1) {
-                            echo '<div class="msg_mandatory '.$msg_mandatoryClasses__formName.'">'.$msg_mandatory__formName.'</div>';
+                            echo '<div class="msg_mandatory '.$msg_mandatoryClasses__formMain.'">'.$msg_mandatory__formMain.'</div>';
                         }                
                     ?>
                     <div class="msg_mandatory <?php echo $msg_mandatoryClasses ?>">

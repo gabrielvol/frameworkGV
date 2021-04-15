@@ -7,4 +7,4 @@
     </div>
 </div>
 
-<div class="modal_video modal_bg_global displayNone"></div>
+<div class="modal_global modal_video displayNone"></div>

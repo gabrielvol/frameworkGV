@@ -210,6 +210,8 @@ button{
 .button_form_submit{        
     font-size: 1.2rem;
     text-transform: uppercase;
+    
+    &:focus, &:hover{}
 
     @include afterTablet{
         @include centerCustom(50%);

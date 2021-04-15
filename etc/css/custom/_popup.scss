@@ -1,7 +1,7 @@
-/* =============================================================================
+/* ===================px;==========================================================
    Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
-.modal_bg_global{}
+.modal_global{}
 
 .modal_warning{
     /*
@@ -22,17 +22,22 @@
 }
 
 .pop_general{
+    box-sizing: border-box;
     position: fixed;
     top: 80px;
     left: 50%;
+    border-radius: $bdRadius_global; 
+    background-color: $bgWhite;
     
     .button_pop_close{
         @include bgSvg(button_pop_close); 
+        position: absolute;
         border-radius: 50%;
+        border: 1px solid $bdGreyXD!important; 
         width: $button_pop_close_size!important;
         height: $button_pop_close_size!important;
         background-size: 13px;
-        border: 1px solid $bdGreyXD!important; 
+        text-indent: -9999px;
 
         &, &:focus, &:hover{
             background-color: $bgWhite;
@@ -60,45 +65,6 @@
     }
 }
 
-.pop_form{
-    box-sizing: border-box;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: $bgWhite;
-    border-radius: 12px;
-    height: 70vh;
-    
-    &,
-    .button_pop_close{
-        box-shadow: $bxShadow_main;
-    }
-    
-    .mobileForm{ 
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-        
-    @include mobileOnly{
-        width: $pop_form_width_MO;
-        margin-left: calc(-1 * calc(#{$pop_form_width_MO} / 2));
-    }
-
-    @include afterMobileLandscape{
-        width: $pop_form_width_AML;
-        margin-left: calc(-1 * calc(#{$pop_form_width_AML} / 2));
-    }
-
-    @include afterMobile600{
-        width: $pop_form_width_600;
-        margin-left: calc(-1 * calc(#{$pop_form_width_600} / 2));
-    }
-    
-    @include afterTablet{
-        width: $pop_form_width_AT;
-        margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
-    }
-}
-
 .pop_warning{
     /* CSS para usar centerPopup
         @include centerPopup(100px,100px,50%);
@@ -107,9 +73,7 @@
     */      
 
     top: 20%;
-    left: 50%;
-    border-radius: $bdRadius_global; 
-    background-color: $form_status_msg_ok_bgColour;          
+    left: 50%;         
     box-shadow: 0 0 15px 0 $black;
 
     h2,
@@ -185,6 +149,42 @@
         }
     }
 }
+
+.pop_form{
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 70vh;
+    
+    &,
+    .button_pop_close{
+        box-shadow: $bxShadow_main;
+    }
+    
+    .mobileForm{ 
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+        
+    @include mobileOnly{
+        width: $pop_form_width_MO;
+        margin-left: calc(-1 * calc(#{$pop_form_width_MO} / 2));
+    }
+
+    @include afterMobileLandscape{
+        width: $pop_form_width_AML;
+        margin-left: calc(-1 * calc(#{$pop_form_width_AML} / 2));
+    }
+
+    @include afterMobile600{
+        width: $pop_form_width_600;
+        margin-left: calc(-1 * calc(#{$pop_form_width_600} / 2));
+    }
+    
+    @include afterTablet{
+        width: $pop_form_width_AT;
+        margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
+    }
+}
     
 .pop_video{
     box-shadow: $bxShadow_video;
@@ -218,10 +218,22 @@
 
 /* // Form status message --------------------------------------------------- */
 .pop_formStatus{
+    padding: 20px!important;
+        
     h2{
         height: $auto;
         font-family: $form_pop_title_ftFamily;
         line-height: 1.2rem!important;
+    }
+    
+    .button_pop_submit{
+        background-color: $bgWhite;
+        margin: 20px auto 0;
+        color: $black;
+        font-family: $arial;
+        font-weight: 700;
+        text-align: center;        
+        text-transform: uppercase;
     }
     
     @include beforeMobile650{
