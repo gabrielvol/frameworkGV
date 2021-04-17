@@ -333,7 +333,7 @@
 /* // Table Background Colours ---------------------------------------------- */
 /* // Striped Table --------------------------------------------------------- */
 /* =============================================================================
-   Global Variables | Custom [/etc/css/custom/var/global.scss]
+   Global Variables | Custom [/etc/css/custom/var/global_var.scss]
    ========================================================================== */
 /* =============================================================================
    Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
@@ -1729,7 +1729,7 @@ article, article::before, article::after, details, details::before, details::aft
     page-break-inside: avoid; } }
 
 /* =============================================================================
-   Global Styles | Custom [/etc/css/custom/global.scss]
+   Global Styles | Custom [/etc/css/custom/global_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
