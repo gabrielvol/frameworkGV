@@ -14,7 +14,7 @@
     $site_desc              = $site_desc_global;
 //  $site_desc_GB           = $site_desc_global_GB;
     
-    $openGraph_title            = $site_title_GB;
+    $openGraph_title            = $site_title;
 //  $openGraph_title_GB         = $site_title_GB;
     $openGraph_desc             = $openGraph_desc_global;
 //  $openGraph_desc_GB          = $openGraph_desc_global_GB;

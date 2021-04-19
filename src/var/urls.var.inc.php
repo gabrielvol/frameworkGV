@@ -47,6 +47,7 @@
     
     
 /* // href ------------------------------------------------------------------ */ 
+    $href_root          = 'href="'. $url_root .'"'; 
     $href_index         = 'href="'. $url_index .'"';
     $href_contacto      = 'href="'. $url_contacto .'"';
 //    $href-PAGINA        = 'href="'. $url_PAGINA .'"';
