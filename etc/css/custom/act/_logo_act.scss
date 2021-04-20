@@ -13,6 +13,8 @@
 //
 //
 // 01 _ $logo_bgImage_before_act
+// REF `[/src/var/act/header.act.inc.php]`
+//
 // Activa los if que se encuentran en `[/etc/css/custom/section_header.scss]`
 //
 // Genera clases para el elemento `div.logo_before` detras del logo que tiene
@@ -20,8 +22,7 @@
 // En `[/etc/img/logo_bg_before.psd]` hay un template para crearla.
 //
 // Tambien genera clases para los tamanos de `.logo_header`, `a` e `img` dentro.
-//
-// VER SEE `[/src/var/act/header.act.inc.php]`
+
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -37,6 +38,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after
@@ -60,4 +62,4 @@
 
 
 
-$logo_bgImage_before_act:     off; // VER SEE `[/src/var/act/header.act.inc.php]`
+$logo_bgImage_before_act:     off; // VER `[/src/var/act/header.act.inc.php]`

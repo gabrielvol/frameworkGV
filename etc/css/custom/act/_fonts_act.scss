@@ -5,7 +5,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para fuentes.
 //
-// #activador #font #google
+// #activador #font #ftWeight #google
 
 
 /* // Listado --------------------------------------------------------------- */
@@ -13,12 +13,17 @@
 //
 //
 // 01 _ $googleFont_act
-// Activa los if que se encuentran en `[/etc/css/custom/_forms.scss]`,
-// `[/etc/css/scss/settings_forms.scss]`, `[/etc/css/scss/settings_nav.scss]` y
+// REF [01] en `[/etc/css/custom/act/fonts_act.scss]`
+//
+// Activa los if que se encuentran en
+// `[/etc/css/custom/_forms.scss]`,
+// `[/etc/css/scss/settings_forms.scss]`,
+// `[/etc/css/scss/settings_nav.scss]` y
 // `[/etc/css/scss/settings_nav_drawer.scss]`.
 //
 // Genera declaraciones `font-weight` para los elementos que tienen su fuente
-// declarada con una variable `$ftFamily`.
+// cargada desde Google Fonts declarada con una variable `$ftFamily` por CSS.
+
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -34,6 +39,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after

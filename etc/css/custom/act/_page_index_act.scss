@@ -9,13 +9,15 @@
 
 
 /* // Listado --------------------------------------------------------------- */
-// 01 _ Full Height
+// 01 _ Page index Full Height
 // 02 _ Index Only Full Height
 //
 //
-// 01 _ Full Height
-// Activa los if que se encuentran en `[/etc/css/custom/imp/_page_index_fullHeight_imp.scss]`
-// y se importan en `[/etc/css/custom/_page_index.scss]`.
+// 01 _ Page index Full Height
+// Activa los if que se encuentran en
+// `[/etc/css/custom/imp/page_index_fullHeight_imp.scss]`
+// y se importa en
+// `[/etc/css/custom/page_index.scss]`
 //
 // Ej. $page_index_fullHeight_act_AML = "on" imprime:
 // @media (min-width: 500px) {
@@ -26,10 +28,17 @@
 //
 //
 // 02 _ Index Only Full Height
-// Activa los if que se encuentran en `[/etc/css/custom/imp/_page_index_fullHeight_imp.scss]`,
-// `[/etc/css/custom/_section_header.scss]` y `[/etc/css/custom/_section_footer.scss]`.
-// El archivo `[/etc/css/custom/imp/_page_index_fullHeight_imp.scss]` se importa
-// en `[/etc/css/custom/_page_index.scss]`.
+// Activa los if que se encuentran en
+// `[/etc/css/custom/imp/page_index_fullHeight_imp.scss]`,
+// `[/etc/css/custom/imp/section_footer_fullHeight_imp.scss]` y
+// `[/etc/css/custom/imp/section_header_fullHeight_imp.scss]`
+//
+// y se importan en
+// `[/etc/css/custom/page_index.scss]`,
+// `[/etc/css/custom/section_footer.scss]` y 
+// `[/etc/css/custom/section_header.scss]`
+// respectivamente.
+//
 // Además de imprimir lo mismo que `01 Full Height` imprime:
 //
 // #header.header_index{
@@ -37,7 +46,7 @@
 // }
 //
 // #footer.footer_index{
-//     height: $header_height;
+//     height: $footer_height;
 // }
 
 
@@ -55,6 +64,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after
@@ -77,7 +87,8 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
     
-/* // 01 Full height -------------------------------------------------------- */
+    
+// 01 _ Page index Full Height ---------------------------------------------- */
 $page_index_fullHeight_act_ALL:     off;
 $page_index_fullHeight_act_MO:      off;
 $page_index_fullHeight_act_AML:     off;

@@ -7,6 +7,7 @@
    Useful Classes Activators | Custom [/etc/css/custom/act/classes_useful_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // All ------------------------------------------------------------------- */
 /* // Mobile Only MO -------------------------------------------------------- */
@@ -51,6 +52,13 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* =============================================================================
+   Fonts Activators | Custom [/etc/css/custom/act/fonts_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // General --------------------------------------------------------------- */
 /* =============================================================================
    Text Activators | Custom [/etc/css/custom/act/text_act.scss]
    ========================================================================== */
@@ -99,6 +107,7 @@
 /* // Sans Serif ------------------------------------------------------------ */
 /* // Serif ----------------------------------------------------------------- */
 /* // Monoespaciadas -------------------------------------------------------- */
+/* // Font Sizes ------------------------------------------------------------ */
 /* =============================================================================
    Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
    ========================================================================== */
@@ -150,8 +159,10 @@
 /* // Spacing --------------------------------------------------------------- */
 /* // Border Helpers Variables  --------------------------------------------- */
 /* =============================================================================
-   Animation Variables | Custom [/etc/css/custom/var/animations.scss]
+   Animation Variables | Custom [/etc/css/custom/var/animations_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Colours Main Variables | Custom [/etc/css/custom/var/colours_main.scss]
    ========================================================================== */
@@ -278,16 +289,20 @@
 /* =============================================================================
    Buttons Variables | Custom [/etc/css/custom/var/buttons_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
    Social Variables | Custom [/etc/css/custom/var/section_social_var.scss]
    ========================================================================== */
 /* // Social Sizes ---------------------------------------------------------- */
 /* // Social Colours -------------------------------------------------------- */
 /* =============================================================================
-   Social Variables | Custom [/etc/css/custom/var/popup_var.scss]
+   Popup Variables | Custom [/etc/css/custom/var/popup_var.scss]
    ========================================================================== */
-/* // Popup Sizes ---------------------------------------------------------- */
-/* // Popup Colours -------------------------------------------------------- */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Popup Sizes ----------------------------------------------------------- */
+/* // Popup Colours --------------------------------------------------------- */
 /* =============================================================================
    Footer Variables | Custom [/etc/css/custom/var/section_footer_var.scss]
    ========================================================================== */
@@ -304,6 +319,7 @@
 /* =============================================================================
    Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts_var.scss]
    ========================================================================== */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
 /* // Form Submit  ---------------------------------------------------------- */
@@ -438,7 +454,7 @@
 /* // Mixin centrado custom ------------------------------------------------- */
 /* // Mixin para centrar pop_general ------------------------------------------- */
 /* =============================================================================
-   Spacing Helpers Mixins | Common [mixin_spacing.scss]
+   Spacing Helpers Mixins | Etc [/etc/css/scss/mixin_spacing.scss]
    ========================================================================== */
 /* =============================================================================
    Border Helpers Mixins | Etc [/etc/css/scss/mixins_borders.scss]
@@ -458,7 +474,7 @@
    ========================================================================== */
 /* // Functions ------------------------------------------------------------- */
 /* =============================================================================
-   Angled Edges Functions | Common [functions_angledEdges.scss]scss]
+   Angled Edges Functions | Etc [/etc/css/scss/functions_angledEdges.scss]scss]
    ========================================================================== */
 /*
 Usage
@@ -590,6 +606,7 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 /* =============================================================================
    Font-face | Custom [/etc/css/custom/fontFace.scss]
    ========================================================================== */
+/* // FontName -------------------------------------------------------------- */
 /*
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
@@ -785,6 +802,15 @@ a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHove
 a.errorColour:focus, a.errorColour:hover {
   color: #940d12; }
 
+.focusColour, .focusColour b, .focusColour strong, .focusColour i, .focusColour em {
+  color: #c6c6c6; }
+
+a.focusColour, a.focusColour:active, a.focusColour:visited, a.focusColour.noHover:focus, a.focusColour.noHover:hover {
+  color: #c6c6c6; }
+
+a.focusColour:focus, a.focusColour:hover {
+  color: #939393; }
+
 .greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
   color: #4d4d4d; }
 
@@ -936,6 +962,9 @@ b, strong,
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap; }
+
+.noSelect {
+  user-select: none; }
 
 /* =============================================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
@@ -1751,6 +1780,17 @@ article, article::before, article::after, details, details::before, details::aft
    Secondary Separator
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* // Secondary Separator --------------------------------------------------- */
+/*___ Secondary _________________________*/
+/* =============================================================================
+   Focus Styles | Custom [/etc/css/custom/focus.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Global ---------------------------------------------------------------- */
+*:focus {
+  outline: 2px solid #c6c6c6;
+  outline-offset: 0.25rem; }
+
 /* =============================================================================
    Button Styles | Custom [/etc/css/custom/buttons.scss]
    ========================================================================== */
@@ -2037,7 +2077,7 @@ ol {
     z-index: 9900;
     text-indent: -9999px; }
 
-/* =============================================================================
+/* ===================px;==========================================================
    Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
 .modal_warning {
@@ -2056,20 +2096,25 @@ ol {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .pop_general {
+  box-sizing: border-box;
   position: fixed;
   top: 80px;
-  left: 50%; }
+  left: 50%;
+  border-radius: 6px;
+  background-color: #fff; }
   .pop_general .button_pop_close {
     background-color: transparent;
     background-image: url("/nuevo/img/button_pop_close.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    position: absolute;
     border-radius: 50%;
+    border: 1px solid #666 !important;
     width: 33px !important;
     height: 33px !important;
     background-size: 13px;
-    border: 1px solid #666 !important; }
+    text-indent: -9999px; }
     .pop_general .button_pop_close, .pop_general .button_pop_close:focus, .pop_general .button_pop_close:hover {
       background-color: #fff; }
   .pop_general .pop_innerContainer {
@@ -2088,36 +2133,6 @@ ol {
       top: -35px;
       right: -35px; } }
 
-.pop_form {
-  box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  height: 70vh; }
-  .pop_form,
-  .pop_form .button_pop_close {
-    box-shadow: 0 0 10px 0 #666; }
-  .pop_form .mobileForm {
-    padding-top: 20px;
-    padding-bottom: 40px; }
-  @media (max-width: 499px) {
-    .pop_form {
-      width: 320px;
-      margin-left: calc(-1 * calc(320px / 2)); } }
-  @media (min-width: 500px) {
-    .pop_form {
-      width: 490px;
-      margin-left: calc(-1 * calc(490px / 2)); } }
-  @media (min-width: 601px) {
-    .pop_form {
-      width: 590px;
-      margin-left: calc(-1 * calc(590px / 2)); } }
-  @media (min-width: 767px) {
-    .pop_form {
-      width: 650px;
-      margin-left: calc(-1 * calc(650px / 2)); } }
-
 .pop_warning {
   /* CSS para usar centerPopup
         @include centerPopup(100px,100px,50%);
@@ -2126,8 +2141,6 @@ ol {
     */
   top: 20%;
   left: 50%;
-  border-radius: 6px;
-  background-color: #fff;
   box-shadow: 0 0 15px 0 #000; }
   .pop_warning h2,
   .pop_warning h3 {
@@ -2184,6 +2197,33 @@ ol {
         top: 10px;
         right: 10px; } }
 
+.pop_form {
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 70vh; }
+  .pop_form,
+  .pop_form .button_pop_close {
+    box-shadow: 0 0 10px 0 #666; }
+  .pop_form .mobileForm {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+  @media (max-width: 499px) {
+    .pop_form {
+      width: 320px;
+      margin-left: calc(-1 * calc(320px / 2)); } }
+  @media (min-width: 500px) {
+    .pop_form {
+      width: 490px;
+      margin-left: calc(-1 * calc(490px / 2)); } }
+  @media (min-width: 601px) {
+    .pop_form {
+      width: 590px;
+      margin-left: calc(-1 * calc(590px / 2)); } }
+  @media (min-width: 767px) {
+    .pop_form {
+      width: 650px;
+      margin-left: calc(-1 * calc(650px / 2)); } }
+
 .pop_video {
   box-shadow: 0 0 10px 0 #666; }
   .pop_video .video_mask {
@@ -2209,14 +2249,23 @@ ol {
       margin-left: calc(-1 * calc(600px / 2)); } }
 
 /* // Form status message --------------------------------------------------- */
-.pop_formStatus h2 {
-  height: auto !important;
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
-  line-height: 1.2rem !important; }
-
-@media (max-width: 650px) {
+.pop_formStatus {
+  padding: 20px !important; }
   .pop_formStatus h2 {
-    padding-top: 30px; } }
+    height: auto !important;
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    line-height: 1.2rem !important; }
+  .pop_formStatus .button_pop_submit {
+    background-color: #fff;
+    margin: 20px auto 0;
+    color: #000;
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+  @media (max-width: 650px) {
+    .pop_formStatus h2 {
+      padding-top: 30px; } }
 
 /* =============================================================================
    Header Styles | Custom [/etc/css/custom/section_header.scss]
@@ -2240,6 +2289,7 @@ ol {
   height: 112px; }
   #header .logo_header {
     margin-bottom: 0; }
+    #header .logo_header,
     #header .logo_header a,
     #header .logo_header img {
       display: block; }
@@ -2320,9 +2370,6 @@ ol {
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-#footer.footer_index {
-  height: 100px; }
-
 #footer {
   /* // Button Site Top ------------------------------------------------------- */
   /* -------------------------------------------------------------------------- */ }
@@ -2523,12 +2570,12 @@ nav li:focus a, nav li:hover a {
    ========================================================================== */
 @media (max-width: 767px) {
   .nav_main {
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     position: fixed; }
     .nav_main .button_hamb {
-      top: 0;
-      right: 0;
+      top: 10px;
+      right: 10px;
       position: absolute; }
     .nav_main .button_hamb_open {
       border-radius: 6px;

@@ -3,8 +3,74 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de variables activadoras.
+// Activadores para clases useful.
+//
+// #activador #class #useful #responsive #container #padding #margin #flexbox
+// #text #list #background #border
 
+
+/* // Listado --------------------------------------------------------------- */
+// 01 _ $classes_container_act
+// 02 _ $helpers_spacing_act
+// 03 _ $classes_position_display_mask_cursor_act
+// 04 _ $classes_flexbox_act
+// 05 _ $classes_lists_floats_act
+// 06 _ $classes_text_act
+// 07 _ $classes_bg_bd_NO_act
+//
+//
+// 01 _ $classes_container_act
+// Activa los if que se encuentran en  `[/etc/css/scss/settings_container.scss]`
+// Genera los margenes negativos para cada media query para la clase
+// `.container_centered_absolute` que se usa junto con la clase `.container`
+//
+// Ej. con $classes_container_act_AML
+// @media (min-width: 500px) {
+//     .container.container_centered_absoluteAML{
+//         position: absolute;
+//         left: 50%;
+//         margin-left: calc(-1 * calc(85% / 2));
+//     }
+// }
+// @media (min-width: 767px) {
+//     .container.container_centered_absoluteAML{
+//         margin-left: calc(-1 * calc(720px / 2));
+//     }
+// }
+// @media (min-width: 1024px) {
+//     .container.container_centered_absoluteAML{
+//         margin-left: calc(-1 * calc(900px / 2));
+//     }
+// }
+// @media (min-width: 1200px) {
+//     .container.container_centered_absoluteAML{
+//         margin-left: calc(-1 * calc(900px / 2));
+//     }
+// }
+// @media (min-width: 1600px) {
+//     .container.container_centered_absoluteAML{
+//         margin-left: calc(-1 * calc(900px / 2));
+//     }
+// }
+//
+//
+// 02 _ $helpers_spacing_act
+// 03 _ $classes_position_display_mask_cursor_act
+// 04 _ $classes_flexbox_act
+// 05 _ $classes_lists_floats_act
+// Activan los if que se encuentran en
+// `[/etc/css/scss/classes_useful_all.scss]` y
+// `[/etc/css/scss/classes_useful_responsive.scss]`
+//
+// Genera clases para spacing helpers, positiones, display, mascaras, flexbox y
+// listas.
+//
+//
+// 06 _ $classes_text_act
+// 07 _ $classes_bg_bd_NO_act
+// Activan los if que se encuentran en `[/etc/css/scss/classes_useful_responsive.scss]`
+//
+// Activa clases responsive para texto y valores nulos para bordes y fondos.
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -20,6 +86,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after
@@ -44,10 +111,10 @@
 
 
 /* // All ------------------------------------------------------------------- */
-$helpers_spacing_act_ALL:                             on;
-$classes_position_display_mask_cursor_act_ALL:     on;
-$classes_flexbox_act_ALL:                             on;
-$classes_lists_floats_act_ALL:                        on;
+$helpers_spacing_act_ALL:                       on;
+$classes_position_display_mask_cursor_act_ALL:  on;
+$classes_flexbox_act_ALL:                       on;
+$classes_lists_floats_act_ALL:                  on;
 
   
 /* // Mobile Only MO -------------------------------------------------------- */

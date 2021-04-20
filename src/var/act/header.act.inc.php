@@ -17,10 +17,8 @@
 // Activa los if que se encuentran en `[/src/common/header.inc.php]`
 //
 // Genera un `div.logo_before` que envuelve al logo.
-//
-// VER / SEE `[/etc/css/custom/act/logo_act.scss]`
 
 
-$logo_bgImage_before_act    = 0; // VER / SEE `[/etc/css/custom/act/logo_act.scss]`
+$logo_bgImage_before_act    = 0; // VER [01] en `[/etc/css/custom/act/logo_act.scss]`
 
 ?>

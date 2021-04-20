@@ -20,6 +20,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after
@@ -73,4 +74,4 @@ $button_hamb_close_bdColour:        transparent;
 
 /* // Button Hambuger Font -------------------------------------------------- */
 $button_hamb_ftFamily:           $arial;
-$button_hamb_ftWeight:           400; // VER SEE `[/etc/css/custom/act/fonts_act.scss]`
+$button_hamb_ftWeight:           400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`

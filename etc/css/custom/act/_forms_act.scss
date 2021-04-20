@@ -15,7 +15,8 @@
 //
 //
 // 01 _ $form_label_inside_act
-// Activa los if que se encuentran en `[/etc/css/custom/forms.scss]` y
+// Activa los if que se encuentran en
+// `[/etc/css/custom/forms.scss]` y
 // `[/etc/css/scss/settings_forms.scss]`
 //
 // Genera estilos para campos dentro o fuera de la label, segun este activada.
@@ -24,7 +25,8 @@
 // 02 _ $form_label_coloured_act
 // Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
 //
-// Genera selectores de color para `label` y sus pseudoclases `:focus` y `:hover`.
+// Genera selectores de color para `label` y sus pseudoclases `:focus` y
+// `:hover`.
 //
 // Ej. con color verdeAgua:
 // label.verdeAgua,
@@ -60,6 +62,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after

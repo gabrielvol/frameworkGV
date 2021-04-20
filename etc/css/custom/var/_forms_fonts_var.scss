@@ -15,6 +15,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after
@@ -40,15 +41,15 @@
 
 /* // Form Label ------------------------------------------------------------ */
 $form_label_ftFamily:   $ftFamily_main_global;
-$form_label_ftWeight:   400; // VER SEE `[/etc/css/custom/act/fonts_act.scss]`
+$form_label_ftWeight:   400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
 
 /* // Form Input ------------------------------------------------------------ */
 $form_input_ftFamily:   $ftFamily_main_global;
-$form_input_ftWeight:   400; // VER SEE `[/etc/css/custom/act/fonts_act.scss]`
+$form_input_ftWeight:   400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
 
 /* // Form Submit  ---------------------------------------------------------- */
 $button_form_submit_ftFamily:   $ftFamily_main_global;
-$button_form_submit_ftWeight:   400; // VER SEE `[/etc/css/custom/act/fonts_act.scss]`
+$button_form_submit_ftWeight:   400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
 
 /* // Form status message --------------------------------------------------- */
 $form_pop_title_ftFamily: $ftFamily_main_global;

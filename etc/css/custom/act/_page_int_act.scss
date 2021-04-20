@@ -6,6 +6,22 @@
 // Archivo de variables activadoras.
 
 
+/* // Listado --------------------------------------------------------------- */
+// 01 _ Page int Full Height
+//
+//
+// 01 _ Page int Full Height
+// Activa los if que se encuentran en
+// `[/etc/css/custom/imp/_page_int_section_fullHeight_imp.scss]`,
+// `[/etc/css/custom/imp/section_footer_fullHeight_imp.scss]` y
+// `[/etc/css/custom/imp/section_header_fullHeight_imp.scss]`
+//
+// y se importan en `[/etc/css/custom/global.scss]`,
+// `[/etc/css/custom/section_footer.scss]` y 
+// `[/etc/css/custom/section_header.scss]`
+// respectivamente.
+
+
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 ///-- Inicio del nombre
@@ -20,6 +36,7 @@
 // _mx                  = mixin
 // _act                 = activacion
 // _ani                 = animacion
+// _hs                  = hash
 // _hover               = se usa con pseudoclases :focus y :hover
 // _before              = se usa con pseudoelementos ::before
 // _after               = se usa con pseudoelementos ::after
@@ -43,7 +60,7 @@
 
 
     
-/* // Full height ----------------------------------------------------------- */
+/* // 01 Page int Full height ----------------------------------------------- */
 $page_int_fullHeight_act_ALL:  off;
 $page_int_fullHeight_act_MO:   off;
 $page_int_fullHeight_act_AML:  off;
