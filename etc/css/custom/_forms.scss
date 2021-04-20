@@ -143,7 +143,10 @@ form{
         }
     }
     
-    textarea{    
+    textarea{
+/*
+        resize: none;
+*/
         @include beforeTablet{
             height: 100px;
         }
