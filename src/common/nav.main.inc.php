@@ -1,9 +1,17 @@
 <nav id="nav" class="nav_main pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
     <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visuallyHidden"><?php echo _("Abrir"); ?></span> <?php echo _("Men&uacute;"); ?></button>
     <button type="button" class="button_hamb button_hamb_close"><?php echo _("Cerrar"); ?> <span class="visuallyHidden"><?php echo _("Men&uacute;"); ?></span></button>
-    <ul class="nav_main_ul navAT unstyled clearfix" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
-        <?php include('nav.main.list.inc.php'); ?>
-    </ul>   
+    
+    <?php // Ver `[/src/var/act/nav.act.inc.php]`
+        if($nav_double_AT_act == 1): ?>
+    <div class="navs_container_AT displayFlexAT"><?php endif; ?>
+        
+        <ul class="nav_main_ul navAT unstyled clearfix" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+            <?php include('nav.main.list.inc.php'); ?>
+        </ul>
+    
+    <?php // Ver `[/src/var/act/nav.act.inc.php]`
+        if($nav_double_AT_act == 1): ?></div><?php endif; ?>
     
     <?php
         // Ver `[/src/var/act/nav.act.inc.php]`

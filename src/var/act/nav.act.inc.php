@@ -6,4 +6,6 @@
     $nav_drawer_act         = 1;    
     $nav_SECTION_hasSub_act = 0;    
     $nav_accordion_act      = 0;
-?>
+    
+    $nav_double_AT_act      = 0;    
+?> 

@@ -20,6 +20,19 @@
             box-shadow: 0 0 7px $black;
         }
         
+        .navs_container_AT{
+            justify-content: space-between;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            
+            ul{
+                & + ul{
+                    margin-top: 0;
+                }
+            }
+        }
+        
         .nav_main_ul{                
             @if $header_logoNav_floated_flexbox_act == "on"{
                 &.navAT{

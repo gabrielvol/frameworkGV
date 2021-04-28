@@ -90,54 +90,108 @@ nav{
             display: none;
         }
         
-        > ul{
-            background-color: $nav_ul_bgColour_AT; 
-            
-            > li{
-                background-color: $nav_item_bgColour_AT;
+        @if $nav_double_AT_act == "on"{
+            .navs_container_AT > ul{
+                background-color: $nav_ul_bgColour_AT; 
 
-                a,
-                .nav_TLI{
-                    color: $nav_item_ftColour_AT;
-                    font-family: $nav_ftFamily_AT;
+                > li{
+                    background-color: $nav_item_bgColour_AT;
 
-                    @if $googleFont_act == "on"{
-                        font-weight: $nav_ftWeight_AT;
-                    }
-                }    
+                    a,
+                    .nav_TLI{
+                        color: $nav_item_ftColour_AT;
+                        font-family: $nav_ftFamily_AT;
 
-                &:focus, &:hover{
-                    background-color: $nav_item_bgColour_hover; 
-                    
-                    > a{
-                        color: $nav_item_ftColour_hover;
-                    }
-                }            
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_ftWeight_AT;
+                        }
+                    }    
+
+                    &:focus, &:hover{
+                        background-color: $nav_item_bgColour_hover; 
+
+                        > a{
+                            color: $nav_item_ftColour_hover;
+                        }
+                    }            
+                }
+
+                > .uk-active,
+                > .nav_item_current{
+                    background-color: $nav_item_current_bgColour_AT;
+
+                    a,
+                    .nav_TLI{
+                        color: $nav_item_current_ftColour_AT;
+                        font-family: $nav_item_current_ftFamily_AT;
+
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_item_current_ftWeight_AT;
+                        }
+                    }  
+
+                    &:focus, &:hover{
+                        background-color: $nav_item_current_bgColour_hover;
+
+                        > a,
+                        .nav_TLI{
+                            color: $nav_item_current_ftColour_hover;
+                        }  
+                    }         
+                } 
             }
             
-            > .uk-active,
-            > .nav_item_current{
-                background-color: $nav_item_current_bgColour_AT;
+        } @else {
+            
+            > ul{
+                background-color: $nav_ul_bgColour_AT; 
 
-                a,
-                .nav_TLI{
-                    color: $nav_item_current_ftColour_AT;
-                    font-family: $nav_item_current_ftFamily_AT;
+                > li{
+                    background-color: $nav_item_bgColour_AT;
 
-                    @if $googleFont_act == "on"{
-                        font-weight: $nav_item_current_ftWeight_AT;
-                    }
-                }  
-
-                &:focus, &:hover{
-                    background-color: $nav_item_current_bgColour_hover;
-
-                    > a,
+                    a,
                     .nav_TLI{
-                        color: $nav_item_current_ftColour_hover;
+                        color: $nav_item_ftColour_AT;
+                        font-family: $nav_ftFamily_AT;
+
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_ftWeight_AT;
+                        }
+                    }    
+
+                    &:focus, &:hover{
+                        background-color: $nav_item_bgColour_hover; 
+
+                        > a{
+                            color: $nav_item_ftColour_hover;
+                        }
+                    }            
+                }
+
+                > .uk-active,
+                > .nav_item_current{
+                    background-color: $nav_item_current_bgColour_AT;
+
+                    a,
+                    .nav_TLI{
+                        color: $nav_item_current_ftColour_AT;
+                        font-family: $nav_item_current_ftFamily_AT;
+
+                        @if $googleFont_act == "on"{
+                            font-weight: $nav_item_current_ftWeight_AT;
+                        }
                     }  
-                }         
-            } 
+
+                    &:focus, &:hover{
+                        background-color: $nav_item_current_bgColour_hover;
+
+                        > a,
+                        .nav_TLI{
+                            color: $nav_item_current_ftColour_hover;
+                        }  
+                    }         
+                } 
+            }
         }
             
         @if $nav_hasSub_act == "on"{
