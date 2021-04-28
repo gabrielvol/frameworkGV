@@ -14,6 +14,8 @@
 			--nav_top_height_full: 		calc(var(--nav_top_height) + var(--nav_top_border_height));
             
             --text_regular_colour:      #95690f;  
+			
+			--nav_top_online_status_size:	30px;
 		}
         
 		@font-face {
@@ -137,7 +139,7 @@
 			display: flex;
 		}
 
-		.nav_top{
+		.nav_top{ 
 			transition: all ease 0.5s;
 			position: fixed;
 			top: 0;
@@ -148,6 +150,20 @@
 			border-style: solid;
 			border-width: 0 0 var(--nav_top_border_height);
 			border-color: #cea400;
+		}			
+		
+		.nav_top::after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 5px;
+			width: var(--nav_top_online_status_size);
+			height: var(--nav_top_online_status_size);
+			background-image: url('http://www.gabrielvolonte.com.ar/img/online_status_on.svg'), url('online_status_off.svg');
+			background-repeat: no-repeat, no-repeat;
+			background-position: center, center;
+			background-size: auto 50%, auto 50%;
+			margin-top: calc(-1 * calc(var(--nav_top_online_status_size) / 2));
 		}
 
 		.nav_top,
@@ -182,13 +198,11 @@
 		}
 		
 		.nav_top:hover{
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0c1c3f+0,930404+100&0.8+0,0.8+100 */
-background: -moz-linear-gradient(45deg,  rgba(12,28,63,0.8) 0%, rgba(147,4,4,0.8) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg,  rgba(12,28,63,0.8) 0%,rgba(147,4,4,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg,  rgba(12,28,63,0.8) 0%,rgba(147,4,4,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', endColorstr='#cc930404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0c1c3f+0,930404+100&0.8+0,0.8+100 */
+			background: -moz-linear-gradient(45deg,  rgba(12,28,63,0.8) 0%, rgba(147,4,4,0.8) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(45deg,  rgba(12,28,63,0.8) 0%,rgba(147,4,4,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(45deg,  rgba(12,28,63,0.8) 0%,rgba(147,4,4,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', endColorstr='#cc930404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			border-color: #ff24ac;
 		}
 		
@@ -238,46 +252,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             padding: 0;
         }
 
-        .column_ul ul li::before{
+        .column_ul ul li a::before{
 			border-radius: 50%;
             content: "";
             display: block;
             position: absolute;
             top: 7px;
+			left: 0;
             width: 3px;
             height: 3px;
             background-color: #c712d7;
         }
 
-        .column_ul ul li:nth-child(9n+2)::before{
+        .column_ul ul li:nth-child(9n+2) a::before{
             background-color: #53f4f4;
         }
 		
-        .column_ul ul li:nth-child(9n+3)::before{
+        .column_ul ul li:nth-child(9n+3) a::before{
             background-color: #ff9300;
         }
 		
-        .column_ul ul li:nth-child(9n+4)::before{
+        .column_ul ul li:nth-child(9n+4) a::before{
             background-color: #7bff50;
         }
 		
-        .column_ul ul li:nth-child(9n+5)::before{
+        .column_ul ul li:nth-child(9n+5) a::before{
             background-color: #31dcbd;
         }
 		
-        .column_ul ul li:nth-child(9n+6)::before{
+        .column_ul ul li:nth-child(9n+6) a::before{
             background-color: #ff7600;
         }
 		
-        .column_ul ul li:nth-child(9n+7)::before{
+        .column_ul ul li:nth-child(9n+7) a::before{
             background-color: #e34aaa;
         }
 		
-        .column_ul ul li:nth-child(9n+8)::before{
+        .column_ul ul li:nth-child(9n+8) a::before{
             background-color: #49ff19;
         }
 		
-        .column_ul ul li:nth-child(9n+9)::before{
+        .column_ul ul li:nth-child(9n+9) a::before{
             background-color: #2fbf23;
         }
 		
@@ -303,18 +318,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			background-color: #34a245;
 		}
 		
-		.column_ul .sub_li_titulo{
+		.column_ul .column_sub{
 			padding: 0 5px;
 		}
 		
-		.sub_li_titulo .titulo_p{
+		.column_sub .titulo_p{
 			background-color: #380a00;
 			border-color: #c700ff transparent transparent;
 			color: #b66600;
 			text-shadow: 0 0 0 #380a00;
         }
 
-        .column_ul ul li:hover::before{
+        .column_ul ul li:hover > a::before{
 			transition: all ease 2s;
 			box-shadow:
 				  0 0px 1.7px rgba(256,256,256, 1),
@@ -325,8 +340,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				  0 0px 63px rgba(256,256,256, 1);
         }
 
-        .sub_li_titulo::before,
-        .sub_li_titulo:hover::before{
+        .column_sub::before,
+        .column_sub:hover::before{
 			background-color: transparent!important;
 			box-shadow: 0 0 0 #380a00!important; 
         }
@@ -342,12 +357,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			padding: 0 10px;
 		}
 
-		.column_ul .sub_ul{
+		.column_ul .column_sub_full{
 			width: 100%;
 			margin-top: 30px;
 		}
 
-		.column_ul .sub_ul li{
+		.column_ul .column_sub_full li{
 			width: 50%;
 		}
 
@@ -356,32 +371,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			font-family: 'FiraSansCompressed-Medium';
         }
 
+        .separador_soft.titulo_li + li,
+		.column_ul ul li:first-child,
+		.column_ul ul li:first-child + li{
+			border: none;
+			margin-top: 0;
+        }
+
+        .separador_hard,
+		.separador_hard.separador_noBreak + li,
+        .separador_soft,
+		.separador_soft.separador_noBreak + li{
+            padding-top: 5px!important;
+            margin-top: 20px!important;
+		}
+
         .separador_hard,
         .separador_soft{
             width: 100%!important;
-            clear: both;
-            padding-top: 5px!important;
-            margin-top: 20px!important;
         }
+		
+		.separador_hard.separador_noBreak,
+		.separador_hard.separador_noBreak + li,
+		.separador_soft.separador_noBreak,
+		.separador_soft.separador_noBreak + li{
+			width: 50%!important;
+		}
 
-        .separador_hard::before,
-        .separador_soft::before{
-            top: 13px!important;
-        }
-
-        .separador_soft{
+        .separador_soft,		
+		.separador_soft.separador_noBreak + li{
             border-top: 1px dashed #5b9704;
-        }
+		}
 
+        .separador_hard,		
+		.separador_hard.separador_noBreak + li{
+            border-width: 2px 0 0;
+			border-style: dotted;
+			border-color: #ffcc00 transparent transparent;
+		}
+		
         .separador_soft:first-child{
             margin-top: 0!important;
         }
 
         .separador_hard{
-            border-width: 2px 0 0;
-			border-style: dotted;
-			border-color: #ffcc00 transparent transparent;
-            padding-top: 5px!important;
 			font-family: 'FiraSansCompressed-Medium';
         }
 
@@ -389,28 +422,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
         .separador_soft.titulo_li + .titulo_li a{
 			color: #ffcc00;
         }
-
-        .separador_soft.titulo_li + li,
-		.column_ul ul li:first-child,
-		.column_ul ul li:first-child + li{
-			border: none;
-			margin-top: 0;
-        }
         
         .column_ul ul li + li,
         .column_ul ul li.separador_soft + li{
             margin-top: 6px;
         }
         
-        .sub_li_titulo:not(.sub_ul) ul li + li{
+        .column_sub:not(.column_sub_full) ul li + li{
             margin-top: 6px!important;
         }
 
-        .separador_soft.titulo_li::before{
+        .separador_soft.titulo_li a::before{
             background-color: #ff0000;
         }
 
-        .separador_hard::before{
+        .separador_hard a::before{
             background-color: #3388bb!important;
         }
     </style>
@@ -418,10 +444,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 <body>
 <nav class="nav_top">
 	<ul class="horizontal clearfix">
-		<li><a href="#_id-login">Top</a></li>
-		<li><a href="#_id-janus">Janus</a></li>
+		<li><a href="#_id-login">Top |&nbsp;</a></li>
+		<li><a href="#_id-janus">Janus Comunicación</a></li>
 		<li><a href="#_id-simbel">Simbel</a></li>
-		<li><a href="#_id-css">CSS</a></li>
+		<li><a href="#_id-wanita">Wanita</a></li>
+		<li><a href="#_id-css">&nbsp;| CSS</a></li>
 		<li><a href="#_id-html">HTML</a></li>
 		<li><a href="#_id-javascript">javaScript</a></li>
 		<li><a href="#_id-git">GIT</a></li>
@@ -437,20 +464,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://web.whatsapp.com/">Whatsapp</a></li>
             <li class=""><a target="_blank" href="https://mail.protonmail.com">Protonmail</a></li>
             <li><a target="_blank" href="https://www.toggl.com/app/timer">Toggl</a></li>
-
-            <li class="separador_soft"><a target="_blank" href="https://github.com">Github</a></li>
-            <li class=""><a target="_blank" href="https://gitlab.com">GitLab</a></li>
-            <li class=""><a target="_blank" href="https://gitpod.io/">GitPod</a></li>
-            <li class=""><a target="_blank" href="https://bitbucket.org/">Bitbucket</a></li>
-			<li><a target="_blank" href="https://git.live/">GitLive</a></li>
-            <li><a target="_blank" href="https://codeberg.org/">Codeberg .org</a></li>
-            <li><a target="_blank" href="spaceHREF">-</a></li>
-            <li><a target="_blank" href="https://sourcehut.org/">Sourcehut .org</a></li>
-
-            <li class="separador_soft"><a target="_blank" href="https://hangouts.google.com/">Google Hangouts</a></li>
-            <li><a target="_blank" href="https://translate.google.com.ar/">Google Translate</a></li>
 			<li><a target="_blank" href="https://www.edesur.com.ar:8080/OficinaVirtual2/paginas/acceso.aspx">Edesur</a></li>
             <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
         </ul>
     </li>
     <li>
@@ -467,59 +485,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://tarifario.org/">Tarifario .org</a></li>
             <li><a target="_blank" href="https://www.argentina.gob.ar/pais/codigo-telefonia">Códigos de área de Arg · argentina.gob.ar</a></li>
             <li><a target="_blank" href="https://es.wikipedia.org/wiki/N%C3%BAmeros_telef%C3%B3nicos_en_Argentina">Números telefónicos en Arg · Wikipedia</a></li>
+            <li><a target="_blank" href="https://translate.google.com.ar/">Google Translate</a></li>
             <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
         </ul>
     </li>
-
-	<!-- /* G I T -------------------------------------------------------------------- -->
-	<li id="_id-git">
-		<p class="titulo_p">GIT</p>
-		<ul class="clearfix ">
-			<li><a target="_blank" href="https://raygun.com/blog/git-workflow/">Git workflow best practices: 5 tips to get your code to production fast</a></li>
-			<li><a target="_blank" href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/undoing-things">Undoing Things</a></li>
-			<li><a target="_blank" href="https://git-rebase.io/">git rebase in depth</a></li>
-			<li><a target="_blank" href="https://ohshitgit.com/">git undos · oh shit git</a></li>
-			<li><a target="_blank" href="https://www.daolf.com/posts/git-series-part-1/">Git series</a></li>
-			<li><a target="_blank" href="https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request">How To Write a Perfect Pull Request · github.blog</a></li>
-			<li><a target="_blank" href="https://www.micah.soy/posts/setting-up-git-identities/">Setting up GIT Identities</a></li>
-			<li><a target="_blank" href="https://git-rebase.io/">Git Rebase .io</a></li>			
-			<li><a target="_blank" href="https://gitexplorer.com/">Git command explorer</a></li>
-			<li><a target="_blank" href="http://www.git-tower.com/learn/">GitTower Learn | Git Tutorial</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaaaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaaaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaaaaaaaaaaa</a></li>-->
-
-
-			<li class="sub_li_titulo sub_ul">
-				<p class="titulo_p">GIT Commands</p>
-				<ul>
-					<li><a target="_blank" href="https://git-scm.com">Git SCM</a></li>
-					<li><a target="_blank" href="https://stackoverflow.com/questions/11183788/in-a-git-repository-how-to-properly-rename-a-directory#11183844">Rename directory, caseSentitive</a></li>
-					<li><a target="_blank" href="http://git-scm.com/docs/git-rebase">Git rebase</a></li>
-					<li><a target="_blank" href="https://www.gitkraken.com/learn/git/problems/revert-git-commit">Git undos</a></li>
-					<li><a target="_blank" href="https://www.nobledesktop.com/learn/git">Learn Git</a></li>
-					<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
-					<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
-					<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
-				</ul>
-			</li>
-			
-			<li class="sub_li_titulo sub_ul">
-				<p class="titulo_p">GIT Markdown</p>
-				<ul>
-					<li><a target="_blank" href="https://markdown.es/sintaxis-markdown/">Markdown en español</a></li>
-					<li><a target="_blank" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet · GitHub</a></li>
-					<li><a target="_blank" href="https://karl-voit.at/2017/09/23/orgmode-as-markup-only/">ORG mode markup</a></li>
-					<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
-					<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
-					<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
-				</ul>
-			</li>
-		</ul>
-	</li>
-
-
     <li>
 		<p class="titulo_p">News</p>
         <ul>
@@ -528,10 +501,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://elpais.com/">El País</a></li>
             <li><a target="_blank" href="https://www.eluniversal.com.mx/">El Universal</a></li>
 			<li><a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Current_events">Wiki Current Events</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+			<li><a target="_blank" href="spaceHREF">-</a></li>
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 			
-            <li class="separador_soft titulo_li"><a target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
-			<li><a target="_blank" href="https://devurls.com/">Dev URLs</a></li>
+			<li class="separador_soft titulo_li separador_noBreak"><a target="_blank" href="https://devurls.com/">Dev URLs</a></li>
+            <li><a target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
 			<li><a target="_blank" href="http://jsomers.net/hn/">Hackers Classic</a></li>
             <li><a target="_blank" href="https://www.indiehackers.com/">Indie Hackers</a></li>
 			<li><a target="_blank" href="https://deephn.org/">Deep Hacker News</a></li>
@@ -561,7 +538,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li class="separador_soft"><a target="_blank" href="http://enso.readymag.com/">ENSO Ready Mag</a></li>
             <li><a target="_blank" href="https://eyeondesign.aiga.org/">Eye On Design</a></li>
             <li><a target="_blank" href="https://www.ohyouprettythings.com/">Oh you pretty things</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
         </ul>
     </li>
 	
@@ -580,9 +560,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://www.coindesk.com/">CoinDesk - Leader in blockchain news</a></li>
             <li><a target="_blank" href="https://www.dannyguo.com/blog">Danny Guo</a></li>
             <li><a target="_blank" href="https://zwischenzugs.com/">Zwischenzugs</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+			<li><a target="_blank" href="https://www.os2museum.com/wp/">OS2 Museum</a></li>
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">Front-end</p>
 				<ul>
 					<li><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23CSS">Gmail #CSS</a></li>
@@ -595,7 +579,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					<li><a target="_blank" href="https://gabrielgambetta.com/">Gabriel Gambetta</a></li>
 					<li><a target="_blank" href="https://gabrielgambetta.com/">Gabriel Gambetta</a></li>
 					<li><a target="_blank" href="https://szymonkrajewski.pl/">Szymon Krajewski .pl</a></li>
-					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li> -->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 				</ul>
 			</li>
         </ul>
@@ -604,30 +591,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
         <p class="titulo_p">Alternative to</p>
         <ul>
             <li><a target="_blank" href="https://github.com/gorvgoyl/clone-wars">Clone Wars · GitHub</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 		</ul>
 	</li>
     <li>
         <p class="titulo_p">What is... ?</p>
         <ul>
             <li><a target="_blank" href="http://doc.cat-v.org/bell_labs/utf-8_history">History of UTF-8</a></li>
-            <li><a target="_blank" href="https://medium.com/@perrysetgo/what-exactly-is-an-api-69f36968a41f">What is an API ?</a></li>
 			<li><a target="_blank" href="https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/">What is CORS ?</a></li>
 			<li><a target="_blank" href="https://blog.discogs.com/en/what-is-alternative-rock-genre-subjective-guide/">What is alternative rock ?</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 		</ul>
 	</li>
     <li>
         <p class="titulo_p">Design News</p>
         <ul>
             <li><a target="_blank" href="https://medium.com/@sjors/my-favourite-design-articles-2015-55c55dbccaa5#.et49bdvxm">My Favourites design articles 2015</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
 			<li><a target="_blank" href="https://jamesclear.com/motivation">Motivation</a></li>
 			<li class="separador_soft"><a target="_blank" href="https://css-tricks.com/the-great-divide/">The Great Divide - CSS Tricks</a></li>
@@ -638,11 +627,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://thehistoryoftheweb.com/">The History of the web</a></li>
 			<li><a target="_blank" href="https://jlongster.com/How-I-Became-Better-Programmer">How I became a better programmer</a></li>
             <li><a target="_blank" href="https://blog.cryptographyengineering.com/2020/04/03/does-zoom-use-end-to-end-encryption/">Does Zoom use end to end encryption</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">Blogs</p>
 				<ul>
 					<li><a target="_blank" href="https://www.swyx.io/writing/">SWYX .io</a></li>
@@ -685,11 +675,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					<li><a target="_blank" href="https://thejoeflow.com/blog">The Joe flow</a></li>
 					<li><a target="_blank" href="https://readbroca.com/">Read Broca</a></li>
 					<li><a target="_blank" href="https://www.yoranbrondsema.com/">Yoran Brondsema</a></li>
-					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li> -->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 				</ul>
 			</li>
-
-            <!--<li><a target="_blank" href="httpssssssssssssssssssey">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
         </ul>
     </li>
     <li>
@@ -705,7 +696,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li class="separador_soft"><a target="_blank" href="https://www.notion.so/">Notion</a></li>
 			<li><a target="_blank" href="https://www.zoho.com/es-xl/">Zoho</a></li>
             <li class="separador_soft"><a target="_blank" href="https://www.wetransfer.com/">WeTransfer</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
         </ul>
     </li>
     <li>
@@ -724,15 +718,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://permission.site">Permission.site</a></li>
 			<li><a target="_blank" href="https://haveibeenpwned.com/">Have I been pawned?</a></li>
 			<li><a target="_blank" href="https://haveibeenfacebooked.com/">Have I been Facebooked?</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->			
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 			
 			<li class="separador_soft"><a target="_blank" href="https://www.meta-nomad.net/avoiding-the-global-lobotomy/">Avoiding the global lobotomy</a></li>
 			<li><a target="_blank" href="https://www.alvarez.io/posts/living-like-its99/">Living like it's '99</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
             <li class="separador_soft"><a target="_blank" href="https://blog.google/technology/safety-security/your-android-phone-is-a-security-key/">Android Phone</a></li>
 			<li><a target="_blank" href="https://saymine.com/">Mine · The Future of Data Control</a></li>
@@ -744,26 +740,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://anonymousplanet.org/">Anonymous Planet</a></li>
 			<li><a target="_blank" href="https://do-not-tracker.org/?action=tracking_tally&random=123456">Do No Tracker .org</a></li>
             <li><a target="_blank" href="https://libredns.gr/">Libre DNS</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">Emptyyyyyyyyyyyyyyyyyyy</a></li>-->		
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
-		<!-- --------------------------------------- T O R ----------------------------------------------------------------->
+		<!-- /* Tor / T O R -->
 
 			<li class="separador_soft"><a target="_blank" href="https://www.torbox.ch/">Tor Box</a></li>
 			<li><a target="_blank" href="https://onionshare.org/">Onion Share .org</a></li>
 			<li><a target="_blank" href="https://www.torproject.org/download/"> Tor Browser</a></li>
 			<li><a target="_blank" href="https://tails.boum.org/">Tails</a></li>
 			<li><a target="_blank" href="https://browserleaks.com/">BrowserLeaks</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 			
 			
 			<li class="separador_soft"><a target="_blank" href="https://paramdeo.com/blog/opting-your-website-out-of-googles-floc-network">Google FLoC opt out</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
-			<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 		</ul>
 	</li>
 
@@ -781,7 +779,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://youtubersunion.org/">Youtubers Union</a></li>
 			<li><a target="_blank" href="https://fairtube.info/en/">FairTube.info</a></li>
 
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">Lists</p>
 				<ul>
 					<li><a target="_blank" href="http://www.imdb.com/list/ls073453316/">IMDB The 40 Most Inventive and Creative Films of All Time</a></li>
@@ -793,7 +791,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					<li><a target="_blank" href="https://www.vulture.com/2019/12/every-movie-of-the-2010s-ranked-sort-of.html">2010s movies</a></li>
 					<li><a target="_blank" href="https://www.theatlantic.com/culture/archive/2020/05/30-singular-films-watch-quarantine/611956/">30 singular unique films</a></li>
 					<li><a target="_blank" href="https://www.openculture.com/2015/01/akira-kurosawas-list-of-his-100-favorite-movies.html">Akira Kurosawa list of 100 films</a></li>
-					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li> -->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+					<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 				</ul>
 			</li>
 		</ul>
@@ -904,10 +905,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
         </ul>
     </li>
 
+	<!-- /* Bitcoin -->
     <li>
         <p class="titulo_p">Bitcoin</p>
         <ul>
             <li><a target="_blank" href="https://bitinfocharts.com/bitcoin/address/18F6Mfc1hFPVM4XybSeozvPfySWfJnH1GH">18F6Mfc1hFPVM4XybSeozvPfySWfJnH1GH - Bit Info Charts</a></li>
+			<li><a target="_blank" href="https://hackernoon.com/what-do-i-do-if-i-cant-find-my-old-bitcoin-wallet-8iy33cy">How to recover a lost wallet</a></li>
+            <!--<li><a target="_blank" href="emptyHREF">Opesssssssssssssssssssssssbtitulo_ps</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">Opesssssssssssssssssssssssbtitulo_ps</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">Opesssssssssssssssssssssssbtitulo_ps</a></li>-->
         </ul>
     </li>
     <li><p class="titulo_p">URL Canary</p>
@@ -946,13 +952,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="http://www.worshipmetal.com/features/6-under-appreciated-classics-of-uk-thrash-pt-1/2/">6 underappreciated classics of UK Thrash</a></li>
             <!--<li><a target="_blank" href="emptyHREF">Opesssssssssssssssssssssssbtitulo_ps</a></li>-->
 
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Alternative Metal</p>
                 <ul class="">
                     <li><a target="_blank" href="https://tsunamiride.bandcamp.com/">Tsunami Ride</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Black Metal</p>
                 <ul class="">
                     <li><a target="_blank" href="https://exesa.bandcamp.com/">Exesa</a></li>
@@ -962,7 +968,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                     <li><a target="_blank" href="https://templepnw.bandcamp.com/">Temple</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Crossover / Crust / Sludge</p>
                 <ul>
                     <li><a target="_blank" href="https://devolvermusic.bandcamp.com/">Devolver</a></li>
@@ -971,14 +977,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             </li>
 
 
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Dark Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://vidrigrus.bandcamp.com/">Vidrig</a></li>
                     <li><a target="_blank" href="https://wowod.bandcamp.com/">WOWOD</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub column_sub_full">
                 <p class="titulo_p">Death Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://alkhannes.bandcamp.com/">Al Khannes</a></li>
@@ -1001,32 +1007,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                     <li><a target="_blank" href="https://valkyer.bandcamp.com/releases">Valkyer</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Doom</p>
                 <ul>
                     <li><a target="_blank" href="https://blvvme.bandcamp.com/">BLVVME</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Experimental</p>
                 <ul>
                     <li><a target="_blank" href="https://autodafepyro.bandcamp.com/">Auto da fè</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Groove Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://rankojat.bandcamp.com/releases">Rankojat</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Grindcore</p>
                 <ul>
                     <li><a target="_blank" href="https://chainsawdisgorgement.bandcamp.com/releases">chainsaw disgorgement</a></li>
                     <li><a target="_blank" href="https://knifevision.bandcamp.com/album/s-t-7">Knife Vision</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Melodic Death Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://tyrannisva.bandcamp.com/releases">Tyrannis</a></li>
@@ -1036,7 +1042,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">NWORHM</p>
                 <ul>
                     <li><a target="_blank" href="https://irondriver.bandcamp.com/">Iron Driver</a></li>
@@ -1045,13 +1051,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                 </ul>
             </li>
 
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Post Black Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://delayingtheinevitable.bandcamp.com/releases">Delaying the Inevitable | Delaying the Inevitable</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Progressive Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://sabkemorde.bandcamp.com/">Sabke Morde</a></li>
@@ -1061,13 +1067,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Punk</p>
                 <ul>
                     <li><a target="_blank" href="https://reflections-records.bandcamp.com/album/tales-of-the-ancient-age">Annihilation Time</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub">
                 <p class="titulo_p">Stoner Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://thejesusandmaryjane.bandcamp.com/releases">THE JESUS AND MARY JANE</a></li>
@@ -1076,13 +1082,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub column_sub_full">
                 <p class="titulo_p">Symphonic Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://falsegharial.bandcamp.com/releases">False Gharial</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub column_sub_full">
                 <p class="titulo_p">Thrash Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://dirtyroom.bandcamp.com/releases">dirty room</a></li>
@@ -1094,13 +1100,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                     <li><a target="_blank" href="https://vengefulatonement.bandcamp.com/album/break-down-the-walls">vengeful atonement</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub column_sub_full">
                 <p class="titulo_p">Technical Death Metal</p>
                 <ul>
                     <li><a target="_blank" href="https://thedarknebula.bandcamp.com/releases">Usurper | The Dark Nebula</a></li>
                 </ul>
             </li>
-            <li class="sub_li_titulo sub_ul">
+            <li class="column_sub column_sub_full">
                 <p class="titulo_p">por explorar</p>
                 <ul>
                     <li><a target="_blank" href="https://theblackcloudsyndicate.bandcamp.com/">The Blackcloud Syndicate</a></li>
@@ -1247,6 +1253,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="spaceHREF">-</a></li>
             <li><a target="_blank" href="https://maqueta.agridulze.com/sourceSansPro/">Agridulze [maqueta | sourceSansPro]</a></li>
             <!--<li><a target="_blank" href="emptyHREF">GV | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">GV | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">GV | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
 
             <li class="separador_hard"><a target="_blank" href="https://gitlab.com/arcoirisdesign">arcoiris | GitLab</a></li>
@@ -1262,13 +1271,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="http://trasladosbaires.com.ar/">AI | Traslados Baires</a></li>
             <li><a target="_blank" href="http://fwcollection.com/">AI | FW Collection</a></li>
             <!--<li><a target="_blank" href="emptyHREF">AI | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">AI | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">AI | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
-            <li class="separador_hard"><a target="_blank" href="https://gitlab.com/Wanita">Wanita | GitLab</a></li>
+            <li id="_id-wanita" class="separador_hard separador_noBreak"><a target="_blank" href="https://gitlab.com/Wanita">Wanita | GitLab</a></li>
             <li class=""><a target="_blank" href="https://drive.google.com/drive/folders/1JZ8_ppPjYxQwLsgzT6C3lCw_7KjuIdjt">Wanita | Google Drive</a></li>
             <li class="separador_soft"><a target="_blank" href="http://www.pierinapasteleria.com/">WA | Pierina Micali - Pastelería</a></li>
             <li><a target="_blank" href="http://hibot.us/">WA | Hi Bot</a></li>
             <li><a target="_blank" href="http://gabrielbouza.com.ar/">WA | Gabriel Bouza</a></li>
             <li><a target="_blank" href="http://activandotusderechos.com.ar/">WA | Activando Tus Derechos</a></li>
+            <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/clientes/activandotusderechos/">WA | Activando Tus Derechos [gv.com.ar]</a></li>
             <li><a target="_blank" href="http://iurisvox.com.mx/">WA | Iurisvox</a></li>
             <li><a target="_blank" href="http://iurisvox.com.mx/web2021/">WA | Iurisvox [/web2021]</a></li>
 			<li><a target="_blank" href="http://www.lauracestau.com/">WA | Laura Cestau</a></li>
@@ -1277,7 +1290,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://www.fundareco.com.ar/web2021/">WA | Fundar Eco [/web2021]</a></li>			
             <li><a target="_blank" href="http://www.sanlesfranco.com.ar/">WA | Sanles Franco</a></li>
             <li><a target="_blank" href="https://www.4puntocero.com.ar/">WA | 4puntocero.com.ar</a></li>
+			<li><a target="_blank" href="http://www.gabrielvolonte.com.ar/clientes/cuatropuntocero/">WA | Cuatro Punto Cero [gv.com.ar]</a></li>
             <li><a target="_blank" href="https://docs.google.com/document/d/1TmLE78gC9BfqDIVmwMlptfJiQ3Ymz0_qjwYep2imNQg/edit?usp=sharing_eil&ts=5f3d51c1">WA | Concejo LDZ</a></li>
+            <!--<li><a target="_blank" href="emptyHREF">WA | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">WA | xxxxxxxxxx</a></li>-->
             <!--<li><a target="_blank" href="emptyHREF">WA | xxxxxxxxxx</a></li>-->
 
             <li class="separador_hard"><a target="_blank" href="https://github.com/gabrielvol/frameworkGV"><span class="lowerCase">gabrielvol/frameworkGV</span> | Github</a></li>
@@ -1285,6 +1301,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://github1s.com/gabrielvol/frameworkGV">GV Framework Github1s</a></li>
             <li><a target="_blank" href="https://gitlab.com/hockeyApp">HockeyApp · GitLab</a></li>
             <li><a target="_blank" href="http://www.gabrielvolonte.com.ar/portfolio/">GV Portfolio</a></li>
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
             <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 
             <li class="separador_hard"><a target="_blank" href="https://www.wix.com/dashboard/547d04e2-0e23-494b-ac5e-ad58229db076/home">Dics · Wix Dashboard</a></li>
@@ -1300,7 +1318,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://flybynet.net/hosting/">Flyl by Net [hosting]</a></li>
             <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 
-            <li class="separador_soft"><a target="_blank" href="http://www.janus-comunicacion.com.ar/">JC | Janus Comunicación</a></li>
+            <li class="separador_soft separador_noBreak"><a target="_blank" href="http://www.janus-comunicacion.com.ar/">JC | Janus Comunicación</a></li>
             <li><a target="_blank" href="http://www.adrianacazares.com/">JC | Adriana Cázares</a></li>
             <li><a target="_blank" href="https://www.agentex.com.ar/">JC | Agentex</a></li>
 			<li><a target="_blank" href="https://amutz.com.ar/">JC | Amutz</a></li>
@@ -1322,13 +1340,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="http://ccm307.com/">DI | CCM 307</a></li>
             <li><a target="_blank" href="http://www.ccmedicals.com.ar/">JC | CC Medicals</a></li>
             <li><a target="_blank" href="http://gevp.com.ar/">JC | Club GEVP</a></li>
-            <li><a target="_blank" href="http://www.clublacrozeythomas.com.ar/">JC | Club Lacroze &amp; Thomas</a></li>
-			
+            <li><a target="_blank" href="http://www.clublacrozeythomas.com.ar/">JC | Club Lacroze &amp; Thomas</a></li>			
             <li><a target="_blank" href="http://www.danielcestauliz.com/">JC | Daniel Cestau Liz</a></li>
-            <li><a target="_blank" href="http://librosdcl.com/">JC | Daniel Libros</a></li>
-			
-			
-            <li><a target="_blank" href="http://www.dclmindfulnessjournal.com/">JC | The Daniel Cestau Liz Mindfulnes Journal</a></li>
+            <li><a target="_blank" href="http://librosdcl.com/">JC | DCL Books</a></li>			
+            <li><a target="_blank" href="http://www.dclmindfulnessjournal.com/">JC | The Daniel Cestau Liz Mindfulness Journal</a></li>
             <li><a target="_blank" href="http://www.dcltimemanagement.com/">JC | Daniel Cestau Liz Time Management</a></li>
             <li><a target="_blank" href="http://www.dialogografico.com.ar/">JC | Diálogo Gráfico</a></li>
 			<li><a target="_blank" href="http://www.distribuidoradelcampo.com.ar">JC | Distribuidora Del Campo</a></li>
@@ -1357,9 +1372,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="http://www.sutecba.org.ar/nuevo/">JC | Sutecba [/nuevo/]</a></li>
             <li><a target="_blank" href="http://trimak.com.ar/">JC | Trimak</a></li>
             <li><a target="_blank" href="http://www.wsc.com.uy/">JC | WSC · wsc.com.uy</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li> -->
+            <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li>-->
 
             <li class="separador_soft"><a target="_blank" href="http://janus-comunicacion.com.ar/clientes/vagoncafe/">JC | Vagón Cafe · /janus/clientes/vagoncafe/</a></li>
+            <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li>-->
             <!--<li><a target="_blank" href="emptyHREF">JC | xxxxxxxxxx</a></li>-->
         </ul>
     </li>
@@ -1370,13 +1389,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li class="titulo_li"><a target="_blank" href="https://mail.google.com/mail/u/0/#label/%23Simbel">Simbel · Gmail [#SI]</a></li>
             <li class=""><a target="_blank" href="https://bitbucket.org/account/signin">Bitbucket Login</a></li>
             
-            <li class=""><a target="_blank" href="http://jira.simbel.com.ar">Jira Login</a></li>
 			<li class=""><a target="_blank" href="https://trello.com/b/XSV0OVei/desarrollo-simbel-2">Trello</a></li>
             <li><a target="_blank" href="http://jira.simbel.com.ar/secure/Dashboard.jspa#Assigned-to-Me/10002">Jira Tickets</a></li>
 			<li class=""><a target="_blank" href="https://trello.com/b/XSV0OVei/desarrollo-simbel-2?menu=filter&filter=member:gabrielvol">Trello · @gabrielvol</a></li>
 			<li class=""><a target="_blank" href="https://simbel.slack.com/">Slack</a></li>
 
-            <li class="separador_soft titulo_li"><a target="_blank" href="http://wampserver.aviatechno.net/">Wamp Server Repo · Aviatechno.net</a></li>
+            <li class="separador_soft titulo_li separador_noBreak"><a target="_blank" href="http://wampserver.aviatechno.net/">Wamp Server Repo · Aviatechno.net</a></li>
             <li><a target="_blank" href="http://localhost/add_vhost.php">Add Virtual Host · Wamp</a></li>
             <li><a target="_blank" href="http://localhost/phpmyadmin/">PHP MyAdmin</a></li>
             <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
@@ -1387,9 +1405,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://medium.com/innovation-and-technology/deciphering-typescripts-react-errors-8704cc9ef402">Dechipherin TypeScript React errors</a></li>
             <li><a target="_blank" href="https://www.google.com/recaptcha/intro/v3.html">Google Recaptcha</a></li>
 			<li><a target="_blank" href="https://www.jsdelivr.com/">js Deliver</a></li>
+			<li><a target="_blank" href="spaceHREF">-</a></li>
             <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 
-			<li class="separador_hard"><a target="_blank" href="http://svn2.dattar.com.ar/svn/Simbel/">Simbel 2.0 [repo]</a></li>
+			<li class="separador_hard separador_noBreak"><a target="_blank" href="http://svn2.dattar.com.ar/svn/Simbel/">Simbel 2.0 [repo]</a></li>
 			<li><a target="_blank" href="http://simbel-dev-registry.kipintoch.com:8081/">Simbel 2.0 · Kipintoch</a></li>
             <li><a target="_blank" href="http://jira.simbel.com.ar/wiki/p/SE/view/devs-nomenclatura-commits">Commit Messages</a></li>
 			
@@ -1413,7 +1432,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
 			<li class="separador_soft titulo_li">
 				<a target="_blank" href="localhost:8081">AveNew [localhost] 8081</a></li>
-			<li><a target="_blank" href="http://www.avenew.com.ar/">AveNew [producción]</a></li>
+			<li><a target="_blank" href="http://www.avenew.com.ar/">AveNew [producción] test@test.com test</a></li>
 			<li><a target="_blank" href="emptyHREF">AveNew Admin [producción]</a></li>
 			<li><a target="_blank" href="http://test.avenew.simbelecommerce.com/">AveNew test.avenew.simbelecommerce.com [test]</a></li>
 			<li><a target="_blank" href="http://test.admin.avenew.simbelecommerce.com/">AveNew Admin [test] admin 1234</a></li>
@@ -1427,7 +1446,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
 			<li class="separador_soft titulo_li">
 				<a target="_blank" href="localhost:8082">Cairo [localhost] 8082</a></li>
-			<li><a target="_blank" href="https://cairo.simbelecommerce.com/">Cairo [producción]</a></li>
+			<li><a target="_blank" href="https://cairo.simbelecommerce.com/">Cairo [producción] cairo.simbelecommerce.com</a></li>
 			<li><a target="_blank" href="https://admin.cairo.simbelecommerce.com/auth/login">Cairo Admin [producción] admin 1234</a></li>
 			<li><a target="_blank" href="http://testing-simbel.kipintoch.com">Cairo [test]</a></li>
 			<li><a target="_blank" href="http://admin.testing-simbel.kipintoch.com/">Cairo Admin [test] admin 1234</a></li>
@@ -1544,30 +1563,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="emptyHREF">Musicalisimo Admin [stage]</a></li>
 			<li><a target="_blank" href="emptyHREF">Musicalisimo - Cómo Comprar</a></li>
 			<li><a target="_blank" href="emptyHREF">Musicalisimo commits</a></li>
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
  
 			<li class="separador_soft titulo_li">
 				<a target="_blank" href="http://simbel.novogar01">Novogar [localhost]</a></li>
 			<li><a target="_blank" href="http://novogar.com.ar/">Novogar [producción]</a></li>
-			<li><a target="_blank" href="emptyHREF">Novogar commits</a></li>
+			<li><a target="_blank" href="https://admin.novogar.com.ar/">Novogar Admin [producción] simbel 1234568</a></li>
 			<li><a target="_blank" href="http://test.novogar.simbel.com.ar">Novogar [test]</a></li>
 			<li><a target="_blank" href="emptyHREF">Novogar Admin [test]</a></li>
 			<li><a target="_blank" href="http://novogar.simbel.com.ar/">Novogar [stage]</a></li>
 			<li><a target="_blank" href="http://admin.novogar.simbel.com.ar/">Novogar Admin [stage] admin @novo2016</a></li>
 			<li><a target="_blank" href="emptyHREF">Novogar - Cómo Comprar</a></li>
+			<li><a target="_blank" href="emptyHREF">Novogar commits</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
 			<li class="separador_soft titulo_li">
 				<a target="_blank" href="http://simbel.nuevashogar02">NuevasHogar [localhost]</a></li>
 			<li><a target="_blank" href="http://nuevashogar.com.ar/">NuevasHogar [producción]</a></li>
-			<li><a target="_blank" href="emptyHREF">NuevasHogar Admin [producción]</a></li>
+			<li><a target="_blank" href="http://admin.nuevashogar.com.ar/">NuevasHogar Admin [producción] admin @nh2020</a></li>
 			<li><a target="_blank" href="http://test.nuevashogar.simbel.com.ar">NuevasHogar [test]</a></li>
 			<li><a target="_blank" href="http://test.admin.nuevashogar.simbel.com.ar/">NuevasHogar Admin [test] admin 123456</a></li>
 			<li><a target="_blank" href="http://nuevashogar.simbel.com.ar/">NuevasHogar [stage]</a></li>
 			<li><a target="_blank" href="http://admin.nuevashogar.simbel.com.ar/admin/">NuevasHogar Admin [stage]</a></li>
 			<li><a target="_blank" href="http://simbel.nuevashogar02/como-comprar">NuevasHogar - Cómo Comprar</a></li>
 			<li><a target="_blank" href="https://bitbucket.org/ruca/nuevas-hogar-front/commits/">NuevasHogar commits</a></li>
-
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
             <li class="separador_soft titulo_li"><a target="_blank" href="http://simbel.otero01/">Otero [localhost]</a></li>
 			<li><a target="_blank" href="https://www.otero.com.ar/">Otero [producción]</a></li>
@@ -1576,7 +1605,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="http://test.admin.otero.simbel.com.ar/">Otero Admin [test]</a></li>
             <li><a target="_blank" href="http://jira.simbel.com.ar/wiki/p/OT/view/info-general">Otero Wiki</a></li>
             <li><a target="_blank" href="https://bitbucket.org/ruca/otero-front/commits/">Otero commits</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->			
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
 			<li class="separador_soft titulo_li">
 				<a target="_blank" href="http://simbel.portaline01/">Porta [localhost]</a></li>
@@ -1589,6 +1621,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="emptyHREF">Porta - Cómo Comprar</a></li>
 			<li><a target="_blank" href="https://bitbucket.org/ruca/portal-front/commits/">Porta commits</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
 			<li class="separador_soft titulo_li">
 				<a target="_blank" href="http://simbel.rodar01">Rodar [localhost]</a></li>
@@ -1601,12 +1636,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="emptyHREF">Rodar - Cómo Comprar</a></li>
 			<li><a target="_blank" href="https://bitbucket.org/ruca/rodarfront/commits/">Rodar commits</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
             <li class="separador_soft titulo_li"><a target="_blank" href="http://simbel.todococinas03">Todo Cocinas [localhost]</a></li>
 			<li><a target="_blank" href="http://test.todococinas.simbel.com.ar/">Todo Cocinas [test]</a></li>
 			<li><a target="_blank" href="https://bitbucket.org/ruca/todo-cocinas-front/commits">Todo Cocinas commits</a></li>
 			<li><a target="_blank" href="https://www.todococinas.com.ar/">Todo Cocinas [producción]</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 		</ul>
 	</li>
 
@@ -1665,10 +1706,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             <li><a target="_blank" href="https://news.microsoft.com/stories/simplethingscount/">Simple Things Count · Seven ways to be more inclusive of people with disabilities · Microsoft</a></li>
             <li><a target="_blank" href="https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/">A complete guide to accessible front end components</a></li>
 			<li><a target="_blank" href="https://kittygiraudel.com/2021/04/05/an-accessible-toggle">Accessible toggle</a></li>
-            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li> -->
+			<li><a target="_blank" href="spaceHREF">-</a></li>
+			<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+			<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">A11ycasts</p>
 				<ul>
 					<li><a target="_blank" href="https://www.youtube.com/watch?v=HtTyRajRuyY">Introducing A11ycasts! -- A11ycasts #01</a></li>
@@ -1677,7 +1722,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</ul>
 			</li>
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">Accessible HTML elements</p>
 				<ul>
 					<li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-tooltips/">Building a fully-accessible help tooltip</a></li>
@@ -1689,7 +1734,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
 				</ul>
 			</li>
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">Accessible Color · Contrast</p>
 				<ul>
 					<li><a target="_blank" href="https://uxmovement.com/buttons/the-myths-of-color-contrast-accessibility/">The Myths of Color Contrast</a></li>
@@ -1698,7 +1743,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 				</ul>
 			</li>
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">ARIA</p>
 				<ul>
 					<li><a target="_blank" href="http://alistapart.com/column_ul/wai-finding-with-aria-landmark-roles">WAI-finding with ARIA Landmark Roles · An A List Apart Column</a></li>
@@ -1715,7 +1760,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			</li>
 
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">Accessible Typography</p>
 				<ul>
 					<li><a target="_blank" href="https://betterwebtype.com/articles/2019/06/16/5-keys-to-accessible-web-typography/">5 keys to accessible web typography</a></li>
@@ -1723,7 +1768,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</ul>
 			</li>
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">PDF accessibility</p>
 				<ul>
 					<li><a target="_blank" href="https://commonlook.com/four-reasons-you-need-pdf-validator/">PDF accessibility · Common Look</a></li>
@@ -1731,7 +1776,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</ul>
 			</li>
 			
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">Focus Styles</p>
 				<ul>
 					<li><a target="_blank" href="https://www.nicchan.me/blog/tips-for-focus-styles/">Focus Styles</a></li>
@@ -1739,7 +1784,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</ul>
 			</li>
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">Google Lighthouse</p>
 				<ul>
 					<li><a target="_blank" href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/">Building the most inaccessible site possible with perfect lighthouse score</a></li>
@@ -1747,7 +1792,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</ul>
 			</li>
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">Responsible Web</p>
 				<ul>
 					<li><a target="_blank" href="https://responsibleweb.app">Responsible Web Design</a></li>
@@ -1755,7 +1800,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</ul>
 			</li>
 
-			<li class="sub_li_titulo">
+			<li class="column_sub">
 				<p class="titulo_p">Screen Readers</p>
 				<ul>
 					<li><a target="_blank" href="https://www.smashingmagazine.com/2018/12/voiceover-screen-reader-web-apps/">Screen Readers · Smashing Magazine</a></li>
@@ -1779,12 +1824,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
         <ul>
             <li><a target="_blank" href="https://lwn.net/SubscriberLink/822568/61d29096a4012e06/">Lightweight alternatives to Google Analytics</a></li>
             <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+        </ul>
+    </li>
+
+    <li><p class="titulo_p">API Application Programming Interface</p>
+        <ul>
+            <li><a target="_blank" href="https://medium.com/@perrysetgo/what-exactly-is-an-api-69f36968a41f">What is an API ?</a></li>
+			<li><a target="_blank" href="https://www.programmableweb.com/">Programmable Web | API</a></li>
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
         </ul>
     </li>
 
     <li><p class="titulo_p">Apple</p>
         <ul>
             <li><a target="_blank" href="https://support.apple.com/en-us/HT201236">Apple shortcuts</a></li>
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+            <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
             <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
         </ul>
     </li>
@@ -1801,7 +1862,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://www.unscreen.com/">Unscreen - remove video background</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">Open Source Audio</p>
 				<ul>
 					<li><a target="_blank" href="http://dig.ccmixter.org/">Dig CC mixter .org</a></li>
@@ -1849,6 +1910,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 		<ul>
 			<li><a target="_blank" href="https://uxplanet.org/breadcrumbs-for-web-sites-what-when-and-how-9273dacf1960#.63b797nif">Breadcrumbs For Web Sites: What, When and How</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 		</ul>
 	</li>
 
@@ -1858,19 +1921,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://artisanthemes.io/write-website-design-brief/">Web Site Briefing</a></li>
 			<li><a target="_blank" href="https://www.methodandclass.com/articles/how-to-write-a-brief-for-a-website">Web Site Briefing</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 		</ul>
 	</li>
 	<li>
 		<p class="titulo_p">Browsers</p>
 		<ul>
 			<li><a target="_blank" href="https://scotch.io/tutorials/customize-the-browsers-scrollbar-with-css">Customize the Browser&#39;s Scrollbar with CSS ― Scotch</a></li>
-			<li><a target="_blank" href="https://beta.cliqz.com/">Cliqz</a></li>
 			<li><a target="_blank" href="https://0x65.dev/blog/2019-12-17/why-we-forked-firefox-and-not-chromium.html">Why we forked firefox and not chromium · Cliqz</a></li>
 			<li><a target="_blank" href="https://github.com/luruke/browser-2020">Browser features 2020</a></li>
 			<li><a target="_blank" href="https://browser.engineering/layout.html">Browser Engineering</a></li>
-			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<li class="separador_soft separador_noBreak"><a target="_blank" href="https://beta.cliqz.com/">Cliqz</a></li>
+			<li class="separador_soft separador_noBreak"><a target="_blank" href="https://beta.cliqz.com/">Cliqz</a></li>
+			<li><a target="_blank" href="https://www.waterfox.net/">WaterFox</a></li>
+			<li><a target="_blank" href="https://www.torproject.org/download/"> Tor Browser</a></li>
+			<li><a target="_blank" href="https://www.palemoon.org/">Pale Moon</a></li>
+			<li><a target="_blank" href="https://www.basilisk-browser.org/">Basilik</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">Chrome</p>
 				<ul>
 					<li><a target="_blank" href="https://www.youtube.com/watch?v=yRrrL0Mg1pM">Improving page performance with Chrome DevTools - YouTube</a></li>
@@ -1906,6 +1979,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			<li><a target="_blank" href="https://blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha/">Recaptcha to Hcaptcha</a></li>
 			<li><a target="_blank" href="https://www.pinnacleinternet.com/installing-invisible-recaptcha/">Installing invisible Recaptcha</a></li>
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 		</ul>
 	</li>
 
@@ -1914,14 +1990,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 		<ul>
 			<li><a target="_blank" href="https://www.mumble.info/">Mumble Chat .info</a></li>
 			<li><a target="_blank" href="https://getstream.io/blog/hipaa-compliant-chat-apps/">HIPAA Compliant Chat Apps</a></li>
+			<li><a target="_blank" href="https://github.com/papercups-io/papercups">Papercups</a></li>
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 			<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 			
 
-			<li class="sub_li_titulo sub_ul">
+			<li class="column_sub column_sub_full">
 				<p class="titulo_p">ChatBots</p>
 				<ul>
 					<li><a target="_blank" href="https://chatbotsmagazine.com/perfect-bots-from-hell-586f39913577#.etxfx1qou">Perfect Bots from Hell – Chatbots Magazine</a></li>
 					<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 				</ul>
 			</li>
 		</ul>
@@ -1946,7 +2028,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 		</ul>
 	</li>
 
-		<!-- -------------- C o d e / P r o g r a m m i n g __ Code / Programming -------------------------------------------- -->
+		<!-- /* Code / Programming / C o d e / P r o g r a m m i n g -->
         <li>
 			<p class="titulo_p">Code / Programming</p>
 			<ul>
@@ -1954,22 +2036,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			https://www.namingthings.co/naming-things-software-engineering-book">Naming things in software engineering</a></li>
 				<li><a target="_blank" href="https://masscode.io/">Masscode .io · A free and open source code snippets manager for developers</a></li>
 				<li><a target="_blank" href="http://utf8everywhere.org/">UTF-8 Everywhere</a></li>
+				<li><a target="_blank" href="spaceHREF">-</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub">
 					<p class="titulo_p">Code Editors</p>
 					<ul>
 						<li><a target="_blank" href="https://github.com/rxi/lite">Lite</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo">
+				<li class="column_sub">
 					<p class="titulo_p">Helpers</p>
 					<ul>
 						<li><a target="_blank" href="https://www.programming-idioms.org">Programming Idioms</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Review/Testing</p>
 					<ul>
 						<li><a target="_blank" href="https://www.sitepoint.com/the-7-cross-browser-testing-tools-you-need-in-2016/">The 7 Cross-Browser Testing Tools You Need in 2016</a></li>
@@ -1986,7 +2081,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 		
 		
 
-		<!-- /* C O L O R __ Color ----------------------------------------------------------- -->
+		<!-- /* Color / C O L O R -->
         <li>
 			<p class="titulo_p">Color</p>
 			<ul>
@@ -1998,7 +2093,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="http://www.cssfilters.co/">cssFilters.co - Custom and Instagram like photo filters for CSS</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Backgrounds</p>
 					<ul>
 						<li><a target="_blank" href="https://www.novapattern.com/">NovaPattern - Curated Collection of High-Quality Patterns</a></li>
@@ -2006,7 +2101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Dark Mode</p>
 					<ul>
 						<li><a target="_blank" href="https://medium.com/@mailplane/theres-more-to-mailplane-s-dark-mode-than-you-think-87abad4c1e12">Mailplane's Dark Color Schemes</a></li>
@@ -2020,7 +2115,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub">
 					<p class="titulo_p">Theory</p>
 					<ul>
 					<li><a target="_blank" href="https://medium.com/building-creative-market/a-color-exercise-for-our-brands-illustration-db39af44f081">A Color Exercise for our Brand’s Illustration</a></li>
@@ -2028,7 +2123,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub">
 					<p class="titulo_p">Color palettes</p>
 					<ul>
 						<li><a target="_blank" href="https://refactoringui.com/previews/building-your-color-palette">Color Palette · Refactoring UI</a></li>
@@ -2040,7 +2135,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</li>
 			</ul>
 		</li>
-
         <li>
 			<p class="titulo_p">Components</p>
 			<ul>
@@ -2050,6 +2144,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 			</ul>
 		</li>
+        <li>
+			<p class="titulo_p">Cookies</p>
+			<ul>
+				<li><a target="_blank" href="https://chenhuijing.com/blog/understanding-browser-cookies/">Understanding Browser Cookies</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
+			</ul>
+		</li>
+		
+		
 
 		<!-- /* CSS --------------------------------------------------------------------- -->
         <li id="_id-css">
@@ -2077,7 +2183,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://www.bram.us/2021/04/01/debug-inspect-z-index-stacking-with-the-css-stacking-context-inspector-devtools-extension/">Z-index inspector | dev tools browser extension</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
 
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
 					<p class="titulo_p">CSS Animations</p>
 					<ul>
 						<li><a target="_blank" href="https://medium.com/@ux_in_motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc">Creating Usability with Motion: The UX in Motion Manifesto</a></li>
@@ -2110,7 +2216,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						
 					</ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Audit</p>
                     <ul>
                         <li><a target="_blank" href="https://cssstats.com/">CSS Stats</a></li>
@@ -2119,7 +2225,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Border</p>
                     <ul>
                         <li><a target="_blank" href="https://css-tricks.com/animating-border/">Animating Border | CSS-Tricks</a></li>
@@ -2127,7 +2233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Border Radius</p>
                     <ul>
                         <li><a target="_blank" href="https://9elements.com/blog/css-border-radius/">Mastering Border Radius · 9elements.com</a></li>
@@ -2135,7 +2241,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
                     </ul>
                 </li>							
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Calc</p>
                     <ul>
 						<li><a target="_blank" href="http://www.smashingmagazine.com/2015/12/getting-started-css-calc-techniques/?mc_cid=b2ece7659c&mc_eid=b57c1053bd">Getting Started With CSS calc() – Smashing Magazine</a></li>
@@ -2143,20 +2249,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
                     </ul>
                 </li>				
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Colors</p>
                     <ul>
                         <li><a target="_blank" href="https://enes.in/sorted-colors/">CSS color names</a></li>
                         <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Clip Path</p>
                     <ul>
                         <li><a target="_blank" href="https://bennettfeely.com/clippy/">CSS Clip Path Generator - CSS Tools | bennettFeely.com</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Contain</p>
                     <ul>
 						<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain">CSS Contain · MDN</a></li>
@@ -2164,26 +2270,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="emptyHREF">xxxxxxxxxx</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Cursors</p>
                     <ul>
                         <li><a target="_blank" href="http://css-cursor.techstream.org/">CSS Cursor</a></li>
                         <li><a target="_blank" href="https://appleple.github.io/scroll-hint/">ScrollHint javaScript library - Horizontal Scroll</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Debugger</p>
                     <ul>
                         <li><a target="_blank" href="https://github.com/lucagez/Debucsser">Debucsser · Github 	CSS Debugger</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Doodle</p>
                     <ul>
                         <li><a target="_blank" href="https://css-doodle.com/">CSS Doodle</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Effects</p>
                     <ul>
                         <li><a target="_blank" href="http://bennettfeely.com/image-effects/">Image Effects with CSS</a></li>
@@ -2193,7 +2299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Filters</p>
                     <ul>
 						<li><a target="_blank" href="https://css-tricks.com/almanac/properties/f/filter/">CSS Filers | CSS-Tricks.com</a></li>
@@ -2209,7 +2315,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">	
+                <li class="column_sub column_sub_full">	
 					<p class="titulo_p">CSS Flexbox</p>
 					<ul class="clearfix">
 						<li><a target="_blank" href="https://www.flexboxpatterns.com/">Flexbox Patterns</a></li>						
@@ -2226,7 +2332,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">TnnnnnnnnnnnnnnnnnnnnnnnnnnType</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Gradients Generator</p>
                     <ul>
 						<li><a target="_blank" href="https://learnui.design/tools/gradient-generator.html">CSS Gradient Generator - CSS Tools | Learn UI .design *</a></li>
@@ -2239,7 +2345,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
                     </ul>
                 </li>	
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Gradients Library</p>
                     <ul>
 						<li><a target="_blank" href="https://webgradients.com/">CSS Background Gradients Library | WebGradients.com</a></li>
@@ -2250,7 +2356,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                     </ul>
                 </li>				
 						
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Grid</p>
                     <ul>
 						<li><a target="_blank" href="https://vmcreative.github.io/Hexi-Flexi-Grid/">Hexi Flexi Grid | vmcreative .github.io</a></li>
@@ -2283,27 +2389,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Logical Properties</p>
                     <ul>
                         <li><a target="_blank" href="https://ishadeed.com/article/css-logical-properties/">CSS Logical Properties - CSS Theory | ishadeed.com</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Loaders</p>
                     <ul>
                         <li><a target="_blank" href="https://connoratherton.com/loaders">connoratherton.com/loaders</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS ::marker</p>
                     <ul>
                         <li><a target="_blank" href="https://www.smashingmagazine.com/2019/07/css-lists-markers-counters/">CSS ::markers / counter(s)</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Nth-child</p>
                     <ul>
 						<li><a target="_blank" href="https://css-tricks.com/examples/nth-child-tester/#">Nth Tester · CSS Tricks</a></li>
@@ -2312,20 +2418,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="htssoggggggggggggggggggggg">CSggggggggggggggggggggggggggodel</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Object Model CSSOM</p>
                     <ul>
                         <li><a target="_blank" href="https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/">CSS Objetc Model</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Position</p>
                     <ul>
                         <li><a target="_blank" href="https://codyhouse.co/blog/post/sticky-hero-section">position: sticky · Codyhouse.co</a></li>
                         <!--<li><a target="_blank" href="htssoggggggggggggggggggggg">CSggggggggggggggggggggggggggodel</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Text / Type HTML Elements</p>
                     <ul>
                         <li><a target="_blank" href="https://paulbakaus.com/tutorials/css/multiline-truncated-text-with-show-more-button-with-just-css/">Text Quotes | CSS-Tricks</a></li>
@@ -2337,7 +2443,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="htssoggggggggggggggggggggg">CSggggggggggggggggggggggggggodel</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Text / Type Font Loading / Layout Shifts</p>
                     <ul>
 						<li><a target="_blank" href="https://meowni.ca/font-style-matcher/">Fallback Font Style Matcher - CSS Tools | meowni.ca</a></li>
@@ -2345,7 +2451,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                         <!--<li><a target="_blank" href="htssoggggggggggggggggggggg">CSggggggggggggggggggggggggggodel</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Text / Type underline</p>
                     <ul>
 						<li><a target="_blank" href="http://adrianroselli.com/2016/06/on-link-underlines.html#research">On Link Underlines | Adrian Roselli</a></li>
@@ -2356,7 +2462,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Text / Type Typographic Scale Calculator</p>
                     <ul>
                         <li><a target="_blank" href="https://alistapart.com/article/more-meaningful-typography/">More Meaningful Typography · Typographic Scales - Type Theory | AlistApart.com</a></li>
@@ -2367,14 +2473,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
                     </ul>
                 </li>
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
                     <p class="titulo_p">CSS Unicode Patterns / Backgrounds</p>
                     <ul>
                         <li><a target="_blank" href="https://yuanchuan.name/2018/05/06/unicode-patterns.html">CSS Unicode Patterns</a></li>
                         <!--<li><a target="_blank" href="htssoggggggggggggggggggggg">CSggggggggggggggggggggggggggodel</a></li>-->
                     </ul>
                 </li>
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Sass</p>
 					<ul>
 						<li><a target="_blank" href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">SASS Documentation</a></li>
@@ -2396,7 +2502,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<li><a target="_blank" href="https://medium.com/@mciastek/s-css-best-practices-that-you-have-not-yet-known-ba2f6329b5dd">(S)CSS Best Practices That You Have Not Yet Known – Mirosław Ciastek – Medium</a></li>
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS pseudo</p>
                     <ul>
 						<li><a target="_blank" href="https://www.joshwcomeau.com/snippets/html/scale-with-pseudoelements/">Scale with pseudo elements | JoshwComeau.com</a></li>
@@ -2406,7 +2512,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Shadows</p>
                     <ul>
                         <li><a target="_blank" href="https://css-tricks.com/breaking-css-box-shadow-vs-drop-shadow/">CSS Box Shadow vs. Drop Shadow | CSS-Tricks</a></li>
@@ -2417,20 +2523,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Shapes</p>
                     <ul>
                         <li><a target="_blank" href="https://www.smashingmagazine.com/2018/09/css-shapes/">Take a new look at CSS Shapes</a></li>
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Snippets</p>
                     <ul>
                         <li><a target="_blank" href="https://atomiks.github.io/30-seconds-of-css/">CSS Useful Snippets</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
                     </ul>
                 </li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
                     <p class="titulo_p">CSS Variables</p>
                     <ul>
                         <li><a target="_blank" href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/">It&#39;s Time To Start Using CSS Custom Properties – Smashing Magazine</a></li>
@@ -2497,19 +2603,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://www.webfx.com/tools/emoji-cheat-sheet/">Enoji Cheatsheet</a></li>
 				<li><a target="_blank" href="https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb">Emoji list api</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
-
-                <li class="sub_li_titulo sub_ul">
-                    <p class="titulo_p">Emoji for git commit messages</p>
-                    <ul>
-                        <li><a target="_blank" href="https://gitmoji.dev/">Gitmoji</a></li>
-						<li><a target="_blank" href="https://github.com/carloscuesta/gitmoji-cli">Gitmoji Cli · Carlos Cuesta</a></li>
-						<li><a target="_blank" href="https://gist.github.com/parmentf/035de27d6ed1dce0b36a">Git commit messages emoji</a></li>
-						<li><a target="_blank" href="https://github.com/mrowa44/emojify">Emojify</a></li>
-						<li><a target="_blank" href="https://css-tricks.com/changing-emoji-skin-tones-programmatically/">Change emoji skin tone</a></li>
-						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
-
-                    </ul>
-                </li>
 			</ul>
 		</li>
 
@@ -2522,20 +2615,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://developers.facebook.com/docs/sharing/webmasters?locale=es_ES">Facebook Open Graph</a></li>
 				<li><a target="_blank" href="http://lab.ejci.net/favico.js/">favico.js - Make use of your favicon</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
-			</ul>
-		</li>
 
-        <li>
-			<p class="titulo_p">Open Graph</p>
-			<ul>
-				<li><a target="_blank" href="https://ogp.me/">Open Graph Protocol</a></li>
-				<li><a target="_blank" href="https://developers.facebook.com/docs/sharing/webmasters/images">Open Graph images</a></li>
-				<li><a target="_blank" href="https://ahrefs.com/blog/canonical-tags/">Open Graph canonical</a></li>
-				<li><a target="_blank" href="https://ahrefs.com/blog/open-graph-meta-tags/">Open Graph meta tags</a></li>				
-				
-				<li><a target="_blank" href="https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing">Stack Overflow - Provide an image for WhatsApp link sharing</a></li>
-				<li><a target="_blank" href="https://24ways.org/2019/microbrowsers-are-everywhere/">Microbrowsers are everywhere</a></li>
-				<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
+				<li class="column_sub column_sub_full">
+					<p class="titulo_p">Open Graph</p>
+					<ul>
+						<li><a target="_blank" href="https://ogp.me/">Open Graph Protocol</a></li>
+						<li><a target="_blank" href="https://developers.facebook.com/docs/sharing/webmasters/images">Open Graph images</a></li>
+						<li><a target="_blank" href="https://ahrefs.com/blog/canonical-tags/">Open Graph canonical</a></li>
+						<li><a target="_blank" href="https://ahrefs.com/blog/open-graph-meta-tags/">Open Graph meta tags</a></li>				
+						
+						<li><a target="_blank" href="https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing">Stack Overflow - Provide an image for WhatsApp link sharing</a></li>
+						<li><a target="_blank" href="https://24ways.org/2019/microbrowsers-are-everywhere/">Microbrowsers are everywhere</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
+					</ul>
+				</li>
 			</ul>
 		</li>
 
@@ -2578,11 +2671,109 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
             </ul>
         </li>
 
+		<!-- /* Git / G I T -------------------------------------------------------------------- -->
+		<li id="_id-git">
+			<p class="titulo_p">GIT</p>
+			<ul class="clearfix ">
+				<li><a target="_blank" href="https://raygun.com/blog/git-workflow/">Git workflow best practices: 5 tips to get your code to production fast</a></li>
+				<li><a target="_blank" href="https://www.daolf.com/posts/git-series-part-1/">Git series</a></li>
+				<li><a target="_blank" href="https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request">How To Write a Perfect Pull Request · github.blog</a></li>
+				<li><a target="_blank" href="https://gitexplorer.com/">Git command explorer</a></li>
+				<li class="separador_soft"><a target="_blank" href="http://www.git-tower.com/learn/">GitTower Learn | Git Tutorial</a></li>
+				<li><a target="_blank" href="https://git-scm.com">Git SCM</a></li>
+				<li><a target="_blank" href="https://www.nobledesktop.com/learn/git">Learn Git</a></li>
+				
+				<li class="separador_soft"><a target="_blank" href="http://git-scm.com/docs/git-config">Git config</a></li>
+				<li><a target="_blank" href="https://www.micah.soy/posts/setting-up-git-identities/">Setting up GIT Identities</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+				
+				<li class="separador_soft"><a target="_blank" href="https://redgreenrepeat.com/2018/06/08/how-to-push-a-detached-git-head/">How to Push a detached git HEAD</a></li>
+				<li><a target="_blank" href="https://www.git-tower.com/learn/git/faq/detached-head-when-checkout-commit/">What's a "detached HEAD" in Git?</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+
+				<li class="separador_soft"><a target="_blank" href="https://stackoverflow.com/questions/11183788/in-a-git-repository-how-to-properly-rename-a-directory#11183844">Rename directory, caseSentitive</a></li>					
+				<li class=""><a target="_blank" href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting">Reset, checkout, revert</a></li>
+				<li><a target="_blank" href="https://www.gitkraken.com/learn/git/problems/revert-git-commit">Git undos</a></li>
+				<li><a target="_blank" href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/undoing-things">Undoing Things</a></li>
+				<li><a target="_blank" href="https://ohshitgit.com/">git undos · oh shit git</a></li>
+				<li><a target="_blank" href="https://www.nobledesktop.com/learn/git/stash">Git stash</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+				
+				
+				<li class="separador_soft"><a target="_blank" href="http://git-scm.com/docs/git-rebase">Git rebase</a></li>
+				<li><a target="_blank" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></li>
+				<li><a target="_blank" href="https://git-rebase.io/">git rebase in depth</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+				
+				<li class="column_sub column_sub_full">
+					<p class="titulo_p">GIT Markdown</p>
+					<ul>
+						<li><a target="_blank" href="https://markdown.es/sintaxis-markdown/">Markdown en español</a></li>
+						<li><a target="_blank" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet · GitHub</a></li>
+						<li><a target="_blank" href="https://karl-voit.at/2017/09/23/orgmode-as-markup-only/">ORG mode markup</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+					</ul>
+				</li>
+
+                <li class="column_sub column_sub_full">
+                    <p class="titulo_p">Emoji for git commit messages</p>
+                    <ul>
+                        <li><a target="_blank" href="https://gitmoji.dev/">Gitmoji</a></li>
+						<li><a target="_blank" href="https://github.com/carloscuesta/gitmoji-cli">Gitmoji Cli · Carlos Cuesta</a></li>
+						<li><a target="_blank" href="https://gist.github.com/parmentf/035de27d6ed1dce0b36a">Git commit messages emoji</a></li>
+						<li><a target="_blank" href="https://github.com/mrowa44/emojify">Emojify</a></li>
+						<li><a target="_blank" href="https://css-tricks.com/changing-emoji-skin-tones-programmatically/">Change emoji skin tone</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+
+                    </ul>
+                </li>
+				
+				<li class="column_sub column_sub_full">
+					<p class="titulo_p">GIT repos</p>
+					<ul>
+						<li class=""><a target="_blank" href="https://github.com">Github</a></li>
+						<li class=""><a target="_blank" href="https://gitlab.com">GitLab</a></li>
+						<li class=""><a target="_blank" href="https://gitpod.io/">GitPod</a></li>
+						<li class=""><a target="_blank" href="https://bitbucket.org/">Bitbucket</a></li>
+						<li><a target="_blank" href="https://git.live/">GitLive</a></li>
+						<li><a target="_blank" href="https://codeberg.org/">Codeberg .org</a></li>
+						<li><a target="_blank" href="spaceHREF">-</a></li>
+						<li><a target="_blank" href="https://sourcehut.org/">Sourcehut .org</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">bbbbbbbbbbbbbbbbb</a></li>-->
+						<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
+					</ul>
+				</li>
+			</ul>
+		</li>
+
         <li>
             <p class="titulo_p">Graphic Design / Diseño gráfico</p>
             <ul>
                 <li><a target="_blank" href="https://alistapart.com/article/making-room-for-variation/">Making room for variation</a></li>
-				<!-- <li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li> -->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
 
             </ul>
         </li>
@@ -2596,6 +2787,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://blog.chromium.org/2021/03/a-safer-default-for-navigation-https.html">Google Chrome https default</a></li>
 				li><a target="_blank" href="https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea">Google FLoC - Federeated Learning of Cohorts</a></li>
 				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+            </ul>
+        </li>
+
+        <li>
+            <p class="titulo_p">Hosting</p>
+            <ul>
+				<li><a target="_blank" href="https://vercel.com/pricing">Vercel</a></li>
+				<li><a target="_blank" href="https://www.netlify.com/">Netlify</a></li>
+				<li><a target="_blank" href="https://firebase.google.com/">Firebase</a></li>
+				<li><a target="_blank" href="https://surge.sh/">Surge</a></li>
+				<li><a target="_blank" href="https://hostman.com/pricing/website-hosting-cost/">Hostman</a></li>
+				<li><a target="_blank" href="https://www.stormkit.io/pricing">Stormkit</a></li>
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="httfffddddddddddddd">Materssssseme</a></li>-->
+				<!--<li><a target="_blank" href="spaceHREF">-</a></li>-->
             </ul>
         </li>
 
@@ -2610,7 +2820,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                 <li><a target="_blank" href="https://3perf.com/blog/link-rels/">link rels</a></li>
                 <li><a target="_blank" href="http://html5bot.webflow.io/">HTML5 Robot choses the appropriate semantical tag for you</a></li>
 
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
 					<p class="titulo_p">HTML Canvas</p>
 					<ul>
 						<li><a target="_blank" href="https://beautifuldingbats.com/graph-makers/pie-chart-maker/">Pie chart maker</a></li>
@@ -2618,7 +2828,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
 					<p class="titulo_p">HTML Forms | F O R M S </p>
 					<ul>
 						<li><a target="_blank" href="https://zellwk.com/blog/check-empty-input-css/">Validating forms with CSS · Zell Liew</a></li>
@@ -2647,7 +2857,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">HTML Head</p>
 					<ul>
 						<li><a target="_blank" href="https://github.com/joshbuchea/HEAD">GitHub - joshbuchea/HEAD: A list of everything that *could* go in the head of your document</a></li>
@@ -2655,7 +2865,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">HTML Nav</p>
 					<ul>
 						<li><a target="_blank" href="https://envato.com/blog/css-snippets-responsive-menus/">20 Useful CSS Snippets for Responsive Menus</a></li>
@@ -2663,7 +2873,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">HTML Tables</p>
 					<ul>
 						<li><a target="_blank" href="https://css-tricks.com/complete-guide-table-element/">A Complete Guide to the Table Element | CSS-Tricks</a></li>
@@ -2673,14 +2883,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Semantic HTML</p>
 					<ul>
 						<li><a target="_blank" href="https://www.kooslooijesteijn.net/blog/semantic-sidenotes">Semantic Sidenotes</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">HTML WYSIWYG Text Editors</p>
 					<ul>
 						<li><a target="_blank" href="https://froala.com/wysiwyg-editor/">Froala | Text Editor</a></li>
@@ -2691,7 +2901,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus | Text Editor</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Tooltip</p>
 					<ul>
 						<li><a target="_blank" href="https://mightycrow.github.io/wenk/">Wenk - Lightweight pure CSS tooltip for the greater good</a></li>
@@ -2732,7 +2942,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 		<li>
 			<p class="titulo_p">Icon</p>
 			<ul class="clearfix ">
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Icon Sources</p>
 					<ul>
 						<li><a target="_blank" href="https://www.svgrepo.com/">SVG repo</a></li>
@@ -2749,7 +2959,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Icon Design</p>
 					<ul>
 						<li><a target="_blank" href="http://blog.iconfinder.com/better-icon-design-in-6-easy-steps/">Better Icon Design in 6 Easy Steps</a></li>
@@ -2757,7 +2967,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">SVG Icon</p>
 					<ul>
 						<li><a target="_blank" href="https://shkspr.mobi/blog/2018/02/this-svg-always-shows-todays-date/">SVG Dynamic Date Icon</a></li>
@@ -2765,7 +2975,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Accessibility Icon</p>
 					<ul>
 						<li><a target="_blank" href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/">Accessible Icon Buttons</a></li>
@@ -2776,13 +2986,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			</ul>
 		</li>
 
-		<!-- /* I M A G E S --------------------------------------------------------------- -->
+		<!-- /* Images / I M A G E S -->
 		<li>
 			<p class="titulo_p">Images</p>
 			<ul class="clearfix ">
 				<li><a target="_blank" href="https://parametric.press/issue-01/unraveling-the-jpeg/">Uraveling the JPEG</a></li>
 				<li><a target="_blank" href="http://sebastien-gabriel.com/designers-guide-to-dpi/">Designer&#39;s guide to DPI</a></li>
 				<li><a target="_blank" href="http://ajxs.github.io/jpk/">JPG Krusher</a></li>
+				<li><a target="_blank" href="https://catonmat.net/online-gif-tools">Online GIF Tools</a></li>
+				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 				
 				<li class="separador_soft"><a target="_blank" href="https://plaiceholder.co/">Plaiceholder</a></li>				
@@ -2790,8 +3003,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://github.com/joe-bell/blurhash-to-css">Blurhash to CSS</a></li>
 				<li><a target="_blank" href="https://www.jacklmoore.com/zoom/">Jack L Moore jQuery Zoom</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">IMG Optimisation</p>
 					<ul>
 						<li><a target="_blank" href="https://www.jpeg.io/">JPEG .io</a></li>
@@ -2807,16 +3022,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<li class="separador_soft"><a target="_blank" href="https://bjango.com/articles/pngoptimisation/">bjango articles · PNG optimisation</a></li>
 						<li><a target="_blank" href="https://cloudfour.com/thinks/responsive-images-201-client-hints/">Responsive Images 201: Client Hints - Cloud Four</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">IMG Accessibility / Responsible</p>
 					<ul>
 						<li><a target="_blank" href="https://alanthe.dev/blog/responsible-images-2021-03-10">Responsible Images</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+					<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">IMG Gallery Viewer</p>
 					<ul>				
 						<li><a target="_blank" href="https://tholman.com/intense-images/">Intense image viewer | Image Gallery</a></li>
@@ -2827,6 +3047,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus | Image Gallery</a></li>-->
 					</ul>
 				</li>
+			</ul>
+		</li>
+        <li>
+			<p class="titulo_p">Internet Search</p>
+			<ul class="clearfix">
+				<li><a target="_blank" href="https://www.gwern.net/Search">Internet Search Tips</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 			</ul>
 		</li>
 
@@ -2848,16 +3077,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 			</ul>
 		</li>
 
-		<!-- ---------------------- j a v a S c r i p t ------------------------------- -->
+		<!-- /* javaScript / j a v a S c r i p t -->
         <li id="_id-javascript">
 			<p class="titulo_p">JavaScript</p>
 			<ul>
-				
+				<li><a target="_blank" href="emptyhttps://chineduogada.medium.com/how-i-do-learn-javascript-efficiently-c87c273d197eHREF">Learn javaScript Efficiently | javaScript General</a></li>
 				<li><a target="_blank" href="https://elijahmanor.com/blog/format-js-dates-and-times">Natively Format JavaScript Dates and Times | javaScript General</a></li>
 				<li><a target="_blank" href="https://thisthat.dev/">This vs. That | javaScript General</a></li>
 				<li><a target="_blank" href="https://github.com/ryanmcdermott/clean-code-javascript">Clean Code | javaScript General</a></li>
 				<li><a target="_blank" href="https://dmitripavlutin.com/javascript-method/">Javascript Method | javaScript General</a></li>
-				<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa | javaScript General</a></li>-->
 				<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa | javaScript General</a></li>-->
 				<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa | javaScript General</a></li>-->
 				<!--<li><a target="_blank" href="emptyHREF">aaaaaaaaaa | javaScript General</a></li>-->
@@ -2896,7 +3124,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus | javaScript libraries</a></li>-->
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus | javaScript libraries</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Javascript Tutorials</p>
 					<ul>
 						<li><a href="#_id-tutorials">javaScript Tutorials</a></li>-->
@@ -2931,7 +3159,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Logo Search</p>
 					<ul>
 						<li><a target="_blank" href="http://www.brandsoftheworld.com/search/logo?search_api_views_fulltext=brazzoli">Search | Brands of the World™</a></li>
@@ -2991,7 +3219,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://evilmartians.com/chronicles/size-limit-make-the-web-lighter">Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Gulp</p>
 					<ul>
 						<li><a target="_blank" href="https://www.sitepoint.com/how-to-migrate-to-gulp-4/">How to migrate to Gulp 4 · SitePoint</a></li>
@@ -3100,7 +3328,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://github.com/PHPMailer/PHPMailer">PHP Mailer GitHub</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">PHP Gettext</p>
 					<ul>
 						<li><a target="_blank" href="https://www.gnu.org/software/gettext/manual/html_node/Country-Codes.html">Gettext Country Codes</a></li>
@@ -3142,7 +3370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="http://melaniedaveid.com/">Melanie Daveid - UX Design &amp; Art Direction</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-               <li class="sub_li_titulo sub_ul">
+               <li class="column_sub column_sub_full">
 					<p class="titulo_p">Remote work / trabajo remoto</p>
 					<ul>
 
@@ -3229,7 +3457,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/">From jQuery to javaScript</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Academic</p>
 					<ul>
 						<li><a target="_blank" href="http://academictorrents.com/">Academic Torrents</a></li>
@@ -3237,19 +3465,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Illustration</p>
 					<ul>
 						<li><a target="_blank" href="https://illlustrations.co/">Illlustrations - open source illustration kit</a></li>
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Inspiration</p>
 					<ul>
 						<li><a target="_blank" href="http://webdesignstack.com/">Web Design Stack — Web Design &amp; Development Tools, News, and Inspiration</a></li>
 						<li><a target="_blank" href="https://responsivedesign.is/examples/superfriendly/">SuperFriendly | Examples | Responsive Web Design</a></li>
 						<li><a target="_blank" href="https://hackernoon.com/how-to-find-ideas-for-web-design-sl2d33o2">How to find ideas for web design | inspiration web design</a></li>
+						<li><a target="_blank" href="https://tympanus.net/codrops/2021/04/27/inspirational-websites-roundup-25/">Inspirational Websites</a></li>
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
+						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
@@ -3268,7 +3499,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://stephaniewalter.design/blog/designing-adaptive-components-beyond-responsive-breakpoints/">Beyond Responsive Content · Sthepanie Walter</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Media Queries</p>
 					<ul>
 						<li><a target="_blank" href="https://drafts.csswg.org/mediaqueries-5/">Media Queries Level 5</a></li>
@@ -3278,7 +3509,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
 				</li>
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Viewports</p>
 					<ul>
 						<li><a target="_blank" href="https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css">The Unexpected Power of Viewport Units in CSS | Lullabot</a></li>
@@ -3299,7 +3530,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://www.cssscript.com/scrollspy-static/">Scrollspy Static · CSS script</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">UI Kit</p>
 					<ul>
 						<li><a target="_blank" href="https://getuikit.com/docs/scrollspy">Scrolspy UI kit |javaScript Library</a></li>
@@ -3318,7 +3549,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://semrush.com/blog">Semrush</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Google</p>
 					<ul>
 						<li><a target="_blank" href="https://www.google.com/webmasters/">Google Webmasters</a></li>
@@ -3328,7 +3559,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 						<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 					</ul>
                 </li>
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Landing Pages</p>
 					<ul>
                         <li><a target="_blank" href="https://stripe.com/atlas/guides/landing-page-copy/">Landing Page Copy · Stripe.com</a></li>
@@ -3377,7 +3608,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
                 <li><a target="_blank" href="https://www.smashingmagazine.com/2021/03/svg-generators/">SVG Generators</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 				
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">SVG Code</p>
 					<ul>
                         <li><a target="_blank" href="https://www.cassie.codes/posts/swipey-image-grids/">Swipey Image Grid | SVG Code | Image SVG mask</a></li>
@@ -3414,7 +3645,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://blog.acolyer.org/2019/11/20/local-first-software/">Local First Sofware · blog.acolyer.org</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">Workspace</p>
 					<ul>
 						<li><a target="_blank" href="https://doist.com/blog/complete-guide-to-deep-work/">Deep Work Theory · Spellbook</a></li>
@@ -3424,7 +3655,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				</li>
 			</ul>
         </li>
-
+		
+		<!-- /* Tutoriales / T u t o r i a l e s --->
 		<li id="_id-tutorials">
 			<p class="titulo_p">Tutorials / Tutoriales</p>
 			<ul>
@@ -3436,10 +3668,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li class="separador_soft"><a target="_blank" href="https://github.com/dexteryy/spellbook-of-modern-webdev">dexteryy/spellbook-of-modern-webdev · Github</a></li>				
 				<!--<li><a target="_blank" href="emptyHREF">dddddddddddenus</a></li>-->
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">javaScript</p>
 					<ul>
 						<li><a target="_blank" href="https://eloquentjavascript.net/">Eloquent javaScript Tutorial</a></li>
+						<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Developer Mozilla | javaScript Tutorial</a></li>
 						<li><a target="_blank" href="https://www.domestika.org/es/courses/390-introduccion-a-la-programacion-en-javascript">Introducción a JavaScript · Domestika</a></li>				
 						<li><a target="_blank" href="https://github.com/snipcart/learn-vanilla-js">Learn Vanilla js | javaScript Tutorial</a></li>
 						<li><a target="_blank" href="https://sebastiandedeyne.com/javascript-framework-diet/">javaScript Framework Diet | javaScript Tutorial</a></li>
@@ -3457,7 +3690,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 
 
 
-                <li class="sub_li_titulo">
+                <li class="column_sub">
 					<p class="titulo_p">React</p>
 					<ul>
 						<li><a target="_blank" href="https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/">React Tutorial: A Comprehensive Guide to learning React.js in 2018 | React Tutorial</a></li>
@@ -3498,7 +3731,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://tonsky.me/blog/font-size/">Font size is useless; let’s fix it · Capital Height | CSS Typography</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Free fonts / Webfonts</p>
 					<ul>
 						<li><a target="_blank" href="https://www.fontsquirrel.com/fonts/list/recent">Most Recent Fonts » Font Squirrel</a></li>
@@ -3512,7 +3745,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Responsive Typography</p>
 					<ul>
 						<li><a target="_blank" href="https://betterwebtype.com/articles/2019/05/14/the-state-of-fluid-web-typography/">Fuild Type</a></li>
@@ -3521,7 +3754,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">CSS Fonts / Webfonts / Variable Fonts</p>
 					<ul>
 						<li><a target="_blank" href="https://css-tricks.com/font-display-masses/">`font-display` for the Masses | CSS-Tricks</a></li>
@@ -3533,7 +3766,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Google Fonts</p>
 					<ul>
 						<li><a target="_blank" href="https://css-tricks.com/dont-just-copy-the-font-face-out-of-google-fonts-urls/">Don't just copy the Font Face out of Google Fonts URLS · CSS Tricks</a></li>
@@ -3543,7 +3776,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Uniwidth Fonts</p>
 					<ul>
 						<li><a target="_blank" href="https://uxdesign.cc/uniwidth-typefaces-for-interface-design-b6e8078dc0f7">Uniwidth typefaces</a></li>
@@ -3551,7 +3784,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>	
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Unicode / Special Characters / ASCII / HTML Entities</p>
 					<ul>
 						<li><a target="_blank" href="https://ascii.li/emoticon-creator">Text Emoticon Creator - ASCII.li</a></li>
@@ -3566,7 +3799,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Type Design</p>
 					<ul>
 						<li><a target="_blank" href="http://en.wikipedia.org/wiki/Lozenge">Lozenge - Wikipedia, the free encyclopedia</a></li>
@@ -3584,7 +3817,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-				<li class="sub_li_titulo sub_ul">
+				<li class="column_sub column_sub_full">
 					<p class="titulo_p">Type Design Analysis</p>
 					<ul>
 						<li><a target="_blank" href="https://typesetinthefuture.com">Type Design Analysis</a></li>
@@ -3612,7 +3845,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 				<li><a target="_blank" href="https://medium.com/ux-in-motion/ui-animation-principles-disney-is-dead-8bf6c66207f9">UI Animation Principles: Disney is Dead – UX in Motion – Medium</a></li>
 				<!--<li><a target="_blank" href="emptyHREF">Fossssssssssssssssssssssss</a></li>-->
 
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
 					<p class="titulo_p">Buyer Personas</p>
 					<ul>
 						<li><a target="_blank" href="https://www.nngroup.com/articles/persona/">Personas · NN Group</a></li>
@@ -3623,7 +3856,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0c1c3f', e
 					</ul>
 				</li>
 
-                <li class="sub_li_titulo sub_ul">
+                <li class="column_sub column_sub_full">
 					<p class="titulo_p">Cognitive Bias</p>
 					<ul>
 						<li><a target="_blank" href="https://stephaniewalter.design/blog/52-ux-cards-to-discover-cognitive-biases/">52 UX Cards on Cognitive Bias</a></li>
