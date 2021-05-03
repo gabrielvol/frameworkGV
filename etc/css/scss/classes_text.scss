@@ -36,4 +36,10 @@ b, strong,
   overflow: hidden;
   white-space: nowrap;
 }
+.clampledText{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
 .noSelect{user-select: none}

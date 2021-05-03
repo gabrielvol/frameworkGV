@@ -144,6 +144,7 @@ $font_families_monospaced_map:(
     consolas: 'Consolas',
     andaleMono: 'Andale Mono',
     lucidaConsole: 'Lucida Console',
+    menlo: 'Menlo',
     bitstreamVeraSansMono: 'Bitstream Vera Sans Mono',
     courierNew: 'Courier New',
     monospace: monospace
@@ -153,6 +154,7 @@ $font_families_monospaced_list:
     map-get($font_families_monospaced_map, consolas),    
     map-get($font_families_monospaced_map, andaleMono),
     map-get($font_families_monospaced_map, lucidaConsole),
+    map-get($font_families_monospaced_map, menlo),
     map-get($font_families_monospaced_map, bitstreamVeraSansMono),
     map-get($font_families_monospaced_map, courierNew),
     map-get($font_families_monospaced_map, monospace)
@@ -162,6 +164,7 @@ $font_families_monospaced_list_fallback:
     map-get($font_families_monospaced_map, consolas),    
     map-get($font_families_monospaced_map, andaleMono),
     map-get($font_families_monospaced_map, lucidaConsole),
+    map-get($font_families_monospaced_map, menlo),
     map-get($font_families_monospaced_map, bitstreamVeraSansMono),
     map-get($font_families_monospaced_map, courierNew),
     map-get($font_families_monospaced_map, monospace)
@@ -170,6 +173,7 @@ $font_families_monospaced_list_fallback:
 $consolas:                  map-get($font_families_monospaced_map, consolas);
 $andaleMono:                map-get($font_families_monospaced_map, andaleMono);
 $lucidaConsole:             map-get($font_families_monospaced_map, lucidaConsole);
+$menlo:                     map-get($font_families_monospaced_map, menlo);
 $bitstreamVeraSansMono:     map-get($font_families_monospaced_map, bitstreamVeraSansMono);
 $courierNew:                map-get($font_families_monospaced_map, courierNew);
 $monospace:                 map-get($font_families_monospaced_map, monospace);

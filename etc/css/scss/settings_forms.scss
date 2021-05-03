@@ -75,6 +75,8 @@ fieldset, label, button,
 }
 
 input, select, textarea{
+    caret-color: $form_input_caret_colour;
+    
     .mobileForm &{
         @include beforeTablet{
             font-size: $form_input_ftSize_BT;

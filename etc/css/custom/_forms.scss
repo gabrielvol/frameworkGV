@@ -21,7 +21,7 @@ fieldset{
     &.invalidField{
         legend,
         label span{
-            color: $form_input_msg_error_ftColour;
+            color: $form_label_msg_error_ftColour;
         }
         
         legend{
@@ -105,7 +105,9 @@ form{
 
         &[type="number"]{
             &:in-range{}
-            &:out-of-range{}
+            &:out-of-range{
+                border-color: $form_input_invalid_bdColour!important;
+            }
         }
         &[type="range"]{}
 
@@ -225,7 +227,7 @@ form{
             border-width: 2px;
             
             &, &:focus, &:hover{
-                border-color: $bdError!important;
+                border-color: $form_input_invalid_bdColour!important;
                 box-shadow: inset 0 0 0 $form_input_bdColour_hover;
             }
         }
@@ -362,7 +364,7 @@ form{
             display: none;
             padding-top: 3px;
             padding-left: 10px;
-            color: $form_input_msg_error_ftColour;
+            color: $form_label_msg_error_ftColour;
             font-family: $arial;
             font-size: 0.8rem!important;
             font-weight: 700;

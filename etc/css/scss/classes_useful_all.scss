@@ -91,8 +91,8 @@
         vertical-align: middle;
     }
     
-    .visuallyHidden,
-    .sr-only{
+    .visuallyHidden:not(:focus):not(:active),
+    .sr-only:not(:focus):not(:active){
 /*
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -102,6 +102,7 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
         position: absolute;
+        clip-path: inset(100%);
         clip: rect(0 0 0 0);
         width: 1px;
         height: 1px;
@@ -110,22 +111,6 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
         margin: -1px;
         overflow: hidden;
         white-space: nowrap; /* 1 */
-
-/*
-Extends the .visuallyHidden class to allow the element
-to be focusable when navigated to via the keyboard:
-https://www.drupal.org/node/897638
-*/
-        &:active,
-        &:focus {
-            clip: auto;
-            height: auto;
-            margin: 0;
-            overflow: visible;
-            position: static;
-            width: auto;
-            white-space: inherit;
-        }
     }
     
     article, details, figcaption, figure, hgroup, main, menu, nav, summary,

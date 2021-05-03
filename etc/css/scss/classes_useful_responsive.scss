@@ -64,9 +64,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenMO,
-        .sr-onlyMO{
+        .visuallyHiddenMO:not(:focus):not(:active),
+        .sr-onlyMO:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -75,17 +76,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -192,9 +182,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenAML,
-        .sr-onlyAML{
+        .visuallyHiddenAML:not(:focus):not(:active),
+        .sr-onlyAML:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -203,17 +194,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -320,9 +300,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenMLO,
-        .sr-onlyMLO{
+        .visuallyHiddenMLO:not(:focus):not(:active),
+        .sr-onlyMLO:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -331,17 +312,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -448,9 +418,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenBT,
-        .sr-onlyBT{
+        .visuallyHiddenBT:not(:focus):not(:active),
+        .sr-onlyBT:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -459,17 +430,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -576,9 +536,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenBTL,
-        .sr-onlyBTL{
+        .visuallyHiddenBTL:not(:focus):not(:active),
+        .sr-onlyBTL:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -587,17 +548,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -704,9 +654,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenTO,
-        .sr-onlyTO{
+        .visuallyHiddenTO:not(:focus):not(:active),
+        .sr-onlyTO:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -715,17 +666,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -832,9 +772,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenAT,
-        .sr-onlyAT{
+        .visuallyHiddenAT:not(:focus):not(:active),
+        .sr-onlyAT:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -843,17 +784,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -960,9 +890,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenATL,
-        .sr-onlyATL{
+        .visuallyHiddenATL:not(:focus):not(:active),
+        .sr-onlyATL:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -971,17 +902,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -1088,9 +1008,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenTLO,
-        .sr-onlyTLO{
+        .visuallyHiddenTLO:not(:focus):not(:active),
+        .sr-onlyTLO:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -1099,17 +1020,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -1216,9 +1126,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenTTLO,
-        .sr-onlyTTLO{
+        .visuallyHiddenTTLO:not(:focus):not(:active),
+        .sr-onlyTTLO:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -1227,17 +1138,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -1344,9 +1244,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenBD,
-        .sr-onlyBD{
+        .visuallyHiddenBD:not(:focus):not(:active),
+        .sr-onlyBD:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -1355,17 +1256,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     
@@ -1472,9 +1362,10 @@
             display: table-cell;
             vertical-align: middle;
         }
-        .visuallyHiddenAD,
-        .sr-onlyAD{
+        .visuallyHiddenAD:not(:focus):not(:active),
+        .sr-onlyAD:not(:focus):not(:active){
             position: absolute;
+            clip-path: inset(100%);
             clip: rect(0 0 0 0);
             width: 1px;
             height: 1px;
@@ -1483,17 +1374,6 @@
             margin: -1px;
             overflow: hidden;
             white-space: nowrap;
-
-            &:active,
-            &:focus {
-                clip: auto;
-                height: auto;
-                margin: 0;
-                overflow: visible;
-                position: static;
-                width: auto;
-                white-space: inherit;
-            }
         }
     }
     

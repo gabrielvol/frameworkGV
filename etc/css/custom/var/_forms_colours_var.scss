@@ -20,10 +20,12 @@ $form_input_ftColour_autofill:  $form_input_ftColour;
   
 $form_input_bdColour:           $bdColour_main_global;
 $form_input_bdColour_hover:     $bdColour_main_global_hover;
+
 $form_input_bgColour:           $white;
 $form_input_bgColour_hover:     $form_input_bgColour;
     
 $form_input_shadowInset:        inset 0 0 6px $greyL;
+$form_input_caret_colour:       $form_input_ftColour;
  
      
 /* // Form Submit  ---------------------------------------------------------- */
@@ -38,7 +40,8 @@ $button_form_submit_bgColour_hover:      $button_form_submit_bgColour;
     
      
 /* // Form Validation ------------------------------------------------------- */
-$form_input_msg_error_ftColour:     $errorColour;
+$form_input_invalid_bdColour:       $bdError;
+$form_label_msg_error_ftColour:     $errorColour;
  
 $form_status_msg_error_bgColour:    $bgErrorColour;
 $form_status_msg_error_ftColour:    $white;
