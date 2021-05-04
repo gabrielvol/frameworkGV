@@ -86,25 +86,3 @@ $roboto:        map-get($font_families_map, roboto), $font_families_sans_list_fa
 /*___ Creamos la variable de la fuente principal del sitio _*/
 $ftFamily_main_global:    $arial;
 $ftFamily_bold_global:    $ftFamily_main_global;
-
-
-/* // Main font Stack ------------------------------------------------------- */
-$font_stack_map:(
-///-- Este mapa genera la declaracion `font-family` en el archivo `[/scss/settings_text.scss]`
-//
-///-- Primero la fuente principal
-    $ftFamily_main_global,
-///-- En segundo lugar siguen las fuentes Arial, Roboto y Times New Roman,
-///-- si alguna esta asignada a la variable `$ftFamily_main_global`, la misma
-///-- debe estar comentada a continuacion. 
-    $arial, 
-    $roboto,
-//    $timesNewRoman,
-//
-///-- Luego de establecer las fuentes principales se elige uno de los sets para
-///-- el fallback.
-///-- Estas listas se encuentran detalladas en `[/scss/var_fonts.scss]`.
-    $font_families_sans_list // Si se activa este set hay que comentar $timesNewRoman
-//    $font_families_serif_list // Si se activa este set hay que comentar $arial y $roboto
-//    $font_families_monospaced_list // Si se activa este set hay que comentar $arial, $roboto y $timesNewRoman
-);
