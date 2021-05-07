@@ -1,26 +1,26 @@
-<li class="nav_item_PAGINA <?php if($nav_pageCurrent == 1) { echo 'visuallyHidden nav_item_current'; } ?>">
+<li class="nav_item-PAGINA <?php if($nav_pageCurrent == 1) { echo 'visuallyHidden nav_item_current'; } ?>">
     <a <?php echo $href_index; ?> <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("Inicio"); ?>
     </a>
 </li>
-<li class="nav_item_PAGINA <?php if($nav_pageCurrent == 2) { echo 'nav_item_current'; } ?>">
+<li class="nav_item-PAGINA <?php if($nav_pageCurrent == 2) { echo 'nav_item_current'; } ?>">
     <a <?php echo $href_PAGINA; ?> <?php if($nav_pageCurrent == 2) { echo 'aria-current="page"'; } ?>>
         <?php echo _("pagina"); ?>
     </a>
 </li>
-<li class="nav_item_PAGINA nav_item_noLink_js">
+<li class="nav_item-PAGINA nav_item_noLink_js">
     <a href="<?php if($page_int == 1) { echo $url_index; } ?>#seccion">
         <?php echo _("pagina"); ?>
     </a>
 </li>
 
 <!--Con gettext--> 
-<li class="nav_item_PAGINA <?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
+<li class="nav_item-PAGINA <?php if($nav_pageCurrent == 1) { echo 'nav_item_current'; } ?>">
     <a <?php echo $href_PAGINA; ?> <?php if($gettext_idioma == 'en_GB') { echo '?l=en_GB'; } ?> <?php if($nav_pageCurrent == 1) { echo 'aria-current="page"'; } ?>>
         <?php echo _("pagina"); ?>
     </a>
 </li>
-<li class="nav_item_PAGINA nav_item_noLink_js">
+<li class="nav_item-PAGINA nav_item_noLink_js">
     <a <?php if($page_int == 1) { echo 'href="'. $url_PAGINA_full_gettext .'"'; } else { echo $href_PAGINA_gettext; } ?>>
         <?php echo _("pagina"); ?>
     </a>

@@ -14,7 +14,7 @@
         <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_EMAILA_href ?>> <?php echo $site_email_EMAILA_address ?></a></p>
     </div>  
     
-    <nav class="navFooter pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
+    <nav class="nav_footer" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
         <ul class="nav_main_ul unstyled clearfix">
             <?php include('nav.main.list.inc.php'); ?>                
         </ul>

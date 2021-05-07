@@ -10,15 +10,15 @@
     $nav_pageCurrent    = 0;
     
     $site_title         = "Contacto | ". $site_name_title;
-//  $site_title_GB      = "Contact | ". $site_name_title;
+//    $site_title_GB      = "Contact | ". $site_name_title;
     
     $site_desc          = $site_desc_global;
-//  $site_desc_GB       = $site_desc_global_GB;
+//    $site_desc_GB       = $site_desc_global_GB;
     
     $openGraph_title            = $site_title;
-//  $openGraph_title_GB         = $site_title_GB;
+//    $openGraph_title_GB         = $site_title_GB;
     $openGraph_desc             = $openGraph_desc_global;
-//  $openGraph_desc_GB          = $openGraph_desc_global_GB; 
+//    $openGraph_desc_GB          = $openGraph_desc_global_GB; 
     $openGraph_url_img          = $openGraph_url_img_sq;
     $openGraph_url_img_width    = $openGraph_img_sq_width;
     $openGraph_url_img_height   = $openGraph_img_sq_height;
