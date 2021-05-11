@@ -21,7 +21,7 @@
     <!--Con Gettext-->
     <?php
         if($page_index == 1){ echo '<h1 class="logo_header">'; } 
-        if($page_index == 1 &&  $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; }
+        if($page_index == 1 && $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; }
     ?>
     <a href="<?php echo $url_dir; ?>/<?php if($gettext_idioma == 'pt_BR'){ echo '?l=pt_BR';
         } else if($gettext_idioma == 'en_GB') {
