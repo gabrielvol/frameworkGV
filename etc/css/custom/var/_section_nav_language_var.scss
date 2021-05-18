@@ -3,6 +3,8 @@
    ========================================================================== */
 
 /* // Language Sizes -------------------------------------------------------- */
+$nav_language_item_n:               2;
+
 /*___ Flags _____________________________*/
 $language_flag_width_BT:            38px;
 $language_flag_height_BT:           25px; // Este valor se usa para el tamaño de las flag rounded
@@ -19,9 +21,9 @@ $language_flag_border_size_full:    calc(#{$language_flag_border_size} * 2);
 
 /*___ Language UL _______________________*/
 $nav_language_ul_right_AT:          20px;
-$nav_language_ul_bottom:           20px;
+$nav_language_ul_bottom:            20px;
 
-$nav_language_ul_width_AT:          calc(#{$language_flag_width_AT} + #{$language_flag_width_AT} + #{$language_flag_sep_AT} + #{$nav_language_ul_right_AT} + 15px);
+$nav_language_ul_width_AT:          calc(calc(#{$language_flag_width_AT} * #{$nav_language_item_n}) + calc(#{$language_flag_sep_AT} * calc(#{$nav_language_item_n} - 1)) + #{$nav_language_ul_right_AT} + 15px);
 
 $nav_language_ul_height_BT:             calc(#{$language_flag_height_BT} + #{$language_flag_border_size_full});
 $nav_language_ul_height_clicked:        calc(#{$language_flag_height_clicked} + #{$language_flag_border_size_full});
@@ -31,6 +33,6 @@ $nav_language_ul_height_AT:             calc(#{$language_flag_height_AT} + #{$la
 
 
 /* // Language Colours ------------------------------------------------------ */
-$nav_language_ul_bgColour_clicked:                  transparent;
+$nav_language_ul_bgColour_clicked:              transparent;
 $language_flag_anchor_bgColour:                 $bgColour_main_global;
-$language_flag_rounded_anchor_hover_bxShadow:    0 0 10px $white;
+$language_flag_rounded_anchor_hover_bxShadow:   0 0 10px $white;
