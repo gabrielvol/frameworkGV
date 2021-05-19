@@ -110,7 +110,13 @@
                 
                 &,
                 li,
-                a{}
+                a{}               
+                
+                li,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_item_sub_height_AT);
+                }
                 
                 a{
                     /* Texto alineado a la izq
@@ -250,6 +256,16 @@
                 @include equalHeightAndLineHeight($nav_height_TO);
             }
         }
+        
+        @if $nav_hasSub_act == "on"{
+            .nav_subNav{                
+                li,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_item_sub_height_TO);
+                }
+            }
+        }
     }
     
     @include afterTabletLandscape{
@@ -308,6 +324,7 @@
             
             a,
             .nav_TLI{
+                box-sizing: border-box;
                 font-size: 1rem;
                 padding-right: 10px;
                 padding-left: 10px;
@@ -333,6 +350,19 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        
+        @if $nav_hasSub_act == "on"{
+            .nav_subNav{
+                width: $nav_subMenu_width_ATL;
+                margin-left: calc(-1 * (#{$nav_subMenu_width_ATL} / 2));
+                
+                li,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_item_sub_height_ATL);
                 }
             }
         }

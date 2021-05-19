@@ -251,6 +251,17 @@ nav{
                 }
             }
         }
+            
+        @if $nav_hasSub_level2_act == "on"{            
+            .nav_subNav_level2{
+/*
+                top: $zero;
+                left: $nav_subMenu_width_AT!important;
+                margin: $zero;
+*/
+                width: $nav_subMenu_level2_width_AT!important;
+            }
+        }
         
         @if $nav_topper_act == "on"{
             &.nav_topper{
