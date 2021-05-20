@@ -51,31 +51,31 @@ $slider_carousel_bgColour:          $bgWhite;
 
 
 /* // Slider Arrows --------------------------------------------------------- */
-$slider_arrows_width_BT:             30px;
-$slider_arrows_height_BT:            $slider_arrows_width_BT;
-$slider_arrows_height_half_BT:       calc(#{$slider_arrows_height_BT} / 2);
+$slider_arrows_width_BT:            30px;
+$slider_arrows_height_BT:           $slider_arrows_width_BT;
+$slider_arrows_height_half_BT:      calc(#{$slider_arrows_height_BT} / 2);
 
-$slider_arrows_width_AT:             30px;
-$slider_arrows_height_AT:            $slider_arrows_width_AT;
-$slider_arrows_height_half_AT:       calc(#{$slider_arrows_height_AT} / 2);
+$slider_arrows_width_AT:            30px;
+$slider_arrows_height_AT:           $slider_arrows_width_AT;
+$slider_arrows_height_half_AT:      calc(#{$slider_arrows_height_AT} / 2);
 
-$slider_arrows_width_ATL:            50px;
-$slider_arrows_height_ATL:           $slider_arrows_width_ATL;
-$slider_arrows_height_half_ATL:      calc(#{$slider_arrows_height_ATL} / 2);
+$slider_arrows_width_ATL:           50px;
+$slider_arrows_height_ATL:          $slider_arrows_width_ATL;
+$slider_arrows_height_half_ATL:     calc(#{$slider_arrows_height_ATL} / 2);
 
 
 /* // Carousel Arrows ------------------------------------------------------- */
-$carousel_arrows_width_BT:           $slider_arrows_width_BT;
-$carousel_arrows_height_BT:          $slider_arrows_height_BT;
-$carousel_arrows_height_half_BT:     calc(#{$carousel_arrows_height_BT} / 2);
+$carousel_arrows_width_BT:          $slider_arrows_width_BT;
+$carousel_arrows_height_BT:         $slider_arrows_height_BT;
+$carousel_arrows_height_half_BT:    calc(#{$carousel_arrows_height_BT} / 2);
 
-$carousel_arrows_width_AT:           $slider_arrows_width_AT;
-$carousel_arrows_height_AT:          $slider_arrows_height_AT;
-$carousel_arrows_height_half_AT:     calc(#{$carousel_arrows_height_AT} / 2);
+$carousel_arrows_width_AT:          $slider_arrows_width_AT;
+$carousel_arrows_height_AT:         $slider_arrows_height_AT;
+$carousel_arrows_height_half_AT:    calc(#{$carousel_arrows_height_AT} / 2);
 
-$carousel_arrows_width_ATL:          $slider_arrows_width_ATL;
-$carousel_arrows_height_ATL:         $slider_arrows_height_ATL;
-$carousel_arrows_height_half_ATL:    calc(#{$carousel_arrows_height_ATL} / 2);
+$carousel_arrows_width_ATL:         $slider_arrows_width_ATL;
+$carousel_arrows_height_ATL:        $slider_arrows_height_ATL;
+$carousel_arrows_height_half_ATL:   calc(#{$carousel_arrows_height_ATL} / 2);
 
 $carousel_PH_BT:                    calc(#{$carousel_arrows_width_BT} * 1.5);
 $carousel_PH_AT:                    calc(#{$carousel_arrows_width_AT} * 1.5);
@@ -83,8 +83,8 @@ $carousel_PH_ATL:                   calc(#{$carousel_arrows_width_ATL} * 1.5);
 
 
 /* // Dots ------------------------------------------------------------------ */
-$slider_dots_width:                  15px;
-$slider_dots_height:                 $slider_dots_width;
-$slider_dots_widthHeight:            $slider_dots_width $slider_dots_height;
-$slider_dots_separation:             10px;
-$slider_dots_MT:                     calc(#{$slider_dots_height} + 20px);
+$slider_dots_width:                 15px;
+$slider_dots_height:                $slider_dots_width;
+$slider_dots_widthHeight:           $slider_dots_width $slider_dots_height;
+$slider_dots_separation:            10px;
+$slider_dots_MT:                    calc(#{$slider_dots_height} + 20px);

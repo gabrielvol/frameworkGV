@@ -51,7 +51,7 @@ $(document).ready(function () {
                     ,slidesToScroll: 1
                 }
             }
-            ,{breakpoint: 601, // 
+            ,{breakpoint: 601,
                 settings: {
                      slidesToShow: 2
                     ,dots: true
