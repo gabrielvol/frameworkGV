@@ -100,11 +100,16 @@
         @if $nav_hasSub_act == "on"{
             .nav_subNav{                
                 position: absolute;
-                left: 50%;
                 top: $nav_height_AT;
                 border-radius: 0 0 10px 10px;
                 width: $nav_subMenu_width_AT;
-                margin-left: calc(-1 * (#{$nav_subMenu_width_AT} / 2));
+                
+                @if $nav_sub_centered_AT == "on"{
+                    left: 50%;
+                    margin-left: calc(-1 * (#{$nav_subMenu_width_AT} / 2));
+                } @else  {
+                    left: -15px;                    
+                }
                 
                 &, li{}
                 
@@ -348,6 +353,22 @@
             a,
             .nav_TLI{}
         }
+        
+        @if $nav_hasSub_act == "on"{
+            .nav_subNav{
+                width: $nav_subMenu_width_ATL;
+                
+                @if $nav_sub_centered_AT == "on"{
+                    margin-left: calc(-1 * (#{$nav_subMenu_width_ATL} / 2));
+                }
+                
+                li,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_item_sub_height_ATL);
+                }
+            }
+        }
 
         @if $nav_topper_act == "on"{
             &.nav_topper{
@@ -361,19 +382,6 @@
                             }
                         }
                     }
-                }
-            }
-        }
-        
-        @if $nav_hasSub_act == "on"{
-            .nav_subNav{
-                width: $nav_subMenu_width_ATL;
-                margin-left: calc(-1 * (#{$nav_subMenu_width_ATL} / 2));
-                
-                li,
-                a,
-                .nav_TLI{
-                    @include equalHeightAndLineHeight($nav_item_sub_height_ATL);
                 }
             }
         }
