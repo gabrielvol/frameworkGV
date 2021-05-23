@@ -23,12 +23,12 @@
     
     $form_status_msg_error_globalA__formMain   = _('Hubo un error al enviar el mensaje.');
     $form_status_msg_error_globalB__formMain   = _('Intente nuevamente m&aacute;s tarde.');
-    $form_status_msg_error_globalC__formMain   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_msg_error_recipient_mailto .'" class="'. $formPop_anchor_classes__formMain .'">'. $form_status_msg_error_recipient .'</a>.';
+    $form_status_msg_error_globalC__formMain   = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_msg_error_recipient_mailto__formMain .'" class="'. $formPop_anchor_classes__formMain .'">'. $form_status_msg_error_recipient__formMain .'</a>.';
     
     
     //--------------------------------------------------------------------------
     // Status ini
-    //$form_status_msg__formMain = '<p class="status ini">'.$form_status_msg_ini_global__formMain.'</p>';
+//    $form_status_msg__formMain = '<p class="form_status ini">'. $form_status_msg_ini_global__formMain .'</p>';
         
         
     //--------------------------------------------------------------------------
@@ -37,7 +37,7 @@
 //        ini_set('sendmail_from', 'tampas@gmail.com');
 //        ini_set('SMTP','mail.dominio.com');
         
-//        ini_set('sendmail_from', $form_recipient);
+//        ini_set('sendmail_from', $form_recipient__formMain);
 //        ini_set('SMTP','mail.'. $domain_global);
 
         // Asignamos datos de campos a variables
@@ -78,7 +78,7 @@
         $data_mensaje__formMain         = $_POST['data_mensaje__formMain'];
 
         // Cabeceras del correo
-        $formMail_recipient  = $form_recipient;
+        $formMail_recipient  = $form_recipient__formMain;
         // $formMail_recipient  = $data_area__formMain;
         $formMail_asunto   = "Contacto Web de ". $data_nombre__formMain ." - ". $data_empresa__formMain;
         $formMail_headers  = "From: $data_nombre__formMain <$data_email__formMain>\r\n";
@@ -86,8 +86,8 @@
         $formMail_headers .= "Content-type: text/html\r\n";
         $formMail_headers .= "X-Mailer: PHP5\n";
         $formMail_headers .= 'MIME-Version: 1.0' . "\n";
-        //$formMail_headers .= "CC: ". $form_recipient_CC ."\r\n";
-        //$formMail_headers .= "BCC: ". $form_recipient_BCC ."\r\n";
+        //$formMail_headers .= "CC: ". $form_recipient_CC__formMain ."\r\n";
+        //$formMail_headers .= "BCC: ". $form_recipient_BCC__formMain ."\r\n";
         $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $url_contacto_full .'</small><br /><br />';
         $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formMain ."<br />";
         $formMail_texto .= "<strong>Apellido:</strong> ". $data_apellido__formMain ."<br />";
@@ -494,10 +494,10 @@
             if(mail($formMail_recipient, $formMail_asunto, $formMail_texto, $formMail_headers)){
 
             //Redirect
-            //echo '<META HTTP-EQUIV="Refresh" Content="0;URL=http://www.sitioweb.com/gracias.php">';
+//            echo '<META HTTP-EQUIV="Refresh" Content="0;URL='. $url_global .'/gracias.php">';
                 
 //INICIA MENSAJE OK EN $form_status_msg_
-                $form_status_msg__formMain = '<p class="status ok" role="alert">'._("$form_status_msg_OK_globalA__formMain").' '._("$form_status_msg_OK_globalB__formMain").'</p>';
+                $form_status_msg__formMain = '<p class="status ok" role="alert">'. _("$form_status_msg_OK_globalA__formMain") .' '. _("$form_status_msg_OK_globalB__formMain") .'</p>';
                 $form_msg_mandatory_classes__formMain = 'displayNone';
 //FIN mensaje ok en $form_status_msg_
                 
@@ -506,8 +506,8 @@
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="button_pop_close hover_grow_S_ani">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="'. $formPop_h2_ok_classes__formMain .'">'._("$form_status_msg_OK_globalA__formMain").'</h2>'
-                        . '<p>'._("$form_status_msg_OK_globalB__formMain").'</p>'
-                        . '<button type="submit" class="button_pop_submit">'._("OK").'</button>'
+                        . '<p>'. _("$form_status_msg_OK_globalB__formMain") .'</p>'
+                        . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modal_global modal_formStatus"></div>';
@@ -544,18 +544,18 @@
 
             } else {
 //INICIA MENSAJE ERROR EN $form_status_msg_
-                $form_status_msg__formMain = '<p class="status error" role="alert">'._("$form_status_msg_error_globalA__formMain").' <span class="displayBlock">'._("$form_status_msg_error_globalB__formMain").'</span></p>';
+                $form_status_msg__formMain = '<p class="status error" role="alert">'. _("$form_status_msg_error_globalA__formMain") .' <span class="displayBlock">'. _("$form_status_msg_error_globalB__formMain") .'</span></p>';
                 $form_msg_mandatory_classes__formMain = 'displayNone';
 //FIN mensaje error en $form_status_msg_
                 
 //INICIA MENSAJE ERROR EN POPUP
                 $form_status_msg_pop__formMain = '<div class="pop_general pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
-                        . '<button type="submit" class="button_pop_close hover_grow_S_ani">'._("Cerrar").'</button>'
-                        . '<h2 id="formError" class="'. $formPop_h2_error_classes__formMain .'">'._("$form_status_msg_error_globalA__formMain").'</h2>'
-                        . '<p>'._("$form_status_msg_error_globalB__formMain").'</p>'
-                        . '<p>'._("$form_status_msg_error_globalC__formMain").'</p>'
-                        . '<button type="submit" class="button_pop_submit">'._("OK").'</button>'
+                        . '<button type="submit" class="button_pop_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
+                        . '<h2 id="formError" class="'. $formPop_h2_error_classes__formMain .'">'. _("$form_status_msg_error_globalA__formMain") .'</h2>'
+                        . '<p>'. _("$form_status_msg_error_globalB__formMain") .'</p>'
+                        . '<p>'. _("$form_status_msg_error_globalC__formMain") .'</p>'
+                        . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
                         . '</div>'
                         . '</div>'
                         . '<div class="modal_global modal_formStatus"></div>';

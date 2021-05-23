@@ -43,7 +43,7 @@
                     echo $form_status_msg_pop__formMain;
 
                     if($section_has_mandatoryMsg_act == 1) {
-                        echo '<div class="msg_mandatory '.$form_msg_mandatory_classes__formMain.'">'.$form_msg_mandatory__formMain.'</div>';
+                        echo '<div class="msg_mandatory '. $form_msg_mandatory_classes__formMain .'">'. $form_msg_mandatory__formMain .'</div>';
                     }                
                 ?>
 
@@ -392,7 +392,7 @@
                     <textarea name="data_mensaje__formMain" id="data_mensaje__formMain" class="mensaje" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>"><?php echo $_POST['data_mensaje__formMain']; ?></textarea>
                 </label>
 
-                <input type="submit" value="<?php echo _('Enviar'); ?>" name="button_form_submit__formMain" class="button_form_submit__formMain">
+                <input type="submit" value="<?php echo _('Enviar'); ?>" name="button_form_submit__formMain" class="button_form_submit button_form_submit__formMain">
             </form>
         </div>
     </div>

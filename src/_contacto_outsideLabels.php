@@ -42,7 +42,7 @@
                         echo $form_status_msg__formMain;
 
                         if($section_has_mandatoryMsg_act == 1) {
-                            echo '<div class="msg_mandatory '.$msg_mandatoryClasses__formMain.'">'.$msg_mandatory__formMain.'</div>';
+                            echo '<div class="msg_mandatory '. $msg_mandatoryClasses__formMain .'">'. $msg_mandatory__formMain .'</div>';
                         }                
                     ?>
                     <div class="msg_mandatory <?php echo $msg_mandatoryClasses ?>">
