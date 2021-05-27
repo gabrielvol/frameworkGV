@@ -3,10 +3,10 @@
    ========================================================================== */
 .video_mask,
 .map_mask{
-    border-radius: $bdRadius_global;
     @include borderStyle($bdGreyL);
     box-sizing: border-box;
     overflow: hidden;
+    border-radius: $bdRadius_global;
 
     iframe{
         display: block;
@@ -28,6 +28,14 @@
         height: 250px;
     }
     
+/*    
+        width: 500px;
+        height: 277px;
+
+        width: 700px;
+        height: 388px;
+*/
+
     @include afterTablet{
         width: 600px;
         height: 330px;
