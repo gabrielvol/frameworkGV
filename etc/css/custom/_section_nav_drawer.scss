@@ -43,7 +43,8 @@
             }
 
             .button_hamb_close{
-                @include squareSize($button_hamb_close_size);
+                width: $button_hamb_close_size;
+                height: calc(#{$button_hamb_close_size} - 10px);
                 background-color: $button_hamb_close_bgColour;
                 background-size: 100%;
                 border: 1px solid $button_hamb_close_bdColour!important;
@@ -52,6 +53,7 @@
 
             .nav_main_ul{
                 @include borderStyleR($nav_drawer_bdColourR);
+                padding-top: calc(#{$logo_height_clicked_final} + 5px);
 
                 li{
                     &,
