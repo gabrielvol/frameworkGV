@@ -4,6 +4,8 @@
     
     $page_int               = 1;
     $load_lightbox          = 0;
+    $section_hasForm                = 0;
+    $section_has_mandatoryMsg_act   = 0;
     
     $nav_pageCurrent        = 2;
     $nav_pageCurrent_int    = 200;

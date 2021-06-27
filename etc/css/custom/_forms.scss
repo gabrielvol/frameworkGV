@@ -267,7 +267,6 @@ form{
         @include borderStyle($button_form_submit_bdColour);
         border-radius: $bdRadius_global;
         margin-bottom: $zero;
-        font-size: 1.4rem;
         font-family: $button_form_submit_ftFamily;
     }
     

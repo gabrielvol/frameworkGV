@@ -72,15 +72,15 @@ button{
 .callToAction{
     // Si lleva .hoverGrow hay que comentar transition
     //@include transition(1s);
-    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;    
+    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s, box-shadow 0.7s;
     
-    @include borderStyle($bdGrey, 2px);
+    @include borderStyle($button_callToAction_bdColour, 2px);
     display: block;
     box-sizing: border-box;
-    background-color: $bgGrey;
+    background-color: $button_callToAction_bgColour;
     padding-right: 10px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: $button_callToAction_ftFamily;
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
@@ -93,13 +93,13 @@ button{
     }
     
     &, &:visited, &:active{
-        color: $white;
+        color: $button_callToAction_ftColour;
     }
     
     &:focus, &:hover{
-        background-color: $bgGreyL;
-        border-color: $bdGrey2XD;
-        color: $greyXD;
+        background-color: $button_callToAction_bgColour_hover;
+        border-color: $button_callToAction_bdColour_hover;
+        color: $button_callToAction_ftColour_hover;
     }
     
     &, &::before, &::after{
@@ -107,7 +107,7 @@ button{
     }
     
 /*
-    &.CTAwhite{
+    &.CTA_white{
         @include borderStyle($bdWhite);
     
         &, &:visited, &:active{
@@ -137,6 +137,23 @@ button{
         @include equalHeightAndLineHeight(50px);        
     }
 }
+
+
+/* // Form Submit  ---------------------------------------------------------- */
+.button_form_submit{        
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+    &:focus, &:hover{}
+
+    @include afterTablet{
+        @include centerCustom(50%);
+        margin-top: 30px;
+    }
+}
+
+
+/* // Custom buttons -------------------------------------------------------- */ 
 
 
 /* // WhatsApp -------------------------------------------------------------- */
@@ -205,20 +222,3 @@ button{
         }
     }
 }
-
-
-/* // Form Submit  ---------------------------------------------------------- */
-.button_form_submit{        
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    
-    &:focus, &:hover{}
-
-    @include afterTablet{
-        @include centerCustom(50%);
-        margin-top: 30px;
-    }
-}
-
-
-/* // Custom buttons -------------------------------------------------------- */ 

@@ -41,10 +41,22 @@
 ///-- Fuentes
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+$button_callToAction_ftFamily:          $arial;
+$button_callToAction_ftColour:          $white;
+$button_callToAction_ftColour_hover:    $greyXD;
+
+$button_callToAction_bdColour:          $bdGrey;
+$button_callToAction_bdColour_hover:    $bdGrey2XD;
+
+$button_callToAction_bgColour:          $bgGrey;
+$button_callToAction_bgColour_hover:    $bgGreyL;
     
 
-
-$button_whatsapp_size:              60px; 
-$button_whatsapp_before_height:     40px;
-$button_whatsapp_before_width_MO:   220px;
-$button_whatsapp_before_width_AML:  220px;
+/* // Whatsapp -------------------------------------------------------------- */
+$button_whatsapp_size:                  60px; 
+$button_whatsapp_before_height:         40px;
+$button_whatsapp_before_width_MO:       220px;
+$button_whatsapp_before_width_AML:      220px;

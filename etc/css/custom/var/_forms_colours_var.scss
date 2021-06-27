@@ -29,14 +29,14 @@ $form_input_caret_colour:       $form_input_ftColour;
  
      
 /* // Form Submit  ---------------------------------------------------------- */
-$button_form_submit_ftColour:          $black;
-$button_form_submit_ftColour_hover:    $button_form_submit_ftColour;
+$button_form_submit_ftColour:           $button_callToAction_ftColour;
+$button_form_submit_ftColour_hover:     $button_callToAction_ftColour_hover;
   
-$button_form_submit_bdColour:            $bdColour_main_global;
-$button_form_submit_bdColour_hover:      $button_form_submit_bdColour;
+$button_form_submit_bdColour:           $button_callToAction_bdColour;
+$button_form_submit_bdColour_hover:     $button_callToAction_bdColour_hover;
   
-$button_form_submit_bgColour:            $bgColour_main_global;
-$button_form_submit_bgColour_hover:      $button_form_submit_bgColour;
+$button_form_submit_bgColour:           $button_callToAction_bgColour;
+$button_form_submit_bgColour_hover:     $button_callToAction_bgColour_hover;
     
      
 /* // Form Validation ------------------------------------------------------- */

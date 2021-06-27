@@ -32,9 +32,9 @@
     
     <p class="copy_footer">&copy; Copyright <?php echo $date_year_actual ." - ". $site_name_full ?></p>
     
-    <p class="copy_footer">
-        &copy; Copyright <?php echo $date_year_from . (($date_year_from != $date_year_actual) ? " - " . $date_year_actual : "") . ' '. $site_name_full; ?>
-    </p>
+    <p class="copy_footer">&copy; Copyright <?php echo $date_year_from . (($date_year_from != $date_year_actual) ? " - ". $date_year_actual : "") .' '. $site_name_full; ?></p>
+    
+    <p class="copy_footer">&copy; Copyright <?php echo $date_year_from . (($date_year_from != $date_year_actual) ? " - ". $date_year_actual : ""); ?> <span class="dash">&mdash;</span> <span class="copy_footer copy_footer_span"><?php echo $site_name_tag; ?> · Ciudad, Provincia.</span></p>
     
     <div class="legal_footer">
         <ul class="horizontal clearfix containerAT">

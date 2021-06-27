@@ -4,6 +4,8 @@
     
     $page_int           = 1;
     $page_gracias       = 1;
+    $section_hasForm                = 0;
+    $section_has_mandatoryMsg_act   = 0;
     
     $nav_pageCurrent    = 0;
     
