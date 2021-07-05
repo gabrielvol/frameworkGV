@@ -12,6 +12,7 @@
 /* // All ------------------------------------------------------------------- */
 /* // Mobile Only MO -------------------------------------------------------- */
 /* // After Mobile Landscape AML -------------------------------------------- */
+/* // Before Mobile 600 ----------------------------------------------------- */
 /* // Mobile Landscape Only MLO --------------------------------------------- */
 /* // Before Tablet BT ------------------------------------------------------ */
 /* // Before Tablet Landscape BTL ------------------------------------------- */
@@ -90,14 +91,14 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // 01 Full height -------------------------------------------------------- */
 /* // 02 Index Only Full Height --------------------------------------------- */
 /* =============================================================================
    Page Internal Activators | Custom [/etc/css/custom/act/page_int_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Full height ----------------------------------------------------------- */
+/* // 01 Page int Full height ----------------------------------------------- */
 /* // Variables ------------------------------------------------------------- */
 /* =============================================================================
    Font Variables | Etc [/etc/css/scss/var_fonts.scss]
@@ -191,7 +192,6 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Variables de fuentes -------------------------------------------------- */
 /*___ Creamos la variable de la fuente principal del sitio _*/
-/* // Main font Stack ------------------------------------------------------- */
 /* =============================================================================
    Text Variables | Custom [/etc/css/custom/var/text.scss]
    ========================================================================== */
@@ -291,6 +291,7 @@
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Whatsapp -------------------------------------------------------------- */
 /* =============================================================================
    Social Variables | Custom [/etc/css/custom/var/section_social_var.scss]
    ========================================================================== */
@@ -351,6 +352,10 @@
 /* =============================================================================
    Global Variables | Custom [/etc/css/custom/var/global_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Global sizes ---------------------------------------------------------- */
+/* // Global colours  ------------------------------------------------------- */
 /* =============================================================================
    Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
    ========================================================================== */
@@ -520,6 +525,7 @@ html, body {
   color: #000; }
 
 html {
+  scroll-behavior: smooth;
   font-size: 100%;
   text-rendering: optimizeLegibility; }
 
@@ -625,7 +631,7 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // General --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif, Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif, Roboto, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: calc(1ex / 0.32); }
@@ -963,6 +969,12 @@ b, strong,
   overflow: hidden;
   white-space: nowrap; }
 
+.clampledText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden; }
+
 .noSelect {
   user-select: none; }
 
@@ -1163,8 +1175,8 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   display: table-cell;
   vertical-align: middle; }
 
-.visuallyHidden,
-.sr-only {
+.visuallyHidden:not(:focus):not(:active),
+.sr-only:not(:focus):not(:active) {
   /*
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -1174,6 +1186,7 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
   position: absolute;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -1182,22 +1195,7 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   margin: -1px;
   overflow: hidden;
   white-space: nowrap;
-  /* 1 */
-  /*
-Extends the .visuallyHidden class to allow the element
-to be focusable when navigated to via the keyboard:
-https://www.drupal.org/node/897638
-*/ }
-  .visuallyHidden:active, .visuallyHidden:focus,
-  .sr-only:active,
-  .sr-only:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit; }
+  /* 1 */ }
 
 article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after,
 .borderBox,
@@ -1461,9 +1459,10 @@ article, article::before, article::after, details, details::before, details::aft
   .centerVerticallyBT {
     display: table-cell;
     vertical-align: middle; }
-  .visuallyHiddenBT,
-  .sr-onlyBT {
+  .visuallyHiddenBT:not(:focus):not(:active),
+  .sr-onlyBT:not(:focus):not(:active) {
     position: absolute;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
@@ -1472,16 +1471,6 @@ article, article::before, article::after, details, details::before, details::aft
     margin: -1px;
     overflow: hidden;
     white-space: nowrap; }
-    .visuallyHiddenBT:active, .visuallyHiddenBT:focus,
-    .sr-onlyBT:active,
-    .sr-onlyBT:focus {
-      clip: auto;
-      height: auto;
-      margin: 0;
-      overflow: visible;
-      position: static;
-      width: auto;
-      white-space: inherit; }
   /*___ Lists and floats __________________*/
   .unstyledBT, .horizontalBT {
     list-style: none !important; }
@@ -1530,9 +1519,10 @@ article, article::before, article::after, details, details::before, details::aft
   .centerVerticallyAT {
     display: table-cell;
     vertical-align: middle; }
-  .visuallyHiddenAT,
-  .sr-onlyAT {
+  .visuallyHiddenAT:not(:focus):not(:active),
+  .sr-onlyAT:not(:focus):not(:active) {
     position: absolute;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
@@ -1541,16 +1531,6 @@ article, article::before, article::after, details, details::before, details::aft
     margin: -1px;
     overflow: hidden;
     white-space: nowrap; }
-    .visuallyHiddenAT:active, .visuallyHiddenAT:focus,
-    .sr-onlyAT:active,
-    .sr-onlyAT:focus {
-      clip: auto;
-      height: auto;
-      margin: 0;
-      overflow: visible;
-      position: static;
-      width: auto;
-      white-space: inherit; }
   /*___ Lists and floats __________________*/
   .unstyledAT, .horizontalAT {
     list-style: none !important; }
@@ -1568,7 +1548,47 @@ article, article::before, article::after, details, details::before, details::aft
       .horizontalCenterAT li > * {
         display: inline-block !important; }
   .floatNoneAT, .unstyledAT li {
-    float: none !important; } }
+    float: none !important; }
+  /*___ Flexbox Classes ___________________*/
+  .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start; }
+  .flexColumnAT {
+    flex-direction: column; }
+  .flexNoWrapAT {
+    flex-wrap: nowrap; }
+  .flexJustifyEndAT {
+    justify-content: flex-end; }
+  .flexJustifyCenterAT {
+    justify-content: center; }
+  .flexJustifyBetweenAT {
+    justify-content: space-between; }
+  .flexJustifyAroundAT {
+    justify-content: space-around; }
+  .flexAlignContentEndAT {
+    align-content: flex-end; }
+  .flexAlignContentCenterAT {
+    align-content: center; }
+  .flexAlignContentBetweenAT {
+    align-content: space-between; }
+  .flexAlignContentAroundAT {
+    align-content: space-around; }
+  .flexAlignContentStretchAT {
+    align-content: stretch; }
+  .flexAlignItemsEndAT {
+    align-items: flex-end; }
+  .flexAlignItemsCenterAT {
+    align-items: center; }
+  .flexAlignItemsBaselineAT {
+    align-items: baseline; }
+  .flexAlignItemsStretchAT {
+    align-items: stretch; }
+  .flexHorizontalAT {
+    list-style: none !important; } }
 
 /* // After Tablet Landscape Classes ---------------------------------------- */
 /* // Tablet Landscape Only Classes ----------------------------------------- */
@@ -1582,6 +1602,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 .container,
 .containerMO,
+.containerB600,
 .containerAML,
 .containerMLO,
 .containerBT,
@@ -1599,6 +1620,8 @@ article, article::before, article::after, details, details::before, details::aft
   .container::before, .container::after,
   .containerMO::before,
   .containerMO::after,
+  .containerB600::before,
+  .containerB600::after,
   .containerAML::before,
   .containerAML::after,
   .containerMLO::before,
@@ -1625,6 +1648,7 @@ article, article::before, article::after, details, details::before, details::aft
     display: table; }
   .container::after,
   .containerMO::after,
+  .containerB600::after,
   .containerAML::after,
   .containerMLO::after,
   .containerBT::after,
@@ -1643,6 +1667,10 @@ article, article::before, article::after, details, details::before, details::aft
     width: 300px; } }
 
 @media (min-width: 500px) {
+  .container {
+    width: 85%; } }
+
+@media (max-width: 600px) {
   .container {
     width: 85%; } }
 
@@ -1758,7 +1786,7 @@ article, article::before, article::after, details, details::before, details::aft
     page-break-inside: avoid; } }
 
 /* =============================================================================
-   Global Styles | Custom [/etc/css/custom/global_var.scss]
+   Global Styles | Custom [/etc/css/custom/global.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -1774,8 +1802,19 @@ article, article::before, article::after, details, details::before, details::aft
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* =============================================================================
-   Internas Global Styles | Custom [/etc/css/custom/stylesGlobal.scss]
+   Internas Global Styles | Custom [/etc/css/custom/global.scss]
    ========================================================================== */
+/*
+.container{
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.container section {
+  scroll-snap-align: center;
+}
+*/
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Secondary Separator
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -1808,19 +1847,19 @@ button, button::before, button::after {
 /* // General --------------------------------------------------------------- */
 /* // Call to Action -------------------------------------------------------- */
 .callToAction {
-  transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s;
+  transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s, box-shadow 0.7s;
   border: 2px solid #818181;
   display: block;
   box-sizing: border-box;
   background-color: #818181;
   padding-right: 10px;
   padding-left: 10px;
-  font-family: Arial;
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   /*
-    &.CTAwhite{
+    &.CTA_white{
         @include borderStyle($bdWhite);
     
         &, &:visited, &:active{
@@ -1858,6 +1897,18 @@ button, button::before, button::after {
       height: 50px;
       line-height: 50px; } }
 
+/* // Form Submit  ---------------------------------------------------------- */
+.button_form_submit {
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+  @media (min-width: 767px) {
+    .button_form_submit {
+      width: 50%;
+      margin-right: auto !important;
+      margin-left: auto !important;
+      margin-top: 30px; } }
+
+/* // Custom buttons -------------------------------------------------------- */
 /* // WhatsApp -------------------------------------------------------------- */
 .button_whatsapp {
   transition: all 1s ease;
@@ -1905,18 +1956,6 @@ button, button::before, button::after {
     .button_whatsapp:focus::before, .button_whatsapp:hover::before {
       width: 220px; } }
 
-/* // Form Submit  ---------------------------------------------------------- */
-.button_form_submit {
-  font-size: 1.2rem;
-  text-transform: uppercase; }
-  @media (min-width: 767px) {
-    .button_form_submit {
-      width: 50%;
-      margin-right: auto !important;
-      margin-left: auto !important;
-      margin-top: 30px; } }
-
-/* // Custom buttons -------------------------------------------------------- */
 /* =============================================================================
    Lists | Custom [/etc/css/custom/lists.scss]
    ========================================================================== */
@@ -2271,7 +2310,7 @@ ol {
    Header Styles | Custom [/etc/css/custom/section_header.scss]
    ========================================================================== */
 /* =============================================================================
-   Header Full Height Styles | Custom [/etc/css/custom/section_header_fullHeight_imp.scss]
+   Header Full Height Styles | Custom [/etc/css/custom/imp/section_header_fullHeight_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -2366,7 +2405,7 @@ ol {
    Footer Styles | Custom [/etc/css/custom/section_footer.scss]
    ========================================================================== */
 /* =============================================================================
-   Footer Full Height Styles | Custom [/etc/css/custom/section_footer_fullHeight_imp.scss]
+   Footer Full Height Styles | Custom [/etc/css/custom/imp/section_footer_fullHeight_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -2382,6 +2421,8 @@ ol {
     background-image: url("/nuevo/img/button_siteTop.svg");
     background-repeat: no-repeat;
     background-position: center; }
+  #footer .nav_footer {
+    position: relative; }
   #footer .footer_address a {
     font-size: 1em;
     line-height: 1.2; }
@@ -2532,7 +2573,6 @@ nav li:focus a, nav li:hover a {
     width: calc(70vw - 5px);
     max-width: 300px;
     background-color: #fff;
-    padding-top: calc(calc(50px + 50px + 10px) + 5px);
     padding-right: 5px;
     padding-left: 5px;
     overflow: scroll;
@@ -2596,13 +2636,14 @@ nav li:focus a, nav li:hover a {
         color: #333; }
     .nav_main .button_hamb_close {
       width: 50px;
-      height: 50px;
+      height: calc(50px - 10px);
       background-color: transparent;
       background-size: 100%;
       border: 1px solid transparent !important;
       text-indent: -9999px; }
     .nav_main .nav_main_ul {
-      border-right: 1px solid #000; }
+      border-right: 1px solid #000;
+      padding-top: calc(calc(50px + 50px + 10px) + 5px); }
       .nav_main .nav_main_ul li,
       .nav_main .nav_main_ul li a,
       .nav_main .nav_main_ul li .nav_TLI {
@@ -2639,15 +2680,13 @@ nav li:focus a, nav li:hover a {
 @media (min-width: 768px) {
   .nav_main {
     width: calc(100% - 220px); }
-    .nav_main .nav_main_ul.navAT {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-content: flex-start;
-      align-items: flex-start; }
-    .nav_main .nav_main_ul > li {
-      float: left; }
+    .nav_main .navs_container_AT {
+      justify-content: space-between;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto; }
+      .nav_main .navs_container_AT ul + ul {
+        margin-top: 0; }
     .nav_main .nav_main_ul li,
     .nav_main .nav_main_ul li a,
     .nav_main .nav_main_ul li .nav_TLI {
@@ -2681,6 +2720,7 @@ nav li:focus a, nav li:hover a {
       line-height: 60px; }
     .nav_main li a,
     .nav_main li .nav_TLI {
+      box-sizing: border-box;
       font-size: 1rem;
       padding-right: 10px;
       padding-left: 10px; } }

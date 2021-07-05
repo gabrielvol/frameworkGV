@@ -46,6 +46,7 @@
 
 .container,
 .containerMO,
+.containerB600,
 .containerAML,
 .containerMLO,
 .containerBT,
@@ -66,22 +67,25 @@
 .container{    
     @include mobileOnly{
         width: $container_value_MO;
-    }     
+    }
     @include afterMobileLandscape{
         width: $container_value_ML;
-    }    
+    }
+    @include beforeMobile600{
+        width: $container_value_B600;
+    }
     @include afterTablet{
         width: $container_value_T;
-    }    
+    }
     @include afterTabletLandscape{
         width: $container_value_TL;
-    }    
+    }
     @include afterDesktop{
         width: $container_value_D;
-    }    
+    }
     @include afterDesktopLarge{
         width: $container_value_DL;
-    }    
+    }
     &.container_centered_absolute{
         @include mobileOnly{
             position: absolute;
@@ -133,6 +137,15 @@
             }
             @include afterDesktopLarge{
                 margin-left: $container_value_half_negative_DL;
+            }
+        }
+    }
+    @if $classes_container_act_B600 == "on"{
+        &.container_centered_absoluteB600{
+            @include beforeMobile600{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_B600;
             }
         }
     }
@@ -201,8 +214,8 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_MO;
             }
-        }  
-    }  
+        }
+    }
 }
 @if $classes_container_act_AML == "on"{
     .containerAML{
@@ -213,28 +226,28 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_ML;
             }
-        }    
+        }
         @include mobileLandscapeOnly{
             width: $container_value_ML;
-        }     
+        }
         @include afterTablet{
             width: $container_value_T;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_T;
             }
-        }    
+        }
         @include afterTabletLandscape{
             width: $container_value_TL;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_TL;
             }
-        }    
+        }
         @include afterDesktop{
             width: $container_value_D;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_D;
             }
-        }    
+        }
         @include afterDesktopLarge{
             width: $container_value_DL;
             &.container_centered_absoluteAML{
@@ -248,17 +261,32 @@
         @include mobileLandscapeOnly{
             width: $container_value_ML;
         }
-    }  
+    }
+}
+@if $classes_container_act_B600 == "on"{
+    .containerB600{
+        @include mobileOnly{
+            width: $container_value_MO!important;
+        }
+        @include beforeMobile600{
+            width: $container_value_B600;            
+            &.container_centered_absoluteB600{    
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_B600;
+            }
+        }
+    }
 }
 @if $classes_container_act_BT == "on"{
     .containerBT{
         @include mobileOnly{
             width: $container_value_MO;
-        }    
+        }
         @include mobileLandscapeOnly{
             width: $container_value_ML;
-        }    
-    }  
+        }
+    }
 }
 @if $classes_container_act_AT == "on"{
     .containerAT{
@@ -269,49 +297,49 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_T;        
             }
-        }    
+        }
         @include afterTabletLandscape{
             width: $container_value_TL;
             &.container_centered_absoluteAT{        
                 margin-left: $container_value_half_negative_TL;
             }
-        }    
+        }
         @include afterDesktop{
             width: $container_value_D;
             &.container_centered_absoluteAT{    
                 margin-left: $container_value_half_negative_D;    
             }
-        }    
+        }
         @include afterDesktopLarge{
             width: $container_value_DL;
             &.container_centered_absoluteAT{       
                 margin-left: $container_value_half_negative_DL; 
             }
         }
-    }  
+    }
 }
 @if $classes_container_act_TO == "on"{
     .containerTO{
         @include tabletOnly{
             width: $container_value_T;
         }
-    }  
+    }
 }
 @if $classes_container_act_BTL == "on"{
     .containerBTL{
         @include mobileOnly{
             width: $container_value_MO;
-        }    
+        }
         @include afterMobileLandscape{
             width: $container_value_ML;
-        }    
+        }
         @include mobileLandscapeOnly{
             width: $container_value_ML;
-        } 
+        }
         @include tabletOnly{
             width: $container_value_T;
-        }   
-    }  
+        }
+    }
 }
 @if $classes_container_act_ATL == "on"{
     .containerATL{
@@ -322,46 +350,46 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_TL;
             }
-        }    
+        }
         @include afterDesktop{
             width: $container_value_D;
             &.container_centered_absoluteATL{
                 margin-left: $container_value_half_negative_D;
             }
-        }    
+        }
         @include afterDesktopLarge{
             width: $container_value_DL;
             &.container_centered_absoluteATL{
                 margin-left: $container_value_half_negative_DL;
             }
-        }    
-    }  
+        }
+    }
 }
 @if $classes_container_act_TLO == "on"{
     .containerTLO{    
         @include tabletLandscapeOnly{
             width: $container_value_TL;
         }
-    }  
+    }
 }
 @if $classes_container_act_BD == "on"{
     .containerBD{
         @include mobileOnly{
             width: $container_value_MO;
-        }    
+        }
         @include afterMobileLandscape{
             width: $container_value_ML;
-        }    
+        }
         @include mobileLandscapeOnly{
             width: $container_value_ML;
-        } 
+        }
         @include afterTablet{
             width: $container_value_T;
-        }    
+        }
         @include afterTabletLandscape{
             width: $container_value_TL;
-        }   
-    }  
+        }
+    }
 }
 @if $classes_container_act_AD == "on"{
     .containerAD{
@@ -372,14 +400,14 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_D;
             }
-        }    
+        }
         @include afterDesktopLarge{
             width: $container_value_DL;
             &.container_centered_absoluteAD{
                 margin-left: $container_value_half_negative_DL;
             }
-        }    
-    }  
+        }
+    }
 }
 @if $classes_container_act_ADL == "on"{
     .containerADL{
@@ -388,8 +416,8 @@
             &.container_centered_absoluteADL{
                 margin-left: $container_value_half_negative_DL;
             }
-        }    
-    }  
+        }
+    }
 }
     
 /* // Hack para Windows Phone ----------------------------------------------- */
