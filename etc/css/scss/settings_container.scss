@@ -71,8 +71,10 @@
     @include afterMobileLandscape{
         width: $container_value_ML;
     }
-    @include beforeMobile600{
-        width: $container_value_B600;
+    @if $classes_container_act_B600 == "on"{
+        @include beforeMobile600{
+            width: $container_value_B600;
+        }
     }
     @include afterTablet{
         width: $container_value_T;
