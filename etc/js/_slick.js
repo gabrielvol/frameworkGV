@@ -1,7 +1,8 @@
 $(document).ready(function () {
 /* // Slick Slider ---------------------------------------------------------- */
     $('.slider_header').slick({
-        infinite: true
+         accessibility: true
+        ,infinite: true
         
         ,dots: true
         ,arrows: false
@@ -9,11 +10,11 @@ $(document).ready(function () {
         
         ,pauseOnHover: false
         ,pauseOnFocus: false
-        ,swipeToSlide: true
+        ,swipeToSlide: true // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
         ,focusOnSelect: true
 
-        ,slidesToShow: 3
-        ,slidesToScroll: 3
+        ,slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
+        ,slidesToScroll: 3 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
         ,lazyLoad: 'ondemand'
 
         ,autoplay: true
@@ -39,26 +40,26 @@ $(document).ready(function () {
 // 500 para que corresponda con el media query mobileOnly
             {breakpoint: 1025,
                 settings: {
-                     slidesToShow: 3
-                    ,slidesToScroll: 3
+                     slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
+                    ,slidesToScroll: 3 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
                     ,infinite: true
                 }                
             }
             ,{breakpoint: 768,
                 settings: {
-                     slidesToShow: 3
-                    ,slidesToScroll: 1
+                     slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
+                    ,slidesToScroll: 1 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
                 }
             }
             ,{breakpoint: 601,
                 settings: {
-                     slidesToShow: 2
+                     slidesToShow: 2 // Si se ve mas de un slide a la vez fade debe ser false.
                     ,dots: true
                 }
             }
             ,{breakpoint: 500, 
                 settings: {
-                     slidesToShow: 1
+                     slidesToShow: 1 // Si se ve mas de un slide a la vez fade debe ser false.
                 }
             }
         ]
@@ -71,14 +72,14 @@ $(document).ready(function () {
         infinite: false,
         dots: false,
         arrows: false,            
-        fade: true,
+        fade: true, // Si se ve mas de un slide a la vez fade debe ser false.
         pauseOnHover: false,
         pauseOnFocus: false,
-        swipeToSlide: true,
+        swipeToSlide: true, // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
         slide: 'li',
 
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 1, // Si se ve mas de un slide a la vez fade debe ser false.
+        slidesToScroll: 1, // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
 
         autoplay: true,
         autoplaySpeed: 3000,
