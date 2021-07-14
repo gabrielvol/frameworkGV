@@ -5,11 +5,9 @@ $(document).ready(function () {
     
     $(".slick_nav .slickPrev").css("z-index", highest_index + 1);
     $(".slick_nav .slickNext").css("z-index", highest_index + 1);
-    
-    
+       
     
     $('.slick_with_nav').slick({
-        accessibility: true,
         infinite: false,
         
         dots: false,
@@ -29,7 +27,6 @@ $(document).ready(function () {
     });
    
     $('.slick_nav').slick({
-        accessibility: true,
         infinite: false,
         
         dots: false,

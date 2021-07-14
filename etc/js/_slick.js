@@ -1,8 +1,7 @@
 $(document).ready(function () {
 /* // Slick Slider ---------------------------------------------------------- */
     $('.slider_header').slick({
-         accessibility: true
-        ,infinite: true
+        infinite: true
         
         ,dots: true
         ,arrows: false
