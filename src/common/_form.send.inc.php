@@ -502,7 +502,7 @@
 //FIN mensaje ok en $form_status_msg_
                 
 //INICIA MENSAJE OK EN POPUP
-                $form_status_msg_pop__formMain = '<div class="pop_general pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formOK">'
+                $form_status_msg_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formOK">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="button_pop_close hover_grow_S_ani">'._("Cerrar").'</button>'
                         . '<h2 id="formOK" class="'. $formPop_h2_ok_classes__formMain .'">'._("$form_status_msg_OK_globalA__formMain").'</h2>'
@@ -549,7 +549,7 @@
 //FIN mensaje error en $form_status_msg_
                 
 //INICIA MENSAJE ERROR EN POPUP
-                $form_status_msg_pop__formMain = '<div class="pop_general pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
+                $form_status_msg_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
                         . '<div role="document" tabindex="0">'
                         . '<button type="submit" class="button_pop_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
                         . '<h2 id="formError" class="'. $formPop_h2_error_classes__formMain .'">'. _("$form_status_msg_error_globalA__formMain") .'</h2>'

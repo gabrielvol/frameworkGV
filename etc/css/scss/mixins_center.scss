@@ -53,7 +53,7 @@
     margin-left: $auto;
 }
 
-/* // Mixin para centrar pop_general ------------------------------------------- */
+/* // Mixin para centrar pop_global ------------------------------------------- */
 @mixin centerPopup($centerPopupMX_width, $centerPopupMX_height, $centerPopupMX_top: 40%){
     $centerPopupMX_width_half: #{$centerPopupMX_width} / 2;
     $centerPopupMX_height_half: #{$centerPopupMX_height} / 2;   

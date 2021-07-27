@@ -1,4 +1,4 @@
-<div class="pop_general pop_video pop-xxx displayNone">
+<div class="pop_global pop_video pop-xxx displayNone">
     <button type="button" class="button_pop_close"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
         <div class="video_mask">

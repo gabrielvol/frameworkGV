@@ -1,4 +1,4 @@
-<div class="pop_general pop_warning" role="alertdialog" aria-labelledby="idlabelledby">
+<div class="pop_global pop_warning" role="alertdialog" aria-labelledby="idlabelledby">
     <div role="document" tabindex="0">
         <button type="button" class="button_pop_close"><?php echo _("Cerrar Ventana"); ?></button>
         <h2 id="idlabelledby" class="mbm alignCenter"><?php echo _("titulooooooo"); ?></h2>

@@ -1,6 +1,8 @@
 /* =============================================================================
    Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
+    
+/* // Pop Modal ------------------------------------------------------------- */
 .modal_global{}
 
 .modal_warning{
@@ -21,7 +23,9 @@
     background-color: $black_rgba_60;
 }
 
-.pop_general{
+    
+/* // Pop General ----------------------------------------------------------- */
+.pop_global{
     box-sizing: border-box;
     position: fixed;
     top: 80px;
@@ -149,7 +153,40 @@
         }
     }
 }
+    
+/* // Pop Video ------------------------------------------------------------- */
+.pop_video{
+    box-shadow: $bxShadow_video;
 
+    .video_mask{
+/*        
+        @include borderStyle($bdGreyD);
+*/
+        border-radius: 0;
+        border: $none;
+    }
+              
+    @include mobileOnly{
+        width: $pop_video_width_MO;
+        height: 168px;
+        margin-left: calc(-1 * calc(#{$pop_video_width_MO} / 2));
+    }
+
+    @include afterMobileLandscape{
+        width: $pop_video_width_AML;
+        height: 250px;
+        margin-left: calc(-1 * calc(#{$pop_video_width_AML} / 2));
+    }
+    
+    @include afterTablet{
+        width: $pop_video_width_AT;
+        height: 330px;
+        margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
+    } 
+}
+    
+
+/* // Pop Form -------------------------------------------------------------- */
 .pop_form{
     padding-right: 20px;
     padding-left: 20px;
@@ -185,38 +222,7 @@
         margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
     }
 }
-    
-.pop_video{
-    box-shadow: $bxShadow_video;
 
-    .video_mask{
-/*        
-        @include borderStyle($bdGreyD);
-*/
-        border-radius: 0;
-        border: $none;
-    }
-              
-    @include mobileOnly{
-        width: $pop_video_width_MO;
-        height: 168px;
-        margin-left: calc(-1 * calc(#{$pop_video_width_MO} / 2));
-    }
-
-    @include afterMobileLandscape{
-        width: $pop_video_width_AML;
-        height: 250px;
-        margin-left: calc(-1 * calc(#{$pop_video_width_AML} / 2));
-    }
-    
-    @include afterTablet{
-        width: $pop_video_width_AT;
-        height: 330px;
-        margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
-    } 
-}
-
-/* // Form status message --------------------------------------------------- */
 .pop_formStatus{
     padding: 20px!important;
         

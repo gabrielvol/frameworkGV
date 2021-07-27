@@ -41,7 +41,12 @@
 ///-- Fuentes
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
-    
+
+
+
+/* // Modal Opacity Variables ----------------------------------------------- */
+$modal_bgColour_global:     $black_rgba_80;   
+$modal_bgColour_nav:        $black_rgba_70;
 
 
 /* // Popup Sizes ----------------------------------------------------------- */
@@ -64,5 +69,6 @@ $pop_video_width_MO:        300px;
 $pop_video_width_AML:       450px;
 $pop_video_width_AT:        600px;
         
+
 /* // Popup Colours --------------------------------------------------------- */
 $pop_form_bgColour:         $bgWhite;

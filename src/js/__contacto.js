@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.button_form_submit').scrollPosReload(); // scrollKeep.js
 
-    $('.pop_general button').click(function () {
+    $('.pop_global button').click(function () {
         $('#formID').submit();
     });
     

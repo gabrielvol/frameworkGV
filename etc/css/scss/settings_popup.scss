@@ -9,21 +9,20 @@
 }
 
 .modal_global{
-    background-color: $black_rgba_80;
+    background-color: $modal_bgColour_global;
 }
 
 .modal_nav{
-    @include opacityCustom($modal_opacity_nav);  
     display: none; 
-    background-color: $modal_bgColour_nav;  
+    background-color: $modal_bgColour_nav; 
     
     @include afterTablet{
         display: $none;
     }
 }
 
-.pop_general{
-    z-index: $zIndex_pop_general;
+.pop_global{
+    z-index: $zIndex_pop_global;
     
     .button_pop_close{
         position: absolute;

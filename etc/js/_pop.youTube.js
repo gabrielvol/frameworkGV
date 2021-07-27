@@ -33,13 +33,13 @@ $(document).ready(function () {
     
     $('.modal_video').click(function () {
         $(this).addClass('displayNone');
-        $(this).closest('body').find('.pop_general').addClass('displayNone');
-        $(this).closest('body').find('.pop_general iframe').attr('src', '');
+        $(this).closest('body').find('.pop_global').addClass('displayNone');
+        $(this).closest('body').find('.pop_global iframe').attr('src', '');
     });
     
     $('.button_pop_close').click(function () {
-        $(this).closest('.pop_general').addClass('displayNone');
-        $(this).closest('.pop_general').find('iframe').attr('src', '');
+        $(this).closest('.pop_global').addClass('displayNone');
+        $(this).closest('.pop_global').find('iframe').attr('src', '');
         $(this).closest('body').find('.modal_video').addClass('displayNone');
     });
 });
