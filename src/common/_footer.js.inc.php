@@ -19,6 +19,9 @@
 <?php endif; if($nav_drawer_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
 <script src="<?php echo $url_dir; ?>/js/_nav_drawer.js"></script>
 
+<?php endif; if($page_int == 1): ?>
+<script src="<?php echo $url_dir; ?>/js/_int.js"></script>
+
 <?php
 /*
 <script src="<?php echo $url_dir; ?>/js/slick.js"></script>

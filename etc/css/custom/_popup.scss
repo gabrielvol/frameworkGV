@@ -28,7 +28,7 @@
 .pop_global{
     box-sizing: border-box;
     position: fixed;
-    top: 80px;
+    top: 10vh;
     left: 50%;
     border-radius: $bdRadius_global; 
     background-color: $bgWhite;
@@ -75,9 +75,7 @@
         max-width: 100%;
         max-height: 100%;
     */      
-
-    top: 20%;
-    left: 50%;         
+      
     box-shadow: 0 0 15px 0 $black;
 
     h2,
