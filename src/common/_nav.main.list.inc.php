@@ -33,8 +33,8 @@
         <?php echo _("Nosotros"); ?>
     </p>
     <ul id="nav_item_nosotros_subNav" class="nav_subNav nav_subNav_level1 unstyled" role="group" aria-expanded="false" aria-labelledby="nav_TLI_nosotros">
-        <li class="<?php if($nav_pageCurrent_int == 200) { echo 'nav_item_current'; } ?>">
-            <a <?php echo $href_PAGINA; ?> <?php if($nav_pageCurrent_int == 200) { echo 'aria-current="page"'; } ?>>
+        <li class="<?php if($nav_pageCurrent_int == 201) { echo 'nav_item_current'; } ?>">
+            <a <?php echo $href_PAGINA; ?> <?php if($nav_pageCurrent_int == 201) { echo 'aria-current="page"'; } ?>>
                 <?php echo _("Historia"); ?>
             </a>
         </li>

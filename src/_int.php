@@ -11,7 +11,7 @@
     $nav_pageCurrent_int    = 200;
     
     $site_title             = "PaginaInterna | ". $site_name_title;
-//    $site_title_GB          = "PaginaInterna | ". $site_name_title;
+//    $site_title_GB          = "SinTraduccion | ". $site_name_title;
     
     $site_desc              = $site_desc_global;
 //    $site_desc_GB           = $site_desc_global_GB;

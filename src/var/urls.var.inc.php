@@ -29,7 +29,7 @@
 //    $url-SECCION_hs      = $url_dir .'/'. $hash_SECCION;
 //    $url-SECCION_hs      = $url_dir .'/'. $hash_SECCION;  
 
-//    $url_quienesSomos_hs_INDEX    = $url_index . $hash_quienesSomos; 
+//    $url_quienesSomos_hs_INICIO    = $url_index . $hash_quienesSomos; 
 //    $url-SECCION_hs_PAGINA        = $url_PAGINA . $hash_SECCION;
 //    $url-SECCION_hs_PAGINA        = $url_PAGINA . $hash_SECCION;
 //    $url-SECCION_hs_PAGINA        = $url_PAGINA . $hash_SECCION;
@@ -61,7 +61,7 @@
 //    $href-SECCION_hs    = 'href="'. $url_SECCION_hs .'"';
 //    $href-SECCION_hs    = 'href="'. $url_SECCION_hs .'"';
 
-//    $href_quienesSomos_hs_INDEX = 'href="'. $url_quienesSomos_hs_INDEX .'"';
+//    $href_quienesSomos_hs_INICIO = 'href="'. $url_quienesSomos_hs_INICIO .'"';
 //    $href-SECCION_hs_PAGINA      = 'href="'. $url_SECCION_hs_PAGINA .'"';
 //    $href-SECCION_hs_PAGINA      = 'href="'. $url_SECCION_hs_PAGINA .'"';
 //    $href-SECCION_hs_PAGINA      = 'href="'. $url_SECCION_hs_PAGINA .'"';

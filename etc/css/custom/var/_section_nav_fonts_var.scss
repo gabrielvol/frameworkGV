@@ -73,7 +73,7 @@ $nav_item_subNav_current_ftWeight_AT:   $nav_item_subNav_ftWeight_AT; // VER [01
 
 /*___ ATL _______________________________*/  
 $nav_ftFamily_ATL:                      $nav_ftFamily_AT;
-$nav_ftWeight_ATL:                      400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
+$nav_ftWeight_ATL:                      $nav_ftWeight_AT; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
 
 $nav_item_current_ftFamily_ATL:         $nav_item_current_ftFamily_AT;
 $nav_item_current_ftWeight_ATL:         $nav_ftWeight_ATL; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`

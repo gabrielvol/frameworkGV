@@ -107,9 +107,11 @@ button{
     }
     
 /*
-    &.CTA_white{
-        @include borderStyle($bdWhite);
-    
+    &.CTA_white{    
+        &, &:focus, &:hover, &:visited, &:active{
+            @include borderStyle($bdWhite);
+        }
+
         &, &:visited, &:active{
             color: $white;
         }
