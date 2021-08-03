@@ -3,12 +3,14 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
     $page_int               = 1;
-    $load_lightbox          = 0;
-    $section_hasForm                = 0;
-    $section_has_mandatoryMsg_act   = 0;
-    
     $nav_pageCurrent        = 2;
     $nav_pageCurrent_int    = 200;
+    
+    $has_lightbox           = 0;
+    $has_form               = 0;
+    $has_mandatoryMsg       = 0;   
+    
+//    $has-CUSTOMVARIABLE     = 0; 
     
     $site_title             = "PaginaInterna | ". $site_name_title;
 //    $site_title_GB          = "SinTraduccion | ". $site_name_title;

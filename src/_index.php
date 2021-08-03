@@ -2,18 +2,20 @@
     $url_dir = '/nuevo';
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
-    $page_index         = 1;
-    $load_lightbox      = 0;
-    $section_hasForm                = 0;
-    $section_has_mandatoryMsg_act   = 0;
+    $page_index             = 1;    
+    $nav_pageCurrent        = 1;
     
-    $nav_pageCurrent    = 1;
+    $has_lightbox           = 0;
+    $has_form               = 0;
+    $has_mandatoryMsg       = 0; 
     
-    $site_title         = $site_name_full;
-//    $site_title_GB      = $site_name_full;
+//    $has-CUSTOMVARIABLE     = 0;
     
-    $site_desc          = $site_desc_global;
-//    $site_desc_GB       = $site_desc_global_GB;
+    $site_title             = $site_name_full;
+//    $site_title_GB          = $site_name_full;
+    
+    $site_desc              = $site_desc_global;
+//    $site_desc_GB           = $site_desc_global_GB;
     
     $openGraph_title            = $openGraph_title_global;
 //    $openGraph_title_GB         = $openGraph_title_global_GB;

@@ -61,11 +61,11 @@
 */
 ?>
 
-<?php endif; if($section_hasForm == 1): ?>
+<?php endif; if($has_form == 1): ?>
 <script src="<?php echo $url_dir; ?>/js/scrollKeep.js"></script>
 <script src="<?php echo $url_dir; ?>/js/_form.js"></script>
 
-<?php endif; if($load_lightbox == 1): ?>
+<?php endif; if($has_lightbox == 1): ?>
 <script src="<?php echo $url_dir; ?>/js/lightbox.min.js"></script>
 <script src="<?php echo $url_dir; ?>/js/_lightbox.js"></script>
 <?php endif; ?>

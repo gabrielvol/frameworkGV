@@ -3,11 +3,11 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
     $page_int           = 1;
-    $load_lightbox      = 0;
-    $section_hasForm                = 1;
-    $section_has_mandatoryMsg_act   = 0;
+    $nav_pageCurrent    = 0;
     
-    $nav_pageCurrent = 0;
+    $has_lightbox       = 0;
+    $has_form           = 1;
+    $has_mandatoryMsg   = 0;    
     
     $site_title     = "Contacto | ". $site_name_title;
 //    $site_title_GB  = "Contact | ". $site_name_title;
@@ -41,7 +41,7 @@
                         include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/form.send.inc.php');
                         echo $form_status_msg__formMain;
 
-                        if($section_has_mandatoryMsg_act == 1) {
+                        if($has_mandatoryMsg == 1) {
                             echo '<div class="msg_mandatory '. $msg_mandatoryClasses__formMain .'">'. $msg_mandatory__formMain .'</div>';
                         }                
                     ?>
