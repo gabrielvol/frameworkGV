@@ -3,8 +3,8 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
     $page_int           = 1;
-    $nav_pageCurrent    = 0;
     $page_gracias       = 1;
+    $nav_pageCurrent    = 0;
     
     $has_lightbox       = 0;
     $has_form           = 0;
