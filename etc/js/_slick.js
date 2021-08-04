@@ -1,5 +1,5 @@
 $(document).ready(function () {
-/* // Slick Slider ---------------------------------------------------------- */
+/* // Slider Header --------------------------------------------------------- */
     $('.slider_header').slick({
          accessibility: true
         ,infinite: true

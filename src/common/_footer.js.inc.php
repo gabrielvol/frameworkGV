@@ -22,13 +22,6 @@
 <?php endif; if($page_int == 1): ?>
 <script src="<?php echo $url_dir; ?>/js/_int.js"></script>
 
-<?php
-/*
-<script src="<?php echo $url_dir; ?>/js/slick.js"></script>
-<script src="<?php echo $url_dir; ?>/js/_slick.js"></script>
-*/
-?>
-
 
 <?php endif; if($nav_pageCurrent == 1):
 /* // Home
@@ -68,4 +61,8 @@
 <?php endif; if($has_lightbox == 1): ?>
 <script src="<?php echo $url_dir; ?>/js/lightbox.min.js"></script>
 <script src="<?php echo $url_dir; ?>/js/_lightbox.js"></script>
+
+<?php endif; if($has_slider == 1): ?>
+<script src="<?php echo $url_dir; ?>/js/slick.js"></script>
+<script src="<?php echo $url_dir; ?>/js/_slick.js"></script>
 <?php endif; ?>

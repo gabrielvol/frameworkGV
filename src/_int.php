@@ -6,9 +6,10 @@
     $nav_pageCurrent        = 2;
     $nav_pageCurrent_int    = 200;
     
-    $has_lightbox           = 0;
     $has_form               = 0;
-    $has_mandatoryMsg       = 0;   
+    $has_lightbox           = 0;
+    $has_mandatoryMsg       = 0;
+    $has_slider             = 0;  
     
 //    $has-CUSTOMVARIABLE     = 0; 
     
