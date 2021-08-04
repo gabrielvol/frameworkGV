@@ -107,19 +107,36 @@ button{
     }
     
 /*
-    &.CTA_white{    
-        &, &:focus, &:hover, &:visited, &:active{
-            @include borderStyle($bdWhite);
-        }
+    &.CTA_white{
+        &, &:focus, &:hover, &:visited, &:active{}
 
         &, &:visited, &:active{
-            color: $white;
+            border-color: $bdWhite;
+            background-color: $bgWhite;
+            color: $greyXD;
         }
 
         &:focus, &:hover{
-            color: $greyXL;
+            border-color: $bdGrey3XL;
+            background-color: $bgGrey3XL;
+            color: $greyD;
             box-shadow: 0 0 3px $greyL;
             text-shadow: 0 0 3px $greyL;
+        }
+    }
+    
+    &.CTA_hollow{         
+        &, &:focus, &:hover, &:visited, &:active{
+            @include borderStyle($bdWhite);
+            color: $white;
+        }
+    
+        &, &:visited, &:active{
+            background-color: transparent;
+        }
+
+        &:focus, &:hover{
+            background-color: $black_rgba_10;
         }
     }
 */

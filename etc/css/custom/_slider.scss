@@ -59,6 +59,11 @@
     }
 }
 
+.slick_with_nav{
+    // No debe llevar z-index
+}
+
+/* // Slider Main ----------------------------------------------------------- */
 .slider_main{
     &,
     .slick-list,
@@ -68,10 +73,6 @@
         height: 300px;
 */
     }
-}
-
-.slick_with_nav{
-    // No debe llevar z-index
 }
 
 @import "imp/slider_arrows_imp";

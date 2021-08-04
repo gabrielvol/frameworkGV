@@ -13,7 +13,7 @@ $(document).ready(function () {
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
             $(this).closest('#header').find('.logo_header').addClass('navDrawer_open');
-//            $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_x.svg");
+//            $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_navDrawer.svg");
             $(this).closest('#header').find('.logo_header').addClass('navDrawer_ready');   
             
             $(this).closest('#header').find('.nav_language_ul').addClass('navDrawer_open');
