@@ -79,6 +79,9 @@
     @include afterTablet{
         width: $container_value_T;
     }
+    @include afterMobile900{
+        width: $container_value_A900;
+    }
     @include afterTabletLandscape{
         width: $container_value_TL;
     }
@@ -236,6 +239,12 @@
             width: $container_value_T;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_T;
+            }
+        }
+        @include afterMobile900{
+            width: $container_value_A900;
+            &.container_centered_absoluteAML{
+                margin-left: $container_value_half_negative_A900;
             }
         }
         @include afterTabletLandscape{
