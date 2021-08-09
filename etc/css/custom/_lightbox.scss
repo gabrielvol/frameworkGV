@@ -2,7 +2,7 @@
    Lightbox Styles | Custom [/etc/css/custom/lightbox.scss]
    ========================================================================== */
 .lightboxOverlay{
-    background-color: $bgBlack; // #444
+    background-color: $black_rgba_80; // #444
 }
 
 .lb-outerContainer{
@@ -15,11 +15,18 @@
 
 .lb-caption{
     font-family: $ftFamily_main_global;
-    font-weight: 400!important;
+    font-size: 13px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
+.lb-data{
+    color: #ccc;
+}
+
 .lb-number{
+    color: #999999;
     font-family: $ftFamily_main_global;
+    font-size: 12px;
     font-weight: 400;
 }
