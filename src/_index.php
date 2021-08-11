@@ -2,7 +2,9 @@
     $url_dir = '/nuevo';
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
-    $page_index             = 1;    
+    $page_index             = 1;   
+    $page_url_full          = $url_index_full;
+    
     $nav_pageCurrent        = 1;
     
     $has_form               = 0;

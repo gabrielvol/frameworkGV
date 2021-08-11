@@ -3,6 +3,8 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
     $page_int               = 1;
+    $page_url_full          = $url_contacto_full;
+    
     $nav_pageCurrent        = 0;
     
     $has_form               = 1;
@@ -39,6 +41,8 @@
             <div class="mobileForm tabletForm">
                 <form method="post" class="mha" id="formID">
                     <?php
+                        $data_fullURL__formMain = $page_url_full;
+                    
                         include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/form.send.inc.php');
                         echo $form_status_msg__formMain;
 

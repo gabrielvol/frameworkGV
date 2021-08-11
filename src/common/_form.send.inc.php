@@ -88,7 +88,7 @@
         $formMail_headers .= 'MIME-Version: 1.0' . "\n";
         //$formMail_headers .= "CC: ". $form_recipient_CC__formMain ."\r\n";
         //$formMail_headers .= "BCC: ". $form_recipient_BCC__formMain ."\r\n";
-        $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $url_contacto_full .'</small><br /><br />';
+        $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $data_fullURL__formMain .'</small><br /><br />';
         $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formMain ."<br />";
         $formMail_texto .= "<strong>Apellido:</strong> ". $data_apellido__formMain ."<br />";
         $formMail_texto .= "<strong>Nombre y apellido:</strong> ". $data_nombreAp__formMain ."<br />";

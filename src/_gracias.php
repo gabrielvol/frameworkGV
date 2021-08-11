@@ -4,6 +4,8 @@
     
     $page_int               = 1;
     $page_gracias           = 1;
+    $page_url_full          = $url_gracias_full;
+    
     $nav_pageCurrent        = 0;
     
     $has_form               = 0;
