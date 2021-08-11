@@ -44,7 +44,7 @@
                     $data_fullURL__formMain = $page_url_full;
                     
                     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/form.send.inc.php');
-                    echo $form_status_msg__formMain;
+                    // echo $form_status_msg__formMain;
                     echo $form_status_msg_pop__formMain;
 
                     if($has_mandatoryMsg == 1) {

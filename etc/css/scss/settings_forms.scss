@@ -57,19 +57,19 @@ fieldset, label, button,
 .form_msg_mandatory, .form_status, .form_label_name, .form_label_msg_error{
     @include beforeTablet{
         .mobileForm &{
-            font-size: $ftSize_paragraph_BT;
+            font-size: $form_ftSize_BT;
         }
     }
     
     @include tabletOnly{
         .tabletForm &{
-            font-size: $ftSize_paragraph_AT;
+            font-size: $form_ftSize_AT;
         }
     }
     
     @include afterTabletLandscape{
         form &{
-            font-size: $ftSize_paragraph_ATL;
+            font-size: $form_ftSize_ATL;
         }
     }
 }
