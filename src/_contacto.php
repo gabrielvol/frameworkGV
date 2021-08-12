@@ -173,6 +173,12 @@
                     <span class="form_label_msg_error <?php echo $form_span_errorClass_data_codigoPostal__formMain ?>"><?php echo $form_label_msg_error_data_codigoPostal__formMain ?></span>
                 </label>
 
+                <label for="data_ciudad__formMain">
+                    <span class="form_label_name"><?php echo _('Ciudad'); ?></span>
+                    <input type="text" name="data_ciudad__formMain" id="data_ciudad__formMain" class="ciudad <?php echo $form_input_errorClass_data_ciudad__formMain ?>" value="<?php echo $_POST['data_ciudad__formMain']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $form_input_autofocus_data_ciudad__formMain ?>>
+                    <span class="form_label_msg_error <?php echo $form_span_errorClass_data_ciudad__formMain ?>"><?php echo $form_label_msg_error_data_ciudad__formMain ?></span>
+                </label> 
+
                 <label for="data_provincia__formMain">
                     <span class="form_label_name"><?php echo _('Provincia'); ?></span>
                     <input type="text" name="data_provincia__formMain" id="data_provincia__formMain" class="provincia <?php echo $form_input_errorClass_data_provincia__formMain ?>" value="<?php echo $_POST['data_provincia__formMain']; ?>" placeholder="<?php echo _(''); ?>" <?php echo $form_input_autofocus_data_provincia__formMain ?>>
