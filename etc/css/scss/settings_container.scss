@@ -105,6 +105,9 @@
         @include afterTablet{
             margin-left: $container_value_half_negative_T;
         }
+        @include afterMobile900{
+            margin-left: $container_value_half_negative_A900;
+        }
         @include afterTabletLandscape{
             margin-left: $container_value_half_negative_TL;
         }
@@ -133,6 +136,9 @@
             }
             @include afterTablet{
                 margin-left: $container_value_half_negative_T;
+            }
+            @include afterMobile900{
+                margin-left: $container_value_half_negative_A900;
             }
             @include afterTabletLandscape{
                 margin-left: $container_value_half_negative_TL;
@@ -163,6 +169,9 @@
             }
             @include afterTabletLandscape{
                 margin-left: $container_value_half_negative_TL;
+            }
+            @include afterMobile900{
+                margin-left: $container_value_half_negative_A900;
             }
             @include afterDesktop{
                 margin-left: $container_value_half_negative_D;
@@ -309,6 +318,12 @@
                 margin-left: $container_value_half_negative_T;        
             }
         }
+        @include afterMobile900{
+            width: $container_value_A900;
+            &.container_centered_absoluteAT{
+                margin-left: $container_value_half_negative_A900;        
+            }
+        }
         @include afterTabletLandscape{
             width: $container_value_TL;
             &.container_centered_absoluteAT{        
@@ -396,6 +411,9 @@
         }
         @include afterTablet{
             width: $container_value_T;
+        }
+        @include afterMobile900{
+            width: $container_value_A900;
         }
         @include afterTabletLandscape{
             width: $container_value_TL;
