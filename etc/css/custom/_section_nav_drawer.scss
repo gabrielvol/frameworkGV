@@ -2,7 +2,7 @@
    Nav Drawer Styles | Custom [/etc/css/custom/section_nav_drawer.scss]
    ========================================================================== */
 @if $nav_drawer_act == "on"{
-    @include navBT{ // max width 767px; // $mq_mobile_width_max
+    @include navBT{
         .nav_main{
             @include positionTR(0, 0);
             position: fixed;

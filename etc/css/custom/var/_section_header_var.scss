@@ -3,11 +3,11 @@
    ========================================================================== */
 
 /* // Header Sizes ---------------------------------------------------------- */
-$header_height_ALL:     112px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_MO`
+$header_height_ALL:     112px;
 $header_height_MO:      101px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_MO`
 $header_height_AML:     102px;
 $header_height_MLO:     103px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_MLO`
-$header_height_BT:      104px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$header_PT_BT`
+$header_height_BT:      104px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_BT`
 $header_height_AT:      105px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_AT`
 $header_height_TO:      106px;
 $header_height_BTL:     107px;
@@ -21,10 +21,19 @@ $header_PB_BT:              0;
 $header_navAccordion_height_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$logo_height_BT_navAccordion});
 
 
-/* // Page Sizes -------------------------------------------------- */
-$page_PT_MO:            0; //Con Header Fixed activado, si no es 0 hay que declarar el alto en la variable `$header_height_MO`, y asignar esa misma variable a esta
-$page_PT_AML:           0; //Con Header Fixed activado, si no es 0 hay que declarar el alto en la variable `$header_height_AML`, y asignar esa misma variable a esta
-$page_PT_MLO:           0; //Con Header Fixed activado, si no es 0 hay que declarar el alto en la variable `$header_height_MLO`, y asignar esa misma variable a esta
-$page_PT_BT:            0; //Con Header Fixed activado, si no es 0 hay que declarar el alto en la variable `$header_height_BT`, y asignar esa misma variable a esta
-$page_PT_AT:            0; //Con Header Fixed activado, si no es 0 hay que declarar el alto en la variable `$header_height_AT`, y asignar esa misma variable a esta
-$page_PT_ATL:           0; //Con Header Fixed activado, si no es 0 hay que declarar el alto en la variable `$header_height_ATL`, y asignar esa misma variable a esta  
+/* // Page Sizes ------------------------------------------------------------ */
+//Con Header Fixed activado, height auto:
+// $page_PT_MO:            0; 
+// $page_PT_AML:           0; 
+// $page_PT_MLO:           0;
+// $page_PT_BT:            0;
+// $page_PT_AT:            0;
+// $page_PT_ATL:           0;
+
+//Con Header Fixed activado, height px:
+$page_PT_MO:            $header_height_MO;
+$page_PT_AML:           $header_height_AML;
+$page_PT_MLO:           $header_height_MLO;
+$page_PT_BT:            $header_height_BT;
+$page_PT_AT:            $header_height_AT;
+$page_PT_ATL:           $header_height_ATL;

@@ -19,6 +19,6 @@
 // Genera un `div.logo_before` que envuelve al logo.
 
 
-$logo_bgImage_before_act    = 0; // VER [01] en `[/etc/css/custom/act/logo_act.scss]`
+$logo_bgImage_before_act    = 0; // REF [02] `[/etc/css/custom/act/logo_act.scss]`
 
 ?>

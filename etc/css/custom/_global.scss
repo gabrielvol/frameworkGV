@@ -45,8 +45,8 @@
 
 
 /* // Main Gobal Styles ----------------------------------------------------- */
-@import 'imp/page_int_section_fullHeight_imp';
-@import 'imp/page_int_headerFixed_imp';
+@import 'imp/page_section_fullHeight_imp';
+@import 'imp/page_headerFixed_imp';
 
 #main{
     @include beforeTablet{
