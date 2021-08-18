@@ -29,7 +29,7 @@
 //    $url-SECCION_hs      = $url_dir .'/'. $hash_SECCION;
 //    $url-SECCION_hs      = $url_dir .'/'. $hash_SECCION;  
 
-//    $url_quienesSomos_hs_INICIO    = $url_index . $hash_quienesSomos; 
+//    $url_quienesSomos_hs_INICIO   = $url_index . $hash_quienesSomos; 
 //    $url-SECCION_hs_PAGINA        = $url_PAGINA . $hash_SECCION;
 //    $url-SECCION_hs_PAGINA        = $url_PAGINA . $hash_SECCION;
 //    $url-SECCION_hs_PAGINA        = $url_PAGINA . $hash_SECCION;
