@@ -49,8 +49,8 @@
 $mq_mobile_ancho_max:           499px;
 $mq_mobileLandscape_ancho_min:  500px;
 
-$mq_mobileLandscape_ancho_max:  766px;
-$mq_tablet_ancho_min:           767px;
+$mq_mobileLandscape_ancho_max:  767px;
+$mq_tablet_ancho_min:           768px;
 
 $mq_tabletPortrait_ancho_max:   1023px;
 $mq_tabletLandscape_ancho_min:  1024px;
@@ -61,9 +61,9 @@ $mq_desktop_ancho_min:          1200px;
 $mq_desktopLarge_ancho_min:     1600px;
 
      
-/* // Nav ------------------------------------------------------------------- */      
-$mq_nav_BT:                     767px;
-$mq_nav_AT:                     768px;
+/* // Nav ------------------------------------------------------------------- */
+$mq_nav_BT:                     767px; // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+$mq_nav_AT:                     768px; // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
 
 
 /* // Apple ----------------------------------------------------------------- */

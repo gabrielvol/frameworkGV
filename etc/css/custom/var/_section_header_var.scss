@@ -3,18 +3,20 @@
    ========================================================================== */
 
 /* // Header Sizes ---------------------------------------------------------- */
-$header_height_ALL:     112px;
+$header_height_ALL:     100px;
 $header_height_MO:      101px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_MO`
 $header_height_AML:     102px;
 $header_height_MLO:     103px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_MLO`
 $header_height_BT:      104px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_BT`
 $header_height_AT:      105px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_AT`
-$header_height_TO:      106px;
-$header_height_BTL:     107px;
-$header_height_ATL:     108px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_ATL` 
-$header_height_TLO:     109px;
-$header_height_BD:      110px;
-$header_height_AD:      111px;
+$header_height_navBT:   106px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_navBT`
+$header_height_navAT:   107px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_navAT`
+$header_height_TO:      108px;
+$header_height_BTL:     109px;
+$header_height_ATL:     110px; //Con Header Fixed activado, si es auto hay que declarar 0 en la variable `$page_PT_ATL` 
+$header_height_TLO:     111px;
+$header_height_BD:      112px;
+$header_height_AD:      113px;
 
 $header_PT_BT:              0;
 $header_PB_BT:              0;
@@ -27,6 +29,8 @@ $header_navAccordion_height_BT:   calc(#{$header_PT_BT} + #{$header_PB_BT} + #{$
 // $page_PT_AML:           0; 
 // $page_PT_MLO:           0;
 // $page_PT_BT:            0;
+// $page_PT_navAT:         0;
+// $page_PT_navBT:         0;
 // $page_PT_AT:            0;
 // $page_PT_ATL:           0;
 
@@ -35,5 +39,7 @@ $page_PT_MO:            $header_height_MO;
 $page_PT_AML:           $header_height_AML;
 $page_PT_MLO:           $header_height_MLO;
 $page_PT_BT:            $header_height_BT;
+$page_PT_navBT:         $header_height_navBT;
+$page_PT_navAT:         $header_height_navAT;
 $page_PT_AT:            $header_height_AT;
 $page_PT_ATL:           $header_height_ATL;

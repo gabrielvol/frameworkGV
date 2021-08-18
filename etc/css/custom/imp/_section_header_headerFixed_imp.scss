@@ -1,5 +1,5 @@
 /* =============================================================================
-   Header Fixed Styles | Custom [/etc/css/custom/section_header_headerFixed_imp.scss]
+   Header Fixed Styles | Custom [/etc/css/custom/imp/section_header_headerFixed_imp.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -44,6 +44,7 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
 #header{        
     @if $header_fixed_act_ALL == "on"{
         position: fixed;
@@ -52,7 +53,9 @@
         left: 0;
         box-shadow: $bxShadow_header_fixed;
         
-        &.headerScrolled{}
+        &.headerScrolled{
+            box-shadow: $bxShadow_header_fixed_scrolled;
+        }
     }
     
     @include mobileOnly{
@@ -63,7 +66,9 @@
             left: 0;
             box-shadow: $bxShadow_header_fixed;
         
-            &.headerScrolled{}
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
         }
         
         @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
@@ -79,7 +84,9 @@
             left: 0;
             box-shadow: $bxShadow_header_fixed;
         
-            &.headerScrolled{}
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
         }
         
         @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
@@ -95,7 +102,9 @@
             left: 0;
             box-shadow: $bxShadow_header_fixed;
         
-            &.headerScrolled{}
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
         }
         
         @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
@@ -103,29 +112,46 @@
         }
     }
 
-    //@include navBT
     @include beforeTablet{        
         @if $header_fixed_act_BT == "on"{
-            height: $header_height_BT;
-            box-shadow: $bxShadow_header_fixed;
             position: fixed;
             top: 0;
             right: 0;
             left: 0;
+            box-shadow: $bxShadow_header_fixed;
         
-            &.topperShadow{
-                box-shadow: 0 0 7px $black;
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
             }
-        
-            &.headerScrolled{}
         } 
         
         @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL{
+            height: $header_height_BT;
+            
+            &.navDrawer_open{}
+        }   
+    }
+
+    @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+        @if $header_fixed_act_nav_BT == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
+        } 
+        
+        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL{
+            height: $header_height_BT;
+            
             &.navDrawer_open{}
         }   
     }
     
-    //@include navAT
     @include afterTablet{        
         @if $header_fixed_act_AT == "on"{
             position: fixed;
@@ -134,14 +160,30 @@
             left: 0;
             box-shadow: $bxShadow_header_fixed;
         
-            &.topperShadow{
-                box-shadow: 0 0 7px $black;
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
             }
-        
-            &.headerScrolled{}
         }
         
         @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_AT;
+        }
+    }
+    
+    @include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`  
+        @if $header_fixed_act_nav_AT == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
+        }
+        
+        @if $header_fixed_act_nav_AT == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_AT;
         }
     }
@@ -152,8 +194,11 @@
             top: 0;
             right: 0;
             left: 0;
+            box-shadow: $bxShadow_header_fixed;
         
-            &.headerScrolled{}
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
         }
         
         @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{

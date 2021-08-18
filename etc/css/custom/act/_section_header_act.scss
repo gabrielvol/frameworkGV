@@ -4,7 +4,8 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para Section Header.
-//
+
+
 /* // Listado --------------------------------------------------------------- */
 // 01 _ Logo Nav Floated
 // 02 _ Logo Nav Floated Flexbox
@@ -71,8 +72,8 @@
 //
 // 03 _ Header Fixed
 // Activa los if que se encuentran en
-// `[/etc/css/custom/page_headerFixed_imp.scss]` y
-// `[/etc/css/custom/section_header_headerFixed_imp.scss]`.
+// `[/etc/css/custom/imp/page_headerFixed_imp.scss]` y
+// `[/etc/css/custom/imp/section_header_headerFixed_imp.scss]`.
 //
 // Imprime:
 //
@@ -143,4 +144,6 @@ $header_fixed_act_AML:      off;
 $header_fixed_act_MLO:      off;
 $header_fixed_act_BT:       off;
 $header_fixed_act_AT:       off;
-$header_fixed_act_ATL:      $header_fixed_act_AT;
+$header_fixed_act_nav_BT:   off; // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+$header_fixed_act_nav_AT:   off; // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+$header_fixed_act_ATL:      off;
