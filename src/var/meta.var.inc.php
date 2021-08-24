@@ -23,22 +23,23 @@
     $site_desc_global_GB        = '';
     
 
-    /* // Open Graph meta --------------------------------------------------- */        
-    // Max 35 char                                                   ·
-    //                                 123456789-123456789-123456789-12345 
+    /* // Open Graph meta --------------------------------------------------- */     
+    // Max 35 char                                                       ·
+    //                                 123456789-123456789-123456789-12345
+    // OpenGraph Title Global se usa en index solamente
     $openGraph_title_global         = '';
     $openGraph_title_global_GB      = '';
     
     $openGraph_siteName_global      = $openGraph_title_global;    
     $openGraph_siteName_global_GB   = $openGraph_title_global_GB;
     
-    // Max 65 char                                                                                 ·
-    //                             123456789-123456789-123456789-123456789-123456789-123456789-12345 
-    $openGraph_desc_global      = '';
-    $openGraph_desc_global_GB   = '';
+    // Max 65 char                                                                                     ·
+    //                                 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    $openGraph_desc_global          = '';
+    $openGraph_desc_global_GB       = '';
     
-    $openGraph_url              = $url_openGraph_global;
-    $openGraph_type             = 'website';
+    $openGraph_url                  = $url_openGraph_global;
+    $openGraph_type                 = 'website';
     
     $openGraph_url_img_sq           = $url_openGraph_global .'/og_img_sq_01.jpg';
     $openGraph_url_img_sq_secure    = $openGraph_url_img_sq;

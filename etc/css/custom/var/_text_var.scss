@@ -1,4 +1,4 @@
-/* =============================================================================
+/* * NombreDeProyecto * ========================================================
    Text Variables | Custom [/etc/css/custom/var/text.scss]
    ========================================================================== */
 
@@ -56,20 +56,20 @@ $txSelection_bgColour_global:   $bgColour_main_global;
 
 
 /* // Espaciado general de texto -------------------------------------------- */
-$ftWeight_global:             400;
-$lineHeight_global:             calc(1ex / 0.32);
+$ftWeight_global:           400;
+$lineHeight_global:         calc(1ex / 0.32);
 
-$ftSize_global:               1rem;
-$ftSize_paragraph_BT:         0.9rem;
-$ftSize_paragraph_AT:         1rem;
-$ftSize_paragraph_ATL:        $ftSize_paragraph_AT;
+$ftSize_global:             1rem;
+$ftSize_paragraph_BT:       0.9rem;
+$ftSize_paragraph_AT:       1rem;
+$ftSize_paragraph_ATL:      $ftSize_paragraph_AT;
 
-$form_input_ftSize_BT:         0.9rem;
-$form_input_ftSize_AT:         0.9rem;
-$form_input_ftSize_ATL:        $form_input_ftSize_AT;
+$form_input_ftSize_BT:      0.9rem;
+$form_input_ftSize_AT:      0.9rem;
+$form_input_ftSize_ATL:     $form_input_ftSize_AT;
 
-$text_marginTRBL_global:        0;
-$text_marginTRBL_sibling:       0.8em 0 0;
+$text_marginTRBL_global:    0;
+$text_marginTRBL_sibling:   0.8em 0 0;
 
 
 /* // Headings -------------------------------------------------------------- */
