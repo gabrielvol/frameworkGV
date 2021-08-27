@@ -73,6 +73,17 @@
         height: 300px;
 */
     }
+    
+    @include afterTabletLandscape{
+        &,
+        .slick-list,
+        .slick-track,
+        .slick-track li{
+/*            
+            max-height: calc(85vh - #{$header_height_ATL})
+*/
+        }
+    }
 }
 
 @import "imp/slider_arrows_imp";
