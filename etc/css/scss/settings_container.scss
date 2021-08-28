@@ -46,9 +46,10 @@
 
 .container,
 .containerMO,
-.containerB600,
 .containerAML,
 .containerMLO,
+.containerB600,
+.containerA600,
 .containerBT,
 .containerAT,
 .containerTO,
@@ -76,6 +77,11 @@
             width: $container_value_B600;
         }
     }
+    @if $classes_container_act_A600 == "on"{
+        @include afterMobile600{
+            width: $container_value_A600;
+        }
+    }
     @include afterTablet{
         width: $container_value_T;
     }
@@ -101,6 +107,9 @@
             position: absolute;
             left: 50%;   
             margin-left: $container_value_half_negative_ML;
+        }
+        @include afterMobile600{
+            margin-left: $container_value_half_negative_A600;
         }
         @include afterTablet{
             margin-left: $container_value_half_negative_T;
@@ -134,6 +143,9 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_ML;
             }
+            @include afterMobile600{
+                margin-left: $container_value_half_negative_A600;
+            }
             @include afterTablet{
                 margin-left: $container_value_half_negative_T;
             }
@@ -157,6 +169,30 @@
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_B600;
+            }
+        }
+    }
+    @if $classes_container_act_A600 == "on"{
+        &.container_centered_absoluteA600{
+            @include afterMobile600{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A600;
+            }
+            @include afterTablet{
+                margin-left: $container_value_half_negative_T;
+            }
+            @include afterMobile900{
+                margin-left: $container_value_half_negative_A900;
+            }
+            @include afterTabletLandscape{
+                margin-left: $container_value_half_negative_TL;
+            }
+            @include afterDesktop{
+                margin-left: $container_value_half_negative_D;
+            }
+            @include afterDesktopLarge{
+                margin-left: $container_value_half_negative_DL;
             }
         }
     }
@@ -244,6 +280,12 @@
         @include mobileLandscapeOnly{
             width: $container_value_ML;
         }
+        @include afterMobile600{
+            width: $container_value_A600;
+            &.container_centered_absoluteAML{
+                margin-left: $container_value_half_negative_A600;
+            }
+        }
         @include afterTablet{
             width: $container_value_T;
             &.container_centered_absoluteAML{
@@ -294,6 +336,48 @@
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_B600;
+            }
+        }
+    }
+}
+@if $classes_container_act_A600 == "on"{
+    .containerA600{
+        @include afterMobile600{
+            width: $container_value_A600;            
+            &.container_centered_absoluteA600{    
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A600;
+            }
+        }
+        @include afterTablet{
+            width: $container_value_T;
+            &.container_centered_absoluteA600{ 
+                margin-left: $container_value_half_negative_T;        
+            }
+        }
+        @include afterMobile900{
+            width: $container_value_A900;
+            &.container_centered_absoluteA600{
+                margin-left: $container_value_half_negative_A900;        
+            }
+        }
+        @include afterTabletLandscape{
+            width: $container_value_TL;
+            &.container_centered_absoluteA600{        
+                margin-left: $container_value_half_negative_TL;
+            }
+        }
+        @include afterDesktop{
+            width: $container_value_D;
+            &.container_centered_absoluteA600{    
+                margin-left: $container_value_half_negative_D;    
+            }
+        }
+        @include afterDesktopLarge{ 
+            width: $container_value_DL;
+            &.container_centered_absoluteAT{       
+                margin-left: $container_value_half_negative_DL; 
             }
         }
     }
