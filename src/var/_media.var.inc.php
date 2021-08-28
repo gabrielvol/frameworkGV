@@ -1,5 +1,50 @@
 <?php
-    /* // YouTube iframe &amp; Thumbnail URLS ----------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Media Variables [/src/var/media.var.inc.php]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hs                  = hash
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // YouTube iframe &amp; Thumbnail URLS ----------------------------------- */
     $media__videoA_id             = 'aaaaaaaaaaa';
     $media__videoA_src_iframe     = 'https://www.youtube-nocookie.com/embed/'. $media__videoA_id .'?&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;mute=1&amp;playlist='. $media__videoA_id; 
     $media__videoA_src_full       = 'https://img.youtube.com/vi/'. $media__videoA_id .'/0.jpg';
@@ -29,7 +74,7 @@
     
     
 
-    /* // Explanation ----------------------------------------------------------
+/* // Explanation --------------------------------------------------------------
 
 Each YouTube video has 4 generated images. They are predictably formatted as follows:
 

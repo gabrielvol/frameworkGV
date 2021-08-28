@@ -35,6 +35,7 @@
 <!-- Idiomas -->
 <link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_AR" hreflang="es">
 <link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_UY" hreflang="es">
 <link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=en_GB" hreflang="en">
 <link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=de_DE" hreflang="de">
 <link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=fr_FR" hreflang="fr">

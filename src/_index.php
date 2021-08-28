@@ -1,5 +1,6 @@
 <?php
     $url_dir = '/nuevo';
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/gettext/languageCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
     
     $page_index             = 1;   
@@ -29,10 +30,8 @@
     $openGraph_url_img_height   = $openGraph_img_sq_height;
     $openGraph_siteName         = $openGraph_siteName_global;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');    
     include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__gettext.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/gettext.locale.inc.php');
 ?>
 </head>
 <body>

@@ -86,3 +86,10 @@ class="<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_i
 &.lang_EN{}
 &.ITlang{}
 &.ARlang{}
+
+
+<?php if($gettext_idioma == 'en_GB'): ?>
+
+<?php endif; if($gettext_idioma == 'es_AR'): ?>
+
+<?php endif; ?>

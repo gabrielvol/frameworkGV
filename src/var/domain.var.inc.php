@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Date / Time Variables [/src/var/date.var.inc.php]
+   Domain Variables [/src/var/domain.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -44,8 +44,9 @@
 
 
 
-date_default_timezone_set('America/Argentina/Buenos_Aires');
+/* // Domains --------------------------------------------------------------- */
+$domain_global      = 'sitiocomar';
+$domain_sec         = 'sitiocomar';
 
-$date_year_from     = 2021;
-$date_year_actual   = (int)date('Y');
-?>
+$url_global         = 'http://www.'. $domain_global;
+$url_sec            = 'http://www.'. $domain_sec;
