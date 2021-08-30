@@ -8,6 +8,11 @@
         <?php echo _("pagina"); ?>
     </a>
 </li>
+<li class="nav_item_contacto <?php if($nav_pageCurrent == 2) { echo 'nav_item_current'; } ?>">
+    <a <?php echo $href_contacto; if($nav_pageCurrent == 2) { echo 'aria-current="page"'; } ?>>
+        <?php echo _("Contacto"); ?>
+    </a>
+</li>
 <li class="nav_item-PAGINA nav_item_noLink_js">
     <a href="<?php if($page_int == 1) { echo $url_index; } ?>#seccion">
         <?php echo _("pagina"); ?>
