@@ -63,7 +63,7 @@ $hash_contacto_gettext      = '#'. _('contacto');
     
 /* // url ------------------------------------------------------------------- */
 $url_root           = $url_dir .'/';
-$url_logo           = $url_dir .'/';
+$url_logo           = $url_root;
 $url_index          = $url_dir .'/index.php';       // $nav_pageCurrent 1
 $url_contacto       = $url_dir .'/contacto.php';    // $nav_pageCurrent 0
 // $url-PAGINA         = $url_dir .'/pagina.php';      // $nav_pageCurrent 0
@@ -78,7 +78,7 @@ $url_contacto_hs    = $url_dir .'/'. $hash_contacto;
 // $url-SECCION-hs      = $url_dir .'/'. $hash_SECCION; 
 
 $url_root           = $url_dir .'/'. $gettext_idioma_url;
-$url_logo           = $url_dir .'/'. $gettext_idioma_url;
+$url_logo           = $url_root;
 $url_index          = $url_dir .'/index.php'. $gettext_idioma_url;       // $nav_pageCurrent 1
 $url_contacto       = $url_dir .'/contacto.php'. $gettext_idioma_url;    // $nav_pageCurrent 0
 // $url-PAGINA         = $url_dir .'/pagina.php'. $gettext_idioma_url;      // $nav_pageCurrent 0
@@ -133,7 +133,7 @@ $url_openGraph_global   = $url_global_full;
     
 /* // href ------------------------------------------------------------------ */ 
 $href_root          = 'href="'. $url_root .'"'; 
-$href_logo          = 'href="'. $url_logo .'"'; 
+$href_logo          = $href_root;
 $href_index         = 'href="'. $url_index .'"';
 $href_contacto      = 'href="'. $url_contacto .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
