@@ -64,6 +64,17 @@
                 }
             }
             
+            @if $header_logoNav_floated_flexbox_act == "on"{
+                &.navAT{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    align-content: flex-start;
+                    align-items: flex-start; 
+                }
+            }
+            
             > li{                
                 &.uk-active,
                 &.nav_item_current{
@@ -96,6 +107,8 @@
 
             & + li{}
         }
+        
+        .nav_item_contacto{}
         
         @if $nav_hasSub_act == "on"{
             .nav_subNav{                
