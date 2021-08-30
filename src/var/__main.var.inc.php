@@ -61,7 +61,7 @@ include('email.var.inc.php');
     
 // include('social.var.inc.php');
     
-// include('files.var.inc.php');
+// include('file.var.inc.php');
 // include('media.var.inc.php');
     
 // include('form.var.inc.php');
