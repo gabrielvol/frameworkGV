@@ -45,24 +45,24 @@
 
 
 /* // Activadores ----------------------------------------------------------- */
-    include('act/header.act.inc.php');
-    include('act/nav.act.inc.php');
+include('act/header.act.inc.php');
+include('act/nav.act.inc.php');
     
     
 /* // Data ------------------------------------------------------------------ */
-    include('domain.var.inc.php');
-//    include('date.var.inc.php');
-    include('urls.var.inc.php');
+include('domain.var.inc.php');
+// include('date.var.inc.php');
+include('urls.var.inc.php');
     
-    include('meta.var.inc.php');
-//    include('address.var.inc.php');
-//    include('tel.var.inc.php');
-    include('email.var.inc.php');
+include('meta.var.inc.php');
+// include('address.var.inc.php');
+// include('tel.var.inc.php');
+include('email.var.inc.php');
     
-//    include('social.var.inc.php');
+// include('social.var.inc.php');
     
-//    include('files.var.inc.php');
-//    include('media.var.inc.php');
+// include('files.var.inc.php');
+// include('media.var.inc.php');
     
-//    include('form.var.inc.php');
+// include('form.var.inc.php');
 ?>
