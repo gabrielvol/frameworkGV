@@ -59,8 +59,8 @@
 <!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img_secure; ?>" />-->
 <meta property="og:image" content="<?php echo $openGraph_url_img; ?>" />
 <meta property="og:image:type" content="image/jpg" />
-<meta property="og:image:width" content="<?php $openGraph_url_img_width; ?>" />
-<meta property="og:image:height" content="<?php $openGraph_url_img_height; ?>" />
+<meta property="og:image:width" content="<?php echo $openGraph_url_img_width; ?>" />
+<meta property="og:image:height" content="<?php echo $openGraph_url_img_height; ?>" />
 <meta property="og:type" content="<?php echo $openGraph_type; ?>" />
 <meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>" />
 <meta property="og:locale" content="<?php echo $site_lang_locale; ?>" />
@@ -78,6 +78,8 @@
 <meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>" />
 <meta property="og:image" content="<?php echo $openGraph_url_img; ?>" />
 <meta property="og:image:type" content="image/jpg" />
+<meta property="og:image:width" content="<?php echo $openGraph_url_img_width; ?>" />
+<meta property="og:image:height" content="<?php echo $openGraph_url_img_height; ?>" />
 <meta property="og:type" content="<?php echo $openGraph_type; ?>" />
 <meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>" />
 <meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo $site_lang_locale; } ?>" />
