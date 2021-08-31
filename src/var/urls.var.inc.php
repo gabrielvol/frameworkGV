@@ -4,7 +4,9 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-
+// Definición de urls y href del sitio.
+//
+// #url #href #hash #gettext
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -87,7 +89,7 @@ $url_contacto       = $url_dir .'/contacto.php'. $gettext_idioma_url;    // $nav
 
 $url_main_hs        = $url_dir .'/'. $gettext_idioma_url . $hash_main;
 $url_inicio_hs      = $url_dir .'/'. $gettext_idioma_url . $hash_inicio;
-$hash_contacto_hs   = $url_dir .'/'. $gettext_idioma_url . $hash_contacto;
+$url_contacto_hs    = $url_dir .'/'. $gettext_idioma_url . $hash_contacto;
 // $url-SECCION-hs      = $url_dir .'/'. $gettext_idioma_url . $hash_SECCION;
 // $url-SECCION-hs      = $url_dir .'/'. $gettext_idioma_url . $hash_SECCION;
 // $url-SECCION-hs      = $url_dir .'/'. $gettext_idioma_url . $hash_SECCION;

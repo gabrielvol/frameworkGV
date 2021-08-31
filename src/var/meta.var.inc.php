@@ -4,6 +4,9 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
+// Variable para site lang, datos de open graph, títulos y descripción de sitio
+//
+// #lang #openGraph
 
 
 
