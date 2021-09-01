@@ -25,7 +25,6 @@
 @import "var/container_sizes_var";
 @import "../scss/var_container";
 @import "var/helpers_var";
-@import "var/animations_var";
  
 @import "var/colours_main_var";
 @import "var/colours_borders_var";
@@ -48,6 +47,7 @@
 @import "var/slider_var";
 @import "var/lists_var";
 @import "var/buttons_var";
+@import "var/hover_var";
 @import "var/social_var";
 @import "var/popup_var";
 
@@ -118,8 +118,6 @@
 @import "classes_backgrounds";
 @import "shadows";
 
-@import "../scss/classes_animations";
-@import "settings_animations";
 @import "../scss/classes_useful_all";
 @import "../scss/classes_useful_responsive";
 
@@ -128,11 +126,14 @@
 @import "print";
 
 @import "global";
-@import "focus";
+@import "lists";
 @import "buttons";
+@import "hover";
+@import "focus";
+//@import "scrollbar";
+//@import "animation";
 //@import "breadcrumbs";
 //@import "iframe";
-@import "lists";
 
 //@import "../scss/settings_forms";
 //@import "forms";
@@ -146,8 +147,6 @@
 
 @import "../scss/settings_popup";
 @import "popup";
-
-//@import "scrollbar";
 
 @import "section_header";
 //@import "social";

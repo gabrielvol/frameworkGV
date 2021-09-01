@@ -1,11 +1,11 @@
 /* * NombreDeProyecto * ========================================================
-   Animation Variables | Custom [/etc/css/custom/var/animations_var.scss]
+   Hover Variables | Custom [/etc/css/custom/var/hover_var.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
-
+ 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 ///-- Inicio del nombre
@@ -44,7 +44,7 @@
     
 
 
-$hover_grow_display_ani: inline-block;
-$hover_grow_scaleSmall_ani: 1.05;
-$hover_grow_scaleMedium_ani: 1.10;
-$hover_grow_scaleLarge_ani: 1.15;
+$hover_grow_display_ani:        inline-block;
+$hover_grow_scaleSmall_ani:     1.05;
+$hover_grow_scaleMedium_ani:    1.10;
+$hover_grow_scaleLarge_ani:     1.15;

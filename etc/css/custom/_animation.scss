@@ -1,0 +1,487 @@
+/* * NombreDeProyecto * ========================================================
+   Animations | Custom [/etc/css/custom/animation.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de estilos scss.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hs                  = hash
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Animation order ------------------------------------------------------- */
+$animationA_ani_delay:      0.5s;
+$animationB_ani_delay:      2s;
+$animationC_ani_delay:      6s;
+
+
+
+/* // Animation A ----------------------------------------------------------- */
+.animationA_ani{
+    animation-name: animationA;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); // cubic-bezier(0.33, 1, 0.68, 1)
+    animation-delay: $animationA_ani_delay; // Time before animation starts
+    animation-iteration-count: 1; // Options: 1, `infinite`, 1.5
+    animation-direction: normal; // `reverse`, `alternate`, `alternate-reverse`
+    animation-fill-mode: none;
+    animation-play-state: running; // `paused`
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: countClientes -99;
+    }
+    3% {
+        top: 0;
+        counter-increment: countClientes -98;
+    }
+    5% {
+        top: 0;
+        counter-increment: countClientes -96;
+    }
+    7% {
+        top: 0;
+        counter-increment: countClientes -94;
+    }
+    10% {
+        top: 0;
+        counter-increment: countClientes -92;
+    }
+    13% {
+        top: 0;
+        counter-increment: countClientes -90;
+    }
+    15% {
+        top: 0;
+        counter-increment: countClientes -88;
+    }
+    17% {
+        top: 0;
+        counter-increment: countClientes -86;
+    }
+    20% {
+        top: 0;
+        counter-increment: countClientes -82;
+    }
+    23% {
+        top: 0;
+        counter-increment: countClientes -78;
+    }
+    25% {
+        top: 0;
+        counter-increment: countClientes -76;
+    }
+    27% {
+        top: 0;
+        counter-increment: countClientes -72;
+    }
+    30% {
+        top: 0;
+        counter-increment: countClientes -70;
+    }
+    33% {
+        top: 0;
+        counter-increment: countClientes -66;
+    }
+    35% {
+        top: 0;
+        counter-increment: countClientes -64;
+    }
+    37% {
+        top: 0;
+        counter-increment: countClientes -62;
+    }
+    40% {
+        top: 0;
+        counter-increment: countClientes -58;
+    }
+    43% {
+        top: 0;
+        counter-increment: countClientes -55;
+    }
+    45% {
+        top: 0;
+        counter-increment: countClientes -52;
+    }
+    47% {
+        top: 0;
+        counter-increment: countClientes -50;
+    }
+    50% {
+        top: 0;
+        counter-increment: countClientes -46;
+    }
+    53% {
+        top: 0;
+        counter-increment: countClientes -41;
+    }
+    55% {
+        top: 0;
+        counter-increment: countClientes -38;
+    }
+    57% {
+        top: 0;
+        counter-increment: countClientes -36;
+    }
+    60% {
+        top: 0;
+        counter-increment: countClientes -34;
+    }
+    63% {
+        top: 0;
+        counter-increment: countClientes -29;
+    }
+    65% {
+        top: 0;
+        counter-increment: countClientes -27;
+    }
+    67% {
+        top: 0;
+        counter-increment: countClientes -24;
+    }
+    70% {
+        top: 0;
+        counter-increment: countClientes -22;
+    }
+    73% {
+        top: 0;
+        counter-increment: countClientes -18;
+    }
+    75% {
+        top: 0;
+        counter-increment: countClientes -15;
+    }
+    77% {
+        top: 0;
+        counter-increment: countClientes -12;
+    }
+    80% {
+        top: 0;
+        counter-increment: countClientes -10;
+    }
+    83% {
+        top: 0;
+        counter-increment: countClientes -8;
+    }
+    85% {
+        top: 0;
+        counter-increment: countClientes -7;
+    }
+    87% {
+        top: 0;
+        counter-increment: countClientes -6;
+    }
+    90% {
+        top: 0;
+        counter-increment: countClientes -5;
+    }
+    93% {
+        top: 0;
+        counter-increment: countClientes -4;
+    }
+    95% {
+        top: 0;
+        counter-increment: countClientes -3;
+    }
+    97% {
+        top: 0;
+        counter-increment: countClientes -2;
+    }
+    100% {
+        top: 0;
+        counter-increment: countClientes -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: countClientes -99;
+    }
+    10% {
+        top: 0;
+        counter-increment: countClientes -92;
+    }
+    20% {
+        top: 0;
+        counter-increment: countClientes -82;
+    }
+    30% {
+        top: 0;
+        counter-increment: countClientes -70;
+    }
+    40% {
+        top: 0;
+        counter-increment: countClientes -58;
+    }
+    50% {
+        top: 0;
+        counter-increment: countClientes -46;
+    }
+    60% {
+        top: 0;
+        counter-increment: countClientes -34;
+    }
+    70% {
+        top: 0;
+        counter-increment: countClientes -22;
+    }
+    80% {
+        top: 0;
+        counter-increment: countClientes -10;
+    }
+    90% {
+        top: 0;
+        counter-increment: countClientes -5;
+    }
+    100% {
+        top: 0;
+        counter-increment: countClientes -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: countClientes -99;
+    }
+    20% {
+        top: 0;
+        counter-increment: countClientes -82;
+    }
+    40% {
+        top: 0;
+        counter-increment: countClientes -58;
+    }
+    60% {
+        top: 0;
+        counter-increment: countClientes -34;
+    }
+    80% {
+        top: 0;
+        counter-increment: countClientes -10;
+    }
+    100% {
+        top: 0;
+        counter-increment: countClientes -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: countClientes -99;
+    }
+    25% {
+        top: 0;
+        counter-increment: countClientes -58;
+    }
+    50% {
+        top: 0;
+        counter-increment: countClientes -34;
+    }
+    75% {
+        top: 0;
+        counter-increment: countClientes -10;
+    }
+    100% {
+        top: 0;
+        counter-increment: countClientes -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: countClientes -99;
+    }
+    50% {
+        top: 0;
+        counter-increment: countClientes -34;
+    }
+    100% {
+        top: 0;
+        counter-increment: countClientes -1;
+    }
+}
+
+/* // Counter Animation ----------------------------------------------------- */
+/*
+.animation_counter_ani{
+    animation-name:;
+    animation-duration:;
+    nimation-timing-function:;
+    animation-delay:;
+    animation-iteration-count:;
+    animation-direction:;
+    animation-fill-mode:;
+    animation-play-state:;
+
+    animation: countClientes 2s cubic-bezier(0.61, 1, 0.88, 1);
+    content: counter(countClientes);
+    counter-reset: countClientes 100;
+}
+
+@keyframes countClientes{
+    0% {
+        counter-increment: countClientes -99;
+    }
+    3% {
+        counter-increment: countClientes -98;
+    }
+    5% {
+        counter-increment: countClientes -96;
+    }
+    7% {
+        counter-increment: countClientes -94;
+    }
+    10% {
+        counter-increment: countClientes -92;
+    }
+    13% {
+        counter-increment: countClientes -90;
+    }
+    15% {
+        counter-increment: countClientes -88;
+    }
+    17% {
+        counter-increment: countClientes -86;
+    }
+    20% {
+        counter-increment: countClientes -82;
+    }
+    23% {
+        counter-increment: countClientes -78;
+    }
+    25% {
+        counter-increment: countClientes -76;
+    }
+    27% {
+        counter-increment: countClientes -72;
+    }
+    30% {
+        counter-increment: countClientes -70;
+    }
+    33% {
+        counter-increment: countClientes -66;
+    }
+    35% {
+        counter-increment: countClientes -64;
+    }
+    37% {
+        counter-increment: countClientes -62;
+    }
+    40% {
+        counter-increment: countClientes -58;
+    }
+    43% {
+        counter-increment: countClientes -55;
+    }
+    45% {
+        counter-increment: countClientes -52;
+    }
+    47% {
+        counter-increment: countClientes -50;
+    }
+    50% {
+        counter-increment: countClientes -46;
+    }
+    53% {
+        counter-increment: countClientes -41;
+    }
+    55% {
+        counter-increment: countClientes -38;
+    }
+    57% {
+        counter-increment: countClientes -36;
+    }
+    60% {
+        counter-increment: countClientes -34;
+    }
+    63% {
+        counter-increment: countClientes -29;
+    }
+    65% {
+        counter-increment: countClientes -27;
+    }
+    67% {
+        counter-increment: countClientes -24;
+    }
+    70% {
+        counter-increment: countClientes -22;
+    }
+    73% {
+        counter-increment: countClientes -18;
+    }
+    75% {
+        counter-increment: countClientes -15;
+    }
+    77% {
+        counter-increment: countClientes -12;
+    }
+    80% {
+        counter-increment: countClientes -10;
+    }
+    83% {
+        counter-increment: countClientes -8;
+    }
+    85% {
+        counter-increment: countClientes -7;
+    }
+    87% {
+        counter-increment: countClientes -6;
+    }
+    90% {
+        counter-increment: countClientes -5;
+    }
+    93% {
+        counter-increment: countClientes -4;
+    }
+    95% {
+        counter-increment: countClientes -3;
+    }
+    97% {
+        counter-increment: countClientes -2;
+    }
+    100% {
+        counter-increment: countClientes -1;
+    }
+}
+*/
