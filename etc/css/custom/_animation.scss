@@ -44,7 +44,7 @@
 
 
 
-/* // Animation order ------------------------------------------------------- */
+/* // Animation order/timing ------------------------------------------------ */
 $animationA_ani_delay:      0.5s;
 $animationB_ani_delay:      2s;
 $animationC_ani_delay:      6s;
@@ -59,429 +59,428 @@ $animationC_ani_delay:      6s;
     animation-delay: $animationA_ani_delay; // Time before animation starts
     animation-iteration-count: 1; // Options: 1, `infinite`, 1.5
     animation-direction: normal; // `reverse`, `alternate`, `alternate-reverse`
-    animation-fill-mode: none;
+    animation-fill-mode: forwards; // `none`, `forwards`, `backwards`, `both`
     animation-play-state: running; // `paused`
 }
 
 @keyframes animationA{
     0% {
         top: 0;
-        counter-increment: countClientes -99;
+        counter-increment: animationA -99;
     }
     3% {
         top: 0;
-        counter-increment: countClientes -98;
+        counter-increment: animationA -98;
     }
     5% {
         top: 0;
-        counter-increment: countClientes -96;
+        counter-increment: animationA -96;
     }
     7% {
         top: 0;
-        counter-increment: countClientes -94;
+        counter-increment: animationA -94;
     }
     10% {
         top: 0;
-        counter-increment: countClientes -92;
+        counter-increment: animationA -92;
     }
     13% {
         top: 0;
-        counter-increment: countClientes -90;
+        counter-increment: animationA -90;
     }
     15% {
         top: 0;
-        counter-increment: countClientes -88;
+        counter-increment: animationA -88;
     }
     17% {
         top: 0;
-        counter-increment: countClientes -86;
+        counter-increment: animationA -86;
     }
     20% {
         top: 0;
-        counter-increment: countClientes -82;
+        counter-increment: animationA -82;
     }
     23% {
         top: 0;
-        counter-increment: countClientes -78;
+        counter-increment: animationA -78;
     }
     25% {
         top: 0;
-        counter-increment: countClientes -76;
+        counter-increment: animationA -76;
     }
     27% {
         top: 0;
-        counter-increment: countClientes -72;
+        counter-increment: animationA -72;
     }
     30% {
         top: 0;
-        counter-increment: countClientes -70;
+        counter-increment: animationA -70;
     }
     33% {
         top: 0;
-        counter-increment: countClientes -66;
+        counter-increment: animationA -66;
     }
     35% {
         top: 0;
-        counter-increment: countClientes -64;
+        counter-increment: animationA -64;
     }
     37% {
         top: 0;
-        counter-increment: countClientes -62;
+        counter-increment: animationA -62;
     }
     40% {
         top: 0;
-        counter-increment: countClientes -58;
+        counter-increment: animationA -58;
     }
     43% {
         top: 0;
-        counter-increment: countClientes -55;
+        counter-increment: animationA -55;
     }
     45% {
         top: 0;
-        counter-increment: countClientes -52;
+        counter-increment: animationA -52;
     }
     47% {
         top: 0;
-        counter-increment: countClientes -50;
+        counter-increment: animationA -50;
     }
     50% {
         top: 0;
-        counter-increment: countClientes -46;
+        counter-increment: animationA -46;
     }
     53% {
         top: 0;
-        counter-increment: countClientes -41;
+        counter-increment: animationA -41;
     }
     55% {
         top: 0;
-        counter-increment: countClientes -38;
+        counter-increment: animationA -38;
     }
     57% {
         top: 0;
-        counter-increment: countClientes -36;
+        counter-increment: animationA -36;
     }
     60% {
         top: 0;
-        counter-increment: countClientes -34;
+        counter-increment: animationA -34;
     }
     63% {
         top: 0;
-        counter-increment: countClientes -29;
+        counter-increment: animationA -29;
     }
     65% {
         top: 0;
-        counter-increment: countClientes -27;
+        counter-increment: animationA -27;
     }
     67% {
         top: 0;
-        counter-increment: countClientes -24;
+        counter-increment: animationA -24;
     }
     70% {
         top: 0;
-        counter-increment: countClientes -22;
+        counter-increment: animationA -22;
     }
     73% {
         top: 0;
-        counter-increment: countClientes -18;
+        counter-increment: animationA -18;
     }
     75% {
         top: 0;
-        counter-increment: countClientes -15;
+        counter-increment: animationA -15;
     }
     77% {
         top: 0;
-        counter-increment: countClientes -12;
+        counter-increment: animationA -12;
     }
     80% {
         top: 0;
-        counter-increment: countClientes -10;
+        counter-increment: animationA -10;
     }
     83% {
         top: 0;
-        counter-increment: countClientes -8;
+        counter-increment: animationA -8;
     }
     85% {
         top: 0;
-        counter-increment: countClientes -7;
+        counter-increment: animationA -7;
     }
     87% {
         top: 0;
-        counter-increment: countClientes -6;
+        counter-increment: animationA -6;
     }
     90% {
         top: 0;
-        counter-increment: countClientes -5;
+        counter-increment: animationA -5;
     }
     93% {
         top: 0;
-        counter-increment: countClientes -4;
+        counter-increment: animationA -4;
     }
     95% {
         top: 0;
-        counter-increment: countClientes -3;
+        counter-increment: animationA -3;
     }
     97% {
         top: 0;
-        counter-increment: countClientes -2;
+        counter-increment: animationA -2;
     }
     100% {
         top: 0;
-        counter-increment: countClientes -1;
+        counter-increment: animationA -1;
     }
 }
 
 @keyframes animationA{
     0% {
         top: 0;
-        counter-increment: countClientes -99;
+        counter-increment: animationA -99;
     }
     10% {
         top: 0;
-        counter-increment: countClientes -92;
+        counter-increment: animationA -92;
     }
     20% {
         top: 0;
-        counter-increment: countClientes -82;
+        counter-increment: animationA -82;
     }
     30% {
         top: 0;
-        counter-increment: countClientes -70;
+        counter-increment: animationA -70;
     }
     40% {
         top: 0;
-        counter-increment: countClientes -58;
+        counter-increment: animationA -58;
     }
     50% {
         top: 0;
-        counter-increment: countClientes -46;
+        counter-increment: animationA -46;
     }
     60% {
         top: 0;
-        counter-increment: countClientes -34;
+        counter-increment: animationA -34;
     }
     70% {
         top: 0;
-        counter-increment: countClientes -22;
+        counter-increment: animationA -22;
     }
     80% {
         top: 0;
-        counter-increment: countClientes -10;
+        counter-increment: animationA -10;
     }
     90% {
         top: 0;
-        counter-increment: countClientes -5;
+        counter-increment: animationA -5;
     }
     100% {
         top: 0;
-        counter-increment: countClientes -1;
+        counter-increment: animationA -1;
     }
 }
 
 @keyframes animationA{
     0% {
         top: 0;
-        counter-increment: countClientes -99;
+        counter-increment: animationA -99;
     }
     20% {
         top: 0;
-        counter-increment: countClientes -82;
+        counter-increment: animationA -82;
     }
     40% {
         top: 0;
-        counter-increment: countClientes -58;
+        counter-increment: animationA -58;
     }
     60% {
         top: 0;
-        counter-increment: countClientes -34;
+        counter-increment: animationA -34;
     }
     80% {
         top: 0;
-        counter-increment: countClientes -10;
+        counter-increment: animationA -10;
     }
     100% {
         top: 0;
-        counter-increment: countClientes -1;
+        counter-increment: animationA -1;
     }
 }
 
 @keyframes animationA{
     0% {
         top: 0;
-        counter-increment: countClientes -99;
+        counter-increment: animationA -99;
     }
     25% {
         top: 0;
-        counter-increment: countClientes -58;
+        counter-increment: animationA -58;
     }
     50% {
         top: 0;
-        counter-increment: countClientes -34;
+        counter-increment: animationA -34;
     }
     75% {
         top: 0;
-        counter-increment: countClientes -10;
+        counter-increment: animationA -10;
     }
     100% {
         top: 0;
-        counter-increment: countClientes -1;
+        counter-increment: animationA -1;
     }
 }
 
 @keyframes animationA{
     0% {
         top: 0;
-        counter-increment: countClientes -99;
+        counter-increment: animationA -99;
     }
     50% {
         top: 0;
-        counter-increment: countClientes -34;
+        counter-increment: animationA -34;
     }
     100% {
         top: 0;
-        counter-increment: countClientes -1;
+        counter-increment: animationA -1;
     }
 }
 
 /* // Counter Animation ----------------------------------------------------- */
 /*
 .animation_counter_ani{
-    animation-name:;
-    animation-duration:;
-    nimation-timing-function:;
-    animation-delay:;
-    animation-iteration-count:;
-    animation-direction:;
-    animation-fill-mode:;
-    animation-play-state:;
+    animation-name: animationA;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); // cubic-bezier(0.33, 1, 0.68, 1)
+    animation-delay: $animationA_ani_delay; // Time before animation starts
+    animation-iteration-count: 1; // Options: 1, `infinite`, 1.5
+    animation-direction: normal; // `reverse`, `alternate`, `alternate-reverse`
+    animation-fill-mode: none; // `none`, `forwards`, `backwards`, `both`
+    animation-play-state: running; // `paused`
 
-    animation: countClientes 2s cubic-bezier(0.61, 1, 0.88, 1);
-    content: counter(countClientes);
-    counter-reset: countClientes 100;
+    content: counter(animationA);
+    counter-reset: animationA 100;
 }
 
-@keyframes countClientes{
+@keyframes animationA{
     0% {
-        counter-increment: countClientes -99;
+        counter-increment: animationA -99;
     }
     3% {
-        counter-increment: countClientes -98;
+        counter-increment: animationA -98;
     }
     5% {
-        counter-increment: countClientes -96;
+        counter-increment: animationA -96;
     }
     7% {
-        counter-increment: countClientes -94;
+        counter-increment: animationA -94;
     }
     10% {
-        counter-increment: countClientes -92;
+        counter-increment: animationA -92;
     }
     13% {
-        counter-increment: countClientes -90;
+        counter-increment: animationA -90;
     }
     15% {
-        counter-increment: countClientes -88;
+        counter-increment: animationA -88;
     }
     17% {
-        counter-increment: countClientes -86;
+        counter-increment: animationA -86;
     }
     20% {
-        counter-increment: countClientes -82;
+        counter-increment: animationA -82;
     }
     23% {
-        counter-increment: countClientes -78;
+        counter-increment: animationA -78;
     }
     25% {
-        counter-increment: countClientes -76;
+        counter-increment: animationA -76;
     }
     27% {
-        counter-increment: countClientes -72;
+        counter-increment: animationA -72;
     }
     30% {
-        counter-increment: countClientes -70;
+        counter-increment: animationA -70;
     }
     33% {
-        counter-increment: countClientes -66;
+        counter-increment: animationA -66;
     }
     35% {
-        counter-increment: countClientes -64;
+        counter-increment: animationA -64;
     }
     37% {
-        counter-increment: countClientes -62;
+        counter-increment: animationA -62;
     }
     40% {
-        counter-increment: countClientes -58;
+        counter-increment: animationA -58;
     }
     43% {
-        counter-increment: countClientes -55;
+        counter-increment: animationA -55;
     }
     45% {
-        counter-increment: countClientes -52;
+        counter-increment: animationA -52;
     }
     47% {
-        counter-increment: countClientes -50;
+        counter-increment: animationA -50;
     }
     50% {
-        counter-increment: countClientes -46;
+        counter-increment: animationA -46;
     }
     53% {
-        counter-increment: countClientes -41;
+        counter-increment: animationA -41;
     }
     55% {
-        counter-increment: countClientes -38;
+        counter-increment: animationA -38;
     }
     57% {
-        counter-increment: countClientes -36;
+        counter-increment: animationA -36;
     }
     60% {
-        counter-increment: countClientes -34;
+        counter-increment: animationA -34;
     }
     63% {
-        counter-increment: countClientes -29;
+        counter-increment: animationA -29;
     }
     65% {
-        counter-increment: countClientes -27;
+        counter-increment: animationA -27;
     }
     67% {
-        counter-increment: countClientes -24;
+        counter-increment: animationA -24;
     }
     70% {
-        counter-increment: countClientes -22;
+        counter-increment: animationA -22;
     }
     73% {
-        counter-increment: countClientes -18;
+        counter-increment: animationA -18;
     }
     75% {
-        counter-increment: countClientes -15;
+        counter-increment: animationA -15;
     }
     77% {
-        counter-increment: countClientes -12;
+        counter-increment: animationA -12;
     }
     80% {
-        counter-increment: countClientes -10;
+        counter-increment: animationA -10;
     }
     83% {
-        counter-increment: countClientes -8;
+        counter-increment: animationA -8;
     }
     85% {
-        counter-increment: countClientes -7;
+        counter-increment: animationA -7;
     }
     87% {
-        counter-increment: countClientes -6;
+        counter-increment: animationA -6;
     }
     90% {
-        counter-increment: countClientes -5;
+        counter-increment: animationA -5;
     }
     93% {
-        counter-increment: countClientes -4;
+        counter-increment: animationA -4;
     }
     95% {
-        counter-increment: countClientes -3;
+        counter-increment: animationA -3;
     }
     97% {
-        counter-increment: countClientes -2;
+        counter-increment: animationA -2;
     }
     100% {
-        counter-increment: countClientes -1;
+        counter-increment: animationA -1;
     }
 }
 */
