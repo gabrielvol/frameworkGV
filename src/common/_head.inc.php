@@ -14,7 +14,7 @@
 <!-- Google No Translate -->
 <meta name="google" content="notranslate">
 
-<!-- Safari tel-->
+<!-- Safari tel -->
 <meta name="format-detection" content="telephone=no">
 
 <title><?php echo $site_title; ?></title>
@@ -22,6 +22,11 @@
 
 <meta name="description" content="<?php echo $site_desc; ?>">
 <meta name="description" content="<?php if($gettext_idioma == 'en_GB'){ echo $site_desc_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_desc_PT; } else { echo $site_desc; } ?>">
+
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
 <link href="<?php echo $url_dir; ?>/css/uikit.min.css" rel="stylesheet">
 <link href="<?php echo $url_dir; ?>/css/styles.css" rel="stylesheet">
