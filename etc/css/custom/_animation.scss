@@ -49,7 +49,7 @@
     animation-name: animationA;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); // cubic-bezier(0.33, 1, 0.68, 1)
-    animation-delay: $animationA_ani_delay; // Time before animation starts
+    //animation-delay: $animationA_ani_delay; // Time before animation starts
     animation-iteration-count: 1; // Options: 1, `infinite`, 1.5
     animation-direction: normal; // `reverse`, `alternate`, `alternate-reverse`
     animation-fill-mode: forwards; // `none`, `forwards`, `backwards`, `both`
