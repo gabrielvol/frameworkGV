@@ -44,13 +44,6 @@
 
 
 
-/* // Animation order/timing ------------------------------------------------ */
-$animationA_ani_delay:      0.5s;
-$animationB_ani_delay:      2s;
-$animationC_ani_delay:      6s;
-
-
-
 /* // Animation A ----------------------------------------------------------- */
 .animationA_ani{
     animation-name: animationA;
@@ -61,6 +54,129 @@ $animationC_ani_delay:      6s;
     animation-direction: normal; // `reverse`, `alternate`, `alternate-reverse`
     animation-fill-mode: forwards; // `none`, `forwards`, `backwards`, `both`
     animation-play-state: running; // `paused`
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    50% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    25% {
+        top: 0;
+        counter-increment: animationA -58;
+    }
+    50% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    75% {
+        top: 0;
+        counter-increment: animationA -10;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    20% {
+        top: 0;
+        counter-increment: animationA -82;
+    }
+    40% {
+        top: 0;
+        counter-increment: animationA -58;
+    }
+    60% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    80% {
+        top: 0;
+        counter-increment: animationA -10;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    10% {
+        top: 0;
+        counter-increment: animationA -92;
+    }
+    20% {
+        top: 0;
+        counter-increment: animationA -82;
+    }
+    30% {
+        top: 0;
+        counter-increment: animationA -70;
+    }
+    40% {
+        top: 0;
+        counter-increment: animationA -58;
+    }
+    50% {
+        top: 0;
+        counter-increment: animationA -46;
+    }
+    60% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    70% {
+        top: 0;
+        counter-increment: animationA -22;
+    }
+    80% {
+        top: 0;
+        counter-increment: animationA -10;
+    }
+    90% {
+        top: 0;
+        counter-increment: animationA -5;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
 }
 
 @keyframes animationA{
@@ -230,6 +346,96 @@ $animationC_ani_delay:      6s;
     }
 }
 
+
+
+/*
+.animationA_ani{
+    animation-name: animationA;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); // cubic-bezier(0.33, 1, 0.68, 1)
+    animation-delay: $animationA_ani_delay; // Time before animation starts
+    animation-iteration-count: 1; // Options: 1, `infinite`, 1.5
+    animation-direction: normal; // `reverse`, `alternate`, `alternate-reverse`
+    animation-fill-mode: forwards; // `none`, `forwards`, `backwards`, `both`
+    animation-play-state: running; // `paused`
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    50% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    25% {
+        top: 0;
+        counter-increment: animationA -58;
+    }
+    50% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    75% {
+        top: 0;
+        counter-increment: animationA -10;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
+@keyframes animationA{
+    0% {
+        top: 0;
+        counter-increment: animationA -99;
+    }
+    20% {
+        top: 0;
+        counter-increment: animationA -82;
+    }
+    40% {
+        top: 0;
+        counter-increment: animationA -58;
+    }
+    60% {
+        top: 0;
+        counter-increment: animationA -34;
+    }
+    80% {
+        top: 0;
+        counter-increment: animationA -10;
+    }
+    100% {
+        top: 0;
+        counter-increment: animationA -1;
+    }
+}
+
 @keyframes animationA{
     0% {
         top: 0;
@@ -282,65 +488,168 @@ $animationC_ani_delay:      6s;
         top: 0;
         counter-increment: animationA -99;
     }
+    3% {
+        top: 0;
+        counter-increment: animationA -98;
+    }
+    5% {
+        top: 0;
+        counter-increment: animationA -96;
+    }
+    7% {
+        top: 0;
+        counter-increment: animationA -94;
+    }
+    10% {
+        top: 0;
+        counter-increment: animationA -92;
+    }
+    13% {
+        top: 0;
+        counter-increment: animationA -90;
+    }
+    15% {
+        top: 0;
+        counter-increment: animationA -88;
+    }
+    17% {
+        top: 0;
+        counter-increment: animationA -86;
+    }
     20% {
         top: 0;
         counter-increment: animationA -82;
+    }
+    23% {
+        top: 0;
+        counter-increment: animationA -78;
+    }
+    25% {
+        top: 0;
+        counter-increment: animationA -76;
+    }
+    27% {
+        top: 0;
+        counter-increment: animationA -72;
+    }
+    30% {
+        top: 0;
+        counter-increment: animationA -70;
+    }
+    33% {
+        top: 0;
+        counter-increment: animationA -66;
+    }
+    35% {
+        top: 0;
+        counter-increment: animationA -64;
+    }
+    37% {
+        top: 0;
+        counter-increment: animationA -62;
     }
     40% {
         top: 0;
         counter-increment: animationA -58;
     }
+    43% {
+        top: 0;
+        counter-increment: animationA -55;
+    }
+    45% {
+        top: 0;
+        counter-increment: animationA -52;
+    }
+    47% {
+        top: 0;
+        counter-increment: animationA -50;
+    }
+    50% {
+        top: 0;
+        counter-increment: animationA -46;
+    }
+    53% {
+        top: 0;
+        counter-increment: animationA -41;
+    }
+    55% {
+        top: 0;
+        counter-increment: animationA -38;
+    }
+    57% {
+        top: 0;
+        counter-increment: animationA -36;
+    }
     60% {
         top: 0;
         counter-increment: animationA -34;
+    }
+    63% {
+        top: 0;
+        counter-increment: animationA -29;
+    }
+    65% {
+        top: 0;
+        counter-increment: animationA -27;
+    }
+    67% {
+        top: 0;
+        counter-increment: animationA -24;
+    }
+    70% {
+        top: 0;
+        counter-increment: animationA -22;
+    }
+    73% {
+        top: 0;
+        counter-increment: animationA -18;
+    }
+    75% {
+        top: 0;
+        counter-increment: animationA -15;
+    }
+    77% {
+        top: 0;
+        counter-increment: animationA -12;
     }
     80% {
         top: 0;
         counter-increment: animationA -10;
     }
-    100% {
+    83% {
         top: 0;
-        counter-increment: animationA -1;
+        counter-increment: animationA -8;
     }
-}
-
-@keyframes animationA{
-    0% {
+    85% {
         top: 0;
-        counter-increment: animationA -99;
+        counter-increment: animationA -7;
     }
-    25% {
+    87% {
         top: 0;
-        counter-increment: animationA -58;
+        counter-increment: animationA -6;
     }
-    50% {
+    90% {
         top: 0;
-        counter-increment: animationA -34;
+        counter-increment: animationA -5;
     }
-    75% {
+    93% {
         top: 0;
-        counter-increment: animationA -10;
+        counter-increment: animationA -4;
     }
-    100% {
+    95% {
         top: 0;
-        counter-increment: animationA -1;
+        counter-increment: animationA -3;
     }
-}
-
-@keyframes animationA{
-    0% {
+    97% {
         top: 0;
-        counter-increment: animationA -99;
-    }
-    50% {
-        top: 0;
-        counter-increment: animationA -34;
+        counter-increment: animationA -2;
     }
     100% {
         top: 0;
         counter-increment: animationA -1;
     }
 }
+*/
 
 /* // Counter Animation ----------------------------------------------------- */
 /*
