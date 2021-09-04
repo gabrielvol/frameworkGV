@@ -5,7 +5,7 @@
 @import "act/classes_useful_act";
 @import "act/logo_act";
 @import "act/buttons_act";
-@import "act/forms_act";
+@import "act/form_act";
 @import "act/slider_act";
 @import "act/fonts_act";
 @import "act/text_act";
@@ -54,9 +54,9 @@
 
 @import "var/section_footer_var";
 
-@import "var/forms_colours_var";
-@import "var/forms_fonts_var";
-@import "var/forms_sizes_var";
+@import "var/form_colours_var";
+@import "var/form_fonts_var";
+@import "var/form_sizes_var";
 
 @import "var/tables_var";
 @import "var/tables_colours_var";
@@ -141,9 +141,9 @@
 //@import "../scss/settings_forms";
 //@import "forms";
 
-//@import "../scss/reset_forms_niceIt";
-//@import "forms_niceIt";
-//@import "forms_search";
+//@import "../scss/reset_form_niceIt";
+//@import "form_niceIt";
+//@import "form_search";
 
 //@import "../scss/settings_tables";
 //@import "tables";
