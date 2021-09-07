@@ -45,7 +45,7 @@
 
 
 #footer{
-    @if $page_index_fullHeight_act_ALL == "on" or $page_int_fullHeight_act_ALL == "on"{
+    @if $page_index_fullHeight_act_ALL == "on" or $page_section_fullHeight_act_ALL == "on"{
         height: $footer_height_ALL;
     }
     
@@ -56,55 +56,55 @@
     }
     
     @include mobileOnly{
-        @if $page_index_fullHeight_act_MO == "on" or $page_int_fullHeight_act_MO == "on"{
+        @if $page_index_fullHeight_act_MO == "on" or $page_section_fullHeight_act_MO == "on"{
             height: $footer_height_MO;
         }
     }
     
     @include afterMobileLandscape{
-        @if $page_index_fullHeight_act_MLO == "on" or $page_int_fullHeight_act_MLO == "on"{
+        @if $page_index_fullHeight_act_MLO == "on" or $page_section_fullHeight_act_MLO == "on"{
             height: $footer_height_MLO;
         }
     }
     
     @include mobileLandscapeOnly{
-        @if $page_index_fullHeight_act_AML == "on" or $page_int_fullHeight_act_AML == "on"{
+        @if $page_index_fullHeight_act_AML == "on" or $page_section_fullHeight_act_AML == "on"{
             height: $footer_height_AML;
         }
     }
     
     @include beforeTablet{
-        @if $page_index_fullHeight_act_BT == "on" or $page_int_fullHeight_act_BT == "on"{
+        @if $page_index_fullHeight_act_BT == "on" or $page_section_fullHeight_act_BT == "on"{
             height: $footer_height_BT;
         }
     }
     
     @include afterTablet{
-        @if $page_index_fullHeight_act_AT == "on" or $page_int_fullHeight_act_AT == "on"{
+        @if $page_index_fullHeight_act_AT == "on" or $page_section_fullHeight_act_AT == "on"{
             height: $footer_height_AT;
         }
     }
     
     @include tabletOnly{
-        @if $page_index_fullHeight_act_TO == "on" or $page_int_fullHeight_act_TO == "on"{
+        @if $page_index_fullHeight_act_TO == "on" or $page_section_fullHeight_act_TO == "on"{
             height: $footer_height_TO;
         }
     }
     
     @include beforeTabletLandscape{
-        @if $page_index_fullHeight_act_BTL == "on" or $page_int_fullHeight_act_ATL == "on"{
+        @if $page_index_fullHeight_act_BTL == "on" or $page_section_fullHeight_act_ATL == "on"{
             height: $footer_height_ATL;
         }
     }
     
     @include afterTabletLandscape{
-        @if $page_index_fullHeight_act_ATL == "on" or $page_int_fullHeight_act_ATL == "on"{
+        @if $page_index_fullHeight_act_ATL == "on" or $page_section_fullHeight_act_ATL == "on"{
             height: $footer_height_ATL;
         }
     }
     
     @include afterDesktop{
-        @if $page_index_fullHeight_act_AD == "on" or $page_int_fullHeight_act_AD == "on"{
+        @if $page_index_fullHeight_act_AD == "on" or $page_section_fullHeight_act_AD == "on"{
             height: $footer_height_AD;
         }       
     }

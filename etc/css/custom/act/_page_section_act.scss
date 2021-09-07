@@ -1,9 +1,9 @@
 /* * NombreDeProyecto * ========================================================
-   Page Internal Activators | Custom [/etc/css/custom/act/page_int_act.scss]
+   Page section Activators | Custom [/etc/css/custom/act/page_section_act.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de variables activadoras.
+// Archivo de variables activadoras para el selector `#main section`.
 
 
 /* // Listado --------------------------------------------------------------- */
@@ -60,16 +60,16 @@
 
 
     
-/* // 01 Page int Full height ----------------------------------------------- */
-$page_int_fullHeight_act_ALL:  off;
-$page_int_fullHeight_act_MO:   off;
-$page_int_fullHeight_act_AML:  off;
-$page_int_fullHeight_act_MLO:  off;
-$page_int_fullHeight_act_BT:   off;
-$page_int_fullHeight_act_AT:   off;
-$page_int_fullHeight_act_TO:   off;
-$page_int_fullHeight_act_BTL:  off;
-$page_int_fullHeight_act_ATL:  off;
-$page_int_fullHeight_act_TLO:  off; 
-$page_int_fullHeight_act_BD:   off; 
-$page_int_fullHeight_act_AD:   off; 
+/* // 01 Page section Full height ------------------------------------------- */
+$page_section_fullHeight_act_ALL:  off;
+$page_section_fullHeight_act_MO:   off;
+$page_section_fullHeight_act_AML:  off;
+$page_section_fullHeight_act_MLO:  off;
+$page_section_fullHeight_act_BT:   off;
+$page_section_fullHeight_act_AT:   off;
+$page_section_fullHeight_act_TO:   off;
+$page_section_fullHeight_act_BTL:  off;
+$page_section_fullHeight_act_ATL:  off;
+$page_section_fullHeight_act_TLO:  off; 
+$page_section_fullHeight_act_BD:   off; 
+$page_section_fullHeight_act_AD:   off; 
