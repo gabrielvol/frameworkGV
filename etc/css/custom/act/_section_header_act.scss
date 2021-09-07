@@ -73,6 +73,7 @@
 //
 //
 // 03 _ Header Fixed
+// REF [08]
 // Activa los if que se encuentran en
 // `[/etc/css/custom/imp/page_headerFixed_imp.scss]` y
 // `[/etc/css/custom/imp/section_header_headerFixed_imp.scss]`.
@@ -139,7 +140,7 @@ $header_logoNav_floated_act:            off;
 $header_logoNav_floated_flexbox_act:    off;
     
     
-/* // Header ---------------------------------------------------------------- */
+/* // Header // REF [08] ---------------------------------------------------- */
 $header_fixed_act_ALL:      off;
 $header_fixed_act_MO:       off;
 $header_fixed_act_AML:      off;
