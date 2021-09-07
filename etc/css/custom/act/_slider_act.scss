@@ -13,33 +13,46 @@
 // 01 _ Slider Arrows
 // 02 _ Slider Arrows Carrusel
 // 03 _ Slider Dots
+// 04 _ Slider Vertical
 //
 //
 // 01 _ Slider Arrows
-// Activa los if que se encuentran en `[/etc/css/custom/_slider_arrows_imp.scss]`.
+// Activa el if que se encuentran en `[/etc/css/custom/slider_arrows_imp.scss]`.
 //
 // Imprime:
 //       
 // .slickPrev{}       
 // .slickNext{}
 //
+//
 // 02 _ Slider Arrows Carrusel
-// Activa los if que se encuentran en `[/etc/css/custom/_slider_arrows_imp.scss]`.
+// Activa los if que se encuentran en 
+// `[/etc/css/custom/slider.scss]`, y
+// `[/etc/css/custom/slider_arrows_imp.scss]`.
 //
 // Imprime:
 //       
+// .slick.slick_carousel{}
+// .slick.slick_carousel .slick-list{}
+//
 // .slick_carousel .slickPrev{}       
 // .slick_carousel .slickNext{}
 //
 //
 // 03 _ Slider Dots
-// Activa los if que se encuentran en `[/etc/css/custom/_slider_arrows_imp.scss]`.
+// Activa el if que se encuentran en `[/etc/css/custom/imp/slider_dots_imp.scss]`.
 //
 // Imprime:
 //
 // .slickDots{}
 // .slickDots li{} 
-// .slickDots li button{}      
+// .slickDots li.slickActive{} 
+// .slickDots li button{}   
+//
+//
+// 04 _ Slider Vertical 
+// REF [09]
+// Activa el if que se encuentran en `[/etc/css/custom/slider.scss]`.  
 
 
 
@@ -80,6 +93,12 @@
 
 
 
-$slider_arrows_act:              off;
-$slider_arrows_carousel_act:     off; //Si este es ON, $slider_arrows_act tambien debe ser ON
-$slider_dots_act:                off;
+/* // Arrows ---------------------------------------------------------------- */
+$slider_arrows_act:             off;
+$slider_arrows_carousel_act:    off; //Si este es ON, $slider_arrows_act tambien debe ser ON
+
+/* // Dots / Pagination ----------------------------------------------------- */
+$slider_dots_act:               off;
+
+/* // Slider vertical ------------------------------------------------------- */
+$slider_vertical_act:           off; // REF [09]

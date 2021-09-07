@@ -5,6 +5,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 // Imported in `[/etc/css/custom/_slider.scss]`
+// REF [09]
 
 
 
@@ -44,6 +45,7 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
 @if $slider_arrows_act == "on"{
     .slickPrev{
         left: 2%;
@@ -69,6 +71,17 @@
         border: $none;
         padding: $zero;
         text-indent: -9999px;
+    }
+    
+    /* // REF [09] */
+    .slick_carousel.slick_vertical{        
+        .slickPrev{
+            background-image: url('#{$url_dir}/img/button_carrusel_down.svg');
+        }
+
+        .slickNext{
+            background-image: url('#{$url_dir}/img/button_carrusel_up.svg');
+        }
     }
     
     @include beforeTablet{
