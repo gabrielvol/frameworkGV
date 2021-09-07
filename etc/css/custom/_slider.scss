@@ -21,7 +21,7 @@
         float: left;
     }
     
-    @if $slider_arrows_carousel_act == "on" and $slider_vertical_act == "off"{
+    @if $slider_arrows_carousel_act == "on"{
         &.slick_carousel{
             position: relative;
             background-color: $slider_carousel_bgColour;
@@ -49,7 +49,22 @@
     }
     
     @if $slider_vertical_act == "on"{
-        &.slick_vertical{}
+        &.slick_vertical{        
+            @include beforeTablet{
+                padding-right: $zero;
+                padding-left: $zero;
+            }
+        
+            @include afterTablet{
+                padding-right: $zero;
+                padding-left: $zero;
+            }
+        
+            @include afterTabletLandscape{
+                padding-right: $zero;
+                padding-left: $zero;
+            }
+        }
     }
 }
 
