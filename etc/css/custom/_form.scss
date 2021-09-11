@@ -168,8 +168,13 @@ form{
         }
     }
     
-/* // Form input placeholders ----------------------------------------------- */
+/* // Form input placeholders // REF [10] ----------------------------------- */
 /*
+    input::-moz-placeholder,
+    textarea::-moz-placeholder{
+      opacity: 1;
+    }
+
     input::input-placeholder,
     textarea::input-placeholder{
         color: $form_placeholder_ftColour;
@@ -190,30 +195,26 @@ form{
     textarea:-moz-placeholder{
         color: $form_placeholder_ftColour;
     }
-    input::-moz-placeholder,
-    textarea::-moz-placeholder{
-      opacity: 1;
-    }
 
     input:focus::input-placeholder,
     textarea:focus::input-placeholder{
-        color: $ftColour_main_global;
+        color: $form_placeholder_ftColour_hover;
     }
     input:focus::-webkit-input-placeholder,
     textarea:focus::-webkit-input-placeholder{
-        color: $ftColour_main_global;
+        color: $form_placeholder_ftColour_hover;
     }
     input:focus::-moz-placeholder,
     textarea:focus::-moz-placeholder{
-        color: $ftColour_main_global;
+        color: $form_placeholder_ftColour_hover;
     }
     input:focus:-ms-input-placeholder,
     textarea:focus:-ms-input-placeholder{
-        color: $ftColour_main_global;
+        color: $form_placeholder_ftColour_hover;
     }
-    input:-moz-placeholder,
+    input:focus:-moz-placeholder,
     textarea:-moz-placeholder{
-        color: $ftColour_main_global;
+        color: $form_placeholder_ftColour_hover;
     }
 */    
 
