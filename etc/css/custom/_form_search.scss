@@ -4,27 +4,38 @@
 //form.searchForm
 .searchForm{
     position: relative;
-    width: $form_input_search_width_BT;
     
     input{
-        height: $form_input_search_height_BT;
-
         &[type="search"]{
-            width: $form_input_search_width_BT;
             border: $none;
-            padding-right: calc(#{$form_input_search_bgSize_BT} + 15px)!important;
-            line-height: $form_input_search_lineHeight_BT;
         }
         
 /* // Form Submit  ---------------------------------------------------------- */
         &[type="submit"]{
             @include opacityCustomHover;
-            @include bgSvg(form_searchSubmitBT, $form_input_search_bgSize_BT, center);
             position: absolute;
             top: 0;
             right: 0;
-            width: $button_form_submit_search_width_BT;
             border: $none;
+        }
+    }
+    
+    @include beforeTablet{
+        width: $form_input_search_width_BT;
+    
+        input{
+            height: $form_input_search_height_BT;
+
+            &[type="search"]{
+                width: $form_input_search_width_BT;
+                padding-right: calc(#{$form_input_search_bgSize_BT} + 15px)!important;
+                line-height: $form_input_search_lineHeight_BT;
+            }
+            
+            &[type="submit"]{
+                @include bgSvg(form_search_submit_BT, $form_input_search_bgSize_BT, center);
+                width: $button_form_submit_search_width_BT;
+            }
         }
     }
     
@@ -40,7 +51,7 @@
             }
             
             &[type="submit"]{
-                @include bgSvg(form_searchSubmitAT, $form_input_search_bgSize_AT, center);
+                @include bgSvg(form_search_submit_AT, $form_input_search_bgSize_AT, center);
                 width: $button_form_submit_search_width_AT;
             }            
         }
