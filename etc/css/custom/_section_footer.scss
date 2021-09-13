@@ -3,19 +3,7 @@
    ========================================================================== */
 @import 'imp/section_footer_fullHeight_imp';
 
-#footer{
-/* // Button Site Top ------------------------------------------------------- */
-    .button_siteTop{
-        @include squareSize(50px);
-        z-index: $zIndex_button_goToTop;
-        top: 10px;
-        right: 10px;
-        background-image: url('#{$url_dir}/img/button_siteTop.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-/* -------------------------------------------------------------------------- */
-    
+#footer{    
     .nav_footer{
         position: relative;
         
