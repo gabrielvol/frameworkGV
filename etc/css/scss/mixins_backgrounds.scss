@@ -2,11 +2,11 @@
    Background Mixins | Etc [/etc/css/scss/mixinsBackgrounds.scss]
    ========================================================================== */
 @mixin sprites($spritesMX_bgPosition, $spritesMX_bgColour: transparent){
-    background: $spritesMX_bgColour url('#{$url_dir}/img/sprites.png') no-repeat $spritesMX_bgPosition;}
+    background: $spritesMX_bgColour url('#{$url_entorno}/img/sprites.png') no-repeat $spritesMX_bgPosition;}
 
 @mixin bgSvg($bgSvgMX_fileName, $bgSvgMX_bgSize: contain, $bgSvgMX_bgPosition: center center, $bgSvgMX_bgColour: transparent, $bgSvgMX_bgRepeat: no-repeat){
     background-color:       $bgSvgMX_bgColour;
-    background-image:       url('#{$url_dir}/img/#{$bgSvgMX_fileName}.svg');
+    background-image:       url('#{$url_entorno}/img/#{$bgSvgMX_fileName}.svg');
     background-repeat:      $bgSvgMX_bgRepeat;
     background-position:    $bgSvgMX_bgPosition;
     background-size:        $bgSvgMX_bgSize;

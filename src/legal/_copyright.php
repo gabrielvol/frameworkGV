@@ -1,6 +1,6 @@
 <?php
-    $url_dir = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
+    $url_entorno = '/nuevo';
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
     
     $page_int        = 1;
     $page_copyright  = 1;
@@ -13,14 +13,14 @@
     $site_desc       = $site_desc_global;
 //  $site_desc_GB    = $site_desc_global_GB;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.languageCheck.inc.php');   
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/gettext.locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__gettext.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/gettext.languageCheck.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/gettext.locale.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__gettext.var.inc.php');
 ?>
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/header.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
     <div id="main" class="page_int page_copyright bgWhite" role="main">
         <section class="container">
             <h1 class="black alignCenter">Licencia</h1>
@@ -41,6 +41,6 @@
             </ul>
         </section>
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
 </body>
 </html>

@@ -183,7 +183,7 @@ button{
     display: block;
     border-radius: 50%;
     background-color: rgba(60, 209, 52, 0.85);
-    background-image: url('#{$url_dir}/img/button_whatsapp.svg');
+    background-image: url('#{$url_entorno}/img/button_whatsapp.svg');
     background-repeat: no-repeat;
     background-size: calc(#{$button_whatsapp_size} - 10px);
     background-position: center center;
@@ -247,7 +247,7 @@ button{
     z-index: $zIndex_button_goToTop;
     top: 10px;
     right: 10px;
-    background-image: url('#{$url_dir}/img/button_siteTop.svg');
+    background-image: url('#{$url_entorno}/img/button_siteTop.svg');
     background-repeat: no-repeat;
     background-position: center;
     text-indent: -9999px;

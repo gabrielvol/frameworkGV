@@ -1,10 +1,10 @@
 <footer id="footer" class="<?php if(isset($page_index)){ echo ' footer_index'; } ?>">        
     <a href="#site_top" class="button_siteTop" role="button" aria-pressed="false"><?php echo _("Subir al inicio"); ?></a>  
         
-    <img src="<?php echo $url_dir; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
+    <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
     
     <div class="logo_footer_container">
-        <img src="<?php echo $url_dir; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
+        <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
     </div>
     <div class="footer_txt">
         <p class="footer_address">

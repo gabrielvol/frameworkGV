@@ -2,7 +2,7 @@
    Lightbox Settings | Etc [/etc/css/scss/settings_lightbox.scss]
    ========================================================================== */
 body::after{
-    content: url('#{$url_dir}/img/lightbox_close.png') url('#{$url_dir}/img/lightbox_loading.gif') url('#{$url_dir}/img/lightbox_prev.png') url('#{$url_dir}/img/lightbox_next.png');
+    content: url('#{$url_entorno}/img/lightbox_close.png') url('#{$url_entorno}/img/lightbox_loading.gif') url('#{$url_entorno}/img/lightbox_prev.png') url('#{$url_entorno}/img/lightbox_next.png');
     display: none;
 }
 .lightboxOverlay{
@@ -63,7 +63,7 @@ body::after{
     @include squareSize(32px);
     display: block;
     margin: 0 auto;
-    background-image: url('#{$url_dir}/img/lightbox_loading.gif');
+    background-image: url('#{$url_entorno}/img/lightbox_loading.gif');
     background-repeat: no-repeat;
 }
 .lb-nav{
@@ -92,13 +92,13 @@ body::after{
             width: 34%;
             left: 0;
             float: left;
-            background: url('#{$url_dir}/img/lightbox_prev.png') left 48% no-repeat;
+            background: url('#{$url_entorno}/img/lightbox_prev.png') left 48% no-repeat;
         }
         &.lb-next{
             width: 64%;
             right: 0;
             float: right;
-            background: url('#{$url_dir}/img/lightbox_next.png') right 48% no-repeat; 
+            background: url('#{$url_entorno}/img/lightbox_next.png') right 48% no-repeat; 
         }
     }
 }
@@ -143,7 +143,7 @@ body::after{
         @include transition(0.2s);
         display: block;
         float: right;
-        background: url('#{$url_dir}/img/lightbox_close.png') top right no-repeat;
+        background: url('#{$url_entorno}/img/lightbox_close.png') top right no-repeat;
         text-align: right;
         outline: none;
 

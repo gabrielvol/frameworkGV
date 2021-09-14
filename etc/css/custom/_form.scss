@@ -131,7 +131,7 @@ form{
         &.telefono{}
 
         &.fecha{
-            background-image: url('#{$url_dir}/img/form_calendar.svg');
+            background-image: url('#{$url_entorno}/img/form_calendar.svg');
             background-repeat: no-repeat;
             background-position: right center;
             background-size: 28px;
@@ -221,7 +221,7 @@ form{
 /* // Form invalid field ---------------------------------------------------- */
     input, select, textarea{        
         &.invalidField{
-            background-image: url('#{$url_dir}/img/form_alert.svg');
+            background-image: url('#{$url_entorno}/img/form_alert.svg');
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: auto 55%;
@@ -238,7 +238,7 @@ form{
         &.invalidField{        
             &,
             legend{
-                background-image: url('#{$url_dir}/img/form_alert.svg');
+                background-image: url('#{$url_entorno}/img/form_alert.svg');
                 background-repeat: no-repeat;
                 background-position: right 10px center;
                 background-size: auto 55%;            

@@ -1,7 +1,7 @@
 <?php
-    $url_dir = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/gettext/languageCheck.inc.php');    
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
+    $url_entorno = '/nuevo';
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
     
     $page_int               = 1;
     $page_url_full          = $url_contacto_full;
@@ -28,21 +28,21 @@
     $openGraph_url_img_height   = $openGraph_img_sq_height;
     $openGraph_siteName         = $openGraph_siteName_global;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/gettext.locale.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext.locale.inc.php');
 ?>
-<link href="<?php echo $url_dir; ?>/_source/css/datepicker.css" rel="stylesheet">
-<script src="<?php echo $url_dir; ?>/_source/js/jquery-ui-datepicker.js"></script>
+<link href="<?php echo $url_entorno; ?>/_source/css/datepicker.css" rel="stylesheet">
+<script src="<?php echo $url_entorno; ?>/_source/js/jquery-ui-datepicker.js"></script>
 </head>
 <body>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/header.inc.php'); ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
 	<div id="main" class="page_int page_contacto" role="main">            
             <div class="mobileForm tabletForm">
                 <form method="post" class="mha" id="formID">
                     <?php
                         $data_fullURL__formMain = $page_url_full;
                     
-                        include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/form.send.inc.php');
+                        include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/form.send.inc.php');
                         echo $form_status_msg__formMain;
 
                         if($has_mandatoryMsg == 1) {
@@ -197,6 +197,6 @@
                 </form>                
             </div>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/footer.inc.php'); ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
 </body>
 </html>

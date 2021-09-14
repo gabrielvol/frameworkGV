@@ -1,7 +1,7 @@
 <?php
-    $url_dir = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/gettext/languageCheck.inc.php');    
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/var/__main.var.inc.php');
+    $url_entorno = '/nuevo';
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
     
     $page_int               = 1;
     $page_url_full          = $url_PAGEINT_full;
@@ -30,14 +30,14 @@
     $openGraph_url_img_height   = $openGraph_img_sq_height;
     $openGraph_siteName         = $openGraph_siteName_global;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/gettext.locale.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext.locale.inc.php');
 ?>
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/header.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
     <div id="main" class="page_int page-aaaaa" role="main">
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_dir .'/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
 </body>
 </html>

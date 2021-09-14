@@ -28,23 +28,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
-<link href="<?php echo $url_dir; ?>/css/uikit.min.css" rel="stylesheet">
-<link href="<?php echo $url_dir; ?>/css/styles.css" rel="stylesheet">
+<link href="<?php echo $url_entorno; ?>/css/uikit.min.css" rel="stylesheet">
+<link href="<?php echo $url_entorno; ?>/css/styles.css" rel="stylesheet">
 <link rel="author" href="humans.txt">
 
 <link rel="canonical" href="<?php echo $url_global; ?>" />
 
 <!-- Copyright -->
-<link rel="license" href="<?php echo $url_dir; ?>/legal/copyright.php">
+<link rel="license" href="<?php echo $url_entorno; ?>/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_AR" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=es_UY" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=en_GB" hreflang="en">
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=de_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=fr_FR" hreflang="fr">
-<link rel="alternate" href="<?php echo $url_global . $url_dir; ?>/?l=pt_BR" hreflang="pt">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=es_UY" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=fr_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Información personal -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
@@ -103,11 +103,11 @@
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_global . $url_dir; ?>/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="<?php echo $url_global . $url_dir; ?>/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="<?php echo $url_global . $url_dir; ?>/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="<?php echo $url_global . $url_dir; ?>/manifest.json">
-<link rel="mask-icon" href="<?php echo $url_global . $url_dir; ?>/safari-pinned-tab.svg" color="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_global . $url_entorno; ?>/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php echo $url_global . $url_entorno; ?>/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php echo $url_global . $url_entorno; ?>/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php echo $url_global . $url_entorno; ?>/manifest.json">
+<link rel="mask-icon" href="<?php echo $url_global . $url_entorno; ?>/safari-pinned-tab.svg" color="#000">
 <meta name="msapplication-TileColor" content="#000">
 <meta name="theme-color" content="#ffffff">
 
@@ -132,12 +132,12 @@
 <meta property="al:web:url" content="http://applinks.org/documentation">
 
 <!-- jQuery, Modernizr, HTML5shiv -->
-<script src="<?php echo $url_dir; ?>/js/jQuery3.2.1.min.js"></script>
-<script src="<?php echo $url_dir; ?>/js/modernizr2.8.3.js"></script>
-<script src="<?php echo $url_dir; ?>/js/html5shiv.min.js"></script>
+<script src="<?php echo $url_entorno; ?>/js/jQuery3.2.1.min.js"></script>
+<script src="<?php echo $url_entorno; ?>/js/modernizr2.8.3.js"></script>
+<script src="<?php echo $url_entorno; ?>/js/html5shiv.min.js"></script>
 
 <!-- Custom js -->
-<script src="<?php echo $url_dir; ?>/js/uikit.min.js"></script>
+<script src="<?php echo $url_entorno; ?>/js/uikit.min.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
