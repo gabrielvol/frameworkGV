@@ -63,8 +63,7 @@ $colours_light_map:(
     greyL:          #c6c6c6,
     grey:           #818181,
     
-    errorColour:    #eb1c24,
-    focusColour:    #c6c6c6
+    errorColour:    #eb1c24
 );
 $colours_light_lightenValue: 20%;
 
@@ -115,7 +114,6 @@ $black_rgba_80:     rgba(0, 0, 0, 0.8);
 $black_rgba_90:     rgba(0, 0, 0, 0.9);
 
 $errorColour:       map-get($colours_merged_map, errorColour);
-$focusColour:       map-get($colours_merged_map, focusColour);
 
 //$greenSystem3XL:    map-get($colours_merged_map, greenSystem3XL);
 //$greenSystem2XL:    map-get($colours_merged_map, greenSystem2XL);

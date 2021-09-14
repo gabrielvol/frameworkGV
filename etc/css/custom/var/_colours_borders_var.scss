@@ -68,11 +68,11 @@ $colours_borders_map:(
 //  grey3XD:        $grey3XD,
     
     error:          $errorColour,
-    focus:          $focusColour
+    outline:        #c6c6c6
 );
  
 $bdError:           map-get($colours_borders_map, error);
-$bdFocus:           map-get($colours_borders_map, focus);
+$bdOutline:         map-get($colours_borders_map, outline);
 
 $bdWhite:           map-get($colours_borders_map, white);
 $bdBlack:           map-get($colours_borders_map, black);
