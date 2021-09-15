@@ -34,6 +34,7 @@ nav{
    
     @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         @if $hamburger_only_act == "on"{
+            // REF [11]
             position: absolute;
     } @else{
             position: fixed; 
@@ -48,9 +49,7 @@ nav{
             z-index: $zIndex_nav_open;
             display: $block;  
             opacity: 1;
-            background-image: url('#{$url_entorno}/img/button_hamb_open.svg');
             background-repeat: no-repeat;
-            color: $button_hamb_ftColour;
             font-family: $button_hamb_ftFamily;
 
             @if $googleFont_act == "on"{

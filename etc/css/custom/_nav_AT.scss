@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav After Tablet Styles | Custom [/etc/css/custom/section_nav_AT.scss]
+   Nav After Tablet Styles | Custom [/etc/css/custom/nav_AT.scss]
    ========================================================================== */
 .nav_main{
     @include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
@@ -329,6 +329,7 @@
             > li{
                 &:focus, &:hover{
                     @if $nav_text_white_act == "on"{
+                        // REF [12]
                         > a,
                         > .nav_TLI{
                             text-shadow: $txShadow_white_hover;
@@ -336,6 +337,7 @@
                     }
 
                     @if $nav_text_black_act == "on"{
+                        // REF [12]
                         > a,
                         > .nav_TLI{
                             color: $grey2XD;
@@ -407,6 +409,7 @@
             .nav_TLI{
                 &:focus, &:hover{
                     @if $nav_text_white_act == "on"{
+                        // REF [12]
                         text-shadow: 0 0 0 transparent;
                     }
                 }

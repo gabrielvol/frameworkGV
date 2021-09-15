@@ -1,21 +1,14 @@
 /* * NombreDeProyecto * ========================================================
-   Nav Activators | Custom [/etc/css/custom/act/section_nav_main_act.scss]
+   Nav Activators | Custom [/etc/css/custom/act/nav_language_act.scss]
    ========================================================================== */ 
 
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables activadoras.
 //
-// #activador #nav #button
+// #activador #nav #button #language
 
 
 /* // Listado --------------------------------------------------------------- */
-// 01 _ $hamburger_only_act
-//
-//
-// 01 _ $hamburger_only_act
-// Activa los if que se encuentran en `[/etc/css/scss/settings_nav.scss]`,
-// `[/etc/css/custom/section_nav_accordion.scss]` y
-// `[/etc/css/custom/section_nav_drawer.scss]`.
 
 
 
@@ -56,28 +49,6 @@
 
 
 
-/* // Nav Main -------------------------------------------------------------- */
-$nav_horizontalCenter_AT_act:       off;
-$nav_horizontalCenter_TO_act:       off;
-$nav_horizontalCenter_ATL_act:      off;
-     
-$nav_topper_act:                    off;
-$nav_fixed_AT_act:                  off;
-     
-$nav_double_AT_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
-$nav_drawer_act:                    on; // Ver `[/src/var/act/nav.act.inc.php]`
-$nav_accordion_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
-$nav_list_act:                      off;
-     
-$nav_hasSub_act:                    off;
-$nav_hasSub_level1_act:             off;
-$nav_hasSub_level2_act:             off;
-$nav_hasSub_level3_act:             off;
-$nav_sub_centered_AT:               off;
-
-$nav_item_current_bdB_act:          off;
-
-$nav_text_white_act:                off;
-$nav_text_black_act:                off;
-
-$hamburger_only_act:                off;
+/* // Nav Language ---------------------------------------------------------- */
+$nav_language_flag_rounded_act:        off;
+$language_menu_navDrawer_clicked_act:  off;

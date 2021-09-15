@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav Accordion Styles | Custom [/etc/css/custom/section_nav_accordion.scss]
+   Nav Accordion Styles | Custom [/etc/css/custom/nav_accordion.scss]
    ========================================================================== */
 @if $nav_accordion_act == "on"{
     @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
@@ -10,6 +10,7 @@
 
             .button_hamb_open{
                 @if $hamburger_only_act == "on"{
+                    // REF [11]
                     @include squareSize($navAcc_hamburger_height);
                     background-position: center;
                     padding: $zero;

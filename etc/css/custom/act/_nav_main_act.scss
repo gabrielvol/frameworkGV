@@ -1,0 +1,91 @@
+/* * NombreDeProyecto * ========================================================
+   Nav Activators | Custom [/etc/css/custom/act/nav_main_act.scss]
+   ========================================================================== */ 
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de variables activadoras.
+//
+// #activador #nav #button
+
+
+/* // Listado --------------------------------------------------------------- */
+// 01 _ $hamburger_only_act
+// 02 _ $nav_text_white_act / $nav_text_black_act
+//
+//
+// 01 _ $hamburger_only_act
+// REF [11]
+// Activa los if que se encuentran en
+// `[/etc/css/scss/settings_nav.scss]`,
+// `[/etc/css/custom/nav_accordion.scss]` y
+// `[/etc/css/custom/nav_drawer.scss]`.
+//
+//
+// 02 _ $nav_text_white_act / $nav_text_black_act
+// REF [12]
+// Activa los if que se encuentran en `[/etc/css/custom/nav_AT.scss]`.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hs                  = hash
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Nav Main -------------------------------------------------------------- */
+$hamburger_only_act:                off; // REF [11]
+
+$nav_text_white_act:                off; // REF [12]
+$nav_text_black_act:                off; // REF [12]
+
+$nav_horizontalCenter_AT_act:       off;
+$nav_horizontalCenter_TO_act:       off;
+$nav_horizontalCenter_ATL_act:      off;
+     
+$nav_topper_act:                    off;
+$nav_fixed_AT_act:                  off;
+     
+$nav_double_AT_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
+$nav_drawer_act:                    on; // Ver `[/src/var/act/nav.act.inc.php]`
+$nav_accordion_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
+$nav_list_act:                      off;
+     
+$nav_hasSub_act:                    off;
+$nav_hasSub_level1_act:             off;
+$nav_hasSub_level2_act:             off;
+$nav_hasSub_level3_act:             off;
+$nav_sub_centered_AT:               off;
+
+$nav_item_current_bdB_act:          off;

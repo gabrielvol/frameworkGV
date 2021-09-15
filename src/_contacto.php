@@ -29,7 +29,7 @@
     $openGraph_siteName         = $openGraph_siteName_global;
     
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext.locale.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/locale.inc.php');
 ?>
 <link href="<?php echo $url_entorno; ?>/_source/css/datepicker.css" rel="stylesheet">
 <script src="<?php echo $url_entorno; ?>/_source/js/jquery-ui-datepicker.js"></script>

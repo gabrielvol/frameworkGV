@@ -30,17 +30,17 @@
 // 02 _ Index Only Full Height
 // Activa los if que se encuentran en
 // `[/etc/css/custom/imp/page_index_fullHeight_imp.scss]`,
-// `[/etc/css/custom/imp/section_footer_fullHeight_imp.scss]` y
-// `[/etc/css/custom/imp/section_header_fullHeight_imp.scss]`
+// `[/etc/css/custom/imp/footer_fullHeight_imp.scss]` y
+// `[/etc/css/custom/imp/header_fullHeight_imp.scss]`
 //
 // y se importan en
 // `[/etc/css/custom/page_index.scss]`,
-// `[/etc/css/custom/section_footer.scss]` y 
-// `[/etc/css/custom/section_header.scss]`
+// `[/etc/css/custom/footer.scss]` y 
+// `[/etc/css/custom/header.scss]`
 // respectivamente.
 //
 // Con Index Full Height activado la variable $header_height no puede ser `auto`
-// REF [04] `[/etc/css/custom/var/section_header_var.scss]`
+// REF [04] `[/etc/css/custom/var/header_var.scss]`
 // Además de imprimir lo mismo que `01 Full Height` imprime:
 //
 // #header.header_index{

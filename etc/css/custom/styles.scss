@@ -10,10 +10,10 @@
 @import "act/fonts_act";
 @import "act/text_act";
 
-@import "act/section_header_act";
-@import "act/section_nav_main_act";
-@import "act/section_nav_language_act";
-@import "act/section_footer_act";
+@import "act/header_act";
+@import "act/nav_main_act";
+@import "act/nav_language_act";
+@import "act/footer_act";
 
 @import "act/page_index_act";
 @import "act/page_section_act";
@@ -35,14 +35,14 @@
 @import "var/text_var";
 
 @import "var/logo_sizes_var";
-@import "var/section_header_var";
+@import "var/header_var";
 
-@import "var/section_nav_colours_var";
-@import "var/section_nav_arrows_var";
-@import "var/section_nav_fonts_var";
-@import "var/section_nav_sizes_var";
+@import "var/nav_colours_var";
+@import "var/nav_arrows_var";
+@import "var/nav_fonts_var";
+@import "var/nav_sizes_var";
 @import "var/button_nav_hamburger_var";
-@import "var/section_nav_language_var";
+@import "var/nav_language_var";
 
 @import "var/lists_var";
 @import "var/buttons_var";
@@ -52,7 +52,7 @@
 @import "var/popup_var";
 @import "var/slider_var";
 
-@import "var/section_footer_var";
+@import "var/footer_var";
 
 @import "var/form_colours_var";
 @import "var/form_fonts_var";
@@ -111,7 +111,7 @@
 
 @import "fontFace";
 @import "../scss/settings_text";
-@import "settings_text";
+@import "text";
 @import "../scss/classes_text";
 @import "classes_text";
 
@@ -151,18 +151,18 @@
 @import "../scss/settings_popup";
 @import "popup";
 
-@import "section_header";
+@import "header";
 //@import "social";
-@import "section_footer";
+@import "footer";
 
 @import "../scss/settings_nav";
 @import "../scss/settings_nav_drawer";
 @import "../scss/settings_nav_accordion";
-@import "section_nav_drawer";
-@import "section_nav_accordion";
-@import "section_nav_list";
-@import "section_nav_AT";
-//@import "section_nav_language";
+@import "nav_drawer";
+@import "nav_accordion";
+@import "nav_list";
+@import "nav_AT";
+//@import "nav_language";
 
 //@import "slider";
 //@import "slider_nav";

@@ -54,6 +54,9 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Arrows ---------------------------------------------------------------- */
+/* // Dots / Pagination ----------------------------------------------------- */
+/* // Slider vertical ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Fonts Activators | Custom [/etc/css/custom/act/fonts_act.scss]
    ========================================================================== */
@@ -67,29 +70,29 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
-   Header Activators | Custom [/etc/css/custom/act/section_header_act.scss]
+   Header Activators | Custom [/etc/css/custom/act/header_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Menu y logo ----------------------------------------------------------- */
-/* // Header ---------------------------------------------------------------- */
+/* // Header // REF [08] ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Nav Activators | Custom [/etc/css/custom/act/section_nav_main_act.scss]
+   Nav Activators | Custom [/etc/css/custom/act/nav_main_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav Main -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Nav Activators | Custom [/etc/css/custom/act/section_nav_language_act.scss]
+   Nav Activators | Custom [/etc/css/custom/act/nav_language_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav Language ---------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Footer Activators | Custom [/etc/css/custom/act/section_footer_act.scss]
+   Footer Activators | Custom [/etc/css/custom/act/footer_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -102,12 +105,12 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // 02 Index Only Full Height --------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Page Internal Activators | Custom [/etc/css/custom/act/page_section_act.scss]
+   Page section Activators | Custom [/etc/css/custom/act/page_section_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // 01 Page int Full height ----------------------------------------------- */
+/* // 01 Page section Full height ------------------------------------------- */
 /* // Variables ------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Font Variables | Etc [/etc/css/scss/var_fonts.scss]
@@ -214,14 +217,14 @@
 /* // Logo Sizes Footer ----------------------------------------------------- */
 /* // Logo Sizes Footer logoFloated ----------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Header Height Variables | Custom [/etc/css/custom/var/section_header_var.scss]
+   Header Height Variables | Custom [/etc/css/custom/var/header_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Header Sizes ---------------------------------------------------------- */
 /* // Page Sizes ------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   Nav Colours Variables | Custom [/etc/css/custom/var/section_nav_colours_var.scss]
+   Nav Colours Variables | Custom [/etc/css/custom/var/nav_colours_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -238,10 +241,10 @@
 /*___ AT ________________________________*/
 /*___ Topper ____________________________*/
 /* * NombreDeProyecto * ========================================================
-   Nav Arrows Backgrounds | Custom [/etc/css/custom/var/section_nav_arrows_var.scss]
+   Nav Arrows Backgrounds | Custom [/etc/css/custom/var/nav_arrows_var.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav Fonts Variables | Custom [/etc/css/custom/var/section_nav_fonts_var.scss]
+   Nav Fonts Variables | Custom [/etc/css/custom/var/nav_fonts_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -249,7 +252,7 @@
 /*___ AT ________________________________*/
 /*___ ATL _______________________________*/
 /* * NombreDeProyecto * ========================================================
-   Nav Sizes Variables | Custom [/etc/css/custom/var/section_nav_sizes.scss]
+   Nav Sizes Variables | Custom [/etc/css/custom/var/nav_sizes_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -271,7 +274,7 @@
 /*___ Borders ___________________________*/
 /* // Button Hambuger Font -------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Nav Language Variables | Custom [/etc/css/custom/var/section_nav_language_var.scss]
+   Nav Language Variables | Custom [/etc/css/custom/var/nav_language_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -303,6 +306,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Animation order/timing ------------------------------------------------ */
+/* // Animation shared values ----------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Social Variables | Custom [/etc/css/custom/var/section_social_var.scss]
    ========================================================================== */
@@ -326,7 +330,7 @@
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   Footer Variables | Custom [/etc/css/custom/var/section_footer_var.scss]
+   Footer Variables | Custom [/etc/css/custom/var/footer_var.scss]
    ========================================================================== */
 /* // Full heights Footer --------------------------------------------------- */
 /* // Footer sizes ---------------------------------------------------------- */
@@ -836,15 +840,6 @@ a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHove
 a.errorColour:focus, a.errorColour:hover {
   color: #940d12; }
 
-.focusColour, .focusColour b, .focusColour strong, .focusColour i, .focusColour em {
-  color: #c6c6c6; }
-
-a.focusColour, a.focusColour:active, a.focusColour:visited, a.focusColour.noHover:focus, a.focusColour.noHover:hover {
-  color: #c6c6c6; }
-
-a.focusColour:focus, a.focusColour:hover {
-  color: #939393; }
-
 .greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
   color: #4d4d4d; }
 
@@ -888,7 +883,7 @@ a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.no
   color: #ff6600; }
 
 /* * NombreDeProyecto * ========================================================
-   Settings Text | Custom [/etc/css/custom/settings_text.scss]
+   Settings Text | Custom [/etc/css/custom/text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -2124,7 +2119,6 @@ button, button::before, button::after {
       margin-left: auto !important;
       margin-top: 30px; } }
 
-/* // Custom buttons -------------------------------------------------------- */
 /* // WhatsApp -------------------------------------------------------------- */
 .button_whatsapp {
   transition: all 1s ease;
@@ -2172,6 +2166,20 @@ button, button::before, button::after {
     .button_whatsapp:focus::before, .button_whatsapp:hover::before {
       width: 220px; } }
 
+/* // Footer Button Site Top ------------------------------------------------ */
+.button_siteTop {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 9900;
+  top: 10px;
+  right: 10px;
+  background-image: url("/nuevo/img/button_siteTop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px; }
+
+/* // Custom buttons -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Hover Classes | Custom [/etc/css/custom/hover.scss]
    ========================================================================== */
@@ -2423,15 +2431,15 @@ button, button::before, button::after {
       padding-top: 30px; } }
 
 /* * NombreDeProyecto * ========================================================
-   Header Styles | Custom [/etc/css/custom/section_header.scss]
+   Header Styles | Custom [/etc/css/custom/header.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Header Full Height Styles | Custom [/etc/css/custom/imp/section_header_fullHeight_imp.scss]
+   Header Full Height Styles | Custom [/etc/css/custom/imp/header_fullHeight_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
-   Header Fixed Styles | Custom [/etc/css/custom/imp/section_header_headerFixed_imp.scss]
+   Header Fixed Styles | Custom [/etc/css/custom/imp/header_headerFixed_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -2518,69 +2526,66 @@ button, button::before, button::after {
       width: 220px; } }
 
 /* * NombreDeProyecto * ========================================================
-   Footer Styles | Custom [/etc/css/custom/section_footer.scss]
+   Footer Styles | Custom [/etc/css/custom/footer.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Footer Full Height Styles | Custom [/etc/css/custom/imp/section_footer_fullHeight_imp.scss]
+   Footer Full Height Styles | Custom [/etc/css/custom/imp/footer_fullHeight_imp.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-#footer {
-  /* // Button Site Top ------------------------------------------------------- */
-  /* -------------------------------------------------------------------------- */ }
-  #footer .button_siteTop {
-    width: 50px;
-    height: 50px;
-    z-index: 9900;
-    top: 10px;
-    right: 10px;
-    background-image: url("/nuevo/img/button_siteTop.svg");
-    background-repeat: no-repeat;
-    background-position: center; }
-  #footer .nav_footer {
-    position: relative; }
-  #footer .footer_address a {
-    font-size: 1em;
-    line-height: 1.2; }
-  #footer .logo_footer_container,
-  #footer .logo_txt {
-    box-sizing: border-box; }
-  #footer .logo_footer img {
-    display: block; }
-  @media (max-width: 499px) {
-    #footer .logo_footer {
-      width: 50px; } }
-  @media (min-width: 500px) {
-    #footer {
-      /*
+#footer .nav_footer {
+  position: relative; }
+
+#footer .footer_address a {
+  font-size: 1em;
+  line-height: 1.2; }
+
+#footer .logo_footer_container,
+#footer .logo_txt {
+  box-sizing: border-box; }
+
+#footer .logo_footer img {
+  display: block; }
+
+@media (max-width: 499px) {
+  #footer .logo_footer {
+    width: 50px; } }
+
+@media (min-width: 500px) {
+  #footer {
+    /*
         .logo_footer_container{
             width: $logo_width_footer_AML;
         } 
 */ }
-      #footer .logo_footer {
-        /*
-            width: $logo_width_footer_AML;
-*/ } }
-  @media (min-width: 500px) and (max-width: 767px) {
     #footer .logo_footer {
       /*
+            width: $logo_width_footer_AML;
+*/ } }
+
+@media (min-width: 500px) and (max-width: 767px) {
+  #footer .logo_footer {
+    /*
                 width: $logo_width_footer_MLO;
 */ } }
-  @media (min-width: 768px) {
-    #footer .logo_footer {
-      width: 125px; } }
-  @media (max-width: 1023px) {
-    #footer .logo_footer_container {
-      /*            
+
+@media (min-width: 768px) {
+  #footer .logo_footer {
+    width: 125px; } }
+
+@media (max-width: 1023px) {
+  #footer .logo_footer_container {
+    /*            
             width: $footer_logoFloated_width_BTL;
 */ }
-    #footer .footer_address a {
-      text-decoration: underline; } }
-  @media (min-width: 1024px) {
-    #footer .logo_footer {
-      width: 125px; }
-    #footer .footer_address a:focus, #footer .footer_address a:hover {
-      text-decoration: underline; } }
+  #footer .footer_address a {
+    text-decoration: underline; } }
+
+@media (min-width: 1024px) {
+  #footer .logo_footer {
+    width: 125px; }
+  #footer .footer_address a:focus, #footer .footer_address a:hover {
+    text-decoration: underline; } }
 
 /* * NombreDeProyecto * ========================================================
    Nav Settings | Etc [/etc/css/scss/settings_nav.scss]
@@ -2724,7 +2729,7 @@ nav li:focus a, nav li:hover a {
    Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav Drawer Styles | Custom [/etc/css/custom/section_nav_drawer.scss]
+   Nav Drawer Styles | Custom [/etc/css/custom/nav_drawer.scss]
    ========================================================================== */
 @media (max-width: 767px) {
   .nav_main {
@@ -2787,13 +2792,13 @@ nav li:focus a, nav li:hover a {
           border-style: solid; } }
 
 /* * NombreDeProyecto * ========================================================
-   Nav Accordion Styles | Custom [/etc/css/custom/section_nav_accordion.scss]
+   Nav Accordion Styles | Custom [/etc/css/custom/nav_accordion.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav List Styles | Custom [/etc/css/custom/section_nav_list.scss]
+   Nav List Styles | Custom [/etc/css/custom/nav_list.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav After Tablet Styles | Custom [/etc/css/custom/section_nav_AT.scss]
+   Nav After Tablet Styles | Custom [/etc/css/custom/nav_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
   .nav_main .navs_container_AT {

@@ -1,8 +1,8 @@
 /* * NombreDeProyecto * ========================================================
-   Header Styles | Custom [/etc/css/custom/section_header.scss]
+   Header Styles | Custom [/etc/css/custom/header.scss]
    ========================================================================== */
-@import 'imp/section_header_fullHeight_imp';
-@import 'imp/section_header_headerFixed_imp';
+@import 'imp/header_fullHeight_imp';
+@import 'imp/header_headerFixed_imp';
 
 #header{
     box-sizing: border-box;

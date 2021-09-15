@@ -1,14 +1,9 @@
 /* * NombreDeProyecto * ========================================================
-   Nav Activators | Custom [/etc/css/custom/act/section_nav_language_act.scss]
-   ========================================================================== */ 
+   Settings Text | Custom [/etc/css/custom/text.scss]
+   ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de variables activadoras.
-//
-// #activador #nav #button #language
-
-
-/* // Listado --------------------------------------------------------------- */
+// Archivo de estilos scss.
 
 
 
@@ -49,6 +44,56 @@
 
 
 
-/* // Nav Language ---------------------------------------------------------- */
-$nav_language_flag_rounded_act:        off;
-$language_menu_navDrawer_clicked_act:  off;
+/* // Reset ----------------------------------------------------------------- */
+a{
+    line-height: 1;
+    cursor: pointer;
+    img{
+        border: none;
+    }
+}
+a{
+    &, &:hover{
+        text-decoration: none;
+    }    
+}
+
+/* // Text Selection -------------------------------------------------------- */
+::-moz-selection {
+    color: $txSelection_ftColour_global;
+    background-color: $txSelection_bgColour_global;
+    text-shadow: none;
+}
+
+::selection {
+    color: $txSelection_ftColour_global;
+    background-color: $txSelection_bgColour_global;
+    text-shadow: none;
+}
+
+/* // General --------------------------------------------------------------- */
+p{}
+    
+/* // Safari tel detection -------------------------------------------------- */
+a[href^=tel]{
+    &, &:focus, &:hover, &:active, &:visited{
+        color: $ftColour_anchor_global!important;
+    }
+}
+
+/* // Blockquote ------------------------------------------------------------ */
+blockquote{
+    margin: 0;
+}
+
+q{
+    quotes: "“" "”" "«" "»";
+    
+    &::before {
+        content: open-quote;
+    }
+    
+    &::after {
+        content: close-quote;
+    }
+}
