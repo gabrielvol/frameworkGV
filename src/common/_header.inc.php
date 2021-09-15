@@ -17,4 +17,10 @@
     ?>  
     
     <?php include('nav.main.inc.php'); ?>
+        
+    <?php
+        if($url_entorno == "/nuevo"){
+            include('nav.language.inc.php');
+        }
+    ?>
 </header>
