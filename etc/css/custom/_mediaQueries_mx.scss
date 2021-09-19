@@ -115,6 +115,18 @@
         and (max-width: #{$mq_tablet_ancho_max}){@content;}}
     
     
+/* // 550px ----------------------------------------------------------------- */
+@mixin beforeMobile550{
+    @media (max-width: 550px){@content;}}
+    
+@mixin afterMobile550{
+    @media (min-width: 551px){@content;}}
+    
+@mixin mobile550Only{ // 766px
+    @media (min-width: 551px)
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+    
+    
 /* // 600px ----------------------------------------------------------------- */
 @mixin beforeMobile600{
     @media (max-width: 600px){@content;}}
@@ -148,6 +160,18 @@
     
 @mixin mobile700Only{ // 766px
     @media (min-width: 701px)
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+    
+    
+/* // 750px ----------------------------------------------------------------- */
+@mixin beforeMobile750{
+    @media (max-width: 750px){@content;}}
+    
+@mixin afterMobile750{
+    @media (min-width: 751px){@content;}}
+    
+@mixin mobile750Only{ // 766px
+    @media (min-width: 751px)
         and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     
     
