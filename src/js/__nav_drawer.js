@@ -4,6 +4,7 @@ $(document).ready(function () {
         $(this).attr('aria-pressed', 'true');        
         
         $(this).closest('#header').addClass('navDrawer_open');
+        $(this).closest('#header').removeClass('navDrawer_closed'); 
         $(this).closest('#header').find('.social').addClass('navDrawer_open');
         $(this).closest('#header').find('.button_whatsapp').addClass('navDrawer_open');
         
@@ -25,6 +26,7 @@ $(document).ready(function () {
     $('.nav_item_noLink_js').click(function () {
         $(this).closest('#header').addClass('navItemClicked');
         $(this).closest('#header').removeClass('navDrawer_open'); 
+        $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
 //        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
@@ -55,6 +57,7 @@ $(document).ready(function () {
         $(this).removeClass('button_hamb_close_visible');
         
         $(this).closest('#header').removeClass('navDrawer_open');
+        $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
 //        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
@@ -84,6 +87,7 @@ $(document).ready(function () {
         $(this).hide('fast');
         
         $(this).closest('#header').removeClass('navDrawer_open');
+        $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
 //        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");

@@ -1,5 +1,5 @@
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
-<header id="header" class="<?php if(isset($page_index)){ echo ' header_index'; } ?>">
+<header id="header" class="<?php if(isset($page_index)){ echo ' header_index'; } if($nav_drawer_act == 1){ echo ' navDrawer_closed'; } ?>">
     <a href="<?php echo $site_tel_PRINCIPAL_whatsapp_chatOpen; ?>" class="button_whatsapp">Abrir un chat.</a>
     
     <?php
