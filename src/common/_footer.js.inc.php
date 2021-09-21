@@ -32,18 +32,18 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 000):
-/* // SECTIONNAME
-<script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
+<?php endif; if($nav_pageCurrent == 3):
+/* // Contacto 
+<script src="<?php echo $url_entorno; ?>/js/scrollKeep.js"></script>
+<script src="<?php echo $url_entorno; ?>/js/_contacto.js"></script>
 */
 ?>
 
 
 <?php endif; if($nav_pageCurrent == 000):
-/* // Contacto 
-<script src="<?php echo $url_entorno; ?>/js/scrollKeep.js"></script>
-<script src="<?php echo $url_entorno; ?>/js/_contacto.js"></script>
+/* // SECTIONNAME
+<script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
+<script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 */
 ?>
 

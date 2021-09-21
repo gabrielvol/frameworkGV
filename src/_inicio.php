@@ -1,12 +1,14 @@
 <?php
     $url_entorno = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php'); 
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_index             = 1;
-    $page_url_full          = $url_inicio_full;
-    
+    $page_inicio            = 1;
     $nav_pageCurrent        = 2;
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    
+    $page_url_full          = $url_inicio_full;
     
     $has_form               = 0;
     $has_lightbox           = 0;
@@ -32,7 +34,7 @@
        
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/locale.inc.php');
-    ?>
+?>
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>

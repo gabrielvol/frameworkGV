@@ -1,12 +1,13 @@
 <?php
     $url_entorno = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');    
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
-    $page_int               = 1;
+    $page_int               = 1;   
+    $nav_pageCurrent        = 0;   
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');    
+    
     $page_url_full          = $url_contacto_full;
-    
-    $nav_pageCurrent        = 0;  
     
     $has_form               = 1;
     $has_lightbox           = 0;

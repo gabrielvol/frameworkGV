@@ -2,12 +2,12 @@
     if($nav_pageCurrent == 1){ // Home
         include('pop.inc.php');
     }
-    
-    if($nav_pageCurrent == 000){ // SECTIONNAME
+
+    if($nav_pageCurrent == 3){ // Contacto
 //         include('pop.inc.php');
     }
-
-    if($nav_pageCurrent == 000){ // Contacto
+    
+    if($nav_pageCurrent == 000){ // SECTIONNAME
 //         include('pop.inc.php');
     }
 

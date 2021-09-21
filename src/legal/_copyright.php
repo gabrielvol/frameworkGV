@@ -1,11 +1,12 @@
 <?php
     $url_entorno = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/gettext.languageCheck.inc.php');
     
     $page_int        = 1;
-    $page_copyright  = 1;
-    
+    $page_copyright  = 1;    
     $nav_pageCurrent = 0;
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
     
     $site_title      = "Licencia | ". $site_name_title;
 //  $site_title_GB   = "Licence | ". $site_name_title;
@@ -13,10 +14,8 @@
     $site_desc       = $site_desc_global;
 //  $site_desc_GB    = $site_desc_global_GB;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/gettext.languageCheck.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/gettext.locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__gettext.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/locale.inc.php');
 ?>
 </head>
 <body>

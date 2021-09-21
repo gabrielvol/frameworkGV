@@ -1,12 +1,12 @@
 <?php
     $url_entorno = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');    
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int           = 1;
-    $page_error         = 1;
-       
-    $nav_pageCurrent    = 0;
+    $page_error         = 1;       
+    $nav_pageCurrent    = 0;  
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
        
     $site_title         = "Error | ". $site_name_title;
 //  $site_title_GB      = "Error | ". $site_name_title;
