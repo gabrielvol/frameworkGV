@@ -54,6 +54,11 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, 
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
     color: $ftColour_main_global;
 }
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, blockquote{
+    sup{
+        font-size: 0.5em;
+    }
+}
 h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote, dfn, button, blockquote{
     a{
         font-family: inherit;
