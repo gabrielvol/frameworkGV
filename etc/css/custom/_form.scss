@@ -18,10 +18,10 @@ fieldset{
         color: $black;
     }
             
-    &.invalidField{
+    &.form_validation_input_invalid{
         legend,
         label span{
-            color: $form_label_msg_error_ftColour;
+            color: $form_span_invalid_ftColour;
         }
         
         legend{
@@ -33,19 +33,19 @@ fieldset{
 
 /* // Form status message --------------------------------------------------- */
 .form_status,
-.form_msg_mandatory{
+.form_validation_div{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 
 .form_status.ok,
-.form_msg_mandatory{
+.form_validation_div{
     border-radius: $bdRadius_global;
     padding: 7px 20px;
 }
 
 .form_status,
-.form_msg_mandatory p{
+.form_validation_div p{
     text-align: center;   
 }
 
@@ -60,8 +60,8 @@ fieldset{
     }
 }
 
-.form_msg_mandatory{
-    &.form_msg_mandatory_invalid{
+.form_validation_div{
+    &.form_validation_div_invalid{
         display: $block;
         background-color: $form_status_msg_error_bgColour;
         
@@ -71,7 +71,7 @@ fieldset{
     }
 }
 
-.form_msg_mandatory,
+.form_validation_div,
 .form_status{    
     @include afterTabletLandscape{
         @include centerCustom(80%);
@@ -220,7 +220,7 @@ form{
 
 /* // Form invalid field ---------------------------------------------------- */
     input, select, textarea{        
-        &.invalidField{
+        &.form_validation_input_invalid{
             background-image: url('#{$url_entorno}/img/form_alert.svg');
             background-repeat: no-repeat;
             background-position: right 10px center;
@@ -235,7 +235,7 @@ form{
     }
     
     fieldset{
-        &.invalidField{        
+        &.form_validation_input_invalid{        
             &,
             legend{
                 background-image: url('#{$url_entorno}/img/form_alert.svg');
@@ -247,13 +247,13 @@ form{
     }
     
     select{
-        &.invalidField{
+        &.form_validation_input_invalid{
             background-position: right 25px center;
         }
     }
     
     textarea{
-        &.invalidField{
+        &.form_validation_input_invalid{
             background-position: right 10px top 10px;
             background-size: 23px;
         }
@@ -345,7 +345,7 @@ form{
         }
 
         .form_label_name,
-        .form_label_msg_error{
+        .form_validation_span{
             box-sizing: border-box;
         }
 
@@ -360,17 +360,17 @@ form{
             }
         }
 
-        .form_label_msg_error{
+        .form_validation_span{
             display: none;
             padding-top: 3px;
             padding-left: 10px;
-            color: $form_label_msg_error_ftColour;
+            color: $form_span_invalid_ftColour;
             font-family: $arial;
             font-size: 0.8rem!important;
             font-weight: 700;
             line-height: 1.3;
 
-            &.active{
+            &.form_validation_span_active{
                 display: block;
             }
         }
