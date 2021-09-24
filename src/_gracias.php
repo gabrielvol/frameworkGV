@@ -6,13 +6,13 @@
     $page_gracias           = 1;  
     $nav_pageCurrent        = 0;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
-    
-    $page_url_full          = $url_gracias_full;
-    
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0; 
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    
+    $page_url_full          = $url_gracias_full;
     
     $site_title             = "Gracias | ". $site_name_title;
 //    $site_desc_GB           = "Thank You | ". $site_name_title;

@@ -5,13 +5,13 @@
     $page_int               = 1;   
     $nav_pageCurrent        = 0;   
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');    
-    
-    $page_url_full          = $url_contacto_full;
-    
     $has_form               = 1;
     $has_lightbox           = 0;
     $has_slider             = 0;
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');    
+    
+    $page_url_full          = $url_contacto_full;
     
     $site_title             = "Contacto | ". $site_name_title;
 //    $site_title_GB          = "Contact | ". $site_name_title;

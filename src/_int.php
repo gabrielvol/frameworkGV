@@ -5,15 +5,15 @@
     $page_int               = 1;    
     $nav_pageCurrent        = 0;
     $nav_pageCurrent_int    = 000;
-       
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
-    
-    $page_url_full          = $url_PAGEINT_full;
     
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0;
 //    $has-CUSTOMVARIABLE     = 0; 
+       
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    
+    $page_url_full          = $url_PAGEINT_full;
     
     $site_title             = "PaginaInterna | ". $site_name_title;
 //    $site_title_GB          = "SinTraduccion | ". $site_name_title;

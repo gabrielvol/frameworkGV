@@ -4,16 +4,16 @@
     
     $page_index             = 1;  
     $nav_pageCurrent        = 1; 
-     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
-    
-    $page_url_full          = $url_index_full;
     
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0;
     
-//    $has-CUSTOMVARIABLE     = 0;
+//    $has-CUSTOMVARIABLE     = 0;    
+     
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    
+    $page_url_full          = $url_index_full;
     
     $site_title             = $site_name_full;
 //    $site_title_GB          = $site_name_full;
