@@ -63,10 +63,10 @@ fieldset{
 .form_validation_div{
     &.form_validation_div_invalid{
         display: $block;
-        background-color: $form_status_msg_error_bgColour;
+        background-color: $form_status_error_bgColour;
         
         p{
-            color: $form_status_msg_error_ftColour;     
+            color: $form_status_error_ftColour;     
         }
     }
 }

@@ -40,7 +40,7 @@
     ?>
     <div id="main" class="page_int page_gracias" role="main">
         <h1 class="alignCenter">Gracias</h1>
-        <p class="alignCenter"><?php echo $form_status_msg_OK_globalB ?></p>
+        <p class="alignCenter"><?php echo $form_status_ok_globalB ?></p>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
 </body>

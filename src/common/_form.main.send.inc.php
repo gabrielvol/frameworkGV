@@ -1,24 +1,24 @@
 <?php
 /* // Fuentes de título de pop ---------------------------------------------- */
-$formPop_h2_ok_classes__formMain    = 'mbm greenSystem alignCenter';
-$formPop_h2_error_classes__formMain = 'mbm errorColour alignCenter';
-$formPop_anchor_classes__formMain   = 'mbm alignCenter';
+$form_status_pop_h2_ok_classes__formMain    = 'mbm greenSystem alignCenter';
+$form_status_pop_h2_error_classes__formMain = 'mbm errorColour alignCenter';
+$form_status_pop_anchor_classes__formMain   = 'mbm alignCenter';
 
 
 
 /* // Form Status ----------------------------------------------------------- */
-$form_status_msg_ini_globalA__formMain      = _('Complete el formulario por favor.');
-$form_status_msg_ini_globalB__formMain      = _('Nos comunicaremos con Ud. a la brevedad.');
-$form_status_msg_ini_global__formMain       = $form_status_msg_ini_globalA__formMain ." ". $form_status_msg_ini_globalB__formMain;
+$form_status_ini_globalA__formMain      = _('Complete el formulario por favor.');
+$form_status_ini_globalB__formMain      = _('Nos comunicaremos con Ud. a la brevedad.');
+$form_status_ini_global__formMain       = $form_status_ini_globalA__formMain ." ". $form_status_ini_globalB__formMain;
 
-$form_status_msg_OK_globalA__formMain       = _('Env&iacute;o exitoso.');
-$form_status_msg_OK_globalB__formMain       = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
+$form_status_ok_globalA__formMain       = _('Env&iacute;o exitoso.');
+$form_status_ok_globalB__formMain       = _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.');
 
-$form_status_msg_error_globalA__formMain    = _('Hubo un error al enviar el mensaje.');
-$form_status_msg_error_globalB__formMain    = _('Intente nuevamente m&aacute;s tarde.');
-$form_status_msg_error_globalC__formMain    = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_msg_error_recipient_mailto__formMain .'" class="'. $formPop_anchor_classes__formMain .'">'. $form_status_msg_error_recipient__formMain .'</a>.';
+$form_status_error_globalA__formMain    = _('Hubo un error al enviar el mensaje.');
+$form_status_error_globalB__formMain    = _('Intente nuevamente m&aacute;s tarde.');
+$form_status_error_globalC__formMain    = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_recipient_mailto__formMain .'" class="'. $form_status_pop_anchor_classes__formMain .'">'. $form_status_recipient__formMain .'</a>.';
 
-// $form_status_msg__formMain = '<p class="form_status ini">'. $form_status_msg_ini_global__formMain .'</p>';
+// $form_status__formMain = '<p class="form_status ini">'. $form_status_ini_global__formMain .'</p>';
 
 
 
@@ -507,25 +507,25 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
 
     // echo '<META HTTP-EQUIV="Refresh" Content="0;URL='. $url_global .'/gracias.php">';
 
-/* // INICIA MENSAJE OK EN $form_status_msg_ -------------------------------- */
-            $form_status_msg__formMain = '<p class="status ok" role="alert">'. _("$form_status_msg_OK_globalA__formMain") .' '. _("$form_status_msg_OK_globalB__formMain") .'</p>';
+/* // INICIA MENSAJE OK EN $form_status_ -------------------------------- */
+            $form_status__formMain = '<p class="status ok" role="alert">'. _("$form_status_ok_globalA__formMain") .' '. _("$form_status_ok_globalB__formMain") .'</p>';
             $form_validation_div_class__formMain = 'displayNone';
-/* // FIN mensaje ok en $form_status_msg_ ----------------------------------- */
+/* // FIN mensaje ok en $form_status_ ----------------------------------- */
             
             
             
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
-            $form_status_msg_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formOK">'
+            $form_status_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formOK">'
                     . '<div role="document" tabindex="0">'
                     . '<button type="submit" class="button_pop_close hover_grow_S_ani">'._("Cerrar").'</button>'
-                    . '<h2 id="formOK" class="'. $formPop_h2_ok_classes__formMain .'">'._("$form_status_msg_OK_globalA__formMain").'</h2>'
-                    . '<p>'. _("$form_status_msg_OK_globalB__formMain") .'</p>'
+                    . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'">'._("$form_status_ok_globalA__formMain").'</h2>'
+                    . '<p>'. _("$form_status_ok_globalB__formMain") .'</p>'
                     . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
                     . '</div>'
                     . '</div>'
                     . '<div class="modal_global modal_formStatus"></div>';
             $form_validation_div_class__formMain = 'displayNone';
-            $form_status_msg__formMain = '';
+            $form_status__formMain = '';
 /* // FIN mensaje ok en popup ----------------------------------------------- */
             
             
@@ -561,26 +561,26 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
             
             
             
-/* // INICIA MENSAJE ERROR EN $form_status_msg_ ----------------------------- */
-            $form_status_msg__formMain = '<p class="status error" role="alert">'. _("$form_status_msg_error_globalA__formMain") .' <span class="displayBlock">'. _("$form_status_msg_error_globalB__formMain") .'</span></p>';
+/* // INICIA MENSAJE ERROR EN $form_status_ ----------------------------- */
+            $form_status__formMain = '<p class="status error" role="alert">'. _("$form_status_error_globalA__formMain") .' <span class="displayBlock">'. _("$form_status_error_globalB__formMain") .'</span></p>';
             $form_validation_div_class__formMain = 'displayNone';
-/* // FIN mensaje error en $form_status_msg_ -------------------------------- */
+/* // FIN mensaje error en $form_status_ -------------------------------- */
             
             
             
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- */
-            $form_status_msg_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
+            $form_status_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
                     . '<div role="document" tabindex="0">'
                     . '<button type="submit" class="button_pop_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
-                    . '<h2 id="formError" class="'. $formPop_h2_error_classes__formMain .'">'. _("$form_status_msg_error_globalA__formMain") .'</h2>'
-                    . '<p>'. _("$form_status_msg_error_globalB__formMain") .'</p>'
-                    . '<p>'. _("$form_status_msg_error_globalC__formMain") .'</p>'
+                    . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMain .'">'. _("$form_status_error_globalA__formMain") .'</h2>'
+                    . '<p>'. _("$form_status_error_globalB__formMain") .'</p>'
+                    . '<p>'. _("$form_status_error_globalC__formMain") .'</p>'
                     . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
                     . '</div>'
                     . '</div>'
                     . '<div class="modal_global modal_formStatus"></div>';
             $form_validation_div_class__formMain = 'displayNone';
-            $form_status_msg__formMain = '';
+            $form_status__formMain = '';
 /* // FIN mensaje error en popup -------------------------------------------- */
         }
     }
