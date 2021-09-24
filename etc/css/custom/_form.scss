@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Form Styles | Custom [/etc/css/custom/forms.scss]
+   Form Styles | Custom [/etc/css/custom/form.scss]
    ========================================================================== */
 
 /* // Form Fieldset --------------------------------------------------------- */
@@ -38,7 +38,7 @@ fieldset{
     margin-bottom: 20px;
 }
 
-.form_status.ok,
+.form_status.form_status_ok,
 .form_validation_div{
     border-radius: $bdRadius_global;
     padding: 7px 20px;
@@ -50,11 +50,11 @@ fieldset{
 }
 
 .form_status{    
-    &.ini{
+    &.form_status_ini{
         font-size: 1rem;
     }
 
-    &.ok{
+    &.form_status_ok{
         background-color: $bgGreenSystem;
         color: $white;
     }
@@ -224,10 +224,12 @@ form{
             background-image: url('#{$url_entorno}/img/form_alert.svg');
             background-repeat: no-repeat;
             background-position: right 10px center;
-            background-size: auto 55%;
-            border-width: 2px;
+            background-size: auto 20px;
+            padding-right: 40px;
             
             &, &:focus, &:hover{
+                border-width: 2px!important;
+                border-style: solid!important;
                 border-color: $form_input_invalid_bdColour!important;
                 box-shadow: inset 0 0 0 $form_input_bdColour_hover;
             }

@@ -1,11 +1,4 @@
 <?php
-/* // Fuentes de título de pop ---------------------------------------------- */
-$form_status_pop_h2_ok_classes__formMain    = 'mbm greenSystem alignCenter';
-$form_status_pop_h2_error_classes__formMain = 'mbm errorColour alignCenter';
-$form_status_pop_anchor_classes__formMain   = 'mbm alignCenter';
-
-
-
 /* // Form Status ----------------------------------------------------------- */
 $form_status_ini_globalA__formMain      = _('Complete el formulario por favor.');
 $form_status_ini_globalB__formMain      = _('Nos comunicaremos con Ud. a la brevedad.');
@@ -18,7 +11,54 @@ $form_status_error_globalA__formMain    = _('Hubo un error al enviar el mensaje.
 $form_status_error_globalB__formMain    = _('Intente nuevamente m&aacute;s tarde.');
 $form_status_error_globalC__formMain    = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_recipient_mailto__formMain .'" class="'. $form_status_pop_anchor_classes__formMain .'">'. $form_status_recipient__formMain .'</a>.';
 
-// $form_status__formMain = '<p class="form_status ini">'. $form_status_ini_global__formMain .'</p>';
+$form_status_pop_h2_ok_classes__formMain    = 'mbm greenSystem alignCenter';
+$form_status_pop_h2_error_classes__formMain = 'mbm errorColour alignCenter';
+$form_status_pop_anchor_classes__formMain   = 'mbm alignCenter';
+
+// $form_status__formMain = '<p class="form_status form_status_ini">'. $form_status_ini_global__formMain .'</p>';
+
+
+
+/* // Validation ------------------------------------------------------------ */
+$form_validation_div_msg__formMain                  = '';
+$form_validation_div_class__formMain                = 'displayNone';
+
+$form_validation_msg_data_nombre__formMain          = _("Por favor, ingrese su nombre.");
+$form_validation_msg_data_apellido__formMain        = _("Por favor, ingrese su apellido.");
+$form_validation_msg_data_nombreAp__formMain        = _("Por favor, ingrese su nombre y apellido.");
+$form_validation_msg_data_nombreCo__formMain        = _("Por favor, ingrese su nombre completo.");
+$form_validation_msg_data_username__formMain        = _("Por favor, ingrese un nombre de usuario.");
+$form_validation_msg_data_cantidad__formMain        = _("Por favor, ingrese una cantidad.");
+   
+$form_validation_msg_data_direccion__formMain       = _("Por favor, ingrese su direcci&oacute;n.");
+$form_validation_msg_data_ciudad__formMain          = _("Por favor, ingrese su ciudad.");
+$form_validation_msg_data_domicilio__formMain       = _("Por favor, ingrese su domicilio.");
+$form_validation_msg_data_localidad__formMain       = _("Por favor, ingrese su localidad.");
+$form_validation_msg_data_codigoPostal__formMain    = _("Por favor, ingrese su c&oacute;digo postal."); 
+$form_validation_msg_data_provincia__formMain       = _("Por favor, ingrese su provincia.");
+$form_validation_msg_data_pais__formMain            = _("Por favor, ingrese su pa&iacute;s.");
+   
+$form_validation_msg_data_fecha__formMain           = _("Por favor, indique la fecha deseada.");
+$form_validation_msg_data_dni__formMain             = _("Por favor, ingrese su n&uacute;mero de DNI.");
+   
+$form_validation_msg_data_email__formMain           = _("Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida."); 
+$form_validation_msg_data_telefono__formMain        = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono."); 
+$form_validation_msg_data_celular__formMain         = _("Por favor, ingrese su n&uacute;mero de celular."); 
+   
+$form_validation_msg_data_webSite__formMain         = _("Por favor, ingrese su sitio web.");
+$form_validation_msg_data_facebook__formMain        = _("Por favor, ingrese su perfil de Facebook.");
+$form_validation_msg_data_instagram__formMain       = _("Por favor, ingrese su perfil de Instagram.");
+$form_validation_msg_data_comoQueres__formMain      = _("Por favor, indique un medio de contacto.");
+   
+$form_validation_msg_data_empresa__formMain         = _("Por favor, ingrese el nombre de su empresa.");
+$form_validation_msg_data_razonSocial__formMain     = _("Por favor, ingrese su raz&oacute;n social.");
+$form_validation_msg_data_cargo__formMain           = _("Por favor, ingrese su cargo.");
+$form_validation_msg_data_rubro__formMain           = _("Por favor, ingrese un rubro.");
+$form_validation_msg_data_asunto__formMain          = _("Por favor, ingrese un asunto.");
+   
+$form_validation_msg_data_area__formMain            = _("Por favor, elija un &aacute;rea de contacto.");        
+$form_validation_msg_data_newsletter__formMain      = _("Por favor, elija una opci&oacute;n.");
+$form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su mensaje.");
 
 
 
@@ -114,54 +154,11 @@ if (isset($_POST['button_form_submit__formMain'])){
 
 
 
-/* // Validation ------------------------------------------------------------ */
-$form_validation_div_msg__formMain                  = '';
-$form_validation_div_class__formMain                = 'displayNone';
-
-$form_validation_msg_data_nombre__formMain          = _("Por favor, ingrese su nombre.");
-$form_validation_msg_data_apellido__formMain        = _("Por favor, ingrese su apellido.");
-$form_validation_msg_data_nombreAp__formMain        = _("Por favor, ingrese su nombre y apellido.");
-$form_validation_msg_data_nombreCo__formMain        = _("Por favor, ingrese su nombre completo.");
-$form_validation_msg_data_username__formMain        = _("Por favor, ingrese un nombre de usuario.");
-$form_validation_msg_data_cantidad__formMain        = _("Por favor, ingrese una cantidad.");
-   
-$form_validation_msg_data_direccion__formMain       = _("Por favor, ingrese su direcci&oacute;n.");
-$form_validation_msg_data_ciudad__formMain          = _("Por favor, ingrese su ciudad.");
-$form_validation_msg_data_domicilio__formMain       = _("Por favor, ingrese su domicilio.");
-$form_validation_msg_data_localidad__formMain       = _("Por favor, ingrese su localidad.");
-$form_validation_msg_data_codigoPostal__formMain    = _("Por favor, ingrese su c&oacute;digo postal."); 
-$form_validation_msg_data_provincia__formMain       = _("Por favor, ingrese su provincia.");
-$form_validation_msg_data_pais__formMain            = _("Por favor, ingrese su pa&iacute;s.");
-   
-$form_validation_msg_data_fecha__formMain           = _("Por favor, indique la fecha deseada.");
-$form_validation_msg_data_dni__formMain             = _("Por favor, ingrese su n&uacute;mero de DNI.");
-   
-$form_validation_msg_data_email__formMain           = _("Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida."); 
-$form_validation_msg_data_telefono__formMain        = _("Por favor, ingrese su n&uacute;mero de tel&eacute;fono."); 
-$form_validation_msg_data_celular__formMain         = _("Por favor, ingrese su n&uacute;mero de celular."); 
-   
-$form_validation_msg_data_webSite__formMain         = _("Por favor, ingrese su sitio web.");
-$form_validation_msg_data_facebook__formMain        = _("Por favor, ingrese su perfil de Facebook.");
-$form_validation_msg_data_instagram__formMain       = _("Por favor, ingrese su perfil de Instagram.");
-$form_validation_msg_data_comoQueres__formMain      = _("Por favor, indique un medio de contacto.");
-   
-$form_validation_msg_data_empresa__formMain         = _("Por favor, ingrese el nombre de su empresa.");
-$form_validation_msg_data_razonSocial__formMain     = _("Por favor, ingrese su raz&oacute;n social.");
-$form_validation_msg_data_cargo__formMain           = _("Por favor, ingrese su cargo.");
-$form_validation_msg_data_rubro__formMain           = _("Por favor, ingrese un rubro.");
-$form_validation_msg_data_asunto__formMain          = _("Por favor, ingrese un asunto.");
-   
-$form_validation_msg_data_area__formMain            = _("Por favor, elija un área de contacto.");        
-$form_validation_msg_data_newsletter__formMain      = _("Por favor, elija una opci&oacute;n.");
-$form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su mensaje.");
-
-
-
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- */
     if (empty($_POST["data_nombre__formMain"])) {
-        $form_validation_div_msg__formMain                      = $form_validation_msg_data_nombre__formMain;
-        $form_validation_div_class__formMain                    = " form_validation_div_invalid";
-        $form_validation_input_class_data_nombre__formMain     = " form_validation_input_invalid";
+        $form_validation_div_msg__formMain                  = $form_validation_msg_data_nombre__formMain;
+        $form_validation_div_class__formMain                = " form_validation_div_invalid";
+        $form_validation_input_class_data_nombre__formMain  = " form_validation_input_invalid";
         $form_input_autofocus_data_nombre__formMain         = "autofocus";
 
     } elseif (empty($_POST["data_apellido__formMain"])) {
@@ -507,8 +504,10 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
 
     // echo '<META HTTP-EQUIV="Refresh" Content="0;URL='. $url_global .'/gracias.php">';
 
+
+                   
 /* // INICIA MENSAJE OK EN $form_status_ -------------------------------- */
-            $form_status__formMain = '<p class="status ok" role="alert">'. _("$form_status_ok_globalA__formMain") .' '. _("$form_status_ok_globalB__formMain") .'</p>';
+            $form_status__formMain = '<p class="form_status form_status_ok" role="alert" autofocus>'. _("$form_status_ok_globalA__formMain") .' '. _("$form_status_ok_globalB__formMain") .'</p>';
             $form_validation_div_class__formMain = 'displayNone';
 /* // FIN mensaje ok en $form_status_ ----------------------------------- */
             
@@ -516,14 +515,14 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
             
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
             $form_status_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formOK">'
-                    . '<div role="document" tabindex="0">'
-                    . '<button type="submit" class="button_pop_close hover_grow_S_ani">'._("Cerrar").'</button>'
-                    . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'">'._("$form_status_ok_globalA__formMain").'</h2>'
-                    . '<p>'. _("$form_status_ok_globalB__formMain") .'</p>'
-                    . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
-                    . '</div>'
-                    . '</div>'
-                    . '<div class="modal_global modal_formStatus"></div>';
+                . '<div role="document" tabindex="0">'
+                . '<button type="submit" class="button_pop_close hover_grow_S_ani">'._("Cerrar").'</button>'
+                . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'">'._("$form_status_ok_globalA__formMain").'</h2>'
+                . '<p>'. _("$form_status_ok_globalB__formMain") .'</p>'
+                . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
+                . '</div>'
+                . '</div>'
+                . '<div class="modal_global modal_formStatus"></div>';
             $form_validation_div_class__formMain = 'displayNone';
             $form_status__formMain = '';
 /* // FIN mensaje ok en popup ----------------------------------------------- */
@@ -562,7 +561,7 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
             
             
 /* // INICIA MENSAJE ERROR EN $form_status_ ----------------------------- */
-            $form_status__formMain = '<p class="status error" role="alert">'. _("$form_status_error_globalA__formMain") .' <span class="displayBlock">'. _("$form_status_error_globalB__formMain") .'</span></p>';
+            $form_status__formMain = '<p class="form_status form_status_error" role="alert" autofocus>'. _("$form_status_error_globalA__formMain") .' <span class="displayBlock">'. _("$form_status_error_globalB__formMain") .'</span></p>';
             $form_validation_div_class__formMain = 'displayNone';
 /* // FIN mensaje error en $form_status_ -------------------------------- */
             
@@ -570,15 +569,15 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
             
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- */
             $form_status_pop__formMain = '<div class="pop_global pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
-                    . '<div role="document" tabindex="0">'
-                    . '<button type="submit" class="button_pop_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
-                    . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMain .'">'. _("$form_status_error_globalA__formMain") .'</h2>'
-                    . '<p>'. _("$form_status_error_globalB__formMain") .'</p>'
-                    . '<p>'. _("$form_status_error_globalC__formMain") .'</p>'
-                    . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
-                    . '</div>'
-                    . '</div>'
-                    . '<div class="modal_global modal_formStatus"></div>';
+                . '<div role="document" tabindex="0">'
+                . '<button type="submit" class="button_pop_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
+                . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMain .'">'. _("$form_status_error_globalA__formMain") .'</h2>'
+                . '<p>'. _("$form_status_error_globalB__formMain") .'</p>'
+                . '<p>'. _("$form_status_error_globalC__formMain") .'</p>'
+                . '<button type="submit" class="button_pop_submit">'. _("OK") .'</button>'
+                . '</div>'
+                . '</div>'
+                . '<div class="modal_global modal_formStatus"></div>';
             $form_validation_div_class__formMain = 'displayNone';
             $form_status__formMain = '';
 /* // FIN mensaje error en popup -------------------------------------------- */

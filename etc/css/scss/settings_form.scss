@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Form Settings | Etc [/etc/css/scss/settings_forms.scss]
+   Form Settings | Etc [/etc/css/scss/settings_form.scss]
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
 .form_label_name, .form_validation_span{
@@ -226,7 +226,6 @@ form{
     }
         
     button, input, select, textarea{
-        font-size: 100%;/* Corrects font size not being inherited in all browsers. */
         vertical-align: baseline;/* Improves appearance and consistency in all browsers. */
         *vertical-align: middle;/* Improves appearance and consistency in all browsers. */
     }
