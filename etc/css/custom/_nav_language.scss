@@ -38,7 +38,7 @@
         vertical-align: initial;
     }
 
-    //@include navBT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+    //@include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
     @include beforeTablet{
         @include positionTL(15px, 20px);
         position: absolute;
@@ -122,7 +122,7 @@
         }
     }
 
-    //@include navAT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+    //@include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
     @include afterTablet{
         @include positionTR(10px, $nav_language_ul_right_AT);
         position: absolute;
