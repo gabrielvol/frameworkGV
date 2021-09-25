@@ -1,0 +1,49 @@
+/* * Baek y Asociados * ========================================================
+   Language Switch Styles | Custom [/etc/css/custom/nav_language.scss]
+   ========================================================================== */
+.nav_language_ul{
+    z-index: $zIndex_nav_language_ul;
+    
+    a{
+        @include transition(0.6s);
+        display: block;
+        //box-sizing: border-box;
+    }
+
+    //@include navBT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+    @include beforeTablet{
+    }
+
+    //@include navAT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+    @include afterTablet{
+        width: $nav_language_ul_width_AT;
+        margin-top: -1px;
+        
+        li{
+            @include squareSize($nav_language_size_AT);
+            position: relative;
+        }
+
+        a{
+            @include borderStyle($bdWhite);
+            @include centerAbsolute(calc(#{$nav_language_anchor_size_AT} + 0px), $nav_language_anchor_size_AT);
+            font-size: 0.8rem;// REF [I]
+            line-height: $nav_language_anchor_size_AT;
+            text-align: center;
+            
+            &, &:active, &:visited{
+                color: $grey2XL;// REF [I]
+            }
+            
+            &:focus, &:hover{
+                color: $white;// REF [I]
+            }
+        }
+    }
+    
+    @include afterTabletLandscape{
+        a{
+            font-size: 0.9rem;// REF [I]
+        }
+    }
+}
