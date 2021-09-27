@@ -328,9 +328,9 @@
 @if $classes_container_act_B600 == "on"{
     .containerB600{
         @include mobileOnly{
-            width: $container_value_MO!important;
+            width: $container_value_B600;
         }
-        @include beforeMobile600{
+        @media (min-width: 500px) and (max-width: 600px){
             width: $container_value_B600;            
             &.container_centered_absoluteB600{    
                 position: absolute;
