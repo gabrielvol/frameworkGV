@@ -502,7 +502,7 @@ if (isset($_POST['button_form_submit__formMain'])){
 /* // Si todos los campos validan se envia el correo ------------------------ */
         if(mail($formMail_recipient, $formMail_asunto, $formMail_texto, $formMail_headers)){
 
-    // echo '<META HTTP-EQUIV="Refresh" Content="0;URL='. $url_global .'/gracias.php">';
+    // echo '<META HTTP-EQUIV="Refresh" Content="0;URL='. $url_gracias_full .'">';
 
 
                    

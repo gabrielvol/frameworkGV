@@ -8,8 +8,8 @@
         <?php echo _("Contacto"); ?>
     </a>
 </li>
-<li class="nav_item-PAGINA <?php if($nav_pageCurrent == 4) { echo 'nav_item_current'; } ?>">
-    <a <?php echo $href_PAGINA; if($nav_pageCurrent == 4) { echo ' aria-current="page"'; } ?>>
+<li class="nav_item-PAGINA <?php if($nav_pageCurrent == 5) { echo 'nav_item_current'; } ?>">
+    <a <?php echo $href_PAGINA; if($nav_pageCurrent == 5) { echo ' aria-current="page"'; } ?>>
         <?php echo _("pagina"); ?>
     </a>
 </li>

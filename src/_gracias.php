@@ -4,7 +4,7 @@
     
     $page_int               = 1;
     $page_gracias           = 1;  
-    $nav_pageCurrent        = 0;
+    $nav_pageCurrent        = 4;
     
     $has_form               = 0;
     $has_lightbox           = 0;
@@ -36,7 +36,7 @@
 <body>
     <?php
         include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php');
-        include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/formSend.inc.php');
+        include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/form.main.send.inc.php');
     ?>
     <div id="main" class="page_int page_gracias" role="main">
         <h1 class="alignCenter">Gracias</h1>
