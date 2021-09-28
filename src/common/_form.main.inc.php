@@ -5,8 +5,8 @@
         include('form.send.inc.php');
 
         // echo $form_status__formMain;
-        echo $form_status_pop__formMain;
-        echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>';               
+        // echo $form_status_pop__formMain;
+        // echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>';               
     ?>
 
     <label for="data_nombre__formMain">
