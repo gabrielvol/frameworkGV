@@ -2,9 +2,9 @@
    Gettext de_DE -- Contacto
    ========================================================================== */
 
-<?php echo _('* Datos obligatorios.'); ?>
-msgid "* Datos obligatorios."
-msgstr "* Pflicht Daten."
+<?php echo _('Datos obligatorios.'); ?>
+msgid "Datos obligatorios."
+msgstr "Pflicht Daten."
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>
 msgid "Los campos marcados con * son obligatorios."

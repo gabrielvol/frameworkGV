@@ -2,9 +2,9 @@
    Gettext es_AR -- Contacto
    ========================================================================== */
 
-<?php echo _('* Datos obligatorios.'); ?>
-msgid "* Datos obligatorios."
-msgstr "* Datos obligatorios."
+<?php echo _('Datos obligatorios.'); ?>
+msgid "Datos obligatorios."
+msgstr "Datos obligatorios."
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>
 msgid "Los campos marcados con * son obligatorios."
@@ -141,6 +141,16 @@ msgstr "Pa&iacute;s"
 <?php echo _('Por favor, ingrese su pa&iacute;s.'); ?>
 msgid "Por favor, ingrese su pa&iacute;s."
 msgstr "Por favor, ingrese su pa&iacute;s."
+
+
+
+<?php echo _('Ciudad'); ?>
+msgid "Ciudad"
+msgstr "Ciudad"
+
+<?php echo _('Por favor, ingrese su ciudad.'); ?>
+msgid "Por favor, ingrese su ciudad."
+msgstr "Por favor, ingrese su ciudad."
 
 
 

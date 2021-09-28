@@ -2,13 +2,13 @@
    Gettext en_GB -- Contacto
    ========================================================================== */
 
-<?php echo _('* Datos obligatorios.'); ?>
-msgid "* Datos obligatorios."
-msgstr "* Mandatory fields."
+<?php echo _('Datos obligatorios.'); ?>
+msgid "Datos obligatorios."
+msgstr "Mandatory fields."
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>
 msgid "Los campos marcados con * son obligatorios."
-msgstr "* Marked fields are mandatory."
+msgstr "Marked fields (*) are mandatory."
 
 <?php echo _('Complete el formulario por favor. Nos comunicaremos con Ud. a la brevedad.'); ?>
 msgid "Complete el formulario por favor. Nos comunicaremos con Ud. a la brevedad."
@@ -124,6 +124,10 @@ msgstr "State/Province"
 msgid "Por favor, ingrese su provincia."
 msgstr "Please, enter your state/province."
 
+<?php echo _('Por favor, seleccione su provincia.'); ?>
+msgid "Por favor, seleccione su provincia."
+msgstr "Please, select a state/province from the list."
+
 <?php echo _('Seleccione su provincia'); ?>
 msgid "Seleccione su provincia"
 msgstr "Select a state/province from the list"
@@ -137,6 +141,16 @@ msgstr "Pa&iacute;s"
 <?php echo _('Por favor, ingrese su pa&iacute;s.'); ?>
 msgid "Por favor, ingrese su pa&iacute;s."
 msgstr "Please, enter your country."
+
+
+
+<?php echo _('Ciudad'); ?>
+msgid "Ciudad"
+msgstr "City"
+
+<?php echo _('Por favor, ingrese su ciudad.'); ?>
+msgid "Por favor, ingrese su ciudad."
+msgstr "Please, enter your city."
 
 
 

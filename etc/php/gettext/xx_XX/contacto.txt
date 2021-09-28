@@ -2,8 +2,8 @@
    Gettext xx_XX -- Contacto
    ========================================================================== */
 
-<?php echo _('* Datos obligatorios.'); ?>
-msgid "* Datos obligatorios."
+<?php echo _('Datos obligatorios.'); ?>
+msgid "Datos obligatorios."
 msgstr ""
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>

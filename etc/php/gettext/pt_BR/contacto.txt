@@ -2,8 +2,8 @@
    Gettext pt_BR -- Contacto
    ========================================================================== */
 
-<?php echo _('* Datos obligatorios.'); ?>
-msgid "* Datos obligatorios."
+<?php echo _('Datos obligatorios.'); ?>
+msgid "Datos obligatorios."
 msgstr "Dados obrigat&oacute;rios."
 
 <?php echo _('Los campos marcados con * son obligatorios.'); ?>
