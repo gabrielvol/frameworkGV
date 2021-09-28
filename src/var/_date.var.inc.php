@@ -4,6 +4,8 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
+// https://www.php.net/manual/en/timezones.america.php
+// REF [13]
 
 
 
@@ -44,6 +46,7 @@
 
 
 
+// REF [13]
 date_default_timezone_set('America/Argentina/Buenos_Aires');
 
 $date_year_from     = 2021;
