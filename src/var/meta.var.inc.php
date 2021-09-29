@@ -47,14 +47,14 @@
 
 
 
-/* // Site language ----------------------------------------------------- */
-$site_lang_code             = 'es';
+/* // Site language --------------------------------------------------------- */
+$site_lang_code             = 'es'; // REF [13]
 $site_lang_code_country     = 'AR';
 $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
 $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country;
 
 
-/* // Site titles ------------------------------------------------------- */
+/* // Site titles ----------------------------------------------------------- */
 $site_name_full             = 'SiteNameFull';
 $site_name_short            = 'SiteNameShort';
 $site_name_title            = 'SiteNameTitle';
@@ -66,12 +66,12 @@ $site_name_title_GB         = 'SiteNameTitle';
 $site_name_tag_GB           = 'SiteNameTag';
 
 
-/* // Site descriptions ------------------------------------------------- */
+/* // Site descriptions ----------------------------------------------------- */
 $site_desc_global           = '';
 $site_desc_global_GB        = '';
 
 
-/* // Open Graph meta --------------------------------------------------- */     
+/* // Open Graph meta ------------------------------------------------------- */     
 // Max 35 char                                                       ·
 //                                 123456789-123456789-123456789-12345
 // OpenGraph Title Global se usa en index solamente

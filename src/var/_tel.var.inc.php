@@ -45,7 +45,7 @@
 
 
 /* // Tel prefixes ---------------------------------------------------------- */
-$tel_code_country               = '54';
+$tel_code_country               = '54'; // REF [13]
 
 $tel_code_area                  = '11';
 $tel_code_area_int              = '911';

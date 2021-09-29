@@ -1,6 +1,6 @@
 <?php
     $url_entorno = '/nuevo';
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int               = 1;    
     $nav_pageCurrent        = 0;
@@ -31,7 +31,7 @@
     $openGraph_siteName         = $openGraph_siteName_global;
     
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/locale.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/locale.inc.php');
 ?>
 </head>
 <body>
