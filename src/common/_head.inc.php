@@ -29,7 +29,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
 <link href="<?php echo $url_entorno; ?>/css/uikit.min.css" rel="stylesheet">
+
+<?php if($gettext_idioma == 'de_AU'): /* // REF [14] */ ?>
+<link href="<?php echo $url_entorno; ?>/css/styles_zh.css" rel="stylesheet">
+<?php else: ?>
 <link href="<?php echo $url_entorno; ?>/css/styles.css" rel="stylesheet">
+<?php endif; ?>
+
 <link rel="author" href="humans.txt">
 
 <link rel="canonical" href="<?php echo $url_global; ?>" />

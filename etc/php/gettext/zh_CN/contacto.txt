@@ -1,0 +1,249 @@
+/* =============================================================================
+   Gettext zh_CN -- Contacto
+   ========================================================================== */
+
+<?php echo _('Datos obligatorios.'); ?>
+msgid "Datos obligatorios."
+msgstr "必填信息"
+
+<?php echo _('Los campos marcados con * son obligatorios.'); ?>
+msgid "Los campos marcados con * son obligatorios."
+msgstr "带*号的是必填选项"
+
+<?php echo _('Complete el formulario por favor. Nos comunicaremos con Ud. a la brevedad.'); ?>
+msgid "Complete el formulario por favor. Nos comunicaremos con Ud. a la brevedad."
+msgstr "请填写表格，我们会尽快联系您"
+
+<?php echo _('Complete el formulario por favor.'); ?>
+msgid "Complete el formulario por favor."
+msgstr "请填写表格"
+
+<?php echo _('Nos comunicaremos con Ud. a la brevedad.'); ?>
+msgid "Nos comunicaremos con Ud. a la brevedad."
+msgstr "我们会尽快联系您"
+
+<?php echo _('Env&iacute;o exitoso.'); ?>
+msgid "Env&iacute;o exitoso."
+msgstr "发送成功"
+
+<?php echo _('Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias.'); ?>
+msgid "Los datos se han enviado correctamente, nos comunicaremos a la brevedad. Muchas Gracias."
+msgstr "信息发送成功,我们会尽快联系您"
+
+<?php echo _('Hubo un error al enviar el mensaje.'); ?>
+msgid "Hubo un error al enviar el mensaje."
+msgstr "信息发送错误"
+
+<?php echo _('Intente nuevamente m&aacute;s tarde.'); ?>
+msgid "Intente nuevamente m&aacute;s tarde."
+msgstr "请稍后重试"
+
+<?php echo _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a'); ?>
+msgid "Puede comunicarse enviando un mensaje por correo electr&oacute;nico a"
+msgstr "您可以发送邮件到…..与我们联系"
+
+
+
+<?php echo _('Nombre'); ?>
+msgid "Nombre"
+msgstr "姓名"
+
+<?php echo _('Apellido'); ?>
+msgid "Apellido"
+msgstr ""
+
+<?php echo _('Nombre y Apellido'); ?>
+msgid "Nombre y Apellido"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su nombre.'); ?>
+msgid "Por favor, ingrese su nombre."
+msgstr "请输入您的姓名"
+
+<?php echo _('Por favor, ingrese su apellido.'); ?>
+msgid "Por favor, ingrese su apellido."
+msgstr ""
+
+<?php echo _('Por favor, ingrese su nombre y apellido.'); ?>
+msgid "Por favor, ingrese su nombre y apellido."
+msgstr ""
+
+
+
+<?php echo _('Direcci&oacute;n'); ?>
+msgid "Direcci&oacute;n"
+msgstr ""
+
+<?php echo _('Domicilio'); ?>
+msgid "Domicilio"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su direcci&oacute;n.'); ?>
+msgid "Por favor, ingrese su direcci&oacute;n."
+msgstr ""
+
+<?php echo _('Por favor, ingrese su domicilio.'); ?>
+msgid "Por favor, ingrese su domicilio."
+msgstr ""
+
+
+
+<?php echo _('Localidad'); ?>
+msgid "Localidad"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su localidad.'); ?>
+msgid "Por favor, ingrese su localidad."
+msgstr ""
+
+
+
+<?php echo _('C&oacute;digo postal'); ?>
+msgid "C&oacute;digo postal"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su c&oacute;digo postal.'); ?>
+msgid "Por favor, ingrese su c&oacute;digo postal."
+msgstr ""
+
+
+
+<?php echo _('Provincia'); ?>
+msgid "Provincia"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su provincia.'); ?>
+msgid "Por favor, ingrese su provincia."
+msgstr ""
+
+<?php echo _('Seleccione su provincia'); ?>
+msgid "Seleccione su provincia"
+msgstr "SinTraduccion"
+
+
+
+<?php echo _('Tel&eacute;fono'); ?>
+msgid "Tel&eacute;fono"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su n&uacute;mero de tel&eacute;fono.'); ?>
+msgid "Por favor, ingrese su n&uacute;mero de tel&eacute;fono."
+msgstr ""
+
+
+
+<?php echo _('Correo electr&oacute;nico'); ?>
+msgid "Correo electr&oacute;nico"
+msgstr "邮箱"
+
+<?php echo _('E-mail'); ?>
+msgid "E-mail"
+msgstr "邮箱"
+
+<?php echo _('Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida.'); ?>
+msgid "Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida."
+msgstr ""
+
+<?php echo _('Por favor, ingrese su e-mail.'); ?>
+msgid "Por favor, ingrese su e-mail."
+msgstr "请输入您的邮箱地址"
+
+
+
+<?php echo _('Empresa'); ?>
+msgid "Empresa"
+msgstr ""
+
+<?php echo _('Por favor, ingrese el nombre de su empresa.'); ?>
+msgid "Por favor, ingrese el nombre de su empresa."
+msgstr ""
+
+
+
+<?php echo _('Raz&oacute;n Social'); ?>
+msgid "Raz&oacute;n Social"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su raz&oacute;n social.'); ?>
+msgid "Por favor, ingrese su raz&oacute;n social."
+msgstr ""
+
+
+
+<?php echo _('Sitio web'); ?>
+msgid "Sitio web"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su sitio web.'); ?>
+msgid "Por favor, ingrese su sitio web."
+msgstr ""
+
+
+
+<?php echo _('Perfil de Facebook'); ?>
+msgid "Perfil de Facebook"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su perfil de Facebook.'); ?>
+msgid "Por favor, ingrese su perfil de Facebook."
+msgstr ""
+
+
+
+<?php echo _('Cargo'); ?>
+msgid "Cargo"
+msgstr ""
+
+<?php echo _('Por favor, ingrese su cargo.'); ?>
+msgid "Por favor, ingrese su cargo."
+msgstr ""
+
+
+
+<?php echo _('Rubro'); ?>
+msgid "Rubro"
+msgstr ""
+
+<?php echo _('Por favor, ingrese un rubro.'); ?>
+msgid "Por favor, ingrese un rubro."
+msgstr ""
+
+
+
+<?php echo _('Asunto'); ?>
+msgid "Asunto"
+msgstr ""
+
+<?php echo _('Por favor, ingrese un asunto.'); ?>
+msgid "Por favor, ingrese un asunto."
+msgstr ""
+
+
+
+<?php echo _('Fecha'); ?>
+msgid "Fecha"
+msgstr ""
+
+<?php echo _('Por favor, indique la fecha deseada.'); ?>
+msgid "Por favor, indique la fecha deseada."
+msgstr ""
+
+
+
+<?php echo _('Mensaje'); ?>
+msgid "Mensaje"
+msgstr "信息"
+
+<?php echo _('Escriba aqu&iacute; su mensaje'); ?>
+msgid "Escriba aqu&iacute; su mensaje"
+msgstr "请输入信息"
+
+<?php echo _('Por favor, complete su mensaje.'); ?>
+msgid "Por favor, complete su mensaje."
+msgstr ""
+
+
+
+<?php echo _('Enviar'); ?>
+msgid "Enviar"
+msgstr "发送"

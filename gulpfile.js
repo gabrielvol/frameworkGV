@@ -15,6 +15,13 @@ function compileSass() {
         .pipe(dest('./etc/css/compilation/'));
 }
 
+// REF [14]
+//function compileSass() {
+//    return src('./etc/css/custom/styles_zh.scss')
+//        .pipe(sass())
+//        .pipe(dest('./etc/css/compilation/'));
+//}
+
 
 /* // CSSnano / PostCSS / Autoprefixer -------------------------------------- */
 function processCSS() {
@@ -22,6 +29,13 @@ function processCSS() {
         .pipe(postcss())
         .pipe(dest("./src/css/"));
 }
+
+// REF [14]
+//function processCSS() {
+//    return src("./etc/css/compilation/styles_zh.css")
+//        .pipe(postcss())
+//        .pipe(dest("./src/css/"));
+//}
 
 
 /* // Watchers -------------------------------------------------------------- */
@@ -31,6 +45,7 @@ function watchSCSS(){
 
 function watchCompilation(){
     watch('./etc/css/compilation/styles.css', {delay: 1000}, processCSS);
+//    watch('./etc/css/compilation/styles_zh.css', {delay: 1000}, processCSS); // REF [14]
 }
 
 exports.default = parallel(watchSCSS, watchCompilation);

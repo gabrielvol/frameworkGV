@@ -54,4 +54,22 @@
     font-style: normal;
     font-display: swap;
 }
+
+// REF [14]
+@font-face {
+    font-family: 'mingliuregular';
+    src: url('#{$url_entorno}/fonts/mingliu-01-webfont.woff2') format('woff2'),
+         url('#{$url_entorno}/fonts/mingliu-01-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'pmingliuregular';
+    src: url('#{$url_entorno}/fonts/pmingliu-02-webfont.woff2') format('woff2'),
+         url('#{$url_entorno}/fonts/pmingliu-02-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 */

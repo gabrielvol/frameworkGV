@@ -61,6 +61,8 @@ $font_families_map:(
     arial:          Arial,
     roboto:         Roboto,
 //    timesNewRoman:  'Times New Roman'
+//    ming: 'mingliuregular' // REF [14]
+//    pming: 'pmingliuregular' // REF [14]
 );
 
 $font_weights_map:(
@@ -78,10 +80,12 @@ $font_weights_map:(
 
 
 /* // Variables de fuentes -------------------------------------------------- */
-$arial:         map-get($font_families_map, arial), $font_families_sans_list_fallback;
-$roboto:        map-get($font_families_map, roboto), $font_families_sans_list_fallback;
-//$timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
-//$monospacedFont: map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
+$arial:             map-get($font_families_map, arial), $font_families_sans_list_fallback;
+$roboto:            map-get($font_families_map, roboto), $font_families_sans_list_fallback;
+//$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
+//$monospacedFont:    map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
+//$ming:              map-get($font_families_map, ming); // REF [14]
+//$pming:             map-get($font_families_map, pming); // REF [14]
 
 /*___ Creamos la variable de la fuente principal del sitio _*/
 $ftFamily_main_global:    $arial;
