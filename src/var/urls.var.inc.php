@@ -141,7 +141,7 @@ $url_gracias_full       = $url_global . $url_gracias;
 $url_openGraph_global   = $url_global_full;
     
     
-/* // href ------------------------------------------------------------------ */ 
+/* // href ------------------------------------------------------------------ */
 $href_root          = 'href="'. $url_root .'"'; 
 $href_logo          = $href_root;
 $href_index         = 'href="'. $url_index .'"';
@@ -179,7 +179,7 @@ $url_main_hs_INICIO_full_gettext        = $url_global . $url_index . $hash_main_
 // $url-PAGINA-hs-PAGINA-full_gettext      = $url_global . $url_PAGINA . $url_PAGINA_gettext;
 // $url-PAGINA-hs-PAGINA-full_gettext      = $url_global . $url_PAGINA . $url_PAGINA_gettext;
     
-/* // misc / experimental --------------------------------------------------- */ 
+/* // misc / experimental --------------------------------------------------- */
     
 // $url_actual     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
