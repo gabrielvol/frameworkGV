@@ -16,7 +16,7 @@ function compileSass() {
 }
 
 // REF [14]
-//function compileSass() {
+//function compileSassZH() {
 //    return src('./etc/css/custom/styles_zh.scss')
 //        .pipe(sass())
 //        .pipe(dest('./etc/css/compilation/'));
@@ -31,7 +31,7 @@ function processCSS() {
 }
 
 // REF [14]
-//function processCSS() {
+//function processCSSZH() {
 //    return src("./etc/css/compilation/styles_zh.css")
 //        .pipe(postcss())
 //        .pipe(dest("./src/css/"));
@@ -40,7 +40,8 @@ function processCSS() {
 
 /* // Watchers -------------------------------------------------------------- */
 function watchSCSS(){
-    watch('./etc/css/custom/**/*.scss', {ignoreInitial: false}, compileSass);
+    watch('./etc/css/custom/**/*.scss', {ignoreInitial: false}, compileSass);    
+//    watch('./etc/css/custom/**/*.scss', {ignoreInitial: false}, compileSassZH); // REF [14]
 }
 
 function watchCompilation(){
