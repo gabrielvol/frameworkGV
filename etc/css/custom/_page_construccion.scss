@@ -1,4 +1,43 @@
 /* * NombreDeProyecto * ========================================================
    Page Construccion Styles | Custom [/etc/css/custom/page_construccion.scss]
    ========================================================================== */
-.page_construccion{}
+.page_construccion{
+    min-height: 400px;
+    padding-bottom: 50px;
+    
+    h1{
+        margin-bottom: 15px;
+        color: $black;
+        font-family: $arial;
+        font-size: 2rem;
+        line-height: 1.1em;
+        text-align: center;
+        
+        & + p{
+            background-image: url('#{$url_entorno}/img/img_construccion.jpg');
+            background-size: calc(#{$construccion_p_PT} - 30px);
+            background-repeat: no-repeat;
+            background-position: center top 20px;
+            padding-top: $construccion_p_PT;
+        }
+    }
+     
+    p{
+        font-size: 1rem;
+        text-align: center;
+        
+        & + p{
+            margin-top: 0px;
+        }
+        
+        a{
+            &, &:active, &:visited{
+                color: $greyD;
+            }
+            
+            &:focus, &:hover{
+                color: $black;
+            }
+        }
+    }
+}
