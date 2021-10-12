@@ -72,13 +72,19 @@ if($l == 'en_GB'){
     $gettext_idioma     = 'es_AR';
     $gettext_idioma_url = '?l=es_AR';
 }
-    
+/*
+*/
+
+
 /*
 if(isset($l)) {
     $gettext_idiomaElegido = $_GET['l'];        
 } else {
     $gettext_idiomaElegido = 'es_AR';
 }        
-$gettext_idioma = $gettext_idiomaElegido;
+$gettext_idioma     = $gettext_idiomaElegido;
+$gettext_idioma_url = '?l='. $gettext_idiomaElegido;
 */
+
+
 ?>
