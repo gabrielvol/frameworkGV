@@ -87,6 +87,6 @@ $roboto:            map-get($font_families_map, roboto), $font_families_sans_lis
 //$ming:              map-get($font_families_map, ming); // REF [14]
 //$pming:             map-get($font_families_map, pming); // REF [14]
 
-/*___ Creamos la variable de la fuente principal del sitio _*/
+/*___ Creamos la variable de la fuente principal del sitio _____________*/
 $ftFamily_main_global:    $arial;
 $ftFamily_bold_global:    $ftFamily_main_global;

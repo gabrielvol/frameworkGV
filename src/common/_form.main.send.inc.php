@@ -65,12 +65,11 @@ $form_validation_msg_data_mensaje__formMain         = _("Por favor, complete su 
 /* // Inicia proceso de form ------------------------------------------------ */
 if (isset($_POST['button_form_submit__formMain'])){
 //        ini_set('sendmail_from', 'tampas@gmail.com');
+//        ini_set('smtp_port',465);
 //        ini_set('SMTP','mail.dominio.com');
+    
 
-//        ini_set('sendmail_from', $form_recipient__formMain);
-//        ini_set('SMTP','mail.'. $domain_global);
-
-    // Asignamos datos de campos a variables
+/*___ Asignamos datos de campos a variables ____________________________*/
     $data_nombre__formMain          = $_POST['data_nombre__formMain'];
     $data_apellido__formMain        = $_POST['data_apellido__formMain'];
     $data_nombreAp__formMain        = $_POST['data_nombreAp__formMain'];
@@ -107,8 +106,9 @@ if (isset($_POST['button_form_submit__formMain'])){
     $data_asunto__formMain          = $_POST['data_asunto__formMain'];
     $data_area__formMain            = $_POST['data_area__formMain'];
     $data_mensaje__formMain         = $_POST['data_mensaje__formMain'];
-
-    // Cabeceras del correo
+    
+    
+/*___ Cabeceras del correo _____________________________________________*/
     $formMail_recipient  = $form_recipient__formMain;
     // $formMail_recipient  = $data_area__formMain;
     $formMail_asunto   = "Contacto Web de ". $data_nombre__formMain ." - ". $data_empresa__formMain;
@@ -506,10 +506,10 @@ if (isset($_POST['button_form_submit__formMain'])){
 
 
                    
-/* // INICIA MENSAJE OK EN $form_status_ -------------------------------- */
+/* // INICIA MENSAJE OK EN $form_status_ ------------------------------------ */
             $form_status__formMain = '<p class="form_status form_status_ok" role="alert" autofocus>'. _("$form_status_ok_globalA__formMain") .' '. _("$form_status_ok_globalB__formMain") .'</p>';
             $form_validation_div_class__formMain = 'displayNone';
-/* // FIN mensaje ok en $form_status_ ----------------------------------- */
+/* // FIN mensaje ok en $form_status_ --------------------------------------- */
             
             
             
@@ -560,10 +560,10 @@ if (isset($_POST['button_form_submit__formMain'])){
             
             
             
-/* // INICIA MENSAJE ERROR EN $form_status_ ----------------------------- */
+/* // INICIA MENSAJE ERROR EN $form_status_ --------------------------------- */
             $form_status__formMain = '<p class="form_status form_status_error" role="alert" autofocus>'. _("$form_status_error_globalA__formMain") .' <span class="displayBlock">'. _("$form_status_error_globalB__formMain") .'</span></p>';
             $form_validation_div_class__formMain = 'displayNone';
-/* // FIN mensaje error en $form_status_ -------------------------------- */
+/* // FIN mensaje error en $form_status_ ------------------------------------ */
             
             
             
