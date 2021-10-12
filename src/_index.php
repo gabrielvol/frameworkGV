@@ -1,5 +1,5 @@
 <?php
-    $url_entorno = '/nuevo';
+    $url_entorno = '/stage';
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_index             = 1;  

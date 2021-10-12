@@ -1,8 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
    ========================================================================== */
-$url_entorno-maqueta:       "/nuevo";
+$url_entorno-test:          "/test";
 $url_entorno-stage:         "/stage";
 $url_entorno-produccion:    "";
 
-$url_entorno:               $url_entorno-maqueta;
+$url_entorno:               $url_entorno-stage;
