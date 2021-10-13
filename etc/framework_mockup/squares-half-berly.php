@@ -15,7 +15,7 @@
         <ul class="serviciosList unstyled">
             <li class="clearfix" id="Logistica">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/01.jpg" class="displayBlock" alt="Logística.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/01.jpg" class="displayBlock" alt="Logística.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Logística</h2>
@@ -25,7 +25,7 @@
             </li>
             <li class="clearfix" id="Comodato">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/02.jpg" class="displayBlock" alt="Comodato.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/02.jpg" class="displayBlock" alt="Comodato.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Comodato</h2>
@@ -36,7 +36,7 @@
             </li>
             <li class="clearfix" id="Clientes">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/03.jpg" class="displayBlock" alt="Clientes.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/03.jpg" class="displayBlock" alt="Clientes.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Clientes</h2>
@@ -45,7 +45,7 @@
             </li>
             <li class="clearfix" id="SegmentosAtendidos">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/04.jpg" class="displayBlock" alt="Segmentos Atendidos.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/04.jpg" class="displayBlock" alt="Segmentos Atendidos.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Segmentos Atendidos</h2>
@@ -64,7 +64,7 @@
             </li>
             <li class="clearfix" id="ConsultoriaTecnica">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/05.jpg" class="displayBlock" alt="Equipos.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/05.jpg" class="displayBlock" alt="Equipos.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Equipos</h2>
@@ -76,7 +76,7 @@
             </li>
             <li class="clearfix" id="Entrenamiento">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/06.jpg" class="displayBlock" alt="Consultoría Técnica.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/06.jpg" class="displayBlock" alt="Consultoría Técnica.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Consultoría Técnica</h2>
@@ -97,7 +97,7 @@
             </li>
             <li class="clearfix" id="SolucionesEmpresa">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/07.jpg" class="displayBlock" alt="Entrenamiento.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/07.jpg" class="displayBlock" alt="Entrenamiento.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Entrenamiento</h2>
@@ -115,7 +115,7 @@
             </li>
             <li class="clearfix" id="CentroAtencion">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/09.jpg" class="displayBlock" alt="Soluciones para Empresas.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/09.jpg" class="displayBlock" alt="Soluciones para Empresas.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Soluciones para su empresa</h2>
@@ -124,7 +124,7 @@
             </li>
             <li class="clearfix">
                 <div class="img mask">
-                    <img src="<?php echo $url_dir; ?>/img/servicios/08.jpg" class="displayBlock" alt="Centro de Atención.">
+                    <img src="<?php echo $url_entorno; ?>/img/servicios/08.jpg" class="displayBlock" alt="Centro de Atención.">
                 </div>
                 <div class="txt borderBox">
                     <h2 class="mbm openSansL">Centro de Atención</h2>
