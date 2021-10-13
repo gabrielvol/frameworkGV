@@ -1,12 +1,12 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   PHP Variables Main Loader [/src/var/main.var.inc.php]
+   Footer Variables [/src/var/footer.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Listado principal de includes de variables php.
+// Archivo de variables php para <footer>
 //
-// #php #variables #includes
+// #php #variables #footer #class
 
 
 
@@ -47,28 +47,12 @@
 
 
 
-/* // Activadores ----------------------------------------------------------- */
-include('act/header.act.inc.php');
-include('act/nav.act.inc.php');
-    
-    
-/* // Data ------------------------------------------------------------------ */
-include('domain.var.inc.php');
-// include('date.var.inc.php');
-include('urls.var.inc.php');
-    
-include('meta.var.inc.php');
-// include('address.var.inc.php');
-// include('tel.var.inc.php');
-include('email.var.inc.php');
-    
-// include('social.var.inc.php');
-    
-// include('file.var.inc.php');
-// include('media.var.inc.php');
-    
-// include('form.var.inc.php');
+/* // Footer Classes -------------------------------------------------------- */
+$footer_class           = '';
 
-include('header.var.inc.php');
-include('footer.var.inc.php');
+if(isset($page_index)){
+    $footer_class       .= ' footer_index';
+}
+
+$footer_classes         = 'class="'. $footer_class .'"';
 ?>
