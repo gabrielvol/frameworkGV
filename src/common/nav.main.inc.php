@@ -14,8 +14,7 @@
         </ul>
     
     <?php
-        // REF [05] `[/src/var/act/nav.act.inc.php]`
-        // REF [05] `[/etc/css/custom/act/classes_useful_act.scss]`
+        // REF [05] `[/src/var/act/nav.act.inc.php]`, `[/etc/css/custom/act/classes_useful_act.scss]`
         if($nav_double_AT_act == 1): ?>
         </div>
     <?php endif; ?>

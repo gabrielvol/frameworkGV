@@ -12,7 +12,7 @@
             width: calc(100% - #{$logo_width_AT});
         } 
          
-        @if $nav_fixed_AT_act == "on"{
+        @if $nav_fixed_AT_act == "on"{ // REF [15]
             position: fixed;
             top: 0;
             right: 0;
@@ -20,7 +20,7 @@
             box-shadow: 0 0 7px $black;
         }
         
-        .navs_container_AT{
+        .navs_container_AT{ // REF [05]
             justify-content: space-between;
             width: 90%;
             margin-right: auto;
