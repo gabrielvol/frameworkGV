@@ -364,13 +364,59 @@ form{
 
         .form_validation_span{
             display: none;
-            padding-top: 3px;
-            padding-left: 10px;
-            color: $form_span_invalid_ftColour;
-            font-family: $arial;
+            color: $form_span_invalid_ftColour; // REF [16]
+            font-family: $poppinsR;
+            font-weight: 400;            
             font-size: 0.8rem!important;
-            font-weight: 700;
-            line-height: 1.3;
+            line-height: $form_span_validation_tooltip_lineHeight;
+            
+            @if $form_span_invalid_tooltip_act == "on"{ // REF [16]
+                @include borderStyle($form_span_invalid_tooltip_bdColour);
+                box-sizing: border-box;
+                width: 98%;
+                min-height: $form_span_validation_tooltip_height;
+                position: absolute;
+                top: calc(-1 * calc(#{$form_span_validation_tooltip_height} + #{$form_span_validation_tooltip_arrow_size} - calc(#{$form_span_validation_tooltip_arrow_size} / 2)));
+                left: 1%;
+                background-color: $bgWhite;
+                padding: $form_span_validation_tooltip_PV 10px;
+                
+                &::before,
+                &::after{
+                    top: 100%;
+                    left: $form_span_validation_tooltip_arrow_size;
+                    border: solid transparent;
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    margin-left: 0;
+                }
+                
+                &::before{
+                    border-color: $greyXL_rgba_00;
+                    border-top-color: $form_span_invalid_tooltip_bdColour;
+                    border-width: calc(#{$form_span_validation_tooltip_arrow_size} + 1px);
+                }
+                
+                &::after{
+                    top: 100%;
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-style: solid;
+                    border-color: rgba(255,255,255,0);
+                    border-top-color: $bdWhite;
+                    border-width: $form_span_validation_tooltip_arrow_size;
+                }
+                
+            } @else {
+                padding-top: 3px;
+                padding-left: 10px;            
+            }
 
             &.form_validation_span_active{
                 display: block;

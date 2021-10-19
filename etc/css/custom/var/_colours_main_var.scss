@@ -113,6 +113,8 @@ $black_rgba_70:     rgba(0, 0, 0, 0.7);
 $black_rgba_80:     rgba(0, 0, 0, 0.8);
 $black_rgba_90:     rgba(0, 0, 0, 0.9);
 
+$greyXL_rgba_00:    rgba(222, 222, 222, 0); // REF [16]
+
 $errorColour:       map-get($colours_merged_map, errorColour);
 
 //$greenSystem3XL:    map-get($colours_merged_map, greenSystem3XL);

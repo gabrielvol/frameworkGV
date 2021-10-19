@@ -127,3 +127,11 @@ $form_input_search_bgSize_AT:        $form_input_search_bgSize_BT;
 
 $button_form_submit_search_width_BT:        $form_input_search_width_BT;
 $button_form_submit_search_width_AT:        $button_form_submit_search_width_BT;
+
+
+/* // Form Validation ------------------------------------------------------- */
+$form_span_validation_tooltip_arrow_size:           10px; // REF [16]
+$form_span_validation_tooltip_lineHeight:           1.2em; // REF [16]
+$form_span_validation_tooltip_lineHeight_quantity:  1; // REF [16]
+$form_span_validation_tooltip_PV:                   10px;
+$form_span_validation_tooltip_height:               calc(calc(#{$form_span_validation_tooltip_PV} * 2) + calc(#{$form_span_validation_tooltip_lineHeight} * #{$form_span_validation_tooltip_lineHeight_quantity})); // REF [16]

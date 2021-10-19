@@ -5,13 +5,14 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para elementos de form.
 //
-// #activador #form #label #input #class #mixin #colour
+// #activador #form #label #input #validation #class #mixin #colour
 
 
 /* // Listado --------------------------------------------------------------- */
 // 01 _ $form_label_inside_act
 // 02 _ $form_label_coloured_act
 // 03 _ $form_input_coloured_act
+// 04 _ $form_span_invalid_tooltip_act // REF [16]
 //
 //
 // 01 _ $form_label_inside_act
@@ -87,8 +88,11 @@
 
 
 /* // Form Label ------------------------------------------------------------ */
-$form_label_inside_act:     on;
-$form_label_coloured_act:   off;
+$form_label_inside_act:             on;
+$form_label_coloured_act:           off;
 
-/* // Forms Input ----------------------------------------------------------- */
-$form_input_coloured_act:   off;
+/* // Form Input ------------------------------------------------------------ */
+$form_input_coloured_act:           off;
+
+/* // Form Validation ------------------------------------------------------- */
+$form_span_invalid_tooltip_act:     off; // REF [16]
