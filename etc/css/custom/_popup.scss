@@ -239,6 +239,26 @@
         text-align: center;        
         text-transform: uppercase;
     }
+        
+    &.pop_formStatus_ok{
+        h2 span{
+            position: relative;
+
+            &::after{
+                @include squareSize(20px);
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: -25px;
+                background-image: url('#{$url_entorno}/img/form_ok.svg');
+                background-size: auto 95%;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-top: -10px;
+            }
+        }
+    }
     
     @include beforeMobile650{
         h2{
