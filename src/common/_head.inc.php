@@ -36,7 +36,7 @@
 <link href="<?php echo $url_entorno; ?>/css/styles.css" rel="stylesheet">
 <?php endif; ?>
 
-<link rel="author" href="humans.txt">
+<link rel="author" href="<?php echo $url_entorno; ?>/humans.txt">
 
 <link rel="canonical" href="<?php echo $url_global; ?>" />
 
