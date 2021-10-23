@@ -19,7 +19,7 @@
     <?php include('nav.main.inc.php'); ?>
         
     <?php
-        if($url_entorno == "/nuevo"){
+        if($url_entorno == "/test"){
             include('nav.language.inc.php');
         }
     ?>

@@ -14,7 +14,7 @@ $(document).ready(function () {
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
             $(this).closest('#header').find('.logo_header').addClass('navDrawer_open');
-//            $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_navDrawer.svg");
+//            $(this).closest('#header').find('.logo_header img').attr("src", "/test/img/logo_navDrawer.svg");
             $(this).closest('#header').find('.logo_header').addClass('navDrawer_ready');   
             
             $(this).closest('#header').find('.nav_language_ul').addClass('navDrawer_open');
@@ -29,7 +29,7 @@ $(document).ready(function () {
         $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
-//        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
+//        $(this).closest('#header').find('.logo_header img').attr("src", "/test/img/logo_header.svg");
         
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');  
         $(this).closest('#header').find('.nav_language_ul').removeClass('navDrawer_open');
@@ -60,7 +60,7 @@ $(document).ready(function () {
         $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
-//        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
+//        $(this).closest('#header').find('.logo_header img').attr("src", "/test/img/logo_header.svg");
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
         $(this).closest('#header').find('.nav_language_ul').removeClass('navDrawer_open');
@@ -90,7 +90,7 @@ $(document).ready(function () {
         $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_ready'); 
-//        $(this).closest('#header').find('.logo_header img').attr("src", "/nuevo/img/logo_header.svg");
+//        $(this).closest('#header').find('.logo_header img').attr("src", "/test/img/logo_header.svg");
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
         $(this).closest('#header').find('.nav_language_ul').removeClass('navDrawer_open');
