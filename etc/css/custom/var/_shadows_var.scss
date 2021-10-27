@@ -1,8 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Shadows Variables | Custom [/etc/css/custom/var/shadows_var.scss]
    ========================================================================== */
-$bgShadowT_img_url: url('#{$url_entorno}/img/bg_shadowT.png');
-$bgShadowB_img_url: url('#{$url_entorno}/img/bg_shadowB.png');
+$bgShadowT_img_url:     url('#{$url_entorno}/img/bg_shadowT.png');
+$bgShadowB_img_url:     url('#{$url_entorno}/img/bg_shadowB.png');
+$bgShadowB_50_img_url:  url('#{$url_entorno}/img/bg_shadowB_50.png');
 
 $txShadow_main:                     0 0 3px $black;
 $txShadow_white:                    0 0 3px $white;

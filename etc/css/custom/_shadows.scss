@@ -64,6 +64,7 @@
 /* // Background Shadows ---------------------------------------------------- */
 .bgShadowT,
 .bgShadowB,
+.bgShadowB_50,
 .bgShadowV{
     background-repeat: repeat-x;
     background-size: auto 20px;
@@ -74,9 +75,17 @@
     background-position: center top;
 }
 
+.bgShadowB,
+.bgShadowB_50{
+    background-position: center bottom;
+}
+
 .bgShadowB{
     background-image: $bgShadowB_img_url;
-    background-position: center bottom;
+}
+
+.bgShadowB_50{
+    background-image: $bgShadowB_50_img_url;
 }
 
 .bgShadowV{
