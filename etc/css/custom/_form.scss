@@ -124,7 +124,17 @@ form{
         }
 
         &:required{}
+        
         &:disabled{}
+
+        &:read-only{
+            user-select: none;
+            
+            &, &:focus, &:hover{
+                @include borderStyle($bdGreyL);
+                box-shadow: inset 0 0 0 transparent;
+            }
+        }
 
         &.nombre{}
         &.email{}
@@ -267,10 +277,44 @@ form{
     input[type="submit"],
     input[type="button"],
     button{
-        @include borderStyle($button_form_submit_bdColour);
+        @include transition(0.7s);
+        background-color: $button_form_submit_bgColour;
+        color: $button_form_submit_ftColour;
         border-radius: $bdRadius_global;
         margin-bottom: $zero;
         font-family: $button_form_submit_ftFamily;
+        
+        @if $googleFont_act == "on"{
+            font-weight: $button_form_submit_ftWeight;
+        }
+        
+        @if $form_submit_border_act == "on"{
+            @include borderStyle($button_form_submit_bdColour);
+        
+            &:focus, &:hover{
+                border-color: $button_form_submit_bdColour_hover;
+            }
+        } @else {
+            border: $none;
+        }
+        
+        &:focus, &:hover{
+            background-color: $button_form_submit_bgColour_hover;
+            color: $button_form_submit_ftColour_hover;
+            box-shadow: inset 0 0 0 $button_form_submit_bgColour_hover;
+        }
+        
+        &.white{
+            @include transition(1s);
+            
+            &, &:focus, &:hover{
+                color: $white;
+            }
+            
+            &:focus, &:hover{
+                text-shadow: $txShadow_white_hover;
+            }
+        } 
     }
     
 

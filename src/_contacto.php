@@ -3,7 +3,7 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int               = 1;   
-    $nav_pageCurrent        = 0;   
+    $nav_pageCurrent        = 3;   
     
     $has_form               = 1;
     $has_lightbox           = 0;
@@ -11,6 +11,7 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');    
     
+    $form_var               = $_GET['formvar'];
     $page_url_full          = $url_contacto_full;
     
     $site_title             = "Contacto | ". $site_name_title;
