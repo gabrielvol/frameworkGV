@@ -2,12 +2,19 @@
     <?php
         $data_fullURL__formMain = $page_url_full;
 
-        include('form.send.inc.php');
+        include('form.main.send.inc.php');
 
         // echo $form_status__formMain;
         // echo $form_status_pop__formMain;
         // echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>';               
     ?>
+    
+    <?php if(isset($curso)): ?>
+    <label for="data_cursoSeleccionado__formContacto">
+        <span class="form_label_cursoSeleccionado">Estoy consultando por el siguiente curso:</span>
+        <input type="text" name="data_cursoSeleccionado__formContacto" id="data_cursoSeleccionado__formContacto" class="cursoSeleccionado" value="<?php echo $curso; ?>" readonly>
+    </label>
+    <?php endif; ?>
 
     <label for="data_nombre__formMain">
         <span class="form_label_name"><?php echo _('Nombre'); ?></span>
