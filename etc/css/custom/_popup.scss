@@ -230,6 +230,16 @@
         line-height: 1.2em!important;
     }
     
+    p{
+        font-family: $arial;
+        
+        a{
+            &, &:active, &:visited, &:focus, &:hover{
+                color: $grey3XD;
+            }
+        }
+    }
+    
     .button_pop_submit{
         background-color: $bgWhite;
         margin: 20px auto 0;
