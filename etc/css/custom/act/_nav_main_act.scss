@@ -24,6 +24,11 @@
 // 02 _ $nav_text_white_act / $nav_text_black_act
 // REF [12]
 // Activa los if que se encuentran en `[/etc/css/custom/nav_AT.scss]`.
+//
+//
+// 03 _ $nav_item_current_bdB_act
+// REF [17]
+// Activa el if que se encuentran en `[/etc/css/custom/nav_AT.scss]`.
 
 
 
@@ -88,4 +93,4 @@ $nav_hasSub_level2_act:             off;
 $nav_hasSub_level3_act:             off;
 $nav_sub_centered_AT:               off;
 
-$nav_item_current_bdB_act:          off;
+$nav_item_current_bdB_act:          off; // REF [17]

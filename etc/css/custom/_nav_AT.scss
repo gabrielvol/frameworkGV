@@ -81,7 +81,7 @@
                     a,
                     .nav_TLI{
                         @if $nav_item_current_bdB_act == "on"{
-                            @include borderStyleB($nav_item_current_bdColour, 3px);
+                            @include borderStyleB($nav_item_current_bdColour, 3px); // REF [17]
                         }
                     }
                 }
