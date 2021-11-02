@@ -50,7 +50,7 @@
 /* // Header Classes -------------------------------------------------------- */
 $header_class           = "navDrawer_closed";
 
-if(isset($page_index)){
+if($page_index == 1){
     $header_class       .= ' header_index';
 }
 
@@ -60,12 +60,16 @@ if($header_white == 1) {
     $header_class       .= ' header_transparent';
 }
         
-if($nav_pageCurrent_int == 500){
-    $header_class       .= ' header_desarrollos_index';
+if($nav_pageCurrent == 0){
+    $header_class       .= ' header_section';
+}
+        
+if($nav_pageCurrent_int == 000){
+    $header_class       .= ' header_section';
 }
 
-if($page_desarrollos_int == 1){
-    $header_class       .= ' header_desarrollos_int';
+if($page_desarrollos_int == 0){
+    $header_class       .= ' header_section';
 }
 
 $header_classes         = 'class="'. $header_class .'"';
