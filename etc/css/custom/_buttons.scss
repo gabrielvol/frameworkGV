@@ -240,11 +240,11 @@ button{
 }
 
 
-/* // Footer Button Site Top ------------------------------------------------ */
+/* // Button Site Top ------------------------------------------------------- */
 .button_siteTop{
     @include squareSize(50px);
     position: absolute;
-    z-index: $zIndex_button_goToTop;
+    z-index: $zIndex_button_siteTop;
     top: 10px;
     right: 10px;
     background-image: url('#{$url_entorno}/img/button_siteTop.svg');

@@ -1,5 +1,5 @@
 <footer id="footer" <?php echo $footer_classes; ?>>
-    <a href="<?php echo $hash_main ?>" class="button_siteTop" role="button" aria-pressed="false"><?php echo _("Subir al inicio"); ?></a>
+    <?php include('button.siteTop.inc.php'); ?>
         
     <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
     
