@@ -70,6 +70,7 @@ $url_index          = $url_entorno .'/index.php';       // $nav_pageCurrent 1
 //$url_inicio         = $url_entorno .'/inicio.php';      // $nav_pageCurrent 2
 $url_contacto       = $url_entorno .'/contacto.php';    // $nav_pageCurrent 3
 //$url_gracias        = $url_entorno .'/gracias.php';     // $nav_pageCurrent 4
+//$url_construccion   = $url_entorno .'/construccion.php'; // $nav_pageCurrent 5
 // $url-PAGINA         = $url_entorno .'/pagina.php';      // $nav_pageCurrent 0
 // $url-PAGINA         = $url_entorno .'/pagina.php';      // $nav_pageCurrent 0
 // $url-PAGINA         = $url_entorno .'/pagina.php';      // $nav_pageCurrent 0
@@ -87,6 +88,7 @@ $url_index          = $url_entorno .'/index.php'. $gettext_idioma_url;       // 
 //$url_inicio         = $url_entorno .'/inicio.php'. $gettext_idioma_url;    // $nav_pageCurrent 2
 $url_contacto       = $url_entorno .'/contacto.php'. $gettext_idioma_url;    // $nav_pageCurrent 3
 //$url_gracias        = $url_entorno .'/gracias.php'. $gettext_idioma_url;     // $nav_pageCurrent 4
+//$url_construccion        = $url_entorno .'/construccion.php'. $gettext_idioma_url;     // $nav_pageCurrent 5
 // $url-PAGINA         = $url_entorno .'/pagina.php'. $gettext_idioma_url;      // $nav_pageCurrent 0
 // $url-PAGINA         = $url_entorno .'/pagina.php'. $gettext_idioma_url;      // $nav_pageCurrent 0
 // $url-PAGINA         = $url_entorno .'/pagina.php'. $gettext_idioma_url;      // $nav_pageCurrent 0
@@ -128,6 +130,7 @@ $url_index_full         = $url_global . $url_index;
 //$url_inicio_full        = $url_global . $url_inicio;
 $url_contacto_full      = $url_global . $url_contacto;
 $url_gracias_full       = $url_global . $url_gracias;
+$url_construccion_full  = $url_global . $url_construccion;
 // $url-PAGINA-full        = $url_global . $url_PAGINA;
 // $url-PAGINA-full        = $url_global . $url_PAGINA;
 // $url-PAGINA-full        = $url_global . $url_PAGINA;
@@ -147,6 +150,7 @@ $href_logo          = $href_root;
 $href_index         = 'href="'. $url_index .'"';
 $href_contacto      = 'href="'. $url_contacto .'"';
 $href_contacto      = ($nav_pageCurrent == 1) ? 'href="'. $url_contacto_hs .'"' : 'href="'. $url_contacto_hs_INICIO.'"';
+$href_construccion  = 'href="'. $url_construccion .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';

@@ -3,7 +3,8 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_index             = 1;  
-    $nav_pageCurrent        = 1; 
+    $nav_pageCurrent        = 1;
+    $nav_pageCurrent_int    = 100;
     
     $has_form               = 0;
     $has_lightbox           = 0;

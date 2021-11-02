@@ -50,27 +50,14 @@
 /* // Header Classes -------------------------------------------------------- */
 $header_class           = "navDrawer_closed";
 
-if($page_index == 1){
-    $header_class       .= ' header_index';
-}
-
-if($header_white == 1) {
-    $header_class       .= ' header_white'; }
-    else {
-    $header_class       .= ' header_transparent';
-}
+if($page_index == 1):
+    $header_class       .= ' header_index'; endif;
         
-if($nav_pageCurrent == 0){
-    $header_class       .= ' header_section';
-}
+if($nav_pageCurrent == 0):
+    $header_class       .= ' error_alert error_alert_a'; endif;
         
-if($nav_pageCurrent_int == 000){
-    $header_class       .= ' header_section';
-}
-
-if($page_desarrollos_int == 0){
-    $header_class       .= ' header_section';
-}
+if($nav_pageCurrent_int == 000):
+    $header_class       .= ' error_alert error_alert_b'; endif;
 
 $header_classes         = 'class="'. $header_class .'"';
 ?>

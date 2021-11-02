@@ -2,7 +2,7 @@
     $url_entorno = '/stage';
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
-    $page_int               = 1;    
+    $page_int               = 1;
     $nav_pageCurrent        = 0;
     $nav_pageCurrent_int    = 000;
     

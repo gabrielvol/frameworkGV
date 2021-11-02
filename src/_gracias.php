@@ -5,6 +5,7 @@
     $page_int               = 1;
     $page_gracias           = 1;  
     $nav_pageCurrent        = 4;
+    $nav_pageCurrent_int    = 400;
     
     $has_form               = 0;
     $has_lightbox           = 0;

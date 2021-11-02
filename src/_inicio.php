@@ -5,6 +5,7 @@
     $page_index             = 1;
     $page_inicio            = 1;
     $nav_pageCurrent        = 2;
+    $nav_pageCurrent_int    = 200;
     
     $has_form               = 0;
     $has_lightbox           = 0;
