@@ -2,7 +2,7 @@
 #### Gabriel Volonte  
 
 ### Versiones
-3.4.2
+3.4.2 Actualizo tar 6.1.9, nth-check 2.0.1, set-value >= 4.0.1
 
 #### Licencia
 ISC  

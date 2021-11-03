@@ -73,7 +73,7 @@ $colours_dark_map:(
     greyD:          #666,
     greyXD:         #4d4d4d,
     grey2XD:        #333,
-//  grey3XD:        #111,
+    grey3XD:        #111,
     black:          #000
 );
 $colours_dark_lightenValue: 20%;
@@ -133,7 +133,7 @@ $grey:              map-get($colours_merged_map, grey);
 $greyD:             map-get($colours_merged_map, greyD);
 $greyXD:            map-get($colours_merged_map, greyXD);
 $grey2XD:           map-get($colours_merged_map, grey2XD);
-//$grey3XD:           map-get($colours_merged_map, grey3XD);
+$grey3XD:           map-get($colours_merged_map, grey3XD);
 
 //$redColour:         map-get($colours_merged_map, redColour);
 

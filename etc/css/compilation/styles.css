@@ -47,7 +47,9 @@
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
-/* // Forms Input ----------------------------------------------------------- */
+/* // Form Input ------------------------------------------------------------ */
+/* // Form Submit ----------------------------------------------------------- */
+/* // Form Validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Slider Activators | Custom [/etc/css/custom/act/slider_act.scss]
    ========================================================================== */
@@ -197,7 +199,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Variables de fuentes -------------------------------------------------- */
-/*___ Creamos la variable de la fuente principal del sitio _*/
+/*___ Creamos la variable de la fuente principal del sitio _____________*/
 /* * NombreDeProyecto * ========================================================
    Text Variables | Custom [/etc/css/custom/var/text.scss]
    ========================================================================== */
@@ -295,6 +297,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Whatsapp -------------------------------------------------------------- */
+/* // Button SiteTop // REF [18] -------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Hover Variables | Custom [/etc/css/custom/var/hover_var.scss]
    ========================================================================== */
@@ -336,7 +339,7 @@
 /* // Footer sizes ---------------------------------------------------------- */
 /* // Footer colours  ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Form Colours Variables | Custom [/etc/css/custom/var/form_colours.scss]
+   Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
 /* // Form Label ------------------------------------------------------------ */
 /* // Forms Input ----------------------------------------------------------- */
@@ -351,7 +354,7 @@
 /* // Form Submit  ---------------------------------------------------------- */
 /* // Form status message --------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes.scss]
+   Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -362,6 +365,7 @@
 /* // Form Font Sizes ------------------------------------------------------- */
 /* // Form Submit  ---------------------------------------------------------- */
 /* // Form Search ----------------------------------------------------------- */
+/* // Form Validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Tables Variables | Custom [/etc/css/custom/var/tables.scss]
    ========================================================================== */
@@ -386,7 +390,7 @@
    Secondary Separator
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* // Secondary Separator --------------------------------------------------- */
-/*___ Secondary _________________________*/
+/*___ Secondary ________________________________________________________*/
 /* * NombreDeProyecto * ========================================================
    Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
    ========================================================================== */
@@ -395,6 +399,13 @@
 /* // Regular --------------------------------------------------------------- */
 /* // Nav ------------------------------------------------------------------- */
 /* // Apple ----------------------------------------------------------------- */
+/* * Noelma * ==================================================================
+   Page Construccion Variables | Custom [/etc/css/custom/var/page_construccion_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Page Construcion sizes ------------------------------------------------ */
+/* // Page Construcion colours  --------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Page Index Variables | Custom [/etc/css/custom/var/page_index_var.scss]
    ========================================================================== */
@@ -601,13 +612,13 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #818181;
+  border-top: 1px solid #8c8c8c;
   margin: 1em 0;
   padding: 0; }
 
 /* // Images ---------------------------------------------------------------- */
 img {
-  background-color: #c6c6c6;
+  background-color: #b2b2b2;
   border: none;
   font: normal 11px/1rem Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   text-transform: uppercase;
@@ -651,8 +662,26 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 .exampleFont{font-family: 'exampleFont';}
 @font-face {
     font-family: 'exampleFont';
-    src: url('/nuevo/fonts/examplefont.woff2') format('woff2'),
-         url('/nuevo/fonts/examplefont.woff') format('woff');
+    src: url('/stage/fonts/examplefont.woff2') format('woff2'),
+         url('/stage/fonts/examplefont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+// REF [14]
+@font-face {
+    font-family: 'mingliuregular';
+    src: url('/stage/fonts/mingliu-01-webfont.woff2') format('woff2'),
+         url('/stage/fonts/mingliu-01-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'pmingliuregular';
+    src: url('/stage/fonts/pmingliu-02-webfont.woff2') format('woff2'),
+         url('/stage/fonts/pmingliu-02-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -819,22 +848,22 @@ a.greyXL:focus, a.greyXL:hover {
   color: #ababab; }
 
 .greyL, .greyL b, .greyL strong, .greyL i, .greyL em {
-  color: #c6c6c6; }
+  color: #b2b2b2; }
 
 a.greyL, a.greyL:active, a.greyL:visited, a.greyL.noHover:focus, a.greyL.noHover:hover {
-  color: #c6c6c6; }
+  color: #b2b2b2; }
 
 a.greyL:focus, a.greyL:hover {
-  color: #939393; }
+  color: #7f7f7f; }
 
 .grey, .grey b, .grey strong, .grey i, .grey em {
-  color: #818181; }
+  color: #8c8c8c; }
 
 a.grey, a.grey:active, a.grey:visited, a.grey.noHover:focus, a.grey.noHover:hover {
-  color: #818181; }
+  color: #8c8c8c; }
 
 a.grey:focus, a.grey:hover {
-  color: #4e4e4e; }
+  color: #595959; }
 
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
   color: #eb1c24; }
@@ -846,22 +875,22 @@ a.errorColour:focus, a.errorColour:hover {
   color: #940d12; }
 
 .greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
-  color: #4d4d4d; }
+  color: #666; }
 
 a.greyD, a.greyD:active, a.greyD:visited, a.greyD.noHover:focus, a.greyD.noHover:hover {
-  color: #4d4d4d; }
+  color: #666; }
 
 a.greyD:focus, a.greyD:hover {
-  color: gray; }
+  color: #999999; }
 
 .greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
-  color: #666; }
+  color: #4d4d4d; }
 
 a.greyXD, a.greyXD:active, a.greyXD:visited, a.greyXD.noHover:focus, a.greyXD.noHover:hover {
-  color: #666; }
+  color: #4d4d4d; }
 
 a.greyXD:focus, a.greyXD:hover {
-  color: #999999; }
+  color: gray; }
 
 .grey2XD, .grey2XD b, .grey2XD strong, .grey2XD i, .grey2XD em {
   color: #333; }
@@ -871,6 +900,15 @@ a.grey2XD, a.grey2XD:active, a.grey2XD:visited, a.grey2XD.noHover:focus, a.grey2
 
 a.grey2XD:focus, a.grey2XD:hover {
   color: #666666; }
+
+.grey3XD, .grey3XD b, .grey3XD strong, .grey3XD i, .grey3XD em {
+  color: #111; }
+
+a.grey3XD, a.grey3XD:active, a.grey3XD:visited, a.grey3XD.noHover:focus, a.grey3XD.noHover:hover {
+  color: #111; }
+
+a.grey3XD:focus, a.grey3XD:hover {
+  color: #444444; }
 
 .black, .black b, .black strong, .black i, .black em {
   color: #000; }
@@ -905,12 +943,12 @@ a, a:hover {
 /* // Text Selection -------------------------------------------------------- */
 ::-moz-selection {
   color: #000;
-  background-color: #818181;
+  background-color: #8c8c8c;
   text-shadow: none; }
 
 ::selection {
   color: #000;
-  background-color: #818181;
+  background-color: #8c8c8c;
   text-shadow: none; }
 
 /* // General --------------------------------------------------------------- */
@@ -1031,16 +1069,16 @@ b, strong,
   background-color: #dedede; }
 
 .bgGreyL {
-  background-color: #c6c6c6; }
+  background-color: #b2b2b2; }
 
 .bgGrey {
-  background-color: #818181; }
+  background-color: #8c8c8c; }
 
 .bgGreyD {
-  background-color: #4d4d4d; }
+  background-color: #666; }
 
 .bgGreyXD {
-  background-color: #666; }
+  background-color: #4d4d4d; }
 
 .bgGrey2XD {
   background-color: #333; }
@@ -1049,7 +1087,7 @@ b, strong,
   background-color: #eb1c24; }
 
 a.mainBgColour:hover, a.mainBgColour:focus {
-  background-color: #4e4e4e; }
+  background-color: #595959; }
 
 /* * NombreDeProyecto * ========================================================
    Backgrounds Classes | Custom [/etc/css/custom/classes_backgrounds.scss]
@@ -1084,25 +1122,32 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   box-shadow: 0 0 3px #000; }
 
 .shadow_box_inset {
-  box-shadow: inset 0 0 10px 0 #666; }
+  box-shadow: inset 0 0 10px 0 #4d4d4d; }
 
 /* // Background Shadows ---------------------------------------------------- */
 .bgShadowT,
 .bgShadowB,
+.bgShadowB_50,
 .bgShadowV {
   background-repeat: repeat-x;
   background-size: auto 20px; }
 
 .bgShadowT {
-  background-image: url("/nuevo/img/bg_shadowT.png");
+  background-image: url("/stage/img/bg_shadowT.png");
   background-position: center top; }
 
-.bgShadowB {
-  background-image: url("/nuevo/img/bg_shadowB.png");
+.bgShadowB,
+.bgShadowB_50 {
   background-position: center bottom; }
 
+.bgShadowB {
+  background-image: url("/stage/img/bg_shadowB.png"); }
+
+.bgShadowB_50 {
+  background-image: url("/stage/img/bg_shadowB_50.png"); }
+
 .bgShadowV {
-  background-image: url("/nuevo/img/bg_shadowT.png"), url("/nuevo/img/bg_shadowB.png");
+  background-image: url("/stage/img/bg_shadowT.png"), url("/stage/img/bg_shadowB.png");
   background-position: center top, center bottom; }
 
 /* * NombreDeProyecto * ========================================================
@@ -1834,7 +1879,7 @@ article, article::before, article::after, details, details::before, details::aft
     white-space: pre-wrap !important; }
   pre,
   blockquote {
-    border: 1px solid #818181;
+    border: 1px solid #8c8c8c;
     page-break-inside: avoid; }
   p,
   h2,
@@ -1880,6 +1925,9 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+.error_alert {
+  border: 6px solid #ff46b7; }
+
 /* =============================================================================
    Internas Global Styles | Custom [/etc/css/custom/global.scss]
    ========================================================================== */
@@ -1982,10 +2030,10 @@ ol {
     background-size: 7px; }
 
 .list_bulleted_dot li::before {
-  background-image: url("/nuevo/img/bullet_dot.svg"); }
+  background-image: url("/stage/img/bullet_dot.svg"); }
 
 .list_bulleted_square li::before {
-  background-image: url("/nuevo/img/bullet_square.svg"); }
+  background-image: url("/stage/img/bullet_square.svg"); }
 
 .list_bulleted_tick li {
   padding-left: 20px; }
@@ -1993,12 +2041,12 @@ ol {
     width: 20px;
     height: 20px;
     top: 0;
-    background-image: url("/nuevo/img/bullet_tick.svg");
+    background-image: url("/stage/img/bullet_tick.svg");
     background-position: left 3px;
     background-size: auto calc(20px - 5px); }
 
 .list_bulleted_chevron li::before {
-  background-image: url("/nuevo/img/bullet_chevron.svg"); }
+  background-image: url("/stage/img/bullet_chevron.svg"); }
 
 .list_file li {
   box-sizing: border-box;
@@ -2022,10 +2070,10 @@ ol {
     background-size: auto 30px; }
 
 .list_file.filePDF li::before {
-  background-image: url("/nuevo/img/file_pdf.svg"); }
+  background-image: url("/stage/img/file_pdf.svg"); }
 
 .list_file.fileDOC li {
-  background-image: url("/nuevo/img/file_pdf.svg"); }
+  background-image: url("/stage/img/file_pdf.svg"); }
 
 /* * NombreDeProyecto * ========================================================
    Button Styles | Custom [/etc/css/custom/buttons.scss]
@@ -2045,10 +2093,10 @@ button, button::before, button::after {
 /* // Call to Action -------------------------------------------------------- */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s, box-shadow 0.7s;
-  border: 2px solid #818181;
+  border: 2px solid #8c8c8c;
   display: block;
   box-sizing: border-box;
-  background-color: #818181;
+  background-color: #8c8c8c;
   padding-right: 10px;
   padding-left: 10px;
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
@@ -2094,9 +2142,9 @@ button, button::before, button::after {
   .callToAction, .callToAction:visited, .callToAction:active {
     color: #fff; }
   .callToAction:focus, .callToAction:hover {
-    background-color: #c6c6c6;
+    background-color: #b2b2b2;
     border-color: #333;
-    color: #666; }
+    color: #4d4d4d; }
   .callToAction, .callToAction::before, .callToAction::after {
     box-sizing: border-box; }
   @media (max-width: 499px) {
@@ -2136,7 +2184,7 @@ button, button::before, button::after {
   display: block;
   border-radius: 50%;
   background-color: rgba(60, 209, 52, 0.85);
-  background-image: url("/nuevo/img/button_whatsapp.svg");
+  background-image: url("/stage/img/button_whatsapp.svg");
   background-repeat: no-repeat;
   background-size: calc(60px - 10px);
   background-position: center center;
@@ -2171,18 +2219,31 @@ button, button::before, button::after {
     .button_whatsapp:focus::before, .button_whatsapp:hover::before {
       width: 220px; } }
 
-/* // Button Site Top ------------------------------------------------------- */
+/* // Button Site Top // REF [18] ------------------------------------------- */
 .button_siteTop {
-  width: 50px;
-  height: 50px;
-  position: absolute;
+  transition: all 0.7s ease;
+  width: 40px;
+  height: 40px;
+  position: fixed;
   z-index: 9900;
-  top: 10px;
-  right: 10px;
-  background-image: url("/nuevo/img/button_siteTop.svg");
+  right: 20px;
+  background-image: url("/stage/img/button_siteTop.svg");
   background-repeat: no-repeat;
   background-position: center;
-  text-indent: -9999px; }
+  background-size: 100%;
+  text-indent: -9999px;
+  /* no scroll activattion
+    bottom: 20px;
+    */
+  /* scroll activattion
+    bottom: calc(-1 * calc(40px + 5px));
+    opacity: 0;
+    
+    &.button_siteTop_visible{
+        opacity: 1;
+        bottom: 20px;
+    }
+    */ }
 
 /* // Custom buttons -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
@@ -2273,13 +2334,13 @@ button, button::before, button::after {
   background-color: #fff; }
   .pop_global .button_pop_close {
     background-color: transparent;
-    background-image: url("/nuevo/img/button_pop_close.svg");
+    background-image: url("/stage/img/button_pop_close.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     position: absolute;
     border-radius: 50%;
-    border: 1px solid #666 !important;
+    border: 1px solid #4d4d4d !important;
     width: 33px !important;
     height: 33px !important;
     background-size: 13px;
@@ -2316,7 +2377,7 @@ button, button::before, button::after {
     width: 100% !important;
     background-color: transparent;
     padding: 0;
-    color: #666;
+    color: #4d4d4d;
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     text-align: center; }
     .pop_warning p + p {
@@ -2338,7 +2399,7 @@ button, button::before, button::after {
     background-color: #fff;
     font-size: 0.8rem; }
     .pop_warning .button_pop_submit, .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
-      border: 1px solid #818181 !important; }
+      border: 1px solid #8c8c8c !important; }
     .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
       background-color: #e6e6e6;
       color: #000; }
@@ -2366,7 +2427,7 @@ button, button::before, button::after {
 
 /* // Pop Video ------------------------------------------------------------- */
 .pop_video {
-  box-shadow: 0 0 10px 0 #666; }
+  box-shadow: 0 0 10px 0 #4d4d4d; }
   .pop_video .iframe_video_mask {
     /*        
         @include borderStyle($bdGreyD);
@@ -2396,7 +2457,7 @@ button, button::before, button::after {
   height: 70vh; }
   .pop_form,
   .pop_form .button_pop_close {
-    box-shadow: 0 0 10px 0 #666; }
+    box-shadow: 0 0 10px 0 #4d4d4d; }
   .pop_form .mobileForm {
     padding-top: 20px;
     padding-bottom: 40px; }
@@ -2423,6 +2484,10 @@ button, button::before, button::after {
     height: auto !important;
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     line-height: 1.2em !important; }
+  .pop_formStatus p {
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+    .pop_formStatus p a, .pop_formStatus p a:active, .pop_formStatus p a:visited, .pop_formStatus p a:focus, .pop_formStatus p a:hover {
+      color: #111; }
   .pop_formStatus .button_pop_submit {
     background-color: #fff;
     margin: 20px auto 0;
@@ -2431,6 +2496,21 @@ button, button::before, button::after {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase; }
+  .pop_formStatus.pop_formStatus_ok h2 span {
+    position: relative; }
+    .pop_formStatus.pop_formStatus_ok h2 span::after {
+      width: 20px;
+      height: 20px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: -25px;
+      background-image: url("/stage/img/form_ok.svg");
+      background-size: auto 95%;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: -10px; }
   @media (max-width: 650px) {
     .pop_formStatus h2 {
       padding-top: 30px; } }
@@ -2626,7 +2706,7 @@ nav li:focus a, nav li:hover a {
       z-index: 9900;
       display: none;
       background-color: #fff;
-      background-image: url("/nuevo/img/button_hamb_close.svg");
+      background-image: url("/stage/img/button_hamb_close.svg");
       background-repeat: no-repeat;
       background-position: center center; }
     .nav_main .navAT {
@@ -2642,7 +2722,7 @@ nav li:focus a, nav li:hover a {
     .nav_main .nav_main_ul_drawer {
       display: none; }
     .nav_main > ul {
-      background-color: #818181; }
+      background-color: #8c8c8c; }
       .nav_main > ul > li {
         background-color: transparent; }
         .nav_main > ul > li a,
@@ -2745,7 +2825,7 @@ nav li:focus a, nav li:hover a {
       position: absolute; }
     .nav_main .button_hamb_open {
       border-radius: 6px;
-      background-image: url("/nuevo/img/button_hamb_open.svg");
+      background-image: url("/stage/img/button_hamb_open.svg");
       background-color: #fff;
       background-size: 15px;
       color: #333;
@@ -2754,7 +2834,7 @@ nav li:focus a, nav li:hover a {
       width: 90px;
       height: 40px;
       background-position: 10px center;
-      border: 1px solid #666 !important;
+      border: 1px solid #4d4d4d !important;
       padding: 0 10px 0 30px;
       font-size: 1rem;
       line-height: 40px; }
@@ -2782,16 +2862,16 @@ nav li:focus a, nav li:hover a {
         padding-left: 20px;
         font-size: 1rem; }
       .nav_main .nav_main_ul > li + li {
-        border-top: 1px solid #818181; }
+        border-top: 1px solid #8c8c8c; }
       .nav_main .nav_main_ul > .uk-active,
       .nav_main .nav_main_ul > .nav_item_current {
         background-color: #f2f2f2;
-        background-image: url("/nuevo/img/nav_arrow_left.svg"); }
+        background-image: url("/stage/img/nav_arrow_left.svg"); }
       .nav_main .nav_main_ul .nav_item_back {
-        border-bottom: #818181 solid 2px;
+        border-bottom: #8c8c8c solid 2px;
         position: relative; }
         .nav_main .nav_main_ul .nav_item_back + .nav_item_back {
-          border-color: #666 transparent #818181;
+          border-color: #4d4d4d transparent #8c8c8c;
           border-width: 1px 0 2px;
           border-style: solid; } }
 
