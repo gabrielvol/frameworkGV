@@ -1,6 +1,6 @@
 <nav id="nav" class="nav_main pRel" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
     <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visuallyHidden"><?php echo _("Abrir"); ?></span> <?php echo _("Men&uacute;"); ?></button>
-    <button type="button" class="button_hamb button_hamb_close"><?php echo _("Cerrar"); ?> <span class="visuallyHidden"><?php echo _("Men&uacute;"); ?></span></button>
+    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php echo _("Cerrar"); ?> <span class="visuallyHidden"><?php echo _("Men&uacute;"); ?></span></button>
     
     <?php
         // REF [05] `[/src/var/act/nav.act.inc.php]`
