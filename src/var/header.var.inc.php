@@ -50,10 +50,16 @@
 /* // Header Classes -------------------------------------------------------- */
 $header_class           = "navDrawer_closed";
 
-if($page_index == 1):
-    $header_class       .= ' header_index'; endif;
-        
-if($nav_pageCurrent == 0):
+if($page_index          == 1):
+    $header_class       .= ' header_index'; endif;        
+
+if($header_white        == 1):
+    $header_class       .= ' header_white';
+else:
+    $header_class       .= ' header_transparent';
+endif;
+
+if($nav_pageCurrent     == 0):
     $header_class       .= ' error_alert error_alert_a'; endif;
         
 if($nav_pageCurrent_int == 000):
