@@ -44,6 +44,7 @@
 
 
 
+/* // Button General -------------------------------------------------------- */
 $button_callToAction_ftFamily:          $arial;
 $button_callToAction_ftColour:          $white;
 $button_callToAction_ftColour_hover:    $greyXD;
@@ -55,7 +56,7 @@ $button_callToAction_bgColour:          $bgGrey;
 $button_callToAction_bgColour_hover:    $bgGreyL;
     
 
-/* // Whatsapp -------------------------------------------------------------- */
+/* // Button Whatsapp ------------------------------------------------------- */
 $button_whatsapp_size:                  60px; 
 $button_whatsapp_before_height:         40px;
 $button_whatsapp_before_width_MO:       220px;
@@ -64,3 +65,6 @@ $button_whatsapp_before_width_AML:      220px;
 
 /* // Button SiteTop // REF [18] -------------------------------------------- */
 $button_siteTop_size:                   40px; 
+
+/* // Button Play Video ----------------------------------------------------- */
+$button_before_icon_play_size:          60px;

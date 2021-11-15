@@ -82,12 +82,12 @@ $colours_backgrounds_map:(
     GreyD:          $greyD,
     GreyXD:         $greyXD,
     Grey2XD:        $grey2XD,
-//  Grey3XD:        $grey3XD,
+    Grey3XD:        $grey3XD,
     
     Error:          $errorColour
 );
 
-$bgErrorColour:     map-get($colours_backgrounds_map, Error);
+$bgError:           map-get($colours_backgrounds_map, Error);
 
 $bgWhite:           map-get($colours_backgrounds_map, White);
 $bgBlack:           map-get($colours_backgrounds_map, Black);
@@ -107,7 +107,7 @@ $bgGrey:            map-get($colours_backgrounds_map, Grey);
 $bgGreyD:           map-get($colours_backgrounds_map, GreyD);
 $bgGreyXD:          map-get($colours_backgrounds_map, GreyXD);
 $bgGrey2XD:         map-get($colours_backgrounds_map, Grey2XD);
-//$bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
+$bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
 
 //$bgRedColour:       map-get($colours_backgrounds_map, RedColour);
 

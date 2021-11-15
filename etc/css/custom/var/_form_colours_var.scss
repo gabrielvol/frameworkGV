@@ -23,7 +23,7 @@ $form_input_ftColour_autofill:  $form_input_ftColour;
 $form_input_bdColour:           $bdColour_main_global;
 $form_input_bdColour_hover:     $bdColour_main_global_hover;
 
-$form_input_bgColour:           $white;
+$form_input_bgColour:           $bgWhite;
 $form_input_bgColour_hover:     $form_input_bgColour;
     
 $form_input_shadowInset:        inset 0 0 6px $greyL;
@@ -46,6 +46,6 @@ $form_input_invalid_bdColour:           $bdError;
 $form_span_invalid_bdColour:            $errorColour; // REF [16]
 $form_span_invalid_tooltip_bdColour:    $bdGreyXL; // REF [16]
  
-$form_status_error_bgColour:    $bgErrorColour;
+$form_status_error_bgColour:    $bgError;
 $form_status_error_ftColour:    $white;
 $form_status_ok_bgColour:       $bgWhite;

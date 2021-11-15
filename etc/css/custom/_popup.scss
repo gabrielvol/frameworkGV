@@ -34,13 +34,17 @@
     background-color: $bgWhite;
     
     .button_pop_close{
-        @include bgSvg(button_pop_close); 
         position: absolute;
         border-radius: 50%;
-        border: 1px solid $bdGreyXD!important; 
+        // border: 1px solid $bdGreyXD!important; 
         width: $button_pop_close_size!important;
         height: $button_pop_close_size!important;
         background-size: 13px;
+        background-color: $bgWhite;
+        background-image: url('#{$url_entorno}/img/button_pop_close.svg');
+        background-repeat: no-repeat;
+        background-position: center center; 
+        text-indent: -9999px;
         text-indent: -9999px;
 
         &, &:focus, &:hover{
