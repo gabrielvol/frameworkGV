@@ -248,8 +248,8 @@ if (isset($_POST['button_form_submit__formMain'])){
     } elseif (empty($_POST["data_email__formMain"])) {
         $form_validation_div_msg__formMain                  = $form_validation_msg_data_email__formMain;
         $form_validation_div_class__formMain                = " form_validation_div_invalid";
-        $form_validation_input_class_data_email__formMain  = " form_validation_input_invalid";
-        $form_input_autofocus_data_email__formMain      = "autofocus";
+        $form_validation_input_class_data_email__formMain   = " form_validation_input_invalid";
+        $form_input_autofocus_data_email__formMain          = "autofocus";
 
     } elseif (empty($_POST["data_webSite__formMain"])) {
         $form_validation_div_msg__formMain                      = $form_validation_msg_data_webSite__formMain;
@@ -523,8 +523,8 @@ if (isset($_POST['button_form_submit__formMain'])){
                 . '</div>'
                 . '</div>'
                 . '<div class="modal_global modal_formStatus"></div>';
-            $form_validation_div_class__formMain = 'displayNone';
-            $form_status__formMain = '';
+            $form_validation_div_class__formMain    = 'displayNone';
+            $form_status__formMain                  = '';
 /* // FIN mensaje ok en popup ----------------------------------------------- */
             
             
@@ -578,8 +578,8 @@ if (isset($_POST['button_form_submit__formMain'])){
                 . '</div>'
                 . '</div>'
                 . '<div class="modal_global modal_formStatus"></div>';
-            $form_validation_div_class__formMain = 'displayNone';
-            $form_status__formMain = '';
+            $form_validation_div_class__formMain    = 'displayNone';
+            $form_status__formMain                  = '';
 /* // FIN mensaje error en popup -------------------------------------------- */
         }
     }

@@ -236,9 +236,13 @@
     
     p{
         font-family: $arial;
+        color: $greyXD;
+        line-height: 1.3em;
         
         a{
-            &, &:active, &:visited, &:focus, &:hover{
+            color: $grey2XD;
+            
+             &:active, &:visited, &:focus, &:hover{
                 color: $grey3XD;
             }
         }

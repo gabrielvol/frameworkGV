@@ -446,7 +446,7 @@ form{
             }
 
             @include afterDesktop{
-                height: $form_input_height_AD;  
+                @include equalHeightAndLineHeight($form_input_height_AD);
             }
         }
         
@@ -468,7 +468,7 @@ form{
             }
 
             @include afterDesktop{
-                height: $form_label_height_AD; 
+                @include equalHeightAndLineHeight($form_label_height_AD);
             }
         }
     }
