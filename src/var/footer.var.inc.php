@@ -49,18 +49,18 @@
 
 /* // Footer Classes -------------------------------------------------------- */
 $footer_class           = '';
-
-if($page_index == 1):
-    $footer_class       .= ' footer_index'; endif;
-    
-if($has_footer == 0):
-    $footer_class       .= ' displayNone'; endif;
     
 if($nav_pageCurrent == 0):
     $footer_class       .= ' error_alert error_alert_a'; endif;
     
 if($nav_pageCurrent_int == 000):
     $footer_class       .= ' error_alert error_alert_b'; endif;
+
+if($page_index == 1):
+    $footer_class       .= ' footer_index'; endif;
+    
+if($has_footer == 0):
+    $footer_class       .= ' displayNone'; endif;
 
 $footer_classes         = 'class="'. $footer_class .'"';
 ?>
