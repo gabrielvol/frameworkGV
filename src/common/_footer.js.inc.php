@@ -1,5 +1,6 @@
 <?php
 /*
+<script src="<?php echo $url_entorno; ?>/js/_smoothScroll.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/smoothScroll.jQuery.js"></script>
 */
 ?>
