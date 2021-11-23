@@ -146,8 +146,9 @@
 <script src="<?php echo $url_entorno; ?>/js/uikit.min.js"></script>
 
 <!-- Google Analytics -->
-<script type="text/javascript">
+<?php if(empty($url_entorno)): ?>
 
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-xxxxxxxx-x']);
   _gaq.push(['_trackPageview']);
@@ -159,3 +160,14 @@
   })();
 
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CMF9SPL5Z8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CMF9SPL5Z8');
+</script>
+<?php endif; ?>
