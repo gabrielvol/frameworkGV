@@ -3,8 +3,8 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int               = 1;
-    $nav_pageCurrent        = 0;
-    $nav_pageCurrent_int    = 000;
+    $nav_pageCurrent        = 'page_interna';
+    $nav_pageCurrent_int    = 'page_interna_index';
     
     $has_form               = 0;
     $has_lightbox           = 0;
@@ -37,7 +37,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" class="page_int page-aaaaa" role="main">
+    <div id="main" <?php echo $main_classes; ?> role="main">
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
 </body>

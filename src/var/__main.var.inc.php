@@ -66,9 +66,8 @@ include('email.var.inc.php');
     
 // include('file.var.inc.php');
 // include('media.var.inc.php');
-    
-// include('form.var.inc.php');
 
-include('header.var.inc.php');
-include('footer.var.inc.php');
+if($has_form == 1){ include('form.var.inc.php'); }
+
+include('classes.var.inc.php');
 ?>

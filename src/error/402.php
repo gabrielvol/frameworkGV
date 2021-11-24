@@ -3,8 +3,7 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int           = 1;
-    $page_error         = 1;       
-    $nav_pageCurrent    = 0;  
+    $nav_pageCurrent    = 'page_error';  
     
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
        
@@ -20,7 +19,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" class="page_int page_error" role="main">
+    <div id="main" <?php echo $main_classes; ?> role="main">
         <h1><?php echo _("P&aacute;gina no encontrada"); ?>.</h1>
         <p class="errorType">Error 402.</p>
         <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/page.error.p.inc.php'); ?>

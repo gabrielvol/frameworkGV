@@ -20,7 +20,7 @@
 <?php endif; if($nav_drawer_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
 <script src="<?php echo $url_entorno; ?>/js/_nav_drawer.js"></script>
 
-<?php endif; if($page_index == 1): /* // Index
+<?php endif; if($nav_pageCurrent == 'page_index'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_index.js"></script>
@@ -34,7 +34,7 @@
 */
 ?>
 
-<?php endif; if($nav_pageCurrent == 1): /* // Home
+<?php endif; if($nav_pageCurrent_int == 'page_home'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_home.js"></script>
@@ -42,7 +42,7 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 2): /* // Inicio 
+<?php endif; if($nav_pageCurrent_int == 'page_inicio'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_inicio.js"></script>
@@ -50,7 +50,7 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 3): /* // Contacto 
+<?php endif; if($nav_pageCurrent == 'page_contacto'): /*
 <script src="<?php echo $url_entorno; ?>/js/scrollKeep.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_contacto.js"></script>
@@ -58,7 +58,7 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 4): /* // Gracias 
+<?php endif; if($nav_pageCurrent == 'page_gracias'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_gracias.js"></script>
@@ -66,7 +66,7 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 5): /* // Construcción 
+<?php endif; if($nav_pageCurrent == 'page_construccion'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_construccion.js"></script>
@@ -74,20 +74,20 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 0): /* // SECTIONNAME
+<?php endif; if($nav_pageCurrent == 'page-PAGINA'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 */
 ?>
 
 
-<?php endif; if($nav_pageCurrent_int == 000): /* // SECTION_INTERNA
+<?php endif; if($nav_pageCurrent_int == 'page-PAGINA_INT'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 */
 ?>
 
-<?php endif; if($nav_pageCurrent == 0 || $nav_pageCurrent_int == 000): /* // SECTIONNAME / SECTIONNAME
+<?php endif; if($nav_pageCurrent == 'page-PAGINA' || $nav_pageCurrent_int == 'page-PAGINA_INT'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_aaaaaa.js"></script>
 */

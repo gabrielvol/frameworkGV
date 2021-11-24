@@ -2,10 +2,8 @@
     $url_entorno = '/stage';
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
-    $page_index             = 1;
-    $page_inicio            = 1;
-    $nav_pageCurrent        = 2;
-    $nav_pageCurrent_int    = 200;
+    $nav_pageCurrent        = 'page_index';
+    $nav_pageCurrent_int    = 'page_inicio';
     
     $has_form               = 0;
     $has_lightbox           = 0;
@@ -39,7 +37,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" class="page_index" role="main">        
+    <div id="main" <?php echo $main_classes; ?> role="main">  
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/section.aaa.inc.php');
             include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/section.bbb.inc.php');

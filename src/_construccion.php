@@ -3,8 +3,7 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int               = 1;    
-    $nav_pageCurrent        = 5;
-    $nav_pageCurrent_int    = 500;
+    $nav_pageCurrent        = 'page_construccion';
     
     $has_form               = 0;
     $has_lightbox           = 0;
@@ -37,7 +36,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" class="page_int page-aaaaa page_construccion" role="main">
+    <div id="main" <?php echo $main_classes; ?> role="main">
         <div class="container">
             <h1><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
             <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de est&aacute; p&aacute;gina'); ?>.</p>

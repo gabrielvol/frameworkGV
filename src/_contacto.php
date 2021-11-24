@@ -3,8 +3,8 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
     
     $page_int               = 1;   
-    $nav_pageCurrent        = 3;
-    $nav_pageCurrent_int    = 300;
+    $nav_pageCurrent        = 'page_contacto';
+    $nav_pageCurrent_int    = 'page_contacto_index';
     
     $has_form               = 1;
     $has_lightbox           = 0;
@@ -39,7 +39,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" class="page_int page_contacto" role="main">
+    <div id="main" <?php echo $main_classes; ?> role="main">
         <div class="mobileForm tabletForm">
             <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/form.main.inc.php'); ?>
         </div>

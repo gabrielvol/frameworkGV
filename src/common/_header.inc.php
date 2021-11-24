@@ -3,8 +3,8 @@
     <a href="<?php echo $site_tel_PRINCIPAL_whatsapp_chatOpen; ?>" class="button_whatsapp">Abrir un chat.</a>
     
     <?php
-        if($page_index == 1){ echo '<h1 class="logo_header">'; } 
-        if($page_index == 1 && $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; }
+        if($nav_pageCurrent == 'page_index'){ echo '<h1 class="logo_header">'; } 
+        if($nav_pageCurrent == 'page_index' && $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; }
     ?>
     <a <?php echo $href_logo; ?> class="<?php if($page_int == 1){ echo 'logo_header'; } ?>">
         <?php if($page_int == 1 && $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; } ?>
@@ -12,8 +12,8 @@
         <?php if($page_int == 1 && $logo_bgImage_before_act == 1) { echo '</div>'; } ?>
     </a>
     <?php
-        if($page_index == 1){ echo '</h1>'; }
-        if($page_index == 1 && $logo_bgImage_before_act == 1) { echo '</div>'; }
+        if($nav_pageCurrent == 'page_index'){ echo '</h1>'; }
+        if($nav_pageCurrent == 'page_index' && $logo_bgImage_before_act == 1) { echo '</div>'; }
     ?>  
     
     <?php include('nav.main.inc.php'); ?>
