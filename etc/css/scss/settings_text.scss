@@ -78,6 +78,9 @@ p, a, li, dd, dt, .pSize{
     @include afterTabletLandscape{
         font-size: $ftSize_paragraph_ATL;
     }
+    @include afterDesktop{
+        font-size: $ftSize_paragraph_AD;
+    }
 }
 p, dl, legend{
     margin: $text_marginTRBL_global;

@@ -94,6 +94,12 @@ input, select, textarea{
             font-size: $form_input_ftSize_ATL;
         }
     }
+    
+    @include afterDesktop{
+        form &{
+            font-size: $form_input_ftSize_AD;
+        }
+    }
 }
 
 /* // Form Submit  ---------------------------------------------------------- */

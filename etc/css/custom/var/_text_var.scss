@@ -63,10 +63,12 @@ $ftSize_global:             1rem;
 $ftSize_paragraph_BT:       0.9rem;
 $ftSize_paragraph_AT:       1rem;
 $ftSize_paragraph_ATL:      $ftSize_paragraph_AT;
+$ftSize_paragraph_AD:       $ftSize_paragraph_ATL;
 
 $form_input_ftSize_BT:      0.9rem;
 $form_input_ftSize_AT:      0.9rem;
 $form_input_ftSize_ATL:     $form_input_ftSize_AT;
+$form_input_ftSize_AD:      $form_input_ftSize_ATL;
 
 $text_marginTRBL_global:    0;
 $text_marginTRBL_sibling:   0.8em 0 0;
