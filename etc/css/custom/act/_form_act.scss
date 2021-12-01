@@ -5,14 +5,16 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para elementos de form.
 //
-// #activador #form #label #input #validation #class #mixin #colour
+// #activator #button #class #colour #form #input #label #mixin #submit
+// #tooltip #validation
 
 
 /* // Listado --------------------------------------------------------------- */
 // 01 _ $form_label_inside_act
 // 02 _ $form_label_coloured_act
 // 03 _ $form_input_coloured_act
-// 04 _ $form_span_invalid_tooltip_act // REF [16]
+// 04 _ $form_submit_border_act // REF [21]
+// 05 _ $form_span_invalid_tooltip_act // REF [16]
 //
 //
 // 01 _ $form_label_inside_act
@@ -36,7 +38,7 @@
 //
 //
 // 03 _ $form_input_coloured_act
-// Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
+// Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`.
 //
 // Genera selectores para las pseudoclases `:focus` y `:hover` de los
 // elementos `ìnput[type="submit"]` e `input[type="file"]` con clase del tipo
@@ -47,7 +49,39 @@
 // input[type="submit"].bgVerdeAgua:focus { background-color: #hex; }
 // input[type="file"].bgVerdeAgua:hover,
 // input[type="file"].bgVerdeAgua:focus { background-color: #hex; }
-
+//
+//
+// 04 _ $form_submit_border_act
+// REF [21]
+// Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
+//
+// Genera selectores de color para `input[type="reset"]`, `input[type="submit"]`,
+// `input[type="button"]` y `button` y sus pseudoclases `:focus` y `:hover`.
+// Usa las variables `$button_form_submit_bdColour` y 
+// `$button_form_submit_bdColour_hover` para las pseudoclases `:focus` y `:hover`.
+//
+// Ej. con color verdeAgua:
+// form input[type="reset"].bgVerdeAgua,
+// form input[type="submit"].bgVerdeAgua,
+// form input[type="button"].bgVerdeAgua,
+// form button.bgVerdeAgua { border: 1px solid #hex; }
+//
+// form input[type="reset"].bgVerdeAgua:focus,
+// form input[type="reset"].bgVerdeAgua:hover,
+// form input[type="submit"].bgVerdeAgua:focus,
+// form input[type="submit"].bgVerdeAgua:hover,
+// form input[type="button"].bgVerdeAgua:focus,
+// form input[type="button"].bgVerdeAgua:hover,
+// form button.bgVerdeAgua:focus,
+// form button.bgVerdeAgua:hover { border-color: #hex; }
+//
+//
+// 05 _ $form_span_invalid_tooltip_act
+// REF [16]
+// Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
+//
+// Genera un elemento flotante sobre el input para indicar un error de
+// validación, usando pseudoelementos `::before` y `::after`.
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -95,7 +129,7 @@ $form_label_coloured_act:           off;
 $form_input_coloured_act:           off;
 
 /* // Form Submit ----------------------------------------------------------- */
-$form_submit_border_act:            off;
+$form_submit_border_act:            off; // REF [21]
 
 /* // Form Validation ------------------------------------------------------- */
 $form_span_invalid_tooltip_act:     off; // REF [16]

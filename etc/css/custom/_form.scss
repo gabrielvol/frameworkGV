@@ -288,7 +288,7 @@ form{
             font-weight: $button_form_submit_ftWeight;
         }
         
-        @if $form_submit_border_act == "on"{
+        @if $form_submit_border_act == "on"{ // REF [21]
             @include borderStyle($button_form_submit_bdColour);
         
             &:focus, &:hover{

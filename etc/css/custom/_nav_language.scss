@@ -86,7 +86,7 @@
                 position: fixed;
                 z-index: $zIndex_nav_language_ul_clicked;
                 
-                @if $language_menu_navDrawer_clicked_act == "on"{
+                @if $nav_language_navDrawerOpen_act == "on"{
                     left: 0;
                     bottom: 0;
                     box-sizing: border-box;

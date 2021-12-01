@@ -3,7 +3,28 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de variables activadoras.
+// Archivo de variables activadoras para texto en general.
+//
+// #activator #anchor #focus #hover #li #p #text #underline
+
+
+/* // Listado --------------------------------------------------------------- */
+// 01 _ $anchorUnderline
+//
+//
+// 01 _ $anchorUnderline
+// Activa el if que se encuentran en `[/etc/css/scss/settings_text.scss]`.
+//
+// Genera estilos para las anclas dentro de los elementos `p` y `li`, únicamente 
+// para sus pseudoclases `:focus` y `:hover`
+//
+// Imprime:
+// p:focus a,
+// p:hover a,
+// li:focus a,
+// li:hover a{
+//   text-decoration: underline;
+// }
 
 
 

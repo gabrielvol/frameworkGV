@@ -4,11 +4,12 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene las variables de activacion para generar los estilos
-// de flechas, flechas para carruseles y indicadores de pagina o "slide activo".
+// de flechas, flechas para carruseles e indicadores de pagina o "slide activo".
 //
 // Lo que se active en este archivo luego debe configurarse en el .js
 // correspondiente al Slider.
-//
+
+
 /* // Listado --------------------------------------------------------------- */
 // 01 _ Slider Arrows
 // 02 _ Slider Arrows Carrusel
@@ -20,7 +21,6 @@
 // Activa el if que se encuentran en `[/etc/css/custom/slider_arrows_imp.scss]`.
 //
 // Imprime:
-//       
 // .slickPrev{}       
 // .slickNext{}
 //
@@ -31,7 +31,6 @@
 // `[/etc/css/custom/slider_arrows_imp.scss]`.
 //
 // Imprime:
-//       
 // .slick.slick_carousel{}
 // .slick.slick_carousel .slick-list{}
 //
@@ -43,7 +42,6 @@
 // Activa el if que se encuentran en `[/etc/css/custom/imp/slider_dots_imp.scss]`.
 //
 // Imprime:
-//
 // .slickDots{}
 // .slickDots li{} 
 // .slickDots li.slickActive{} 

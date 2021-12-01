@@ -44,6 +44,7 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
 #footer{
     @if $page_index_fullHeight_act_ALL == "on" or $page_section_fullHeight_act_ALL == "on"{
         height: $footer_height_ALL;

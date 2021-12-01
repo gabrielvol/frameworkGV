@@ -1,9 +1,56 @@
 /* * NombreDeProyecto * ========================================================
    Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
-///**Form Colours:** 
-    ///Aquí se declaran las var de colores de texto de los elementos `label`, `input`, `placeholder` y `submit` con sus `:hover`; los colores de fondo de los elementos `input` y `option` y `submit`, con sus `:hover`; y los colores de borde de los elementos `input`  y `submit`, con sus `:hover`. Además se declara el color de borde cuando un input tiene error con la variable `$inputErrorBcColour`.
-    ///con sus `:hover`.
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de variables de colores de texto de los elementos `label`,
+// `input`, `placeholder` y `submit` con sus `:hover`.
+// Colores de fondo de  los elementos `input` y `option` y `submit`, con sus 
+// `:hover`.
+// Colores de borde de los elementos `input`  y `submit`, con sus `:hover`.
+// Además se declara el color de borde cuando un input tiene error con la
+// variable `$inputErrorBcColour`. 
+//
+// #form #colour #text #background #label #input #submit #validation 
+// #placeholder #formStatus
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq                   = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hs                  = hash
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// M, T, D, DL          = mobile, tablet, desktop, desktop large
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
     
      
 /* // Form Label ------------------------------------------------------------ */
@@ -34,8 +81,8 @@ $form_input_caret_colour:       $form_input_ftColour;
 $button_form_submit_ftColour:           $button_callToAction_ftColour;
 $button_form_submit_ftColour_hover:     $button_callToAction_ftColour_hover;
   
-$button_form_submit_bdColour:           $button_callToAction_bdColour;
-$button_form_submit_bdColour_hover:     $button_callToAction_bdColour_hover;
+$button_form_submit_bdColour:           $button_callToAction_bdColour; // REF [21]
+$button_form_submit_bdColour_hover:     $button_callToAction_bdColour_hover; // REF [21]
   
 $button_form_submit_bgColour:           $button_callToAction_bgColour;
 $button_form_submit_bgColour_hover:     $button_callToAction_bgColour_hover;

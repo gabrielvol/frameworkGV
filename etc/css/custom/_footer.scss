@@ -58,12 +58,7 @@
     }
     
     @include mobileOnly{
-        @if $footer_floatedContent_act_MO == "on"{
-            .logo_footer_container,
-            .footer_txt{
-                float: left;
-            }
-            
+        @if $footer_floatedContent_act_MO == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_MO;
                 
@@ -98,12 +93,7 @@
     }
     
     @include mobileLandscapeOnly{
-        @if $footer_floatedContent_act_MLO == "on"{
-            .logo_footer_container,
-            .footer_txt{
-                float: left;
-            }
-            
+        @if $footer_floatedContent_act_MLO == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_MLO;
                 
@@ -125,12 +115,7 @@
     }
     
     @include afterTablet{
-        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_AT == "on"{
-            .logo_footer_container,
-            .footer_txt{
-                float: left;
-            }
-            
+        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_AT == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_AT;
                 padding-right: 20px;
@@ -167,12 +152,7 @@
     }
     
     @include afterTabletLandscape{
-        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_ATL == "on"{
-            .logo_footer_container,
-            .footer_txt{
-                float: left;
-            }
-            
+        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_ATL == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_ATL;
                 padding-right: 20px;

@@ -3,10 +3,10 @@
         
     <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
     
-    <div class="logo_footer_container">
+    <div class="logo_footer_container"> <?php /* // REF [20] */ ?>
         <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
     </div>
-    <div class="footer_txt">
+    <div class="footer_txt"> <?php /* // REF [20] */ ?>
         <p class="footer_address">
             <a href="<?php echo $site_address_PRINCIPAL_map_url; ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
         </p>

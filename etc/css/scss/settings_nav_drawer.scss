@@ -22,7 +22,7 @@
                 padding-left: 5px;
                 overflow: scroll; 
                 
-                @if $language_menu_navDrawer_clicked_act == "on"{
+                @if $nav_language_navDrawerOpen_act == "on"{
                     padding-bottom: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_bottom} + 10px);
                 } @else {
                     padding-bottom: 30px;     

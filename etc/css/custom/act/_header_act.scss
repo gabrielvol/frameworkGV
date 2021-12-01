@@ -7,44 +7,36 @@
 
 
 /* // Listado --------------------------------------------------------------- */
-// 01 _ Logo Nav Floated
+// 01 _ $header_logoNav_floated_act
 // 02 _ Logo Nav Floated Flexbox
 // 03 _ Header Fixed
 //
 //
-// 01 _ Logo Nav Floated
-// $header_logoNav_floated_act
-// Activa los if que se encuentran en
-// `[/etc/css/custom/_header.scss]` y
+// 01 _ $header_logoNav_floated_act
+// Activa los if que se encuentran en `[/etc/css/custom/_header.scss]` y
 // `[/etc/css/custom/_nav_AT.scss]`.
 //
 // Imprime:
-//       
 // #header .logo_header{
 //     box-sizing: border-box;
 //     float: left;
 //     padding-right: 20px;
 //     padding-left: 20px; 
 // }
-// 
 // .nav_main{
 //     float: left;
 //     width: calc(100% - $logo_width);
 // }
-// 
 // .nav_main .nav_main_ul > li{
 //     float: left;
 // }
 //
 //
-// 02 _ Logo Nav Floated Flexbox
-// $header_logoNav_floated_flexbox_act
+// 02 _ $header_logoNav_floated_flexbox_act
 // Activa los if que se encuentran en
-// `[/etc/css/custom/_header.scss]` y
-// `[/etc/css/custom/_nav_AT.scss]`.
+// `[/etc/css/custom/_header.scss]` y // `[/etc/css/custom/_nav_AT.scss]`.
 //
 // Imprime:
-//       
 // #header .container{
 //     display: flex;
 //     flex-direction: row;
@@ -53,15 +45,12 @@
 //     align-content: flex-start;
 //     align-items: flex-start;     
 // }
-//       
 // #header .logo_header{
 //     box-sizing: border-box;     
 // }
-// 
 // .nav_main{
 //     width: calc(100% - $logo_width);
 // }
-//
 // .nav_main .nav_main_ul.navAT{
 //     display: flex;
 //     flex-direction: row;
@@ -72,14 +61,13 @@
 // }
 //
 //
-// 03 _ Header Fixed
+// 03 _ $header_fixed_act_mq
 // REF [08]
 // Activa los if que se encuentran en
 // `[/etc/css/custom/imp/page_headerFixed_imp.scss]` y
 // `[/etc/css/custom/imp/header_headerFixed_imp.scss]`.
 //
 // Imprime:
-//
 // #header{
 //     position: fixed;
 //     top: 0;
@@ -88,7 +76,6 @@
 //     box-shadow: $bxShadow_header_fixed;
 //     height: $header_height;
 // }
-//
 // #main{
 //     padding-top: $page_PT;
 // }
