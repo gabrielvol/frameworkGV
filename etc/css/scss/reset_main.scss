@@ -23,9 +23,20 @@ progress[value]{
     appearance: none;
     border: none;
 }
+button{
+    background-color: transparent;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+button::focus-inner{
+    margin: 0;
+    border: $none;
+    padding: 0;
+}
 
 /* // Horizontal rule ------------------------------------------------------- */
-hr {
+hr{
     display: block;
     height: 1px;
     border: 0;

@@ -285,19 +285,7 @@ form{
         }
     }
     
-/* // Form Submit  ---------------------------------------------------------- */
-    button{
-        padding: 0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: antialiased;
-    }
-    
-    button::focus-inner{
-        margin: 0;
-        border: $none;
-        padding: 0;
-    }
-    
+/* // Form Submit  ---------------------------------------------------------- */    
     input::focus-inner{
         margin: 0;
         border: $none;
