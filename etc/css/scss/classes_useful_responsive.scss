@@ -66,6 +66,7 @@
         }
         .visuallyHiddenMO:not(:focus):not(:active),
         .sr-onlyMO:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -184,6 +185,7 @@
         }
         .visuallyHiddenAML:not(:focus):not(:active),
         .sr-onlyAML:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -302,6 +304,7 @@
         }
         .visuallyHiddenMLO:not(:focus):not(:active),
         .sr-onlyMLO:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -420,6 +423,7 @@
         }
         .visuallyHiddenBT:not(:focus):not(:active),
         .sr-onlyBT:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -538,6 +542,7 @@
         }
         .visuallyHiddenBTL:not(:focus):not(:active),
         .sr-onlyBTL:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -656,6 +661,7 @@
         }
         .visuallyHiddenTO:not(:focus):not(:active),
         .sr-onlyTO:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -774,6 +780,7 @@
         }
         .visuallyHiddenAT:not(:focus):not(:active),
         .sr-onlyAT:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -892,6 +899,7 @@
         }
         .visuallyHiddenATL:not(:focus):not(:active),
         .sr-onlyATL:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -1010,6 +1018,7 @@
         }
         .visuallyHiddenTLO:not(:focus):not(:active),
         .sr-onlyTLO:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -1128,6 +1137,7 @@
         }
         .visuallyHiddenTTLO:not(:focus):not(:active),
         .sr-onlyTTLO:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -1246,6 +1256,7 @@
         }
         .visuallyHiddenBD:not(:focus):not(:active),
         .sr-onlyBD:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
@@ -1364,6 +1375,7 @@
         }
         .visuallyHiddenAD:not(:focus):not(:active),
         .sr-onlyAD:not(:focus):not(:active){
+            // REF [22]
             position: absolute;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
