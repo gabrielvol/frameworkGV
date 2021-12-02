@@ -187,7 +187,6 @@ button{
     background-repeat: no-repeat;
     background-size: calc(#{$button_whatsapp_size} - 10px);
     background-position: center center;
-    text-indent: -9999px;
     
     &:focus, &:hover{
         box-shadow: 0 0 5px #3c9637;
@@ -252,6 +251,7 @@ button{
     background-position: center;
     background-size: 100%;
     text-indent: -9999px;
+    overflow: hidden;
     
     /* no scroll activattion
     bottom: 20px;

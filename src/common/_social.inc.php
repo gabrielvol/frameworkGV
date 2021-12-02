@@ -75,12 +75,7 @@
         </a>
     </li>
     <li class="social_wa">
-        <a href="<?php echo $site_tel_PRINCIPAL_whatsapp_chatOpen; ?>" class="conTel"><?php echo $site_tel_PRINCIPAL_whatsapp_formatted; ?></a> 
-        
-        <a href="<?php echo $site_tel_PRINCIPAL_whatsapp_chatOpen; ?>" class="hover_grow_L_ani">
-            <?php echo _("Nuestro contacto en WhatsApp"); ?>.
-            <img src="<?php echo $url_entorno; ?>/img/social_wa.svg" alt="<?php echo _('Nuestro contacto en WhatsApp'); ?>.">
-        </a>
+        <a href="<?php echo $site_tel_PRINCIPAL_whatsapp_chatOpen; ?>" class="social_wa_anchor conTel">Tel: <?php echo $site_tel_PRINCIPAL_formatted; ?></a>
     </li>
     <li class="social_yt">
         <a href="<?php echo $social_youTube_url; ?>" class="hover_grow_L_ani">

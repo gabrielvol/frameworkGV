@@ -28,5 +28,6 @@
         position: absolute;
         z-index: $zIndex_button_topLevel;
         text-indent: -9999px;
+        overflow: hidden;
     }
 }
