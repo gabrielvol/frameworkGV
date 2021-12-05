@@ -2,5 +2,7 @@
    Body Styles | Custom [/etc/css/custom/body.scss]
    ========================================================================== */
 body{
+    position: relative;
+    z-index: $zIndex_body;
     background-color: $bgColour_body;
 }
