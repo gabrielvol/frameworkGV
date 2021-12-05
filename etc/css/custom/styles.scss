@@ -102,13 +102,13 @@
 @import "../scss/functions_fontStroke";
 
 /* // Main CSS -------------------------------------------------------------- */
+@import "colours_placeholders";
+@import "colours_gradients";
+
 @import "../scss/settings_html_body";
 @import "body";
 @import "../scss/reset_main";
 @import "reset_custom";
-
-@import "colours_placeholders";
-@import "colours_gradients";
 
 @import "fontFace";
 @import "../scss/settings_text";
