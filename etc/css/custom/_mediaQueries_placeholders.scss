@@ -73,10 +73,20 @@
     
     @include tabletLandscapeOnly{}
     
+    
+    
+    @include beforeMobile1100{}
+    
+    @include afterMobile1100{}
+    
+    @include mobile1100Only{}
+    
 
     
     @include beforeDesktop{}
     
     @include afterDesktop{}
+    
+    
     
     @include afterDesktopLarge{}
