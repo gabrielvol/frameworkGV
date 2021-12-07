@@ -4,7 +4,8 @@
     
     $page_int               = 1;
     $nav_pageCurrent        = 'page_interna';
-    $nav_pageCurrent_int    = 'page_interna_index';
+    $nav_pageCurrent_int    = 'page_interna_home';
+//    $nav_pageCurrent_id     = 'page_interna_id';
     
     $has_form               = 0;
     $has_lightbox           = 0;

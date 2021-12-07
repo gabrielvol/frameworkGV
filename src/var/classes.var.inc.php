@@ -71,7 +71,7 @@ if($nav_pageCurrent         == 'page_index'):
 if($nav_pageCurrent         == 'page_interna'):
     $header_class           .= ' error_alert error_alert_a'; endif;
         
-if($nav_pageCurrent_int     == 'page_interna_index'):
+if($nav_pageCurrent_int     == 'page_interna_home'):
     $header_class           .= ' error_alert error_alert_b'; endif;  
 
 $header_classes             = 'class="'. $header_class .'"';
@@ -86,20 +86,30 @@ if($nav_pageCurrent         == 'page_index'):
 if($nav_pageCurrent         == 'page_interna'):
     $footer_class           .= ' error_alert error_alert_a'; endif;
     
-if($nav_pageCurrent_int     == 'page_interna_index'):
+if($nav_pageCurrent_int     == 'page_interna_home'):
     $footer_class           .= ' error_alert error_alert_b'; endif;
 
 $footer_classes             = 'class="'. $footer_class .'"';
 
 
 /* // Main Classes -------------------------------------------------------- */
-$main_class                 = $nav_pageCurrent .' ';
+    $main_class              = '';
 
 if($page_int                == 1):
-    $main_class             .= 'page_int'; endif;    
+    $main_class             .= 'page_int '. $nav_pageCurrent .' ';
+else:
+    $main_class             .= $nav_pageCurrent .' ';
+endif;    
 
 if(isset($nav_pageCurrent_int)):
-    $main_class             .= $nav_pageCurrent_int; endif;     
+    $main_class             .= $nav_pageCurrent_int; endif; 
+    
+//
+    $main_class_finals      = ' ';   
 
-$main_classes               = 'class="'. $main_class . '"';
+if(isset($nav_pageCurrent_id)):
+    $main_class_finals      .= $nav_pageCurrent_id; endif;  
+    
+//
+$main_classes               = 'class="'. $main_class . $main_class_finals .'"';
 ?>

@@ -5,6 +5,7 @@
     $nav_pageCurrent        = 'page_index';
     $nav_pageCurrent_int    = 'page_inicio';
     
+    $page_construccion      = 0;
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0;

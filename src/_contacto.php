@@ -4,8 +4,10 @@
     
     $page_int               = 1;   
     $nav_pageCurrent        = 'page_contacto';
-    $nav_pageCurrent_int    = 'page_contacto_index';
+//    $nav_pageCurrent_int    = 'page_contacto_home';
+//    $nav_pageCurrent_id     = 'page_interna_id';
     
+    $page_construccion      = 0;
     $has_form               = 1;
     $has_lightbox           = 0;
     $has_slider             = 0;
