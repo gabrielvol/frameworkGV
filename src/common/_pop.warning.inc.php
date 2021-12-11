@@ -1,6 +1,6 @@
 <div class="pop_global pop_warning" role="alertdialog" aria-labelledby="idlabelledby">
     <div role="document" tabindex="0">
-        <button type="button" class="button_pop_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
+        <button type="button" class="button_pop_close button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
         <h2 id="idlabelledby" class="mbm alignCenter"><?php echo _("titulooooooo"); ?></h2>
         <p class=""><?php echo _("textooo"); ?>.</p>
         <p class=""><?php echo _("textooo"); ?> <a href="#"><?php echo _("clicaqui"); ?></a>.</p>

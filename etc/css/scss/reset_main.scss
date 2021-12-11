@@ -52,6 +52,7 @@ img{
     font: normal 11px/1rem $arial;
     text-transform: uppercase;
     color: $grey2XD;
+    object-fit: cover;
     // Improves image quality when scaled in IE 7
     -ms-interpolation-mode: bicubic;
 }

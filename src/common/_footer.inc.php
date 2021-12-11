@@ -1,4 +1,4 @@
-<footer id="footer" <?php echo $footer_classes; ?>>
+<footer id="footer" <?php echo $classes_footer; ?>>
     <?php include('button.siteTop.inc.php'); ?>
         
     <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />

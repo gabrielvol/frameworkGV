@@ -5,6 +5,7 @@
     $page_int               = 1; 
     $nav_pageCurrent        = 'page_gracias';
     
+    $page_construccion      = 0;
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0; 
@@ -38,7 +39,7 @@
         include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php');
         include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/form.main.send.inc.php');
     ?>
-    <div id="main" <?php echo $main_classes; ?> role="main">
+    <div id="main" <?php echo $classes_main; ?> role="main">
         <h1 class="alignCenter">Gracias</h1>
         <p class="alignCenter"><?php echo $form_status_ok_globalB ?></p>
     </div>

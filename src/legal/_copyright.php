@@ -25,7 +25,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" <?php echo $main_classes; ?> role="main">
+    <div id="main" <?php echo $classes_main; ?> role="main">
         <section class="container">
             <h1 class="black alignCenter">Licencia</h1>
             <p class="nota black">El contenido de este sitio web se encuentra bajo la siguiente licencia:</p>

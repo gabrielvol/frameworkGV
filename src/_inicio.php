@@ -38,7 +38,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" <?php echo $main_classes; ?> role="main">  
+    <div id="main" <?php echo $classes_main; ?> role="main">  
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/section.aaa.inc.php');
             include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/section.bbb.inc.php');

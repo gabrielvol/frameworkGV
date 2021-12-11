@@ -158,7 +158,102 @@ button{
 }
 
 
-/* // Button Form Submit ---------------------------------------------------- */
+/* // Button Close ---------------------------------------------------------- */
+.button_close{
+    position: absolute;
+    z-index: $zIndex_button_topLevel;
+    border-radius: 50%;
+    // border: 1px solid $bdGreyXD!important; 
+    width: $button_close_global_size!important;
+    height: $button_close_global_size!important;
+    background-size: 35%;
+    background-color: $bgWhite;
+    background-image: url('#{$url_entorno}/img/button_close.svg');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    text-indent: -9999px;
+    overflow: hidden;
+
+    &, &:focus, &:hover{
+        background-color: $bgWhite;
+    }
+}
+
+
+/* // Button Popup ---------------------------------------------------------- */
+.pop_global{
+    .button_pop_close{
+        width: $button_pop_close_size!important;
+        height: $button_pop_close_size!important;
+        background-image: url('#{$url_entorno}/img/button_close.svg');
+    }
+
+    @include beforeMobile600{
+        .button_pop_close{
+            top: -45px;
+            right: 0;
+        }
+    }
+
+    @include afterMobile600{
+        .button_pop_close{
+            top: -35px;
+            right: -35px;
+        } 
+    }
+}
+
+.pop_warning{
+    .button_pop_close{
+        @include positionTR(10px, 10px);
+    }
+
+    .button_pop_submit{
+        @include transition(1s);
+        @include equalHeightAndLineHeight(35px);
+        width: 40%;
+        max-width: 150px;
+        border-radius: $bdRadius_global;
+        background-color: $bgWhite;
+        font-size: 0.8rem;
+
+        &, &:focus, &:hover{
+            border: 1px solid $bdGrey!important
+        }
+
+        &:focus, &:hover{
+            background-color: $bgGrey2XL;
+            color: $black;
+        }            
+    }
+
+    @include afterMobile600{
+        .button_pop_close{
+            @include positionTR(10px, 10px);
+        }
+    }
+}
+
+.pop_form{
+    .button_pop_close{
+        // box-shadow: $bxShadow_main;
+    }
+}
+
+.pop_formStatus{    
+    .button_pop_submit{
+        background-color: $bgWhite;
+        margin: 20px auto 0;
+        color: $black;
+        font-family: $arial;
+        font-weight: 700;
+        text-align: center;        
+        text-transform: uppercase;
+    }
+}
+
+
+/* // Button Form ----------------------------------------------------------- */
 .button_form_submit{        
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -269,8 +364,8 @@ button{
 }
 
 
-/* // Button Play Video ----------------------------------------------------- */
-#selector{
+/* // Button Video Play ----------------------------------------------------- */
+.button_video_play{
     position: relative;
 
     &::before{

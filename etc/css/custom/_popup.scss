@@ -3,7 +3,25 @@
    ========================================================================== */
     
 /* // Pop Modal ------------------------------------------------------------- */
-.modal_global{}
+.modal_global{
+    background-color: $modal_bgColour_global;
+}
+
+.modal_global,
+.modal_nav{
+    @include positionTRBL();
+    position: fixed;
+    z-index: $zIndex_modal_bg;
+}
+
+.modal_nav{
+    display: none; 
+    background-color: $modal_bgColour_nav; 
+    
+    @include afterTablet{
+        display: $none;
+    }
+}
 
 .modal_warning{
     /*
@@ -28,48 +46,17 @@
 .pop_global{
     box-sizing: border-box;
     position: fixed;
+    z-index: $zIndex_pop_global;
     top: 10vh;
     left: 50%;
     border-radius: $bdRadius_global; 
     background-color: $bgWhite;
     
-    .button_pop_close{
-        position: absolute;
-        border-radius: 50%;
-        // border: 1px solid $bdGreyXD!important; 
-        width: $button_pop_close_size!important;
-        height: $button_pop_close_size!important;
-        background-size: 13px;
-        background-color: $bgWhite;
-        background-image: url('#{$url_entorno}/img/button_pop_close.svg');
-        background-repeat: no-repeat;
-        background-position: center center; 
-        text-indent: -9999px;
-        overflow: hidden;
-
-        &, &:focus, &:hover{
-            background-color: $bgWhite;
-        }
-    }
-    
     .pop_innerContainer{
         @include positionTRBL;
         position: absolute;
         overflow: auto;
-    }
-
-    @include beforeMobile600{
-        .button_pop_close{
-            top: -45px;
-            right: 0;
-        }
-    }
-
-    @include afterMobile600{
-        .button_pop_close{
-            top: -35px;
-            right: -35px;
-        } 
+        overscroll-behavior: contain;
     }
 }
 
@@ -107,29 +94,6 @@
     .pop_innerContainer{
         padding: 20px;
     }
-
-    .button_pop_close{
-        @include positionTR(10px, 10px);
-    }
-
-    .button_pop_submit{
-        @include transition(1s);
-        @include equalHeightAndLineHeight(35px);
-        width: 40%;
-        max-width: 150px;
-        border-radius: $bdRadius_global;
-        background-color: $bgWhite;
-        font-size: 0.8rem;
-
-        &, &:focus, &:hover{
-            border: 1px solid $bdGrey!important
-        }
-
-        &:focus, &:hover{
-            background-color: $bgGrey2XL;
-            color: $black;
-        }            
-    }
         
     @include mobileOnly{
         width: $pop_warning_width_MO;
@@ -148,10 +112,6 @@
         .pop_innerContainer{
             @include positionTRBL(20px, 20px, 20px, 20px);
             padding: 20px;
-        }
-
-        .button_pop_close{
-            @include positionTR(10px, 10px);
         }
     }
 }
@@ -193,11 +153,7 @@
     padding-right: 20px;
     padding-left: 20px;
     height: 70vh;
-    
-    &,
-    .button_pop_close{
-        box-shadow: $bxShadow_main;
-    }
+    box-shadow: $bxShadow_main;
     
     .mobileForm{ 
         padding-top: 20px;
@@ -246,16 +202,6 @@
                 color: $grey3XD;
             }
         }
-    }
-    
-    .button_pop_submit{
-        background-color: $bgWhite;
-        margin: 20px auto 0;
-        color: $black;
-        font-family: $arial;
-        font-weight: 700;
-        text-align: center;        
-        text-transform: uppercase;
     }
         
     &.pop_formStatus_ok{

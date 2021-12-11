@@ -41,7 +41,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" <?php echo $main_classes; ?> role="main">
+    <div id="main" <?php echo $classes_main; ?> role="main">
         <div class="mobileForm tabletForm">
             <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/form.main.inc.php'); ?>
         </div>

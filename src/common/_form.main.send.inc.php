@@ -516,7 +516,7 @@ if (isset($_POST['button_form_submit__formMain'])){
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
             $form_status_pop__formMain = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_ok" role="alertdialog" aria-labelledby="formOK">'
                 . '<div role="document" tabindex="0">'
-                . '<button type="submit" class="button_pop_close hover_grow_S_ani" aria-pressed="false">'._("Cerrar").'</button>'
+                . '<button type="submit" class="button_pop_close button_close hover_grow_S_ani" aria-pressed="false">'._("Cerrar").'</button>'
                 . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'">'._("$form_status_ok_globalA__formMain").'</h2>'
                 . '<p>'. _("$form_status_ok_globalB__formMain") .'</p>'
                 . '<button type="submit" class="button_pop_submit" aria-pressed="false">'. _("OK") .'</button>'
@@ -570,7 +570,7 @@ if (isset($_POST['button_form_submit__formMain'])){
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- */
             $form_status_pop__formMain = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
                 . '<div role="document" tabindex="0">'
-                . '<button type="submit" class="button_pop_close hover_grow_S_ani" aria-pressed="false">'. _("Cerrar") .'</button>'
+                . '<button type="submit" class="button_pop_close button_close hover_grow_S_ani" aria-pressed="false">'. _("Cerrar") .'</button>'
                 . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMain .'">'. _("$form_status_error_globalA__formMain") .'</h2>'
                 . '<p>'. _("$form_status_error_globalB__formMain") .'</p>'
                 . '<p>'. _("$form_status_error_globalC__formMain") .'</p>'

@@ -7,6 +7,7 @@
     $nav_pageCurrent_int    = 'page_interna_home';
 //    $nav_pageCurrent_id     = 'page_interna_id';
     
+    $page_construccion      = 0;    
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0;
@@ -38,7 +39,7 @@
 </head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
-    <div id="main" <?php echo $main_classes; ?> role="main">
+    <div id="main" <?php echo $classes_main; ?> role="main">
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
 </body>

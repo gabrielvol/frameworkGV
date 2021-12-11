@@ -1,5 +1,5 @@
 <a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
-<header id="header" <?php echo $header_classes; ?>>    
+<header id="header" <?php echo $classes_header; ?>>    
     <?php
         if($nav_pageCurrent == 'page_index'){ echo '<h1 class="logo_header">'; } 
         if($nav_pageCurrent == 'page_index' && $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; }
