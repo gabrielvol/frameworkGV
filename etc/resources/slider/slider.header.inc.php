@@ -1,5 +1,11 @@
 <?php
-    $slider_header_class    = 'slider_header';
+    $classes_slider_header  = 'slider_header ';
+        
+    if($nav_pageCurrent == 'page_index'):
+        $classes_slider_header  .= 'slider_header_index ';        
+    else:
+        $classes_slider_header  .= 'slider_header_int ';
+    endif;
 
     $slider_header_item_01  = '01';
     $slider_header_item_02  = '02';
@@ -25,7 +31,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/slider.header.inc.php');
 ?>                
 
-<ul class="slick slick_carousel unstyled <?php echo $slider_header_class; ?>">
+<ul class="slick slick_carousel unstyled <?php echo $classes_slider_header; ?>">
     <?php        if(isset($slider_header_item_01)): // Section ?>
     <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_01; ?>.jpg" alt="" aria-hidden="true" /></li>
     
