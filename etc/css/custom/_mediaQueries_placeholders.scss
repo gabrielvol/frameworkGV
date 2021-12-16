@@ -1,6 +1,27 @@
 /* * NombreDeProyecto * ========================================================
    Media Queries Placeholders | Custom [/etc/css/custom/mediaQueries_placeholders.scss]
    ========================================================================== */
+
+    @include mobileOnly{}
+    
+    @include afterMobileLandscape{}  
+    
+    @include beforeMobile600{}
+    
+    @include afterMobile600{}
+    
+    @include beforeTablet{}
+    
+    @include afterTablet{} 
+    
+    @include beforeTabletLandscape{}
+    
+    @include afterTabletLandscape{}  
+    
+    @include afterDesktop{}
+    
+    /* * */
+    
     @media (min-width: 100px) and (max-width: 200px){}
     
     @include mobileOnly{}
