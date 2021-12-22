@@ -15,7 +15,7 @@
     $page_url_full          = $url_gracias_full;
     
     $site_title             = "Gracias | ". $site_name_title;
-//    $site_desc_GB           = "Thank You | ". $site_name_title;
+//    $site_title_GB          = "Thank You | ". $site_name_title;
     
     $site_desc              = $site_desc_global;
 //    $site_desc_GB           = $site_desc_global_GB;

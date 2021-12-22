@@ -1,4 +1,5 @@
 <?php
+/*
     if($nav_pageCurrent == 'page-PAGINA'){
 //        include('pop.inc.php');
     }
@@ -14,4 +15,5 @@
     if($page_int == 1){ // Internas
 //        include('pop.inc.php');
     }
+*/
 ?>

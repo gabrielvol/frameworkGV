@@ -91,6 +91,7 @@
 <script src="<?php echo $url_entorno; ?>/js/_construccion.js"></script>
 */
 ?>
+
 <?php endif; if($has_form == 1): ?>
 <script src="<?php echo $url_entorno; ?>/js/scrollKeep.js"></script>
 <script src="<?php echo $url_entorno; ?>/js/_form.js"></script>

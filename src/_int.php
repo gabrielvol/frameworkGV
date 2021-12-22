@@ -7,11 +7,11 @@
     $nav_pageCurrent_int    = 'page_interna_home';
 //    $nav_pageCurrent_id     = 'page_interna_id';
     
-    $page_construccion      = 0;    
+    $page_construccion      = 0;
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0;
-//    $has-CUSTOMVARIABLE     = 0; 
+//    $has-CUSTOMVARIABLE     = 0;
        
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
     

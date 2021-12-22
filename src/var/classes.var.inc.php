@@ -114,13 +114,13 @@ else:
 endif;    
 
 if(isset($nav_pageCurrent_int)):
-    $class_ini_main         .= $nav_pageCurrent_int; endif; 
+    $class_ini_main         .= $nav_pageCurrent_int .' '; endif; 
     
 //----- Finals
     $class_end_main         = '';   
 
 if(isset($nav_pageCurrent_id)):
-    $class_end_main         .= $nav_pageCurrent_id; endif;
+    $class_end_main         .= $nav_pageCurrent_id .' '; endif;
 
 if($page_construccion == 1):
     $class_end_main         .= 'page_construccion '; endif; 
