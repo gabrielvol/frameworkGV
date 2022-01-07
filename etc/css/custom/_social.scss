@@ -129,13 +129,6 @@
                 right: 10px;
                 bottom: 20px;
                 left: auto;
-
-                li{
-                    a,
-                    img{
-                        @include squareSize($social_icon_size_BT);            
-                    }
-                }
             }
         }
     }

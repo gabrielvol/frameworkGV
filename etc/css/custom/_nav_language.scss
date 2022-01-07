@@ -21,7 +21,8 @@
             }
         }
     }
-                
+
+    &.navDrawer_open .flag_alignedLeft,
     .flag_alignedLeft{
         img{
             top: 0;
@@ -97,6 +98,15 @@
                     padding-bottom: $nav_language_ul_height_clicked_PB;
                     padding-left: 0;
                     background-color: $nav_language_ul_bgColour_clicked;
+                    
+                    li{
+                        img{
+                            width: $language_flag_width_clicked;
+                            height: $language_flag_height_clicked;
+                            margin-top: calc(-1 * calc(#{$language_flag_height_clicked} / 2));
+                            margin-left: calc(-1 * calc(#{$language_flag_width_clicked} / 2));
+                        }
+                    }
                     
                 } @else {
                     left: 30px;         

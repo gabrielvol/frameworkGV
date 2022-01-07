@@ -70,7 +70,7 @@ $classes_SECTION            = 'class="'. $class_ini_SECTION . $class_end_SECTION
     $class_ini_header       = 'navDrawer_closed ';
 
 if($nav_pageCurrent         == 'page_index'):
-    $class_ini_header       .= 'header_index '; endif;     
+    $class_ini_header       .= 'header_index '; endif;  
 
 if($nav_pageCurrent         == 'page_interna'):
     $class_ini_header       .= 'error_alert error_alert_a '; endif;
@@ -89,7 +89,7 @@ $classes_header             = 'class="'. $class_ini_header . $class_end_header .
     $class_ini_footer       = '';
 
 if($nav_pageCurrent         == 'page_index'):
-    $class_ini_footer       .= 'footer_index '; endif;   
+    $class_ini_footer       .= 'footer_index '; endif;
     
 if($nav_pageCurrent         == 'page_interna'):
     $class_ini_footer       .= 'error_alert error_alert_a '; endif;
@@ -111,7 +111,7 @@ if($page_int                == 1):
     $class_ini_main         .= 'page_int '. $nav_pageCurrent .' ';
 else:
     $class_ini_main         .= $nav_pageCurrent .' ';
-endif;    
+endif; 
 
 if(isset($nav_pageCurrent_int)):
     $class_ini_main         .= $nav_pageCurrent_int .' '; endif; 
