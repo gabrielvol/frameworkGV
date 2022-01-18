@@ -47,10 +47,11 @@
 
             .button_hamb_close{
                 width: $button_hamb_close_size;
-                height: calc(#{$button_hamb_close_size} - 10px);
+                height: calc(#{$button_hamb_close_size} - 0px);
                 background-color: $button_hamb_close_bgColour;
                 background-size: 100%;
                 border: 1px solid $button_hamb_close_bdColour!important;
+                padding: $zero;
                 text-indent: -9999px;
                 overflow: hidden;
             }

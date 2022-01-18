@@ -47,7 +47,7 @@
 /* // Button Hambuger Sizes ------------------------------------------------- */
 $button_hamb_open_width:        90px;
 $button_hamb_open_height:       40px;
-$button_hamb_close_size:        50px;
+$button_hamb_close_size:        $button_hamb_open_height;
     
 /*___ Button Hambuger Sizes Accordion ___*/
 $nav_accordion_hamburger_height:    40px;
