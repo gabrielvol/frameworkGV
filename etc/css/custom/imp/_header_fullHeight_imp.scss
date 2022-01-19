@@ -69,8 +69,8 @@
     }
     
     @include mobileLandscapeOnly{
-        @if $page_index_fullHeight_act_AML == "on" or $page_section_fullHeight_act_AML == "on"{
-            height: $header_height_AML;
+        @if $page_index_fullHeight_act_MLO == "on" or $page_section_fullHeight_act_MLO == "on"{
+            height: $header_height_MLO;
         }
     }
 

@@ -59,54 +59,108 @@
     @include mobileOnly{
         @if $page_index_fullHeight_act_MO == "on" or $page_section_fullHeight_act_MO == "on"{
             height: $footer_height_MO;
-        }
+        }  
+    
+        @if $page_index_only_fullHeight_act_MO == "on"{
+            &.footer_index{
+                height: $footer_height_MO;
+            }
+        }  
     }
     
     @include afterMobileLandscape{
-        @if $page_index_fullHeight_act_MLO == "on" or $page_section_fullHeight_act_MLO == "on"{
-            height: $footer_height_MLO;
-        }
+        @if $page_index_fullHeight_act_AML == "on" or $page_section_fullHeight_act_AML == "on"{
+            height: $footer_height_AML;
+        }  
+    
+        @if $page_index_only_fullHeight_act_AML == "on"{
+            &.footer_index{
+                height: $footer_height_AML;
+            }
+        }  
     }
     
     @include mobileLandscapeOnly{
-        @if $page_index_fullHeight_act_AML == "on" or $page_section_fullHeight_act_AML == "on"{
-            height: $footer_height_AML;
-        }
+        @if $page_index_fullHeight_act_MLO == "on" or $page_section_fullHeight_act_MLO == "on"{
+            height: $footer_height_MLO;
+        }  
+    
+        @if $page_index_only_fullHeight_act_MLO == "on"{
+            &.footer_index{
+                height: $footer_height_MLO;
+            }
+        }  
     }
     
     @include beforeTablet{
         @if $page_index_fullHeight_act_BT == "on" or $page_section_fullHeight_act_BT == "on"{
             height: $footer_height_BT;
-        }
+        }  
+    
+        @if $page_index_only_fullHeight_act_BT == "on"{
+            &.footer_index{
+                height: $footer_height_BT;
+            }
+        }  
     }
     
     @include afterTablet{
         @if $page_index_fullHeight_act_AT == "on" or $page_section_fullHeight_act_AT == "on"{
             height: $footer_height_AT;
-        }
+        }  
+    
+        @if $page_index_only_fullHeight_act_AT == "on"{
+            &.footer_index{
+                height: $footer_height_AT;
+            }
+        }  
     }
     
     @include tabletOnly{
         @if $page_index_fullHeight_act_TO == "on" or $page_section_fullHeight_act_TO == "on"{
             height: $footer_height_TO;
-        }
+        }  
+    
+        @if $page_index_only_fullHeight_act_TO == "on"{
+            &.footer_index{
+                height: $footer_height_TO;
+            }
+        }  
     }
     
     @include beforeTabletLandscape{
-        @if $page_index_fullHeight_act_BTL == "on" or $page_section_fullHeight_act_ATL == "on"{
-            height: $footer_height_ATL;
-        }
+        @if $page_index_fullHeight_act_BTL == "on" or $page_section_fullHeight_act_BTL == "on"{
+            height: $footer_height_BTL;
+        }  
+    
+        @if $page_index_only_fullHeight_act_BTL == "on"{
+            &.footer_index{
+                height: $footer_height_BTL;
+            }
+        }  
     }
     
     @include afterTabletLandscape{
         @if $page_index_fullHeight_act_ATL == "on" or $page_section_fullHeight_act_ATL == "on"{
             height: $footer_height_ATL;
-        }
+        }  
+    
+        @if $page_index_only_fullHeight_act_ATL == "on"{
+            &.footer_index{
+                height: $footer_height_ATL;
+            }
+        }  
     }
     
     @include afterDesktop{
         @if $page_index_fullHeight_act_AD == "on" or $page_section_fullHeight_act_AD == "on"{
             height: $footer_height_AD;
-        }       
+        }    
+    
+        @if $page_index_only_fullHeight_act_AD == "on"{
+            &.footer_index{
+                height: $footer_height_AD;
+            }
+        }   
     }
 }

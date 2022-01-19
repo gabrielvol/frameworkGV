@@ -131,7 +131,8 @@
             &.navDrawer_open{}
         }   
     }
-
+    
+/*
     @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         @if $header_fixed_act_nav_BT == "on"{
             position: fixed;
@@ -151,7 +152,8 @@
             &.navDrawer_open{}
         }   
     }
-    
+*/
+
     @include afterTablet{        
         @if $header_fixed_act_AT == "on"{
             position: fixed;
