@@ -2,9 +2,9 @@
    Nav Drawer Settings | Etc [/etc/css/scss/settings_nav_drawer.scss]
    ========================================================================== */
 @if $nav_drawer_act == "on"{
-    @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+    @include navBT{// REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         .nav_main{
-            .button_hamb_close{                
+            .button_hamb_close{
                 &.button_hamb_close_visible{
                     display: block;
                 } 
@@ -23,7 +23,7 @@
                 overflow: scroll; 
                 
                 @if $nav_language_navDrawerOpen_act == "on"{
-                    padding-bottom: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_bottom} + 10px);
+                    padding-bottom: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_bottom} + #{$nav_language_ul_height_clicked_PT} + #{$nav_language_ul_height_clicked_PB} + 10px);
                 } @else {
                     padding-bottom: 30px;     
                 }
@@ -144,7 +144,7 @@
                         }
                     }
                     
-                    &.nav_item_current{  
+                    &.nav_item_current{
                         > a,
                         .nav_TLI_level1{
                             background-image: url('#{$url_entorno}/img/#{$nav_arrows_item_current_level0}');
@@ -188,7 +188,7 @@
                         }
                     }
                     
-                    &.nav_item_current{    
+                    &.nav_item_current{
                         a,
                         .nav_TLI_level1{
                             color: $nav_TLI_current_level2_ftColour_BT;
@@ -230,7 +230,7 @@
                         }
                     }
                     
-                    &.nav_item_current{    
+                    &.nav_item_current{
                         a,
                         .nav_TLI_level1{
                             color: $nav_TLI_current_level3_ftColour_BT;

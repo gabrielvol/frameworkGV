@@ -32,7 +32,7 @@
     $gettext_languageName_ZH    = "sinTraduccion";
 ?>
 <nav class="nav_language">
-    <ul class="nav_language_ul unstyled displayFlex">
+    <ul class="nav_language_ul unstyled displayFlex <?php if($l == 'en_GB'){ echo ' lang_EN'; } ?>">
         <li>
             <a href="<?php echo $url_entorno; ?>/?l=es_AR" hreflang="es" class="hover_grow_M_ani">
                 <img src="<?php echo $url_entorno; ?>/img/flag_ar.svg" alt="<?php echo $gettext_switchMsg_AR; ?>." />

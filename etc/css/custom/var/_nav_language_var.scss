@@ -69,10 +69,11 @@ $nav_language_ul_width_AT:          calc(calc(#{$language_flag_width_AT} * #{$na
 
 $nav_language_ul_height_BT:             calc(#{$language_flag_height_BT} + #{$language_flag_border_size_full});
 $nav_language_ul_height_clicked:        calc(#{$language_flag_height_clicked} + #{$language_flag_border_size_full});
-$nav_language_ul_height_clicked_PT:     15px;
+$nav_language_ul_height_clicked_PT:     30px;
 $nav_language_ul_height_clicked_PB:     20px;
 $nav_language_ul_height_AT:             calc(#{$language_flag_height_AT} + #{$language_flag_border_size_full});
 
+$nav_language_ul_height_before:         20px;
 
 /* // Language Colours ------------------------------------------------------ */
 $nav_language_ul_bgColour_clicked:              transparent;

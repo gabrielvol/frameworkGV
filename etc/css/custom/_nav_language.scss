@@ -88,16 +88,17 @@
                 z-index: $zIndex_nav_language_ul_clicked;
                 
                 @if $nav_language_navDrawerOpen_act == "on"{
+                    @include borderStyleT($bdGrey2XL);
                     left: 0;
                     bottom: 0;
                     box-sizing: border-box;
-                    width: calc(#{$nav_drawer_width_final} - 5px);
-                    max-width: $nav_drawer_width_max;
+                    background-color: $nav_language_ul_bgColour_clicked;
+                    width: calc(#{$nav_drawer_width_final} - #{$nav_drawer_bdWidth});
+                    max-width: calc(#{$nav_drawer_width_max} - #{$nav_drawer_bdWidth});
                     height: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_height_clicked_PT} + #{$nav_language_ul_height_clicked_PB});
                     padding-top: $nav_language_ul_height_clicked_PT;
                     padding-bottom: $nav_language_ul_height_clicked_PB;
-                    padding-left: 0;
-                    background-color: $nav_language_ul_bgColour_clicked;
+                    padding-left: 10px;
                     
                     li{
                         img{
@@ -108,6 +109,25 @@
                         }
                     }
                     
+                    &::before{
+                        @include equalHeightAndLineHeight($nav_language_ul_height_before);
+                        content: "Seleccione un idioma:";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        padding-top: 5px;
+                        color: $ftColour_main_global;
+                        font-family: $ftFamily_main_global;
+                        font-size: 0.8rem;
+                    }
+                    
+                    &.lang_EN{                    
+                        &::before{
+                            content: "Select language:";
+                        }
+                    }
+                    
                 } @else {
                     left: 30px;         
                     bottom: $nav_language_ul_bottom; 
@@ -115,8 +135,9 @@
                 }
                 
                 li{
-                    width: 50%;
+                    width: auto;
                     height: auto;
+                    margin-left: 3px;
                     
                     a{
                         @include squareSize($language_flag_height_clicked);
@@ -125,7 +146,7 @@
                     }
                     
                     & + li{
-                        margin-left: 0;
+                        margin-left: 20px;
                     }
                 }
             }
