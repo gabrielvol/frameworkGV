@@ -5,12 +5,14 @@
     $page_int               = 1;   
     $nav_pageCurrent        = 'page_contacto';
 //    $nav_pageCurrent_int    = 'page_contacto_home';
-//    $nav_pageCurrent_id     = 'page_interna_id';
+//    $nav_pageCurrent_id     = 'page_PAGEINT_id';
     
     $page_construccion      = 0;
     $has_form               = 1;
     $has_lightbox           = 0;
     $has_slider             = 0;
+//    $lang_en                = 1;    
+//    $has-CUSTOMVARIABLE     = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');    
     

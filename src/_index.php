@@ -9,8 +9,7 @@
     $has_form               = 0;
     $has_lightbox           = 0;
     $has_slider             = 0;
-//    $lang_en                = 1;
-    
+//    $lang_en                = 1;    
 //    $has-CUSTOMVARIABLE     = 0;
      
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');

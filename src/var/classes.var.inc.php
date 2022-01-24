@@ -72,10 +72,10 @@ $classes_SECTION            = 'class="'. $class_ini_SECTION . $class_end_SECTION
 if($nav_pageCurrent         == 'page_index'):
     $class_ini_header       .= 'header_index '; endif;  
 
-if($nav_pageCurrent         == 'page_interna'):
+if($nav_pageCurrent         == 'page_PAGEINT'):
     $class_ini_header       .= 'error_alert error_alert_a '; endif;
         
-if($nav_pageCurrent_int     == 'page_interna_home'):
+if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_header       .= 'error_alert error_alert_b '; endif;  
     
 //----- Finals
@@ -91,10 +91,10 @@ $classes_header             = 'class="'. $class_ini_header . $class_end_header .
 if($nav_pageCurrent         == 'page_index'):
     $class_ini_footer       .= 'footer_index '; endif;
     
-if($nav_pageCurrent         == 'page_interna'):
+if($nav_pageCurrent         == 'page_PAGEINT'):
     $class_ini_footer       .= 'error_alert error_alert_a '; endif;
     
-if($nav_pageCurrent_int     == 'page_interna_home'):
+if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_footer       .= 'error_alert error_alert_b '; endif;
     
 //----- Finals
