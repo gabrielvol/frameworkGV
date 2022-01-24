@@ -44,6 +44,11 @@
 
 
 
+/* // Text Fonts ------------------------------------------------------------ */
+$ftFamily_main_global:          $arial;
+$ftFamily_bold_global:          $ftFamily_main_global;
+
+
 /* // Text Colours ---------------------------------------------------------- */
 $ftColour_main_global:          $black;
 $ftColour_main_global_hover:    lighten($ftColour_main_global, 20%);

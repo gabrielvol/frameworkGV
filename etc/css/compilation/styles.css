@@ -70,6 +70,7 @@
    Text Activators | Custom [/etc/css/custom/act/text_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Header Activators | Custom [/etc/css/custom/act/header_act.scss]
@@ -97,6 +98,7 @@
    Footer Activators | Custom [/etc/css/custom/act/footer_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Logo y dirección flotados --------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
@@ -151,6 +153,7 @@
 /*___ Footer ____________________________*/
 /*___ Slick Slider ______________________*/
 /* // 1000 ------------------------------------------------------------------ */
+/* // 100 ------------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Container Sizes Variables | Custom [/etc/css/custom/var/container_sizes_var.scss]
    ========================================================================== */
@@ -199,12 +202,12 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Variables de fuentes -------------------------------------------------- */
-/*___ Creamos la variable de la fuente principal del sitio _____________*/
 /* * NombreDeProyecto * ========================================================
    Text Variables | Custom [/etc/css/custom/var/text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Text Fonts ------------------------------------------------------------ */
 /* // Text Colours ---------------------------------------------------------- */
 /* // Espaciado general de texto -------------------------------------------- */
 /* // Headings -------------------------------------------------------------- */
@@ -296,8 +299,11 @@
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Whatsapp -------------------------------------------------------------- */
+/* // Button General -------------------------------------------------------- */
+/* // Button Close ---------------------------------------------------------- */
+/* // Button Whatsapp ------------------------------------------------------- */
 /* // Button SiteTop // REF [18] -------------------------------------------- */
+/* // Button Video Play ----------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Hover Variables | Custom [/etc/css/custom/var/hover_var.scss]
    ========================================================================== */
@@ -341,6 +347,8 @@
 /* * NombreDeProyecto * ========================================================
    Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
 /* // Forms Input ----------------------------------------------------------- */
 /* // Form Submit  ---------------------------------------------------------- */
@@ -428,17 +436,18 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav ------------------------------------------------------------------- */
 /* // Mobile ---------------------------------------------------------------- */
-/* // Tablet ---------------------------------------------------------------- */
-/* // Tablet Landscape ------------------------------------------------------ */
 /* // 550px ----------------------------------------------------------------- */
 /* // 600px ----------------------------------------------------------------- */
 /* // 650px ----------------------------------------------------------------- */
 /* // 700px ----------------------------------------------------------------- */
 /* // 750px ----------------------------------------------------------------- */
+/* // Tablet ---------------------------------------------------------------- */
 /* // 800px ----------------------------------------------------------------- */
 /* // 850px ----------------------------------------------------------------- */
 /* // 900px ----------------------------------------------------------------- */
 /* // 950px ----------------------------------------------------------------- */
+/* // Tablet Landscape ------------------------------------------------------ */
+/* // 1100px ---------------------------------------------------------------- */
 /* // Desktop --------------------------------------------------------------- */
 /* // Desktop Large + ------------------------------------------------------- */
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */
@@ -561,6 +570,24 @@ Description: Optional - Width of triangle - Accepts a unitless integer that is e
    ========================================================================== */
 /* // Main CSS -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Colour Placeholders | Custom [/etc/css/custom/colours_placeholders.scss]
+   ========================================================================== */
+a.orange:focus, a.orange:hover {
+  color: #ff0000; }
+
+/* * NombreDeProyecto * ========================================================
+   Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
+   ========================================================================== */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
+/*
+$bgGrad_colourPercent: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
+$bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
+.bgGrad_colourPercent{
+    background-image: $bgGrad_colourPercent;
+    filter: $bgGrad_colourPercent_filter;
+}
+*/
+/* * NombreDeProyecto * ========================================================
    Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
    ========================================================================== */
 html, body {
@@ -580,6 +607,8 @@ body {
    Body Styles | Custom [/etc/css/custom/body.scss]
    ========================================================================== */
 body {
+  position: relative;
+  z-index: 0;
   background-color: #fff; }
 
 /* * NombreDeProyecto * ========================================================
@@ -607,6 +636,17 @@ progress[value] {
   appearance: none;
   border: none; }
 
+button {
+  background-color: transparent;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased; }
+
+button::focus-inner {
+  margin: 0;
+  border: none !important;
+  padding: 0; }
+
 /* // Horizontal rule ------------------------------------------------------- */
 hr {
   display: block;
@@ -623,6 +663,7 @@ img {
   font: normal 11px/1rem Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   text-transform: uppercase;
   color: #333;
+  object-fit: cover;
   -ms-interpolation-mode: bicubic; }
 
 img[src$=".png"], img[src$=".gif"], img[src$=".svg"] {
@@ -635,24 +676,6 @@ figure {
 /* * NombreDeProyecto * ========================================================
    Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
    ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Colour Placeholders | Custom [/etc/css/custom/colours_placeholders.scss]
-   ========================================================================== */
-a.orange:focus, a.orange:hover {
-  color: #ff0000; }
-
-/* * NombreDeProyecto * ========================================================
-   Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
-   ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-/*
-$bgGrad_colourPercent: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
-$bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
-.bgGrad_colourPercent{
-    background-image: $bgGrad_colourPercent;
-    filter: $bgGrad_colourPercent_filter;
-}
-*/
 /* * NombreDeProyecto * ========================================================
    Font-face | Custom [/etc/css/custom/fontFace.scss]
    ========================================================================== */
@@ -721,6 +744,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem; } }
 
 @media (min-width: 1024px) {
+  p, a, li, dd, dt, .pSize {
+    font-size: 1rem; } }
+
+@media (min-width: 1200px) {
   p, a, li, dd, dt, .pSize {
     font-size: 1rem; } }
 
@@ -1028,6 +1055,7 @@ b, strong,
   text-align-last: center; }
 
 .indentedText {
+  overflow: hidden;
   text-indent: -9999px; }
 
 .truncatedText {
@@ -1082,6 +1110,9 @@ b, strong,
 
 .bgGrey2XD {
   background-color: #333; }
+
+.bgGrey3XD {
+  background-color: #111; }
 
 .bgError {
   background-color: #eb1c24; }
@@ -1222,12 +1253,14 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 .visuallyHidden:not(:focus):not(:active),
 .sr-only:not(:focus):not(:active) {
   /*
+    // REF [22]
 Hide only visually, but have it available for screen readers:
 https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 
-1. For long content, line feeds are not interpreted as spaces and small width
-   causes content to wrap 1 word per line:
-   https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    // REF [22a]
+For long content, line feeds are not interpreted as spaces and small width
+causes content to wrap 1 word per line:
+https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
   position: absolute;
   clip-path: inset(100%);
@@ -1238,8 +1271,7 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   padding: 0 !important;
   margin: -1px;
   overflow: hidden;
-  white-space: nowrap;
-  /* 1 */ }
+  white-space: nowrap; }
 
 article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after,
 .borderBox,
@@ -2089,7 +2121,7 @@ html input[type="button"] {
 button, button::before, button::after {
   box-sizing: border-box; }
 
-/* // General --------------------------------------------------------------- */
+/* // Button General -------------------------------------------------------- */
 /* // Call to Action -------------------------------------------------------- */
 .callToAction {
   transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1), color 1s, border-color 1s, box-shadow 0.7s;
@@ -2161,7 +2193,73 @@ button, button::before, button::after {
       height: 50px;
       line-height: 50px; } }
 
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Button Close ---------------------------------------------------------- */
+.button_close {
+  position: absolute;
+  z-index: 9900;
+  border-radius: 50%;
+  width: 35px !important;
+  height: 35px !important;
+  background-size: 35%;
+  background-color: #fff;
+  background-image: url("/stage/img/button_close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -9999px;
+  overflow: hidden; }
+  .button_close, .button_close:focus, .button_close:hover {
+    background-color: #fff; }
+
+/* // Button Popup ---------------------------------------------------------- */
+.pop_global .button_pop_close {
+  width: 30px !important;
+  height: 30px !important;
+  background-image: url("/stage/img/button_close.svg"); }
+
+@media (max-width: 600px) {
+  .pop_global .button_pop_close {
+    top: -45px;
+    right: 0; } }
+
+@media (min-width: 601px) {
+  .pop_global .button_pop_close {
+    top: -35px;
+    right: -35px; } }
+
+.pop_warning .button_pop_close {
+  top: 10px;
+  right: 10px; }
+
+.pop_warning .button_pop_submit {
+  transition: all 1s ease;
+  height: 35px;
+  line-height: 35px;
+  width: 40%;
+  max-width: 150px;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 0.8rem; }
+  .pop_warning .button_pop_submit, .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
+    border: 1px solid #8c8c8c !important; }
+  .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
+    background-color: #e6e6e6;
+    color: #000; }
+
+@media (min-width: 601px) {
+  .pop_warning .button_pop_close {
+    top: 10px;
+    right: 10px; } }
+
+.pop_formStatus .button_pop_submit {
+  background-color: #fff;
+  margin: 20px auto 0;
+  color: #000;
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* // Button Form ----------------------------------------------------------- */
 .button_form_submit {
   font-size: 1.2rem;
   text-transform: uppercase; }
@@ -2172,7 +2270,7 @@ button, button::before, button::after {
       margin-left: auto !important;
       margin-top: 30px; } }
 
-/* // WhatsApp -------------------------------------------------------------- */
+/* // Button Whatsapp ------------------------------------------------------- */
 .button_whatsapp {
   transition: all 1s ease;
   width: 60px;
@@ -2187,8 +2285,7 @@ button, button::before, button::after {
   background-image: url("/stage/img/button_whatsapp.svg");
   background-repeat: no-repeat;
   background-size: calc(60px - 10px);
-  background-position: center center;
-  text-indent: -9999px; }
+  background-position: center center; }
   .button_whatsapp:focus, .button_whatsapp:hover {
     box-shadow: 0 0 5px #3c9637;
     background-color: #3cd134; }
@@ -2232,6 +2329,7 @@ button, button::before, button::after {
   background-position: center;
   background-size: 100%;
   text-indent: -9999px;
+  overflow: hidden;
   /* no scroll activattion
     bottom: 20px;
     */
@@ -2245,7 +2343,31 @@ button, button::before, button::after {
     }
     */ }
 
-/* // Custom buttons -------------------------------------------------------- */
+/* // Button Video Play ----------------------------------------------------- */
+.button_video_play {
+  position: relative; }
+  .button_video_play::before {
+    transition: all 1s ease;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: calc(-1 * calc(60px / 2));
+    margin-left: calc(-1 * calc(60px / 2));
+    content: "";
+    display: block;
+    opacity: 0.5;
+    background-image: url("/stage/img/icon_play.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .button_video_play:focus::before, .button_video_play:hover::before {
+    opacity: 1; }
+
+/* // Button Section -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Hover Classes | Custom [/etc/css/custom/hover.scss]
    ========================================================================== */
@@ -2277,8 +2399,12 @@ button, button::before, button::after {
   outline-offset: 0.25rem; }
 
 /* * NombreDeProyecto * ========================================================
-   Modal y Popups Settings | Etc [/etc/css/scss/settings_popup.scss]
+   Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
+/* // Pop Modal ------------------------------------------------------------- */
+.modal_global {
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .modal_global,
 .modal_nav {
   top: 0;
@@ -2288,9 +2414,6 @@ button, button::before, button::after {
   position: fixed;
   z-index: 9000; }
 
-.modal_global {
-  background-color: rgba(0, 0, 0, 0.8); }
-
 .modal_nav {
   display: none;
   background-color: rgba(0, 0, 0, 0.7); }
@@ -2298,17 +2421,6 @@ button, button::before, button::after {
     .modal_nav {
       display: none !important; } }
 
-.pop_global {
-  z-index: 9800; }
-  .pop_global .button_pop_close {
-    position: absolute;
-    z-index: 9900;
-    text-indent: -9999px; }
-
-/* * NombreDeProyecto * ========================================================
-   Popup Styles | Custom [/etc/css/custom/popup.scss]
-   ========================================================================== */
-/* // Pop Modal ------------------------------------------------------------- */
 .modal_warning {
   /*
     @include opacityCustom(75);
@@ -2328,40 +2440,19 @@ button, button::before, button::after {
 .pop_global {
   box-sizing: border-box;
   position: fixed;
+  z-index: 9800;
   top: 10vh;
   left: 50%;
   border-radius: 6px;
   background-color: #fff; }
-  .pop_global .button_pop_close {
-    background-color: transparent;
-    background-image: url("/stage/img/button_pop_close.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid #4d4d4d !important;
-    width: 33px !important;
-    height: 33px !important;
-    background-size: 13px;
-    text-indent: -9999px; }
-    .pop_global .button_pop_close, .pop_global .button_pop_close:focus, .pop_global .button_pop_close:hover {
-      background-color: #fff; }
   .pop_global .pop_innerContainer {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     position: absolute;
-    overflow: auto; }
-  @media (max-width: 600px) {
-    .pop_global .button_pop_close {
-      top: -45px;
-      right: 0; } }
-  @media (min-width: 601px) {
-    .pop_global .button_pop_close {
-      top: -35px;
-      right: -35px; } }
+    overflow: auto;
+    overscroll-behavior: contain; }
 
 .pop_warning {
   /* CSS para usar centerPopup
@@ -2386,23 +2477,6 @@ button, button::before, button::after {
       padding-bottom: 50px; }
   .pop_warning .pop_innerContainer {
     padding: 20px; }
-  .pop_warning .button_pop_close {
-    top: 10px;
-    right: 10px; }
-  .pop_warning .button_pop_submit {
-    transition: all 1s ease;
-    height: 35px;
-    line-height: 35px;
-    width: 40%;
-    max-width: 150px;
-    border-radius: 6px;
-    background-color: #fff;
-    font-size: 0.8rem; }
-    .pop_warning .button_pop_submit, .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
-      border: 1px solid #8c8c8c !important; }
-    .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:hover {
-      background-color: #e6e6e6;
-      color: #000; }
   @media (max-width: 499px) {
     .pop_warning {
       width: 300px;
@@ -2420,10 +2494,7 @@ button, button::before, button::after {
         right: 20px;
         bottom: 20px;
         left: 20px;
-        padding: 20px; }
-      .pop_warning .button_pop_close {
-        top: 10px;
-        right: 10px; } }
+        padding: 20px; } }
 
 /* // Pop Video ------------------------------------------------------------- */
 .pop_video {
@@ -2454,10 +2525,8 @@ button, button::before, button::after {
 .pop_form {
   padding-right: 20px;
   padding-left: 20px;
-  height: 70vh; }
-  .pop_form,
-  .pop_form .button_pop_close {
-    box-shadow: 0 0 10px 0 #4d4d4d; }
+  height: 70vh;
+  box-shadow: 0 0 10px 0 #4d4d4d; }
   .pop_form .mobileForm {
     padding-top: 20px;
     padding-bottom: 40px; }
@@ -2485,17 +2554,13 @@ button, button::before, button::after {
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     line-height: 1.2em !important; }
   .pop_formStatus p {
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
-    .pop_formStatus p a, .pop_formStatus p a:active, .pop_formStatus p a:visited, .pop_formStatus p a:focus, .pop_formStatus p a:hover {
-      color: #111; }
-  .pop_formStatus .button_pop_submit {
-    background-color: #fff;
-    margin: 20px auto 0;
-    color: #000;
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase; }
+    color: #4d4d4d;
+    line-height: 1.3em; }
+    .pop_formStatus p a {
+      color: #333; }
+      .pop_formStatus p a:active, .pop_formStatus p a:visited, .pop_formStatus p a:focus, .pop_formStatus p a:hover {
+        color: #111; }
   .pop_formStatus.pop_formStatus_ok h2 span {
     position: relative; }
     .pop_formStatus.pop_formStatus_ok h2 span::after {
@@ -2528,13 +2593,31 @@ button, button::before, button::after {
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-@media (max-width: 767px) {
-  #header {
-    height: 104px; } }
-
-@media (max-width: 767px) {
-  #header {
-    height: 104px; } }
+#header {
+  /*
+    @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
+        @if $header_fixed_act_nav_BT == "on"{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            box-shadow: $bxShadow_header_fixed;
+        
+            &.headerScrolled{
+                box-shadow: $bxShadow_header_fixed_scrolled;
+            }
+        } 
+        
+        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL{
+            height: $header_height_BT;
+            
+            &.navDrawer_open{}
+        }   
+    }
+*/ }
+  @media (max-width: 767px) {
+    #header {
+      height: 104px; } }
 
 #header {
   box-sizing: border-box;
@@ -2572,7 +2655,7 @@ button, button::before, button::after {
         #header .logo_header img {
           width: 100%; }
       #header .logo_header.navDrawer_open {
-        border-right: 1px solid #000;
+        border-right: 3px solid #000;
         box-sizing: border-box;
         position: fixed;
         z-index: 9900;
@@ -2842,14 +2925,16 @@ nav li:focus a, nav li:hover a {
         opacity: 0.5;
         color: #333; }
     .nav_main .button_hamb_close {
-      width: 50px;
-      height: calc(50px - 10px);
+      width: 40px;
+      height: calc(40px - 0px);
       background-color: transparent;
       background-size: 100%;
       border: 1px solid transparent !important;
-      text-indent: -9999px; }
+      padding: 0 !important;
+      text-indent: -9999px;
+      overflow: hidden; }
     .nav_main .nav_main_ul {
-      border-right: 1px solid #000;
+      border-right: 3px solid #000;
       padding-top: calc(calc(50px + 50px + 10px) + 5px); }
       .nav_main .nav_main_ul li,
       .nav_main .nav_main_ul li a,

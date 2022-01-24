@@ -11,7 +11,7 @@
     $has_slider             = 0;
 //    $lang_en                = 1;
     
-//    $has-CUSTOMVARIABLE     = 0;   
+//    $has-CUSTOMVARIABLE     = 0;
      
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
     
