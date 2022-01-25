@@ -66,6 +66,7 @@ $colours_backgrounds_map:(
     White:          $white,
     Black:          $black,
   
+//  GreenSystem4XL: $greenSystem4XL,
 //  GreenSystem3XL: $greenSystem3XL,
 //  GreenSystem2XL: $greenSystem2XL,
 //  GreenSystemXL:  $greenSystemXL,
@@ -94,6 +95,7 @@ $bgError:           map-get($colours_backgrounds_map, Error);
 $bgWhite:           map-get($colours_backgrounds_map, White);
 $bgBlack:           map-get($colours_backgrounds_map, Black);
 
+//$bgGreenSystem4XL:  map-get($colours_backgrounds_map, GreenSystem4XL);
 //$bgGreenSystem3XL:  map-get($colours_backgrounds_map, GreenSystem3XL);
 //$bgGreenSystem2XL:  map-get($colours_backgrounds_map, GreenSystem2XL);
 //$bgGreenSystemXL:   map-get($colours_backgrounds_map, GreenSystemXL);

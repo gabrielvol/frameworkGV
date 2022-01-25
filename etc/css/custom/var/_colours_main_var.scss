@@ -49,9 +49,10 @@
 $colours_light_map:(
 //  redColour:      #ee0000,
   
+//  greenSystem4XL: #F5FFD2,
 //  greenSystem3XL: #e6ff99,
 //  greenSystem2XL: #b6f268,
-//  greenSystemXL:  #8ee12f,
+//  greenSystemXL:  #7DD825,
 //  greenSystemL:   #54c81a,
     greenSystem:    #339900,
 //  greenSystemD:   #2a7d00,
@@ -119,6 +120,7 @@ $greyXL_rgba_00:    rgba(222, 222, 222, 0); // REF [16]
 
 $errorColour:       map-get($colours_merged_map, errorColour);
 
+//$greenSystem4XL:    map-get($colours_merged_map, greenSystem4XL);
 //$greenSystem3XL:    map-get($colours_merged_map, greenSystem3XL);
 //$greenSystem2XL:    map-get($colours_merged_map, greenSystem2XL);
 //$greenSystemXL:     map-get($colours_merged_map, greenSystemXL);

@@ -7,10 +7,8 @@
         <img src="<?php echo $url_entorno; ?>/img/logo_footer.svg" class="logo_footer" alt="<?php echo $site_name_full; ?>." />
     </div>
     <div class="footer_txt"> <?php /* // REF [20] */ ?>
-        <p class="footer_address">
-            <a href="<?php echo $site_address_PRINCIPAL_map_url; ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
-        </p>
-        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PRINCIPAL_call_href; ?>> <?php echo $site_tel_PRINCIPAL_formatted ?></a></p>
+        <p class="footer_address"><?php echo _("Direcci&oacute;n"); ?>: <a href="<?php echo $site_address_ADDRESSA_map_url; ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_ADDRESSA_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_ADDRESSA_GB; } else { echo $site_address_ADDRESSA; } ?></a></p>
+        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PHONEA_call_href; ?>> <?php echo $site_tel_PHONEA_formatted ?></a></p>
         <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_EMAILA_href; ?>> <?php echo $site_email_EMAILA_address ?></a></p>
     </div>  
     
@@ -23,10 +21,10 @@
     <?php include('social.inc.php'); ?>
     
     <p class="footer_address">
-        <a href="<?php echo $site_address_PRINCIPAL_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_PRINCIPAL_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_PRINCIPAL_GB; } else { echo $site_address_PRINCIPAL; } ?></a>
+        <a href="<?php echo $site_address_ADDRESSA_map_url ?>" target="_blank"><?php if($gettext_idioma == 'pt_BR'){ echo $site_address_ADDRESSA_PT; } else if($gettext_idioma == 'en_GB') { echo $site_address_ADDRESSA_GB; } else { echo $site_address_ADDRESSA; } ?></a>
     </p>
     
-    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PRINCIPAL_call_href; ?>> <?php echo $site_tel_PRINCIPAL_formatted ?></a></p>
+    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PHONEA_call_href; ?>> <?php echo $site_tel_PHONEA_formatted ?></a></p>
     
     <p><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_EMAILA_href; ?>><?php echo $site_email_EMAILA_address ?></a></p>
     

@@ -50,6 +50,7 @@ $colours_borders_map:(
     black:          $black,
 //  redColour:      $redColour,
   
+//  greenSystem4XL: $greenSystem4XL,
 //  greenSystem3XL: $greenSystem3XL,
 //  greenSystem2XL: $greenSystem2XL,
 //  greenSystemXL:  $greenSystemXL,
@@ -77,6 +78,7 @@ $bdOutline:         map-get($colours_borders_map, outline);
 $bdWhite:           map-get($colours_borders_map, white);
 $bdBlack:           map-get($colours_borders_map, black);
 
+//$bdGreenSystem4XL:  map-get($colours_borders_map, greenSystem4XL);
 //$bdGreenSystem3XL:  map-get($colours_borders_map, greenSystem3XL);
 //$bdGreenSystem2XL:  map-get($colours_borders_map, greenSystem2XL);
 //$bdGreenSystemXL:   map-get($colours_borders_map, greenSystemXL);

@@ -45,19 +45,19 @@
 
 
 
-/* // Address PRINCIPAL // REF [13] ----------------------------------------- */
-$site_address_PRINCIPAL_a               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';     
-$site_address_PRINCIPAL_b               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';
-$site_address_PRINCIPAL                 = $site_address_PRINCIPAL_a .' '. $site_address_PRINCIPAL_b;   
+/* // Address Principal // REF [13] ----------------------------------------- */
+$site_address_ADDRESSA_a               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';     
+$site_address_ADDRESSA_b               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';
+$site_address_ADDRESSA                 = $site_address_ADDRESSA_a .' '. $site_address_ADDRESSA_b;   
 
-$site_address_PRINCIPAL_a_GB            = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
-$site_address_PRINCIPAL_b_GB            = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
-$site_address_PRINCIPAL_GB              = $site_address_PRINCIPAL_a_GB .' '. $site_address_PRINCIPAL_b_GB;      
+$site_address_ADDRESSA_a_GB            = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
+$site_address_ADDRESSA_b_GB            = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
+$site_address_ADDRESSA_GB              = $site_address_ADDRESSA_a_GB .' '. $site_address_ADDRESSA_b_GB;      
 
-$site_address_PRINCIPAL_map_url         = 'https_goo_gl_maps_aaaaaaaaaaaa';
-$site_address_PRINCIPAL_map_href        = 'href="'. $site_address_PRINCIPAL_map_url .'"';
-$site_address_PRINCIPAL_map_iframe_src  = 'https_google_com_maps_embed_aaaaaaaaaaaaaaaaa';
-$site_address_PRINCIPAL_map_iframe      = '<iframe src="'. $site_address_PRINCIPAL_map_iframe_src .'" allowfullscreen="" loading="lazy"></iframe>';
+$site_address_ADDRESSA_map_url         = 'https_goo_gl_maps_aaaaaaaaaaaa';
+$site_address_ADDRESSA_map_href        = 'href="'. $site_address_ADDRESSA_map_url .'"';
+$site_address_ADDRESSA_map_iframe_src  = 'https_google_com_maps_embed_aaaaaaaaaaaaaaaaa';
+$site_address_ADDRESSA_map_iframe      = '<iframe src="'. $site_address_ADDRESSA_map_iframe_src .'" allowfullscreen="" loading="lazy"></iframe>';
     
     
 /* // Address NOMBRE -------------------------------------------------------- */

@@ -75,7 +75,7 @@
         </a>
     </li>
     <li class="social_wa">
-        <a href="<?php echo $site_tel_PRINCIPAL_whatsapp_chatOpen; ?>" class="social_wa_anchor conTel">Tel: <?php echo $site_tel_PRINCIPAL_formatted; ?></a>
+        <a href="<?php echo $site_tel_PHONEA_whatsapp_chatOpen; ?>" class="social_wa_anchor conTel">Tel: <?php echo $site_tel_PHONEA_formatted; ?></a>
     </li>
     <li class="social_yt">
         <a href="<?php echo $social_youTube_url; ?>" class="hover_grow_L_ani">

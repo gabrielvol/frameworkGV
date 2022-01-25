@@ -9,10 +9,10 @@
         // echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>';               
     ?>
     
-    <?php if(isset($curso)): ?>
-    <label for="data_cursoSeleccionado__formContacto">
-        <span class="form_label_cursoSeleccionado">Estoy consultando por el siguiente curso:</span>
-        <input type="text" name="data_cursoSeleccionado__formContacto" id="data_cursoSeleccionado__formContacto" class="cursoSeleccionado" value="<?php echo $curso; ?>" readonly>
+    <?php if(isset($form_var)): ?>
+    <label for="data_opcionSeleccionada__formMain">
+        <span class="form_label_opcionSeleccionada">Estoy consultando por el siguiente form_var:</span>
+        <input type="text" name="data_opcionSeleccionada__formMain" id="data_opcionSeleccionada__formMain" class="opcionSeleccionada" value="<?php echo $form_var; ?>" readonly>
     </label>
     <?php endif; ?>
 
