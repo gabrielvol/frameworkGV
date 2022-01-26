@@ -162,12 +162,12 @@
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CMF9SPL5Z8"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-CMF9SPL5Z8');
+  gtag('config', 'G-xxxxxxxxxx');
 </script>
 <?php endif; ?>
