@@ -99,7 +99,30 @@
         .slick-track,
         .slick-track li{
 /*            
-            max-height: calc(85vh - #{$header_height_ATL})
+            max-height: calc(85vh - #{$header_height_ATL});
+*/
+        }
+    }
+}
+
+/* // Slider xxx ------------------------------------------------------------ */
+.slider_xxx{
+    &,
+    .slick-list,
+    .slick-track,
+    .slick-track li{
+/*
+        height: 300px;
+*/
+    }
+    
+    @include afterTabletLandscape{
+        &,
+        .slick-list,
+        .slick-track,
+        .slick-track li{
+/*            
+            max-height: calc(85vh - #{$header_height_ATL});
 */
         }
     }

@@ -2165,7 +2165,7 @@ button, button::before, button::after {
         }
 
         &:focus, &:hover{
-            background-color: $black_rgba_10;
+            background-color: $black_rgba10;
         }
     }
 */ }

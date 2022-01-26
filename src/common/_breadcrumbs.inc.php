@@ -2,14 +2,14 @@
     <ul class="unstyled clearfix">
         <li>Productos</li>
         <?php        if($nav_itemCurrent_intA == 1100): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/lamparas/">Lámparas</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/lamparas/">Lámparas</a></li>
 
         <?php endif; if($nav_itemCurrent_intB == 1110): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/lamparas/halogenas/">Lámparas Halógenas</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/lamparas/halogenas/">Lámparas Halógenas</a></li>
         <?php endif; if($nav_itemCurrent_intB == 1120): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/lamparas/led/">Lámparas Led</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/lamparas/led/">Lámparas Led</a></li>
         <?php endif; if($nav_itemCurrent_intB == 1130): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/lamparas/led-alta-potencia/">Lámparas Led Alta Potencia</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/lamparas/led-alta-potencia/">Lámparas Led Alta Potencia</a></li>
 
         <?php endif; if($nav_itemCurrent_intC == 1111): ?>
         <li class="item">HA55</li>
@@ -33,12 +33,12 @@
         <li class="item">TALBH3-20</li>    
 
         <?php endif; if($nav_itemCurrent_intA == 1200): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/plafones/">Plafones</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/plafones/">Plafones</a></li>
 
         <?php endif; if($nav_itemCurrent_intB == 1210): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/plafones/de-embutir/">De Embutir</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/plafones/de-embutir/">De Embutir</a></li>
         <?php endif; if($nav_itemCurrent_intB == 1220): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/plafones/de-aplicar/">De Aplicar</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/plafones/de-aplicar/">De Aplicar</a></li>
 
         <?php endif; if($nav_itemCurrent_intC == 1211): ?>
         <li class="item">TALPT1-24S / TALPT1-24R</li>
@@ -59,7 +59,7 @@
         <li class="item">TALPI1-6S / TALPI1-6R</li> 
 
         <?php endif; if($nav_itemCurrent_intA == 1300): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/tubos-led/">Tubos Led</a></li>   
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/tubos-led/">Tubos Led</a></li>   
 
         <?php endif; if($nav_itemCurrent_intC == 1301): ?>
         <li class="item">TL600</li>
@@ -67,7 +67,7 @@
         <li class="item">TL1200</li>    
 
         <?php endif; if($nav_itemCurrent_intA == 1400): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/listones-tubos-led/">Listones para Tubos Led</a></li>   
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/listones-tubos-led/">Listones para Tubos Led</a></li>   
 
         <?php endif; if($nav_itemCurrent_intC == 1401): ?>
         <li class="item">LL600</li>
@@ -75,7 +75,7 @@
         <li class="item">LL1200</li>
 
         <?php endif; if($nav_itemCurrent_intA == 1500): ?>
-        <li class="cat"><a href="/clientes/everpower/productos/listones-tubos-fluorescentes/">Listones para Tubos Fluorescentes</a></li>
+        <li class="cat"><a href="<?php echo $url_entorno; ?>productos/listones-tubos-fluorescentes/">Listones para Tubos Fluorescentes</a></li>
 
         <?php endif; if($nav_itemCurrent_intC == 1501): ?>
         <li class="item">LFC120</li>

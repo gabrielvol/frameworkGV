@@ -46,7 +46,7 @@ function watchSCSS(){
 
 function watchCompilation(){
     watch('./etc/css/compilation/styles.css', {delay: 1000}, processCSS);
-//    watch('./etc/css/compilation/styles_zh.css', {delay: 1000}, processCSS); // REF [14]
+//    watch('./etc/css/compilation/styles_zh.css', {delay: 1000}, processCSSZH); // REF [14]
 }
 
 exports.default = parallel(watchSCSS, watchCompilation);

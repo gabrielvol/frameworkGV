@@ -439,7 +439,7 @@ form{
                 }
                 
                 &::before{
-                    border-color: $greyXL_rgba_00;
+                    border-color: $greyXL_rgba00;
                     border-top-color: $form_span_invalid_tooltip_bdColour;
                     border-width: calc(#{$form_span_validation_tooltip_arrow_size} + 1px);
                 }
