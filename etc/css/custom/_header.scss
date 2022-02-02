@@ -155,7 +155,7 @@
     
     //@include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
     @include afterTablet{
-        @if $header_logoNav_floated_flexbox_act == "on"{
+        @if $header_logoNav_floated_flexbox_act_AT == "on"{
             .container{
                 display: flex;
                 flex-direction: row;
@@ -196,7 +196,7 @@
                 padding-left: 20px;             
             }
             
-            @if $header_logoNav_floated_flexbox_act == "on"{
+            @if $header_logoNav_floated_flexbox_act_AT == "on"{
                 box-sizing: border-box;           
             }
             
@@ -223,6 +223,17 @@
     }
     
     @include afterTabletLandscape{
+        @if $header_logoNav_floated_flexbox_act_ATL == "on"{
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: flex-start;
+                align-items: flex-start;     
+            }
+        }
+        
         .logo_header{
             @if $logo_bgImage_before_act == "on"{
                 &,
@@ -238,6 +249,17 @@
     }
     
     @include afterDesktop{
+        @if $header_logoNav_floated_flexbox_act_AD == "on"{
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: flex-start;
+                align-items: flex-start;     
+            }
+        }
+        
         .logo_header{
             @if $logo_bgImage_before_act == "on"{
                 &,

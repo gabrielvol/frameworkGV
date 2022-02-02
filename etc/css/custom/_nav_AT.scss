@@ -3,7 +3,7 @@
    ========================================================================== */
 .nav_main{
     @include navAT{// REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-        @if $header_logoNav_floated_flexbox_act == "on"{
+        @if $header_logoNav_floated_flexbox_act_AT == "on"{
             width: calc(100% - #{$logo_width_AT});
         } 
         
@@ -64,7 +64,7 @@
                 }
             }
             
-            @if $header_logoNav_floated_flexbox_act == "on"{
+            @if $header_logoNav_floated_flexbox_act_AT == "on"{
                 &.navAT{
                     display: flex;
                     flex-direction: row;
@@ -299,7 +299,7 @@
     }
     
     @include afterTabletLandscape{
-        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act == "on"{
+        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_ATL == "on"{
             width: calc(100% - #{$logo_width_ATL});
         }
         
@@ -404,6 +404,10 @@
     }
     
     @include afterDesktop{
+        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_ATL == "on" or $header_logoNav_floated_flexbox_act_AD == "on"{
+            width: calc(100% - #{$logo_width_AD});
+        }
+        
         .nav_item_current{
             a,
             .nav_TLI{
