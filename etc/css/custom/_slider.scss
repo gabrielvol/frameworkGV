@@ -3,7 +3,7 @@
    ========================================================================== */
 .slick,
 .slick_with_nav{
-    background-color: $slider_bgColour;
+    background-color: $slider_bgColour_global;
     box-sizing: border-box;
     
     img{
@@ -84,6 +84,8 @@
 
 /* // Slider Main ----------------------------------------------------------- */
 .slider_main{
+    background-color: $slider_bgColour_main;
+    
     &,
     .slick-list,
     .slick-track,

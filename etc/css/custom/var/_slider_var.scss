@@ -44,10 +44,12 @@
 
 
 
-/* // Slider Colours -------------------------------------------------------- */
-$slider_bgColour:                   $transparent;
+    /* // Slider Colours -------------------------------------------------------- */
+$slider_bgColour_global:            transparent;
 $slider_img_bgColour:               $img_bgColour_global;
 $slider_carousel_bgColour:          $bgWhite;
+
+$slider_bgColour_main:              #ff0000;
 
 
 /* // Slider Arrows --------------------------------------------------------- */
