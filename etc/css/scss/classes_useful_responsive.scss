@@ -45,7 +45,7 @@
 
 
 /* // Mobile Only Classes --------------------------------------------------- */
-@include mobileOnly{    
+@include mobileOnly{
     @if $classes_position_display_mask_cursor_act_MO == "on"{
 /*___ Positioning _______________________*/
         .pRelMO{position: relative}
@@ -115,7 +115,7 @@
         .lowerCaseMO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_MO == "on"{ 
+    @if $classes_bg_bd_NO_act_MO == "on"{
 /*___ Backgrounds, border and images ____*/
         .banMO{border: $none}
         .bgNoneMO{
@@ -282,6 +282,124 @@
     }
 }
 
+/* // After Mobile 600 Classes ---------------------------------------------- */
+@include afterMobile600{
+    @if $classes_position_display_mask_cursor_act_A600 == "on"{
+/*___ Positioning _______________________*/
+        .pRelA600{position: relative}
+        .pAbsA600{position: absolute}
+        .clearA600{clear: both}
+
+/*___ Display ___________________________*/
+        .displayBlockA600{display: $block}
+        .displayInlineA600{display: $inline}
+        .displayInlineBlockA600{display: $inlineBlock}
+        .displayTableA600{display: table}
+        .displayNoneA600{display: $none}
+        .contentBoxA600{box-sizing: content-box}
+        .borderBoxA600{box-sizing: border-box}
+        .centerVerticallyA600{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenA600:not(:focus):not(:active),
+        .sr-onlyA600:not(:focus):not(:active){
+            position: absolute;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            border: $zero;
+            padding: $zero;
+            margin: -1px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    
+    @if $classes_lists_floats_act_A600 == "on"{
+/*___ Lists and floats __________________*/
+        .unstyledA600, .horizontalA600{list-style: $none}
+        .floatLeftA600, .horizontalA600 li{float: $left}
+        .floatRightA600{float: $right}
+        .horizontalCenterA600{
+            margin-right: $auto;
+            margin-left: $auto;    
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block!important;
+                > *{
+                    display: inline-block!important;         
+                }
+            }
+        }
+        .floatNoneA600, .unstyledA600 li{float: $none}
+    }
+    
+    @if $classes_text_act_A600 == "on"{
+/*___ Text ______________________________*/
+        .indentedTextA600{text-indent: -9999px}
+        .alignLeftA600{text-align: left}
+        .alignRightA600{text-align: right}
+        .alignCenterA600{text-align: center}
+        .alignJustifyA600{text-align: justify}
+        .alignJustifyCenterA600{
+            text-align: justify;
+            text-align-last: center;
+        }
+        .upperCaseA600{text-transform: uppercase}
+        .lowerCaseA600{text-transform: lowercase}
+    }
+        
+    @if $classes_bg_bd_NO_act_A600 == "on"{
+/*___ Backgrounds, border and images ____*/
+        .banA600{border: $none}
+        .bgNoneA600{
+            &, &:focus, &:hover{
+                background: $none;
+            }
+        }
+        .bgTransparentA600{background-color: $transparent}
+        .bgNoImageA600{background-image: $none}
+    }
+    
+    @if $helpers_spacing_act_A600 == "on"{
+/*___ Spacing Helpers ___________________*/
+        @include spacingHelpersClassesGeneratorA600;
+        .mraA600,.mhaA600{margin-right: $auto}
+        .mlaA600,.mhaA600{margin-left: $auto}
+    }
+    
+    @if $classes_flexbox_act_A600 == "on"{
+/*___ Flexbox Classes ___________________*/ 
+        .displayFlexA600, .flexHorizontalA600, .flexColumnA600, .flexNoWrapA600, .flexJustifyEndA600, .flexJustifyCenterA600, .flexJustifyBetweenA600, .flexJustifyAroundA600, .flexAlignContentEndA600, .flexAlignContentCenterA600, .flexAlignContentBetweenA600, .flexAlignContentAroundA600, .flexAlignContentStretchA600, .flexAlignItemsEndA600, .flexAlignItemsCenterA600, .flexAlignItemsBaselineA600, .flexAlignItemsStretchA600, .horizontalCenterFlexA600{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnA600{flex-direction: column}
+        .flexNoWrapA600{flex-wrap: nowrap}
+        .flexJustifyEndA600{justify-content: flex-end}
+        .flexJustifyCenterA600{justify-content: center}
+        .flexJustifyBetweenA600{justify-content: space-between}
+        .flexJustifyAroundA600{justify-content: space-around}
+        .flexAlignContentEndA600{align-content: flex-end}
+        .flexAlignContentCenterA600{align-content: center}
+        .flexAlignContentBetweenA600{align-content: space-between}
+        .flexAlignContentAroundA600{align-content: space-around}
+        .flexAlignContentStretchA600{align-content: stretch}
+        .flexAlignItemsEndA600{align-items: flex-end}
+        .flexAlignItemsCenterA600{align-items: center}
+        .flexAlignItemsBaselineA600{align-items: baseline}
+        .flexAlignItemsStretchA600{align-items: stretch}
+        .flexHorizontalA600{list-style: $none}
+    }
+}
+
 /* // Mobile Landscape Only Classes ----------------------------------------- */
 @include mobileLandscapeOnly{
     @if $classes_position_display_mask_cursor_act_MLO == "on"{
@@ -402,7 +520,7 @@
 }
 
 /* // Before Tablet Classes ------------------------------------------------- */
-@include beforeTablet{    
+@include beforeTablet{
     @if $classes_position_display_mask_cursor_act_BT == "on"{
 /*___ Positioning _______________________*/
         .pRelBT{position: relative}
@@ -521,7 +639,7 @@
 }
 
 /* // Before Tablet Landscape Classes --------------------------------------- */
-@include beforeTabletLandscape{    
+@include beforeTabletLandscape{
     @if $classes_position_display_mask_cursor_act_BTL == "on"{
 /*___ Positioning _______________________*/
         .pRelBTL{position: relative}
@@ -640,7 +758,7 @@
 }
 
 /* // Tablet Only Classes --------------------------------------------------- */
-@include tabletOnly{    
+@include tabletOnly{
     @if $classes_position_display_mask_cursor_act_TO == "on"{
 /*___ Positioning _______________________*/
         .pRelTO{position: relative}
@@ -759,7 +877,7 @@
 }
 
 /* // After Tablet Classes -------------------------------------------------- */
-@include afterTablet{    
+@include afterTablet{
     @if $classes_position_display_mask_cursor_act_AT == "on"{
 /*___ Positioning _______________________*/
         .pRelAT{position: relative}
@@ -1116,7 +1234,7 @@
 }
 
 /* // Tablet And Tablet Landscape Only Classes ------------------------------ */
-@include tabletAndTabletLandscapeOnly{    
+@include tabletAndTabletLandscapeOnly{
     @if $classes_position_display_mask_cursor_act_TTLO == "on"{
 /*___ Positioning _______________________*/
         .pRelTTLO{position: relative}
@@ -1235,7 +1353,7 @@
 }
 
 /* // Before Desktop Classes ------------------------------------------------ */
-@include beforeDesktop{    
+@include beforeDesktop{
     @if $classes_position_display_mask_cursor_act_BD == "on"{
 /*___ Positioning _______________________*/
         .pRelBD{position: relative}
@@ -1354,7 +1472,7 @@
 }
 
 /* // After Desktop Classes ------------------------------------------------- */
-@include afterDesktop{    
+@include afterDesktop{
     @if $classes_position_display_mask_cursor_act_AD == "on"{
 /*___ Positioning _______________________*/
         .pRelAD{position: relative}
@@ -1436,7 +1554,7 @@
         .bgNoImageAD{background-image: $none}
     }
     
-    @if $helpers_spacing_act_AD == "on"{   
+    @if $helpers_spacing_act_AD == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAD;
         .mraAD,.mhaAD{margin-right: $auto}
