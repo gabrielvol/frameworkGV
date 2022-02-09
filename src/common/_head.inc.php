@@ -28,13 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
-<link href="<?php echo $url_entorno; ?>/css/uikit.min.css" rel="stylesheet">
-
-<?php if($gettext_idioma == 'de_AU'): /* // REF [14] */ ?>
-<link href="<?php echo $url_entorno; ?>/css/styles_zh.css" rel="stylesheet">
-<?php else: ?>
-<link href="<?php echo $url_entorno; ?>/css/styles.css" rel="stylesheet">
-<?php endif; ?>
+<?php include('head.css.inc.php'); ?>
 
 <link rel="author" href="<?php echo $url_entorno; ?>/humans.txt">
 
@@ -137,13 +131,7 @@
 <!-- Web Fallback -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
 
-<!-- jQuery, Modernizr, HTML5shiv -->
-<script src="<?php echo $url_entorno; ?>/js/jQuery3.2.1.min.js"></script>
-<script src="<?php echo $url_entorno; ?>/js/modernizr2.8.3.js"></script>
-<script src="<?php echo $url_entorno; ?>/js/html5shiv.min.js"></script>
-
-<!-- Custom js -->
-<script src="<?php echo $url_entorno; ?>/js/uikit.min.js"></script>
+<?php include('head.js.inc.php'); ?>
 
 <!-- Google Analytics -->
 <?php if(empty($url_entorno)): ?>
