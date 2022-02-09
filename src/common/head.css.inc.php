@@ -6,7 +6,7 @@
 <?php endif; ?>
 
 <?php
-/*
+/* // REF [24]
 <link href="<?php echo $url_entorno; ?>/css/uikit.min.css" rel="stylesheet">
 */
 ?>

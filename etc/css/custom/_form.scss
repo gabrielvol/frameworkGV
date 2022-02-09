@@ -409,7 +409,7 @@ form{
         .form_validation_span{
             display: none;
             color: $form_span_invalid_ftColour; // REF [16]
-            font-family: $poppinsR;
+            font-family: $form_span_invalid_ftFamily;
             font-weight: 400;            
             font-size: 0.8rem!important;
             line-height: $form_span_validation_tooltip_lineHeight;

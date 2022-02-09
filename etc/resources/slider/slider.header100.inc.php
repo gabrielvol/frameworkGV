@@ -1,110 +1,112 @@
 <?php
-    $classes_slider_header      = 'slider_header ';
+    $classes_slider_header  = 'slider_header ';
         
     if($nav_pageCurrent == 'page_index'):
-        $classes_slider_header  .= 'slider_header_index ';        
+        $classes_slider_header  .= 'slider_header_index ';       
+        $slider_header_item_AA  = 'AA'; 
     else:
         $classes_slider_header  .= 'slider_header_int ';
+        $slider_header_item_BB  = 'BB';
     endif;
 
-    $slider_header_item_001     = '001';
-    $slider_header_item_002     = '002';
-    $slider_header_item_003     = '003';
-    $slider_header_item_004     = '004';
-    $slider_header_item_005     = '005';
-    $slider_header_item_006     = '006';
-    $slider_header_item_007     = '007';
-    $slider_header_item_008     = '008';
-    $slider_header_item_009     = '009';
-    
-    $slider_header_item_010     = '010';    
-    $slider_header_item_011     = '011';
-    $slider_header_item_012     = '012';
-    $slider_header_item_013     = '013';
-    $slider_header_item_014     = '014';
-    $slider_header_item_015     = '015';
-    $slider_header_item_016     = '016';
-    $slider_header_item_017     = '017';
-    $slider_header_item_018     = '018';
-    $slider_header_item_019     = '019';
-    
-    $slider_header_item_020     = '020';    
-    $slider_header_item_021     = '021';
-    $slider_header_item_022     = '022';
-    $slider_header_item_023     = '023';
-    $slider_header_item_024     = '024';
-    $slider_header_item_025     = '025';
-    $slider_header_item_026     = '026';
-    $slider_header_item_027     = '027';
-    $slider_header_item_028     = '028';
-    $slider_header_item_029     = '029';
-    
-    $slider_header_item_030     = '030';
-    $slider_header_item_031     = '031';
-    $slider_header_item_032     = '032';
-    $slider_header_item_033     = '033';
-    $slider_header_item_034     = '034';
-    $slider_header_item_035     = '035';
-    $slider_header_item_036     = '036';
-    $slider_header_item_037     = '037';
-    $slider_header_item_038     = '038';
-    $slider_header_item_039     = '039';
-    
-    $slider_header_item_040     = '040';
-    $slider_header_item_041     = '041';
-    $slider_header_item_042     = '042';
-    $slider_header_item_043     = '043';
-    $slider_header_item_044     = '044';
-    $slider_header_item_045     = '045';
-    $slider_header_item_046     = '046';
-    $slider_header_item_047     = '047';
-    $slider_header_item_048     = '048';
-    $slider_header_item_049     = '049';
-    
-    $slider_header_item_050     = '050';
-    $slider_header_item_051     = '051';
-    $slider_header_item_052     = '052';
-    $slider_header_item_053     = '053';
-    $slider_header_item_054     = '054';
-    $slider_header_item_055     = '055';
-    $slider_header_item_056     = '056';
-    $slider_header_item_057     = '057';
-    $slider_header_item_058     = '058';
-    $slider_header_item_059     = '059';
-    
-    $slider_header_item_060     = '060';
-    $slider_header_item_061     = '061';
-    $slider_header_item_062     = '062';
-    $slider_header_item_063     = '063';
-    $slider_header_item_064     = '064';
-    $slider_header_item_065     = '065';
-    $slider_header_item_066     = '066';
-    $slider_header_item_067     = '067';
-    $slider_header_item_068     = '068';
-    $slider_header_item_069     = '069';
-    
-    $slider_header_item_070     = '070';
-    $slider_header_item_071     = '071';
-    $slider_header_item_072     = '072';
-    $slider_header_item_073     = '073';
-    $slider_header_item_074     = '074';
-    $slider_header_item_075     = '075';
-    $slider_header_item_076     = '076';
-    $slider_header_item_077     = '077';
-    $slider_header_item_078     = '078';
-    $slider_header_item_079     = '079';
-    
-    $slider_header_item_080     = '080'; 
-    $slider_header_item_081     = '081';
-    $slider_header_item_082     = '082';
-    $slider_header_item_083     = '083';
-    $slider_header_item_084     = '084';
-    $slider_header_item_085     = '085';
-    $slider_header_item_086     = '086';
-    $slider_header_item_087     = '087';
-    $slider_header_item_088     = '088';
-    $slider_header_item_089     = '089';
-    $slider_header_item_090     = '090';
+        $slider_header_item_001     = '001';
+        $slider_header_item_002     = '002';
+        $slider_header_item_003     = '003';
+        $slider_header_item_004     = '004';
+        $slider_header_item_005     = '005';
+        $slider_header_item_006     = '006';
+        $slider_header_item_007     = '007';
+        $slider_header_item_008     = '008';
+        $slider_header_item_009     = '009';
+
+        $slider_header_item_010     = '010';    
+        $slider_header_item_011     = '011';
+        $slider_header_item_012     = '012';
+        $slider_header_item_013     = '013';
+        $slider_header_item_014     = '014';
+        $slider_header_item_015     = '015';
+        $slider_header_item_016     = '016';
+        $slider_header_item_017     = '017';
+        $slider_header_item_018     = '018';
+        $slider_header_item_019     = '019';
+
+        $slider_header_item_020     = '020';    
+        $slider_header_item_021     = '021';
+        $slider_header_item_022     = '022';
+        $slider_header_item_023     = '023';
+        $slider_header_item_024     = '024';
+        $slider_header_item_025     = '025';
+        $slider_header_item_026     = '026';
+        $slider_header_item_027     = '027';
+        $slider_header_item_028     = '028';
+        $slider_header_item_029     = '029';
+
+        $slider_header_item_030     = '030';
+        $slider_header_item_031     = '031';
+        $slider_header_item_032     = '032';
+        $slider_header_item_033     = '033';
+        $slider_header_item_034     = '034';
+        $slider_header_item_035     = '035';
+        $slider_header_item_036     = '036';
+        $slider_header_item_037     = '037';
+        $slider_header_item_038     = '038';
+        $slider_header_item_039     = '039';
+
+        $slider_header_item_040     = '040';
+        $slider_header_item_041     = '041';
+        $slider_header_item_042     = '042';
+        $slider_header_item_043     = '043';
+        $slider_header_item_044     = '044';
+        $slider_header_item_045     = '045';
+        $slider_header_item_046     = '046';
+        $slider_header_item_047     = '047';
+        $slider_header_item_048     = '048';
+        $slider_header_item_049     = '049';
+
+        $slider_header_item_050     = '050';
+        $slider_header_item_051     = '051';
+        $slider_header_item_052     = '052';
+        $slider_header_item_053     = '053';
+        $slider_header_item_054     = '054';
+        $slider_header_item_055     = '055';
+        $slider_header_item_056     = '056';
+        $slider_header_item_057     = '057';
+        $slider_header_item_058     = '058';
+        $slider_header_item_059     = '059';
+
+        $slider_header_item_060     = '060';
+        $slider_header_item_061     = '061';
+        $slider_header_item_062     = '062';
+        $slider_header_item_063     = '063';
+        $slider_header_item_064     = '064';
+        $slider_header_item_065     = '065';
+        $slider_header_item_066     = '066';
+        $slider_header_item_067     = '067';
+        $slider_header_item_068     = '068';
+        $slider_header_item_069     = '069';
+
+        $slider_header_item_070     = '070';
+        $slider_header_item_071     = '071';
+        $slider_header_item_072     = '072';
+        $slider_header_item_073     = '073';
+        $slider_header_item_074     = '074';
+        $slider_header_item_075     = '075';
+        $slider_header_item_076     = '076';
+        $slider_header_item_077     = '077';
+        $slider_header_item_078     = '078';
+        $slider_header_item_079     = '079';
+
+        $slider_header_item_080     = '080'; 
+        $slider_header_item_081     = '081';
+        $slider_header_item_082     = '082';
+        $slider_header_item_083     = '083';
+        $slider_header_item_084     = '084';
+        $slider_header_item_085     = '085';
+        $slider_header_item_086     = '086';
+        $slider_header_item_087     = '087';
+        $slider_header_item_088     = '088';
+        $slider_header_item_089     = '089';
+        $slider_header_item_090     = '090';
     
     include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/slider.header.inc.php');
 ?>                

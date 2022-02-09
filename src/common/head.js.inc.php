@@ -3,7 +3,7 @@
 <script src="<?php echo $url_entorno; ?>/js/html5shiv.min.js"></script>
 
 <?php
-/*
+/* // REF [24]
 <script src="<?php echo $url_entorno; ?>/js/uikit.min.js"></script>
 */
 ?>
