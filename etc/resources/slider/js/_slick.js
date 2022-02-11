@@ -16,7 +16,7 @@ $(document).ready(function () {
         ,swipeToSlide: true // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
         ,focusOnSelect: true
 
-        ,initialSlide: 1
+        ,initialSlide: 0
         ,slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
         ,slidesToScroll: 3 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
         ,lazyLoad: 'ondemand'
