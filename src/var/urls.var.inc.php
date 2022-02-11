@@ -60,10 +60,12 @@ $hash_main_gettext          = '#main';
 // $hash-PAGINA-gettext         = '#'. _('seccion');
 // $hash-PAGINA-gettext         = '#'. _('seccion');
 // $hash-PAGINA-gettext         = '#'. _('seccion'); 
+    
+    
 
-    
-    
 /* // url ------------------------------------------------------------------- */
+// Los vínculos con hash deben ser comentados
+
 $url_root           = $url_entorno .'/';
 $url_logo           = $url_root;
 $url_index          = $url_entorno .'/index.php';
@@ -124,6 +126,8 @@ $url_main_hs_INICIO_gettext     = $url_inicio . $url_main_hs_gettext;
 
     
 /* // global urls / full urls ----------------------------------------------- */
+// Los vínculos con hash deben ser comentados
+
 $url_global_full        = $url_global . $url_entorno;
 
 $url_index_full         = $url_global . $url_index;
@@ -143,17 +147,23 @@ $url_construccion_full  = $url_global . $url_construccion;
 
 $url_openGraph_global   = $url_global_full;
     
+
     
 /* // href ------------------------------------------------------------------ */
 $href_root          = 'href="'. $url_root .'"'; 
 $href_logo          = $href_root;
 $href_index         = 'href="'. $url_index .'"';
 $href_contacto      = 'href="'. $url_contacto .'"';
-$href_contacto      = ($nav_pageCurrent == 1) ? 'href="'. $url_contacto_hs .'"' : 'href="'. $url_contacto_hs_INICIO.'"';
 $href_construccion  = 'href="'. $url_construccion .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
+
+//$href_index         = ($nav_pageCurrent == 'page_index') ? 'href="'. $url_main_hs .'"' : 'href="'. $url_root .'"';
+//$href_contacto      = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_contacto_hs .'"' : 'href="'. $url_contacto_hs_INICIO.'"';
+// $href-PAGINA        = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
+// $href-PAGINA        = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
+// $href-PAGINA        = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
     
 $href_main_hs       = 'href="'. $url_main_hs .'"';
 //$href_inicio_hs     = 'href="'. $url_inicio_hs .'"';
@@ -183,6 +193,8 @@ $url_main_hs_INICIO_full_gettext        = $url_global . $url_index . $hash_main_
 // $url-PAGINA-hs-PAGINA-full_gettext      = $url_global . $url_PAGINA . $url_PAGINA_gettext;
 // $url-PAGINA-hs-PAGINA-full_gettext      = $url_global . $url_PAGINA . $url_PAGINA_gettext;
     
+
+
 /* // misc / experimental --------------------------------------------------- */
     
 // $url_actual     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
