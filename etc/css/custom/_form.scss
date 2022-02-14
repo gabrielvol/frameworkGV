@@ -31,7 +31,7 @@ fieldset{
 }
  
 
-/* // Form status message --------------------------------------------------- */
+/* // Form status message / Form validation --------------------------------- */
 .form_status,
 .form_validation_div{
     box-sizing: border-box;
@@ -84,6 +84,7 @@ form{
     input,
     select,
     textarea{
+        @include borderStyle($form_input_bdColour);
         padding-right: 10px;
         padding-left: 10px;
     }
@@ -272,7 +273,7 @@ form{
     }
     
 
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
     input[type="reset"],
     input[type="submit"],
     input[type="button"],
@@ -283,12 +284,14 @@ form{
         border-radius: $bdRadius_global;
         margin-bottom: $zero;
         font-family: $button_form_submit_ftFamily;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         
         @if $googleFont_act == "on"{
             font-weight: $button_form_submit_ftWeight;
         }
         
-        @if $form_submit_border_act == "on"{ // REF [21]
+        @if $form_submit_border_act == "on"{ // REF [21a]
             @include borderStyle($button_form_submit_bdColour);
         
             &:focus, &:hover{
@@ -314,7 +317,12 @@ form{
             &:focus, &:hover{
                 text-shadow: $txShadow_white_hover;
             }
-        } 
+        }
+        
+        @include afterTablet{
+            @include centerCustom(50%);
+            margin-top: 30px;
+        }
     }
     
 

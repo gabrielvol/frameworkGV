@@ -8,6 +8,12 @@
         $classes_slider_header  .= 'slider_header_int ';
         $slider_header_item_BB  = 'BB';
     endif;
+    
+    if($nav_pageCurrent == 'page_contacto'):
+        // $classes_slider_header  .= 'slider_header_contacto ';
+        $slider_main_item_CC    = 'CC';
+    
+    endif;
 
         $slider_header_item_01  = '01';
         $slider_header_item_02  = '02';

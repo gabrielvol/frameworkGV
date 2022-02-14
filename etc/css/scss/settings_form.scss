@@ -3,8 +3,8 @@
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
 .form_label_name, .form_validation_span{
-    .mobileForm &{
-        @include beforeTablet{
+    @include beforeTablet{
+        .mobileForm &{
             clear: both!important;
             float: $none;
             margin-right: $auto;
@@ -102,7 +102,7 @@ input, select, textarea{
     }
 }
 
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 input[type="reset"],
 input[type="submit"],
 input[type="button"],
@@ -245,7 +245,6 @@ form{
     }
     
     input, select, textarea{
-        @include borderStyle($form_input_bdColour);
         transition: all 1s ease, background-position 0s ease;
         background-color: $form_input_bgColour;
         color: $form_input_ftColour;
@@ -270,7 +269,7 @@ form{
         }
     }
     
-    input{    
+    input{
         &[type="search"]{
             -webkit-appearance: textfield;
         }
@@ -285,7 +284,6 @@ form{
         }
     }
     
-/* // Form Submit  ---------------------------------------------------------- */    
     input::focus-inner{
         margin: 0;
         border: $none;

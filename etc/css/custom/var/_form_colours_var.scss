@@ -77,12 +77,12 @@ $form_input_shadowInset:        inset 0 0 6px $greyL;
 $form_input_caret_colour:       $form_input_ftColour;
  
      
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 $button_form_submit_ftColour:           $button_callToAction_ftColour;
 $button_form_submit_ftColour_hover:     $button_callToAction_ftColour_hover;
   
-$button_form_submit_bdColour:           $button_callToAction_bdColour; // REF [21]
-$button_form_submit_bdColour_hover:     $button_callToAction_bdColour_hover; // REF [21]
+$button_form_submit_bdColour:           $button_callToAction_bdColour; // REF [21a]
+$button_form_submit_bdColour_hover:     $button_callToAction_bdColour_hover; // REF [21a]
   
 $button_form_submit_bgColour:           $button_callToAction_bgColour;
 $button_form_submit_bgColour_hover:     $button_callToAction_bgColour_hover;

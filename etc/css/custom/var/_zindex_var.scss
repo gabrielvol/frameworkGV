@@ -13,6 +13,7 @@ $zIndex_lightbox:            11000;
 $zIndex_lightbox_overlay:    10000;
 
 
+
 /* // 9000 ------------------------------------------------------------------ */
 /*___ Modal / Pop / NavDrawer ___________*/
 $zIndex_button_topLevel:        9900;
@@ -26,6 +27,7 @@ $zIndex_pop_global:             9800;
 $zIndex_modal_bg:               9000;
 
 
+
 /* // 8000 ------------------------------------------------------------------ */ 
 /*___ Lang ______________________________*/
 $zIndex_nav_language_ul_clicked:    $zIndex_button_topLevel; // 9900
@@ -34,7 +36,6 @@ $zIndex_nav_language_ul:            8500;
 /*___ Social ____________________________*/
 $zIndex_social_clicked:     $zIndex_button_topLevel; // 9900
 $zIndex_social:             8500;
-$zIndex_button_whatsapp:    8500;
 
 /*___ Nav _______________________________*/
 $zIndex_nav_close:           $zIndex_button_topLevel; // 9900 
@@ -44,7 +45,10 @@ $zIndex_navAccordion_ul:     $zIndex_nav_open; // 8100
 $zIndex_nav:                 8000;
 
 
+
 /* // 7000 ------------------------------------------------------------------ */ 
+$zIndex_button_whatsapp:    7900;
+
 /*___ Header ____________________________*/
 $zIndex_logo_clicked:       $zIndex_button_topLevel; // 9900  
 $zIndex_logo:               7300;
@@ -61,7 +65,10 @@ $zIndex_slider_arrows_dots:  7150;
 $zIndex_slider:              7100;
 
 
+
 /* // 1000 ------------------------------------------------------------------ */
+
+
 
 /* // 100 ------------------------------------------------------------------- */
 $zIndex_body:                   0;

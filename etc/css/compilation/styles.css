@@ -48,7 +48,7 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
-/* // Form Submit ----------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Slider Activators | Custom [/etc/css/custom/act/slider_act.scss]
@@ -351,7 +351,7 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
 /* // Forms Input ----------------------------------------------------------- */
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts_var.scss]
@@ -359,8 +359,8 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
-/* // Form Submit  ---------------------------------------------------------- */
-/* // Form status message --------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
+/* // Form status message / Form validation --------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes_var.scss]
    ========================================================================== */
@@ -371,7 +371,7 @@
 /* // Form Input ------------------------------------------------------------ */
 /*___ Radio Input _______________________*/
 /* // Form Font Sizes ------------------------------------------------------- */
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 /* // Form Search ----------------------------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
@@ -1961,7 +1961,7 @@ article, article::before, article::after, details, details::before, details::aft
   border: 6px solid #ff46b7; }
 
 /* =============================================================================
-   Internas Global Styles | Custom [/etc/css/custom/global.scss]
+   Internas Global Styles
    ========================================================================== */
 /*
 .container{
@@ -2259,7 +2259,7 @@ button, button::before, button::after {
   text-align: center;
   text-transform: uppercase; }
 
-/* // Button Form ----------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 .button_form_submit {
   font-size: 1.2rem;
   text-transform: uppercase; }

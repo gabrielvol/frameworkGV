@@ -125,7 +125,7 @@ button{
         }
     }
     
-    &.CTA_hollow{         
+    &.CTA_hollow{
         &, &:focus, &:hover, &:visited, &:active{
             @include borderStyle($bdWhite);
             color: $white;
@@ -240,7 +240,7 @@ button{
     }
 }
 
-.pop_formStatus{    
+.pop_formStatus{
     .button_pop_submit{
         background-color: $bgWhite;
         margin: 20px auto 0;
@@ -250,26 +250,12 @@ button{
         text-align: center;        
         text-transform: uppercase;
     }
-}
-
-
-/* // Button Form ----------------------------------------------------------- */
-.button_form_submit{        
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    
-    &:focus, &:hover{}
-
-    @include afterTablet{
-        @include centerCustom(50%);
-        margin-top: 30px;
-    }
 } 
 
 
 /* // Button Whatsapp ------------------------------------------------------- */
 #selector{
-    .button_whatsapp_anchor{    
+    .button_whatsapp_anchor{
         @include transition(1s);
         @include squareSize($button_whatsapp_size);
         position: fixed;
@@ -288,7 +274,7 @@ button{
             box-shadow: 0 0 5px #3c9637;
             background-color: rgba(60, 209, 52, 1);
 
-            &::before{            
+            &::before{
                 @include borderRadius(15px);
                 @include equalHeightAndLineHeight($button_whatsapp_before_height);
                 content: "Abre un chat.";
@@ -316,7 +302,7 @@ button{
         }
 
         @include beforeTablet{
-            &.navDrawer_open{            
+            &.navDrawer_open{
                 &, &:focus, &:hover{
                     &::before{
                         display: none;

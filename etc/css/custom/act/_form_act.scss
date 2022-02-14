@@ -13,7 +13,7 @@
 // 01 _ $form_label_inside_act
 // 02 _ $form_label_coloured_act
 // 03 _ $form_input_coloured_act
-// 04 _ $form_submit_border_act // REF [21]
+// 04 _ $form_submit_border_act // REF [21a]
 // 05 _ $form_span_invalid_tooltip_act // REF [16]
 //
 //
@@ -52,7 +52,7 @@
 //
 //
 // 04 _ $form_submit_border_act
-// REF [21]
+// REF [21a]
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
 // Genera selectores de color para `input[type="reset"]`, `input[type="submit"]`,
@@ -60,20 +60,20 @@
 // Usa las variables `$button_form_submit_bdColour` y 
 // `$button_form_submit_bdColour_hover` para las pseudoclases `:focus` y `:hover`.
 //
-// Ej. con color verdeAgua:
-// form input[type="reset"].bgVerdeAgua,
-// form input[type="submit"].bgVerdeAgua,
-// form input[type="button"].bgVerdeAgua,
-// form button.bgVerdeAgua { border: 1px solid #hex; }
+// Ej.
+// form input[type="reset"],
+// form input[type="submit"],
+// form input[type="button"],
+// form button { border: 1px solid #hex; }
 //
-// form input[type="reset"].bgVerdeAgua:focus,
-// form input[type="reset"].bgVerdeAgua:hover,
-// form input[type="submit"].bgVerdeAgua:focus,
-// form input[type="submit"].bgVerdeAgua:hover,
-// form input[type="button"].bgVerdeAgua:focus,
-// form input[type="button"].bgVerdeAgua:hover,
-// form button.bgVerdeAgua:focus,
-// form button.bgVerdeAgua:hover { border-color: #hex; }
+// form input[type="reset"]:focus,
+// form input[type="reset"]:hover,
+// form input[type="submit"]:focus,
+// form input[type="submit"]:hover,
+// form input[type="button"]:focus,
+// form input[type="button"]:hover,
+// form button:focus,
+// form button:hover { border-color: #hex; }
 //
 //
 // 05 _ $form_span_invalid_tooltip_act
@@ -128,8 +128,8 @@ $form_label_coloured_act:           off;
 /* // Form Input ------------------------------------------------------------ */
 $form_input_coloured_act:           off;
 
-/* // Form Submit ----------------------------------------------------------- */
-$form_submit_border_act:            off; // REF [21]
+/* // Form Button Submit // REF [21] ---------------------------------------- */
+$form_submit_border_act:            off; // REF [21a]
 
 /* // Form Validation ------------------------------------------------------- */
 $form_span_invalid_tooltip_act:     off; // REF [16]

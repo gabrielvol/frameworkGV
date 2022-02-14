@@ -78,6 +78,11 @@ $form_input_height_TO:     $form_input_height_BT;
 $form_input_height_ATL:    35px; //No debe llevar !important
 $form_input_height_AD:     $form_input_height_ATL; //No debe llevar !important
 
+$form_input_ftSize_BT:      0.9rem;
+$form_input_ftSize_AT:      0.9rem;
+$form_input_ftSize_ATL:     $form_input_ftSize_AT;
+$form_input_ftSize_AD:      $form_input_ftSize_ATL;
+
 
 /*___ Radio Input _______________________*/
 $form_input_radio_height_BT:  35px;
@@ -92,7 +97,7 @@ $form_ftSize_AT:      $ftSize_paragraph_AT;
 $form_ftSize_ATL:     $ftSize_paragraph_ATL;
 
 
-/* // Form Submit  ---------------------------------------------------------- */
+/* // Form Button Submit // REF [21] ---------------------------------------- */
 $button_form_submit_width_MO:     90%;
 $button_form_submit_width_MLO:    60%!important;
 $button_form_submit_width_TO:     50%!important;
