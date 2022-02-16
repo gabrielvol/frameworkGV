@@ -93,13 +93,13 @@
                 <span class="visuallyHidden" lang="es"><?php echo $gettext_languageName_UY; ?></span>
             </a>
         </li>
-        <li class="flag_alignedLeft"><?php /* // REF [14] */ ?>
+        <li class="flag_alignedLeft"><?php /* // REF [14a] */ ?>
             <a href="<?php echo $url_entorno; ?>/zh" hreflang="zh" class="hover_grow_M_ani">
                 <img src="<?php echo $url_entorno; ?>/img/flag_zh.svg" alt="<?php echo $gettext_switchMsg_ZH; ?>." />
                 <span class="visuallyHidden" lang="zh"><?php echo $gettext_languageName_ZH; ?></span>
             </a>
         </li>
-        <li class="flag_alignedLeft"><?php /* // REF [14] */ ?>
+        <li class="flag_alignedLeft"><?php /* // REF [14a] */ ?>
             <a href="<?php echo $url_entorno; ?>/?l=zh_CN" hreflang="zh" class="hover_grow_M_ani">
                 <img src="<?php echo $url_entorno; ?>/img/flag_zh.svg" alt="<?php echo $gettext_switchMsg_ZH; ?>." />
                 <span class="visuallyHidden" lang="zh"><?php echo $gettext_languageName_ZH; ?></span>

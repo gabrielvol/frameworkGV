@@ -1,5 +1,5 @@
 
-<?php if($gettext_idioma == 'zh_CN'): /* // REF [14] */ ?>
+<?php if($gettext_idioma == 'zh_CN'): /* // REF [14a] */ ?>
 <link href="<?php echo $url_entorno; ?>/css/styles_zh.css" rel="stylesheet">
 <?php else: ?>
 <link href="<?php echo $url_entorno; ?>/css/styles.css" rel="stylesheet">
