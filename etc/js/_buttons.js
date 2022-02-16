@@ -1,5 +1,5 @@
 $(document).ready(function () {
-/* button actions */
+/* // Button Actions -------------------------------------------------------- */
     $(".login").click(function () {
         $(".modal_bg_global, .login").fadeToggle("slow", "linear").removeClass('displayNone');
     });
@@ -17,23 +17,26 @@ $(document).ready(function () {
         $(this).find("span").toggleClass("open");
         $(this).closest("li").find(".class").slideToggle("slow", "linear");
     });
-        
-// toggle attribute
+
+
+/* // Toggle Attribute ------------------------------------------------------ */
     var $nosAnchor = $('.nosAnchor');
     if ($nosAnchor.attr('aria-current')) {
         $nosAnchor.removeAttr('aria-current');
     } else {
         $nosAnchor.attr('aria-current', 'page');
     }
-    
-// Hover
+
+
+/* // Butto Hover ----------------------------------------------------------- */
     $('.servicios_panel h2').hover(function () {   
         $(this).closest('li').find('.servicios_panel_txt').addClass('hovered');
     }, function() {
         $(this).closest('li').find('.servicios_panel_txt').removeClass('hovered');
     });
 
-/* font sizing */
+
+/* // Font Sizing ----------------------------------------------------------- */
     $('.reducir').click(function () {
         var ourText = $('section p');
         var currFontSize = ourText.css('fontSize');
@@ -51,8 +54,9 @@ $(document).ready(function () {
         finalNum *= 1.2;
         ourText.css('fontSize', finalNum + stringEnding);
     });
-    
-// Modify html lang attr
+
+
+/* // Modify html lang attr // REF [28] ------------------------------------- */
     $(".ar a").click(function () {
         $('html').attr('lang', 'es_AR');
     });
@@ -64,7 +68,8 @@ $(document).ready(function () {
     });
 });
 
-// Logo change
+
+/* // Logo change ----------------------------------------------------------- */
 var url_entorno = '/test';
 
 $(document).ready(function () {
@@ -75,4 +80,14 @@ $(document).ready(function () {
     $('.button_hamb_close, .modal_nav, .nav_nav a').click(function () {
         $(this).closest('#header').find('.logo_header img').attr("src", url_entorno + "/img/logo_int.png");
     });
+});
+
+
+/* // Button SiteTop // REF [18] -------------------------------------------- */
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 300) { 
+        $('.button_siteTop').addClass('button_siteTop_visible');
+    } else {
+        $('.button_siteTop').removeClass('button_siteTop_visible');
+    }
 });

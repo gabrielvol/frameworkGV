@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="<?php echo $site_lang_HTML_attr; ?>">
+<html lang="<?php echo $site_lang_HTML_attr; /* // REF [28] */ ?>">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
