@@ -6,7 +6,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Variable para site lang, datos de open graph, títulos y descripción de sitio
 //
-// #lang #openGraph
+// #description #lang #meta #openGraph #title
 
 
 
@@ -48,13 +48,17 @@
 
 
 /* // Site language --------------------------------------------------------- */
-$site_lang_code             = 'es'; // REF [13]
-$site_lang_code_country     = 'AR';
+$site_lang_code             = 'es'; // REF [13] // REF [27]
+$site_lang_code_country     = 'AR'; // REF [27]
 $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
 $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country;
 
 
 /* // Site titles ----------------------------------------------------------- */
+// El index usa solamente $site_name_full
+// Las internas usan el nombre de la pagina seguido de $site_name_title
+// Ej.: Contacto | SECTION | $site_name_title
+
 $site_name_full             = 'SiteNameFull';
 $site_name_short            = 'SiteNameShort';
 $site_name_title            = 'SiteNameTitle';
@@ -74,7 +78,7 @@ $site_desc_global_GB        = '';
 /* // Open Graph meta ------------------------------------------------------- */     
 // Max 35 char                                                       ·
 //                                 123456789-123456789-123456789-12345
-// OpenGraph Title Global se usa en index solamente
+// $openGraph_title_global se usa en index solamente
 $openGraph_title_global         = '';
 $openGraph_title_global_GB      = '';
 
