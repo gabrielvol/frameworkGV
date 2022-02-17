@@ -160,10 +160,10 @@ $href_construccion  = 'href="'. $url_construccion .'"';
 // $href-PAGINA        = 'href="'. $url_PAGINA .'"';
 
 //$href_index         = ($nav_pageCurrent == 'page_index') ? 'href="'. $url_main_hs .'"' : 'href="'. $url_root .'"';
-//$href_contacto      = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_contacto_hs .'"' : 'href="'. $url_contacto_hs_INICIO.'"';
-// $href-PAGINA        = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
-// $href-PAGINA        = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
-// $href-PAGINA        = ($nav_pageCurrent == 'page-PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
+//$href_contacto      = ($nav_pageCurrent == 'page_PAGINA') ? 'href="'. $url_contacto_hs .'"' : 'href="'. $url_contacto_hs_INICIO.'"';
+// $href-PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
+// $href-PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
+// $href-PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="'. $url_SECCION_hs .'"' : 'href="'. $url_SECCION_hs_INICIO.'"';
     
 $href_main_hs       = 'href="'. $url_main_hs .'"';
 //$href_inicio_hs     = 'href="'. $url_inicio_hs .'"';

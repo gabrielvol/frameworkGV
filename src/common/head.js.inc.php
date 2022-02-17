@@ -43,18 +43,18 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 'page-PAGINA'): /*
+<?php endif; if($nav_pageCurrent == 'page_PAGINA'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 */
 ?>
 
 
-<?php endif; if($nav_pageCurrent_int == 'page-PAGINA_INT'): /*
+<?php endif; if($nav_pageCurrent_int == 'page_PAGINA_INT'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 */
 ?>
 
-<?php endif; if($nav_pageCurrent == 'page-PAGINA' || $nav_pageCurrent_int == 'page-PAGINA_INT'): /*
+<?php endif; if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
 <script src="<?php echo $url_entorno; ?>/js/aaaaaa.js"></script>
 */
 ?>

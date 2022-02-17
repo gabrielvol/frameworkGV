@@ -46,18 +46,18 @@
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 'page-PAGINA'): /*
+<?php endif; if($nav_pageCurrent == 'page_PAGINA'): /*
 <link href="<?php echo $url_entorno; ?>/js/aaaaaa.css" rel="stylesheet">
 */
 ?>
 
 
-<?php endif; if($nav_pageCurrent_int == 'page-PAGINA_INT'): /*
+<?php endif; if($nav_pageCurrent_int == 'page_PAGINA_INT'): /*
 <link href="<?php echo $url_entorno; ?>/js/aaaaaa.css" rel="stylesheet">
 */
 ?>
 
-<?php endif; if($nav_pageCurrent == 'page-PAGINA' || $nav_pageCurrent_int == 'page-PAGINA_INT'): /*
+<?php endif; if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
 <link href="<?php echo $url_entorno; ?>/js/aaaaaa.css" rel="stylesheet">
 */
 ?>
