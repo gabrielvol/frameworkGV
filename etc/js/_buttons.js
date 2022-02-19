@@ -1,21 +1,27 @@
 $(document).ready(function () {
-/* // Button Actions -------------------------------------------------------- */
-    $(".login").click(function () {
-        $(".modal_bg_global, .login").fadeToggle("slow", "linear").removeClass('displayNone');
+/* // Button Pop Open ------------------------------------------------------- */
+    $('.button_certificado').click(function () {
+        $(this).attr('aria-pressed', 'true');
+        $(this).closest('body').find('.modal_certificado').removeClass('displayNone');
     });
-    $('.modal_bg_global, .close').click(function () {
-        $('.modal_bg_global, .popup').hide().addClass('displayNone');
+    
+    $('.button_certificado_iqnet_open').click(function () {
+        $(this).closest('body').find('.pop_certificado_iqnet').removeClass('displayNone');
     });
-    $('.contacto').click(function () {
-        $(".logo").css({"display": 'block'});
-        $(".logo").toggleClass("selected");
+    
+    $('.button_certificado_iram_open').click(function () {
+        $(this).closest('body').find('.pop_certificado_iram').removeClass('displayNone');
     });
-    $("p").on("mouseover", function () {
-        $(".selector").css("color", "#fff");
+    
+    $('.pop_certificado img, .button_pop_close').click(function () {
+        $(this).closest('body').find('.button_certificado').attr('aria-pressed', 'false');
+        $(this).closest('body').find('.pop_certificado_iqnet').addClass('displayNone');
+        $(this).closest('body').find('.pop_certificado_iram').addClass('displayNone');
+        $(this).closest('body').find('.modal_certificado').addClass('displayNone');
     });
-    $(".a").click(function () {
-        $(this).find("span").toggleClass("open");
-        $(this).closest("li").find(".class").slideToggle("slow", "linear");
+    
+    $('.pop_certificado img').bind('contextmenu', function(e){
+        return false;
     });
 
 
@@ -28,7 +34,7 @@ $(document).ready(function () {
     }
 
 
-/* // Butto Hover ----------------------------------------------------------- */
+/* // Button Hover ---------------------------------------------------------- */
     $('.servicios_panel h2').hover(function () {   
         $(this).closest('li').find('.servicios_panel_txt').addClass('hovered');
     }, function() {
@@ -80,14 +86,4 @@ $(document).ready(function () {
     $('.button_hamb_close, .modal_nav, .nav_nav a').click(function () {
         $(this).closest('#header').find('.logo_header img').attr("src", url_entorno + "/img/logo_int.png");
     });
-});
-
-
-/* // Button SiteTop // REF [18] -------------------------------------------- */
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 300) { 
-        $('.button_siteTop').addClass('button_siteTop_visible');
-    } else {
-        $('.button_siteTop').removeClass('button_siteTop_visible');
-    }
 });
