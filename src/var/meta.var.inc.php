@@ -90,15 +90,15 @@ $openGraph_siteName_global_GB   = $openGraph_title_global_GB;
 $openGraph_desc_global          = '';
 $openGraph_desc_global_GB       = '';
 
-$openGraph_url                  = $url_openGraph_global;
+$openGraph_url                  = $url_global;
 $openGraph_type                 = 'website';
 
-$openGraph_url_img_sq           = $url_openGraph_global .'/og_img_sq_01.jpg';
+$openGraph_url_img_sq           = $url_local_full .'/og_img_sq_01.jpg';
 $openGraph_url_img_sq_secure    = $openGraph_url_img_sq;
 $openGraph_img_sq_width         = '1000';
 $openGraph_img_sq_height        = '1000';
 
-$openGraph_url_img_big          = $url_openGraph_global .'/og_img_big_01.jpg';
+$openGraph_url_img_big          = $url_local_full .'/og_img_big_01.jpg';
 $openGraph_url_img_big_secure   = $openGraph_url_img_big;
 $openGraph_img_big_width        = '1200';
 $openGraph_img_big_height       = '630';

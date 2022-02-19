@@ -38,13 +38,13 @@
 <link rel="license" href="<?php echo $url_entorno; ?>/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=es_AR" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=es_UY" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=en_GB" hreflang="en">
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=de_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=fr_FR" hreflang="fr">
-<link rel="alternate" href="<?php echo $url_global . $url_entorno; ?>/?l=pt_BR" hreflang="pt">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_UY" hreflang="es">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=fr_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Información personal -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
@@ -94,7 +94,7 @@
 
 <!-- Twitter Card -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="<?php echo $url_global; ?>" />
+<meta property="twitter:url" content="<?php echo $url_global_full; ?>" />
 <meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>" />
 <meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>" />
 <meta property="twitter:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg" />
@@ -103,11 +103,11 @@
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_global . $url_entorno; ?>/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="<?php echo $url_global . $url_entorno; ?>/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="<?php echo $url_global . $url_entorno; ?>/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="<?php echo $url_global . $url_entorno; ?>/manifest.json">
-<link rel="mask-icon" href="<?php echo $url_global . $url_entorno; ?>/safari-pinned-tab.svg" color="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_local_full; ?>/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php echo $url_local_full; ?>/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php echo $url_local_full; ?>/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php echo $url_local_full; ?>/manifest.json">
+<link rel="mask-icon" href="<?php echo $url_local_full; ?>/safari-pinned-tab.svg" color="#000">
 <meta name="msapplication-TileColor" content="#000">
 <meta name="theme-color" content="#ffffff">
 

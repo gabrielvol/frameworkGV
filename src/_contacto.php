@@ -14,10 +14,10 @@
 //    $has-CUSTOMVARIABLE     = 1;
 //    $lang_en                = 1;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');    
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php'); 
     
-    $form_var               = $_GET['formvar'];
-    $page_url_full          = $url_contacto_full;
+    $form_var               = $_GET['formvar'];    
+    $page_url_full          = $url_contacto_full;   
     
     $site_title             = "Contacto | ". $site_name_title;
 //    $site_title_GB          = "Contact | ". $site_name_title;

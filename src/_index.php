@@ -12,9 +12,9 @@
 //    $has-CUSTOMVARIABLE     = 1;
 //    $lang_en                = 1;
      
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php');  
     
-    $page_url_full          = $url_index_full;
+    $page_url_full          = $url_index_full;  
     
     $site_title             = $site_name_full;
 //    $site_title_GB          = $site_name_full;

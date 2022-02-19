@@ -49,7 +49,6 @@
 
 /* // Domains --------------------------------------------------------------- */
 $domain_global      = 'sitiocomar';
-$domain_sec         = 'sitiocomar';
+$domain_local       = $domain_global; // 'sitiocomar';
 
-$url_global         = 'http://www.'. $domain_global;
-$url_sec            = 'http://www.'. $domain_sec;
+$domain_sec         = 'sitiocomar';

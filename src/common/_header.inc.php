@@ -10,8 +10,8 @@
         <?php if($page_int == 1 && $logo_bgImage_before_act == 1) { echo '</div>'; } ?>
     </a>
     <?php
-        if($nav_pageCurrent == 'page_index') { echo '</h1>'; }
         if($nav_pageCurrent == 'page_index' && $logo_bgImage_before_act == 1) { echo '</div>'; }
+        if($nav_pageCurrent == 'page_index') { echo '</h1>'; }
     ?>  
     
     <?php include('nav.main.inc.php'); ?>
