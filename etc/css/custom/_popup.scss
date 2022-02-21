@@ -58,6 +58,19 @@
         overflow: auto;
         overscroll-behavior: contain;
     }
+    
+/*    
+    &::before{
+        // REF [30]
+        @include positionTRBL();
+        content: "";
+        background-color: $modal_bgColour_global;
+        position: fixed;
+        z-index: $zIndex_negative;
+        display: block;
+    }
+*/
+
 }
 
 .pop_warning{
@@ -205,21 +218,25 @@
     }
         
     &.pop_formStatus_ok{
-        h2 span{
-            position: relative;
+        @if $form_status_ok_tick == "on"{
+            // REF [29]
 
-            &::after{
-                @include squareSize(20px);
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50%;
-                right: -25px;
-                background-image: url('#{$url_entorno}/img/form_ok.svg');
-                background-size: auto 95%;
-                background-repeat: no-repeat;
-                background-position: center;
-                margin-top: -10px;
+            h2 span{
+                position: relative;
+
+                &::after{
+                    @include squareSize(20px);
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: -25px;
+                    background-image: url('#{$url_entorno}/img/form_ok.svg');
+                    background-size: auto 95%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-top: -10px;
+                }
             }
         }
     }
@@ -227,6 +244,13 @@
     @include beforeMobile650{
         h2{
             padding-top: 30px;
+            font-size: 1.6rem;
+        }
+    }
+    
+    @include afterMobile650{
+        h2{
+            font-size: 2rem;
         }
     }
 }

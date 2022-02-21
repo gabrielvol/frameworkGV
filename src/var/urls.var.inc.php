@@ -47,6 +47,7 @@
 
 
 /* // Hashes ---------------------------------------------------------------- */
+$hash_top           = '#go-main-content';
 $hash_main          = '#main';
 //$hash_inicio        = '#inicio';
 //$hash_contacto      = '#contacto';

@@ -43,7 +43,7 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <div class="container">
             <h1><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
-            <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de est&aacute; p&aacute;gina'); ?>.</p>
+            <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de esta p&aacute;gina'); ?>.</p>
             <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/page.error.p.inc.php'); ?>
         </div>
     </div>

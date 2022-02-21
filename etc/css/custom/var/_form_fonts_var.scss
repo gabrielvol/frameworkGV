@@ -48,8 +48,11 @@ $form_input_ftFamily:           $ftFamily_main_global;
 $form_input_ftWeight:           400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
 
 /* // Form Button Submit // REF [21] ---------------------------------------- */
-$button_form_submit_ftFamily:   $ftFamily_main_global;
+$button_form_submit_ftFamily:   $form_label_ftFamily;
 $button_form_submit_ftWeight:   400; // VER [01] en `[/etc/css/custom/act/fonts_act.scss]`
 
-/* // Form status message / Form validation --------------------------------- */
-$form_pop_title_ftFamily:       $ftFamily_main_global;
+/* // Form status message --------------------------------------------------- */
+$form_pop_title_ftFamily:       $form_label_ftFamily;
+
+/* // Form validation ------------------------------------------------------- */
+$form_span_invalid_ftFamily:    $arial;

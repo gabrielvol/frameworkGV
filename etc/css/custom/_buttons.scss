@@ -166,7 +166,7 @@ button{
     // border: 1px solid $bdGreyXD!important; 
     width: $button_close_global_size!important;
     height: $button_close_global_size!important;
-    background-size: 35%;
+    background-size: 100%;
     background-color: $bgWhite;
     background-image: url('#{$url_entorno}/img/button_close.svg');
     background-repeat: no-repeat;
@@ -185,7 +185,6 @@ button{
     .button_pop_close{
         width: $button_pop_close_size!important;
         height: $button_pop_close_size!important;
-        background-image: url('#{$url_entorno}/img/button_close.svg');
     }
 
     @include beforeMobile600{
@@ -205,7 +204,12 @@ button{
 
 .pop_warning{
     .button_pop_close{
+        @include borderStyle($bdGreyD);
         @include positionTR(10px, 10px);
+
+        &:focus, &:hover{
+            border-color: $bdGreyXD;
+        }
     }
 
     .button_pop_submit{
@@ -226,12 +230,6 @@ button{
             color: $black;
         }            
     }
-
-    @include afterMobile600{
-        .button_pop_close{
-            @include positionTR(10px, 10px);
-        }
-    }
 }
 
 .pop_form{
@@ -240,7 +238,7 @@ button{
     }
 }
 
-.pop_formStatus{
+.pop_formStatus{    
     .button_pop_submit{
         background-color: $bgWhite;
         margin: 20px auto 0;
