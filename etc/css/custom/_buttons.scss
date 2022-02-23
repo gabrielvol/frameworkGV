@@ -168,7 +168,7 @@ button{
     height: $button_close_global_size!important;
     background-size: 100%;
     background-color: $bgWhite;
-    background-image: url('#{$url_entorno}/img/button_close.svg');
+    background-image: url('#{$dir_env}/img/button_close.svg');
     background-repeat: no-repeat;
     background-position: center center; 
     text-indent: -9999px;
@@ -263,7 +263,7 @@ button{
         display: block;
         border-radius: 50%;
         background-color: rgba(60, 209, 52, 0.85);
-        background-image: url('#{$url_entorno}/img/button_whatsapp.svg');
+        background-image: url('#{$dir_env}/img/button_whatsapp.svg');
         background-repeat: no-repeat;
         background-size: calc(#{$button_whatsapp_size} - 10px);
         background-position: center center;
@@ -351,7 +351,7 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
     position: fixed;
     z-index: $zIndex_button_siteTop;
     right: 20px;
-    background-image: url('#{$url_entorno}/img/button_siteTop.svg');
+    background-image: url('#{$dir_env}/img/button_siteTop.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -385,7 +385,7 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
         content: "";
         display: block;
         opacity: 0.5;
-        background-image: url('#{$url_entorno}/img/icon_play.svg');
+        background-image: url('#{$dir_env}/img/icon_play.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100%;

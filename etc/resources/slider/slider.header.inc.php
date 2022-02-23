@@ -36,68 +36,68 @@
         $slider_header_item_19  = '19';
         $slider_header_item_20  = '20';
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/slider.header.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/slider.header.inc.php');
 ?>                
 
 <ul class="slick slick_carousel unstyled <?php echo $classes_slider_header; ?>">
     <?php        if(isset($slider_header_item_01)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_01; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_01; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_02)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_02; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_02; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_03)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_03; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_03; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_04)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_04; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_04; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_05)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_05; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_05; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_06)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_06; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_06; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_07)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_07; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_07; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_08)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_08; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_08; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_09)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_09; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_09; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_10)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_10; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_10; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_11)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_11; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_11; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_12)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_12; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_12; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_13)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_13; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_13; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_14)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_14; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_14; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_15)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_15; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_15; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_16)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_16; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_16; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_17)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_17; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_17; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_18)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_18; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_18; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_19)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_19; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_19; ?>.jpg" alt="" aria-hidden="true" /></li>
     
     <?php endif; if(isset($slider_header_item_20)): // Section ?>
-    <li><img src="<?php echo $url_entorno; ?>/img/slide_header_<?php echo $slider_header_item_20; ?>.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_header_<?php echo $slider_header_item_20; ?>.jpg" alt="" aria-hidden="true" /></li>
     <?php endif; ?>
 </ul>

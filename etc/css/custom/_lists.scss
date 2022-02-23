@@ -169,7 +169,7 @@ ol{
 .list_bulleted_dot{
     li{
         &::before{
-            background-image: url('#{$url_entorno}/img/bullet_dot.svg');
+            background-image: url('#{$dir_env}/img/bullet_dot.svg');
         }
     }
 }
@@ -177,7 +177,7 @@ ol{
 .list_bulleted_square{
     li{
         &::before{
-            background-image: url('#{$url_entorno}/img/bullet_square.svg');
+            background-image: url('#{$dir_env}/img/bullet_square.svg');
         }
     }
 }
@@ -189,7 +189,7 @@ ol{
         &::before{
             @include squareSize($list_bulleted_tick_li_PL);
             top: 0;
-            background-image: url('#{$url_entorno}/img/bullet_tick.svg');
+            background-image: url('#{$dir_env}/img/bullet_tick.svg');
             background-position: left 3px;
             background-size: auto calc(#{$list_bulleted_tick_li_PL} - 5px);
         }
@@ -199,7 +199,7 @@ ol{
 .list_bulleted_chevron{
     li{
         &::before{
-            background-image: url('#{$url_entorno}/img/bullet_chevron.svg');
+            background-image: url('#{$dir_env}/img/bullet_chevron.svg');
         }
     }
 }
@@ -233,14 +233,14 @@ ol{
     &.filePDF{
         li{
             &::before{
-                background-image: url('#{$url_entorno}/img/file_pdf.svg');
+                background-image: url('#{$dir_env}/img/file_pdf.svg');
             }
         }
     }
 
     &.fileDOC{
         li{
-            background-image: url('#{$url_entorno}/img/file_pdf.svg');
+            background-image: url('#{$dir_env}/img/file_pdf.svg');
         }
     }
 }

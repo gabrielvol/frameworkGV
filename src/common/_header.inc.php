@@ -6,7 +6,7 @@
     ?>
     <a <?php echo $href_logo; ?> class="<?php if($page_int == 1) { echo 'logo_header'; } ?>">
         <?php if($page_int == 1 && $logo_bgImage_before_act == 1) { echo '<div class="logo_before">'; } ?>
-            <img src="<?php echo $url_entorno; ?>/img/logo_header.svg" alt="<?php echo $site_name_full; ?>." />
+            <img src="<?php echo $dir_env; ?>/img/logo_header.svg" alt="<?php echo $site_name_full; ?>." />
         <?php if($page_int == 1 && $logo_bgImage_before_act == 1) { echo '</div>'; } ?>
     </a>
     <?php
@@ -17,7 +17,7 @@
     <?php include('nav.main.inc.php'); ?>
         
     <?php
-        if($url_entorno == "/test"){
+        if($dir_env == "/test"){
             include('nav.language.inc.php');
         }
     ?>

@@ -40,7 +40,7 @@
         </section>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/common/footer.inc.php'); ?>
-    <script src="<?php echo $url_entorno; ?>/js/_smoothScroll.js"></script>
-    <script src="<?php echo $url_entorno; ?>/js/smoothScroll.jQuery.js"></script>
+    <script src="<?php echo $dir_env; ?>/js/_smoothScroll.js"></script>
+    <script src="<?php echo $dir_env; ?>/js/smoothScroll.jQuery.js"></script>
 </body>
 </html>

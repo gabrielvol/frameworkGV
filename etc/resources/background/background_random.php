@@ -6,7 +6,7 @@
 
 <style type="text/css">
     #main{
-        background-image: url('#{$url_entorno}/img/<?php echo $bg_file[0]; ?>');
+        background-image: url('#{$dir_env}/img/<?php echo $bg_file[0]; ?>');
     }
 </style>
 

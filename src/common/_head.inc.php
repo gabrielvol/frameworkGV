@@ -36,13 +36,13 @@
 
 <?php include('head.css.inc.php'); ?>
 
-<link rel="author" href="<?php echo $url_entorno; ?>/humans.txt">
+<link rel="author" href="<?php echo $dir_env; ?>/humans.txt">
 
 <link rel="canonical" href="<?php echo $url_global; ?>" />
 <link rel="index" href="<?php echo $url_global; ?>">
 
 <!-- Copyright -->
-<link rel="license" href="<?php echo $url_entorno; ?>/legal/copyright.php">
+<link rel="license" href="<?php echo $dir_env; ?>/legal/copyright.php">
 
 <!-- Idiomas -->
 <link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_AR" hreflang="es">
@@ -155,7 +155,7 @@
 <?php include('head.js.inc.php'); ?>
 
 <!-- Google Analytics -->
-<?php if(empty($url_entorno)): ?>
+<?php if(empty($dir_env)): ?>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];

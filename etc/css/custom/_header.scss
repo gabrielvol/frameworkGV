@@ -36,7 +36,7 @@
     @if $logo_bgImage_before_act == "on"{
         .logo_before{
             position: relative;        
-            background-image: url('#{$url_entorno}/img/logo_bg_before.png');
+            background-image: url('#{$dir_env}/img/logo_bg_before.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: auto 100%;

@@ -1,4 +1,4 @@
-var url_entorno = '/test';
+var dir_env = '/test';
 
 $(window).scroll(function () {    
     if ($(this).scrollTop() > 60) { // REF [R]
@@ -21,9 +21,9 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {     
-        $('.logo_header img').attr("src", url_entorno + "/img/logo_scrolled.png");
+        $('.logo_header img').attr("src", dir_env + "/img/logo_scrolled.png");
     } else {
-        $('.logo_header img').attr("src", url_entorno + "/img/logo.png");
+        $('.logo_header img').attr("src", dir_env + "/img/logo.png");
     }
 });
 

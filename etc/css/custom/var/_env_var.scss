@@ -1,16 +1,16 @@
 /* * NombreDeProyecto * ========================================================
    Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
    ========================================================================== */
-$url_entorno-alt:           "/aaa";
-$url_entorno-janus:         "/clientes/aaa";
-$url_entorno-dialogo:       "/aaa";
-$url_entorno-wanita:        "/aaa";
+$dir_env-alt:           "/aaa";
+$dir_env-janus:         "/clientes/aaa";
+$dir_env-dialogo:       "/aaa";
+$dir_env-wanita:        "/aaa";
 
-$url_entorno-maqueta:       "/maqueta";
-$url_entorno-responsive:    "/responsive";
+$dir_env-maqueta:       "/maqueta";
+$dir_env-responsive:    "/responsive";
 
-$url_entorno-test:          "/test";
-$url_entorno-stage:         "/stage";
-$url_entorno-produccion:    "";
+$dir_env-test:          "/test";
+$dir_env-stage:         "/stage";
+$dir_env-produccion:    "";
 
-$url_entorno:               $url_entorno-stage;
+$dir_env:               $dir_env-stage;

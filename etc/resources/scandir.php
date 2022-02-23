@@ -9,7 +9,7 @@
                 foreach($files as $image) {
                     if($image !== '.' && $image !== '..' && $image !== '01.jpg'){
                         echo '<li>
-                            <a href="<?php echo $url_entorno; ?>/img/imageFolder/'.$image.'" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran extasiados el show de Marilyn Manson."><img src="/img/imageFolder/'.$image.'" alt="Imagen" /></a>
+                            <a href="<?php echo $dir_env; ?>/img/imageFolder/'.$image.'" data-lightbox="galeria" data-title="Espectadores de un concierto de rock que miran extasiados el show de Marilyn Manson."><img src="/img/imageFolder/'.$image.'" alt="Imagen" /></a>
                         </li>';
                     } 
                 }

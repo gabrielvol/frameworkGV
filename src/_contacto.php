@@ -1,6 +1,6 @@
 <?php
-    $url_entorno = '/stage';
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/languageCheck.inc.php');
+    $dir_env = '/stage';
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/gettext/languageCheck.inc.php');
     
     $page_int               = 1;   
     $nav_pageCurrent        = 'page_contacto';
@@ -14,7 +14,7 @@
 //    $has-CUSTOMVARIABLE     = 1;
 //    $lang_en                = 1;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/var/__main.var.inc.php'); 
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php'); 
     
     $form_var               = $_GET['formvar'];    
     $page_url_full          = $url_contacto_full;   
@@ -34,18 +34,18 @@
     $openGraph_url_img_height   = $openGraph_img_sq_height;
     $openGraph_siteName         = $openGraph_siteName_global;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/head.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/gettext/locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/speller.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/head.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/gettext/locale.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/speller.inc.php');
 ?>
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/header.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
         <div class="mobileForm tabletForm">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/form.main.inc.php'); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/form.main.inc.php'); ?>
         </div>
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $url_entorno .'/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/footer.inc.php'); ?>
 </body>
 </html>

@@ -62,7 +62,7 @@ nav{
             z-index: $zIndex_nav_close;  
             display: none;            
             background-color: $bgWhite;
-            background-image: url('#{$url_entorno}/img/button_hamb_close.svg');
+            background-image: url('#{$dir_env}/img/button_hamb_close.svg');
             background-repeat: no-repeat;
             background-position: center center; 
         }

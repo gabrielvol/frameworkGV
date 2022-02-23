@@ -68,50 +68,50 @@ $hash_main_gettext          = '#main';
 // Los vínculos que tienen un hash creado deben ser comentados en la siguiente
 // lista
 
-$url_root           = $url_entorno .'/';
+$url_root           = $dir_env .'/';
 $url_logo           = $url_root;
-$url_index          = $url_entorno .'/index.php';
-//$url_inicio         = $url_entorno .'/inicio.php';
-$url_contacto       = $url_entorno .'/contacto.php';
-//$url_gracias        = $url_entorno .'/gracias.php';
-//$url_construccion   = $url_entorno .'/construccion.php';
-//$url_copyright      = $url_entorno .'/legal/copyright.php';
-// $url-PAGINA         = $url_entorno .'/pagina.php';
-// $url-PAGINA         = $url_entorno .'/pagina.php';
-// $url-PAGINA         = $url_entorno .'/pagina.php';
+$url_index          = $dir_env .'/index.php';
+//$url_inicio         = $dir_env .'/inicio.php';
+$url_contacto       = $dir_env .'/contacto.php';
+//$url_gracias        = $dir_env .'/gracias.php';
+//$url_construccion   = $dir_env .'/construccion.php';
+//$url_copyright      = $dir_env .'/legal/copyright.php';
+// $url-PAGINA         = $dir_env .'/pagina.php';
+// $url-PAGINA         = $dir_env .'/pagina.php';
+// $url-PAGINA         = $dir_env .'/pagina.php';
 
-$url_main_hs        = $url_entorno .'/'. $hash_main;
-//$url_inicio_hs      = $url_entorno .'/'. $hash_inicio;
-//$url_contacto_hs    = $url_entorno .'/'. $hash_contacto;
-// $url-SECCION-hs     = $url_entorno .'/'. $hash_SECCION;
-// $url-SECCION-hs     = $url_entorno .'/'. $hash_SECCION;
-// $url-SECCION-hs     = $url_entorno .'/'. $hash_SECCION; 
+$url_main_hs        = $dir_env .'/'. $hash_main;
+//$url_inicio_hs      = $dir_env .'/'. $hash_inicio;
+//$url_contacto_hs    = $dir_env .'/'. $hash_contacto;
+// $url-SECCION-hs     = $dir_env .'/'. $hash_SECCION;
+// $url-SECCION-hs     = $dir_env .'/'. $hash_SECCION;
+// $url-SECCION-hs     = $dir_env .'/'. $hash_SECCION; 
 
-$url_root           = $url_entorno .'/'. $gettext_idioma_url;
+$url_root           = $dir_env .'/'. $gettext_idioma_url;
 $url_logo           = $url_root;
-$url_index          = $url_entorno .'/index.php'. $gettext_idioma_url;
-//$url_inicio         = $url_entorno .'/inicio.php'. $gettext_idioma_url;
-$url_contacto       = $url_entorno .'/contacto.php'. $gettext_idioma_url;
-//$url_gracias        = $url_entorno .'/gracias.php'. $gettext_idioma_url;
-//$url_construccion   = $url_entorno .'/construccion.php'. $gettext_idioma_url;
-//$url_copyright      = $url_entorno .'/legal/copyright.php'. $gettext_idioma_url;
-// $url-PAGINA         = $url_entorno .'/pagina.php'. $gettext_idioma_url;
-// $url-PAGINA         = $url_entorno .'/pagina.php'. $gettext_idioma_url;
-// $url-PAGINA         = $url_entorno .'/pagina.php'. $gettext_idioma_url;
+$url_index          = $dir_env .'/index.php'. $gettext_idioma_url;
+//$url_inicio         = $dir_env .'/inicio.php'. $gettext_idioma_url;
+$url_contacto       = $dir_env .'/contacto.php'. $gettext_idioma_url;
+//$url_gracias        = $dir_env .'/gracias.php'. $gettext_idioma_url;
+//$url_construccion   = $dir_env .'/construccion.php'. $gettext_idioma_url;
+//$url_copyright      = $dir_env .'/legal/copyright.php'. $gettext_idioma_url;
+// $url-PAGINA         = $dir_env .'/pagina.php'. $gettext_idioma_url;
+// $url-PAGINA         = $dir_env .'/pagina.php'. $gettext_idioma_url;
+// $url-PAGINA         = $dir_env .'/pagina.php'. $gettext_idioma_url;
 
-$url_main_hs        = $url_entorno .'/'. $gettext_idioma_url . $hash_main;
-//$url_inicio_hs      = $url_entorno .'/'. $gettext_idioma_url . $hash_inicio;
-//$url_contacto_hs    = $url_entorno .'/'. $gettext_idioma_url . $hash_contacto;
-// $url-SECCION-hs     = $url_entorno .'/'. $gettext_idioma_url . $hash_SECCION;
-// $url-SECCION-hs     = $url_entorno .'/'. $gettext_idioma_url . $hash_SECCION;
-// $url-SECCION-hs     = $url_entorno .'/'. $gettext_idioma_url . $hash_SECCION;
+$url_main_hs        = $dir_env .'/'. $gettext_idioma_url . $hash_main;
+//$url_inicio_hs      = $dir_env .'/'. $gettext_idioma_url . $hash_inicio;
+//$url_contacto_hs    = $dir_env .'/'. $gettext_idioma_url . $hash_contacto;
+// $url-SECCION-hs     = $dir_env .'/'. $gettext_idioma_url . $hash_SECCION;
+// $url-SECCION-hs     = $dir_env .'/'. $gettext_idioma_url . $hash_SECCION;
+// $url-SECCION-hs     = $dir_env .'/'. $gettext_idioma_url . $hash_SECCION;
 
-$url_main_hs_gettext            = $url_entorno .'/'. $gettext_idioma_url . $hash_main_gettext;
-//$url_inicio_hs_gettext          = $url_entorno .'/'. $gettext_idioma_url . $hash_inicio_gettext;
-//$url_contacto_hs_gettext        = $url_entorno .'/'. $gettext_idioma_url . $hash_contacto_gettext;
-// $url-PAGINA-hs_gettext          = $url_entorno .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
-// $url-PAGINA-hs_gettext          = $url_entorno .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
-// $url-PAGINA-hs_gettext          = $url_entorno .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
+$url_main_hs_gettext            = $dir_env .'/'. $gettext_idioma_url . $hash_main_gettext;
+//$url_inicio_hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_inicio_gettext;
+//$url_contacto_hs_gettext        = $dir_env .'/'. $gettext_idioma_url . $hash_contacto_gettext;
+// $url-PAGINA-hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
+// $url-PAGINA-hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
+// $url-PAGINA-hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
 
 $url_main_hs_INICIO             = $url_inicio . $hash_main; 
 //$url_inicio_hs_INICIO           = $url_inicio . $hash_inicio;
@@ -134,8 +134,8 @@ $url_main_hs_INICIO_gettext     = $url_inicio . $url_main_hs_gettext;
 // lista
 
 $url_global             = 'https://www.'. $domain_global;
-$url_global_full        = $url_global . $url_entorno;
-$url_local_full         = 'https://www.'. $domain_local . $url_entorno;
+$url_global_full        = $url_global . $dir_env;
+$url_local_full         = 'https://www.'. $domain_local . $dir_env;
 
 $url_sec                = 'https://www.'. $domain_sec;
 
