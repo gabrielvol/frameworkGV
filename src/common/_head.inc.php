@@ -2,13 +2,17 @@
 <html lang="<?php echo $site_lang_HTML_attr; /* // REF [28] */ ?>">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<meta http-equiv="Window-Target" content="_value">
 <meta name="robots" content="index,follow">
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
+<meta name="referrer" content="no-referrer">
 <meta name="geo.region" content="<?php echo $site_lang_code_country; ?>">
 
 <!-- Google No Translate -->
@@ -28,11 +32,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
+<base href="<?php echo $url_global; ?>" target="_self">
+
 <?php include('head.css.inc.php'); ?>
 
 <link rel="author" href="<?php echo $url_entorno; ?>/humans.txt">
 
 <link rel="canonical" href="<?php echo $url_global; ?>" />
+<link rel="index" href="<?php echo $url_global; ?>">
 
 <!-- Copyright -->
 <link rel="license" href="<?php echo $url_entorno; ?>/legal/copyright.php">
@@ -46,6 +53,18 @@
 <link rel="alternate" href="<?php echo $url_global_full; ?>/?l=fr_FR" hreflang="fr">
 <link rel="alternate" href="<?php echo $url_global_full; ?>/?l=pt_BR" hreflang="pt">
 
+<!-- Prefetching, preloading, prebrowsing. More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+<!-- DNS-prefetch, notifies the client that there are assets we’ll need later from a specific URL so the browser can resolve the DNS as quickly as possible -->
+<link rel="dns-prefetch" href="<?php echo $url_global; ?>/page.php">
+<!-- preconnect, resolve the DNS but it will also make the TCP handshake, and optional TLS negotiation -->
+<link rel="preconnect" href="<?php echo $url_global; ?>">
+<!-- prefetch, request a specific resource, download and store it in the cache for reference later -->
+<link rel="prefetch" href="<?php echo $url_global; ?>/image.jpg">
+<!--  prerender, preemptively load all of the assets of a certain document -->
+<link rel="prerender" href="<?php echo $url_global; ?>/page.php">
+<!-- preload, force download an asset -->
+<link rel="preload" href="image.png" as="image">
+
 <!-- Información personal -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
@@ -56,6 +75,17 @@
 
 <!-- Notifies a URL when you link to it on your document -->
 <link rel="webmention" href="http://example.com/webmention">
+
+<!-- Favicon -->
+<link rel="icon" href="<?php echo $url_local_full; ?>/favicon.ico" sizes="any">
+<link rel="icon" href="<?php echo $url_local_full; ?>/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_local_full; ?>/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url_local_full; ?>/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $url_local_full; ?>/favicon-16x16.png">
+<link rel="manifest" href="<?php echo $url_local_full; ?>/manifest.webmanifest">
+<link rel="mask-icon" href="<?php echo $url_local_full; ?>/safari-pinned-tab.svg" color="#888888">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Open Graph -->
 <meta property="og:title" content="<?php echo $openGraph_title; ?>" />
@@ -101,15 +131,6 @@
 
 <!-- Pinterest -->
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
-
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_local_full; ?>/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="<?php echo $url_local_full; ?>/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="<?php echo $url_local_full; ?>/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="<?php echo $url_local_full; ?>/manifest.json">
-<link rel="mask-icon" href="<?php echo $url_local_full; ?>/safari-pinned-tab.svg" color="#000">
-<meta name="msapplication-TileColor" content="#000">
-<meta name="theme-color" content="#ffffff">
 
 <!-- Google Android -->
 <!-- Add to home screen -->
