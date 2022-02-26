@@ -1,0 +1,1 @@
+<a <?php echo $file__________pdf_01; ?> class="button_download" role="button" aria-pressed="false"><span class="visuallyHidden"><?php echo _("texto"); ?></span> <?php echo _("texto"); ?>.</a>
