@@ -1,2 +1,15 @@
 User-agent: *
-Disallow:
+Allow: /
+
+User-agent: *
+Disallow: /stage/
+Disallow: /test/
+Disallow: /maqueta/
+Disallow: /responsive/
+
+Disallow: /dir/
+Disallow: /file.html
+Disallow: /img/dogs.jpg
+Disallow: /*.xls$
+
+Sitemap: https://wwwsitiowebcom/sitemap.xml
