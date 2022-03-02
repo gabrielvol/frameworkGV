@@ -4,9 +4,9 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Variable para site lang, datos de open graph, títulos y descripción de sitio
+// Variable para site lang, títulos y descripción de sitio
 //
-// #description #lang #meta #openGraph #title
+// #description #lang #meta #title
 
 
 
@@ -74,32 +74,4 @@ $site_name_tag_GB           = 'SiteNameTag';
 $site_desc_global           = '';
 $site_desc_global_GB        = '';
 
-
-/* // Open Graph meta ------------------------------------------------------- */     
-// Max 35 char                                                       ·
-//                                 123456789-123456789-123456789-12345
-// $openGraph_title_global se usa en index solamente
-$openGraph_title_global         = '';
-$openGraph_title_global_GB      = '';
-
-$openGraph_siteName_global      = $openGraph_title_global;    
-$openGraph_siteName_global_GB   = $openGraph_title_global_GB;
-
-// Max 65 char                                                                                     ·
-//                                 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-$openGraph_desc_global          = '';
-$openGraph_desc_global_GB       = '';
-
-$openGraph_url                  = $url_global;
-$openGraph_type                 = 'website';
-
-$openGraph_url_img_sq           = $url_local_full .'/og_img_sq_01.jpg';
-$openGraph_url_img_sq_secure    = $openGraph_url_img_sq;
-$openGraph_img_sq_width         = '1000';
-$openGraph_img_sq_height        = '1000';
-
-$openGraph_url_img_big          = $url_local_full .'/og_img_big_01.jpg';
-$openGraph_url_img_big_secure   = $openGraph_url_img_big;
-$openGraph_img_big_width        = '1200';
-$openGraph_img_big_height       = '630';
 ?>

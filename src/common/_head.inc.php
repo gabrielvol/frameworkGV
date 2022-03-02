@@ -22,6 +22,7 @@
 <meta name="format-detection" content="telephone=no">
 
 <title><?php echo $site_title; ?></title>
+<meta name="title" content="<?php echo $site_title; ?>">
 <title><?php if($gettext_idioma == 'en_GB'){ echo $site_title_GB; } else if($gettext_idioma == 'pt_BR'){ echo $site_titleBR; } else { echo $site_title; } ?></title>
 
 <meta name="description" content="<?php echo $site_desc; ?>">
@@ -91,14 +92,14 @@
 <meta property="og:title" content="<?php echo $openGraph_title; ?>" />
 <meta property="og:url" content="<?php echo $openGraph_url; ?>" />
 <meta property="og:description" content="<?php echo $openGraph_desc; ?>" />
-<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img_secure; ?>" />-->
-<meta property="og:image" content="<?php echo $openGraph_url_img; ?>" />
-<meta property="og:image:type" content="image/jpg" />
-<meta property="og:image:width" content="<?php echo $openGraph_url_img_width; ?>" />
-<meta property="og:image:height" content="<?php echo $openGraph_url_img_height; ?>" />
+<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url_secure; ?>" />-->
+<meta property="og:image" content="<?php echo $openGraph_img_url; ?>" />
+<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>" />
+<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>" />
+<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>" />
 <meta property="og:type" content="<?php echo $openGraph_type; ?>" />
 <meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>" />
-<meta property="og:locale" content="<?php echo $site_lang_locale; ?>" />
+<meta property="og:locale" content="<?php echo $openGraph_locale; ?>" />
 
 <meta property="og:type" content="video.other">
 <meta property="og:video:url" content="https://shoesbycolin.com/blue.mp4">
@@ -110,14 +111,14 @@
 <meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_title_DE; } else { echo $openGraph_title; } ?>" />
 <meta property="og:url" content="<?php echo $openGraph_url; ?>" />
 <meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_desc_DE; } else { echo $openGraph_desc; } ?>" />
-<meta property="og:image:secure_url" content="<?php echo $openGraph_url_img; ?>" />
-<meta property="og:image" content="<?php echo $openGraph_url_img; ?>" />
-<meta property="og:image:type" content="image/jpg" />
-<meta property="og:image:width" content="<?php echo $openGraph_url_img_width; ?>" />
-<meta property="og:image:height" content="<?php echo $openGraph_url_img_height; ?>" />
+<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url; ?>" />
+<meta property="og:image" content="<?php echo $openGraph_img_url; ?>" />
+<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>" />
+<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>" />
+<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>" />
 <meta property="og:type" content="<?php echo $openGraph_type; ?>" />
 <meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'de_DE'){ echo $openGraph_siteName_DE; } else { echo $openGraph_siteName; } ?>" />
-<meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo $site_lang_locale; } ?>" />
+<meta property="og:locale" content="<?php if($gettext_idioma == 'en_GB'){ echo 'en_GB'; } else if($gettext_idioma == 'de_DE'){ echo 'de_DE'; } else { echo $openGraph_locale; } ?>" />
 
 <!-- Facebook Open Graph -->
 <meta property="fb:app_id" content="123456789" />
