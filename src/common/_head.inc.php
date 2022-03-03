@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com">
+
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
 <meta http-equiv="x-dns-prefetch-control" content="off">
 <meta http-equiv="Window-Target" content="_value">
@@ -128,7 +130,7 @@
 <meta property="twitter:url" content="<?php echo $url_global_full; ?>" />
 <meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>" />
 <meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>" />
-<meta property="twitter:image" content="<?php echo $openGraph_img_url; ?>/og_img.jpg" />
+<meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>" />
 
 <!-- Pinterest -->
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
