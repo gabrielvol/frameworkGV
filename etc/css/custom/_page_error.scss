@@ -16,6 +16,16 @@
         
         a{
             text-decoration: underline;
+            
+            &, &:focus, &:hover, &:visited, &:active{}
+
+            &:focus, &:hover, &:visited, &:active{}
+
+            &, &:visited, &:active{}
+
+            &:visited, &:active{}
+
+            &:focus, &:hover{}
         }
     }
     

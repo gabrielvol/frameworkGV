@@ -405,7 +405,9 @@ button{
     
     &:focus, &:hover, &:visited, &:active{}
     
-    &:focus, &:hover{}
+    &, &:visited, &:active{}
     
     &:visited, &:active{}
+    
+    &:focus, &:hover{}
 }

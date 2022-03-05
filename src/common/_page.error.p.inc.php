@@ -1,1 +1,1 @@
-<p><?php echo _("Puede continuar navegando el sitio yendo a la"); ?> <a <?php echo $href_root; ?> class="black"><?php echo _("p&aacute;gina inicial del sitio"); ?></a>, <?php echo _("o a nuestra"); ?> <a <?php echo $href_contacto; ?> class="black"><?php echo _("p&aacute;gina de contacto"); ?></a>.</p>
+<p><?php echo _("Puede continuar navegando el sitio yendo a la"); ?> <a <?php echo $href_root; ?> ><?php echo _("p&aacute;gina inicial del sitio"); ?></a>, <?php echo _("o a nuestra"); ?> <a <?php echo $href_contacto; ?>><?php echo _("p&aacute;gina de contacto"); ?></a>.</p>
