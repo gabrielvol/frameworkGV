@@ -199,13 +199,15 @@
         
     h2{
         height: $auto;
-        font-family: $form_pop_title_ftFamily;
+        font-family: $form_pop_title_ftFamily!important;
         line-height: 1.2em!important;
+        text-transform: $none;
     }
     
     p{
         font-family: $arial;
         color: $greyXD;
+        font-size: 1rem!important;
         line-height: 1.3em;
         
         a{

@@ -98,12 +98,6 @@
     .social_wa{ // Soc WhatsApp
         a{
             background-image: url('#{$dir_env}/img/social_wa.svg');
-            
-            &.conTel{
-                background-position: left center;
-                background-size: auto 20px;
-                padding-left: 25px;
-            }
         }
     }
 

@@ -2,3 +2,8 @@
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
 .letterSpacing{letter-spacing: 0.05rem;}
+.txStrong{
+    color: $ftColour_main_global;
+    font-family: $ftFamily_bold_global;
+    font-size: 1rem;
+}
