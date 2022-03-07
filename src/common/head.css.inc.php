@@ -11,7 +11,12 @@
 */
 ?>
 
-<?php if($nav_pageCurrent == 'page_index'): /*
+<?php if($has_form == 1): /* // REF [31]
+<link href="<?php echo $dir_env; ?>/css/datepicker.css" rel="stylesheet">
+*/
+?>
+
+<?php endif; if($nav_pageCurrent == 'page_index'): /*
 <link href="<?php echo $dir_env; ?>/js/aaaaaa.css" rel="stylesheet">
 */
 ?>

@@ -93,6 +93,7 @@
 
 <?php endif; if($has_form == 1): ?>
 <script src="<?php echo $dir_env; ?>/js/scrollKeep.js"></script><?php /* // REF [25] */ ?>
+<?php /* <script src="<?php echo $dir_env; ?>/js/ui-datepicker.jQuery.js"></script> REF [31] */ ?>
 <script src="<?php echo $dir_env; ?>/js/_form.js"></script>
 
 <?php endif; if($has_lightbox == 1): /* // REF [25] */ ?>
