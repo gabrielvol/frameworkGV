@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com">
-
+<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com">-->
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
 <meta http-equiv="x-dns-prefetch-control" content="off">
 <meta http-equiv="Window-Target" content="_value">
@@ -35,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
-<base href="<?php echo $url_global; ?>" target="_self">
+<!--<base href="<?php echo $url_global; ?>" target="_self">-->
 
 <?php include('head.css.inc.php'); ?>
 
