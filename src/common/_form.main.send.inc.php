@@ -11,9 +11,9 @@ $form_status_error_globalA__formMain    = _('Hubo un error al enviar el mensaje.
 $form_status_error_globalB__formMain    = _('Intente nuevamente m&aacute;s tarde.');
 $form_status_error_globalC__formMain    = _('Puede comunicarse enviando un mensaje por correo electr&oacute;nico a') . ' <a href="'. $form_status_recipient_mailto__formMain .'" class="'. $form_status_pop_anchor_classes__formMain .'">'. $form_status_recipient__formMain .'</a>.';
 
-$form_status_pop_h2_ok_classes__formMain    = 'mbm greenSystem alignCenter';
-$form_status_pop_h2_error_classes__formMain = 'mbm errorColour alignCenter';
-$form_status_pop_anchor_classes__formMain   = 'mbm alignCenter';
+$form_status_pop_h2_ok_classes__formMain    = 'mbm greenSystem txAlignCenter';
+$form_status_pop_h2_error_classes__formMain = 'mbm errorColour txAlignCenter';
+$form_status_pop_anchor_classes__formMain   = 'mbm txAlignCenter';
 
 // $form_status__formMain = '<p class="form_status form_status_ini">'. $form_status_ini_global__formMain .'</p>';
 

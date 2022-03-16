@@ -1,9 +1,52 @@
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
-.letterSpacing{letter-spacing: 0.05rem;}
 .txStrong{
-    color: $ftColour_main_global;
     font-family: $ftFamily_bold_global;
     font-size: 1rem;
+    font-weight: inherit;
 }
+.txBold{
+    font-family: $ftFamily_bold_global;
+    font-weight: 700;
+}
+.txItalic{font-style: italic} 
+
+.txUnderline{
+    &, &:focus, &:hover, &:visited, &:active{
+        text-decoration: underline;
+    }
+}
+.txLineThrough{text-decoration: line-through}
+
+.txUpperCase{text-transform: uppercase}
+.txLowerCase{text-transform: lowercase}
+.txSmallCaps{font-variant: small-caps}
+
+.txAlignCenter{text-align: center}
+.txAlignRight{text-align: right}
+.txAlignLeft{text-align: left}
+.txAlignJustify{text-align: justify}
+.txAlignJustifyCenter{
+    text-align: justify;
+    text-align-last: center;
+}
+
+.txIndented{
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.txTruncated{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.txClampled{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.txNoSelectable{user-select: none}
+.txLetterSpacing{letter-spacing: 0.05rem}

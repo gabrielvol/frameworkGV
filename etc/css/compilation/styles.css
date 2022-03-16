@@ -50,6 +50,7 @@
 /* // Form Input ------------------------------------------------------------ */
 /* // Form Button Submit // REF [21] ---------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
+/* // Form Status ----------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Slider Activators | Custom [/etc/css/custom/act/slider_act.scss]
    ========================================================================== */
@@ -360,7 +361,8 @@
 /* // Form Label ------------------------------------------------------------ */
 /* // Form Input ------------------------------------------------------------ */
 /* // Form Button Submit // REF [21] ---------------------------------------- */
-/* // Form status message / Form validation --------------------------------- */
+/* // Form status message --------------------------------------------------- */
+/* // Form validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes_var.scss]
    ========================================================================== */
@@ -779,7 +781,7 @@ p p, p li, p a, p strong, p dl, p legend, li p, li li, li a, li strong, li dl, l
   font-size: 1em; }
 
 a {
-  transition: background-color 0.7s, color 1s, text-shadow 1s; }
+  transition: background-color 0.5s, color 1s, text-shadow 0.7s; }
   a, a:active, a:visited {
     color: #333333; }
   a:focus, a:hover {
@@ -855,6 +857,15 @@ a.greenSystem, a.greenSystem:active, a.greenSystem:visited, a.greenSystem.noHove
 
 a.greenSystem:focus, a.greenSystem:hover {
   color: #113300; }
+
+.greenWhatsApp, .greenWhatsApp b, .greenWhatsApp strong, .greenWhatsApp i, .greenWhatsApp em {
+  color: #25D366; }
+
+a.greenWhatsApp, a.greenWhatsApp:active, a.greenWhatsApp:visited, a.greenWhatsApp.noHover:focus, a.greenWhatsApp.noHover:hover {
+  color: #25D366; }
+
+a.greenWhatsApp:focus, a.greenWhatsApp:hover {
+  color: #167c3c; }
 
 .grey2XL, .grey2XL b, .grey2XL strong, .grey2XL i, .grey2XL em {
   color: #e6e6e6; }
@@ -995,87 +1006,70 @@ q {
     content: close-quote; }
 
 /* * NombreDeProyecto * ========================================================
-   Text Classes | Etc [/etc/css/scss/classes_text.scss]
+   Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
-abbr {
-  border: none !important;
-  cursor: help; }
+.txStrong {
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  font-weight: inherit; }
 
-.light {
-  font-weight: 300; }
-
-b, strong,
-.roman {
-  font-weight: 400; }
-
-.semiBold {
-  font-weight: 600; }
-
-.bold {
+.txBold {
+  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 700; }
 
-.extraBold {
-  font-weight: 800; }
-
-.heavy {
-  font-weight: 900; }
-
-.italic {
+.txItalic {
   font-style: italic; }
 
-.underline, .underline:hover {
+.txUnderline, .txUnderline:focus, .txUnderline:hover, .txUnderline:visited, .txUnderline:active {
   text-decoration: underline; }
 
-.lineThrough {
+.txLineThrough {
   text-decoration: line-through; }
 
-.upperCase {
+.txUpperCase {
   text-transform: uppercase; }
 
-.lowerCase {
+.txLowerCase {
   text-transform: lowercase; }
 
-.smallCaps {
+.txSmallCaps {
   font-variant: small-caps; }
 
-.alignCenter {
+.txAlignCenter {
   text-align: center; }
 
-.alignRight {
+.txAlignRight {
   text-align: right; }
 
-.alignLeft {
+.txAlignLeft {
   text-align: left; }
 
-.alignJustify {
+.txAlignJustify {
   text-align: justify; }
 
-.alignJustifyCenter {
+.txAlignJustifyCenter {
   text-align: justify;
   text-align-last: center; }
 
-.indentedText {
+.txIndented {
   overflow: hidden;
   text-indent: -9999px; }
 
-.truncatedText {
+.txTruncated {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap; }
 
-.clampledText {
+.txClampled {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden; }
 
-.noSelect {
+.txNoSelectable {
   user-select: none; }
 
-/* * NombreDeProyecto * ========================================================
-   Text Classes | Custom [/etc/css/custom/classes_text.scss]
-   ========================================================================== */
-.letterSpacing {
+.txLetterSpacing {
   letter-spacing: 0.05rem; }
 
 /* * NombreDeProyecto * ========================================================
@@ -1089,6 +1083,9 @@ b, strong,
 
 .bgGreenSystem {
   background-color: #339900; }
+
+.bgGreenWhatsApp {
+  background-color: #25D366; }
 
 .bgGrey2XL {
   background-color: #e6e6e6; }
@@ -1507,6 +1504,7 @@ article, article::before, article::after, details, details::before, details::aft
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Mobile Only Classes --------------------------------------------------- */
 /* // After Mobile Landscape Classes ---------------------------------------- */
+/* // After Mobile 600 Classes ---------------------------------------------- */
 /* // Mobile Landscape Only Classes ----------------------------------------- */
 /* // Before Tablet Classes ------------------------------------------------- */
 @media (max-width: 767px) {
@@ -2154,7 +2152,7 @@ button, button::before, button::after {
         }
     }
     
-    &.CTA_hollow{         
+    &.CTA_hollow{
         &, &:focus, &:hover, &:visited, &:active{
             @include borderStyle($bdWhite);
             color: $white;
@@ -2200,7 +2198,7 @@ button, button::before, button::after {
   border-radius: 50%;
   width: 35px !important;
   height: 35px !important;
-  background-size: 35%;
+  background-size: 100%;
   background-color: #fff;
   background-image: url("/stage/img/button_close.svg");
   background-repeat: no-repeat;
@@ -2213,8 +2211,7 @@ button, button::before, button::after {
 /* // Button Popup ---------------------------------------------------------- */
 .pop_global .button_pop_close {
   width: 30px !important;
-  height: 30px !important;
-  background-image: url("/stage/img/button_close.svg"); }
+  height: 30px !important; }
 
 @media (max-width: 600px) {
   .pop_global .button_pop_close {
@@ -2227,8 +2224,11 @@ button, button::before, button::after {
     right: -35px; } }
 
 .pop_warning .button_pop_close {
+  border: 1px solid #666;
   top: 10px;
   right: 10px; }
+  .pop_warning .button_pop_close:focus, .pop_warning .button_pop_close:hover {
+    border-color: #4d4d4d; }
 
 .pop_warning .button_pop_submit {
   transition: all 1s ease;
@@ -2245,11 +2245,6 @@ button, button::before, button::after {
     background-color: #e6e6e6;
     color: #000; }
 
-@media (min-width: 601px) {
-  .pop_warning .button_pop_close {
-    top: 10px;
-    right: 10px; } }
-
 .pop_formStatus .button_pop_submit {
   background-color: #fff;
   margin: 20px auto 0;
@@ -2259,24 +2254,13 @@ button, button::before, button::after {
   text-align: center;
   text-transform: uppercase; }
 
-/* // Form Button Submit // REF [21] ---------------------------------------- */
-.button_form_submit {
-  font-size: 1.2rem;
-  text-transform: uppercase; }
-  @media (min-width: 768px) {
-    .button_form_submit {
-      width: 50%;
-      margin-right: auto !important;
-      margin-left: auto !important;
-      margin-top: 30px; } }
-
 /* // Button Whatsapp ------------------------------------------------------- */
-.button_whatsapp {
+#selector .button_whatsapp_anchor {
   transition: all 1s ease;
   width: 60px;
   height: 60px;
   position: fixed;
-  z-index: 9900;
+  z-index: 7900;
   right: 10px;
   bottom: 40px;
   display: block;
@@ -2286,10 +2270,10 @@ button, button::before, button::after {
   background-repeat: no-repeat;
   background-size: calc(60px - 10px);
   background-position: center center; }
-  .button_whatsapp:focus, .button_whatsapp:hover {
+  #selector .button_whatsapp_anchor:focus, #selector .button_whatsapp_anchor:hover {
     box-shadow: 0 0 5px #3c9637;
     background-color: #3cd134; }
-    .button_whatsapp:focus::before, .button_whatsapp:hover::before {
+    #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:hover::before {
       border-radius: 15px;
       height: 40px;
       line-height: 40px;
@@ -2307,14 +2291,36 @@ button, button::before, button::after {
       text-indent: 0;
       text-align: center; }
   @media (max-width: 499px) {
-    .button_whatsapp:focus::before, .button_whatsapp:hover::before {
+    #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:hover::before {
       width: 220px; } }
   @media (max-width: 767px) {
-    .button_whatsapp.navDrawer_open::before, .button_whatsapp.navDrawer_open:focus::before, .button_whatsapp.navDrawer_open:hover::before {
+    #selector .button_whatsapp_anchor.navDrawer_open::before, #selector .button_whatsapp_anchor.navDrawer_open:focus::before, #selector .button_whatsapp_anchor.navDrawer_open:hover::before {
       display: none; } }
   @media (min-width: 500px) {
-    .button_whatsapp:focus::before, .button_whatsapp:hover::before {
+    #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:hover::before {
       width: 220px; } }
+
+#selector .button_whatsapp_nFormatted:not(:focus):not(:active) {
+  /*
+    // REF [22]
+Hide only visually, but have it available for screen readers:
+https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+    // REF [22a]
+For long content, line feeds are not interpreted as spaces and small width
+causes content to wrap 1 word per line:
+https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+  position: absolute;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap; }
 
 /* // Button Site Top // REF [18] ------------------------------------------- */
 .button_siteTop {
@@ -2444,7 +2450,18 @@ button, button::before, button::after {
   top: 10vh;
   left: 50%;
   border-radius: 6px;
-  background-color: #fff; }
+  background-color: #fff;
+  /*    
+    &::before{
+        // REF [30]
+        @include positionTRBL();
+        content: "";
+        background-color: $modal_bgColour_global;
+        position: fixed;
+        z-index: $zIndex_negative;
+        display: block;
+    }
+*/ }
   .pop_global .pop_innerContainer {
     top: 0;
     right: 0;
@@ -2551,34 +2568,25 @@ button, button::before, button::after {
   padding: 20px !important; }
   .pop_formStatus h2 {
     height: auto !important;
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
-    line-height: 1.2em !important; }
+    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif !important;
+    line-height: 1.2em !important;
+    text-transform: none !important; }
   .pop_formStatus p {
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     color: #4d4d4d;
+    font-size: 1rem !important;
     line-height: 1.3em; }
     .pop_formStatus p a {
       color: #333; }
       .pop_formStatus p a:active, .pop_formStatus p a:visited, .pop_formStatus p a:focus, .pop_formStatus p a:hover {
         color: #111; }
-  .pop_formStatus.pop_formStatus_ok h2 span {
-    position: relative; }
-    .pop_formStatus.pop_formStatus_ok h2 span::after {
-      width: 20px;
-      height: 20px;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: -25px;
-      background-image: url("/stage/img/form_ok.svg");
-      background-size: auto 95%;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-top: -10px; }
   @media (max-width: 650px) {
     .pop_formStatus h2 {
-      padding-top: 30px; } }
+      padding-top: 30px;
+      font-size: 1.6rem; } }
+  @media (min-width: 651px) {
+    .pop_formStatus h2 {
+      font-size: 2rem; } }
 
 /* * NombreDeProyecto * ========================================================
    Header Styles | Custom [/etc/css/custom/header.scss]
@@ -3014,6 +3022,26 @@ nav li:focus a, nav li:hover a {
     padding-left: 10px; } }
 
 /* * NombreDeProyecto * ========================================================
+   Page Error Styles | Custom [/etc/css/custom/page_error.scss]
+   ========================================================================== */
+.page_error {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .page_error h1 {
+    color: #666;
+    text-align: center; }
+  .page_error p {
+    color: #000;
+    text-align: center; }
+    .page_error p a {
+      text-decoration: underline; }
+  .page_error .errorType {
+    padding-bottom: 20px;
+    color: #8c8c8c;
+    font-size: 0.8rem;
+    text-transform: uppercase; }
+
+/* * NombreDeProyecto * ========================================================
    Page Index Styles | Custom [/etc/css/custom/page_index.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
@@ -3021,4 +3049,4 @@ nav li:focus a, nav li:hover a {
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Post ------------------------------------------------------------------ */
+/* // Post // REF [26] ------------------------------------------------------ */

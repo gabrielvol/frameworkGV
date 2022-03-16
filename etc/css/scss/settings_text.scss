@@ -115,7 +115,7 @@ p, li{
     }
 }
 a{
-    transition: background-color 0.7s, color 1s, text-shadow 1s;    
+    transition: background-color 0.5s, color 1s, text-shadow 0.7s;        
     &, &:active, &:visited{
         color: $ftColour_anchor_global;
     }
@@ -152,8 +152,8 @@ a.white{
         text-shadow: $txShadow_white_hover;
     }
     &.noHover{
-        &:focus, &:hover{        
-            text-shadow: 0 0 0 transparent;
+        &:focus, &:hover{
+            text-shadow: $txShadow_none;
         }
     }
 }

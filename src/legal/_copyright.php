@@ -31,17 +31,17 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
         <section class="container">
-            <h1 class="black alignCenter">Licencia</h1>
+            <h1 class="black txAlignCenter">Licencia</h1>
             <p class="nota black">El contenido de este sitio web se encuentra bajo la siguiente licencia:</p>
-            <p class="lic black alignCenter">Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)</p>
-            <p class="hDos bold black">Usted es libre de:</p>
-            <p class="black"><span class="bold">Compartir</span> — copiar y redistribuir el material en cualquier medio o formato.</p>
+            <p class="lic black txAlignCenter">Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)</p>
+            <p class="hDos txBold black">Usted es libre de:</p>
+            <p class="black"><span class="txBold">Compartir</span> — copiar y redistribuir el material en cualquier medio o formato.</p>
             <p class="nota black">La licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia</p>
-            <p class="hDos bold black">Bajo los siguientes términos:</p>
+            <p class="hDos txBold black">Bajo los siguientes términos:</p>
             <ul>
-                <li><span class="bold">Atribución</span> Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante. </li>
-                <li><span class="bold">NoComercial</span> Usted no puede hacer uso del material con propósitos comerciales. </li>
-                <li><span class="bold">SinDerivadas</span> Si remezcla, transforma o crea a partir de el material, no podrá distribuir el material modificado.</li>
+                <li><span class="txBold">Atribución</span> Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante. </li>
+                <li><span class="txBold">NoComercial</span> Usted no puede hacer uso del material con propósitos comerciales. </li>
+                <li><span class="txBold">SinDerivadas</span> Si remezcla, transforma o crea a partir de el material, no podrá distribuir el material modificado.</li>
             </ul>
             <ul class="mtl ptl">
                 <li><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es#" class="nota black">Ver Resumen</a></li>

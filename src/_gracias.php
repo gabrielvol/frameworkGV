@@ -34,8 +34,8 @@
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/form.main.send.inc.php');
     ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
-        <h1 class="alignCenter">Gracias</h1>
-        <p class="alignCenter"><?php echo $form_status_ok_globalB ?></p>
+        <h1 class="txAlignCenter">Gracias</h1>
+        <p class="txAlignCenter"><?php echo $form_status_ok_globalB ?></p>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/footer.inc.php'); ?>
 </body>

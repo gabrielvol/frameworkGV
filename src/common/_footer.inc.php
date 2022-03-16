@@ -38,7 +38,7 @@
         <ul class="horizontal clearfix containerAT">
             <li class="legal_copy">&copy; Copyright <?php echo $date_year_actual ." - ". $site_name_full; ?></li>
             <li class="legal_tos"><a href="/legal/" class="displayBlock"><?php echo _("Privacidad y Condiciones"); ?></a></li>
-            <li class="legal_studio"><?php echo _("Web Design By"); ?><a href="https://www.instagram.com/xxxxxx/" class="displayBlock alignCenterBT">Estudio De Diseño</a></li>
+            <li class="legal_studio"><?php echo _("Web Design By"); ?><a href="https://www.instagram.com/xxxxxx/" class="displayBlock txAlignCenterBT">Estudio De Diseño</a></li>
         </ul>
     </div> 
 </footer>
