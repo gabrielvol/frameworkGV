@@ -74,4 +74,11 @@ $site_name_tag_GB           = 'SiteNameTag';
 $site_desc_global           = '';
 $site_desc_global_GB        = '';
 
+
+/* // Favicon --------------------------------------------------------------- */
+$favicon_url                        = $url_wip_full;
+$favicon_color_theme                = '#ffffff';
+$favicon_color_msApplicationTile    = $favicon_color_theme;
+$favicon_color_safariPinnedTab      = $favicon_color_theme;
+
 ?>

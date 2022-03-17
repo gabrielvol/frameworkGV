@@ -33,36 +33,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
-<!--<base href="<?php echo $url_global; ?>" target="_self">-->
+<!--<base href="<?php echo $url_main_full; ?>" target="_self">-->
 
 <?php include('head.css.inc.php'); ?>
 
 <link rel="author" href="<?php echo $dir_env; ?>/humans.txt">
 
-<link rel="canonical" href="<?php echo $url_global; ?>" />
-<link rel="index" href="<?php echo $url_global; ?>">
+<link rel="canonical" href="<?php echo $url_main_full; ?>" />
+<link rel="index" href="<?php echo $url_main_full; ?>">
 
 <!-- Copyright -->
 <link rel="license" href="<?php echo $dir_env; ?>/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_AR" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=es_UY" hreflang="es">
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=en_GB" hreflang="en">
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=de_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=fr_FR" hreflang="fr">
-<link rel="alternate" href="<?php echo $url_global_full; ?>/?l=pt_BR" hreflang="pt">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=es_UY" hreflang="es">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=fr_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Prefetching, preloading, prebrowsing. More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 <!-- DNS-prefetch, notifies the client that there are assets we’ll need later from a specific URL so the browser can resolve the DNS as quickly as possible -->
-<link rel="dns-prefetch" href="<?php echo $url_global; ?>/page.php">
+<link rel="dns-prefetch" href="<?php echo $url_main_full; ?>/page.php">
 <!-- preconnect, resolve the DNS but it will also make the TCP handshake, and optional TLS negotiation -->
-<link rel="preconnect" href="<?php echo $url_global; ?>">
+<link rel="preconnect" href="<?php echo $url_main_full; ?>">
 <!-- prefetch, request a specific resource, download and store it in the cache for reference later -->
-<link rel="prefetch" href="<?php echo $url_global; ?>/image.jpg">
+<link rel="prefetch" href="<?php echo $url_main_full; ?>/image.jpg">
 <!--  prerender, preemptively load all of the assets of a certain document -->
-<link rel="prerender" href="<?php echo $url_global; ?>/page.php">
+<link rel="prerender" href="<?php echo $url_main_full; ?>/page.php">
 <!-- preload, force download an asset -->
 <link rel="preload" href="image.png" as="image">
 
@@ -78,15 +78,15 @@
 <link rel="webmention" href="http://example.com/webmention">
 
 <!-- Favicon -->
-<link rel="icon" href="<?php echo $url_local_full; ?>/favicon.ico" sizes="any">
-<link rel="icon" href="<?php echo $url_local_full; ?>/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url_local_full; ?>/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url_local_full; ?>/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $url_local_full; ?>/favicon-16x16.png">
-<link rel="manifest" href="<?php echo $url_local_full; ?>/manifest.webmanifest">
-<link rel="mask-icon" href="<?php echo $url_local_full; ?>/safari-pinned-tab.svg" color="#888888">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="<?php echo $favicon_url; ?>/favicon.ico" sizes="any">
+<link rel="icon" href="<?php echo $favicon_url; ?>/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $favicon_url; ?>/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $favicon_url; ?>/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $favicon_url; ?>/favicon-16x16.png">
+<link rel="manifest" href="<?php echo $favicon_url; ?>/manifest.webmanifest">
+<link rel="mask-icon" href="<?php echo $favicon_url; ?>/safari-pinned-tab.svg" color="<?php echo $favicon_color_safariPinnedTab; ?>">
+<meta name="msapplication-TileColor" content="<?php echo $favicon_color_msApplicationTile; ?>">
+<meta name="theme-color" content="<?php echo $favicon_color_theme; ?>">
 
 <!-- Open Graph -->
 <meta property="og:title" content="<?php echo $openGraph_title; ?>" />
@@ -125,7 +125,7 @@
 
 <!-- Twitter Card -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="<?php echo $url_global_full; ?>" />
+<meta property="twitter:url" content="<?php echo $url_main_full; ?>" />
 <meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>" />
 <meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>" />
 <meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>" />

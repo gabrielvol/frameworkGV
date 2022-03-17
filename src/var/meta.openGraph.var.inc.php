@@ -1,12 +1,12 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Meta Variables [/src/var/meta.openGraph.var.inc.php]
+   Open Graph Variables [/src/var/meta.openGraph.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
 // Variables para open graph
 //
-// #openGraph 
+// #meta #openGraph #seo
 
 
 
@@ -48,18 +48,21 @@
 
 
 /* // Open Graph meta ------------------------------------------------------- */
+
 // Título _ Max 35 char________________·_________________________________·
 //                                     123456789-123456789-123456789-12345
-// $openGraph_title_global se asigna a $openGraph_title en page_index
-// y a $openGraph_siteName
+// $openGraph_title_global se asigna a
+// $openGraph_title en page_index
+// y a $openGraph_siteName en el resto
+
     $openGraph_title_global         = $site_name_full;
 //    $openGraph_title_global_GB      = $site_name_full_GB;
 
-    $openGraph_img_url_sq           = $url_local_full .'/og_img_sq_01.jpg';
+    $openGraph_img_url_sq           = $url_wip_full .'/og_img_sq_01.jpg';
     $openGraph_img_width_sq         = '1000';
     $openGraph_img_height_sq        = '1000';
 
-    $openGraph_img_url_big          = $url_local_full .'/og_img_big_01.jpg';
+    $openGraph_img_url_big          = $url_wip_full .'/og_img_big_01.jpg';
     $openGraph_img_width_big        = '1200';
     $openGraph_img_height_big       = '630';
 
@@ -76,19 +79,19 @@ else:
 //        $openGraph_title_GB         = $site_title_GB;
 endif;
 
-        $openGraph_url                  = $url_global;
-    // Descripción _ Max 65 char___________·_______________________________________________________________·
-    //                                     123456789-123456789-123456789-123456789-123456789-123456789-12345 
-        $openGraph_desc                 = $site_desc_global;
-//        $openGraph_img_url_secure       = $openGraph_img_url_sq;
-        $openGraph_img_url              = $openGraph_img_url_sq;
-        $openGraph_img_type             = 'image/jpg';
-        $openGraph_img_width            = $openGraph_img_width_sq;
-        $openGraph_img_height           = $openGraph_img_height_sq;
-        $openGraph_type                 = 'website';
-        $openGraph_siteName             = $openGraph_title_global;
-        $openGraph_locale               = $site_lang_locale;
+    $openGraph_url                  = $url_main_full;
+// Descripción _ Max 65 char___________·_______________________________________________________________·
+//                                     123456789-123456789-123456789-123456789-123456789-123456789-12345 
+    $openGraph_desc                 = $site_desc_global;
+//    $openGraph_img_url_secure       = $openGraph_img_url_sq;
+    $openGraph_img_url              = $openGraph_img_url_sq;
+    $openGraph_img_type             = 'image/jpg';
+    $openGraph_img_width            = $openGraph_img_width_sq;
+    $openGraph_img_height           = $openGraph_img_height_sq;
+    $openGraph_type                 = 'website';
+    $openGraph_siteName             = $openGraph_title_global;
+    $openGraph_locale               = $site_lang_locale;
         
-//        $openGraph_desc_GB              = $site_desc_global_GB;
-//        $openGraph_siteName_GB          = $openGraph_title_global_GB;
+//    $openGraph_desc_GB              = $site_desc_global_GB;
+//    $openGraph_siteName_GB          = $openGraph_title_global_GB;
 ?>

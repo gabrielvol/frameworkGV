@@ -48,7 +48,8 @@
 
 
 /* // Domains --------------------------------------------------------------- */
-$domain_global      = 'sitiocomar';
-$domain_local       = $domain_global; // 'sitiocomar';
+$http_protocol      = 'https://www.';
 
+$domain_main        = 'sitiocomar';
+$domain_wip         = $domain_main; // 'sitiocomar';
 $domain_sec         = 'sitiocomar';
