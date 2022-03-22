@@ -261,7 +261,7 @@
 
     <label for="data_instagram__formMain">
         <span class="form_label_name"><?php echo _('Instagram'); ?></span>
-        <input type="text" name="data_instagram__formMain" id="data_instagram__formMain" class="instagram lowerCase <?php echo $form_validation_input_class_data_instagram__formMain; ?>" value="<?php echo $_POST['data_instagram__formMain']; ?>" placeholder="<?php echo _('Sólo escribí tu usuario'); ?>" <?php echo $form_input_autofocus_data_instagram__formMain; ?>>
+        <input type="text" name="data_instagram__formMain" id="data_instagram__formMain" class="instagram <?php echo $form_validation_input_class_data_instagram__formMain; ?>" value="<?php echo $_POST['data_instagram__formMain']; ?>" placeholder="<?php echo _('Sólo escribí tu usuario'); ?>" <?php echo $form_input_autofocus_data_instagram__formMain; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_instagram__formMain; ?>"><?php echo $form_validation_span_msg_data_instagram__formMain; ?></span>        
         <span class="form_label_msg_sugg">Te enviaremos un correo a esta casilla para confirmar tu registro.</span>
     </label>

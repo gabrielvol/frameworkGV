@@ -46,7 +46,7 @@
 
 /* // Text Fonts ------------------------------------------------------------ */
 $ftFamily_main_global:          $arial;
-$ftFamily_bold_global:          $ftFamily_main_global;
+$ftFamily_bold_global:          $ftFamily_main_global; // REF [01]
 
 
 /* // Text Colours ---------------------------------------------------------- */
@@ -60,7 +60,7 @@ $txSelection_ftColour_global:   $ftColour_main_global;
 $txSelection_bgColour_global:   $bgColour_main_global;
 
 
-/* // Espaciado general de texto -------------------------------------------- */
+/* // Espaciado y cuerpo de texto ------------------------------------------- */
 $ftWeight_global:           400;
 $lineHeight_global:         calc(1ex / 0.32);
 

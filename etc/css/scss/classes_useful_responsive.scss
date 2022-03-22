@@ -102,17 +102,17 @@
     
     @if $classes_text_act_MO == "on"{
 /*___ Text ______________________________*/
-        .indentedTextMO{text-indent: -9999px}
-        .alignLeftMO{text-align: left}
-        .alignRightMO{text-align: right}
-        .alignCenterMO{text-align: center}
-        .alignJustifyMO{text-align: justify}
-        .alignJustifyCenterMO{
+        .txIndentedMO{text-indent: -9999px}
+        .txAlignLeftMO{text-align: left}
+        .txAlignRightMO{text-align: right}
+        .txAlignCenterMO{text-align: center}
+        .txAlignJustifyMO{text-align: justify}
+        .txAlignJustifyCenterMO{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseMO{text-transform: uppercase}
-        .lowerCaseMO{text-transform: lowercase}
+        .txCaseUpperMO{text-transform: uppercase}
+        .txCaseLowerMO{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_MO == "on"{
@@ -221,17 +221,17 @@
     
     @if $classes_text_act_AML == "on"{
 /*___ Text ______________________________*/
-        .indentedTextAML{text-indent: -9999px}
-        .alignLeftAML{text-align: left}
-        .alignRightAML{text-align: right}
-        .alignCenterAML{text-align: center}
-        .alignJustifyAML{text-align: justify}
-        .alignJustifyCenterAML{
+        .txIndentedAML{text-indent: -9999px}
+        .txAlignLeftAML{text-align: left}
+        .txAlignRightAML{text-align: right}
+        .txAlignCenterAML{text-align: center}
+        .txAlignJustifyAML{text-align: justify}
+        .txAlignJustifyCenterAML{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseAML{text-transform: uppercase}
-        .lowerCaseAML{text-transform: lowercase}
+        .txCaseUpperAML{text-transform: uppercase}
+        .txCaseLowerAML{text-transform: lowercase}
     }
     
     @if $classes_bg_bd_NO_act_AML == "on"{
@@ -339,17 +339,17 @@
     
     @if $classes_text_act_A600 == "on"{
 /*___ Text ______________________________*/
-        .indentedTextA600{text-indent: -9999px}
-        .alignLeftA600{text-align: left}
-        .alignRightA600{text-align: right}
-        .alignCenterA600{text-align: center}
-        .alignJustifyA600{text-align: justify}
-        .alignJustifyCenterA600{
+        .txIndentedA600{text-indent: -9999px}
+        .txAlignLeftA600{text-align: left}
+        .txAlignRightA600{text-align: right}
+        .txAlignCenterA600{text-align: center}
+        .txAlignJustifyA600{text-align: justify}
+        .txAlignJustifyCenterA600{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseA600{text-transform: uppercase}
-        .lowerCaseA600{text-transform: lowercase}
+        .txCaseUpperA600{text-transform: uppercase}
+        .txCaseLowerA600{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_A600 == "on"{
@@ -458,17 +458,17 @@
     
     @if $classes_text_act_MLO == "on"{
 /*___ Text ______________________________*/
-        .indentedTextMLO{text-indent: -9999px}
-        .alignLeftMLO{text-align: left}
-        .alignRightMLO{text-align: right}
-        .alignCenterMLO{text-align: center}
-        .alignJustifyMLO{text-align: justify}
-        .alignJustifyCenterMLO{
+        .txIndentedMLO{text-indent: -9999px}
+        .txAlignLeftMLO{text-align: left}
+        .txAlignRightMLO{text-align: right}
+        .txAlignCenterMLO{text-align: center}
+        .txAlignJustifyMLO{text-align: justify}
+        .txAlignJustifyCenterMLO{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseMLO{text-transform: uppercase}
-        .lowerCaseMLO{text-transform: lowercase}
+        .txCaseUpperMLO{text-transform: uppercase}
+        .txCaseLowerMLO{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_MLO == "on"{
@@ -577,17 +577,17 @@
     
     @if $classes_text_act_BT == "on"{
 /*___ Text ______________________________*/
-        .indentedTextBT{text-indent: -9999px}
-        .alignLeftBT{text-align: left}
-        .alignRightBT{text-align: right}
-        .alignCenterBT{text-align: center}
-        .alignJustifyBT{text-align: justify}
-        .alignJustifyCenterBT{
+        .txIndentedBT{text-indent: -9999px}
+        .txAlignLeftBT{text-align: left}
+        .txAlignRightBT{text-align: right}
+        .txAlignCenterBT{text-align: center}
+        .txAlignJustifyBT{text-align: justify}
+        .txAlignJustifyCenterBT{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseBT{text-transform: uppercase}
-        .lowerCaseBT{text-transform: lowercase}
+        .txCaseUpperBT{text-transform: uppercase}
+        .txCaseLowerBT{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_BT == "on"{
@@ -696,17 +696,17 @@
     
     @if $classes_text_act_BTL == "on"{
 /*___ Text ______________________________*/
-        .indentedTextBTL{text-indent: -9999px}
-        .alignLeftBTL{text-align: left}
-        .alignRightBTL{text-align: right}
-        .alignCenterBTL{text-align: center}
-        .alignJustifyBTL{text-align: justify}
-        .alignJustifyCenterBTL{
+        .txIndentedBTL{text-indent: -9999px}
+        .txAlignLeftBTL{text-align: left}
+        .txAlignRightBTL{text-align: right}
+        .txAlignCenterBTL{text-align: center}
+        .txAlignJustifyBTL{text-align: justify}
+        .txAlignJustifyCenterBTL{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseBTL{text-transform: uppercase}
-        .lowerCaseBTL{text-transform: lowercase}
+        .txCaseUpperBTL{text-transform: uppercase}
+        .txCaseLowerBTL{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_BTL == "on"{
@@ -815,17 +815,17 @@
     
     @if $classes_text_act_TO == "on"{
 /*___ Text ______________________________*/
-        .indentedTextTO{text-indent: -9999px}
-        .alignLeftTO{text-align: left}
-        .alignRightTO{text-align: right}
-        .alignCenterTO{text-align: center}
-        .alignJustifyTO{text-align: justify}
-        .alignJustifyCenterTO{
+        .txIndentedTO{text-indent: -9999px}
+        .txAlignLeftTO{text-align: left}
+        .txAlignRightTO{text-align: right}
+        .txAlignCenterTO{text-align: center}
+        .txAlignJustifyTO{text-align: justify}
+        .txAlignJustifyCenterTO{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseTO{text-transform: uppercase}
-        .lowerCaseTO{text-transform: lowercase}
+        .txCaseUpperTO{text-transform: uppercase}
+        .txCaseLowerTO{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_TO == "on"{
@@ -934,17 +934,17 @@
     
     @if $classes_text_act_AT == "on"{
 /*___ Text ______________________________*/ 
-        .indentedTextAT{text-indent: -9999px}
-        .alignLeftAT{text-align: left}
-        .alignRightAT{text-align: right}
-        .alignCenterAT{text-align: center}
-        .alignJustifyAT{text-align: justify}
-        .alignJustifyCenterAT{
+        .txIndentedAT{text-indent: -9999px}
+        .txAlignLeftAT{text-align: left}
+        .txAlignRightAT{text-align: right}
+        .txAlignCenterAT{text-align: center}
+        .txAlignJustifyAT{text-align: justify}
+        .txAlignJustifyCenterAT{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseAT{text-transform: uppercase}
-        .lowerCaseAT{text-transform: lowercase}
+        .txCaseUpperAT{text-transform: uppercase}
+        .txCaseLowerAT{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_AT == "on"{
@@ -1053,17 +1053,17 @@
     
     @if $classes_text_act_ATL == "on"{
 /*___ Text ______________________________*/ 
-        .indentedTextATL{text-indent: -9999px}
-        .alignLeftATL{text-align: left}
-        .alignRightATL{text-align: right}
-        .alignCenterATL{text-align: center}
-        .alignJustifyATL{text-align: justify}
-        .alignJustifyCenterATL{
+        .txIndentedATL{text-indent: -9999px}
+        .txAlignLeftATL{text-align: left}
+        .txAlignRightATL{text-align: right}
+        .txAlignCenterATL{text-align: center}
+        .txAlignJustifyATL{text-align: justify}
+        .txAlignJustifyCenterATL{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseATL{text-transform: uppercase}
-        .lowerCaseATL{text-transform: lowercase}
+        .txCaseUpperATL{text-transform: uppercase}
+        .txCaseLowerATL{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_ATL == "on"{
@@ -1172,17 +1172,17 @@
     
     @if $classes_text_act_TLO == "on"{
 /*___ Text ______________________________*/
-        .indentedTextTLO{text-indent: -9999px}
-        .alignLeftTLO{text-align: left}
-        .alignRightTLO{text-align: right}
-        .alignCenterTLO{text-align: center}
-        .alignJustifyTLO{text-align: justify}
-        .alignJustifyCenterTLO{
+        .txIndentedTLO{text-indent: -9999px}
+        .txAlignLeftTLO{text-align: left}
+        .txAlignRightTLO{text-align: right}
+        .txAlignCenterTLO{text-align: center}
+        .txAlignJustifyTLO{text-align: justify}
+        .txAlignJustifyCenterTLO{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseTLO{text-transform: uppercase}
-        .lowerCaseTLO{text-transform: lowercase}
+        .txCaseUpperTLO{text-transform: uppercase}
+        .txCaseLowerTLO{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_TLO == "on"{
@@ -1291,17 +1291,17 @@
     
     @if $classes_text_act_TTLO == "on"{
 /*___ Text ______________________________*/
-        .indentedTextTTLO{text-indent: -9999px}
-        .alignLeftTTLO{text-align: left}
-        .alignRightTTLO{text-align: right}
-        .alignCenterTTLO{text-align: center}
-        .alignJustifyTTLO{text-align: justify}
-        .alignJustifyCenterTTLO{
+        .txIndentedTTLO{text-indent: -9999px}
+        .txAlignLeftTTLO{text-align: left}
+        .txAlignRightTTLO{text-align: right}
+        .txAlignCenterTTLO{text-align: center}
+        .txAlignJustifyTTLO{text-align: justify}
+        .txAlignJustifyCenterTTLO{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseTTLO{text-transform: uppercase}
-        .lowerCaseTTLO{text-transform: lowercase}
+        .txCaseUpperTTLO{text-transform: uppercase}
+        .txCaseLowerTTLO{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_TTLO == "on"{
@@ -1410,17 +1410,17 @@
     
     @if $classes_text_act_BD == "on"{
 /*___ Text ______________________________*/
-        .indentedTextBD{text-indent: -9999px}
-        .alignLeftBD{text-align: left}
-        .alignRightBD{text-align: right}
-        .alignCenterBD{text-align: center}
-        .alignJustifyBD{text-align: justify}
-        .alignJustifyCenterBD{
+        .txIndentedBD{text-indent: -9999px}
+        .txAlignLeftBD{text-align: left}
+        .txAlignRightBD{text-align: right}
+        .txAlignCenterBD{text-align: center}
+        .txAlignJustifyBD{text-align: justify}
+        .txAlignJustifyCenterBD{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseBD{text-transform: uppercase}
-        .lowerCaseBD{text-transform: lowercase}
+        .txCaseUpperBD{text-transform: uppercase}
+        .txCaseLowerBD{text-transform: lowercase}
     }
     
     @if $classes_bg_bd_NO_act_BD == "on"{
@@ -1529,17 +1529,17 @@
     
     @if $classes_text_act_AD == "on"{
 /*___ Text ______________________________*/
-        .indentedTextAD{text-indent: -9999px}
-        .alignLeftAD{text-align: left}
-        .alignRightAD{text-align: right}
-        .alignCenterAD{text-align: center}
-        .alignJustifyAD{text-align: justify}
-        .alignJustifyCenterAD{
+        .txIndentedAD{text-indent: -9999px}
+        .txAlignLeftAD{text-align: left}
+        .txAlignRightAD{text-align: right}
+        .txAlignCenterAD{text-align: center}
+        .txAlignJustifyAD{text-align: justify}
+        .txAlignJustifyCenterAD{
             text-align: justify;
             text-align-last: center;
         }
-        .upperCaseAD{text-transform: uppercase}
-        .lowerCaseAD{text-transform: lowercase}
+        .txCaseUpperAD{text-transform: uppercase}
+        .txCaseLowerAD{text-transform: lowercase}
     }
         
     @if $classes_bg_bd_NO_act_AD == "on"{
