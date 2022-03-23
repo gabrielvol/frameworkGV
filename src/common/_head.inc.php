@@ -33,36 +33,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
-<!--<base href="<?php echo $url_main_full; ?>" target="_self">-->
+<!--<base href="<?php echo $url_main; ?>" target="_self">-->
 
 <?php include('head.css.inc.php'); ?>
 
 <link rel="author" href="<?php echo $dir_env; ?>/humans.txt">
 
-<link rel="canonical" href="<?php echo $url_main_full; ?>" />
-<link rel="index" href="<?php echo $url_main_full; ?>">
+<link rel="canonical" href="<?php echo $url_main; ?>" />
+<link rel="index" href="<?php echo $url_main; ?>">
 
 <!-- Copyright -->
 <link rel="license" href="<?php echo $dir_env; ?>/legal/copyright.php">
 
 <!-- Idiomas -->
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=es_AR" hreflang="es">
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=es_ES" hreflang="es">
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=es_UY" hreflang="es">
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=en_GB" hreflang="en">
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=de_DE" hreflang="de">
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=fr_FR" hreflang="fr">
-<link rel="alternate" href="<?php echo $url_main_full; ?>/?l=pt_BR" hreflang="pt">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=es_AR" hreflang="es">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=es_ES" hreflang="es">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=es_UY" hreflang="es">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=en_GB" hreflang="en">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=de_DE" hreflang="de">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=fr_FR" hreflang="fr">
+<link rel="alternate" href="<?php echo $url_main; ?>/?l=pt_BR" hreflang="pt">
 
 <!-- Prefetching, preloading, prebrowsing. More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 <!-- DNS-prefetch, notifies the client that there are assets we’ll need later from a specific URL so the browser can resolve the DNS as quickly as possible -->
-<link rel="dns-prefetch" href="<?php echo $url_main_full; ?>/page.php">
+<link rel="dns-prefetch" href="<?php echo $url_main; ?>/page.php">
 <!-- preconnect, resolve the DNS but it will also make the TCP handshake, and optional TLS negotiation -->
-<link rel="preconnect" href="<?php echo $url_main_full; ?>">
+<link rel="preconnect" href="<?php echo $url_main; ?>">
 <!-- prefetch, request a specific resource, download and store it in the cache for reference later -->
-<link rel="prefetch" href="<?php echo $url_main_full; ?>/image.jpg">
+<link rel="prefetch" href="<?php echo $url_main; ?>/image.jpg">
 <!--  prerender, preemptively load all of the assets of a certain document -->
-<link rel="prerender" href="<?php echo $url_main_full; ?>/page.php">
+<link rel="prerender" href="<?php echo $url_main; ?>/page.php">
 <!-- preload, force download an asset -->
 <link rel="preload" href="image.png" as="image">
 
@@ -125,7 +125,7 @@
 
 <!-- Twitter Card -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="<?php echo $url_main_full; ?>" />
+<meta property="twitter:url" content="<?php echo $url_main; ?>" />
 <meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else { echo $openGraph_title; } ?>" />
 <meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else { echo $openGraph_desc; } ?>" />
 <meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>" />

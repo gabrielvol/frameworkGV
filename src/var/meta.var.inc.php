@@ -6,7 +6,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Variable para site lang, títulos y descripción de sitio
 //
-// #description #lang #meta #title
+// #description #lang #meta #seo #title
 
 
 
