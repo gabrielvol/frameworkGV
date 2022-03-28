@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com">-->
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com"> -->
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
-<meta http-equiv="x-dns-prefetch-control" content="off">
+<!-- <meta http-equiv="x-dns-prefetch-control" content="off"> -->
 <meta http-equiv="Window-Target" content="_value">
 <meta name="robots" content="index,follow">
 <meta name="generator" content="NetBeans IDE">
