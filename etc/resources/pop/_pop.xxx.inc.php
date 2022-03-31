@@ -1,4 +1,4 @@
-<div class="pop_global displayNone">
+<div class="pop_global pop_xxx displayNone">
     <button type="button" class="button_pop_close button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
 
@@ -28,4 +28,4 @@
     </div>
 </div>
 
-<div class="modal_global modal_video displayNone"></div>
+<div class="modal_global modal_video modal_xxx displayNone"></div>

@@ -1,30 +1,4 @@
 $(document).ready(function () {
-/* // Button Pop Open ------------------------------------------------------- */
-    $('.button_certificado').click(function () {
-        $(this).attr('aria-pressed', 'true');
-        $(this).closest('body').find('.modal_certificado').removeClass('displayNone');
-    });
-    
-    $('.button_certificado_iqnet_open').click(function () {
-        $(this).closest('body').find('.pop_certificado_iqnet').removeClass('displayNone');
-    });
-    
-    $('.button_certificado_iram_open').click(function () {
-        $(this).closest('body').find('.pop_certificado_iram').removeClass('displayNone');
-    });
-    
-    $('.pop_certificado img, .button_pop_close').click(function () {
-        $(this).closest('body').find('.button_certificado').attr('aria-pressed', 'false');
-        $(this).closest('body').find('.pop_certificado_iqnet').addClass('displayNone');
-        $(this).closest('body').find('.pop_certificado_iram').addClass('displayNone');
-        $(this).closest('body').find('.modal_certificado').addClass('displayNone');
-    });
-    
-    $('.pop_certificado img').bind('contextmenu', function(e){
-        return false;
-    });
-
-
 /* // Toggle Attribute ------------------------------------------------------ */
     var $nosAnchor = $('.nosAnchor');
     if ($nosAnchor.attr('aria-current')) {

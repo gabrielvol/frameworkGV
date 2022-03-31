@@ -19,26 +19,18 @@
     background-color: $bgGrey3XD;
 
     @include mobileOnly{
-        width: 300px;
-        height: 168px;
+        width: $pop_video_width_MO;
+        height: $pop_video_height_MO;
     }
 
     @include afterMobileLandscape{
-        width: 450px;
-        height: 250px;
+        width: $pop_video_width_AML;
+        height: $pop_video_heigth_AML;
     }
     
-/*    
-        width: 500px;
-        height: 277px;
-
-        width: 700px;
-        height: 388px;
-*/
-
     @include afterTablet{
-        width: 600px;
-        height: 330px;
+        width: $pop_video_width_AT;
+        height: $pop_video_heigth_AT;
     }
 }
 

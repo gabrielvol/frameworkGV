@@ -41,7 +41,6 @@
     background-color: $black_rgba60;
 }
 
-    
 /* // Pop General ----------------------------------------------------------- */
 .pop_global{
     box-sizing: border-box;
@@ -143,24 +142,23 @@
               
     @include mobileOnly{
         width: $pop_video_width_MO;
-        height: 168px;
+        height: $pop_video_height_MO;
         margin-left: calc(-1 * calc(#{$pop_video_width_MO} / 2));
     }
 
     @include afterMobileLandscape{
         width: $pop_video_width_AML;
-        height: 250px;
+        height: $pop_video_heigth_AML;
         margin-left: calc(-1 * calc(#{$pop_video_width_AML} / 2));
     }
     
     @include afterTablet{
         width: $pop_video_width_AT;
-        height: 330px;
+        height: $pop_video_heigth_AT;
         margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
     } 
 }
     
-
 /* // Pop Form -------------------------------------------------------------- */
 .pop_form{
     padding-right: 20px;
