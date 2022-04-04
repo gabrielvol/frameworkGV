@@ -377,14 +377,27 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
 /* // Button Video Play ----------------------------------------------------- */
 .button_pop_open_video{
     position: relative;
-
-    &::before{
-        @include transition(1s);
-        @include squareSize($button_before_icon_play_size);
-        @include centerAbsolute($button_before_icon_play_size, $button_before_icon_play_size);
+    cursor: pointer;
+    padding: 0;
+    
+    &::before,
+    &::after{
         content: "";
         display: block;
-        opacity: 0.5;
+    }
+
+    &::before{
+        @include positionTRBL();
+        @include transition(0.5s);
+        position: absolute;
+        background-color: rgba(255,255,255, 0.1);
+    }
+    
+    &::after{
+        @include transition(0.7s);
+        @include squareSize($button_before_icon_play_size);
+        @include centerAbsolute($button_before_icon_play_size, $button_before_icon_play_size);
+        opacity: 0.8;
         background-image: url('#{$dir_env}/img/icon_play.svg');
         background-position: center center;
         background-repeat: no-repeat;
@@ -393,6 +406,10 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
 
     &:focus, &:hover{
         &::before{
+            background-color: rgba(255,255,255, 0.2);
+        }
+        
+        &::after{
             opacity: 1;
         }
     }
