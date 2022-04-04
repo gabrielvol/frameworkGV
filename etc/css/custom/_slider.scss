@@ -71,10 +71,10 @@
 .slick{
     position: relative;
     overflow: hidden;
+    z-index: $zIndex_slider!important; 
     
-    &,
     .slick-slide{
-        z-index: $zIndex_slider!important; 
+        z-index: $zIndex_slider_slide!important; 
     }
 }
 
