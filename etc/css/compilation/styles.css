@@ -994,7 +994,7 @@ a, a:hover {
 a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
   color: #333333 !important; }
 
-/* // Blockquote ------------------------------------------------------------ */
+/* // Blockquote // REF [32] ------------------------------------------------ */
 blockquote {
   margin: 0; }
 
@@ -1015,7 +1015,7 @@ q {
 
 .txBold {
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
-  font-weight: 700; }
+  font-weight: 400; }
 
 .txItalic {
   font-style: italic; }
@@ -2350,10 +2350,23 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
     */ }
 
 /* // Button Video Play ----------------------------------------------------- */
-.button_video_play {
-  position: relative; }
-  .button_video_play::before {
-    transition: all 1s ease;
+.button_pop_open_video {
+  position: relative;
+  cursor: pointer;
+  padding: 0; }
+  .button_pop_open_video::before, .button_pop_open_video::after {
+    content: "";
+    display: block; }
+  .button_pop_open_video::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1); }
+  .button_pop_open_video::after {
+    transition: all 0.7s ease;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -2363,14 +2376,14 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
     height: 60px;
     margin-top: calc(-1 * calc(60px / 2));
     margin-left: calc(-1 * calc(60px / 2));
-    content: "";
-    display: block;
-    opacity: 0.5;
+    opacity: 0.8;
     background-image: url("/stage/img/icon_play.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%; }
-  .button_video_play:focus::before, .button_video_play:hover::before {
+  .button_pop_open_video:focus::before, .button_pop_open_video:hover::before {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .button_pop_open_video:focus::after, .button_pop_open_video:hover::after {
     opacity: 1; }
 
 /* // Button Section -------------------------------------------------------- */

@@ -18,11 +18,13 @@
     
     $page_url_full          = $url_construccion_full; //$url_PAGEINT_full;
     
-    $site_title             = "PaginaInterna | ". $site_name_title;
-//    $site_title_GB          = "SinTraduccion | ". $site_name_title;
+    $page_title             = "PaginaInterna | ". $site_name_title;
+//    $page_title_GB          = "SinTraduccion | ". $site_name_title_GB;
+//    $page_title_XX          = "SinTraduccion | ". $site_name_title_XX;
     
-    $site_desc              = $site_desc_global;
-//    $site_desc_GB           = $site_desc_global_GB;    
+    $page_desc              = $site_desc_global;
+//    $page_desc_GB           = $site_desc_global_GB; 
+//    $page_desc_XX           = $site_desc_global_XX;    
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/meta.openGraph.var.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/head.inc.php');

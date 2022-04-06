@@ -7,11 +7,11 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php');
        
-    $site_title         = "Error | ". $site_name_title;
-//  $site_title_GB      = "Error | ". $site_name_title;
+    $page_title         = "Error | ". $site_name_title;
+//  $page_title_GB      = "Error | ". $site_name_title_GB;
        
-    $site_desc          = $site_desc_global;
-//  $site_desc_GB       = $site_desc_global_GB;
+    $page_desc          = $site_desc_global;
+//  $page_desc_GB       = $site_desc_global_GB;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/head.inc.php');
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/gettext/locale.inc.php');

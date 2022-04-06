@@ -57,7 +57,7 @@ include('domain.var.inc.php');
 // include('date.var.inc.php');
 include('urls.var.inc.php');
     
-include('meta.var.inc.php');
+include('meta.main.var.inc.php');
 // include('address.var.inc.php');
 // include('tel.var.inc.php');
 include('email.var.inc.php');

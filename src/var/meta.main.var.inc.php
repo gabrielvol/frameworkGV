@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Meta Variables [/src/var/meta.var.inc.php]
+   Metadata Main Variables [/src/var/meta.main.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -69,10 +69,16 @@ $site_name_short_GB         = 'SiteNameShort';
 $site_name_title_GB         = 'SiteNameTitle';
 $site_name_tag_GB           = 'SiteNameTag';
 
+// $site_name_full_XX          = 'SiteNameFull'; // $site_name_full
+// $site_name_short_XX         = 'SiteNameShort'; // $site_name_short
+// $site_name_title_XX         = 'SiteNameTitle'; // $site_name_title
+// $site_name_tag_XX           = 'SiteNameTag'; // $site_name_tag
+
 
 /* // Site descriptions ----------------------------------------------------- */
 $site_desc_global           = '';
 $site_desc_global_GB        = '';
+// $site_desc_global_XX        = ''; // $site_desc_global
 
 
 /* // Favicon --------------------------------------------------------------- */
