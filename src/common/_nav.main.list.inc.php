@@ -13,8 +13,14 @@
         <?php echo _("pagina"); ?>
     </a>
 </li>
+
+<li class="nav_item_home nav_item_noLink_js">
+    <a href="<?php if($page_int == 1) { echo $url_top_hs_INICIO; } else { echo $hash_top; } ?>">
+        Inicio
+    </a>
+</li>
 <li class="nav_item-PAGINA nav_item_noLink_js">
-    <a href="<?php if($page_int == 1) { echo $url_index; } ?>#seccion">
+    <a href="<?php if($page_int == 1) { echo $url_SECCION_hs_INICIO; } else { echo $hash_SECCION; } ?>">
         <?php echo _("pagina"); ?>
     </a>
 </li>
