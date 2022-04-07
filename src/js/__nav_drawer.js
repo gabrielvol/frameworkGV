@@ -1,4 +1,4 @@
-var dir_env = '/test';
+var dir_env = '/stage';
 
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {

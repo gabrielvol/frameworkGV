@@ -33,7 +33,14 @@
             }
         }
         
-        .nav_main_ul{   
+        .nav_main_ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: flex-start;
+            align-items: flex-start; 
+            
             @if $nav_horizontalCenter_AT_act == "on"{
                 list-style: none;
                 margin-right: $auto;

@@ -9,7 +9,7 @@
         <div class="navs_container_AT displayFlexAT">
     <?php endif; ?>
         
-        <ul class="nav_main_ul navAT unstyled displayFlexAT" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+        <ul class="nav_main_ul navAT unstyled" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
             <?php include('nav.main.list.inc.php'); ?>
         </ul>
     

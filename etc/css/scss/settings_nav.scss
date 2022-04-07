@@ -86,7 +86,7 @@ nav{
         }
         
         .nav_main_ul_drawer{
-            display: none;
+            display: $none;
         }
         
         @if $nav_double_AT_act == "on"{
