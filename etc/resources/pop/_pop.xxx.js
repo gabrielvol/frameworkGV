@@ -39,3 +39,34 @@ $(document).ready(function () {
         return false;
     });
 });
+
+    
+
+/* // Pop Videos ------------------------------------------------------------ */
+$(document).ready(function () {
+    var dir_env = '/stage';
+    
+    var media__videoA_id    = 'IwxjqQHUxXI';
+    var media__videoB_id    = 'WI8epLDMqJY';
+
+    $('.button_pop_open_video').click(function () {
+        $(this).attr('aria-pressed', 'true');
+        $(this).closest('body').find('.pop_video').removeClass('displayNone');
+        $(this).closest('body').find('.modal_video').removeClass('displayNone');
+    });
+    
+    $('.button_pop_open_videoA').click(function () {
+        $(this).closest('body').find('iframe').attr("src", "https://www.youtube-nocookie.com/embed/" + media__videoA_id + "?&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;mute=1&amp;playlist=" + media__videoA_id);
+    });
+    
+    $('.button_pop_open_videoB').click(function () {
+        $(this).closest('body').find('iframe').attr("src", "https://www.youtube-nocookie.com/embed/" + media__videoB_id + "?&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;mute=1&amp;playlist=" + media__videoB_id);
+    });
+        
+    $('.modal_video, .button_pop_close').click(function () {
+        $(this).closest('body').find('.button_pop_open_video').attr('aria-pressed', 'false');        
+        $(this).closest('body').find('.pop_video').addClass('displayNone');
+        $(this).closest('body').find('iframe').attr("src", "");
+        $(this).closest('body').find('.modal_video').addClass('displayNone');
+    });
+});

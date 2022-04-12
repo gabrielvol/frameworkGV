@@ -6,10 +6,7 @@
     $nav_pageCurrent        = 'page_legal';
     $nav_pageCurrent_int    = 'page_copyright';
     
-    $has_form               = 0;
-    $has_lightbox           = 0; // REF [26]
-    $has_slider             = 0;
-//    $lang_en                = 1;
+//    $has-CUSTOMVARIABLE     = 1;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php');
     

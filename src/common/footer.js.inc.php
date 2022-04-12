@@ -103,4 +103,7 @@
 <?php endif; if($has_slider == 1): ?>
 <script src="<?php echo $dir_env; ?>/js/slick.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_slick.js"></script>
+
+<?php endif; if($has_pop_video == 1): ?>
+<script src="<?php echo $dir_env; ?>/js/_pop.video.js"></script>
 <?php endif; ?>

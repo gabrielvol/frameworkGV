@@ -15,5 +15,9 @@ endif;
 if($page_int == 1): // Internas
     include('pop.inc.php');
 endif;
+ * 
+if($has_pop_video == 1):
+    include('pop.video.inc.php');
+endif;
 */
 ?>

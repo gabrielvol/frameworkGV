@@ -9,10 +9,7 @@
     
     $page_construccion      = 0;
     $has_form               = 1;
-    $has_lightbox           = 0; // REF [26]
-    $has_slider             = 0;
 //    $has-CUSTOMVARIABLE     = 1;
-//    $lang_en                = 1;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php'); 
     
