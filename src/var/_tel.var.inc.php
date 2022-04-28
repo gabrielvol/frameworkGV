@@ -82,6 +82,20 @@ $site_tel_PHONEA_call_anchor        = '<a '. $site_tel_PHONEA_call_href .'>'. $s
     
     
         
+/* // Telephone number 0800 ------------------------------------------------- */
+ $site_tel_PHONE0800_a                  = '0800';
+ $site_tel_PHONE0800_b                  = '111';
+ $site_tel_PHONE0800_c                  = '9999';
+    
+ $site_tel_PHONE0800                    = $site_tel_PHONE0800_a . $site_tel_PHONE0800_b . $site_tel_PHONE0800_c;
+ $site_tel_PHONE0800_formatted          = $site_tel_PHONE0800_a .'-'. $site_tel_PHONE0800_b .'-'. $site_tel_PHONE0800_c;
+        
+ $site_tel_PHONE0800_call               = 'wtai://wp/mc;'. $site_tel_PHONE0800;
+ $site_tel_PHONE0800_call_href          = 'href="'. $site_tel_PHONE0800_call .'"';
+ $site_tel_PHONE0800_call_anchor        = '<a '. $site_tel_PHONE0800_call_href .'>'. $site_tel_PHONE0800_formatted .'</a>'; 
+    
+    
+        
 /* // Telephone number SECUNDARIO ------------------------------------------- */
 // $site_tel_PHONEB_a                  = '9999';
 // $site_tel_PHONEB_b                  = '9999';

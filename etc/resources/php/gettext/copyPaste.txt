@@ -94,3 +94,9 @@ class="<?php if($gettext_idioma == 'pt_BR'){ echo 'ITlang'; } else if($gettext_i
 <?php endif; if($gettext_idioma == 'es_AR'): ?>
 
 <?php endif; ?>
+
+<?php if($l == 'en_GB'): ?>
+<h2>Uruguay</h2>
+<?php else: ?>
+<h2>Uruguay</h2>
+<?php endif; ?>
