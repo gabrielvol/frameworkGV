@@ -79,17 +79,25 @@
     }
     
     @include afterMobileLandscape{
+        @if $footer_floatedContent_act_AML == "on"{ // REF [20]
+            .logo_footer_container{
+                width: $footer_logoFloated_width_AML;
+                
+                .logo_footer{
+                    width: 100%;
+                }
+            }
+            
+            .footer_txt{
+                width: calc(100% - #{$footer_logoFloated_width_AML}); 
+            }    
+        } @else {
+            .logo_footer{
 /*
-        .logo_footer_container{
-            width: $logo_width_footer_AML;
-        } 
+                width: $logo_width_footer_AML;
 */
-        
-        .logo_footer{
-/*
-            width: $logo_width_footer_AML;
-*/
-        }   
+            }        
+        }
     }
     
     @include mobileLandscapeOnly{

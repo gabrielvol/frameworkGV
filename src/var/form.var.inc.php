@@ -45,7 +45,7 @@
 
 
 /* // Form Main ------------------------------------------------------------- */   
-$form_recipient__formMain            = "tampas@gmail.com"; //$site_email_EMAILA_address;
+$form_recipient__formMain            = "tampas@gmail.com"; //$site_email_contacto_address;
 $form_recipient_CC__formMain         = $form_recipient__formMain;
 $form_recipient_BCC__formMain        = $form_recipient__formMain;
 
@@ -55,7 +55,7 @@ $form_status_recipient_mailto__formMain = 'mailto:'. $form_recipient__formMain;
 
 
 /* // Form Contacto --------------------------------------------------------- */   
-$form_recipient__formContacto            = "tampas@gmail.com"; //$site_email_EMAILA_address;
+$form_recipient__formContacto            = "tampas@gmail.com"; //$site_email_contacto_address;
 $form_recipient_CC__formContacto         = $form_recipient__formContacto;
 $form_recipient_BCC__formContacto        = $form_recipient__formContacto;
 
@@ -65,7 +65,7 @@ $form_status_recipient_mailto__formContacto = 'mailto:'. $form_recipient__formCo
 
 
 /* // Form Footer ----------------------------------------------------------- */   
-$form_recipient__formFooter            = "tampas@gmail.com"; //$site_email_ventas_address;
+$form_recipient__formFooter            = "tampas@gmail.com"; //$site_email_contacto_address;
 $form_recipient_CC__formFooter         = $form_recipient__formFooter;
 $form_recipient_BCC__formFooter        = $form_recipient__formFooter;       
 

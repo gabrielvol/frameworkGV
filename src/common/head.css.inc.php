@@ -3,7 +3,7 @@
 <link href="<?php echo $dir_env; ?>/css/styles_zh.css" rel="stylesheet">
 <?php else: ?>
 <link href="<?php echo $dir_env; ?>/css/styles.css" rel="stylesheet">
-<link href="<?php echo $dir_env; ?>/css/styles_highContrast.css" rel="alternate stylesheet" title="High Contrast">
+<?php /* <link href="<?php echo $dir_env; ?>/css/styles_highContrast.css" rel="alternate stylesheet" title="High Contrast"> */ ?>
 <?php endif; ?>
 
 <?php

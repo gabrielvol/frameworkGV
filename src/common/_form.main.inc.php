@@ -348,8 +348,8 @@
     <label for="data_area__formMain">
         <span class="form_label_name visuallyHidden"><?php echo _('Asunto'); ?></span>
         <select id="data_area__formMain" name="data_area__formMain" class="area <?php echo $form_validation_input_class_data_area__formMain; ?>" form="formID" enterkeyhint="next">
-            <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if($data_area__formMain == $site_email_EMAILA_address){ echo _('Asunto') .': '. _('Consulta'); } elseif($data_area__formMain == $site_email_EMAILB_address) {  echo _('Asunto') .': '. _('Inversi&oacute;n'); } else { echo _('Seleccione un asunto por favor'); } ?></option>
-            <option value="<?php echo $site_email_EMAILA_address; ?>" <?php if($data_area__formMain == $site_email_EMAILA_address){ echo 'class="displayNone"'; } ?>><?php echo _('Asunto'); ?>: <?php echo _('Consulta'); ?> - <?php echo $site_email_EMAILA_address ?></option>
+            <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if($data_area__formMain == $site_email_contacto_address){ echo _('Asunto') .': '. _('Consulta'); } elseif($data_area__formMain == $site_email_EMAILB_address) {  echo _('Asunto') .': '. _('Inversi&oacute;n'); } else { echo _('Seleccione un asunto por favor'); } ?></option>
+            <option value="<?php echo $site_email_contacto_address; ?>" <?php if($data_area__formMain == $site_email_contacto_address){ echo 'class="displayNone"'; } ?>><?php echo _('Asunto'); ?>: <?php echo _('Consulta'); ?> - <?php echo $site_email_contacto_address ?></option>
             <option value="<?php echo $site_email_EMAILB_address; ?>" <?php if($data_area__formMain == $site_email_EMAILB_address){ echo 'class="displayNone"'; } ?>><?php echo _('Asunto'); ?>: <?php echo _('Inversi&oacute;n'); ?> - <?php echo $site_email_EMAILB_address ?></option>
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMain; ?>"><?php echo $form_validation_span_msg_data_area__formMain; ?></span>  
@@ -359,7 +359,7 @@
         <span class="form_label_name"><?php echo _('&Aacute;rea a contactar'); ?></span>
         <select id="data_area__formMain" name="data_area__formMain" class="area <?php echo $form_validation_input_class_data_area__formMain; ?>" form="formID" enterkeyhint="next">
             <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if(isset($_POST['data_area__formMain'])) { echo $_POST['data_area__formMain']; } else { echo _('Seleccione el &aacute;rea con la que quiere contactarse'); } ?></option>
-            <option value="<?php echo $site_email_EMAILA_address ?>"><?php echo _('aaaa'); ?> - <?php echo $site_email_EMAILA_address ?></option>
+            <option value="<?php echo $site_email_contacto_address ?>"><?php echo _('aaaa'); ?> - <?php echo $site_email_contacto_address ?></option>
             <option value="<?php echo $site_email_EMAILB_address ?>"><?php echo _('bbbb'); ?> - <?php echo $site_email_EMAILB_address ?></option>
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMain; ?>"><?php echo $form_validation_span_msg_data_area__formMain; ?></span>  
