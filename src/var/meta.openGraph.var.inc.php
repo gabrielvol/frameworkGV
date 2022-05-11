@@ -85,11 +85,11 @@ endif;
     
     
 // -- Image
-    $openGraph_img_url_sq           = $url_wip_full .'/og_img_sq_01.jpg';
+    $openGraph_img_url_sq           = $url_wip_full .'/og_img_01.jpg';
     $openGraph_img_width_sq         = '1000';
     $openGraph_img_height_sq        = '1000';
 
-    $openGraph_img_url_big          = $url_wip_full .'/og_img_big_01.jpg';
+    $openGraph_img_url_big          = $url_wip_full .'/og_img_01.jpg';
     $openGraph_img_width_big        = '1200';
     $openGraph_img_height_big       = '630';
     

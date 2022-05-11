@@ -92,7 +92,7 @@
 <meta property="og:title" content="<?php echo $openGraph_title; ?>" />
 <meta property="og:url" content="<?php echo $openGraph_url; ?>" />
 <meta property="og:description" content="<?php echo $openGraph_desc; ?>" />
-<!--<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url_secure; ?>" />-->
+<?php /* <meta property="og:image:secure_url" content="<?php echo $openGraph_img_url_secure; ?>" /> */ ?>
 <meta property="og:image" content="<?php echo $openGraph_img_url; ?>" />
 <meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>" />
 <meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>" />
