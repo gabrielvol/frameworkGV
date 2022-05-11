@@ -23,9 +23,9 @@
 //    $page_title_GB          = "SinTraduccion | ". $site_name_title_GB;
 //    $page_title_XX          = "SinTraduccion | ". $site_name_title_XX;
     
-    $page_desc              = $site_desc_global;
-//    $page_desc_GB           = $site_desc_global_GB;
-//    $page_desc_XX           = $site_desc_global_XX;
+    $page_desc              = $page_desc_global;
+//    $page_desc_GB           = $page_desc_global_GB;
+//    $page_desc_XX           = $page_desc_global_XX;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/meta.openGraph.var.inc.php');     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/head.inc.php');

@@ -76,9 +76,9 @@ $site_name_tag_GB           = 'SiteNameTag';
 
 
 /* // Site descriptions ----------------------------------------------------- */
-$site_desc_global           = '';
-$site_desc_global_GB        = '';
-// $site_desc_global_XX        = ''; // $site_desc_global
+$page_desc_global           = '';
+$page_desc_global_GB        = '';
+// $page_desc_global_XX        = ''; // $page_desc_global
 
 
 /* // Favicon --------------------------------------------------------------- */

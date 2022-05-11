@@ -21,9 +21,9 @@
 //    $page_title_GB          = $site_name_full_GB;
 //    $page_title_XX          = $site_name_full_XX;
     
-    $page_desc              = $site_desc_global;
-//    $page_desc_GB           = $site_desc_global_GB;
-//    $page_desc_XX           = $site_desc_global_XX;
+    $page_desc              = $page_desc_global;
+//    $page_desc_GB           = $page_desc_global_GB;
+//    $page_desc_XX           = $page_desc_global_XX;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/meta.openGraph.var.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/head.inc.php');

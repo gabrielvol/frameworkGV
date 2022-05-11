@@ -56,9 +56,9 @@
 // Se declaran distintas variables por página
 if($nav_pageCurrent == 'page_index'):
 // Estas variables son usadas en el head `meta property og title`
-        $openGraph_title            = $openGraph_title_global;
-//        $openGraph_title_GB         = $openGraph_title_global_GB;
-//        $openGraph_title_XX         = $openGraph_title_global_XX;
+        $openGraph_title            = $site_name_full;
+//        $openGraph_title_GB         = $site_name_full_GB;
+//        $openGraph_title_XX         = $site_name_full_XX;
 
 //elseif($nav_pageCurrent == 'page_PAGEINT'):
 // Estas variables son usadas en el head `meta property og title`
@@ -78,9 +78,9 @@ endif;
 // -- Descripción _ Max 65 char___________·_______________________________________________________________·
 //                                        123456789-123456789-123456789-123456789-123456789-123456789-12345 
 // Estas variables son usadas en el head `meta property og description`
-    $openGraph_desc                 = $site_desc_global;
-//    $openGraph_desc_GB              = $site_desc_global_GB;
-//    $openGraph_desc_XX              = $site_desc_global_XX;
+    $openGraph_desc                 = $page_desc_global;
+//    $openGraph_desc_GB              = $page_desc_global_GB;
+//    $openGraph_desc_XX              = $page_desc_global_XX;
     
     
     
