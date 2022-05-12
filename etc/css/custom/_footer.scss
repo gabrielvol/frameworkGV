@@ -20,9 +20,14 @@
         }
     }
     
-    .footer_address{
+    p{
         a{
             font-size: 1em;
+        }
+    }
+    
+    .footer_address{
+        a{
             line-height: 1.2;
         }
     }
@@ -117,6 +122,28 @@
             .logo_footer{
 /*
                 width: $logo_width_footer_MLO;
+*/
+            }        
+        }
+    }
+    
+    @include afterMobile600{
+        @if $footer_floatedContent_act_A600 == "on"{ // REF [20]
+            .logo_footer_container{
+                width: $footer_logoFloated_width_A600;
+                
+                .logo_footer{
+                    width: 100%;
+                }
+            }
+            
+            .footer_txt{
+                width: calc(100% - #{$footer_logoFloated_width_A600}); 
+            }    
+        } @else {
+            .logo_footer{
+/*
+                width: $logo_width_footer_A600;
 */
             }        
         }
