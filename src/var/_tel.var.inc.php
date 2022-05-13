@@ -72,7 +72,7 @@ $site_tel_PHONEA                    = $site_tel_PHONEA_a . $site_tel_PHONEA_b;
 $site_tel_PHONEA_formatted          = $tel_prefix_formatted .' '. $site_tel_PHONEA_a .'-'. $site_tel_PHONEA_b;
 
 $site_tel_PHONEA_whatsapp           = $tel_prefix_whatsapp . $site_tel_PHONEA;
-$site_tel_PHONEA_whatsapp_formatted = '+'. $tel_code_country .' '. $tel_code_area_int . $site_tel_PHONEA_a .' '. $site_tel_PHONEA_b;
+$site_tel_PHONEA_whatsapp_formatted = '+'. $tel_code_country .' '. $tel_code_area_int .' '. $site_tel_PHONEA_a .' '. $site_tel_PHONEA_b;
 $site_tel_PHONEA_whatsapp_chatOpen  = 'https://api.whatsapp.com/send?phone='. $site_tel_PHONEA_whatsapp;
 $site_tel_PHONEA_whatsapp_WAme      = 'https://wa.me/'. $site_tel_PHONEA_whatsapp .'?text=I’m%20interested%20in%20your%20car%20for%20sale';
 
@@ -104,7 +104,7 @@ $site_tel_PHONEA_call_anchor        = '<a '. $site_tel_PHONEA_call_href .'>'. $s
 // $site_tel_PHONEB_formatted          = $tel_prefix_formatted. ' '. $site_tel_PHONEB_a. '-' .$site_tel_PHONEB_b;
     
 // $site_tel_PHONEB_whatsapp           = $tel_prefix_whatsapp . $site_tel_PHONEB;
-// $site_tel_PHONEB_whatsapp_formatted = '+'. $tel_code_country .' '. $tel_code_area_int . $site_tel_PHONEB_a .' '. $site_tel_PHONEB_b;
+// $site_tel_PHONEB_whatsapp_formatted = '+'. $tel_code_country .' '. $tel_code_area_int .' '. $site_tel_PHONEB_a .' '. $site_tel_PHONEB_b;
 // $site_tel_PHONEB_whatsapp_chatOpen  = 'https://api.whatsapp.com/send?phone='. $site_tel_PHONEB_whatsapp;
 // $site_tel_PHONEB_whatsapp_WAme      = 'https://wa.me/'. $site_tel_PHONEB_whatsapp .'?text=I’m%20interested%20in%20your%20car%20for%20sale';
         
