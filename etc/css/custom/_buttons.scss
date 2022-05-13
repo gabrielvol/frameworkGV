@@ -255,22 +255,38 @@ button{
 #selector{
     .button_whatsapp_anchor{
         @include transition(1s);
-        @include squareSize($button_whatsapp_size);
+        @include squareSize($button_whatsapp_size_square);
         position: fixed;
         z-index: $zIndex_button_whatsapp;
         right: 10px;
         bottom: 40px;
+        box-sizing: border-box;
         display: block;
+/*
+        width: $button_whatsapp_width;
+        height: $button_whatsapp_height;
+*/
         border-radius: 50%;
-        background-color: rgba(60, 209, 52, 0.85);
         background-image: url('#{$dir_env}/img/button_whatsapp.svg');
         background-repeat: no-repeat;
-        background-size: calc(#{$button_whatsapp_size} - 10px);
+        background-size: auto calc(#{$button_whatsapp_size_square} - 10px);
         background-position: center center;
+
+        &, &:focus, &:hover, &:visited, &:active{}
+
+        &, &:visited, &:active{ 
+            /*background-color: $greenWhatsApp;*/
+            background-color: rgba(37, 211, 102, 0.85);
+        }
+
+        &:focus, &:hover, &:visited, &:active{}
+
+        &:visited, &:active{}
 
         &:focus, &:hover{
             box-shadow: 0 0 5px #3c9637;
-            background-color: rgba(60, 209, 52, 1);
+            /*background-color: $greenWhatsApp_hover;*/
+            background-color: rgba(37, 211, 102, 1);
 
             &::before{
                 @include borderRadius(15px);
@@ -280,7 +296,7 @@ button{
                 box-sizing: border-box;
                 position: absolute;
                 top: 50%;
-                right: calc(#{$button_whatsapp_size} + 10px);
+                right: calc(#{$button_whatsapp_size_square} + 10px);
                 background-color: rgba(0, 0, 0, 0.7);
                 padding: 0 15px;
                 margin-top: calc(-1 * calc(#{$button_whatsapp_before_height} / 2));
@@ -316,10 +332,26 @@ button{
                 }
             }
         }
-    }
 
-    .button_whatsapp_nFormatted{
-        &:not(:focus):not(:active){
+        .button_whatsapp_nFormatted{
+/*
+            display: block;
+            height: $button_whatsapp_height;
+            font-size: 0.8rem;
+            line-height: $button_whatsapp_height;
+*/
+
+            &, &:focus, &:hover, &:visited, &:active{}
+            
+            &, &:visited, &:active{}
+
+            &:focus, &:hover, &:visited, &:active{}
+
+            &:visited, &:active{}
+
+            &:focus, &:hover{}
+            
+            &:not(:focus):not(:active){
 /*
     // REF [22]
 Hide only visually, but have it available for screen readers:
@@ -329,17 +361,18 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 For long content, line feeds are not interpreted as spaces and small width
 causes content to wrap 1 word per line:
 https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/ 
-            position: absolute;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            width: 1px;
-            height: 1px;
-            border: $zero;
-            padding: $zero;
-            margin: -1px;
-            overflow: hidden;
-            white-space: nowrap; // REF [22a]
+*/
+                position: absolute;
+                clip-path: inset(100%);
+                clip: rect(0 0 0 0);
+                width: 1px;
+                height: 1px;
+                border: $zero;
+                padding: $zero;
+                margin: -1px;
+                overflow: hidden;
+                white-space: nowrap; // REF [22a]
+            }
         }
     }
 }

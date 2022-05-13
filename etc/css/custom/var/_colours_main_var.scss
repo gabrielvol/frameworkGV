@@ -128,7 +128,8 @@ $errorColour:       map-get($colours_merged_map, errorColour);
 $greenSystem:       map-get($colours_merged_map, greenSystem);
 //$greenSystemD:      map-get($colours_merged_map, greenSystemD);
 
-$greenWhatsApp:     map-get($colours_merged_map, greenWhatsApp);
+$greenWhatsApp:         map-get($colours_merged_map, greenWhatsApp);
+$greenWhatsApp_hover:   darken($greenWhatsApp, 5%);
 
 //$grey4XL:           map-get($colours_merged_map, grey4XL);
 //$grey3XL:           map-get($colours_merged_map, grey3XL);
