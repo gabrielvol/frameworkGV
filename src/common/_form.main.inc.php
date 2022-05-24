@@ -9,6 +9,10 @@
         // echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>';               
     ?>
     
+    <?php if (!empty($form_hidden_variable__formMain)): ?>
+        <input type="hidden" name="data_form_hidden__formMain" id="data_form_hidden__formMain" value="Valor escondido"> 
+    <?php endif; ?>
+    
     <?php if(isset($form_var)): ?>
     <label for="data_opcionSeleccionada__formMain">
         <span class="form_label_opcionSeleccionada">Estoy consultando por el siguiente form_var:</span>
@@ -305,19 +309,19 @@
     <fieldset class="<?php echo $form_validation_input_class_data_newsletter__formMain; ?>">
         <legend class="form_label_name"><?php echo _('&iquest;Desea recibir el bolet&iacute;n de noticias?'); ?></legend>
 
-        <label for="radioSi__formMain" class="radio prn pll mbn">
-            <input type="radio" name="data_newsletter__formMain" id="radioSi__formMain" form="formID" value="<?php echo _('Si'); ?>" class="radio floatLeft mrs" <?php echo $form_input_autofocus_data_newsletter__formMain; ?>>
-            <span><?php echo _('Newsletter S&iacute;'); ?></span>
+        <label for="data_newsletterSi__formMain" class="radio">
+            <input type="radio" name="data_newsletter__formMain" id="data_newsletterSi__formMain" form="formID" value="<?php echo _('Si'); ?>" <?php echo $form_input_autofocus_data_newsletter__formMain; ?>>
+            <span><?php echo _('S&iacute;'); ?></span>
         </label>
 
-        <label for="radioNo__formMain" class="radio prn pll mbn">
-            <input type="radio" name="data_newsletter__formMain" id="radioNo__formMain" form="formID" value="<?php echo _('No'); ?>" class="radio floatLeft mrs">
-            <span><?php echo _('Newsletter No'); ?></span>
+        <label for="data_newsletterNo__formMain" class="radio">
+            <input type="radio" name="data_newsletter__formMain" id="data_newsletterNo__formMain" form="formID" value="<?php echo _('No'); ?>">
+            <span><?php echo _('No'); ?></span>
         </label>
 
-        <label for="radioNoSe__formMain" class="radio pan mbn">
-            <input type="radio" name="data_newsletter__formMain" id="radioNoSe" form="formID" value="<?php echo _('No Se'); ?>" class="radio floatLeft mrs">
-            <span><?php echo _('Newsletter No S&eacute;'); ?></span>
+        <label for="data_newsletterNoSe__formMain" class="radio">
+            <input type="radio" name="data_newsletter__formMain" id="data_newsletterNoSe__formMain" form="formID" value="<?php echo _('No S&eacute;'); ?>">
+            <span><?php echo _('No S&eacute;'); ?></span>
         </label>
     </fieldset>
 

@@ -197,6 +197,7 @@ $href_main_hs_INICIO       = 'href="'. $url_main_hs_INICIO .'"';
 // $href-SECCION-hs-PAGINA      = 'href="'. $url_SECCION_hs_PAGINA .'"';
 // $href-SECCION-hs-PAGINA      = 'href="'. $url_SECCION_hs_PAGINA .'"';
      
+/*___ href para hashes traducidas ________*/
     $url_main_hs_full_gettext       = $url_main . $url_main_hs_gettext;
     //$url_inicio_hs_full_gettext     = $url_main . $url_inicio_hs_gettext;
     //$url_contacto_hs_full_gettext   = $url_main . $url_contacto_hs_gettext;

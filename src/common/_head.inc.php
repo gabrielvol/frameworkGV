@@ -6,7 +6,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com"> -->
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <!-- <meta http-equiv="x-dns-prefetch-control" content="off"> -->
 <meta http-equiv="Window-Target" content="_value">
 <meta name="robots" content="index,follow">
@@ -39,7 +39,7 @@
 
 <link rel="author" href="<?php echo $dir_env; ?>/humans.txt">
 
-<link rel="canonical" href="<?php echo $url_main; ?>" />
+<link rel="canonical" href="<?php echo $url_main; ?>">
 <link rel="index" href="<?php echo $url_main; ?>">
 
 <!-- Copyright -->
@@ -89,17 +89,17 @@
 <meta name="theme-color" content="<?php echo $favicon_color_theme; ?>">
 
 <!-- Open Graph -->
-<meta property="og:title" content="<?php echo $openGraph_title; ?>" />
-<meta property="og:url" content="<?php echo $openGraph_url; ?>" />
-<meta property="og:description" content="<?php echo $openGraph_desc; ?>" />
-<?php /* <meta property="og:image:secure_url" content="<?php echo $openGraph_img_url_secure; ?>" /> */ ?>
-<meta property="og:image" content="<?php echo $openGraph_img_url; ?>" />
-<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>" />
-<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>" />
-<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>" />
-<meta property="og:type" content="<?php echo $openGraph_type; ?>" />
-<meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>" />
-<meta property="og:locale" content="<?php echo $openGraph_locale; ?>" />
+<meta property="og:title" content="<?php echo $openGraph_title; ?>">
+<meta property="og:url" content="<?php echo $openGraph_url; ?>">
+<meta property="og:description" content="<?php echo $openGraph_desc; ?>">
+<?php /* <meta property="og:image:secure_url" content="<?php echo $openGraph_img_url_secure; ?>"> */ ?>
+<meta property="og:image" content="<?php echo $openGraph_img_url; ?>">
+<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>">
+<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>">
+<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>">
+<meta property="og:type" content="<?php echo $openGraph_type; ?>">
+<meta property="og:site_name" content="<?php echo $openGraph_siteName; ?>">
+<meta property="og:locale" content="<?php echo $openGraph_locale; ?>">
 
 <meta property="og:type" content="video.other">
 <meta property="og:video:url" content="https://shoesbycolin.com/blue.mp4">
@@ -108,30 +108,30 @@
 <meta property="og:video:width" content="1280">
 <meta property="og:video:height" content="720">
 
-<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_title_XX; } else { echo $openGraph_title; } ?>" />
-<meta property="og:url" content="<?php echo $openGraph_url; ?>" />
-<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_desc_XX; } else { echo $openGraph_desc; } ?>" />
-<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url; ?>" />
-<meta property="og:image" content="<?php echo $openGraph_img_url; ?>" />
-<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>" />
-<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>" />
-<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>" />
-<meta property="og:type" content="<?php echo $openGraph_type; ?>" />
-<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_siteName_XX; } else { echo $openGraph_siteName; } ?>" />
-<meta property="og:locale" content="<?php if(isset($gettext_idioma)){ echo $gettext_idioma; } else { echo $openGraph_locale; } ?>" />
+<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_title_XX; } else { echo $openGraph_title; } ?>">
+<meta property="og:url" content="<?php echo $openGraph_url; ?>">
+<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_desc_XX; } else { echo $openGraph_desc; } ?>">
+<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url; ?>">
+<meta property="og:image" content="<?php echo $openGraph_img_url; ?>">
+<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>">
+<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>">
+<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>">
+<meta property="og:type" content="<?php echo $openGraph_type; ?>">
+<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_siteName_XX; } else { echo $openGraph_siteName; } ?>">
+<meta property="og:locale" content="<?php if(isset($gettext_idioma)){ echo $gettext_idioma; } else { echo $openGraph_locale; } ?>">
 
 <!-- Facebook Open Graph -->
-<meta property="fb:app_id" content="123456789" />
+<meta property="fb:app_id" content="123456789">
 
 <!-- Twitter Card -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="<?php echo $url_main; ?>" />
-<meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_title_XX; } else { echo $openGraph_title; } ?>" />
-<meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_desc_XX; } else { echo $openGraph_desc; } ?>" />
-<meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>" />
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="<?php echo $url_main; ?>">
+<meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_title_XX; } else { echo $openGraph_title; } ?>">
+<meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_desc_XX; } else { echo $openGraph_desc; } ?>">
+<meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>">
 
 <!-- Pinterest -->
-<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
+<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 
 <!-- Google Android -->
 <!-- Add to home screen -->
@@ -155,9 +155,7 @@
 
 <?php include('head.js.inc.php'); ?>
 
-<!-- Google Analytics -->
-<?php if(empty($dir_env)): ?>
-
+<?php if(empty($dir_env)): /* Google Analytics */ ?>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-xxxxxxxx-x']);
