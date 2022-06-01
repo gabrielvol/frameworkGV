@@ -23,7 +23,7 @@
                 
                 @if $hamburger_only_act == "on"{
                     // REF [11]
-                    @include squareSize(45px);
+                    @include squareSize(45px); // $button_hambOnly_size
                     background-position: center;
                     padding: $zero;
                     text-indent: -9999px;
