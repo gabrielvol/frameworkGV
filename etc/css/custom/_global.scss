@@ -55,7 +55,7 @@
         }
     }
     
-    @include afterTablet{        
+    @include afterTablet{       
         @if $nav_topper_act == "on"{
             min-height: 700px;        
         }

@@ -13,18 +13,22 @@
     $has_slider             = 0;
     $has_pop_video          = 0;
 //    $has-CUSTOMVARIABLE     = 0;
-//    $lang_en                = 1;
+//    $lang_GB                = 1;
        
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php');
     
     $page_url_full          = $url_PAGEINT_full;
     
     $page_title             = "PaginaInterna | ". $site_name_title;
+//    $page_title_DE          = "SinTraduccion | ". $site_name_title_DE;
 //    $page_title_GB          = "SinTraduccion | ". $site_name_title_GB;
+//    $page_title_PT          = "SinTraduccion | ". $site_name_title_PT;
 //    $page_title_XX          = "SinTraduccion | ". $site_name_title_XX;
     
     $page_desc              = $page_desc_global;
+//    $page_desc_DE           = $page_desc_global_DE;
 //    $page_desc_GB           = $page_desc_global_GB;
+//    $page_desc_PT           = $page_desc_global_PT;
 //    $page_desc_XX           = $page_desc_global_XX;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/meta.openGraph.var.inc.php');
