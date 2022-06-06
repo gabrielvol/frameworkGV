@@ -125,7 +125,7 @@
             }
         } 
         
-        @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL{
+        @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_BT;
             
             &.navDrawer_open{}
@@ -146,7 +146,7 @@
             }
         } 
         
-        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL{
+        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_BT;
             
             &.navDrawer_open{}

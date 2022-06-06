@@ -10,8 +10,9 @@ $(window).scroll(function () {
     }
 });
 
-/* // Button SiteTop // REF [18] -------------------------------------------- */
+
 $(window).scroll(function () {
+/* // Button SiteTop // REF [18] -------------------------------------------- */
     if ($(this).scrollTop() > 300) { 
         $('.button_siteTop').addClass('button_siteTop_visible');
     } else {

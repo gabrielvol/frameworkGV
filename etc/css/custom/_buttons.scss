@@ -391,11 +391,11 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
     text-indent: -9999px;
     overflow: hidden;
     
-    /* no scroll activattion
+    /* no scroll activation
     bottom: 20px;
     */
     
-    /* scroll activattion
+    /* scroll activation
     bottom: calc(-1 * calc(#{$button_siteTop_size} + 5px));
     opacity: 0;
     

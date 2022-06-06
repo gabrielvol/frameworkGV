@@ -15,7 +15,7 @@
     
     <?php if(isset($form_var)): ?>
     <label for="data_opcionSeleccionada__formMain">
-        <span class="form_label_opcionSeleccionada">Estoy consultando por el siguiente form_var:</span>
+        <span class="form_label_name">Estoy consultando por el siguiente form_var:</span>
         <input type="text" name="data_opcionSeleccionada__formMain" id="data_opcionSeleccionada__formMain" class="opcionSeleccionada" value="<?php echo $form_var; ?>" readonly>
     </label>
     <?php endif; ?>
