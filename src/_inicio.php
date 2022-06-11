@@ -1,6 +1,7 @@
 <?php
     $dir_env = '/stage';
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/gettext/languageCheck.inc.php');
+    $page_var               = $_GET['page_var']; 
     
     $nav_pageCurrent        = 'page_index';
     $nav_pageCurrent_int    = 'page_inicio';
