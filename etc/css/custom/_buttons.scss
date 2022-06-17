@@ -291,7 +291,6 @@ button{
             &::before{
                 @include borderRadius(15px);
                 @include equalHeightAndLineHeight($button_whatsapp_before_height);
-                content: "Abre un chat.";
                 display: block;
                 box-sizing: border-box;
                 position: absolute;
@@ -304,6 +303,39 @@ button{
                 font-size: 0.8rem;
                 text-indent: 0;
                 text-align: center;
+            }
+        }
+                    
+        // REF [33]
+        &.lang_AR{
+            &:focus, &:hover{
+                &::before{
+                    content: "Chat con SiteName.";
+                }
+            }
+        }
+
+        &.lang_BR{
+            &:focus, &:hover{
+                &::before{
+                    content: "Converse com o SiteName.";
+                }
+            }
+        }
+
+        &.lang_DE{
+            &:focus, &:hover{
+                &::before{
+                    content: "Chatten Sie mit SiteName.";
+                }
+            }
+        }
+
+        &.lang_GB{
+            &:focus, &:hover{
+                &::before{
+                    content: "Chat with SiteName.";
+                }
             }
         }
 

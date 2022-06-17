@@ -412,14 +412,23 @@ form{
                 font-weight: $form_label_ftWeight;
             }
         }
-
-        .form_validation_span{
-            display: none;
-            color: $form_span_invalid_ftColour; // REF [16]
+        
+        .form_validation_span,        
+        .form_label_msg_sugg{
             font-family: $form_span_invalid_ftFamily;
             font-weight: 400;            
             font-size: 0.8rem!important;
             line-height: $form_span_validation_tooltip_lineHeight;
+        }
+       
+        .form_label_msg_sugg{
+            display: block;
+            padding-left: 10px;
+        }
+
+        .form_validation_span{
+            display: none;
+            color: $form_span_invalid_ftColour; // REF [16]
             
             @if $form_span_invalid_tooltip_act == "on"{ // REF [16]
                 @include borderStyle($form_span_invalid_tooltip_bdColour);
@@ -472,12 +481,6 @@ form{
             &.form_validation_span_active{
                 display: block;
             }
-        }
-        
-        .form_label_msg_sugg{
-            display: block;
-            padding-left: 10px;
-            font-size: 0.75rem;
         }
         
         @include beforeMobile600{
