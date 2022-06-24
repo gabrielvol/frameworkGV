@@ -72,7 +72,8 @@ $nav_list_ul_width_BT:          200px;
 
     
 /* // Nav Drawer ------------------------------------------------------------ */
+$nav_drawer_R:                  0;
 $nav_drawer_width:              70vw;
-$nav_drawer_width_max:          300px;
+$nav_drawer_width_max:          calc(100% - #{$button_hamb_close_size} - #{$nav_drawer_R});
 $nav_drawer_width_final:        calc(#{$nav_drawer_width} - 5px);
 $nav_drawer_bdWidth:            3px;

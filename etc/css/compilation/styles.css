@@ -213,6 +213,18 @@
 /* // Espaciado y cuerpo de texto ------------------------------------------- */
 /* // Headings -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Button Hambuger Sizes ------------------------------------------------- */
+/*___ Button Hambuger Sizes Accordion ___*/
+/* // Button Hambuger Colours ----------------------------------------------- */
+/*___ Font ______________________________*/
+/*___ Backgrounds _______________________*/
+/*___ Borders ___________________________*/
+/* // Button Hambuger Font -------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
    Logo Sizes Variables | Custom [/etc/css/custom/var/logo_sizes_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -267,18 +279,6 @@
 /* // Nav Sizes ------------------------------------------------------------- */
 /* // Nav List -------------------------------------------------------------- */
 /* // Nav Drawer ------------------------------------------------------------ */
-/* * NombreDeProyecto * ========================================================
-   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Button Hambuger Sizes ------------------------------------------------- */
-/*___ Button Hambuger Sizes Accordion ___*/
-/* // Button Hambuger Colours ----------------------------------------------- */
-/*___ Font ______________________________*/
-/*___ Backgrounds _______________________*/
-/*___ Borders ___________________________*/
-/* // Button Hambuger Font -------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Language Variables | Custom [/etc/css/custom/var/nav_language_var.scss]
    ========================================================================== */
@@ -1008,11 +1008,6 @@ q {
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
-.txStrong {
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
-  font-size: 1rem;
-  font-weight: inherit; }
-
 .txBold {
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400; }
@@ -2285,7 +2280,6 @@ button, button::before, button::after {
       border-radius: 15px;
       height: 40px;
       line-height: 40px;
-      content: "Abre un chat.";
       display: block;
       box-sizing: border-box;
       position: absolute;
@@ -2298,6 +2292,14 @@ button, button::before, button::after {
       font-size: 0.8rem;
       text-indent: 0;
       text-align: center; }
+  #selector .button_whatsapp_anchor.lang_AR:focus::before, #selector .button_whatsapp_anchor.lang_AR:hover::before {
+    content: "Chat con SiteName."; }
+  #selector .button_whatsapp_anchor.lang_BR:focus::before, #selector .button_whatsapp_anchor.lang_BR:hover::before {
+    content: "Converse com o SiteName."; }
+  #selector .button_whatsapp_anchor.lang_DE:focus::before, #selector .button_whatsapp_anchor.lang_DE:hover::before {
+    content: "Chatten Sie mit SiteName."; }
+  #selector .button_whatsapp_anchor.lang_GB:focus::before, #selector .button_whatsapp_anchor.lang_GB:hover::before {
+    content: "Chat with SiteName."; }
   @media (max-width: 499px) {
     #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:hover::before {
       width: 220px; } }
@@ -3036,21 +3038,22 @@ form {
     padding-left: 7px;
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     font-size: 1.1rem !important; }
-  form .form_validation_span {
-    display: none;
-    color: #eb1c24;
+  form .form_validation_span,
+  form .form_label_msg_sugg {
     font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
     font-weight: 400;
     font-size: 0.8rem !important;
-    line-height: 1.2em;
+    line-height: 1.2em; }
+  form .form_label_msg_sugg {
+    display: block;
+    padding-left: 10px; }
+  form .form_validation_span {
+    display: none;
+    color: #eb1c24;
     padding-top: 3px;
     padding-left: 10px; }
     form .form_validation_span.form_validation_span_active {
       display: block; }
-  form .form_label_msg_sugg {
-    display: block;
-    padding-left: 10px;
-    font-size: 0.75rem; }
   @media (max-width: 600px) {
     form .form_label_name.form_label_long {
       height: auto;
@@ -3324,16 +3327,13 @@ form {
             }
         } 
         
-        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL{
+        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_BT;
             
             &.navDrawer_open{}
         }   
     }
 */ }
-  @media (max-width: 767px) {
-    #header {
-      height: 104px; } }
 
 #header {
   box-sizing: border-box;
@@ -3378,7 +3378,7 @@ form {
         top: 0;
         left: 0;
         width: calc(70vw - 5px);
-        max-width: 300px;
+        max-width: calc(100% - 40px - 0);
         height: calc(50px + 50px + 10px);
         background-color: #fff;
         padding-top: 50px;
@@ -3578,7 +3578,7 @@ nav li:focus a, nav li:hover a {
     z-index: 9800;
     left: calc(-1 * 70vw);
     width: calc(70vw - 5px);
-    max-width: 300px;
+    max-width: calc(100% - 40px - 0);
     background-color: #fff;
     padding-right: 5px;
     padding-left: 5px;

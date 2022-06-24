@@ -94,7 +94,7 @@
                     box-sizing: border-box;
                     background-color: $nav_language_ul_bgColour_clicked;
                     width: calc(#{$nav_drawer_width_final} - #{$nav_drawer_bdWidth});
-                    max-width: calc(#{$nav_drawer_width_max} - #{$nav_drawer_bdWidth});
+                    max-width: calc(100% - #{$nav_drawer_bdWidth});
                     height: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_height_clicked_PT} + #{$nav_language_ul_height_clicked_PB});
                     padding-top: $nav_language_ul_height_clicked_PT;
                     padding-bottom: $nav_language_ul_height_clicked_PB;

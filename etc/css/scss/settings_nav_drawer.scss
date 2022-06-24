@@ -97,8 +97,7 @@
                     position: relative;
                     top: 0;
                     right: $nav_drawer_width;
-                    width: calc(100%);
-                    max-width: $nav_drawer_width_max;
+                    width: 100%;
                     
                     a,
                     .nav_TLI{
