@@ -26,6 +26,7 @@
 //
 //
 // 02 _ Slider Arrows Carrusel
+// REF [34]
 // Activa los if que se encuentran en 
 // `[/etc/css/custom/slider.scss]`, y
 // `[/etc/css/custom/slider_arrows_imp.scss]`.
@@ -93,7 +94,7 @@
 
 /* // Arrows ---------------------------------------------------------------- */
 $slider_arrows_act:             off;
-$slider_arrows_carousel_act:    off; //Si este es ON, $slider_arrows_act tambien debe ser ON
+$slider_arrows_carousel_act:    off; // REF [34] Si este es ON, $slider_arrows_act tambien debe ser ON
 
 /* // Dots / Pagination ----------------------------------------------------- */
 $slider_dots_act:               off;

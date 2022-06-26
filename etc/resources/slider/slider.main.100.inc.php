@@ -107,6 +107,8 @@
         $slider_main_item_088     = '088';
         $slider_main_item_089     = '089';
         $slider_main_item_090     = '090';
+        /*
+        */
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/slider.header.inc.php');
 ?>                

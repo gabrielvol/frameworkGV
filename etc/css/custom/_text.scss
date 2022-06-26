@@ -84,6 +84,18 @@ a[href^=tel]{
 /* // Blockquote // REF [32] ------------------------------------------------ */
 blockquote{
     margin: 0;
+    
+    p{
+        quotes: "“" "”" "«" "»";
+
+        &:first-child::before {
+            content: open-quote;
+        }
+
+        &:last-child::after {
+            content: close-quote;
+        }
+    }
 }
 
 q{

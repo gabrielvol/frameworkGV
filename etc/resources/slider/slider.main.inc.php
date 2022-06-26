@@ -35,6 +35,8 @@
         $slider_main_item_18  = '18';
         $slider_main_item_19  = '19';
         $slider_main_item_20  = '20';
+        /*
+        */
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/slider.header.inc.php');
 ?>                

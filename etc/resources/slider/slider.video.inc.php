@@ -21,6 +21,8 @@
     $slider_video_item_18 = '18';
     $slider_video_item_19 = '19';
     $slider_video_item_20 = '20';
+        /*
+        */
 
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/slider.video.inc.php');
 ?>    
