@@ -88,11 +88,11 @@ blockquote{
     p{
         quotes: "“" "”" "«" "»";
 
-        &:first-child::before {
+        &:first-child::before{
             content: open-quote;
         }
 
-        &:last-child::after {
+        &:last-child::after{
             content: close-quote;
         }
     }
@@ -101,11 +101,11 @@ blockquote{
 q{
     quotes: "“" "”" "«" "»";
     
-    &::before {
+    &::before{
         content: open-quote;
     }
     
-    &::after {
+    &::after{
         content: close-quote;
     }
 }
