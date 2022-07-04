@@ -48,6 +48,12 @@
 $var_file_titulo_principal      = "Proyecto-";
 $var_file_seccion_SECTION       = "Seccion-";
 
+// Sin variables de proyecto o sección
+// $file_titulo___pdf_01    = 'titulodelarchivo';
+// $file_href_____pdf_01    = 'href="'. $dir_env .'/files/'. $file_titulo___pdf_01 .'"';
+// $file_download_pdf_01    = 'download="'. $file_titulo___pdf_01 .'"';    
+// $file__________pdf_01    = $file_href_____pdf_01 .' '. $file_download_pdf_01;
+
 // ConSECTION
 // $file_href_____pdf_01    = 'href="'. $dir_env .'/files/archivopdf01.pdf"';
 // $file_download_pdf_01    = 'download="'. $var_file_titulo_principal . $var_file_seccion_SECTION .'titulo.pdf"';    
