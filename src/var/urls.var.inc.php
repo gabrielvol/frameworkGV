@@ -152,9 +152,9 @@ $url_contacto_full      = $url_main . $url_contacto;
 //$url_gracias_full       = $url_main . $url_gracias;
 //$url_construccion_full  = $url_main . $url_construccion;
 //$url_copyright_full     = $url_main . $url_copyright;
-// $url-PAGINA-full        = $url_main . $url_PAGINA;
-// $url-PAGINA-full        = $url_main . $url_PAGINA;
-// $url-PAGINA-full        = $url_main . $url_PAGINA;
+// $url-PAGINAfull         = $url_main . $url_PAGINA;
+// $url-PAGINAfull         = $url_main . $url_PAGINA;
+// $url-PAGINAfull         = $url_main . $url_PAGINA;
 
 /*___ full urls para hashes traducidas ___*/
     //$url_inicio_hs_INICIO_full_gettext    = $url_main . $url_inicio . $hash_inicio_gettext;
