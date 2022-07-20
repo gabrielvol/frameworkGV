@@ -42,6 +42,7 @@
             align-items: flex-start; 
             
             @if $nav_horizontalCenter_AT_act == "on"{
+                justify-content: center;
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;

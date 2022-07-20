@@ -30,7 +30,8 @@ fieldset, label, input, select, textarea, button,
         }
         
         @include mobileOnly{
-            width: $form_label_width_MO;           
+            width: $hundred;
+            max-width: $form_label_width_MO;          
         }
     }
     
@@ -298,7 +299,8 @@ form{
     
     .mobileForm &{
         @include mobileOnly{
-            width: $form_width_MO;            
+            width: 90%;
+            max-width: $form_width_MO;            
         }
         
         @include afterMobileLandscape{
