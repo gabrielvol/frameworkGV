@@ -2,6 +2,34 @@
    Nav Drawer Styles | Custom [/etc/css/custom/nav_drawer.scss]
    ========================================================================== */
 @if $nav_drawer_act == "on"{
+    @include beforeMobile350{
+        .nav_main{
+            .nav_main_ul{ 
+                li{
+                    a,
+                    .nav_TLI{
+                        padding-left: 10px;
+                        font-size: 0.85rem;
+                    }    
+                }
+            }
+        }
+    }
+    
+    @include mobile350Only_navBT{
+        .nav_main{
+            .nav_main_ul{ 
+                li{
+                    a,
+                    .nav_TLI{
+                        padding-left: 20px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
     @include navBT{// REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         .nav_main{
             @include positionTR(0, $nav_drawer_R); 
@@ -70,8 +98,6 @@
                     a,
                     .nav_TLI{
                         display: block;
-                        padding-left: 20px;
-                        font-size: 1rem;
                     }    
                 }
             

@@ -75,6 +75,22 @@
     @media (min-width: #{$mq_nav_AT}){@content;}}
     
     
+/* // Mobile 350------------------------------------------------------------- */
+@mixin beforeMobile350{
+    @media (max-width: 350px){@content;}}
+
+@mixin afterMobile350{
+    @media (min-width: 351px){@content;}}
+    
+@mixin mobile350Only{ // 500px 766px
+    @media (min-width: 351px)
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+    
+@mixin mobile350Only_navBT{ // 500px navBT
+    @media (min-width: 351px)
+        and (max-width: #{$mq_nav_BT}){@content;}}
+    
+    
 /* // Mobile ---------------------------------------------------------------- */
 @mixin mobileOnly{ // 499px
     @media (max-width: #{$mq_mobile_ancho_max}){@content;}}
