@@ -54,16 +54,22 @@
 <link rel="alternate" href="<?php echo $url_main; ?>/?l=fr_FR" hreflang="fr">
 <link rel="alternate" href="<?php echo $url_main; ?>/?l=pt_BR" hreflang="pt">
 
-<!-- Prefetching, preloading, prebrowsing. More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
-<!-- DNS-prefetch, notifies the client that there are assets we’ll need later from a specific URL so the browser can resolve the DNS as quickly as possible -->
+<?php /*
+Prefetching, preloading, prebrowsing. More info: https://css-tricks.com/prefetching-preloading-prebrowsing/
+DNS-prefetch, notifies the client that there are assets we’ll need later from a specific URL so the browser can resolve the DNS as quickly as possible
+*/ ?>
 <link rel="dns-prefetch" href="<?php echo $url_main; ?>/page.php">
-<!-- preconnect, resolve the DNS but it will also make the TCP handshake, and optional TLS negotiation -->
+
+<?php /* preconnect, resolve the DNS but it will also make the TCP handshake, and optional TLS negotiation */ ?>
 <link rel="preconnect" href="<?php echo $url_main; ?>">
-<!-- prefetch, request a specific resource, download and store it in the cache for reference later -->
+
+<?php /* prefetch, request a specific resource, download and store it in the cache for reference later */ ?>
 <link rel="prefetch" href="<?php echo $url_main; ?>/image.jpg">
-<!--  prerender, preemptively load all of the assets of a certain document -->
+
+<?php /*  prerender, preemptively load all of the assets of a certain document */ ?>
 <link rel="prerender" href="<?php echo $url_main; ?>/page.php">
-<!-- preload, force download an asset -->
+
+<?php /* preload, force download an asset */ ?>
 <link rel="preload" href="image.png" as="image">
 
 <!-- Información personal -->

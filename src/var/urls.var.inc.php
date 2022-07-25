@@ -142,6 +142,10 @@ $url_main_full          = $url_main . $dir_env;
 $url_wip                = $http_protocol . $domain_wip;
 $url_wip_full           = $url_wip . $dir_env;
 
+$url_sec                = 'http://www.' . $domain_sec;
+
+$url_custom             = 'http://www.' . $domain_custom;
+
 
 // Los vínculos que tienen un hash creado deben ser comentados en la siguiente
 // lista
