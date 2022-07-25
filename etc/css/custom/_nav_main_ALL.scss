@@ -1,0 +1,27 @@
+/* * NombreDeProyecto * ========================================================
+   Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
+   ========================================================================== */
+.nav_main_ul{
+    li{
+        a,
+        .nav_TLI{
+            /*
+            text-transform: uppercase;
+            */
+        }    
+    }
+}
+        
+.nav_item_xxx{
+    a{
+        &, &:focus, &:hover, &:visited, &:active{}
+
+        &:focus, &:hover, &:visited, &:active{}
+
+        &, &:visited, &:active{}
+
+        &:visited, &:active{}
+
+        &:focus, &:hover{}
+    }
+}

@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav After Tablet Styles | Custom [/etc/css/custom/nav_AT.scss]
+   Nav Main After Tablet Styles | Custom [/etc/css/custom/nav_main_AT.scss]
    ========================================================================== */
 .nav_main{
     @include navAT{// REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
@@ -116,7 +116,19 @@
             & + li{}
         }
         
-        .nav_item_contacto{}
+        .nav_item_xxx{
+            a{
+                &, &:focus, &:hover, &:visited, &:active{}
+
+                &:focus, &:hover, &:visited, &:active{}
+
+                &, &:visited, &:active{}
+
+                &:visited, &:active{}
+
+                &:focus, &:hover{}
+            }
+        }
         
         @if $nav_hasSub_act == "on"{
             .nav_subNav{       

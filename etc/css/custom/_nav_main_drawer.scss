@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav Drawer Styles | Custom [/etc/css/custom/nav_drawer.scss]
+   Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
    ========================================================================== */
 @if $nav_drawer_act == "on"{
     @include beforeMobile350{
@@ -82,6 +82,20 @@
                 padding: $zero;
                 text-indent: -9999px;
                 overflow: hidden;
+            }
+        
+            .nav_item_xxx{
+                a{
+                    &, &:focus, &:hover, &:visited, &:active{}
+
+                    &:focus, &:hover, &:visited, &:active{}
+
+                    &, &:visited, &:active{}
+
+                    &:visited, &:active{}
+
+                    &:focus, &:hover{}
+                }
             }
 
             .nav_main_ul{

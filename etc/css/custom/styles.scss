@@ -155,10 +155,11 @@
 @import "../scss/settings_nav";
 @import "../scss/settings_nav_drawer";
 @import "../scss/settings_nav_accordion";
-@import "nav_drawer";
-@import "nav_accordion";
-@import "nav_list";
-@import "nav_AT";
+@import "nav_main_drawer";
+@import "nav_main_accordion";
+@import "nav_main_list";
+@import "nav_main_AT";
+@import "nav_main_ALL";
 //@import "nav_language";
 
 //@import "slider";

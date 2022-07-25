@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav List Styles | Custom [/etc/css/custom/nav_list.scss]
+   Nav Main List Styles | Custom [/etc/css/custom/nav_main_list.scss]
    ========================================================================== */
 @if $nav_list_act == "on"{
     @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`

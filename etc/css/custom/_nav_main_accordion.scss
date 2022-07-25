@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav Accordion Styles | Custom [/etc/css/custom/nav_accordion.scss]
+   Nav Main Accordion Styles | Custom [/etc/css/custom/nav_main_accordion.scss]
    ========================================================================== */
 @if $nav_accordion_act == "on"{
     @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
