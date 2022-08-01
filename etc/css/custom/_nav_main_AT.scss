@@ -428,6 +428,16 @@
             width: calc(100% - #{$logo_width_AD});
         }
         
+        .nav_main_ul{
+            li{
+                &,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_height_AD);
+                }
+            }
+        }
+        
         .nav_item_current{
             a,
             .nav_TLI{
