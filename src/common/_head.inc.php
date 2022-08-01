@@ -12,7 +12,7 @@
 <meta name="robots" content="index,follow">
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
-<meta name="referrer" content="no-referrer">
+<!-- <meta name="referrer" content="no-referrer"> -->
 <meta name="geo.region" content="<?php echo $site_lang_code_country; ?>">
 
 <!-- Google No Translate -->
@@ -89,7 +89,7 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $favicon_url; ?>/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $favicon_url; ?>/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $favicon_url; ?>/favicon-16x16.png">
-<link rel="manifest" href="<?php echo $favicon_url; ?>/manifest.webmanifest">
+<link rel="manifest" href="<?php echo $favicon_url; ?>/manifest.webmanifest" crossorigin="use-credentials">
 <link rel="mask-icon" href="<?php echo $favicon_url; ?>/safari-pinned-tab.svg" color="<?php echo $favicon_color_safariPinnedTab; ?>">
 <meta name="msapplication-TileColor" content="<?php echo $favicon_color_msApplicationTile; ?>">
 <meta name="theme-color" content="<?php echo $favicon_color_theme; ?>">
