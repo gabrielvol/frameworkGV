@@ -43,6 +43,22 @@
         }
     }
     
+    @include beforeMobile350{      
+        .logo_header{
+/*
+            width: $logo_width_B350;
+*/         
+        }
+    }
+    
+    @include afterMobile350{        
+        .logo_header{
+/*
+            width: $logo_width_A350;
+*/         
+        }
+    }
+    
     @include mobileOnly{
         .logo_header{
 /*

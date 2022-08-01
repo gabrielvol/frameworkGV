@@ -2,6 +2,10 @@
    Media Queries Placeholders | Custom [/etc/css/custom/mediaQueries_placeholders.scss]
    ========================================================================== */
 
+    @include beforeMobile350{}
+    
+    @include afterMobile350{}
+    
     @include mobileOnly{}
     
     @include afterMobileLandscape{}  
@@ -29,6 +33,14 @@
     @include afterMobileLandscape{}
     
     @include mobileLandscapeOnly{}
+    
+    
+    
+    @include beforeMobile350{}
+    
+    @include afterMobile350{}
+    
+    @include mobile350Only{}
     
 
     
