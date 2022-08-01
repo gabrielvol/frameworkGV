@@ -255,12 +255,12 @@
 @mixin beforeDesktop{ // 1199px
     @media (max-width: #{$mq_tablet_ancho_max}){@content;}}
     
-@mixin afterDesktop{ // 1200px
+@mixin afterDesktop{ // 1200px // REF [35]
     @media (min-width: #{$mq_desktop_ancho_min}){@content;}}
 
     
 /* // Desktop Large + ------------------------------------------------------- */
-@mixin afterDesktopLarge{ // 1600px
+@mixin afterDesktopLarge{ // 1600px // REF [35]
     @media (min-width: #{$mq_desktopLarge_ancho_min}){@content;}}
     
 
