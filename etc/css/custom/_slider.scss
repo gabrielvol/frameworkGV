@@ -9,7 +9,7 @@
     img{
         display: block;
         width: 100%;
-        background-color: $slider_img_bgColour;
+        background-color: $slider_img_bgColour_global;
     }
     
     &,
@@ -31,9 +31,19 @@
                 overflow: hidden;
             }
         
-            @include beforeTablet{
-                padding-right: $carousel_PH_BT;
-                padding-left: $carousel_PH_BT;
+            @include beforeMobile350{
+                padding-right: $carousel_PH_B350;
+                padding-left: $carousel_PH_B350;
+            }
+        
+            @include afterMobile350{
+                padding-right: $carousel_PH_A350;
+                padding-left: $carousel_PH_A350;
+            }
+        
+            @include afterMobileLandscape{
+                padding-right: $carousel_PH_AML;
+                padding-left: $carousel_PH_AML;
             }
         
             @include afterTablet{

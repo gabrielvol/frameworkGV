@@ -124,30 +124,64 @@
             background-image: url('#{$dir_env}/img/button_carousel_right.svg');
         }
         
-        @include beforeTablet{
+        @include beforeMobile350{
             .slickPrev{
-                left: calc(#{$slider_arrows_width_BT} / 4);
+                left: 0;
             }
 
             .slickNext{
-                right: calc(#{$slider_arrows_width_BT} / 4);
+                right: 0;
             }
             
             .slickPrev,
             .slickNext{
-                width: $carousel_arrows_width_BT;
-                height: $carousel_arrows_height_BT;
-                margin-top: calc(-1 * #{$carousel_arrows_height_half_BT});  
+                width: $carousel_arrows_width_B350;
+                height: $carousel_arrows_height_B350;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_B350});  
+            }
+        }
+        
+        @include afterMobile350{
+            .slickPrev{
+                left: calc(#{$carousel_arrows_width_A350} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$carousel_arrows_width_A350} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_A350;
+                height: $carousel_arrows_height_A350;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_A350});  
+            }
+        }
+        
+        @include afterMobileLandscape{
+            .slickPrev{
+                left: calc(#{$carousel_arrows_width_AML} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$carousel_arrows_width_AML} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_AML;
+                height: $carousel_arrows_height_AML;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_AML});  
             }
         }
         
         @include afterTablet{
             .slickPrev{
-                left: calc(#{$slider_arrows_width_AT} / 4);
+                left: calc(#{$carousel_arrows_width_AT} / 4);
             }
 
             .slickNext{
-                right: calc(#{$slider_arrows_width_AT} / 4);
+                right: calc(#{$carousel_arrows_width_AT} / 4);
             }
             
             .slickPrev,
@@ -160,11 +194,11 @@
         
         @include afterTabletLandscape{
             .slickPrev{
-                left: calc(#{$slider_arrows_width_ATL} / 4);
+                left: calc(#{$carousel_arrows_width_ATL} / 4);
             }
 
             .slickNext{
-                right: calc(#{$slider_arrows_width_ATL} / 4);
+                right: calc(#{$carousel_arrows_width_ATL} / 4);
             }
             
             .slickPrev,
