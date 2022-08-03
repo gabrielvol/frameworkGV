@@ -2,8 +2,9 @@
    Page Error Styles | Custom [/etc/css/custom/page_error.scss]
    ========================================================================== */
 .page_error{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    min-height: 50vh;
+    padding-top: 30px;
+    padding-bottom: 80px;
     
     h1{
         color: $greyD;
@@ -11,7 +12,10 @@
     }
     
     p{
+        padding-right: 40px;
+        padding-left: 40px;
         color: $black;
+        font-size: 0.9rem;
         text-align: center;
         
         a{
@@ -30,7 +34,7 @@
     }
     
     .errorType{
-        padding-bottom: 20px;
+        padding: 0 0 20px;
         color: $grey;
         font-size: 0.8rem;
         text-transform: uppercase;
