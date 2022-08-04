@@ -59,25 +59,25 @@
         }
     }
     
-    @include mobileOnly{
+    @include beforeMobile500{
         .logo_header{
 /*
-            width: $logo_width_MO;
+            width: $logo_width_B500;
 */         
         }
     }
     
-    @include afterMobileLandscape{        
+    @include afterMobile500{        
         .logo_header{
 /*
-            width: $logo_width_AML;
+            width: $logo_width_A500;
 */         
         }
     }
     
-    @include mobileLandscapeOnly{        
+    @include mobile500Only{        
         .logo_header{
-//          width: $logo_width_MLO;
+//          width: $logo_width_500O;
         }
     }
 

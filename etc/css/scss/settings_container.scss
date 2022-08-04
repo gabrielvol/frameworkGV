@@ -72,13 +72,13 @@
     @include afterMobile350{
         width: $container_value_A350;
     }   
-    @if $classes_container_act_B600 == "on"{
-        @include mobileOnly{
-            width: $container_value_MO;
+    @if $classes_container_act_B500 == "on"{
+        @include beforeMobile500{
+            width: $container_value_B500;
         }
     }
-    @include afterMobileLandscape{
-        width: $container_value_ML;
+    @include afterMobile500{
+        width: $container_value_A500;
     }
     @if $classes_container_act_B600 == "on"{
         @include beforeMobile600{
@@ -116,10 +116,10 @@
             left: 50%;   
             margin-left: $container_value_half_negative_A350;
         }
-        @include afterMobileLandscape{
+        @include afterMobile500{
             position: absolute;
             left: 50%;   
-            margin-left: $container_value_half_negative_ML;
+            margin-left: $container_value_half_negative_A500;
         }
         @include afterMobile600{
             margin-left: $container_value_half_negative_A600;
@@ -140,21 +140,21 @@
             margin-left: $container_value_half_negative_DL;
         }
     }
-    @if $classes_container_act_MO == "on"{
+    @if $classes_container_act_B500 == "on"{
         &.container_centered_absoluteMO{    
-            @include mobileOnly{
+            @include beforeMobile500{
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_MO;
+                margin-left: $container_value_half_negative_B500;
             }
         }
     }
-    @if $classes_container_act_AML == "on"{
+    @if $classes_container_act_A500 == "on"{
         &.container_centered_absoluteAML{
-            @include afterMobileLandscape{
+            @include afterMobile500{
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_ML;
+                margin-left: $container_value_half_negative_A500;
             }
             @include afterMobile600{
                 margin-left: $container_value_half_negative_A600;
@@ -268,30 +268,30 @@
     }
 }
 
-@if $classes_container_act_MO == "on"{
+@if $classes_container_act_B500 == "on"{
     .containerMO{
-        @include mobileOnly{
-            width: $container_value_MO;            
+        @include beforeMobile500{
+            width: $container_value_B500;            
             &.container_centered_absoluteMO{    
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_MO;
+                margin-left: $container_value_half_negative_B500;
             }
         }
     }
 }
-@if $classes_container_act_AML == "on"{
+@if $classes_container_act_A500 == "on"{
     .containerAML{
-        @include afterMobileLandscape{
-            width: $container_value_ML;
+        @include afterMobile500{
+            width: $container_value_A500;
             &.container_centered_absoluteAML{
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_ML;
+                margin-left: $container_value_half_negative_A500;
             }
         }
-        @include mobileLandscapeOnly{
-            width: $container_value_ML;
+        @include mobile500Only{
+            width: $container_value_A500;
         }
         @include afterMobile600{
             width: $container_value_A600;
@@ -331,16 +331,16 @@
         }
     }
 }
-@if $classes_container_act_MLO == "on"{
+@if $classes_container_act_500O == "on"{
     .containerMLO{
-        @include mobileLandscapeOnly{
-            width: $container_value_ML;
+        @include mobile500Only{
+            width: $container_value_A500;
         }
     }
 }
 @if $classes_container_act_B600 == "on"{
     .containerB600{
-        @include mobileOnly{
+        @include beforeMobile500{
             width: $container_value_B600;
         }
         @media (min-width: 500px) and (max-width: 600px){
@@ -403,8 +403,8 @@
         @media (min-width: 351px) and (max-width: #{$mq_mobile_ancho_max}){
             width: $container_value_A350;
         }  
-        @include mobileLandscapeOnly{
-            width: $container_value_ML;
+        @include mobile500Only{
+            width: $container_value_A500;
         }
     }
 }
@@ -459,11 +459,11 @@
         @include afterMobile350{
             width: $container_value_A350;
         }  
-        @include afterMobileLandscape{
-            width: $container_value_ML;
+        @include afterMobile500{
+            width: $container_value_A500;
         }
-        @include mobileLandscapeOnly{
-            width: $container_value_ML;
+        @include mobile500Only{
+            width: $container_value_A500;
         }
         @include tabletOnly{
             width: $container_value_T;
@@ -509,11 +509,11 @@
         @include afterMobile350{
             width: $container_value_A350;
         }  
-        @include afterMobileLandscape{
-            width: $container_value_ML;
+        @include afterMobile500{
+            width: $container_value_A500;
         }
-        @include mobileLandscapeOnly{
-            width: $container_value_ML;
+        @include mobile500Only{
+            width: $container_value_A500;
         }
         @include afterTablet{
             width: $container_value_T;

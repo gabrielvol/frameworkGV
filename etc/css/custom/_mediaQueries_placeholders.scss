@@ -6,9 +6,9 @@
     
     @include afterMobile350{}
     
-    @include mobileOnly{}
+    @include beforeMobile500{}
     
-    @include afterMobileLandscape{}  
+    @include afterMobile500{}  
     
     @include beforeMobile600{}
     
@@ -28,19 +28,28 @@
     
     @media (min-width: 100px) and (max-width: 200px){}
     
-    @include mobileOnly{}
-    
-    @include afterMobileLandscape{}
-    
-    @include mobileLandscapeOnly{}
-    
-    
     
     @include beforeMobile350{}
     
     @include afterMobile350{}
     
     @include mobile350Only{}
+    
+    
+    
+    @include beforeMobile450{}
+    
+    @include afterMobile450{}
+    
+    @include mobile450Only{}
+    
+    
+    
+    @include beforeMobile500{}
+    
+    @include afterMobile500{}
+    
+    @include mobile500Only{}
     
 
     

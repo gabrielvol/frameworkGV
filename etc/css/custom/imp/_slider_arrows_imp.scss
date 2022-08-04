@@ -158,20 +158,20 @@
             }
         }
         
-        @include afterMobileLandscape{
+        @include afterMobile500{
             .slickPrev{
-                left: calc(#{$carousel_arrows_width_AML} / 4);
+                left: calc(#{$carousel_arrows_width_A500} / 4);
             }
 
             .slickNext{
-                right: calc(#{$carousel_arrows_width_AML} / 4);
+                right: calc(#{$carousel_arrows_width_A500} / 4);
             }
             
             .slickPrev,
             .slickNext{
-                width: $carousel_arrows_width_AML;
-                height: $carousel_arrows_height_AML;
-                margin-top: calc(-1 * #{$carousel_arrows_height_half_AML});  
+                width: $carousel_arrows_width_A500;
+                height: $carousel_arrows_height_A500;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_A500});  
             }
         }
         

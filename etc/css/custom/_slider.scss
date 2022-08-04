@@ -41,9 +41,9 @@
                 padding-left: $carousel_PH_A350;
             }
         
-            @include afterMobileLandscape{
-                padding-right: $carousel_PH_AML;
-                padding-left: $carousel_PH_AML;
+            @include afterMobile500{
+                padding-right: $carousel_PH_A500;
+                padding-left: $carousel_PH_A500;
             }
         
             @include afterTablet{

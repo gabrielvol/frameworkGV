@@ -50,21 +50,21 @@
         height: calc(100vh - #{$footer_height_ALL} - #{$header_height_ALL});
     }
 
-    @include mobileOnly{
-        @if $page_index_fullHeight_act_MO == "on" or $page_index_only_fullHeight_act_MO == "on"{
-            height: calc(100vh - #{$footer_height_MO} - #{$header_height_MO});
+    @include beforeMobile500{
+        @if $page_index_fullHeight_act_B500 == "on" or $page_index_only_fullHeight_act_B500 == "on"{
+            height: calc(100vh - #{$footer_height_B500} - #{$header_height_B500});
         }
     }
 
-    @include afterMobileLandscape{
-        @if $page_index_fullHeight_act_AML == "on" or $page_index_only_fullHeight_act_AML == "on"{
-            height: calc(100vh - #{$footer_height_AML} - #{$header_height_AML});
+    @include afterMobile500{
+        @if $page_index_fullHeight_act_A500 == "on" or $page_index_only_fullHeight_act_A500 == "on"{
+            height: calc(100vh - #{$footer_height_A500} - #{$header_height_A500});
         }
     }
 
-    @include mobileLandscapeOnly{
-        @if $page_index_fullHeight_act_MLO == "on" or $page_index_only_fullHeight_act_MLO == "on"{
-            height: calc(100vh - #{$footer_height_MLO} - #{$header_height_MLO});
+    @include mobile500Only{
+        @if $page_index_fullHeight_act_500O == "on" or $page_index_only_fullHeight_act_500O == "on"{
+            height: calc(100vh - #{$footer_height_500O} - #{$header_height_500O});
         }
     }
 

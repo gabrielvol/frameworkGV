@@ -45,8 +45,8 @@
 
 
 /* // Mobile Only Classes --------------------------------------------------- */
-@include mobileOnly{
-    @if $classes_position_display_mask_cursor_act_MO == "on"{
+@include beforeMobile500{
+    @if $classes_position_display_mask_cursor_act_B500 == "on"{
 /*___ Positioning _______________________*/
         .pRelMO{position: relative}
         .pAbsMO{position: absolute}
@@ -80,7 +80,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_MO == "on"{
+    @if $classes_lists_floats_act_B500 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledMO, .horizontalMO{list-style: $none}
         .floatLeftMO, .horizontalMO li{float: $left}
@@ -100,7 +100,7 @@
         .floatNoneMO, .unstyledMO li{float: $none}
     }
     
-    @if $classes_text_act_MO == "on"{
+    @if $classes_text_act_B500 == "on"{
 /*___ Text ______________________________*/
         .txIndentedMO{text-indent: -9999px}
         .txAlignLeftMO{text-align: left}
@@ -115,7 +115,7 @@
         .txCaseLowerMO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_MO == "on"{
+    @if $classes_bg_bd_NO_act_B500 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banMO{border: $none}
         .bgNoneMO{
@@ -127,14 +127,14 @@
         .bgNoImageMO{background-image: $none}
     }
     
-    @if $helpers_spacing_act_MO == "on"{
+    @if $helpers_spacing_act_B500 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorMO;    
         .mraMO,.mhaMO{margin-right: $auto}
         .mlaMO,.mhaMO{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_MO == "on"{
+    @if $classes_flexbox_act_B500 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexMO, .flexHorizontalMO, .flexColumnMO, .flexNoWrapMO, .flexJustifyEndMO, .flexJustifyCenterMO, .flexJustifyBetweenMO, .flexJustifyAroundMO, .flexAlignContentEndMO, .flexAlignContentCenterMO, .flexAlignContentBetweenMO, .flexAlignContentAroundMO, .flexAlignContentStretchMO, .flexAlignItemsEndMO, .flexAlignItemsCenterMO, .flexAlignItemsBaselineMO, .flexAlignItemsStretchMO, .horizontalCenterFlexMO{
             display: flex;
@@ -164,8 +164,8 @@
 }
 
 /* // After Mobile Landscape Classes ---------------------------------------- */
-@include afterMobileLandscape{
-    @if $classes_position_display_mask_cursor_act_AML == "on"{
+@include afterMobile500{
+    @if $classes_position_display_mask_cursor_act_A500 == "on"{
 /*___ Positioning _______________________*/
         .pRelAML{position: relative}
         .pAbsAML{position: absolute}
@@ -199,7 +199,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_AML == "on"{
+    @if $classes_lists_floats_act_A500 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledAML, .horizontalAML{list-style: $none}
         .floatLeftAML, .horizontalAML li{float: $left}
@@ -219,7 +219,7 @@
         .floatNoneAML, .unstyledAML li{float: $none}
     }
     
-    @if $classes_text_act_AML == "on"{
+    @if $classes_text_act_A500 == "on"{
 /*___ Text ______________________________*/
         .txIndentedAML{text-indent: -9999px}
         .txAlignLeftAML{text-align: left}
@@ -234,7 +234,7 @@
         .txCaseLowerAML{text-transform: lowercase}
     }
     
-    @if $classes_bg_bd_NO_act_AML == "on"{
+    @if $classes_bg_bd_NO_act_A500 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banAML{border: $none}
         .bgNoneAML{
@@ -246,14 +246,14 @@
         .bgNoImageAML{background-image: $none}
     }
     
-    @if $helpers_spacing_act_AML == "on"{
+    @if $helpers_spacing_act_A500 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAML;
         .mraAML,.mhaAML{margin-right: $auto}
         .mlaAML,.mhaAML{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_AML == "on"{
+    @if $classes_flexbox_act_A500 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexAML, .flexHorizontalAML, .flexColumnAML, .flexNoWrapAML, .flexJustifyEndAML, .flexJustifyCenterAML, .flexJustifyBetweenAML, .flexJustifyAroundAML, .flexAlignContentEndAML, .flexAlignContentCenterAML, .flexAlignContentBetweenAML, .flexAlignContentAroundAML, .flexAlignContentStretchAML, .flexAlignItemsEndAML, .flexAlignItemsCenterAML, .flexAlignItemsBaselineAML, .flexAlignItemsStretchAML, .horizontalCenterFlexAML{
             display: flex;
@@ -401,8 +401,8 @@
 }
 
 /* // Mobile Landscape Only Classes ----------------------------------------- */
-@include mobileLandscapeOnly{
-    @if $classes_position_display_mask_cursor_act_MLO == "on"{
+@include mobile500Only{
+    @if $classes_position_display_mask_cursor_act_500O == "on"{
 /*___ Positioning _______________________*/
         .pRelMLO{position: relative}
         .pAbsMLO{position: absolute}
@@ -436,7 +436,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_MLO == "on"{
+    @if $classes_lists_floats_act_500O == "on"{
 /*___ Lists and floats __________________*/
         .unstyledMLO, .horizontalMLO{list-style: $none}
         .floatLeftMLO, .horizontalMLO li{float: $left}
@@ -456,7 +456,7 @@
         .floatNoneMLO, .unstyledMLO li{float: $none}
     }
     
-    @if $classes_text_act_MLO == "on"{
+    @if $classes_text_act_500O == "on"{
 /*___ Text ______________________________*/
         .txIndentedMLO{text-indent: -9999px}
         .txAlignLeftMLO{text-align: left}
@@ -471,7 +471,7 @@
         .txCaseLowerMLO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_MLO == "on"{
+    @if $classes_bg_bd_NO_act_500O == "on"{
 /*___ Backgrounds, border and images ____*/
         .banMLO{border: $none}
         .bgNoneMLO{
@@ -483,14 +483,14 @@
         .bgNoImageMLO{background-image: $none}
     }
     
-    @if $helpers_spacing_act_MLO == "on"{
+    @if $helpers_spacing_act_500O == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorMLO;
         .mraMLO,.mhaMLO{margin-right: $auto}
         .mlaMLO,.mhaMLO{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_MLO == "on"{
+    @if $classes_flexbox_act_500O == "on"{
 /*___ Flexbox Classes ___________________*/ 
         .displayFlexMLO, .flexHorizontalMLO, .flexColumnMLO, .flexNoWrapMLO, .flexJustifyEndMLO, .flexJustifyCenterMLO, .flexJustifyBetweenMLO, .flexJustifyAroundMLO, .flexAlignContentEndMLO, .flexAlignContentCenterMLO, .flexAlignContentBetweenMLO, .flexAlignContentAroundMLO, .flexAlignContentStretchMLO, .flexAlignItemsEndMLO, .flexAlignItemsCenterMLO, .flexAlignItemsBaselineMLO, .flexAlignItemsStretchMLO, .horizontalCenterFlexMLO{
             display: flex;

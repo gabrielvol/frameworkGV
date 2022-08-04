@@ -29,9 +29,9 @@ fieldset, label, input, select, textarea, button,
             width: $form_label_width_BT;
         }
         
-        @include mobileOnly{
+        @include beforeMobile500{
             width: $hundred;
-            max-width: $form_label_width_MO;          
+            max-width: $form_label_width_B500;          
         }
     }
     
@@ -109,12 +109,12 @@ input[type="submit"],
 input[type="button"],
 form button{
     .mobileForm &{
-        @include mobileOnly{
-            width: $button_form_submit_width_MO!important;
+        @include beforeMobile500{
+            width: $button_form_submit_width_B500!important;
         }
 
-        @include mobileLandscapeOnly{
-            width: $button_form_submit_width_MLO;   
+        @include mobile500Only{
+            width: $button_form_submit_width_500O;   
         }
 
         @include beforeTablet{
@@ -298,12 +298,12 @@ form{
     }
     
     .mobileForm &{
-        @include mobileOnly{
+        @include beforeMobile500{
             width: 90%;
-            max-width: $form_width_MO;            
+            max-width: $form_width_B500;            
         }
         
-        @include afterMobileLandscape{
+        @include afterMobile500{
             width: $form_width_A500;
         }
         

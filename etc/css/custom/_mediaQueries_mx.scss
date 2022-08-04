@@ -10,19 +10,16 @@
 // debe responder se encuentran en `[/settings/var/mediaQueries_var.scss]`.
 //
 // Los tamanos estan organizados como:
-// Mobile [hasta 499px]
-// Mobile Landscape [a partir de 500px]
 // Tablet [a partir de 767px]
 // Tablet Landscape [a partir de 1024px]
 // Desktop [a partir de 1200px]
 // Desktop Large [a partir de 1600px]
 //
 // Ademas hay mixins para media queries de
-// 600px, 650px, 700px, 800px, 850px, 900px y 950px
+// 350px, 400px, 450px, 500px, 600px, 650px, 700px, 800px, 850px, 900px y 950px
 //
 // Se pueden combinar con `before`, `after` y `only`, por ej.:
 // `beforeTablet` [hasta 766px]
-// `afterMobileLandscape` [desde 500px]
 // `tabletOnly` [entre 767px y 1023px]
 //
 // Los mixins `only` tienen como limite el mas cercano de los sig. valores
@@ -75,30 +72,62 @@
     @media (min-width: #{$mq_nav_AT}){@content;}}
     
     
-/* // Mobile 350------------------------------------------------------------- */
+/* // Mobile 350 ------------------------------------------------------------ */
 @mixin beforeMobile350{
     @media (max-width: 350px){@content;}}
 
 @mixin afterMobile350{
     @media (min-width: 351px){@content;}}
     
-@mixin mobile350Only{ // 500px 766px
+@mixin mobile350Only{ // 3500px 766px
     @media (min-width: 351px)
         and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     
-@mixin mobile350Only_navBT{ // 500px navBT
+@mixin mobile350Only_navBT{ // 350px navBT
     @media (min-width: 351px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
-/* // Mobile ---------------------------------------------------------------- */
-@mixin mobileOnly{ // 499px
+/* // Mobile 400 ------------------------------------------------------------ */
+@mixin beforeMobile400{
+    @media (max-width: 400px){@content;}}
+
+@mixin afterMobile400{
+    @media (min-width: 401px){@content;}}
+    
+@mixin mobile400Only{ // 400px 766px
+    @media (min-width: 401px)
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+    
+@mixin mobile400Only_navBT{ // 400px navBT
+    @media (min-width: 401px)
+        and (max-width: #{$mq_nav_BT}){@content;}}
+    
+    
+/* // Mobile 450 ------------------------------------------------------------ */
+@mixin beforeMobile450{
+    @media (max-width: 450px){@content;}}
+
+@mixin afterMobile450{
+    @media (min-width: 451px){@content;}}
+    
+@mixin mobile450Only{ // 450px 766px
+    @media (min-width: 451px)
+        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+    
+@mixin mobile450Only_navBT{ // 45px navBT
+    @media (min-width: 451px)
+        and (max-width: #{$mq_nav_BT}){@content;}}
+    
+    
+/* // Mobile 500 ------------------------------------------------------------ */
+@mixin beforeMobile500{ // 499px
     @media (max-width: #{$mq_mobile_ancho_max}){@content;}}
 
-@mixin afterMobileLandscape{ // 500px
+@mixin afterMobile500{ // 500px
     @media (min-width: #{$mq_mobileLandscape_ancho_min}){@content;}}
     
-@mixin mobileLandscapeOnly{ // 500px 766px
+@mixin mobile500Only{ // 500px 766px
     @media (min-width: #{$mq_mobileLandscape_ancho_min})
         and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
     

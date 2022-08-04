@@ -62,10 +62,10 @@
         }
     }
     
-    @include mobileOnly{
-        @if $footer_floatedContent_act_MO == "on"{ // REF [20]
+    @include beforeMobile500{
+        @if $footer_floatedContent_act_B500 == "on"{ // REF [20]
             .logo_footer_container{
-                width: $footer_logoFloated_width_MO;
+                width: $footer_logoFloated_width_B500;
                 
                 .logo_footer{
                     width: 100%;
@@ -73,20 +73,20 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_MO}); 
+                width: calc(100% - #{$footer_logoFloated_width_B500}); 
             }    
             
         } @else {
             .logo_footer{
-                width: $logo_width_footer_MO;
+                width: $logo_width_footer_B500;
             }        
         }
     }
     
-    @include afterMobileLandscape{
-        @if $footer_floatedContent_act_AML == "on"{ // REF [20]
+    @include afterMobile500{
+        @if $footer_floatedContent_act_A500 == "on"{ // REF [20]
             .logo_footer_container{
-                width: $footer_logoFloated_width_AML;
+                width: $footer_logoFloated_width_A500;
                 
                 .logo_footer{
                     width: 100%;
@@ -94,21 +94,21 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_AML}); 
+                width: calc(100% - #{$footer_logoFloated_width_A500}); 
             }    
         } @else {
             .logo_footer{
 /*
-                width: $logo_width_footer_AML;
+                width: $logo_width_footer_A500;
 */
             }        
         }
     }
     
-    @include mobileLandscapeOnly{
-        @if $footer_floatedContent_act_MLO == "on"{ // REF [20]
+    @include mobile500Only{
+        @if $footer_floatedContent_act_500O == "on"{ // REF [20]
             .logo_footer_container{
-                width: $footer_logoFloated_width_MLO;
+                width: $footer_logoFloated_width_500O;
                 
                 .logo_footer{
                     width: 100%;
@@ -116,12 +116,12 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_MLO}); 
+                width: calc(100% - #{$footer_logoFloated_width_500O}); 
             }    
         } @else {
             .logo_footer{
 /*
-                width: $logo_width_footer_MLO;
+                width: $logo_width_footer_500O;
 */
             }        
         }
@@ -150,7 +150,7 @@
     }
     
     @include afterTablet{
-        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_AT == "on"{ // REF [20]
+        @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_AT == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_AT;
                 padding-right: 20px;
@@ -187,7 +187,7 @@
     }
     
     @include afterTabletLandscape{
-        @if $footer_floatedContent_act_AML == "on" or $footer_floatedContent_act_ATL == "on"{ // REF [20]
+        @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_ATL == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_ATL;
                 padding-right: 20px;

@@ -47,8 +47,8 @@
 /* // Container Center Negative Values -------------------------------------- */
 $container_value_half_B350:          calc(#{$container_value_B350} / 2);
 $container_value_half_A350:          calc(#{$container_value_A350} / 2);
-$container_value_half_MO:            calc(#{$container_value_MO} / 2);
-$container_value_half_ML:            calc(#{$container_value_ML} / 2);
+$container_value_half_B500:            calc(#{$container_value_B500} / 2);
+$container_value_half_A500:            calc(#{$container_value_A500} / 2);
 $container_value_half_B600:          calc(#{$container_value_B600} / 2);
 $container_value_half_A600:          calc(#{$container_value_A600} / 2);
 $container_value_half_T:             calc(#{$container_value_T} / 2);
@@ -59,8 +59,8 @@ $container_value_half_DL:            calc(#{$container_value_DL} / 2);
 
 $container_value_half_negative_B350: calc(-1 * #{$container_value_half_B350});
 $container_value_half_negative_A350: calc(-1 * #{$container_value_half_A350});
-$container_value_half_negative_MO:   calc(-1 * #{$container_value_half_MO});
-$container_value_half_negative_ML:   calc(-1 * #{$container_value_half_ML});
+$container_value_half_negative_B500:   calc(-1 * #{$container_value_half_B500});
+$container_value_half_negative_A500:   calc(-1 * #{$container_value_half_A500});
 $container_value_half_negative_B600: calc(-1 * #{$container_value_half_B600});
 $container_value_half_negative_A600: calc(-1 * #{$container_value_half_A600});
 $container_value_half_negative_T:    calc(-1 * #{$container_value_half_T});

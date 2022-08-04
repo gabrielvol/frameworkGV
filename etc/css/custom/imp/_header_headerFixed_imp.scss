@@ -58,8 +58,8 @@
         }
     }
     
-    @include mobileOnly{
-        @if $header_fixed_act_MO == "on"{
+    @include beforeMobile500{
+        @if $header_fixed_act_B500 == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -71,13 +71,13 @@
             }
         }
         
-        @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_MO;
+        @if $header_fixed_act_B500 == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_B500;
         }
     }
     
-    @include afterMobileLandscape{
-        @if $header_fixed_act_AML == "on"{
+    @include afterMobile500{
+        @if $header_fixed_act_A500 == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -89,13 +89,13 @@
             }
         }
         
-        @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_AML;
+        @if $header_fixed_act_A500 == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_A500;
         }
     }
     
-    @include mobileLandscapeOnly{
-        @if $header_fixed_act_MLO == "on"{
+    @include mobile500Only{
+        @if $header_fixed_act_500O == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -107,8 +107,8 @@
             }
         }
         
-        @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_MLO;
+        @if $header_fixed_act_500O == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_500O;
         }
     }
 

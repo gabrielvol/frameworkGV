@@ -24,7 +24,7 @@
 // Genera los margenes negativos para cada media query para la clase
 // `.container_centered_absolute` que se usa junto con la clase `.container`
 //
-// Ej. con $classes_container_act_AML
+// Ej. con $classes_container_act_A500
 // @media (min-width: 500px) {
 //     .container.container_centered_absoluteAML{
 //         position: absolute;
@@ -119,23 +119,23 @@ $classes_lists_floats_act_ALL:                  on;
 
   
 /* // Mobile Only MO -------------------------------------------------------- */
-$classes_container_act_MO:                      off;
-$helpers_spacing_act_MO:                        off;
-$classes_position_display_mask_cursor_act_MO:   off;
-$classes_flexbox_act_MO:                        off;
-$classes_lists_floats_act_MO:                   off;
-$classes_text_act_MO:                           off;
-$classes_bg_bd_NO_act_MO:                       off;
+$classes_container_act_B500:                      off;
+$helpers_spacing_act_B500:                        off;
+$classes_position_display_mask_cursor_act_B500:   off;
+$classes_flexbox_act_B500:                        off;
+$classes_lists_floats_act_B500:                   off;
+$classes_text_act_B500:                           off;
+$classes_bg_bd_NO_act_B500:                       off;
 
 
 /* // After Mobile Landscape AML -------------------------------------------- */
-$classes_container_act_AML:                     off;
-$helpers_spacing_act_AML:                       off;
-$classes_position_display_mask_cursor_act_AML:  off;
-$classes_flexbox_act_AML:                       off;
-$classes_lists_floats_act_AML:                  off;
-$classes_text_act_AML:                          off;
-$classes_bg_bd_NO_act_AML:                      off;
+$classes_container_act_A500:                     off;
+$helpers_spacing_act_A500:                       off;
+$classes_position_display_mask_cursor_act_A500:  off;
+$classes_flexbox_act_A500:                       off;
+$classes_lists_floats_act_A500:                  off;
+$classes_text_act_A500:                          off;
+$classes_bg_bd_NO_act_A500:                      off;
 
 
 /* // Before Mobile 600 ----------------------------------------------------- */
@@ -153,13 +153,13 @@ $classes_bg_bd_NO_act_A600:                         off;
 
 
 /* // Mobile Landscape Only MLO --------------------------------------------- */
-$classes_container_act_MLO:                     off;
-$helpers_spacing_act_MLO:                       off;
-$classes_position_display_mask_cursor_act_MLO:  off;
-$classes_flexbox_act_MLO:                       off;
-$classes_lists_floats_act_MLO:                  off;
-$classes_text_act_MLO:                          off;
-$classes_bg_bd_NO_act_MLO:                      off;
+$classes_container_act_500O:                     off;
+$helpers_spacing_act_500O:                       off;
+$classes_position_display_mask_cursor_act_500O:  off;
+$classes_flexbox_act_500O:                       off;
+$classes_lists_floats_act_500O:                  off;
+$classes_text_act_500O:                          off;
+$classes_bg_bd_NO_act_500O:                      off;
 
 
 /* // Before Tablet BT ------------------------------------------------------ */

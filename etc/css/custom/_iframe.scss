@@ -18,14 +18,14 @@
 .iframe_video_mask{
     background-color: $bgGrey3XD;
 
-    @include mobileOnly{
-        width: $pop_video_width_MO;
-        height: $pop_video_height_MO;
+    @include beforeMobile500{
+        width: $pop_video_width_B500;
+        height: $pop_video_height_B500;
     }
 
-    @include afterMobileLandscape{
-        width: $pop_video_width_AML;
-        height: $pop_video_heigth_AML;
+    @include afterMobile500{
+        width: $pop_video_width_A500;
+        height: $pop_video_heigth_A500;
     }
     
     @include afterTablet{
@@ -35,12 +35,12 @@
 }
 
 .iframe_map_mask{
-    @include mobileOnly{
+    @include beforeMobile500{
         width: 300px;
         height: 300px;
     }
 
-    @include afterMobileLandscape{
+    @include afterMobile500{
         width: 500px;
         height: 250px;
     }

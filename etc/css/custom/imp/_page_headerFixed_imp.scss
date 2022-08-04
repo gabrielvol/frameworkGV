@@ -46,21 +46,21 @@
 
 
 #main{    
-    @include mobileOnly{
-        @if $header_fixed_act_MO == "on" or $header_fixed_act_ALL == "on"{
-            padding-top: $page_PT_MO;
+    @include beforeMobile500{
+        @if $header_fixed_act_B500 == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_B500;
         }  
     }
     
-    @include afterMobileLandscape{
-        @if $header_fixed_act_AML == "on" or $header_fixed_act_ALL == "on"{
-            padding-top: $page_PT_AML;
+    @include afterMobile500{
+        @if $header_fixed_act_A500 == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_A500;
         }     
     }
     
-    @include mobileLandscapeOnly{
-        @if $header_fixed_act_MLO == "on" or $header_fixed_act_ALL == "on"{
-            padding-top: $page_PT_MLO;
+    @include mobile500Only{
+        @if $header_fixed_act_500O == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_500O;
         }      
     }
     

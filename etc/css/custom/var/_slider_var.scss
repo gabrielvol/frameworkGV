@@ -75,9 +75,9 @@ $carousel_arrows_width_A350:        30px;
 $carousel_arrows_height_A350:       $carousel_arrows_width_A350;
 $carousel_arrows_height_half_A350:  calc(#{$carousel_arrows_height_A350} / 2);
 
-$carousel_arrows_width_AML:         $carousel_arrows_width_A350;
-$carousel_arrows_height_AML:        $carousel_arrows_width_AML;
-$carousel_arrows_height_half_AML:   calc(#{$carousel_arrows_height_AML} / 2);
+$carousel_arrows_width_A500:         $carousel_arrows_width_A350;
+$carousel_arrows_height_A500:        $carousel_arrows_width_A500;
+$carousel_arrows_height_half_A500:   calc(#{$carousel_arrows_height_A500} / 2);
 
 $carousel_arrows_width_AT:          $slider_arrows_width_AT;
 $carousel_arrows_height_AT:         $carousel_arrows_width_AT;
@@ -89,7 +89,7 @@ $carousel_arrows_height_half_ATL:   calc(#{$carousel_arrows_height_ATL} / 2);
 
 $carousel_PH_B350:                  calc(#{$carousel_arrows_width_B350} * 0.8);
 $carousel_PH_A350:                  calc(#{$carousel_arrows_width_A350} * 1);
-$carousel_PH_AML:                   calc(#{$carousel_arrows_width_AML} * 1.5);
+$carousel_PH_A500:                   calc(#{$carousel_arrows_width_A500} * 1.5);
 $carousel_PH_AT:                    calc(#{$carousel_arrows_width_AT} * 1.5);
 $carousel_PH_ATL:                   calc(#{$carousel_arrows_width_ATL} * 1.5);
 

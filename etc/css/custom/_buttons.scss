@@ -141,7 +141,7 @@ button{
     }
 */
     
-    @include mobileOnly{
+    @include beforeMobile500{
         width: $hundred;
     }
     
@@ -339,10 +339,10 @@ button{
             }
         }
 
-        @include mobileOnly{
+        @include beforeMobile500{
             &:focus, &:hover{
                 &::before{
-                    width: $button_whatsapp_before_width_MO;
+                    width: $button_whatsapp_before_width_B500;
                 }
             }
         }
@@ -357,10 +357,10 @@ button{
             }
         }
 
-        @include afterMobileLandscape{
+        @include afterMobile500{
             &:focus, &:hover{
                 &::before{
-                    width: $button_whatsapp_before_width_AML;
+                    width: $button_whatsapp_before_width_A500;
                 }
             }
         }

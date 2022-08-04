@@ -437,7 +437,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav ------------------------------------------------------------------- */
-/* // Mobile ---------------------------------------------------------------- */
+/* // Mobile 500 ------------------------------------------------------------ */
 /* // 550px ----------------------------------------------------------------- */
 /* // 600px ----------------------------------------------------------------- */
 /* // 650px ----------------------------------------------------------------- */
@@ -3353,12 +3353,12 @@ form {
   @media (max-width: 499px) {
     #header .logo_header {
       /*
-            width: $logo_width_MO;
+            width: $logo_width_B500;
 */ } }
   @media (min-width: 500px) {
     #header .logo_header {
       /*
-            width: $logo_width_AML;
+            width: $logo_width_A500;
 */ } }
   @media (max-width: 767px) {
     #header {
@@ -3440,13 +3440,13 @@ form {
 @media (min-width: 500px) {
   #footer .logo_footer {
     /*
-                width: $logo_width_footer_AML;
+                width: $logo_width_footer_A500;
 */ } }
 
 @media (min-width: 500px) and (max-width: 767px) {
   #footer .logo_footer {
     /*
-                width: $logo_width_footer_MLO;
+                width: $logo_width_footer_500O;
 */ } }
 
 @media (min-width: 601px) {

@@ -19,10 +19,10 @@
 // y se importa en
 // `[/etc/css/custom/page_index.scss]`
 //
-// Ej. $page_index_fullHeight_act_AML = "on" imprime:
+// Ej. $page_index_fullHeight_act_A500 = "on" imprime:
 // @media (min-width: 500px) {
 //     .page_index {
-//         height: calc(100vh - $footer_height_AML - $header_height_AML);
+//         height: calc(100vh - $footer_height_A500 - $header_height_A500);
 //     }
 // }
 //
@@ -92,9 +92,9 @@
     
 // 01 _ Page index Full Height ---------------------------------------------- */
 $page_index_fullHeight_act_ALL:     off;
-$page_index_fullHeight_act_MO:      off;
-$page_index_fullHeight_act_AML:     off;
-$page_index_fullHeight_act_MLO:     off;
+$page_index_fullHeight_act_B500:      off;
+$page_index_fullHeight_act_A500:     off;
+$page_index_fullHeight_act_500O:     off;
 $page_index_fullHeight_act_BT:      off;
 $page_index_fullHeight_act_AT:      off;
 $page_index_fullHeight_act_TO:      off;
@@ -106,9 +106,9 @@ $page_index_fullHeight_act_AD:      off;
 
 /* // 02 Index Only Full Height --------------------------------------------- */
 $page_index_only_fullHeight_act_ALL:     off;
-$page_index_only_fullHeight_act_MO:      off;
-$page_index_only_fullHeight_act_AML:     off;
-$page_index_only_fullHeight_act_MLO:     off;
+$page_index_only_fullHeight_act_B500:      off;
+$page_index_only_fullHeight_act_A500:     off;
+$page_index_only_fullHeight_act_500O:     off;
 $page_index_only_fullHeight_act_BT:      off;
 $page_index_only_fullHeight_act_AT:      off;
 $page_index_only_fullHeight_act_TO:      off;
