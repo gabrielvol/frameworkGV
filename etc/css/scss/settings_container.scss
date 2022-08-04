@@ -65,9 +65,17 @@
     @include clearfix;   
 }
 
-.container{    
-    @include mobileOnly{
-        width: $container_value_MO;
+.container{
+    @include beforeMobile350{
+        width: $container_value_B350;
+    }
+    @include afterMobile350{
+        width: $container_value_A350;
+    }   
+    @if $classes_container_act_B600 == "on"{
+        @include mobileOnly{
+            width: $container_value_MO;
+        }
     }
     @include afterMobileLandscape{
         width: $container_value_ML;
@@ -98,10 +106,15 @@
         width: $container_value_DL;
     }
     &.container_centered_absolute{
-        @include mobileOnly{
+        @include beforeMobile350{
             position: absolute;
             left: 50%;   
-            margin-left: $container_value_half_negative_MO;
+            margin-left: $container_value_half_negative_B350;
+        }
+        @include afterMobile350{
+            position: absolute;
+            left: 50%;   
+            margin-left: $container_value_half_negative_A350;
         }
         @include afterMobileLandscape{
             position: absolute;
@@ -384,9 +397,12 @@
 }
 @if $classes_container_act_BT == "on"{
     .containerBT{
-        @include mobileOnly{
-            width: $container_value_MO;
+        @include beforeMobile350{
+            width: $container_value_B350;
         }
+        @media (min-width: 351px) and (max-width: #{$mq_mobile_ancho_max}){
+            width: $container_value_A350;
+        }  
         @include mobileLandscapeOnly{
             width: $container_value_ML;
         }
@@ -437,9 +453,12 @@
 }
 @if $classes_container_act_BTL == "on"{
     .containerBTL{
-        @include mobileOnly{
-            width: $container_value_MO;
+        @include beforeMobile350{
+            width: $container_value_B350;
         }
+        @include afterMobile350{
+            width: $container_value_A350;
+        }  
         @include afterMobileLandscape{
             width: $container_value_ML;
         }
@@ -484,9 +503,12 @@
 }
 @if $classes_container_act_BD == "on"{
     .containerBD{
-        @include mobileOnly{
-            width: $container_value_MO;
+        @include beforeMobile350{
+            width: $container_value_B350;
         }
+        @include afterMobile350{
+            width: $container_value_A350;
+        }  
         @include afterMobileLandscape{
             width: $container_value_ML;
         }
