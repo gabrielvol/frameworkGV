@@ -22,90 +22,6 @@
         text-indent: -9999px;
         overflow: hidden;
     }
-
-    .social_fb{ // Soc Facebook
-        a{
-            background-image: url('#{$dir_env}/img/social_fb.svg');
-        }
-    }
-
-    .social_em{ // Soc Correo Electrónico
-        a{
-            background-image: url('#{$dir_env}/img/social_em.svg');
-        }
-    }
-
-    .social_go{ // Soc Guía Oleo
-        a{
-            background-image: url('#{$dir_env}/img/social_go.svg');
-        }
-    }
-
-    .social_ig{ // Soc Instagram
-        a{
-            background-image: url('#{$dir_env}/img/social_ig.svg');
-        }
-    }
-
-    .social_li{ // Soc LinkedIn
-        a{
-            background-image: url('#{$dir_env}/img/social_li.svg');
-        }
-    }
-
-    .social_pi{ // Soc Pinterest
-        a{
-            background-image: url('#{$dir_env}/img/social_pi.svg');
-        }
-    }
-
-    .social_sc{ // Soc SnapChat
-        a{
-            background-image: url('#{$dir_env}/img/social_sc.svg');
-        }
-    }
-
-    .social_sk{ // Soc Skype
-        a{
-            background-image: url('#{$dir_env}/img/social_sk.svg');
-        }
-    }
-    
-    .social_sp{ // Soc Spotify
-        a{
-            background-image: url('#{$dir_env}/img/social_sp.svg');
-        }
-    }
-
-    .social_ta{ // Soc TripAdvisor
-        a{
-            background-image: url('#{$dir_env}/img/social_ta.svg');
-        }
-    }
-    
-    .social_tw{ // Soc Twitter
-        a{
-            background-image: url('#{$dir_env}/img/social_tw.svg');
-        }
-    }
-
-    .social_vi{ // Soc Vimeo
-        a{
-            background-image: url('#{$dir_env}/img/social_vi.svg');
-        }
-    }  
-
-    .social_wa{ // Soc WhatsApp
-        a{
-            background-image: url('#{$dir_env}/img/social_wa.svg');
-        }
-    }
-
-    .social_yt{ // Soc YouTube
-        a{
-            background-image: url('#{$dir_env}/img/social_yt.svg');
-        }
-    }
     
     @include beforeTablet{       
         li{
@@ -139,5 +55,89 @@
             @include opacityCustomHover(90);
             @include transition(1s);
         }
+    }
+}
+
+.social_fb{ // Soc Facebook
+    a{
+        background-image: url('#{$dir_env}/img/social_fb.svg');
+    }
+}
+
+.social_em{ // Soc Correo Electrónico
+    a{
+        background-image: url('#{$dir_env}/img/social_em.svg');
+    }
+}
+
+.social_go{ // Soc Guía Oleo
+    a{
+        background-image: url('#{$dir_env}/img/social_go.svg');
+    }
+}
+
+.social_ig{ // Soc Instagram
+    a{
+        background-image: url('#{$dir_env}/img/social_ig.svg');
+    }
+}
+
+.social_li{ // Soc LinkedIn
+    a{
+        background-image: url('#{$dir_env}/img/social_li.svg');
+    }
+}
+
+.social_pi{ // Soc Pinterest
+    a{
+        background-image: url('#{$dir_env}/img/social_pi.svg');
+    }
+}
+
+.social_sc{ // Soc SnapChat
+    a{
+        background-image: url('#{$dir_env}/img/social_sc.svg');
+    }
+}
+
+.social_sk{ // Soc Skype
+    a{
+        background-image: url('#{$dir_env}/img/social_sk.svg');
+    }
+}
+
+.social_sp{ // Soc Spotify
+    a{
+        background-image: url('#{$dir_env}/img/social_sp.svg');
+    }
+}
+
+.social_ta{ // Soc TripAdvisor
+    a{
+        background-image: url('#{$dir_env}/img/social_ta.svg');
+    }
+}
+
+.social_tw{ // Soc Twitter
+    a{
+        background-image: url('#{$dir_env}/img/social_tw.svg');
+    }
+}
+
+.social_vi{ // Soc Vimeo
+    a{
+        background-image: url('#{$dir_env}/img/social_vi.svg');
+    }
+}  
+
+.social_wa{ // Soc WhatsApp
+    a{
+        background-image: url('#{$dir_env}/img/social_wa.svg');
+    }
+}
+
+.social_yt{ // Soc YouTube
+    a{
+        background-image: url('#{$dir_env}/img/social_yt.svg');
     }
 }
