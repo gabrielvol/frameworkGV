@@ -182,20 +182,20 @@ button{
 
 /* // Button Popup ---------------------------------------------------------- */
 .pop_global{
-    .button_pop_close{
-        width: $button_pop_close_size!important;
-        height: $button_pop_close_size!important;
+    .button_close_pop{
+        width: $button_close_pop_size!important;
+        height: $button_close_pop_size!important;
     }
 
     @include beforeMobile600{
-        .button_pop_close{
+        .button_close_pop{
             top: -45px;
             right: 0;
         }
     }
 
     @include afterMobile600{
-        .button_pop_close{
+        .button_close_pop{
             top: -35px;
             right: -35px;
         } 
@@ -203,7 +203,7 @@ button{
 }
 
 .pop_warning{
-    .button_pop_close{
+    .button_close_pop{
         @include borderStyle($bdGreyD);
         @include positionTR(10px, 10px);
 
@@ -233,7 +233,7 @@ button{
 }
 
 .pop_form{
-    .button_pop_close{
+    .button_close_pop{
         // box-shadow: $bxShadow_main;
     }
 }

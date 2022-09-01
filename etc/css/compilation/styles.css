@@ -2204,25 +2204,25 @@ button, button::before, button::after {
     background-color: #fff; }
 
 /* // Button Popup ---------------------------------------------------------- */
-.pop_global .button_pop_close {
+.pop_global .button_close_pop {
   width: 30px !important;
   height: 30px !important; }
 
 @media (max-width: 600px) {
-  .pop_global .button_pop_close {
+  .pop_global .button_close_pop {
     top: -45px;
     right: 0; } }
 
 @media (min-width: 601px) {
-  .pop_global .button_pop_close {
+  .pop_global .button_close_pop {
     top: -35px;
     right: -35px; } }
 
-.pop_warning .button_pop_close {
+.pop_warning .button_close_pop {
   border: 1px solid #666;
   top: 10px;
   right: 10px; }
-  .pop_warning .button_pop_close:focus, .pop_warning .button_pop_close:hover {
+  .pop_warning .button_close_pop:focus, .pop_warning .button_close_pop:hover {
     border-color: #4d4d4d; }
 
 .pop_warning .button_pop_submit {
