@@ -5,6 +5,9 @@
 */
 ?>
 
+<?php if($has_vimeo == 1): ?>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<?php endif; ?>
 <script src="<?php echo $dir_env; ?>/js/_global.js"></script>
 
 <?php
@@ -14,7 +17,7 @@
 */
 ?>
 
-<?php         if($nav_accordion_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
+<?php        if($nav_accordion_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
 <?php endif; if($nav_drawer_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
