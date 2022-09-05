@@ -47,6 +47,11 @@
 
 
 
+/* // Pre ------------------------------------------------------------------- */
+if($nav_pageCurrent == 'page_index'){ include('index.var.inc.php'); }
+
+if($nav_pageCurrent == 'page_PAGINA'){ include('PAGINA.var.inc.php'); }
+
 /* // Activadores ----------------------------------------------------------- */
 include('act/header.act.inc.php');
 include('act/nav.act.inc.php');
@@ -70,4 +75,13 @@ include('email.var.inc.php');
 if($has_form == 1){ include('form.var.inc.php'); }
 
 include('classes.var.inc.php');
+
+/* Entornos no-produccion */
+if($dir_env != ''){ include('xxx.var.inc.php'); }
+
+/* Solo entorno */
+if($dir_env == '/stage'){ include('xxx.var.inc.php'); }
+
+/* Solo entorno produccion */
+if(empty($dir_env)){ include('xxx.var.inc.php'); }
 ?>

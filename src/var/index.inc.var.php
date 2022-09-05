@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Section Variables [/src/var/section.var.inc.php]
+   Index / Inicio Variables [/src/var/index.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -45,5 +45,11 @@
 
 
 /* // Main ------------------------------------------------------------------ */
-$section_variable       = 1;
+$page_construccion      = 0;
+$has_form               = 0;
+$has_lightbox           = 0; // REF [26]
+$has_slider             = 0;
+$has_pop_video          = 0;
+//    $has-CUSTOMVARIABLE     = 1;
+//    $lang_GB                = 1;
 ?>

@@ -6,6 +6,20 @@
 <?php /* <link href="<?php echo $dir_env; ?>/css/styles_highContrast.css" rel="alternate stylesheet" title="High Contrast"> */ ?>
 <?php endif; ?>
 
+<?php     
+/* Entornos no-produccion */
+if($dir_env != ''):
+endif;
+
+/* Solo entorno */
+if($dir_env == '/stage'):
+endif;
+
+/* Solo entorno produccion */
+if(empty($dir_env)):
+endif;
+?>
+
 <?php
 /* // REF [24]
 <link href="<?php echo $dir_env; ?>/css/uikit.min.css" rel="stylesheet">

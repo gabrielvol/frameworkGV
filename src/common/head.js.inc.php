@@ -2,6 +2,20 @@
 <script src="<?php echo $dir_env; ?>/js/modernizr2.8.3.js"></script>
 <script src="<?php echo $dir_env; ?>/js/html5shiv.min.js"></script>
 
+<?php     
+/* Entornos no-produccion */
+if($dir_env != ''):
+endif;
+
+/* Solo entorno */
+if($dir_env == '/stage'):
+endif;
+
+/* Solo entorno produccion */
+if(empty($dir_env)):
+endif;
+?>
+
 <?php
 /* // REF [24]
 <script src="<?php echo $dir_env; ?>/js/uikit.min.js"></script>

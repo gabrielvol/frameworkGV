@@ -5,14 +5,6 @@
     
     $nav_pageCurrent        = 'page_index';
     $nav_pageCurrent_int    = 'page_home';
-    
-    $page_construccion      = 0;
-    $has_form               = 0;
-    $has_lightbox           = 0; // REF [26]
-    $has_slider             = 0;
-    $has_pop_video          = 0;
-//    $has-CUSTOMVARIABLE     = 1;
-//    $lang_GB                = 1;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php');  
     

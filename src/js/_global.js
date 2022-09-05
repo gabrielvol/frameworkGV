@@ -6,8 +6,9 @@ $(window).scroll(function () {
 /* // Separator ------------------------------------------------------------- */
 });
 
-// Smooth scroll jQuery
-// 
+/* =============================================================================
+   Smooth scroll jQuery
+   ========================================================================== */
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

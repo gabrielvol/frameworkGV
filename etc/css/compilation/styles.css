@@ -162,11 +162,6 @@
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Container Sizes ------------------------------------------------------- */
 /* Mobile / Container: 300px */
-/* iPad */
-/* 900+ */
-/* iPad Landscape */
-/* Desktop 1200+ */
-/* Desktop Large 1600+ */
 /* * NombreDeProyecto * ========================================================
    Container Variables | Etc [/etc/css/scss/var_container.scss]
    ========================================================================== */
@@ -437,6 +432,9 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav ------------------------------------------------------------------- */
+/* // Mobile 350 ------------------------------------------------------------ */
+/* // Mobile 400 ------------------------------------------------------------ */
+/* // Mobile 450 ------------------------------------------------------------ */
 /* // Mobile 500 ------------------------------------------------------------ */
 /* // 550px ----------------------------------------------------------------- */
 /* // 600px ----------------------------------------------------------------- */
@@ -997,6 +995,12 @@ a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[hre
 /* // Blockquote // REF [32] ------------------------------------------------ */
 blockquote {
   margin: 0; }
+  blockquote p {
+    quotes: "“" "”" "«" "»"; }
+    blockquote p:first-child::before {
+      content: open-quote; }
+    blockquote p:last-child::after {
+      content: close-quote; }
 
 q {
   quotes: "“" "”" "«" "»"; }
@@ -1735,9 +1739,13 @@ article, article::before, article::after, details, details::before, details::aft
   .containerADL::after {
     clear: both; }
 
-@media (max-width: 499px) {
+@media (max-width: 350px) {
   .container {
     width: 300px; } }
+
+@media (min-width: 351px) {
+  .container {
+    width: 85%; } }
 
 @media (min-width: 500px) {
   .container {
@@ -1767,11 +1775,17 @@ article, article::before, article::after, details, details::before, details::aft
   .container {
     width: 900px; } }
 
-@media (max-width: 499px) {
+@media (max-width: 350px) {
   .container.container_centered_absolute {
     position: absolute;
     left: 50%;
     margin-left: calc(-1 * calc(300px / 2)); } }
+
+@media (min-width: 351px) {
+  .container.container_centered_absolute {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-1 * calc(85% / 2)); } }
 
 @media (min-width: 500px) {
   .container.container_centered_absolute {
@@ -2460,7 +2474,8 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
 @media (max-width: 499px) {
   .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
   .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    width: 270px !important; } }
+    width: 100% !important;
+    max-width: 270px !important; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button, .tabletForm
@@ -2702,7 +2717,8 @@ form textarea {
 
 @media (max-width: 499px) {
   .mobileForm form {
-    width: 270px !important; } }
+    width: 90%;
+    max-width: 270px !important; } }
 
 @media (min-width: 500px) {
   .mobileForm form {
@@ -3350,6 +3366,16 @@ form {
       display: block; }
     #header .logo_header a {
       position: relative; }
+  @media (max-width: 350px) {
+    #header .logo_header {
+      /*
+            width: $logo_width_B350;
+*/ } }
+  @media (min-width: 351px) {
+    #header .logo_header {
+      /*
+            width: $logo_width_A350;
+*/ } }
   @media (max-width: 499px) {
     #header .logo_header {
       /*
@@ -3613,8 +3639,20 @@ nav li:focus a, nav li:hover a {
    Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav Drawer Styles | Custom [/etc/css/custom/nav_drawer.scss]
+   Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
    ========================================================================== */
+@media (max-width: 350px) {
+  .nav_main .nav_main_ul li a,
+  .nav_main .nav_main_ul li .nav_TLI {
+    padding-left: 10px;
+    font-size: 0.85rem; } }
+
+@media (min-width: 351px) and (max-width: 767px) {
+  .nav_main .nav_main_ul li a,
+  .nav_main .nav_main_ul li .nav_TLI {
+    padding-left: 20px;
+    font-size: 1rem; } }
+
 @media (max-width: 767px) {
   .nav_main {
     top: 0;
@@ -3661,9 +3699,7 @@ nav li:focus a, nav li:hover a {
         line-height: 45px; }
       .nav_main .nav_main_ul li a,
       .nav_main .nav_main_ul li .nav_TLI {
-        display: block;
-        padding-left: 20px;
-        font-size: 1rem; }
+        display: block; }
       .nav_main .nav_main_ul > li + li {
         border-top: 1px solid #8c8c8c; }
       .nav_main .nav_main_ul > .uk-active,
@@ -3679,13 +3715,13 @@ nav li:focus a, nav li:hover a {
           border-style: solid; } }
 
 /* * NombreDeProyecto * ========================================================
-   Nav Accordion Styles | Custom [/etc/css/custom/nav_accordion.scss]
+   Nav Main Accordion Styles | Custom [/etc/css/custom/nav_main_accordion.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav List Styles | Custom [/etc/css/custom/nav_list.scss]
+   Nav Main List Styles | Custom [/etc/css/custom/nav_main_list.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Nav After Tablet Styles | Custom [/etc/css/custom/nav_AT.scss]
+   Nav Main After Tablet Styles | Custom [/etc/css/custom/nav_main_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
   .nav_main .navs_container_AT {
@@ -3738,22 +3774,42 @@ nav li:focus a, nav li:hover a {
     padding-right: 10px;
     padding-left: 10px; } }
 
+@media (min-width: 1200px) {
+  .nav_main .nav_main_ul li,
+  .nav_main .nav_main_ul li a,
+  .nav_main .nav_main_ul li .nav_TLI {
+    height: 60px;
+    line-height: 60px; } }
+
+/* * NombreDeProyecto * ========================================================
+   Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
+   ========================================================================== */
+.nav_main_ul li a,
+.nav_main_ul li .nav_TLI {
+  /*
+            text-transform: uppercase;
+            */ }
+
 /* * NombreDeProyecto * ========================================================
    Page Error Styles | Custom [/etc/css/custom/page_error.scss]
    ========================================================================== */
 .page_error {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  min-height: 50vh;
+  padding-top: 30px;
+  padding-bottom: 80px; }
   .page_error h1 {
     color: #666;
     text-align: center; }
   .page_error p {
+    padding-right: 40px;
+    padding-left: 40px;
     color: #000;
+    font-size: 0.9rem;
     text-align: center; }
     .page_error p a {
       text-decoration: underline; }
   .page_error .errorType {
-    padding-bottom: 20px;
+    padding: 0 0 20px;
     color: #8c8c8c;
     font-size: 0.8rem;
     text-transform: uppercase; }

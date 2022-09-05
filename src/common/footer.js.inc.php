@@ -1,8 +1,15 @@
-<?php 
-/*
-<script src="<?php echo $dir_env; ?>/js/_smoothScroll.js"></script>
-<script src="<?php echo $dir_env; ?>/js/smoothScroll.jQuery.js"></script>
-*/
+<?php     
+/* Entornos no-produccion */
+if($dir_env != ''):
+endif;
+
+/* Solo entorno */
+if($dir_env == '/stage'):
+endif;
+
+/* Solo entorno produccion */
+if(empty($dir_env)):
+endif;
 ?>
 
 <?php if($has_vimeo == 1): ?>
@@ -10,14 +17,7 @@
 <?php endif; ?>
 <script src="<?php echo $dir_env; ?>/js/_global.js"></script>
 
-<?php
-/*
-<script src="<?php echo $dir_env; ?>/js/_topper.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_scrollSpy.js"></script>
-*/
-?>
-
-<?php        if($nav_accordion_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
+<?php if($nav_accordion_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
 <?php endif; if($nav_drawer_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
