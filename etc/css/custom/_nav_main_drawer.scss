@@ -125,6 +125,8 @@
                 > .nav_item_current{
                     background-color: $nav_item_current_level0_bgColour_BT;
                     background-image: url('#{$dir_env}/img/#{$nav_arrows_item_current_level0}');
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
                 }   
 
                 .nav_item_back{

@@ -57,10 +57,6 @@
                 
                 > .uk-active,
                 > .nav_item_current{
-                    background-color: $nav_item_current_level0_bgColour_BT;
-                    background-repeat: no-repeat;
-                    background-position: right 10px center;
-
                     > a,
                     > .nav_TLI{
                         color: $nav_item_current_level0_ftColour_BT;
