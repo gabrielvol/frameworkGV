@@ -12,12 +12,14 @@
             width: calc(100% - #{$logo_width_AT});
         } 
          
-        @if $nav_fixed_AT_act == "on"{// REF [15]
+        @if $nav_fixed_AT_act == "on"{ // REF [15]
             position: fixed;
             top: 0;
             right: 0;
             left: 0;
             box-shadow: 0 0 7px $black;
+        } @else {
+            position: relative;    
         }
         
         .navs_container_AT{// REF [05]
@@ -34,6 +36,7 @@
         }
         
         .nav_main_ul{
+            position: relative; 
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;

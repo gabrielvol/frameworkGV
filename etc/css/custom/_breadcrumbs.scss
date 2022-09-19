@@ -94,11 +94,11 @@
         padding-top: 5px;
         padding-bottom: 15px;
     
-        ul:before,
+        ul::before,
         li,
-        li:before,
+        li::before,
         a,
-        a:before{
+        a::before{
             @include equalHeightAndLineHeight(30px);
         }
 
@@ -129,13 +129,13 @@
         padding-bottom: 5px;
     
         ul,
-        ul:before,
+        ul::before,
         li,
         a{
             @include equalHeightAndLineHeight(30px);
         }   
         
-        ul:before,
+        ul::before,
         li{
             font-size: 0.72rem;
         }
@@ -175,7 +175,7 @@
     }
     
     @include afterMobile850{
-        ul:before,
+        ul::before,
         li{
             font-size: 0.8rem;
         }

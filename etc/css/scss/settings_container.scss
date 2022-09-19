@@ -45,9 +45,9 @@
 
 
 .container,
-.containerMO,
-.containerAML,
-.containerMLO,
+.containerB500,
+.containerA500,
+.container500O,
 .containerB600,
 .containerA600,
 .containerBT,
@@ -269,7 +269,7 @@
 }
 
 @if $classes_container_act_B500 == "on"{
-    .containerMO{
+    .containerB500{
         @include beforeMobile500{
             width: $container_value_B500;            
             &.container_centered_absoluteMO{    
@@ -281,7 +281,7 @@
     }
 }
 @if $classes_container_act_A500 == "on"{
-    .containerAML{
+    .containerA500{
         @include afterMobile500{
             width: $container_value_A500;
             &.container_centered_absoluteAML{
@@ -332,7 +332,7 @@
     }
 }
 @if $classes_container_act_500O == "on"{
-    .containerMLO{
+    .container500O{
         @include mobile500Only{
             width: $container_value_A500;
         }
@@ -389,7 +389,7 @@
         }
         @include afterDesktopLarge{ 
             width: $container_value_DL;
-            &.container_centered_absoluteAT{       
+            &.container_centered_absoluteA600{       
                 margin-left: $container_value_half_negative_DL; 
             }
         }

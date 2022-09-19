@@ -1674,9 +1674,9 @@ article, article::before, article::after, details, details::before, details::aft
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 .container,
-.containerMO,
-.containerAML,
-.containerMLO,
+.containerB500,
+.containerA500,
+.container500O,
 .containerB600,
 .containerA600,
 .containerBT,
@@ -1692,12 +1692,12 @@ article, article::before, article::after, details, details::before, details::aft
   margin-right: auto;
   margin-left: auto; }
   .container::before, .container::after,
-  .containerMO::before,
-  .containerMO::after,
-  .containerAML::before,
-  .containerAML::after,
-  .containerMLO::before,
-  .containerMLO::after,
+  .containerB500::before,
+  .containerB500::after,
+  .containerA500::before,
+  .containerA500::after,
+  .container500O::before,
+  .container500O::after,
   .containerB600::before,
   .containerB600::after,
   .containerA600::before,
@@ -1723,9 +1723,9 @@ article, article::before, article::after, details, details::before, details::aft
     content: " ";
     display: table; }
   .container::after,
-  .containerMO::after,
-  .containerAML::after,
-  .containerMLO::after,
+  .containerB500::after,
+  .containerA500::after,
+  .container500O::after,
   .containerB600::after,
   .containerA600::after,
   .containerBT::after,
