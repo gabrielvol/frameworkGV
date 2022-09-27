@@ -62,7 +62,7 @@
         }
     }
     
-    @include beforeMobile500{
+    @include beforeMQ500{
         @if $footer_floatedContent_act_B500 == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_B500;
@@ -83,7 +83,7 @@
         }
     }
     
-    @include afterMobile500{
+    @include afterMQ500{
         @if $footer_floatedContent_act_A500 == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_A500;
@@ -105,7 +105,7 @@
         }
     }
     
-    @include mobile500Only{
+    @include MQ500Only{
         @if $footer_floatedContent_act_500O == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_500O;
@@ -127,7 +127,7 @@
         }
     }
     
-    @include afterMobile600{
+    @include afterMQ600{
         @if $footer_floatedContent_act_A600 == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_A600;

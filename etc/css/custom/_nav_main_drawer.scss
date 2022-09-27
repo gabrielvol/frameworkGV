@@ -2,7 +2,7 @@
    Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
    ========================================================================== */
 @if $nav_drawer_act == "on"{
-    @include beforeMobile350{
+    @include beforeMQ350{
         .nav_main{
             .nav_main_ul{ 
                 li{
@@ -16,7 +16,7 @@
         }
     }
     
-    @include mobile350Only_navBT{
+    @include MQ350Only_navBT{
         .nav_main{
             .nav_main_ul{ 
                 li{

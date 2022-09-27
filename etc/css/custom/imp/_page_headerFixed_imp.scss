@@ -32,8 +32,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
+// M, T, D              = mobile, tablet, desktop
+// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -46,19 +46,19 @@
 
 
 #main{    
-    @include beforeMobile500{
+    @include beforeMQ500{
         @if $header_fixed_act_B500 == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_B500;
         }  
     }
     
-    @include afterMobile500{
+    @include afterMQ500{
         @if $header_fixed_act_A500 == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_A500;
         }     
     }
     
-    @include mobile500Only{
+    @include MQ500Only{
         @if $header_fixed_act_500O == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_500O;
         }      

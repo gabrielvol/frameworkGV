@@ -18,12 +18,12 @@
 .iframe_video_mask{
     background-color: $bgGrey3XD;
 
-    @include beforeMobile500{
+    @include beforeMQ500{
         width: $pop_video_width_B500;
         height: $pop_video_height_B500;
     }
 
-    @include afterMobile500{
+    @include afterMQ500{
         width: $pop_video_width_A500;
         height: $pop_video_heigth_A500;
     }
@@ -35,12 +35,12 @@
 }
 
 .iframe_map_mask{
-    @include beforeMobile500{
+    @include beforeMQ500{
         width: 300px;
         height: 300px;
     }
 
-    @include afterMobile500{
+    @include afterMQ500{
         width: 500px;
         height: 250px;
     }

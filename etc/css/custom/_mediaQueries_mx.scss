@@ -8,22 +8,6 @@
 //
 // Las var que establecen los tamanos, o breakpoints, a los que el CSS
 // debe responder se encuentran en `[/settings/var/mediaQueries_var.scss]`.
-//
-// Los tamanos estan organizados como:
-// Tablet [a partir de 767px]
-// Tablet Landscape [a partir de 1024px]
-// Desktop [a partir de 1200px]
-// Desktop Large [a partir de 1600px]
-//
-// Ademas hay mixins para media queries de
-// 350px, 400px, 450px, 500px, 600px, 650px, 700px, 800px, 850px, 900px y 950px
-//
-// Se pueden combinar con `before`, `after` y `only`, por ej.:
-// `beforeTablet` [hasta 766px]
-// `tabletOnly` [entre 767px y 1023px]
-//
-// Los mixins `only` tienen como limite el mas cercano de los sig. valores
-// 766px, 1023px o 1199px
 
 
 
@@ -51,8 +35,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
+// M, T, D              = mobile, tablet, desktop
+// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -73,224 +57,220 @@
     
     
 /* // Mobile 350 ------------------------------------------------------------ */
-@mixin beforeMobile350{
+@mixin beforeMQ350{
     @media (max-width: 350px){@content;}}
 
-@mixin afterMobile350{
+@mixin afterMQ350{
     @media (min-width: 351px){@content;}}
     
-@mixin mobile350Only{ // 3500px 766px
+@mixin MQ350Only{
     @media (min-width: 351px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
-@mixin mobile350Only_navBT{ // 350px navBT
+@mixin MQ350Only_navBT{
     @media (min-width: 351px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
 /* // Mobile 400 ------------------------------------------------------------ */
-@mixin beforeMobile400{
+@mixin beforeMQ400{
     @media (max-width: 400px){@content;}}
 
-@mixin afterMobile400{
+@mixin afterMQ400{
     @media (min-width: 401px){@content;}}
     
-@mixin mobile400Only{ // 400px 766px
+@mixin MQ400Only{
     @media (min-width: 401px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
-@mixin mobile400Only_navBT{ // 400px navBT
+@mixin MQ400Only_navBT{
     @media (min-width: 401px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
 /* // Mobile 450 ------------------------------------------------------------ */
-@mixin beforeMobile450{
+@mixin beforeMQ450{
     @media (max-width: 450px){@content;}}
 
-@mixin afterMobile450{
+@mixin afterMQ450{
     @media (min-width: 451px){@content;}}
     
-@mixin mobile450Only{ // 450px 766px
+@mixin MQ450Only{
     @media (min-width: 451px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
-@mixin mobile450Only_navBT{ // 45px navBT
+@mixin MQ450Only_navBT{
     @media (min-width: 451px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
 /* // Mobile 500 ------------------------------------------------------------ */
-@mixin beforeMobile500{ // 499px
-    @media (max-width: #{$mq_mobile_ancho_max}){@content;}}
+@mixin beforeMQ500{
+    @media (max-width: 500px){@content;}}
 
-@mixin afterMobile500{ // 500px
-    @media (min-width: #{$mq_mobileLandscape_ancho_min}){@content;}}
+@mixin afterMQ500{
+    @media (min-width: 501px){@content;}}
     
-@mixin mobile500Only{ // 500px 766px
-    @media (min-width: #{$mq_mobileLandscape_ancho_min})
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+@mixin MQ500Only{
+    @media (min-width: 501px)
+        and (max-width: 767px){@content;}}
     
     
 /* // 550px ----------------------------------------------------------------- */
-@mixin beforeMobile550{
+@mixin beforeMQ550{
     @media (max-width: 550px){@content;}}
     
-@mixin afterMobile550{
+@mixin afterMQ550{
     @media (min-width: 551px){@content;}}
     
-@mixin mobile550Only{ // 766px
+@mixin MQ550Only{
     @media (min-width: 551px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
     
 /* // 600px ----------------------------------------------------------------- */
-@mixin beforeMobile600{
+@mixin beforeMQ600{
     @media (max-width: 600px){@content;}}
     
-@mixin afterMobile600{
+@mixin afterMQ600{
     @media (min-width: 601px){@content;}}
     
-@mixin mobile600Only{ // 766px
+@mixin MQ600Only{
     @media (min-width: 601px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
     
 /* // 650px ----------------------------------------------------------------- */
-@mixin beforeMobile650{
+@mixin beforeMQ650{
     @media (max-width: 650px){@content;}}
     
-@mixin afterMobile650{
+@mixin afterMQ650{
     @media (min-width: 651px){@content;}}
     
-@mixin mobile650Only{ // 766px
+@mixin MQ650Only{
     @media (min-width: 651px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
     
 /* // 700px ----------------------------------------------------------------- */
-@mixin beforeMobile700{
+@mixin beforeMQ700{
     @media (max-width: 700px){@content;}}
     
-@mixin afterMobile700{
+@mixin afterMQ700{
     @media (min-width: 701px){@content;}}
     
-@mixin mobile700Only{ // 766px
+@mixin MQ700Only{
     @media (min-width: 701px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
     
 /* // 750px ----------------------------------------------------------------- */
-@mixin beforeMobile750{
+@mixin beforeMQ750{
     @media (max-width: 750px){@content;}}
     
-@mixin afterMobile750{
+@mixin afterMQ750{
     @media (min-width: 751px){@content;}}
     
-@mixin mobile750Only{ // 766px
+@mixin MQ750Only{
     @media (min-width: 751px)
-        and (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+        and (max-width: 767px){@content;}}
     
     
 /* // Tablet ---------------------------------------------------------------- */
-@mixin beforeTablet{ // 766px
-    @media (max-width: #{$mq_mobileLandscape_ancho_max}){@content;}}
+@mixin beforeTablet{
+    @media (max-width: 767px){@content;}}
 
-@mixin afterTablet{ // 767px
+@mixin afterTablet{
     @media (min-width: #{$mq_tablet_ancho_min}){@content;}}
     
-@mixin tabletOnly{ // 767px 1023px
+@mixin tabletOnly{
     @media (min-width: #{$mq_tablet_ancho_min})
         and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 800px ----------------------------------------------------------------- */
-@mixin beforeMobile800{
+@mixin beforeMQ800{
     @media (max-width: 800px){@content;}}
     
-@mixin afterMobile800{
+@mixin afterMQ800{
     @media (min-width: 801px){@content;}}
     
-@mixin mobile800Only{ // 1023px
+@mixin MQ800Only{
     @media (min-width: 801px)
         and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 850px ----------------------------------------------------------------- */
-@mixin beforeMobile850{
+@mixin beforeMQ850{
     @media (max-width: 850px){@content;}}
     
-@mixin afterMobile850{
+@mixin afterMQ850{
     @media (min-width: 851px){@content;}}
     
-@mixin mobile850Only{ // 1023px
+@mixin MQ850Only{
     @media (min-width: 851px)
         and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 900px ----------------------------------------------------------------- */
-@mixin beforeMobile900{
+@mixin beforeMQ900{
     @media (max-width: 900px){@content;}}
     
-@mixin afterMobile900{
+@mixin afterMQ900{
     @media (min-width: 901px){@content;}}
     
-@mixin mobile900Only{ // 1023px
+@mixin MQ900Only{
     @media (min-width: 901px)
         and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // 950px ----------------------------------------------------------------- */
-@mixin beforeMobile950{
+@mixin beforeMQ950{
     @media (max-width: 950px){@content;}}
     
-@mixin afterMobile950{
+@mixin afterMQ950{
     @media (min-width: 951px){@content;}}
     
-@mixin mobile950Only{ // 1023px
+@mixin MQ950Only{
     @media (min-width: 951px)
         and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
     
 /* // Tablet Landscape ------------------------------------------------------ */
-@mixin beforeTabletLandscape{ // 1023px
+@mixin beforeTabletLandscape{
     @media (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
-@mixin afterTabletLandscape{ // 1024px
+@mixin afterTabletLandscape{
     @media (min-width: #{$mq_tabletLandscape_ancho_min}){@content;}}
     
-@mixin tabletLandscapeOnly{ // 1024px 1199px
+@mixin tabletLandscapeOnly{
     @media (min-width: #{$mq_tabletLandscape_ancho_min})
         and (max-width: #{$mq_tablet_ancho_max}){@content;}}
 
-@mixin tabletAndTabletLandscapeOnly{ // 767px 1199px
+@mixin tabletAndTabletLandscapeOnly{
     @media (min-width: #{$mq_tablet_ancho_min})
         and (max-width: #{$mq_tablet_ancho_max}){@content;}}
     
     
 /* // 1100px ---------------------------------------------------------------- */
-@mixin beforeMobile1100{
+@mixin beforeMQ1100{
     @media (max-width: 1100px){@content;}}
     
-@mixin afterMobile1100{
+@mixin afterMQ1100{
     @media (min-width: 1101px){@content;}}
-    
-@mixin mobile1100Only{ // 1023px
-    @media (min-width: 1101px)
-       and (max-width: #{$mq_tablet_ancho_max}){@content;}} // 1200px
     
     
 /* // Desktop --------------------------------------------------------------- */
-@mixin beforeDesktop{ // 1199px
-    @media (max-width: #{$mq_tablet_ancho_max}){@content;}}
+@mixin beforeMQ1200{
+    @media (max-width: 1199px){@content;}}
     
-@mixin afterDesktop{ // 1200px // REF [35]
-    @media (min-width: #{$mq_desktop_ancho_min}){@content;}}
+@mixin afterMQ1200{ // REF [35]
+    @media (min-width: 1200px){@content;}}
 
     
 /* // Desktop Large + ------------------------------------------------------- */
-@mixin afterDesktopLarge{ // 1600px // REF [35]
-    @media (min-width: #{$mq_desktopLarge_ancho_min}){@content;}}
+@mixin afterMQ1600{ // REF [35]
+    @media (min-width: 1600px){@content;}}
     
 
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */

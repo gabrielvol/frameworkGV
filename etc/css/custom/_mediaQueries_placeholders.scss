@@ -2,133 +2,237 @@
    Media Queries Placeholders | Custom [/etc/css/custom/mediaQueries_placeholders.scss]
    ========================================================================== */
 
-    @include beforeMobile350{}
-    
-    @include afterMobile350{}
-    
-    @include beforeMobile500{}
-    
-    @include afterMobile500{}  
-    
-    @include beforeMobile600{}
-    
-    @include afterMobile600{}
-    
-    @include beforeTablet{}
-    
-    @include afterTablet{} 
-    
-    @include beforeTabletLandscape{}
-    
-    @include afterTabletLandscape{}  
-    
-    @include afterDesktop{}
-    
-    /* * */
-    
-    @media (min-width: 100px) and (max-width: 200px){}
-    
-    
-    @include beforeMobile350{}
-    
-    @include afterMobile350{}
-    
-    @include mobile350Only{}
-    
-    
-    
-    @include beforeMobile450{}
-    
-    @include afterMobile450{}
-    
-    @include mobile450Only{}
-    
-    
-    
-    @include beforeMobile500{}
-    
-    @include afterMobile500{}
-    
-    @include mobile500Only{}
-    
+@include beforeMQ350{}
 
-    
-    @include beforeMobile600{}
-    
-    @include afterMobile600{}
-    
-    @include mobile600Only{}
-    
+@include afterMQ350{}
 
-    
-    @include beforeMobile650{}
-    
-    @include afterMobile650{}
-    
-    @include mobile650Only{}
+@include beforeMQ500{}
 
-    
-    
-    @include beforeMobile700{}
-    
-    @include afterMobile700{}
-    
-    @include mobile700Only{}
-    
+@include afterMQ500{}  
 
-    
-    @include beforeTablet{}
-    
-    @include afterTablet{}
-    
-    @include tabletOnly{}
-    
-    
+@include beforeMQ600{}
 
-    @include beforeMobile800{}
-    
-    @include afterMobile800{}
-    
-    @include mobile800Only{}
+@include afterMQ600{}
+
+@include beforeTablet{}
+
+@include afterTablet{} 
+
+@include beforeTabletLandscape{}
+
+@include afterTabletLandscape{}  
+
+@include afterMQ1200{}
+
+/* * */
+
+@media (min-width: 100px) and (max-width: 200px){}
+
+
+@include beforeMQ350{}
+
+@include afterMQ350{}
+
+@include MQ350Only{}
 
 
 
-    @include beforeMobile850{}
+@include beforeMQ450{}
 
-    @include afterMobile850{}
+@include afterMQ450{}
 
-    @include mobile850Only{}
-    
-    
+@include MQ450Only{}
 
-    @include beforeMobile900{}
-    
-    @include afterMobile900{}
-    
-    @include mobile900Only{}
-    
 
-    
-    @include beforeTabletLandscape{}
-    
-    @include afterTabletLandscape{}
-    
-    @include tabletLandscapeOnly{}
-    
-    
-    
-    @include beforeMobile1100{}
-    
-    @include afterMobile1100{}
-    
-    @include mobile1100Only{}
-    
 
-    
-    @include beforeDesktop{}
-    
-    @include afterDesktop{}
-    
-    
-    
-    @include afterDesktopLarge{}
+@include beforeMQ500{}
+
+@include afterMQ500{}
+
+@include MQ500Only{}
+
+
+
+@include beforeMQ600{}
+
+@include afterMQ600{}
+
+@include MQ600Only{}
+
+
+
+@include beforeMQ650{}
+
+@include afterMQ650{}
+
+@include MQ650Only{}
+
+
+
+@include beforeMQ700{}
+
+@include afterMQ700{}
+
+@include MQ700Only{}
+
+
+
+@include beforeTablet{}
+
+@include afterTablet{}
+
+@include tabletOnly{}
+
+
+
+@include beforeMQ800{}
+
+@include afterMQ800{}
+
+@include MQ800Only{}
+
+
+
+@include beforeMQ850{}
+
+@include afterMQ850{}
+
+@include MQ850Only{}
+
+
+
+@include beforeMQ900{}
+
+@include afterMQ900{}
+
+@include MQ900Only{}
+
+
+
+@include beforeTabletLandscape{}
+
+@include afterTabletLandscape{}
+
+@include tabletLandscapeOnly{}
+
+
+
+@include beforeMQ1100{}
+
+@include afterMQ1100{}
+
+@include MQ1100Only{}
+
+
+
+@include beforeMQ1200{}
+
+@include afterMQ1200{}
+
+
+
+@include afterMQ1600{}
+
+
+
+@media (max-width: 350px){}
+
+@media (min-width: 351px){}
+
+@media (max-width: 500px){}
+
+@media (min-width: 501px){}
+
+@media (max-width: 600px){}
+
+@media (min-width: 601px){}
+
+@media (max-width: 767px){}
+
+@media (min-width: 768px){}
+
+@media (max-width: 1023px){}
+
+@media (min-width: 1024px){}
+
+@media (max-width: 1200px){}
+
+@media (min-width: 1201px){}
+
+
+
+@media (max-width: 350px){}
+
+@media (min-width: 351px){}
+
+@media (min-width: 351px) and (max-width: 767px){}
+
+@media (max-width: 400px){}
+
+@media (min-width: 401px){}
+
+@media (min-width: 401px) and (max-width: 767px){}
+
+@media (max-width: 450px){}
+
+@media (min-width: 451px){}
+
+@media (min-width: 451px) and (max-width: 767px){}
+
+@media (max-width: 500px){}
+
+@media (min-width: 501px){}
+
+@media (min-width: 501px) and (max-width: 767px){}
+
+@media (max-width: 550px){}
+
+@media (min-width: 551px){}
+
+@media (min-width: 551px) and (max-width: 767px){}
+
+@media (max-width: 600px){}
+
+@media (min-width: 601px){}
+
+@media (min-width: 601px) and (max-width: 767px){}
+
+@media (max-width: 650px){}
+
+@media (min-width: 651px){}
+
+@media (min-width: 651px) and (max-width: 767px){}
+
+@media (max-width: 700px){}
+
+@media (min-width: 701px){}
+
+@media (min-width: 701px) and (max-width: 767px){}
+
+@media (max-width: 767px){}
+
+@media (min-width: 768px){}
+
+@media (max-width: 800px){}
+
+@media (min-width: 801px){}
+
+@media (max-width: 850px){}
+
+@media (min-width: 851px){}
+
+@media (max-width: 900px){}
+
+@media (min-width: 901px){}
+
+@media (max-width: 1023px){}
+
+@media (min-width: 1024px){}
+
+@media (max-width: 1100px){}
+
+@media (min-width: 1101px){}
+
+@media (max-width: 1200px){}
+
+@media (min-width: 1201px){}

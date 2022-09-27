@@ -34,8 +34,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
+// M, T, D              = mobile, tablet, desktop
+// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -124,7 +124,7 @@
             background-image: url('#{$dir_env}/img/button_carousel_right.svg');
         }
         
-        @include beforeMobile350{
+        @include beforeMQ350{
             .slickPrev{
                 left: 0;
             }
@@ -141,7 +141,7 @@
             }
         }
         
-        @include afterMobile350{
+        @include afterMQ350{
             .slickPrev{
                 left: calc(#{$carousel_arrows_width_A350} / 4);
             }
@@ -158,7 +158,7 @@
             }
         }
         
-        @include afterMobile500{
+        @include afterMQ500{
             .slickPrev{
                 left: calc(#{$carousel_arrows_width_A500} / 4);
             }

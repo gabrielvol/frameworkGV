@@ -43,7 +43,7 @@
         }
     }
     
-    @include beforeMobile350{      
+    @include beforeMQ350{      
         .logo_header{
 /*
             width: $logo_width_B350;
@@ -51,7 +51,7 @@
         }
     }
     
-    @include afterMobile350{        
+    @include afterMQ350{        
         .logo_header{
 /*
             width: $logo_width_A350;
@@ -59,7 +59,7 @@
         }
     }
     
-    @include beforeMobile500{
+    @include beforeMQ500{
         .logo_header{
 /*
             width: $logo_width_B500;
@@ -67,7 +67,7 @@
         }
     }
     
-    @include afterMobile500{        
+    @include afterMQ500{        
         .logo_header{
 /*
             width: $logo_width_A500;
@@ -75,7 +75,7 @@
         }
     }
     
-    @include mobile500Only{        
+    @include MQ500Only{        
         .logo_header{
 //          width: $logo_width_500O;
         }
@@ -264,7 +264,7 @@
         }
     }
     
-    @include afterDesktop{
+    @include afterMQ1200{
         @if $header_logoNav_floated_flexbox_act_AD == "on"{
             .container{
                 display: flex;

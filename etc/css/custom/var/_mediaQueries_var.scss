@@ -32,8 +32,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
+// M, T, D              = mobile, tablet, desktop
+// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -46,19 +46,10 @@
 
 
 /* // Regular --------------------------------------------------------------- */
-$mq_mobile_ancho_max:           499px;
-$mq_mobileLandscape_ancho_min:  500px;
-
-$mq_mobileLandscape_ancho_max:  767px;
 $mq_tablet_ancho_min:           768px;
-
 $mq_tabletPortrait_ancho_max:   1023px;
 $mq_tabletLandscape_ancho_min:  1024px;
-
 $mq_tablet_ancho_max:           1199px;
-$mq_desktop_ancho_min:          1200px; // REF [35]
-
-$mq_desktopLarge_ancho_min:     1600px; // REF [35]
 
      
 /* // Nav ------------------------------------------------------------------- */

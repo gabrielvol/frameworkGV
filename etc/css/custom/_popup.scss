@@ -107,17 +107,17 @@
         padding: 20px;
     }
         
-    @include beforeMobile500{
+    @include beforeMQ500{
         width: $pop_warning_width_B500;
         margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);            
     }
 
-    @include afterMobile500{
+    @include afterMQ500{
         width: $pop_warning_width_A500;
         margin-left: calc(calc(#{$pop_warning_width_A500} * -1) / 2);    
     }
 
-    @include afterMobile600{
+    @include afterMQ600{
         width: $pop_warning_width_A600;
         margin-left: calc(calc(#{$pop_warning_width_A600} * -1) / 2);  
 
@@ -140,13 +140,13 @@
         border: $none;
     }
               
-    @include beforeMobile500{
+    @include beforeMQ500{
         width: $pop_video_width_B500;
         height: $pop_video_height_B500;
         margin-left: calc(-1 * calc(#{$pop_video_width_B500} / 2));
     }
 
-    @include afterMobile500{
+    @include afterMQ500{
         width: $pop_video_width_A500;
         height: $pop_video_heigth_A500;
         margin-left: calc(-1 * calc(#{$pop_video_width_A500} / 2));
@@ -171,17 +171,17 @@
         padding-bottom: 40px;
     }
         
-    @include beforeMobile500{
+    @include beforeMQ500{
         width: $pop_form_width_B500;
         margin-left: calc(-1 * calc(#{$pop_form_width_B500} / 2));
     }
 
-    @include afterMobile500{
+    @include afterMQ500{
         width: $pop_form_width_A500;
         margin-left: calc(-1 * calc(#{$pop_form_width_A500} / 2));
     }
 
-    @include afterMobile600{
+    @include afterMQ600{
         width: $pop_form_width_600;
         margin-left: calc(-1 * calc(#{$pop_form_width_600} / 2));
     }
@@ -241,14 +241,14 @@
         }
     }
     
-    @include beforeMobile650{
+    @include beforeMQ650{
         h2{
             padding-top: 30px;
             font-size: 1.6rem;
         }
     }
     
-    @include afterMobile650{
+    @include afterMQ650{
         h2{
             font-size: 2rem;
         }

@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
+// M, T, D              = mobile, tablet, desktop
+// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -45,7 +45,7 @@
 
 
 /* // Mobile Only Classes --------------------------------------------------- */
-@include beforeMobile500{
+@include beforeMQ500{
     @if $classes_position_display_mask_cursor_act_B500 == "on"{
 /*___ Positioning _______________________*/
         .pRelMO{position: relative}
@@ -164,7 +164,7 @@
 }
 
 /* // After Mobile Landscape Classes ---------------------------------------- */
-@include afterMobile500{
+@include afterMQ500{
     @if $classes_position_display_mask_cursor_act_A500 == "on"{
 /*___ Positioning _______________________*/
         .pRelAML{position: relative}
@@ -283,7 +283,7 @@
 }
 
 /* // After Mobile 600 Classes ---------------------------------------------- */
-@include afterMobile600{
+@include afterMQ600{
     @if $classes_position_display_mask_cursor_act_A600 == "on"{
 /*___ Positioning _______________________*/
         .pRelA600{position: relative}
@@ -401,7 +401,7 @@
 }
 
 /* // Mobile Landscape Only Classes ----------------------------------------- */
-@include mobile500Only{
+@include MQ500Only{
     @if $classes_position_display_mask_cursor_act_500O == "on"{
 /*___ Positioning _______________________*/
         .pRelMLO{position: relative}
@@ -1353,7 +1353,7 @@
 }
 
 /* // Before Desktop Classes ------------------------------------------------ */
-@include beforeDesktop{
+@include beforeMQ1200{
     @if $classes_position_display_mask_cursor_act_BD == "on"{
 /*___ Positioning _______________________*/
         .pRelBD{position: relative}
@@ -1472,7 +1472,7 @@
 }
 
 /* // After Desktop Classes ------------------------------------------------- */
-@include afterDesktop{
+@include afterMQ1200{
     @if $classes_position_display_mask_cursor_act_AD == "on"{
 /*___ Positioning _______________________*/
         .pRelAD{position: relative}

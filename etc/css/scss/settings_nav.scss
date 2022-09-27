@@ -368,7 +368,7 @@ nav{
         }
     }
     
-    @include afterDesktop{
+    @include afterMQ1200{
         @if $nav_hasSub_act == "on"{
             .nav_item_hasSubNav{
                 &:focus, &:hover{

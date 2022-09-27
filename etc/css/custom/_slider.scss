@@ -31,17 +31,17 @@
                 overflow: hidden;
             }
         
-            @include beforeMobile350{
+            @include beforeMQ350{
                 padding-right: $carousel_PH_B350;
                 padding-left: $carousel_PH_B350;
             }
         
-            @include afterMobile350{
+            @include afterMQ350{
                 padding-right: $carousel_PH_A350;
                 padding-left: $carousel_PH_A350;
             }
         
-            @include afterMobile500{
+            @include afterMQ500{
                 padding-right: $carousel_PH_A500;
                 padding-left: $carousel_PH_A500;
             }

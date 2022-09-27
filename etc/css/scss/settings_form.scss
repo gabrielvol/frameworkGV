@@ -29,7 +29,7 @@ fieldset, label, input, select, textarea, button,
             width: $form_label_width_BT;
         }
         
-        @include beforeMobile500{
+        @include beforeMQ500{
             width: $hundred;
             max-width: $form_label_width_B500;          
         }
@@ -47,7 +47,7 @@ fieldset, label, input, select, textarea, button,
         }
     }
     
-    @include afterDesktop{
+    @include afterMQ1200{
         form &{
             width: $form_label_width_AD;
         }
@@ -96,7 +96,7 @@ input, select, textarea{
         }
     }
     
-    @include afterDesktop{
+    @include afterMQ1200{
         form &{
             font-size: $form_input_ftSize_AD;
         }
@@ -109,11 +109,11 @@ input[type="submit"],
 input[type="button"],
 form button{
     .mobileForm &{
-        @include beforeMobile500{
+        @include beforeMQ500{
             width: $button_form_submit_width_B500!important;
         }
 
-        @include mobile500Only{
+        @include MQ500Only{
             width: $button_form_submit_width_500O;   
         }
 
@@ -139,7 +139,7 @@ form button{
         }
     }
 
-    @include afterDesktop{
+    @include afterMQ1200{
         form &{
             width: $button_form_submit_width_AD;
             height: $button_form_submit_height_AD;
@@ -298,16 +298,16 @@ form{
     }
     
     .mobileForm &{
-        @include beforeMobile500{
+        @include beforeMQ500{
             width: 90%;
             max-width: $form_width_B500;            
         }
         
-        @include afterMobile500{
+        @include afterMQ500{
             width: $form_width_A500;
         }
         
-        @include mobile600Only{
+        @include MQ600Only{
             width: $form_width_600Only;
         }
     } 
@@ -330,7 +330,7 @@ form{
         width: $form_width_ATL!important;
     }
     
-    @include afterDesktop{
+    @include afterMQ1200{
         width: $form_width_AD;
     }
     
@@ -361,7 +361,7 @@ form{
                 @include equalHeightAndLineHeight($form_label_height_ATL);
             }
 
-            @include afterDesktop{
+            @include afterMQ1200{
                 @include equalHeightAndLineHeight($form_label_height_AD);
             }
         }
@@ -393,7 +393,7 @@ form{
                 @include equalHeightAndLineHeight($form_input_height_ATL);
             }
 
-            @include afterDesktop{
+            @include afterMQ1200{
                 @include equalHeightAndLineHeight($form_input_height_AD);
             }
         }
@@ -439,7 +439,7 @@ form{
                 @include equalHeightAndLineHeight($form_input_height_ATL);
             }
 
-            @include afterDesktop{
+            @include afterMQ1200{
                 @include equalHeightAndLineHeight($form_input_height_AD);
             }
         }
@@ -461,7 +461,7 @@ form{
                 @include equalHeightAndLineHeight($form_label_height_ATL);
             }
 
-            @include afterDesktop{
+            @include afterMQ1200{
                 @include equalHeightAndLineHeight($form_label_height_AD);
             }
         }

@@ -32,8 +32,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
+// M, T, D              = mobile, tablet, desktop
+// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -56,19 +56,19 @@
         }
     }
     
-    @include beforeMobile500{
+    @include beforeMQ500{
         @if $page_index_fullHeight_act_B500 == "on" or $page_section_fullHeight_act_B500 == "on"{
             height: $header_height_B500;
         }
     }
     
-    @include afterMobile500{
+    @include afterMQ500{
         @if $page_index_fullHeight_act_A500 == "on" or $page_section_fullHeight_act_A500 == "on"{
             height: $header_height_A500;
         }
     }
     
-    @include mobile500Only{
+    @include MQ500Only{
         @if $page_index_fullHeight_act_500O == "on" or $page_section_fullHeight_act_500O == "on"{
             height: $header_height_500O;
         }
@@ -106,7 +106,7 @@
         }
     }
     
-    @include afterDesktop{
+    @include afterMQ1200{
         @if $page_index_fullHeight_act_AD == "on" or $page_section_fullHeight_act_AD == "on"{
             height: $header_height_AD;
         } 
