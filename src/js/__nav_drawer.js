@@ -179,3 +179,11 @@ $(document).ready(function () {
         });
     });
 });
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 60) {
+        $('.button_hamb_open').addClass('site_scrolled_js'); // REF [A]
+    } else {
+        $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [A]
+    }
+});
