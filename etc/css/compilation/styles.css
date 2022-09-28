@@ -1685,9 +1685,9 @@ article, article::before, article::after, details, details::before, details::aft
 .containerBTL,
 .containerATL,
 .containerTLO,
-.containerBD,
-.containerAD,
-.containerADL {
+.containerB1200,
+.containerA1200,
+.containerA1600 {
   padding: 0;
   margin-right: auto;
   margin-left: auto; }
@@ -1714,12 +1714,12 @@ article, article::before, article::after, details, details::before, details::aft
   .containerATL::after,
   .containerTLO::before,
   .containerTLO::after,
-  .containerBD::before,
-  .containerBD::after,
-  .containerAD::before,
-  .containerAD::after,
-  .containerADL::before,
-  .containerADL::after {
+  .containerB1200::before,
+  .containerB1200::after,
+  .containerA1200::before,
+  .containerA1200::after,
+  .containerA1600::before,
+  .containerA1600::after {
     content: " ";
     display: table; }
   .container::after,
@@ -1734,9 +1734,9 @@ article, article::before, article::after, details, details::before, details::aft
   .containerBTL::after,
   .containerATL::after,
   .containerTLO::after,
-  .containerBD::after,
-  .containerAD::after,
-  .containerADL::after {
+  .containerB1200::after,
+  .containerA1200::after,
+  .containerA1600::after {
     clear: both; }
 
 @media (max-width: 350px) {

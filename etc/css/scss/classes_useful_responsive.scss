@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -1354,7 +1354,7 @@
 
 /* // Before Desktop Classes ------------------------------------------------ */
 @include beforeMQ1200{
-    @if $classes_position_display_mask_cursor_act_BD == "on"{
+    @if $classes_position_display_mask_cursor_act_B1200 == "on"{
 /*___ Positioning _______________________*/
         .pRelBD{position: relative}
         .pAbsBD{position: absolute}
@@ -1388,7 +1388,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_BD == "on"{
+    @if $classes_lists_floats_act_B1200 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledBD, .horizontalBD{list-style: $none}
         .floatLeftBD, .horizontalBD li{float: $left}
@@ -1408,7 +1408,7 @@
         .floatNoneBD, .unstyledBD li{float: $none}
     }
     
-    @if $classes_text_act_BD == "on"{
+    @if $classes_text_act_B1200 == "on"{
 /*___ Text ______________________________*/
         .txIndentedBD{text-indent: -9999px}
         .txAlignLeftBD{text-align: left}
@@ -1423,7 +1423,7 @@
         .txCaseLowerBD{text-transform: lowercase}
     }
     
-    @if $classes_bg_bd_NO_act_BD == "on"{
+    @if $classes_bg_bd_NO_act_B1200 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banBD{border: $none}
         .bgNoneBD{
@@ -1435,14 +1435,14 @@
         .bgNoImageBD{background-image: $none}
     }
     
-    @if $helpers_spacing_act_BD == "on"{
+    @if $helpers_spacing_act_B1200 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorBD;
         .mraBD,.mhaBD{margin-right: $auto}
         .mlaBD,.mhaBD{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_BD == "on"{
+    @if $classes_flexbox_act_B1200 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexBD, .flexHorizontalBD, .flexColumnBD, .flexNoWrapBD, .flexJustifyEndBD, .flexJustifyCenterBD, .flexJustifyBetweenBD, .flexJustifyAroundBD, .flexAlignContentEndBD, .flexAlignContentCenterBD, .flexAlignContentBetweenBD, .flexAlignContentAroundBD, .flexAlignContentStretchBD, .flexAlignItemsEndBD, .flexAlignItemsCenterBD, .flexAlignItemsBaselineBD, .flexAlignItemsStretchBD, .horizontalCenterFlexBD{
             display: flex;
@@ -1473,7 +1473,7 @@
 
 /* // After Desktop Classes ------------------------------------------------- */
 @include afterMQ1200{
-    @if $classes_position_display_mask_cursor_act_AD == "on"{
+    @if $classes_position_display_mask_cursor_act_A1200 == "on"{
 /*___ Positioning _______________________*/
         .pRelAD{position: relative}
         .pAbsAD{position: absolute}
@@ -1507,7 +1507,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_AD == "on"{
+    @if $classes_lists_floats_act_A1200 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledAD, .horizontalAD{list-style: $none}
         .floatLeftAD, .horizontalAD li{float: $left}
@@ -1527,7 +1527,7 @@
         .floatNoneAD, .unstyledAD li{float: $none}
     }
     
-    @if $classes_text_act_AD == "on"{
+    @if $classes_text_act_A1200 == "on"{
 /*___ Text ______________________________*/
         .txIndentedAD{text-indent: -9999px}
         .txAlignLeftAD{text-align: left}
@@ -1542,7 +1542,7 @@
         .txCaseLowerAD{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_AD == "on"{
+    @if $classes_bg_bd_NO_act_A1200 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banAD{border: $none}
         .bgNoneAD{
@@ -1554,14 +1554,14 @@
         .bgNoImageAD{background-image: $none}
     }
     
-    @if $helpers_spacing_act_AD == "on"{
+    @if $helpers_spacing_act_A1200 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAD;
         .mraAD,.mhaAD{margin-right: $auto}
         .mlaAD,.mhaAD{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_AD == "on"{
+    @if $classes_flexbox_act_A1200 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexAD, .flexHorizontalAD, .flexColumnAD, .flexNoWrapAD, .flexJustifyEndAD, .flexJustifyCenterAD, .flexJustifyBetweenAD, .flexJustifyAroundAD, .flexAlignContentEndAD, .flexAlignContentCenterAD, .flexAlignContentBetweenAD, .flexAlignContentAroundAD, .flexAlignContentStretchAD, .flexAlignItemsEndAD, .flexAlignItemsCenterAD, .flexAlignItemsBaselineAD, .flexAlignItemsStretchAD, .horizontalCenterFlexAD{
             display: flex;

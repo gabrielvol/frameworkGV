@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -68,7 +68,7 @@ $ftSize_global:             1rem;
 $ftSize_paragraph_BT:       0.9rem;
 $ftSize_paragraph_AT:       1rem;
 $ftSize_paragraph_ATL:      $ftSize_paragraph_AT;
-$ftSize_paragraph_AD:       $ftSize_paragraph_ATL;
+$ftSize_paragraph_A1200:       $ftSize_paragraph_ATL;
 
 $text_marginTRBL_global:    0;
 $text_marginTRBL_sibling:   0.8em 0 0;
@@ -96,7 +96,7 @@ $headings_sizes_map_AT:(
     $h6_list: 1.3rem
 );
 
-$headings_sizes_map_AD:(
+$headings_sizes_map_A1200:(
     $h1_list: 2.4rem,
     $h2_list: 2.2rem,
     $h3_list: 2rem,

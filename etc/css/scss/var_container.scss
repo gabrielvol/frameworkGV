@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -54,8 +54,8 @@ $container_value_half_A600:          calc(#{$container_value_A600} / 2);
 $container_value_half_T:             calc(#{$container_value_T} / 2);
 $container_value_half_A900:          calc(#{$container_value_A900} / 2);
 $container_value_half_TL:            calc(#{$container_value_TL} / 2);
-$container_value_half_D:             calc(#{$container_value_D} / 2);
-$container_value_half_DL:            calc(#{$container_value_DL} / 2);
+$container_value_half_A1200:             calc(#{$container_value_A1200} / 2);
+$container_value_half_A1600:            calc(#{$container_value_A1600} / 2);
 
 $container_value_half_negative_B350: calc(-1 * #{$container_value_half_B350});
 $container_value_half_negative_A350: calc(-1 * #{$container_value_half_A350});
@@ -66,5 +66,5 @@ $container_value_half_negative_A600: calc(-1 * #{$container_value_half_A600});
 $container_value_half_negative_T:    calc(-1 * #{$container_value_half_T});
 $container_value_half_negative_A900: calc(-1 * #{$container_value_half_A900});
 $container_value_half_negative_TL:   calc(-1 * #{$container_value_half_TL});
-$container_value_half_negative_D:    calc(-1 * #{$container_value_half_D});
-$container_value_half_negative_DL:   calc(-1 * #{$container_value_half_DL});
+$container_value_half_negative_A1200:    calc(-1 * #{$container_value_half_A1200});
+$container_value_half_negative_A1600:   calc(-1 * #{$container_value_half_A1600});

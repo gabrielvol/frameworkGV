@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -56,9 +56,9 @@
 .containerBTL,
 .containerATL,
 .containerTLO,
-.containerBD,
-.containerAD,
-.containerADL{
+.containerB1200,
+.containerA1200,
+.containerA1600{
     padding: 0;
     margin-right: auto;
     margin-left: auto;
@@ -100,10 +100,10 @@
         width: $container_value_TL;
     }
     @include afterMQ1200{
-        width: $container_value_D;
+        width: $container_value_A1200;
     }
     @include afterMQ1600{
-        width: $container_value_DL;
+        width: $container_value_A1600;
     }
     &.container_centered_absolute{
         @include beforeMQ350{
@@ -134,10 +134,10 @@
             margin-left: $container_value_half_negative_TL;
         }
         @include afterMQ1200{
-            margin-left: $container_value_half_negative_D;
+            margin-left: $container_value_half_negative_A1200;
         }
         @include afterMQ1600{
-            margin-left: $container_value_half_negative_DL;
+            margin-left: $container_value_half_negative_A1600;
         }
     }
     @if $classes_container_act_B500 == "on"{
@@ -169,10 +169,10 @@
                 margin-left: $container_value_half_negative_TL;
             }
             @include afterMQ1200{  
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
             @include afterMQ1600{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -202,10 +202,10 @@
                 margin-left: $container_value_half_negative_TL;
             }
             @include afterMQ1200{
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
             @include afterMQ1600{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -223,10 +223,10 @@
                 margin-left: $container_value_half_negative_A900;
             }
             @include afterMQ1200{
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
             @include afterMQ1600{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -238,31 +238,31 @@
                 margin-left: $container_value_half_negative_TL;
             }
             @include afterMQ1200{  
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
             @include afterMQ1600{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
-    @if $classes_container_act_AD == "on"{
+    @if $classes_container_act_A1200 == "on"{
         &.container_centered_absoluteAD{
             @include afterMQ1200{
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
             @include afterMQ1600{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
-    @if $classes_container_act_ADL == "on"{
+    @if $classes_container_act_A1600 == "on"{
         &.container_centered_absoluteADL{
             @include afterMQ1600{
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -318,15 +318,15 @@
             }
         }
         @include afterMQ1200{
-            width: $container_value_D;
+            width: $container_value_A1200;
             &.container_centered_absoluteAML{
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
         }
         @include afterMQ1600{
-            width: $container_value_DL;
+            width: $container_value_A1600;
             &.container_centered_absoluteAML{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -382,15 +382,15 @@
             }
         }
         @include afterMQ1200{
-            width: $container_value_D;
+            width: $container_value_A1200;
             &.container_centered_absoluteA600{    
-                margin-left: $container_value_half_negative_D;    
+                margin-left: $container_value_half_negative_A1200;    
             }
         }
         @include afterMQ1600{ 
-            width: $container_value_DL;
+            width: $container_value_A1600;
             &.container_centered_absoluteA600{       
-                margin-left: $container_value_half_negative_DL; 
+                margin-left: $container_value_half_negative_A1600; 
             }
         }
     }
@@ -431,15 +431,15 @@
             }
         }
         @include afterMQ1200{
-            width: $container_value_D;
+            width: $container_value_A1200;
             &.container_centered_absoluteAT{    
-                margin-left: $container_value_half_negative_D;    
+                margin-left: $container_value_half_negative_A1200;    
             }
         }
         @include afterMQ1600{
-            width: $container_value_DL;
+            width: $container_value_A1600;
             &.container_centered_absoluteAT{       
-                margin-left: $container_value_half_negative_DL; 
+                margin-left: $container_value_half_negative_A1600; 
             }
         }
     }
@@ -481,15 +481,15 @@
             }
         }
         @include afterMQ1200{
-            width: $container_value_D;
+            width: $container_value_A1200;
             &.container_centered_absoluteATL{
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
         }
         @include afterMQ1600{
-            width: $container_value_DL;
+            width: $container_value_A1600;
             &.container_centered_absoluteATL{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -501,8 +501,8 @@
         }
     }
 }
-@if $classes_container_act_BD == "on"{
-    .containerBD{
+@if $classes_container_act_B1200 == "on"{
+    .containerB1200{
         @include beforeMQ350{
             width: $container_value_B350;
         }
@@ -526,30 +526,30 @@
         }
     }
 }
-@if $classes_container_act_AD == "on"{
-    .containerAD{
+@if $classes_container_act_A1200 == "on"{
+    .containerA1200{
         @include afterMQ1200{
-            width: $container_value_D;
+            width: $container_value_A1200;
             &.container_centered_absoluteAD{
                 position: absolute;
                 left: 50%;   
-                margin-left: $container_value_half_negative_D;
+                margin-left: $container_value_half_negative_A1200;
             }
         }
         @include afterMQ1600{
-            width: $container_value_DL;
+            width: $container_value_A1600;
             &.container_centered_absoluteAD{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
 }
-@if $classes_container_act_ADL == "on"{
-    .containerADL{
+@if $classes_container_act_A1600 == "on"{
+    .containerA1600{
         @include afterMQ1600{
-            width: $container_value_DL;
+            width: $container_value_A1600;
             &.container_centered_absoluteADL{
-                margin-left: $container_value_half_negative_DL;
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }

@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -61,7 +61,7 @@ $topper_height_global:          60px;
 $nav_height_AT:                 60px;
 $nav_height_TO:                 $nav_height_AT;
 $nav_height_ATL:                $nav_height_AT;
-$nav_height_AD:                 $nav_height_ATL;
+$nav_height_A1200:                 $nav_height_ATL;
 
 $nav_item_sub_height_AT:        $nav_height_AT;
 $nav_item_sub_height_TO:        $nav_item_sub_height_AT;

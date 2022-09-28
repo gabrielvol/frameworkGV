@@ -59,7 +59,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -77,8 +77,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -101,8 +101,8 @@ $page_index_fullHeight_act_TO:      off;
 $page_index_fullHeight_act_BTL:     off;
 $page_index_fullHeight_act_ATL:     off;
 $page_index_fullHeight_act_TLO:     off; 
-$page_index_fullHeight_act_BD:      off; 
-$page_index_fullHeight_act_AD:      off; 
+$page_index_fullHeight_act_B1200:      off; 
+$page_index_fullHeight_act_A1200:      off; 
 
 /* // 02 Index Only Full Height --------------------------------------------- */
 $page_index_only_fullHeight_act_ALL:     off;
@@ -115,5 +115,5 @@ $page_index_only_fullHeight_act_TO:      off;
 $page_index_only_fullHeight_act_BTL:     off;
 $page_index_only_fullHeight_act_ATL:     off;
 $page_index_only_fullHeight_act_TLO:     off; 
-$page_index_only_fullHeight_act_BD:      off; 
-$page_index_only_fullHeight_act_AD:      off; 
+$page_index_only_fullHeight_act_B1200:      off; 
+$page_index_only_fullHeight_act_A1200:      off; 

@@ -427,8 +427,8 @@
     }
     
     @include afterMQ1200{
-        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_ATL == "on" or $header_logoNav_floated_flexbox_act_AD == "on"{
-            width: calc(100% - #{$logo_width_AD});
+        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_ATL == "on" or $header_logoNav_floated_flexbox_act_A1200 == "on"{
+            width: calc(100% - #{$logo_width_A1200});
         }
         
         .nav_main_ul{
@@ -436,7 +436,7 @@
                 &,
                 a,
                 .nav_TLI{
-                    @include equalHeightAndLineHeight($nav_height_AD);
+                    @include equalHeightAndLineHeight($nav_height_A1200);
                 }
             }
         }

@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -49,12 +49,12 @@ $grid-gutter-width:                  30px;
 
 $container_value_B350:               300px;
 $container_value_A350:               85%;
-$container_value_B500:               85%; /* Mobile / Container: 300px */
+$container_value_B500:               85%;
 $container_value_A500:               85%;
 $container_value_B600:               85%;
 $container_value_A600:               85%;
-$container_value_T:                  720px; // iPad
-$container_value_A900:               800px; // 900+
-$container_value_TL:                 900px; // iPad Landscape
-$container_value_D:                  $container_value_TL; // Desktop 1200+ // REF [35]
-$container_value_DL:                 $container_value_D; // Desktop Large 1600+ // REF [35]
+$container_value_T:                  720px;
+$container_value_A900:               800px;
+$container_value_TL:                 900px;
+$container_value_A1200:              $container_value_TL; // Desktop 1200+ // REF [35]
+$container_value_A1600:              $container_value_A1200; // Desktop Large 1600+ // REF [35]

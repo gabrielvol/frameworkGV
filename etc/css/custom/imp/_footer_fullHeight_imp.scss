@@ -14,7 +14,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -32,8 +32,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -153,13 +153,13 @@
     }
     
     @include afterMQ1200{
-        @if $page_index_fullHeight_act_AD == "on" or $page_section_fullHeight_act_AD == "on"{
-            height: $footer_height_AD;
+        @if $page_index_fullHeight_act_A1200 == "on" or $page_section_fullHeight_act_A1200 == "on"{
+            height: $footer_height_A1200;
         }    
     
-        @if $page_index_only_fullHeight_act_AD == "on"{
+        @if $page_index_only_fullHeight_act_A1200 == "on"{
             &.footer_index{
-                height: $footer_height_AD;
+                height: $footer_height_A1200;
             }
         }   
     }

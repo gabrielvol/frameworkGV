@@ -49,7 +49,7 @@ fieldset, label, input, select, textarea, button,
     
     @include afterMQ1200{
         form &{
-            width: $form_label_width_AD;
+            width: $form_label_width_A1200;
         }
     }
 }
@@ -98,7 +98,7 @@ input, select, textarea{
     
     @include afterMQ1200{
         form &{
-            font-size: $form_input_ftSize_AD;
+            font-size: $form_input_ftSize_A1200;
         }
     }
 }
@@ -141,9 +141,9 @@ form button{
 
     @include afterMQ1200{
         form &{
-            width: $button_form_submit_width_AD;
-            height: $button_form_submit_height_AD;
-            line-height: $button_form_submit_lineHeight_AD;
+            width: $button_form_submit_width_A1200;
+            height: $button_form_submit_height_A1200;
+            line-height: $button_form_submit_lineHeight_A1200;
         }
     }
     
@@ -331,7 +331,7 @@ form{
     }
     
     @include afterMQ1200{
-        width: $form_width_AD;
+        width: $form_width_A1200;
     }
     
     @if $form_label_inside_act == "off"{
@@ -362,7 +362,7 @@ form{
             }
 
             @include afterMQ1200{
-                @include equalHeightAndLineHeight($form_label_height_AD);
+                @include equalHeightAndLineHeight($form_label_height_A1200);
             }
         }
 
@@ -394,7 +394,7 @@ form{
             }
 
             @include afterMQ1200{
-                @include equalHeightAndLineHeight($form_input_height_AD);
+                @include equalHeightAndLineHeight($form_input_height_A1200);
             }
         }
 
@@ -440,7 +440,7 @@ form{
             }
 
             @include afterMQ1200{
-                @include equalHeightAndLineHeight($form_input_height_AD);
+                @include equalHeightAndLineHeight($form_input_height_A1200);
             }
         }
         
@@ -462,7 +462,7 @@ form{
             }
 
             @include afterMQ1200{
-                @include equalHeightAndLineHeight($form_label_height_AD);
+                @include equalHeightAndLineHeight($form_label_height_A1200);
             }
         }
     }

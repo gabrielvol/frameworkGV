@@ -30,7 +30,7 @@
     }
 }
 @mixin fontCustomHeadingsSizesGeneratorDesktop{
-    @each $fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName, $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues in $headings_sizes_map_AD {
+    @each $fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName, $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues in $headings_sizes_map_A1200 {
         #{$fontCustomHeadingsSizesGeneratorDesktopMX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorDesktopMX_fontCustomSizeValues;}
     }
 }

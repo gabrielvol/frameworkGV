@@ -15,7 +15,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -33,8 +33,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -59,8 +59,8 @@ $header_height_TO:      108px;
 $header_height_BTL:     109px;
 $header_height_ATL:     110px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_ATL` 
 $header_height_TLO:     111px;
-$header_height_BD:      112px;
-$header_height_AD:      113px;
+$header_height_B1200:      112px;
+$header_height_A1200:      113px;
 
 $header_PT_BT:              0;
 $header_PB_BT:              0;

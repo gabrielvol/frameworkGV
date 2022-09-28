@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -31,8 +31,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -79,7 +79,7 @@ p, a, li, dd, dt, .pSize{
         font-size: $ftSize_paragraph_ATL;
     }
     @include afterMQ1200{
-        font-size: $ftSize_paragraph_AD;
+        font-size: $ftSize_paragraph_A1200;
     }
 }
 p, dl, legend{

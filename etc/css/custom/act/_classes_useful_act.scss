@@ -80,7 +80,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -98,8 +98,8 @@
 // H, V, A, X           = horizontal, vertical, all, custom defined
 
 ///-- Tamanos de Pantalla
-// M, T, D              = mobile, tablet, desktop
-// B, A, O, L, MQ       = before, after, only, landscape, mediaQuery
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
 
 ///-- Colores
 // X, L, D              = extra, light, dark
@@ -233,13 +233,13 @@ $classes_bg_bd_NO_act_TTLO:                     off;
 
 
 /* // Before Desktop BD ----------------------------------------------------- */
-$classes_container_act_BD:                      off;
-$helpers_spacing_act_BD:                        off;
-$classes_position_display_mask_cursor_act_BD:   off;
-$classes_flexbox_act_BD:                        off;
-$classes_lists_floats_act_BD:                   off;
-$classes_text_act_BD:                           off;
-$classes_bg_bd_NO_act_BD:                       off;
+$classes_container_act_B1200:                      off;
+$helpers_spacing_act_B1200:                        off;
+$classes_position_display_mask_cursor_act_B1200:   off;
+$classes_flexbox_act_B1200:                        off;
+$classes_lists_floats_act_B1200:                   off;
+$classes_text_act_B1200:                           off;
+$classes_bg_bd_NO_act_B1200:                       off;
 
 
 /* // After Laptop AL ------------------------------------------------------- */
@@ -253,14 +253,14 @@ $classes_bg_bd_NO_act_AL:                       off;
 
 
 /* // After Desktop AD ------------------------------------------------------ */
-$classes_container_act_AD:                      off;
-$helpers_spacing_act_AD:                        off;
-$classes_position_display_mask_cursor_act_AD:   off;
-$classes_flexbox_act_AD:                        off;
-$classes_lists_floats_act_AD:                   off;
-$classes_text_act_AD:                           off;
-$classes_bg_bd_NO_act_AD:                       off;
+$classes_container_act_A1200:                      off;
+$helpers_spacing_act_A1200:                        off;
+$classes_position_display_mask_cursor_act_A1200:   off;
+$classes_flexbox_act_A1200:                        off;
+$classes_lists_floats_act_A1200:                   off;
+$classes_text_act_A1200:                           off;
+$classes_bg_bd_NO_act_A1200:                       off;
 
 
 /* // After Desktop Large ADL ----------------------------------------------- */
-$classes_container_act_ADL:                     off;
+$classes_container_act_A1600:                     off;

@@ -265,7 +265,7 @@
     }
     
     @include afterMQ1200{
-        @if $header_logoNav_floated_flexbox_act_AD == "on"{
+        @if $header_logoNav_floated_flexbox_act_A1200 == "on"{
             .container{
                 display: flex;
                 flex-direction: row;
@@ -280,12 +280,12 @@
             @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
-                    width: $logo_width_AD;
-                    height: $logo_height_AD_before;
+                    width: $logo_width_A1200;
+                    height: $logo_height_A1200_before;
                 } 
                 
             } @else {
-                width: $logo_width_AD;
+                width: $logo_width_A1200;
             }
         }  
     }
