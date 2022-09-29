@@ -2,7 +2,7 @@ $(document).ready(function () {
 /* // Separator ------------------------------------------------------------- */
 });
 
-$(window).scroll(function () {
+$(window).scroll(function () {    
 /* // Separator ------------------------------------------------------------- */
 });
 

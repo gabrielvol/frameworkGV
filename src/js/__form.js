@@ -5,9 +5,9 @@ $(document).ready(function () {
     $('.pop_global button').click(function () {
         $('#formID').submit();
     });
-*/    
+*/
     
-/* // jQuery Datepicker ----------------------------------------------------- */
+/* // REF [23] jQuery Datepicker -------------------------------------------- */
     $("input.fecha").datepicker({
         numberOfMonths: 2,
         showButtonPanel: true

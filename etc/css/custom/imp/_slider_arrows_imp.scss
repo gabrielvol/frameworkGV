@@ -61,7 +61,6 @@
     .slickPrev,
     .slickNext{
         @include transition(0.7s);
-        @include opacityCustomHover();
         position: absolute;
         z-index: $zIndex_slider_arrows_dots;
         top: 50%;
@@ -96,8 +95,9 @@
     }
 
     @include afterTablet{
-        .slickPrev,
+        .slickPrev, 
         .slickNext{
+            @include opacityCustomHover();
             width: $slider_arrows_width_AT;
             height: $slider_arrows_height_AT;
             margin-top: calc(-1 * #{$slider_arrows_height_half_AT});

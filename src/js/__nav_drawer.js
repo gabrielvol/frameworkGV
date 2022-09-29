@@ -1,5 +1,13 @@
 var dir_env = '/stage';
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 60) {
+        $('.button_hamb_open').addClass('site_scrolled_js'); // REF [31]
+    } else {
+        $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [31]
+    }
+});
+
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {
         $(this).addClass('button_hamb_open_pressed');
@@ -178,12 +186,4 @@ $(document).ready(function () {
             return attr === 'true' ? 'false' : 'true';
         });
     });
-});
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 60) {
-        $('.button_hamb_open').addClass('site_scrolled_js'); // REF [A]
-    } else {
-        $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [A]
-    }
 });

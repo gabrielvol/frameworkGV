@@ -70,11 +70,12 @@ button{
 
 /* // Call to Action -------------------------------------------------------- */
 .callToAction{
-    // Si lleva .hoverGrow hay que comentar transition
-    //@include transition(1s);
-    transition: transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.6s, border-color 1s, box-shadow 0.6s;
-    
     @include borderStyle($button_callToAction_bdColour, 2px);
+    
+    // Si lleva .hoverGrow hay que comentar transition    
+    // @include transition(1s);
+    transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.6s, border-color 1s, box-shadow 0.6s;
+    
     display: block;
     box-sizing: border-box;
     background-color: $button_callToAction_bgColour;
@@ -85,8 +86,7 @@ button{
     text-transform: uppercase;
     text-align: center;
     
-    &, &:focus, &:hover, &:visited, &:active{
-    }
+    &, &:focus, &:hover, &:visited, &:active{}
     
     &, &:focus, &:hover{
         text-decoration: $none;
@@ -106,7 +106,6 @@ button{
         box-sizing: border-box;
     }
     
-/*
     &.CTA_white{
         &, &:focus, &:hover, &:visited, &:active{}
 
@@ -139,7 +138,6 @@ button{
             background-color: $black_rgba10;
         }
     }
-*/
     
     @include beforeMQ500{
         width: $hundred;

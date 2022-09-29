@@ -26,7 +26,7 @@ endif;
 */
 ?>
 
-<?php if($has_form == 1): /* // REF [31]
+<?php if($has_form == 1): /* // REF [23]
 <link href="<?php echo $dir_env; ?>/css/datepicker.css" rel="stylesheet">
 */
 ?>
@@ -53,8 +53,7 @@ endif;
 ?>
 
 
-<?php endif; if($nav_pageCurrent == 'page_contacto'): /* // REF [23]
-<link href="<?php echo $dir_env; ?>/css/datepicker.css" rel="stylesheet">
+<?php endif; if($nav_pageCurrent == 'page_contacto'): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */
 ?>
