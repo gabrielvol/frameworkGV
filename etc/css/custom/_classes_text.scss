@@ -1,9 +1,14 @@
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
-.txBold{
-    font-family: $ftFamily_bold_global;
-    font-weight: 400; // REF [01]
+.txBold{    
+    &,
+    a,
+    span,
+    strong{
+        font-family: $ftFamily_bold_global;
+        font-weight: 400; // REF [01]        
+    }
 }
 .txItalic{font-style: italic} 
 
