@@ -85,7 +85,7 @@
         }
     }
     
-    @include beforeTablet{
+    @include beforeMQ768{
         .slickPrev,
         .slickNext{
             width: $slider_arrows_width_BT;
@@ -94,7 +94,7 @@
         }
     }
 
-    @include afterTablet{
+    @include afterMQ768{
         .slickPrev, 
         .slickNext{
             @include opacityCustomHover();
@@ -104,7 +104,7 @@
         }
     }
 
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         .slickPrev,
         .slickNext{
             width: $slider_arrows_width_ATL;
@@ -175,7 +175,7 @@
             }
         }
         
-        @include afterTablet{
+        @include afterMQ768{
             .slickPrev{
                 left: calc(#{$carousel_arrows_width_AT} / 4);
             }
@@ -192,7 +192,7 @@
             }
         }
         
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             .slickPrev{
                 left: calc(#{$carousel_arrows_width_ATL} / 4);
             }

@@ -288,7 +288,7 @@ nav{
         }
     }     
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         > ul{
             > li{
                 a,
@@ -341,7 +341,7 @@ nav{
         }
     }    
     
-    @include tabletAndTabletLandscapeOnly{
+    @include MQ768_1200{
         .nav_main_ul{
             @if $nav_hasSub_act == "on"{
                 .nav_subNav{

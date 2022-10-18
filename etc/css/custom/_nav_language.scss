@@ -40,7 +40,7 @@
     }
 
     //@include navBT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include beforeTablet{
+    @include beforeMQ768{
         @include positionTL(15px, 20px);
         position: absolute;
            
@@ -173,7 +173,7 @@
     }
 
     //@include navAT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include afterTablet{
+    @include afterMQ768{
         @include positionTR(10px, $nav_language_ul_right_AT);
         position: absolute;
            

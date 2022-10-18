@@ -23,7 +23,7 @@
         overflow: hidden;
     }
     
-    @include beforeTablet{       
+    @include beforeMQ768{       
         li{
             a,
             img{
@@ -43,7 +43,7 @@
         }
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         li{
             a,
             img{

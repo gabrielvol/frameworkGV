@@ -18,7 +18,7 @@
     display: none; 
     background-color: $modal_bgColour_nav; 
     
-    @include afterTablet{
+    @include afterMQ768{
         display: $none;
     }
 }
@@ -152,7 +152,7 @@
         margin-left: calc(-1 * calc(#{$pop_video_width_A500} / 2));
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         width: $pop_video_width_AT;
         height: $pop_video_heigth_AT;
         margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
@@ -186,7 +186,7 @@
         margin-left: calc(-1 * calc(#{$pop_form_width_600} / 2));
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         width: $pop_form_width_AT;
         margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
     }

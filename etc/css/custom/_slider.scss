@@ -46,12 +46,12 @@
                 padding-left: $carousel_PH_A500;
             }
         
-            @include afterTablet{
+            @include afterMQ768{
                 padding-right: $carousel_PH_AT;
                 padding-left: $carousel_PH_AT;
             }
         
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 padding-right: $carousel_PH_ATL;
                 padding-left: $carousel_PH_ATL;
             }
@@ -60,17 +60,17 @@
     
     @if $slider_vertical_act == "on"{
         &.slick_vertical{        
-            @include beforeTablet{
+            @include beforeMQ768{
                 padding-right: $zero;
                 padding-left: $zero;
             }
         
-            @include afterTablet{
+            @include afterMQ768{
                 padding-right: $zero;
                 padding-left: $zero;
             }
         
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 padding-right: $zero;
                 padding-left: $zero;
             }
@@ -105,7 +105,7 @@
 */
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         &,
         .slick-list,
         .slick-track,
@@ -128,7 +128,7 @@
 */
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         &,
         .slick-list,
         .slick-track,

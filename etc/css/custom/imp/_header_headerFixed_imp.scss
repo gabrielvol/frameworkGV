@@ -94,7 +94,7 @@
         }
     }
     
-    @include MQ500Only{
+    @include MQ500_768{
         @if $header_fixed_act_500O == "on"{
             position: fixed;
             top: 0;
@@ -112,7 +112,7 @@
         }
     }
 
-    @include beforeTablet{        
+    @include beforeMQ768{        
         @if $header_fixed_act_BT == "on"{
             position: fixed;
             top: 0;
@@ -154,7 +154,7 @@
     }
 */
 
-    @include afterTablet{        
+    @include afterMQ768{        
         @if $header_fixed_act_AT == "on"{
             position: fixed;
             top: 0;
@@ -190,7 +190,7 @@
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         @if $header_fixed_act_ATL == "on"{
             position: fixed;
             top: 0;

@@ -69,13 +69,13 @@ h1, h2, h3, h4, h5, h6{
     margin: $headings_marginTRBL_global;
 }
 p, a, li, dd, dt, .pSize{
-    @include beforeTablet{
+    @include beforeMQ768{
         font-size: $ftSize_paragraph_BT;
     }
-    @include afterTablet{
+    @include afterMQ768{
         font-size: $ftSize_paragraph_AT;
     }
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         font-size: $ftSize_paragraph_ATL;
     }
     @include afterMQ1200{
@@ -128,10 +128,10 @@ a{
 @include fontFamilyCustomClassesGenerator;
 @include fontFamilyWeightsGenerator;
 
-@include beforeTablet{
+@include beforeMQ768{
     @include fontCustomHeadingsSizesGeneratorMobile; 
 }
-@include afterTablet{
+@include afterMQ768{
     @include fontCustomHeadingsSizesGeneratorTablet;   
 }
 @include afterMQ1200{

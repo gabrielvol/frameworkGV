@@ -58,19 +58,19 @@
         }     
     }
     
-    @include MQ500Only{
+    @include MQ500_768{
         @if $header_fixed_act_500O == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_500O;
         }      
     }
     
-    @include beforeTablet{        
+    @include beforeMQ768{        
         @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_BT;
         }
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_AT;
         }
@@ -88,7 +88,7 @@
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
             padding-top: $page_PT_ATL;
         }

@@ -60,7 +60,7 @@ $colours_light_map:(
     greenWhatsApp:  #25D366,
     
 //  grey4XL:        #f9f9f9,
-//  grey3XL:        #f2f2f2,
+    grey3XL:        #f2f2f2,
     grey2XL:        #e6e6e6,
     greyXL:         #dedede,
     greyL:          #b2b2b2,
@@ -132,7 +132,7 @@ $greenWhatsApp:         map-get($colours_merged_map, greenWhatsApp);
 $greenWhatsApp_hover:   darken($greenWhatsApp, 5%);
 
 //$grey4XL:           map-get($colours_merged_map, grey4XL);
-//$grey3XL:           map-get($colours_merged_map, grey3XL);
+$grey3XL:           map-get($colours_merged_map, grey3XL);
 $grey2XL:           map-get($colours_merged_map, grey2XL);
 $greyXL:            map-get($colours_merged_map, greyXL);
 $greyL:             map-get($colours_merged_map, greyL);

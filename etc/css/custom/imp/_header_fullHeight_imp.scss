@@ -68,39 +68,39 @@
         }
     }
     
-    @include MQ500Only{
+    @include MQ500_768{
         @if $page_index_fullHeight_act_500O == "on" or $page_section_fullHeight_act_500O == "on"{
             height: $header_height_500O;
         }
     }
 
     //@include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include beforeTablet{        
+    @include beforeMQ768{        
         @if $page_index_fullHeight_act_BT == "on" or $page_section_fullHeight_act_BT == "on"{
             height: $header_height_BT;
         }
     }
     
     //@include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include afterTablet{        
+    @include afterMQ768{        
         @if $page_index_fullHeight_act_AT == "on" or $page_section_fullHeight_act_AT == "on"{
             height: $header_height_AT;
         }
     }
     
-    @include tabletOnly{
+    @include MQ768_1024{
         @if $page_index_fullHeight_act_TO == "on" or $page_section_fullHeight_act_TO == "on"{
             height: $header_height_TO;
         }
     }
     
-    @include beforeTabletLandscape{
+    @include beforeMQ1024{
         @if $page_index_fullHeight_act_BTL == "on" or $page_section_fullHeight_act_BTL == "on"{
             height: $header_height_BTL;
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         @if $page_index_fullHeight_act_ATL == "on" or $page_section_fullHeight_act_ATL == "on"{
             height: $header_height_ATL;
         }

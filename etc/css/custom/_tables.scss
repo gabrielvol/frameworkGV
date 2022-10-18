@@ -51,7 +51,7 @@ table.tableRounded{
 }
     
 $table_before_width_BT: 40%;
-@include beforeTablet{
+@include beforeMQ768{
     table{
         tbody{
             display: block;
@@ -134,15 +134,15 @@ $table_before_width_BT: 40%;
         margin: 0 auto 10px;
         
         .tableResponsive{
-            @include beforeTablet{
+            @include beforeMQ768{
                 width: $table_width_BT;
                 @include tableCustomSizesBT;        
             }
-            @include afterTablet{
+            @include afterMQ768{
                 width: $table_width_AT;
                 @include tableCustomSizesAT;          
             }
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 width: $table_width_ATL;
                 @include tableCustomSizesATL;          
             }

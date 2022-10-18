@@ -181,7 +181,7 @@
         }
     }
     
-    @include afterTabletLandscape{        
+    @include afterMQ1024{        
         padding-bottom: 0;
     }
 }

@@ -14,13 +14,13 @@
 
 @include afterMQ600{}
 
-@include beforeTablet{}
+@include beforeMQ768{}
 
-@include afterTablet{} 
+@include afterMQ768{} 
 
-@include beforeTabletLandscape{}
+@include beforeMQ1024{}
 
-@include afterTabletLandscape{}  
+@include afterMQ1024{}  
 
 @include afterMQ1200{}
 
@@ -33,7 +33,7 @@
 
 @include afterMQ350{}
 
-@include MQ350Only{}
+@include MQ350_768{}
 
 
 
@@ -41,7 +41,7 @@
 
 @include afterMQ450{}
 
-@include MQ450Only{}
+@include MQ450_768{}
 
 
 
@@ -49,7 +49,7 @@
 
 @include afterMQ500{}
 
-@include MQ500Only{}
+@include MQ500_768{}
 
 
 
@@ -57,7 +57,7 @@
 
 @include afterMQ600{}
 
-@include MQ600Only{}
+@include MQ600_768{}
 
 
 
@@ -65,7 +65,7 @@
 
 @include afterMQ650{}
 
-@include MQ650Only{}
+@include MQ650_768{}
 
 
 
@@ -73,15 +73,15 @@
 
 @include afterMQ700{}
 
-@include MQ700Only{}
+@include MQ700_768{}
 
 
 
-@include beforeTablet{}
+@include beforeMQ768{}
 
-@include afterTablet{}
+@include afterMQ768{}
 
-@include tabletOnly{}
+@include MQ768_1024{}
 
 
 
@@ -89,7 +89,7 @@
 
 @include afterMQ800{}
 
-@include MQ800Only{}
+@include MQ800_1024{}
 
 
 
@@ -97,7 +97,7 @@
 
 @include afterMQ850{}
 
-@include MQ850Only{}
+@include MQ850_1024{}
 
 
 
@@ -105,15 +105,15 @@
 
 @include afterMQ900{}
 
-@include MQ900Only{}
+@include MQ900_1024{}
 
 
 
-@include beforeTabletLandscape{}
+@include beforeMQ1024{}
 
-@include afterTabletLandscape{}
+@include afterMQ1024{}
 
-@include tabletLandscapeOnly{}
+@include MQ1024_1200{}
 
 
 

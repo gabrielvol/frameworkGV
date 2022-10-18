@@ -143,14 +143,14 @@ button{
         width: $hundred;
     }
     
-    @include beforeTablet{
+    @include beforeMQ768{
         height: auto;
         padding-top: 10px;
         padding-bottom: 10px;
         line-height: 1.3;
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         @include equalHeightAndLineHeight(50px);        
     }
 }
@@ -345,7 +345,7 @@ button{
             }
         }
 
-        @include beforeTablet{
+        @include beforeMQ768{
             &.navDrawer_open{
                 &, &:focus, &:hover{
                     &::before{

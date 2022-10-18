@@ -90,13 +90,13 @@
             width: $container_value_A600;
         }
     }
-    @include afterTablet{
+    @include afterMQ768{
         width: $container_value_T;
     }
     @include afterMQ900{
         width: $container_value_A900;
     }
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         width: $container_value_TL;
     }
     @include afterMQ1200{
@@ -124,13 +124,13 @@
         @include afterMQ600{
             margin-left: $container_value_half_negative_A600;
         }
-        @include afterTablet{
+        @include afterMQ768{
             margin-left: $container_value_half_negative_T;
         }
         @include afterMQ900{
             margin-left: $container_value_half_negative_A900;
         }
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             margin-left: $container_value_half_negative_TL;
         }
         @include afterMQ1200{
@@ -159,13 +159,13 @@
             @include afterMQ600{
                 margin-left: $container_value_half_negative_A600;
             }
-            @include afterTablet{
+            @include afterMQ768{
                 margin-left: $container_value_half_negative_T;
             }
             @include afterMQ900{
                 margin-left: $container_value_half_negative_A900;
             }
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 margin-left: $container_value_half_negative_TL;
             }
             @include afterMQ1200{  
@@ -192,13 +192,13 @@
                 left: 50%;   
                 margin-left: $container_value_half_negative_A600;
             }
-            @include afterTablet{
+            @include afterMQ768{
                 margin-left: $container_value_half_negative_T;
             }
             @include afterMQ900{
                 margin-left: $container_value_half_negative_A900;
             }
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 margin-left: $container_value_half_negative_TL;
             }
             @include afterMQ1200{
@@ -211,12 +211,12 @@
     }
     @if $classes_container_act_AT == "on"{
         &.container_centered_absoluteAT{
-            @include afterTablet{
+            @include afterMQ768{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_T;
             }
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 margin-left: $container_value_half_negative_TL;
             }
             @include afterMQ900{
@@ -232,7 +232,7 @@
     }
     @if $classes_container_act_ATL == "on"{
         &.container_centered_absoluteATL{
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_TL;
@@ -290,7 +290,7 @@
                 margin-left: $container_value_half_negative_A500;
             }
         }
-        @include MQ500Only{
+        @include MQ500_768{
             width: $container_value_A500;
         }
         @include afterMQ600{
@@ -299,7 +299,7 @@
                 margin-left: $container_value_half_negative_A600;
             }
         }
-        @include afterTablet{
+        @include afterMQ768{
             width: $container_value_T;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_T;
@@ -311,7 +311,7 @@
                 margin-left: $container_value_half_negative_A900;
             }
         }
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             width: $container_value_TL;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_TL;
@@ -333,7 +333,7 @@
 }
 @if $classes_container_act_500O == "on"{
     .container500O{
-        @include MQ500Only{
+        @include MQ500_768{
             width: $container_value_A500;
         }
     }
@@ -363,7 +363,7 @@
                 margin-left: $container_value_half_negative_A600;
             }
         }
-        @include afterTablet{
+        @include afterMQ768{
             width: $container_value_T;
             &.container_centered_absoluteA600{ 
                 margin-left: $container_value_half_negative_T;        
@@ -375,7 +375,7 @@
                 margin-left: $container_value_half_negative_A900;        
             }
         }
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             width: $container_value_TL;
             &.container_centered_absoluteA600{        
                 margin-left: $container_value_half_negative_TL;
@@ -403,14 +403,14 @@
         @media (min-width: 351px) and (max-width: 499px){
             width: $container_value_A350;
         }  
-        @include MQ500Only{
+        @include MQ500_768{
             width: $container_value_A500;
         }
     }
 }
 @if $classes_container_act_AT == "on"{
     .containerAT{
-        @include afterTablet{
+        @include afterMQ768{
             width: $container_value_T;
             &.container_centered_absoluteAT{
                 position: absolute;
@@ -424,7 +424,7 @@
                 margin-left: $container_value_half_negative_A900;        
             }
         }
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             width: $container_value_TL;
             &.container_centered_absoluteAT{        
                 margin-left: $container_value_half_negative_TL;
@@ -446,7 +446,7 @@
 }
 @if $classes_container_act_TO == "on"{
     .containerTO{
-        @include tabletOnly{
+        @include MQ768_1024{
             width: $container_value_T;
         }
     }
@@ -462,17 +462,17 @@
         @include afterMQ500{
             width: $container_value_A500;
         }
-        @include MQ500Only{
+        @include MQ500_768{
             width: $container_value_A500;
         }
-        @include tabletOnly{
+        @include MQ768_1024{
             width: $container_value_T;
         }
     }
 }
 @if $classes_container_act_ATL == "on"{
     .containerATL{
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             width: $container_value_TL;
             &.container_centered_absoluteATL{
                 position: absolute;
@@ -496,7 +496,7 @@
 }
 @if $classes_container_act_TLO == "on"{
     .containerTLO{    
-        @include tabletLandscapeOnly{
+        @include MQ1024_1200{
             width: $container_value_TL;
         }
     }
@@ -512,16 +512,16 @@
         @include afterMQ500{
             width: $container_value_A500;
         }
-        @include MQ500Only{
+        @include MQ500_768{
             width: $container_value_A500;
         }
-        @include afterTablet{
+        @include afterMQ768{
             width: $container_value_T;
         }
         @include afterMQ900{
             width: $container_value_A900;
         }
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             width: $container_value_TL;
         }
     }

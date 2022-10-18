@@ -20,7 +20,7 @@
         }
     }
     
-    @include beforeTablet{
+    @include beforeMQ768{
         width: $form_input_search_width_BT;
     
         input{
@@ -39,7 +39,7 @@
         }
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         width: $form_input_search_width_AT;
     
         input{

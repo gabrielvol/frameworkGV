@@ -1,7 +1,7 @@
 /* * NombreDeProyecto * ========================================================
    Hover Classes | Custom [/etc/css/custom/hover.scss]
    ========================================================================== */
-@include afterTablet{
+@include afterMQ768{
     // REF [19]
     .hover_grow_S_ani,
     .hover_grow_M_ani,

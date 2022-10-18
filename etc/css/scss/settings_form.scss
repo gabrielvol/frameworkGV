@@ -3,7 +3,7 @@
    ========================================================================== */
 form, fieldset, label, input, select, textarea, button,
 .form_label_name, .form_validation_span{
-    @include beforeTablet{
+    @include beforeMQ768{
         .mobileForm &{
             clear: both!important;
             float: $none;
@@ -12,7 +12,7 @@ form, fieldset, label, input, select, textarea, button,
         }
     }
     
-    @include tabletOnly{
+    @include MQ768_1024{
         .tabletForm &{
             clear: both!important;
             float: $none;
@@ -25,7 +25,7 @@ form, fieldset, label, input, select, textarea, button,
 fieldset, label, input, select, textarea, button,
 .form_validation_div, .form_validation_span, .form_status, .form_label_name{
     .mobileForm &{
-        @include beforeTablet{
+        @include beforeMQ768{
             width: $form_label_width_BT;
         }
         
@@ -35,13 +35,13 @@ fieldset, label, input, select, textarea, button,
         }
     }
     
-    @include tabletOnly{
+    @include MQ768_1024{
         .tabletForm &{
             width: $form_label_width_TO;
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         form &{
             width: $form_label_width_ATL;
         }
@@ -56,19 +56,19 @@ fieldset, label, input, select, textarea, button,
 
 fieldset, label, button,
 .form_validation_div, .form_validation_span, .form_status, .form_label_name{
-    @include beforeTablet{
+    @include beforeMQ768{
         .mobileForm &{
             font-size: $form_ftSize_BT;
         }
     }
     
-    @include tabletOnly{
+    @include MQ768_1024{
         .tabletForm &{
             font-size: $form_ftSize_AT;
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         form &{
             font-size: $form_ftSize_ATL;
         }
@@ -79,18 +79,18 @@ input, select, textarea{
     caret-color: $form_input_caret_colour;
     
     .mobileForm &{
-        @include beforeTablet{
+        @include beforeMQ768{
             font-size: $form_input_ftSize_BT;
         }
     }
     
-    @include tabletOnly{
+    @include MQ768_1024{
         .tabletForm &{
             font-size: $form_input_ftSize_AT;
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         form &{
             font-size: $form_input_ftSize_ATL;
         }
@@ -113,25 +113,25 @@ form button{
             width: $button_form_submit_width_B500!important;
         }
 
-        @include MQ500Only{
+        @include MQ500_768{
             width: $button_form_submit_width_500O;   
         }
 
-        @include beforeTablet{
+        @include beforeMQ768{
             height: $button_form_submit_height_BT;
             line-height: $button_form_submit_lineHeight_BT;
         }
     }
     
     .tabletForm &{
-        @include tabletOnly{
+        @include MQ768_1024{
             width: $button_form_submit_width_TO;
             height: $button_form_submit_height_TO;
             line-height: $button_form_submit_lineHeight_TO;
         }  
     }
 
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         form &{
             width: $button_form_submit_width_ATL;
             height: $button_form_submit_height_ATL;
@@ -307,26 +307,26 @@ form{
             width: $form_width_A500;
         }
         
-        @include MQ600Only{
+        @include MQ600_768{
             width: $form_width_600Only;
         }
     } 
     
     .tabletForm &{
-        @include afterTablet{
+        @include afterMQ768{
             width: $form_width_AT;
         }
         
-        @include tabletOnly{
+        @include MQ768_1024{
             width: $form_width_TO;
         }
     
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             width: $form_width_ATL!important;
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         width: $form_width_ATL!important;
     }
     
@@ -345,19 +345,19 @@ form{
                 font-weight: $form_label_ftWeight;
             }
 
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     @include equalHeightAndLineHeight($form_label_height_BT);
                 }
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     @include equalHeightAndLineHeight($form_label_height_TO);          
                 }
             }
 
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 @include equalHeightAndLineHeight($form_label_height_ATL);
             }
 
@@ -377,19 +377,19 @@ form{
         }
 
         input, select{
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     @include equalHeightAndLineHeight($form_input_height_BT);
                 }
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     @include equalHeightAndLineHeight($form_input_height_TO);          
                 }
             }
 
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 @include equalHeightAndLineHeight($form_input_height_ATL);
             }
 
@@ -399,19 +399,19 @@ form{
         }
 
         input, select, textarea{
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     margin-bottom: $helpers_spacing_PM_large;
                 }
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     margin-bottom: $helpers_spacing_PM_large;       
                 }
             }
 
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 margin-bottom: $helpers_spacing_PM_medium;
             }
         }
@@ -423,19 +423,19 @@ form{
         }
     
         fieldset span, input, select{
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     @include equalHeightAndLineHeight($form_input_height_BT);
                 }        
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     @include equalHeightAndLineHeight($form_input_height_TO);
                 }
             }
 
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 @include equalHeightAndLineHeight($form_input_height_ATL);
             }
 
@@ -445,19 +445,19 @@ form{
         }
         
         .form_label_name{
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     @include equalHeightAndLineHeight($form_label_height_BT);
                 }        
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     @include equalHeightAndLineHeight($form_label_height_TO);
                 }
             }
 
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 @include equalHeightAndLineHeight($form_label_height_ATL);
             }
 

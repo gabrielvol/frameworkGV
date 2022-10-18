@@ -56,62 +56,62 @@
     @media (min-width: #{$mq_nav_AT}){@content;}}
     
     
-/* // Mobile 350 ------------------------------------------------------------ */
+/* // 350px ----------------------------------------------------------------- */
 @mixin beforeMQ350{
     @media (max-width: 350px){@content;}}
 
 @mixin afterMQ350{
     @media (min-width: 351px){@content;}}
     
-@mixin MQ350Only{
+@mixin MQ350_768{
     @media (min-width: 351px)
         and (max-width: 767px){@content;}}
     
-@mixin MQ350Only_navBT{
+@mixin MQ350_navBT{
     @media (min-width: 351px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
-/* // Mobile 400 ------------------------------------------------------------ */
+/* // 400px ----------------------------------------------------------------- */
 @mixin beforeMQ400{
     @media (max-width: 400px){@content;}}
 
 @mixin afterMQ400{
     @media (min-width: 401px){@content;}}
     
-@mixin MQ400Only{
+@mixin MQ400_768{
     @media (min-width: 401px)
         and (max-width: 767px){@content;}}
     
-@mixin MQ400Only_navBT{
+@mixin MQ400_navBT{
     @media (min-width: 401px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
-/* // Mobile 450 ------------------------------------------------------------ */
+/* // 450px ----------------------------------------------------------------- */
 @mixin beforeMQ450{
     @media (max-width: 450px){@content;}}
 
 @mixin afterMQ450{
     @media (min-width: 451px){@content;}}
     
-@mixin MQ450Only{
+@mixin MQ450_768{
     @media (min-width: 451px)
         and (max-width: 767px){@content;}}
     
-@mixin MQ450Only_navBT{
+@mixin MQ450_navBT{
     @media (min-width: 451px)
         and (max-width: #{$mq_nav_BT}){@content;}}
     
     
-/* // Mobile 500 ------------------------------------------------------------ */
+/* // 500px ----------------------------------------------------------------- */
 @mixin beforeMQ500{
     @media (max-width: 500px){@content;}}
 
 @mixin afterMQ500{
     @media (min-width: 501px){@content;}}
     
-@mixin MQ500Only{
+@mixin MQ500_768{
     @media (min-width: 501px)
         and (max-width: 767px){@content;}}
     
@@ -123,7 +123,7 @@
 @mixin afterMQ550{
     @media (min-width: 551px){@content;}}
     
-@mixin MQ550Only{
+@mixin MQ550_768{
     @media (min-width: 551px)
         and (max-width: 767px){@content;}}
     
@@ -135,7 +135,7 @@
 @mixin afterMQ600{
     @media (min-width: 601px){@content;}}
     
-@mixin MQ600Only{
+@mixin MQ600_768{
     @media (min-width: 601px)
         and (max-width: 767px){@content;}}
     
@@ -147,7 +147,7 @@
 @mixin afterMQ650{
     @media (min-width: 651px){@content;}}
     
-@mixin MQ650Only{
+@mixin MQ650_768{
     @media (min-width: 651px)
         and (max-width: 767px){@content;}}
     
@@ -159,7 +159,7 @@
 @mixin afterMQ700{
     @media (min-width: 701px){@content;}}
     
-@mixin MQ700Only{
+@mixin MQ700_768{
     @media (min-width: 701px)
         and (max-width: 767px){@content;}}
     
@@ -171,21 +171,21 @@
 @mixin afterMQ750{
     @media (min-width: 751px){@content;}}
     
-@mixin MQ750Only{
-    @media (min-width: 751px)
-        and (max-width: 767px){@content;}}
     
-    
-/* // Tablet ---------------------------------------------------------------- */
-@mixin beforeTablet{
+/* // 768px ----------------------------------------------------------------- */
+@mixin beforeMQ768{
     @media (max-width: 767px){@content;}}
 
-@mixin afterTablet{
-    @media (min-width: #{$mq_tablet_ancho_min}){@content;}}
+@mixin afterMQ768{
+    @media (min-width: 768px){@content;}}
     
-@mixin tabletOnly{
-    @media (min-width: #{$mq_tablet_ancho_min})
-        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
+@mixin MQ768_1024{
+    @media (min-width: 768px)
+        and (max-width: 1023px){@content;}}
+
+@mixin MQ768_1200{
+    @media (min-width: 768px)
+        and (max-width: 1199px){@content;}}
     
     
 /* // 800px ----------------------------------------------------------------- */
@@ -195,9 +195,9 @@
 @mixin afterMQ800{
     @media (min-width: 801px){@content;}}
     
-@mixin MQ800Only{
+@mixin MQ800_1024{
     @media (min-width: 801px)
-        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
+        and (max-width: 1023px){@content;}}
     
     
 /* // 850px ----------------------------------------------------------------- */
@@ -207,9 +207,9 @@
 @mixin afterMQ850{
     @media (min-width: 851px){@content;}}
     
-@mixin MQ850Only{
+@mixin MQ850_1024{
     @media (min-width: 851px)
-        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
+        and (max-width: 1023px){@content;}}
     
     
 /* // 900px ----------------------------------------------------------------- */
@@ -219,9 +219,9 @@
 @mixin afterMQ900{
     @media (min-width: 901px){@content;}}
     
-@mixin MQ900Only{
+@mixin MQ900_1024{
     @media (min-width: 901px)
-        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
+        and (max-width: 1023px){@content;}}
     
     
 /* // 950px ----------------------------------------------------------------- */
@@ -231,25 +231,17 @@
 @mixin afterMQ950{
     @media (min-width: 951px){@content;}}
     
-@mixin MQ950Only{
-    @media (min-width: 951px)
-        and (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
     
+/* // 1024px ---------------------------------------------------------------- */
+@mixin beforeMQ1024{
+    @media (max-width: 1023px){@content;}}
     
-/* // Tablet Landscape ------------------------------------------------------ */
-@mixin beforeTabletLandscape{
-    @media (max-width: #{$mq_tabletPortrait_ancho_max}){@content;}}
+@mixin afterMQ1024{
+    @media (min-width: 1024px){@content;}}
     
-@mixin afterTabletLandscape{
-    @media (min-width: #{$mq_tabletLandscape_ancho_min}){@content;}}
-    
-@mixin tabletLandscapeOnly{
-    @media (min-width: #{$mq_tabletLandscape_ancho_min})
-        and (max-width: #{$mq_tablet_ancho_max}){@content;}}
-
-@mixin tabletAndTabletLandscapeOnly{
-    @media (min-width: #{$mq_tablet_ancho_min})
-        and (max-width: #{$mq_tablet_ancho_max}){@content;}}
+@mixin MQ1024_1200{
+    @media (min-width: 1024px)
+        and (max-width: 1199px){@content;}}
     
     
 /* // 1100px ---------------------------------------------------------------- */
@@ -260,7 +252,7 @@
     @media (min-width: 1101px){@content;}}
     
     
-/* // Desktop --------------------------------------------------------------- */
+/* // 1200px ---------------------------------------------------------------- */
 @mixin beforeMQ1200{
     @media (max-width: 1199px){@content;}}
     
@@ -268,7 +260,7 @@
     @media (min-width: 1200px){@content;}}
 
     
-/* // Desktop Large + ------------------------------------------------------- */
+/* // 1600px ---------------------------------------------------------------- */
 @mixin afterMQ1600{ // REF [35]
     @media (min-width: 1600px){@content;}}
     

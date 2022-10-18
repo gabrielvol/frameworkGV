@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -84,16 +84,16 @@ $site_tel_PHONEA_call_anchor        = '<a '. $site_tel_PHONEA_call_href .'>'. $s
     
         
 /* // Telephone number 0800 ------------------------------------------------- */
- $site_tel_PHONE0800_a                  = '0800';
- $site_tel_PHONE0800_b                  = '111';
- $site_tel_PHONE0800_c                  = '9999';
+$site_tel_PHONE0800_a                  = '0800';
+$site_tel_PHONE0800_b                  = '111';
+$site_tel_PHONE0800_c                  = '9999';
     
- $site_tel_PHONE0800                    = $site_tel_PHONE0800_a . $site_tel_PHONE0800_b . $site_tel_PHONE0800_c;
- $site_tel_PHONE0800_formatted          = $site_tel_PHONE0800_a .'-'. $site_tel_PHONE0800_b .'-'. $site_tel_PHONE0800_c;
-        
- $site_tel_PHONE0800_call               = 'wtai://wp/mc;'. $site_tel_PHONE0800;
- $site_tel_PHONE0800_call_href          = 'href="'. $site_tel_PHONE0800_call .'"';
- $site_tel_PHONE0800_call_anchor        = '<a '. $site_tel_PHONE0800_call_href .'>'. $site_tel_PHONE0800_formatted .'</a>'; 
+$site_tel_PHONE0800                    = $site_tel_PHONE0800_a . $site_tel_PHONE0800_b . $site_tel_PHONE0800_c;
+$site_tel_PHONE0800_formatted          = $site_tel_PHONE0800_a .'-'. $site_tel_PHONE0800_b .'-'. $site_tel_PHONE0800_c;
+       
+$site_tel_PHONE0800_call               = 'wtai://wp/mc;'. $site_tel_PHONE0800;
+$site_tel_PHONE0800_call_href          = 'href="'. $site_tel_PHONE0800_call .'"';
+$site_tel_PHONE0800_call_anchor        = '<a '. $site_tel_PHONE0800_call_href .'>'. $site_tel_PHONE0800_formatted .'</a>'; 
     
     
         

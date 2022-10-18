@@ -4,15 +4,15 @@
 table{
     border-spacing: 0;
     border-collapse: collapse;
-    @include beforeTablet{
+    @include beforeMQ768{
         width: $table_width_BT;
         @include tableCustomSizesBT;        
     }
-    @include afterTablet{
+    @include afterMQ768{
         width: $table_width_AT;
         @include tableCustomSizesAT;          
     }
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         width: $table_width_ATL;
         @include tableCustomSizesATL;          
     }     
@@ -60,7 +60,7 @@ table{
         }
     }
     
-    @include beforeTablet{
+    @include beforeMQ768{
         tr{
             th, td{
                 &:first-child{
@@ -73,7 +73,7 @@ table{
         }
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         tr{
             th{
                 &:first-child{
@@ -105,7 +105,7 @@ table{
         }        
     }
 }
-@include beforeTablet{
+@include beforeMQ768{
     table{
         width: $table_width_BT;
         

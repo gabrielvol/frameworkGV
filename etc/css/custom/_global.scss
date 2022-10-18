@@ -49,13 +49,13 @@
 @import 'imp/page_headerFixed_imp';
 
 #main{
-    @include beforeTablet{
+    @include beforeMQ768{
         @if $nav_accordion_act == "on"{
             padding-top: $header_navAccordion_height_BT;
         }
     }
     
-    @include afterTablet{       
+    @include afterMQ768{       
         @if $nav_topper_act == "on"{
             min-height: 700px;        
         }

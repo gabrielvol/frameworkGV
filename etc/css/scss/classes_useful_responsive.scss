@@ -401,7 +401,7 @@
 }
 
 /* // Mobile Landscape Only Classes ----------------------------------------- */
-@include MQ500Only{
+@include MQ500_768{
     @if $classes_position_display_mask_cursor_act_500O == "on"{
 /*___ Positioning _______________________*/
         .pRelMLO{position: relative}
@@ -520,7 +520,7 @@
 }
 
 /* // Before Tablet Classes ------------------------------------------------- */
-@include beforeTablet{
+@include beforeMQ768{
     @if $classes_position_display_mask_cursor_act_BT == "on"{
 /*___ Positioning _______________________*/
         .pRelBT{position: relative}
@@ -639,7 +639,7 @@
 }
 
 /* // Before Tablet Landscape Classes --------------------------------------- */
-@include beforeTabletLandscape{
+@include beforeMQ1024{
     @if $classes_position_display_mask_cursor_act_BTL == "on"{
 /*___ Positioning _______________________*/
         .pRelBTL{position: relative}
@@ -758,7 +758,7 @@
 }
 
 /* // Tablet Only Classes --------------------------------------------------- */
-@include tabletOnly{
+@include MQ768_1024{
     @if $classes_position_display_mask_cursor_act_TO == "on"{
 /*___ Positioning _______________________*/
         .pRelTO{position: relative}
@@ -877,7 +877,7 @@
 }
 
 /* // After Tablet Classes -------------------------------------------------- */
-@include afterTablet{
+@include afterMQ768{
     @if $classes_position_display_mask_cursor_act_AT == "on"{
 /*___ Positioning _______________________*/
         .pRelAT{position: relative}
@@ -996,7 +996,7 @@
 }
 
 /* // After Tablet Landscape Classes ---------------------------------------- */
-@include afterTabletLandscape{
+@include afterMQ1024{
     @if $classes_position_display_mask_cursor_act_ATL == "on"{
 /*___ Positioning _______________________*/
         .pRelATL{position: relative}
@@ -1115,7 +1115,7 @@
 }
 
 /* // Tablet Landscape Only Classes ----------------------------------------- */
-@include tabletLandscapeOnly{
+@include MQ1024_1200{
     @if $classes_position_display_mask_cursor_act_TLO == "on"{
 /*___ Positioning _______________________*/
         .pRelTLO{position: relative}
@@ -1234,7 +1234,7 @@
 }
 
 /* // Tablet And Tablet Landscape Only Classes ------------------------------ */
-@include tabletAndTabletLandscapeOnly{
+@include MQ768_1200{
     @if $classes_position_display_mask_cursor_act_TTLO == "on"{
 /*___ Positioning _______________________*/
         .pRelTTLO{position: relative}

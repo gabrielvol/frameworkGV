@@ -16,7 +16,7 @@
         }
     }
     
-    @include MQ350Only_navBT{
+    @include MQ350_navBT{
         .nav_main{
             .nav_main_ul{ 
                 li{

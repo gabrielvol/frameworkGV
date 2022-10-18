@@ -28,7 +28,7 @@
         height: $pop_video_heigth_A500;
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         width: $pop_video_width_AT;
         height: $pop_video_heigth_AT;
     }
@@ -45,7 +45,7 @@
         height: 250px;
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         width: 600px;
         height: 330px;
     }

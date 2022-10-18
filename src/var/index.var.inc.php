@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -45,6 +45,7 @@
 
 
 /* // Main ------------------------------------------------------------------ */
+/*___ Elements __________________________*/
 $page_construccion      = 0;
 $has_form               = 0;
 $has_lightbox           = 0; // REF [26]

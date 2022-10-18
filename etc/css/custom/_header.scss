@@ -75,14 +75,14 @@
         }
     }
     
-    @include MQ500Only{        
+    @include MQ500_768{        
         .logo_header{
 //          width: $logo_width_500O;
         }
     }
 
     //@include navBT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include beforeTablet{
+    @include beforeMQ768{
         box-sizing: border-box;
         padding-top: $header_PT_BT;
         padding-bottom: $header_PB_BT;    
@@ -170,7 +170,7 @@
     }
     
     //@include navAT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include afterTablet{
+    @include afterMQ768{
         @if $header_logoNav_floated_flexbox_act_AT == "on"{
             .container{
                 display: flex;
@@ -238,7 +238,7 @@
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         @if $header_logoNav_floated_flexbox_act_ATL == "on"{
             .container{
                 display: flex;

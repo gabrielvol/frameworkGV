@@ -11,11 +11,11 @@
     }
 
     //@include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include beforeTablet{
+    @include beforeMQ768{
     }
 
     //@include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-    @include afterTablet{
+    @include afterMQ768{
         width: $nav_language_ul_width_AT;
         margin-top: -1px;
         
@@ -41,7 +41,7 @@
         }
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         a{
             font-size: 0.9rem;// REF [I]
         }

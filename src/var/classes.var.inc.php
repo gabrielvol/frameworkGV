@@ -16,7 +16,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -72,6 +72,9 @@ $classes_SECTION            = 'class="'. $class_ini_SECTION . $class_end_SECTION
 if($nav_pageCurrent         == 'page_index'):
     $class_ini_header       .= 'header_index '; endif;  
 
+if($page_int                == 1):
+    $class_ini_header       .= 'header_int '; endif; 
+
 if($nav_pageCurrent         == 'page_PAGEINT'):
     $class_ini_header       .= 'error_alert error_alert_a '; endif;
         
@@ -90,6 +93,9 @@ $classes_header             = 'class="'. $class_ini_header . $class_end_header .
 
 if($nav_pageCurrent         == 'page_index'):
     $class_ini_footer       .= 'footer_index '; endif;
+
+if($page_int                == 1):
+    $class_ini_footer       .= 'footer_int '; endif; 
     
 if($nav_pageCurrent         == 'page_PAGEINT'):
     $class_ini_footer       .= 'error_alert error_alert_a '; endif;

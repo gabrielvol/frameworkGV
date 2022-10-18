@@ -73,7 +73,7 @@ fieldset{
 
 .form_validation_div,
 .form_status{    
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         @include centerCustom(80%);
     }
 }
@@ -160,20 +160,20 @@ form{
 /*
         resize: none;
 */
-        @include beforeTablet{
+        @include beforeMQ768{
             height: 100px;
         }
 
-        @include afterTablet{
+        @include afterMQ768{
             height: 100px;
         }
 
-        @include afterTabletLandscape{
+        @include afterMQ1024{
             height: 100px;        
         }
 
         @if $form_label_inside_act == "off"{
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 margin-bottom: $helpers_spacing_PM_large;
             }        
         }
@@ -318,7 +318,7 @@ form{
             }
         }
         
-        @include afterTablet{
+        @include afterMQ768{
             @include centerCustom(50%);
             margin-top: 30px;
         }
@@ -335,19 +335,19 @@ form{
     @if $form_label_inside_act == "on"{
         fieldset,
         label{
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     margin-bottom: $helpers_spacing_PM_large;
                 }
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     margin-bottom: $helpers_spacing_PM_large;       
                 }
             }
 
-            @include afterTabletLandscape{
+            @include afterMQ1024{
                 margin-bottom: $helpers_spacing_PM_medium;
             }
         }
@@ -359,7 +359,7 @@ form{
                 margin-right: 5px!important;
             }
 
-            @include beforeTablet{
+            @include beforeMQ768{
                 .mobileForm &{
                     .radio{
                         width: $form_input_radio_height_BT!important;
@@ -381,7 +381,7 @@ form{
                 }
             }
 
-            @include tabletOnly{
+            @include MQ768_1024{
                 .tabletForm &{
                     .radio{
                         width: $form_input_radio_height_TO!important;

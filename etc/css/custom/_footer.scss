@@ -105,7 +105,7 @@
         }
     }
     
-    @include MQ500Only{
+    @include MQ500_768{
         @if $footer_floatedContent_act_500O == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_500O;
@@ -149,7 +149,7 @@
         }
     }
     
-    @include afterTablet{
+    @include afterMQ768{
         @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_AT == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_AT;
@@ -172,7 +172,7 @@
         }
     }
     
-    @include beforeTabletLandscape{
+    @include beforeMQ1024{
         .logo_footer_container{
 /*            
             width: $footer_logoFloated_width_BTL;
@@ -186,7 +186,7 @@
         }  
     }
     
-    @include afterTabletLandscape{
+    @include afterMQ1024{
         @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_ATL == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_ATL;

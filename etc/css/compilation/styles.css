@@ -161,7 +161,6 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Container Sizes ------------------------------------------------------- */
-/* Mobile / Container: 300px */
 /* * NombreDeProyecto * ========================================================
    Container Variables | Etc [/etc/css/scss/var_container.scss]
    ========================================================================== */
@@ -192,6 +191,11 @@
 /* * NombreDeProyecto * ========================================================
    Shadows Variables | Custom [/etc/css/custom/var/shadows_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/*___ Background Shadow _________________*/
+/*___ Text Shadow _______________________*/
+/*___ Box Shadow ________________________*/
 /* * NombreDeProyecto * ========================================================
    Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
    ========================================================================== */
@@ -395,7 +399,7 @@
    Secondary Separator
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* // Secondary Separator --------------------------------------------------- */
-/*___ Secondary ________________________________________________________*/
+/*___ Secondary _________________________*/
 /* * NombreDeProyecto * ========================================================
    Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
    ========================================================================== */
@@ -432,24 +436,24 @@
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav ------------------------------------------------------------------- */
-/* // Mobile 350 ------------------------------------------------------------ */
-/* // Mobile 400 ------------------------------------------------------------ */
-/* // Mobile 450 ------------------------------------------------------------ */
-/* // Mobile 500 ------------------------------------------------------------ */
+/* // 350px ----------------------------------------------------------------- */
+/* // 400px ----------------------------------------------------------------- */
+/* // 450px ----------------------------------------------------------------- */
+/* // 500px ----------------------------------------------------------------- */
 /* // 550px ----------------------------------------------------------------- */
 /* // 600px ----------------------------------------------------------------- */
 /* // 650px ----------------------------------------------------------------- */
 /* // 700px ----------------------------------------------------------------- */
 /* // 750px ----------------------------------------------------------------- */
-/* // Tablet ---------------------------------------------------------------- */
+/* // 768px ----------------------------------------------------------------- */
 /* // 800px ----------------------------------------------------------------- */
 /* // 850px ----------------------------------------------------------------- */
 /* // 900px ----------------------------------------------------------------- */
 /* // 950px ----------------------------------------------------------------- */
-/* // Tablet Landscape ------------------------------------------------------ */
+/* // 1024px ---------------------------------------------------------------- */
 /* // 1100px ---------------------------------------------------------------- */
-/* // Desktop --------------------------------------------------------------- */
-/* // Desktop Large + ------------------------------------------------------- */
+/* // 1200px ---------------------------------------------------------------- */
+/* // 1600px ---------------------------------------------------------------- */
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */
 /* // iPhone 4 & 4S Portrait Only ------------------------------------------- */
 /* // iPhone 4 & 4S Landscape Only ------------------------------------------ */
@@ -865,6 +869,15 @@ a.greenWhatsApp, a.greenWhatsApp:active, a.greenWhatsApp:visited, a.greenWhatsAp
 a.greenWhatsApp:focus, a.greenWhatsApp:hover {
   color: #167c3c; }
 
+.grey3XL, .grey3XL b, .grey3XL strong, .grey3XL i, .grey3XL em {
+  color: #f2f2f2; }
+
+a.grey3XL, a.grey3XL:active, a.grey3XL:visited, a.grey3XL.noHover:focus, a.grey3XL.noHover:hover {
+  color: #f2f2f2; }
+
+a.grey3XL:focus, a.grey3XL:hover {
+  color: #bfbfbf; }
+
 .grey2XL, .grey2XL b, .grey2XL strong, .grey2XL i, .grey2XL em {
   color: #e6e6e6; }
 
@@ -1012,7 +1025,10 @@ q {
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
-.txBold {
+.txBold,
+.txBold a,
+.txBold span,
+.txBold strong {
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 400; }
 
@@ -1085,6 +1101,9 @@ q {
 
 .bgGreenWhatsApp {
   background-color: #25D366; }
+
+.bgGrey3XL {
+  background-color: #f2f2f2; }
 
 .bgGrey2XL {
   background-color: #e6e6e6; }
@@ -1747,7 +1766,7 @@ article, article::before, article::after, details, details::before, details::aft
   .container {
     width: 85%; } }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .container {
     width: 85%; } }
 
@@ -1787,7 +1806,7 @@ article, article::before, article::after, details, details::before, details::aft
     left: 50%;
     margin-left: calc(-1 * calc(85% / 2)); } }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .container.container_centered_absolute {
     position: absolute;
     left: 50%;
@@ -1878,7 +1897,7 @@ article, article::before, article::after, details, details::before, details::aft
 @media (min-width: 1600px) {
   .containerA600 {
     width: 900px; }
-    .containerA600.container_centered_absoluteAT {
+    .containerA600.container_centered_absoluteA600 {
       margin-left: calc(-1 * calc(900px / 2)); } }
 
 /* // Hack para Windows Phone ----------------------------------------------- */
@@ -2131,8 +2150,8 @@ button, button::before, button::after {
 /* // Button General -------------------------------------------------------- */
 /* // Call to Action -------------------------------------------------------- */
 .callToAction {
-  transition: transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.6s, border-color 1s, box-shadow 0.6s
   border: 2px solid #8c8c8c;
+  transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.6s, border-color 1s, box-shadow 0.6s;
   display: block;
   box-sizing: border-box;
   background-color: #8c8c8c;
@@ -2141,41 +2160,7 @@ button, button::before, button::after {
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  text-align: center;
-  /*
-    &.CTA_white{
-        &, &:focus, &:hover, &:visited, &:active{}
-
-        &, &:visited, &:active{
-            border-color: $bdWhite;
-            background-color: $bgWhite;
-            color: $greyXD;
-        }
-
-        &:focus, &:hover{
-            border-color: $bdGrey3XL;
-            background-color: $bgGrey3XL;
-            color: $greyD;
-            box-shadow: 0 0 3px $greyL;
-            text-shadow: 0 0 3px $greyL;
-        }
-    }
-    
-    &.CTA_hollow{
-        &, &:focus, &:hover, &:visited, &:active{
-            @include borderStyle($bdWhite);
-            color: $white;
-        }
-    
-        &, &:visited, &:active{
-            background-color: transparent;
-        }
-
-        &:focus, &:hover{
-            background-color: $black_rgba10;
-        }
-    }
-*/ }
+  text-align: center; }
   .callToAction, .callToAction:focus, .callToAction:hover {
     text-decoration: none !important; }
   .callToAction, .callToAction:visited, .callToAction:active {
@@ -2186,7 +2171,24 @@ button, button::before, button::after {
     color: #4d4d4d; }
   .callToAction, .callToAction::before, .callToAction::after {
     box-sizing: border-box; }
-  @media (max-width: 499px) {
+  .callToAction.CTA_white, .callToAction.CTA_white:visited, .callToAction.CTA_white:active {
+    border-color: #fff;
+    background-color: #fff;
+    color: #4d4d4d; }
+  .callToAction.CTA_white:focus, .callToAction.CTA_white:hover {
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+    color: #666;
+    box-shadow: 0 0 3px #b2b2b2;
+    text-shadow: 0 0 3px #b2b2b2; }
+  .callToAction.CTA_hollow, .callToAction.CTA_hollow:focus, .callToAction.CTA_hollow:hover, .callToAction.CTA_hollow:visited, .callToAction.CTA_hollow:active {
+    border: 1px solid #fff;
+    color: #fff; }
+  .callToAction.CTA_hollow, .callToAction.CTA_hollow:visited, .callToAction.CTA_hollow:active {
+    background-color: transparent; }
+  .callToAction.CTA_hollow:focus, .callToAction.CTA_hollow:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  @media (max-width: 500px) {
     .callToAction {
       width: 100% !important; } }
   @media (max-width: 767px) {
@@ -2314,13 +2316,13 @@ button, button::before, button::after {
     content: "Chatten Sie mit SiteName."; }
   #selector .button_whatsapp_anchor.lang_GB:focus::before, #selector .button_whatsapp_anchor.lang_GB:hover::before {
     content: "Chat with SiteName."; }
-  @media (max-width: 499px) {
+  @media (max-width: 500px) {
     #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:hover::before {
       width: 220px; } }
   @media (max-width: 767px) {
     #selector .button_whatsapp_anchor.navDrawer_open::before, #selector .button_whatsapp_anchor.navDrawer_open:focus::before, #selector .button_whatsapp_anchor.navDrawer_open:hover::before {
       display: none; } }
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:hover::before {
       width: 220px; } }
   #selector .button_whatsapp_anchor .button_whatsapp_nFormatted {
@@ -2471,7 +2473,7 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
   .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
     width: 100% !important; } }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
   .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
   .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
     width: 100% !important;
@@ -2523,14 +2525,14 @@ input, select, textarea {
       font-size: 0.9rem; } }
 
 /* // Form Button Submit // REF [21] ---------------------------------------- */
-@media (max-width: 499px) {
+@media (max-width: 500px) {
   .mobileForm input[type="reset"], .mobileForm
   input[type="submit"], .mobileForm
   input[type="button"], .mobileForm
   form button {
     width: 90% !important; } }
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 501px) and (max-width: 767px) {
   .mobileForm input[type="reset"], .mobileForm
   input[type="submit"], .mobileForm
   input[type="button"], .mobileForm
@@ -2715,12 +2717,12 @@ form textarea {
   vertical-align: top;
   resize: vertical; }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
   .mobileForm form {
     width: 90%;
     max-width: 270px !important; } }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .mobileForm form {
     width: 400px !important; } }
 
@@ -3221,11 +3223,11 @@ form {
       padding-bottom: 50px; }
   .pop_warning .pop_innerContainer {
     padding: 20px; }
-  @media (max-width: 499px) {
+  @media (max-width: 500px) {
     .pop_warning {
       width: 300px;
       margin-left: calc(calc(300px * -1) / 2); } }
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     .pop_warning {
       width: 60%;
       margin-left: calc(calc(60% * -1) / 2); } }
@@ -3249,12 +3251,12 @@ form {
 */
     border-radius: 0;
     border: none !important; }
-  @media (max-width: 499px) {
+  @media (max-width: 500px) {
     .pop_video {
       width: 300px;
       height: 168px;
       margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     .pop_video {
       width: 450px;
       height: 250px;
@@ -3274,11 +3276,11 @@ form {
   .pop_form .mobileForm {
     padding-top: 20px;
     padding-bottom: 40px; }
-  @media (max-width: 499px) {
+  @media (max-width: 500px) {
     .pop_form {
       width: 320px;
       margin-left: calc(-1 * calc(320px / 2)); } }
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     .pop_form {
       width: 490px;
       margin-left: calc(-1 * calc(490px / 2)); } }
@@ -3376,12 +3378,12 @@ form {
       /*
             width: $logo_width_A350;
 */ } }
-  @media (max-width: 499px) {
+  @media (max-width: 500px) {
     #header .logo_header {
       /*
             width: $logo_width_B500;
 */ } }
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     #header .logo_header {
       /*
             width: $logo_width_A500;
@@ -3459,17 +3461,17 @@ form {
 #footer .logo_footer img {
   display: block; }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
   #footer .logo_footer {
     width: 50px; } }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   #footer .logo_footer {
     /*
                 width: $logo_width_footer_A500;
 */ } }
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 501px) and (max-width: 767px) {
   #footer .logo_footer {
     /*
                 width: $logo_width_footer_500O;
@@ -3623,17 +3625,12 @@ nav li:focus a, nav li:hover a {
     .nav_main .nav_main_ul > li > .nav_TLI {
       color: #000;
       font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
-    .nav_main .nav_main_ul > .uk-active,
-    .nav_main .nav_main_ul > .nav_item_current {
-      background-color: #f2f2f2;
-      background-repeat: no-repeat;
-      background-position: right 10px center; }
-      .nav_main .nav_main_ul > .uk-active > a,
-      .nav_main .nav_main_ul > .uk-active > .nav_TLI,
-      .nav_main .nav_main_ul > .nav_item_current > a,
-      .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
-        color: #000;
-        font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; } }
+    .nav_main .nav_main_ul > .uk-active > a,
+    .nav_main .nav_main_ul > .uk-active > .nav_TLI,
+    .nav_main .nav_main_ul > .nav_item_current > a,
+    .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
+      color: #000;
+      font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; } }
 
 /* * NombreDeProyecto * ========================================================
    Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
@@ -3664,6 +3661,7 @@ nav li:focus a, nav li:hover a {
       position: absolute; }
     .nav_main .button_hamb_open {
       border-radius: 6px;
+      transition: all 0.7s ease;
       background-image: url("/stage/img/button_hamb_open.svg");
       background-color: #fff;
       background-size: 15px;
@@ -3680,6 +3678,8 @@ nav li:focus a, nav li:hover a {
       .nav_main .button_hamb_open.button_hamb_open_pressed {
         opacity: 0.5;
         color: #333; }
+      .nav_main .button_hamb_open.site_scrolled_js {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12); }
     .nav_main .button_hamb_close {
       width: 40px;
       height: calc(40px - 0px);
@@ -3705,7 +3705,9 @@ nav li:focus a, nav li:hover a {
       .nav_main .nav_main_ul > .uk-active,
       .nav_main .nav_main_ul > .nav_item_current {
         background-color: #f2f2f2;
-        background-image: url("/stage/img/nav_arrow_left.svg"); }
+        background-image: url("/stage/img/nav_arrow_left.svg");
+        background-repeat: no-repeat;
+        background-position: right 10px center; }
       .nav_main .nav_main_ul .nav_item_back {
         border-bottom: #8c8c8c solid 2px;
         position: relative; }
@@ -3724,35 +3726,38 @@ nav li:focus a, nav li:hover a {
    Nav Main After Tablet Styles | Custom [/etc/css/custom/nav_main_AT.scss]
    ========================================================================== */
 @media (min-width: 768px) {
-  .nav_main .navs_container_AT {
-    justify-content: space-between;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto; }
-    .nav_main .navs_container_AT ul + ul {
-      margin-top: 0; }
-  .nav_main .nav_main_ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: flex-start;
-    align-items: flex-start; }
-    .nav_main .nav_main_ul li,
-    .nav_main .nav_main_ul li a,
-    .nav_main .nav_main_ul li .nav_TLI {
-      display: block; }
-  .nav_main li,
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    height: 60px;
-    line-height: 60px; }
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    transition: all 1s ease;
-    font-size: 0.8rem;
-    padding-right: 5px;
-    padding-left: 5px; } }
+  .nav_main {
+    position: relative; }
+    .nav_main .navs_container_AT {
+      justify-content: space-between;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto; }
+      .nav_main .navs_container_AT ul + ul {
+        margin-top: 0; }
+    .nav_main .nav_main_ul {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-content: flex-start;
+      align-items: flex-start; }
+      .nav_main .nav_main_ul li,
+      .nav_main .nav_main_ul li a,
+      .nav_main .nav_main_ul li .nav_TLI {
+        display: block; }
+    .nav_main li,
+    .nav_main li a,
+    .nav_main li .nav_TLI {
+      height: 60px;
+      line-height: 60px; }
+    .nav_main li a,
+    .nav_main li .nav_TLI {
+      transition: all 1s ease;
+      font-size: 0.8rem;
+      padding-right: 5px;
+      padding-left: 5px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .nav_main li,

@@ -68,7 +68,7 @@
         }     
     }
     
-    @include MQ500Only{
+    @include MQ500_768{
         > section{
             @if $page_section_fullHeight_act_500O == "on"{
                 height: calc(100vh - #{$footer_height_500O} - #{$header_height_500O});
@@ -76,7 +76,7 @@
         }     
     }
     
-    @include beforeTablet{        
+    @include beforeMQ768{        
         > section{
             @if $page_section_fullHeight_act_BT == "on"{
                 height: calc(100vh - #{$footer_height_BT} - #{$header_height_BT});
@@ -84,7 +84,7 @@
         } 
     }
     
-    @include afterTablet{        
+    @include afterMQ768{        
         > section{
             @if $page_section_fullHeight_act_AT == "on"{
                 height: calc(100vh - #{$footer_height_AT} - #{$header_height_AT});
@@ -92,7 +92,7 @@
         } 
     }
     
-    @include tabletOnly{
+    @include MQ768_1024{
         > section{
             @if $page_section_fullHeight_act_TO == "on"{
                 height: calc(100vh - #{$footer_height_TO} - #{$header_height_TO});
@@ -100,7 +100,7 @@
         } 
     }
     
-    @include beforeTabletLandscape{
+    @include beforeMQ1024{
         > section{
             @if $page_section_fullHeight_act_BTL == "on"{
                 height: calc(100vh - #{$footer_height_BTL} - #{$header_height_BTL});
@@ -108,7 +108,7 @@
         } 
     }
     
-    @include afterTabletLandscape{        
+    @include afterMQ1024{        
         > section{
             @if $page_section_fullHeight_act_ATL == "on"{
                 height: calc(100vh - #{$footer_height_ATL} - #{$header_height_ATL});
@@ -116,7 +116,7 @@
         } 
     }
 
-    @include tabletLandscapeOnly{
+    @include MQ1024_1200{
         > section{
             @if $page_section_fullHeight_act_TLO == "on"{
                 height: calc(100vh - #{$footer_height_TLO} - #{$header_height_TLO});
