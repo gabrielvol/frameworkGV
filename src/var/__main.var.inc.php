@@ -16,7 +16,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -46,11 +46,6 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
-
-/* // Pre ------------------------------------------------------------------- */
-if($nav_pageCurrent == 'page_index'){ include('index.var.inc.php'); }
-
-if($nav_pageCurrent == 'page_PAGINA'){ include('PAGINA.var.inc.php'); }
 
 /* // Activadores ----------------------------------------------------------- */
 include('act/header.act.inc.php');

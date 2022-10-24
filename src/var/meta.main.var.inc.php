@@ -16,7 +16,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -56,35 +56,44 @@ $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // 
 
 /* // Site titles ----------------------------------------------------------- */
 // El index usa solamente $site_name_full
-// Las internas usan el nombre de la pagina seguido de $site_name_title
-// Ej.: Contacto | SECTION | $site_name_title
+//
+// Las internas componen el nombre con las variables
+// $page_title_home-PAGEINT y $site_name_title
+// Ej.: Nosotros | $page_title_home_laEmpresa | $site_name_title
 
-$site_name_full             = 'SiteNameFull';
-$site_name_short            = 'SiteNameShort';
-$site_name_title            = 'SiteNameTitle';
-$site_name_tag              = 'SiteNameTag';
+if($l == 'en_GB'){
+    $site_name_full         = 'SiteNameFull';
+    $site_name_short        = 'SiteNameShort';
+    $site_name_title        = 'SiteNameTitle';
+    $site_name_tag          = 'SiteNameTag';
 
-$site_name_full_GB          = 'SiteNameFull';
-$site_name_short_GB         = 'SiteNameShort';
-$site_name_title_GB         = 'SiteNameTitle';
-$site_name_tag_GB           = 'SiteNameTag';
+    $page_title_home-PAGEINT   = 'TituloEnIngles';
+    $page_title_home_contacto  = 'Contact';
 
-// $site_name_full_XX          = 'SiteNameFull'; // $site_name_full
-// $site_name_short_XX         = 'SiteNameShort'; // $site_name_short
-// $site_name_title_XX         = 'SiteNameTitle'; // $site_name_title
-// $site_name_tag_XX           = 'SiteNameTag'; // $site_name_tag
+    $page_desc_global       = '';
 
 
-/* // Site descriptions ----------------------------------------------------- */
-$page_desc_global           = '';
-$page_desc_global_GB        = '';
-// $page_desc_global_XX        = ''; // $page_desc_global
+} elseif($l == 'xx_XX'){
+// $site_name_full          = 'SiteNameFull';
+// $site_name_short         = 'SiteNameShort'; // $site_name_short
+// $site_name_title         = 'SiteNameTitle'; // $site_name_title
+// $site_name_tag           = 'SiteNameTag'; // $site_name_tag
+
+// $page_title_home-PAGEINT    = 'sinTraduccion';
+
+// $page_desc_global        = 'sinTraduccion';
 
 
-/* // Favicon --------------------------------------------------------------- */
-$favicon_url                        = $url_wip_full;
-$favicon_color_theme                = '#ffffff';
-$favicon_color_msApplicationTile    = $favicon_color_theme;
-$favicon_color_safariPinnedTab      = $favicon_color_theme;
+} else {
+    $site_name_full         = 'SiteNameFull';
+    $site_name_short        = 'SiteNameShort';
+    $site_name_title        = 'SiteNameTitle';
+    $site_name_tag          = 'SiteNameTag';
+
+    $page_title_home-PAGEINT   = 'TituloEnCastellano';
+    $page_title_home_contacto  = 'Contacto';
+
+    $page_desc_global       = '';
+}
 
 ?>

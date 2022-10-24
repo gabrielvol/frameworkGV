@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Section Variables [/src/var/section.var.inc.php]
+   PAGEINT Variables [/src/var/_PAGEINT.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -13,7 +13,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -45,5 +45,29 @@
 
 
 /* // Main ------------------------------------------------------------------ */
-$section_variable       = 1;
+/*___ Elements __________________________*/
+$page_construccion      = 0;
+$has_form               = 0;
+$has_lightbox           = 0; // REF [26]
+$has_slider             = 0;
+$has_pop_video          = 0;
+//    $has-CUSTOMVARIABLE     = 1;
+//    $lang_GB                = 1;
+
+/*___ Titles ____________________________*/
+if($l == 'en_GB'){
+    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnIngles'; }
+//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnIngles'; }
+
+
+} elseif($l == 'xx_XX'){
+    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'sinTraduccion'; }
+//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'sinTraduccion'; }
+
+
+} else {
+    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnCastellano'; }
+//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnCastellano'; }
+}
+
 ?>

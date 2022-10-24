@@ -16,7 +16,7 @@
 // bg                   = fondo / background
 // bx                   = box
 // ft                   = fuente
-// mq                   = media query @media
+// mq, MQ               = media query @media
 // tx                   = texto
 
 ///-- Fin del nombre
@@ -50,8 +50,10 @@
 /* // Open Graph meta ------------------------------------------------------- */
 
 
-// -- Título _ Max 35 char________________·_________________________________·
-//                                        123456789-123456789-123456789-12345
+// -- Título _ Max 35 char ___________
+// ·_________________________________·
+// 123456789-123456789-123456789-12345
+//
 // Se declaran distintas variables por página
 if($nav_pageCurrent == 'page_index'):
 // Estas variables son usadas en el head `meta property og title`
@@ -80,8 +82,10 @@ endif;
 
 
     
-// -- Descripción _ Max 65 char___________·_______________________________________________________________·
-//                                        123456789-123456789-123456789-123456789-123456789-123456789-12345 
+// -- Descripción _ Max 65 char ____________________________________
+// ·_______________________________________________________________·
+// 123456789-123456789-123456789-123456789-123456789-123456789-12345 
+//
 // Estas variables son usadas en el head `meta property og description`
     $openGraph_desc                 = $page_desc_global;
 //    $openGraph_desc_DE              = $page_desc_global_DE;
@@ -121,4 +125,11 @@ endif;
     $openGraph_url                  = $url_main_full;
     $openGraph_type                 = 'website';
     $openGraph_locale               = $site_lang_locale;
+
+
+/* // Favicon --------------------------------------------------------------- */
+    $favicon_url                        = $url_wip_full;
+    $favicon_color_theme                = '#ffffff';
+    $favicon_color_msApplicationTile    = $favicon_color_theme;
+    $favicon_color_safariPinnedTab      = $favicon_color_theme;
 ?>
