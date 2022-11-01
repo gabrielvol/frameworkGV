@@ -5,35 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com"> -->
+<?php /* <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com"> */ ?>
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<!-- <meta http-equiv="x-dns-prefetch-control" content="off"> -->
+<?php /* <meta http-equiv="x-dns-prefetch-control" content="off"> */ ?>
 <meta http-equiv="Window-Target" content="_value">
 <meta name="robots" content="index,follow">
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
-<!-- <meta name="referrer" content="no-referrer"> -->
+<?php /* <meta name="referrer" content="no-referrer"> */ ?>
 <meta name="geo.region" content="<?php echo $site_lang_code_country; ?>">
 
-<!-- Google No Translate -->
+<?php /* Google No Translate */ ?>
 <meta name="google" content="notranslate">
 
-<!-- Safari tel -->
+<?php /* Safari tel */ ?>
 <meta name="format-detection" content="telephone=no">
 
 <title><?php echo $page_title; ?></title>
 <meta name="title" content="<?php echo $page_title; ?>">
-<title><?php if($gettext_idioma == 'en_GB'){ echo $page_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $page_title_XX; } else { echo $page_title; } ?></title>
-
 <meta name="description" content="<?php echo $page_desc; ?>">
-<meta name="description" content="<?php if($gettext_idioma == 'en_GB'){ echo $page_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $page_desc_XX; } else { echo $page_desc; } ?>">
 
-<?php /* Google Fonts // REF [01] */?>
+<?php /* Google Fonts // REF [01] */ ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<!--<base href="<?php echo $url_main; ?>" target="_self">-->
+<?php /*<base href="<?php echo $url_main; ?>" target="_self">*/ ?>
 
 <?php include('head.css.inc.php'); ?>
 
@@ -42,10 +39,10 @@
 <link rel="canonical" href="<?php echo $url_main; ?>">
 <link rel="index" href="<?php echo $url_main; ?>">
 
-<!-- Copyright -->
+<?php /* Copyright */ ?>
 <link rel="license" href="<?php echo $dir_env; ?>/legal/copyright.php">
 
-<!-- Idiomas -->
+<?php /* Idiomas */ ?>
 <link rel="alternate" href="<?php echo $url_main; ?>/?l=es_AR" hreflang="es">
 <link rel="alternate" href="<?php echo $url_main; ?>/?l=es_ES" hreflang="es">
 <link rel="alternate" href="<?php echo $url_main; ?>/?l=es_UY" hreflang="es">
@@ -72,18 +69,18 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <?php /* preload, force download an asset */ ?>
 <link rel="preload" href="image.png" as="image">
 
-<!-- Información personal -->
+<?php /* Información personal */ ?>
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Archivo -->
+<?php /* Archivo */ ?>
 <link rel="archives" href="http://example.com/archives/">
 
-<!-- Notifies a URL when you link to it on your document -->
+<?php /* Notifies a URL when you link to it on your document */ ?>
 <link rel="webmention" href="http://example.com/webmention">
 
-<!-- Favicon -->
+<?php /* Favicon */ ?>
 <link rel="icon" href="<?php echo $favicon_url; ?>/favicon.ico" sizes="any">
 <link rel="icon" href="<?php echo $favicon_url; ?>/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $favicon_url; ?>/apple-touch-icon.png">
@@ -94,7 +91,7 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <meta name="msapplication-TileColor" content="<?php echo $favicon_color_msApplicationTile; ?>">
 <meta name="theme-color" content="<?php echo $favicon_color_theme; ?>">
 
-<!-- Open Graph -->
+<?php /* Open Graph */ ?>
 <meta property="og:title" content="<?php echo $openGraph_title; ?>">
 <meta property="og:url" content="<?php echo $openGraph_url; ?>">
 <meta property="og:description" content="<?php echo $openGraph_desc; ?>">
@@ -114,49 +111,37 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <meta property="og:video:width" content="1280">
 <meta property="og:video:height" content="720">
 
-<meta property="og:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_title_XX; } else { echo $openGraph_title; } ?>">
-<meta property="og:url" content="<?php echo $openGraph_url; ?>">
-<meta property="og:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_desc_XX; } else { echo $openGraph_desc; } ?>">
-<meta property="og:image:secure_url" content="<?php echo $openGraph_img_url; ?>">
-<meta property="og:image" content="<?php echo $openGraph_img_url; ?>">
-<meta property="og:image:type" content="<?php echo $openGraph_img_type; ?>">
-<meta property="og:image:width" content="<?php echo $openGraph_img_width; ?>">
-<meta property="og:image:height" content="<?php echo $openGraph_img_height; ?>">
-<meta property="og:type" content="<?php echo $openGraph_type; ?>">
-<meta property="og:site_name" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_siteName_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_siteName_XX; } else { echo $openGraph_siteName; } ?>">
-<meta property="og:locale" content="<?php if(isset($gettext_idioma)){ echo $gettext_idioma; } else { echo $openGraph_locale; } ?>">
-
-<!-- Facebook Open Graph -->
+<?php /* Facebook Open Graph */ ?>
 <meta property="fb:app_id" content="123456789">
 
-<!-- Twitter Card -->
+<?php /* Twitter Card */ ?>
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="<?php echo $url_main; ?>">
-<meta property="twitter:title" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_title_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_title_XX; } else { echo $openGraph_title; } ?>">
-<meta property="twitter:description" content="<?php if($gettext_idioma == 'en_GB'){ echo $openGraph_desc_GB; } else if($gettext_idioma == 'xx_XX'){ echo $openGraph_desc_XX; } else { echo $openGraph_desc; } ?>">
+<meta property="twitter:title" content="<?php echo $openGraph_title; ?>">
+<meta property="twitter:description" content="<?php echo $openGraph_desc; ?>">
 <meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>">
 
-<!-- Pinterest -->
+<?php /* Pinterest */ ?>
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 
-<!-- Google Android -->
-<!-- Add to home screen -->
+<?php /* Google Android */ ?>
+<?php /* Add to home screen */ ?>
 <meta name="mobile-web-app-capable" content="yes">
-<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
-<!-- Android app deep linking -->
+<?php /* More info: https://developer.chrome.com/multidevice/android/installtohomescreen */ ?>
+<?php /* Android app deep linking */ ?>
 <meta name="google-play-app" content="app-id=package-name">
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 
-<!-- App Links -->
-<!-- iOS -->
+<?php /* App Links */ ?>
+<?php /* iOS */ ?>
 <meta property="al:ios:url" content="applinks://docs">
 <meta property="al:ios:app_store_id" content="12345">
 <meta property="al:ios:app_name" content="App Links">
-<!-- Android -->
+<?php /* Android */ ?>
 <meta property="al:android:url" content="applinks://docs">
 <meta property="al:android:app_name" content="App Links">
 <meta property="al:android:package" content="org.applinks">
-<!-- Web Fallback -->
+<?php /* Web Fallback */ ?>
 <meta property="al:web:url" content="http://applinks.org/documentation">
 
 <?php include('head.js.inc.php'); ?>
@@ -175,7 +160,7 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<?php /* Global site tag (gtag.js) - Google Analytics */ ?>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

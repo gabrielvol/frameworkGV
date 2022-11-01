@@ -67,7 +67,7 @@ if($l == 'en_GB'){
     $site_name_title        = 'SiteNameTitle';
     $site_name_tag          = 'SiteNameTag';
 
-    $page_title_home-PAGEINT   = 'TituloEnIngles';
+//    $page_title_home-PAGEINT   = 'TituloEnIngles';
     $page_title_home_contacto  = 'Contact';
 
     $page_desc_global       = '';
@@ -90,7 +90,7 @@ if($l == 'en_GB'){
     $site_name_title        = 'SiteNameTitle';
     $site_name_tag          = 'SiteNameTag';
 
-    $page_title_home-PAGEINT   = 'TituloEnCastellano';
+//    $page_title_home-PAGEINT   = 'TituloEnCastellano';
     $page_title_home_contacto  = 'Contacto';
 
     $page_desc_global       = '';
