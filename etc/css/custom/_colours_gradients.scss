@@ -12,3 +12,17 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
     filter: $bgGrad_colourPercent_filter;
 }
 */
+
+// Colour gradient_ig 00%
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd600+0,ff7a00+20,ff0069+47,d300c5+72,7638fa+100 */
+$bgGrad_gradient_ig: linear-gradient(to right,  #ffd600 0%,#ff7a00 20%,#ff0069 47%,#d300c5 72%,#7638fa 100%);
+$bgGrad_gradient_ig_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd600', endColorstr='#7638fa',GradientType=1 );
+.bgGrad_gradient_ig{
+    background-image: $bgGrad_gradient_ig;
+    filter: $bgGrad_gradient_ig_filter;
+}
+// ffd600
+// ff7a00
+// ff0069
+// d300c5
+// 7638fa

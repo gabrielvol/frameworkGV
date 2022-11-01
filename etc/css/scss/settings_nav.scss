@@ -34,9 +34,9 @@ nav{
    
     @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         @if $hamburger_only_act == "on"{
-            // REF [11]
+            // REF [11] Activador
             position: absolute;
-    } @else{
+        } @else{
             position: fixed; 
         }
                 

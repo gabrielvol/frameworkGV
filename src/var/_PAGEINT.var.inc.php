@@ -55,19 +55,25 @@ $has_pop_video          = 0;
 //    $lang_GB                = 1;
 
 /*___ Titles ____________________________*/
+$PAGEINTID_title_PAGEID_GB    = 'TituloPagID';
+
+$PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
+
+$PAGEINTID_title_PAGEID       = 'TituloPagID_GB';
+
 if($l == 'en_GB'){
-    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnIngles'; }
-//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnIngles'; }
+    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
+//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
 
 
 } elseif($l == 'xx_XX'){
-    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'sinTraduccion'; }
-//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'sinTraduccion'; }
+    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
+//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
 
 
 } else {
-    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnCastellano'; }
-//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = 'TituloEnCastellano'; }
+    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
+//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
 }
 
 ?>

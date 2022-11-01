@@ -352,15 +352,15 @@
             > li{
                 &:focus, &:hover{
                     @if $nav_text_white_act == "on"{
-                        // REF [12]
+                        // REF [12] Activador
                         > a,
                         > .nav_TLI{
-                            text-shadow: $txShadow_white_hover;
+                            text-shadow: $txShadow_black;
                         }
                     }
 
                     @if $nav_text_black_act == "on"{
-                        // REF [12]
+                        // REF [12] Activador
                         > a,
                         > .nav_TLI{
                             color: $grey2XD;

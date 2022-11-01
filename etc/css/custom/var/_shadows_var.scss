@@ -52,11 +52,11 @@ $bgShadowB_50_img_url:  url('#{$dir_env}/img/bg_shadowB_50.png');
 /*___ Text Shadow _______________________*/
 $txShadow_black:                    0 0 3px $black;
 $txShadow_black_smooth:             0 0 3px $black, 0 0 6px $black;
+$txShadow_black_heavy:              0 0 3px $black, 0 0 3px $black, 0 0 6px $black;
 
 $txShadow_white:                    0 0 3px $white;
 $txShadow_white_smooth:             0 0 3px $white, 0 0 6px $white, 0 0 9px $white;
-$txShadow_white_hover:              0 0 3px $black;
-$txShadow_white_hover_smooth:       0 0 3px $black, 0 0 6px $black;
+$txShadow_white_heavy:              0 0 3px $white, 0 0 3px $white, 0 0 6px $white;
 
 $txShadow_none:                     0 0 0 transparent;
 
