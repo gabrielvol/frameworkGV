@@ -103,3 +103,16 @@
     <li><img src="<?php echo $dir_env; ?>/img/slide_main_<?php echo $slider_main_item_20; ?>.jpg" alt="" aria-hidden="true" /></li>
     <?php endif; ?>
 </ul>
+
+<ul class="slick unstyled slider_main">
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_01.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_02.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_03.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_04.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_05.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_06.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_07.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_08.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_09.jpg" alt="" aria-hidden="true" /></li>
+    <li><img src="<?php echo $dir_env; ?>/img/slide_main_10.jpg" alt="" aria-hidden="true" /></li>
+</ul>

@@ -69,25 +69,25 @@ $hash_main          = '#main';
 // Los vínculos que tienen un hash creado deben ser comentados en la siguiente
 // lista
 
-$url_root           = $dir_env .'/';
+$url_root           = $dir_env . '/';
 $url_logo           = $url_root;
-$url_index          = $dir_env .'/index.php';
-//$url_inicio         = $dir_env .'/inicio.php';
-$url_contacto       = $dir_env .'/contacto.php';
-//$url_gracias        = $dir_env .'/gracias.php';
-//$url_construccion   = $dir_env .'/construccion.php';
-//$url_copyright      = $dir_env .'/legal/copyright.php';
-// $url-PAGINA         = $dir_env .'/pagina.php';
-// $url-PAGINA         = $dir_env .'/pagina.php';
-// $url-PAGINA         = $dir_env .'/pagina.php';
+$url_index          = $dir_env . '/index.php';
+//$url_inicio         = $dir_env . '/inicio.php';
+$url_contacto       = $dir_env . '/contacto.php';
+//$url_gracias        = $dir_env . '/gracias.php';
+//$url_construccion   = $dir_env . '/construccion.php';
+//$url_copyright      = $dir_env . '/legal/copyright.php';
+// $url-PAGINA         = $dir_env . '/pagina.php';
+// $url-PAGINA         = $dir_env . '/pagina.php';
+// $url-PAGINA         = $dir_env . '/pagina.php';
 
-$url_top_hs         = $dir_env .'/'. $hash_top;
-$url_main_hs        = $dir_env .'/'. $hash_main;
-//$url_inicio_hs      = $dir_env .'/'. $hash_inicio;
-//$url_contacto_hs    = $dir_env .'/'. $hash_contacto;
-// $url-SECCION-hs     = $dir_env .'/'. $hash_SECCION;
-// $url-SECCION-hs     = $dir_env .'/'. $hash_SECCION;
-// $url-SECCION-hs     = $dir_env .'/'. $hash_SECCION; 
+$url_top_hs         = $dir_env . '/'. $hash_top;
+$url_main_hs        = $dir_env . '/'. $hash_main;
+//$url_inicio_hs      = $dir_env . '/'. $hash_inicio;
+//$url_contacto_hs    = $dir_env . '/'. $hash_contacto;
+// $url-SECCION-hs     = $dir_env . '/'. $hash_SECCION;
+// $url-SECCION-hs     = $dir_env . '/'. $hash_SECCION;
+// $url-SECCION-hs     = $dir_env . '/'. $hash_SECCION; 
 
 $url_top_hs_INICIO             = $url_inicio . $hash_top;
 $url_main_hs_INICIO             = $url_inicio . $hash_main; 
@@ -98,33 +98,33 @@ $url_main_hs_INICIO             = $url_inicio . $hash_main;
 // $url-SECCION-hs-PAGINA          = $url_PAGINA . $hash_SECCION; 
 
 /*___ urls con variable de idioma al final _*/
-    $url_root           = $dir_env .'/'. $gettext_idioma_url;
+    $url_root           = $dir_env . '/'. $gettext_idioma_url;
     $url_logo           = $url_root;
-    $url_index          = $dir_env .'/index.php'. $gettext_idioma_url;
-    //$url_inicio         = $dir_env .'/inicio.php'. $gettext_idioma_url;
-    $url_contacto       = $dir_env .'/contacto.php'. $gettext_idioma_url;
-    //$url_gracias        = $dir_env .'/gracias.php'. $gettext_idioma_url;
-    //$url_construccion   = $dir_env .'/construccion.php'. $gettext_idioma_url;
-    //$url_copyright      = $dir_env .'/legal/copyright.php'. $gettext_idioma_url;
-    // $url-PAGINA         = $dir_env .'/pagina.php'. $gettext_idioma_url;
-    // $url-PAGINA         = $dir_env .'/pagina.php'. $gettext_idioma_url;
-    // $url-PAGINA         = $dir_env .'/pagina.php'. $gettext_idioma_url;
+    $url_index          = $dir_env . '/index.php'. $gettext_idioma_url;
+    //$url_inicio         = $dir_env . '/inicio.php'. $gettext_idioma_url;
+    $url_contacto       = $dir_env . '/contacto.php'. $gettext_idioma_url;
+    //$url_gracias        = $dir_env . '/gracias.php'. $gettext_idioma_url;
+    //$url_construccion   = $dir_env . '/construccion.php'. $gettext_idioma_url;
+    //$url_copyright      = $dir_env . '/legal/copyright.php'. $gettext_idioma_url;
+    // $url-PAGINA         = $dir_env . '/pagina.php'. $gettext_idioma_url;
+    // $url-PAGINA         = $dir_env . '/pagina.php'. $gettext_idioma_url;
+    // $url-PAGINA         = $dir_env . '/pagina.php'. $gettext_idioma_url;
 
 /*___ urls para hashes no traducidas ____*/
-    $url_main_hs        = $dir_env .'/'. $gettext_idioma_url . $hash_main;
-    //$url_inicio_hs      = $dir_env .'/'. $gettext_idioma_url . $hash_inicio;
-    //$url_contacto_hs    = $dir_env .'/'. $gettext_idioma_url . $hash_contacto;
-    // $url-SECCION-hs     = $dir_env .'/'. $gettext_idioma_url . $hash_SECCION;
-    // $url-SECCION-hs     = $dir_env .'/'. $gettext_idioma_url . $hash_SECCION;
-    // $url-SECCION-hs     = $dir_env .'/'. $gettext_idioma_url . $hash_SECCION;
+    $url_main_hs        = $dir_env . '/'. $gettext_idioma_url . $hash_main;
+    //$url_inicio_hs      = $dir_env . '/'. $gettext_idioma_url . $hash_inicio;
+    //$url_contacto_hs    = $dir_env . '/'. $gettext_idioma_url . $hash_contacto;
+    // $url-SECCION-hs     = $dir_env . '/'. $gettext_idioma_url . $hash_SECCION;
+    // $url-SECCION-hs     = $dir_env . '/'. $gettext_idioma_url . $hash_SECCION;
+    // $url-SECCION-hs     = $dir_env . '/'. $gettext_idioma_url . $hash_SECCION;
 
 /*___ urls para hashes traducidas ________*/
-    $url_main_hs_gettext            = $dir_env .'/'. $gettext_idioma_url . $hash_main_gettext;
-    //$url_inicio_hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_inicio_gettext;
-    //$url_contacto_hs_gettext        = $dir_env .'/'. $gettext_idioma_url . $hash_contacto_gettext;
-    // $url-PAGINA-hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
-    // $url-PAGINA-hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
-    // $url-PAGINA-hs_gettext          = $dir_env .'/'. $gettext_idioma_url . $hash_PAGINA_gettext;
+    $url_main_hs_gettext            = $dir_env . '/'. $gettext_idioma_url . $hash_main_gettext;
+    //$url_inicio_hs_gettext          = $dir_env . '/'. $gettext_idioma_url . $hash_inicio_gettext;
+    //$url_contacto_hs_gettext        = $dir_env . '/'. $gettext_idioma_url . $hash_contacto_gettext;
+    // $url-PAGINA-hs_gettext          = $dir_env . '/'. $gettext_idioma_url . $hash_PAGINA_gettext;
+    // $url-PAGINA-hs_gettext          = $dir_env . '/'. $gettext_idioma_url . $hash_PAGINA_gettext;
+    // $url-PAGINA-hs_gettext          = $dir_env . '/'. $gettext_idioma_url . $hash_PAGINA_gettext;
 
     $url_main_hs_INICIO_gettext     = $url_inicio . $url_main_hs_gettext;
     //$url_inicio_hs_INICIO_gettext   = $url_inicio . $url_inicio_hs_gettext;

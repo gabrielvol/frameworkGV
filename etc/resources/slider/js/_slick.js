@@ -38,10 +38,8 @@ $(document).ready(function () {
 // que se ve dentro de `[breakpoint: 500]` se aplica de 0 a 499.
 // 
 // La configuracion de un breakpoint se aplica a los breakpoint menores.
-// 1025 para que corresponda con el media query beforeTabletLandscape
-// 768 para que corresponda con el media query beforeTablet
-// 601 para que corresponda con el media query beforeMobile600
-// 500 para que corresponda con el media query mobileOnly
+// 1025 para que corresponda con el media query beforeMQ1024
+// 601 para que corresponda con el media query beforeMQ600
             {breakpoint: 1025,
                 settings: {
                      slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.

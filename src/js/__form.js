@@ -7,9 +7,10 @@ $(document).ready(function () {
     });
 */
     
-/* // REF [23] jQuery Datepicker -------------------------------------------- */
+/* // REF [23] jQuery Datepicker --------------------------------------------
     $("input.fecha").datepicker({
         numberOfMonths: 2,
         showButtonPanel: true
     });
+*/
 });

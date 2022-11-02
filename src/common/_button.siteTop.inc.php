@@ -1,7 +1,7 @@
 <?php /* // REF [18]
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/button.siteTop.inc.php'); ?>
-include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/button.siteTop.inc.php');
+<?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/button.siteTop.inc.php'); ?>
+include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/button.siteTop.inc.php');
 include('button.siteTop.inc.php');
 <?php include('button.siteTop.inc.php'); ?>
 */ ?>

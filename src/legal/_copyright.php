@@ -1,6 +1,6 @@
 <?php
     $dir_env = '/stage';
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/gettext.languageCheck.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/gettext.languageCheck.inc.php');
     
     $page_int               = 1;   
     $nav_pageCurrent        = 'page_legal';
@@ -8,15 +8,15 @@
     
 //    $has-CUSTOMVARIABLE     = 1;
     
-    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/__main.var.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
     $page_url_full          = $url_copyright_full;
     
-    $page_title             = "Licencia | ". $site_name_title;
-//    $page_title_DE          = "SinTraduccion | ". $site_name_title_DE;
-//    $page_title_GB          = "Licence | ". $site_name_title_GB;
-//    $page_title_PT          = "SinTraduccion | ". $site_name_title_PT;
-//    $page_title_XX          = "SinTraduccion | ". $site_name_title_XX;
+    $page_title             = "Licencia | " . $site_name_title;
+//    $page_title_DE          = "SinTraduccion | " . $site_name_title_DE;
+//    $page_title_GB          = "Licence | " . $site_name_title_GB;
+//    $page_title_PT          = "SinTraduccion | " . $site_name_title_PT;
+//    $page_title_XX          = "SinTraduccion | " . $site_name_title_XX;
     
     $page_desc              = $page_desc_global;
 //    $page_desc_DE           = $page_desc_global_DE;
@@ -24,14 +24,14 @@
 //    $page_desc_PT           = $page_desc_global_PT;
 //    $page_desc_XX           = $page_desc_global_XX;
      
-    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/var/meta.openGraph.var.inc.php');     
-    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/head.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/gettext/locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/speller.inc.php');
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');     
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/gettext/locale.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/speller.inc.php');
 ?>
 </head>
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/header.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
         <section class="container">
             <h1 class="black txAlignCenter">Licencia</h1>
@@ -52,6 +52,6 @@
             </ul>
         </section>
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/footer.inc.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/footer.inc.php'); ?>
 </body>
 </html>
