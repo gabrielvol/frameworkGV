@@ -241,7 +241,7 @@
     
 @mixin MQ1024_1200{
     @media (min-width: 1024px)
-        and (max-width: 1199px){@content;}}
+        and (max-width: 1200px){@content;}}
     
     
 /* // 1100px ---------------------------------------------------------------- */
@@ -254,15 +254,20 @@
     
 /* // 1200px ---------------------------------------------------------------- */
 @mixin beforeMQ1200{
-    @media (max-width: 1199px){@content;}}
+    @media (max-width: 1200px){@content;}}
     
 @mixin afterMQ1200{ // REF [35]
-    @media (min-width: 1200px){@content;}}
+    @media (min-width: 1201px){@content;}}
+
+    
+/* // 1500px ---------------------------------------------------------------- */
+@mixin afterMQ1500{
+    @media (min-width: 1501px){@content;}}
 
     
 /* // 1600px ---------------------------------------------------------------- */
 @mixin afterMQ1600{ // REF [35]
-    @media (min-width: 1600px){@content;}}
+    @media (min-width: 1601px){@content;}}
     
 
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */

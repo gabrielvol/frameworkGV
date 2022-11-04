@@ -44,7 +44,13 @@
 
 
 
-/* // Mobile Only Classes --------------------------------------------------- */
+/* // Before MQ350 Classes -------------------------------------------------- */
+@include beforeMQ350{}
+
+/* // After MQ350 Classes --------------------------------------------------- */
+@include afterMQ350{}
+
+/* // Before MQ500 Classes -------------------------------------------------- */
 @include beforeMQ500{
     @if $classes_position_display_mask_cursor_act_B500 == "on"{
 /*___ Positioning _______________________*/
@@ -163,7 +169,7 @@
     }
 }
 
-/* // After Mobile Landscape Classes ---------------------------------------- */
+/* // After MQ500 Classes --------------------------------------------------- */
 @include afterMQ500{
     @if $classes_position_display_mask_cursor_act_A500 == "on"{
 /*___ Positioning _______________________*/
@@ -282,125 +288,7 @@
     }
 }
 
-/* // After Mobile 600 Classes ---------------------------------------------- */
-@include afterMQ600{
-    @if $classes_position_display_mask_cursor_act_A600 == "on"{
-/*___ Positioning _______________________*/
-        .pRelA600{position: relative}
-        .pAbsA600{position: absolute}
-        .clearA600{clear: both}
-
-/*___ Display ___________________________*/
-        .displayBlockA600{display: $block}
-        .displayInlineA600{display: $inline}
-        .displayInlineBlockA600{display: $inlineBlock}
-        .displayTableA600{display: table}
-        .displayNoneA600{display: $none}
-        .contentBoxA600{box-sizing: content-box}
-        .borderBoxA600{box-sizing: border-box}
-        .centerVerticallyA600{
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .visuallyHiddenA600:not(:focus):not(:active),
-        .sr-onlyA600:not(:focus):not(:active){
-            position: absolute;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            width: 1px;
-            height: 1px;
-            border: $zero;
-            padding: $zero;
-            margin: -1px;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-    }
-    
-    @if $classes_lists_floats_act_A600 == "on"{
-/*___ Lists and floats __________________*/
-        .unstyledA600, .horizontalA600{list-style: $none}
-        .floatLeftA600, .horizontalA600 li{float: $left}
-        .floatRightA600{float: $right}
-        .horizontalCenterA600{
-            margin-right: $auto;
-            margin-left: $auto;    
-            list-style: none;
-            text-align: center;
-            li{
-                display: inline-block!important;
-                > *{
-                    display: inline-block!important;         
-                }
-            }
-        }
-        .floatNoneA600, .unstyledA600 li{float: $none}
-    }
-    
-    @if $classes_text_act_A600 == "on"{
-/*___ Text ______________________________*/
-        .txIndentedA600{text-indent: -9999px}
-        .txAlignLeftA600{text-align: left}
-        .txAlignRightA600{text-align: right}
-        .txAlignCenterA600{text-align: center}
-        .txAlignJustifyA600{text-align: justify}
-        .txAlignJustifyCenterA600{
-            text-align: justify;
-            text-align-last: center;
-        }
-        .txCaseUpperA600{text-transform: uppercase}
-        .txCaseLowerA600{text-transform: lowercase}
-    }
-        
-    @if $classes_bg_bd_NO_act_A600 == "on"{
-/*___ Backgrounds, border and images ____*/
-        .banA600{border: $none}
-        .bgNoneA600{
-            &, &:focus, &:hover{
-                background: $none;
-            }
-        }
-        .bgTransparentA600{background-color: $transparent}
-        .bgNoImageA600{background-image: $none}
-    }
-    
-    @if $helpers_spacing_act_A600 == "on"{
-/*___ Spacing Helpers ___________________*/
-        @include spacingHelpersClassesGeneratorA600;
-        .mraA600,.mhaA600{margin-right: $auto}
-        .mlaA600,.mhaA600{margin-left: $auto}
-    }
-    
-    @if $classes_flexbox_act_A600 == "on"{
-/*___ Flexbox Classes ___________________*/ 
-        .displayFlexA600, .flexHorizontalA600, .flexColumnA600, .flexNoWrapA600, .flexJustifyEndA600, .flexJustifyCenterA600, .flexJustifyBetweenA600, .flexJustifyAroundA600, .flexAlignContentEndA600, .flexAlignContentCenterA600, .flexAlignContentBetweenA600, .flexAlignContentAroundA600, .flexAlignContentStretchA600, .flexAlignItemsEndA600, .flexAlignItemsCenterA600, .flexAlignItemsBaselineA600, .flexAlignItemsStretchA600, .horizontalCenterFlexA600{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnA600{flex-direction: column}
-        .flexNoWrapA600{flex-wrap: nowrap}
-        .flexJustifyEndA600{justify-content: flex-end}
-        .flexJustifyCenterA600{justify-content: center}
-        .flexJustifyBetweenA600{justify-content: space-between}
-        .flexJustifyAroundA600{justify-content: space-around}
-        .flexAlignContentEndA600{align-content: flex-end}
-        .flexAlignContentCenterA600{align-content: center}
-        .flexAlignContentBetweenA600{align-content: space-between}
-        .flexAlignContentAroundA600{align-content: space-around}
-        .flexAlignContentStretchA600{align-content: stretch}
-        .flexAlignItemsEndA600{align-items: flex-end}
-        .flexAlignItemsCenterA600{align-items: center}
-        .flexAlignItemsBaselineA600{align-items: baseline}
-        .flexAlignItemsStretchA600{align-items: stretch}
-        .flexHorizontalA600{list-style: $none}
-    }
-}
-
-/* // Mobile Landscape Only Classes ----------------------------------------- */
+/* // After MQ500 Before MQ768 Classes -------------------------------------- */
 @include MQ500_768{
     @if $classes_position_display_mask_cursor_act_500O == "on"{
 /*___ Positioning _______________________*/
@@ -519,7 +407,148 @@
     }
 }
 
-/* // Before Tablet Classes ------------------------------------------------- */
+/* // Before MQ600 Classes -------------------------------------------------- */
+@include beforeMQ600{
+    .global_MQ_600{
+        display: $block;
+    }
+    
+    .global_MQ_1000,    
+    .global_MQ_1500,    
+    .global_MQ_2000{
+        display: $none;
+    }
+}
+
+/* // After MQ600 Classes --------------------------------------------------- */
+@include afterMQ600{
+    .global_MQ_1000{
+        display: $block;
+    }
+    
+    .global_MQ_600,
+    .global_MQ_1500,    
+    .global_MQ_2000{
+        display: $none;
+    }
+    
+    @if $classes_position_display_mask_cursor_act_A600 == "on"{
+/*___ Positioning _______________________*/
+        .pRelA600{position: relative}
+        .pAbsA600{position: absolute}
+        .clearA600{clear: both}
+
+/*___ Display ___________________________*/
+        .displayBlockA600{display: $block}
+        .displayInlineA600{display: $inline}
+        .displayInlineBlockA600{display: $inlineBlock}
+        .displayTableA600{display: table}
+        .displayNoneA600{display: $none}
+        .contentBoxA600{box-sizing: content-box}
+        .borderBoxA600{box-sizing: border-box}
+        .centerVerticallyA600{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenA600:not(:focus):not(:active),
+        .sr-onlyA600:not(:focus):not(:active){
+            position: absolute;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            border: $zero;
+            padding: $zero;
+            margin: -1px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    
+    @if $classes_lists_floats_act_A600 == "on"{
+/*___ Lists and floats __________________*/
+        .unstyledA600, .horizontalA600{list-style: $none}
+        .floatLeftA600, .horizontalA600 li{float: $left}
+        .floatRightA600{float: $right}
+        .horizontalCenterA600{
+            margin-right: $auto;
+            margin-left: $auto;    
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block!important;
+                > *{
+                    display: inline-block!important;         
+                }
+            }
+        }
+        .floatNoneA600, .unstyledA600 li{float: $none}
+    }
+    
+    @if $classes_text_act_A600 == "on"{
+/*___ Text ______________________________*/
+        .txIndentedA600{text-indent: -9999px}
+        .txAlignLeftA600{text-align: left}
+        .txAlignRightA600{text-align: right}
+        .txAlignCenterA600{text-align: center}
+        .txAlignJustifyA600{text-align: justify}
+        .txAlignJustifyCenterA600{
+            text-align: justify;
+            text-align-last: center;
+        }
+        .txCaseUpperA600{text-transform: uppercase}
+        .txCaseLowerA600{text-transform: lowercase}
+    }
+        
+    @if $classes_bg_bd_NO_act_A600 == "on"{
+/*___ Backgrounds, border and images ____*/
+        .banA600{border: $none}
+        .bgNoneA600{
+            &, &:focus, &:hover{
+                background: $none;
+            }
+        }
+        .bgTransparentA600{background-color: $transparent}
+        .bgNoImageA600{background-image: $none}
+    }
+    
+    @if $helpers_spacing_act_A600 == "on"{
+/*___ Spacing Helpers ___________________*/
+        @include spacingHelpersClassesGeneratorA600;
+        .mraA600,.mhaA600{margin-right: $auto}
+        .mlaA600,.mhaA600{margin-left: $auto}
+    }
+    
+    @if $classes_flexbox_act_A600 == "on"{
+/*___ Flexbox Classes ___________________*/ 
+        .displayFlexA600, .flexHorizontalA600, .flexColumnA600, .flexNoWrapA600, .flexJustifyEndA600, .flexJustifyCenterA600, .flexJustifyBetweenA600, .flexJustifyAroundA600, .flexAlignContentEndA600, .flexAlignContentCenterA600, .flexAlignContentBetweenA600, .flexAlignContentAroundA600, .flexAlignContentStretchA600, .flexAlignItemsEndA600, .flexAlignItemsCenterA600, .flexAlignItemsBaselineA600, .flexAlignItemsStretchA600, .horizontalCenterFlexA600{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnA600{flex-direction: column}
+        .flexNoWrapA600{flex-wrap: nowrap}
+        .flexJustifyEndA600{justify-content: flex-end}
+        .flexJustifyCenterA600{justify-content: center}
+        .flexJustifyBetweenA600{justify-content: space-between}
+        .flexJustifyAroundA600{justify-content: space-around}
+        .flexAlignContentEndA600{align-content: flex-end}
+        .flexAlignContentCenterA600{align-content: center}
+        .flexAlignContentBetweenA600{align-content: space-between}
+        .flexAlignContentAroundA600{align-content: space-around}
+        .flexAlignContentStretchA600{align-content: stretch}
+        .flexAlignItemsEndA600{align-items: flex-end}
+        .flexAlignItemsCenterA600{align-items: center}
+        .flexAlignItemsBaselineA600{align-items: baseline}
+        .flexAlignItemsStretchA600{align-items: stretch}
+        .flexHorizontalA600{list-style: $none}
+    }
+}
+
+/* // Before MQ768 Classes -------------------------------------------------- */
 @include beforeMQ768{
     @if $classes_position_display_mask_cursor_act_BT == "on"{
 /*___ Positioning _______________________*/
@@ -638,245 +667,7 @@
     }
 }
 
-/* // Before Tablet Landscape Classes --------------------------------------- */
-@include beforeMQ1024{
-    @if $classes_position_display_mask_cursor_act_BTL == "on"{
-/*___ Positioning _______________________*/
-        .pRelBTL{position: relative}
-        .pAbsBTL{position: absolute}
-        .clearBTL{clear: both}
-
-/*___ Display ___________________________*/
-        .displayBlockBTL{display: $block}
-        .displayInlineBTL{display: $inline}
-        .displayInlineBlockBTL{display: $inlineBlock}
-        .displayTableBTL{display: table}
-        .displayNoneBTL{display: $none}
-        .contentBoxBTL{box-sizing: content-box}
-        .borderBoxBTL{box-sizing: border-box}
-        .centerVerticallyBTL{
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .visuallyHiddenBTL:not(:focus):not(:active),
-        .sr-onlyBTL:not(:focus):not(:active){
-            // REF [22]
-            position: absolute;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            width: 1px;
-            height: 1px;
-            border: $zero;
-            padding: $zero;
-            margin: -1px;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-    }
-    
-    @if $classes_lists_floats_act_BTL == "on"{
-/*___ Lists and floats __________________*/
-        .unstyledBTL, .horizontalBTL{list-style: $none}
-        .floatLeftBTL, .horizontalBTL li{float: $left}
-        .floatRightBTL{float: $right}
-        .horizontalCenterBTL{
-            margin-right: $auto;
-            margin-left: $auto;    
-            list-style: none;
-            text-align: center;
-            li{
-                display: inline-block!important;
-                > *{
-                    display: inline-block!important;         
-                }
-            }
-        }
-        .floatNoneBTL, .unstyledBTL li{float: $none}
-    }
-    
-    @if $classes_text_act_BTL == "on"{
-/*___ Text ______________________________*/
-        .txIndentedBTL{text-indent: -9999px}
-        .txAlignLeftBTL{text-align: left}
-        .txAlignRightBTL{text-align: right}
-        .txAlignCenterBTL{text-align: center}
-        .txAlignJustifyBTL{text-align: justify}
-        .txAlignJustifyCenterBTL{
-            text-align: justify;
-            text-align-last: center;
-        }
-        .txCaseUpperBTL{text-transform: uppercase}
-        .txCaseLowerBTL{text-transform: lowercase}
-    }
-        
-    @if $classes_bg_bd_NO_act_BTL == "on"{
-/*___ Backgrounds, border and images ____*/
-        .banBTL{border: $none}
-        .bgNoneBTL{
-            &, &:focus, &:hover{
-                background: $none;
-            }
-        }
-        .bgTransparentBTL{background-color: $transparent}
-        .bgNoImageBTL{background-image: $none}
-    }
-    
-    @if $helpers_spacing_act_BTL == "on"{
-/*___ Spacing Helpers ___________________*/
-        @include spacingHelpersClassesGeneratorBTL;
-        .mraBTL,.mhaBTL{margin-right: $auto}
-        .mlaBTL,.mhaBTL{margin-left: $auto}
-    }
-    
-    @if $classes_flexbox_act_BTL == "on"{
-/*___ Flexbox Classes ___________________*/
-        .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnBTL{flex-direction: column}
-        .flexNoWrapBTL{flex-wrap: nowrap}
-        .flexJustifyEndBTL{justify-content: flex-end}
-        .flexJustifyCenterBTL{justify-content: center}
-        .flexJustifyBetweenBTL{justify-content: space-between}
-        .flexJustifyAroundBTL{justify-content: space-around}
-        .flexAlignContentEndBTL{align-content: flex-end}
-        .flexAlignContentCenterBTL{align-content: center}
-        .flexAlignContentBetweenBTL{align-content: space-between}
-        .flexAlignContentAroundBTL{align-content: space-around}
-        .flexAlignContentStretchBTL{align-content: stretch}
-        .flexAlignItemsEndBTL{align-items: flex-end}
-        .flexAlignItemsCenterBTL{align-items: center}
-        .flexAlignItemsBaselineBTL{align-items: baseline}
-        .flexAlignItemsStretchBTL{align-items: stretch}
-        .flexHorizontalBTL{list-style: $none}
-    }
-}
-
-/* // Tablet Only Classes --------------------------------------------------- */
-@include MQ768_1024{
-    @if $classes_position_display_mask_cursor_act_TO == "on"{
-/*___ Positioning _______________________*/
-        .pRelTO{position: relative}
-        .pAbsTO{position: absolute}
-        .clearTO{clear: both}
-
-/*___ Display ___________________________*/
-        .displayBlockTO{display: $block}
-        .displayInlineTO{display: $inline}
-        .displayInlineBlockTO{display: $inlineBlock}
-        .displayTableTO{display: table}
-        .displayNoneTO{display: $none}
-        .contentBoxTO{box-sizing: content-box}
-        .borderBoxTO{box-sizing: border-box}
-        .centerVerticallyTO{
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .visuallyHiddenTO:not(:focus):not(:active),
-        .sr-onlyTO:not(:focus):not(:active){
-            // REF [22]
-            position: absolute;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            width: 1px;
-            height: 1px;
-            border: $zero;
-            padding: $zero;
-            margin: -1px;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-    }
-    
-    @if $classes_lists_floats_act_TO == "on"{
-/*___ Lists and floats __________________*/
-        .unstyledTO, .horizontalTO{list-style: $none}
-        .floatLeftTO, .horizontalTO li{float: $left}
-        .floatRightTO{float: $right}
-        .horizontalCenterTO{
-            margin-right: $auto;
-            margin-left: $auto;    
-            list-style: none;
-            text-align: center;
-            li{
-                display: inline-block!important;
-                > *{
-                    display: inline-block!important;         
-                }
-            }
-        }
-        .floatNoneTO, .unstyledTO li{float: $none}
-    }
-    
-    @if $classes_text_act_TO == "on"{
-/*___ Text ______________________________*/
-        .txIndentedTO{text-indent: -9999px}
-        .txAlignLeftTO{text-align: left}
-        .txAlignRightTO{text-align: right}
-        .txAlignCenterTO{text-align: center}
-        .txAlignJustifyTO{text-align: justify}
-        .txAlignJustifyCenterTO{
-            text-align: justify;
-            text-align-last: center;
-        }
-        .txCaseUpperTO{text-transform: uppercase}
-        .txCaseLowerTO{text-transform: lowercase}
-    }
-        
-    @if $classes_bg_bd_NO_act_TO == "on"{
-/*___ Backgrounds, border and images ____*/
-        .banTO{border: $none}
-        .bgNoneTO{
-            &, &:focus, &:hover{
-                background: $none;
-            }
-        }
-        .bgTransparentTO{background-color: $transparent}
-        .bgNoImageTO{background-image: $none}
-    }
-    
-    @if $helpers_spacing_act_TO == "on"{
-/*___ Spacing Helpers ___________________*/
-        @include spacingHelpersClassesGeneratorTO;
-        .mraTO,.mhaTO{margin-right: $auto}
-        .mlaTO,.mhaTO{margin-left: $auto}
-    }
-    
-    @if $classes_flexbox_act_TO == "on"{
-/*___ Flexbox Classes ___________________*/
-        .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-        .flexColumnTO{flex-direction: column}
-        .flexNoWrapTO{flex-wrap: nowrap}
-        .flexJustifyEndTO{justify-content: flex-end}
-        .flexJustifyCenterTO{justify-content: center}
-        .flexJustifyBetweenTO{justify-content: space-between}
-        .flexJustifyAroundTO{justify-content: space-around}
-        .flexAlignContentEndTO{align-content: flex-end}
-        .flexAlignContentCenterTO{align-content: center}
-        .flexAlignContentBetweenTO{align-content: space-between}
-        .flexAlignContentAroundTO{align-content: space-around}
-        .flexAlignContentStretchTO{align-content: stretch}
-        .flexAlignItemsEndTO{align-items: flex-end}
-        .flexAlignItemsCenterTO{align-items: center}
-        .flexAlignItemsBaselineTO{align-items: baseline}
-        .flexAlignItemsStretchTO{align-items: stretch}
-        .flexHorizontalTO{list-style: $none}
-    }
-}
-
-/* // After Tablet Classes -------------------------------------------------- */
+/* // After MQ768 Classes --------------------------------------------------- */
 @include afterMQ768{
     @if $classes_position_display_mask_cursor_act_AT == "on"{
 /*___ Positioning _______________________*/
@@ -995,8 +786,256 @@
     }
 }
 
-/* // After Tablet Landscape Classes ---------------------------------------- */
+/* // After MQ768 Before MQ1024 Classes ------------------------------------- */
+@include MQ768_1024{
+    @if $classes_position_display_mask_cursor_act_TO == "on"{
+/*___ Positioning _______________________*/
+        .pRelTO{position: relative}
+        .pAbsTO{position: absolute}
+        .clearTO{clear: both}
+
+/*___ Display ___________________________*/
+        .displayBlockTO{display: $block}
+        .displayInlineTO{display: $inline}
+        .displayInlineBlockTO{display: $inlineBlock}
+        .displayTableTO{display: table}
+        .displayNoneTO{display: $none}
+        .contentBoxTO{box-sizing: content-box}
+        .borderBoxTO{box-sizing: border-box}
+        .centerVerticallyTO{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenTO:not(:focus):not(:active),
+        .sr-onlyTO:not(:focus):not(:active){
+            // REF [22]
+            position: absolute;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            border: $zero;
+            padding: $zero;
+            margin: -1px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    
+    @if $classes_lists_floats_act_TO == "on"{
+/*___ Lists and floats __________________*/
+        .unstyledTO, .horizontalTO{list-style: $none}
+        .floatLeftTO, .horizontalTO li{float: $left}
+        .floatRightTO{float: $right}
+        .horizontalCenterTO{
+            margin-right: $auto;
+            margin-left: $auto;    
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block!important;
+                > *{
+                    display: inline-block!important;         
+                }
+            }
+        }
+        .floatNoneTO, .unstyledTO li{float: $none}
+    }
+    
+    @if $classes_text_act_TO == "on"{
+/*___ Text ______________________________*/
+        .txIndentedTO{text-indent: -9999px}
+        .txAlignLeftTO{text-align: left}
+        .txAlignRightTO{text-align: right}
+        .txAlignCenterTO{text-align: center}
+        .txAlignJustifyTO{text-align: justify}
+        .txAlignJustifyCenterTO{
+            text-align: justify;
+            text-align-last: center;
+        }
+        .txCaseUpperTO{text-transform: uppercase}
+        .txCaseLowerTO{text-transform: lowercase}
+    }
+        
+    @if $classes_bg_bd_NO_act_TO == "on"{
+/*___ Backgrounds, border and images ____*/
+        .banTO{border: $none}
+        .bgNoneTO{
+            &, &:focus, &:hover{
+                background: $none;
+            }
+        }
+        .bgTransparentTO{background-color: $transparent}
+        .bgNoImageTO{background-image: $none}
+    }
+    
+    @if $helpers_spacing_act_TO == "on"{
+/*___ Spacing Helpers ___________________*/
+        @include spacingHelpersClassesGeneratorTO;
+        .mraTO,.mhaTO{margin-right: $auto}
+        .mlaTO,.mhaTO{margin-left: $auto}
+    }
+    
+    @if $classes_flexbox_act_TO == "on"{
+/*___ Flexbox Classes ___________________*/
+        .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnTO{flex-direction: column}
+        .flexNoWrapTO{flex-wrap: nowrap}
+        .flexJustifyEndTO{justify-content: flex-end}
+        .flexJustifyCenterTO{justify-content: center}
+        .flexJustifyBetweenTO{justify-content: space-between}
+        .flexJustifyAroundTO{justify-content: space-around}
+        .flexAlignContentEndTO{align-content: flex-end}
+        .flexAlignContentCenterTO{align-content: center}
+        .flexAlignContentBetweenTO{align-content: space-between}
+        .flexAlignContentAroundTO{align-content: space-around}
+        .flexAlignContentStretchTO{align-content: stretch}
+        .flexAlignItemsEndTO{align-items: flex-end}
+        .flexAlignItemsCenterTO{align-items: center}
+        .flexAlignItemsBaselineTO{align-items: baseline}
+        .flexAlignItemsStretchTO{align-items: stretch}
+        .flexHorizontalTO{list-style: $none}
+    }
+}
+
+/* // Before MQ1024 Classes ------------------------------------------------- */
+@include beforeMQ1024{
+    @if $classes_position_display_mask_cursor_act_BTL == "on"{
+/*___ Positioning _______________________*/
+        .pRelBTL{position: relative}
+        .pAbsBTL{position: absolute}
+        .clearBTL{clear: both}
+
+/*___ Display ___________________________*/
+        .displayBlockBTL{display: $block}
+        .displayInlineBTL{display: $inline}
+        .displayInlineBlockBTL{display: $inlineBlock}
+        .displayTableBTL{display: table}
+        .displayNoneBTL{display: $none}
+        .contentBoxBTL{box-sizing: content-box}
+        .borderBoxBTL{box-sizing: border-box}
+        .centerVerticallyBTL{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenBTL:not(:focus):not(:active),
+        .sr-onlyBTL:not(:focus):not(:active){
+            // REF [22]
+            position: absolute;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            border: $zero;
+            padding: $zero;
+            margin: -1px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    
+    @if $classes_lists_floats_act_BTL == "on"{
+/*___ Lists and floats __________________*/
+        .unstyledBTL, .horizontalBTL{list-style: $none}
+        .floatLeftBTL, .horizontalBTL li{float: $left}
+        .floatRightBTL{float: $right}
+        .horizontalCenterBTL{
+            margin-right: $auto;
+            margin-left: $auto;    
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block!important;
+                > *{
+                    display: inline-block!important;         
+                }
+            }
+        }
+        .floatNoneBTL, .unstyledBTL li{float: $none}
+    }
+    
+    @if $classes_text_act_BTL == "on"{
+/*___ Text ______________________________*/
+        .txIndentedBTL{text-indent: -9999px}
+        .txAlignLeftBTL{text-align: left}
+        .txAlignRightBTL{text-align: right}
+        .txAlignCenterBTL{text-align: center}
+        .txAlignJustifyBTL{text-align: justify}
+        .txAlignJustifyCenterBTL{
+            text-align: justify;
+            text-align-last: center;
+        }
+        .txCaseUpperBTL{text-transform: uppercase}
+        .txCaseLowerBTL{text-transform: lowercase}
+    }
+        
+    @if $classes_bg_bd_NO_act_BTL == "on"{
+/*___ Backgrounds, border and images ____*/
+        .banBTL{border: $none}
+        .bgNoneBTL{
+            &, &:focus, &:hover{
+                background: $none;
+            }
+        }
+        .bgTransparentBTL{background-color: $transparent}
+        .bgNoImageBTL{background-image: $none}
+    }
+    
+    @if $helpers_spacing_act_BTL == "on"{
+/*___ Spacing Helpers ___________________*/
+        @include spacingHelpersClassesGeneratorBTL;
+        .mraBTL,.mhaBTL{margin-right: $auto}
+        .mlaBTL,.mhaBTL{margin-left: $auto}
+    }
+    
+    @if $classes_flexbox_act_BTL == "on"{
+/*___ Flexbox Classes ___________________*/
+        .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flexColumnBTL{flex-direction: column}
+        .flexNoWrapBTL{flex-wrap: nowrap}
+        .flexJustifyEndBTL{justify-content: flex-end}
+        .flexJustifyCenterBTL{justify-content: center}
+        .flexJustifyBetweenBTL{justify-content: space-between}
+        .flexJustifyAroundBTL{justify-content: space-around}
+        .flexAlignContentEndBTL{align-content: flex-end}
+        .flexAlignContentCenterBTL{align-content: center}
+        .flexAlignContentBetweenBTL{align-content: space-between}
+        .flexAlignContentAroundBTL{align-content: space-around}
+        .flexAlignContentStretchBTL{align-content: stretch}
+        .flexAlignItemsEndBTL{align-items: flex-end}
+        .flexAlignItemsCenterBTL{align-items: center}
+        .flexAlignItemsBaselineBTL{align-items: baseline}
+        .flexAlignItemsStretchBTL{align-items: stretch}
+        .flexHorizontalBTL{list-style: $none}
+    }
+}
+
+/* // After MQ1024 Classes -------------------------------------------------- */
 @include afterMQ1024{
+    .global_MQ_1500{
+        display: $block;
+    }
+    
+    .global_MQ_600,
+    .global_MQ_1000,    
+    .global_MQ_2000{
+        display: $none;
+    }
+    
     @if $classes_position_display_mask_cursor_act_ATL == "on"{
 /*___ Positioning _______________________*/
         .pRelATL{position: relative}
@@ -1114,7 +1153,7 @@
     }
 }
 
-/* // Tablet Landscape Only Classes ----------------------------------------- */
+/* // After MQ1024 Before MQ1200 Classes ------------------------------------ */
 @include MQ1024_1200{
     @if $classes_position_display_mask_cursor_act_TLO == "on"{
 /*___ Positioning _______________________*/
@@ -1233,7 +1272,7 @@
     }
 }
 
-/* // Tablet And Tablet Landscape Only Classes ------------------------------ */
+/* // After MQ768 Before MQ1200 Classes ------------------------------------- */
 @include MQ768_1200{
     @if $classes_position_display_mask_cursor_act_TTLO == "on"{
 /*___ Positioning _______________________*/
@@ -1352,7 +1391,7 @@
     }
 }
 
-/* // Before Desktop Classes ------------------------------------------------ */
+/* // Before MQ1200 Classes ------------------------------------------------- */
 @include beforeMQ1200{
     @if $classes_position_display_mask_cursor_act_B1200 == "on"{
 /*___ Positioning _______________________*/
@@ -1471,7 +1510,7 @@
     }
 }
 
-/* // After Desktop Classes ------------------------------------------------- */
+/* // After MQ1200 Classes -------------------------------------------------- */
 @include afterMQ1200{
     @if $classes_position_display_mask_cursor_act_A1200 == "on"{
 /*___ Positioning _______________________*/
@@ -1587,5 +1626,18 @@
         .flexAlignItemsBaselineAD{align-items: baseline}
         .flexAlignItemsStretchAD{align-items: stretch}
         .flexHorizontalAD{list-style: $none}
+    }
+}
+
+/* // After MQ1500 Classes -------------------------------------------------- */
+@include afterMQ1500{
+    .global_MQ_2000{
+        display: $block;
+    }
+    
+    .global_MQ_600,
+    .global_MQ_1000,    
+    .global_MQ_1500{
+        display: $none;
     }
 }
