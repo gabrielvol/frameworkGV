@@ -1,12 +1,12 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   PHP Variables Main Loader [/src/var/main.var.inc.php]
+   Site Language Variables [/src/var/lang.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Listado principal de includes de variables php.
+// Variable para site lang, títulos y descripción de sitio
 //
-// #php #variables #includes
+// #description #lang #meta #seo #title
 
 
 
@@ -47,37 +47,12 @@
 
 
 
-/* // Activadores ----------------------------------------------------------- */
-include('act/header.act.inc.php');
-include('act/nav.act.inc.php');
-    
-    
-/* // Data ------------------------------------------------------------------ */
-include('lang.var.inc.php');
-include('domain.var.inc.php');
-// include('date.var.inc.php');
-include('urls.var.inc.php');
-    
-include('meta.main.var.inc.php');
-// include('address.var.inc.php');
-// include('tel.var.inc.php');
-include('email.var.inc.php');
-    
-// include('social.var.inc.php');
-    
-// include('file.var.inc.php');
-// include('media.var.inc.php');
+/* // Site language --------------------------------------------------------- */
+$site_lang_code             = 'es'; // REF [13] // REF [27]
+$site_lang_code_country     = 'AR'; // REF [27]
+$site_lang_locale           = $site_lang_code . '_' . $site_lang_code_country;
+$site_lang_HTML_attr        = $site_lang_code . '-' . $site_lang_code_country; // REF [28]
 
-if($has_form == 1){ include('form.var.inc.php'); }
+$l = $site_lang_HTML_attr; // REF [28]
 
-include('classes.var.inc.php');
-
-/* Entornos no-produccion */
-if($dir_env != ''){ include('xxx.var.inc.php'); }
-
-/* Solo entorno */
-if($dir_env == '/stage'){ include('xxx.var.inc.php'); }
-
-/* Solo entorno produccion */
-if(empty($dir_env)){ include('xxx.var.inc.php'); }
 ?>

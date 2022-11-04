@@ -137,6 +137,7 @@ $url_main_hs_INICIO             = $url_inicio . $hash_main;
     
 /* // global urls / full urls ----------------------------------------------- */
 $url_main               = $http_protocol . $domain_main;
+//$url_main               = $http_protocol . $domain_wip;
 $url_main_full          = $url_main . $dir_env;
 
 $url_wip                = $http_protocol . $domain_wip;
