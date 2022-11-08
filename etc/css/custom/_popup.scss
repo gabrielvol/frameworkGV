@@ -16,7 +16,11 @@
 
 .modal_nav{
     display: none; 
+    /*
     background-color: $modal_bgColour_nav; 
+    */
+    background-image: $bgGrad_modal_nav;
+    filter: $bgGrad_modal_nav_filter;
     
     @include afterMQ768{
         display: $none;
