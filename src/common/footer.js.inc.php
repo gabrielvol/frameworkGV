@@ -3,7 +3,7 @@
 <?php endif; ?>
 
 <script src="<?php echo $dir_env; ?>/js/_global.js"></script>
-
+    
 <?php if($nav_accordion_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 

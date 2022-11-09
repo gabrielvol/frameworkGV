@@ -47,10 +47,10 @@
 /* // General --------------------------------------------------------------- */
 $nav_bdRadius:                  $bdRadius_global;
 $nav_subMenu_width_AT:          250px; 
-$nav_subMenu_width_ATL:         $nav_subMenu_width_AT; 
+$nav_subMenu_width_A1024:         $nav_subMenu_width_AT; 
 
 $nav_subMenu_level2_width_AT:   $nav_subMenu_width_AT; 
-$nav_subMenu_level2_width_ATL:  $nav_subMenu_level2_width_AT; 
+$nav_subMenu_level2_width_A1024:  $nav_subMenu_level2_width_AT; 
 
     
 /* // Nav Topper ------------------------------------------------------------ */
@@ -60,12 +60,12 @@ $topper_height_global:          60px;
 /* // Nav Sizes ------------------------------------------------------------- */
 $nav_height_AT:                 60px;
 $nav_height_TO:                 $nav_height_AT;
-$nav_height_ATL:                $nav_height_AT;
-$nav_height_A1200:                 $nav_height_ATL;
+$nav_height_A1024:                $nav_height_AT;
+$nav_height_A1200:                 $nav_height_A1024;
 
 $nav_item_sub_height_AT:        $nav_height_AT;
 $nav_item_sub_height_TO:        $nav_item_sub_height_AT;
-$nav_item_sub_height_ATL:       $nav_item_sub_height_TO;
+$nav_item_sub_height_A1024:       $nav_item_sub_height_TO;
 
 
 /* // Nav List -------------------------------------------------------------- */

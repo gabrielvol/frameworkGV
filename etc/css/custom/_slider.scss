@@ -52,8 +52,8 @@
             }
         
             @include afterMQ1024{
-                padding-right: $carousel_PH_ATL;
-                padding-left: $carousel_PH_ATL;
+                padding-right: $carousel_PH_A1024;
+                padding-left: $carousel_PH_A1024;
             }
         }
     }
@@ -111,7 +111,7 @@
         .slick-track,
         .slick-track li{
 /*            
-            max-height: calc(85vh - #{$header_height_ATL});
+            max-height: calc(85vh - #{$header_height_A1024});
 */
         }
     }
@@ -134,7 +134,7 @@
         .slick-track,
         .slick-track li{
 /*            
-            max-height: calc(85vh - #{$header_height_ATL});
+            max-height: calc(85vh - #{$header_height_A1024});
 */
         }
     }

@@ -79,7 +79,7 @@ p, a, li, dd, dt, .pSize{
         font-size: $ftSize_paragraph_AT;
     }
     @include afterMQ1024{
-        font-size: $ftSize_paragraph_ATL;
+        font-size: $ftSize_paragraph_A1024;
     }
     @include afterMQ1200{
         font-size: $ftSize_paragraph_A1200;

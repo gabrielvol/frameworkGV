@@ -141,13 +141,13 @@
     }
     
     @include afterMQ1024{
-        @if $page_index_fullHeight_act_ATL == "on" or $page_section_fullHeight_act_ATL == "on"{
-            height: $footer_height_ATL;
+        @if $page_index_fullHeight_act_A1024 == "on" or $page_section_fullHeight_act_A1024 == "on"{
+            height: $footer_height_A1024;
         }  
     
-        @if $page_index_only_fullHeight_act_ATL == "on"{
+        @if $page_index_only_fullHeight_act_A1024 == "on"{
             &.footer_index{
-                height: $footer_height_ATL;
+                height: $footer_height_A1024;
             }
         }  
     }

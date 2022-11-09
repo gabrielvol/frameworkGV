@@ -232,6 +232,14 @@
     @media (min-width: 951px){@content;}}
     
     
+/* // 1000px ---------------------------------------------------------------- */
+@mixin beforeMQ1000{
+    @media (max-width: 1000px){@content;}}
+    
+@mixin afterMQ1000{
+    @media (min-width: 1001px){@content;}}
+    
+    
 /* // 1024px ---------------------------------------------------------------- */
 @mixin beforeMQ1024{
     @media (max-width: 1023px){@content;}}
@@ -258,6 +266,22 @@
     
 @mixin afterMQ1200{ // REF [35]
     @media (min-width: 1201px){@content;}}
+    
+    
+/* // 1300px ---------------------------------------------------------------- */
+@mixin beforeMQ1300{
+    @media (max-width: 1300px){@content;}}
+    
+@mixin afterMQ1300{
+    @media (min-width: 1301px){@content;}}
+    
+    
+/* // 1400px ---------------------------------------------------------------- */
+@mixin beforeMQ1400{
+    @media (max-width: 1400px){@content;}}
+    
+@mixin afterMQ1400{
+    @media (min-width: 1401px){@content;}}
 
     
 /* // 1500px ---------------------------------------------------------------- */
@@ -268,6 +292,11 @@
 /* // 1600px ---------------------------------------------------------------- */
 @mixin afterMQ1600{ // REF [35]
     @media (min-width: 1601px){@content;}}
+
+    
+/* // 2000px ---------------------------------------------------------------- */
+@mixin afterMQ2000{
+    @media (min-width: 2001px){@content;}}
     
 
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */

@@ -93,8 +93,8 @@
     }
 
     @include afterMQ1024{
-        @if $page_index_fullHeight_act_ATL == "on" or $page_index_only_fullHeight_act_ATL == "on"{
-            height: calc(100vh - #{$footer_height_ATL} - #{$header_height_ATL});
+        @if $page_index_fullHeight_act_A1024 == "on" or $page_index_only_fullHeight_act_A1024 == "on"{
+            height: calc(100vh - #{$footer_height_A1024} - #{$header_height_A1024});
         }
     }
 

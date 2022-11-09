@@ -191,7 +191,7 @@
     }
     
     @include afterMQ1024{
-        @if $header_fixed_act_ATL == "on"{
+        @if $header_fixed_act_A1024 == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -203,8 +203,8 @@
             }
         }
         
-        @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_ATL;
+        @if $header_fixed_act_A1024 == "on" or $header_fixed_act_ALL == "on"{
+            height: $header_height_A1024;
         }
     }
 }

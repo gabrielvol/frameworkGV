@@ -904,6 +904,19 @@
         .flexHorizontalTO{list-style: $none}
     }
 }
+    
+/* // After MQ1000 Classes ------------------------------------------------- */
+@include afterMQ1000{
+    .global_MQ_1500{
+        display: $block;
+    }
+    
+    .global_MQ_600,
+    .global_MQ_1000,    
+    .global_MQ_2000{
+        display: $none;
+    }
+}
 
 /* // Before MQ1024 Classes ------------------------------------------------- */
 @include beforeMQ1024{
@@ -1025,18 +1038,8 @@
 }
 
 /* // After MQ1024 Classes -------------------------------------------------- */
-@include afterMQ1024{
-    .global_MQ_1500{
-        display: $block;
-    }
-    
-    .global_MQ_600,
-    .global_MQ_1000,    
-    .global_MQ_2000{
-        display: $none;
-    }
-    
-    @if $classes_position_display_mask_cursor_act_ATL == "on"{
+@include afterMQ1024{    
+    @if $classes_position_display_mask_cursor_act_A1024 == "on"{
 /*___ Positioning _______________________*/
         .pRelATL{position: relative}
         .pAbsATL{position: absolute}
@@ -1070,7 +1073,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_ATL == "on"{
+    @if $classes_lists_floats_act_A1024 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledATL, .horizontalATL{list-style: $none}
         .floatLeftATL, .horizontalATL li{float: $left}
@@ -1090,7 +1093,7 @@
         .floatNoneATL, .unstyledATL li{float: $none}
     }
     
-    @if $classes_text_act_ATL == "on"{
+    @if $classes_text_act_A1024 == "on"{
 /*___ Text ______________________________*/ 
         .txIndentedATL{text-indent: -9999px}
         .txAlignLeftATL{text-align: left}
@@ -1105,7 +1108,7 @@
         .txCaseLowerATL{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_ATL == "on"{
+    @if $classes_bg_bd_NO_act_A1024 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banATL{border: $none}
         .bgNoneATL{
@@ -1117,14 +1120,14 @@
         .bgNoImageATL{background-image: $none}
     }
     
-    @if $helpers_spacing_act_ATL == "on"{
+    @if $helpers_spacing_act_A1024 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorATL;
         .mraATL,.mhaATL{margin-right: $auto}
         .mlaATL,.mhaATL{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_ATL == "on"{
+    @if $classes_flexbox_act_A1024 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexATL, .flexHorizontalATL, .flexColumnATL, .flexNoWrapATL, .flexJustifyEndATL, .flexJustifyCenterATL, .flexJustifyBetweenATL, .flexJustifyAroundATL, .flexAlignContentEndATL, .flexAlignContentCenterATL, .flexAlignContentBetweenATL, .flexAlignContentAroundATL, .flexAlignContentStretchATL, .flexAlignItemsEndATL, .flexAlignItemsCenterATL, .flexAlignItemsBaselineATL, .flexAlignItemsStretchATL, .horizontalCenterFlexATL{
             display: flex;

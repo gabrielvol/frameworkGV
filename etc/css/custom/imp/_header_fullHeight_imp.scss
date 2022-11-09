@@ -101,8 +101,8 @@
     }
     
     @include afterMQ1024{
-        @if $page_index_fullHeight_act_ATL == "on" or $page_section_fullHeight_act_ATL == "on"{
-            height: $header_height_ATL;
+        @if $page_index_fullHeight_act_A1024 == "on" or $page_section_fullHeight_act_A1024 == "on"{
+            height: $header_height_A1024;
         }
     }
     

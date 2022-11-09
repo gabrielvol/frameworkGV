@@ -89,8 +89,8 @@
     }
     
     @include afterMQ1024{
-        @if $header_fixed_act_ATL == "on" or $header_fixed_act_ALL == "on"{
-            padding-top: $page_PT_ATL;
+        @if $header_fixed_act_A1024 == "on" or $header_fixed_act_ALL == "on"{
+            padding-top: $page_PT_A1024;
         }
     }
 }

@@ -239,7 +239,7 @@
     }
     
     @include afterMQ1024{
-        @if $header_logoNav_floated_flexbox_act_ATL == "on"{
+        @if $header_logoNav_floated_flexbox_act_A1024 == "on"{
             .container{
                 display: flex;
                 flex-direction: row;
@@ -254,12 +254,12 @@
             @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
-                    width: $logo_width_ATL;
-                    height: $logo_height_ATL_before;
+                    width: $logo_width_A1024;
+                    height: $logo_height_A1024_before;
                 } 
                 
             } @else {
-                width: $logo_width_ATL;
+                width: $logo_width_A1024;
             }
         }
     }

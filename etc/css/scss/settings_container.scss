@@ -54,7 +54,7 @@
 .containerAT,
 .containerTO,
 .containerBTL,
-.containerATL,
+.containerA1024,
 .containerTLO,
 .containerB1200,
 .containerA1200,
@@ -97,7 +97,7 @@
         width: $container_value_A900;
     }
     @include afterMQ1024{
-        width: $container_value_TL;
+        width: $container_value_A1024;
     }
     @include afterMQ1200{
         width: $container_value_A1200;
@@ -230,7 +230,7 @@
             }
         }
     }
-    @if $classes_container_act_ATL == "on"{
+    @if $classes_container_act_A1024 == "on"{
         &.container_centered_absoluteATL{
             @include afterMQ1024{
                 position: absolute;
@@ -312,7 +312,7 @@
             }
         }
         @include afterMQ1024{
-            width: $container_value_TL;
+            width: $container_value_A1024;
             &.container_centered_absoluteAML{
                 margin-left: $container_value_half_negative_TL;
             }
@@ -376,7 +376,7 @@
             }
         }
         @include afterMQ1024{
-            width: $container_value_TL;
+            width: $container_value_A1024;
             &.container_centered_absoluteA600{        
                 margin-left: $container_value_half_negative_TL;
             }
@@ -425,7 +425,7 @@
             }
         }
         @include afterMQ1024{
-            width: $container_value_TL;
+            width: $container_value_A1024;
             &.container_centered_absoluteAT{        
                 margin-left: $container_value_half_negative_TL;
             }
@@ -470,10 +470,10 @@
         }
     }
 }
-@if $classes_container_act_ATL == "on"{
-    .containerATL{
+@if $classes_container_act_A1024 == "on"{
+    .containerA1024{
         @include afterMQ1024{
-            width: $container_value_TL;
+            width: $container_value_A1024;
             &.container_centered_absoluteATL{
                 position: absolute;
                 left: 50%;   
@@ -497,7 +497,7 @@
 @if $classes_container_act_TLO == "on"{
     .containerTLO{    
         @include MQ1024_1200{
-            width: $container_value_TL;
+            width: $container_value_A1024;
         }
     }
 }
@@ -522,7 +522,7 @@
             width: $container_value_A900;
         }
         @include afterMQ1024{
-            width: $container_value_TL;
+            width: $container_value_A1024;
         }
     }
 }

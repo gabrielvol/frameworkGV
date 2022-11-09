@@ -45,7 +45,7 @@
 
 $table_width_BT:  $hundred;
 $table_width_AT:  700px;
-$table_width_ATL: 970px;
+$table_width_A1024: 970px;
 
     
 /* // Custom Sizes ---------------------------------------------------------- */
@@ -64,7 +64,7 @@ $table_sizes_map_AT:(
     //con el mixin 'tableCustomSizesTablet'
     
 );
-$table_sizes_map_ATL:(
+$table_sizes_map_A1024:(
     //Aquí se agregan los tamaños fijos de tablas, de este mapa se creara
     //una clase por cada tamaño "table.tableWidthBig{width: 1000px;}"
     //con el mixin 'tableCustomSizesTabletL'

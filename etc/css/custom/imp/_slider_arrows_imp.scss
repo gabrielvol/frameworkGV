@@ -107,9 +107,9 @@
     @include afterMQ1024{
         .slickPrev,
         .slickNext{
-            width: $slider_arrows_width_ATL;
-            height: $slider_arrows_height_ATL;
-            margin-top: calc(-1 * #{$slider_arrows_height_half_ATL});
+            width: $slider_arrows_width_A1024;
+            height: $slider_arrows_height_A1024;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A1024});
         }
     }
 }
@@ -194,18 +194,18 @@
         
         @include afterMQ1024{
             .slickPrev{
-                left: calc(#{$carousel_arrows_width_ATL} / 4);
+                left: calc(#{$carousel_arrows_width_A1024} / 4);
             }
 
             .slickNext{
-                right: calc(#{$carousel_arrows_width_ATL} / 4);
+                right: calc(#{$carousel_arrows_width_A1024} / 4);
             }
             
             .slickPrev,
             .slickNext{
-                width: $carousel_arrows_width_ATL;
-                height: $carousel_arrows_height_ATL;
-                margin-top: calc(-1 * #{$carousel_arrows_height_half_ATL});
+                width: $carousel_arrows_width_A1024;
+                height: $carousel_arrows_height_A1024;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_A1024});
             }
         }
     }

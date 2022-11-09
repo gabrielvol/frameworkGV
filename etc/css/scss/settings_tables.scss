@@ -13,7 +13,7 @@ table{
         @include tableCustomSizesAT;          
     }
     @include afterMQ1024{
-        width: $table_width_ATL;
+        width: $table_width_A1024;
         @include tableCustomSizesATL;          
     }     
     th,

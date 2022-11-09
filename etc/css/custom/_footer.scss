@@ -187,9 +187,9 @@
     }
     
     @include afterMQ1024{
-        @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_ATL == "on"{ // REF [20]
+        @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_A1024 == "on"{ // REF [20]
             .logo_footer_container{
-                width: $footer_logoFloated_width_ATL;
+                width: $footer_logoFloated_width_A1024;
                 padding-right: 20px;
                 padding-left: 20px;
                 
@@ -199,11 +199,11 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_ATL}); 
+                width: calc(100% - #{$footer_logoFloated_width_A1024}); 
             }
         }  @else {
             .logo_footer{
-                width: $logo_width_footer_ATL;
+                width: $logo_width_footer_A1024;
             }  
         }  
         

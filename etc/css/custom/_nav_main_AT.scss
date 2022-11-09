@@ -322,12 +322,12 @@
     }
     
     @include afterMQ1024{
-        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_ATL == "on"{
-            width: calc(100% - #{$logo_width_ATL});
+        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_A1024 == "on"{
+            width: calc(100% - #{$logo_width_A1024});
         }
         
         .nav_main_ul{
-            @if $nav_horizontalCenter_ATL_act == "on"{
+            @if $nav_horizontalCenter_A1024_act == "on"{
                 list-style: none;
                 margin-right: $auto;
                 margin-left: $auto;
@@ -374,7 +374,7 @@
             &,
             a,
             .nav_TLI{
-                @include equalHeightAndLineHeight($nav_height_ATL);
+                @include equalHeightAndLineHeight($nav_height_A1024);
             }
             
             a,
@@ -395,16 +395,16 @@
         
         @if $nav_hasSub_act == "on"{
             .nav_subNav{
-                width: $nav_subMenu_width_ATL;
+                width: $nav_subMenu_width_A1024;
                 
                 @if $nav_sub_centered_AT == "on"{
-                    margin-left: calc(-1 * (#{$nav_subMenu_width_ATL} / 2));
+                    margin-left: calc(-1 * (#{$nav_subMenu_width_A1024} / 2));
                 }
                 
                 li,
                 a,
                 .nav_TLI{
-                    @include equalHeightAndLineHeight($nav_item_sub_height_ATL);
+                    @include equalHeightAndLineHeight($nav_item_sub_height_A1024);
                 }
             }
         }
@@ -427,7 +427,7 @@
     }
     
     @include afterMQ1200{
-        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_ATL == "on" or $header_logoNav_floated_flexbox_act_A1200 == "on"{
+        @if $header_logoNav_floated_act == "on" or $header_logoNav_floated_flexbox_act_AT == "on" or $header_logoNav_floated_flexbox_act_A1024 == "on" or $header_logoNav_floated_flexbox_act_A1200 == "on"{
             width: calc(100% - #{$logo_width_A1200});
         }
         

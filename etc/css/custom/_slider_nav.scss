@@ -8,9 +8,11 @@
     }
     
     li{
+        box-sizing: border-box;
+
         &,
         img{
-            @include transition(1s);
+            @include transition(0.7s);
         }
 
         img{

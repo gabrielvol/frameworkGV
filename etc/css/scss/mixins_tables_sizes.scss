@@ -13,7 +13,7 @@
     }
 }
 @mixin tableCustomSizesATL{
-    @each $tableCustomSizesATLMX_tableClassName, $tableCustomSizesATLMX_tableCustomWidth in $table_sizes_map_ATL {
+    @each $tableCustomSizesATLMX_tableClassName, $tableCustomSizesATLMX_tableCustomWidth in $table_sizes_map_A1024 {
         &.#{$tableCustomSizesATLMX_tableClassName}{width: $tableCustomSizesATLMX_tableCustomWidth;}
     }
 }

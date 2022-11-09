@@ -110,8 +110,8 @@
     
     @include afterMQ1024{        
         > section{
-            @if $page_section_fullHeight_act_ATL == "on"{
-                height: calc(100vh - #{$footer_height_ATL} - #{$header_height_ATL});
+            @if $page_section_fullHeight_act_A1024 == "on"{
+                height: calc(100vh - #{$footer_height_A1024} - #{$header_height_A1024});
             }
         } 
     }

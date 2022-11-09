@@ -43,7 +43,7 @@ fieldset, label, input, select, textarea, button,
     
     @include afterMQ1024{
         form &{
-            width: $form_label_width_ATL;
+            width: $form_label_width_A1024;
         }
     }
     
@@ -76,7 +76,7 @@ fieldset, label, button,
     
     @include afterMQ1024{
         form &{
-            font-size: $form_ftSize_ATL;
+            font-size: $form_ftSize_A1024;
         }
     }
 }
@@ -98,7 +98,7 @@ input, select, textarea{
     
     @include afterMQ1024{
         form &{
-            font-size: $form_input_ftSize_ATL;
+            font-size: $form_input_ftSize_A1024;
         }
     }
     
@@ -139,9 +139,9 @@ form button{
 
     @include afterMQ1024{
         form &{
-            width: $button_form_submit_width_ATL;
-            height: $button_form_submit_height_ATL;
-            line-height: $button_form_submit_lineHeight_ATL;
+            width: $button_form_submit_width_A1024;
+            height: $button_form_submit_height_A1024;
+            line-height: $button_form_submit_lineHeight_A1024;
         }
     }
 
@@ -328,12 +328,12 @@ form{
         }
     
         @include afterMQ1024{
-            width: $form_width_ATL!important;
+            width: $form_width_A1024!important;
         }
     }
     
     @include afterMQ1024{
-        width: $form_width_ATL!important;
+        width: $form_width_A1024!important;
     }
     
     @include afterMQ1200{
@@ -364,7 +364,7 @@ form{
             }
 
             @include afterMQ1024{
-                @include equalHeightAndLineHeight($form_label_height_ATL);
+                @include equalHeightAndLineHeight($form_label_height_A1024);
             }
 
             @include afterMQ1200{
@@ -396,7 +396,7 @@ form{
             }
 
             @include afterMQ1024{
-                @include equalHeightAndLineHeight($form_input_height_ATL);
+                @include equalHeightAndLineHeight($form_input_height_A1024);
             }
 
             @include afterMQ1200{
@@ -442,7 +442,7 @@ form{
             }
 
             @include afterMQ1024{
-                @include equalHeightAndLineHeight($form_input_height_ATL);
+                @include equalHeightAndLineHeight($form_input_height_A1024);
             }
 
             @include afterMQ1200{
@@ -464,7 +464,7 @@ form{
             }
 
             @include afterMQ1024{
-                @include equalHeightAndLineHeight($form_label_height_ATL);
+                @include equalHeightAndLineHeight($form_label_height_A1024);
             }
 
             @include afterMQ1200{
