@@ -30,3 +30,14 @@
     font-size: 12px;
     font-weight: 400;
 }
+
+.lb-nav{   
+    a{
+        &.lb-prev{
+            background-position: left 0 top 48%;
+        }
+        &.lb-next{
+            background-position: right 0 top 48%;
+        }
+    }
+}

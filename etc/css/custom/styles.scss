@@ -80,6 +80,8 @@
 //@import "var/page-xxx-var";
 @import "var/page_contacto_var";
 
+//@import "var/lightbox_var"; // REF [26] Ligthbox
+
 /* // Mixins ---------------------------------------------------------------- */
 @import "mediaQueries_mx";
 @import "../scss/mixins_Sizes";
@@ -182,6 +184,7 @@
 //@import "page_xxx";
 //@import "page_xxx";
 
-/* // Post // REF [26] ------------------------------------------------------ */
+/* // Post ------------------------------------------------------------------ */
+// REF [26]
 //@import "../scss/settings_lightbox";
 //@import "lightbox";
