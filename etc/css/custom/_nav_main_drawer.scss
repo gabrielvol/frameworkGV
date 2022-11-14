@@ -73,11 +73,6 @@
                     opacity: 0.5;
                     color: $button_hamb_ftColour_clicked;
                 }
-                    
-                &.site_scrolled_js{
-                    // REF [31] Nav Button Hamb Open
-                    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
-                }
             }
 
             .button_hamb_close{
@@ -89,6 +84,14 @@
                 padding: $zero;
                 text-indent: -9999px;
                 overflow: hidden;
+            }
+                    
+            &.site_scrolled_js{
+                .button_hamb_open{
+                    background-color: $grey2XD_rgba90;
+                    // REF [31] Nav Button Hamb Open
+                    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+                }
             }
         
             .nav_item_xxx{

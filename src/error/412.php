@@ -3,7 +3,9 @@
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/gettext/languageCheck.inc.php');
     
     $page_int           = 1;
-    $nav_pageCurrent    = 'page_error';  
+    $nav_pageCurrent    = 'page_error';   
+    
+    $has_scrolling          = 0;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php'); 
        

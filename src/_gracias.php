@@ -4,8 +4,9 @@
 //    $page_var               = $_GET['page_var']; 
     
     $page_int               = 1; 
-    $nav_pageCurrent        = 'page_gracias';
+    $nav_pageCurrent        = 'page_gracias'; 
     
+    $has_scrolling          = 0;    
 //    $has-CUSTOMVARIABLE     = 1;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');

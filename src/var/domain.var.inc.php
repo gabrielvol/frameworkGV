@@ -51,6 +51,7 @@
 $http_protocol      = 'https://www.';
 
 $domain_main        = 'sitiocomar';
+
 $domain_wip         = $domain_main; // 'sitiocomar';
 
 $domain_sec         = 'sitiocomar';

@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   URL Variables [/src/gettext/languageCheck.inc.php]
+   Language Check Variables [/src/gettext/languageCheck.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -48,15 +48,15 @@
 
 
 
-$l = $_GET['l'];
+$l = $_GET['l'];   
+
+if($l == 'pt_BR') {
+    $gettext_idioma     = 'pt_BR';
+    $gettext_idioma_url = '?l=pt_BR';
     
-if($l == 'en_GB'){
+} elseif($l == 'en_GB'){
     $gettext_idioma     = 'en_GB';
     $gettext_idioma_url = '?l=en_GB';
-
-} elseif($l == 'it_IT') {
-    $gettext_idioma     = 'it_IT';
-    $gettext_idioma_url = '?l=it_IT';
 
 } elseif($l == 'de_DE') {
     $gettext_idioma     = 'de_DE';
@@ -66,17 +66,14 @@ if($l == 'en_GB'){
     $gettext_idioma     = 'fr_FR';
     $gettext_idioma_url = '?l=fr_FR';
 
-} elseif($l == 'pt_BR') {
-    $gettext_idioma     = 'pt_BR';
-    $gettext_idioma_url = '?l=pt_BR';
+} elseif($l == 'it_IT') {
+    $gettext_idioma     = 'it_IT';
+    $gettext_idioma_url = '?l=it_IT';
 
 } else {
     $gettext_idioma     = 'es_AR';
     $gettext_idioma_url = '?l=es_AR';
 }
-/*
-*/
-
 
 /*
 if(isset($l)) {
@@ -87,6 +84,5 @@ if(isset($l)) {
 $gettext_idioma     = $gettext_idiomaElegido;
 $gettext_idioma_url = '?l='. $gettext_idiomaElegido;
 */
-
 
 ?>
