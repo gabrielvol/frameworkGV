@@ -179,9 +179,9 @@ $courierNew:                map-get($font_families_monospaced_map, courierNew);
 $monospace:                 map-get($font_families_monospaced_map, monospace);
 
 /* // Font Sizes ------------------------------------------------------------ */
-$h1_list: 'h1, .hUno';
-$h2_list: 'h2, .hDos';
-$h3_list: 'h3, .hTre';
-$h4_list: 'h4, .hCua';
-$h5_list: 'h5, .hCin';
-$h6_list: 'h6, .hSei';
+$h1_list: 'h1, .heading1';
+$h2_list: 'h2, .heading2';
+$h3_list: 'h3, .heading3';
+$h4_list: 'h4, .heading4';
+$h5_list: 'h5, .heading5';
+$h6_list: 'h6, .heading6';
