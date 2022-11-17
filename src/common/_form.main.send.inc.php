@@ -120,7 +120,7 @@ if (isset($_POST['button_form_submit__formMain'])){
     //$formMail_headers .= "CC: ". $form_recipient_CC__formMain ."\r\n";
     //$formMail_headers .= "BCC: ". $form_recipient_BCC__formMain ."\r\n";
     $formMail_texto  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $data_fullURL__formMain .'</small><br /><br />';
-    //$formMail_texto  .= '<small style="color:#666">Filtro Gmail: FiltroForm</small><br /><br />';
+    //$formMail_texto .= '<small style="color:#666">Filtro Gmail: FiltroForm</small><br /><br />';
     $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formMain ."<br />";
     $formMail_texto .= "<strong>Apellido:</strong> ". $data_apellido__formMain ."<br />";
     $formMail_texto .= "<strong>Nombre y apellido:</strong> ". $data_nombreAp__formMain ."<br />";
@@ -519,7 +519,7 @@ if (isset($_POST['button_form_submit__formMain'])){
                 . '<div role="document" tabindex="0">'
                 . '<button type="submit" class="button_close button_close_pop hover_grow_S_ani" aria-pressed="false">'._("Cerrar").'</button>'
                 . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'">'._("$form_status_ok_globalA__formMain").'</h2>'
-// // REF [29]              . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'"><span>'._("$form_status_ok_globalA__formMain").'</span></h2>'
+/* // REF [29]  . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMain .'"><span>'._("$form_status_ok_globalA__formMain").'</span></h2>' */
                 . '<p>'. _("$form_status_ok_globalB__formMain") .'</p>'
                 . '<button type="submit" class="button_pop_submit" aria-pressed="false">'. _("OK") .'</button>'
                 . '</div>'
