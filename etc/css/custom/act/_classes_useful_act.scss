@@ -26,29 +26,29 @@
 //
 // Ej. con $classes_container_act_A500
 // @media (min-width: 500px) {
-//     .container.container_centered_absoluteAML{
+//     .container.container_centered_absolute_A500{
 //         position: absolute;
 //         left: 50%;
 //         margin-left: calc(-1 * calc(85% / 2));
 //     }
 // }
 // @media (min-width: 767px) {
-//     .container.container_centered_absoluteAML{
+//     .container.container_centered_absolute_A500{
 //         margin-left: calc(-1 * calc(720px / 2));
 //     }
 // }
 // @media (min-width: 1024px) {
-//     .container.container_centered_absoluteAML{
+//     .container.container_centered_absolute_A500{
 //         margin-left: calc(-1 * calc(900px / 2));
 //     }
 // }
 // @media (min-width: 1200px) {
-//     .container.container_centered_absoluteAML{
+//     .container.container_centered_absolute_A500{
 //         margin-left: calc(-1 * calc(900px / 2));
 //     }
 // }
 // @media (min-width: 1600px) {
-//     .container.container_centered_absoluteAML{
+//     .container.container_centered_absolute_A500{
 //         margin-left: calc(-1 * calc(900px / 2));
 //     }
 // }
@@ -173,7 +173,7 @@ $classes_bg_bd_NO_act_BT:                       off;
 
 
 /* // Before Tablet Landscape BTL ------------------------------------------- */
-$classes_container_act_BTL:                     off;
+$classes_container_act_B1024:                     off;
 $helpers_spacing_act_BTL:                       off;
 $classes_position_display_mask_cursor_act_BTL:  off;
 $classes_flexbox_act_BTL:                       off;
@@ -242,17 +242,17 @@ $classes_text_act_B1200:                           off;
 $classes_bg_bd_NO_act_B1200:                       off;
 
 
-/* // After Laptop AL ------------------------------------------------------- */
+/* // After Laptop AL ------------------------------------------------------- 
 $classes_container_act_AL:                      off;
 $helpers_spacing_act_AL:                        off;
 $classes_position_display_mask_cursor_act_AL:   off;
 $classes_flexbox_act_AL:                        off;
 $classes_lists_floats_act_AL:                   off;
 $classes_text_act_AL:                           off;
-$classes_bg_bd_NO_act_AL:                       off;
+$classes_bg_bd_NO_act_AL:                       off; */
 
 
-/* // After Desktop AD ------------------------------------------------------ */
+/* // After Desktop A1200 --------------------------------------------------- */
 $classes_container_act_A1200:                      off;
 $helpers_spacing_act_A1200:                        off;
 $classes_position_display_mask_cursor_act_A1200:   off;
@@ -262,5 +262,17 @@ $classes_text_act_A1200:                           off;
 $classes_bg_bd_NO_act_A1200:                       off;
 
 
-/* // After Desktop Large ADL ----------------------------------------------- */
+/* // After Desktop A1300 --------------------------------------------------- */
+$classes_container_act_A1300:                     off;
+
+
+/* // After Desktop A1400 --------------------------------------------------- */
+$classes_container_act_A1400:                     off;
+
+
+/* // After Desktop A1500 --------------------------------------------------- */
+$classes_container_act_A1500:                     off;
+
+
+/* // After Desktop A1600 --------------------------------------------------- */
 $classes_container_act_A1600:                     off;

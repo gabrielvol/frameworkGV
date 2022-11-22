@@ -409,26 +409,26 @@
 
 /* // Before MQ600 Classes -------------------------------------------------- */
 @include beforeMQ600{
-    .global_MQ_600{
+    .global_MQ_B600{
         display: $block;
     }
     
-    .global_MQ_1000,    
-    .global_MQ_1500,    
-    .global_MQ_2000{
+    .global_MQ_A600,    
+    .global_MQ_A1500,    
+    .global_MQ_A2000{
         display: $none;
     }
 }
 
 /* // After MQ600 Classes --------------------------------------------------- */
 @include afterMQ600{
-    .global_MQ_1000{
+    .global_MQ_A600{
         display: $block;
     }
     
-    .global_MQ_600,
-    .global_MQ_1500,    
-    .global_MQ_2000{
+    .global_MQ_B600,
+    .global_MQ_A1500,    
+    .global_MQ_A2000{
         display: $none;
     }
     
@@ -907,13 +907,13 @@
     
 /* // After MQ1000 Classes ------------------------------------------------- */
 @include afterMQ1000{
-    .global_MQ_1500{
+    .global_MQ_A1500{
         display: $block;
     }
     
-    .global_MQ_600,
-    .global_MQ_1000,    
-    .global_MQ_2000{
+    .global_MQ_B600,
+    .global_MQ_A600,    
+    .global_MQ_A2000{
         display: $none;
     }
 }
@@ -1634,13 +1634,13 @@
 
 /* // After MQ1500 Classes -------------------------------------------------- */
 @include afterMQ1500{
-    .global_MQ_2000{
+    .global_MQ_A2000{
         display: $block;
     }
     
-    .global_MQ_600,
-    .global_MQ_1000,    
-    .global_MQ_1500{
+    .global_MQ_B600,
+    .global_MQ_A600,    
+    .global_MQ_A1500{
         display: $none;
     }
 }

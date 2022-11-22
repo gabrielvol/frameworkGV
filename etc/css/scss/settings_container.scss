@@ -58,6 +58,9 @@
 .containerTLO,
 .containerB1200,
 .containerA1200,
+.containerA1300,
+.containerA1400,
+.containerA1500,
 .containerA1600{
     padding: 0;
     margin-right: auto;
@@ -102,6 +105,15 @@
     @include afterMQ1200{
         width: $container_value_A1200;
     }
+    @include afterMQ1300{
+        width: $container_value_A1300;
+    }
+    @include afterMQ1400{
+        width: $container_value_A1400;
+    }
+    @include afterMQ1500{
+        width: $container_value_A1500;
+    }
     @include afterMQ1600{
         width: $container_value_A1600;
     }
@@ -136,12 +148,21 @@
         @include afterMQ1200{
             margin-left: $container_value_half_negative_A1200;
         }
+        @include afterMQ1300{
+            margin-left: $container_value_half_negative_A1300;
+        }
+        @include afterMQ1400{
+            margin-left: $container_value_half_negative_A1400;
+        }
+        @include afterMQ1500{
+            margin-left: $container_value_half_negative_A1500;
+        }
         @include afterMQ1600{
             margin-left: $container_value_half_negative_A1600;
         }
     }
     @if $classes_container_act_B500 == "on"{
-        &.container_centered_absoluteMO{    
+        &.container_centered_absolute_B500{    
             @include beforeMQ500{
                 position: absolute;
                 left: 50%;   
@@ -150,7 +171,7 @@
         }
     }
     @if $classes_container_act_A500 == "on"{
-        &.container_centered_absoluteAML{
+        &.container_centered_absolute_A500{
             @include afterMQ500{
                 position: absolute;
                 left: 50%;   
@@ -171,13 +192,22 @@
             @include afterMQ1200{  
                 margin-left: $container_value_half_negative_A1200;
             }
+            @include afterMQ1300{  
+                margin-left: $container_value_half_negative_A1300;
+            }
+            @include afterMQ1400{  
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{  
+                margin-left: $container_value_half_negative_A1500;
+            }
             @include afterMQ1600{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
     }
     @if $classes_container_act_B600 == "on"{
-        &.container_centered_absoluteB600{
+        &.container_centered_absolute_B600{
             @include beforeMQ600{
                 position: absolute;
                 left: 50%;   
@@ -186,7 +216,7 @@
         }
     }
     @if $classes_container_act_A600 == "on"{
-        &.container_centered_absoluteA600{
+        &.container_centered_absolute_A600{
             @include afterMQ600{
                 position: absolute;
                 left: 50%;   
@@ -204,13 +234,22 @@
             @include afterMQ1200{
                 margin-left: $container_value_half_negative_A1200;
             }
+            @include afterMQ1300{
+                margin-left: $container_value_half_negative_A1300;
+            }
+            @include afterMQ1400{
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{
+                margin-left: $container_value_half_negative_A1500;
+            }
             @include afterMQ1600{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
     }
     @if $classes_container_act_AT == "on"{
-        &.container_centered_absoluteAT{
+        &.container_centered_absolute_A768{
             @include afterMQ768{
                 position: absolute;
                 left: 50%;   
@@ -225,13 +264,22 @@
             @include afterMQ1200{
                 margin-left: $container_value_half_negative_A1200;
             }
+            @include afterMQ1300{
+                margin-left: $container_value_half_negative_A1300;
+            }
+            @include afterMQ1400{
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{
+                margin-left: $container_value_half_negative_A1500;
+            }
             @include afterMQ1600{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
     }
     @if $classes_container_act_A1024 == "on"{
-        &.container_centered_absoluteATL{
+        &.container_centered_absolute_A1024{
             @include afterMQ1024{
                 position: absolute;
                 left: 50%;   
@@ -240,17 +288,80 @@
             @include afterMQ1200{  
                 margin-left: $container_value_half_negative_A1200;
             }
+            @include afterMQ1300{  
+                margin-left: $container_value_half_negative_A1300;
+            }
+            @include afterMQ1400{  
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{  
+                margin-left: $container_value_half_negative_A1500;
+            }
             @include afterMQ1600{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
     }
     @if $classes_container_act_A1200 == "on"{
-        &.container_centered_absoluteAD{
+        &.container_centered_absolute_A1200{
             @include afterMQ1200{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_A1200;
+            }
+            @include afterMQ1300{ 
+                margin-left: $container_value_half_negative_A1300;
+            }
+            @include afterMQ1400{ 
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{ 
+                margin-left: $container_value_half_negative_A1500;
+            }
+            @include afterMQ1600{
+                margin-left: $container_value_half_negative_A1600;
+            }
+        }
+    }
+    @if $classes_container_act_A1300 == "on"{
+        &.container_centered_absolute_A1300{
+            @include afterMQ1300{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A1300;
+            }
+            @include afterMQ1400{ 
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{ 
+                margin-left: $container_value_half_negative_A1500;
+            }
+            @include afterMQ1600{
+                margin-left: $container_value_half_negative_A1600;
+            }
+        }
+    }
+    @if $classes_container_act_A1400 == "on"{
+        &.container_centered_absolute_A1400{
+            @include afterMQ1400{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A1400;
+            }
+            @include afterMQ1500{ 
+                margin-left: $container_value_half_negative_A1500;
+            }
+            @include afterMQ1600{
+                margin-left: $container_value_half_negative_A1600;
+            }
+        }
+    }
+    @if $classes_container_act_A1500 == "on"{
+        &.container_centered_absolute_A1500{
+            @include afterMQ1500{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A1500;
             }
             @include afterMQ1600{
                 margin-left: $container_value_half_negative_A1600;
@@ -258,7 +369,7 @@
         }
     }
     @if $classes_container_act_A1600 == "on"{
-        &.container_centered_absoluteADL{
+        &.container_centered_absolute_A1600{
             @include afterMQ1600{
                 position: absolute;
                 left: 50%;   
@@ -272,7 +383,7 @@
     .containerB500{
         @include beforeMQ500{
             width: $container_value_B500;            
-            &.container_centered_absoluteMO{    
+            &.container_centered_absolute_B500{    
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_B500;
@@ -284,7 +395,7 @@
     .containerA500{
         @include afterMQ500{
             width: $container_value_A500;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_A500;
@@ -295,37 +406,55 @@
         }
         @include afterMQ600{
             width: $container_value_A600;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 margin-left: $container_value_half_negative_A600;
             }
         }
         @include afterMQ768{
             width: $container_value_T;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 margin-left: $container_value_half_negative_T;
             }
         }
         @include afterMQ900{
             width: $container_value_A900;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 margin-left: $container_value_half_negative_A900;
             }
         }
         @include afterMQ1024{
             width: $container_value_A1024;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 margin-left: $container_value_half_negative_TL;
             }
         }
         @include afterMQ1200{
             width: $container_value_A1200;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 margin-left: $container_value_half_negative_A1200;
+            }
+        }
+        @include afterMQ1300{
+            width: $container_value_A1300;
+            &.container_centered_absolute_A500{
+                margin-left: $container_value_half_negative_A1300;
+            }
+        }
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A500{
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A500{
+                margin-left: $container_value_half_negative_A1500;
             }
         }
         @include afterMQ1600{
             width: $container_value_A1600;
-            &.container_centered_absoluteAML{
+            &.container_centered_absolute_A500{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
@@ -345,7 +474,7 @@
         }
         @media (min-width: 500px) and (max-width: 600px){
             width: $container_value_B600;            
-            &.container_centered_absoluteB600{    
+            &.container_centered_absolute_B600{    
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_B600;
@@ -357,7 +486,7 @@
     .containerA600{
         @include afterMQ600{
             width: $container_value_A600;            
-            &.container_centered_absoluteA600{    
+            &.container_centered_absolute_A600{    
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_A600;
@@ -365,32 +494,50 @@
         }
         @include afterMQ768{
             width: $container_value_T;
-            &.container_centered_absoluteA600{ 
+            &.container_centered_absolute_A600{ 
                 margin-left: $container_value_half_negative_T;        
             }
         }
         @include afterMQ900{
             width: $container_value_A900;
-            &.container_centered_absoluteA600{
+            &.container_centered_absolute_A600{
                 margin-left: $container_value_half_negative_A900;        
             }
         }
         @include afterMQ1024{
             width: $container_value_A1024;
-            &.container_centered_absoluteA600{        
+            &.container_centered_absolute_A600{        
                 margin-left: $container_value_half_negative_TL;
             }
         }
         @include afterMQ1200{
             width: $container_value_A1200;
-            &.container_centered_absoluteA600{    
-                margin-left: $container_value_half_negative_A1200;    
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_half_negative_A1200;
             }
         }
-        @include afterMQ1600{ 
+        @include afterMQ1300{
+            width: $container_value_A1300;
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_half_negative_A1300;
+            }
+        }
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_half_negative_A1500;
+            }
+        }
+        @include afterMQ1600{
             width: $container_value_A1600;
-            &.container_centered_absoluteA600{       
-                margin-left: $container_value_half_negative_A1600; 
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -412,7 +559,7 @@
     .containerAT{
         @include afterMQ768{
             width: $container_value_T;
-            &.container_centered_absoluteAT{
+            &.container_centered_absolute_A768{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_T;        
@@ -420,26 +567,44 @@
         }
         @include afterMQ900{
             width: $container_value_A900;
-            &.container_centered_absoluteAT{
+            &.container_centered_absolute_A768{
                 margin-left: $container_value_half_negative_A900;        
             }
         }
         @include afterMQ1024{
             width: $container_value_A1024;
-            &.container_centered_absoluteAT{        
+            &.container_centered_absolute_A768{        
                 margin-left: $container_value_half_negative_TL;
             }
         }
         @include afterMQ1200{
             width: $container_value_A1200;
-            &.container_centered_absoluteAT{    
-                margin-left: $container_value_half_negative_A1200;    
+            &.container_centered_absolute_A768{
+                margin-left: $container_value_half_negative_A1200;
+            }
+        }
+        @include afterMQ1300{
+            width: $container_value_A1300;
+            &.container_centered_absolute_A768{
+                margin-left: $container_value_half_negative_A1300;
+            }
+        }
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A768{
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A768{
+                margin-left: $container_value_half_negative_A1500;
             }
         }
         @include afterMQ1600{
             width: $container_value_A1600;
-            &.container_centered_absoluteAT{       
-                margin-left: $container_value_half_negative_A1600; 
+            &.container_centered_absolute_A768{
+                margin-left: $container_value_half_negative_A1600;
             }
         }
     }
@@ -451,7 +616,7 @@
         }
     }
 }
-@if $classes_container_act_BTL == "on"{
+@if $classes_container_act_B1024 == "on"{
     .containerBTL{
         @include beforeMQ350{
             width: $container_value_B350;
@@ -474,7 +639,7 @@
     .containerA1024{
         @include afterMQ1024{
             width: $container_value_A1024;
-            &.container_centered_absoluteATL{
+            &.container_centered_absolute_A1024{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_TL;
@@ -482,13 +647,31 @@
         }
         @include afterMQ1200{
             width: $container_value_A1200;
-            &.container_centered_absoluteATL{
+            &.container_centered_absolute_A1024{
                 margin-left: $container_value_half_negative_A1200;
+            }
+        }
+        @include afterMQ1300{
+            width: $container_value_A1300;
+            &.container_centered_absolute_A1024{
+                margin-left: $container_value_half_negative_A1300;
+            }
+        }
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A1024{
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A1024{
+                margin-left: $container_value_half_negative_A1500;
             }
         }
         @include afterMQ1600{
             width: $container_value_A1600;
-            &.container_centered_absoluteATL{
+            &.container_centered_absolute_A1024{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
@@ -530,15 +713,105 @@
     .containerA1200{
         @include afterMQ1200{
             width: $container_value_A1200;
-            &.container_centered_absoluteAD{
+            &.container_centered_absolute_A1200{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_half_negative_A1200;
             }
         }
+        @include afterMQ1300{
+            width: $container_value_A1300;
+            &.container_centered_absolute_A1200{
+                margin-left: $container_value_half_negative_A1300;
+            }
+        }
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A1200{
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A1200{
+                margin-left: $container_value_half_negative_A1500;
+            }
+        }
         @include afterMQ1600{
             width: $container_value_A1600;
-            &.container_centered_absoluteAD{
+            &.container_centered_absolute_A1200{
+                margin-left: $container_value_half_negative_A1600;
+            }
+        }
+    }
+}
+@if $classes_container_act_A1300 == "on"{
+    .containerA1300{
+        @include afterMQ1300{
+            width: $container_value_A1300;
+            &.container_centered_absolute_A1300{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A1300;
+            }
+        }
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A1300{
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A1300{
+                margin-left: $container_value_half_negative_A1500;
+            }
+        }
+        @include afterMQ1600{
+            width: $container_value_A1600;
+            &.container_centered_absolute_A1300{
+                margin-left: $container_value_half_negative_A1600;
+            }
+        }
+    }
+}
+@if $classes_container_act_A1400 == "on"{
+    .containerA1400{
+        @include afterMQ1400{
+            width: $container_value_A1400;
+            &.container_centered_absolute_A1400{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A1400;
+            }
+        }
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A1400{
+                margin-left: $container_value_half_negative_A1500;
+            }
+        }
+        @include afterMQ1600{
+            width: $container_value_A1600;
+            &.container_centered_absolute_A1400{
+                margin-left: $container_value_half_negative_A1600;
+            }
+        }
+    }
+}
+@if $classes_container_act_A1500 == "on"{
+    .containerA1500{
+        @include afterMQ1500{
+            width: $container_value_A1500;
+            &.container_centered_absolute_A1500{
+                position: absolute;
+                left: 50%;   
+                margin-left: $container_value_half_negative_A1500;
+            }
+        }
+        @include afterMQ1600{
+            width: $container_value_A1600;
+            &.container_centered_absolute_A1500{
                 margin-left: $container_value_half_negative_A1600;
             }
         }
@@ -548,7 +821,9 @@
     .containerA1600{
         @include afterMQ1600{
             width: $container_value_A1600;
-            &.container_centered_absoluteADL{
+            &.container_centered_absolute_A1600{
+                position: absolute;
+                left: 50%;   
                 margin-left: $container_value_half_negative_A1600;
             }
         }

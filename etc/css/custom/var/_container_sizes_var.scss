@@ -56,5 +56,8 @@ $container_value_A600:               85%;
 $container_value_T:                  720px;
 $container_value_A900:               800px;
 $container_value_A1024:              900px;
-$container_value_A1200:              $container_value_A1024; // Desktop 1200+ // REF [35]
-$container_value_A1600:              $container_value_A1200; // Desktop Large 1600+ // REF [35]
+$container_value_A1200:              calc(100% - 100px);
+$container_value_A1300:              $container_value_A1200;
+$container_value_A1400:              1300px;
+$container_value_A1500:              $container_value_A1400;
+$container_value_A1600:              $container_value_A1500;

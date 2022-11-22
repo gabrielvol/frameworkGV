@@ -1837,35 +1837,35 @@ article, article::before, article::after, details, details::before, details::aft
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 601px) {
-  .container.container_centered_absoluteA600 {
+  .container.container_centered_absolute_A600 {
     position: absolute;
     left: 50%;
     margin-left: calc(-1 * calc(85% / 2)); } }
 
 @media (min-width: 768px) {
-  .container.container_centered_absoluteA600 {
+  .container.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(720px / 2)); } }
 
 @media (min-width: 901px) {
-  .container.container_centered_absoluteA600 {
+  .container.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(800px / 2)); } }
 
 @media (min-width: 1024px) {
-  .container.container_centered_absoluteA600 {
+  .container.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1200px) {
-  .container.container_centered_absoluteA600 {
+  .container.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1600px) {
-  .container.container_centered_absoluteA600 {
+  .container.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 601px) {
   .containerA600 {
     width: 85%; }
-    .containerA600.container_centered_absoluteA600 {
+    .containerA600.container_centered_absolute_A600 {
       position: absolute;
       left: 50%;
       margin-left: calc(-1 * calc(85% / 2)); } }
@@ -1873,31 +1873,31 @@ article, article::before, article::after, details, details::before, details::aft
 @media (min-width: 768px) {
   .containerA600 {
     width: 720px; }
-    .containerA600.container_centered_absoluteA600 {
+    .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(720px / 2)); } }
 
 @media (min-width: 901px) {
   .containerA600 {
     width: 800px; }
-    .containerA600.container_centered_absoluteA600 {
+    .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(800px / 2)); } }
 
 @media (min-width: 1024px) {
   .containerA600 {
     width: 900px; }
-    .containerA600.container_centered_absoluteA600 {
+    .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1200px) {
   .containerA600 {
     width: 900px; }
-    .containerA600.container_centered_absoluteA600 {
+    .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1600px) {
   .containerA600 {
     width: 900px; }
-    .containerA600.container_centered_absoluteA600 {
+    .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(900px / 2)); } }
 
 /* // Hack para Windows Phone ----------------------------------------------- */

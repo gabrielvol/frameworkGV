@@ -264,7 +264,7 @@
 @mixin beforeMQ1200{
     @media (max-width: 1200px){@content;}}
     
-@mixin afterMQ1200{ // REF [35]
+@mixin afterMQ1200{
     @media (min-width: 1201px){@content;}}
     
     
@@ -290,7 +290,7 @@
 
     
 /* // 1600px ---------------------------------------------------------------- */
-@mixin afterMQ1600{ // REF [35]
+@mixin afterMQ1600{
     @media (min-width: 1601px){@content;}}
 
     
