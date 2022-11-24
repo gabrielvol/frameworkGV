@@ -4,15 +4,14 @@
 
 <script src="<?php echo $dir_env; ?>/js/_global.js"></script>
 
-<?php if($nav_accordion_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
+<?php if($nav_accordion_act == 1): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
-<?php endif; if($nav_drawer_act == 1): // nav `[/var/act/nav.act.inc.php]` ?>
+<?php endif; if($nav_drawer_act == 1): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_drawer.js"></script>
     
-<?php if($has_scrolling !== 0): ?>
+<?php endif; if($has_scrolling !== 0): ?>
 <script src="<?php echo $dir_env; ?>/js/_scrolling.js"></script>
-<?php endif; ?>
 
 <?php endif; if($nav_pageCurrent == 'page_index'): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>

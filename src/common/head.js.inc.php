@@ -34,5 +34,5 @@
 */ ?>
 <?php endif; if($page_construccion == 1): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-*/
-endif; ?>
+*/ ?>
+<?php endif; ?>

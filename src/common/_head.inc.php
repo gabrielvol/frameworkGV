@@ -116,10 +116,10 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 
 <?php /* Twitter Card */ ?>
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="<?php echo $url_main; ?>">
+<meta property="twitter:url" content="<?php echo $openGraph_url; ?>">
 <meta property="twitter:title" content="<?php echo $openGraph_title; ?>">
 <meta property="twitter:description" content="<?php echo $openGraph_desc; ?>">
-<meta property="twitter:image" content="<?php echo $openGraph_img_url_big; ?>">
+<meta property="twitter:image" content="<?php echo $openGraph_img_url; ?>">
 
 <?php /* Pinterest */ ?>
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">

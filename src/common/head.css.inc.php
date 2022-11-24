@@ -42,5 +42,5 @@
 */ ?>
 <?php endif; if($page_construccion == 1): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
-*/
-endif; ?>
+*/ ?>
+<?php endif; ?>
