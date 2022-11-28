@@ -45,29 +45,57 @@
 
 
 /* // Form Main ------------------------------------------------------------- */   
-$form_recipient__formMain            = "tampas@gmail.com"; //$site_email_contacto_address;
-$form_recipient_CC__formMain         = $form_recipient__formMain;
-$form_recipient_BCC__formMain        = $form_recipient__formMain;
+///-- Produccion / Stage
+if($dir_env == '' || $dir_env == '/stage'):
+    $form_recipient__formMain           = $site_email_EMAILA;
+    $form_recipient_CC__formMain        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
+    $form_recipient_BCC__formMain       = 'tampas@gmail.com'; // TODO
+endif;
 
+///-- No es Produccion / No es Stage
+if($dir_env != '' || $dir_env !== '/stage'):
+    $form_recipient__formMain           = 'tampas@gmail.com';
+    $form_recipient_CC__formMain        = '';
+    $form_recipient_BCC__formMain       = '';
+endif;
 
 $form_status_recipient__formMain        = $form_recipient__formMain;
 $form_status_recipient_mailto__formMain = 'mailto:'. $form_recipient__formMain;
 
 
 /* // Form Contacto --------------------------------------------------------- */   
-$form_recipient__formContacto            = "tampas@gmail.com"; //$site_email_contacto_address;
-$form_recipient_CC__formContacto         = $form_recipient__formContacto;
-$form_recipient_BCC__formContacto        = $form_recipient__formContacto;
+///-- Produccion / Stage
+if($dir_env == '' || $dir_env == '/stage'):
+    $form_recipient__formContacto           = $site_email_EMAILA;
+    $form_recipient_CC__formContacto        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
+    $form_recipient_BCC__formContacto       = 'tampas@gmail.com';
+endif;
 
+///-- No es Produccion / No es Stage
+if($dir_env != '' || $dir_env !== '/stage'):
+    $form_recipient__formContacto           = 'tampas@gmail.com';
+    $form_recipient_CC__formContacto        = '';
+    $form_recipient_BCC__formContacto       = '';
+endif;
 
 $form_status_recipient__formContacto        = $form_recipient__formContacto;
 $form_status_recipient_mailto__formContacto = 'mailto:'. $form_recipient__formContacto;
 
 
 /* // Form Footer ----------------------------------------------------------- */   
-$form_recipient__formFooter            = "tampas@gmail.com"; //$site_email_contacto_address;
-$form_recipient_CC__formFooter         = $form_recipient__formFooter;
-$form_recipient_BCC__formFooter        = $form_recipient__formFooter;       
+///-- Produccion / Stage
+if($dir_env == '' || $dir_env == '/stage'):
+    $form_recipient__formFooter           = $site_email_EMAILA;
+    $form_recipient_CC__formFooter        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
+    $form_recipient_BCC__formFooter       = 'tampas@gmail.com';
+endif;
+
+///-- No es Produccion / No es Stage
+if($dir_env != '' || $dir_env !== '/stage'):
+    $form_recipient__formFooter           = 'tampas@gmail.com';
+    $form_recipient_CC__formFooter        = '';
+    $form_recipient_BCC__formFooter       = '';
+endif;    
 
 $form_status_recipient__formFooter        = $form_recipient__formFooter;
 $form_status_recipient_mailto__formFooter = 'mailto:'. $form_recipient__formFooter;

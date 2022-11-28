@@ -76,6 +76,7 @@ $site_email_EMAILD_mailto    = 'mailto:'. $site_email_EMAILD_address;
 $site_email_EMAILD_href      = 'href="'. $site_email_EMAILD_mailto .'"';
 $site_email_EMAILD_anchor    = '<a '. $site_email_EMAILD_href .'>'. $site_email_EMAILD_address .'</a>';
 
+/* // Domain gmail.com ------------------------------------------------------ */
 $site_email_gmail_GMAILACCOUNT_address   = 'GMAILACCOUNT@gmail.com';
 $site_email_gmail_GMAILACCOUNT_mailto    = 'mailto:'. $site_email_gmail_GMAILACCOUNT_address;
 $site_email_gmail_GMAILACCOUNT_href      = 'href="'. $site_email_gmail_GMAILACCOUNT_mailto .'"';

@@ -73,7 +73,7 @@ if($has_form == 1){ include('form.var.inc.php'); }
 include('classes.var.inc.php');
 
 /* Entornos no-produccion
-if($dir_env != ''){ include('xxx.var.inc.php'); }
+if($dir_env !== ''){ include('xxx.var.inc.php'); }
 
 /* Solo entorno
 if($dir_env == '/stage'){ include('xxx.var.inc.php'); }

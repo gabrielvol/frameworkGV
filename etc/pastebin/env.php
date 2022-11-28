@@ -1,6 +1,6 @@
 <?php     
 /* Entornos no-produccion */
-if($dir_env != ''):
+if($dir_env !== ''):
 endif;
 
 /* Solo entorno */
