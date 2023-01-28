@@ -68,7 +68,7 @@ $form_status_recipient_mailto__formMain = 'mailto:'. $form_recipient__formMain;
 if($dir_env == '' || $dir_env == '/stage'):
     $form_recipient__formContacto           = $site_email_EMAILA;
     $form_recipient_CC__formContacto        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
-    $form_recipient_BCC__formContacto       = 'tampas@gmail.com';
+    $form_recipient_BCC__formContacto       = 'tampas@gmail.com'; // TODO
 endif;
 
 ///-- No es Produccion / No es Stage
@@ -87,7 +87,7 @@ $form_status_recipient_mailto__formContacto = 'mailto:'. $form_recipient__formCo
 if($dir_env == '' || $dir_env == '/stage'):
     $form_recipient__formFooter           = $site_email_EMAILA;
     $form_recipient_CC__formFooter        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
-    $form_recipient_BCC__formFooter       = 'tampas@gmail.com';
+    $form_recipient_BCC__formFooter       = 'tampas@gmail.com'; // TODO
 endif;
 
 ///-- No es Produccion / No es Stage
