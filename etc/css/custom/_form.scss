@@ -84,9 +84,23 @@ form{
     input,
     select,
     textarea{
-        @include borderStyle($form_input_bdColour);
         padding-right: 10px;
         padding-left: 10px;
+
+        @if $form_input_border_act == "on"{
+            @include borderStyle($form_input_bdColour);
+
+            &:focus,
+            &:hover{
+                border-color: $form_input_bdColour_hover;
+            } 
+        } @else {
+            &,
+            &:focus,
+            &:hover{
+                border: $none;
+            }
+        }
     }
     
     input{

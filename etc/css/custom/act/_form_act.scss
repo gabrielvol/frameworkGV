@@ -13,8 +13,9 @@
 // 01 _ $form_label_inside_act
 // 02 _ $form_label_coloured_act
 // 03 _ $form_input_coloured_act
-// 04 _ $form_submit_border_act // REF [21a]
-// 05 _ $form_span_invalid_tooltip_act // REF [16]
+// 04 _ $form_input_border_act // REF [35]
+// 05 _ $form_submit_border_act // REF [21a]
+// 06 _ $form_span_invalid_tooltip_act // REF [16]
 //
 //
 // 01 _ $form_label_inside_act
@@ -51,13 +52,35 @@
 // input[type="file"].bgVerdeAgua:focus { background-color: #hex; }
 //
 //
-// 04 _ $form_submit_border_act
+// 04 _ $form_input_border_act
+// REF [35]
+// Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
+//
+// Genera selectores de color de borde para `input`, `select` y 
+// `textarea`, y sus pseudoclases `:focus` y `:hover`.
+// Usa las variables `$form_input_bdColour`, y 
+// `$form_input_bdColour_hover` para las pseudoclases `:focus` y `:hover`.
+//
+// Ej.
+// form input,
+// form select,
+// form textarea { border: 1px solid #hex; }
+//
+// form input:focus,
+// form input:hover,
+// form select:focus,
+// form select:hover,
+// form textarea:focus,
+// form textarea:hover { border-color: #hex; }
+//
+//
+// 05 _ $form_submit_border_act
 // REF [21a]
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
-// Genera selectores de color para `input[type="reset"]`, `input[type="submit"]`,
+// Genera selectores de color de borde para `input[type="reset"]`, `input[type="submit"]`,
 // `input[type="button"]` y `button` y sus pseudoclases `:focus` y `:hover`.
-// Usa las variables `$button_form_submit_bdColour` y 
+// Usa las variables `$button_form_submit_bdColour`, y 
 // `$button_form_submit_bdColour_hover` para las pseudoclases `:focus` y `:hover`.
 //
 // Ej.
@@ -76,7 +99,7 @@
 // form button:hover { border-color: #hex; }
 //
 //
-// 05 _ $form_span_invalid_tooltip_act
+// 06 _ $form_span_invalid_tooltip_act
 // REF [16]
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
@@ -127,6 +150,7 @@ $form_label_coloured_act:           off;
 
 /* // Form Input ------------------------------------------------------------ */
 $form_input_coloured_act:           off;
+$form_input_border_act:             on; // REF [35]
 
 /* // Form Button Submit // REF [21] ---------------------------------------- */
 $form_submit_border_act:            off; // REF [21a]

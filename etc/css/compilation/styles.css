@@ -23,9 +23,19 @@
 /* // Tablet Landscape Only TLO --------------------------------------------- */
 /* // Tablet Landscape Only TTLO -------------------------------------------- */
 /* // Before Desktop BD ----------------------------------------------------- */
-/* // After Laptop AL ------------------------------------------------------- */
-/* // After Desktop AD ------------------------------------------------------ */
-/* // After Desktop Large ADL ----------------------------------------------- */
+/* // After Laptop AL ------------------------------------------------------- 
+$classes_container_act_AL:                      off;
+$helpers_spacing_act_AL:                        off;
+$classes_position_display_mask_cursor_act_AL:   off;
+$classes_flexbox_act_AL:                        off;
+$classes_lists_floats_act_AL:                   off;
+$classes_text_act_AL:                           off;
+$classes_bg_bd_NO_act_AL:                       off; */
+/* // After Desktop A1200 --------------------------------------------------- */
+/* // After Desktop A1300 --------------------------------------------------- */
+/* // After Desktop A1400 --------------------------------------------------- */
+/* // After Desktop A1500 --------------------------------------------------- */
+/* // After Desktop A1600 --------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Logo Activators | Custom [/etc/css/custom/act/logo_act.scss]
    ========================================================================== */
@@ -450,10 +460,17 @@
 /* // 850px ----------------------------------------------------------------- */
 /* // 900px ----------------------------------------------------------------- */
 /* // 950px ----------------------------------------------------------------- */
+/* // 1000px ---------------------------------------------------------------- */
 /* // 1024px ---------------------------------------------------------------- */
 /* // 1100px ---------------------------------------------------------------- */
 /* // 1200px ---------------------------------------------------------------- */
+/* // 1300px ---------------------------------------------------------------- */
+/* // 1400px ---------------------------------------------------------------- */
+/* // 1500px ---------------------------------------------------------------- */
 /* // 1600px ---------------------------------------------------------------- */
+/* // 2000px ---------------------------------------------------------------- */
+/* // 2500px ---------------------------------------------------------------- */
+/* // 3000px ---------------------------------------------------------------- */
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */
 /* // iPhone 4 & 4S Portrait Only ------------------------------------------- */
 /* // iPhone 4 & 4S Landscape Only ------------------------------------------ */
@@ -591,6 +608,16 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
     filter: $bgGrad_colourPercent_filter;
 }
 */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.6+0,0.75+100 */
+.bgGrad_modal_nav {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#bf000000',GradientType=1 ); }
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd600+0,ff7a00+20,ff0069+47,d300c5+72,7638fa+100 */
+.bgGrad_gradient_ig {
+  background-image: linear-gradient(to right, #ffd600 0%, #ff7a00 20%, #ff0069 47%, #d300c5 72%, #7638fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd600', endColorstr='#7638fa',GradientType=1 ); }
+
 /* * NombreDeProyecto * ========================================================
    Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
    ========================================================================== */
@@ -739,7 +766,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, dfn a, button a, blockquote a, df
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.8em; }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
+  p, a, li, dd, dt, .pSize {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) {
   p, a, li, dd, dt, .pSize {
     font-size: 0.9rem; } }
 
@@ -751,7 +782,7 @@ h1, h2, h3, h4, h5, h6 {
   p, a, li, dd, dt, .pSize {
     font-size: 1rem; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   p, a, li, dd, dt, .pSize {
     font-size: 1rem; } }
 
@@ -797,45 +828,45 @@ a {
   font-family: Roboto; }
 
 @media (max-width: 767px) {
-  h1, .hUno {
+  h1, .heading1 {
     font-size: 1.6rem; }
-  h2, .hDos {
+  h2, .heading2 {
     font-size: 1.5rem; }
-  h3, .hTre {
+  h3, .heading3 {
     font-size: 1.4rem; }
-  h4, .hCua {
+  h4, .heading4 {
     font-size: 1.3rem; }
-  h5, .hCin {
+  h5, .heading5 {
     font-size: 1.3rem; }
-  h6, .hSei {
+  h6, .heading6 {
     font-size: 1.3rem; } }
 
 @media (min-width: 768px) {
-  h1, .hUno {
+  h1, .heading1 {
     font-size: 1.6rem; }
-  h2, .hDos {
+  h2, .heading2 {
     font-size: 1.5rem; }
-  h3, .hTre {
+  h3, .heading3 {
     font-size: 1.4rem; }
-  h4, .hCua {
+  h4, .heading4 {
     font-size: 1.3rem; }
-  h5, .hCin {
+  h5, .heading5 {
     font-size: 1.3rem; }
-  h6, .hSei {
+  h6, .heading6 {
     font-size: 1.3rem; } }
 
-@media (min-width: 1200px) {
-  h1, .hUno {
+@media (min-width: 1201px) {
+  h1, .heading1 {
     font-size: 2.4rem; }
-  h2, .hDos {
+  h2, .heading2 {
     font-size: 2.2rem; }
-  h3, .hTre {
+  h3, .heading3 {
     font-size: 2rem; }
-  h4, .hCua {
+  h4, .heading4 {
     font-size: 1.8rem; }
-  h5, .hCin {
+  h5, .heading5 {
     font-size: 1.6rem; }
-  h6, .hSei {
+  h6, .heading6 {
     font-size: 1.4rem; } }
 
 /* // Colour classes -------------------------------------------------------- */
@@ -846,7 +877,7 @@ a.white, a.white:active, a.white:visited, a.white:focus, a.white:hover {
   color: #fff; }
 
 a.white:focus, a.white:hover {
-  text-shadow: 0 0 3px #000; }
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
 
 a.white.noHover:focus, a.white.noHover:hover {
   text-shadow: 0 0 0 transparent; }
@@ -1520,11 +1551,42 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Mobile Only Classes --------------------------------------------------- */
-/* // After Mobile Landscape Classes ---------------------------------------- */
-/* // After Mobile 600 Classes ---------------------------------------------- */
-/* // Mobile Landscape Only Classes ----------------------------------------- */
-/* // Before Tablet Classes ------------------------------------------------- */
+/* // Before MQ350 Classes -------------------------------------------------- */
+/* // After MQ350 Classes --------------------------------------------------- */
+/* // Before MQ500 Classes -------------------------------------------------- */
+/* // After MQ500 Classes --------------------------------------------------- */
+/* // After MQ500 Before MQ768 Classes -------------------------------------- */
+/* // Before MQ600 Classes -------------------------------------------------- */
+@media (max-width: 600px) {
+  .global_MQ_B600 {
+    display: block !important; }
+    .global_MQ_B600.displayFlex {
+      display: flex !important; }
+  .global_MQ_A600,
+  .global_MQ_A800,
+  .global_MQ_A1000,
+  .global_MQ_A1500,
+  .global_MQ_A2000,
+  .global_MQ_A2500,
+  .global_MQ_A3000 {
+    display: none !important; } }
+
+/* // After MQ600 Classes --------------------------------------------------- */
+@media (min-width: 601px) {
+  .global_MQ_A600 {
+    display: block !important; }
+    .global_MQ_A600.displayFlex {
+      display: flex !important; }
+  .global_MQ_B600,
+  .global_MQ_A800,
+  .global_MQ_A1000,
+  .global_MQ_A1500,
+  .global_MQ_A2000,
+  .global_MQ_A2500,
+  .global_MQ_A3000 {
+    display: none !important; } }
+
+/* // Before MQ768 Classes -------------------------------------------------- */
 @media (max-width: 767px) {
   /*___ Positioning _______________________*/
   .pRelBT {
@@ -1582,9 +1644,7 @@ article, article::before, article::after, details, details::before, details::aft
   .floatNoneBT, .unstyledBT li {
     float: none !important; } }
 
-/* // Before Tablet Landscape Classes --------------------------------------- */
-/* // Tablet Only Classes --------------------------------------------------- */
-/* // After Tablet Classes -------------------------------------------------- */
+/* // After MQ768 Classes --------------------------------------------------- */
 @media (min-width: 768px) {
   /*___ Positioning _______________________*/
   .pRelAT {
@@ -1682,11 +1742,88 @@ article, article::before, article::after, details, details::before, details::aft
   .flexHorizontalAT {
     list-style: none !important; } }
 
-/* // After Tablet Landscape Classes ---------------------------------------- */
-/* // Tablet Landscape Only Classes ----------------------------------------- */
-/* // Tablet And Tablet Landscape Only Classes ------------------------------ */
-/* // Before Desktop Classes ------------------------------------------------ */
-/* // After Desktop Classes ------------------------------------------------- */
+/* // After MQ768 Before MQ1024 Classes ------------------------------------- */
+/* // After MQ800 Classes --------------------------------------------------- */
+@media (min-width: 801px) {
+  .global_MQ_A800 {
+    display: block !important; }
+    .global_MQ_A800.displayFlex {
+      display: flex !important; }
+  .global_MQ_B600,
+  .global_MQ_A600,
+  .global_MQ_A1000,
+  .global_MQ_A1500,
+  .global_MQ_A2000,
+  .global_MQ_A2500,
+  .global_MQ_A3000 {
+    display: none !important; } }
+
+/* // After MQ1000 Classes -------------------------------------------------- */
+@media (min-width: 1001px) {
+  .global_MQ_A1500 {
+    display: block !important; }
+    .global_MQ_A1500.displayFlex {
+      display: flex !important; }
+  .global_MQ_B600,
+  .global_MQ_A600,
+  .global_MQ_A800,
+  .global_MQ_A1000,
+  .global_MQ_A2000,
+  .global_MQ_A2500,
+  .global_MQ_A3000 {
+    display: none !important; } }
+
+/* // Before MQ1024 Classes ------------------------------------------------- */
+/* // After MQ1024 Classes -------------------------------------------------- */
+/* // After MQ1024 Before MQ1200 Classes ------------------------------------ */
+/* // After MQ768 Before MQ1200 Classes ------------------------------------- */
+/* // Before MQ1200 Classes ------------------------------------------------- */
+/* // After MQ1200 Classes -------------------------------------------------- */
+/* // After MQ1500 Classes -------------------------------------------------- */
+@media (min-width: 1501px) {
+  .global_MQ_A2000 {
+    display: block !important; }
+    .global_MQ_A2000.displayFlex {
+      display: flex !important; }
+  .global_MQ_B600,
+  .global_MQ_A600,
+  .global_MQ_A800,
+  .global_MQ_A1000,
+  .global_MQ_A1500,
+  .global_MQ_A2500,
+  .global_MQ_A3000 {
+    display: none !important; } }
+
+/* // After MQ2000 Classes -------------------------------------------------- */
+@media (min-width: 2001px) {
+  .global_MQ_A2500 {
+    display: block !important; }
+    .global_MQ_A2500.displayFlex {
+      display: flex !important; }
+  .global_MQ_B600,
+  .global_MQ_A600,
+  .global_MQ_A800,
+  .global_MQ_A1000,
+  .global_MQ_A1500,
+  .global_MQ_A2000,
+  .global_MQ_A3000 {
+    display: none !important; } }
+
+/* // After MQ3000 Classes -------------------------------------------------- */
+@media (min-width: 3001px) {
+  .global_MQ_A3000 {
+    display: block !important; }
+    .global_MQ_A3000.displayFlex {
+      display: flex !important; }
+  .global_MQ_B600,
+  .global_MQ_A600,
+  .global_MQ_A800,
+  .global_MQ_A1000,
+  .global_MQ_A1500,
+  .global_MQ_A2000,
+  .global_MQ_A2500 {
+    display: none !important; } }
+
 /* * NombreDeProyecto * ========================================================
    Container Settings | Etc [/etc/css/scss/settings_container.scss]
    ========================================================================== */
@@ -1706,6 +1843,9 @@ article, article::before, article::after, details, details::before, details::aft
 .containerTLO,
 .containerB1200,
 .containerA1200,
+.containerA1300,
+.containerA1400,
+.containerA1500,
 .containerA1600 {
   padding: 0;
   margin-right: auto;
@@ -1737,6 +1877,12 @@ article, article::before, article::after, details, details::before, details::aft
   .containerB1200::after,
   .containerA1200::before,
   .containerA1200::after,
+  .containerA1300::before,
+  .containerA1300::after,
+  .containerA1400::before,
+  .containerA1400::after,
+  .containerA1500::before,
+  .containerA1500::after,
   .containerA1600::before,
   .containerA1600::after {
     content: " ";
@@ -1755,6 +1901,9 @@ article, article::before, article::after, details, details::before, details::aft
   .containerTLO::after,
   .containerB1200::after,
   .containerA1200::after,
+  .containerA1300::after,
+  .containerA1400::after,
+  .containerA1500::after,
   .containerA1600::after {
     clear: both; }
 
@@ -1786,13 +1935,25 @@ article, article::before, article::after, details, details::before, details::aft
   .container {
     width: 900px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .container {
-    width: 900px; } }
+    width: calc(100% - 100px); } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1301px) {
   .container {
-    width: 900px; } }
+    width: calc(100% - 100px); } }
+
+@media (min-width: 1401px) {
+  .container {
+    width: 1300px; } }
+
+@media (min-width: 1501px) {
+  .container {
+    width: 1300px; } }
+
+@media (min-width: 1601px) {
+  .container {
+    width: 1300px; } }
 
 @media (max-width: 350px) {
   .container.container_centered_absolute {
@@ -1828,13 +1989,25 @@ article, article::before, article::after, details, details::before, details::aft
   .container.container_centered_absolute {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .container.container_centered_absolute {
-    margin-left: calc(-1 * calc(900px / 2)); } }
+    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1301px) {
   .container.container_centered_absolute {
-    margin-left: calc(-1 * calc(900px / 2)); } }
+    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+
+@media (min-width: 1401px) {
+  .container.container_centered_absolute {
+    margin-left: calc(-1 * calc(1300px / 2)); } }
+
+@media (min-width: 1501px) {
+  .container.container_centered_absolute {
+    margin-left: calc(-1 * calc(1300px / 2)); } }
+
+@media (min-width: 1601px) {
+  .container.container_centered_absolute {
+    margin-left: calc(-1 * calc(1300px / 2)); } }
 
 @media (min-width: 601px) {
   .container.container_centered_absolute_A600 {
@@ -1854,13 +2027,25 @@ article, article::before, article::after, details, details::before, details::aft
   .container.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(900px / 2)); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .container.container_centered_absolute_A600 {
-    margin-left: calc(-1 * calc(900px / 2)); } }
+    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1301px) {
   .container.container_centered_absolute_A600 {
-    margin-left: calc(-1 * calc(900px / 2)); } }
+    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+
+@media (min-width: 1401px) {
+  .container.container_centered_absolute_A600 {
+    margin-left: calc(-1 * calc(1300px / 2)); } }
+
+@media (min-width: 1501px) {
+  .container.container_centered_absolute_A600 {
+    margin-left: calc(-1 * calc(1300px / 2)); } }
+
+@media (min-width: 1601px) {
+  .container.container_centered_absolute_A600 {
+    margin-left: calc(-1 * calc(1300px / 2)); } }
 
 @media (min-width: 601px) {
   .containerA600 {
@@ -1888,17 +2073,35 @@ article, article::before, article::after, details, details::before, details::aft
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(900px / 2)); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .containerA600 {
-    width: 900px; }
+    width: calc(100% - 100px); }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(900px / 2)); } }
+      margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1301px) {
   .containerA600 {
-    width: 900px; }
+    width: calc(100% - 100px); }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(900px / 2)); } }
+      margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+
+@media (min-width: 1401px) {
+  .containerA600 {
+    width: 1300px; }
+    .containerA600.container_centered_absolute_A600 {
+      margin-left: calc(-1 * calc(1300px / 2)); } }
+
+@media (min-width: 1501px) {
+  .containerA600 {
+    width: 1300px; }
+    .containerA600.container_centered_absolute_A600 {
+      margin-left: calc(-1 * calc(1300px / 2)); } }
+
+@media (min-width: 1601px) {
+  .containerA600 {
+    width: 1300px; }
+    .containerA600.container_centered_absolute_A600 {
+      margin-left: calc(-1 * calc(1300px / 2)); } }
 
 /* // Hack para Windows Phone ----------------------------------------------- */
 @media (max-width: 400px) {
@@ -2371,11 +2574,11 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
   /* no scroll activation
     bottom: 20px;
     */
-  /* scroll activation
+  /* scroll activation // REF [31]
     bottom: calc(-1 * calc(40px + 5px));
     opacity: 0;
     
-    &.button_siteTop_visible{
+    &.site_scrolled_js{
         opacity: 1;
         bottom: 20px;
     }
@@ -2489,12 +2692,17 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
   .form_validation_div, form .form_validation_span, form .form_status, form .form_label_name {
     width: 520px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   form fieldset, form label, form input, form select, form textarea, form button, form
   .form_validation_div, form .form_validation_span, form .form_status, form .form_label_name {
     width: 520px; } }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
+  .mobileForm fieldset, .mobileForm label, .mobileForm button, .mobileForm
+  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 767px) {
   .mobileForm fieldset, .mobileForm label, .mobileForm button, .mobileForm
   .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
     font-size: 0.9rem; } }
@@ -2520,7 +2728,7 @@ input, select, textarea {
   @media (min-width: 1024px) {
     form input, form select, form textarea {
       font-size: 0.9rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     form input, form select, form textarea {
       font-size: 0.9rem; } }
 
@@ -2565,7 +2773,7 @@ input, select, textarea {
     height: 45px;
     line-height: 45px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   form input[type="reset"], form
   input[type="submit"], form
   input[type="button"], form
@@ -2746,7 +2954,7 @@ form textarea {
   form {
     width: 520px !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   form {
     width: 520px; } }
 
@@ -2772,7 +2980,7 @@ form fieldset::after, form label::after {
     height: 35px;
     line-height: 35px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   form fieldset span, form input, form select {
     height: 35px;
     line-height: 35px; } }
@@ -2792,7 +3000,7 @@ form fieldset::after, form label::after {
     height: 25px;
     line-height: 25px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   form .form_label_name {
     height: 25px;
     line-height: 25px; } }
@@ -3151,7 +3359,11 @@ form {
 
 .modal_nav {
   display: none;
-  background-color: rgba(0, 0, 0, 0.7); }
+  /*
+    background-color: $modal_bgColour_nav; 
+    */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#bf000000',GradientType=1 ); }
   @media (min-width: 768px) {
     .modal_nav {
       display: none !important; } }
@@ -3433,7 +3645,7 @@ form {
   @media (min-width: 1024px) {
     #header .logo_header {
       width: 220px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     #header .logo_header {
       width: 220px; } }
 
@@ -3522,7 +3734,6 @@ nav li:focus a, nav li:hover a {
   .nav_main {
     position: fixed; }
     .nav_main .button_hamb {
-      transition: all 1s ease;
       box-sizing: border-box; }
     .nav_main .button_hamb_open {
       z-index: 8100;
@@ -3678,8 +3889,6 @@ nav li:focus a, nav li:hover a {
       .nav_main .button_hamb_open.button_hamb_open_pressed {
         opacity: 0.5;
         color: #333; }
-      .nav_main .button_hamb_open.site_scrolled_js {
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12); }
     .nav_main .button_hamb_close {
       width: 40px;
       height: calc(40px - 0px);
@@ -3689,6 +3898,9 @@ nav li:focus a, nav li:hover a {
       padding: 0 !important;
       text-indent: -9999px;
       overflow: hidden; }
+    .nav_main.site_scrolled_js .button_hamb_open {
+      background-color: rgba(51, 51, 51, 0.9);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12); }
     .nav_main .nav_main_ul {
       border-right: 3px solid #000;
       padding-top: calc(calc(50px + 50px + 10px) + 5px); }
@@ -3779,7 +3991,7 @@ nav li:focus a, nav li:hover a {
     padding-right: 10px;
     padding-left: 10px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .nav_main .nav_main_ul li,
   .nav_main .nav_main_ul li a,
   .nav_main .nav_main_ul li .nav_TLI {
@@ -3827,4 +4039,4 @@ nav li:focus a, nav li:hover a {
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Post // REF [26] ------------------------------------------------------ */
+/* // Post ------------------------------------------------------------------ */

@@ -267,7 +267,6 @@ form{
 
         &:focus, &:hover{
             background-color: $form_input_bgColour_hover;
-            border-color: $form_input_bdColour_hover;
             color: $form_input_ftColour_hover;
         }  
         
