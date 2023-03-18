@@ -17,7 +17,7 @@
     .hover_grow_S_ani{
         &:hover,
         &:focus,
-        &:active {
+        &:active{
             transform: scale($hover_grow_scaleSmall_ani);
         }
     }
@@ -25,7 +25,7 @@
     .hover_grow_M_ani{
         &:hover,
         &:focus,
-        &:active {
+        &:active{
             transform: scale($hover_grow_scaleMedium_ani);
         }
     }
@@ -33,7 +33,7 @@
     .hover_grow_L_ani{
         &:hover,
         &:focus,
-        &:active {
+        &:active{
             transform: scale($hover_grow_scaleLarge_ani);
         }
     }

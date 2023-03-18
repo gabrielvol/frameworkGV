@@ -363,8 +363,8 @@
         <span class="form_label_name"><?php echo _('&Aacute;rea a contactar'); ?></span>
         <select name="data_area__formMain" id="data_area__formMain" class="data_area__formMain <?php echo $form_validation_input_class_data_area__formMain; ?>" form="formMainID" enterkeyhint="next">
             <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if(isset($_POST['data_area__formMain'])) { echo $_POST['data_area__formMain']; } else { echo _('Seleccione el &aacute;rea con la que quiere contactarse'); } ?></option>
-            <option value="<?php echo $site_email_contacto_address ?>"><?php echo _('aaaa'); ?> - <?php echo $site_email_contacto_address ?></option>
-            <option value="<?php echo $site_email_EMAILB_address ?>"><?php echo _('bbbb'); ?> - <?php echo $site_email_EMAILB_address ?></option>
+            <option value="<?php echo $site_email_contacto_address; ?>"><?php echo _('aaaa'); ?> - <?php echo $site_email_contacto_address; ?></option>
+            <option value="<?php echo $site_email_EMAILB_address; ?>"><?php echo _('bbbb'); ?> - <?php echo $site_email_EMAILB_address; ?></option>
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMain; ?>"><?php echo $form_validation_span_msg_data_area__formMain; ?></span>  
     </label>
@@ -378,7 +378,7 @@
 
     <label for="data_mensaje__formMain">
         <span class="form_label_name"><?php echo _('Mensaje'); ?></span>
-        <textarea name="data_mensaje__formMain" id="data_mensaje__formMain" class="data_mensaje__formMain" form="formMainID" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje') ?>"><?php echo $_POST['data_mensaje__formMain']; ?></textarea>
+        <textarea name="data_mensaje__formMain" id="data_mensaje__formMain" class="data_mensaje__formMain" form="formMainID" placeholder="<?php echo _('Escriba aqu&iacute; su mensaje'); ?>"><?php echo $_POST['data_mensaje__formMain']; ?></textarea>
     </label>
 
     <input type="submit" value="<?php echo _('Enviar'); ?>" form="formMainID" enterkeyhint="done" name="button_form_submit__formMain" class="button_form_submit button_form_submit__formMain">
