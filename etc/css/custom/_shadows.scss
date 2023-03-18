@@ -63,32 +63,69 @@
 
 /* // Background Shadows ---------------------------------------------------- */
 .bgShadowT,
+.bgShadowT_after::after,
 .bgShadowB,
+.bgShadowB_after::after,
 .bgShadowB_50,
-.bgShadowV{
+.bgShadowB_50_after::after,
+.bgShadowV,
+.bgShadowV_after::after{
     background-repeat: repeat-x;
     background-size: auto 20px;
 }
 
-.bgShadowT{
+.bgShadowT_after::after,
+.bgShadowB_after::after,
+.bgShadowB_50_after::after,
+.bgShadowV_after::after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: $zIndex_bgShadowAfter;
+    right: 0;
+    left: 0;
+    height: 30px;
+}
+
+.bgShadowB,
+.bgShadowB_after::after,
+.bgShadowB_50,
+.bgShadowB_50_after::after{
+    background-position: center bottom;
+}
+
+.bgShadowB,
+.bgShadowB_after::after{
+    background-image: $bgShadowB_img_url;
+}
+
+.bgShadowB_50,
+.bgShadowB_50_after::after{
+    background-image: $bgShadowB_50_img_url;
+}
+
+.bgShadowV,
+.bgShadowV_after::after{
+    background-image: $bgShadowT_img_url, $bgShadowB_img_url;
+    background-position: center top, center bottom;
+}
+
+.bgShadowT,
+.bgShadowT_after::after{
     background-image: $bgShadowT_img_url;
     background-position: center top;
 }
 
-.bgShadowB,
-.bgShadowB_50{
-    background-position: center bottom;
+.bgShadowT_after::after{
+    top: 0;
 }
 
-.bgShadowB{
-    background-image: $bgShadowB_img_url;
+.bgShadowB_after::after,
+.bgShadowB_50_after::after{
+    bottom: 0;
 }
 
-.bgShadowB_50{
-    background-image: $bgShadowB_50_img_url;
-}
-
-.bgShadowV{
-    background-image: $bgShadowT_img_url, $bgShadowB_img_url;
-    background-position: center top, center bottom;
+.bgShadowV_after::after{
+    top: 0;
+    bottom: 0;
 }
