@@ -267,7 +267,7 @@ button{
         border-radius: 50%;
         background-image: url('#{$dir_env}/img/button_whatsapp.svg');
         background-repeat: no-repeat;
-        background-size: auto calc(#{$button_whatsapp_size_square} - 10px);
+        background-size: auto calc(#{$button_whatsapp_size_square} - 20px);
         background-position: center center;
 
         &, &:focus, &:hover, &:visited, &:active{}
