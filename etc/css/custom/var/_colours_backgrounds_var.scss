@@ -25,9 +25,9 @@
 // _act                 = activacion
 // _ani                 = animacion
 // _hs                  = hash
-// _hover               = se usa con pseudoclases :focus y :hover
-// _before              = se usa con pseudoelementos ::before
-// _after               = se usa con pseudoelementos ::after
+// _hover               = se usa con pseudo-clases :focus y :hover
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
 
 ///-- Espaciado
 // P, M                 = padding, margin
@@ -125,7 +125,7 @@ $img_bgColour_global:  $bgGreyL;
 
 $colours_backgrounds_hover_map:(    
 // Este mapa se usa con el mixin `backgroundColourHoverClassesGenerator` que se
-// encuentra en `[/etc/css/scss/mixins_colours.scss]`, genera las pseudoclases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creara una clase por cada color.
+// encuentra en `[/etc/css/scss/mixins_colours.scss]`, genera las pseudo-clases `:focus` y `:hover` para los elementos `a`, `button`, `input[type="submit"]` e `input[type="file"]`, de este mapa se creara una clase por cada color.
 // Ej. 
 // *.bgBlack:focus, *.bgBlack:hover{background-color: #hex}
 

@@ -16,7 +16,7 @@
 // 01 _ $button_coloured_act
 // Activa los if que se encuentran en `[/etc/css/scss/mixins_colours.scss]`
 //
-// Genera selectores de color para el elemento `button`, sus pseudoclases `:focus`
+// Genera selectores de color para el elemento `button`, sus pseudo-clases `:focus`
 // y `:hover`, y la clase `.noHover`
 //
 // Ej. con color verdeAgua:
@@ -26,7 +26,7 @@
 // button.verdeAgua:focus,
 // button.verdeAgua:hover { color: #hex; }
 //
-// Tambien genera selectores para las pseudoclases `:focus` y `:hover` del
+// Tambien genera selectores para las pseudo-clases `:focus` y `:hover` del
 // elemento `button` con clase del tipo `.bgColour`.
 //
 // Ej. con color verdeAgua:
@@ -54,14 +54,20 @@
 // mq, MQ               = media query @media
 // tx                   = texto
 
-///-- Fin del nombre
-// _mx                  = mixin
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
 // _act                 = activacion
 // _ani                 = animacion
+
+///-- Fin del nombre
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con pseudo-clases :focus y :hover
 // _hs                  = hash
-// _hover               = se usa con pseudoclases :focus y :hover
-// _before              = se usa con pseudoelementos ::before
-// _after               = se usa con pseudoelementos ::after
+// _imp			= importacion
+// _mx                  = mixin
 
 ///-- Espaciado
 // P, M                 = padding, margin

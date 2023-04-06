@@ -29,7 +29,7 @@
 // 02 _ $form_label_coloured_act
 // Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`
 //
-// Genera selectores de color para `label` y sus pseudoclases `:focus` y
+// Genera selectores de color para `label` y sus pseudo-clases `:focus` y
 // `:hover`.
 //
 // Ej. con color verdeAgua:
@@ -41,7 +41,7 @@
 // 03 _ $form_input_coloured_act
 // Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`.
 //
-// Genera selectores para las pseudoclases `:focus` y `:hover` de los
+// Genera selectores para las pseudo-clases `:focus` y `:hover` de los
 // elementos `ìnput[type="submit"]` e `input[type="file"]` con clase del tipo
 // `.bgColour`.
 //
@@ -57,9 +57,9 @@
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
 // Genera selectores de color de borde para `input`, `select` y 
-// `textarea`, y sus pseudoclases `:focus` y `:hover`.
+// `textarea`, y sus pseudo-clases `:focus` y `:hover`.
 // Usa las variables `$form_input_bdColour`, y 
-// `$form_input_bdColour_hover` para las pseudoclases `:focus` y `:hover`.
+// `$form_input_bdColour_hover` para las pseudo-clases `:focus` y `:hover`.
 //
 // Ej.
 // form input,
@@ -79,9 +79,9 @@
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
 // Genera selectores de color de borde para `input[type="reset"]`, `input[type="submit"]`,
-// `input[type="button"]` y `button` y sus pseudoclases `:focus` y `:hover`.
+// `input[type="button"]` y `button` y sus pseudo-clases `:focus` y `:hover`.
 // Usa las variables `$button_form_submit_bdColour`, y 
-// `$button_form_submit_bdColour_hover` para las pseudoclases `:focus` y `:hover`.
+// `$button_form_submit_bdColour_hover` para las pseudo-clases `:focus` y `:hover`.
 //
 // Ej.
 // form input[type="reset"],
@@ -104,7 +104,7 @@
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
 // Genera un elemento flotante sobre el input para indicar un error de
-// validación, usando pseudoelementos `::before` y `::after`.
+// validación, usando pseudo-elementos `::before` y `::after`.
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -121,9 +121,9 @@
 // _act                 = activacion
 // _ani                 = animacion
 // _hs                  = hash
-// _hover               = se usa con pseudoclases :focus y :hover
-// _before              = se usa con pseudoelementos ::before
-// _after               = se usa con pseudoelementos ::after
+// _hover               = se usa con pseudo-clases :focus y :hover
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
 
 ///-- Espaciado
 // P, M                 = padding, margin

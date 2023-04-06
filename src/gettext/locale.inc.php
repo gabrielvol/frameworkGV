@@ -21,13 +21,14 @@
 // tx                   = texto
 
 ///-- Fin del nombre
-// _mx                  = mixin
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
 // _act                 = activacion
 // _ani                 = animacion
+// _hover               = se usa con pseudo-clases :focus y :hover
 // _hs                  = hash
-// _hover               = se usa con pseudoclases :focus y :hover
-// _before              = se usa con pseudoelementos ::before
-// _after               = se usa con pseudoelementos ::after
+// _imp			= importacion
+// _mx                  = mixin
 
 ///-- Espaciado
 // P, M                 = padding, margin

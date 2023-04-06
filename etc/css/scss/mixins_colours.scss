@@ -34,7 +34,7 @@
 // .verdeAgua em { color: #hex; }
 //
 // Además genera selectores para un ancla con la clase,
-// sus pseudoclases `:active`, `:visited`, `:focus` y `:hover`
+// sus pseudo-clases `:active`, `:visited`, `:focus` y `:hover`
 // y el selector `.noHover`.
 //
 // Ej.
@@ -47,7 +47,7 @@
 // a.verdeAgua:hover { color: #hex; }
 //
 // Tambien puede generar selectores para `button` y `label`,
-// sus pseudoclases `:focus` y `:hover`
+// sus pseudo-clases `:focus` y `:hover`
 // y el selector `.noHover` para el elemento `button`.
 // Se activa con `$button_coloured_act` y `$form_label_coloured_act`
 //
@@ -82,14 +82,14 @@
 //
 //
 // 07 _ backgroundColourHoverClassesGenerator
-// Por cada color genera selectores para las pseudoclases `:focus` y `:hover`
+// Por cada color genera selectores para las pseudo-clases `:focus` y `:hover`
 // de un ancla con clase del tipo `.bgColour`.
 //
 // Ej.
 // a.bgVerdeAgua:hover,
 // a.bgVerdeAgua:focus { background-color: #hex; }
 //
-// También puede generar selectores para las pseudoclases `:focus` y `:hover`
+// También puede generar selectores para las pseudo-clases `:focus` y `:hover`
 // de los elementos `button`, `ìnput[type="submit"]` e `input[type="file"]` 
 // con clase del tipo `.bgColour`.
 // Se activa con `$button_coloured_act` y `$form_input_coloured_act`
@@ -114,13 +114,14 @@
 // tx                   = texto
 
 ///-- Fin del nombre
-// _mx                  = mixin
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
 // _act                 = activacion
 // _ani                 = animacion
+// _hover               = se usa con pseudo-clases :focus y :hover
 // _hs                  = hash
-// _hover               = se usa con pseudoclases :focus y :hover
-// _before              = se usa con pseudoelementos ::before
-// _after               = se usa con pseudoelementos ::after
+// _imp			= importacion
+// _mx                  = mixin
 
 ///-- Espaciado
 // P, M                 = padding, margin
