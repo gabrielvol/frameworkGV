@@ -47,17 +47,17 @@
 /* // Container Sizes ------------------------------------------------------- */
 $grid-gutter-width:                  30px;
 
-$container_value_B350:               300px;
-$container_value_A350:               85%;
-$container_value_B500:               85%;
-$container_value_A500:               85%;
+$container_value_max_B350:           300px;
+$container_value_A350:               90%;
+$container_value_B500:               90%;
+$container_value_A500:               90%;
 $container_value_B600:               85%;
 $container_value_A600:               85%;
-$container_value_T:                  720px;
-$container_value_A900:               800px;
-$container_value_A1024:              900px;
-$container_value_A1200:              calc(100% - 100px);
-$container_value_A1300:              $container_value_A1200;
-$container_value_A1400:              1300px;
-$container_value_A1500:              $container_value_A1400;
-$container_value_A1600:              $container_value_A1500;
+$container_value_max_A768:           720px;
+$container_value_max_A900:           800px;
+$container_value_max_A1024:          900px;
+$container_value_max_A1200:          1100px;
+$container_value_max_A1300:          $container_value_max_A1200;
+$container_value_max_A1400:          1300px;
+$container_value_max_A1500:          $container_value_max_A1400;
+$container_value_max_A1600:          $container_value_max_A1500;

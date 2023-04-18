@@ -2,237 +2,219 @@
    Media Queries Placeholders | Custom [/etc/css/custom/mediaQueries_placeholders.scss]
    ========================================================================== */
 
-@include beforeMQ350{}
+    @include beforeMQ300{}
 
-@include afterMQ350{}
+    @include afterMQ300{}
+    
+    
+    
+    @include beforeMQ350{}
 
-@include beforeMQ500{}
+    @include afterMQ350{}
 
-@include afterMQ500{}  
+    @include MQ350_768{}
 
-@include beforeMQ600{}
 
-@include afterMQ600{}
 
-@include beforeMQ768{}
+    @include beforeMQ400{}
 
-@include afterMQ768{} 
+    @include afterMQ400{}
 
-@include beforeMQ1024{}
 
-@include afterMQ1024{}  
 
-@include afterMQ1200{}
+    @include beforeMQ450{}
 
-/* * */
+    @include afterMQ450{}
 
-@media (min-width: 100px) and (max-width: 200px){}
+    @include MQ450_768{}
 
 
-@include beforeMQ350{}
 
-@include afterMQ350{}
+    @include beforeMQ500{}
 
-@include MQ350_768{}
+    @include afterMQ500{}
 
+    @include MQ500_768{}
 
 
-@include beforeMQ450{}
 
-@include afterMQ450{}
+    @include beforeMQ550{}
 
-@include MQ450_768{}
+    @include afterMQ550{}
 
 
 
-@include beforeMQ500{}
+    @include beforeMQ600{}
 
-@include afterMQ500{}
+    @include afterMQ600{}
 
-@include MQ500_768{}
+    @include MQ600_768{}
 
 
 
-@include beforeMQ600{}
+    @include beforeMQ650{}
 
-@include afterMQ600{}
+    @include afterMQ650{}
 
-@include MQ600_768{}
+    @include MQ650_768{}
 
 
 
-@include beforeMQ650{}
+    @include beforeMQ700{}
 
-@include afterMQ650{}
+    @include afterMQ700{}
 
-@include MQ650_768{}
+    @include MQ700_768{}
 
 
 
-@include beforeMQ700{}
+    @include beforeMQ768{}
 
-@include afterMQ700{}
+    @include afterMQ768{}
 
-@include MQ700_768{}
+    @include MQ768_1024{}
 
 
 
-@include beforeMQ768{}
+    @include beforeMQ800{}
 
-@include afterMQ768{}
+    @include afterMQ800{}
 
-@include MQ768_1024{}
+    @include MQ800_1024{}
 
 
 
-@include beforeMQ800{}
+    @include beforeMQ850{}
 
-@include afterMQ800{}
+    @include afterMQ850{}
 
-@include MQ800_1024{}
+    @include MQ850_1024{}
 
 
 
-@include beforeMQ850{}
+    @include beforeMQ900{}
 
-@include afterMQ850{}
+    @include afterMQ900{}
 
-@include MQ850_1024{}
+    @include MQ900_1024{}
 
 
 
-@include beforeMQ900{}
+    @include beforeMQ1024{}
 
-@include afterMQ900{}
+    @include afterMQ1024{}
 
-@include MQ900_1024{}
+    @include MQ1024_1200{}
 
 
 
-@include beforeMQ1024{}
+    @include beforeMQ1100{}
 
-@include afterMQ1024{}
+    @include afterMQ1100{}
 
-@include MQ1024_1200{}
+    @include MQ1100Only{}
 
 
 
-@include beforeMQ1100{}
+    @include beforeMQ1200{}
 
-@include afterMQ1100{}
+    @include afterMQ1200{}
 
-@include MQ1100Only{}
 
 
+    @include afterMQ1600{}
 
-@include beforeMQ1200{}
 
-@include afterMQ1200{}
 
+    @media (min-width: 100px) and (max-width: 200px){}
 
 
-@include afterMQ1600{}
+    @media (max-width: 350px){}
 
+    @media (min-width: 351px){}
 
+    @media (min-width: 351px) and (max-width: 767px){}
 
-@media (max-width: 350px){}
 
-@media (min-width: 351px){}
+    @media (max-width: 400px){}
 
-@media (max-width: 500px){}
+    @media (min-width: 401px){}
 
-@media (min-width: 501px){}
+    @media (min-width: 401px) and (max-width: 767px){}
 
-@media (max-width: 600px){}
 
-@media (min-width: 601px){}
+    @media (max-width: 450px){}
 
-@media (max-width: 767px){}
+    @media (min-width: 451px){}
 
-@media (min-width: 768px){}
+    @media (min-width: 451px) and (max-width: 767px){}
 
-@media (max-width: 1023px){}
 
-@media (min-width: 1024px){}
+    @media (max-width: 500px){}
 
-@media (max-width: 1200px){}
+    @media (min-width: 501px){}
 
-@media (min-width: 1201px){}
+    @media (min-width: 501px) and (max-width: 767px){}
 
 
+    @media (max-width: 550px){}
 
-@media (max-width: 350px){}
+    @media (min-width: 551px){}
 
-@media (min-width: 351px){}
+    @media (min-width: 551px) and (max-width: 767px){}
 
-@media (min-width: 351px) and (max-width: 767px){}
 
-@media (max-width: 400px){}
+    @media (max-width: 600px){}
 
-@media (min-width: 401px){}
+    @media (min-width: 601px){}
 
-@media (min-width: 401px) and (max-width: 767px){}
+    @media (min-width: 601px) and (max-width: 767px){}
 
-@media (max-width: 450px){}
 
-@media (min-width: 451px){}
+    @media (max-width: 650px){}
 
-@media (min-width: 451px) and (max-width: 767px){}
+    @media (min-width: 651px){}
 
-@media (max-width: 500px){}
+    @media (min-width: 651px) and (max-width: 767px){}
 
-@media (min-width: 501px){}
 
-@media (min-width: 501px) and (max-width: 767px){}
+    @media (max-width: 700px){}
 
-@media (max-width: 550px){}
+    @media (min-width: 701px){}
 
-@media (min-width: 551px){}
+    @media (min-width: 701px) and (max-width: 767px){}
 
-@media (min-width: 551px) and (max-width: 767px){}
 
-@media (max-width: 600px){}
+    @media (max-width: 767px){}
 
-@media (min-width: 601px){}
+    @media (min-width: 768px){}
 
-@media (min-width: 601px) and (max-width: 767px){}
 
-@media (max-width: 650px){}
+    @media (max-width: 800px){}
 
-@media (min-width: 651px){}
+    @media (min-width: 801px){}
 
-@media (min-width: 651px) and (max-width: 767px){}
 
-@media (max-width: 700px){}
+    @media (max-width: 850px){}
 
-@media (min-width: 701px){}
+    @media (min-width: 851px){}
 
-@media (min-width: 701px) and (max-width: 767px){}
 
-@media (max-width: 767px){}
+    @media (max-width: 900px){}
 
-@media (min-width: 768px){}
+    @media (min-width: 901px){}
 
-@media (max-width: 800px){}
 
-@media (min-width: 801px){}
+    @media (max-width: 1023px){}
 
-@media (max-width: 850px){}
+    @media (min-width: 1024px){}
 
-@media (min-width: 851px){}
 
-@media (max-width: 900px){}
+    @media (max-width: 1100px){}
 
-@media (min-width: 901px){}
+    @media (min-width: 1101px){}
 
-@media (max-width: 1023px){}
 
-@media (min-width: 1024px){}
+    @media (max-width: 1200px){}
 
-@media (max-width: 1100px){}
-
-@media (min-width: 1101px){}
-
-@media (max-width: 1200px){}
-
-@media (min-width: 1201px){}
+    @media (min-width: 1201px){}
