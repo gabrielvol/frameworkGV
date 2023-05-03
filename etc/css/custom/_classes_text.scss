@@ -49,5 +49,9 @@
     overflow: hidden;
 }
 
+.txHyphensNone{hyphens: none}
+.txHyphensManual{hyphens: manual}
+.txHyphensAuto{hyphens: auto}
+
 .txNoSelectable{user-select: none}
 .txLetterSpacing{letter-spacing: 0.05rem}

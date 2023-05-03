@@ -87,6 +87,7 @@ blockquote{
     
     p{
         quotes: "“" "”" "«" "»";
+        /* quotes: "“" "”" "&lsquo;" "&rsquo;"; */
 
         &:first-child::before{
             content: open-quote;
@@ -100,6 +101,7 @@ blockquote{
 
 q{
     quotes: "“" "”" "«" "»";
+    /* quotes: "“" "”" "&lsquo;" "&rsquo;"; */
     
     &::before{
         content: open-quote;
