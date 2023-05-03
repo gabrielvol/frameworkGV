@@ -75,17 +75,17 @@ ol{
     > li{
         position: relative;
         box-sizing: border-box;
-        padding-left: calc(#{$list_list_numbered_n_size} + 5px);
+        padding-left: calc(#{$list_numbered_n_size} + 5px);
         list-style-type: none;
         
         &::before{   
-            @include squareSize($list_list_numbered_n_size);  
+            @include squareSize($list_numbered_n_size);  
             counter-increment: list_numbered_counter; 
             content: counter(list_numbered_counter);
             display: block;
             float: left;
             margin-right: $zero;
-            margin-left: calc(-1 * calc(#{$list_list_numbered_n_size} - 0));
+            margin-left: calc(-1 * calc(#{$list_numbered_n_size} - 0));
             white-space: pre;
         } 
     }
