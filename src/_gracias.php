@@ -5,25 +5,27 @@
     
     $page_int               = 1; 
     $nav_pageCurrent        = 'page_gracias'; 
+    $nav_pageCurrent_int    = 'page_gracias_home';
+// Si se activa el id hay que asignar los títulos en `/var/PAGEINT.var.inc.php`
+//    $nav_pageCurrent_id     = 'page_gracias_id';
     
     $has_scrolling          = 0;    
-//    $has-CUSTOMVARIABLE     = 1;
+//    $has-CUSTOMVARIABLE     = 1;   
+//    $lang_GB                = 1; 
+
+// Si se activa el id:
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/PAGEINT.var.inc.php');
+    
+    $page_main_classes      = '';
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
     $page_url_full          = $url_gracias_full;
     
-    $page_title             = "Gracias | " . $site_name_title;
-//    $page_title_DE          = "SinTraduccion | " . $site_name_title_DE;
-//    $page_title_GB          = "Thank You | " . $site_name_title_GB;
-//    $page_title_PT          = "SinTraduccion | " . $site_name_title_PT;
-//    $page_title_XX          = "SinTraduccion | " . $site_name_title_XX;
-    
+    $page_title             = $page_title_home_gracias . " | " . $site_name_title;    
+// Si se activa el id `$page_title` se construye de otra forma:
+//    $page_title             = $page_title_id ." | ". $page_title_home_gracias ." | " . $site_name_title;    
     $page_desc              = $page_desc_global;
-//    $page_desc_DE           = $page_desc_global_DE;
-//    $page_desc_GB           = $page_desc_global_GB;
-//    $page_desc_PT           = $page_desc_global_PT;
-//    $page_desc_XX           = $page_desc_global_XX;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');

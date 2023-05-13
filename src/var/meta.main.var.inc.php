@@ -54,6 +54,9 @@
 // Las internas componen el nombre con las variables
 // $page_title_home-PAGEINT y $site_name_title
 // Ej.: Nosotros | $page_title_home_laEmpresa | $site_name_title
+//
+// La variable $page_title_home-PAGEINT tambien se usan para el texto del item
+// en el nav principal
 
 if($l == 'en_GB'){
     $site_name_full         = 'SiteNameFull';
@@ -62,7 +65,8 @@ if($l == 'en_GB'){
     $site_name_tag          = 'SiteNameTag';
 
 //    $page_title_home-PAGEINT   = 'TituloEnIngles';
-    $page_title_home_contacto  = 'Contact';
+    $page_title_home_gracias    = 'Thank You';
+    $page_title_home_contacto   = 'Contact';
 
     $page_desc_global       = '';
 
@@ -85,7 +89,8 @@ if($l == 'en_GB'){
     $site_name_tag          = 'SiteNameTag';
 
 //    $page_title_home-PAGEINT   = 'TituloEnCastellano';
-    $page_title_home_contacto  = 'Contacto';
+    $page_title_home_gracias    = 'Gracias';
+    $page_title_home_contacto   = 'Contacto';
 
     $page_desc_global       = '';
 }

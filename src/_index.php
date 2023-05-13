@@ -6,7 +6,10 @@
     $nav_pageCurrent        = 'page_index';
     $nav_pageCurrent_int    = 'page_home';
      
-    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/index.var.inc.php');   
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/index.var.inc.php');  
+    
+    $page_main_classes      = '';
+    
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');  
     
     $page_url_full          = $url_index_full;  

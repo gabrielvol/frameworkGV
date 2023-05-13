@@ -51,7 +51,7 @@
     }
     
     @if $page_index_only_fullHeight_act_ALL == "on"{
-        &.footer_index{
+        &.footer_page_index{
             height: $footer_height_ALL;
         }
     }
@@ -62,7 +62,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_B500 == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_B500;
             }
         }  
@@ -74,7 +74,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_A500 == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_A500;
             }
         }  
@@ -86,7 +86,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_500O == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_500O;
             }
         }  
@@ -98,7 +98,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_BT == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_BT;
             }
         }  
@@ -110,7 +110,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_AT == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_AT;
             }
         }  
@@ -122,7 +122,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_TO == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_TO;
             }
         }  
@@ -134,7 +134,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_BTL == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_BTL;
             }
         }  
@@ -146,7 +146,7 @@
         }  
     
         @if $page_index_only_fullHeight_act_A1024 == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_A1024;
             }
         }  
@@ -158,7 +158,7 @@
         }    
     
         @if $page_index_only_fullHeight_act_A1200 == "on"{
-            &.footer_index{
+            &.footer_page_index{
                 height: $footer_height_A1200;
             }
         }   

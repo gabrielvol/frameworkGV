@@ -45,22 +45,12 @@
 
 
 
-/* // Main ------------------------------------------------------------------ */
-/*___ Elements __________________________*/
-$page_construccion      = 0;
-$has_form               = 0;
-$has_lightbox           = 0; // REF [26]
-$has_slider             = 0;
-$has_pop_video          = 0;
-//    $has-CUSTOMVARIABLE     = 1;
-//    $lang_GB                = 1;
-
 /*___ Titles ____________________________*/
-$PAGEINTID_title_PAGEID_GB    = 'TituloPagID';
+$PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
 
 $PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
 
-$PAGEINTID_title_PAGEID       = 'TituloPagID_GB';
+$PAGEINTID_title_PAGEID       = 'TituloPagID';
 
 if($l == 'en_GB'){
     if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }

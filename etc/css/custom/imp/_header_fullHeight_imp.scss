@@ -51,7 +51,7 @@
     }
     
     @if $page_index_only_fullHeight_act_ALL == "on"{
-        &.header_index{
+        &.header_page_index{
             height: $header_height_ALL;
         }
     }

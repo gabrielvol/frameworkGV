@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Footer Variables [/src/var/classes.var.inc.php]
+   Classes Variables [/src/var/classes.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -51,30 +51,43 @@
 /* // Model ----------------------------------------------------------------- */
     $class_ini_SECTION      = '';
 
+if($page_int                == 1):
+    $class_ini_SECTION      .= 'class_int '; endif; 
+
+    $class_ini_SECTION      .= $nav_pageCurrent . ' ';
+
+    $class_ini_SECTION      .= $nav_pageCurrent_int . ' ';
+
+if(isset($nav_pageCurrent_id)):
+    $class_ini_SECTION      .= $nav_pageCurrent_id . ' '; endif; 
+    
 if($nav_pageCurrent         == 'page_aaa'):
     $class_ini_SECTION      .= 'class_aaa '; endif;  
     
 if($has_CUSTOMVARIABLE      == 1):
     $class_ini_SECTION      .= 'class_aaa ';
 else:
-    $class_ini_SECTION      .= 'class_bbb ';
-endif;
+    $class_ini_SECTION      .= 'class_bbb '; endif;
     
 //----- Finals
     $class_end_SECTION      = ''; 
     
 //-----
-$classes_SECTION            = 'class="'. $class_ini_SECTION . $class_end_SECTION .'"';
+$classes_SECTION            = 'class="' . $class_ini_SECTION . $class_end_SECTION . '"';
 
 
 /* // Header Classes -------------------------------------------------------- */
     $class_ini_header       = 'navDrawer_closed ';
 
-if($nav_pageCurrent         == 'page_index'):
-    $class_ini_header       .= 'header_index '; endif;  
-
 if($page_int                == 1):
     $class_ini_header       .= 'header_int '; endif; 
+
+    $class_ini_header       .= 'header_' . $nav_pageCurrent . ' ';
+
+    $class_ini_header       .= 'header_' . $nav_pageCurrent_int . ' ';
+
+if(isset($nav_pageCurrent_id)):
+    $class_ini_header       .= 'header_' . $nav_pageCurrent_id . ' '; endif; 
 
 if($nav_pageCurrent         == 'page_PAGEINT'):
     $class_ini_header       .= 'error_alert error_alert_a '; endif;
@@ -92,11 +105,15 @@ $classes_header             = 'class="'. $class_ini_header . $class_end_header .
 /* // Footer Classes -------------------------------------------------------- */
     $class_ini_footer       = '';
 
-if($nav_pageCurrent         == 'page_index'):
-    $class_ini_footer       .= 'footer_index '; endif;
-
 if($page_int                == 1):
-    $class_ini_footer       .= 'footer_int '; endif; 
+    $class_ini_footer       .= 'footer_int '; endif;
+
+    $class_ini_footer       .= 'footer_' . $nav_pageCurrent . ' ';
+
+    $class_ini_footer       .= 'footer_' . $nav_pageCurrent_int . ' ';
+
+if(isset($nav_pageCurrent_id)):
+    $class_ini_footer       .= 'footer_' . $nav_pageCurrent_id . ' '; endif; 
     
 if($nav_pageCurrent         == 'page_PAGEINT'):
     $class_ini_footer       .= 'error_alert error_alert_a '; endif;
@@ -120,18 +137,17 @@ else:
     $class_ini_main         .= $nav_pageCurrent .' ';
 endif; 
 
-if(isset($nav_pageCurrent_int)):
-    $class_ini_main         .= $nav_pageCurrent_int .' '; endif; 
+    $class_ini_main         .= $nav_pageCurrent_int .' ';
+
+if(isset($nav_pageCurrent_id)):
+    $class_ini_main         .= $nav_pageCurrent_id .' '; endif; 
     
 //----- Finals
     $class_end_main         = '';   
-
-if(isset($nav_pageCurrent_id)):
-    $class_end_main         .= $nav_pageCurrent_id .' '; endif;
 
 if($page_construccion == 1):
     $class_end_main         .= 'page_construccion '; endif; 
     
 //-----
-$classes_main               = 'class="'. $class_ini_main . $class_end_main .'"';
+$classes_main               = 'class="'. $class_ini_main . $page_main_classes . $class_end_main .'"';
 ?>
