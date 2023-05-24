@@ -47,11 +47,6 @@
 ///**Colours Map Light:** 
     ///Aquí se agregan los colores CLAROS usados en el sitio, de este mapa se creara una clase por cada color, eg.: `.white{color: #fff}`, con el mixin  **colourLightClassesGenerator** `[/etc/scss/mixins_colours.scss]`. Generará las pseudo-clases `:active` y `:visited` con el mismo valor. Las pseudo-clases `:focus` y `:hover` oscurecerán el color de acuerdo al porcentaje asignado en la variable `$colours_light_lightenValue` debajo del mapa.  
 $colours_light_map:(
-//  redColour:      #ee0000,
-//  redColour_deD:  #ee0000,
-//  redColour_de:   #ee0000,
-//  redColour_deL:  #ee0000,
-  
 //  greenSystem4XL: #F5FFD2,
 //  greenSystem3XL: #e6ff99,
 //  greenSystem2XL: #b6f268,
