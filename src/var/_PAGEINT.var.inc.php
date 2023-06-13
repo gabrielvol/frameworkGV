@@ -46,25 +46,34 @@
 
 
 /*___ Titles ____________________________*/
+// Ej.:
+// $pageHuevoFrito_title_pageRecetas = 'Cómo hacer un exquisito huevo frito';
+
 $PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
+//$PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
+//$PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
 
 $PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
+//$PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
+//$PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
 
 $PAGEINTID_title_PAGEID       = 'TituloPagID';
+//$PAGEINTID_title_PAGEID       = 'TituloPagID';
+//$PAGEINTID_title_PAGEID       = 'TituloPagID';
 
 if($l == 'en_GB'){
-    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
-//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
+    if($nav_pageCurrent_id == "page_tresSitios_timeManagement_home"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
+//    if($nav_pageCurrent_id == "page_PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
 
 
 } elseif($l == 'xx_XX'){
-    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
-//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
+    if($nav_pageCurrent_id == "page_tresSitios_timeManagement_home"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
+//    if($nav_pageCurrent_id == "page_PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
 
 
 } else {
-    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
-//    if($nav_pageCurrent_id == "page-PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
+    if($nav_pageCurrent_id == "page_tresSitios_timeManagement_home"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
+//    if($nav_pageCurrent_id == "page_PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
 }
 
 ?>

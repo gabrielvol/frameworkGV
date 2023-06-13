@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Metadata Main Variables [/src/var/meta.main.var.inc.php]
+   Titles and Descriptions Variables [/src/var/meta.titlesDesc.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -52,10 +52,10 @@
 // El index usa solamente $site_name_full
 //
 // Las internas componen el nombre con las variables
-// $page_title_home-PAGEINT y $site_name_title
+// $page_title_home_PAGEINT y $site_name_title
 // Ej.: Nosotros | $page_title_home_laEmpresa | $site_name_title
 //
-// La variable $page_title_home-PAGEINT tambien se usan para el texto del item
+// La variable $page_title_home_PAGEINT tambien se usan para el texto del item
 // en el nav principal
 
 if($l == 'en_GB'){
@@ -64,7 +64,7 @@ if($l == 'en_GB'){
     $site_name_title        = 'SiteNameTitle';
     $site_name_tag          = 'SiteNameTag';
 
-//    $page_title_home-PAGEINT   = 'TituloEnIngles';
+//    $page_title_home_PAGEINT   = 'TituloEnIngles';
     $page_title_home_gracias    = 'Thank You';
     $page_title_home_contacto   = 'Contact';
 
@@ -77,7 +77,7 @@ if($l == 'en_GB'){
 // $site_name_title         = 'SiteNameTitle'; // $site_name_title
 // $site_name_tag           = 'SiteNameTag'; // $site_name_tag
 
-// $page_title_home-PAGEINT    = 'sinTraduccion';
+// $page_title_home_PAGEINT    = 'sinTraduccion';
 
 // $page_desc_global        = 'sinTraduccion';
 
@@ -88,7 +88,7 @@ if($l == 'en_GB'){
     $site_name_title        = 'SiteNameTitle';
     $site_name_tag          = 'SiteNameTag';
 
-//    $page_title_home-PAGEINT   = 'TituloEnCastellano';
+//    $page_title_home_PAGEINT   = 'TituloEnCastellano';
     $page_title_home_gracias    = 'Gracias';
     $page_title_home_contacto   = 'Contacto';
 

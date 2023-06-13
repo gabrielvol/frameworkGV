@@ -25,7 +25,7 @@
     $page_url_full          = $url_contacto_full;   
     
     $page_title             = $page_title_home_contacto . " | " . $site_name_title;
-// Si se activa el id `$page_title` se construye de otra forma:
+// Si se activa el id `$page_title` se construye de la siguiente forma:
 //    $page_title             = $page_title_id ." | ". $page_title_home_contacto ." | " . $site_name_title;    
     $page_desc              = $page_desc_global;
     
