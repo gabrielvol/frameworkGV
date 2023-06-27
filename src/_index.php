@@ -19,10 +19,7 @@
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/gettext/locale.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/speller.inc.php');
 ?>
-</head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">

@@ -22,9 +22,7 @@
 //    $page_desc_XX           = $page_desc_global_XX;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/gettext/locale.inc.php');
 ?>
-</head>
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">

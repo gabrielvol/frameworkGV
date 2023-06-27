@@ -144,29 +144,13 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <?php /* Web Fallback */ ?>
 <meta property="al:web:url" content="http://applinks.org/documentation">
 
-<?php include('head.js.inc.php'); ?>
+<?php
+    include('head.js.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/gettext/locale.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/speller.inc.php');
+?>
 
-<?php if(empty($dir_env)): /* Google Analytics */ ?>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-xxxxxxxx-x']);
-  _gaq.push(['_trackPageview']);
+</head>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<?php /* Global site tag (gtag.js) - Google Analytics */ ?>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-xxxxxxxxxx');
-</script>
+<?php if(empty($dir_env)): /* Google Analytics 4 */ ?>
 <?php endif; ?>
