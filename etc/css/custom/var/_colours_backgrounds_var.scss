@@ -71,8 +71,7 @@ $colours_backgrounds_map:(
 //  GreenSystem2XL: $greenSystem2XL,
 //  GreenSystemXL:  $greenSystemXL,
 //  GreenSystemL:   $greenSystemL,
-//  GreenSystem:    $greenSystem,
-    GreenSystem:    $greenSystem,
+    GreenSystemM:   $greenSystemM,
     
     GreenWhatsApp:  $greenWhatsApp,
     
@@ -81,7 +80,7 @@ $colours_backgrounds_map:(
     Grey2XL:        $grey2XL,
     GreyXL:         $greyXL,
     GreyL:          $greyL,
-    Grey:           $grey,
+    GreyM:          $greyM,
     GreyD:          $greyD,
     GreyXD:         $greyXD,
     Grey2XD:        $grey2XD,
@@ -100,7 +99,7 @@ $bgBlack:           map-get($colours_backgrounds_map, Black);
 //$bgGreenSystem2XL:  map-get($colours_backgrounds_map, GreenSystem2XL);
 //$bgGreenSystemXL:   map-get($colours_backgrounds_map, GreenSystemXL);
 //$bgGreenSystemL:    map-get($colours_backgrounds_map, GreenSystemL);
-$bgGreenSystem:     map-get($colours_backgrounds_map, GreenSystem);
+$bgGreenSystemM:    map-get($colours_backgrounds_map, GreenSystemM);
 
 $bgGreenWhatsApp:   map-get($colours_backgrounds_map, GreenWhatsApp);
 
@@ -109,7 +108,7 @@ $bgGrey3XL:         map-get($colours_backgrounds_map, Grey3XL);
 $bgGrey2XL:         map-get($colours_backgrounds_map, Grey2XL);
 $bgGreyXL:          map-get($colours_backgrounds_map, GreyXL);
 $bgGreyL:           map-get($colours_backgrounds_map, GreyL);
-$bgGrey:            map-get($colours_backgrounds_map, Grey);
+$bgGreyM:           map-get($colours_backgrounds_map, GreyM);
 $bgGreyD:           map-get($colours_backgrounds_map, GreyD);
 $bgGreyXD:          map-get($colours_backgrounds_map, GreyXD);
 $bgGrey2XD:         map-get($colours_backgrounds_map, Grey2XD);
@@ -119,7 +118,7 @@ $bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
 
 /*___ Declaramos las var para colores de fondo _*/
 $bgColour_body:        $bgWhite;    
-$bgColour_main_global: $bgGrey;
+$bgColour_main_global: $bgGreyM;
 $img_bgColour_global:  $bgGreyL;
 
 
@@ -131,7 +130,7 @@ $colours_backgrounds_hover_map:(
 
 
     mainBgColour: darken($bgColour_main_global, 20%),
-/*    bgGrey: lighten($bgGrey, 20%)*/
+/*    bgGrey: lighten($bgGreyM, 20%)*/
 );
 
 //$bgBlue_hover: map-get($colours_backgrounds_hover_map, bgBlue);

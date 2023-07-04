@@ -148,7 +148,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // .mha placeholder ------------------------------------------------------ */
 /* // Clearfix mixin -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Z Index Variables | Custom [/etc/css/custom/var/zindex.scss]
+   Z Index Variables | Custom [/etc/css/custom/var/zindex_var.scss]
    ========================================================================== */
 /* // Negative -------------------------------------------------------------- */
 /* // 10 000 ---------------------------------------------------------------- */
@@ -441,7 +441,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Page Contacto Colours ------------------------------------------------- */
 /* // Mixins ---------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Media Queries Mixins | Custom [/etc/css/custom/mediaQueries_mixins.scss]
+   Media Queries Mixins | Custom [/etc/css/custom/mediaQueries_mx.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -617,6 +617,16 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 .bgGrad_gradient_ig {
   background-image: linear-gradient(to right, #ffd600 0%, #ff7a00 20%, #ff0069 47%, #d300c5 72%, #7638fa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd600', endColorstr='#7638fa',GradientType=1 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
+.bgWhite_grad_50 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
+.bgBlack_grad_50 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
 
 /* * NombreDeProyecto * ========================================================
    Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
@@ -882,13 +892,13 @@ a.white:focus, a.white:hover {
 a.white.noHover:focus, a.white.noHover:hover {
   text-shadow: 0 0 0 transparent; }
 
-.greenSystem, .greenSystem b, .greenSystem strong, .greenSystem i, .greenSystem em {
+.greenSystemM, .greenSystemM b, .greenSystemM strong, .greenSystemM i, .greenSystemM em {
   color: #339900; }
 
-a.greenSystem, a.greenSystem:active, a.greenSystem:visited, a.greenSystem.noHover:focus, a.greenSystem.noHover:hover {
+a.greenSystemM, a.greenSystemM:active, a.greenSystemM:visited, a.greenSystemM.noHover:focus, a.greenSystemM.noHover:hover {
   color: #339900; }
 
-a.greenSystem:focus, a.greenSystem:hover {
+a.greenSystemM:focus, a.greenSystemM:hover {
   color: #113300; }
 
 .greenWhatsApp, .greenWhatsApp b, .greenWhatsApp strong, .greenWhatsApp i, .greenWhatsApp em {
@@ -936,13 +946,13 @@ a.greyL, a.greyL:active, a.greyL:visited, a.greyL.noHover:focus, a.greyL.noHover
 a.greyL:focus, a.greyL:hover {
   color: #7f7f7f; }
 
-.grey, .grey b, .grey strong, .grey i, .grey em {
+.greyM, .greyM b, .greyM strong, .greyM i, .greyM em {
   color: #8c8c8c; }
 
-a.grey, a.grey:active, a.grey:visited, a.grey.noHover:focus, a.grey.noHover:hover {
+a.greyM, a.greyM:active, a.greyM:visited, a.greyM.noHover:focus, a.greyM.noHover:hover {
   color: #8c8c8c; }
 
-a.grey:focus, a.grey:hover {
+a.greyM:focus, a.greyM:hover {
   color: #595959; }
 
 .errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
@@ -1040,14 +1050,16 @@ a[href^=tel], a[href^=tel]:focus, a[href^=tel]:hover, a[href^=tel]:active, a[hre
 blockquote {
   margin: 0; }
   blockquote p {
-    quotes: "“" "”" "«" "»"; }
+    quotes: "“" "”" "«" "»";
+    /* quotes: "“" "”" "&lsquo;" "&rsquo;"; */ }
     blockquote p:first-child::before {
       content: open-quote; }
     blockquote p:last-child::after {
       content: close-quote; }
 
 q {
-  quotes: "“" "”" "«" "»"; }
+  quotes: "“" "”" "«" "»";
+  /* quotes: "“" "”" "&lsquo;" "&rsquo;"; */ }
   q::before {
     content: open-quote; }
   q::after {
@@ -1097,6 +1109,12 @@ q {
   text-align: justify;
   text-align-last: center; }
 
+.txJustifyInterWord {
+  text-justify: inter-word; }
+
+.txJustifyInterCharacter {
+  text-justify: inter-character; }
+
 .txIndented {
   overflow: hidden;
   text-indent: -9999px; }
@@ -1111,6 +1129,15 @@ q {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden; }
+
+.txHyphensNone {
+  hyphens: none; }
+
+.txHyphensManual {
+  hyphens: manual; }
+
+.txHyphensAuto {
+  hyphens: auto; }
 
 .txNoSelectable {
   user-select: none; }
@@ -1127,7 +1154,7 @@ q {
 .bgBlack {
   background-color: #000; }
 
-.bgGreenSystem {
+.bgGreenSystemM {
   background-color: #339900; }
 
 .bgGreenWhatsApp {
@@ -1145,7 +1172,7 @@ q {
 .bgGreyL {
   background-color: #b2b2b2; }
 
-.bgGrey {
+.bgGreyM {
   background-color: #8c8c8c; }
 
 .bgGreyD {
@@ -1203,29 +1230,62 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 
 /* // Background Shadows ---------------------------------------------------- */
 .bgShadowT,
+.bgShadowT_after::after,
 .bgShadowB,
+.bgShadowB_after::after,
 .bgShadowB_50,
-.bgShadowV {
+.bgShadowB_50_after::after,
+.bgShadowV,
+.bgShadowV_after::after {
   background-repeat: repeat-x;
   background-size: auto 20px; }
 
-.bgShadowT {
+.bgShadowT_after::after,
+.bgShadowB_after::after,
+.bgShadowB_50_after::after,
+.bgShadowV_after::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 7850;
+  right: 0;
+  left: 0;
+  height: 30px; }
+
+.bgShadowB,
+.bgShadowB_after::after,
+.bgShadowB_50,
+.bgShadowB_50_after::after {
+  background-position: center bottom; }
+
+.bgShadowB,
+.bgShadowB_after::after {
+  background-image: url("/stage/img/bg_shadowB.png"); }
+
+.bgShadowB_50,
+.bgShadowB_50_after::after {
+  background-image: url("/stage/img/bg_shadowB_50.png"); }
+
+.bgShadowV,
+.bgShadowV_after::after {
+  background-image: url("/stage/img/bg_shadowT.png"), url("/stage/img/bg_shadowB.png");
+  background-position: center top, center bottom; }
+
+.bgShadowT,
+.bgShadowT_after::after {
   background-image: url("/stage/img/bg_shadowT.png");
   background-position: center top; }
 
-.bgShadowB,
-.bgShadowB_50 {
-  background-position: center bottom; }
+.bgShadowT_after::after {
+  top: 0; }
 
-.bgShadowB {
-  background-image: url("/stage/img/bg_shadowB.png"); }
+.bgShadowB_after::after,
+.bgShadowB_50_after::after {
+  bottom: 0; }
 
-.bgShadowB_50 {
-  background-image: url("/stage/img/bg_shadowB_50.png"); }
-
-.bgShadowV {
-  background-image: url("/stage/img/bg_shadowT.png"), url("/stage/img/bg_shadowB.png");
-  background-position: center top, center bottom; }
+.bgShadowV_after::after {
+  top: 0;
+  bottom: 0; }
 
 /* * NombreDeProyecto * ========================================================
    Useful Classes ALL | Etc [/etc/css/scss/classes_useful_all.scss]
@@ -1909,15 +1969,16 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (max-width: 350px) {
   .container {
-    width: 300px; } }
+    width: 90%;
+    max-width: 300px; } }
 
 @media (min-width: 351px) {
   .container {
-    width: 85%; } }
+    width: 90%; } }
 
 @media (min-width: 501px) {
   .container {
-    width: 85%; } }
+    width: 90%; } }
 
 @media (min-width: 601px) {
   .container {
@@ -1925,35 +1986,36 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 768px) {
   .container {
-    width: 720px; } }
+    width: 90%;
+    max-width: 720px; } }
 
 @media (min-width: 901px) {
   .container {
-    width: 800px; } }
+    max-width: 800px; } }
 
 @media (min-width: 1024px) {
   .container {
-    width: 900px; } }
+    max-width: 900px; } }
 
 @media (min-width: 1201px) {
   .container {
-    width: calc(100% - 100px); } }
+    max-width: 1100px; } }
 
 @media (min-width: 1301px) {
   .container {
-    width: calc(100% - 100px); } }
+    max-width: 1100px; } }
 
 @media (min-width: 1401px) {
   .container {
-    width: 1300px; } }
+    max-width: 1300px; } }
 
 @media (min-width: 1501px) {
   .container {
-    width: 1300px; } }
+    max-width: 1300px; } }
 
 @media (min-width: 1601px) {
   .container {
-    width: 1300px; } }
+    max-width: 1300px; } }
 
 @media (max-width: 350px) {
   .container.container_centered_absolute {
@@ -1965,13 +2027,13 @@ article, article::before, article::after, details, details::before, details::aft
   .container.container_centered_absolute {
     position: absolute;
     left: 50%;
-    margin-left: calc(-1 * calc(85% / 2)); } }
+    margin-left: calc(-1 * calc(90% / 2)); } }
 
 @media (min-width: 501px) {
   .container.container_centered_absolute {
     position: absolute;
     left: 50%;
-    margin-left: calc(-1 * calc(85% / 2)); } }
+    margin-left: calc(-1 * calc(90% / 2)); } }
 
 @media (min-width: 601px) {
   .container.container_centered_absolute {
@@ -1991,11 +2053,11 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 1201px) {
   .container.container_centered_absolute {
-    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+    margin-left: calc(-1 * calc(1100px / 2)); } }
 
 @media (min-width: 1301px) {
   .container.container_centered_absolute {
-    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+    margin-left: calc(-1 * calc(1100px / 2)); } }
 
 @media (min-width: 1401px) {
   .container.container_centered_absolute {
@@ -2029,11 +2091,11 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 1201px) {
   .container.container_centered_absolute_A600 {
-    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+    margin-left: calc(-1 * calc(1100px / 2)); } }
 
 @media (min-width: 1301px) {
   .container.container_centered_absolute_A600 {
-    margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+    margin-left: calc(-1 * calc(1100px / 2)); } }
 
 @media (min-width: 1401px) {
   .container.container_centered_absolute_A600 {
@@ -2057,49 +2119,49 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 768px) {
   .containerA600 {
-    width: 720px; }
+    max-width: 720px; }
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(720px / 2)); } }
 
 @media (min-width: 901px) {
   .containerA600 {
-    width: 800px; }
+    max-width: 800px; }
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(800px / 2)); } }
 
 @media (min-width: 1024px) {
   .containerA600 {
-    width: 900px; }
+    max-width: 900px; }
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(900px / 2)); } }
 
 @media (min-width: 1201px) {
   .containerA600 {
-    width: calc(100% - 100px); }
+    max-width: 1100px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+      margin-left: calc(-1 * calc(1100px / 2)); } }
 
 @media (min-width: 1301px) {
   .containerA600 {
-    width: calc(100% - 100px); }
+    max-width: 1100px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(calc(100% - 100px) / 2)); } }
+      margin-left: calc(-1 * calc(1100px / 2)); } }
 
 @media (min-width: 1401px) {
   .containerA600 {
-    width: 1300px; }
+    max-width: 1300px; }
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(1300px / 2)); } }
 
 @media (min-width: 1501px) {
   .containerA600 {
-    width: 1300px; }
+    max-width: 1300px; }
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(1300px / 2)); } }
 
 @media (min-width: 1601px) {
   .containerA600 {
-    width: 1300px; }
+    max-width: 1300px; }
     .containerA600.container_centered_absolute_A600 {
       margin-left: calc(-1 * calc(1300px / 2)); } }
 
@@ -2471,8 +2533,8 @@ button, button::before, button::after {
 /* // Button Whatsapp ------------------------------------------------------- */
 #selector .button_whatsapp_anchor {
   transition: all 1s ease;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   position: fixed;
   z-index: 7900;
   right: 10px;
@@ -2486,7 +2548,7 @@ button, button::before, button::after {
   border-radius: 50%;
   background-image: url("/stage/img/button_whatsapp.svg");
   background-repeat: no-repeat;
-  background-size: auto calc(60px - 10px);
+  background-size: auto calc(70px - 20px);
   background-position: center center; }
   #selector .button_whatsapp_anchor, #selector .button_whatsapp_anchor:visited, #selector .button_whatsapp_anchor:active {
     /*background-color: $greenWhatsApp;*/
@@ -2503,7 +2565,7 @@ button, button::before, button::after {
       box-sizing: border-box;
       position: absolute;
       top: 50%;
-      right: calc(60px + 10px);
+      right: calc(70px + 10px);
       background-color: rgba(0, 0, 0, 0.7);
       padding: 0 15px;
       margin-top: calc(-1 * calc(40px / 2));
@@ -2901,7 +2963,6 @@ form input, form select, form textarea {
     box-shadow: inset 0 0 6px #b2b2b2; }
   form input:focus, form input:hover, form select:focus, form select:hover, form textarea:focus, form textarea:hover {
     background-color: #fff;
-    border-color: #666666;
     color: #000; }
   form input, form input::before, form input::after, form select, form select::before, form select::after, form textarea, form textarea::before, form textarea::after {
     box-sizing: border-box; }
@@ -3117,9 +3178,11 @@ form {
   /* // Form Button Submit // REF [21] ---------------------------------------- */
   /* // Form Label ------------------------------------------------------------ */ }
   form input, form select, form textarea {
-    border: 1px solid #8c8c8c;
     padding-right: 10px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    border: 1px solid #8c8c8c; }
+    form input:focus, form input:hover, form select:focus, form select:hover, form textarea:focus, form textarea:hover {
+      border-color: #666666; }
   form input[type="number"]:out-of-range {
     border-color: #eb1c24 !important; }
   form input:read-only {
@@ -3287,59 +3350,6 @@ form {
       margin-bottom: 5px; }
       form .form_label_name.form_label_long span {
         display: block; } }
-
-/* * NombreDeProyecto * ========================================================
-   Search Form Styles | Custom [/etc/css/custom/form_search.scss]
-   ========================================================================== */
-.searchForm {
-  position: relative; }
-  .searchForm input {
-    /* // Form Button Submit // REF [21] ---------------------------------------- */ }
-    .searchForm input[type="search"] {
-      border: none !important; }
-    .searchForm input[type="submit"] {
-      opacity: calc(75 / 100);
-      filter: alpha(opacity=75);
-      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=75)";
-      position: absolute;
-      top: 0;
-      right: 0;
-      border: none !important; }
-      .searchForm input[type="submit"]:focus, .searchForm input[type="submit"]:hover {
-        opacity: calc(100 / 100);
-        filter: alpha(opacity=100);
-        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=100)"; }
-  @media (max-width: 767px) {
-    .searchForm {
-      width: 270px; }
-      .searchForm input {
-        height: 30px; }
-        .searchForm input[type="search"] {
-          width: 270px;
-          padding-right: calc(30px + 15px) !important;
-          line-height: 30px; }
-        .searchForm input[type="submit"] {
-          background-color: transparent;
-          background-image: url("/stage/img/form_search_submit_BT.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 30px;
-          width: 270px; } }
-  @media (min-width: 768px) {
-    .searchForm {
-      width: 270px; }
-      .searchForm input {
-        height: 30px; }
-        .searchForm input[type="search"] {
-          padding-right: calc(30px + 5px) !important;
-          line-height: 30px; }
-        .searchForm input[type="submit"] {
-          background-color: transparent;
-          background-image: url("/stage/img/form_search_submit_AT.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 30px;
-          width: 270px; } }
 
 /* * NombreDeProyecto * ========================================================
    Popup Styles | Custom [/etc/css/custom/popup.scss]

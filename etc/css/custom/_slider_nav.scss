@@ -36,7 +36,7 @@
     }
     
     @include beforeMQ768{
-        @include borderStyleB($bgGrey, 2px);
+        @include borderStyleB($bgGreyM, 2px);
         padding-bottom: 10px;
         margin-bottom: 10px;
 
@@ -47,7 +47,7 @@
     
     @include afterMQ768{
         li{
-            @include borderStyle($bdGrey);
+            @include borderStyle($bdGreyM);
             margin-top: 0; 
 
             &.slick-current{

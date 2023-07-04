@@ -98,7 +98,7 @@ $nav_item_current_level3_bgColour_BT:   darken($nav_ul_level1_bgColour_BT, 5%);
 
 /*___ AT ________________________________*/
 $nav_nav_bgColour_AT:               transparent;
-$nav_ul_bgColour_AT:                $bgGrey;
+$nav_ul_bgColour_AT:                $bgGreyM;
 
 $nav_item_bgColour_AT:              transparent;
 $nav_item_bgColour_hover:           $nav_item_bgColour_AT;
@@ -125,7 +125,7 @@ $nav_topper_bgColour:       $bgBlack;
 $nav_drawer_bdColourR:              $bdBlack;
 $nav_accordion_bdColour:            $bdGrey2XL;
   
-$nav_item_level0_bdColour_BT:       $bdGrey;
+$nav_item_level0_bdColour_BT:       $bdGreyM;
 $nav_item_level1_bdColour_BT:       $nav_item_level0_bdColour_BT;
 $nav_item_level2_bdColour_BT:       $nav_item_level1_bdColour_BT;
 $nav_item_level3_bdColour_BT:       $nav_item_level2_bdColour_BT;
@@ -136,11 +136,11 @@ $nav_bdColour_backMenu:             $nav_item_level1_bdColour_BT; // REF [17]
 
 
 /*___ AT ________________________________*/  
-$nav_item_current_bdColour:         $bdGrey;
+$nav_item_current_bdColour:         $bdGreyM;
 
 $nav_item_subNav_bdColour_AT:       $nav_item_level0_bdColour_BT;
 
 
 /*___ Topper ____________________________*/
 $nav_topper_bdColour:               $bdGreyXD;
-$nav_topper_item_current_bdColour:  $bdGrey;
+$nav_topper_item_current_bdColour:  $bdGreyM;

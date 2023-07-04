@@ -152,7 +152,7 @@ $table_before_width_BT: 40%;
             }
             
             td{
-                @include borderStyleT($bdGrey);
+                @include borderStyleT($bdGreyM);
                 text-align: left;
                 padding-left: $zero;
             }

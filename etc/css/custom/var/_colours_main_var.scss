@@ -52,7 +52,7 @@ $colours_light_map:(
 //  greenSystem2XL: #b6f268,
 //  greenSystemXL:  #7DD825,
 //  greenSystemL:   #54c81a,
-    greenSystem:    #339900,
+    greenSystemM:   #339900,
 //  greenSystemD:   #2a7d00,
     
     greenWhatsApp:  #25D366,
@@ -62,7 +62,7 @@ $colours_light_map:(
     grey2XL:        #e6e6e6,
     greyXL:         #dedede,
     greyL:          #b2b2b2,
-    grey:           #8c8c8c,
+    greyM:          #8c8c8c,
     
     errorColour:    #eb1c24
 );
@@ -124,7 +124,7 @@ $errorColour:       map-get($colours_merged_map, errorColour);
 //$greenSystem2XL:    map-get($colours_merged_map, greenSystem2XL);
 //$greenSystemXL:     map-get($colours_merged_map, greenSystemXL);
 //$greenSystemL:      map-get($colours_merged_map, greenSystemL);
-$greenSystem:       map-get($colours_merged_map, greenSystem);
+$greenSystemM:      map-get($colours_merged_map, greenSystemM);
 //$greenSystemD:      map-get($colours_merged_map, greenSystemD);
 
 $greenWhatsApp:         map-get($colours_merged_map, greenWhatsApp);
@@ -135,7 +135,7 @@ $grey3XL:           map-get($colours_merged_map, grey3XL);
 $grey2XL:           map-get($colours_merged_map, grey2XL);
 $greyXL:            map-get($colours_merged_map, greyXL);
 $greyL:             map-get($colours_merged_map, greyL);
-$grey:              map-get($colours_merged_map, grey);
+$greyM:              map-get($colours_merged_map, greyM);
 $greyD:             map-get($colours_merged_map, greyD);
 $greyXD:            map-get($colours_merged_map, greyXD);
 $grey2XD:           map-get($colours_merged_map, grey2XD);
