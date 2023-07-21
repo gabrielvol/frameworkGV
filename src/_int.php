@@ -7,7 +7,7 @@
     $nav_pageCurrent        = 'page_PAGEINT';
     $nav_pageCurrent_int    = 'page_PAGEINT_home';
 // Si se activa el id hay que asignar los títulos en `/var/PAGEINT.var.inc.php`
-//    $nav_pageCurrent_id     = 'page_PAGEINT_id';
+//    $nav_pageCurrent_id     = 'page_PAGEINT_ID';
     
     $page_construccion      = 0;
     $has_form               = 0;
@@ -37,6 +37,9 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
+        <?php /* Si se activa el id:
+            <h1><?php echo $page_heading_id; ?></h1>
+        */ ?>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/footer.inc.php'); ?>
 </body>

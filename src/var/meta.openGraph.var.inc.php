@@ -5,6 +5,7 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 // Variables para open graph
+// Este archivo se carga antes del head en cada página, no se carga desde PHP Variables Main Loader [/src/var/main.var.inc.php]
 //
 // #meta #openGraph #seo
 

@@ -47,33 +47,51 @@
 
 /*___ Titles ____________________________*/
 // Ej.:
-// $pageHuevoFrito_title_pageRecetas = 'Cómo hacer un exquisito huevo frito';
-
-$PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
-//$PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
-//$PAGEINTID_title_PAGEID_GB    = 'TituloPagID_GB';
-
-$PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
-//$PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
-//$PAGEINTID_title_PAGEID_XX    = 'sinTraduccion';
-
-$PAGEINTID_title_PAGEID       = 'TituloPagID';
-//$PAGEINTID_title_PAGEID       = 'TituloPagID';
-//$PAGEINTID_title_PAGEID       = 'TituloPagID';
+// $pageRecetas_title_huevoFrito    = 'Cómo hacer un exquisito huevo frito';
+// $page_heading_id                 = '';
 
 if($l == 'en_GB'){
-    if($nav_pageCurrent_id == "page_tresSitios_timeManagement_home"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
-//    if($nav_pageCurrent_id == "page_PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_GB; }
+    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
+//    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
+//    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
+    
+    if($nav_pageCurrent_id == "page_PAGEINT_ID"){
+        $page_title_id          = $PAGEINT_title_PAGEID;
+        $page_heading_id        = $PAGEINT_title_PAGEID; }
+        
+//    if($nav_pageCurrent_id == "page_PAGEINT_ID"){
+//      $page_title_id        = $PAGEINT_title_PAGEID;
+//      $page_heading_id      = $PAGEINT_title_PAGEID; }
 
 
 } elseif($l == 'xx_XX'){
-    if($nav_pageCurrent_id == "page_tresSitios_timeManagement_home"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
-//    if($nav_pageCurrent_id == "page_PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID_XX; }
+    $PAGEINT_title_PAGEID    = 'sinTraduccion';
+//    $PAGEINT_title_PAGEID    = 'sinTraduccion';
+//    $PAGEINT_title_PAGEID    = 'sinTraduccion';
+    
+    $nav_main_item_PAGEINTID    = '';
+
+    if($nav_pageCurrent_id == "page_PAGEINT_ID"){
+        $page_title_id      = $PAGEINT_title_PAGEID;
+        $page_heading_id        = $PAGEINT_title_PAGEID; }
+        
+//    if($nav_pageCurrent_id == "page_PAGEINT_ID"){
+//      $page_title_id        = $PAGEINT_title_PAGEID;
+//      $page_heading_id      = $PAGEINT_title_PAGEID; }
 
 
 } else {
-    if($nav_pageCurrent_id == "page_tresSitios_timeManagement_home"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
-//    if($nav_pageCurrent_id == "page_PAGEINTID"){ $page_title_id    = $PAGEINTID_title_PAGEID; }
+    $PAGEINT_title_PAGEID       = 'TituloPagID';
+//    $PAGEINT_title_PAGEID       = 'TituloPagID';
+//    $PAGEINT_title_PAGEID       = 'TituloPagID';
+    
+    if($nav_pageCurrent_id == "page_PAGEINT_ID"){
+        $page_title_id      = $PAGEINT_title_PAGEID;
+        $page_heading_id        = $PAGEINT_title_PAGEID; }
+        
+//    if($nav_pageCurrent_id == "page_PAGEINT_ID"){
+//      $page_title_id        = $PAGEINT_title_PAGEID;
+//      $page_heading_id      = $PAGEINT_title_PAGEID; }
 }
 
 ?>

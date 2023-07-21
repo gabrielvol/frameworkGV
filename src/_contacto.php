@@ -35,6 +35,7 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
+        <h1><?php echo $page_title_home_contacto; ?></h1>
         <div class="mobileForm tabletForm">
             <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.inc.php'); ?>
         </div>

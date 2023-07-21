@@ -56,6 +56,14 @@
     @media (min-width: #{$mq_nav_AT}){@content;}}
     
     
+/* // 300px ----------------------------------------------------------------- */
+@mixin beforeMQ300{
+    @media (max-width: 300px){@content;}}
+
+@mixin afterMQ300{
+    @media (min-width: 301px){@content;}}
+    
+    
 /* // 350px ----------------------------------------------------------------- */
 @mixin beforeMQ350{
     @media (max-width: 350px){@content;}}
@@ -138,6 +146,10 @@
 @mixin MQ600_768{
     @media (min-width: 601px)
         and (max-width: 767px){@content;}}
+    
+@mixin MQ600_1024{
+    @media (min-width: 601px)
+        and (max-width: 1023px){@content;}}
     
     
 /* // 650px ----------------------------------------------------------------- */

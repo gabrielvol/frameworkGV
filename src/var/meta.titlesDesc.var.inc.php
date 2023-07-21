@@ -49,49 +49,71 @@
 
 
 /* // Site titles ----------------------------------------------------------- */
-// El index usa solamente $site_name_full
-//
+// El index usa como titulo solamente $site_name_full
+
 // Las internas componen el nombre con las variables
 // $page_title_home_PAGEINT y $site_name_title
-// Ej.: Nosotros | $page_title_home_laEmpresa | $site_name_title
-//
-// La variable $page_title_home_PAGEINT tambien se usan para el texto del item
-// en el nav principal
+// Ej.: Nosotros | $page_title_home_laEmpresa | $site_name_title  
 
-if($l == 'en_GB'){
+// La variable $page_title_home_PAGEINT tambien se usa para el item en Nav Main
+
+if($l == 'en_GB'){    
     $site_name_full         = 'SiteNameFull';
     $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
     $site_name_tag          = 'SiteNameTag';
 
-//    $page_title_home_PAGEINT   = 'TituloEnIngles';
+//    $page_title_home_PAGEINT    = 'TituloEnIngles';
+    $page_title_home_contacto   = 'Contact';    
     $page_title_home_gracias    = 'Thank You';
-    $page_title_home_contacto   = 'Contact';
-
+    
+/*___ Nav Main items ____________________*/
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+    $nav_main_item_home         = 'Home';
+    $nav_main_item_contacto     = $page_title_home_contacto;    
+//    $nav_main_item_PAGEID       = 'TituloEnIngles_id';
+    
+/*___ Descripcion global ________________*/ 
     $page_desc_global       = '';
 
 
 } elseif($l == 'xx_XX'){
-// $site_name_full          = 'SiteNameFull';
-// $site_name_short         = 'SiteNameShort'; // $site_name_short
-// $site_name_title         = 'SiteNameTitle'; // $site_name_title
-// $site_name_tag           = 'SiteNameTag'; // $site_name_tag
+    $site_name_full          = 'SiteNameFull';
+    $site_name_short         = 'SiteNameShort';
+    $site_name_title         = 'SiteNameTitle';
+    $site_name_tag           = 'SiteNameTag';
 
-// $page_title_home_PAGEINT    = 'sinTraduccion';
+//    $page_title_home_PAGEINT    = 'sinTraduccion';  
+    $page_title_home_contacto   = 'sinTraduccion';     
+    $page_title_home_gracias    = 'sinTraduccion';
+    
+/*___ Nav Main items ____________________*/
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+    $nav_main_item_home         = 'Home';
+    $nav_main_item_contacto     = $page_title_home_contacto;    
+//    $nav_main_item_PAGEID       = 'sinTraduccion_id';
+    
+/*___ Descripcion global ________________*/ 
+    $page_desc_global        = 'sinTraduccion';
 
-// $page_desc_global        = 'sinTraduccion';
 
-
-} else {
+} else {    
     $site_name_full         = 'SiteNameFull';
     $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
     $site_name_tag          = 'SiteNameTag';
 
-//    $page_title_home_PAGEINT   = 'TituloEnCastellano';
+//    $page_title_home_PAGEINT    = 'TituloEnCastellano';
+    $page_title_home_contacto   = 'Contacto';    
     $page_title_home_gracias    = 'Gracias';
-    $page_title_home_contacto   = 'Contacto';
-
+    
+/*___ Nav Main items ____________________*/
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+    $nav_main_item_home         = 'Home';
+    $nav_main_item_contacto     = $page_title_home_contacto;    
+//    $nav_main_item_PAGEID       = 'TituloEnCastellano_id';
+    
+/*___ Descripcion global ________________*/ 
     $page_desc_global       = '';
 }
 
