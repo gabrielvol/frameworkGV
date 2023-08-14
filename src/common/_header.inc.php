@@ -1,4 +1,8 @@
-<a href="#main" id="go-main-content"><?php echo _("Ir al contenido principal de esta p&aacute;gina"); ?>.</a>
+<a href="#main" id="go-main-content"><?php if($l == 'en'): ?>
+        Go to the main content of the site.
+        <?php else: ?>
+        Ir al contenido principal de esta p&aacute;gina.
+        <?php endif; ?></a>
 <header id="header" <?php echo $classes_header; ?>>    
     <?php
         if($nav_pageCurrent == 'page_index') { echo '<h1 class="logo_header">'; } 

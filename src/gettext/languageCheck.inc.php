@@ -8,6 +8,8 @@
 // REF [14a]
 // Variable $l y asignación de idioma
 //
+// La variable $l se define en el archivo `[/src/var/lang.var.inc.php]`
+// 
 // #php #gettext
 
 
@@ -51,29 +53,33 @@
 
 $l = $_GET['l'];   
 
-if($l == 'pt_BR') {
+if($gettext_idioma == 'pt') {
     $gettext_idioma     = 'pt_BR';
-    $gettext_idioma_url = '?l=pt_BR';
+    $gettext_idioma_url = '?l=pt';
     
-} elseif($l == 'en_GB'){
+} elseif($l == 'en'){
     $gettext_idioma     = 'en_GB';
-    $gettext_idioma_url = '?l=en_GB';
+    $gettext_idioma_url = '?l=en';
+    
+} elseif($l == 'en'){
+    $gettext_idioma     = 'en_US';
+    $gettext_idioma_url = '?l=en';
 
-} elseif($l == 'de_DE') {
+} elseif($l == 'de') {
     $gettext_idioma     = 'de_DE';
-    $gettext_idioma_url = '?l=de_DE';
+    $gettext_idioma_url = '?l=de';
 
-} elseif($l == 'fr_FR') {
+} elseif($l == 'fr') {
     $gettext_idioma     = 'fr_FR';
-    $gettext_idioma_url = '?l=fr_FR';
+    $gettext_idioma_url = '?l=fr';
 
-} elseif($l == 'it_IT') {
+} elseif($l == 'it') {
     $gettext_idioma     = 'it_IT';
-    $gettext_idioma_url = '?l=it_IT';
+    $gettext_idioma_url = '?l=it';
 
 } else {
     $gettext_idioma     = 'es_AR';
-    $gettext_idioma_url = '?l=es_AR';
+    $gettext_idioma_url = '?l=es';
 }
 
 /*
