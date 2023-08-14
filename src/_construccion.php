@@ -10,6 +10,8 @@
 //    $nav_pageCurrent_id     = 'page_PAGEINT_ID';
     
     $page_construccion      = 1;
+    
+    $has_scrolling          = 1;
 //    $has-CUSTOMVARIABLE     = 1;
 //    $lang_GB                = 1;
 

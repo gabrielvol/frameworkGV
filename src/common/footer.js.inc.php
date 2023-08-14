@@ -1,6 +1,6 @@
-<?php if($has_vimeo == 1): ?>
+<?php /* if($has_vimeo == 1): ?>
 <script src="https://player.vimeo.com/api/player.js"></script>
-<?php endif; ?>
+<?php endif; */ ?>
 
 <script src="<?php echo $dir_env; ?>/js/_global.js"></script>
 

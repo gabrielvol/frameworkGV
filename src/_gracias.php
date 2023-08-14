@@ -9,7 +9,7 @@
 // Si se activa el id hay que asignar los títulos en `/var/PAGEINT.var.inc.php`
 //    $nav_pageCurrent_id     = 'page_gracias_id';
     
-    $has_scrolling          = 0;    
+    $has_scrolling          = 1;    
 //    $has-CUSTOMVARIABLE     = 1;   
 //    $lang_GB                = 1; 
 

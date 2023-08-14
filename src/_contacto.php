@@ -10,7 +10,9 @@
 //    $nav_pageCurrent_id     = 'page_contacto_id';
     
     $page_construccion      = 0;
+    
     $has_form               = 1;
+    $has_scrolling          = 1;
 //    $has-CUSTOMVARIABLE     = 1;
 //    $lang_GB                = 1;
 
