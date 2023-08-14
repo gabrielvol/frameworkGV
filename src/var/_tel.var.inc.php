@@ -66,21 +66,21 @@ $tel_prefix_formatted           = '(11)';
     
     
 /* // Telephone number PRINCIPAL -------------------------------------------- */
-$site_tel_PHONEA_a                  = '0000';
-$site_tel_PHONEA_b                  = '0000';
+$site_tel_PHONEMAIN_a                  = '0000';
+$site_tel_PHONEMAIN_b                  = '0000';
 
-$site_tel_PHONEA                    = $site_tel_PHONEA_a . $site_tel_PHONEA_b;
-$site_tel_PHONEA_formatted          = $tel_prefix_formatted .' '. $site_tel_PHONEA_a .'-'. $site_tel_PHONEA_b;
+$site_tel_PHONEMAIN                    = $site_tel_PHONEMAIN_a . $site_tel_PHONEMAIN_b;
+$site_tel_PHONEMAIN_formatted          = $tel_prefix_formatted .' '. $site_tel_PHONEMAIN_a .'-'. $site_tel_PHONEMAIN_b;
 
-$site_tel_PHONEA_whatsapp           = $tel_prefix_whatsapp . $site_tel_PHONEA;
-$site_tel_PHONEA_whatsapp_formatted = '+'. $tel_code_country .' '. $tel_code_area_int .' '. $site_tel_PHONEA_a .' '. $site_tel_PHONEA_b;
-$site_tel_PHONEA_whatsapp_chatOpen  = 'https://wa.me/'. $site_tel_PHONEA_whatsapp .'?text=Hola,%20me%20interesa%20la%20propuesta!';
-$site_tel_PHONEA_whatsapp_chatOpen_api = 'https://api.whatsapp.com/send?phone='. $site_tel_PHONEA_whatsapp .'?text=Hola,%20me%20interesa%20la%20propuesta!';
-$site_tel_PHONEA_whatsapp_chatOpen_web = 'https://web.whatsapp.com/send?phone='. $site_tel_PHONEA_whatsapp .'?text=Hola,%20me%20interesa%20la%20propuesta!';
+$site_tel_PHONEMAIN_whatsapp           = $tel_prefix_whatsapp . $site_tel_PHONEMAIN;
+$site_tel_PHONEMAIN_whatsapp_formatted = '+'. $tel_code_country .' '. $tel_code_area_int .' '. $site_tel_PHONEMAIN_a .' '. $site_tel_PHONEMAIN_b;
+$site_tel_PHONEMAIN_whatsapp_chatOpen  = 'https://wa.me/'. $site_tel_PHONEMAIN_whatsapp .'?text=Hola,%20me%20interesa%20la%20propuesta!';
+$site_tel_PHONEMAIN_whatsapp_chatOpen_api = 'https://api.whatsapp.com/send?phone='. $site_tel_PHONEMAIN_whatsapp .'?text=Hola,%20me%20interesa%20la%20propuesta!';
+$site_tel_PHONEMAIN_whatsapp_chatOpen_web = 'https://web.whatsapp.com/send?phone='. $site_tel_PHONEMAIN_whatsapp .'?text=Hola,%20me%20interesa%20la%20propuesta!';
 
-$site_tel_PHONEA_call               = 'tel:+'. $tel_prefix_call . $site_tel_PHONEA;
-$site_tel_PHONEA_call_href          = 'href="tel:+'. $tel_prefix_call . $site_tel_PHONEA .'"';
-$site_tel_PHONEA_call_anchor        = '<a '. $site_tel_PHONEA_call_href .'>'. $site_tel_PHONEA .'</a>'; 
+$site_tel_PHONEMAIN_call               = 'tel:+'. $tel_prefix_call . $site_tel_PHONEMAIN;
+$site_tel_PHONEMAIN_call_href          = 'href="tel:+'. $tel_prefix_call . $site_tel_PHONEMAIN .'"';
+$site_tel_PHONEMAIN_call_anchor        = '<a '. $site_tel_PHONEMAIN_call_href .'>'. $site_tel_PHONEMAIN .'</a>'; 
     
     
         
