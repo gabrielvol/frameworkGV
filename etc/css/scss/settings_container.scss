@@ -680,7 +680,7 @@
         }
     }
 }
-@if $classes_container_act_TLO == "on"{
+@if $classes_container_act_A1024B1200 == "on"{
     .containerA1024B1200{    
         @include MQ1024_1200{
             max-width: $container_value_max_A1024;
