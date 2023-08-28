@@ -45,6 +45,7 @@
 
              
 /* // Container Center Negative Values -------------------------------------- */
+$container_value_half_B350:          calc(#{$container_value_B350} / 2);
 $container_value_max_half_B350:      calc(#{$container_value_max_B350} / 2);
 $container_value_half_A350:          calc(#{$container_value_A350} / 2);
 $container_value_half_B500:          calc(#{$container_value_B500} / 2);
@@ -60,6 +61,7 @@ $container_value_max_half_A1400:     calc(#{$container_value_max_A1400} / 2);
 $container_value_max_half_A1500:     calc(#{$container_value_max_A1500} / 2);
 $container_value_max_half_A1600:     calc(#{$container_value_max_A1600} / 2);
 
+$container_value_half_negative_B350:        calc(-1 * #{$container_value_half_B350});
 $container_value_max_half_negative_B350:    calc(-1 * #{$container_value_max_half_B350});
 $container_value_half_negative_A350:        calc(-1 * #{$container_value_half_A350});
 $container_value_half_negative_B500:        calc(-1 * #{$container_value_half_B500});

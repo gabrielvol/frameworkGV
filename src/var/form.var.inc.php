@@ -51,10 +51,8 @@ if($dir_env == '' || $dir_env == '/stage'):
     $form_recipient__formMain           = $site_email_EMAILA;
     $form_recipient_CC__formMain        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
     $form_recipient_BCC__formMain       = 'tampas@gmail.com'; // TODO
-endif;
-
-///-- No es Produccion / No es Stage
-if($dir_env != '' || $dir_env !== '/stage'):
+else:
+    
     $form_recipient__formMain           = 'tampas@gmail.com';
     $form_recipient_CC__formMain        = '';
     $form_recipient_BCC__formMain       = '';
@@ -70,10 +68,8 @@ if($dir_env == '' || $dir_env == '/stage'):
     $form_recipient__formContacto           = $site_email_EMAILA;
     $form_recipient_CC__formContacto        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
     $form_recipient_BCC__formContacto       = 'tampas@gmail.com'; // TODO
-endif;
-
-///-- No es Produccion / No es Stage
-if($dir_env != '' || $dir_env !== '/stage'):
+else:
+    
     $form_recipient__formContacto           = 'tampas@gmail.com';
     $form_recipient_CC__formContacto        = '';
     $form_recipient_BCC__formContacto       = '';
@@ -89,10 +85,8 @@ if($dir_env == '' || $dir_env == '/stage'):
     $form_recipient__formFooter           = $site_email_EMAILA;
     $form_recipient_CC__formFooter        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
     $form_recipient_BCC__formFooter       = 'tampas@gmail.com'; // TODO
-endif;
-
-///-- No es Produccion / No es Stage
-if($dir_env != '' || $dir_env !== '/stage'):
+else:
+    
     $form_recipient__formFooter           = 'tampas@gmail.com';
     $form_recipient_CC__formFooter        = '';
     $form_recipient_BCC__formFooter       = '';

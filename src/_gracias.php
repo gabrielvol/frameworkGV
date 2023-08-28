@@ -6,7 +6,7 @@
     $page_int               = 1; 
     $nav_pageCurrent        = 'page_gracias'; 
     $nav_pageCurrent_int    = 'page_gracias_home';
-// Si se activa el id hay que asignar los títulos en `/var/PAGEINT.var.inc.php`
+// Si se activa el id hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php`
 //    $nav_pageCurrent_id     = 'page_gracias_id';
     
     $has_scrolling          = 1;    
@@ -14,7 +14,7 @@
 //    $lang_GB                = 1; 
 
 // Si se activa el id:
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/PAGEINT.var.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.PAGEINT.var.inc.php');
     
     $page_main_classes      = '';
     
@@ -37,7 +37,7 @@
     ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
         <h1 class="txAlignCenter"><?php echo $page_title_home_gracias; ?></h1>
-        <p class="txAlignCenter"><?php echo $form_status_ok_globalB ?></p>
+        <p class="txAlignCenter"><?php echo $form_status_ok_globalB; ?></p>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/footer.inc.php'); ?>
 </body>

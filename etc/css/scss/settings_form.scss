@@ -169,10 +169,12 @@ form{
     input[type="time"],
     input[type="date"],
     input[type="month"],
+    input[type="week"],
     select,
     textarea,
     input[type="text"]:-webkit-autofill,
     input[type="email"]:-webkit-autofill,
+    input[type="password"]:-webkit-autofill,
     input[type="search"]:-webkit-autofill,
     input[type="tel"]:-webkit-autofill,
     input[type="url"]:-webkit-autofill,
@@ -180,8 +182,11 @@ form{
     input[type="time"]:-webkit-autofill,
     input[type="date"]:-webkit-autofill,
     input[type="month"]:-webkit-autofill,
+    input[type="week"]:-webkit-autofill,
+
     input[type="text"]:-webkit-autofill:hover,
     input[type="email"]:-webkit-autofill:hover,
+    input[type="password"]:-webkit-autofill:hover,
     input[type="search"]:-webkit-autofill:hover,
     input[type="tel"]:-webkit-autofill:hover,
     input[type="url"]:-webkit-autofill:hover,
@@ -189,8 +194,41 @@ form{
     input[type="time"]:-webkit-autofill:hover,
     input[type="date"]:-webkit-autofill:hover,
     input[type="month"]:-webkit-autofill:hover,
+    input[type="week"]:-webkit-autofill:hover,
+
+    input[type="time"]:-webkit-autofill::-moz-selection,
+    input[type="date"]:-webkit-autofill::-moz-selection,
+    input[type="month"]:-webkit-autofill::-moz-selection,
+    input[type="week"]:-webkit-autofill::-moz-selection,
+
+    input[type="time"]:-webkit-autofill::selection,
+    input[type="date"]:-webkit-autofill::selection,
+    input[type="month"]:-webkit-autofill::selection,
+    input[type="week"]:-webkit-autofill::selection,
+
+    input[type="time"]:-webkit-autofill::-moz-placeholder,
+    input[type="date"]:-webkit-autofill::-moz-placeholder,
+    input[type="month"]:-webkit-autofill::-moz-placeholder,
+    input[type="week"]:-webkit-autofill::-moz-placeholder,
+
+    input[type="time"]:-webkit-autofill::input-placeholder,
+    input[type="date"]:-webkit-autofill::input-placeholder,
+    input[type="month"]:-webkit-autofill::input-placeholder,
+    input[type="week"]:-webkit-autofill::input-placeholder,
+
+    input[type="time"]:-webkit-autofill::-webkit-input-placeholder,
+    input[type="date"]:-webkit-autofill::-webkit-input-placeholder,
+    input[type="month"]:-webkit-autofill::-webkit-input-placeholder,
+    input[type="week"]:-webkit-autofill::-webkit-input-placeholder,
+
+    input[type="time"]:-webkit-autofill:-ms-input-placeholder,
+    input[type="date"]:-webkit-autofill:-ms-input-placeholder,
+    input[type="month"]:-webkit-autofill:-ms-input-placeholder,
+    input[type="week"]:-webkit-autofill:-ms-input-placeholder,
+
     input[type="text"]:-webkit-autofill:focus,
     input[type="email"]:-webkit-autofill:focus,
+    input[type="password"]:-webkit-autofill:focus,
     input[type="search"]:-webkit-autofill:focus,
     input[type="tel"]:-webkit-autofill:focus,
     input[type="url"]:-webkit-autofill:focus,
@@ -198,12 +236,29 @@ form{
     input[type="time"]:-webkit-autofill:focus,
     input[type="date"]:-webkit-autofill:focus,
     input[type="month"]:-webkit-autofill:focus,
+    input[type="week"]:-webkit-autofill:focus,
+
+    input[type="text"]:-webkit-autofill:focus-visible,
+    input[type="email"]:-webkit-autofill:focus-visible,
+    input[type="password"]:-webkit-autofill:focus-visible,
+    input[type="search"]:-webkit-autofill:focus-visible,
+    input[type="tel"]:-webkit-autofill:focus-visible,
+    input[type="url"]:-webkit-autofill:focus-visible,
+    input[type="number"]:-webkit-autofill:focus-visible,
+    input[type="time"]:-webkit-autofill:focus-visible,
+    input[type="date"]:-webkit-autofill:focus-visible,
+    input[type="month"]:-webkit-autofill:focus-visible,
+    input[type="week"]:-webkit-autofill:focus-visible,
+
     textarea:-webkit-autofill,
     textarea:-webkit-autofill:hover,
     textarea:-webkit-autofill:focus,
+    textarea:-webkit-autofill:focus-visible,
+
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
-    select:-webkit-autofill:focus{
+    select:-webkit-autofill:focus,
+    select:-webkit-autofill:focus-visible{
         -webkit-text-fill-color: $form_input_ftColour_autofill;
         -webkit-box-shadow: 0 0 0 0 #fff inset;
     }

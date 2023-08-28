@@ -88,7 +88,7 @@ nav{
             display: $none;
         }
         
-        @if $nav_double_AT_act == "on"{
+        @if $nav_double_A768_act == "on"{
             .navs_container_AT > ul{
                 background-color: $nav_ul_bgColour_AT; 
 

@@ -6,7 +6,7 @@
     $page_int               = 1;    
     $nav_pageCurrent        = 'page_PAGEINT';
     $nav_pageCurrent_int    = 'page_PAGEINT_home';
-// Si se activa el id hay que asignar los títulos en `/var/PAGEINT.var.inc.php`
+// Si se activa el id hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php`
 //    $nav_pageCurrent_id     = 'page_PAGEINT_ID';
     
     $page_construccion      = 1;
@@ -16,7 +16,7 @@
 //    $lang_GB                = 1;
 
 // Si se activa el id:
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/PAGEINT.var.inc.php');
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.PAGEINT.var.inc.php');
     
     $page_main_classes      = '';
        

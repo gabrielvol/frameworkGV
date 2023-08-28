@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   PAGEINT Variables [/src/var/_PAGEINT.var.inc.php]
+   PAGEINT Variables [/src/var/page.PAGEINT.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
