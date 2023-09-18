@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Index / Inicio Variables [/src/var/index.var.inc.php]
+   Index / Inicio Variables [/src/var/page.index.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */

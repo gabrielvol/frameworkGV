@@ -68,8 +68,10 @@ if($l == 'en_GB'){
     $page_title_home_gracias    = 'Thank You';
     
 /*___ Nav Main items ____________________*/
-//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
     $nav_main_item_home         = 'Home';
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
     $nav_main_item_contacto     = $page_title_home_contacto;    
 //    $nav_main_item_PAGEID       = 'TituloEnIngles_id';
     
@@ -88,8 +90,10 @@ if($l == 'en_GB'){
     $page_title_home_gracias    = 'sinTraduccion';
     
 /*___ Nav Main items ____________________*/
-//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
     $nav_main_item_home         = 'Home';
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
     $nav_main_item_contacto     = $page_title_home_contacto;    
 //    $nav_main_item_PAGEID       = 'sinTraduccion_id';
     
@@ -108,8 +112,10 @@ if($l == 'en_GB'){
     $page_title_home_gracias    = 'Gracias';
     
 /*___ Nav Main items ____________________*/
-//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
     $nav_main_item_home         = 'Home';
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
     $nav_main_item_contacto     = $page_title_home_contacto;    
 //    $nav_main_item_PAGEID       = 'TituloEnCastellano_id';
     
