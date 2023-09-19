@@ -6,23 +6,23 @@
     $nav_pageCurrent        = 'page_legal';
     $nav_pageCurrent_int    = 'page_copyright';
     
+    $page_construccion      = 0;
+    $page_redirect          = 0;
+    
+    $has_form               = 0;
+    $has_lightbox           = 0; // REF [26]
+    $has_pop_video          = 0;
+    $has_scrolling          = 1;
+    $has_slider             = 0;
 //    $has-CUSTOMVARIABLE     = 1;
+//    $lang_GB                = 1;
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
     $page_url_full          = $url_copyright_full;
     
-    $page_title             = "Licencia | " . $site_name_title;
-//    $page_title_DE          = "SinTraduccion | " . $site_name_title_DE;
-//    $page_title_GB          = "Licence | " . $site_name_title_GB;
-//    $page_title_PT          = "SinTraduccion | " . $site_name_title_PT;
-//    $page_title_XX          = "SinTraduccion | " . $site_name_title_XX;
-    
+    $page_title             = $page_title_home_copyright . " | " . $site_name_title;
     $page_desc              = $page_desc_global;
-//    $page_desc_DE           = $page_desc_global_DE;
-//    $page_desc_GB           = $page_desc_global_GB;
-//    $page_desc_PT           = $page_desc_global_PT;
-//    $page_desc_XX           = $page_desc_global_XX;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');

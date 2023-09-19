@@ -48,7 +48,7 @@
 
 
 
-/* // Model ----------------------------------------------------------------- */
+/* // Model -----------------------------------------------------------------
     $class_ini_SECTION      = '';
 
 if($page_int                == 1):
@@ -62,7 +62,7 @@ if(isset($nav_pageCurrent_id)):
     $class_ini_SECTION      .= $nav_pageCurrent_id . ' '; endif; 
     
 if($nav_pageCurrent         == 'page_aaa'):
-    $class_ini_SECTION      .= 'class_aaa '; endif;  
+    $class_ini_SECTION      .= 'class_aaa '; endif; 
     
 if($has_CUSTOMVARIABLE      == 1):
     $class_ini_SECTION      .= 'class_aaa ';
@@ -74,7 +74,7 @@ else:
     
 //-----
 $classes_SECTION            = 'class="' . $class_ini_SECTION . $class_end_SECTION . '"';
-
+ */
 
 /* // Header Classes -------------------------------------------------------- */
     $class_ini_header       = 'navDrawer_closed ';
@@ -97,6 +97,9 @@ if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     
 //----- Finals
     $class_end_header       = '';  
+
+if($page_redirect           == 1):
+    $class_end_header      .= 'header_redirect '; endif;  
     
 //-----
 $classes_header             = 'class="'. $class_ini_header . $class_end_header .'"';
@@ -123,6 +126,9 @@ if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     
 //----- Finals
     $class_end_footer       = '';  
+
+if($page_redirect           == 1):
+    $class_end_footer       .= 'footer_redirect '; endif;  
     
 //-----
 $classes_footer             = 'class="'. $class_ini_footer . $class_end_footer .'"';
@@ -147,6 +153,9 @@ if(isset($nav_pageCurrent_id)):
 
 if($page_construccion == 1):
     $class_end_main         .= 'page_construccion '; endif; 
+
+if($page_redirect == 1):
+    $class_end_main         .= 'page_redirect '; endif; 
     
 //-----
 $classes_main               = 'class="'. $class_ini_main . $page_main_classes . $class_end_main .'"';

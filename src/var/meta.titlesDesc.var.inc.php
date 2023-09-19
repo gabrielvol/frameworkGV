@@ -64,15 +64,18 @@ if($l == 'en_GB'){
     $site_name_tag          = 'SiteNameTag';
 
 //    $page_title_home_PAGEINT    = 'TituloEnIngles';
+//    $page_title_home_PAGEINT    = 'TituloEnIngles';
     $page_title_home_contacto   = 'Contact';    
     $page_title_home_gracias    = 'Thank You';
+    $page_title_home_copyright  = 'License';    
+//    $page_title_PAGEINT_redirect  = 'redirect';
     
 /*___ Nav Main items ____________________*/
     $nav_main_item_home         = 'Home';
+    $nav_main_item_contacto     = $page_title_home_contacto; 
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-    $nav_main_item_contacto     = $page_title_home_contacto;    
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
 //    $nav_main_item_PAGEID       = 'TituloEnIngles_id';
     
 /*___ Descripcion global ________________*/ 
@@ -85,16 +88,19 @@ if($l == 'en_GB'){
     $site_name_title         = 'SiteNameTitle';
     $site_name_tag           = 'SiteNameTag';
 
-//    $page_title_home_PAGEINT    = 'sinTraduccion';  
+//    $page_title_home_PAGEINT    = 'sinTraduccion';   
+//    $page_title_home_PAGEINT    = 'sinTraduccion';   
     $page_title_home_contacto   = 'sinTraduccion';     
     $page_title_home_gracias    = 'sinTraduccion';
+    $page_title_home_copyright  = 'sinTraduccion';   
+//    $page_title_PAGEINT_redirect  = 'redirect';
     
 /*___ Nav Main items ____________________*/
     $nav_main_item_home         = 'Home';
+    $nav_main_item_contacto     = $page_title_home_contacto; 
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-    $nav_main_item_contacto     = $page_title_home_contacto;    
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
 //    $nav_main_item_PAGEID       = 'sinTraduccion_id';
     
 /*___ Descripcion global ________________*/ 
@@ -108,15 +114,18 @@ if($l == 'en_GB'){
     $site_name_tag          = 'SiteNameTag';
 
 //    $page_title_home_PAGEINT    = 'TituloEnCastellano';
+//    $page_title_home_PAGEINT    = 'TituloEnCastellano';
     $page_title_home_contacto   = 'Contacto';    
     $page_title_home_gracias    = 'Gracias';
+    $page_title_home_copyright  = 'Licencia';    
+//    $page_title_PAGEINT_redirect  = 'redirect';
     
 /*___ Nav Main items ____________________*/
     $nav_main_item_home         = 'Home';
+    $nav_main_item_contacto     = $page_title_home_contacto; 
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-    $nav_main_item_contacto     = $page_title_home_contacto;    
+//    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
 //    $nav_main_item_PAGEID       = 'TituloEnCastellano_id';
     
 /*___ Descripcion global ________________*/ 
