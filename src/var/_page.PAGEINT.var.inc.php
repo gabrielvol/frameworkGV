@@ -50,7 +50,7 @@
 // $pageRecetas_title_huevoFrito    = 'Cómo hacer un exquisito huevo frito';
 // $page_heading_id                 = '';
 
-if($l == 'en_GB'){
+if($gettext_idioma == 'en_GB'){
     $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
 //    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
 //    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
@@ -64,7 +64,7 @@ if($l == 'en_GB'){
 //      $page_heading_id      = $PAGEINT_title_PAGEID; }
 
 
-} elseif($l == 'xx_XX'){
+} elseif($gettext_idioma == 'xx_XX'){
     $PAGEINT_title_PAGEID    = 'sinTraduccion';
 //    $PAGEINT_title_PAGEID    = 'sinTraduccion';
 //    $PAGEINT_title_PAGEID    = 'sinTraduccion';

@@ -51,20 +51,17 @@
 
 
 
-$l = $_GET['l'];   
+$l = $_GET['l'];  
 
-if($gettext_idioma == 'pt') {
+if($l == 'pt') {
     $gettext_idioma     = 'pt_BR';
     $gettext_idioma_url = '?l=pt';
     
 } elseif($l == 'en'){
     $gettext_idioma     = 'en_GB';
+//    $gettext_idioma     = 'en_US';
     $gettext_idioma_url = '?l=en';
     
-} elseif($l == 'en'){
-    $gettext_idioma     = 'en_US';
-    $gettext_idioma_url = '?l=en';
-
 } elseif($l == 'de') {
     $gettext_idioma     = 'de_DE';
     $gettext_idioma_url = '?l=de';
@@ -79,6 +76,8 @@ if($gettext_idioma == 'pt') {
 
 } else {
     $gettext_idioma     = 'es_AR';
+//    $gettext_idioma     = 'es_ES';
+//    $gettext_idioma     = 'es_UY';
     $gettext_idioma_url = '?l=es';
 }
 

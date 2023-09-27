@@ -47,13 +47,13 @@
 
 
 /* // Address Principal // REF [13] ----------------------------------------- */
-if($l == 'en_GB'){
+if($gettext_idioma == 'en_GB'){
    $site_address_ADDRESSA_a   = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
    $site_address_ADDRESSA_b   = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
    $site_address_ADDRESSA     = $site_address_ADDRESSA_a .' '. $site_address_ADDRESSA_b;  
 
 
-} elseif($l == 'xx_XX'){
+} elseif($gettext_idioma == 'xx_XX'){
 //   $site_address_ADDRESSA_a               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';     
 //   $site_address_ADDRESSA_b               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';
 //   $site_address_ADDRESSA                 = $site_address_ADDRESSA_a .' '. $site_address_ADDRESSA_b; 

@@ -1,4 +1,4 @@
-<a href="#main" id="go-main-content"><?php if($l == 'en'): ?>
+<a href="#main" id="go-main-content"><?php if($gettext_idioma == 'en_GB'): ?>
         Go to the main content of the site.
         <?php else: ?>
         Ir al contenido principal de esta p&aacute;gina.

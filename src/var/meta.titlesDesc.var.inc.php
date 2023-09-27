@@ -57,7 +57,7 @@
 
 // La variable $page_title_home_PAGEINT tambien se usa para el item en Nav Main
 
-if($l == 'en_GB'){    
+if($gettext_idioma == 'en_GB'){    
     $site_name_full         = 'SiteNameFull';
     $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
@@ -82,7 +82,7 @@ if($l == 'en_GB'){
     $page_desc_global       = '';
 
 
-} elseif($l == 'xx_XX'){
+} elseif($gettext_idioma == 'xx_XX'){
     $site_name_full          = 'SiteNameFull';
     $site_name_short         = 'SiteNameShort';
     $site_name_title         = 'SiteNameTitle';

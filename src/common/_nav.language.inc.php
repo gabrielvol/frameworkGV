@@ -32,14 +32,14 @@
     $gettext_languageName_ZH    = "sinTraduccion";
 ?>
 <nav class="nav_language">
-    <ul class="nav_language_ul unstyled displayFlex <?php if($l == 'de_DE') {
+    <ul class="nav_language_ul unstyled displayFlex <?php if($gettext_idioma == 'de_DE') {
             // REF [33]
             echo ' lang_DE'; }
             
-        elseif($l == 'en_GB') {
+        elseif($gettext_idioma == 'en_GB') {
             echo ' lang_GB'; }
             
-        elseif($l == 'pt_BR') {
+        elseif($gettext_idioma == 'pt_BR') {
             echo ' lang_BR'; }
             
         else { echo ' lang_AR'; } ?>">
