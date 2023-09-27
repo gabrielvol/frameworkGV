@@ -420,6 +420,7 @@
     .global_MQ_A600,
     .global_MQ_A800,
     .global_MQ_A1000, 
+    .global_MQ_A1300, 
     .global_MQ_A1500,    
     .global_MQ_A2000,    
     .global_MQ_A2500,    
@@ -441,6 +442,7 @@
     .global_MQ_B600,
     .global_MQ_A800,
     .global_MQ_A1000,
+    .global_MQ_A1300,  
     .global_MQ_A1500,    
     .global_MQ_A2000,    
     .global_MQ_A2500,    
@@ -934,6 +936,7 @@
     .global_MQ_B600,
     .global_MQ_A600,
     .global_MQ_A1000,   
+    .global_MQ_A1300,  
     .global_MQ_A1500,   
     .global_MQ_A2000,   
     .global_MQ_A2500,   
@@ -944,7 +947,7 @@
     
 /* // After MQ1000 Classes -------------------------------------------------- */
 @include afterMQ1000{
-    .global_MQ_A1500{
+    .global_MQ_A1000{
         display: $block;
         
         &.displayFlex{
@@ -954,8 +957,9 @@
     
     .global_MQ_B600,
     .global_MQ_A600,   
-    .global_MQ_A800,   
-    .global_MQ_A1000,  
+    .global_MQ_A800,  
+    .global_MQ_A1300, 
+    .global_MQ_A1500,    
     .global_MQ_A2000,   
     .global_MQ_A2500,   
     .global_MQ_A3000{
@@ -1676,10 +1680,32 @@
         .flexHorizontalAD{list-style: $none}
     }
 }
+    
+/* // After MQ1300 Classes -------------------------------------------------- */
+@include afterMQ1300{
+    .global_MQ_A1300{
+        display: $block;
+        
+        &.displayFlex{
+            display: flex!important;
+        }
+    }
+    
+    .global_MQ_B600,
+    .global_MQ_A600,   
+    .global_MQ_A800,  
+    .global_MQ_A1000, 
+    .global_MQ_A1500,    
+    .global_MQ_A2000,   
+    .global_MQ_A2500,   
+    .global_MQ_A3000{
+        display: $none;
+    }
+}
 
 /* // After MQ1500 Classes -------------------------------------------------- */
 @include afterMQ1500{
-    .global_MQ_A2000{
+    .global_MQ_A1500{
         display: $block;
         
         &.displayFlex{
@@ -1691,7 +1717,8 @@
     .global_MQ_A600,   
     .global_MQ_A800,  
     .global_MQ_A1000,  
-    .global_MQ_A1500,  
+    .global_MQ_A1300,  
+    .global_MQ_A2000,  
     .global_MQ_A2500,  
     .global_MQ_A3000{
         display: $none;
@@ -1700,6 +1727,28 @@
 
 /* // After MQ2000 Classes -------------------------------------------------- */
 @include afterMQ2000{
+    .global_MQ_A2000{
+        display: $block;
+        
+        &.displayFlex{
+            display: flex!important;
+        }
+    }
+    
+    .global_MQ_B600,
+    .global_MQ_A600,   
+    .global_MQ_A800,  
+    .global_MQ_A1000, 
+    .global_MQ_A1300,  
+    .global_MQ_A1500,  
+    .global_MQ_A2500,  
+    .global_MQ_A3000{
+        display: $none;
+    }
+}
+
+/* // After MQ2500 Classes -------------------------------------------------- */
+@include afterMQ2500{
     .global_MQ_A2500{
         display: $block;
         
@@ -1712,6 +1761,7 @@
     .global_MQ_A600,   
     .global_MQ_A800,  
     .global_MQ_A1000, 
+    .global_MQ_A1300,  
     .global_MQ_A1500,  
     .global_MQ_A2000,  
     .global_MQ_A3000{
@@ -1733,6 +1783,7 @@
     .global_MQ_A600,   
     .global_MQ_A800,  
     .global_MQ_A1000, 
+    .global_MQ_A1300, 
     .global_MQ_A1500,  
     .global_MQ_A2000,  
     .global_MQ_A2500{
