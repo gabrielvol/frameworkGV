@@ -60,7 +60,11 @@ $nav_item_back_TLI_ftColour:            $white!important;
 
 
 /*___ AT ________________________________*/
-$nav_item_ftColour_AT:                      $ftColour_main_global; // REF [12] Si es $white hay un activador en `[/etc/css/custom/act/nav_main_act.scss]`
+$nav_item_ftColour_AT:                      $ftColour_main_global;
+// REF [12]
+// $white o $black tienen un activador en `[/etc/css/custom/act/nav_main_act.scss]` 
+// Agrega diseño en las pseudo-clases `:focus` y `:hover` A1024
+// Solamente para el primer nivel del nav
 $nav_item_ftColour_hover:                   $nav_item_ftColour_AT;
 $nav_item_subNav_ftColour_AT:               $nav_item_ftColour_AT;
 $nav_item_subNav_ftColour_hover:            $nav_item_subNav_ftColour_AT;

@@ -441,18 +441,6 @@
             }
         }
         
-        .nav_item_current{
-            a,
-            .nav_TLI{
-                &:focus, &:hover{
-                    @if $nav_text_white_act == "on"{
-                        // REF [12]
-                        text-shadow: 0 0 0 transparent;
-                    }
-                }
-            }
-        }
-        
         @if $nav_topper_act == "on"{
             &.nav_topper{
                 @if $nav_hasSub_level1_act == "on"{
