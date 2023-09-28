@@ -3,13 +3,13 @@
    ========================================================================== */
 .slick,
 .slick_with_nav{
-    background-color: $slider_bgColour_global;
+    background-color: $slider_global_bgColour;
     box-sizing: border-box;
     
     img{
         display: block;
         width: 100%;
-        background-color: $slider_img_bgColour_global;
+        background-color: $slider_global_img_bgColour;
     }
     
     &,
@@ -94,7 +94,7 @@
 
 /* // Slider Main ----------------------------------------------------------- */
 .slider_main{
-    background-color: $slider_bgColour_main;
+    background-color: $slider_main_bgColour;
     
     &,
     .slick-list,
