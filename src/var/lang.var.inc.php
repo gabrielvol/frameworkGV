@@ -54,6 +54,4 @@ $site_lang_code_country     = 'AR'; // REF [27]
 $site_lang_locale           = $site_lang_code . '_' . $site_lang_code_country;
 $site_lang_HTML_attr        = $site_lang_code . '-' . $site_lang_code_country; // REF [28]
 
-$l = $site_lang_code; // REF [28]
-
 ?>
