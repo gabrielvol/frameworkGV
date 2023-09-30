@@ -10,7 +10,7 @@
 <?php /* Alternate StyleSheets
 <link href="<?php echo $dir_env; ?>/css/styles_highContrast.css" rel="alternate stylesheet" title="High Contrast">
 */ ?>
-<?php if($has_form == 1): /* // REF [23]
+<?php if($has_form == 1): /* // REF [23] // REF [36]
 <link href="<?php echo $dir_env; ?>/css/datepicker.css" rel="stylesheet">
 */ ?>
 <?php endif; if($nav_pageCurrent == 'page_index'): /*

@@ -53,7 +53,7 @@ $nav_pageCurrent_int    = '';
     
 $page_construccion      = 0;
 
-$has_form               = 0;
+$has_form               = 0; // REF [36]
 $has_lightbox           = 0; // REF [26]
 $has_pop_video          = 0;
 $has_scrolling          = 0;

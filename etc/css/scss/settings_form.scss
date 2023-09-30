@@ -56,15 +56,15 @@ fieldset, label, input, select, textarea, button,
 
 fieldset, label, button,
 .form_validation_div, .form_validation_span, .form_status, .form_label_name{
-    @include beforeMQ500{
+    @include beforeMQ350{
         .mobileForm &{
-            font-size: $form_ftSize_B500;
+            font-size: $form_ftSize_B350;
         }
     }
     
-    @include MQ500_768{
+    @include afterMQ350{
         .mobileForm &{
-            font-size: $form_ftSize_A500;
+            font-size: $form_ftSize_A350;
         }
     }
     
@@ -285,10 +285,16 @@ form{
     
     label{
         @include transition(1s);
+    }
+    
+    label,
+    .form_label_name{
         color: $form_label_ftColour;
-        font-weight: 400!important;
+        font-weight: 400;
 
-        &:focus, &:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover{
             color: $form_label_ftColour_hover;
         }
     }
@@ -405,9 +411,15 @@ form{
                 font-weight: $form_label_ftWeight;
             }
 
-            @include beforeMQ768{
+            @include beforeMQ350{
                 .mobileForm &{
-                    @include equalHeightAndLineHeight($form_label_height_BT);
+                    @include equalHeightAndLineHeight($form_label_height_B350);
+                }
+            }
+
+            @include afterMQ350{
+                .mobileForm &{
+                    @include equalHeightAndLineHeight($form_label_height_A350);
                 }
             }
 
@@ -482,7 +494,7 @@ form{
             @include clearfix;
         }
     
-        fieldset span, input, select{
+        input, select{
             @include beforeMQ768{
                 .mobileForm &{
                     @include equalHeightAndLineHeight($form_input_height_BT);
@@ -505,10 +517,16 @@ form{
         }
         
         .form_label_name{
-            @include beforeMQ768{
+            @include beforeMQ350{
                 .mobileForm &{
-                    @include equalHeightAndLineHeight($form_label_height_BT);
-                }        
+                    @include equalHeightAndLineHeight($form_label_height_B350);
+                }
+            }
+
+            @include afterMQ350{
+                .mobileForm &{
+                    @include equalHeightAndLineHeight($form_label_height_A350);
+                }
             }
 
             @include MQ768_1024{

@@ -60,8 +60,9 @@ $form_label_width_TO:      $form_width_TO;
 $form_label_width_A1024:   $form_width_A1024;
 $form_label_width_A1200:   $form_width_A1200;
 
-$form_label_height_BT:     30px;
-$form_label_height_TO:     $form_label_height_BT;
+$form_label_height_B350:   25px;
+$form_label_height_A350:   30px;
+$form_label_height_TO:     $form_label_height_A350;
 $form_label_height_A1024:  25px;
 $form_label_height_A1200:  $form_label_height_A1024;
 
@@ -89,10 +90,16 @@ $form_input_radio_height_BT:  35px;
 $form_input_radio_height_TO:  35px;
 
 
+/*___ Checkbox Input ____________________*/
+$form_input_checkbox_height_BT:  20px;
+$form_input_checkbox_height_TO:  25px;
+
+
 /* // Form Font Sizes ------------------------------------------------------- */
 // fieldet, label, button
 // .form_validation_div, .form_status, .form_label_name, .form_validation_span
-$form_ftSize_B500:    $ftSize_paragraph_B500;
+$form_ftSize_B350:    0.75rem;
+$form_ftSize_A350:    $ftSize_paragraph_B500;
 $form_ftSize_A500:    $ftSize_paragraph_A500;
 $form_ftSize_AT:      $ftSize_paragraph_AT;
 $form_ftSize_A1024:   $ftSize_paragraph_A1024;
