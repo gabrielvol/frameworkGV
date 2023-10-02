@@ -55,12 +55,28 @@ $slider_main_bgColour:              $slider_global_bgColour;
 
 
 /* // Slider Arrows --------------------------------------------------------- */
-$slider_arrows_width_BT:            30px;
-$slider_arrows_height_BT:           $slider_arrows_width_BT;
+$slider_arrows_width_A500:          40px;
+$slider_arrows_height_A500:         $slider_arrows_width_A500;
+$slider_arrows_height_half_A500:    calc(#{$slider_arrows_height_A500} / 2);
+
+$slider_arrows_width_A550:          45px;
+$slider_arrows_height_A550:         $slider_arrows_width_A550;
+$slider_arrows_height_half_A550:    calc(#{$slider_arrows_height_A550} / 2);
+
+$slider_arrows_width_A600:          50px;
+$slider_arrows_height_A600:         $slider_arrows_width_A600;
+$slider_arrows_height_half_A600:    calc(#{$slider_arrows_height_A600} / 2);
+
+$slider_arrows_width_A650:          55px;
+$slider_arrows_height_A650:         $slider_arrows_width_A650;
+$slider_arrows_height_half_A650:    calc(#{$slider_arrows_height_A650} / 2);
+
+$slider_arrows_width_B768:          30px;
+$slider_arrows_height_BT:           $slider_arrows_width_B768;
 $slider_arrows_height_half_BT:      calc(#{$slider_arrows_height_BT} / 2);
 
-$slider_arrows_width_AT:            30px;
-$slider_arrows_height_AT:           $slider_arrows_width_AT;
+$slider_arrows_width_A768:          30px;
+$slider_arrows_height_AT:           $slider_arrows_width_A768;
 $slider_arrows_height_half_AT:      calc(#{$slider_arrows_height_AT} / 2);
 
 $slider_arrows_width_A1024:           50px;
@@ -81,7 +97,7 @@ $carousel_arrows_width_A500:         $carousel_arrows_width_A350;
 $carousel_arrows_height_A500:        $carousel_arrows_width_A500;
 $carousel_arrows_height_half_A500:   calc(#{$carousel_arrows_height_A500} / 2);
 
-$carousel_arrows_width_AT:          $slider_arrows_width_AT;
+$carousel_arrows_width_AT:          $slider_arrows_width_A768;
 $carousel_arrows_height_AT:         $carousel_arrows_width_AT;
 $carousel_arrows_height_half_AT:    calc(#{$carousel_arrows_height_AT} / 2);
 

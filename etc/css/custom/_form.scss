@@ -410,12 +410,28 @@ form{
                 .tabletForm &{
                     .input_checkbox{
                         width: $form_input_checkbox_height_TO!important;
+                        height: $form_input_checkbox_height_TO;
                     }
 
-                    &,
-                    .input_checkbox,
                     .form_label_name{
-                        @include equalHeightAndLineHeight($form_input_checkbox_height_TO);
+                        clear: $none;
+                        width: calc(100% - calc(#{$form_input_checkbox_height_TO} + 10px))!important;
+                        line-height: $form_input_checkbox_height_TO; 
+                    }
+                }
+            }
+
+            @include afterMQ1024{
+                .tabletForm &{
+                    .input_checkbox{
+                        width: $form_input_checkbox_height_A1024!important;
+                        height: $form_input_checkbox_height_A1024;
+                    }
+
+                    .form_label_name{
+                        clear: $none;
+                        width: calc(100% - calc(#{$form_input_checkbox_height_A1024} + 10px))!important;
+                        line-height: $form_input_checkbox_height_A1024; 
                     }
                 }
             }

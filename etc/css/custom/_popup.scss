@@ -113,7 +113,8 @@
         
     @include beforeMQ500{
         width: $pop_warning_width_B500;
-        margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);            
+        max-width: $pop_warning_width_max_B500;
+        margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);              
     }
 
     @include afterMQ500{

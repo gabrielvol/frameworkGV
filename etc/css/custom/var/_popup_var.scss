@@ -51,13 +51,15 @@ $modal_bgColour_nav:        $black_rgba_70;
 
 
 /* // Popup Sizes ----------------------------------------------------------- */
-$pop_regular_width_B500:      300px;
-$pop_regular_width_A500:     60%;
-$pop_regular_width_AT:      550px;
+$pop_regular_width_B500:        90%;
+$pop_regular_width_max_B500:    300px;
+$pop_regular_width_A500:        60%;
+$pop_regular_width_AT:          550px;
 
-$pop_warning_width_B500:      300px;
-$pop_warning_width_A500:     60%;
-$pop_warning_width_A600:    550px;
+$pop_warning_width_B500:        $pop_regular_width_B500;
+$pop_warning_width_max_B500:    $pop_regular_width_max_B500;
+$pop_warning_width_A500:        $pop_regular_width_A500;
+$pop_warning_width_A600:        $pop_regular_width_AT;
 
 $pop_form_width_B500:         320px;
 $pop_form_width_A500:        490px;

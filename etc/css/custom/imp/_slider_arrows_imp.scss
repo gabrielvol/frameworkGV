@@ -85,10 +85,48 @@
         }
     }
     
+    /*    
+    @include afterMQ500{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A500;
+            height: $slider_arrows_height_A500;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A500});
+        }
+    }
+    
+    @include afterMQ550{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A550;
+            height: $slider_arrows_height_A550;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A550});
+        }
+    }
+    
+    @include afterMQ600{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A600;
+            height: $slider_arrows_height_A600;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A600});
+        }
+    }
+    
+    @include afterMQ650{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A650;
+            height: $slider_arrows_height_A650;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A650});
+        }
+    }
+    */
+    
     @include beforeMQ768{
         .slickPrev,
         .slickNext{
-            width: $slider_arrows_width_BT;
+            width: $slider_arrows_width_B768;
             height: $slider_arrows_height_BT;
             margin-top: calc(-1 * #{$slider_arrows_height_half_BT});   
         }
@@ -98,7 +136,7 @@
         .slickPrev, 
         .slickNext{
             @include opacityCustomHover();
-            width: $slider_arrows_width_AT;
+            width: $slider_arrows_width_A768;
             height: $slider_arrows_height_AT;
             margin-top: calc(-1 * #{$slider_arrows_height_half_AT});
         }
