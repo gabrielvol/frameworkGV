@@ -209,7 +209,9 @@
         
         .footer_address{
             a{
-                &:focus, &:hover{
+                &:focus,
+                &:focus-visible,
+                &:hover{
                     text-decoration: underline;
                 }
             }
