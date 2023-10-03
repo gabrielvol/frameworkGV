@@ -99,6 +99,9 @@
         width: 90%;
         max-width: $container_value_max_A768;
     }
+    @include afterMQ850{
+        max-width: $container_value_max_A850;
+    }
     @include afterMQ900{
         max-width: $container_value_max_A900;
     }
@@ -140,27 +143,39 @@
             margin-left: $container_value_half_negative_A600;
         }
         @include afterMQ768{
+            width: $container_value_max_A768;
             margin-left: $container_value_max_half_negative_A768;
         }
+        @include afterMQ850{
+            width: $container_value_max_A850;
+            margin-left: $container_value_max_half_negative_A850;
+        }
         @include afterMQ900{
+            width: $container_value_max_A900;
             margin-left: $container_value_max_half_negative_A900;
         }
         @include afterMQ1024{
+            width: $container_value_max_A1024;
             margin-left: $container_value_max_half_negative_A1024;
         }
         @include afterMQ1200{
+            width: $container_value_max_A1200;
             margin-left: $container_value_max_half_negative_A1200;
         }
         @include afterMQ1300{
+            width: $container_value_max_A1300;
             margin-left: $container_value_max_half_negative_A1300;
         }
         @include afterMQ1400{
+            width: $container_value_max_A1400;
             margin-left: $container_value_max_half_negative_A1400;
         }
         @include afterMQ1500{
+            width: $container_value_max_A1500;
             margin-left: $container_value_max_half_negative_A1500;
         }
         @include afterMQ1600{
+            width: $container_value_max_A1600;
             margin-left: $container_value_max_half_negative_A1600;
         }
     }
@@ -184,27 +199,39 @@
                 margin-left: $container_value_half_negative_A600;
             }
             @include afterMQ768{
+                width: $container_value_max_A768;
                 margin-left: $container_value_max_half_negative_A768;
             }
+            @include afterMQ850{
+                width: $container_value_max_A850;
+                margin-left: $container_value_max_half_negative_A850;
+            }
             @include afterMQ900{
+                width: $container_value_max_A900;
                 margin-left: $container_value_max_half_negative_A900;
             }
             @include afterMQ1024{
+                width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
             }
-            @include afterMQ1200{  
+            @include afterMQ1200{
+                width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
             }
-            @include afterMQ1300{  
+            @include afterMQ1300{
+                width: $container_value_max_A1300;
                 margin-left: $container_value_max_half_negative_A1300;
             }
-            @include afterMQ1400{  
+            @include afterMQ1400{
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
-            @include afterMQ1500{  
+            @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -226,57 +253,81 @@
                 margin-left: $container_value_half_negative_A600;
             }
             @include afterMQ768{
+                width: $container_value_max_A768;
                 margin-left: $container_value_max_half_negative_A768;
             }
+            @include afterMQ850{
+                width: $container_value_max_A850;
+                margin-left: $container_value_max_half_negative_A850;
+            }
             @include afterMQ900{
+                width: $container_value_max_A900;
                 margin-left: $container_value_max_half_negative_A900;
             }
             @include afterMQ1024{
+                width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
             }
             @include afterMQ1200{
+                width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
             }
             @include afterMQ1300{
+                width: $container_value_max_A1300;
                 margin-left: $container_value_max_half_negative_A1300;
             }
             @include afterMQ1400{
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
             @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
     }
-    @if $classes_container_act_A768 == "on"{
+    @if $classes_container_act_AT == "on"{
         &.container_centered_absolute_A768{
             @include afterMQ768{
                 position: absolute;
                 left: 50%;   
+                width: $container_value_max_A768;
                 margin-left: $container_value_max_half_negative_A768;
             }
-            @include afterMQ1024{
-                margin-left: $container_value_max_half_negative_A1024;
+            @include afterMQ850{
+                width: $container_value_max_A850;
+                margin-left: $container_value_max_half_negative_A850;
             }
             @include afterMQ900{
+                width: $container_value_max_A900;
                 margin-left: $container_value_max_half_negative_A900;
             }
+            @include afterMQ1024{
+                width: $container_value_max_A1024;
+                margin-left: $container_value_max_half_negative_A1024;
+            }
             @include afterMQ1200{
+                width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
             }
             @include afterMQ1300{
+                width: $container_value_max_A1300;
                 margin-left: $container_value_max_half_negative_A1300;
             }
             @include afterMQ1400{
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
             @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -286,21 +337,27 @@
             @include afterMQ1024{
                 position: absolute;
                 left: 50%;   
+                width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
             }
-            @include afterMQ1200{  
+            @include afterMQ1200{
+                width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
             }
-            @include afterMQ1300{  
+            @include afterMQ1300{
+                width: $container_value_max_A1300;
                 margin-left: $container_value_max_half_negative_A1300;
             }
-            @include afterMQ1400{  
+            @include afterMQ1400{
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
-            @include afterMQ1500{  
+            @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -310,18 +367,23 @@
             @include afterMQ1200{
                 position: absolute;
                 left: 50%;   
+                width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
             }
-            @include afterMQ1300{ 
+            @include afterMQ1300{
+                width: $container_value_max_A1300;
                 margin-left: $container_value_max_half_negative_A1300;
             }
-            @include afterMQ1400{ 
+            @include afterMQ1400{
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
-            @include afterMQ1500{ 
+            @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -331,15 +393,19 @@
             @include afterMQ1300{
                 position: absolute;
                 left: 50%;   
+                width: $container_value_max_A1300;
                 margin-left: $container_value_max_half_negative_A1300;
             }
-            @include afterMQ1400{ 
+            @include afterMQ1400{
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
-            @include afterMQ1500{ 
+            @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -349,12 +415,15 @@
             @include afterMQ1400{
                 position: absolute;
                 left: 50%;   
+                width: $container_value_max_A1400;
                 margin-left: $container_value_max_half_negative_A1400;
             }
-            @include afterMQ1500{ 
+            @include afterMQ1500{
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -364,9 +433,11 @@
             @include afterMQ1500{
                 position: absolute;
                 left: 50%;   
+                width: $container_value_max_A1500;
                 margin-left: $container_value_max_half_negative_A1500;
             }
             @include afterMQ1600{
+                width: $container_value_max_A1600;
                 margin-left: $container_value_max_half_negative_A1600;
             }
         }
@@ -375,6 +446,7 @@
         &.container_centered_absolute_A1600{
             @include afterMQ1600{
                 position: absolute;
+                width: $container_value_max_A1600;
                 left: 50%;   
                 margin-left: $container_value_max_half_negative_A1600;
             }
@@ -417,6 +489,12 @@
             max-width: $container_value_max_A768;
             &.container_centered_absolute_A500{
                 margin-left: $container_value_max_half_negative_A768;
+            }
+        }
+        @include afterMQ850{
+            max-width: $container_value_max_A850;
+            &.container_centered_absolute_A500{
+                margin-left: $container_value_max_half_negative_A850;
             }
         }
         @include afterMQ900{
@@ -501,6 +579,12 @@
                 margin-left: $container_value_max_half_negative_A768;        
             }
         }
+        @include afterMQ850{
+            width: $container_value_max_A850;
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_max_half_negative_A850;
+            }
+        }
         @include afterMQ900{
             max-width: $container_value_max_A900;
             &.container_centered_absolute_A600{
@@ -545,7 +629,7 @@
         }
     }
 }
-@if $classes_container_act_B768 == "on"{
+@if $classes_container_act_BT == "on"{
     .containerB768{
         @include beforeMQ350{
             max-width: $container_value_max_B350;
@@ -558,7 +642,7 @@
         }
     }
 }
-@if $classes_container_act_A768 == "on"{
+@if $classes_container_act_AT == "on"{
     .containerA768{
         @include afterMQ768{
             max-width: $container_value_max_A768;
@@ -566,6 +650,12 @@
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_max_half_negative_A768;        
+            }
+        }
+        @include afterMQ850{
+            width: $container_value_max_A850;
+            &.container_centered_absolute_A500{
+                margin-left: $container_value_max_half_negative_A850;
             }
         }
         @include afterMQ900{
@@ -703,6 +793,9 @@
         }
         @include afterMQ768{
             max-width: $container_value_max_A768;
+        }
+        @include afterMQ850{
+            width: $container_value_max_A850;
         }
         @include afterMQ900{
             max-width: $container_value_max_A900;

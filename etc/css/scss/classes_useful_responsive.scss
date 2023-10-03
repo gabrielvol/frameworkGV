@@ -427,6 +427,39 @@
     .global_MQ_A3000{
         display: $none;
     }
+    
+    @if $classes_position_display_mask_cursor_act_B600 == "on"{
+/*___ Positioning _______________________*/
+        .pRelB600{position: relative}
+        .pAbsB600{position: absolute}
+        .clearB600{clear: both}
+
+/*___ Display ___________________________*/
+        .displayBlockB600{display: $block}
+        .displayInlineB600{display: $inline}
+        .displayInlineBlockB600{display: $inlineBlock}
+        .displayTableB600{display: table}
+        .displayNoneB600{display: $none}
+        .contentBoxB600{box-sizing: content-box}
+        .borderBoxB600{box-sizing: border-box}
+        .centerVerticallyB600{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .visuallyHiddenB600:not(:focus):not(:active),
+        .sr-onlyB600:not(:focus):not(:active){
+            position: absolute;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            border: $zero;
+            padding: $zero;
+            margin: -1px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
 }
 
 /* // After MQ600 Classes --------------------------------------------------- */

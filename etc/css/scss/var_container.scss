@@ -53,6 +53,7 @@ $container_value_half_A500:          calc(#{$container_value_A500} / 2);
 $container_value_half_B600:          calc(#{$container_value_B600} / 2);
 $container_value_half_A600:          calc(#{$container_value_A600} / 2);
 $container_value_max_half_A768:      calc(#{$container_value_max_A768} / 2);
+$container_value_max_half_A850:      calc(#{$container_value_max_A850} / 2);
 $container_value_max_half_A900:      calc(#{$container_value_max_A900} / 2);
 $container_value_max_half_A1024:     calc(#{$container_value_max_A1024} / 2);
 $container_value_max_half_A1200:     calc(#{$container_value_max_A1200} / 2);
@@ -69,6 +70,7 @@ $container_value_half_negative_A500:        calc(-1 * #{$container_value_half_A5
 $container_value_half_negative_B600:        calc(-1 * #{$container_value_half_B600});
 $container_value_half_negative_A600:        calc(-1 * #{$container_value_half_A600});
 $container_value_max_half_negative_A768:    calc(-1 * #{$container_value_max_half_A768});
+$container_value_max_half_negative_A850:    calc(-1 * #{$container_value_max_half_A850});
 $container_value_max_half_negative_A900:    calc(-1 * #{$container_value_max_half_A900});
 $container_value_max_half_negative_A1024:   calc(-1 * #{$container_value_max_half_A1024});
 $container_value_max_half_negative_A1200:   calc(-1 * #{$container_value_max_half_A1200});
