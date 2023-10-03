@@ -108,6 +108,9 @@
     @include afterMQ1024{
         max-width: $container_value_max_A1024;
     }
+    @include afterMQ1100{
+        max-width: $container_value_max_A1100;
+    }
     @include afterMQ1200{
         max-width: $container_value_max_A1200;
     }
@@ -157,6 +160,10 @@
         @include afterMQ1024{
             width: $container_value_max_A1024;
             margin-left: $container_value_max_half_negative_A1024;
+        }
+        @include afterMQ1100{
+            width: $container_value_max_A1100;
+            margin-left: $container_value_max_half_negative_A1100;
         }
         @include afterMQ1200{
             width: $container_value_max_A1200;
@@ -214,6 +221,10 @@
                 width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
             }
+            @include afterMQ1100{
+                width: $container_value_max_A1100;
+                margin-left: $container_value_max_half_negative_A1100;
+            }
             @include afterMQ1200{
                 width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
@@ -268,6 +279,10 @@
                 width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
             }
+            @include afterMQ1100{
+                width: $container_value_max_A1100;
+                margin-left: $container_value_max_half_negative_A1100;
+            }
             @include afterMQ1200{
                 width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
@@ -310,6 +325,10 @@
                 width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
             }
+            @include afterMQ1100{
+                width: $container_value_max_A1100;
+                margin-left: $container_value_max_half_negative_A1100;
+            }
             @include afterMQ1200{
                 width: $container_value_max_A1200;
                 margin-left: $container_value_max_half_negative_A1200;
@@ -339,6 +358,10 @@
                 left: 50%;   
                 width: $container_value_max_A1024;
                 margin-left: $container_value_max_half_negative_A1024;
+            }
+            @include afterMQ1100{
+                width: $container_value_max_A1100;
+                margin-left: $container_value_max_half_negative_A1100;
             }
             @include afterMQ1200{
                 width: $container_value_max_A1200;
@@ -509,6 +532,12 @@
                 margin-left: $container_value_max_half_negative_A1024;
             }
         }
+        @include afterMQ1100{
+            max-width: $container_value_max_A1100;
+            &.container_centered_absolute_A500{
+                margin-left: $container_value_max_half_negative_A1100;
+            }
+        }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A500{
@@ -597,6 +626,12 @@
                 margin-left: $container_value_max_half_negative_A1024;
             }
         }
+        @include afterMQ1100{
+            max-width: $container_value_max_A1100;
+            &.container_centered_absolute_A600{
+                margin-left: $container_value_max_half_negative_A1100;
+            }
+        }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A600{
@@ -670,6 +705,12 @@
                 margin-left: $container_value_max_half_negative_A1024;
             }
         }
+        @include afterMQ1100{
+            max-width: $container_value_max_A1100;
+            &.container_centered_absolute_A768{
+                margin-left: $container_value_max_half_negative_A1100;
+            }
+        }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A768{
@@ -738,6 +779,12 @@
                 margin-left: $container_value_max_half_negative_A1024;
             }
         }
+        @include afterMQ1100{
+            max-width: $container_value_max_A1100;
+            &.container_centered_absolute_A1024{
+                margin-left: $container_value_max_half_negative_A1100;
+            }
+        }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A1024{
@@ -802,6 +849,9 @@
         }
         @include afterMQ1024{
             max-width: $container_value_max_A1024;
+        }
+        @include afterMQ1100{
+            max-width: $container_value_max_A1100;
         }
     }
 }
