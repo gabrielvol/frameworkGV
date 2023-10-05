@@ -3,9 +3,11 @@
    ========================================================================== */
 $(window).scroll(function () {
     if ($(this).scrollTop() > 80) {
-        $('.button_hamb_open, .button_siteTop').addClass('site_scrolled_js'); // REF [31]
+        $('.button_hamb_open').addClass('site_scrolled_js'); // REF [31]
+        $('.button_siteTop').addClass('site_scrolled_js'); // REF [31]
     } else {
-        $('.button_hamb_open, .button_siteTop').removeClass('site_scrolled_js'); // REF [31]
+        $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [31]
+        $('.button_siteTop').removeClass('site_scrolled_js'); // REF [31]
     }
 });
 
