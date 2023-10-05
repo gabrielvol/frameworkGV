@@ -80,7 +80,7 @@
                 overflow: hidden;
             }
 
-            &:focus, &:hover{
+            &:focus, &:focus-visible, &:hover{
                 @include opacityCustom(80);
                     
                 button{

@@ -150,17 +150,17 @@
         a.#{$colourLightClassesGeneratorMX_colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
-            &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
+            &:focus, &:focus-visible, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
         }
         @if $button_coloured_act == "on"{
             button.#{$colourLightClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
-                &:focus, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
+                &:focus, &:focus-visible, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
             }
         }
         @if $form_label_coloured_act == "on"{
             label.#{$colourLightClassesGeneratorMX_colourClassName}{
-                &, &:focus, &:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
+                &, &:focus, &:focus-visible, &:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
             }
         }
     }
@@ -173,17 +173,17 @@
         a.#{$colourDarkClassesGeneratorMX_colourClassName}{
             &, &:active, &:visited, 
             &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-            &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
+            &:focus, &:focus-visible, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
         }
         @if $button_coloured_act == "on"{
             button.#{$colourDarkClassesGeneratorMX_colourClassName}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-                &:focus, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
+                &:focus, &:focus-visible, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
             }
         }
         @if $form_label_coloured_act == "on"{
             label.#{$colourDarkClassesGeneratorMX_colourClassName}{
-                &, &:focus, &:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
+                &, &:focus, &:focus-visible, &:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
             }
         }
     }
@@ -206,7 +206,7 @@
         }
         @if $form_label_coloured_act == "on"{
             label.#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
-                &, &:focus, &:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
+                &, &:focus, &:focus-visible, &:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
             }
         }
     }

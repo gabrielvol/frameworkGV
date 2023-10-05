@@ -212,7 +212,7 @@
         a{
             color: $grey2XD;
             
-             &:active, &:visited, &:focus, &:hover{
+             &:active, &:visited, &:focus, &:focus-visible, &:hover{
                 color: $grey3XD;
             }
         }

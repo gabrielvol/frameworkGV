@@ -125,7 +125,7 @@
 /*___ Backgrounds, border and images ____*/
         .banMO{border: $none}
         .bgNoneMO{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -244,7 +244,7 @@
 /*___ Backgrounds, border and images ____*/
         .banAML{border: $none}
         .bgNoneAML{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -363,7 +363,7 @@
 /*___ Backgrounds, border and images ____*/
         .banMLO{border: $none}
         .bgNoneMLO{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -555,7 +555,7 @@
 /*___ Backgrounds, border and images ____*/
         .banA600{border: $none}
         .bgNoneA600{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -674,7 +674,7 @@
 /*___ Backgrounds, border and images ____*/
         .banBT{border: $none}
         .bgNoneBT{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -793,7 +793,7 @@
 /*___ Backgrounds, border and images ____*/
         .banAT{border: $none}
         .bgNoneAT{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -912,7 +912,7 @@
 /*___ Backgrounds, border and images ____*/
         .banTO{border: $none}
         .bgNoneTO{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -1075,7 +1075,7 @@
 /*___ Backgrounds, border and images ____*/
         .banBTL{border: $none}
         .bgNoneBTL{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -1194,7 +1194,7 @@
 /*___ Backgrounds, border and images ____*/
         .banATL{border: $none}
         .bgNoneATL{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -1313,7 +1313,7 @@
 /*___ Backgrounds, border and images ____*/
         .banTLO{border: $none}
         .bgNoneTLO{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -1432,7 +1432,7 @@
 /*___ Backgrounds, border and images ____*/
         .banTTLO{border: $none}
         .bgNoneTTLO{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -1551,7 +1551,7 @@
 /*___ Backgrounds, border and images ____*/
         .banBD{border: $none}
         .bgNoneBD{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }
@@ -1670,7 +1670,7 @@
 /*___ Backgrounds, border and images ____*/
         .banAD{border: $none}
         .bgNoneAD{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 background: $none;
             }
         }

@@ -5,7 +5,7 @@
     ///Aquí se agregan las pseudo-clases `:focus` y `:hover` correspondientes al mapa `$colours_custom_hover_map` que se encuentra en `[/etc/css/custom/var/_colours_main_var.scss]`.
 
 %anchor_button_focusHoverCustom__orange{
-    &:focus, &:hover{
+    &:focus, &:focus-visible, &:hover{
         color: #ff0000;
     }
 }

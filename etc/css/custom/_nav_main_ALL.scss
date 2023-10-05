@@ -14,14 +14,14 @@
         
 .nav_item_xxx{
     a{
-        &, &:focus, &:hover, &:visited, &:active{}
+        &, &:focus, &:focus-visible, &:hover, &:visited, &:active{}
 
-        &:focus, &:hover, &:visited, &:active{}
+        &:focus, &:focus-visible, &:hover, &:visited, &:active{}
 
         &, &:visited, &:active{}
 
         &:visited, &:active{}
 
-        &:focus, &:hover{}
+        &:focus, &:focus-visible, &:hover{}
     }
 }

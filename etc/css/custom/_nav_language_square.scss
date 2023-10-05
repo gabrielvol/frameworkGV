@@ -34,7 +34,7 @@
                 color: $grey2XL;
             }
             
-            &:focus, &:hover{
+            &:focus, &:focus-visible, &:hover{
                 color: $white;
             }
         }

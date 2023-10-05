@@ -110,7 +110,7 @@ p, li{
         font-size: 1em;
     }     
     @if $anchorUnderline == "on"{
-        &:focus, &:hover{
+        &:focus, &:focus-visible, &:hover{
             a{
                 text-decoration: underline;
             }
@@ -122,7 +122,7 @@ a{
     &, &:active, &:visited{
         color: $ftColour_anchor_global;
     }
-    &:focus, &:hover{
+    &:focus, &:focus-visible, &:hover{
         color: $ftColour_anchor_global_hover;
     }
 }
@@ -148,14 +148,14 @@ a{
     }
 }
 a.white{
-    &, &:active, &:visited, &:focus, &:hover{
+    &, &:active, &:visited, &:focus, &:focus-visible, &:hover{
         color: $white;
     }
-    &:focus, &:hover{
+    &:focus, &:focus-visible, &:hover{
         text-shadow: $txShadow_black_smooth;
     }
     &.noHover{
-        &:focus, &:hover{
+        &:focus, &:focus-visible, &:hover{
             text-shadow: $txShadow_none;
         }
     }

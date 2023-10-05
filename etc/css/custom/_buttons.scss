@@ -52,7 +52,9 @@ html input[type="button"]{
 }
 
 button{
-    &, &::before, &::after{
+    &,
+    &::before,
+    &::after{
         box-sizing: border-box;
     }
 }
@@ -86,36 +88,59 @@ button{
     text-transform: uppercase;
     text-align: center;
     
-    &, &:focus, &:hover, &:visited, &:active{}
+    &,
+    &:focus,
+    &:focus-visible,
+    &:hover,
+    &:visited,
+    &:active{}
     
-    &, &:focus, &:hover{
+    &,
+    &:focus,
+    &:focus-visible,
+    &:hover{
         text-decoration: $none;
     }
     
-    &, &:visited, &:active{
+    &
+    &:visited,
+    &:active{
         color: $button_callToAction_ftColour;
     }
     
-    &:focus, &:hover{
+    &:focus,
+    &:focus-visible,
+    &:hover{
         background-color: $button_callToAction_bgColour_hover;
         border-color: $button_callToAction_bdColour_hover;
         color: $button_callToAction_ftColour_hover;
     }
     
-    &, &::before, &::after{
+    &,
+    &::before,
+    &::after{
         box-sizing: border-box;
     }
     
     &.CTA_white{
-        &, &:focus, &:hover, &:visited, &:active{}
+        &,
+        &:focus,
+        &:focus-visible,
+        &:hover,
+        &:visited,
+        &:active{}
 
-        &, &:visited, &:active{
+        &,
+        &:visited,
+        &:active{
             border-color: $bdWhite;
             background-color: $bgWhite;
             color: $greyXD;
         }
 
-        &:focus, &:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover{
             border-color: $bdGrey3XL;
             background-color: $bgGrey3XL;
             color: $greyD;
@@ -125,16 +150,25 @@ button{
     }
     
     &.CTA_hollow{
-        &, &:focus, &:hover, &:visited, &:active{
+        &,
+        &:focus,
+        &:focus-visible,
+        &:hover,
+        &:visited,
+        &:active{
             @include borderStyle($bdWhite);
             color: $white;
         }
     
-        &, &:visited, &:active{
+        &,
+        &:visited,
+        &:active{
             background-color: transparent;
         }
 
-        &:focus, &:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover{
             background-color: $black_rgba_10;
         }
     }
@@ -172,7 +206,10 @@ button{
     text-indent: -9999px;
     overflow: hidden;
 
-    &, &:focus, &:hover{
+    &,
+    &:focus,
+    &:focus-visible,
+    &:hover{
         background-color: $bgWhite;
     }
 }
@@ -205,7 +242,9 @@ button{
         @include borderStyle($bdGreyD);
         @include positionTR(10px, 10px);
 
-        &:focus, &:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover{
             border-color: $bdGreyXD;
         }
     }
@@ -219,11 +258,16 @@ button{
         background-color: $bgWhite;
         font-size: 0.8rem;
 
-        &, &:focus, &:hover{
+        &,
+        &:focus,
+        &:focus-visible,
+        &:hover{
             border: 1px solid $bdGreyM!important
         }
 
-        &:focus, &:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover{
             background-color: $bgGrey2XL;
             color: $black;
         }            
@@ -270,18 +314,30 @@ button{
         background-size: auto calc(#{$button_whatsapp_size_square} - 20px);
         background-position: center center;
 
-        &, &:focus, &:hover, &:visited, &:active{}
+        &,
+        &:focus,
+        &:focus-visible,
+        &:hover,
+        &:visited,
+        &:active{}
 
         &, &:visited, &:active{ 
             /*background-color: $greenWhatsApp;*/
             background-color: rgba(37, 211, 102, 0.85);
         }
 
-        &:focus, &:hover, &:visited, &:active{}
+        &:focus,
+        &:focus-visible,
+        &:hover,
+        &:visited,
+        &:active{}
 
-        &:visited, &:active{}
+        &:visited,
+        &:active{}
 
-        &:focus, &:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover{
             box-shadow: 0 0 5px #3c9637;
             /*background-color: $greenWhatsApp_hover;*/
             background-color: rgba(37, 211, 102, 1);
@@ -306,7 +362,9 @@ button{
                     
         // REF [33]
         &.lang_AR{
-            &:focus, &:hover{
+            &:focus,
+            &:focus-visible,
+            &:hover{
                 &::before{
                     content: "Chat con SiteName.";
                 }
@@ -314,7 +372,9 @@ button{
         }
 
         &.lang_BR{
-            &:focus, &:hover{
+            &:focus,
+            &:focus-visible,
+            &:hover{
                 &::before{
                     content: "Converse com o SiteName.";
                 }
@@ -322,7 +382,9 @@ button{
         }
 
         &.lang_DE{
-            &:focus, &:hover{
+            &:focus,
+            &:focus-visible,
+            &:hover{
                 &::before{
                     content: "Chatten Sie mit SiteName.";
                 }
@@ -330,7 +392,9 @@ button{
         }
 
         &.lang_GB{
-            &:focus, &:hover{
+            &:focus,
+            &:focus-visible,
+            &:hover{
                 &::before{
                     content: "Chat with SiteName.";
                 }
@@ -338,7 +402,9 @@ button{
         }
 
         @include beforeMQ500{
-            &:focus, &:hover{
+            &:focus,
+            &:focus-visible,
+            &:hover{
                 &::before{
                     width: $button_whatsapp_before_width_B500;
                 }
@@ -347,7 +413,10 @@ button{
 
         @include beforeMQ768{
             &.navDrawer_open{
-                &, &:focus, &:hover{
+                &,
+                &:focus,
+                &:focus-visible,
+                &:hover{
                     &::before{
                         display: none;
                     }
@@ -356,7 +425,9 @@ button{
         }
 
         @include afterMQ500{
-            &:focus, &:hover{
+            &:focus,
+            &:focus-visible,
+            &:hover{
                 &::before{
                     width: $button_whatsapp_before_width_A500;
                 }
@@ -371,15 +442,29 @@ button{
             line-height: $button_whatsapp_height;
 */
 
-            &, &:focus, &:hover, &:visited, &:active{}
+            &,
+            &:focus,
+            &:focus-visible,
+            &:hover,
+            &:visited,
+            &:active{}
             
-            &, &:visited, &:active{}
+            &,
+            &:visited,
+            &:active{}
 
-            &:focus, &:hover, &:visited, &:active{}
+            &:focus,
+            &:focus-visible,
+            &:hover,
+            &:visited,
+            &:active{}
 
-            &:visited, &:active{}
+            &:visited,
+            &:active{}
 
-            &:focus, &:hover{}
+            &:focus,
+            &:focus-visible,
+            &:hover{}
             
             &:not(:focus):not(:active){
 /*
@@ -467,7 +552,9 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
         background-size: 100%;
     }
 
-    &:focus, &:hover{
+    &:focus,
+    &:focus-visible,
+    &:hover{
         &::before{
             background-color: rgba(255,255,255, 0.2);
         }
@@ -481,13 +568,27 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
 
 /* // Button Section -------------------------------------------------------- */
 button{
-    &, &:focus, &:hover, &:visited, &:active{}
+    &,
+    &:focus,
+    &:focus-visible,
+    &:hover,
+    &:visited,
+    &:active{}
     
-    &:focus, &:hover, &:visited, &:active{}
+    &:focus,
+    &:focus-visible,
+    &:hover,
+    &:visited,
+    &:active{}
     
-    &, &:visited, &:active{}
+    &,
+    &:visited,
+    &:active{}
     
-    &:visited, &:active{}
+    &:visited,
+    &:active{}
     
-    &:focus, &:hover{}
+    &:focus,
+    &:focus-visible,
+    &:hover{}
 }

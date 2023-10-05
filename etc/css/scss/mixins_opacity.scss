@@ -10,7 +10,7 @@
     opacity: calc(#{$opacityCustomHoverMX_value} / 100);
     filter: alpha(opacity=$opacityCustomHoverMX_value);
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomHoverMX_value})";
-    &:focus, &:hover{
+    &:focus, &:focus-visible, &:hover{
         opacity: calc(#{$opacityCustomHoverMX_valueHover} / 100);
         filter: alpha(opacity=$opacityCustomHoverMX_valueHover);
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(opacity=#{$opacityCustomHoverMX_valueHover})";

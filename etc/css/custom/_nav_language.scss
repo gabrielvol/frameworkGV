@@ -16,7 +16,7 @@
         @if $nav_language_flag_rounded_act == "on"{
             border-radius: 50%;
 
-            &:focus, &:hover{
+            &:focus, &:focus-visible, &:hover{
                 box-shadow: $language_flag_rounded_anchor_hover_bxShadow;
             }
         }

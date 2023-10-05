@@ -76,7 +76,7 @@ p{}
     
 /* // Safari tel detection -------------------------------------------------- */
 a[href^=tel]{
-    &, &:focus, &:hover, &:active, &:visited{
+    &, &:focus, &:focus-visible, &:hover, &:active, &:visited{
         color: $ftColour_anchor_global!important;
     }
 }

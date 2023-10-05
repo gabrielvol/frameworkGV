@@ -21,14 +21,14 @@
         }
 
         &.slick-current{
-            &, &:focus, &:hover{
+            &, &:focus, &:focus-visible, &:hover{
                 img{
                     @include opacityCustom(100);
                 }
             }
         }
 
-        &:focus, &:hover{
+        &:focus, &:focus-visible, &:hover{
             img{
                 filter: grayscale(0);
             }
@@ -51,12 +51,12 @@
             margin-top: 0; 
 
             &.slick-current{
-                &, &:focus, &:hover{
+                &, &:focus, &:focus-visible, &:hover{
                     border-color: $bdColour_main_global;
                 }
             }
 
-            &:focus, &:hover{
+            &:focus, &:focus-visible, &:hover{
                 border-color: $bdBlack;
             }
         }    

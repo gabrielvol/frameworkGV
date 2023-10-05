@@ -326,7 +326,7 @@ form{
             box-shadow: $form_input_shadowInset;
         }
 
-        &:focus, &:hover{
+        &:focus, &:focus-visible, &:hover{
             background-color: $form_input_bgColour_hover;
             color: $form_input_ftColour_hover;
         }  

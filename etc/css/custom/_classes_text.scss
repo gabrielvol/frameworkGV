@@ -14,7 +14,7 @@
 .txItalic{font-style: italic} 
 
 .txUnderline{
-    &, &:focus, &:hover, &:visited, &:active{
+    &, &:focus, &:focus-visible, &:hover, &:visited, &:active{
         text-decoration: underline;
     }
 }

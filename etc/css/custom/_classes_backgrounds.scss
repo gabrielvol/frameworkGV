@@ -45,20 +45,20 @@
 
 
 .bgNone{
-    &, &:focus, &:hover{
+    &, &:focus, &:focus-visible, &:hover{
         background-color: $transparent;
         background-image: $none;
     }
 }
 
 .bgTransparent{
-    &, &:focus, &:hover{
+    &, &:focus, &:focus-visible, &:hover{
         background-color: $transparent;
     }
 }
 
 .bgNoImage{
-    &, &:focus, &:hover{
+    &, &:focus, &:focus-visible, &:hover{
         background-image: $none;
     }
 }
