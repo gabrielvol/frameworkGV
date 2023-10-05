@@ -26,23 +26,23 @@
         a{
             @include borderStyle($bdWhite);
             @include centerAbsolute(calc(#{$nav_language_anchor_size_AT} + 0px), $nav_language_anchor_size_AT);
-            font-size: 0.8rem;// REF [I]
+            font-size: 0.8rem;
             line-height: $nav_language_anchor_size_AT;
             text-align: center;
             
             &, &:active, &:visited{
-                color: $grey2XL;// REF [I]
+                color: $grey2XL;
             }
             
             &:focus, &:hover{
-                color: $white;// REF [I]
+                color: $white;
             }
         }
     }
     
     @include afterMQ1024{
         a{
-            font-size: 0.9rem;// REF [I]
+            font-size: 0.9rem;
         }
     }
 }

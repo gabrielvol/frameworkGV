@@ -115,5 +115,14 @@
                 <span class="visuallyHidden" lang="zh"><?php echo $gettext_languageName_ZH; ?></span>
             </a>
         </li>
+        
+        <?php /* // REF [37]
+        if($gettext_idioma == 'en_GB'):
+            include ('nav.language.sq.item.es.inc.php');
+        
+        elseif($gettext_idioma == 'es_AR'):        
+            include ('nav.language.sq.item.en.inc.php');
+        
+        endif; */ ?>
     </ul>
 </nav>

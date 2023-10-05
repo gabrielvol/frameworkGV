@@ -55,14 +55,6 @@ $hash_main          = '#main';
 // $hash-SECCION       = '#seccion';
 // $hash-SECCION       = '#seccion';
 // $hash-SECCION       = '#seccion';
-
-/*___ Hashes que se traducen _____________*/
-    $hash_main_gettext          = '#main';
-    //$hash_inicio_gettext        = '#'. _('inicio');
-    //$hash_contacto_gettext      = '#'. _('contacto');
-    // $hash-PAGINA-gettext         = '#'. _('seccion');
-    // $hash-PAGINA-gettext         = '#'. _('seccion');
-    // $hash-PAGINA-gettext         = '#'. _('seccion'); 
     
     
 
@@ -111,7 +103,7 @@ $url_main_hs_INICIO             = $url_inicio . $hash_main;
     // $url-PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
     // $url-PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
 
-/*___ urls para hashes no traducidas ____*/
+/*___ urls para hashes __________________*/
     $url_main_hs        = $dir_env . '/' . $gettext_idioma_url . $hash_main;
     //$url_inicio_hs      = $dir_env . '/' . $gettext_idioma_url . $hash_inicio;
     //$url_contacto_hs    = $dir_env . '/' . $gettext_idioma_url . $hash_contacto;
@@ -119,21 +111,13 @@ $url_main_hs_INICIO             = $url_inicio . $hash_main;
     // $url-SECCION-hs     = $dir_env . '/' . $gettext_idioma_url . $hash_SECCION;
     // $url-SECCION-hs     = $dir_env . '/' . $gettext_idioma_url . $hash_SECCION;
 
-/*___ urls para hashes traducidas ________*/
-    $url_main_hs_gettext            = $dir_env . '/' . $gettext_idioma_url . $hash_main_gettext;
-    //$url_inicio_hs_gettext          = $dir_env . '/' . $gettext_idioma_url . $hash_inicio_gettext;
-    //$url_contacto_hs_gettext        = $dir_env . '/' . $gettext_idioma_url . $hash_contacto_gettext;
-    // $url-PAGINA-hs_gettext          = $dir_env . '/' . $gettext_idioma_url . $hash_PAGINA_gettext;
-    // $url-PAGINA-hs_gettext          = $dir_env . '/' . $gettext_idioma_url . $hash_PAGINA_gettext;
-    // $url-PAGINA-hs_gettext          = $dir_env . '/' . $gettext_idioma_url . $hash_PAGINA_gettext;
-
-    $url_main_hs_INICIO_gettext     = $url_inicio . $url_main_hs_gettext;
-    //$url_inicio_hs_INICIO_gettext   = $url_inicio . $url_inicio_hs_gettext;
-    //$url_contacto_hs_INICIO_gettext = $url_inicio . $url_contacto_hs_gettext;
-    // $url-PAGINA-hs-PAGINA-gettext   = $url_PAGINA . $hash_PAGINA_gettext;
-    // $url-PAGINA-hs-PAGINA-gettext   = $url_PAGINA . $hash_PAGINA_gettext;
-    // $url-PAGINA-hs-PAGINA-gettext   = $url_PAGINA . $hash_PAGINA_gettext;
-  
+    $url_main_hs_INICIO     = $url_inicio . $url_main_hs;
+    //$url_inicio_hs_INICIO   = $url_inicio . $url_inicio_hs;
+    //$url_contacto_hs_INICIO = $url_inicio . $url_contacto_hs;
+    // $url-PAGINA-hs-PAGINA-gettext   = $url_PAGINA . $hash_PAGINA;
+    // $url-PAGINA-hs-PAGINA-gettext   = $url_PAGINA . $hash_PAGINA;
+    // $url-PAGINA-hs-PAGINA-gettext   = $url_PAGINA . $hash_PAGINA;
+    
 
     
 /* // global urls / full urls ----------------------------------------------- */
@@ -163,11 +147,11 @@ $url_contacto_full      = $url_main . $url_contacto;
 // $url-PAGINAfull         = $url_main . $url_PAGINA;
 
 /*___ full urls para hashes traducidas ___*/
-    //$url_inicio_hs_INICIO_full_gettext    = $url_main . $url_inicio . $hash_inicio_gettext;
-    //$url_contacto_hs_INICIO_full_gettext  = $url_main . $url_inicio . $hash_contacto_gettext;
-    // $url-PAGINA-hs-PAGINA-full_gettext    = $url_main . $url_PAGINA . $url_PAGINA_gettext;
-    // $url-PAGINA-hs-PAGINA-full_gettext    = $url_main . $url_PAGINA . $url_PAGINA_gettext;
-    // $url-PAGINA-hs-PAGINA-full_gettext    = $url_main . $url_PAGINA . $url_PAGINA_gettext;
+    //$url_inicio_hs_INICIO_full    = $url_main . $url_inicio . $hash_inicio;
+    //$url_contacto_hs_INICIO_full  = $url_main . $url_inicio . $hash_contacto;
+    // $url-PAGINA-hs-PAGINA-full    = $url_main . $url_PAGINA . $url_PAGINA;
+    // $url-PAGINA-hs-PAGINA-full    = $url_main . $url_PAGINA . $url_PAGINA;
+    // $url-PAGINA-hs-PAGINA-full    = $url_main . $url_PAGINA . $url_PAGINA;
     
 
     
@@ -204,19 +188,19 @@ $href_main_hs_INICIO       = 'href="' . $url_main_hs_INICIO . '"';
 // $href-SECCION-hs-PAGINA      = 'href="' . $url_SECCION_hs_PAGINA . '"';
      
 /*___ href para hashes traducidas ________*/
-    $url_main_hs_full_gettext       = $url_main . $url_main_hs_gettext;
-    //$url_inicio_hs_full_gettext     = $url_main . $url_inicio_hs_gettext;
-    //$url_contacto_hs_full_gettext   = $url_main . $url_contacto_hs_gettext;
-    // $url-PAGINA-hs_full_gettext     = $url_main . $url_PAGINA_gettext;
-    // $url-PAGINA-hs_full_gettext     = $url_main . $url_PAGINA_gettext;
-    // $url-PAGINA-hs_full_gettext     = $url_main . $url_PAGINA_gettext;
+    $url_main_hs_full       = $url_main . $url_main_hs;
+    //$url_inicio_hs_full     = $url_main . $url_inicio_hs;
+    //$url_contacto_hs_full   = $url_main . $url_contacto_hs;
+    // $url-PAGINA-hs_full     = $url_main . $url_PAGINA;
+    // $url-PAGINA-hs_full     = $url_main . $url_PAGINA;
+    // $url-PAGINA-hs_full     = $url_main . $url_PAGINA;
 
-    $url_main_hs_INICIO_full_gettext        = $url_main . $url_index . $hash_main_gettext;
-    //$url_inicio_hs_INICIO_full_gettext      = $url_main . $url_index . $hash_inicio_gettext;
-    //$url_contacto_hs_INICIO_full_gettext    = $url_main . $url_index . $hash_contacto_gettext;
-    // $url-PAGINA-hs-PAGINA-full_gettext      = $url_main . $url_PAGINA . $url_PAGINA_gettext;
-    // $url-PAGINA-hs-PAGINA-full_gettext      = $url_main . $url_PAGINA . $url_PAGINA_gettext;
-    // $url-PAGINA-hs-PAGINA-full_gettext      = $url_main . $url_PAGINA . $url_PAGINA_gettext;
+    $url_main_hs_INICIO_full        = $url_main . $url_index . $hash_main;
+    //$url_inicio_hs_INICIO_full      = $url_main . $url_index . $hash_inicio;
+    //$url_contacto_hs_INICIO_full    = $url_main . $url_index . $hash_contacto;
+    // $url-PAGINA-hs-PAGINA-full      = $url_main . $url_PAGINA . $url_PAGINA;
+    // $url-PAGINA-hs-PAGINA-full      = $url_main . $url_PAGINA . $url_PAGINA;
+    // $url-PAGINA-hs-PAGINA-full      = $url_main . $url_PAGINA . $url_PAGINA;
     
 
 

@@ -88,6 +88,7 @@
                 z-index: $zIndex_nav_language_ul_clicked;
                 
                 @if $nav_language_navDrawerOpen_act == "on"{
+                    // REF [33]
                     @include borderStyleT($bdGrey2XL);
                     left: 0;
                     bottom: 0;
@@ -122,7 +123,6 @@
                         font-size: 0.8rem;
                     }
                     
-                    // REF [33]
                     &.lang_AR{
                         &::before{
                             content: "Seleccione un idioma:";

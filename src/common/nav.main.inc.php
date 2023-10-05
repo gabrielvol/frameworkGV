@@ -1,6 +1,6 @@
 <nav id="nav" class="nav_main" aria-label="<?php if($gettext_idioma == 'en_GB'){ echo 'Site main menu.'; } else { echo 'Men&uacute; principal del sitio.'; } ?>">
-    <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visuallyHidden"><?php echo _("Abrir"); ?></span> <?php echo _("Men&uacute;"); ?></button>
-    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php echo _("Cerrar"); ?> <span class="visuallyHidden"><?php echo _("Men&uacute;"); ?></span></button>
+    <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visuallyHidden"><?php if($gettext_idioma == 'en_GB'){ echo 'Open'; } else { echo 'Abrir'; } ?></span> <?php if($gettext_idioma == 'en_GB'){ echo 'Menu'; } else { echo 'Men&uacute;'; } ?></button>
+    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php if($gettext_idioma == 'en_GB'){ echo 'Close'; } else { echo 'Cerrar'; } ?><?php echo _("Cerrar"); ?> <span class="visuallyHidden"><?php if($gettext_idioma == 'en_GB'){ echo 'Menu'; } else { echo 'Men&uacute;'; } ?></span></button>
     
     <?php
         // REF [05] `[/src/var/act/nav.act.inc.php]`
@@ -33,6 +33,16 @@
                     echo '</ul></li>';
             } else {
                 include('nav.main.list.inc.php');
+                
+                /* // REF [37]
+                if($gettext_idioma == 'en_GB'):
+                include ('nav.language.sq.item.es.inc.php');
+
+                endif; if($gettext_idioma == 'es_AR'):        
+                include ('nav.language.sq.item.en.inc.php');
+
+                endif;
+                */
             }    
             
             echo '</ul>
