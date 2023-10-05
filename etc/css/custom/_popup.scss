@@ -4,7 +4,7 @@
     
 /* // Pop Modal ------------------------------------------------------------- */
 .modal_global{
-    background-color: $modal_bgColour_global;
+    background-color: $modal_global_bgColour;
 }
 
 .modal_global,
@@ -16,11 +16,7 @@
 
 .modal_nav{
     display: none; 
-    /*
-    background-color: $modal_bgColour_nav; 
-    */
-    background-image: $bgGrad_modal_nav;
-    filter: $bgGrad_modal_nav_filter;
+    background-color: $modal_nav_bgColour; 
     
     @include afterMQ768{
         display: $none;
@@ -67,7 +63,7 @@
         // REF [30]
         @include positionTRBL();
         content: "";
-        background-color: $modal_bgColour_global;
+        background-color: $modal_global_bgColour;
         position: fixed;
         z-index: $zIndex_negative;
         display: block;

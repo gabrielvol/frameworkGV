@@ -13,15 +13,6 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 }
 */
 
-// Colour modal_nav 00%
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.6+0,0.75+100 */
-$bgGrad_modal_nav: linear-gradient(45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.75) 100%);
-$bgGrad_modal_nav_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#bf000000',GradientType=1 );
-.bgGrad_modal_nav{
-    background-image: $bgGrad_modal_nav;
-    filter: $bgGrad_modal_nav_filter;
-}
-
 // Colour gradient_ig 00%
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd600+0,ff7a00+20,ff0069+47,d300c5+72,7638fa+100 */
 $bgGrad_gradient_ig: linear-gradient(to right,  #ffd600 0%,#ff7a00 20%,#ff0069 47%,#d300c5 72%,#7638fa 100%);
