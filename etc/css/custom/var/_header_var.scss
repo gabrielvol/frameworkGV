@@ -49,16 +49,16 @@
     
 /* // Header Sizes ---------------------------------------------------------- */
 $header_height_ALL:     100px;
-$header_height_B500:    101px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_B500`
+$header_height_B500:    101px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_B500`
 $header_height_A500:    102px;
-$header_height_500O:    103px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_500O`
-$header_height_BT:      104px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_BT`
-$header_height_AT:      105px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_AT`
-$header_height_navBT:   106px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_navBT`
-$header_height_navAT:   107px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_navAT`
+$header_height_500O:    103px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_500O`
+$header_height_BT:      104px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_BT`
+$header_height_AT:      105px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_AT`
+$header_height_navBT:   106px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_navBT`
+$header_height_navAT:   107px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_navAT`
 $header_height_TO:      108px;
 $header_height_BTL:     109px;
-$header_height_A1024:   110px; //Con Header Fixed activado REF [08], si es auto hay que declarar 0 en la variable `$page_PT_A1024` 
+$header_height_A1024:   110px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_A1024` 
 $header_height_TLO:     111px;
 $header_height_B1200:   112px;
 $header_height_A1200:   113px;
@@ -69,7 +69,7 @@ $header_navAccordion_height_BT:     calc(#{$header_PT_BT} + #{$header_PB_BT} + #
 
 
 /* // Page Sizes ------------------------------------------------------------ */
-//Con Header Fixed activado REF [08], height auto:
+// REF [08] Con Header Fixed activado y height auto
 // $page_PT_B500:            0; 
 // $page_PT_A500:           0; 
 // $page_PT_500O:           0;
@@ -79,7 +79,7 @@ $header_navAccordion_height_BT:     calc(#{$header_PT_BT} + #{$header_PB_BT} + #
 // $page_PT_AT:            0;
 // $page_PT_A1024:           0;
 
-//Con Header Fixed activado REF [08], height px:
+// REF [08] Con Header Fixed activado y height en px
 $page_PT_B500:      $header_height_B500;
 $page_PT_A500:      $header_height_A500;
 $page_PT_500O:      $header_height_500O;

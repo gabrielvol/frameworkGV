@@ -3563,7 +3563,7 @@ form {
             left: 0;
             box-shadow: $bxShadow_header_fixed;
         
-            &.headerScrolled{
+            &.header_scrolled_js{
                 box-shadow: $bxShadow_header_fixed_scrolled;
             }
         } 

@@ -66,7 +66,7 @@ $txShadow_main:                     $txShadow_black;
 $bxShadow_main:                     0 0 10px 0 $greyXD;
 $bxShadow_main_inset:               inset $bxShadow_main;
 
-$bxShadow_header_fixed:             0 0 10px 0 $greyL;
+$bxShadow_header_fixed:             0 0 5px 0 $greyL_rgba_50, 0 0 8px 0 $greyL_rgba_20;
 $bxShadow_header_fixed_scrolled:    $bxShadow_header_fixed;
 
 $bxShadow_video:                    $bxShadow_main;

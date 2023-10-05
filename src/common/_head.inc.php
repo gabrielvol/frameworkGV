@@ -61,7 +61,7 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <link rel="preconnect" href="<?php echo $url_main; ?>">
 
 <?php /* prefetch, request a specific resource, download and store it in the cache for reference later */ ?>
-<link rel="prefetch" href="<?php echo $url_main; ?>/image.jpg">
+<link rel="prefetch" href="<?php echo $url_wip; ?>/image.jpg">
 
 <?php /*  prerender, preemptively load all of the assets of a certain document */ ?>
 <link rel="prerender" href="<?php echo $url_main; ?>/page.php">
