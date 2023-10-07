@@ -46,8 +46,9 @@
 
 
 /* // Modal Opacity Variables ----------------------------------------------- */
-$modal_global_bgColour:     $black_rgba_80;   
+$modal_global_bgColour:     $black_rgba_70;   
 $modal_nav_bgColour:        $black_rgba_70;
+$modal_formStatus_bgColour: $black_rgba_70;
 
 
 /* // Popup Sizes ----------------------------------------------------------- */
@@ -65,6 +66,11 @@ $pop_form_width_B500:         320px;
 $pop_form_width_A500:        490px;
 $pop_form_width_600:        590px;
 $pop_form_width_AT:         650px;
+
+$pop_formStatus_width_B300:        90%;
+$pop_formStatus_width_max_B300:    290px;
+$pop_formStatus_width_A300:        $pop_formStatus_width_max_B300;
+$pop_formStatus_width_A500:        450px;
 
 $pop_video_width_B500:        300px;
 $pop_video_height_B500:       168px;

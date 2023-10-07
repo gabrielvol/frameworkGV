@@ -281,6 +281,17 @@ button{
 }
 
 .pop_formStatus{    
+    .button_close_pop{
+        @include borderStyle($bdGreyD);
+        @include positionTR(10px, 10px);
+
+        &:focus,
+        &:focus-visible,
+        &:hover{
+            border-color: $bdGreyXD;
+        }
+    }
+    
     .button_pop_submit{
         background-color: $bgWhite;
         margin: 20px auto 0;

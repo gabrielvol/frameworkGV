@@ -38,12 +38,13 @@
 }
 
 .modal_formStatus{
-    background-color: $black_rgba_60;
+    background-color: $modal_formStatus_bgColour;
 }
 
 /* // Pop General ----------------------------------------------------------- */
 .pop_global{
     box-sizing: border-box;
+    box-shadow: $bxShadow_main_smooth;
     position: fixed;
     z-index: $zIndex_pop_global;
     top: 10vh;
@@ -56,6 +57,24 @@
         position: absolute;
         overflow: auto;
         overscroll-behavior: contain;
+    }
+
+    h2,
+    h3{
+        font-size: 1.2rem;
+    }
+    
+    p{
+        width: $hundred;
+        background-color: transparent;
+        padding: 0;
+        color: $greyXD;
+        font-family: $ftFamily_main_global;
+        text-align: center;
+        
+        & + p{
+            margin-top: 0.8em;
+        }
     }
     
 /*    
@@ -77,27 +96,9 @@
         @include centerPopup(100px,100px,50%);
         max-width: 100%;
         max-height: 100%;
-    */      
-      
-    box-shadow: 0 0 15px 0 $black;
-
-    h2,
-    h3{
-        font-size: 1.2rem;
-    }
+    */  
 
     p{
-        width: $hundred;
-        background-color: transparent;
-        padding: 0;
-        color: $greyXD;
-        font-family: $ftFamily_main_global;
-        text-align: center;
-
-        & + p{
-            margin-top: 0.8em;
-        }
-
         &:last-child{
             padding-bottom: 50px;
         }
@@ -107,10 +108,15 @@
         padding: 20px;
     }
         
-    @include beforeMQ500{
+    @include beforeMQ300{
         width: $pop_warning_width_B500;
         max-width: $pop_warning_width_max_B500;
-        margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);              
+        margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);  
+    }
+        
+    @include afterMQ300{
+        width: $pop_warning_width_max_B500;
+        margin-left: calc(calc(#{$pop_warning_width_max_B500} * -1) / 2);  
     }
 
     @include afterMQ500{
@@ -204,16 +210,19 @@
     }
     
     p{
-        font-family: $arial;
-        color: $greyXD;
+        color: $grey2XD;
         font-size: 1rem!important;
         line-height: 1.3em;
         
         a{
-            color: $grey2XD;
+            color: $grey3XD;
             
-             &:active, &:visited, &:focus, &:focus-visible, &:hover{
-                color: $grey3XD;
+            &:active,
+            &:visited,
+            &:focus,
+            &:focus-visible,
+            &:hover{
+                color: $grey4XD;
             }
         }
     }
@@ -240,6 +249,40 @@
                 }
             }
         }
+    }
+        
+    @include beforeMQ300{
+        width: $pop_warning_width_B500;
+        max-width: $pop_warning_width_max_B500;
+        margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);  
+        
+        h2{
+            padding-top: 10px;
+            padding-right: 25px;
+            padding-left: 25px;
+            font-size: 1.4rem;
+        }
+    }
+        
+    @include afterMQ300{
+        width: $pop_warning_width_max_B500;
+        margin-left: calc(calc(#{$pop_warning_width_max_B500} * -1) / 2); 
+        
+        h2{
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 1.6rem;
+        }
+    }
+
+    @include afterMQ500{
+        width: $pop_warning_width_A500;
+        margin-left: calc(calc(#{$pop_warning_width_A500} * -1) / 2); 
+        
+        h2{
+            padding-right: 5px;
+            padding-left: 5px;
+        }  
     }
     
     @include beforeMQ650{
