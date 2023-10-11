@@ -149,7 +149,7 @@ if(isset($nav_pageCurrent_id)):
     $class_ini_main         .= $nav_pageCurrent_id .' '; endif; 
     
 //----- Finals
-    $class_end_main         = '';   
+    $class_end_main         = 'containerA1600';   
 
 if($page_construccion == 1):
     $class_end_main         .= 'page_construccion '; endif; 

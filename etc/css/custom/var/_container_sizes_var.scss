@@ -64,3 +64,19 @@ $container_value_max_A1300:          $container_value_max_A1200;
 $container_value_max_A1400:          1300px;
 $container_value_max_A1500:          $container_value_max_A1400;
 $container_value_max_A1600:          $container_value_max_A1500;
+
+// REF [38] Container max width
+$container_max_width_PR:            30px;
+$container_max_width_PL:            $container_max_width_PR;
+$container_max_width_PH:            calc(#{$container_max_width_PR} + #{$container_max_width_PL});
+    
+/* // Container Grid Variables  --------------------------------------------- */
+$right_container_A768:      calc(calc(100% - calc(#{$container_value_max_A768}) - 0px) / 2);
+$right_container_A850:      calc(calc(100% - calc(#{$container_value_max_A850}) - 0px) / 2);
+$right_container_A900:      calc(calc(100% - calc(#{$container_value_max_A900}) - 0px) / 2);
+$right_container_A1024:     calc(calc(100% - calc(#{$container_value_max_A1024}) - 0px) / 2);
+$right_container_A1200:     calc(calc(100% - calc(#{$container_value_max_A1200}) - 0px) / 2);
+$right_container_A1300:     calc(calc(100% - calc(#{$container_value_max_A1300}) - 0px) / 2);
+$right_container_A1400:     calc(calc(100% - calc(#{$container_value_max_A1400}) - 0px) / 2);
+$right_container_A1500:     calc(calc(100% - calc(#{$container_value_max_A1500}) - 0px + #{$container_max_width_PH}) / 2);
+$right_container_A1600:     calc(calc(100% - calc(#{$container_value_max_A1600}) - 0px + #{$container_max_width_PH}) / 2);
