@@ -138,8 +138,6 @@
             margin-left: $container_value_half_negative_A350;
         }
         @include afterMQ500{
-            position: absolute;
-            left: 50%;   
             margin-left: $container_value_half_negative_A500;
         }
         @include afterMQ600{
