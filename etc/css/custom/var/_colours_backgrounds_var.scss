@@ -117,9 +117,10 @@ $bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
 //$bgRedColour:       map-get($colours_backgrounds_map, RedColour);
 
 /*___ Declaramos las var para colores de fondo _*/
-$bgColour_body:        $bgWhite;    
-$bgColour_main_global: $bgGreyM;
-$img_bgColour_global:  $bgGreyL;
+$body_bgColour:         $bgGrey4XL;
+$main_bgColour:         $bgWhite;
+$bgColour_neutral:      $bgGreyM;
+$img_bgColour_global:   $bgGreyL;
 
 
 $colours_backgrounds_hover_map:(    
@@ -129,7 +130,7 @@ $colours_backgrounds_hover_map:(
 // *.bgBlack:focus, *.bgBlack:hover{background-color: #hex}
 
 
-    mainBgColour: darken($bgColour_main_global, 20%),
+    mainBgColour: darken($bgColour_neutral, 20%),
 /*    bgGrey: lighten($bgGreyM, 20%)*/
 );
 

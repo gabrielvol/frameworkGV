@@ -49,6 +49,8 @@
 @import 'imp/page_headerFixed_imp';
 
 #main{
+    background-color: $main_bgColour;
+    
     @include beforeMQ768{
         @if $nav_accordion_act == "on"{
             padding-top: $header_navAccordion_height_BT;

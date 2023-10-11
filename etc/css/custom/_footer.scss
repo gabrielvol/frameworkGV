@@ -3,7 +3,9 @@
    ========================================================================== */
 @import 'imp/footer_fullHeight_imp';
 
-#footer{    
+#footer{
+    background-color: $footer_bgColour;
+    
     .nav_footer{
         position: relative;
         
