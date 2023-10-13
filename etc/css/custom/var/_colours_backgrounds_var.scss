@@ -61,7 +61,7 @@ $colours_backgrounds_map:(
 // background-color: $bgBlack;
 
 
-//  RedColour:      $redColour,
+//  RedColourM:     $redColourM,
 
     White:          $white,
     Black:          $black,
@@ -114,7 +114,7 @@ $bgGreyXD:          map-get($colours_backgrounds_map, GreyXD);
 $bgGrey2XD:         map-get($colours_backgrounds_map, Grey2XD);
 $bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
 
-//$bgRedColour:       map-get($colours_backgrounds_map, RedColour);
+//$bgRedColourM:      map-get($colours_backgrounds_map, RedColourM);
 
 /*___ Declaramos las var para colores de fondo _*/
 $body_bgColour:         $bgGrey4XL;

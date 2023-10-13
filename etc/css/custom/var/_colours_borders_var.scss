@@ -46,7 +46,7 @@
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio. No se genera ningún CSS de este mapa. Solamente se utilizan las var declaradas abajo en los archivos .scss
 $colours_borders_map:(
-//  redColour:      $redColour,
+//  redColourM:     $redColourM,
 
     white:          $white,
     black:          $black,
@@ -97,7 +97,7 @@ $bdGreyXD:          map-get($colours_borders_map, greyXD);
 $bdGrey2XD:         map-get($colours_borders_map, grey2XD);
 //$bdGrey3XD:         map-get($colours_borders_map, grey3XD);
 
-//$bdRedColour:       map-get($colours_borders_map, redColour);
+//$bdRedColourM:      map-get($colours_borders_map, redColourM);
  
 $bdColour_main_global:              $bdGreyM;
 $bdColour_main_global_hover:        darken($bdColour_main_global, 15%);

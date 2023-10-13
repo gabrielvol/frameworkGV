@@ -63,6 +63,10 @@
 @mixin afterMQ300{
     @media (min-width: 301px){@content;}}
     
+@mixin MQ300_navBT{
+    @media (min-width: 301px)
+        and (max-width: #{$mq_nav_BT}){@content;}}
+    
 @mixin MQ300_768{
     @media (min-width: 301px)
         and (max-width: 767px){@content;}}

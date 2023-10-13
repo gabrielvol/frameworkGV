@@ -1,4 +1,44 @@
-<img src="<?php echo $dir_env; ?>/img/img_NOMBREIMG_1000.jpg" alt=""
+<div class="global_MQ_B500">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_0600.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A500">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_1000.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A600">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_1000.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A800">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_1000.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A1000">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_1000.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A1300">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_1300.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A1500">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_1500.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A2000">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_2000.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A2500">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_2500.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+
+<div class="global_MQ_A3000">
+    <img src="<?php echo $dir_env; ?>/img/img_main_01_3000.jpg" alt="" <?php /* uk-scrollspy="cls: uk-animation-kenburns; repeat: true" */ ?> />
+</div>
+            
+            <img src="<?php echo $dir_env; ?>/img/img_NOMBREIMG_1000.jpg" alt=""
     srcset="<?php echo $dir_env; ?>/img/img_NOMBREIMG_0600.jpg 600w, <?php echo $dir_env; ?>/img/img_NOMBREIMG_1000.jpg 1000w" />
 
 <img src="<?php echo $dir_env; ?>/img/img_NOMBREIMG_2000.jpg" alt=""
