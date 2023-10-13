@@ -75,7 +75,7 @@ $colours_backgrounds_map:(
     
     GreenWhatsApp:  $greenWhatsApp,
     
-//  Grey4XL:        $grey4XL,
+    Grey4XL:        $grey4XL,
     Grey3XL:        $grey3XL,
     Grey2XL:        $grey2XL,
     GreyXL:         $greyXL,
@@ -103,7 +103,7 @@ $bgGreenSystemM:    map-get($colours_backgrounds_map, GreenSystemM);
 
 $bgGreenWhatsApp:   map-get($colours_backgrounds_map, GreenWhatsApp);
 
-//$bgGrey4XL:         map-get($colours_backgrounds_map, Grey4XL);
+$bgGrey4XL:         map-get($colours_backgrounds_map, Grey4XL);
 $bgGrey3XL:         map-get($colours_backgrounds_map, Grey3XL);
 $bgGrey2XL:         map-get($colours_backgrounds_map, Grey2XL);
 $bgGreyXL:          map-get($colours_backgrounds_map, GreyXL);

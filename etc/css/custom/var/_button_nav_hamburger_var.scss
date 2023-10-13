@@ -47,8 +47,8 @@
 /* // Button Hambuger Sizes ------------------------------------------------- */
 $button_hamb_open_width:        90px;
 $button_hamb_open_height:       40px;
-$button_hamb_close_size:        $button_hamb_open_height;
 $button_hambOnly_size:          45px;
+$button_hamb_close_size:        $button_hamb_open_height; // REF [11] Si está activado $hamburger_only_act el valor debe ser $button_hambOnly_size
     
 /*___ Button Hambuger Sizes Accordion ___*/
 $nav_accordion_hamburger_height:    40px;
