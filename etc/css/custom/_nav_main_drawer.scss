@@ -67,15 +67,19 @@
                     padding: 0 10px 0 30px;
                     font-size: 1rem;
                     line-height: $button_hamb_open_height;
-                }   
+                }  
+            
+                &.site_scrolled_js{
+                    background-color: $modal_nav_bgColour;
+                } 
                 
                 &.button_hamb_open_pressed{
                     opacity: 0.5;
                     color: $button_hamb_ftColour_clicked;
-                }
             
-                &.site_scrolled_js{
-                    background-color: $button_hamb_open_siteScrolled_bgColour;
+                    &.site_scrolled_js{
+                        background-color: transparent;
+                    } 
                 }
             }
 
