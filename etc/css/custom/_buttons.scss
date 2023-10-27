@@ -133,19 +133,19 @@ button{
         &,
         &:visited,
         &:active{
-            border-color: $bdWhite;
-            background-color: $bgWhite;
-            color: $greyXD;
+            border-color: $button_callToAction_white_bdColour;
+            background-color: $button_callToAction_white_bgColour;
+            color: $button_callToAction_white_ftColour;
         }
 
         &:focus,
         &:focus-visible,
         &:hover{
-            border-color: $bdGrey3XL;
-            background-color: $bgGrey3XL;
-            color: $greyD;
-            box-shadow: 0 0 3px $greyL;
-            text-shadow: 0 0 3px $greyL;
+            box-shadow: $bxShadow_none;
+            border-color: $button_callToAction_white_bdColour_hover;
+            background-color: $button_callToAction_white_bgColour_hover;
+            color: $button_callToAction_white_ftColour_hover;
+            text-shadow: $txShadow_none;
         }
     }
     
