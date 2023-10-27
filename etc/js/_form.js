@@ -10,4 +10,19 @@ $(document).ready(function () {
             $(".vendeinet").show();
         }               
     });
+
+    $("#formMainID").submit(function (e) {
+        var mensaje = $("#mensaje").val();
+
+        if (mensaje.length > 200) {
+            e.preventDefault();
+            alert("El mensaje no puede tener más de 200 caracteres.");
+        }
+    });
+
+    $('#mensaje').on('paste', function (e) {
+        e.preventDefault();
+        alert('No se permite pegar texto en este campo.');
+    });
+
 });
