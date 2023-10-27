@@ -4,6 +4,9 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
+// Archivo de asignación de variables para envíos del formulario
+// Este archivo solamente se carga si la variable $has_form tiene asignado un 1
+// REF [36]
 
 
 
@@ -45,53 +48,55 @@
 
 
 
-/* // Form Main ------------------------------------------------------------- */   
-///-- Produccion / Stage
-if($dir_env == '' || $dir_env == '/stage'):
-    $form_recipient__formMain           = $site_email_EMAILA;
-    $form_recipient_CC__formMain        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
-    $form_recipient_BCC__formMain       = 'tampas@gmail.com'; // TODO
-else:
-    
+/* // Form Main // REF [36] ------------------------------------------------- */
+if($dir_env !== '' && $dir_env !== '/stage'):
+    // test / maqueta
     $form_recipient__formMain           = 'tampas@gmail.com';
-    $form_recipient_CC__formMain        = '';
-    $form_recipient_BCC__formMain       = '';
+    $form_recipient_CC__formMain        = 'gabrielvol@protonmail.com';
+    $form_recipient_BCC__formMain       = 'ggvv@hotmail.com.ar';
+else:
+    // produ / stage
+    $form_recipient__formMain           = 'gabrielvol@protonmail.com'; // $site_email_info;
+    $form_recipient_CC__formMain        = 'tampas@gmail.com'; // $site_email_info; // . ', ' . $site_email_EMAILB;
+    $form_recipient_BCC__formMain       = 'ggvv@hotmail.com.ar';
+    
 endif;
 
 $form_status_recipient__formMain        = $form_recipient__formMain;
 $form_status_recipient_mailto__formMain = 'mailto:'. $form_recipient__formMain;
 
 
-/* // Form Contacto --------------------------------------------------------- */   
-///-- Produccion / Stage
-if($dir_env == '' || $dir_env == '/stage'):
-    $form_recipient__formContacto           = $site_email_EMAILA;
-    $form_recipient_CC__formContacto        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
-    $form_recipient_BCC__formContacto       = 'tampas@gmail.com'; // TODO
-else:
-    
+/* // Form Contacto // REF [36] --------------------------------------------- */
+if($dir_env !== '' && $dir_env !== '/stage'):
+    // test / maqueta
     $form_recipient__formContacto           = 'tampas@gmail.com';
-    $form_recipient_CC__formContacto        = '';
-    $form_recipient_BCC__formContacto       = '';
+    $form_recipient_CC__formContacto        = 'gabrielvol@protonmail.com';
+    $form_recipient_BCC__formContacto       = 'ggvv@hotmail.com.ar';
+else:
+    // produ / stage
+    $form_recipient__formContacto           = 'gabrielvol@protonmail.com'; // $site_email_info;
+    $form_recipient_CC__formContacto        = 'tampas@gmail.com'; // $site_email_info; // . ', ' . $site_email_EMAILB;
+    $form_recipient_BCC__formContacto       = 'ggvv@hotmail.com.ar';
 endif;
 
 $form_status_recipient__formContacto        = $form_recipient__formContacto;
 $form_status_recipient_mailto__formContacto = 'mailto:'. $form_recipient__formContacto;
 
 
-/* // Form Footer ----------------------------------------------------------- */   
-///-- Produccion / Stage
-if($dir_env == '' || $dir_env == '/stage'):
-    $form_recipient__formFooter           = $site_email_EMAILA;
-    $form_recipient_CC__formFooter        = $site_email_EMAILA . ', ' . $site_email_EMAILB;
-    $form_recipient_BCC__formFooter       = 'tampas@gmail.com'; // TODO
-else:
-    
+/* // Form Footer // REF [36] ----------------------------------------------- */
+if($dir_env !== '' && $dir_env !== '/stage'):
+    // test / maqueta
     $form_recipient__formFooter           = 'tampas@gmail.com';
-    $form_recipient_CC__formFooter        = '';
-    $form_recipient_BCC__formFooter       = '';
+    $form_recipient_CC__formFooter        = 'gabrielvol@protonmail.com';
+    $form_recipient_BCC__formFooter       = 'ggvv@hotmail.com.ar';
+else:
+    // produ / stage    
+    $form_recipient__formFooter           = 'gabrielvol@protonmail.com'; // $site_email_info;
+    $form_recipient_CC__formFooter        = 'tampas@gmail.com'; // $site_email_info; // . ', ' . $site_email_EMAILB;
+    $form_recipient_BCC__formFooter       = 'ggvv@hotmail.com.ar';
 endif;    
 
 $form_status_recipient__formFooter        = $form_recipient__formFooter;
 $form_status_recipient_mailto__formFooter = 'mailto:'. $form_recipient__formFooter;
+
 ?>

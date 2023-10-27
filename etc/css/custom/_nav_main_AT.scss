@@ -4,12 +4,12 @@
 .nav_main{
     @include navAT{// REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         @if $header_logoNav_floated_flexbox_act_AT == "on"{
-            width: calc(100% - #{$logo_width_AT});
+            width: calc(100% - #{$logo_width_A768});
         } 
         
         @if $header_logoNav_floated_act == "on"{
             float: left;
-            width: calc(100% - #{$logo_width_AT});
+            width: calc(100% - #{$logo_width_A768});
         } 
          
         @if $nav_fixed_AT_act == "on"{ // REF [15]

@@ -18,9 +18,9 @@
         <?php echo $nav_main_item_contacto; ?>
     </a>
 </li>
-<li class="nav_item_PAGEINT <?php if($nav_pageCurrent == 'PAGE_PAGEINT') { echo ' nav_item_current'; } ?>">
-    <a <?php echo $href_PAGINA; if($nav_pageCurrent == 'PAGE_PAGEINT') { echo ' aria-current="page"'; } ?>>
-        <?php echo $nav_main_item_PAGEINT; ?>
+<li class="nav_item_PAGINA <?php if($nav_pageCurrent == 'page_PAGINA') { echo ' nav_item_current'; } ?>">
+    <a <?php echo $href_PAGINA; if($nav_pageCurrent == 'page_PAGINA') { echo ' aria-current="page"'; } ?>>
+        <?php echo $nav_main_item_PAGINA; ?>
     </a>
 </li>
 
@@ -29,16 +29,16 @@
         <?php echo $nav_main_item_home; ?>
     </a>
 </li>
-<li class="nav_item_PAGEINT nav_item_noLink_js">
+<li class="nav_item_PAGINA nav_item_noLink_js">
     <a href="<?php if($page_int == 1) { echo $url_SECCION_hs_INICIO; } else { echo $hash_SECCION; } ?>">
-        <?php echo $nav_main_item_PAGEINT; ?>
+        <?php echo $nav_main_item_PAGINA; ?>
     </a>
 </li>
 
 <?php /* Con gettext */ ?>
-<li class="nav_item_PAGEINT nav_item_noLink_js">
+<li class="nav_item_PAGINA nav_item_noLink_js">
     <a <?php if($page_int == 1) { echo 'href="'. $url_PAGINA_full_gettext .'"'; } else { echo $href_PAGINA_gettext; } ?>>
-        <?php echo $nav_main_item_PAGEINT; ?>
+        <?php echo $nav_main_item_PAGINA; ?>
     </a>
 </li>
 
@@ -62,9 +62,9 @@
             </a>
         </li>
         
-        <li class="<?php if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' nav_item_current'; } ?>">
-            <a <?php echo $href_PAGINA; if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' aria-current="page"'; } ?>>
-                <?php echo $nav_main_item_PAGEINT; ?>
+        <li class="<?php if($nav_pageCurrent_int == 'page_PAGINA_home') { echo ' nav_item_current'; } ?>">
+            <a <?php echo $href_PAGINA; if($nav_pageCurrent_int == 'page_PAGINA_home') { echo ' aria-current="page"'; } ?>>
+                <?php echo $nav_main_item_PAGINA; ?>
             </a>
         </li>
     </ul>
@@ -88,17 +88,17 @@
                     </a>
                 </li>  
         
-                <li class="<?php if($nav_pageCurrent_int == 'page_PAGEINT_ID') { echo ' nav_item_current'; } ?>">
-                    <a <?php echo $href_PAGINA; if($nav_pageCurrent_int == 'page_PAGEINT_ID') { echo ' aria-current="page"'; } ?>>
+                <li class="<?php if($nav_pageCurrent_int == 'page_PAGINA_ID') { echo ' nav_item_current'; } ?>">
+                    <a <?php echo $href_PAGINA; if($nav_pageCurrent_int == 'page_PAGINA_ID') { echo ' aria-current="page"'; } ?>>
                         <?php echo $nav_main_item_PAGEID; ?>
                     </a>
                 </li>
             </ul>    
         </li>    
         
-        <li class="<?php if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' nav_item_current'; } ?>">
-            <a <?php echo $href_PAGINA; if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' aria-current="page"'; } ?>>
-                <?php echo $nav_main_item_PAGEINT; ?>
+        <li class="<?php if($nav_pageCurrent_int == 'page_PAGINA_home') { echo ' nav_item_current'; } ?>">
+            <a <?php echo $href_PAGINA; if($nav_pageCurrent_int == 'page_PAGINA_home') { echo ' aria-current="page"'; } ?>>
+                <?php echo $nav_main_item_PAGINA; ?>
             </a>
         </li>
     </ul>

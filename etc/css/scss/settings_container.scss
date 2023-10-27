@@ -736,7 +736,7 @@
             }
         }
         @include afterMQ850{
-            width: $container_value_max_A850;
+            max-width: $container_value_max_A850;
             &.container_centered_absolute_A650{
                 margin-left: $container_value_max_half_negative_A850;
             }

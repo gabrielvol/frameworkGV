@@ -296,6 +296,14 @@
     @media (min-width: 1101px){@content;}}
     
     
+/* // 1150px ---------------------------------------------------------------- */
+@mixin beforeMQ1150{
+    @media (max-width: 1150px){@content;}}
+    
+@mixin afterMQ1150{
+    @media (min-width: 1151px){@content;}}
+    
+    
 /* // 1200px ---------------------------------------------------------------- */
 @mixin beforeMQ1200{
     @media (max-width: 1200px){@content;}}

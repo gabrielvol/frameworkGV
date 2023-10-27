@@ -65,12 +65,12 @@ $logo_height_clicked_final: calc(#{$logo_clicked_height} + #{$logo_clicked_heigh
 
 
 /* // Logo Sizes AT --------------------------------------------------------- */
-$logo_width_AT:             $logo_width_A500;
+$logo_width_A768:             $logo_width_A500;
 $logo_height_AT_before:     auto;
  
-$logo_width_TO:             $logo_width_AT;
+$logo_width_TO:             $logo_width_A768;
 
-$logo_width_A1024:          $logo_width_AT;
+$logo_width_A1024:          $logo_width_A768;
 $logo_height_A1024_before:  auto;
 
 $logo_width_A1200:          $logo_width_A1024;

@@ -219,7 +219,7 @@
             @if $logo_bgImage_before_act == "on"{
                 &,
                 a{
-                    width: $logo_width_AT;
+                    width: $logo_width_A768;
                     height: $logo_height_AT_before;
                 }  
                 
@@ -228,7 +228,7 @@
                 }                
                 
             } @else {
-                width: $logo_width_AT;
+                width: $logo_width_A768;
             
                 a,
                 img{
