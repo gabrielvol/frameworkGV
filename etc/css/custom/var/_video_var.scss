@@ -1,0 +1,152 @@
+/* * NombreDeProyecto * ========================================================
+   Video Variables | Custom [/etc/css/custom/var/video_var.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de variables scss.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq, MQ               = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con pseudo-clases :focus y :hover
+// _hs                  = hash
+// _imp			= importacion
+// _mx                  = mixin
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Video sizes ----------------------------------------------------------- */
+$video_home_width_B300:   280px;
+$video_home_height_B300:    156px;
+
+$video_home_width_A300:     300px;
+$video_home_height_A300:    168px;
+
+$video_home_width_A325: 330px;
+$video_home_height_A325: 186px;
+
+$video_home_width_A350:     350px;
+$video_home_height_A350:    196px;
+
+$video_home_width_A400: 400px;
+$video_home_height_A400: 226px;
+
+$video_home_width_A425: 430px;
+$video_home_height_A425: 244px;
+
+$video_home_width_A450: 450px;
+$video_home_height_A450: 254px;
+
+$video_home_width_A500: 500px;
+$video_home_height_A500: 280px;
+
+$video_home_width_A550: 520px;
+$video_home_height_A550: 300px;
+
+$video_home_width_A600: 600px;
+$video_home_height_A600: 336px;
+
+$video_home_width_A1300: 648px;
+$video_home_height_A1300: 366px;
+
+$video_home_width_A1400: 707px;
+$video_home_height_A1400: 400px;
+
+$video_home_width_A1600: 743px;
+$video_home_height_A1600: 420px;
+
+
+
+/*___ Video shorts ______________________*/
+$video_shorts_width_B300:     300px;
+$video_shorts_height_B300:    458px;
+
+$video_shorts_width_A300:     350px;
+$video_shorts_height_A300:    518px;
+
+$video_shorts_width_A350:     240px;
+$video_shorts_height_A350:    426px;
+
+$video_shorts_width_A400: 400px;
+$video_shorts_height_A400: 226px;
+
+$video_shorts_width_A450: 450px;
+$video_shorts_height_A450: 254px;
+
+$video_shorts_width_A500: 220px;
+$video_shorts_height_A500: 390px;
+
+$video_shorts_width_A550: 520px;
+$video_shorts_height_A550: 300px;
+
+$video_shorts_width_A600: 600px;
+$video_shorts_height_A600: 336px;
+
+$video_shorts_width_A650:     196px;
+$video_shorts_height_A650:    350px;
+
+$video_shorts_width_A700: 330px;
+$video_shorts_height_A700: 370px;
+
+$video_shorts_width_A768: $video_shorts_width_A350;
+$video_shorts_height_A768: $video_shorts_height_A350;
+
+$video_shorts_width_A850: $video_shorts_width_A400;
+$video_shorts_height_A850: 350px;
+
+$video_shorts_width_A950: 224px;
+$video_shorts_height_A950: 400px;
+
+$video_shorts_width_A1024: $video_shorts_width_A500;
+$video_shorts_height_A1024: $video_shorts_height_A500;
+
+$video_shorts_width_A1100: $video_shorts_width_A550;
+$video_shorts_height_A1100: $video_shorts_height_A550;
+
+$video_shorts_width_A1200: $video_shorts_width_A600;
+$video_shorts_height_A1200: $video_shorts_height_A600;
+
+$video_shorts_width_A1300: 648px;
+$video_shorts_height_A1300: 366px;
+
+$video_shorts_width_A1400: 707px;
+$video_shorts_height_A1400: 400px;
+
+$video_shorts_width_A1500: $video_shorts_width_A1400;
+$video_shorts_height_A1500: $video_shorts_height_A1400;
+
+$video_shorts_width_A1600: 743px;
+$video_shorts_height_A1600: 420px;
+        
+
+/* // Video colours --------------------------------------------------------- */

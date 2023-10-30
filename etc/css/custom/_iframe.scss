@@ -18,19 +18,98 @@
 .iframe_video_mask{
     background-color: $bgGrey3XD;
 
-    @include beforeMQ500{
-        width: $pop_video_width_B500;
-        height: $pop_video_height_B500;
+    @include beforeMQ350{
+        width: $video_home_width_B350;
+        height: $video_home_height_B350;
+    }
+
+    @include afterMQ350{
+        width: $video_home_width_A350;
+        height: $video_home_height_A350;
+    }
+
+    @include afterMQ400{
+        width: $video_home_width_A400;
+        height: $video_home_height_A400;
+    }
+
+    @include afterMQ450{
+        width: $video_home_width_A450;
+        height: $video_home_height_A450;
     }
 
     @include afterMQ500{
-        width: $pop_video_width_A500;
-        height: $pop_video_heigth_A500;
+        width: $video_home_width_A500;
+        height: $video_home_height_A500;
     }
     
+    @include afterMQ550{
+        width: $video_home_width_A550;
+        height: $video_home_height_A550;
+    }
+
+    @include afterMQ600{
+        width: $video_home_width_A600;
+        height: $video_home_height_A600;
+    }
+
+    @include afterMQ600{
+        width: $video_home_width_A600;
+        height: $video_home_height_A600;
+    }
+    @include afterMQ650{
+        width: $video_home_width_A650;
+        height: $video_home_height_A650;
+    }
+
+    @include afterMQ700{
+        width: $video_home_width_A700;
+        height: $video_home_height_A700;
+    }
+
     @include afterMQ768{
-        width: $pop_video_width_AT;
-        height: $pop_video_heigth_AT;
+        width: $video_home_width_A768;
+        height: $video_home_height_A768;
+    }
+
+    @include afterMQ850{
+        width: $video_home_width_A850;
+        height: $video_home_height_A850;
+    }
+
+    @include afterMQ950{
+        width: $video_home_width_A950;
+        height: $video_home_height_A950;
+    }
+
+    @include afterMQ1024{
+        width: $video_home_width_A1024;
+        height: $video_home_height_A1024;
+    }
+
+    @include afterMQ1100{
+        width: $video_home_width_A1100;
+        height: $video_home_height_A1100;
+    }
+
+    @include afterMQ1200{
+        width: $video_home_width_A1200;
+        height: $video_home_height_A1200;
+    }
+
+    @include afterMQ1300{
+        width: $video_home_width_A1300;
+        height: $video_home_height_A1300;
+    }
+
+    @include afterMQ1400{
+        width: $video_home_width_A1400;
+        height: $video_home_height_A1400;
+    }
+
+    @include afterMQ1500{
+        width: $video_home_width_A1500;
+        height: $video_home_height_A1500;
     }
 }
 
