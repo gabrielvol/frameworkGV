@@ -312,12 +312,28 @@
     @media (min-width: 1201px){@content;}}
     
     
+/* // 1250px ---------------------------------------------------------------- */
+@mixin beforeMQ1250{
+    @media (max-width: 1250px){@content;}}
+    
+@mixin afterMQ1250{
+    @media (min-width: 1251px){@content;}}
+    
+    
 /* // 1300px ---------------------------------------------------------------- */
 @mixin beforeMQ1300{
     @media (max-width: 1300px){@content;}}
     
 @mixin afterMQ1300{
     @media (min-width: 1301px){@content;}}
+    
+    
+/* // 1350px ---------------------------------------------------------------- */
+@mixin beforeMQ1350{
+    @media (max-width: 1350px){@content;}}
+    
+@mixin afterMQ1350{
+    @media (min-width: 1351px){@content;}}
     
     
 /* // 1400px ---------------------------------------------------------------- */

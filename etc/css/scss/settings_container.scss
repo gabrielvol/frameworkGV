@@ -340,7 +340,7 @@
             }
         }
     }    
-    @if $classes_container_act_AT == "on"{
+    @if $classes_container_act_A768 == "on"{
         &.container_centered_absolute_A768{
             @include afterMQ768{
                 position: absolute;
@@ -810,7 +810,7 @@
         }
     }
 }
-@if $classes_container_act_BT == "on"{
+@if $classes_container_act_B768 == "on"{
     .containerB768{
         @include beforeMQ350{
             max-width: $container_value_max_B350;
@@ -829,7 +829,7 @@
         }
     }
 }
-@if $classes_container_act_AT == "on"{
+@if $classes_container_act_A768 == "on"{
     .containerA768{
         @include afterMQ768{
             width: calc(100% - #{$container_max_width_PH});

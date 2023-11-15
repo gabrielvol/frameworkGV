@@ -136,15 +136,15 @@ $url_custom             = 'http://www.' . $domain_custom;
 // Los vínculos que tienen un hash creado deben ser comentados en la siguiente
 // lista
 
-$url_index_full         = $url_main . $url_index;
-//$url_inicio_full        = $url_main . $url_inicio;
-$url_contacto_full      = $url_main . $url_contacto;
-//$url_gracias_full       = $url_main . $url_gracias;
-//$url_construccion_full  = $url_main . $url_construccion;
-//$url_copyright_full     = $url_main . $url_copyright;
-// $url_PAGINAfull         = $url_main . $url_PAGINA;
-// $url_PAGINAfull         = $url_main . $url_PAGINA;
-// $url_PAGINAfull         = $url_main . $url_PAGINA;
+$url_index_full         = $url_wip . $url_index;
+//$url_inicio_full        = $url_wip . $url_inicio;
+$url_contacto_full      = $url_wip . $url_contacto;
+//$url_gracias_full       = $url_wip . $url_gracias;
+//$url_construccion_full  = $url_wip . $url_construccion;
+//$url_copyright_full     = $url_wip . $url_copyright;
+// $url_PAGINAfull         = $url_wip . $url_PAGINA;
+// $url_PAGINAfull         = $url_wip . $url_PAGINA;
+// $url_PAGINAfull         = $url_wip . $url_PAGINA;
 
 /*___ full urls para hashes traducidas ___*/
     //$url_inicio_hs_INICIO_full    = $url_main . $url_inicio . $hash_inicio;
@@ -188,19 +188,19 @@ $href_main_hs_INICIO       = 'href="' . $url_main_hs_INICIO . '"';
 // $href_SECCION_hs_PAGINA      = 'href="' . $url_SECCION_hs_PAGINA . '"';
      
 /*___ href para hashes traducidas ________*/
-    $url_main_hs_full       = $url_main . $url_main_hs;
-    //$url_inicio_hs_full     = $url_main . $url_inicio_hs;
-    //$url_contacto_hs_full   = $url_main . $url_contacto_hs;
-    // $url_PAGINA_hs_full     = $url_main . $url_PAGINA;
-    // $url_PAGINA_hs_full     = $url_main . $url_PAGINA;
-    // $url_PAGINA_hs_full     = $url_main . $url_PAGINA;
+    $url_main_hs_full       = $url_wip . $url_main_hs;
+    //$url_inicio_hs_full     = $url_wip . $url_inicio_hs;
+    //$url_contacto_hs_full   = $url_wip . $url_contacto_hs;
+    // $url_PAGINA_hs_full     = $url_wip . $url_PAGINA;
+    // $url_PAGINA_hs_full     = $url_wip . $url_PAGINA;
+    // $url_PAGINA_hs_full     = $url_wip . $url_PAGINA;
 
-    $url_main_hs_INICIO_full        = $url_main . $url_index . $hash_main;
-    //$url_inicio_hs_INICIO_full      = $url_main . $url_index . $hash_inicio;
-    //$url_contacto_hs_INICIO_full    = $url_main . $url_index . $hash_contacto;
-    // $url_PAGINA_hs_PAGINA_full      = $url_main . $url_PAGINA . $url_PAGINA;
-    // $url_PAGINA_hs_PAGINA_full      = $url_main . $url_PAGINA . $url_PAGINA;
-    // $url_PAGINA_hs_PAGINA_full      = $url_main . $url_PAGINA . $url_PAGINA;
+    $url_main_hs_INICIO_full        = $url_wip . $url_index . $hash_main;
+    //$url_inicio_hs_INICIO_full      = $url_wip . $url_index . $hash_inicio;
+    //$url_contacto_hs_INICIO_full    = $url_wip . $url_index . $hash_contacto;
+    // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
+    // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
+    // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
     
 
 
