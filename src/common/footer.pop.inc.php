@@ -12,11 +12,11 @@ if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT
     include('pop.inc.php');
 endif;
     
-if($page_int == 1): // Internas
+if(!empty($page_int)): // Internas
     include('pop.inc.php');
 endif;
  * 
-if($has_pop_video == 1):
+if(!empty($has_pop_video)):
     include('pop.video.inc.php');
 endif;
 */

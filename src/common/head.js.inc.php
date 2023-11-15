@@ -7,7 +7,7 @@
 <?php if($nav_pageCurrent == 'page_index'): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 */ ?>
-<?php endif; if($page_int == 1): /* // Internas
+<?php endif; if(!empty($page_int)): /* // Internas
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 */ ?>
 <?php endif; if($nav_pageCurrent_int == 'page_home'): /*
@@ -32,7 +32,7 @@
 <?php endif; if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 */ ?>
-<?php endif; if($page_construccion == 1): /*
+<?php endif; if(!empty($page_construccion)): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 */ ?>
 <?php endif; ?>
