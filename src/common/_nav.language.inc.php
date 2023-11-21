@@ -32,7 +32,7 @@
     $gettext_languageName_ZH    = "sinTraduccion";
 ?>
 <nav class="nav_language">
-    <ul class="nav_language_ul unstyled displayFlex <?php if($gettext_idioma == 'de_DE') {
+    <ul class="nav_language_ul unstyled displayFlex <?php if(isset($gettext_idioma)){ if($gettext_idioma == 'de_DE') {
             // REF [33]
             echo ' lang_DE'; }
             
@@ -42,7 +42,7 @@
         elseif($gettext_idioma == 'pt_BR') {
             echo ' lang_BR'; }
             
-        else { echo ' lang_AR'; } ?>">
+        else { echo ' lang_AR'; } } ?>">
         <li>
             <a href="<?php echo $dir_env; ?>/?l=es_AR" hreflang="es" class="hover_grow_M_ani">
                 <img src="<?php echo $dir_env; ?>/img/flag_ar.svg" alt="<?php echo $gettext_switchMsg_AR; ?>." />

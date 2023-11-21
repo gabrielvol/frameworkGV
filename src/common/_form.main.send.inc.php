@@ -1,10 +1,10 @@
 <?php
 /* // Form Status ----------------------------------------------------------- */
-if($gettext_idioma == 'en_GB'){
+if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     include('form.main.status.en.inc.php');
 } else {
     include('form.main.status.es.inc.php');
-}
+} }
 
 
 /* // Inicia proceso de form ------------------------------------------------ */

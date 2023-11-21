@@ -1,5 +1,9 @@
 <?php
     $dir_env = '/stage';
+    
+//    ini_set('display_errors', 0);
+//    ini_set('log_errors', 1);
+    
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/gettext/languageCheck.inc.php');
 //    $page_var               = $_GET['page_var']; 
     
