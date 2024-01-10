@@ -69,7 +69,8 @@ include('email.var.inc.php');
 // include('file.var.inc.php');
 // include('media.var.inc.php');
 
-if(!empty($has_form)){ include('form.var.inc.php'); } // REF [36]
+// REF [36]
+if(!empty($has_form)){ include('form.var.inc.php'); }
 
 include('classes.var.inc.php');
 

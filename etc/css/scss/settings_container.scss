@@ -146,7 +146,9 @@
         @include beforeMQ350{
             position: absolute;
             left: 50%;   
-            margin-left: $container_value_half_negative_B350;
+            width: $container_value_centeredAbsolute_B350;
+            max-width: $none;
+            margin-left: $container_value_centeredAbsolute_half_negative_B350;
         }
         @include afterMQ350{
             position: absolute;

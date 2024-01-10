@@ -199,6 +199,14 @@
     @media (min-width: 701px)
         and (max-width: 767px){@content;}}
     
+@mixin MQ700_900{
+    @media (min-width: 701px)
+        and (max-width: 900px){@content;}}
+    
+@mixin MQ700_1024{
+    @media (min-width: 701px)
+        and (max-width: 1024px){@content;}}
+    
     
 /* // 750px ----------------------------------------------------------------- */
 @mixin beforeMQ750{
