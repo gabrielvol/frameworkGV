@@ -13,14 +13,14 @@
         <input type="hidden" name="data_form_hidden__formMain" id="data_form_hidden__formMain" value="Valor escondido"> 
     <?php endif; ?>
     
-    <?php if(isset($form_var)): ?>
+    <?php if(!empty($form_var)): ?>
     <label for="data_opcionSeleccionada__formMain" class="label_opcionSeleccionada__formMain">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Estoy consultando por el siguiente form_var:
         <?php else: ?>
             Subject: form_var
         <?php endif; ?></span>
-        <input type="text" name="data_opcionSeleccionada__formMain" id="data_opcionSeleccionada__formMain" class="data_opcionSeleccionada__formMain" value="<?php echo $form_var; ?>" readonly>
+        <input type="text" name="data_opcionSeleccionada__formMain" id="data_opcionSeleccionada__formMain" class="data_opcionSeleccionada__formMain" form="formMainID" value="<?php echo $form_var; ?>" readonly>
     </label>
     <?php endif; ?>
 

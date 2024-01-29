@@ -153,12 +153,14 @@ form{
 
         &:read-only{
             user-select: none;
+            cursor: not-allowed;
             
             &,
             &:focus,
             &:focus-visible,
             &:hover{
-                @include borderStyle($bdGreyL);
+                @include borderStyle($bdGreyD);
+                background-color: $bgGrey2XL;
                 box-shadow: inset 0 0 0 transparent;
             }
         }
