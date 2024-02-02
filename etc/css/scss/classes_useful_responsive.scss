@@ -52,6 +52,26 @@
 
 /* // Before MQ500 Classes -------------------------------------------------- */
 @include beforeMQ500{
+    .global_MQ_B500{
+        display: $block;
+        
+        &.displayFlex{
+            display: flex!important;
+        }
+    }
+    
+    .global_MQ_A500,
+    .global_MQ_A600,
+    .global_MQ_A800,
+    .global_MQ_A1000, 
+    .global_MQ_A1300, 
+    .global_MQ_A1500,    
+    .global_MQ_A2000,    
+    .global_MQ_A2500,    
+    .global_MQ_A3000{
+        display: $none;
+    }
+    
     @if $classes_position_display_mask_cursor_act_B500 == "on"{
 /*___ Positioning _______________________*/
         .pRelMO{position: relative}
@@ -171,6 +191,26 @@
 
 /* // After MQ500 Classes --------------------------------------------------- */
 @include afterMQ500{
+    .global_MQ_A500{
+        display: $block;
+        
+        &.displayFlex{
+            display: flex!important;
+        }
+    }
+    
+    .global_MQ_B500,
+    .global_MQ_A600,
+    .global_MQ_A800,
+    .global_MQ_A1000,
+    .global_MQ_A1300,  
+    .global_MQ_A1500,    
+    .global_MQ_A2000,    
+    .global_MQ_A2500,    
+    .global_MQ_A3000{
+        display: $none;
+    }
+    
     @if $classes_position_display_mask_cursor_act_A500 == "on"{
 /*___ Positioning _______________________*/
         .pRelAML{position: relative}
@@ -409,25 +449,6 @@
 
 /* // Before MQ600 Classes -------------------------------------------------- */
 @include beforeMQ600{
-    .global_MQ_B600{
-        display: $block;
-        
-        &.displayFlex{
-            display: flex!important;
-        }
-    }
-    
-    .global_MQ_A600,
-    .global_MQ_A800,
-    .global_MQ_A1000, 
-    .global_MQ_A1300, 
-    .global_MQ_A1500,    
-    .global_MQ_A2000,    
-    .global_MQ_A2500,    
-    .global_MQ_A3000{
-        display: $none;
-    }
-    
     @if $classes_position_display_mask_cursor_act_B600 == "on"{
 /*___ Positioning _______________________*/
         .pRelB600{position: relative}
@@ -472,13 +493,14 @@
         }
     }
     
-    .global_MQ_B600,
+    .global_MQ_B500,
+    .global_MQ_A500,
     .global_MQ_A800,
-    .global_MQ_A1000,
+    .global_MQ_A1000,   
     .global_MQ_A1300,  
-    .global_MQ_A1500,    
-    .global_MQ_A2000,    
-    .global_MQ_A2500,    
+    .global_MQ_A1500,   
+    .global_MQ_A2000,   
+    .global_MQ_A2500,   
     .global_MQ_A3000{
         display: $none;
     }
@@ -966,7 +988,8 @@
         }
     }
     
-    .global_MQ_B600,
+    .global_MQ_B500,
+    .global_MQ_A500,
     .global_MQ_A600,
     .global_MQ_A1000,   
     .global_MQ_A1300,  
@@ -988,8 +1011,9 @@
         }
     }
     
-    .global_MQ_B600,
-    .global_MQ_A600,   
+    .global_MQ_B500,
+    .global_MQ_A500,   
+    .global_MQ_A600,
     .global_MQ_A800,  
     .global_MQ_A1300, 
     .global_MQ_A1500,    
@@ -1724,8 +1748,9 @@
         }
     }
     
-    .global_MQ_B600,
-    .global_MQ_A600,   
+    .global_MQ_B500,
+    .global_MQ_A500,   
+    .global_MQ_A600,
     .global_MQ_A800,  
     .global_MQ_A1000, 
     .global_MQ_A1500,    
@@ -1746,8 +1771,9 @@
         }
     }
     
-    .global_MQ_B600,
-    .global_MQ_A600,   
+    .global_MQ_B500,
+    .global_MQ_A500,  
+    .global_MQ_A600, 
     .global_MQ_A800,  
     .global_MQ_A1000,  
     .global_MQ_A1300,  
@@ -1768,8 +1794,9 @@
         }
     }
     
-    .global_MQ_B600,
-    .global_MQ_A600,   
+    .global_MQ_B500,
+    .global_MQ_A500,   
+    .global_MQ_A600,
     .global_MQ_A800,  
     .global_MQ_A1000, 
     .global_MQ_A1300,  
@@ -1790,8 +1817,9 @@
         }
     }
     
-    .global_MQ_B600,
-    .global_MQ_A600,   
+    .global_MQ_B500,
+    .global_MQ_A500,   
+    .global_MQ_A600,
     .global_MQ_A800,  
     .global_MQ_A1000, 
     .global_MQ_A1300,  
@@ -1802,7 +1830,7 @@
     }
 }
 
-/* // After MQ3000 Classes -------------------------------------------------- */
+/* // After MQ3000 Classes --------------------------------------------------
 @include afterMQ3000{
     .global_MQ_A3000{
         display: $block;
@@ -1812,8 +1840,9 @@
         }
     }
     
-    .global_MQ_B600,
-    .global_MQ_A600,   
+    .global_MQ_B500,
+    .global_MQ_A500,   
+    .global_MQ_A600,
     .global_MQ_A800,  
     .global_MQ_A1000, 
     .global_MQ_A1300, 
@@ -1823,3 +1852,4 @@
         display: $none;
     }
 }
+*/

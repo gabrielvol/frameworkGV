@@ -99,7 +99,7 @@
     &,
     .slick-list,
     .slick-track,
-    .slick-track li{
+    .slick-slide{
 /*
         height: 300px;
 */
@@ -109,7 +109,7 @@
         &,
         .slick-list,
         .slick-track,
-        .slick-track li{
+        .slick-slide{
 /*            
             max-height: calc(85vh - #{$header_height_A1024});
 */
@@ -122,7 +122,7 @@
     &,
     .slick-list,
     .slick-track,
-    .slick-track li{
+    .slick-slide{
 /*
         height: 300px;
 */
@@ -132,7 +132,7 @@
         &,
         .slick-list,
         .slick-track,
-        .slick-track li{
+        .slick-slide{
 /*            
             max-height: calc(85vh - #{$header_height_A1024});
 */

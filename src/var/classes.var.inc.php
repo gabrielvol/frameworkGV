@@ -115,6 +115,9 @@ if(!empty($page_int)):
 
     $class_ini_footer       .= 'footer_' . $nav_pageCurrent_int . ' ';
 
+if(!empty($page_construccion)):
+    $class_ini_footer       .= 'footer_construccion '; endif; 
+
 if(!empty($nav_pageCurrent_id)):
     $class_ini_footer       .= 'footer_' . $nav_pageCurrent_id . ' '; endif; 
     

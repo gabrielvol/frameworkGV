@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, 
     font-weight: $ftWeight_global;
     font-size: $ftSize_global;
     line-height: $lineHeight_global;
+    font-style: normal;
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
     color: $ftColour_main_global;
@@ -102,11 +103,16 @@ p, ul{
         margin: $text_marginTRBL_sibling;    
     }
 }
+h2, p, li{
+    a, strong, em{
+        font-size: 1em;
+    }   
+}
 p, li{    
     b{
         font-family: $ftFamily_bold_global;
     }
-    p, li, a, strong, dl, legend{
+    p, li, dl, legend{
         font-size: 1em;
     }     
     @if $anchorUnderline == "on"{

@@ -102,7 +102,7 @@ button{
         text-decoration: $none;
     }
     
-    &
+    &,
     &:visited,
     &:active{
         color: $button_callToAction_ftColour;
@@ -332,7 +332,9 @@ button{
         &:visited,
         &:active{}
 
-        &, &:visited, &:active{ 
+        &,
+        &:visited,
+        &:active{ 
             /*background-color: $greenWhatsApp;*/
             background-color: rgba(37, 211, 102, 0.85);
         }
