@@ -10,7 +10,7 @@
     
     a,
     img{
-        display: block;
+        display: block; 
     }
     
     a{
@@ -23,14 +23,25 @@
         overflow: hidden;
     }
     
-    @include beforeMQ768{       
+    @include beforeMQ600{ 
         li{
             a,
             img{
-                @include squareSize($social_icon_size_BT);            
+                @include squareSize($social_icon_size_B600);
             }
         }
-        
+    }
+
+    @include afterMQ600{
+        li{
+            a,
+            img{
+                @include squareSize($social_icon_size_A600);
+            }
+        }
+    }
+    
+    @include beforeMQ768{            
         @if $nav_drawer_act == "on"{
             &.navDrawer_open{
                 position: fixed;
@@ -47,7 +58,7 @@
         li{
             a,
             img{
-                @include squareSize($social_icon_size_AT);            
+                @include squareSize($social_icon_size_A768);            
             }
         }
         
@@ -56,11 +67,20 @@
             @include transition(1s);
         }
     }
+    
+    @include afterMQ1024{
+        li{
+            a,
+            img{
+                @include squareSize($social_icon_size_A1024);
+            }
+        }
+    }
 }
 
-.social_fb{ // Soc Facebook
+.social_amazon{ // Soc Twitter
     a{
-        background-image: url('#{$dir_env}/img/social_fb.svg');
+        background-image: url('#{$dir_env}/img/logo_amazon.svg');
     }
 }
 
@@ -70,9 +90,9 @@
     }
 }
 
-.social_go{ // Soc Guía Oleo
+.social_fb{ // Soc Facebook
     a{
-        background-image: url('#{$dir_env}/img/social_go.svg');
+        background-image: url('#{$dir_env}/img/social_fb.svg');
     }
 }
 
@@ -84,19 +104,13 @@
 
 .social_li{ // Soc LinkedIn
     a{
-        background-image: url('#{$dir_env}/img/social_li.svg');
+        background-image: url('#{$dir_env}/img/social_in.svg');
     }
 }
 
 .social_pi{ // Soc Pinterest
     a{
         background-image: url('#{$dir_env}/img/social_pi.svg');
-    }
-}
-
-.social_sc{ // Soc SnapChat
-    a{
-        background-image: url('#{$dir_env}/img/social_sc.svg');
     }
 }
 
@@ -112,15 +126,15 @@
     }
 }
 
-.social_ta{ // Soc TripAdvisor
+.social_tk{ // Soc TikTok 
     a{
-        background-image: url('#{$dir_env}/img/social_ta.svg');
+        background-image: url('#{$dir_env}/img/social_tk.svg');
     }
 }
 
-.social_tw{ // Soc Twitter
+.social_x{ // Soc X
     a{
-        background-image: url('#{$dir_env}/img/social_tw.svg');
+        background-image: url('#{$dir_env}/img/social_x.svg');
     }
 }
 

@@ -264,6 +264,21 @@
         }
     }
     
+    @include afterMQ1100{        
+        .logo_header{
+            @if $logo_bgImage_before_act == "on"{
+                &,
+                a{
+                    width: $logo_width_A1100;
+                    height: $logo_height_A1100_before;
+                } 
+                
+            } @else {
+                width: $logo_width_A1100;
+            }
+        }  
+    }
+    
     @include afterMQ1200{
         @if $header_logoNav_floated_flexbox_act_A1200 == "on"{
             .container{

@@ -92,21 +92,26 @@ p, a, li, dd, dt, .pSize{
 p, dl, legend{
     margin: $text_marginTRBL_global;
 }
-p, ul{
+h1, h2, h3, h4, h5, h6, p, ul,
+.heading1, .heading2, .heading3, .heading4, .heading5, .heading6{
     & + h1,
     & + h2,
     & + h3,
     & + h4,
     & + h5,
-    & + h6{
-        margin: $headings_marginTRBL_sibling;    
-    }    
+    & + h6,
+    & + .heading1,
+    & + .heading2,
+    & + .heading3,
+    & + .heading4,
+    & + .heading5,
+    & + .heading6,
     & + p,
     & + ul{
         margin: $text_marginTRBL_sibling;    
     }
 }
-h2, p, li{
+h1, h2, h3, h4, h5, h6, p, li{
     a, strong, em{
         font-size: 1em;
     }   

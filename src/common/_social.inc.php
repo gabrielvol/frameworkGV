@@ -59,11 +59,11 @@
             <img src="<?php echo $dir_env; ?>/img/social_sp.svg" alt="<?php echo _('Ir a nuestro perfil en Spotify'); ?>.">
         </a>
     </li>
-    <li class="social_tw">
-        <a href="<?php echo $social_twitter_url; ?>" class="hover_grow_L_ani" target="_blank">
-            <?php echo _("Seguinos en Twitter"); ?>.
-            <span class="visuallyHidden">Twitter:</span>
-            <img src="<?php echo $dir_env; ?>/img/social_tw.svg" alt="<?php echo _('Ir a nuestro perfil en Twitter'); ?>.">
+    <li class="social_x">
+        <a href="<?php echo $social_x_url; ?>" class="hover_grow_L_ani" target="_blank">
+            <?php echo _("Seguinos en X"); ?>.
+            <span class="visuallyHidden">X:</span>
+            <img src="<?php echo $dir_env; ?>/img/social_x.svg" alt="<?php echo _('Ir a nuestro perfil en X'); ?>.">
         </a>
     </li>
     <li class="social_vi">
