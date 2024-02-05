@@ -70,8 +70,11 @@ h1, h2, h3, h4, h5, h6{
     margin: $headings_marginTRBL_global;
 }
 p, a, li, dd, dt, .pSize{
-    @include beforeMQ500{
-        font-size: $ftSize_paragraph_B500;
+    @include beforeMQ350{
+        font-size: $ftSize_paragraph_B350;
+    }
+    @include afterMQ350{
+        font-size: $ftSize_paragraph_A350;
     }
     @include afterMQ500{
         font-size: $ftSize_paragraph_A500;
