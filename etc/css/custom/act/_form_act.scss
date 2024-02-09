@@ -12,10 +12,11 @@
 /* // Listado --------------------------------------------------------------- */
 // 01 _ $form_label_inside_act
 // 02 _ $form_label_coloured_act
-// 03 _ $form_input_coloured_act
-// 04 _ $form_input_border_act // REF [35]
-// 05 _ $form_submit_border_act // REF [21a]
-// 06 _ $form_span_invalid_tooltip_act // REF [16]
+// 03 _ $form_label_floating_act
+// 04 _ $form_input_coloured_act
+// 05 _ $form_input_border_act // REF [35]
+// 06 _ $form_submit_border_act // REF [21a]
+// 07 _ $form_span_invalid_tooltip_act // REF [16]
 //
 //
 // 01 _ $form_label_inside_act
@@ -38,7 +39,33 @@
 // label.verdeAgua:hover { color: #hex; }
 //
 //
-// 03 _ $form_input_coloured_act
+// 03 _ $form_label_floating_act
+// REF [39]
+// Activa el if que se encuentra en `[/etc/css/custom/form.scss]`
+//
+// Genera selectores de color para `.form_label_name`.
+//
+// Ej.:   
+// .form_label_name{
+//     @include transition(0.5s);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+// label{
+//     overflow: hidden;
+// 
+//     &:focus,
+//     &:focus-visible,
+//     &:hover{            
+//         .form_label_name{
+//             top: -60px;
+//         }
+//     }
+// }
+//
+//
+// 04 _ $form_input_coloured_act
 // Activa el if que se encuentra en `[/etc/css/scss/mixins_colours.scss]`.
 //
 // Genera selectores para las pseudo-clases `:focus` y `:hover` de los
@@ -52,7 +79,7 @@
 // input[type="file"].bgVerdeAgua:focus { background-color: #hex; }
 //
 //
-// 04 _ $form_input_border_act
+// 05 _ $form_input_border_act
 // REF [35]
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
@@ -74,7 +101,7 @@
 // form textarea:hover { border-color: #hex; }
 //
 //
-// 05 _ $form_submit_border_act
+// 06 _ $form_submit_border_act
 // REF [21a]
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
@@ -99,7 +126,7 @@
 // form button:hover { border-color: #hex; }
 //
 //
-// 06 _ $form_span_invalid_tooltip_act
+// 07 _ $form_span_invalid_tooltip_act
 // REF [16]
 // Activa el if que se encuentra en `[/etc/css/custom/form.scss]`.
 //
@@ -147,6 +174,7 @@
 /* // Form Label ------------------------------------------------------------ */
 $form_label_inside_act:             on;
 $form_label_coloured_act:           off;
+$form_label_floating_act:           off; // REF [39]
 
 /* // Form Input ------------------------------------------------------------ */
 $form_input_coloured_act:           off;

@@ -31,7 +31,11 @@
             Nombre
         <?php endif; ?></span>
         <input type="text" name="data_nombre__formMain" id="data_nombre__formMain" class="data_nombre__formMain <?php echo $form_validation_input_class_data_nombre__formMain; ?>" value="<?php echo $_POST['data_nombre__formMain']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_nombre__formMain; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_nombre__formMain; ?>"><?php echo $form_validation_span_msg_data_nombre__formMain; ?></span>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_nombre__formMain; ?>"><?php echo $form_validation_span_msg_data_nombre__formMain; ?></span>        
+        <div class="input_data_holder" aria-hidden="true"><?php echo $_POST['data_nombre__formMain']; ?></div>
+        <div class="input_data_holder" aria-hidden="true"><pre><?php var_dump($_POST); ?></pre></div>
+        <div class="input_data_holder" aria-hidden="true"><pre><?php print_r($_POST); ?></pre></div>  
+        
     </label>
 
     <label for="data_apellido__formMain">
@@ -286,13 +290,13 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_comoQueres__formMain; ?>"><?php echo $form_validation_span_msg_data_comoQueres__formMain; ?></span>
     </label>
 
-    <label for="data_GENERICSELECT__formMain">
+    <label for="data_GENERICSELECT__formMain" class="form_required">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             GENERICSELECT
         <?php else: ?>
             GENERICSELECT
         <?php endif; ?></span>
-        <select name="data_GENERICSELECT__formMain" id="data_GENERICSELECT__formMain" class="data_GENERICSELECT__formMain <?php echo $form_validation_input_class_data_GENERICSELECT__formMain; ?>" form="formMainID" enterkeyhint="next">
+        <select name="data_GENERICSELECT__formMain" id="data_GENERICSELECT__formMain" class="data_GENERICSELECT__formMain <?php echo $form_validation_input_class_data_GENERICSELECT__formMain; ?>" form="formMainID" enterkeyhint="next" required>
             <option value="<?php echo $_POST['data_GENERICSELECT__formMain']; ?>" selected><?php echo $_POST['data_GENERICSELECT__formMain']; ?></option>
 
             <option value="<?php echo $_POST['data_GENERICSELECT__formMain']; ?>" selected><?php if(isset($_POST['data_GENERICSELECT__formMain'])) { echo $_POST['data_GENERICSELECT__formMain']; } else { echo 'Selecciona una opci&oacute;n por favor'; } ?></option>
@@ -363,13 +367,13 @@
         </label>        
     </fieldset>
 
-    <label for="data_email__formMain">
+    <label for="data_email__formMain" class="form_required">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             E-mail
         <?php else: ?>
             Correo electr&oacute;nico
         <?php endif; ?></span>
-        <input type="email" name="data_email__formMain" id="data_email__formMain" class="data_email__formMain <?php echo $form_validation_input_class_data_email__formMain; ?>" value="<?php echo $_POST['data_email__formMain']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMain; ?>>
+        <input type="email" name="data_email__formMain" id="data_email__formMain" class="data_email__formMain <?php echo $form_validation_input_class_data_email__formMain; ?>" value="<?php echo $_POST['data_email__formMain']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMain; ?> required>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_email__formMain; ?>"><?php echo $form_validation_span_msg_data_email__formMain; ?></span>  
         <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             An email will be sent to confirm this address
@@ -378,13 +382,13 @@
         <?php endif; ?>.</span>
     </label> 
 
-    <label for="data_email__formMain">
+    <label for="data_email__formMain" class="form_required">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             E-mail
         <?php else: ?>
             E-mail
         <?php endif; ?></span>
-        <input type="email" name="data_email__formMain" id="data_email__formMain" class="data_email__formMain <?php echo $form_validation_input_class_data_email__formMain; ?>" value="<?php echo $_POST['data_email__formMain']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMain; ?>>
+        <input type="email" name="data_email__formMain" id="data_email__formMain" class="data_email__formMain <?php echo $form_validation_input_class_data_email__formMain; ?>" value="<?php echo $_POST['data_email__formMain']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMain; ?> required>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_email__formMain; ?>"><?php echo $form_validation_span_msg_data_email__formMain; ?></span>  
         <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             An email will be sent to confirm this address
@@ -602,13 +606,13 @@
     </label>
 
     // Mensaje con validaci&oacute;n
-    <label for="data_mensaje__formMain">
+    <label for="data_mensaje__formMain" class="form_required">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Details
         <?php else: ?>
             Detalle del servicio que desea contratar
         <?php endif; ?></span>
-        <textarea name="data_mensaje__formMain" id="data_mensaje__formMain" class="data_mensaje__formMain <?php echo $form_validation_input_class_data_mensaje__formMain; ?>" form="formMainID" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Write your message here'; } else { echo 'Escriba aqu&iacute; su mensaje'; } ?>" <?php echo $form_input_autofocus_data_mensaje__formMain; ?>><?php echo $_POST['data_mensaje__formMain']; ?></textarea>
+        <textarea name="data_mensaje__formMain" id="data_mensaje__formMain" class="data_mensaje__formMain <?php echo $form_validation_input_class_data_mensaje__formMain; ?>" form="formMainID" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Write your message here'; } else { echo 'Escriba aqu&iacute; su mensaje'; } ?>" <?php echo $form_input_autofocus_data_mensaje__formMain; ?> required><?php echo $_POST['data_mensaje__formMain']; ?></textarea>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_mensaje__formMain; ?>"><?php echo $form_validation_span_msg_data_mensaje__formMain; ?></span>
     </label>
 

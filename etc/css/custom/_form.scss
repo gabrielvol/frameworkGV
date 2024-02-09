@@ -78,6 +78,14 @@ fieldset{
     }
 }
 
+.input_data_holder{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
 
 /* // Form input ------------------------------------------------------------ */
 form{
@@ -345,30 +353,113 @@ form{
         &, &::before, &::after{
             box-sizing: border-box;
         }
+            
+        &.form_required{
+            .form_label_name{
+                &::after{
+                    content: " *";
+                    display: inline;
+                    color: $errorColour;
+                    font-family: $ftFamily_bold_global;
+                    height: 100%;
+                    white-space: pre;
+                }
+            }
+        }
     }
         
     @if $form_label_inside_act == "on"{
-        fieldset,
-        label{
+        
+        @if $form_label_floating_act == "on"{
+            fieldset{
+                @include beforeMQ768{
+                    .mobileForm &{
+                        margin-bottom: $helpers_spacing_PM_large;
+                    }
+                }
+
+                @include MQ768_1024{
+                    .tabletForm &{
+                        margin-bottom: $helpers_spacing_PM_large;       
+                    }
+                }
+
+                @include afterMQ1024{
+                    margin-bottom: $helpers_spacing_PM_medium;
+                }
+            } 
+            
+            // REF [39] $form_label_floating_act
             @include beforeMQ768{
-                .mobileForm &{
-                    margin-bottom: $helpers_spacing_PM_large;
+                label{
+                    .mobileForm &{
+                        margin-top: 0px!important;
+
+                        & + label{                        
+                            margin-top: 30px!important;
+                        }
+                    }
+                }
+                
+                .button_form_submit{ 
+                    margin-top: 30px!important;
                 }
             }
 
             @include MQ768_1024{
-                .tabletForm &{
-                    margin-bottom: $helpers_spacing_PM_large;       
+                label{
+                    .tabletForm &{
+                        margin-top: 0px!important;
+
+                        & + label{                        
+                            margin-top: 30px!important;
+                        }
+                    }
+                }
+                
+                .button_form_submit{ 
+                    margin-top: 30px!important;
                 }
             }
 
             @include afterMQ1024{
-                margin-bottom: $helpers_spacing_PM_medium;
+                label{
+                    margin-top: 0px!important;
+
+                    & + label{                        
+                        margin-top: 30px!important;
+                    }
+                }
+                
+                .button_form_submit{ 
+                    margin-top: 30px!important;
+                }
             }
+
+        } @else {
+            fieldset,
+            label{
+                @include beforeMQ768{
+                    .mobileForm &{
+                        margin-bottom: $helpers_spacing_PM_large;
+                    }
+                }
+
+                @include MQ768_1024{
+                    .tabletForm &{
+                        margin-bottom: $helpers_spacing_PM_large;       
+                    }
+                }
+
+                @include afterMQ1024{
+                    margin-bottom: $helpers_spacing_PM_medium;
+                }
+            }            
         }
         
         .label_radio,
         .label_checkbox{
+            
             .input_radio,
             .input_checkbox{
                 clear: $none;
@@ -471,6 +562,55 @@ form{
                 }
             }
         }
+        
+        @if $form_label_floating_act == "on"{
+            // REF [39] $form_label_floating_act
+            .form_label_name.form_label_name{
+                @include transition(0.5s);
+                position: absolute;
+                top: 0;
+                left: 0;
+                /* Si se activa floating labels hay que declarar font-size acá y comentar en // REF [39]
+                font-size: 0.75rem; */
+            }
+            
+            label{
+                &.input_has_focus_js, // REF [39a]
+                &.input_has_value_js,
+                &:hover{
+                    .form_label_name{
+                        top: -18px;
+                        font-size: 0.6rem!important;
+                        height: 14px;
+                        line-height: 14px;
+                    }
+                }
+            }
+
+            @include beforeMQ768{
+                .form_label_name.form_label_name{
+                    @include equalHeightAndLineHeight($form_input_height_BT);
+                }
+            }
+            
+            @include MQ768_1024{
+                .form_label_name.form_label_name{
+                    @include equalHeightAndLineHeight($form_input_height_TO);
+                }
+            }
+
+            @include afterMQ1024{
+                .form_label_name.form_label_name{
+                    @include equalHeightAndLineHeight($form_input_height_A1024);
+                }
+            }
+
+            @include afterMQ1200{
+                .form_label_name.form_label_name{
+                    @include equalHeightAndLineHeight($form_input_height_BT);
+                }            
+            }
+        }
 
         .form_label_name,
         .form_validation_span{
@@ -481,6 +621,7 @@ form{
             display: block;
             padding-left: 7px;
             font-family: $form_label_ftFamily;
+            /* // REF [39] $form_label_floating_act */
             font-size: 1.1rem!important;
 
             @if $googleFont_act == "on"{
