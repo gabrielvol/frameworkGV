@@ -72,6 +72,14 @@
         and (max-width: 767px){@content;}}
     
     
+/* // 325px ----------------------------------------------------------------- */
+@mixin beforeMQ325{
+    @media (max-width: 325px){@content;}}
+
+@mixin afterMQ325{
+    @media (min-width: 326px){@content;}}
+    
+    
 /* // 350px ----------------------------------------------------------------- */
 @mixin beforeMQ350{
     @media (max-width: 350px){@content;}}
@@ -102,6 +110,14 @@
 @mixin MQ400_navBT{
     @media (min-width: 401px)
         and (max-width: #{$mq_nav_BT}){@content;}}
+    
+    
+/* // 425px ----------------------------------------------------------------- */
+@mixin beforeMQ425{
+    @media (max-width: 425px){@content;}}
+
+@mixin afterMQ425{
+    @media (min-width: 426px){@content;}}
     
     
 /* // 450px ----------------------------------------------------------------- */

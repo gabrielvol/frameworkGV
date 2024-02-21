@@ -142,9 +142,9 @@ $url_contacto_full      = $url_wip . $url_contacto;
 //$url_gracias_full       = $url_wip . $url_gracias;
 //$url_construccion_full  = $url_wip . $url_construccion;
 //$url_copyright_full     = $url_wip . $url_copyright;
-// $url_PAGINAfull         = $url_wip . $url_PAGINA;
-// $url_PAGINAfull         = $url_wip . $url_PAGINA;
-// $url_PAGINAfull         = $url_wip . $url_PAGINA;
+// $url_PAGINA_full         = $url_wip . $url_PAGINA;
+// $url_PAGINA_full         = $url_wip . $url_PAGINA;
+// $url_PAGINA_full         = $url_wip . $url_PAGINA;
 
 /*___ full urls para hashes traducidas ___*/
     //$url_inicio_hs_INICIO_full    = $url_main . $url_inicio . $hash_inicio;

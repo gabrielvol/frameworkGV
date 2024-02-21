@@ -29,9 +29,11 @@
     
     $page_url_full          = $url_PAGEINT_full;    
 
-    $page_title             = $page_title_home_PAGEINT . " | " . $site_name_title;   
+    $page_title             = $page_title_home_PAGEINT . " | " . $site_name_title;
 // Si se activa el id `$page_title` se construye de la siguiente forma:
-//    $page_title             = $page_title_id ." | ". $page_title_home_PAGEINT ." | " . $site_name_title;    
+// $page_title_home_PAGEINT se declara en `/var/meta.titlesDesc.var.inc.php`
+// $page_title_id se declara en `/var/page.PAGEINT.var.inc.php`
+//   $page_title             = $page_title_id . " | " . $page_title_home_PAGEINT . " | " . $site_name_title;    
     $page_desc              = $page_desc_global;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');
@@ -40,8 +42,9 @@
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
-        <?php /* Si se activa el id:
+        <?php /*
             <h1><?php echo $page_heading_id; ?></h1>
+            <h1><?php echo $page_title_home_PAGEINT; ?></h1>
         */ ?>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/footer.inc.php'); ?>

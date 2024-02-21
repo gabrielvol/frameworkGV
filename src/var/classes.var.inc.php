@@ -102,7 +102,7 @@ if(!empty($page_redirect)):
     $class_end_header      .= 'header_redirect '; endif;  
     
 //-----
-$classes_header             = 'class="'. $class_ini_header . $class_end_header .'"';
+$classes_header             = 'class="' . $class_ini_header . $class_end_header . '"';
 
 
 /* // Footer Classes -------------------------------------------------------- */
@@ -134,25 +134,25 @@ if(!empty($page_redirect)):
     $class_end_footer       .= 'footer_redirect '; endif;  
     
 //-----
-$classes_footer             = 'class="'. $class_ini_footer . $class_end_footer .'"';
+$classes_footer             = 'class="' . $class_ini_footer . $class_end_footer . '"';
 
 
 /* // Main Classes -------------------------------------------------------- */
     $class_ini_main         = '';
 
 if(!empty($page_int)):
-    $class_ini_main         .= 'page_int '. $nav_pageCurrent .' ';
+    $class_ini_main         .= 'page_int ' . $nav_pageCurrent . ' ';
 else:
-    $class_ini_main         .= $nav_pageCurrent .' ';
+    $class_ini_main         .= $nav_pageCurrent . ' ';
 endif; 
 
-    $class_ini_main         .= $nav_pageCurrent_int .' ';
+    $class_ini_main         .= $nav_pageCurrent_int . ' ';
 
 if(!empty($nav_pageCurrent_id)):
-    $class_ini_main         .= $nav_pageCurrent_id .' '; endif; 
+    $class_ini_main         .= $nav_pageCurrent_id . ' '; endif; 
     
 //----- Finals
-    $class_end_main         = 'containerA1600'; // REF [38]
+    $class_end_main         = 'containerA1600 '; // REF [38]
 
 if(!empty($page_construccion)):
     $class_end_main         .= 'page_construccion '; endif; 
@@ -161,5 +161,5 @@ if(!empty($page_redirect)):
     $class_end_main         .= 'page_redirect '; endif; 
     
 //-----
-$classes_main               = 'class="'. $class_ini_main . $page_main_classes . $class_end_main .'"';
+$classes_main               = 'class="' . $class_ini_main . $page_main_classes . $class_end_main . '"';
 ?>
