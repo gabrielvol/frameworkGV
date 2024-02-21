@@ -18,9 +18,19 @@
 .iframe_video_mask{
     background-color: $bgGrey3XD;
 
-    @include beforeMQ350{
-        width: $video_home_width_B350;
-        height: $video_home_height_B350;
+    @include beforeMQ300{
+        width: $iframe_video_width_B300;
+        height: $iframe_video_height_B300;
+    }
+
+    @include afterMQ300{
+        width: $iframe_video_width_A300;
+        height: $iframe_video_height_A300;
+    }
+
+    @include afterMQ325{
+        width: $iframe_video_width_A325;
+        height: $iframe_video_height_A325;
     }
 
     @include afterMQ350{
@@ -31,6 +41,11 @@
     @include afterMQ400{
         width: $video_home_width_A400;
         height: $video_home_height_A400;
+    }
+
+    @include afterMQ425{
+        width: $iframe_video_width_A425;
+        height: $iframe_video_height_A425;
     }
 
     @include afterMQ450{
@@ -53,10 +68,6 @@
         height: $video_home_height_A600;
     }
 
-    @include afterMQ600{
-        width: $video_home_width_A600;
-        height: $video_home_height_A600;
-    }
     @include afterMQ650{
         width: $video_home_width_A650;
         height: $video_home_height_A650;
@@ -131,13 +142,20 @@
 }
 
 /*
+280:156
 300:168
+330:186
 350:196
 400:225
-450:253
-500:281
+430:244
+450:254
+500:280
 520:300
+550:308
 600:337
+648:366
 700:393
+707:400
+743:420
 800:450
 */

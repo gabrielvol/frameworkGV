@@ -155,13 +155,13 @@
 
     @include afterMQ500{
         width: $pop_video_width_A500;
-        height: $pop_video_heigth_A500;
+        height: $pop_video_height_A500;
         margin-left: calc(-1 * calc(#{$pop_video_width_A500} / 2));
     }
     
     @include afterMQ768{
         width: $pop_video_width_AT;
-        height: $pop_video_heigth_AT;
+        height: $pop_video_height_AT;
         margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
     } 
 }

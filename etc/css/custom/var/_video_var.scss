@@ -46,44 +46,68 @@
 
 
 /* // Video sizes ----------------------------------------------------------- */
-$video_home_width_B300:   280px;
-$video_home_height_B300:    156px;
+$iframe_video_width_B300:       250px; // 280px;
+$iframe_video_height_B300:      140px; // 156px;
 
-$video_home_width_A300:     300px;
-$video_home_height_A300:    168px;
+$iframe_video_width_A300:       280px; // 300px;
+$iframe_video_height_A300:      156px; // 168px;
 
-$video_home_width_A325: 330px;
-$video_home_height_A325: 186px;
+$iframe_video_width_A325:       330px;
+$iframe_video_height_A325:      186px;
 
-$video_home_width_A350:     350px;
-$video_home_height_A350:    196px;
+$iframe_video_width_A350:       350px;
+$iframe_video_height_A350:      196px;
 
-$video_home_width_A400: 400px;
-$video_home_height_A400: 226px;
+$iframe_video_width_A400:       400px;
+$iframe_video_height_A400:      226px;
 
-$video_home_width_A425: 430px;
-$video_home_height_A425: 244px;
+$iframe_video_width_A425:       430px;
+$iframe_video_height_A425:      244px;
 
-$video_home_width_A450: 450px;
-$video_home_height_A450: 254px;
+$iframe_video_width_A450:       450px;
+$iframe_video_height_A450:      254px;
 
-$video_home_width_A500: 500px;
-$video_home_height_A500: 280px;
+$iframe_video_width_A500:       500px;
+$iframe_video_height_A500:      280px;
 
-$video_home_width_A550: 520px;
-$video_home_height_A550: 300px;
+$iframe_video_width_A550:       520px;
+$iframe_video_height_A550:      300px;
 
-$video_home_width_A600: 600px;
-$video_home_height_A600: 336px;
+$iframe_video_width_A600:       600px;
+$iframe_video_height_A600:      336px;
 
-$video_home_width_A1300: 648px;
-$video_home_height_A1300: 366px;
+$iframe_video_width_A650:       $iframe_video_width_A600;
+$iframe_video_height_A650:      $iframe_video_height_A600;
 
-$video_home_width_A1400: 707px;
-$video_home_height_A1400: 400px;
+$iframe_video_width_A768:       $iframe_video_width_A650;
+$iframe_video_height_A768:      $iframe_video_height_A650;
 
-$video_home_width_A1600: 743px;
-$video_home_height_A1600: 420px;
+$iframe_video_width_A850:       $iframe_video_width_A768;
+$iframe_video_height_A850:      $iframe_video_height_A768;
+
+$iframe_video_width_A950:       $iframe_video_width_A850;
+$iframe_video_height_A950:      $iframe_video_height_A850;
+
+$iframe_video_width_A1024:       $iframe_video_width_A950;
+$iframe_video_height_A1024:      $iframe_video_height_A950;
+
+$iframe_video_width_A1100:       $iframe_video_width_A1024;
+$iframe_video_height_A1100:      $iframe_video_height_A1024;
+
+$iframe_video_width_A1200:       $iframe_video_width_A1100;
+$iframe_video_height_A1200:      $iframe_video_height_A1100;
+
+$iframe_video_width_A1300:      648px;
+$iframe_video_height_A1300:     366px;
+
+$iframe_video_width_A1400:      707px;
+$iframe_video_height_A1400:     400px;
+
+$iframe_video_width_A1500:      $iframe_video_width_A1400;
+$iframe_video_height_A1500:     $iframe_video_height_A1400;
+
+$iframe_video_width_A1600:      743px;
+$iframe_video_height_A1600:     420px;
 
 
 
