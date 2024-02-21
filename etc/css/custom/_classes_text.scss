@@ -51,6 +51,28 @@
     overflow: hidden;
 }
 
+.txQuoted{
+    position: relative;
+    
+    &::before{
+        content: "“";
+    }
+    
+    &::after{
+        content: "”";
+    }
+    
+    .txQuoted{
+        &::before{
+            content: "«";
+        }
+
+        &::after{
+            content: "»";
+        }
+    }
+}
+
 .txHyphensNone{hyphens: none}
 .txHyphensManual{hyphens: manual}
 .txHyphensAuto{hyphens: auto}

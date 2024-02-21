@@ -45,22 +45,22 @@
 
 
 /* // General --------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
     font-family: $ftFamily_main_global;
     font-weight: $ftWeight_global;
     font-size: $ftSize_global;
     line-height: $lineHeight_global;
     font-style: normal;
 }
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, li, button, label, input, select, textarea, blockquote, table{
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, li, button, label, input, select, textarea, blockquote, table{
     color: $ftColour_main_global;
 }
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, dfn, dd, dt, a, li, button, label, blockquote{
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dd, dt, a, li, button, label, blockquote{
     sup{
         font-size: 0.5em;
     }
 }
-h1, h2, h3, h4, h5, h6, p, li, dfn, button, blockquote{
+h1, h2, h3, h4, h5, h6, p, li, button, blockquote{
     a{
         font-family: inherit;
         font-weight: inherit;
@@ -90,7 +90,7 @@ p, a, li, dd, dt, .pSize{
     }
 }
 p, dl, legend{
-    margin: $text_marginTRBL_global;
+    margin: $txMargin_TRBL_global;
 }
 h1, h2, h3, h4, h5, h6, p, ul,
 .heading1, .heading2, .heading3, .heading4, .heading5, .heading6{
@@ -108,21 +108,23 @@ h1, h2, h3, h4, h5, h6, p, ul,
     & + .heading6,
     & + p,
     & + ul{
-        margin: $text_marginTRBL_sibling;    
+        margin: $txMargin_TRBL_sibling;    
     }
 }
-h1, h2, h3, h4, h5, h6, p, li{
-    a, strong, em{
+h1, h2, h3, h4, h5, h6{
+    a, strong, em, i, b, cite{
         font-size: 1em;
     }   
 }
-p, li{    
+p, a, li{    
     b{
         font-family: $ftFamily_bold_global;
     }
-    p, li, dl, legend{
+    p, a, strong, em, i, b, cite, li{
         font-size: 1em;
-    }     
+    }  
+}
+p, li{
     @if $anchorUnderline == "on"{
         &:focus, &:focus-visible, &:hover{
             a{

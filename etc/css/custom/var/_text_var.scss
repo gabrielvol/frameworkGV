@@ -73,8 +73,9 @@ $ftSize_paragraph_AT:       1rem;
 $ftSize_paragraph_A1024:    $ftSize_paragraph_AT;
 $ftSize_paragraph_A1200:    $ftSize_paragraph_A1024;
 
-$text_marginTRBL_global:    0;
-$text_marginTRBL_sibling:   0.8em 0 0;
+$txMargin_TRBL_global:      0;
+$txMargin_T_sibling:        0.8em;
+$txMargin_TRBL_sibling:     $txMargin_T_sibling 0 0;
 
 
 /* // Headings -------------------------------------------------------------- */
