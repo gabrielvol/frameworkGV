@@ -56,7 +56,7 @@ include('act/nav.act.inc.php');
 /* // Data ------------------------------------------------------------------ */
 include('lang.var.inc.php');
 include('domain.var.inc.php');
-// include('date.var.inc.php');
+//include('date.var.inc.php');
 include('urls.var.inc.php');
     
 include('meta.titlesDesc.var.inc.php');

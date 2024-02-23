@@ -59,7 +59,7 @@ $social_skype_user      = 'skype_user';
 
 $social_spotify_url     = 'https_www_spotify_com_usuario';
 
-$social_x_url           = 'https:_www_x_com_usuario';
+$social_x_url           = 'https_www_x_com_usuario';
 
 $social_vimeo_url       = 'https_www_vimeo_com_usuario';
 
