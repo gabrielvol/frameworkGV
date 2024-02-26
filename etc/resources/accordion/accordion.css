@@ -1,0 +1,67 @@
+.list_accordion{
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.list_accordion > li{
+    transition: all 0.75s ease;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 45px;
+    box-shadow: 0 0 9px rgba(0,0,0,.2),0 0 6px rgba(0,0,0,.2);
+}
+        
+.list_accordion li + li{
+    margin-top: 20px;
+}
+
+.list_accordion > li::after{
+    transition: all 0.75s ease;
+    content: "";
+    display: block;
+    opacity: 0.7;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    background-image: url('#{$dir_env}/img/bullet_accordion.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+        
+.list_accordion .li_clicked_js::after{
+    transform: rotate(45deg);
+}
+
+.list_accordion .li_clicked_js .accordion_answer{
+    padding-bottom: 30px;
+}
+            
+.list_accordion .li_clicked_js + li{
+    margin-top: 30px;
+}
+        
+.list_accordion .accordion_answer{
+    display: none;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+@media (max-width: 500px){
+    .list_accordion > li::after{
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media (min-width: 501px){
+    .list_accordion > li::after{
+            top: 10px;
+            right: 10px;
+        }
+    }
+}

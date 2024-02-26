@@ -1,0 +1,72 @@
+.list_accordion{
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    > li{
+        @include transition(0.75s);
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 45px;
+        box-shadow: 0 0 9px rgba(0,0,0,.2),0 0 6px rgba(0,0,0,.2);
+        
+        &::after{
+            @include transition(0.75s);
+            content: "";
+            display: block;
+            opacity: 0.7;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 26px;
+            height: 26px;
+            background-image: url('#{$dir_env}/img/bullet_accordion.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+        }
+        
+        &.li_clicked_js{
+            &::after{
+                transform: rotate(45deg);
+            }
+            
+            .accordion_answer{
+                padding-bottom: 30px;
+            }
+        }
+        
+        & + li{
+            margin-top: 20px;
+        }
+        
+        &.li_clicked_js + li{
+            margin-top: 30px;
+        }
+    }
+        
+    .accordion_answer{
+        display: none;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
+    @include beforeMQ500{
+        li{
+            &::after{
+                top: 5px;
+                right: 5px;
+            }
+        }
+    }
+    
+    @include afterMQ500{    
+        li{
+            &::after{
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+}
