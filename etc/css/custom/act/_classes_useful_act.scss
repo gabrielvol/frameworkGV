@@ -138,6 +138,16 @@ $classes_text_act_A500:                          off;
 $classes_bg_bd_NO_act_A500:                      off;
 
 
+/* // Mobile Landscape Only MLO --------------------------------------------- */
+$classes_container_act_500O:                     off;
+$helpers_spacing_act_500O:                       off;
+$classes_position_display_mask_cursor_act_500O:  off;
+$classes_flexbox_act_500O:                       off;
+$classes_lists_floats_act_500O:                  off;
+$classes_text_act_500O:                          off;
+$classes_bg_bd_NO_act_500O:                      off;
+
+
 /* // Before Mobile 600 ----------------------------------------------------- */
 $classes_container_act_B600:                        off;
 $classes_position_display_mask_cursor_act_B600:     on;
@@ -159,16 +169,6 @@ $classes_container_act_B650:                        off;
 
 /* // After Mobile 650 ------------------------------------------------------ */
 $classes_container_act_A650:   off;
-
-
-/* // Mobile Landscape Only MLO --------------------------------------------- */
-$classes_container_act_500O:                     off;
-$helpers_spacing_act_500O:                       off;
-$classes_position_display_mask_cursor_act_500O:  off;
-$classes_flexbox_act_500O:                       off;
-$classes_lists_floats_act_500O:                  off;
-$classes_text_act_500O:                          off;
-$classes_bg_bd_NO_act_500O:                      off;
 
 
 /* // Before Tablet BT ------------------------------------------------------ */

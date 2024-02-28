@@ -65,7 +65,7 @@ $hash_main          = '#main';
 $url_root           = $dir_env . '/';
 $url_logo           = $url_root;
 $url_index          = $dir_env . '/index.php';
-//$url_inicio         = $dir_env . '/inicio.php';
+//$url_inicio         = $dir_env . '/home.php';
 $url_contacto       = $dir_env . '/contacto.php';
 //$url_gracias        = $dir_env . '/gracias.php';
 //$url_construccion   = $dir_env . '/construccion.php';
@@ -80,15 +80,17 @@ $url_main_hs        = $dir_env . '/' . $hash_main;
 //$url_contacto_hs    = $dir_env . '/' . $hash_contacto;
 // $url_SECCION_hs     = $dir_env . '/' . $hash_SECCION;
 // $url_SECCION_hs     = $dir_env . '/' . $hash_SECCION;
-// $url_SECCION_hs     = $dir_env . '/' . $hash_SECCION; 
+// $url-SECCION-hs     = $dir_env . '/' . $hash-SECCION;
+// $url-SECCION-hs     = $dir_env . '/' . $hash-SECCION;
 
 $url_top_hs_INICIO             = $url_inicio . $hash_top;
 $url_main_hs_INICIO             = $url_inicio . $hash_main; 
 //$url_inicio_hs_INICIO           = $url_inicio . $hash_inicio;
-//$url_contacto_hs_INICIO         = $url_inicio . $hash_contacto; 
+//$url_contacto_hs_INICIO         = $url_inicio . $hash_contacto;
 // $url_SECCION_hs_PAGINA          = $url_PAGINA . $hash_SECCION;
 // $url_SECCION_hs_PAGINA          = $url_PAGINA . $hash_SECCION;
-// $url_SECCION_hs_PAGINA          = $url_PAGINA . $hash_SECCION; 
+// $url-SECCION-hs-PAGINA          = $url_PAGINA . $hash-SECCION;
+// $url-SECCION-hs-PAGINA          = $url_PAGINA . $hash-SECCION;
 
 /*___ urls con variable de idioma al final _*/
     $url_root           = $dir_env . '/' . $gettext_idioma_url;
@@ -165,11 +167,12 @@ $href_contacto      = 'href="' . $url_contacto . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
 
-//$href_index         = ($nav_pageCurrent == 'page_index') ? 'href="' . $url_main_hs .'"' : 'href="' . $url_root . '"';
-//$href_contacto      = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_contacto_hs .'"' : 'href="' . $url_contacto_hs_INICIO. '"';
-// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs .'"' : 'href="' . $url_SECCION_hs_INICIO. '"';
-// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs .'"' : 'href="' . $url_SECCION_hs_INICIO. '"';
-// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs .'"' : 'href="' . $url_SECCION_hs_INICIO. '"';
+//$href_logo         = ($nav_pageCurrent == 'page_index') ? 'href="' . $url_top_hs . '"' : 'href="' . $url_top_hs_INICIO . '"';
+//$href_index         = ($nav_pageCurrent == 'page_index') ? 'href="' . $url_main_hs . '"' : 'href="' . $url_root . '"';
+//$href_contacto      = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_contacto_hs . '"' : 'href="' . $url_contacto_hs_INICIO . '"';
+// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs . '"' : 'href="' . $url_SECCION_hs_INICIO . '"';
+// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs . '"' : 'href="' . $url_SECCION_hs_INICIO . '"';
+// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs . '"' : 'href="' . $url_SECCION_hs_INICIO . '"';
     
 $href_top_hs        = 'href="' . $url_top_hs . '"';
 $href_main_hs       = 'href="' . $url_main_hs . '"';

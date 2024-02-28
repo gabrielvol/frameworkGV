@@ -107,7 +107,7 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     $page_desc_global        = 'sinTraduccion';
 
 
-} else {    
+} } else {    
     $site_name_full         = 'SiteNameFull';
     $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
@@ -130,6 +130,6 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     
 /*___ Descripcion global ________________*/ 
     $page_desc_global       = '';
-} }
+}
 
 ?>

@@ -189,6 +189,16 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
         align-content: flex-start;
         align-items: flex-start;
     }
+    .flexCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexCenter > *{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
     .flexColumn{flex-direction: column}
     .flexNoWrap{flex-wrap: nowrap}
     .flexJustifyEnd{justify-content: flex-end}

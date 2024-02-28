@@ -34,6 +34,11 @@
         <?php echo $nav_main_item_PAGINA; ?>
     </a>
 </li>
+<li class="nav_item_contacto nav_item_noLink_js">
+    <a href="<?php if($page_int == 1) { echo $url_contacto_hs_INICIO; } else { echo $hash_contacto; } ?>">
+        <?php echo $nav_main_item_contacto; ?>
+    </a>
+</li>
 
 <?php /* Con gettext */ ?>
 <li class="nav_item_PAGINA nav_item_noLink_js">

@@ -63,7 +63,7 @@ else:
 endif;
 
 $form_status_recipient__formMain        = $form_recipient__formMain;
-$form_status_recipient_mailto__formMain = 'mailto:'. $form_recipient__formMain;
+$form_status_recipient_mailto__formMain = 'mailto:' . $form_recipient__formMain;
 
 
 /* // Form Contacto // REF [36] --------------------------------------------- */
@@ -80,7 +80,7 @@ else:
 endif;
 
 $form_status_recipient__formContacto        = $form_recipient__formContacto;
-$form_status_recipient_mailto__formContacto = 'mailto:'. $form_recipient__formContacto;
+$form_status_recipient_mailto__formContacto = 'mailto:' . $form_recipient__formContacto;
 
 
 /* // Form Footer // REF [36] ----------------------------------------------- */
@@ -97,6 +97,6 @@ else:
 endif;    
 
 $form_status_recipient__formFooter        = $form_recipient__formFooter;
-$form_status_recipient_mailto__formFooter = 'mailto:'. $form_recipient__formFooter;
+$form_status_recipient_mailto__formFooter = 'mailto:' . $form_recipient__formFooter;
 
 ?>

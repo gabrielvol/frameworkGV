@@ -17,7 +17,7 @@
             top: 0;
             right: 0;
             left: 0;
-            box-shadow: 0 0 7px $black;
+            box-shadow: $bxShadow_main_smooth;
         } @else {
             position: relative;    
         }
@@ -352,7 +352,7 @@
             > li{
                 &:focus, &:focus-visible, &:hover{
                     @if $nav_text_white_act == "on"{
-                        // REF [12] Activador
+                        // REF [12] en `[/etc/css/custom/act/nav_main_act.scss]`
                         > a,
                         > .nav_TLI{
                             text-shadow: $txShadow_black;
@@ -360,7 +360,7 @@
                     }
 
                     @if $nav_text_black_act == "on"{
-                        // REF [12] Activador
+                        // REF [12] en `[/etc/css/custom/act/nav_main_act.scss]`
                         > a,
                         > .nav_TLI{
                             color: $grey2XD;
