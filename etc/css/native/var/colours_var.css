@@ -1,0 +1,95 @@
+/* * NombreDeProyecto * ========================================================
+   CSS Custom properties | Colours
+   ========================================================================== */
+:root{
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Colours
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+    --grey5XL:        #fcfcfc;
+    --grey4XL:        #f9f9f9;
+    --grey3XL:        #f2f2f2;
+    --grey2XL:        #e6e6e6;
+    --greyXL:         #dedede;
+    --greyL:          #b2b2b2;
+    --greyM:           #8c8c8c;
+    --greyD:          #666666;
+    --greyXD:         #4d4d4d;
+    --grey2XD:        #333333;
+    --grey3XD:        #111111;
+    
+    --black:          #000000;
+    --white:          #ffffff;
+    
+    --white_rgba10:     rgba(255, 255, 255, 0.1);
+    --white_rgba20:     rgba(255, 255, 255, 0.2);
+    --white_rgba30:     rgba(255, 255, 255, 0.3);
+    --white_rgba40:     rgba(255, 255, 255, 0.4);
+    --white_rgba50:     rgba(255, 255, 255, 0.5);
+    --white_rgba60:     rgba(255, 255, 255, 0.6);
+    --white_rgba70:     rgba(255, 255, 255, 0.7);
+    --white_rgba80:     rgba(255, 255, 255, 0.8);
+    --white_rgba85:     rgba(255, 255, 255, 0.85);
+    --white_rgba90:     rgba(255, 255, 255, 0.9);
+    
+    --black_rgba10:     rgba(0, 0, 0, 0.1);
+    --black_rgba20:     rgba(0, 0, 0, 0.2);
+    --black_rgba30:     rgba(0, 0, 0, 0.3);
+    --black_rgba40:     rgba(0, 0, 0, 0.4);
+    --black_rgba50:     rgba(0, 0, 0, 0.5);
+    --black_rgba60:     rgba(0, 0, 0, 0.6);
+    --black_rgba70:     rgba(0, 0, 0, 0.7);
+    --black_rgba80:     rgba(0, 0, 0, 0.8);
+    --black_rgba85:     rgba(0, 0, 0, 0.85);
+    --black_rgba90:     rgba(0, 0, 0, 0.9);
+
+/* // Site Colours ---------------------------------------------------------- */    
+    --orangeM:          #F65814;
+
+/* // Status / Warning ------------------------------------------------------ */
+    --status_danger_L:     #ffeee4;
+    --status_danger_D:     #EB1C24;
+
+    --status_warning_L:    #fff7e3;
+    --status_warning_D:    #f1cb78;
+
+    --status_ok_L:         #f6ffda;
+    --status_ok_D:         #7dd825;
+    
+    --errorColour:      var(--status_danger_D);
+    --greenSystem:      #339900;
+    --focusColour:      var(--black_rgba70);  
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Gradients
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */   
+/*
+    --grad_main: linear-gradient(90deg, rgb(107, 83, 146) 0px, rgb(107, 83, 146) 18%, rgb(17, 101, 178) 60%, rgb(0, 164, 212) 100%);
+    linear-gradient(90deg,#6b5392 0,#6b5392 18%,#1165b2 60%,#00a4d4 100%)
+*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Elements
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+    --ftColor_main_global:  var(--grey3XD);
+
+    --txSelection_ftColour_global:   var(--grey3XD);
+    --txSelection_bgColour_global:   var(--greyXL);
+    
+    
+/* // Nav // REF [41] ------------------------------------------------------- */
+    --nav_drawer_bdColourR:     var(--grey2XD);
+
+    --navItem_ftColour_B768: var(--black);
+    --navItem_ftColour_A768: var(--black);
+    
+    
+/* // Call To Action // REF [40] -------------------------------------------- */
+    --CTA_bdColour:  var(--orangeM);
+    --CTA_bgColour:  var(--orangeM);
+    --CTA_ftColour:  var(--white);
+    
+    --CTA_bdColour_hover:  var(--orangeM);
+    --CTA_bgColour_hover:  var(--orangeM);
+    --CTA_ftColour_hover:  var(--white);
+    
+}

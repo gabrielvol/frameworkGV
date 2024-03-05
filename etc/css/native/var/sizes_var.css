@@ -1,0 +1,52 @@
+/* * NombreDeProyecto * ========================================================
+   CSS Custom properties | Sizes & Values
+   ========================================================================== */
+:root{
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Global Sizes
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+    --width_global_max_B500:    400px;
+    
+/* // Borders --------------------------------------------------------------- */
+    --borderRadius_small:         6px;
+    --borderRadius_medium:        12px;
+    --borderRadius_big:           24px;
+    
+/* // Logo ------------------------
+    --logo_width_B300:  120px;
+    --logo_width_A300:  120px;
+    --logo_width_B700:  180px;------------------------------------------ */
+/* // Logo Sizes Mobile - */
+
+/* // Nav Drawer logo_header.navDrawer_open - */
+    --logo_clicked_height:       50px;
+    --logo_clicked_height_PT:    20px;
+    --logo_clicked_height_PB:    15px;
+    --logo_height_clicked_final: calc(var(--logo_clicked_height) + var(--logo_clicked_height_PT) + var(--logo_clicked_height_PB));
+
+/* // Logo Sizes Desktop - */    
+    --logo_width_A700:  120px;
+    --logo_width_AT:    130px;
+    --logo_width_A800:  140px;
+    --logo_width_A900:  150px;
+    --logo_width_ATL:   170px;
+    --logo_width_A1200: 200px;
+
+/* // Button Hambuger Sizes ------------------------------------------------- */
+    --button_hamb_open_width:        90px;
+    --button_hamb_open_height:       40px;
+    --button_hambOnly_size:          45px;
+    --button_hamb_close_size:        var(--button_hamb_open_height); // REF [11] Si está activado $hamburger_only_act el valor debe ser $button_hambOnly_size
+
+/* // Nav Drawer ------------------------------------------------------------ */
+    --nav_drawer_R:                  0;
+    --nav_drawer_width:              70vw;
+    --nav_drawer_width_max:          calc(100% - var(--button_hamb_close_size) - var(--nav_drawer_R));
+    --nav_drawer_width_final:        calc(var(--nav_drawer_width) - 5px);
+    --nav_drawer_bdWidth:            3px;
+    
+    
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Home
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */ 
+}

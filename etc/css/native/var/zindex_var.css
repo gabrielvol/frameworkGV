@@ -1,0 +1,38 @@
+/* * NombreDeProyecto * ========================================================
+   CSS Custom properties
+   ========================================================================== */
+:root{    
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Z Index
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+   --zIndex_negative:            -1;
+
+   --zIndex_pop_global:          9800;
+   --zIndex_nav_desktop_active:  9100;
+   --zIndex_nav_mobile_open:     9100;
+   --zIndex_modal_bg:            9000;
+
+   --zIndex_nav:                 8950; 
+   --zIndex_button_whatsapp:     8800;
+   --zIndex_button_siteTop:      8700;
+   
+   --zIndex_header:             6200;
+   --zIndex_header_open:        6200;
+   --zIndex_header_sticky:      6200;
+
+   --zIndex_social:             6250;
+
+   --zIndex_footer:             6200;
+
+   --zIndex_slickArrowDots:      5140;
+   --zIndex_slickSlide:          5120;
+   --zIndex_slick:               5100;
+   
+   --zIndex_grecaptchaBadge:     2000;
+
+   --zIndex_generic_top:        200;
+   --zIndex_generic_over:       150;
+   --zIndex_generic_below:      100;
+
+   --zIndex_body:                1;
+}

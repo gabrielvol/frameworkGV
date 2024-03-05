@@ -1,0 +1,71 @@
+/* * NombreDeProyecto * ========================================================
+   Page Error Styles
+   ========================================================================== */
+.page_error{
+    min-height: 50vh;
+    padding-bottom: 80px;
+}
+
+.page_error h1{
+    font-family: var(--ftMain_bold_global);
+    font-size: 1.3rem;
+    color: var(--grey);
+    text-align: center;
+}
+
+.page_error p {
+    padding-right: 40px;
+    padding-left: 40px;
+    color: var(--black);
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.page_error p a,
+.page_error p a:active,
+.page_error p a:visited,
+.page_error p a:focus,
+.page_error p a:hover{
+    text-decoration: underline;
+}
+
+.page_error p a,
+.page_error p a:active,
+.page_error p a:visited{
+    color: var(--greyD);
+}
+
+.page_error p a:focus,
+.page_error p a:hover{
+    color: var(--grey2XD);
+}
+
+.page_error p a{
+    font-family: var(--ftMain_bold_global);
+}
+
+.page_error .errorType {
+    padding: 0 0 20px;
+    color: var(--grey3XD);
+    font-family: var(--ftMain_bold_global);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Error Styles | Section __ Before 600px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 600px){
+    .page_error{
+        padding-top: 30px;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Error Styles | Section __ After 600px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 601px){
+    .page_error{
+        padding-top: 60px;
+    }
+}

@@ -1,0 +1,175 @@
+/* * NombreDeProyecto * ========================================================
+   Page Foo | Section
+   ========================================================================== */
+#selector{}
+
+#selector ul{}
+
+#selector li{}
+
+#selector div{}
+
+#selector p{}
+
+#selector a{}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 300px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 300px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 300px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 301px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 350px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 350px){
+    #selector{}
+    
+    #selector ul{}
+
+    #selector li{}
+
+    #selector div{}
+
+    #selector p{}
+
+    #selector a{}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 350px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 351px){
+    #selector{}
+    
+    #selector ul{}
+
+    #selector li{}
+
+    #selector div{}
+
+    #selector p{}
+
+    #selector a{}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 400px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 400px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 400px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 401px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 500px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 500px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 500px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 501px){
+    #selector{}
+    
+    #selector ul{}
+
+    #selector li{}
+
+    #selector div{}
+
+    #selector p{}
+
+    #selector a{}}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 550px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 550px) {}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 550px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 551px) {}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 600px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 600px) {}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 600px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 601px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 700px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 700px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 700px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 701px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 768px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 767px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 768px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 768px){
+    #selector{}
+    
+    #selector ul{}
+
+    #selector li{}
+
+    #selector div{}
+
+    #selector p{}
+
+    #selector a{}}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 900px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 900px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 900px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 901px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ Before 1024px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 1023px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 1024px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 1024px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 1100px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 1101px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 1200px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 1201px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Page Foo | Section __ After 1300px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 1301px){}
