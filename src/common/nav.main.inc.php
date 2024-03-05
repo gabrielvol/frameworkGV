@@ -1,6 +1,10 @@
-<nav id="nav" class="nav_main" aria-label="<?php if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){ echo 'Site main menu.'; } else { echo 'Men&uacute; principal del sitio.'; } } ?>">
-    <button type="button" class="button_hamb button_hamb_open" aria-pressed="false"><span class="visuallyHidden"><?php if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){ echo 'Open'; } else { echo 'Abrir'; } } ?></span> <?php if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){ echo 'Menu'; } else { echo 'Men&uacute;'; } } ?></button>
-    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){ echo 'Close'; } else { echo 'Cerrar'; } } ?> <span class="visuallyHidden"><?php if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){ echo 'Menu'; } else { echo 'Men&uacute;'; } } ?></span></button>
+<nav id="nav" class="nav_main" aria-label="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Site main menu.<?php else: ?>Men&uacute; principal del sitio.<?php endif; ?>">
+    
+    <button type="button" class="button_hamb button_hamb_open" aria-pressed="false">
+        <span class="visuallyHidden"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Open<?php else: ?>Abrir<?php endif; ?></span> <?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Menu<?php else: ?>Men&uacute;<?php endif; ?></button>
+    
+    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Close<?php else: ?>Cerrar<?php endif; ?> <span class="visuallyHidden"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Menu<?php else: ?>Men&uacute;<?php endif; ?></span>
+    </button>
     
     <?php
         // REF [05] `[/src/var/act/nav.act.inc.php]`
