@@ -3,11 +3,13 @@
    ========================================================================== */
 $(window).scroll(function () {
     if ($(this).scrollTop() > 80) {
+        $('#header').addClass('site_scrolled_js'); // REF [42]
         $('.button_hamb_open').addClass('site_scrolled_js'); // REF [31]
-        $('.button_siteTop').addClass('site_scrolled_js'); // REF [31]
+        $('.button_siteTop').addClass('site_scrolled_js'); // REF [18]
     } else {
+        $('#header').removeClass('site_scrolled_js'); // REF [42]
         $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [31]
-        $('.button_siteTop').removeClass('site_scrolled_js'); // REF [31]
+        $('.button_siteTop').removeClass('site_scrolled_js'); // REF [18]
     }
 });
 

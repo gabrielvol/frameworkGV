@@ -117,6 +117,15 @@
             }
 
             & + li{}
+        
+            #header.site_scrolled_js &{
+            // REF [42]
+                &,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_height_scrolled_AT);
+                }
+            }
         }
         
         .nav_item_xxx{
@@ -308,6 +317,15 @@
             .nav_TLI{
                 @include equalHeightAndLineHeight($nav_height_TO);
             }
+        
+            #header.site_scrolled_js &{
+            // REF [42]
+                &,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_height_scrolled_TO);
+                }
+            }
         }
         
         @if $nav_hasSub_act == "on"{
@@ -363,7 +381,7 @@
                         // REF [12] en `[/etc/css/custom/act/nav_main_act.scss]`
                         > a,
                         > .nav_TLI{
-                            color: $grey2XD;
+                            color: $grey3XD;
                         }
                     }
                 }
@@ -376,11 +394,20 @@
             .nav_TLI{
                 @include equalHeightAndLineHeight($nav_height_A1024);
             }
+        
+            #header.site_scrolled_js &{
+            // REF [42]
+                &,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_height_scrolled_TO);
+                }
+            }
             
             a,
             .nav_TLI{
                 box-sizing: border-box;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 padding-right: 10px;
                 padding-left: 10px;
             }
@@ -443,6 +470,15 @@
                 a,
                 .nav_TLI{
                     @include equalHeightAndLineHeight($nav_height_A1200);
+                }
+            }
+        
+            #header.site_scrolled_js &{
+            // REF [42]
+                &,
+                a,
+                .nav_TLI{
+                    @include equalHeightAndLineHeight($nav_height_scrolled_TO);
                 }
             }
         }
