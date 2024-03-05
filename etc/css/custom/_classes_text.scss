@@ -5,7 +5,8 @@
     &,
     a,
     span,
-    strong{
+    strong,
+    cite{
         font-family: $ftFamily_bold_global;
         font-weight: 400; // REF [01]        
     }
@@ -79,3 +80,10 @@
 
 .txNoSelectable{user-select: none}
 .txLetterSpacing{letter-spacing: 0.05rem}
+        
+.txSuperscript{
+    position: relative;
+    top: -0.5em;
+    font-size: 80%;
+    /* vertical-align: super; */
+}
