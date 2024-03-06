@@ -302,8 +302,8 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Language UL _______________________*/
 /* Comentar si Nav Language Square // REF [37] */
 /*___ Language Square ___________________
-$nav_language_ul_height_AT:        $nav_height_AT;
-$nav_language_item_sq_size_AT:     $nav_height_AT;
+$nav_language_ul_height_AT:        $nav_height_A768;
+$nav_language_item_sq_size_AT:     $nav_height_A768;
 $nav_language_ul_width_AT:          calc(calc(25px + calc(1px * 2)) - 18px);
 $nav_language_anchor_size_AT:       $nav_language_ul_width_AT;  
 */

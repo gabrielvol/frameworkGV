@@ -184,7 +184,7 @@
         }
         
         @if $nav_fixed_AT_act == "on"{
-            padding-top: $nav_height_AT;
+            padding-top: $nav_height_A768;
         }
         
         @if $nav_topper_act == "on"{

@@ -80,6 +80,11 @@ nav{
     @include navAT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
         background-color: $nav_nav_bgColour_AT; 
         
+        #header.site_scrolled_js &{
+        // REF [42]
+            background-color: $nav_nav_bgColour_scrolled_AT; 
+        }
+        
         .button_hamb{
             display: $none;
         }

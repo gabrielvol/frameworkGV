@@ -45,7 +45,7 @@
         @if $nav_drawer_act == "on"{
             &.navDrawer_open{
                 position: fixed;
-                z-index: $zIndex_social_clicked;
+                z-index: $zIndex_social_navOpen;
                 top: auto;
                 right: 10px;
                 bottom: 20px;
@@ -64,7 +64,7 @@
         
         a{
             @include opacityCustomHover(90);
-            @include transition(1s);
+            @include transition(0.7s);
         }
     }
     

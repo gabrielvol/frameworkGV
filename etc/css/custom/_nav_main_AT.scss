@@ -105,7 +105,7 @@
             &,
             a,
             .nav_TLI{
-                @include equalHeightAndLineHeight($nav_height_AT);
+                @include equalHeightAndLineHeight($nav_height_A768);
             }
 
             a,
@@ -145,7 +145,7 @@
         @if $nav_hasSub_act == "on"{
             .nav_subNav{       
                 position: absolute;
-                top: $nav_height_AT;
+                top: $nav_height_A768;
                 border-radius: 0 0 10px 10px;
                 width: $nav_subMenu_width_AT;
                 
