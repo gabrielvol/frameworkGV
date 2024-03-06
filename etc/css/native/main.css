@@ -488,7 +488,8 @@
    Nav
    ========================================================================== */
 nav p.nav_TLI,
-nav .nav_item_current a {
+nav .nav_item_current a,
+nav .nav_item_current button{
     cursor: default;
 }
 
@@ -627,11 +628,14 @@ nav li:hover a{
       left: 0; }
     .nav_main .nav_main_ul + .nav_main_ul {
       margin-top: 0; }
+    
     .nav_main .nav_main_ul > li > a,
-    .nav_main .nav_main_ul > li > .nav_TLI {
-      color: var(--black);
-      font-family: var(--ftMain_bold_global);
-      font-weight: 400; }
+    .nav_main .nav_main_ul > li > .nav_TLI ,
+    .nav_main .nav_main_ul > li > button {
+        color: var(--black);
+        font-family: var(--ftMain_regular_global);
+        font-weight: 400; /* // REF [01] */
+    }
 
     .nav_main .nav_main_ul > .nav_item_current {
       background-color: var(--grey3XL);
@@ -639,10 +643,12 @@ nav li:hover a{
       background-position: right 10px center; }
       
       .nav_main .nav_main_ul > .nav_item_current > a,
-      .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
+      .nav_main .nav_main_ul > .nav_item_current > .nav_TLI,
+      .nav_main .nav_main_ul > .nav_item_current > .button{
         color: var(--black);
         font-family: var(--ftMain_bold_global);
-        font-weight: 400; }
+        font-weight: 600; /* // REF [01] */
+      }
     
     .nav_main .button_hamb_open:focus,
     .nav_main .button_hamb_open:hover{
@@ -652,13 +658,15 @@ nav li:hover a{
     
     .nav_main .nav_main_ul li,
     .nav_main .nav_main_ul li a,
-    .nav_main .nav_main_ul li .nav_TLI {
+    .nav_main .nav_main_ul li .nav_TLI,
+    .nav_main .nav_main_ul li button{
         height: 45px;
         line-height: 45px;
     }
     
     .nav_main .nav_main_ul li a,
-    .nav_main .nav_main_ul li .nav_TLI {
+    .nav_main .nav_main_ul li .nav_TLI,
+    .nav_main .nav_main_ul li button{
         display: block;
     }
       
@@ -728,19 +736,22 @@ nav li:hover a{
     
     .nav_main .nav_main_ul li,
     .nav_main .nav_main_ul li a,
-    .nav_main .nav_main_ul li .nav_TLI {
+    .nav_main .nav_main_ul li .nav_TLI,
+    .nav_main .nav_main_ul li button{
         display: block;
     }
     
     .nav_main li,
     .nav_main li a,
-    .nav_main li .nav_TLI {
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         height: 55px;
         line-height: 55px;
     }
 
     .nav_main li a,
-    .nav_main li .nav_TLI {
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         transition: all 0.7s ease;
         font-size: 0.8rem;
         padding-right: 6px;
@@ -757,53 +768,40 @@ nav li:hover a{
     
     .nav_main > ul > li a,
     .nav_main > ul > li .nav_TLI,
+    .nav_main > ul > li button,
     .nav_main > ul > .nav_item_current a,
-    .nav_main > ul > .nav_item_current .nav_TLI {
-      font-family: var(--ftMain_bold_global);
+    .nav_main > ul > .nav_item_current .nav_TLI,
+    .nav_main > ul > .nav_item_current button{
+      font-family: var(--ftMain_regular_global);
       font-weight: 400;
     }
     
     .nav_main > ul > li a,
-    .nav_main > ul > li .nav_TLI {
+    .nav_main > ul > li .nav_TLI,
+    .nav_main > ul > li button{
         transition: all 0.7s ease;
         position: relative;
         color: var(--greyXD);
     }
       
     .nav_main > ul > .nav_item_current a,
-    .nav_main > ul > .nav_item_current .nav_TLI {
+    .nav_main > ul > .nav_item_current .nav_TLI,
+    .nav_main > ul > .nav_item_current button{
       color: var(--greyD);
-    }
-    
-    .nav_main > ul > li a::after,
-    .nav_main > ul > li .nav_TLI::after {
-        transition: all 0.5s ease;
-        content: "";
-        position: absolute;
-        background-color: var(--greyD);
-        left: 50%;
-        bottom: 0;
-        width: 0;
-        height: 3px;
-        transform: translateX(50%);
-    }
-        
-    .nav_main > ul > li:focus > a::after,
-    .nav_main > ul > li:hover > a::after,
-    .nav_main > ul > li:focus > .nav_TLI::after,
-    .nav_main > ul > li:hover > .nav_TLI::after {
-        width: 100%;
-        left: -50%;
-        transform: translateX(50%);
     }
         
     .nav_main > ul > li:focus,
+    .nav_main > ul > li:focus-visible,
     .nav_main > ul > li:hover{
         background-color: transparent;
     }
     
     .nav_main > ul > li:focus > a,
-    .nav_main > ul > li:hover > a {
+    .nav_main > ul > li:focus > button,
+    .nav_main > ul > li:focus-visible > a,
+    .nav_main > ul > li:focus-visible > button,
+    .nav_main > ul > li:hover > a,
+    .nav_main > ul > li:hover > button{
         color:  var(--grey2XD);
     }
     
@@ -812,14 +810,20 @@ nav li:hover a{
     }
 
     .nav_main > ul > .nav_item_current:focus,
-    .nav_main > ul > .nav_item_current:hover {
+    .nav_main > ul > .nav_item_current:focus-visible,
+    .nav_main > ul > .nav_item_current:hover{
       background-color: transparent;
     }
           
     .nav_main > ul > .nav_item_current:focus > a,
     .nav_main > ul > .nav_item_current:focus .nav_TLI,
+    .nav_main > ul > .nav_item_current:focus button,
+    .nav_main > ul > .nav_item_current:focus-visible > a,
+    .nav_main > ul > .nav_item_current:focus-visible .nav_TLI,
+    .nav_main > ul > .nav_item_current:focus-visible button,
     .nav_main > ul > .nav_item_current:hover > a,
-    .nav_main > ul > .nav_item_current:hover .nav_TLI{
+    .nav_main > ul > .nav_item_current:hover .nav_TLI,
+    .nav_main > ul > .nav_item_current:hover button{
         color: var(--greyD);
     }   
 }
@@ -837,7 +841,8 @@ nav li:hover a{
     .nav_user_ul{}
 
     .nav_main li a,
-    .nav_main li .nav_TLI {
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         font-size: 0.9rem;
         padding-right: 10px;
         padding-left: 10px;
@@ -864,59 +869,57 @@ nav li:hover a{
     
     .nav_main > ul > li a,
     .nav_main > ul > li .nav_TLI,
+    .nav_main > ul > li button,
     .nav_main > ul > .nav_item_current a,
-    .nav_main > ul > .nav_item_current .nav_TLI{  
+    .nav_main > ul > .nav_item_current .nav_TLI,
+    .nav_main > ul > .nav_item_current button{    
         font-size: 1rem;
     }  
     
     .nav_main li,
     .nav_main li a,
-    .nav_main li .nav_TLI{
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         height: 63px;
         line-height: 63px;
     } 
     
     .nav_main li a,
-    .nav_main li .nav_TLI{    }
-    
-    .nav_main .nav_item_demo{
-        top: 8px;
-    }
-    
-    #header.site_scrolled_js .nav_main .nav_item_demo{
-        top: 10px;
-    }
+    .nav_main li .nav_TLI,
+    .nav_main li button{}
     
     #header.site_scrolled_js .nav_main li,
     #header.site_scrolled_js .nav_main li a,
-    #header.site_scrolled_js .nav_main li .nav_TLI{
+    #header.site_scrolled_js .nav_main li .nav_TLI,
+    #header.site_scrolled_js .nav_main li button{
         height: 65px;
         line-height: 65px;
     } 
     
     #header.site_scrolled_js .nav_main li a,
-    #header.site_scrolled_js .nav_main li .nav_TLI{    } 
+    #header.site_scrolled_js .nav_main li .nav_TLI,
+    #header.site_scrolled_js .nav_main li button{} 
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Nav | Section __ Before 1024px
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-@media (max-width: 1023px){  
-    .nav_main .nav_item_demo span{
-        display: none;
-    }
-}
+@media (max-width: 1023px){}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Nav | Section __ After 1024px
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 @media (min-width: 1024px){
     .nav_main > ul > li a,
-    .nav_main > ul > li .nav_TLI {
-      font-weight: 400; }
+    .nav_main > ul > li .nav_TLI,
+    .nav_main > ul > li button{
+        font-family: var(--ftMain_regular_global);
+        font-weight: 400; /* // REF [01] */
+    }
 
     .nav_main > ul .nav_item_current a,
-    .nav_main > ul .nav_item_current .nav_TLI { }  
+    .nav_main > ul .nav_item_current .nav_TLI,
+    .nav_main > ul .nav_item_current button{} 
   
     .nav_main{
         position: relative;
@@ -927,7 +930,8 @@ nav li:hover a{
     
     .nav_main li,
     .nav_main li a,
-    .nav_main li .nav_TLI {
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         /*
         height: 70px;
         line-height: 70px;
@@ -935,20 +939,9 @@ nav li:hover a{
     }
   
     .nav_main li a,
-    .nav_main li .nav_TLI {
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         font-size: 1rem;
-    }
-    
-    .nav_main .nav_item_demo{
-        right: 0px;
-    }
-    
-    #header .nav_item_demo a{
-        height: 42px!important;
-        padding-right: 20px!important;
-        padding-left: 20px!important;
-        font-family: var(--ftMain_bold_global)!important;
-        line-height: 42px!important;
     }
 }
 
@@ -962,7 +955,8 @@ nav li:hover a{
     
     .nav_main .nav_main_ul li,
     .nav_main .nav_main_ul li a,
-    .nav_main .nav_main_ul li .nav_TLI {
+    .nav_main .nav_main_ul li .nav_TLI,
+    .nav_main .nav_main_ul li button{
         /*
         height: 70px;
         line-height: 70px;
@@ -970,7 +964,8 @@ nav li:hover a{
     }
   
     .nav_main li a,
-    .nav_main li .nav_TLI{
+    .nav_main li .nav_TLI,
+    .nav_main li button{
         padding-right: 10px;
         padding-left: 10px;
     }
