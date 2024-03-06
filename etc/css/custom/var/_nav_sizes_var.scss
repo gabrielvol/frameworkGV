@@ -85,3 +85,7 @@ $nav_drawer_width:              70vw;
 $nav_drawer_width_max:          calc(100% - #{$button_hamb_close_size} - #{$nav_drawer_R});
 $nav_drawer_width_final:        calc(#{$nav_drawer_width} - 5px);
 $nav_drawer_bdWidth:            3px;
+
+// REF [43]
+$logo_width_navOpen:            $nav_drawer_width_final;
+$logo_width_max_navOpen:        $nav_drawer_width_max;

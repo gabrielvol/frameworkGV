@@ -138,15 +138,16 @@
                     @include borderStyleR($nav_drawer_bdColourR, $nav_drawer_bdWidth);
                     box-sizing: border-box;
                     position: fixed;
-                    z-index: $zIndex_logo_clicked;
+                    z-index: $zIndex_logo_navOpen;
                     top: 0;
                     left: 0;
-                    width: calc(#{$nav_drawer_width} - 5px);
-                    max-width: $nav_drawer_width_max;
-                    height: $logo_height_clicked_final;
+                    // REF [43]
+                    width: $logo_width_navOpen;
+                    max-width: $logo_width_max_navOpen;
+                    height: $logo_height_navOpen_final;
                     background-color: $nav_bgColour_BT;
-                    padding-top: $logo_clicked_height_PT;
-                    padding-bottom: $logo_clicked_height_PB;
+                    padding-top: $logo_height_navOpen_PT;
+                    padding-bottom: $logo_height_navOpen_PB;
                     margin: 0;
 
                     .logo_before,

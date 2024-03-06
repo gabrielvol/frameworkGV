@@ -70,7 +70,8 @@
                 }  
             
                 &.site_scrolled_js{
-                    background-color: $modal_nav_bgColour;
+                    // REF [31]
+                    background-color: $button_hamb_open_bgColour_scrolled;
                 } 
                 
                 &.button_hamb_open_pressed{
@@ -110,7 +111,7 @@
 
             .nav_main_ul{
                 @include borderStyleR($nav_drawer_bdColourR, $nav_drawer_bdWidth);
-                padding-top: calc(#{$logo_height_clicked_final} + 5px);
+                padding-top: calc(#{$logo_height_navOpen_final} + 5px);
 
                 li{
                     &,

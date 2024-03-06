@@ -58,10 +58,11 @@ $logo_height_BT_navAccordion:   auto;
 
 
 /* // Nav Drawer logo_header.navDrawer_open --------------------------------- */
-$logo_clicked_height:       50px;
-$logo_clicked_height_PT:    50px;
-$logo_clicked_height_PB:    10px;
-$logo_height_clicked_final: calc(#{$logo_clicked_height} + #{$logo_clicked_height_PT} + #{$logo_clicked_height_PB});
+// REF [43] Ver `[/etc/css/custom/var/nav_sizes_var.scss]` para declarar los anchos
+$logo_height_navOpen:       50px;
+$logo_height_navOpen_PT:    50px;
+$logo_height_navOpen_PB:    10px;
+$logo_height_navOpen_final: calc(#{$logo_height_navOpen} + #{$logo_height_navOpen_PT} + #{$logo_height_navOpen_PB});
 
 
 /* // Logo Sizes AT --------------------------------------------------------- */

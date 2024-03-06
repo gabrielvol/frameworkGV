@@ -7,7 +7,7 @@
 <?php if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
-<?php endif; if(!empty($nav_drawer_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
+<?php endif; if(!empty($nav_drawer_act)): /* // REF [06] nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_drawer.js"></script>
     
 <?php endif; if(!empty($has_scrolling)): ?>
