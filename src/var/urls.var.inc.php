@@ -48,6 +48,7 @@
 
 
 /* // Hashes ---------------------------------------------------------------- */
+$hash_body          = '#body';
 $hash_top           = '#header';
 $hash_main          = '#main';
 //$hash_inicio        = '#inicio';

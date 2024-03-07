@@ -37,7 +37,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
 ?>
-<body>
+<body id="body">
     <?php
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php');
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.send.inc.php');
