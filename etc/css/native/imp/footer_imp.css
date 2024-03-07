@@ -1,0 +1,84 @@
+/* * NombreDeProyecto * ========================================================
+   Main Styles | Footer
+   ==========================================================================
+
+Imported in `[/src/css/main.css]`
+*/
+
+#footer{
+    box-sizing: border-box;
+    background-color: var(--grey3XD);
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+#footer p,
+#footer li a,
+#footer li a:active,
+#footer li a:visited{
+    color: var(--grey2XL);
+}
+
+#footer li a:hover,
+#footer li a:focus{
+    color: var(--grey4XL);  
+}
+
+#footer li a{
+    display: block;
+    width:  100%;
+    text-align: center;
+}
+
+.logo_footer{
+    display: block;
+    width: 180px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Footer | Section __ Before 500px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 500px){
+    #footer p,
+    #footer li a{
+        font-size: 0.85rem;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Footer | Section __ After 500px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 501px){
+    #footer p,
+    #footer li a{
+        font-size: 0.9rem;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Footer | Section __ Before 768px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (max-width: 767px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Footer | Section __ After 768px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 768px){}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Footer | Section __ After 900px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 901px){
+    #footer li a{
+        font-size: 0.8rem;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Footer | Section __ After 1024px
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 1024px){
+    #footer li a{
+        font-size: 0.9rem;
+    }
+}

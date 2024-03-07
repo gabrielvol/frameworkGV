@@ -1,0 +1,218 @@
+/* * NombreDeProyecto * ========================================================
+   Main Styles | Buttons
+   ==========================================================================
+
+Imported in `[/src/css/main.css]`
+*/
+
+/* // Button Close ---------------------------------------------------------- */
+.button_close {
+  position: absolute;
+  z-index: 9900;
+  border-radius: 50%;
+  width: 35px !important;
+  height: 35px !important;
+  background-size: 100%;
+  background-color: var(--white);
+  background-image: url("../../img/button_close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.button_close, .button_close:focus,
+.button_close:hover {
+    background-color: var(--white);
+}
+
+  
+/* // Button Whatsapp ------------------------------------------------------- */
+#header .button_whatsapp_anchor {
+    transition: all 0.7s ease;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 7900;
+    right: 10px;
+    bottom: 10px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 50%;
+    background-image: url("../../img/button_whatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: auto calc(60px - 10px);
+    background-position: center center;
+}
+
+#header.header_hasForm .button_whatsapp_anchor{
+    bottom: 90px;
+}
+
+#header .button_whatsapp_anchor,
+#header .button_whatsapp_anchor:visited,
+#header .button_whatsapp_anchor:active {
+    /*
+    background-color: var(--white);
+    */
+}
+
+#header .button_whatsapp_anchor:focus,
+#header .button_whatsapp_anchor:hover {
+    /*
+    box-shadow: 0 0 5px #3c9637;
+    background-color: var(--white);
+    */
+}
+
+/*#header .button_whatsapp_anchor:focus::before,
+#header .button_whatsapp_anchor:hover::before {
+    content: "Chat con CompanyName.";
+    border-radius: 15px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    right: calc(60px + 5px);
+    background-color: var(--black_rgba85);
+    padding: 0 15px;
+    margin-top: -20px;
+    color: var(--white);
+    font-family: var(--ftMain_regular_global);
+    font-size: 0.8rem;
+    text-indent: 0;
+    text-align: center;
+}*/
+    
+@media (max-width: 500px) {
+    #header .button_whatsapp_anchor:focus::before,
+    #header .button_whatsapp_anchor:hover::before {
+        width: 175px;
+    }
+}
+
+@media (max-width: 767px) {
+    #header .button_whatsapp_anchor.navDrawer_open::before,
+    #header .button_whatsapp_anchor.navDrawer_open:focus::before,
+    #header .button_whatsapp_anchor.navDrawer_open:hover::before {
+      display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    #header .button_whatsapp_anchor:focus::before,
+    #header .button_whatsapp_anchor:hover::before {
+        width: 190px;
+    }
+}
+
+#header .button_whatsapp_anchor .button_whatsapp_nFormatted{}
+
+#header .button_whatsapp_anchor .button_whatsapp_nFormatted:not(:focus):not(:active){
+      position: absolute;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      border: 0 !important;
+      padding: 0 !important;
+      margin: -1px;
+      overflow: hidden;
+      white-space: nowrap;
+}
+
+/* // Button Site Top ------------------------------------------------------- */
+.button_siteTop {
+    opacity: 0;
+    transition: all 0.7s ease;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 9900;
+    bottom: -45px;
+    left: 20px;
+    background-image: url("../../img/button_siteTop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+    
+.button_siteTop.site_scrolled_js{
+    opacity: 1;
+    bottom: 20px;
+}
+
+/* // Call To Action -------------------------------------------------------- */
+.callToAction{
+    transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.6s, border-color 1s, box-shadow 0.6s;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    border-radius: var(--borderRadius_small);
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: var(--ftMain_bold_global)
+    text-align: center;
+    line-height: 1.3;    
+}
+  
+.callToAction,
+.callToAction:visited,
+.callToAction:active,
+.callToAction:focus,
+.callToAction:hover{}
+  
+.callToAction,
+.callToAction:visited,
+.callToAction:active{
+    border: 1px solid var(--CTA_bdColour);
+    background-image: none;
+    color: var(--CTA_ftColour);
+    background-color: var(--CTA_bgColour);
+}
+  
+.callToAction:focus,
+.callToAction:hover{
+    border-color: var(--CTA_bdColour_hover)!important;
+    background-color: var(--CTA_bgColour_hover);
+    color: var(--CTA_ftColour_hover);
+}
+  
+@media (max-width: 350px){
+    .callToAction {
+        font-size: 1.1em;
+    }
+}
+  
+@media (min-width: 351px){
+    .callToAction {
+        font-size: 1.2em;
+    }
+}
+    
+@media (max-width: 500px){
+    .callToAction {
+        width: 100% !important;
+        max-width: 310px;
+    }
+}
+  
+@media (min-width: 501px){
+    .callToAction {
+        max-width: 330px;
+    }
+}
+  
+@media (min-width: 601px){
+    .callToAction {
+        max-width: 360px;
+    }
+}

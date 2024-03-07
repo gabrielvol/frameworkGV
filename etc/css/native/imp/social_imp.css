@@ -1,0 +1,30 @@
+/* * NombreDeProyecto * ========================================================
+   Main Styles | Social Networks
+   ==========================================================================
+
+Imported in `[/src/css/main.css]`
+*/
+
+.social_fb a{
+    background-image: url('../../img/social_fb.svg');
+}
+
+.social_ig a{
+    background-image: url('../../img/social_ig.svg');
+}
+
+.social_li a{
+    background-image: url('../../img/social_in.svg');
+}
+
+.social_tk a{
+    background-image: url('../../img/social_tk.svg');
+}
+
+.social_x a{
+    background-image: url('../../img/social_x.svg');
+}
+
+.social_yt a{
+    background-image: url('../../img/social_yt.svg');
+}

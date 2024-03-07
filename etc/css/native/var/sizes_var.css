@@ -26,11 +26,13 @@
 
 /* // Logo Sizes Desktop - */    
     --logo_width_A700:  120px;
-    --logo_width_AT:    130px;
+    --logo_width_A768:  130px;
     --logo_width_A800:  140px;
     --logo_width_A900:  150px;
-    --logo_width_ATL:   170px;
+    --logo_width_A768L: 170px;
     --logo_width_A1200: 200px;
+
+    --logo_width_scrolled_A700:  100px;
 
 /* // Button Hambuger Sizes ------------------------------------------------- */
     --button_hamb_open_width:        90px;
@@ -38,12 +40,27 @@
     --button_hambOnly_size:          45px;
     --button_hamb_close_size:        var(--button_hamb_open_height); // REF [11] Si está activado $hamburger_only_act el valor debe ser $button_hambOnly_size
 
-/* // Nav Drawer ------------------------------------------------------------ */
+/* // Nav ------------------------------------------------------------------- */
     --nav_drawer_R:                  0;
     --nav_drawer_width:              70vw;
     --nav_drawer_width_max:          calc(100% - var(--button_hamb_close_size) - var(--nav_drawer_R));
     --nav_drawer_width_final:        calc(var(--nav_drawer_width) - 5px);
     --nav_drawer_bdWidth:            3px;
+
+    --nav_item_height_navBT:     50px;
+
+    --nav_item_height_navAT:  40px;
+    --nav_item_height_A900:   40px;
+    --nav_item_height_A1024:  40px;
+    --nav_item_height_A1200:  40px;
+
+    --nav_item_height_scrolled_navAT:  36px;
+
+    --nav_item_lang_height_navBT:    calc(var(--nav_item_height_navBT) - 4px);
+    --nav_item_lang_height_navAT:    calc(var(--nav_item_height_navAT) - 2px);
+
+    --nav_item_lang_height_before_navBT:    calc(var(--nav_item_lang_before_navBT) - 14px);
+    --nav_item_lang_height_before_navAT:    calc(var(--nav_item_lang_before_navAT) - 6px);
     
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

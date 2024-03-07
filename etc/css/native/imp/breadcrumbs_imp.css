@@ -1,0 +1,100 @@
+/* * NombreDeProyecto * ========================================================
+   Main Styles | Breadcrumbs
+   ==========================================================================
+
+Imported in `[/src/css/main.css]`
+*/
+
+.breadcrumbs p,
+.breadcrumbs ul::before,
+.breadcrumbs li,
+.breadcrumbs a {
+  color: var(--greyXD); }
+
+.breadcrumbs ul::before {
+  content: "Estoy en:";
+  display: block;
+  visibility: visible;
+  font-family: var(--ftMain_regular_global);
+  font-weight: 700; }
+
+.breadcrumbs li a {
+  font-size: 1em; }
+
+.breadcrumbs li:focus a, .breadcrumbs li:hover a {
+  color: var(--grey2XD); }
+
+.breadcrumbs li::before {
+  content: "\0203A ";
+  display: block;
+  float: left;
+  font-size: 1rem;
+  white-space: pre; }
+
+.breadcrumbs li:first-child,
+.breadcrumbs li:first-child a {
+  color: var(--grey2XD); }
+
+@media (max-width: 500px) {
+  .breadcrumbs {
+    background-color: var(--greyXL);
+    padding-top: 5px;
+    padding-bottom: 15px; }
+    .breadcrumbs ul::before,
+    .breadcrumbs li,
+    .breadcrumbs li::before,
+    .breadcrumbs a,
+    .breadcrumbs a::before {
+      height: 30px;
+      line-height: 30px; }
+    .breadcrumbs p,
+    .breadcrumbs ul::before,
+    .breadcrumbs li {
+      font-size: 0.9rem; }
+    .breadcrumbs ul::before {
+      font-weight: 700; }
+    .breadcrumbs li {
+      clear: both; }
+      .breadcrumbs li:last-child {
+        display: none; } }
+
+@media (min-width: 500px) {
+  .breadcrumbs {
+    border-top: 2px solid var(--greyXD);
+    background-color: var(--grey2XL);
+    padding-bottom: 5px; }
+    .breadcrumbs ul,
+    .breadcrumbs ul::before,
+    .breadcrumbs li,
+    .breadcrumbs a {
+      height: 30px;
+      line-height: 30px; }
+    .breadcrumbs ul::before,
+    .breadcrumbs li {
+      font-size: 0.72rem; }
+    .breadcrumbs ul {
+      position: relative;
+      padding-left: 65px; }
+      .breadcrumbs ul::before {
+        width: 65px;
+        position: absolute;
+        left: 0;
+        text-align: right; }
+    .breadcrumbs li {
+      float: left;
+      padding-left: 10px; }
+      .breadcrumbs li::before {
+        letter-spacing: -0.08em; }
+      .breadcrumbs li:first-child::before {
+        display: none; }
+    .breadcrumbs a {
+      text-decoration: underline; } }
+
+@media (min-width: 851px) {
+  .breadcrumbs ul::before,
+  .breadcrumbs li {
+    font-size: 0.8rem; } }
+
+@media (min-width: 1024px) {
+  .breadcrumbs {
+    padding-bottom: 0; } }
