@@ -8,56 +8,24 @@
 //
 // #description #lang #meta #seo #title
 
-
-
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-///-- Inicio del nombre
-// bd                   = borde
-// bg                   = fondo / background
-// bx                   = box
-// ft                   = fuente
-// mq, MQ               = media query @media
-// tx                   = texto
-
-///-- Fin del nombre
-// _before              = se usa con pseudo-elementos ::before
-// _after               = se usa con pseudo-elementos ::after
-// _act                 = activacion
-// _ani                 = animacion
-// _hover               = se usa con pseudo-clases :focus y :hover
-// _hs                  = hash
-// _imp			= importacion
-// _mx                  = mixin
-
-///-- Espaciado
-// P, M                 = padding, margin
-// T, R, B, L           = top, right, bottom, left
-// H, V, A, X           = horizontal, vertical, all, custom defined
-
-///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
-
-///-- Colores
-// X, L, D              = extra, light, dark
-// De, S, B             = desaturated, semi, bright
-
-///-- Fuentes
-// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
-// X, S, U, C, I        = extra, semi, ultra, condensed, italic
-
-
-
 /* // Site titles ----------------------------------------------------------- */
-// El index usa como titulo solamente $site_name_full
+// El index usa como titulo solamente `$site_name_full`
 
 // Las internas componen el nombre con las variables
-// $page_title_home_PAGEINT y $site_name_title
-// Ej.: Nosotros | $page_title_home_laEmpresa | $site_name_title  
+// `$page_title_home-PAGEINT` y `$site_name_title`
+// Ej.: Nosotros | `$page_title_home_laEmpresa` | `$site_name_title`  
 
-// La variable $page_title_home_PAGEINT tambien se usa para el item en Nav Main
+// La variable `$page_title_home-PAGEINT` tambien se usa para el item en
+// Nav Main para usar el mismo texto como item
 
-if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
+// La variable `$page_desc_global` se usa como descripcion para todas las
+// paginas del sitio. Para cambiar la descripcion de una unica pagina hay
+// que modificar la variable `$page_desc` en el archivo de la pagina
+
+if(isset($gettext_idioma)){
+
+/* // en_GB ----------------------------------------------------------------- */    
+if($gettext_idioma == 'en_GB'){
     $site_name_full         = 'SiteNameFull';
     $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
@@ -82,6 +50,7 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     $page_desc_global       = '';
 
 
+/* // xx_XX ----------------------------------------------------------------- */
 } elseif($gettext_idioma == 'xx_XX'){
     $site_name_full          = 'SiteNameFull';
     $site_name_short         = 'SiteNameShort';
@@ -107,6 +76,7 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     $page_desc_global        = 'sinTraduccion';
 
 
+/* // es_AR ----------------------------------------------------------------- */
 } } else {    
     $site_name_full         = 'SiteNameFull';
     $site_name_short        = 'SiteNameShort';

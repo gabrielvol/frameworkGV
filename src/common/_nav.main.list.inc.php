@@ -1,9 +1,10 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Nav Main [/src/common/nav.main.list.inc.php]
+   Nav Main List [/src/common/nav.main.list.inc.php]
    ========================================================================== */
 
-// Las variables $nav_main_item_XXX se encuentran en `[/src/var/meta.titlesDesc.var.inc.php]`
+// Las variables `$nav_main_item_XXX` se encuentran en `[/src/var/meta.titlesDesc.var.inc.php]`
+
 ?>
 
 

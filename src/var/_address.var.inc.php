@@ -4,47 +4,7 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// REF [13]
-
-
-
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-///-- Inicio del nombre
-// bd                   = borde
-// bg                   = fondo / background
-// bx                   = box
-// ft                   = fuente
-// mq, MQ               = media query @media
-// tx                   = texto
-
-///-- Fin del nombre
-// _before              = se usa con pseudo-elementos ::before
-// _after               = se usa con pseudo-elementos ::after
-// _act                 = activacion
-// _ani                 = animacion
-// _hover               = se usa con pseudo-clases :focus y :hover
-// _hs                  = hash
-// _imp			= importacion
-// _mx                  = mixin
-
-///-- Espaciado
-// P, M                 = padding, margin
-// T, R, B, L           = top, right, bottom, left
-// H, V, A, X           = horizontal, vertical, all, custom defined
-
-///-- Tamanos de Pantalla
-// M, T, D, DL          = mobile, tablet, desktop, desktop large
-// B, A, O, L           = before, after, only, landscape
-
-///-- Colores
-// X, L, D              = extra, light, dark
-// De, S, B             = desaturated, semi, bright
-
-///-- Fuentes
-// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
-// X, S, U, C, I        = extra, semi, ultra, condensed, italic
-
-
+// REF [13] Address / date_default_timezone_set
 
 /* // Address Principal // REF [13] ----------------------------------------- */
 if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
@@ -80,4 +40,5 @@ $site_address_ADDRESSA_map_iframe      = '<iframe src="' . $site_address_ADDRESS
 // $site_address_NOMBRE_map_href  = 'href="' . $site_address_NOMBRE_map_url . '"';
 // $site_address_NOMBRE_map_iframe_src  = 'https_google_com_maps_embed_aaaaaaaaaaaaaaaaa';
 // $site_address_NOMBRE_map_iframe      = '<iframe src="' . $site_address_NOMBRE_map_iframe_src . '" allowfullscreen="" loading="lazy"></iframe>';
+
 ?>
