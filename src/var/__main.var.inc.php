@@ -17,9 +17,11 @@ include('act/nav.act.inc.php');
     
 /* // Data ------------------------------------------------------------------ */
 include('lang.var.inc.php');
-include('domain.var.inc.php');
 //include('date.var.inc.php');
-include('urls.var.inc.php');
+
+include('domain.var.inc.php');
+// include('web.var.inc.php');
+include('url.var.inc.php');
     
 include('meta.titlesDesc.var.inc.php');
 // include('address.var.inc.php');
@@ -35,7 +37,7 @@ include('email.var.inc.php');
 // REF [36]
 if(!empty($has_form)){ include('form.var.inc.php'); }
 
-include('classes.var.inc.php');
+include('class.var.inc.php');
 
 /* Entornos no-produccion
 if($dir_env !== ''){ include('xxx.var.inc.php'); }

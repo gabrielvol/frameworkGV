@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Classes Variables [/src/var/classes.var.inc.php]
+   Classes Variables [/src/var/class.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
