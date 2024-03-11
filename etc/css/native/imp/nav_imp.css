@@ -294,7 +294,7 @@ nav li:hover a{
     }
 
     .nav_item_lang a{
-        padding-left: calc(var(--nav_item_lang_height_before_navBT) + 8px)!important;
+        padding-left: calc(var(--nav_item_lang_height_navBT) + 8px)!important;
         font-size: 0.7rem!important;
         color: var(--greyD)!important;
         text-transform: uppercase;
