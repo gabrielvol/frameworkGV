@@ -1,3 +1,7 @@
+/* * NombreDeProyecto * ========================================================
+   Form javascript [/src/js/form.js]
+   ========================================================================== */
+
 $(document).ready(function () {
     $('.button_form_submit').scrollPosReload(); // REF [25]
     

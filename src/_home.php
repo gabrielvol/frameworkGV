@@ -13,7 +13,7 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
-    $page_url_full          = $url_inicio_full;
+    $page_url_full          = $url_home_full;
     
     $page_title             = $site_name_full;    
     $page_desc              = $page_desc_global;

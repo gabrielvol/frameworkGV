@@ -308,6 +308,7 @@ form{
         font-family: $button_form_submit_ftFamily;
         font-size: 1.2rem;
         text-transform: uppercase;
+        cursor: default;
         
         @if $googleFont_act == "on"{
             font-weight: $button_form_submit_ftWeight;

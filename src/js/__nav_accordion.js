@@ -1,3 +1,7 @@
+/* * NombreDeProyecto * ========================================================
+   Nav accordion javascript [/src/js/nav_accordion.js]
+   ========================================================================== */
+
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {
         $(this).addClass('clicked');

@@ -3081,7 +3081,7 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
   /* no scroll activation
     bottom: 20px;
     */
-  /* scroll activation // REF [31]
+  /* scroll activation // REF [31**]
     bottom: calc(-1 * calc(40px + 5px));
     opacity: 0;
     

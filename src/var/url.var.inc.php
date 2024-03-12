@@ -26,7 +26,7 @@ $hash_main          = '#main';
 
 $url_root           = $dir_env . '/';
 $url_index          = $dir_env . '/index.php';
-//$url_home         = $dir_env . '/home.php';
+$url_home           = $dir_env . '/home.php';
 $url_contacto       = $dir_env . '/contacto.php';
 //$url_gracias        = $dir_env . '/gracias.php';
 //$url_construccion   = $dir_env . '/construccion.php';
@@ -103,7 +103,7 @@ $url_custom             = 'http://www.' . $domain_custom;
 // lista
 
 $url_index_full         = $url_wip . $url_index;
-//$url_inicio_full        = $url_wip . $url_home;
+$url_home_full          = $url_wip . $url_home;
 $url_contacto_full      = $url_wip . $url_contacto;
 //$url_gracias_full       = $url_wip . $url_gracias;
 //$url_construccion_full  = $url_wip . $url_construccion;
@@ -123,9 +123,11 @@ $url_contacto_full      = $url_wip . $url_contacto;
     
 /* // href ------------------------------------------------------------------ */
 $href_root          = 'href="' . $url_root . '"'; 
-$href_logo          = $href_root;
 $href_index         = 'href="' . $url_index . '"';
 $href_contacto      = 'href="' . $url_contacto . '"';
+
+$href_logo          = $href_root;
+
 //$href_construccion  = 'href="' . $url_construccion . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';

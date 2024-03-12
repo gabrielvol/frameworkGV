@@ -29,6 +29,8 @@ $zIndex_modal_bg:               9000;
 
 
 /* // 8000 ------------------------------------------------------------------ */ 
+$zIndex_button_belowModal:      8990; 
+
 /*___ Lang ______________________________*/
 $zIndex_nav_lang_ul_clicked:    $zIndex_button_topLevel; // 9900
 $zIndex_nav_lang_ul:            8500;
@@ -60,7 +62,7 @@ $zIndex_header_topper:      $zIndex_header; // 7200
 
 /*___ Footer ____________________________*/
 $zIndex_footer:             $zIndex_header; // 7200
-$zIndex_button_siteTop:     $zIndex_button_topLevel; // 9900
+$zIndex_button_siteTop:     $zIndex_button_belowModal; // 8990
 
 /*___ Slick Slider ______________________*/
 $zIndex_slider_arrows_dots:  7140;

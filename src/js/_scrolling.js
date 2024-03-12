@@ -1,14 +1,19 @@
-/* =============================================================================
-   Scrolling effects
+/* * NombreDeProyecto * ========================================================
+   Scrolling effects [/src/js/scrolling.js]
    ========================================================================== */
+
+// REF [18] Button SiteTop
+// REF [31*] Nav Button Hamb Open .site_scrolled_js
+// REF [42] Nav height .site_scrolled_js
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 80) {
         $('#header').addClass('site_scrolled_js'); // REF [42]
-        $('.button_hamb_open').addClass('site_scrolled_js'); // REF [31]
+        $('.button_hamb_open').addClass('site_scrolled_js'); // REF [31*]
         $('.button_siteTop').addClass('site_scrolled_js'); // REF [18]
     } else {
         $('#header').removeClass('site_scrolled_js'); // REF [42]
-        $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [31]
+        $('.button_hamb_open').removeClass('site_scrolled_js'); // REF [31*]
         $('.button_siteTop').removeClass('site_scrolled_js'); // REF [18]
     }
 });

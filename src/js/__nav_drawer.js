@@ -1,3 +1,7 @@
+/* * NombreDeProyecto * ========================================================
+   Nav drawer javascript [/src/js/nav_drawer.js]
+   ========================================================================== */
+
 var dir_env = '/stage';
 
 $(document).ready(function () {
