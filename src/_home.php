@@ -5,7 +5,7 @@
     
     $page_int      = 0;
     $nav_pageCurrent        = 'page_index';
-    $nav_pageCurrent_int    = 'page_inicio';
+    $nav_pageCurrent_int    = 'page_index_home';
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.index.var.inc.php'); 
     

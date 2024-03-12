@@ -25,13 +25,13 @@
 <script src="<?php echo $dir_env; ?>/js/_int.js"></script>
 */ ?>
 
-<?php endif; if($nav_pageCurrent_int == 'page_home'): /*
+<?php endif; if($nav_pageCurrent_int == 'page_index_index'): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_home.js"></script>
 */ ?>
 
-<?php endif; if($nav_pageCurrent_int == 'page_inicio'): /*
+<?php endif; if($nav_pageCurrent_int == 'page_index_home'): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_inicio.js"></script>

@@ -19,10 +19,10 @@
 <?php endif; if(!empty($page_int)): /* // Internas
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
-<?php endif; if($nav_pageCurrent_int == 'page_home'): /*
+<?php endif; if($nav_pageCurrent_int == 'page_index_index'): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
-<?php endif; if($nav_pageCurrent_int == 'page_inicio'): /*
+<?php endif; if($nav_pageCurrent_int == 'page_index_home'): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
 <?php endif; if($nav_pageCurrent == 'page_contacto'): /*
