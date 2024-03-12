@@ -327,7 +327,7 @@ nav li:hover a{
     .nav_main{
         position: relative;
         background-color: transparent;
-        width: calc(100% - var(--logo_width_A700) - var(--nav_language_width_A700));
+        width: calc(100% - var(--logo_width_A700) - var(--nav_lang_width_A700));
         padding-left: 10px;
     }
     
@@ -471,7 +471,7 @@ nav li:hover a{
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 @media (min-width: 768px){
     .nav_main{
-        width: calc(100% - var(--logo_width_A768) - var(--nav_language_width_AT));
+        width: calc(100% - var(--logo_width_A768) - var(--nav_lang_width_AT));
     }
 
     .nav_main_ul{}
@@ -492,7 +492,7 @@ nav li:hover a{
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 @media (min-width: 801px){   
     .nav_main{
-        width: calc(100% - var(--logo_width_A800) - var(--nav_language_width_A800));
+        width: calc(100% - var(--logo_width_A800) - var(--nav_lang_width_A800));
     }  
 }
 
@@ -501,7 +501,7 @@ nav li:hover a{
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 @media (min-width: 901px){
     .nav_main{
-        width: calc(100% - var(--logo_width_A900) - var(--nav_language_width_A900));
+        width: calc(100% - var(--logo_width_A900) - var(--nav_lang_width_A900));
         padding-left: 25px;
     }  
     
@@ -550,7 +550,7 @@ nav li:hover a{
     .nav_main{
         position: relative;
         background-color: transparent;
-        width: calc(100% - var(--logo_width_A768L) - var(--nav_language_width_ATL));
+        width: calc(100% - var(--logo_width_A768L) - var(--nav_lang_width_ATL));
         padding-left: 20px;
     }
     
@@ -574,7 +574,7 @@ nav li:hover a{
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 @media (min-width: 1200px){
     .nav_main{
-        width: calc(100% - var(--logo_width_A1200) - var(--nav_language_width_A1200));
+        width: calc(100% - var(--logo_width_A1200) - var(--nav_lang_width_A1200));
     }
     
     .nav_main .nav_main_ul li,

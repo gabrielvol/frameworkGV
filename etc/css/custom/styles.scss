@@ -12,7 +12,7 @@
 
 @import "act/header_act";
 @import "act/nav_main_act";
-@import "act/nav_language_act";
+@import "act/nav_lang_act";
 @import "act/footer_act";
 
 @import "act/page_index_act";
@@ -42,7 +42,7 @@
 @import "var/nav_arrows_var";
 @import "var/nav_fonts_var";
 @import "var/nav_sizes_var";
-@import "var/nav_language_var";
+@import "var/nav_lang_var";
 
 @import "var/lists_var";
 @import "var/buttons_var";
@@ -163,8 +163,8 @@
 @import "nav_main_list";
 @import "nav_main_AT";
 @import "nav_main_ALL";
-//@import "nav_language";
-//@import "nav_language_square";
+//@import "nav_lang";
+//@import "nav_lang_square";
 
 //@import "slider";
 //@import "slider_nav";

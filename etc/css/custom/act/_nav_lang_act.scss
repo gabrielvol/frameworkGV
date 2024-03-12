@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Nav Activators | Custom [/etc/css/custom/act/nav_language_act.scss]
+   Nav Activators | Custom [/etc/css/custom/act/nav_lang_act.scss]
    ========================================================================== */ 
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -9,21 +9,21 @@
 
 
 /* // Listado --------------------------------------------------------------- */
-// 01 _ $nav_language_flag_rounded_act
-// 02 _ $nav_language_navDrawerOpen_act
+// 01 _ $nav_lang_flag_rounded_act
+// 02 _ $nav_lang_navDrawerOpen_act
 //
 //
-// 01 _ $nav_language_flag_rounded_act
-// Activa el if que se encuentra en `[/etc/css/custom/nav_language.scss]`.
+// 01 _ $nav_lang_flag_rounded_act
+// Activa el if que se encuentra en `[/etc/css/custom/nav_lang.scss]`.
 // 
 // Genera estilos para banderas redondas, enmascaradas. Responsive.
 //
 //
-// 02 _ $nav_language_navDrawerOpen_act
-// Activa los if que se encuentran en `[/etc/css/custom/nav_language.scss]` y 
+// 02 _ $nav_lang_navDrawerOpen_act
+// Activa los if que se encuentran en `[/etc/css/custom/nav_lang.scss]` y 
 // `[/etc/css/scss/settings_nav_drawer.scss]`.
 // 
-// Genera estilos que se usan cuando a `.nav_language_ul` se le agrega la clase
+// Genera estilos que se usan cuando a `.nav_lang_ul` se le agrega la clase
 // `.navDrawer_open`. Ubica la lista de idiomas dentro de Nav Drawer, abajo.
 // Agrega un padding-bottom en `.nav_main_ul` para darle espacio.
 
@@ -69,5 +69,5 @@
 
 
 /* // Nav Language ---------------------------------------------------------- */
-$nav_language_flag_rounded_act:     off;
-$nav_language_navDrawerOpen_act:    off; // REF [33]
+$nav_lang_flag_rounded_act:     off;
+$nav_lang_navDrawerOpen_act:    off; // REF [33]

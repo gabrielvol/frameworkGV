@@ -18,7 +18,7 @@
         
     <?php /*
         if($dir_env == "/test"){
-            include('nav.language.inc.php');
+            include('nav.lang.inc.php');
         }
     */ ?>
 </header>

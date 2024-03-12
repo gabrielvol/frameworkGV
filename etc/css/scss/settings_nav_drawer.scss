@@ -67,8 +67,8 @@
                 padding-left: 5px;
                 overflow: scroll; 
                 
-                @if $nav_language_navDrawerOpen_act == "on"{
-                    padding-bottom: calc(#{$nav_language_ul_height_clicked} + #{$nav_language_ul_bottom} + #{$nav_language_ul_height_clicked_PT} + #{$nav_language_ul_height_clicked_PB} + 10px);
+                @if $nav_lang_navDrawerOpen_act == "on"{
+                    padding-bottom: calc(#{$nav_lang_ul_height_clicked} + #{$nav_lang_ul_bottom} + #{$nav_lang_ul_height_clicked_PT} + #{$nav_lang_ul_height_clicked_PB} + 10px);
                 } @else {
                     padding-bottom: 30px;     
                 }

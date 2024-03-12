@@ -1,0 +1,89 @@
+/* * NombreDeProyecto * ========================================================
+   Nav Language Variables | Custom [/etc/css/custom/var/nav_lang_var.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de variables scss.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq, MQ               = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hs                  = hash
+// _hover               = se usa con pseudo-clases :focus y :hover
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+
+/* // Language Sizes -------------------------------------------------------- */
+$nav_lang_item_n:               2;
+
+/*___ Flags _____________________________*/
+$nav_lang_flag_width_BT:            38px;
+$nav_lang_flag_height_BT:           25px; // Este valor se usa para el tamaño de las flag rounded
+
+$nav_lang_flag_width_clicked:       55px;
+$nav_lang_flag_height_clicked:      36px;
+
+$nav_lang_flag_width_AT:            $nav_lang_flag_width_BT;
+$nav_lang_flag_height_AT:           $nav_lang_flag_height_BT; // Este valor se usa para el tamaño de las flag rounded
+$nav_lang_flag_sep_AT:              10px;
+
+$nav_lang_flag_border_size:         1px;
+$nav_lang_flag_border_size_full:    calc(#{$nav_lang_flag_border_size} * 2);
+
+/*___ Language UL _______________________*/
+$nav_lang_ul_right_AT:          20px;
+$nav_lang_ul_bottom:            20px;
+
+/* Comentar si Nav Language Square // REF [37] */
+$nav_lang_ul_width_AT:          calc(calc(#{$nav_lang_flag_width_AT} * #{$nav_lang_item_n}) + calc(#{$nav_lang_flag_sep_AT} * calc(#{$nav_lang_item_n} - 1)) + #{$nav_lang_ul_right_AT} + 15px);// REF [37]
+
+$nav_lang_ul_height_BT:             calc(#{$nav_lang_flag_height_BT} + #{$nav_lang_flag_border_size_full});
+$nav_lang_ul_height_clicked:        calc(#{$nav_lang_flag_height_clicked} + #{$nav_lang_flag_border_size_full});
+$nav_lang_ul_height_clicked_PT:     30px;
+$nav_lang_ul_height_clicked_PB:     20px;
+$nav_lang_ul_height_AT:             calc(#{$nav_lang_flag_height_AT} + #{$nav_lang_flag_border_size_full});// REF [37]
+
+$nav_lang_ul_height_before:         20px;
+
+/*___ Language Square ___________________
+$nav_lang_ul_height_AT:        $nav_height_A768;
+$nav_lang_item_sq_size_AT:     $nav_height_A768;
+$nav_lang_ul_width_AT:          calc(#{$nav_lang_ul_height_AT} - 18px);
+$nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;  
+*/
+
+/* // Language Colours ------------------------------------------------------ */
+$nav_lang_ul_bgColour_clicked:              transparent;
+$nav_lang_flag_anchor_bgColour:                 $bgColour_neutral;
+$nav_lang_flag_rounded_anchor_hover_bxShadow:   0 0 10px $white;

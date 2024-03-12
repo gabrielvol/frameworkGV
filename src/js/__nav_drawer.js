@@ -18,7 +18,7 @@ $(document).ready(function () {
             $(this).closest('#header').find('.logo_header').addClass('navDrawer_open');
 //            $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_navDrawer.svg");
 
-            $(this).closest('#header').find('.nav_language_ul').addClass('navDrawer_open');
+            $(this).closest('#header').find('.nav_lang_ul').addClass('navDrawer_open');
             
             $(this).closest('#nav').find('.button_hamb_close').addClass('button_hamb_close_visible');
         });
@@ -32,7 +32,7 @@ $(document).ready(function () {
 //        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_header.svg");
         
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');  
-        $(this).closest('#header').find('.nav_language_ul').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
         $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
         
         $(this).closest('body').find('#footer').removeClass('navDrawer_open');
@@ -62,7 +62,7 @@ $(document).ready(function () {
 //        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_header.svg");
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
-        $(this).closest('#header').find('.nav_language_ul').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
         $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
 
         $(this).closest('body').find('#footer').removeClass('navDrawer_open');
@@ -91,7 +91,7 @@ $(document).ready(function () {
 //        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_header.svg");
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
-        $(this).closest('#header').find('.nav_language_ul').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
         $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
 
         $(this).closest('body').find('#footer').removeClass('navDrawer_open');

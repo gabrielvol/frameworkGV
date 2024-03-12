@@ -16,9 +16,12 @@
         <ul class="nav_main_ul navAT unstyled" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
             <?php include('nav.main.list.inc.php'); ?>
         </ul>
+
+        <?php // REF 05 include('nav.lang.ul.inc.php'); ?>
     
     <?php
-        // REF [05] `[/src/var/act/nav.act.inc.php]`, `[/etc/css/custom/act/classes_useful_act.scss]`
+        // REF [05] `[/src/var/act/nav.act.inc.php]`
+        // REF [05] `[/etc/css/custom/act/classes_useful_act.scss]`
         if(!empty($nav_double_A768_act)): ?>
         </div>
     <?php endif; ?>
@@ -40,10 +43,10 @@
                 
                 /* // REF [37]
                 if($gettext_idioma == 'en_GB'):
-                include ('nav.language.sq.item.es.inc.php');
+                include ('nav.lang.item.sq.es.inc.php');
 
                 endif; if($gettext_idioma == 'es_AR'):        
-                include ('nav.language.sq.item.en.inc.php');
+                include ('nav.lang.item.sq.en.inc.php');
 
                 endif;
                 */

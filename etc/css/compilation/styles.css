@@ -101,7 +101,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Nav Main -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Nav Activators | Custom [/etc/css/custom/act/nav_language_act.scss]
+   Nav Activators | Custom [/etc/css/custom/act/nav_lang_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Listado --------------------------------------------------------------- */
@@ -293,7 +293,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Nav List -------------------------------------------------------------- */
 /* // Nav Drawer ------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   Nav Language Variables | Custom [/etc/css/custom/var/nav_language_var.scss]
+   Nav Language Variables | Custom [/etc/css/custom/var/nav_lang_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -302,10 +302,10 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Language UL _______________________*/
 /* Comentar si Nav Language Square // REF [37] */
 /*___ Language Square ___________________
-$nav_language_ul_height_AT:        $nav_height_A768;
-$nav_language_item_sq_size_AT:     $nav_height_A768;
-$nav_language_ul_width_AT:          calc(calc(25px + calc(1px * 2)) - 18px);
-$nav_language_anchor_size_AT:       $nav_language_ul_width_AT;  
+$nav_lang_ul_height_AT:        $nav_height_A768;
+$nav_lang_item_sq_size_AT:     $nav_height_A768;
+$nav_lang_ul_width_AT:          calc(calc(25px + calc(1px * 2)) - 18px);
+$nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;  
 */
 /* // Language Colours ------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
