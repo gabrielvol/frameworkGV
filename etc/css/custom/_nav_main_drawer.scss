@@ -93,6 +93,18 @@
                 padding: $zero;
                 text-indent: -9999px;
                 overflow: hidden;
+                
+                @if $hamburger_only_act == "on"{
+                    // REF [11] Activador
+                    width: calc(#{$button_hambOnly_size} - 1px);
+                    height: calc(#{$button_hambOnly_size} - 1px);
+                    background-size: 70%;
+                    
+                } @else {
+                    width: $button_hamb_close_size;
+                    height: calc(#{$button_hamb_close_size} - 0px);
+                    background-size: 100%;
+                }   
             }
         
             .nav_item_xxx{

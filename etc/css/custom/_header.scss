@@ -43,6 +43,46 @@
             background-size: auto 100%;
         }
     }
+
+    /*
+    @media (max-width: 320px){
+        @if $nav_drawer_act == "on"{
+            .logo_header{
+                &.navDrawer_open{
+                    left: 13px;
+                    
+                    .logo_before,
+                    a{
+                        width: auto;
+                        height: 100%;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    } 
+                }
+            }
+        }
+    } 
+
+    @media (min-width: 321px) and (max-width: 767px){
+        @if $nav_drawer_act == "on"{
+            .logo_header{
+                &.navDrawer_open{
+                    left: 16px;
+                    
+                    .logo_before,
+                    a,
+                    img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    */
     
     @include beforeMQ350{      
         .logo_header{

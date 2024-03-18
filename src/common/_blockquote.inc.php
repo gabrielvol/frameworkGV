@@ -9,7 +9,14 @@ The <figure> HTML element represents self-contained content, potentially with an
         
 <blockquote cite="httpswwwsitiowebcom">
     <p>A URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.</p>
-    <p>This attribute is intended to point to information explaining the context or the reference for the quote.</p>
+    <p>This attribute is intended to point to information explaining the context or the reference for the quote.</p>  
+    <footer>
+        <div class="">
+            <img src="<?php echo $dir_env; ?>/img/avatar_01.jpg" alt="" />
+        </div>
+        <div class="">
+            <p>NombreApellido, <span>Puesto, Empresa</span></p>
+        </div>
 </blockquote>
 
 <figure>

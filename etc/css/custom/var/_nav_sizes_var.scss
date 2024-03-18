@@ -59,8 +59,8 @@ $topper_height_global:          60px;
 
     
 /* // Nav Sizes ------------------------------------------------------------- */
-$nav_height_A768:                 60px;
-$nav_height_TO:                 $nav_height_A768;
+$nav_height_A768:               60px;
+$nav_height_MQ768_1024:         $nav_height_A768;
 $nav_height_A1024:              $nav_height_A768;
 $nav_height_A1200:              $nav_height_A1024;
 
