@@ -44,73 +44,67 @@ $gettext_languageName_ZH    = "sinTraduccion";
 ?>
 
 <li>
-    <a href="<?php echo $dir_env; ?>/?l=es_AR" hreflang="es" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=es" hreflang="es" class="hover_grow_M_ani <?php if($gettext_idioma == 'es_AR'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_ar.svg" alt="<?php echo $gettext_switchMsg_AR; ?>." />
         <span class="visuallyHidden" lang="es"><?php echo $gettext_languageName_AR; ?></span>
     </a>
 </li>
 <li>
-    <a href="<?php echo $dir_env; ?>/?l=pt_BR" hreflang="pt" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=pt" hreflang="pt" class="hover_grow_M_ani <?php if($gettext_idioma == 'pt_BR'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_br.svg" alt="<?php echo $gettext_switchMsg_BR; ?>." />
         <span class="visuallyHidden" lang="pt"><?php echo $gettext_languageName_BR; ?></span>
     </a>
 </li>
 <li>
-    <a href="<?php echo $dir_env; ?>/?l=de_DE" hreflang="de" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=de" hreflang="de" class="hover_grow_M_ani <?php if($gettext_idioma == 'de_DE'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_de.svg" alt="<?php echo $gettext_switchMsg_DE; ?>." />
         <span class="visuallyHidden" lang="de"><?php echo $gettext_languageName_DE; ?></span>
     </a>
 </li>
 <li class="flag_alignedLeft">
-    <a href="<?php echo $dir_env; ?>/?l=es_ES" hreflang="es" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=es" hreflang="es" class="hover_grow_M_ani <?php if($gettext_idioma == 'es_ES'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_es.svg" alt="<?php echo $gettext_switchMsg_ES; ?>." />
         <span class="visuallyHidden" lang="es"><?php echo $gettext_languageName_ES; ?></span>
     </a>
 </li>
 <li>
-    <a href="<?php echo $dir_env; ?>/?l=fr_FR" hreflang="fr" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=fr" hreflang="fr" class="hover_grow_M_ani <?php if($gettext_idioma == 'fr_FR'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_fr.svg" alt="<?php echo $gettext_switchMsg_FR; ?>." />
         <span class="visuallyHidden" lang="fr"><?php echo $gettext_languageName_FR; ?></span>
     </a>
 </li>
 <li>
-    <a href="<?php echo $dir_env; ?>/?l=en_GB" hreflang="en" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=en" hreflang="en" class="hover_grow_M_ani <?php if($gettext_idioma == 'en_GB'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_gb.svg" alt="<?php echo $gettext_switchMsg_GB; ?>." />
         <span class="visuallyHidden" lang="en"><?php echo $gettext_languageName_GB; ?></span>
     </a>
 </li>
 <li>
-    <a href="<?php echo $dir_env; ?>/?l=ja_JP" hreflang="ja" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=ja" hreflang="ja" class="hover_grow_M_ani <?php if($gettext_idioma == 'ja_JP'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_jp.svg" alt="<?php echo $gettext_switchMsg_JP; ?>." />
         <span class="visuallyHidden" lang="ja"><?php echo $gettext_languageName_JP; ?></span>
     </a>
 </li>
 <li class="flag_alignedLeft">
-    <a href="<?php echo $dir_env; ?>/?l=en_US" hreflang="en" class="hover_grow_M_ani">
-        <img src="<?php echo $dir_env; ?>/img/flag_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>." />
-        <span class="visuallyHidden" lang="en"><?php echo $gettext_languageName_US; ?></span>
-    </a>
-</li>
-<li class="flag_alignedLeft"> <?php /* gettext_alt */ ?>
-    <a href="<?php echo $dir_env; ?>/?l=en" hreflang="en" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=en" hreflang="en" class="hover_grow_M_ani <?php if($gettext_idioma == 'en_US'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_us.svg" alt="<?php echo $gettext_switchMsg_US; ?>." />
         <span class="visuallyHidden" lang="en"><?php echo $gettext_languageName_US; ?></span>
     </a>
 </li>
 <li class="flag_alignedLeft">
-    <a href="<?php echo $dir_env; ?>/?l=es_UY" hreflang="es" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=es" hreflang="es" class="hover_grow_M_ani <?php if($gettext_idioma == 'es_UY'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_uy.svg" alt="<?php echo $gettext_switchMsg_UY; ?>." />
         <span class="visuallyHidden" lang="es"><?php echo $gettext_languageName_UY; ?></span>
     </a>
 </li>
 <li class="flag_alignedLeft"><?php /* // REF [14a] */ ?>
-    <a href="<?php echo $dir_env; ?>/zh" hreflang="zh" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/zh" hreflang="zh" class="hover_grow_M_ani <?php if($gettext_idioma == 'en_US'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_zh.svg" alt="<?php echo $gettext_switchMsg_ZH; ?>." />
         <span class="visuallyHidden" lang="zh"><?php echo $gettext_languageName_ZH; ?></span>
     </a>
 </li>
 <li class="flag_alignedLeft"><?php /* // REF [14a] */ ?>
-    <a href="<?php echo $dir_env; ?>/?l=zh_CN" hreflang="zh" class="hover_grow_M_ani">
+    <a href="<?php echo $dir_env; ?>/?l=zh" hreflang="zh" class="hover_grow_M_ani <?php if($gettext_idioma == 'zh_CN'){ echo ' nav_lang_anchor_current'; } ?>">
         <img src="<?php echo $dir_env; ?>/img/flag_zh.svg" alt="<?php echo $gettext_switchMsg_ZH; ?>." />
         <span class="visuallyHidden" lang="zh"><?php echo $gettext_languageName_ZH; ?></span>
     </a>

@@ -179,9 +179,17 @@
            
         &,
         li{
-            height: $nav_lang_ul_height_AT;
+            height: $nav_lang_ul_height_A768;
         }
-
+        
+        /*
+        &,
+        a,
+        .nav_TLI{
+            @include equalHeightAndLineHeight($nav_lang_ul_height_A768);
+        }
+        */
+        
         li{
             a,
             img{
@@ -205,5 +213,35 @@
                 }
             }
         }
+    }
+    
+    @include afterMQ1024{           
+        &,
+        li{
+            height: $nav_lang_ul_height_A1024;
+        }
+        
+        /*
+        &,
+        a,
+        .nav_TLI{
+            @include equalHeightAndLineHeight($nav_lang_ul_height_A1024);
+        }
+        */
+    }
+    
+    @include afterMQ1200{           
+        &,
+        li{
+            height: $nav_lang_ul_height_A1200;
+        }
+        
+        /*
+        &,
+        a,
+        .nav_TLI{
+            @include equalHeightAndLineHeight($nav_lang_ul_height_A1200);
+        }
+        */
     }
 }
