@@ -22,6 +22,8 @@ include('lang.var.inc.php');
 include('domain.var.inc.php');
 // include('web.var.inc.php');
 include('url.var.inc.php');
+
+// include('book.var.inc.php');
     
 include('meta.titlesDesc.var.inc.php');
 // include('address.var.inc.php');

@@ -10,6 +10,7 @@
 <?php /* <meta http-equiv="x-dns-prefetch-control" content="off"> */ ?>
 <meta http-equiv="Window-Target" content="_value">
 <meta name="robots" content="index,follow">
+<?php /* <meta name="robots" content="noindex"> */ ?>
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
 <?php /* <meta name="referrer" content="no-referrer"> */ ?>
