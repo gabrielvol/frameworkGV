@@ -68,7 +68,7 @@
         width: $hundred;
         background-color: transparent;
         padding: 0;
-        color: $greyXD;
+        color: $ftColour_main_global;
         font-family: $ftFamily_regular_global;
         text-align: center;
         
@@ -210,19 +210,25 @@
     }
     
     p{
-        color: $grey2XD;
+        color: $ftColour_main_global;
         font-size: 1rem!important;
         line-height: 1.3em;
         
         a{
-            color: $grey3XD;
+            color: $ftColour_anchor_global;
             
             &:active,
             &:visited,
             &:focus,
             &:focus-visible,
             &:hover{
-                color: $grey3XD;
+                color: $ftColour_anchor_global_hover;
+            }
+            
+            &:focus,
+            &:focus-visible,
+            &:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -252,12 +258,11 @@
     }
         
     @include beforeMQ300{
-        width: $pop_warning_width_B500;
-        max-width: $pop_warning_width_max_B500;
-        margin-left: calc(calc(#{$pop_warning_width_B500} * -1) / 2);  
+        width: $pop_formStatus_width_B300;
+        max-width: $pop_formStatus_width_max_B300;
+        margin-left: calc(calc(#{$pop_formStatus_width_B300} * -1) / 2); 
         
         h2{
-            padding-top: 10px;
             padding-right: 25px;
             padding-left: 25px;
             font-size: 1.4rem;
@@ -265,8 +270,8 @@
     }
         
     @include afterMQ300{
-        width: $pop_warning_width_max_B500;
-        margin-left: calc(calc(#{$pop_warning_width_max_B500} * -1) / 2); 
+        width: $pop_formStatus_width_A300;
+        margin-left: calc(calc(#{$pop_formStatus_width_A300} * -1) / 2); 
         
         h2{
             padding-right: 15px;
@@ -276,8 +281,8 @@
     }
 
     @include afterMQ500{
-        width: $pop_warning_width_A500;
-        margin-left: calc(calc(#{$pop_warning_width_A500} * -1) / 2); 
+        width: $pop_formStatus_width_A500;
+        margin-left: calc(calc(#{$pop_formStatus_width_A500} * -1) / 2); 
         
         h2{
             padding-right: 5px;
@@ -287,7 +292,6 @@
     
     @include beforeMQ650{
         h2{
-            padding-top: 30px;
             font-size: 1.6rem;
         }
     }
