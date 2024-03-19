@@ -21,6 +21,8 @@ $nav_drawer_act         = 1; // REF [06]
 $nav_SECTION_hasSub_act = 0; // REF [07]
 $nav_accordion_act      = 0;
 
-// Si se activa `$nav_double_A768_act` hay que activar `$classes_container_act_A768` en `[/etc/css/custom/act/classes_useful_act.scss]`
+// Si se activa `$nav_double_A768_act` hay que activar
+// `$classes_container_act_A768` en `[/etc/css/custom/act/classes_useful_act.scss]`
+// y `$nav_double_A768_act` en `[/etc/css/custom/act/nav_main_act.scss]`
 $nav_double_A768_act      = 0; // REF [05] `[/src/common/nav.main.inc.php]`
 ?>
