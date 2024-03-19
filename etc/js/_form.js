@@ -6,6 +6,7 @@ $(document).ready(function () {
         if($(this).attr("value")=="no"){
             $(".vendeinet").hide();
         }
+        
         if($(this).attr("value")=="si"){
             $(".vendeinet").show();
         }               

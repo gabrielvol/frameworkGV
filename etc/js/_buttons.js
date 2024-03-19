@@ -1,6 +1,7 @@
 $(document).ready(function () {
 /* // Toggle Attribute ------------------------------------------------------ */
     var $nosAnchor = $('.nosAnchor');
+    
     if ($nosAnchor.attr('aria-current')) {
         $nosAnchor.removeAttr('aria-current');
     } else {
@@ -45,6 +46,16 @@ $(document).ready(function () {
     });
     $(".gb a").click(function () {
         $('html').attr('lang', 'en_GB');
+    });
+});
+
+
+/* // Item selection -------------------------------------------------------- */
+$('.item').click(function () {
+    $(this).closest('.list').find('.item').attr('aria-pressed', 'false');
+
+    $(this).attr('aria-pressed', function (i, attr) {
+        return attr === 'true' ? 'false' : 'true';
     });
 });
 

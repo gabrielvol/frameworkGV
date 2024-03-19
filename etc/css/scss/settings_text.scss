@@ -149,8 +149,11 @@ a{
 @include fontFamilyCustomClassesGenerator;
 @include fontFamilyWeightsGenerator;
 
-@include beforeMQ768{
-    @include fontCustomHeadingsSizesGeneratorMobile; 
+@include beforeMQ500{
+    @include fontCustomHeadingsSizesGeneratorB500;
+}
+@include afterMQ500{
+    @include fontCustomHeadingsSizesGeneratorA500; 
 }
 @include afterMQ768{
     @include fontCustomHeadingsSizesGeneratorTablet;   

@@ -82,7 +82,16 @@ $txMargin_TRBL_sibling:     $txMargin_T_sibling 0 0;
 $headings_marginTRBL_global:    0 0 0.8em;
 $headings_marginTRBL_sibling:   1.2em 0 0;
 
-$headings_sizes_map_BT:(
+$headings_sizes_map_B500:(
+    $h1_list: 1.6rem,
+    $h2_list: 1.5rem,
+    $h3_list: 1.4rem,
+    $h4_list: 1.3rem,
+    $h5_list: 1.3rem,
+    $h6_list: 1.3rem
+);
+
+$headings_sizes_map_A500:(
     $h1_list: 1.6rem,
     $h2_list: 1.5rem,
     $h3_list: 1.4rem,
