@@ -101,8 +101,11 @@ $nav_horizontalCenter_A1024_act:      off;
      
 $nav_topper_act:                    off;
 $nav_fixed_AT_act:                  off; // REF [15]
-     
-$nav_double_A768_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
+
+// Si se activa `$nav_double_A768_act` hay que activar
+// `$classes_container_act_A768` en `[/etc/css/custom/act/classes_useful_act.scss]`
+// y `$nav_double_A768_act` en `[/src/var/act/nav.act.inc.php]`
+$nav_double_A768_act:                 off; // REF [05] Ver `[/src/var/act/nav.act.inc.php]`
 $nav_drawer_act:                    on; // Ver `[/src/var/act/nav.act.inc.php]`
 $nav_accordion_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
 $nav_list_act:                      off;
