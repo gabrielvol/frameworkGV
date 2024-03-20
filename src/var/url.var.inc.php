@@ -132,13 +132,6 @@ $href_logo          = $href_root;
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
-
-//$href_logo         = ($nav_pageCurrent == 'page_index') ? 'href="' . $url_top_hs . '"' : 'href="' . $url_top_hs_HOME . '"';
-//$href_index         = ($nav_pageCurrent == 'page_index') ? 'href="' . $url_main_hs . '"' : 'href="' . $url_root . '"';
-//$href_contacto      = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_contacto_hs . '"' : 'href="' . $url_contacto_hs_HOME . '"';
-// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs . '"' : 'href="' . $url_SECCION_hs_HOME . '"';
-// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs . '"' : 'href="' . $url_SECCION_hs_HOME . '"';
-// $href_PAGINA        = ($nav_pageCurrent == 'page_PAGINA') ? 'href="' . $url_SECCION_hs . '"' : 'href="' . $url_SECCION_hs_HOME . '"';
     
 $href_top_hs        = 'href="' . $url_top_hs . '"';
 $href_main_hs       = 'href="' . $url_main_hs . '"';
@@ -155,6 +148,15 @@ $href_main_hs_HOME       = 'href="' . $url_main_hs_HOME . '"';
 // $href_SECCION_hs_PAGINA      = 'href="' . $url_SECCION_hs_PAGINA . '"';
 // $href_SECCION_hs_PAGINA      = 'href="' . $url_SECCION_hs_PAGINA . '"';
 // $href_SECCION_hs_PAGINA      = 'href="' . $url_SECCION_hs_PAGINA . '"';
+
+$href_home_noLink          = ($nav_pageCurrent_int == 'page_index_index') ? $href_index : $href_top_hs_HOME;
+$href_contacto_noLink      = ($nav_pageCurrent_int == 'page_index_index') ? $href_contacto_hs : $href_contacto_hs_HOME;
+//$href_contacto_noLink      = ($nav_pageCurrent == 'page_PAGINA') ? $href_contacto_hs : $href_contacto_hs_PAGINA;
+
+// $href_PAGINA_noLink         = ($page_int == 1) ? $href_SECCION_hs_PAGINA : $href_SECCION_hs;
+// $href_PAGINA_noLink         = ($page_int == 1) ? $href_SECCION_hs_PAGINA : $href_SECCION_hs;
+// $href_PAGINA_noLink         = ($nav_pageCurrent == 'page_PAGINA') ? $href_SECCION_hs : $href_SECCION_hs_PAGINA;
+// $href_PAGINA_noLink         = ($nav_pageCurrent == 'page_PAGINA') ? $href_SECCION_hs : $href_SECCION_hs_PAGINA;
      
 /*___ href para hashes traducidas ________*/
     $url_main_hs_full       = $url_wip . $url_main_hs;

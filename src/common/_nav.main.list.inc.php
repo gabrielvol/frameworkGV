@@ -26,17 +26,17 @@
 </li>
 
 <li class="nav_item_home nav_item_noLink_js">
-    <a href="<?php if($page_int == 1) { echo $url_top_hs_HOME; } else { echo $hash_top; } ?>">
+    <a <?php echo $href_home_noLink; ?>>
         <?php echo $nav_main_item_home; ?>
     </a>
 </li>
 <li class="nav_item_PAGINA nav_item_noLink_js">
-    <a href="<?php if($page_int == 1) { echo $url_SECCION_hs_HOME; } else { echo $hash_SECCION; } ?>">
+    <a <?php echo $href_PAGINA_noLink; ?>>
         <?php echo $nav_main_item_PAGINA; ?>
     </a>
 </li>
 <li class="nav_item_contacto nav_item_noLink_js">
-    <a href="<?php if($page_int == 1) { echo $url_contacto_hs_HOME; } else { echo $hash_contacto; } ?>">
+    <a <?php echo $href_contacto_noLink; ?>>
         <?php echo $nav_main_item_contacto; ?>
     </a>
 </li>
