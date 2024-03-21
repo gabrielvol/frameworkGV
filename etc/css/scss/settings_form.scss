@@ -69,14 +69,18 @@ form, fieldset, label, input, select, textarea, button,
 
 fieldset, label, input, select, textarea, button,
 .form_validation_div, .form_validation_span, .form_status, .form_label_name{
-    .mobileForm &{
-        @include beforeMQ768{
-            width: $form_label_width_BT;
+    .mobileForm &{        
+        @include beforeMQ350{
+            width: $hundred;
+            max-width: $form_label_width_max_B350;          
         }
         
-        @include beforeMQ500{
-            width: $hundred;
-            max-width: $form_label_width_B500;          
+        @include afterMQ350{
+            width: $form_label_width_A350;
+        }
+        
+        @include afterMQ500{
+            width: $form_label_width_A500;
         }
     }
     
@@ -409,9 +413,13 @@ form{
     }
     
     .mobileForm &{
-        @include beforeMQ500{
+        @include beforeMQ350{
             width: 90%;
-            max-width: $form_width_B500;            
+            max-width: $form_width_max_B350;            
+        }
+        
+        @include afterMQ350{
+            width: $form_width_A350;
         }
         
         @include afterMQ500{

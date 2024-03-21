@@ -400,6 +400,12 @@ form{
                             margin-top: 30px!important;
                         }
                     }
+            
+                    &.form_validation_input_invalid{
+                        & + label{                        
+                            margin-top: 20px!important;
+                        }
+                    }
                 }
                 
                 .button_form_submit{ 
@@ -416,6 +422,12 @@ form{
                             margin-top: 30px!important;
                         }
                     }
+            
+                    &.form_validation_input_invalid{
+                        & + label{                        
+                            margin-top: 20px!important;
+                        }
+                    }
                 }
                 
                 .button_form_submit{ 
@@ -429,6 +441,12 @@ form{
 
                     & + label{                        
                         margin-top: 30px!important;
+                    }
+            
+                    &.form_validation_input_invalid{
+                        & + label{                        
+                            margin-top: 20px!important;
+                        }
                     }
                 }
                 
@@ -460,7 +478,6 @@ form{
         
         .label_radio,
         .label_checkbox{
-            
             .input_radio,
             .input_checkbox{
                 clear: $none;

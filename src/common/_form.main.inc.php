@@ -30,7 +30,7 @@
     </label>
     <?php endif; ?>
 
-    <label for="data_nombre__formMain">
+    <label for="data_nombre__formMain" class="<?php echo $form_validation_input_class_data_nombre__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Name
         <?php else: ?>
@@ -44,7 +44,7 @@
         
     </label>
 
-    <label for="data_apellido__formMain">
+    <label for="data_apellido__formMain" class="<?php echo $form_validation_input_class_data_apellido__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Surname
         <?php else: ?>
@@ -54,7 +54,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_apellido__formMain; ?>"><?php echo $form_validation_span_msg_data_apellido__formMain; ?></span>
     </label>
 
-    <label for="data_nombreAp__formMain">
+    <label for="data_nombreAp__formMain" class="<?php echo $form_validation_input_class_data_nombreAp__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Full Name
         <?php else: ?>
@@ -64,7 +64,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_nombreAp__formMain; ?>"><?php echo $form_validation_span_msg_data_nombreAp__formMain; ?></span>
     </label>
 
-    <label for="data_nombreCo__formMain">
+    <label for="data_nombreCo__formMain" class="<?php echo $form_validation_input_class_data_nombreCo__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Full Name
         <?php else: ?>
@@ -74,7 +74,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_nombreCo__formMain; ?>"><?php echo $form_validation_span_msg_data_nombreCo__formMain; ?></span>
     </label>
 
-    <label for="data_username__formMain">
+    <label for="data_username__formMain" class="<?php echo $form_validation_input_class_data_username__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Username
         <?php else: ?>
@@ -103,7 +103,7 @@
         </select>
     </label>
 
-    <label for="data_genero__formMain">
+    <label for="data_genero__formMain" class="<?php echo $form_validation_input_class_data_genero__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Gender
         <?php else: ?>
@@ -156,7 +156,7 @@
         <span class="form_label_msg_sugg">La lista incluye sugerencias, pero podés completar libremente el campo.</span>
     </label>  
 
-    <label for="data_dni__formMain">
+    <label for="data_dni__formMain" class="<?php echo $form_validation_input_class_data_dni__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             ID number
         <?php else: ?>
@@ -166,7 +166,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_dni__formMain; ?>"><?php echo $form_validation_span_msg_data_dni__formMain; ?></span>
     </label>
 
-    <label for="data_password__formMain">
+    <label for="data_password__formMain" class="<?php echo $form_validation_input_class_data_password__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Password
         <?php else: ?>
@@ -181,7 +181,7 @@
         <?php endif; ?>.</span>
     </label>
 
-    <label for="data_direccion__formMain">
+    <label for="data_direccion__formMain" class="<?php echo $form_validation_input_class_data_direccion__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Adresss
         <?php else: ?>
@@ -191,7 +191,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_direccion__formMain; ?>"><?php echo $form_validation_span_msg_data_direccion__formMain; ?></span>
     </label>
 
-    <label for="data_domicilio__formMain">
+    <label for="data_domicilio__formMain" class="<?php echo $form_validation_input_class_data_domicilio__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Adresss
         <?php else: ?>
@@ -201,7 +201,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_domicilio__formMain; ?>"><?php echo $form_validation_span_msg_data_domicilio__formMain; ?></span>
     </label>
 
-    <label for="data_localidad__formMain">
+    <label for="data_localidad__formMain" class="<?php echo $form_validation_input_class_data_localidad__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Locality
         <?php else: ?>
@@ -211,7 +211,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_localidad__formMain; ?>"><?php echo $form_validation_span_msg_data_localidad__formMain; ?></span>
     </label>
 
-    <label for="data_codigoPostal__formMain">
+    <label for="data_codigoPostal__formMain" class="<?php echo $form_validation_input_class_data_codigoPostal__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             C&oacute;digo postal
         <?php else: ?>
@@ -221,7 +221,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_codigoPostal__formMain; ?>"><?php echo $form_validation_span_msg_data_codigoPostal__formMain; ?></span>
     </label>
 
-    <label for="data_ciudad__formMain">
+    <label for="data_ciudad__formMain" class="<?php echo $form_validation_input_class_data_ciudad__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             City
         <?php else: ?>
@@ -231,7 +231,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_ciudad__formMain; ?>"><?php echo $form_validation_span_msg_data_ciudad__formMain; ?></span>
     </label> 
 
-    <label for="data_provincia__formMain">
+    <label for="data_provincia__formMain" class="<?php echo $form_validation_input_class_data_provincia__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             State/Province
         <?php else: ?>
@@ -241,7 +241,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_provincia__formMain; ?>"><?php echo $form_validation_span_msg_data_provincia__formMain; ?></span>
     </label>  
 
-    <label for="data_provincia__formMain">
+    <label for="data_provincia__formMain" class="<?php echo $form_validation_input_class_data_provincia__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             State/Province
         <?php else: ?>
@@ -279,7 +279,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_provincia__formMain; ?>"><?php echo $form_validation_span_msg_data_provincia__formMain; ?></span>
     </label>
 
-    <label for="data_comoQueres__formMain">
+    <label for="data_comoQueres__formMain" class="<?php echo $form_validation_input_class_data_comoQueres__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             How do you want to be contacted?
         <?php else: ?>
@@ -296,7 +296,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_comoQueres__formMain; ?>"><?php echo $form_validation_span_msg_data_comoQueres__formMain; ?></span>
     </label>
 
-    <label for="data_GENERICSELECT__formMain" class="form_required">
+    <label for="data_GENERICSELECT__formMain" class="form_required <?php echo $form_validation_input_class_data_GENERICSELECT__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             GENERICSELECT
         <?php else: ?>
@@ -313,7 +313,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_GENERICSELECT__formMain; ?>"><?php echo $form_validation_span_msg_data_GENERICSELECT__formMain; ?></span>
     </label>
 
-    <label for="data_pais__formMain">
+    <label for="data_pais__formMain" class="<?php echo $form_validation_input_class_data_pais__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Country
         <?php else: ?>
@@ -323,7 +323,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_pais__formMain; ?>"><?php echo $form_validation_span_msg_data_pais__formMain; ?></span>
     </label>
 
-    <label for="data_celular__formMain">
+    <label for="data_celular__formMain" class="<?php echo $form_validation_input_class_data_celular__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Cell phone
         <?php else: ?>
@@ -333,7 +333,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_celular__formMain; ?>"><?php echo $form_validation_span_msg_data_celular__formMain; ?></span>
     </label>
 
-    <label for="data_telefono__formMain">
+    <label for="data_telefono__formMain" class="<?php echo $form_validation_input_class_data_telefono__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Telephone
         <?php else: ?>
@@ -350,7 +350,7 @@
             Nº de WhatsApp
         <?php endif; ?></legend>
 
-        <label for="data_whatsappAreaCode__formMain">
+        <label for="data_whatsappAreaCode__formMain" class="<?php echo $form_validation_input_class_data_whatsappAreaCode__formMain; ?>">
             <span class="form_label_name">Código de área</span>
             <input type="tel" name="data_whatsappAreaCode__formMain" id="data_whatsappAreaCode__formMain" class="data_whatsappAreaCode__formMain <?php echo $form_validation_input_class_data_whatsappAreaCode__formMain; ?>" value="<?php echo $_POST['data_whatsappAreaCode__formMain']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsappAreaCode__formMain; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsappAreaCode__formMain; ?>"><?php echo $form_validation_span_msg_data_whatsappAreaCode__formMain; ?></span>
@@ -361,7 +361,7 @@
             <?php endif; ?>.</span>
         </label>
 
-        <label for="data_whatsappNumber__formMain">
+        <label for="data_whatsappNumber__formMain" class="<?php echo $form_validation_input_class_data_whatsappNumber__formMain; ?>">
             <span class="form_label_name">Número</span>
             <input type="tel" name="data_whatsappNumber__formMain" id="data_whatsappNumber__formMain" class="data_whatsappNumber__formMain <?php echo $form_validation_input_class_data_whatsappNumber__formMain; ?>" value="<?php echo $_POST['data_whatsappNumber__formMain']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsappNumber__formMain; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsappNumber__formMain; ?>"><?php echo $form_validation_span_msg_data_whatsappNumber__formMain; ?></span>
@@ -373,7 +373,7 @@
         </label>        
     </fieldset>
 
-    <label for="data_email__formMain" class="form_required">
+    <label for="data_email__formMain" class="form_required <?php echo $form_validation_input_class_data_email__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             E-mail
         <?php else: ?>
@@ -388,7 +388,7 @@
         <?php endif; ?>.</span>
     </label> 
 
-    <label for="data_email__formMain" class="form_required">
+    <label for="data_email__formMain" class="form_required <?php echo $form_validation_input_class_data_email__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             E-mail
         <?php else: ?>
@@ -403,7 +403,7 @@
         <?php endif; ?>.</span>
     </label>               
 
-    <label for="data_webSite__formMain">
+    <label for="data_webSite__formMain" class="<?php echo $form_validation_input_class_data_webSite__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Website
         <?php else: ?>
@@ -413,7 +413,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_webSite__formMain; ?>"><?php echo $form_validation_span_msg_data_webSite__formMain; ?></span>
     </label>              
 
-    <label for="data_facebook__formMain">
+    <label for="data_facebook__formMain" class="<?php echo $form_validation_input_class_data_facebook__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Facebook profile
         <?php else: ?>
@@ -423,7 +423,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_facebook__formMain; ?>"><?php echo $form_validation_span_msg_data_facebook__formMain; ?></span>
     </label>       
 
-    <label for="data_instagram__formMain">
+    <label for="data_instagram__formMain" class="<?php echo $form_validation_input_class_data_instagram__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Instagram
         <?php else: ?>
@@ -437,7 +437,7 @@
         <?php endif; ?>.</span>
     </label>
 
-    <label for="data_empresa__formMain">
+    <label for="data_empresa__formMain" class="<?php echo $form_validation_input_class_data_empresa__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Company
         <?php else: ?>
@@ -448,7 +448,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_empresa__formMain; ?>"><?php echo $form_validation_span_msg_data_empresa__formMain; ?></span>
     </label>
 
-    <label for="data_razonSocial__formMain">
+    <label for="data_razonSocial__formMain" class="<?php echo $form_validation_input_class_data_razonSocial__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Raz&oacute;n Social
         <?php else: ?>
@@ -458,7 +458,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_razonSocial__formMain; ?>"><?php echo $form_validation_span_msg_data_razonSocial__formMain; ?></span>
     </label>
 
-    <label for="data_rubro__formMain">
+    <label for="data_rubro__formMain" class="<?php echo $form_validation_input_class_data_rubro__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Rubro
         <?php else: ?>
@@ -468,7 +468,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_rubro__formMain; ?>"><?php echo $form_validation_span_msg_data_rubro__formMain; ?></span>
     </label>
 
-    <label for="data_cargo__formMain">
+    <label for="data_cargo__formMain" class="<?php echo $form_validation_input_class_data_cargo__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Position
         <?php else: ?>
@@ -478,7 +478,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_cargo__formMain; ?>"><?php echo $form_validation_span_msg_data_cargo__formMain; ?></span>
     </label>
 
-    <label for="data_cantidad__formMain">
+    <label for="data_cantidad__formMain" class="<?php echo $form_validation_input_class_data_cantidad__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Quantity
         <?php else: ?>
@@ -488,7 +488,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_cantidad__formMain; ?>"><?php echo $form_validation_span_msg_data_cantidad__formMain; ?></span>
     </label>
 
-    <label for="data_cantidad__formMain">
+    <label for="data_cantidad__formMain" class="<?php echo $form_validation_input_class_data_cantidad__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Cantidad de integrantes
         <?php else: ?>
@@ -498,7 +498,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_cantidad__formMain; ?>"><?php echo $form_validation_span_msg_data_cantidad__formMain; ?></span>
     </label>
 
-    <label for="data_fecha__formMain">
+    <label for="data_fecha__formMain" class="<?php echo $form_validation_input_class_data_fecha__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Date
         <?php else: ?>
@@ -565,7 +565,7 @@
         </datalist>
     </label>
 
-    <label for="data_asunto__formMain">
+    <label for="data_asunto__formMain" class="<?php echo $form_validation_input_class_data_asunto__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Subject
         <?php else: ?>
@@ -575,7 +575,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_asunto__formMain; ?>"><?php echo $form_validation_span_msg_data_asunto__formMain; ?></span>
     </label> 
                   
-    <label for="data_area__formMain">
+    <label for="data_area__formMain" class="<?php echo $form_validation_input_class_data_nombre__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Subject
         <?php else: ?>
@@ -595,7 +595,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMain; ?>"><?php echo $form_validation_span_msg_data_area__formMain; ?></span>  
     </label>
 
-    <label for="data_area__formMain">
+    <label for="data_area__formMain" class="<?php echo $form_validation_input_class_data_area__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Department
         <?php else: ?>
@@ -612,7 +612,7 @@
     </label>
 
     // Mensaje con validaci&oacute;n
-    <label for="data_mensaje__formMain" class="form_required">
+    <label for="data_mensaje__formMain" class="form_required <?php echo $form_validation_input_class_data_mensaje__formMain; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Details
         <?php else: ?>

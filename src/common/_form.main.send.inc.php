@@ -45,7 +45,7 @@ if (isset($_POST['button_form_submit__formMain'])){
         $data_telefono__formMain        = $_POST['data_telefono__formMain'];
         $data_mensaje__formMain         = $_POST['data_mensaje__formMain'];
     
-    /*___ Inicia $mail _____________________________________________________*/
+/*___ Inicia $mail __________________________________________________________ */
         $mail = new PHPMailer(true);
         try {
             #$mail->SMTPDebug = 2;  // Sacar esta línea para no mostrar salida debug
@@ -55,30 +55,38 @@ if (isset($_POST['button_form_submit__formMain'])){
             $mail->SMTPAuth = true;
             $mail->Username = 'form@sitiowebcom';
             $mail->Password = 'contrasena';
+
+        /*___ Activar seguridad TLS _*/
             #$mail->SMTPSecure = 'tls';
             #$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            
+        /*___ Puerto SMTP _*/
             $mail->Port = 25;
+            #$mail->Port = 26;
+            #$mail->Port = 465;
+            
             $mail->CharSet = PHPMailer::CHARSET_UTF8;
 
-        /*___ El servidor SMTP tiene un certificado autofirmado ________________*/
-            $mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
-        /*___ Se requiere desactivar cifrado ___________________________________*/
-            $mail->SMTPSecure = false;
-        /*___ Se requiere desactivar completamente TLS (sin cifrado) ___________*/
-            $mail->SMTPAutoTLS = false;
+        /*___ Descomentar si el servidor SMTP tiene un certificado autofirmado _*/
+            #$mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
+        /*___ Descomentar si se requiere desactivar cifrado
+            (se suele usar en conjunto con la siguiente línea) _*/
+            #$mail->SMTPSecure = false;
+        /*___ Descomentar si se requiere desactivar completamente TLS (sin cifrado) _*/
+            #$mail->SMTPAutoTLS = false;
 
-        /*___ Cabeceras del correo _____________________________________________*/
-            $mail->setFrom('tampas@gmail.com');
-            $mail->addAddress('tampas@gmail.com'); // $mail->addAddress('tampas@gmail.com');
+/*___ Cabeceras del correo __________________________________________________ */
+            $mail->setFrom('form@domaincom');
+            $mail->addAddress('gabrielvol@protonmail.com'); // $mail->addAddress('tampas@gmail.com');
 
             $mail->isHTML(true);
             $mail->Subject = 'Contacto Web de ' . $data_nombre__formMain;
             $mail->Body    = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMain . '</small><br><br>';
             $mail->Body   .= '<small style="color:#444"><strong>Filtro:</strong> FiltroFormWeb</small><br><br>';
-            $mail->Body   .= 'Nombre y Apellido: ' . $data_nombre__formMain  . '<br>';
-            $mail->Body   .= 'Correo Electronico: ' . $data_email__formMain  . '<br>';
-            $mail->Body   .= 'Telefono: ' . $data_telefono__formMain  . '<br>';
-            $mail->Body   .= 'Mensaje: ' . $data_mensaje__formMain  . '<br>';
+            $mail->Body   .= '<strong>Nombre y Apellido:</strong> ' . $data_nombre__formMain  . '<br>';
+            $mail->Body   .= '<strong>Correo Electronico:</strong> ' . $data_email__formMain  . '<br>';
+            $mail->Body   .= '<strong>Telefono:</strong> ' . $data_telefono__formMain  . '<br>';
+            $mail->Body   .= '<strong>Mensaje:</strong> <br>' . $data_mensaje__formMain;
             $mail->Body   .= '<br><br>______<br><small style="color:#666">Fin del mensaje</small>';
             
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
