@@ -8,7 +8,7 @@
     </div>
     <div class="footer_txt"> <?php /* // REF [20] */ ?>
         <p class="footer_address"><?php echo _("Direcci&oacute;n"); ?>: <a href="<?php echo $site_address_ADDRESSA_map_url; ?>" target="_blank"><?php echo $site_address_ADDRESSA; ?></a></p>
-        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PHONEMAIN_call_href; ?>> <?php echo $site_tel_PHONEMAIN_formatted; ?></a></p>
+        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_XXXX_call_href; ?>> <?php echo $site_tel_XXXX_formatted; ?></a></p>
         <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_contacto_href; ?>> <?php echo $site_email_contacto_address; ?></a></p>
     </div>  
     
@@ -24,7 +24,7 @@
         <a href="<?php echo $site_address_ADDRESSA_map_url ?>" target="_blank"><?php echo $site_address_ADDRESSA; ?></a>
     </p>
     
-    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_PHONEMAIN_call_href; ?>> <?php echo $site_tel_PHONEMAIN_formatted; ?></a></p>
+    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_XXXX_call_href; ?>> <?php echo $site_tel_XXXX_formatted; ?></a></p>
     
     <p><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_contacto_href; ?>><?php echo $site_email_contacto_address; ?></a></p>
     
