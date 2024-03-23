@@ -228,6 +228,7 @@
         }
         
         @if $nav_topper_act == "on"{
+            // REF [44]
             &.nav_topper{
                 position: fixed;
                 z-index: $zIndex_header_topper;

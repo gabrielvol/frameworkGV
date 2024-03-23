@@ -366,6 +366,14 @@
     
 @mixin afterMQ1400{
     @media (min-width: 1401px){@content;}}
+    
+    
+/* // 1450px ---------------------------------------------------------------- */
+@mixin beforeMQ1450{
+    @media (max-width: 1450px){@content;}}
+    
+@mixin afterMQ1450{
+    @media (min-width: 1451px){@content;}}
 
     
 /* // 1500px ---------------------------------------------------------------- */

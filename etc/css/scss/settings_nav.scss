@@ -301,6 +301,7 @@ nav{
         }
         
         @if $nav_topper_act == "on"{
+            // REF [44]
             &.nav_topper{
                 top: 0;
                 background-color: $nav_topper_bgColour;
@@ -401,6 +402,7 @@ nav{
             }
             
             @if $nav_topper_act == "on"{
+                // REF [44]
                 &.nav_topper{
                     .nav_main_ul{
                         > li{

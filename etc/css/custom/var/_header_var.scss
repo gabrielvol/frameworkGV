@@ -70,14 +70,16 @@ $header_navAccordion_height_BT:     calc(#{$header_PT_BT} + #{$header_PB_BT} + #
 
 /* // Page Sizes ------------------------------------------------------------ */
 // REF [08] Con Header Fixed activado y height auto
-// $page_PT_B500:            0; 
-// $page_PT_A500:           0; 
-// $page_PT_500O:           0;
-// $page_PT_BT:            0;
-// $page_PT_navAT:         0;
-// $page_PT_navBT:         0;
-// $page_PT_AT:            0;
-// $page_PT_A1024:           0;
+/*
+$page_PT_B500:          0; 
+$page_PT_A500:          0; 
+$page_PT_500O:          0;
+$page_PT_BT:            0;
+$page_PT_navBT:         0;
+$page_PT_navAT:         0;
+$page_PT_AT:            0;
+$page_PT_A1024:         0;
+*/
 
 // REF [08] Con Header Fixed activado y height en px
 $page_PT_B500:      $header_height_B500;

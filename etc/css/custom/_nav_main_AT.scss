@@ -156,7 +156,7 @@
                 @if $nav_sub_centered_AT == "on"{
                     left: 50%;
                     margin-left: calc(-1 * (#{$nav_subMenu_width_AT} / 2));
-                } @else  {
+                } @else {
                     left: -15px;                    
                 }
                 
@@ -214,6 +214,7 @@
         }
         
         @if $nav_topper_act == "on"{
+            // REF [44]
             &.nav_topper{
                 @include borderStyleB($nav_topper_bdColour); 
                 position: fixed;
@@ -441,6 +442,7 @@
         }
 
         @if $nav_topper_act == "on"{
+            // REF [44]
             &.nav_topper{
                 .nav_main_ul{}
                 
@@ -488,6 +490,7 @@
         }
         
         @if $nav_topper_act == "on"{
+            // REF [44]
             &.nav_topper{
                 @if $nav_hasSub_level1_act == "on"{
                     .nav_item_hasSubNav{

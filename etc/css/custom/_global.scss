@@ -59,6 +59,7 @@
     
     @include afterMQ768{       
         @if $nav_topper_act == "on"{
+            // REF [44]
             min-height: 700px;        
         }
     }
