@@ -65,9 +65,9 @@ $nav_height_A1024:              $nav_height_A768;
 $nav_height_A1200:              $nav_height_A1024;
 
 // REF [42]
-$nav_height_scrolled_AT:                 45px;
-$nav_height_scrolled_TO:                 $nav_height_scrolled_AT;
-$nav_height_scrolled_A1024:              $nav_height_scrolled_AT;
+$nav_height_scrolled_A768:                 45px;
+$nav_height_scrolled_TO:                 $nav_height_scrolled_A768;
+$nav_height_scrolled_A1024:              $nav_height_scrolled_A768;
 $nav_height_scrolled_A1200:              $nav_height_scrolled_A1024;
 
 $nav_item_sub_height_AT:        $nav_height_A768;
