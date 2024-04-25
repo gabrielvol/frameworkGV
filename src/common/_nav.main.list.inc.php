@@ -25,6 +25,13 @@
     </a>
 </li>
 
+<li class="nav_item_PAGINA"> <?php // REF [45] ?>
+    <a href="<?php echo $url_contacto; ?>?consulta=servicioA">
+        Quiero el servicio A
+    </a>
+</li>
+
+
 <li class="nav_item_home nav_item_noLink_js">
     <a <?php echo $href_home_noLink; ?>>
         <?php echo $nav_main_item_home; ?>

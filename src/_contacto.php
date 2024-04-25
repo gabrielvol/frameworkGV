@@ -27,7 +27,7 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php'); 
     
-    $form_var               = $_GET['formvar'];    
+    $form_var               = $_GET['consulta'];  // REF [45]
     $page_url_full          = $url_contacto_full;   
     
     $page_title             = $page_title_home_contacto . " | " . $site_name_title;
