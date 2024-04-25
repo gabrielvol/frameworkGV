@@ -215,6 +215,10 @@
     @media (min-width: 701px)
         and (max-width: 767px){@content;}}
     
+@mixin MQ700_800{
+    @media (min-width: 701px)
+        and (max-width: 800px){@content;}}
+    
 @mixin MQ700_900{
     @media (min-width: 701px)
         and (max-width: 900px){@content;}}
@@ -254,6 +258,10 @@
     
 @mixin afterMQ800{
     @media (min-width: 801px){@content;}}
+    
+@mixin MQ800_900{
+    @media (min-width: 801px)
+        and (max-width: 900px){@content;}}
     
 @mixin MQ800_1024{
     @media (min-width: 801px)

@@ -12,7 +12,7 @@ $(document).ready(function () {
         $(this).closest('#header').addClass('navDrawer_open');
         $(this).closest('#header').removeClass('navDrawer_closed'); 
         $(this).closest('#header').find('.social').addClass('navDrawer_open');
-        $(this).closest('#header').find('.button_whatsapp').addClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsApp').addClass('navDrawer_open');
         
         $(this).closest('body').find('#footer').addClass('navDrawer_open');
         
@@ -37,7 +37,7 @@ $(document).ready(function () {
         
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');  
         $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
-        $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsApp').removeClass('navDrawer_open');
         
         $(this).closest('body').find('#footer').removeClass('navDrawer_open');
         
@@ -67,7 +67,7 @@ $(document).ready(function () {
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
         $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
-        $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsApp').removeClass('navDrawer_open');
 
         $(this).closest('body').find('#footer').removeClass('navDrawer_open');
         
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
         $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
-        $(this).closest('#header').find('.button_whatsapp').removeClass('navDrawer_open');
+        $(this).closest('#header').find('.button_whatsApp').removeClass('navDrawer_open');
 
         $(this).closest('body').find('#footer').removeClass('navDrawer_open');
         

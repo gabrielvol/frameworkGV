@@ -2976,7 +2976,7 @@ button, button::before, button::after {
   text-transform: uppercase; }
 
 /* // Button Whatsapp ------------------------------------------------------- */
-#selector .button_whatsapp_anchor {
+#selector .button_whatsApp_anchor {
   transition: all 1s ease;
   width: 70px;
   height: 70px;
@@ -2987,22 +2987,22 @@ button, button::before, button::after {
   box-sizing: border-box;
   display: block;
   /*
-        width: $button_whatsapp_width;
-        height: $button_whatsapp_height;
+        width: $button_whatsApp_width;
+        height: $button_whatsApp_height;
 */
   border-radius: 50%;
-  background-image: url("/stage/img/button_whatsapp.svg");
+  background-image: url("/stage/img/button_whatsApp.svg");
   background-repeat: no-repeat;
   background-size: auto calc(70px - 20px);
   background-position: center center; }
-  #selector .button_whatsapp_anchor, #selector .button_whatsapp_anchor:visited, #selector .button_whatsapp_anchor:active {
+  #selector .button_whatsApp_anchor, #selector .button_whatsApp_anchor:visited, #selector .button_whatsApp_anchor:active {
     /*background-color: $greenWhatsApp;*/
     background-color: rgba(37, 211, 102, 0.85); }
-  #selector .button_whatsapp_anchor:focus, #selector .button_whatsapp_anchor:focus-visible, #selector .button_whatsapp_anchor:hover {
+  #selector .button_whatsApp_anchor:focus, #selector .button_whatsApp_anchor:focus-visible, #selector .button_whatsApp_anchor:hover {
     box-shadow: 0 0 5px #3c9637;
     /*background-color: $greenWhatsApp_hover;*/
     background-color: #25d366; }
-    #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:focus-visible::before, #selector .button_whatsapp_anchor:hover::before {
+    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
       border-radius: 15px;
       height: 40px;
       line-height: 40px;
@@ -3018,31 +3018,31 @@ button, button::before, button::after {
       font-size: 0.8rem;
       text-indent: 0;
       text-align: center; }
-  #selector .button_whatsapp_anchor.lang_AR:focus::before, #selector .button_whatsapp_anchor.lang_AR:focus-visible::before, #selector .button_whatsapp_anchor.lang_AR:hover::before {
+  #selector .button_whatsApp_anchor.lang_AR:focus::before, #selector .button_whatsApp_anchor.lang_AR:focus-visible::before, #selector .button_whatsApp_anchor.lang_AR:hover::before {
     content: "Chat con SiteName."; }
-  #selector .button_whatsapp_anchor.lang_BR:focus::before, #selector .button_whatsapp_anchor.lang_BR:focus-visible::before, #selector .button_whatsapp_anchor.lang_BR:hover::before {
+  #selector .button_whatsApp_anchor.lang_BR:focus::before, #selector .button_whatsApp_anchor.lang_BR:focus-visible::before, #selector .button_whatsApp_anchor.lang_BR:hover::before {
     content: "Converse com o SiteName."; }
-  #selector .button_whatsapp_anchor.lang_DE:focus::before, #selector .button_whatsapp_anchor.lang_DE:focus-visible::before, #selector .button_whatsapp_anchor.lang_DE:hover::before {
+  #selector .button_whatsApp_anchor.lang_DE:focus::before, #selector .button_whatsApp_anchor.lang_DE:focus-visible::before, #selector .button_whatsApp_anchor.lang_DE:hover::before {
     content: "Chatten Sie mit SiteName."; }
-  #selector .button_whatsapp_anchor.lang_GB:focus::before, #selector .button_whatsapp_anchor.lang_GB:focus-visible::before, #selector .button_whatsapp_anchor.lang_GB:hover::before {
+  #selector .button_whatsApp_anchor.lang_GB:focus::before, #selector .button_whatsApp_anchor.lang_GB:focus-visible::before, #selector .button_whatsApp_anchor.lang_GB:hover::before {
     content: "Chat with SiteName."; }
   @media (max-width: 500px) {
-    #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:focus-visible::before, #selector .button_whatsapp_anchor:hover::before {
+    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
       width: 220px; } }
   @media (max-width: 767px) {
-    #selector .button_whatsapp_anchor.navDrawer_open::before, #selector .button_whatsapp_anchor.navDrawer_open:focus::before, #selector .button_whatsapp_anchor.navDrawer_open:focus-visible::before, #selector .button_whatsapp_anchor.navDrawer_open:hover::before {
+    #selector .button_whatsApp_anchor.navDrawer_open::before, #selector .button_whatsApp_anchor.navDrawer_open:focus::before, #selector .button_whatsApp_anchor.navDrawer_open:focus-visible::before, #selector .button_whatsApp_anchor.navDrawer_open:hover::before {
       display: none; } }
   @media (min-width: 501px) {
-    #selector .button_whatsapp_anchor:focus::before, #selector .button_whatsapp_anchor:focus-visible::before, #selector .button_whatsapp_anchor:hover::before {
+    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
       width: 220px; } }
-  #selector .button_whatsapp_anchor .button_whatsapp_nFormatted {
+  #selector .button_whatsApp_anchor .button_whatsApp_nFormatted {
     /*
             display: block;
-            height: $button_whatsapp_height;
+            height: $button_whatsApp_height;
             font-size: 0.8rem;
-            line-height: $button_whatsapp_height;
+            line-height: $button_whatsApp_height;
 */ }
-    #selector .button_whatsapp_anchor .button_whatsapp_nFormatted:not(:focus):not(:active) {
+    #selector .button_whatsApp_anchor .button_whatsApp_nFormatted:not(:focus):not(:active) {
       /*
     // REF [22]
 Hide only visually, but have it available for screen readers:

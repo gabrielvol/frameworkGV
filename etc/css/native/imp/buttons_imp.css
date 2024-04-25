@@ -28,7 +28,7 @@ Imported in `[/src/css/main.css]`
 
   
 /* // Button Whatsapp ------------------------------------------------------- */
-#header .button_whatsapp_anchor {
+#header .button_whatsApp_anchor {
     transition: all 0.7s ease;
     width: 60px;
     height: 60px;
@@ -39,34 +39,34 @@ Imported in `[/src/css/main.css]`
     box-sizing: border-box;
     display: block;
     border-radius: 50%;
-    background-image: url("../../img/button_whatsapp.svg");
+    background-image: url("../../img/button_whatsApp.svg");
     background-repeat: no-repeat;
     background-size: auto calc(60px - 10px);
     background-position: center center;
 }
 
-#header.header_hasForm .button_whatsapp_anchor{
+#header.header_hasForm .button_whatsApp_anchor{
     bottom: 90px;
 }
 
-#header .button_whatsapp_anchor,
-#header .button_whatsapp_anchor:visited,
-#header .button_whatsapp_anchor:active {
+#header .button_whatsApp_anchor,
+#header .button_whatsApp_anchor:visited,
+#header .button_whatsApp_anchor:active {
     /*
     background-color: var(--white);
     */
 }
 
-#header .button_whatsapp_anchor:focus,
-#header .button_whatsapp_anchor:hover {
+#header .button_whatsApp_anchor:focus,
+#header .button_whatsApp_anchor:hover {
     /*
     box-shadow: 0 0 5px #3c9637;
     background-color: var(--white);
     */
 }
 
-/*#header .button_whatsapp_anchor:focus::before,
-#header .button_whatsapp_anchor:hover::before {
+/*#header .button_whatsApp_anchor:focus::before,
+#header .button_whatsApp_anchor:hover::before {
     content: "Chat con CompanyName.";
     border-radius: 15px;
     height: 40px;
@@ -87,30 +87,30 @@ Imported in `[/src/css/main.css]`
 }*/
     
 @media (max-width: 500px) {
-    #header .button_whatsapp_anchor:focus::before,
-    #header .button_whatsapp_anchor:hover::before {
+    #header .button_whatsApp_anchor:focus::before,
+    #header .button_whatsApp_anchor:hover::before {
         width: 175px;
     }
 }
 
 @media (max-width: 767px) {
-    #header .button_whatsapp_anchor.navDrawer_open::before,
-    #header .button_whatsapp_anchor.navDrawer_open:focus::before,
-    #header .button_whatsapp_anchor.navDrawer_open:hover::before {
+    #header .button_whatsApp_anchor.navDrawer_open::before,
+    #header .button_whatsApp_anchor.navDrawer_open:focus::before,
+    #header .button_whatsApp_anchor.navDrawer_open:hover::before {
       display: none;
     }
 }
 
 @media (min-width: 500px) {
-    #header .button_whatsapp_anchor:focus::before,
-    #header .button_whatsapp_anchor:hover::before {
+    #header .button_whatsApp_anchor:focus::before,
+    #header .button_whatsApp_anchor:hover::before {
         width: 190px;
     }
 }
 
-#header .button_whatsapp_anchor .button_whatsapp_nFormatted{}
+#header .button_whatsApp_anchor .button_whatsApp_nFormatted{}
 
-#header .button_whatsapp_anchor .button_whatsapp_nFormatted:not(:focus):not(:active){
+#header .button_whatsApp_anchor .button_whatsApp_nFormatted:not(:focus):not(:active){
       position: absolute;
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
