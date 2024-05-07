@@ -5,7 +5,7 @@ $(document).ready(function () {
         $(this).closest('body').find('.modal_xxx').removeClass('displayNone');
     });
         
-    $('.modal_xxx, .button_pop_close, .button_pop_submit').click(function () {
+    $('.modal_xxx, .button_close_pop, .button_pop_submit').click(function () {
         $(this).closest('body').find('.button_pop_open_xxx').attr('aria-pressed', 'false');
         $(this).closest('body').find('.pop_xxx').addClass('displayNone');
         $(this).closest('body').find('.modal_xxx').addClass('displayNone');
@@ -27,7 +27,7 @@ $(document).ready(function () {
         $(this).closest('body').find('.pop_xxx_B').removeClass('displayNone');
     });
     
-    $('.pop_xxx img, .modal_xxx, .button_pop_close').click(function () {
+    $('.pop_xxx img, .modal_xxx, .button_close_pop').click(function () {
         $(this).closest('body').find('.button_xxx').attr('aria-pressed', 'false');
         $(this).closest('body').find('.pop_xxx').addClass('displayNone');
         $(this).closest('body').find('.pop_xxx_A').addClass('displayNone');
@@ -63,7 +63,7 @@ $(document).ready(function () {
         $(this).closest('body').find('.modal_video').removeClass('displayNone');
     });
         
-    $('.modal_video, .button_pop_close').click(function () {
+    $('.modal_video, .button_close_pop').click(function () {
         $(this).closest('body').find('.button_pop_open_video').attr('aria-pressed', 'false');        
         $(this).closest('body').find('.pop_video').addClass('displayNone');
         $(this).closest('body').find('iframe').attr("src", "");

@@ -1,5 +1,5 @@
 <div class="pop_global pop_xxx displayNone">
-    <button type="button" class="button_pop_close button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
+    <button type="button" class="button_close_pop button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
 
     </div>
@@ -9,7 +9,7 @@
 
 <div class="pop_global pop_warning pop_xxx" role="alertdialog" aria-labelledby="idlabelledby">
     <div role="document" tabindex="0">
-        <button type="button" class="button_pop_close button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
+        <button type="button" class="button_close_pop button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
         <h2 id="idlabelledby"><?php echo _("titulooooooo"); ?></h2>
         <p class=""><?php echo _("textooo"); ?>.</p>
         <p class=""><?php echo _("textooo"); ?> <a href="#"><?php echo _("clicaqui"); ?></a>.</p>
@@ -22,7 +22,7 @@
  * El src del iframe lo pasa el .js
  */ ?>
 <div class="pop_global pop_video displayNone">
-    <button type="button" class="button_pop_close button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
+    <button type="button" class="button_close_pop button_close" aria-pressed="false"><?php echo _("Cerrar Ventana"); ?></button>
     <div class="pop_innerContainer">
         <div class="iframe_video_mask">
             <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="displayBlock mha" allowfullscreen></iframe>

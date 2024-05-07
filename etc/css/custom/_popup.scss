@@ -49,6 +49,8 @@
     z-index: $zIndex_pop_global;
     top: 10vh;
     left: 50%;
+    height: 100vh;
+    max-height: 80vh;
     border-radius: $bdRadius_global; 
     background-color: $bgWhite;
     
@@ -88,7 +90,27 @@
         display: block;
     }
 */
+        
+    @include beforeMQ300{
+        width: $pop_regular_width_B300;
+        max-width: $pop_regular_width_max_B300;
+        margin-left: calc(calc(#{$pop_regular_width_B300} * -1) / 2);  
+    }
+        
+    @include afterMQ300{
+        width: $pop_regular_width_A300;
+        margin-left: calc(calc(#{$pop_regular_width_A300} * -1) / 2);  
+    }
 
+    @include afterMQ500{
+        width: $pop_regular_width_A500;
+        margin-left: calc(calc(#{$pop_regular_width_A500} * -1) / 2);
+    }
+
+    @include afterMQ600{
+        width: $pop_regular_width_A600;
+        margin-left: calc(calc(#{$pop_regular_width_A600} * -1) / 2);
+    }
 }
 
 .pop_warning{
