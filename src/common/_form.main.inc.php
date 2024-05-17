@@ -2,7 +2,7 @@
     <?php
         $data_fullURL__formMain = $page_url_full;
         
-        if(!empty($gettext_idioma) && $gettext_idioma == 'en_US'){
+        if(!empty($gettext_idioma) && $gettext_idioma == 'en_GB'){
             include('form.main.status.en.inc.php');
         } else {
             include('form.main.status.es.inc.php');

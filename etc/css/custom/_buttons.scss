@@ -334,7 +334,10 @@ button{
         background-image: url('#{$dir_env}/img/button_whatsApp.svg');
         background-repeat: no-repeat;
         background-size: auto calc(#{$button_whatsApp_size_square} - 20px);
-        background-position: center center;
+        background-position: center center;        
+/*
+        overflow: visible;
+*/
 
         &,
         &:focus,
@@ -369,6 +372,7 @@ button{
             &::before{
                 @include borderRadius(15px);
                 @include equalHeightAndLineHeight($button_whatsApp_before_height);
+                content: "Abrir un chat.";
                 display: block;
                 box-sizing: border-box;
                 position: absolute;
