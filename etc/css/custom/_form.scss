@@ -343,8 +343,9 @@ form{
         }
         
         @include afterMQ768{
-            @include centerCustom(50%);
             margin-top: 30px;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
     

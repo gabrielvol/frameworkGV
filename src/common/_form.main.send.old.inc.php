@@ -60,15 +60,21 @@ if (isset($_POST['button_form_submit__formMain'])){
     
 /*___ Cabeceras del correo _____________________________________________*/
     $formMail_recipient  = $form_recipient__formMain;
-    // $formMail_recipient  = $data_area__formMain;
+    /*
+    $formMail_recipient  = $data_area__formMain;
+    */
     $formMail_asunto   = "Contacto Web de " . $data_nombre__formMain . " - " . $data_empresa__formMain;
     $formMail_headers  = "From: $data_nombre__formMain <$data_email__formMain>\r\n";
-    //$formMail_headers .= "Reply-To: $data_email__formMain \r\n";
+    /*
+    $formMail_headers .= "Reply-To: $data_email__formMain \r\n";
+    */
     $formMail_headers .= "Content-type: text/html\r\n";
     $formMail_headers .= "X-Mailer: PHP5\n";
     $formMail_headers .= 'MIME-Version: 1.0' . "\n";
+    /*
     $formMail_headers .= "CC: " . $form_recipient_CC__formMain . "\r\n";
     $formMail_headers .= "BCC: " . $form_recipient_BCC__formMain . "\r\n";
+    */
     $formMail_texto  = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMain . '</small><br /><br />';
     $formMail_texto .= '<small style="color:#444"><strong>Filtro:</strong> filtroWebForm</small><br /><br />';
     $formMail_texto .= '<strong>Nombre:</strong> ' . $data_nombre__formMain . '<br />';

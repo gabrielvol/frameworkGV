@@ -93,6 +93,8 @@ fieldset, label, input, select, textarea, button,
     @include afterMQ1024{
         form &{
             width: $form_label_width_A1024;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
     
@@ -188,7 +190,7 @@ form button{
 
     @include afterMQ1024{
         form &{
-            width: $button_form_submit_width_A1024;
+            width: $button_form_submit_width_A1024!important;
             height: $button_form_submit_height_A1024;
             line-height: $button_form_submit_lineHeight_A1024;
         }
@@ -196,7 +198,7 @@ form button{
 
     @include afterMQ1200{
         form &{
-            width: $button_form_submit_width_A1200;
+            width: $button_form_submit_width_A1200!important;
             height: $button_form_submit_height_A1200;
             line-height: $button_form_submit_lineHeight_A1200;
         }

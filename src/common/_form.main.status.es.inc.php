@@ -5,7 +5,7 @@ $form_status_ini_globalB__formMain      = 'Nos comunicaremos con Ud. a la breved
 $form_status_ini_global__formMain       = $form_status_ini_globalA__formMain . ' ' . $form_status_ini_globalB__formMain;
 
 $form_status_ok_globalA__formMain       = 'Mensaje enviado!';
-$form_status_ok_globalB__formMain       = 'Los datos se han enviado correctamented. Muchas Gracias.';
+$form_status_ok_globalB__formMain       = 'Los datos se han enviado correctamente. Muchas Gracias.';
 
 $form_status_pop_button_close_txt           = 'Cerrar';
 $form_status_pop_h2_ok_classes__formMain    = 'mbm greenSystem txAlignCenter';

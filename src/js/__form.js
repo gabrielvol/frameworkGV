@@ -5,6 +5,7 @@
 $(document).ready(function () {
     $('.button_form_submit').scrollPosReload(); // REF [25]
     
+/*
     // REF [39] $form_label_floating_act
     // REF [39a] $form_label_floating_act
     $('#data_nombre__formMain').blur(function() {
@@ -34,8 +35,9 @@ $(document).ready(function () {
       .focus(function() {
         $(this).closest('label').addClass('input_has_focus_js');   
       });
-    
-/*     
+*/
+   
+/* 
     $('.pop_global button').click(function () {
         $('#formID').submit();
     });
@@ -49,6 +51,7 @@ $(document).ready(function () {
 */
 });
 
+/*
 jQuery(document).ready(function($) {
     // REF [39] $form_label_floating_act
     var $data_nombre__formMain      = $('#data_nombre__formMain');  
@@ -96,3 +99,4 @@ jQuery(document).ready(function($) {
         } 
     });   
 });
+*/
