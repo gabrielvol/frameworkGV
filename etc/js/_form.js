@@ -66,4 +66,16 @@ $(document).ready(function () {
         } 
         return ($mail_correcto) ;
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        var input = document.getElementById('codigopostal');
+
+        input.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById('calc_envio').click();
+            }
+        });
+    });
 });
