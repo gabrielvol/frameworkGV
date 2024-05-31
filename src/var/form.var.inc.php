@@ -19,8 +19,8 @@ if(!empty($dir_env) && $dir_env !== '/stage'):
     $form_recipient_BCC__formMain       = 'gabrielvol@protonmail.com';
 else:
     // produ / stage
-    $form_recipient__formMain           = 'tampas@gmail.com'; // $site_email_contacto_address;
-    $form_recipient_CC__formMain        = 'ggvv@hotmail.com.ar'; // $site_email_contacto_address; // . ', ' . $site_email_EMAILA_address;
+    $form_recipient__formMain           = 'tampas@gmail.com'; // $site_email_CONTACTO_address;
+    $form_recipient_CC__formMain        = 'ggvv@hotmail.com.ar'; // $site_email_CONTACTO_address; // . ', ' . $site_email_EMAILA_address;
     $form_recipient_BCC__formMain       = 'gabrielvol@protonmail.com';
     
 endif;
@@ -37,8 +37,8 @@ if(!empty($dir_env) && $dir_env !== '/stage'):
     $form_recipient_BCC__formContacto       = 'gabrielvol@protonmail.com';
 else:
     // produ / stage
-    $form_recipient__formContacto           = 'tampas@gmail.com'; // $site_email_contacto_address;
-    $form_recipient_CC__formContacto        = 'ggvv@hotmail.com.ar'; // $site_email_contacto_address; // . ', ' . $site_email_EMAILA_address;
+    $form_recipient__formContacto           = 'tampas@gmail.com'; // $site_email_CONTACTO_address;
+    $form_recipient_CC__formContacto        = 'ggvv@hotmail.com.ar'; // $site_email_CONTACTO_address; // . ', ' . $site_email_EMAILA_address;
     $form_recipient_BCC__formContacto       = 'gabrielvol@protonmail.com';
 endif;
 
@@ -54,8 +54,8 @@ if(!empty($dir_env) && $dir_env !== '/stage'):
     $form_recipient_BCC__formFooter       = 'gabrielvol@protonmail.com';
 else:
     // produ / stage    
-    $form_recipient__formFooter           = 'tampas@gmail.com'; // $site_email_contacto_address;
-    $form_recipient_CC__formFooter        = 'ggvv@hotmail.com.ar'; // $site_email_contacto_address; // . ', ' . $site_email_EMAILA_address;
+    $form_recipient__formFooter           = 'tampas@gmail.com'; // $site_email_CONTACTO_address;
+    $form_recipient_CC__formFooter        = 'ggvv@hotmail.com.ar'; // $site_email_CONTACTO_address; // . ', ' . $site_email_EMAILA_address;
     $form_recipient_BCC__formFooter       = 'gabrielvol@protonmail.com';
 endif;    
 

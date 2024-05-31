@@ -582,14 +582,14 @@
             Asunto
         <?php endif; ?></span>
         <select name="data_area__formMain" id="data_area__formMain" class="data_area__formMain <?php echo $form_validation_input_class_data_area__formMain; ?>" form="formMainID" enterkeyhint="next">
-            <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if($data_area__formMain == $site_email_contacto_address){
+            <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if($data_area__formMain == $site_email_CONTACTO_address){
                 if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Subject: Technical'; } else { echo 'Asunto: Consulta técnica'; }
             } elseif($data_area__formMain == $site_email_EMAILB_address) {
                 if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Subject: Investment'; } else { echo 'Asunto: Inversión'; }
             } else {
                 if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Please select a subject'; } else { echo 'Por favor seleccione un asunto'; }
             } ?></option>
-            <option value="<?php echo $site_email_contacto_address; ?>" <?php if($data_area__formMain == $site_email_contacto_address){ echo 'class="displayNone"'; } ?>><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Subject: Technical'; } else { echo 'Asunto: Consulta técnica'; } ?> - <?php echo $site_email_contacto_address ?></option>
+            <option value="<?php echo $site_email_CONTACTO_address; ?>" <?php if($data_area__formMain == $site_email_CONTACTO_address){ echo 'class="displayNone"'; } ?>><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Subject: Technical'; } else { echo 'Asunto: Consulta técnica'; } ?> - <?php echo $site_email_CONTACTO_address ?></option>
             <option value="<?php echo $site_email_EMAILB_address; ?>" <?php if($data_area__formMain == $site_email_EMAILB_address){ echo 'class="displayNone"'; } ?>><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Subject: Investment'; } else { echo 'Asunto: Inversión'; } ?> - <?php echo $site_email_EMAILB_address ?></option>
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMain; ?>"><?php echo $form_validation_span_msg_data_area__formMain; ?></span>  
@@ -605,7 +605,7 @@
             <option value="<?php echo $_POST['data_area__formMain']; ?>" selected><?php if(isset($_POST['data_area__formMain'])) { echo $_POST['data_area__formMain']; } else {
                 if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Please select a department'; } else { echo 'Por favor seleccione un área a contactar'; }
             } ?></option>
-            <option value="<?php echo $site_email_contacto_address; ?>"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Address: a'; } else { echo 'Address: a'; } ?> - <?php echo $site_email_contacto_address; ?></option>
+            <option value="<?php echo $site_email_CONTACTO_address; ?>"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Address: a'; } else { echo 'Address: a'; } ?> - <?php echo $site_email_CONTACTO_address; ?></option>
             <option value="<?php echo $site_email_EMAILB_address; ?>"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Address: a'; } else { echo 'Address: a'; } ?> - <?php echo $site_email_EMAILB_address; ?></option>
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMain; ?>"><?php echo $form_validation_span_msg_data_area__formMain; ?></span>  

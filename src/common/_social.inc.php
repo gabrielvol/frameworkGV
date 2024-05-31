@@ -1,6 +1,6 @@
 <ul class="social unstyled displayFlex">
     <li class="social_em">
-        <a <?php echo $site_email_contacto_href; ?> class="hover_grow_L_ani" target="_blank">
+        <a <?php echo $site_email_CONTACTO_href; ?> class="hover_grow_L_ani" target="_blank">
             <?php echo _("Cont&aacute;ctenos por Correo Electr&oacute;nico"); ?>.
             <span class="visuallyHidden"><?php echo _("Correo Electr&oacute;nico"); ?>:</span>
             <img src="<?php echo $dir_env; ?>/img/social_em.svg" alt="<?php echo _('Cont&aacute;ctenos por Correo Electr&oacute;nico'); ?>.">
@@ -8,7 +8,7 @@
     </li>
     <li class="social_em">
             <span class="visuallyHidden"><?php echo _("Correo Electr&oacute;nico"); ?>:</span>
-        <a <?php echo $site_email_contacto_href; ?>><?php echo $site_email_contacto_address; ?></a>
+        <a <?php echo $site_email_CONTACTO_href; ?>><?php echo $site_email_CONTACTO_address; ?></a>
     </li>
     <li class="social_fb">
         <a href="<?php echo $social_facebook_url; ?>" class="hover_grow_L_ani" target="_blank">

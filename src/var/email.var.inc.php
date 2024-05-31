@@ -6,11 +6,11 @@
 /* // Descripcion ----------------------------------------------------------- */
 
 /* // Domain main ----------------------------------------------------------- */
-$site_email_contacto         = 'contacto';
-$site_email_contacto_address = $site_email_contacto . '@' . $domain_main;
-$site_email_contacto_mailto  = 'mailto:' . $site_email_contacto_address;
-$site_email_contacto_href    = 'href="' . $site_email_contacto_mailto . '"';
-$site_email_contacto_anchor  = '<a ' . $site_email_contacto_href . '>' . $site_email_contacto_address . '</a>';
+$site_email_CONTACTO         = 'contacto';
+$site_email_CONTACTO_address = $site_email_CONTACTO . '@' . $domain_main;
+$site_email_CONTACTO_mailto  = 'mailto:' . $site_email_CONTACTO_address;
+$site_email_CONTACTO_href    = 'href="' . $site_email_CONTACTO_mailto . '"';
+$site_email_CONTACTO_anchor  = '<a ' . $site_email_CONTACTO_href . '>' . $site_email_CONTACTO_address . '</a>';
 
 $site_email_EMAILA           = 'EMAILA';
 $site_email_EMAILA_address   = $site_email_EMAILA . '@' . $domain_main;
