@@ -99,8 +99,8 @@ $url_sec                = 'http://www.' . $domain_sec;
 $url_custom             = 'http://www.' . $domain_custom;
 
 
-// Los vínculos que tienen un hash creado deben ser comentados en la siguiente
-// lista
+// Los vínculos que tienen un hash creado
+// deben ser comentados en la siguiente lista
 
 $url_index_full         = $url_wip . $url_index;
 $url_home_full          = $url_wip . $url_home;
