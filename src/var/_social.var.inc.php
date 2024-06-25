@@ -5,7 +5,7 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 
-$social_amazon_url     = 'https://www.amazon.com/';
+$social_amazon_url     = 'https_www_amazon_com';
 
 $social_facebook_url    = 'https_www_facebook_com_usuario';
 
