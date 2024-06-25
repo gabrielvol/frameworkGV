@@ -13,6 +13,8 @@ $http_protocol      = 'https://www.';
 
 $domain_main        = 'sitiocomar';
 
+$domain_sub_SUBDOMAIN = 'SUBDOMAIN' . '.';
+
 $domain_wip         = $domain_main; // 'sitiocomar';
 
 $domain_sec         = 'sitiocomar';

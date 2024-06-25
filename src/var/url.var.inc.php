@@ -8,6 +8,23 @@
 //
 // #url #href #hash #gettext
 
+/* // global urls ----------------------------------------------------------- */
+$url_main               = $http_protocol . $domain_main;
+//$url_main               = $http_protocol . $domain_wip;
+$url_main_full          = $url_main . $dir_env;
+
+$url_subdomain_SUBDOMAIN       = $http_protocol . $domain_sub_SUBDOMAIN . $domain_main;
+$url_subdomain_SUBDOMAIN_full  = $url_subdomain_SUBDOMAIN . $dir_env;
+
+$url_wip                = $http_protocol . $domain_wip;
+$url_wip_full           = $url_wip . $dir_env;
+
+$url_sec                = 'http://www.' . $domain_sec;
+
+$url_custom             = 'http://www.' . $domain_custom;
+
+
+
 /* // Hashes ---------------------------------------------------------------- */
 $hash_body          = '#body';
 $hash_top           = '#header';
@@ -58,7 +75,7 @@ $url_main_hs_HOME             = $url_home . $hash_main;
 /*___ urls con variable de idioma al final _*/
     $url_root           = $dir_env . '/' . $gettext_idioma_url;
     $url_index          = $dir_env . '/index.php' . $gettext_idioma_url;
-    //$url_home         = $dir_env . '/inicio.php' . $gettext_idioma_url;
+    //$url_home         = $dir_env . '/home.php' . $gettext_idioma_url;
     $url_contacto       = $dir_env . '/contacto.php' . $gettext_idioma_url;
     //$url_gracias        = $dir_env . '/gracias.php' . $gettext_idioma_url;
     //$url_construccion   = $dir_env . '/construccion.php' . $gettext_idioma_url;
@@ -84,21 +101,18 @@ $url_main_hs_HOME             = $url_home . $hash_main;
     // $url_PAGINA_hs_PAGINA_gettext   = $url_PAGINA . $hash_PAGINA;
     // $url_PAGINA_hs_PAGINA_gettext   = $url_PAGINA . $hash_PAGINA;
     
+    
+    
+/* // url subdomain --------------------------------------------------------- */
+$url_root_SUBDOMAIN     = $url_subdomain_SUBDOMAIN_full;
+$url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
+// $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
+// $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
+// $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
+    
 
     
-/* // global urls / full urls ----------------------------------------------- */
-$url_main               = $http_protocol . $domain_main;
-//$url_main               = $http_protocol . $domain_wip;
-$url_main_full          = $url_main . $dir_env;
-
-$url_wip                = $http_protocol . $domain_wip;
-$url_wip_full           = $url_wip . $dir_env;
-
-$url_sec                = 'http://www.' . $domain_sec;
-
-$url_custom             = 'http://www.' . $domain_custom;
-
-
+/* // full urls ------------------------------------------------------------- */
 // Los vínculos que tienen un hash creado
 // deben ser comentados en la siguiente lista
 
@@ -118,7 +132,7 @@ $url_contacto_full      = $url_wip . $url_contacto;
     // $url_PAGINA_hs_PAGINA_full    = $url_main . $url_PAGINA . $url_PAGINA;
     // $url_PAGINA_hs_PAGINA_full    = $url_main . $url_PAGINA . $url_PAGINA;
     // $url_PAGINA_hs_PAGINA_full    = $url_main . $url_PAGINA . $url_PAGINA;
-    
+
 
     
 /* // href ------------------------------------------------------------------ */
@@ -172,6 +186,13 @@ $href_contacto_noLink      = ($nav_pageCurrent_int == 'page_index_index') ? $hre
     // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
     // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
     // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
+    
+
+    
+/* // href subdomain -------------------------------------------------------- */
+$href_root_SUBDOMAIN    = 'href="' . $url_root_SUBDOMAIN . '"'; 
+$href_logo_SUBDOMAIN    = $href_root_SUBDOMAIN;
+$href_index_SUBDOMAIN   = 'href="' . $url_index_SUBDOMAIN . '"';
     
 
 
