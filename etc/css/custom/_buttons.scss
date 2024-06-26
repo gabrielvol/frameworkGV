@@ -370,14 +370,13 @@ button{
             background-color: rgba(37, 211, 102, 1);
 
             &::before{
-                @include borderRadius(15px);
+                @include borderRadius(14px);
                 @include equalHeightAndLineHeight($button_whatsApp_before_height);
                 content: "Abrir un chat.";
                 display: block;
                 box-sizing: border-box;
                 position: absolute;
                 top: 50%;
-                right: calc(#{$button_whatsApp_size_square} + 10px);
                 background-color: rgba(0, 0, 0, 0.7);
                 padding: 0 15px;
                 margin-top: calc(-1 * calc(#{$button_whatsApp_before_height} / 2));
@@ -428,13 +427,25 @@ button{
                 }
             }
         }
-
-        @include beforeMQ500{
+        
+        @include beforeMQ300{
             &:focus,
             &:focus-visible,
             &:hover{
                 &::before{
-                    width: $button_whatsApp_before_width_B500;
+                    width: $button_whatsApp_before_width_B300;
+                    right: calc(#{$button_whatsApp_size_square} + 4px);
+                }
+            }
+        }
+        
+        @include afterMQ300{
+            &:focus,
+            &:focus-visible,
+            &:hover{
+                &::before{
+                    width: $button_whatsApp_before_width_A300;
+                    right: calc(#{$button_whatsApp_size_square} + 10px);
                 }
             }
         }
