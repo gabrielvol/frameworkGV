@@ -88,3 +88,46 @@
     font-size: 80%;
     /* vertical-align: super; */
 }
+
+.txSymbol{
+    position: relative;
+    display: inline-flex;
+    width: 35px;
+    text-indent: -9999px;
+    overflow: hidden;
+
+    &::before{
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 30px;
+        text-indent: 0;
+        text-align: center;
+    }
+    
+    &.symbol_plus{
+        &::before{
+            content: "+";
+        }
+    }
+    
+    &.symbol_one{
+        &::before{
+            content: "1";
+        }
+    }
+    
+    &.symbol_two{
+        &::before{
+            content: "2";
+        }
+    }
+    
+    &.symbol_three{
+        &::before{
+            content: "3";
+        }
+    }
+}

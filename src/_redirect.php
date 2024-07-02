@@ -6,7 +6,7 @@
     $page_int      = 1;
     $nav_pageCurrent        = '';
     $nav_pageCurrent_int    = '';
-// Si se activa el id hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php`
+// Si se activa `$nav_pageCurrent_id` hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php`
 //    $nav_pageCurrent_id     = 'page_PAGEINT_ID';
     
     $page_construccion      = 0;
