@@ -68,7 +68,7 @@ $container_value_max_A1400:          1300px;
 $container_value_max_A1500:          $container_value_max_A1400;
 $container_value_max_A1600:          $container_value_max_A1500;
 
-// REF [38] Container max width
+// REF [38*] Container max width settings
 $container_max_width_PR:            30px;
 $container_max_width_PL:            $container_max_width_PR;
 $container_max_width_PH:            calc(#{$container_max_width_PR} + #{$container_max_width_PL});

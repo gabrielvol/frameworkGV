@@ -112,7 +112,7 @@ if(!empty($nav_pageCurrent_id)):
     $class_ini_main         .= $nav_pageCurrent_id . ' '; endif; 
     
 //----- Finals
-    $class_end_main         = 'containerA1600 '; // REF [38]
+    $class_end_main         = 'containerA1600 '; // REF [38*]
 
 if(!empty($page_construccion)):
     $class_end_main         .= 'page_construccion '; endif; 

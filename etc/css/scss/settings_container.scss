@@ -5,6 +5,15 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
+// REF [38*]
+// Si se modifica el ancho maximo del container hay que correr las clases:
+//
+// box-sizing: border-box;
+// padding-right: $container_max_width_PR;
+// padding-left: $container_max_width_PL;
+//
+// A su nuevo container en todos los media queries
+
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -135,7 +144,7 @@
     }
     @include afterMQ1500{
         max-width: $container_value_max_A1500;
-        // REF [38] Container max width
+        // REF [38*] Container max width
         box-sizing: border-box;
         padding-right: $container_max_width_PR;
         padding-left: $container_max_width_PL;
@@ -600,7 +609,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -705,7 +714,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -782,7 +791,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -887,7 +896,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -971,7 +980,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -1054,7 +1063,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -1089,7 +1098,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -1118,7 +1127,7 @@
         }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;
@@ -1139,7 +1148,7 @@
         @include afterMQ1500{
             width: 100%;
             max-width: $container_value_max_A1500;
-            // REF [38] Container max width
+            // REF [38*] Container max width
             box-sizing: border-box;
             padding-right: $container_max_width_PR;
             padding-left: $container_max_width_PL;

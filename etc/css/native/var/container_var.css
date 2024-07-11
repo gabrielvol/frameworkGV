@@ -57,7 +57,7 @@
     --container_value_max_half_negative_A1400:   calc(-1 * var(--container_value_max_half_A1400));
     --container_value_max_half_negative_A1500:   calc(-1 * var(--container_value_max_half_A1500));
 
-    // REF [38] Container max width
+    // REF [38*] Container max width settings
     --container_max_width_PR:            30px;
     --container_max_width_PL:            $container_max_width_PR;
     --container_max_width_PH:            calc(var(--container_max_width_PR) + var(--container_max_width_PL));
