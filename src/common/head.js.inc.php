@@ -1,6 +1,10 @@
 <script src="<?php echo $dir_env; ?>/js/jQuery3.2.1.min.js"></script>
 <script src="<?php echo $dir_env; ?>/js/modernizr2.8.3.js"></script>
 <script src="<?php echo $dir_env; ?>/js/html5shiv.min.js"></script>
+
+<?php /* // REF [47] Topbar.js */ ?>
+<script src="<?php echo $dir_env; ?>/js/topbar.min.js"></script>
+
 <?php /* // REF [24]
 <script src="<?php echo $dir_env; ?>/js/uikit.min.js"></script>
 */ ?>
