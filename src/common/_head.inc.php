@@ -25,6 +25,12 @@
 <title><?php echo $page_title; ?></title>
 <meta name="title" content="<?php echo $page_title; ?>">
 <meta name="description" content="<?php echo $page_desc; ?>">
+  
+<?php if($topbar_hide_mobile == 1): // REF [47] ?>
+    <style>
+        .pretopbar + .topbar_js{display: none!important;}    
+    </style>
+<?php endif; ?>
 
 <?php /* Google Fonts // REF [01] */ ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">

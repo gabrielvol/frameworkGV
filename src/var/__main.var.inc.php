@@ -11,6 +11,7 @@
 // #php #variables #includes
 
 /* // Activadores ----------------------------------------------------------- */
+include('act/global.act.inc.php');
 include('act/header.act.inc.php');
 include('act/nav.act.inc.php');
     
