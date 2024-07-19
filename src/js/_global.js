@@ -2,11 +2,7 @@
    Global javascript [/src/js/global.js]
    ========================================================================== */
 
-$(document).ready(function () {
-/* // Dev window width ------------------------------------------------------ */
-    var postImgHeight = $(window).width();
-    document.getElementById("dev_window_width").innerHTML = postImgHeight;
-    
+$(document).ready(function () {    
 /* // Separator ------------------------------------------------------------- */
 });
 

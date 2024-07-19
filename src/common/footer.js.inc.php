@@ -4,7 +4,10 @@
 
 <script src="<?php echo $dir_env; ?>/js/_global.js"></script>
 
-<?php if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
+<?php if(!empty($dir_env)): // REF [48] Dev window width ?>
+<script src="<?php echo $dir_env; ?>/js/_global.stage.js"></script>
+
+<?php endif; if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
 <?php endif; if(!empty($nav_drawer_act)): /* // REF [06] nav `[/var/act/nav.act.inc.php]` */ ?>

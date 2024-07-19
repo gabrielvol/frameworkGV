@@ -59,6 +59,11 @@ $('.item').click(function () {
     });
 });
 
+$('.item').click(function () { 
+    $(this).closest('.list').find('.item').removeClass('item_selected');
+    $(this).addClass('item_selected');
+});
+
 
 /* // Logo change ----------------------------------------------------------- */
 var dir_env = '/test';
@@ -70,5 +75,25 @@ $(document).ready(function () {
 
     $('.button_hamb_close, .modal_nav, .nav_nav a').click(function () {
         $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_int.png");
+    });
+});
+
+
+/* // Radio Buttons Toggle--------------------------------------------------- */
+$(function(){
+    $('input[name="rad"]').click(function(){
+        var $radio = $(this);
+
+        // if this was previously checked
+        if ($radio.data('waschecked') == true)
+        {
+            $radio.prop('checked', false);
+            $radio.data('waschecked', false);
+        }
+        else
+            $radio.data('waschecked', true);
+
+        // remove was checked from other radios
+        $radio.siblings('input[name="rad"]').data('waschecked', false);
     });
 });

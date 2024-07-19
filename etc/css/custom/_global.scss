@@ -48,6 +48,18 @@
 @import 'imp/page_section_fullHeight_imp';
 @import 'imp/page_headerFixed_imp';
 
+#dev_window_width{
+    /* // REF [48] Dev window width */
+    @include borderStyle($bgGrey3XL);    
+    position: fixed;
+    z-index: $zIndex_dev;
+    background-color: $white_rgba_60;
+    color: $grey2XD;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 #main{
     background-color: $main_bgColour;
     
