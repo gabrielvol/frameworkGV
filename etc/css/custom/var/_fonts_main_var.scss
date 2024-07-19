@@ -80,6 +80,10 @@ $font_weights_map:(
 
 
 /* // Variables de fuentes -------------------------------------------------- */
+// Luego de declarar las variables de fuentes hay que asignarlas a las variables
+// `ftFamily_` regular y bold
+// REF [46] Fuentes Regular y Bold
+
 $arial:             map-get($font_families_map, arial), $font_families_sans_list_fallback;
 $roboto:            map-get($font_families_map, roboto), $font_families_sans_list_fallback;
 //$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
