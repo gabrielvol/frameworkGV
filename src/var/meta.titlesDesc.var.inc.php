@@ -4,11 +4,14 @@
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Variable para site lang, títulos y descripción de sitio
+// Variable para site lang, titulos y descripcion de sitio
 //
 // #description #lang #meta #seo #title
 
-/* // Site titles ----------------------------------------------------------- */
+
+/* // Site titles _ ~ 70 char ----------------------------------------------- */
+// ·____________________________________________________________________·
+// 123456789-123456789-123456789-123456789-123456789-123456789-123456789-
 // El index usa como titulo solamente `$site_name_full`
 
 // Las internas componen el nombre con las variables
@@ -36,7 +39,7 @@ if($gettext_idioma == 'en_GB'){
     $page_title_home_contacto   = 'Contact';    
     $page_title_home_gracias    = 'Thank You';
     $page_title_home_copyright  = 'License';    
-//    $page_title_PAGEINT_redirect  = 'redirect';
+//    $page_title_redirect  = 'redirect';
     
 /*___ Nav Main items ____________________*/
     $nav_main_item_home         = 'Home';
@@ -46,7 +49,9 @@ if($gettext_idioma == 'en_GB'){
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
 //    $nav_main_item_PAGEID       = 'TituloEnIngles_id';
     
-/*___ Descripcion global ________________*/ 
+/*___ Descripcion global _ ~ 160 char ___*/
+// ·_______________________________________________________________________________________________________________________________________________________________________·
+// 123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789
     $page_desc_global       = '';
 
 
@@ -62,7 +67,7 @@ if($gettext_idioma == 'en_GB'){
     $page_title_home_contacto   = 'sinTraduccion';     
     $page_title_home_gracias    = 'sinTraduccion';
     $page_title_home_copyright  = 'sinTraduccion';   
-//    $page_title_PAGEINT_redirect  = 'redirect';
+//    $page_title_redirect  = 'redirect';
     
 /*___ Nav Main items ____________________*/
     $nav_main_item_home         = 'Home';
@@ -72,7 +77,9 @@ if($gettext_idioma == 'en_GB'){
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
 //    $nav_main_item_PAGEID       = 'sinTraduccion_id';
     
-/*___ Descripcion global ________________*/ 
+/*___ Descripcion global _ ~ 160 char ___*/
+// ·_______________________________________________________________________________________________________________________________________________________________________·
+// 123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789
     $page_desc_global        = 'sinTraduccion';
 
 
@@ -88,7 +95,7 @@ if($gettext_idioma == 'en_GB'){
     $page_title_home_contacto   = 'Contacto';    
     $page_title_home_gracias    = 'Gracias';
     $page_title_home_copyright  = 'Licencia';    
-//    $page_title_PAGEINT_redirect  = 'redirect';
+//    $page_title_redirect  = 'redirect';
     
 /*___ Nav Main items ____________________*/
     $nav_main_item_home         = 'Home';
@@ -98,7 +105,9 @@ if($gettext_idioma == 'en_GB'){
 //    $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
 //    $nav_main_item_PAGEID       = 'TituloEnCastellano_id';
     
-/*___ Descripcion global ________________*/ 
+/*___ Descripcion global _ ~ 160 char ___*/
+// ·_______________________________________________________________________________________________________________________________________________________________________·
+// 123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789-123456789
     $page_desc_global       = '';
 }
 

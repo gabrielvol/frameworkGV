@@ -6,9 +6,12 @@
     $page_int               = 1; 
     $nav_pageCurrent        = 'page_gracias'; 
     $nav_pageCurrent_int    = 'page_gracias_home';
-// Si se activa `$nav_pageCurrent_id` hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php`
-//    $nav_pageCurrent_id     = 'page_gracias_id';
     
+// Si se activa `$nav_pageCurrent_id`
+// 1. Hay que asignar los títulos en `/var/page.gracias.var.inc.php`
+//    $nav_pageCurrent_id     = 'page_gracias_ID';
+
+// 2. Las siguientes variables se declaran en `/var/page.gracias.var.inc.php`
     $page_construccion      = 0;
     $page_redirect          = 0;
 
@@ -17,21 +20,26 @@
     $has_pop_video          = 0;
     $has_scrolling          = 1;
     $has_slider             = 0;
-//    $has-CUSTOMVARIABLE     = 1;   
-//    $lang_GB                = 1; 
+//    $has-CUSTOMVARIABLE     = 0;
+//    $lang_GB                = 1;
 
-// Si se activa `$nav_pageCurrent_id`:
-//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.PAGEINT.var.inc.php');
+// 3. Se incluye el archivo de variables
+//    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.gracias.var.inc.php');
     
     $page_main_classes      = '';
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
     $page_url_full          = $url_gracias_full;
+
+// 4. Se comenta la siguiente variable `$page_title`
+    $page_title             = $page_title_home_gracias . " | " . $site_name_title;
     
-    $page_title             = $page_title_home_gracias . " | " . $site_name_title;    
-// Si se activa `$nav_pageCurrent_id` la variable `$page_title` se construye de la siguiente forma:
-//    $page_title             = $page_title_id ." | ". $page_title_home_gracias ." | " . $site_name_title;    
+// 5. La nueva variable `$page_title` se construye de la siguiente forma:
+// $page_title_home_gracias se declara en `/var/meta.titlesDesc.var.inc.php`
+// $page_title_id se declara en `/var/page.gracias.var.inc.php`
+// 
+//   $page_title             = $page_title_id . " | " . $page_title_home_gracias . " | " . $site_name_title;    
     $page_desc              = $page_desc_global;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');   

@@ -4,11 +4,10 @@
 //    $page_var               = $_GET['page_var'];
     
     $page_int      = 1;
-    $nav_pageCurrent        = '';
-    $nav_pageCurrent_int    = '';
-// Si se activa `$nav_pageCurrent_id` hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php`
-//    $nav_pageCurrent_id     = 'page_PAGEINT_ID';
-    
+    $nav_pageCurrent        = 'page_redirect';
+    $nav_pageCurrent_int    = 'page_redirect_home';
+//    $nav_pageCurrent_id     = 'page_redirect_ID';
+
     $page_construccion      = 0;
     $page_redirect          = 1;
     
@@ -20,12 +19,13 @@
 //    $has-CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
     
+    $page_main_classes      = '';    
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
-    $page_url_full          = $url_PAGEINT_full;    
+    $page_url_full          = $url_redirect_full;    
 
-    $page_title             = $page_title_PAGEINT_redirect . " | " . $site_name_title;   
+    $page_title             = $page_title_redirect . " | " . $site_name_title;   
     $page_desc              = $page_desc_global;
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');
