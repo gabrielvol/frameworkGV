@@ -67,7 +67,26 @@ ol{
             content: "- ";
         }
     }
-}    
+}   
+
+.list_commas{
+    li{        
+        position: relative;
+        display: inline;
+
+        &::after{
+            content: ",";
+            display: inline;
+            white-space: pre;
+        }
+
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+}     
 
 .list_numbered{    
     counter-reset: list_numbered_counter;
