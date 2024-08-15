@@ -14,22 +14,30 @@ require 'PHPMailer/src/SMTP.php';
 /* // Inicia proceso de form ------------------------------------------------ */
 if (isset($_POST['button_form_submit__formMain'])){
 
-/* // INICIA VALIDACIÓN en .form_validation_span ---------------------------- */
-    if (empty($_POST["data_nombre__formMain"])) {
+/* // Asignamos datos de campos a variables ____________________________*/
+        $data_nombre__formMain          = $_POST['data_nombre__formMain'];
+        $data_email__formMain           = $_POST['data_email__formMain'];
+        $data_telefono__formMain        = $_POST['data_telefono__formMain'];
+        $data_mensaje__formMain         = $_POST['data_mensaje__formMain'];
+        
+        
+
+/* // INICIA VALIDACIÓN en .form_validation_span ---------------------------- */    
+    if(!isset($data_nombre__formMain) || trim($data_nombre__formMain) == ''){
         $form_validation_span_msg_data_nombre__formMain         = $form_validation_msg_data_nombre__formMain;
         $form_validation_span_msg_data_nombre_en__formMain      = $form_validation_msg_data_nombre_en__formMain;
         $form_validation_span_class_data_nombre__formMain       = " form_validation_span_active";
         $form_validation_input_class_data_nombre__formMain      = " form_validation_input_invalid";
         $form_input_autofocus_data_nombre__formMain             = "autofocus";
 
-    } elseif (empty($_POST["data_email__formMain"])) {
+    } elseif(!isset($data_email__formMain) || trim($data_email__formMain) == ''){
         $form_validation_span_msg_data_email__formMain          = $form_validation_msg_data_email__formMain;
         $form_validation_span_msg_data_email_en__formMain       = $form_validation_msg_data_email_en__formMain;
         $form_validation_span_class_data_email__formMain        = " form_validation_span_active";
         $form_validation_input_class_data_email__formMain       = " form_validation_input_invalid";
         $form_input_autofocus_data_email__formMain              = "autofocus";
 
-    } elseif (empty($_POST["data_telefono__formMain"])) {
+    } elseif(!isset($data_telefono__formMain) || trim($data_telefono__formMain) == ''){
         $form_validation_span_msg_data_telefono__formMain       = $form_validation_msg_data_telefono__formMain;
         $form_validation_span_msg_data_telefono_en__formMain    = $form_validation_msg_data_telefono_en__formMain;
         $form_validation_span_class_data_telefono__formMain     = " form_validation_span_active";
@@ -39,12 +47,8 @@ if (isset($_POST['button_form_submit__formMain'])){
     } else {
 /* // FIN de validacion en .form_validation_span ---------------------------- */
 
-    /*___ Asignamos datos de campos a variables ____________________________*/
-        $data_nombre__formMain          = $_POST['data_nombre__formMain'];
-        $data_email__formMain           = $_POST['data_email__formMain'];
-        $data_telefono__formMain        = $_POST['data_telefono__formMain'];
-        $data_mensaje__formMain         = $_POST['data_mensaje__formMain'];
-    
+
+        
 /*___ Inicia $mail __________________________________________________________ */
         $mail = new PHPMailer(true);
         try {

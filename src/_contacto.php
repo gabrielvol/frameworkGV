@@ -30,7 +30,7 @@
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php'); 
     
-    $form_var               = $_GET['consulta'];  // REF [45]
+    // $form_var               = $_GET['consulta'];  // REF [45]
     $page_url_full          = $url_contacto_full;
 
 // 4. Se comenta la siguiente variable `$page_title`

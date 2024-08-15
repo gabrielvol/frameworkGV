@@ -12,14 +12,12 @@ try {
     $mail->SMTPDebug = 2;  // Sacar esta línea para no mostrar salida debug
     $mail->SMTPDebug = SMTP::DEBUG_CONNECTION; 
     $mail->isSMTP();
-    #$mail->Host = 'localhost';  // Host de conexión SMTP
-    $mail->Host = 'smtp.sitiowebcom';  // Host de conexión SMTP
+    $mail->Host = 'claudiayelin.com';  // Host de conexión SMTP
     $mail->SMTPAuth = true;
-    $mail->Username = 'form@sitiowebcom';
-    $mail->Password = 'contrasena';
+    $mail->Username = 'form@claudiayelin.com';
+    $mail->Password = '***';
 
 /*___ Activar seguridad TLS _*/
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->SMTPSecure = 'ssl';
 /*___ Puerto SMTP _*/
     $mail->Port = 465;
@@ -32,11 +30,11 @@ try {
 /*___ Descomentar si se requiere desactivar completamente TLS (sin cifrado) _*/
     #$mail->SMTPAutoTLS = false;
  
-    $mail->setFrom('form@sitiowebcom');		// Mail del remitente
-    $mail->addAddress('gabrielvol@protonmail.com');     // Mail del destinatario
+    $mail->setFrom('form@claudiayelin.com');		// Mail del remitente
+    $mail->addAddress('tampas@gmail.com');     // Mail del destinatario
  
     $mail->isHTML(true);
-    $mail->Subject = 'Contacto PHPMailer 6.8';  // Asunto del mensaje
+    $mail->Subject = 'Contacto desde formulario Claudia Yelin 02';  // Asunto del mensaje
     $mail->Body    = 'Este es el contenido del mensaje <b>en negrita!</b>';    // Contenido del mensaje (acepta HTML)
     $mail->AltBody = 'Este es el contenido del mensaje en texto plano';    // Contenido del mensaje alternativo (texto plano)
  

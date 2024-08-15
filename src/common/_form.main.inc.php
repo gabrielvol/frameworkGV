@@ -8,11 +8,13 @@
             include('form.main.status.es.inc.php');
         }
         
-        include('form.main.send.inc.php');        
+        include('form.main.send.mail.inc.php');        
+        include('form.main.send.PHPMailer.inc.php');
 
-        // echo $form_status__formMain;
+        /* echo $form_status__formMain; */        
         echo $form_status_pop__formMain;
-        // echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>';               
+        
+        /* echo '<div class="form_validation_div '. $form_validation_div_class__formMain .'">'. $form_validation_div_msg__formMain .'</div>'; */              
     ?>
     
     <?php if (!empty($form_hidden_variable__formMain)): ?>
