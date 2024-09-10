@@ -9,16 +9,16 @@ $(document).ready(function () {
         
         ,dots: true
         ,arrows: false
-        ,fade: true // Si se ve mas de un slide a la vez fade debe ser false.
+        ,fade: true // Si `slidesToShow` > 1 `fade` debe ser false.
         
         ,pauseOnHover: false
         ,pauseOnFocus: false
-        ,swipeToSlide: true // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
+        ,swipeToSlide: true // Si `slidesToScroll` > 1 `swipeToSlide` debe ser false.
         ,focusOnSelect: true
 
         ,initialSlide: 0
-        ,slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
-        ,slidesToScroll: 3 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
+        ,slidesToShow: 3 // Si `slidesToShow` > 1 `fade` debe ser false.
+        ,slidesToScroll: 3 // Si `slidesToScroll` > 1 `swipeToSlide` debe ser false.
         ,lazyLoad: 'ondemand'
 
         ,autoplay: true
@@ -38,30 +38,31 @@ $(document).ready(function () {
 // que se ve dentro de `[breakpoint: 500]` se aplica de 0 a 499.
 // 
 // La configuracion de un breakpoint se aplica a los breakpoint menores.
-// 1025 para que corresponda con el media query beforeMQ1024
-// 601 para que corresponda con el media query beforeMQ600
+// `{breakpoint: 1025}` para que corresponda con el media query beforeMQ1024
+// `{breakpoint: 601}` para que corresponda con el media query beforeMQ600
+            {breakpoint: 1200,
             {breakpoint: 1025,
                 settings: {
-                     slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
-                    ,slidesToScroll: 3 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
+                     slidesToShow: 3 // Si `slidesToShow` > 1 `fade` debe ser false.
+                    ,slidesToScroll: 3 // Si `slidesToScroll` > 1 `swipeToSlide` debe ser false.
                     ,infinite: true
                 }                
             }
             ,{breakpoint: 768,
                 settings: {
-                     slidesToShow: 3 // Si se ve mas de un slide a la vez fade debe ser false.
-                    ,slidesToScroll: 1 // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
+                     slidesToShow: 3 // Si `slidesToShow` > 1 `fade` debe ser false.
+                    ,slidesToScroll: 1 // Si `slidesToScroll` > 1 `swipeToSlide` debe ser false.
                 }
             }
             ,{breakpoint: 601,
                 settings: {
-                     slidesToShow: 2 // Si se ve mas de un slide a la vez fade debe ser false.
+                     slidesToShow: 2 // Si `slidesToShow` > 1 `fade` debe ser false.
                     ,dots: true
                 }
             }
             ,{breakpoint: 500, 
                 settings: {
-                     slidesToShow: 1 // Si se ve mas de un slide a la vez fade debe ser false.
+                     slidesToShow: 1 // Si `slidesToShow` > 1 `fade` debe ser false.
                 }
             }
         ]
@@ -74,14 +75,14 @@ $(document).ready(function () {
         infinite: false,
         dots: false,
         arrows: false,            
-        fade: true, // Si se ve mas de un slide a la vez fade debe ser false.
+        fade: true, // Si `slidesToShow` > 1 `fade` debe ser false.
         pauseOnHover: false,
         pauseOnFocus: false,
-        swipeToSlide: true, // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
+        swipeToSlide: true, // Si `slidesToScroll` > 1 `swipeToSlide` debe ser false.
         slide: 'li',
 
-        slidesToShow: 1, // Si se ve mas de un slide a la vez fade debe ser false.
-        slidesToScroll: 1, // Si se scrollea mas de un slide a la vez swipeToSlide debe ser false.
+        slidesToShow: 1, // Si `slidesToShow` > 1 `fade` debe ser false.
+        slidesToScroll: 1, // Si `slidesToScroll` > 1 `swipeToSlide` debe ser false.
 
         autoplay: true,
         autoplaySpeed: 3000,

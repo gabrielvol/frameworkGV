@@ -15,10 +15,14 @@ $domain_main        = 'sitiocomar';
 
 $domain_sub_SUBDOMAIN = 'SUBDOMAIN' . '.';
 
-$domain_wip         = $domain_main; // 'sitiocomar';
+$domain_wip         = $domain_main;
 
 $domain_sec         = 'sitiocomar';
 
 $domain_custom      = 'sitiocomar';
+
+/*
+$domain_wip         = 'sitiocomar';
+*/
 
 ?>
