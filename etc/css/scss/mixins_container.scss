@@ -1,9 +1,30 @@
 /* * NombreDeProyecto * ========================================================
-   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   Mixins Container | Etc [/etc/css/scss/mixins_container.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de variables scss.
+// Listado de mixins:
+//
+// 01 _ containerMAX_settings // REF [38*] ContainerMAX width
+
+// Este mixin es usado en el archivo `[/etc/css/scss/settings_container.scss]`
+// para imprimir los estilos correspondientes a la clases
+// `.containerA1100`
+// `.containerA1200`
+// `.containerA1300`
+// `.containerA1400`
+// `.containerA1500`
+// de acuerdo al valor declarado en la variable `$containerMAX_value`
+// del archivo `[/etc/css/custom/var/container_sizes_var.scss]` 
+//
+// Ej. con 1300:
+// @media (min-width: 1301px) {
+//   .container {
+//     box-sizing: border-box;
+//     padding-right: 30px;
+//     padding-left: 30px;
+//   }
+//  }
 
 
 
@@ -46,34 +67,9 @@
 
 
 
-$zero: 0!important;
-$auto: auto!important;
-$none: none!important;
-
-/* // Widths ---------------------------------------------------------------- */
-$hundred:   100%!important;
-$sixth:     calc(100% / 6)!important;
-$fifth:     20%!important;
-$fourth:    25%!important;
-$third:     calc(100% / 3)!important;
-$thirdSafe: 33.2%!important;
-$half:      50%!important;
-$twoThirds: calc(calc(100% / 3) * 2)!important;
-
-/* // Colours --------------------------------------------------------------- */
-$transparent: transparent!important;
-
-/* // Positions ------------------------------------------------------------- */
-$left: left!important;
-$right: right!important;
-
-/* // Display --------------------------------------------------------------- */
-$block: block!important;
-$inline: inline!important;
-$inlineBlock: inline-block!important;
-
-/* // .mha placeholder ------------------------------------------------------ */
-%mha{
-    margin-right: $auto;
-    margin-left: $auto;    
+/* // REF [38*] Mixin para container max ------------------------------------ */
+@mixin containerMAX_settings(){
+    box-sizing: border-box;
+    padding-right: $container_max_width_PR;
+    padding-left: $container_max_width_PL;
 }

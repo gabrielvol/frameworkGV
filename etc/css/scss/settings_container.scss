@@ -5,14 +5,15 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
-// REF [38*]
-// Si se modifica el ancho maximo del container hay que correr las clases:
+// REF [38*] ContainerMAX width
+// En la variable `$containerMAX_value` del archivo
+// `[/etc/css/custom/var/container_sizes_var.scss]` se declara el ancho maximo
+// de container a partir del cual deja de crecer en ancho
 //
-// box-sizing: border-box;
-// padding-right: $container_max_width_PR;
-// padding-left: $container_max_width_PL;
+// Minimo 1100 / 1200 / 1300 / 1400 / Maximo 1500
 //
-// A su nuevo container en todos los media queries
+// Este valor luego se evalua para imprmir el mixin `containerMAX_settings`
+// que se encuentra en `[/etc/css/scss/mixins_container.scss]`
 
 
 
@@ -59,21 +60,30 @@
 .containerB500,
 .containerA500,
 .container500O,
+
 .containerB600,
 .containerA600,
+
 .containerB650,
 .containerA650,
+
 .containerB768,
 .containerA768,
 .containerA768B1024,
+
 .containerB1024,
 .containerA1024,
 .containerA1024B1200,
+
 .containerB1200,
 .containerA1200,
+
 .containerA1300,
+
 .containerA1400,
+
 .containerA1500,
+
 .containerA1600{
     padding: 0;
     margin-right: auto;
@@ -133,21 +143,47 @@
     @include afterMQ1100{
         max-width: $container_value_max_A1100;
     }
+    @if $containerMAX_value < 1101{
+        @include afterMQ1100{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
     @include afterMQ1200{
         max-width: $container_value_max_A1200;
+    }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
     }
     @include afterMQ1300{
         max-width: $container_value_max_A1300;
     }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
     @include afterMQ1400{
         max-width: $container_value_max_A1400;
     }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
     @include afterMQ1500{
         max-width: $container_value_max_A1500;
-        // REF [38*] Container max width
-        box-sizing: border-box;
-        padding-right: $container_max_width_PR;
-        padding-left: $container_max_width_PL;
+    }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
     }
     @include afterMQ1600{
         max-width: $container_value_max_A1600;
@@ -589,34 +625,60 @@
                 margin-left: $container_value_max_half_negative_A1100;
             }
         }
+    @if $containerMAX_value < 1101{
+        @include afterMQ1100{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A500{
                 margin-left: $container_value_max_half_negative_A1200;
             }
         }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1300{
             max-width: $container_value_max_A1300;
             &.container_centered_absolute_A500{
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
-            max-width: $container_value_max_A1400;
+            max-width: $container_value_max_A1400;  
             &.container_centered_absolute_A500{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
-            max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
+            max-width: $container_value_max_A1500;         
             &.container_centered_absolute_A500{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A500{
@@ -694,34 +756,60 @@
                 margin-left: $container_value_max_half_negative_A1100;
             }
         }
+    @if $containerMAX_value < 1101{
+        @include afterMQ1100{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A600{
                 margin-left: $container_value_max_half_negative_A1200;
             }
         }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1300{
             max-width: $container_value_max_A1300;
             &.container_centered_absolute_A600{
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
             max-width: $container_value_max_A1400;
             &.container_centered_absolute_A600{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A600{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A600{
@@ -771,34 +859,60 @@
                 margin-left: $container_value_max_half_negative_A1100;
             }
         }
+    @if $containerMAX_value < 1101{
+        @include afterMQ1100{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A650{
                 margin-left: $container_value_max_half_negative_A1200;
             }
         }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1300{
             max-width: $container_value_max_A1300;
             &.container_centered_absolute_A650{
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
             max-width: $container_value_max_A1400;
             &.container_centered_absolute_A650{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A650{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A650{
@@ -876,34 +990,60 @@
                 margin-left: $container_value_max_half_negative_A1100;
             }
         }
+    @if $containerMAX_value < 1101{
+        @include afterMQ1100{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A768{
                 margin-left: $container_value_max_half_negative_A1200;
             }
         }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1300{
             max-width: $container_value_max_A1300;
             &.container_centered_absolute_A768{
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
             max-width: $container_value_max_A1400;
             &.container_centered_absolute_A768{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A768{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A768{
@@ -960,34 +1100,60 @@
                 margin-left: $container_value_max_half_negative_A1100;
             }
         }
+    @if $containerMAX_value < 1101{
+        @include afterMQ1100{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1200{
             max-width: $container_value_max_A1200;
             &.container_centered_absolute_A1024{
                 margin-left: $container_value_max_half_negative_A1200;
             }
         }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1300{
             max-width: $container_value_max_A1300;
             &.container_centered_absolute_A1024{
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
             max-width: $container_value_max_A1400;
             &.container_centered_absolute_A1024{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A1024{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A1024{
@@ -1049,28 +1215,48 @@
                 margin-left: $container_value_max_half_negative_A1200;
             }
         }
+    @if $containerMAX_value > 1101 and $containerMAX_value < 1201{
+        @include afterMQ1200{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1300{
             max-width: $container_value_max_A1300;
             &.container_centered_absolute_A1200{
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
             max-width: $container_value_max_A1400;
             &.container_centered_absolute_A1200{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A1200{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A1200{
@@ -1090,22 +1276,36 @@
                 margin-left: $container_value_max_half_negative_A1300;
             }
         }
+    @if $containerMAX_value > 1201 and $containerMAX_value < 1301{
+        @include afterMQ1300{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1400{
             max-width: $container_value_max_A1400;
             &.container_centered_absolute_A1300{
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A1300{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A1300{
@@ -1125,16 +1325,24 @@
                 margin-left: $container_value_max_half_negative_A1400;
             }
         }
+    @if $containerMAX_value > 1301 and $containerMAX_value < 1401{
+        @include afterMQ1400{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1500{
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A1400{
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A1400{
@@ -1148,16 +1356,18 @@
         @include afterMQ1500{
             width: 100%;
             max-width: $container_value_max_A1500;
-            // REF [38*] Container max width
-            box-sizing: border-box;
-            padding-right: $container_max_width_PR;
-            padding-left: $container_max_width_PL;
             &.container_centered_absolute_A1500{
                 position: absolute;
                 left: 50%;   
                 margin-left: $container_value_max_half_negative_A1500;
             }
         }
+    @if $containerMAX_value > 1401 and $containerMAX_value < 1501{
+        @include afterMQ1500{
+            // REF [38*] ContainerMAX width
+            @include containerMAX_settings(); 
+        }
+    }
         @include afterMQ1600{
             max-width: $container_value_max_A1600;
             &.container_centered_absolute_A1500{

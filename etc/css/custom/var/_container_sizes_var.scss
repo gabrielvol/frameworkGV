@@ -5,6 +5,15 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
+// REF [38*] ContainerMAX width
+// En la variable `$containerMAX_value` se declara el ancho maximo de container
+// a partir del cual deja de crecer en ancho
+//
+// Minimo 1100 / 1200 / 1300 / 1400 / Maximo 1500
+//
+// Este valor luego debe ser modificado en el archivo
+// `[/src/var/class.var.inc.php]` declarado en la variable `$class_end_main`
+
 
 
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -54,21 +63,22 @@ $container_value_A350:               90%;
 $container_value_B500:               90%;
 $container_value_A500:               90%;
 $container_value_B600:               85%;
-$container_value_B650:               85%;
 $container_value_A600:               85%;
+$container_value_B650:               85%;
 $container_value_A650:               85%;
 $container_value_max_A768:           720px;
 $container_value_max_A850:           750px;
 $container_value_max_A900:           800px;
 $container_value_max_A1024:          900px;
-$container_value_max_A1100:          1000px;
-$container_value_max_A1200:          1100px;
-$container_value_max_A1300:          $container_value_max_A1200;
-$container_value_max_A1400:          1300px;
+$container_value_max_A1100:          1050px;
+$container_value_max_A1200:          1150px;
+$container_value_max_A1300:          1250px;
+$container_value_max_A1400:          1350px;
 $container_value_max_A1500:          $container_value_max_A1400;
 $container_value_max_A1600:          $container_value_max_A1500;
 
-// REF [38*] Container max width settings
+// REF [38*] ContainerMAX width
+$containerMAX_value:                1400px;
 $container_max_width_PR:            30px;
 $container_max_width_PL:            $container_max_width_PR;
 $container_max_width_PH:            calc(#{$container_max_width_PR} + #{$container_max_width_PL});

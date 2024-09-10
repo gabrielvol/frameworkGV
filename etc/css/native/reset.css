@@ -1422,7 +1422,7 @@ ol {
   .containerA1400,
   .containerA1500 {
     max-width: var(--container_value_max_A1500);
-    /* REF [38] Container max width */
+    /* // REF [38*] ContainerMAX width */
     box-sizing: border-box;
     padding-right: var(--container_max_width_PR);
     padding-left: var(--container_max_width_PL);

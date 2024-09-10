@@ -18,13 +18,15 @@
 @import "act/page_index_act";
 @import "act/page_section_act";
 
-/* // Variables ------------------------------------------------------------- */
+/* // Variables / Mixins ---------------------------------------------------- */
 @import "../scss/var_fonts";
 @import "../scss/var_absolute";
+@import "../scss/mixins_clearfix";
 @import "var/zindex_var";
 @import "var/container_sizes_var";
 @import "../scss/var_container";
 @import "var/helpers_var";
+@import "../scss/mixins_container";
  
 @import "var/colours_main_var";
 @import "var/colours_borders_var";

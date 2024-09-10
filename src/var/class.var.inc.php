@@ -8,6 +8,25 @@
 //
 // #php #variables #header #main #footer #class
 
+// REF [38*] ContainerMAX width
+// En la variable `$class_end_main` se declara el ancho maximo de container
+// a partir del cual deja de crecer en ancho
+//
+// Minimo `.containerA1100`
+// `.containerA1200`
+// `.containerA1300`
+// `.containerA1400`
+// Maximo `.containerA1500`
+//
+// Este valor luego debe ser modificado en el archivo
+// `[/etc/css/custom/var/container_sizes_var.scss]`
+// declarado en la variable `$containerMAX_value`
+//
+// Y debe activarse la variable correspondiente en
+// `[/etc/css/custom/act/classes_useful_act.scss]`
+
+
+
 /* // Model -----------------------------------------------------------------
     $class_ini_SECTION      = '';
 
@@ -112,7 +131,7 @@ if(!empty($nav_pageCurrent_id)):
     $class_ini_main         .= $nav_pageCurrent_id . ' '; endif; 
     
 //----- Finals
-    $class_end_main         = 'containerA1600 '; // REF [38*]
+    $class_end_main         = 'containerA1400 '; // REF [38*]
 
 if(!empty($page_construccion)):
     $class_end_main         .= 'page_construccion '; endif; 
