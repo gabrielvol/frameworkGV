@@ -48,7 +48,7 @@
 <body id="body">
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
-        <div class="container">
+        <div class="container container_construccion">
             <h1><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
             <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de esta p&aacute;gina'); ?>.</p>
             <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.error.p.inc.php'); ?>

@@ -35,9 +35,9 @@ $site_tel_XXXX_formatted          = $tel_prefix_formatted . ' ' . $site_tel_XXXX
 
 $site_tel_XXXX_whatsapp           = $tel_prefix_whatsapp . $site_tel_XXXX;
 $site_tel_XXXX_whatsapp_formatted = '+' . $tel_code_country . ' ' . $tel_code_area_int . ' ' . $site_tel_XXXX_a . ' ' . $site_tel_XXXX_b;
-$site_tel_XXXX_whatsapp_chatOpen  = 'https://wa.me/' . $site_tel_XXXX_whatsapp . '?text=Hola,%20me%20interesa%20la%20propuesta!';
-$site_tel_XXXX_whatsapp_chatOpen_api = 'https://api.whatsapp.com/send?phone=' . $site_tel_XXXX_whatsapp . '?text=Hola,%20me%20interesa%20la%20propuesta!';
-$site_tel_XXXX_whatsapp_chatOpen_web = 'https://web.whatsapp.com/send?phone=' . $site_tel_XXXX_whatsapp . '?text=Hola,%20me%20interesa%20la%20propuesta!';
+$site_tel_XXXX_whatsapp_chatOpen  = 'https://wa.me/' . $site_tel_XXXX_whatsapp . '?text=Hola,%20quiero%20hacer%20una%20consulta!';
+$site_tel_XXXX_whatsapp_chatOpen_api = 'https://api.whatsapp.com/send?phone=' . $site_tel_XXXX_whatsapp . '?text=Hola,%20quiero%20hacer%20una%20consulta!';
+$site_tel_XXXX_whatsapp_chatOpen_web = 'https://web.whatsapp.com/send?phone=' . $site_tel_XXXX_whatsapp . '?text=Hola,%20quiero%20hacer%20una%20consulta!';
 
 $site_tel_XXXX_call               = 'tel:+' . $tel_prefix_call . $site_tel_XXXX;
 $site_tel_XXXX_call_href          = 'href="tel:+' . $tel_prefix_call . $site_tel_XXXX . '"';
@@ -55,7 +55,7 @@ $site_tel_YYYY_formatted             = $tel_prefix_formatted . ' ' . $site_tel_Y
 $site_tel_YYYY_whatsapp              = $tel_prefix_whatsapp . $site_tel_YYYY;
 $site_tel_YYYY_whatsapp_formatted    = '+' . $tel_code_country . ' ' . $tel_code_area_int . $site_tel_YYYY_a . ' ' . $site_tel_YYYY_b;
 $site_tel_YYYY_whatsapp_chatOpen     = 'https://api.whatsapp.com/send?phone=' . $site_tel_YYYY_whatsapp;
-$site_tel_YYYY_whatsapp_WAme         = 'https://wa.me/' . $site_tel_YYYY_whatsapp . '?text=Hola,%20me%20interesa%20la%20propuesta!';
+$site_tel_YYYY_whatsapp_WAme         = 'https://wa.me/' . $site_tel_YYYY_whatsapp . '?text=Hola,%20quiero%20hacer%20una%20consulta!';
         
 $site_tel_YYYY_call                  = 'tel:+' . $tel_prefix_call . $site_tel_YYYY;
 $site_tel_YYYY_call_href             = 'href="tel:+' . $tel_prefix_call . $site_tel_YYYY . '"';
@@ -74,7 +74,7 @@ $site_tel_ZZZZ_formatted          = $tel_prefix_formatted_ER . ' ' . $site_tel_Z
 $site_tel_ZZZZ_whatsapp           = $tel_prefix_whatsapp_ER . $site_tel_ZZZZ;
 $site_tel_ZZZZ_whatsapp_formatted = '+' . $tel_code_country . ' ' . $tel_code_area_int_ER . ' ' . $site_tel_ZZZZ_a . ' ' . $site_tel_ZZZZ_b;
 $site_tel_ZZZZ_whatsapp_chatOpen  = 'https://api.whatsapp.com/send?phone=' . $site_tel_ZZZZ_whatsapp;
-$site_tel_ZZZZ_whatsapp_WAme      = 'https://wa.me/' . $site_tel_ZZZZ_whatsapp . '?text=Hola,%20me%20interesa%20la%20propuesta!';
+$site_tel_ZZZZ_whatsapp_WAme      = 'https://wa.me/' . $site_tel_ZZZZ_whatsapp . '?text=Hola,%20quiero%20hacer%20una%20consulta!';
         
 $site_tel_ZZZZ_call               = 'tel:+' . $tel_prefix_call . $site_tel_ZZZZ;
 $site_tel_ZZZZ_call_href          = 'href="tel:+' . $tel_prefix_call . $site_tel_ZZZZ . '"';

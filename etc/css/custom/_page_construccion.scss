@@ -5,38 +5,77 @@
     min-height: 400px;
     padding-bottom: 50px;
     
-    h1{
-        margin-bottom: 15px;
-        color: $black;
-        font-family: $arial;
-        font-size: 2rem;
-        line-height: 1.1em;
-        text-align: center;
-        
-        & + p{
-            background-image: url('#{$dir_env}/img/img_construccion.jpg');
-            background-size: calc(#{$construccion_p_PT} - 30px);
-            background-repeat: no-repeat;
-            background-position: center top 20px;
-            padding-top: $construccion_p_PT;
-        }
-    }
-     
-    p{
-        font-size: 1rem;
-        text-align: center;
-        
-        & + p{
-            margin-top: 0px;
-        }
-        
-        a{
-            &, &:active, &:visited{
-                color: $greyD;
+    .container_construccion{
+        padding-bottom: 50px;
+    
+        h1{
+            margin-bottom: 15px;
+            color: $black;
+            font-family: $arial;
+            font-size: 2rem;
+            line-height: 1.1em;
+            text-align: center;
+
+            & + p{
+                background-image: url('#{$dir_env}/img/img_construccion.jpg');
+                background-repeat: no-repeat;
+                padding-top: $construccion_p_PT;
             }
-            
-            &:focus, &:focus-visible, &:hover{
-                color: $black;
+        }
+
+        p{
+            font-size: 1rem;
+            text-align: center;
+
+            & + p{
+                margin-top: 0px;
+            }
+
+            a{
+                &, &:active, &:visited{
+                    color: $greyD;
+                }
+
+                &:focus, &:focus-visible, &:hover{
+                    color: $black;
+                }
+            }
+        }
+
+        @include beforeMQ400{
+            h1{        
+                & + p{
+                    background-size: 70% auto;
+                }
+            }
+        }
+
+        @include afterMQ400{
+            h1{        
+                & + p{
+                    background-size: 50% auto;
+                }
+            }
+        }
+
+        @include beforeMQ600{
+            h1{
+                font-size: 1.6rem;
+
+                & + p{
+                    background-position: center top 20px;
+                }
+            }
+        }
+
+        @include afterMQ600{
+            h1{
+                font-size: 1.8rem;
+
+                & + p{
+                    background-size: auto calc(#{$construccion_p_PT} - 10px);
+                    background-position: center top 20px;
+                }
             }
         }
     }

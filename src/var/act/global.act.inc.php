@@ -19,6 +19,6 @@
 
 
 
-$topbar_hide_mobile         = 0; // REF [47]
+$topbar_hide_mobile         = 1; // REF [47]
 
 ?>

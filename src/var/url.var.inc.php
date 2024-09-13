@@ -48,11 +48,12 @@ $url_contacto       = $dir_env . '/contacto.php';
 //$url_gracias        = $dir_env . '/gracias.php';
 //$url_construccion   = $dir_env . '/construccion.php';
 //$url_copyright      = $dir_env . '/legal/copyright.php';
+$url_logo           = $url_root;
+
 // $url_PAGINA         = $dir_env . '/pagina.php';
 // $url_PAGINA         = $dir_env . '/pagina.php';
 // $url_PAGINA         = $dir_env . '/pagina.php';
 
-$url_logo           = $url_root;
 
 $url_top_hs         = $dir_env . '/' . $hash_top;
 $url_main_hs        = $dir_env . '/' . $hash_main;
@@ -72,7 +73,7 @@ $url_main_hs_HOME             = $url_home . $hash_main;
 // $url-SECCION-hs-PAGINA          = $url_PAGINA . $hash-SECCION;
 // $url-SECCION-hs-PAGINA          = $url_PAGINA . $hash-SECCION;
 
-/*___ urls con variable de idioma al final _*/
+/*___ urls con variable de idioma al final _
     $url_root           = $dir_env . '/' . $gettext_idioma_url;
     $url_index          = $dir_env . '/index.php' . $gettext_idioma_url;
     //$url_home         = $dir_env . '/home.php' . $gettext_idioma_url;
@@ -80,13 +81,14 @@ $url_main_hs_HOME             = $url_home . $hash_main;
     //$url_gracias        = $dir_env . '/gracias.php' . $gettext_idioma_url;
     //$url_construccion   = $dir_env . '/construccion.php' . $gettext_idioma_url;
     //$url_copyright      = $dir_env . '/legal/copyright.php' . $gettext_idioma_url;
-    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
-    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
-    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
-    
     $url_logo           = $url_root;
 
-/*___ urls para hashes __________________*/
+    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
+    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
+    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
+*/    
+
+/*___ urls para hashes __________________
     $url_main_hs        = $dir_env . '/' . $gettext_idioma_url . $hash_main;
     //$url_inicio_hs      = $dir_env . '/' . $gettext_idioma_url . $hash_inicio;
     //$url_contacto_hs    = $dir_env . '/' . $gettext_idioma_url . $hash_contacto;
@@ -100,16 +102,16 @@ $url_main_hs_HOME             = $url_home . $hash_main;
     // $url_PAGINA_hs_PAGINA_gettext   = $url_PAGINA . $hash_PAGINA;
     // $url_PAGINA_hs_PAGINA_gettext   = $url_PAGINA . $hash_PAGINA;
     // $url_PAGINA_hs_PAGINA_gettext   = $url_PAGINA . $hash_PAGINA;
+*/    
     
     
-    
-/* // url subdomain --------------------------------------------------------- */
+/* // url subdomain --------------------------------------------------------- 
 $url_root_SUBDOMAIN     = $url_subdomain_SUBDOMAIN_full;
 $url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
 // $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
 // $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
 // $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
-    
+*/    
 
     
 /* // full urls ------------------------------------------------------------- */
@@ -172,7 +174,7 @@ $href_contacto_noLink      = ($nav_pageCurrent_int == 'page_index_index') ? $hre
 // $href_PAGINA_noLink         = ($nav_pageCurrent == 'page_PAGINA') ? $href_SECCION_hs : $href_SECCION_hs_PAGINA;
 // $href_PAGINA_noLink         = ($nav_pageCurrent == 'page_PAGINA') ? $href_SECCION_hs : $href_SECCION_hs_PAGINA;
      
-/*___ href para hashes traducidas ________*/
+/*___ href para hashes traducidas ________
     $url_main_hs_full       = $url_wip . $url_main_hs;
     //$url_inicio_hs_full     = $url_wip . $url_inicio_hs;
     //$url_contacto_hs_full   = $url_wip . $url_contacto_hs;
@@ -186,14 +188,14 @@ $href_contacto_noLink      = ($nav_pageCurrent_int == 'page_index_index') ? $hre
     // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
     // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
     // $url_PAGINA_hs_PAGINA_full      = $url_wip . $url_PAGINA . $url_PAGINA;
-    
+*/    
 
     
-/* // href subdomain -------------------------------------------------------- */
+/* // href subdomain -------------------------------------------------------- 
 $href_root_SUBDOMAIN    = 'href="' . $url_root_SUBDOMAIN . '"'; 
 $href_logo_SUBDOMAIN    = $href_root_SUBDOMAIN;
 $href_index_SUBDOMAIN   = 'href="' . $url_index_SUBDOMAIN . '"';
-    
+*/    
 
 
 /* // misc / experimental --------------------------------------------------- */

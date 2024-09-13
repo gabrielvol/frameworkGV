@@ -9,6 +9,11 @@
 
 $book_NOMBREDELIBRO_cite_quoted_reg_shy_nocomma
 
+$book_NOMBREDELIBRO_phrase_AA = '';
+$book_NOMBREDELIBRO_phrase_BB = '';
+$book_NOMBREDELIBRO_phrase_AA_shy = ''; &shy
+$book_NOMBREDELIBRO_phrase_BB_shy = ''; &shy
+
 $book_NOMBREDELIBRO              = $book_NOMBREDELIBRO_phrase_AA . ', ' . $book_NOMBREDELIBRO_phrase_BB;
 $book_NOMBREDELIBRO_shy          = $book_NOMBREDELIBRO_phrase_AA_shy . ', ' . $book_NOMBREDELIBRO_phrase_BB_shy;
 
