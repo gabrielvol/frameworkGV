@@ -1,5 +1,6 @@
-@import "../scss/charset";
-@import "var/env_var";
+/* * NombreDeProyecto * ========================================================
+   CSS Styles Pre | Custom [/etc/css/custom/css_pre.scss]
+   ========================================================================== */
 
 /* // Activators ------------------------------------------------------------ */
 @import "act/classes_useful_act";
@@ -19,7 +20,6 @@
 @import "act/page_section_act";
 
 /* // Variables / Mixins ---------------------------------------------------- */
-@import "../scss/var_fonts";
 @import "../scss/var_absolute";
 @import "../scss/mixins_clearfix";
 @import "var/zindex_var";
@@ -33,8 +33,7 @@
 @import "var/colours_backgrounds_var";
 @import "var/shadows_var";
 
-@import "var/fonts_main_var";
-@import "var/text_var";
+@import "var/text_colours_var";
 
 @import "var/button_nav_hamburger_var";
 @import "var/logo_sizes_var";
@@ -64,9 +63,9 @@
 @import "var/tables_var";
 @import "var/tables_colours_var";
 
-@import "var/global_var";
 @import "var/mediaQueries_var";
 
+@import "var/global_var";
 @import "var/page_construccion_var";
 @import "var/page_index_var";
 //@import "var/section";
@@ -105,90 +104,3 @@
 /* // Functions ------------------------------------------------------------- */
 @import "../scss/functions_angledEdges";
 @import "../scss/functions_fontStroke";
-
-/* // Main CSS -------------------------------------------------------------- */
-@import "colours_placeholders";
-@import "colours_gradients";
-
-@import "../scss/settings_html_body";
-@import "body";
-@import "../scss/reset_main";
-@import "reset_custom";
-
-@import "fontFace";
-@import "../scss/settings_text";
-@import "text";
-@import "classes_text";
-
-@import "includes_backgrounds";
-@import "classes_backgrounds";
-@import "shadows";
-
-@import "../scss/classes_useful_all";
-@import "../scss/classes_useful_responsive";
-
-@import "../scss/settings_container";
-
-@import "print";
-
-@import "global";
-@import "lists";
-@import "buttons";
-@import "hover";
-@import "focus";
-//@import "scrollbar";
-//@import "breadcrumbs";
-//@import "iframe";
-
-//@import "animation";
-//@import "animation_index";
-
-@import "../scss/settings_form";
-@import "form";
-//@import "form_search";
-//@import "form_checkbox";
-
-//@import "../scss/settings_tables";
-//@import "tables";
-
-@import "popup";
-
-@import "header";
-//@import "social";
-@import "footer";
-
-@import "../scss/settings_nav";
-@import "../scss/settings_nav_drawer";
-@import "../scss/settings_nav_accordion";
-@import "nav_main_drawer";
-@import "nav_main_accordion";
-@import "nav_main_list";
-@import "nav_main_AT";
-@import "nav_main_ALL";
-//@import "nav_lang";
-//@import "nav_lang_square";
-
-//@import "slider";
-//@import "slider_nav";
-
-//@import "page_construccion";
-//@import "page_copyright";
-@import "page_error";
-@import "page_index";
-//@import "page_contacto";
-//@import "page_gracias";
-
-//@import "Section";
-//@import "Section";
-//@import "Section";
-//@import "page_ Section";
-//@import "page_ Section";
-//@import "page_ Section";
-//@import "page_xxx";
-//@import "page_xxx";
-//@import "page_xxx";
-
-/* // Post ------------------------------------------------------------------ */
-// REF [26]
-//@import "../scss/settings_lightbox";
-//@import "lightbox";

@@ -1,9 +1,9 @@
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
+   Font-face | Custom [/etc/css/custom/fontFace_zh.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Archivo de reglas-at, @font-face para fuentes
+// Archivo de reglas-at, @font-face para fuentes con alfabeto chino.
 
 
 
@@ -44,14 +44,21 @@
 
 
 
-/*
-.exampleFont{font-family: 'exampleFont';}
+// REF [14a]
 @font-face {
-    font-family: 'exampleFont';
-    src: url('#{$dir_env}/fonts/examplefont.woff2') format('woff2'),
-         url('#{$dir_env}/fonts/examplefont.woff') format('woff');
+    font-family: 'mingliuregular';
+    src: url('#{$dir_env}/fonts/mingliu-01-webfont.woff2') format('woff2'),
+         url('#{$dir_env}/fonts/mingliu-01-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
-*/
+
+@font-face {
+    font-family: 'pmingliuregular';
+    src: url('#{$dir_env}/fonts/pmingliu-02-webfont.woff2') format('woff2'),
+         url('#{$dir_env}/fonts/pmingliu-02-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

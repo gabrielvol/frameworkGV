@@ -4,7 +4,7 @@
 <?php if(isset($gettext_idioma) && $gettext_idioma == 'zh_CN'): /* // REF [14a] Idioma Chino ZH, MingLiu font */ ?>
 <link href="<?php echo $dir_env; ?>/css/styles_zh.css" rel="stylesheet">
 <?php else: ?>
-<link href="<?php echo $dir_env; ?>/css/styles.css" rel="stylesheet">
+<link href="<?php echo $dir_env; ?>/css/styles_main.css" rel="stylesheet">
 <?php endif; ?>
 
 <?php /* Alternate StyleSheets

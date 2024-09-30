@@ -36,7 +36,28 @@ $(document).ready(function () {
         if(e.keyCode == 13) {
             $("#search-btn").trigger("click");
         }
-    });
+    });         
+
+    $("#mail_validate").on("click", function(){
+        var email = $("#email").val();
+        
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        
+        if(email.match(validRegex)){
+            $.post("/save_mail/", {
+            email: email}, function(){
+                $("#mail_success").hide();
+                $("#selector").fadeIn();
+                $("#selector").show();
+
+                if(!$("input[name='inputName']:checked").val()){
+                    $("#selector").fadeIn();
+                    $("#selector").show();
+                }
+            });
+            
+        }else{ }
+    });    
     
     function comprobar_email($email){ 
   	$mail_correcto = 0; 

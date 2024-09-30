@@ -79,16 +79,7 @@ $colours_dark_map:(
 );
 $colours_dark_lightenValue: 20%;
 
-///**Colours Map Custom Hover:** 
-    ///Aquí se agregan los colores cuyas pseudo-clases `:focus` y `:hover` no están generadas automáticamente. Se creará una clase por cada color, eg.: `.black{color: #000}` con el mixin **colourCustomHoverClassesGenerator** `[/etc/scss/mixins_colours.scss]`. Generará las pseudo-clases `:active` y `:visited` con el mismo valor. Las pseudo-clases `:focus` y `:hover` deberán ser indicadas en su correspondiente placeholder en `[/etc/css/custom/scss/_coloursPlaceholders.scss]`.
-$colours_custom_hover_map:(    
-    orange: #ff6600
-);
-
-$colours_merged_map: map-merge(
-    map-merge($colours_light_map, $colours_dark_map),
-    $colours_custom_hover_map
-);
+$colours_merged_map: map-merge($colours_light_map, $colours_dark_map);
 
 $white:             #fff;
 $white_hover:       darken($white, 10%);

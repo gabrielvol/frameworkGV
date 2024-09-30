@@ -185,4 +185,3 @@ a.white{
 @include colourDarkClassesGenerator($colours_dark_lightenValue);
 @include anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_lightenValue);
 @include anchorColoursDarkClassesGenerator($colours_anchor_ftColours_dark_lightenValue);
-@include colourCustomHoverClassesGenerator;

@@ -1,6 +1,54 @@
 @charset "UTF-8";
 /* * NombreDeProyecto * ========================================================
+   CSS Styles Main | Custom [/etc/css/custom/styles_zh.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Sans Serif ------------------------------------------------------------ */
+/* // Serif ----------------------------------------------------------------- */
+/* // Monoespaciadas -------------------------------------------------------- */
+/* // Font Sizes ------------------------------------------------------------ */
+/* * NombreDeProyecto * ========================================================
+   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_zh_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Variables de fuentes -------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Text Variables | Custom [/etc/css/custom/var/text_zh_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Text Fonts ------------------------------------------------------------ */
+/* // Espaciado y cuerpo de texto ------------------------------------------- */
+/* // Headings -------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Font-face | Custom [/etc/css/custom/fontFace_zh.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+@font-face {
+  font-family: 'mingliuregular';
+  src: url("/stage/fonts/mingliu-01-webfont.woff2") format("woff2"), url("/stage/fonts/mingliu-01-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'pmingliuregular';
+  src: url("/stage/fonts/pmingliu-02-webfont.woff2") format("woff2"), url("/stage/fonts/pmingliu-02-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+/* * NombreDeProyecto * ========================================================
+   CSS Styles Pre | Custom [/etc/css/custom/css_pre.scss]
    ========================================================================== */
 /* // Activators ------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
@@ -12,11 +60,11 @@
 /* // All ------------------------------------------------------------------- */
 /* // Mobile Only MO -------------------------------------------------------- */
 /* // After Mobile Landscape AML -------------------------------------------- */
+/* // Mobile Landscape Only MLO --------------------------------------------- */
 /* // Before Mobile 600 ----------------------------------------------------- */
 /* // After Mobile 600 ------------------------------------------------------ */
 /* // Before Mobile 650 ----------------------------------------------------- */
 /* // After Mobile 650 ------------------------------------------------------ */
-/* // Mobile Landscape Only MLO --------------------------------------------- */
 /* // Before Tablet BT ------------------------------------------------------ */
 /* // Before Tablet Landscape BTL ------------------------------------------- */
 /* // Tablet Only TO -------------------------------------------------------- */
@@ -128,16 +176,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // 01 Page section Full height ------------------------------------------- */
-/* // Variables ------------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Sans Serif ------------------------------------------------------------ */
-/* // Serif ----------------------------------------------------------------- */
-/* // Monoespaciadas -------------------------------------------------------- */
-/* // Font Sizes ------------------------------------------------------------ */
+/* // Variables / Mixins ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
    ========================================================================== */
@@ -148,11 +187,17 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Positions ------------------------------------------------------------- */
 /* // Display --------------------------------------------------------------- */
 /* // .mha placeholder ------------------------------------------------------ */
-/* // Clearfix mixin -------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Mixin  Clearfix | Etc [/etc/css/scss/mixins_clearfix.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Clearfix -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Z Index Variables | Custom [/etc/css/custom/var/zindex_var.scss]
    ========================================================================== */
 /* // Negative -------------------------------------------------------------- */
+/* // 11 000 ---------------------------------------------------------------- */
 /* // 10 000 ---------------------------------------------------------------- */
 /*___ Lightbox __________________________*/
 /* // 9000 ------------------------------------------------------------------ */
@@ -186,17 +231,23 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Spacing --------------------------------------------------------------- */
 /* // Border Helpers Variables  --------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Mixins Container | Etc [/etc/css/scss/mixins_container.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // REF [38*] Mixin para container max ------------------------------------ */
+/* * NombreDeProyecto * ========================================================
    Colours Main Variables | Custom [/etc/css/custom/var/colours_main_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
-   Border Colours Variables | Custom [/etc/css/custom/var/colours_borders.scss]
+   Border Colours Variables | Custom [/etc/css/custom/var/colours_borders_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
-   Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds.scss]
+   Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -210,20 +261,11 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Text Shadow _______________________*/
 /*___ Box Shadow ________________________*/
 /* * NombreDeProyecto * ========================================================
-   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
+   Text Colour Variables | Custom [/etc/css/custom/var/text_colours_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Variables de fuentes -------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Text Fonts ------------------------------------------------------------ */
 /* // Text Colours ---------------------------------------------------------- */
-/* // Espaciado y cuerpo de texto ------------------------------------------- */
-/* // Headings -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
    ========================================================================== */
@@ -253,6 +295,16 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Header Sizes ---------------------------------------------------------- */
 /* // Page Sizes ------------------------------------------------------------ */
+/*
+$page_PT_B500:          0; 
+$page_PT_A500:          0; 
+$page_PT_500O:          0;
+$page_PT_BT:            0;
+$page_PT_navBT:         0;
+$page_PT_navAT:         0;
+$page_PT_AT:            0;
+$page_PT_A1024:         0;
+*/
 /* // Header Colours -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Colours Variables | Custom [/etc/css/custom/var/nav_colours_var.scss]
@@ -302,7 +354,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Language UL _______________________*/
 /* Comentar si Nav Language Square // REF [37] */
 /*___ Language Square ___________________
-$nav_lang_ul_height_AT:        $nav_height_A768;
+$nav_lang_ul_height_A768:        $nav_height_A768;
 $nav_lang_item_sq_size_AT:     $nav_height_A768;
 $nav_lang_ul_width_AT:          calc(calc(25px + calc(1px * 2)) - 18px);
 $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;  
@@ -351,7 +403,7 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Popup Sizes ----------------------------------------------------------- */
 /* // Popup Colours --------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Slider Variables | Custom [/etc/css/custom/var/slider.scss]
+   Slider Variables | Custom [/etc/css/custom/var/slider_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -419,6 +471,14 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Table Background Colours ---------------------------------------------- */
 /* // Striped Table --------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Regular --------------------------------------------------------------- */
+/* // Nav ------------------------------------------------------------------- */
+/* // Apple ----------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
    Global Variables | Custom [/etc/css/custom/var/global_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -430,14 +490,6 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* // Secondary Separator --------------------------------------------------- */
 /*___ Secondary _________________________*/
-/* * NombreDeProyecto * ========================================================
-   Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Regular --------------------------------------------------------------- */
-/* // Nav ------------------------------------------------------------------- */
-/* // Apple ----------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Page Construccion Variables | Custom [/etc/css/custom/var/page_construccion_var.scss]
    ========================================================================== */
@@ -492,6 +544,7 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // 1300px ---------------------------------------------------------------- */
 /* // 1350px ---------------------------------------------------------------- */
 /* // 1400px ---------------------------------------------------------------- */
+/* // 1450px ---------------------------------------------------------------- */
 /* // 1500px ---------------------------------------------------------------- */
 /* // 1600px ---------------------------------------------------------------- */
 /* // 2000px ---------------------------------------------------------------- */
@@ -517,26 +570,40 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* * NombreDeProyecto * ========================================================
    Sizes Mixins | Etc [/etc/css/scss/mixinsSizes.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Background Mixins | Etc [/etc/css/scss/mixins_backgrounds.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Mask Mixins | Etc [/etc/css/scss/mixinsMasks.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Mixin para máscara con centrado ciego --------------------------------- */
 /* // Mixin para mascaras --------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Clip Paths Mixins | Etc [/etc/css/scss/mixinsClipPath.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Transition Mixins | Etc [/etc/css/scss/mixinsTransitions.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Opacity Mixins | Etc [/etc/css/scss/mixinsOpacity.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Fonts Mixins | Etc [/etc/css/scss/mixins_fonts.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Generador de clases por cada fuente ----------------------------------- */
 /* // Generador de pesos por cada fuente ------------------------------------ */
 /* // Generador de clases por cada tamaño de fuente ------------------------- */
@@ -553,6 +620,8 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* * NombreDeProyecto * ========================================================
    Center Mixins | Etc [/etc/css/scss/mixinsCenter.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Mixin para clase .absoluteCenter -------------------------------------- */
 /* // Mixin para clase .centerVertical -------------------------------------- */
 /* // Mixin para clase .centerHorizontal ------------------------------------- */
@@ -561,6 +630,8 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* * NombreDeProyecto * ========================================================
    Spacing Helpers Mixins | Etc [/etc/css/scss/mixin_spacing.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Border Helpers Mixins | Etc [/etc/css/scss/mixins_borders.scss]
    ========================================================================== */
@@ -574,9 +645,13 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* * NombreDeProyecto * ========================================================
    Position Mixins | Etc [/etc/css/scss/mixinsPositions.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Tables Sizes Mixins | Etc [/etc/css/scss/mixinsTableSizes.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Functions ------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Angled Edges Functions | Etc [/etc/css/scss/functions_angledEdges.scss]scss]
@@ -615,43 +690,14 @@ Description: Optional - Width of triangle - Accepts a unitless integer that is e
 /* * NombreDeProyecto * ========================================================
    Font Stroke Functions | Etc [/etc/css/scss/functionsFontStroke.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Main CSS -------------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Colour Placeholders | Custom [/etc/css/custom/colours_placeholders.scss]
-   ========================================================================== */
-a.orange:focus, a.orange:focus-visible, a.orange:hover {
-  color: #ff0000; }
-
-/* * NombreDeProyecto * ========================================================
-   Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
-   ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-/*
-$bgGrad_colourPercent: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
-$bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
-.bgGrad_colourPercent{
-    background-image: $bgGrad_colourPercent;
-    filter: $bgGrad_colourPercent_filter;
-}
-*/
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd600+0,ff7a00+20,ff0069+47,d300c5+72,7638fa+100 */
-.bgGrad_gradient_ig {
-  background-image: linear-gradient(to right, #ffd600 0%, #ff7a00 20%, #ff0069 47%, #d300c5 72%, #7638fa 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd600', endColorstr='#7638fa',GradientType=1 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
-.bgWhite_grad_50 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-.bgBlack_grad_50 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
-
 /* * NombreDeProyecto * ========================================================
    Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 html, body {
   padding: 0;
   margin: 0;
@@ -676,6 +722,8 @@ body {
 /* * NombreDeProyecto * ========================================================
    Elements Reset/Settings | Etc [/etc/css/scss/reset_main.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button {
   display: block; }
 
@@ -722,7 +770,7 @@ hr {
 img {
   background-color: #b2b2b2;
   border: none;
-  font: normal 11px/1rem Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font: normal 11px/1rem "mingliuregular";
   text-transform: uppercase;
   color: #333;
   object-fit: cover;
@@ -739,47 +787,13 @@ figure {
    Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/*
-.exampleFont{font-family: 'exampleFont';}
-@font-face {
-    font-family: 'exampleFont';
-    src: url('/stage/fonts/examplefont.woff2') format('woff2'),
-         url('/stage/fonts/examplefont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-// REF [14a]
-@font-face {
-    font-family: 'mingliuregular';
-    src: url('/stage/fonts/mingliu-01-webfont.woff2') format('woff2'),
-         url('/stage/fonts/mingliu-01-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'pmingliuregular';
-    src: url('/stage/fonts/pmingliu-02-webfont.woff2') format('woff2'),
-         url('/stage/fonts/pmingliu-02-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-*/
-/* * NombreDeProyecto * ========================================================
    Text Settings | Etc [/etc/css/scss/settings_text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // General --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: "mingliuregular";
   font-weight: 400;
   font-size: 1rem;
   line-height: calc(1ex / 0.32);
@@ -1015,7 +1029,7 @@ h1 a, h1 strong, h1 em, h1 i, h1 b, h1 cite, h2 a, h2 strong, h2 em, h2 i, h2 b,
   font-size: 1em; }
 
 p b, a b, li b {
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+  font-family: "mingliuregular"; }
 
 p p, p a, p strong, p em, p i, p b, p cite, p li, a p, a a, a strong, a em, a i, a b, a cite, a li, li p, li a, li strong, li em, li i, li b, li cite, li li {
   font-size: 1em; }
@@ -1029,12 +1043,26 @@ a {
 
 /* // Font Families and Headings Values ------------------------------------- */
 .arial {
-  font-family: Arial; }
+  font-family: "mingliuregular"; }
 
 .roboto {
-  font-family: Roboto; }
+  font-family: "mingliuregular"; }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
+  h1, .heading1 {
+    font-size: 1.6rem; }
+  h2, .heading2 {
+    font-size: 1.5rem; }
+  h3, .heading3 {
+    font-size: 1.4rem; }
+  h4, .heading4 {
+    font-size: 1.3rem; }
+  h5, .heading5 {
+    font-size: 1.3rem; }
+  h6, .heading6 {
+    font-size: 1.3rem; } }
+
+@media (min-width: 501px) {
   h1, .heading1 {
     font-size: 1.6rem; }
   h2, .heading2 {
@@ -1215,12 +1243,6 @@ a.black, a.black:active, a.black:visited, a.black.noHover:focus, a.black.noHover
 a.black:focus, a.black:focus-visible, a.black:hover {
   color: #333333; }
 
-.orange, .orange b, .orange strong, .orange i, .orange em {
-  color: #ff6600; }
-
-a.orange, a.orange:active, a.orange:visited, a.orange.noHover:focus, a.orange.noHover:hover {
-  color: #ff6600; }
-
 /* * NombreDeProyecto * ========================================================
    Settings Text | Custom [/etc/css/custom/text.scss]
    ========================================================================== */
@@ -1277,8 +1299,9 @@ q {
 .txBold,
 .txBold a,
 .txBold span,
-.txBold strong {
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+.txBold strong,
+.txBold cite {
+  font-family: "mingliuregular";
   font-weight: 400; }
 
 .txItalic {
@@ -1298,6 +1321,9 @@ q {
 
 .txSmallCaps {
   font-variant: small-caps; }
+
+.txCapitalize {
+  text-transform: capitalize; }
 
 .txAlignCenter {
   text-align: center; }
@@ -1361,6 +1387,63 @@ q {
 
 .txLetterSpacing {
   letter-spacing: 0.05rem; }
+
+.txSuperscript {
+  position: relative;
+  top: -0.5em;
+  font-size: 80%;
+  /* vertical-align: super; */ }
+
+.txSymbol {
+  position: relative;
+  display: inline-flex;
+  width: 35px;
+  text-indent: -9999px;
+  overflow: hidden; }
+  .txSymbol::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    text-indent: 0;
+    text-align: center; }
+  .txSymbol.symbol_plus::before {
+    content: "+"; }
+  .txSymbol.symbol_one::before {
+    content: "1"; }
+  .txSymbol.symbol_two::before {
+    content: "2"; }
+  .txSymbol.symbol_three::before {
+    content: "3"; }
+
+/* * NombreDeProyecto * ========================================================
+   Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
+   ========================================================================== */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
+/*
+$bgGrad_colourPercent: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
+$bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
+.bgGrad_colourPercent{
+    background-image: $bgGrad_colourPercent;
+    filter: $bgGrad_colourPercent_filter;
+}
+*/
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd600+0,ff7a00+20,ff0069+47,d300c5+72,7638fa+100 */
+.bgGrad_gradient_ig {
+  background-image: linear-gradient(to right, #ffd600 0%, #ff7a00 20%, #ff0069 47%, #d300c5 72%, #7638fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd600', endColorstr='#7638fa',GradientType=1 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
+.bgWhite_grad_50 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
+.bgBlack_grad_50 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
 
 /* * NombreDeProyecto * ========================================================
    Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
@@ -1777,6 +1860,19 @@ article, article::before, article::after, details, details::before, details::aft
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start; }
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+.flexCenter > * {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%; }
 
 .flexColumn {
   flex-direction: column; }
@@ -2340,30 +2436,33 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 1101px) {
   .container {
-    max-width: 1000px; } }
+    max-width: 1050px; } }
 
 @media (min-width: 1201px) {
   .container {
-    max-width: 1100px; } }
+    max-width: 1150px; } }
 
 @media (min-width: 1301px) {
   .container {
-    max-width: 1100px; } }
+    max-width: 1250px; } }
 
 @media (min-width: 1401px) {
   .container {
-    max-width: 1300px; } }
+    max-width: 1350px; } }
 
-@media (min-width: 1501px) {
+@media (min-width: 1401px) {
   .container {
-    max-width: 1300px;
     box-sizing: border-box;
     padding-right: 30px;
     padding-left: 30px; } }
 
+@media (min-width: 1501px) {
+  .container {
+    max-width: 1350px; } }
+
 @media (min-width: 1601px) {
   .container {
-    max-width: 1300px; } }
+    max-width: 1350px; } }
 
 @media (max-width: 350px) {
   .container.container_centered_absolute {
@@ -2415,33 +2514,33 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 1101px) {
   .container.container_centered_absolute {
-    width: 1000px;
-    margin-left: calc(-1 * calc(1000px / 2)); } }
+    width: 1050px;
+    margin-left: calc(-1 * calc(1050px / 2)); } }
 
 @media (min-width: 1201px) {
   .container.container_centered_absolute {
-    width: 1100px;
-    margin-left: calc(-1 * calc(1100px / 2)); } }
+    width: 1150px;
+    margin-left: calc(-1 * calc(1150px / 2)); } }
 
 @media (min-width: 1301px) {
   .container.container_centered_absolute {
-    width: 1100px;
-    margin-left: calc(-1 * calc(1100px / 2)); } }
+    width: 1250px;
+    margin-left: calc(-1 * calc(1250px / 2)); } }
 
 @media (min-width: 1401px) {
   .container.container_centered_absolute {
-    width: 1300px;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1501px) {
   .container.container_centered_absolute {
-    width: 1300px;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1601px) {
   .container.container_centered_absolute {
-    width: 1300px;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 601px) {
   .container.container_centered_absolute_A600 {
@@ -2476,40 +2575,57 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 1101px) {
   .container.container_centered_absolute_A600 {
-    width: 1000px;
-    margin-left: calc(-1 * calc(1000px / 2)); } }
+    width: 1050px;
+    margin-left: calc(-1 * calc(1050px / 2)); } }
 
 @media (min-width: 1201px) {
   .container.container_centered_absolute_A600 {
-    width: 1100px;
-    margin-left: calc(-1 * calc(1100px / 2)); } }
+    width: 1150px;
+    margin-left: calc(-1 * calc(1150px / 2)); } }
 
 @media (min-width: 1301px) {
   .container.container_centered_absolute_A600 {
-    width: 1100px;
-    margin-left: calc(-1 * calc(1100px / 2)); } }
+    width: 1250px;
+    margin-left: calc(-1 * calc(1250px / 2)); } }
 
 @media (min-width: 1401px) {
   .container.container_centered_absolute_A600 {
-    width: 1300px;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1501px) {
   .container.container_centered_absolute_A600 {
-    width: 1300px;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1601px) {
   .container.container_centered_absolute_A600 {
-    width: 1300px;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1401px) {
+  .container.container_centered_absolute_A1400 {
+    position: absolute;
+    left: 50%;
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1501px) {
+  .container.container_centered_absolute_A1400 {
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1601px) {
+  .container.container_centered_absolute_A1400 {
+    width: 1350px;
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1601px) {
   .container.container_centered_absolute_A1600 {
     position: absolute;
-    width: 1300px;
+    width: 1350px;
     left: 50%;
-    margin-left: calc(-1 * calc(1300px / 2)); } }
+    margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 601px) {
   .containerA600 {
@@ -2552,117 +2668,85 @@ article, article::before, article::after, details, details::before, details::aft
 
 @media (min-width: 1101px) {
   .containerA600 {
-    max-width: 1000px; }
+    max-width: 1050px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1000px / 2)); } }
+      margin-left: calc(-1 * calc(1050px / 2)); } }
 
 @media (min-width: 1201px) {
   .containerA600 {
-    max-width: 1100px; }
+    max-width: 1150px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1100px / 2)); } }
+      margin-left: calc(-1 * calc(1150px / 2)); } }
 
 @media (min-width: 1301px) {
   .containerA600 {
-    max-width: 1100px; }
+    max-width: 1250px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1100px / 2)); } }
+      margin-left: calc(-1 * calc(1250px / 2)); } }
 
 @media (min-width: 1401px) {
   .containerA600 {
-    max-width: 1300px; }
+    max-width: 1350px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1300px / 2)); } }
+      margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1401px) {
+  .containerA600 {
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-left: 30px; } }
 
 @media (min-width: 1501px) {
   .containerA600 {
-    max-width: 1300px;
-    box-sizing: border-box;
-    padding-right: 30px;
-    padding-left: 30px; }
+    max-width: 1350px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1300px / 2)); } }
+      margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1601px) {
   .containerA600 {
-    max-width: 1300px; }
+    max-width: 1350px; }
     .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1300px / 2)); } }
+      margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1401px) {
+  .containerA1400 {
+    width: calc(100% - calc(30px + 30px));
+    max-width: 1350px; }
+    .containerA1400.container_centered_absolute_A1400 {
+      position: absolute;
+      left: 50%;
+      margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1401px) {
+  .containerA1400 {
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-left: 30px; } }
+
+@media (min-width: 1501px) {
+  .containerA1400 {
+    max-width: 1350px; }
+    .containerA1400.container_centered_absolute_A1400 {
+      margin-left: calc(-1 * calc(1350px / 2)); } }
+
+@media (min-width: 1601px) {
+  .containerA1400 {
+    max-width: 1350px; }
+    .containerA1400.container_centered_absolute_A1400 {
+      margin-left: calc(-1 * calc(1350px / 2)); } }
 
 @media (min-width: 1601px) {
   .containerA1600 {
-    max-width: 1300px; }
+    max-width: 1350px; }
     .containerA1600.container_centered_absolute_A1600 {
       position: absolute;
       left: 50%;
-      margin-left: calc(-1 * calc(1300px / 2)); } }
+      margin-left: calc(-1 * calc(1350px / 2)); } }
 
 /* // Hack para Windows Phone ----------------------------------------------- */
 @media (max-width: 400px) {
   @-ms-viewport {
     width: 320px; } }
-
-/* * NombreDeProyecto * ========================================================
-   Print Styles | Custom [/etc/css/custom/print.scss]
-   ========================================================================== */
-@media print {
-  @page {
-    margin: 2cm; }
-  @page :left {
-    margin-right: 3cm; }
-  @page :right {
-    margin-left: 3cm; }
-  *,
-  *::before,
-  *::after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  nav, footer {
-    display: none !important; }
-  a, a:visited {
-    text-decoration: underline; }
-  a[href^="http"]:not([href*="example.com"]):after {
-    height: 30px;
-    line-height: 30px;
-    content: "(" attr(href) ")";
-    font-family: monospace; }
-  a[href^="#"]:after, a[href^="javascript:"]:after {
-    content: ""; }
-  pre {
-    white-space: pre-wrap !important; }
-  pre,
-  blockquote {
-    border: 1px solid #8c8c8c;
-    page-break-inside: avoid; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; }
-  /* // Main Styles ----------------------------------------------------------- */
-  .logo_header {
-    display: block;
-    height: 3cm;
-    margin: 10px auto 20px; }
-  .iframe_map_mask {
-    width: 400px;
-    height: 300px;
-    background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true");
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact; }
-  img.dark {
-    filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(150%); }
-  /* // Tables Styles --------------------------------------------------------- */
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; } }
 
 /* * NombreDeProyecto * ========================================================
    Global Styles | Custom [/etc/css/custom/global.scss]
@@ -2680,6 +2764,17 @@ article, article::before, article::after, details, details::before, details::aft
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+#dev_window_width {
+  /* // REF [48] Dev window width */
+  border: 1px solid #f2f2f2;
+  position: fixed;
+  z-index: 12000;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center; }
+
 #main {
   background-color: #fff; }
 
@@ -2700,6 +2795,9 @@ article, article::before, article::after, details, details::before, details::aft
   scroll-snap-align: center;
 }
 */
+/* =============================================================================
+   Separator
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Secondary Separator
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -2728,6 +2826,16 @@ ol {
     position: relative; }
     .list_hyphenated li::before {
       content: "- "; }
+
+.list_commas li {
+  position: relative;
+  display: inline; }
+  .list_commas li::after {
+    content: ",";
+    display: inline;
+    white-space: pre; }
+  .list_commas li:last-child::after {
+    display: none; }
 
 .list_numbered {
   counter-reset: list_numbered_counter; }
@@ -2860,7 +2968,7 @@ button, button::before, button::after {
   background-color: #8c8c8c;
   padding-right: 10px;
   padding-left: 10px;
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: "mingliuregular";
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center; }
@@ -2960,20 +3068,28 @@ button, button::before, button::after {
     color: #000; }
 
 .pop_formStatus .button_close_pop {
-  border: 1px solid #666;
+  border: 1px solid #8c8c8c;
   top: 10px;
   right: 10px; }
   .pop_formStatus .button_close_pop:focus, .pop_formStatus .button_close_pop:focus-visible, .pop_formStatus .button_close_pop:hover {
-    border-color: #4d4d4d; }
+    border-color: #666; }
 
 .pop_formStatus .button_pop_submit {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #8c8c8c;
+  border-radius: 12px;
   background-color: #fff;
+  max-width: 160px !important;
   margin: 20px auto 0;
   color: #000;
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-family: "mingliuregular";
   font-weight: 700;
   text-align: center;
   text-transform: uppercase; }
+  .pop_formStatus .button_pop_submit:focus, .pop_formStatus .button_pop_submit:focus-visible, .pop_formStatus .button_pop_submit:hover {
+    background-color: #f2f2f2;
+    border-color: #666; }
 
 /* // Button Whatsapp ------------------------------------------------------- */
 #selector .button_whatsApp_anchor {
@@ -2994,7 +3110,10 @@ button, button::before, button::after {
   background-image: url("/stage/img/button_whatsApp.svg");
   background-repeat: no-repeat;
   background-size: auto calc(70px - 20px);
-  background-position: center center; }
+  background-position: center center;
+  /*
+        overflow: visible;
+*/ }
   #selector .button_whatsApp_anchor, #selector .button_whatsApp_anchor:visited, #selector .button_whatsApp_anchor:active {
     /*background-color: $greenWhatsApp;*/
     background-color: rgba(37, 211, 102, 0.85); }
@@ -3003,14 +3122,14 @@ button, button::before, button::after {
     /*background-color: $greenWhatsApp_hover;*/
     background-color: #25d366; }
     #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
-      border-radius: 15px;
+      border-radius: 14px;
       height: 40px;
       line-height: 40px;
+      content: "Abrir un chat.";
       display: block;
       box-sizing: border-box;
       position: absolute;
       top: 50%;
-      right: calc(70px + 10px);
       background-color: rgba(0, 0, 0, 0.7);
       padding: 0 15px;
       margin-top: calc(-1 * calc(40px / 2));
@@ -3026,9 +3145,14 @@ button, button::before, button::after {
     content: "Chatten Sie mit SiteName."; }
   #selector .button_whatsApp_anchor.lang_GB:focus::before, #selector .button_whatsApp_anchor.lang_GB:focus-visible::before, #selector .button_whatsApp_anchor.lang_GB:hover::before {
     content: "Chat with SiteName."; }
-  @media (max-width: 500px) {
+  @media (max-width: 300px) {
     #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
-      width: 220px; } }
+      width: 160px;
+      right: calc(70px + 4px); } }
+  @media (min-width: 301px) {
+    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
+      width: 200px;
+      right: calc(70px + 10px); } }
   @media (max-width: 767px) {
     #selector .button_whatsApp_anchor.navDrawer_open::before, #selector .button_whatsApp_anchor.navDrawer_open:focus::before, #selector .button_whatsApp_anchor.navDrawer_open:focus-visible::before, #selector .button_whatsApp_anchor.navDrawer_open:hover::before {
       display: none; } }
@@ -3070,7 +3194,7 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
   width: 40px;
   height: 40px;
   position: fixed;
-  z-index: 9900;
+  z-index: 8990;
   right: 20px;
   background-image: url("/stage/img/button_siteTop.svg");
   background-repeat: no-repeat;
@@ -3084,6 +3208,10 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
   /* scroll activation // REF [31**]
     bottom: calc(-1 * calc(40px + 5px));
     opacity: 0;
+    
+    .navDrawer_open &{
+        bottom: calc(-1 * calc(40px + 5px));
+    }
     
     &.site_scrolled_js{
         opacity: 1;
@@ -3162,6 +3290,8 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
 /* * NombreDeProyecto * ========================================================
    Form Settings | Etc [/etc/css/scss/settings_form.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 @media (max-width: 767px) {
   .mobileForm form, .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
   .form_label_name, .mobileForm .form_validation_span {
@@ -3178,16 +3308,21 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
     margin-right: auto !important;
     margin-left: auto !important; } }
 
-@media (max-width: 767px) {
-  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
-  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    width: 100% !important; } }
-
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
   .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
     width: 100% !important;
     max-width: 270px !important; } }
+
+@media (min-width: 351px) {
+  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
+  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
+    width: 330px !important; } }
+
+@media (min-width: 501px) {
+  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
+  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
+    width: 400px !important; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button, .tabletForm
@@ -3197,7 +3332,9 @@ https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c
 @media (min-width: 1024px) {
   form fieldset, form label, form input, form select, form textarea, form button, form
   .form_validation_div, form .form_validation_span, form .form_status, form .form_label_name {
-    width: 520px; } }
+    width: 520px;
+    margin-right: auto;
+    margin-left: auto; } }
 
 @media (min-width: 1201px) {
   form fieldset, form label, form input, form select, form textarea, form button, form
@@ -3276,7 +3413,7 @@ input, select, textarea {
   input[type="submit"], form
   input[type="button"], form
   form button {
-    width: 300px;
+    width: 300px !important;
     height: 45px;
     line-height: 45px; } }
 
@@ -3285,7 +3422,7 @@ input, select, textarea {
   input[type="submit"], form
   input[type="button"], form
   form button {
-    width: 300px;
+    width: 300px !important;
     height: 45px;
     line-height: 45px; } }
 
@@ -3453,7 +3590,7 @@ form input, form select, form textarea {
   transition: all 1s ease, background-position 0s ease;
   background-color: #fff;
   color: #000;
-  font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+  font-family: "mingliuregular"; }
   form input:focus, form select:focus, form textarea:focus {
     box-shadow: inset 0 0 6px #b2b2b2; }
   form input:focus, form input:focus-visible, form input:hover, form select:focus, form select:focus-visible, form select:hover, form textarea:focus, form textarea:focus-visible, form textarea:hover {
@@ -3481,10 +3618,14 @@ form textarea {
   vertical-align: top;
   resize: vertical; }
 
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   .mobileForm form {
     width: 90%;
     max-width: 270px !important; } }
+
+@media (min-width: 351px) {
+  .mobileForm form {
+    width: 330px !important; } }
 
 @media (min-width: 501px) {
   .mobileForm form {
@@ -3672,7 +3813,9 @@ form {
   /* // Form invalid field ---------------------------------------------------- */
   /* // Form Button Submit // REF [21] ---------------------------------------- */
   /* // Form Label ------------------------------------------------------------ */ }
-  form input, form select, form textarea {
+  form input,
+  form select,
+  form textarea {
     padding-right: 10px;
     padding-left: 10px;
     border: 1px solid #8c8c8c; }
@@ -3714,7 +3857,7 @@ form {
     background-position: right center;
     background-size: 28px; }
   form select option {
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-family: "mingliuregular";
     font-size: 0.8rem; }
   form textarea {
     /*
@@ -3759,9 +3902,10 @@ form {
     color: #fff;
     border-radius: 6px;
     margin-bottom: 0 !important;
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-family: "mingliuregular";
     font-size: 1.2rem;
     text-transform: uppercase;
+    cursor: default;
     border: none !important; }
     form input[type="reset"]:focus, form input[type="reset"]:focus-visible, form input[type="reset"]:hover,
     form input[type="submit"]:focus,
@@ -3799,17 +3943,16 @@ form {
       form input[type="reset"],
       form input[type="submit"],
       form input[type="button"] {
-        width: 50%;
-        margin-right: auto !important;
-        margin-left: auto !important;
-        margin-top: 30px; } }
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto; } }
   form label, form label::before, form label::after {
     box-sizing: border-box; }
   form label.form_required .form_label_name::after {
     content: " *";
     display: inline;
     color: #eb1c24;
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-family: "mingliuregular";
     height: 100%;
     white-space: pre; }
   @media (max-width: 767px) {
@@ -3888,12 +4031,12 @@ form {
   form .form_label_name {
     display: block;
     padding-left: 7px;
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-family: "mingliuregular";
     /* // REF [39] $form_label_floating_act */
     font-size: 1.1rem !important; }
   form .form_validation_span,
   form .form_label_msg_sugg {
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-family: "mingliuregular";
     line-height: 1.2em; }
   form .form_label_msg_sugg {
     display: block;
@@ -3969,6 +4112,8 @@ form {
   z-index: 9800;
   top: 10vh;
   left: 50%;
+  height: 100vh;
+  max-height: 80vh;
   border-radius: 6px;
   background-color: #fff;
   /*    
@@ -3997,11 +4142,28 @@ form {
     width: 100% !important;
     background-color: transparent;
     padding: 0;
-    color: #4d4d4d;
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+    color: #000;
+    font-family: "mingliuregular";
     text-align: center; }
     .pop_global p + p {
       margin-top: 0.8em; }
+  @media (max-width: 300px) {
+    .pop_global {
+      width: 90%;
+      max-width: 300px;
+      margin-left: calc(calc(90% * -1) / 2); } }
+  @media (min-width: 301px) {
+    .pop_global {
+      width: 60%;
+      margin-left: calc(calc(60% * -1) / 2); } }
+  @media (min-width: 501px) {
+    .pop_global {
+      width: 60%;
+      margin-left: calc(calc(60% * -1) / 2); } }
+  @media (min-width: 601px) {
+    .pop_global {
+      width: 550px;
+      margin-left: calc(calc(550px * -1) / 2); } }
 
 .pop_warning {
   /* CSS para usar centerPopup
@@ -4092,45 +4254,45 @@ form {
   padding: 20px !important; }
   .pop_formStatus h2 {
     height: auto !important;
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif !important;
+    font-family: "mingliuregular" !important;
     line-height: 1.2em !important;
     text-transform: none !important; }
   .pop_formStatus p {
-    color: #333;
+    color: #000;
     font-size: 1rem !important;
     line-height: 1.3em; }
     .pop_formStatus p a {
-      color: #111; }
+      color: #333333; }
       .pop_formStatus p a:active, .pop_formStatus p a:visited, .pop_formStatus p a:focus, .pop_formStatus p a:focus-visible, .pop_formStatus p a:hover {
-        color: #111; }
+        color: #1a1a1a; }
+      .pop_formStatus p a:focus, .pop_formStatus p a:focus-visible, .pop_formStatus p a:hover {
+        text-decoration: underline; }
   @media (max-width: 300px) {
     .pop_formStatus {
       width: 90%;
-      max-width: 300px;
+      max-width: 290px;
       margin-left: calc(calc(90% * -1) / 2); }
       .pop_formStatus h2 {
-        padding-top: 10px;
         padding-right: 25px;
         padding-left: 25px;
         font-size: 1.4rem; } }
   @media (min-width: 301px) {
     .pop_formStatus {
-      width: 300px;
-      margin-left: calc(calc(300px * -1) / 2); }
+      width: 290px;
+      margin-left: calc(calc(290px * -1) / 2); }
       .pop_formStatus h2 {
         padding-right: 15px;
         padding-left: 15px;
         font-size: 1.6rem; } }
   @media (min-width: 501px) {
     .pop_formStatus {
-      width: 60%;
-      margin-left: calc(calc(60% * -1) / 2); }
+      width: 450px;
+      margin-left: calc(calc(450px * -1) / 2); }
       .pop_formStatus h2 {
         padding-right: 5px;
         padding-left: 5px; } }
   @media (max-width: 650px) {
     .pop_formStatus h2 {
-      padding-top: 30px;
       font-size: 1.6rem; } }
   @media (min-width: 651px) {
     .pop_formStatus h2 {
@@ -4179,7 +4341,46 @@ form {
     z-index: $zIndex_header;
 */
   height: 100px;
-  background-color: #fff; }
+  background-color: #fff;
+  /*
+    @media (max-width: 320px){
+        @if $nav_drawer_act == "on"{
+            .logo_header{
+                &.navDrawer_open{
+                    left: 13px;
+                    
+                    .logo_before,
+                    a{
+                        width: auto;
+                        height: 100%;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    } 
+                }
+            }
+        }
+    } 
+
+    @media (min-width: 321px) and (max-width: 767px){
+        @if $nav_drawer_act == "on"{
+            .logo_header{
+                &.navDrawer_open{
+                    left: 16px;
+                    
+                    .logo_before,
+                    a,
+                    img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    */ }
   #header .logo_header {
     margin-bottom: 0; }
     #header .logo_header,
@@ -4317,6 +4518,8 @@ form {
 /* * NombreDeProyecto * ========================================================
    Nav Settings | Etc [/etc/css/scss/settings_nav.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 nav p.nav_TLI,
 nav .nav_item_current a {
   cursor: default; }
@@ -4341,7 +4544,7 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
       display: block !important;
       opacity: 1;
       background-repeat: no-repeat;
-      font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+      font-family: "mingliuregular"; }
     .nav_main .button_hamb_close {
       border-radius: 50%;
       z-index: 9900;
@@ -4358,6 +4561,8 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
 @media (min-width: 768px) {
   .nav_main {
     background-color: transparent; }
+    #header.site_scrolled_js .nav_main {
+      background-color: transparent; }
     .nav_main .button_hamb {
       display: none !important; }
     .nav_main .nav_main_ul_drawer {
@@ -4369,7 +4574,7 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
         .nav_main > ul > li a,
         .nav_main > ul > li .nav_TLI {
           color: #000;
-          font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+          font-family: "mingliuregular"; }
         .nav_main > ul > li:focus, .nav_main > ul > li:focus-visible, .nav_main > ul > li:hover {
           background-color: transparent; }
           .nav_main > ul > li:focus > a, .nav_main > ul > li:focus-visible > a, .nav_main > ul > li:hover > a {
@@ -4382,7 +4587,7 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
         .nav_main > ul > .nav_item_current a,
         .nav_main > ul > .nav_item_current .nav_TLI {
           color: #000;
-          font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+          font-family: "mingliuregular"; }
         .nav_main > ul > .uk-active:focus, .nav_main > ul > .uk-active:focus-visible, .nav_main > ul > .uk-active:hover,
         .nav_main > ul > .nav_item_current:focus,
         .nav_main > ul > .nav_item_current:focus-visible,
@@ -4403,16 +4608,18 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
 @media (min-width: 1024px) {
   .nav_main > ul > li a,
   .nav_main > ul > li .nav_TLI {
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+    font-family: "mingliuregular"; }
   .nav_main > ul .uk-active a,
   .nav_main > ul .uk-active .nav_TLI,
   .nav_main > ul .nav_item_current a,
   .nav_main > ul .nav_item_current .nav_TLI {
-    font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; } }
+    font-family: "mingliuregular"; } }
 
 /* * NombreDeProyecto * ========================================================
    Nav Drawer Settings | Etc [/etc/css/scss/settings_nav_drawer.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 @media (max-width: 767px) {
   .nav_main .button_hamb_close.button_hamb_close_visible {
     display: block; }
@@ -4440,17 +4647,19 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
     .nav_main .nav_main_ul > li > a,
     .nav_main .nav_main_ul > li > .nav_TLI {
       color: #000;
-      font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; }
+      font-family: "mingliuregular"; }
     .nav_main .nav_main_ul > .uk-active > a,
     .nav_main .nav_main_ul > .uk-active > .nav_TLI,
     .nav_main .nav_main_ul > .nav_item_current > a,
     .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
       color: #000;
-      font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif; } }
+      font-family: "mingliuregular"; } }
 
 /* * NombreDeProyecto * ========================================================
    Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
    ========================================================================== */
@@ -4479,7 +4688,7 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
       border-radius: 6px;
       transition: all 0.7s ease;
       background-image: url("/stage/img/button_hamb_open.svg");
-      background-color: #fff;
+      background-color: #f2f2f2;
       background-size: 15px;
       color: #333;
       text-align: center;
@@ -4487,12 +4696,12 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
       width: 90px;
       height: 40px;
       background-position: 10px center;
-      border: 1px solid #4d4d4d !important;
+      border: 1px solid #8c8c8c !important;
       padding: 0 10px 0 30px;
       font-size: 1rem;
       line-height: 40px; }
       .nav_main .button_hamb_open.site_scrolled_js {
-        background-color: rgba(0, 0, 0, 0.7); }
+        background-color: rgba(255, 242, 242, 0.7); }
       .nav_main .button_hamb_open.button_hamb_open_pressed {
         opacity: 0.5;
         color: #333; }
@@ -4506,7 +4715,10 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
       border: 1px solid transparent !important;
       padding: 0 !important;
       text-indent: -9999px;
-      overflow: hidden; }
+      overflow: hidden;
+      width: 40px;
+      height: calc(40px - 0px);
+      background-size: 100%; }
     .nav_main .nav_main_ul {
       border-right: 3px solid #000;
       padding-top: calc(calc(50px + 50px + 10px) + 5px); }
@@ -4575,14 +4787,24 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
       transition: all 1s ease;
       font-size: 0.8rem;
       padding-right: 5px;
-      padding-left: 5px; } }
+      padding-left: 5px; }
+    #header.site_scrolled_js .nav_main li,
+    #header.site_scrolled_js .nav_main li a,
+    #header.site_scrolled_js .nav_main li .nav_TLI {
+      height: 45px;
+      line-height: 45px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .nav_main li,
   .nav_main li a,
   .nav_main li .nav_TLI {
     height: 60px;
-    line-height: 60px; } }
+    line-height: 60px; }
+  #header.site_scrolled_js .nav_main li,
+  #header.site_scrolled_js .nav_main li a,
+  #header.site_scrolled_js .nav_main li .nav_TLI {
+    height: 45px;
+    line-height: 45px; } }
 
 @media (min-width: 1024px) {
   .nav_main li,
@@ -4590,10 +4812,15 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
   .nav_main li .nav_TLI {
     height: 60px;
     line-height: 60px; }
+  #header.site_scrolled_js .nav_main li,
+  #header.site_scrolled_js .nav_main li a,
+  #header.site_scrolled_js .nav_main li .nav_TLI {
+    height: 45px;
+    line-height: 45px; }
   .nav_main li a,
   .nav_main li .nav_TLI {
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-right: 10px;
     padding-left: 10px; } }
 
@@ -4602,7 +4829,12 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
   .nav_main .nav_main_ul li a,
   .nav_main .nav_main_ul li .nav_TLI {
     height: 60px;
-    line-height: 60px; } }
+    line-height: 60px; }
+  #header.site_scrolled_js .nav_main .nav_main_ul,
+  #header.site_scrolled_js .nav_main .nav_main_ul a,
+  #header.site_scrolled_js .nav_main .nav_main_ul .nav_TLI {
+    height: 45px;
+    line-height: 45px; } }
 
 /* * NombreDeProyecto * ========================================================
    Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
@@ -4613,36 +4845,8 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
             text-transform: uppercase;
             */ }
 
+/* // Post ------------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   Page Error Styles | Custom [/etc/css/custom/page_error.scss]
+   CSS Styles Post | Custom [/etc/css/custom/css_post.scss]
    ========================================================================== */
-.page_error {
-  min-height: 50vh;
-  padding-top: 30px;
-  padding-bottom: 80px; }
-  .page_error h1 {
-    color: #666;
-    text-align: center; }
-  .page_error p {
-    padding-right: 40px;
-    padding-left: 40px;
-    color: #000;
-    font-size: 0.9rem;
-    text-align: center; }
-    .page_error p a {
-      text-decoration: underline; }
-  .page_error .errorType {
-    padding: 0 0 20px;
-    color: #8c8c8c;
-    font-size: 0.8rem;
-    text-transform: uppercase; }
-
-/* * NombreDeProyecto * ========================================================
-   Page Index Styles | Custom [/etc/css/custom/page_index.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Page Index Full Height Styles | Custom [/etc/css/custom/imp/page_index_fullHeight_imp.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Post ------------------------------------------------------------------ */

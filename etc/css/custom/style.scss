@@ -1,0 +1,90 @@
+/*
+Theme Name:  Child Theme. Child for THEME.
+Theme URI:  https_sitioweb_com
+Description:  Custom design for sitioweb_com
+Author:  AUTHOR
+Textdomain:  AUTHOR
+Author URI:  https_sitioweb_com/
+Template:  THEME
+Version:  1.0
+License:  GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
+*/
+
+@import "../scss/charset";
+@import "var/env_var";
+
+@import "../scss/var_fonts";
+@import "var/fonts_main_var";
+@import "var/text_var";
+@import "fontFace";
+
+@import "css_pre";
+
+/* // Main CSS -------------------------------------------------------------- */
+//@import "../scss/settings_html_body";
+//@import "body";
+//@import "../scss/reset_main";
+//@import "reset_custom";
+
+//@import "../scss/settings_text";
+//@import "text";
+//@import "classes_text"; 
+
+//@import "colours_gradients";
+
+//@import "includes_backgrounds";
+//@import "classes_backgrounds";
+//@import "shadows";
+
+//@import "../scss/classes_useful_all";
+//@import "../scss/classes_useful_responsive";
+
+//@import "../scss/settings_container";
+
+//@import "print";
+
+//@import "global";
+//@import "lists";
+//@import "buttons";
+//@import "hover";
+//@import "focus";
+//@import "scrollbar";
+//@import "breadcrumbs";
+//@import "iframe";
+
+//@import "animation";
+//@import "animation_index";
+
+//@import "../scss/settings_form";
+//@import "form";
+//@import "form_search";
+//@import "form_checkbox";
+
+//@import "../scss/settings_tables";
+//@import "tables";
+
+//@import "popup";
+
+//@import "header";
+//@import "social";
+//@import "footer";
+
+//@import "../scss/settings_nav";
+//@import "../scss/settings_nav_drawer";
+//@import "../scss/settings_nav_accordion";
+//@import "nav_main_drawer";
+//@import "nav_main_accordion";
+//@import "nav_main_list";
+//@import "nav_main_AT";
+//@import "nav_main_ALL";
+//@import "nav_lang";
+//@import "nav_lang_square";
+
+//@import "slider";
+//@import "slider_nav";
+
+@import "wp_styles";
+
+/* // Post ------------------------------------------------------------------ */
+@import "css_post";

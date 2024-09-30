@@ -10,11 +10,10 @@
 //
 // 01 _ colourLightClassesGenerator
 // 02 _ colourDarkClassesGenerator
-// 03 _ colourCustomHoverClassesGenerator
-// 04 _ anchorColoursLightClassesGenerator
-// 05 _ anchorColoursDarkClassesGenerator
-// 06 _ backgroundColourClassesGenerator
-// 07 _ backgroundColourHoverClassesGenerator
+// 03 _ anchorColoursLightClassesGenerator
+// 04 _ anchorColoursDarkClassesGenerator
+// 05 _ backgroundColourClassesGenerator
+// 06 _ backgroundColourHoverClassesGenerator
 //
 // Los mixins 1 a 5 se utilizan en `[/scss/settings_text.scss]`
 // Los mixins 6 y 7 se utilizan en `[/etc/css/custom/includes_backgrounds.scss]`
@@ -22,7 +21,6 @@
 //
 // 01 _ colourLightClassesGenerator
 // 02 _ colourDarkClassesGenerator
-// 03 _ colourCustomHoverClassesGenerator
 // Por cada color genera una clase
 // y los selectores para los elementos `b`, `strong`, `i` y `em`.
 //
@@ -62,8 +60,8 @@
 // label.verdeAgua:hover { color: #hex; }
 //
 //
-// 04 _ anchorColoursLightClassesGenerator
-// 05 _ anchorColoursDarkClassesGenerator
+// 03 _ anchorColoursLightClassesGenerator
+// 04 _ anchorColoursDarkClassesGenerator
 // Por cada color genera selectores para anclas dentro de la clase.
 //
 // Ej.
@@ -74,14 +72,14 @@
 // .verdeAgua a:hover { color: #hex; }
 //
 //
-// 06 _ backgroundColourClassesGenerator
+// 05 _ backgroundColourClassesGenerator
 // Por cada color genera una clase para usar como color de fondo.
 //
 // Ej.
 // .bgVerdeAgua { background-color: #hex; }
 //
 //
-// 07 _ backgroundColourHoverClassesGenerator
+// 06 _ backgroundColourHoverClassesGenerator
 // Por cada color genera selectores para las pseudo-clases `:focus` y `:hover`
 // de un ancla con clase del tipo `.bgColour`.
 //
@@ -185,29 +183,6 @@
         @if $form_label_coloured_act == "on"{
             label.#{$colourDarkClassesGeneratorMX_colourClassName}{
                 &, &:focus, &:focus-visible, &:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-            }
-        }
-    }
-}
-@mixin colourCustomHoverClassesGenerator{
-    @each $colourCustomHoverClassesGeneratorMX_colourClassName, $colourCustomHoverClassesGeneratorMX_colourHexValue in $colours_custom_hover_map {
-        .#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
-            &, b, strong, i, em{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
-        }
-        a.#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
-            &, &:active, &:visited, 
-            &.noHover:focus, &.noHover:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
-            @extend %anchor_button_focusHoverCustom__#{$colourCustomHoverClassesGeneratorMX_colourClassName}
-        }
-        @if $button_coloured_act == "on"{
-            button.#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
-                &, &.noHover:focus, &.noHover:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
-                @extend %anchor_button_focusHoverCustom__#{$colourCustomHoverClassesGeneratorMX_colourClassName}
-            }
-        }
-        @if $form_label_coloured_act == "on"{
-            label.#{$colourCustomHoverClassesGeneratorMX_colourClassName}{
-                &, &:focus, &:focus-visible, &:hover{color: $colourCustomHoverClassesGeneratorMX_colourHexValue;}
             }
         }
     }

@@ -1,37 +1,14 @@
 /* * NombreDeProyecto * ========================================================
-   Fonts Activators | Custom [/etc/css/custom/act/fonts_act.scss]
+   Text Colour Variables | Custom [/etc/css/custom/var/text_colours_var.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
-// Activadores para fuentes.
-//
-// #activator #font #ftWeight #google
-//
-// REF [14a] Idioma Chino ZH, MingLiu font
+// Archivo de asignacion de variables de texto. Colores de texto y anclas.
 
+// REF [01] Google fonts
+// REF [46] Fuentes Regular y Bold
 
-/* // Listado --------------------------------------------------------------- */
-// 01 _ $googleFont_act
-// 02 _ $font_zh_act
-//
-//
-// 01 _ $googleFont_act
-// REF [01] en `[/etc/css/custom/act/fonts_act.scss]`
-//
-// Activa los if que se encuentran en
-// `[/etc/css/custom/_forms.scss]`,
-// `[/etc/css/scss/settings_forms.scss]`,
-// `[/etc/css/scss/settings_nav.scss]` y
-// `[/etc/css/scss/settings_nav_drawer.scss]`.
-//
-// Genera declaraciones `font-weight` para los elementos que tienen su fuente
-// cargada desde Google Fonts declarada con una variable `$ftFamily` por CSS.
-//
-//
-// 02 _ $font_zh_act
-// REF [14a] Idioma Chino ZH, MingLiu font
-//
-// Sin usar por el momento
+// #text #anchor #colour
 
 
 
@@ -53,7 +30,6 @@
 // _hs                  = hash
 // _imp			= importacion
 // _mx                  = mixin
-// _var                 = variables
 
 ///-- Espaciado
 // P, M                 = padding, margin
@@ -74,6 +50,12 @@
 
 
 
-/* // General --------------------------------------------------------------- */
-$googleFont_act:    off;
-$fonts_zh_act:     off; 
+/* // Text Colours ---------------------------------------------------------- */
+$ftColour_main_global:          $black;
+$ftColour_main_global_hover:    lighten($ftColour_main_global, 20%);
+
+$ftColour_anchor_global:        $ftColour_main_global_hover;
+$ftColour_anchor_global_hover:  darken($ftColour_main_global_hover, 10%);
+
+$txSelection_ftColour_global:   $ftColour_main_global;
+$txSelection_bgColour_global:   $bgColour_neutral;

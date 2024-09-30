@@ -1,10 +1,12 @@
 /* * NombreDeProyecto * ========================================================
-   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
+   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_zh_var.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de fuentes.
 // Contiene mapas de fuentes.
+
+// REF [14a] Idioma Chino ZH, MingLiu font
 
 
 
@@ -57,10 +59,9 @@ $font_families_map:(
 // $timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 // font-family: $timesNewRoman;
 
-
-        arial:          Arial,
-        roboto:         Roboto,
-    //    timesNewRoman:  'Times New Roman'
+    arial:          'mingliuregular',
+    roboto:         'mingliuregular',
+    //    timesNewRoman:  'mingliuregular',
 );
     
 $font_weights_map:(
@@ -82,7 +83,9 @@ $font_weights_map:(
 // `ftFamily_` regular y bold
 // REF [46] Fuentes Regular y Bold
 
-$arial:             map-get($font_families_map, arial), $font_families_sans_list_fallback;
-$roboto:            map-get($font_families_map, roboto), $font_families_sans_list_fallback;
-//$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
-//$monospacedFont:    map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
+$arial:         map-get($font_families_map, arial);
+$roboto:        map-get($font_families_map, roboto);
+//$timesNewRoman: map-get($font_families_map, timesNewRoman);
+//$monospacedFont: map-get($font_families_map, monospacedFont);
+//$ming:              map-get($font_families_map, ming); // REF [14a]
+//$pming:             map-get($font_families_map, pming); // REF [14a]
