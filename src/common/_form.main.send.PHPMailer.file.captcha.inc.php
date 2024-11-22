@@ -14,7 +14,9 @@ require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
 
 /* // Status Captcha - Mensaje inicial -------------------------------------- */
-$form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
+$form_status_marquee__formMainID .= $form_status_captcha_ini__formMainID;
+
+$form_status_file__formMainID = '<p class="form_status form_status_file">File: awaiting form submit</p>';
 
 /* // Inicia proceso de form luego de form.submit() ------------------------- */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -66,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // esta declarada en `[/src/var/form.var.inc.php]`
         if ($captcha_response_keys["score"] >= $captcha_score_treshold) {
             
-            $form_status_marquee__formMainID .= $form_status_captcha_OKsuccessTrue__formMainID . $data_captchaResponseToken__formMainID;
+            $form_status_marquee__formMainID .= $form_status_captcha_OKsuccessTrue__formMainID . '<span class="consolas">' . $data_captchaResponseToken__formMainID . '</span>';
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
             if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -94,117 +96,145 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // Si todos los campos validan ------------------------------------------- */
                 $form_status_marquee__formMainID .= $form_status_captcha_OKvalidacionOK__formMainID;
                 
+                $form_status_file__formMainID .= '<p class="form_status form_status_file">Esperando verificar archivo</p>';
+                
+                if (array_key_exists('userfile', $_FILES)) {
+                    //First handle the upload
+                    //Don't trust provided filename - same goes for MIME types
+                    //See https://www.php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
+                    //
+                    //Extract an extension from the provided filename
+                    $ext = PHPMailer::mb_pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
+                    
+                    //Define a safe location to move the uploaded file to, preserving the extension
+                    $uploadfile = tempnam(sys_get_temp_dir(), hash('sha256', $_FILES['userfile']['name'])) . '.' . $ext;
+                        
+                    $form_status_file__formMainID .= '<p class="form_status form_status_file">Destino de archivo: « <pre>' . $uploadfile . ' </pre>»</p>';
+
+                    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+                    //Upload handled successfully
+                    //Now create a message
+                
 /* // Inicia $mail ---------------------------------------------------------- */
-                $mail = new PHPMailer(true);
-                try {
-                    $mail->CharSet = PHPMailer::CHARSET_UTF8;
+                        $mail = new PHPMailer(true);
+                        try {
+                            $mail->CharSet = PHPMailer::CHARSET_UTF8;
 
 /* // $mail SMTPDebug ------------------------------------------------------- */
-                    #$mail->SMTPDebug = 2;
-                    #$mail->SMTPDebug = SMTP::DEBUG_CONNECTION;
+                            #$mail->SMTPDebug = 2;
+                            #$mail->SMTPDebug = SMTP::DEBUG_CONNECTION;
 
 /* // $mail Host de conexion SMTP ------------------------------------------- */
-                    $mail->isSMTP();
-                    #$mail->Host = 'localhost';
+                            $mail->isSMTP();
+                            #$mail->Host = 'localhost';
                     
 /* // $mail Usuario y Password SMTP ----------------------------------------- */
-                    $mail->SMTPAuth = true;
-                    $mail->Username = $form_PHPMailer_account__formMainID;
-                    $mail->Password = 'contrasena';
+                            $mail->SMTPAuth = true;
+                            $mail->Username = $form_PHPMailer_account__formMainID;
+                            $mail->Password = 'contrasena';
             
 /* // $mail Seguridad TSL / SSL / Puertos ----------------------------------- */
-                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-                    $mail->SMTPSecure = 'ssl';
+                            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                            $mail->SMTPSecure = 'ssl';
 
-                    #$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                    #$mail->SMTPSecure = 'tls';
+                            #$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                            #$mail->SMTPSecure = 'tls';
 
-                    #$mail->Port = 25;
-                    #$mail->Port = 26;
-                    $mail->Port = 465;
-                    #$mail->Port = 587;
+                            #$mail->Port = 25;
+                            #$mail->Port = 26;
+                            $mail->Port = 465;
+                            #$mail->Port = 587;
                     
 /* // Descomentar si el servidor SMTP tiene un certificado autofirmado ------ */
-                    #$mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
+                            #$mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
                     
 /* // Descomentar si se requiere desactivar cifrado - (se suele usar en conjunto con la siguiente línea) - */
-                    #$mail->SMTPSecure = false;
+                            #$mail->SMTPSecure = false;
                     
 /* // Descomentar si se requiere desactivar completamente TLS (sin cifrado) - */
-                    #$mail->SMTPAutoTLS = false;
+                            #$mail->SMTPAutoTLS = false;
                     
 /* // Direcciones remitente y destinatarios --------------------------------- */
-                    $mail->setFrom($form_PHPMailer_account__formMainID, $site_name_form . ' Web Form');
-            
-                    $mail->addAddress('tampas@gmail.com');
-                    $mail->addCC('gabrielvol@protonmail.com');
-                    #$mail->addBCC('ggvv@hotmail.com.ar');
+                            $mail->setFrom($form_PHPMailer_account__formMainID, $site_name_form . ' Web Form');
 
-                    #$mail->addAddress($form_recipient__formMainID);
-                    #$mail->addCC($form_recipient_CC__formMainID);
-                    #$mail->addBCC($form_recipient_BCC__formMainID);
+                            $mail->addAddress('tampas@gmail.com');
+                            $mail->addCC('gabrielvol@protonmail.com');
+                            #$mail->addBCC('ggvv@hotmail.com.ar');
+
+                            #$mail->addAddress($form_recipient__formMainID);
+                            #$mail->addCC($form_recipient_CC__formMainID);
+                            #$mail->addBCC($form_recipient_BCC__formMainID);
                     
 /* // Cuerpo de mail y asunto ----------------------------------------------- */
-                    $mail->isHTML(true);
-                    $mail->Subject = 'Contacto Web PHPMailer con reCaptcha de ' . $data_nombre__formMainID . ' - ' . $form_id_spelled;
-                    $mail->Body  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $data_fullURL__formMainID .'</small><br /><br />';
-                    $mail->Body .= '<small style="color:#666">Filtro: FiltroWebForm</small><br /><br />';
-                    $mail->Body .= "<strong>Nombre:</strong> " . $data_nombre__formMainID . "<br />";  
-                    
-                    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
-                    
-                    $mail->Body .= '<br /><br /><strong>Errores:</strong><br />' . error_get_last()['message'];
-                    
-                    $mail->Body .= '<br><br>______<br><small style="color:#666">Fin del mensaje</small>';
-                    
+                            $mail->isHTML(true);
+                            $mail->Subject = 'Contacto Web PHPMailer, con archivo, con reCaptcha de ' . $data_nombre__formMainID . ' - ' . $form_id_spelled;
+                            $mail->Body  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $data_fullURL__formMainID .'</small><br /><br />';
+                            $mail->Body .= '<small style="color:#666">Filtro: FiltroWebForm</small><br /><br />';
+                            $mail->Body .= "<strong>Nombre:</strong> " . $data_nombre__formMainID . "<br />";  
+
+                            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
+
+                            $mail->Body .= '<br /><br /><strong>Errores:</strong><br />' . error_get_last()['message'];
+
+                            $mail->Body .= '<br><br>______<br><small style="color:#666">Fin del mensaje</small>';
+                            
+                            //Attach the uploaded file
+                            if (!$mail->addAttachment($uploadfile, 'My uploaded file')) {
+                                $form_status_file__formMainID .= '<p class="form_status form_status_file">No se pudo adjuntar el archivo: « ' . $_FILES['userfile']['name'] . ' »</p>';
+                            }
+                            
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
-                    $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_ok" role="alertdialog" aria-labelledby="formOK">'
-                        . '<div role="document" tabindex="0">'
-                        . '<button type="button" class="button_close button_close_pop button_close_pop_formStatus hover_grow_S_ani" name="pop_formStatus_close" aria-pressed="false">Cerrar</button>'
-                        . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMainID .'">' . $form_status_ok_globalA__formMainID.'</h2>'
-/* // REF [29] Form Status OK, tick */
-                        /* . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMainID .'"><span>'. $form_status_ok_globalA__formMainID.'</span></h2>' */
-                        . '<p>'. $form_status_ok_globalB__formMainID .'</p>'
-                        . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
-                        . '</div>'
-                        . '</div>'
-                        . '<div class="modal_global modal_formStatus"></div>';
+                            $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_ok" role="alertdialog" aria-labelledby="formOK">'
+                                . '<div role="document" tabindex="0">'
+                                . '<button type="button" class="button_close button_close_pop button_close_pop_formStatus hover_grow_S_ani" name="pop_formStatus_close" aria-pressed="false">Cerrar</button>'
+                                . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMainID .'">' . $form_status_ok_globalA__formMainID.'</h2>'
+        /* // REF [29] Form Status OK, tick */
+                                /* . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMainID .'"><span>'. $form_status_ok_globalA__formMainID.'</span></h2>' */
+                                . '<p>'. $form_status_ok_globalB__formMainID .'</p>'
+                                . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
+                                . '</div>'
+                                . '</div>'
+                                . '<div class="modal_global modal_formStatus"></div>';
+
+                            $form_validation_div_class__formMainID = 'displayNone';
                     
-                    $form_validation_div_class__formMainID = 'displayNone';
-                    
-                  // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_ok">' . $form_status_ok_global__formMainID .'</p>';
+                           // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_ok">' . $form_status_ok_global__formMainID .'</p>';
 /* // FIN mensaje ok en popup ----------------------------------------------- */
         
-                    $mail->send();  
+                            $mail->send();  
                     
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
-                    $_POST['data_nombre__formMainID'] = '';
-                    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
+                            $_POST['data_nombre__formMainID'] = '';
+                            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
                 
-                } catch (phpmailerException $e) {
-                    echo $e->errorMessage();
+                        } catch (phpmailerException $e) {
+                            echo $e->errorMessage();
 
-                } catch (Exception $e) {
+                        } catch (Exception $e) {
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- */
-                        $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
-                            . '<div role="document" tabindex="0">'
-                            . '<button type="button" class="button_close button_close_pop button_close_pop_formStatus hover_grow_S_ani" name="pop_formStatus_close" aria-pressed="false">Cerrar</button>'
-                            . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
-                            . '<p>'. $form_status_error_globalB__formMainID .'</p>'
-                            . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-                            . '<p class="formStatus_code">' . $mail->ErrorInfo . '</p>'
-                            . '<p class="formStatus_code">' . $e->getMessage() . '</p>'
-                            . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
-                            . '</div>'
-                            . '</div>'
-                            . '<div class="modal_global modal_formStatus"></div>';
-                        
-                        $form_validation_div_class__formMainID = 'displayNone';
-                        
-                      // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_error">' . $form_status_error_global__formMainID . '</p>';
+                            $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
+                                . '<div role="document" tabindex="0">'
+                                . '<button type="button" class="button_close button_close_pop button_close_pop_formStatus hover_grow_S_ani" name="pop_formStatus_close" aria-pressed="false">Cerrar</button>'
+                                . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
+                                . '<p>'. $form_status_error_globalB__formMainID .'</p>'
+                                . '<p>'. $form_status_error_globalC__formMainID .'</p>'
+                                . '<p class="formStatus_code">' . $mail->ErrorInfo . '</p>'
+                                . '<p class="formStatus_code">' . $e->getMessage() . '</p>'
+                                . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
+                                . '</div>'
+                                . '</div>'
+                                . '<div class="modal_global modal_formStatus"></div>';
+
+                            $form_validation_div_class__formMainID = 'displayNone';
+
+                          // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_error">' . $form_status_error_global__formMainID . '</p>';
 /* // FIN mensaje error en popup -------------------------------------------- */
 
                     // echo 'El mensaje no se ha podido enviar, error: ', $mail->ErrorInfo;
+                        }
+                    } else {
+                        $form_status_file__formMainID .= '<p class="form_status form_status_file">No se pudo mover el archivo. <pre>move_uploaded_file</pre> fails.</p>';
+                    }
                 }
             }
 

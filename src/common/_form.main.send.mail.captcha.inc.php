@@ -4,7 +4,7 @@
 // REF [50] Google reCaptcha
 */
 
-/* // Seteamos mensaje inicial de Captcha Status ---------------------------- */
+/* // Status Captcha - Mensaje inicial -------------------------------------- */
 $form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
 
 /* // Inicia proceso de form luego de form.submit() ------------------------- */
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 /* // Create variables for form data ---------------------------------------- */
     $data_nombre__formMainID          = $_POST['data_nombre__formMainID']; 
-    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
     
 /* // REF [50] Google reCaptcha --------------------------------------------- */
     $data_captchaResponseToken__formMainID                  = $_POST['data_captchaResponseToken__formMainID'];
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $form_validation_input_class_data_nombre__formMainID  = " form_validation_input_invalid";
                 $form_input_autofocus_data_nombre__formMainID         = "autofocus";
 
-            /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_div ----------------------------- */
         
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $form_validation_input_class_data_nombre__formMainID     = " form_validation_input_invalid";
                 $form_input_autofocus_data_nombre__formMainID         = "autofocus";
                 
-            /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
                 
 /* // FIN de validacion en .form_validation_span ---------------------------- */ 
             } else {
@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $formMail_texto .= '<small style="color:#444"><strong>Filtro:</strong> filtroWebForm</small><br /><br />';
                 $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formMainID ."<br />";
     
-                /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+                /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
                 $formMail_texto .= '<br /><br /><strong>Errores:</strong><br />' . error_get_last()['message'];
 
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // FIN mensaje ok en popup ----------------------------------------------- */            
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
                     $_POST['data_nombre__formMainID']         = ''; 
-                    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */           
+                    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */           
 
 /* // Si no se pudo hacer el envio de mail devolvemos un error -------------- */
                 } else {                    

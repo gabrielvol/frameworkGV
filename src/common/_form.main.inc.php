@@ -27,7 +27,7 @@
 
         echo $form_status_marquee__formMainID;
         
-        echo $form_status_file_upload__formMainID;
+        echo $form_status_file__formMainID;
         
         echo $form_status_pop__formMainID;
         

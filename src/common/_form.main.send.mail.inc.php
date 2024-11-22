@@ -12,7 +12,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
 
 /* // Create variables for form data ---------------------------------------- */
     $data_nombre__formMainID          = $_POST['data_nombre__formMainID'];
-    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */    
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */    
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -20,7 +20,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
         $form_validation_div_class__formMainID                = " form_validation_div_invalid";
         $form_validation_input_class_data_nombre__formMainID  = " form_validation_input_invalid";
         $form_input_autofocus_data_nombre__formMainID         = "autofocus";
-    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_div ----------------------------- */
 
@@ -30,7 +30,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
         $form_validation_span_class_data_nombre__formMainID         = " form_validation_span_active";
         $form_validation_input_class_data_nombre__formMainID     = " form_validation_input_invalid";
         $form_input_autofocus_data_nombre__formMainID         = "autofocus";
-    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_span ---------------------------- */
         
@@ -52,7 +52,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
         $formMail_texto .= '<small style="color:#444"><strong>Filtro:</strong> filtroWebForm</small><br /><br />';
         $formMail_texto .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br />';
 
-        /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+        /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
         $formMail_texto .= '<br /><br /><strong>Errores:</strong><br />' . error_get_last()['message'];
 
@@ -87,7 +87,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
             
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
             $_POST['data_nombre__formMainID']         = ''; 
-            /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
 /* // Si no se pudo hacer el envio de mail devolvemos un error -------------- */
         } else {

@@ -12,7 +12,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
 
-/* // Seteamos mensaje inicial de Captcha Status ---------------------------- */
+/* // Status Captcha - Mensaje inicial -------------------------------------- */
 $form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
 
 /* // Inicia proceso de form ------------------------------------------------ */
@@ -21,7 +21,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
 /* // Create variables for form data ---------------------------------------- */
         $data_nombre__formMainID = $_POST['data_nombre__formMainID'];
         
-        /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+        /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -30,7 +30,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
         $form_validation_input_class_data_nombre__formMainID = " form_validation_input_invalid";
         $form_input_autofocus_data_nombre__formMainID = "autofocus";
 
-    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_div ----------------------------- */
 
@@ -42,7 +42,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
         $form_validation_input_class_data_nombre__formMainID = " form_validation_input_invalid";
         $form_input_autofocus_data_nombre__formMainID = "autofocus";
         
-    /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_span ---------------------------- */
         
@@ -104,7 +104,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
             $mail->Body .= '<small style="color:#444"><strong>Filtro:</strong> FiltroFormWeb</small><br><br>';
             $mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
     
-            /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
                     
             $mail->Body .= '<br /><br /><strong>Errores:</strong><br />' . error_get_last()['message'];
             
@@ -130,8 +130,11 @@ if (isset($_POST['button_form_submit__formMainID'])){
             
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
             $_POST['data_nombre__formMainID'] = '';        
-            /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+            /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
             
+        } catch (phpmailerException $e) {
+            echo $e->errorMessage();
+
         } catch (Exception $e) {
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- */
             $form_status_pop__formMainID = '<div class="pop_global pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
@@ -140,7 +143,8 @@ if (isset($_POST['button_form_submit__formMainID'])){
                 . '<h2 id="formError" class="' . $form_status_pop_h2_error_classes__formMainID . '">' . $form_status_error_globalA__formMainID . '</h2>'
                 . '<p>' . $form_status_error_globalB__formMainID . '</p>'
                 . '<p>' . $form_status_error_globalC__formMainID . '</p>'
-                . '<p class="pop_formStatus_error_inner">' . $mail->ErrorInfo . '</p>'
+                . '<p class="formStatus_code">' . $mail->ErrorInfo . '</p>'
+                . '<p class="formStatus_code">' . $e->getMessage() . '</p>'
                 . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
                 . '</div></div><div class="modal_global modal_formStatus"></div>';
             
