@@ -1,4 +1,8 @@
 <?php
+/* * NombreDeProyecto * ========================================================
+   Form Status [/src/var/form.main.status.es.inc.php]
+   ========================================================================== */
+
 /* // Form Status ----------------------------------------------------------- */
 $form_status_ini_globalA__formMainID      = 'Complete el formulario por favor.';
 $form_status_ini_globalB__formMainID      = 'Nos comunicaremos con Ud. a la brevedad.';

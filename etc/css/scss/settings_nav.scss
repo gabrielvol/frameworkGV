@@ -96,7 +96,7 @@ nav{
             background-repeat: no-repeat;
             font-family: $button_hamb_ftFamily;
 
-            @if $googleFont_act == "on"{
+            @if $google_fonts_act == "on"{
                 font-weight: $button_hamb_ftWeight;
             }
         }
@@ -150,7 +150,7 @@ nav{
                         color: $nav_item_ftColour_AT;
                         font-family: $nav_ftFamily_AT;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_ftWeight_AT;
                         }
                     }    
@@ -173,7 +173,7 @@ nav{
                         color: $nav_item_current_ftColour_AT;
                         font-family: $nav_item_current_ftFamily_AT;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_item_current_ftWeight_AT;
                         }
                     }  
@@ -202,7 +202,7 @@ nav{
                         color: $nav_item_ftColour_AT;
                         font-family: $nav_ftFamily_AT;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_ftWeight_AT;
                         }
                     }    
@@ -225,7 +225,7 @@ nav{
                         color: $nav_item_current_ftColour_AT;
                         font-family: $nav_item_current_ftFamily_AT;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_item_current_ftWeight_AT;
                         }
                     }  
@@ -257,7 +257,7 @@ nav{
                         font-family: $nav_item_subNav_ftFamily_AT;
                         cursor: pointer;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_item_subNav_ftWeight_AT;
                         }
                     }
@@ -278,7 +278,7 @@ nav{
                         font-family: $nav_item_subNav_current_ftFamily_AT;
                         cursor: default;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_item_subNav_current_ftWeight_AT;
                         }
                     }
@@ -345,7 +345,7 @@ nav{
                 .nav_TLI{
                     font-family: $nav_ftFamily_A1024;
 
-                    @if $googleFont_act == "on"{
+                    @if $google_fonts_act == "on"{
                         font-weight: $nav_ftWeight_A1024;
                     }
                 }                
@@ -357,7 +357,7 @@ nav{
                 .nav_TLI{
                     font-family: $nav_item_current_ftFamily_A1024;
 
-                    @if $googleFont_act == "on"{
+                    @if $google_fonts_act == "on"{
                         font-weight: $nav_item_current_ftWeight_A1024;
                     }
                 }
@@ -371,7 +371,7 @@ nav{
                     .nav_TLI{
                         font-family: $nav_item_subNav_ftFamily_A1024;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_item_subNav_ftWeight_A1024;
                         }
                     }                    
@@ -382,7 +382,7 @@ nav{
                     .nav_TLI{
                         font-family: $nav_item_subNav_current_ftFamily_A1024;
 
-                        @if $googleFont_act == "on"{
+                        @if $google_fonts_act == "on"{
                             font-weight: $nav_item_subNav_current_ftWeight_A1024;
                         }
                     }                    

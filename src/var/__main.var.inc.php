@@ -6,7 +6,7 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Listado principal de includes de variables php.
 //
-// REF [36] Form variable $has_form
+// REF [36] Form variables
 //
 // #php #variables #includes
 
@@ -24,7 +24,7 @@ include('domain.var.inc.php');
 // include('web.var.inc.php');
 include('url.var.inc.php');
 
-// include('book.var.inc.php');
+// include('data.books.var.inc.php');
     
 include('meta.titlesDesc.var.inc.php');
 // include('address.var.inc.php');

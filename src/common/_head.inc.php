@@ -89,15 +89,14 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <link rel="webmention" href="http://example.com/webmention">
 
 <?php /* Favicon */ ?>
-<link rel="icon" href="<?php echo $favicon_url; ?>/favicon.ico" sizes="any">
-<link rel="icon" href="<?php echo $favicon_url; ?>/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $favicon_url; ?>/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $favicon_url; ?>/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $favicon_url; ?>/favicon-16x16.png">
-<link rel="manifest" href="<?php echo $favicon_url; ?>/manifest.webmanifest" crossorigin="use-credentials">
-<link rel="mask-icon" href="<?php echo $favicon_url; ?>/safari-pinned-tab.svg" color="<?php echo $favicon_color_safariPinnedTab; ?>">
-<meta name="msapplication-TileColor" content="<?php echo $favicon_color_msApplicationTile; ?>">
-<meta name="theme-color" content="<?php echo $favicon_color_theme; ?>">
+<link rel="icon" type="image/png" href="<?php echo $favicon_url; ?>/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="<?php echo $favicon_url; ?>/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href="<?php echo $favicon_url; ?>/icon.svg" />
+<link rel="shortcut icon" href="<?php echo $favicon_url; ?>/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $favicon_url; ?>/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="sitioweb" />
+<link rel="manifest" href="<?php echo $favicon_url; ?>/site.webmanifest" />
+<link rel="manifest" href="<?php echo $favicon_url; ?>/manifest.webmanifest" />
 
 <?php /* Open Graph */ ?>
 <meta property="og:title" content="<?php echo $openGraph_title; ?>">

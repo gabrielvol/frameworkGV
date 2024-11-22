@@ -310,7 +310,7 @@ form{
         text-transform: uppercase;
         cursor: default;
         
-        @if $googleFont_act == "on"{
+        @if $google_fonts_act == "on"{
             font-weight: $button_form_submit_ftWeight;
         }
         
@@ -643,7 +643,7 @@ form{
             /* // REF [39] $form_label_floating_act */
             font-size: 1.1rem!important;
 
-            @if $googleFont_act == "on"{
+            @if $google_fonts_act == "on"{
                 font-weight: $form_label_ftWeight;
             }
         }

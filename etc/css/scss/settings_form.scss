@@ -369,7 +369,7 @@ form{
         color: $form_input_ftColour;
         font-family: $form_input_ftFamily; 
 
-        @if $googleFont_act == "on"{
+        @if $google_fonts_act == "on"{
             font-weight: $form_input_ftWeight;
         }
         
@@ -462,7 +462,7 @@ form{
             margin-bottom: $zero;
             font-family: $form_label_ftFamily;
 
-            @if $googleFont_act == "on"{
+            @if $google_fonts_act == "on"{
                 font-weight: $form_label_ftWeight;
             }
 

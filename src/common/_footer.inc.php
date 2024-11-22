@@ -47,17 +47,17 @@
     include('footer.js.inc.php');
     
     // REF [47]
-    $android    = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-    $berry      = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-    $ipad       = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
-    $iphone     = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-    $ipod       = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-    $mobile     = strpos($_SERVER['HTTP_USER_AGENT'],"Mobile");
-    $palmpre    = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-    $tablet     = strpos($_SERVER["HTTP_USER_AGENT"],"Tablet");
+    $userAgent_android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+    $userAgent_blackBerry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+    $userAgent_iPad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
+    $userAgent_iPhone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+    $userAgent_iPod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+    $userAgent_mobile = strpos($_SERVER['HTTP_USER_AGENT'],"Mobile");
+    $userAgent_webOS = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+    $userAgent_tablet = strpos($_SERVER["HTTP_USER_AGENT"],"Tablet");
 
     if($topbar_hide_mobile == 1){
-        if ($android || $berry || $ipad || $iphone || $ipod || $mobile || $palmpre || $tablet == true){
+        if ($userAgent_android || $userAgent_blackBerry || $userAgent_iPad || $userAgent_iPhone || $userAgent_iPod || $userAgent_mobile || $userAgent_webOS || $userAgent_tablet == true){
             echo '<div class="pretopbar"></div>';
         }
     }
