@@ -1,16 +1,16 @@
 <?php 
-require 'PHPMailer/PHPMailerAutoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . 'PHPMailer/PHPMailerAutoload.php';
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
 // Set PHPMailer to use the sendmail transport
 $mail->isSendmail();
 //Set who the message is to be sent from
-$mail->setFrom('form@sitiowebcom', 'Form');
+$mail->setFrom('form@sitiowebcom', 'Web Form');
 //Set an alternative reply-to address
-$mail->addReplyTo('form@sitiowebcom', 'Form');
+$mail->addReplyTo('form@sitiowebcom', 'Web Form');
 //Set who the message is to be sent to
-$mail->addAddress('gabrielvol@protonmail.com', 'G V');
+$mail->addAddress('tampas@gmail.com', 'G V');
 //Set the subject line
 $mail->Subject = 'Contacto PHPMailer 5.2';
 //Read an HTML message body from an external file, convert referenced images to embedded,

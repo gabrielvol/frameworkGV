@@ -8,25 +8,25 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
 
 /* // Inicia proceso de form ------------------------------------------------ */
 if (isset($_POST['button_form_submit__formMainID'])){
     
 /* // Create variables for form data ---------------------------------------- */
-        $data_nombre__formMainID          = $_POST['data_nombre__formMainID'];
+        $data_nombre__formMainID = $_POST['data_nombre__formMainID'];
         
         /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
 
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
-        $form_validation_div_msg__formMainID                  = $form_validation_msg_data_nombre__formMainID;
-        $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-        $form_validation_input_class_data_nombre__formMainID  = " form_validation_input_invalid";
-        $form_input_autofocus_data_nombre__formMainID         = "autofocus";
+        $form_validation_div_msg__formMainID = $form_validation_msg_data_nombre__formMainID;
+        $form_validation_div_class__formMainID = " form_validation_div_invalid";
+        $form_validation_input_class_data_nombre__formMainID = " form_validation_input_invalid";
+        $form_input_autofocus_data_nombre__formMainID = "autofocus";
 
     /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
         
@@ -36,68 +36,79 @@ if (isset($_POST['button_form_submit__formMainID'])){
 
 /* // INICIA VALIDACIÓN en .form_validation_span ---------------------------- */    
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
-        $form_validation_span_msg_data_nombre__formMainID         = $form_validation_msg_data_nombre__formMainID;
-        $form_validation_span_msg_data_nombre_en__formMainID      = $form_validation_msg_data_nombre_en__formMainID;
-        $form_validation_span_class_data_nombre__formMainID       = " form_validation_span_active";
-        $form_validation_input_class_data_nombre__formMainID      = " form_validation_input_invalid";
-        $form_input_autofocus_data_nombre__formMainID             = "autofocus";
+        $form_validation_span_msg_data_nombre__formMainID = $form_validation_msg_data_nombre__formMainID;
+        $form_validation_span_msg_data_nombre_en__formMainID = $form_validation_msg_data_nombre_en__formMainID;
+        $form_validation_span_class_data_nombre__formMainID = " form_validation_span_active";
+        $form_validation_input_class_data_nombre__formMainID = " form_validation_input_invalid";
+        $form_input_autofocus_data_nombre__formMainID = "autofocus";
         
     /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
         
-    } else {
 /* // FIN de validacion en .form_validation_span ---------------------------- */
 
-
         
-/*___ Inicia $mail __________________________________________________________ */
+/* // Si todos los campos validan ------------------------------------------- */        
+    } else {
+        
+/* // Inicia $mail ---------------------------------------------------------- */
         $mail = new PHPMailer(true);
         try {
-            #$mail->SMTPDebug = 2; // Sacar esta línea para no mostrar salida debug
+            $mail->CharSet = PHPMailer::CHARSET_UTF8;
+            
+/* // $mail SMTPDebug ------------------------------------------------------- */
+            #$mail->SMTPDebug = 2;
             #$mail->SMTPDebug = SMTP::DEBUG_CONNECTION; 
+                    
+/* // $mail Host de conexion SMTP ------------------------------------------- */
             $mail->isSMTP();
-            $mail->Host = 'localhost';
+            #$mail->Host = 'localhost';
+            
+/* // $mail Usuario y Password SMTP ----------------------------------------- */
             $mail->SMTPAuth = true;
-            $mail->Username = 'form@sitiowebcom';
+            $mail->Username = $form_PHPMailer_account__formMainID;
             $mail->Password = 'contrasena';
-
-        /*___ Activar seguridad TLS _*/
+            
+/* // $mail Seguridad TSL / SSL / Puertos ----------------------------------- */
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->SMTPSecure = 'ssl';
 
             #$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             #$mail->SMTPSecure = 'tls';
-            
-        /*___ Puerto SMTP _*/
+
             #$mail->Port = 25;
             #$mail->Port = 26;
             $mail->Port = 465;
-            
-            $mail->CharSet = PHPMailer::CHARSET_UTF8;
 
-        /*___ Descomentar si el servidor SMTP tiene un certificado autofirmado _*/
+/* // Descomentar si el servidor SMTP tiene un certificado autofirmado ------ */
             #$mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
-        /*___ Descomentar si se requiere desactivar cifrado
-            (se suele usar en conjunto con la siguiente línea) _*/
+            
+/* // Descomentar si se requiere desactivar cifrado - (se suele usar en conjunto con la siguiente línea) - */
             #$mail->SMTPSecure = false;
-        /*___ Descomentar si se requiere desactivar completamente TLS (sin cifrado) _*/
+            
+/* // Descomentar si se requiere desactivar completamente TLS (sin cifrado) - */
             #$mail->SMTPAutoTLS = false;
 
-/*___ Cabeceras del correo __________________________________________________ */
-            $mail->setFrom('form@sitiowebcom');
+/* // Direcciones remitente y destinatarios --------------------------------- */
+            $mail->setFrom($form_PHPMailer_account__formMainID, 'Web Form');
             
             $mail->addAddress('tampas@gmail.com');
             $mail->addCC('gabrielvol@protonmail.com');
-            #$mail->addBCC('bcc@example.com');
-            
+            #$mail->addBCC('ggvv@hotmail.com.ar');
+
+            #$mail->addAddress($form_recipient__formMainID);
+            #$mail->addCC($form_recipient_CC__formMainID);
+            #$mail->addBCC($form_recipient_BCC__formMainID);
+
+/* // Cuerpo de mail y asunto ----------------------------------------------- */
             $mail->isHTML(true);
-            $mail->Subject = 'Contacto Web de ' . $data_nombre__formMainID;
-            $mail->Body    = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMainID . '</small><br><br>';
-            $mail->Body   .= '<small style="color:#444"><strong>Filtro:</strong> FiltroFormWeb</small><br><br>';
-            $mail->Body   .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID  . '<br>';
+            $mail->Subject = 'Contacto Web PHPMailer con reCaptcha de ' . $data_nombre__formMainID;
+            $mail->Body  = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMainID . '</small><br><br>';
+            $mail->Body .= '<small style="color:#444"><strong>Filtro:</strong> FiltroFormWeb</small><br><br>';
+            $mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
     
             /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
             
-            $mail->Body   .= '<br><br>______<br><small style="color:#666">Fin del mensaje</small>';
+            $mail->Body .= '<br><br>______<br><small style="color:#666">Fin del mensaje</small>';
             
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
             $form_status_pop__formMainID = '<div class="pop_global pop_formStatus pop_formStatus_ok" role="alertdialog" aria-labelledby="formOK">'
@@ -110,15 +121,15 @@ if (isset($_POST['button_form_submit__formMainID'])){
                 . '<button type="button" class="<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
                 . '</div></div><div class="modal_global modal_formStatus"></div>';
             
-            $form_validation_div_class__formMainID    = 'displayNone';
+            $form_validation_div_class__formMainID = 'displayNone';
 
-            $form_status_marquee__formMainID  = '';
+          // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_ok">' . $form_status_ok_global__formMainID .'</p>';
 /* // FIN mensaje ok en popup ----------------------------------------------- */   
             
             $mail->send();  
             
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
-            $_POST['data_nombre__formMainID']       = '';        
+            $_POST['data_nombre__formMainID'] = '';        
             /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
             
         } catch (Exception $e) {
@@ -133,9 +144,9 @@ if (isset($_POST['button_form_submit__formMainID'])){
                 . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
                 . '</div></div><div class="modal_global modal_formStatus"></div>';
             
-            $form_validation_div_class__formMainID    = 'displayNone';
+            $form_validation_div_class__formMainID = 'displayNone';
 
-            $form_status_marquee__formMainID  = '';
+            // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_error">' . $form_status_error_global__formMainID . '</p>';
 /* // FIN mensaje error en popup -------------------------------------------- */
             
             //echo 'El mensaje no se ha podido enviar, error: ', $mail->ErrorInfo;

@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // INICIA MENSAJE OK EN POPUP -------------------------------------------- */
                     $form_status_pop__formMainID = '<div class="pop_general pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formOK">'
                             . '<div role="document" tabindex="0">'
-                            . '<button type="button" class="button_pop_close button_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
+                            . '<button type="button" class="button_close button_close_pop hover_grow_S_ani">'. _("Cerrar") .'</button>'
                             . '<h2 id="formOK" class="'. $form_status_pop_h2_ok_classes__formMainID .'">'. _("$form_status_ok_globalA__formMainID") .'</h2>'
                             . '<p>'. _("$form_status_ok_globalB__formMainID") .'</p>'
                             . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">'. _("OK") .'</button>'
@@ -155,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- */
                     $form_status_pop__formMainID = '<div class="pop_general pop_warning pop_formStatus" role="alertdialog" aria-labelledby="formError">'
                             . '<div role="document" tabindex="0">'
-                            . '<button type="button" class="button_pop_close button_close hover_grow_S_ani">'. _("Cerrar") .'</button>'
+                            . '<button type="button" class="button_close button_close_pop hover_grow_S_ani">'. _("Cerrar") .'</button>'
                             . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">'. _("$form_status_error_globalA__formMainID") .'</h2>'
                             . '<p>'. _("$form_status_error_globalB__formMainID") .'</p>'
                             . '<p>'. _("$form_status_error_globalC__formMainID") .'</p>'

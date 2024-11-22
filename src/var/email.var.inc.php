@@ -6,6 +6,12 @@
 /* // Descripcion ----------------------------------------------------------- */
 
 /* // Domain main ----------------------------------------------------------- */
+$site_email_FORM         = 'form';
+$site_email_FORM_address = $site_email_FORM . '@' . $domain_main;
+$site_email_FORM_mailto  = 'mailto:' . $site_email_FORM_address;
+$site_email_FORM_href    = 'href="' . $site_email_FORM_mailto . '"';
+$site_email_FORM_anchor  = '<a ' . $site_email_FORM_href . '>' . $site_email_FORM_address . '</a>';
+
 $site_email_CONTACTO         = 'contacto';
 $site_email_CONTACTO_address = $site_email_CONTACTO . '@' . $domain_main;
 $site_email_CONTACTO_mailto  = 'mailto:' . $site_email_CONTACTO_address;

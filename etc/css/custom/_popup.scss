@@ -138,7 +138,7 @@
         
     @include afterMQ300{
         width: $pop_warning_width_max_B500;
-        margin-left: calc(calc(#{$pop_warning_width_max_B500} * -1) / 2);  
+        margin-left: calc(calc(#{$pop_warning_width_max_B500} * -1) / 2);
     }
 
     @include afterMQ500{
@@ -220,7 +220,8 @@
         margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
     }
 }
-
+    
+/* // Form status message --------------------------------------------------- */
 .pop_formStatus{
     padding: 20px!important;
         

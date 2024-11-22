@@ -1,71 +1,71 @@
 <?php
 /* // Create variables for form data ---------------------------------------- */
-$data_apellido__formMainID        = $_POST['data_apellido__formMainID'];
-$data_nombreAp__formMainID        = $_POST['data_nombreAp__formMainID'];
-$data_nombreCo__formMainID        = $_POST['data_nombreCo__formMainID'];
-$data_username__formMainID        = $_POST['data_username__formMainID'];
-$data_cantidad__formMainID        = $_POST['data_cantidad__formMainID'];
+$data_apellido__formMainID = $_POST['data_apellido__formMainID'];
+$data_nombreAp__formMainID = $_POST['data_nombreAp__formMainID'];
+$data_nombreCo__formMainID = $_POST['data_nombreCo__formMainID'];
+$data_username__formMainID = $_POST['data_username__formMainID'];
+$data_cantidad__formMainID = $_POST['data_cantidad__formMainID'];
 
-$data_genero__formMainID          = $_POST['data_genero__formMainID'];
-$data_dni__formMainID             = $_POST['data_dni__formMainID'];
-$data_fecha__formMainID           = $_POST['data_fecha__formMainID'];
+$data_genero__formMainID = $_POST['data_genero__formMainID'];
+$data_dni__formMainID = $_POST['data_dni__formMainID'];
+$data_fecha__formMainID = $_POST['data_fecha__formMainID'];
 
-$data_direccion__formMainID       = $_POST['data_direccion__formMainID'];
-$data_ciudad__formMainID          = $_POST['data_ciudad__formMainID'];
-$data_domicilio__formMainID       = $_POST['data_domicilio__formMainID'];
-$data_localidad__formMainID       = $_POST['data_localidad__formMainID'];
-$data_codigoPostal__formMainID    = $_POST['data_codigoPostal__formMainID'];
-$data_provincia__formMainID       = $_POST['data_provincia__formMainID'];
-$data_pais__formMainID            = $_POST['data_pais__formMainID'];
+$data_direccion__formMainID = $_POST['data_direccion__formMainID'];
+$data_ciudad__formMainID = $_POST['data_ciudad__formMainID'];
+$data_domicilio__formMainID = $_POST['data_domicilio__formMainID'];
+$data_localidad__formMainID = $_POST['data_localidad__formMainID'];
+$data_codigoPostal__formMainID = $_POST['data_codigoPostal__formMainID'];
+$data_provincia__formMainID = $_POST['data_provincia__formMainID'];
+$data_pais__formMainID = $_POST['data_pais__formMainID'];
 
-$data_email__formMainID           = $_POST['data_email__formMainID'];
-$data_telefono__formMainID        = $_POST['data_telefono__formMainID'];
-$data_celular__formMainID         = $_POST['data_celular__formMainID'];
+$data_email__formMainID = $_POST['data_email__formMainID'];
+$data_telefono__formMainID = $_POST['data_telefono__formMainID'];
+$data_celular__formMainID = $_POST['data_celular__formMainID'];
 $data_whatsappAreaCode__formMainID = $_POST['data_whatsapAreaCode__formMainID'];
-$data_whatsappNumber__formMainID  = $_POST['data_whatsappNumber__formMainID'];
+$data_whatsappNumber__formMainID = $_POST['data_whatsappNumber__formMainID'];
 
-$data_webSite__formMainID         = $_POST['data_webSite__formMainID'];
-$data_facebook__formMainID        = $_POST['data_facebook__formMainID'];
-$data_instagram__formMainID       = $_POST['data_instagram__formMainID'];  
-$data_comoQueres__formMainID      = $_POST['data_comoQueres__formMainID'];        
+$data_webSite__formMainID = $_POST['data_webSite__formMainID'];
+$data_facebook__formMainID = $_POST['data_facebook__formMainID'];
+$data_instagram__formMainID = $_POST['data_instagram__formMainID'];  
+$data_comoQueres__formMainID = $_POST['data_comoQueres__formMainID'];        
 
-$data_empresa__formMainID         = $_POST['data_empresa__formMainID'];
-$data_razonSocial__formMainID     = $_POST['data_razonSocial__formMainID'];
-$data_cargo__formMainID           = $_POST['data_cargo__formMainID'];
-$data_rubro__formMainID           = $_POST['data_rubro__formMainID'];
+$data_empresa__formMainID = $_POST['data_empresa__formMainID'];
+$data_razonSocial__formMainID = $_POST['data_razonSocial__formMainID'];
+$data_cargo__formMainID = $_POST['data_cargo__formMainID'];
+$data_rubro__formMainID = $_POST['data_rubro__formMainID'];
 
-$data_asunto__formMainID          = $_POST['data_asunto__formMainID'];
-$data_area__formMainID            = $_POST['data_area__formMainID'];
-$data_mensaje__formMainID         = $_POST['data_mensaje__formMainID'];
+$data_asunto__formMainID = $_POST['data_asunto__formMainID'];
+$data_area__formMainID = $_POST['data_area__formMainID'];
+$data_mensaje__formMainID = $_POST['data_mensaje__formMainID'];
     
     
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */    
-$_POST['data_apellido__formMainID']       = '';
-$_POST['data_nombreAp__formMainID']       = '';     
-$_POST['data_nombreCo__formMainID']       = '';               
-$_POST['data_genero__formMainID']         = '';
-$_POST['data_direccion__formMainID']      = '';
-$_POST['data_ciudad__formMainID']         = '';
-$_POST['data_domicilio__formMainID']      = '';
-$_POST['data_localidad__formMainID']      = '';
-$_POST['data_codigoPostal__formMainID']   = '';
-$_POST['data_provincia__formMainID']      = '';
-$_POST['data_pais__formMainID']           = '';
-$_POST['data_fecha__formMainID']          = '';
-$_POST['data_email__formMainID']          = '';
-$_POST['data_webSite__formMainID']        = '';
-$_POST['data_facebook__formMainID']       = '';
-$_POST['data_telefono__formMainID']       = '';
-$_POST['data_celular__formMainID']        = '';
+$_POST['data_apellido__formMainID'] = '';
+$_POST['data_nombreAp__formMainID'] = '';     
+$_POST['data_nombreCo__formMainID'] = '';               
+$_POST['data_genero__formMainID'] = '';
+$_POST['data_direccion__formMainID'] = '';
+$_POST['data_ciudad__formMainID'] = '';
+$_POST['data_domicilio__formMainID'] = '';
+$_POST['data_localidad__formMainID'] = '';
+$_POST['data_codigoPostal__formMainID'] = '';
+$_POST['data_provincia__formMainID'] = '';
+$_POST['data_pais__formMainID'] = '';
+$_POST['data_fecha__formMainID'] = '';
+$_POST['data_email__formMainID'] = '';
+$_POST['data_webSite__formMainID'] = '';
+$_POST['data_facebook__formMainID'] = '';
+$_POST['data_telefono__formMainID'] = '';
+$_POST['data_celular__formMainID'] = '';
 $_POST['data_whatsappAreaCode__formMainID'] = '';
 $_POST['data_whatsappNumber__formMainID'] = '';
-$_POST['data_empresa__formMainID']        = '';
-$_POST['data_razonSocial__formMainID']    = '';
-$_POST['data_cargo__formMainID']          = '';
-$_POST['data_rubro__formMainID']          = '';
-$_POST['data_comoQueres__formMainID']     = '';
-$_POST['data_asunto__formMainID']         = '';
-$_POST['data_mensaje__formMainID']        = '';
+$_POST['data_empresa__formMainID'] = '';
+$_POST['data_razonSocial__formMainID'] = '';
+$_POST['data_cargo__formMainID'] = '';
+$_POST['data_rubro__formMainID'] = '';
+$_POST['data_comoQueres__formMainID'] = '';
+$_POST['data_asunto__formMainID'] = '';
+$_POST['data_mensaje__formMainID'] = '';
     
     
     
@@ -105,7 +105,7 @@ $formMail_texto .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__form
     
     
 /* // Campos $mail->Body ---------------------------------------------------- */
-$mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID  . '<br>';
+$mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
 $mail->Body .= '<strong>Apellido:</strong> ' . $data_apellido__formMainID . '<br />';
 $mail->Body .= '<strong>Nombre y apellido:</strong> ' . $data_nombreAp__formMainID . '<br />';
 $mail->Body .= '<strong>Nombre completo:</strong> ' . $data_nombreCo__formMainID . '<br />';
@@ -141,357 +141,357 @@ $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMain
     
 /* // INICIA VALIDACIÓN en .form_validation_span ---------------------------- */
 } elseif(!isset($data_apellido__formMainID) || trim($data_apellido__formMainID) == ''){
-    $form_validation_span_msg_data_apellido__formMainID       = $form_validation_msg_data_apellido__formMainID;
-    $form_validation_span_class_data_apellido__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_apellido__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_apellido__formMainID       = "autofocus";
+    $form_validation_span_msg_data_apellido__formMainID = $form_validation_msg_data_apellido__formMainID;
+    $form_validation_span_class_data_apellido__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_apellido__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_apellido__formMainID = "autofocus";
 
 } elseif(!isset($data_nombreAp__formMainID) || trim($data_nombreAp__formMainID) == ''){
-    $form_validation_span_msg_data_nombreAp__formMainID       = $form_validation_msg_data_nombreAp__formMainID;
-    $form_validation_span_class_data_nombreAp__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_nombreAp__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_nombreAp__formMainID       = "autofocus";
+    $form_validation_span_msg_data_nombreAp__formMainID = $form_validation_msg_data_nombreAp__formMainID;
+    $form_validation_span_class_data_nombreAp__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_nombreAp__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_nombreAp__formMainID = "autofocus";
 
 } elseif(!isset($data_nombreCo__formMainID) || trim($data_nombreCo__formMainID) == ''){
-    $form_validation_span_msg_data_nombreCo__formMainID       = $form_validation_msg_data_nombreCo__formMainID;
-    $form_validation_span_class_data_nombreCo__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_nombreCo__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_nombreCo__formMainID       = "autofocus";
+    $form_validation_span_msg_data_nombreCo__formMainID = $form_validation_msg_data_nombreCo__formMainID;
+    $form_validation_span_class_data_nombreCo__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_nombreCo__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_nombreCo__formMainID = "autofocus";
 
 } elseif(!isset($data_username__formMainID) || trim($data_username__formMainID) == ''){
-    $form_validation_span_msg_data_username__formMainID       = $form_validation_msg_data_username__formMainID;
-    $form_validation_span_class_data_username__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_username__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_username__formMainID       = "autofocus";
+    $form_validation_span_msg_data_username__formMainID = $form_validation_msg_data_username__formMainID;
+    $form_validation_span_class_data_username__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_username__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_username__formMainID = "autofocus";
 
 } elseif(!isset($data_dni__formMainID) || trim($data_dni__formMainID) == ''){
-    $form_validation_span_msg_data_dni__formMainID            = $form_validation_msg_data_dni__formMainID;
-    $form_validation_span_class_data_dni__formMainID            = " form_validation_span_active";
-    $form_validation_input_class_data_dni__formMainID        = " form_validation_input_invalid";
-    $form_input_autofocus_data_dni__formMainID            = "autofocus";
+    $form_validation_span_msg_data_dni__formMainID = $form_validation_msg_data_dni__formMainID;
+    $form_validation_span_class_data_dni__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_dni__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_dni__formMainID = "autofocus";
 
 } elseif(!isset($data_direccion__formMainID) || trim($data_direccion__formMainID) == ''){
-    $form_validation_span_msg_data_direccion__formMainID      = $form_validation_msg_data_direccion__formMainID;
-    $form_validation_span_class_data_direccion__formMainID      = " form_validation_span_active";
-    $form_validation_input_class_data_direccion__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_direccion__formMainID      = "autofocus";
+    $form_validation_span_msg_data_direccion__formMainID = $form_validation_msg_data_direccion__formMainID;
+    $form_validation_span_class_data_direccion__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_direccion__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_direccion__formMainID = "autofocus";
 
 } elseif(!isset($data_ciudad__formMainID) || trim($data_ciudad__formMainID) == ''){
-    $form_validation_span_msg_data_ciudad__formMainID         = $form_validation_msg_data_ciudad__formMainID;
-    $form_validation_span_class_data_ciudad__formMainID         = " form_validation_span_active";
-    $form_validation_input_class_data_ciudad__formMainID     = " form_validation_input_invalid";
-    $form_input_autofocus_data_ciudad__formMainID         = "autofocus";
+    $form_validation_span_msg_data_ciudad__formMainID = $form_validation_msg_data_ciudad__formMainID;
+    $form_validation_span_class_data_ciudad__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_ciudad__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_ciudad__formMainID = "autofocus";
 
 } elseif(!isset($data_domicilio__formMainID) || trim($data_domicilio__formMainID) == ''){
-    $form_validation_span_msg_data_domicilio__formMainID      = $form_validation_msg_data_domicilio__formMainID;
-    $form_validation_span_class_data_domicilio__formMainID      = " form_validation_span_active";
-    $form_validation_input_class_data_domicilio__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_domicilio__formMainID      = "autofocus";
+    $form_validation_span_msg_data_domicilio__formMainID = $form_validation_msg_data_domicilio__formMainID;
+    $form_validation_span_class_data_domicilio__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_domicilio__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_domicilio__formMainID = "autofocus";
 
 } elseif(!isset($data_localidad__formMainID) || trim($data_localidad__formMainID) == ''){
-    $form_validation_span_msg_data_localidad__formMainID      = $form_validation_msg_data_localidad__formMainID;
-    $form_validation_span_class_data_localidad__formMainID      = " form_validation_span_active";
-    $form_validation_input_class_data_localidad__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_localidad__formMainID      = "autofocus";
+    $form_validation_span_msg_data_localidad__formMainID = $form_validation_msg_data_localidad__formMainID;
+    $form_validation_span_class_data_localidad__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_localidad__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_localidad__formMainID = "autofocus";
 
 } elseif(!isset($data_codigoPostal__formMainID) || trim($data_codigoPostal__formMainID) == ''){
-    $form_validation_span_msg_data_codigoPostal__formMainID   = $form_validation_msg_data_codigoPostal__formMainID;
-    $form_validation_span_class_data_codigoPostal__formMainID   = " form_validation_span_active";
-    $form_validation_input_class_data_codigoPostal__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_codigoPostal__formMainID   = "autofocus";
+    $form_validation_span_msg_data_codigoPostal__formMainID = $form_validation_msg_data_codigoPostal__formMainID;
+    $form_validation_span_class_data_codigoPostal__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_codigoPostal__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_codigoPostal__formMainID = "autofocus";
 
 } elseif(!isset($data_provincia__formMainID) || trim($data_provincia__formMainID) == ''){
-    $form_validation_span_msg_data_provincia__formMainID      = $form_validation_msg_data_provincia__formMainID;
-    $form_validation_span_class_data_provincia__formMainID      = " form_validation_span_active";
-    $form_validation_input_class_data_provincia__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_provincia__formMainID      = "autofocus";
+    $form_validation_span_msg_data_provincia__formMainID = $form_validation_msg_data_provincia__formMainID;
+    $form_validation_span_class_data_provincia__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_provincia__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_provincia__formMainID = "autofocus";
 
 } elseif(!isset($data_pais__formMainID) || trim($data_pais__formMainID) == ''){
-    $form_validation_span_msg_data_pais__formMainID           = $form_validation_msg_data_pais__formMainID;
-    $form_validation_span_class_data_pais__formMainID           = " form_validation_span_active";
-    $form_validation_input_class_data_pais__formMainID       = " form_validation_input_invalid";
-    $form_input_autofocus_data_pais__formMainID           = "autofocus";
+    $form_validation_span_msg_data_pais__formMainID = $form_validation_msg_data_pais__formMainID;
+    $form_validation_span_class_data_pais__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_pais__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_pais__formMainID = "autofocus";
 
 } elseif(!isset($data_celular__formMainID) || trim($data_celular__formMainID) == ''){
-    $form_validation_span_msg_data_celular__formMainID        = $form_validation_msg_data_celular__formMainID;
-    $form_validation_span_class_data_celular__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_celular__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_celular__formMainID        = "autofocus";
+    $form_validation_span_msg_data_celular__formMainID = $form_validation_msg_data_celular__formMainID;
+    $form_validation_span_class_data_celular__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_celular__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_celular__formMainID = "autofocus";
 
 } elseif(!isset($data_whatsappAreaCode__formMainID) || trim($data_whatsappAreaCode__formMainID) == ''){
-    $form_validation_span_msg_data_whatsappAreaCode__formMainID        = $form_validation_msg_data_whatsappAreaCode__formMainID;
-    $form_validation_span_class_data_whatsappAreaCode__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_whatsapp__formMainID    = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappAreaCode__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappAreaCode__formMainID        = "autofocus";
+    $form_validation_span_msg_data_whatsappAreaCode__formMainID = $form_validation_msg_data_whatsappAreaCode__formMainID;
+    $form_validation_span_class_data_whatsappAreaCode__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsappAreaCode__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsappAreaCode__formMainID = "autofocus";
 
 } elseif(!isset($data_whatsappNumber__formMainID) || trim($data_whatsappNumber__formMainID) == ''){
-    $form_validation_span_msg_data_whatsappNumber__formMainID        = $form_validation_msg_data_whatsappNumber__formMainID;
-    $form_validation_span_class_data_whatsappNumber__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_whatsapp__formMainID    = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappNumber__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappNumber__formMainID        = "autofocus";
+    $form_validation_span_msg_data_whatsappNumber__formMainID = $form_validation_msg_data_whatsappNumber__formMainID;
+    $form_validation_span_class_data_whatsappNumber__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsappNumber__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsappNumber__formMainID = "autofocus";
 
 } elseif(!isset($data_telefono__formMainID) || trim($data_telefono__formMainID) == ''){
-    $form_validation_span_msg_data_telefono__formMainID       = $form_validation_msg_data_telefono__formMainID;
-    $form_validation_span_class_data_telefono__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_telefono__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_telefono__formMainID       = "autofocus";
+    $form_validation_span_msg_data_telefono__formMainID = $form_validation_msg_data_telefono__formMainID;
+    $form_validation_span_class_data_telefono__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_telefono__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_telefono__formMainID = "autofocus";
 
 } elseif(!isset($data_email__formMainID) || trim($data_email__formMainID) == ''){
-    $form_validation_span_msg_data_email__formMainID          = $form_validation_msg_data_email__formMainID;
-    $form_validation_span_class_data_email__formMainID          = " form_validation_span_active";
-    $form_validation_input_class_data_email__formMainID      = " form_validation_input_invalid";
-    $form_input_autofocus_data_email__formMainID          = "autofocus";
+    $form_validation_span_msg_data_email__formMainID = $form_validation_msg_data_email__formMainID;
+    $form_validation_span_class_data_email__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_email__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_email__formMainID = "autofocus";
 
 } elseif(!isset($data_webSite__formMainID) || trim($data_webSite__formMainID) == ''){
-    $form_validation_span_msg_data_webSite__formMainID        = $form_validation_msg_data_webSite__formMainID;
-    $form_validation_span_class_data_webSite__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_webSite__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_webSite__formMainID        = "autofocus";
+    $form_validation_span_msg_data_webSite__formMainID = $form_validation_msg_data_webSite__formMainID;
+    $form_validation_span_class_data_webSite__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_webSite__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_webSite__formMainID = "autofocus";
 
 } elseif(!isset($data_facebook__formMainID) || trim($data_facebook__formMainID) == ''){
-    $form_validation_span_msg_data_facebook__formMainID       = $form_validation_msg_data_facebook__formMainID;
-    $form_validation_span_class_data_facebook__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_facebook__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_facebook__formMainID       = "autofocus";
+    $form_validation_span_msg_data_facebook__formMainID = $form_validation_msg_data_facebook__formMainID;
+    $form_validation_span_class_data_facebook__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_facebook__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_facebook__formMainID = "autofocus";
 
 } elseif(!isset($data_empresa__formMainID) || trim($data_empresa__formMainID) == ''){
-    $form_validation_span_msg_data_empresa__formMainID        = $form_validation_msg_data_empresa__formMainID;
-    $form_validation_span_class_data_empresa__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_empresa__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_empresa__formMainID        = "autofocus";
+    $form_validation_span_msg_data_empresa__formMainID = $form_validation_msg_data_empresa__formMainID;
+    $form_validation_span_class_data_empresa__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_empresa__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_empresa__formMainID = "autofocus";
 
 } elseif(!isset($data_razonSocial__formMainID) || trim($data_razonSocial__formMainID) == ''){
-    $form_validation_span_msg_data_razonSocial__formMainID        = $form_validation_msg_data_razonSocial__formMainID;
-    $form_validation_span_class_data_razonSocial__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_razonSocial__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_razonSocial__formMainID        = "autofocus";
+    $form_validation_span_msg_data_razonSocial__formMainID = $form_validation_msg_data_razonSocial__formMainID;
+    $form_validation_span_class_data_razonSocial__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_razonSocial__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_razonSocial__formMainID = "autofocus";
 
 } elseif(!isset($data_cargo__formMainID) || trim($data_cargo__formMainID) == ''){
-    $form_validation_span_msg_data_cargo__formMainID          = $form_validation_msg_data_cargo__formMainID;
-    $form_validation_span_class_data_cargo__formMainID          = " form_validation_span_active";
-    $form_validation_input_class_data_cargo__formMainID      = " form_validation_input_invalid";
-    $form_input_autofocus_data_cargo__formMainID          = "autofocus";
+    $form_validation_span_msg_data_cargo__formMainID = $form_validation_msg_data_cargo__formMainID;
+    $form_validation_span_class_data_cargo__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_cargo__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_cargo__formMainID = "autofocus";
 
 } elseif(!isset($data_fecha__formMainID) || trim($data_fecha__formMainID) == ''){
-    $form_validation_span_msg_data_fecha__formMainID          = $form_validation_msg_data_fecha__formMainID;
-    $form_validation_span_class_data_fecha__formMainID          = " form_validation_span_active";
-    $form_validation_input_class_data_fecha__formMainID      = " form_validation_input_invalid";
-    $form_input_autofocus_data_fecha__formMainID          = "autofocus";
+    $form_validation_span_msg_data_fecha__formMainID = $form_validation_msg_data_fecha__formMainID;
+    $form_validation_span_class_data_fecha__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_fecha__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_fecha__formMainID = "autofocus";
 
 } elseif(!isset($data_cantidad__formMainID) || trim($data_cantidad__formMainID) == ''){
-    $form_validation_span_msg_data_cantidad__formMainID       = $form_validation_msg_data_cantidad__formMainID;
-    $form_validation_span_class_data_cantidad__formMainID       = " form_validation_span_active";
-    $form_validation_input_class_data_cantidad__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_cantidad__formMainID       = "autofocus";
+    $form_validation_span_msg_data_cantidad__formMainID = $form_validation_msg_data_cantidad__formMainID;
+    $form_validation_span_class_data_cantidad__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_cantidad__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_cantidad__formMainID = "autofocus";
 
 } elseif(!isset($data_rubro__formMainID) || trim($data_rubro__formMainID) == ''){
-    $form_validation_span_msg_data_rubro__formMainID          = $form_validation_msg_data_rubro__formMainID;
-    $form_validation_span_class_data_rubro__formMainID          = " form_validation_span_active";
-    $form_validation_input_class_data_rubro__formMainID      = " form_validation_input_invalid";
-    $form_input_autofocus_data_rubro__formMainID          = "autofocus";
+    $form_validation_span_msg_data_rubro__formMainID = $form_validation_msg_data_rubro__formMainID;
+    $form_validation_span_class_data_rubro__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_rubro__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_rubro__formMainID = "autofocus";
 
 } elseif(!isset($data_comoQueres__formMainID) || trim($data_comoQueres__formMainID) == ''){
-    $form_validation_span_msg_data_comoQueres__formMainID     = $form_validation_msg_data_comoQueres__formMainID;
-    $form_validation_span_class_data_comoQueres__formMainID     = " form_validation_span_active";
+    $form_validation_span_msg_data_comoQueres__formMainID = $form_validation_msg_data_comoQueres__formMainID;
+    $form_validation_span_class_data_comoQueres__formMainID = " form_validation_span_active";
     $form_validation_input_class_data_comoQueres__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_comoQueres__formMainID     = "autofocus";
+    $form_input_autofocus_data_comoQueres__formMainID = "autofocus";
 
 } elseif(!isset($data_asunto__formMainID) || trim($data_asunto__formMainID) == ''){
-    $form_validation_span_msg_data_asunto__formMainID         = $form_validation_msg_data_asunto__formMainID;
-    $form_validation_span_class_data_asunto__formMainID         = " form_validation_span_active";
-    $form_validation_input_class_data_asunto__formMainID     = " form_validation_input_invalid";
-    $form_input_autofocus_data_asunto__formMainID         = "autofocus";
+    $form_validation_span_msg_data_asunto__formMainID = $form_validation_msg_data_asunto__formMainID;
+    $form_validation_span_class_data_asunto__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_asunto__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_asunto__formMainID = "autofocus";
 
 } elseif(!isset($data_area__formMainID) || trim($data_area__formMainID) == ''){
-    $form_validation_span_msg_data_area__formMainID           = $form_validation_msg_data_area__formMainID;
-    $form_validation_span_class_data_area__formMainID           = " form_validation_span_active";
-    $form_validation_input_class_data_area__formMainID          = " form_validation_input_invalid";
-    // $form_input_autofocus_data_area__formMainID        = "autofocus";
+    $form_validation_span_msg_data_area__formMainID = $form_validation_msg_data_area__formMainID;
+    $form_validation_span_class_data_area__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_area__formMainID = " form_validation_input_invalid";
+    // $form_input_autofocus_data_area__formMainID = "autofocus";
 
 } elseif(!isset($data_mensaje__formMainID) || trim($data_mensaje__formMainID) == ''){
-    $form_validation_span_msg_data_mensaje__formMainID        = $form_validation_msg_data_mensaje__formMainID;
-    $form_validation_span_class_data_mensaje__formMainID        = " form_validation_span_active";
-    $form_validation_input_class_data_mensaje__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_mensaje__formMainID        = "autofocus";
+    $form_validation_span_msg_data_mensaje__formMainID = $form_validation_msg_data_mensaje__formMainID;
+    $form_validation_span_class_data_mensaje__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_mensaje__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_mensaje__formMainID = "autofocus";
     
     
     
 /* // INICIA VALIDACIÓN en .form_validation_div ----------------------------- */  
 } elseif(!isset($data_apellido__formMainID) || trim($data_apellido__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_apellido__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_apellido__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_apellido__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_apellido__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_apellido__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_apellido__formMainID = "autofocus";
 
 } elseif(!isset($data_nombreAp__formMainID) || trim($data_nombreAp__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_nombreAp__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_nombreAp__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_nombreAp__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_nombreAp__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_nombreAp__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_nombreAp__formMainID = "autofocus";
 
 } elseif(!isset($data_nombreCo__formMainID) || trim($data_nombreCo__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_nombreCo__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_nombreCo__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_nombreCo__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_nombreCo__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_nombreCo__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_nombreCo__formMainID = "autofocus";
 
 } elseif(!isset($data_username__formMainID) || trim($data_username__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_username__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_username__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_username__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_username__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_username__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_username__formMainID = "autofocus";
 
 } elseif(!isset($data_dni__formMainID) || trim($data_dni__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_dni__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_dni__formMainID        = " form_validation_input_invalid";
-    $form_input_autofocus_data_dni__formMainID            = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_dni__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_dni__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_dni__formMainID = "autofocus";
 
 } elseif(!isset($data_direccion__formMainID) || trim($data_direccion__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_direccion__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_direccion__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_direccion__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_direccion__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_direccion__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_direccion__formMainID = "autofocus";
 
 } elseif(!isset($data_ciudad__formMainID) || trim($data_ciudad__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_ciudad__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_ciudad__formMainID     = " form_validation_input_invalid";
-    $form_input_autofocus_data_ciudad__formMainID         = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_ciudad__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_ciudad__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_ciudad__formMainID = "autofocus";
 
 } elseif(!isset($data_domicilio__formMainID) || trim($data_domicilio__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_domicilio__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_domicilio__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_domicilio__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_domicilio__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_domicilio__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_domicilio__formMainID = "autofocus";
 
 } elseif(!isset($data_localidad__formMainID) || trim($data_localidad__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_localidad__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_localidad__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_localidad__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_localidad__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_localidad__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_localidad__formMainID = "autofocus";
 
 } elseif(!isset($data_codigoPostal__formMainID) || trim($data_codigoPostal__formMainID) == ''){
-    $form_validation_div_msg__formMainID                          = $form_validation_msg_data_codigoPostal__formMainID;
-    $form_validation_div_class__formMainID                        = " form_validation_div_invalid";
-    $form_validation_input_class_data_codigoPostal__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_codigoPostal__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_codigoPostal__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_codigoPostal__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_codigoPostal__formMainID = "autofocus";
 
 } elseif(!isset($data_provincia__formMainID) || trim($data_provincia__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_provincia__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_provincia__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_provincia__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_provincia__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_provincia__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_provincia__formMainID = "autofocus";
 
 } elseif(!isset($data_pais__formMainID) || trim($data_pais__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_pais__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_pais__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_pais__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_pais__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_pais__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_pais__formMainID = "autofocus";
 
 } elseif(!isset($data_telefono__formMainID) || trim($data_telefono__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_telefono__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_telefono__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_telefono__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_telefono__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_telefono__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_telefono__formMainID = "autofocus";
 
 } elseif(!isset($data_celular__formMainID) || trim($data_celular__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_celular__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_celular__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_celular__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_celular__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_celular__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_celular__formMainID = "autofocus";
 
 } elseif(!isset($data_whatsappAreaCode__formMainID) || trim($data_whatsappAreaCode__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_whatsappAreaCode__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_whatsapp__formMainID    = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappAreaCode__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappAreaCode__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_whatsappAreaCode__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsappAreaCode__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsappAreaCode__formMainID = "autofocus";
 
 } elseif(!isset($data_whatsappNumber__formMainID) || trim($data_whatsappNumber__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_whatsappNumber__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_whatsapp__formMainID    = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappNumber__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappNumber__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_whatsappNumber__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsappNumber__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsappNumber__formMainID = "autofocus";
 
 } elseif(!isset($data_email__formMainID) || trim($data_email__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_email__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_email__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_email__formMainID          = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_email__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_email__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_email__formMainID = "autofocus";
 
 } elseif(!isset($data_webSite__formMainID) || trim($data_webSite__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_webSite__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_webSite__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_webSite__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_webSite__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_webSite__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_webSite__formMainID = "autofocus";
 
 } elseif(!isset($data_facebook__formMainID) || trim($data_facebook__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_facebook__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_facebook__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_facebook__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_facebook__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_facebook__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_facebook__formMainID = "autofocus";
 
 } elseif(!isset($data_comoQueres__formMainID) || trim($data_comoQueres__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_comoQueres__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_comoQueres__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
     $form_validation_input_class_data_comoQueres__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_comoQueres__formMainID     = "autofocus";
+    $form_input_autofocus_data_comoQueres__formMainID = "autofocus";
 
 } elseif(!isset($data_empresa__formMainID) || trim($data_empresa__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_empresa__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_empresa__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_empresa__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_empresa__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_empresa__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_empresa__formMainID = "autofocus";
 
 } elseif(!isset($data_razonSocial__formMainID) || trim($data_razonSocial__formMainID) == ''){
-    $form_validation_div_msg__formMainID                          = $form_validation_msg_data_razonSocial__formMainID;
-    $form_validation_div_class__formMainID                        = " form_validation_div_invalid";
-    $form_validation_input_class_data_razonSocial__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_razonSocial__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_razonSocial__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_razonSocial__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_razonSocial__formMainID = "autofocus";
 
 } elseif(!isset($data_cargo__formMainID) || trim($data_cargo__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_cargo__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_cargo__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_cargo__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_cargo__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_cargo__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_cargo__formMainID = "autofocus";
 
 } elseif(!isset($data_asunto__formMainID) || trim($data_asunto__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_asunto__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_cargo__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_cargo__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_asunto__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_cargo__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_cargo__formMainID = "autofocus";
 
 } elseif(!isset($data_fecha__formMainID) || trim($data_fecha__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_fecha__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_fecha__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_fecha__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_fecha__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_fecha__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_fecha__formMainID = "autofocus";
 
 } elseif(!isset($data_rubro__formMainID) || trim($data_rubro__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_rubro__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_rubro__formMainID  = " form_validation_input_invalid";
-    $form_input_autofocus_data_rubro__formMainID      = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_rubro__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_rubro__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_rubro__formMainID = "autofocus";
 
 } elseif(!isset($data_newsletter__formMainID) || trim($data_newsletter__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $form_validation_msg_data_newsletter__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_newsletter__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
     $form_validation_input_class_data_newsletter__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_newsletter__formMainID     = "autofocus";
+    $form_input_autofocus_data_newsletter__formMainID = "autofocus";
 
 } elseif(!isset($data_mensaje__formMainID) || trim($data_mensaje__formMainID) == ''){
-    $form_validation_div_msg__formMainID                      = $errordata_mensaje__formMainID;
-    $form_validation_div_class__formMainID                    = " form_validation_div_invalid";
-    $form_validation_input_class_data_mensaje__formMainID    = " form_validation_input_invalid";
-    $form_input_autofocus_data_mensaje__formMainID        = "autofocus";
+    $form_validation_div_msg__formMainID = $errordata_mensaje__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_mensaje__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_mensaje__formMainID = "autofocus";
 
 } elseif(!isset($data_area__formMainID) || trim($data_area__formMainID) == ''){
-    $form_validation_div_msg__formMainID                  = $form_validation_msg_data_area__formMainID;
-    $form_validation_div_class__formMainID                = " form_validation_div_invalid";
-    $form_validation_input_class_data_area__formMainID   = " form_validation_input_invalid";
-    $form_input_autofocus_data_area__formMainID       = "autofocus";
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_area__formMainID;
+    $form_validation_div_class__formMainID = " form_validation_div_invalid";
+    $form_validation_input_class_data_area__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_area__formMainID = "autofocus";
 ?>

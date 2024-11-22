@@ -41,18 +41,19 @@ $captcha_ip_remote = $_SERVER['REMOTE_ADDR'];
 /* // Form Main // REF [36] Form variables ---------------------------------- */
 if(!empty($dir_env) && $dir_env !== '/stage'):
     // test / maqueta
-    $form_recipient__formMainID           = 'tampas@gmail.com';
-    $form_recipient_CC__formMainID        = 'ggvv@hotmail.com.ar';
-    $form_recipient_BCC__formMainID       = 'gabrielvol@protonmail.com';
+    $form_recipient__formMainID = 'tampas@gmail.com';
+    $form_recipient_CC__formMainID = 'gabrielvol@protonmail.com';
+    $form_recipient_BCC__formMainID = 'ggvv@hotmail.com.ar';
 else:
     // produ / stage
-    $form_recipient__formMainID           = 'tampas@gmail.com'; // $site_email_CONTACTO_address;
-    $form_recipient_CC__formMainID        = 'ggvv@hotmail.com.ar'; // $site_email_CONTACTO_address; // . ', ' . $site_email_EMAILA_address;
-    $form_recipient_BCC__formMainID       = 'gabrielvol@protonmail.com';
+    $form_recipient__formMainID = 'tampas@gmail.com'; // $site_email_CONTACTO_address;
+    $form_recipient_CC__formMainID = 'gabrielvol@protonmail.com'; // $site_email_CONTACTO_address; // . ', ' . $site_email_EMAILA_address;
+    $form_recipient_BCC__formMainID = 'ggvv@hotmail.com.ar';
     
 endif;
 
-$form_status_recipient__formMainID        = $form_recipient__formMainID;
+$form_PHPMailer_account__formMainID = $site_email_FORM_address;
+$form_status_recipient__formMainID = $form_recipient__formMainID;
 $form_status_recipient_mailto__formMainID = 'mailto:' . $form_recipient__formMainID;
 
 
@@ -69,6 +70,7 @@ else:
     $form_recipient_BCC__formContacto       = 'gabrielvol@protonmail.com';
 endif;
 
+$form_PHPMailer_account__formContacto = $site_email_FORM_address;
 $form_status_recipient__formContacto        = $form_recipient__formContacto;
 $form_status_recipient_mailto__formContacto = 'mailto:' . $form_recipient__formContacto;
 */
@@ -86,6 +88,7 @@ else:
     $form_recipient_BCC__formFooter       = 'gabrielvol@protonmail.com';
 endif;    
 
+$form_PHPMailer_account__formFooter = $site_email_FORM_address;
 $form_status_recipient__formFooter        = $form_recipient__formFooter;
 $form_status_recipient_mailto__formFooter = 'mailto:' . $form_recipient__formFooter;
 */
