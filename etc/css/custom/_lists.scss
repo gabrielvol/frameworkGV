@@ -86,6 +86,10 @@ ol{
             }
         }
     }
+
+    &::after{
+        content: ".";        
+    }
 }     
 
 .list_numbered{    

@@ -6,24 +6,14 @@
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables php para <header>, <footer> y <#main>
 //
-// #php #variables #header #main #footer #class
+// #php #variables #header #main #footer #class #container
 
 // REF [38*] ContainerMAX width
-// En la variable `$class_end_main` se declara el ancho maximo de container
-// a partir del cual deja de crecer en ancho
-//
-// Minimo `.containerA1100`
-// `.containerA1200`
-// `.containerA1300`
-// `.containerA1400`
-// Maximo `.containerA1500`
-//
-// Este valor luego debe ser modificado en el archivo
-// `[/etc/css/custom/var/container_sizes_var.scss]`
-// declarado en la variable `$containerMAX_value`
-//
-// Y debe activarse la variable correspondiente en
-// `[/etc/css/custom/act/classes_useful_act.scss]`
+// En las variables `$class_end_` de Header, Footer y Main se concatena la variable 
+// `$containerMAX_value`, el ancho maximo de container a partir del cual deja
+// de crecer en ancho
+// 
+// La variable `$containerMAX_value` se declara en `[/src/var/global.var.inc.php]`
 
 
 
@@ -75,7 +65,7 @@ if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_header       .= 'error_alert error_alert_b '; endif;  
     
 //----- Finals
-    $class_end_header       = '';  
+    $class_end_header       = ' ' . $containerMAX_value; // REF [38*]
 
 if(!empty($page_redirect)):
     $class_end_header      .= 'header_redirect '; endif;  
@@ -107,7 +97,7 @@ if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_footer       .= 'error_alert error_alert_b '; endif;
     
 //----- Finals
-    $class_end_footer       = '';  
+    $class_end_footer       = ' ' . $containerMAX_value; // REF [38*]
 
 if(!empty($page_redirect)):
     $class_end_footer       .= 'footer_redirect '; endif;  
@@ -131,7 +121,7 @@ if(!empty($nav_pageCurrent_id)):
     $class_ini_main         .= $nav_pageCurrent_id . ' '; endif; 
     
 //----- Finals
-    $class_end_main         = 'containerA1400 '; // REF [38*]
+    $class_end_main         = ' ' . $containerMAX_value; // REF [38*]
 
 if(!empty($page_construccion)):
     $class_end_main         .= 'page_construccion '; endif; 

@@ -8,6 +8,9 @@
 // #activator #background #border #class #container #flexbox #list #margin
 // #padding #responsive #text #useful
 
+// REF [05]
+// REF [38*] ContainerMAX width
+
 
 /* // Listado --------------------------------------------------------------- */
 // 01 _ $classes_container_act
@@ -23,9 +26,6 @@
 // Activa los if que se encuentran en  `[/etc/css/scss/settings_container.scss]`
 // Genera los margenes negativos para cada media query para la clase
 // `.container_centered_absolute` que se usa junto con la clase `.container`
-//
-// REF [38*] ContainerMAX width
-// Al modificarse el valor de la variable `$class_end_main` en el archivo `[/src/var/class.var.inc.php]` hay que activar la variable correspondiente en este archivo
 //
 // Ej. con $classes_container_act_A500
 // @media (min-width: 500px) {
@@ -55,6 +55,15 @@
 //         margin-left: calc(-1 * calc(900px / 2));
 //     }
 // }
+//
+// REF [38*] ContainerMAX width
+// Al modificarse el valor de la variable `$containerMAX_value` en el archivo
+// `[/src/var/global.var.inc.php]` hay que activar la variable correspondiente
+// en este archivo
+
+// Este valor luego debe ser modificado en el archivo
+// `[/etc/css/custom/var/container_sizes_var.scss]`
+// declarado en la variable `$containerMAX_value`
 //
 //
 // 02 _ $helpers_spacing_act
@@ -271,6 +280,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 
 
 /* // After Desktop A1200 --------------------------------------------------- */
+// REF [38*] ContainerMAX width
 $classes_container_act_A1200:                      off;
 $helpers_spacing_act_A1200:                        off;
 $classes_position_display_mask_cursor_act_A1200:   off;
@@ -281,16 +291,19 @@ $classes_bg_bd_NO_act_A1200:                       off;
 
 
 /* // After Desktop A1300 --------------------------------------------------- */
+// REF [38*] ContainerMAX width
 $classes_container_act_A1300:                     off;
 
 
 /* // After Desktop A1400 --------------------------------------------------- */
+// REF [38*] ContainerMAX width
 $classes_container_act_A1400:                     on;
 
 
 /* // After Desktop A1500 --------------------------------------------------- */
+// REF [38*] ContainerMAX width
 $classes_container_act_A1500:                     off;
 
 
 /* // After Desktop A1600 --------------------------------------------------- */
-$classes_container_act_A1600:                     on;
+$classes_container_act_A1600:                     off;

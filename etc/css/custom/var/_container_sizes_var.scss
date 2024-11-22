@@ -9,10 +9,13 @@
 // En la variable `$containerMAX_value` se declara el ancho maximo de container
 // a partir del cual deja de crecer en ancho
 //
-// Minimo 1100 / 1200 / 1300 / 1400 / Maximo 1500
+// Minimo 1200 / 1300 / 1400 / Maximo 1500
 //
 // Este valor luego debe ser modificado en el archivo
-// `[/src/var/class.var.inc.php]` declarado en la variable `$class_end_main`
+// `[/src/var/global.var.inc.php]` declarado en la variable `$containerMAX_value`
+//
+// Y debe activarse la variable correspondiente en
+// `[/etc/css/custom/act/classes_useful_act.scss]`
 
 
 
@@ -79,7 +82,7 @@ $container_value_max_A1600:          $container_value_max_A1500;
 
 // REF [38*] ContainerMAX width
 $containerMAX_value:                1400px;
-$container_max_width_PR:            30px;
+$container_max_width_PR:            10px;
 $container_max_width_PL:            $container_max_width_PR;
 $container_max_width_PH:            calc(#{$container_max_width_PR} + #{$container_max_width_PL});
     
