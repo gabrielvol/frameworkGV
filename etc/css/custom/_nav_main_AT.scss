@@ -16,7 +16,7 @@
             width: calc(100% - #{$logo_width_A768});
         } 
          
-        @if $nav_fixed_AT_act == "on"{ // REF [15]
+        @if $nav_fixed_A768_act == "on"{ // REF [15]
             position: fixed;
             top: 0;
             right: 0;
@@ -114,7 +114,7 @@
 
             a,
             .nav_TLI{
-                @include transition(1s);
+                @include transition(0.6s);
                 font-size: 0.8rem;
                 padding-right: 5px;
                 padding-left: 5px;

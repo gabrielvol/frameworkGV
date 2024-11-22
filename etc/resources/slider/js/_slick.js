@@ -40,7 +40,6 @@ $(document).ready(function () {
 // La configuracion de un breakpoint se aplica a los breakpoint menores.
 // `{breakpoint: 1025}` para que corresponda con el media query beforeMQ1024
 // `{breakpoint: 601}` para que corresponda con el media query beforeMQ600
-            {breakpoint: 1200,
             {breakpoint: 1025,
                 settings: {
                      slidesToShow: 3 // Si `slidesToShow` > 1 `fade` debe ser false.

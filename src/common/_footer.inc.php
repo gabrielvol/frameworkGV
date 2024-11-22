@@ -8,8 +8,8 @@
     </div>
     <div class="footer_txt"> <?php /* // REF [20] */ ?>
         <p class="footer_address"><?php echo _("Direcci&oacute;n"); ?>: <a href="<?php echo $site_address_ADDRESSA_map_url; ?>" target="_blank"><?php echo $site_address_ADDRESSA; ?></a></p>
-        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_XXXX_call_href; ?>> <?php echo $site_tel_XXXX_formatted; ?></a></p>
-        <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_CONTACTO_href; ?>> <?php echo $site_email_CONTACTO_address; ?></a></p>
+        <p class="footer_tel"><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_XXXX_call_href; ?>><?php echo $site_tel_XXXX_formatted; ?></a></p>
+        <p class="footer_mail"><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_CONTACTO_href; ?>><?php echo $site_email_CONTACTO_address; ?></a></p>
     </div>  
     
     <nav class="nav_footer" aria-label="<?php echo _("Men&uacute; principal del sitio"); ?>.">
@@ -24,7 +24,7 @@
         <a href="<?php echo $site_address_ADDRESSA_map_url ?>" target="_blank"><?php echo $site_address_ADDRESSA; ?></a>
     </p>
     
-    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_XXXX_call_href; ?>> <?php echo $site_tel_XXXX_formatted; ?></a></p>
+    <p><?php echo _("Tel&eacute;fono"); ?>: <a <?php echo $site_tel_XXXX_call_href; ?>><?php echo $site_tel_XXXX_formatted; ?></a></p>
     
     <p><?php echo _("Correo electr&oacute;nico"); ?>: <a <?php echo $site_email_CONTACTO_href; ?>><?php echo $site_email_CONTACTO_address; ?></a></p>
     
@@ -56,7 +56,7 @@
     $userAgent_webOS = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
     $userAgent_tablet = strpos($_SERVER["HTTP_USER_AGENT"],"Tablet");
 
-    if($topbar_hide_mobile == 1){
+    if($topbar_hide_mobile){
         if ($userAgent_android || $userAgent_blackBerry || $userAgent_iPad || $userAgent_iPhone || $userAgent_iPod || $userAgent_mobile || $userAgent_webOS || $userAgent_tablet == true){
             echo '<div class="pretopbar"></div>';
         }

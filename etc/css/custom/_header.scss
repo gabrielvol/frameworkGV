@@ -1,6 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Header Styles | Custom [/etc/css/custom/header.scss]
    ========================================================================== */
+
+// REF [15] Nav Fixed AT
+
 @import 'imp/header_fullHeight_imp';
 @import 'imp/header_headerFixed_imp';
 
@@ -223,7 +226,7 @@
             }
         }
         
-        @if $nav_fixed_AT_act == "on"{
+        @if $nav_fixed_A768_act == "on"{ // REF [15]
             padding-top: $nav_height_A768;
         }
         

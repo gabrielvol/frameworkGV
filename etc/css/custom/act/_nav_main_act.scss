@@ -20,7 +20,7 @@
 // 02 _ $nav_text_white_act / $nav_text_black_act
 // 03 _ $nav_horizontalCenter_act
 // 04 _ $nav_topper_act
-// 05 _ $nav_fixed_AT_act
+// 05 _ $nav_fixed_A768_act
 // 06 _ $nav_item_current_bdB_act
 //
 //
@@ -50,10 +50,15 @@
 // y [/etc/css/scss/settings_nav.scss].
 //
 //
-// 05 _ $nav_fixed_AT_act
+// 05 _ $nav_fixed_A768_act
 // REF [15]
-// Activa el if que se encuentra en `[/etc/css/custom/nav_main_AT.scss]`.
+// Activa los if que se encuentran en `[/etc/css/custom/nav_main_AT.scss]` y
+// `[/etc/css/custom/header.scss]`
 // Genera declaraciones para el selector `.nav_main` AT
+//
+// #header{
+//     padding-top: $nav_height_A768;
+// }
 //
 // .nav_main{
 //     position: fixed;
@@ -120,7 +125,7 @@ $nav_horizontalCenter_TO_act:       off;
 $nav_horizontalCenter_A1024_act:      off;
      
 $nav_topper_act:                    off; // REF [44]
-$nav_fixed_AT_act:                  off; // REF [15]
+$nav_fixed_A768_act:                  off; // REF [15]
 
 // Si se activa `$nav_double_A768_act` hay que activar
 // `$classes_container_act_A768` en `[/etc/css/custom/act/classes_useful_act.scss]`

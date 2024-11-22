@@ -7,6 +7,7 @@
 // Listado principal de includes de variables php.
 //
 // REF [36] Form variables
+// REF [50] Google captcha
 //
 // #php #variables #includes
 
@@ -18,11 +19,11 @@ include('act/nav.act.inc.php');
     
 /* // Data ------------------------------------------------------------------ */
 include('lang.var.inc.php');
-//include('date.var.inc.php');
-
 include('domain.var.inc.php');
-// include('web.var.inc.php');
+//include('date.var.inc.php');
 include('url.var.inc.php');
+// include('web.var.inc.php');
+include('global.var.inc.php');
 
 // include('data.books.var.inc.php');
     
@@ -37,7 +38,8 @@ include('email.var.inc.php');
 // include('media.var.inc.php');
 // if($nav_pageCurrent == 'page_INT'){ include('page.PAGEINT.var.inc.php'); }
 
-// REF [36] Form variables
+// REF [36] Form variables Form variable
+// REF [50] Google captcha
 if(!empty($has_form)){ include('form.var.inc.php'); }
 
 include('class.var.inc.php');

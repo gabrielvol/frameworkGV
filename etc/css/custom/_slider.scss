@@ -86,6 +86,10 @@
     .slick-slide{
         z-index: $zIndex_slider_slide!important; 
     }
+    
+    #header &{
+        margin-top: 0;
+    }
 }
 
 .slick_with_nav{

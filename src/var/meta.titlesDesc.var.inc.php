@@ -29,7 +29,7 @@
 
 if(isset($gettext_idioma)){
 
-/* // en_GB ----------------------------------------------------------------- */    
+/* // en_GB ----------------------------------------------------------------- */
 if($gettext_idioma == 'en_GB'){
     $site_name_full         = 'SiteNameFull';
     $site_name_title        = 'SiteNameTitle';
@@ -86,11 +86,11 @@ if($gettext_idioma == 'en_GB'){
 
 
 /* // es_AR ----------------------------------------------------------------- */
-} } else {    
-    $site_name_full         = 'SiteNameFull';
-    $site_name_title        = 'SiteNameTitle';
-    $site_name_form        = 'SiteNameShort';
-    $site_name_tag          = 'SiteNameTag';
+} } else {
+    $site_name_full     = 'SiteNameFull';
+    $site_name_title    = 'SiteNameTitle';
+    $site_name_form     = 'SiteNameShort';
+    $site_name_tag      = 'SiteNameTag';
 
 //    $page_title_home_PAGEINT    = 'TituloEnCastellano';
 //    $page_title_home_PAGEINT    = 'TituloEnCastellano';
