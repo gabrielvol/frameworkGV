@@ -21,6 +21,7 @@
 // 3- En la pagina donde va a ser usado
 // 
 // $form_id = 'formMainID'; // REF [36] Form variables
+// $form_id_spelled = 'Contactanos';
 */
     
     $page_main_classes      = '';

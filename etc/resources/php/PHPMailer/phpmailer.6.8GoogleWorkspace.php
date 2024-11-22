@@ -23,6 +23,8 @@ try {
                     
 /* // $mail Usuario y Password SMTP ----------------------------------------- */
     $mail->SMTPAuth = true;
+    
+    /* No usar la variable $form_PHPMailer_account__formMainID porque es para procesar directo */
     $mail->Username = 'form@sitiowebcom';
     $mail->Password = 'appPwd';
             
@@ -48,15 +50,13 @@ try {
     #$mail->SMTPAutoTLS = false;
                     
 /* // Direcciones remitente y destinatarios --------------------------------- */ 
+    
+    /* No usar la variable $form_PHPMailer_account__formMainID porque es para procesar directo */
     $mail->setFrom('form@sitiowebcom', 'Web Form');
             
     $mail->addAddress('tampas@gmail.com');
     $mail->addCC('gabrielvol@protonmail.com');
     #$mail->addBCC('ggvv@hotmail.com.ar');
-
-    #$mail->addAddress($form_recipient__formMainID);
-    #$mail->addCC($form_recipient_CC__formMainID);
-    #$mail->addBCC($form_recipient_BCC__formMainID);
                     
 /* // Cuerpo de mail y asunto ----------------------------------------------- */ 
     $mail->isHTML(true);

@@ -8,7 +8,7 @@
 */
 ?>
 
-<form method="post" class="mha" id="<?php echo $form_id; ?>">
+<form method="post" enctype="multipart/form-data" class="mha" id="<?php echo $form_id; ?>" name="<?php echo $form_id; ?>">
     <?php
         $data_fullURL__formMainID = $page_url_full;
         
@@ -23,8 +23,12 @@
 
        // include('form.main.send.PHPMailer.inc.php');
        // include('form.main.send.PHPMailer.captcha.inc.php');
+       // include('form.main.send.PHPMailer.file.captcha.inc.php');
 
         echo $form_status_marquee__formMainID;
+        
+        echo $form_status_file_upload__formMainID;
+        
         echo $form_status_pop__formMainID;
         
         /* echo '<div class="form_validation_div '. $form_validation_div_class__formMainID .'">'. $form_validation_div_msg__formMainID .'</div>'; */              

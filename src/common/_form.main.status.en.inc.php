@@ -1,5 +1,10 @@
 <?php
 /* // Form Status ----------------------------------------------------------- */
+$form_status_pop_button_close_txt           = 'Close';
+$form_status_pop_h2_ok_classes__formMainID    = 'mbm greenSystem txAlignCenter';
+$form_status_pop_h2_error_classes__formMainID = 'mbm errorColour txAlignCenter';
+$form_status_pop_anchor_classes__formMainID   = 'mbm txAlignCenter';
+
 $form_status_ini_globalA__formMainID      = 'Please complete the form.';
 $form_status_ini_globalB__formMainID      = "We'll get in touch with you as soon as possible.";
 $form_status_ini_global__formMainID       = $form_status_ini_globalA__formMainID . ' ' . $form_status_ini_globalB__formMainID;
@@ -7,11 +12,6 @@ $form_status_ini_global__formMainID       = $form_status_ini_globalA__formMainID
 $form_status_ok_globalA__formMainID       = 'Message sent!';
 $form_status_ok_globalB__formMainID       = "Thank you. Your message has been successfully delivered, we'll be in touch shortly.";
 $form_status_ok_global__formMainID        = $form_status_ok_globalA__formMainID . ' ' . $form_status_ok_globalB__formMainID;
-
-$form_status_pop_button_close_txt           = 'Close';
-$form_status_pop_h2_ok_classes__formMainID    = 'mbm greenSystem txAlignCenter';
-$form_status_pop_h2_error_classes__formMainID = 'mbm errorColour txAlignCenter';
-$form_status_pop_anchor_classes__formMainID   = 'mbm txAlignCenter';
 
 $form_status_error_globalA__formMainID    = 'There was an error delivering your message.';
 $form_status_error_globalB__formMainID    = 'Please try again later.';

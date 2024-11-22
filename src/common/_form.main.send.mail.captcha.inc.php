@@ -5,7 +5,7 @@
 */
 
 /* // Seteamos mensaje inicial de Captcha Status ---------------------------- */
-// $form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
+$form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
 
 /* // Inicia proceso de form luego de form.submit() ------------------------- */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // esta declarada en `[/src/var/form.var.inc.php]`
         if ($captcha_response_keys["score"] >= $captcha_score_treshold) {
             
-            // $form_status_marquee__formMainID = $form_status_captcha_OKsuccessTrue__formMainID . $data_captchaResponseToken__formMainID;
+            $form_status_marquee__formMainID .= $form_status_captcha_OKsuccessTrue__formMainID . $data_captchaResponseToken__formMainID;
             
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
             if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -87,16 +87,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
                 
 /* // FIN de validacion en .form_validation_span ---------------------------- */ 
-
+            } else {
 /* // Si todos los campos validan ------------------------------------------- */
-            } else {                    
+                $form_status_marquee__formMainID = $form_status_captcha_OKvalidacionOK__formMainID;
                 
-                // $form_status_marquee__formMainID = $form_status_captcha_OKvalidacionOK__formMainID;
-                
-/* // Cuerpo de mail y asunto ----------------------------------------------- */                
+/* // Cuerpo de mail y asunto ----------------------------------------------- */
                 $formMail_recipient  = $form_recipient__formMainID;
                 // $formMail_recipient  = $data_area__formMainID;
-                $formMail_asunto   = "Contacto Web de ". $data_nombre__formMainID;
+                $formMail_asunto   = "Contacto Web mail() con reCaptcha de ". $data_nombre__formMainID . ' - ' . $form_id_spelled;
                 $formMail_headers  = "From: $data_nombre__formMainID <$data_email__formMainID>\r\n";
                 //$formMail_headers .= "Reply-To: $data_email__formMainID \r\n";
                 $formMail_headers .= "Content-type: text/html\r\n";
@@ -104,7 +102,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $formMail_headers .= 'MIME-Version: 1.0' . "\n";
                 //$formMail_headers .= "CC: ". $form_recipient_CC__formMainID ."\r\n";
                 //$formMail_headers .= "BCC: ". $form_recipient_BCC__formMainID ."\r\n";
-                $formMail_texto  = "<strong>Nombre:</strong> ". $data_nombre__formMainID ."<br />";
+                $formMail_texto  = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMainID . '</small><br /><br />';
+                $formMail_texto .= '<small style="color:#444"><strong>Filtro:</strong> filtroWebForm</small><br /><br />';
+                $formMail_texto .= "<strong>Nombre:</strong> ". $data_nombre__formMainID ."<br />";
     
                 /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
 
@@ -135,10 +135,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             . '<div class="modal_global modal_formStatus"></div>';
                     $form_validation_div_class__formMainID = 'displayNone';
                     $form_status_marquee__formMainID = '';
-/* // FIN mensaje ok en popup ----------------------------------------------- */    
-            
-            
-            
+/* // FIN mensaje ok en popup ----------------------------------------------- */            
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
                     $_POST['data_nombre__formMainID']         = ''; 
                     /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */           
@@ -172,10 +169,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
 /* // Si el score es menor al limite, pasa como spam ------------------------ */ 
     } elseif ($captcha_response_keys["score"] < $captcha_score_treshold) {
+            $form_status_marquee__formMainID = $form_status_captcha_ErrorScoreLow__formMainID;
             
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
             // TODO pop para sugerir otra forma de contacto cuando es spam
-            $form_status_marquee__formMainID = $form_status_captcha_ErrorScoreLow__formMainID;
             
             $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
                 . '<div role="document" tabindex="0">'
@@ -197,9 +194,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // Si obtenemos mensajes de error ---------------------------------------- */ 
     } elseif($captcha_response_keys["error-codes"]) {
         
+        $form_status_marquee__formMainID = $form_status_captcha_ErrorSuccessFalse__formMainID;
+        
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
         // TODO pop para sugerir otra forma de contacto cuando es spam
-        $form_status_marquee__formMainID = $form_status_captcha_ErrorSuccessFalse__formMainID;
         
         $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
             . '<div role="document" tabindex="0">'
@@ -220,10 +218,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 /* // Si success es false --------------------------------------------------- */ 
     } else {
+        
+        $form_status_marquee__formMainID = $form_status_captcha_ErrorOther__formMainID;
     
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
-        $form_status_marquee__formMainID = $form_status_captcha_ErrorOther__formMainID;
-        
         $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
             . '<div role="document" tabindex="0">'
             . '<button type="button" class="button_close button_close_pop button_close_pop_formStatus hover_grow_S_ani" name="pop_formStatus_close" aria-pressed="false">Cerrar</button>'

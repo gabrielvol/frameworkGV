@@ -25,6 +25,7 @@ $has_form               = 0; // REF [36] Form variables
 // 3- En la pagina donde va a ser usado
 // 
 // $form_id = 'formMainID'; // REF [36] Form variables
+// $form_id_spelled = 'Contactanos';
 */
 
 $has_lightbox           = 0; // REF [26]

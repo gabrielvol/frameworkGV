@@ -75,7 +75,7 @@
         text-align: center;
         
         & + p{
-            margin-top: 0.8em;
+            margin-top: 6px;
         }
     }
     
@@ -281,14 +281,7 @@
     }
         
     &.pop_formStatus_error{
-        p{        
-            &.pop_formStatus_error_inner{
-                border-radius: 4px;
-                background-color: $bgGrey4XL;
-                font-family: $consolas;
-                color: $bgGrey2XD;
-            }
-        }
+        p{}
     }
         
     @include beforeMQ300{
@@ -335,4 +328,13 @@
             font-size: 2rem;
         }
     }
+}
+
+.formStatus_code{
+    border-radius: 4px;
+    background-color: $bgGrey4XL;
+    padding: 4px 0;
+    color: $bgGrey2XD;
+    font-family: $consolas;
+    font-size: 0.7rem!important;
 }

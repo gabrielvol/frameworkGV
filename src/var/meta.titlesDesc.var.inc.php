@@ -18,6 +18,8 @@
 // `$page_title_home-PAGEINT` y `$site_name_title`
 // Ej.: Nosotros | `$page_title_home_laEmpresa` | `$site_name_title`  
 
+// La variable `$site_name_form` se usa en el asunto del mail que envia el form
+
 // La variable `$page_title_home-PAGEINT` tambien se usa para el item en
 // Nav Main para usar el mismo texto como item
 
@@ -30,8 +32,8 @@ if(isset($gettext_idioma)){
 /* // en_GB ----------------------------------------------------------------- */    
 if($gettext_idioma == 'en_GB'){
     $site_name_full         = 'SiteNameFull';
-    $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
+    $site_name_form        = 'SiteNameShort';
     $site_name_tag          = 'SiteNameTag';
 
 //    $page_title_home_PAGEINT    = 'TituloEnIngles';
@@ -58,8 +60,8 @@ if($gettext_idioma == 'en_GB'){
 /* // xx_XX ----------------------------------------------------------------- */
 } elseif($gettext_idioma == 'xx_XX'){
     $site_name_full          = 'SiteNameFull';
-    $site_name_short         = 'SiteNameShort';
     $site_name_title         = 'SiteNameTitle';
+    $site_name_form         = 'SiteNameShort';
     $site_name_tag           = 'SiteNameTag';
 
 //    $page_title_home_PAGEINT    = 'sinTraduccion';   
@@ -86,8 +88,8 @@ if($gettext_idioma == 'en_GB'){
 /* // es_AR ----------------------------------------------------------------- */
 } } else {    
     $site_name_full         = 'SiteNameFull';
-    $site_name_short        = 'SiteNameShort';
     $site_name_title        = 'SiteNameTitle';
+    $site_name_form        = 'SiteNameShort';
     $site_name_tag          = 'SiteNameTag';
 
 //    $page_title_home_PAGEINT    = 'TituloEnCastellano';

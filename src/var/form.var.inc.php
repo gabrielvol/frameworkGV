@@ -35,6 +35,7 @@ $captcha_ip_remote = $_SERVER['REMOTE_ADDR'];
 // 3- En la pagina donde va a ser usado
 // 
 // $form_id = 'formMainID'; // REF [36] Form variables
+// $form_id_spelled = 'Contactanos';
 
 
 

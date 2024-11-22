@@ -12,6 +12,9 @@ require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
 
+/* // Seteamos mensaje inicial de Captcha Status ---------------------------- */
+$form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
+
 /* // Inicia proceso de form ------------------------------------------------ */
 if (isset($_POST['button_form_submit__formMainID'])){
     
@@ -19,7 +22,6 @@ if (isset($_POST['button_form_submit__formMainID'])){
         $data_nombre__formMainID = $_POST['data_nombre__formMainID'];
         
         /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
-
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -31,10 +33,8 @@ if (isset($_POST['button_form_submit__formMainID'])){
     /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_div ----------------------------- */
-        
-        
 
-/* // INICIA VALIDACIÓN en .form_validation_span ---------------------------- */    
+/* // INICIA VALIDACIÓN en .form_validation_span ---------------------------- */
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
         $form_validation_span_msg_data_nombre__formMainID = $form_validation_msg_data_nombre__formMainID;
         $form_validation_span_msg_data_nombre_en__formMainID = $form_validation_msg_data_nombre_en__formMainID;
@@ -45,12 +45,9 @@ if (isset($_POST['button_form_submit__formMainID'])){
     /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
         
 /* // FIN de validacion en .form_validation_span ---------------------------- */
-
         
-/* // Si todos los campos validan ------------------------------------------- */        
     } else {
-        
-/* // Inicia $mail ---------------------------------------------------------- */
+/* // Si todos los campos validan inicia $mail ------------------------------ */
         $mail = new PHPMailer(true);
         try {
             $mail->CharSet = PHPMailer::CHARSET_UTF8;
@@ -78,6 +75,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
             #$mail->Port = 25;
             #$mail->Port = 26;
             $mail->Port = 465;
+            #$mail->Port = 587;
 
 /* // Descomentar si el servidor SMTP tiene un certificado autofirmado ------ */
             #$mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
@@ -89,7 +87,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
             #$mail->SMTPAutoTLS = false;
 
 /* // Direcciones remitente y destinatarios --------------------------------- */
-            $mail->setFrom($form_PHPMailer_account__formMainID, 'Web Form');
+            $mail->setFrom($form_PHPMailer_account__formMainID, $site_name_form . ' Web Form');
             
             $mail->addAddress('tampas@gmail.com');
             $mail->addCC('gabrielvol@protonmail.com');
@@ -101,12 +99,14 @@ if (isset($_POST['button_form_submit__formMainID'])){
 
 /* // Cuerpo de mail y asunto ----------------------------------------------- */
             $mail->isHTML(true);
-            $mail->Subject = 'Contacto Web PHPMailer con reCaptcha de ' . $data_nombre__formMainID;
+            $mail->Subject = 'Contacto Web PHPMailer de ' . $data_nombre__formMainID . ' - ' . $form_id_spelled;
             $mail->Body  = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMainID . '</small><br><br>';
             $mail->Body .= '<small style="color:#444"><strong>Filtro:</strong> FiltroFormWeb</small><br><br>';
             $mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
     
             /* El resto de las variables se declaran en `[/src/common/form.var.data.php]` */
+                    
+            $mail->Body .= '<br /><br /><strong>Errores:</strong><br />' . error_get_last()['message'];
             
             $mail->Body .= '<br><br>______<br><small style="color:#666">Fin del mensaje</small>';
             
@@ -124,8 +124,8 @@ if (isset($_POST['button_form_submit__formMainID'])){
             $form_validation_div_class__formMainID = 'displayNone';
 
           // $form_status_marquee__formMainID = '<p class="form_status_marquee form_status_ok">' . $form_status_ok_global__formMainID .'</p>';
-/* // FIN mensaje ok en popup ----------------------------------------------- */   
-            
+/* // FIN mensaje ok en popup ----------------------------------------------- */
+
             $mail->send();  
             
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */

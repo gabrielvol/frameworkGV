@@ -4,6 +4,11 @@
    ========================================================================== */
 
 /* // Form Status ----------------------------------------------------------- */
+$form_status_pop_button_close_txt           = 'Cerrar';
+$form_status_pop_h2_ok_classes__formMainID    = 'mbm greenSystem txAlignCenter';
+$form_status_pop_h2_error_classes__formMainID = 'mbm errorColour txAlignCenter';
+$form_status_pop_anchor_classes__formMainID   = 'mbm txAlignCenter';
+
 $form_status_ini_globalA__formMainID      = 'Complete el formulario por favor.';
 $form_status_ini_globalB__formMainID      = 'Nos comunicaremos con Ud. a la brevedad.';
 $form_status_ini_global__formMainID       = $form_status_ini_globalA__formMainID . ' ' . $form_status_ini_globalB__formMainID;
@@ -11,11 +16,6 @@ $form_status_ini_global__formMainID       = $form_status_ini_globalA__formMainID
 $form_status_ok_globalA__formMainID       = 'Mensaje enviado!';
 $form_status_ok_globalB__formMainID       = 'Los datos se han enviado correctamente. Muchas Gracias.';
 $form_status_ok_global__formMainID        = $form_status_ok_globalA__formMainID . ' ' . $form_status_ok_globalB__formMainID;
-
-$form_status_pop_button_close_txt           = 'Cerrar';
-$form_status_pop_h2_ok_classes__formMainID    = 'mbm greenSystem txAlignCenter';
-$form_status_pop_h2_error_classes__formMainID = 'mbm errorColour txAlignCenter';
-$form_status_pop_anchor_classes__formMainID   = 'mbm txAlignCenter';
 
 $form_status_error_globalA__formMainID    = 'Hubo un error al enviar el mensaje.';
 $form_status_error_globalB__formMainID    = 'Intente nuevamente m&aacute;s tarde.';
