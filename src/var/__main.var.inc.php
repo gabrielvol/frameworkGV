@@ -35,9 +35,9 @@ include('email.var.inc.php');
     
 // include('file.var.inc.php');
 // include('media.var.inc.php');
-// include('page.PAGEINT.var.inc.php');
+// if($nav_pageCurrent == 'page_INT'){ include('page.PAGEINT.var.inc.php'); }
 
-// REF [36]
+// REF [36] Form variables
 if(!empty($has_form)){ include('form.var.inc.php'); }
 
 include('class.var.inc.php');

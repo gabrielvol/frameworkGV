@@ -58,9 +58,10 @@ $font_families_map:(
 // font-family: $timesNewRoman;
 
 
-        arial:          Arial,
-        roboto:         Roboto,
-    //    timesNewRoman:  'Times New Roman'
+    arial:          Arial,
+    roboto:         Roboto,
+//    timesNewRoman:  'Times New Roman'
+    consolas:       Consolas
 );
     
 $font_weights_map:(
@@ -86,3 +87,4 @@ $arial:             map-get($font_families_map, arial), $font_families_sans_list
 $roboto:            map-get($font_families_map, roboto), $font_families_sans_list_fallback;
 //$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 //$monospacedFont:    map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
+$consolas:          map-get($font_families_map, consolas), $font_families_monospaced_list_fallback;

@@ -1,35 +1,39 @@
 /* * NombreDeProyecto * ========================================================
    Form javascript [/src/js/form.js]
    ========================================================================== */
-
 $(document).ready(function () {
     $('.button_form_submit').scrollPosReload(); // REF [25]
+        
+    $('.modal_formStatus, .button_close_pop_formStatus, .button_submit_pop_formStatus').click(function () {
+        $(this).closest('body').find('.pop_formStatus').addClass('displayNone');
+        $(this).closest('body').find('.modal_formStatus').addClass('displayNone');
+    });
     
 /*
     // REF [39] $form_label_floating_act
     // REF [39a] $form_label_floating_act
-    $('#data_nombre__formMain').blur(function() {
+    $('#data_nombre__formMainID').blur(function() {
         $(this).closest('label').removeClass('input_has_focus_js');   
       })
       .focus(function() {
         $(this).closest('label').addClass('input_has_focus_js');   
       });
 
-    $('#data_telefono__formMain').blur(function() {
+    $('#data_telefono__formMainID').blur(function() {
         $(this).closest('label').removeClass('input_has_focus_js');   
       })
       .focus(function() {
         $(this).closest('label').addClass('input_has_focus_js');   
       });
 
-    $('#data_email__formMain').blur(function() {
+    $('#data_email__formMainID').blur(function() {
         $(this).closest('label').removeClass('input_has_focus_js');   
       })
       .focus(function() {
         $(this).closest('label').addClass('input_has_focus_js');   
       });
 
-    $('#data_mensaje__formMain').blur(function() {
+    $('#data_mensaje__formMainID').blur(function() {
         $(this).closest('label').removeClass('input_has_focus_js');   
       })
       .focus(function() {
@@ -54,45 +58,45 @@ $(document).ready(function () {
 /*
 jQuery(document).ready(function($) {
     // REF [39] $form_label_floating_act
-    var $data_nombre__formMain      = $('#data_nombre__formMain');  
-    var $data_telefono__formMain    = $('#data_telefono__formMain');  
-    var $data_email__formMain       = $('#data_email__formMain');  
-    var $data_mensaje__formMain     = $('#data_mensaje__formMain'); 
+    var $data_nombre__formMainID      = $('#data_nombre__formMainID');  
+    var $data_telefono__formMainID    = $('#data_telefono__formMainID');  
+    var $data_email__formMainID       = $('#data_email__formMainID');  
+    var $data_mensaje__formMainID     = $('#data_mensaje__formMainID'); 
     
-    $data_nombre__formMain.on('change', function() {
-        var data_nombre_value__formMain = $data_nombre__formMain.val(); 
+    $data_nombre__formMainID.on('change', function() {
+        var data_nombre_value__formMainID = $data_nombre__formMainID.val(); 
             
-        if (!$(data_nombre_value__formMain).val() ){
+        if (!$(data_nombre_value__formMainID).val() ){
             $(this).closest('label').addClass('input_has_value_js');       
         } else {
             $(this).closest('label').removeClass('input_has_value_js');         
         }
     }); 
   
-    $data_telefono__formMain.on('change', function() {
-        var data_telefono_value__formMain = $data_telefono__formMain.val(); 
+    $data_telefono__formMainID.on('change', function() {
+        var data_telefono_value__formMainID = $data_telefono__formMainID.val(); 
             
-        if (!$(data_telefono_value__formMain).val() ){
+        if (!$(data_telefono_value__formMainID).val() ){
             $(this).closest('label').addClass('input_has_value_js');       
         } else {
             $(this).closest('label').removeClass('input_has_value_js');         
         }
     }); 
   
-    $data_email__formMain.on('change', function() {
-        var data_email_value__formMain = $data_email__formMain.val(); 
+    $data_email__formMainID.on('change', function() {
+        var data_email_value__formMainID = $data_email__formMainID.val(); 
             
-        if (!$(data_email_value__formMain).val() ){
+        if (!$(data_email_value__formMainID).val() ){
             $(this).closest('label').addClass('input_has_value_js');       
         } else {
             $(this).closest('label').removeClass('input_has_value_js');         
         }
     }); 
   
-    $data_mensaje__formMain.on('change', function() {
-        var data_mensaje_value__formMain = $data_mensaje__formMain.val(); 
+    $data_mensaje__formMainID.on('change', function() {
+        var data_mensaje_value__formMainID = $data_mensaje__formMainID.val(); 
             
-        if (!$(data_mensaje_value__formMain).val() ){
+        if (!$(data_mensaje_value__formMainID).val() ){
             $(this).closest('label').addClass('input_has_value_js');       
         } else {
             $(this).closest('label').removeClass('input_has_value_js');         

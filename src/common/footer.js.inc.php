@@ -2,10 +2,11 @@
 <script src="https://player.vimeo.com/api/player.js"></script>
 <?php endif; */ ?>
 
-<script src="<?php echo $dir_env; ?>/js/_global.js"></script>
-
-<?php if(!empty($dir_env)): // REF [48] Dev window width ?>
+<?php if($dir_env): /* // REF [48] Dev window width */ ?>
 <script src="<?php echo $dir_env; ?>/js/_global.stage.js"></script>
+
+<?php elseif(empty($dir_env)): ?>
+<script src="<?php echo $dir_env; ?>/js/_global.produ.js"></script>
 
 <?php endif; if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
@@ -72,12 +73,20 @@
 <script src="<?php echo $dir_env; ?>/js/_construccion.js"></script>
 */ ?>
 
-<?php endif; if(!empty($has_form)): // REF [36] ?>
+<?php endif; if(!empty($has_form)): // REF [36] Form variables ?>
 <script src="<?php echo $dir_env; ?>/js/scrollKeep.js"></script><?php /* // REF [25] */ ?>
 <?php /* <script src="<?php echo $dir_env; ?>/js/ui-datepicker.jQuery.js"></script> REF [31] */ ?>
 <script src="<?php echo $dir_env; ?>/js/_form.js"></script>
 
-<?php endif; if(!empty($has_lightbox)): /* // REF [26] */ ?>
+<?php endif;
+    // REF [50] Google reCaptcha */
+    if($has_captcha && $form_id == 'formMainID'): ?>
+<script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
+
+<?php elseif($has_captcha && $form_id == 'formContacto'): ?>
+<script src="<?php echo $dir_env; ?>/js/_captcha_formContacto.js"></script>
+
+<?php endif; if($has_lightbox == 1): /* // REF [26] */ ?>
 <script src="<?php echo $dir_env; ?>/js/lightbox.min.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_lightbox.js"></script>
 

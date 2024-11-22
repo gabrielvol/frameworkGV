@@ -5,12 +5,28 @@
 
 /* // Descripcion ----------------------------------------------------------- */
 
+// REF [26] Lightbox
+// REF [36] Form variables
+// REF [50] Google captcha
+
+
 
 /* // Variables en comun para las paginas internas de PAGEINT --------------- */
 $page_construccion      = 0;
 $page_redirect          = 0;
 
-$has_form               = 0; // REF [36]
+$has_form               = 0; // REF [36] Form variables
+
+/* // Form identifier global ------------------------------------------------ *
+// La variable $form_id puede ser declarada de tres formas:
+// 
+// 1- De manera global en `[/src/var/form.var.inc.php]` para todo el sitio
+// 2- En el archivo `[/src/var/page.PAGEINT.var.inc.php]` para un grupo de paginas
+// 3- En la pagina donde va a ser usado
+// 
+// $form_id = 'formMainID'; // REF [36] Form variables
+*/
+
 $has_lightbox           = 0; // REF [26]
 $has_pop_video          = 0;
 $has_scrolling          = 1;

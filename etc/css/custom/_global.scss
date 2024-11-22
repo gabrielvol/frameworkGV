@@ -81,6 +81,14 @@
     border: 6px solid #ff46b7;
 }
 
+@if $google_captcha_act == "on"{
+    /* // REF [50] Google reCaptcha */
+
+    .grecaptcha-badge{
+        z-index: $zIndex_captcha_badge;
+    }
+}
+
 .txBrand{}
 
 /* =============================================================================

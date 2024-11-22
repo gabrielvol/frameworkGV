@@ -2,8 +2,24 @@
    Global javascript [/src/js/global.stage.js]
    ========================================================================== */
 
+/* // Site variables -------------------------------------------------------- */
+// Variables globales para el entorno stage
+
+// REF [48] Dev window width
+
+let dir_env = '/stage';
+
+// Se anulan peticiones de captcha fuera del entorno produccion
+let captcha_key_site = 'sinclave';
+
+
+
 $(document).ready(function () {
 /* // REF [48] Dev window width --------------------------------------------- */
-    var postImgHeight = $(window).width();
-    document.getElementById("dev_window_width").innerHTML = postImgHeight;
+    let deviceWindowWidth = $(window).width();
+    document.getElementById("dev_window_width").innerHTML = deviceWindowWidth;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+/* // Separator ------------------------------------------------------------- */
 });

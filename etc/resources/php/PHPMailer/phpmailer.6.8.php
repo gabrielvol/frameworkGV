@@ -12,17 +12,25 @@ try {
     $mail->SMTPDebug = 2;  // Sacar esta línea para no mostrar salida debug
     $mail->SMTPDebug = SMTP::DEBUG_CONNECTION; 
     $mail->isSMTP();
-    #$mail->Host = 'localhost';  // Host de conexión SMTP
-    $mail->Host = 'smtp.sitiowebcom';  // Host de conexión SMTP
+    #$mail->Host = 'localhost';
+    $mail->Host = 'smtp.sitiowebcom';
     $mail->SMTPAuth = true;
     $mail->Username = 'form@sitiowebcom';
     $mail->Password = 'contrasena';
 
 /*___ Activar seguridad TLS _*/
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->SMTPSecure = 'ssl';
+
+    #$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    #$mail->SMTPSecure = 'tls';
+            
 /*___ Puerto SMTP _*/
+    #$mail->Port = 25;
+    #$mail->Port = 26;
     $mail->Port = 465;
+            
+    $mail->CharSet = PHPMailer::CHARSET_UTF8;
 
 /*___ Descomentar si el servidor SMTP tiene un certificado autofirmado _*/
     #$mail->SMTPOptions = ['ssl'=> ['allow_self_signed' => true]];
@@ -32,13 +40,17 @@ try {
 /*___ Descomentar si se requiere desactivar completamente TLS (sin cifrado) _*/
     #$mail->SMTPAutoTLS = false;
  
-    $mail->setFrom('form@sitiowebcom');		// Mail del remitente
-    $mail->addAddress('gabrielvol@protonmail.com');     // Mail del destinatario
+    $mail->setFrom('form@sitiowebcom');
+            
+    $mail->addAddress('tampas@gmail.com');
+    $mail->addCC('gabrielvol@protonmail.com');
+    #$mail->addBCC('bcc@example.com');
  
     $mail->isHTML(true);
-    $mail->Subject = 'Contacto PHPMailer 6.8';  // Asunto del mensaje
-    $mail->Body    = 'Este es el contenido del mensaje <b>en negrita!</b>';    // Contenido del mensaje (acepta HTML)
-    $mail->AltBody = 'Este es el contenido del mensaje en texto plano';    // Contenido del mensaje alternativo (texto plano)
+    $mail->Subject = 'Contacto PHPMailer 6.8';
+    
+    $mail->Body    = 'Este es el contenido del mensaje <b>en negrita!</b>';
+    $mail->AltBody = 'Este es el contenido del mensaje en texto plano';
  
     $mail->send();
     echo 'El mensaje ha sido enviado';

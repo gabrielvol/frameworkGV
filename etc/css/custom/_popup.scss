@@ -279,6 +279,17 @@
         }
     }
         
+    &.pop_formStatus_error{
+        p{        
+            &.pop_formStatus_error_inner{
+                border-radius: 4px;
+                background-color: $bgGrey4XL;
+                font-family: $consolas;
+                color: $bgGrey2XD;
+            }
+        }
+    }
+        
     @include beforeMQ300{
         width: $pop_formStatus_width_B300;
         max-width: $pop_formStatus_width_max_B300;

@@ -3606,7 +3606,7 @@ button, button::before, button::after {
   .pop_warning .button_close_pop:focus, .pop_warning .button_close_pop:focus-visible, .pop_warning .button_close_pop:hover {
     border-color: #4d4d4d; }
 
-.pop_warning .button_pop_submit {
+.pop_warning .button_submit_pop {
   transition: all 1s ease;
   height: 35px;
   line-height: 35px;
@@ -3615,9 +3615,9 @@ button, button::before, button::after {
   border-radius: 6px;
   background-color: #fff;
   font-size: 0.8rem; }
-  .pop_warning .button_pop_submit, .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:focus-visible, .pop_warning .button_pop_submit:hover {
+  .pop_warning .button_submit_pop, .pop_warning .button_submit_pop:focus, .pop_warning .button_submit_pop:focus-visible, .pop_warning .button_submit_pop:hover {
     border: 1px solid #919396 !important; }
-  .pop_warning .button_pop_submit:focus, .pop_warning .button_pop_submit:focus-visible, .pop_warning .button_pop_submit:hover {
+  .pop_warning .button_submit_pop:focus, .pop_warning .button_submit_pop:focus-visible, .pop_warning .button_submit_pop:hover {
     background-color: #e6e6e6;
     color: #000; }
 
@@ -3634,7 +3634,7 @@ button, button::before, button::after {
         }
         */ }
 
-.pop_formStatus .button_pop_submit {
+.pop_formStatus .button_submit_pop {
   /*
         background-color: $bgWhite;
         color: $black;

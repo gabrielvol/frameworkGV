@@ -13,7 +13,7 @@
         <h2 id="idlabelledby"><?php echo _("titulooooooo"); ?></h2>
         <p class=""><?php echo _("textooo"); ?>.</p>
         <p class=""><?php echo _("textooo"); ?> <a href="#"><?php echo _("clicaqui"); ?></a>.</p>
-        <button type="button" class="button_pop_submit" aria-pressed="false"><?php echo _("OK"); ?></button>
+        <button type="button" class="button_submit_pop" aria-pressed="false"><?php echo _("OK"); ?></button>
     </div>
 </div>
 <div class="modal_global modal_warning modal_xxx displayNone"></div>

@@ -8,6 +8,16 @@
     $nav_pageCurrent_int    = 'page_index_home';
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.index.var.inc.php'); 
+
+/* // Form identifier Global ------------------------------------------------ *
+// La variable $form_id puede ser declarada de tres formas:
+// 
+// 1- De manera global en `[/src/var/form.var.inc.php]` para todo el sitio
+// 2- En el archivo `[/src/var/page.PAGEINT.var.inc.php]` para un grupo de paginas
+// 3- En la pagina donde va a ser usado
+// 
+// $form_id = 'formMainID'; // REF [36] Form variables
+*/
     
     $page_main_classes      = '';
     

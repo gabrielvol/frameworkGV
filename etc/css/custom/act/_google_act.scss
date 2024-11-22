@@ -1,0 +1,80 @@
+/* * NombreDeProyecto * ========================================================
+   Google Activators | Custom [/etc/css/custom/act/google_act.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de variables activadoras para elementos de Google.
+//
+// #activator #google #captcha #recaptcha #forms
+
+
+/* // Listado --------------------------------------------------------------- */
+// 01 _ $google_captcha_act
+//
+//
+// 01 _ $google_captcha_act
+// Si se activa `$google_captcha_act` tambien hay que activar `$has_captcha` en 
+// `[/src/var/form.var.inc.php]`
+//
+// Activa el if que se encuentra en `[/etc/css/custom/buttons.scss]`.
+//
+// Genera la declaracion `bottom: 80px;` cuando el sitio web usa captcha para
+// no se superponga con el catpcha badge
+//
+// Imprime:
+// .button_whatsapp_anchor{
+//   bottom: 80px;
+// }
+//
+// Activa el if que se encuentra en `[/etc/css/custom/global.scss]`.
+//
+// Imprime la regla:
+// .grecaptcha-badge{
+//   z-index: $zIndex_captcha_badge;
+// }
+
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq, MQ               = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _before              = se usa con pseudo-elementos ::before
+// _after               = se usa con pseudo-elementos ::after
+// _act                 = activacion
+// _ani                 = animacion
+// _hover               = se usa con pseudo-clases :focus y :hover
+// _hs                  = hash
+// _imp			= importacion
+// _mx                  = mixin
+// _var                 = variables
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+    
+
+// Si se activa `$google_captcha_act` tambien hay que activar `$has_captcha` en 
+// `[/src/var/form.var.inc.php]`
+$google_captcha_act:             off;   

@@ -1,9 +1,6 @@
 /* * NombreDeProyecto * ========================================================
    Nav drawer javascript [/src/js/nav_drawer.js]
    ========================================================================== */
-
-var dir_env = '/stage';
-
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {
         $(this).addClass('button_hamb_open_pressed');

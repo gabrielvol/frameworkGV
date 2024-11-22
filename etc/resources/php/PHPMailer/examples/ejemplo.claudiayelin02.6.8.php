@@ -15,7 +15,7 @@ try {
     $mail->Host = 'claudiayelin.com';  // Host de conexión SMTP
     $mail->SMTPAuth = true;
     $mail->Username = 'form@claudiayelin.com';
-    $mail->Password = '***';
+    $mail->Password = 'contrasena';
 
 /*___ Activar seguridad TLS _*/
     $mail->SMTPSecure = 'ssl';

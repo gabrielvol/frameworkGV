@@ -5,7 +5,7 @@ $(document).ready(function () {
         $(this).closest('body').find('.modal_xxx').removeClass('displayNone');
     });
         
-    $('.modal_xxx, .button_close_pop, .button_pop_submit').click(function () {
+    $('.modal_xxx, .button_close_pop, .button_submit_pop').click(function () {
         $(this).closest('body').find('.button_pop_open_xxx').attr('aria-pressed', 'false');
         $(this).closest('body').find('.pop_xxx').addClass('displayNone');
         $(this).closest('body').find('.modal_xxx').addClass('displayNone');
