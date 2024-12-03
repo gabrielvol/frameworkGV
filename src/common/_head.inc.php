@@ -157,10 +157,11 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/speller.inc.php');
 ?>
 
-<?php if(empty($dir_env)): /* Facebook Pixel */ ?>
+<?php if(empty($dir_env) && empty($page_notrack)): /* Facebook Pixel */ ?>
 <?php endif; ?>
 
 </head>
 
-<?php if(empty($dir_env)): /* Google Analytics 4 */ ?>
+<?php if(empty($dir_env) && empty($page_notrack)): /* Google Analytics 4 */
+?>
 <?php endif; ?>
