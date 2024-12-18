@@ -385,6 +385,9 @@
 
     
 /* // 1500px ---------------------------------------------------------------- */
+@mixin beforeMQ1500{
+    @media (max-width: 1500px){@content;}}
+    
 @mixin afterMQ1500{
     @media (min-width: 1501px){@content;}}
 

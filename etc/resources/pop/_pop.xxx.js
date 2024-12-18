@@ -11,6 +11,10 @@ $(document).ready(function () {
         $(this).closest('body').find('.modal_xxx').addClass('displayNone');
     });
     
+    document.querySelector('.button_close_pop').addEventListener('click', function() {
+        this.setAttribute('aria-pressed', 'true');
+        this.closest('body').querySelector('.pop_xxx').style.display = 'none';
+    });
 
 /* // Certificado Giraldes / img no descargable ----------------------------- */
     $('.button_xxx').click(function () {

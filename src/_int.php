@@ -20,7 +20,7 @@
     $has_pop_video          = 0;
     $has_scrolling          = 1;
     $has_slider             = 0;
-    $page_notrack           = 1;
+    $page_noTrack           = 1;
 //    $has-CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 
