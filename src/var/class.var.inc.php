@@ -71,7 +71,7 @@ if(!empty($page_redirect)):
     $class_end_header      .= 'header_redirect '; endif;  
     
 //-----
-$classes_header             = 'class="' . $class_ini_header . $class_end_header . '"';
+$classes_header             = 'class="'. $class_ini_header . $page_header_classes . $class_end_header .'"';
 
 
 /* // Footer Classes -------------------------------------------------------- */

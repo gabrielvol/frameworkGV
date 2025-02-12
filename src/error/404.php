@@ -4,7 +4,8 @@
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.error.var.inc.php');
     
-    $page_main_classes      = '';
+    $page_header_classes = '';
+    $page_main_classes = '';
     
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
        
