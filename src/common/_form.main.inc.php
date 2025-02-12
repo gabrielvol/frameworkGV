@@ -1,12 +1,11 @@
 <?php
 /* // Form identifier Global ------------------------------------------------ *
-// La variable $form_id puede ser declarada de tres formas:
-// 
-// 1- De manera global en `[/src/var/form.var.inc.php]` para todo el sitio
-// 2- En el archivo `[/src/var/page.PAGEINT.var.inc.php]` para un grupo de paginas
-// 3- En la pagina donde va a ser usado
-*/
-?>
+   La variable $form_id puede ser declarada de tres formas:
+   
+   a) De manera global en `[/src/var/form.var.inc.php]` para todo el sitio
+   b) En el archivo `[/src/var/page.PAGEINT.var.inc.php]` para un grupo de paginas
+   c) En la pagina donde va a ser usado 
+*/ ?>
 
 <form method="post" enctype="multipart/form-data" class="mha" id="<?php echo $form_id; ?>" name="<?php echo $form_id; ?>">
     <?php

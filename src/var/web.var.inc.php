@@ -3,18 +3,19 @@
    Websites Variables [/src/var/web.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// Listado de direcciones web
-// 
-//  www.sitioweb.com
-//  
-//  https://
-//  
-//  href=""
-//  
-//  <a>
-//  
-//  <cite>
+/* // Descripcion ----------------------------------------------------------- 
+   Listado de direcciones web
+   
+    www.sitioweb.com
+    
+    https://
+    
+    href=""
+    
+    <a>
+    
+    <cite>
+*/
 
 
 

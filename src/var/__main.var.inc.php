@@ -3,13 +3,14 @@
    PHP Variables Main Loader [/src/var/main.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// Listado principal de includes de variables php.
-//
-// REF [36] Form variables
-// REF [50] Google captcha
-//
-// #php #variables #includes
+/* // Descripcion ----------------------------------------------------------- 
+   Listado principal de includes de variables php.
+
+   // REF [36] Form variables
+   // REF [50] Google captcha
+
+   #php #variables #includes
+*/
 
 /* // Activadores ----------------------------------------------------------- */
 include('act/global.act.inc.php');
@@ -38,8 +39,8 @@ include('email.var.inc.php');
 // include('media.var.inc.php');
 // if($nav_pageCurrent == 'page_INT'){ include('page.PAGEINT.var.inc.php'); }
 
-// REF [36] Form variables Form variable
-// REF [50] Google captcha
+/* // REF [36] Form variables Form variable */
+/* // REF [50] Google captcha */
 if(!empty($has_form)){ include('form.var.inc.php'); }
 
 include('class.var.inc.php');

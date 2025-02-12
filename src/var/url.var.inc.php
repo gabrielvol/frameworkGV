@@ -3,14 +3,15 @@
    URL Variables [/src/var/url.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// Definición de urls y href del sitio.
-//
-// #url #href #hash #gettext
+/* // Descripcion ----------------------------------------------------------- 
+   Definición de urls y href del sitio.
+
+   #url #href #hash #gettext
+*/
 
 /* // global urls ----------------------------------------------------------- */
 $url_main               = $http_protocol . $domain_main;
-//$url_main               = $http_protocol . $domain_wip;
+// $url_main               = $http_protocol . $domain_wip;
 $url_main_full          = $url_main . $dir_env;
 
 $url_subdomain_SUBDOMAIN       = $http_protocol . $domain_sub_SUBDOMAIN . $domain_main;
@@ -37,9 +38,10 @@ $hash_main          = '#main';
     
     
 
-/* // url ------------------------------------------------------------------- */
-// Los vínculos que tienen un hash creado deben ser comentados en la siguiente
-// lista
+/* // url ------------------------------------------------------------------- 
+   Los vínculos que tienen un hash creado deben ser comentados en la siguiente
+   lista
+*/
 
 $url_root           = $dir_env . '/';
 $url_index          = $dir_env . '/index.php';
@@ -114,9 +116,10 @@ $url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
 */    
 
     
-/* // full urls ------------------------------------------------------------- */
-// Los vínculos que tienen un hash creado
-// deben ser comentados en la siguiente lista
+/* // full urls ------------------------------------------------------------- 
+   Los vínculos que tienen un hash creado deben ser comentados en la siguiente
+   lista
+*/
 
 $url_index_full         = $url_wip . $url_index;
 $url_home_full          = $url_wip . $url_home;

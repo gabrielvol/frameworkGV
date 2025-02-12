@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
 /* // Separator ------------------------------------------------------------- */
 });
 
+window.addEventListener("load", (event) => {
+});
+
+window.addEventListener("load", function(event) {
+});
+
 $(window).scroll(function () {
 /* // Separator ------------------------------------------------------------- */
 });

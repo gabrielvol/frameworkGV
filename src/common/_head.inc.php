@@ -26,7 +26,7 @@
 <meta name="title" content="<?php echo $page_title; ?>">
 <meta name="description" content="<?php echo $page_desc; ?>">
   
-<?php if($topbar_hide_mobile): // REF [47] ?>
+<?php if($topbar_hide_mobile): /* // REF [47] */ ?>
     <style>
         .pretopbar + .topbar_js{display: none!important;}    
     </style>
@@ -38,7 +38,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;800&display=swap" rel="stylesheet">
 
-<?php /*<base href="<?php echo $url_main; ?>" target="_self"> */ ?>
+<?php /* <base href="<?php echo $url_main; ?>" target="_self"> */ ?>
 
 <?php include('head.css.inc.php'); ?>
 
@@ -162,6 +162,5 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 
 </head>
 
-<?php if(empty($dir_env) && empty($page_noTrack)): /* Google Analytics 4 */
-?>
+<?php if(empty($dir_env) && empty($page_noTrack)): /* Google Analytics 4 */ ?>
 <?php endif; ?>

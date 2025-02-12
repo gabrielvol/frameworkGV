@@ -3,10 +3,11 @@
    Domain Variables [/src/var/domain.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// Definición de dominios y global url
-//
-// #url #domain #http
+/* // Descripcion ----------------------------------------------------------- 
+   Definición de dominios y global url
+
+   #url #domain #http
+*/
 
 /* // Domains --------------------------------------------------------------- */
 $http_protocol      = 'https://www.';
@@ -21,8 +22,6 @@ $domain_sec         = 'sitiocomar';
 
 $domain_custom      = 'sitiocomar';
 
-/*
-$domain_wip         = 'sitiocomar';
-*/
+// $domain_wip         = 'sitiocomar';
 
 ?>

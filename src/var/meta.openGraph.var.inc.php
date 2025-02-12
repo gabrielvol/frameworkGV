@@ -3,42 +3,43 @@
    Open Graph Variables [/src/var/meta.openGraph.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// Variables para open graph
-// Este archivo se carga antes del head en cada página, no se carga desde
-// PHP Variables Main Loader [/src/var/main.var.inc.php]
-//
-// #meta #openGraph #seo
+/* // Descripcion ----------------------------------------------------------- 
+   Variables para open graph
+   Este archivo se carga antes del head en cada página, no se carga desde
+   PHP Variables Main Loader [/src/var/main.var.inc.php]
+
+   #meta #openGraph #seo
+*/
 
 /* // Open Graph meta ------------------------------------------------------- */
 
-// -- Título _ Max 35 char ___________
-// ·_________________________________·
-// 123456789-123456789-123456789-12345
-//
-// Se declaran distintas variables por página
+/* // -- Título _ Max 35 char ________
+   ·_________________________________·
+   123456789-123456789-123456789-12345
+
+   Se declaran distintas variables por página */
 if($nav_pageCurrent == 'page_index'):
-// Esta variable se usa en el head `meta property og title`
+/* Esta variable se usa en el head `meta property og title` */
     $openGraph_title            = $site_name_full;    
 else:
-// Esta variable se usa en el head `meta property og title`
+/* Esta variable se usa en el head `meta property og title` */
     $openGraph_title            = $page_title;
 endif;    
     
     
-// -- Site Name
+/* // -- Site Name */
     $openGraph_siteName             = $site_name_full;
 
     
-// -- Descripción _ Max 65 char ____________________________________
-// ·_______________________________________________________________·
-// 123456789-123456789-123456789-123456789-123456789-123456789-12345 
-//
-// Esta variable se usa en el head `meta property og description`
+/* // -- Descripción _ Max 65 char _________________________________
+   ·_______________________________________________________________·
+   123456789-123456789-123456789-123456789-123456789-123456789-12345 
+
+   Esta variable se usa en el head `meta property og description` */
     $openGraph_desc                 = $page_desc_global;
     
     
-// -- Image
+/* // -- Image */
     $openGraph_img_url_sq           = $url_wip_full . '/og_img_01.jpg';
     $openGraph_img_width_sq         = '1000';
     $openGraph_img_height_sq        = '1000';
@@ -54,7 +55,7 @@ endif;
     $openGraph_img_height           = $openGraph_img_height_big;
 
 
-// -- misc
+/* // -- misc */
     $openGraph_url                  = $url_main_full;
     $openGraph_type                 = 'website';
     $openGraph_locale               = $site_lang_locale;

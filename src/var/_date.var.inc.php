@@ -3,10 +3,11 @@
    Date / Time Variables [/src/var/date.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// https://www.php.net/manual/en/timezones.america.php
-// 
-// REF [13] Address / date_default_timezone_set
+/* // Descripcion ----------------------------------------------------------- 
+   - https://www.php.net/manual/en/timezones.america.php
+ 
+   // REF [13] Address / date_default_timezone_set
+*/
 
 date_default_timezone_set('America/Argentina/Buenos_Aires');
 

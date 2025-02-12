@@ -3,13 +3,10 @@
    Book Titles Variables [/src/var/data.books.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
+/* // Descripcion ----------------------------------------------------------- 
 
-// $book_NOMBREDELIBRO_cite_quoted_reg_shy_nocomma;
-
-// Book A
-// Book B
-
+   $book_NOMBREDELIBRO_cite_quoted_reg_shy_nocomma;
+*/
 
 
 /* // BOOK ------------------------------------------------------------------ 
