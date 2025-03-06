@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<?php /* <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com"> */ ?>
+<meta http-equiv="X-Content-Type" content="nosniff">
+<meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <?php /* <meta http-equiv="x-dns-prefetch-control" content="off"> */ ?>
 <meta http-equiv="Window-Target" content="_value">
@@ -13,7 +16,7 @@
 <?php /* <meta name="robots" content="noindex"> */ ?>
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
-<?php /* <meta name="referrer" content="no-referrer"> */ ?>
+<meta name="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta name="geo.region" content="<?php echo $site_lang_code_country; ?>">
 
 <?php /* Google No Translate */ ?>
@@ -112,8 +115,8 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 <meta property="og:locale" content="<?php echo $openGraph_locale; ?>">
 
 <meta property="og:type" content="video.other">
-<meta property="og:video:url" content="https://shoesbycolin.com/blue.mp4">
-<meta property="og:video:secure_url" content="https://shoesbycolin.com/blue.mp4">
+<meta property="og:video:url" content="<?php echo $openGraph_url; ?>/file.mp4">
+<meta property="og:video:secure_url" content="<?php echo $openGraph_url; ?>/file.mp4">
 <meta property="og:video:type" content="video/mp4">
 <meta property="og:video:width" content="1280">
 <meta property="og:video:height" content="720">
