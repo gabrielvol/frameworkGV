@@ -34,7 +34,7 @@
    b) En el archivo `[/src/var/page.PAGEINT.var.inc.php]` para un grupo de paginas
    c) En la pagina donde va a ser usado
 */   
-// $form_id = 'formMainID'; /* // REF [36] Form variables */
+// $form_id = 'formMainID'; /* // REF [36*] Form variables */
 // $form_id_spelled = 'Contactanos';
     
     $page_header_classes = '';

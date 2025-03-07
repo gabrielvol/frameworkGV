@@ -33,7 +33,7 @@ $captcha_ip_remote = $_SERVER['REMOTE_ADDR'];
    a) De manera global en `[/src/var/form.var.inc.php]` para todo el sitio
    b) En el archivo `[/src/var/page.PAGEINT.var.inc.php]` para un grupo de paginas
    c) En la pagina donde va a ser usado */
-// $form_id = 'formMainID'; /* // REF [36] Form variables */
+// $form_id = 'formMainID'; /* // REF [36*] Form variables */
 // $form_id_spelled = 'Contactanos';
 
 

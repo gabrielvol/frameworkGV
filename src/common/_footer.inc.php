@@ -1,3 +1,5 @@
+<?php /* // REF [13] [/src/var/date.var.inc.php] */ ?>
+
 <footer id="footer" <?php echo $classes_footer; ?>>
     <?php include('button.siteTop.inc.php'); ?>
         
@@ -46,7 +48,7 @@
     include('footer.pop.inc.php');
     include('footer.js.inc.php');
     
-    // REF [47]
+    /* // REF [47] Topbar.js */
     $userAgent_android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
     $userAgent_blackBerry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
     $userAgent_iPad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");

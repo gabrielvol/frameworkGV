@@ -56,6 +56,8 @@ $font_families_map:(
 // Ej.
 // $timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 // font-family: $timesNewRoman;
+//
+// REF [01] Las Google Fonts no deben ser declaradas en este mapa.
 
 
     arial:          Arial,
@@ -88,3 +90,9 @@ $roboto:            map-get($font_families_map, roboto), $font_families_sans_lis
 //$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 //$monospacedFont:    map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
 $consolas:          map-get($font_families_map, consolas), $font_families_monospaced_list_fallback;
+
+// REF [01] Las Google Fonts deben ser declaradas de la siguiente forma:
+
+//$ralewayM:         'Raleway', $font_families_sans_list_fallback;
+//$ralewaySB:        'Raleway', $font_families_sans_list_fallback;
+//$ralewayXB:        'Raleway', $font_families_sans_list_fallback;
