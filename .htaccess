@@ -3,6 +3,17 @@
 # DirectoryIndex productos/lamparas/index.php
 
 # ----------------------------------------------------------------------
+# Header
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+#    Header set Access-Control-Allow-Origin "https://cdn.domain.dev"
+
+    SetEnvIf Origin "http(s)?://(www\.)?(https://cdn.domain.dev|https://sub.domain.com)$" AccessControlAllowOrigin=$0
+    Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+    Header merge Vary Origin
+</IfModule>
+
+# ----------------------------------------------------------------------
 # UTF-8 encoding
 # ----------------------------------------------------------------------
 
