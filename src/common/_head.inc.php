@@ -7,16 +7,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-Content-Type" content="nosniff">
 <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com">
+
+<?php /*
+<meta http-equiv="X-Content-Type" content="nosniff">
 <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src fonts.googleapis.com fonts.gstatic.com; frame-src youtube-nocookie.com youtube.com"> 
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<meta name="Referrer-Policy" content="strict-origin-when-cross-origin">
+*/ ?>
+
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<?php /* <meta http-equiv="x-dns-prefetch-control" content="off"> */ ?>
 <meta http-equiv="Window-Target" content="_value">
 <meta name="robots" content="index,follow">
 <?php /* <meta name="robots" content="noindex"> */ ?>
 <meta name="generator" content="NetBeans IDE">
 <meta name="rating" content="General">
-<meta name="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta name="geo.region" content="<?php echo $site_lang_code_country; ?>">
 
 <?php /* Google No Translate */ ?>

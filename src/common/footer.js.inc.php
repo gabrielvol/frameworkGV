@@ -73,27 +73,46 @@
 <script src="<?php echo $dir_env; ?>/js/_construccion.js"></script>
 */ ?>
 
-<?php endif; if(!empty($has_form)): // REF [36] Form variables ?>
+<?php endif;
+
+
+/* // REF [36] Form variables */
+if($has_form): ?>
 <script src="<?php echo $dir_env; ?>/js/scrollKeep.js"></script><?php /* // REF [25] */ ?>
 <?php /* <script src="<?php echo $dir_env; ?>/js/ui-datepicker.jQuery.js"></script> REF [31] */ ?>
 <script src="<?php echo $dir_env; ?>/js/_form.js"></script>
 
 <?php endif;
-    // REF [50] Google reCaptcha */
-    if($has_captcha && $form_id == 'formMainID'): ?>
+
+
+/* // REF [50] Google reCaptcha
+Luego de crear los condicionales hay que crear el archivo correspondiente
+en `[/src/js/__captcha_formMainID.js]` */
+if($has_captcha == 1 && $form_id == 'formMainID'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
 
-<?php elseif($has_captcha && $form_id == 'formContacto'): ?>
+<?php elseif($has_captcha == 1 && $form_id == 'formContacto'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formContacto.js"></script>
 
-<?php endif; if($has_lightbox == 1): /* // REF [26] */ ?>
+<?php endif;
+
+
+/* // REF [26] Lightbox */
+if($has_lightbox == 1): ?>
 <script src="<?php echo $dir_env; ?>/js/lightbox.min.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_lightbox.js"></script>
 
-<?php endif; if(!empty($has_slider)): ?>
+<?php endif;
+
+
+if(!empty($has_slider)): ?>
 <script src="<?php echo $dir_env; ?>/js/slick.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_slick.js"></script>
 
-<?php endif; if(!empty($has_pop_video)): ?>
+<?php endif;
+
+
+if(!empty($has_pop_video)): ?>
 <script src="<?php echo $dir_env; ?>/js/_pop.video.js"></script>
+
 <?php endif; ?>

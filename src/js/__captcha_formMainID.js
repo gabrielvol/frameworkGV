@@ -2,15 +2,19 @@
    Captcha Get Token [/src/js/_capctha_formMainID.js]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
-// funcion captchaGetToken para obtener el token de reCatpcha V3 y
-// asignarlo al campo hidden `data_captchaResponseToken__formMainID`
-// 
-// Hay que reemplazar `formMainID` por el ID correspondiente en:
-// - action
-// - campo hidden `data_captchaResponseToken__ ... `
+/* // Descripcion ----------------------------------------------------------- 
+Funcion captchaGetToken para obtener el token de reCatpcha V3 y asignarlo al
+campo hidden `data_captchaResponseToken__formMainID`
+ 
+1. Hay que reemplazar `formMainID` por el ID correspondiente en:
+- action
+- campo hidden `data_captchaResponseToken__ ... `
+
+2. Hay que crear el condicional en `[/src/common/footer.js.inc.php]`
 
 // REF [50] Google captcha
+*/
+
 
 
 function captchaGetToken(form) {

@@ -41,7 +41,7 @@ include('email.var.inc.php');
 
 /* // REF [36] Form variables Form variable */
 /* // REF [50] Google captcha */
-if(!empty($has_form)){ include('form.var.inc.php'); }
+if($has_form){ include('form.var.inc.php'); }
 
 include('class.var.inc.php');
 

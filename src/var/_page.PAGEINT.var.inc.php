@@ -50,11 +50,11 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
 
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
         $page_title_id          = $PAGEINT_title_PAGEID;
-        $page_heading_id        = $PAGEINT_title_PAGEID; }
+        $page_heading_id = $PAGEINT_title_PAGEID; }
 /*
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
-      $page_title_id        = $PAGEINT_title_PAGEID;
-      $page_heading_id      = $PAGEINT_title_PAGEID; }
+      $page_title_id = $PAGEINT_title_PAGEID;
+      $page_heading_id = $PAGEINT_title_PAGEID; }
 */
 
 
@@ -68,12 +68,12 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     $nav_main_item_PAGEINTID    = '';
 
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
-        $page_title_id      = $PAGEINT_title_PAGEID;
-        $page_heading_id        = $PAGEINT_title_PAGEID; }
+        $page_title_id = $PAGEINT_title_PAGEID;
+        $page_heading_id = $PAGEINT_title_PAGEID; }
 /*
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
-      $page_title_id        = $PAGEINT_title_PAGEID;
-      $page_heading_id      = $PAGEINT_title_PAGEID; }
+      $page_title_id = $PAGEINT_title_PAGEID;
+      $page_heading_id = $PAGEINT_title_PAGEID; }
 */    
 
 
@@ -85,13 +85,13 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
 */    
     
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
-        $page_title_id      = $PAGEINT_title_PAGEID;
+        $page_title_id = $PAGEINT_title_PAGEID;
         $page_heading_id    = $PAGEINT_title_PAGEID; }
 
 /*
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
-      $page_title_id        = $PAGEINT_title_PAGEID;
-      $page_heading_id      = $PAGEINT_title_PAGEID; }
+      $page_title_id = $PAGEINT_title_PAGEID;
+      $page_heading_id = $PAGEINT_title_PAGEID; }
 */    
 } }
 
