@@ -268,7 +268,7 @@
         <select name="data_provincia__formMainID" id="data_provincia__formMainID" class="data_provincia__formMainID <?php echo $form_validation_input_class_data_provincia__formMainID; ?>" form="formMainID" enterkeyhint="next">
             <option value="<?php echo $_POST['data_provincia__formMainID']; ?>" selected><?php echo $_POST['data_provincia__formMainID']; ?></option>
 
-            <option value="<?php echo $_POST['data_provincia__formMainID']; ?>" selected><?php if(isset($_POST['data_provincia__formMainID'])) { echo $_POST['data_provincia__formMainID']; } else { echo _('Seleccione su provincia'); } ?></option>
+            <option value="<?php echo $_POST['data_provincia__formMainID']; ?>" selected><?php if($_POST['data_provincia__formMainID']) { echo $_POST['data_provincia__formMainID']; } else { echo _('Seleccione su provincia'); } ?></option>
             <option value="CABA"><?php echo _('Ciudad Aut&oacute;noma de Buenos Aires'); ?></option>
             <option value="Pcia. de Buenos Aires"><?php echo _('Pcia. de Buenos Aires'); ?></option>
             <option value="Catamarca"><?php echo _('Catamarca'); ?></option>
@@ -306,7 +306,7 @@
         <select name="data_comoQueres__formMainID" id="data_comoQueres__formMainID" class="data_comoQueres__formMainID <?php echo $form_validation_input_class_data_comoQueres__formMainID; ?>" form="formMainID" enterkeyhint="next">
             <option value="<?php echo $_POST['data_comoQueres__formMainID']; ?>" selected><?php echo $_POST['data_comoQueres__formMainID']; ?></option>
 
-            <option value="<?php echo $_POST['data_comoQueres__formMainID']; ?>" selected><?php if(isset($_POST['data_comoQueres__formMainID'])) { echo $_POST['data_comoQueres__formMainID']; } else { echo _('Correo electr&oacute;nico, WhatsAspp o Instagram'); } ?></option>
+            <option value="<?php echo $_POST['data_comoQueres__formMainID']; ?>" selected><?php if($_POST['data_comoQueres__formMainID']) { echo $_POST['data_comoQueres__formMainID']; } else { echo _('Correo electr&oacute;nico, WhatsAspp o Instagram'); } ?></option>
             <option value="Correo"><?php echo _('Correo electr&oacute;nico'); ?></option>
             <option value="WhatsApp"><?php echo _('WhatsApp'); ?></option>
             <option value="Instagram"><?php echo _('Instagram'); ?></option>
@@ -323,7 +323,7 @@
         <select name="data_GENERICSELECT__formMainID" id="data_GENERICSELECT__formMainID" class="data_GENERICSELECT__formMainID <?php echo $form_validation_input_class_data_GENERICSELECT__formMainID; ?>" form="formMainID" enterkeyhint="next" required>
             <option value="<?php echo $_POST['data_GENERICSELECT__formMainID']; ?>" selected><?php echo $_POST['data_GENERICSELECT__formMainID']; ?></option>
 
-            <option value="<?php echo $_POST['data_GENERICSELECT__formMainID']; ?>" selected><?php if(isset($_POST['data_GENERICSELECT__formMainID'])) { echo $_POST['data_GENERICSELECT__formMainID']; } else { echo 'Selecciona una opci&oacute;n por favor'; } ?></option>
+            <option value="<?php echo $_POST['data_GENERICSELECT__formMainID']; ?>" selected><?php if($_POST['data_GENERICSELECT__formMainID']) { echo $_POST['data_GENERICSELECT__formMainID']; } else { echo 'Selecciona una opci&oacute;n por favor'; } ?></option>
             <option value="AAAAAAAAAAAAA"><?php echo _('AAAAAAAAAAAAA'); ?></option>
             <option value="BBBBBBBBBBBBB"><?php echo _('BBBBBBBBBBBBB'); ?></option>
             <option value="CCCCCCCCCCCCC"><?php echo _('CCCCCCCCCCCCC'); ?></option>
@@ -557,13 +557,14 @@
         </label>
     </fieldset>
 
-    <label for="data_precioTilde__formMainID">
-        <?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            I want a meeting
+    <label for="data_aceptoTOU__formMainID" class="label_checkbox">
+        <input type="checkbox" name="data_aceptoTOU__formMainID" id="data_aceptoTOU__formMainID" class="input_checkbox data_aceptoTOU__formMainID" form="formMainID" value="Acepto los términos y condiciones">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            Acepto los términos y condiciones
         <?php else: ?>
-            Prefiero charlar personalmente
-        <?php endif; ?>
-        <input type="checkbox" name="data_precioTilde__formMainID" id="data_precioTilde__formMainID" class="data_precioTilde__formMainID" form="formMainID" value="Si">
+            Acepto los términos y condiciones
+        <?php endif; ?></span>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_aceptoTOU__formMainID; ?>"><?php echo $form_validation_span_msg_data_aceptoTOU__formMainID; ?></span> 
     </label>
 
     <label for="data_browser__formMainID">
@@ -620,7 +621,7 @@
             &Aacute;rea a contactar
         <?php endif; ?></span>
         <select name="data_area__formMainID" id="data_area__formMainID" class="data_area__formMainID <?php echo $form_validation_input_class_data_area__formMainID; ?>" form="formMainID" enterkeyhint="next">
-            <option value="<?php echo $_POST['data_area__formMainID']; ?>" selected><?php if(isset($_POST['data_area__formMainID'])) { echo $_POST['data_area__formMainID']; } else {
+            <option value="<?php echo $_POST['data_area__formMainID']; ?>" selected><?php if($_POST['data_area__formMainID']) { echo $_POST['data_area__formMainID']; } else {
                 if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Please select a department'; } else { echo 'Por favor seleccione un área a contactar'; }
             } ?></option>
             <option value="<?php echo $site_email_CONTACTO_address; ?>"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Address: a'; } else { echo 'Address: a'; } ?> - <?php echo $site_email_CONTACTO_address; ?></option>

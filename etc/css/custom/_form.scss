@@ -504,6 +504,10 @@ form{
         .label_checkbox{
             .input_checkbox{}
 
+            .form_label_name{
+                float: $left;
+            }
+
             @include beforeMQ768{
                 .mobileForm &{
                     .input_checkbox{
@@ -532,6 +536,15 @@ form{
                     }
                 }
             }
+            
+            @include beforeMQ1024{
+                .form_label_name{
+                    & + span{
+    /* Separacion entre .form_label_name y .form_validation_span */
+                        margin-top: 40px;
+                    }
+                }
+            }
 
             @include afterMQ1024{
                 .tabletForm &{
@@ -543,7 +556,12 @@ form{
                     .form_label_name{
                         clear: $none;
                         width: calc(100% - calc(#{$form_input_checkbox_height_A1024} + 10px))!important;
-                        line-height: $form_input_checkbox_height_A1024; 
+                        line-height: $form_input_checkbox_height_A1024;
+                        
+                        & + span{
+    /* Separacion entre .form_label_name y .form_validation_span */
+                            margin-top: 40px;
+                        }
                     }
                 }
             }
