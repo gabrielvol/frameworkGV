@@ -31,28 +31,31 @@ endif;
     $openGraph_siteName             = $site_name_full;
 
     
+if($nav_pageCurrent_int == 'page_PAGEINT'): 
 /* // -- Descripción _ Max 65 char _________________________________
    ·_______________________________________________________________·
    123456789-123456789-123456789-123456789-123456789-123456789-12345 
 
    Esta variable se usa en el head `meta property og description` */
-    $openGraph_desc                 = $page_desc_global;
+    $openGraph_desc = "DescripcionUnicaParaPAGEINT";
     
+/* // -- Image */ 
+    $openGraph_img_url              = $url_wip_full . '/og_img_sq_PAGEINT_01.jpg';
+    $openGraph_img_url_secure       = $openGraph_img_url;
+    $openGraph_img_width            = '1200'; // '1000';
+    $openGraph_img_height           = '630'; // '1000';
+else:
+/* // -- Descripción global */
+    $openGraph_desc                 = $page_desc_global;  
     
-/* // -- Image */
-    $openGraph_img_url_sq           = $url_wip_full . '/og_img_01.jpg';
-    $openGraph_img_width_sq         = '1000';
-    $openGraph_img_height_sq        = '1000';
-
-    $openGraph_img_url_big          = $url_wip_full . '/og_img_01.jpg';
-    $openGraph_img_width_big        = '1200';
-    $openGraph_img_height_big       = '630';
+/* // -- Image gobal */ 
+    $openGraph_img_url          = $url_wip_full . '/og_img_01.jpg';
+    $openGraph_img_url_secure   = $openGraph_img_url;
+    $openGraph_img_width            = '1200'; // '1000';
+    $openGraph_img_height           = '630'; // '1000';
+endif;    
     
-    $openGraph_img_url_secure       = $openGraph_img_url_big;
-    $openGraph_img_url              = $openGraph_img_url_big;
-    $openGraph_img_type             = 'image/jpg';
-    $openGraph_img_width            = $openGraph_img_width_big;
-    $openGraph_img_height           = $openGraph_img_height_big;
+    $openGraph_img_type             = 'image/jpg';;
 
 
 /* // -- misc */
