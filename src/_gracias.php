@@ -25,6 +25,11 @@
 
 /* 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.gracias.var.inc.php');
+    
+    $page_header_classes = '';
+    $page_main_classes = '';
+    
+    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
 
 /* // Form identifier Global ------------------------------------------------ *
    La variable $form_id puede ser declarada de tres formas:
@@ -35,11 +40,6 @@
 */
 // $form_id = 'formMainID'; /* // REF [36*] Form variables */
 // $form_id_spelled = 'Contactanos';
-    
-    $page_header_classes = '';
-    $page_main_classes = '';
-    
-    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/__main.var.inc.php');
     
     $page_url_full          = $url_gracias_full;
 
