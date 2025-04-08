@@ -131,3 +131,34 @@
         }
     }
 }
+        
+.txAbbreviated{
+    display: inline-block;
+    width: 2ch;
+    text-indent: -9999px;
+
+    &::before{
+        position: absolute;
+        display: inline-block;
+        left: 7px;
+        text-indent: 0;
+    }
+    
+    &.abbreviated_A{
+        &::before{
+            content: "A.";
+        }
+    }
+    
+    &.abbreviated_B{
+        &::before{
+            content: "B.";
+        }
+    }
+    
+    &.abbreviated_C{
+        &::before{
+            content: "C.";
+        }
+    }
+}

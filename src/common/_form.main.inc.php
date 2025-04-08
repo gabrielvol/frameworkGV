@@ -368,7 +368,7 @@
             Nº de WhatsApp
         <?php endif; ?></legend>
 
-        <label for="data_whatsappAreaCode__formMainID" class="<?php echo $form_validation_input_class_data_whatsappAreaCode__formMainID; ?>">
+        <label for="data_whatsappAreaCode__formMainID" class="label_comp_small <?php echo $form_validation_input_class_data_whatsappAreaCode__formMainID; ?>">
             <span class="form_label_name">Código de área</span>
             <input type="tel" name="data_whatsappAreaCode__formMainID" id="data_whatsappAreaCode__formMainID" class="data_whatsappAreaCode__formMainID <?php echo $form_validation_input_class_data_whatsappAreaCode__formMainID; ?>" value="<?php echo $_POST['data_whatsappAreaCode__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsappAreaCode__formMainID; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsappAreaCode__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsappAreaCode__formMainID; ?></span>
@@ -379,7 +379,7 @@
             <?php endif; ?>.</span>
         </label>
 
-        <label for="data_whatsappNumber__formMainID" class="<?php echo $form_validation_input_class_data_whatsappNumber__formMainID; ?>">
+        <label for="data_whatsappNumber__formMainID" class="label_comp_big <?php echo $form_validation_input_class_data_whatsappNumber__formMainID; ?>">
             <span class="form_label_name">Número</span>
             <input type="tel" name="data_whatsappNumber__formMainID" id="data_whatsappNumber__formMainID" class="data_whatsappNumber__formMainID <?php echo $form_validation_input_class_data_whatsappNumber__formMainID; ?>" value="<?php echo $_POST['data_whatsappNumber__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsappNumber__formMainID; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsappNumber__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsappNumber__formMainID; ?></span>

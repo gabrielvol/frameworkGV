@@ -368,6 +368,71 @@ form{
                 }
             }
         }
+    
+        &.label_comp_small,    
+        &.label_comp_big{
+            float: left!important;
+            clear: $none;
+            margin: -5px auto 0!important;
+
+            input{
+                width: $hundred;
+            }
+        }
+
+        &.label_comp_big{
+            margin-left: 10px!important; 
+
+            & + .form_validation_span{
+                clear: both;
+                margin-top: 2px;
+            }
+        }
+    
+        @include beforeMQ400{        
+            .label_comp_big{
+                .form_label_name{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        @include beforeMQ500{
+            .label_comp_small{
+                width: $form_label_comp_small_size_B500!important;
+
+                .form_label_name{
+                    font-size: 0.7rem;
+                }
+            }
+
+            .label_comp_big{
+                width: calc(100% - #{$form_label_comp_small_size_B500} - 10px)!important;
+            }
+        }
+
+        @include afterMQ500{
+            .label_comp_small{
+                width: $form_label_comp_small_size_A500!important;
+
+                .form_label_name{
+                    font-size: 0.75rem;
+                }
+            }
+
+            .label_comp_big{
+                width: calc(100% - #{$form_label_comp_small_size_A500} - 10px)!important;
+            }
+        }
+
+        @include beforeMQ768{
+            .label_comp_big,
+            .label_comp_small{
+                .form_label_name{
+                    @include equalHeightAndLineHeight(calc(#{$form_label_height_A350} - 10px));
+                }
+            }
+        }
     }
         
     @if $form_label_inside_act == "on"{
@@ -752,7 +817,7 @@ form{
         
         @include beforeMQ600{
             .form_label_name{
-                &.form_label_long{
+                &.form_label_name_long{
                     height: auto;
                     line-height: 1.4;
                     margin-bottom: 5px;

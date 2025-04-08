@@ -4059,11 +4059,11 @@ form {
       font-weight: 400;
       font-size: 0.8rem !important; } }
   @media (max-width: 600px) {
-    form .form_label_name.form_label_long {
+    form .form_label_name.form_label_name_long {
       height: auto;
       line-height: 1.4;
       margin-bottom: 5px; }
-      form .form_label_name.form_label_long span {
+      form .form_label_name.form_label_name_long span {
         display: block; } }
 
 /* * NombreDeProyecto * ========================================================
