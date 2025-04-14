@@ -17,7 +17,7 @@ $(document).ready(function () {
         
         $(this).closest('#nav').find('.modal_nav').show( '2000', 'swing', function() {
             $(this).closest('#header').find('.logo_header').addClass('navDrawer_open');
-//            $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_navDrawer.svg");
+//            $(this).closest('#header').find('.logo_header img').attr("src", dir_env_js + "/img/logo_navDrawer.svg");
 
             $(this).closest('#header').find('.nav_lang_ul').addClass('navDrawer_open');
             
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $(this).closest('#header').removeClass('navDrawer_open'); 
         $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
-//        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_header.svg");
+//        $(this).closest('#header').find('.logo_header img').attr("src", dir_env_js + "/img/logo_header.svg");
         
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');  
         $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
@@ -60,7 +60,7 @@ $(document).ready(function () {
         $(this).closest('#header').removeClass('navDrawer_open');
         $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
-//        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_header.svg");
+//        $(this).closest('#header').find('.logo_header img').attr("src", dir_env_js + "/img/logo_header.svg");
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
         $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');
@@ -89,7 +89,7 @@ $(document).ready(function () {
         $(this).closest('#header').removeClass('navDrawer_open');
         $(this).closest('#header').addClass('navDrawer_closed'); 
         $(this).closest('#header').find('.logo_header').removeClass('navDrawer_open');
-//        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_header.svg");
+//        $(this).closest('#header').find('.logo_header img').attr("src", dir_env_js + "/img/logo_header.svg");
 
         $(this).closest('#header').find('.social').removeClass('navDrawer_open');
         $(this).closest('#header').find('.nav_lang_ul').removeClass('navDrawer_open');

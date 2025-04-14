@@ -7,7 +7,7 @@
 
 // REF [48] Dev window width
 
-let dir_env = '/stage';
+let dir_env_js = '/stage';
 
 // Se anulan peticiones de captcha fuera del entorno produccion
 let captcha_key_site = 'sinclave';
