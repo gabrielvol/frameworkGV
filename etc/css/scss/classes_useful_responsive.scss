@@ -71,7 +71,10 @@
     .global_MQ_A2000,    
     .global_MQ_A2500,    
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
     
     @if $classes_position_display_mask_cursor_act_B500 == "on"{
@@ -210,7 +213,10 @@
     .global_MQ_A2000,    
     .global_MQ_A2500,    
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
     
     @if $classes_position_display_mask_cursor_act_A500 == "on"{
@@ -504,7 +510,10 @@
     .global_MQ_A2000,   
     .global_MQ_A2500,   
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
     
     @if $classes_position_display_mask_cursor_act_A600 == "on"{
@@ -999,7 +1008,10 @@
     .global_MQ_A2000,   
     .global_MQ_A2500,   
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
     
@@ -1022,7 +1034,10 @@
     .global_MQ_A2000,   
     .global_MQ_A2500,   
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
 
@@ -1759,7 +1774,10 @@
     .global_MQ_A2000,   
     .global_MQ_A2500,   
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
 
@@ -1782,7 +1800,10 @@
     .global_MQ_A2000,  
     .global_MQ_A2500,  
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
 
@@ -1805,7 +1826,10 @@
     .global_MQ_A1500,  
     .global_MQ_A2500,  
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
 
@@ -1828,7 +1852,10 @@
     .global_MQ_A1500,  
     .global_MQ_A2000,  
     .global_MQ_A3000{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
 
@@ -1851,7 +1878,10 @@
     .global_MQ_A1500,  
     .global_MQ_A2000,  
     .global_MQ_A2500{
-        display: $none;
+        &,
+        &.displayFlex{
+            display: $none;
+        }
     }
 }
 */

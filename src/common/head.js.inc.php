@@ -20,7 +20,10 @@
     };
 </script>
 
-<?php endif; /* // REF [47] Topbar.js */ ?>
+<?php endif;
+
+
+/* // REF [47] Topbar.js */ ?>
 <script src="<?php echo $dir_env; ?>/js/topbar.min.js"></script>
 
 <?php /* // REF [24]

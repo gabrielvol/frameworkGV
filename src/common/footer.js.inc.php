@@ -8,16 +8,28 @@
 <?php elseif(empty($dir_env)): ?>
 <script src="<?php echo $dir_env; ?>/js/_global.produ.js"></script>
 
-<?php endif; if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
+<?php endif; ?>
+
+
+<script src="<?php echo $dir_env; ?>/js/_global.all.js"></script>
+
+
+<?php if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
 <?php endif; if(!empty($nav_drawer_act)): /* // REF [06] nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_drawer.js"></script>
     
-<?php endif; if(!empty($has_scrolling)): ?>
+<?php endif;
+
+
+if(!empty($has_scrolling)): ?>
 <script src="<?php echo $dir_env; ?>/js/_scrolling.js"></script>
 
-<?php endif; if($nav_pageCurrent == 'page_index'): /*
+<?php endif;
+
+
+if($nav_pageCurrent == 'page_index'): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_index.js"></script>
