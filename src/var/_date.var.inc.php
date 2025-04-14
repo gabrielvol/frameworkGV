@@ -10,6 +10,7 @@
 */
 
 date_default_timezone_set('America/Argentina/Buenos_Aires');
+$timezone = new DateTimeZone('America/Argentina/Buenos_Aires');
 
 $date_year_from     = 2024;
 $date_year_actual   = (int)date('Y');
@@ -26,5 +27,7 @@ $date_mes_septiembre = 'septiembre';
 $date_mes_octubre = 'octubre';
 $date_mes_noviembre = 'noviembre';
 $date_mes_diciembre = 'diciembre';
+
+$date_now_actual = new DateTime('now', $timezone);
 
 ?>
