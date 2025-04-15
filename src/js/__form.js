@@ -2,7 +2,7 @@
    Form javascript [/src/js/form.js]
    ========================================================================== */
 $(document).ready(function () {
-    $('.button_form_submit').scrollPosReload(); // REF [25]
+    $('.button_form_submit').scrollPosReload(); /* // REF [25] ScrollKeep */
         
     $('.modal_formStatus, .button_close_pop_formStatus, .button_submit_pop_formStatus').click(function () {
         $(this).closest('body').find('.pop_formStatus').addClass('displayNone');

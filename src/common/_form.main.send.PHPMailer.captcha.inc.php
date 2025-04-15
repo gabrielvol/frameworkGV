@@ -26,44 +26,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // REF [50] Google reCaptcha --------------------------------------------- */
     $data_captchaResponseToken__formMainID = $_POST['data_captchaResponseToken__formMainID'];
     
-// Construct the url to send your private Secret Key, token and (optionally) IP
-// address of the form submitter to Google to get a spam rating for the
-// submission. Las variables `$captcha_key_secret` y `$captcha_ip_remote`
-// estan declaradas en `[/src/var/form.var.inc.php]`
+/* Construct the url to send your private Secret Key, token and (optionally) IP
+ * address of the form submitter to Google to get a spam rating for the
+ * submission.
+ * 
+ * Las variables `$captcha_key_secret` y `$captcha_ip_remote`
+ * estan declaradas en `[/src/var/form.var.inc.php]` */
 
     $captcha_url_siteverify = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $captcha_key_secret . '&response=' . $data_captchaResponseToken__formMainID . '&remoteip=' . $captcha_ip_remote;
 
-/* // Save the response ----------------------------------------------------- */ 
-// e.g. print_r($captcha_response) prints {
-//   "success": true,
-//   "challenge_ts": "2019-07-24T11:19:07Z",
-//   "hostname": "domain.com",
-//   "score": 0.9,
-//   "action": "formID"
-//   }
-
+/* // Save the response -----------------------------------------------------  
+e.g. print_r($captcha_response) prints {
+  "success": true,
+  "challenge_ts": "2019-07-24T11:19:07Z",
+  "hostname": "domain.com",
+  "score": 0.9,
+  "action": "formID"
+  }
+*/
     $captcha_response = file_get_contents($captcha_url_siteverify);
 
-/* // Decode the response --------------------------------------------------- */
-// e.g. print_r($captcha_response_keys) prints Array (
-//   [success] => 1
-//   [challenge_ts] => 2019-07-24T11:19:07Z
-//   [hostname] => domain.com
-//   [score] => 0.9
-//   [action] => formID
-//   )
-
+/* // Decode the response --------------------------------------------------- 
+e.g. print_r($captcha_response_keys) prints Array (
+  [success] => 1
+  [challenge_ts] => 2019-07-24T11:19:07Z
+  [hostname] => domain.com
+  [score] => 0.9
+  [action] => formID
+  )
+*/
     $captcha_response_keys = json_decode($captcha_response, true);
 
-// Check if the test was done OK, if the action name is correct and if the score
-// is above your chosen threshold.
-
-/* // Chequeamos que success sea 1 y que action corresponda con el id del form - */
+/* Check if the test was done OK, if the action name is correct and if the score
+ *  is above your chosen threshold.
+ * 
+ *  Chequeamos que success sea 1 y que action corresponda con el id del form - */
     if ($captcha_response_keys["success"] && $captcha_response_keys["action"] == 'formMainID') {
 
-/* // Chequeamos que el score sea superior al limite indicado --------------- */
+/* // Chequeamos que el score sea superior al limite indicado --------------- 
 // La variable `$captcha_score_treshold`
-// esta declarada en `[/src/var/form.var.inc.php]`
+// esta declarada en `[/src/var/form.var.inc.php]` */
         if ($captcha_response_keys["score"] >= $captcha_score_treshold) {
             
             $form_status_marquee__formMainID .= $form_status_captcha_OKsuccessTrue__formMainID . $data_captchaResponseToken__formMainID;

@@ -20,6 +20,7 @@ try {
     $mail->isSMTP();
     #$mail->Host = 'localhost';
     $mail->Host = 'smtp.sitiowebcom';
+    $mail->Host = 'mail.sitiowebcom';
 
 /* // $mail Usuario y Password SMTP ----------------------------------------- */
     $mail->SMTPAuth = true;

@@ -99,7 +99,7 @@ if($has_form): ?>
 
 /* // REF [50] Google reCaptcha
 Luego de crear los condicionales hay que crear el archivo correspondiente
-en `[/src/js/__captcha_formMainID.js]` */
+en `[/src/js/__captcha_formXX.js]` */
 if($has_captcha == 1 && $form_id == 'formMainID'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
 
