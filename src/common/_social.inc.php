@@ -83,4 +83,11 @@
             <img src="<?php echo $dir_env; ?>/img/social_yt.svg" alt="<?php echo _('Ir a nuestro canal de YouTube'); ?>.">
         </a>
     </li>
+    <li class="social_tk">
+        <a href="<?php echo $social_tikTok_url; ?>" class="hover_grow_L_ani" target="_blank">
+            Tik Tok.
+            <span class="visuallyHidden">Tik Tok:</span>
+            <img src="<?php echo $dir_env; ?>/img/social_tk.svg" alt="Tik Tok.">
+        </a>
+    </li>
 </ul>
