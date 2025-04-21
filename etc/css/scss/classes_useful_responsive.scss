@@ -634,7 +634,7 @@
 
 /* // Before MQ768 Classes -------------------------------------------------- */
 @include beforeMQ768{
-    @if $classes_position_display_mask_cursor_act_BT == "on"{
+    @if $classes_position_display_mask_cursor_act_B768 == "on"{
 /*___ Positioning _______________________*/
         .pRelBT{position: relative}
         .pAbsBT{position: absolute}
@@ -668,7 +668,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_BT == "on"{
+    @if $classes_lists_floats_act_B768 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledBT, .horizontalBT{list-style: $none}
         .floatLeftBT, .horizontalBT li{float: $left}
@@ -688,7 +688,7 @@
         .floatNoneBT, .unstyledBT li{float: $none}
     }
     
-    @if $classes_text_act_BT == "on"{
+    @if $classes_text_act_B768 == "on"{
 /*___ Text ______________________________*/
         .txIndentedBT{text-indent: -9999px}
         .txAlignLeftBT{text-align: left}
@@ -703,7 +703,7 @@
         .txCaseLowerBT{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_BT == "on"{
+    @if $classes_bg_bd_NO_act_B768 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banBT{border: $none}
         .bgNoneBT{
@@ -715,14 +715,14 @@
         .bgNoImageBT{background-image: $none}
     }
     
-    @if $helpers_spacing_act_BT == "on"{
+    @if $helpers_spacing_act_B768 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorBT;
         .mraBT,.mhaBT{margin-right: $auto}
         .mlaBT,.mhaBT{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_BT == "on"{
+    @if $classes_flexbox_act_B768 == "on"{
 /*___ Flexbox Classes ___________________*/ 
         .displayFlexBT, .flexHorizontalBT, .flexColumnBT, .flexNoWrapBT, .flexJustifyEndBT, .flexJustifyCenterBT, .flexJustifyBetweenBT, .flexJustifyAroundBT, .flexAlignContentEndBT, .flexAlignContentCenterBT, .flexAlignContentBetweenBT, .flexAlignContentAroundBT, .flexAlignContentStretchBT, .flexAlignItemsEndBT, .flexAlignItemsCenterBT, .flexAlignItemsBaselineBT, .flexAlignItemsStretchBT, .horizontalCenterFlexBT{
             display: flex;
@@ -753,7 +753,7 @@
 
 /* // After MQ768 Classes --------------------------------------------------- */
 @include afterMQ768{
-    @if $classes_position_display_mask_cursor_act_AT == "on"{
+    @if $classes_position_display_mask_cursor_act_A768 == "on"{
 /*___ Positioning _______________________*/
         .pRelAT{position: relative}
         .pAbsAT{position: absolute}
@@ -787,7 +787,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_AT == "on"{
+    @if $classes_lists_floats_act_A768 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledAT, .horizontalAT{list-style: $none}
         .floatLeftAT, .horizontalAT li{float: $left}
@@ -807,7 +807,7 @@
         .floatNoneAT, .unstyledAT li{float: $none}
     }
     
-    @if $classes_text_act_AT == "on"{
+    @if $classes_text_act_A768 == "on"{
 /*___ Text ______________________________*/ 
         .txIndentedAT{text-indent: -9999px}
         .txAlignLeftAT{text-align: left}
@@ -822,7 +822,7 @@
         .txCaseLowerAT{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_AT == "on"{
+    @if $classes_bg_bd_NO_act_A768 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banAT{border: $none}
         .bgNoneAT{
@@ -834,14 +834,14 @@
         .bgNoImageAT{background-image: $none}
     }
     
-    @if $helpers_spacing_act_AT == "on"{
+    @if $helpers_spacing_act_A768 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorAT;
         .mraAT,.mhaAT{margin-right: $auto}
         .mlaAT,.mhaAT{margin-left: $auto}
     }
      
-    @if $classes_flexbox_act_AT == "on"{
+    @if $classes_flexbox_act_A768 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT{
             display: flex;
@@ -872,7 +872,7 @@
 
 /* // After MQ768 Before MQ1024 Classes ------------------------------------- */
 @include MQ768_1024{
-    @if $classes_position_display_mask_cursor_act_TO == "on"{
+    @if $classes_position_display_mask_cursor_act_A768B1024 == "on"{
 /*___ Positioning _______________________*/
         .pRelTO{position: relative}
         .pAbsTO{position: absolute}
@@ -906,7 +906,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_TO == "on"{
+    @if $classes_lists_floats_act_A768B1024 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledTO, .horizontalTO{list-style: $none}
         .floatLeftTO, .horizontalTO li{float: $left}
@@ -926,7 +926,7 @@
         .floatNoneTO, .unstyledTO li{float: $none}
     }
     
-    @if $classes_text_act_TO == "on"{
+    @if $classes_text_act_A768B1024 == "on"{
 /*___ Text ______________________________*/
         .txIndentedTO{text-indent: -9999px}
         .txAlignLeftTO{text-align: left}
@@ -941,7 +941,7 @@
         .txCaseLowerTO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_TO == "on"{
+    @if $classes_bg_bd_NO_act_A768B1024 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banTO{border: $none}
         .bgNoneTO{
@@ -953,14 +953,14 @@
         .bgNoImageTO{background-image: $none}
     }
     
-    @if $helpers_spacing_act_TO == "on"{
+    @if $helpers_spacing_act_A768B1024 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorTO;
         .mraTO,.mhaTO{margin-right: $auto}
         .mlaTO,.mhaTO{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_TO == "on"{
+    @if $classes_flexbox_act_A768B1024 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexTO, .flexHorizontalTO, .flexColumnTO, .flexNoWrapTO, .flexJustifyEndTO, .flexJustifyCenterTO, .flexJustifyBetweenTO, .flexJustifyAroundTO, .flexAlignContentEndTO, .flexAlignContentCenterTO, .flexAlignContentBetweenTO, .flexAlignContentAroundTO, .flexAlignContentStretchTO, .flexAlignItemsEndTO, .flexAlignItemsCenterTO, .flexAlignItemsBaselineTO, .flexAlignItemsStretchTO, .horizontalCenterFlexTO{
             display: flex;
@@ -1043,7 +1043,7 @@
 
 /* // Before MQ1024 Classes ------------------------------------------------- */
 @include beforeMQ1024{
-    @if $classes_position_display_mask_cursor_act_BTL == "on"{
+    @if $classes_position_display_mask_cursor_act_B1024 == "on"{
 /*___ Positioning _______________________*/
         .pRelBTL{position: relative}
         .pAbsBTL{position: absolute}
@@ -1077,7 +1077,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_BTL == "on"{
+    @if $classes_lists_floats_act_B1024 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledBTL, .horizontalBTL{list-style: $none}
         .floatLeftBTL, .horizontalBTL li{float: $left}
@@ -1097,7 +1097,7 @@
         .floatNoneBTL, .unstyledBTL li{float: $none}
     }
     
-    @if $classes_text_act_BTL == "on"{
+    @if $classes_text_act_B1024 == "on"{
 /*___ Text ______________________________*/
         .txIndentedBTL{text-indent: -9999px}
         .txAlignLeftBTL{text-align: left}
@@ -1112,7 +1112,7 @@
         .txCaseLowerBTL{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_BTL == "on"{
+    @if $classes_bg_bd_NO_act_B1024 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banBTL{border: $none}
         .bgNoneBTL{
@@ -1124,14 +1124,14 @@
         .bgNoImageBTL{background-image: $none}
     }
     
-    @if $helpers_spacing_act_BTL == "on"{
+    @if $helpers_spacing_act_B1024 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorBTL;
         .mraBTL,.mhaBTL{margin-right: $auto}
         .mlaBTL,.mhaBTL{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_BTL == "on"{
+    @if $classes_flexbox_act_B1024 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexBTL, .flexHorizontalBTL, .flexColumnBTL, .flexNoWrapBTL, .flexJustifyEndBTL, .flexJustifyCenterBTL, .flexJustifyBetweenBTL, .flexJustifyAroundBTL, .flexAlignContentEndBTL, .flexAlignContentCenterBTL, .flexAlignContentBetweenBTL, .flexAlignContentAroundBTL, .flexAlignContentStretchBTL, .flexAlignItemsEndBTL, .flexAlignItemsCenterBTL, .flexAlignItemsBaselineBTL, .flexAlignItemsStretchBTL, .horizontalCenterFlexBTL{
             display: flex;
@@ -1281,7 +1281,7 @@
 
 /* // After MQ1024 Before MQ1200 Classes ------------------------------------ */
 @include MQ1024_1200{
-    @if $classes_position_display_mask_cursor_act_TLO == "on"{
+    @if $classes_position_display_mask_cursor_act_A1024B1200 == "on"{
 /*___ Positioning _______________________*/
         .pRelTLO{position: relative}
         .pAbsTLO{position: absolute}
@@ -1315,7 +1315,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_TLO == "on"{
+    @if $classes_lists_floats_act_A1024B1200 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledTLO, .horizontalTLO{list-style: $none}
         .floatLeftTLO, .horizontalTLO li{float: $left}
@@ -1335,7 +1335,7 @@
         .floatNoneTLO, .unstyledTLO li{float: $none}
     }
     
-    @if $classes_text_act_TLO == "on"{
+    @if $classes_text_act_A1024B1200 == "on"{
 /*___ Text ______________________________*/
         .txIndentedTLO{text-indent: -9999px}
         .txAlignLeftTLO{text-align: left}
@@ -1350,7 +1350,7 @@
         .txCaseLowerTLO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_TLO == "on"{
+    @if $classes_bg_bd_NO_act_A1024B1200 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banTLO{border: $none}
         .bgNoneTLO{
@@ -1362,14 +1362,14 @@
         .bgNoImageTLO{background-image: $none}
     }
     
-    @if $helpers_spacing_act_TLO == "on"{
+    @if $helpers_spacing_act_A1024B1200 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorTLO;
         .mraTLO,.mhaTLO{margin-right: $auto}
         .mlaTLO,.mhaTLO{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_TLO == "on"{
+    @if $classes_flexbox_act_A1024B1200 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexTLO, .flexHorizontalTLO, .flexColumnTLO, .flexNoWrapTLO, .flexJustifyEndTLO, .flexJustifyCenterTLO, .flexJustifyBetweenTLO, .flexJustifyAroundTLO, .flexAlignContentEndTLO, .flexAlignContentCenterTLO, .flexAlignContentBetweenTLO, .flexAlignContentAroundTLO, .flexAlignContentStretchTLO, .flexAlignItemsEndTLO, .flexAlignItemsCenterTLO, .flexAlignItemsBaselineTLO, .flexAlignItemsStretchTLO, .horizontalCenterFlexTLO{
             display: flex;
@@ -1400,7 +1400,7 @@
 
 /* // After MQ768 Before MQ1200 Classes ------------------------------------- */
 @include MQ768_1200{
-    @if $classes_position_display_mask_cursor_act_TTLO == "on"{
+    @if $classes_position_display_mask_cursor_act_A1024B1200 == "on"{
 /*___ Positioning _______________________*/
         .pRelTTLO{position: relative}
         .pAbsTTLO{position: absolute}
@@ -1434,7 +1434,7 @@
         }
     }
     
-    @if $classes_lists_floats_act_TTLO == "on"{
+    @if $classes_lists_floats_act_A1024B1200 == "on"{
 /*___ Lists and floats __________________*/
         .unstyledTTLO, .horizontalTTLO{list-style: $none}
         .floatLeftTTLO, .horizontalTTLO li{float: $left}
@@ -1454,7 +1454,7 @@
         .floatNoneTTLO, .unstyledTTLO li{float: $none}
     }
     
-    @if $classes_text_act_TTLO == "on"{
+    @if $classes_text_act_A1024B1200 == "on"{
 /*___ Text ______________________________*/
         .txIndentedTTLO{text-indent: -9999px}
         .txAlignLeftTTLO{text-align: left}
@@ -1469,7 +1469,7 @@
         .txCaseLowerTTLO{text-transform: lowercase}
     }
         
-    @if $classes_bg_bd_NO_act_TTLO == "on"{
+    @if $classes_bg_bd_NO_act_A1024B1200 == "on"{
 /*___ Backgrounds, border and images ____*/
         .banTTLO{border: $none}
         .bgNoneTTLO{
@@ -1481,14 +1481,14 @@
         .bgNoImageTTLO{background-image: $none}
     }
     
-    @if $helpers_spacing_act_TTLO == "on"{
+    @if $helpers_spacing_act_A1024B1200 == "on"{
 /*___ Spacing Helpers ___________________*/
         @include spacingHelpersClassesGeneratorTTLO;
         .mraTTLO,.mhaTTLO{margin-right: $auto}
         .mlaTTLO,.mhaTTLO{margin-left: $auto}
     }
     
-    @if $classes_flexbox_act_TTLO == "on"{
+    @if $classes_flexbox_act_A1024B1200 == "on"{
 /*___ Flexbox Classes ___________________*/
         .displayFlexTTLO, .flexHorizontalTTLO, .flexColumnTTLO, .flexNoWrapTTLO, .flexJustifyEndTTLO, .flexJustifyCenterTTLO, .flexJustifyBetweenTTLO, .flexJustifyAroundTTLO, .flexAlignContentEndTTLO, .flexAlignContentCenterTTLO, .flexAlignContentBetweenTTLO, .flexAlignContentAroundTTLO, .flexAlignContentStretchTTLO, .flexAlignItemsEndTTLO, .flexAlignItemsCenterTTLO, .flexAlignItemsBaselineTTLO, .flexAlignItemsStretchTTLO, .horizontalCenterFlexTTLO{
             display: flex;

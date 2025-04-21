@@ -152,7 +152,7 @@
     }
     
     @include afterMQ768{
-        @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_AT == "on"{ // REF [20]
+        @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_A768 == "on"{ // REF [20]
             .logo_footer_container{
                 width: $footer_logoFloated_width_AT;
                 padding-right: 20px;

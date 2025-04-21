@@ -113,7 +113,7 @@
     }
 
     @include beforeMQ768{        
-        @if $header_fixed_act_BT == "on"{
+        @if $header_fixed_act_B768 == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -125,7 +125,7 @@
             }
         } 
         
-        @if $header_fixed_act_BT == "on" or $header_fixed_act_ALL == "on"{
+        @if $header_fixed_act_B768 == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_BT;
             
             &.navDrawer_open{}
@@ -155,7 +155,7 @@
 */
 
     @include afterMQ768{        
-        @if $header_fixed_act_AT == "on"{
+        @if $header_fixed_act_A768 == "on"{
             position: fixed;
             top: 0;
             right: 0;
@@ -167,7 +167,7 @@
             }
         }
         
-        @if $header_fixed_act_AT == "on" or $header_fixed_act_ALL == "on"{
+        @if $header_fixed_act_A768 == "on" or $header_fixed_act_ALL == "on"{
             height: $header_height_AT;
         }
     }

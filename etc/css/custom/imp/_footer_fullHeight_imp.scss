@@ -93,11 +93,11 @@
     }
     
     @include beforeMQ768{
-        @if $page_index_fullHeight_act_BT == "on" or $page_section_fullHeight_act_BT == "on"{
+        @if $page_index_fullHeight_act_B768 == "on" or $page_section_fullHeight_act_B768 == "on"{
             height: $footer_height_BT;
         }  
     
-        @if $page_index_only_fullHeight_act_BT == "on"{
+        @if $page_index_only_fullHeight_act_B768 == "on"{
             &.footer_page_index{
                 height: $footer_height_BT;
             }
@@ -105,11 +105,11 @@
     }
     
     @include afterMQ768{
-        @if $page_index_fullHeight_act_AT == "on" or $page_section_fullHeight_act_AT == "on"{
+        @if $page_index_fullHeight_act_A768 == "on" or $page_section_fullHeight_act_A768 == "on"{
             height: $footer_height_AT;
         }  
     
-        @if $page_index_only_fullHeight_act_AT == "on"{
+        @if $page_index_only_fullHeight_act_A768 == "on"{
             &.footer_page_index{
                 height: $footer_height_AT;
             }
@@ -117,11 +117,11 @@
     }
     
     @include MQ768_1024{
-        @if $page_index_fullHeight_act_TO == "on" or $page_section_fullHeight_act_TO == "on"{
+        @if $page_index_fullHeight_act_A768B1024 == "on" or $page_section_fullHeight_act_A768B1024 == "on"{
             height: $footer_height_TO;
         }  
     
-        @if $page_index_only_fullHeight_act_TO == "on"{
+        @if $page_index_only_fullHeight_act_A768B1024 == "on"{
             &.footer_page_index{
                 height: $footer_height_TO;
             }
@@ -129,11 +129,11 @@
     }
     
     @include beforeMQ1024{
-        @if $page_index_fullHeight_act_BTL == "on" or $page_section_fullHeight_act_BTL == "on"{
+        @if $page_index_fullHeight_act_B1024 == "on" or $page_section_fullHeight_act_B1024 == "on"{
             height: $footer_height_BTL;
         }  
     
-        @if $page_index_only_fullHeight_act_BTL == "on"{
+        @if $page_index_only_fullHeight_act_B1024 == "on"{
             &.footer_page_index{
                 height: $footer_height_BTL;
             }

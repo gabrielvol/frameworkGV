@@ -215,7 +215,7 @@
     
     //@include navAT // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
     @include afterMQ768{
-        @if $header_logoNav_floated_flexbox_act_AT == "on"{
+        @if $header_logoNav_floated_flexbox_act_A768 == "on"{
             .container{
                 display: flex;
                 flex-direction: row;
@@ -257,7 +257,7 @@
                 padding-left: 20px;             
             }
             
-            @if $header_logoNav_floated_flexbox_act_AT == "on"{
+            @if $header_logoNav_floated_flexbox_act_A768 == "on"{
                 box-sizing: border-box;           
             }
             
