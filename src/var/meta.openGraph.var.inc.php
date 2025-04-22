@@ -5,8 +5,8 @@
 
 /* // Descripcion ----------------------------------------------------------- 
    Variables para open graph
-   Este archivo se carga antes del head en cada página, no se carga desde
-   PHP Variables Main Loader [/src/var/main.var.inc.php]
+   Este archivo se carga antes del head en cada página, no se carga en:
+   PHP Variables Main Loader `[/src/var/main.var.inc.php]`
 
    #meta #openGraph #seo
 */
@@ -55,7 +55,7 @@ else:
     $openGraph_img_height           = '630'; // '1000';
 endif;    
     
-    $openGraph_img_type             = 'image/jpg';;
+    $openGraph_img_type             = 'image/jpg';
 
 
 /* // -- misc */
