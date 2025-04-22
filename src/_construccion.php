@@ -8,10 +8,10 @@
     $nav_pageCurrent_int    = 'page_construccion_home';
     
 /* // Si se activa `$nav_pageCurrent_id`
-   1. Hay que asignar los títulos en `/var/page.construccion.var.inc.php` */
+   1. Hay que asignar los títulos en `[/var/page.construccion.var.inc.php]` */
 //    $nav_pageCurrent_id     = 'page_construccion_ID';
 
-/* 2. Las siguientes variables se declaran en `/var/page.construccion.var.inc.php` */
+/* 2. Las siguientes variables se declaran en `[/var/page.construccion.var.inc.php]` */
     $page_construccion      = 1;
     $page_redirect          = 0;
 
@@ -47,8 +47,8 @@
     $page_title             = $page_title_home_construccion . " | " . $site_name_title;
     
 /* 5. La nueva variable `$page_title` se construye de la siguiente forma:
-   $page_title_home_construccion se declara en `/var/meta.titlesDesc.var.inc.php`
-   $page_title_id se declara en `/var/page.construccion.var.inc.php` */
+   $page_title_home_construccion se declara en `[/var/meta.titlesDesc.var.inc.php]`
+   $page_title_id se declara en `[/var/page.construccion.var.inc.php]` */
 //   $page_title             = $page_title_id . " | " . $page_title_home_construccion . " | " . $site_name_title;    
     $page_desc              = $page_desc_global;
      

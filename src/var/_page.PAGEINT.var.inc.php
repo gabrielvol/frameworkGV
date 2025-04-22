@@ -11,10 +11,6 @@
 
 
 /* // Variables en comun para las paginas internas de PAGEINT --------------- */
-$page_construccion      = 0;
-$page_redirect          = 0;
-
-$has_form               = 0; /* // REF [36] Form variables */
 
 /* // Form identifier Global ------------------------------------------------ 
    La variable $form_id puede ser declarada de tres formas:
@@ -38,7 +34,9 @@ $has_slider             = 0;
    Ej.:
    $pageRecetas_title_huevoFrito    = 'Cómo hacer un exquisito huevo frito';
    $page_heading_id                 = '';
-*/
+ 
+   Los archivos data.PAGEINT tambien deben ser cargados en `[/src/var/main.var.inc.php]` */
+// include('data.PAGEINT.var.inc.php');
 
 if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
     $PAGEINT_title_PAGEID    = 'TituloPagID_GB';

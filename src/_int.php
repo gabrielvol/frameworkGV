@@ -8,19 +8,21 @@
     $nav_pageCurrent_int    = 'page_PAGEINT_home';
     
 /* // Si se activa `$nav_pageCurrent_id`
-   1. Hay que asignar los títulos en `/var/page.PAGEINT.var.inc.php` */
+   1. Hay que asignar los títulos en `[/var/page.PAGEINT.var.inc.php]` */
 //    $nav_pageCurrent_id     = 'page_PAGEINT_ID';
 
-/* 2. Las siguientes variables se declaran en `/var/page.PAGEINT.var.inc.php` */
-    $page_construccion      = 0;
-    $page_redirect          = 0;
-    
-    $has_form               = 0; /* // REF [36] Form variables */
+/* 2. Las siguientes variables se declaran en `[/var/page.PAGEINT.var.inc.php]` */
     $has_lightbox           = 0; /* // REF [26] */
     $has_pop_video          = 0;
     $has_scrolling          = 1;
     $has_slider             = 0;
-    $page_noTrack           = 1;
+    
+
+/* Variables únicas de esta página */
+    $page_construccion      = 0;
+    $page_redirect          = 0;    
+    $has_form               = 0; /* // REF [36] Form variables */
+    $page_noTrack           = 0;
 //    $has-CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 
@@ -48,8 +50,8 @@
     $page_title             = $page_title_home_PAGEINT . " | " . $site_name_title;
     
 /* 5. La nueva variable `$page_title` se construye de la siguiente forma:
-   $page_title_home_PAGEINT se declara en `/var/meta.titlesDesc.var.inc.php`
-   $page_title_id se declara en `/var/page.PAGEINT.var.inc.php` */
+   $page_title_home_PAGEINT se declara en `[/var/meta.titlesDesc.var.inc.php]`
+   $page_title_id se declara en `[/var/page.PAGEINT.var.inc.php]` */
 //   $page_title             = $page_title_id . " | " . $page_title_home_PAGEINT . " | " . $site_name_title;    
     $page_desc              = $page_desc_global;
      

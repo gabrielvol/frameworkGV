@@ -26,7 +26,8 @@ include('url.var.inc.php');
 // include('web.var.inc.php');
 include('global.var.inc.php');
 
-// include('data.books.var.inc.php');
+/* Los archivos data.PAGEINT también deben ser cargados en page.PAGEINT */
+// include('data.PAGEINT.var.inc.php');
     
 include('meta.titlesDesc.var.inc.php');
 // include('address.var.inc.php');
@@ -37,7 +38,8 @@ include('email.var.inc.php');
     
 // include('file.var.inc.php');
 // include('media.var.inc.php');
-// if($nav_pageCurrent == 'page_INT'){ include('page.PAGEINT.var.inc.php'); }
+// if($nav_pageCurrent == 'page_PAGEINT'){ include('page.PAGEINT.var.inc.php'); }
+// if($nav_pageCurrent_int == 'page_PAGEINT_int'){ include('page.PAGEINT.var.inc.php'); }
 
 /* // REF [36] Form variables Form variable */
 /* // REF [50] Google captcha */
