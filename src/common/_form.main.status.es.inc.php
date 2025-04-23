@@ -44,7 +44,6 @@ $form_validation_msg_data_nombre__formMainID          = 'Por favor, ingrese su n
 $form_validation_msg_data_apellido__formMainID        = 'Por favor, ingrese su apellido.';
 $form_validation_msg_data_nombreAp__formMainID        = 'Por favor, ingrese su nombre y apellido.';
 $form_validation_msg_data_nombreCo__formMainID        = 'Por favor, ingrese su nombre completo.';
-$form_validation_msg_data_username__formMainID        = 'Por favor, ingrese un nombre de usuario.';
 $form_validation_msg_data_cantidad__formMainID        = 'Por favor, ingrese una cantidad.';
    
 $form_validation_msg_data_direccion__formMainID       = 'Por favor, ingrese su direcci&oacute;n.';
@@ -74,6 +73,9 @@ $form_validation_msg_data_razonSocial__formMainID     = 'Por favor, ingrese su r
 $form_validation_msg_data_cargo__formMainID           = 'Por favor, ingrese su cargo.';
 $form_validation_msg_data_rubro__formMainID           = 'Por favor, ingrese un rubro.';
 $form_validation_msg_data_asunto__formMainID          = 'Por favor, ingrese un asunto.';
+
+$form_validation_msg_data_username__formMainID        = 'Por favor, ingres&aacute; tu nombre de usuario.';
+$form_validation_msg_data_password__formMainID        = 'Por favor, ingres&aacute; su contrase&ntilde;a.';
    
 $form_validation_msg_data_area__formMainID            = 'Por favor, elija un &aacute;rea de contacto.';        
 $form_validation_msg_data_newsletter__formMainID      = 'Por favor, elija una opci&oacute;n.';

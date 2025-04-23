@@ -40,7 +40,6 @@ $form_validation_msg_data_nombre__formMainID          = 'Please, complete your n
 $form_validation_msg_data_apellido__formMainID        = 'Please, complete your surname.';
 $form_validation_msg_data_nombreAp__formMainID        = 'Please, complete your full name.';
 $form_validation_msg_data_nombreCo__formMainID        = 'Please, complete your full name.';
-$form_validation_msg_data_username__formMainID        = 'Please, complete your username.';
 $form_validation_msg_data_cantidad__formMainID        = 'Please, enter a quantity.';
    
 $form_validation_msg_data_direccion__formMainID       = 'Please, complete your address.';
@@ -70,6 +69,9 @@ $form_validation_msg_data_razonSocial__formMainID     = 'Please, complete the co
 $form_validation_msg_data_cargo__formMainID           = 'Please, complete your position.';
 $form_validation_msg_data_rubro__formMainID           = 'Please, complete your business area.';
 $form_validation_msg_data_asunto__formMainID          = 'Please, complete the subject.';
+
+$form_validation_msg_data_username__formMainID        = 'Please, complete your username.';
+$form_validation_msg_data_password__formMainID        = 'Please, enter your password.';
    
 $form_validation_msg_data_area__formMainID            = 'Please, choose a contact departmet.';        
 $form_validation_msg_data_newsletter__formMainID      = 'Please, choose an option.';

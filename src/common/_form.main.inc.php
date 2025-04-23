@@ -190,13 +190,8 @@
         <?php else: ?>
             Contraseña
         <?php endif; ?></span>
-        <input type="password" name="contrasena__formMainID" id="data_contrasena__formMainID" class="data_contrasena__formMainID <?php echo $form_validation_input_class_data_password__formMainID; ?>" value="<?php echo $_POST['contrasena__formMainID']; ?>" form="formMainID" enterkeyhint="go" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_password__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_password__formMainID; ?>"><?php echo $form_validation_span_msg_data_password__formMainID; ?></span>        
-        <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            An email will be sent to confirm this address
-        <?php else: ?>
-            Te enviaremos un correo a esta casilla para confirmar tu registro
-        <?php endif; ?>.</span>
+        <input type="password" name="contrasena__formMainID" id="data_password__formMainID" class="data_password__formMainID <?php echo $form_validation_input_class_data_password__formMainID; ?>" value="<?php echo $_POST['contrasena__formMainID']; ?>" form="formMainID" enterkeyhint="go" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_password__formMainID; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_password__formMainID; ?>"><?php echo $form_validation_span_msg_data_password__formMainID; ?></span>
     </label>
 
     <label for="data_direccion__formMainID" class="<?php echo $form_validation_input_class_data_direccion__formMainID; ?>">
@@ -404,21 +399,6 @@
         <?php else: ?>
             Te enviaremos un correo a esta casilla para confirmar tu registro
         <?php endif; ?>.</span>
-    </label> 
-
-    <label for="data_email__formMainID" class="form_required <?php echo $form_validation_input_class_data_email__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            E-mail
-        <?php else: ?>
-            E-mail
-        <?php endif; ?></span>
-        <input type="email" name="data_email__formMainID" id="data_email__formMainID" class="data_email__formMainID <?php echo $form_validation_input_class_data_email__formMainID; ?>" value="<?php echo $_POST['data_email__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMainID; ?> required>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_email__formMainID; ?>"><?php echo $form_validation_span_msg_data_email__formMainID; ?></span>  
-        <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            An email will be sent to confirm this address
-        <?php else: ?>
-            Te enviaremos un correo a esta casilla para confirmar tu registro
-        <?php endif; ?>.</span>
     </label>               
 
     <label for="data_webSite__formMainID" class="<?php echo $form_validation_input_class_data_webSite__formMainID; ?>">
@@ -447,12 +427,8 @@
         <?php else: ?>
             Instagram
         <?php endif; ?></span>
-        <input type="text" name="data_instagram__formMainID" id="data_instagram__formMainID" class="data_instagram__formMainID <?php echo $form_validation_input_class_data_instagram__formMainID; ?>" value="<?php echo $_POST['data_instagram__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Just write the username'; } else { echo 'Solamente escribir el usuario'; } ?>" <?php echo $form_input_autofocus_data_instagram__formMainID; ?>>     
-        <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            An email will be sent to confirm this address
-        <?php else: ?>
-            Te enviaremos un correo a esta casilla para confirmar tu registro
-        <?php endif; ?>.</span>
+        <input type="text" name="data_instagram__formMainID" id="data_instagram__formMainID" class="data_instagram__formMainID <?php echo $form_validation_input_class_data_instagram__formMainID; ?>" value="<?php echo $_POST['data_instagram__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Just write the username'; } else { echo 'Solamente escribir el usuario'; } ?>" <?php echo $form_input_autofocus_data_instagram__formMainID; ?>> 
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_instagram__formMainID; ?>"><?php echo $form_validation_span_msg_data_instagram__formMainID; ?></span>
     </label>
 
     <label for="data_empresa__formMainID" class="<?php echo $form_validation_input_class_data_empresa__formMainID; ?>">
