@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // esta declarada en `[/src/var/form.var.inc.php]`
         if ($captcha_response_keys["score"] >= $captcha_score_treshold) {
             
-            $form_status_marquee__formMainID .= $form_status_captcha_OKsuccessTrue__formMainID . $data_captchaResponseToken__formMainID;
+            $form_status_marquee__formMainID .= $form_status_captcha_ok_successTrue__formMainID . $data_captchaResponseToken__formMainID;
             
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
             if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // FIN de validacion en .form_validation_span ---------------------------- */ 
             } else {
 /* // Si todos los campos validan ------------------------------------------- */
-                $form_status_marquee__formMainID = $form_status_captcha_OKvalidacionOK__formMainID;
+                $form_status_marquee__formMainID = $form_status_ok_validation__formMainID;
                 
 /* // Cuerpo de mail y asunto ----------------------------------------------- */
                 $formMail_recipient  = $form_recipient__formMainID;
@@ -169,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
 /* // Si el score es menor al limite, pasa como spam ------------------------ */ 
     } elseif ($captcha_response_keys["score"] < $captcha_score_treshold) {
-            $form_status_marquee__formMainID = $form_status_captcha_ErrorScoreLow__formMainID;
+            $form_status_marquee__formMainID = $form_status_captcha_error_lowScore__formMainID;
             
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
             // TODO pop para sugerir otra forma de contacto cuando es spam
@@ -180,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
                 . '<p>'. $form_status_error_globalB__formMainID .'</p>'
                 . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-                . $form_status_captcha_ErrorScoreLow__formMainID
+                . $form_status_captcha_error_lowScore__formMainID
                 . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
                 . '</div>'
                 . '</div>'
@@ -194,7 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // Si obtenemos mensajes de error ---------------------------------------- */ 
     } elseif($captcha_response_keys["error-codes"]) {
         
-        $form_status_marquee__formMainID = $form_status_captcha_ErrorSuccessFalse__formMainID;
+        $form_status_marquee__formMainID = $form_status_captcha_error_successFalse__formMainID;
         
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
         // TODO pop para sugerir otra forma de contacto cuando es spam
@@ -205,7 +205,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
             . '<p>'. $form_status_error_globalB__formMainID .'</p>'
             . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-            . $form_status_captcha_ErrorSuccessFalse__formMainID    
+            . $form_status_captcha_error_successFalse__formMainID    
             . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
             . '</div>'
             . '</div>'
@@ -219,7 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // Si success es false --------------------------------------------------- */ 
     } else {
         
-        $form_status_marquee__formMainID = $form_status_captcha_ErrorOther__formMainID;
+        $form_status_marquee__formMainID = $form_status_captcha_error_other__formMainID;
     
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
         $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
@@ -228,7 +228,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
             . '<p>'. $form_status_error_globalB__formMainID .'</p>'
             . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-            . $form_status_captcha_ErrorOther__formMainID
+            . $form_status_captcha_error_other__formMainID
             . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
             . '</div>'
             . '</div>'

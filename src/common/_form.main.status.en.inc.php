@@ -23,12 +23,12 @@ $form_status_error_global__formMainID        = $form_status_error_globalA__formM
 
 
 /* // Captcha Status -------------------------------------------------------- */
-$form_status_captcha_ini__formMainID = '<p>Captcha validation has not started</p>';
-$form_status_captcha_OKsuccessTrue__formMainID = '<p class="form_status form_status_captcha">Captcha: success true!</p>';
-$form_status_captcha_OKvalidacionOK__formMainID = '<p>Validation OK, now send script runs</p>';
-$form_status_captcha_ErrorScoreLow__formMainID = '<p>Error, score lower than 0.5</p>';
-$form_status_captcha_ErrorSuccessFalse__formMainID = '<p class="form_status form_status_captcha">Captcha: error. Success false</p>';
-$form_status_captcha_ErrorOther__formMainID = '<p>Unknown error :( </p>';
+$form_status_captcha_ini__formMainID                    = '<p class="form_status form_status_captcha">Captcha validation has not started</p>';
+$form_status_captcha_ok_successTrue__formMainID         = '<p class="form_status form_status_captcha">Captcha: success true!</p>';
+$form_status_ok_validation__formMainID                  = '<p class="form_status form_status_captcha">Form validation OK, now send script starts</p>';
+$form_status_captcha_error_lowScore__formMainID         = '<p class="form_status form_status_captcha">Captcha: Error, score lower than 0.5</p>';
+$form_status_captcha_error_successFalse__formMainID     = '<p class="form_status form_status_captcha">Captcha: Error, success false</p>';
+$form_status_captcha_error_other__formMainID            = '<p class="form_status form_status_captcha">Captcha: Error, unknown</p>';
 
 
 

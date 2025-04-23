@@ -28,47 +28,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // REF [50] Google reCaptcha --------------------------------------------- */
     $data_captchaResponseToken__formMainID = $_POST['data_captchaResponseToken__formMainID'];
     
-// Construct the url to send your private Secret Key, token and (optionally) IP
-// address of the form submitter to Google to get a spam rating for the
-// submission. Las variables `$captcha_key_secret` y `$captcha_ip_remote`
-// estan declaradas en `[/src/var/form.var.inc.php]`
+/* Construct the url to send your private Secret Key, token and (optionally) IP
+ * address of the form submitter to Google to get a spam rating for the
+ * submission.
+ * 
+ * Las variables `$captcha_key_secret` y `$captcha_ip_remote`
+ * estan declaradas en `[/src/var/form.var.inc.php]` */
 
     $captcha_url_siteverify = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $captcha_key_secret . '&response=' . $data_captchaResponseToken__formMainID . '&remoteip=' . $captcha_ip_remote;
 
-/* // Save the response ----------------------------------------------------- */ 
-// e.g. print_r($captcha_response) prints {
-//   "success": true,
-//   "challenge_ts": "2019-07-24T11:19:07Z",
-//   "hostname": "domain.com",
-//   "score": 0.9,
-//   "action": "formID"
-//   }
-
+/* // Save the response -----------------------------------------------------  
+e.g. print_r($captcha_response) prints {
+  "success": true,
+  "challenge_ts": "2019-07-24T11:19:07Z",
+  "hostname": "domain.com",
+  "score": 0.9,
+  "action": "formID"
+  }
+*/
     $captcha_response = file_get_contents($captcha_url_siteverify);
 
-/* // Decode the response --------------------------------------------------- */
-// e.g. print_r($captcha_response_keys) prints Array (
-//   [success] => 1
-//   [challenge_ts] => 2019-07-24T11:19:07Z
-//   [hostname] => domain.com
-//   [score] => 0.9
-//   [action] => formID
-//   )
-
+/* // Decode the response --------------------------------------------------- 
+e.g. print_r($captcha_response_keys) prints Array (
+  [success] => 1
+  [challenge_ts] => 2019-07-24T11:19:07Z
+  [hostname] => domain.com
+  [score] => 0.9
+  [action] => formID
+  )
+*/
     $captcha_response_keys = json_decode($captcha_response, true);
 
-// Check if the test was done OK, if the action name is correct and if the score
-// is above your chosen threshold.
-
-/* // Chequeamos que success sea 1 y que action corresponda con el id del form - */
+/* Check if the test was done OK, if the action name is correct and if the score
+ *  is above your chosen threshold.
+ * 
+ *  Chequeamos que success sea 1 y que action corresponda con el id del form - */
     if ($captcha_response_keys["success"] && $captcha_response_keys["action"] == 'formMainID') {
 
-/* // Chequeamos que el score sea superior al limite indicado --------------- */
-// La variable `$captcha_score_treshold`
-// esta declarada en `[/src/var/form.var.inc.php]`
+/* // Chequeamos que el score sea superior al limite indicado ---------------
+ *  
+ * La variable `$captcha_score_treshold`
+ * esta declarada en `[/src/var/form.var.inc.php]` */
         if ($captcha_response_keys["score"] >= $captcha_score_treshold) {
             
-            $form_status_marquee__formMainID .= $form_status_captcha_OKsuccessTrue__formMainID . '<span class="consolas">' . $data_captchaResponseToken__formMainID . '</span>';
+            $form_status_marquee__formMainID .= $form_status_captcha_ok_successTrue__formMainID . '<span class="consolas">' . $data_captchaResponseToken__formMainID . '</span>';
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
             if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -94,26 +97,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        
             } else {       
 /* // Si todos los campos validan ------------------------------------------- */
-                $form_status_marquee__formMainID .= $form_status_captcha_OKvalidacionOK__formMainID;
+                $form_status_marquee__formMainID .= $form_status_ok_validation__formMainID;
                 
                 $form_status_file__formMainID .= '<p class="form_status form_status_file">Esperando verificar archivo</p>';
                 
                 if (array_key_exists('userfile', $_FILES)) {
-                    //First handle the upload
-                    //Don't trust provided filename - same goes for MIME types
-                    //See https://www.php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
-                    //
-                    //Extract an extension from the provided filename
+                    /* First handle the upload
+                     * Don't trust provided filename - same goes for MIME types
+                     * See https://www.php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
+                     * 
+                     * Extract an extension from the provided filename */
                     $ext = PHPMailer::mb_pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
                     
-                    //Define a safe location to move the uploaded file to, preserving the extension
+                    /* Define a safe location to move the uploaded file to, preserving the extension */
                     $uploadfile = tempnam(sys_get_temp_dir(), hash('sha256', $_FILES['userfile']['name'])) . '.' . $ext;
                         
                     $form_status_file__formMainID .= '<p class="form_status form_status_file">Destino de archivo: « <pre>' . $uploadfile . ' </pre>»</p>';
 
                     if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-                    //Upload handled successfully
-                    //Now create a message
+                        
+                    /* Upload handled successfully, now create a message */
                 
 /* // Inicia $mail ---------------------------------------------------------- */
                         $mail = new PHPMailer(true);
@@ -240,7 +243,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 /* // Si el score es menor al limite, pasa como spam ------------------------ */ 
         } elseif ($captcha_response_keys["score"] < $captcha_score_treshold) {
-            $form_status_marquee__formMainID .= $form_status_captcha_ErrorScoreLow__formMainID;
+            $form_status_marquee__formMainID .= $form_status_captcha_error_lowScore__formMainID;
             
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
             // TODO pop para sugerir otra forma de contacto cuando es spam
@@ -251,7 +254,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
                 . '<p>'. $form_status_error_globalB__formMainID .'</p>'
                 . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-                . $form_status_captcha_ErrorScoreLow__formMainID
+                . $form_status_captcha_error_lowScore__formMainID
                 . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
                 . '</div>'
                 . '</div>'
@@ -266,7 +269,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // Si obtenemos mensajes de error ---------------------------------------- */ 
     } elseif($captcha_response_keys["error-codes"]) {
         
-        $form_status_marquee__formMainID .= $form_status_captcha_ErrorSuccessFalse__formMainID;
+        $form_status_marquee__formMainID .= $form_status_captcha_error_successFalse__formMainID;
                 
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
         // TODO pop para sugerir otra forma de contacto cuando es spam
@@ -277,7 +280,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
             . '<p>'. $form_status_error_globalB__formMainID .'</p>'
             . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-            . $form_status_captcha_ErrorSuccessFalse__formMainID 
+            . $form_status_captcha_error_successFalse__formMainID 
             . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
             . '</div>'
             . '</div>'
@@ -291,7 +294,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 /* // Si success es false --------------------------------------------------- */ 
     } else {
     
-        $form_status_marquee__formMainID .= $form_status_captcha_ErrorOther__formMainID;
+        $form_status_marquee__formMainID .= $form_status_captcha_error_other__formMainID;
     
 /* // INICIA MENSAJE ERROR EN POPUP ----------------------------------------- *
         $form_status_pop__formMainID = '<div class="pop_global pop_warning pop_formStatus pop_formStatus_error" role="alertdialog" aria-labelledby="formError">'
@@ -300,7 +303,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             . '<h2 id="formError" class="'. $form_status_pop_h2_error_classes__formMainID .'">' . $form_status_error_globalA__formMainID .'</h2>'
             . '<p>'. $form_status_error_globalB__formMainID .'</p>'
             . '<p>'. $form_status_error_globalC__formMainID .'</p>'
-            . $form_status_captcha_ErrorOther__formMainID
+            . $form_status_captcha_error_other__formMainID
             . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
             . '</div>'
             . '</div>'

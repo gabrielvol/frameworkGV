@@ -30,7 +30,7 @@
         
         echo $form_status_pop__formMainID;
         
-        /* echo '<div class="form_validation_div '. $form_validation_div_class__formMainID .'">'. $form_validation_div_msg__formMainID .'</div>'; */              
+       // echo '<div class="form_validation_div '. $form_validation_div_class__formMainID .'">'. $form_validation_div_msg__formMainID .'</div>';
     ?>
     
     <?php if (!empty($form_hidden_variable__formMainID)): ?>
@@ -192,6 +192,11 @@
         <?php endif; ?></span>
         <input type="password" name="contrasena__formMainID" id="data_password__formMainID" class="data_password__formMainID <?php echo $form_validation_input_class_data_password__formMainID; ?>" value="<?php echo $_POST['contrasena__formMainID']; ?>" form="formMainID" enterkeyhint="go" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_password__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_password__formMainID; ?>"><?php echo $form_validation_span_msg_data_password__formMainID; ?></span>
+        <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            Forgot password? <a <?php echo $href_recuperarContrasena; ?>>Click here to recover</a>
+        <?php else: ?>
+            ¿Olvidaste tu contraseña? <a <?php echo $href_recuperarContrasena; ?>>Clic acá para recuperarla</a>
+        <?php endif; ?>.</span>   
     </label>
 
     <label for="data_direccion__formMainID" class="<?php echo $form_validation_input_class_data_direccion__formMainID; ?>">

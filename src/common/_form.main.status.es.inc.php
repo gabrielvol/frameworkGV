@@ -27,12 +27,12 @@ $form_status_error_global__formMainID        = $form_status_error_globalA__formM
 
 
 /* // Captcha Status -------------------------------------------------------- */
-$form_status_captcha_ini__formMainID = '<p class="form_status form_status_captcha">Captcha: todavía no se ejecuta la validación</p>';
-$form_status_captcha_OKsuccessTrue__formMainID = '<p class="form_status form_status_captcha">Captcha: success true!</p>';
-$form_status_captcha_OKvalidacionOK__formMainID = '<p class="form_status form_status_captcha">Captcha: validación OK! Ahora corre PHPMailer</p>';
-$form_status_captcha_ErrorScoreLow__formMainID = '<p class="form_status form_status_captcha">Captcha: error. Score menor a 0.5</p>';
-$form_status_captcha_ErrorSuccessFalse__formMainID = '<p class="form_status form_status_captcha">Captcha: error. Success false</p>';
-$form_status_captcha_ErrorOther__formMainID = '<p class="form_status form_status_captcha">Captcha: error. Otro tipo de error</p>';
+$form_status_captcha_ini__formMainID                    = '<p class="form_status form_status_captcha">Captcha: todavía no se ejecuta la validación</p>';
+$form_status_captcha_ok_successTrue__formMainID         = '<p class="form_status form_status_captcha">Captcha: success true!</p>';
+$form_status_ok_validation__formMainID                  = '<p class="form_status form_status_captcha">Captcha: Form. Validación OK! Ahora corre PHPMailer</p>';
+$form_status_captcha_error_lowScore__formMainID         = '<p class="form_status form_status_captcha">Captcha: Error. Score menor a 0.5</p>';
+$form_status_captcha_error_successFalse__formMainID     = '<p class="form_status form_status_captcha">Captcha: Error. Success false</p>';
+$form_status_captcha_error_other__formMainID            = '<p class="form_status form_status_captcha">Captcha: Error. Otro tipo de error</p>';
 
 
 
