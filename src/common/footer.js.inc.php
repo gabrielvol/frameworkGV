@@ -103,10 +103,13 @@ en `[/src/js/__captcha_formXX.js]` */
 if($has_captcha == 1 && $form_id == 'formMainID'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
 
-<?php elseif($has_captcha == 1 && $form_id == 'formContacto'): ?>
-<script src="<?php echo $dir_env; ?>/js/_captcha_formContacto.js"></script>
+<?php /* elseif($has_captcha == 1 && $form_id == 'formIniciarSesion'): ?>
+<script src="<?php echo $dir_env; ?>/js/_captcha_formIniciarSesion.js"></script>
 
-<?php endif;
+<?php elseif($has_captcha == 1 && $form_id == 'formRecuperarContrasena'): ?>
+<script src="<?php echo $dir_env; ?>/js/_captcha_formRecuperarContrasena.js"></script>
+
+<?php */ endif;
 
 
 /* // REF [26] Lightbox */

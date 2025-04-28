@@ -14,6 +14,7 @@ $timezone = new DateTimeZone('America/Argentina/Buenos_Aires');
 
 $date_year_from     = 2024;
 $date_year_actual   = (int)date('Y');
+$date_current_dmY   = date('d m Y');
 
 $date_mes_enero = 'enero';
 $date_mes_febrero = 'febrero';

@@ -52,6 +52,9 @@ $url_contacto       = $dir_env . '/contacto.php';
 //$url_copyright      = $dir_env . '/legal/copyright.php';
 $url_logo           = $url_root;
 
+$url_iniciarSesion = $dir_env .'/login/index.php';
+$url_recuperarContrasena = $dir_env .'/login/recuperar-contrasena.php';
+
 // $url_PAGINA         = $dir_env . '/pagina.php';
 // $url_PAGINA         = $dir_env . '/pagina.php';
 // $url_PAGINA         = $dir_env . '/pagina.php';
@@ -124,6 +127,10 @@ $url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
 $url_index_full         = $url_wip . $url_index;
 $url_home_full          = $url_wip . $url_home;
 $url_contacto_full      = $url_wip . $url_contacto;
+
+$url_iniciarSesion_full = $url_main . $url_iniciarSesion;
+$url_recuperarContrasena_full = $url_main . $url_recuperarContrasena;
+
 //$url_gracias_full       = $url_wip . $url_gracias;
 //$url_construccion_full  = $url_wip . $url_construccion;
 //$url_copyright_full     = $url_wip . $url_copyright;
@@ -146,6 +153,9 @@ $href_index         = 'href="' . $url_index . '"';
 $href_contacto      = 'href="' . $url_contacto . '"';
 
 $href_logo          = $href_root;
+
+$href_iniciarSesion = 'href="'. $url_iniciarSesion .'"';
+$href_recuperarContrasena = 'href="'. $url_recuperarContrasena .'"';
 
 //$href_construccion  = 'href="' . $url_construccion . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';

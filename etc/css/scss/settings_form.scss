@@ -571,7 +571,8 @@ form{
             }
         }
         
-        .form_label_name{
+        .form_label_name,
+        .data_password_label .form_label_msg_sugg{ /* // REF [52] Form sugg floated */
             @include beforeMQ350{
                 .mobileForm &{
                     @include equalHeightAndLineHeight($form_label_height_B350);
