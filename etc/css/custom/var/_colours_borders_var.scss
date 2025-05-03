@@ -69,6 +69,11 @@ $colours_borders_map:(
     grey2XD:        $grey2XD,
 //  grey3XD:        $grey3XD,
     
+    statusInfo:     #dedede, /* $greyXL, */
+    statusOk:       #7DD825, /* $greenSystemXL, */
+    statusWarning:  #ED9B58, /* $warningXL, */
+    statusError:    #EA636D, /* $errorColourXL, */
+    
     error:          $errorColour,
     outline:        #c6c6c6
 );
@@ -99,6 +104,11 @@ $bdGrey2XD:         map-get($colours_borders_map, grey2XD);
 
 //$bdRedColourM:      map-get($colours_borders_map, redColourM);
  
+$bdStatusInfo:     map-get($colours_borders_map, statusInfo);
+$bdStatusOk:       map-get($colours_borders_map, statusOk);
+$bdStatusWarning:  map-get($colours_borders_map, statusWarning);
+$bdStatusError:    map-get($colours_borders_map, statusError);
+
 $bdColour_main_global:              $bdGreyM;
 $bdColour_main_global_hover:        darken($bdColour_main_global, 15%);
 

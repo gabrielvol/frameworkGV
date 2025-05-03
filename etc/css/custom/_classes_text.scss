@@ -162,3 +162,11 @@
         }
     }
 }
+
+.txOk{
+    color: $statusOk;
+}
+
+.txError{
+    color: $statusError;
+}
