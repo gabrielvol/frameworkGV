@@ -299,7 +299,8 @@ form{
 /* // Form Button Submit // REF [21] ---------------------------------------- */
     input[type="reset"],
     input[type="submit"],
-    input[type="button"]{
+    input[type="button"],
+    button{
         @include transition(0.7s);
         background-color: $button_form_submit_bgColour;
         color: $button_form_submit_ftColour;

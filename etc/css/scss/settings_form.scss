@@ -164,7 +164,7 @@ input, select, textarea{
 input[type="reset"],
 input[type="submit"],
 input[type="button"],
-form button{
+button{
     .mobileForm &{
         @include beforeMQ500{
             width: $button_form_submit_width_B500!important;
