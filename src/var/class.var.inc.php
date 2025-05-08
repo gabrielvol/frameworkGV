@@ -70,10 +70,10 @@ if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_header       .= 'error_alert error_alert_b ';
 endif;  
     
-    $class_end_header       = ' ' . $containerMAX_value; // REF [38*]
+    $class_end_header       = ' ' . $containerMAX_value; /* // REF [38*] */
 
 if(!empty($page_redirect)):
-    $class_end_header      .= 'header_redirect ';
+    $class_end_header      .= 'header_redirect '; /* // REF [53*] Page redirect */
 endif;  
     
 $classes_header             = 'class="'. $class_ini_header . $page_header_classes . $class_end_header .'"';
@@ -106,10 +106,10 @@ if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_footer       .= 'error_alert error_alert_b ';
 endif;
     
-    $class_end_footer       = ' ' . $containerMAX_value; // REF [38*]
+    $class_end_footer       = ' ' . $containerMAX_value; /* // REF [38*] */
 
 if(!empty($page_redirect)):
-    $class_end_footer       .= 'footer_redirect ';
+    $class_end_footer       .= 'footer_redirect '; /* // REF [53*] Page redirect */
 endif;  
 
 $classes_footer             = 'class="' . $class_ini_footer . $class_end_footer . '"';
@@ -130,14 +130,14 @@ if(!empty($nav_pageCurrent_id)):
     $class_ini_main         .= $nav_pageCurrent_id . ' ';
 endif; 
     
-    $class_end_main         = ' ' . $containerMAX_value; // REF [38*]
+    $class_end_main         = ' ' . $containerMAX_value; /* // REF [38*] */
 
 if(!empty($page_construccion)):
     $class_end_main         .= 'page_construccion ';
 endif; 
 
 if(!empty($page_redirect)):
-    $class_end_main         .= 'page_redirect ';
+    $class_end_main         .= 'page_redirect '; /* // REF [53*] Page redirect */
 endif; 
     
 $classes_main               = 'class="' . $class_ini_main . $page_main_classes . $class_end_main . '"';

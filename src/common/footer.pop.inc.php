@@ -4,7 +4,7 @@
 
 /*    
 if($nav_pageCurrent == 'page_PAGINA'):
-    if ($date_now_actual->getTimestamp() >= $popup_date_start->getTimestamp() && $date_now_actual->getTimestamp() <= $popup_date_end->getTimestamp()) {
+    if($date_now_actual->getTimestamp() >= $popup_date_start->getTimestamp() && $date_now_actual->getTimestamp() <= $popup_date_end->getTimestamp()) {
         include('pop.inc.php');
     }
 endif;
