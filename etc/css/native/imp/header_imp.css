@@ -10,7 +10,7 @@ Imported in `[/src/css/main.css]`
     position: relative;
     z-index: 7200;
     height: auto;
-    box-shadow: 0 0 10px 0 var(--grey_de_rgba20);
+    box-shadow: 0 0 10px 0 var(--grey_de_rgba_20);
 }
 
 #header .logo_header,

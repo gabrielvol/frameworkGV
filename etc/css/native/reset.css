@@ -20,40 +20,43 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Colour Classes
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+.grey5XL{ color: var(--grey5XL); }
 .grey4XL{ color: var(--grey4XL); }
 .grey3XL{ color: var(--grey3XL); }
 .grey2XL{ color: var(--grey2XL); }
 .greyXL{  color: var(--greyXL); }
 .greyL{   color: var(--greyL);  }
-.grey{    color: var(--greyM);   }
+.greyM{   color: var(--greyM);   }
 .greyD{   color: var(--greyD);  }
 .greyXD{  color: var(--greyXD); }
 .grey2XD{ color: var(--grey2XD); }
 .grey3XD{ color: var(--grey3XD); }
+.grey4XD{ color: var(--grey4XD); }
+.grey5XD{ color: var(--grey5XD); }  
     
 .black{ color:   var(--black); }
 .white{ color:   var(--white); }
     
-.white_rgba10{ color:      var(--white_rgba10); }
-.white_rgba20{ color:      var(--white_rgba20); }
-.white_rgba30{ color:      var(--white_rgba30); }
-.white_rgba40{ color:      var(--white_rgba40); }
-.white_rgba50{ color:      var(--white_rgba50); }
-.white_rgba60{ color:      var(--white_rgba60); }
-.white_rgba70{ color:      var(--white_rgba70); }
-.white_rgba80{ color:      var(--white_rgba80); }
-.white_rgba85{ color:      var(--white_rgba85); }
-.white_rgba90{ color:      var(--white_rgba90); }
+.white_rgba_10{ color:      var(--white_rgba_10); }
+.white_rgba_20{ color:      var(--white_rgba_20); }
+.white_rgba_30{ color:      var(--white_rgba_30); }
+.white_rgba_40{ color:      var(--white_rgba_40); }
+.white_rgba_50{ color:      var(--white_rgba_50); }
+.white_rgba_60{ color:      var(--white_rgba_60); }
+.white_rgba_70{ color:      var(--white_rgba_70); }
+.white_rgba_80{ color:      var(--white_rgba_80); }
+.white_rgba_85{ color:      var(--white_rgba_85); }
+.white_rgba_90{ color:      var(--white_rgba_90); }
     
-.black_rgba10{ color:      var(--black_rgba10); }
-.black_rgba20{ color:      var(--black_rgba20); }
-.black_rgba30{ color:      var(--black_rgba30); }
-.black_rgba40{ color:      var(--black_rgba40); }
-.black_rgba50{ color:      var(--black_rgba50); }
-.black_rgba60{ color:      var(--black_rgba60); }
-.black_rgba70{ color:      var(--black_rgba70); }
-.black_rgba80{ color:      var(--black_rgba80); }
-.black_rgba90{ color:      var(--black_rgba90); }
+.black_rgba_10{ color:      var(--black_rgba_10); }
+.black_rgba_20{ color:      var(--black_rgba_20); }
+.black_rgba_30{ color:      var(--black_rgba_30); }
+.black_rgba_40{ color:      var(--black_rgba_40); }
+.black_rgba_50{ color:      var(--black_rgba_50); }
+.black_rgba_60{ color:      var(--black_rgba_60); }
+.black_rgba_70{ color:      var(--black_rgba_70); }
+.black_rgba_80{ color:      var(--black_rgba_80); }
+.black_rgba_90{ color:      var(--black_rgba_90); }
     
 .errorColour{ color:    var(--errorColour); }
 
@@ -558,7 +561,7 @@ button, button::before, button::after {
    Modal
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 .modal_global {
-  background-color: var(--black_rgba70); }
+  background-color: var(--black_rgba_70); }
 
 .modal_global,
 .modal_nav {
@@ -571,7 +574,7 @@ button, button::before, button::after {
 
 .modal_nav {
   display: none;
-  background-color: var(--black_rgba70); }
+  background-color: var(--black_rgba_70); }
   @media (min-width: 768px) {
     .modal_nav {
       display: none !important; } }

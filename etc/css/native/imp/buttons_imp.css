@@ -76,7 +76,7 @@ Imported in `[/src/css/main.css]`
     position: absolute;
     top: 50%;
     right: calc(60px + 5px);
-    background-color: var(--black_rgba85);
+    background-color: var(--black_rgba_85);
     padding: 0 15px;
     margin-top: -20px;
     color: var(--white);

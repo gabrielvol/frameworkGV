@@ -262,7 +262,7 @@ nav li:hover a{
     }
 
     .nav_main .nav_main_ul > .nav_item_current {
-        background-color: var(--black_rgba20);
+        background-color: var(--black_rgba_20);
         background-image: url("../../img/nav_arrow_left.svg");
     }
     
