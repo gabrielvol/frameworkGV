@@ -1,4 +1,4 @@
-<?php /* if(isset($has_vimeo) && $has_vimeo == 1): ?>
+<?php /* if($has_vimeo): ?>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <?php endif; */ ?>
 
@@ -14,16 +14,16 @@
 <script src="<?php echo $dir_env; ?>/js/_global.all.js"></script>
 
 
-<?php if(!empty($nav_accordion_act)): /* nav `[/var/act/nav.act.inc.php]` */ ?>
+<?php if($nav_accordion_act): /* nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
 
-<?php endif; if(!empty($nav_drawer_act)): /* // REF [06] nav `[/var/act/nav.act.inc.php]` */ ?>
+<?php endif; if($nav_drawer_act): /* // REF [06] nav `[/var/act/nav.act.inc.php]` */ ?>
 <script src="<?php echo $dir_env; ?>/js/_nav_drawer.js"></script>
     
 <?php endif;
 
 
-if(!empty($has_scrolling)): ?>
+if($has_scrolling): ?>
 <script src="<?php echo $dir_env; ?>/js/_scrolling.js"></script>
 
 <?php endif;
@@ -35,7 +35,7 @@ if($nav_pageCurrent == 'page_index'): /*
 <script src="<?php echo $dir_env; ?>/js/_index.js"></script>
 */ ?>
 
-<?php endif; if(!empty($page_int)): /* // Internas
+<?php endif; if($page_int): /* // Internas
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_int.js"></script>
@@ -79,7 +79,7 @@ if($nav_pageCurrent == 'page_index'): /*
 <script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
 */ ?>
 
-<?php endif; if(!empty($page_construccion)): /*
+<?php endif; if($page_construccion): /*
 <script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_construccion.js"></script>
@@ -120,14 +120,14 @@ if($has_lightbox == 1): ?>
 <?php endif;
 
 
-if(!empty($has_slider)): ?>
+if($has_slider): ?>
 <script src="<?php echo $dir_env; ?>/js/slick.js"></script>
 <script src="<?php echo $dir_env; ?>/js/_slick.js"></script>
 
 <?php endif;
 
 
-if(!empty($has_pop_video)): ?>
+if($has_pop_video): ?>
 <script src="<?php echo $dir_env; ?>/js/_pop.video.js"></script>
 
 <?php endif; ?>

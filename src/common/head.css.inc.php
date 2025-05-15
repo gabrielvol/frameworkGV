@@ -10,13 +10,13 @@
 <?php /* Alternate StyleSheets
 <link href="<?php echo $dir_env; ?>/css/styles_highContrast.css" rel="alternate stylesheet" title="High Contrast">
 */ ?>
-<?php if(!empty($has_form)): /* // REF [23] // REF [36] Form variables
+<?php if($has_form): /* // REF [23] // REF [36] Form variables
 <link href="<?php echo $dir_env; ?>/css/datepicker.css" rel="stylesheet">
 */ ?>
 <?php endif; if($nav_pageCurrent == 'page_index'): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
-<?php endif; if(!empty($page_int)): /* // Internas
+<?php endif; if($page_int): /* // Internas
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
 <?php endif; if($nav_pageCurrent_int == 'page_index_index'): /*
@@ -40,7 +40,7 @@
 <?php endif; if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
-<?php endif; if(!empty($page_construccion)): /*
+<?php endif; if($page_construccion): /*
 <link href="<?php echo $dir_env; ?>/css/aaaaaa.css" rel="stylesheet">
 */ ?>
 <?php endif; ?>
