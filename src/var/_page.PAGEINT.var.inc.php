@@ -25,7 +25,9 @@ $has_lightbox           = 0; /* // REF [26] */
 $has_pop_video          = 0;
 $has_scrolling          = 1;
 $has_slider             = 0;
-//    $has-CUSTOMVARIABLE     = 0;
+$page_noTrack           = (!empty($dir_env)) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 
 

@@ -16,13 +16,20 @@
     $has_pop_video          = 0;
     $has_scrolling          = 1;
     $has_slider             = 0;
+    $page_noTrack           = (!empty($dir_env)) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
+//    $lang_GB                = 1;
 
 /* Variables únicas de esta página */
     $page_construccion      = 0;
-    $page_redirect          = 0;    
+    /* // REF [53*] Page redirect
+     * Si se activa `$page_redirect` hay que setear la variable `$page_redirect_url`
+     */
+    $page_redirect          = 0;
     $has_form               = 0; /* // REF [36] Form variables */
-    $page_noTrack           = 0;
-//    $has-CUSTOMVARIABLE     = 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 
 /* 3. Se incluye el archivo de variables */
@@ -42,8 +49,13 @@
 */
 // $form_id = 'formXX'; /* // REF [36*] Form variables */
 // $form_id_spelled = 'Contactanos';
-    
-    $page_url_full          = $url_gracias_full;
+        
+    if($page_redirect) {
+        /* // REF [53*] Page redirect */
+        $page_redirect_url = $url_to_redirect_full; 
+    } else {
+        $page_url_full = $url_gracias_full;
+    }
 
 /* 4. Se comenta la siguiente variable `$page_title` */
     $page_title             = $page_title_home_gracias . " | " . $site_name_title;
@@ -63,8 +75,12 @@
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.send.inc.php');
     ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
+        <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
+        
         <h1 class="txAlignCenter"><?php echo $page_title_home_gracias; ?></h1>
         <p class="txAlignCenter"><?php echo $form_status_ok_globalB; ?></p>
+            
+        <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/footer.inc.php'); ?>
 </body>

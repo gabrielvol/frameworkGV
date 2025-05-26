@@ -16,18 +16,20 @@
     $has_pop_video          = 0;
     $has_scrolling          = 1;
     $has_slider             = 0;
-    
+    $page_noTrack           = (!empty($dir_env)) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
+//    $lang_GB                = 1;    
 
 /* Variables únicas de esta página */
     $page_construccion      = 0;
     /* // REF [53*] Page redirect
      * Si se activa `$page_redirect` hay que setear la variable `$page_redirect_url`
      */
-    $page_redirect          = 0;
-    
+    $page_redirect          = 0;    
     $has_form               = 0; /* // REF [36] Form variables */
-    $page_noTrack           = 0;
-//    $has-CUSTOMVARIABLE     = 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 
 /* 3. Se incluye el archivo de variables */
@@ -66,9 +68,6 @@
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
-    
-    /* // REF [53*] Page redirect */
-    if($page_redirect){ include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.script.inc.php'); }
 ?>    
 <body id="body">
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>

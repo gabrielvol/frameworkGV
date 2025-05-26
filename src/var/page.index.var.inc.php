@@ -14,6 +14,9 @@
 
 /* // Index / Home pages ---------------------------------------------------- */
 $page_construccion      = 0;
+    /* // REF [53*] Page redirect
+     * Si se activa `$page_redirect` hay que setear la variable `$page_redirect_url`
+     */
 $page_redirect          = 0;
 
 $has_form               = 0; /* // REF [36] Form variables */
@@ -31,6 +34,8 @@ $has_lightbox           = 0; /* // REF [26] */
 $has_pop_video          = 0;
 $has_scrolling          = 1;
 $has_slider             = 0;
-//    $has-CUSTOMVARIABLE     = 1;
+$page_noTrack           = (!empty($dir_env)) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 ?>

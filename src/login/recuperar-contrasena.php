@@ -1,6 +1,7 @@
 <?php
     $dir_env = '/stage';
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/gettext/languageCheck.inc.php');
+//    $page_var               = $_GET['page_var']; 
     
     $page_int               = 1;
     $nav_pageCurrent        = 'page_login';
@@ -13,16 +14,23 @@
 /* 2. Las siguientes variables se declaran en `[/var/page.login.var.inc.php]` 
     $has_lightbox           = 0; /* // REF [26] *
     $has_pop_video          = 0;
-    $has_scrolling          = 1;
+    $has_scrolling          = 0;
     $has_slider             = 0;
+    $page_noTrack           = (!empty($dir_env)) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
+//    $lang_GB                = 1;
 */    
 
 /* Variables únicas de esta página */
     $page_construccion      = 0;
+    /* // REF [53*] Page redirect
+     * Si se activa `$page_redirect` hay que setear la variable `$page_redirect_url`
+     */
     $page_redirect          = 0;    
     $has_form               = 1; /* // REF [36] Form variables */
-    $page_noTrack           = 0;
-//    $has-CUSTOMVARIABLE     = 0;
+//    $has_CUSTOMVARIABLE     = ($page_CUSTOMVARIABLE) ? 1 : 0;
+//    $has_CUSTOMVARIABLE     = 0;
 //    $lang_GB                = 1;
 
 /* 3. Se incluye el archivo de variables */
@@ -42,8 +50,13 @@
 */   
 $form_id = 'formRecuperarContrasena'; /* // REF [36*] Form variables */
 $form_id_spelled = $login_title_recuperarContrasena;
-    
-    $page_url_full          = $url_recuperarContrasena_full;
+        
+    if($page_redirect) {
+        /* // REF [53*] Page redirect */
+        $page_redirect_url = $url_to_redirect_full; 
+    } else {
+        $page_url_full = $url_recuperarContrasena_full;
+    }
 
 /* 4. Se comenta la siguiente variable `$page_title` */
 //   $page_title             = $page_title_home_login . " | " . $site_name_title;
@@ -60,9 +73,13 @@ $form_id_spelled = $login_title_recuperarContrasena;
 <body id="body">
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
+        <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
+        
         <h1><?php echo $page_heading_id; ?></h1>
         
         <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/form.login.recuperarContrasena.inc.php'); ?>
+            
+        <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env .'/common/footer.inc.php'); ?>
 </body>

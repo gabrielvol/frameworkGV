@@ -171,4 +171,10 @@ DNS-prefetch, notifies the client that there are assets we’ll need later from 
 </head>
 
 <?php if(empty($dir_env) && empty($page_noTrack)): /* Google Analytics 4 */ ?>
-<?php endif; ?>
+<?php
+    endif;
+    
+
+    /* // REF [53*] Page redirect */
+    if($page_redirect){ include ('page.redirect.script.inc.php'); }
+?>
