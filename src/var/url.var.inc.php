@@ -6,10 +6,10 @@
 /* // Descripcion ----------------------------------------------------------- 
    Definición de urls y href del sitio.
 
-   #url #href #hash #gettext
+   #domain #subdomain #url #href #hash #gettext
 */
 
-/* // global urls ----------------------------------------------------------- */
+/* // global urls // REF [54] ----------------------------------------------- */
 $url_main               = $http_protocol . $domain_main;
 // $url_main               = $http_protocol . $domain_wip;
 $url_main_full          = $url_main . $dir_env;
@@ -110,7 +110,7 @@ $url_main_hs_HOME             = $url_home . $hash_main;
 */    
     
     
-/* // url subdomain --------------------------------------------------------- 
+/* // url subdomain // REF [54] ---------------------------------------------
 $url_root_SUBDOMAIN     = $url_subdomain_SUBDOMAIN_full;
 $url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
 // $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';

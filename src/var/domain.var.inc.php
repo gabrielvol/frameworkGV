@@ -18,11 +18,11 @@
    Se usa para crear urls dentro del dominio principal que dirijan a una pagina
    del subdominio
    Debe ser comentado en el repositorio del subdominio
-   $domain_sub_ESTILO  = 'tienda' . '.';
+   $domain_sub_SUBDOMAIN  = 'tienda' . '.';
 
 */
 
-/* // Domains --------------------------------------------------------------- */
+/* // Domains // REF [54] --------------------------------------------------- */
 $http_protocol      = 'https://www.';
 
 $domain_main        = 'sitiocomar';
