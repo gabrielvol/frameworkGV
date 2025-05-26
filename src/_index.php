@@ -18,6 +18,7 @@
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.index.var.inc.php');
     
+    $page_body_classes = "";
     $page_header_classes = '';
     $page_main_classes = '';
     
@@ -37,7 +38,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
 ?>
-<body id="body">
+<body id="body" class="<?php echo $classes_body; ?>">
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>

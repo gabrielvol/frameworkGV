@@ -35,6 +35,7 @@
 /* 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.gracias.var.inc.php');
     
+    $page_body_classes = "";
     $page_header_classes = '';
     $page_main_classes = '';
     
@@ -69,7 +70,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
 ?>
-<body id="body">
+<body id="body" class="<?php echo $classes_body; ?>">
     <?php
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php');
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.send.inc.php');

@@ -47,6 +47,37 @@ endif;
 $classes_SECTION            = 'class="' . $class_ini_SECTION . $class_end_SECTION . '"';
 */
 
+/* // Body Classes ---------------------------------------------------------- */
+    $class_ini_body       = 'navDrawer_closed ';
+
+if(!empty($page_int)):
+    $class_ini_body       .= 'body_int ';
+endif; 
+
+    $class_ini_body       .= 'body_' . $nav_pageCurrent . ' ';
+
+    $class_ini_body       .= 'body_' . $nav_pageCurrent_int . ' ';
+
+if(!empty($nav_pageCurrent_id)):
+    $class_ini_body       .= 'body_' . $nav_pageCurrent_id . ' ';
+endif; 
+
+if($nav_pageCurrent         == 'page_PAGEINT'):
+    $class_ini_body       .= 'error_alert error_alert_a ';
+endif;
+        
+if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
+    $class_ini_body       .= 'error_alert error_alert_b ';
+endif;  
+    
+    $class_end_body       = ' '; // . $containerMAX_value; // REF [38*]
+
+if(!empty($page_redirect)):
+    $class_end_body      .= 'body_redirect ';
+endif;  
+    
+$classes_body             = 'class="'. $class_ini_body . $page_body_classes . $class_end_body .'"';
+
 /* // Header Classes -------------------------------------------------------- */
     $class_ini_header       = 'navDrawer_closed ';
 

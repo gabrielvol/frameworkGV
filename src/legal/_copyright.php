@@ -34,6 +34,7 @@
 /* 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.legal.var.inc.php');
     
+    $page_body_classes = "";
     $page_header_classes = '';
     $page_main_classes = '';
     
