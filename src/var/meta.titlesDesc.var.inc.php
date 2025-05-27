@@ -119,6 +119,11 @@ if($gettext_idioma == 'en_GB'){
     $site_name_form     = 'SiteNameShort';
     $site_name_tag      = 'SiteNameTag';
 
+    $site_name_SUBDOMAIN_full     = 'SiteNameFull';
+    $site_name_SUBDOMAIN_title    = 'SiteNameTitle';
+    $site_name_SUBDOMAIN_form     = 'SiteNameShort';
+    $site_name_SUBDOMAIN_tag      = 'SiteNameTag';
+
 /* Las variables $page_title_home_PAGEINT se usan en:
  * 1. La construccion del título de las páginas internas que tienen declarado un ID
  * $page_title = $page_title_id . " | " . $page_title_home_PAGEINT . " | " . $site_name_title;

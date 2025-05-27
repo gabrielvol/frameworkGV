@@ -45,6 +45,7 @@
     </div> 
 </footer>
 <?php
+if(!$page_subdomain){ /* // REF [54] */
     include('footer.pop.inc.php');
     include('footer.js.inc.php');
     
@@ -63,4 +64,5 @@
             echo '<div class="pretopbar"></div>';
         }
     }
+}
 ?>

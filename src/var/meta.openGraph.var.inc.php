@@ -17,26 +17,39 @@
    ·_________________________________·
    123456789-123456789-123456789-12345
 
-   Se declaran distintas variables por página */
+   Se declaran distintas variables por página
+
+   La variable `$openGraph_title` se usa en el head `meta property og title`
+*/
+
 if($nav_pageCurrent == 'page_index'):
-/* Esta variable se usa en el head `meta property og title` */
-    $openGraph_title            = $site_name_full;    
+    $openGraph_title            = $site_name_full;
+
+elseif($nav_pageCurrent == 'page_subdomain_SUBDOMAIN'): /* // REF [54] */
+    $openGraph_title            = $site_name_SUBDOMAIN_full; 
+
 else:
-/* Esta variable se usa en el head `meta property og title` */
     $openGraph_title            = $page_title;
-endif;    
+
+endif;
     
     
 /* // -- Site Name */
+if($nav_pageCurrent == 'page_subdomain_SUBDOMAIN'): /* // REF [54] */
+    $openGraph_siteName            = $site_name_SUBDOMAIN_full; 
+
+else:
     $openGraph_siteName             = $site_name_full;
 
-    
-if($nav_pageCurrent_int == 'page_PAGEINT'): 
+endif;
+
+
 /* // -- Descripción _ Max 65 char _________________________________
    ·_______________________________________________________________·
    123456789-123456789-123456789-123456789-123456789-123456789-12345 
 
    Esta variable se usa en el head `meta property og description` */
+if($nav_pageCurrent == 'page_PAGEINT'): 
     $openGraph_desc = "DescripcionUnicaParaPAGEINT";
     
 /* // -- Image */ 
@@ -44,15 +57,35 @@ if($nav_pageCurrent_int == 'page_PAGEINT'):
     $openGraph_img_url_secure       = $openGraph_img_url;
     $openGraph_img_width            = '1200'; // '1000';
     $openGraph_img_height           = '630'; // '1000';
+    
+elseif($nav_pageCurrent_int == 'page_PAGEINT_home'): 
+    $openGraph_desc = "DescripcionUnicaParaPAGEINTHOME";
+    
+/* // -- Image */ 
+    $openGraph_img_url              = $url_wip_full . '/og_img_sq_PAGEINTHOME_01.jpg';
+    $openGraph_img_url_secure       = $openGraph_img_url;
+    $openGraph_img_width            = '1200'; // '1000';
+    $openGraph_img_height           = '630'; // '1000';
+    
+elseif($nav_pageCurrent == 'page_subdomain_SUBDOMAIN'): /* // REF [54] */
+    $openGraph_desc = "DescripcionUnicaParaSUBDOMAIN";
+    
+/* // -- Image */ 
+    $openGraph_img_url              = $url_wip_full . '/og_img_sq_SUBDOMAIN_01.jpg';
+    $openGraph_img_url_secure       = $openGraph_img_url;
+    $openGraph_img_width            = '1200'; // '1000';
+    $openGraph_img_height           = '630'; // '1000';
+    
 else:
 /* // -- Descripción global */
-    $openGraph_desc                 = $page_desc_global;  
+    $openGraph_desc                 = $page_desc_global;    
     
 /* // -- Image gobal */ 
     $openGraph_img_url          = $url_wip_full . '/og_img_01.jpg';
     $openGraph_img_url_secure   = $openGraph_img_url;
     $openGraph_img_width            = '1200'; // '1000';
     $openGraph_img_height           = '630'; // '1000';
+    
 endif;    
     
     $openGraph_img_type             = 'image/jpg';
