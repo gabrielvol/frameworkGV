@@ -5,7 +5,7 @@
 /* // Site variables -------------------------------------------------------- */
 // Variables globales para el entorno produccion
 
-let dir_env_js = '';
+var dir_env_js = '';
 
 // La variable captcha_key_site tambien debe ser declarada
 // en `[/src/var/form.var.inc.php]`

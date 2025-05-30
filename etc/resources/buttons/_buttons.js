@@ -66,15 +66,13 @@ $('.item').click(function () {
 
 
 /* // Logo change ----------------------------------------------------------- */
-var dir_env = '/test';
-
 $(document).ready(function () {
     $('.button_hamb_open').click(function () {
-        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo.png");
+        $(this).closest('#header').find('.logo_header img').attr("src", dir_env_js + "/img/logo.png");
     });
 
     $('.button_hamb_close, .modal_nav, .nav_nav a').click(function () {
-        $(this).closest('#header').find('.logo_header img').attr("src", dir_env + "/img/logo_int.png");
+        $(this).closest('#header').find('.logo_header img').attr("src", dir_env_js + "/img/logo_int.png");
     });
 });
 

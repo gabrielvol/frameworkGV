@@ -47,9 +47,7 @@ $(document).ready(function () {
     
 
 /* // Pop Videos ------------------------------------------------------------ */
-$(document).ready(function () {
-    var dir_env = '/stage';
-    
+$(document).ready(function () {    
     var media__videoA_id    = 'IwxjqQHUxXI';
     var media__videoB_id    = 'WI8epLDMqJY';
     
