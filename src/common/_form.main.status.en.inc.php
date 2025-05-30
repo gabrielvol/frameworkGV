@@ -56,8 +56,8 @@ $form_validation_msg_data_dni__formMainID             = 'Please, complete your I
 $form_validation_msg_data_email__formMainID           = 'Please, enter a valid email address.'; 
 $form_validation_msg_data_telefono__formMainID        = 'Please, complete your phone number.'; 
 $form_validation_msg_data_celular__formMainID         = 'Please, complete your cell phone number.'; 
-$form_validation_msg_data_whatsappAreaCode__formMainID = 'Please, enter your area code.'; 
-$form_validation_msg_data_whatsappNumber__formMainID  = 'Please, enter your phone number.'; 
+$form_validation_msg_data_whatsAppAreaCode__formMainID = 'Please, enter your area code.'; 
+$form_validation_msg_data_whatsAppNumber__formMainID  = 'Please, enter your phone number.'; 
    
 $form_validation_msg_data_webSite__formMainID         = 'Please, complete your website address.';
 $form_validation_msg_data_facebook__formMainID        = 'Please, complete your Facebook profile.';

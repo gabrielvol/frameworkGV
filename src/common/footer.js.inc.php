@@ -1,8 +1,41 @@
-<?php /* if($has_vimeo): ?>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<?php endif; */ ?>
+<?php
+/* * NombreDeProyecto * ========================================================
+   <footer> .js [/src/common/footer.js.inc.php]
+   ========================================================================== */
 
-<?php if($dir_env): /* // REF [48] Dev window width */ ?>
+/* // Descripcion -----------------------------------------------------------
+ * Archivo de carga de scripts .js
+ * Este archivo se carga en `[/src/common/footer.inc.php]`
+ * 
+ * _global.js
+ * 
+ * _nav_.js
+ * 
+ * _scrolling.js
+ * 
+ * .js por página
+ * 
+ * scrollKeep.js
+ * 
+ * _forms.js
+ * 
+ * _captcha.js
+ * 
+ * _lightbox.js
+ * 
+ * _slick.js
+ * 
+ * pop.video.js
+ * 
+ * SEO scripts
+ * 
+*/
+       
+/* if($has_vimeo): ?>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<?php endif; */
+
+if($dir_env): /* // REF [48] Dev window width */ ?>
 <script src="<?php echo $dir_env; ?>/js/_global.stage.js"></script>
 
 <?php elseif(empty($dir_env)): ?>
@@ -30,66 +63,65 @@ if($has_scrolling): ?>
 
 
 if($nav_pageCurrent == 'page_index'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_index.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_index.js"></script>
 */ ?>
 
 <?php endif; if($page_int): /* // Internas
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_int.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_int.js"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent_int == 'page_index_index'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_home.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_home.js"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent_int == 'page_index_home'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_inicio.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_inicio.js"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_contacto'): /*
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
 <script src="<?php echo $dir_env; ?>/js/_contacto.js"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_gracias'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_gracias.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_gracias.js"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_PAGINA'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent_int == 'page_PAGINA_INT'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
 */ ?>
 
 <?php endif; if($page_construccion): /*
-<script src="<?php echo $dir_env; ?>/js/aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_aaaaaa.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_construccion.js"></script>
+<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo $dir_env; ?>/js/_page_construccion.js"></script>
 */ ?>
 
 <?php endif;
 
 
-/* // REF [36] Form variables */
-if($has_form): ?>
+if($has_form): /* // REF [36] Form variables */ ?>
 <script src="<?php echo $dir_env; ?>/js/scrollKeep.js"></script><?php /* // REF [25] */ ?>
 <?php /* <script src="<?php echo $dir_env; ?>/js/ui-datepicker.jQuery.js"></script> REF [31] */ ?>
 <script src="<?php echo $dir_env; ?>/js/_form.js"></script>
@@ -98,8 +130,10 @@ if($has_form): ?>
 
 
 /* // REF [50] Google reCaptcha
-Luego de crear los condicionales hay que crear el archivo correspondiente
-en `[/src/js/__captcha_formXX.js]` */
+ * Luego de crear los condicionales hay que crear el archivo correspondiente
+ * en `[/src/js/__captcha_formXX.js]`
+ * 
+ */
 if($has_captcha == 1 && $form_id == 'formMainID'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
 

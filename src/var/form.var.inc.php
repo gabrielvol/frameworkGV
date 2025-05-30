@@ -3,12 +3,13 @@
    Form Variables [/src/var/form.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
-   Archivo de asignación de variables para envíos del formulario
-   Este archivo solamente se carga si la variable $has_form tiene asignado un 1
-
-   // REF [36] Form variable $has_form
-   // REF [50] Google reCaptcha
+/* // Descripcion -----------------------------------------------------------
+ * Archivo de asignación de variables para envíos del formulario
+ * Este archivo solamente se carga si la variable $has_form tiene asignado un 1
+ * 
+ * // REF [36] Form variable $has_form
+ * // REF [50] Google reCaptcha
+ *    
 */
 
 

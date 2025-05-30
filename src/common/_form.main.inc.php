@@ -361,17 +361,17 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_telefono__formMainID; ?>"><?php echo $form_validation_span_msg_data_telefono__formMainID; ?></span>
     </label>
 
-    <fieldset class="<?php echo $form_validation_input_class_data_whatsapp__formMainID; ?>">
+    <fieldset class="<?php echo $form_validation_input_class_data_whatsApp__formMainID; ?>">
         <legend class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             WhatsApp contact
         <?php else: ?>
             Nº de WhatsApp
         <?php endif; ?></legend>
 
-        <label for="data_whatsappAreaCode__formMainID" class="label_comp_small <?php echo $form_validation_input_class_data_whatsappAreaCode__formMainID; ?>">
+        <label for="data_whatsAppAreaCode__formMainID" class="label_comp_small <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>">
             <span class="form_label_name">Código de área</span>
-            <input type="tel" name="data_whatsappAreaCode__formMainID" id="data_whatsappAreaCode__formMainID" class="data_whatsappAreaCode__formMainID <?php echo $form_validation_input_class_data_whatsappAreaCode__formMainID; ?>" value="<?php echo $_POST['data_whatsappAreaCode__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsappAreaCode__formMainID; ?>>
-            <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsappAreaCode__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsappAreaCode__formMainID; ?></span>
+            <input type="tel" name="data_whatsAppAreaCode__formMainID" id="data_whatsAppAreaCode__formMainID" class="data_whatsAppAreaCode__formMainID <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>" value="<?php echo $_POST['data_whatsAppAreaCode__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppAreaCode__formMainID; ?>>
+            <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsAppAreaCode__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsAppAreaCode__formMainID; ?></span>
             <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
                 E.g. 11, 341, 2320.
             <?php else: ?>
@@ -379,10 +379,10 @@
             <?php endif; ?>.</span>
         </label>
 
-        <label for="data_whatsappNumber__formMainID" class="label_comp_big <?php echo $form_validation_input_class_data_whatsappNumber__formMainID; ?>">
+        <label for="data_whatsAppNumber__formMainID" class="label_comp_big <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>">
             <span class="form_label_name">Número</span>
-            <input type="tel" name="data_whatsappNumber__formMainID" id="data_whatsappNumber__formMainID" class="data_whatsappNumber__formMainID <?php echo $form_validation_input_class_data_whatsappNumber__formMainID; ?>" value="<?php echo $_POST['data_whatsappNumber__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsappNumber__formMainID; ?>>
-            <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsappNumber__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsappNumber__formMainID; ?></span>
+            <input type="tel" name="data_whatsAppNumber__formMainID" id="data_whatsAppNumber__formMainID" class="data_whatsAppNumber__formMainID <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>" value="<?php echo $_POST['data_whatsAppNumber__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppNumber__formMainID; ?>>
+            <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsAppNumber__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsAppNumber__formMainID; ?></span>
             <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
                 E.g. 1234567, 12345678.
             <?php else: ?>

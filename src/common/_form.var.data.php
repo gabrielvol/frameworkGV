@@ -21,8 +21,8 @@ $data_pais__formMainID = $_POST['data_pais__formMainID'];
 $data_email__formMainID = $_POST['data_email__formMainID'];
 $data_telefono__formMainID = $_POST['data_telefono__formMainID'];
 $data_celular__formMainID = $_POST['data_celular__formMainID'];
-$data_whatsappAreaCode__formMainID = $_POST['data_whatsapAreaCode__formMainID'];
-$data_whatsappNumber__formMainID = $_POST['data_whatsappNumber__formMainID'];
+$data_whatsAppAreaCode__formMainID = $_POST['data_whatsapAreaCode__formMainID'];
+$data_whatsAppNumber__formMainID = $_POST['data_whatsAppNumber__formMainID'];
 
 $data_webSite__formMainID = $_POST['data_webSite__formMainID'];
 $data_facebook__formMainID = $_POST['data_facebook__formMainID'];
@@ -57,8 +57,8 @@ $_POST['data_webSite__formMainID'] = '';
 $_POST['data_facebook__formMainID'] = '';
 $_POST['data_telefono__formMainID'] = '';
 $_POST['data_celular__formMainID'] = '';
-$_POST['data_whatsappAreaCode__formMainID'] = '';
-$_POST['data_whatsappNumber__formMainID'] = '';
+$_POST['data_whatsAppAreaCode__formMainID'] = '';
+$_POST['data_whatsAppNumber__formMainID'] = '';
 $_POST['data_empresa__formMainID'] = '';
 $_POST['data_razonSocial__formMainID'] = '';
 $_POST['data_cargo__formMainID'] = '';
@@ -93,7 +93,7 @@ $formMail_texto .= '<strong>Perfil de Facebook:</strong> ' . $data_facebook__for
 $formMail_texto .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/' . $data_instagram__formMainID . '">' . $data_instagram__formMainID . '</a><br />';
 $formMail_texto .= '<strong>Tel&eacute;fono:</strong> ' . $data_telefono__formMainID . '<br />';
 $formMail_texto .= '<strong>Celular:</strong> ' . $data_celular__formMainID . '<br />';
-$formMail_texto .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsappAreaCode__formMainID . $data_whatsappNumer__formMainID . '">+54 9 '. $data_whatsappAreaCode__formMainID . ' ' . $data_whatsappNumer__formMainID ."</a><br />";
+$formMail_texto .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsAppAreaCode__formMainID . $data_whatsAppNumer__formMainID . '">+54 9 '. $data_whatsAppAreaCode__formMainID . ' ' . $data_whatsAppNumer__formMainID ."</a><br />";
 $formMail_texto .= '<strong>Empresa:</strong> ' . $data_empresa__formMainID . '<br />';
 $formMail_texto .= '<strong>Raz&oacute;n Social:</strong> ' . $data_razonSocial__formMainID . '<br />';
 $formMail_texto .= '<strong>Cargo:</strong> ' . $data_cargo__formMainID . '<br />';
@@ -128,7 +128,7 @@ $mail->Body .= '<strong>Perfil de Facebook:</strong> ' . $data_facebook__formMai
 $mail->Body .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/' . $data_instagram__formMainID . '">' . $data_instagram__formMainID . '</a><br />';
 $mail->Body .= '<strong>Tel&eacute;fono:</strong> ' . $data_telefono__formMainID . '<br />';
 $mail->Body .= '<strong>Celular:</strong> ' . $data_celular . '<br />';
-$mail->Body .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsappAreaCode__formMainID . $data_whatsappNumer__formMainID . '">+54 9 '. $data_whatsappAreaCode__formMainID . ' ' . $data_whatsappNumer__formMainID ."</a><br />";
+$mail->Body .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsAppAreaCode__formMainID . $data_whatsAppNumer__formMainID . '">+54 9 '. $data_whatsAppAreaCode__formMainID . ' ' . $data_whatsAppNumer__formMainID ."</a><br />";
 $mail->Body .= '<strong>Empresa:</strong> ' . $data_empresa__formMainID . '<br />';
 $mail->Body .= '<strong>Raz&oacute;n Social:</strong> ' . $data_razonSocial__formMainID . '<br />';
 $mail->Body .= '<strong>Cargo:</strong> ' . $data_cargo__formMainID . '<br />';
@@ -218,19 +218,19 @@ $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMain
     $form_validation_input_class_data_celular__formMainID = " form_validation_input_invalid";
     $form_input_autofocus_data_celular__formMainID = "autofocus";
 
-} elseif(!isset($data_whatsappAreaCode__formMainID) || trim($data_whatsappAreaCode__formMainID) == ''){
-    $form_validation_span_msg_data_whatsappAreaCode__formMainID = $form_validation_msg_data_whatsappAreaCode__formMainID;
-    $form_validation_span_class_data_whatsappAreaCode__formMainID = " form_validation_span_active";
-    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappAreaCode__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappAreaCode__formMainID = "autofocus";
+} elseif(!isset($data_whatsAppAreaCode__formMainID) || trim($data_whatsAppAreaCode__formMainID) == ''){
+    $form_validation_span_msg_data_whatsAppAreaCode__formMainID = $form_validation_msg_data_whatsAppAreaCode__formMainID;
+    $form_validation_span_class_data_whatsAppAreaCode__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_whatsApp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsAppAreaCode__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsAppAreaCode__formMainID = "autofocus";
 
-} elseif(!isset($data_whatsappNumber__formMainID) || trim($data_whatsappNumber__formMainID) == ''){
-    $form_validation_span_msg_data_whatsappNumber__formMainID = $form_validation_msg_data_whatsappNumber__formMainID;
-    $form_validation_span_class_data_whatsappNumber__formMainID = " form_validation_span_active";
-    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappNumber__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappNumber__formMainID = "autofocus";
+} elseif(!isset($data_whatsAppNumber__formMainID) || trim($data_whatsAppNumber__formMainID) == ''){
+    $form_validation_span_msg_data_whatsAppNumber__formMainID = $form_validation_msg_data_whatsAppNumber__formMainID;
+    $form_validation_span_class_data_whatsAppNumber__formMainID = " form_validation_span_active";
+    $form_validation_input_class_data_whatsApp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsAppNumber__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsAppNumber__formMainID = "autofocus";
 
 } elseif(!isset($data_telefono__formMainID) || trim($data_telefono__formMainID) == ''){
     $form_validation_span_msg_data_telefono__formMainID = $form_validation_msg_data_telefono__formMainID;
@@ -403,19 +403,19 @@ $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMain
     $form_validation_input_class_data_celular__formMainID = " form_validation_input_invalid";
     $form_input_autofocus_data_celular__formMainID = "autofocus";
 
-} elseif(!isset($data_whatsappAreaCode__formMainID) || trim($data_whatsappAreaCode__formMainID) == ''){
-    $form_validation_div_msg__formMainID = $form_validation_msg_data_whatsappAreaCode__formMainID;
+} elseif(!isset($data_whatsAppAreaCode__formMainID) || trim($data_whatsAppAreaCode__formMainID) == ''){
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_whatsAppAreaCode__formMainID;
     $form_validation_div_class__formMainID = " form_validation_div_invalid";
-    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappAreaCode__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappAreaCode__formMainID = "autofocus";
+    $form_validation_input_class_data_whatsApp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsAppAreaCode__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsAppAreaCode__formMainID = "autofocus";
 
-} elseif(!isset($data_whatsappNumber__formMainID) || trim($data_whatsappNumber__formMainID) == ''){
-    $form_validation_div_msg__formMainID = $form_validation_msg_data_whatsappNumber__formMainID;
+} elseif(!isset($data_whatsAppNumber__formMainID) || trim($data_whatsAppNumber__formMainID) == ''){
+    $form_validation_div_msg__formMainID = $form_validation_msg_data_whatsAppNumber__formMainID;
     $form_validation_div_class__formMainID = " form_validation_div_invalid";
-    $form_validation_input_class_data_whatsapp__formMainID = " form_validation_input_invalid";
-    $form_validation_input_class_data_whatsappNumber__formMainID = " form_validation_input_invalid";
-    $form_input_autofocus_data_whatsappNumber__formMainID = "autofocus";
+    $form_validation_input_class_data_whatsApp__formMainID = " form_validation_input_invalid";
+    $form_validation_input_class_data_whatsAppNumber__formMainID = " form_validation_input_invalid";
+    $form_input_autofocus_data_whatsAppNumber__formMainID = "autofocus";
 
 } elseif(!isset($data_email__formMainID) || trim($data_email__formMainID) == ''){
     $form_validation_div_msg__formMainID = $form_validation_msg_data_email__formMainID;

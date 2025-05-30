@@ -4,9 +4,9 @@
 
 /* // Descripcion ----------------------------------------------------------- 
 Funcion captchaGetToken para obtener el token de reCatpcha V3 y asignarlo al
-campo hidden `data_captchaResponseToken__formIniciarSesion`
+campo hidden `data_captchaResponseToken__`
  
-1. Hay que reemplazar `formIniciarSesion` por el ID correspondiente en:
+1. Hay que reemplazar `formMainID` por el ID correspondiente en:
 - action
 - campo hidden `data_captchaResponseToken__ ... `
 

@@ -74,7 +74,7 @@
         </a>
     </li>
     <li class="social_wa">
-        <?php include('button.whatsapp.inc.php'); ?>
+        <?php include('button.whatsApp.inc.php'); ?>
     </li>
     <li class="social_yt">
         <a href="<?php echo $social_youTube_url; ?>" class="hover_grow_L_ani" target="_blank">

@@ -60,8 +60,8 @@ $form_validation_msg_data_dni__formMainID             = 'Por favor, ingrese su n
 $form_validation_msg_data_email__formMainID           = 'Por favor, ingrese una direcci&oacute;n de correo v&aacute;lida.'; 
 $form_validation_msg_data_telefono__formMainID        = 'Por favor, ingrese su n&uacute;mero de tel&eacute;fono.'; 
 $form_validation_msg_data_celular__formMainID         = 'Por favor, ingrese su n&uacute;mero de celular.'; 
-$form_validation_msg_data_whatsappAreaCode__formMainID = 'Por favor, ingrese un código de área.'; 
-$form_validation_msg_data_whatsappNumber__formMainID  = 'Por favor, ingrese su n&uacute;mero.'; 
+$form_validation_msg_data_whatsAppAreaCode__formMainID = 'Por favor, ingrese un código de área.'; 
+$form_validation_msg_data_whatsAppNumber__formMainID  = 'Por favor, ingrese su n&uacute;mero.'; 
    
 $form_validation_msg_data_webSite__formMainID         = 'Por favor, ingrese su sitio web.';
 $form_validation_msg_data_facebook__formMainID        = 'Por favor, ingrese su perfil de Facebook.';

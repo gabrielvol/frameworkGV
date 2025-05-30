@@ -91,7 +91,8 @@
 }
 
 /* // Mixin centrado custom ------------------------------------------------- */
-@mixin centerCustom($centerCustomMX_width: 90%, $centerCustomMX_width_max: 90%){
+@mixin centerCustom($centerCustomMX_width_max: 90%, $centerCustomMX_width: 90%){
+    display: block;
     width: $centerCustomMX_width;
     max-width: $centerCustomMX_width_max;
     margin-right: $auto;
