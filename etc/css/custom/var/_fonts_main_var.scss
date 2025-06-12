@@ -72,6 +72,10 @@ $font_weights_map:(
 // Ej. 
 // .timesNewRomanM { font-weight: 500; }
 // .timesNewRomanB { font-weight: 700; }
+//
+// Tambien se usa para generar las variables de peso `_w`
+// Ej.
+// $ralewayXB_w:      map-get($font_weights_map, ralewayXB);
 
 
 //    ralewayM:       500,
@@ -87,8 +91,14 @@ $font_weights_map:(
 
 $arial:             map-get($font_families_map, arial), $font_families_sans_list_fallback;
 $roboto:            map-get($font_families_map, roboto), $font_families_sans_list_fallback;
+$ftSansSerif:     $font_families_sans_list_fallback;
+
 //$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
+$ftSerif:           $font_families_serif_list_fallback;
+
 //$monospacedFont:    map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
+$ftMonospaced:    $font_families_monospaced_list_fallback;
+
 $consolas:          map-get($font_families_map, consolas), $font_families_monospaced_list_fallback;
 
 // REF [01] Las Google Fonts deben ser declaradas de la siguiente forma:
@@ -96,3 +106,7 @@ $consolas:          map-get($font_families_map, consolas), $font_families_monosp
 //$ralewayM:         'Raleway', $font_families_sans_list_fallback;
 //$ralewaySB:        'Raleway', $font_families_sans_list_fallback;
 //$ralewayXB:        'Raleway', $font_families_sans_list_fallback;
+
+//$ralewayM_w:       map-get($font_weights_map, ralewayM);
+//$ralewaySB_w:      map-get($font_weights_map, ralewaySB);
+//$ralewayXB_w:      map-get($font_weights_map, ralewayXB);

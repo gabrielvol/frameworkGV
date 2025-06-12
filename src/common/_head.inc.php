@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-Content-Type" content="nosniff">
 <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 
 <?php /*
