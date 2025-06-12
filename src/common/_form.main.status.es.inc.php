@@ -28,6 +28,7 @@ $form_status_error_global__formMainID        = $form_status_error_globalA__formM
 
 /* // Captcha Status -------------------------------------------------------- */
 $form_status_captcha_ini__formMainID                    = '<p class="form_status form_status_captcha">Captcha: todavía no se ejecuta la validación</p>';
+$form_status_captcha_ok_tokenConseguido__formMainID         = '<p class="form_status form_status_captcha">Token Conseguido: </p>';
 $form_status_captcha_ok_successTrue__formMainID         = '<p class="form_status form_status_captcha">Captcha: success true!</p>';
 $form_status_ok_validation__formMainID                  = '<p class="form_status form_status_captcha">Captcha: Form. Validación OK! Ahora corre PHPMailer</p>';
 $form_status_captcha_error_lowScore__formMainID         = '<p class="form_status form_status_captcha">Captcha: Error. Score menor a 0.5</p>';

@@ -137,6 +137,9 @@ if($has_form): /* // REF [36] Form variables */ ?>
 if($has_captcha == 1 && $form_id == 'formMainID'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
 
+<?php /* elseif($has_captcha == 1 && $form_id == 'formContacto'): ?>
+<script src="<?php echo $dir_env; ?>/js/_captcha_formContacto.js"></script>
+
 <?php /* elseif($has_captcha == 1 && $form_id == 'formIniciarSesion'): ?>
 <script src="<?php echo $dir_env; ?>/js/_captcha_formIniciarSesion.js"></script>
 

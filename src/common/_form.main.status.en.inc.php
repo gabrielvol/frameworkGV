@@ -1,4 +1,8 @@
 <?php
+/* * NombreDeProyecto * ========================================================
+   Form Status [/src/var/form.main.status.en.inc.php]
+   ========================================================================== */
+
 /* // Form Status ----------------------------------------------------------- */
 $form_status_pop_button_close_txt           = 'Close';
 $form_status_pop_h2_ok_classes__formMainID    = 'mbm greenSystem txAlignCenter';
@@ -24,6 +28,7 @@ $form_status_error_global__formMainID        = $form_status_error_globalA__formM
 
 /* // Captcha Status -------------------------------------------------------- */
 $form_status_captcha_ini__formMainID                    = '<p class="form_status form_status_captcha">Captcha validation has not started</p>';
+$form_status_captcha_ok_tokenConseguido__formMainID         = '<p class="form_status form_status_captcha">Token Conseguido: </p>';
 $form_status_captcha_ok_successTrue__formMainID         = '<p class="form_status form_status_captcha">Captcha: success true!</p>';
 $form_status_ok_validation__formMainID                  = '<p class="form_status form_status_captcha">Form validation OK, now send script starts</p>';
 $form_status_captcha_error_lowScore__formMainID         = '<p class="form_status form_status_captcha">Captcha: Error, score lower than 0.5</p>';

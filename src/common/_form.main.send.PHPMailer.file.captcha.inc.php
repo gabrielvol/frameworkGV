@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 /*
 // REF [29] Form Status OK, tick
 // REF [50] Google reCaptcha
@@ -36,6 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  * estan declaradas en `[/src/var/form.var.inc.php]` */
 
     $captcha_url_siteverify = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $captcha_key_secret . '&response=' . $data_captchaResponseToken__formMainID . '&remoteip=' . $captcha_ip_remote;
+    
+    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha URL Site Verify: </p>' . '<code>' . $captcha_url_siteverify . '</code>';
 
 /* // Save the response -----------------------------------------------------  
 e.g. print_r($captcha_response) prints {
@@ -48,6 +52,22 @@ e.g. print_r($captcha_response) prints {
 */
     $captcha_response = file_get_contents($captcha_url_siteverify);
 
+/* If `allow_url_fopen` is Off, use curl instead 
+ *     
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
+        'secret' => $captcha_key_secret,
+        'response' => $data_captchaResponseToken__formMain,
+    ]));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $captcha_response = curl_exec($ch);
+    curl_close($ch);
+*/            
+    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha Response: </p>' . '<code>' . print_r($captcha_response) . '</code>';
+
 /* // Decode the response --------------------------------------------------- 
 e.g. print_r($captcha_response_keys) prints Array (
   [success] => 1
@@ -58,6 +78,19 @@ e.g. print_r($captcha_response_keys) prints Array (
   )
 */
     $captcha_response_keys = json_decode($captcha_response, true);
+            
+    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha Response Keys: </p>' . '<code>' . print_r($captcha_response_keys) . '</code>';
+            
+    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha Response Keys Action: </p>' . '<code>' . print_r($captcha_response_keys["action"]) . '</code>';
+            
+    $form_status_marquee__formMain .= $form_status_captcha_ok_tokenConseguido__formMain . '<code>' . $data_captchaResponseToken__formMain . '</code>';
+    
+    /*
+    echo '<pre>';
+        var_dump($captcha_response); /* Raw response from Google *
+        var_dump($captcha_response_keys); /* Decoded array *
+    echo '</pre>';
+    */
 
 /* Check if the test was done OK, if the action name is correct and if the score
  *  is above your chosen threshold.
@@ -71,7 +104,7 @@ e.g. print_r($captcha_response_keys) prints Array (
  * esta declarada en `[/src/var/form.var.inc.php]` */
         if ($captcha_response_keys["score"] >= $captcha_score_treshold) {
             
-            $form_status_marquee__formMainID .= $form_status_captcha_ok_successTrue__formMainID . '<span class="consolas">' . $data_captchaResponseToken__formMainID . '</span>';
+            $form_status_marquee__formMainID .= $form_status_captcha_ok_successTrue__formMainID;
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
             if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
@@ -209,7 +242,18 @@ e.g. print_r($captcha_response_keys) prints Array (
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
                             $_POST['data_nombre__formMainID'] = '';
                             /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
-                
+
+                            /* Redirect after successful send 
+                            if (!headers_sent()) {
+                                header('Location: /gracias.php#gracias');
+                                exit();
+                            } else {
+                                echo '<script>window.location.href = "/gracias.php#gracias";</script>';
+                                echo '<noscript><meta http-equiv="refresh" content="0;url=/gracias.php#gracias" /></noscript>';
+                                exit();
+                            }
+                            */
+                            
                         } catch (phpmailerException $e) {
                             echo $e->errorMessage();
 

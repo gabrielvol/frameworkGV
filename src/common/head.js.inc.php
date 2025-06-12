@@ -27,7 +27,7 @@
 <?php if(empty($dir_env) && $has_captcha == 1): /* // REF [50] Google reCaptcha */ ?>
 <script src='https://www.google.com/recaptcha/api.js?render=<?php echo $captcha_key_site; ?>'></script>
 
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<?php /* <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 <script>
     var onloadCallback = function() {
         document.querySelectorAll('.g-recaptcha').forEach(function(el) {
@@ -40,8 +40,7 @@
             });
         });
     };
-</script>
-
+</script> */ ?>
 <?php endif;
 
 

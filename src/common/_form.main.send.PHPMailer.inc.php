@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 /*
 // REF [29] Form Status OK, tick
 */
@@ -131,6 +133,17 @@ if (isset($_POST['button_form_submit__formMainID'])){
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
             $_POST['data_nombre__formMainID'] = '';        
             /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
+
+            /* Redirect after successful send
+            if (!headers_sent()) {
+                header('Location: /gracias.php#gracias');
+                exit();
+            } else {
+                echo '<script>window.location.href = "/gracias.php#gracias";</script>';
+                echo '<noscript><meta http-equiv="refresh" content="0;url=/gracias.php#gracias" /></noscript>';
+                exit();
+            }
+            */
             
         } catch (phpmailerException $e) {
             echo $e->errorMessage();

@@ -7,8 +7,9 @@
 
 var dir_env_js = '';
 
-// La variable captcha_key_site tambien debe ser declarada
-// en `[/src/var/form.var.inc.php]`
+/* // REF [50] Google captcha
+ * La variable captcha_key_site tambien debe ser declarada
+ * en `[/src/var/form.var.inc.php]` */
 let captcha_key_site = 'sinclave';
 
 
