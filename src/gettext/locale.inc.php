@@ -13,31 +13,36 @@
 
 
 
-switch ($_GET["gettext_idioma"]) {
-    case 1:
-        $gettext_idioma = 'es_AR';
-        break;
+// Ensure a language is always selected
+$gettext_idioma = 'es_AR';
+if (isset($_GET['gettext_idioma'])) {
+    switch ($_GET["gettext_idioma"]) {
+        case 1:
+            $gettext_idioma = 'es_AR';
+            break;
 
-    case 2:
-        $gettext_idioma = 'en_GB';
-        break;
+        case 2:
+            $gettext_idioma = 'en_GB';
+            break;
 
-    case 3:
-        $gettext_idioma = 'it_IT';
-        break;
+        case 3:
+            $gettext_idioma = 'it_IT';
+            break;
 
-    case 4:
-        $gettext_idioma = 'de_DE';
-        break;
+        case 4:
+            $gettext_idioma = 'de_DE';
+            break;
 
-    case 5:
-        $gettext_idioma = 'fr_FR';
-        break;
+        case 5:
+            $gettext_idioma = 'fr_FR';
+            break;
 
-    case 6:
-        $gettext_idioma = 'pt_BR';
-        break;
+        case 6:
+            $gettext_idioma = 'pt_BR';
+            break;
+    }
 }
+
     
 /* // Define el idioma ------------------------------------------------------ */
 putenv("LANGUAGE=$gettext_idioma");
@@ -53,5 +58,4 @@ $locale_dir = "./locale";
 bindtextdomain($locale_filename, $locale_dir);
 bind_textdomain_codeset($locale_filename, "UTF-8");
 textdomain($locale_filename);
-
-?>
+?>
