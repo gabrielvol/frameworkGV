@@ -3,31 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHA-256 Hash Encoder</title>
+    <title>SHA-256 Hash</title>
         
     <style>
+        html,
+        body{
+            background-color: #222;
+        }
+
+        label{
+            display: none;
+        }
+		
         input{
             display: block;
             width: 90vw;
-            height: 40px;
-            font-size: 1.1rem;
+            height: 46px;
+            border: 2px solid #666;
+            background-color: #333;
+            padding-left: 10px;
+            margin-bottom: 6px;
+            color: #888;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
         }
 
+        h1{
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #ddd;
+        }
+		
         p{
             border-radius: 12px 12px 0 0;
             border-style: solid;
             border-width: 2px 2px 0;
+            color: #ccc;
             border-color: #aaa;
             margin-bottom: 4px;
-            padding: 6px;
+            padding: 3px 8px;
+        }
+		
+        p span{
+            display: block;
+            font-size: 13px;
         }
 
         button {
             border-radius: 4px;
             transition: all 0.4s ease;
-            border: 2px solid #777;
-            background-color: #ccc;
-            padding: 8px 4px;
+            border: 2px solid #aaa;
+            color: #ccc;
+            background-color: #333;
+            padding: 12px 80px 12px 14px;
         }
         
         button.success {
@@ -36,7 +64,7 @@
         }
 
         button + p{
-            margin-top: 20px;
+            margin-top: 10px;
         }
     </style>
     
@@ -60,6 +88,7 @@
             document.getElementById('croppedHash28').textContent = hashHex.substring(0, 28);
             document.getElementById('croppedHash23').textContent = hashHex.substring(0, 23);
             document.getElementById('croppedHash20').textContent = hashHex.substring(0, 20);
+            document.getElementById('croppedHash18').textContent = hashHex.substring(0, 18);
             document.getElementById('croppedHash13').textContent = hashHex.substring(0, 13);
         }
 
@@ -265,26 +294,26 @@
     </script>
 </head>
 <body>
-    <h1>SHA-256 Hash Encoder</h1>
+    <h1>SHA-256 Hash</h1>
     <form onsubmit="event.preventDefault(); encodeToSHA256();">
         <label for="inputString">Enter string:</label>
         <input type="text" id="inputString" required>
-        <button type="submit">Encode</button>
-    </form>    
+        <button type="submit" id="buttonEnconde">Encode</button>
+    </form>      
     
-    <p><strong>SHA-256:</strong> <span id="fullHash"></span></p>
+    <p><strong>SHA-256 (83e e84)</strong> <span id="fullHash"></span></p>
     <button id="copyButtonFull" onclick="copyToClipboardFull()">Copy Text</button>
 
-    <p><strong>Hash 40:</strong> <span id="croppedHash40"></span></p>
+    <p><strong>Hash 40 (82c llueve8)</strong> <span id="croppedHash40"></span></p>
     <button id="copyButton40" onclick="copyToClipboard40()">Copy Text</button>
 
-    <p><strong>Hash 30:</strong> <span id="croppedHash30"></span></p>
+    <p><strong>Hash 30 (ed6 ku2)</strong> <span id="croppedHash30"></span></p>
     <button id="copyButton30" onclick="copyToClipboard30()">Copy Text</button>
 
-    <p><strong>Hash 28:</strong> <span id="croppedHash28"></span></p>
+    <p><strong>Hash 28 (312 24b[ML5GR&])</strong> <span id="croppedHash28"></span></p>
     <button id="copyButton28" onclick="copyToClipboard28()">Copy Text</button>
 
-    <p><strong>Hash 23:</strong> <span id="croppedHash23"></span></p>
+    <p><strong>Hash 23 (270 ART2)</strong> <span id="croppedHash23"></span></p>
     <button id="copyButton23" onclick="copyToClipboard23()">Copy Text</button>
 
     <p><strong>Hash 20:</strong> <span id="croppedHash20"></span></p>
@@ -297,3 +326,45 @@
     <button id="copyButton13" onclick="copyToClipboard13()">Copy Text</button>
 </body>
 </html>
+
+<?php
+/* Here's how you can run it locally:
+
+ * 1. Using a Simple Python Web Server*
+ * 
+ * Open your terminal or command prompt:*
+ * Navigate to the directory where you saved `sha256.html`
+ * 
+ * Start the server:*
+ * Run the command `python -m http.server`.  This starts a simple web server on port 8000.
+ * 
+ * *Open your browser:*
+ * Go to `http://localhost:8000/sha256.html` in your web browser.  The SHA-256 hashing tool should now work correctly.
+ * 
+ * 
+ * 
+ * 2. Using Live Server Extension (VS Code)*
+ * 
+ * Install the Live Server extension:*
+ * In VS Code, go to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X), search for "Live Server," and install the extension by Ritwick Dey.
+ * 
+ * Open the file:*
+ * Open `sha256.html` in VS Code.
+ * 
+ * Start Live Server:*
+ * Right-click on the HTML file and select "Open with Live Server."  This will start a local web server and open the HTML file in your browser.
+ * 
+ * 
+ * 
+ * 3. Node.js
+ * 
+ * Install `http-server` globally:
+ * npm install -g http-server
+ * 
+ * Navigate to the folder containing `sha256.html`.
+ * Run: http-server
+ * 
+ * Access the app at: http://localhost:8080/sha256.html
+ * 
+ * 
+ */ ?>
