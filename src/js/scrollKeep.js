@@ -2,7 +2,7 @@
     /**
      * Store scroll position for and set it after reload
      *
-     * @return {boolean} [loacalStorage is available]
+     * @return {boolean} [localStorage is available]
      */
     $.fn.scrollPosReload = function(){
         if (localStorage) {
