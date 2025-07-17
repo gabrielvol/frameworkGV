@@ -7,9 +7,14 @@
 
 $social_amazon_url     = 'https_www_amazon_com';
 
-$social_facebook_url    = 'https_www_facebook_com_usuario';
+$social_facebook_url = 'https_www_facebook_com_usuario';
+$social_facebook_page_name = 'NOMBRE_DE_PAGINA';
 
-$social_instagram_url   = 'https_www_instagram_com_usuario';
+
+$social_instagram_domain = 'https://instagram.com/';
+$social_instagram_COMPANY_user = 'usuario';
+$social_instagram_COMPANY_url = $social_instagram_domain . $social_instagram_COMPANY_user;
+
 
 $social_linkedin_url    = 'https_www_linkedin_com_usuario';
 

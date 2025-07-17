@@ -1,0 +1,80 @@
+# === Default rule: Normalize all text files to LF on commit ===
+* text=auto
+
+# === Web frontend code (React, Svelte, Angular, Nx) ===
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.svelte  text eol=lf
+*.html    text eol=lf
+*.css     text eol=lf
+*.scss    text eol=lf
+*.sass    text eol=lf
+
+# === Backend, config and scripting ===
+*.php     text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.env     text eol=lf
+*.sh      text eol=lf
+*.bash    text eol=lf
+*.py      text eol=lf
+*.sql     text eol=lf
+*.ini     text eol=lf
+
+# === Markdown and documentation ===
+*.md      text eol=lf
+*.txt     text eol=lf
+*.rst     text eol=lf
+
+# === DevOps / CI / monorepo ===
+*.make    text eol=lf
+Makefile  text eol=lf
+Dockerfile text eol=lf
+*.conf    text eol=lf
+*.service text eol=lf
+*.toml    text eol=lf
+*.lock    text eol=lf
+
+# === Windows-specific scripts (retain CRLF) ===
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.ps1     text eol=crlf
+
+# === Git and editor config files ===
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+.editorconfig  text eol=lf
+.nvmrc         text eol=lf
+.prettierrc    text eol=lf
+.eslintrc      text eol=lf
+
+# === Binary and media files ===
+# prevent Git from diffing or changing them
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.svg     binary
+*.ico     binary
+*.webp    binary
+*.mp4     binary
+*.mov     binary
+*.mp3     binary
+*.wav     binary
+*.ogg     binary
+*.ttf     binary
+*.woff    binary
+*.woff2   binary
+*.eot     binary
+*.pdf     binary
+*.psd     binary
+*.zip     binary
+*.tar     binary
+*.gz      binary
+*.7z      binary
+
+# === Avoid CRLF mess with special build files ===
+*.tsbuildinfo text eol=lf
