@@ -3,40 +3,45 @@
    Locale Variables [/src/gettext/locale.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- */
+/* // Descripcion ----------------------------------------------------------- 
 // REF [14] Gettext Locales
 // REF [14a] Idioma Chino ZH, MingLiu font
-// 
-// Definición de directorios locale.
-//
-// #php #gettext #locale
+ 
+Definición de directorios locale.
+
+#php #gettext #locale
+*/
 
 
 
-switch ($_GET["gettext_idioma"]) {
-    case 1:
-        $gettext_idioma = 'es_AR';
-        break;
+$gettext_idioma = 'es_AR';
 
-    case 2:
-        $gettext_idioma = 'en_GB';
-        break;
+if (isset($_GET['gettext_idioma'])) {
+    switch ($_GET["gettext_idioma"]) {
+        case 1:
+            $gettext_idioma = 'es_AR';
+            break;
 
-    case 3:
-        $gettext_idioma = 'it_IT';
-        break;
+        case 2:
+            $gettext_idioma = 'en_GB';
+            break;
 
-    case 4:
-        $gettext_idioma = 'de_DE';
-        break;
+        case 3:
+            $gettext_idioma = 'it_IT';
+            break;
 
-    case 5:
-        $gettext_idioma = 'fr_FR';
-        break;
+        case 4:
+            $gettext_idioma = 'de_DE';
+            break;
 
-    case 6:
-        $gettext_idioma = 'pt_BR';
-        break;
+        case 5:
+            $gettext_idioma = 'fr_FR';
+            break;
+
+        case 6:
+            $gettext_idioma = 'pt_BR';
+            break;
+    }
 }
     
 /* // Define el idioma ------------------------------------------------------ */
