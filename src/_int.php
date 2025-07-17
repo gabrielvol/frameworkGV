@@ -6,6 +6,10 @@
     $page_int               = 1;
     $nav_pageCurrent        = 'page_PAGEINT';
     $nav_pageCurrent_int    = 'page_PAGEINT_home';
+
+//    $nav_pageCurrent_section = 'page_PAGEINT_SECTION';
+//    $nav_pageCurrent_section_int = 'page_PAGEINT_SECTION_home';
+//    $nav_pageCurrent_section_variant = 'page_PAGEINT_SECTION_VARIANT';
     
 /* // Si se activa `$nav_pageCurrent_id`
    1. Hay que asignar los títulos en `[/var/page.PAGEINT.var.inc.php]` */

@@ -156,6 +156,18 @@ else:
 endif; 
 
     $class_ini_main         .= $nav_pageCurrent_int . ' ';
+    
+if($nav_pageCurrent_section):
+    $class_ini_main         .= $nav_pageCurrent_section . ' ';
+endif; 
+
+if($nav_pageCurrent_section_int):
+    $class_ini_main         .= $nav_pageCurrent_section_int . ' ';
+endif; 
+
+if($nav_pageCurrent_section_variant):
+    $class_ini_main         .= $nav_pageCurrent_section_variant . ' ';
+endif;
 
 if($nav_pageCurrent_id):
     $class_ini_main         .= $nav_pageCurrent_id . ' ';
