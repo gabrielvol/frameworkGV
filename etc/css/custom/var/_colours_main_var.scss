@@ -1,3 +1,4 @@
+@use "sass:color";
 /* * NombreDeProyecto * ========================================================
    Colours Main Variables | Custom [/etc/css/custom/var/colours_main_var.scss]
    ========================================================================== */
@@ -98,7 +99,7 @@ $colours_dark_lightenValue: 20%;
 $colours_merged_map: map-merge($colours_light_map, $colours_dark_map);
 
 $white:             #fff;
-$white_hover:       darken($white, 10%);
+$white_hover:       color.adjust($white, $lightness: -10%);
 $white_rgba:        rgb(255, 255, 255);
 $white_rgba_10:     rgba($white_rgba, 0.1);
 $white_rgba_20:     rgba($white_rgba, 0.2);
@@ -139,7 +140,7 @@ $greenSystemM:      map-get($colours_merged_map, greenSystemM);
 //$greenSystemD:      map-get($colours_merged_map, greenSystemD);
 
 $greenWhatsApp:         map-get($colours_merged_map, greenWhatsApp);
-$greenWhatsApp_hover:   darken($greenWhatsApp, 5%);
+$greenWhatsApp_hover:   color.adjust($greenWhatsApp, $lightness: -5%);
 
 $grey5XL:           map-get($colours_merged_map, grey5XL);
 $grey4XL:           map-get($colours_merged_map, grey4XL);

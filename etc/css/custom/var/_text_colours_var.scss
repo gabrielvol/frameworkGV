@@ -1,3 +1,4 @@
+@use "sass:color";
 /* * NombreDeProyecto * ========================================================
    Text Colour Variables | Custom [/etc/css/custom/var/text_colours_var.scss]
    ========================================================================== */
@@ -49,10 +50,10 @@
 
 /* // Text Colours ---------------------------------------------------------- */
 $ftColour_main_global:          $black;
-$ftColour_main_global_hover:    lighten($ftColour_main_global, 20%);
+$ftColour_main_global_hover:    color.adjust($ftColour_main_global, $lightness: 20%);
 
 $ftColour_anchor_global:        $ftColour_main_global_hover;
-$ftColour_anchor_global_hover:  darken($ftColour_main_global_hover, 10%);
+$ftColour_anchor_global_hover:  color.adjust($ftColour_main_global_hover, $lightness: -10%);
 
 $txSelection_ftColour_global:   $ftColour_main_global;
 $txSelection_bgColour_global:   $bgColour_neutral;

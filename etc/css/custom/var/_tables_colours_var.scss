@@ -1,3 +1,4 @@
+@use "sass:color";
 /* * NombreDeProyecto * ========================================================
    Tables Colours Variables | Custom [/etc/css/custom/var/tables_colours_var.scss]
    ========================================================================== */
@@ -17,4 +18,4 @@ $table_bgColour_ter:     $bgGreyXL;
 $table_bgColour_striped_thead:     #aaa;
 $table_bgColour_striped_odd:       #eee;
 $table_bgColour_striped_even:      $white;
-$table_bgColour_striped_separator: darken($table_bgColour_striped_odd, 60%);
+$table_bgColour_striped_separator: color.adjust($table_bgColour_striped_odd, $lightness: -60%);

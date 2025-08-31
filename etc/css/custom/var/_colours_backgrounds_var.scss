@@ -1,3 +1,4 @@
+@use "sass:color";
 /* * NombreDeProyecto * ========================================================
    Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds_var.scss]
    ========================================================================== */
@@ -140,8 +141,8 @@ $colours_backgrounds_hover_map:(
 // *.bgBlack:focus, *.bgBlack:hover{background-color: #hex}
 
 
-    mainBgColour: darken($bgColour_neutral, 20%),
-/*    bgGrey: lighten($bgGreyM, 20%)*/
+    mainBgColour: color.adjust($bgColour_neutral, $lightness: -20%),
+/*    bgGrey: color.adjust($bgGreyM, $lightness: 20%)*/
 );
 
 //$bgBlue_hover: map-get($colours_backgrounds_hover_map, bgBlue);

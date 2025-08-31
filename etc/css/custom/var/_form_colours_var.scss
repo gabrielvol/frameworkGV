@@ -1,3 +1,4 @@
+@use "sass:color";
 /* * NombreDeProyecto * ========================================================
    Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
@@ -55,15 +56,15 @@
      
 /* // Form Label ------------------------------------------------------------ */
 $form_label_ftColour:           $ftColour_main_global;
-$form_label_ftColour_hover:     darken($form_label_ftColour, 15%);
+$form_label_ftColour_hover:     color.adjust($form_label_ftColour, $lightness: -15%);
     
      
 /* // Forms Input ----------------------------------------------------------- */
 $form_input_ftColour:           $ftColour_main_global;
 $form_input_ftColour_hover:     $form_input_ftColour;
 
-$form_placeholder_ftColour:         lighten($form_input_ftColour, 10%); // REF [10]
-$form_placeholder_ftColour_hover:   darken($form_placeholder_ftColour, 5%); // REF [10]
+$form_placeholder_ftColour:         color.adjust($form_input_ftColour, $lightness: 10%); // REF [10]
+$form_placeholder_ftColour_hover:   color.adjust($form_placeholder_ftColour, $lightness: -5%); // REF [10]
  
 $form_input_ftColour_autofill:  $form_input_ftColour;
   
