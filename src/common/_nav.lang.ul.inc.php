@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Nav Language UL [/src/var/nav.lang.ul.inc.php]
+   Nav Language UL [/src/common/nav.lang.ul.inc.php]
    ========================================================================== */
 
 // Nav para cambiar idioma del sitio

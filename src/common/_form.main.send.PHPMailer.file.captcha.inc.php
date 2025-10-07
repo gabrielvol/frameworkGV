@@ -169,7 +169,7 @@ e.g. print_r($captcha_response_keys) prints Array (
                             $mail->Username = $form_PHPMailer_account__formMainID;
                             $mail->Password = 'contrasena';
             
-/* // $mail Seguridad TSL / SSL / Puertos ----------------------------------- */
+/* // $mail Seguridad TLS / SSL / Puertos ----------------------------------- */
                             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                             $mail->SMTPSecure = 'ssl';
 

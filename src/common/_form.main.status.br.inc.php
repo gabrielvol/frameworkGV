@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Form Status [/src/var/form.main.status.br.inc.php]
+   Form Status [/src/common/form.main.status.br.inc.php]
    ========================================================================== */
 
 /* // Form Status ----------------------------------------------------------- */
