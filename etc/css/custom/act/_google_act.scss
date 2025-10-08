@@ -6,7 +6,8 @@
 // Archivo de variables activadoras para elementos de Google.
 //
 // #activator #google #captcha #recaptcha #forms
-
+//
+// REF [50] Google captcha
 
 /* // Listado --------------------------------------------------------------- */
 // 01 _ $google_captcha_act
@@ -76,5 +77,5 @@
     
 
 // Si se activa `$google_captcha_act` tambien hay que activar `$has_captcha` en 
-// `[/src/var/form.var.inc.php]`
+// `[/src/var/form.var.inc.php]` // REF [50] Google captcha
 $google_captcha_act:             off;   

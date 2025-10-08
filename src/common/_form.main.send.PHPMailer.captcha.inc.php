@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $captcha_url_siteverify = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $captcha_key_secret . '&response=' . $data_captchaResponseToken__formMainID . '&remoteip=' . $captcha_ip_remote;
     
-    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha URL Site Verify: </p>' . '<code>' . $captcha_url_siteverify . '</code>';
+    $form_status_marquee__formMainID .= '<p class="form_status form_status_captcha">Print Captcha URL Site Verify: </p>' . '<code>' . $captcha_url_siteverify . '</code>';
 
 /* // Save the response -----------------------------------------------------  
 e.g. print_r($captcha_response) prints {
@@ -64,7 +64,7 @@ e.g. print_r($captcha_response) prints {
     $captcha_response = curl_exec($ch);
     curl_close($ch);
 */            
-    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha Response: </p>' . '<code>' . print_r($captcha_response) . '</code>';
+    $form_status_marquee__formMainID .= '<p class="form_status form_status_captcha">Print Captcha Response: </p>' . '<code>' . print_r($captcha_response) . '</code>';
 
 /* // Decode the response --------------------------------------------------- 
 e.g. print_r($captcha_response_keys) prints Array (
@@ -77,11 +77,11 @@ e.g. print_r($captcha_response_keys) prints Array (
 */
     $captcha_response_keys = json_decode($captcha_response, true);
             
-    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha Response Keys: </p>' . '<code>' . print_r($captcha_response_keys) . '</code>';
+    $form_status_marquee__formMainID .= '<p class="form_status form_status_captcha">Print Captcha Response Keys: </p>' . '<code>' . print_r($captcha_response_keys) . '</code>';
             
-    $form_status_marquee__formMain .= '<p class="form_status form_status_captcha">Print Captcha Response Keys Action: </p>' . '<code>' . print_r($captcha_response_keys["action"]) . '</code>';
+    $form_status_marquee__formMainID .= '<p class="form_status form_status_captcha">Print Captcha Response Keys Action: </p>' . '<code>' . print_r($captcha_response_keys["action"]) . '</code>';
             
-    $form_status_marquee__formMain .= $form_status_captcha_ok_tokenConseguido__formMain . '<code>' . $data_captchaResponseToken__formMain . '</code>';
+    $form_status_marquee__formMainID .= $form_status_captcha_ok_tokenConseguido__formMain . '<code>' . $data_captchaResponseToken__formMain . '</code>';
     
     /*
     echo '<pre>';

@@ -22,7 +22,7 @@ $form_status_error_globalB__formMain    = 'Por favor, tente novamente mais tarde
 $form_status_error_globalC__formMain    = 'Você pode entrar em contato enviando um e-mail para <a href="' . $form_status_recipient_mailto__formMain . '" class="' . $form_status_pop_anchor_classes__formMain . '">' . $form_status_recipient__formMain . '</a>.';
 $form_status_error_global__formMain     = $form_status_error_globalA__formMain . ' ' . $form_status_error_globalB__formMain . ' ' . $form_status_error_globalC__formMain;
 
-// $form_status_marquee__formMain = '<p class="form_status form_status_ini">'. $form_status_ini_global__formMain .'</p>';
+// $form_status_marquee__formMainID = '<p class="form_status form_status_ini">'. $form_status_ini_global__formMain .'</p>';
 
 
 /* // Captcha Status -------------------------------------------------------- */
