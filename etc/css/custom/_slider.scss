@@ -151,5 +151,264 @@
     }
 }
 
-@import "imp/slider_arrows_imp";
-@import "imp/slider_dots_imp";
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Slider Arrows
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@if $slider_arrows_act == "on"{
+    .slickPrev{
+        left: 2%;
+        background-image: url('#{$dir_env}/img/slider_arrow_prev.svg');
+    }
+
+    .slickNext{
+        right: 2%;
+        background-image: url('#{$dir_env}/img/slider_arrow_next.svg');
+    }
+
+    .slickPrev,
+    .slickNext{
+        @include transition(0.7s);
+        position: absolute;
+        z-index: $zIndex_slider_arrows_dots;
+        top: 50%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border: $none;
+        padding: $zero;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    
+    /* // REF [09] */
+    .slick_carousel.slick_vertical{        
+        .slickPrev{
+            background-image: url('#{$dir_env}/img/slider_arrow_prev_ver.svg');
+        }
+
+        .slickNext{
+            background-image: url('#{$dir_env}/img/slider_arrow_next_ver.svg');
+        }
+    }
+    
+    /*    
+    @include afterMQ500{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A500;
+            height: $slider_arrows_height_A500;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A500});
+        }
+    }
+    
+    @include afterMQ550{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A550;
+            height: $slider_arrows_height_A550;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A550});
+        }
+    }
+    
+    @include afterMQ600{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A600;
+            height: $slider_arrows_height_A600;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A600});
+        }
+    }
+    
+    @include afterMQ650{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A650;
+            height: $slider_arrows_height_A650;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A650});
+        }
+    }
+    */
+    
+    @include beforeMQ768{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_B768;
+            height: $slider_arrows_height_BT;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_BT});   
+        }
+    }
+
+    @include afterMQ768{
+        .slickPrev, 
+        .slickNext{
+            @include opacityCustomHover();
+            width: $slider_arrows_width_A768;
+            height: $slider_arrows_height_AT;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_AT});
+        }
+    }
+
+    @include afterMQ1024{
+        .slickPrev,
+        .slickNext{
+            width: $slider_arrows_width_A1024;
+            height: $slider_arrows_height_A1024;
+            margin-top: calc(-1 * #{$slider_arrows_height_half_A1024});
+        }
+    }
+}
+     
+@if $slider_arrows_carousel_act == "on"{ // REF [34]
+    .slick_carousel{
+        .slickPrev{
+            background-image: url('#{$dir_env}/img/button_carousel_left.svg');
+        }
+
+        .slickNext{
+            background-image: url('#{$dir_env}/img/button_carousel_right.svg');
+        }
+        
+        @include beforeMQ350{
+            .slickPrev{
+                left: 0;
+            }
+
+            .slickNext{
+                right: 0;
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_B350;
+                height: $carousel_arrows_height_B350;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_B350});  
+            }
+        }
+        
+        @include afterMQ350{
+            .slickPrev{
+                left: calc(#{$carousel_arrows_width_A350} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$carousel_arrows_width_A350} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_A350;
+                height: $carousel_arrows_height_A350;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_A350});  
+            }
+        }
+        
+        @include afterMQ500{
+            .slickPrev{
+                left: calc(#{$carousel_arrows_width_A500} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$carousel_arrows_width_A500} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_A500;
+                height: $carousel_arrows_height_A500;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_A500});  
+            }
+        }
+        
+        @include afterMQ768{
+            .slickPrev{
+                left: calc(#{$carousel_arrows_width_AT} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$carousel_arrows_width_AT} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_AT;
+                height: $carousel_arrows_height_AT;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_AT});
+            }
+        }
+        
+        @include afterMQ1024{
+            .slickPrev{
+                left: calc(#{$carousel_arrows_width_A1024} / 4);
+            }
+
+            .slickNext{
+                right: calc(#{$carousel_arrows_width_A1024} / 4);
+            }
+            
+            .slickPrev,
+            .slickNext{
+                width: $carousel_arrows_width_A1024;
+                height: $carousel_arrows_height_A1024;
+                margin-top: calc(-1 * #{$carousel_arrows_height_half_A1024});
+            }
+        }
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Slider Dots
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@if $slider_dots_act == "on"{
+    .slickDots{
+        list-style: none;
+        position: relative;
+        z-index: $zIndex_slider_arrows_dots;
+        top: calc(-1 * #{$slider_dots_MT});
+        height: calc(#{$slider_dots_height} + calc(#{$slider_dots_separation} * 2));
+        margin: 0 auto;
+        text-align: center;
+
+        li{
+            @include transition(0.7s);
+            @include opacityCustom(60);
+            display: inline-block;
+            float: $none;
+            height: $slider_dots_height;
+            padding: $slider_dots_separation;
+
+            &, button{
+                @include squareSize($slider_dots_width);
+            }
+
+            button{
+                display: block;
+                background-color: transparent;
+                background-image: url('#{$dir_env}/img/button_slider_pag.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                padding: $zero;
+                border: $none;
+                text-indent: -9999px;
+                overflow: hidden;
+            }
+
+            &:focus, &:focus-visible, &:hover{
+                @include opacityCustom(80);
+                    
+                button{
+                    background-image: url('#{$dir_env}/img/button_slider_pag_hover.svg');
+                }
+            }
+
+            &.slickActive{
+                @include opacityCustom(100);
+                    
+                button{
+                    background-image: url('#{$dir_env}/img/button_slider_pag_current.svg');
+                }
+            }
+        }
+    }
+}
