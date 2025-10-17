@@ -99,7 +99,7 @@ endif;
         
 if($nav_pageCurrent_int     == 'page_PAGEINT_home'):
     $class_ini_header       .= 'error_alert error_alert_b ';
-endif;  
+endif;
     
     $class_end_header       = ' ' . $containerMAX_value; /* // REF [38*] */
 

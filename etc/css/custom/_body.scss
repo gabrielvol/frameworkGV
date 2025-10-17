@@ -5,4 +5,29 @@ body{
     position: relative;
     z-index: $zIndex_body;
     background-color: $body_bgColour;
+    
+    @include afterMQ1300{
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: repeat-y;
+        /* background-image: url('#{$dir_env}/img/bg_body_1600.jpg'); */
+    }
+    
+    /*
+    @include afterMQ1600{
+        background-image: url('#{$dir_env}/img/bg_body_2000.jpg');
+    }
+    
+    @include afterMQ2000{
+        background-image: url('#{$dir_env}/img/bg_body_2300.jpg');
+    }
+    
+    @include afterMQ2300{
+        background-image: url('#{$dir_env}/img/bg_body_2600.jpg');
+    }
+    
+    @include afterMQ2600{
+        background-image: url('#{$dir_env}/img/bg_body_3000.jpg');
+    }
+    */
 }
