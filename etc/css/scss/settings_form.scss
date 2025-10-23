@@ -2,7 +2,7 @@
    Form Settings | Etc [/etc/css/scss/settings_form.scss]
    ========================================================================== */
 
-@use "var_all" as *;
+@use "var_all_pre" as *;
 @use "../custom/var/env_var" as *;
 
 @use "sass:color";

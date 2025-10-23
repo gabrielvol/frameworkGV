@@ -2,16 +2,6 @@
    Text Variables | Custom [/etc/css/custom/var/text_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "../../scss/var_fonts" as *;
-@use  "fonts_main_var" as *;
-@use "colours_main_var" as *;
-@use "colours_borders_var" as *;
-@use "colours_backgrounds_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de texto. Declaraciones de fuentes,
 // variables de pesos, interlinea, cuerpos tipograficos y espaciado general.
@@ -60,6 +50,18 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "../../scss/var_fonts" as *;
+@use "fonts_main_var" as *;
 
 /* // Text Fonts ------------------------------------------------------------ */
 $ftFamily_regular_global:       $arial; /* // REF [46] Fuentes Regular y Bold */

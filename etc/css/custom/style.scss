@@ -22,7 +22,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 @use "var/text_var" as *;
 @use "fontFace" as *;
 
-@use "css_pre" as *;
+@use "../scss/var_all_pre" as *;
 
 /* // Main CSS -------------------------------------------------------------- */
 //@use "../scss/settings_html_body" as *;
@@ -90,4 +90,4 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 //@use "wp_styles" as *;
 
 /* // Post ------------------------------------------------------------------ */
-//@use "css_post" as *;
+//@use "../scss/var_all_post" as *;

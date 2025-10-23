@@ -2,12 +2,6 @@
    Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "../../scss/var_fonts" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de fuentes.
 // Contiene mapas de fuentes.
@@ -50,6 +44,13 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "../../scss/var_fonts" as *;
 
 $font_families_map:(
 // Este mapa se usa con el mixin `fontFamilyCustomClassesGenerator` que se

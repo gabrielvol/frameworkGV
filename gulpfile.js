@@ -21,7 +21,9 @@ const paths = {
   // Add as many entries as you want; "out" is the compiled CSS filename
   scssEntries: [
     { in: 'etc/css/custom/styles_main.scss', out: 'styles_main.css' },
-    // { in: 'etc/css/custom/styles_app.scss',  out: 'styles_app.css'  },
+    //{ in: 'etc/css/custom/styles_app.scss',  out: 'styles_app.css'  },
+    //{ in: 'etc/css/custom/styles_zh.scss',  out: 'styles_app.css'  },
+    //{ in: 'etc/css/custom/style.scss',  out: 'styles_app.css'  },
   ],
   scssWatch:   'etc/css/**/*.scss',   // all scss
   cssOutTemp:  'etc/css/compilation', // expanded + sourcemap

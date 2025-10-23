@@ -2,12 +2,6 @@
    Mixins Container | Etc [/etc/css/scss/mixins_container.scss]
    ========================================================================== */
 
-@use "var_all" as *;
-@use "../custom/var/container_sizes_var" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Listado de mixins:
 //
@@ -72,6 +66,12 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+@use "../custom/var/container_sizes_var" as *;
 
 /* // REF [38*] Mixin para container max ------------------------------------ */
 @mixin containerMAX_settings(){

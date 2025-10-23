@@ -2,14 +2,6 @@
    Nav Colours Variables | Custom [/etc/css/custom/var/nav_colours_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "colours_main_var" as *;
-@use "colours_borders_var" as *;
-@use "colours_backgrounds_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 //
@@ -53,6 +45,17 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "text_colours_var" as *;
 
 /* // Font Colours ---------------------------------------------------------- */
 /*___ BT ________________________________*/

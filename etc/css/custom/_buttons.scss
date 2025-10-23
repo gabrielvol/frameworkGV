@@ -2,13 +2,6 @@
    Button Styles | Custom [/etc/css/custom/buttons.scss]
    ========================================================================== */
 
-@use "act/buttons_act" as *;
-
-@use "var/env_var" as *;
-@use "../scss/var_all" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
@@ -50,6 +43,18 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "act/buttons_act" as *;
+
+@use "var/fonts_main_var" as *;
+@use "var/text_var" as *;
 
 /* // Reset ----------------------------------------------------------------- */
 button,

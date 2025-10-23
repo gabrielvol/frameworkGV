@@ -2,17 +2,6 @@
    Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use  "buttons_var" as *;
-@use  "text_var" as *;
-@use  "fonts_main_var" as *;
-@use "colours_main_var" as *;
-@use "colours_borders_var" as *;
-@use "colours_backgrounds_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables de colores de texto de los elementos `label`,
 // `input`, `placeholder` y `submit` con sus `:hover`.
@@ -64,6 +53,21 @@
 
     
      
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "buttons_var" as *;
+
+@use "fonts_main_var" as *;
+@use "text_var" as *;
+@use "text_colours_var" as *;
+
 /* // Form Label ------------------------------------------------------------ */
 $form_label_ftColour:           $ftColour_main_global;
 $form_label_ftColour_hover:     color.adjust($form_label_ftColour, $lightness: -15%);

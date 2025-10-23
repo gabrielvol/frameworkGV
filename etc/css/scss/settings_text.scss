@@ -2,11 +2,6 @@
    Text Settings | Etc [/etc/css/scss/settings_text.scss]
    ========================================================================== */
 
-@use "var_all" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
@@ -50,6 +45,16 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "var_all_pre" as *;
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/var/fonts_main_var" as *;
+@use "../custom/var/text_var" as *;
 
 /* // General --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{

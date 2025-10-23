@@ -1,16 +1,19 @@
 /* * NombreDeProyecto * ========================================================
    Page Error Styles | Custom [/etc/css/custom/page_error.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
+
 @use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
 @use "var/colours_main_var" as *;
 @use "var/colours_borders_var" as *;
 @use "var/colours_backgrounds_var" as *;
-@use "var/page_error_var" as *;
 
-@use "../scss/var_all" as *;
+//@use "var/page_error_var" as *;
 
-@use "sass:color";
-@use "sass:map";
 .page_error{
     min-height: 50vh;
     padding-top: 30px;

@@ -2,11 +2,6 @@
    Mixin  Clearfix | Etc [/etc/css/scss/mixins_clearfix.scss]
    ========================================================================== */
 
-@use "var_all" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de mixins.
 
@@ -50,6 +45,11 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
 
 /* // Clearfix -------------------------------------------------------------- */
 @mixin clearfix() {

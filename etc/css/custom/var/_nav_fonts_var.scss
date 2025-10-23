@@ -2,12 +2,6 @@
    Nav Fonts Variables | Custom [/etc/css/custom/var/nav_fonts_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "fonts_main_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -49,6 +43,14 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "fonts_main_var" as *;
+@use "text_var" as *;
 
 /*___ BT ________________________________*/
 $nav_ftFamily_BT:                       $ftFamily_regular_global;
