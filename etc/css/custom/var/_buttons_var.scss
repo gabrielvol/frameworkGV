@@ -2,6 +2,8 @@
    Buttons Variables | Custom [/etc/css/custom/var/buttons_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
 @use  "fonts_main_var" as *;
 @use "colours_main_var" as *;
 @use "colours_borders_var" as *;

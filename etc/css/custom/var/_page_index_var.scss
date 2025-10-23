@@ -4,6 +4,13 @@
 
 @use "sass:color";
 @use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 

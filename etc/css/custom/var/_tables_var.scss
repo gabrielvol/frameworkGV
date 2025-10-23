@@ -2,6 +2,8 @@
    Tables Variables | Custom [/etc/css/custom/var/tables.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
 @use "../scss/var_absolute" as *;
 @use  "helpers_var" as *;
 

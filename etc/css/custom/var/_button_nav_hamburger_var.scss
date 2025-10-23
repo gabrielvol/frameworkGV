@@ -2,6 +2,8 @@
    Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
 @use  "fonts_main_var" as *;
 @use "colours_main_var" as *;
 @use "colours_borders_var" as *;
