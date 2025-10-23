@@ -2,11 +2,6 @@
    Useful Classes ALL | Etc [/etc/css/scss/classes_useful_all.scss]
    ========================================================================== */
 
-@use "var_all_pre" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
@@ -50,6 +45,12 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "var_all_pre" as *;
+@use "../custom/var/env_var" as *;
 
 /*___ Accessibility _____________________*/
 #go-main-content{

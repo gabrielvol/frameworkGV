@@ -1,4 +1,11 @@
-<div class="global_MQ_B600">
+<div class="global_MQ_B500">
+    <ul class="slick unstyled slider_main">
+        <li><img src="<?php echo $dir_env; ?>/img/img_01_0600.jpg" alt="" /></li>
+        <li><img src="<?php echo $dir_env; ?>/img/img_02_0600.jpg" alt="" /></li>
+    </ul>
+</div>
+
+<div class="global_MQ_A500">
     <ul class="slick unstyled slider_main">
         <li><img src="<?php echo $dir_env; ?>/img/img_01_0600.jpg" alt="" /></li>
         <li><img src="<?php echo $dir_env; ?>/img/img_02_0600.jpg" alt="" /></li>
