@@ -1,6 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Hover Classes | Custom [/etc/css/custom/hover.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 @include afterMQ768{

@@ -2,6 +2,9 @@
    Breadcrumb Styles | Custom [/etc/css/custom/breadcrumbs.scss]
    ========================================================================== */
 
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

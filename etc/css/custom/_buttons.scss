@@ -2,6 +2,9 @@
    Button Styles | Custom [/etc/css/custom/buttons.scss]
    ========================================================================== */
 
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

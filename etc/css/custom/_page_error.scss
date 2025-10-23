@@ -1,6 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Page Error Styles | Custom [/etc/css/custom/page_error.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 .page_error{
