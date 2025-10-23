@@ -1,11 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    CSS Styles Main | Custom [/etc/css/custom/styles_zh.scss]
    ========================================================================== */
-@use "var/env_var" as *;
-@use "../scss/var_all" as *;
-
 @use "sass:color";
 @use "sass:map";
+
 @import "../scss/charset";
 @import "var/env_var";
 
@@ -14,7 +12,7 @@
 @import "var/text_zh_var";
 @import "fontFace_zh";
 
-@import "css_pre";
+@use "../scss/var_all_pre" as *;
 
 /* // Main CSS -------------------------------------------------------------- */
 @import "../scss/settings_html_body";
@@ -22,11 +20,11 @@
 @import "../scss/reset_main";
 @import "reset_custom";
 
+@import "colours_gradients";
+
 @import "../scss/settings_text";
 @import "text";
 @import "classes_text"; 
-
-@import "colours_gradients";
 
 @import "includes_backgrounds";
 @import "classes_backgrounds";
@@ -37,32 +35,32 @@
 
 @import "../scss/settings_container";
 
-//@import "print";
+//@use "print";
 
 @import "global";
 @import "lists";
 @import "buttons";
 @import "hover";
 @import "focus";
-//@import "scrollbar";
-//@import "breadcrumbs";
-//@import "iframe";
+//@use "scrollbar";
+//@use "breadcrumbs";
+//@use "iframe";
 
-//@import "animation";
-//@import "animation_index";
+//@use "animation";
+//@use "animation_index";
 
 @import "../scss/settings_form";
 @import "form";
-//@import "form_search";
-//@import "form_checkbox";
+//@use "form_search";
+//@use "form_checkbox";
 
-//@import "../scss/settings_tables";
-//@import "tables";
+//@use "../scss/settings_tables";
+//@use "tables";
 
 @import "popup";
 
 @import "header";
-//@import "social";
+//@use "social";
 @import "footer";
 
 @import "../scss/settings_nav";
@@ -73,28 +71,28 @@
 @import "nav_main_list";
 @import "nav_main_AT";
 @import "nav_main_ALL";
-//@import "nav_lang";
-//@import "nav_lang_square";
+//@use "nav_lang";
+//@use "nav_lang_square";
 
-//@import "slider";
-//@import "slider_nav";
+//@use "slider";
+//@use "slider_nav";
 
-//@import "page_construccion";
-//@import "page_copyright";
-//@import "page_error";
-//@import "page_index";
-//@import "page_contacto";
-//@import "page_gracias";
+//@use "page_construccion";
+//@use "page_copyright";
+//@use "page_error";
+//@use "page_index";
+//@use "page_contacto";
+//@use "page_gracias";
 
-//@import "Section";
-//@import "Section";
-//@import "Section";
-//@import "page_ Section";
-//@import "page_ Section";
-//@import "page_ Section";
-//@import "page_xxx";
-//@import "page_xxx";
-//@import "page_xxx";
+//@use "Section";
+//@use "Section";
+//@use "Section";
+//@use "page_ Section";
+//@use "page_ Section";
+//@use "page_ Section";
+//@use "page_xxx";
+//@use "page_xxx";
+//@use "page_xxx";
 
 /* // Post ------------------------------------------------------------------ */
-@import "css_post";
+@use "../scss/var_all_post" as *;

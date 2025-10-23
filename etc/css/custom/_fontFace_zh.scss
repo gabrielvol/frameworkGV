@@ -2,11 +2,6 @@
    Font-face | Custom [/etc/css/custom/fontFace_zh.scss]
    ========================================================================== */
 
-@use "var/env_var" as *;
-@use "../scss/var_all" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de reglas-at, @font-face para fuentes con alfabeto chino.
 
@@ -48,6 +43,12 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
 
 // REF [14a]
 @font-face {
