@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Page Gracias Styles | Custom [/etc/css/custom/page_gracias.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .page_gracias{
     padding-bottom: 50px;
 }

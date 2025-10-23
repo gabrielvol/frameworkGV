@@ -2,6 +2,8 @@
    CSS Styles Pre | Custom [/etc/css/custom/css_pre.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Activators ------------------------------------------------------------ */
 @import "act/classes_useful_act";
 @import "act/logo_act";

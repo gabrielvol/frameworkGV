@@ -2,6 +2,8 @@
    Media Queries Placeholders | Custom [/etc/css/custom/mediaQueries_placeholders.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
     @include beforeMQ300{}
 
     @include afterMQ300{}

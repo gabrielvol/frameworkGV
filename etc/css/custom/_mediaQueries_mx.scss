@@ -2,6 +2,8 @@
    Media Queries Mixins | Custom [/etc/css/custom/mediaQueries_mx.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene los mixins para generar reglas-at `@media` que
 // incluyen dentro bloques de contenido con la regla-at `@content`.

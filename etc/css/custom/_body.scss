@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Body Styles | Custom [/etc/css/custom/body.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 body{
     position: relative;
     z-index: $zIndex_body;

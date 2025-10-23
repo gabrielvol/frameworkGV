@@ -1,6 +1,8 @@
 /* =============================================================================
    Parallax Scroll
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 html,body{height:100%;min-height:100%;position:relative}
 #header.parallaxHeader{
     position:fixed;

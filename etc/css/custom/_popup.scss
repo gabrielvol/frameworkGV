@@ -2,6 +2,8 @@
    Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
     
+@use "sass:color";
+@use "sass:map";
 /* // Pop Modal ------------------------------------------------------------- */
 .modal_global{
     background-color: $modal_global_bgColour;

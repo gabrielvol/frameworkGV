@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Page Index Styles | Custom [/etc/css/custom/page_index.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @import 'imp/page_index_fullHeight_imp';
 
 .page_index{

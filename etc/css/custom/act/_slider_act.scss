@@ -2,6 +2,8 @@
    Slider Activators | Custom [/etc/css/custom/act/slider_act.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene las variables de activacion para generar los estilos
 // de flechas, flechas para carruseles e indicadores de pagina o "slide activo".

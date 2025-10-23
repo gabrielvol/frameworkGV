@@ -2,6 +2,8 @@
    Global Styles | Custom [/etc/css/custom/global.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
@@ -117,9 +119,9 @@ $statuses_map: (
 
 @each $name, $props in $statuses_map {
     .status_#{$name} {
-        background-color: map-get($props, background);
-        color: map-get($props, color);
-        border-color: map-get($props, border);
+        background-color: map.get($props, background);
+        color: map.get($props, color);
+        border-color: map.get($props, border);
     }
 }
 

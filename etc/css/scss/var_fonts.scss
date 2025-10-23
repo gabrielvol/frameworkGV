@@ -2,6 +2,8 @@
    Font Variables | Etc [/etc/css/scss/var_fonts.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables.
 // Contiene mapa de fuentes para generar Font-Stacks.
@@ -67,53 +69,53 @@ $font_families_sans_map:(
 );
 
 $font_families_sans_list:
-    map-get($font_families_sans_map, sanFrancisco),
-    map-get($font_families_sans_map, blinkMacSystemFont),
-    map-get($font_families_sans_map, oxygen), 
-    map-get($font_families_sans_map, ubuntu), 
-    map-get($font_families_sans_map, cantarell), 
-    map-get($font_families_sans_map, firaSans), 
-    map-get($font_families_sans_map, droidSans), 
-    map-get($font_families_sans_map, helveticaSafe), 
-    map-get($font_families_sans_map, segoeUI),   
-    map-get($font_families_sans_map, verdana),
-    map-get($font_families_sans_map, tahoma),
-    map-get($font_families_sans_map, lucidaGrande),
-    map-get($font_families_sans_map, trebuchetMS),
-    map-get($font_families_sans_map, sansSerif)
+    map.get($font_families_sans_map, sanFrancisco),
+    map.get($font_families_sans_map, blinkMacSystemFont),
+    map.get($font_families_sans_map, oxygen), 
+    map.get($font_families_sans_map, ubuntu), 
+    map.get($font_families_sans_map, cantarell), 
+    map.get($font_families_sans_map, firaSans), 
+    map.get($font_families_sans_map, droidSans), 
+    map.get($font_families_sans_map, helveticaSafe), 
+    map.get($font_families_sans_map, segoeUI),   
+    map.get($font_families_sans_map, verdana),
+    map.get($font_families_sans_map, tahoma),
+    map.get($font_families_sans_map, lucidaGrande),
+    map.get($font_families_sans_map, trebuchetMS),
+    map.get($font_families_sans_map, sansSerif)
 ; 
 
 $font_families_sans_list_fallback:
     Arial,
     Roboto,
-    map-get($font_families_sans_map, sanFrancisco),
-    map-get($font_families_sans_map, blinkMacSystemFont),
-    map-get($font_families_sans_map, oxygen), 
-    map-get($font_families_sans_map, ubuntu), 
-    map-get($font_families_sans_map, cantarell), 
-    map-get($font_families_sans_map, firaSans), 
-    map-get($font_families_sans_map, droidSans), 
-    map-get($font_families_sans_map, helveticaSafe), 
-    map-get($font_families_sans_map, segoeUI),   
-    map-get($font_families_sans_map, verdana),
-    map-get($font_families_sans_map, tahoma),
-    map-get($font_families_sans_map, lucidaGrande),
-    map-get($font_families_sans_map, trebuchetMS),
-    map-get($font_families_sans_map, sansSerif)
+    map.get($font_families_sans_map, sanFrancisco),
+    map.get($font_families_sans_map, blinkMacSystemFont),
+    map.get($font_families_sans_map, oxygen), 
+    map.get($font_families_sans_map, ubuntu), 
+    map.get($font_families_sans_map, cantarell), 
+    map.get($font_families_sans_map, firaSans), 
+    map.get($font_families_sans_map, droidSans), 
+    map.get($font_families_sans_map, helveticaSafe), 
+    map.get($font_families_sans_map, segoeUI),   
+    map.get($font_families_sans_map, verdana),
+    map.get($font_families_sans_map, tahoma),
+    map.get($font_families_sans_map, lucidaGrande),
+    map.get($font_families_sans_map, trebuchetMS),
+    map.get($font_families_sans_map, sansSerif)
 ; 
 
-$sanFrancisco:          map-get($font_families_sans_map, sanFrancisco);
-$blinkMacSystemFont:    map-get($font_families_sans_map, blinkMacSystemFont);   
-$oxygen:                map-get($font_families_sans_map, oxygen);   
-$ubuntu:                map-get($font_families_sans_map, ubuntu);   
-$cantarell:             map-get($font_families_sans_map, cantarell);   
-$firaSans:              map-get($font_families_sans_map, firaSans);    
-$droidSans:             map-get($font_families_sans_map, droidSans);   
-$segoeUI:               map-get($font_families_sans_map, segoeUI);   
-$verdana:               map-get($font_families_sans_map, verdana);
-$tahoma:                map-get($font_families_sans_map, tahoma);
-$lucidaGrande:          map-get($font_families_sans_map, lucidaGrande);
-$trebuchetMS:           map-get($font_families_sans_map, trebuchetMS);
+$sanFrancisco:          map.get($font_families_sans_map, sanFrancisco);
+$blinkMacSystemFont:    map.get($font_families_sans_map, blinkMacSystemFont);   
+$oxygen:                map.get($font_families_sans_map, oxygen);   
+$ubuntu:                map.get($font_families_sans_map, ubuntu);   
+$cantarell:             map.get($font_families_sans_map, cantarell);   
+$firaSans:              map.get($font_families_sans_map, firaSans);    
+$droidSans:             map.get($font_families_sans_map, droidSans);   
+$segoeUI:               map.get($font_families_sans_map, segoeUI);   
+$verdana:               map.get($font_families_sans_map, verdana);
+$tahoma:                map.get($font_families_sans_map, tahoma);
+$lucidaGrande:          map.get($font_families_sans_map, lucidaGrande);
+$trebuchetMS:           map.get($font_families_sans_map, trebuchetMS);
 
 
 /* // Serif ----------------------------------------------------------------- */
@@ -124,21 +126,21 @@ $font_families_serif_map:(
 );
     
 $font_families_serif_list: 
-    map-get($font_families_serif_map, georgia),
-    map-get($font_families_serif_map, palatino),
-    map-get($font_families_serif_map, serif)
+    map.get($font_families_serif_map, georgia),
+    map.get($font_families_serif_map, palatino),
+    map.get($font_families_serif_map, serif)
 ;
     
 $font_families_serif_list_fallback:
     'Times New Roman',
-    map-get($font_families_serif_map, georgia),
-    map-get($font_families_serif_map, palatino),
-    map-get($font_families_serif_map, serif)
+    map.get($font_families_serif_map, georgia),
+    map.get($font_families_serif_map, palatino),
+    map.get($font_families_serif_map, serif)
 ;
 
-$georgia:   map-get($font_families_serif_map, georgia);
-$palatino:  map-get($font_families_serif_map, palatino);
-$serif:     map-get($font_families_serif_map, serif);
+$georgia:   map.get($font_families_serif_map, georgia);
+$palatino:  map.get($font_families_serif_map, palatino);
+$serif:     map.get($font_families_serif_map, serif);
     
 
 /* // Monoespaciadas -------------------------------------------------------- */
@@ -153,32 +155,32 @@ $font_families_monospaced_map:(
 );
     
 $font_families_monospaced_list:
-    map-get($font_families_monospaced_map, consolas),    
-    map-get($font_families_monospaced_map, andaleMono),
-    map-get($font_families_monospaced_map, lucidaConsole),
-    map-get($font_families_monospaced_map, menlo),
-    map-get($font_families_monospaced_map, bitstreamVeraSansMono),
-    map-get($font_families_monospaced_map, courierNew),
-    map-get($font_families_monospaced_map, monospace)
+    map.get($font_families_monospaced_map, consolas),    
+    map.get($font_families_monospaced_map, andaleMono),
+    map.get($font_families_monospaced_map, lucidaConsole),
+    map.get($font_families_monospaced_map, menlo),
+    map.get($font_families_monospaced_map, bitstreamVeraSansMono),
+    map.get($font_families_monospaced_map, courierNew),
+    map.get($font_families_monospaced_map, monospace)
 ;
     
 $font_families_monospaced_list_fallback:
-    map-get($font_families_monospaced_map, consolas),    
-    map-get($font_families_monospaced_map, andaleMono),
-    map-get($font_families_monospaced_map, lucidaConsole),
-    map-get($font_families_monospaced_map, menlo),
-    map-get($font_families_monospaced_map, bitstreamVeraSansMono),
-    map-get($font_families_monospaced_map, courierNew),
-    map-get($font_families_monospaced_map, monospace)
+    map.get($font_families_monospaced_map, consolas),    
+    map.get($font_families_monospaced_map, andaleMono),
+    map.get($font_families_monospaced_map, lucidaConsole),
+    map.get($font_families_monospaced_map, menlo),
+    map.get($font_families_monospaced_map, bitstreamVeraSansMono),
+    map.get($font_families_monospaced_map, courierNew),
+    map.get($font_families_monospaced_map, monospace)
 ;
 
-$consolas:                  map-get($font_families_monospaced_map, consolas);
-$andaleMono:                map-get($font_families_monospaced_map, andaleMono);
-$lucidaConsole:             map-get($font_families_monospaced_map, lucidaConsole);
-$menlo:                     map-get($font_families_monospaced_map, menlo);
-$bitstreamVeraSansMono:     map-get($font_families_monospaced_map, bitstreamVeraSansMono);
-$courierNew:                map-get($font_families_monospaced_map, courierNew);
-$monospace:                 map-get($font_families_monospaced_map, monospace);
+$consolas:                  map.get($font_families_monospaced_map, consolas);
+$andaleMono:                map.get($font_families_monospaced_map, andaleMono);
+$lucidaConsole:             map.get($font_families_monospaced_map, lucidaConsole);
+$menlo:                     map.get($font_families_monospaced_map, menlo);
+$bitstreamVeraSansMono:     map.get($font_families_monospaced_map, bitstreamVeraSansMono);
+$courierNew:                map.get($font_families_monospaced_map, courierNew);
+$monospace:                 map.get($font_families_monospaced_map, monospace);
 
 /* // Font Sizes ------------------------------------------------------------ */
 $h1_list: 'h1, .heading1';

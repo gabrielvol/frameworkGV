@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Scrollbar Styles | Custom [/etc/css/custom/scrollbar.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .scrollbar::-webkit-scrollbar{
   width: 12px;
   background-color: #eff1f5;

@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @if $nav_drawer_act == "on"{
     @include beforeMQ350{
         .nav_main{

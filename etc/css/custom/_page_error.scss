@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Page Error Styles | Custom [/etc/css/custom/page_error.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .page_error{
     min-height: 50vh;
     padding-top: 30px;

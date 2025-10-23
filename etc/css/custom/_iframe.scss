@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    iframe Styles | Custom [/etc/css/custom/iframe.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .iframe_video_mask,
 .iframe_map_mask{
     @include borderStyle($bdGreyL);
