@@ -2,6 +2,8 @@
    Elements Reset/Settings | Etc [/etc/css/scss/reset_main.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

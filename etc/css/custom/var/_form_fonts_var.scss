@@ -2,6 +2,9 @@
    Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts_var.scss]
    ========================================================================== */
 
+@use  "text_var" as *;
+@use  "fonts_main_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Referencias globales de nombres de variables y mixins ----------------- */

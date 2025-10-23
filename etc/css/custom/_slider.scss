@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Slider Styles | Custom [/etc/css/custom/slider.scss]
    ========================================================================== */
+@use "act/slider_act" as *;
+
 @use "var/env_var" as *;
 @use "../scss/var_all" as *;
 

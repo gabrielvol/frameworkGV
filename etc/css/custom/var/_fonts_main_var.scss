@@ -2,6 +2,8 @@
    Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
    ========================================================================== */
 
+@use "../../scss/var_fonts" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

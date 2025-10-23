@@ -2,6 +2,8 @@
    Transition Mixins | Etc [/etc/css/scss/mixinsTransitions.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

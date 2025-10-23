@@ -2,6 +2,8 @@
    Clip Paths Mixins | Etc [/etc/css/scss/mixinsClipPath.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

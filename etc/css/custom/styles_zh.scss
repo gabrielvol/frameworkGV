@@ -4,44 +4,44 @@
 @use "sass:color";
 @use "sass:map";
 
-@import "../scss/charset";
-@import "var/env_var";
+//@import "../scss/charset";
+//@import "var/env_var";
 
-@import "../scss/var_fonts";
-@import "var/fonts_main_zh_var";
-@import "var/text_zh_var";
-@import "fontFace_zh";
+//@import "../scss/var_fonts";
+//@import "var/fonts_main_zh_var";
+//@import "var/text_zh_var";
+//@import "fontFace_zh";
 
 @use "../scss/var_all_pre" as *;
 
 /* // Main CSS -------------------------------------------------------------- */
-@import "../scss/settings_html_body";
-@import "body";
-@import "../scss/reset_main";
-@import "reset_custom";
+//@import "../scss/settings_html_body";
+//@import "body";
+//@import "../scss/reset_main";
+//@import "reset_custom";
 
-@import "colours_gradients";
+//@import "colours_gradients";
 
-@import "../scss/settings_text";
-@import "text";
-@import "classes_text"; 
+//@import "../scss/settings_text";
+//@import "text";
+//@import "classes_text"; 
 
-@import "includes_backgrounds";
-@import "classes_backgrounds";
-@import "shadows";
+//@import "includes_backgrounds";
+//@import "classes_backgrounds";
+//@import "shadows";
 
-@import "../scss/classes_useful_all";
-@import "../scss/classes_useful_responsive";
+//@import "../scss/classes_useful_all";
+//@import "../scss/classes_useful_responsive";
 
-@import "../scss/settings_container";
+//@import "../scss/settings_container";
 
 //@use "print";
 
-@import "global";
-@import "lists";
-@import "buttons";
-@import "hover";
-@import "focus";
+//@import "global";
+//@import "lists";
+//@import "buttons";
+//@import "hover";
+//@import "focus";
 //@use "scrollbar";
 //@use "breadcrumbs";
 //@use "iframe";
@@ -49,28 +49,28 @@
 //@use "animation";
 //@use "animation_index";
 
-@import "../scss/settings_form";
-@import "form";
+//@import "../scss/settings_form";
+//@import "form";
 //@use "form_search";
 //@use "form_checkbox";
 
 //@use "../scss/settings_tables";
 //@use "tables";
 
-@import "popup";
+//@import "popup";
 
-@import "header";
+//@import "header";
 //@use "social";
-@import "footer";
+//@import "footer";
 
-@import "../scss/settings_nav";
-@import "../scss/settings_nav_drawer";
-@import "../scss/settings_nav_accordion";
-@import "nav_main_drawer";
-@import "nav_main_accordion";
-@import "nav_main_list";
-@import "nav_main_AT";
-@import "nav_main_ALL";
+//@import "../scss/settings_nav";
+//@import "../scss/settings_nav_drawer";
+//@import "../scss/settings_nav_accordion";
+//@import "nav_main_drawer";
+//@import "nav_main_accordion";
+//@import "nav_main_list";
+//@import "nav_main_AT";
+//@import "nav_main_ALL";
 //@use "nav_lang";
 //@use "nav_lang_square";
 
