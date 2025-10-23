@@ -1,6 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Slider Nav Styles | Custom [/etc/css/custom/slider_nav.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 .slick_nav{

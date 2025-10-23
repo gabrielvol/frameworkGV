@@ -2,6 +2,9 @@
    Shadows Classes | Custom [/etc/css/custom/shadows.scss]
    ========================================================================== */
 
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

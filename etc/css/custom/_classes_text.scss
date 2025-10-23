@@ -1,6 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 .txBold{    

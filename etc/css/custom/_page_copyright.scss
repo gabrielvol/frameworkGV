@@ -1,6 +1,9 @@
 /* * NombreDeProyecto * ========================================================
    Page Copyright Styles | Custom [/etc/css/custom/page_copyright.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 @use "sass:color";
 @use "sass:map";
 .page_copyright{
