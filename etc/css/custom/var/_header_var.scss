@@ -2,6 +2,8 @@
    Header Variables | Custom [/etc/css/custom/var/header_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
 @use  "logo_sizes_var" as *;
 
 @use "sass:color";

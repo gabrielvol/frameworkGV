@@ -2,6 +2,11 @@
    Page Gracias Styles | Custom [/etc/css/custom/page_gracias.scss]
    ========================================================================== */
 @use "var/env_var" as *;
+@use "var/colours_main_var" as *;
+@use "var/colours_borders_var" as *;
+@use "var/colours_backgrounds_var" as *;
+@use "var/page_gracias_var" as *;
+
 @use "../scss/var_all" as *;
 
 @use "sass:color";

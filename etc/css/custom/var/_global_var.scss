@@ -2,6 +2,8 @@
    Global Variables | Custom [/etc/css/custom/var/global_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

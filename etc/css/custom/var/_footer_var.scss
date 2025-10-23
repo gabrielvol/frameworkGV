@@ -2,6 +2,8 @@
    Footer Variables | Custom [/etc/css/custom/var/footer_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
 @use "colours_main_var" as *;
 @use "colours_borders_var" as *;
 @use "colours_backgrounds_var" as *;
