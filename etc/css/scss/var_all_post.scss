@@ -2,6 +2,7 @@
    CSS Styles Post | Custom [/etc/css/custom/var_all_post.scss]
    ========================================================================== */
 
+@use "var_all" as *;
 @use "../custom/var/env_var" as *;
 
 @use "sass:color";

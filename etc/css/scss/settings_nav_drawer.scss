@@ -2,6 +2,7 @@
    Nav Drawer Settings | Etc [/etc/css/scss/settings_nav_drawer.scss]
    ========================================================================== */
 
+@use "var_all" as *;
 @use "../custom/act/nav_main_act" as *;
 @use "../custom/var/env_var" as *;
 

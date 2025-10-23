@@ -2,6 +2,7 @@
    Mixins Container | Etc [/etc/css/scss/mixins_container.scss]
    ========================================================================== */
 
+@use "var_all" as *;
 @use "../custom/var/container_sizes_var" as *;
 @use "../custom/var/env_var" as *;
 

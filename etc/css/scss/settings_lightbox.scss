@@ -2,6 +2,7 @@
    Lightbox Settings | Etc [/etc/css/scss/settings_lightbox.scss]
    ========================================================================== */
 
+@use "var_all" as *;
 @use "../custom/var/env_var" as *;
 
 @use "sass:color";
