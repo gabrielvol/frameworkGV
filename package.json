@@ -1,6 +1,6 @@
 {
-  "name": "frameworkgv",
-  "version": "3.5.0",
+  "name": "Lunarpunk",
+  "version": "1.0.0",
   "description": "Framework de Gabriel Volonte",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/gabrielvol/frameworkGV.git"
   },
-  "homepage": "https://github.com/gabrielvol/frameworkGV#readme",
+  "homepage": "https://github.com/gabrielvol/frameworkGV/blob/main/README.md",
   "author": "Gabriel Volonte",
   "mail": "tampas@gmail.com",
   "license": "ISC",
@@ -17,31 +17,22 @@
     "url": "https://github.com/gabrielvol/frameworkGV/issues",
     "mail": "tampas@gmail.com"
   },
-  "devDependencies": {
-    "gulp": "4.0.2",
-    "gulp-sass": "5.1.0",
-    "gulp-postcss": "latest",
-    "postcss": "latest",
-    "autoprefixer": "latest",
-    "cssnano": "latest"
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "start": "gulp watch"
   },
-  "dependencies": {
-    "css-what": "^6.1.0",
-    "glob-parent": "^6.0.2",
-    "is-svg": "^4.4.0",
-    "set-value": ">=4.0.1",
-    "tar": "^6.1.13",
-    "trim-newlines": ">=3.0.1",
-    "yargs-parser": "^21.1.1"
-  },
-  "gulp-postcss": {
-    "parser": "sugarss",
-    "map": false,
-    "plugins": {
-      "autoprefixer": {},
-      "cssnano": {}
-    }
-  },
+    "devDependencies": {
+      "gulp": "^4.0.2",
+      "sass": "^1.77.0",
+      "gulp-dart-sass": "^1.1.0",
+      "gulp-postcss": "^10.0.0",
+      "postcss": "^8.4.0",
+      "autoprefixer": "^10.4.0",
+      "cssnano": "^6.0.0",
+      "gulp-sourcemaps": "^3.0.0",
+      "fancy-log": "^2.0.0"
+    },
   "browserslist": [
     "defaults"
   ]
