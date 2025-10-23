@@ -13,80 +13,81 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 @use "sass:color";
 @use "sass:map";
-@import "../scss/charset";
-@import "var/env_var";
 
-@import "../scss/var_fonts";
-@import "var/fonts_main_var";
-@import "var/text_var";
-@import "fontFace";
+@use "../scss/charset" as *;
+@use "var/env_var" as *;
 
-@import "css_pre";
+@use "../scss/var_fonts" as *;
+@use "var/fonts_main_var" as *;
+@use "var/text_var" as *;
+@use "fontFace" as *;
+
+@use "css_pre" as *;
 
 /* // Main CSS -------------------------------------------------------------- */
-//@import "../scss/settings_html_body";
-//@import "body";
-//@import "../scss/reset_main";
-//@import "reset_custom";
+//@use "../scss/settings_html_body" as *;
+//@use "body" as *;
+//@use "../scss/reset_main" as *;
+//@use "reset_custom" as *;
 
-//@import "../scss/settings_text";
-//@import "text";
-//@import "classes_text"; 
+//@use "colours_gradients" as *;
 
-//@import "colours_gradients";
+//@use "../scss/settings_text" as *;
+//@use "text" as *;
+//@use "classes_text" as *; 
 
-//@import "includes_backgrounds";
-//@import "classes_backgrounds";
-//@import "shadows";
+//@use "includes_backgrounds" as *;
+//@use "classes_backgrounds" as *;
+//@use "shadows" as *;
 
-//@import "../scss/classes_useful_all";
-//@import "../scss/classes_useful_responsive";
+//@use "../scss/classes_useful_all" as *;
+//@use "../scss/classes_useful_responsive" as *;
 
-//@import "../scss/settings_container";
+//@use "../scss/settings_container" as *;
 
-//@import "print";
+//@use "print" as *;
 
-//@import "global";
-//@import "lists";
-//@import "buttons";
-//@import "hover";
-//@import "focus";
-//@import "scrollbar";
-//@import "breadcrumbs";
-//@import "iframe";
+//@use "global" as *;
+//@use "lists" as *;
+//@use "buttons" as *;
+//@use "hover" as *;
+//@use "focus" as *;
+//@use "scrollbar" as *;
+//@use "breadcrumbs" as *;
+//@use "iframe" as *;
 
-//@import "animation";
-//@import "animation_index";
+//@use "animation" as *;
+//@use "animation_index" as *;
 
-//@import "../scss/settings_form";
-//@import "form";
-//@import "form_search";
-//@import "form_checkbox";
+//@use "../scss/settings_form" as *;
+//@use "form" as *;
+//@use "form_search" as *;
+//@use "form_checkbox" as *;
 
-//@import "../scss/settings_tables";
-//@import "tables";
+//@use "../scss/settings_tables" as *;
+//@use "tables" as *;
 
-//@import "popup";
+//@use "popup" as *;
 
-//@import "header";
-//@import "social";
-//@import "footer";
+//@use "header" as *;
+//@use "social" as *;
+//@use "footer" as *;
 
-//@import "../scss/settings_nav";
-//@import "../scss/settings_nav_drawer";
-//@import "../scss/settings_nav_accordion";
-//@import "nav_main_drawer";
-//@import "nav_main_accordion";
-//@import "nav_main_list";
-//@import "nav_main_AT";
-//@import "nav_main_ALL";
-//@import "nav_lang";
-//@import "nav_lang_square";
+//@use "../scss/settings_nav" as *;
+//@use "../scss/settings_nav_drawer" as *;
+//@use "../scss/settings_nav_accordion" as *;
+//@use "nav_main_drawer" as *;
+//@use "nav_main_accordion" as *;
+//@use "nav_main_list" as *;
+//@use "nav_main_AT" as *;
+//@use "nav_main_ALL" as *;
+//@use "nav_lang" as *;
+//@use "nav_lang_square" as *;
 
-//@import "slider";
-//@import "slider_nav";
+//@use "slider" as *;
+//@use "slider_nav" as *;
 
-@import "wp_styles";
+//@use "wp_styles" as *;
 
 /* // Post ------------------------------------------------------------------ */
-@import "css_post";
+//@use "css_post" as *;

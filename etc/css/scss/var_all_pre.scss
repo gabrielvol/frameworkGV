@@ -1,0 +1,150 @@
+/* * NombreDeProyecto * ========================================================
+   CSS Styles Pre | Custom [/etc/css/custom/var_all_pre.scss]
+   ========================================================================== */
+
+/* // Descripcion ----------------------------------------------------------- */
+// Archivo de asignacion de variables.
+
+
+
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+///-- Inicio del nombre
+// bd                   = borde
+// bg                   = fondo / background
+// bx                   = box
+// ft                   = fuente
+// mq, MQ               = media query @media
+// tx                   = texto
+
+///-- Fin del nombre
+// _mx                  = mixin
+// _act                 = activacion
+// _ani                 = animacion
+// _hs                  = hash
+// _hover               = se usa con pseudoclases :focus y :hover
+// _before              = se usa con pseudoelementos ::before
+// _after               = se usa con pseudoelementos ::after
+
+///-- Espaciado
+// P, M                 = padding, margin
+// T, R, B, L           = top, right, bottom, left
+// H, V, A, X           = horizontal, vertical, all, custom defined
+
+///-- Tamanos de Pantalla
+// T                    = tablet
+// B, A, O, L           = before, after, only, landscape
+
+///-- Colores
+// X, L, D              = extra, light, dark
+// De, S, B             = desaturated, semi, bright
+
+///-- Fuentes
+// T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
+// X, S, U, C, I        = extra, semi, ultra, condensed, italic
+
+
+           
+/* // Activators ------------------------------------------------------------ */
+@forward "../custom/act/classes_useful_act";
+@forward "../custom/act/logo_act";
+@forward "../custom/act/buttons_act";
+@forward "../custom/act/form_act";
+@forward "../custom/act/slider_act";
+@forward "../custom/act/fonts_act";
+@forward "../custom/act/text_act";
+@forward "../custom/act/google_act";
+
+@forward "../custom/act/header_act";
+@forward "../custom/act/nav_main_act";
+@forward "../custom/act/nav_lang_act";
+@forward "../custom/act/footer_act";
+
+@forward "../custom/act/page_index_act";
+@forward "../custom/act/page_section_act";
+
+/* // Variables / Mixins ---------------------------------------------------- */
+@forward "var_absolute";
+@forward "mixins_clearfix";
+
+@forward "../custom/var/zindex_var";
+@forward "../custom/var/container_sizes_var";
+@forward "var_container";
+@forward "../custom/var/helpers_var";
+@forward "mixins_container";
+ 
+@forward "../custom/var/colours_main_var";
+@forward "../custom/var/colours_borders_var";
+@forward "../custom/var/colours_backgrounds_var";
+@forward "../custom/var/shadows_var";
+
+@forward "../custom/var/text_colours_var";
+
+@forward "../custom/var/button_nav_hamburger_var";
+@forward "../custom/var/logo_sizes_var";
+@forward "../custom/var/header_var";
+
+@forward "../custom/var/nav_colours_var";
+@forward "../custom/var/nav_arrows_var";
+@forward "../custom/var/nav_fonts_var";
+@forward "../custom/var/nav_sizes_var";
+@forward "../custom/var/nav_lang_var";
+
+@forward "../custom/var/lists_var";
+@forward "../custom/var/buttons_var";
+@forward "../custom/var/hover_var";
+@forward "../custom/var/animation_var";
+@forward "../custom/var/social_var";
+@forward "../custom/var/popup_var";
+@forward "../custom/var/slider_var";
+@forward "../custom/var/video_var";
+
+@forward "../custom/var/footer_var";
+
+@forward "../custom/var/form_colours_var";
+@forward "../custom/var/form_fonts_var";
+@forward "../custom/var/form_sizes_var";
+
+@forward "../custom/var/tables_var";
+@forward "../custom/var/tables_colours_var";
+
+@forward "../custom/var/mediaQueries_var";
+
+@forward "../custom/var/global_var";
+@forward "../custom/var/page_construccion_var";
+@forward "../custom/var/page_index_var";
+//@forward "../custom/var/section";
+//@forward "../custom/var/section";
+//@forward "../custom/var/section";
+//@forward "../custom/var/section _var";
+//@forward "../custom/var/section _var";
+//@forward "../custom/var/section _var";
+//@forward "../custom/var/page_ section _var";
+//@forward "../custom/var/page_ section _var";
+//@forward "../custom/var/page_ section _var";
+//@forward "../custom/var/page-xxx-var";
+//@forward "../custom/var/page-xxx-var";
+//@forward "../custom/var/page-xxx-var";
+@forward "../custom/var/page_contacto_var";
+
+//@forward "../custom/var/lightbox_var"; // REF [26] Ligthbox
+
+/* // Mixins ---------------------------------------------------------------- */
+@forward "../custom/mediaQueries_mx";
+@forward "mixins_sizes";
+@forward "mixins_backgrounds";
+@forward "mixins_masks";
+@forward "mixins_clipPath";
+@forward "mixins_transitions";
+@forward "mixins_opacity";
+@forward "mixins_fonts";
+@forward "mixins_text";
+@forward "mixins_colours";
+@forward "mixins_center";
+@forward "mixins_spacing";
+@forward "mixins_borders";
+@forward "mixins_positions";
+@forward "mixins_tables_sizes";
+
+/* // Functions ------------------------------------------------------------- */
+@forward "functions_angledEdges";
+@forward "functions_fontStroke";
