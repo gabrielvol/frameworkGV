@@ -2,6 +2,8 @@
    Font Variables | Etc [/etc/css/scss/var_fonts.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

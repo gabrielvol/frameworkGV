@@ -2,6 +2,8 @@
    Media Queries Mixins | Custom [/etc/css/custom/mediaQueries_mx.scss]
    ========================================================================== */
 
+@use "var/mediaQueries_var" as *;
+
 @use "var/env_var" as *;
 
 @use "sass:color";

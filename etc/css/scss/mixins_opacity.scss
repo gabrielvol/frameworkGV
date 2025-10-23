@@ -2,6 +2,8 @@
    Opacity Mixins | Etc [/etc/css/scss/mixinsOpacity.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

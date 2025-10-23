@@ -2,6 +2,8 @@
    Nav Fonts Variables | Custom [/etc/css/custom/var/nav_fonts_var.scss]
    ========================================================================== */
 
+@use "fonts_main_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

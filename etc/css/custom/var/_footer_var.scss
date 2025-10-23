@@ -2,6 +2,11 @@
    Footer Variables | Custom [/etc/css/custom/var/footer_var.scss]
    ========================================================================== */
 
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+@use "social_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Full heights Footer --------------------------------------------------- */

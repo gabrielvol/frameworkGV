@@ -2,6 +2,9 @@
    Tables Variables | Custom [/etc/css/custom/var/tables.scss]
    ========================================================================== */
 
+@use "../scss/var_absolute" as *;
+@use  "helpers_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

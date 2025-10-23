@@ -2,6 +2,12 @@
    Text Variables | Custom [/etc/css/custom/var/text_var.scss]
    ========================================================================== */
 
+@use "../../scss/var_fonts" as *;
+@use  "fonts_main_var" as *;
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */

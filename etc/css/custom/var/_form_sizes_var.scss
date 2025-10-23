@@ -2,6 +2,9 @@
    Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes_var.scss]
    ========================================================================== */
 
+@use  "text_var" as *;
+@use "../scss/var_absolute" as *;
+
 @use "sass:color";
 @use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
