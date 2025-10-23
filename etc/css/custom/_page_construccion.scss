@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Page Construccion Styles | Custom [/etc/css/custom/page_construccion.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .page_construccion{
     min-height: 400px;
     padding-bottom: 50px;

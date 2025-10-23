@@ -1,5 +1,7 @@
 /* * NombreDeProyecto * ========================================================
    Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @include backgroundColourClassesGenerator;
 @include backgroundColourHoverClassesGenerator;

@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Page Copyright Styles | Custom [/etc/css/custom/page_copyright.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .page_copyright{
     padding-bottom: 100px;
     

@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Slider Nav Styles | Custom [/etc/css/custom/slider_nav.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .slick_nav{
     .slick-list{
         margin-right: $auto;

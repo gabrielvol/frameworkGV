@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Language Switch Styles | Custom [/etc/css/custom/nav_lang.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .nav_lang_ul{
     z-index: $zIndex_nav_lang_ul;
     

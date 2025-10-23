@@ -2,6 +2,8 @@
    Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_zh_var.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de fuentes.
 // Contiene mapas de fuentes.
@@ -56,7 +58,7 @@ $font_families_map:(
 //
 // También se usa para asignar valor a la variable de cada fuente.
 // Ej.
-// $timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
+// $timesNewRoman: map.get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 // font-family: $timesNewRoman;
 
     arial:          'mingliuregular',
@@ -83,9 +85,9 @@ $font_weights_map:(
 // `ftFamily_` regular y bold
 // REF [46] Fuentes Regular y Bold
 
-$arial:         map-get($font_families_map, arial);
-$roboto:        map-get($font_families_map, roboto);
-//$timesNewRoman: map-get($font_families_map, timesNewRoman);
-//$monospacedFont: map-get($font_families_map, monospacedFont);
-//$ming:              map-get($font_families_map, ming); // REF [14a]
-//$pming:             map-get($font_families_map, pming); // REF [14a]
+$arial:         map.get($font_families_map, arial);
+$roboto:        map.get($font_families_map, roboto);
+//$timesNewRoman: map.get($font_families_map, timesNewRoman);
+//$monospacedFont: map.get($font_families_map, monospacedFont);
+//$ming:              map.get($font_families_map, ming); // REF [14a]
+//$pming:             map.get($font_families_map, pming); // REF [14a]

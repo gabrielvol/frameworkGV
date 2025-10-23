@@ -2,6 +2,8 @@
    CSS Styles Post | Custom [/etc/css/custom/css_post.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Post ------------------------------------------------------------------ */
 // REF [26]
 //@import "../scss/settings_lightbox";

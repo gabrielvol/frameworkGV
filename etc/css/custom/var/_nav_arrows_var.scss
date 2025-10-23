@@ -2,6 +2,8 @@
    Nav Arrows Backgrounds | Custom [/etc/css/custom/var/nav_arrows_var.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 $nav_arrows_TLI_level1_openDR:          "nav_arrow_down.svg";
 $nav_arrows_TLI_level2_openDR:          "nav_arrow_down.svg";
 $nav_arrows_TLI_level3_openDR:          "nav_arrow_down.svg";

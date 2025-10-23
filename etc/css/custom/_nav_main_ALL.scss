@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .nav_main_ul{
     li{
         a,

@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Print Styles | Custom [/etc/css/custom/print.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @media print {
     @page{
         margin: 2cm;

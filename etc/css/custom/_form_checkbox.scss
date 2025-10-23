@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Form Checkbox Accesible Styles | Custom [/etc/css/custom/form_checkbox.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @supports(-webkit-appearance: none) {
 /* 	AKA, only do this if `-webkit-appearance: none` is supported. 
         Which means IE11 and Opera Mini will get the old browser-styled checkbox. 

@@ -11,6 +11,8 @@ License:  GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
 */
 
+@use "sass:color";
+@use "sass:map";
 @import "../scss/charset";
 @import "var/env_var";
 

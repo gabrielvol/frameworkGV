@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    CSS Styles Main | Custom [/etc/css/custom/styles_zh.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @import "../scss/charset";
 @import "var/env_var";
 

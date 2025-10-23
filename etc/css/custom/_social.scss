@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Social Styles | Custom [/etc/css/custom/social.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .social{
     z-index: $zIndex_social;
         

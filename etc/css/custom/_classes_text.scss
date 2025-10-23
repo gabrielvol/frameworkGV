@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .txBold{    
     &,
     a,

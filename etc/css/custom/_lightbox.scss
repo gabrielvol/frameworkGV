@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Lightbox Styles | Custom [/etc/css/custom/lightbox.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 .lightboxOverlay{
     background-color: $black_rgba_80; // #444
 }

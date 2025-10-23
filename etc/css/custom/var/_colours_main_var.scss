@@ -2,6 +2,8 @@
    Colours Main Variables | Custom [/etc/css/custom/var/colours_main_var.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -95,10 +97,10 @@ $colours_dark_map:(
 );
 $colours_dark_lightenValue: 20%;
 
-$colours_merged_map: map-merge($colours_light_map, $colours_dark_map);
+$colours_merged_map: map.merge($colours_light_map, $colours_dark_map);
 
 $white:             #fff;
-$white_hover:       darken($white, 10%);
+$white_hover:       color.adjust($white, $lightness: -10%);
 $white_rgba:        rgb(255, 255, 255);
 $white_rgba_10:     rgba($white_rgba, 0.1);
 $white_rgba_20:     rgba($white_rgba, 0.2);
@@ -111,7 +113,7 @@ $white_rgba_80:     rgba($white_rgba, 0.8);
 $white_rgba_85:     rgba($white_rgba, 0.85);
 $white_rgba_90:     rgba($white_rgba, 0.9);
 
-$black:             map-get($colours_merged_map, black);
+$black:             map.get($colours_merged_map, black);
 $black_rgba:        rgb(0, 0, 0);
 $black_rgba_10:     rgba($black_rgba, 0.1);
 $black_rgba_20:     rgba($black_rgba, 0.2);
@@ -123,53 +125,53 @@ $black_rgba_70:     rgba($black_rgba, 0.7);
 $black_rgba_80:     rgba($black_rgba, 0.8);
 $black_rgba_90:     rgba($black_rgba, 0.9);
 
-//$errorColour4XL:    map-get($colours_merged_map, errorColour4XL);
-//$errorColourXL:    map-get($colours_merged_map, errorColourXL);
-$errorColour:       map-get($colours_merged_map, errorColour);
+//$errorColour4XL:    map.get($colours_merged_map, errorColour4XL);
+//$errorColourXL:    map.get($colours_merged_map, errorColourXL);
+$errorColour:       map.get($colours_merged_map, errorColour);
 $errorColour_rgba:      rgb(235, 28, 36);
 $errorColour_rgba_40:   rgba($errorColour_rgba, 0.4);
 $errorColour_rgba_70:   rgba($errorColour_rgba, 0.7);
 
-//$greenSystem4XL:    map-get($colours_merged_map, greenSystem4XL);
-//$greenSystem3XL:    map-get($colours_merged_map, greenSystem3XL);
-//$greenSystem2XL:    map-get($colours_merged_map, greenSystem2XL);
-//$greenSystemXL:     map-get($colours_merged_map, greenSystemXL);
-//$greenSystemL:      map-get($colours_merged_map, greenSystemL);
-$greenSystemM:      map-get($colours_merged_map, greenSystemM);
-//$greenSystemD:      map-get($colours_merged_map, greenSystemD);
+//$greenSystem4XL:    map.get($colours_merged_map, greenSystem4XL);
+//$greenSystem3XL:    map.get($colours_merged_map, greenSystem3XL);
+//$greenSystem2XL:    map.get($colours_merged_map, greenSystem2XL);
+//$greenSystemXL:     map.get($colours_merged_map, greenSystemXL);
+//$greenSystemL:      map.get($colours_merged_map, greenSystemL);
+$greenSystemM:      map.get($colours_merged_map, greenSystemM);
+//$greenSystemD:      map.get($colours_merged_map, greenSystemD);
 
-$greenWhatsApp:         map-get($colours_merged_map, greenWhatsApp);
-$greenWhatsApp_hover:   darken($greenWhatsApp, 5%);
+$greenWhatsApp:         map.get($colours_merged_map, greenWhatsApp);
+$greenWhatsApp_hover:   color.adjust($greenWhatsApp, $lightness: -5%);
 
-$grey5XL:           map-get($colours_merged_map, grey5XL);
-$grey4XL:           map-get($colours_merged_map, grey4XL);
-$grey3XL:           map-get($colours_merged_map, grey3XL);
+$grey5XL:           map.get($colours_merged_map, grey5XL);
+$grey4XL:           map.get($colours_merged_map, grey4XL);
+$grey3XL:           map.get($colours_merged_map, grey3XL);
 $grey3XL_rgba:      rgb(422, 242, 242);
 $grey3XL_rgba_70:   rgba($grey3XL_rgba, 0.7);
-$grey2XL:           map-get($colours_merged_map, grey2XL);
-$greyXL:            map-get($colours_merged_map, greyXL);
+$grey2XL:           map.get($colours_merged_map, grey2XL);
+$greyXL:            map.get($colours_merged_map, greyXL);
 $greyXL_rgba:       rgb(222, 222, 222);
 $greyXL_rgba_00:    rgba($greyXL_rgba, 0); // REF [16]
-$greyL:             map-get($colours_merged_map, greyL);
+$greyL:             map.get($colours_merged_map, greyL);
 $greyL_rgba:        rgb(178, 178, 178);
 $greyL_rgba_20:     rgba($greyL_rgba, 0.2);
 $greyL_rgba_50:     rgba($greyL_rgba, 0.5);
-$greyM:             map-get($colours_merged_map, greyM);
-$greyD:             map-get($colours_merged_map, greyD);
-$greyXD:            map-get($colours_merged_map, greyXD);
-$grey2XD:           map-get($colours_merged_map, grey2XD);
+$greyM:             map.get($colours_merged_map, greyM);
+$greyD:             map.get($colours_merged_map, greyD);
+$greyXD:            map.get($colours_merged_map, greyXD);
+$grey2XD:           map.get($colours_merged_map, grey2XD);
 $grey2XD_rgba:      rgb(51, 51, 51);
 $grey2XD_rgba_90:   rgba($grey2XD_rgba, 0.9);
-$grey3XD:           map-get($colours_merged_map, grey3XD);
-$grey4XD:           map-get($colours_merged_map, grey4XD);
-$grey5XD:           map-get($colours_merged_map, grey5XD);
+$grey3XD:           map.get($colours_merged_map, grey3XD);
+$grey4XD:           map.get($colours_merged_map, grey4XD);
+$grey5XD:           map.get($colours_merged_map, grey5XD);
 
-//$redColourM:        map-get($colours_merged_map, redColourM);
+//$redColourM:        map.get($colours_merged_map, redColourM);
 
-$statusInfo:     map-get($colours_merged_map, statusInfo);
-$statusOk:       map-get($colours_merged_map, statusOk);
-$statusWarning:  map-get($colours_merged_map, statusWarning);
-$statusError:    map-get($colours_merged_map, statusError);
+$statusInfo:     map.get($colours_merged_map, statusInfo);
+$statusOk:       map.get($colours_merged_map, statusOk);
+$statusWarning:  map.get($colours_merged_map, statusWarning);
+$statusError:    map.get($colours_merged_map, statusError);
 
 ///**Anchor Colours Light:** 
     ///Aquí se agregan los colores para las anclas dentro de un párrafo con color CLARO, de este mapa se creara una clase por cada color con el mixin **anchorColoursLightClassesGenerator** `[/etc/scss/coloursMixins.scss]`. Se creara el sig. CSS por cada color, eg.: `.white a{color: #fff}`. Generará las pseudo-clases `:active` y `:visited` con el mismo valor. Las pseudo-clases `:focus` y `:hover` aclararán el color con el porcentaje asignado en la variable `$colours_anchor_ftColours_light_lightenValue` debajo del mapa. 

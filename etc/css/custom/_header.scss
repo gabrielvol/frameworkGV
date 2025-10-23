@@ -2,6 +2,8 @@
    Header Styles | Custom [/etc/css/custom/header.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 // REF [15] Nav Fixed AT
 
 @import 'imp/header_fullHeight_imp';

@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Footer Styles | Custom [/etc/css/custom/footer.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 @import 'imp/footer_fullHeight_imp';
 
 #footer{

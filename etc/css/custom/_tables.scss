@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Tables Styles | Custom [/etc/css/custom/tables.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 table{
     th,
     tfoot td{

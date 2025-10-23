@@ -2,6 +2,8 @@
    Text Variables | Custom [/etc/css/custom/var/text_var.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de texto. Declaraciones de fuentes,
 // variables de pesos, interlinea, cuerpos tipograficos y espaciado general.

@@ -2,6 +2,8 @@
    Font-face | Custom [/etc/css/custom/fontFace_zh.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de reglas-at, @font-face para fuentes con alfabeto chino.
 
