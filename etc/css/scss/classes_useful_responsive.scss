@@ -2,6 +2,7 @@
    Useful Classes Responsive | Etc [/etc/css/scss/classes_useful_responsive.scss]
    ========================================================================== */
 
+@use "var_all" as *;
 @use "../custom/var/env_var" as *;
 
 @use "sass:color";
