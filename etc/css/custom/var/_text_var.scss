@@ -69,7 +69,8 @@ $ftFamily_bold_global:          $ftFamily_regular_global; /* // REF [01] Google 
 
 
 /* // Espaciado y cuerpo de texto ------------------------------------------- */
-$ftWeight_global:           400;
+$ftWeight_regular_global:   400;
+$ftWeight_bold_global:      700; /* // REF [01] Google fonts */
 $lineHeight_global:         calc(1ex / 0.32);
 
 $ftSize_global:             1rem;
