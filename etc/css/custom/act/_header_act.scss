@@ -2,8 +2,6 @@
    Header Activators | Custom [/etc/css/custom/act/header_act.scss]
    ========================================================================== */
 
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para Section Header.
 
@@ -123,12 +121,17 @@
     
 
 
-/* // Menu y logo ----------------------------------------------------------- */
-$header_logoNav_floated_act:                    off;      
+@use "sass:color";
+@use "sass:map";
 
-///-- Si se activa $header_logoNav_floated_flexbox_act_A768 el header debe tener un
+/* // Menu y logo ----------------------------------------------------------- */
+$header_logoNav_floated_act:                    off;
+
+
+/* // Menu y logo Flexbox --------------------------------------------------- */
+///-- Si se activa $header_logoNav_floated_flexbox_act el header debe tener un
 ///-- container, el que va a tener los estilos de la clase .displayFlex
-$header_logoNav_floated_flexbox_act_A768:         off;
+$header_logoNav_floated_flexbox_act_A768:       off;
 $header_logoNav_floated_flexbox_act_A1024:      off;
 $header_logoNav_floated_flexbox_act_A1100:      off;
 $header_logoNav_floated_flexbox_act_A1200:      off;

@@ -76,7 +76,7 @@ if(!empty($page_redirect)):
     $class_end_body      .= 'body_redirect ';
 endif;  
     
-$classes_body             = 'class="'. $class_ini_body . $page_body_classes . $class_end_body .'"';
+$classes_body             = 'class="' . $class_ini_body . $page_body_classes . $class_end_body . '"';
 
 /* // Header Classes -------------------------------------------------------- */
     $class_ini_header       = 'navDrawer_closed ';

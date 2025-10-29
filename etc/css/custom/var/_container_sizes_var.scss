@@ -2,10 +2,6 @@
    Container Sizes Variables | Custom [/etc/css/custom/var/container_sizes_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -60,6 +56,11 @@
 
 
              
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
 /* // Container Sizes ------------------------------------------------------- */
 $grid-gutter-width:                  30px;
 

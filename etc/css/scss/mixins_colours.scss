@@ -2,15 +2,6 @@
    Colour Mixins | Etc [/etc/css/scss/mixins_colours.scss]
    ========================================================================== */
 
-@use "../custom/act/buttons_act" as *;
-@use "../custom/act/form_act" as *;
-@use "../custom/var/colours_main_var" as *;
-@use "../custom/var/colours_borders_var" as *;
-@use "../custom/var/colours_backgrounds_var" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene los mixins para generar clases y selectores de colores.
 // Los mapas que se encuentran en `[/etc/css/custom/var/colours_main_var.scss]`.
@@ -149,6 +140,18 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/act/buttons_act" as *;
+@use "../custom/act/form_act" as *;
+
+@use "../custom/var/colours_main_var" as *;
+@use "../custom/var/colours_borders_var" as *;
+@use "../custom/var/colours_backgrounds_var" as *;
 
 @mixin colourLightClassesGenerator($colours_light_lightenValue){
     @each $colourLightClassesGeneratorMX_colourClassName, $colourLightClassesGeneratorMX_colourHexValue in $colours_light_map {

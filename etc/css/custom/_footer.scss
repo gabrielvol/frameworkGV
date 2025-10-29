@@ -1,11 +1,13 @@
 /* * NombreDeProyecto * ========================================================
    Footer Styles | Custom [/etc/css/custom/footer.scss]
    ========================================================================== */
-@use "var/env_var" as *;
-@use "../scss/var_all_pre" as *;
-
 @use "sass:color";
 @use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
 //@import 'imp/footer_fullHeight_imp';
 
 #footer{

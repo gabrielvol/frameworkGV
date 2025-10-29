@@ -2,12 +2,6 @@
    Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "colours_main_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 // Contiene mapas de colores.
@@ -53,6 +47,13 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
 
 $colours_backgrounds_map:(
 // Este mapa se usa con el mixin `backgroundColourClassesGenerator` que se

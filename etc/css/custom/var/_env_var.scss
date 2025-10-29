@@ -1,8 +1,6 @@
 /* * NombreDeProyecto * ========================================================
    Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
    ========================================================================== */
-@use "sass:color";
-@use "sass:map";
 $dir_env-altTest:          "/x/test";
 $dir_env-altStage:         "/x/stage";
 $dir_env-altProduccion:    "/x";

@@ -148,6 +148,8 @@ $greenWhatsApp_hover:   color.adjust($greenWhatsApp, $lightness: -5%);
 
 $grey5XL:           map.get($colours_merged_map, grey5XL);
 $grey4XL:           map.get($colours_merged_map, grey4XL);
+$grey4XL_rgba:      rgb(249, 249, 249);
+$grey4XL_rgba_70:   rgba($grey4XL_rgba, 0.7);
 $grey3XL:           map.get($colours_merged_map, grey3XL);
 $grey3XL_rgba:      rgb(422, 242, 242);
 $grey3XL_rgba_70:   rgba($grey3XL_rgba, 0.7);
