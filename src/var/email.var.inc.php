@@ -24,6 +24,12 @@ $site_email_VENTAS_mailto  = 'mailto:' . $site_email_VENTAS_address;
 $site_email_VENTAS_href    = 'href="' . $site_email_VENTAS_mailto . '"';
 $site_email_VENTAS_anchor  = '<a ' . $site_email_VENTAS_href . '>' . $site_email_VENTAS_address . '</a>';
 
+$site_email_INFO         = 'info';
+$site_email_INFO_address = $site_email_INFO . '@' . $domain_main;
+$site_email_INFO_mailto  = 'mailto:' . $site_email_INFO_address;
+$site_email_INFO_href    = 'href="' . $site_email_INFO_mailto . '"';
+$site_email_INFO_anchor  = '<a ' . $site_email_INFO_href . '>' . $site_email_INFO_address . '</a>';
+
 $site_email_EMAILA           = 'EMAILA';
 $site_email_EMAILA_address   = $site_email_EMAILA . '@' . $domain_main;
 $site_email_EMAILA_mailto    = 'mailto:' . $site_email_EMAILA_address;
