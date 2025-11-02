@@ -471,6 +471,16 @@ button{
             }
         }
 
+        @include afterMQ500{
+            &:focus,
+            &:focus-visible,
+            &:hover{
+                &::before{
+                    width: $button_whatsApp_before_width_A500;
+                }
+            }
+        }
+
         @include beforeMQ768{
             &.navDrawer_open{
                 &,
@@ -480,16 +490,6 @@ button{
                     &::before{
                         display: none;
                     }
-                }
-            }
-        }
-
-        @include afterMQ500{
-            &:focus,
-            &:focus-visible,
-            &:hover{
-                &::before{
-                    width: $button_whatsApp_before_width_A500;
                 }
             }
         }

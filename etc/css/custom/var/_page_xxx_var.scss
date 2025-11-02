@@ -2,15 +2,6 @@
    Page xxx Variables | Custom [/etc/css/custom/var/page_xxx_var.scss]
    ========================================================================== */
 
-@use "sass:color";
-@use "sass:map";
-
-@use "env_var" as *;
-
-@use "colours_main_var" as *;
-@use "colours_borders_var" as *;
-@use "colours_backgrounds_var" as *;
-
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -53,6 +44,15 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
 
 /* // xxx sizes ------------------------------------------------------------- */
 
