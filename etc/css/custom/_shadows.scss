@@ -44,6 +44,13 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
 .shadow_text{
     text-shadow: $txShadow_main;
 }

@@ -44,6 +44,15 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
 /*___ Background Shadow _________________*/
 $bgShadowT_img_url:     url('#{$dir_env}/img/bg_shadowT.png');
 $bgShadowB_img_url:     url('#{$dir_env}/img/bg_shadowB.png');

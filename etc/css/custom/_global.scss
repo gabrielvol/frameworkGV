@@ -44,9 +44,18 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "var/text_var" as *;
+
 /* // Main Gobal Styles ----------------------------------------------------- */
-@import 'imp/page_section_fullHeight_imp';
-@import 'imp/page_headerFixed_imp';
+//@import 'imp/page_section_fullHeight_imp';
+//@import 'imp/page_headerFixed_imp';
 
 #dev_window_width{
     /* // REF [48] Dev window width */
