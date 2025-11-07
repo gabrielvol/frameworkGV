@@ -70,7 +70,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/meta.openGraph.var.inc.php');   
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/head.inc.php');
 ?>
-<body id="body" class="<?php echo $classes_body; ?>">
+<body id="body" <?php echo $classes_body; ?>>
     <?php
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php');
         include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.send.inc.php');

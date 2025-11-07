@@ -46,10 +46,20 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "var_all_pre" as *;
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/var/fonts_main_var" as *;
+@use "../custom/var/text_var" as *;
+
 /* // General --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
     font-family: $ftFamily_regular_global;
-    font-weight: $ftWeight_global;
+    font-weight: $ftWeight_regular_global;
     font-size: $ftSize_global;
     line-height: $lineHeight_global;
     font-style: normal;

@@ -44,6 +44,18 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "act/buttons_act" as *;
+
+@use "var/fonts_main_var" as *;
+@use "var/text_var" as *;
+
 /* // Reset ----------------------------------------------------------------- */
 button,
 input[type="button"],
@@ -459,6 +471,16 @@ button{
             }
         }
 
+        @include afterMQ500{
+            &:focus,
+            &:focus-visible,
+            &:hover{
+                &::before{
+                    width: $button_whatsApp_before_width_A500;
+                }
+            }
+        }
+
         @include beforeMQ768{
             &.navDrawer_open{
                 &,
@@ -468,16 +490,6 @@ button{
                     &::before{
                         display: none;
                     }
-                }
-            }
-        }
-
-        @include afterMQ500{
-            &:focus,
-            &:focus-visible,
-            &:hover{
-                &::before{
-                    width: $button_whatsApp_before_width_A500;
                 }
             }
         }

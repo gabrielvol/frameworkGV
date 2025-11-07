@@ -2,6 +2,10 @@
    Sizes Mixins | Etc [/etc/css/scss/mixinsSizes.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de mixins.
 

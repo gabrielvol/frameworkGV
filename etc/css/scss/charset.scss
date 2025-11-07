@@ -1,1 +1,5 @@
+@use "../custom/var/env_var" as *;
+
 @charset "UTF-8";
+@use "sass:color";
+@use "sass:map";

@@ -1,6 +1,14 @@
 /* * NombreDeProyecto * ========================================================
    Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "act/nav_main_act" as *;
+@use "../scss/var_all_pre" as *;
+
 @if $nav_drawer_act == "on"{
     @include beforeMQ350{
         .nav_main{
@@ -91,6 +99,7 @@
                 background-size: 100%;
                 border: 1px solid $button_hamb_close_bdColour!important;
                 padding: $zero;
+                margin-top: $zero;
                 text-indent: -9999px;
                 overflow: hidden;
                 

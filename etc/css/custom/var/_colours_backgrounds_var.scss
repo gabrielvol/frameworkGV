@@ -48,6 +48,13 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+
 $colours_backgrounds_map:(
 // Este mapa se usa con el mixin `backgroundColourClassesGenerator` que se
 // encuentra en `[/etc/css/scss/mixins_colours.scss]`, genera una clase por cada
@@ -57,7 +64,7 @@ $colours_backgrounds_map:(
 //
 // También se usa para asignar valor a la variable de cada color de fondo.
 // Ej.
-// $bgBlack: map-get($colours_backgrounds_map, Black);
+// $bgBlack: map.get($colours_backgrounds_map, Black);
 // background-color: $bgBlack;
 
 
@@ -94,37 +101,37 @@ $colours_backgrounds_map:(
     Error:          $errorColour
 );
 
-$bgError:           map-get($colours_backgrounds_map, Error);
+$bgError:           map.get($colours_backgrounds_map, Error);
 
-$bgWhite:           map-get($colours_backgrounds_map, White);
-$bgBlack:           map-get($colours_backgrounds_map, Black);
+$bgWhite:           map.get($colours_backgrounds_map, White);
+$bgBlack:           map.get($colours_backgrounds_map, Black);
 
-//$bgGreenSystem4XL:  map-get($colours_backgrounds_map, GreenSystem4XL);
-//$bgGreenSystem3XL:  map-get($colours_backgrounds_map, GreenSystem3XL);
-//$bgGreenSystem2XL:  map-get($colours_backgrounds_map, GreenSystem2XL);
-//$bgGreenSystemXL:   map-get($colours_backgrounds_map, GreenSystemXL);
-//$bgGreenSystemL:    map-get($colours_backgrounds_map, GreenSystemL);
-$bgGreenSystemM:    map-get($colours_backgrounds_map, GreenSystemM);
+//$bgGreenSystem4XL:  map.get($colours_backgrounds_map, GreenSystem4XL);
+//$bgGreenSystem3XL:  map.get($colours_backgrounds_map, GreenSystem3XL);
+//$bgGreenSystem2XL:  map.get($colours_backgrounds_map, GreenSystem2XL);
+//$bgGreenSystemXL:   map.get($colours_backgrounds_map, GreenSystemXL);
+//$bgGreenSystemL:    map.get($colours_backgrounds_map, GreenSystemL);
+$bgGreenSystemM:    map.get($colours_backgrounds_map, GreenSystemM);
 
-$bgGreenWhatsApp:   map-get($colours_backgrounds_map, GreenWhatsApp);
+$bgGreenWhatsApp:   map.get($colours_backgrounds_map, GreenWhatsApp);
 
-$bgGrey4XL:         map-get($colours_backgrounds_map, Grey4XL);
-$bgGrey3XL:         map-get($colours_backgrounds_map, Grey3XL);
-$bgGrey2XL:         map-get($colours_backgrounds_map, Grey2XL);
-$bgGreyXL:          map-get($colours_backgrounds_map, GreyXL);
-$bgGreyL:           map-get($colours_backgrounds_map, GreyL);
-$bgGreyM:           map-get($colours_backgrounds_map, GreyM);
-$bgGreyD:           map-get($colours_backgrounds_map, GreyD);
-$bgGreyXD:          map-get($colours_backgrounds_map, GreyXD);
-$bgGrey2XD:         map-get($colours_backgrounds_map, Grey2XD);
-$bgGrey3XD:         map-get($colours_backgrounds_map, Grey3XD);
+$bgGrey4XL:         map.get($colours_backgrounds_map, Grey4XL);
+$bgGrey3XL:         map.get($colours_backgrounds_map, Grey3XL);
+$bgGrey2XL:         map.get($colours_backgrounds_map, Grey2XL);
+$bgGreyXL:          map.get($colours_backgrounds_map, GreyXL);
+$bgGreyL:           map.get($colours_backgrounds_map, GreyL);
+$bgGreyM:           map.get($colours_backgrounds_map, GreyM);
+$bgGreyD:           map.get($colours_backgrounds_map, GreyD);
+$bgGreyXD:          map.get($colours_backgrounds_map, GreyXD);
+$bgGrey2XD:         map.get($colours_backgrounds_map, Grey2XD);
+$bgGrey3XD:         map.get($colours_backgrounds_map, Grey3XD);
 
-//$bgRedColourM:      map-get($colours_backgrounds_map, RedColourM);
+//$bgRedColourM:      map.get($colours_backgrounds_map, RedColourM);
     
-$bgStatusInfo:     map-get($colours_backgrounds_map, StatusInfo);
-$bgStatusOk:       map-get($colours_backgrounds_map, StatusOk);
-$bgStatusWarning:  map-get($colours_backgrounds_map, StatusWarning);
-$bgStatusError:    map-get($colours_backgrounds_map, StatusError);
+$bgStatusInfo:     map.get($colours_backgrounds_map, StatusInfo);
+$bgStatusOk:       map.get($colours_backgrounds_map, StatusOk);
+$bgStatusWarning:  map.get($colours_backgrounds_map, StatusWarning);
+$bgStatusError:    map.get($colours_backgrounds_map, StatusError);
     
 /*___ Declaramos las var para colores de fondo _*/
 $body_bgColour:         $bgGrey4XL;
@@ -140,8 +147,8 @@ $colours_backgrounds_hover_map:(
 // *.bgBlack:focus, *.bgBlack:hover{background-color: #hex}
 
 
-    mainBgColour: darken($bgColour_neutral, 20%),
-/*    bgGrey: lighten($bgGreyM, 20%)*/
+    mainBgColour: color.adjust($bgColour_neutral, $lightness: -20%),
+/*    bgGrey: color.adjust($bgGreyM, $lightness: 20%)*/
 );
 
-//$bgBlue_hover: map-get($colours_backgrounds_hover_map, bgBlue);
+//$bgBlue_hover: map.get($colours_backgrounds_hover_map, bgBlue);

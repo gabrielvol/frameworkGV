@@ -1,8 +1,13 @@
 /* * NombreDeProyecto * ========================================================
-   CSS Styles Post | Custom [/etc/css/custom/css_post.scss]
+   CSS Styles Post | Custom [/etc/css/scss/var_all_post.scss]
    ========================================================================== */
 
+@use "var_all_pre" as *;
+@use "../custom/var/env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Post ------------------------------------------------------------------ */
 // REF [26]
-//@import "../scss/settings_lightbox";
-//@import "lightbox";
+//@use "../scss/settings_lightbox" as *;
+//@use "lightbox" as *;

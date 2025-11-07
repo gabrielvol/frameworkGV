@@ -46,6 +46,15 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "var_all_pre" as *;
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/var/fonts_main_var" as *;
+
 article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button{
     display: block;
 } 

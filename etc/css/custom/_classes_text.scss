@@ -1,6 +1,16 @@
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "var/fonts_main_var" as *;
+@use "var/text_var" as *;
+
 .txBold{    
     &,
     a,
@@ -8,7 +18,12 @@
     strong,
     cite{
         font-family: $ftFamily_bold_global; /* // REF [46] Fuentes Regular y Bold */
-        font-weight: 400; // REF [01]
+        
+        @if $google_fonts_act == "on" {
+            font-weight: $ftWeight_bold_global; /* // REF [01] Google Fonts */
+        } @else {
+            font-weight: 400;
+        }
     }
 }
 .txItalic{font-style: italic} 

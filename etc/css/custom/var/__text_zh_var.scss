@@ -2,6 +2,10 @@
    Text Variables | Custom [/etc/css/custom/var/text_zh_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables de texto. Declaraciones de fuentes,
 // variables de pesos, interlinea, cuerpos tipograficos y espaciado general.
@@ -60,7 +64,7 @@ $ftFamily_bold_global:          $ftFamily_regular_global; /* // REF [01] Google 
 
 
 /* // Espaciado y cuerpo de texto ------------------------------------------- */
-$ftWeight_global:           400;
+$ftWeight_regular_global:           400;
 $lineHeight_global:         calc(1ex / 0.32);
 
 $ftSize_global:             1rem;

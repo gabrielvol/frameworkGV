@@ -44,6 +44,18 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "fonts_main_var" as *;
+@use "text_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
 /* // Button Hambuger Sizes ------------------------------------------------- */
 $button_hamb_open_width:        90px;
 $button_hamb_open_height:       40px;
@@ -77,4 +89,4 @@ $button_hamb_close_bdColour:        transparent;
 
 /* // Button Hambuger Font -------------------------------------------------- */
 $button_hamb_ftFamily:           $ftFamily_regular_global;
-$button_hamb_ftWeight:           400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$button_hamb_ftWeight:           400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */

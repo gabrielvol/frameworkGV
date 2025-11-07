@@ -1,7 +1,17 @@
 /* * NombreDeProyecto * ========================================================
    Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
-    
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "../scss/var_fonts" as *;
+@use "var/fonts_main_var" as *;
+@use "var/text_var" as *;
+
 /* // Pop Modal ------------------------------------------------------------- */
 .modal_global{
     background-color: $modal_global_bgColour;

@@ -51,13 +51,26 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "../../scss/var_fonts" as *;
+@use "fonts_main_var" as *;
+
 /* // Text Fonts ------------------------------------------------------------ */
 $ftFamily_regular_global:       $arial; /* // REF [46] Fuentes Regular y Bold */
 $ftFamily_bold_global:          $ftFamily_regular_global; /* // REF [01] Google fonts */
 
 
 /* // Espaciado y cuerpo de texto ------------------------------------------- */
-$ftWeight_global:           400;
+$ftWeight_regular_global:   400;
+$ftWeight_bold_global:      700; /* // REF [01] Google fonts */
 $lineHeight_global:         calc(1ex / 0.32);
 
 $ftSize_global:             1rem;

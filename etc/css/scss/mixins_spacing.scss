@@ -2,6 +2,11 @@
    Spacing Helpers Mixins | Etc [/etc/css/scss/mixin_spacing.scss]
    ========================================================================== */
 
+@use "../custom/var/helpers_var" as *;
+@use "../custom/var/env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Mixins para generar nuevos spacing helpers
 

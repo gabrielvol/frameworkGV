@@ -2,6 +2,14 @@
    Nav Language Variables | Custom [/etc/css/custom/var/nav_lang_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 //

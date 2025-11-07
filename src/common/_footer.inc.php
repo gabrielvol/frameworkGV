@@ -49,18 +49,25 @@ if(!$page_subdomain){ /* // REF [54] */
     include('footer.pop.inc.php');
     include('footer.js.inc.php');
     
-    /* // REF [47] Topbar.js */
-    $userAgent_android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-    $userAgent_blackBerry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-    $userAgent_iPad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
-    $userAgent_iPhone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-    $userAgent_iPod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-    $userAgent_mobile = strpos($_SERVER['HTTP_USER_AGENT'],"Mobile");
-    $userAgent_webOS = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-    $userAgent_tablet = strpos($_SERVER["HTTP_USER_AGENT"],"Tablet");
+    /* // REF [47] Topbar.js */    
+    $browser_userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 
+    $browser_keywords_mobile = [
+        'Android', 'BlackBerry', 'iPad', 'iPhone', 'iPod', 
+        'Mobile', 'webOS', 'Tablet'
+    ];
+
+    $browser_isMobile = false;
+    
+    foreach ($browser_keywords_mobile as $keyword_browserForEach) {
+        if (stripos($browser_userAgent, $keyword_browserForEach) !== false) {
+            $browser_isMobile = true;
+            break;
+        }
+    }
+    
     if($topbar_hide_mobile){
-        if ($userAgent_android || $userAgent_blackBerry || $userAgent_iPad || $userAgent_iPhone || $userAgent_iPod || $userAgent_mobile || $userAgent_webOS || $userAgent_tablet == true){
+        if ($browser_isMobile) {
             echo '<div class="pretopbar"></div>';
         }
     }

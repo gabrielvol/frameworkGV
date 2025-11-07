@@ -2,6 +2,10 @@
    Container Variables | Etc [/etc/css/scss/var_container.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "../custom/var/container_sizes_var" as *;
+
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 

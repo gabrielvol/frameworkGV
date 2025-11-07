@@ -44,6 +44,10 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
 
 /* // Global var sizes ------------------------------------------------------ */
 

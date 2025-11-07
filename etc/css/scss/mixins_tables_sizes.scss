@@ -2,6 +2,10 @@
    Tables Sizes Mixins | Etc [/etc/css/scss/mixinsTableSizes.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Generador de clases por cada tamaño de ancho de tabla.
 

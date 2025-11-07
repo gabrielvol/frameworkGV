@@ -7,6 +7,7 @@
 //
 // #activator #font #ftWeight #google
 //
+// REF [01] Google Fonts
 // REF [14a] Idioma Chino ZH, MingLiu font
 
 
@@ -16,7 +17,7 @@
 //
 //
 // 01 _ $google_fonts_act
-// REF [01]
+// REF [01] Google Fonts
 //
 // Activa los if que se encuentran en
 // `[/etc/css/custom/_forms.scss]`,
@@ -74,6 +75,9 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
 /* // General --------------------------------------------------------------- */
-$google_fonts_act:    off;
-$fonts_zh_act:     off; 
+$google_fonts_act:  off; // REF [01] Google Fonts
+$fonts_zh_act:      off; // REF [14a] Idioma Chino ZH, MingLiu font

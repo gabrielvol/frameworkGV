@@ -48,6 +48,13 @@
 
 
     
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "var/mediaQueries_var" as *;
+
 /* // Nav ------------------------------------------------------------------- */
 // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
 @mixin navBT{

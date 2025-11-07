@@ -2,6 +2,12 @@
    Border Colours Variables | Custom [/etc/css/custom/var/colours_borders_var.scss]
    ========================================================================== */
 
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -78,39 +84,39 @@ $colours_borders_map:(
     outline:        #c6c6c6
 );
  
-$bdError:           map-get($colours_borders_map, error);
-$bdOutline:         map-get($colours_borders_map, outline);
+$bdError:           map.get($colours_borders_map, error);
+$bdOutline:         map.get($colours_borders_map, outline);
 
-$bdWhite:           map-get($colours_borders_map, white);
-$bdBlack:           map-get($colours_borders_map, black);
+$bdWhite:           map.get($colours_borders_map, white);
+$bdBlack:           map.get($colours_borders_map, black);
 
-//$bdGreenSystem4XL:  map-get($colours_borders_map, greenSystem4XL);
-//$bdGreenSystem3XL:  map-get($colours_borders_map, greenSystem3XL);
-//$bdGreenSystem2XL:  map-get($colours_borders_map, greenSystem2XL);
-//$bdGreenSystemXL:   map-get($colours_borders_map, greenSystemXL);
-//$bdGreenSystemL:    map-get($colours_borders_map, greenSystemL);
-//$bdGreenSystem:     map-get($colours_borders_map, greenSystem);
+//$bdGreenSystem4XL:  map.get($colours_borders_map, greenSystem4XL);
+//$bdGreenSystem3XL:  map.get($colours_borders_map, greenSystem3XL);
+//$bdGreenSystem2XL:  map.get($colours_borders_map, greenSystem2XL);
+//$bdGreenSystemXL:   map.get($colours_borders_map, greenSystemXL);
+//$bdGreenSystemL:    map.get($colours_borders_map, greenSystemL);
+//$bdGreenSystem:     map.get($colours_borders_map, greenSystem);
 
-$bdGrey4XL:         map-get($colours_borders_map, grey4XL);
-$bdGrey3XL:         map-get($colours_borders_map, grey3XL);
-$bdGrey2XL:         map-get($colours_borders_map, grey2XL);
-$bdGreyXL:          map-get($colours_borders_map, greyXL);
-$bdGreyL:           map-get($colours_borders_map, greyL);
-$bdGreyM:           map-get($colours_borders_map, greyM);
-$bdGreyD:           map-get($colours_borders_map, greyD);
-$bdGreyXD:          map-get($colours_borders_map, greyXD);
-$bdGrey2XD:         map-get($colours_borders_map, grey2XD);
-//$bdGrey3XD:         map-get($colours_borders_map, grey3XD);
+$bdGrey4XL:         map.get($colours_borders_map, grey4XL);
+$bdGrey3XL:         map.get($colours_borders_map, grey3XL);
+$bdGrey2XL:         map.get($colours_borders_map, grey2XL);
+$bdGreyXL:          map.get($colours_borders_map, greyXL);
+$bdGreyL:           map.get($colours_borders_map, greyL);
+$bdGreyM:           map.get($colours_borders_map, greyM);
+$bdGreyD:           map.get($colours_borders_map, greyD);
+$bdGreyXD:          map.get($colours_borders_map, greyXD);
+$bdGrey2XD:         map.get($colours_borders_map, grey2XD);
+//$bdGrey3XD:         map.get($colours_borders_map, grey3XD);
 
-//$bdRedColourM:      map-get($colours_borders_map, redColourM);
+//$bdRedColourM:      map.get($colours_borders_map, redColourM);
  
-$bdStatusInfo:     map-get($colours_borders_map, statusInfo);
-$bdStatusOk:       map-get($colours_borders_map, statusOk);
-$bdStatusWarning:  map-get($colours_borders_map, statusWarning);
-$bdStatusError:    map-get($colours_borders_map, statusError);
+$bdStatusInfo:     map.get($colours_borders_map, statusInfo);
+$bdStatusOk:       map.get($colours_borders_map, statusOk);
+$bdStatusWarning:  map.get($colours_borders_map, statusWarning);
+$bdStatusError:    map.get($colours_borders_map, statusError);
 
 $bdColour_main_global:              $bdGreyM;
-$bdColour_main_global_hover:        darken($bdColour_main_global, 15%);
+$bdColour_main_global_hover:        color.adjust($bdColour_main_global, $lightness: -15%);
 
 $bdColour_secondary_global:         $bdGreyXD;
-$bdColour_secondary_global_hover:   darken($bdColour_main_global, 15%);
+$bdColour_secondary_global_hover:   color.adjust($bdColour_main_global, $lightness: -15%);

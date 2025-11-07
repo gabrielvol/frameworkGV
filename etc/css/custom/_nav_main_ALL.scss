@@ -1,27 +1,40 @@
 /* * NombreDeProyecto * ========================================================
    Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
    ========================================================================== */
-.nav_main_ul{
-    li{
-        a,
-        .nav_TLI{
-            /*
-            text-transform: uppercase;
-            */
-        }    
-    }
-}
+@use "sass:color";
+@use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "act/nav_main_act" as *;
+
+.nav_main{
+    .nav_main_ul{
+        li{
+            a,
+            .nav_TLI{
+                /*
+                text-transform: uppercase;
+                */
+            }    
+        }
         
-.nav_item_xxx{
-    a{
-        &, &:focus, &:focus-visible, &:hover, &:visited, &:active{}
+        /*        
+        .nav_item_xxx{
+            a{
+                &, &:focus, &:focus-visible, &:hover, &:visited, &:active{}
 
-        &:focus, &:focus-visible, &:hover, &:visited, &:active{}
+                &:focus, &:focus-visible, &:hover, &:visited, &:active{}
 
-        &, &:visited, &:active{}
+                &, &:visited, &:active{}
 
-        &:visited, &:active{}
+                &:visited, &:active{}
 
-        &:focus, &:focus-visible, &:hover{}
+                &:focus, &:focus-visible, &:hover{}
+            }
+        }
+        */
     }
-}
+}       

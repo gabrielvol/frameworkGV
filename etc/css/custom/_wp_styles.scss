@@ -1,4 +1,10 @@
 /* * NombreDeProyecto * ========================================================
    WordPress Styles | Custom [/etc/css/custom/wp_styles.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all_pre" as *;
+
+@use "sass:color";
+@use "sass:map";
+
 .wp_styles{}

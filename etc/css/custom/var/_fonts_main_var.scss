@@ -45,6 +45,13 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "../../scss/var_fonts" as *;
+
 $font_families_map:(
 // Este mapa se usa con el mixin `fontFamilyCustomClassesGenerator` que se
 // encuentra en `[/etc/css/scss/mixins_fonts.scss]`, genera una clase por cada
@@ -54,7 +61,7 @@ $font_families_map:(
 //
 // También se usa para asignar valor a la variable de cada fuente.
 // Ej.
-// $timesNewRoman: map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
+// $timesNewRoman: map.get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 // font-family: $timesNewRoman;
 //
 // REF [01] Las Google Fonts no deben ser declaradas en este mapa.
@@ -75,12 +82,18 @@ $font_weights_map:(
 //
 // Tambien se usa para generar las variables de peso `_w`
 // Ej.
-// $ralewayXB_w:      map-get($font_weights_map, ralewayXB);
+// $ralewayXB_w:      map.get($font_weights_map, ralewayXB);
 
 
-//    ralewayM:       500,
-//    ralewaySB:      600,
-//    ralewayXB:      800
+//    ralewayT:      100,
+//    ralewayXL:     200,
+//    ralewayL:      300,
+//    ralewayR:      400,
+//    ralewayM:      500,
+//    ralewaySB:     600,
+//    ralewayB:      700,
+//    ralewayXB:     800,
+//    ralewayBK:     900
 );
 
 
@@ -89,24 +102,36 @@ $font_weights_map:(
 // `ftFamily_` regular y bold
 // REF [46] Fuentes Regular y Bold
 
-$arial:             map-get($font_families_map, arial), $font_families_sans_list_fallback;
-$roboto:            map-get($font_families_map, roboto), $font_families_sans_list_fallback;
+$arial:             map.get($font_families_map, arial), $font_families_sans_list_fallback;
+$roboto:            map.get($font_families_map, roboto), $font_families_sans_list_fallback;
 $ftSansSerif:     $font_families_sans_list_fallback;
 
-//$timesNewRoman:     map-get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
+//$timesNewRoman:     map.get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 $ftSerif:           $font_families_serif_list_fallback;
 
-//$monospacedFont:    map-get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
+//$monospacedFont:    map.get($font_families_map, monospacedFont), $font_families_monospaced_list_fallback;
 $ftMonospaced:    $font_families_monospaced_list_fallback;
 
-$consolas:          map-get($font_families_map, consolas), $font_families_monospaced_list_fallback;
+$consolas:          map.get($font_families_map, consolas), $font_families_monospaced_list_fallback;
 
 // REF [01] Las Google Fonts deben ser declaradas de la siguiente forma:
 
-//$ralewayM:         'Raleway', $font_families_sans_list_fallback;
-//$ralewaySB:        'Raleway', $font_families_sans_list_fallback;
-//$ralewayXB:        'Raleway', $font_families_sans_list_fallback;
+//$ralewayT:        'Raleway', $font_families_sans_list_fallback;
+//$ralewayXL:       'Raleway', $font_families_sans_list_fallback;
+//$ralewayL:        'Raleway', $font_families_sans_list_fallback;
+//$ralewayR:        'Raleway', $font_families_sans_list_fallback;
+//$ralewayM:        'Raleway', $font_families_sans_list_fallback;
+//$ralewaySB:       'Raleway', $font_families_sans_list_fallback;
+//$ralewayB:        'Raleway', $font_families_sans_list_fallback;
+//$ralewayXB:       'Raleway', $font_families_sans_list_fallback;
+//$ralewayBK:       'Raleway', $font_families_sans_list_fallback;
 
-//$ralewayM_w:       map-get($font_weights_map, ralewayM);
-//$ralewaySB_w:      map-get($font_weights_map, ralewaySB);
-//$ralewayXB_w:      map-get($font_weights_map, ralewayXB);
+//$ralewayT_w:      map.get($font_weights_map, ralewayT);
+//$ralewayXL_w:     map.get($font_weights_map, ralewayXL);
+//$ralewayL_w:      map.get($font_weights_map, ralewayL);
+//$ralewayR_w:      map.get($font_weights_map, ralewayR);
+//$ralewayM_w:      map.get($font_weights_map, ralewayM);
+//$ralewaySB_w:     map.get($font_weights_map, ralewaySB);
+//$ralewayB:        map.get($font_weights_map, ralewayB);
+//$ralewayXB_w:     map.get($font_weights_map, ralewayXB);
+//$ralewayBK_w:     map.get($font_weights_map, ralewayBK);

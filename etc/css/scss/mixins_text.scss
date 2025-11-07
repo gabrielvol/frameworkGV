@@ -2,6 +2,10 @@
    Mixins para texto y alturas de X | Etc [/etc/css/scss/mixins_text.scss]
    ========================================================================== */
 
+@use "../custom/var/env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene mixins para generar declaraciones de tamano en
 // relacion a un valor de altura de X.

@@ -1,3 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "../scss/var_all_pre" as *;
+
+@use "sass:color";
+@use "sass:map";

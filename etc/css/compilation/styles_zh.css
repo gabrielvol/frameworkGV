@@ -3,53 +3,10 @@
    CSS Styles Main | Custom [/etc/css/custom/styles_zh.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
+   CSS Styles Pre | Custom [/etc/css/custom/var_all_pre.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Sans Serif ------------------------------------------------------------ */
-/* // Serif ----------------------------------------------------------------- */
-/* // Monoespaciadas -------------------------------------------------------- */
-/* // Font Sizes ------------------------------------------------------------ */
-/* * NombreDeProyecto * ========================================================
-   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_zh_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Variables de fuentes -------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_zh_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Text Fonts ------------------------------------------------------------ */
-/* // Espaciado y cuerpo de texto ------------------------------------------- */
-/* // Headings -------------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace_zh.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-@font-face {
-  font-family: 'mingliuregular';
-  src: url("/stage/fonts/mingliu-01-webfont.woff2") format("woff2"), url("/stage/fonts/mingliu-01-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'pmingliuregular';
-  src: url("/stage/fonts/pmingliu-02-webfont.woff2") format("woff2"), url("/stage/fonts/pmingliu-02-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-
-/* * NombreDeProyecto * ========================================================
-   CSS Styles Pre | Custom [/etc/css/custom/css_pre.scss]
-   ========================================================================== */
 /* // Activators ------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
    Useful Classes Activators | Custom [/etc/css/custom/act/classes_useful_act.scss]
@@ -134,6 +91,12 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
+   Google Activators | Custom [/etc/css/custom/act/google_act.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Listado --------------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
    Header Activators | Custom [/etc/css/custom/act/header_act.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -180,6 +143,9 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* * NombreDeProyecto * ========================================================
    Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
    ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
+   ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Widths ---------------------------------------------------------------- */
@@ -188,11 +154,17 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Display --------------------------------------------------------------- */
 /* // .mha placeholder ------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Mixin  Clearfix | Etc [/etc/css/scss/mixins_clearfix.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Clearfix -------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Z Index Variables | Custom [/etc/css/custom/var/zindex_var.scss]
    ========================================================================== */
@@ -207,11 +179,15 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Social ____________________________*/
 /*___ Nav _______________________________*/
 /* // 7000 ------------------------------------------------------------------ */
+/* // REF [50] Google captcha */
 /*___ Header ____________________________*/
 /*___ Footer ____________________________*/
 /*___ Slick Slider ______________________*/
 /* // 1000 ------------------------------------------------------------------ */
 /* // 100 ------------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Container Sizes Variables | Custom [/etc/css/custom/var/container_sizes_var.scss]
    ========================================================================== */
@@ -226,10 +202,17 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Container Center Negative Values -------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* // Variables / Mixins ---------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
    Spacing Helpers Variables | Custom [/etc/css/custom/var/helpers.scss]
    ========================================================================== */
 /* // Spacing --------------------------------------------------------------- */
 /* // Border Helpers Variables  --------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Mixins Container | Etc [/etc/css/scss/mixins_container.scss]
    ========================================================================== */
@@ -237,21 +220,33 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // REF [38*] Mixin para container max ------------------------------------ */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Colours Main Variables | Custom [/etc/css/custom/var/colours_main_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Border Colours Variables | Custom [/etc/css/custom/var/colours_borders_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /*___ Declaramos las var para colores de fondo _*/
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Shadows Variables | Custom [/etc/css/custom/var/shadows_var.scss]
    ========================================================================== */
@@ -261,16 +256,66 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Text Shadow _______________________*/
 /*___ Box Shadow ________________________*/
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Text Colour Variables | Custom [/etc/css/custom/var/text_colours_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Text Colours ---------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Sans Serif ------------------------------------------------------------ */
+/* // Serif ----------------------------------------------------------------- */
+/* // Monoespaciadas -------------------------------------------------------- */
+/* // Font Sizes ------------------------------------------------------------ */
+/* // Variables de fuentes -------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Text Fonts ------------------------------------------------------------ */
+/* // REF [46] Fuentes Regular y Bold */
+/* // REF [01] Google fonts */
+/* // Espaciado y cuerpo de texto ------------------------------------------- */
+/* // Headings -------------------------------------------------------------- */
 /* // Button Hambuger Sizes ------------------------------------------------- */
 /*___ Button Hambuger Sizes Accordion ___*/
 /* // Button Hambuger Colours ----------------------------------------------- */
@@ -278,9 +323,26 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Backgrounds _______________________*/
 /*___ Borders ___________________________*/
 /* // Button Hambuger Font -------------------------------------------------- */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Logo Sizes Variables | Custom [/etc/css/custom/var/logo_sizes_var.scss]
    ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Nav Sizes Variables | Custom [/etc/css/custom/var/nav_sizes_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // General --------------------------------------------------------------- */
+/* // Nav Topper ------------------------------------------------------------ */
+/* // Nav Sizes ------------------------------------------------------------- */
+/* // Nav List -------------------------------------------------------------- */
+/* // Nav Drawer ------------------------------------------------------------ */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Logo Sizes BT --------------------------------------------------------- */
@@ -289,7 +351,10 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Logo Sizes Footer ----------------------------------------------------- */
 /* // Logo Sizes Footer logoFloated ----------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Header Height Variables | Custom [/etc/css/custom/var/header_var.scss]
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Header Variables | Custom [/etc/css/custom/var/header_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -306,6 +371,9 @@ $page_PT_AT:            0;
 $page_PT_A1024:         0;
 */
 /* // Header Colours -------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Nav Colours Variables | Custom [/etc/css/custom/var/nav_colours_var.scss]
    ========================================================================== */
@@ -324,26 +392,45 @@ $page_PT_A1024:         0;
 /*___ AT ________________________________*/
 /*___ Topper ____________________________*/
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Nav Arrows Backgrounds | Custom [/etc/css/custom/var/nav_arrows_var.scss]
    ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Fonts Variables | Custom [/etc/css/custom/var/nav_fonts_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /*___ BT ________________________________*/
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 /*___ AT ________________________________*/
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 /*___ ATL _______________________________*/
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 /* * NombreDeProyecto * ========================================================
-   Nav Sizes Variables | Custom [/etc/css/custom/var/nav_sizes_var.scss]
+   Logo Sizes Variables | Custom [/etc/css/custom/var/logo_sizes_var.scss]
    ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // General --------------------------------------------------------------- */
-/* // Nav Topper ------------------------------------------------------------ */
-/* // Nav Sizes ------------------------------------------------------------- */
-/* // Nav List -------------------------------------------------------------- */
-/* // Nav Drawer ------------------------------------------------------------ */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Nav Language Variables | Custom [/etc/css/custom/var/nav_lang_var.scss]
    ========================================================================== */
@@ -361,12 +448,23 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 */
 /* // Language Colours ------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Lists Variables | Custom [/etc/css/custom/var/lists.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // List Colours ---------------------------------------------------------- */
 /* // List Sizes ------------------------------------------------------------ */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Buttons Variables | Custom [/etc/css/custom/var/buttons_var.scss]
    ========================================================================== */
@@ -378,10 +476,16 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Button SiteTop // REF [18] -------------------------------------------- */
 /* // Button Video Play ----------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Hover Variables | Custom [/etc/css/custom/var/hover_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Animation Variables | Custom [/etc/css/custom/var/animation_var.scss]
    ========================================================================== */
@@ -390,10 +494,16 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Animation order/timing ------------------------------------------------ */
 /* // Animation shared values ----------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Social Variables | Custom [/etc/css/custom/var/section_social_var.scss]
    ========================================================================== */
 /* // Social Sizes ---------------------------------------------------------- */
 /* // Social Colours -------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Popup Variables | Custom [/etc/css/custom/var/popup_var.scss]
    ========================================================================== */
@@ -402,6 +512,10 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Modal Opacity Variables ----------------------------------------------- */
 /* // Popup Sizes ----------------------------------------------------------- */
 /* // Popup Colours --------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* // Variables / Mixins ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Slider Variables | Custom [/etc/css/custom/var/slider_var.scss]
    ========================================================================== */
@@ -412,6 +526,9 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Carousel Arrows ------------------------------------------------------- */
 /* // Dots ------------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Video Variables | Custom [/etc/css/custom/var/video_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -420,11 +537,22 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /*___ Video shorts ______________________*/
 /* // Video colours --------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Footer Variables | Custom [/etc/css/custom/var/footer_var.scss]
    ========================================================================== */
 /* // Full heights Footer --------------------------------------------------- */
 /* // Footer sizes ---------------------------------------------------------- */
 /* // Footer colours  ------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
@@ -434,15 +562,32 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Forms Input ----------------------------------------------------------- */
 /* // Form Button Submit // REF [21] ---------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
+/* // Form span msg / sugg -------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts_var.scss]
    ========================================================================== */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Form Label ------------------------------------------------------------ */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 /* // Form Input ------------------------------------------------------------ */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 /* // Form Button Submit // REF [21] ---------------------------------------- */
+/* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 /* // Form status message --------------------------------------------------- */
 /* // Form validation ------------------------------------------------------- */
+/* // Form span msg / sugg -------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* // Variables / Mixins ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes_var.scss]
    ========================================================================== */
@@ -458,6 +603,10 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Form Search ----------------------------------------------------------- */
 /* // Form Validation ------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* // Variables / Mixins ---------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
    Tables Variables | Custom [/etc/css/custom/var/tables.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -465,11 +614,17 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Custom Sizes ---------------------------------------------------------- */
 /* // Rounded Table --------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Tables Colours Variables | Custom [/etc/css/custom/var/tables_colours_var.scss]
    ========================================================================== */
 /* // Table Border Colours -------------------------------------------------- */
 /* // Table Background Colours ---------------------------------------------- */
 /* // Striped Table --------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Media Queries values Variables | Custom [/etc/css/custom/var/mediaQueries_var.scss]
    ========================================================================== */
@@ -478,6 +633,9 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Regular --------------------------------------------------------------- */
 /* // Nav ------------------------------------------------------------------- */
 /* // Apple ----------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Global Variables | Custom [/etc/css/custom/var/global_var.scss]
    ========================================================================== */
@@ -491,12 +649,18 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Secondary Separator --------------------------------------------------- */
 /*___ Secondary _________________________*/
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Page Construccion Variables | Custom [/etc/css/custom/var/page_construccion_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Page Construcion sizes ------------------------------------------------ */
 /* // Page Construcion colours  --------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Page Index Variables | Custom [/etc/css/custom/var/page_index_var.scss]
    ========================================================================== */
@@ -505,6 +669,9 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Page Index Sizes ------------------------------------------------------ */
 /* // Page Index Colours ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Page Contacto Variables | Custom [/etc/css/custom/var/page_contacto_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -512,6 +679,9 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Page Contacto Sizes --------------------------------------------------- */
 /* // Page Contacto Colours ------------------------------------------------- */
 /* // Mixins ---------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Media Queries Mixins | Custom [/etc/css/custom/mediaQueries_mx.scss]
    ========================================================================== */
@@ -548,7 +718,9 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // 1500px ---------------------------------------------------------------- */
 /* // 1600px ---------------------------------------------------------------- */
 /* // 2000px ---------------------------------------------------------------- */
+/* // 2300px ---------------------------------------------------------------- */
 /* // 2500px ---------------------------------------------------------------- */
+/* // 2600px ---------------------------------------------------------------- */
 /* // 3000px ---------------------------------------------------------------- */
 /* // iPhone 4 & 4S Only ---------------------------------------------------- */
 /* // iPhone 4 & 4S Portrait Only ------------------------------------------- */
@@ -568,15 +740,24 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // iPad 3 & 4 Landscape Only --------------------------------------------- */
 /* // Retina Screens -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Sizes Mixins | Etc [/etc/css/scss/mixinsSizes.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Background Mixins | Etc [/etc/css/scss/mixins_backgrounds.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Mask Mixins | Etc [/etc/css/scss/mixinsMasks.scss]
    ========================================================================== */
@@ -585,20 +766,37 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Mixin para máscara con centrado ciego --------------------------------- */
 /* // Mixin para mascaras --------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Clip Paths Mixins | Etc [/etc/css/scss/mixinsClipPath.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Transition Mixins | Etc [/etc/css/scss/mixinsTransitions.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Opacity Mixins | Etc [/etc/css/scss/mixinsOpacity.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Fonts Mixins | Etc [/etc/css/scss/mixins_fonts.scss]
    ========================================================================== */
@@ -608,17 +806,27 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Generador de pesos por cada fuente ------------------------------------ */
 /* // Generador de clases por cada tamaño de fuente ------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Mixins para texto y alturas de X | Etc [/etc/css/scss/mixins_text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Colour Mixins | Etc [/etc/css/scss/mixins_colours.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Variables / Mixins ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Center Mixins | Etc [/etc/css/scss/mixinsCenter.scss]
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Center Mixins | Etc [/etc/css/scss/mixins_center.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -628,10 +836,16 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Mixin centrado custom ------------------------------------------------- */
 /* // Mixin para centrar pop_global ------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Spacing Helpers Mixins | Etc [/etc/css/scss/mixin_spacing.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Border Helpers Mixins | Etc [/etc/css/scss/mixins_borders.scss]
    ========================================================================== */
@@ -643,16 +857,25 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;
 /* // Border separation with equal padding and margin ----------------------- */
 /* // Border Fancy Horizontal Line Mixins ----------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Position Mixins | Etc [/etc/css/scss/mixinsPositions.scss]
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   Position Mixins | Etc [/etc/css/scss/mixins_positions.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Tables Sizes Mixins | Etc [/etc/css/scss/mixinsTableSizes.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Functions ------------------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
 /* * NombreDeProyecto * ========================================================
    Angled Edges Functions | Etc [/etc/css/scss/functions_angledEdges.scss]scss]
    ========================================================================== */
@@ -688,4165 +911,20 @@ Parameter: $width_angledEdges_fn
 Description: Optional - Width of triangle - Accepts a unitless integer that is equivalent to width in px (If nothing is passed triangle will span to a 100% fluid width) 
 */
 /* * NombreDeProyecto * ========================================================
+   Absolute Variables | Etc [/etc/css/scss/var_absolute.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
    Font Stroke Functions | Etc [/etc/css/scss/functionsFontStroke.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Main CSS -------------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-html, body {
-  padding: 0;
-  margin: 0;
-  color: #000; }
-
-html {
-  scroll-behavior: smooth;
-  font-size: 100%;
-  text-rendering: optimizeLegibility; }
-
-body {
-  -webkit-font-smoothing: antialiased; }
-
-/* * NombreDeProyecto * ========================================================
-   Body Styles | Custom [/etc/css/custom/body.scss]
-   ========================================================================== */
-body {
-  position: relative;
-  z-index: 0;
-  background-color: #f9f9f9; }
-
-/* * NombreDeProyecto * ========================================================
-   Elements Reset/Settings | Etc [/etc/css/scss/reset_main.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-article, details, figcaption, figure, hgroup, main, menu, nav, summary, label, input, select, textarea, button {
-  display: block; }
-
-iframe {
-  border: none !important; }
-
-menu {
-  padding: 0; }
-
-audio, canvas, iframe, img, svg, video {
-  vertical-align: middle; }
-
-audio, canvas, progress, video {
-  *display: inline;
-  *zoom: 1; }
-
-progress[value] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none; }
-
-button {
-  background-color: transparent;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: antialiased; }
-
-button::focus-inner {
-  margin: 0;
-  border: none !important;
-  padding: 0; }
-
-/* // Horizontal rule ------------------------------------------------------- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #8c8c8c;
-  margin: 1em 0;
-  padding: 0; }
-
-/* // Images ---------------------------------------------------------------- */
-img {
-  background-color: #b2b2b2;
-  border: none;
-  font: normal 11px/1rem "mingliuregular";
-  text-transform: uppercase;
-  color: #333;
-  object-fit: cover;
-  -ms-interpolation-mode: bicubic; }
-
-img[src$=".png"], img[src$=".gif"], img[src$=".svg"] {
-  background-color: transparent; }
-
-figure {
-  margin: 0;
-  padding: 0; }
-
-/* * NombreDeProyecto * ========================================================
-   Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Text Settings | Etc [/etc/css/scss/settings_text.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // General --------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
-  font-family: "mingliuregular";
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: calc(1ex / 0.32);
-  font-style: normal; }
-
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, li, button, label, input, select, textarea, blockquote, table {
-  color: #000; }
-
-h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup, p sup, b sup, strong sup, i sup, em sup, cite sup, dfn sup, dd sup, dt sup, a sup, li sup, button sup, label sup, blockquote sup {
-  font-size: 0.5em; }
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a, button a, blockquote a {
-  font-family: inherit;
-  font-weight: inherit; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 0.8em; }
-
-@media (max-width: 350px) {
-  p, a, li, dd, dt, .pSize {
-    font-size: 0.8rem; } }
-
-@media (min-width: 351px) {
-  p, a, li, dd, dt, .pSize {
-    font-size: 0.9rem; } }
-
-@media (min-width: 501px) {
-  p, a, li, dd, dt, .pSize {
-    font-size: 0.95rem; } }
-
-@media (min-width: 768px) {
-  p, a, li, dd, dt, .pSize {
-    font-size: 1rem; } }
-
-@media (min-width: 1024px) {
-  p, a, li, dd, dt, .pSize {
-    font-size: 1rem; } }
-
-@media (min-width: 1201px) {
-  p, a, li, dd, dt, .pSize {
-    font-size: 1rem; } }
-
-p, dl, legend {
-  margin: 0; }
-
-h1 + h1,
-h1 + h2,
-h1 + h3,
-h1 + h4,
-h1 + h5,
-h1 + h6,
-h1 + .heading1,
-h1 + .heading2,
-h1 + .heading3,
-h1 + .heading4,
-h1 + .heading5,
-h1 + .heading6,
-h1 + p,
-h1 + ul, h2 + h1,
-h2 + h2,
-h2 + h3,
-h2 + h4,
-h2 + h5,
-h2 + h6,
-h2 + .heading1,
-h2 + .heading2,
-h2 + .heading3,
-h2 + .heading4,
-h2 + .heading5,
-h2 + .heading6,
-h2 + p,
-h2 + ul, h3 + h1,
-h3 + h2,
-h3 + h3,
-h3 + h4,
-h3 + h5,
-h3 + h6,
-h3 + .heading1,
-h3 + .heading2,
-h3 + .heading3,
-h3 + .heading4,
-h3 + .heading5,
-h3 + .heading6,
-h3 + p,
-h3 + ul, h4 + h1,
-h4 + h2,
-h4 + h3,
-h4 + h4,
-h4 + h5,
-h4 + h6,
-h4 + .heading1,
-h4 + .heading2,
-h4 + .heading3,
-h4 + .heading4,
-h4 + .heading5,
-h4 + .heading6,
-h4 + p,
-h4 + ul, h5 + h1,
-h5 + h2,
-h5 + h3,
-h5 + h4,
-h5 + h5,
-h5 + h6,
-h5 + .heading1,
-h5 + .heading2,
-h5 + .heading3,
-h5 + .heading4,
-h5 + .heading5,
-h5 + .heading6,
-h5 + p,
-h5 + ul, h6 + h1,
-h6 + h2,
-h6 + h3,
-h6 + h4,
-h6 + h5,
-h6 + h6,
-h6 + .heading1,
-h6 + .heading2,
-h6 + .heading3,
-h6 + .heading4,
-h6 + .heading5,
-h6 + .heading6,
-h6 + p,
-h6 + ul, p + h1,
-p + h2,
-p + h3,
-p + h4,
-p + h5,
-p + h6,
-p + .heading1,
-p + .heading2,
-p + .heading3,
-p + .heading4,
-p + .heading5,
-p + .heading6,
-p + p,
-p + ul, ul + h1,
-ul + h2,
-ul + h3,
-ul + h4,
-ul + h5,
-ul + h6,
-ul + .heading1,
-ul + .heading2,
-ul + .heading3,
-ul + .heading4,
-ul + .heading5,
-ul + .heading6,
-ul + p,
-ul + ul,
-.heading1 + h1,
-.heading1 + h2,
-.heading1 + h3,
-.heading1 + h4,
-.heading1 + h5,
-.heading1 + h6,
-.heading1 + .heading1,
-.heading1 + .heading2,
-.heading1 + .heading3,
-.heading1 + .heading4,
-.heading1 + .heading5,
-.heading1 + .heading6,
-.heading1 + p,
-.heading1 + ul, .heading2 + h1,
-.heading2 + h2,
-.heading2 + h3,
-.heading2 + h4,
-.heading2 + h5,
-.heading2 + h6,
-.heading2 + .heading1,
-.heading2 + .heading2,
-.heading2 + .heading3,
-.heading2 + .heading4,
-.heading2 + .heading5,
-.heading2 + .heading6,
-.heading2 + p,
-.heading2 + ul, .heading3 + h1,
-.heading3 + h2,
-.heading3 + h3,
-.heading3 + h4,
-.heading3 + h5,
-.heading3 + h6,
-.heading3 + .heading1,
-.heading3 + .heading2,
-.heading3 + .heading3,
-.heading3 + .heading4,
-.heading3 + .heading5,
-.heading3 + .heading6,
-.heading3 + p,
-.heading3 + ul, .heading4 + h1,
-.heading4 + h2,
-.heading4 + h3,
-.heading4 + h4,
-.heading4 + h5,
-.heading4 + h6,
-.heading4 + .heading1,
-.heading4 + .heading2,
-.heading4 + .heading3,
-.heading4 + .heading4,
-.heading4 + .heading5,
-.heading4 + .heading6,
-.heading4 + p,
-.heading4 + ul, .heading5 + h1,
-.heading5 + h2,
-.heading5 + h3,
-.heading5 + h4,
-.heading5 + h5,
-.heading5 + h6,
-.heading5 + .heading1,
-.heading5 + .heading2,
-.heading5 + .heading3,
-.heading5 + .heading4,
-.heading5 + .heading5,
-.heading5 + .heading6,
-.heading5 + p,
-.heading5 + ul, .heading6 + h1,
-.heading6 + h2,
-.heading6 + h3,
-.heading6 + h4,
-.heading6 + h5,
-.heading6 + h6,
-.heading6 + .heading1,
-.heading6 + .heading2,
-.heading6 + .heading3,
-.heading6 + .heading4,
-.heading6 + .heading5,
-.heading6 + .heading6,
-.heading6 + p,
-.heading6 + ul {
-  margin: 0.8em 0 0; }
-
-h1 a, h1 strong, h1 em, h1 i, h1 b, h1 cite, h2 a, h2 strong, h2 em, h2 i, h2 b, h2 cite, h3 a, h3 strong, h3 em, h3 i, h3 b, h3 cite, h4 a, h4 strong, h4 em, h4 i, h4 b, h4 cite, h5 a, h5 strong, h5 em, h5 i, h5 b, h5 cite, h6 a, h6 strong, h6 em, h6 i, h6 b, h6 cite {
-  font-size: 1em; }
-
-p b, a b, li b {
-  font-family: "mingliuregular"; }
-
-p p, p a, p strong, p em, p i, p b, p cite, p li, a p, a a, a strong, a em, a i, a b, a cite, a li, li p, li a, li strong, li em, li i, li b, li cite, li li {
-  font-size: 1em; }
-
-a {
-  transition: background-color 0.5s, color 1s, text-shadow 0.7s; }
-  a, a:active, a:visited {
-    color: #333333; }
-  a:focus, a:focus-visible, a:hover {
-    color: #1a1a1a; }
-
-/* // Font Families and Headings Values ------------------------------------- */
-.arial {
-  font-family: "mingliuregular"; }
-
-.roboto {
-  font-family: "mingliuregular"; }
-
-@media (max-width: 500px) {
-  h1, .heading1 {
-    font-size: 1.6rem; }
-  h2, .heading2 {
-    font-size: 1.5rem; }
-  h3, .heading3 {
-    font-size: 1.4rem; }
-  h4, .heading4 {
-    font-size: 1.3rem; }
-  h5, .heading5 {
-    font-size: 1.3rem; }
-  h6, .heading6 {
-    font-size: 1.3rem; } }
-
-@media (min-width: 501px) {
-  h1, .heading1 {
-    font-size: 1.6rem; }
-  h2, .heading2 {
-    font-size: 1.5rem; }
-  h3, .heading3 {
-    font-size: 1.4rem; }
-  h4, .heading4 {
-    font-size: 1.3rem; }
-  h5, .heading5 {
-    font-size: 1.3rem; }
-  h6, .heading6 {
-    font-size: 1.3rem; } }
-
-@media (min-width: 768px) {
-  h1, .heading1 {
-    font-size: 1.6rem; }
-  h2, .heading2 {
-    font-size: 1.5rem; }
-  h3, .heading3 {
-    font-size: 1.4rem; }
-  h4, .heading4 {
-    font-size: 1.3rem; }
-  h5, .heading5 {
-    font-size: 1.3rem; }
-  h6, .heading6 {
-    font-size: 1.3rem; } }
-
-@media (min-width: 1201px) {
-  h1, .heading1 {
-    font-size: 2.4rem; }
-  h2, .heading2 {
-    font-size: 2.2rem; }
-  h3, .heading3 {
-    font-size: 2rem; }
-  h4, .heading4 {
-    font-size: 1.8rem; }
-  h5, .heading5 {
-    font-size: 1.6rem; }
-  h6, .heading6 {
-    font-size: 1.4rem; } }
-
-/* // Colour classes -------------------------------------------------------- */
-.white, .white b, .white strong, .white i, .white em {
-  color: #fff; }
-
-a.white, a.white:active, a.white:visited, a.white:focus, a.white:focus-visible, a.white:hover {
-  color: #fff; }
-
-a.white:focus, a.white:focus-visible, a.white:hover {
-  text-shadow: 0 0 3px #000, 0 0 6px #000; }
-
-a.white.noHover:focus, a.white.noHover:focus-visible, a.white.noHover:hover {
-  text-shadow: 0 0 0 transparent; }
-
-.greenSystemM, .greenSystemM b, .greenSystemM strong, .greenSystemM i, .greenSystemM em {
-  color: #339900; }
-
-a.greenSystemM, a.greenSystemM:active, a.greenSystemM:visited, a.greenSystemM.noHover:focus, a.greenSystemM.noHover:hover {
-  color: #339900; }
-
-a.greenSystemM:focus, a.greenSystemM:focus-visible, a.greenSystemM:hover {
-  color: #113300; }
-
-.greenWhatsApp, .greenWhatsApp b, .greenWhatsApp strong, .greenWhatsApp i, .greenWhatsApp em {
-  color: #25D366; }
-
-a.greenWhatsApp, a.greenWhatsApp:active, a.greenWhatsApp:visited, a.greenWhatsApp.noHover:focus, a.greenWhatsApp.noHover:hover {
-  color: #25D366; }
-
-a.greenWhatsApp:focus, a.greenWhatsApp:focus-visible, a.greenWhatsApp:hover {
-  color: #167c3c; }
-
-.grey4XL, .grey4XL b, .grey4XL strong, .grey4XL i, .grey4XL em {
-  color: #f9f9f9; }
-
-a.grey4XL, a.grey4XL:active, a.grey4XL:visited, a.grey4XL.noHover:focus, a.grey4XL.noHover:hover {
-  color: #f9f9f9; }
-
-a.grey4XL:focus, a.grey4XL:focus-visible, a.grey4XL:hover {
-  color: #c6c6c6; }
-
-.grey3XL, .grey3XL b, .grey3XL strong, .grey3XL i, .grey3XL em {
-  color: #f2f2f2; }
-
-a.grey3XL, a.grey3XL:active, a.grey3XL:visited, a.grey3XL.noHover:focus, a.grey3XL.noHover:hover {
-  color: #f2f2f2; }
-
-a.grey3XL:focus, a.grey3XL:focus-visible, a.grey3XL:hover {
-  color: #bfbfbf; }
-
-.grey2XL, .grey2XL b, .grey2XL strong, .grey2XL i, .grey2XL em {
-  color: #e6e6e6; }
-
-a.grey2XL, a.grey2XL:active, a.grey2XL:visited, a.grey2XL.noHover:focus, a.grey2XL.noHover:hover {
-  color: #e6e6e6; }
-
-a.grey2XL:focus, a.grey2XL:focus-visible, a.grey2XL:hover {
-  color: #b3b3b3; }
-
-.greyXL, .greyXL b, .greyXL strong, .greyXL i, .greyXL em {
-  color: #dedede; }
-
-a.greyXL, a.greyXL:active, a.greyXL:visited, a.greyXL.noHover:focus, a.greyXL.noHover:hover {
-  color: #dedede; }
-
-a.greyXL:focus, a.greyXL:focus-visible, a.greyXL:hover {
-  color: #ababab; }
-
-.greyL, .greyL b, .greyL strong, .greyL i, .greyL em {
-  color: #b2b2b2; }
-
-a.greyL, a.greyL:active, a.greyL:visited, a.greyL.noHover:focus, a.greyL.noHover:hover {
-  color: #b2b2b2; }
-
-a.greyL:focus, a.greyL:focus-visible, a.greyL:hover {
-  color: #7f7f7f; }
-
-.greyM, .greyM b, .greyM strong, .greyM i, .greyM em {
-  color: #8c8c8c; }
-
-a.greyM, a.greyM:active, a.greyM:visited, a.greyM.noHover:focus, a.greyM.noHover:hover {
-  color: #8c8c8c; }
-
-a.greyM:focus, a.greyM:focus-visible, a.greyM:hover {
-  color: #595959; }
-
-.errorColour, .errorColour b, .errorColour strong, .errorColour i, .errorColour em {
-  color: #eb1c24; }
-
-a.errorColour, a.errorColour:active, a.errorColour:visited, a.errorColour.noHover:focus, a.errorColour.noHover:hover {
-  color: #eb1c24; }
-
-a.errorColour:focus, a.errorColour:focus-visible, a.errorColour:hover {
-  color: #940d12; }
-
-.greyD, .greyD b, .greyD strong, .greyD i, .greyD em {
-  color: #666; }
-
-a.greyD, a.greyD:active, a.greyD:visited, a.greyD.noHover:focus, a.greyD.noHover:hover {
-  color: #666; }
-
-a.greyD:focus, a.greyD:focus-visible, a.greyD:hover {
-  color: #999999; }
-
-.greyXD, .greyXD b, .greyXD strong, .greyXD i, .greyXD em {
-  color: #4d4d4d; }
-
-a.greyXD, a.greyXD:active, a.greyXD:visited, a.greyXD.noHover:focus, a.greyXD.noHover:hover {
-  color: #4d4d4d; }
-
-a.greyXD:focus, a.greyXD:focus-visible, a.greyXD:hover {
-  color: gray; }
-
-.grey2XD, .grey2XD b, .grey2XD strong, .grey2XD i, .grey2XD em {
-  color: #333; }
-
-a.grey2XD, a.grey2XD:active, a.grey2XD:visited, a.grey2XD.noHover:focus, a.grey2XD.noHover:hover {
-  color: #333; }
-
-a.grey2XD:focus, a.grey2XD:focus-visible, a.grey2XD:hover {
-  color: #666666; }
-
-.grey3XD, .grey3XD b, .grey3XD strong, .grey3XD i, .grey3XD em {
-  color: #111; }
-
-a.grey3XD, a.grey3XD:active, a.grey3XD:visited, a.grey3XD.noHover:focus, a.grey3XD.noHover:hover {
-  color: #111; }
-
-a.grey3XD:focus, a.grey3XD:focus-visible, a.grey3XD:hover {
-  color: #444444; }
-
-.black, .black b, .black strong, .black i, .black em {
-  color: #000; }
-
-a.black, a.black:active, a.black:visited, a.black.noHover:focus, a.black.noHover:hover {
-  color: #000; }
-
-a.black:focus, a.black:focus-visible, a.black:hover {
-  color: #333333; }
-
-/* * NombreDeProyecto * ========================================================
-   Settings Text | Custom [/etc/css/custom/text.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Reset ----------------------------------------------------------------- */
-a {
-  line-height: 1;
-  cursor: pointer; }
-  a img {
-    border: none; }
-
-a, a:hover {
-  text-decoration: none; }
-
-/* // Text Selection -------------------------------------------------------- */
-::-moz-selection {
-  color: #000;
-  background-color: #8c8c8c;
-  text-shadow: none; }
-
-::selection {
-  color: #000;
-  background-color: #8c8c8c;
-  text-shadow: none; }
-
-/* // General --------------------------------------------------------------- */
-/* // Safari tel detection -------------------------------------------------- */
-a[href^=tel], a[href^=tel]:focus, a[href^=tel]:focus-visible, a[href^=tel]:hover, a[href^=tel]:active, a[href^=tel]:visited {
-  color: #333333 !important; }
-
-/* // Blockquote // REF [32] ------------------------------------------------ */
-blockquote {
-  margin: 0; }
-  blockquote p {
-    quotes: "“" "”" "«" "»";
-    /* quotes: "“" "”" "&lsquo;" "&rsquo;"; */ }
-    blockquote p:first-child::before {
-      content: open-quote; }
-    blockquote p:last-child::after {
-      content: close-quote; }
-
-q {
-  quotes: "“" "”" "«" "»";
-  /* quotes: "“" "”" "&lsquo;" "&rsquo;"; */ }
-  q::before {
-    content: open-quote; }
-  q::after {
-    content: close-quote; }
-
-/* * NombreDeProyecto * ========================================================
-   Text Classes | Custom [/etc/css/custom/classes_text.scss]
-   ========================================================================== */
-.txBold,
-.txBold a,
-.txBold span,
-.txBold strong,
-.txBold cite {
-  font-family: "mingliuregular";
-  font-weight: 400; }
-
-.txItalic {
-  font-style: italic; }
-
-.txUnderline, .txUnderline:focus, .txUnderline:focus-visible, .txUnderline:hover, .txUnderline:visited, .txUnderline:active {
-  text-decoration: underline; }
-
-.txLineThrough {
-  text-decoration: line-through; }
-
-.txUpperCase {
-  text-transform: uppercase; }
-
-.txLowerCase {
-  text-transform: lowercase; }
-
-.txSmallCaps {
-  font-variant: small-caps; }
-
-.txCapitalize {
-  text-transform: capitalize; }
-
-.txAlignCenter {
-  text-align: center; }
-
-.txAlignRight {
-  text-align: right; }
-
-.txAlignLeft {
-  text-align: left; }
-
-.txAlignJustify {
-  text-align: justify; }
-
-.txAlignJustifyCenter {
-  text-align: justify;
-  text-align-last: center; }
-
-.txJustifyInterWord {
-  text-justify: inter-word; }
-
-.txJustifyInterCharacter {
-  text-justify: inter-character; }
-
-.txIndented {
-  overflow: hidden;
-  text-indent: -9999px; }
-
-.txTruncated {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; }
-
-.txClampled {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden; }
-
-.txQuoted {
-  position: relative; }
-  .txQuoted::before {
-    content: "“"; }
-  .txQuoted::after {
-    content: "”"; }
-  .txQuoted .txQuoted::before {
-    content: "«"; }
-  .txQuoted .txQuoted::after {
-    content: "»"; }
-
-.txHyphensNone {
-  hyphens: none; }
-
-.txHyphensManual {
-  hyphens: manual; }
-
-.txHyphensAuto {
-  hyphens: auto; }
-
-.txNoSelectable {
-  user-select: none; }
-
-.txLetterSpacing {
-  letter-spacing: 0.05rem; }
-
-.txSuperscript {
-  position: relative;
-  top: -0.5em;
-  font-size: 80%;
-  /* vertical-align: super; */ }
-
-.txSymbol {
-  position: relative;
-  display: inline-flex;
-  width: 35px;
-  text-indent: -9999px;
-  overflow: hidden; }
-  .txSymbol::before {
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 30px;
-    text-indent: 0;
-    text-align: center; }
-  .txSymbol.symbol_plus::before {
-    content: "+"; }
-  .txSymbol.symbol_one::before {
-    content: "1"; }
-  .txSymbol.symbol_two::before {
-    content: "2"; }
-  .txSymbol.symbol_three::before {
-    content: "3"; }
-
-/* * NombreDeProyecto * ========================================================
-   Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
-   ========================================================================== */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0.8+100 */
-/*
-$bgGrad_colourPercent: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%);
-$bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
-.bgGrad_colourPercent{
-    background-image: $bgGrad_colourPercent;
-    filter: $bgGrad_colourPercent_filter;
-}
-*/
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd600+0,ff7a00+20,ff0069+47,d300c5+72,7638fa+100 */
-.bgGrad_gradient_ig {
-  background-image: linear-gradient(to right, #ffd600 0%, #ff7a00 20%, #ff0069 47%, #d300c5 72%, #7638fa 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd600', endColorstr='#7638fa',GradientType=1 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0.5+100 */
-.bgWhite_grad_50 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); }
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.5+89 */
-.bgBlack_grad_50 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 89%, rgba(0, 0, 0, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
-
-/* * NombreDeProyecto * ========================================================
-   Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
-   ========================================================================== */
-.bgWhite {
-  background-color: #fff; }
-
-.bgBlack {
-  background-color: #000; }
-
-.bgGreenSystemM {
-  background-color: #339900; }
-
-.bgGreenWhatsApp {
-  background-color: #25D366; }
-
-.bgGrey4XL {
-  background-color: #f9f9f9; }
-
-.bgGrey3XL {
-  background-color: #f2f2f2; }
-
-.bgGrey2XL {
-  background-color: #e6e6e6; }
-
-.bgGreyXL {
-  background-color: #dedede; }
-
-.bgGreyL {
-  background-color: #b2b2b2; }
-
-.bgGreyM {
-  background-color: #8c8c8c; }
-
-.bgGreyD {
-  background-color: #666; }
-
-.bgGreyXD {
-  background-color: #4d4d4d; }
-
-.bgGrey2XD {
-  background-color: #333; }
-
-.bgGrey3XD {
-  background-color: #111; }
-
-.bgError {
-  background-color: #eb1c24; }
-
-a.mainBgColour:hover, a.mainBgColour:focus {
-  background-color: #595959; }
-
-/* * NombreDeProyecto * ========================================================
-   Backgrounds Classes | Custom [/etc/css/custom/classes_backgrounds.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-.bgNone, .bgNone:focus, .bgNone:focus-visible, .bgNone:hover {
-  background-color: transparent !important;
-  background-image: none !important; }
-
-.bgTransparent, .bgTransparent:focus, .bgTransparent:focus-visible, .bgTransparent:hover {
-  background-color: transparent !important; }
-
-.bgNoImage, .bgNoImage:focus, .bgNoImage:focus-visible, .bgNoImage:hover {
-  background-image: none !important; }
-
-.bgError {
-  background-color: #eb1c24; }
-
-/* * NombreDeProyecto * ========================================================
-   Shadows Classes | Custom [/etc/css/custom/shadows.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-.shadow_text {
-  text-shadow: 0 0 3px #000; }
-
-.shadow_text_white {
-  text-shadow: 0 0 3px #fff; }
-
-.shadow_box {
-  box-shadow: 0 0 3px #000; }
-
-.shadow_box_inset {
-  box-shadow: inset 0 0 10px 0 #4d4d4d; }
-
-/* // Background Shadows ---------------------------------------------------- */
-.bgShadowT,
-.bgShadowT_after::after,
-.bgShadowB,
-.bgShadowB_after::after,
-.bgShadowB_50,
-.bgShadowB_50_after::after,
-.bgShadowV,
-.bgShadowV_after::after {
-  background-repeat: repeat-x;
-  background-size: auto 20px; }
-
-.bgShadowT_after::after,
-.bgShadowB_after::after,
-.bgShadowB_50_after::after,
-.bgShadowV_after::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 7850;
-  right: 0;
-  left: 0;
-  height: 30px; }
-
-.bgShadowB,
-.bgShadowB_after::after,
-.bgShadowB_50,
-.bgShadowB_50_after::after {
-  background-position: center bottom; }
-
-.bgShadowB,
-.bgShadowB_after::after {
-  background-image: url("/stage/img/bg_shadowB.png"); }
-
-.bgShadowB_50,
-.bgShadowB_50_after::after {
-  background-image: url("/stage/img/bg_shadowB_50.png"); }
-
-.bgShadowV,
-.bgShadowV_after::after {
-  background-image: url("/stage/img/bg_shadowT.png"), url("/stage/img/bg_shadowB.png");
-  background-position: center top, center bottom; }
-
-.bgShadowT,
-.bgShadowT_after::after {
-  background-image: url("/stage/img/bg_shadowT.png");
-  background-position: center top; }
-
-.bgShadowT_after::after {
-  top: 0; }
-
-.bgShadowB_after::after,
-.bgShadowB_50_after::after {
-  bottom: 0; }
-
-.bgShadowV_after::after {
-  top: 0;
-  bottom: 0; }
-
-/* * NombreDeProyecto * ========================================================
-   Useful Classes ALL | Etc [/etc/css/scss/classes_useful_all.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/*___ Accessibility _____________________*/
-#go-main-content {
-  top: auto;
-  left: -10000px;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden; }
-  #go-main-content:focus {
-    position: static;
-    width: auto;
-    height: auto; }
-
-/*___ Clearfix __________________________*/
-.clearfix::before,
-.clearfix::after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
-
-.clearfix {
-  display: inline-block; }
-
-* html .clearfix {
-  height: 1%; }
-
-.clearfix {
-  display: block; }
-
-/*___ Positioning _______________________*/
-.pRel {
-  position: relative; }
-
-.pAbs {
-  position: absolute; }
-
-.clear {
-  clear: both; }
-
-/*___ Display ___________________________*/
-.displayBlock {
-  display: block !important; }
-
-.displayInline {
-  display: inline !important; }
-
-.displayInlineBlock {
-  display: inline-block !important; }
-
-.displayTable {
-  display: table; }
-
-.displayNone {
-  display: none !important; }
-
-.contentBox {
-  box-sizing: content-box; }
-
-.centerVertically {
-  display: table-cell;
-  vertical-align: middle; }
-
-.visuallyHidden:not(:focus):not(:active),
-.sr-only:not(:focus):not(:active) {
-  /*
-    // REF [22]
-Hide only visually, but have it available for screen readers:
-https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-
-    // REF [22a]
-For long content, line feeds are not interpreted as spaces and small width
-causes content to wrap 1 word per line:
-https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-  position: absolute;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  border: 0 !important;
-  padding: 0 !important;
-  margin: -1px;
-  overflow: hidden;
-  white-space: nowrap; }
-
-article, article::before, article::after, details, details::before, details::after, figcaption, figcaption::before, figcaption::after, figure, figure::before, figure::after, hgroup, hgroup::before, hgroup::after, main, main::before, main::after, menu, menu::before, menu::after, nav, nav::before, nav::after, summary, summary::before, summary::after,
-.borderBox,
-.borderBox::before,
-.borderBox::after {
-  box-sizing: border-box; }
-
-/*___ Masks / Cover _____________________*/
-.mask {
-  position: relative;
-  overflow: hidden; }
-
-.coverAll {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute; }
-
-.coverAll_mask {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  overflow: hidden; }
-
-/*___ Cursors ___________________________*/
-.cursorDefault {
-  cursor: default; }
-
-.cursorPointer {
-  cursor: pointer; }
-
-.cursorHelp {
-  cursor: help; }
-
-.cursorNone {
-  cursor: none; }
-
-/*___ Lists and floats __________________*/
-.unstyled, .horizontal {
-  list-style: none !important; }
-
-.floatLeft, .horizontal li {
-  float: left !important; }
-
-.floatRight {
-  float: right !important; }
-
-.horizontalCenter {
-  list-style: none;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  text-align: center; }
-  .horizontalCenter li {
-    display: inline-block; }
-    .horizontalCenter li > * {
-      display: inline-block; }
-
-.horizontalCenterFlex {
-  justify-content: center;
-  flex-wrap: nowrap; }
-
-.floatNone,
-.horizontal li.floatNone {
-  float: none !important; }
-
-/*___ Spacing Helpers ___________________*/
-.ptn, .pvn, .pan {
-  padding-top: 0 !important; }
-
-.prn, .phn, .pan {
-  padding-right: 0 !important; }
-
-.pbn, .pvn, .pan {
-  padding-bottom: 0 !important; }
-
-.pln, .phn, .pan {
-  padding-left: 0 !important; }
-
-.mtn, .mvn, .man {
-  margin-top: 0 !important; }
-
-.mrn, .mhn, .man {
-  margin-right: 0 !important; }
-
-.mbn, .mvn, .man {
-  margin-bottom: 0 !important; }
-
-.mln, .mhn, .man {
-  margin-left: 0 !important; }
-
-.pts, .pvs, .pas {
-  padding-top: 5px !important; }
-
-.prs, .phs, .pas {
-  padding-right: 5px !important; }
-
-.pbs, .pvs, .pas {
-  padding-bottom: 5px !important; }
-
-.pls, .phs, .pas {
-  padding-left: 5px !important; }
-
-.mts, .mvs, .mas {
-  margin-top: 5px !important; }
-
-.mrs, .mhs, .mas {
-  margin-right: 5px !important; }
-
-.mbs, .mvs, .mas {
-  margin-bottom: 5px !important; }
-
-.mls, .mhs, .mas {
-  margin-left: 5px !important; }
-
-.ptm, .pvm, .pam {
-  padding-top: 10px !important; }
-
-.prm, .phm, .pam {
-  padding-right: 10px !important; }
-
-.pbm, .pvm, .pam {
-  padding-bottom: 10px !important; }
-
-.plm, .phm, .pam {
-  padding-left: 10px !important; }
-
-.mtm, .mvm, .mam {
-  margin-top: 10px !important; }
-
-.mrm, .mhm, .mam {
-  margin-right: 10px !important; }
-
-.mbm, .mvm, .mam {
-  margin-bottom: 10px !important; }
-
-.mlm, .mhm, .mam {
-  margin-left: 10px !important; }
-
-.ptl, .pvl, .pal {
-  padding-top: 20px !important; }
-
-.prl, .phl, .pal {
-  padding-right: 20px !important; }
-
-.pbl, .pvl, .pal {
-  padding-bottom: 20px !important; }
-
-.pll, .phl, .pal {
-  padding-left: 20px !important; }
-
-.mtl, .mvl, .mal {
-  margin-top: 20px !important; }
-
-.mrl, .mhl, .mal {
-  margin-right: 20px !important; }
-
-.mbl, .mvl, .mal {
-  margin-bottom: 20px !important; }
-
-.mll, .mhl, .mal {
-  margin-left: 20px !important; }
-
-.mra, .mha {
-  margin-right: auto !important; }
-
-.mla, .mha {
-  margin-left: auto !important; }
-
-/*___ Flexbox Classes ___________________*/
-.displayFlex, .flexHorizontal, .flexColumn, .flexNoWrap, .flexJustifyEnd, .flexJustifyCenter, .flexJustifyBetween, .flexJustifyAround, .flexAlignContentEnd, .flexAlignContentCenter, .flexAlignContentBetween, .flexAlignContentAround, .flexAlignContentStretch, .flexAlignItemsEnd, .flexAlignItemsCenter, .flexAlignItemsBaseline, .flexAlignItemsStretch, .horizontalCenterFlex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start; }
-
-.flexCenter {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center; }
-
-.flexCenter > * {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%; }
-
-.flexColumn {
-  flex-direction: column; }
-
-.flexNoWrap {
-  flex-wrap: nowrap; }
-
-.flexJustifyEnd {
-  justify-content: flex-end; }
-
-.flexJustifyCenter {
-  justify-content: center; }
-
-.flexJustifyBetween {
-  justify-content: space-between; }
-
-.flexJustifyAround {
-  justify-content: space-around; }
-
-.flexAlignContentEnd {
-  align-content: flex-end; }
-
-.flexAlignContentCenter {
-  align-content: center; }
-
-.flexAlignContentBetween {
-  align-content: space-between; }
-
-.flexAlignContentAround {
-  align-content: space-around; }
-
-.flexAlignContentStretch {
-  align-content: stretch; }
-
-.flexAlignItemsEnd {
-  align-items: flex-end; }
-
-.flexAlignItemsCenter {
-  align-items: center; }
-
-.flexAlignItemsBaseline {
-  align-items: baseline; }
-
-.flexAlignItemsStretch {
-  align-items: stretch; }
-
-.flexHorizontal {
-  list-style: none !important; }
-
-/* * NombreDeProyecto * ========================================================
-   Useful Classes Responsive | Etc [/etc/css/scss/classes_useful_responsive.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Before MQ350 Classes -------------------------------------------------- */
-/* // After MQ350 Classes --------------------------------------------------- */
-/* // Before MQ500 Classes -------------------------------------------------- */
-@media (max-width: 500px) {
-  .global_MQ_B500 {
-    display: block !important; }
-    .global_MQ_B500.displayFlex {
-      display: flex !important; }
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ500 Classes --------------------------------------------------- */
-@media (min-width: 501px) {
-  .global_MQ_A500 {
-    display: block !important; }
-    .global_MQ_A500.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ500 Before MQ768 Classes -------------------------------------- */
-/* // Before MQ600 Classes -------------------------------------------------- */
-@media (max-width: 600px) {
-  /*___ Positioning _______________________*/
-  .pRelB600 {
-    position: relative; }
-  .pAbsB600 {
-    position: absolute; }
-  .clearB600 {
-    clear: both; }
-  /*___ Display ___________________________*/
-  .displayBlockB600 {
-    display: block !important; }
-  .displayInlineB600 {
-    display: inline !important; }
-  .displayInlineBlockB600 {
-    display: inline-block !important; }
-  .displayTableB600 {
-    display: table; }
-  .displayNoneB600 {
-    display: none !important; }
-  .contentBoxB600 {
-    box-sizing: content-box; }
-  .borderBoxB600 {
-    box-sizing: border-box; }
-  .centerVerticallyB600 {
-    display: table-cell;
-    vertical-align: middle; }
-  .visuallyHiddenB600:not(:focus):not(:active),
-  .sr-onlyB600:not(:focus):not(:active) {
-    position: absolute;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    border: 0 !important;
-    padding: 0 !important;
-    margin: -1px;
-    overflow: hidden;
-    white-space: nowrap; } }
-
-/* // After MQ600 Classes --------------------------------------------------- */
-@media (min-width: 601px) {
-  .global_MQ_A600 {
-    display: block !important; }
-    .global_MQ_A600.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // Before MQ768 Classes -------------------------------------------------- */
-@media (max-width: 767px) {
-  /*___ Positioning _______________________*/
-  .pRelBT {
-    position: relative; }
-  .pAbsBT {
-    position: absolute; }
-  .clearBT {
-    clear: both; }
-  /*___ Display ___________________________*/
-  .displayBlockBT {
-    display: block !important; }
-  .displayInlineBT {
-    display: inline !important; }
-  .displayInlineBlockBT {
-    display: inline-block !important; }
-  .displayTableBT {
-    display: table; }
-  .displayNoneBT {
-    display: none !important; }
-  .contentBoxBT {
-    box-sizing: content-box; }
-  .borderBoxBT {
-    box-sizing: border-box; }
-  .centerVerticallyBT {
-    display: table-cell;
-    vertical-align: middle; }
-  .visuallyHiddenBT:not(:focus):not(:active),
-  .sr-onlyBT:not(:focus):not(:active) {
-    position: absolute;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    border: 0 !important;
-    padding: 0 !important;
-    margin: -1px;
-    overflow: hidden;
-    white-space: nowrap; }
-  /*___ Lists and floats __________________*/
-  .unstyledBT, .horizontalBT {
-    list-style: none !important; }
-  .floatLeftBT, .horizontalBT li {
-    float: left !important; }
-  .floatRightBT {
-    float: right !important; }
-  .horizontalCenterBT {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterBT li {
-      display: inline-block !important; }
-      .horizontalCenterBT li > * {
-        display: inline-block !important; }
-  .floatNoneBT, .unstyledBT li {
-    float: none !important; } }
-
-/* // After MQ768 Classes --------------------------------------------------- */
-@media (min-width: 768px) {
-  /*___ Positioning _______________________*/
-  .pRelAT {
-    position: relative; }
-  .pAbsAT {
-    position: absolute; }
-  .clearAT {
-    clear: both; }
-  /*___ Display ___________________________*/
-  .displayBlockAT {
-    display: block !important; }
-  .displayInlineAT {
-    display: inline !important; }
-  .displayInlineBlockAT {
-    display: inline-block !important; }
-  .displayTableAT {
-    display: table; }
-  .displayNoneAT {
-    display: none !important; }
-  .contentBoxAT {
-    box-sizing: content-box; }
-  .borderBoxAT {
-    box-sizing: border-box; }
-  .centerVerticallyAT {
-    display: table-cell;
-    vertical-align: middle; }
-  .visuallyHiddenAT:not(:focus):not(:active),
-  .sr-onlyAT:not(:focus):not(:active) {
-    position: absolute;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    border: 0 !important;
-    padding: 0 !important;
-    margin: -1px;
-    overflow: hidden;
-    white-space: nowrap; }
-  /*___ Lists and floats __________________*/
-  .unstyledAT, .horizontalAT {
-    list-style: none !important; }
-  .floatLeftAT, .horizontalAT li {
-    float: left !important; }
-  .floatRightAT {
-    float: right !important; }
-  .horizontalCenterAT {
-    margin-right: auto !important;
-    margin-left: auto !important;
-    list-style: none;
-    text-align: center; }
-    .horizontalCenterAT li {
-      display: inline-block !important; }
-      .horizontalCenterAT li > * {
-        display: inline-block !important; }
-  .floatNoneAT, .unstyledAT li {
-    float: none !important; }
-  /*___ Flexbox Classes ___________________*/
-  .displayFlexAT, .flexHorizontalAT, .flexColumnAT, .flexNoWrapAT, .flexJustifyEndAT, .flexJustifyCenterAT, .flexJustifyBetweenAT, .flexJustifyAroundAT, .flexAlignContentEndAT, .flexAlignContentCenterAT, .flexAlignContentBetweenAT, .flexAlignContentAroundAT, .flexAlignContentStretchAT, .flexAlignItemsEndAT, .flexAlignItemsCenterAT, .flexAlignItemsBaselineAT, .flexAlignItemsStretchAT, .horizontalCenterFlexAT {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start; }
-  .flexColumnAT {
-    flex-direction: column; }
-  .flexNoWrapAT {
-    flex-wrap: nowrap; }
-  .flexJustifyEndAT {
-    justify-content: flex-end; }
-  .flexJustifyCenterAT {
-    justify-content: center; }
-  .flexJustifyBetweenAT {
-    justify-content: space-between; }
-  .flexJustifyAroundAT {
-    justify-content: space-around; }
-  .flexAlignContentEndAT {
-    align-content: flex-end; }
-  .flexAlignContentCenterAT {
-    align-content: center; }
-  .flexAlignContentBetweenAT {
-    align-content: space-between; }
-  .flexAlignContentAroundAT {
-    align-content: space-around; }
-  .flexAlignContentStretchAT {
-    align-content: stretch; }
-  .flexAlignItemsEndAT {
-    align-items: flex-end; }
-  .flexAlignItemsCenterAT {
-    align-items: center; }
-  .flexAlignItemsBaselineAT {
-    align-items: baseline; }
-  .flexAlignItemsStretchAT {
-    align-items: stretch; }
-  .flexHorizontalAT {
-    list-style: none !important; } }
-
-/* // After MQ768 Before MQ1024 Classes ------------------------------------- */
-/* // After MQ800 Classes --------------------------------------------------- */
-@media (min-width: 801px) {
-  .global_MQ_A800 {
-    display: block !important; }
-    .global_MQ_A800.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ1000 Classes -------------------------------------------------- */
-@media (min-width: 1001px) {
-  .global_MQ_A1000 {
-    display: block !important; }
-    .global_MQ_A1000.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // Before MQ1024 Classes ------------------------------------------------- */
-/* // After MQ1024 Classes -------------------------------------------------- */
-/* // After MQ1024 Before MQ1200 Classes ------------------------------------ */
-/* // After MQ768 Before MQ1200 Classes ------------------------------------- */
-/* // Before MQ1200 Classes ------------------------------------------------- */
-/* // After MQ1200 Classes -------------------------------------------------- */
-/* // After MQ1300 Classes -------------------------------------------------- */
-@media (min-width: 1301px) {
-  .global_MQ_A1300 {
-    display: block !important; }
-    .global_MQ_A1300.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ1500 Classes -------------------------------------------------- */
-@media (min-width: 1501px) {
-  .global_MQ_A1500 {
-    display: block !important; }
-    .global_MQ_A1500.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A2000,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ2000 Classes -------------------------------------------------- */
-@media (min-width: 2001px) {
-  .global_MQ_A2000 {
-    display: block !important; }
-    .global_MQ_A2000.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2500,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ2500 Classes -------------------------------------------------- */
-@media (min-width: 2501px) {
-  .global_MQ_A2500 {
-    display: block !important; }
-    .global_MQ_A2500.displayFlex {
-      display: flex !important; }
-  .global_MQ_B500,
-  .global_MQ_A500,
-  .global_MQ_A600,
-  .global_MQ_A800,
-  .global_MQ_A1000,
-  .global_MQ_A1300,
-  .global_MQ_A1500,
-  .global_MQ_A2000,
-  .global_MQ_A3000 {
-    display: none !important; } }
-
-/* // After MQ3000 Classes --------------------------------------------------
-@include afterMQ3000{
-    .global_MQ_A3000{
-        display: $block;
-        
-        &.displayFlex{
-            display: flex!important;
-        }
-    }
-    
-    .global_MQ_B500,
-    .global_MQ_A500,   
-    .global_MQ_A600,
-    .global_MQ_A800,  
-    .global_MQ_A1000, 
-    .global_MQ_A1300, 
-    .global_MQ_A1500,  
-    .global_MQ_A2000,  
-    .global_MQ_A2500{
-        display: $none;
-    }
-}
-*/
-/* * NombreDeProyecto * ========================================================
-   Container Settings | Etc [/etc/css/scss/settings_container.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-.container,
-.containerB500,
-.containerA500,
-.container500O,
-.containerB600,
-.containerA600,
-.containerB650,
-.containerA650,
-.containerB768,
-.containerA768,
-.containerA768B1024,
-.containerB1024,
-.containerA1024,
-.containerA1024B1200,
-.containerB1200,
-.containerA1200,
-.containerA1300,
-.containerA1400,
-.containerA1500,
-.containerA1600 {
-  padding: 0;
-  margin-right: auto;
-  margin-left: auto; }
-  .container::before, .container::after,
-  .containerB500::before,
-  .containerB500::after,
-  .containerA500::before,
-  .containerA500::after,
-  .container500O::before,
-  .container500O::after,
-  .containerB600::before,
-  .containerB600::after,
-  .containerA600::before,
-  .containerA600::after,
-  .containerB650::before,
-  .containerB650::after,
-  .containerA650::before,
-  .containerA650::after,
-  .containerB768::before,
-  .containerB768::after,
-  .containerA768::before,
-  .containerA768::after,
-  .containerA768B1024::before,
-  .containerA768B1024::after,
-  .containerB1024::before,
-  .containerB1024::after,
-  .containerA1024::before,
-  .containerA1024::after,
-  .containerA1024B1200::before,
-  .containerA1024B1200::after,
-  .containerB1200::before,
-  .containerB1200::after,
-  .containerA1200::before,
-  .containerA1200::after,
-  .containerA1300::before,
-  .containerA1300::after,
-  .containerA1400::before,
-  .containerA1400::after,
-  .containerA1500::before,
-  .containerA1500::after,
-  .containerA1600::before,
-  .containerA1600::after {
-    content: " ";
-    display: table; }
-  .container::after,
-  .containerB500::after,
-  .containerA500::after,
-  .container500O::after,
-  .containerB600::after,
-  .containerA600::after,
-  .containerB650::after,
-  .containerA650::after,
-  .containerB768::after,
-  .containerA768::after,
-  .containerA768B1024::after,
-  .containerB1024::after,
-  .containerA1024::after,
-  .containerA1024B1200::after,
-  .containerB1200::after,
-  .containerA1200::after,
-  .containerA1300::after,
-  .containerA1400::after,
-  .containerA1500::after,
-  .containerA1600::after {
-    clear: both; }
-
-@media (max-width: 350px) {
-  .container {
-    width: 90%;
-    max-width: 300px; } }
-
-@media (min-width: 351px) {
-  .container {
-    width: 90%; } }
-
-@media (min-width: 501px) {
-  .container {
-    width: 90%; } }
-
-@media (min-width: 601px) {
-  .container {
-    width: 85%; } }
-
-@media (min-width: 768px) {
-  .container {
-    width: calc(100% - calc(30px + 30px));
-    max-width: 720px; } }
-
-@media (min-width: 851px) {
-  .container {
-    max-width: 750px; } }
-
-@media (min-width: 901px) {
-  .container {
-    max-width: 800px; } }
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 900px; } }
-
-@media (min-width: 1101px) {
-  .container {
-    max-width: 1050px; } }
-
-@media (min-width: 1201px) {
-  .container {
-    max-width: 1150px; } }
-
-@media (min-width: 1301px) {
-  .container {
-    max-width: 1250px; } }
-
-@media (min-width: 1401px) {
-  .container {
-    max-width: 1350px; } }
-
-@media (min-width: 1401px) {
-  .container {
-    box-sizing: border-box;
-    padding-right: 30px;
-    padding-left: 30px; } }
-
-@media (min-width: 1501px) {
-  .container {
-    max-width: 1350px; } }
-
-@media (min-width: 1601px) {
-  .container {
-    max-width: 1350px; } }
-
-@media (max-width: 350px) {
-  .container.container_centered_absolute {
-    position: absolute;
-    left: 50%;
-    width: 280px;
-    max-width: none !important;
-    margin-left: calc(-1 * calc(280px / 2)); } }
-
-@media (min-width: 351px) {
-  .container.container_centered_absolute {
-    position: absolute;
-    left: 50%;
-    margin-left: calc(-1 * calc(90% / 2)); } }
-
-@media (min-width: 501px) {
-  .container.container_centered_absolute {
-    position: absolute;
-    left: 50%;
-    margin-left: calc(-1 * calc(90% / 2)); } }
-
-@media (min-width: 601px) {
-  .container.container_centered_absolute {
-    margin-left: calc(-1 * calc(85% / 2)); } }
-
-@media (min-width: 651px) {
-  .container.container_centered_absolute {
-    margin-left: calc(-1 * calc(85% / 2)); } }
-
-@media (min-width: 768px) {
-  .container.container_centered_absolute {
-    width: 720px;
-    margin-left: calc(-1 * calc(720px / 2)); } }
-
-@media (min-width: 851px) {
-  .container.container_centered_absolute {
-    width: 750px;
-    margin-left: calc(-1 * calc(750px / 2)); } }
-
-@media (min-width: 901px) {
-  .container.container_centered_absolute {
-    width: 800px;
-    margin-left: calc(-1 * calc(800px / 2)); } }
-
-@media (min-width: 1024px) {
-  .container.container_centered_absolute {
-    width: 900px;
-    margin-left: calc(-1 * calc(900px / 2)); } }
-
-@media (min-width: 1101px) {
-  .container.container_centered_absolute {
-    width: 1050px;
-    margin-left: calc(-1 * calc(1050px / 2)); } }
-
-@media (min-width: 1201px) {
-  .container.container_centered_absolute {
-    width: 1150px;
-    margin-left: calc(-1 * calc(1150px / 2)); } }
-
-@media (min-width: 1301px) {
-  .container.container_centered_absolute {
-    width: 1250px;
-    margin-left: calc(-1 * calc(1250px / 2)); } }
-
-@media (min-width: 1401px) {
-  .container.container_centered_absolute {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1501px) {
-  .container.container_centered_absolute {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .container.container_centered_absolute {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 601px) {
-  .container.container_centered_absolute_A600 {
-    position: absolute;
-    left: 50%;
-    margin-left: calc(-1 * calc(85% / 2)); } }
-
-@media (min-width: 651px) {
-  .container.container_centered_absolute_A600 {
-    width: 85%;
-    margin-left: calc(-1 * calc(85% / 2)); } }
-
-@media (min-width: 768px) {
-  .container.container_centered_absolute_A600 {
-    width: 720px;
-    margin-left: calc(-1 * calc(720px / 2)); } }
-
-@media (min-width: 851px) {
-  .container.container_centered_absolute_A600 {
-    width: 750px;
-    margin-left: calc(-1 * calc(750px / 2)); } }
-
-@media (min-width: 901px) {
-  .container.container_centered_absolute_A600 {
-    width: 800px;
-    margin-left: calc(-1 * calc(800px / 2)); } }
-
-@media (min-width: 1024px) {
-  .container.container_centered_absolute_A600 {
-    width: 900px;
-    margin-left: calc(-1 * calc(900px / 2)); } }
-
-@media (min-width: 1101px) {
-  .container.container_centered_absolute_A600 {
-    width: 1050px;
-    margin-left: calc(-1 * calc(1050px / 2)); } }
-
-@media (min-width: 1201px) {
-  .container.container_centered_absolute_A600 {
-    width: 1150px;
-    margin-left: calc(-1 * calc(1150px / 2)); } }
-
-@media (min-width: 1301px) {
-  .container.container_centered_absolute_A600 {
-    width: 1250px;
-    margin-left: calc(-1 * calc(1250px / 2)); } }
-
-@media (min-width: 1401px) {
-  .container.container_centered_absolute_A600 {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1501px) {
-  .container.container_centered_absolute_A600 {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .container.container_centered_absolute_A600 {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1401px) {
-  .container.container_centered_absolute_A1400 {
-    position: absolute;
-    left: 50%;
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1501px) {
-  .container.container_centered_absolute_A1400 {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .container.container_centered_absolute_A1400 {
-    width: 1350px;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .container.container_centered_absolute_A1600 {
-    position: absolute;
-    width: 1350px;
-    left: 50%;
-    margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 601px) {
-  .containerA600 {
-    width: 85%; }
-    .containerA600.container_centered_absolute_A600 {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(85% / 2)); } }
-
-@media (min-width: 651px) {
-  .containerA600 {
-    width: 85%; }
-    .containerA600.container_centered_absolute_A650 {
-      margin-left: calc(-1 * calc(85% / 2)); } }
-
-@media (min-width: 768px) {
-  .containerA600 {
-    width: calc(100% - calc(30px + 30px));
-    max-width: 720px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(720px / 2)); } }
-
-@media (min-width: 851px) {
-  .containerA600 {
-    width: 750px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(750px / 2)); } }
-
-@media (min-width: 901px) {
-  .containerA600 {
-    max-width: 800px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(800px / 2)); } }
-
-@media (min-width: 1024px) {
-  .containerA600 {
-    max-width: 900px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(900px / 2)); } }
-
-@media (min-width: 1101px) {
-  .containerA600 {
-    max-width: 1050px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1050px / 2)); } }
-
-@media (min-width: 1201px) {
-  .containerA600 {
-    max-width: 1150px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1150px / 2)); } }
-
-@media (min-width: 1301px) {
-  .containerA600 {
-    max-width: 1250px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1250px / 2)); } }
-
-@media (min-width: 1401px) {
-  .containerA600 {
-    max-width: 1350px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1401px) {
-  .containerA600 {
-    box-sizing: border-box;
-    padding-right: 30px;
-    padding-left: 30px; } }
-
-@media (min-width: 1501px) {
-  .containerA600 {
-    max-width: 1350px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .containerA600 {
-    max-width: 1350px; }
-    .containerA600.container_centered_absolute_A600 {
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1401px) {
-  .containerA1400 {
-    width: calc(100% - calc(30px + 30px));
-    max-width: 1350px; }
-    .containerA1400.container_centered_absolute_A1400 {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1401px) {
-  .containerA1400 {
-    box-sizing: border-box;
-    padding-right: 30px;
-    padding-left: 30px; } }
-
-@media (min-width: 1501px) {
-  .containerA1400 {
-    max-width: 1350px; }
-    .containerA1400.container_centered_absolute_A1400 {
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .containerA1400 {
-    max-width: 1350px; }
-    .containerA1400.container_centered_absolute_A1400 {
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-@media (min-width: 1601px) {
-  .containerA1600 {
-    max-width: 1350px; }
-    .containerA1600.container_centered_absolute_A1600 {
-      position: absolute;
-      left: 50%;
-      margin-left: calc(-1 * calc(1350px / 2)); } }
-
-/* // Hack para Windows Phone ----------------------------------------------- */
-@media (max-width: 400px) {
-  @-ms-viewport {
-    width: 320px; } }
-
-/* * NombreDeProyecto * ========================================================
-   Global Styles | Custom [/etc/css/custom/global.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Main Gobal Styles ----------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Page Int Section Full Height Styles | Custom [/etc/css/custom/imp/page_section_fullHeight_imp.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Page Int Section Full Height Styles | Custom [/etc/css/custom/imp/page_headerFixed_imp.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-#dev_window_width {
-  /* // REF [48] Dev window width */
-  border: 1px solid #f2f2f2;
-  position: fixed;
-  z-index: 12000;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #333;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-align: center; }
-
-#main {
-  background-color: #fff; }
-
-.error_alert {
-  border: 6px solid #ff46b7; }
-
-/* =============================================================================
-   Internas Global Styles
-   ========================================================================== */
-/*
-.container{
-  height: 100vh;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-}
-
-.container section {
-  scroll-snap-align: center;
-}
-*/
-/* =============================================================================
-   Separator
-   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-   Secondary Separator
-   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* // Secondary Separator --------------------------------------------------- */
-/*___ Secondary _________________________*/
-/* * NombreDeProyecto * ========================================================
-   Lists | Custom [/etc/css/custom/lists.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Reset ----------------------------------------------------------------- */
-ul, ol, li, dd {
-  margin: 0;
-  padding: 0; }
-
-ul {
-  list-style: disc inside; }
-
-ol {
-  list-style: decimal inside; }
-
-/* // Styles ---------------------------------------------------------------- */
-.list_hyphenated {
-  list-style: none !important; }
-  .list_hyphenated li {
-    position: relative; }
-    .list_hyphenated li::before {
-      content: "- "; }
-
-.list_commas li {
-  position: relative;
-  display: inline; }
-  .list_commas li::after {
-    content: ",";
-    display: inline;
-    white-space: pre; }
-  .list_commas li:last-child::after {
-    display: none; }
-
-.list_numbered {
-  counter-reset: list_numbered_counter; }
-  .list_numbered > li {
-    position: relative;
-    box-sizing: border-box;
-    padding-left: calc(25px + 5px);
-    list-style-type: none; }
-    .list_numbered > li::before {
-      width: 25px;
-      height: 25px;
-      counter-increment: list_numbered_counter;
-      content: counter(list_numbered_counter);
-      display: block;
-      float: left;
-      margin-right: 0 !important;
-      margin-left: calc(-1 * calc(25px - 0));
-      white-space: pre; }
-  .list_numbered.list_numbered_decimal > li::before {
-    content: counter(list_numbered_counter, decimal) "."; }
-  .list_numbered.list_numbered_lowerLatin > li::before {
-    content: counter(list_numbered_counter, lower-latin) "."; }
-  .list_numbered.list_numbered_upperLatin > li::before {
-    content: counter(list_numbered_counter, upper-latin) "."; }
-  .list_numbered.list_numbered_upperRoman > li::before {
-    content: counter(list_numbered_counter, upper-roman) "."; }
-  .list_numbered.list_numbered_lowerRoman > li::before {
-    content: counter(list_numbered_counter, lower-roman) "."; }
-
-.list_bulleted_dot li,
-.list_bulleted_square li,
-.list_bulleted_tick li,
-.list_bulleted_chevron li {
-  list-style-type: none;
-  box-sizing: border-box;
-  position: relative; }
-  .list_bulleted_dot li::before,
-  .list_bulleted_square li::before,
-  .list_bulleted_tick li::before,
-  .list_bulleted_chevron li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    display: block;
-    background-repeat: no-repeat; }
-
-.list_bulleted_dot li,
-.list_bulleted_square li,
-.list_bulleted_chevron li {
-  padding-left: 15px; }
-  .list_bulleted_dot li::before,
-  .list_bulleted_square li::before,
-  .list_bulleted_chevron li::before {
-    top: 9px;
-    width: 7px;
-    height: 7px;
-    background-position: left top;
-    background-size: 7px; }
-
-.list_bulleted_dot li::before {
-  background-image: url("/stage/img/bullet_dot.svg"); }
-
-.list_bulleted_square li::before {
-  background-image: url("/stage/img/bullet_square.svg"); }
-
-.list_bulleted_tick li {
-  padding-left: 20px; }
-  .list_bulleted_tick li::before {
-    width: 20px;
-    height: 20px;
-    top: 0;
-    background-image: url("/stage/img/bullet_tick.svg");
-    background-position: left 3px;
-    background-size: auto calc(20px - 5px); }
-
-.list_bulleted_chevron li::before {
-  background-image: url("/stage/img/bullet_chevron.svg"); }
-
-.list_file li {
-  box-sizing: border-box;
-  position: relative;
-  min-height: 30px;
-  padding-top: 5px;
-  padding-left: calc(30px + 2px); }
-  .list_file li a {
-    height: auto;
-    min-height: 30px;
-    line-height: 1.3; }
-  .list_file li::before {
-    width: 30px;
-    height: 30px;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: auto 30px; }
-
-.list_file.filePDF li::before {
-  background-image: url("/stage/img/file_pdf.svg"); }
-
-.list_file.fileDOC li {
-  background-image: url("/stage/img/file_pdf.svg"); }
-
-.list_inline li {
-  display: inline; }
-
-/* * NombreDeProyecto * ========================================================
-   Button Styles | Custom [/etc/css/custom/buttons.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Reset ----------------------------------------------------------------- */
-button,
-input[type="button"],
-html input[type="button"] {
-  border: none; }
-
-button, button::before, button::after {
-  box-sizing: border-box; }
-
-/* // Button General -------------------------------------------------------- */
-/* // Call to Action -------------------------------------------------------- */
-.callToAction {
-  border: 2px solid #8c8c8c;
-  transition: background-color 1s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.6s, border-color 1s, box-shadow 0.6s;
-  display: block;
-  box-sizing: border-box;
-  background-color: #8c8c8c;
-  padding-right: 10px;
-  padding-left: 10px;
-  font-family: "mingliuregular";
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center; }
-  .callToAction, .callToAction:focus, .callToAction:focus-visible, .callToAction:hover {
-    text-decoration: none !important; }
-  .callToAction, .callToAction:visited, .callToAction:active {
-    color: #fff; }
-  .callToAction:focus, .callToAction:focus-visible, .callToAction:hover {
-    background-color: #b2b2b2;
-    border-color: #333;
-    color: #4d4d4d; }
-  .callToAction, .callToAction::before, .callToAction::after {
-    box-sizing: border-box; }
-  .callToAction.CTA_white, .callToAction.CTA_white:visited, .callToAction.CTA_white:active {
-    border-color: #f9f9f9;
-    background-color: #e6e6e6;
-    color: #111; }
-  .callToAction.CTA_white:focus, .callToAction.CTA_white:focus-visible, .callToAction.CTA_white:hover {
-    box-shadow: 0 0 0 transparent;
-    border-color: #f9f9f9;
-    background-color: #e6e6e6;
-    color: #111;
-    text-shadow: 0 0 0 transparent; }
-  .callToAction.CTA_hollow, .callToAction.CTA_hollow:focus, .callToAction.CTA_hollow:focus-visible, .callToAction.CTA_hollow:hover, .callToAction.CTA_hollow:visited, .callToAction.CTA_hollow:active {
-    border: 1px solid #fff;
-    color: #fff; }
-  .callToAction.CTA_hollow, .callToAction.CTA_hollow:visited, .callToAction.CTA_hollow:active {
-    background-color: transparent; }
-  .callToAction.CTA_hollow:focus, .callToAction.CTA_hollow:focus-visible, .callToAction.CTA_hollow:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
-  @media (max-width: 500px) {
-    .callToAction {
-      width: 100% !important; } }
-  @media (max-width: 767px) {
-    .callToAction {
-      height: auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      line-height: 1.3; } }
-  @media (min-width: 768px) {
-    .callToAction {
-      height: 50px;
-      line-height: 50px; } }
-
-/* // Button Close ---------------------------------------------------------- */
-.button_close {
-  position: absolute;
-  z-index: 9900;
-  border-radius: 50%;
-  width: 35px !important;
-  height: 35px !important;
-  background-size: 100%;
-  background-color: #fff;
-  background-image: url("/stage/img/button_close.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-indent: -9999px;
-  overflow: hidden; }
-  .button_close, .button_close:focus, .button_close:focus-visible, .button_close:hover {
-    background-color: #fff; }
-
-/* // Button Popup ---------------------------------------------------------- */
-.pop_global .button_close_pop {
-  width: 30px !important;
-  height: 30px !important; }
-
-@media (max-width: 600px) {
-  .pop_global .button_close_pop {
-    top: -45px;
-    right: 0; } }
-
-@media (min-width: 601px) {
-  .pop_global .button_close_pop {
-    top: -35px;
-    right: -35px; } }
-
-.pop_warning .button_close_pop {
-  border: 1px solid #666;
-  top: 10px;
-  right: 10px; }
-  .pop_warning .button_close_pop:focus, .pop_warning .button_close_pop:focus-visible, .pop_warning .button_close_pop:hover {
-    border-color: #4d4d4d; }
-
-.pop_warning .button_submit_pop {
-  transition: all 1s ease;
-  height: 35px;
-  line-height: 35px;
-  width: 40%;
-  max-width: 150px;
-  border-radius: 6px;
-  background-color: #fff;
-  font-size: 0.8rem; }
-  .pop_warning .button_submit_pop, .pop_warning .button_submit_pop:focus, .pop_warning .button_submit_pop:focus-visible, .pop_warning .button_submit_pop:hover {
-    border: 1px solid #8c8c8c !important; }
-  .pop_warning .button_submit_pop:focus, .pop_warning .button_submit_pop:focus-visible, .pop_warning .button_submit_pop:hover {
-    background-color: #e6e6e6;
-    color: #000; }
-
-.pop_formStatus .button_close_pop {
-  border: 1px solid #8c8c8c;
-  top: 10px;
-  right: 10px; }
-  .pop_formStatus .button_close_pop:focus, .pop_formStatus .button_close_pop:focus-visible, .pop_formStatus .button_close_pop:hover {
-    border-color: #666; }
-
-.pop_formStatus .button_submit_pop {
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid #8c8c8c;
-  border-radius: 12px;
-  background-color: #fff;
-  max-width: 160px !important;
-  margin: 20px auto 0;
-  color: #000;
-  font-family: "mingliuregular";
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase; }
-  .pop_formStatus .button_submit_pop:focus, .pop_formStatus .button_submit_pop:focus-visible, .pop_formStatus .button_submit_pop:hover {
-    background-color: #f2f2f2;
-    border-color: #666; }
-
-/* // Button Whatsapp ------------------------------------------------------- */
-#selector .button_whatsApp_anchor {
-  transition: all 1s ease;
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  z-index: 7900;
-  right: 10px;
-  bottom: 40px;
-  box-sizing: border-box;
-  display: block;
-  /*
-        width: $button_whatsApp_width;
-        height: $button_whatsApp_height;
-*/
-  border-radius: 50%;
-  background-image: url("/stage/img/button_whatsApp.svg");
-  background-repeat: no-repeat;
-  background-size: auto calc(70px - 20px);
-  background-position: center center;
-  /*
-        overflow: visible;
-*/ }
-  #selector .button_whatsApp_anchor, #selector .button_whatsApp_anchor:visited, #selector .button_whatsApp_anchor:active {
-    /*background-color: $greenWhatsApp;*/
-    background-color: rgba(37, 211, 102, 0.85); }
-  #selector .button_whatsApp_anchor:focus, #selector .button_whatsApp_anchor:focus-visible, #selector .button_whatsApp_anchor:hover {
-    box-shadow: 0 0 5px #3c9637;
-    /*background-color: $greenWhatsApp_hover;*/
-    background-color: #25d366; }
-    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
-      border-radius: 14px;
-      height: 40px;
-      line-height: 40px;
-      content: "Abrir un chat.";
-      display: block;
-      box-sizing: border-box;
-      position: absolute;
-      top: 50%;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 0 15px;
-      margin-top: calc(-1 * calc(40px / 2));
-      color: #fff;
-      font-size: 0.8rem;
-      text-indent: 0;
-      text-align: center; }
-  #selector .button_whatsApp_anchor.lang_AR:focus::before, #selector .button_whatsApp_anchor.lang_AR:focus-visible::before, #selector .button_whatsApp_anchor.lang_AR:hover::before {
-    content: "Chat con SiteName."; }
-  #selector .button_whatsApp_anchor.lang_BR:focus::before, #selector .button_whatsApp_anchor.lang_BR:focus-visible::before, #selector .button_whatsApp_anchor.lang_BR:hover::before {
-    content: "Converse com o SiteName."; }
-  #selector .button_whatsApp_anchor.lang_DE:focus::before, #selector .button_whatsApp_anchor.lang_DE:focus-visible::before, #selector .button_whatsApp_anchor.lang_DE:hover::before {
-    content: "Chatten Sie mit SiteName."; }
-  #selector .button_whatsApp_anchor.lang_GB:focus::before, #selector .button_whatsApp_anchor.lang_GB:focus-visible::before, #selector .button_whatsApp_anchor.lang_GB:hover::before {
-    content: "Chat with SiteName."; }
-  @media (max-width: 300px) {
-    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
-      width: 160px;
-      right: calc(70px + 4px); } }
-  @media (min-width: 301px) {
-    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
-      width: 200px;
-      right: calc(70px + 10px); } }
-  @media (max-width: 767px) {
-    #selector .button_whatsApp_anchor.navDrawer_open::before, #selector .button_whatsApp_anchor.navDrawer_open:focus::before, #selector .button_whatsApp_anchor.navDrawer_open:focus-visible::before, #selector .button_whatsApp_anchor.navDrawer_open:hover::before {
-      display: none; } }
-  @media (min-width: 501px) {
-    #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
-      width: 220px; } }
-  #selector .button_whatsApp_anchor .button_whatsApp_nFormatted {
-    /*
-            display: block;
-            height: $button_whatsApp_height;
-            font-size: 0.8rem;
-            line-height: $button_whatsApp_height;
-*/ }
-    #selector .button_whatsApp_anchor .button_whatsApp_nFormatted:not(:focus):not(:active) {
-      /*
-    // REF [22]
-Hide only visually, but have it available for screen readers:
-https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-
-    // REF [22a]
-For long content, line feeds are not interpreted as spaces and small width
-causes content to wrap 1 word per line:
-https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-      position: absolute;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      border: 0 !important;
-      padding: 0 !important;
-      margin: -1px;
-      overflow: hidden;
-      white-space: nowrap; }
-
-/* // Button Site Top // REF [18] ------------------------------------------- */
-.button_siteTop {
-  transition: all 0.7s ease;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  z-index: 8990;
-  right: 20px;
-  background-image: url("/stage/img/button_siteTop.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  text-indent: -9999px;
-  overflow: hidden;
-  /* no scroll activation
-    bottom: 20px;
-    */
-  /* scroll activation // REF [31**]
-    bottom: calc(-1 * calc(40px + 5px));
-    opacity: 0;
-    
-    .navDrawer_open &{
-        bottom: calc(-1 * calc(40px + 5px));
-    }
-    
-    &.site_scrolled_js{
-        opacity: 1;
-        bottom: 20px;
-    }
-    */ }
-
-/* // Button Video Play ----------------------------------------------------- */
-.button_pop_open_video {
-  position: relative;
-  cursor: pointer;
-  padding: 0; }
-  .button_pop_open_video::before, .button_pop_open_video::after {
-    content: "";
-    display: block; }
-  .button_pop_open_video::before {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all 0.5s ease;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1); }
-  .button_pop_open_video::after {
-    transition: all 0.7s ease;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    margin-top: calc(-1 * calc(60px / 2));
-    margin-left: calc(-1 * calc(60px / 2));
-    opacity: 0.8;
-    background-image: url("/stage/img/icon_play.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%; }
-  .button_pop_open_video:focus::before, .button_pop_open_video:focus-visible::before, .button_pop_open_video:hover::before {
-    background-color: rgba(255, 255, 255, 0.2); }
-  .button_pop_open_video:focus::after, .button_pop_open_video:focus-visible::after, .button_pop_open_video:hover::after {
-    opacity: 1; }
-
-/* // Button Section -------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Hover Classes | Custom [/etc/css/custom/hover.scss]
-   ========================================================================== */
-@media (min-width: 768px) {
-  .hover_grow_S_ani,
-  .hover_grow_M_ani,
-  .hover_grow_L_ani {
-    transition: all 0.7s ease;
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale; }
-  .hover_grow_S_ani:hover, .hover_grow_S_ani:focus, .hover_grow_S_ani:active {
-    transform: scale(1.05); }
-  .hover_grow_M_ani:hover, .hover_grow_M_ani:focus, .hover_grow_M_ani:active {
-    transform: scale(1.1); }
-  .hover_grow_L_ani:hover, .hover_grow_L_ani:focus, .hover_grow_L_ani:active {
-    transform: scale(1.15); } }
-
-/* * NombreDeProyecto * ========================================================
-   Focus Styles | Custom [/etc/css/custom/focus.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Outline --------------------------------------------------------------- */
-*:focus {
-  outline: 2px solid #c6c6c6;
-  outline-offset: 0.25rem; }
-
-/* * NombreDeProyecto * ========================================================
-   Form Settings | Etc [/etc/css/scss/settings_form.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-@media (max-width: 767px) {
-  .mobileForm form, .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
-  .form_label_name, .mobileForm .form_validation_span {
-    clear: both !important;
-    float: none !important;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm form, .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button, .tabletForm
-  .form_label_name, .tabletForm .form_validation_span {
-    clear: both !important;
-    float: none !important;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-@media (max-width: 350px) {
-  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
-  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    width: 100% !important;
-    max-width: 270px !important; } }
-
-@media (min-width: 351px) {
-  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
-  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    width: 330px !important; } }
-
-@media (min-width: 501px) {
-  .mobileForm fieldset, .mobileForm label, .mobileForm input, .mobileForm select, .mobileForm textarea, .mobileForm button, .mobileForm
-  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    width: 400px !important; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm fieldset, .tabletForm label, .tabletForm input, .tabletForm select, .tabletForm textarea, .tabletForm button, .tabletForm
-  .form_validation_div, .tabletForm .form_validation_span, .tabletForm .form_status, .tabletForm .form_label_name {
-    width: 520px !important; } }
-
-@media (min-width: 1024px) {
-  form fieldset, form label, form input, form select, form textarea, form button, form
-  .form_validation_div, form .form_validation_span, form .form_status, form .form_label_name {
-    width: 520px;
-    margin-right: auto;
-    margin-left: auto; } }
-
-@media (min-width: 1201px) {
-  form fieldset, form label, form input, form select, form textarea, form button, form
-  .form_validation_div, form .form_validation_span, form .form_status, form .form_label_name {
-    width: 520px; } }
-
-@media (max-width: 350px) {
-  .mobileForm fieldset, .mobileForm label, .mobileForm button, .mobileForm
-  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    font-size: 0.75rem; } }
-
-@media (min-width: 351px) {
-  .mobileForm fieldset, .mobileForm label, .mobileForm button, .mobileForm
-  .form_validation_div, .mobileForm .form_validation_span, .mobileForm .form_status, .mobileForm .form_label_name {
-    font-size: 0.9rem; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm fieldset, .tabletForm label, .tabletForm button, .tabletForm
-  .form_validation_div, .tabletForm .form_validation_span, .tabletForm .form_status, .tabletForm .form_label_name {
-    font-size: 1rem; } }
-
-@media (min-width: 1024px) {
-  form fieldset, form label, form button, form
-  .form_validation_div, form .form_validation_span, form .form_status, form .form_label_name {
-    font-size: 1rem; } }
-
-input, select, textarea {
-  caret-color: #000; }
-  @media (max-width: 767px) {
-    .mobileForm input, .mobileForm select, .mobileForm textarea {
-      font-size: 0.9rem; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm input, .tabletForm select, .tabletForm textarea {
-      font-size: 0.9rem; } }
-  @media (min-width: 1024px) {
-    form input, form select, form textarea {
-      font-size: 0.9rem; } }
-  @media (min-width: 1201px) {
-    form input, form select, form textarea {
-      font-size: 0.9rem; } }
-
-/* // Form Button Submit // REF [21] ---------------------------------------- */
-@media (max-width: 500px) {
-  .mobileForm input[type="reset"], .mobileForm
-  input[type="submit"], .mobileForm
-  input[type="button"], .mobileForm
-  form button {
-    width: 90% !important; } }
-
-@media (min-width: 501px) and (max-width: 767px) {
-  .mobileForm input[type="reset"], .mobileForm
-  input[type="submit"], .mobileForm
-  input[type="button"], .mobileForm
-  form button {
-    width: 60% !important; } }
-
-@media (max-width: 767px) {
-  .mobileForm input[type="reset"], .mobileForm
-  input[type="submit"], .mobileForm
-  input[type="button"], .mobileForm
-  form button {
-    height: 50px;
-    line-height: 50px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm input[type="reset"], .tabletForm
-  input[type="submit"], .tabletForm
-  input[type="button"], .tabletForm
-  form button {
-    width: 50% !important;
-    height: 45px;
-    line-height: 45px; } }
-
-@media (min-width: 1024px) {
-  form input[type="reset"], form
-  input[type="submit"], form
-  input[type="button"], form
-  form button {
-    width: 300px !important;
-    height: 45px;
-    line-height: 45px; } }
-
-@media (min-width: 1201px) {
-  form input[type="reset"], form
-  input[type="submit"], form
-  input[type="button"], form
-  form button {
-    width: 300px !important;
-    height: 45px;
-    line-height: 45px; } }
-
-input[type="reset"] + input[type="reset"],
-input[type="submit"] + input[type="reset"],
-input[type="button"] + input[type="reset"],
-form button + input[type="reset"], input[type="reset"] +
-input[type="submit"],
-input[type="submit"] +
-input[type="submit"],
-input[type="button"] +
-input[type="submit"],
-form button +
-input[type="submit"], input[type="reset"] +
-input[type="button"],
-input[type="submit"] +
-input[type="button"],
-input[type="button"] +
-input[type="button"],
-form button +
-input[type="button"], input[type="reset"] +
-form button,
-input[type="submit"] +
-form button,
-input[type="button"] +
-form button,
-form button +
-form button {
-  margin-top: 20px !important; }
-
-/* // Form Input ------------------------------------------------------------ */
-form input[type="text"],
-form input[type="email"],
-form input[type="search"],
-form input[type="tel"],
-form input[type="url"],
-form input[type="number"],
-form input[type="time"],
-form input[type="date"],
-form input[type="month"],
-form input[type="week"],
-form select,
-form textarea,
-form input[type="text"]:-webkit-autofill,
-form input[type="email"]:-webkit-autofill,
-form input[type="password"]:-webkit-autofill,
-form input[type="search"]:-webkit-autofill,
-form input[type="tel"]:-webkit-autofill,
-form input[type="url"]:-webkit-autofill,
-form input[type="number"]:-webkit-autofill,
-form input[type="time"]:-webkit-autofill,
-form input[type="date"]:-webkit-autofill,
-form input[type="month"]:-webkit-autofill,
-form input[type="week"]:-webkit-autofill,
-form input[type="text"]:-webkit-autofill:hover,
-form input[type="email"]:-webkit-autofill:hover,
-form input[type="password"]:-webkit-autofill:hover,
-form input[type="search"]:-webkit-autofill:hover,
-form input[type="tel"]:-webkit-autofill:hover,
-form input[type="url"]:-webkit-autofill:hover,
-form input[type="number"]:-webkit-autofill:hover,
-form input[type="time"]:-webkit-autofill:hover,
-form input[type="date"]:-webkit-autofill:hover,
-form input[type="month"]:-webkit-autofill:hover,
-form input[type="week"]:-webkit-autofill:hover,
-form input[type="time"]:-webkit-autofill::-moz-selection,
-form input[type="date"]:-webkit-autofill::-moz-selection,
-form input[type="month"]:-webkit-autofill::-moz-selection,
-form input[type="week"]:-webkit-autofill::-moz-selection,
-form input[type="time"]:-webkit-autofill::selection,
-form input[type="date"]:-webkit-autofill::selection,
-form input[type="month"]:-webkit-autofill::selection,
-form input[type="week"]:-webkit-autofill::selection,
-form input[type="time"]:-webkit-autofill::-moz-placeholder,
-form input[type="date"]:-webkit-autofill::-moz-placeholder,
-form input[type="month"]:-webkit-autofill::-moz-placeholder,
-form input[type="week"]:-webkit-autofill::-moz-placeholder,
-form input[type="time"]:-webkit-autofill::input-placeholder,
-form input[type="date"]:-webkit-autofill::input-placeholder,
-form input[type="month"]:-webkit-autofill::input-placeholder,
-form input[type="week"]:-webkit-autofill::input-placeholder,
-form input[type="time"]:-webkit-autofill::-webkit-input-placeholder,
-form input[type="date"]:-webkit-autofill::-webkit-input-placeholder,
-form input[type="month"]:-webkit-autofill::-webkit-input-placeholder,
-form input[type="week"]:-webkit-autofill::-webkit-input-placeholder,
-form input[type="time"]:-webkit-autofill:-ms-input-placeholder,
-form input[type="date"]:-webkit-autofill:-ms-input-placeholder,
-form input[type="month"]:-webkit-autofill:-ms-input-placeholder,
-form input[type="week"]:-webkit-autofill:-ms-input-placeholder,
-form input[type="text"]:-webkit-autofill:focus,
-form input[type="email"]:-webkit-autofill:focus,
-form input[type="password"]:-webkit-autofill:focus,
-form input[type="search"]:-webkit-autofill:focus,
-form input[type="tel"]:-webkit-autofill:focus,
-form input[type="url"]:-webkit-autofill:focus,
-form input[type="number"]:-webkit-autofill:focus,
-form input[type="time"]:-webkit-autofill:focus,
-form input[type="date"]:-webkit-autofill:focus,
-form input[type="month"]:-webkit-autofill:focus,
-form input[type="week"]:-webkit-autofill:focus,
-form input[type="text"]:-webkit-autofill:focus-visible,
-form input[type="email"]:-webkit-autofill:focus-visible,
-form input[type="password"]:-webkit-autofill:focus-visible,
-form input[type="search"]:-webkit-autofill:focus-visible,
-form input[type="tel"]:-webkit-autofill:focus-visible,
-form input[type="url"]:-webkit-autofill:focus-visible,
-form input[type="number"]:-webkit-autofill:focus-visible,
-form input[type="time"]:-webkit-autofill:focus-visible,
-form input[type="date"]:-webkit-autofill:focus-visible,
-form input[type="month"]:-webkit-autofill:focus-visible,
-form input[type="week"]:-webkit-autofill:focus-visible,
-form textarea:-webkit-autofill,
-form textarea:-webkit-autofill:hover,
-form textarea:-webkit-autofill:focus,
-form textarea:-webkit-autofill:focus-visible,
-form select:-webkit-autofill,
-form select:-webkit-autofill:hover,
-form select:-webkit-autofill:focus,
-form select:-webkit-autofill:focus-visible {
-  -webkit-text-fill-color: #000;
-  -webkit-box-shadow: 0 0 0 0 #fff inset; }
-
-form, form fieldset, form legend, form button, form input, form select, form textarea {
-  margin: 0;
-  padding: 0; }
-
-form, form label {
-  position: relative; }
-
-form fieldset, form fieldset legend {
-  border: none !important; }
-
-form fieldset legend {
-  white-space: normal;
-  /* Corrects text not wrapping in Firefox 3. */
-  *margin-left: -7px;
-  /* Corrects alignment displayed oddly in IE 6/7. */ }
-
-form label {
-  transition: all 1s ease; }
-
-form label,
-form .form_label_name {
-  color: #000;
-  font-weight: 400; }
-  form label:focus, form label:focus-visible, form label:hover,
-  form .form_label_name:focus,
-  form .form_label_name:focus-visible,
-  form .form_label_name:hover {
-    color: black; }
-
-form button, form input, form select, form textarea {
-  vertical-align: baseline;
-  /* Improves appearance and consistency in all browsers. */
-  *vertical-align: middle;
-  /* Improves appearance and consistency in all browsers. */ }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  form {
-    /* chrome */ }
-    form button:focus, form button:active, form input:focus, form input:active, form select:focus, form select:active, form option:focus, form option:active, form textarea:focus, form textarea:active {
-      outline: 1px dotted #999; } }
-
-form input, form select, form textarea {
-  transition: all 1s ease, background-position 0s ease;
-  background-color: #fff;
-  color: #000;
-  font-family: "mingliuregular"; }
-  form input:focus, form select:focus, form textarea:focus {
-    box-shadow: inset 0 0 6px #b2b2b2; }
-  form input:focus, form input:focus-visible, form input:hover, form select:focus, form select:focus-visible, form select:hover, form textarea:focus, form textarea:focus-visible, form textarea:hover {
-    background-color: #fff;
-    color: #000; }
-  form input, form input::before, form input::after, form select, form select::before, form select::after, form textarea, form textarea::before, form textarea::after {
-    box-sizing: border-box; }
-
-form input[type="search"] {
-  -webkit-appearance: textfield; }
-
-form input[type="checkbox"], form input[type="radio"] {
-  width: auto !important; }
-
-form input[type="submit"] {
-  -webkit-appearance: none; }
-
-form input::focus-inner {
-  margin: 0;
-  border: none !important;
-  padding: 0; }
-
-form textarea {
-  padding: 10px !important;
-  vertical-align: top;
-  resize: vertical; }
-
-@media (max-width: 350px) {
-  .mobileForm form {
-    width: 90%;
-    max-width: 270px !important; } }
-
-@media (min-width: 351px) {
-  .mobileForm form {
-    width: 330px !important; } }
-
-@media (min-width: 501px) {
-  .mobileForm form {
-    width: 400px !important; } }
-
-@media (min-width: 601px) and (max-width: 767px) {
-  .mobileForm form {
-    width: 520px !important; } }
-
-@media (min-width: 768px) {
-  .tabletForm form {
-    width: 520px !important; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm form {
-    width: 520px !important; } }
-
-@media (min-width: 1024px) {
-  .tabletForm form {
-    width: 520px !important; } }
-
-@media (min-width: 1024px) {
-  form {
-    width: 520px !important; } }
-
-@media (min-width: 1201px) {
-  form {
-    width: 520px; } }
-
-form fieldset::before, form fieldset::after, form label::before, form label::after {
-  content: " ";
-  display: table; }
-
-form fieldset::after, form label::after {
-  clear: both; }
-
-@media (max-width: 767px) {
-  .mobileForm form input, .mobileForm form select {
-    height: 45px;
-    line-height: 45px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm form input, .tabletForm form select {
-    height: 45px;
-    line-height: 45px; } }
-
-@media (min-width: 1024px) {
-  form input, form select {
-    height: 35px;
-    line-height: 35px; } }
-
-@media (min-width: 1201px) {
-  form input, form select {
-    height: 35px;
-    line-height: 35px; } }
-
-@media (max-width: 350px) {
-  .mobileForm form .form_label_name {
-    height: 25px;
-    line-height: 25px; } }
-
-@media (min-width: 351px) {
-  .mobileForm form .form_label_name {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm form .form_label_name {
-    height: 30px;
-    line-height: 30px; } }
-
-@media (min-width: 1024px) {
-  form .form_label_name {
-    height: 25px;
-    line-height: 25px; } }
-
-@media (min-width: 1201px) {
-  form .form_label_name {
-    height: 25px;
-    line-height: 25px; } }
-
-/* * NombreDeProyecto * ========================================================
-   Form Styles | Custom [/etc/css/custom/form.scss]
-   ========================================================================== */
-/* // Form Fieldset --------------------------------------------------------- */
-fieldset, fieldset::before, fieldset::after {
-  box-sizing: border-box; }
-
-fieldset + fieldset {
-  margin-top: 30px; }
-
-fieldset > p {
-  margin-bottom: 10px !important;
-  padding: 0 !important;
-  color: #000; }
-
-fieldset.form_validation_input_invalid legend,
-fieldset.form_validation_input_invalid label span {
-  color: #eb1c24; }
-
-fieldset.form_validation_input_invalid legend {
-  padding-left: 25px; }
-
-/* // Form status message / Form validation --------------------------------- */
-.form_status,
-.form_validation_div {
-  box-sizing: border-box;
-  margin-bottom: 20px; }
-
-.form_status.form_status_ok,
-.form_validation_div {
-  border-radius: 6px;
-  padding: 7px 20px; }
-
-.form_status,
-.form_validation_div p {
-  text-align: center; }
-
-.form_status.form_status_ini {
-  font-size: 1rem; }
-
-.form_status.form_status_ok {
-  background-color: #339900;
-  color: #fff; }
-
-.form_validation_div.form_validation_div_invalid {
-  display: block !important;
-  background-color: #eb1c24; }
-  .form_validation_div.form_validation_div_invalid p {
-    color: #fff; }
-
-@media (min-width: 1024px) {
-  .form_validation_div,
-  .form_status {
-    width: 80%;
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-.input_data_holder {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  overflow: hidden; }
-
-/* // Form input ------------------------------------------------------------ */
-form {
-  /* // Form input placeholders // REF [10] ----------------------------------- */
-  /*
-        input::-moz-placeholder,
-        textarea::-moz-placeholder{
-            opacity: 1;
-            color: $form_placeholder_ftColour;
-        }
-        input::input-placeholder,
-        textarea::input-placeholder{
-            color: $form_placeholder_ftColour;
-        }
-        input::-webkit-input-placeholder,
-        textarea::-webkit-input-placeholder{
-            color: $form_placeholder_ftColour;
-        }
-        input:-ms-input-placeholder,
-        textarea:-ms-input-placeholder{
-            color: $form_placeholder_ftColour;
-        }
-        input:focus::input-placeholder,
-        textarea:focus::input-placeholder{
-            color: $form_placeholder_ftColour_hover;
-        }
-        input:focus::-webkit-input-placeholder,
-        textarea:focus::-webkit-input-placeholder{
-            color: $form_placeholder_ftColour_hover;
-        }
-        input:focus::-moz-placeholder,
-        textarea:focus::-moz-placeholder{
-            color: $form_placeholder_ftColour_hover;
-        }
-        input:focus:-ms-input-placeholder,
-        textarea:focus:-ms-input-placeholder{
-            color: $form_placeholder_ftColour_hover;
-        }
-*/
-  /* // Form invalid field ---------------------------------------------------- */
-  /* // Form Button Submit // REF [21] ---------------------------------------- */
-  /* // Form Label ------------------------------------------------------------ */ }
-  form input,
-  form select,
-  form textarea {
-    padding-right: 10px;
-    padding-left: 10px;
-    border: 1px solid #8c8c8c; }
-    form input:focus, form input:hover,
-    form select:focus,
-    form select:hover,
-    form textarea:focus,
-    form textarea:hover {
-      border-color: #666666; }
-  form input[type="number"]:out-of-range {
-    border-color: #eb1c24 !important; }
-  form input[type="date"]::-webkit-datetime-edit {
-    padding: 1em; }
-  form input[type="date"]::-webkit-datetime-edit-fields-wrapper {
-    background: silver; }
-  form input[type="date"]::-webkit-datetime-edit-text {
-    color: red;
-    padding: 0 0.3em; }
-  form input[type="date"]::-webkit-datetime-edit-month-field {
-    color: blue; }
-  form input[type="date"]::-webkit-datetime-edit-day-field {
-    color: green; }
-  form input[type="date"]::-webkit-datetime-edit-year-field {
-    color: purple; }
-  form input[type="date"]::-webkit-inner-spin-button {
-    display: none; }
-  form input[type="date"]::-webkit-calendar-picker-indicator {
-    background: orange; }
-  form input:read-only {
-    user-select: none;
-    cursor: not-allowed; }
-    form input:read-only, form input:read-only:focus, form input:read-only:focus-visible, form input:read-only:hover {
-      border: 1px solid #666;
-      background-color: #e6e6e6;
-      box-shadow: inset 0 0 0 transparent; }
-  form input.fecha {
-    background-image: url("/stage/img/form_calendar.svg");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 28px; }
-  form select option {
-    font-family: "mingliuregular";
-    font-size: 0.8rem; }
-  form textarea {
-    /*
-        resize: none;
-*/ }
-    @media (max-width: 767px) {
-      form textarea {
-        height: 100px; } }
-    @media (min-width: 768px) {
-      form textarea {
-        height: 100px; } }
-    @media (min-width: 1024px) {
-      form textarea {
-        height: 100px; } }
-  form input.form_validation_input_invalid, form select.form_validation_input_invalid, form textarea.form_validation_input_invalid {
-    background-image: url("/stage/img/form_alert.svg");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: auto 20px;
-    padding-right: 40px; }
-    form input.form_validation_input_invalid, form input.form_validation_input_invalid:focus, form input.form_validation_input_invalid:focus-visible, form input.form_validation_input_invalid:hover, form select.form_validation_input_invalid, form select.form_validation_input_invalid:focus, form select.form_validation_input_invalid:focus-visible, form select.form_validation_input_invalid:hover, form textarea.form_validation_input_invalid, form textarea.form_validation_input_invalid:focus, form textarea.form_validation_input_invalid:focus-visible, form textarea.form_validation_input_invalid:hover {
-      border-width: 2px !important;
-      border-style: solid !important;
-      border-color: #eb1c24 !important;
-      box-shadow: inset 0 0 0 #666666; }
-  form fieldset.form_validation_input_invalid,
-  form fieldset.form_validation_input_invalid legend {
-    background-image: url("/stage/img/form_alert.svg");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: auto 55%; }
-  form select.form_validation_input_invalid {
-    background-position: right 25px center; }
-  form textarea.form_validation_input_invalid {
-    background-position: right 10px top 10px;
-    background-size: 23px; }
-  form input[type="reset"],
-  form input[type="submit"],
-  form input[type="button"] {
-    transition: all 0.7s ease;
-    background-color: #8c8c8c;
-    color: #fff;
-    border-radius: 6px;
-    margin-bottom: 0 !important;
-    font-family: "mingliuregular";
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    cursor: default;
-    border: none !important; }
-    form input[type="reset"]:focus, form input[type="reset"]:focus-visible, form input[type="reset"]:hover,
-    form input[type="submit"]:focus,
-    form input[type="submit"]:focus-visible,
-    form input[type="submit"]:hover,
-    form input[type="button"]:focus,
-    form input[type="button"]:focus-visible,
-    form input[type="button"]:hover {
-      background-color: #b2b2b2;
-      color: #4d4d4d;
-      box-shadow: inset 0 0 0 #b2b2b2; }
-    form input[type="reset"].white,
-    form input[type="submit"].white,
-    form input[type="button"].white {
-      transition: all 1s ease; }
-      form input[type="reset"].white, form input[type="reset"].white:focus, form input[type="reset"].white:focus-visible, form input[type="reset"].white:hover,
-      form input[type="submit"].white,
-      form input[type="submit"].white:focus,
-      form input[type="submit"].white:focus-visible,
-      form input[type="submit"].white:hover,
-      form input[type="button"].white,
-      form input[type="button"].white:focus,
-      form input[type="button"].white:focus-visible,
-      form input[type="button"].white:hover {
-        color: #fff; }
-      form input[type="reset"].white:focus, form input[type="reset"].white:focus-visible, form input[type="reset"].white:hover,
-      form input[type="submit"].white:focus,
-      form input[type="submit"].white:focus-visible,
-      form input[type="submit"].white:hover,
-      form input[type="button"].white:focus,
-      form input[type="button"].white:focus-visible,
-      form input[type="button"].white:hover {
-        text-shadow: 0 0 3px #000; }
-    @media (min-width: 768px) {
-      form input[type="reset"],
-      form input[type="submit"],
-      form input[type="button"] {
-        margin-top: 30px;
-        margin-right: auto;
-        margin-left: auto; } }
-  form label, form label::before, form label::after {
-    box-sizing: border-box; }
-  form label.form_required .form_label_name::after {
-    content: " *";
-    display: inline;
-    color: #eb1c24;
-    font-family: "mingliuregular";
-    height: 100%;
-    white-space: pre; }
-  @media (max-width: 767px) {
-    .mobileForm form fieldset, .mobileForm
-    form label {
-      margin-bottom: 20px !important; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm form fieldset, .tabletForm
-    form label {
-      margin-bottom: 20px !important; } }
-  @media (min-width: 1024px) {
-    form fieldset,
-    form label {
-      margin-bottom: 10px !important; } }
-  form .label_radio .input_radio,
-  form .label_radio .input_checkbox,
-  form .label_checkbox .input_radio,
-  form .label_checkbox .input_checkbox {
-    clear: none !important;
-    float: left !important;
-    margin-right: 5px !important; }
-  @media (max-width: 767px) {
-    form .label_radio .form_label_name,
-    form .label_checkbox .form_label_name {
-      clear: none !important;
-      display: block !important;
-      float: left !important;
-      height: auto !important; }
-    form .label_radio + .input_radio,
-    form .label_radio + .input_checkbox,
-    form .label_checkbox + .input_radio,
-    form .label_checkbox + .input_checkbox {
-      margin-top: 10px; } }
-  @media (max-width: 767px) {
-    .mobileForm form .label_checkbox .input_checkbox {
-      width: 20px !important;
-      height: 20px; }
-    .mobileForm form .label_checkbox .form_label_name {
-      width: calc(100% - calc(20px + 10px)) !important;
-      line-height: 20px; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm form .label_checkbox .input_checkbox {
-      width: 25px !important;
-      height: 25px; }
-    .tabletForm form .label_checkbox .form_label_name {
-      clear: none !important;
-      width: calc(100% - calc(25px + 10px)) !important;
-      line-height: 25px; } }
-  @media (min-width: 1024px) {
-    .tabletForm form .label_checkbox .input_checkbox {
-      width: 20px !important;
-      height: 20px; }
-    .tabletForm form .label_checkbox .form_label_name {
-      clear: none !important;
-      width: calc(100% - calc(20px + 10px)) !important;
-      line-height: 20px; } }
-  @media (max-width: 767px) {
-    .mobileForm form .label_radio .input_radio {
-      width: 35px !important;
-      height: 35px; }
-    .mobileForm form .label_radio .form_label_name {
-      width: calc(100% - calc(35px + 10px));
-      margin-top: 5px;
-      line-height: 1.3; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .tabletForm form .label_radio .input_radio {
-      width: 35px !important; }
-    .tabletForm form .label_radio,
-    .tabletForm form .label_radio .input_checkbox,
-    .tabletForm form .label_radio .form_label_name {
-      height: 35px;
-      line-height: 35px; } }
-  form .form_label_name,
-  form .form_validation_span {
-    box-sizing: border-box; }
-  form .form_label_name {
-    display: block;
-    padding-left: 7px;
-    font-family: "mingliuregular";
-    /* // REF [39] $form_label_floating_act */
-    font-size: 1.1rem !important; }
-  form .form_validation_span,
-  form .form_label_msg_sugg {
-    font-family: "mingliuregular";
-    line-height: 1.2em; }
-  form .form_label_msg_sugg {
-    display: block;
-    padding-left: 10px; }
-  form .form_validation_span {
-    display: none;
-    color: #eb1c24;
-    padding-top: 3px;
-    padding-left: 10px; }
-    form .form_validation_span.form_validation_span_active {
-      display: block; }
-  @media (max-width: 300px) {
-    form .form_validation_span,
-    form .form_label_msg_sugg {
-      font-weight: 400;
-      font-size: 0.7rem !important; } }
-  @media (min-width: 301px) {
-    form .form_validation_span,
-    form .form_label_msg_sugg {
-      font-weight: 400;
-      font-size: 0.8rem !important; } }
-  @media (max-width: 600px) {
-    form .form_label_name.form_label_name_long {
-      height: auto;
-      line-height: 1.4;
-      margin-bottom: 5px; }
-      form .form_label_name.form_label_name_long span {
-        display: block; } }
-
-/* * NombreDeProyecto * ========================================================
-   Popup Styles | Custom [/etc/css/custom/popup.scss]
-   ========================================================================== */
-/* // Pop Modal ------------------------------------------------------------- */
-.modal_global {
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.modal_global,
-.modal_nav {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  z-index: 9000; }
-
-.modal_nav {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.7); }
-  @media (min-width: 768px) {
-    .modal_nav {
-      display: none !important; } }
-
-.modal_warning {
-  /*
-    @include opacityCustom(75);
-    background-color: $bgBlack!important;
-    */ }
-
-.modal_video {
-  /*
-    @include opacityCustom(75);
-    background-color: $bgBlack!important;
-    */ }
-
-.modal_formStatus {
-  background-color: rgba(0, 0, 0, 0.7); }
-
-/* // Pop General ----------------------------------------------------------- */
-.pop_global {
-  box-sizing: border-box;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.2);
-  position: fixed;
-  z-index: 9800;
-  top: 10vh;
-  left: 50%;
-  height: 100vh;
-  max-height: 80vh;
-  border-radius: 6px;
-  background-color: #fff;
-  /*    
-    &::before{
-        // REF [30]
-        @include positionTRBL();
-        content: "";
-        background-color: $modal_global_bgColour;
-        position: fixed;
-        z-index: $zIndex_negative;
-        display: block;
-    }
-*/ }
-  .pop_global .pop_innerContainer {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    overflow: auto;
-    overscroll-behavior: contain; }
-  .pop_global h2,
-  .pop_global h3 {
-    font-size: 1.2rem; }
-  .pop_global p {
-    width: 100% !important;
-    background-color: transparent;
-    padding: 0;
-    color: #000;
-    font-family: "mingliuregular";
-    text-align: center; }
-    .pop_global p + p {
-      margin-top: 0.8em; }
-  @media (max-width: 300px) {
-    .pop_global {
-      width: 90%;
-      max-width: 300px;
-      margin-left: calc(calc(90% * -1) / 2); } }
-  @media (min-width: 301px) {
-    .pop_global {
-      width: 60%;
-      margin-left: calc(calc(60% * -1) / 2); } }
-  @media (min-width: 501px) {
-    .pop_global {
-      width: 60%;
-      margin-left: calc(calc(60% * -1) / 2); } }
-  @media (min-width: 601px) {
-    .pop_global {
-      width: 550px;
-      margin-left: calc(calc(550px * -1) / 2); } }
-
-.pop_warning {
-  /* CSS para usar centerPopup
-        @include centerPopup(100px,100px,50%);
-        max-width: 100%;
-        max-height: 100%;
-    */ }
-  .pop_warning p:last-child {
-    padding-bottom: 50px; }
-  .pop_warning .pop_innerContainer {
-    padding: 20px; }
-  @media (max-width: 300px) {
-    .pop_warning {
-      width: 90%;
-      max-width: 300px;
-      margin-left: calc(calc(90% * -1) / 2); } }
-  @media (min-width: 301px) {
-    .pop_warning {
-      width: 300px;
-      margin-left: calc(calc(300px * -1) / 2); } }
-  @media (min-width: 501px) {
-    .pop_warning {
-      width: 60%;
-      margin-left: calc(calc(60% * -1) / 2); } }
-  @media (min-width: 601px) {
-    .pop_warning {
-      width: 550px;
-      margin-left: calc(calc(550px * -1) / 2); }
-      .pop_warning .pop_innerContainer {
-        top: 20px;
-        right: 20px;
-        bottom: 20px;
-        left: 20px;
-        padding: 20px; } }
-
-/* // Pop Video ------------------------------------------------------------- */
-.pop_video {
-  box-shadow: 0 0 10px 0 #4d4d4d; }
-  .pop_video .iframe_video_mask {
-    /*        
-        @include borderStyle($bdGreyD);
-*/
-    border-radius: 0;
-    border: none !important; }
-  @media (max-width: 500px) {
-    .pop_video {
-      width: 300px;
-      height: 168px;
-      margin-left: calc(-1 * calc(300px / 2)); } }
-  @media (min-width: 501px) {
-    .pop_video {
-      width: 450px;
-      height: 250px;
-      margin-left: calc(-1 * calc(450px / 2)); } }
-  @media (min-width: 768px) {
-    .pop_video {
-      width: 600px;
-      height: 330px;
-      margin-left: calc(-1 * calc(600px / 2)); } }
-
-/* // Pop Form -------------------------------------------------------------- */
-.pop_form {
-  padding-right: 20px;
-  padding-left: 20px;
-  height: 70vh;
-  box-shadow: 0 0 10px 0 #4d4d4d; }
-  .pop_form .mobileForm {
-    padding-top: 20px;
-    padding-bottom: 40px; }
-  @media (max-width: 500px) {
-    .pop_form {
-      width: 320px;
-      margin-left: calc(-1 * calc(320px / 2)); } }
-  @media (min-width: 501px) {
-    .pop_form {
-      width: 490px;
-      margin-left: calc(-1 * calc(490px / 2)); } }
-  @media (min-width: 601px) {
-    .pop_form {
-      width: 590px;
-      margin-left: calc(-1 * calc(590px / 2)); } }
-  @media (min-width: 768px) {
-    .pop_form {
-      width: 650px;
-      margin-left: calc(-1 * calc(650px / 2)); } }
-
-.pop_formStatus {
-  padding: 20px !important; }
-  .pop_formStatus h2 {
-    height: auto !important;
-    font-family: "mingliuregular" !important;
-    line-height: 1.2em !important;
-    text-transform: none !important; }
-  .pop_formStatus p {
-    color: #000;
-    font-size: 1rem !important;
-    line-height: 1.3em; }
-    .pop_formStatus p a {
-      color: #333333; }
-      .pop_formStatus p a:active, .pop_formStatus p a:visited, .pop_formStatus p a:focus, .pop_formStatus p a:focus-visible, .pop_formStatus p a:hover {
-        color: #1a1a1a; }
-      .pop_formStatus p a:focus, .pop_formStatus p a:focus-visible, .pop_formStatus p a:hover {
-        text-decoration: underline; }
-  @media (max-width: 300px) {
-    .pop_formStatus {
-      width: 90%;
-      max-width: 290px;
-      margin-left: calc(calc(90% * -1) / 2); }
-      .pop_formStatus h2 {
-        padding-right: 25px;
-        padding-left: 25px;
-        font-size: 1.4rem; } }
-  @media (min-width: 301px) {
-    .pop_formStatus {
-      width: 290px;
-      margin-left: calc(calc(290px * -1) / 2); }
-      .pop_formStatus h2 {
-        padding-right: 15px;
-        padding-left: 15px;
-        font-size: 1.6rem; } }
-  @media (min-width: 501px) {
-    .pop_formStatus {
-      width: 450px;
-      margin-left: calc(calc(450px * -1) / 2); }
-      .pop_formStatus h2 {
-        padding-right: 5px;
-        padding-left: 5px; } }
-  @media (max-width: 650px) {
-    .pop_formStatus h2 {
-      font-size: 1.6rem; } }
-  @media (min-width: 651px) {
-    .pop_formStatus h2 {
-      font-size: 2rem; } }
-
-/* * NombreDeProyecto * ========================================================
-   Header Styles | Custom [/etc/css/custom/header.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Header Full Height Styles | Custom [/etc/css/custom/imp/header_fullHeight_imp.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Header Fixed Styles | Custom [/etc/css/custom/imp/header_headerFixed_imp.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-#header {
-  /*
-    @include navBT{ // REF [03] `[/etc/css/custom/var/mediaQueries_var.scss]`
-        @if $header_fixed_act_nav_BT == "on"{
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            box-shadow: $bxShadow_header_fixed;
-        
-            &.header_scrolled_js{
-                box-shadow: $bxShadow_header_fixed_scrolled;
-            }
-        } 
-        
-        @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_BT;
-            
-            &.navDrawer_open{}
-        }   
-    }
-*/ }
-
-#header {
-  box-sizing: border-box;
-  /*
-    position: relative;
-    z-index: $zIndex_header;
-*/
-  height: 100px;
-  background-color: #fff;
-  /*
-    @media (max-width: 320px){
-        @if $nav_drawer_act == "on"{
-            .logo_header{
-                &.navDrawer_open{
-                    left: 13px;
-                    
-                    .logo_before,
-                    a{
-                        width: auto;
-                        height: 100%;
-                    }
-
-                    img{
-                        width: 100%;
-                        height: auto;
-                    } 
-                }
-            }
-        }
-    } 
-
-    @media (min-width: 321px) and (max-width: 767px){
-        @if $nav_drawer_act == "on"{
-            .logo_header{
-                &.navDrawer_open{
-                    left: 16px;
-                    
-                    .logo_before,
-                    a,
-                    img{
-                        width: auto;
-                        height: 100%;
-                    }
-                }
-            }
-        }
-    }
-    */ }
-  #header .logo_header {
-    margin-bottom: 0; }
-    #header .logo_header,
-    #header .logo_header a,
-    #header .logo_header img {
-      display: block; }
-    #header .logo_header a {
-      position: relative; }
-  @media (max-width: 350px) {
-    #header .logo_header {
-      /*
-            width: $logo_width_B350;
-*/ } }
-  @media (min-width: 351px) {
-    #header .logo_header {
-      /*
-            width: $logo_width_A350;
-*/ } }
-  @media (max-width: 500px) {
-    #header .logo_header {
-      /*
-            width: $logo_width_B500;
-*/ } }
-  @media (min-width: 501px) {
-    #header .logo_header {
-      /*
-            width: $logo_width_A500;
-*/ } }
-  @media (max-width: 767px) {
-    #header {
-      padding-top: 0;
-      padding-bottom: 0; }
-      #header .logo_header {
-        width: 220px; }
-        #header .logo_header a,
-        #header .logo_header img {
-          width: 100%; }
-      #header .logo_header.navDrawer_open {
-        border-right: 3px solid #000;
-        box-sizing: border-box;
-        position: fixed;
-        z-index: 9900;
-        top: 0;
-        left: 0;
-        width: calc(70vw - 5px);
-        max-width: calc(100% - 40px - 0);
-        height: calc(50px + 50px + 10px);
-        background-color: #fff;
-        padding-top: 50px;
-        padding-bottom: 10px;
-        margin: 0; }
-        #header .logo_header.navDrawer_open .logo_before,
-        #header .logo_header.navDrawer_open a,
-        #header .logo_header.navDrawer_open img {
-          width: auto;
-          height: 100%; }
-        #header .logo_header.navDrawer_open img {
-          margin-right: auto;
-          margin-left: auto; }
-        #header .logo_header.navDrawer_open .logo_before {
-          background: none; } }
-  @media (min-width: 768px) {
-    #header .logo_header {
-      position: relative;
-      z-index: 7300;
-      width: 220px; }
-      #header .logo_header a,
-      #header .logo_header img {
-        width: 100%; } }
-  @media (min-width: 1024px) {
-    #header .logo_header {
-      width: 220px; } }
-  @media (min-width: 1101px) {
-    #header .logo_header {
-      width: 220px; } }
-  @media (min-width: 1201px) {
-    #header .logo_header {
-      width: 220px; } }
-
-/* * NombreDeProyecto * ========================================================
-   Footer Styles | Custom [/etc/css/custom/footer.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Footer Full Height Styles | Custom [/etc/css/custom/imp/footer_fullHeight_imp.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-#footer {
-  background-color: #fff; }
-  #footer .nav_footer {
-    position: relative; }
-  #footer p a {
-    font-size: 1em; }
-  #footer .footer_address a {
-    line-height: 1.2; }
-  #footer .logo_footer_container,
-  #footer .logo_txt {
-    box-sizing: border-box; }
-  #footer .logo_footer img {
-    display: block; }
-  @media (max-width: 500px) {
-    #footer .logo_footer {
-      width: 50px; } }
-  @media (min-width: 501px) {
-    #footer .logo_footer {
-      /*
-                width: $logo_width_footer_A500;
-*/ } }
-  @media (min-width: 501px) and (max-width: 767px) {
-    #footer .logo_footer {
-      /*
-                width: $logo_width_footer_500O;
-*/ } }
-  @media (min-width: 601px) {
-    #footer .logo_footer {
-      /*
-                width: $logo_width_footer_A600;
-*/ } }
-  @media (min-width: 768px) {
-    #footer .logo_footer {
-      width: 125px; } }
-  @media (max-width: 1023px) {
-    #footer .logo_footer_container {
-      /*            
-            width: $footer_logoFloated_width_BTL;
-*/ }
-    #footer .footer_address a {
-      text-decoration: underline; } }
-  @media (min-width: 1024px) {
-    #footer .logo_footer {
-      width: 125px; }
-    #footer .footer_address a:focus, #footer .footer_address a:focus-visible, #footer .footer_address a:hover {
-      text-decoration: underline; } }
-
-/* * NombreDeProyecto * ========================================================
-   Nav Settings | Etc [/etc/css/scss/settings_nav.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-nav p.nav_TLI,
-nav .nav_item_current a {
-  cursor: default; }
-
-nav li a {
-  box-sizing: border-box; }
-
-nav li:focus a, nav li:focus-visible a, nav li:hover a {
-  text-decoration: none; }
-
-.nav_main,
-.nav_main .nav_main_ul {
-  z-index: 8000; }
-
-@media (max-width: 767px) {
-  .nav_main {
-    position: fixed; }
-    .nav_main .button_hamb {
-      box-sizing: border-box; }
-    .nav_main .button_hamb_open {
-      z-index: 8100;
-      display: block !important;
-      opacity: 1;
-      background-repeat: no-repeat;
-      font-family: "mingliuregular"; }
-    .nav_main .button_hamb_close {
-      border-radius: 50%;
-      z-index: 9900;
-      display: none;
-      background-color: #fff;
-      background-image: url("/stage/img/button_hamb_close.svg");
-      background-repeat: no-repeat;
-      background-position: center center; }
-    .nav_main .navAT {
-      display: none !important; }
-    .nav_main .nav_main_ul li {
-      float: none !important; } }
-
-@media (min-width: 768px) {
-  .nav_main {
-    background-color: transparent; }
-    #header.site_scrolled_js .nav_main {
-      background-color: transparent; }
-    .nav_main .button_hamb {
-      display: none !important; }
-    .nav_main .nav_main_ul_drawer {
-      display: none !important; }
-    .nav_main > ul {
-      background-color: #8c8c8c; }
-      .nav_main > ul > li {
-        background-color: transparent; }
-        .nav_main > ul > li a,
-        .nav_main > ul > li .nav_TLI {
-          color: #000;
-          font-family: "mingliuregular"; }
-        .nav_main > ul > li:focus, .nav_main > ul > li:focus-visible, .nav_main > ul > li:hover {
-          background-color: transparent; }
-          .nav_main > ul > li:focus > a, .nav_main > ul > li:focus-visible > a, .nav_main > ul > li:hover > a {
-            color: #000; }
-      .nav_main > ul > .uk-active,
-      .nav_main > ul > .nav_item_current {
-        background-color: transparent; }
-        .nav_main > ul > .uk-active a,
-        .nav_main > ul > .uk-active .nav_TLI,
-        .nav_main > ul > .nav_item_current a,
-        .nav_main > ul > .nav_item_current .nav_TLI {
-          color: #000;
-          font-family: "mingliuregular"; }
-        .nav_main > ul > .uk-active:focus, .nav_main > ul > .uk-active:focus-visible, .nav_main > ul > .uk-active:hover,
-        .nav_main > ul > .nav_item_current:focus,
-        .nav_main > ul > .nav_item_current:focus-visible,
-        .nav_main > ul > .nav_item_current:hover {
-          background-color: transparent; }
-          .nav_main > ul > .uk-active:focus > a,
-          .nav_main > ul > .uk-active:focus .nav_TLI, .nav_main > ul > .uk-active:focus-visible > a,
-          .nav_main > ul > .uk-active:focus-visible .nav_TLI, .nav_main > ul > .uk-active:hover > a,
-          .nav_main > ul > .uk-active:hover .nav_TLI,
-          .nav_main > ul > .nav_item_current:focus > a,
-          .nav_main > ul > .nav_item_current:focus .nav_TLI,
-          .nav_main > ul > .nav_item_current:focus-visible > a,
-          .nav_main > ul > .nav_item_current:focus-visible .nav_TLI,
-          .nav_main > ul > .nav_item_current:hover > a,
-          .nav_main > ul > .nav_item_current:hover .nav_TLI {
-            color: #000; } }
-
-@media (min-width: 1024px) {
-  .nav_main > ul > li a,
-  .nav_main > ul > li .nav_TLI {
-    font-family: "mingliuregular"; }
-  .nav_main > ul .uk-active a,
-  .nav_main > ul .uk-active .nav_TLI,
-  .nav_main > ul .nav_item_current a,
-  .nav_main > ul .nav_item_current .nav_TLI {
-    font-family: "mingliuregular"; } }
-
-/* * NombreDeProyecto * ========================================================
-   Nav Drawer Settings | Etc [/etc/css/scss/settings_nav_drawer.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-@media (max-width: 767px) {
-  .nav_main .button_hamb_close.button_hamb_close_visible {
-    display: block; }
-  .nav_main .nav_main_ul {
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 9800;
-    left: calc(-1 * 70vw);
-    width: calc(70vw - 5px);
-    max-width: calc(100% - 40px - 0);
-    background-color: #fff;
-    padding-right: 5px;
-    padding-left: 5px;
-    overflow: scroll;
-    padding-bottom: 30px; }
-    .nav_main .nav_main_ul,
-    .nav_main .nav_main_ul .nav_subNav {
-      transition: all 0.5s ease;
-      top: 0;
-      bottom: 0; }
-    .nav_main .nav_main_ul.open {
-      left: 0; }
-    .nav_main .nav_main_ul + .nav_main_ul {
-      margin-top: 0; }
-    .nav_main .nav_main_ul > li > a,
-    .nav_main .nav_main_ul > li > .nav_TLI {
-      color: #000;
-      font-family: "mingliuregular"; }
-    .nav_main .nav_main_ul > .uk-active > a,
-    .nav_main .nav_main_ul > .uk-active > .nav_TLI,
-    .nav_main .nav_main_ul > .nav_item_current > a,
-    .nav_main .nav_main_ul > .nav_item_current > .nav_TLI {
-      color: #000;
-      font-family: "mingliuregular"; } }
-
-/* * NombreDeProyecto * ========================================================
-   Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Nav Main Drawer BT Styles | Custom [/etc/css/custom/nav_main_drawer.scss]
-   ========================================================================== */
-@media (max-width: 350px) {
-  .nav_main .nav_main_ul li a,
-  .nav_main .nav_main_ul li .nav_TLI {
-    padding-left: 10px;
-    font-size: 0.85rem; } }
-
-@media (min-width: 351px) and (max-width: 767px) {
-  .nav_main .nav_main_ul li a,
-  .nav_main .nav_main_ul li .nav_TLI {
-    padding-left: 20px;
-    font-size: 1rem; } }
-
-@media (max-width: 767px) {
-  .nav_main {
-    top: 0;
-    right: 0;
-    position: fixed; }
-    .nav_main .button_hamb {
-      top: 10px;
-      right: 10px;
-      position: absolute; }
-    .nav_main .button_hamb_open {
-      border-radius: 6px;
-      transition: all 0.7s ease;
-      background-image: url("/stage/img/button_hamb_open.svg");
-      background-color: #f2f2f2;
-      background-size: 15px;
-      color: #333;
-      text-align: center;
-      text-transform: uppercase;
-      width: 90px;
-      height: 40px;
-      background-position: 10px center;
-      border: 1px solid #8c8c8c !important;
-      padding: 0 10px 0 30px;
-      font-size: 1rem;
-      line-height: 40px; }
-      .nav_main .button_hamb_open.site_scrolled_js {
-        background-color: rgba(255, 242, 242, 0.7); }
-      .nav_main .button_hamb_open.button_hamb_open_pressed {
-        opacity: 0.5;
-        color: #333; }
-        .nav_main .button_hamb_open.button_hamb_open_pressed.site_scrolled_js {
-          background-color: transparent; }
-    .nav_main .button_hamb_close {
-      width: 40px;
-      height: calc(40px - 0px);
-      background-color: transparent;
-      background-size: 100%;
-      border: 1px solid transparent !important;
-      padding: 0 !important;
-      text-indent: -9999px;
-      overflow: hidden;
-      width: 40px;
-      height: calc(40px - 0px);
-      background-size: 100%; }
-    .nav_main .nav_main_ul {
-      border-right: 3px solid #000;
-      padding-top: calc(calc(50px + 50px + 10px) + 5px); }
-      .nav_main .nav_main_ul li,
-      .nav_main .nav_main_ul li a,
-      .nav_main .nav_main_ul li .nav_TLI {
-        height: 45px;
-        line-height: 45px; }
-      .nav_main .nav_main_ul li a,
-      .nav_main .nav_main_ul li .nav_TLI {
-        display: block; }
-      .nav_main .nav_main_ul > li + li {
-        border-top: 1px solid #8c8c8c; }
-      .nav_main .nav_main_ul > .uk-active,
-      .nav_main .nav_main_ul > .nav_item_current {
-        background-color: #f2f2f2;
-        background-image: url("/stage/img/nav_arrow_left.svg");
-        background-repeat: no-repeat;
-        background-position: right 10px center; }
-      .nav_main .nav_main_ul .nav_item_back {
-        border-bottom: #8c8c8c solid 2px;
-        position: relative; }
-        .nav_main .nav_main_ul .nav_item_back + .nav_item_back {
-          border-color: #4d4d4d transparent #8c8c8c;
-          border-width: 1px 0 2px;
-          border-style: solid; } }
-
-/* * NombreDeProyecto * ========================================================
-   Nav Main Accordion Styles | Custom [/etc/css/custom/nav_main_accordion.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Nav Main List Styles | Custom [/etc/css/custom/nav_main_list.scss]
-   ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Nav Main After Tablet Styles | Custom [/etc/css/custom/nav_main_AT.scss]
-   ========================================================================== */
-@media (min-width: 768px) {
-  .nav_main {
-    position: relative; }
-    .nav_main .navs_container_AT {
-      justify-content: space-between;
-      width: 90%;
-      margin-right: auto;
-      margin-left: auto; }
-      .nav_main .navs_container_AT ul + ul {
-        margin-top: 0; }
-    .nav_main .nav_main_ul {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-content: flex-start;
-      align-items: flex-start; }
-      .nav_main .nav_main_ul li,
-      .nav_main .nav_main_ul li a,
-      .nav_main .nav_main_ul li .nav_TLI {
-        display: block; }
-    .nav_main li,
-    .nav_main li a,
-    .nav_main li .nav_TLI {
-      height: 60px;
-      line-height: 60px; }
-    .nav_main li a,
-    .nav_main li .nav_TLI {
-      transition: all 1s ease;
-      font-size: 0.8rem;
-      padding-right: 5px;
-      padding-left: 5px; }
-    #header.site_scrolled_js .nav_main li,
-    #header.site_scrolled_js .nav_main li a,
-    #header.site_scrolled_js .nav_main li .nav_TLI {
-      height: 45px;
-      line-height: 45px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .nav_main li,
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    height: 60px;
-    line-height: 60px; }
-  #header.site_scrolled_js .nav_main li,
-  #header.site_scrolled_js .nav_main li a,
-  #header.site_scrolled_js .nav_main li .nav_TLI {
-    height: 45px;
-    line-height: 45px; } }
-
-@media (min-width: 1024px) {
-  .nav_main li,
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    height: 60px;
-    line-height: 60px; }
-  #header.site_scrolled_js .nav_main li,
-  #header.site_scrolled_js .nav_main li a,
-  #header.site_scrolled_js .nav_main li .nav_TLI {
-    height: 45px;
-    line-height: 45px; }
-  .nav_main li a,
-  .nav_main li .nav_TLI {
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    padding-right: 10px;
-    padding-left: 10px; } }
-
-@media (min-width: 1201px) {
-  .nav_main .nav_main_ul li,
-  .nav_main .nav_main_ul li a,
-  .nav_main .nav_main_ul li .nav_TLI {
-    height: 60px;
-    line-height: 60px; }
-  #header.site_scrolled_js .nav_main .nav_main_ul,
-  #header.site_scrolled_js .nav_main .nav_main_ul a,
-  #header.site_scrolled_js .nav_main .nav_main_ul .nav_TLI {
-    height: 45px;
-    line-height: 45px; } }
-
-/* * NombreDeProyecto * ========================================================
-   Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
-   ========================================================================== */
-.nav_main_ul li a,
-.nav_main_ul li .nav_TLI {
-  /*
-            text-transform: uppercase;
-            */ }
-
 /* // Post ------------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   CSS Styles Post | Custom [/etc/css/custom/css_post.scss]
+   CSS Styles Main | Custom [/etc/css/custom/styles_zh.scss]
+   ========================================================================== */
+/* * NombreDeProyecto * ========================================================
+   CSS Styles Post | Custom [/etc/css/custom/var_all_post.scss]
    ========================================================================== */
 /* // Post ------------------------------------------------------------------ */
+/*# sourceMappingURL=styles_zh.css.map */

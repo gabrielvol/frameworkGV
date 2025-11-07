@@ -67,6 +67,12 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+@use "../custom/var/container_sizes_var" as *;
+
 /* // REF [38*] Mixin para container max ------------------------------------ */
 @mixin containerMAX_settings(){
     box-sizing: border-box;

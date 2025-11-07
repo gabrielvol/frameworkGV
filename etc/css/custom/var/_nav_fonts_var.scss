@@ -44,42 +44,50 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "fonts_main_var" as *;
+@use "text_var" as *;
+
 /*___ BT ________________________________*/
 $nav_ftFamily_BT:                       $ftFamily_regular_global;
-$nav_ftWeight_BT:                       400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_ftWeight_BT:                       400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 $nav_item_current_ftFamily_BT:          $nav_ftFamily_BT;
-$nav_item_current_ftWeight_BT:          $nav_ftWeight_BT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_current_ftWeight_BT:          $nav_ftWeight_BT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_subNav_ftFamily_BT:           $nav_ftFamily_BT;
-$nav_item_subNav_ftWeight_BT:           $nav_ftWeight_BT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_subNav_ftWeight_BT:           $nav_ftWeight_BT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_subNav_current_ftFamily_BT:   $nav_item_subNav_ftFamily_BT;
-$nav_item_subNav_current_ftWeight_BT:   $nav_item_subNav_ftWeight_BT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_subNav_current_ftWeight_BT:   $nav_item_subNav_ftWeight_BT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 
 /*___ AT ________________________________*/
 $nav_ftFamily_AT:                       $ftFamily_regular_global;
-$nav_ftWeight_AT:                       400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_ftWeight_AT:                       400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_current_ftFamily_AT:          $nav_ftFamily_AT;
-$nav_item_current_ftWeight_AT:          $nav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_current_ftWeight_AT:          $nav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_subNav_ftFamily_AT:           $nav_ftFamily_AT;
-$nav_item_subNav_ftWeight_AT:           $nav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_subNav_ftWeight_AT:           $nav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_subNav_current_ftFamily_AT:   $nav_item_subNav_ftFamily_AT;
-$nav_item_subNav_current_ftWeight_AT:   $nav_item_subNav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_subNav_current_ftWeight_AT:   $nav_item_subNav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 
 /*___ ATL _______________________________*/  
 $nav_ftFamily_A1024:                      $nav_ftFamily_AT;
-$nav_ftWeight_A1024:                      $nav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_ftWeight_A1024:                      $nav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_current_ftFamily_A1024:         $nav_item_current_ftFamily_AT;
-$nav_item_current_ftWeight_A1024:         $nav_ftWeight_A1024; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_current_ftWeight_A1024:         $nav_ftWeight_A1024; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_subNav_ftFamily_A1024:          $nav_item_subNav_ftFamily_AT;
-$nav_item_subNav_ftWeight_A1024:          $nav_ftWeight_A1024; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_subNav_ftWeight_A1024:          $nav_ftWeight_A1024; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
 
 $nav_item_subNav_current_ftFamily_A1024:  $nav_item_current_ftFamily_A1024;
-$nav_item_subNav_current_ftWeight_A1024:  $nav_item_subNav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]`*/
+$nav_item_subNav_current_ftWeight_A1024:  $nav_item_subNav_ftWeight_AT; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */

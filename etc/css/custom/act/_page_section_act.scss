@@ -2,6 +2,8 @@
    Page section Activators | Custom [/etc/css/custom/act/page_section_act.scss]
    ========================================================================== */
 
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables activadoras para el selector `#main section`.
 

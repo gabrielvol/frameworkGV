@@ -2,6 +2,11 @@
    Border Helpers Mixins | Etc [/etc/css/scss/mixins_borders.scss]
    ========================================================================== */
 
+@use "../custom/var/helpers_var" as *;
+@use "../custom/var/env_var" as *;
+
+@use "sass:color";
+@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Este archivo contiene mixins para generar declaraciones de bordes.
 //

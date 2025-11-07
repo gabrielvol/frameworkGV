@@ -1,4 +1,14 @@
 /* * NombreDeProyecto * ========================================================
    Page Contacto Styles | Custom [/etc/css/custom/page_contacto.scss]
    ========================================================================== */
+@use "var/env_var" as *;
+@use "var/colours_main_var" as *;
+@use "var/colours_borders_var" as *;
+@use "var/colours_backgrounds_var" as *;
+@use "var/page_contacto_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "sass:color";
+@use "sass:map";
 .page_contacto{}

@@ -141,88 +141,106 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/act/buttons_act" as *;
+@use "../custom/act/form_act" as *;
+
+@use "../custom/var/colours_main_var" as *;
+@use "../custom/var/colours_borders_var" as *;
+@use "../custom/var/colours_backgrounds_var" as *;
+
 @mixin colourLightClassesGenerator($colours_light_lightenValue){
     @each $colourLightClassesGeneratorMX_colourClassName, $colourLightClassesGeneratorMX_colourHexValue in $colours_light_map {
-        .#{$colourLightClassesGeneratorMX_colourClassName}{
+        $colourLightClassesGeneratorMX_colourClassName_str: "" + $colourLightClassesGeneratorMX_colourClassName;
+        .#{$colourLightClassesGeneratorMX_colourClassName_str}{
             &, b, strong, i, em{color: $colourLightClassesGeneratorMX_colourHexValue;}
         }
-        a.#{$colourLightClassesGeneratorMX_colourClassName}{
-            &, &:active, &:visited, 
+        a.#{$colourLightClassesGeneratorMX_colourClassName_str}{
+            &, &:active, &:visited,
             &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
-            &:focus, &:focus-visible, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
+            &:focus, &:hover{color: color.adjust($colourLightClassesGeneratorMX_colourHexValue, $lightness: -$colours_light_lightenValue);}
         }
         @if $button_coloured_act == "on"{
-            button.#{$colourLightClassesGeneratorMX_colourClassName}{
+            button.#{$colourLightClassesGeneratorMX_colourClassName_str}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
-                &:focus, &:focus-visible, &:hover{color: darken($colourLightClassesGeneratorMX_colourHexValue, $colours_light_lightenValue);}
+                &:focus, &:hover{color: color.adjust($colourLightClassesGeneratorMX_colourHexValue, $lightness: -$colours_light_lightenValue);}
             }
         }
         @if $form_label_coloured_act == "on"{
-            label.#{$colourLightClassesGeneratorMX_colourClassName}{
-                &, &:focus, &:focus-visible, &:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
+            label.#{$colourLightClassesGeneratorMX_colourClassName_str}{
+                &, &:focus, &:hover{color: $colourLightClassesGeneratorMX_colourHexValue;}
             }
         }
     }
 }
 @mixin colourDarkClassesGenerator($colours_dark_lightenValue){
     @each $colourDarkClassesGeneratorMX_colourClassName, $colourDarkClassesGeneratorMX_colourHexValue in $colours_dark_map {
-        .#{$colourDarkClassesGeneratorMX_colourClassName}{
+        $colourDarkClassesGeneratorMX_colourClassName_str: "" + $colourDarkClassesGeneratorMX_colourClassName;
+        .#{$colourDarkClassesGeneratorMX_colourClassName_str}{
             &, b, strong, i, em{color: $colourDarkClassesGeneratorMX_colourHexValue;}
         }
-        a.#{$colourDarkClassesGeneratorMX_colourClassName}{
-            &, &:active, &:visited, 
+        a.#{$colourDarkClassesGeneratorMX_colourClassName_str}{
+            &, &:active, &:visited,
             &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-            &:focus, &:focus-visible, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
+            &:focus, &:hover{color: color.adjust($colourDarkClassesGeneratorMX_colourHexValue, $lightness: $colours_dark_lightenValue);}
         }
         @if $button_coloured_act == "on"{
-            button.#{$colourDarkClassesGeneratorMX_colourClassName}{
+            button.#{$colourDarkClassesGeneratorMX_colourClassName_str}{
                 &, &.noHover:focus, &.noHover:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
-                &:focus, &:focus-visible, &:hover{color: lighten($colourDarkClassesGeneratorMX_colourHexValue, $colours_dark_lightenValue);}
+                &:focus, &:hover{color: color.adjust($colourDarkClassesGeneratorMX_colourHexValue, $lightness: $colours_dark_lightenValue);}
             }
         }
         @if $form_label_coloured_act == "on"{
-            label.#{$colourDarkClassesGeneratorMX_colourClassName}{
-                &, &:focus, &:focus-visible, &:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
+            label.#{$colourDarkClassesGeneratorMX_colourClassName_str}{
+                &, &:focus, &:hover{color: $colourDarkClassesGeneratorMX_colourHexValue;}
             }
         }
     }
 }
 @mixin anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_lightenValue){
     @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $colours_anchor_ftColours_light_map {
-        .#{$anchorColoursLightClassesGeneratorMX_colourClassName}{            
+        $anchorColoursLightClassesGeneratorMX_colourClassName_str: "" + $anchorColoursLightClassesGeneratorMX_colourClassName;
+        .#{$anchorColoursLightClassesGeneratorMX_colourClassName_str}{
             a, a:active, a:visited{color: $anchorColoursLightClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: darken($anchorColoursLightClassesGeneratorMX_colourHexValue, $colours_anchor_ftColours_light_lightenValue);}
+            a:focus, a:hover{color: color.adjust($anchorColoursLightClassesGeneratorMX_colourHexValue, $lightness: -$colours_anchor_ftColours_light_lightenValue);}
         }
     }
 }
 @mixin anchorColoursDarkClassesGenerator($colours_anchor_ftColours_dark_lightenValue){
     @each $anchorColoursDarkClassesGeneratorMX_colourClassName, $anchorColoursDarkClassesGeneratorMX_colourHexValue in $colours_anchor_ftColours_dark_map {
-        .#{$anchorColoursDarkClassesGeneratorMX_colourClassName}{            
+        $anchorColoursDarkClassesGeneratorMX_colourClassName_str: "" + $anchorColoursDarkClassesGeneratorMX_colourClassName;
+        .#{$anchorColoursDarkClassesGeneratorMX_colourClassName_str}{
             a, a:active, a:visited{color: $anchorColoursDarkClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: lighten($anchorColoursDarkClassesGeneratorMX_colourHexValue, $colours_anchor_ftColours_dark_lightenValue);}
+            a:focus, a:hover{color: color.adjust($anchorColoursDarkClassesGeneratorMX_colourHexValue, $lightness: $colours_anchor_ftColours_dark_lightenValue);}
         }
     }
 }
 @mixin backgroundColourClassesGenerator{
     @each $backgroundColourClassesGeneratorMX_bgColourClassName, $backgroundColourClassesGeneratorMX_bgColourHexValue in $colours_backgrounds_map {
-        .bg#{$backgroundColourClassesGeneratorMX_bgColourClassName}{background-color: $backgroundColourClassesGeneratorMX_bgColourHexValue;}
+        $backgroundColourClassesGeneratorMX_bgColourClassName_str: "" + $backgroundColourClassesGeneratorMX_bgColourClassName;
+        .bg#{$backgroundColourClassesGeneratorMX_bgColourClassName_str}{background-color: $backgroundColourClassesGeneratorMX_bgColourHexValue;}
     }
 }
 @mixin backgroundColourHoverClassesGenerator{
     @each $backgroundColourHoverClassesGeneratorMX_bgColourClassName, $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue in $colours_backgrounds_hover_map {
-        a.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
+        $backgroundColourHoverClassesGeneratorMX_bgColourClassName_str: "" + $backgroundColourHoverClassesGeneratorMX_bgColourClassName;
+        a.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName_str}{
             &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
         }
         @if $button_coloured_act == "on"{
-            button.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
+            button.#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName_str}{
                 &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
             }
         }
         @if $form_input_coloured_act == "on"{
-            input[type="submit"].#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
+            input[type="submit"].#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName_str}{
                 &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
             }
-            input[type="file"].#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName}{
+            input[type="file"].#{$backgroundColourHoverClassesGeneratorMX_bgColourClassName_str}{
                 &:hover, &:focus{background-color: $backgroundColourHoverClassesGeneratorMX_bgColourHoverValue;}
             }
         }

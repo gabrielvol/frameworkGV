@@ -47,6 +47,17 @@
 
     
     
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "logo_sizes_var" as *;
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
 /* // Header Sizes ---------------------------------------------------------- */
 $header_height_ALL:     100px;
 $header_height_B500:    101px; // REF [08] Si es auto y activado Header Fixed hay que declarar 0 en `$page_PT_B500`
