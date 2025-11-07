@@ -1,4 +1,5 @@
-<?php 
+<?php
+// require 'PHPMailer/PHPMailerAutoload.php';
 require $_SERVER['DOCUMENT_ROOT'] . 'PHPMailer/PHPMailerAutoload.php';
 
 //Create a new PHPMailer instance
