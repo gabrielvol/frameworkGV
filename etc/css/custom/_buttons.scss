@@ -306,12 +306,17 @@ button{
     
     .button_submit_pop{
         @include equalHeightAndLineHeight(40px);
-        @include borderStyle($bdGreyM);
+        border-color: $bdGreyM!important;
+        border-width: 1px!important;
+        border-style: solid!important;
         border-radius: 12px;
         display: block;
         background-color: $bgWhite;
+        width: 80%!important;
         max-width: 160px!important;
         margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
         color: $black;
         font-family: $arial;
         font-weight: 700;

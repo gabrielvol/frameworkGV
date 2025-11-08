@@ -2,15 +2,6 @@
    Buttons Variables | Custom [/etc/css/custom/var/buttons_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "fonts_main_var" as *;
-@use "colours_main_var" as *;
-@use "colours_borders_var" as *;
-@use "colours_backgrounds_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -52,6 +43,16 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "fonts_main_var" as *;
 
 /* // Button General -------------------------------------------------------- */
 $button_callToAction_ftFamily:          $arial;

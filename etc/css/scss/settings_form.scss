@@ -2,11 +2,6 @@
    Form Settings | Etc [/etc/css/scss/settings_form.scss]
    ========================================================================== */
 
-@use "var_all_pre" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
@@ -50,6 +45,12 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "var_all_pre" as *;
+@use "../custom/var/env_var" as *;
 
 form, fieldset, label, input, select, textarea, button,
 .form_label_name, .form_validation_span{
@@ -126,7 +127,7 @@ fieldset, label, button,
     
     @include MQ768_1024{
         .tabletForm &{
-            font-size: $form_ftSize_AT;
+            font-size: $form_ftSize_A768;
         }
     }
     
@@ -346,7 +347,7 @@ form{
     label,
     .form_label_name{
         color: $form_label_ftColour;
-        font-weight: 400;
+        font-weight: $form_label_ftWeight;
 
         &:focus,
         &:focus-visible,

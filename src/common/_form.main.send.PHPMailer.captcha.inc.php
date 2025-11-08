@@ -192,6 +192,7 @@ e.g. print_r($captcha_response_keys) prints Array (
                     $mail->Body  = '<small style="color:#666">Este mensaje fue enviado desde el formulario que se encuentra en '. $data_fullURL__formMainID .'</small><br /><br />';
                     $mail->Body .= '<small style="color:#666">Filtro: FiltroWebForm</small><br /><br />';
                     $mail->Body .= "<strong>Nombre:</strong> " . $data_nombre__formMainID . "<br />";  
+                    $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMainID;
                     
                     /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
                     
@@ -221,6 +222,7 @@ e.g. print_r($captcha_response_keys) prints Array (
                     
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
                     $_POST['data_nombre__formMainID'] = '';
+                    $_POST['data_mensaje__formMainID'] = '';
                     /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
                     /* Redirect after successful send 

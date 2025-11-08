@@ -2,13 +2,6 @@
    Form Sizes Variables | Custom [/etc/css/custom/var/form_sizes_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "text_var" as *;
-@use "../scss/var_absolute" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -49,6 +42,14 @@
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "text_var" as *;
+@use "../scss/var_absolute" as *;
 
 /* // Form ------------------------------------------------------------------ */
 $form_width_max_B350: 270px!important;
@@ -103,12 +104,12 @@ $form_input_checkbox_height_A1024:  20px;
 
 
 /* // Form Font Sizes ------------------------------------------------------- */
-// fieldet, label, button
+// fieldset, label, button
 // .form_validation_div, .form_status, .form_label_name, .form_validation_span
 $form_ftSize_B350:    0.75rem;
 $form_ftSize_A350:    $ftSize_paragraph_A350;
 $form_ftSize_A500:    $ftSize_paragraph_A500;
-$form_ftSize_AT:      $ftSize_paragraph_AT;
+$form_ftSize_A768:      $ftSize_paragraph_AT;
 $form_ftSize_A1024:   $ftSize_paragraph_A1024;
 
 

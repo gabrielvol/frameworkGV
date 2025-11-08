@@ -20,9 +20,6 @@ require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
 
-/* // Status Captcha - Mensaje inicial -------------------------------------- */
-$form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
-
 /* // Inicia proceso de form ------------------------------------------------ */
 if (isset($_POST['button_form_submit__formMainID'])){
     
@@ -111,6 +108,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
             $mail->Body  = '<small style="color:#444">Este mensaje fue enviado desde el formulario que se encuentra en ' . $data_fullURL__formMainID . '</small><br><br>';
             $mail->Body .= '<small style="color:#444"><strong>Filtro:</strong> FiltroFormWeb</small><br><br>';
             $mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
+            $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMainID;
     
             /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
                     
@@ -126,7 +124,7 @@ if (isset($_POST['button_form_submit__formMainID'])){
 /* // REF [29]  . '<h2 id="formOK" class="' . $form_status_pop_h2_ok_classes__formMainID . '"><span>' . $form_status_ok_globalA__formMainID . '</span></h2>' */
                 . '<p>' . $form_status_ok_globalB__formMainID . '</p>'
                 . '<p>' . $form_status_ok_globalC__formMainID . '</p>'
-                . '<button type="button" class="<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
+                . '<button type="button" class="button_submit_pop button_submit_pop_formStatus" name="pop_formStatus_close" aria-pressed="false">OK</button>'
                 . '</div></div><div class="modal_global modal_formStatus"></div>';
             
             $form_validation_div_class__formMainID = 'displayNone';
@@ -137,7 +135,8 @@ if (isset($_POST['button_form_submit__formMainID'])){
             $mail->send();  
             
 /* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */
-            $_POST['data_nombre__formMainID'] = '';        
+            $_POST['data_nombre__formMainID'] = '';  
+            $_POST['data_mensaje__formMainID'] = '';      
             /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
             /* Redirect after successful send

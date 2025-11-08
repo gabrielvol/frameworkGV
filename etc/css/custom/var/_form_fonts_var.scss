@@ -2,13 +2,6 @@
    Form Fonts Variables | Custom [/etc/css/custom/var/form_fonts_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "text_var" as *;
-@use "fonts_main_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 ///-- Inicio del nombre
 // bd                   = borde
@@ -46,6 +39,14 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "text_var" as *;
+@use "fonts_main_var" as *;
+
 /* // Form Label ------------------------------------------------------------ */
 $form_label_ftFamily:           $ftFamily_regular_global;
 $form_label_ftWeight:           400; /* // REF [01] en `[/etc/css/custom/act/fonts_act.scss]` */
@@ -63,6 +64,7 @@ $form_pop_title_ftFamily:       $form_label_ftFamily;
 
 /* // Form validation ------------------------------------------------------- */
 $form_span_invalid_ftFamily:    $arial;
+$form_span_invalid_ftWeight:    400;
     
      
 /* // Form span msg / sugg -------------------------------------------------- */

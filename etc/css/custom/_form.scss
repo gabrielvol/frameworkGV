@@ -719,7 +719,7 @@ form{
 
             @include afterMQ1200{
                 .form_label_name.form_label_name{
-                    @include equalHeightAndLineHeight($form_input_height_BT);
+                    @include equalHeightAndLineHeight($form_input_height_A1200);
                 }            
             }
         }
@@ -743,6 +743,7 @@ form{
         
         .form_validation_span,        
         .form_label_msg_sugg{
+            font-weight: $form_span_invalid_ftWeight;  
             line-height: $form_span_validation_tooltip_lineHeight;
         }
         
@@ -836,16 +837,14 @@ form{
         
         @include beforeMQ300{        
             .form_validation_span,        
-            .form_label_msg_sugg{
-                font-weight: 400;            
+            .form_label_msg_sugg{         
                 font-size: 0.7rem!important;
             }
         }
         
         @include afterMQ300{  
             .form_validation_span,        
-            .form_label_msg_sugg{
-                font-weight: 400;            
+            .form_label_msg_sugg{       
                 font-size: 0.8rem!important;
             }
         }
