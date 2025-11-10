@@ -1,15 +1,29 @@
 User-agent: *
-Allow: /
 
-User-agent: *
 Disallow: /stage/
 Disallow: /test/
 Disallow: /maqueta/
 Disallow: /responsive/
+Disallow: /admin/
 
+# Only block /api/ if it’s not meant to be crawled/indexed.
+# Disallow: /api/
+
+# WordPress nuance: allow AJAX endpoint
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?sessionid=
+
+# PATH rules
 Disallow: /dir/
+
+# File-type pattern (Google/Bing support $ end-anchor)
+Disallow: /*.xls$
+
 Disallow: /file.html
 Disallow: /img/dogs.jpg
-Disallow: /*.xls$
 
 Sitemap: https://wwwsitiowebcom/sitemap.xml
