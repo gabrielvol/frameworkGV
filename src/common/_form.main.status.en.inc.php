@@ -19,7 +19,7 @@ $form_status_ok_global__formMainID        = $form_status_ok_globalA__formMainID 
 
 $form_status_error_globalA__formMainID    = 'There was an error delivering your message.';
 $form_status_error_globalB__formMainID    = 'Please try again later.';
-$form_status_error_globalC__formMainID    = 'You can contact us by email writing to <a href="' . $form_status_recipient_mailto__formMainID . '" class="' . $form_status_pop_anchor_classes__formMainID . '">' . $form_status_recipient__formMainID . '</a>.';
+$form_status_error_globalC__formMainID    = 'You can contact us by email writing to <a href="' . $form_status_recipient_mailto__formMainID . '" class="' . $form_status_pop_anchor_classes__formMainID . '">' . $form_status_recipient__formMainID . '</a>';
 $form_status_error_global__formMainID        = $form_status_error_globalA__formMainID . ' ' . $form_status_error_globalB__formMainID . ' ' . $form_status_error_globalC__formMainID;
 
 // $form_status_marquee__formMainID = '<p class="form_status form_status_ini">'. $form_status_ini_global__formMainID .'</p>';

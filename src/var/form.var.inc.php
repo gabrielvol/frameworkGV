@@ -58,6 +58,8 @@ else:
 endif;
 
 $form_PHPMailer_account__formMainID = $site_email_FORM_address;
+// $form_PHPMailer_account__formMainID = ($domain_clean == $domain_ar) ? $site_email_INFO_AR_address : $site_email_INFO_MX_address;
+
 $form_status_recipient__formMainID = $form_recipient__formMainID;
 $form_status_recipient_mailto__formMainID = 'mailto:' . $form_recipient__formMainID;
 

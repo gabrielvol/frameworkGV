@@ -65,7 +65,7 @@ e.g. print_r($captcha_response) prints {
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
         'secret' => $captcha_key_secret,
-        'response' => $data_captchaResponseToken__formMain,
+        'response' => $data_captchaResponseToken__formMainID,
     ]));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
@@ -89,7 +89,7 @@ e.g. print_r($captcha_response_keys) prints Array (
             
     $form_status_marquee__formMainID .= '<p class="form_status form_status_captcha">Print Captcha Response Keys Action: </p>' . '<code>' . print_r($captcha_response_keys["action"]) . '</code>';
             
-    $form_status_marquee__formMainID .= $form_status_captcha_ok_tokenConseguido__formMain . '<code>' . $data_captchaResponseToken__formMain . '</code>';
+    $form_status_marquee__formMainID .= $form_status_captcha_ok_tokenConseguido__formMainID . '<code>' . $data_captchaResponseToken__formMainID . '</code>';
     
     /*
     echo '<pre>';

@@ -23,7 +23,15 @@
 */
 
 /* // Domains // REF [54] --------------------------------------------------- */
-$http_protocol      = 'https://www.';
+$domain_query = $_SERVER['HTTP_HOST'] ?? $_SERVER['SERVER_NAME'] ?? 'unknown';
+
+$domain_clean = preg_replace('/^www\./i', '', $domain_query);
+
+$protocol_query = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+    ? "https://"
+    : "http://";
+
+$http_protocol  = $protocol_query . 'www.';
 
 $domain_main        = 'sitiocomar';
 
