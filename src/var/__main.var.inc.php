@@ -3,7 +3,7 @@
    PHP Variables Main Loader [/src/var/main.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Listado principal de includes de variables php.
 
    // REF [36] Form variables
@@ -11,6 +11,8 @@
 
    #php #variables #includes
 */
+
+include('secrets.var.inc.php');
 
 /* // Activadores ----------------------------------------------------------- */
 include('act/global.act.inc.php');
