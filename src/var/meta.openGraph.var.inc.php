@@ -3,7 +3,7 @@
    Open Graph Variables [/src/var/meta.openGraph.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Variables para open graph
    Este archivo se carga antes del head en cada página, no se carga en:
    PHP Variables Main Loader `[/src/var/main.var.inc.php]`

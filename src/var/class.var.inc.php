@@ -3,7 +3,7 @@
    Classes Variables [/src/var/class.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Archivo de variables php para <header>, <footer> y <#main>
 
    #php #variables #header #main #footer #class #container
@@ -17,7 +17,7 @@
 */
 
 
-/* // Model ----------------------------------------------------------------- 
+/* // Model ----------------------------------------------------------------- *
     $class_ini_SECTION      = '';
 
 if($page_int):

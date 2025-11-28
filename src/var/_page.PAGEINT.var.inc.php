@@ -3,7 +3,7 @@
    PAGEINT Variables [/src/var/page.PAGEINT.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
 
    // REF [26] Lightbox
    // REF [36] Form variables
@@ -12,7 +12,7 @@
 
 /* // Variables en comun para las paginas internas de PAGEINT --------------- */
 
-/* // Form identifier Global ------------------------------------------------ 
+/* // Form identifier Global ------------------------------------------------ *
    La variable $form_id puede ser declarada de tres formas:
  
    a) De manera global en `[/src/var/form.var.inc.php]` para todo el sitio
@@ -32,7 +32,7 @@ $page_noTrack           = (!empty($dir_env)) ? 1 : 0;
 
 
 
-/* // Titles ---------------------------------------------------------------- 
+/* // Titles ---------------------------------------------------------------- *
    Ej.:
    $pageRecetas_title_huevoFrito    = 'Cómo hacer un exquisito huevo frito';
    $page_heading_id                 = '';

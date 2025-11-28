@@ -37,7 +37,7 @@
     
     
 
-/* // Explanation --------------------------------------------------------------
+/* // Explanation ----------------------------------------------------------- *
 
 Each YouTube video has 4 generated images. They are predictably formatted as follows:
 
@@ -77,5 +77,5 @@ https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/mqdefault.jpg
 https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/sddefault.jpg
 https://img.youtube.com/vi/aaaaaaaaaaaaaaaaaa/maxresdefault.jpg
 
------------------------------------------------------------------------------ */
+*/
 ?>

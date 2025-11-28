@@ -3,7 +3,7 @@
    URL Variables [/src/var/url.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Definición de urls y href del sitio.
 
    #domain #subdomain #url #href #hash #gettext
@@ -38,7 +38,7 @@ $hash_main          = '#main';
     
     
 
-/* // url ------------------------------------------------------------------- 
+/* // url ------------------------------------------------------------------- *
    Los vínculos que tienen un hash creado deben ser comentados en la siguiente
    lista
 */
@@ -110,7 +110,7 @@ $url_main_hs_HOME             = $url_home . $hash_main;
 */    
     
     
-/* // url subdomain // REF [54] ---------------------------------------------
+/* // url subdomain // REF [54] --------------------------------------------- *
 $url_root_SUBDOMAIN     = $url_subdomain_SUBDOMAIN_full;
 $url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
 // $url_PAGINA         = $url_subdomain_SUBDOMAIN_full . '/pagina.php';
@@ -119,7 +119,7 @@ $url_index_SUBDOMAIN    = $url_subdomain_SUBDOMAIN_full . '/index.php';
 */    
 
     
-/* // full urls ------------------------------------------------------------- 
+/* // full urls ------------------------------------------------------------- *
    Los vínculos que tienen un hash creado deben ser comentados en la siguiente
    lista
 */
@@ -204,7 +204,7 @@ $href_contacto_noLink      = ($nav_pageCurrent_int == 'page_index_index') ? $hre
 */    
 
     
-/* // href subdomain -------------------------------------------------------- 
+/* // href subdomain -------------------------------------------------------- *
 $href_root_SUBDOMAIN    = 'href="' . $url_root_SUBDOMAIN . '"'; 
 $href_logo_SUBDOMAIN    = $href_root_SUBDOMAIN;
 $href_index_SUBDOMAIN   = 'href="' . $url_index_SUBDOMAIN . '"';

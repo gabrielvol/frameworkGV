@@ -3,7 +3,7 @@
    Index / Inicio Variables [/src/var/page.index.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Variables en comun para los archivos `[/src/index.php]` y `[/src/home.php]`
 
    // REF [26] Lightbox

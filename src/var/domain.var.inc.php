@@ -3,7 +3,7 @@
    Domain Variables [/src/var/domain.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Definición de dominios y global url
 
    #domain #subdomain #http #url

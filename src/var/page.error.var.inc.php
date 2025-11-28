@@ -3,7 +3,7 @@
    Error Variables [/src/var/page.error.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Variables en comun para los archivos `[/src/error/xxx.php]`
 
    // REF [26] Lightbox

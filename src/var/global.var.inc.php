@@ -3,7 +3,7 @@
    Global Variables [/src/var/global.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Variables que se usan en todo el sitio web.
 
    #php #variables #nav #main #footer #container

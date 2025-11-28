@@ -3,7 +3,7 @@
    Site Language Variables [/src/var/lang.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion ----------------------------------------------------------- 
+/* // Descripcion ----------------------------------------------------------- *
    Variable para site lang, títulos y descripción de sitio
 
    // REF [13] Address / date_default_timezone_set

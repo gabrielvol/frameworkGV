@@ -3,7 +3,7 @@
    Form Variables [/src/var/form.var.inc.php]
    ========================================================================== */
 
-/* // Descripcion -----------------------------------------------------------
+/* // Descripcion ----------------------------------------------------------- *
  * Archivo de asignación de variables para envíos del formulario
  * Este archivo solamente se carga si la variable $has_form tiene asignado un 1
  * 
