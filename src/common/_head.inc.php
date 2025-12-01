@@ -51,8 +51,8 @@
 
 <link rel="author" href="<?php echo $dir_env; ?>/humans.txt">
 
-<link rel="canonical" href="<?php echo $url_main; ?>">
-<link rel="index" href="<?php echo $url_main; ?>">
+<link rel="canonical" href="<?php echo $url_canonical; ?>">
+<link rel="index" href="<?php echo $url_canonical; ?>">
 
 <?php /* Copyright */ ?>
 <link rel="license" href="<?php echo $dir_env; ?>/legal/copyright.php">

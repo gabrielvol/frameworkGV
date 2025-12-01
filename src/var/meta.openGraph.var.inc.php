@@ -92,7 +92,13 @@ endif;
 
 
 /* // -- misc */
-    $openGraph_url                  = $url_main_full;
+    if (!empty($page_url_full)) {
+        $openGraph_url = $page_url_full;
+    } elseif (!empty($page_redirect_url)) {
+        $openGraph_url = $page_redirect_url;
+    } else {
+        $openGraph_url = $url_main_full;
+    }
     $openGraph_type                 = 'website';
     $openGraph_locale               = $site_lang_locale;
 
