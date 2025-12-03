@@ -49,8 +49,9 @@
 @use "sass:color";
 @use "sass:map";
 
-@use "var_all_pre" as *;
 @use "../custom/var/env_var" as *;
+
+@use "var_all_pre" as *;
 
 /*___ Accessibility _____________________*/
 #go-main-content{

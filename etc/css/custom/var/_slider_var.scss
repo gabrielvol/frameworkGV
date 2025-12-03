@@ -2,15 +2,6 @@
    Slider Variables | Custom [/etc/css/custom/var/slider_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "../scss/var_absolute" as *;
-@use "colours_main_var" as *;
-@use "colours_borders_var" as *;
-@use "colours_backgrounds_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -54,7 +45,18 @@
 
 
 
-    /* // Slider Colours -------------------------------------------------------- */
+@use "sass:color";
+@use "sass:map";
+
+@use "colours_main_var" as *;
+@use "colours_borders_var" as *;
+@use "colours_backgrounds_var" as *;
+
+@use "env_var" as *;
+
+@use "../scss/var_absolute" as *;
+
+/* // Slider Colours -------------------------------------------------------- */
 $slider_global_bgColour:            transparent;
 $slider_global_img_bgColour:        $img_bgColour_global;
 

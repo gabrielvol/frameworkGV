@@ -2,13 +2,6 @@
    Tables Variables | Custom [/etc/css/custom/var/tables.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "../scss/var_absolute" as *;
-@use "helpers_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -49,6 +42,16 @@
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
+
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "../scss/var_absolute" as *;
+
+@use "helpers_var" as *;
 
 $table_width_BT:  $hundred;
 $table_width_AT:  700px;

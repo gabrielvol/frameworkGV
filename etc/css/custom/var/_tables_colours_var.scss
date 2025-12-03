@@ -1,6 +1,8 @@
 /* * NombreDeProyecto * ========================================================
    Tables Colours Variables | Custom [/etc/css/custom/var/tables_colours_var.scss]
    ========================================================================== */
+@use "sass:color";
+@use "sass:map";
 
 @use "env_var" as *;
 
@@ -8,8 +10,6 @@
 @use "colours_borders_var" as *;
 @use "colours_backgrounds_var" as *;
 
-@use "sass:color";
-@use "sass:map";
 /* // Table Border Colours -------------------------------------------------- */
 $table_bdColour_main:         $bdGreyM;
 $table_bdColour_sec:    $bdGreyXL;

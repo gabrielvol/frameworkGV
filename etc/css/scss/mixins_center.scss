@@ -2,11 +2,6 @@
    Center Mixins | Etc [/etc/css/scss/mixins_center.scss]
    ========================================================================== */
 
-@use "var_absolute" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de mixins.
 
@@ -50,6 +45,14 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
+@use "var_absolute" as *;
 
 /* // Mixin para clase .absoluteCenter -------------------------------------- */
 @mixin centerAbsolute($centerAbsoluteMX_width, $centerAbsoluteMX_height, $centerAbsoluteMX_position: absolute){

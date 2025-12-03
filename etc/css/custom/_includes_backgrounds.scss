@@ -1,10 +1,12 @@
 /* * NombreDeProyecto * ========================================================
    Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
    ========================================================================== */
-@use "var/env_var" as *;
-@use "../scss/var_all_pre" as *;
-
 @use "sass:color";
 @use "sass:map";
+
+@use "var/env_var" as *;
+
+@use "../scss/var_all_pre" as *;
+
 @include backgroundColourClassesGenerator;
 @include backgroundColourHoverClassesGenerator;

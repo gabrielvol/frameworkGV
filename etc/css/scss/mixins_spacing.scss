@@ -2,11 +2,6 @@
    Spacing Helpers Mixins | Etc [/etc/css/scss/mixin_spacing.scss]
    ========================================================================== */
 
-@use "../custom/var/helpers_var" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Mixins para generar nuevos spacing helpers
 
@@ -50,6 +45,13 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/var/helpers_var" as *;
 
 @mixin spacingHelpersClassesGenerator{
     @each $SH_className, $SH_value in $helpers_spacing_map {

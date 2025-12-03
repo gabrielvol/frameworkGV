@@ -2,11 +2,6 @@
    Nav Settings | Etc [/etc/css/scss/settings_nav.scss]
    ========================================================================== */
 
-@use "var_all_pre" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de estilos scss.
 
@@ -50,6 +45,13 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
+@use "var_all_pre" as *;
 
 nav{
     p.nav_TLI,

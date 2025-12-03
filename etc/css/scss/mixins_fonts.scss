@@ -2,12 +2,6 @@
    Fonts Mixins | Etc [/etc/css/scss/mixins_fonts.scss]
    ========================================================================== */
 
-@use "../custom/var/text_var" as *;
-@use "../custom/var/fonts_main_var" as *;
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de mixins.
 
@@ -52,6 +46,13 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
+@use "../custom/var/text_var" as *;
+@use "../custom/var/fonts_main_var" as *;
 
 /* // Generador de clases por cada fuente ----------------------------------- */
 @mixin fontFamilyCustomClassesGenerator{

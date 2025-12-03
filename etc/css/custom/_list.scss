@@ -1,5 +1,5 @@
 /* * NombreDeProyecto * ========================================================
-   Lists | Custom [/etc/css/custom/lists.scss]
+   Lists | Custom [/etc/css/custom/list.scss]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- */
@@ -47,7 +47,13 @@
 @use "sass:color";
 @use "sass:map";
 
-@use "env_var" as *;
+@use "var/env_var" as *;
+
+@use "../scss/var_absolute" as *;
+
+@use "../scss/var_all_pre" as *;
+
+@use "var/list_var" as *;
 
 /* // Reset ----------------------------------------------------------------- */
 ul, ol, li, dd{
