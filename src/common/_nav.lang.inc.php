@@ -4,6 +4,8 @@
    ========================================================================== */
 
 // Nav para cambiar idioma del sitio
+// REF [14] Gettext Locales
+// REF [33]
 
 ?>
 

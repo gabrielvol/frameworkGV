@@ -4,20 +4,11 @@
    ========================================================================== */
 
 // Nav para cambiar idioma del sitio
+// REF [14] Gettext Locales
+// REF [33]
 
 ?>
 
-<ul class="nav_lang_ul unstyled displayFlex <?php if(isset($gettext_idioma)){ if($gettext_idioma == 'de_DE') {
-        // REF [33]
-        echo ' lang_DE'; }
-
-    elseif($gettext_idioma == 'en_GB') {
-        echo ' lang_GB'; }
-
-    elseif($gettext_idioma == 'pt_BR') {
-        echo ' lang_BR'; }
-
-    else { echo ' lang_AR'; } } ?>">
-
+<ul class="nav_lang_ul unstyled displayFlex <?php /* // REF [33] */ echo $lang_class; ?>">
     <?php include('nav.lang.list.inc.php'); ?>
 </ul>
