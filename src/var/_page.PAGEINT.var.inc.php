@@ -41,10 +41,10 @@ $page_noTrack           = (!empty($dir_env)) ? 1 : 0;
 // include('data.PAGEINT.var.inc.php');
 
 if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
-    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
+    $PAGEINT_title_PAGEID    = 'TituloPageID_GB';
 /*
-    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
-    $PAGEINT_title_PAGEID    = 'TituloPagID_GB';
+    $PAGEINT_title_PAGEID    = 'TituloPageID_GB';
+    $PAGEINT_title_PAGEID    = 'TituloPageID_GB';
 */
 
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){
@@ -77,10 +77,10 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
 
 
 } else {
-    $PAGEINT_title_PAGEID       = 'TituloPagID';
+    $PAGEINT_title_PAGEID       = 'TituloPageID';
 /*
-    $PAGEINT_title_PAGEID       = 'TituloPagID';
-    $PAGEINT_title_PAGEID       = 'TituloPagID';
+    $PAGEINT_title_PAGEID       = 'TituloPageID';
+    $PAGEINT_title_PAGEID       = 'TituloPageID';
 */    
     
     if($nav_pageCurrent_id == "page_PAGEINT_ID"){

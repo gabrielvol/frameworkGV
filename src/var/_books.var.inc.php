@@ -1,6 +1,6 @@
 <?php
 /* * NombreDeProyecto * ========================================================
-   Book Titles Variables [/src/var/data.books.var.inc.php]
+   Book Titles Variables [/src/var/books.var.inc.php]
    ========================================================================== */
 
 /* // Descripcion ----------------------------------------------------------- *

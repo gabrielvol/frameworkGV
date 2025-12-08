@@ -40,8 +40,7 @@ include('email.var.inc.php');
     
 // include('file.var.inc.php');
 // include('media.var.inc.php');
-// if($nav_pageCurrent == 'page_PAGEINT'){ include('page.PAGEINT.var.inc.php'); }
-// if($nav_pageCurrent_int == 'page_PAGEINT_int'){ include('page.PAGEINT.var.inc.php'); }
+// if (($nav_pageCurrent === 'page_PAGEINT') || ($nav_pageCurrent_int === 'page_PAGEINT_int')) { include 'page.PAGEINT.var.inc.php'; }
 
 /* // REF [36] Form variables Form variable */
 /* // REF [50] Google captcha */

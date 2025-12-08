@@ -54,10 +54,11 @@ $url_logo           = $url_root;
 
 $url_iniciarSesion = $dir_env .'/login/index.php';
 $url_recuperarContrasena = $dir_env .'/login/recuperar-contrasena.php';
+// 
+// $url_PAGINA         = $dir_env . '/pagina.php';
+// $url_PAGINA         = $dir_env . '/pagina.php';
 
-// $url_PAGINA         = $dir_env . '/pagina.php';
-// $url_PAGINA         = $dir_env . '/pagina.php';
-// $url_PAGINA         = $dir_env . '/pagina.php';
+// $url_PAGEINT = $dir_env . '/URL';
 
 
 $url_top_hs         = $dir_env . '/' . $hash_top;
@@ -134,9 +135,11 @@ $url_recuperarContrasena_full = $url_main . $url_recuperarContrasena;
 //$url_gracias_full       = $url_wip . $url_gracias;
 //$url_construccion_full  = $url_wip . $url_construccion;
 //$url_copyright_full     = $url_wip . $url_copyright;
+ 
 // $url_PAGINA_full         = $url_wip . $url_PAGINA;
 // $url_PAGINA_full         = $url_wip . $url_PAGINA;
-// $url_PAGINA_full         = $url_wip . $url_PAGINA;
+
+// $url_PAGEINT_full = $url_wip . $url_PAGEINT;
 
 /*___ full urls para hashes traducidas ___*/
     //$url_inicio_hs_HOME_full    = $url_main . $url_home . $hash_inicio;
@@ -161,9 +164,11 @@ $href_iniciarSesion = 'href="'. $url_iniciarSesion .'"';
 $href_recuperarContrasena = 'href="'. $url_recuperarContrasena .'"';
 
 //$href_construccion  = 'href="' . $url_construccion . '"';
+ 
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
 // $href_PAGINA        = 'href="' . $url_PAGINA . '"';
-// $href_PAGINA        = 'href="' . $url_PAGINA . '"';
+
+// $href_PAGEINT = 'href="' . $url_PAGEINT . '"';
     
 $href_top_hs        = 'href="' . $url_top_hs . '"';
 $href_main_hs       = 'href="' . $url_main_hs . '"';

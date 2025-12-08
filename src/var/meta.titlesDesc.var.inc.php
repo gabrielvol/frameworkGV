@@ -49,9 +49,8 @@ if($gettext_idioma == 'en_GB'){
     $page_title_home_gracias    = 'Thank You';
     $page_title_home_copyright  = 'License';  
 
-// $page_title_home_PAGEINT    = 'TituloEnIngles';
-// $page_title_home_PAGEINT    = 'TituloEnIngles';
-// $page_title_home_PAGEINT    = 'TituloEnIngles';  
+// $page_title_home_PAGEINT = 'TituloEnIngles';  
+// $page_title_home_PAGEINT = 'TituloEnIngles';  
 
 // $page_title_redirect  = 'redirect';
     
@@ -59,9 +58,8 @@ if($gettext_idioma == 'en_GB'){
     $nav_main_item_home         = 'Home';
     $nav_main_item_contacto     = $page_title_home_contacto;
     
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+// $nav_main_item_PAGEINT = $page_title_home_PAGEINT;
+// $nav_main_item_PAGEINT = $page_title_home_PAGEINT;
 
 // $nav_main_item_PAGEID       = 'TituloEnIngles_id';
     
@@ -91,9 +89,8 @@ if($gettext_idioma == 'en_GB'){
     $page_title_home_gracias    = 'sinTraduccion';
     $page_title_home_copyright  = 'sinTraduccion'; 
 
-// $page_title_home_PAGEINT    = 'sinTraduccion';   
-// $page_title_home_PAGEINT    = 'sinTraduccion';
-// $page_title_home_PAGEINT    = 'sinTraduccion';
+// $page_title_home_PAGEINT = 'sinTraduccion';
+// $page_title_home_PAGEINT = 'sinTraduccion';
 
 // $page_title_redirect  = 'redirect';
     
@@ -101,9 +98,8 @@ if($gettext_idioma == 'en_GB'){
     $nav_main_item_home         = 'Home';
     $nav_main_item_contacto     = $page_title_home_contacto; 
 
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
+// $nav_main_item_PAGEINT = $page_title_home_PAGEINT;
+// $nav_main_item_PAGEINT = $page_title_home_PAGEINT;
 
 // $nav_main_item_PAGEID       = 'sinTraduccion_id';
     
@@ -138,9 +134,8 @@ if($gettext_idioma == 'en_GB'){
     $page_title_home_gracias    = 'Gracias';
     $page_title_home_copyright  = 'Licencia'; 
     
-// $page_title_home_PAGEINT    = 'TituloEnCastellano';
-// $page_title_home_PAGEINT    = 'TituloEnCastellano';
-// $page_title_home_PAGEINT    = 'TituloEnCastellano';   
+// $page_title_home_PAGEINT = 'TituloEnCastellano';  
+// $page_title_home_PAGEINT = 'TituloEnCastellano';   
 
 // $page_title_redirect  = 'redirect';
     
@@ -148,9 +143,8 @@ if($gettext_idioma == 'en_GB'){
     $nav_main_item_home         = 'Home';
     $nav_main_item_contacto     = $page_title_home_contacto; 
     
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;
-// $nav_main_item_PAGEINT      = $page_title_home_PAGEINT;   
+// $nav_main_item_PAGEINT = $page_title_home_PAGEINT;
+// $nav_main_item_PAGEINT = $page_title_home_PAGEINT;
 
 // $nav_main_item_PAGEID       = 'TituloEnCastellano_id';
     
