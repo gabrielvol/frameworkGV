@@ -159,17 +159,23 @@ a{
 @include fontFamilyCustomClassesGenerator;
 @include fontFamilyWeightsGenerator;
 
-@include beforeMQ500{
-    @include fontCustomHeadingsSizesGeneratorB500;
+@include beforeMQ350{
+    @include fontCustomHeadingsSizesGeneratorB350;
+}
+@include afterMQ350{
+    @include fontCustomHeadingsSizesGeneratorA350; 
 }
 @include afterMQ500{
     @include fontCustomHeadingsSizesGeneratorA500; 
 }
 @include afterMQ768{
-    @include fontCustomHeadingsSizesGeneratorTablet;   
+    @include fontCustomHeadingsSizesGeneratorA768;   
+}
+@include afterMQ1024{
+    @include fontCustomHeadingsSizesGeneratorA1024;
 }
 @include afterMQ1200{
-    @include fontCustomHeadingsSizesGeneratorDesktop;
+    @include fontCustomHeadingsSizesGeneratorA1200;
 }
 
 /* // Colour classes -------------------------------------------------------- */
