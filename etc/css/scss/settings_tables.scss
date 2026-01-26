@@ -55,11 +55,11 @@ table{
     border-spacing: 0;
     border-collapse: collapse;
     @include beforeMQ768{
-        width: $table_width_BT;
+        width: $table_width_B768;
         @include tableCustomSizesBT;        
     }
     @include afterMQ768{
-        width: $table_width_AT;
+        width: $table_width_A768;
         @include tableCustomSizesAT;          
     }
     @include afterMQ1024{
@@ -157,7 +157,7 @@ table{
 }
 @include beforeMQ768{
     table{
-        width: $table_width_BT;
+        width: $table_width_B768;
         
         thead,
         tfoot{

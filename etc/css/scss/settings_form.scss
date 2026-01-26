@@ -93,7 +93,7 @@ fieldset, label, input, select, textarea, button,
     
     @include MQ768_1024{
         .tabletForm &{
-            width: $form_label_width_TO;
+            width: $form_label_width_A768B1024;
         }
     }
     
@@ -144,13 +144,13 @@ input, select, textarea{
     
     .mobileForm &{
         @include beforeMQ768{
-            font-size: $form_input_ftSize_BT;
+            font-size: $form_input_ftSize_B768;
         }
     }
     
     @include MQ768_1024{
         .tabletForm &{
-            font-size: $form_input_ftSize_AT;
+            font-size: $form_input_ftSize_A768;
         }
     }
     
@@ -182,16 +182,16 @@ button{
         }
 
         @include beforeMQ768{
-            height: $button_form_submit_height_BT;
-            line-height: $button_form_submit_lineHeight_BT;
+            height: $button_form_submit_height_B768;
+            line-height: $button_form_submit_lineHeight_B768;
         }
     }
     
     .tabletForm &{
         @include MQ768_1024{
-            width: $button_form_submit_width_TO;
-            height: $button_form_submit_height_TO;
-            line-height: $button_form_submit_lineHeight_TO;
+            width: $button_form_submit_width_A768B1024;
+            height: $button_form_submit_height_A768B1024;
+            line-height: $button_form_submit_lineHeight_A768B1024;
         }  
     }
 
@@ -442,11 +442,11 @@ form{
     
     .tabletForm &{
         @include afterMQ768{
-            width: $form_width_AT;
+            width: $form_width_A768;
         }
         
         @include MQ768_1024{
-            width: $form_width_TO;
+            width: $form_width_A768B1024;
         }
     
         @include afterMQ1024{
@@ -487,7 +487,7 @@ form{
 
             @include MQ768_1024{
                 .tabletForm &{
-                    @include equalHeightAndLineHeight($form_label_height_TO);          
+                    @include equalHeightAndLineHeight($form_label_height_A768B1024);          
                 }
             }
 
@@ -513,13 +513,13 @@ form{
         input, select{
             @include beforeMQ768{
                 .mobileForm &{
-                    @include equalHeightAndLineHeight($form_input_height_BT);
+                    @include equalHeightAndLineHeight($form_input_height_B768);
                 }
             }
 
             @include MQ768_1024{
                 .tabletForm &{
-                    @include equalHeightAndLineHeight($form_input_height_TO);          
+                    @include equalHeightAndLineHeight($form_input_height_A768B1024);          
                 }
             }
 
@@ -559,13 +559,13 @@ form{
         input, select{
             @include beforeMQ768{
                 .mobileForm &{
-                    @include equalHeightAndLineHeight($form_input_height_BT);
+                    @include equalHeightAndLineHeight($form_input_height_B768);
                 }        
             }
 
             @include MQ768_1024{
                 .tabletForm &{
-                    @include equalHeightAndLineHeight($form_input_height_TO);
+                    @include equalHeightAndLineHeight($form_input_height_A768B1024);
                 }
             }
 
@@ -594,7 +594,7 @@ form{
 
             @include MQ768_1024{
                 .tabletForm &{
-                    @include equalHeightAndLineHeight($form_label_height_TO);
+                    @include equalHeightAndLineHeight($form_label_height_A768B1024);
                 }
             }
 

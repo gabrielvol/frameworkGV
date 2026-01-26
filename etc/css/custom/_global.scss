@@ -74,7 +74,7 @@
     
     @include beforeMQ768{
         @if $nav_accordion_act == "on"{
-            padding-top: $header_navAccordion_height_BT;
+            padding-top: $header_navAccordion_height_B768;
         }
     }
     

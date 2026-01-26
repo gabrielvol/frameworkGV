@@ -2,12 +2,6 @@
    Border Colours Variables | Custom [/etc/css/custom/var/colours_borders_var.scss]
    ========================================================================== */
 
-@use "env_var" as *;
-
-@use "colours_main_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables scss.
 
@@ -48,6 +42,14 @@
 // T, L, M, R, B, BK    = thin, light, medium, regular, bold, black
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
+
+
+@use "sass:color";
+@use "sass:map";
+
+@use "env_var" as *;
+
+@use "colours_main_var" as *;
 
 ///**Border Colours:** 
     ///Aquí se declaran los colores de bordes del sitio. No se genera ningún CSS de este mapa. Solamente se utilizan las var declaradas abajo en los archivos .scss

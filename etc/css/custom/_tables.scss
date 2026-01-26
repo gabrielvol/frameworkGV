@@ -57,7 +57,7 @@ table.tableRounded{
     }
 }
     
-$table_before_width_BT: 40%;
+$table_before_width_B768: 40%;
 @include beforeMQ768{
     table{
         tbody{
@@ -76,7 +76,7 @@ $table_before_width_BT: 40%;
             }
            
             td{
-                padding-left: calc(#{$table_before_width_BT} + 5%);
+                padding-left: calc(#{$table_before_width_B768} + 5%);
                 font-size: 0.8rem;
                 text-align: center;
 
@@ -86,7 +86,7 @@ $table_before_width_BT: 40%;
                 
                 &::before{
                     left: 10px;
-                    width: $table_before_width_BT; 
+                    width: $table_before_width_B768; 
                     font-weight: bold;
                     text-transform: uppercase;                
                 }
@@ -142,11 +142,11 @@ $table_before_width_BT: 40%;
         
         .tableResponsive{
             @include beforeMQ768{
-                width: $table_width_BT;
+                width: $table_width_B768;
                 @include tableCustomSizesBT;        
             }
             @include afterMQ768{
-                width: $table_width_AT;
+                width: $table_width_A768;
                 @include tableCustomSizesAT;          
             }
             @include afterMQ1024{

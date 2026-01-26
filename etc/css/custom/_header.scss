@@ -139,8 +139,8 @@
             
         @if $logo_bgImage_before_act == "on"{
             .logo_header{
-                width: $logo_width_BT;
-                height: $logo_height_BT_before;
+                width: $logo_width_B768;
+                height: $logo_height_B768_before;
             }
         }
         
@@ -149,7 +149,7 @@
             top: 0;
             right: 0;
             left: 0;
-            height: $header_navAccordion_height_BT;
+            height: $header_navAccordion_height_B768;
             box-shadow: 0 0 10px $greyL;
         
             &.topperShadow{
@@ -157,7 +157,7 @@
             }
             
             .logo_header{
-                height: $logo_height_BT_navAccordion;
+                height: $logo_height_B768_navAccordion;
                 margin-right: auto;
                 margin-left: auto;
             
@@ -173,7 +173,7 @@
             
         } @else {
             .logo_header{
-                width: $logo_width_BT;
+                width: $logo_width_B768;
             
                 a,
                 img{
@@ -272,7 +272,7 @@
                 &,
                 a{
                     width: $logo_width_A768;
-                    height: $logo_height_AT_before;
+                    height: $logo_height_A768_before;
                 }  
                 
                 img{

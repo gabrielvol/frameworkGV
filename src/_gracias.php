@@ -35,7 +35,7 @@
 /* 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.gracias.var.inc.php');
     
-    $page_body_classes = "";
+    $page_body_classes = '';
     $page_header_classes = '';
     $page_main_classes = '';
     
@@ -78,8 +78,8 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
-        <h1 class="txAlignCenter"><?php echo $page_title_home_gracias; ?></h1>
-        <p class="txAlignCenter"><?php echo $form_status_ok_globalB; ?></p>
+            <h1 class="txAlignCenter"><?php echo $page_title_home_gracias; ?></h1>
+            <p class="txAlignCenter"><?php echo $form_status_ok_globalB; ?></p>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>

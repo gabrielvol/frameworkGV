@@ -36,7 +36,7 @@
 /* // 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.contacto.var.inc.php');
     
-    $page_body_classes = "";
+    $page_body_classes = '';
     $page_header_classes = '';
     $page_main_classes = '';
     
@@ -78,10 +78,10 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
-        <h1><?php echo $page_title_home_contacto; ?></h1>
-        <div class="mobileForm tabletForm">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.inc.php'); ?>
-        </div>
+            <h1><?php echo $page_title_home_contacto; ?></h1>
+            <div class="mobileForm tabletForm">
+                <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.inc.php'); ?>
+            </div>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>

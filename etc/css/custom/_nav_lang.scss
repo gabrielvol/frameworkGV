@@ -51,14 +51,14 @@
            
         &,
         li{
-            height: $nav_lang_ul_height_BT;
+            height: $nav_lang_ul_height_B768;
         }
         
         li{
             a,
             img{
-                width: $nav_lang_flag_width_BT;
-                height: $nav_lang_flag_height_BT;
+                width: $nav_lang_flag_width_B768;
+                height: $nav_lang_flag_height_B768;
             }
 
             & + li{
@@ -66,10 +66,10 @@
             }
         
             @if $nav_lang_flag_rounded_act == "on"{
-                width: $nav_lang_flag_height_BT;
+                width: $nav_lang_flag_height_B768;
                 
                 a{
-                    @include squareSize($nav_lang_flag_height_BT);
+                    @include squareSize($nav_lang_flag_height_B768);
                 }
                 
                 img{
@@ -77,10 +77,10 @@
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    width: $nav_lang_flag_width_BT;
-                    height: $nav_lang_flag_height_BT;
-                    margin-top: calc(-1 * calc(#{$nav_lang_flag_height_BT} / 2));
-                    margin-left: calc(-1 * calc(#{$nav_lang_flag_width_BT} / 2));
+                    width: $nav_lang_flag_width_B768;
+                    height: $nav_lang_flag_height_B768;
+                    margin-top: calc(-1 * calc(#{$nav_lang_flag_height_B768} / 2));
+                    margin-left: calc(-1 * calc(#{$nav_lang_flag_width_B768} / 2));
                 }
             }
         }
@@ -198,8 +198,8 @@
         li{
             a,
             img{
-                width: $nav_lang_flag_width_AT;
-                height: $nav_lang_flag_height_AT;
+                width: $nav_lang_flag_width_A768;
+                height: $nav_lang_flag_height_A768;
             }
 
             & + li{
@@ -207,14 +207,14 @@
             }
         
             @if $nav_lang_flag_rounded_act == "on"{
-                width: $nav_lang_flag_height_AT;
+                width: $nav_lang_flag_height_A768;
                 
                 a{
-                    @include squareSize($nav_lang_flag_height_AT);
+                    @include squareSize($nav_lang_flag_height_A768);
                 }
                 
                 img{
-                    @include centerAbsolute($nav_lang_flag_width_AT, $nav_lang_flag_height_AT);
+                    @include centerAbsolute($nav_lang_flag_width_A768, $nav_lang_flag_height_A768);
                 }
             }
         }

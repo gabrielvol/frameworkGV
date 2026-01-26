@@ -36,7 +36,7 @@
 /* 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.construccion.var.inc.php');
     
-    $page_body_classes = "";
+    $page_body_classes = '';
     $page_header_classes = '';
     $page_main_classes = '';
        
@@ -76,11 +76,11 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
-        <div class="container container_construccion">
-            <h1><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
-            <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de esta p&aacute;gina'); ?>.</p>
-            <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.error.p.inc.php'); ?>
-        </div>
+            <div class="container container_construccion">
+                <h1><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
+                <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de esta p&aacute;gina'); ?>.</p>
+                <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.error.p.inc.php'); ?>
+            </div>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>

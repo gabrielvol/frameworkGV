@@ -92,7 +92,7 @@ p, a, li, dd, dt, .pSize{
         font-size: $ftSize_paragraph_A500;
     }
     @include afterMQ768{
-        font-size: $ftSize_paragraph_AT;
+        font-size: $ftSize_paragraph_A768;
     }
     @include afterMQ1024{
         font-size: $ftSize_paragraph_A1024;
@@ -199,5 +199,5 @@ a.white{
 }
 @include colourLightClassesGenerator($colours_light_lightenValue);
 @include colourDarkClassesGenerator($colours_dark_lightenValue);
-@include anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_lightenValue);
+@include anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_darkenValue);
 @include anchorColoursDarkClassesGenerator($colours_anchor_ftColours_dark_lightenValue);

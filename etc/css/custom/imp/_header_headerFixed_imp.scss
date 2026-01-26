@@ -128,7 +128,7 @@
         } 
         
         @if $header_fixed_act_B768 == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_BT;
+            height: $header_height_B768;
             
             &.navDrawer_open{}
         }   
@@ -149,7 +149,7 @@
         } 
         
         @if $header_fixed_act_nav_BT == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_BT;
+            height: $header_height_B768;
             
             &.navDrawer_open{}
         }   
@@ -170,7 +170,7 @@
         }
         
         @if $header_fixed_act_A768 == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_AT;
+            height: $header_height_A768;
         }
     }
     
@@ -188,7 +188,7 @@
         }
         
         @if $header_fixed_act_nav_AT == "on" or $header_fixed_act_ALL == "on"{
-            height: $header_height_AT;
+            height: $header_height_A768;
         }
     }
     

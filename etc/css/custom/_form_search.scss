@@ -26,38 +26,38 @@
     }
     
     @include beforeMQ768{
-        width: $form_input_search_width_BT;
+        width: $form_input_search_width_B768;
     
         input{
-            height: $form_input_search_height_BT;
+            height: $form_input_search_height_B768;
 
             &[type="search"]{
-                width: $form_input_search_width_BT;
-                padding-right: calc(#{$form_input_search_bgSize_BT} + 15px)!important;
-                line-height: $form_input_search_lineHeight_BT;
+                width: $form_input_search_width_B768;
+                padding-right: calc(#{$form_input_search_bgSize_B768} + 15px)!important;
+                line-height: $form_input_search_lineHeight_B768;
             }
             
             &[type="submit"]{
-                @include bgSvg(form_search_submit_BT, $form_input_search_bgSize_BT, center);
-                width: $button_form_submit_search_width_BT;
+                @include bgSvg(form_search_submit_BT, $form_input_search_bgSize_B768, center);
+                width: $button_form_submit_search_width_B768;
             }
         }
     }
     
     @include afterMQ768{
-        width: $form_input_search_width_AT;
+        width: $form_input_search_width_A768;
     
         input{
-            height: $form_input_search_height_AT;
+            height: $form_input_search_height_A768;
 
             &[type="search"]{
-                padding-right: calc(#{$form_input_search_bgSize_AT} + 5px)!important;
-                line-height: $form_input_search_lineHeight_AT;
+                padding-right: calc(#{$form_input_search_bgSize_A768} + 5px)!important;
+                line-height: $form_input_search_lineHeight_A768;
             }
             
             &[type="submit"]{
-                @include bgSvg(form_search_submit_AT, $form_input_search_bgSize_AT, center);
-                width: $button_form_submit_search_width_AT;
+                @include bgSvg(form_search_submit_AT, $form_input_search_bgSize_A768, center);
+                width: $button_form_submit_search_width_A768;
             }            
         }
     }

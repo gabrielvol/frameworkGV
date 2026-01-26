@@ -215,11 +215,12 @@ $classes_text_act_A768B1024:                           off;
 $classes_bg_bd_NO_act_A768B1024:                       off;
 
 
-/* // After Tablet AT ------------------------------------------------------- */
+/* // After Tablet AT ------------------------------------------------------- *
 // REF [05]
-// Si se activa `$classes_container_act_A768` `$nav_double_A768_act` hay que activar
-// `$nav_double_A768_act` en `[/etc/css/custom/act/nav_main_act.scss]` y
-// `$nav_double_A768_act` en `[/src/var/act/nav.act.inc.php]`
+Si se activa `$classes_container_act_A768` `$nav_double_A768_act` hay que activar
+`$nav_double_A768_act` en `[/etc/css/custom/act/nav_main_act.scss]` y
+`$nav_double_A768_act` en `[/src/var/act/nav.act.inc.php]`
+*/
 $classes_container_act_A768:                      off;
 $helpers_spacing_act_A768:                        off;
 $classes_position_display_mask_cursor_act_A768:   on;
@@ -269,7 +270,7 @@ $classes_text_act_B1200:                           off;
 $classes_bg_bd_NO_act_B1200:                       off;
 
 
-/* // After Laptop AL ------------------------------------------------------- 
+/* // After Laptop AL ------------------------------------------------------- *
 $classes_container_act_AL:                      off;
 $helpers_spacing_act_AL:                        off;
 $classes_position_display_mask_cursor_act_AL:   off;

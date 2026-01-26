@@ -2,8 +2,6 @@
    Forms activators | Custom [/etc/css/custom/act/form_act.scss]
    ========================================================================== */
 
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para elementos de form.
 //
@@ -174,6 +172,10 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+
+@use "sass:color";
+@use "sass:map";
 
 /* // Form Label ------------------------------------------------------------ */
 $form_label_inside_act:             on;

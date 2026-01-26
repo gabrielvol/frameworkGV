@@ -14,4 +14,143 @@
 
 @use "var/page_PAGEINT_var" as *;
 
-.page_PAGEINT{}
+.page_PAGEINT{
+    
+    @include beforeMQ300{}
+
+    @include afterMQ300{}
+    
+    
+    
+    @include beforeMQ350{}
+
+    @include afterMQ350{}
+
+    @include MQ350_768{}
+
+
+
+    @include beforeMQ400{}
+
+    @include afterMQ400{}
+
+
+
+    @include beforeMQ450{}
+
+    @include afterMQ450{}
+
+    @include MQ450_768{}
+
+
+
+    @include beforeMQ500{}
+
+    @include afterMQ500{}
+
+    @include MQ500_768{}
+
+
+
+    @include beforeMQ550{}
+
+    @include afterMQ550{}
+
+
+
+    @include beforeMQ600{}
+
+    @include afterMQ600{}
+
+    @include MQ600_768{}
+
+
+
+    @include beforeMQ650{}
+
+    @include afterMQ650{}
+
+    @include MQ650_768{}
+
+
+
+    @include beforeMQ700{}
+
+    @include afterMQ700{}
+
+    @include MQ700_768{}
+
+
+
+    @include beforeMQ768{}
+
+    @include afterMQ768{}
+
+    @include MQ768_1024{}
+
+
+
+    @include beforeMQ800{}
+
+    @include afterMQ800{}
+
+    @include MQ800_1024{}
+
+
+
+    @include beforeMQ850{}
+
+    @include afterMQ850{}
+
+    @include MQ850_1024{}
+
+
+
+    @include beforeMQ900{}
+
+    @include afterMQ900{}
+
+    @include MQ900_1024{}
+
+
+
+    @include beforeMQ1024{}
+
+    @include afterMQ1024{}
+
+    @include MQ1024_1200{}
+
+
+
+    @include beforeMQ1100{}
+
+    @include afterMQ1100{}  
+
+
+
+    @include beforeMQ1200{}
+
+    @include afterMQ1200{}
+
+
+
+    @include beforeMQ1300{}
+
+    @include afterMQ1300{}
+
+
+
+    @include beforeMQ1400{}
+
+    @include afterMQ1400{}
+
+
+
+    @include beforeMQ1500{}
+
+    @include afterMQ1500{}
+
+
+
+    @include afterMQ1600{}
+}

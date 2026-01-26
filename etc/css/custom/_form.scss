@@ -586,13 +586,13 @@ form{
             @include beforeMQ768{
                 .mobileForm &{
                     .input_checkbox{
-                        width: $form_input_checkbox_height_BT!important;
-                        height: $form_input_checkbox_height_BT;
+                        width: $form_input_checkbox_height_B768!important;
+                        height: $form_input_checkbox_height_B768;
                     }
 
                     .form_label_name{
-                        width: calc(100% - calc(#{$form_input_checkbox_height_BT} + 10px))!important;
-                        line-height: $form_input_checkbox_height_BT; 
+                        width: calc(100% - calc(#{$form_input_checkbox_height_B768} + 10px))!important;
+                        line-height: $form_input_checkbox_height_B768; 
                     }
                 }
             }
@@ -600,14 +600,14 @@ form{
             @include MQ768_1024{
                 .tabletForm &{
                     .input_checkbox{
-                        width: $form_input_checkbox_height_TO!important;
-                        height: $form_input_checkbox_height_TO;
+                        width: $form_input_checkbox_height_A768B1024!important;
+                        height: $form_input_checkbox_height_A768B1024;
                     }
 
                     .form_label_name{
                         clear: $none;
-                        width: calc(100% - calc(#{$form_input_checkbox_height_TO} + 10px))!important;
-                        line-height: $form_input_checkbox_height_TO; 
+                        width: calc(100% - calc(#{$form_input_checkbox_height_A768B1024} + 10px))!important;
+                        line-height: $form_input_checkbox_height_A768B1024; 
                     }
                 }
             }
@@ -648,12 +648,12 @@ form{
             @include beforeMQ768{
                 .mobileForm &{
                     .input_radio{
-                        width: $form_input_radio_height_BT!important;
-                        height: $form_input_radio_height_BT;
+                        width: $form_input_radio_height_B768!important;
+                        height: $form_input_radio_height_B768;
                     }
 
                     .form_label_name{
-                        width: calc(100% - calc(#{$form_input_radio_height_BT} + 10px));
+                        width: calc(100% - calc(#{$form_input_radio_height_B768} + 10px));
                         margin-top: 5px;
                         line-height: 1.3;  
                     }
@@ -663,13 +663,13 @@ form{
             @include MQ768_1024{
                 .tabletForm &{
                     .input_radio{
-                        width: $form_input_radio_height_TO!important;
+                        width: $form_input_radio_height_A768B1024!important;
                     }
 
                     &,
                     .input_checkbox,
                     .form_label_name{
-                        @include equalHeightAndLineHeight($form_input_radio_height_TO);
+                        @include equalHeightAndLineHeight($form_input_radio_height_A768B1024);
                     }
                 }
             }
@@ -701,13 +701,13 @@ form{
 
             @include beforeMQ768{
                 .form_label_name.form_label_name{
-                    @include equalHeightAndLineHeight($form_input_height_BT);
+                    @include equalHeightAndLineHeight($form_input_height_B768);
                 }
             }
             
             @include MQ768_1024{
                 .form_label_name.form_label_name{
-                    @include equalHeightAndLineHeight($form_input_height_TO);
+                    @include equalHeightAndLineHeight($form_input_height_A768B1024);
                 }
             }
 

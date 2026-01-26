@@ -192,9 +192,9 @@
     }
     
     @include afterMQ768{
-        width: $pop_video_width_AT;
-        height: $pop_video_height_AT;
-        margin-left: calc(-1 * calc(#{$pop_video_width_AT} / 2));
+        width: $pop_video_width_A768;
+        height: $pop_video_height_A768;
+        margin-left: calc(-1 * calc(#{$pop_video_width_A768} / 2));
     } 
 }
     
@@ -226,8 +226,8 @@
     }
     
     @include afterMQ768{
-        width: $pop_form_width_AT;
-        margin-left: calc(-1 * calc(#{$pop_form_width_AT} / 2));
+        width: $pop_form_width_A768;
+        margin-left: calc(-1 * calc(#{$pop_form_width_A768} / 2));
     }
 }
     

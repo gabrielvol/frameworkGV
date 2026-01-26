@@ -96,48 +96,48 @@
     
     @include beforeMQ768{
         @if $page_index_fullHeight_act_B768 == "on" or $page_section_fullHeight_act_B768 == "on"{
-            height: $footer_height_BT;
+            height: $footer_height_B768;
         }  
     
         @if $page_index_only_fullHeight_act_B768 == "on"{
             &.footer_page_index{
-                height: $footer_height_BT;
+                height: $footer_height_B768;
             }
         }  
     }
     
     @include afterMQ768{
         @if $page_index_fullHeight_act_A768 == "on" or $page_section_fullHeight_act_A768 == "on"{
-            height: $footer_height_AT;
+            height: $footer_height_A768;
         }  
     
         @if $page_index_only_fullHeight_act_A768 == "on"{
             &.footer_page_index{
-                height: $footer_height_AT;
+                height: $footer_height_A768;
             }
         }  
     }
     
     @include MQ768_1024{
         @if $page_index_fullHeight_act_A768B1024 == "on" or $page_section_fullHeight_act_A768B1024 == "on"{
-            height: $footer_height_TO;
+            height: $footer_height_A768B1024;
         }  
     
         @if $page_index_only_fullHeight_act_A768B1024 == "on"{
             &.footer_page_index{
-                height: $footer_height_TO;
+                height: $footer_height_A768B1024;
             }
         }  
     }
     
     @include beforeMQ1024{
         @if $page_index_fullHeight_act_B1024 == "on" or $page_section_fullHeight_act_B1024 == "on"{
-            height: $footer_height_BTL;
+            height: $footer_height_B1024;
         }  
     
         @if $page_index_only_fullHeight_act_B1024 == "on"{
             &.footer_page_index{
-                height: $footer_height_BTL;
+                height: $footer_height_B1024;
             }
         }  
     }

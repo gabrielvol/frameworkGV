@@ -35,7 +35,7 @@
 /* 3. Se incluye el archivo de variables */
 //    include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.PAGEINT.var.inc.php');
     
-    $page_body_classes = "";
+    $page_body_classes = '';
     $page_header_classes = '';
     $page_main_classes = '';
     
@@ -75,10 +75,10 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
             
-        <?php /*
-            <h1><?php echo $page_heading_id; ?></h1>
-            <h1><?php echo $page_title_home_PAGEINT; ?></h1>
-        */ ?>
+            <?php /*
+                <h1><?php echo $page_heading_id; ?></h1>
+                <h1><?php echo $page_title_home_PAGEINT; ?></h1>
+            */ ?>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>

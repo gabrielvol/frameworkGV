@@ -2,8 +2,6 @@
    Buttons Activators | Custom [/etc/css/custom/act/buttons_act.scss]
    ========================================================================== */
 
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Activadores para botones.
 //
@@ -90,6 +88,9 @@
 // X, S, U, C, I        = extra, semi, ultra, condensed, italic
 
 
+
+@use "sass:color";
+@use "sass:map";
 
 /* // Colours --------------------------------------------------------------- */
 $button_coloured_act:   off;

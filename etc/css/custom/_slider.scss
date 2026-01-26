@@ -242,7 +242,7 @@
         .slickPrev,
         .slickNext{
             width: $slider_arrows_width_B768;
-            height: $slider_arrows_height_BT;
+            height: $slider_arrows_height_B768;
             margin-top: calc(-1 * #{$slider_arrows_height_half_BT});   
         }
     }
@@ -252,7 +252,7 @@
         .slickNext{
             @include opacityCustomHover();
             width: $slider_arrows_width_A768;
-            height: $slider_arrows_height_AT;
+            height: $slider_arrows_height_A768;
             margin-top: calc(-1 * #{$slider_arrows_height_half_AT});
         }
     }
@@ -330,17 +330,17 @@
         
         @include afterMQ768{
             .slickPrev{
-                left: calc(#{$carousel_arrows_width_AT} / 4);
+                left: calc(#{$carousel_arrows_width_A768} / 4);
             }
 
             .slickNext{
-                right: calc(#{$carousel_arrows_width_AT} / 4);
+                right: calc(#{$carousel_arrows_width_A768} / 4);
             }
             
             .slickPrev,
             .slickNext{
-                width: $carousel_arrows_width_AT;
-                height: $carousel_arrows_height_AT;
+                width: $carousel_arrows_width_A768;
+                height: $carousel_arrows_height_A768;
                 margin-top: calc(-1 * #{$carousel_arrows_height_half_AT});
             }
         }

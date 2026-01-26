@@ -157,7 +157,7 @@
     @include afterMQ768{
         @if $footer_floatedContent_act_A500 == "on" or $footer_floatedContent_act_A768 == "on" /* // REF [20] */ { 
             .logo_footer_container{
-                width: $footer_logoFloated_width_AT;
+                width: $footer_logoFloated_width_A768;
                 padding-right: 20px;
                 padding-left: 20px;
                 
@@ -167,7 +167,7 @@
             }
             
             .footer_txt{
-                width: calc(100% - #{$footer_logoFloated_width_AT}); 
+                width: calc(100% - #{$footer_logoFloated_width_A768}); 
             }
 
         } @else {
@@ -180,7 +180,7 @@
     @include beforeMQ1024{
         .logo_footer_container{
 /*            
-            width: $footer_logoFloated_width_BTL;
+            width: $footer_logoFloated_width_B1024;
 */
         }
         

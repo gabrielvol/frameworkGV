@@ -161,11 +161,11 @@
                 position: absolute;
                 top: $nav_height_A768;
                 border-radius: 0 0 10px 10px;
-                width: $nav_subMenu_width_AT;
+                width: $nav_subMenu_width_A768;
                 
                 @if $nav_sub_centered_AT == "on"{
                     left: 50%;
-                    margin-left: calc(-1 * (#{$nav_subMenu_width_AT} / 2));
+                    margin-left: calc(-1 * (#{$nav_subMenu_width_A768} / 2));
                 } @else {
                     left: -15px;                    
                 }
@@ -179,7 +179,7 @@
                 li,
                 a,
                 .nav_TLI{
-                    @include equalHeightAndLineHeight($nav_item_sub_height_AT);
+                    @include equalHeightAndLineHeight($nav_item_sub_height_A768);
                 }
                 
                 a{
@@ -214,10 +214,10 @@
             
         @if $nav_hasSub_level2_act == "on"{   
             .nav_subNav_level2{
-                width: $nav_subMenu_level2_width_AT!important;
+                width: $nav_subMenu_level2_width_A768!important;
 /*
                 top: $zero;
-                left: $nav_subMenu_width_AT!important;
+                left: $nav_subMenu_width_A768!important;
                 margin: $zero;
 */
             }
@@ -348,7 +348,7 @@
                 li,
                 a,
                 .nav_TLI{
-                    @include equalHeightAndLineHeight($nav_item_sub_height_TO);
+                    @include equalHeightAndLineHeight($nav_item_sub_height_A768B1024);
                 }
             }
         }

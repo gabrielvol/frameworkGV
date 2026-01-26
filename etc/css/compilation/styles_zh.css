@@ -443,8 +443,8 @@ $page_PT_A1024:         0;
 /*___ Language Square ___________________
 $nav_lang_ul_height_A768:        $nav_height_A768;
 $nav_lang_item_sq_size_AT:     $nav_height_A768;
-$nav_lang_ul_width_AT:          calc(calc(25px + calc(1px * 2)) - 18px);
-$nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;  
+$nav_lang_ul_width_A768:          calc(calc(25px + calc(1px * 2)) - 18px);
+$nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;  
 */
 /* // Language Colours ------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================

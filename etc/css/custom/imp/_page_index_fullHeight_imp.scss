@@ -72,25 +72,25 @@
 
     @include beforeMQ768{
         @if $page_index_fullHeight_act_B768 == "on" or $page_index_only_fullHeight_act_B768 == "on"{
-            height: calc(100vh - #{$footer_height_BT} - #{$header_height_BT});
+            height: calc(100vh - #{$footer_height_B768} - #{$header_height_B768});
         }
     }
 
     @include afterMQ768{
         @if $page_index_fullHeight_act_A768 == "on" or $page_index_only_fullHeight_act_A768 == "on"{
-            height: calc(100vh - #{$footer_height_AT} - #{$header_height_AT});
+            height: calc(100vh - #{$footer_height_A768} - #{$header_height_A768});
         }
     }
 
     @include MQ768_1024{
         @if $page_index_fullHeight_act_A768B1024 == "on" or $page_index_only_fullHeight_act_A768B1024 == "on"{
-            height: calc(100vh - #{$footer_height_TO} - #{$header_height_TO});
+            height: calc(100vh - #{$footer_height_A768B1024} - #{$header_height_A768B1024});
         }
     }
 
     @include beforeMQ1024{
         @if $page_index_fullHeight_act_B1024 == "on" or $page_index_only_fullHeight_act_B1024 == "on"{
-            height: calc(100vh - #{$footer_height_BTL} - #{$header_height_BTL});
+            height: calc(100vh - #{$footer_height_B1024} - #{$header_height_B1024});
         }
     }
 
@@ -102,7 +102,7 @@
 
     @include MQ1024_1200{
         @if $page_index_fullHeight_act_A1024B1200 == "on" or $page_index_only_fullHeight_act_A1024B1200 == "on"{
-            height: calc(100vh - #{$footer_height_TLO} - #{$header_height_TLO});
+            height: calc(100vh - #{$footer_height_A1024B1200} - #{$header_height_A1024B1200});
         }
     }
 

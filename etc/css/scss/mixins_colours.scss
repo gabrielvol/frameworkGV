@@ -201,12 +201,12 @@
         }
     }
 }
-@mixin anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_lightenValue){
+@mixin anchorColoursLightClassesGenerator($colours_anchor_ftColours_light_darkenValue){
     @each $anchorColoursLightClassesGeneratorMX_colourClassName, $anchorColoursLightClassesGeneratorMX_colourHexValue in $colours_anchor_ftColours_light_map {
         $anchorColoursLightClassesGeneratorMX_colourClassName_str: "" + $anchorColoursLightClassesGeneratorMX_colourClassName;
         .#{$anchorColoursLightClassesGeneratorMX_colourClassName_str}{
             a, a:active, a:visited{color: $anchorColoursLightClassesGeneratorMX_colourHexValue;}
-            a:focus, a:hover{color: color.adjust($anchorColoursLightClassesGeneratorMX_colourHexValue, $lightness: -$colours_anchor_ftColours_light_lightenValue);}
+            a:focus, a:hover{color: color.adjust($anchorColoursLightClassesGeneratorMX_colourHexValue, $lightness: -$colours_anchor_ftColours_light_darkenValue);}
         }
     }
 }

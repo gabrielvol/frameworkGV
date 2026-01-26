@@ -18,7 +18,7 @@
      
     include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/var/page.index.var.inc.php');
     
-    $page_body_classes = "";
+    $page_body_classes = '';
     $page_header_classes = '';
     $page_main_classes = '';
     
@@ -43,7 +43,7 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
-        <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/sections/home.all.inc.php'); ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/sections/home.all.inc.php'); ?>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>

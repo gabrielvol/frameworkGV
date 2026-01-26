@@ -59,15 +59,15 @@
 $nav_lang_item_n:               2;
 
 /*___ Flags _____________________________*/
-$nav_lang_flag_width_BT:            38px;
-$nav_lang_flag_height_BT:           25px; // Este valor se usa para el tamaño de las flag rounded
+$nav_lang_flag_width_B768:            38px;
+$nav_lang_flag_height_B768:           25px; // Este valor se usa para el tamaño de las flag rounded
 
 $nav_lang_flag_width_clicked:       55px;
 $nav_lang_flag_height_clicked:      36px;
 
-$nav_lang_flag_width_AT:            $nav_lang_flag_width_BT;
-$nav_lang_flag_height_AT:           $nav_lang_flag_height_BT; // Este valor se usa para el tamaño de las flag rounded
-$nav_lang_flag_height_A1024:        $nav_lang_flag_height_AT;
+$nav_lang_flag_width_A768:            $nav_lang_flag_width_B768;
+$nav_lang_flag_height_A768:           $nav_lang_flag_height_B768; // Este valor se usa para el tamaño de las flag rounded
+$nav_lang_flag_height_A1024:        $nav_lang_flag_height_A768;
 $nav_lang_flag_height_A1200:        $nav_lang_flag_height_A1024;
 $nav_lang_flag_sep_AT:              10px;
 
@@ -79,13 +79,13 @@ $nav_lang_ul_right_AT:          20px;
 $nav_lang_ul_bottom:            20px;
 
 /* Comentar si Nav Language Square // REF [37] */
-$nav_lang_ul_width_AT:          calc(calc(#{$nav_lang_flag_width_AT} * #{$nav_lang_item_n}) + calc(#{$nav_lang_flag_sep_AT} * calc(#{$nav_lang_item_n} - 1)) + #{$nav_lang_ul_right_AT} + 15px);// REF [37]
+$nav_lang_ul_width_A768:          calc(calc(#{$nav_lang_flag_width_A768} * #{$nav_lang_item_n}) + calc(#{$nav_lang_flag_sep_AT} * calc(#{$nav_lang_item_n} - 1)) + #{$nav_lang_ul_right_AT} + 15px);// REF [37]
 
-$nav_lang_ul_height_BT:             calc(#{$nav_lang_flag_height_BT} + #{$nav_lang_flag_border_size_full});
+$nav_lang_ul_height_B768:             calc(#{$nav_lang_flag_height_B768} + #{$nav_lang_flag_border_size_full});
 $nav_lang_ul_height_clicked:        calc(#{$nav_lang_flag_height_clicked} + #{$nav_lang_flag_border_size_full});
 $nav_lang_ul_height_clicked_PT:     30px;
 $nav_lang_ul_height_clicked_PB:     20px;
-$nav_lang_ul_height_A768:             calc(#{$nav_lang_flag_height_AT} + #{$nav_lang_flag_border_size_full}); // REF [37]
+$nav_lang_ul_height_A768:             calc(#{$nav_lang_flag_height_A768} + #{$nav_lang_flag_border_size_full}); // REF [37]
 $nav_lang_ul_height_A1024:          calc(#{$nav_lang_flag_height_A1024} + #{$nav_lang_flag_border_size_full});
 $nav_lang_ul_height_A1200:          calc(#{$nav_lang_flag_height_A1200} + #{$nav_lang_flag_border_size_full});
 
@@ -94,8 +94,8 @@ $nav_lang_ul_height_before:         20px;
 /*___ Language Square ___________________
 $nav_lang_ul_height_A768:        $nav_height_A768;
 $nav_lang_item_sq_size_AT:     $nav_height_A768;
-$nav_lang_ul_width_AT:          calc(#{$nav_lang_ul_height_A768} - 18px);
-$nav_lang_anchor_size_AT:       $nav_lang_ul_width_AT;  
+$nav_lang_ul_width_A768:          calc(#{$nav_lang_ul_height_A768} - 18px);
+$nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;  
 */
 
 /* // Language Colours ------------------------------------------------------ */
