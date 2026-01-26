@@ -344,7 +344,7 @@
         }
         
         @if $nav_hasSub_act == "on"{
-            .nav_subNav{       
+            .nav_subNav{                
                 li,
                 a,
                 .nav_TLI{
@@ -437,6 +437,7 @@
         
         @if $nav_hasSub_act == "on"{
             .nav_subNav{
+                top: $nav_height_A1024;
                 width: $nav_subMenu_width_A1024;
                 
                 @if $nav_sub_centered_AT == "on"{
@@ -496,6 +497,13 @@
                 .nav_TLI{
                     @include equalHeightAndLineHeight($nav_height_scrolled_TO);
                 }
+            }
+        }
+        
+        @if $nav_hasSub_act == "on"{
+            .nav_subNav{
+                top: $nav_height_A1200;
+                width: $nav_subMenu_width_A1200;
             }
         }
         

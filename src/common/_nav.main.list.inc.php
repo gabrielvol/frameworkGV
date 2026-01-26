@@ -5,6 +5,7 @@
 
 // Las variables `$nav_main_item_XXX` se encuentran en `[/src/var/meta.titlesDesc.var.inc.php]`
 
+// REF [55] Nav subitems
 ?>
 
 
@@ -56,7 +57,7 @@
 </li>
 
 
-<?php /* Sub Level 1 */ ?>
+<?php /* Sub Level 1 // REF [55] Nav subitems */ ?>
 <li class="nav_item_nosotros nav_item_hasSubNav nav_item_hasSubNav_level1 pRel <?php if($nav_pageCurrent == 'page_nosotros') { echo ' nav_item_current'; } ?>">
     <p id="nav_TLI_nosotros" class="nav_TLI nav_TLI_level1" aria-haspopup="true" aria-owns="nav_item_nosotros_subNav" aria-controls="nav_item_nosotros_subNav" role="button" aria-pressed="false">
         <?php echo $nav_main_item_nosotros; ?>
@@ -84,7 +85,7 @@
 </li>
 
 
-<?php /* Sub Level 2 */ ?>
+<?php /* Sub Level 2  // REF [55] Nav subitems */ ?>
 <li class="nav_item_nosotros nav_item_hasSubNav nav_item_hasSubNav_level1 pRel <?php if($nav_pageCurrent == 'page_nosotros') { echo ' nav_item_current'; }?>">
     <p id="nav_TLI_nosotros" class="nav_TLI nav_TLI_level1" aria-haspopup="true" aria-owns="nav_item_nosotros_subNav" aria-controls="nav_item_nosotros_subNav" role="button" aria-pressed="false">
         <?php echo $nav_main_item_nosotros; ?>

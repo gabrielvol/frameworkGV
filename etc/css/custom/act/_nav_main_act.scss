@@ -2,8 +2,6 @@
    Nav Activators | Custom [/etc/css/custom/act/nav_main_act.scss]
    ========================================================================== */ 
 
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de variables activadoras.
 //
@@ -13,6 +11,7 @@
 // REF [15] Nav Fixed AT
 // REF [17] Nav item current border bottom
 // REF [44] Nav topper
+// REF [55] Nav subitems
 //
 // #activator #button #hamburger #nav #navsub
 
@@ -116,6 +115,9 @@
 
 
 
+@use "sass:color";
+@use "sass:map";
+
 /* // Nav Main -------------------------------------------------------------- */
 $hamburger_only_act:                off; // REF [11] Activador
 
@@ -136,7 +138,9 @@ $nav_double_A768_act:                 off; // REF [05] Ver `[/src/var/act/nav.ac
 $nav_drawer_act:                    on; // Ver `[/src/var/act/nav.act.inc.php]`
 $nav_accordion_act:                 off; // Ver `[/src/var/act/nav.act.inc.php]`
 $nav_list_act:                      off;
-     
+    
+
+// REF [55] Nav subitems
 $nav_hasSub_act:                    off;
 $nav_hasSub_level1_act:             off;
 $nav_hasSub_level2_act:             off;
