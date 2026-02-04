@@ -611,7 +611,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_area__formMainID; ?>"><?php echo $form_validation_span_msg_data_area__formMainID; ?></span>  
     </label>
 
-    // Mensaje con validaci&oacute;n
+    <?php /* Mensaje con validaci&oacute;n */ ?>
     <label for="data_mensaje__formMainID" class="form_required <?php echo $form_validation_input_class_data_mensaje__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Details
