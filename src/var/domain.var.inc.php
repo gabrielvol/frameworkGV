@@ -33,7 +33,11 @@ $protocol_query = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
 
 $http_protocol  = $protocol_query . 'www.';
 
-$domain_main        = 'sitiocomar';
+$domain_com_mx      = 'domain.com.mx';
+
+$domain_uy      = 'domain.uy';
+
+$domain_main        = $domain_clean;
 
 $domain_sub_SUBDOMAIN = 'SUBDOMAIN' . '.';
 
@@ -42,5 +46,7 @@ $domain_wip         = $domain_main;
 $domain_sec         = 'sitiocomar';
 
 $domain_custom      = 'sitiocomar';
+
+$country_suffix = ($domain_clean === $domain_com_mx) ? ' MX' : ' UY';
 
 ?>

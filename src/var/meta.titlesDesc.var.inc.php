@@ -34,7 +34,7 @@ if(isset($gettext_idioma)){
 if($gettext_idioma == 'en_GB'){
     $site_name_full         = 'SiteNameFull';
     $site_name_title        = 'SiteNameTitle';
-    $site_name_form        = 'SiteNameShort';
+    $site_name_form        = 'SiteNameShort'; // . $country_suffix;
     $site_name_tag          = 'SiteNameTag';
     $site_name_brand        = 'SiteNameBrand';
 
@@ -74,7 +74,7 @@ if($gettext_idioma == 'en_GB'){
 } elseif($gettext_idioma == 'xx_XX'){
     $site_name_full          = 'SiteNameFull';
     $site_name_title         = 'SiteNameTitle';
-    $site_name_form         = 'SiteNameShort';
+    $site_name_form         = 'SiteNameShort'; // . $country_suffix;
     $site_name_tag           = 'SiteNameTag';
     $site_name_brand        = 'SiteNameBrand';
 
@@ -114,7 +114,7 @@ if($gettext_idioma == 'en_GB'){
 } } else {
     $site_name_full     = 'SiteNameFull';
     $site_name_title    = 'SiteNameTitle';
-    $site_name_form     = 'SiteNameShort';
+    $site_name_form     = 'SiteNameShort'; // . $country_suffix;
     $site_name_tag      = 'SiteNameTag';
     $site_name_brand        = 'SiteNameBrand';
 
