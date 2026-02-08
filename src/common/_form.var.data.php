@@ -21,7 +21,7 @@ $data_pais__formMainID = $_POST['data_pais__formMainID'];
 $data_email__formMainID = $_POST['data_email__formMainID'];
 $data_telefono__formMainID = $_POST['data_telefono__formMainID'];
 $data_celular__formMainID = $_POST['data_celular__formMainID'];
-$data_whatsAppAreaCode__formMainID = $_POST['data_whatsapAreaCode__formMainID'];
+$data_whatsAppAreaCode__formMainID = $_POST['data_whatsAppAreaCode__formMainID'];
 $data_whatsAppNumber__formMainID = $_POST['data_whatsAppNumber__formMainID'];
 
 $data_webSite__formMainID = $_POST['data_webSite__formMainID'];
@@ -36,106 +36,10 @@ $data_rubro__formMainID = $_POST['data_rubro__formMainID'];
 
 $data_asunto__formMainID = $_POST['data_asunto__formMainID'];
 $data_area__formMainID = $_POST['data_area__formMainID'];
+
+$data_aceptoTOU__formMainID = $_POST['data_aceptoTOU__formMainID'];
+    
 $data_mensaje__formMainID = $_POST['data_mensaje__formMainID'];
-    
-    
-/* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */    
-$_POST['data_apellido__formMainID'] = '';
-$_POST['data_nombreAp__formMainID'] = '';     
-$_POST['data_nombreCo__formMainID'] = '';               
-$_POST['data_genero__formMainID'] = '';
-$_POST['data_direccion__formMainID'] = '';
-$_POST['data_ciudad__formMainID'] = '';
-$_POST['data_domicilio__formMainID'] = '';
-$_POST['data_localidad__formMainID'] = '';
-$_POST['data_codigoPostal__formMainID'] = '';
-$_POST['data_provincia__formMainID'] = '';
-$_POST['data_pais__formMainID'] = '';
-$_POST['data_fecha__formMainID'] = '';
-$_POST['data_email__formMainID'] = '';
-$_POST['data_webSite__formMainID'] = '';
-$_POST['data_facebook__formMainID'] = '';
-$_POST['data_telefono__formMainID'] = '';
-$_POST['data_celular__formMainID'] = '';
-$_POST['data_whatsAppAreaCode__formMainID'] = '';
-$_POST['data_whatsAppNumber__formMainID'] = '';
-$_POST['data_empresa__formMainID'] = '';
-$_POST['data_razonSocial__formMainID'] = '';
-$_POST['data_cargo__formMainID'] = '';
-$_POST['data_rubro__formMainID'] = '';
-$_POST['data_comoQueres__formMainID'] = '';
-$_POST['data_asunto__formMainID'] = '';
-$_POST['data_mensaje__formMainID'] = '';
-    
-    
-    
-/* // Campos $formMail_texto ------------------------------------------------ */
-$formMail_texto .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br />';
-$formMail_texto .= '<strong>Apellido:</strong> ' . $data_apellido__formMainID . '<br />';
-$formMail_texto .= '<strong>Nombre y apellido:</strong> ' . $data_nombreAp__formMainID . '<br />';
-$formMail_texto .= '<strong>Nombre completo:</strong> ' . $data_nombreCo__formMainID . '<br />';
-$formMail_texto .= '<strong>Nombre de usuario:</strong> ' . $data_username__formMainID . '<br />';
-$formMail_texto .= '<strong>Direcci&oacute;n:</strong> ' . $data_direccion__formMainID . '<br />';
-$formMail_texto .= '<strong>Ciudad:</strong> ' . $data_ciudad__formMainID . '<br />';
-$formMail_texto .= '<strong>Domicilio:</strong> ' . $data_domicilio__formMainID . '<br />';
-$formMail_texto .= '<strong>Sexo:</strong> ' . $data_genero__formMainID . '<br />';
-$formMail_texto .= '<strong>Cantidad:</strong> ' . $data_cantidad__formMainID . '<br />';
-$formMail_texto .= '<strong>DNI:</strong> ' . $data_dni__formMainID . '<br />';
-$formMail_texto .= '<strong>C&oacute;digo postal:</strong> ' . $data_codigoPostal__formMainID . '<br />';
-$formMail_texto .= '<strong>Localidad:</strong> ' . $data_localidad__formMainID . '<br />';
-$formMail_texto .= '<strong>Provincia:</strong> ' . $data_provincia__formMainID . '<br />';
-$formMail_texto .= '<strong>Pa&iacute;s:</strong> ' . $data_pais__formMainID . '<br />';
-$formMail_texto .= '<strong>Fecha:</strong> ' . $data_fecha__formMainID . '<br />';
-$formMail_texto .= '<strong>Correo electr&oacute;nico:</strong> ' . $data_email__formMainID . '<br />';
-$formMail_texto .= '<strong>Correo electr&oacute;nico:</strong> <a href="mailto:' . $data_email__formMainID . '">' . $data_email__formMainID . '</a><br />';
-$formMail_texto .= '<strong>Sitio web:</strong> ' . $data_webSite__formMainID . '<br />';
-$formMail_texto .= '<strong>Perfil de Facebook:</strong> ' . $data_facebook__formMainID . '<br />';
-$formMail_texto .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/' . $data_instagram__formMainID . '">' . $data_instagram__formMainID . '</a><br />';
-$formMail_texto .= '<strong>Tel&eacute;fono:</strong> ' . $data_telefono__formMainID . '<br />';
-$formMail_texto .= '<strong>Celular:</strong> ' . $data_celular__formMainID . '<br />';
-$formMail_texto .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsAppAreaCode__formMainID . $data_whatsAppNumer__formMainID . '">+54 9 '. $data_whatsAppAreaCode__formMainID . ' ' . $data_whatsAppNumer__formMainID ."</a><br />";
-$formMail_texto .= '<strong>Empresa:</strong> ' . $data_empresa__formMainID . '<br />';
-$formMail_texto .= '<strong>Raz&oacute;n Social:</strong> ' . $data_razonSocial__formMainID . '<br />';
-$formMail_texto .= '<strong>Cargo:</strong> ' . $data_cargo__formMainID . '<br />';
-$formMail_texto .= '<strong>Asunto:</strong> ' . $data_asunto__formMainID . '<br />';
-$formMail_texto .= '<strong>&iquest;C&oacute;mo quer&eacute;s que te contactemos?:</strong> ' . $data_comoQueres__formMainID . '<br />';
-$formMail_texto .= '<strong>Rubro:</strong> ' . $data_rubro__formMainID . '<br />';
-$formMail_texto .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMainID;
-    
-    
-    
-/* // Campos $mail->Body ---------------------------------------------------- */
-$mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
-$mail->Body .= '<strong>Apellido:</strong> ' . $data_apellido__formMainID . '<br />';
-$mail->Body .= '<strong>Nombre y apellido:</strong> ' . $data_nombreAp__formMainID . '<br />';
-$mail->Body .= '<strong>Nombre completo:</strong> ' . $data_nombreCo__formMainID . '<br />';
-$mail->Body .= '<strong>Nombre de usuario:</strong> ' . $data_username__formMainID . '<br />';
-$mail->Body .= '<strong>Direcci&oacute;n:</strong> ' . $data_direccion__formMainID . '<br />';
-$mail->Body .= '<strong>Ciudad:</strong> ' . $data_ciudad__formMainID . '<br />';
-$mail->Body .= '<strong>Domicilio:</strong> ' . $data_domicilio__formMainID . '<br />';
-$mail->Body .= '<strong>Sexo:</strong> ' . $data_genero__formMainID . '<br />';
-$mail->Body .= '<strong>Cantidad:</strong> ' . $data_cantidad__formMainID . '<br />';
-$mail->Body .= '<strong>DNI:</strong> ' . $data_dni__formMainID . '<br />';
-$mail->Body .= '<strong>C&oacute;digo postal:</strong> ' . $data_codigoPostal__formMainID . '<br />';
-$mail->Body .= '<strong>Localidad:</strong> ' . $data_localidad__formMainID . '<br />';
-$mail->Body .= '<strong>Provincia:</strong> ' . $data_provincia__formMainID . '<br />';
-$mail->Body .= '<strong>Pa&iacute;s:</strong> ' . $data_pais__formMainID . '<br />';
-$mail->Body .= '<strong>Fecha:</strong> ' . $data_fecha__formMainID . '<br />';
-$mail->Body .= '<strong>Correo electr&oacute;nico:</strong> ' . $data_email__formMainID . '<br />';
-$mail->Body .= '<strong>Correo electr&oacute;nico:</strong> <a href="mailto:' . $data_email__formMainID . '">' . $data_email__formMainID . '</a><br />';
-$mail->Body .= '<strong>Sitio web:</strong> ' . $data_webSite__formMainID . '<br />';
-$mail->Body .= '<strong>Perfil de Facebook:</strong> ' . $data_facebook__formMainID . '<br />';
-$mail->Body .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/' . $data_instagram__formMainID . '">' . $data_instagram__formMainID . '</a><br />';
-$mail->Body .= '<strong>Tel&eacute;fono:</strong> ' . $data_telefono__formMainID . '<br />';
-$mail->Body .= '<strong>Celular:</strong> ' . $data_celular . '<br />';
-$mail->Body .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsAppAreaCode__formMainID . $data_whatsAppNumer__formMainID . '">+54 9 '. $data_whatsAppAreaCode__formMainID . ' ' . $data_whatsAppNumer__formMainID ."</a><br />";
-$mail->Body .= '<strong>Empresa:</strong> ' . $data_empresa__formMainID . '<br />';
-$mail->Body .= '<strong>Raz&oacute;n Social:</strong> ' . $data_razonSocial__formMainID . '<br />';
-$mail->Body .= '<strong>Cargo:</strong> ' . $data_cargo__formMainID . '<br />';
-$mail->Body .= '<strong>Asunto:</strong> ' . $data_asunto__formMainID . '<br />';
-$mail->Body .= '<strong>&iquest;C&oacute;mo quer&eacute;s que te contactemos?:</strong> ' . $data_comoQueres__formMainID . '<br />';
-$mail->Body .= '<strong>Rubro:</strong> ' . $data_rubro__formMainID . '<br />';
-$mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMainID;
         
         
     
@@ -315,6 +219,12 @@ $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMain
     $form_validation_span_class_data_mensaje__formMainID = " form_validation_span_active";
     $form_validation_input_class_data_mensaje__formMainID = " form_validation_input_invalid";
     $form_input_autofocus_data_mensaje__formMainID = "autofocus";
+
+} elseif(!isset($data_aceptoTOU__formmainID)){
+    $form_validation_span_msg_data_aceptoTOU__formmainID          = $form_validation_msg_data_aceptoTOU__formmainID;
+    $form_validation_span_class_data_aceptoTOU__formmainID          = " form_validation_span_active";
+    $form_validation_input_class_data_aceptoTOU__formmainID      = " form_validation_input_invalid";
+    $form_input_autofocus_data_aceptoTOU__formmainID          = "autofocus";
     
     
     
@@ -494,4 +404,104 @@ $mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMain
     $form_validation_div_class__formMainID = " form_validation_div_invalid";
     $form_validation_input_class_data_area__formMainID = " form_validation_input_invalid";
     $form_input_autofocus_data_area__formMainID = "autofocus";
+    
+    
+    
+/* // Campos $formMail_texto ------------------------------------------------ */
+$formMail_texto .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br />';
+$formMail_texto .= '<strong>Apellido:</strong> ' . $data_apellido__formMainID . '<br />';
+$formMail_texto .= '<strong>Nombre y apellido:</strong> ' . $data_nombreAp__formMainID . '<br />';
+$formMail_texto .= '<strong>Nombre completo:</strong> ' . $data_nombreCo__formMainID . '<br />';
+$formMail_texto .= '<strong>Nombre de usuario:</strong> ' . $data_username__formMainID . '<br />';
+$formMail_texto .= '<strong>Direcci&oacute;n:</strong> ' . $data_direccion__formMainID . '<br />';
+$formMail_texto .= '<strong>Ciudad:</strong> ' . $data_ciudad__formMainID . '<br />';
+$formMail_texto .= '<strong>Domicilio:</strong> ' . $data_domicilio__formMainID . '<br />';
+$formMail_texto .= '<strong>Sexo:</strong> ' . $data_genero__formMainID . '<br />';
+$formMail_texto .= '<strong>Cantidad:</strong> ' . $data_cantidad__formMainID . '<br />';
+$formMail_texto .= '<strong>DNI:</strong> ' . $data_dni__formMainID . '<br />';
+$formMail_texto .= '<strong>C&oacute;digo postal:</strong> ' . $data_codigoPostal__formMainID . '<br />';
+$formMail_texto .= '<strong>Localidad:</strong> ' . $data_localidad__formMainID . '<br />';
+$formMail_texto .= '<strong>Provincia:</strong> ' . $data_provincia__formMainID . '<br />';
+$formMail_texto .= '<strong>Pa&iacute;s:</strong> ' . $data_pais__formMainID . '<br />';
+$formMail_texto .= '<strong>Fecha:</strong> ' . $data_fecha__formMainID . '<br />';
+$formMail_texto .= '<strong>Correo electr&oacute;nico:</strong> ' . $data_email__formMainID . '<br />';
+$formMail_texto .= '<strong>Correo electr&oacute;nico:</strong> <a href="mailto:' . $data_email__formMainID . '">' . $data_email__formMainID . '</a><br />';
+$formMail_texto .= '<strong>Sitio web:</strong> ' . $data_webSite__formMainID . '<br />';
+$formMail_texto .= '<strong>Perfil de Facebook:</strong> ' . $data_facebook__formMainID . '<br />';
+$formMail_texto .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/' . $data_instagram__formMainID . '">' . $data_instagram__formMainID . '</a><br />';
+$formMail_texto .= '<strong>Tel&eacute;fono:</strong> ' . $data_telefono__formMainID . '<br />';
+$formMail_texto .= '<strong>Celular:</strong> ' . $data_celular__formMainID . '<br />';
+$formMail_texto .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsAppAreaCode__formMainID . $data_whatsAppNumber__formMainID . '">+54 9 '. $data_whatsAppAreaCode__formMainID . ' ' . $data_whatsAppNumber__formMainID ."</a><br />";
+$formMail_texto .= '<strong>Empresa:</strong> ' . $data_empresa__formMainID . '<br />';
+$formMail_texto .= '<strong>Raz&oacute;n Social:</strong> ' . $data_razonSocial__formMainID . '<br />';
+$formMail_texto .= '<strong>Cargo:</strong> ' . $data_cargo__formMainID . '<br />';
+$formMail_texto .= '<strong>Asunto:</strong> ' . $data_asunto__formMainID . '<br />';
+$formMail_texto .= '<strong>&iquest;C&oacute;mo quer&eacute;s que te contactemos?:</strong> ' . $data_comoQueres__formMainID . '<br />';
+$formMail_texto .= '<strong>Rubro:</strong> ' . $data_rubro__formMainID . '<br />';
+$formMail_texto .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMainID;
+    
+    
+    
+/* // Campos $mail->Body ---------------------------------------------------- */
+$mail->Body .= '<strong>Nombre:</strong> ' . $data_nombre__formMainID . '<br>';
+$mail->Body .= '<strong>Apellido:</strong> ' . $data_apellido__formMainID . '<br />';
+$mail->Body .= '<strong>Nombre y apellido:</strong> ' . $data_nombreAp__formMainID . '<br />';
+$mail->Body .= '<strong>Nombre completo:</strong> ' . $data_nombreCo__formMainID . '<br />';
+$mail->Body .= '<strong>Nombre de usuario:</strong> ' . $data_username__formMainID . '<br />';
+$mail->Body .= '<strong>Direcci&oacute;n:</strong> ' . $data_direccion__formMainID . '<br />';
+$mail->Body .= '<strong>Ciudad:</strong> ' . $data_ciudad__formMainID . '<br />';
+$mail->Body .= '<strong>Domicilio:</strong> ' . $data_domicilio__formMainID . '<br />';
+$mail->Body .= '<strong>Sexo:</strong> ' . $data_genero__formMainID . '<br />';
+$mail->Body .= '<strong>Cantidad:</strong> ' . $data_cantidad__formMainID . '<br />';
+$mail->Body .= '<strong>DNI:</strong> ' . $data_dni__formMainID . '<br />';
+$mail->Body .= '<strong>C&oacute;digo postal:</strong> ' . $data_codigoPostal__formMainID . '<br />';
+$mail->Body .= '<strong>Localidad:</strong> ' . $data_localidad__formMainID . '<br />';
+$mail->Body .= '<strong>Provincia:</strong> ' . $data_provincia__formMainID . '<br />';
+$mail->Body .= '<strong>Pa&iacute;s:</strong> ' . $data_pais__formMainID . '<br />';
+$mail->Body .= '<strong>Fecha:</strong> ' . $data_fecha__formMainID . '<br />';
+$mail->Body .= '<strong>Correo electr&oacute;nico:</strong> ' . $data_email__formMainID . '<br />';
+$mail->Body .= '<strong>Correo electr&oacute;nico:</strong> <a href="mailto:' . $data_email__formMainID . '">' . $data_email__formMainID . '</a><br />';
+$mail->Body .= '<strong>Sitio web:</strong> ' . $data_webSite__formMainID . '<br />';
+$mail->Body .= '<strong>Perfil de Facebook:</strong> ' . $data_facebook__formMainID . '<br />';
+$mail->Body .= '<strong>Perfil de Instagram:</strong> <a href="https://www.instagram.com/' . $data_instagram__formMainID . '">' . $data_instagram__formMainID . '</a><br />';
+$mail->Body .= '<strong>Tel&eacute;fono:</strong> ' . $data_telefono__formMainID . '<br />';
+$mail->Body .= '<strong>Celular:</strong> ' . $data_celular . '<br />';
+$mail->Body .= '<strong>WhatsApp:</strong> <a href="https://wa.me/+549' . $data_whatsAppAreaCode__formMainID . $data_whatsAppNumber__formMainID . '">+54 9 '. $data_whatsAppAreaCode__formMainID . ' ' . $data_whatsAppNumber__formMainID ."</a><br />";
+$mail->Body .= '<strong>Empresa:</strong> ' . $data_empresa__formMainID . '<br />';
+$mail->Body .= '<strong>Raz&oacute;n Social:</strong> ' . $data_razonSocial__formMainID . '<br />';
+$mail->Body .= '<strong>Cargo:</strong> ' . $data_cargo__formMainID . '<br />';
+$mail->Body .= '<strong>Asunto:</strong> ' . $data_asunto__formMainID . '<br />';
+$mail->Body .= '<strong>&iquest;C&oacute;mo quer&eacute;s que te contactemos?:</strong> ' . $data_comoQueres__formMainID . '<br />';
+$mail->Body .= '<strong>Rubro:</strong> ' . $data_rubro__formMainID . '<br />';
+$mail->Body .= '<br /><strong>Mensaje:</strong><br />' . $data_mensaje__formMainID;
+    
+    
+/* // Si el envio fue exitoso reseteamos lo que el usuario escribio --------- */    
+$_POST['data_apellido__formMainID'] = '';
+$_POST['data_nombreAp__formMainID'] = '';     
+$_POST['data_nombreCo__formMainID'] = '';               
+$_POST['data_genero__formMainID'] = '';
+$_POST['data_direccion__formMainID'] = '';
+$_POST['data_ciudad__formMainID'] = '';
+$_POST['data_domicilio__formMainID'] = '';
+$_POST['data_localidad__formMainID'] = '';
+$_POST['data_codigoPostal__formMainID'] = '';
+$_POST['data_provincia__formMainID'] = '';
+$_POST['data_pais__formMainID'] = '';
+$_POST['data_fecha__formMainID'] = '';
+$_POST['data_email__formMainID'] = '';
+$_POST['data_webSite__formMainID'] = '';
+$_POST['data_facebook__formMainID'] = '';
+$_POST['data_telefono__formMainID'] = '';
+$_POST['data_celular__formMainID'] = '';
+$_POST['data_whatsAppAreaCode__formMainID'] = '';
+$_POST['data_whatsAppNumber__formMainID'] = '';
+$_POST['data_empresa__formMainID'] = '';
+$_POST['data_razonSocial__formMainID'] = '';
+$_POST['data_cargo__formMainID'] = '';
+$_POST['data_rubro__formMainID'] = '';
+$_POST['data_comoQueres__formMainID'] = '';
+$_POST['data_asunto__formMainID'] = '';
+$_POST['data_mensaje__formMainID'] = '';
+$_POST['data_aceptoTOU__formMainID'] = '';
 ?>

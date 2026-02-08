@@ -180,12 +180,13 @@ e.g. print_r($captcha_response_keys) prints Array (
             
                     $mail->addAddress('tampas@gmail.com');
                     $mail->addCC('gabrielvol@protonmail.com');
-                    #$mail->addBCC('ggvv@hotmail.com.ar');
+                    $mail->addBCC('ggvv@hotmail.com.ar');
 
                     #$mail->addAddress($form_recipient__formMainID);
                     #$mail->addCC($form_recipient_CC__formMainID);
                     #$mail->addBCC($form_recipient_BCC__formMainID);
 
+                    /*
                     $addList = function ($list, $fn) use ($mail) {
                         if (!isset($list)) {
                             return;
@@ -201,6 +202,7 @@ e.g. print_r($captcha_response_keys) prints Array (
 
                     $addList($form_recipient_CC__formMainID, 'addCC');
                     $addList($form_recipient_BCC__formMainID, 'addBCC');
+                    */
                     
 /* // Cuerpo de mail y asunto ----------------------------------------------- */
                     $mail->isHTML(true);

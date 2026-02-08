@@ -6,63 +6,6 @@
    Variables de Entorno | Custom [/etc/css/custom/var/_env_var.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Sans Serif ------------------------------------------------------------ */
-/* // Serif ----------------------------------------------------------------- */
-/* // Monoespaciadas -------------------------------------------------------- */
-/* // Font Sizes ------------------------------------------------------------ */
-/* * NombreDeProyecto * ========================================================
-   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Variables de fuentes -------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Colours Main Variables | Custom [/etc/css/custom/var/colours_main_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Border Colours Variables | Custom [/etc/css/custom/var/colours_borders_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/*___ Declaramos las var para colores de fondo _*/
-/* // Text Fonts ------------------------------------------------------------ */
-/* // REF [46] Fuentes Regular y Bold */
-/* // REF [01] Google fonts */
-/* // Espaciado y cuerpo de texto ------------------------------------------- */
-/* // REF [01] Google fonts */
-/* // Headings -------------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    CSS Styles Pre | Custom [/etc/css/scss/var_all_pre.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -85,12 +28,17 @@
 /* // Before Tablet BT ------------------------------------------------------ */
 /* // Before Tablet Landscape BTL ------------------------------------------- */
 /* // Tablet Only TO -------------------------------------------------------- */
-/* // After Tablet AT ------------------------------------------------------- */
+/* // After Tablet AT ------------------------------------------------------- *
+// REF [05]
+Si se activa `$classes_container_act_A768` `$nav_double_A768_act` hay que activar
+`$nav_double_A768_act` en `[/etc/css/custom/act/nav_main_act.scss]` y
+`$nav_double_A768_act` en `[/src/var/act/nav.act.inc.php]`
+*/
 /* // After Tablet Landscape ATL -------------------------------------------- */
 /* // Tablet Landscape Only TLO --------------------------------------------- */
 /* // Tablet Landscape Only TTLO -------------------------------------------- */
 /* // Before Desktop BD ----------------------------------------------------- */
-/* // After Laptop AL ------------------------------------------------------- 
+/* // After Laptop AL ------------------------------------------------------- *
 $classes_container_act_AL:                      off;
 $helpers_spacing_act_AL:                        off;
 $classes_position_display_mask_cursor_act_AL:   off;
@@ -163,6 +111,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Listado --------------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Menu y logo ----------------------------------------------------------- */
+/* // Menu y logo Flexbox --------------------------------------------------- */
 /* // Header // REF [08] ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Activators | Custom [/etc/css/custom/act/nav_main_act.scss]
@@ -262,15 +211,27 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // REF [38*] Mixin para container max ------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
+   Colours Main Variables | Custom [/etc/css/custom/var/colours_main_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
+   Border Colours Variables | Custom [/etc/css/custom/var/colours_borders_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* * NombreDeProyecto * ========================================================
+   Background Colours Variables | Custom [/etc/css/custom/var/colours_backgrounds_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/*___ Declaramos las var para colores de fondo _*/
+/* * NombreDeProyecto * ========================================================
+   Colours Text/Font Variables | Custom [/etc/css/custom/var/colours_text_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Text Colours ---------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Shadows Variables | Custom [/etc/css/custom/var/shadows_var.scss]
    ========================================================================== */
@@ -280,21 +241,47 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /*___ Text Shadow _______________________*/
 /*___ Box Shadow ________________________*/
 /* * NombreDeProyecto * ========================================================
+   Font Variables | Etc [/etc/css/scss/var_fonts.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Sans Serif ------------------------------------------------------------ */
+/* // Serif ----------------------------------------------------------------- */
+/* // Monoespaciadas -------------------------------------------------------- */
+/* // Font Sizes ------------------------------------------------------------ */
+/* * NombreDeProyecto * ========================================================
+   Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
+   ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Variables de fuentes -------------------------------------------------- */
+/* * NombreDeProyecto * ========================================================
    Text Variables | Custom [/etc/css/custom/var/text_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
+/* // Text Fonts ------------------------------------------------------------ */
+/* // REF [46] Fuentes Regular y Bold */
+/* // REF [01] Google fonts */
+/* // Espaciado y cuerpo de texto ------------------------------------------- */
+/* // REF [01] Google fonts */
+/* // Headings -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Colour Variables | Custom [/etc/css/custom/var/text_colours_var.scss]
+   Font-face | Custom [/etc/css/custom/fontFace.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/* // Text Colours ---------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
+/*
+.exampleFont{font-family: 'exampleFont';}
+@font-face {
+    font-family: 'exampleFont';
+    src: url('/stage/fonts/examplefont.woff2') format('woff2'),
+         url('/stage/fonts/examplefont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+*/
 /* * NombreDeProyecto * ========================================================
    Button Nav Hamburger Variables | Custom [/etc/css/custom/var/button_nav_hamburger_var.scss]
    ========================================================================== */
@@ -311,6 +298,8 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* * NombreDeProyecto * ========================================================
    Logo Sizes Variables | Custom [/etc/css/custom/var/logo_sizes_var.scss]
    ========================================================================== */
+/* // Descripcion ----------------------------------------------------------- */
+/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Sizes Variables | Custom [/etc/css/custom/var/nav_sizes_var.scss]
    ========================================================================== */
@@ -321,18 +310,20 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Nav Sizes ------------------------------------------------------------- */
 /* // Nav List -------------------------------------------------------------- */
 /* // Nav Drawer ------------------------------------------------------------ */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Logo Sizes BT --------------------------------------------------------- */
+/* in use */
 /* // Nav Drawer logo_header.navDrawer_open --------------------------------- */
 /* // Logo Sizes AT --------------------------------------------------------- */
+/* in use */
+/* in use */
+/* in use */
+/* in use */
 /* // Logo Sizes Footer ----------------------------------------------------- */
+/* in use */
+/* in use */
+/* in use */
+/* in use */
 /* // Logo Sizes Footer logoFloated ----------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Header Variables | Custom [/etc/css/custom/var/header_var.scss]
    ========================================================================== */
@@ -351,11 +342,6 @@ $page_PT_AT:            0;
 $page_PT_A1024:         0;
 */
 /* // Header Colours -------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Colours Variables | Custom [/etc/css/custom/var/nav_colours_var.scss]
    ========================================================================== */
@@ -399,9 +385,6 @@ $page_PT_A1024:         0;
 /* * NombreDeProyecto * ========================================================
    Logo Sizes Variables | Custom [/etc/css/custom/var/logo_sizes_var.scss]
    ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
@@ -421,17 +404,12 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 */
 /* // Language Colours ------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
-   Lists Variables | Custom [/etc/css/custom/var/lists.scss]
+   List Variables | Custom [/etc/css/custom/var/list_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // List Colours ---------------------------------------------------------- */
 /* // List Sizes ------------------------------------------------------------ */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Buttons Variables | Custom [/etc/css/custom/var/buttons_var.scss]
    ========================================================================== */
@@ -460,11 +438,6 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Social Sizes ---------------------------------------------------------- */
 /* // Social Colours -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Popup Variables | Custom [/etc/css/custom/var/popup_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -473,11 +446,6 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Popup Sizes ----------------------------------------------------------- */
 /* // Popup Colours --------------------------------------------------------- */
 /* // Variables / Mixins ---------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Slider Variables | Custom [/etc/css/custom/var/slider_var.scss]
    ========================================================================== */
@@ -496,21 +464,11 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /*___ Video shorts ______________________*/
 /* // Video colours --------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Footer Variables | Custom [/etc/css/custom/var/footer_var.scss]
    ========================================================================== */
 /* // Full heights Footer --------------------------------------------------- */
 /* // Footer sizes ---------------------------------------------------------- */
 /* // Footer colours  ------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Form Colours Variables | Custom [/etc/css/custom/var/form_colours_var.scss]
    ========================================================================== */
@@ -558,11 +516,6 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Custom Sizes ---------------------------------------------------------- */
 /* // Rounded Table --------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Tables Colours Variables | Custom [/etc/css/custom/var/tables_colours_var.scss]
    ========================================================================== */
 /* // Table Border Colours -------------------------------------------------- */
@@ -589,11 +542,6 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Secondary Separator --------------------------------------------------- */
 /*___ Secondary _________________________*/
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Page Construccion Variables | Custom [/etc/css/custom/var/page_construccion_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -601,22 +549,12 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Page Construcion sizes ------------------------------------------------ */
 /* // Page Construcion colours  --------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Page Index Variables | Custom [/etc/css/custom/var/page_index_var.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Page Index Sizes ------------------------------------------------------ */
 /* // Page Index Colours ---------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Page Contacto Variables | Custom [/etc/css/custom/var/page_contacto_var.scss]
    ========================================================================== */
@@ -728,11 +666,6 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Colour Mixins | Etc [/etc/css/scss/mixins_colours.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -813,28 +746,7 @@ Description: Optional - Width of triangle - Accepts a unitless integer that is e
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
-/*
-.exampleFont{font-family: 'exampleFont';}
-@font-face {
-    font-family: 'exampleFont';
-    src: url('/stage/fonts/examplefont.woff2') format('woff2'),
-         url('/stage/fonts/examplefont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-*/
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Main CSS -------------------------------------------------------------- */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Html Body Settings | Etc [/etc/css/scss/settings_html_body.scss]
    ========================================================================== */
@@ -856,11 +768,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Body Styles | Custom [/etc/css/custom/body.scss]
    ========================================================================== */
@@ -897,11 +804,6 @@ body {
   */
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Elements Reset/Settings | Etc [/etc/css/scss/reset_main.scss]
    ========================================================================== */
@@ -979,18 +881,8 @@ figure {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Custom Reset Styles | Custom [/etc/css/custom/reset_custom.scss]
    ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Gradient Colours | Custom [/etc/css/custom/colours_gradients.scss]
    ========================================================================== */
@@ -1022,11 +914,6 @@ $bgGrad_colourPercent_filter: progid:DXImageTransform.Microsoft.gradient( startC
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Text Settings | Etc [/etc/css/scss/settings_text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -1037,6 +924,9 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, butto
   font-weight: 400;
   font-size: 1rem;
   line-height: 3.125ex;
+}
+
+h1, h2, h3, h4, h5, h6, p, b, strong, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table {
   font-style: normal;
 }
 
@@ -1121,6 +1011,10 @@ p p, p a, p strong, p em, p i, p b, p cite, p li, a p, a a, a strong, a em, a i,
   font-size: 1em;
 }
 
+i {
+  font-style: italic;
+}
+
 a {
   transition: background-color 0.5s, color 1s, text-shadow 0.7s;
 }
@@ -1144,7 +1038,27 @@ a:focus, a:focus-visible, a:hover {
   font-family: Consolas;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 350px) {
+  h1, .heading1 {
+    font-size: 1.6rem;
+  }
+  h2, .heading2 {
+    font-size: 1.5rem;
+  }
+  h3, .heading3 {
+    font-size: 1.4rem;
+  }
+  h4, .heading4 {
+    font-size: 1.3rem;
+  }
+  h5, .heading5 {
+    font-size: 1.3rem;
+  }
+  h6, .heading6 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 351px) {
   h1, .heading1 {
     font-size: 1.6rem;
   }
@@ -1202,6 +1116,26 @@ a:focus, a:focus-visible, a:hover {
   }
   h6, .heading6 {
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1, .heading1 {
+    font-size: 2.4rem;
+  }
+  h2, .heading2 {
+    font-size: 2.2rem;
+  }
+  h3, .heading3 {
+    font-size: 2rem;
+  }
+  h4, .heading4 {
+    font-size: 1.8rem;
+  }
+  h5, .heading5 {
+    font-size: 1.6rem;
+  }
+  h6, .heading6 {
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 1201px) {
@@ -1471,11 +1405,6 @@ a.black:focus, a.black:hover {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Settings Text | Custom [/etc/css/custom/text.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -1538,11 +1467,6 @@ q::after {
   content: close-quote;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Text Classes | Custom [/etc/css/custom/classes_text.scss]
    ========================================================================== */
@@ -1733,11 +1657,6 @@ q::after {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
    ========================================================================== */
 .bgWhite {
@@ -1821,11 +1740,6 @@ a.mainBgColour:hover, a.mainBgColour:focus {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Backgrounds Classes | Custom [/etc/css/custom/classes_backgrounds.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -1847,11 +1761,6 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   background-color: #eb1c24;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Shadows Classes | Custom [/etc/css/custom/shadows.scss]
    ========================================================================== */
@@ -1942,11 +1851,6 @@ a.mainBgColour:hover, a.mainBgColour:focus {
   bottom: 0;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Useful Classes ALL | Etc [/etc/css/scss/classes_useful_all.scss]
    ========================================================================== */
@@ -2365,11 +2269,6 @@ article, article::before, article::after, details, details::before, details::aft
   list-style: none !important;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Useful Classes Responsive | Etc [/etc/css/scss/classes_useful_responsive.scss]
    ========================================================================== */
@@ -2927,11 +2826,6 @@ article, article::before, article::after, details, details::before, details::aft
 }
 */
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Container Settings | Etc [/etc/css/scss/settings_container.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -3320,7 +3214,7 @@ article, article::before, article::after, details, details::before, details::aft
 }
 @media (min-width: 851px) {
   .containerA600 {
-    width: 750px;
+    max-width: 750px;
   }
   .containerA600.container_centered_absolute_A600 {
     margin-left: calc(-1 * calc(750px / 2));
@@ -3415,6 +3309,10 @@ article, article::before, article::after, details, details::before, details::aft
     padding-right: 10px;
     padding-left: 10px;
   }
+  .containerA1400 .container,
+  .containerA1400 [class*=containerA] {
+    max-width: 1250px;
+  }
 }
 @media (min-width: 1501px) {
   .containerA1400 {
@@ -3439,11 +3337,6 @@ article, article::before, article::after, details, details::before, details::aft
     width: 320px;
   }
 }
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Global Styles | Custom [/etc/css/custom/global.scss]
    ========================================================================== */
@@ -3535,13 +3428,9 @@ article, article::before, article::after, details, details::before, details::aft
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* // Secondary Separator --------------------------------------------------- */
 /*___ Secondary _________________________*/
+/* // Variables / Mixins ---------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Lists | Custom [/etc/css/custom/lists.scss]
+   Lists | Custom [/etc/css/custom/list.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -3715,11 +3604,6 @@ ol {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Button Styles | Custom [/etc/css/custom/buttons.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -3746,6 +3630,7 @@ button, button::before, button::after {
   padding-right: 10px;
   padding-left: 10px;
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -3880,12 +3765,17 @@ button, button::before, button::after {
 .pop_formStatus .button_submit_pop {
   height: 40px;
   line-height: 40px;
-  border: 1px solid #8c8c8c;
+  border-color: #8c8c8c !important;
+  border-width: 1px !important;
+  border-style: solid !important;
   border-radius: 12px;
   display: block;
   background-color: #fff;
+  width: 80% !important;
   max-width: 160px !important;
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
   color: #000;
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
   font-weight: 700;
@@ -3971,14 +3861,14 @@ button, button::before, button::after {
     right: calc(70px + 10px);
   }
 }
-@media (max-width: 767px) {
-  #selector .button_whatsApp_anchor.navDrawer_open::before, #selector .button_whatsApp_anchor.navDrawer_open:focus::before, #selector .button_whatsApp_anchor.navDrawer_open:focus-visible::before, #selector .button_whatsApp_anchor.navDrawer_open:hover::before {
-    display: none;
-  }
-}
 @media (min-width: 501px) {
   #selector .button_whatsApp_anchor:focus::before, #selector .button_whatsApp_anchor:focus-visible::before, #selector .button_whatsApp_anchor:hover::before {
     width: 220px;
+  }
+}
+@media (max-width: 767px) {
+  #selector .button_whatsApp_anchor.navDrawer_open::before, #selector .button_whatsApp_anchor.navDrawer_open:focus::before, #selector .button_whatsApp_anchor.navDrawer_open:focus-visible::before, #selector .button_whatsApp_anchor.navDrawer_open:hover::before {
+    display: none;
   }
 }
 #selector .button_whatsApp_anchor .button_whatsApp_nFormatted {
@@ -4089,11 +3979,6 @@ button, button::before, button::after {
 
 /* // Button Section -------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Hover Classes | Custom [/etc/css/custom/hover.scss]
    ========================================================================== */
 @media (min-width: 768px) {
@@ -4118,11 +4003,6 @@ button, button::before, button::after {
   }
 }
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Focus Styles | Custom [/etc/css/custom/focus.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -4133,11 +4013,6 @@ button, button::before, button::after {
   outline-offset: 0.25rem;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Form Settings | Etc [/etc/css/scss/settings_form.scss]
    ========================================================================== */
@@ -4607,11 +4482,6 @@ form .data_password_label .form_label_msg_sugg { /* // REF [52] Form sugg floate
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Form Styles | Custom [/etc/css/custom/form.scss]
    ========================================================================== */
 /* // Form Fieldset --------------------------------------------------------- */
@@ -4626,12 +4496,11 @@ fieldset > p {
   padding: 0 !important;
   color: #000;
 }
-fieldset.form_validation_input_invalid legend,
-fieldset.form_validation_input_invalid label span {
-  color: #eb1c24;
-}
-fieldset.form_validation_input_invalid legend {
-  padding-left: 25px;
+fieldset > legend {
+  /*
+  font-weight: bold!important;
+  margin-bottom: 10px!important; 
+  */
 }
 
 /* // Form status message / Form validation --------------------------------- */
@@ -4657,6 +4526,10 @@ fieldset.form_validation_input_invalid legend {
 }
 .form_status.form_status_ok {
   background-color: #339900;
+  color: #fff;
+}
+.form_status.form_status_captcha {
+  background-color: #000;
   color: #fff;
 }
 
@@ -4822,12 +4695,12 @@ form input.form_validation_input_invalid, form input.form_validation_input_inval
   border-color: #eb1c24 !important;
   box-shadow: inset 0 0 0 rgb(101.75, 101.75, 101.75);
 }
-form fieldset.form_validation_input_invalid,
-form fieldset.form_validation_input_invalid legend {
-  background-image: url("/stage/img/form_alert.svg");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: auto 55%;
+form input[type=checkbox].form_validation_input_invalid + .form_label_name {
+  color: #eb1c24;
+}
+form fieldset.form_validation_input_invalid legend,
+form fieldset.form_validation_input_invalid .form_validation_span {
+  color: #eb1c24;
 }
 form select.form_validation_input_invalid {
   background-position: right 25px center;
@@ -4930,7 +4803,9 @@ form label.label_comp_small, form label.label_comp_big {
   clear: none !important;
   margin: -5px auto 0 !important;
 }
-form label.label_comp_small input, form label.label_comp_big input {
+form label.label_comp_small .form_label_name,
+form label.label_comp_small input, form label.label_comp_big .form_label_name,
+form label.label_comp_big input {
   width: 100% !important;
 }
 form label.label_comp_big {
@@ -4941,53 +4816,67 @@ form label.label_comp_big + .form_validation_span {
   margin-top: 2px;
 }
 @media (max-width: 400px) {
-  form label .label_comp_big .form_label_name {
+  form label.label_comp_big .form_label_name {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 500px) {
-  form label .label_comp_small {
+  form label.label_comp_small {
     width: 80px !important;
   }
-  form label .label_comp_small .form_label_name {
+  form label.label_comp_small .form_label_name {
     font-size: 0.7rem;
   }
-  form label .label_comp_big {
+  form label.label_comp_big {
     width: calc(100% - 80px - 10px) !important;
   }
 }
 @media (min-width: 501px) {
-  form label .label_comp_small {
+  form label.label_comp_small {
     width: 115px !important;
   }
-  form label .label_comp_small .form_label_name {
+  form label.label_comp_small .form_label_name {
     font-size: 0.75rem;
   }
-  form label .label_comp_big {
+  form label.label_comp_big {
     width: calc(100% - 115px - 10px) !important;
   }
 }
 @media (max-width: 767px) {
-  form label .label_comp_big .form_label_name,
-  form label .label_comp_small .form_label_name {
+  form label.label_comp_big .form_label_name, form label.label_comp_small .form_label_name {
     height: calc(30px - 10px);
     line-height: calc(30px - 10px);
   }
 }
+form fieldset label, .mobileForm form fieldset label, .tabletForm form fieldset label {
+  margin-bottom: 0 !important;
+}
 @media (max-width: 767px) {
-  .mobileForm form fieldset,
+  .mobileForm form fieldset {
+    margin-bottom: 10px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tabletForm form fieldset {
+    margin-bottom: 10px !important;
+  }
+}
+@media (min-width: 1024px) {
+  form fieldset {
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 767px) {
   .mobileForm form label {
     margin-bottom: 20px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .tabletForm form fieldset,
   .tabletForm form label {
     margin-bottom: 20px !important;
   }
 }
 @media (min-width: 1024px) {
-  form fieldset,
   form label {
     margin-bottom: 10px !important;
   }
@@ -5041,7 +4930,7 @@ form .label_checkbox .form_label_name {
 @media (max-width: 1023px) {
   form .label_checkbox .form_label_name + span {
     /* Separacion entre .form_label_name y .form_validation_span */
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -5094,10 +4983,12 @@ form .form_label_name {
 }
 form .form_validation_span,
 form .form_label_msg_sugg {
+  font-weight: 400;
   line-height: 1.2em;
 }
 form .form_label_msg_sugg {
   display: block;
+  padding-top: 2px;
   padding-left: 10px;
   color: #000;
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
@@ -5128,17 +5019,15 @@ form .form_validation_span {
 form .form_validation_span.form_validation_span_active {
   display: block;
 }
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   form .form_validation_span,
   form .form_label_msg_sugg {
-    font-weight: 400;
     font-size: 0.7rem !important;
   }
 }
-@media (min-width: 301px) {
+@media (min-width: 451px) {
   form .form_validation_span,
   form .form_label_msg_sugg {
-    font-weight: 400;
     font-size: 0.8rem !important;
   }
 }
@@ -5153,11 +5042,6 @@ form .form_validation_span.form_validation_span_active {
   }
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Popup Styles | Custom [/etc/css/custom/popup.scss]
    ========================================================================== */
@@ -5398,6 +5282,7 @@ form .form_validation_span.form_validation_span_active {
 /* // Form status message --------------------------------------------------- */
 .pop_formStatus {
   padding: 20px !important;
+  height: auto;
 }
 .pop_formStatus h2 {
   height: auto !important;
@@ -5472,11 +5357,6 @@ form .form_validation_span.form_validation_span_active {
   font-size: 0.7rem !important;
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Header Styles | Custom [/etc/css/custom/header.scss]
    ========================================================================== */
@@ -5638,11 +5518,6 @@ form .form_validation_span.form_validation_span_active {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Footer Styles | Custom [/etc/css/custom/footer.scss]
    ========================================================================== */
 #footer {
@@ -5661,7 +5536,7 @@ form .form_validation_span.form_validation_span_active {
 #footer .logo_txt {
   box-sizing: border-box;
 }
-#footer .logo_footer img {
+#footer .logo_footer {
   display: block;
 }
 @media (max-width: 500px) {
@@ -5671,9 +5546,7 @@ form .form_validation_span.form_validation_span_active {
 }
 @media (min-width: 501px) {
   #footer .logo_footer {
-    /*
-                    width: $logo_width_footer_A500;
-    */
+    width: 160px;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -5714,11 +5587,6 @@ form .form_validation_span.form_validation_span_active {
   }
 }
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Settings | Etc [/etc/css/scss/settings_nav.scss]
    ========================================================================== */
@@ -5842,11 +5710,6 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
   }
 }
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Nav Drawer Settings | Etc [/etc/css/scss/settings_nav_drawer.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
@@ -5894,17 +5757,7 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
   }
 }
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Nav Accordion Settings | Etc [/etc/css/scss/settings_nav_accordion.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
    ========================================================================== */
 /* // Descripcion ----------------------------------------------------------- */
 /* // Referencias globales de nombres de variables y mixins ----------------- */
@@ -5970,6 +5823,7 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
     background-size: 100%;
     border: 1px solid transparent !important;
     padding: 0 !important;
+    margin-top: 0 !important;
     text-indent: -9999px;
     overflow: hidden;
     width: 40px;
@@ -6011,26 +5865,11 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
   }
 }
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Nav Main Accordion Styles | Custom [/etc/css/custom/nav_main_accordion.scss]
    ========================================================================== */
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Nav Main List Styles | Custom [/etc/css/custom/nav_main_list.scss]
    ========================================================================== */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    Nav Main After Tablet Styles | Custom [/etc/css/custom/nav_main_AT.scss]
    ========================================================================== */
@@ -6132,30 +5971,32 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Nav Main ALL Styles | Custom [/etc/css/custom/nav_main_ALL.scss]
    ========================================================================== */
-.nav_main_ul li a,
-.nav_main_ul li .nav_TLI {
+.nav_main .nav_main_ul li a,
+.nav_main .nav_main_ul li .nav_TLI {
   /*
   text-transform: uppercase;
   */
 }
+.nav_main .nav_main_ul {
+  /*        
+  .nav_item_xxx{
+      a{
+          &, &:focus, &:focus-visible, &:hover, &:visited, &:active{}
 
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
+          &:focus, &:focus-visible, &:hover, &:visited, &:active{}
+
+          &, &:visited, &:active{}
+
+          &:visited, &:active{}
+
+          &:focus, &:focus-visible, &:hover{}
+      }
+  }
+  */
+}
+
 /* * NombreDeProyecto * ========================================================
    Page Error Styles | Custom [/etc/css/custom/page_error.scss]
    ========================================================================== */
@@ -6186,24 +6027,9 @@ nav li:focus a, nav li:focus-visible a, nav li:hover a {
 }
 
 /* * NombreDeProyecto * ========================================================
-   Text Variables | Custom [/etc/css/custom/var/text_var.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
-/* * NombreDeProyecto * ========================================================
    Page Index Styles | Custom [/etc/css/custom/page_index.scss]
    ========================================================================== */
 /* // Post ------------------------------------------------------------------ */
-/* * NombreDeProyecto * ========================================================
-   Font-face | Custom [/etc/css/custom/fontFace.scss]
-   ========================================================================== */
-/* // Descripcion ----------------------------------------------------------- */
-/* // Referencias globales de nombres de variables y mixins ----------------- */
 /* * NombreDeProyecto * ========================================================
    CSS Styles Post | Custom [/etc/css/scss/var_all_post.scss]
    ========================================================================== */

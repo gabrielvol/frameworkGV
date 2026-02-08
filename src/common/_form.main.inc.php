@@ -368,26 +368,26 @@
             Nº de WhatsApp
         <?php endif; ?></legend>
 
-        <label for="data_whatsAppAreaCode__formMainID" class="label_comp_small <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>">
+        <label for="data_whatsAppAreaCode__formMainID" class="label_comp label_comp_small <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>">
             <span class="form_label_name">Código de área</span>
             <input type="tel" name="data_whatsAppAreaCode__formMainID" id="data_whatsAppAreaCode__formMainID" class="data_whatsAppAreaCode__formMainID <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>" value="<?php echo $_POST['data_whatsAppAreaCode__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppAreaCode__formMainID; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsAppAreaCode__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsAppAreaCode__formMainID; ?></span>
             <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-                E.g. 11, 341, 2320.
+                E.g. 11, 341, 2320
             <?php else: ?>
-                Por ej: 11, 341, 2320.
-            <?php endif; ?>.</span>
+                Ej. 11, 341, 2320
+            <?php endif; ?></span>
         </label>
 
-        <label for="data_whatsAppNumber__formMainID" class="label_comp_big <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>">
+        <label for="data_whatsAppNumber__formMainID" class="label_comp label_comp_big <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>">
             <span class="form_label_name">Número</span>
             <input type="tel" name="data_whatsAppNumber__formMainID" id="data_whatsAppNumber__formMainID" class="data_whatsAppNumber__formMainID <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>" value="<?php echo $_POST['data_whatsAppNumber__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppNumber__formMainID; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsAppNumber__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsAppNumber__formMainID; ?></span>
             <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-                E.g. 1234567, 12345678.
+                E.g. 1234567, 12345678
             <?php else: ?>
-                Por ej: 1234567, 12345678.
-            <?php endif; ?>.</span>
+                Ej. 1234567, 12345678
+            <?php endif; ?></span>
         </label>        
     </fieldset>
 
@@ -539,7 +539,7 @@
     </fieldset>
 
     <label for="data_aceptoTOU__formMainID" class="label_checkbox">
-        <input type="checkbox" name="data_aceptoTOU__formMainID" id="data_aceptoTOU__formMainID" class="input_checkbox data_aceptoTOU__formMainID" form="formMainID" value="Acepto los términos y condiciones">
+        <input type="checkbox" name="data_aceptoTOU__formMainID" id="data_aceptoTOU__formMainID" class="input_checkbox data_aceptoTOU__formMainID <?php echo $form_validation_input_class_data_aceptoTOU__formMainID; ?>" form="formMainID" value="Acepto los términos y condiciones del sitio web <?php echo $site_name_brand; ?>" <?php echo $form_input_autofocus_data_aceptoTOU__formMainID; ?>>
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             Acepto los términos y condiciones
         <?php else: ?>

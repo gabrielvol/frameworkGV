@@ -48,8 +48,6 @@
 @use "sass:color";
 @use "sass:map";
 
-@use "env_var" as *;
-
 @use "../../scss/var_fonts" as *;
 
 $font_families_map:(
@@ -104,7 +102,7 @@ $font_weights_map:(
 
 $arial:             map.get($font_families_map, arial), $font_families_sans_list_fallback;
 $roboto:            map.get($font_families_map, roboto), $font_families_sans_list_fallback;
-$ftSansSerif:     $font_families_sans_list_fallback;
+$ftSansSerif:       $font_families_sans_list_fallback;
 
 //$timesNewRoman:     map.get($font_families_map, timesNewRoman), $font_families_serif_list_fallback;
 $ftSerif:           $font_families_serif_list_fallback;

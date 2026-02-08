@@ -2,10 +2,6 @@
    Font Variables | Etc [/etc/css/scss/var_fonts.scss]
    ========================================================================== */
 
-@use "../custom/var/env_var" as *;
-
-@use "sass:color";
-@use "sass:map";
 /* // Descripcion ----------------------------------------------------------- */
 // Archivo de asignacion de variables.
 // Contiene mapa de fuentes para generar Font-Stacks.
@@ -52,6 +48,11 @@
 
 
            
+@use "sass:color";
+@use "sass:map";
+
+@use "../custom/var/env_var" as *;
+
 /* // Sans Serif ------------------------------------------------------------ */
 $font_families_sans_map:(
     sanFrancisco: ('-apple-system', '.SFNSText-Regular', 'San Francisco'),

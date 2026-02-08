@@ -51,9 +51,9 @@ else:
     /* produ / stage */
     /* Si el formulario tiene captcha solamente se va a poder testear en produccion */
     
-    $form_recipient__formMainID = 'tampas@gmail.com'; // $site_email_CONTACTO_address;
-    $form_recipient_CC__formMainID = 'gabrielvol@protonmail.com'; // $site_email_CONTACTO_address; // . ', ' . $site_email_EMAILA_address;
-    $form_recipient_BCC__formMainID = 'ggvv@hotmail.com.ar';
+    $form_recipient__formMainID = $site_email_CONTACTO_address;
+    $form_recipient_CC__formMainID = ''; // $site_email_CONTACTO_address;
+    $form_recipient_BCC__formMainID = '';
     
 endif;
 
