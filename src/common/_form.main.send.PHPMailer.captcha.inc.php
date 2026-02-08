@@ -185,6 +185,22 @@ e.g. print_r($captcha_response_keys) prints Array (
                     #$mail->addAddress($form_recipient__formMainID);
                     #$mail->addCC($form_recipient_CC__formMainID);
                     #$mail->addBCC($form_recipient_BCC__formMainID);
+
+                    $addList = function ($list, $fn) use ($mail) {
+                        if (!isset($list)) {
+                            return;
+                        }
+                        $items = preg_split('/[;,]+/', $list);
+                        foreach ($items as $item) {
+                            $email = trim($item);
+                            if ($email !== '') {
+                                $mail->$fn($email);
+                            }
+                        }
+                    };
+
+                    $addList($form_recipient_CC__formMainID, 'addCC');
+                    $addList($form_recipient_BCC__formMainID, 'addBCC');
                     
 /* // Cuerpo de mail y asunto ----------------------------------------------- */
                     $mail->isHTML(true);
