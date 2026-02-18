@@ -139,6 +139,14 @@ fieldset, label, button,
     }
 }
 
+.label_comp .form_validation_span{
+    .mobileForm &{        
+        @include beforeMQ350{
+            width: $form_label_width_max_B350;          
+        }
+    }
+}
+
 input, select, textarea{
     caret-color: $form_input_caret_colour;
     

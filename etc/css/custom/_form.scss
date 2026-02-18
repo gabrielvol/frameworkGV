@@ -26,16 +26,12 @@ fieldset{
         padding: $zero;
         color: $black;
     }
-            
-    &.form_validation_input_invalid{
-        legend,
-        label span{
-            color: $form_span_invalid_ftColour;
-        }
-        
-        legend{
-            padding-left: 25px;
-        }         
+    
+    > legend{
+        /*
+        font-weight: bold!important;
+        margin-bottom: 10px!important; 
+        */
     }
 }
  
@@ -67,6 +63,16 @@ fieldset{
         background-color: $bgGreenSystemM;
         color: $white;
     }
+}
+
+.form_status.form_status_captcha,
+code.form_status_captcha{
+    padding: 10px;
+    max-width: 100%;
+    background-color: $bgBlack;
+    color: $white;
+    overflow: auto;
+    line-height: 2em;
 }
 
 .form_validation_div{
@@ -278,15 +284,20 @@ form{
             }
         }
     }
+        
+    input[type="checkbox"]{
+        &.form_validation_input_invalid{
+            & + .form_label_name{
+                color: $form_span_invalid_ftColour;                    
+            }
+        }            
+    }
     
     fieldset{
-        &.form_validation_input_invalid{        
-            &,
-            legend{
-                background-image: url('#{$dir_env}/img/form_alert.svg');
-                background-repeat: no-repeat;
-                background-position: right 10px center;
-                background-size: auto 55%;            
+        &.form_validation_input_invalid{            
+            legend,
+            .form_validation_span{
+                color: $form_span_invalid_ftColour;
             }
         }
     }
@@ -385,6 +396,7 @@ form{
             clear: $none;
             margin: -5px auto 0!important;
 
+            .form_label_name,
             input{
                 width: $hundred;
             }
@@ -532,7 +544,32 @@ form{
             }
 
         } @else {
-            fieldset,
+            fieldset{
+                label{            
+                    &,        
+                    .mobileForm &,        
+                    .tabletForm &{
+                        margin-bottom: $zero;
+                    }
+                }   
+
+                @include beforeMQ768{
+                    .mobileForm &{
+                        margin-bottom: $helpers_spacing_PM_medium;
+                    }
+                }
+
+                @include MQ768_1024{
+                    .tabletForm &{
+                        margin-bottom: $helpers_spacing_PM_medium;       
+                    }
+                }
+
+                @include afterMQ1024{
+                    margin-bottom: $helpers_spacing_PM_medium;
+                }
+            }
+
             label{
                 @include beforeMQ768{
                     .mobileForm &{
@@ -549,7 +586,7 @@ form{
                 @include afterMQ1024{
                     margin-bottom: $helpers_spacing_PM_medium;
                 }
-            }            
+            }     
         }
         
         .label_radio,
@@ -616,7 +653,7 @@ form{
                 .form_label_name{
                     & + span{
     /* Separacion entre .form_label_name y .form_validation_span */
-                        margin-top: 40px;
+                        margin-top: 30px;
                     }
                 }
             }
@@ -768,6 +805,10 @@ form{
                     color: $form_span_anchor_ftColour_hover;
                 }
             }
+                
+            & + .form_validation_span{
+                margin-top: 6px;
+            }
         }
         
         .data_password_label .form_label_msg_sugg{
@@ -835,17 +876,25 @@ form{
             }
         }
         
-        @include beforeMQ300{        
+        @include beforeMQ500{        
             .form_validation_span,        
             .form_label_msg_sugg{         
                 font-size: 0.7rem!important;
             }
+        
+            .form_label_msg_sugg{
+                padding-top: 2px;
+            }
         }
         
-        @include afterMQ300{  
+        @include afterMQ500{  
             .form_validation_span,        
             .form_label_msg_sugg{       
                 font-size: 0.8rem!important;
+            }
+        
+            .form_label_msg_sugg{
+                padding-top: 4px;
             }
         }
         
