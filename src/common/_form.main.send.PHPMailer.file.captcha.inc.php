@@ -11,23 +11,22 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-/*
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-*/
-
-require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/Exception.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
+/* // Inicia proceso de form luego de form.submit() ------------------------- */
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+/* // Import the PHPMailer class into the global namespace ------------------ */
+    $phpMailerBase = $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/';
+    if (!is_file($phpMailerBase . 'Exception.php') || !is_file($phpMailerBase . 'PHPMailer.php') || !is_file($phpMailerBase . 'SMTP.php')) {
+        return;
+    }
+    require_once $phpMailerBase . 'Exception.php';
+    require_once $phpMailerBase . 'PHPMailer.php';
+    require_once $phpMailerBase . 'SMTP.php';
 
 /* // Status Captcha - Mensaje inicial -------------------------------------- */
 $form_status_marquee__formMainID .= $form_status_captcha_ini__formMainID;
 
 $form_status_file__formMainID = '<p class="form_status form_status_file">File: awaiting form submit</p>';
-
-/* // Inicia proceso de form luego de form.submit() ------------------------- */
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 /* // Create variables for form data ---------------------------------------- */
     $data_nombre__formMainID = $_POST['data_nombre__formMainID'];

@@ -10,23 +10,22 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-/*
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-*/
-
-require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/Exception.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/PHPMailer.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/SMTP.php';
-
-/* // Inicia proceso de form ------------------------------------------------ */
-if (isset($_POST['button_form_submit__formMainID'])){
+/* // Inicia proceso de form luego de form.submit() ------------------------- */
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+/* // Import the PHPMailer class into the global namespace ------------------ */
+    $phpMailerBase = $_SERVER['DOCUMENT_ROOT'] . '/PHPMailer/src/';
+    if (!is_file($phpMailerBase . 'Exception.php') || !is_file($phpMailerBase . 'PHPMailer.php') || !is_file($phpMailerBase . 'SMTP.php')) {
+        return;
+    }
+    require_once $phpMailerBase . 'Exception.php';
+    require_once $phpMailerBase . 'PHPMailer.php';
+    require_once $phpMailerBase . 'SMTP.php';
     
 /* // Create variables for form data ---------------------------------------- */
-        $data_nombre__formMainID = $_POST['data_nombre__formMainID'];
+    $data_nombre__formMainID = $_POST['data_nombre__formMainID'];
         
-        /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
+    /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
 
 /* // INICIA VALIDACIÓN EN .form_validation_div ----------------------------- *
     if(!isset($data_nombre__formMainID) || trim($data_nombre__formMainID) == ''){
