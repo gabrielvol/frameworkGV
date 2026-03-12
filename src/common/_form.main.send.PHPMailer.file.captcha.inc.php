@@ -168,12 +168,12 @@ e.g. print_r($captcha_response_keys) prints Array (
 
 /* // $mail Host de conexion SMTP ------------------------------------------- */
                             $mail->isSMTP();
-                            $mail->Host = $ENV_form_PHPMailer_SMTPhost__formMainID;
+                            $mail->Host = $ENV_form_PHPMailer_SMTPhost;
                     
 /* // $mail Usuario y Password SMTP ----------------------------------------- */
                             $mail->SMTPAuth = true;
-                            $mail->Username = $form_PHPMailer_account__formMainID;
-                            $mail->Password = $ENV_form_PHPMailer_password__formMainID;
+                            $mail->Username = $ENV_form_PHPMailer_account;
+                            $mail->Password = $ENV_form_PHPMailer_password;
             
 /* // $mail Seguridad TLS / SSL / Puertos ----------------------------------- */
                             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;

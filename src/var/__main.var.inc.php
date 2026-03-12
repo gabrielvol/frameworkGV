@@ -12,6 +12,8 @@
    #php #variables #includes
 */
 
+/* // Secrets --------------------------------------------------------------- */
+include('domain.var.inc.php');
 include('secrets.var.inc.php');
 
 /* // Activadores ----------------------------------------------------------- */
@@ -22,7 +24,6 @@ include('act/nav.act.inc.php');
     
 /* // Data ------------------------------------------------------------------ */
 include('lang.var.inc.php');
-include('domain.var.inc.php');
 //include('date.var.inc.php');
 include('url.var.inc.php');
 // include('web.var.inc.php');
