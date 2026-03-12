@@ -63,5 +63,5 @@ $ftColour_main_global_hover:    color.adjust($ftColour_main_global, $lightness: 
 $ftColour_anchor_global:        $ftColour_main_global_hover;
 $ftColour_anchor_global_hover:  color.adjust($ftColour_main_global_hover, $lightness: -10%);
 
-$txSelection_ftColour_global:   $ftColour_main_global;
-$txSelection_bgColour_global:   $bgColour_neutral;
+$txSelection_ftColour_global:   $black;
+$txSelection_bgColour_global:   $grey2XL;

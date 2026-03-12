@@ -16,7 +16,7 @@
 /* // REF [50] Google reCaptcha --------------------------------------------- *
    Si se activa `$has_captcha` tambien hay que activar `$google_captcha_act`
    en  `[/etc/css/custom/act/google_act.scss]` */
-$has_captcha = 1;
+$has_captcha = empty($dir_env) ? 0 : 0;
 
 /* La variable captcha_key_site tambien debe ser declarada
    en `[/src/js/global.produ.js]` */
