@@ -74,7 +74,11 @@ endif;
 
 if(!empty($page_redirect)):
     $class_end_body      .= 'body_redirect ';
-endif;  
+endif;
+
+if (!isset($page_body_classes)) {
+    $page_body_classes = ' ';
+}
     
 $classes_body             = 'class="' . $class_ini_body . $page_body_classes . $class_end_body . '"';
 

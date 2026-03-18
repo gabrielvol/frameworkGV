@@ -33,20 +33,43 @@ $protocol_query = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
 
 $http_protocol  = $protocol_query . 'www.';
 
+
+/* // International - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
 $domain_com_mx      = 'domain.com.mx';
 
 $domain_uy      = 'domain.uy';
 
+$country_suffix = ($domain_clean === $domain_com_mx) ? ' MX' : ' UY';
+*/
+
+
+/* // Domain main - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 $domain_main        = $domain_clean;
 
-$domain_sub_SUBDOMAIN = 'SUBDOMAIN' . '.';
+$domain_main_full   = $http_protocol . $domain_main;
 
+
+/* // Domain WIP  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 $domain_wip         = $domain_main;
 
+$domain_wip_full   = $http_protocol . $domain_wip;
+
+
+/* // Domain secondary  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 $domain_sec         = 'sitiocomar';
 
+$domain_sec_full   = $http_protocol . $domain_sec;
+
+
+/* // Domain custom - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 $domain_custom      = 'sitiocomar';
 
-$country_suffix = ($domain_clean === $domain_com_mx) ? ' MX' : ' UY';
+$domain_custom_full   = $http_protocol . $domain_custom;
+
+
+/* // Subdomain - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$domain_sub_SUBDOMAIN = 'SUBDOMAIN' . '.';
+
+
 
 ?>
