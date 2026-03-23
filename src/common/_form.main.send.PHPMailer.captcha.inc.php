@@ -29,6 +29,7 @@ $form_status_marquee__formMainID = $form_status_captcha_ini__formMainID;
 /* // Create variables for form data ---------------------------------------- */
     $data_nombre__formMainID = $_POST['data_nombre__formMainID'];
     /* El resto de las variables estan en `[/src/common/form.var.data.php]` */
+    $data_mensaje__formMainID = $_POST['data_mensaje__formMainID'];
     
 /* // REF [50] Google reCaptcha --------------------------------------------- */
     $data_captchaResponseToken__formMainID = $_POST['data_captchaResponseToken__formMainID'];
@@ -175,17 +176,22 @@ e.g. print_r($captcha_response_keys) prints Array (
                     #$mail->SMTPAutoTLS = false;
                     
 /* // Direcciones remitente y destinatarios --------------------------------- */
-                    $mail->setFrom($form_PHPMailer_account__formMainID, $site_name_form . ' Web Form');
+                    $mail->setFrom($ENV_form_PHPMailer_account, $site_name_form . ' Web Form');
             
                     $mail->addAddress('tampas@gmail.com');
-                    $mail->addCC('gabrielvol@protonmail.com');
-                    $mail->addBCC('ggvv@hotmail.com.ar');
+                    #$mail->addCC('gabrielvol@protonmail.com');
+                    #$mail->addBCC('ggvv@hotmail.com.ar');
 
                     #$mail->addAddress($form_recipient__formMainID);
                     #$mail->addCC($form_recipient_CC__formMainID);
-                    #$mail->addBCC($form_recipient_BCC__formMainID);
+                    #$mail->addBCC($form_recipient_BCC__formMainID); 
+
+                    #$mail->addAddress($form_recipient__global);
+                    #$mail->addCC($form_recipient_CC__global);
+                    #$mail->addBCC($form_recipient_BCC__global);            
 
                     /*
+                    #$mail->addAddress($form_recipient__global);
                     $addList = function ($list, $fn) use ($mail) {
                         if (!isset($list)) {
                             return;
@@ -199,8 +205,11 @@ e.g. print_r($captcha_response_keys) prints Array (
                         }
                     };
 
-                    $addList($form_recipient_CC__formMainID, 'addCC');
-                    $addList($form_recipient_BCC__formMainID, 'addBCC');
+                    #$addList($form_recipient_CC__formMainID, 'addCC');
+                    #$addList($form_recipient_BCC__formMainID, 'addBCC');
+
+                    $addList($form_recipient_CC__global, 'addCC');
+                    $addList($form_recipient_BCC__global, 'addBCC');
                     */
                     
 /* // Cuerpo de mail y asunto ----------------------------------------------- */

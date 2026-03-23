@@ -38,6 +38,22 @@ $captcha_ip_remote = $_SERVER['REMOTE_ADDR'];
 // $form_id_spelled = 'Contactanos';
 
 
+/* // Form Recipients Global // REF [36] ------------------------------------ */
+if($dir_env !== '' && $dir_env !== '/stage'):
+    /* test / maqueta */
+    $form_recipient__global           = 'tampas@gmail.com';
+    $form_recipient_CC__global        = 'tampas@gmail.com';
+    $form_recipient_BCC__global       = 'tampas@gmail.com';
+else:    
+    /* produ / stage */
+    $form_recipient__global           = $site_email_CONTACTO_address;
+    $form_recipient_CC__global        = ''; // $site_email_CONTACTO_address;
+    $form_recipient_BCC__global       = '';
+endif;
+
+$form_status_recipient__global        = $form_recipient__global;
+$form_status_recipient_mailto__global = 'mailto:'. $form_recipient__global;
+
 
 /* // Form Main // REF [36] Form variables ---------------------------------- */
 if(!empty($dir_env) && $dir_env !== '/stage'):

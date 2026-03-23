@@ -33,9 +33,13 @@
        // echo '<div class="form_validation_div '. $form_validation_div_class__formMainID .'">'. $form_validation_div_msg__formMainID .'</div>';
     ?>
     
+    
+    
     <?php if (!empty($form_hidden_variable__formMainID)): ?>
         <input type="hidden" name="data_form_hidden__formMainID" id="data_form_hidden__formMainID" value="Valor escondido"> 
     <?php endif; ?>
+        
+        
     
     <?php if(!empty($form_var)): // REF [45] ?>
     <label for="data_opcionSeleccionada__formMainID" class="label_opcionSeleccionada__formMainID">
@@ -47,6 +51,8 @@
         <input type="text" name="data_opcionSeleccionada__formMainID" id="data_opcionSeleccionada__formMainID" class="data_opcionSeleccionada__formMainID" form="formMainID" value="<?php echo $form_var; ?>" readonly>
     </label>
     <?php endif; ?>
+        
+        
 
     <label for="data_nombre__formMainID" class="<?php echo $form_validation_input_class_data_nombre__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -61,6 +67,8 @@
         <div class="input_data_holder" aria-hidden="true"><pre><?php print_r($_POST); ?></pre></div>  
         
     </label>
+        
+        
 
     <label for="data_apellido__formMainID" class="<?php echo $form_validation_input_class_data_apellido__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -71,6 +79,8 @@
         <input type="text" name="data_apellido__formMainID" id="data_apellido__formMainID" class="data_apellido__formMainID <?php echo $form_validation_input_class_data_apellido__formMainID; ?>" value="<?php echo $_POST['data_apellido__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_apellido__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_apellido__formMainID; ?>"><?php echo $form_validation_span_msg_data_apellido__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_nombreAp__formMainID" class="<?php echo $form_validation_input_class_data_nombreAp__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -81,6 +91,8 @@
         <input type="text" name="data_nombreAp__formMainID" id="data_nombreAp__formMainID" class="data_nombreAp__formMainID <?php echo $form_validation_input_class_data_nombreAp__formMainID; ?>" value="<?php echo $_POST['data_nombreAp__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_nombreAp__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_nombreAp__formMainID; ?>"><?php echo $form_validation_span_msg_data_nombreAp__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_nombreCo__formMainID" class="<?php echo $form_validation_input_class_data_nombreCo__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -91,6 +103,8 @@
         <input type="text" name="data_nombreCo__formMainID" id="data_nombreCo__formMainID" class="data_nombreCo__formMainID <?php echo $form_validation_input_class_data_nombreCo__formMainID; ?>" value="<?php echo $_POST['data_nombreCo__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_nombreCo__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_nombreCo__formMainID; ?>"><?php echo $form_validation_span_msg_data_nombreCo__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_username__formMainID" class="<?php echo $form_validation_input_class_data_username__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -101,6 +115,8 @@
         <input type="text" name="data_username__formMainID" id="data_username__formMainID" class="data_username__formMainID <?php echo $form_validation_input_class_data_username__formMainID; ?>" value="<?php echo $_POST['data_username__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_username__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_username__formMainID; ?>"><?php echo $form_validation_span_msg_data_username__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_genero__formMainID">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -128,6 +144,8 @@
         <?php endforeach; ?>
         </select>
     </label>
+        
+        
 
     <label for="data_genero__formMainID" class="<?php echo $form_validation_input_class_data_genero__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -138,6 +156,8 @@
         <input type="text" name="data_genero__formMainID" id="data_genero__formMainID" class="data_genero__formMainID <?php echo $form_validation_input_class_data_genero__formMainID; ?>" value="<?php echo $_POST['data_genero__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_genero__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_genero__formMainID; ?>"><?php echo $form_validation_span_msg_data_genero__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_genero__formMainID">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -181,6 +201,8 @@
         </datalist>
         <span class="form_label_msg_sugg">La lista incluye sugerencias, pero podés completar libremente el campo.</span>
     </label>  
+        
+        
 
     <label for="data_dni__formMainID" class="<?php echo $form_validation_input_class_data_dni__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -188,9 +210,11 @@
         <?php else: ?>
             DNI
         <?php endif; ?></span>
-        <input type="text" inputmode="numeric" name="data_dni__formMainID" id="data_dni__formMainID" class="data_dni__formMainID <?php echo $form_validation_input_class_data_dni__formMainID; ?>" value="<?php echo $_POST['data_dni__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_dni__formMainID; ?>>
+        <input type="text" inputmode="numeric" pattern="[0-9]*" min="0" name="data_dni__formMainID" id="data_dni__formMainID" class="data_dni__formMainID <?php echo $form_validation_input_class_data_dni__formMainID; ?>" value="<?php echo $_POST['data_dni__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_dni__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_dni__formMainID; ?>"><?php echo $form_validation_span_msg_data_dni__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_password__formMainID" class="<?php echo $form_validation_input_class_data_password__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -206,68 +230,70 @@
             ¿Olvidaste tu contraseña? <a <?php echo $href_recuperarContrasena; ?>>Clic acá para recuperarla</a>
         <?php endif; ?>.</span>   
     </label>
+        
+        
 
-    <label for="data_direccion__formMainID" class="<?php echo $form_validation_input_class_data_direccion__formMainID; ?>">
+    <label for="data_pais__formMainID" class="<?php echo $form_validation_input_class_data_pais__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            Adresss
+            Country
         <?php else: ?>
-            Dirección
+            Pa&iacute;s
         <?php endif; ?></span>
-        <input type="text" name="data_direccion__formMainID" id="data_direccion__formMainID" class="data_direccion__formMainID <?php echo $form_validation_input_class_data_direccion__formMainID; ?>" value="<?php echo $_POST['data_direccion__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_direccion__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_direccion__formMainID; ?>"><?php echo $form_validation_span_msg_data_direccion__formMainID; ?></span>
+        
+        <?php
+            $data_pais_locale = (isset($gettext_idioma) && $gettext_idioma == 'en_GB') ? 'en' : 'es';
+            $data_pais_list = [];
+            $data_pais_bundle = \ResourceBundle::create($data_pais_locale, 'ICUDATA-region');
+
+            if ($data_pais_bundle) {
+                $country_codes = $data_pais_bundle->get('Countries');
+
+                if ($country_codes) {
+                    foreach ($country_codes as $data_pais_code_country => $data_pais_code_country_name) {
+                        // Skip numeric / deprecated region codes
+                        if (strlen($data_pais_code_country) === 2) {
+                            $data_pais_list[$data_pais_code_country] = $data_pais_code_country_name;
+                        }
+                    }
+
+                    asort($data_pais_list); // alphabetical
+                }
+            }
+            
+            $data_pais_selected = $_POST['data_pais__formMainID'] ?? '';
+            $data_pais_selected = array_key_exists($data_pais_selected, $data_pais_list)
+                ? $data_pais_selected
+                : '';
+            $data_provincia_is_argentina = ($data_pais_selected === '' || $data_pais_selected === 'AR');
+        ?>
+        
+        <select name="data_pais__formMainID" id="data_pais__formMainID" class="data_pais__formMainID <?php echo $form_validation_input_class_data_pais__formMainID; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_pais__formMainID; ?>>
+
+            <option value="" disabled <?php echo $data_pais_selected === '' ? 'selected' : ''; ?>>
+                <?php echo (isset($gettext_idioma) && $gettext_idioma == 'en_GB')
+                    ? 'Select your country'
+                    : 'Seleccione su país'; ?>
+            </option>
+
+            <?php foreach ($data_pais_list as $data_pais_code_list_country => $data_pais_code_list_country_name): ?>                
+                <option value="<?php echo htmlspecialchars($data_pais_code_list_country, ENT_QUOTES, 'UTF-8'); ?>"
+                    <?php echo $data_pais_selected === $data_pais_code_list_country ? 'selected' : ''; ?>>
+                    <?php echo htmlspecialchars($data_pais_code_list_country_name, ENT_QUOTES, 'UTF-8'); ?>
+                </option>
+            <?php endforeach; ?>
+
+        </select>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_pais__formMainID; ?>"><?php echo $form_validation_span_msg_data_pais__formMainID; ?></span>
     </label>
+        
+        
 
-    <label for="data_domicilio__formMainID" class="<?php echo $form_validation_input_class_data_domicilio__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            Adresss
-        <?php else: ?>
-            Domicilio
-        <?php endif; ?></span>
-        <input type="text" name="data_domicilio__formMainID" id="data_domicilio__formMainID" class="data_domicilio__formMainID <?php echo $form_validation_input_class_data_domicilio__formMainID; ?>" value="<?php echo $_POST['data_domicilio__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_domicilio__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_domicilio__formMainID; ?>"><?php echo $form_validation_span_msg_data_domicilio__formMainID; ?></span>
-    </label>
-
-    <label for="data_localidad__formMainID" class="<?php echo $form_validation_input_class_data_localidad__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            Locality
-        <?php else: ?>
-            Dirección
-        <?php endif; ?></span>
-        <input type="text" name="data_localidad__formMainID" id="data_localidad__formMainID" class="data_localidad__formMainID <?php echo $form_validation_input_class_data_localidad__formMainID; ?>" value="<?php echo $_POST['data_localidad__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_localidad__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_localidad__formMainID; ?>"><?php echo $form_validation_span_msg_data_localidad__formMainID; ?></span>
-    </label>
-
-    <label for="data_codigoPostal__formMainID" class="<?php echo $form_validation_input_class_data_codigoPostal__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            C&oacute;digo postal
-        <?php else: ?>
-            ZIP Code
-        <?php endif; ?></span>
-        <input type="text" name="data_codigoPostal__formMainID" id="data_codigoPostal__formMainID" class="data_codigoPostal__formMainID <?php echo $form_validation_input_class_data_codigoPostal__formMainID; ?>" value="<?php echo $_POST['data_codigoPostal__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $form_input_autofocus_data_codigoPostal__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_codigoPostal__formMainID; ?>"><?php echo $form_validation_span_msg_data_codigoPostal__formMainID; ?></span>
-    </label>
-
-    <label for="data_ciudad__formMainID" class="<?php echo $form_validation_input_class_data_ciudad__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            City
-        <?php else: ?>
-            Ciudad
-        <?php endif; ?></span>
-        <input type="text" name="data_ciudad__formMainID" id="data_ciudad__formMainID" class="data_ciudad__formMainID <?php echo $form_validation_input_class_data_ciudad__formMainID; ?>" value="<?php echo $_POST['data_ciudad__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_ciudad__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_ciudad__formMainID; ?>"><?php echo $form_validation_span_msg_data_ciudad__formMainID; ?></span>
-    </label> 
-
-    <label for="data_provincia__formMainID" class="<?php echo $form_validation_input_class_data_provincia__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            State/Province
-        <?php else: ?>
-            Provincia
-        <?php endif; ?></span>
-        <input type="text" name="data_provincia__formMainID" id="data_provincia__formMainID" class="data_provincia__formMainID <?php echo $form_validation_input_class_data_provincia__formMainID; ?>" value="<?php echo $_POST['data_provincia__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_provincia__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_provincia__formMainID; ?>"><?php echo $form_validation_span_msg_data_provincia__formMainID; ?></span>
-    </label>  
-
-    <label for="data_provincia__formMainID" class="<?php echo $form_validation_input_class_data_provincia__formMainID; ?>">
+    <label
+        id="data_provinciaSelectWrap__formMainID"
+        for="data_provincia__formMainID"
+        class="<?php echo $form_validation_input_class_data_provincia__formMainID; ?>"
+        style="<?php echo $data_provincia_is_argentina ? '' : 'display:none;'; ?>">
+        
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             State/Province
         <?php else: ?>
@@ -302,20 +328,98 @@
             ];
 
             $data_provincia_selected = $_POST['data_provincia__formMainID'] ?? '';
-            $data_provincia_selected = array_key_exists($data_provincia_selected, $data_provincia_list) ? $data_provincia_selected : ''; ?>
-        <select name="data_provincia__formMainID" id="data_provincia__formMainID" class="data_provincia__formMainID <?php echo $form_validation_input_class_data_provincia__formMainID; ?>" form="formMainID" enterkeyhint="next">
+            $data_provincia_selected = array_key_exists($data_provincia_selected, $data_provincia_list) ? $data_provincia_selected : '';
+        ?>
+        
+        <select name="data_provincia__formMainID" id="data_provincia__formMainID" class="data_provincia__formMainID <?php echo $form_validation_input_class_data_provincia__formMainID; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_provincia__formMainID; ?> <?php echo $data_provincia_is_argentina ? '' : 'disabled'; ?>>
             <option value="" disabled <?php echo $data_provincia_selected === '' ? 'selected' : ''; ?>>
                 <?php echo _('Seleccione su provincia'); ?>
             </option>
-
+                
             <?php foreach ($data_provincia_list as $data_provincia_value => $data_provincia_option): ?>
-                <option value="<?php echo $data_provincia_value; ?>" <?php echo $data_provincia_selected === $data_provincia_value ? 'selected' : ''; ?>>
-                    <?php echo $data_provincia_option; ?>
+                <option
+                    value="<?php echo htmlspecialchars($data_provincia_value, ENT_QUOTES, 'UTF-8'); ?>"
+                    <?php echo $data_provincia_selected === $data_provincia_value ? 'selected' : ''; ?>>
+                    <?php echo htmlspecialchars($data_provincia_option, ENT_QUOTES, 'UTF-8'); ?>
                 </option>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_provincia__formMainID; ?>"><?php echo $form_validation_span_msg_data_provincia__formMainID; ?></span>
+    </label>  
+
+    <label
+        id="data_provinciaTextWrap__formMainID"
+        for="data_provincia_text__formMainID"
+        class="<?php echo $form_validation_input_class_data_provincia__formMainID; ?>"
+        style="<?php echo $data_provincia_is_argentina ? 'display:none;' : ''; ?>">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            State/Province
+        <?php else: ?>
+            Provincia
+        <?php endif; ?></span>
+        <input type="text" name="data_provincia__formMainID" id="data_provincia_text__formMainID" class="data_provincia__formMainID <?php echo $form_validation_input_class_data_provincia__formMainID; ?>" value="<?php echo $_POST['data_provincia__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_provincia__formMainID; ?> <?php echo $data_provincia_is_argentina ? 'disabled' : ''; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_provincia__formMainID; ?>"><?php echo $form_validation_span_msg_data_provincia__formMainID; ?></span>
+    </label> 
+        
+        
+
+    <label for="data_ciudad__formMainID" class="<?php echo $form_validation_input_class_data_ciudad__formMainID; ?>">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            City
+        <?php else: ?>
+            Ciudad
+        <?php endif; ?></span>
+        <input type="text" name="data_ciudad__formMainID" id="data_ciudad__formMainID" class="data_ciudad__formMainID <?php echo $form_validation_input_class_data_ciudad__formMainID; ?>" value="<?php echo $_POST['data_ciudad__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_ciudad__formMainID; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_ciudad__formMainID; ?>"><?php echo $form_validation_span_msg_data_ciudad__formMainID; ?></span>
+    </label> 
+        
+        
+
+    <label for="data_codigoPostal__formMainID" class="<?php echo $form_validation_input_class_data_codigoPostal__formMainID; ?>">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            C&oacute;digo postal
+        <?php else: ?>
+            ZIP Code
+        <?php endif; ?></span>
+        <input type="text" name="data_codigoPostal__formMainID" id="data_codigoPostal__formMainID" class="data_codigoPostal__formMainID <?php echo $form_validation_input_class_data_codigoPostal__formMainID; ?>" value="<?php echo $_POST['data_codigoPostal__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php echo _('Ej.:'); ?> B1846DWF, 1832" <?php echo $form_input_autofocus_data_codigoPostal__formMainID; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_codigoPostal__formMainID; ?>"><?php echo $form_validation_span_msg_data_codigoPostal__formMainID; ?></span>
     </label>
+
+    <label for="data_localidad__formMainID" class="<?php echo $form_validation_input_class_data_localidad__formMainID; ?>">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            Locality
+        <?php else: ?>
+            Localidad
+        <?php endif; ?></span>
+        <input type="text" name="data_localidad__formMainID" id="data_localidad__formMainID" class="data_localidad__formMainID <?php echo $form_validation_input_class_data_localidad__formMainID; ?>" value="<?php echo $_POST['data_localidad__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_localidad__formMainID; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_localidad__formMainID; ?>"><?php echo $form_validation_span_msg_data_localidad__formMainID; ?></span>
+    </label>
+        
+        
+
+    <label for="data_direccion__formMainID" class="<?php echo $form_validation_input_class_data_direccion__formMainID; ?>">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            Adresss
+        <?php else: ?>
+            Dirección
+        <?php endif; ?></span>
+        <input type="text" name="data_direccion__formMainID" id="data_direccion__formMainID" class="data_direccion__formMainID <?php echo $form_validation_input_class_data_direccion__formMainID; ?>" value="<?php echo $_POST['data_direccion__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_direccion__formMainID; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_direccion__formMainID; ?>"><?php echo $form_validation_span_msg_data_direccion__formMainID; ?></span>
+    </label>
+        
+        
+
+    <label for="data_domicilio__formMainID" class="<?php echo $form_validation_input_class_data_domicilio__formMainID; ?>">
+        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
+            Adresss
+        <?php else: ?>
+            Domicilio
+        <?php endif; ?></span>
+        <input type="text" name="data_domicilio__formMainID" id="data_domicilio__formMainID" class="data_domicilio__formMainID <?php echo $form_validation_input_class_data_domicilio__formMainID; ?>" value="<?php echo $_POST['data_domicilio__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_domicilio__formMainID; ?>>
+        <span class="form_validation_span <?php echo $form_validation_span_class_data_domicilio__formMainID; ?>"><?php echo $form_validation_span_msg_data_domicilio__formMainID; ?></span>
+    </label> 
+        
+        
 
     <label for="data_comoQueres__formMainID" class="<?php echo $form_validation_input_class_data_comoQueres__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -344,6 +448,8 @@
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_comoQueres__formMainID; ?>"><?php echo $form_validation_span_msg_data_comoQueres__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_GENERICSELECT__formMainID" class="form_required <?php echo $form_validation_input_class_data_GENERICSELECT__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -373,16 +479,8 @@
         </select>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_GENERICSELECT__formMainID; ?>"><?php echo $form_validation_span_msg_data_GENERICSELECT__formMainID; ?></span>
     </label>
-
-    <label for="data_pais__formMainID" class="<?php echo $form_validation_input_class_data_pais__formMainID; ?>">
-        <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
-            Country
-        <?php else: ?>
-            Pa&iacute;s
-        <?php endif; ?></span>
-        <input type="text" name="data_pais__formMainID" id="data_pais__formMainID" class="data_pais__formMainID <?php echo $form_validation_input_class_data_pais__formMainID; ?>" value="<?php echo $_POST['data_pais__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_pais__formMainID; ?>>
-        <span class="form_validation_span <?php echo $form_validation_span_class_data_pais__formMainID; ?>"><?php echo $form_validation_span_msg_data_pais__formMainID; ?></span>
-    </label>
+        
+        
 
     <label for="data_celular__formMainID" class="<?php echo $form_validation_input_class_data_celular__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -390,7 +488,7 @@
         <?php else: ?>
             Celular
         <?php endif; ?></span>
-        <input type="tel" name="data_celular__formMainID" id="data_celular__formMainID" class="data_celular__formMainID <?php echo $form_validation_input_class_data_celular__formMainID; ?>" value="<?php echo $_POST['data_celular__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_celular__formMainID; ?>>
+        <input type="tel" inputmode="tel" pattern="[0-9]*" min="0" name="data_celular__formMainID" id="data_celular__formMainID" class="data_celular__formMainID <?php echo $form_validation_input_class_data_celular__formMainID; ?>" value="<?php echo $_POST['data_celular__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_celular__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_celular__formMainID; ?>"><?php echo $form_validation_span_msg_data_celular__formMainID; ?></span>
     </label>
 
@@ -400,9 +498,11 @@
         <?php else: ?>
             Tel&eacute;fono
         <?php endif; ?></span>
-        <input type="tel" name="data_telefono__formMainID" id="data_telefono__formMainID" class="data_telefono__formMainID <?php echo $form_validation_input_class_data_telefono__formMainID; ?>" value="<?php echo $_POST['data_telefono__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_telefono__formMainID; ?>>
+        <input type="tel" inputmode="tel" pattern="[0-9]*" min="0" name="data_telefono__formMainID" id="data_telefono__formMainID" class="data_telefono__formMainID <?php echo $form_validation_input_class_data_telefono__formMainID; ?>" value="<?php echo $_POST['data_telefono__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_telefono__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_telefono__formMainID; ?>"><?php echo $form_validation_span_msg_data_telefono__formMainID; ?></span>
     </label>
+        
+        
 
     <fieldset class="<?php echo $form_validation_input_class_data_whatsApp__formMainID; ?>">
         <legend class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -412,27 +512,30 @@
         <?php endif; ?></legend>
 
         <label for="data_whatsAppAreaCode__formMainID" class="label_comp label_comp_small <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>">
-            <span class="form_label_name">Código de área</span>
-            <input type="tel" name="data_whatsAppAreaCode__formMainID" id="data_whatsAppAreaCode__formMainID" class="data_whatsAppAreaCode__formMainID <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>" value="<?php echo $_POST['data_whatsAppAreaCode__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppAreaCode__formMainID; ?>>
+            <span class="form_label_name">Código de área</span>            
+            <span class="form_label_name"><span class="txAbbreviated abbreviated_C">Código</span> de área</span>
+            <input type="tel" inputmode="tel" pattern="[0-9]*" min="0" name="data_whatsAppAreaCode__formMainID" id="data_whatsAppAreaCode__formMainID" class="data_whatsAppAreaCode__formMainID <?php echo $form_validation_input_class_data_whatsAppAreaCode__formMainID; ?>" value="<?php echo $_POST['data_whatsAppAreaCode__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppAreaCode__formMainID; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsAppAreaCode__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsAppAreaCode__formMainID; ?></span>
             <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
                 E.g. 11, 341, 2320
             <?php else: ?>
-                Ej. 11, 341, 2320
+                Ej. 11, 82, 341
             <?php endif; ?></span>
         </label>
 
         <label for="data_whatsAppNumber__formMainID" class="label_comp label_comp_big <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>">
             <span class="form_label_name">Número</span>
-            <input type="tel" name="data_whatsAppNumber__formMainID" id="data_whatsAppNumber__formMainID" class="data_whatsAppNumber__formMainID <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>" value="<?php echo $_POST['data_whatsAppNumber__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppNumber__formMainID; ?>>
+            <input type="tel" inputmode="tel" pattern="[0-9]*" min="0" name="data_whatsAppNumber__formMainID" id="data_whatsAppNumber__formMainID" class="data_whatsAppNumber__formMainID <?php echo $form_validation_input_class_data_whatsAppNumber__formMainID; ?>" value="<?php echo $_POST['data_whatsAppNumber__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_whatsAppNumber__formMainID; ?>>
             <span class="form_validation_span <?php echo $form_validation_span_class_data_whatsAppNumber__formMainID; ?>"><?php echo $form_validation_span_msg_data_whatsAppNumber__formMainID; ?></span>
             <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
                 E.g. 1234567, 12345678
             <?php else: ?>
-                Ej. 1234567, 12345678
+                Ej. 3334444
             <?php endif; ?></span>
         </label>        
     </fieldset>
+        
+        
 
     <label for="data_email__formMainID" class="form_required <?php echo $form_validation_input_class_data_email__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -440,14 +543,16 @@
         <?php else: ?>
             Correo electr&oacute;nico
         <?php endif; ?></span>
-        <input type="email" name="data_email__formMainID" id="data_email__formMainID" class="data_email__formMainID <?php echo $form_validation_input_class_data_email__formMainID; ?>" value="<?php echo $_POST['data_email__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMainID; ?> required>
+        <input type="email" inputmode="email" name="data_email__formMainID" id="data_email__formMainID" class="data_email__formMainID <?php echo $form_validation_input_class_data_email__formMainID; ?>" value="<?php echo $_POST['data_email__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_email__formMainID; ?> required>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_email__formMainID; ?>"><?php echo $form_validation_span_msg_data_email__formMainID; ?></span>  
         <span class="form_label_msg_sugg"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
             An email will be sent to confirm this address
         <?php else: ?>
             Te enviaremos un correo a esta casilla para confirmar tu registro
         <?php endif; ?>.</span>
-    </label>               
+    </label>   
+        
+        
 
     <label for="data_webSite__formMainID" class="<?php echo $form_validation_input_class_data_webSite__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -455,9 +560,11 @@
         <?php else: ?>
             Sitio Web
         <?php endif; ?></span>
-        <input type="url" name="data_webSite__formMainID" id="data_webSite__formMainID" class="data_webSite__formMainID <?php echo $form_validation_input_class_data_webSite__formMainID; ?>" value="<?php echo $_POST['data_webSite__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php echo _('Debe comenzar con http://www'); ?>" <?php echo $form_input_autofocus_data_webSite__formMainID; ?>>
+        <input type="text" inputmode="url" name="data_webSite__formMainID" id="data_webSite__formMainID" class="data_webSite__formMainID <?php echo $form_validation_input_class_data_webSite__formMainID; ?>" value="<?php echo $_POST['data_webSite__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php echo _('Debe comenzar con http://www'); ?>" <?php echo $form_input_autofocus_data_webSite__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_webSite__formMainID; ?>"><?php echo $form_validation_span_msg_data_webSite__formMainID; ?></span>
-    </label>              
+    </label>    
+        
+        
 
     <label for="data_facebook__formMainID" class="<?php echo $form_validation_input_class_data_facebook__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -465,9 +572,11 @@
         <?php else: ?>
             Perfil de Facebook
         <?php endif; ?></span>
-        <input type="url" name="data_facebook__formMainID" id="data_facebook__formMainID" class="data_facebook__formMainID <?php echo $form_validation_input_class_data_facebook__formMainID; ?>" value="<?php echo $_POST['data_facebook__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="" <?php echo $form_input_autofocus_data_facebook__formMainID; ?>>
+        <input type="text" inputmode="url" name="data_facebook__formMainID" id="data_facebook__formMainID" class="data_facebook__formMainID <?php echo $form_validation_input_class_data_facebook__formMainID; ?>" value="<?php echo $_POST['data_facebook__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="" <?php echo $form_input_autofocus_data_facebook__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_facebook__formMainID; ?>"><?php echo $form_validation_span_msg_data_facebook__formMainID; ?></span>
-    </label>       
+    </label>  
+        
+        
 
     <label for="data_instagram__formMainID" class="<?php echo $form_validation_input_class_data_instagram__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -475,9 +584,11 @@
         <?php else: ?>
             Instagram
         <?php endif; ?></span>
-        <input type="text" name="data_instagram__formMainID" id="data_instagram__formMainID" class="data_instagram__formMainID <?php echo $form_validation_input_class_data_instagram__formMainID; ?>" value="<?php echo $_POST['data_instagram__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Just write the username'; } else { echo 'Solamente escribir el usuario'; } ?>" <?php echo $form_input_autofocus_data_instagram__formMainID; ?>> 
+        <input type="text"  inputmode="email" name="data_instagram__formMainID" id="data_instagram__formMainID" class="data_instagram__formMainID <?php echo $form_validation_input_class_data_instagram__formMainID; ?>" value="<?php echo $_POST['data_instagram__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Just write the username'; } else { echo 'Solamente escribir el usuario'; } ?>" <?php echo $form_input_autofocus_data_instagram__formMainID; ?>> 
         <span class="form_validation_span <?php echo $form_validation_span_class_data_instagram__formMainID; ?>"><?php echo $form_validation_span_msg_data_instagram__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_empresa__formMainID" class="<?php echo $form_validation_input_class_data_empresa__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -489,6 +600,8 @@
         <input type="text" name="data_empresa__formMainID" id="data_empresa__formMainID" class="data_empresa__formMainID <?php echo $form_validation_input_class_data_empresa__formMainID; ?>" value="<?php echo $_POST['data_empresa__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_empresa__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_empresa__formMainID; ?>"><?php echo $form_validation_span_msg_data_empresa__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_razonSocial__formMainID" class="<?php echo $form_validation_input_class_data_razonSocial__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -499,6 +612,8 @@
         <input type="text" name="data_razonSocial__formMainID" id="data_razonSocial__formMainID" class="data_razonSocial__formMainID <?php echo $form_validation_input_class_data_razonSocial__formMainID; ?>" value="<?php echo $_POST['data_razonSocial__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_razonSocial__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_razonSocial__formMainID; ?>"><?php echo $form_validation_span_msg_data_razonSocial__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_rubro__formMainID" class="<?php echo $form_validation_input_class_data_rubro__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -509,6 +624,8 @@
         <input type="text" name="data_rubro__formMainID" id="data_rubro__formMainID" class="data_rubro__formMainID <?php echo $form_validation_input_class_data_rubro__formMainID; ?>" value="<?php echo $_POST['data_rubro__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_rubro__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_rubro__formMainID; ?>"><?php echo $form_validation_span_msg_data_rubro__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_cargo__formMainID" class="<?php echo $form_validation_input_class_data_cargo__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -519,6 +636,8 @@
         <input type="text" name="data_cargo__formMainID" id="data_cargo__formMainID" class="data_cargo__formMainID <?php echo $form_validation_input_class_data_cargo__formMainID; ?>" value="<?php echo $_POST['data_cargo__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_cargo__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_cargo__formMainID; ?>"><?php echo $form_validation_span_msg_data_cargo__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_cantidad__formMainID" class="<?php echo $form_validation_input_class_data_cantidad__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -526,9 +645,11 @@
         <?php else: ?>
             Cantidad
         <?php endif; ?></span>
-        <input type="text" inputmode="numeric" pattern="[0-9]*" name="data_cantidad__formMainID" id="data_cantidad__formMainID" class="cantidad <?php echo $form_validation_input_class_data_cantidad__formMainID; ?>" value="<?php echo $_POST['data_cantidad__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_cantidad__formMainID; ?>>
+        <input type="number" pattern="[0-9]*" min="0" name="data_cantidad__formMainID" id="data_cantidad__formMainID" class="cantidad <?php echo $form_validation_input_class_data_cantidad__formMainID; ?>" value="<?php echo $_POST['data_cantidad__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_cantidad__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_cantidad__formMainID; ?>"><?php echo $form_validation_span_msg_data_cantidad__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_cantidad__formMainID" class="<?php echo $form_validation_input_class_data_cantidad__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -536,9 +657,11 @@
         <?php else: ?>
             Cantidad de integrantes
         <?php endif; ?></span>
-        <input type="number" min="0" inputmode="numeric" name="data_cantidad__formMainID" id="data_cantidad__formMainID" class="cantidad <?php echo $form_validation_input_class_data_cantidad__formMainID; ?>" value="<?php echo $_POST['data_cantidad__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_cantidad__formMainID; ?>>
+        <input type="number" inputmode="numeric" pattern="[0-9]*" min="0" name="data_cantidad__formMainID" id="data_cantidad__formMainID" class="cantidad <?php echo $form_validation_input_class_data_cantidad__formMainID; ?>" value="<?php echo $_POST['data_cantidad__formMainID']; ?>" form="formMainID" enterkeyhint="next" <?php echo $form_input_autofocus_data_cantidad__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_cantidad__formMainID; ?>"><?php echo $form_validation_span_msg_data_cantidad__formMainID; ?></span>
     </label>
+        
+        
 
     <label for="data_fecha__formMainID" class="<?php echo $form_validation_input_class_data_fecha__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -549,6 +672,8 @@
         <input type="date" name="data_fecha__formMainID" id="data_fecha__formMainID" class="data_fecha__formMainID <?php echo $form_validation_input_class_data_fecha__formMainID; ?>" value="<?php echo $_POST['data_fecha__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Please select a date'; } else { echo 'Seleccione una fecha en el calendario'; } ?>" <?php echo $form_input_autofocus_data_fecha__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_fecha__formMainID; ?>"><?php echo $form_validation_span_msg_data_fecha__formMainID; ?></span>
     </label>
+        
+        
 
     <fieldset class="<?php echo $form_validation_input_class_data_newsletter__formMainID; ?>">
         <legend class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo 'Subscribe Newsletter'; } else { echo '&iquest;Desea recibir el bolet&iacute;n de noticias?'; } ?></legend>
@@ -580,6 +705,8 @@
         <?php endif; ?></span>
         </label>
     </fieldset>
+        
+        
 
     <label for="data_aceptoTOU__formMainID" class="label_checkbox">
         <input type="checkbox" name="data_aceptoTOU__formMainID" id="data_aceptoTOU__formMainID" class="input_checkbox data_aceptoTOU__formMainID <?php echo $form_validation_input_class_data_aceptoTOU__formMainID; ?>" form="formMainID" value="Acepto los términos y condiciones del sitio web <?php echo $site_name_brand; ?>" <?php echo $form_input_autofocus_data_aceptoTOU__formMainID; ?>>
@@ -590,6 +717,8 @@
         <?php endif; ?></span>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_aceptoTOU__formMainID; ?>"><?php echo $form_validation_span_msg_data_aceptoTOU__formMainID; ?></span> 
     </label>
+        
+        
 
     <label for="data_browser__formMainID">
         <?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -607,6 +736,8 @@
             <option value="Microsoft Edge">
         </datalist>
     </label>
+        
+        
 
     <label for="data_asunto__formMainID" class="<?php echo $form_validation_input_class_data_asunto__formMainID; ?>">
         <span class="form_label_name"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>
@@ -617,6 +748,8 @@
         <input type="text" name="data_asunto__formMainID" id="data_asunto__formMainID" class="data_asunto__formMainID <?php echo $form_validation_input_class_data_asunto__formMainID; ?>" value="<?php echo $_POST['data_asunto__formMainID']; ?>" form="formMainID" enterkeyhint="next" placeholder="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB') { echo ''; } else { echo ''; } ?>" <?php echo $form_input_autofocus_data_asunto__formMainID; ?>>
         <span class="form_validation_span <?php echo $form_validation_span_class_data_asunto__formMainID; ?>"><?php echo $form_validation_span_msg_data_asunto__formMainID; ?></span>
     </label> 
+        
+        
 
     <?php /* Mensaje con validaci&oacute;n */ ?>
     <label for="data_mensaje__formMainID" class="form_required <?php echo $form_validation_input_class_data_mensaje__formMainID; ?>">
@@ -656,4 +789,23 @@
         event.preventDefault();
         captchaGetToken(formMainID);
     });
+
+    const countrySelectRepresentaciones = document.getElementById('data_pais__formMainID');
+    const provinciaSelectWrapRepresentaciones = document.getElementById('data_provinciaSelectWrap__formMainID');
+    const provinciaTextWrapRepresentaciones = document.getElementById('data_provinciaTextWrap__formMainID');
+    const provinciaSelectRepresentaciones = document.getElementById('data_provincia__formMainID');
+    const provinciaTextRepresentaciones = document.getElementById('data_provincia_text__formMainID');
+    const argentinaCountryCode = 'AR';
+
+    const toggleProvinciaInputRepresentaciones = () => {
+        const mustUseSelect = !countrySelectRepresentaciones.value || countrySelectRepresentaciones.value === argentinaCountryCode;
+
+        provinciaSelectWrapRepresentaciones.style.display = mustUseSelect ? '' : 'none';
+        provinciaTextWrapRepresentaciones.style.display = mustUseSelect ? 'none' : '';
+        provinciaSelectRepresentaciones.disabled = !mustUseSelect;
+        provinciaTextRepresentaciones.disabled = mustUseSelect;
+    };
+
+    countrySelectRepresentaciones.addEventListener('change', toggleProvinciaInputRepresentaciones);
+    toggleProvinciaInputRepresentaciones();
 </script>

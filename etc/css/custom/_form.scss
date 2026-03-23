@@ -294,10 +294,26 @@ form{
     }
     
     fieldset{
-        &.form_validation_input_invalid{            
+        &.form_validation_input_invalid{
             legend,
             .form_validation_span{
                 color: $form_span_invalid_ftColour;
+            }
+        }
+    }
+    
+    fieldset:has(input[type="radio"]){
+        &.form_validation_input_invalid{    
+            border: 2px solid $form_input_invalid_bdColour!important; 
+            
+            legend.form_label_name{
+                width: auto!important;
+                background-image: url('#{$dir_env}/img/form_alert.svg');
+                background-repeat: no-repeat;
+                background-position: left 10px center;
+                background-size: auto 60%;
+                padding-right: 6px;
+                padding-left: 40px;
             }
         }
     }
@@ -389,16 +405,28 @@ form{
                 }
             }
         }
+            
+        .form_label_msg_sugg{
+            display: inline-block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     
-        &.label_comp_small,    
-        &.label_comp_big{
+        &.label_comp{
             float: left!important;
             clear: $none;
             margin: -5px auto 0!important;
 
             .form_label_name,
+            .form_label_msg_sugg,
             input{
                 width: $hundred;
+            }
+    
+            .form_validation_span_active{
+                max-width: 100%!important;
+                white-space: nowrap;
             }
         }
 
@@ -420,12 +448,13 @@ form{
         }
 
         @include beforeMQ500{
+            &.label_comp .form_label_name,
+            .form_label_msg_sugg{
+                font-size: 0.7rem;
+            }
+            
             &.label_comp_small{
                 width: $form_label_comp_small_size_B500!important;
-
-                .form_label_name{
-                    font-size: 0.7rem;
-                }
             }
 
             &.label_comp_big{
@@ -434,12 +463,13 @@ form{
         }
 
         @include afterMQ500{
+            &.label_comp .form_label_name,
+            .form_label_msg_sugg{
+                font-size: 0.75rem;
+            }
+            
             &.label_comp_small{
                 width: $form_label_comp_small_size_A500!important;
-
-                .form_label_name{
-                    font-size: 0.75rem;
-                }
             }
 
             &.label_comp_big{
@@ -448,8 +478,7 @@ form{
         }
 
         @include beforeMQ768{
-            &.label_comp_big,
-            &.label_comp_small{
+            &.label_comp{
                 .form_label_name{
                     @include equalHeightAndLineHeight(calc(#{$form_label_height_A350} - 10px));
                 }
