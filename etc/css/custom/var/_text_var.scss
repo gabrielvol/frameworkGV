@@ -86,6 +86,15 @@ $txMargin_T_sibling:        0.8em;
 $txMargin_TRBL_sibling:     $txMargin_T_sibling 0 0;
 
 
+/* // Abbreviations / Symbols ----------------------------------------------- */
+$alphabet_upperCase: A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z;
+$txSymbols_map: (
+  plus: "+",
+  one: "1",
+  two: "2",
+  three: "3"
+);
+
 /* // Headings -------------------------------------------------------------- */
 $headings_marginTRBL_global:    0 0 0.8em;
 $headings_marginTRBL_sibling:   1.2em 0 0;

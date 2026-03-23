@@ -103,76 +103,26 @@
     /* vertical-align: super; */
 }
 
-.txSymbol{
+.txSymbol {
     position: relative;
     display: inline-flex;
     width: 35px;
-    text-indent: -9999px;
     overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
 
-    &::before{
+    &::before {
         position: absolute;
-        display: block;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 30px;
-        text-indent: 0;
-        text-align: center;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
     }
-    
-    &.symbol_plus{
-        &::before{
-            content: "+";
-        }
-    }
-    
-    &.symbol_one{
-        &::before{
-            content: "1";
-        }
-    }
-    
-    &.symbol_two{
-        &::before{
-            content: "2";
-        }
-    }
-    
-    &.symbol_three{
-        &::before{
-            content: "3";
-        }
-    }
-}
-        
-.txAbbreviated{
-    display: inline-block;
-    width: 2ch;
-    text-indent: -9999px;
 
-    &::before{
-        position: absolute;
-        display: inline-block;
-        left: 7px;
-        text-indent: 0;
-    }
-    
-    &.abbreviated_A{
-        &::before{
-            content: "A.";
-        }
-    }
-    
-    &.abbreviated_B{
-        &::before{
-            content: "B.";
-        }
-    }
-    
-    &.abbreviated_C{
-        &::before{
-            content: "C.";
+    @each $txSymbols_name, $txSymbols_value in $txSymbols_map {
+        &.symbol_#{$txSymbols_name}::before {
+          content: "#{$txSymbols_value}";
         }
     }
 }
@@ -183,4 +133,36 @@
 
 .txError{
     color: $statusError;
+}
+
+.txAbbreviatedB500,
+.txAbbreviated{
+    &::before{
+        position: absolute;
+        display: inline-block;
+        left: 7px;
+        text-indent: 0;
+    }
+    
+    @each $alphabet_letter upperCase in $alphabet_upperCase {
+      &.abbreviated_#{$alphabet_letter upperCase} {
+        &::before {
+          content: "#{$alphabet_letter upperCase}.";
+        }
+      }
+    }
+}
+        
+.txAbbreviated{
+    display: inline-block;
+    width: 2ch;
+    text-indent: -9999px;
+}
+
+@include beforeMQ500{
+    .txAbbreviatedB500{
+        display: inline-block;
+        width: 2ch;
+        text-indent: -9999px;
+    }
 }
