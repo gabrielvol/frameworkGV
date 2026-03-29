@@ -9,6 +9,6 @@
 
 ?>
 
-<ul class="nav_lang_ul unstyled displayFlex <?php /* // REF [33] */ echo $lang_class; ?>">
+<ul class="nav_lang_ul unstyled displayFlex <?php /* // REF [33] */ echo $gettext_class; ?>">
     <?php include('nav.lang.list.inc.php'); ?>
 </ul>

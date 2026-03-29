@@ -40,7 +40,9 @@ $page_noTrack           = (!empty($dir_env)) ? 1 : 0;
    Los archivos data.PAGEINT tambien deben ser cargados en `[/src/var/main.var.inc.php]` */
 // include('data.PAGEINT.var.inc.php');
 
-if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
+if(isset($gettext_lang)){
+    
+if($gettext_lang == 'en_GB'){
     $PAGEINT_title_PAGEID    = 'TituloPageID_GB';
 /*
     $PAGEINT_title_PAGEID    = 'TituloPageID_GB';
@@ -57,7 +59,7 @@ if(isset($gettext_idioma)){ if($gettext_idioma == 'en_GB'){
 */
 
 
-} elseif($gettext_idioma == 'xx_XX'){
+} elseif($gettext_lang == 'xx_XX'){
     $PAGEINT_title_PAGEID    = 'sinTraduccion';
 /*
     $PAGEINT_title_PAGEID    = 'sinTraduccion';

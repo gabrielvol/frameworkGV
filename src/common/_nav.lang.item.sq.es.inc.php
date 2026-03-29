@@ -3,6 +3,6 @@
         <span>
             ES
         </span>
-        <span class="visuallyHidden" lang="es"><?php echo $gettext_languageName_AR; ?></span>
+        <span class="visuallyHidden" lang="es"><?php echo $gettext_lang_name_AR; ?></span>
     </a>
 </li>

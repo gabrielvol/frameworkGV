@@ -23,7 +23,7 @@ include('act/nav.act.inc.php');
     
     
 /* // Data ------------------------------------------------------------------ */
-include('lang.var.inc.php');
+if (!isset($gettext_act)) { include('lang.var.inc.php'); }
 //include('date.var.inc.php');
 include('url.var.inc.php');
 // include('web.var.inc.php');

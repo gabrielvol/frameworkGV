@@ -14,43 +14,43 @@ Definición de directorios locale.
 
 
 
-$gettext_idioma = 'es_AR';
+$gettext_lang = 'es_AR';
 
 if (isset($_GET['gettext_idioma'])) {
     switch ($_GET["gettext_idioma"]) {
         case 1:
-            $gettext_idioma = 'es_AR';
+            $gettext_lang = 'es_AR';
             break;
 
         case 2:
-            $gettext_idioma = 'en_GB';
+            $gettext_lang = 'en_GB';
             break;
 
         case 3:
-            $gettext_idioma = 'it_IT';
+            $gettext_lang = 'it_IT';
             break;
 
         case 4:
-            $gettext_idioma = 'de_DE';
+            $gettext_lang = 'de_DE';
             break;
 
         case 5:
-            $gettext_idioma = 'fr_FR';
+            $gettext_lang = 'fr_FR';
             break;
 
         case 6:
-            $gettext_idioma = 'pt_BR';
+            $gettext_lang = 'pt_BR';
             break;
     }
 }
     
 /* // Define el idioma ------------------------------------------------------ */
-putenv("LANGUAGE=$gettext_idioma");
-putenv("LANG=$gettext_idioma");
-putenv("LC_ALL=$gettext_idioma");
-putenv("LC_LANG=$gettext_idioma");
-putenv("LC_LANGUAGE=$gettext_idioma");
-setlocale(LC_ALL, $gettext_idioma);
+putenv("LANGUAGE=$gettext_lang");
+putenv("LANG=$gettext_lang");
+putenv("LC_ALL=$gettext_lang");
+putenv("LC_LANG=$gettext_lang");
+putenv("LC_LANGUAGE=$gettext_lang");
+setlocale(LC_ALL, $gettext_lang);
     
 /* // Define la ubicación de los ficheros de traducción --------------------- */
 $locale_filename = "messages";

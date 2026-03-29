@@ -143,7 +143,6 @@ $font_families_serif_list_fallback:
 
 $georgia:   map.get($font_families_serif_map, georgia);
 $palatino:  map.get($font_families_serif_map, palatino);
-$serif:     map.get($font_families_serif_map, serif);
     
 
 /* // Monoespaciadas -------------------------------------------------------- */
@@ -184,6 +183,50 @@ $menlo:                     map.get($font_families_monospaced_map, menlo);
 $bitstreamVeraSansMono:     map.get($font_families_monospaced_map, bitstreamVeraSansMono);
 $courierNew:                map.get($font_families_monospaced_map, courierNew);
 $monospace:                 map.get($font_families_monospaced_map, monospace);
+
+
+/* // Chinese // REF [14a] -------------------------------------------------- */
+$font_families_chinese_SC_map:(
+    notoSansSC: "Noto Sans SC",
+    pingFangSC: "PingFang SC",
+    hiraginoSansGB: "Hiragino Sans GB",
+    microsoftYaHei: "Microsoft YaHei",
+    microsoftYaHeiUI: "Microsoft YaHei UI",
+    heitiSC: "Heiti SC",
+    arialUnicodeMS: "Arial Unicode MS",
+    sansSerif: sans-serif
+);
+    
+$font_families_chinese_SC_list: 
+    map.get($font_families_chinese_SC_map, notoSansSC),
+    map.get($font_families_chinese_SC_map, pingFangSC),
+    map.get($font_families_chinese_SC_map, hiraginoSansGB),
+    map.get($font_families_chinese_SC_map, microsoftYaHei),
+    map.get($font_families_chinese_SC_map, microsoftYaHeiUI),
+    map.get($font_families_chinese_SC_map, heitiSC),
+    map.get($font_families_chinese_SC_map, arialUnicodeMS),
+    map.get($font_families_chinese_SC_map, sansSerif)
+;
+    
+$font_families_chinese_SC_list_fallback:
+    map.get($font_families_chinese_SC_map, notoSansSC),
+    map.get($font_families_chinese_SC_map, pingFangSC),
+    map.get($font_families_chinese_SC_map, hiraginoSansGB),
+    map.get($font_families_chinese_SC_map, microsoftYaHei),
+    map.get($font_families_chinese_SC_map, microsoftYaHeiUI),
+    map.get($font_families_chinese_SC_map, heitiSC),
+    map.get($font_families_chinese_SC_map, arialUnicodeMS),
+    map.get($font_families_chinese_SC_map, sansSerif)
+;
+
+$notoSansSC:        map.get($font_families_chinese_SC_map, notoSansSC);
+$pingFangSC:        map.get($font_families_chinese_SC_map, pingFangSC);
+$hiraginoSansGB:    map.get($font_families_chinese_SC_map, hiraginoSansGB);
+$microsoftYaHei:    map.get($font_families_chinese_SC_map, microsoftYaHei);
+$microsoftYaHeiUI:  map.get($font_families_chinese_SC_map, microsoftYaHeiUI);
+$heitiSC:           map.get($font_families_chinese_SC_map, heitiSC);
+$arialUnicodeMS:    map.get($font_families_chinese_SC_map, arialUnicodeMS);
+
 
 /* // Font Sizes ------------------------------------------------------------ */
 $h1_list: 'h1, .heading1';

@@ -248,6 +248,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // Sans Serif ------------------------------------------------------------ */
 /* // Serif ----------------------------------------------------------------- */
 /* // Monoespaciadas -------------------------------------------------------- */
+/* // Chinese --------------------------------------------------------------- */
 /* // Font Sizes ------------------------------------------------------------ */
 /* * NombreDeProyecto * ========================================================
    Fonts Main Variables | Custom [/etc/css/custom/var/fonts_main_var.scss]
@@ -265,6 +266,7 @@ $classes_bg_bd_NO_act_AL:                       off; */
 /* // REF [01] Google fonts */
 /* // Espaciado y cuerpo de texto ------------------------------------------- */
 /* // REF [01] Google fonts */
+/* // Abbreviations / Symbols ----------------------------------------------- */
 /* // Headings -------------------------------------------------------------- */
 /* * NombreDeProyecto * ========================================================
    Font-face | Custom [/etc/css/custom/fontFace.scss]
@@ -536,6 +538,7 @@ $nav_lang_anchor_size_AT:       $nav_lang_ul_width_A768;
 /* // Referencias globales de nombres de variables y mixins ----------------- */
 /* // Global var sizes ------------------------------------------------------ */
 /* // Global var colours ---------------------------------------------------- */
+/* // Soft Separator  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Secondary Separator
    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -1425,13 +1428,13 @@ a, a:hover {
 /* // Text Selection -------------------------------------------------------- */
 ::-moz-selection {
   color: #000;
-  background-color: #8c8c8c;
+  background-color: #e6e6e6;
   text-shadow: none;
 }
 
 ::selection {
   color: #000;
-  background-color: #8c8c8c;
+  background-color: #e6e6e6;
   text-shadow: none;
 }
 
@@ -1601,18 +1604,17 @@ q::after {
   position: relative;
   display: inline-flex;
   width: 35px;
-  text-indent: -9999px;
   overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
 }
 .txSymbol::before {
   position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 30px;
-  text-indent: 0;
-  text-align: center;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }
 .txSymbol.symbol_plus::before {
   content: "+";
@@ -1627,27 +1629,6 @@ q::after {
   content: "3";
 }
 
-.txAbbreviated {
-  display: inline-block;
-  width: 2ch;
-  text-indent: -9999px;
-}
-.txAbbreviated::before {
-  position: absolute;
-  display: inline-block;
-  left: 7px;
-  text-indent: 0;
-}
-.txAbbreviated.abbreviated_A::before {
-  content: "A.";
-}
-.txAbbreviated.abbreviated_B::before {
-  content: "B.";
-}
-.txAbbreviated.abbreviated_C::before {
-  content: "C.";
-}
-
 .txOk {
   color: #339900;
 }
@@ -1656,6 +1637,135 @@ q::after {
   color: #eb1c24;
 }
 
+.txAbbreviatedB500::before,
+.txAbbreviated::before {
+  position: absolute;
+  display: inline-block;
+  left: 7px;
+  text-indent: 0;
+}
+.txAbbreviatedB500.abbreviated_A::before,
+.txAbbreviated.abbreviated_A::before {
+  content: "A.";
+}
+.txAbbreviatedB500.abbreviated_B::before,
+.txAbbreviated.abbreviated_B::before {
+  content: "B.";
+}
+.txAbbreviatedB500.abbreviated_C::before,
+.txAbbreviated.abbreviated_C::before {
+  content: "C.";
+}
+.txAbbreviatedB500.abbreviated_D::before,
+.txAbbreviated.abbreviated_D::before {
+  content: "D.";
+}
+.txAbbreviatedB500.abbreviated_E::before,
+.txAbbreviated.abbreviated_E::before {
+  content: "E.";
+}
+.txAbbreviatedB500.abbreviated_F::before,
+.txAbbreviated.abbreviated_F::before {
+  content: "F.";
+}
+.txAbbreviatedB500.abbreviated_G::before,
+.txAbbreviated.abbreviated_G::before {
+  content: "G.";
+}
+.txAbbreviatedB500.abbreviated_H::before,
+.txAbbreviated.abbreviated_H::before {
+  content: "H.";
+}
+.txAbbreviatedB500.abbreviated_I::before,
+.txAbbreviated.abbreviated_I::before {
+  content: "I.";
+}
+.txAbbreviatedB500.abbreviated_J::before,
+.txAbbreviated.abbreviated_J::before {
+  content: "J.";
+}
+.txAbbreviatedB500.abbreviated_K::before,
+.txAbbreviated.abbreviated_K::before {
+  content: "K.";
+}
+.txAbbreviatedB500.abbreviated_L::before,
+.txAbbreviated.abbreviated_L::before {
+  content: "L.";
+}
+.txAbbreviatedB500.abbreviated_M::before,
+.txAbbreviated.abbreviated_M::before {
+  content: "M.";
+}
+.txAbbreviatedB500.abbreviated_N::before,
+.txAbbreviated.abbreviated_N::before {
+  content: "N.";
+}
+.txAbbreviatedB500.abbreviated_Ñ::before,
+.txAbbreviated.abbreviated_Ñ::before {
+  content: "Ñ.";
+}
+.txAbbreviatedB500.abbreviated_O::before,
+.txAbbreviated.abbreviated_O::before {
+  content: "O.";
+}
+.txAbbreviatedB500.abbreviated_P::before,
+.txAbbreviated.abbreviated_P::before {
+  content: "P.";
+}
+.txAbbreviatedB500.abbreviated_Q::before,
+.txAbbreviated.abbreviated_Q::before {
+  content: "Q.";
+}
+.txAbbreviatedB500.abbreviated_R::before,
+.txAbbreviated.abbreviated_R::before {
+  content: "R.";
+}
+.txAbbreviatedB500.abbreviated_S::before,
+.txAbbreviated.abbreviated_S::before {
+  content: "S.";
+}
+.txAbbreviatedB500.abbreviated_T::before,
+.txAbbreviated.abbreviated_T::before {
+  content: "T.";
+}
+.txAbbreviatedB500.abbreviated_U::before,
+.txAbbreviated.abbreviated_U::before {
+  content: "U.";
+}
+.txAbbreviatedB500.abbreviated_V::before,
+.txAbbreviated.abbreviated_V::before {
+  content: "V.";
+}
+.txAbbreviatedB500.abbreviated_W::before,
+.txAbbreviated.abbreviated_W::before {
+  content: "W.";
+}
+.txAbbreviatedB500.abbreviated_X::before,
+.txAbbreviated.abbreviated_X::before {
+  content: "X.";
+}
+.txAbbreviatedB500.abbreviated_Y::before,
+.txAbbreviated.abbreviated_Y::before {
+  content: "Y.";
+}
+.txAbbreviatedB500.abbreviated_Z::before,
+.txAbbreviated.abbreviated_Z::before {
+  content: "Z.";
+}
+
+.txAbbreviated {
+  display: inline-block;
+  width: 2ch;
+  text-indent: -9999px;
+}
+
+@media (max-width: 500px) {
+  .txAbbreviatedB500 {
+    display: inline-block;
+    width: 2ch;
+    text-indent: -9999px;
+  }
+}
 /* * NombreDeProyecto * ========================================================
    Backgrounds Includes | Custom [/etc/css/custom/includes_backgrounds.scss]
    ========================================================================== */
@@ -4102,6 +4212,12 @@ button, button::before, button::after {
   }
 }
 
+@media (max-width: 350px) {
+  .mobileForm .label_comp .form_validation_span {
+    width: 270px !important;
+  }
+}
+
 input, select, textarea {
   caret-color: #000;
 }
@@ -4528,9 +4644,15 @@ fieldset > legend {
   background-color: #339900;
   color: #fff;
 }
-.form_status.form_status_captcha {
+
+.form_status.form_status_captcha,
+code.form_status_captcha {
+  padding: 10px;
+  max-width: 100%;
   background-color: #000;
   color: #fff;
+  overflow: auto;
+  line-height: 2em;
 }
 
 .form_validation_div.form_validation_div_invalid {
@@ -4702,6 +4824,18 @@ form fieldset.form_validation_input_invalid legend,
 form fieldset.form_validation_input_invalid .form_validation_span {
   color: #eb1c24;
 }
+form fieldset:has(input[type=radio]).form_validation_input_invalid {
+  border: 2px solid #eb1c24 !important;
+}
+form fieldset:has(input[type=radio]).form_validation_input_invalid legend.form_label_name {
+  width: auto !important;
+  background-image: url("/stage/img/form_alert.svg");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: auto 60%;
+  padding-right: 6px;
+  padding-left: 40px;
+}
 form select.form_validation_input_invalid {
   background-position: right 25px center;
 }
@@ -4798,15 +4932,25 @@ form label.form_required .form_label_name::after {
   height: 100%;
   white-space: pre;
 }
-form label.label_comp_small, form label.label_comp_big {
+form label .form_label_msg_sugg {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+form label.label_comp {
   float: left !important;
   clear: none !important;
   margin: -5px auto 0 !important;
 }
-form label.label_comp_small .form_label_name,
-form label.label_comp_small input, form label.label_comp_big .form_label_name,
-form label.label_comp_big input {
+form label.label_comp .form_label_name,
+form label.label_comp .form_label_msg_sugg,
+form label.label_comp input {
   width: 100% !important;
+}
+form label.label_comp .form_validation_span_active {
+  max-width: 100% !important;
+  white-space: nowrap;
 }
 form label.label_comp_big {
   margin-left: 10px !important;
@@ -4821,29 +4965,31 @@ form label.label_comp_big + .form_validation_span {
   }
 }
 @media (max-width: 500px) {
+  form label.label_comp .form_label_name,
+  form label .form_label_msg_sugg {
+    font-size: 0.7rem;
+  }
   form label.label_comp_small {
     width: 80px !important;
-  }
-  form label.label_comp_small .form_label_name {
-    font-size: 0.7rem;
   }
   form label.label_comp_big {
     width: calc(100% - 80px - 10px) !important;
   }
 }
 @media (min-width: 501px) {
+  form label.label_comp .form_label_name,
+  form label .form_label_msg_sugg {
+    font-size: 0.75rem;
+  }
   form label.label_comp_small {
     width: 115px !important;
-  }
-  form label.label_comp_small .form_label_name {
-    font-size: 0.75rem;
   }
   form label.label_comp_big {
     width: calc(100% - 115px - 10px) !important;
   }
 }
 @media (max-width: 767px) {
-  form label.label_comp_big .form_label_name, form label.label_comp_small .form_label_name {
+  form label.label_comp .form_label_name {
     height: calc(30px - 10px);
     line-height: calc(30px - 10px);
   }
@@ -4988,7 +5134,6 @@ form .form_label_msg_sugg {
 }
 form .form_label_msg_sugg {
   display: block;
-  padding-top: 2px;
   padding-left: 10px;
   color: #000;
   font-family: Arial, Arial, Roboto, "-apple-system", ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, "Helvetica Neue", "Segoe UI", Verdana, Tahoma, "Lucida Grande", "Trebuchet MS", sans-serif;
@@ -5002,6 +5147,9 @@ form .form_label_msg_sugg a, form .form_label_msg_sugg a:visited, form .form_lab
 }
 form .form_label_msg_sugg a:focus, form .form_label_msg_sugg a:hover {
   color: rgb(25.5, 25.5, 25.5);
+}
+form .form_label_msg_sugg + .form_validation_span {
+  margin-top: 6px;
 }
 form .data_password_label .form_label_msg_sugg {
   /* // REF [52] Form sugg floated */
@@ -5019,16 +5167,22 @@ form .form_validation_span {
 form .form_validation_span.form_validation_span_active {
   display: block;
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   form .form_validation_span,
   form .form_label_msg_sugg {
     font-size: 0.7rem !important;
   }
+  form .form_label_msg_sugg {
+    padding-top: 2px;
+  }
 }
-@media (min-width: 451px) {
+@media (min-width: 501px) {
   form .form_validation_span,
   form .form_label_msg_sugg {
     font-size: 0.8rem !important;
+  }
+  form .form_label_msg_sugg {
+    padding-top: 4px;
   }
 }
 @media (max-width: 600px) {

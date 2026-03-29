@@ -22,14 +22,14 @@
         <a href="<?php echo $social_facebook_url; ?>" class="hover_grow_L_ani" target="_blank">
             <?php echo _("Seguinos en Facebook"); ?>.
             <span class="visuallyHidden">Facebook:</span>
-            <img src="<?php echo $dir_env; ?>/img/social_fb.svg" alt="<?php if($gettext_idioma == 'pt_BR') { echo 'Ir para o nosso perfil no Facebook'; } elseif($gettext_idioma == 'en_GB') { echo 'Go to our Facebook profile'; } else { echo 'Ir a nuestro perfil en Facebook'; } ?>.">
+            <img src="<?php echo $dir_env; ?>/img/social_fb.svg" alt="<?php if(isset($gettext_lang)){ if($gettext_lang == 'pt_BR') { echo 'Ir para o nosso perfil no Facebook'; } elseif($gettext_lang == 'en_GB') { echo 'Go to our Facebook profile'; } else { echo 'Ir a nuestro perfil en Facebook'; } } ?>.">
         </a>
     </li>
     <li class="social_ig">
         <a href="<?php echo $social_instagram_url; ?>" class="hover_grow_L_ani" target="_blank">
             <?php echo _("Seguinos en Instagram"); ?>.
             <span class="visuallyHidden">Instagram:</span>
-            <img src="<?php echo $dir_env; ?>/img/social_ig.svg" alt="<?php if($gettext_idioma == 'pt_BR') { echo 'Ir para o nosso perfil no Instagram'; } elseif($gettext_idioma == 'en_GB') { echo 'Go to our Instagram profile'; } else { echo 'Ir a nuestro perfil en Instagram'; } ?>.">
+            <img src="<?php echo $dir_env; ?>/img/social_ig.svg" alt="<?php if(isset($gettext_lang)){ if($gettext_lang == 'pt_BR') { echo 'Ir para o nosso perfil no Instagram'; } elseif($gettext_lang == 'en_GB') { echo 'Go to our Instagram profile'; } else { echo 'Ir a nuestro perfil en Instagram'; } } ?>.">
         </a>
     </li>    
     <li class="social_li">

@@ -1,9 +1,9 @@
-<nav id="nav" class="nav_main" aria-label="<?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Site main menu.<?php else: ?>Men&uacute; principal del sitio.<?php endif; ?>">
+<nav id="nav" class="nav_main" aria-label="<?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>Site main menu.<?php else: ?>Men&uacute; principal del sitio.<?php endif; ?>">
     
     <button type="button" class="button_hamb button_hamb_open" aria-pressed="false">
-        <span class="visuallyHidden"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Open<?php else: ?>Abrir<?php endif; ?></span> <?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Menu<?php else: ?>Men&uacute;<?php endif; ?></button>
+        <span class="visuallyHidden"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>Open<?php else: ?>Abrir<?php endif; ?></span> <?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>Menu<?php else: ?>Men&uacute;<?php endif; ?></button>
     
-    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Close<?php else: ?>Cerrar<?php endif; ?> <span class="visuallyHidden"><?php if(isset($gettext_idioma) && $gettext_idioma == 'en_GB'): ?>Menu<?php else: ?>Men&uacute;<?php endif; ?></span>
+    <button type="button" class="button_hamb button_hamb_close" aria-pressed="false"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>Close<?php else: ?>Cerrar<?php endif; ?> <span class="visuallyHidden"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>Menu<?php else: ?>Men&uacute;<?php endif; ?></span>
     </button>
     
     <?php
@@ -42,10 +42,10 @@
                 include('nav.main.list.inc.php');
                 
                 /* // REF [37]
-                if($gettext_idioma == 'en_GB'):
+                if($gettext_lang == 'en_GB'):
                 include ('nav.lang.item.sq.es.inc.php');
 
-                endif; if($gettext_idioma == 'es_AR'):        
+                endif; if($gettext_lang == 'es_AR'):        
                 include ('nav.lang.item.sq.en.inc.php');
 
                 endif;

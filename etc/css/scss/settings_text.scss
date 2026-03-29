@@ -62,6 +62,17 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, butto
     font-weight: $ftWeight_regular_global;
     font-size: $ftSize_global;
     line-height: $lineHeight_global;
+
+    &[lang|="zh"] {
+         /* // REF [14a] */
+        font-family: $ftFamily_chinese_global;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.7;
+        letter-spacing: 0.02em;
+        word-break: normal;
+        overflow-wrap: anywhere;  
+    }
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
     font-style: normal;

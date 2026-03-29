@@ -18,7 +18,7 @@
 <body id="body" class="body_page_error">
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
-        <h1><?php if(isset($gettext_idioma)){ if($gettext_idioma == 'de_DE') { echo 'SinTraduccion'; } elseif($gettext_idioma == 'en_GB') { echo 'Page Not Found'; } elseif($gettext_idioma == 'pt_BR') { echo 'SinTraduccion'; } else { echo 'P&aacute;gina no encontrada'; } } ?>.</h1>
+        <h1><?php if(isset($gettext_lang)){ if($gettext_lang == 'de_DE') { echo 'SinTraduccion'; } elseif($gettext_lang == 'en_GB') { echo 'Page Not Found'; } elseif($gettext_lang == 'pt_BR') { echo 'SinTraduccion'; } else { echo 'P&aacute;gina no encontrada'; } } ?>.</h1>
         <p class="errorType">Error 400.</p>
         <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.error.p.inc.php'); ?>
     </div>

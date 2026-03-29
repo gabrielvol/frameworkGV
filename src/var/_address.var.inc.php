@@ -8,14 +8,14 @@
 */
 
 /* // Address Principal // REF [13] ----------------------------------------- */
-if(isset($gettext_idioma)){
-    if($gettext_idioma == 'en_GB'){
+if(isset($gettext_lang)){
+    if($gettext_lang == 'en_GB'){
         $site_address_ADDRESSA_a   = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
         $site_address_ADDRESSA_b   = 'bbbbbbbbbbbbbbbbbbbbbbbbbb Autonomous City of Buenos Aires';
         $site_address_ADDRESSA     = $site_address_ADDRESSA_a . ' ' . $site_address_ADDRESSA_b;  
 
 
-    } elseif($gettext_idioma == 'xx_XX'){
+    } elseif($gettext_lang == 'xx_XX'){
     //   $site_address_ADDRESSA_a               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';     
     //   $site_address_ADDRESSA_b               = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';
     //   $site_address_ADDRESSA                 = $site_address_ADDRESSA_a . ' ' . $site_address_ADDRESSA_b;

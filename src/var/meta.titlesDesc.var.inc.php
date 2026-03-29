@@ -28,10 +28,10 @@
  * que modificar la variable `$page_desc` en el archivo de la pagina
 */
 
-if(isset($gettext_idioma)){
+if(isset($gettext_lang)){
 
 /* // en_GB ----------------------------------------------------------------- */
-if($gettext_idioma == 'en_GB'){
+if($gettext_lang == 'en_GB'){
     $site_name_full         = 'SiteNameFull';
     $site_name_title        = 'SiteNameTitle';
     $site_name_form        = 'SiteNameShort'; // . $country_suffix;
@@ -71,7 +71,7 @@ if($gettext_idioma == 'en_GB'){
 
 
 /* // xx_XX ----------------------------------------------------------------- */
-} elseif($gettext_idioma == 'xx_XX'){
+} elseif($gettext_lang == 'xx_XX'){
     $site_name_full          = 'SiteNameFull';
     $site_name_title         = 'SiteNameTitle';
     $site_name_form         = 'SiteNameShort'; // . $country_suffix;

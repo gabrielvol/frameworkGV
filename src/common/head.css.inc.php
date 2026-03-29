@@ -23,7 +23,7 @@
 <link href="<?php echo $dir_env; ?>/css/uikit.min.css" rel="stylesheet"> */
 
 
-if(isset($gettext_idioma) && $gettext_idioma == 'zh_CN'): /* // REF [14a] Idioma Chino ZH, MingLiu font */ ?>
+if(isset($gettext_lang) && $gettext_lang == 'zh_CN'): /* // REF [14a] Idioma Chino ZH, MingLiu font */ ?>
 <link href="<?php echo $dir_env; ?>/css/styles_zh.css" rel="stylesheet">
 
 <?php else: ?>

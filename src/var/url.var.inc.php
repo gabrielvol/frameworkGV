@@ -80,27 +80,27 @@ $url_main_hs_HOME             = $url_home . $hash_main;
 // $url-SECCION-hs-PAGINA          = $url_PAGINA . $hash-SECCION;
 
 /*___ urls con variable de idioma al final _
-    $url_root           = $dir_env . '/' . $gettext_idioma_url;
-    $url_index          = $dir_env . '/index.php' . $gettext_idioma_url;
-    //$url_home         = $dir_env . '/home.php' . $gettext_idioma_url;
-    $url_contacto       = $dir_env . '/contacto.php' . $gettext_idioma_url;
-    //$url_gracias        = $dir_env . '/gracias.php' . $gettext_idioma_url;
-    //$url_construccion   = $dir_env . '/construccion.php' . $gettext_idioma_url;
-    //$url_copyright      = $dir_env . '/legal/copyright.php' . $gettext_idioma_url;
+    $url_root           = $dir_env . '/' . $gettext_lang_url;
+    $url_index          = $dir_env . '/index.php' . $gettext_lang_url;
+    //$url_home         = $dir_env . '/home.php' . $gettext_lang_url;
+    $url_contacto       = $dir_env . '/contacto.php' . $gettext_lang_url;
+    //$url_gracias        = $dir_env . '/gracias.php' . $gettext_lang_url;
+    //$url_construccion   = $dir_env . '/construccion.php' . $gettext_lang_url;
+    //$url_copyright      = $dir_env . '/legal/copyright.php' . $gettext_lang_url;
     $url_logo           = $url_root;
 
-    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
-    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
-    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_idioma_url;
+    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_lang_url;
+    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_lang_url;
+    // $url_PAGINA         = $dir_env . '/pagina.php' . $gettext_lang_url;
 */    
 
 /*___ urls para hashes __________________
-    $url_main_hs        = $dir_env . '/' . $gettext_idioma_url . $hash_main;
-    //$url_inicio_hs      = $dir_env . '/' . $gettext_idioma_url . $hash_inicio;
-    //$url_contacto_hs    = $dir_env . '/' . $gettext_idioma_url . $hash_contacto;
-    // $url_SECCION_hs     = $dir_env . '/' . $gettext_idioma_url . $hash_SECCION;
-    // $url_SECCION_hs     = $dir_env . '/' . $gettext_idioma_url . $hash_SECCION;
-    // $url_SECCION_hs     = $dir_env . '/' . $gettext_idioma_url . $hash_SECCION;
+    $url_main_hs        = $dir_env . '/' . $gettext_lang_url . $hash_main;
+    //$url_inicio_hs      = $dir_env . '/' . $gettext_lang_url . $hash_inicio;
+    //$url_contacto_hs    = $dir_env . '/' . $gettext_lang_url . $hash_contacto;
+    // $url_SECCION_hs     = $dir_env . '/' . $gettext_lang_url . $hash_SECCION;
+    // $url_SECCION_hs     = $dir_env . '/' . $gettext_lang_url . $hash_SECCION;
+    // $url_SECCION_hs     = $dir_env . '/' . $gettext_lang_url . $hash_SECCION;
 
     $url_main_hs_HOME     = $url_home . $url_main_hs;
     //$url_inicio_hs_HOME   = $url_home . $url_inicio_hs;

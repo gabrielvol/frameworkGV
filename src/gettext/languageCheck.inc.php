@@ -7,7 +7,7 @@
 // REF [14] Gettext Locales
 // REF [14a] Idioma Chino ZH, MingLiu font
 //
-// Variables $l, $gettext_idioma y $gettext_idioma_url
+// Variables $l, $gettext_lang y $gettext_lang_url
 // Asignación de idioma
 // 
 // #php #gettext
@@ -15,83 +15,125 @@
 
 
 $l = $_GET['l'] ?? null;
+$gettext_act = 1;
 
 if($l === 'pt') {
-    $gettext_idioma     = 'pt_BR';
-    $gettext_idioma_url = '?l=pt';
-    $lang_attr          = 'pt';
-    $lang_class         = 'lang_PT';    
+    $site_lang_code             = 'pt'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'BR'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
+
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;  
     
-    $gettext_switchMsg_BR       = "Navegar no site em Portugu&ecirc;s";
-    $gettext_languageName_BR    = "Portugu&ecirc;s";
+    $gettext_lang_msg_switch_BR       = "Navegar no site em Portugu&ecirc;s";
+    $gettext_lang_name_BR    = "Portugu&ecirc;s";
+    
+    
 
 } elseif($l === 'en'){
-    $gettext_idioma     = 'en_GB';
-//    $gettext_idioma     = 'en_US';
+    $site_lang_code             = 'en'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'GB'; // REF [27]
+    //$site_lang_code_country     = 'US'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
+
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;
     
-    $gettext_idioma_url = '?l=en';
-    $lang_attr          = 'en';
-    $lang_class         = 'lang_EN';
+    $gettext_lang_msg_switch_US       = "Switch to English version";
+    $gettext_lang_name_US    = "English";
     
-    $gettext_switchMsg_US       = "Switch to English version";
-    $gettext_languageName_US    = "English";
+    $gettext_lang_msg_switch_GB       = "Switch to English version";
+    $gettext_lang_name_GB    = "English";
     
-    $gettext_switchMsg_GB       = "Switch to English version";
-    $gettext_languageName_GB    = "English";
+    
 
 } elseif($l === 'de') {
-    $gettext_idioma     = 'de_DE';
-    $gettext_idioma_url = '?l=de';
-    $lang_attr          = 'de';
-    $lang_class         = 'lang_DE';
+    $site_lang_code             = 'de'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'DE'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
+
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;
     
-    $gettext_switchMsg_DE       = "Durchsuchen Sie die Website in deutscher Sprache";
-    $gettext_languageName_DE    = "Deustche";
+    $gettext_lang_msg_switch_DE       = "Durchsuchen Sie die Website in deutscher Sprache";
+    $gettext_lang_name_DE    = "Deustche";
+    
+    $gettext_lang_msg_switch_DE       = "Durchsuchen Sie die Website in deutscher Sprache";
+    $gettext_lang_name_DE    = "Deustche";
+    
+    
 
 } elseif($l === 'fr') {
-    $gettext_idioma     = 'fr_FR';
-    $gettext_idioma_url = '?l=fr';
-    $lang_attr          = 'fr';
-    $lang_class         = 'lang_FR';
+    $site_lang_code             = 'fr'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'FR'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
+
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;
     
-    $gettext_switchMsg_FR       = "Parcourir le site en langue fran&ccedil;aise";
-    $gettext_languageName_FR    = "Fran&ccedil;aise";
+    $gettext_lang_msg_switch_FR       = "Parcourir le site en langue fran&ccedil;aise";
+    $gettext_lang_name_FR    = "Fran&ccedil;aise";
+    
+    
 
 } elseif($l === 'it') {
-    $gettext_idioma     = 'it_IT';
-    $gettext_idioma_url = '?l=it';
-    $lang_attr          = 'it';
-    $lang_class         = 'lang_IT';
+    $site_lang_code             = 'it'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'IT'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
+
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;
     
-    $gettext_switchMsg_IT       = "";
-    $gettext_languageName_IT    = "";
+    $gettext_lang_msg_switch_IT       = "";
+    $gettext_lang_name_IT    = "";
+    
+    
 
 } elseif ($l === 'zh') {
-    $gettext_idioma     = 'zh_CN';
-    $gettext_idioma_url = '?l=zh';
-    $lang_attr          = 'zh-CN';
-    $lang_class         = 'lang_ZH';
-    
-    $gettext_switchMsg_ZH       = "";
-    $gettext_languageName_ZH    = "";
+    $site_lang_code             = 'zh'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'CN'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
 
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;
+    
+    $gettext_lang_msg_switch_ZH       = "浏览网站的中文版本。";
+    $gettext_lang_name_ZH    = "中文";
+
+    
+    
 } else {
-    $gettext_idioma     = 'es_AR';
-//    $gettext_idioma     = 'es_ES';
-//    $gettext_idioma     = 'es_UY';
+    $site_lang_code             = 'es'; // REF [13] // REF [27]
+    $site_lang_code_country     = 'AR'; // REF [27]
+    //$site_lang_code_country     = 'ES'; // REF [27]
+    //$site_lang_code_country     = 'UY'; // REF [27]
+    $site_lang_locale           = $site_lang_code .'_'. $site_lang_code_country;
+    $site_lang_HTML_attr        = $site_lang_code .'-'. $site_lang_code_country; // REF [28]
+
+    $gettext_lang             = $site_lang_locale;
+    $gettext_lang_url         = '?l=' . $site_lang_code;
+    $gettext_class            = 'lang_' . $site_lang_code_country;
     
-    $gettext_idioma_url = '?l=es';
-    $lang_attr          = 'es';
-    $lang_class         = 'lang_ES';
+    $gettext_lang_msg_switch_AR       = "Naveg&aacute; el sitio en idioma castellano";
+    $gettext_lang_name_AR    = "Castellano";
     
-    $gettext_switchMsg_AR       = "Naveg&aacute; el sitio en idioma castellano";
-    $gettext_languageName_AR    = "Castellano";
+    $gettext_lang_msg_switch_ES       = "Navegar el sitio en idioma espa&ntilde;ol";
+    $gettext_lang_name_ES    = "Espa&ntilde;ol";
     
-    $gettext_switchMsg_ES       = "Navegar el sitio en idioma espa&ntilde;ol";
-    $gettext_languageName_ES    = "Espa&ntilde;ol";
-    
-    $gettext_switchMsg_UY       = "Naveg&aacute; el sitio en idioma castellano";
-    $gettext_languageName_UY    = "Castellano";
+    $gettext_lang_msg_switch_UY       = "Naveg&aacute; el sitio en idioma castellano";
+    $gettext_lang_name_UY    = "Castellano";
 }
 
 ?>
