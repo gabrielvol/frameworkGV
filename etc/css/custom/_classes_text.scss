@@ -144,10 +144,10 @@
         text-indent: 0;
     }
     
-    @each $alphabet_letter upperCase in $alphabet_upperCase {
-      &.abbreviated_#{$alphabet_letter upperCase} {
+    @each $alphabet_letter_upperCase in $alphabet_upperCase {
+      &.abbreviated_#{$alphabet_letter_upperCase} {
         &::before {
-          content: "#{$alphabet_letter upperCase}.";
+          content: "#{$alphabet_letter_upperCase}.";
         }
       }
     }
