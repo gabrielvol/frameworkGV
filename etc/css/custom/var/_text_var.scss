@@ -83,6 +83,15 @@ $ftSize_paragraph_A768:     1rem;
 $ftSize_paragraph_A1024:    $ftSize_paragraph_A768;
 $ftSize_paragraph_A1200:    $ftSize_paragraph_A1024;
 
+/* // REF [14a] */
+$ftSize_global_zhCN:             1.2rem;
+$ftSize_paragraph_zhCN_B350:     1rem;
+$ftSize_paragraph_zhCN_A350:     1.1rem;
+$ftSize_paragraph_zhCN_A500:     1.14rem;
+$ftSize_paragraph_zhCN_A768:     1.2rem;
+$ftSize_paragraph_zhCN_A1024:    $ftSize_paragraph_zhCN_A768;
+$ftSize_paragraph_zhCN_A1200:    $ftSize_paragraph_zhCN_A1024;
+
 $txMargin_TRBL_global:      0;
 $txMargin_T_sibling:        0.8em;
 $txMargin_TRBL_sibling:     $txMargin_T_sibling 0 0;
@@ -154,4 +163,59 @@ $headings_sizes_map_A1200:(
     $h4_list: 1.8rem,
     $h5_list: 1.6rem,
     $h6_list: 1.4rem
+);
+
+/* // REF [14a] */
+$headings_sizes_map_zhCN_B350:(
+    $h1_list_zhCN: 1.6rem,
+    $h2_list_zhCN: 1.5rem,
+    $h3_list_zhCN: 1.4rem,
+    $h4_list_zhCN: 1.3rem,
+    $h5_list_zhCN: 1.3rem,
+    $h6_list_zhCN: 1.3rem
+);
+
+$headings_sizes_map_zhCN_A350:(
+    $h1_list_zhCN: 1.6rem,
+    $h2_list_zhCN: 1.5rem,
+    $h3_list_zhCN: 1.4rem,
+    $h4_list_zhCN: 1.3rem,
+    $h5_list_zhCN: 1.3rem,
+    $h6_list_zhCN: 1.3rem
+);
+
+$headings_sizes_map_zhCN_A500:(
+    $h1_list_zhCN: 1.6rem,
+    $h2_list_zhCN: 1.5rem,
+    $h3_list_zhCN: 1.4rem,
+    $h4_list_zhCN: 1.3rem,
+    $h5_list_zhCN: 1.3rem,
+    $h6_list_zhCN: 1.3rem
+);
+
+$headings_sizes_map_zhCN_A768:(
+    $h1_list_zhCN: 1.6rem,
+    $h2_list_zhCN: 1.5rem,
+    $h3_list_zhCN: 1.4rem,
+    $h4_list_zhCN: 1.3rem,
+    $h5_list_zhCN: 1.3rem,
+    $h6_list_zhCN: 1.3rem
+);
+
+$headings_sizes_map_zhCN_A1024:(
+    $h1_list_zhCN: 2.4rem,
+    $h2_list_zhCN: 2.2rem,
+    $h3_list_zhCN: 2rem,
+    $h4_list_zhCN: 1.8rem,
+    $h5_list_zhCN: 1.6rem,
+    $h6_list_zhCN: 1.4rem
+);
+
+$headings_sizes_map_zhCN_A1200:(
+    $h1_list_zhCN: 2.4rem,
+    $h2_list_zhCN: 2.2rem,
+    $h3_list_zhCN: 2rem,
+    $h4_list_zhCN: 1.8rem,
+    $h5_list_zhCN: 1.6rem,
+    $h6_list_zhCN: 1.4rem
 );

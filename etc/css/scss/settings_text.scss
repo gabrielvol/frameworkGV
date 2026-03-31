@@ -64,14 +64,14 @@ h1, h2, h3, h4, h5, h6, p, b, strong, i, em, cite, dfn, dl, dd, dt, a, li, butto
     line-height: $lineHeight_global;
 
     &[lang|="zh"] {
-         /* // REF [14a] */
-        font-family: $ftFamily_chinese_global;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.7;
-        letter-spacing: 0.02em;
-        word-break: normal;
-        overflow-wrap: anywhere;  
+        /* // REF [14a] */
+        font-family: $ftFamily_chinese_global!important;
+        font-weight: 400!important;
+        font-size: $ftSize_global_zhCN;
+        /* line-height: 1.7!important; */
+        letter-spacing: 0.02em!important;
+        word-break: normal!important;
+        overflow-wrap: anywhere!important;  
     }
 }
 h1, h2, h3, h4, h5, h6, p, b, strong, em, cite, dfn, dl, dd, dt, a, li, button, label, input, select, textarea, blockquote, table{
@@ -97,21 +97,51 @@ h1, h2, h3, h4, h5, h6{
 p, a, li, dd, dt, .pSize{
     @include beforeMQ350{
         font-size: $ftSize_paragraph_B350;
+
+        &[lang|="zh"] {
+            /* // REF [14a] */
+            font-size: $ftSize_paragraph_B768;
+        }
     }
     @include afterMQ350{
         font-size: $ftSize_paragraph_A350;
+
+        &[lang|="zh"] {
+            /* // REF [14a] */
+            font-size: $ftSize_paragraph_zhCN_A350;
+        }
     }
     @include afterMQ500{
         font-size: $ftSize_paragraph_A500;
+
+        &[lang|="zh"] {
+            /* // REF [14a] */
+            font-size: $ftSize_paragraph_zhCN_A500;
+        }
     }
     @include afterMQ768{
         font-size: $ftSize_paragraph_A768;
+
+        &[lang|="zh"] {
+            /* // REF [14a] */
+            font-size: $ftSize_paragraph_zhCN_A768;
+        }
     }
     @include afterMQ1024{
         font-size: $ftSize_paragraph_A1024;
+
+        &[lang|="zh"] {
+            /* // REF [14a] */
+            font-size: $ftSize_paragraph_zhCN_A1024;
+        }
     }
     @include afterMQ1200{
         font-size: $ftSize_paragraph_A1200;
+
+        &[lang|="zh"] {
+            /* // REF [14a] */
+            font-size: $ftSize_paragraph_zhCN_A1200;
+        }
     }
 }
 p, dl, legend{
@@ -177,21 +207,27 @@ a{
 
 @include beforeMQ350{
     @include fontCustomHeadingsSizesGeneratorB350;
+    @include fontCustomHeadingsSizesGeneratorB350_zhCN; /* // REF [14a] */
 }
 @include afterMQ350{
     @include fontCustomHeadingsSizesGeneratorA350; 
+    @include fontCustomHeadingsSizesGeneratorA350_zhCN; /* // REF [14a] */ 
 }
 @include afterMQ500{
     @include fontCustomHeadingsSizesGeneratorA500; 
+    @include fontCustomHeadingsSizesGeneratorA500_zhCN; /* // REF [14a] */ 
 }
 @include afterMQ768{
-    @include fontCustomHeadingsSizesGeneratorA768;   
+    @include fontCustomHeadingsSizesGeneratorA768;  
+    @include fontCustomHeadingsSizesGeneratorA768_zhCN; /* // REF [14a] */   
 }
 @include afterMQ1024{
     @include fontCustomHeadingsSizesGeneratorA1024;
+    @include fontCustomHeadingsSizesGeneratorA1024_zhCN; /* // REF [14a] */
 }
 @include afterMQ1200{
     @include fontCustomHeadingsSizesGeneratorA1200;
+    @include fontCustomHeadingsSizesGeneratorA1200_zhCN; /* // REF [14a] */
 }
 
 /* // Colour classes -------------------------------------------------------- */

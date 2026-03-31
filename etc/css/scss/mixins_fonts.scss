@@ -46,9 +46,6 @@
 
 
 
-@use "sass:color";
-@use "sass:map";
-
 @use "../custom/var/env_var" as *;
 
 @use "../custom/var/text_var" as *;
@@ -99,5 +96,37 @@
 @mixin fontCustomHeadingsSizesGeneratorA1200{
     @each $fontCustomHeadingsSizesGeneratorA1200MX_headingsClassName, $fontCustomHeadingsSizesGeneratorA1200MX_fontCustomSizeValues in $headings_sizes_map_A1200 {
         #{$fontCustomHeadingsSizesGeneratorA1200MX_headingsClassName}{font-size: $fontCustomHeadingsSizesGeneratorA1200MX_fontCustomSizeValues;}
+    }
+}
+
+/* // REF [14a] */
+@mixin fontCustomHeadingsSizesGeneratorB350_zhCN{
+    @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName_zhCN, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues_zhCN in $headings_sizes_map_zhCN_B350 {
+        #{$fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName_zhCN}{font-size: $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues_zhCN;}
+    }
+}
+@mixin fontCustomHeadingsSizesGeneratorA350_zhCN{
+    @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName_zhCN, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues_zhCN in $headings_sizes_map_zhCN_A350 {
+        #{$fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName_zhCN}{font-size: $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues_zhCN;}
+    }
+}
+@mixin fontCustomHeadingsSizesGeneratorA500_zhCN{
+    @each $fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName_zhCN, $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues_zhCN in $headings_sizes_map_zhCN_A500 {
+        #{$fontCustomHeadingsSizesGeneratorMobileMX_headingsClassName_zhCN}{font-size: $fontCustomHeadingsSizesGeneratorMobileMX_fontCustomSizeValues_zhCN;}
+    }
+}
+@mixin fontCustomHeadingsSizesGeneratorA768_zhCN{
+    @each $fontCustomHeadingsSizesGeneratorA768MX_headingsClassName_zhCN, $fontCustomHeadingsSizesGeneratorA768MX_fontCustomSizeValues_zhCN in $headings_sizes_map_zhCN_A768 {
+        #{$fontCustomHeadingsSizesGeneratorA768MX_headingsClassName_zhCN}{font-size: $fontCustomHeadingsSizesGeneratorA768MX_fontCustomSizeValues_zhCN;}
+    }
+}
+@mixin fontCustomHeadingsSizesGeneratorA1024_zhCN{
+    @each $fontCustomHeadingsSizesGeneratorA1200MX_headingsClassName_zhCN, $fontCustomHeadingsSizesGeneratorA1200MX_fontCustomSizeValues_zhCN in $headings_sizes_map_zhCN_A1024 {
+        #{$fontCustomHeadingsSizesGeneratorA1200MX_headingsClassName_zhCN}{font-size: $fontCustomHeadingsSizesGeneratorA1200MX_fontCustomSizeValues_zhCN;}
+    }
+}
+@mixin fontCustomHeadingsSizesGeneratorA1200_zhCN{
+    @each $fontCustomHeadingsSizesGeneratorA1200MX_headingsClassName_zhCN, $fontCustomHeadingsSizesGeneratorA1200MX_fontCustomSizeValues_zhCN in $headings_sizes_map_zhCN_A1200 {
+        #{$fontCustomHeadingsSizesGeneratorA1200MX_headingsClassName_zhCN}{font-size: $fontCustomHeadingsSizesGeneratorA1200MX_fontCustomSizeValues_zhCN;}
     }
 }
