@@ -1,6 +1,6 @@
-<p><?php echo _("Puede continuar navegando el sitio yendo a la"); ?> <a <?php echo $href_root; ?> ><?php echo _("p&aacute;gina inicial del sitio"); ?></a>, <?php echo _("o a nuestra"); ?> <a <?php echo $href_contacto; ?>><?php echo _("p&aacute;gina de contacto"); ?></a>.</p>
+<p lang="<?php echo $site_lang_HTML_attr; ?>"><?php echo _("Puede continuar navegando el sitio yendo a la"); ?> <a <?php echo $href_root; ?> ><?php echo _("p&aacute;gina inicial del sitio"); ?></a>, <?php echo _("o a nuestra"); ?> <a <?php echo $href_contacto; ?>><?php echo _("p&aacute;gina de contacto"); ?></a>.</p>
 
-<p><?php if(!empty($gettext_lang)){ if($gettext_lang == 'de_DE'): ?>
+<p lang="<?php echo $site_lang_HTML_attr; ?>"><?php if(!empty($gettext_lang)){ if($gettext_lang == 'de_DE'): ?>
         SinTraduccion
     <?php elseif($gettext_lang == 'en_GB'): ?>
         You can continue browsing this site by going to the

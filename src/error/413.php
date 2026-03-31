@@ -18,8 +18,8 @@
 <body id="body" class="body_page_error">
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/header.inc.php'); ?>
     <div id="main" <?php echo $classes_main; ?> role="main">
-        <h1><?php if(isset($gettext_lang)){ if($gettext_lang == 'de_DE') { echo 'SinTraduccion'; } elseif($gettext_lang == 'en_GB') { echo 'Page Not Found'; } elseif($gettext_lang == 'pt_BR') { echo 'SinTraduccion'; } else { echo 'P&aacute;gina no encontrada'; } } ?>.</h1>
-        <p class="errorType">Error 413.</p>
+        <h1 lang="<?php echo $site_lang_HTML_attr; ?>"><?php if(isset($gettext_lang)){ if($gettext_lang == 'de_DE') { echo 'SinTraduccion'; } elseif($gettext_lang == 'en_GB') { echo 'Page Not Found'; } elseif($gettext_lang == 'pt_BR') { echo 'SinTraduccion'; } else { echo 'P&aacute;gina no encontrada'; } } ?>.</h1>
+        <p lang="<?php echo $site_lang_HTML_attr; ?>" class="errorType">Error 413.</p>
         <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.error.p.inc.php'); ?>
     </div>
     <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/footer.inc.php'); ?>

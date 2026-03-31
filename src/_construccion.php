@@ -77,8 +77,8 @@
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
             <div class="container container_construccion">
-                <h1><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
-                <p><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de esta p&aacute;gina'); ?>.</p>
+                <h1 lang="<?php echo $site_lang_HTML_attr; ?>"><?php echo _('Sitio en construcci&oacute;n'); ?></h1>
+                <p lang="<?php echo $site_lang_HTML_attr; ?>"><?php echo _('Disculpe las molestias, muy pronto podr&aacute; ver el contenido de esta p&aacute;gina'); ?>.</p>
                 <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.error.p.inc.php'); ?>
             </div>
             

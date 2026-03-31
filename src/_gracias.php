@@ -78,8 +78,8 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
-            <h1 class="txAlignCenter"><?php echo $page_title_home_gracias; ?></h1>
-            <p class="txAlignCenter"><?php echo $form_status_ok_globalB; ?></p>
+            <h1 lang="<?php echo $site_lang_HTML_attr; ?>" class="txAlignCenter"><?php echo $page_title_home_gracias; ?></h1>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="txAlignCenter"><?php echo $form_status_ok_globalB; ?></p>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>
     </div>

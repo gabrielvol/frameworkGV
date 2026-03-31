@@ -36,13 +36,13 @@
     
     
     <?php if (!empty($form_hidden_variable__formMainID)): ?>
-        <input type="hidden" name="data_form_hidden__formMainID" id="data_form_hidden__formMainID" value="Valor escondido"> 
+        <input lang="<?php echo $site_lang_HTML_attr; ?>" type="hidden" name="data_form_hidden__formMainID" id="data_form_hidden__formMainID" value="Valor escondido"> 
     <?php endif; ?>
         
         
     
     <?php if(!empty($form_var)): // REF [45] ?>
-    <label for="data_opcionSeleccionada__formMainID" class="label_opcionSeleccionada__formMainID">
+    <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_opcionSeleccionada__formMainID" class="label_opcionSeleccionada__formMainID">
         <span class="form_label_name"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Estoy consultando por el siguiente form_var:
         <?php else: ?>
@@ -118,7 +118,7 @@
         
         
 
-    <label for="data_genero__formMainID">
+    <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_genero__formMainID">
         <span class="form_label_name"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Gender
         <?php else: ?>
@@ -159,13 +159,13 @@
         
         
 
-    <label for="data_genero__formMainID">
+    <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_genero__formMainID">
         <span class="form_label_name"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Gender
         <?php else: ?>
             Género
         <?php endif; ?></span>        
-        <input type="text" name="data_genero__formMainID" id="data_genero__formMainID" class="data_genero__formMainID" form="formMainID" enterkeyhint="next" list="genero_listaTotal">
+        <input lang="<?php echo $site_lang_HTML_attr; ?>" type="text" name="data_genero__formMainID" id="data_genero__formMainID" class="data_genero__formMainID" form="formMainID" enterkeyhint="next" list="genero_listaTotal">
         <datalist id="genero_listaTotal">
             <option value="Lesbiana">
             <option value="Gay">
@@ -678,7 +678,7 @@
     <fieldset class="<?php echo $form_validation_input_class_data_newsletter__formMainID; ?>">
         <legend class="form_label_name"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB') { echo 'Subscribe Newsletter'; } else { echo '&iquest;Desea recibir el bolet&iacute;n de noticias?'; } ?></legend>
 
-        <label for="data_newsletterSi__formMainID" class="label_radio">
+        <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_newsletterSi__formMainID" class="label_radio">
             <input type="radio" name="data_newsletter__formMainID" id="data_newsletterSi__formMainID" form="formMainID" value="<?php if(isset($gettext_lang) && $gettext_lang == 'en_GB') { echo 'Yes'; } else { echo 'Si'; } ?>" class="input_radio data_newsletter__formMainID" <?php echo $form_input_autofocus_data_newsletter__formMainID; ?>>
             <span><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Yes
@@ -687,7 +687,7 @@
         <?php endif; ?></span>
         </label>
 
-        <label for="data_newsletterNo__formMainID" class="label_radio">
+        <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_newsletterNo__formMainID" class="label_radio">
             <input type="radio" name="data_newsletter__formMainID" id="data_newsletterNo__formMainID" form="formMainID" value="<?php if(isset($gettext_lang) && $gettext_lang == 'en_GB') { echo 'No'; } else { echo 'No'; } ?>" class="input_radio data_newsletter__formMainID">
             <span><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             No
@@ -696,7 +696,7 @@
         <?php endif; ?></span>
         </label>
 
-        <label for="data_newsletterNoSe__formMainID" class="label_radio">
+        <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_newsletterNoSe__formMainID" class="label_radio">
             <input type="radio" name="data_newsletter__formMainID" id="data_newsletterNoSe__formMainID" form="formMainID" value="<?php if(isset($gettext_lang) && $gettext_lang == 'en_GB') { echo "I don't know"; } else { echo "No S&eacute;"; } ?>" class="input_radio data_newsletter__formMainID">
             <span><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             I don't know
@@ -708,7 +708,7 @@
         
         
 
-    <label for="data_aceptoTOU__formMainID" class="label_checkbox">
+    <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_aceptoTOU__formMainID" class="label_checkbox">
         <input type="checkbox" name="data_aceptoTOU__formMainID" id="data_aceptoTOU__formMainID" class="input_checkbox data_aceptoTOU__formMainID <?php echo $form_validation_input_class_data_aceptoTOU__formMainID; ?>" form="formMainID" value="Acepto los términos y condiciones del sitio web <?php echo $site_name_brand; ?>" <?php echo $form_input_autofocus_data_aceptoTOU__formMainID; ?>>
         <span class="form_label_name"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Acepto los términos y condiciones
@@ -720,13 +720,13 @@
         
         
 
-    <label for="data_browser__formMainID">
+    <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_browser__formMainID">
         <?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Choose a browser from this list
         <?php else: ?>
             Elija un explorador de la lista
         <?php endif; ?>:
-        <input type="text" name="data_browser__formMainID" id="data_browser__formMainID" class="data_browser__formMainID" form="formMainID" enterkeyhint="next" list="browser_dataList">
+        <input lang="<?php echo $site_lang_HTML_attr; ?>" type="text" name="data_browser__formMainID" id="data_browser__formMainID" class="data_browser__formMainID" form="formMainID" enterkeyhint="next" list="browser_dataList">
         <datalist id="browser_dataList">
             <option value="Chrome">
             <option value="Firefox">
@@ -762,7 +762,7 @@
         <span class="form_validation_span <?php echo $form_validation_span_class_data_mensaje__formMainID; ?>"><?php echo $form_validation_span_msg_data_mensaje__formMainID; ?></span>
     </label>
 
-    <label for="data_mensaje__formMainID">
+    <label lang="<?php echo $site_lang_HTML_attr; ?>" for="data_mensaje__formMainID">
         <span class="form_label_name"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>
             Message
         <?php else: ?>
@@ -774,9 +774,9 @@
 <?php /* // REF [50] Google reCaptcha
  * Hidden field for captcha token storage    
 */ ?>
-    <input type="hidden" id="data_captchaResponseToken__formMainID" name="data_captchaResponseToken__formMainID">
+    <input lang="<?php echo $site_lang_HTML_attr; ?>" type="hidden" id="data_captchaResponseToken__formMainID" name="data_captchaResponseToken__formMainID">
 
-    <input type="submit" value="Enviar" form="formMainID" enterkeyhint="done" name="button_form_submit__formMainID" class="button_form_submit button_form_submit__formMainID">  
+    <input lang="<?php echo $site_lang_HTML_attr; ?>" type="submit" value="Enviar" form="formMainID" enterkeyhint="done" name="button_form_submit__formMainID" class="button_form_submit button_form_submit__formMainID">  
 
     <input type="submit" value="<?php if(isset($gettext_lang) && $gettext_lang == 'en_GB') { echo 'Send'; } else { echo 'Enviar'; } ?>" form="formMainID" enterkeyhint="done" name="button_form_submit__formMainID" class="button_form_submit button_form_submit__formMainID"> 
 </form>

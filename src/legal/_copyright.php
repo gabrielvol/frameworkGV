@@ -75,21 +75,21 @@
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
         <section class="container">
-            <h1 class="black txAlignCenter">Licencia</h1>
-            <p class="nota black">El contenido de este sitio web se encuentra bajo la siguiente licencia:</p>
-            <p class="lic black txAlignCenter">Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)</p>
-            <p class="heading2 txBold black">Usted es libre de:</p>
-            <p class="black"><span class="txBold">Compartir</span> — copiar y redistribuir el material en cualquier medio o formato.</p>
-            <p class="nota black">La licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia</p>
-            <p class="heading2 txBold black">Bajo los siguientes términos:</p>
+            <h1 lang="<?php echo $site_lang_HTML_attr; ?>" class="black txAlignCenter">Licencia</h1>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="nota black">El contenido de este sitio web se encuentra bajo la siguiente licencia:</p>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="lic black txAlignCenter">Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)</p>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="heading2 txBold black">Usted es libre de:</p>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="black"><span class="txBold">Compartir</span> — copiar y redistribuir el material en cualquier medio o formato.</p>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="nota black">La licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia</p>
+            <p lang="<?php echo $site_lang_HTML_attr; ?>" class="heading2 txBold black">Bajo los siguientes términos:</p>
             <ul>
-                <li><span class="txBold">Atribución</span> Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante. </li>
-                <li><span class="txBold">NoComercial</span> Usted no puede hacer uso del material con propósitos comerciales. </li>
-                <li><span class="txBold">SinDerivadas</span> Si remezcla, transforma o crea a partir de el material, no podrá distribuir el material modificado.</li>
+                <li lang="<?php echo $site_lang_HTML_attr; ?>"><span class="txBold">Atribución</span> Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante. </li>
+                <li lang="<?php echo $site_lang_HTML_attr; ?>"><span class="txBold">NoComercial</span> Usted no puede hacer uso del material con propósitos comerciales. </li>
+                <li lang="<?php echo $site_lang_HTML_attr; ?>"><span class="txBold">SinDerivadas</span> Si remezcla, transforma o crea a partir de el material, no podrá distribuir el material modificado.</li>
             </ul>
             <ul class="mtl ptl">
-                <li><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es#" class="nota black">Ver Resumen</a></li>
-                <li><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" class="nota black">Ver Licencia</a></li>
+                <li lang="<?php echo $site_lang_HTML_attr; ?>"><a lang="<?php echo $site_lang_HTML_attr; ?>" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es#" class="nota black">Ver Resumen</a></li>
+                <li lang="<?php echo $site_lang_HTML_attr; ?>"><a lang="<?php echo $site_lang_HTML_attr; ?>" href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" class="nota black">Ver Licencia</a></li>
             </ul>
         </section>
         

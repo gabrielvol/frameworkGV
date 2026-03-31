@@ -7,4 +7,4 @@
 */
 ?>
 
-<p>Si la página no se redirige automaticamente puede hacer clic en <a href="<?php echo $page_redirect_url; ?>">este vínculo</a>.</p>
+<p lang="<?php echo $site_lang_HTML_attr; ?>">Si la página no se redirige automaticamente puede hacer clic en <a href="<?php echo $page_redirect_url; ?>">este vínculo</a>.</p>

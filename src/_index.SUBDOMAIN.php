@@ -49,7 +49,7 @@
         
             <?php /*
                 <h1><?php echo $page_heading_id; ?></h1>
-                <h1><?php echo $page_title_home_PAGEINT; ?></h1>
+                <h1 lang="<?php echo $site_lang_HTML_attr; ?>"><?php echo $page_title_home_PAGEINT; ?></h1>
             */ ?>
             
         <?php endif; /* Cierra el condicional // REF [53*] Page redirect */ ?>

@@ -11,47 +11,47 @@
 
 
 <li class="nav_item_home <?php if($nav_pageCurrent == 'page_index') { echo ' visuallyHidden nav_item_current'; } ?>">
-    <a <?php echo $href_index; if($nav_pageCurrent == 'page_index') { echo ' aria-current="page"'; } ?>>
+    <a <?php echo $href_index; if($nav_pageCurrent == 'page_index') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_home; ?>
     </a>
 </li>
 <li class="nav_item_contacto <?php if($nav_pageCurrent == 'page_contacto') { echo ' nav_item_current'; } ?>">
-    <a <?php echo $href_contacto; if($nav_pageCurrent == 'page_contacto') { echo ' aria-current="page"'; } ?>>
+    <a <?php echo $href_contacto; if($nav_pageCurrent == 'page_contacto') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_contacto; ?>
     </a>
 </li>
 <li class="nav_item_PAGEINT <?php if($nav_pageCurrent == 'page_PAGEINT') { echo ' nav_item_current'; } ?>">
-    <a <?php echo $href_PAGEINT; if($nav_pageCurrent == 'page_PAGEINT') { echo ' aria-current="page"'; } ?>>
+    <a <?php echo $href_PAGEINT; if($nav_pageCurrent == 'page_PAGEINT') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_PAGEINT; ?>
     </a>
 </li>
 
 <li class="nav_item_PAGEINT"> <?php // REF [45] ?>
-    <a href="<?php echo $url_contacto; ?>?consulta=servicioA">
+    <a href="<?php echo $url_contacto; ?>?consulta=servicioA" lang="<?php echo $site_lang_HTML_attr; ?>">
         Quiero el servicio A
     </a>
 </li>
 
 
 <li class="nav_item_home nav_item_noLink_js">
-    <a <?php echo $href_home_noLink; ?>>
+    <a <?php echo $href_home_noLink; ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_home; ?>
     </a>
 </li>
 <li class="nav_item_PAGEINT nav_item_noLink_js">
-    <a <?php echo $href_PAGEINT_noLink; ?>>
+    <a <?php echo $href_PAGEINT_noLink; ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_PAGEINT; ?>
     </a>
 </li>
 <li class="nav_item_contacto nav_item_noLink_js">
-    <a <?php echo $href_contacto_noLink; ?>>
+    <a <?php echo $href_contacto_noLink; ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_contacto; ?>
     </a>
 </li>
 
 <?php /* Con gettext */ ?>
 <li class="nav_item_PAGEINT nav_item_noLink_js">
-    <a <?php if($page_int == 1) { echo 'href="'. $url_PAGEINT_full_gettext .'"'; } else { echo $href_PAGEINT_gettext; } ?>>
+    <a <?php if($page_int == 1) { echo 'href="'. $url_PAGEINT_full_gettext .'"'; } else { echo $href_PAGEINT_gettext; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_PAGEINT; ?>
     </a>
 </li>
@@ -59,25 +59,25 @@
 
 <?php /* Sub Level 1 // REF [55] Nav subitems */ ?>
 <li class="nav_item_nosotros nav_item_hasSubNav nav_item_hasSubNav_level1 pRel <?php if($nav_pageCurrent == 'page_nosotros') { echo ' nav_item_current'; } ?>">
-    <p id="nav_TLI_nosotros" class="nav_TLI nav_TLI_level1" aria-haspopup="true" aria-owns="nav_item_nosotros_subNav" aria-controls="nav_item_nosotros_subNav" role="button" aria-pressed="false">
+    <p id="nav_TLI_nosotros" class="nav_TLI nav_TLI_level1" aria-haspopup="true" aria-owns="nav_item_nosotros_subNav" aria-controls="nav_item_nosotros_subNav" role="button" aria-pressed="false" lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_nosotros; ?>
     </p>
     
     <ul id="nav_item_nosotros_subNav" class="nav_subNav nav_subNav_level1 unstyled" role="group" aria-expanded="false" aria-labelledby="nav_TLI_nosotros">        
         <li class="<?php if($nav_pageCurrent_int == 'page_nosotros_home') { echo ' nav_item_current'; } ?>">
-            <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_nosotros_home') { echo ' aria-current="page"'; } ?>>
+            <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_nosotros_home') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
                 <?php echo $nav_main_item_nosotros_home; ?>
             </a>
         </li>
         
         <li class="<?php if($nav_pageCurrent_int == 'page_nosotros_nuestraHistoria') { echo ' nav_item_current'; } ?>">
-            <a <?php echo $href_nuestraHistoria; if($nav_pageCurrent_int == 'page_nosotros_nuestraHistoria') { echo ' aria-current="page"'; } ?>>
+            <a <?php echo $href_nuestraHistoria; if($nav_pageCurrent_int == 'page_nosotros_nuestraHistoria') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
                 <?php echo $nav_main_item_nuestraHistoria; ?>
             </a>
         </li>
         
         <li class="<?php if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' nav_item_current'; } ?>">
-            <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' aria-current="page"'; } ?>>
+            <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
                 <?php echo $nav_main_item_PAGEINT; ?>
             </a>
         </li>
@@ -87,23 +87,23 @@
 
 <?php /* Sub Level 2  // REF [55] Nav subitems */ ?>
 <li class="nav_item_nosotros nav_item_hasSubNav nav_item_hasSubNav_level1 pRel <?php if($nav_pageCurrent == 'page_nosotros') { echo ' nav_item_current'; }?>">
-    <p id="nav_TLI_nosotros" class="nav_TLI nav_TLI_level1" aria-haspopup="true" aria-owns="nav_item_nosotros_subNav" aria-controls="nav_item_nosotros_subNav" role="button" aria-pressed="false">
+    <p id="nav_TLI_nosotros" class="nav_TLI nav_TLI_level1" aria-haspopup="true" aria-owns="nav_item_nosotros_subNav" aria-controls="nav_item_nosotros_subNav" role="button" aria-pressed="false" lang="<?php echo $site_lang_HTML_attr; ?>">
         <?php echo $nav_main_item_nosotros; ?>
     </p>
     <ul id="nav_item_nosotros_subNav" class="nav_subNav nav_subNav_level1 unstyled" role="group" aria-expanded="false" aria-labelledby="nav_TLI_nosotros">
         <li class="nav_item_historia nav_item_hasSubNav nav_item_hasSubNav_level2 <?php if($nav_pageCurrent_int == 'page_historia_home') { echo ' nav_item_current'; } ?>">
-            <p id="nav_TLI_historia" class="nav_TLI nav_TLI_level2" aria-haspopup="true" aria-owns="nav_item_historia_subNav" aria-controls="nav_item_historia_subNav" role="button" aria-pressed="false">
+            <p id="nav_TLI_historia" class="nav_TLI nav_TLI_level2" aria-haspopup="true" aria-owns="nav_item_historia_subNav" aria-controls="nav_item_historia_subNav" role="button" aria-pressed="false" lang="<?php echo $site_lang_HTML_attr; ?>">
                 <?php echo $nav_main_item_historia_home; ?>
             </p>
             <ul id="nav_item_historia_subNav" class="nav_subNav nav_subNav_level2 unstyled" role="group" aria-expanded="false" aria-labelledby="nav_TLI_historia">
                 <li class="<?php if($nav_pageCurrent_int == 'page_historia_comienzos') { echo ' nav_item_current'; } ?>">
-                    <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_historia_comienzos') { echo ' aria-current="page"'; } ?>>
+                    <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_historia_comienzos') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
                         <?php echo $nav_main_item_comienzos; ?>
                     </a>
                 </li>  
         
                 <li class="<?php if($nav_pageCurrent_int == 'page_PAGEINT_ID') { echo ' nav_item_current'; } ?>">
-                    <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_PAGEINT_ID') { echo ' aria-current="page"'; } ?>>
+                    <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_PAGEINT_ID') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
                         <?php echo $nav_main_item_PAGEID; ?>
                     </a>
                 </li>
@@ -111,7 +111,7 @@
         </li>    
         
         <li class="<?php if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' nav_item_current'; } ?>">
-            <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' aria-current="page"'; } ?>>
+            <a <?php echo $href_PAGEINT; if($nav_pageCurrent_int == 'page_PAGEINT_home') { echo ' aria-current="page"'; } ?> lang="<?php echo $site_lang_HTML_attr; ?>">
                 <?php echo $nav_main_item_PAGEINT; ?>
             </a>
         </li>

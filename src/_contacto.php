@@ -78,7 +78,7 @@
     <div id="main" <?php echo $classes_main; ?> role="main">
         <?php if($page_redirect): include ($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/page.redirect.p.inc.php'); else: /* // REF [53*] Page redirect */ ?>
         
-            <h1><?php echo $page_title_home_contacto; ?></h1>
+            <h1 lang="<?php echo $site_lang_HTML_attr; ?>"><?php echo $page_title_home_contacto; ?></h1>
             <div class="mobileForm tabletForm">
                 <?php include($_SERVER['DOCUMENT_ROOT'] . $dir_env . '/common/form.main.inc.php'); ?>
             </div>
