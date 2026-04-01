@@ -1,11 +1,12 @@
 /* * NombreDeProyecto * ========================================================
    Language Switch Styles | Custom [/etc/css/custom/nav_lang.scss]
    ========================================================================== */
-@use "var/env_var" as *;
-@use "../scss/var_all_pre" as *;
-
 @use "sass:color";
 @use "sass:map";
+
+@use "var/env_var" as *;
+@use "../scss/var_all" as *;
+
 .nav_lang_ul{
     z-index: $zIndex_nav_lang_ul;
     
@@ -149,6 +150,12 @@
                     &.lang_BR{
                         &::before{
                             content: "Selecione um idioma:";
+                        }
+                    }
+                    
+                    &.lang_CN{                    
+                        &::before{
+                            content: "选择语言";
                         }
                     }
                     

@@ -1,6 +1,16 @@
 <?php if($dir_env !== ''): ?><div id="dev_window_width"></div><?php endif; /* // REF [48] Dev window width */ ?>
 
-<a lang="<?php echo $site_lang_HTML_attr; ?>" href="#main" id="go-main-content"><?php if(isset($gettext_lang) && $gettext_lang == 'en_GB'): ?>Go to the main content of the site.<?php else: ?>Ir al contenido principal de esta p&aacute;gina.<?php endif; ?></a>
+<a lang="<?php echo $site_lang_HTML_attr; ?>" href="#main" id="go-main-content"><?php if($l == 'en_GB'): ?>
+    Go to main content
+<?php
+/* elseif($l == 'zh_CN'): ?>
+    跳转到本页主要内容
+
+<?php */
+
+else: ?>
+    Ir al contenido principal de esta p&aacute;gina
+<?php endif; ?>.</a>
 <header id="header" <?php echo $classes_header; ?>>    
     <?php
         if($nav_pageCurrent == 'page_index') { echo '<h1 class="logo_header">'; } 
