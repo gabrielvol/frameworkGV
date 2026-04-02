@@ -36,95 +36,95 @@
 <?php endif; */
 
 if($dir_env): /* // REF [48] Dev window width */ ?>
-<script src="<?php echo $dir_env; ?>/js/_global.stage.js"></script>
+<script src="<?php echo asset_versioned('/js/_global.stage.js', $dir_env); ?>"></script>
 
 <?php elseif(empty($dir_env)): ?>
-<script src="<?php echo $dir_env; ?>/js/_global.produ.js"></script>
+<script src="<?php echo asset_versioned('/js/_global.produ.js', $dir_env); ?>"></script>
 
 <?php endif; ?>
 
 
-<script src="<?php echo $dir_env; ?>/js/_global.all.js"></script>
+<script src="<?php echo asset_versioned('/js/_global.all.js', $dir_env); ?>"></script>
 
 
 <?php if($nav_accordion_act): /* nav `[/var/act/nav.act.inc.php]` */ ?>
-<script src="<?php echo $dir_env; ?>/js/_nav_accordion.js"></script>
+<script src="<?php echo asset_versioned('/js/_nav_accordion.js', $dir_env); ?>"></script>
 
 <?php endif; if($nav_drawer_act): /* // REF [06] nav `[/var/act/nav.act.inc.php]` */ ?>
-<script src="<?php echo $dir_env; ?>/js/_nav_drawer.js"></script>
+<script src="<?php echo asset_versioned('/js/_nav_drawer.js', $dir_env); ?>"></script>
     
 <?php endif;
 
 
 if($has_scrolling): ?>
-<script src="<?php echo $dir_env; ?>/js/_scrolling.js"></script>
+<script src="<?php echo asset_versioned('/js/_scrolling.js', $dir_env); ?>"></script>
 
 <?php endif;
 
 
 if($nav_pageCurrent == 'page_index'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_index.js"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_index.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif; if($page_int): /* // Internas
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_int.js"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_int.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent_int == 'page_index_index'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_home.js"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_home.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent_int == 'page_index_home'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_inicio.js"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_inicio.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_contacto'): /*
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_contacto.js"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_contacto.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_gracias'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_gracias.js"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_gracias.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_PAGINA'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent_int == 'page_PAGINA_INT'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
 */ ?>
 
 <?php endif; if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
 */ ?>
 
 <?php endif; if($page_construccion): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_script.js">"></script>
-<script src="<?php echo $dir_env; ?>/js/_page_construccion.js"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_script.js">"></script>
+<script src="<?php echo asset_versioned('/js/_page_construccion.js', $dir_env); ?>"></script>
 */ ?>
 
 <?php endif;
 
 
 if($has_form): /* // REF [36] Form variables */ ?>
-<script src="<?php echo $dir_env; ?>/js/scrollKeep.js"></script><?php /* // REF [25] */ ?>
-<?php /* <script src="<?php echo $dir_env; ?>/js/ui-datepicker.jQuery.js"></script> REF [31] */ ?>
-<script src="<?php echo $dir_env; ?>/js/_form.js"></script>
+<script src="<?php echo asset_versioned('/js/scrollKeep.js', $dir_env); ?>"></script><?php /* // REF [25] */ ?>
+<?php /* <script src="<?php echo asset_versioned('/js/ui-datepicker.jQuery.js', $dir_env); ?>"></script> REF [31] */ ?>
+<script src="<?php echo asset_versioned('/js/_form.js', $dir_env); ?>"></script>
 
 <?php endif;
 
@@ -135,36 +135,36 @@ if($has_form): /* // REF [36] Form variables */ ?>
  * 
  */
 if($has_captcha == 1 && $form_id == 'formMainID'): ?>
-<script src="<?php echo $dir_env; ?>/js/_captcha_formMainID.js"></script>
+<script src="<?php echo asset_versioned('/js/_captcha_formMainID.js', $dir_env); ?>"></script>
 
 <?php /* elseif($has_captcha == 1 && $form_id == 'formContacto'): ?>
-<script src="<?php echo $dir_env; ?>/js/_captcha_formContacto.js"></script>
+<script src="<?php echo asset_versioned('/js/_captcha_formContacto.js', $dir_env); ?>"></script>
 
 <?php /* elseif($has_captcha == 1 && $form_id == 'formIniciarSesion'): ?>
-<script src="<?php echo $dir_env; ?>/js/_captcha_formIniciarSesion.js"></script>
+<script src="<?php echo asset_versioned('/js/_captcha_formIniciarSesion.js', $dir_env); ?>"></script>
 
 <?php elseif($has_captcha == 1 && $form_id == 'formRecuperarContrasena'): ?>
-<script src="<?php echo $dir_env; ?>/js/_captcha_formRecuperarContrasena.js"></script>
+<script src="<?php echo asset_versioned('/js/_captcha_formRecuperarContrasena.js', $dir_env); ?>"></script>
 
 <?php */ endif;
 
 
 /* // REF [26] Lightbox */
 if($has_lightbox == 1): ?>
-<script src="<?php echo $dir_env; ?>/js/lightbox.min.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_lightbox.js"></script>
+<script src="<?php echo asset_versioned('/js/lightbox.min.js', $dir_env); ?>"></script>
+<script src="<?php echo asset_versioned('/js/_lightbox.js', $dir_env); ?>"></script>
 
 <?php endif;
 
 
 if($has_slider): ?>
-<script src="<?php echo $dir_env; ?>/js/slick.js"></script>
-<script src="<?php echo $dir_env; ?>/js/_slick.js"></script>
+<script src="<?php echo asset_versioned('/js/slick.js', $dir_env); ?>"></script>
+<script src="<?php echo asset_versioned('/js/_slick.js', $dir_env); ?>"></script>
 
 <?php endif;
 
 
 if($has_pop_video): ?>
-<script src="<?php echo $dir_env; ?>/js/_pop.video.js"></script>
+<script src="<?php echo asset_versioned('/js/_pop.video.js', $dir_env); ?>"></script>
 
 <?php endif; ?>

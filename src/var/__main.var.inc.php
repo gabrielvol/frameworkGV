@@ -16,6 +16,11 @@
 include('domain.var.inc.php');
 include('secrets.var.inc.php');
 
+
+/* // Asset helper ---------------------------------------------------------- */
+include_once($_SERVER['DOCUMENT_ROOT'] . ($dir_env ?? '') . '/common/asset.filemtime.inc.php');
+
+
 /* // Activadores ----------------------------------------------------------- */
 include('act/global.act.inc.php');
 include('act/header.act.inc.php');

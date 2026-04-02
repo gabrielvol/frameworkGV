@@ -110,7 +110,8 @@ img{
     // Improves image quality when scaled in IE 7
     -ms-interpolation-mode: bicubic;
 }
-img[src$=".png"], img[src$=".gif"], img[src$=".svg"]{
+img[src$=".png"], img[src$=".gif"], img[src$=".svg"],
+img[src*=".png?"], img[src*=".gif?"], img[src*=".svg?"]{
     background-color: transparent;
 }
 figure{

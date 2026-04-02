@@ -45,58 +45,58 @@
 
 
 /* // REF [47] Topbar.js */ ?>
-<script src="<?php echo $dir_env; ?>/js/topbar.min.js"></script>
+<script src="<?php echo asset_versioned('/js/topbar.min.js', $dir_env); ?>"></script>
 
 <?php /* // REF [24]
-<script src="<?php echo $dir_env; ?>/js/uikit.min.js"></script> */
+<script src="<?php echo asset_versioned('/js/uikit.min.js', $dir_env); ?>"></script> */
 
 
 if($nav_pageCurrent == 'page_index'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($page_int): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($nav_pageCurrent_int == 'page_index_index'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($nav_pageCurrent_int == 'page_index_home'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($nav_pageCurrent == 'page_contacto'): /* // REF [23]
-<script src="<?php echo $dir_env; ?>/js/jquery-ui-datepicker.js"></script>
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script>
+<script src="<?php echo asset_versioned('/js/jquery-ui-datepicker.js', $dir_env); ?>"></script>
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script>
 */ endif;
 
 
 if($nav_pageCurrent == 'page_gracias'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($nav_pageCurrent == 'page_PAGINA'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($nav_pageCurrent_int == 'page_PAGINA_INT'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($nav_pageCurrent == 'page_PAGINA' || $nav_pageCurrent_int == 'page_PAGINA_INT'): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif;
 
 
 if($page_construccion): /*
-<script src="<?php echo $dir_env; ?>/js/page_script.js"></script> */
+<script src="<?php echo asset_versioned('/js/page_script.js', $dir_env); ?>"></script> */
 endif; ?>

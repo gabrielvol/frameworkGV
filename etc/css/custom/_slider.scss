@@ -19,8 +19,13 @@
         width: 100%;
         background-color: $slider_global_img_bgColour;
         
-        &[src$=".png"]{
-            background-color: $transparent;
+        &[src$=".png"],
+        &[src*=".png?"],
+        &[src$=".gif"],
+        &[src*=".gif?"],
+        &[src$=".svg"],
+        &[src*=".svg?"] {
+            background-color: transparent;
         }
     }
     

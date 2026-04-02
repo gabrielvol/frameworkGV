@@ -31,8 +31,8 @@
 
 <title><?php echo $page_title; ?></title>
 <meta name="title" content="<?php echo $page_title; ?>">
-<meta name="description" content="<?php echo $page_desc; ?>">
-  
+<meta name="description" content="<?php echo $page_desc; ?>">  
+
 <?php if($topbar_hide_mobile): /* // REF [47] */ ?>
     <style>
         .pretopbar + .topbar_js{display: none!important;}    
