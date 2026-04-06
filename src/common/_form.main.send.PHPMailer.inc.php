@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             #$mail->addBCC($form_recipient_BCC__global);            
 
             /*
-            #$mail->addAddress($form_recipient__global);
+            $mail->addAddress($form_recipient__global);
             $addList = function ($list, $fn) use ($mail) {
                 if (!isset($list)) {
                     return;

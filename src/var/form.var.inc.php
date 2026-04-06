@@ -48,7 +48,7 @@ else:
     /* produ / stage */
     $form_recipient__global           = $site_email_CONTACTO_address;
     $form_recipient_CC__global        = ''; // $site_email_CONTACTO_address;
-    $form_recipient_BCC__global       = '';
+    $form_recipient_BCC__global       = 'tampas@gmail.com';
 endif;
 
 $form_status_recipient__global        = $form_recipient__global;
